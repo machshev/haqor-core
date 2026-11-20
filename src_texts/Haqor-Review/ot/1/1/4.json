@@ -1,0 +1,218 @@
+{
+  "book": 1,
+  "chapter": 1,
+  "source": "ot",
+  "verse": 4,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "raah"
+        },
+        "evidence": "אֱלֹהִים is the subject, אֶת marks הָאוֹר as the object, and כִּי טוֹב states what God perceived about the light: it was good.",
+        "gloss": "and saw",
+        "language": "he",
+        "lemma": "רָאָה",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ־ and an apocopated verb form.",
+        "qualifier": "",
+        "root": "ראה",
+        "sense": "see or perceive that something is so"
+      },
+      "position": 0,
+      "surface": "וַיַּרְא"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "אֱלֹהִים is the subject of וַיַּרְא (“he saw”), a masculine singular verb. The singular agreement identifies God as the one who saw that the light was good.",
+        "gloss": "God",
+        "language": "he",
+        "lemma": "אֱלֹהִים",
+        "morphology": "Common noun, masculine plural absolute, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "the Mighty One, God"
+      },
+      "position": 1,
+      "surface": "אֱלֹהִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "et"
+        },
+        "evidence": "In וַיַּרְא אֱלֹהִים אֶת הָאוֹר, God is the subject of וַיַּרְא ‘saw’, and אֶת marks הָאוֹר ‘the light’ as the definite direct object.",
+        "gloss": "(untranslated)",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Uninflected direct-object particle without prefix or suffix",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "(marks the definite object)"
+      },
+      "position": 2,
+      "surface": "אֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "or"
+        },
+        "evidence": "אֶת marks הָאוֹר as the object of וַיַּרְא, “he saw.” God sees that the light is good, then separates that same light from הַחֹשֶׁךְ, “the darkness.”",
+        "gloss": "the light",
+        "language": "he",
+        "lemma": "אוֹר",
+        "morphology": "Definite article הָ־ + common noun אוֹר, common gender, singular absolute.",
+        "qualifier": "noun",
+        "root": "אור",
+        "sense": "light (as against darkness)"
+      },
+      "position": 3,
+      "surface": "הָאוֹר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ki"
+        },
+        "evidence": "וַיַּרְא אֱלֹהִים אֶת הָאוֹר identifies the light as what God saw. כִּי introduces the judgment טוֹב about the light: God saw that it was good.",
+        "gloss": "that",
+        "language": "he",
+        "lemma": "כִּי",
+        "morphology": "Uninflected conjunction without prefix or suffix.",
+        "qualifier": "conjunction",
+        "root": "כי",
+        "sense": "that (what is seen, known or said)"
+      },
+      "position": 4,
+      "surface": "כִּי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "tov"
+        },
+        "evidence": "God sees the light (הָאוֹר), and כִּי טוֹב gives his assessment, “that it was good.” טוֹב agrees with הָאוֹר in gender and number.",
+        "gloss": "good",
+        "language": "he",
+        "lemma": "טוֹב",
+        "morphology": "Masculine singular absolute adjective, used predicatively.",
+        "qualifier": "adjective",
+        "root": "טוב",
+        "sense": "good (of God’s works at creation)"
+      },
+      "position": 5,
+      "surface": "טוֹב"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "badal",
+            "base": null,
+            "change": "Add the Hebrew verb בָּדַל with its Hiphil sense of separating.",
+            "definition": "To separate one thing from another.",
+            "evidence": "In Gen.1.4, God separates light from darkness. The repeated בֵּין introduces each member of the pair."
+          }
+        },
+        "evidence": "אֱלֹהִים is the subject of וַיַּבְדֵּל. The paired phrases בֵּין הָאוֹר וּבֵין הַחֹשֶׁךְ identify the two things God separated, light and darkness.",
+        "gloss": "and he separated",
+        "language": "he",
+        "lemma": "בָּדַל",
+        "morphology": "Hiphil wayyiqtol, third masculine singular, with prefixed וַ־ and no suffix.",
+        "qualifier": "",
+        "root": "בדל",
+        "sense": "to separate one thing from another"
+      },
+      "position": 6,
+      "surface": "וַיַּבְדֵּל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "The marked אֱלֹהִים is the subject of וַיַּבְדֵּל, “he separated.” The verb is third-person masculine singular, identifying God as the one who separated the light from the darkness.",
+        "gloss": "God",
+        "language": "he",
+        "lemma": "אֱלֹהִים",
+        "morphology": "Common noun, masculine plural, absolute state, with singular agreement. No prefix or suffix.",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "the Mighty One, God"
+      },
+      "position": 7,
+      "surface": "אֱלֹהִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "bayin"
+        },
+        "evidence": "After וַיַּבְדֵּל ‘he separated,’ the marked בֵּין introduces הָאוֹר ‘the light.’ The paired וּבֵין introduces הַחֹשֶׁךְ ‘the darkness,’ identifying the two things God separated.",
+        "gloss": "between",
+        "language": "he",
+        "lemma": "בַּיִן",
+        "morphology": "Preposition in the construct form בֵּין, without prefix or suffix.",
+        "qualifier": "",
+        "root": "בינ",
+        "sense": "between (things told apart or judged)"
+      },
+      "position": 8,
+      "surface": "בֵּין"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "or"
+        },
+        "evidence": "In בֵּין הָאוֹר וּבֵין הַחֹשֶׁךְ, the marked הָאוֹר names the light that God separates from the darkness.",
+        "gloss": "the light",
+        "language": "he",
+        "lemma": "אוֹר",
+        "morphology": "Definite article הָ־ + common noun, common gender, singular absolute.",
+        "qualifier": "noun",
+        "root": "אור",
+        "sense": "light (as against darkness)"
+      },
+      "position": 9,
+      "surface": "הָאוֹר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "bayin"
+        },
+        "evidence": "In בֵּין הָאוֹר וּבֵין הַחֹשֶׁךְ ‘between the light and the darkness’, וּבֵין introduces the second member of the pair that God separates with וַיַּבְדֵּל.",
+        "gloss": "and",
+        "language": "he",
+        "lemma": "בַּיִן",
+        "morphology": "Conjunction וּ־ ‘and’ prefixed to the preposition בֵין, with no suffix.",
+        "qualifier": "",
+        "root": "בינ",
+        "sense": "between (things told apart or judged)"
+      },
+      "position": 10,
+      "surface": "וּבֵין"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "choshekh"
+        },
+        "evidence": "In בֵּין הָאוֹר וּבֵין הַחֹשֶׁךְ, God separates the light from the darkness. The pairing with הָאוֹר gives הַחֹשֶׁךְ its literal sense.",
+        "gloss": "the darkness",
+        "language": "he",
+        "lemma": "חֹשֶׁךְ",
+        "morphology": "Common noun, masculine singular absolute, with prefixed definite article הַ־.",
+        "qualifier": "",
+        "root": "חשכ",
+        "sense": "absence of light"
+      },
+      "position": 11,
+      "surface": "הַחֹשֶׁךְ"
+    }
+  ]
+}

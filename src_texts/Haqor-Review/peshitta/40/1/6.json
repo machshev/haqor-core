@@ -1,0 +1,191 @@
+{
+  "book": 40,
+  "chapter": 1,
+  "source": "peshitta",
+  "verse": 6,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "yisht",
+            "base": "5dada503346439720ac6a197546e72aa8d54d955a05bfdfccc2d1fc998535b80",
+            "change": "Add the Syriac spelling and its defining verse to the root article for Jesse.",
+            "definition": "אִישַי is the Syriac name of Jesse, David’s father.",
+            "evidence": "Matthew 1:6 names אִישַי as the father of David, the same relationship given for Hebrew יִשַׁי in Ruth 4:17."
+          }
+        },
+        "evidence": "אִישַי אַולֵדֿ לדַֿוִידֿ מַלכָּא means “Jesse fathered David the king.” The verb אַולֵדֿ identifies Jesse as the father, and the prefixed ל on David marks the son.",
+        "gloss": "Jesse",
+        "language": "syc",
+        "lemma": "אִישַי",
+        "morphology": "Masculine singular personal name, with no prefix or suffix. It is the subject of אַולֵדֿ.",
+        "qualifier": "",
+        "root": "אישי",
+        "sense": "Jesse, the father of King David."
+      },
+      "position": 0,
+      "surface": "אִישַי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yalad"
+        },
+        "evidence": "Jesse (אִישַי) is the subject of אַולֵדֿ, and the prefixed ל marks David the king (לדַֿוִידֿ מַלכָּא) as its object. The clause identifies Jesse as David’s father.",
+        "gloss": "fathered",
+        "language": "syc",
+        "lemma": "יְלֵד",
+        "morphology": "Aphel perfect, third person masculine singular, without a pronominal suffix.",
+        "qualifier": "",
+        "root": "ילד",
+        "sense": "beget, father a child"
+      },
+      "position": 1,
+      "surface": "אַולֵדֿ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "david-syc",
+            "base": null,
+            "change": "Add the pointed Syriac spelling as a name article linked to the same root and bearer as the Hebrew David article.",
+            "definition": "The Syriac form of the personal name David.",
+            "evidence": "Matthew 1:6 identifies the bearer by his father Jesse, his title “king,” and his son Solomon."
+          }
+        },
+        "evidence": "אִישַי אַולֵדֿ לדַֿוִידֿ names David as the son Jesse fathered. מַלכָּא identifies him as king. The next clause repeats his name without the prefix, דַּוִידֿ, as the father of Solomon.",
+        "gloss": "David",
+        "language": "syc",
+        "lemma": "דַּוִידֿ",
+        "morphology": "Masculine singular personal name with prefixed ל marking the direct object of אַולֵדֿ.",
+        "qualifier": "",
+        "root": "דוד",
+        "sense": "The personal name of King David, Jesse’s son and Solomon’s father."
+      },
+      "position": 2,
+      "surface": "לדַֿוִידֿ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "melek"
+        },
+        "evidence": "In אִישַי אַולֵדֿ לדַֿוִידֿ מַלכָּא, “Jesse fathered David the king,” מַלכָּא stands in apposition to David and gives his royal title.",
+        "gloss": "the king",
+        "language": "syc",
+        "lemma": "מַלְכָּא",
+        "morphology": "Masculine singular noun in the emphatic state, with no prefix or pronominal suffix.",
+        "qualifier": "",
+        "root": "מלכ",
+        "sense": "king"
+      },
+      "position": 3,
+      "surface": "מַלכָּא"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "david-syc",
+            "base": null,
+            "change": "Add the pointed Syriac spelling דַּוִידֿ as a name entry linked to the same root as Hebrew דָּוִד.",
+            "definition": "The Syriac personal name of King David, Jesse’s son and Solomon’s father.",
+            "evidence": "Matthew 1:6 repeats David’s name where the genealogy moves from Jesse fathering David to David fathering Solomon."
+          }
+        },
+        "evidence": "The first clause names David as Jesse’s son and calls him מַלכָּא, “the king.” The marked occurrence opens the next clause, דַּוִידֿ אַולֵדֿ לַשלֵימָונ, “David fathered Solomon.”",
+        "gloss": "David",
+        "language": "syc",
+        "lemma": "דַּוִידֿ",
+        "morphology": "Masculine singular personal name, unprefixed and unsuffixed, serving as the subject of אַולֵדֿ.",
+        "qualifier": "",
+        "root": "דוד",
+        "sense": "David, the king who was Jesse’s son and Solomon’s father."
+      },
+      "position": 4,
+      "surface": "דַּוִידֿ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yalad"
+        },
+        "evidence": "At position 5, דַּוִידֿ (David) is the subject of אַולֵדֿ, and לַשלֵימָונ marks Solomon as its object. David fathered Solomon by Uriah’s wife.",
+        "gloss": "fathered",
+        "language": "syc",
+        "lemma": "יְלֵד",
+        "morphology": "Aphel perfect, third person masculine singular",
+        "qualifier": "",
+        "root": "ילד",
+        "sense": "beget, father a child"
+      },
+      "position": 5,
+      "surface": "אַולֵדֿ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "solomon-syriac",
+            "base": null,
+            "change": "Add a name article for the Syriac spelling שלֵימָונ, linked to the same root and bearer as the Hebrew spelling שְׁלֹמֹה.",
+            "definition": "The Syriac personal name of Solomon, son of David.",
+            "evidence": "Matthew 1:6 identifies the bearer by his parentage. First Chronicles 22:9 connects his Hebrew name with the peace promised during his lifetime, supporting the root שלמ."
+          }
+        },
+        "evidence": "In דַּוִידֿ אַולֵדֿ לַשלֵימָונ, David is the father and Solomon is the child. The following phrase מֵנ אַנ_תּתֵֿה דֻּאורִיָא identifies the mother as Uriah’s wife.",
+        "gloss": "Solomon",
+        "language": "syc",
+        "lemma": "שלֵימָונ",
+        "morphology": "Masculine singular personal name with prefixed לַ marking the direct object of אַולֵדֿ (“fathered”).",
+        "qualifier": "",
+        "root": "שלמ",
+        "sense": "Solomon, the son of David by Uriah’s wife."
+      },
+      "position": 6,
+      "surface": "לַשלֵימָונ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "enosh"
+        },
+        "evidence": "In מֵנ אַנ_תּתֵֿה דֻּאורִיָא, “by the wife of Uriah,” the possessive suffix anticipates Uriah, who is named in the following ד־phrase. The relationship identifies the woman as Uriah’s wife.",
+        "gloss": "wife",
+        "language": "syc",
+        "lemma": "אַנְתְּתָא",
+        "morphology": "Feminine singular noun with a third-person masculine singular possessive suffix.",
+        "qualifier": "",
+        "root": "אנתתא",
+        "sense": "wife"
+      },
+      "position": 8,
+      "surface": "אַנ_תּתֵֿה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "uriah",
+            "base": null,
+            "change": "Add a personal-name article for Uriah linked to the light root אור.",
+            "definition": "The personal name Uriah, here borne by the Hittite whose wife was Bathsheba.",
+            "evidence": "Matthew 1:6 calls Solomon’s mother the wife of Uriah. Second Samuel 11:3 identifies the couple by name."
+          }
+        },
+        "evidence": "In מֵנ אַנ_תּתֵֿה דֻּאורִיָא, “by the wife of Uriah”, the suffix on “wife” anticipates the husband named after דּ־. Matthew identifies Solomon’s mother through Uriah. Second Samuel 11:3 names her as Bathsheba, wife of Uriah the Hittite.",
+        "gloss": "of Uriah",
+        "language": "syc",
+        "lemma": "אֻורִיָא",
+        "morphology": "Masculine singular personal name with prefixed genitive particle דּ־, “of”.",
+        "qualifier": "",
+        "root": "אור",
+        "sense": "Uriah the Hittite, Bathsheba’s husband."
+      },
+      "position": 9,
+      "surface": "דֻּאורִיָא"
+    }
+  ]
+}

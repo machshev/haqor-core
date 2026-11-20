@@ -1,0 +1,426 @@
+{
+  "book": 1,
+  "chapter": 3,
+  "review": {
+    "entities": [
+      {
+        "evidence": "יַהְוֶה names the God whom the man and his wife hear walking in the garden, the same Yahweh who brought the woman to the man in Genesis 2:22.",
+        "key": "Yahweh@Gen.2.22",
+        "new": {
+          "description": "The God of Israel, who built the rib taken from the man into a woman and brought her to the man.",
+          "kind": "person",
+          "name": "Yahweh"
+        },
+        "position": 3
+      },
+      {
+        "evidence": "The repeated name יַהְוֶה identifies the one from whom the couple hides as the same Yahweh they have just heard.",
+        "key": "Yahweh@Gen.2.22",
+        "new": {
+          "description": "The God of Israel, who built the rib taken from the man into a woman and brought her to the man.",
+          "kind": "person",
+          "name": "Yahweh"
+        },
+        "position": 13
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "then they heard",
+        "position": 0
+      },
+      {
+        "gloss": "(untranslated)",
+        "position": 1
+      },
+      {
+        "gloss": "the sound of",
+        "position": 2
+      },
+      {
+        "gloss": "Yahweh",
+        "position": 3
+      },
+      {
+        "gloss": "God",
+        "position": 4
+      },
+      {
+        "gloss": "walking about",
+        "position": 5
+      },
+      {
+        "gloss": "in the garden",
+        "position": 6
+      },
+      {
+        "gloss": "in the breeze of",
+        "position": 7
+      },
+      {
+        "gloss": "the day",
+        "position": 8
+      },
+      {
+        "gloss": "but they hid",
+        "position": 9
+      },
+      {
+        "gloss": "the man",
+        "position": 10
+      },
+      {
+        "gloss": "and his wife",
+        "position": 11
+      },
+      {
+        "gloss": "from the presence of",
+        "position": 12
+      },
+      {
+        "gloss": "Yahweh",
+        "position": 13
+      },
+      {
+        "gloss": "God",
+        "position": 14
+      },
+      {
+        "gloss": "among",
+        "position": 15
+      },
+      {
+        "gloss": "the trees of",
+        "position": 16
+      },
+      {
+        "gloss": "the garden",
+        "position": 17
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[Then they heard|0] [the sound of|2,1] [Yahweh|3] [God|4] [walking about|5] [in the garden|6] [in the breeze of|7] [the day|8], [but|9] [the man|10] [and his wife|11] [hid|9] [from the presence of|12] [Yahweh|13] [God|14] [among|15] [the tree|16]{s} [of|16] [the garden|17]."
+  },
+  "source": "ot",
+  "verse": 8,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shama"
+        },
+        "evidence": "אֶת marks קוֹל יַהְוֶה אֱלֹהִים as the direct object. The man and his wife heard the sound of Yahweh God walking in the garden and then hid.",
+        "gloss": "and they heard",
+        "language": "he",
+        "lemma": "שָׁמַע",
+        "morphology": "Qal wayyiqtol, third masculine plural, with prefixed וַ־",
+        "qualifier": "",
+        "root": "שמע",
+        "sense": "hear a sound"
+      },
+      "position": 0,
+      "surface": "וַיִּשְׁמְעוּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "et"
+        },
+        "evidence": "אֶת introduces קוֹל יַהְוֶה אֱלֹהִים, “the sound of Yahweh God,” as the definite direct object of וַיִּשְׁמְעוּ, “they heard.”",
+        "gloss": "(untranslated)",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Direct-object particle in the short form אֶת, without prefix or suffix.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "(marks the definite object)"
+      },
+      "position": 1,
+      "surface": "אֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "qol"
+        },
+        "evidence": "וַיִּשְׁמְעוּ אֶת־קוֹל יַהְוֶה אֱלֹהִים means “they heard the sound of Yahweh God.” The participle מִתְהַלֵּךְ describes him walking in the garden and identifies his movement as the source of the sound.",
+        "gloss": "sound",
+        "language": "he",
+        "lemma": "קוֹל",
+        "morphology": "Common noun, masculine singular construct, without prefix or suffix.",
+        "qualifier": "",
+        "root": "קול",
+        "sense": "sound, noise"
+      },
+      "position": 2,
+      "surface": "קוֹל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yahweh"
+        },
+        "evidence": "In קוֹל יַהְוֶה אֱלֹהִים, “the sound of Yahweh God,” יַהְוֶה names the one whom the man and his wife hear walking in the garden.",
+        "gloss": "Yahweh",
+        "language": "he",
+        "lemma": "יַהְוֶה",
+        "morphology": "Proper noun with no prefix or suffix",
+        "qualifier": "",
+        "root": "הוה",
+        "sense": "Personal name of the God of Israel"
+      },
+      "position": 3,
+      "surface": "יַהְוֶה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "In קוֹל יַהְוֶה אֱלֹהִים, “the sound of Yahweh God,” אֱלֹהִים stands in apposition to the name יַהְוֶה and designates the same individual.",
+        "gloss": "God",
+        "language": "he",
+        "lemma": "אֱלֹהִים",
+        "morphology": "Common noun, masculine plural absolute, with singular reference.",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "the Mighty One, God"
+      },
+      "position": 4,
+      "surface": "אֱלֹהִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "halak"
+        },
+        "evidence": "They hear the sound of יַהְוֶה אֱלֹהִים walking about. The participle presents the walking as ongoing when they hear it, and בַּגָּן locates it in the garden.",
+        "gloss": "walking about",
+        "language": "he",
+        "lemma": "הָלַךְ",
+        "morphology": "Hitpael active participle, masculine singular absolute",
+        "qualifier": "",
+        "root": "הלכ",
+        "sense": "walk about"
+      },
+      "position": 5,
+      "surface": "מִתְהַלֵּךְ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ganan"
+        },
+        "evidence": "בַּגָּן gives the location of מִתְהַלֵּךְ, “walking about.” The garden is mentioned again in עֵץ הַגָּן, “the trees of the garden.”",
+        "gloss": "in the garden",
+        "language": "he",
+        "lemma": "גַּן",
+        "morphology": "Preposition בְּ with the definite article הַ, followed by a common noun, singular absolute, of common gender.",
+        "qualifier": "",
+        "root": "גננ",
+        "sense": "garden"
+      },
+      "position": 6,
+      "surface": "בַּגָּן"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ruach"
+        },
+        "evidence": "רוּחַ is in construct with הַיּוֹם, giving “the breeze of the day.” With לְ, the phrase describes the setting of the walk in the garden.",
+        "gloss": "breeze",
+        "language": "he",
+        "lemma": "רוּחַ",
+        "morphology": "Prefixed preposition לְ plus a common-gender noun in the singular construct state.",
+        "qualifier": "",
+        "root": "רוח",
+        "sense": "wind"
+      },
+      "position": 7,
+      "surface": "לְרוּחַ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yom"
+        },
+        "evidence": "In לְרוּחַ הַיּוֹם, “at the breeze of the day,” הַיּוֹם completes the construct phrase and identifies the breeze with the daylight period. The phrase gives the time of the walk in the garden.",
+        "gloss": "the day",
+        "language": "he",
+        "lemma": "יוֹם",
+        "morphology": "Common noun, masculine singular absolute, with prefixed definite article הַ־.",
+        "qualifier": "",
+        "root": "יומ",
+        "sense": "daylight, the day as against night"
+      },
+      "position": 8,
+      "surface": "הַיּוֹם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "chaba",
+            "base": null,
+            "change": "Add the root חבא with the Hithpael sense “hide oneself.”",
+            "definition": "In the Hithpael, to hide oneself from sight.",
+            "evidence": "In Gen.3.8 the man and his wife take cover among the garden trees when they hear Yahweh God."
+          }
+        },
+        "evidence": "After hearing Yahweh God, the man and his wife hide themselves. מִפְּנֵי יַהְוֶה אֱלֹהִים identifies whom they hide from, and בְּתוֹךְ עֵץ הַגָּן places them among the trees of the garden.",
+        "gloss": "and they hid",
+        "language": "he",
+        "lemma": "חָבָא",
+        "morphology": "Hithpael wayyiqtol, third person masculine singular, with prefixed narrative וַ. The singular verb precedes the compound subject הָאָדָם וְאִשְׁתּוֹ and agrees with its first member.",
+        "qualifier": "",
+        "root": "חבא",
+        "sense": "hide oneself"
+      },
+      "position": 9,
+      "surface": "וַיִּתְחַבֵּא"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "adam"
+        },
+        "evidence": "In הָאָדָם וְאִשְׁתּוֹ (“the man and his wife”), the definite article identifies the particular man in the garden narrative. The suffix on וְאִשְׁתּוֹ refers back to him. Together they form the subject of וַיִּתְחַבֵּא (“hid”).",
+        "gloss": "the man",
+        "language": "he",
+        "lemma": "אָדָם",
+        "morphology": "Masculine singular common noun in the absolute state with the prefixed definite article הָ־.",
+        "qualifier": "noun",
+        "root": "אדמ",
+        "sense": "the man (the first man)"
+      },
+      "position": 10,
+      "surface": "הָאָדָם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "enosh"
+        },
+        "evidence": "In הָאָדָם וְאִשְׁתּוֹ, the suffix refers to הָאָדָם, identifying the woman who hides with the man as his wife.",
+        "gloss": "and his wife",
+        "language": "he",
+        "lemma": "אִשָּׁה",
+        "morphology": "Conjunction וְ plus a feminine singular construct noun with the third-person masculine singular possessive suffix וֹ.",
+        "qualifier": "",
+        "root": "אנש",
+        "sense": "wife"
+      },
+      "position": 11,
+      "surface": "וְאִשְׁתּוֹ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "panah"
+        },
+        "evidence": "The man and his wife hide among the trees. After וַיִּתְחַבֵּא ‘hid,’ מִפְּנֵי introduces יַהְוֶה אֱלֹהִים as the one from whose presence they hide.",
+        "gloss": "from the presence of",
+        "language": "he",
+        "lemma": "מִפְּנֵי",
+        "morphology": "Compound preposition formed from מִן and פְּנֵי, the plural construct of פָּנִים. The nun of מִן assimilates to the following pe.",
+        "qualifier": "",
+        "root": "פנה",
+        "sense": "from before, away from"
+      },
+      "position": 12,
+      "surface": "מִפְּנֵי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yahweh"
+        },
+        "evidence": "In מִפְּנֵי יַהְוֶה אֱלֹהִים, “from the presence of Yahweh God,” יַהְוֶה names the one from whom the man and his wife hide.",
+        "gloss": "Yahweh",
+        "language": "he",
+        "lemma": "יַהְוֶה",
+        "morphology": "Proper noun without prefix or suffix",
+        "qualifier": "",
+        "root": "הוה",
+        "sense": "Personal name of the God of Israel"
+      },
+      "position": 13,
+      "surface": "יַהְוֶה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "In מִפְּנֵי יַהְוֶה אֱלֹהִים, אֱלֹהִים stands in apposition to יַהְוֶה and identifies the one from whose presence the man and his wife hide.",
+        "gloss": "God",
+        "language": "he",
+        "lemma": "אֱלֹהִים",
+        "morphology": "Common noun, masculine plural absolute in form, with singular reference.",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "the Mighty One, God"
+      },
+      "position": 14,
+      "surface": "אֱלֹהִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "tavek",
+            "base": "d8dce38f79549e3ae5a33b554106d9b697991b2bf1b18199b19be20e491dca9b",
+            "change": "Assign the occurrence to the existing tavek-among sense of תָּוֶךְ and clarify the collective complement in its Genesis 3:8 evidence.",
+            "definition": "With בְּ and a collective complement, תָּוֶךְ locates someone among the members of the group.",
+            "evidence": "In Genesis 3:8, בְּתוֹךְ specifies the hiding place, and עֵץ הַגָּן identifies the trees that surround the man and his wife."
+          }
+        },
+        "evidence": "בְּתוֹךְ עֵץ הַגָּן answers where the man and his wife hid. עֵץ הַגָּן denotes the trees of the garden collectively, so בְּתוֹךְ places them among those trees.",
+        "gloss": "among",
+        "language": "he",
+        "lemma": "תָּוֶךְ",
+        "morphology": "Prefixed preposition בְּ “in” + תוֹךְ, masculine singular construct of תָּוֶךְ, governing עֵץ הַגָּן.",
+        "qualifier": "",
+        "root": "תוכ",
+        "sense": "among, in the midst of (a company)"
+      },
+      "position": 15,
+      "surface": "בְּתוֹךְ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ets"
+        },
+        "evidence": "In בְּתוֹךְ עֵץ הַגָּן, “among the trees of the garden,” עֵץ is in construct with הַגָּן. The singular refers collectively to the trees among which the man and his wife hide.",
+        "gloss": "trees",
+        "language": "he",
+        "lemma": "עֵץ",
+        "morphology": "Common noun, masculine singular construct, used collectively.",
+        "qualifier": "",
+        "root": "עצה",
+        "sense": "tree"
+      },
+      "position": 16,
+      "surface": "עֵץ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ganan"
+        },
+        "evidence": "In עֵץ הַגָּן, “the trees of the garden,” הַגָּן identifies the garden whose trees provide cover for the man and his wife. The same garden appears earlier in בַּגָּן, “in the garden.”",
+        "gloss": "the garden",
+        "language": "he",
+        "lemma": "גַּן",
+        "morphology": "Definite article הַ־ prefixed to a common noun, singular absolute.",
+        "qualifier": "",
+        "root": "גננ",
+        "sense": "garden"
+      },
+      "position": 17,
+      "surface": "הַגָּן"
+    }
+  ]
+}

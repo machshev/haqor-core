@@ -1,0 +1,417 @@
+{
+  "book": 1,
+  "chapter": 3,
+  "review": {
+    "entities": [
+      {
+        "evidence": "The phrase גַן עֵדֶן identifies the garden planted in Eden in Genesis 2:8. The cherubim are stationed east of that garden.",
+        "key": "Eden@Gen.2.8",
+        "position": 6
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "and he drove out",
+        "position": 0
+      },
+      {
+        "gloss": "(direct-object marker)",
+        "position": 1
+      },
+      {
+        "gloss": "the man",
+        "position": 2
+      },
+      {
+        "gloss": "and he stationed",
+        "position": 3
+      },
+      {
+        "gloss": "east of",
+        "position": 4
+      },
+      {
+        "gloss": "the garden of",
+        "position": 5
+      },
+      {
+        "gloss": "Eden",
+        "position": 6
+      },
+      {
+        "gloss": "(direct-object marker)",
+        "position": 7
+      },
+      {
+        "gloss": "the cherubim",
+        "position": 8
+      },
+      {
+        "gloss": "and",
+        "position": 9
+      },
+      {
+        "gloss": "the flame of",
+        "position": 10
+      },
+      {
+        "gloss": "the sword",
+        "position": 11
+      },
+      {
+        "gloss": "that kept turning this way and that",
+        "position": 12
+      },
+      {
+        "gloss": "to guard",
+        "position": 13
+      },
+      {
+        "gloss": "(direct-object marker)",
+        "position": 14
+      },
+      {
+        "gloss": "the way to",
+        "position": 15
+      },
+      {
+        "gloss": "the tree of",
+        "position": 16
+      },
+      {
+        "gloss": "life",
+        "position": 17
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[And he drove out|0] [the man|1,2], [and he stationed|3] [the cherubim|7,8] [and|9] [the flame of|10] [the sword|11] [that kept turning this way and that|12] [east of|4] [the garden of|5] [Eden|6] [to guard|13] [the way to|14,15] [the tree of|16] [life|17]."
+  },
+  "source": "ot",
+  "verse": 24,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "garash"
+        },
+        "evidence": "אֶת־הָאָדָם marks the man as the direct object of וַיְגָרֶשׁ. The stationing of the cherubim east of the garden to guard the way to the tree of life confirms that the man was expelled.",
+        "gloss": "and he drove out",
+        "language": "he",
+        "lemma": "גָּרַשׁ",
+        "morphology": "Piel wayyiqtol, third person masculine singular, with prefixed וַ־.",
+        "qualifier": "",
+        "root": "גרש",
+        "sense": "drive out, expel"
+      },
+      "position": 0,
+      "surface": "וַיְגָרֶשׁ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "et"
+        },
+        "evidence": "In וַיְגָרֶשׁ אֶת הָאָדָם, “he drove out the man,” אֶת marks הָאָדָם, “the man,” as the definite direct object of וַיְגָרֶשׁ, “he drove out.”",
+        "gloss": "(untranslated)",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Direct-object particle in the short form אֶת, without prefix or suffix.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "(marks the definite object)"
+      },
+      "position": 1,
+      "surface": "אֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "adam"
+        },
+        "evidence": "In וַיְגָרֶשׁ אֶת הָאָדָם, אֶת marks הָאָדָם as the direct object of “he drove out.” The definite article identifies the man already known in the Eden narrative, whose way back to the tree of life is now guarded.",
+        "gloss": "the man",
+        "language": "he",
+        "lemma": "אָדָם",
+        "morphology": "Definite article הָ־ prefixed to a masculine singular absolute common noun.",
+        "qualifier": "noun",
+        "root": "אדמ",
+        "sense": "the man (the first man)"
+      },
+      "position": 2,
+      "surface": "הָאָדָם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shakan"
+        },
+        "evidence": "The two direct-object markers אֶת and וְאֵת identify what God stationed: the cherubim and the flame of the turning sword. מִקֶּדֶם לְגַן־עֵדֶן specifies their position east of the garden of Eden, and לִשְׁמֹר gives their purpose, to guard the way to the tree of life.",
+        "gloss": "and he stationed",
+        "language": "he",
+        "lemma": "שָׁכַן",
+        "morphology": "Hiphil wayyiqtol, third person masculine singular, with prefixed וַ־ and no suffix.",
+        "qualifier": "",
+        "root": "שכנ",
+        "sense": "place or station at a location"
+      },
+      "position": 3,
+      "surface": "וַיַּשְׁכֵּן"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "qedem"
+        },
+        "evidence": "מִקֶּדֶם לְגַן עֵדֶן specifies where God stationed the cherubim to guard the way to the tree of life. The garden is the reference point for the direction.",
+        "gloss": "east of",
+        "language": "he",
+        "lemma": "קֶדֶם",
+        "morphology": "Masculine singular absolute noun with prefixed preposition מִן. The נ assimilates to the following ק, marked by the dagesh.",
+        "qualifier": "",
+        "root": "קדמ",
+        "sense": "east"
+      },
+      "position": 4,
+      "surface": "מִקֶּדֶם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ganan"
+        },
+        "evidence": "גַן is in construct with עֵדֶן, forming “the garden of Eden.” The prefixed לְ links that phrase to מִקֶּדֶם, locating the cherubim “east of the garden of Eden.”",
+        "gloss": "of the garden",
+        "language": "he",
+        "lemma": "גַּן",
+        "morphology": "Prefixed preposition לְ + common-gender singular noun in the construct state.",
+        "qualifier": "",
+        "root": "גננ",
+        "sense": "garden"
+      },
+      "position": 5,
+      "surface": "לְגַן"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "eden",
+            "base": "0073ee93365c2a8b78250ac250b810c65257463dee47801a0e7571bda8592234",
+            "change": "Add a place-name word for עֵדֶן alongside the identically pointed noun meaning delight.",
+            "definition": "Eden is the place where Yahweh God planted a garden.",
+            "evidence": "Genesis 2:8 locates the garden with the phrase גַּן בְּעֵדֶן, “a garden in Eden.”"
+          }
+        },
+        "evidence": "מִקֶּדֶם לְגַן עֵדֶן places the cherubim east of the garden of Eden. עֵדֶן names the place that identifies the garden.",
+        "gloss": "Eden",
+        "language": "he",
+        "lemma": "עֵדֶן",
+        "morphology": "Singular proper noun in the absolute state, with no prefix or suffix. It completes the construct chain גַן עֵדֶן.",
+        "qualifier": "place name",
+        "root": "עדנ",
+        "sense": "Eden, the place where Yahweh God planted a garden."
+      },
+      "position": 6,
+      "surface": "עֵדֶן"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "et"
+        },
+        "evidence": "אֶת introduces הַכְּרֻבִים, “the cherubim,” as the first direct object of וַיַּשְׁכֵּן, “he stationed.” The following וְאֵת introduces the coordinated second object.",
+        "gloss": "(untranslated)",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Uninflected direct-object particle, without prefix or suffix.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "(marks the definite object)"
+      },
+      "position": 7,
+      "surface": "אֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "keruv",
+            "base": "63ff905f2142a8677102b749a97fee95b6fef2dffe77e84ea1a1c55d9879a9b9",
+            "change": "Use the guardian sense in the existing keruv article and specify the guardians’ location in its definition.",
+            "definition": "A guardian being stationed at the approach to Eden.",
+            "evidence": "Genesis 3:24 names the cherubim among those stationed east of the garden to guard the way to the tree of life."
+          }
+        },
+        "evidence": "אֶת marks הַכְּרֻבִים as an object of וַיַּשְׁכֵּן, “he stationed.” God stations the cherubim east of Eden, and לִשְׁמֹר identifies their task as guarding the way to the tree of life.",
+        "gloss": "the cherubim",
+        "language": "he",
+        "lemma": "כְּרוּב",
+        "morphology": "Definite article הַ־ with doubling of the following כ, prefixed to a masculine plural absolute noun ending in ־ִים.",
+        "qualifier": "noun",
+        "root": "כרב",
+        "sense": "guardian"
+      },
+      "position": 8,
+      "surface": "הַכְּרֻבִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "et",
+            "base": "31c9a635be8bba9a67417e75ea7122e240ae707e04a841533a59ecd2869d0f80",
+            "change": "Add Genesis 3:24 to the existing אֵת … וְאֵת usage evidence in et.",
+            "definition": "אֵת marks a definite direct object and can recur before each of two coordinated objects.",
+            "evidence": "In Genesis 3:24, אֶת הַכְּרֻבִים וְאֵת לַהַט הַחֶרֶב identifies both the cherubim and the flame of the sword as objects of וַיַּשְׁכֵּן."
+          }
+        },
+        "evidence": "וַיַּשְׁכֵּן “he stationed” governs two objects. After אֶת הַכְּרֻבִים “the cherubim,” וְאֵת introduces לַהַט הַחֶרֶב הַמִּתְהַפֶּכֶת “the flame of the turning sword.” The article on הַחֶרֶב makes the construct phrase לַהַט הַחֶרֶב definite.",
+        "gloss": "and [direct-object marker]",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Prefixed coordinating conjunction וְ־ “and” + unsuffixed direct-object particle אֵת.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "Marks the definite direct object."
+      },
+      "position": 9,
+      "surface": "וְאֵת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "lahat"
+        },
+        "evidence": "לַהַט הַחֶרֶב means “the flame of the sword.” The definite noun הַחֶרֶב completes the construct phrase, and the feminine singular participle הַמִּתְהַפֶּכֶת agrees with the sword, describing it as turning.",
+        "gloss": "the flame of",
+        "language": "he",
+        "lemma": "לַהַט",
+        "morphology": "Masculine singular noun in the construct state, without prefix or suffix.",
+        "qualifier": "",
+        "root": "להט",
+        "sense": "flame"
+      },
+      "position": 10,
+      "surface": "לַהַט"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "cherev"
+        },
+        "evidence": "In לַהַט הַחֶרֶב, “the flame of the sword,” הַחֶרֶב completes the construct phrase. The feminine singular participle הַמִּתְהַפֶּכֶת agrees with חֶרֶב and describes the sword turning as it guards the way to the tree of life.",
+        "gloss": "the sword",
+        "language": "he",
+        "lemma": "חֶרֶב",
+        "morphology": "Feminine singular common noun in the absolute state, with prefixed definite article הַ־.",
+        "qualifier": "",
+        "root": "חרב",
+        "sense": "sword"
+      },
+      "position": 11,
+      "surface": "הַחֶרֶב"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "haphak"
+        },
+        "evidence": "הַמִּתְהַפֶּכֶת agrees in gender, number, and definiteness with הַחֶרֶב, “the sword.” The participle describes the sword’s ongoing motion as it guards the way to the tree of life.",
+        "gloss": "that kept turning",
+        "language": "he",
+        "lemma": "הָפַךְ",
+        "morphology": "Definite article הַ־ + Hitpael active participle, feminine singular absolute, used attributively.",
+        "qualifier": "",
+        "root": "הפכ",
+        "sense": "to turn this way and that"
+      },
+      "position": 12,
+      "surface": "הַמִּתְהַפֶּכֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shamar"
+        },
+        "evidence": "לִשְׁמֹר gives the purpose for stationing the cherubim and the flaming, turning sword east of Eden. אֶת marks דֶּרֶךְ עֵץ הַחַיִּים, “the way to the tree of life,” as the object being guarded.",
+        "gloss": "to guard",
+        "language": "he",
+        "lemma": "שָׁמַר",
+        "morphology": "Qal infinitive construct with prefixed לִ־ expressing purpose",
+        "qualifier": "",
+        "root": "שמר",
+        "sense": "guard, watch over"
+      },
+      "position": 13,
+      "surface": "לִשְׁמֹר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "et"
+        },
+        "evidence": "אֶת introduces דֶּרֶךְ עֵץ הַחַיִּים, “the way to the tree of life,” as the direct object of לִשְׁמֹר, “to guard.” The final noun הַחַיִּים makes the construct chain definite.",
+        "gloss": "(untranslated direct-object marker)",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Uninflected direct-object particle without prefix or suffix.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "(marks the definite object)"
+      },
+      "position": 14,
+      "surface": "אֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "derek"
+        },
+        "evidence": "In לִשְׁמֹר אֶת דֶּרֶךְ עֵץ הַחַיִּים, what is guarded is the path. The construct chain identifies the tree of life as the destination, and the stationing of the cherubim east of the garden supports a physical approach.",
+        "gloss": "way to",
+        "language": "he",
+        "lemma": "דֶּרֶךְ",
+        "morphology": "Common noun of common gender, singular construct, without prefix or suffix.",
+        "qualifier": "",
+        "root": "דרכ",
+        "sense": "road, path"
+      },
+      "position": 15,
+      "surface": "דֶּרֶךְ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ets"
+        },
+        "evidence": "עֵץ stands in construct with הַחַיִּים, forming עֵץ הַחַיִּים, “the tree of life.” The cherubim and the flaming sword guard the way to that tree.",
+        "gloss": "tree",
+        "language": "he",
+        "lemma": "עֵץ",
+        "morphology": "Common noun, masculine singular construct, without prefix or suffix.",
+        "qualifier": "",
+        "root": "עצה",
+        "sense": "tree"
+      },
+      "position": 16,
+      "surface": "עֵץ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chayah"
+        },
+        "evidence": "In עֵץ הַחַיִּים, “the tree of life,” הַחַיִּים names what the tree gives. The cherubim and the flaming sword guard the way to that tree.",
+        "gloss": "life",
+        "language": "he",
+        "lemma": "חַיִּים",
+        "morphology": "Definite article הַ־ + masculine plural absolute noun.",
+        "qualifier": "",
+        "root": "חיה",
+        "sense": "life, being alive"
+      },
+      "position": 17,
+      "surface": "הַחַיִּים"
+    }
+  ]
+}

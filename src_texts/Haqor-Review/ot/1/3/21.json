@@ -1,0 +1,205 @@
+{
+  "book": 1,
+  "chapter": 3,
+  "review": {
+    "entities": [
+      {
+        "evidence": "יַהְוֶה is the personal name in ‘Yahweh God.’ The one who clothes Adam and his wife is the same God who brought the woman to the man in Genesis 2:22.",
+        "key": "Yahweh@Gen.2.22",
+        "new": {
+          "description": "The God of Israel, who built the rib taken from the man into a woman and brought her to the man.",
+          "kind": "person",
+          "name": "Yahweh"
+        },
+        "position": 1
+      },
+      {
+        "evidence": "לְאָדָם names Adam as a recipient of the tunics alongside his wife, Eve, whom he named in the preceding verse. The source tag identifies the same man.",
+        "key": "Adam@Gen.2.19",
+        "position": 3
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "then he made",
+        "position": 0
+      },
+      {
+        "gloss": "Yahweh",
+        "position": 1
+      },
+      {
+        "gloss": "God",
+        "position": 2
+      },
+      {
+        "gloss": "for Adam",
+        "position": 3
+      },
+      {
+        "gloss": "and for his wife",
+        "position": 4
+      },
+      {
+        "gloss": "tunics of",
+        "position": 5
+      },
+      {
+        "gloss": "hide",
+        "position": 6
+      },
+      {
+        "gloss": "and he clothed them",
+        "position": 7
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[Then|0] [Yahweh|1] [God|2] [made|0] [tunics of|5] [hide|6] [for Adam|3] [and his wife|4], [and he clothed them|7]."
+  },
+  "source": "ot",
+  "verse": 21,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "asah"
+        },
+        "evidence": "יַהְוֶה אֱלֹהִים is the subject, and כָּתְנוֹת עוֹר names what he made, tunics of skin. לְאָדָם וּלְאִשְׁתּוֹ identifies the recipients. The following verb וַיַּלְבִּשֵׁם describes how he then clothed them.",
+        "gloss": "and he made",
+        "language": "he",
+        "lemma": "עָשָׂה",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ־ and no suffix",
+        "qualifier": "",
+        "root": "עשׂה",
+        "sense": "make, bring into being"
+      },
+      "position": 0,
+      "surface": "וַיַּעַשׂ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yahweh"
+        },
+        "evidence": "In וַיַּעַשׂ יַהְוֶה אֱלֹהִים, יַהְוֶה names the subject of וַיַּעַשׂ (‘made’), and אֱלֹהִים (‘God’) stands in apposition. Yahweh God made garments of skin for Adam and his wife.",
+        "gloss": "Yahweh",
+        "language": "he",
+        "lemma": "יַהְוֶה",
+        "morphology": "Proper noun, masculine singular, with no prefix or suffix",
+        "qualifier": "",
+        "root": "הוה",
+        "sense": "Personal name of the God of Israel"
+      },
+      "position": 1,
+      "surface": "יַהְוֶה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "In יַהְוֶה אֱלֹהִים, אֱלֹהִים identifies Yahweh as God. Both וַיַּעַשׂ (“he made”) and וַיַּלְבִּשֵׁם (“he clothed them”) have a masculine singular subject.",
+        "gloss": "God",
+        "language": "he",
+        "lemma": "אֱלֹהִים",
+        "morphology": "Masculine plural absolute noun with singular reference.",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "the Mighty One, God"
+      },
+      "position": 2,
+      "surface": "אֱלֹהִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "adam"
+        },
+        "evidence": "The pointing לְאָדָם supports reading Adam as a name. The coordinated phrase וּלְאִשְׁתּוֹ, “and for his wife,” identifies the two people for whom God made garments.",
+        "gloss": "for Adam",
+        "language": "he",
+        "lemma": "אָדָם",
+        "morphology": "Preposition לְ prefixed to a masculine singular personal name, without the definite article.",
+        "qualifier": "name",
+        "root": "אדמ",
+        "sense": "Adam, the first man"
+      },
+      "position": 3,
+      "surface": "לְאָדָם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "enosh"
+        },
+        "evidence": "In לְאָדָם וּלְאִשְׁתּוֹ, the repeated לְ־ marks the man and his wife as the two recipients of the garments. The suffix ־וֹ refers back to אָדָם and identifies her as his wife.",
+        "gloss": "and for his wife",
+        "language": "he",
+        "lemma": "אִשָּׁה",
+        "morphology": "Conjunction וּ־ ‘and’ + preposition לְ־ ‘for’ + feminine singular construct noun אִשְׁתּ־ + third-person masculine singular possessive suffix ־וֹ ‘his’.",
+        "qualifier": "",
+        "root": "אנש",
+        "sense": "wife"
+      },
+      "position": 4,
+      "surface": "וּלְאִשְׁתּוֹ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "kuttonet",
+            "base": null,
+            "change": "Add the Hebrew noun כֻּתֹּנֶת under כתנ with the sense “tunic.”",
+            "definition": "A tunic worn on the body.",
+            "evidence": "Genesis 3:21 identifies the tunics as clothing by describing their making and then saying that Yahweh God clothed the couple."
+          }
+        },
+        "evidence": "In כָּתְנוֹת עוֹר, the construct plural names the garments and עוֹר specifies their material, skin. Yahweh God makes them for Adam and his wife, and וַיַּלְבִּשֵׁם, “he clothed them,” confirms their use.",
+        "gloss": "tunics",
+        "language": "he",
+        "lemma": "כֻּתֹּנֶת",
+        "morphology": "Common noun, feminine plural construct, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "כתנ",
+        "sense": "A tunic worn on the body."
+      },
+      "position": 5,
+      "surface": "כָּתְנוֹת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ur"
+        },
+        "evidence": "In כָּתְנוֹת עוֹר, “tunics of hide,” כָּתְנוֹת is in the construct state and עוֹר names the material from which the tunics were made. The following וַיַּלְבִּשֵׁם means “and he clothed them.”",
+        "gloss": "animal hide",
+        "language": "he",
+        "lemma": "עוֹר",
+        "morphology": "Common noun, masculine singular absolute, without prefix or suffix.",
+        "qualifier": "",
+        "root": "עור",
+        "sense": "hide, leather"
+      },
+      "position": 6,
+      "surface": "עוֹר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "lavash"
+        },
+        "evidence": "יַהְוֶה אֱלֹהִים is the subject of both verbs. He made כָּתְנוֹת עוֹר ‘tunics of skin’ for the man and his wife, and the plural object suffix on וַיַּלְבִּשֵׁם refers to the two people he clothed.",
+        "gloss": "and he clothed them",
+        "language": "he",
+        "lemma": "לָבֵשׁ",
+        "morphology": "Hiphil wayyiqtol, third masculine singular, with prefixed וַ־ and a third masculine plural object suffix ־ֵם.",
+        "qualifier": "",
+        "root": "לבש",
+        "sense": "to clothe someone"
+      },
+      "position": 7,
+      "surface": "וַיַּלְבִּשֵׁם"
+    }
+  ]
+}

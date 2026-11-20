@@ -1,0 +1,225 @@
+{
+  "book": 1,
+  "chapter": 7,
+  "review": {
+    "entities": [],
+    "glosses": [
+      {
+        "gloss": "everything",
+        "position": 0
+      },
+      {
+        "gloss": "that",
+        "position": 1
+      },
+      {
+        "gloss": "the breath of",
+        "position": 2
+      },
+      {
+        "gloss": "the spirit of",
+        "position": 3
+      },
+      {
+        "gloss": "life",
+        "position": 4
+      },
+      {
+        "gloss": "in its nostrils",
+        "position": 5
+      },
+      {
+        "gloss": "of all",
+        "position": 6
+      },
+      {
+        "gloss": "that",
+        "position": 7
+      },
+      {
+        "gloss": "on dry land",
+        "position": 8
+      },
+      {
+        "gloss": "died",
+        "position": 9
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[Of all|6] [that|7] {were} [on dry land|8], [everything|0] [that|1] {had} [the breath of|2] [the spirit of|3] [life|4] [in its nostrils|5] [died|9]."
+  },
+  "source": "ot",
+  "verse": 22,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "kalal"
+        },
+        "evidence": "כֹּל heads the subject. The אֲשֶׁר clause identifies those with the breath of life in their nostrils, and מִכֹּל אֲשֶׁר בֶּחָרָבָה limits the group to those on dry land. The plural verb מֵתוּ says that all of them died.",
+        "gloss": "all that",
+        "language": "he",
+        "lemma": "כֹּל",
+        "morphology": "Masculine singular noun in the absolute state, without prefix or suffix.",
+        "qualifier": "",
+        "root": "כלל",
+        "sense": "all, the whole"
+      },
+      "position": 0,
+      "surface": "כֹּל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ashar"
+        },
+        "evidence": "אֲשֶׁר introduces a relative clause modifying כֹּל. The suffix in בְּאַפָּיו refers back to each creature, giving the sense “all in whose nostrils was the breath of life.”",
+        "gloss": "whose",
+        "language": "he",
+        "lemma": "אֲשֶׁר",
+        "morphology": "Uninflected relative particle, without prefix or suffix",
+        "qualifier": "",
+        "root": "אשר",
+        "sense": "who, which, that"
+      },
+      "position": 1,
+      "surface": "אֲשֶׁר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "neshamah"
+        },
+        "evidence": "נִשְׁמַת governs רוּחַ חַיִּים in the construct chain נִשְׁמַת רוּחַ חַיִּים. בְּאַפָּיו locates that breath in the nostrils of each creature that died on dry land.",
+        "gloss": "breath",
+        "language": "he",
+        "lemma": "נְשָׁמָה",
+        "morphology": "Feminine singular noun in the construct state, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "נשמ",
+        "sense": "breath of life"
+      },
+      "position": 2,
+      "surface": "נִשְׁמַת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ruach"
+        },
+        "evidence": "In נִשְׁמַת רוּחַ חַיִּים, רוּחַ חַיִּים means “breath of life.” בְּאַפָּיו locates that breath in the nostrils, and מֵתוּ says that the creatures who had it died.",
+        "gloss": "life-breath",
+        "language": "he",
+        "lemma": "רוּחַ",
+        "morphology": "Common-gender singular noun in construct with חַיִּים. The construct and absolute forms are identical.",
+        "qualifier": "",
+        "root": "רוח",
+        "sense": "breath of life, life-spirit"
+      },
+      "position": 3,
+      "surface": "רוּחַ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chayah"
+        },
+        "evidence": "חַיִּים completes the construct chain נִשְׁמַת רוּחַ חַיִּים, “the breath of the spirit of life.” בְּאַפָּיו locates that breath in the nostrils of each creature, and מֵתוּ says that all who had it on dry land died.",
+        "gloss": "life",
+        "language": "he",
+        "lemma": "חַיִּים",
+        "morphology": "Masculine plural absolute noun.",
+        "qualifier": "",
+        "root": "חיה",
+        "sense": "life as given by God's breath"
+      },
+      "position": 4,
+      "surface": "חַיִּים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "aph"
+        },
+        "evidence": "נִשְׁמַת רוּחַ חַיִּים identifies the breath of life, and בְּאַפָּיו locates that breath in the nostrils of each creature that died on dry land.",
+        "gloss": "in its nostrils",
+        "language": "he",
+        "lemma": "אַף",
+        "morphology": "Preposition בְּ ‘in’ + masculine dual noun in construct with a third-person masculine singular possessive suffix.",
+        "qualifier": "noun",
+        "root": "אנפ",
+        "sense": "nostrils as the seat of breath and life"
+      },
+      "position": 5,
+      "surface": "בְּאַפָּיו"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "kalal"
+        },
+        "evidence": "מִכֹּל אֲשֶׁר בֶּחָרָבָה means “of all that was on dry land.” The relative clause defines the whole group from which the verse singles out those with the breath of life in their nostrils.",
+        "gloss": "of all",
+        "language": "he",
+        "lemma": "כֹּל",
+        "morphology": "Masculine singular absolute noun with prefixed partitive מִן, whose נ assimilates to כּ.",
+        "qualifier": "",
+        "root": "כלל",
+        "sense": "all, the whole"
+      },
+      "position": 6,
+      "surface": "מִכֹּל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ashar"
+        },
+        "evidence": "In מִכֹּל אֲשֶׁר בֶּחָרָבָה, “of all that were on dry land,” אֲשֶׁר introduces a relative clause modifying כֹּל. The phrase בֶּחָרָבָה supplies the location, and English supplies “were.”",
+        "gloss": "that",
+        "language": "he",
+        "lemma": "אֲשֶׁר",
+        "morphology": "Invariant relative particle with no prefix or suffix.",
+        "qualifier": "",
+        "root": "אשר",
+        "sense": "who, which, that"
+      },
+      "position": 7,
+      "surface": "אֲשֶׁר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "cherev"
+        },
+        "evidence": "אֲשֶׁר בֶּחָרָבָה means “that were on the dry land.” The phrase identifies where the air-breathing creatures that died had lived.",
+        "gloss": "on the dry land",
+        "language": "he",
+        "lemma": "חָרָבָה",
+        "morphology": "Common noun, feminine singular absolute, with the prefixed preposition בְּ and the definite article.",
+        "qualifier": "",
+        "root": "חרב",
+        "sense": "dry ground, dry land"
+      },
+      "position": 8,
+      "surface": "בֶּחָרָבָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "mut"
+        },
+        "evidence": "מֵתוּ is the main verb. Its plural form refers to all the creatures on dry ground that had the breath of life in their nostrils. The verse says that they died.",
+        "gloss": "died",
+        "language": "he",
+        "lemma": "מוּת",
+        "morphology": "Qal perfect, third person common plural, with the plural ending ־וּ.",
+        "qualifier": "",
+        "root": "מות",
+        "sense": "to die"
+      },
+      "position": 9,
+      "surface": "מֵתוּ"
+    }
+  ]
+}

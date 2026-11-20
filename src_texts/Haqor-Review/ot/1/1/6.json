@@ -1,0 +1,196 @@
+{
+  "book": 1,
+  "chapter": 1,
+  "source": "ot",
+  "verse": 6,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "amar"
+        },
+        "evidence": "אֱלֹהִים is the subject of וַיֹּאמֶר. The jussive יְהִי רָקִיעַ (“Let there be an expanse”) begins the direct speech.",
+        "gloss": "and said",
+        "language": "he",
+        "lemma": "אָמַר",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ; no suffix.",
+        "qualifier": "",
+        "root": "אמר",
+        "sense": "say, introducing direct speech"
+      },
+      "position": 0,
+      "surface": "וַיֹּאמֶר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "In וַיֹּאמֶר אֱלֹהִים, the third-person masculine singular verb וַיֹּאמֶר identifies God as the single speaker who commands the expanse to come into being.",
+        "gloss": "God",
+        "language": "he",
+        "lemma": "אֱלֹהִים",
+        "morphology": "Masculine plural absolute noun with singular agreement.",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "the Mighty One, God"
+      },
+      "position": 1,
+      "surface": "אֱלֹהִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "hayah"
+        },
+        "evidence": "In God’s command יְהִי רָקִיעַ, the jussive agrees with its masculine singular subject רָקִיעַ and calls for an expanse to come into existence amid the waters.",
+        "gloss": "let there be",
+        "language": "he",
+        "lemma": "הָיָה",
+        "morphology": "Qal jussive, third person masculine singular",
+        "qualifier": "",
+        "root": "היה",
+        "sense": "to come into existence"
+      },
+      "position": 2,
+      "surface": "יְהִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "raqia"
+        },
+        "evidence": "In יְהִי רָקִיעַ בְּתוֹךְ הַמָּיִם, the expanse is the subject of יְהִי and is located amid the waters. The masculine singular participle מַבְדִּיל describes its function of separating one body of water from another.",
+        "gloss": "expanse",
+        "language": "he",
+        "lemma": "רָקִיעַ",
+        "morphology": "Common noun, masculine singular absolute, without prefix or suffix.",
+        "qualifier": "",
+        "root": "רקע",
+        "sense": "expanse"
+      },
+      "position": 3,
+      "surface": "רָקִיעַ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "tavek",
+            "base": "d8dce38f79549e3ae5a33b554106d9b697991b2bf1b18199b19be20e491dca9b",
+            "change": "Assign this occurrence to the existing tavek-middle sense of תָּוֶךְ under תוכ. Clarify its Genesis 1:6 evidence and distinguish an intervening position from a measured midpoint in the definition.",
+            "definition": "The middle or midst of something, with parts of it on either side.",
+            "evidence": "In Genesis 1:6 the expanse stands בְּתוֹךְ הַמָּיִם where it can separate waters from waters."
+          }
+        },
+        "evidence": "בְּתוֹךְ הַמָּיִם places the expanse in the midst of the waters. Its stated purpose, מַבְדִּיל בֵּין מַיִם לָמָיִם (‘separating waters from waters’), shows that the waters lie on either side of it.",
+        "gloss": "in the midst of",
+        "language": "he",
+        "lemma": "תָּוֶךְ",
+        "morphology": "Prefixed preposition בְּ־ (‘in’) + תוֹךְ, masculine singular construct noun, governed in the construct chain by הַמָּיִם (‘the waters’).",
+        "qualifier": "",
+        "root": "תוכ",
+        "sense": "middle, centre"
+      },
+      "position": 4,
+      "surface": "בְּתוֹךְ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "hayah"
+        },
+        "evidence": "The subject is רָקִיעַ, the expanse. In וִיהִי מַבְדִּיל, the participle מַבְדִּיל supplies the predicate, “separating.” The marked verb thus expresses the expanse’s assigned function: “and let it separate water from water.”",
+        "gloss": "and let it be",
+        "language": "he",
+        "lemma": "הָיָה",
+        "morphology": "Qal jussive, third person masculine singular, with prefixed conjunction וִ־",
+        "qualifier": "",
+        "root": "היה",
+        "sense": "to be in a state or condition"
+      },
+      "position": 6,
+      "surface": "וִיהִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "badal",
+            "base": null,
+            "change": "Add the Hebrew verb בָּדַל with its Hiphil sense of separating.",
+            "definition": "To separate one thing from another.",
+            "evidence": "In Gen.1.4, God separates light from darkness. The repeated בֵּין introduces each member of the pair."
+          }
+        },
+        "evidence": "מַבְדִּיל agrees with the masculine singular רָקִיעַ, the expanse. With וִיהִי it expresses the expanse’s assigned function, to separate one body of water from the other (בֵּין מַיִם לָמָיִם).",
+        "gloss": "separating",
+        "language": "he",
+        "lemma": "בָּדַל",
+        "morphology": "Hiphil active participle, masculine singular absolute, with no attached prefix or suffix.",
+        "qualifier": "",
+        "root": "בדל",
+        "sense": "to separate one thing from another"
+      },
+      "position": 7,
+      "surface": "מַבְדִּיל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "bayin"
+        },
+        "evidence": "The expanse is to stand בְּתוֹךְ הַמָּיִם, “in the midst of the waters.” In מַבְדִּיל בֵּין מַיִם לָמָיִם, בֵּין introduces the waters on one side of the expanse, and לְ marks those on the other. The separation is spatial.",
+        "gloss": "between",
+        "language": "he",
+        "lemma": "בַּיִן",
+        "morphology": "Preposition in the form בֵּין, without prefix or suffix.",
+        "qualifier": "",
+        "root": "בינ",
+        "sense": "between (in place)"
+      },
+      "position": 8,
+      "surface": "בֵּין"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "mayim"
+        },
+        "evidence": "In בֵּין מַיִם לָמָיִם (“between waters and waters”), the marked מַיִם names the first of the two bodies of water that the expanse is to separate.",
+        "gloss": "waters",
+        "language": "he",
+        "lemma": "מַיִם",
+        "morphology": "Common noun, masculine plural absolute, without prefix or suffix.",
+        "qualifier": "",
+        "root": "מימ",
+        "sense": "a body or flow of water"
+      },
+      "position": 9,
+      "surface": "מַיִם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "mayim",
+            "base": "7a095b6c2624f5e1fa2f45c8ad0c8fa7eebb4e609589e4db6aa40b3f9ca131e1",
+            "change": "Add Genesis 1:6 to the existing physical body-of-water sense in mayim.",
+            "definition": "A body or flow of water, including the waters on either side of the expanse.",
+            "evidence": "Genesis 1:6 repeats מַיִם on either side of the expression of separation. The expanse divides the waters already mentioned in the verse."
+          }
+        },
+        "evidence": "God places the expanse בְּתוֹךְ הַמָּיִם, “in the midst of the waters.” In בֵּין מַיִם לָמָיִם, “between waters and waters,” the marked noun names the waters on the other side of that division.",
+        "gloss": "waters",
+        "language": "he",
+        "lemma": "מַיִם",
+        "morphology": "Common noun, masculine plural absolute, in the pausal form מָיִם with prefixed preposition לָ־ marking the second member of בֵּין … לְ־.",
+        "qualifier": "",
+        "root": "מימ",
+        "sense": "a body or flow of water"
+      },
+      "position": 10,
+      "surface": "לָמָיִם"
+    }
+  ]
+}

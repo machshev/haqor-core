@@ -1,0 +1,422 @@
+{
+  "book": 1,
+  "chapter": 1,
+  "source": "ot",
+  "verse": 29,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "amar"
+        },
+        "evidence": "אֱלֹהִים is the subject of וַיֹּאמֶר. The words הִנֵּה נָתַתִּי לָכֶם (“Look, I have given you”) begin God's direct speech.",
+        "gloss": "and he said",
+        "language": "he",
+        "lemma": "אָמַר",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ־.",
+        "qualifier": "",
+        "root": "אמר",
+        "sense": "say, introducing direct speech"
+      },
+      "position": 0,
+      "surface": "וַיֹּאמֶר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "אֱלֹהִים is the subject of the singular וַיֹּאמֶר (“he said”). The speaker uses the first-person singular נָתַתִּי (“I have given”) to describe giving plants and fruit trees for food.",
+        "gloss": "God",
+        "language": "he",
+        "lemma": "אֱלֹהִים",
+        "morphology": "Common noun, masculine plural absolute, with singular agreement",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "the Mighty One, God"
+      },
+      "position": 1,
+      "surface": "אֱלֹהִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "hinneh"
+        },
+        "evidence": "In הִנֵּה נָתַתִּי לָכֶם, “See, I have given you,” God draws the hearers’ attention to his gift of plants and fruit trees for food.",
+        "gloss": "see",
+        "language": "he",
+        "lemma": "הִנֵּה",
+        "morphology": "Presentative interjection, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "הנה",
+        "sense": "see now (a fact put before the hearer)"
+      },
+      "position": 2,
+      "surface": "הִנֵּה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "natan"
+        },
+        "evidence": "God is the speaker. לָכֶם identifies the recipients, and אֶת and וְאֶת introduce the seed-bearing plants and fruit trees as what God gives. לָכֶם יִהְיֶה לְאָכְלָה specifies their use as food.",
+        "gloss": "I have given",
+        "language": "he",
+        "lemma": "נָתַן",
+        "morphology": "Qal perfect, first person common singular, with subject ending ־תִּי.",
+        "qualifier": "",
+        "root": "נתנ",
+        "sense": "give something to someone for their use"
+      },
+      "position": 3,
+      "surface": "נָתַתִּי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "et"
+        },
+        "evidence": "In נָתַתִּי לָכֶם אֶת כָּל עֵשֶׂב, לָכֶם identifies the recipients (“to you”), and אֶת introduces what God gives (“every plant”). The parallel וְאֶת כָּל הָעֵץ introduces the second object (“and every tree”).",
+        "gloss": "(untranslated direct-object marker)",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Direct-object particle without prefix or suffix.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "(marks the definite object)"
+      },
+      "position": 5,
+      "surface": "אֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "kalal"
+        },
+        "evidence": "In כָּל עֵשֶׂב זֹרֵעַ זֶרַע, כָּל quantifies the singular noun עֵשֶׂב. The gift includes every plant that bears seed.",
+        "gloss": "every",
+        "language": "he",
+        "lemma": "כֹּל",
+        "morphology": "Masculine singular noun in the construct state.",
+        "qualifier": "",
+        "root": "כלל",
+        "sense": "every, each; any"
+      },
+      "position": 6,
+      "surface": "כָּל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "eseb"
+        },
+        "evidence": "כָּל עֵשֶׂב זֹרֵעַ זֶרַע means “every seed-bearing plant.” The masculine singular participle זֹרֵעַ modifies עֵשֶׂב. The verse lists these plants alongside fruit trees as food.",
+        "gloss": "plant",
+        "language": "he",
+        "lemma": "עֵשֶׂב",
+        "morphology": "Common noun, masculine singular absolute, without prefix or suffix.",
+        "qualifier": "",
+        "root": "עשׂב",
+        "sense": "grass"
+      },
+      "position": 7,
+      "surface": "עֵשֶׂב"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "zera"
+        },
+        "evidence": "זֹרֵעַ modifies the masculine singular noun עֵשֶׂב ‘plant’ and takes זֶרַע ‘seed’ as its object. The phrase כָּל עֵשֶׂב זֹרֵעַ זֶרַע means ‘every plant that bears seed’.",
+        "gloss": "bearing seed",
+        "language": "he",
+        "lemma": "זָרַע",
+        "morphology": "Qal active participle, masculine singular absolute",
+        "qualifier": "",
+        "root": "זרע",
+        "sense": "yield seed (of a plant)"
+      },
+      "position": 8,
+      "surface": "זֹרֵעַ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "zera"
+        },
+        "evidence": "In עֵשֶׂב זֹרֵעַ זֶרַע, “a plant yielding seed,” זֶרַע is the direct object of זֹרֵעַ and names what the plant produces.",
+        "gloss": "seed",
+        "language": "he",
+        "lemma": "זֶרַע",
+        "morphology": "Common noun, masculine singular absolute, without prefix or suffix.",
+        "qualifier": "",
+        "root": "זרע",
+        "sense": "seed (of plants), grain for sowing"
+      },
+      "position": 9,
+      "surface": "זֶרַע"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ashar"
+        },
+        "evidence": "אֲשֶׁר introduces a relative clause modifying כָּל עֵשֶׂב זֹרֵעַ זֶרַע, “every seed-bearing plant.” The clause עַל פְּנֵי כָל הָאָרֶץ gives its location, “on the face of the whole earth,” with “is” understood.",
+        "gloss": "that",
+        "language": "he",
+        "lemma": "אֲשֶׁר",
+        "morphology": "Uninflected relative particle with no prefix or suffix.",
+        "qualifier": "",
+        "root": "אשר",
+        "sense": "who, which, that"
+      },
+      "position": 10,
+      "surface": "אֲשֶׁר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "alah"
+        },
+        "evidence": "In אֲשֶׁר עַל פְּנֵי כָל הָאָרֶץ, עַל locates the seed-bearing plants on the surface of the whole earth. Its complement פְּנֵי supplies the meaning “face” or “surface.”",
+        "gloss": "on",
+        "language": "he",
+        "lemma": "עַל",
+        "morphology": "Preposition without prefix or suffix.",
+        "qualifier": "",
+        "root": "עלה",
+        "sense": "on, upon, over"
+      },
+      "position": 11,
+      "surface": "עַל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "panah"
+        },
+        "evidence": "In עַל פְּנֵי כָל הָאָרֶץ, פְּנֵי is in construct with כָל הָאָרֶץ. The phrase locates the seed-bearing plants on the surface of the whole earth.",
+        "gloss": "surface",
+        "language": "he",
+        "lemma": "פָּנִים",
+        "morphology": "Common noun, both genders, plural construct.",
+        "qualifier": "",
+        "root": "פנה",
+        "sense": "surface (of the earth, the waters)"
+      },
+      "position": 12,
+      "surface": "פְּנֵי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "kalal"
+        },
+        "evidence": "In עַל פְּנֵי כָל הָאָרֶץ, “on the face of the whole earth,” כָל takes the definite singular הָאָרֶץ as its complement and refers to the earth in its entirety.",
+        "gloss": "the whole",
+        "language": "he",
+        "lemma": "כֹּל",
+        "morphology": "Masculine singular noun in the construct state, without prefix or suffix.",
+        "qualifier": "",
+        "root": "כלל",
+        "sense": "all, the whole"
+      },
+      "position": 13,
+      "surface": "כָל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "erets"
+        },
+        "evidence": "In עַל פְּנֵי כָל הָאָרֶץ, “across the face of the whole earth,” פְּנֵי supplies the sense of surface, while כָל הָאָרֶץ names the whole earth over which the seed-bearing plants grow.",
+        "gloss": "the earth",
+        "language": "he",
+        "lemma": "אֶרֶץ",
+        "morphology": "Common noun, singular absolute, with the prefixed definite article הָ־.",
+        "qualifier": "",
+        "root": "ארצ",
+        "sense": "earth"
+      },
+      "position": 14,
+      "surface": "הָאָרֶץ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "et",
+            "base": "31c9a635be8bba9a67417e75ea7122e240ae707e04a841533a59ecd2869d0f80",
+            "change": "Add Gen.1.29 as verse evidence for the existing אֵת … וְאֵת construction in the particle entry.",
+            "definition": "Marks a definite noun phrase as the direct object of a verb.",
+            "evidence": "In Gen.1.29, וְאֶת כָּל הָעֵץ introduces the second object of נָתַתִּי ‘I have given’, parallel to אֶת כָּל עֵשֶׂב."
+          }
+        },
+        "evidence": "נָתַתִּי לָכֶם means ‘I have given you’. The first אֶת introduces the plants given. At position 15, וְ joins כָּל הָעֵץ ‘every tree’ to that first gift, and אֶת marks the tree phrase as the second object of נָתַתִּי.",
+        "gloss": "and (direct-object marker)",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Prefixed coordinating conjunction וְ ‘and’ + unsuffixed direct-object particle אֶת.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "Marks a definite direct object."
+      },
+      "position": 15,
+      "surface": "וְאֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "kalal"
+        },
+        "evidence": "In כָּל הָעֵץ אֲשֶׁר בּוֹ פְרִי, the relative clause identifies which trees qualify. כָּל applies to each such tree, parallel to כָּל עֵשֶׂב earlier in the verse.",
+        "gloss": "every",
+        "language": "he",
+        "lemma": "כֹּל",
+        "morphology": "Masculine singular noun in the construct state, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "כלל",
+        "sense": "every, each; any"
+      },
+      "position": 16,
+      "surface": "כָּל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ets"
+        },
+        "evidence": "כָּל הָעֵץ means “every tree.” The relative clause אֲשֶׁר בּוֹ פְרִי describes the tree as bearing fruit.",
+        "gloss": "tree",
+        "language": "he",
+        "lemma": "עֵץ",
+        "morphology": "Definite article הָ־ prefixed to a masculine singular absolute common noun.",
+        "qualifier": "",
+        "root": "עצה",
+        "sense": "tree"
+      },
+      "position": 17,
+      "surface": "הָעֵץ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ashar"
+        },
+        "evidence": "אֲשֶׁר introduces a relative clause modifying הָעֵץ “the tree.” The suffix on בּוֹ “in it” refers back to the tree, so אֲשֶׁר בּוֹ means “in which.”",
+        "gloss": "which",
+        "language": "he",
+        "lemma": "אֲשֶׁר",
+        "morphology": "Uninflected relative particle with no prefix or suffix.",
+        "qualifier": "",
+        "root": "אשר",
+        "sense": "who, which, that"
+      },
+      "position": 18,
+      "surface": "אֲשֶׁר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "parah"
+        },
+        "evidence": "In פְרִי עֵץ, “fruit of a tree,” פְרִי stands in construct with עֵץ. The verse describes seed-bearing fruit and gives it as food.",
+        "gloss": "fruit",
+        "language": "he",
+        "lemma": "פְּרִי",
+        "morphology": "Common noun, masculine singular construct, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "פרה",
+        "sense": "fruit (of a tree or plant)"
+      },
+      "position": 20,
+      "surface": "פְרִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ets"
+        },
+        "evidence": "In פְרִי עֵץ, “fruit of a tree,” פְרִי is the construct noun and עֵץ names the tree that bears the fruit.",
+        "gloss": "tree",
+        "language": "he",
+        "lemma": "עֵץ",
+        "morphology": "Common noun, masculine singular absolute, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "עצה",
+        "sense": "tree"
+      },
+      "position": 21,
+      "surface": "עֵץ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "zera"
+        },
+        "evidence": "In פְרִי עֵץ זֹרֵעַ זָרַע, the participle זֹרֵעַ takes זָרַע ‘seed’ as its object. The same construction occurs earlier in עֵשֶׂב זֹרֵעַ זֶרַע ‘a plant bearing seed’.",
+        "gloss": "bearing seed",
+        "language": "he",
+        "lemma": "זָרַע",
+        "morphology": "Qal active participle, masculine singular absolute, with no prefix or suffix",
+        "qualifier": "",
+        "root": "זרע",
+        "sense": "yield seed (of a plant)"
+      },
+      "position": 22,
+      "surface": "זֹרֵעַ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "zera"
+        },
+        "evidence": "זֹרֵעַ זָרַע repeats the earlier phrase זֹרֵעַ זֶרַע, “yielding seed.” In both phrases the noun names what the plant produces. At the clause break, זֶרַע takes the pausal form זָרַע.",
+        "gloss": "seed",
+        "language": "he",
+        "lemma": "זֶרַע",
+        "morphology": "Masculine singular absolute noun in pausal form, without prefix or suffix.",
+        "qualifier": "",
+        "root": "זרע",
+        "sense": "seed (of plants), grain for sowing"
+      },
+      "position": 23,
+      "surface": "זָרַע"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "hayah"
+        },
+        "evidence": "In לָכֶם יִהְיֶה לְאָכְלָה, לָכֶם identifies the recipients and לְאָכְלָה states what the vegetation God has given them will serve as: food.",
+        "gloss": "it shall serve",
+        "language": "he",
+        "lemma": "הָיָה",
+        "morphology": "Qal imperfect, third person masculine singular",
+        "qualifier": "",
+        "root": "היה",
+        "sense": "to serve as something"
+      },
+      "position": 25,
+      "surface": "יִהְיֶה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "akal"
+        },
+        "evidence": "After God gives the seed-bearing plants and fruit trees to the addressees, לָכֶם יִהְיֶה לְאָכְלָה states their intended use: “they shall serve as food for you.”",
+        "gloss": "for food",
+        "language": "he",
+        "lemma": "אָכְלָה",
+        "morphology": "Prefixed preposition לְ plus a feminine singular absolute noun.",
+        "qualifier": "",
+        "root": "אכל",
+        "sense": "food (what is given to be eaten)"
+      },
+      "position": 26,
+      "surface": "לְאָכְלָה"
+    }
+  ]
+}

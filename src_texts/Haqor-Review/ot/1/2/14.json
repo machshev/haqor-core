@@ -1,0 +1,307 @@
+{
+  "book": 1,
+  "chapter": 2,
+  "review": {
+    "entities": [
+      {
+        "evidence": "The naming clause gives חִדֶּקֶל as the name of the third river.",
+        "key": "Tigris@Gen.2.14",
+        "position": 3
+      },
+      {
+        "evidence": "The phrase קִדְמַת אַשּׁוּר places the Tigris east of Asshur. This geographical use supports the tagged place, whether the reference is to the city or its territory.",
+        "key": "Assyria@Gen.2.14",
+        "position": 7
+      },
+      {
+        "evidence": "The closing clause identifies פְרָת as the fourth river.",
+        "key": "Euphrates@Gen.2.14",
+        "position": 11
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "and the name of",
+        "position": 0
+      },
+      {
+        "gloss": "the river",
+        "position": 1
+      },
+      {
+        "gloss": "third",
+        "position": 2
+      },
+      {
+        "gloss": "Tigris",
+        "position": 3
+      },
+      {
+        "gloss": "it",
+        "position": 4
+      },
+      {
+        "gloss": "flows",
+        "position": 5
+      },
+      {
+        "gloss": "east of",
+        "position": 6
+      },
+      {
+        "gloss": "Asshur",
+        "position": 7
+      },
+      {
+        "gloss": "and the river",
+        "position": 8
+      },
+      {
+        "gloss": "fourth",
+        "position": 9
+      },
+      {
+        "gloss": "is",
+        "position": 10
+      },
+      {
+        "gloss": "the Euphrates",
+        "position": 11
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[And the name of|0] [the|1] [third|2] [river|1] {is} [Tigris|3]. [It|4] [flows|5] [east of|6] [Asshur|7]. [And the|8] [fourth|9] [river|8] [is|10] [the Euphrates|11]."
+  },
+  "source": "ot",
+  "verse": 14,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "shem",
+            "base": "5ff57a119255ca3775ba1c5592f6cd00e22ec622fafccd6afc08384d01b566fe",
+            "change": "Broaden the first Hebrew noun sense to include geographical names and cite Genesis 2:14 as defining evidence.",
+            "definition": "A name identifies its bearer, including a geographical feature such as a river.",
+            "evidence": "Genesis 2:14 explicitly gives חִדֶּקֶל as the שֵׁם of the third river."
+          }
+        },
+        "evidence": "שֵׁם governs הַנָּהָר הַשְּׁלִישִׁי ‘the third river’ in a construct chain. חִדֶּקֶל supplies the name in the verbless clause ‘and the name of the third river is Hiddekel.’",
+        "gloss": "and the name of",
+        "language": "he",
+        "lemma": "שֵׁם",
+        "morphology": "Prefixed conjunction וְ ‘and’ + masculine singular construct noun שֵׁם.",
+        "qualifier": "noun",
+        "root": "שמ",
+        "sense": "name by which a river is known"
+      },
+      "position": 0,
+      "surface": "וְשֵׁם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "nahar"
+        },
+        "evidence": "In וְשֵׁם הַנָּהָר הַשְּׁלִישִׁי חִדֶּקֶל, the ordinal הַשְּׁלִישִׁי modifies הַנָּהָר, and חִדֶּקֶל names this third river.",
+        "gloss": "the river",
+        "language": "he",
+        "lemma": "נָהָר",
+        "morphology": "Masculine singular common noun in the absolute state, with the definite article הַ־.",
+        "qualifier": "",
+        "root": "נהר",
+        "sense": "river, stream"
+      },
+      "position": 1,
+      "surface": "הַנָּהָר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shalosh"
+        },
+        "evidence": "In הַנָּהָר הַשְּׁלִישִׁי, “the third river,” the adjective agrees with הַנָּהָר in gender, number, and definiteness. The parallel phrase הַנָּהָר הָרְבִיעִי, “the fourth river,” confirms that the adjective marks the river’s place in the sequence.",
+        "gloss": "third",
+        "language": "he",
+        "lemma": "שְׁלִישִׁי",
+        "morphology": "Ordinal adjective, masculine singular absolute, with the definite article הַ־.",
+        "qualifier": "",
+        "root": "שלש",
+        "sense": "third (in order)"
+      },
+      "position": 2,
+      "surface": "הַשְּׁלִישִׁי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "hiddekel",
+            "base": null,
+            "change": "Add a geographic proper-name sense for the Tigris under חדקל. The naming clause gives no support for the supplied gloss “yoke” or a derivation from חדק.",
+            "definition": "The Hebrew name of the Tigris River.",
+            "evidence": "Genesis 2:14 explicitly names the third river חִדֶּקֶל and locates its course relative to Asshur."
+          }
+        },
+        "evidence": "וְשֵׁם הַנָּהָר הַשְּׁלִישִׁי חִדֶּקֶל means “and the name of the third river is Hiddekel.” The next clause identifies it by its course east of Asshur.",
+        "gloss": "Tigris",
+        "language": "he",
+        "lemma": "חִדֶּקֶל",
+        "morphology": "Geographic proper noun, singular, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "חדקל",
+        "sense": "The Tigris River, named as the third river of Eden."
+      },
+      "position": 3,
+      "surface": "חִדֶּקֶל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "hu"
+        },
+        "evidence": "הוּא refers back to חִדֶּקֶל, the third river, and serves as the subject of הַהֹלֵךְ קִדְמַת אַשּׁוּר, “the one flowing east of Asshur.” Its masculine singular form agrees with הַנָּהָר, “the river.”",
+        "gloss": "it",
+        "language": "he",
+        "lemma": "הוּא",
+        "morphology": "Independent personal pronoun, third person masculine singular, without prefix or suffix.",
+        "qualifier": "",
+        "root": "הוא",
+        "sense": "he, it"
+      },
+      "position": 4,
+      "surface": "הוּא"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "halak"
+        },
+        "evidence": "הַהֹלֵךְ agrees with הַנָּהָר, the river named חִדֶּקֶל. The phrase קִדְמַת אַשּׁוּר locates its course east of Asshur.",
+        "gloss": "that flows",
+        "language": "he",
+        "lemma": "הָלַךְ",
+        "morphology": "Definite article הַ־ prefixed to a Qal active participle, masculine singular absolute.",
+        "qualifier": "",
+        "root": "הלכ",
+        "sense": "go, run (of a river’s course)"
+      },
+      "position": 5,
+      "surface": "הַהֹלֵךְ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "qedem"
+        },
+        "evidence": "קִדְמַת stands in construct with אַשּׁוּר. The phrase קִדְמַת אַשּׁוּר locates the course of the Hiddekel, which flows east of Assyria.",
+        "gloss": "east of",
+        "language": "he",
+        "lemma": "קִדְמָה",
+        "morphology": "Feminine singular construct noun, without prefix or suffix.",
+        "qualifier": "",
+        "root": "קדמ",
+        "sense": "east of"
+      },
+      "position": 6,
+      "surface": "קִדְמַת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "asshur",
+            "base": null,
+            "change": "Add a geographical sense for אַשּׁוּר under its own consonants אשור.",
+            "definition": "Asshur, the place relative to which Genesis describes the course of the Tigris.",
+            "evidence": "In Gen.2.14, קִדְמַת אַשּׁוּר locates the Hiddekel (Tigris) east of Asshur."
+          }
+        },
+        "evidence": "חִדֶּקֶל names the third river. The phrase הַהֹלֵךְ קִדְמַת אַשּׁוּר describes its course, “which flows east of Asshur.” Asshur is the geographical reference point. The wording leaves open whether the name refers specifically to the city or more broadly to its territory.",
+        "gloss": "Asshur (Assyria)",
+        "language": "he",
+        "lemma": "אַשּׁוּר",
+        "morphology": "Singular proper noun of place, in the absolute state, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "אשור",
+        "sense": "Asshur as a geographical location"
+      },
+      "position": 7,
+      "surface": "אַשּׁוּר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "nahar"
+        },
+        "evidence": "הָרְבִיעִי modifies וְהַנָּהָר as “the fourth river,” parallel to “the third river” earlier in the verse. הוּא פְרָת identifies this fourth river as the Euphrates.",
+        "gloss": "and the river",
+        "language": "he",
+        "lemma": "נָהָר",
+        "morphology": "Masculine singular absolute noun with prefixed conjunction וְ and definite article הַ.",
+        "qualifier": "",
+        "root": "נהר",
+        "sense": "river, stream"
+      },
+      "position": 8,
+      "surface": "וְהַנָּהָר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "reva"
+        },
+        "evidence": "הָרְבִיעִי agrees with הַנָּהָר in gender, number, and definiteness. The verse names חִדֶּקֶל as the third river, then identifies פְרָת as the fourth.",
+        "gloss": "the fourth",
+        "language": "he",
+        "lemma": "רְבִיעִי",
+        "morphology": "Ordinal adjective, masculine singular absolute, with prefixed definite article הָ.",
+        "qualifier": "",
+        "root": "רבע",
+        "sense": "fourth (in order)"
+      },
+      "position": 9,
+      "surface": "הָרְבִיעִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "hu"
+        },
+        "evidence": "In וְהַנָּהָר הָרְבִיעִי הוּא פְרָת, הוּא agrees with הַנָּהָר הָרְבִיעִי and links it to the name פְרָת: “and the fourth river is the Euphrates.”",
+        "gloss": "is",
+        "language": "he",
+        "lemma": "הוּא",
+        "morphology": "Independent personal pronoun, third person masculine singular, functioning as a copula.",
+        "qualifier": "",
+        "root": "הוא",
+        "sense": "is (in a clause without a verb)"
+      },
+      "position": 10,
+      "surface": "הוּא"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "perath",
+            "base": null,
+            "change": "Add a geographic name article for פְּרָת under its own consonants, פרת.",
+            "definition": "The Euphrates, the river named fourth in the Eden account.",
+            "evidence": "Genesis 2:14 identifies the fourth river by name with the words הוּא פְרָת."
+          }
+        },
+        "evidence": "The clause וְהַנָּהָר הָרְבִיעִי הוּא פְרָת means “and the fourth river is the Euphrates.” The pronoun הוּא links the fourth river to its name.",
+        "gloss": "Euphrates",
+        "language": "he",
+        "lemma": "פְּרָת",
+        "morphology": "Proper noun, singular absolute, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "פרת",
+        "sense": "The proper name of the fourth river in the Eden account."
+      },
+      "position": 11,
+      "surface": "פְרָת"
+    }
+  ]
+}

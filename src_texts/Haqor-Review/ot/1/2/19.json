@@ -1,0 +1,485 @@
+{
+  "book": 1,
+  "chapter": 2,
+  "source": "ot",
+  "verse": 19,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yatsar"
+        },
+        "evidence": "יַהְוֶה אֱלֹהִים is the subject. The field animals and birds are what he formed, and מִן הָאֲדָמָה (“from the ground”) identifies the material.",
+        "gloss": "and he formed",
+        "language": "he",
+        "lemma": "יָצַר",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ־",
+        "qualifier": "",
+        "root": "יצר",
+        "sense": "to shape something from material"
+      },
+      "position": 0,
+      "surface": "וַיִּצֶר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yahweh"
+        },
+        "evidence": "In וַיִּצֶר יַהְוֶה אֱלֹהִים, “Yahweh God formed,” יַהְוֶה names the subject of וַיִּצֶר, and אֱלֹהִים stands in apposition to the name.",
+        "gloss": "Yahweh",
+        "language": "he",
+        "lemma": "יַהְוֶה",
+        "morphology": "Proper noun, singular, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "הוה",
+        "sense": "Personal name of the God of Israel"
+      },
+      "position": 1,
+      "surface": "יַהְוֶה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "אֱלֹהִים stands in apposition to יַהְוֶה. The singular verbs וַיִּצֶר (‘he formed’) and וַיָּבֵא (‘he brought’) identify one actor who formed the animals and brought them to the man.",
+        "gloss": "God",
+        "language": "he",
+        "lemma": "אֱלֹהִים",
+        "morphology": "Common noun, masculine plural absolute, with singular reference.",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "the Mighty One, God"
+      },
+      "position": 2,
+      "surface": "אֱלֹהִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "min"
+        },
+        "evidence": "With וַיִּצֶר ‘he formed’, מִן הָאֲדָמָה ‘out of the ground’ identifies the material from which God formed the animals and birds.",
+        "gloss": "out of",
+        "language": "he",
+        "lemma": "מִן",
+        "morphology": "Independent preposition without prefix or suffix.",
+        "qualifier": "",
+        "root": "מנ",
+        "sense": "out of, made from; from (a source or giver)"
+      },
+      "position": 3,
+      "surface": "מִן"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "adam"
+        },
+        "evidence": "With וַיִּצֶר (“he formed”), מִן הָאֲדָמָה (“from the ground”) identifies the material from which God formed the animals and birds.",
+        "gloss": "the ground",
+        "language": "he",
+        "lemma": "אֲדָמָה",
+        "morphology": "Feminine singular common noun in the absolute state, with the definite article הָ־.",
+        "qualifier": "",
+        "root": "אדמ",
+        "sense": "earth, as the stuff things are made of"
+      },
+      "position": 4,
+      "surface": "הָאֲדָמָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "kalal"
+        },
+        "evidence": "In כָּל חַיַּת הַשָּׂדֶה, “every beast of the field,” כָּל quantifies the singular חַיַּת. The later singular לוֹ, “it,” and שְׁמוֹ, “its name,” support reading the phrase distributively.",
+        "gloss": "every",
+        "language": "he",
+        "lemma": "כֹּל",
+        "morphology": "Masculine singular noun in the construct state, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "כלל",
+        "sense": "every, each; any"
+      },
+      "position": 5,
+      "surface": "כָּל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chayah"
+        },
+        "evidence": "In כָּל חַיַּת הַשָּׂדֶה, “every beast of the field,” חַיַּת is in construct with הַשָּׂדֶה. The phrase parallels כָּל עוֹף הַשָּׁמַיִם, “every bird of the heavens.”",
+        "gloss": "beast",
+        "language": "he",
+        "lemma": "חַיָּה",
+        "morphology": "Common noun, feminine singular construct, with no prefix or suffix.",
+        "qualifier": "animal",
+        "root": "חיה",
+        "sense": "wild beast, beast of the field"
+      },
+      "position": 6,
+      "surface": "חַיַּת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "sadeh"
+        },
+        "evidence": "In כָּל חַיַּת הַשָּׂדֶה, “every animal of the open country,” הַשָּׂדֶה names the animals’ habitat. The parallel phrase כָּל עוֹף הַשָּׁמַיִם, “every bird of the sky,” likewise identifies creatures by habitat.",
+        "gloss": "the open country",
+        "language": "he",
+        "lemma": "שָׂדֶה",
+        "morphology": "Masculine singular absolute noun with the prefixed definite article הַ־.",
+        "qualifier": "",
+        "root": "שׂדה",
+        "sense": "open country, the land outside town and house"
+      },
+      "position": 7,
+      "surface": "הַשָּׂדֶה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "et",
+            "base": "31c9a635be8bba9a67417e75ea7122e240ae707e04a841533a59ecd2869d0f80",
+            "change": "Add Gen.2.19 to the evidence for the definite-object sense in the existing et article. The verse illustrates coordination in which only the second object carries the marker.",
+            "definition": "אֵת marks the following definite noun phrase as a direct object of the verb.",
+            "evidence": "In Gen.2.19 the first object of וַיִּצֶר appears without אֵת. The second is introduced by וְאֵת and is definite through הַשָּׁמַיִם at the end of the construct chain."
+          }
+        },
+        "evidence": "In Gen.2.19, וְ joins כָּל עוֹף הַשָּׁמַיִם “every bird of the heavens” to כָּל חַיַּת הַשָּׂדֶה “every animal of the field.” Both phrases name what Yahweh God formed (וַיִּצֶר). אֵת introduces the second object.",
+        "gloss": "and [direct-object marker]",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Conjunction וְ “and” prefixed to the unsuffixed direct-object particle אֵת.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "Marks a definite direct object."
+      },
+      "position": 8,
+      "surface": "וְאֵת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "kalal"
+        },
+        "evidence": "In וְאֵת כָּל עוֹף הַשָּׁמַיִם, כָּל quantifies עוֹף הַשָּׁמַיִם, giving “every bird of the sky.” This parallels כָּל חַיַּת הַשָּׂדֶה, “every beast of the field.”",
+        "gloss": "every",
+        "language": "he",
+        "lemma": "כֹּל",
+        "morphology": "Masculine singular construct noun with no prefix or suffix.",
+        "qualifier": "",
+        "root": "כלל",
+        "sense": "every, each; any"
+      },
+      "position": 9,
+      "surface": "כָּל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "uph"
+        },
+        "evidence": "In כָּל עוֹף הַשָּׁמַיִם, “all the birds of the sky,” עוֹף is in construct with הַשָּׁמַיִם. The phrase parallels כָּל חַיַּת הַשָּׂדֶה, “all the animals of the field,” identifying birds as a group.",
+        "gloss": "birds",
+        "language": "he",
+        "lemma": "עוֹף",
+        "morphology": "Common noun, masculine singular construct, used collectively, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "עופ",
+        "sense": "birds collectively"
+      },
+      "position": 10,
+      "surface": "עוֹף"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shamayim"
+        },
+        "evidence": "In כָּל עוֹף הַשָּׁמַיִם, “every bird of the sky,” the sky identifies the birds’ habitat, just as the field identifies the habitat of the animals in חַיַּת הַשָּׂדֶה.",
+        "gloss": "the sky",
+        "language": "he",
+        "lemma": "שָׁמַיִם",
+        "morphology": "Masculine plural noun in the absolute state with the prefixed definite article הַ־.",
+        "qualifier": "",
+        "root": "שמה",
+        "sense": "sky, the visible heavens"
+      },
+      "position": 11,
+      "surface": "הַשָּׁמַיִם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "bo"
+        },
+        "evidence": "יַהְוֶה אֱלֹהִים remains the subject. The field animals and birds he has just formed are the implied object of וַיָּבֵא, and אֶל הָאָדָם gives their destination. God brought them to the man to see what he would call them.",
+        "gloss": "and he brought",
+        "language": "he",
+        "lemma": "בּוֹא",
+        "morphology": "Hiphil wayyiqtol, third person masculine singular, with prefixed וַ and no suffix",
+        "qualifier": "",
+        "root": "בוא",
+        "sense": "bring someone or something to a destination"
+      },
+      "position": 12,
+      "surface": "וַיָּבֵא"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "In וַיָּבֵא אֶל הָאָדָם, “he brought them to the man,” אֶל introduces הָאָדָם as the person to whom God brought the animals.",
+        "gloss": "to",
+        "language": "he",
+        "lemma": "אֶל",
+        "morphology": "Preposition without prefix or suffix",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "to (a person: speaking, sending, bringing)"
+      },
+      "position": 13,
+      "surface": "אֶל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "adam"
+        },
+        "evidence": "In וַיָּבֵא אֶל הָאָדָם, God brings the animals “to the man” to see what he will call them. The definite article identifies the particular man in the narrative.",
+        "gloss": "the man",
+        "language": "he",
+        "lemma": "אָדָם",
+        "morphology": "Definite article הָ־ prefixed to a masculine singular absolute common noun.",
+        "qualifier": "noun",
+        "root": "אדמ",
+        "sense": "the man (the first man)"
+      },
+      "position": 14,
+      "surface": "הָאָדָם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "raah"
+        },
+        "evidence": "God brings the creatures to the man. לִרְאוֹת gives the purpose of bringing them, and the indirect question מַה יִּקְרָא לוֹ identifies what God seeks to learn: the name the man will give each creature.",
+        "gloss": "to see what the man would call it",
+        "language": "he",
+        "lemma": "רָאָה",
+        "morphology": "Qal infinitive construct with prefixed לִ־ expressing purpose",
+        "qualifier": "",
+        "root": "ראה",
+        "sense": "find out the outcome of an action"
+      },
+      "position": 15,
+      "surface": "לִרְאוֹת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "mah"
+        },
+        "evidence": "In לִרְאוֹת מַה יִּקְרָא לוֹ, “to see what he would call it,” מַה introduces an indirect question about the name the man would give each creature. The closing words הוּא שְׁמוֹ, “that was its name,” confirm this reading.",
+        "gloss": "what",
+        "language": "he",
+        "lemma": "מָה",
+        "morphology": "Interrogative pronoun, uninflected, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "מה",
+        "sense": "what?"
+      },
+      "position": 16,
+      "surface": "מַה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "qara"
+        },
+        "evidence": "מַה יִּקְרָא לוֹ asks what the man would call each creature. The closing words הוּא שְׁמוֹ establish that his choice became its name.",
+        "gloss": "he would call",
+        "language": "he",
+        "lemma": "קָרָא",
+        "morphology": "Qal imperfect, third person masculine singular",
+        "qualifier": "call",
+        "root": "קרא",
+        "sense": "give a name to"
+      },
+      "position": 17,
+      "surface": "יִּקְרָא"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "le",
+            "base": "96f836dfd21f3d150d1252488b03345c3c1ecca2101743792946e2c251fb5649",
+            "change": "Add the suffixed naming construction in Gen.2.19 to the verse evidence for the existing le-to sense.",
+            "definition": "With קָרָא in naming, לְ marks the person or thing to which the name is given.",
+            "evidence": "Gen.2.19 asks מַה יִּקְרָא לוֹ, “what would he call it?” The suffix stands for the creature being named, just as לָאוֹר identifies what God named Day in Gen.1.5."
+          }
+        },
+        "evidence": "In מַה יִּקְרָא לוֹ, “what would he call it?”, מַה asks for the name and לוֹ refers to each creature brought to the man. The closing הוּא שְׁמוֹ, “that was its name,” confirms the naming construction.",
+        "gloss": "to it",
+        "language": "he",
+        "lemma": "לְ",
+        "morphology": "Preposition לְ with the third-person masculine singular pronominal suffix ־וֹ.",
+        "qualifier": "",
+        "root": "ל",
+        "sense": "Marks the creature to which a name is given."
+      },
+      "position": 18,
+      "surface": "לוֹ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "kalal"
+        },
+        "evidence": "כֹּל is used substantivally before the relative clause אֲשֶׁר יִקְרָא לוֹ הָאָדָם, yielding ‘whatever the man called it.’ The closing הוּא שְׁמוֹ identifies what he called each creature as its name.",
+        "gloss": "and whatever",
+        "language": "he",
+        "lemma": "כֹּל",
+        "morphology": "Masculine singular absolute noun with prefixed conjunction וְ.",
+        "qualifier": "",
+        "root": "כלל",
+        "sense": "everything, all things"
+      },
+      "position": 19,
+      "surface": "וְכֹל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ashar"
+        },
+        "evidence": "אֲשֶׁר introduces the clause modifying כֹל. Together, וְכֹל אֲשֶׁר יִקְרָא לוֹ הָאָדָם means “and whatever the human called it.” The closing הוּא שְׁמוֹ identifies the designation he gave as the creature’s name.",
+        "gloss": "that",
+        "language": "he",
+        "lemma": "אֲשֶׁר",
+        "morphology": "Uninflected relative particle with no prefix or suffix",
+        "qualifier": "",
+        "root": "אשר",
+        "sense": "who, which, that"
+      },
+      "position": 20,
+      "surface": "אֲשֶׁר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "qara"
+        },
+        "evidence": "In אֲשֶׁר יִקְרָא לוֹ הָאָדָם, the human is the subject and לוֹ refers to the creature being named. The closing words הוּא שְׁמוֹ, “that was its name,” identify what the human called each creature as its name.",
+        "gloss": "would call",
+        "language": "he",
+        "lemma": "קָרָא",
+        "morphology": "Qal imperfect, third person masculine singular",
+        "qualifier": "call",
+        "root": "קרא",
+        "sense": "give a name to"
+      },
+      "position": 21,
+      "surface": "יִקְרָא"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "adam"
+        },
+        "evidence": "In יִקְרָא לוֹ הָאָדָם, הָאָדָם is the subject of יִקְרָא, “would call.” The definite article identifies the same man to whom God brought the creatures earlier in the verse.",
+        "gloss": "the man",
+        "language": "he",
+        "lemma": "אָדָם",
+        "morphology": "Common noun, masculine singular absolute, with prefixed definite article הָ־.",
+        "qualifier": "noun",
+        "root": "אדמ",
+        "sense": "the man (the first man)"
+      },
+      "position": 23,
+      "surface": "הָאָדָם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "nephesh"
+        },
+        "evidence": "In נֶפֶשׁ חַיָּה, “living creature,” חַיָּה modifies נֶפֶשׁ. The phrase refers to each animal or bird brought before the man to receive a name.",
+        "gloss": "creature",
+        "language": "he",
+        "lemma": "נֶפֶשׁ",
+        "morphology": "Common noun, singular absolute, with feminine agreement in חַיָּה. No prefix or suffix.",
+        "qualifier": "",
+        "root": "נפש",
+        "sense": "living soul, living creature"
+      },
+      "position": 24,
+      "surface": "נֶפֶשׁ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chayah"
+        },
+        "evidence": "חַיָּה follows and agrees with the feminine singular noun נֶפֶשׁ. Together they mean “living creature,” referring to each creature the man names.",
+        "gloss": "living",
+        "language": "he",
+        "lemma": "חַי",
+        "morphology": "Feminine singular absolute adjective, attributive.",
+        "qualifier": "adjective",
+        "root": "חיה",
+        "sense": "living (soul): a living creature"
+      },
+      "position": 25,
+      "surface": "חַיָּה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "hu"
+        },
+        "evidence": "הוּא resumes כֹל אֲשֶׁר יִקְרָא לוֹ הָאָדָם, “whatever the man called it.” In הוּא שְׁמוֹ, “that was its name,” the pronoun points back to the name the man uttered.",
+        "gloss": "that",
+        "language": "he",
+        "lemma": "הוּא",
+        "morphology": "Independent third-person masculine singular pronoun, without prefix or suffix.",
+        "qualifier": "",
+        "root": "הוא",
+        "sense": "it, that (a thing said or done)"
+      },
+      "position": 26,
+      "surface": "הוּא"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "shem",
+            "base": "5ff57a119255ca3775ba1c5592f6cd00e22ec622fafccd6afc08384d01b566fe",
+            "change": "Clarify the first Hebrew noun sense to include creatures explicitly and explain the naming clause in its defining citation.",
+            "definition": "The designation by which a person or creature is called.",
+            "evidence": "In Gen.2.19, הוּא שְׁמוֹ identifies what the man called each creature as its name."
+          }
+        },
+        "evidence": "מַה יִּקְרָא לוֹ asks what the man will call each creature. הוּא שְׁמוֹ answers that whatever he called it was its name. The suffix ־וֹ refers to the creature.",
+        "gloss": "its name",
+        "language": "he",
+        "lemma": "שֵׁם",
+        "morphology": "Masculine singular noun in the construct state with the third-person masculine singular possessive suffix ־וֹ.",
+        "qualifier": "noun",
+        "root": "שמ",
+        "sense": "The name by which a creature is called."
+      },
+      "position": 27,
+      "surface": "שְׁמוֹ"
+    }
+  ]
+}

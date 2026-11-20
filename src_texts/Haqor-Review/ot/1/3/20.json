@@ -1,0 +1,252 @@
+{
+  "book": 1,
+  "chapter": 3,
+  "review": {
+    "entities": [
+      {
+        "evidence": "The man explicitly gives his wife the name חַוָּה (Eve). The verse identifies her as the mother of all the living.",
+        "key": "Eve@Gen.3.20",
+        "position": 4
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "then he called",
+        "position": 0
+      },
+      {
+        "gloss": "the man",
+        "position": 1
+      },
+      {
+        "gloss": "the name of",
+        "position": 2
+      },
+      {
+        "gloss": "his wife",
+        "position": 3
+      },
+      {
+        "gloss": "Eve",
+        "position": 4
+      },
+      {
+        "gloss": "because",
+        "position": 5
+      },
+      {
+        "gloss": "she",
+        "position": 6
+      },
+      {
+        "gloss": "was",
+        "position": 7
+      },
+      {
+        "gloss": "the mother of",
+        "position": 8
+      },
+      {
+        "gloss": "all",
+        "position": 9
+      },
+      {
+        "gloss": "the living",
+        "position": 10
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[Then|0] [the man|1] [called|0] [the name of|2] [his wife|3] [Eve|4], [because|5] [she|6] [was|7] [the mother of|8] [all|9] [the living|10]."
+  },
+  "source": "ot",
+  "verse": 20,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "qara"
+        },
+        "evidence": "הָאָדָם is the subject. שֵׁם אִשְׁתּוֹ means “his wife’s name,” and חַוָּה supplies the name he gave her.",
+        "gloss": "and he named",
+        "language": "he",
+        "lemma": "קָרָא",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ־",
+        "qualifier": "call",
+        "root": "קרא",
+        "sense": "give a name to"
+      },
+      "position": 0,
+      "surface": "וַיִּקְרָא"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "adam"
+        },
+        "evidence": "הָאָדָם is the subject of וַיִּקְרָא. He names his wife (אִשְׁתּוֹ) Eve (חַוָּה), which identifies him as the first man in the narrative.",
+        "gloss": "the man",
+        "language": "he",
+        "lemma": "אָדָם",
+        "morphology": "Definite article הָ־ prefixed to a masculine singular absolute noun.",
+        "qualifier": "noun",
+        "root": "אדמ",
+        "sense": "the man (the first man)"
+      },
+      "position": 1,
+      "surface": "הָאָדָם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shem"
+        },
+        "evidence": "שֵׁם אִשְׁתּוֹ means “the name of his wife.” The man gives her the name חַוָּה (Eve).",
+        "gloss": "name",
+        "language": "he",
+        "lemma": "שֵׁם",
+        "morphology": "Masculine singular noun in the construct state, with no prefix or suffix.",
+        "qualifier": "noun",
+        "root": "שמ",
+        "sense": "name by which someone is known"
+      },
+      "position": 2,
+      "surface": "שֵׁם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "enosh"
+        },
+        "evidence": "In שֵׁם אִשְׁתּוֹ, “the name of his wife,” the suffix refers to הָאָדָם, the man who names his wife חַוָּה (Eve).",
+        "gloss": "his wife",
+        "language": "he",
+        "lemma": "אִשָּׁה",
+        "morphology": "Feminine singular common noun in the construct state with a third-person masculine singular possessive suffix ־וֹ.",
+        "qualifier": "",
+        "root": "אנש",
+        "sense": "wife"
+      },
+      "position": 3,
+      "surface": "אִשְׁתּוֹ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "eve"
+        },
+        "evidence": "וַיִּקְרָא הָאָדָם שֵׁם אִשְׁתּוֹ חַוָּה says that the man named his wife Eve. The following כִּי clause explains the name through wordplay with חָי in אֵם כָּל־חָי, “mother of all the living,” supporting the article’s association with חיה.",
+        "gloss": "Eve",
+        "language": "he",
+        "lemma": "חַוָּה",
+        "morphology": "Feminine singular personal name without prefix or suffix.",
+        "qualifier": "",
+        "root": "חיה",
+        "sense": "Personal name given to the man's wife."
+      },
+      "position": 4,
+      "surface": "חַוָּה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ki"
+        },
+        "evidence": "כִּי introduces the reason the man named his wife חַוָּה: she was the mother of all living.",
+        "gloss": "because",
+        "language": "he",
+        "lemma": "כִּי",
+        "morphology": "Uninflected causal conjunction without prefix or suffix.",
+        "qualifier": "conjunction",
+        "root": "כי",
+        "sense": "for, because"
+      },
+      "position": 5,
+      "surface": "כִּי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "hu"
+        },
+        "evidence": "הִוא refers to Eve, just named חַוָּה. It is the subject of the feminine singular verb הָיְתָה in “because she was the mother of all living.”",
+        "gloss": "she",
+        "language": "he",
+        "lemma": "הִיא",
+        "morphology": "Independent personal pronoun, third person feminine singular, written הִוא and read הִיא.",
+        "qualifier": "",
+        "root": "הוא",
+        "sense": "she, it"
+      },
+      "position": 6,
+      "surface": "הִוא"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "hayah"
+        },
+        "evidence": "הָיְתָה agrees with הִוא “she” and links it to the predicate אֵם כָּל־חָי “the mother of all living.” The כִּי clause gives the reason for the name חַוָּה.",
+        "gloss": "was",
+        "language": "he",
+        "lemma": "הָיָה",
+        "morphology": "Qal perfect, third person feminine singular",
+        "qualifier": "",
+        "root": "היה",
+        "sense": "to be in a state or condition"
+      },
+      "position": 7,
+      "surface": "הָיְתָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "em"
+        },
+        "evidence": "אֵם is in construct with כָּל חָי. The clause כִּי הִוא הָיְתָה אֵם כָּל חָי explains Eve’s name by saying that she was the mother of all the living.",
+        "gloss": "mother of",
+        "language": "he",
+        "lemma": "אֵם",
+        "morphology": "Common noun, feminine singular construct.",
+        "qualifier": "",
+        "root": "אממ",
+        "sense": "mother"
+      },
+      "position": 8,
+      "surface": "אֵם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "kalal"
+        },
+        "evidence": "כָּל governs the singular חָי, “living one.” The phrase אֵם כָּל חָי calls Eve the mother of every living person.",
+        "gloss": "every",
+        "language": "he",
+        "lemma": "כֹּל",
+        "morphology": "Masculine singular construct noun with no prefix or suffix.",
+        "qualifier": "",
+        "root": "כלל",
+        "sense": "every, each; any"
+      },
+      "position": 9,
+      "surface": "כָּל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chayah"
+        },
+        "evidence": "In אֵם כָּל חָי, “mother of all the living,” כָּל gives חָי collective scope. The phrase explains the name חַוָּה by identifying her as the mother of everyone who lives.",
+        "gloss": "the living",
+        "language": "he",
+        "lemma": "חַי",
+        "morphology": "Masculine singular absolute adjective used substantivally, with pausal vocalization חָי.",
+        "qualifier": "adjective",
+        "root": "חיה",
+        "sense": "the living; every living thing"
+      },
+      "position": 10,
+      "surface": "חָי"
+    }
+  ]
+}

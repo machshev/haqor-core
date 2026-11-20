@@ -1,0 +1,312 @@
+{
+  "book": 1,
+  "chapter": 7,
+  "review": {
+    "entities": [
+      {
+        "evidence": "The creatures enter the ark to join Noah, the son of Lamech who survives the flood. The source tag identifies the same bearer.",
+        "key": "Noah@Gen.5.29",
+        "position": 2
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "so they went",
+        "position": 0
+      },
+      {
+        "gloss": "to",
+        "position": 1
+      },
+      {
+        "gloss": "Noah",
+        "position": 2
+      },
+      {
+        "gloss": "into",
+        "position": 3
+      },
+      {
+        "gloss": "the ark",
+        "position": 4
+      },
+      {
+        "gloss": "two",
+        "position": 5
+      },
+      {
+        "gloss": "two",
+        "position": 6
+      },
+      {
+        "gloss": "from all",
+        "position": 7
+      },
+      {
+        "gloss": "flesh",
+        "position": 8
+      },
+      {
+        "gloss": "which",
+        "position": 9
+      },
+      {
+        "gloss": "in it",
+        "position": 10
+      },
+      {
+        "gloss": "the breath of",
+        "position": 11
+      },
+      {
+        "gloss": "life",
+        "position": 12
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[So they went|0] [to|1] [Noah|2] [into|3] [the ark|4], [two|5] {by} [two|6] [from all|7] [flesh|8] [in|10] [which|9] {was} [the breath of|11] [life|12]."
+  },
+  "source": "ot",
+  "verse": 15,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "bo"
+        },
+        "evidence": "The animals go in two by two. אֶל־נֹחַ identifies whom they join, and אֶל־הַתֵּבָה identifies the ark as the place they enter.",
+        "gloss": "and they went in",
+        "language": "he",
+        "lemma": "בּוֹא",
+        "morphology": "Qal wayyiqtol, third person masculine plural, with prefixed וַ־.",
+        "qualifier": "",
+        "root": "בוא",
+        "sense": "enter, go into"
+      },
+      "position": 0,
+      "surface": "וַיָּבֹאוּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "In וַיָּבֹאוּ אֶל נֹחַ, “they came to Noah,” the marked אֶל identifies Noah as the person the animals came to. The following אֶל הַתֵּבָה identifies the ark as their destination.",
+        "gloss": "to",
+        "language": "he",
+        "lemma": "אֶל",
+        "morphology": "Preposition with no prefix or suffix.",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "to (a person: speaking, sending, bringing)"
+      },
+      "position": 1,
+      "surface": "אֶל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "noah-son-of-lamech",
+            "base": null,
+            "change": "Add a personal-name article for נֹחַ linked to the root article nuach.",
+            "definition": "Noah, the son whom Lamech names in hope of relief from toil.",
+            "evidence": "Genesis 5:29 gives the name נֹחַ and explains it through the wordplay on יְנַחֲמֵנוּ, “he will comfort us.”"
+          }
+        },
+        "evidence": "In וַיָּבֹאוּ אֶל־נֹחַ אֶל־הַתֵּבָה, “they came to Noah into the ark,” אֶל־נֹחַ identifies the person the creatures approached, and אֶל־הַתֵּבָה identifies the place they entered.",
+        "gloss": "Noah",
+        "language": "he",
+        "lemma": "נֹחַ",
+        "morphology": "Masculine singular proper noun with no prefix or suffix.",
+        "qualifier": "",
+        "root": "נוח",
+        "sense": "Noah, son of Lamech"
+      },
+      "position": 2,
+      "surface": "נֹחַ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "With וַיָּבֹאוּ (“they came”), אֶל נֹחַ identifies whom the animals joined, and the marked אֶל הַתֵּבָה identifies the place they entered.",
+        "gloss": "into",
+        "language": "he",
+        "lemma": "אֶל",
+        "morphology": "Preposition without prefix or suffix.",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "into"
+      },
+      "position": 3,
+      "surface": "אֶל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "tevah",
+            "base": null,
+            "change": "Add תֵּבָה under its own consonants, תבה, with senses for Noah’s ark and the papyrus basket in Exodus 2.",
+            "definition": "In the flood account, תֵּבָה is the ark that Noah, his household, and the animals entered.",
+            "evidence": "Genesis 7:15 describes the animals entering the ark in pairs. Genesis 7:17 says the rising water lifted the ark above the ground."
+          }
+        },
+        "evidence": "With וַיָּבֹאוּ, “they came,” the phrase אֶל נֹחַ identifies whom the creatures came to, and אֶל הַתֵּבָה identifies what they entered. שְׁנַיִם שְׁנַיִם describes their arrival in pairs.",
+        "gloss": "the ark",
+        "language": "he",
+        "lemma": "תֵּבָה",
+        "morphology": "Definite article הַ־ prefixed to a feminine singular absolute common noun, with doubling of the initial ת after the article.",
+        "qualifier": "",
+        "root": "תבה",
+        "sense": "The vessel that carried Noah, his household, and the animals on the floodwaters."
+      },
+      "position": 4,
+      "surface": "הַתֵּבָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shanah"
+        },
+        "evidence": "The repetition שְׁנַיִם שְׁנַיִם modifies וַיָּבֹאוּ, describing how the living creatures came to Noah in the ark: two at a time.",
+        "gloss": "two by two",
+        "language": "he",
+        "lemma": "שְׁנַיִם",
+        "morphology": "Masculine dual absolute cardinal numeral, first occurrence in a distributive repetition.",
+        "qualifier": "",
+        "root": "שנה",
+        "sense": "two by two, in pairs"
+      },
+      "position": 5,
+      "surface": "שְׁנַיִם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shanah"
+        },
+        "evidence": "The marked word is the second שְׁנַיִם in שְׁנַיִם שְׁנַיִם. The repetition describes how the creatures came to Noah in the ark, two at a time.",
+        "gloss": "in pairs",
+        "language": "he",
+        "lemma": "שְׁנַיִם",
+        "morphology": "Masculine dual absolute cardinal numeral, repeated distributively.",
+        "qualifier": "",
+        "root": "שנה",
+        "sense": "two by two, in pairs"
+      },
+      "position": 6,
+      "surface": "שְׁנַיִם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "kalal"
+        },
+        "evidence": "מִכָּל הַבָּשָׂר means “from all flesh.” כָּל takes the collective noun הַבָּשָׂר as its complement, and מִן marks the group from which the creatures came two by two.",
+        "gloss": "from all",
+        "language": "he",
+        "lemma": "כֹּל",
+        "morphology": "Masculine singular construct noun with prefixed מִן, whose נ assimilates to כ.",
+        "qualifier": "",
+        "root": "כלל",
+        "sense": "all, the whole"
+      },
+      "position": 7,
+      "surface": "מִכָּל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "basar"
+        },
+        "evidence": "מִכָּל הַבָּשָׂר means “from among all flesh.” The clause אֲשֶׁר בּוֹ רוּחַ חַיִּים identifies the creatures by the breath of life in them, and שְׁנַיִם שְׁנַיִם describes their coming to Noah in pairs.",
+        "gloss": "living creatures",
+        "language": "he",
+        "lemma": "בָּשָׂר",
+        "morphology": "Definite article הַ־ prefixed to a masculine singular absolute noun used collectively.",
+        "qualifier": "",
+        "root": "בשׂר",
+        "sense": "all flesh: every living creature; mankind"
+      },
+      "position": 8,
+      "surface": "הַבָּשָׂר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ashar"
+        },
+        "evidence": "אֲשֶׁר introduces a relative clause modifying כָּל הַבָּשָׂר. The suffix on בּוֹ refers back to הַבָּשָׂר, giving the phrase “all flesh in which there was the breath of life.”",
+        "gloss": "which",
+        "language": "he",
+        "lemma": "אֲשֶׁר",
+        "morphology": "Invariable relative particle without prefix or suffix.",
+        "qualifier": "",
+        "root": "אשר",
+        "sense": "who, which, that"
+      },
+      "position": 9,
+      "surface": "אֲשֶׁר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "be",
+            "base": "9a78afe569431a31b153e3fbfd4d67685fa48141d8683ec49f3e7d541bf460cd",
+            "change": "Add Genesis 7:15 to the evidence for the existing spatial sense be-in in article be.",
+            "definition": "בְּ marks the place or body within which something is present.",
+            "evidence": "Genesis 7:15 describes the creatures as flesh in which the breath of life is present. The suffixed preposition בּוֹ supplies ‘in it’ within the relative clause."
+          }
+        },
+        "evidence": "In אֲשֶׁר בּוֹ רוּחַ חַיִּים, the suffix refers back to the masculine singular collective הַבָּשָׂר, ‘the flesh’. The relative clause means ‘in which is the breath of life’. בּוֹ locates the breath within the living creature.",
+        "gloss": "in it",
+        "language": "he",
+        "lemma": "בְּ",
+        "morphology": "Preposition בְּ with the third-person masculine singular pronominal suffix וֹ.",
+        "qualifier": "",
+        "root": "ב",
+        "sense": "in, within (a place)"
+      },
+      "position": 10,
+      "surface": "בּוֹ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ruach"
+        },
+        "evidence": "רוּחַ is in construct with חַיִּים, forming “breath of life.” The clause אֲשֶׁר בּוֹ רוּחַ חַיִּים describes the creatures entering the ark as having this breath in them.",
+        "gloss": "breath",
+        "language": "he",
+        "lemma": "רוּחַ",
+        "morphology": "Noun of common gender, singular construct, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "רוח",
+        "sense": "breath of life, life-spirit"
+      },
+      "position": 11,
+      "surface": "רוּחַ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chayah"
+        },
+        "evidence": "In אֲשֶׁר בּוֹ רוּחַ חַיִּים, “in which is the breath of life,” חַיִּים completes the construct phrase רוּחַ חַיִּים. The breath marks the creatures entering the ark as alive.",
+        "gloss": "life",
+        "language": "he",
+        "lemma": "חַיִּים",
+        "morphology": "Masculine plural absolute noun, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "חיה",
+        "sense": "life as given by God's breath"
+      },
+      "position": 12,
+      "surface": "חַיִּים"
+    }
+  ]
+}

@@ -1,0 +1,246 @@
+{
+  "book": 1,
+  "chapter": 1,
+  "source": "ot",
+  "verse": 24,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "amar"
+        },
+        "evidence": "אֱלֹהִים is the subject of וַיֹּאמֶר. The words תּוֹצֵא הָאָרֶץ (“Let the earth bring forth”) open the command that God speaks.",
+        "gloss": "and he said",
+        "language": "he",
+        "lemma": "אָמַר",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ־",
+        "qualifier": "",
+        "root": "אמר",
+        "sense": "say, introducing direct speech"
+      },
+      "position": 0,
+      "surface": "וַיֹּאמֶר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "In וַיֹּאמֶר אֱלֹהִים, “God said,” the verb וַיֹּאמֶר is third-person masculine singular. It identifies אֱלֹהִים as the single speaker who commands the earth to bring forth living creatures.",
+        "gloss": "God",
+        "language": "he",
+        "lemma": "אֱלֹהִים",
+        "morphology": "Common noun, masculine plural, absolute state, with singular verbal agreement.",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "the Mighty One, God"
+      },
+      "position": 1,
+      "surface": "אֱלֹהִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yatsa"
+        },
+        "evidence": "God commands הָאָרֶץ, “the earth,” to bring forth נֶפֶשׁ חַיָּה, “living creatures.” The animals listed next specify what the earth is to bring forth.",
+        "gloss": "let [the earth] bring forth",
+        "language": "he",
+        "lemma": "יָצָא",
+        "morphology": "Hiphil jussive, third-person feminine singular. The תּ־ prefix marks agreement with הָאָרֶץ. There is no suffix.",
+        "qualifier": "",
+        "root": "יצא",
+        "sense": "bring forth living creatures"
+      },
+      "position": 2,
+      "surface": "תּוֹצֵא"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "erets"
+        },
+        "evidence": "הָאָרֶץ is the subject of תּוֹצֵא, “let the land bring forth.” The creatures listed are livestock, creeping things, and wild animals, identifying the land as their habitat.",
+        "gloss": "the land",
+        "language": "he",
+        "lemma": "אֶרֶץ",
+        "morphology": "Definite article הָ־ + common noun, singular absolute, with feminine singular agreement in תּוֹצֵא.",
+        "qualifier": "",
+        "root": "ארצ",
+        "sense": "land as distinct from sea"
+      },
+      "position": 3,
+      "surface": "הָאָרֶץ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "nephesh"
+        },
+        "evidence": "נֶפֶשׁ חַיָּה is the object of תּוֹצֵא, “let the earth bring forth.” The following list identifies the creatures as livestock, creeping things, and wild animals.",
+        "gloss": "creature",
+        "language": "he",
+        "lemma": "נֶפֶשׁ",
+        "morphology": "Common noun, singular absolute, with feminine agreement in חַיָּה. Used collectively.",
+        "qualifier": "",
+        "root": "נפש",
+        "sense": "living soul, living creature"
+      },
+      "position": 4,
+      "surface": "נֶפֶשׁ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chayah"
+        },
+        "evidence": "חַיָּה follows נֶפֶשׁ and agrees with it in gender and number. Together they mean “a living creature,” and the verse goes on to list the kinds of creatures the earth is to bring forth.",
+        "gloss": "living",
+        "language": "he",
+        "lemma": "חַי",
+        "morphology": "Attributive adjective, feminine singular absolute.",
+        "qualifier": "adjective",
+        "root": "חיה",
+        "sense": "living (soul): a living creature"
+      },
+      "position": 5,
+      "surface": "חַיָּה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "temunah"
+        },
+        "evidence": "The suffix refers to the feminine singular נֶפֶשׁ חַיָּה, “living creature.” The following list of livestock, creeping things, and wild animals shows that מִין classifies the creatures the earth is to bring forth.",
+        "gloss": "according to its kind",
+        "language": "he",
+        "lemma": "מִין",
+        "morphology": "Preposition לְ + masculine singular construct noun מִין + third-person feminine singular possessive suffix ־ָהּ.",
+        "qualifier": "",
+        "root": "מינ",
+        "sense": "kind, variety"
+      },
+      "position": 6,
+      "surface": "לְמִינָהּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "behemah"
+        },
+        "evidence": "Genesis 1:24 lists בְּהֵמָה alongside רֶמֶשׂ (creeping things) and חַיְתוֹ אֶרֶץ (wild animals of the earth). The distinction from wild animals supports the collective sense “livestock.”",
+        "gloss": "livestock",
+        "language": "he",
+        "lemma": "בְּהֵמָה",
+        "morphology": "Common noun, feminine singular absolute, used collectively.",
+        "qualifier": "",
+        "root": "בהמ",
+        "sense": "livestock, cattle; tame beast"
+      },
+      "position": 7,
+      "surface": "בְּהֵמָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ramas-creep"
+        },
+        "evidence": "The command for the earth to bring forth living creatures lists רֶמֶשׂ between בְּהֵמָה ‘livestock’ and חַיְתוֹ־אֶרֶץ ‘wild animals of the earth’. The singular noun names a class of creatures that move along the ground.",
+        "gloss": "and creeping things",
+        "language": "he",
+        "lemma": "רֶמֶשׂ",
+        "morphology": "Conjunction וָ־ ‘and’ + common noun, masculine singular absolute, used collectively.",
+        "qualifier": "",
+        "root": "רמשׂ",
+        "sense": "moving creatures"
+      },
+      "position": 8,
+      "surface": "וָרֶמֶשׂ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chayah"
+        },
+        "evidence": "אֶרֶץ completes the construct phrase וְחַיְתוֹ אֶרֶץ, “and wild animals of the earth.” The phrase names a class of land animals alongside בְּהֵמָה “livestock” and רֶמֶשׂ “creeping things.” The singular noun is collective here.",
+        "gloss": "and wild animals of the earth",
+        "language": "he",
+        "lemma": "חַיָּה",
+        "morphology": "Conjunction וְ plus feminine singular construct noun with the archaic construct ending ־וֹ and no pronominal suffix.",
+        "qualifier": "animal",
+        "root": "חיה",
+        "sense": "wild beast, beast of the field"
+      },
+      "position": 9,
+      "surface": "וְחַיְתוֹ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "erets"
+        },
+        "evidence": "In וְחַיְתוֹ אֶרֶץ, “and wild animals of the land,” אֶרֶץ identifies the animals’ habitat. They appear alongside livestock and creeping things in the command for the land to bring forth living creatures.",
+        "gloss": "land",
+        "language": "he",
+        "lemma": "אֶרֶץ",
+        "morphology": "Common noun, common gender, singular absolute, without prefix or suffix. It completes the construct phrase חַיְתוֹ אֶרֶץ.",
+        "qualifier": "",
+        "root": "ארצ",
+        "sense": "land as distinct from sea"
+      },
+      "position": 10,
+      "surface": "אֶרֶץ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "temunah"
+        },
+        "evidence": "The marked לְמִינָהּ follows וְחַיְתוֹ אֶרֶץ (“and the wild animals of the earth”). Its feminine singular suffix agrees with the collective חַיְתוֹ, and the phrase repeats the classification by kind introduced earlier with נֶפֶשׁ חַיָּה לְמִינָהּ.",
+        "gloss": "according to its kind",
+        "language": "he",
+        "lemma": "מִין",
+        "morphology": "Preposition לְ + masculine singular construct noun מִין + third-person feminine singular possessive suffix ־ָהּ.",
+        "qualifier": "",
+        "root": "מינ",
+        "sense": "kind, variety"
+      },
+      "position": 11,
+      "surface": "לְמִינָהּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "hayah"
+        },
+        "evidence": "In וַיְהִי כֵן, כֵן means “so” and refers back to God’s command for the earth to bring forth living creatures. וַיְהִי reports that what God commanded came to pass.",
+        "gloss": "and it came to pass",
+        "language": "he",
+        "lemma": "הָיָה",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ־.",
+        "qualifier": "",
+        "root": "היה",
+        "sense": "to come to pass"
+      },
+      "position": 12,
+      "surface": "וַיְהִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ken"
+        },
+        "evidence": "In וַיְהִי כֵן, “and it was so,” כֵן refers back to God’s command that the earth bring forth living creatures according to their kinds. It indicates that the command was fulfilled as spoken.",
+        "gloss": "so",
+        "language": "he",
+        "lemma": "כֵּן",
+        "morphology": "Uninflected adverb without prefix or suffix.",
+        "qualifier": "adverb",
+        "root": "כונ",
+        "sense": "so, thus (as said or done)"
+      },
+      "position": 13,
+      "surface": "כֵן"
+    }
+  ]
+}

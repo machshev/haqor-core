@@ -1,0 +1,179 @@
+{
+  "book": 1,
+  "chapter": 5,
+  "review": {
+    "entities": [
+      {
+        "evidence": "The verse names Enosh as Kenan’s father, matching Seth’s son in the Genesis genealogy.",
+        "key": "Enosh@Gen.4.26",
+        "position": 1
+      },
+      {
+        "evidence": "The verse names Kenan as the son Enosh fathered at age ninety.",
+        "key": "Kenan@Gen.5.9",
+        "position": 6
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "and he lived",
+        "position": 0
+      },
+      {
+        "gloss": "Enosh",
+        "position": 1
+      },
+      {
+        "gloss": "ninety",
+        "position": 2
+      },
+      {
+        "gloss": "years",
+        "position": 3
+      },
+      {
+        "gloss": "then he fathered",
+        "position": 4
+      },
+      {
+        "gloss": "Marks Kenan as the direct object (untranslated).",
+        "position": 5
+      },
+      {
+        "gloss": "Kenan",
+        "position": 6
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[And|0] [Enosh|1] [lived|0] [ninety|2] [years|3], [then he fathered|4] [Kenan|5,6]."
+  },
+  "source": "ot",
+  "verse": 9,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chayah"
+        },
+        "evidence": "אֱנוֹשׁ is the subject of וַיְחִי. The phrase תִּשְׁעִים שָׁנָה gives the duration Enosh lived before he fathered Kenan.",
+        "gloss": "and he lived",
+        "language": "he",
+        "lemma": "חָיָה",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ־ and no suffix",
+        "qualifier": "",
+        "root": "חיה",
+        "sense": "live for a specified span of time"
+      },
+      "position": 0,
+      "surface": "וַיְחִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "enosh"
+        },
+        "evidence": "אֱנוֹשׁ is the subject of both וַיְחִי and וַיּוֹלֶד. The verse names Enosh as the man who lived ninety years and fathered Kenan.",
+        "gloss": "Enosh",
+        "language": "he",
+        "lemma": "אֱנוֹשׁ",
+        "morphology": "Masculine singular proper noun without prefix or suffix",
+        "qualifier": "name",
+        "root": "אנש",
+        "sense": "Personal name of Seth’s son"
+      },
+      "position": 1,
+      "surface": "אֱנוֹשׁ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "tesha"
+        },
+        "evidence": "תִּשְׁעִים שָׁנָה means “ninety years” and gives Enosh’s age when he fathered Kenan.",
+        "gloss": "ninety",
+        "language": "he",
+        "lemma": "תִּשְׁעִים",
+        "morphology": "Cardinal numeral, common gender, plural absolute",
+        "qualifier": "",
+        "root": "תשע",
+        "sense": "ninety"
+      },
+      "position": 2,
+      "surface": "תִּשְׁעִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shanah"
+        },
+        "evidence": "תִּשְׁעִים שָׁנָה means “ninety years.” With וַיְחִי אֱנוֹשׁ (“Enosh lived”), the phrase gives Enosh’s age when he fathered Kenan.",
+        "gloss": "years",
+        "language": "he",
+        "lemma": "שָׁנָה",
+        "morphology": "Common noun, feminine singular absolute.",
+        "qualifier": "noun",
+        "root": "שנה",
+        "sense": "years of a life, age"
+      },
+      "position": 3,
+      "surface": "שָׁנָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yalad"
+        },
+        "evidence": "Enosh remains the subject of וַיּוֹלֶד, and אֶת marks Kenan as its direct object. The verse records that Enosh fathered Kenan at age ninety.",
+        "gloss": "and he fathered",
+        "language": "he",
+        "lemma": "יָלַד",
+        "morphology": "Hiphil wayyiqtol, third person masculine singular, with prefixed וַ־.",
+        "qualifier": "",
+        "root": "ילד",
+        "sense": "beget, father a child"
+      },
+      "position": 4,
+      "surface": "וַיּוֹלֶד"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "et"
+        },
+        "evidence": "In וַיּוֹלֶד אֶת קֵינָן, “he fathered Kenan,” אֶת marks the personal name קֵינָן as the direct object of וַיּוֹלֶד.",
+        "gloss": "Marks the direct object (untranslated).",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Direct-object particle, without prefix or suffix.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "(marks the definite object)"
+      },
+      "position": 5,
+      "surface": "אֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "kenan",
+            "base": null,
+            "change": "Add a personal-name article for Kenan. Its proposed link under קינ requires a companion root article with the id qayin.",
+            "definition": "Kenan, the son of Enosh in Genesis 5:9.",
+            "evidence": "וַיּוֹלֶד אֶת קֵינָן identifies Kenan as the child Enosh fathered."
+          }
+        },
+        "evidence": "Enosh is the subject of וַיּוֹלֶד, “he fathered,” and אֶת marks קֵינָן as its direct object. The clause names Kenan as the son Enosh fathered at age ninety.",
+        "gloss": "Kenan",
+        "language": "he",
+        "lemma": "קֵינָן",
+        "morphology": "Masculine singular personal name, without prefix or suffix.",
+        "qualifier": "",
+        "root": "קינ",
+        "sense": "The personal name of the son of Enosh."
+      },
+      "position": 6,
+      "surface": "קֵינָן"
+    }
+  ]
+}

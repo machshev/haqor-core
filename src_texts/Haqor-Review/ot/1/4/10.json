@@ -1,0 +1,237 @@
+{
+  "book": 1,
+  "chapter": 4,
+  "review": {
+    "entities": [],
+    "glosses": [
+      {
+        "gloss": "then he said",
+        "position": 0
+      },
+      {
+        "gloss": "what",
+        "position": 1
+      },
+      {
+        "gloss": "you have done",
+        "position": 2
+      },
+      {
+        "gloss": "the voice of",
+        "position": 3
+      },
+      {
+        "gloss": "shed blood",
+        "position": 4
+      },
+      {
+        "gloss": "your brother",
+        "position": 5
+      },
+      {
+        "gloss": "are crying out",
+        "position": 6
+      },
+      {
+        "gloss": "to me",
+        "position": 7
+      },
+      {
+        "gloss": "from",
+        "position": 8
+      },
+      {
+        "gloss": "the ground",
+        "position": 9
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[Then he said|0], “[What|1] [have you done|2]? [The voice of|3] [your brother’s|5] [blood|4] [is crying out|6] [to me|7] [from|8] [the ground|9]!"
+  },
+  "source": "ot",
+  "verse": 10,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "amar"
+        },
+        "evidence": "וַיֹּאמֶר introduces the speaker’s question מֶה עָשִׂיתָ, “What have you done?”",
+        "gloss": "and he said",
+        "language": "he",
+        "lemma": "אָמַר",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ־",
+        "qualifier": "",
+        "root": "אמר",
+        "sense": "say, introducing direct speech"
+      },
+      "position": 0,
+      "surface": "וַיֹּאמֶר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "mah"
+        },
+        "evidence": "In מֶה עָשִׂיתָ, “What have you done?”, מֶה is the direct object of עָשִׂיתָ. The question asks what deed Cain has committed, and the reference to his brother’s blood gives it accusatory force.",
+        "gloss": "what",
+        "language": "he",
+        "lemma": "מָה",
+        "morphology": "Interrogative pronoun, uninflected, with no prefix or suffix. The surface form is מֶה.",
+        "qualifier": "",
+        "root": "מה",
+        "sense": "what?"
+      },
+      "position": 1,
+      "surface": "מֶה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "asah"
+        },
+        "evidence": "מֶה עָשִׂיתָ means “What have you done?” The next clause says that Cain’s brother’s blood cries out from the ground, identifying the act as the killing of his brother.",
+        "gloss": "you have done",
+        "language": "he",
+        "lemma": "עָשָׂה",
+        "morphology": "Qal perfect, second person masculine singular. The ending ־תָ marks the subject.",
+        "qualifier": "",
+        "root": "עשׂה",
+        "sense": "do, commit an act"
+      },
+      "position": 2,
+      "surface": "עָשִׂיתָ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "qol"
+        },
+        "evidence": "קוֹל דְּמֵי אָחִיךָ means “the voice of your brother’s blood.” The plural participle צֹעֲקִים agrees with דְּמֵי, and אֵלַי gives the cry a hearer. The blood is personified as raising its voice to God.",
+        "gloss": "the voice of",
+        "language": "he",
+        "lemma": "קוֹל",
+        "morphology": "Common noun, masculine singular construct, without prefix or suffix.",
+        "qualifier": "",
+        "root": "קול",
+        "sense": "voice (of a person or creature)"
+      },
+      "position": 3,
+      "surface": "קוֹל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "dam",
+            "base": "70cf3bc30e1e1b2c3043c2c992f58d0aa3703766b1d6937d249068620d2b78ef",
+            "change": "Clarify how the plural construct and its agreeing participle identify Abel’s shed blood in the existing bloodshed sense.",
+            "definition": "Blood shed in a killing, here personified as a witness against the killer.",
+            "evidence": "In Genesis 4:10, דְּמֵי אָחִיךָ identifies the blood as the brother’s, and צֹעֲקִים describes it crying out from the ground."
+          }
+        },
+        "evidence": "דְּמֵי אָחִיךָ means “your brother’s blood.” The masculine plural participle צֹעֲקִים agrees with דְּמֵי. Abel’s shed blood cries out from the ground as a witness against Cain.",
+        "gloss": "shed blood",
+        "language": "he",
+        "lemma": "דָּם",
+        "morphology": "Masculine plural construct noun, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "דמ",
+        "sense": "bloodshed and responsibility for a death"
+      },
+      "position": 4,
+      "surface": "דְּמֵי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ach"
+        },
+        "evidence": "In דְּמֵי אָחִיךָ, “your brother’s blood,” the suffix addresses Cain and the noun identifies Abel as his brother.",
+        "gloss": "your brother",
+        "language": "he",
+        "lemma": "אָח",
+        "morphology": "Masculine singular construct noun with a second-person masculine singular possessive suffix ךָ.",
+        "qualifier": "",
+        "root": "אחה",
+        "sense": "brother (by birth)"
+      },
+      "position": 5,
+      "surface": "אָחִיךָ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "tsaaq"
+        },
+        "evidence": "The plural צֹעֲקִים agrees with דְּמֵי אָחִיךָ, “your brother’s blood.” The blood is personified as crying from the ground. אֵלַי, “to me,” directs its appeal to God for justice over the killing.",
+        "gloss": "are crying out",
+        "language": "he",
+        "lemma": "צָעַק",
+        "morphology": "Qal active participle, masculine plural, absolute",
+        "qualifier": "",
+        "root": "צעק",
+        "sense": "cry out for justice"
+      },
+      "position": 6,
+      "surface": "צֹעֲקִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "elah",
+            "base": "cad803eb7db2b131b61fb3b93a576d63e0cc55ff679e4a05bef3c89da4d37113",
+            "change": "Add Genesis 4:10 as evidence for the existing personal-recipient sense of אֶל in elah.",
+            "definition": "With a verb of speech or crying out, אֶל marks the addressee.",
+            "evidence": "In Genesis 4:10, צֹעֲקִים אֵלַי identifies the speaker as the hearer of the cry."
+          }
+        },
+        "evidence": "In צֹעֲקִים אֵלַי, “cry out to me,” the suffix identifies Yahweh, the speaker, as the one to whom the brother’s blood cries. מִן הָאֲדָמָה, “from the ground,” gives the source of the cry.",
+        "gloss": "to me",
+        "language": "he",
+        "lemma": "אֶל",
+        "morphology": "Preposition with a first-person common singular pronominal suffix.",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "Marks the person to whom a cry is directed."
+      },
+      "position": 7,
+      "surface": "אֵלַי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "min"
+        },
+        "evidence": "In צֹעֲקִים אֵלַי מִן הָאֲדָמָה, “crying out to me from the ground,” אֵלַי identifies whom the cry reaches, and מִן הָאֲדָמָה identifies the place from which it rises.",
+        "gloss": "from",
+        "language": "he",
+        "lemma": "מִן",
+        "morphology": "Independent preposition without prefix or suffix.",
+        "qualifier": "",
+        "root": "מנ",
+        "sense": "from, away from (place, separation)"
+      },
+      "position": 8,
+      "surface": "מִן"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "adam"
+        },
+        "evidence": "In מִן הָאֲדָמָה, “from the ground,” מִן marks the ground as the place from which the blood of Cain’s brother cries out.",
+        "gloss": "the ground",
+        "language": "he",
+        "lemma": "אֲדָמָה",
+        "morphology": "Feminine singular common noun in the absolute state with the prefixed definite article הָ.",
+        "qualifier": "",
+        "root": "אדמ",
+        "sense": "the ground underfoot; the face of the earth"
+      },
+      "position": 9,
+      "surface": "הָאֲדָמָה"
+    }
+  ]
+}

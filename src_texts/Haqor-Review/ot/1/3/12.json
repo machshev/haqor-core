@@ -1,0 +1,184 @@
+{
+  "book": 1,
+  "chapter": 3,
+  "source": "ot",
+  "verse": 12,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "amar"
+        },
+        "evidence": "The subject הָאָדָם follows the verb. The man’s reply begins with הָאִשָּׁה, and the first-person לִּי (“to me”) identifies him as the speaker.",
+        "gloss": "and he said",
+        "language": "he",
+        "lemma": "אָמַר",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ־",
+        "qualifier": "",
+        "root": "אמר",
+        "sense": "say, introducing direct speech"
+      },
+      "position": 0,
+      "surface": "וַיֹּאמֶר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "adam"
+        },
+        "evidence": "In וַיֹּאמֶר הָאָדָם (‘the man said’), the definite noun identifies the speaker. He refers to the woman given to him and says וָאֹכֵל (‘and I ate’).",
+        "gloss": "the man",
+        "language": "he",
+        "lemma": "אָדָם",
+        "morphology": "Definite article הָ־ prefixed to a masculine singular absolute common noun.",
+        "qualifier": "noun",
+        "root": "אדמ",
+        "sense": "the man (the first man)"
+      },
+      "position": 1,
+      "surface": "הָאָדָם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "enosh"
+        },
+        "evidence": "The man identifies her as “the woman whom you gave to be with me.” The pronoun הִוא (“she”) refers back to her as the one who gave him fruit from the tree.",
+        "gloss": "the woman",
+        "language": "he",
+        "lemma": "אִשָּׁה",
+        "morphology": "Definite article הָ־ + feminine singular absolute noun",
+        "qualifier": "",
+        "root": "אנש",
+        "sense": "woman"
+      },
+      "position": 2,
+      "surface": "הָאִשָּׁה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ashar"
+        },
+        "evidence": "In הָאִשָּׁה אֲשֶׁר נָתַתָּה עִמָּדִי, “the woman whom you gave to be with me,” אֲשֶׁר introduces a relative clause modifying הָאִשָּׁה. The woman is the understood object of נָתַתָּה, “you gave.”",
+        "gloss": "whom",
+        "language": "he",
+        "lemma": "אֲשֶׁר",
+        "morphology": "Invariable relative particle without prefix or suffix.",
+        "qualifier": "",
+        "root": "אשר",
+        "sense": "who, which, that"
+      },
+      "position": 3,
+      "surface": "אֲשֶׁר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "natan"
+        },
+        "evidence": "In הָאִשָּׁה אֲשֶׁר נָתַתָּה עִמָּדִי, the woman is the understood object of נָתַתָּה, and עִמָּדִי means “with me.” The man describes her as “the woman you placed with me.”",
+        "gloss": "you placed",
+        "language": "he",
+        "lemma": "נָתַן",
+        "morphology": "Qal perfect, second masculine singular, with the expanded ending ־תָּה",
+        "qualifier": "",
+        "root": "נתנ",
+        "sense": "put or set something in a place"
+      },
+      "position": 4,
+      "surface": "נָתַתָּה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "hu"
+        },
+        "evidence": "After the relative clause אֲשֶׁר נָתַתָּה עִמָּדִי, הִוא resumes הָאִשָּׁה (“the woman”) as the subject of the feminine singular verb נָתְנָה (“gave”).",
+        "gloss": "she",
+        "language": "he",
+        "lemma": "הִיא",
+        "morphology": "Independent personal pronoun, third person feminine singular, written הִוא and read הִיא, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "הוא",
+        "sense": "she, it"
+      },
+      "position": 6,
+      "surface": "הִוא"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "natan"
+        },
+        "evidence": "הִוא refers to the woman and agrees with נָתְנָה. לִּי identifies the man as the recipient, מִן הָעֵץ gives the source of what she gave him, and וָאֹכֵל confirms that he ate it.",
+        "gloss": "she gave",
+        "language": "he",
+        "lemma": "נָתַן",
+        "morphology": "Qal perfect, third person feminine singular",
+        "qualifier": "",
+        "root": "נתנ",
+        "sense": "give something to someone for their use"
+      },
+      "position": 7,
+      "surface": "נָתְנָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "min",
+            "base": "a8ed885685f881ad58d16600265c2176cd484c41c6480205b1d0941d765b8fa6",
+            "change": "Add Genesis 2:17 to the Hebrew partitive sense in the existing min article.",
+            "definition": "With a verb of eating, מִן marks that of which someone eats a portion.",
+            "evidence": "Genesis 2:17 names the tree, then refers to it with מִמֶּנּוּ after אֲכָלְךָ. Genesis 3:3 makes the fruit explicit in describing the same prohibition."
+          }
+        },
+        "evidence": "In נָתְנָה לִּי מִן הָעֵץ, the woman gave the man some of the tree’s fruit. וָאֹכֵל (“and I ate”) identifies what she gave as food, and Genesis 3:6 names it explicitly as fruit.",
+        "gloss": "some of",
+        "language": "he",
+        "lemma": "מִן",
+        "morphology": "Independent preposition without prefix or suffix.",
+        "qualifier": "",
+        "root": "מנ",
+        "sense": "Partitive, marking what one eats some of."
+      },
+      "position": 9,
+      "surface": "מִן"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ets"
+        },
+        "evidence": "In הִוא נָתְנָה לִּי מִן הָעֵץ וָאֹכֵל, the man says the woman gave him something from the tree and he ate it. The separate preposition מִן marks the tree as the source of what he ate.",
+        "gloss": "the tree",
+        "language": "he",
+        "lemma": "עֵץ",
+        "morphology": "Masculine singular absolute noun with the prefixed definite article הָ־.",
+        "qualifier": "",
+        "root": "עצה",
+        "sense": "tree"
+      },
+      "position": 10,
+      "surface": "הָעֵץ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "akal"
+        },
+        "evidence": "The man says הִוא נָתְנָה לִּי מִן הָעֵץ, “she gave me some from the tree.” With וָאֹכֵל he shifts to the first person and says he ate what she gave him.",
+        "gloss": "and I ate",
+        "language": "he",
+        "lemma": "אָכַל",
+        "morphology": "Qal wayyiqtol, first person common singular, with prefixed וָ־ and no suffix.",
+        "qualifier": "",
+        "root": "אכל",
+        "sense": "eat"
+      },
+      "position": 11,
+      "surface": "וָאֹכֵל"
+    }
+  ]
+}

@@ -1,0 +1,224 @@
+{
+  "book": 1,
+  "chapter": 1,
+  "source": "ot",
+  "verse": 18,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "mashal"
+        },
+        "evidence": "בַּיּוֹם וּבַלַּיְלָה identifies day and night as the domains over which the lights rule. The parallel infinitive וּלֲהַבְדִּיל gives their further purpose, to separate light from darkness.",
+        "gloss": "and to rule",
+        "language": "he",
+        "lemma": "מָשַׁל",
+        "morphology": "Qal infinitive construct with prefixed conjunction וְ and preposition לְ.",
+        "qualifier": "rule",
+        "root": "משל",
+        "sense": "rule, have dominion"
+      },
+      "position": 0,
+      "surface": "וְלִמְשֹׁל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yom"
+        },
+        "evidence": "The verse pairs בַּיּוֹם with וּבַלַּיְלָה, “and by night,” then contrasts הָאוֹר, “the light,” with הַחֹשֶׁךְ, “the darkness.” Both pairings identify יוֹם as the daylight period.",
+        "gloss": "by day",
+        "language": "he",
+        "lemma": "יוֹם",
+        "morphology": "Preposition בְּ with the definite article הַ, followed by a masculine singular absolute noun.",
+        "qualifier": "",
+        "root": "יומ",
+        "sense": "daylight, the day as against night"
+      },
+      "position": 1,
+      "surface": "בַּיּוֹם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "layil",
+            "base": "cb09c16574b8760153e388d7b3ac3969663b606b3d62691880d29694ce1c1863",
+            "change": "Add Genesis 1:18 as evidence for the existing sense “the hours of darkness” in layil.",
+            "definition": "Night is the period of darkness paired with day.",
+            "evidence": "Genesis 1:18 pairs day with night and light with darkness."
+          }
+        },
+        "evidence": "Genesis 1:18 pairs בַּיּוֹם “in the day” with וּבַלַּיְלָה “and in the night” as the two periods in which the lights rule. The following clause pairs light with darkness, identifying night as the dark period.",
+        "gloss": "and in the night",
+        "language": "he",
+        "lemma": "לַיְלָה",
+        "morphology": "וּ־ conjunction “and” + בְּ־ preposition “in” with the definite article הַ־, realized together as בַּ־ with doubling of the following ל + לַיְלָה, masculine singular absolute noun.",
+        "qualifier": "",
+        "root": "ליל",
+        "sense": "the hours of darkness"
+      },
+      "position": 2,
+      "surface": "וּבַלַּיְלָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "badal",
+            "base": null,
+            "change": "Add the Hebrew verb בָּדַל with its Hiphil sense of separating.",
+            "definition": "To separate one thing from another.",
+            "evidence": "In Gen.1.4, God separates light from darkness. The repeated בֵּין introduces each member of the pair."
+          }
+        },
+        "evidence": "וּלֲהַבְדִּיל parallels וְלִמְשֹׁל, giving a second purpose of the luminaries. בֵּין הָאוֹר וּבֵין הַחֹשֶׁךְ identifies the two things they separate, light and darkness.",
+        "gloss": "and to separate",
+        "language": "he",
+        "lemma": "בָּדַל",
+        "morphology": "Conjunction וּ plus preposition לֲ plus Hiphil infinitive construct הַבְדִּיל.",
+        "qualifier": "",
+        "root": "בדל",
+        "sense": "to separate one thing from another"
+      },
+      "position": 3,
+      "surface": "וּלֲהַבְדִּיל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "bayin"
+        },
+        "evidence": "After וּלֲהַבְדִּיל ‘and to distinguish’, the marked בֵּין introduces הָאוֹר ‘the light’. The matching וּבֵין introduces הַחֹשֶׁךְ ‘the darkness’, the second term of the distinction.",
+        "gloss": "between",
+        "language": "he",
+        "lemma": "בַּיִן",
+        "morphology": "Preposition in the construct form בֵּין, without prefix or suffix.",
+        "qualifier": "",
+        "root": "בינ",
+        "sense": "between (things told apart or judged)"
+      },
+      "position": 4,
+      "surface": "בֵּין"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "or"
+        },
+        "evidence": "In וּלֲהַבְדִּיל בֵּין הָאוֹר וּבֵין הַחֹשֶׁךְ, “and to separate the light from the darkness,” הָאוֹר names what is distinguished from הַחֹשֶׁךְ.",
+        "gloss": "the light",
+        "language": "he",
+        "lemma": "אוֹר",
+        "morphology": "Definite article הָ־ prefixed to a common noun of common gender, singular absolute.",
+        "qualifier": "noun",
+        "root": "אור",
+        "sense": "light (as against darkness)"
+      },
+      "position": 5,
+      "surface": "הָאוֹר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "bayin"
+        },
+        "evidence": "In וּלֲהַבְדִּיל בֵּין הָאוֹר וּבֵין הַחֹשֶׁךְ ‘and to distinguish the light from the darkness’, וּבֵין introduces הַחֹשֶׁךְ ‘the darkness’ as the second term of the distinction.",
+        "gloss": "and between",
+        "language": "he",
+        "lemma": "בַּיִן",
+        "morphology": "Conjunction וּ־ ‘and’ prefixed to the preposition בֵּין, with no suffix.",
+        "qualifier": "",
+        "root": "בינ",
+        "sense": "between (things told apart or judged)"
+      },
+      "position": 6,
+      "surface": "וּבֵין"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "choshekh"
+        },
+        "evidence": "In וּלֲהַבְדִּיל בֵּין הָאוֹר וּבֵין הַחֹשֶׁךְ, the lights separate light from darkness. The contrast with הָאוֹר and the preceding mention of day and night establish the physical sense.",
+        "gloss": "the darkness",
+        "language": "he",
+        "lemma": "חֹשֶׁךְ",
+        "morphology": "Definite article הַ־ prefixed to a masculine singular absolute noun.",
+        "qualifier": "",
+        "root": "חשכ",
+        "sense": "absence of light"
+      },
+      "position": 7,
+      "surface": "הַחֹשֶׁךְ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "raah"
+        },
+        "evidence": "אֱלֹהִים is the subject of וַיַּרְא, and כִּי טוֹב states what God saw: that it was good.",
+        "gloss": "and he saw",
+        "language": "he",
+        "lemma": "רָאָה",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ־",
+        "qualifier": "",
+        "root": "ראה",
+        "sense": "see or perceive that something is so"
+      },
+      "position": 8,
+      "surface": "וַיַּרְא"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "In וַיַּרְא אֱלֹהִים כִּי טוֹב, “God saw that it was good,” the third-person masculine singular verb וַיַּרְא identifies the creator as the singular subject.",
+        "gloss": "God",
+        "language": "he",
+        "lemma": "אֱלֹהִים",
+        "morphology": "Common noun, masculine plural absolute, with a singular referent.",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "the Mighty One, God"
+      },
+      "position": 9,
+      "surface": "אֱלֹהִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ki"
+        },
+        "evidence": "In וַיַּרְא אֱלֹהִים כִּי טוֹב, כִּי introduces what God saw: “God saw that it was good.”",
+        "gloss": "that",
+        "language": "he",
+        "lemma": "כִּי",
+        "morphology": "Uninflected conjunction with no prefix or suffix.",
+        "qualifier": "conjunction",
+        "root": "כי",
+        "sense": "that (what is seen, known or said)"
+      },
+      "position": 10,
+      "surface": "כִּי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "tov"
+        },
+        "evidence": "וַיַּרְא אֱלֹהִים כִּי טוֹב means “God saw that it was good.” טוֹב expresses God’s judgment on the arrangement just described, in which the lights govern day and night and separate light from darkness.",
+        "gloss": "good",
+        "language": "he",
+        "lemma": "טוֹב",
+        "morphology": "Masculine singular absolute adjective, used predicatively.",
+        "qualifier": "adjective",
+        "root": "טוב",
+        "sense": "good (of God’s works at creation)"
+      },
+      "position": 11,
+      "surface": "טוֹב"
+    }
+  ]
+}

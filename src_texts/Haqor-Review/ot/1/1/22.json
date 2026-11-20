@@ -1,0 +1,241 @@
+{
+  "book": 1,
+  "chapter": 1,
+  "source": "ot",
+  "verse": 22,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "barak"
+        },
+        "evidence": "אֱלֹהִים is the subject, and אֹתָם (“them”) refers to the creatures. לֵאמֹר introduces the words of blessing, פְּרוּ וּרְבוּ (“be fruitful and multiply”).",
+        "gloss": "and he blessed",
+        "language": "he",
+        "lemma": "בָּרַךְ",
+        "morphology": "Piel wayyiqtol, third person masculine singular, with prefixed וַ־ and no suffix.",
+        "qualifier": "",
+        "root": "ברכ",
+        "sense": "to bless living creatures with fruitfulness"
+      },
+      "position": 0,
+      "surface": "וַיְבָרֶךְ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "et",
+            "base": "31c9a635be8bba9a67417e75ea7122e240ae707e04a841533a59ecd2869d0f80",
+            "change": "Add Genesis 1:22 as an example of the object-pronoun sense in the existing et article.",
+            "definition": "With a pronominal suffix, אֵת expresses the direct object of a verb as a separate word.",
+            "evidence": "Genesis 1:22 uses אֹתָם for the creatures God blessed. The third-person plural suffix refers back to the creatures named in Genesis 1:21."
+          }
+        },
+        "evidence": "In וַיְבָרֶךְ אֹתָם אֱלֹהִים, “God blessed them,” אֱלֹהִים is the subject of וַיְבָרֶךְ. The suffix on אֹתָם identifies the water creatures and birds of Genesis 1:21 as the direct object. The blessing that follows speaks of both groups multiplying.",
+        "gloss": "them",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Direct-object particle in its suffixed form אֹת־ with the third-person masculine plural pronominal suffix ־ָם.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "with suffixes: me, you, him, her, us, them"
+      },
+      "position": 1,
+      "surface": "אֹתָם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "In וַיְבָרֶךְ אֹתָם אֱלֹהִים (“God blessed them”), אֱלֹהִים is the subject of the masculine singular verb וַיְבָרֶךְ. The singular agreement identifies God as the one who gives the blessing.",
+        "gloss": "God",
+        "language": "he",
+        "lemma": "אֱלֹהִים",
+        "morphology": "Common noun, masculine plural absolute, with singular agreement. No prefix or suffix.",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "the Mighty One, God"
+      },
+      "position": 2,
+      "surface": "אֱלֹהִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "amar"
+        },
+        "evidence": "לֵאמֹר introduces the words of God's blessing. The imperatives פְּרוּ וּרְבוּ (“be fruitful and multiply”) open the direct speech.",
+        "gloss": "saying",
+        "language": "he",
+        "lemma": "אָמַר",
+        "morphology": "Qal infinitive construct with prefixed preposition לְ",
+        "qualifier": "",
+        "root": "אמר",
+        "sense": "say, introducing direct speech"
+      },
+      "position": 3,
+      "surface": "לֵאמֹר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "parah"
+        },
+        "evidence": "God addresses the creatures directly. The paired commands פְּרוּ וּרְבוּ, “be fruitful and multiply,” link producing offspring with increasing in number so that the creatures fill the waters.",
+        "gloss": "be fruitful",
+        "language": "he",
+        "lemma": "פָּרָה",
+        "morphology": "Qal imperative, second person masculine plural. Final וּ marks the plural imperative.",
+        "qualifier": "",
+        "root": "פרה",
+        "sense": "be fruitful by producing offspring"
+      },
+      "position": 4,
+      "surface": "פְּרוּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "rabah"
+        },
+        "evidence": "In God’s blessing, וּרְבוּ follows פְּרוּ “be fruitful” and precedes וּמִלְאוּ אֶת־הַמַּיִם “and fill the waters.” The three plural commands address the creatures together, and the sequence identifies multiplication as an increase in their number.",
+        "gloss": "and multiply",
+        "language": "he",
+        "lemma": "רָבָה",
+        "morphology": "Qal imperative, second person masculine plural, with prefixed conjunction וּ־",
+        "qualifier": "",
+        "root": "רבה",
+        "sense": "increase in number"
+      },
+      "position": 5,
+      "surface": "וּרְבוּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "male"
+        },
+        "evidence": "וּמִלְאוּ continues the plural commands פְּרוּ וּרְבוּ ‘be fruitful and multiply’. The direct object אֶת־הַמַּיִם ‘the waters’ identifies what the creatures are to fill as they multiply.",
+        "gloss": "and fill",
+        "language": "he",
+        "lemma": "מָלֵא",
+        "morphology": "Qal imperative, second person masculine plural, with prefixed conjunction וּ־ ‘and’.",
+        "qualifier": "verb",
+        "root": "מלא",
+        "sense": "fill"
+      },
+      "position": 6,
+      "surface": "וּמִלְאוּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "et"
+        },
+        "evidence": "In וּמִלְאוּ אֶת הַמַּיִם, “and fill the waters,” אֶת marks הַמַּיִם (“the waters”) as the definite direct object of the imperative וּמִלְאוּ.",
+        "gloss": "(untranslated)",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Direct-object particle, without prefix or suffix",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "(marks the definite object)"
+      },
+      "position": 7,
+      "surface": "אֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "mayim",
+            "base": "7a095b6c2624f5e1fa2f45c8ad0c8fa7eebb4e609589e4db6aa40b3f9ca131e1",
+            "change": "Add Genesis 1:22 as an example of the existing sense “a body or flow of water.”",
+            "definition": "The waters of the seas that aquatic creatures inhabit.",
+            "evidence": "Genesis 1:22 commands the creatures to fill הַמַּיִם and locates those waters בַּיַּמִּים, “in the seas.”"
+          }
+        },
+        "evidence": "In וּמִלְאוּ אֶת הַמַּיִם, “and fill the waters,” אֶת marks the waters as the direct object of “fill.” The following בַּיַּמִּים, “in the seas,” identifies the waters where the creatures are to multiply.",
+        "gloss": "the waters",
+        "language": "he",
+        "lemma": "מַיִם",
+        "morphology": "Masculine plural noun in the absolute state, with the prefixed definite article הַ־ doubling the initial מ.",
+        "qualifier": "",
+        "root": "מימ",
+        "sense": "a body or flow of water"
+      },
+      "position": 8,
+      "surface": "הַמַּיִם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yam"
+        },
+        "evidence": "In וּמִלְאוּ אֶת הַמַּיִם בַּיַּמִּים, the creatures are to fill the waters. בַּיַּמִּים locates those waters in the seas, just as בָּאָרֶץ gives the place where the birds are to multiply.",
+        "gloss": "in the seas",
+        "language": "he",
+        "lemma": "יָם",
+        "morphology": "Preposition בְּ with the definite article הַ (combined בַּ), followed by a masculine plural absolute noun.",
+        "qualifier": "",
+        "root": "יממ",
+        "sense": "sea, the gathered waters"
+      },
+      "position": 9,
+      "surface": "בַּיַּמִּים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "uph"
+        },
+        "evidence": "In וְהָעוֹף יִרֶב בָּאָרֶץ, “and let the birds multiply on the earth,” the singular verb יִרֶב agrees with the collective noun עוֹף. The blessing distinguishes the birds from the creatures addressed in the command to fill the waters.",
+        "gloss": "and the birds",
+        "language": "he",
+        "lemma": "עוֹף",
+        "morphology": "Conjunction וְ plus definite article הָ plus a masculine singular absolute noun used collectively.",
+        "qualifier": "",
+        "root": "עופ",
+        "sense": "birds collectively"
+      },
+      "position": 10,
+      "surface": "וְהָעוֹף"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "rabah"
+        },
+        "evidence": "The singular יִרֶב agrees with the collective subject הָעוֹף, “the birds.” It echoes וּרְבוּ, “multiply,” earlier in the same blessing.",
+        "gloss": "let the birds multiply",
+        "language": "he",
+        "lemma": "רָבָה",
+        "morphology": "Qal jussive, third person masculine singular, shortened form",
+        "qualifier": "",
+        "root": "רבה",
+        "sense": "increase in number"
+      },
+      "position": 11,
+      "surface": "יִרֶב"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "erets"
+        },
+        "evidence": "The blessing tells aquatic creatures to fill הַמַּיִם בַּיַּמִּים, “the waters in the seas,” and birds to multiply בָּאָרֶץ, “on the land.” The parallel clauses distinguish land from sea.",
+        "gloss": "on the land",
+        "language": "he",
+        "lemma": "אֶרֶץ",
+        "morphology": "Preposition בְּ with the definite article, followed by a singular absolute noun.",
+        "qualifier": "",
+        "root": "ארצ",
+        "sense": "land as distinct from sea"
+      },
+      "position": 12,
+      "surface": "בָּאָרֶץ"
+    }
+  ]
+}

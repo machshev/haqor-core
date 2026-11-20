@@ -1,0 +1,210 @@
+{
+  "book": 1,
+  "chapter": 2,
+  "review": {
+    "entities": [],
+    "glosses": [
+      {
+        "gloss": "but mist",
+        "position": 0
+      },
+      {
+        "gloss": "would rise",
+        "position": 1
+      },
+      {
+        "gloss": "from",
+        "position": 2
+      },
+      {
+        "gloss": "the earth",
+        "position": 3
+      },
+      {
+        "gloss": "and would water",
+        "position": 4
+      },
+      {
+        "gloss": "untranslated direct-object marker",
+        "position": 5
+      },
+      {
+        "gloss": "the whole",
+        "position": 6
+      },
+      {
+        "gloss": "surface of",
+        "position": 7
+      },
+      {
+        "gloss": "the ground",
+        "position": 8
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[But mist|0] [would rise|1] [from|2] [the earth|3] [and water|4] [the whole|5,6] [surface of|7] [the ground|8]."
+  },
+  "source": "ot",
+  "verse": 6,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ed-calamity"
+        },
+        "evidence": "אֵד is the subject of יַעֲלֶה מִן הָאָרֶץ, “would rise from the earth,” and of וְהִשְׁקָה, “would water.” Both verbs describe moisture rising from the earth and watering the whole surface of the ground. The verse leaves open whether it rose as mist or as liquid water.",
+        "gloss": "mist",
+        "language": "he",
+        "lemma": "אֵד",
+        "morphology": "וְ־ conjunction + masculine singular absolute noun",
+        "qualifier": "",
+        "root": "אוד",
+        "sense": "mist or upwelling water"
+      },
+      "position": 0,
+      "surface": "וְאֵד"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "alah"
+        },
+        "evidence": "יַעֲלֶה agrees with אֵד, “mist,” as its subject. The phrase מִן הָאָרֶץ, “from the earth,” identifies the starting point of its upward movement.",
+        "gloss": "would rise",
+        "language": "he",
+        "lemma": "עָלָה",
+        "morphology": "Qal imperfect, third person masculine singular",
+        "qualifier": "",
+        "root": "עלה",
+        "sense": "go up, rise"
+      },
+      "position": 1,
+      "surface": "יַעֲלֶה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "min"
+        },
+        "evidence": "In יַעֲלֶה מִן הָאָרֶץ, “would rise from the earth,” מִן introduces הָאָרֶץ as the place from which the mist rises.",
+        "gloss": "from",
+        "language": "he",
+        "lemma": "מִן",
+        "morphology": "Independent preposition without prefix or suffix.",
+        "qualifier": "",
+        "root": "מנ",
+        "sense": "from, away from (place, separation)"
+      },
+      "position": 2,
+      "surface": "מִן"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "erets"
+        },
+        "evidence": "מִן הָאָרֶץ identifies the ground as the source from which the אֵד rises. The following clause names the surface it waters, כָּל־פְּנֵי הָאֲדָמָה, “the whole surface of the soil.”",
+        "gloss": "the ground",
+        "language": "he",
+        "lemma": "אֶרֶץ",
+        "morphology": "Definite article הָ־ + common noun, singular absolute.",
+        "qualifier": "",
+        "root": "ארצ",
+        "sense": "ground, surface"
+      },
+      "position": 3,
+      "surface": "הָאָרֶץ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "shaqah",
+            "base": "58eca51da110ef9ccb46d19d4744780bc41bcb5e2d5c8a82abf7eb092d51b479",
+            "change": "Add a Hiphil sense for watering the ground alongside the existing sense of giving someone drink.",
+            "definition": "To supply the ground with water.",
+            "evidence": "In Gen.2.6 the rising אֵד supplies moisture to the whole surface of the ground."
+          }
+        },
+        "evidence": "The אֵד rises from the earth and waters it. The direct object marker אֶת introduces כָּל פְּנֵי הָאֲדָמָה, “the whole surface of the ground,” identifying what receives the moisture.",
+        "gloss": "and would water",
+        "language": "he",
+        "lemma": "שָׁקָה",
+        "morphology": "Prefixed conjunction וְ followed by the Hiphil perfect, third person masculine singular. The weqatal continues יַעֲלֶה and shares its subject, אֵד.",
+        "qualifier": "",
+        "root": "שקה",
+        "sense": "water the ground"
+      },
+      "position": 4,
+      "surface": "וְהִשְׁקָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "et"
+        },
+        "evidence": "אֶת introduces כָּל־פְּנֵי הָאֲדָמָה, “the whole surface of the ground,” as the direct object of וְהִשְׁקָה, “watered.”",
+        "gloss": "untranslated direct-object marker",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Unsuffixed direct-object particle, with no prefix.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "(marks the definite object)"
+      },
+      "position": 5,
+      "surface": "אֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "kalal"
+        },
+        "evidence": "In וְהִשְׁקָה אֶת כָּל פְּנֵי הָאֲדָמָה, כָּל specifies the extent of what was watered: the whole surface of the ground.",
+        "gloss": "the whole",
+        "language": "he",
+        "lemma": "כֹּל",
+        "morphology": "Masculine singular noun in the construct state.",
+        "qualifier": "",
+        "root": "כלל",
+        "sense": "all, the whole"
+      },
+      "position": 6,
+      "surface": "כָּל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "panah"
+        },
+        "evidence": "In וְהִשְׁקָה אֶת כָּל פְּנֵי הָאֲדָמָה, “and watered the whole surface of the ground,” פְּנֵי stands in construct with הָאֲדָמָה and denotes the surface that receives the water.",
+        "gloss": "surface of",
+        "language": "he",
+        "lemma": "פָּנִים",
+        "morphology": "Common noun, common gender, plural construct of פָּנִים, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "פנה",
+        "sense": "surface (of the earth, the waters)"
+      },
+      "position": 7,
+      "surface": "פְּנֵי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "adam"
+        },
+        "evidence": "In כָּל פְּנֵי הָאֲדָמָה, “the whole surface of the ground,” פְּנֵי means “surface of,” and הָאֲדָמָה identifies the ground whose surface receives the water.",
+        "gloss": "the ground",
+        "language": "he",
+        "lemma": "אֲדָמָה",
+        "morphology": "Common noun, feminine singular absolute, with the prefixed definite article הָ.",
+        "qualifier": "",
+        "root": "אדמ",
+        "sense": "the ground underfoot; the face of the earth"
+      },
+      "position": 8,
+      "surface": "הָאֲדָמָה"
+    }
+  ]
+}

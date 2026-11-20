@@ -1,0 +1,284 @@
+{
+  "book": 1,
+  "chapter": 5,
+  "review": {
+    "entities": [
+      {
+        "evidence": "Adam is the father who names his son Seth, matching the Adam who fathered Seth with Eve in Genesis 4:25.",
+        "key": "Adam@Gen.2.19",
+        "position": 1
+      },
+      {
+        "evidence": "Seth is the name Adam gives his son here. Genesis 4:25 identifies Seth as the son of Adam and Eve born after Abel’s death.",
+        "key": "Seth@Gen.4.25",
+        "position": 11
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "and he lived",
+        "position": 0
+      },
+      {
+        "gloss": "Adam",
+        "position": 1
+      },
+      {
+        "gloss": "thirty",
+        "position": 2
+      },
+      {
+        "gloss": "and a hundred",
+        "position": 3
+      },
+      {
+        "gloss": "years",
+        "position": 4
+      },
+      {
+        "gloss": "then he fathered",
+        "position": 5
+      },
+      {
+        "gloss": "in his own likeness",
+        "position": 6
+      },
+      {
+        "gloss": "according to his image",
+        "position": 7
+      },
+      {
+        "gloss": "and he called",
+        "position": 8
+      },
+      {
+        "gloss": "untranslated",
+        "position": 9
+      },
+      {
+        "gloss": "his name",
+        "position": 10
+      },
+      {
+        "gloss": "Seth",
+        "position": 11
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[And|0] [Adam|1] [lived|0] [130|3,2] [years|4], [then he fathered|5] {a son} [in his own likeness|6], [according to his image|7], [and he called|8] [his name|10,9] [Seth|11]."
+  },
+  "source": "ot",
+  "verse": 3,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chayah"
+        },
+        "evidence": "אָדָם is the subject of וַיְחִי, and שְׁלֹשִׁים וּמְאַת שָׁנָה gives the duration. Adam lived 130 years before he fathered Seth.",
+        "gloss": "and he lived",
+        "language": "he",
+        "lemma": "חָיָה",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ־ and no suffix",
+        "qualifier": "",
+        "root": "חיה",
+        "sense": "live for a stated length of time"
+      },
+      "position": 0,
+      "surface": "וַיְחִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "adam"
+        },
+        "evidence": "וַיְחִי אָדָם names Adam as the subject. The verse gives his age as 130 years when he fathered a son and named him Seth.",
+        "gloss": "Adam",
+        "language": "he",
+        "lemma": "אָדָם",
+        "morphology": "Masculine singular proper noun, without article, prefix, or suffix.",
+        "qualifier": "name",
+        "root": "אדמ",
+        "sense": "Adam, the father of Seth"
+      },
+      "position": 1,
+      "surface": "אָדָם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shalosh"
+        },
+        "evidence": "In שְׁלֹשִׁים וּמְאַת שָׁנָה, the conjunction וּ joins thirty and one hundred. Together they give Adam’s age of 130 years when he fathered Seth.",
+        "gloss": "thirty",
+        "language": "he",
+        "lemma": "שְׁלֹשִׁים",
+        "morphology": "Cardinal numeral, common gender, plural, absolute state, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "שלש",
+        "sense": "thirty"
+      },
+      "position": 2,
+      "surface": "שְׁלֹשִׁים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "meah"
+        },
+        "evidence": "מְאַת governs שָׁנָה ‘year’ in the construct phrase מְאַת שָׁנָה ‘a hundred years’. The conjunction joins this count to שְׁלֹשִׁים ‘thirty’, giving Adam’s age as 130 years.",
+        "gloss": "and a hundred",
+        "language": "he",
+        "lemma": "מֵאָה",
+        "morphology": "Conjunction וּ־ ‘and’ prefixed to מְאַת, the singular construct form of the cardinal numeral מֵאָה.",
+        "qualifier": "",
+        "root": "מאה",
+        "sense": "a hundred (a count)"
+      },
+      "position": 3,
+      "surface": "וּמְאַת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shanah"
+        },
+        "evidence": "With וַיְחִי אָדָם ‘Adam lived’, שְׁלֹשִׁים וּמְאַת שָׁנָה gives Adam’s age in years when he fathered Seth. The singular שָׁנָה supplies the unit for the count of 130.",
+        "gloss": "years",
+        "language": "he",
+        "lemma": "שָׁנָה",
+        "morphology": "Common noun, feminine singular absolute, with no prefix or suffix.",
+        "qualifier": "noun",
+        "root": "שנה",
+        "sense": "years of a life, age"
+      },
+      "position": 4,
+      "surface": "שָׁנָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yalad"
+        },
+        "evidence": "Adam is the subject of וַיּוֹלֶד. The child is described as being in Adam’s likeness and image, and Adam names him Seth.",
+        "gloss": "and he fathered",
+        "language": "he",
+        "lemma": "יָלַד",
+        "morphology": "Hiphil wayyiqtol, third person masculine singular, with prefixed וַ and no suffix",
+        "qualifier": "",
+        "root": "ילד",
+        "sense": "beget, father a child"
+      },
+      "position": 5,
+      "surface": "וַיּוֹלֶד"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "dimyon"
+        },
+        "evidence": "The suffix refers to Adam. The parallel phrase כְּצַלְמוֹ, “according to his image,” reinforces that Seth bears his father’s likeness.",
+        "gloss": "in his likeness",
+        "language": "he",
+        "lemma": "דְּמוּת",
+        "morphology": "Preposition בִּ־ plus feminine singular construct noun with third-person masculine singular possessive suffix ־וֹ.",
+        "qualifier": "",
+        "root": "דמה",
+        "sense": "likeness, representation"
+      },
+      "position": 6,
+      "surface": "בִּדְמוּתוֹ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "tselem"
+        },
+        "evidence": "כְּצַלְמוֹ parallels בִּדְמוּתוֹ (“in his likeness”). Both suffixes refer to Adam, who fathered Seth, so the phrase describes Seth’s resemblance to his father.",
+        "gloss": "after his image",
+        "language": "he",
+        "lemma": "צֶלֶם",
+        "morphology": "Comparative preposition כְּ + masculine singular construct noun + third-person masculine singular possessive suffix ־וֹ referring to Adam.",
+        "qualifier": "",
+        "root": "צלמ",
+        "sense": "likeness to another"
+      },
+      "position": 7,
+      "surface": "כְּצַלְמוֹ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "qara"
+        },
+        "evidence": "Adam is the subject of וַיִּקְרָא. The marked direct object אֶת שְׁמוֹ means “his name,” and שֵׁת supplies the name Adam gave his son.",
+        "gloss": "and he named",
+        "language": "he",
+        "lemma": "קָרָא",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ־",
+        "qualifier": "call",
+        "root": "קרא",
+        "sense": "give a name to"
+      },
+      "position": 8,
+      "surface": "וַיִּקְרָא"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "et"
+        },
+        "evidence": "In וַיִּקְרָא אֶת שְׁמוֹ שֵׁת, “he called his name Seth,” אֶת marks שְׁמוֹ (“his name”) as the direct object of וַיִּקְרָא. The possessive suffix makes שְׁמוֹ definite, and שֵׁת supplies the name given.",
+        "gloss": "untranslated",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Direct-object particle, without prefix or suffix.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "(marks the definite object)"
+      },
+      "position": 9,
+      "surface": "אֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "shem",
+            "base": "5ff57a119255ca3775ba1c5592f6cd00e22ec622fafccd6afc08384d01b566fe",
+            "change": "Add Genesis 5:3 as an example of the first Hebrew noun sense in the existing shem article.",
+            "definition": "The personal name by which someone is known.",
+            "evidence": "Genesis 5:3 supplies the child's name, שֵׁת, immediately after שְׁמוֹ, “his name.”"
+          }
+        },
+        "evidence": "In וַיִּקְרָא אֶת שְׁמוֹ שֵׁת, Adam calls his son's name Seth. The suffix ־וֹ refers to the son just born, and שֵׁת gives the name Adam assigns him.",
+        "gloss": "his name",
+        "language": "he",
+        "lemma": "שֵׁם",
+        "morphology": "Masculine singular construct noun with the third-person masculine singular possessive suffix ־וֹ.",
+        "qualifier": "noun",
+        "root": "שמ",
+        "sense": "name by which someone is known"
+      },
+      "position": 10,
+      "surface": "שְׁמוֹ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "seth"
+        },
+        "evidence": "וַיִּקְרָא אֶת שְׁמוֹ שֵׁת means “he called his name Seth.” The suffix in שְׁמוֹ refers to the son Adam has just fathered, and שֵׁת gives the child’s name.",
+        "gloss": "Seth",
+        "language": "he",
+        "lemma": "שֵׁת",
+        "morphology": "Masculine singular proper noun without prefix or suffix.",
+        "qualifier": "name",
+        "root": "שית",
+        "sense": "the son of Adam and his wife born after Abel’s death"
+      },
+      "position": 11,
+      "surface": "שֵׁת"
+    }
+  ]
+}

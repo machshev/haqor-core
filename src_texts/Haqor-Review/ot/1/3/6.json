@@ -1,0 +1,354 @@
+{
+  "book": 1,
+  "chapter": 3,
+  "source": "ot",
+  "verse": 6,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "raah"
+        },
+        "evidence": "הָאִשָּׁה is the subject of וַתֵּרֶא. The following words כִּי טוֹב הָעֵץ לְמַאֲכָל give the content of her perception: she saw that the tree was good for food.",
+        "gloss": "and she saw",
+        "language": "he",
+        "lemma": "רָאָה",
+        "morphology": "Qal wayyiqtol, third-person feminine singular, with prefixed וַ and no suffix",
+        "qualifier": "",
+        "root": "ראה",
+        "sense": "see or perceive that something is so"
+      },
+      "position": 0,
+      "surface": "וַתֵּרֶא"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "enosh"
+        },
+        "evidence": "In וַתֵּרֶא הָאִשָּׁה, “the woman saw,” הָאִשָּׁה names the subject of the feminine singular verb. The later לְאִישָׁהּ, “to her husband,” expresses the marital relationship.",
+        "gloss": "the woman",
+        "language": "he",
+        "lemma": "אִשָּׁה",
+        "morphology": "Definite article הָ־ prefixed to a feminine singular absolute common noun.",
+        "qualifier": "",
+        "root": "אנש",
+        "sense": "woman"
+      },
+      "position": 1,
+      "surface": "הָאִשָּׁה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ki"
+        },
+        "evidence": "After וַתֵּרֶא הָאִשָּׁה ‘the woman saw’, כִּי introduces what she saw, namely that the tree was good for food (טוֹב הָעֵץ לְמַאֲכָל).",
+        "gloss": "that",
+        "language": "he",
+        "lemma": "כִּי",
+        "morphology": "Unprefixed, unsuffixed subordinating conjunction.",
+        "qualifier": "conjunction",
+        "root": "כי",
+        "sense": "that (what is seen, known or said)"
+      },
+      "position": 2,
+      "surface": "כִּי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "tov"
+        },
+        "evidence": "In כִּי טוֹב הָעֵץ לְמַאֲכָל, טוֹב agrees with הָעֵץ, “the tree,” and לְמַאֲכָל specifies what the woman judged it good for: food.",
+        "gloss": "good",
+        "language": "he",
+        "lemma": "טוֹב",
+        "morphology": "Masculine singular absolute adjective, used predicatively.",
+        "qualifier": "adjective",
+        "root": "טוב",
+        "sense": "good in quality, fine, fit for use"
+      },
+      "position": 3,
+      "surface": "טוֹב"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ets"
+        },
+        "evidence": "In טוֹב הָעֵץ לְמַאֲכָל, the woman sees that the tree is good for food. She then takes מִפִּרְיוֹ, “some of its fruit,” identifying the referent as a fruit-bearing tree.",
+        "gloss": "the tree",
+        "language": "he",
+        "lemma": "עֵץ",
+        "morphology": "Definite article הָ־ prefixed to a masculine singular absolute noun.",
+        "qualifier": "",
+        "root": "עצה",
+        "sense": "tree"
+      },
+      "position": 4,
+      "surface": "הָעֵץ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "akal"
+        },
+        "evidence": "טוֹב הָעֵץ לְמַאֲכָל means “the tree was good for food.” The woman then takes some of its fruit and eats it.",
+        "gloss": "for food",
+        "language": "he",
+        "lemma": "מַאֲכָל",
+        "morphology": "Prefixed preposition לְ + masculine singular absolute noun מַאֲכָל.",
+        "qualifier": "",
+        "root": "אכל",
+        "sense": "food, what is for eating"
+      },
+      "position": 5,
+      "surface": "לְמַאֲכָל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "ki",
+            "base": "e10232573d92c89ba24529df0f1715249a78d5ca8a4fa4713bc7e3e66e302614",
+            "change": "Clarify the existing Gen.3.6 citation under ki-that by identifying the role of the second כִּי.",
+            "definition": "After a verb of perception, כִּי introduces what is perceived.",
+            "evidence": "In Gen.3.6 the repeated כִּי introduces a second clause governed by וַתֵּרֶא, and the prefixed וְ coordinates it with the first."
+          }
+        },
+        "evidence": "וַתֵּרֶא הָאִשָּׁה ‘the woman saw’ governs both clauses. After ‘that the tree was good for food’, וְ joins a second observation, and כִּי introduces its content, תַאֲוָה הוּא לָעֵינַיִם ‘it was a delight to the eyes’.",
+        "gloss": "and that",
+        "language": "he",
+        "lemma": "כִּי",
+        "morphology": "Prefixed coordinating conjunction וְ ‘and’ + uninflected subordinating conjunction כִּי ‘that’.",
+        "qualifier": "conjunction",
+        "root": "כי",
+        "sense": "Introduces the content of what is seen."
+      },
+      "position": 6,
+      "surface": "וְכִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "taavah"
+        },
+        "evidence": "In תַאֲוָה הוּא לָעֵינַיִם, the pronoun הוּא refers to the tree. The woman sees that the tree itself is “a delight to the eyes,” so the noun denotes the object of desire.",
+        "gloss": "a delight",
+        "language": "he",
+        "lemma": "תַּאֲוָה",
+        "morphology": "Common noun, feminine singular absolute, without prefix or suffix.",
+        "qualifier": "",
+        "root": "אוה",
+        "sense": "something desirable"
+      },
+      "position": 7,
+      "surface": "תַאֲוָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "hu"
+        },
+        "evidence": "In וְכִי תַאֲוָה הוּא לָעֵינַיִם, “and that it was a delight to the eyes,” הוּא refers back to the masculine singular הָעֵץ, “the tree.” The feminine noun תַאֲוָה, “a delight,” is the predicate.",
+        "gloss": "it",
+        "language": "he",
+        "lemma": "הוּא",
+        "morphology": "Independent personal pronoun, third person masculine singular.",
+        "qualifier": "",
+        "root": "הוא",
+        "sense": "he, it"
+      },
+      "position": 8,
+      "surface": "הוּא"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ayin"
+        },
+        "evidence": "וַתֵּרֶא הָאִשָּׁה describes the woman looking at the tree. In תַאֲוָה הוּא לָעֵינַיִם, the eyes are the organs through which she finds the tree visually appealing. The following לְהַשְׂכִּיל expresses the appeal of gaining insight.",
+        "gloss": "to the eyes",
+        "language": "he",
+        "lemma": "עַיִן",
+        "morphology": "Common-gender noun, dual absolute, with prefixed לְ and the definite article.",
+        "qualifier": "",
+        "root": "עינ",
+        "sense": "eye, the organ of sight"
+      },
+      "position": 9,
+      "surface": "לָעֵינַיִם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chamad"
+        },
+        "evidence": "נֶחְמָד agrees with הָעֵץ, “the tree.” The following לְהַשְׂכִּיל specifies what made the tree desirable to the woman: the prospect of gaining wisdom.",
+        "gloss": "and desirable",
+        "language": "he",
+        "lemma": "חָמַד",
+        "morphology": "Conjunction וְ prefixed to a Niphal participle, masculine singular absolute, used predicatively.",
+        "qualifier": "",
+        "root": "חמד",
+        "sense": "be desirable"
+      },
+      "position": 10,
+      "surface": "וְנֶחְמָד"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ets"
+        },
+        "evidence": "In וְנֶחְמָד הָעֵץ לְהַשְׂכִּיל, the woman sees the tree as desirable for gaining wisdom. מִפִּרְיוֹ (‘from its fruit’) confirms that the noun refers to a fruit-bearing tree.",
+        "gloss": "the tree",
+        "language": "he",
+        "lemma": "עֵץ",
+        "morphology": "Definite article הָ־ prefixed to a masculine singular common noun in the absolute state.",
+        "qualifier": "",
+        "root": "עצה",
+        "sense": "tree"
+      },
+      "position": 11,
+      "surface": "הָעֵץ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "sakal"
+        },
+        "evidence": "In וְנֶחְמָד הָעֵץ לְהַשְׂכִּיל, the infinitive gives the woman's reason for finding the tree desirable. She sees eating its fruit as a way to gain wisdom.",
+        "gloss": "to gain wisdom",
+        "language": "he",
+        "lemma": "שָׂכַל",
+        "morphology": "Hiphil infinitive construct with prefixed לְ of purpose",
+        "qualifier": "",
+        "root": "שׂכל",
+        "sense": "gain insight"
+      },
+      "position": 12,
+      "surface": "לְהַשְׂכִּיל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "laqach"
+        },
+        "evidence": "The subject is הָאִשָּׁה, the woman. The partitive phrase מִפִּרְיוֹ specifies what she took, some of the tree’s fruit, and וַתֹּאכַל tells what she did next, she ate it.",
+        "gloss": "and she took",
+        "language": "he",
+        "lemma": "לָקַח",
+        "morphology": "Qal wayyiqtol, third-person feminine singular, with prefixed וַ־",
+        "qualifier": "",
+        "root": "לקח",
+        "sense": "physically take something"
+      },
+      "position": 13,
+      "surface": "וַתִּקַּח"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "parah"
+        },
+        "evidence": "The woman sees that הָעֵץ, “the tree,” is good for food. וַתִּקַּח מִפִּרְיוֹ וַתֹּאכַל says that she took some of its fruit and ate.",
+        "gloss": "some of its fruit",
+        "language": "he",
+        "lemma": "פְּרִי",
+        "morphology": "Partitive preposition מִן with assimilated נ + masculine singular construct noun + third-person masculine singular possessive suffix ־וֹ referring to הָעֵץ.",
+        "qualifier": "",
+        "root": "פרה",
+        "sense": "fruit (of a tree or plant)"
+      },
+      "position": 14,
+      "surface": "מִפִּרְיוֹ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "akal"
+        },
+        "evidence": "וַתִּקַּח מִפִּרְיוֹ means “she took some of its fruit.” The following feminine singular וַתֹּאכַל keeps הָאִשָּׁה (“the woman”) as its subject, with the fruit understood as what she ate.",
+        "gloss": "and she ate",
+        "language": "he",
+        "lemma": "אָכַל",
+        "morphology": "Qal wayyiqtol, third-person feminine singular, with prefixed וַ־",
+        "qualifier": "",
+        "root": "אכל",
+        "sense": "eat"
+      },
+      "position": 15,
+      "surface": "וַתֹּאכַל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "natan"
+        },
+        "evidence": "The woman gives some of the fruit she took (מִפִּרְיוֹ). לְאִישָׁהּ identifies her husband as the recipient, and וַיֹּאכַל says that he ate it.",
+        "gloss": "and she gave",
+        "language": "he",
+        "lemma": "נָתַן",
+        "morphology": "Qal wayyiqtol, third-person feminine singular, with prefixed וַ־",
+        "qualifier": "",
+        "root": "נתנ",
+        "sense": "give something to someone for their use"
+      },
+      "position": 16,
+      "surface": "וַתִּתֵּן"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "gam"
+        },
+        "evidence": "After the woman takes the fruit and eats, גַּם introduces לְאִישָׁהּ in וַתִּתֵּן גַּם לְאִישָׁהּ, “she gave some to her husband too.” The closing וַיֹּאכַל, “and he ate,” confirms that he too shared in the fruit.",
+        "gloss": "also",
+        "language": "he",
+        "lemma": "גַּם",
+        "morphology": "Uninflected additive particle without prefix or suffix.",
+        "qualifier": "",
+        "root": "גממ",
+        "sense": "also, too, as well"
+      },
+      "position": 17,
+      "surface": "גַּם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ish"
+        },
+        "evidence": "The woman (הָאִשָּׁה) is the subject of וַתִּתֵּן ‘she gave’. The suffix in לְאִישָׁהּ refers to her and identifies the recipient as her husband. עִמָּהּ ‘with her’ describes his presence.",
+        "gloss": "to her husband",
+        "language": "he",
+        "lemma": "אִישׁ",
+        "morphology": "Preposition לְ ‘to’ + masculine singular construct noun אִישׁ + third-person feminine singular possessive suffix ־ָהּ ‘her’.",
+        "qualifier": "",
+        "root": "איש",
+        "sense": "husband"
+      },
+      "position": 18,
+      "surface": "לְאִישָׁהּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "akal"
+        },
+        "evidence": "The woman takes fruit and gives some to her husband (לְאִישָׁהּ). The masculine singular וַיֹּאכַל identifies him as the one who eats the fruit.",
+        "gloss": "and he ate",
+        "language": "he",
+        "lemma": "אָכַל",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ־.",
+        "qualifier": "",
+        "root": "אכל",
+        "sense": "eat"
+      },
+      "position": 20,
+      "surface": "וַיֹּאכַל"
+    }
+  ]
+}

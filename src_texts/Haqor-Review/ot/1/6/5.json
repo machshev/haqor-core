@@ -1,0 +1,341 @@
+{
+  "book": 1,
+  "chapter": 6,
+  "review": {
+    "entities": [
+      {
+        "evidence": "יַהְוֶה names the God who saw mankind’s wickedness. The source tag LORD@Gen.1.1 identifies the same divine bearer as the previous Yahweh proposal.",
+        "key": "Yahweh@Gen.2.22",
+        "new": {
+          "description": "The God of Israel, who built the rib taken from the man into a woman and brought her to the man.",
+          "kind": "person",
+          "name": "Yahweh"
+        },
+        "position": 1
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "and he saw",
+        "position": 0
+      },
+      {
+        "gloss": "Yahweh",
+        "position": 1
+      },
+      {
+        "gloss": "that",
+        "position": 2
+      },
+      {
+        "gloss": "great",
+        "position": 3
+      },
+      {
+        "gloss": "the wickedness of",
+        "position": 4
+      },
+      {
+        "gloss": "mankind",
+        "position": 5
+      },
+      {
+        "gloss": "on the earth",
+        "position": 6
+      },
+      {
+        "gloss": "and every",
+        "position": 7
+      },
+      {
+        "gloss": "inclination of",
+        "position": 8
+      },
+      {
+        "gloss": "the thoughts of",
+        "position": 9
+      },
+      {
+        "gloss": "his heart",
+        "position": 10
+      },
+      {
+        "gloss": "only",
+        "position": 11
+      },
+      {
+        "gloss": "evil",
+        "position": 12
+      },
+      {
+        "gloss": "all",
+        "position": 13
+      },
+      {
+        "gloss": "the day",
+        "position": 14
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[And|0] [Yahweh|1] [saw|0] [that|2] [the wickedness of|4] [mankind|5] {was} [great|3] [on the earth|6], [and|7] {that} [every|7] [inclination of|8] [the thoughts of|9] [their hearts|10] {was} [only|11] [evil|12] [all|13] [day long|14]."
+  },
+  "source": "ot",
+  "verse": 5,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "raah"
+        },
+        "evidence": "יַהְוֶה is the subject of וַיַּרְא. The כִּי clause states what he saw: human wickedness was great on the earth.",
+        "gloss": "and he saw",
+        "language": "he",
+        "lemma": "רָאָה",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ־",
+        "qualifier": "",
+        "root": "ראה",
+        "sense": "see or perceive that something is so"
+      },
+      "position": 0,
+      "surface": "וַיַּרְא"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yahweh"
+        },
+        "evidence": "In וַיַּרְא יַהְוֶה, “Yahweh saw,” the name identifies the subject of וַיַּרְא. The following כִּי clause states what he saw.",
+        "gloss": "Yahweh",
+        "language": "he",
+        "lemma": "יַהְוֶה",
+        "morphology": "Masculine singular proper noun with no prefix or suffix.",
+        "qualifier": "",
+        "root": "הוה",
+        "sense": "Personal name of the God of Israel"
+      },
+      "position": 1,
+      "surface": "יַהְוֶה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ki"
+        },
+        "evidence": "After וַיַּרְא יַהְוֶה (“YHWH saw”), כִּי introduces what YHWH saw: human wickedness was great on the earth.",
+        "gloss": "that",
+        "language": "he",
+        "lemma": "כִּי",
+        "morphology": "Uninflected subordinating conjunction without prefix or suffix.",
+        "qualifier": "conjunction",
+        "root": "כי",
+        "sense": "that (what is seen, known or said)"
+      },
+      "position": 2,
+      "surface": "כִּי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ravav"
+        },
+        "evidence": "In כִּי רַבָּה רָעַת הָאָדָם בָּאָרֶץ, רַבָּה agrees with the feminine singular רָעַת and precedes it as the predicate. The clause says that human wickedness was great on the earth. The description of every inclination as רַק רַע כָּל הַיּוֹם underscores its extent.",
+        "gloss": "was great",
+        "language": "he",
+        "lemma": "רַב",
+        "morphology": "Feminine singular absolute adjective used predicatively, with no prefix or pronominal suffix.",
+        "qualifier": "adjective",
+        "root": "רבב",
+        "sense": "great in degree or extent"
+      },
+      "position": 3,
+      "surface": "רַבָּה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ra"
+        },
+        "evidence": "רָעַת is the construct form of רָעָה. In רַבָּה רָעַת הָאָדָם, “human wickedness was great,” הָאָדָם identifies whose wickedness is in view. The description of human intentions as רַק רַע, “only evil,” confirms the moral sense.",
+        "gloss": "wickedness",
+        "language": "he",
+        "lemma": "רָעָה",
+        "morphology": "Common noun, feminine singular construct.",
+        "qualifier": "",
+        "root": "רעע",
+        "sense": "wickedness, evil (done)"
+      },
+      "position": 4,
+      "surface": "רָעַת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "adam"
+        },
+        "evidence": "In רָעַת הָאָדָם, “the wickedness of humankind,” הָאָדָם completes the construct phrase. The verse describes human wickedness throughout the earth, and the singular suffix in לִבּוֹ, “his heart,” agrees with the collective noun.",
+        "gloss": "humankind",
+        "language": "he",
+        "lemma": "אָדָם",
+        "morphology": "Definite article הָ־ prefixed to a masculine singular absolute noun used collectively.",
+        "qualifier": "noun",
+        "root": "אדמ",
+        "sense": "man, mankind"
+      },
+      "position": 5,
+      "surface": "הָאָדָם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "erets"
+        },
+        "evidence": "בָּאָרֶץ locates the wickedness of humankind (רָעַת הָאָדָם) on the earth. The collective הָאָדָם gives the statement a scope extending across the inhabited world.",
+        "gloss": "on the earth",
+        "language": "he",
+        "lemma": "אֶרֶץ",
+        "morphology": "Preposition בְּ with the definite article, followed by a singular absolute noun in its pausal form אָרֶץ.",
+        "qualifier": "",
+        "root": "ארצ",
+        "sense": "earth"
+      },
+      "position": 6,
+      "surface": "בָּאָרֶץ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "kalal"
+        },
+        "evidence": "וְכָל modifies the singular יֵצֶר in יֵצֶר מַחְשְׁבֹת לִבּוֹ, so רַק רַע (‘only evil’) applies to every inclination of his heart’s thoughts.",
+        "gloss": "and every",
+        "language": "he",
+        "lemma": "כֹּל",
+        "morphology": "Conjunction וְ prefixed to a masculine singular construct noun.",
+        "qualifier": "",
+        "root": "כלל",
+        "sense": "every, each; any"
+      },
+      "position": 7,
+      "surface": "וְכָל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yatsar"
+        },
+        "evidence": "In כָל יֵצֶר מַחְשְׁבֹת לִבּוֹ, מַחְשְׁבֹת לִבּוֹ specifies whose thoughts are in view and what has an inclination: “every inclination of the thoughts of his heart.” The judgment רַק רַע, “only evil,” describes the moral bent of those thoughts.",
+        "gloss": "inclination",
+        "language": "he",
+        "lemma": "יֵצֶר",
+        "morphology": "Masculine singular noun in the construct state, without prefix or suffix.",
+        "qualifier": "noun",
+        "root": "יצר",
+        "sense": "inclination or design"
+      },
+      "position": 8,
+      "surface": "יֵצֶר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chashav"
+        },
+        "evidence": "מַחְשְׁבֹת לִבּוֹ means “the thoughts of his heart.” The construct plural links the thoughts to לִבּוֹ, while רַק רַע describes every inclination (יֵצֶר) of those thoughts as “only evil.”",
+        "gloss": "thoughts",
+        "language": "he",
+        "lemma": "מַחֲשָׁבָה",
+        "morphology": "Common noun, feminine plural construct, without prefix or suffix.",
+        "qualifier": "",
+        "root": "חשב",
+        "sense": "thought(s) of the heart"
+      },
+      "position": 9,
+      "surface": "מַחְשְׁבֹת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "lev"
+        },
+        "evidence": "מַחְשְׁבֹת לִבּוֹ means “the thoughts of his heart.” The suffix refers to הָאָדָם, and מַחְשְׁבֹת identifies the heart as the seat of human thought.",
+        "gloss": "his heart",
+        "language": "he",
+        "lemma": "לֵב",
+        "morphology": "Masculine singular noun in the construct state with a third-person masculine singular possessive suffix ־וֹ.",
+        "qualifier": "",
+        "root": "לבב",
+        "sense": "thought: what one says and plans within"
+      },
+      "position": 10,
+      "surface": "לִבּוֹ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "raq"
+        },
+        "evidence": "רַק immediately precedes the predicate רַע, so רַק רַע means “only evil.” Every inclination of the thoughts of the heart is described as exclusively evil, and כָּל הַיּוֹם gives the duration, “all day.”",
+        "gloss": "only",
+        "language": "he",
+        "lemma": "רַק",
+        "morphology": "Restrictive particle, uninflected, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "רקק",
+        "sense": "only"
+      },
+      "position": 11,
+      "surface": "רַק"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ra"
+        },
+        "evidence": "רַע predicates evil of כָּל יֵצֶר מַחְשְׁבֹת לִבּוֹ, “every inclination of the thoughts of his heart,” and agrees with the masculine singular יֵצֶר. רַק gives the force “only evil,” and the preceding רָעַת הָאָדָם, “human wickedness,” establishes the moral sense.",
+        "gloss": "evil",
+        "language": "he",
+        "lemma": "רַע",
+        "morphology": "Masculine singular absolute adjective used predicatively.",
+        "qualifier": "adjective",
+        "root": "רעע",
+        "sense": "evil, wicked (of persons, hearts, ways, deeds)"
+      },
+      "position": 12,
+      "surface": "רַע"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "kalal"
+        },
+        "evidence": "כָּל modifies the definite singular הַיּוֹם. Together they mean “all day” and describe how long רַק רַע (“only evil”) holds true.",
+        "gloss": "all",
+        "language": "he",
+        "lemma": "כֹּל",
+        "morphology": "Masculine singular noun in the construct state.",
+        "qualifier": "",
+        "root": "כלל",
+        "sense": "all, the whole"
+      },
+      "position": 13,
+      "surface": "כָּל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yom"
+        },
+        "evidence": "כָּל quantifies הַיּוֹם as a whole span of time. The phrase כָּל הַיּוֹם means “all day long” and describes how persistently every inclination of the heart was רַק רַע, “only evil.”",
+        "gloss": "the day",
+        "language": "he",
+        "lemma": "יוֹם",
+        "morphology": "Masculine singular absolute noun with the prefixed definite article הַ־.",
+        "qualifier": "",
+        "root": "יומ",
+        "sense": "a day, counted"
+      },
+      "position": 14,
+      "surface": "הַיּוֹם"
+    }
+  ]
+}

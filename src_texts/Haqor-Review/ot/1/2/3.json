@@ -1,0 +1,269 @@
+{
+  "book": 1,
+  "chapter": 2,
+  "source": "ot",
+  "verse": 3,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "barak"
+        },
+        "evidence": "אֱלֹהִים is the subject, and אֶת־יוֹם הַשְּׁבִיעִי marks the seventh day as the object. The following וַיְקַדֵּשׁ אֹתוֹ adds that God made the same day holy because he rested on it.",
+        "gloss": "and he blessed",
+        "language": "he",
+        "lemma": "בָּרַךְ",
+        "morphology": "Piel wayyiqtol, third person masculine singular, with prefixed וַ־",
+        "qualifier": "",
+        "root": "ברכ",
+        "sense": "to confer a blessing on a day"
+      },
+      "position": 0,
+      "surface": "וַיְבָרֶךְ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "אֱלֹהִים is the subject of the masculine singular verb וַיְבָרֶךְ, “he blessed.” The object marker אֶת introduces יוֹם הַשְּׁבִיעִי, “the seventh day,” which God blessed.",
+        "gloss": "God",
+        "language": "he",
+        "lemma": "אֱלֹהִים",
+        "morphology": "Common noun, masculine plural absolute, with singular verbal agreement.",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "the Mighty One, God"
+      },
+      "position": 1,
+      "surface": "אֱלֹהִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "et"
+        },
+        "evidence": "אֶת introduces יוֹם הַשְּׁבִיעִי, “the seventh day,” as the direct object of וַיְבָרֶךְ, “he blessed.” The following וַיְקַדֵּשׁ אֹתוֹ, “and he sanctified it,” refers back to the same day.",
+        "gloss": "(untranslated)",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Uninflected direct-object particle without prefix or suffix.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "(marks the definite object)"
+      },
+      "position": 2,
+      "surface": "אֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yom"
+        },
+        "evidence": "The ordinal הַשְּׁבִיעִי identifies this as the seventh day in the creation sequence. God blesses that day and sanctifies it because on it (בּוֹ) he rested.",
+        "gloss": "day",
+        "language": "he",
+        "lemma": "יוֹם",
+        "morphology": "Common noun, masculine singular construct, without prefix or suffix.",
+        "qualifier": "",
+        "root": "יומ",
+        "sense": "a day, counted"
+      },
+      "position": 3,
+      "surface": "יוֹם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shaba"
+        },
+        "evidence": "In יוֹם הַשְּׁבִיעִי, the ordinal modifies יוֹם and identifies the day God blessed and sanctified as the seventh.",
+        "gloss": "seventh",
+        "language": "he",
+        "lemma": "שְׁבִיעִי",
+        "morphology": "Definite article הַ־ prefixed to a masculine singular absolute ordinal adjective.",
+        "qualifier": "",
+        "root": "שבע",
+        "sense": "the seventh day"
+      },
+      "position": 4,
+      "surface": "הַשְּׁבִיעִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "qadash"
+        },
+        "evidence": "God is the subject of both וַיְבָרֶךְ and וַיְקַדֵּשׁ. The direct object אֹתוֹ refers to the seventh day. God made that day holy because he rested on it from all his work.",
+        "gloss": "and he made holy",
+        "language": "he",
+        "lemma": "קָדַשׁ",
+        "morphology": "Piel wayyiqtol, third person masculine singular, with prefixed וַ and no suffix.",
+        "qualifier": "",
+        "root": "קדש",
+        "sense": "to set apart as holy, consecrate"
+      },
+      "position": 5,
+      "surface": "וַיְקַדֵּשׁ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "et",
+            "base": "31c9a635be8bba9a67417e75ea7122e240ae707e04a841533a59ecd2869d0f80",
+            "change": "Add Gen.2.3 to the existing object-pronoun sense as an example with an explicit masculine singular antecedent.",
+            "definition": "With a pronominal suffix, אֵת expresses the direct object of a verb.",
+            "evidence": "In Gen.2.3, אֹתוֹ refers back to the seventh day as the object of וַיְקַדֵּשׁ, “he made it holy.”"
+          }
+        },
+        "evidence": "God blesses יוֹם הַשְּׁבִיעִי, “the seventh day,” and then וַיְקַדֵּשׁ אֹתוֹ, “he made it holy.” The suffix agrees with masculine singular יוֹם and identifies the same day as the object of the second verb.",
+        "gloss": "it",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Direct-object particle in its suffixed form אֹת־ with the third-person masculine singular pronominal suffix ־וֹ.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "Pronominal direct object"
+      },
+      "position": 6,
+      "surface": "אֹתוֹ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ki"
+        },
+        "evidence": "כִּי introduces the reason God blessed the seventh day and made it holy: בוֹ שָׁבַת, “on it he rested,” from all his work.",
+        "gloss": "because",
+        "language": "he",
+        "lemma": "כִּי",
+        "morphology": "Uninflected conjunction without prefix or suffix",
+        "qualifier": "conjunction",
+        "root": "כי",
+        "sense": "for, because"
+      },
+      "position": 7,
+      "surface": "כִּי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shabat"
+        },
+        "evidence": "God is the subject of שָׁבַת. בּוֹ refers to the seventh day, and מִכָּל מְלַאכְתּוֹ specifies what he ceased from, namely all his work.",
+        "gloss": "he ceased",
+        "language": "he",
+        "lemma": "שָׁבַת",
+        "morphology": "Qal perfect, third person masculine singular, with no prefix or suffix",
+        "qualifier": "",
+        "root": "שבת",
+        "sense": "to cease from work"
+      },
+      "position": 9,
+      "surface": "שָׁבַת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "kalal"
+        },
+        "evidence": "In שָׁבַת מִכָּל מְלַאכְתּוֹ ‘he ceased from all his work’, כָּל takes the singular מְלַאכְתּוֹ ‘his work’ as its complement and refers to the work in its entirety.",
+        "gloss": "from all",
+        "language": "he",
+        "lemma": "כֹּל",
+        "morphology": "Masculine singular construct noun with prefixed מִן ‘from’. The נ assimilates to the following כ, marked by dagesh.",
+        "qualifier": "",
+        "root": "כלל",
+        "sense": "all, the whole"
+      },
+      "position": 10,
+      "surface": "מִכָּל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "laak"
+        },
+        "evidence": "שָׁבַת מִכָּל מְלַאכְתּוֹ means “he ceased from all his work.” The suffix refers to אֱלֹהִים, and אֲשֶׁר בָּרָא אֱלֹהִים identifies the work as God’s work of creation.",
+        "gloss": "his work",
+        "language": "he",
+        "lemma": "מְלָאכָה",
+        "morphology": "Feminine singular construct noun with the third-person masculine singular possessive suffix ־וֹ.",
+        "qualifier": "",
+        "root": "לאכ",
+        "sense": "God’s work"
+      },
+      "position": 11,
+      "surface": "מְלַאכְתּוֹ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ashar"
+        },
+        "evidence": "אֲשֶׁר introduces a relative clause modifying מְלַאכְתּוֹ (“his work”). The work is what God created, as in “all his work which God created.”",
+        "gloss": "which",
+        "language": "he",
+        "lemma": "אֲשֶׁר",
+        "morphology": "Indeclinable relative particle without prefix or suffix.",
+        "qualifier": "",
+        "root": "אשר",
+        "sense": "who, which, that"
+      },
+      "position": 12,
+      "surface": "אֲשֶׁר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "bara"
+        },
+        "evidence": "In אֲשֶׁר בָּרָא אֱלֹהִים, “which God created,” אֱלֹהִים is the subject of the singular verb, and אֲשֶׁר refers back to מְלַאכְתּוֹ, “his work,” as its object.",
+        "gloss": "created",
+        "language": "he",
+        "lemma": "בָּרָא",
+        "morphology": "Qal perfect, third person masculine singular, without prefix or suffix",
+        "qualifier": "",
+        "root": "ברא",
+        "sense": "create"
+      },
+      "position": 13,
+      "surface": "בָּרָא"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "In אֲשֶׁר בָּרָא אֱלֹהִים, the marked noun is the subject of בָּרָא (“created”), a third-person masculine singular verb. It refers to the same God who blessed the seventh day earlier in the verse.",
+        "gloss": "God",
+        "language": "he",
+        "lemma": "אֱלֹהִים",
+        "morphology": "Common noun, masculine plural absolute, with singular reference.",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "the Mighty One, God"
+      },
+      "position": 14,
+      "surface": "אֱלֹהִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "asah"
+        },
+        "evidence": "לַעֲשׂוֹת follows בָּרָא אֱלֹהִים (“God created”) in the clause describing מְלַאכְתּוֹ (“his work”). The pairing with בָּרָא supports the sense “make” in this account of creation.",
+        "gloss": "to make",
+        "language": "he",
+        "lemma": "עָשָׂה",
+        "morphology": "Qal infinitive construct with prefixed preposition לַ־",
+        "qualifier": "",
+        "root": "עשׂה",
+        "sense": "make, bring into being"
+      },
+      "position": 15,
+      "surface": "לַעֲשׂוֹת"
+    }
+  ]
+}

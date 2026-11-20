@@ -1,0 +1,404 @@
+{
+  "book": 1,
+  "chapter": 4,
+  "review": {
+    "entities": [
+      {
+        "evidence": "Irad is born to this Enoch, whom the preceding verse identifies as Cain’s son.",
+        "key": "Enoch@Gen.4.17",
+        "position": 1
+      },
+      {
+        "evidence": "The opening clause names Irad as the child born to Enoch.",
+        "key": "Irad@Gen.4.18",
+        "position": 3
+      },
+      {
+        "evidence": "Enoch’s son Irad is named again as the father of Mehujael.",
+        "key": "Irad@Gen.4.18",
+        "position": 4
+      },
+      {
+        "evidence": "Irad fathers the child named Mehujael.",
+        "key": "Mehujael@Gen.4.18",
+        "position": 7
+      },
+      {
+        "evidence": "The variant spelling names Irad’s son again as the father of Methushael.",
+        "key": "Mehujael@Gen.4.18",
+        "position": 8
+      },
+      {
+        "evidence": "Mehujael fathers the child named Methushael.",
+        "key": "Methushael@Gen.4.18",
+        "position": 11
+      },
+      {
+        "evidence": "Mehujael’s son Methushael is named again as the father of Lamech.",
+        "key": "Methushael@Gen.4.18",
+        "position": 12
+      },
+      {
+        "evidence": "The final clause identifies Lamech as Methushael’s son in Cain’s line.",
+        "key": "Lamech@Gen.4.18",
+        "position": 15
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "then was born",
+        "position": 0
+      },
+      {
+        "gloss": "to Enoch",
+        "position": 1
+      },
+      {
+        "gloss": "(untranslated)",
+        "position": 2
+      },
+      {
+        "gloss": "Irad",
+        "position": 3
+      },
+      {
+        "gloss": "and Irad",
+        "position": 4
+      },
+      {
+        "gloss": "fathered",
+        "position": 5
+      },
+      {
+        "gloss": "(untranslated)",
+        "position": 6
+      },
+      {
+        "gloss": "Mehujael",
+        "position": 7
+      },
+      {
+        "gloss": "and Mehujael",
+        "position": 8
+      },
+      {
+        "gloss": "fathered",
+        "position": 9
+      },
+      {
+        "gloss": "(untranslated)",
+        "position": 10
+      },
+      {
+        "gloss": "Methushael",
+        "position": 11
+      },
+      {
+        "gloss": "and Methushael",
+        "position": 12
+      },
+      {
+        "gloss": "fathered",
+        "position": 13
+      },
+      {
+        "gloss": "(untranslated)",
+        "position": 14
+      },
+      {
+        "gloss": "Lamech",
+        "position": 15
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[Then|0] [Irad|3,2] [was born|0] [to Enoch|1], [and Irad|4] [fathered|5] [Mehujael|7,6], [and Mehujael|8] [fathered|9] [Methushael|11,10], [and Methushael|12] [fathered|13] [Lamech|15,14]."
+  },
+  "source": "ot",
+  "verse": 18,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yalad"
+        },
+        "evidence": "The Niphal וַיִּוָּלֵד expresses birth passively. לַחֲנוֹךְ means ‘to Enoch’, and עִירָד names the child. The clause means ‘And Irad was born to Enoch.’",
+        "gloss": "and was born",
+        "language": "he",
+        "lemma": "יָלַד",
+        "morphology": "Niphal wayyiqtol, third person masculine singular, with prefixed וַ",
+        "qualifier": "",
+        "root": "ילד",
+        "sense": "be born"
+      },
+      "position": 0,
+      "surface": "וַיִּוָּלֵד"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "enoch"
+        },
+        "evidence": "וַיִּוָּלֵד לַחֲנוֹךְ אֶת עִירָד says that Irad was born to Enoch. The genealogy continues from the preceding verse, which names Enoch as Cain’s son.",
+        "gloss": "to Enoch",
+        "language": "he",
+        "lemma": "חֲנוֹךְ",
+        "morphology": "Prefixed preposition לַ־ on a masculine singular proper name.",
+        "qualifier": "",
+        "root": "חנכ",
+        "sense": "Enoch, son of Cain"
+      },
+      "position": 1,
+      "surface": "לַחֲנוֹךְ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "et"
+        },
+        "evidence": "וַיִּוָּלֵד means “was born,” and לַחֲנוֹךְ means “to Enoch.” The marked אֶת introduces עִירָד, the child who was born and thus the subject of the passive verb.",
+        "gloss": "untranslated",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Uninflected particle, without prefix or suffix",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "the very…, as for… (marking a subject)"
+      },
+      "position": 2,
+      "surface": "אֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "irad"
+        },
+        "evidence": "וַיִּוָּלֵד לַחֲנוֹךְ אֶת עִירָד names Irad as the child born to Enoch. The next clause repeats his name as the father of Mehujael.",
+        "gloss": "Irad",
+        "language": "he",
+        "lemma": "עִירָד",
+        "morphology": "Masculine singular proper noun, without prefix or suffix",
+        "qualifier": "",
+        "root": "עיר",
+        "sense": "Irad, son of Enoch"
+      },
+      "position": 3,
+      "surface": "עִירָד"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "irad"
+        },
+        "evidence": "The preceding clause introduces Irad as the child born to Enoch. In וְעִירָד יָלַד אֶת מְחוּיָאֵל, the repeated name is the subject of יָלַד, and אֶת marks Mehujael as his offspring.",
+        "gloss": "and Irad",
+        "language": "he",
+        "lemma": "עִירָד",
+        "morphology": "Conjunction וְ prefixed to a masculine singular personal name.",
+        "qualifier": "",
+        "root": "עיר",
+        "sense": "Irad, the son of Enoch and father of Mehujael"
+      },
+      "position": 4,
+      "surface": "וְעִירָד"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yalad"
+        },
+        "evidence": "In וְעִירָד יָלַד אֶת מְחוּיָאֵל, Irad is the subject and אֶת marks Mehujael as the direct object. The clause names Mehujael as Irad’s son in the genealogy.",
+        "gloss": "fathered",
+        "language": "he",
+        "lemma": "יָלַד",
+        "morphology": "Qal perfect, third person masculine singular, with no prefix or suffix",
+        "qualifier": "",
+        "root": "ילד",
+        "sense": "beget, father a child"
+      },
+      "position": 5,
+      "surface": "יָלַד"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "et"
+        },
+        "evidence": "In וְעִירָד יָלַד אֶת מְחוּיָאֵל, “and Irad fathered Mehujael,” אֶת marks the proper name מְחוּיָאֵל as the direct object of יָלַד.",
+        "gloss": "(untranslated)",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Uninflected direct-object particle, without prefix or suffix.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "(marks the definite object)"
+      },
+      "position": 6,
+      "surface": "אֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "mehujael"
+        },
+        "evidence": "וְעִירָד יָלַד אֶת מְחוּיָאֵל names Mehujael as the son Irad fathered. The next clause repeats his name with a variant spelling, וּמְחִיּיָאֵל, and names Methushael as his son.",
+        "gloss": "Mehujael",
+        "language": "he",
+        "lemma": "מְחוּיָאֵל",
+        "morphology": "Masculine singular proper noun without prefix or suffix, serving as the direct object of יָלַד.",
+        "qualifier": "",
+        "root": "מחה",
+        "sense": "Personal name of Irad’s son, the father of Methushael."
+      },
+      "position": 7,
+      "surface": "מְחוּיָאֵל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "mehujael"
+        },
+        "evidence": "Irad fathers מְחוּיָאֵל. The marked form וּמְחִיּיָאֵל names that son as the father of Methushael. The same child-to-father sequence repeats with Methushael, confirming that the two spellings of Mehujael refer to one person.",
+        "gloss": "and Mehujael",
+        "language": "he",
+        "lemma": "מְחוּיָאֵל",
+        "morphology": "Conjunction וּ־ prefixed to a masculine singular personal name, the subject of יָלַד.",
+        "qualifier": "",
+        "root": "מחה",
+        "sense": "Mehujael, son of Irad and father of Methushael"
+      },
+      "position": 8,
+      "surface": "וּמְחִיּיָאֵל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yalad"
+        },
+        "evidence": "Mehujael is the subject of יָלַד, and אֶת marks Methushael as its direct object. The clause identifies Mehujael as Methushael’s father.",
+        "gloss": "fathered",
+        "language": "he",
+        "lemma": "יָלַד",
+        "morphology": "Qal perfect, third person masculine singular",
+        "qualifier": "",
+        "root": "ילד",
+        "sense": "beget, father a child"
+      },
+      "position": 9,
+      "surface": "יָלַד"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "et"
+        },
+        "evidence": "In וּמְחִיּיָאֵל יָלַד אֶת מְתוּשָׁאֵל, Mehujael is the subject of יָלַד ‘begot’. The marked אֶת introduces Methushael, the son he begot, as the definite direct object.",
+        "gloss": "(untranslated)",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Direct-object particle, without prefix or suffix.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "(marks the definite object)"
+      },
+      "position": 10,
+      "surface": "אֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "methushael"
+        },
+        "evidence": "At position 11, אֶת marks מְתוּשָׁאֵל as the direct object of יָלַד and identifies him as Mehujael’s son. The next clause repeats his name as the subject of יָלַד אֶת־לָמֶךְ, identifying him as Lamech’s father. The genealogy supports the personal name. The root follows the Haqor entry.",
+        "gloss": "Methushael",
+        "language": "he",
+        "lemma": "מְתוּשָׁאֵל",
+        "morphology": "Masculine singular proper noun without prefix or suffix.",
+        "qualifier": "",
+        "root": "מת",
+        "sense": "Personal name of Mehujael’s son and Lamech’s father."
+      },
+      "position": 11,
+      "surface": "מְתוּשָׁאֵל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "methushael",
+            "base": "730cb2b11d0bfaab8b1b4281cf4a67a892a7c1a9d13e1371795c33459cff3394",
+            "change": "Add a note to the existing verse citation explaining how the two clauses identify Methushael.",
+            "definition": "The personal name of Mehujael’s son, who fathered Lamech.",
+            "evidence": "Genesis 4:18 identifies the bearer by repeating his name in two successive generations of the genealogy."
+          }
+        },
+        "evidence": "The preceding clause names Methushael after the object marker אֶת as Mehujael’s son. The marked occurrence repeats his name as the subject of וּמְתוּשָׁאֵל יָלַד אֶת לָמֶךְ, “and Methushael fathered Lamech.”",
+        "gloss": "Methushael",
+        "language": "he",
+        "lemma": "מְתוּשָׁאֵל",
+        "morphology": "Conjunction וּ־ (“and”) prefixed to a masculine singular proper name. The name is the subject of יָלַד.",
+        "qualifier": "",
+        "root": "מת",
+        "sense": "Methushael, son of Mehujael and father of Lamech."
+      },
+      "position": 12,
+      "surface": "וּמְתוּשָׁאֵל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yalad"
+        },
+        "evidence": "Methushael is the subject of יָלַד, and אֶת marks Lamech as its direct object. The clause continues the verse’s genealogy by naming Methushael as Lamech’s father.",
+        "gloss": "fathered",
+        "language": "he",
+        "lemma": "יָלַד",
+        "morphology": "Qal perfect, third person masculine singular, with no prefix or suffix",
+        "qualifier": "",
+        "root": "ילד",
+        "sense": "beget, father a child"
+      },
+      "position": 13,
+      "surface": "יָלַד"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "et"
+        },
+        "evidence": "In וּמְתוּשָׁאֵל יָלַד אֶת לָמֶךְ, Methushael is the subject of יָלַד ‘fathered’, and אֶת marks the personal name לָמֶךְ ‘Lamech’ as its direct object.",
+        "gloss": "untranslated",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Direct-object particle in the unsuffixed form אֶת, with no prefix.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "(marks the definite object)"
+      },
+      "position": 14,
+      "surface": "אֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "lamech",
+            "base": null,
+            "change": "Add a personal-name article for לֶמֶךְ with its derivation left open.",
+            "definition": "A masculine personal name borne here by Methushael’s son.",
+            "evidence": "Genesis 4:18 names Lamech as the child in the final father-son pair."
+          }
+        },
+        "evidence": "The verse repeats יָלַד אֶת before the name of each son. In the final clause, וּמְתוּשָׁאֵל יָלַד אֶת לָמֶךְ, Methushael is the father and Lamech is his son. The verse gives no derivation for the name.",
+        "gloss": "Lamech",
+        "language": "he",
+        "lemma": "לֶמֶךְ",
+        "morphology": "Masculine singular proper noun in the verse-final pausal form לָמֶךְ, without prefix or suffix.",
+        "qualifier": "",
+        "root": "",
+        "sense": "Lamech, son of Methushael"
+      },
+      "position": 15,
+      "surface": "לָמֶךְ"
+    }
+  ]
+}

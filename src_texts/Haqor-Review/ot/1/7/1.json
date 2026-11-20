@@ -1,0 +1,287 @@
+{
+  "book": 1,
+  "chapter": 7,
+  "source": "ot",
+  "verse": 1,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "amar"
+        },
+        "evidence": "יַהְוֶה is the speaker, לְנֹחַ identifies Noah as the addressee, and the imperative בֹּא (“enter”) begins the direct speech. The later verb רָאִיתִי means “I have seen.”",
+        "gloss": "and he said",
+        "language": "he",
+        "lemma": "אָמַר",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ־",
+        "qualifier": "",
+        "root": "אמר",
+        "sense": "say, introducing direct speech"
+      },
+      "position": 0,
+      "surface": "וַיֹּאמֶר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yahweh"
+        },
+        "evidence": "In וַיֹּאמֶר יַהְוֶה לְנֹחַ, “Yahweh said to Noah,” יַהְוֶה names the speaker who commands Noah to enter the ark.",
+        "gloss": "Yahweh",
+        "language": "he",
+        "lemma": "יַהְוֶה",
+        "morphology": "Proper noun, masculine singular, without prefix or suffix.",
+        "qualifier": "",
+        "root": "הוה",
+        "sense": "Personal name of the God of Israel"
+      },
+      "position": 1,
+      "surface": "יַהְוֶה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "noah-son-of-lamech",
+            "base": null,
+            "change": "Add a personal-name article for נֹחַ linked to the root article nuach.",
+            "definition": "Noah, the son whom Lamech names in hope of relief from toil.",
+            "evidence": "Genesis 5:29 gives the name נֹחַ and explains it through the wordplay on יְנַחֲמֵנוּ, “he will comfort us.”"
+          }
+        },
+        "evidence": "In וַיֹּאמֶר יַהְוֶה לְנֹחַ, לְ marks Noah as the person Yahweh addresses. The command בֹּא אַתָּה וְכָל־בֵּיתְךָ tells him to enter the ark with his household.",
+        "gloss": "to Noah",
+        "language": "he",
+        "lemma": "נֹחַ",
+        "morphology": "Preposition לְ prefixed to a masculine singular personal name.",
+        "qualifier": "",
+        "root": "נוח",
+        "sense": "Noah, son of Lamech"
+      },
+      "position": 2,
+      "surface": "לְנֹחַ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "bo"
+        },
+        "evidence": "YHWH addresses Noah directly. The singular imperative בֹּא addresses אַתָּה (“you”), וְכָל בֵּיתְךָ includes his whole household in the command, and אֶל הַתֵּבָה identifies the ark as the place they are to enter.",
+        "gloss": "enter",
+        "language": "he",
+        "lemma": "בּוֹא",
+        "morphology": "Qal imperative, second person masculine singular",
+        "qualifier": "",
+        "root": "בוא",
+        "sense": "enter, go into"
+      },
+      "position": 3,
+      "surface": "בֹּא"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "atah"
+        },
+        "evidence": "The singular imperative בֹּא addresses Noah. The explicit אַתָּה singles him out, and וְכָל בֵּיתְךָ adds his whole household to the command to enter the ark.",
+        "gloss": "you",
+        "language": "he",
+        "lemma": "אַתָּה",
+        "morphology": "Independent second-person masculine singular pronoun, without prefix or suffix.",
+        "qualifier": "",
+        "root": "אנת",
+        "sense": "you, as for you (the one addressed set apart)"
+      },
+      "position": 4,
+      "surface": "אַתָּה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "kalal"
+        },
+        "evidence": "In אַתָּה וְכָל בֵּיתְךָ, “you and your whole household,” כָל stands in construct with בֵּיתְךָ and includes the entire household in the command to enter the ark.",
+        "gloss": "and all of",
+        "language": "he",
+        "lemma": "כֹּל",
+        "morphology": "Conjunction וְ plus masculine singular construct noun כָל.",
+        "qualifier": "",
+        "root": "כלל",
+        "sense": "all, the whole"
+      },
+      "position": 5,
+      "surface": "וְכָל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "In בֹּא אַתָּה וְכָל בֵּיתְךָ אֶל הַתֵּבָה, אֶל introduces הַתֵּבָה as the place Noah and his household are commanded to enter.",
+        "gloss": "into",
+        "language": "he",
+        "lemma": "אֶל",
+        "morphology": "Preposition without prefix or suffix.",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "into"
+      },
+      "position": 7,
+      "surface": "אֶל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "tevah",
+            "base": null,
+            "change": "Add the feminine noun תֵּבָה under its own consonants, תבה. The supplied gentilic gloss and root תאר do not account for the vessel in this passage.",
+            "definition": "A container that carries its occupants on water, here the ark that Noah and his household enter.",
+            "evidence": "Genesis 7:1 identifies the ark by who must enter it. Genesis 7:17–18 shows the rising water lifting it until it floats."
+          }
+        },
+        "evidence": "In Genesis 7:1, בֹּא commands Noah to enter, and אֶל הַתֵּבָה names his destination. The definite article points back to the vessel Noah was told to build in Genesis 6:14 and enter with his family in Genesis 6:18.",
+        "gloss": "the ark",
+        "language": "he",
+        "lemma": "תֵּבָה",
+        "morphology": "Prefixed definite article הַ־ with doubling of the following ת, on a feminine singular common noun in the absolute state.",
+        "qualifier": "",
+        "root": "תבה",
+        "sense": "The vessel that carries Noah and his household on the floodwaters."
+      },
+      "position": 8,
+      "surface": "הַתֵּבָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ki"
+        },
+        "evidence": "כִּי introduces the reason for the command to enter the ark. In אֹתְךָ רָאִיתִי צַדִּיק, the speaker tells Noah, “I have seen that you are righteous.”",
+        "gloss": "because",
+        "language": "he",
+        "lemma": "כִּי",
+        "morphology": "Uninflected conjunction with no prefix or suffix.",
+        "qualifier": "conjunction",
+        "root": "כי",
+        "sense": "for, because"
+      },
+      "position": 9,
+      "surface": "כִּי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "et",
+            "base": "31c9a635be8bba9a67417e75ea7122e240ae707e04a841533a59ecd2869d0f80",
+            "change": "Add Gen.7.1 to the existing object-pronoun sense as an example of a second-person singular object placed before its verb.",
+            "definition": "With a pronominal suffix, אֵת expresses the direct object separately from the verb.",
+            "evidence": "In Gen.7.1, אֹתְךָ precedes רָאִיתִי, “I have seen.” Its masculine singular suffix identifies Noah, the addressee, as the object."
+          }
+        },
+        "evidence": "Yahweh addresses Noah. In אֹתְךָ רָאִיתִי צַדִּיק, “I have seen you to be righteous,” אֹתְךָ places Noah before the verb as the person Yahweh has seen, and צַדִּיק describes him.",
+        "gloss": "you",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Direct-object particle in the suffixed form אֹת־ with the second-person masculine singular pronominal suffix ־ךָ.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "object-pronoun"
+      },
+      "position": 10,
+      "surface": "אֹתְךָ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "raah"
+        },
+        "evidence": "אֹתְךָ (“you”) is the direct object of רָאִיתִי, and צַדִּיק (“righteous”) describes what YHWH has perceived about Noah. YHWH gives this assessment as the reason for telling Noah to enter the ark with his household.",
+        "gloss": "I have seen",
+        "language": "he",
+        "lemma": "רָאָה",
+        "morphology": "Qal perfect, first person common singular",
+        "qualifier": "",
+        "root": "ראה",
+        "sense": "see or perceive that something is so"
+      },
+      "position": 11,
+      "surface": "רָאִיתִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "tsedeq"
+        },
+        "evidence": "In אֹתְךָ רָאִיתִי צַדִּיק לְפָנַי, Yahweh tells Noah, “I have seen that you are righteous before me.” צַדִּיק describes Noah, and לְפָנַי identifies Yahweh as the one who judges his conduct.",
+        "gloss": "righteous",
+        "language": "he",
+        "lemma": "צַדִּיק",
+        "morphology": "Masculine singular absolute adjective, used predicatively of Noah.",
+        "qualifier": "",
+        "root": "צדק",
+        "sense": "righteous (of a man): doing right before God"
+      },
+      "position": 12,
+      "surface": "צַדִּיק"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "panah"
+        },
+        "evidence": "Yahweh is speaking. In אֹתְךָ רָאִיתִי צַדִּיק לְפָנַי, he says that he has found Noah righteous in his sight. The suffix refers to Yahweh as the one judging Noah.",
+        "gloss": "before me, in my sight",
+        "language": "he",
+        "lemma": "לִפְנֵי",
+        "morphology": "Compound preposition formed from לְ and the plural construct of פָּנִים, with a first-person singular suffix.",
+        "qualifier": "",
+        "root": "פנה",
+        "sense": "before, in the presence of (a person, Yahweh)"
+      },
+      "position": 13,
+      "surface": "לְפָנַי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "dor"
+        },
+        "evidence": "In בַּדּוֹר הַזֶּה, “in this generation,” הַזֶּה points to Noah’s own generation. YHWH describes Noah as righteous among his contemporaries.",
+        "gloss": "among the people of the generation",
+        "language": "he",
+        "lemma": "דּוֹר",
+        "morphology": "Prefixed preposition בְּ with the definite article הַ, followed by a masculine singular absolute noun.",
+        "qualifier": "",
+        "root": "דור",
+        "sense": "generation, the people alive at one time"
+      },
+      "position": 14,
+      "surface": "בַּדּוֹר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "zeh",
+            "base": "7126345ad6c0c225ec7d4e6a22c8ec7a86646ea1f9d4d145a312923aab4dfc83",
+            "change": "Add Genesis 7:1 as an example of the existing this-with-noun sense in zeh.",
+            "definition": "After a definite noun, זֶה points out the particular person or thing in view.",
+            "evidence": "Genesis 7:1 uses בַּדּוֹר הַזֶּה for the generation to which Noah belongs."
+          }
+        },
+        "evidence": "In בַּדּוֹר הַזֶּה, “in this generation,” הַזֶּה follows דּוֹר and agrees with it in gender, number and definiteness. It points to the generation in which Yahweh has seen Noah to be righteous.",
+        "gloss": "this",
+        "language": "he",
+        "lemma": "זֶה",
+        "morphology": "Masculine singular demonstrative pronoun with the prefixed definite article הַ־, used attributively after its noun.",
+        "qualifier": "",
+        "root": "זה",
+        "sense": "this (with a noun)"
+      },
+      "position": 15,
+      "surface": "הַזֶּה"
+    }
+  ]
+}

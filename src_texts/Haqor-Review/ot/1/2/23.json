@@ -1,0 +1,235 @@
+{
+  "book": 1,
+  "chapter": 2,
+  "source": "ot",
+  "verse": 23,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "amar"
+        },
+        "evidence": "הָאָדָם is the subject of וַיֹּאמֶר. The man’s words follow directly, and the first-person suffixes in מֵעֲצָמַי (“from my bones”) and מִבְּשָׂרִי (“from my flesh”) identify him as the speaker.",
+        "gloss": "and he said",
+        "language": "he",
+        "lemma": "אָמַר",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed conjunction וַ־",
+        "qualifier": "",
+        "root": "אמר",
+        "sense": "say, introducing direct speech"
+      },
+      "position": 0,
+      "surface": "וַיֹּאמֶר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "adam"
+        },
+        "evidence": "In וַיֹּאמֶר הָאָדָם, “the man said,” the definite noun identifies the speaker. His words עֶצֶם מֵעֲצָמַי, “bone of my bones,” identify him as the particular man from whom the woman was taken.",
+        "gloss": "the man",
+        "language": "he",
+        "lemma": "אָדָם",
+        "morphology": "Definite article הָ־ prefixed to a masculine singular absolute noun.",
+        "qualifier": "noun",
+        "root": "אדמ",
+        "sense": "the man (the first man)"
+      },
+      "position": 1,
+      "surface": "הָאָדָם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "paam"
+        },
+        "evidence": "זֹאת points to the woman, and הַפַּעַם marks the occasion of the man's recognition that she is עֶצֶם מֵעֲצָמַי, “bone of my bones.”",
+        "gloss": "this time",
+        "language": "he",
+        "lemma": "פַּעַם",
+        "morphology": "Definite article הַ־ prefixed to a feminine singular absolute common noun, used adverbially.",
+        "qualifier": "",
+        "root": "פעמ",
+        "sense": "occasion or repetition"
+      },
+      "position": 3,
+      "surface": "הַפַּעַם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "etsem"
+        },
+        "evidence": "עֶצֶם מֵעֲצָמַי means “bone from my bones” and parallels וּבָשָׂר מִבְּשָׂרִי, “and flesh from my flesh.” The man recognizes the woman as his own kin because, as the verse concludes, she was taken from man.",
+        "gloss": "bone",
+        "language": "he",
+        "lemma": "עֶצֶם",
+        "morphology": "Common noun, feminine singular absolute, without prefix or suffix.",
+        "qualifier": "",
+        "root": "עצמ",
+        "sense": "bone and flesh: one’s own kin"
+      },
+      "position": 4,
+      "surface": "עֶצֶם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "etsem"
+        },
+        "evidence": "In עֶצֶם מֵעֲצָמַי, the man calls the woman “bone from my bones.” The parallel בָּשָׂר מִבְּשָׂרִי, “flesh from my flesh,” expresses their kinship through her origin from his own body.",
+        "gloss": "from my bones",
+        "language": "he",
+        "lemma": "עֶצֶם",
+        "morphology": "Preposition מִן (here מֵ־) + feminine plural construct noun + first-person singular possessive suffix ־ַי.",
+        "qualifier": "",
+        "root": "עצמ",
+        "sense": "bone and flesh: one’s own kin"
+      },
+      "position": 5,
+      "surface": "מֵעֲצָמַי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "basar"
+        },
+        "evidence": "וּבָשָׂר מִבְּשָׂרִי, “and flesh from my flesh,” parallels עֶצֶם מֵעֲצָמַי, “bone from my bones.” The man identifies the woman as kin by describing her flesh as taken from his own body.",
+        "gloss": "and flesh",
+        "language": "he",
+        "lemma": "בָּשָׂר",
+        "morphology": "Conjunction וּ prefixed to a masculine singular absolute noun.",
+        "qualifier": "",
+        "root": "בשׂר",
+        "sense": "flesh of a living body"
+      },
+      "position": 6,
+      "surface": "וּבָשָׂר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "basar"
+        },
+        "evidence": "מִבְּשָׂרִי parallels מֵעֲצָמַי, “from my bones.” The man identifies his own flesh as the source of hers, as the closing words explain that she was taken from man. This shared bodily origin expresses kinship.",
+        "gloss": "from my flesh",
+        "language": "he",
+        "lemma": "בָּשָׂר",
+        "morphology": "Preposition מִן prefixed to a masculine singular construct noun with the first-person singular possessive suffix ־ִי.",
+        "qualifier": "",
+        "root": "בשׂר",
+        "sense": "flesh of a living body"
+      },
+      "position": 7,
+      "surface": "מִבְּשָׂרִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "zeh",
+            "base": "7126345ad6c0c225ec7d4e6a22c8ec7a86646ea1f9d4d145a312923aab4dfc83",
+            "change": "Clarify the use of prefixed לְ in the Genesis 2:23 evidence for the existing “this-one” sense of זֶה.",
+            "definition": "Used independently, the feminine singular זֹאת can point to a woman present as “this one.”",
+            "evidence": "Genesis 2:23 places לְזֹאת before יִקָּרֵא אִשָּׁה, identifying the woman who receives the designation."
+          }
+        },
+        "evidence": "In לְזֹאת יִקָּרֵא אִשָּׁה, לְ marks the person to whom the designation אִשָּׁה applies. The closing לֻקֳחָה זֹּאת, “this one was taken,” points back to the same woman.",
+        "gloss": "to this one",
+        "language": "he",
+        "lemma": "זֶה",
+        "morphology": "Prefixed preposition לְ followed by זֹאת, the feminine singular form of the demonstrative pronoun זֶה.",
+        "qualifier": "",
+        "root": "זה",
+        "sense": "Points to a person present as “this one.”"
+      },
+      "position": 8,
+      "surface": "לְזֹאת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "qara"
+        },
+        "evidence": "לְזֹאת identifies the one being named, and אִשָּׁה supplies the designation. The following כִּי clause explains the choice of אִשָּׁה through its wordplay with אִישׁ.",
+        "gloss": "shall be called",
+        "language": "he",
+        "lemma": "קָרָא",
+        "morphology": "Niphal imperfect, third person masculine singular, used impersonally.",
+        "qualifier": "call",
+        "root": "קרא",
+        "sense": "give a name to"
+      },
+      "position": 9,
+      "surface": "יִקָּרֵא"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "enosh"
+        },
+        "evidence": "In לְזֹאת יִקָּרֵא אִשָּׁה, the man calls her “woman.” He explains the designation with כִּי מֵאִישׁ לֻקֳחָה זֹּאת, “because she was taken from man,” playing on the sound of אִשָּׁה and אִישׁ.",
+        "gloss": "woman",
+        "language": "he",
+        "lemma": "אִשָּׁה",
+        "morphology": "Feminine singular common noun in the absolute state, without prefix or suffix.",
+        "qualifier": "",
+        "root": "אנש",
+        "sense": "woman"
+      },
+      "position": 10,
+      "surface": "אִשָּׁה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ki"
+        },
+        "evidence": "כִּי introduces מֵאִישׁ לֻקֳחָה זֹּאת, “this one was taken from man,” giving the reason she is called אִשָּׁה and linking that name to אִישׁ.",
+        "gloss": "because",
+        "language": "he",
+        "lemma": "כִּי",
+        "morphology": "Uninflected conjunction with no prefix or suffix.",
+        "qualifier": "conjunction",
+        "root": "כי",
+        "sense": "for, because"
+      },
+      "position": 11,
+      "surface": "כִּי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ish"
+        },
+        "evidence": "In כִּי מֵאִישׁ לֻקֳחָה זֹּאת, the preposition marks the man as the source from whom the woman was taken. The speaker pairs אִישׁ ‘man’ with אִשָּׁה ‘woman’ to explain her designation.",
+        "gloss": "from man",
+        "language": "he",
+        "lemma": "אִישׁ",
+        "morphology": "Prefixed preposition מִן, appearing as מֵ־ before א, + masculine singular absolute noun.",
+        "qualifier": "",
+        "root": "איש",
+        "sense": "man, a male"
+      },
+      "position": 12,
+      "surface": "מֵאִישׁ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "laqach"
+        },
+        "evidence": "In מֵאִישׁ לֻקֳחָה זֹּאת, “this one was taken from man,” זֹּאת refers to the woman and agrees with the feminine singular verb. מֵאִישׁ identifies the source, echoing “bone from my bones and flesh from my flesh.”",
+        "gloss": "was taken",
+        "language": "he",
+        "lemma": "לָקַח",
+        "morphology": "Pual perfect, third person feminine singular",
+        "qualifier": "",
+        "root": "לקח",
+        "sense": "take away, remove"
+      },
+      "position": 13,
+      "surface": "לֻקֳחָה"
+    }
+  ]
+}

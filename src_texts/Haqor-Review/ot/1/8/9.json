@@ -1,0 +1,412 @@
+{
+  "book": 1,
+  "chapter": 8,
+  "source": "ot",
+  "verse": 9,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "lo",
+            "base": "ffd411d5ab468a0ba66ca0e2a4b68af3397e61abaed0e11ad5bcb26fdfcbb5d7",
+            "change": "Add Gen.8.9 as an example of the existing Hebrew sense ‘not (of a fact)’ in article lo.",
+            "definition": "Denies that the event described by the verb took place.",
+            "evidence": "In Gen.8.9, וְלֹא מָצְאָה הַיּוֹנָה מָנוֹחַ means ‘and the dove did not find a resting place’."
+          }
+        },
+        "evidence": "לֹא immediately precedes מָצְאָה ‘she found’. The dove did not find a resting place for its foot and returned to the ark because water covered the land.",
+        "gloss": "not",
+        "language": "he",
+        "lemma": "לֹא",
+        "morphology": "Prefixed conjunction וְ ‘and’ followed by the uninflected negative particle לֹא.",
+        "qualifier": "",
+        "root": "לא",
+        "sense": "Negates a statement of fact."
+      },
+      "position": 0,
+      "surface": "וְלֹא"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "matsa"
+        },
+        "evidence": "מָצְאָה agrees with its feminine singular subject הַיּוֹנָה, “the dove,” and takes מָנוֹחַ, “a resting place,” as its object. The preceding לֹא negates the verb: the dove found no resting place for her foot.",
+        "gloss": "found",
+        "language": "he",
+        "lemma": "מָצָא",
+        "morphology": "Qal perfect, third-person feminine singular",
+        "qualifier": "",
+        "root": "מצא",
+        "sense": "find"
+      },
+      "position": 1,
+      "surface": "מָצְאָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yaven"
+        },
+        "evidence": "הַיּוֹנָה is the subject of the feminine singular verb מָצְאָה. The dove found no resting place for its foot and returned to the ark.",
+        "gloss": "the dove",
+        "language": "he",
+        "lemma": "יוֹנָה",
+        "morphology": "Feminine singular absolute common noun with the prefixed definite article הַ־.",
+        "qualifier": "noun",
+        "root": "יונ",
+        "sense": "dove, pigeon"
+      },
+      "position": 2,
+      "surface": "הַיּוֹנָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "nuach"
+        },
+        "evidence": "The dove found no מָנוֹחַ לְכַף רַגְלָהּ, “resting place for the sole of her foot.” The water still covered the land, so she returned to the ark.",
+        "gloss": "a resting place",
+        "language": "he",
+        "lemma": "מָנוֹחַ",
+        "morphology": "Common noun, common gender, singular absolute, without prefix or suffix.",
+        "qualifier": "",
+        "root": "נוח",
+        "sense": "resting place, a place to settle"
+      },
+      "position": 3,
+      "surface": "מָנוֹחַ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "kaph"
+        },
+        "evidence": "In מָנוֹחַ לְכַף רַגְלָהּ, the dove finds no resting place “for the sole of her foot.” The construct כַף takes רַגְלָהּ “her foot” as its complement.",
+        "gloss": "for the sole of",
+        "language": "he",
+        "lemma": "כַּף",
+        "morphology": "Prefixed preposition לְ “for” + feminine singular construct noun כַף.",
+        "qualifier": "",
+        "root": "כפפ",
+        "sense": "sole of the foot"
+      },
+      "position": 4,
+      "surface": "לְכַף"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "regel"
+        },
+        "evidence": "In לְכַף רַגְלָהּ, “for the sole of her foot,” the suffix refers to הַיּוֹנָה, the dove. She found no place to rest her foot because water covered the land.",
+        "gloss": "her foot",
+        "language": "he",
+        "lemma": "רֶגֶל",
+        "morphology": "Feminine singular construct noun with a third-person feminine singular possessive suffix.",
+        "qualifier": "",
+        "root": "רגל",
+        "sense": "foot, leg (the limb)"
+      },
+      "position": 5,
+      "surface": "רַגְלָהּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shuv"
+        },
+        "evidence": "The feminine singular verb agrees with הַיּוֹנָה, “the dove.” Finding no place to rest her foot, she returned אֵלָיו אֶל הַתֵּבָה, “to him at the ark.”",
+        "gloss": "and she returned",
+        "language": "he",
+        "lemma": "שׁוּב",
+        "morphology": "Qal wayyiqtol, third-person feminine singular, with prefixed וַ־",
+        "qualifier": "",
+        "root": "שוב",
+        "sense": "return to one’s place of origin"
+      },
+      "position": 6,
+      "surface": "וַתָּשָׁב"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "elah",
+            "base": "cad803eb7db2b131b61fb3b93a576d63e0cc55ff679e4a05bef3c89da4d37113",
+            "change": "Extend the directional sense of אֶל in elah to include movement to a person and cite Genesis 8:9.",
+            "definition": "Marks the person or place toward which someone or something moves.",
+            "evidence": "Genesis 8:9 gives both destinations of the dove’s return, אֵלָיו for the person and אֶל הַתֵּבָה for the place."
+          }
+        },
+        "evidence": "In וַתָּשָׁב אֵלָיו, “she returned to him,” the dove is the subject and the suffix refers to Noah. The following אֶל הַתֵּבָה names the place of return, and Noah reaches out his hand to take her.",
+        "gloss": "to him",
+        "language": "he",
+        "lemma": "אֶל",
+        "morphology": "Preposition with a third-person masculine singular pronominal suffix, אֵלָיו.",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "Marks the person to whom the dove returns."
+      },
+      "position": 7,
+      "surface": "אֵלָיו"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "In וַתָּשָׁב אֵלָיו אֶל הַתֵּבָה, the marked אֶל introduces הַתֵּבָה, the ark, as the destination of the dove’s return.",
+        "gloss": "to",
+        "language": "he",
+        "lemma": "אֶל",
+        "morphology": "Preposition without prefix or suffix",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "to, toward (a place)"
+      },
+      "position": 8,
+      "surface": "אֶל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "tevah",
+            "base": null,
+            "change": "Add תֵּבָה under its own consonants תבה, with senses for Noah’s ark and the reed basket that held Moses.",
+            "definition": "The wooden vessel that carried Noah, his household, and the animals through the flood.",
+            "evidence": "Genesis 6:14 prescribes its wooden construction and pitch coating. Genesis 7:17 says the waters lifted it, and Genesis 8:9 names it as the dove’s destination."
+          }
+        },
+        "evidence": "The dove finds nowhere to rest its foot because water covers the land. In וַתָּשָׁב אֵלָיו אֶל הַתֵּבָה, “she returned to him, to the ark,” the first phrase identifies Noah and the second names the place to which she returns.",
+        "gloss": "the ark",
+        "language": "he",
+        "lemma": "תֵּבָה",
+        "morphology": "Definite article הַ־ prefixed to a feminine singular absolute common noun. The article doubles the initial ת.",
+        "qualifier": "",
+        "root": "תבה",
+        "sense": "Noah’s ark"
+      },
+      "position": 9,
+      "surface": "הַתֵּבָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ki"
+        },
+        "evidence": "כִּי introduces the reason the dove found no resting place and returned to the ark: water covered the surface of the whole earth.",
+        "gloss": "because",
+        "language": "he",
+        "lemma": "כִּי",
+        "morphology": "Causal conjunction without prefix or suffix.",
+        "qualifier": "conjunction",
+        "root": "כי",
+        "sense": "for, because"
+      },
+      "position": 10,
+      "surface": "כִּי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "mayim"
+        },
+        "evidence": "כִּי מַיִם עַל פְּנֵי כָל הָאָרֶץ explains why the dove found no place to rest its foot. The floodwaters still covered the whole land.",
+        "gloss": "floodwaters",
+        "language": "he",
+        "lemma": "מַיִם",
+        "morphology": "Common noun, masculine plural absolute, without prefix or suffix.",
+        "qualifier": "",
+        "root": "מימ",
+        "sense": "a body or flow of water"
+      },
+      "position": 11,
+      "surface": "מַיִם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "alah"
+        },
+        "evidence": "In מַיִם עַל פְּנֵי כָל הָאָרֶץ, עַל locates the water over the surface of the whole earth, explaining why the dove could find no place to rest its foot.",
+        "gloss": "over",
+        "language": "he",
+        "lemma": "עַל",
+        "morphology": "Preposition without prefix or suffix",
+        "qualifier": "",
+        "root": "עלה",
+        "sense": "on, upon, over"
+      },
+      "position": 12,
+      "surface": "עַל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "panah"
+        },
+        "evidence": "In מַיִם עַל פְּנֵי כָל הָאָרֶץ, the construct form פְּנֵי takes כָל הָאָרֶץ as its complement. Water covered the surface of the whole earth, so the dove found nowhere to rest its foot.",
+        "gloss": "surface of",
+        "language": "he",
+        "lemma": "פָּנִים",
+        "morphology": "Common noun, common gender, plural construct; no prefix or suffix.",
+        "qualifier": "",
+        "root": "פנה",
+        "sense": "surface (of the earth, the waters)"
+      },
+      "position": 13,
+      "surface": "פְּנֵי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "kalal"
+        },
+        "evidence": "In עַל פְּנֵי כָל הָאָרֶץ, כָל takes the definite singular noun הָאָרֶץ as its complement. The water covered the surface of the whole earth, so the dove found no place to rest its foot.",
+        "gloss": "the whole",
+        "language": "he",
+        "lemma": "כֹּל",
+        "morphology": "Masculine singular noun in the construct state, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "כלל",
+        "sense": "all, the whole"
+      },
+      "position": 14,
+      "surface": "כָל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "erets"
+        },
+        "evidence": "In עַל פְּנֵי כָל הָאָרֶץ, “over the surface of the whole earth,” פְּנֵי supplies “surface” and הָאָרֶץ names the earth the waters covered. This explains why the dove found nowhere to rest its foot.",
+        "gloss": "the earth",
+        "language": "he",
+        "lemma": "אֶרֶץ",
+        "morphology": "Common noun, singular absolute, with the prefixed definite article הָ־.",
+        "qualifier": "",
+        "root": "ארצ",
+        "sense": "earth"
+      },
+      "position": 15,
+      "surface": "הָאָרֶץ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shalach"
+        },
+        "evidence": "The direct object יָדוֹ means “his hand.” Noah stretched out his hand to take the returning dove and bring it into the ark.",
+        "gloss": "and he stretched out",
+        "language": "he",
+        "lemma": "שָׁלַח",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ־",
+        "qualifier": "",
+        "root": "שלח",
+        "sense": "stretch out the hand"
+      },
+      "position": 16,
+      "surface": "וַיִּשְׁלַח"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "yad",
+            "base": "efed233daccb4bc3246eb7c810d6b3f030c6f17eccb51b9edb171a28c86faa1d",
+            "change": "Add Genesis 8:9 as defining evidence for the existing hand-limb sense in yad.",
+            "definition": "The hand with which a person reaches out and takes hold of something.",
+            "evidence": "Genesis 8:9 describes Noah reaching out his hand to take the returning dove."
+          }
+        },
+        "evidence": "In וַיִּשְׁלַח יָדוֹ, Noah stretches out his hand. The next verb, וַיִּקָּחֶהָ (“and he took her”), shows what he does with it: he takes the dove and brings her into the ark.",
+        "gloss": "his hand",
+        "language": "he",
+        "lemma": "יָד",
+        "morphology": "Singular construct noun with the third-person masculine singular possessive suffix ־וֹ, referring to Noah.",
+        "qualifier": "",
+        "root": "יד",
+        "sense": "hand (the limb)"
+      },
+      "position": 17,
+      "surface": "יָדוֹ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "laqach"
+        },
+        "evidence": "Noah stretches out his hand (וַיִּשְׁלַח יָדוֹ) and takes hold of the dove (הַיּוֹנָה), to which the feminine suffix refers. The next verb, וַיָּבֵא, describes his bringing her into the ark.",
+        "gloss": "and he took hold of her",
+        "language": "he",
+        "lemma": "לָקַח",
+        "morphology": "Qal wayyiqtol, third masculine singular, with prefixed וַ־ and a third feminine singular direct-object suffix ־הָ.",
+        "qualifier": "",
+        "root": "לקח",
+        "sense": "physically take something"
+      },
+      "position": 18,
+      "surface": "וַיִּקָּחֶהָ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "bo"
+        },
+        "evidence": "Noah reaches out his hand and takes the dove. The direct object אֹתָהּ (‘her’) identifies the dove as the one he brings, and אֵלָיו אֶל הַתֵּבָה gives the destination (‘to him, into the ark’).",
+        "gloss": "and he brought",
+        "language": "he",
+        "lemma": "בּוֹא",
+        "morphology": "Hiphil wayyiqtol, third person masculine singular, with prefixed וַ־ and no suffix",
+        "qualifier": "",
+        "root": "בוא",
+        "sense": "bring someone or something to a destination"
+      },
+      "position": 19,
+      "surface": "וַיָּבֵא"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "After Noah takes hold of the dove, וַיָּבֵא אֹתָהּ אֵלָיו אֶל הַתֵּבָה says that he brought her to himself. The marked אֶל introduces הַתֵּבָה as the place he brought her into.",
+        "gloss": "into",
+        "language": "he",
+        "lemma": "אֶל",
+        "morphology": "Preposition without prefix or suffix.",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "into"
+      },
+      "position": 22,
+      "surface": "אֶל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "tevah",
+            "base": null,
+            "change": "Add תֵּבָה under its own consonants תבה, with evidence for Noah’s ark and the smaller reed basket that held Moses.",
+            "definition": "A watertight container that shelters its occupants on water, here Noah’s ark.",
+            "evidence": "Genesis 6:14 describes the ark as a wooden structure sealed with pitch inside and out. In Genesis 8:9 Noah reaches out from it and brings the dove inside."
+          }
+        },
+        "evidence": "In וַיָּבֵא אֹתָהּ אֵלָיו אֶל הַתֵּבָה, Noah has taken hold of the dove and brings her in to himself. The final אֶל הַתֵּבָה names the place he brings her into.",
+        "gloss": "the ark",
+        "language": "he",
+        "lemma": "תֵּבָה",
+        "morphology": "Feminine singular absolute noun with prefixed definite article הַ־, which doubles the initial ת.",
+        "qualifier": "",
+        "root": "תבה",
+        "sense": "The ark that carried Noah, his household, and the animals through the flood."
+      },
+      "position": 23,
+      "surface": "הַתֵּבָה"
+    }
+  ]
+}

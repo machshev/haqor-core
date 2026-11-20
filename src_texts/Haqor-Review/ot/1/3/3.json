@@ -1,0 +1,195 @@
+{
+  "book": 1,
+  "chapter": 3,
+  "source": "ot",
+  "verse": 3,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "parah"
+        },
+        "evidence": "פְּרִי is in construct with הָעֵץ, yielding “the fruit of the tree.” The prohibition לֹא תֹאכְלוּ מִמֶּנּוּ (“you shall not eat from it”) confirms the literal sense.",
+        "gloss": "and from the fruit of",
+        "language": "he",
+        "lemma": "פְּרִי",
+        "morphology": "Conjunction וּ־ + preposition מִן (realized as מִ־ with nun assimilated to פ) + masculine singular construct noun פְּרִי.",
+        "qualifier": "",
+        "root": "פרה",
+        "sense": "fruit (of a tree or plant)"
+      },
+      "position": 0,
+      "surface": "וּמִפְּרִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ets"
+        },
+        "evidence": "In וּמִפְּרִי הָעֵץ, “and from the fruit of the tree,” הָעֵץ names the tree that bears the fruit. The clause אֲשֶׁר בְּתוֹךְ הַגָּן identifies it by its location in the middle of the garden.",
+        "gloss": "the tree",
+        "language": "he",
+        "lemma": "עֵץ",
+        "morphology": "Definite article הָ־ + masculine singular absolute noun.",
+        "qualifier": "",
+        "root": "עצה",
+        "sense": "tree"
+      },
+      "position": 1,
+      "surface": "הָעֵץ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ashar"
+        },
+        "evidence": "אֲשֶׁר introduces the verbless relative clause אֲשֶׁר בְּתוֹךְ הַגָּן, “which is in the middle of the garden,” identifying הָעֵץ, “the tree,” by its location.",
+        "gloss": "which",
+        "language": "he",
+        "lemma": "אֲשֶׁר",
+        "morphology": "Uninflected relative particle without prefix or suffix.",
+        "qualifier": "",
+        "root": "אשר",
+        "sense": "who, which, that"
+      },
+      "position": 2,
+      "surface": "אֲשֶׁר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ganan"
+        },
+        "evidence": "בְּתוֹךְ הַגָּן means “in the midst of the garden.” The phrase locates הָעֵץ, the tree whose fruit is under discussion.",
+        "gloss": "the garden",
+        "language": "he",
+        "lemma": "גַּן",
+        "morphology": "Definite article הַ־ + common noun, common gender, singular absolute.",
+        "qualifier": "",
+        "root": "גננ",
+        "sense": "garden"
+      },
+      "position": 4,
+      "surface": "הַגָּן"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "amar"
+        },
+        "evidence": "אֱלֹהִים is the subject of אָמַר. The woman quotes God’s words beginning with לֹא תֹאכְלוּ מִמֶּנּוּ, “you shall not eat from it.”",
+        "gloss": "said",
+        "language": "he",
+        "lemma": "אָמַר",
+        "morphology": "Qal perfect, third person masculine singular, without prefix or suffix",
+        "qualifier": "",
+        "root": "אמר",
+        "sense": "say, introducing direct speech"
+      },
+      "position": 5,
+      "surface": "אָמַר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "In אָמַר אֱלֹהִים (“God said”), the verb אָמַר is third-person masculine singular. The woman identifies God as the speaker who forbade eating or touching the fruit.",
+        "gloss": "God",
+        "language": "he",
+        "lemma": "אֱלֹהִים",
+        "morphology": "Masculine plural noun in the absolute state, with singular reference.",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "the Mighty One, God"
+      },
+      "position": 6,
+      "surface": "אֱלֹהִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "lo"
+        },
+        "evidence": "After אָמַר אֱלֹהִים (“God said”), לֹא negates the second-person masculine plural imperfect תֹאכְלוּ (“you shall eat”). The quoted command לֹא תֹאכְלוּ מִמֶּנּוּ forbids eating from the tree.",
+        "gloss": "you shall not",
+        "language": "he",
+        "lemma": "לֹא",
+        "morphology": "Unprefixed negative particle without a suffix.",
+        "qualifier": "",
+        "root": "לא",
+        "sense": "you shall not (prohibition)"
+      },
+      "position": 7,
+      "surface": "לֹא"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "akal"
+        },
+        "evidence": "לֹא negates תֹאכְלוּ, giving the prohibition ‘you shall not eat.’ The phrase וּמִפְּרִי הָעֵץ identifies the tree’s fruit as what they are forbidden to eat.",
+        "gloss": "you (plural) shall eat",
+        "language": "he",
+        "lemma": "אָכַל",
+        "morphology": "Qal imperfect, second person masculine plural",
+        "qualifier": "",
+        "root": "אכל",
+        "sense": "eat"
+      },
+      "position": 8,
+      "surface": "תֹאכְלוּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "naga"
+        },
+        "evidence": "וְלֹא תִגְּעוּ בּוֹ means “and you shall not touch it.” The complement בּוֹ refers to the tree and identifies what the addressees are forbidden to touch.",
+        "gloss": "touch",
+        "language": "he",
+        "lemma": "נָגַע",
+        "morphology": "Qal imperfect, second person masculine plural, used with לֹא to express a prohibition.",
+        "qualifier": "",
+        "root": "נגע",
+        "sense": "make physical contact with"
+      },
+      "position": 11,
+      "surface": "תִגְּעוּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "pen"
+        },
+        "evidence": "After the prohibitions against eating and touching, פֶּן introduces תְּמֻתוּן, “you may die.” Death is the outcome the prohibitions aim to prevent.",
+        "gloss": "lest",
+        "language": "he",
+        "lemma": "פֶּן",
+        "morphology": "Uninflected subordinating conjunction.",
+        "qualifier": "",
+        "root": "פנ",
+        "sense": "lest something happen"
+      },
+      "position": 13,
+      "surface": "פֶּן"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "mut"
+        },
+        "evidence": "פֶּן תְּמֻתוּן means “lest you die.” The verb addresses the same group as תֹאכְלוּ (“you eat”) and תִגְּעוּ (“you touch”). Death is the consequence the warning seeks to avert.",
+        "gloss": "you die",
+        "language": "he",
+        "lemma": "מוּת",
+        "morphology": "Qal imperfect, second person masculine plural, with paragogic nun (־וּן).",
+        "qualifier": "",
+        "root": "מות",
+        "sense": "die, come to the end of life"
+      },
+      "position": 14,
+      "surface": "תְּמֻתוּן"
+    }
+  ]
+}

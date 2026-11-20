@@ -1,0 +1,178 @@
+{
+  "book": 1,
+  "chapter": 8,
+  "source": "ot",
+  "verse": 7,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shalach"
+        },
+        "evidence": "אֶת marks הָעֹרֵב, “the raven,” as the object Noah sends out. The next verb, וַיֵּצֵא, “and it went out,” describes the raven’s response.",
+        "gloss": "and he sent out",
+        "language": "he",
+        "lemma": "שָׁלַח",
+        "morphology": "Piel wayyiqtol, third person masculine singular, with prefixed וַ־ and no suffix",
+        "qualifier": "",
+        "root": "שלח",
+        "sense": "send away"
+      },
+      "position": 0,
+      "surface": "וַיְשַׁלַּח"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "et"
+        },
+        "evidence": "In וַיְשַׁלַּח אֶת הָעֹרֵב, “he sent out the raven,” אֶת introduces הָעֹרֵב, the definite noun naming what he sent out.",
+        "gloss": "(untranslated)",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Direct-object marker without prefix or suffix.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "(marks the definite object)"
+      },
+      "position": 1,
+      "surface": "אֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "erev"
+        },
+        "evidence": "In וַיְשַׁלַּח אֶת הָעֹרֵב, אֶת marks the raven as the object of “he sent out.” The raven then goes out and back until the waters dry up.",
+        "gloss": "the raven",
+        "language": "he",
+        "lemma": "עֹרֵב",
+        "morphology": "Definite article הָ־ prefixed to a masculine singular absolute common noun.",
+        "qualifier": "",
+        "root": "ערב",
+        "sense": "raven"
+      },
+      "position": 2,
+      "surface": "הָעֹרֵב"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yatsa"
+        },
+        "evidence": "Noah sends the raven, and the raven is the subject of וַיֵּצֵא. The following infinitives יָצוֹא וָשׁוֹב describe its repeated going out and returning.",
+        "gloss": "and it went out",
+        "language": "he",
+        "lemma": "יָצָא",
+        "morphology": "Qal wayyiqtol, third-person masculine singular, with prefixed וַ־",
+        "qualifier": "",
+        "root": "יצא",
+        "sense": "go out, depart from a place or someone’s presence"
+      },
+      "position": 3,
+      "surface": "וַיֵּצֵא"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yatsa"
+        },
+        "evidence": "יָצוֹא repeats the preceding finite verb וַיֵּצֵא, “it went out.” Paired with וָשׁוֹב, “and returning,” it describes the raven repeatedly going out and coming back until the waters dried up.",
+        "gloss": "going out",
+        "language": "he",
+        "lemma": "יָצָא",
+        "morphology": "Qal infinitive absolute, without prefix or suffix",
+        "qualifier": "",
+        "root": "יצא",
+        "sense": "go out, depart from a place or someone’s presence"
+      },
+      "position": 4,
+      "surface": "יָצוֹא"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shuv"
+        },
+        "evidence": "The raven is the subject of וַיֵּצֵא. The paired infinitives יָצוֹא וָשׁוֹב describe its repeated movement out and back until the waters dried up.",
+        "gloss": "and coming back",
+        "language": "he",
+        "lemma": "שׁוּב",
+        "morphology": "Qal infinitive absolute with prefixed conjunction וָ־",
+        "qualifier": "",
+        "root": "שוב",
+        "sense": "return to one’s place of origin"
+      },
+      "position": 5,
+      "surface": "וָשׁוֹב"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ad"
+        },
+        "evidence": "עַד יְבֹשֶׁת הַמַּיִם marks the drying up of the waters as the endpoint of the raven’s going to and fro.",
+        "gloss": "until",
+        "language": "he",
+        "lemma": "עַד",
+        "morphology": "Preposition without prefix or suffix, governing the infinitive construct יְבֹשֶׁת.",
+        "qualifier": "preposition",
+        "root": "עדה",
+        "sense": "until, up to (a time)"
+      },
+      "position": 6,
+      "surface": "עַד"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yabesh"
+        },
+        "evidence": "In עַד יְבֹשֶׁת הַמַּיִם מֵעַל הָאָרֶץ, הַמַּיִם is the subject of the infinitive. The phrase gives the endpoint of the raven’s going to and fro: “until the waters dried up from the surface of the earth.”",
+        "gloss": "dry up",
+        "language": "he",
+        "lemma": "יָבֵשׁ",
+        "morphology": "Qal infinitive construct with a final ־ת, governed by עַד.",
+        "qualifier": "verb",
+        "root": "יבש",
+        "sense": "become dry"
+      },
+      "position": 7,
+      "surface": "יְבֹשֶׁת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "alah"
+        },
+        "evidence": "In יְבֹשֶׁת הַמַּיִם מֵעַל הָאָרֶץ, עַל locates the waters on the surface of the earth, and מֵ־ marks the surface from which they dry up.",
+        "gloss": "from upon",
+        "language": "he",
+        "lemma": "עַל",
+        "morphology": "Preposition עַל with prefixed מֵ־ (from מִן, “from”).",
+        "qualifier": "",
+        "root": "עלה",
+        "sense": "on, upon, over"
+      },
+      "position": 9,
+      "surface": "מֵעַל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "erets"
+        },
+        "evidence": "In הַמַּיִם מֵעַל הָאָרֶץ, מֵעַל means “from upon.” The ground is the surface the floodwaters covered until they dried up.",
+        "gloss": "the ground",
+        "language": "he",
+        "lemma": "אֶרֶץ",
+        "morphology": "Definite article הָ־ prefixed to a common noun, singular absolute.",
+        "qualifier": "",
+        "root": "ארצ",
+        "sense": "ground, surface"
+      },
+      "position": 10,
+      "surface": "הָאָרֶץ"
+    }
+  ]
+}

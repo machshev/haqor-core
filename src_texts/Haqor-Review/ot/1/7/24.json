@@ -1,0 +1,168 @@
+{
+  "book": 1,
+  "chapter": 7,
+  "review": {
+    "entities": [],
+    "glosses": [
+      {
+        "gloss": "and they prevailed",
+        "position": 0
+      },
+      {
+        "gloss": "the waters",
+        "position": 1
+      },
+      {
+        "gloss": "over",
+        "position": 2
+      },
+      {
+        "gloss": "the earth",
+        "position": 3
+      },
+      {
+        "gloss": "fifty",
+        "position": 4
+      },
+      {
+        "gloss": "and a hundred",
+        "position": 5
+      },
+      {
+        "gloss": "days",
+        "position": 6
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[And|0] [the waters|1] [prevailed|0] [over|2] [the earth|3] {for} [150|5,4] [days|6]."
+  },
+  "source": "ot",
+  "verse": 24,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "gavar"
+        },
+        "evidence": "The plural verb agrees with הַמַּיִם, “the waters.” The phrase עַל הָאָרֶץ gives the extent of their sway, “over the earth,” and the stated duration shows that the waters prevailed for 150 days.",
+        "gloss": "and they prevailed",
+        "language": "he",
+        "lemma": "גָּבַר",
+        "morphology": "Qal wayyiqtol, third person masculine plural, with prefixed וַ־.",
+        "qualifier": "",
+        "root": "גבר",
+        "sense": "prevail, grow strong"
+      },
+      "position": 0,
+      "surface": "וַיִּגְבְּרוּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "mayim",
+            "base": "7a095b6c2624f5e1fa2f45c8ad0c8fa7eebb4e609589e4db6aa40b3f9ca131e1",
+            "change": "Add Genesis 7:24 to the existing literal sense “a body or flow of water.”",
+            "definition": "The waters of a sea, river or flood, here the floodwaters covering the land.",
+            "evidence": "Genesis 7:24 identifies the waters by how long they prevailed over the land. Genesis 7:18–20 describes those same waters rising and covering the mountains."
+          }
+        },
+        "evidence": "הַמַּיִם is the subject of the plural verb וַיִּגְבְּרוּ, “they prevailed.” The waters prevailed over the land for 150 days, continuing the account of the floodwaters that covered the mountains in Genesis 7:18–20.",
+        "gloss": "the floodwaters",
+        "language": "he",
+        "lemma": "מַיִם",
+        "morphology": "Masculine plural common noun in the absolute state with the prefixed definite article הַ־, which doubles the initial מ.",
+        "qualifier": "",
+        "root": "מימ",
+        "sense": "a body or flow of water"
+      },
+      "position": 1,
+      "surface": "הַמַּיִם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "alah"
+        },
+        "evidence": "עַל introduces הָאָרֶץ, identifying the land over which the waters prevailed for 150 days.",
+        "gloss": "over",
+        "language": "he",
+        "lemma": "עַל",
+        "morphology": "Preposition without prefix or suffix.",
+        "qualifier": "",
+        "root": "עלה",
+        "sense": "on, upon, over"
+      },
+      "position": 2,
+      "surface": "עַל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "erets"
+        },
+        "evidence": "In וַיִּגְבְּרוּ הַמַּיִם עַל הָאָרֶץ, the waters prevailed over the earth for 150 days. הָאָרֶץ names the earth as a whole within the flood account.",
+        "gloss": "the earth",
+        "language": "he",
+        "lemma": "אֶרֶץ",
+        "morphology": "Common noun, common gender, singular absolute, with prefixed definite article הָ־.",
+        "qualifier": "",
+        "root": "ארצ",
+        "sense": "earth"
+      },
+      "position": 3,
+      "surface": "הָאָרֶץ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chamesh"
+        },
+        "evidence": "In חֲמִשִּׁים וּמְאַת יוֹם, חֲמִשִּׁים contributes fifty to the total of 150 days during which the waters prevailed over the earth.",
+        "gloss": "fifty",
+        "language": "he",
+        "lemma": "חֲמִשִּׁים",
+        "morphology": "Cardinal numeral, plural absolute, common to both genders.",
+        "qualifier": "",
+        "root": "חמש",
+        "sense": "fifty"
+      },
+      "position": 4,
+      "surface": "חֲמִשִּׁים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "meah"
+        },
+        "evidence": "In חֲמִשִּׁים וּמְאַת יוֹם, מְאַת governs יוֹם ‘day’, and וּ־ joins the hundred to the preceding fifty. The waters prevailed for 150 days.",
+        "gloss": "and a hundred",
+        "language": "he",
+        "lemma": "מֵאָה",
+        "morphology": "Conjunction וּ־ ‘and’ prefixed to מְאַת, the singular construct form of the cardinal numeral מֵאָה.",
+        "qualifier": "",
+        "root": "מאה",
+        "sense": "a hundred (a count)"
+      },
+      "position": 5,
+      "surface": "וּמְאַת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yom"
+        },
+        "evidence": "חֲמִשִּׁים וּמְאַת יוֹם means “one hundred and fifty days.” The singular יוֹם supplies the unit of time counted by the numeral and measures how long the waters prevailed upon the earth.",
+        "gloss": "days",
+        "language": "he",
+        "lemma": "יוֹם",
+        "morphology": "Common noun, masculine singular absolute, without prefix or suffix.",
+        "qualifier": "",
+        "root": "יומ",
+        "sense": "a day, counted"
+      },
+      "position": 6,
+      "surface": "יוֹם"
+    }
+  ]
+}

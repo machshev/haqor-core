@@ -1,0 +1,294 @@
+{
+  "book": 1,
+  "chapter": 8,
+  "review": {
+    "entities": [],
+    "glosses": [
+      {
+        "gloss": "and the waters",
+        "position": 0
+      },
+      {
+        "gloss": "were",
+        "position": 1
+      },
+      {
+        "gloss": "steadily",
+        "position": 2
+      },
+      {
+        "gloss": "receding",
+        "position": 3
+      },
+      {
+        "gloss": "until",
+        "position": 4
+      },
+      {
+        "gloss": "the month",
+        "position": 5
+      },
+      {
+        "gloss": "tenth",
+        "position": 6
+      },
+      {
+        "gloss": "in the tenth month",
+        "position": 7
+      },
+      {
+        "gloss": "on the first day",
+        "position": 8
+      },
+      {
+        "gloss": "of the month",
+        "position": 9
+      },
+      {
+        "gloss": "became visible",
+        "position": 10
+      },
+      {
+        "gloss": "the tops of",
+        "position": 11
+      },
+      {
+        "gloss": "the mountains",
+        "position": 12
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[And the waters|0] [were|1] [steadily|2] [receding|3] [until|4] [the|5] [tenth|6] [month|5]. [In the tenth|7] {month}, [on the first|8] [of the month|9], [the tops of|11] [the mountains|12] [became visible|10]."
+  },
+  "source": "ot",
+  "verse": 5,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "mayim",
+            "base": "7a095b6c2624f5e1fa2f45c8ad0c8fa7eebb4e609589e4db6aa40b3f9ca131e1",
+            "change": "Add Genesis 8:5 as verse evidence for the existing sense ‘a body or flow of water’ in mayim.",
+            "definition": "מַיִם can denote a body of water, here the floodwaters covering the land.",
+            "evidence": "In Genesis 8:5 the waters recede until the mountaintops become visible."
+          }
+        },
+        "evidence": "The plural verb הָיוּ agrees with הַמַּיִם. The predicate הָיוּ הָלוֹךְ וְחָסוֹר says the waters kept receding, and the appearance of the mountaintops shows what the floodwaters had covered.",
+        "gloss": "and the waters",
+        "language": "he",
+        "lemma": "מַיִם",
+        "morphology": "וְ־ conjunction ‘and’ + הַ־ definite article, doubling the following מ + מַיִם masculine plural noun in the absolute state.",
+        "qualifier": "",
+        "root": "מימ",
+        "sense": "a body or flow of water"
+      },
+      "position": 0,
+      "surface": "וְהַמַּיִם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "hayah"
+        },
+        "evidence": "הָיוּ agrees with the plural subject הַמַּיִם, “the waters.” The infinitives absolute הָלוֹךְ וְחָסוֹר express continued decrease. Together the clause means “the waters were steadily receding until the tenth month.”",
+        "gloss": "were",
+        "language": "he",
+        "lemma": "הָיָה",
+        "morphology": "Qal perfect, third person common plural, with no prefix or suffix pronoun",
+        "qualifier": "",
+        "root": "היה",
+        "sense": "to be, used as an auxiliary with an ongoing action"
+      },
+      "position": 1,
+      "surface": "הָיוּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "halak"
+        },
+        "evidence": "In הָיוּ הָלוֹךְ וְחָסוֹר, וְחָסוֹר expresses the decrease and הָלוֹךְ marks its continuation. The waters kept receding until the tenth month.",
+        "gloss": "continually",
+        "language": "he",
+        "lemma": "הָלַךְ",
+        "morphology": "Qal infinitive absolute",
+        "qualifier": "",
+        "root": "הלכ",
+        "sense": "continue an action"
+      },
+      "position": 2,
+      "surface": "הָלוֹךְ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chaser"
+        },
+        "evidence": "In וְהַמַּיִם הָיוּ הָלוֹךְ וְחָסוֹר, the waters are the subject. Paired with הָלוֹךְ, וְחָסוֹר describes their level continuing to fall. By the first day of the tenth month, the mountaintops were visible.",
+        "gloss": "receding",
+        "language": "he",
+        "lemma": "חָסֵר",
+        "morphology": "Qal infinitive absolute with prefixed conjunction וְ.",
+        "qualifier": "verb",
+        "root": "חסר",
+        "sense": "to diminish in amount or level"
+      },
+      "position": 3,
+      "surface": "וְחָסוֹר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ad"
+        },
+        "evidence": "עַד introduces הַחֹדֶשׁ הָעֲשִׂירִי, “the tenth month,” marking how long the waters continued to recede. The next clause dates the appearance of the mountaintops to the first day of that month.",
+        "gloss": "until",
+        "language": "he",
+        "lemma": "עַד",
+        "morphology": "Simple preposition with no prefix or suffix.",
+        "qualifier": "preposition",
+        "root": "עדה",
+        "sense": "until, up to (a time)"
+      },
+      "position": 4,
+      "surface": "עַד"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chadash"
+        },
+        "evidence": "The ordinal הָעֲשִׂירִי modifies הַחֹדֶשׁ in עַד הַחֹדֶשׁ הָעֲשִׂירִי, “until the tenth month.” The following date specifies the first day of that month.",
+        "gloss": "the month",
+        "language": "he",
+        "lemma": "חֹדֶשׁ",
+        "morphology": "Masculine singular absolute noun with prefixed definite article הַ־.",
+        "qualifier": "",
+        "root": "חדש",
+        "sense": "month"
+      },
+      "position": 5,
+      "surface": "הַחֹדֶשׁ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "asar"
+        },
+        "evidence": "In עַד הַחֹדֶשׁ הָעֲשִׂירִי, “until the tenth month,” הָעֲשִׂירִי agrees with הַחֹדֶשׁ in gender, number, and definiteness and gives the month’s position in sequence.",
+        "gloss": "the tenth",
+        "language": "he",
+        "lemma": "עֲשִׂירִי",
+        "morphology": "Ordinal adjective, masculine singular absolute, with the prefixed definite article הָ־.",
+        "qualifier": "",
+        "root": "עשׂר",
+        "sense": "tenth"
+      },
+      "position": 6,
+      "surface": "הָעֲשִׂירִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "asar"
+        },
+        "evidence": "בָּעֲשִׂירִי repeats the ordinal from הַחֹדֶשׁ הָעֲשִׂירִי, leaving חֹדֶשׁ understood. The following בְּאֶחָד לַחֹדֶשׁ specifies the first day of that month.",
+        "gloss": "in the tenth month",
+        "language": "he",
+        "lemma": "עֲשִׂירִי",
+        "morphology": "Ordinal adjective, masculine singular absolute, with prefixed בְּ and the definite article, used substantivally.",
+        "qualifier": "",
+        "root": "עשׂר",
+        "sense": "tenth"
+      },
+      "position": 7,
+      "surface": "בָּעֲשִׂירִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "echad"
+        },
+        "evidence": "בָּעֲשִׂירִי identifies the tenth month, and בְּאֶחָד לַחֹדֶשׁ specifies the day when the mountaintops appeared. In this date formula, אֶחָד denotes the first day of the month.",
+        "gloss": "on the first day",
+        "language": "he",
+        "lemma": "אֶחָד",
+        "morphology": "Preposition בְּ prefixed to a masculine singular absolute cardinal numeral used ordinally.",
+        "qualifier": "",
+        "root": "אחד",
+        "sense": "first (in a count, and of dates)"
+      },
+      "position": 8,
+      "surface": "בְּאֶחָד"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chadash"
+        },
+        "evidence": "הַחֹדֶשׁ הָעֲשִׂירִי identifies the tenth month. בְּאֶחָד לַחֹדֶשׁ gives the day within it, “on the first day of the month,” when the mountaintops became visible.",
+        "gloss": "of the month",
+        "language": "he",
+        "lemma": "חֹדֶשׁ",
+        "morphology": "Masculine singular absolute noun with prefixed preposition לְ and definite article, combined as לַ.",
+        "qualifier": "",
+        "root": "חדש",
+        "sense": "month"
+      },
+      "position": 9,
+      "surface": "לַחֹדֶשׁ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "raah"
+        },
+        "evidence": "The plural verb נִרְאוּ agrees with its subject רָאשֵׁי הֶהָרִים, “the mountaintops.” As the waters receded, the mountaintops came into view.",
+        "gloss": "became visible",
+        "language": "he",
+        "lemma": "רָאָה",
+        "morphology": "Niphal perfect, third person common plural",
+        "qualifier": "",
+        "root": "ראה",
+        "sense": "appear, become visible"
+      },
+      "position": 10,
+      "surface": "נִרְאוּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "rosh"
+        },
+        "evidence": "רָאשֵׁי הֶהָרִים means “the summits of the mountains.” As the floodwaters receded, these highest parts of the mountains became visible (נִרְאוּ).",
+        "gloss": "summits",
+        "language": "he",
+        "lemma": "רֹאשׁ",
+        "morphology": "masculine plural construct noun",
+        "qualifier": "head",
+        "root": "ראש",
+        "sense": "top, summit"
+      },
+      "position": 11,
+      "surface": "רָאשֵׁי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "har"
+        },
+        "evidence": "In נִרְאוּ רָאשֵׁי הֶהָרִים, “the tops of the mountains became visible,” רָאשֵׁי is in the construct state and הֶהָרִים names the mountains whose peaks emerged as the floodwaters receded.",
+        "gloss": "the mountains",
+        "language": "he",
+        "lemma": "הַר",
+        "morphology": "Masculine plural absolute noun with the prefixed definite article הֶ־.",
+        "qualifier": "",
+        "root": "הרר",
+        "sense": "mountain, hill"
+      },
+      "position": 12,
+      "surface": "הֶהָרִים"
+    }
+  ]
+}

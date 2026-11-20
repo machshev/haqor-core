@@ -1,0 +1,183 @@
+{
+  "book": 1,
+  "chapter": 7,
+  "review": {
+    "entities": [],
+    "glosses": [
+      {
+        "gloss": "and fell",
+        "position": 0
+      },
+      {
+        "gloss": "the rain",
+        "position": 1
+      },
+      {
+        "gloss": "on",
+        "position": 2
+      },
+      {
+        "gloss": "the earth",
+        "position": 3
+      },
+      {
+        "gloss": "forty",
+        "position": 4
+      },
+      {
+        "gloss": "days",
+        "position": 5
+      },
+      {
+        "gloss": "and forty",
+        "position": 6
+      },
+      {
+        "gloss": "nights",
+        "position": 7
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[And|0] [the rain|1] [fell|0] [on|2] [the earth|3] {for} [forty|4] [days|5] [and forty|6] [nights|7]."
+  },
+  "source": "ot",
+  "verse": 12,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "hayah"
+        },
+        "evidence": "The verb agrees with the masculine singular subject הַגֶּשֶׁם, “the rain.” The phrase עַל הָאָרֶץ says where the rain was, and “forty days and forty nights” tells how long it continued.",
+        "gloss": "was",
+        "language": "he",
+        "lemma": "הָיָה",
+        "morphology": "Qal wayyiqtol, third-person masculine singular, with prefixed וַ־.",
+        "qualifier": "",
+        "root": "היה",
+        "sense": "to be in a state or condition"
+      },
+      "position": 0,
+      "surface": "וַיְהִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "geshem"
+        },
+        "evidence": "הַגֶּשֶׁם is the subject of וַיְהִי. The rain was upon the earth (עַל הָאָרֶץ) for forty days and forty nights.",
+        "gloss": "the rain",
+        "language": "he",
+        "lemma": "גֶּשֶׁם",
+        "morphology": "Common noun, masculine singular absolute, with prefixed definite article הַ־.",
+        "qualifier": "noun",
+        "root": "גשמ",
+        "sense": "rain"
+      },
+      "position": 1,
+      "surface": "הַגֶּשֶׁם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "alah"
+        },
+        "evidence": "In הַגֶּשֶׁם עַל הָאָרֶץ, עַל introduces הָאָרֶץ as the surface upon which the rain fell.",
+        "gloss": "upon",
+        "language": "he",
+        "lemma": "עַל",
+        "morphology": "Preposition without prefix or suffix.",
+        "qualifier": "",
+        "root": "עלה",
+        "sense": "on, upon, over"
+      },
+      "position": 2,
+      "surface": "עַל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "erets"
+        },
+        "evidence": "In הַגֶּשֶׁם עַל הָאָרֶץ, the earth is the expanse over which the rain fell for forty days and forty nights.",
+        "gloss": "the earth",
+        "language": "he",
+        "lemma": "אֶרֶץ",
+        "morphology": "Common noun, singular absolute, both genders, with the prefixed definite article הָ־.",
+        "qualifier": "",
+        "root": "ארצ",
+        "sense": "earth"
+      },
+      "position": 3,
+      "surface": "הָאָרֶץ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "reva"
+        },
+        "evidence": "The marked אַרְבָּעִים counts יוֹם, “day.” The parallel phrase וְאַרְבָּעִים לָיְלָה, “and forty nights,” completes the description of how long the rain lasted.",
+        "gloss": "forty",
+        "language": "he",
+        "lemma": "אַרְבָּעִים",
+        "morphology": "Cardinal numeral, plural absolute, common to both genders, without prefix or suffix.",
+        "qualifier": "",
+        "root": "רבע",
+        "sense": "forty days (and forty nights)"
+      },
+      "position": 4,
+      "surface": "אַרְבָּעִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yom"
+        },
+        "evidence": "In אַרְבָּעִים יוֹם, “forty days,” the numeral counts the days the rain lasted. The parallel וְאַרְבָּעִים לָיְלָה, “and forty nights,” counts the nights of the same period.",
+        "gloss": "days",
+        "language": "he",
+        "lemma": "יוֹם",
+        "morphology": "Common noun, masculine singular absolute, without prefix or suffix.",
+        "qualifier": "",
+        "root": "יומ",
+        "sense": "a day, counted"
+      },
+      "position": 5,
+      "surface": "יוֹם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "reva"
+        },
+        "evidence": "The marked numeral counts לָיְלָה ‘night’. Its prefix וְ joins וְאַרְבָּעִים לָיְלָה ‘and forty nights’ to אַרְבָּעִים יוֹם ‘forty days’, giving the duration of the rain.",
+        "gloss": "and forty",
+        "language": "he",
+        "lemma": "אַרְבָּעִים",
+        "morphology": "Conjunction וְ prefixed to a cardinal numeral, common gender, plural absolute.",
+        "qualifier": "",
+        "root": "רבע",
+        "sense": "forty days (and forty nights)"
+      },
+      "position": 6,
+      "surface": "וְאַרְבָּעִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "layil"
+        },
+        "evidence": "אַרְבָּעִים יוֹם וְאַרְבָּעִים לָיְלָה gives the duration of the rain. The repeated אַרְבָּעִים counts forty days and forty nights. Both counted nouns are singular in Hebrew.",
+        "gloss": "nights",
+        "language": "he",
+        "lemma": "לַיְלָה",
+        "morphology": "Common noun, masculine singular absolute, in pausal form, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "ליל",
+        "sense": "the hours of darkness"
+      },
+      "position": 7,
+      "surface": "לָיְלָה"
+    }
+  ]
+}

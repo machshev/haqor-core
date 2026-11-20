@@ -1,0 +1,184 @@
+{
+  "book": 1,
+  "chapter": 6,
+  "source": "ot",
+  "verse": 21,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "atah"
+        },
+        "evidence": "The singular imperative קַח already addresses Noah. The explicit וְאַתָּה singles him out as the one to gather food for himself and the animals, distinguished at the end as לְךָ וְלָהֶם, “for you and for them.”",
+        "gloss": "and as for you",
+        "language": "he",
+        "lemma": "אַתָּה",
+        "morphology": "Conjunction וְ prefixed to an independent second-person masculine singular pronoun.",
+        "qualifier": "",
+        "root": "אנת",
+        "sense": "you, as for you (the one addressed set apart)"
+      },
+      "position": 0,
+      "surface": "וְאַתָּה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "laqach"
+        },
+        "evidence": "קַח לְךָ מִכָּל מַאֲכָל tells Noah to take some of every kind of food for himself. The following וְאָסַפְתָּ אֵלֶיךָ tells him to gather it to himself as provisions.",
+        "gloss": "take",
+        "language": "he",
+        "lemma": "לָקַח",
+        "morphology": "Qal imperative, second person masculine singular, with no prefix or suffix",
+        "qualifier": "",
+        "root": "לקח",
+        "sense": "physically take something"
+      },
+      "position": 1,
+      "surface": "קַח"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "kalal"
+        },
+        "evidence": "In קַח לְךָ מִכָּל מַאֲכָל אֲשֶׁר יֵאָכֵל, Noah is to take some of every kind of food that can be eaten. The prefix מִן expresses the portion taken, and כֹּל extends the command to every kind of food.",
+        "gloss": "some of every kind of",
+        "language": "he",
+        "lemma": "כֹּל",
+        "morphology": "Masculine singular construct noun with prefixed מִן (“from”), whose נ assimilates to the כ.",
+        "qualifier": "",
+        "root": "כלל",
+        "sense": "every, each; any"
+      },
+      "position": 3,
+      "surface": "מִכָּל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "akal"
+        },
+        "evidence": "In מִכָּל מַאֲכָל אֲשֶׁר יֵאָכֵל, the relative clause אֲשֶׁר יֵאָכֵל (‘that is eaten’) identifies מַאֲכָל as the food Noah is to gather for himself and the animals.",
+        "gloss": "food",
+        "language": "he",
+        "lemma": "מַאֲכָל",
+        "morphology": "Common noun, masculine singular absolute, without prefix or suffix.",
+        "qualifier": "",
+        "root": "אכל",
+        "sense": "food, what is for eating"
+      },
+      "position": 4,
+      "surface": "מַאֲכָל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ashar"
+        },
+        "evidence": "אֲשֶׁר introduces יֵאָכֵל ‘is eaten’ as a relative clause modifying מַאֲכָל ‘food’, giving ‘food that is eaten’.",
+        "gloss": "that",
+        "language": "he",
+        "lemma": "אֲשֶׁר",
+        "morphology": "Invariable relative particle, without prefix or suffix.",
+        "qualifier": "",
+        "root": "אשר",
+        "sense": "who, which, that"
+      },
+      "position": 5,
+      "surface": "אֲשֶׁר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "akal"
+        },
+        "evidence": "In מִכָּל מַאֲכָל אֲשֶׁר יֵאָכֵל, “of every kind of food that is eaten,” the masculine singular verb agrees with מַאֲכָל. The Niphal presents the food as what people or animals eat, as the closing לְךָ וְלָהֶם לְאָכְלָה confirms.",
+        "gloss": "is eaten",
+        "language": "he",
+        "lemma": "אָכַל",
+        "morphology": "Niphal imperfect, third person masculine singular",
+        "qualifier": "",
+        "root": "אכל",
+        "sense": "eat"
+      },
+      "position": 6,
+      "surface": "יֵאָכֵל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "asaph"
+        },
+        "evidence": "The object is understood from מִכָּל מַאֲכָל, “some of every kind of food.” אֵלֶיךָ, “to yourself,” shows where Noah is to gather it, and לְךָ וְלָהֶם לְאָכְלָה identifies its purpose as food for him and the animals.",
+        "gloss": "and you shall gather",
+        "language": "he",
+        "lemma": "אָסַף",
+        "morphology": "Qal perfect, second masculine singular, with prefixed וְ (weqatal), continuing the command קַח.",
+        "qualifier": "",
+        "root": "אספ",
+        "sense": "gather food together as provisions"
+      },
+      "position": 7,
+      "surface": "וְאָסַפְתָּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "elah",
+            "base": "cad803eb7db2b131b61fb3b93a576d63e0cc55ff679e4a05bef3c89da4d37113",
+            "change": "Add Gen 6:21 as an example under the existing personal-goal sense of אֶל in elah.",
+            "definition": "אֶל marks the person to whom something is brought or gathered.",
+            "evidence": "In Gen 6:21 the suffix of אֵלֶיךָ refers to Noah, who is told to gather the food to himself."
+          }
+        },
+        "evidence": "In וְאָסַפְתָּ אֵלֶיךָ, “you shall gather it to yourself,” Noah is both the one who gathers the food and the person to whom he gathers it. The following לְךָ וְלָהֶם identifies who will eat it.",
+        "gloss": "to yourself",
+        "language": "he",
+        "lemma": "אֶל",
+        "morphology": "Preposition on its suffixed base אֵלֶי־ with the second-person masculine singular pronominal suffix ךָ.",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "Marks the person to whom something is brought or gathered."
+      },
+      "position": 8,
+      "surface": "אֵלֶיךָ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "hayah"
+        },
+        "evidence": "The singular verb refers back to מַאֲכָל, the food Noah is to gather. לְךָ וְלָהֶם identifies whom it will feed, and לְאָכְלָה states its function, yielding “and it will serve as food for you and for them.”",
+        "gloss": "and it will serve",
+        "language": "he",
+        "lemma": "הָיָה",
+        "morphology": "Qal perfect, third person masculine singular, with prefixed וְ (weqatal) expressing a future result.",
+        "qualifier": "",
+        "root": "היה",
+        "sense": "to serve as something"
+      },
+      "position": 9,
+      "surface": "וְהָיָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "akal"
+        },
+        "evidence": "Noah is told to gather מַאֲכָל אֲשֶׁר יֵאָכֵל, food that can be eaten. In וְהָיָה לְךָ וְלָהֶם לְאָכְלָה, לְךָ וְלָהֶם identifies the recipients, Noah and the animals, and לְאָכְלָה states what the provisions will serve as.",
+        "gloss": "for food",
+        "language": "he",
+        "lemma": "אָכְלָה",
+        "morphology": "Preposition לְ prefixed to a feminine singular absolute noun.",
+        "qualifier": "",
+        "root": "אכל",
+        "sense": "food (what is given to be eaten)"
+      },
+      "position": 12,
+      "surface": "לְאָכְלָה"
+    }
+  ]
+}

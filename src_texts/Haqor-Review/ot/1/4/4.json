@@ -1,0 +1,315 @@
+{
+  "book": 1,
+  "chapter": 4,
+  "review": {
+    "entities": [
+      {
+        "evidence": "The giver brings firstborn from his flock, identifying him as Abel, the keeper of sheep and brother of Cain introduced in Genesis 4:2.",
+        "key": "Abel@Gen.4.2",
+        "position": 0
+      },
+      {
+        "evidence": "The divine name identifies the God who regards Abel and his offering. The source tag LORD@Gen.1.1 refers to the same bearer as the existing Yahweh proposal.",
+        "key": "Yahweh@Gen.2.22",
+        "new": {
+          "description": "The God of Israel, who built the rib taken from the man into a woman and brought her to the man.",
+          "kind": "person",
+          "name": "Yahweh"
+        },
+        "position": 8
+      },
+      {
+        "evidence": "Yahweh looks on Abel and on his offering, naming the same Abel who brought the firstborn earlier in the verse.",
+        "key": "Abel@Gen.4.2",
+        "position": 10
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "and Abel",
+        "position": 0
+      },
+      {
+        "gloss": "brought",
+        "position": 1
+      },
+      {
+        "gloss": "also",
+        "position": 2
+      },
+      {
+        "gloss": "he himself",
+        "position": 3
+      },
+      {
+        "gloss": "some of the firstborn of",
+        "position": 4
+      },
+      {
+        "gloss": "his flock",
+        "position": 5
+      },
+      {
+        "gloss": "and some of their fat portions",
+        "position": 6
+      },
+      {
+        "gloss": "and he looked with favor",
+        "position": 7
+      },
+      {
+        "gloss": "Yahweh",
+        "position": 8
+      },
+      {
+        "gloss": "on",
+        "position": 9
+      },
+      {
+        "gloss": "Abel",
+        "position": 10
+      },
+      {
+        "gloss": "and on",
+        "position": 11
+      },
+      {
+        "gloss": "his offering",
+        "position": 12
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[And Abel|0] [himself|3] [also|2] [brought|1] [some of the firstborn of|4] [his flock|5] [and some of their fat portions|6]. [And|7] [Yahweh|8] [looked|7] {favorably} [on|9] [Abel|10] [and on|11] [his offering|12]."
+  },
+  "source": "ot",
+  "verse": 4,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "abel"
+        },
+        "evidence": "Abel is the subject of הֵבִיא ‘brought’. The phrase גַם הוּא ‘he too’ identifies him as another giver, and צֹאנוֹ ‘his flock’ identifies the source of his offering.",
+        "gloss": "and Abel",
+        "language": "he",
+        "lemma": "הֶבֶל",
+        "morphology": "Conjunction וְ prefixed to a masculine singular personal name.",
+        "qualifier": "name",
+        "root": "הבל",
+        "sense": "Abel, Cain’s brother"
+      },
+      "position": 0,
+      "surface": "וְהֶבֶל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "bo"
+        },
+        "evidence": "Abel is the subject of הֵבִיא. The phrases מִבְּכֹרוֹת צֹאנוֹ and וּמֵחֶלְבֵהֶן specify what he brought, some of his flock’s firstborn and some of their fat portions. The verse calls this his offering (מִנְחָתוֹ).",
+        "gloss": "brought",
+        "language": "he",
+        "lemma": "בּוֹא",
+        "morphology": "Hiphil perfect, third person masculine singular",
+        "qualifier": "",
+        "root": "בוא",
+        "sense": "bring someone or something to a destination"
+      },
+      "position": 1,
+      "surface": "הֵבִיא"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "gam"
+        },
+        "evidence": "In וְהֶבֶל הֵבִיא גַם הוּא, “Abel, he too brought,” גַם focuses on הוּא, which refers back to Abel. It adds Abel alongside Cain as someone who brought an offering.",
+        "gloss": "too",
+        "language": "he",
+        "lemma": "גַּם",
+        "morphology": "Uninflected additive particle without prefix or suffix.",
+        "qualifier": "",
+        "root": "גממ",
+        "sense": "also, too, as well"
+      },
+      "position": 2,
+      "surface": "גַם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "hu"
+        },
+        "evidence": "הוּא refers back to Abel, the subject of הֵבִיא (“brought”). The preceding גַם gives גַם הוּא the sense “he too.”",
+        "gloss": "he",
+        "language": "he",
+        "lemma": "הוּא",
+        "morphology": "Independent personal pronoun, third person masculine singular.",
+        "qualifier": "",
+        "root": "הוא",
+        "sense": "he, it"
+      },
+      "position": 3,
+      "surface": "הוּא"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "bakar"
+        },
+        "evidence": "צֹאנוֹ (“his flock”) completes the construct phrase מִבְּכֹרוֹת צֹאנוֹ. Abel brought some of his flock’s firstborn animals, and וּמֵחֶלְבֵהֶן (“and from their fat”) refers back to them.",
+        "gloss": "some of the firstlings of",
+        "language": "he",
+        "lemma": "בְּכֹרָה",
+        "morphology": "Partitive מִן, with its נ assimilated to בּ, + plural construct noun בְּכֹרוֹת. No suffix.",
+        "qualifier": "",
+        "root": "בכר",
+        "sense": "firstlings"
+      },
+      "position": 4,
+      "surface": "מִבְּכֹרוֹת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "tson"
+        },
+        "evidence": "מִבְּכֹרוֹת צֹאנוֹ means “from the firstborn of his flock.” Abel selects firstborn animals from his flock, and the verse calls what he brings מִנְחָתוֹ, “his offering.”",
+        "gloss": "his flock",
+        "language": "he",
+        "lemma": "צֹאן",
+        "morphology": "Collective noun, common gender, singular construct, with a third-person masculine singular possessive suffix ־וֹ referring to Abel.",
+        "qualifier": "",
+        "root": "צאנ",
+        "sense": "the flock as offering"
+      },
+      "position": 5,
+      "surface": "צֹאנוֹ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chelev"
+        },
+        "evidence": "Abel brings an offering מִבְּכֹרוֹת צֹאנוֹ ‘from the firstborn of his flock’. The repeated preposition מֵ־ marks a portion, and the suffix ־הֶן refers back to בְּכֹרוֹת ‘firstborn’, identifying the fat as theirs.",
+        "gloss": "and some of their fat portions",
+        "language": "he",
+        "lemma": "חֵלֶב",
+        "morphology": "Conjunction וּ־ ‘and’ + partitive preposition מֵ־ ‘from’ + masculine plural construct noun + third-person feminine plural possessive suffix ־הֶן ‘their’.",
+        "qualifier": "",
+        "root": "חלב",
+        "sense": "animal fat"
+      },
+      "position": 6,
+      "surface": "וּמֵחֶלְבֵהֶן"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shaah-regard"
+        },
+        "evidence": "Yahweh is the subject. The repeated אֶל directs his regard toward both Abel and his offering. The corresponding denial of regard for Cain and his offering in Genesis 4:5 shows that this attention expresses favor.",
+        "gloss": "and he looked with favor",
+        "language": "he",
+        "lemma": "שָׁעָה",
+        "morphology": "Qal wayyiqtol, third masculine singular, with prefixed וַ־ and loss of the final radical ה in the short form.",
+        "qualifier": "",
+        "root": "שעה",
+        "sense": "look toward, regard"
+      },
+      "position": 7,
+      "surface": "וַיִּשַׁע"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yahweh"
+        },
+        "evidence": "יַהְוֶה is the subject of וַיִּשַׁע ‘looked with favor’. The two phrases אֶל הֶבֶל and וְאֶל מִנְחָתוֹ identify Abel and his offering as the recipients of Yahweh’s favor.",
+        "gloss": "Yahweh",
+        "language": "he",
+        "lemma": "יַהְוֶה",
+        "morphology": "Proper noun, masculine singular, without prefix or suffix.",
+        "qualifier": "",
+        "root": "הוה",
+        "sense": "Personal name of the God of Israel"
+      },
+      "position": 8,
+      "surface": "יַהְוֶה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "In וַיִּשַׁע יַהְוֶה אֶל הֶבֶל, אֶל marks Abel as the person toward whom YHWH directed his regard. The parallel וְאֶל מִנְחָתוֹ extends that regard to Abel’s offering.",
+        "gloss": "toward",
+        "language": "he",
+        "lemma": "אֶל",
+        "morphology": "Simple preposition without prefix or suffix.",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "toward (turning, looking)"
+      },
+      "position": 9,
+      "surface": "אֶל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "abel"
+        },
+        "evidence": "Abel brings the firstborn of his flock. The phrase אֶל הֶבֶל וְאֶל מִנְחָתוֹ pairs Abel with his offering as the two objects of Yahweh’s regard.",
+        "gloss": "Abel",
+        "language": "he",
+        "lemma": "הֶבֶל",
+        "morphology": "Masculine singular proper noun without prefix or suffix, governed by אֶל.",
+        "qualifier": "name",
+        "root": "הבל",
+        "sense": "Abel, Cain’s brother"
+      },
+      "position": 10,
+      "surface": "הֶבֶל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "elah",
+            "base": "cad803eb7db2b131b61fb3b93a576d63e0cc55ff679e4a05bef3c89da4d37113",
+            "change": "Broaden the existing turning and looking sense in elah to include directing attention toward a thing, and cite Gen.4.4.",
+            "definition": "With a verb of looking or turning, אֶל marks the person or thing toward which attention is directed.",
+            "evidence": "In Gen.4.4 Yahweh looks with favor toward Abel and toward his offering. The offering is the object of regard in the second phrase."
+          }
+        },
+        "evidence": "In וַיִּשַׁע יַהְוֶה אֶל הֶבֶל וְאֶל מִנְחָתוֹ, the repeated אֶל introduces the two objects of Yahweh’s regard. The marked occurrence introduces מִנְחָתוֹ, “his offering”, and וְ joins it to the preceding phrase “toward Abel”.",
+        "gloss": "toward",
+        "language": "he",
+        "lemma": "אֶל",
+        "morphology": "Prefixed coordinating conjunction וְ plus the preposition אֶל, without a pronominal suffix.",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "toward the person or thing regarded"
+      },
+      "position": 11,
+      "surface": "וְאֶל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "minchah"
+        },
+        "evidence": "Abel brought firstborn animals from his flock and their fat portions. The parallel phrases אֶל הֶבֶל and וְאֶל מִנְחָתוֹ identify both Abel and his offering as recipients of YHWH’s regard.",
+        "gloss": "his offering",
+        "language": "he",
+        "lemma": "מִנְחָה",
+        "morphology": "Feminine singular construct noun with a third-person masculine singular possessive suffix referring to Abel.",
+        "qualifier": "",
+        "root": "מנח",
+        "sense": "offering (to God)"
+      },
+      "position": 12,
+      "surface": "מִנְחָתוֹ"
+    }
+  ]
+}

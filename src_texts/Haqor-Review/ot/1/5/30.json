@@ -1,0 +1,247 @@
+{
+  "book": 1,
+  "chapter": 5,
+  "source": "ot",
+  "verse": 30,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chayah"
+        },
+        "evidence": "לֶמֶךְ is the subject of וַיְחִי. The verse counts the 595 years Lamech lived after he fathered Noah.",
+        "gloss": "and he lived",
+        "language": "he",
+        "lemma": "חָיָה",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ־ and an apocopated verb form.",
+        "qualifier": "",
+        "root": "חיה",
+        "sense": "live for a stated period"
+      },
+      "position": 0,
+      "surface": "וַיְחִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "lamech",
+            "base": null,
+            "change": "Add a personal-name article for לֶמֶךְ with its derivation left open.",
+            "definition": "A masculine personal name borne here by the son of Methuselah.",
+            "evidence": "Genesis 5:26 identifies Lamech by naming him as the son whom Methuselah fathered."
+          }
+        },
+        "evidence": "לֶמֶךְ is the subject of וַיְחִי, “he lived.” The phrase אַחֲרֵי הוֹלִידוֹ אֶת נֹחַ, “after he fathered Noah,” identifies him as Noah’s father, the same Lamech whom Methuselah fathered in Genesis 5:25–26.",
+        "gloss": "Lamech",
+        "language": "he",
+        "lemma": "לֶמֶךְ",
+        "morphology": "Masculine singular proper noun without prefix or suffix.",
+        "qualifier": "",
+        "root": "",
+        "sense": "Lamech, son of Methuselah"
+      },
+      "position": 1,
+      "surface": "לֶמֶךְ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "achar"
+        },
+        "evidence": "אַחֲרֵי governs הוֹלִידוֹ אֶת נֹחַ, “his fathering Noah.” The phrase marks the event after which Lamech lived another 595 years.",
+        "gloss": "after",
+        "language": "he",
+        "lemma": "אַחַר",
+        "morphology": "Preposition in the plural construct form אַחֲרֵי, without prefix or suffix.",
+        "qualifier": "",
+        "root": "אחר",
+        "sense": "after (time)"
+      },
+      "position": 2,
+      "surface": "אַחֲרֵי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yalad"
+        },
+        "evidence": "In אַחֲרֵי הוֹלִידוֹ אֶת נֹחַ, “after he fathered Noah,” the suffix refers to Lamech, and אֶת marks Noah as the direct object.",
+        "gloss": "he fathered",
+        "language": "he",
+        "lemma": "יָלַד",
+        "morphology": "Hiphil infinitive construct with a third-person masculine singular subject suffix ־וֹ",
+        "qualifier": "",
+        "root": "ילד",
+        "sense": "beget, father a child"
+      },
+      "position": 3,
+      "surface": "הוֹלִידוֹ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "et"
+        },
+        "evidence": "In אַחֲרֵי הוֹלִידוֹ אֶת נֹחַ (“after he fathered Noah”), אֶת marks the personal name נֹחַ as the direct object of הוֹלִידוֹ. Lamech is the one who fathered Noah.",
+        "gloss": "(untranslated)",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Direct-object particle, without prefix or suffix.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "(marks the definite object)"
+      },
+      "position": 4,
+      "surface": "אֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "noah-son-of-lamech",
+            "base": null,
+            "change": "Add a personal-name article for נֹחַ linked to the root article nuach.",
+            "definition": "Noah, the son whom Lamech names in hope of relief from toil.",
+            "evidence": "Genesis 5:29 gives the name נֹחַ and explains it through the wordplay on יְנַחֲמֵנוּ, “he will comfort us.”"
+          }
+        },
+        "evidence": "In אַחֲרֵי הוֹלִידוֹ אֶת נֹחַ, “after he fathered Noah,” אֶת marks נֹחַ as the direct object. Lamech is the father, and Noah is the son he named in the preceding verse.",
+        "gloss": "Noah",
+        "language": "he",
+        "lemma": "נֹחַ",
+        "morphology": "Masculine singular personal name, without prefix or suffix.",
+        "qualifier": "",
+        "root": "נוח",
+        "sense": "Noah, son of Lamech"
+      },
+      "position": 5,
+      "surface": "נֹחַ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chamesh"
+        },
+        "evidence": "In חָמֵשׁ וְתִשְׁעִים שָׁנָה, חָמֵשׁ supplies the five in “five and ninety years.” Its feminine form agrees with שָׁנָה.",
+        "gloss": "five",
+        "language": "he",
+        "lemma": "חָמֵשׁ",
+        "morphology": "Cardinal numeral, feminine singular absolute, without prefix or suffix.",
+        "qualifier": "",
+        "root": "חמש",
+        "sense": "five"
+      },
+      "position": 6,
+      "surface": "חָמֵשׁ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "tesha",
+            "base": "e9544d6af6003e9006e1dc8348072a4c19e00c262747f2424e6183df84ae37db",
+            "change": "Add Gen.5.30 as an example of the existing ninety sense in tesha.",
+            "definition": "The cardinal number ninety, nine tens.",
+            "evidence": "Gen.5.30 joins five to ninety in counting the years Lamech lived after Noah’s birth."
+          }
+        },
+        "evidence": "In חָמֵשׁ וְתִשְׁעִים שָׁנָה, ‘five and ninety years’, the marked numeral supplies the ninety in ninety-five. The following וַחֲמֵשׁ מֵאֹת שָׁנָה adds five hundred years, giving 595 years of Lamech’s life after Noah’s birth.",
+        "gloss": "ninety",
+        "language": "he",
+        "lemma": "תִּשְׁעִים",
+        "morphology": "Prefixed conjunction וְ ‘and’ + cardinal numeral, common gender, plural absolute.",
+        "qualifier": "",
+        "root": "תשע",
+        "sense": "The number ninety, nine tens."
+      },
+      "position": 7,
+      "surface": "וְתִשְׁעִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shanah"
+        },
+        "evidence": "In חָמֵשׁ וְתִשְׁעִים שָׁנָה, the marked noun supplies the unit for ‘ninety-five.’ Together with the following five hundred years, it measures how long Lamech lived after he fathered Noah.",
+        "gloss": "years",
+        "language": "he",
+        "lemma": "שָׁנָה",
+        "morphology": "Common noun, feminine singular absolute, without prefix or suffix.",
+        "qualifier": "noun",
+        "root": "שנה",
+        "sense": "years of a life, age"
+      },
+      "position": 8,
+      "surface": "שָׁנָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chamesh"
+        },
+        "evidence": "In וַחֲמֵשׁ מֵאֹת שָׁנָה, the marked numeral counts hundreds. The conjunction adds five hundred years to the preceding ninety-five, giving 595 years.",
+        "gloss": "and five",
+        "language": "he",
+        "lemma": "חָמֵשׁ",
+        "morphology": "Conjunction וַ־ prefixed to a feminine singular absolute cardinal numeral.",
+        "qualifier": "",
+        "root": "חמש",
+        "sense": "five"
+      },
+      "position": 9,
+      "surface": "וַחֲמֵשׁ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "meah"
+        },
+        "evidence": "In וַחֲמֵשׁ מֵאֹת שָׁנָה, חֲמֵשׁ counts five hundreds, giving “and five hundred years.” Together with the preceding ninety-five years, this gives 595 years.",
+        "gloss": "hundreds",
+        "language": "he",
+        "lemma": "מֵאָה",
+        "morphology": "Cardinal numeral, plural absolute, without prefix or suffix.",
+        "qualifier": "",
+        "root": "מאה",
+        "sense": "hundreds (plural מֵאוֹת, with the digits: three hundred to nine hundred)"
+      },
+      "position": 10,
+      "surface": "מֵאֹת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shanah"
+        },
+        "evidence": "In וַחֲמֵשׁ מֵאֹת שָׁנָה, “and five hundred years,” the marked noun supplies the unit for five hundred. Together with the preceding ninety-five years, it measures the 595 years Lamech lived after fathering Noah.",
+        "gloss": "years",
+        "language": "he",
+        "lemma": "שָׁנָה",
+        "morphology": "Common noun, feminine singular absolute, with no prefix or suffix.",
+        "qualifier": "noun",
+        "root": "שנה",
+        "sense": "years of a life, age"
+      },
+      "position": 11,
+      "surface": "שָׁנָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yalad"
+        },
+        "evidence": "Lamech is the subject of וַיּוֹלֶד, and בָּנִים וּבָנוֹת (“sons and daughters”) are its direct objects.",
+        "gloss": "and he fathered",
+        "language": "he",
+        "lemma": "יָלַד",
+        "morphology": "Hiphil wayyiqtol, third person masculine singular, with prefixed וַ and no suffix",
+        "qualifier": "",
+        "root": "ילד",
+        "sense": "beget, father a child"
+      },
+      "position": 12,
+      "surface": "וַיּוֹלֶד"
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "book": 1,
+  "chapter": 4,
+  "review": {
+    "entities": [
+      {
+        "evidence": "Lamech recalls the sevenfold vengeance promised in Genesis 4:15 for anyone who kills Cain, Abel’s brother.",
+        "key": "Cain@Gen.4.1",
+        "position": 3
+      },
+      {
+        "evidence": "The speaker addresses his wives Adah and Zillah in Genesis 4:23. Genesis 4:18–19 identifies their husband as the son of Methushael.",
+        "key": "Lamech@Gen.4.18",
+        "position": 4
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "for",
+        "position": 0
+      },
+      {
+        "gloss": "seven times over",
+        "position": 1
+      },
+      {
+        "gloss": "will be avenged",
+        "position": 2
+      },
+      {
+        "gloss": "Cain",
+        "position": 3
+      },
+      {
+        "gloss": "and Lamech",
+        "position": 4
+      },
+      {
+        "gloss": "seventy",
+        "position": 5
+      },
+      {
+        "gloss": "and seven",
+        "position": 6
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[For|0] [Cain|3] [will be avenged|2] [seven times over|1], [and Lamech|4] {will be avenged} [seventy|5]-[seven|6] {times over}!”"
+  },
+  "source": "ot",
+  "verse": 24,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ki"
+        },
+        "evidence": "Lamech gives the ground for his boast by invoking Cain’s sevenfold vengeance. The parallel clause וְלֶמֶךְ שִׁבְעִים וְשִׁבְעָה carries over the verb יֻקַּם and raises the figure to seventy-seven for Lamech.",
+        "gloss": "for",
+        "language": "he",
+        "lemma": "כִּי",
+        "morphology": "Uninflected conjunction with no prefix or suffix.",
+        "qualifier": "conjunction",
+        "root": "כי",
+        "sense": "for, because"
+      },
+      "position": 0,
+      "surface": "כִּי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shaba"
+        },
+        "evidence": "שִׁבְעָתַיִם modifies יֻקַּם, specifying how fully Cain is avenged. Lamech contrasts Cain’s sevenfold vengeance with his own seventy-sevenfold vengeance.",
+        "gloss": "seven times over",
+        "language": "he",
+        "lemma": "שִׁבְעָתַיִם",
+        "morphology": "Feminine dual absolute form used adverbially.",
+        "qualifier": "",
+        "root": "שבע",
+        "sense": "sevenfold"
+      },
+      "position": 1,
+      "surface": "שִׁבְעָתַיִם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "naqam"
+        },
+        "evidence": "קָיִן is the subject of the passive יֻקַּם. Vengeance will be exacted on Cain’s behalf, and שִׁבְעָתַיִם specifies its measure as sevenfold.",
+        "gloss": "will be avenged",
+        "language": "he",
+        "lemma": "נָקַם",
+        "morphology": "Hophal imperfect, third person masculine singular",
+        "qualifier": "",
+        "root": "נקמ",
+        "sense": "to have vengeance exacted"
+      },
+      "position": 2,
+      "surface": "יֻקַּם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "cain",
+            "base": null,
+            "change": "Add a personal-name article for Cain. Its proposed root link requires a companion article for קינ, which is absent from the local lexicon.",
+            "definition": "Cain, the son of Adam and Eve and brother of Abel.",
+            "evidence": "Genesis 4:1 names Eve’s son קַיִן. Genesis 4:2 identifies Abel as his brother and names Cain again when describing his work."
+          }
+        },
+        "evidence": "In Genesis 4:24, קָיִן is the subject of יֻקַּם, “will be avenged.” Lamech contrasts sevenfold vengeance for Cain with seventy-sevenfold vengeance for himself, recalling the protection promised to Cain in Genesis 4:15.",
+        "gloss": "Cain",
+        "language": "he",
+        "lemma": "קַיִן",
+        "morphology": "Masculine singular proper noun in the pausal form קָיִן, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "קינ",
+        "sense": "The personal name of Abel’s brother."
+      },
+      "position": 3,
+      "surface": "קָיִן"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "lamech",
+            "base": null,
+            "change": "Add a personal-name article for לֶמֶךְ. The text gives no derivation for the name.",
+            "definition": "Lamech is a masculine personal name. Here it designates the son of Methushael.",
+            "evidence": "Genesis 4:18 names Lamech as Methushael’s son. In 4:23–24 he addresses his wives and names himself alongside Cain."
+          }
+        },
+        "evidence": "Genesis 4:23 identifies Lamech as the speaker. In 4:24, לֶמֶךְ parallels קָיִן as the subject of the understood verb יֻקַּם, “will be avenged.” Cain will be avenged sevenfold, and Lamech seventy-sevenfold.",
+        "gloss": "and Lamech",
+        "language": "he",
+        "lemma": "לֶמֶךְ",
+        "morphology": "Conjunction וְ prefixed to a masculine singular proper noun.",
+        "qualifier": "",
+        "root": "",
+        "sense": "Lamech, son of Methushael and speaker of the saying."
+      },
+      "position": 4,
+      "surface": "וְלֶמֶךְ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shaba"
+        },
+        "evidence": "In שִׁבְעִים וְשִׁבְעָה, the marked word supplies the seventy and the following word adds seven. Together they express seventy-sevenfold vengeance for Lamech.",
+        "gloss": "seventy",
+        "language": "he",
+        "lemma": "שִׁבְעִים",
+        "morphology": "Cardinal numeral, plural absolute, common to both genders, with no prefix or pronominal suffix.",
+        "qualifier": "",
+        "root": "שבע",
+        "sense": "seventy"
+      },
+      "position": 5,
+      "surface": "שִׁבְעִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shaba"
+        },
+        "evidence": "שִׁבְעִים וְשִׁבְעָה means “seventy and seven.” The marked numeral supplies the final seven in the count of seventy-seven times, set against Cain’s sevenfold vengeance.",
+        "gloss": "and seven",
+        "language": "he",
+        "lemma": "שֶׁבַע",
+        "morphology": "Conjunction וְ plus שִׁבְעָה, a masculine singular absolute cardinal numeral.",
+        "qualifier": "",
+        "root": "שבע",
+        "sense": "seven"
+      },
+      "position": 6,
+      "surface": "וְשִׁבְעָה"
+    }
+  ]
+}

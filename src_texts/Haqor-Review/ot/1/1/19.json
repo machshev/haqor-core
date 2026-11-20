@@ -1,0 +1,141 @@
+{
+  "book": 1,
+  "chapter": 1,
+  "review": {
+    "entities": [],
+    "glosses": [
+      {
+        "gloss": "then there was",
+        "position": 0
+      },
+      {
+        "gloss": "evening",
+        "position": 1
+      },
+      {
+        "gloss": "and there was",
+        "position": 2
+      },
+      {
+        "gloss": "morning",
+        "position": 3
+      },
+      {
+        "gloss": "day",
+        "position": 4
+      },
+      {
+        "gloss": "fourth",
+        "position": 5
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[Then there was|0] [evening|1], [and there was|2] [morning|3], [the|4] [fourth|5] [day|4]."
+  },
+  "source": "ot",
+  "verse": 19,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "hayah"
+        },
+        "evidence": "The verb takes עֶרֶב ‘evening’ as its subject. The parallel וַיְהִי בֹקֶר ‘and morning came’ confirms that the first clause recounts the arrival of evening.",
+        "gloss": "and there came",
+        "language": "he",
+        "lemma": "הָיָה",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ־.",
+        "qualifier": "",
+        "root": "היה",
+        "sense": "to come to pass"
+      },
+      "position": 0,
+      "surface": "וַיְהִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "erev"
+        },
+        "evidence": "The repeated וַיְהִי pairs עֶרֶב with בֹקֶר, “morning,” in the refrain that closes the fourth day.",
+        "gloss": "evening",
+        "language": "he",
+        "lemma": "עֶרֶב",
+        "morphology": "Common noun, masculine singular absolute, without prefix or suffix.",
+        "qualifier": "",
+        "root": "ערב",
+        "sense": "evening, sunset"
+      },
+      "position": 1,
+      "surface": "עֶרֶב"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "hayah"
+        },
+        "evidence": "The marked וַיְהִי has בֹקֶר ‘morning’ as its subject. The parallel clauses וַיְהִי עֶרֶב וַיְהִי בֹקֶר recount the arrival of evening and then morning on the fourth day.",
+        "gloss": "and there came",
+        "language": "he",
+        "lemma": "הָיָה",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed conjunction וַ־",
+        "qualifier": "",
+        "root": "היה",
+        "sense": "to come to pass"
+      },
+      "position": 2,
+      "surface": "וַיְהִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "baqar"
+        },
+        "evidence": "וַיְהִי בֹקֶר, “and there was morning,” parallels וַיְהִי עֶרֶב, “and there was evening.” The pair marks the fourth day.",
+        "gloss": "morning",
+        "language": "he",
+        "lemma": "בֹּקֶר",
+        "morphology": "Common noun, masculine singular absolute, without prefix or suffix.",
+        "qualifier": "",
+        "root": "בקר",
+        "sense": "morning"
+      },
+      "position": 3,
+      "surface": "בֹקֶר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yom"
+        },
+        "evidence": "In יוֹם רְבִיעִי, the ordinal רְבִיעִי ‘fourth’ identifies the day just described by evening and morning as the fourth in the sequence.",
+        "gloss": "day",
+        "language": "he",
+        "lemma": "יוֹם",
+        "morphology": "Common noun, masculine singular absolute, without prefix or suffix.",
+        "qualifier": "",
+        "root": "יומ",
+        "sense": "a day, counted"
+      },
+      "position": 4,
+      "surface": "יוֹם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "reva"
+        },
+        "evidence": "In יוֹם רְבִיעִי, רְבִיעִי agrees with the masculine singular noun יוֹם and identifies the day as fourth in the creation sequence.",
+        "gloss": "fourth",
+        "language": "he",
+        "lemma": "רְבִיעִי",
+        "morphology": "Ordinal adjective, masculine singular absolute, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "רבע",
+        "sense": "fourth (in order)"
+      },
+      "position": 5,
+      "surface": "רְבִיעִי"
+    }
+  ]
+}

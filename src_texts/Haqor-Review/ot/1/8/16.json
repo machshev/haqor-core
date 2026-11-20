@@ -1,0 +1,139 @@
+{
+  "book": 1,
+  "chapter": 8,
+  "source": "ot",
+  "verse": 16,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yatsa"
+        },
+        "evidence": "מִן הַתֵּבָה identifies the ark as the place Noah is commanded to leave. The singular אַתָּה addresses Noah directly, and אִתָּךְ indicates that his family is to go with him.",
+        "gloss": "go out",
+        "language": "he",
+        "lemma": "יָצָא",
+        "morphology": "Qal imperative, second person masculine singular",
+        "qualifier": "",
+        "root": "יצא",
+        "sense": "go out, depart from a place or someone’s presence"
+      },
+      "position": 0,
+      "surface": "צֵא"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "min"
+        },
+        "evidence": "In צֵא מִן הַתֵּבָה, “go out of the ark,” מִן introduces הַתֵּבָה as the place Noah is commanded to leave.",
+        "gloss": "out of",
+        "language": "he",
+        "lemma": "מִן",
+        "morphology": "Independent preposition without prefix or suffix.",
+        "qualifier": "",
+        "root": "מנ",
+        "sense": "from, away from (place, separation)"
+      },
+      "position": 1,
+      "surface": "מִן"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "tevah",
+            "base": null,
+            "change": "Add תֵּבָה under its own consonants תבה, with the flood ark as the sense in Genesis 8:16.",
+            "definition": "A vessel that holds and protects its occupants on water, used of Noah’s ark and of the papyrus basket that held the infant Moses.",
+            "evidence": "Genesis 7:17 describes the floodwaters lifting the ark, and Genesis 8:16 calls Noah and his family out of it. Exodus 2:3 uses the same noun for the pitch-coated papyrus basket in which Moses’ mother places him."
+          }
+        },
+        "evidence": "In צֵא מִן הַתֵּבָה, “come out of the ark,” מִן identifies the place Noah is to leave. The rest of the verse names the family members who are to leave with him, the same household told to enter the ark in Genesis 7:1.",
+        "gloss": "the ark",
+        "language": "he",
+        "lemma": "תֵּבָה",
+        "morphology": "Definite article הַ־ prefixed to a feminine singular absolute common noun. The dagesh in ת marks doubling after the article.",
+        "qualifier": "",
+        "root": "תבה",
+        "sense": "The vessel that carried Noah, his household, and the animals through the flood."
+      },
+      "position": 2,
+      "surface": "הַתֵּבָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "atah"
+        },
+        "evidence": "The singular imperative צֵא addresses Noah. After מִן הַתֵּבָה, “from the ark,” אַתָּה singles him out as the first in the list, followed by his wife, his sons, and his sons’ wives.",
+        "gloss": "you",
+        "language": "he",
+        "lemma": "אַתָּה",
+        "morphology": "Independent second-person masculine singular pronoun, without prefix or suffix.",
+        "qualifier": "",
+        "root": "אנת",
+        "sense": "you, as for you (the one addressed set apart)"
+      },
+      "position": 3,
+      "surface": "אַתָּה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "enosh"
+        },
+        "evidence": "The suffix ךָ refers to Noah, addressed as אַתָּה. The household list pairs him with his wife, just as וּנְשֵׁי בָנֶיךָ identifies the wives of his sons.",
+        "gloss": "and your wife",
+        "language": "he",
+        "lemma": "אִשָּׁה",
+        "morphology": "Conjunction וְ + feminine singular construct noun אִשְׁתְּ + second-person masculine singular possessive suffix ךָ.",
+        "qualifier": "",
+        "root": "אנש",
+        "sense": "wife"
+      },
+      "position": 4,
+      "surface": "וְאִשְׁתְּךָ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "enosh"
+        },
+        "evidence": "In וּנְשֵׁי בָנֶיךָ, the construct נְשֵׁי takes בָנֶיךָ ‘your sons’ as its complement. The parallel with וְאִשְׁתְּךָ ‘and your wife’ identifies the women as the sons’ wives.",
+        "gloss": "and the wives of",
+        "language": "he",
+        "lemma": "נָשִׁים",
+        "morphology": "Conjunction וּ ‘and’ + נְשֵׁי, feminine plural construct of נָשִׁים.",
+        "qualifier": "",
+        "root": "אנש",
+        "sense": "wives"
+      },
+      "position": 6,
+      "surface": "וּנְשֵׁי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "et",
+            "base": "31c9a635be8bba9a67417e75ea7122e240ae707e04a841533a59ecd2869d0f80",
+            "change": "Add Genesis 8:16 beside Genesis 6:18 under the existing sense of accompaniment, documenting the pausal suffix addressed to Noah.",
+            "definition": "Marks the person in whose company someone goes or acts.",
+            "evidence": "Genesis 8:16 ends the command to leave the ark with אִתָּךְ, identifying Noah as the person his family accompanies."
+          }
+        },
+        "evidence": "צֵא and אַתָּה address Noah in the masculine singular. His wife, his sons and his sons’ wives are to leave the ark with him. The verse-final אִתָּךְ refers back to Noah, just as אִתָּךְ does when the same family is told to enter the ark in Genesis 6:18.",
+        "gloss": "with you",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Preposition on the suffixed stem אִתּ־ with a second-person masculine singular pronominal suffix in the verse-final pausal form אִתָּךְ.",
+        "qualifier": "preposition",
+        "root": "את",
+        "sense": "with, together with (company)"
+      },
+      "position": 8,
+      "surface": "אִתָּךְ"
+    }
+  ]
+}

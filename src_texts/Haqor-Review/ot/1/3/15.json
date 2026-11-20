@@ -1,0 +1,342 @@
+{
+  "book": 1,
+  "chapter": 3,
+  "review": {
+    "entities": [],
+    "glosses": [
+      {
+        "gloss": "and hostility",
+        "position": 0
+      },
+      {
+        "gloss": "I will put",
+        "position": 1
+      },
+      {
+        "gloss": "between you",
+        "position": 2
+      },
+      {
+        "gloss": "and",
+        "position": 3
+      },
+      {
+        "gloss": "the woman",
+        "position": 4
+      },
+      {
+        "gloss": "and between",
+        "position": 5
+      },
+      {
+        "gloss": "your offspring",
+        "position": 6
+      },
+      {
+        "gloss": "and",
+        "position": 7
+      },
+      {
+        "gloss": "her offspring",
+        "position": 8
+      },
+      {
+        "gloss": "he",
+        "position": 9
+      },
+      {
+        "gloss": "he will strike you",
+        "position": 10
+      },
+      {
+        "gloss": "head",
+        "position": 11
+      },
+      {
+        "gloss": "and you",
+        "position": 12
+      },
+      {
+        "gloss": "you will strike him",
+        "position": 13
+      },
+      {
+        "gloss": "heel",
+        "position": 14
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[I will|1] [also|0] [put|1] [hostility|0] [between you|2] [and|3] [the woman|4], [and between|5] [your offspring|6] [and|7] [her offspring|8]. [He|9] [will strike you|10] [{on} the head|11], [and you|12] [will strike him|13] [{on} the heel|14].”"
+  },
+  "source": "ot",
+  "verse": 15,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ayab"
+        },
+        "evidence": "אֵיבָה is the object of אָשִׁית, “I will put.” The paired בֵּין phrases identify the parties to this hostility, first the serpent and the woman, then their respective offspring. The blows to head and heel illustrate the enmity.",
+        "gloss": "and enmity",
+        "language": "he",
+        "lemma": "אֵיבָה",
+        "morphology": "Conjunction וְ prefixed to a feminine singular absolute noun.",
+        "qualifier": "",
+        "root": "איב",
+        "sense": "the enmity God sets between the serpent and the woman"
+      },
+      "position": 0,
+      "surface": "וְאֵיבָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shith"
+        },
+        "evidence": "The speaker places אֵיבָה “enmity” first as the direct object of אָשִׁית “I will put.” The paired בֵּין phrases specify between whom the speaker will put enmity: between the serpent and the woman, and between their offspring.",
+        "gloss": "I will put",
+        "language": "he",
+        "lemma": "שִׁית",
+        "morphology": "Qal imperfect, first person common singular, with preformative א and no suffix",
+        "qualifier": "",
+        "root": "שית",
+        "sense": "to put or set something between parties"
+      },
+      "position": 1,
+      "surface": "אָשִׁית"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "bayin"
+        },
+        "evidence": "In וְאֵיבָה אָשִׁית בֵּינְךָ וּבֵין הָאִשָּׁה, “I will put enmity between you and the woman,” the suffix identifies the serpent as one party to the enmity, and וּבֵין הָאִשָּׁה identifies the woman as the other.",
+        "gloss": "between you",
+        "language": "he",
+        "lemma": "בַּיִן",
+        "morphology": "Preposition with a second-person masculine singular pronominal suffix referring to the serpent.",
+        "qualifier": "",
+        "root": "בינ",
+        "sense": "between (two parties): of covenant, sign, witness, strife"
+      },
+      "position": 2,
+      "surface": "בֵּינְךָ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "bayin"
+        },
+        "evidence": "In בֵּינְךָ וּבֵין הָאִשָּׁה ‘between you and the woman’, וּבֵין introduces the woman as the second party to the enmity (אֵיבָה) that God sets between her and the serpent.",
+        "gloss": "and between",
+        "language": "he",
+        "lemma": "בַּיִן",
+        "morphology": "Conjunction וּ ‘and’ prefixed to the preposition בֵּין, with no suffix.",
+        "qualifier": "",
+        "root": "בינ",
+        "sense": "between (two parties): of covenant, sign, witness, strife"
+      },
+      "position": 3,
+      "surface": "וּבֵין"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "enosh"
+        },
+        "evidence": "בֵּינְךָ וּבֵין הָאִשָּׁה means “between you and the woman.” The parallel phrase contrasts the serpent’s offspring with זַרְעָהּ, “her offspring,” referring back to the woman.",
+        "gloss": "the woman",
+        "language": "he",
+        "lemma": "אִשָּׁה",
+        "morphology": "Common noun, feminine singular absolute, with prefixed definite article הָ.",
+        "qualifier": "",
+        "root": "אנש",
+        "sense": "woman"
+      },
+      "position": 4,
+      "surface": "הָאִשָּׁה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "bayin"
+        },
+        "evidence": "In וּבֵין זַרְעֲךָ וּבֵין זַרְעָהּ, the marked וּבֵין introduces “your offspring” as the first of two parties. The next וּבֵין introduces “her offspring” as the other. אֵיבָה אָשִׁית (“I will put enmity”) identifies the relationship between them.",
+        "gloss": "and between",
+        "language": "he",
+        "lemma": "בַּיִן",
+        "morphology": "Preposition בֵּין with prefixed conjunction וּ and no suffix.",
+        "qualifier": "",
+        "root": "בינ",
+        "sense": "between (two parties): of covenant, sign, witness, strife"
+      },
+      "position": 5,
+      "surface": "וּבֵין"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "zera"
+        },
+        "evidence": "The suffix ־ךָ refers to the serpent. The parallel phrases וּבֵין זַרְעֲךָ וּבֵין זַרְעָהּ extend the enmity between the serpent and the woman to their respective offspring.",
+        "gloss": "your offspring",
+        "language": "he",
+        "lemma": "זֶרַע",
+        "morphology": "Masculine singular noun in the construct state with the second-person masculine singular possessive suffix ־ךָ.",
+        "qualifier": "",
+        "root": "זרע",
+        "sense": "offspring, descendants"
+      },
+      "position": 6,
+      "surface": "זַרְעֲךָ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "bayin"
+        },
+        "evidence": "In וּבֵין זַרְעֲךָ וּבֵין זַרְעָהּ, “and between your offspring and hers,” the marked וּבֵין introduces her offspring as the second party to the enmity expressed by וְאֵיבָה אָשִׁית.",
+        "gloss": "and",
+        "language": "he",
+        "lemma": "בַּיִן",
+        "morphology": "Conjunction וּ־ prefixed to the preposition בֵּין, with no suffix.",
+        "qualifier": "",
+        "root": "בינ",
+        "sense": "between (two parties): of covenant, sign, witness, strife"
+      },
+      "position": 7,
+      "surface": "וּבֵין"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "zera"
+        },
+        "evidence": "The verse pairs the serpent and the woman, then extends their enmity to זַרְעֲךָ ‘your offspring’ and זַרְעָהּ ‘her offspring’. The suffix ־ָהּ refers to הָאִשָּׁה ‘the woman’.",
+        "gloss": "her offspring",
+        "language": "he",
+        "lemma": "זֶרַע",
+        "morphology": "Masculine singular construct noun with a third-person feminine singular possessive suffix.",
+        "qualifier": "",
+        "root": "זרע",
+        "sense": "offspring, descendants"
+      },
+      "position": 8,
+      "surface": "זַרְעָהּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "hu"
+        },
+        "evidence": "הוּא refers back to זַרְעָהּ (“her offspring”). It agrees with the masculine singular noun זֶרַע and marks the subject of יְשׁוּפְךָ (“he will strike you”), in contrast with וְאַתָּה (“and you”) in the next clause.",
+        "gloss": "he (the woman’s offspring)",
+        "language": "he",
+        "lemma": "הוּא",
+        "morphology": "Independent personal pronoun, third person masculine singular.",
+        "qualifier": "",
+        "root": "הוא",
+        "sense": "he, it"
+      },
+      "position": 9,
+      "surface": "הוּא"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "shuph",
+            "base": null,
+            "change": "Add a Hebrew verb entry for שׁוּף with the Qal sense ‘strike’.",
+            "definition": "To strike an opponent, here on the head.",
+            "evidence": "In Genesis 3:15 the woman's offspring strikes the serpent on the head, and the serpent in turn strikes the offspring on the heel. The repeated verb describes the hostile action common to both clauses."
+          }
+        },
+        "evidence": "הוּא refers back to זַרְעָהּ, the woman's offspring. The suffix ־ךָ identifies the serpent as the one struck, and רֹאשׁ specifies where the blow lands. The next clause reverses the participants and uses the same verb with עָקֵב, the heel.",
+        "gloss": "he will strike you",
+        "language": "he",
+        "lemma": "שׁוּף",
+        "morphology": "Qal imperfect, third masculine singular, with a second masculine singular direct-object suffix ־ךָ.",
+        "qualifier": "",
+        "root": "שופ",
+        "sense": "To strike an opponent on a particular part of the body."
+      },
+      "position": 10,
+      "surface": "יְשׁוּפְךָ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "rosh"
+        },
+        "evidence": "In יְשׁוּפְךָ רֹאשׁ, the suffix ךָ identifies the serpent as the one struck, and רֹאשׁ specifies where the blow lands. The parallel עָקֵב ‘heel’ names the body part struck in return.",
+        "gloss": "head",
+        "language": "he",
+        "lemma": "רֹאשׁ",
+        "morphology": "Common noun, masculine singular absolute, without prefix or suffix.",
+        "qualifier": "head",
+        "root": "ראש",
+        "sense": "head"
+      },
+      "position": 11,
+      "surface": "רֹאשׁ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "atah"
+        },
+        "evidence": "The explicit אַתָּה contrasts the serpent with הוּא, the woman’s offspring, in the preceding clause. The verb תְּשׁוּפֶנּוּ already marks a second-person masculine singular subject, so the pronoun highlights the serpent’s part in the reciprocal action.",
+        "gloss": "and you, for your part",
+        "language": "he",
+        "lemma": "אַתָּה",
+        "morphology": "Conjunction וְ prefixed to the independent second-person masculine singular pronoun אַתָּה.",
+        "qualifier": "",
+        "root": "אנת",
+        "sense": "you, as for you (the one addressed set apart)"
+      },
+      "position": 12,
+      "surface": "וְאַתָּה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "shuph",
+            "base": null,
+            "change": "Add שׁוּף with the transitive Qal sense “strike.”",
+            "definition": "Strike an opponent on a particular part of the body.",
+            "evidence": "In Genesis 3:15 the serpent strikes the heel of the one who strikes its head. The repeated verb expresses the action shared by both clauses."
+          }
+        },
+        "evidence": "וְאַתָּה identifies the serpent as the subject. The suffix ־ֶנּוּ refers to the woman’s offspring, and עָקֵב locates the strike at his heel. The preceding clause uses the same verb with the roles reversed and רֹאשׁ, “head,” as the point of impact. Both clauses describe one party striking the other.",
+        "gloss": "you will strike him",
+        "language": "he",
+        "lemma": "שׁוּף",
+        "morphology": "Qal imperfect, second masculine singular (תְּ־), with third masculine singular direct-object suffix (־ֶנּוּ).",
+        "qualifier": "",
+        "root": "שופ",
+        "sense": "Strike an opponent on a particular part of the body."
+      },
+      "position": 13,
+      "surface": "תְּשׁוּפֶנּוּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "aqeb-heel"
+        },
+        "evidence": "In תְּשׁוּפֶנּוּ עָקֵב, the suffix on the verb identifies whom the serpent strikes, and עָקֵב specifies where the blow lands. It parallels רֹאשׁ (“head”) in the preceding clause.",
+        "gloss": "heel",
+        "language": "he",
+        "lemma": "עָקֵב",
+        "morphology": "Masculine singular absolute noun without prefix or suffix.",
+        "qualifier": "noun",
+        "root": "עקב",
+        "sense": "heel"
+      },
+      "position": 14,
+      "surface": "עָקֵב"
+    }
+  ]
+}

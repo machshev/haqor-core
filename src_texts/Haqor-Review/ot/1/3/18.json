@@ -1,0 +1,139 @@
+{
+  "book": 1,
+  "chapter": 3,
+  "source": "ot",
+  "verse": 18,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "qots",
+            "base": null,
+            "change": "Add the Hebrew noun קוֹץ with its botanical sense.",
+            "definition": "A thorn or thorny plant, used collectively here for thorny growth.",
+            "evidence": "Genesis 3:18 pairs קוֹץ with thistle as growth the ground brings forth."
+          }
+        },
+        "evidence": "קוֹץ and דַּרְדַּר “thistle” are the paired objects of תַּצְמִיחַ “it will cause to sprout.” The ground produces both for the man, who must eat the plants of the field. The singular קוֹץ names a kind of growth collectively.",
+        "gloss": "and thorns",
+        "language": "he",
+        "lemma": "קוֹץ",
+        "morphology": "Prefixed conjunction וְ־ “and” + common noun, masculine singular absolute, used collectively.",
+        "qualifier": "",
+        "root": "קוצ",
+        "sense": "Thorny plants growing from the ground."
+      },
+      "position": 0,
+      "surface": "וְקוֹץ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "dardar",
+            "base": null,
+            "change": "Add the plant noun under its own consonants, דרדר. Its biblical uses establish the plant sense but give no basis for deriving it from דרר.",
+            "definition": "A prickly weed, traditionally called a thistle. The singular can denote a growth of such weeds.",
+            "evidence": "Genesis 3:18 and Hosea 10:8 both pair דַּרְדַּר with קוֹץ “thorns.”"
+          }
+        },
+        "evidence": "In Genesis 3:18, קוֹץ “thorns” and דַּרְדַּר are the paired objects of תַּצְמִיחַ “it will cause to sprout.” The ground produces both as the man labors for food. Hosea 10:8 pairs the same nouns as growth that overtakes abandoned altars.",
+        "gloss": "thistles",
+        "language": "he",
+        "lemma": "דַּרְדַּר",
+        "morphology": "Conjunction וְ־ “and” prefixed to a masculine singular absolute noun used collectively.",
+        "qualifier": "",
+        "root": "דרדר",
+        "sense": "A prickly weed that grows on the land."
+      },
+      "position": 1,
+      "surface": "וְדַרְדַּר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "tsemah"
+        },
+        "evidence": "The feminine singular verb refers back to הָאֲדָמָה, “the ground,” in verse 17. וְקוֹץ וְדַרְדַּר, “thorns and thistles,” precede the verb as its objects. The ground will make them sprout for the addressee (לָךְ).",
+        "gloss": "it will cause to sprout",
+        "language": "he",
+        "lemma": "צָמַח",
+        "morphology": "Hiphil imperfect, third person feminine singular",
+        "qualifier": "",
+        "root": "צמח",
+        "sense": "to cause plants to grow from the ground"
+      },
+      "position": 2,
+      "surface": "תַּצְמִיחַ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "akal"
+        },
+        "evidence": "אֶת marks עֵשֶׂב הַשָּׂדֶה (‘the plants of the field’) as the direct object of וְאָכַלְתָּ. The verse predicts what the ground will grow and what the man will eat.",
+        "gloss": "and you will eat",
+        "language": "he",
+        "lemma": "אָכַל",
+        "morphology": "Qal perfect, second person masculine singular, with prefixed וְ (weqatal) continuing the prediction",
+        "qualifier": "",
+        "root": "אכל",
+        "sense": "eat"
+      },
+      "position": 4,
+      "surface": "וְאָכַלְתָּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "et"
+        },
+        "evidence": "אֶת marks עֵשֶׂב הַשָּׂדֶה (“the vegetation of the field”) as the direct object of וְאָכַלְתָּ (“you will eat”). The article on הַשָּׂדֶה makes the construct phrase definite.",
+        "gloss": "(untranslated)",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Direct-object particle, unsuffixed.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "(marks the definite object)"
+      },
+      "position": 5,
+      "surface": "אֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "eseb"
+        },
+        "evidence": "In וְאָכַלְתָּ אֶת עֵשֶׂב הַשָּׂדֶה, “you shall eat the vegetation of the field,” עֵשֶׂב stands in construct with הַשָּׂדֶה. The object marker אֶת marks the whole phrase as what the addressee will eat.",
+        "gloss": "vegetation",
+        "language": "he",
+        "lemma": "עֵשֶׂב",
+        "morphology": "Common noun, masculine singular construct, without prefix or suffix.",
+        "qualifier": "",
+        "root": "עשׂב",
+        "sense": "grass"
+      },
+      "position": 6,
+      "surface": "עֵשֶׂב"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "sadeh"
+        },
+        "evidence": "In עֵשֶׂב הַשָּׂדֶה, “the plants of the field,” הַשָּׂדֶה completes the construct phrase and names the open land where the plants grow. The preceding mention of thorns and thistles supports this reading.",
+        "gloss": "the field",
+        "language": "he",
+        "lemma": "שָׂדֶה",
+        "morphology": "Common noun, masculine singular absolute, with prefixed definite article הַ־.",
+        "qualifier": "",
+        "root": "שׂדה",
+        "sense": "open country, the land outside town and house"
+      },
+      "position": 7,
+      "surface": "הַשָּׂדֶה"
+    }
+  ]
+}

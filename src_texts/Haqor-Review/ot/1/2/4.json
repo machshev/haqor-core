@@ -1,0 +1,195 @@
+{
+  "book": 1,
+  "chapter": 2,
+  "source": "ot",
+  "verse": 4,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "אֵלֶּה stands as the subject of the verbless clause אֵלֶּה תוֹלְדוֹת הַשָּׁמַיִם וְהָאָרֶץ, “These are the generations of the heavens and the earth.” Its plural form agrees with תוֹלְדוֹת.",
+        "gloss": "these",
+        "language": "he",
+        "lemma": "אֵלֶּה",
+        "morphology": "Common plural demonstrative pronoun without prefix or suffix",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "these"
+      },
+      "position": 0,
+      "surface": "אֵלֶּה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yalad"
+        },
+        "evidence": "אֵלֶּה introduces the account with “these are.” The construct form תוֹלְדוֹת takes הַשָּׁמַיִם וְהָאָרֶץ (“the heavens and the earth”) as its complement. בְּהִבָּרְאָם (“when they were created”) places the formula in the context of creation.",
+        "gloss": "account of the heavens and the earth",
+        "language": "he",
+        "lemma": "תּוֹלֵדוֹת",
+        "morphology": "Common noun, feminine plural construct.",
+        "qualifier": "",
+        "root": "ילד",
+        "sense": "generations, the account of what came from someone"
+      },
+      "position": 1,
+      "surface": "תוֹלְדוֹת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shamayim"
+        },
+        "evidence": "הַשָּׁמַיִם is paired with וְהָאָרֶץ. The plural suffix in בְּהִבָּרְאָם (“when they were created”) refers to both, presenting heaven and earth together as the whole of creation.",
+        "gloss": "the heavens",
+        "language": "he",
+        "lemma": "שָׁמַיִם",
+        "morphology": "Definite article הַ־ + common noun, masculine plural absolute.",
+        "qualifier": "",
+        "root": "שמה",
+        "sense": "heavens and earth: all creation"
+      },
+      "position": 2,
+      "surface": "הַשָּׁמַיִם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "erets"
+        },
+        "evidence": "הַשָּׁמַיִם וְהָאָרֶץ pairs the heavens and the earth. The plural suffix in בְּהִבָּרְאָם, “when they were created,” refers to both, identifying the earth as the terrestrial part of creation.",
+        "gloss": "and the earth",
+        "language": "he",
+        "lemma": "אֶרֶץ",
+        "morphology": "Conjunction וְ plus definite article הָ plus common noun, singular absolute.",
+        "qualifier": "",
+        "root": "ארצ",
+        "sense": "earth"
+      },
+      "position": 3,
+      "surface": "וְהָאָרֶץ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "bara"
+        },
+        "evidence": "The plural suffix refers to הַשָּׁמַיִם וְהָאָרֶץ, the heavens and the earth. The Niphal presents them as receiving the action, and the parallel phrase בְּיוֹם עֲשׂוֹת describes the same event as the time when YHWH God made earth and heavens.",
+        "gloss": "when they were created",
+        "language": "he",
+        "lemma": "בָּרָא",
+        "morphology": "Temporal preposition בְּ + Niphal infinitive construct of בָּרָא + third-person masculine plural suffix ם, the subject of the infinitive.",
+        "qualifier": "",
+        "root": "ברא",
+        "sense": "create"
+      },
+      "position": 4,
+      "surface": "בְּהִבָּרְאָם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yom"
+        },
+        "evidence": "בְּיוֹם is followed by the infinitive construct עֲשׂוֹת. Together they introduce a temporal clause, “when YHWH God made earth and heavens.”",
+        "gloss": "when",
+        "language": "he",
+        "lemma": "יוֹם",
+        "morphology": "Masculine singular construct noun with prefixed preposition בְּ.",
+        "qualifier": "",
+        "root": "יומ",
+        "sense": "the time when; on the day that"
+      },
+      "position": 5,
+      "surface": "בְּיוֹם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "asah"
+        },
+        "evidence": "בְּיוֹם עֲשׂוֹת means “when … made.” יַהְוֶה אֱלֹהִים is the subject, and אֶרֶץ וְשָׁמָיִם (“earth and heavens”) are what he made. The preceding בְּהִבָּרְאָם (“when they were created”) confirms the creation sense.",
+        "gloss": "made",
+        "language": "he",
+        "lemma": "עָשָׂה",
+        "morphology": "Qal infinitive construct without prefix or suffix",
+        "qualifier": "",
+        "root": "עשׂה",
+        "sense": "make, bring into being"
+      },
+      "position": 6,
+      "surface": "עֲשׂוֹת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yahweh"
+        },
+        "evidence": "In בְּיוֹם עֲשׂוֹת יַהְוֶה אֱלֹהִים אֶרֶץ וְשָׁמָיִם, יַהְוֶה names the one who made earth and heavens. אֱלֹהִים stands in apposition to the name, giving the phrase “Yahweh God.”",
+        "gloss": "Yahweh",
+        "language": "he",
+        "lemma": "יַהְוֶה",
+        "morphology": "Proper noun, uninflected, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "הוה",
+        "sense": "Personal name of the God of Israel"
+      },
+      "position": 7,
+      "surface": "יַהְוֶה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "In עֲשׂוֹת יַהְוֶה אֱלֹהִים אֶרֶץ וְשָׁמָיִם, אֱלֹהִים stands in apposition to יַהְוֶה. Together they identify the one who made earth and heaven.",
+        "gloss": "God",
+        "language": "he",
+        "lemma": "אֱלֹהִים",
+        "morphology": "Common noun, masculine plural absolute, with singular reference. No prefix or suffix.",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "the Mighty One, God"
+      },
+      "position": 8,
+      "surface": "אֱלֹהִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "erets"
+        },
+        "evidence": "אֶרֶץ וְשָׁמָיִם names what YHWH God made. It reverses the opening pair הַשָּׁמַיִם וְהָאָרֶץ, confirming that אֶרֶץ denotes the earth paired with the heavens.",
+        "gloss": "earth",
+        "language": "he",
+        "lemma": "אֶרֶץ",
+        "morphology": "Common noun, common gender, singular absolute, without article, prefix, or suffix.",
+        "qualifier": "",
+        "root": "ארצ",
+        "sense": "earth"
+      },
+      "position": 9,
+      "surface": "אֶרֶץ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shamayim"
+        },
+        "evidence": "אֶרֶץ וְשָׁמָיִם ‘earth and heaven’ reverses the opening pair הַשָּׁמַיִם וְהָאָרֶץ ‘the heavens and the earth’. Together the two nouns express the whole of what God made.",
+        "gloss": "and heaven",
+        "language": "he",
+        "lemma": "שָׁמַיִם",
+        "morphology": "וְ־ ‘and’ + masculine plural absolute noun",
+        "qualifier": "",
+        "root": "שמה",
+        "sense": "heavens and earth: all creation"
+      },
+      "position": 10,
+      "surface": "וְשָׁמָיִם"
+    }
+  ]
+}

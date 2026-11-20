@@ -1,0 +1,212 @@
+{
+  "book": 1,
+  "chapter": 1,
+  "source": "ot",
+  "verse": 9,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "amar"
+        },
+        "evidence": "אֱלֹהִים is the subject of וַיֹּאמֶר. The words that follow are God's direct speech, beginning with יִקָּווּ הַמַּיִם, “Let the waters be gathered.”",
+        "gloss": "and he said",
+        "language": "he",
+        "lemma": "אָמַר",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ־",
+        "qualifier": "",
+        "root": "אמר",
+        "sense": "say, introducing direct speech"
+      },
+      "position": 0,
+      "surface": "וַיֹּאמֶר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "The singular verb וַיֹּאמֶר (“he said”) identifies אֱלֹהִים as the one speaker who commands the waters to gather and the dry land to appear.",
+        "gloss": "God",
+        "language": "he",
+        "lemma": "אֱלֹהִים",
+        "morphology": "Masculine plural absolute noun with singular verbal agreement",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "the Mighty One, God"
+      },
+      "position": 1,
+      "surface": "אֱלֹהִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "tiqvah"
+        },
+        "evidence": "God commands הַמַּיִם (the waters) to gather אֶל מָקוֹם אֶחָד (into one place) so that dry land may appear. The plural verb agrees with הַמַּיִם, and the destination establishes the sense of physical gathering.",
+        "gloss": "let them be gathered together",
+        "language": "he",
+        "lemma": "קָוָה",
+        "morphology": "Niphal jussive, third person masculine plural",
+        "qualifier": "gather together",
+        "root": "קוה",
+        "sense": "gather together"
+      },
+      "position": 2,
+      "surface": "יִקָּווּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "tachat"
+        },
+        "evidence": "מִתַּחַת הַשָּׁמַיִם locates the waters beneath the heavens. The prefix מִן marks the place from which they are to gather, and אֶל מָקוֹם אֶחָד gives their destination.",
+        "gloss": "from beneath",
+        "language": "he",
+        "lemma": "תַּחַת",
+        "morphology": "Preposition תַּחַת with prefixed מִן. The נ assimilates to the initial ת, yielding מִתַּחַת.",
+        "qualifier": "",
+        "root": "תחת",
+        "sense": "under, beneath, below"
+      },
+      "position": 4,
+      "surface": "מִתַּחַת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shamayim"
+        },
+        "evidence": "מִתַּחַת הַשָּׁמַיִם locates the waters beneath the sky. God commands them to gather in one place so that dry land appears.",
+        "gloss": "the sky",
+        "language": "he",
+        "lemma": "שָׁמַיִם",
+        "morphology": "Definite article הַ־ + masculine plural absolute noun",
+        "qualifier": "",
+        "root": "שמה",
+        "sense": "sky, the visible heavens"
+      },
+      "position": 5,
+      "surface": "הַשָּׁמַיִם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "In יִקָּווּ הַמַּיִם … אֶל מָקוֹם אֶחָד, אֶל introduces the destination of the gathering waters, “to one place.”",
+        "gloss": "to",
+        "language": "he",
+        "lemma": "אֶל",
+        "morphology": "Preposition without prefix or suffix",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "to, toward (a place)"
+      },
+      "position": 6,
+      "surface": "אֶל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "qum"
+        },
+        "evidence": "אֶל מָקוֹם אֶחָד means “into one place,” specifying where the waters are to gather. The masculine singular אֶחָד agrees with מָקוֹם and supplies the meaning “one.”",
+        "gloss": "place",
+        "language": "he",
+        "lemma": "מָקוֹם",
+        "morphology": "Common noun, masculine singular absolute, without prefix or suffix.",
+        "qualifier": "",
+        "root": "קומ",
+        "sense": "place, spot"
+      },
+      "position": 7,
+      "surface": "מָקוֹם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "echad"
+        },
+        "evidence": "In אֶל מָקוֹם אֶחָד, “to one place,” אֶחָד agrees with מָקוֹם and specifies a single place where the waters are to gather.",
+        "gloss": "one",
+        "language": "he",
+        "lemma": "אֶחָד",
+        "morphology": "Cardinal numeral, masculine singular absolute, modifying מָקוֹם.",
+        "qualifier": "",
+        "root": "אחד",
+        "sense": "one (in number), a single"
+      },
+      "position": 8,
+      "surface": "אֶחָד"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "raah"
+        },
+        "evidence": "וְתֵרָאֶה agrees with its feminine singular subject הַיַּבָּשָׁה, “the dry land.” It continues the command יִקָּווּ הַמַּיִם, “let the waters gather,” so that the dry land becomes visible.",
+        "gloss": "and let it appear",
+        "language": "he",
+        "lemma": "רָאָה",
+        "morphology": "Conjunction וְ + Niphal imperfect, third person feminine singular, with jussive force.",
+        "qualifier": "",
+        "root": "ראה",
+        "sense": "appear, become visible"
+      },
+      "position": 9,
+      "surface": "וְתֵרָאֶה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yabesh"
+        },
+        "evidence": "God commands the waters to gather in one place. הַיַּבָּשָׁה is the subject of the feminine singular verb וְתֵרָאֶה, “let it appear,” and denotes the ground exposed as the waters gather.",
+        "gloss": "the dry land",
+        "language": "he",
+        "lemma": "יַבָּשָׁה",
+        "morphology": "Definite article הַ־ prefixed to a feminine singular absolute common noun.",
+        "qualifier": "",
+        "root": "יבש",
+        "sense": "dry land"
+      },
+      "position": 10,
+      "surface": "הַיַּבָּשָׁה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "hayah"
+        },
+        "evidence": "In וַיְהִי כֵן, כֵן means “so” and refers back to both parts of the command. וַיְהִי reports that the waters gathered and the dry land appeared as commanded.",
+        "gloss": "and it came to pass",
+        "language": "he",
+        "lemma": "הָיָה",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ־.",
+        "qualifier": "",
+        "root": "היה",
+        "sense": "to come to pass"
+      },
+      "position": 11,
+      "surface": "וַיְהִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ken"
+        },
+        "evidence": "In וַיְהִי כֵן, “and it was so,” כֵן refers back to God’s command that the waters gather in one place and the dry land appear. The phrase affirms that both happened as commanded.",
+        "gloss": "so",
+        "language": "he",
+        "lemma": "כֵּן",
+        "morphology": "Uninflected adverb with no prefix or suffix.",
+        "qualifier": "adverb",
+        "root": "כונ",
+        "sense": "so, thus (as said or done)"
+      },
+      "position": 12,
+      "surface": "כֵן"
+    }
+  ]
+}

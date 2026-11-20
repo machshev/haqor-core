@@ -1,0 +1,281 @@
+{
+  "book": 1,
+  "chapter": 4,
+  "source": "ot",
+  "verse": 17,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yada"
+        },
+        "evidence": "קַיִן is the subject and אֶת אִשְׁתּוֹ marks his wife as the direct object. The following וַתַּהַר וַתֵּלֶד, “she conceived and gave birth,” establishes the sexual sense.",
+        "gloss": "and he had intercourse with",
+        "language": "he",
+        "lemma": "יָדַע",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ־",
+        "qualifier": "",
+        "root": "ידע",
+        "sense": "to have sexual intercourse with someone"
+      },
+      "position": 0,
+      "surface": "וַיֵּדַע"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "cain",
+            "base": null,
+            "change": "Add a personal-name article for Cain. Its proposed root link requires a companion article for קינ, which is absent from the local lexicon.",
+            "definition": "Cain, the son of Adam and Eve and brother of Abel.",
+            "evidence": "Genesis 4:1 names Eve’s son קַיִן. Genesis 4:2 identifies Abel as his brother and names Cain again when describing his work."
+          }
+        },
+        "evidence": "In וַיֵּדַע קַיִן אֶת אִשְׁתּוֹ, קַיִן names the subject of וַיֵּדַע, while אֶת marks אִשְׁתּוֹ (“his wife”) as the object. Later in the verse, בְּנוֹ (“his son”) identifies Enoch as Cain’s son.",
+        "gloss": "Cain",
+        "language": "he",
+        "lemma": "קַיִן",
+        "morphology": "Masculine singular personal name, without prefix or suffix.",
+        "qualifier": "",
+        "root": "קינ",
+        "sense": "The personal name of Abel’s brother."
+      },
+      "position": 1,
+      "surface": "קַיִן"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "et"
+        },
+        "evidence": "In וַיֵּדַע קַיִן אֶת אִשְׁתּוֹ, Cain is the subject of וַיֵּדַע ‘knew’. אֶת marks אִשְׁתּוֹ ‘his wife’ as the direct object. The possessive suffix on אִשְׁתּוֹ makes the object definite.",
+        "gloss": "Untranslated direct-object marker",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Uninflected direct-object particle, without prefix or suffix.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "(marks the definite object)"
+      },
+      "position": 2,
+      "surface": "אֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "enosh"
+        },
+        "evidence": "In וַיֵּדַע קַיִן אֶת אִשְׁתּוֹ, the suffix refers to Cain. His wife is the object of וַיֵּדַע and the subject of וַתַּהַר וַתֵּלֶד, “she conceived and gave birth.”",
+        "gloss": "his wife",
+        "language": "he",
+        "lemma": "אִשָּׁה",
+        "morphology": "Feminine singular construct noun with the third-person masculine singular possessive suffix ־וֹ.",
+        "qualifier": "",
+        "root": "אנש",
+        "sense": "wife"
+      },
+      "position": 3,
+      "surface": "אִשְׁתּוֹ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "harah"
+        },
+        "evidence": "The feminine singular subject is Cain’s wife. וַתַּהַר follows the statement that Cain knew his wife and precedes וַתֵּלֶד אֶת־חֲנוֹךְ, “and she bore Enoch,” placing conception between intercourse and birth.",
+        "gloss": "and she conceived",
+        "language": "he",
+        "lemma": "הָרָה",
+        "morphology": "Qal wayyiqtol, third-person feminine singular, with prefixed וַ and an apocopated stem.",
+        "qualifier": "verb",
+        "root": "הרה",
+        "sense": "conceive, become pregnant"
+      },
+      "position": 4,
+      "surface": "וַתַּהַר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yalad"
+        },
+        "evidence": "Cain’s wife is the subject of both וַתַּהַר (“she conceived”) and וַתֵּלֶד. The direct-object marker אֶת introduces חֲנוֹךְ (Enoch), the child she bore.",
+        "gloss": "and she gave birth to",
+        "language": "he",
+        "lemma": "יָלַד",
+        "morphology": "Qal wayyiqtol, third-person feminine singular, with prefixed וַ.",
+        "qualifier": "",
+        "root": "ילד",
+        "sense": "bear, give birth to"
+      },
+      "position": 5,
+      "surface": "וַתֵּלֶד"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "et"
+        },
+        "evidence": "In וַתֵּלֶד אֶת חֲנוֹךְ, “she bore Enoch,” אֶת marks the proper name חֲנוֹךְ as the direct object of וַתֵּלֶד.",
+        "gloss": "untranslated",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Direct-object particle, without prefix or suffix",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "(marks the definite object)"
+      },
+      "position": 6,
+      "surface": "אֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "enoch"
+        },
+        "evidence": "In וַתֵּלֶד אֶת חֲנוֹךְ, אֶת marks Enoch as the child Cain’s wife bore. Later in the verse, כְּשֵׁם בְּנוֹ חֲנוֹךְ identifies Enoch as the son after whom Cain named the city.",
+        "gloss": "Enoch",
+        "language": "he",
+        "lemma": "חֲנוֹךְ",
+        "morphology": "Masculine singular proper noun, without prefix or suffix.",
+        "qualifier": "",
+        "root": "חנכ",
+        "sense": "Enoch, son of Cain"
+      },
+      "position": 7,
+      "surface": "חֲנוֹךְ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "hayah"
+        },
+        "evidence": "In וַיְהִי בֹּנֶה עִיר, וַיְהִי serves as the auxiliary for the masculine singular participle בֹּנֶה. Together they describe Cain’s ongoing activity: “and he was building a city.”",
+        "gloss": "and he was",
+        "language": "he",
+        "lemma": "הָיָה",
+        "morphology": "Qal wayyiqtol, third masculine singular, with prefixed וַ־ and no suffix",
+        "qualifier": "",
+        "root": "היה",
+        "sense": "to be in a state or condition"
+      },
+      "position": 8,
+      "surface": "וַיְהִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ben"
+        },
+        "evidence": "In וַיְהִי בֹּנֶה עִיר, the participle בֹּנֶה takes עִיר “city” as its direct object. With וַיְהִי it describes an ongoing action, “he was building a city.”",
+        "gloss": "building",
+        "language": "he",
+        "lemma": "בָּנָה",
+        "morphology": "Qal active participle, masculine singular absolute",
+        "qualifier": "",
+        "root": "בנה",
+        "sense": "build a city"
+      },
+      "position": 9,
+      "surface": "בֹּנֶה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ir"
+        },
+        "evidence": "In וַיְהִי בֹּנֶה עִיר, the marked noun is the object of בֹּנֶה and identifies what Cain was building. The next clause refers back to it as הָעִיר, “the city,” and says he named it after his son Enoch.",
+        "gloss": "a city",
+        "language": "he",
+        "lemma": "עִיר",
+        "morphology": "Feminine singular absolute common noun, without prefix or suffix.",
+        "qualifier": "noun",
+        "root": "עיר",
+        "sense": "city, town"
+      },
+      "position": 10,
+      "surface": "עִיר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "qara"
+        },
+        "evidence": "שֵׁם הָעִיר is the direct object, “the name of the city.” The phrase כְּשֵׁם בְּנוֹ חֲנוֹךְ shows that Cain named the city after his son Enoch.",
+        "gloss": "and he named",
+        "language": "he",
+        "lemma": "קָרָא",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ־ and no suffix",
+        "qualifier": "call",
+        "root": "קרא",
+        "sense": "give a name to"
+      },
+      "position": 11,
+      "surface": "וַיִּקְרָא"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "shem",
+            "base": "5ff57a119255ca3775ba1c5592f6cd00e22ec622fafccd6afc08384d01b566fe",
+            "change": "Extend the first Hebrew noun sense in shem to include geographical names and cite Genesis 2:13.",
+            "definition": "A name identifies a person, animal, or place. Here it identifies a river.",
+            "evidence": "Genesis 2:13 explicitly gives Gihon as the name of the second river."
+          }
+        },
+        "evidence": "In שֵׁם הָעִיר, “the name of the city,” הָעִיר identifies the city as the bearer of the name. The following phrase כְּשֵׁם בְּנוֹ חֲנוֹךְ explains that Cain named the city after his son Enoch.",
+        "gloss": "name",
+        "language": "he",
+        "lemma": "שֵׁם",
+        "morphology": "Masculine singular noun in the construct state, without prefix or suffix.",
+        "qualifier": "noun",
+        "root": "שמ",
+        "sense": "The name by which a person, animal, or place is known."
+      },
+      "position": 12,
+      "surface": "שֵׁם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "shem",
+            "base": "5ff57a119255ca3775ba1c5592f6cd00e22ec622fafccd6afc08384d01b566fe",
+            "change": "Add Genesis 4:17 to the identifying-name sense of שֵׁם to document naming a place after a person.",
+            "definition": "The name by which someone is known, which can also be given to a place named after that person.",
+            "evidence": "Genesis 4:17 identifies the son as Enoch and says that Cain called the city כְּשֵׁם בְּנוֹ, after his son’s name."
+          }
+        },
+        "evidence": "In כְּשֵׁם בְּנוֹ חֲנוֹךְ, the marked שֵׁם is the name of Cain’s son, Enoch. The prefix כְּ links it to שֵׁם הָעִיר earlier in the clause. Cain gives the city the same name his son bears.",
+        "gloss": "after the name of",
+        "language": "he",
+        "lemma": "שֵׁם",
+        "morphology": "Prefixed comparative preposition כְּ followed by a masculine singular construct noun, with בְּנוֹ as its complement.",
+        "qualifier": "noun",
+        "root": "שמ",
+        "sense": "name by which someone is known"
+      },
+      "position": 14,
+      "surface": "כְּשֵׁם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "enoch"
+        },
+        "evidence": "In כְּשֵׁם בְּנוֹ חֲנוֹךְ, “after the name of his son Enoch,” חֲנוֹךְ identifies Cain’s son, whose birth is recounted earlier in the verse. The city takes its name from him.",
+        "gloss": "Enoch",
+        "language": "he",
+        "lemma": "חֲנוֹךְ",
+        "morphology": "Masculine singular proper noun in apposition to בְּנוֹ, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "חנכ",
+        "sense": "Enoch, son of Cain"
+      },
+      "position": 16,
+      "surface": "חֲנוֹךְ"
+    }
+  ]
+}

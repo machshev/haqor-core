@@ -1,0 +1,120 @@
+{
+  "book": 1,
+  "chapter": 2,
+  "review": {
+    "entities": [],
+    "glosses": [
+      {
+        "gloss": "so they were completed",
+        "position": 0
+      },
+      {
+        "gloss": "the heavens",
+        "position": 1
+      },
+      {
+        "gloss": "and the earth",
+        "position": 2
+      },
+      {
+        "gloss": "and all",
+        "position": 3
+      },
+      {
+        "gloss": "their host",
+        "position": 4
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[So|0] [the heavens|1] [and the earth|2] [and all|3] [their host|4] [were completed|0]."
+  },
+  "source": "ot",
+  "verse": 1,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "kalah"
+        },
+        "evidence": "The plural verb agrees with the compound subject הַשָּׁמַיִם וְהָאָרֶץ וְכָל־צְבָאָם, “the heavens and the earth and all their host.” The Pual presents them as having been brought to completion.",
+        "gloss": "and they were completed",
+        "language": "he",
+        "lemma": "כָּלָה",
+        "morphology": "Pual wayyiqtol, third person masculine plural, with prefixed וַ־.",
+        "qualifier": "verb",
+        "root": "כלה",
+        "sense": "be brought to completion"
+      },
+      "position": 0,
+      "surface": "וַיְכֻלּוּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shamayim"
+        },
+        "evidence": "The verb וַיְכֻלּוּ (“were completed”) applies to הַשָּׁמַיִם וְהָאָרֶץ (“the heavens and the earth”). The phrase וְכָל־צְבָאָם (“and all their host”) reinforces the pair’s reference to the whole of creation.",
+        "gloss": "the heavens",
+        "language": "he",
+        "lemma": "שָׁמַיִם",
+        "morphology": "Common noun, masculine plural absolute, with prefixed definite article הַ־.",
+        "qualifier": "",
+        "root": "שמה",
+        "sense": "heavens and earth: all creation"
+      },
+      "position": 1,
+      "surface": "הַשָּׁמַיִם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "erets"
+        },
+        "evidence": "הַשָּׁמַיִם וְהָאָרֶץ pairs the heavens and the earth as the two parts of the completed creation. צְבָאָם (“their host”) refers back to both.",
+        "gloss": "and the earth",
+        "language": "he",
+        "lemma": "אֶרֶץ",
+        "morphology": "Conjunction וְ plus definite article הָ plus common noun אָרֶץ, singular absolute, common gender.",
+        "qualifier": "",
+        "root": "ארצ",
+        "sense": "earth"
+      },
+      "position": 2,
+      "surface": "וְהָאָרֶץ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "kalal"
+        },
+        "evidence": "In וְכָל צְבָאָם, “and all their host,” כָל quantifies the collective noun צְבָאָם. The host of the heavens and the earth is included in its entirety.",
+        "gloss": "and all",
+        "language": "he",
+        "lemma": "כֹּל",
+        "morphology": "Masculine singular construct noun with prefixed conjunction וְ.",
+        "qualifier": "",
+        "root": "כלל",
+        "sense": "all, the whole"
+      },
+      "position": 3,
+      "surface": "וְכָל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "tsava"
+        },
+        "evidence": "The suffix in צְבָאָם refers back to הַשָּׁמַיִם וְהָאָרֶץ, “the heavens and the earth.” The singular noun gathers their contents into one host, and כָל makes the reference comprehensive: “all their host.”",
+        "gloss": "their host",
+        "language": "he",
+        "lemma": "צָבָא",
+        "morphology": "Common-gender singular noun in the construct state with the third-person masculine plural possessive suffix ־ָם.",
+        "qualifier": "noun",
+        "root": "צבא",
+        "sense": "host, collectively the creatures and things that fill heaven and earth"
+      },
+      "position": 4,
+      "surface": "צְבָאָם"
+    }
+  ]
+}

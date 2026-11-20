@@ -1,0 +1,242 @@
+{
+  "book": 1,
+  "chapter": 4,
+  "review": {
+    "entities": [
+      {
+        "evidence": "Genesis 4:19 names Adah as one of Lamech’s wives. Here she bears Jabal.",
+        "key": "Adah@Gen.4.19",
+        "position": 1
+      },
+      {
+        "evidence": "Jabal is the son Adah bears here. The verse calls him the father of those who live in tents and keep livestock.",
+        "key": "Jabal@Gen.4.20",
+        "position": 3
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "and she bore",
+        "position": 0
+      },
+      {
+        "gloss": "Adah",
+        "position": 1
+      },
+      {
+        "gloss": "direct-object marker (untranslated)",
+        "position": 2
+      },
+      {
+        "gloss": "Jabal",
+        "position": 3
+      },
+      {
+        "gloss": "he",
+        "position": 4
+      },
+      {
+        "gloss": "was",
+        "position": 5
+      },
+      {
+        "gloss": "father of",
+        "position": 6
+      },
+      {
+        "gloss": "one who dwells",
+        "position": 7
+      },
+      {
+        "gloss": "tent",
+        "position": 8
+      },
+      {
+        "gloss": "and livestock",
+        "position": 9
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[And|0] [Adah|1] [bore|0] [Jabal|3,2]. [He|4] [was|5] [the father of|6] {those} [who live|7] {in} [tents|8] [and|9] {keep} [livestock|9]."
+  },
+  "source": "ot",
+  "verse": 20,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yalad"
+        },
+        "evidence": "The feminine singular verb agrees with its subject עָדָה (Adah). The direct-object marker אֶת introduces יָבָל (Jabal), the child she bore.",
+        "gloss": "and she bore",
+        "language": "he",
+        "lemma": "יָלַד",
+        "morphology": "Qal wayyiqtol, third-person feminine singular, with prefixed וַ־",
+        "qualifier": "",
+        "root": "ילד",
+        "sense": "bear, give birth to"
+      },
+      "position": 0,
+      "surface": "וַתֵּלֶד"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "adah",
+            "base": null,
+            "change": "Add a personal-name article linked to the root עדה.",
+            "definition": "A Hebrew personal name borne here by Jabal’s mother.",
+            "evidence": "Genesis 4:19 explicitly gives her name as עָדָה. Genesis 4:20 uses that name again when she gives birth to Jabal."
+          }
+        },
+        "evidence": "In וַתֵּלֶד עָדָה אֶת יָבָל, the feminine singular verb וַתֵּלֶד agrees with its subject עָדָה, and אֶת marks Jabal as the child she bore. Genesis 4:19 names Adah as one of Lamech’s wives.",
+        "gloss": "Adah",
+        "language": "he",
+        "lemma": "עָדָה",
+        "morphology": "Feminine singular proper noun, with no prefix or suffix.",
+        "qualifier": "personal name",
+        "root": "עדה",
+        "sense": "Adah, Lamech’s wife and Jabal’s mother"
+      },
+      "position": 1,
+      "surface": "עָדָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "et"
+        },
+        "evidence": "In וַתֵּלֶד עָדָה אֶת יָבָל, עָדָה is the subject of וַתֵּלֶד (“bore”), and אֶת marks the personal name יָבָל as its definite direct object (“Adah bore Jabal”).",
+        "gloss": "direct-object marker (untranslated)",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Unsuffixed direct-object particle with no prefix.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "(marks the definite object)"
+      },
+      "position": 2,
+      "surface": "אֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "jabal"
+        },
+        "evidence": "In וַתֵּלֶד עָדָה אֶת יָבָל, אֶת marks Jabal as the child Adah bore. The following הוּא refers back to him.",
+        "gloss": "Jabal",
+        "language": "he",
+        "lemma": "יָבָל",
+        "morphology": "Masculine singular personal name, direct object of וַתֵּלֶד, with no prefix or suffix.",
+        "qualifier": "name",
+        "root": "יבל",
+        "sense": "Jabal, son of Adah"
+      },
+      "position": 3,
+      "surface": "יָבָל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "hu"
+        },
+        "evidence": "הוּא refers back to יָבָל (Jabal) and serves as the subject of הָיָה in הוּא הָיָה אֲבִי, “he was the father of.”",
+        "gloss": "he",
+        "language": "he",
+        "lemma": "הוּא",
+        "morphology": "Independent personal pronoun, third person masculine singular, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "הוא",
+        "sense": "he, it"
+      },
+      "position": 4,
+      "surface": "הוּא"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "hayah"
+        },
+        "evidence": "הוּא refers back to Jabal. הָיָה connects that subject to the predicate אֲבִי, identifying Jabal as the father of those who live in tents and keep livestock.",
+        "gloss": "was",
+        "language": "he",
+        "lemma": "הָיָה",
+        "morphology": "Qal perfect, third person masculine singular, with no prefix or suffix",
+        "qualifier": "",
+        "root": "היה",
+        "sense": "to be in a state or condition"
+      },
+      "position": 5,
+      "surface": "הָיָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "av"
+        },
+        "evidence": "אֲבִי introduces יֹשֵׁב אֹהֶל וּמִקְנֶה, a collective description of tent-dwelling herders. The verse calls Jabal their father in the sense that he originated their way of life.",
+        "gloss": "founder of",
+        "language": "he",
+        "lemma": "אָב",
+        "morphology": "Masculine singular noun in the construct state, without prefix or suffix.",
+        "qualifier": "",
+        "root": "אבה",
+        "sense": "father of: founder, originator"
+      },
+      "position": 6,
+      "surface": "אֲבִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yashav"
+        },
+        "evidence": "יֹשֵׁב אֹהֶל means “tent dweller.” The singular participle names the class of people for whom Jabal is called אָבִי, “the father of.” It describes their customary way of living.",
+        "gloss": "one who lives in a tent",
+        "language": "he",
+        "lemma": "יָשַׁב",
+        "morphology": "Qal active participle, masculine singular construct, used substantivally.",
+        "qualifier": "",
+        "root": "ישב",
+        "sense": "to dwell habitually in a place"
+      },
+      "position": 7,
+      "surface": "יֹשֵׁב"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ohel"
+        },
+        "evidence": "In יֹשֵׁב אֹהֶל, “one who dwells in a tent,” אֹהֶל names the shelter in which the person lives. The accompanying mention of livestock fits this pastoral setting.",
+        "gloss": "tent",
+        "language": "he",
+        "lemma": "אֹהֶל",
+        "morphology": "Common noun, masculine singular absolute, without prefix or suffix.",
+        "qualifier": "",
+        "root": "אהל",
+        "sense": "tent"
+      },
+      "position": 8,
+      "surface": "אֹהֶל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "qanah"
+        },
+        "evidence": "The verse calls Jabal the father of those who dwell in tents and keep livestock. The pairing of אֹהֶל ‘tent’ with מִקְנֶה evokes pastoral life. ‘Keep’ is understood from the context.",
+        "gloss": "and livestock",
+        "language": "he",
+        "lemma": "מִקְנֶה",
+        "morphology": "Conjunction וּ־ ‘and’ prefixed to a masculine singular absolute noun used collectively.",
+        "qualifier": "",
+        "root": "קנה",
+        "sense": "livestock, cattle (as wealth)"
+      },
+      "position": 9,
+      "surface": "וּמִקְנֶה"
+    }
+  ]
+}

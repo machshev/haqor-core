@@ -1,0 +1,218 @@
+{
+  "book": 1,
+  "chapter": 4,
+  "source": "ot",
+  "verse": 12,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ki"
+        },
+        "evidence": "כִּי introduces תַעֲבֹד אֶת הָאֲדָמָה, “when you till the ground.” The following clause states what will happen when Cain tills it: the ground will no longer yield its strength to him.",
+        "gloss": "when",
+        "language": "he",
+        "lemma": "כִּי",
+        "morphology": "Uninflected conjunction without prefix or suffix",
+        "qualifier": "conjunction",
+        "root": "כי",
+        "sense": "when, if"
+      },
+      "position": 0,
+      "surface": "כִּי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "abad"
+        },
+        "evidence": "אֶת marks הָאֲדָמָה (“the ground”) as the direct object of תַעֲבֹד. Cain is told that when he tills the ground, it will no longer yield its strength to him.",
+        "gloss": "you till",
+        "language": "he",
+        "lemma": "עָבַד",
+        "morphology": "Qal imperfect, second person masculine singular",
+        "qualifier": "",
+        "root": "עבד",
+        "sense": "work the soil, cultivate"
+      },
+      "position": 1,
+      "surface": "תַעֲבֹד"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "et"
+        },
+        "evidence": "In תַעֲבֹד אֶת הָאֲדָמָה, “you till the ground,” אֶת marks הָאֲדָמָה, “the ground,” as the definite direct object of תַעֲבֹד.",
+        "gloss": "(direct-object marker)",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Direct-object particle without prefix or suffix.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "(marks the definite object)"
+      },
+      "position": 2,
+      "surface": "אֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "adam"
+        },
+        "evidence": "אֶת marks הָאֲדָמָה as the object of תַעֲבֹד, “you till.” The feminine singular suffix in כֹּחָהּ, “its strength,” refers back to the soil, which will no longer yield its produce to Cain.",
+        "gloss": "the soil",
+        "language": "he",
+        "lemma": "אֲדָמָה",
+        "morphology": "Feminine singular absolute noun with the prefixed definite article הָ־.",
+        "qualifier": "",
+        "root": "אדמ",
+        "sense": "the ground that is tilled; soil"
+      },
+      "position": 3,
+      "surface": "הָאֲדָמָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "lo"
+        },
+        "evidence": "לֹא negates תֹסֵף in לֹא תֹסֵף תֵּת כֹּחָהּ לָךְ, “it will no longer give you its strength.” The subject is הָאֲדָמָה, “the ground,” and the clause predicts what will happen when Cain tills it.",
+        "gloss": "not",
+        "language": "he",
+        "lemma": "לֹא",
+        "morphology": "Negative particle with no prefix or suffix.",
+        "qualifier": "",
+        "root": "לא",
+        "sense": "not (of a fact)"
+      },
+      "position": 4,
+      "surface": "לֹא"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yasaph"
+        },
+        "evidence": "תֹסֵף agrees with הָאֲדָמָה, “the ground.” The infinitive תֵּת names the action repeated, and לֹא negates its repetition. The clause means “the ground will no longer give you its strength.”",
+        "gloss": "will again",
+        "language": "he",
+        "lemma": "יָסַף",
+        "morphology": "Hiphil short prefix form (jussive form), third-person feminine singular",
+        "qualifier": "",
+        "root": "יספ",
+        "sense": "do again"
+      },
+      "position": 5,
+      "surface": "תֹסֵף"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "natan"
+        },
+        "evidence": "The ground is the subject of לֹא תֹסֵף תֵּת, ‘it will no longer yield.’ What it yields is כֹּחָהּ, ‘its strength,’ meaning its produce in the context of Cain tilling the soil. לָךְ identifies Cain as the one who would receive that yield.",
+        "gloss": "yield",
+        "language": "he",
+        "lemma": "נָתַן",
+        "morphology": "Qal infinitive construct, without prefix or suffix",
+        "qualifier": "",
+        "root": "נתנ",
+        "sense": "yield produce (of cultivated ground)"
+      },
+      "position": 6,
+      "surface": "תֵּת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "le",
+            "base": "96f836dfd21f3d150d1252488b03345c3c1ecca2101743792946e2c251fb5649",
+            "change": "Add Genesis 4:12 to the existing recipient sense, with a note identifying the pausal masculine singular form.",
+            "definition": "With a verb of giving, לְ marks the recipient.",
+            "evidence": "Genesis 4:12 distinguishes what the ground will no longer give, כֹּחָהּ ‘its strength’, from the recipient, לָךְ ‘to you’."
+          }
+        },
+        "evidence": "In תֵּת כֹּחָהּ לָךְ, the ground gives its strength, and לָךְ identifies Cain as the one who will no longer receive it. The masculine singular participles נָע וָנָד describe the same addressee.",
+        "gloss": "to you",
+        "language": "he",
+        "lemma": "לְ",
+        "morphology": "Inseparable preposition with a second-person masculine singular pronominal suffix, in the pausal form לָךְ.",
+        "qualifier": "",
+        "root": "ל",
+        "sense": "Marks the recipient of what is given."
+      },
+      "position": 8,
+      "surface": "לָךְ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "nua"
+        },
+        "evidence": "After declaring that the ground will no longer yield its strength to Cain, God pairs נָע with וָנָד before תִּהְיֶה (‘you will be’). Together they describe Cain’s unsettled life in the land.",
+        "gloss": "a wanderer",
+        "language": "he",
+        "lemma": "נוּעַ",
+        "morphology": "Qal active participle, masculine singular absolute, used predicatively.",
+        "qualifier": "",
+        "root": "נוע",
+        "sense": "to wander from place to place"
+      },
+      "position": 9,
+      "surface": "נָע"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "nud"
+        },
+        "evidence": "נָד is coordinated with נָע. Together they describe what Cain will be (תִּהְיֶה) on the earth (בָאָרֶץ) after the ground ceases to yield its strength to him.",
+        "gloss": "and a wanderer",
+        "language": "he",
+        "lemma": "נוּד",
+        "morphology": "Qal active participle, masculine singular absolute, with prefixed conjunction וָ־ ‘and’.",
+        "qualifier": "",
+        "root": "נוד",
+        "sense": "wander"
+      },
+      "position": 10,
+      "surface": "וָנָד"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "hayah"
+        },
+        "evidence": "נָע וָנָד describes Cain’s future condition. תִּהְיֶה links him to that description: “You will be a fugitive and a wanderer on the earth.”",
+        "gloss": "you will be",
+        "language": "he",
+        "lemma": "הָיָה",
+        "morphology": "Qal imperfect, second person masculine singular",
+        "qualifier": "",
+        "root": "היה",
+        "sense": "to be in a state or condition"
+      },
+      "position": 11,
+      "surface": "תִּהְיֶה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "erets"
+        },
+        "evidence": "In נָע וָנָד תִּהְיֶה בָאָרֶץ, the final phrase tells where Cain will wander. The earlier הָאֲדָמָה names the soil he tills, while בָאָרֶץ refers more broadly to the earth across which he will roam.",
+        "gloss": "on the earth",
+        "language": "he",
+        "lemma": "אֶרֶץ",
+        "morphology": "Preposition בְּ with the definite article, followed by a singular absolute noun of common gender in its pausal form אָרֶץ.",
+        "qualifier": "",
+        "root": "ארצ",
+        "sense": "earth"
+      },
+      "position": 12,
+      "surface": "בָאָרֶץ"
+    }
+  ]
+}

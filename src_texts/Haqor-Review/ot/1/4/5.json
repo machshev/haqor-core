@@ -1,0 +1,196 @@
+{
+  "book": 1,
+  "chapter": 4,
+  "source": "ot",
+  "verse": 5,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "elah",
+            "base": "cad803eb7db2b131b61fb3b93a576d63e0cc55ff679e4a05bef3c89da4d37113",
+            "change": "Broaden the definition of the existing “toward (turning, looking)” sense in elah to include directing attention, and add Genesis 4:5 as evidence.",
+            "definition": "With a verb of turning, looking, or paying heed, אֶל marks the person or thing toward which attention is directed.",
+            "evidence": "Genesis 4:5 puts אֶל קַיִן before לֹא שָׁעָה. Cain is the object of Yahweh’s regard in the negated clause, just as Abel is in the affirmative clause in Genesis 4:4."
+          }
+        },
+        "evidence": "In וְאֶל קַיִן וְאֶל מִנְחָתוֹ לֹא שָׁעָה, the first אֶל introduces Cain as the person to whom Yahweh paid no heed. The repeated אֶל introduces his offering alongside him. The negation לֹא applies to שָׁעָה.",
+        "gloss": "toward",
+        "language": "he",
+        "lemma": "אֶל",
+        "morphology": "Prefixed conjunction וְ, here adversative (“but”), followed by the preposition אֶל governing קַיִן. No pronominal suffix.",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "Marks the person toward whom attention is directed."
+      },
+      "position": 0,
+      "surface": "וְאֶל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "cain",
+            "base": null,
+            "change": "Add a personal-name article for Cain. Its proposed root link requires a companion article for קינ, which is absent from the local lexicon.",
+            "definition": "Cain, the son of Adam and Eve and brother of Abel.",
+            "evidence": "Genesis 4:1 names Eve’s son קַיִן. Genesis 4:2 identifies Abel as his brother and names Cain again when describing his work."
+          }
+        },
+        "evidence": "The repeated וְאֶל pairs קַיִן with מִנְחָתוֹ (“his offering”). Cain is the person to whom שָׁעָה לֹא applies alongside his offering.",
+        "gloss": "Cain",
+        "language": "he",
+        "lemma": "קַיִן",
+        "morphology": "Masculine singular proper noun, governed by the preceding וְאֶל, with no attached prefix or suffix.",
+        "qualifier": "",
+        "root": "קינ",
+        "sense": "The personal name of Abel’s brother."
+      },
+      "position": 1,
+      "surface": "קַיִן"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "minchah"
+        },
+        "evidence": "The repeated וְאֶל pairs Cain with his offering as the two objects of God’s regard in לֹא שָׁעָה. The suffix ־וֹ refers to Cain.",
+        "gloss": "his offering",
+        "language": "he",
+        "lemma": "מִנְחָה",
+        "morphology": "Feminine singular noun in the construct state with a third-person masculine singular possessive suffix ־וֹ.",
+        "qualifier": "",
+        "root": "מנח",
+        "sense": "offering (to God)"
+      },
+      "position": 3,
+      "surface": "מִנְחָתוֹ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "lo"
+        },
+        "evidence": "לֹא directly precedes the perfect verb שָׁעָה. Together they state that the LORD did not look with favor on Cain and his offering.",
+        "gloss": "not",
+        "language": "he",
+        "lemma": "לֹא",
+        "morphology": "Negative particle without prefix or suffix.",
+        "qualifier": "",
+        "root": "לא",
+        "sense": "not (of a fact)"
+      },
+      "position": 4,
+      "surface": "לֹא"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shaah-regard"
+        },
+        "evidence": "The two אֶל phrases identify Cain and his offering as the objects of regard. לֹא negates שָׁעָה, so the clause says that YHWH had no regard for Cain or his offering, reversing the preceding verse’s statement about Abel and his offering.",
+        "gloss": "had regard",
+        "language": "he",
+        "lemma": "שָׁעָה",
+        "morphology": "Qal perfect, third person masculine singular, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "שעה",
+        "sense": "look toward, regard"
+      },
+      "position": 5,
+      "surface": "שָׁעָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "charah"
+        },
+        "evidence": "In וַיִּחַר לְקַיִן מְאֹד, the verb is used impersonally. לְקַיִן identifies Cain as the one who feels the anger, and מְאֹד marks its intensity. The following clause says that his face fell.",
+        "gloss": "became angry",
+        "language": "he",
+        "lemma": "חָרָה",
+        "morphology": "Qal wayyiqtol, third masculine singular, with prefixed וַ־ and an apocopated verb form.",
+        "qualifier": "",
+        "root": "חרה",
+        "sense": "to become angry"
+      },
+      "position": 6,
+      "surface": "וַיִּחַר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "cain",
+            "base": null,
+            "change": "Add a personal-name article for Cain. Its proposed root link requires a companion article for קינ, which is absent from the local lexicon.",
+            "definition": "Cain, the son of Adam and Eve and brother of Abel.",
+            "evidence": "Genesis 4:1 names Eve’s son קַיִן. Genesis 4:2 identifies Abel as his brother and names Cain again when describing his work."
+          }
+        },
+        "evidence": "In וַיִּחַר לְקַיִן מְאֹד, לְ marks Cain as the person experiencing anger. The clause means “Cain became very angry.” He is the same Cain named earlier in the verse alongside his offering.",
+        "gloss": "to Cain",
+        "language": "he",
+        "lemma": "קַיִן",
+        "morphology": "Preposition לְ prefixed to the masculine singular personal name קַיִן.",
+        "qualifier": "",
+        "root": "קינ",
+        "sense": "The personal name of Abel’s brother."
+      },
+      "position": 7,
+      "surface": "לְקַיִן"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "meod"
+        },
+        "evidence": "In וַיִּחַר לְקַיִן מְאֹד (“Cain became very angry”), מְאֹד intensifies וַיִּחַר, expressing the degree of Cain’s anger.",
+        "gloss": "very",
+        "language": "he",
+        "lemma": "מְאֹד",
+        "morphology": "Adverb of degree, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "מאד",
+        "sense": "very, greatly"
+      },
+      "position": 8,
+      "surface": "מְאֹד"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "naphal"
+        },
+        "evidence": "The plural verb agrees with פָּנָיו, “his face,” which is plural in Hebrew. After וַיִּחַר לְקַיִן מְאֹד, “Cain was very angry,” the phrase describes the visible change in his expression.",
+        "gloss": "and [his face] fell",
+        "language": "he",
+        "lemma": "נָפַל",
+        "morphology": "Qal wayyiqtol, third person masculine plural, with prefixed וַ־.",
+        "qualifier": "",
+        "root": "נפל",
+        "sense": "fall (of the face, expressing dejection)"
+      },
+      "position": 9,
+      "surface": "וַיִּפְּלוּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "panah"
+        },
+        "evidence": "After the verse says that Cain grew very angry, וַיִּפְּלוּ פָּנָיו describes the visible change in his expression: his face fell. The plural verb וַיִּפְּלוּ agrees with פָּנָיו, which denotes one person’s countenance.",
+        "gloss": "his face",
+        "language": "he",
+        "lemma": "פָּנִים",
+        "morphology": "Common-gender plural noun in construct with a third-person masculine singular possessive suffix referring to Cain.",
+        "qualifier": "",
+        "root": "פנה",
+        "sense": "countenance, look"
+      },
+      "position": 10,
+      "surface": "פָּנָיו"
+    }
+  ]
+}

@@ -1,0 +1,195 @@
+{
+  "book": 1,
+  "chapter": 2,
+  "review": {
+    "entities": [],
+    "glosses": [
+      {
+        "gloss": "and the gold of",
+        "position": 0
+      },
+      {
+        "gloss": "the land",
+        "position": 1
+      },
+      {
+        "gloss": "that",
+        "position": 2
+      },
+      {
+        "gloss": "good",
+        "position": 3
+      },
+      {
+        "gloss": "there",
+        "position": 4
+      },
+      {
+        "gloss": "bdellium",
+        "position": 5
+      },
+      {
+        "gloss": "and the stone of",
+        "position": 6
+      },
+      {
+        "gloss": "onyx",
+        "position": 7
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[And the gold of|0] [that|2] [land|1] [{is}|3] [good|3]. [Bdellium|5] [and|6] [onyx|7] [stone|6] [{are}|4] [there|4]."
+  },
+  "source": "ot",
+  "verse": 12,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "zahav"
+        },
+        "evidence": "וּזֲהַב הָאָרֶץ הַהִוא means “and the gold of that land.” The construct זֲהַב takes הָאָרֶץ as its complement, and טוֹב describes the gold as good.",
+        "gloss": "and the gold of",
+        "language": "he",
+        "lemma": "זָהָב",
+        "morphology": "Masculine singular construct noun with prefixed conjunction וּ־.",
+        "qualifier": "",
+        "root": "זהב",
+        "sense": "gold, the metal"
+      },
+      "position": 0,
+      "surface": "וּזֲהַב"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "erets"
+        },
+        "evidence": "וּזֲהַב הָאָרֶץ הַהִוא means “and the gold of that land.” The demonstrative identifies a particular territory, and שָׁם (“there”) locates the other materials in it.",
+        "gloss": "the land",
+        "language": "he",
+        "lemma": "אֶרֶץ",
+        "morphology": "Definite article הָ־ + common noun, singular absolute, with feminine agreement.",
+        "qualifier": "",
+        "root": "ארצ",
+        "sense": "land, country, territory"
+      },
+      "position": 1,
+      "surface": "הָאָרֶץ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "hu"
+        },
+        "evidence": "In הָאָרֶץ הַהִוא, “that land,” הַהִוא follows הָאָרֶץ and agrees with it in gender, number, and definiteness. The Pentateuchal spelling הוא is pointed הִוא for the feminine pronoun הִיא.",
+        "gloss": "that",
+        "language": "he",
+        "lemma": "הִיא",
+        "morphology": "Definite article הַ + third-person feminine singular pronoun, used demonstratively.",
+        "qualifier": "",
+        "root": "הוא",
+        "sense": "that (with the article)"
+      },
+      "position": 2,
+      "surface": "הַהִוא"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "tov"
+        },
+        "evidence": "In וּזֲהַב הָאָרֶץ הַהִוא טוֹב, “the gold of that land is good,” טוֹב agrees with the masculine singular זֲהַב and describes the quality of the gold.",
+        "gloss": "of good quality",
+        "language": "he",
+        "lemma": "טוֹב",
+        "morphology": "Masculine singular absolute adjective, used predicatively.",
+        "qualifier": "adjective",
+        "root": "טוב",
+        "sense": "good in quality, fine, fit for use"
+      },
+      "position": 3,
+      "surface": "טוֹב"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shem"
+        },
+        "evidence": "שָׁם refers back to הָאָרֶץ הַהִוא, “that land.” It tells where the bdellium and the onyx stone are found.",
+        "gloss": "there",
+        "language": "he",
+        "lemma": "שָׁם",
+        "morphology": "Adverb of place, uninflected, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "שמ",
+        "sense": "there, to that place"
+      },
+      "position": 4,
+      "surface": "שָׁם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "bedolach",
+            "base": null,
+            "change": "Add בְּדֹלַח under its own consonants בדלח. Neither passage establishes a derivation from the verb בָּדַל.",
+            "definition": "A material found in Havilah, traditionally called bdellium.",
+            "evidence": "Genesis 2:12 lists it among Havilah’s resources. Numbers 11:7 compares the appearance of manna to it."
+          }
+        },
+        "evidence": "After mentioning the land’s gold, Genesis 2:12 uses שָׁם (‘there’) to locate both הַבְּדֹלַח and the שֹׁהַם stone in Havilah. The list identifies בְּדֹלַח as a material found there but leaves its composition uncertain.",
+        "gloss": "bdellium",
+        "language": "he",
+        "lemma": "בְּדֹלַח",
+        "morphology": "Definite article הַ־ prefixed to a masculine singular absolute common noun.",
+        "qualifier": "",
+        "root": "בדלח",
+        "sense": "a material from the land of Havilah, traditionally identified as bdellium"
+      },
+      "position": 5,
+      "surface": "הַבְּדֹלַח"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "even"
+        },
+        "evidence": "In וְאֶבֶן הַשֹּׁהַם ‘and the onyx stone’, אֶבֶן names the gem and הַשֹּׁהַם specifies its kind. The conjunction links it to הַבְּדֹלַח ‘the bdellium’ as another material found there.",
+        "gloss": "stone (gem)",
+        "language": "he",
+        "lemma": "אֶבֶן",
+        "morphology": "Common noun, feminine singular construct, prefixed with the conjunction וְ ‘and’.",
+        "qualifier": "",
+        "root": "אבנ",
+        "sense": "precious stone, gem"
+      },
+      "position": 6,
+      "surface": "וְאֶבֶן"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "shoham",
+            "base": null,
+            "change": "Create a lexical article for the stone noun שֹׁהַם under its own consonants שהמ.",
+            "definition": "A precious stone traditionally identified as onyx.",
+            "evidence": "Genesis 2:12 explicitly calls it a stone. Exodus 28:9–12 describes two such stones engraved with names and set in gold on the shoulders of the ephod."
+          }
+        },
+        "evidence": "In וְאֶבֶן הַשֹּׁהַם, “and the onyx stone,” שֹׁהַם specifies the kind of אֶבֶן. The verse lists it alongside gold and bdellium among the materials found in the land. The wording establishes that it is a stone, though its exact mineral identity is uncertain.",
+        "gloss": "onyx",
+        "language": "he",
+        "lemma": "שֹׁהַם",
+        "morphology": "Masculine singular absolute common noun with prefixed definite article הַ־, which doubles the initial שׁ.",
+        "qualifier": "noun",
+        "root": "שהמ",
+        "sense": "A precious stone traditionally identified as onyx."
+      },
+      "position": 7,
+      "surface": "הַשֹּׁהַם"
+    }
+  ]
+}

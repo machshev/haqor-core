@@ -1,0 +1,305 @@
+{
+  "book": 1,
+  "chapter": 7,
+  "source": "ot",
+  "verse": 13,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "etsem"
+        },
+        "evidence": "בְּעֶצֶם הַיּוֹם הַזֶּה means “on this very day.” עֶצֶם stands in construct with הַיּוֹם and emphasizes the exact day when Noah and his family entered the ark.",
+        "gloss": "on the very",
+        "language": "he",
+        "lemma": "עֶצֶם",
+        "morphology": "Preposition בְּ plus feminine singular construct noun.",
+        "qualifier": "",
+        "root": "עצמ",
+        "sense": "very, selfsame (the thing itself)"
+      },
+      "position": 0,
+      "surface": "בְּעֶצֶם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yom"
+        },
+        "evidence": "In בְּעֶצֶם הַיּוֹם הַזֶּה, הַזֶּה specifies the day and בְּעֶצֶם emphasizes that it was on that very day that Noah and his family entered the ark.",
+        "gloss": "day (in “on that very day”)",
+        "language": "he",
+        "lemma": "יוֹם",
+        "morphology": "Masculine singular absolute noun with prefixed definite article הַ־.",
+        "qualifier": "",
+        "root": "יומ",
+        "sense": "today, this day; now"
+      },
+      "position": 1,
+      "surface": "הַיּוֹם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "bo"
+        },
+        "evidence": "בָּא precedes the compound subject headed by נֹחַ. The phrase אֶל הַתֵּבָה gives the destination: Noah and his family entered the ark on that very day.",
+        "gloss": "entered",
+        "language": "he",
+        "lemma": "בּוֹא",
+        "morphology": "Qal perfect, third person masculine singular",
+        "qualifier": "",
+        "root": "בוא",
+        "sense": "enter, go into"
+      },
+      "position": 3,
+      "surface": "בָּא"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "noah-son-of-lamech",
+            "base": null,
+            "change": "Add a personal-name article for נֹחַ linked to the root article nuach.",
+            "definition": "Noah, the son whom Lamech names in hope of relief from toil.",
+            "evidence": "Genesis 5:29 gives the name נֹחַ and explains it through the wordplay on יְנַחֲמֵנוּ, “he will comfort us.”"
+          }
+        },
+        "evidence": "In בָּא נֹחַ, Noah is the first person named as entering the ark. The verse identifies Shem, Ham, and Japheth as בְּנֵי נֹחַ, “the sons of Noah.”",
+        "gloss": "Noah",
+        "language": "he",
+        "lemma": "נֹחַ",
+        "morphology": "Masculine singular personal name without prefix or suffix.",
+        "qualifier": "",
+        "root": "נוח",
+        "sense": "Noah, son of Lamech"
+      },
+      "position": 4,
+      "surface": "נֹחַ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "shem-son-of-noah",
+            "base": "fbe663761f7b99d74717d46c73cfdd9c109b0f011f6cf7d4990e440f91e7d6ce",
+            "change": "Add Genesis 7:13 as defining evidence in the existing Shem article.",
+            "definition": "Shem is one of Noah’s three sons.",
+            "evidence": "Genesis 7:13 names Shem, Ham, and Japheth as the sons of Noah who entered the ark."
+          }
+        },
+        "evidence": "Shem is named alongside Ham and Japheth. The phrase בְּנֵי נֹחַ, “sons of Noah,” identifies all three as Noah’s sons.",
+        "gloss": "and Shem",
+        "language": "he",
+        "lemma": "שֵׁם",
+        "morphology": "Conjunction וְ prefixed to a masculine singular proper noun.",
+        "qualifier": "personal name",
+        "root": "שמ",
+        "sense": "Shem, son of Noah"
+      },
+      "position": 5,
+      "surface": "וְשֵׁם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "ham",
+            "base": "eab1750c1b64861213980db45a18247d4d619e6921a468f319f1554f4b1129c1",
+            "change": "Add Genesis 7:13 as defining evidence for Ham’s identity in the existing personal-name article.",
+            "definition": "Ham is one of Noah’s three sons.",
+            "evidence": "Genesis 7:13 names Ham with his brothers Shem and Japheth among those who entered the ark."
+          }
+        },
+        "evidence": "Genesis 7:13 lists חָם between Shem and Japheth. The phrase בְּנֵי נֹחַ, “sons of Noah,” identifies all three as Noah’s sons.",
+        "gloss": "Ham",
+        "language": "he",
+        "lemma": "חָם",
+        "morphology": "Conjunction וְ prefixed to the masculine singular proper noun חָם.",
+        "qualifier": "personal name",
+        "root": "חמ",
+        "sense": "Ham, son of Noah"
+      },
+      "position": 6,
+      "surface": "וְחָם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "japheth"
+        },
+        "evidence": "וָיֶפֶת completes the list of Shem, Ham, and Japheth. The following phrase בְּנֵי נֹחַ identifies all three as Noah’s sons.",
+        "gloss": "and Japheth",
+        "language": "he",
+        "lemma": "יֶפֶת",
+        "morphology": "Proper noun, masculine singular, with prefixed conjunction וָ־.",
+        "qualifier": "",
+        "root": "פתה",
+        "sense": "Japheth, son of Noah"
+      },
+      "position": 7,
+      "surface": "וָיֶפֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "noah-son-of-lamech",
+            "base": null,
+            "change": "Add a personal-name article for נֹחַ linked to the root article nuach.",
+            "definition": "Noah, the son whom Lamech names in hope of relief from toil.",
+            "evidence": "Genesis 5:29 gives the name נֹחַ and explains it through the wordplay on יְנַחֲמֵנוּ, “he will comfort us.”"
+          }
+        },
+        "evidence": "In בְּנֵי נֹחַ, “the sons of Noah,” the marked name identifies Noah as the father of Shem, Ham, and Japheth.",
+        "gloss": "Noah",
+        "language": "he",
+        "lemma": "נֹחַ",
+        "morphology": "Masculine singular proper noun, absolute, without prefix or suffix.",
+        "qualifier": "",
+        "root": "נוח",
+        "sense": "Noah, son of Lamech"
+      },
+      "position": 9,
+      "surface": "נֹחַ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "enosh"
+        },
+        "evidence": "וְאֵשֶׁת נֹחַ means “and Noah’s wife.” The following phrase וּשְׁלֹשֶׁת נְשֵׁי בָנָיו identifies the wives of his three sons and confirms the marital sense.",
+        "gloss": "and the wife of",
+        "language": "he",
+        "lemma": "אִשָּׁה",
+        "morphology": "Conjunction וְ prefixed to אֵשֶׁת, the feminine singular construct form of אִשָּׁה.",
+        "qualifier": "",
+        "root": "אנש",
+        "sense": "wife"
+      },
+      "position": 10,
+      "surface": "וְאֵשֶׁת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "noah-son-of-lamech",
+            "base": null,
+            "change": "Add a personal-name article for נֹחַ linked to the root article nuach.",
+            "definition": "Noah, the son whom Lamech names in hope of relief from toil.",
+            "evidence": "Genesis 5:29 gives the name נֹחַ and explains it through the wordplay on יְנַחֲמֵנוּ, “he will comfort us.”"
+          }
+        },
+        "evidence": "וְאֵשֶׁת נֹחַ means “and Noah’s wife.” The marked name identifies her husband, the same Noah whose sons are named earlier in the verse.",
+        "gloss": "Noah",
+        "language": "he",
+        "lemma": "נֹחַ",
+        "morphology": "Masculine singular proper noun without prefix or suffix, serving as the genitive complement of אֵשֶׁת.",
+        "qualifier": "",
+        "root": "נוח",
+        "sense": "Noah, son of Lamech"
+      },
+      "position": 11,
+      "surface": "נֹחַ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shalosh"
+        },
+        "evidence": "In וּשְׁלֹשֶׁת נְשֵׁי בָנָיו, the numeral counts the wives of Noah’s sons. Its masculine form follows the gender polarity of Hebrew numerals with the feminine noun נְשֵׁי.",
+        "gloss": "and the three",
+        "language": "he",
+        "lemma": "שָׁלֹשׁ",
+        "morphology": "Conjunction וּ־ prefixed to שְׁלֹשֶׁת, the masculine singular construct form of the cardinal numeral.",
+        "qualifier": "",
+        "root": "שלש",
+        "sense": "three"
+      },
+      "position": 12,
+      "surface": "וּשְׁלֹשֶׁת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "enosh"
+        },
+        "evidence": "In וּשְׁלֹשֶׁת נְשֵׁי בָנָיו, “and the three wives of his sons,” נְשֵׁי is the construct plural of נָשִׁים. The preceding וְאֵשֶׁת נֹחַ, “and Noah’s wife,” establishes the parallel marital relationship.",
+        "gloss": "wives of",
+        "language": "he",
+        "lemma": "נָשִׁים",
+        "morphology": "Feminine plural construct noun, without prefix or suffix.",
+        "qualifier": "",
+        "root": "אנש",
+        "sense": "wives"
+      },
+      "position": 13,
+      "surface": "נְשֵׁי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "et",
+            "base": "31c9a635be8bba9a67417e75ea7122e240ae707e04a841533a59ecd2869d0f80",
+            "change": "Add Genesis 7:13 to the evidence for the accompaniment sense of אֵת in the existing article et.",
+            "definition": "In the company of someone.",
+            "evidence": "In Genesis 7:13, אִתָּם means “with them” as Noah’s family enters the ark together."
+          }
+        },
+        "evidence": "After naming Noah and his three sons, the verse lists Noah’s wife and his sons’ three wives. אִתָּם indicates whom the women accompanied as they entered the ark. The vowel under א and the doubled ת identify the suffixed preposition.",
+        "gloss": "with them",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Preposition אֵת in its suffixed form אִתּ־ with the third-person masculine plural pronominal suffix ־ָם.",
+        "qualifier": "preposition",
+        "root": "את",
+        "sense": "with, together with (company)"
+      },
+      "position": 15,
+      "surface": "אִתָּם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "In בָּא … אֶל הַתֵּבָה, בָּא describes Noah and his family entering the ark. אֶל introduces the enclosure they enter.",
+        "gloss": "into",
+        "language": "he",
+        "lemma": "אֶל",
+        "morphology": "Preposition without prefix or suffix.",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "into"
+      },
+      "position": 16,
+      "surface": "אֶל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "tevah",
+            "base": null,
+            "change": "Add תֵּבָה under its own consonants, תבה, with the flood vessel and the papyrus basket distinguished by their contexts.",
+            "definition": "The ark in which Noah, his household, and the animals rode out the flood.",
+            "evidence": "Noah and his family enter it in Genesis 7:13, and the rising waters lift it clear of the ground in Genesis 7:17."
+          }
+        },
+        "evidence": "In Genesis 7:13, בָּא names the action of Noah and his family, and אֶל הַתֵּבָה gives their destination, “into the ark.” The definite article points back to the vessel Noah was instructed to build and enter in Genesis 6:14–18.",
+        "gloss": "the ark",
+        "language": "he",
+        "lemma": "תֵּבָה",
+        "morphology": "Common noun, feminine singular absolute, with the prefixed definite article הַ־, which doubles the initial ת.",
+        "qualifier": "",
+        "root": "תבה",
+        "sense": "The vessel that carried Noah, his household, and the animals through the flood."
+      },
+      "position": 17,
+      "surface": "הַתֵּבָה"
+    }
+  ]
+}

@@ -1,0 +1,344 @@
+{
+  "book": 1,
+  "chapter": 7,
+  "review": {
+    "entities": [
+      {
+        "evidence": "The animals go to Noah at the ark, identifying Lamech’s son in the flood account.",
+        "key": "Noah@Gen.5.29",
+        "position": 4
+      },
+      {
+        "evidence": "God had commanded this same Noah to bring the animals into the ark (Genesis 6:19).",
+        "key": "Noah@Gen.5.29",
+        "position": 13
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "two",
+        "position": 0
+      },
+      {
+        "gloss": "two",
+        "position": 1
+      },
+      {
+        "gloss": "went",
+        "position": 2
+      },
+      {
+        "gloss": "to",
+        "position": 3
+      },
+      {
+        "gloss": "Noah",
+        "position": 4
+      },
+      {
+        "gloss": "into",
+        "position": 5
+      },
+      {
+        "gloss": "the ark",
+        "position": 6
+      },
+      {
+        "gloss": "male",
+        "position": 7
+      },
+      {
+        "gloss": "and female",
+        "position": 8
+      },
+      {
+        "gloss": "just as",
+        "position": 9
+      },
+      {
+        "gloss": "had commanded",
+        "position": 10
+      },
+      {
+        "gloss": "God",
+        "position": 11
+      },
+      {
+        "gloss": "direct-object marker (untranslated)",
+        "position": 12
+      },
+      {
+        "gloss": "Noah",
+        "position": 13
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[went|2] [two|0] {by} [two|1] [to|3] [Noah|4] [into|5] [the ark|6], [male|7] [and female|8], [just as|9] [God|11] [had commanded|10] [Noah|12,13]."
+  },
+  "source": "ot",
+  "verse": 9,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shanah"
+        },
+        "evidence": "The repeated numeral in שְׁנַיִם שְׁנַיִם בָּאוּ describes how the animals came to Noah. זָכָר וּנְקֵבָה identifies the members of each pair as male and female.",
+        "gloss": "two by two",
+        "language": "he",
+        "lemma": "שְׁנַיִם",
+        "morphology": "Masculine dual absolute cardinal numeral, first of two occurrences in a distributive repetition.",
+        "qualifier": "",
+        "root": "שנה",
+        "sense": "two by two, in pairs"
+      },
+      "position": 0,
+      "surface": "שְׁנַיִם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shanah"
+        },
+        "evidence": "The marked שְׁנַיִם is the second numeral in שְׁנַיִם שְׁנַיִם. The repetition describes how the animals came to Noah, and זָכָר וּנְקֵבָה identifies the members of each pair as male and female.",
+        "gloss": "in pairs",
+        "language": "he",
+        "lemma": "שְׁנַיִם",
+        "morphology": "Masculine dual absolute cardinal numeral, repeated distributively.",
+        "qualifier": "",
+        "root": "שנה",
+        "sense": "two by two, in pairs"
+      },
+      "position": 1,
+      "surface": "שְׁנַיִם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "bo"
+        },
+        "evidence": "שְׁנַיִם שְׁנַיִם describes how the animals came, two by two. אֶל נֹחַ names the person they came to, and אֶל הַתֵּבָה identifies the ark as their destination.",
+        "gloss": "came",
+        "language": "he",
+        "lemma": "בּוֹא",
+        "morphology": "Qal perfect, third person common plural",
+        "qualifier": "",
+        "root": "בוא",
+        "sense": "come, arrive"
+      },
+      "position": 2,
+      "surface": "בָּאוּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "In בָּאוּ אֶל נֹחַ, “they came to Noah,” the marked אֶל identifies Noah as the person the animals approached. The following אֶל הַתֵּבָה gives the ark as their destination.",
+        "gloss": "to",
+        "language": "he",
+        "lemma": "אֶל",
+        "morphology": "Simple preposition without prefix or suffix.",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "to (a person: speaking, sending, bringing)"
+      },
+      "position": 3,
+      "surface": "אֶל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "noah-son-of-lamech",
+            "base": null,
+            "change": "Add a personal-name article for נֹחַ linked to the root article nuach.",
+            "definition": "Noah, the son whom Lamech names in hope of relief from toil.",
+            "evidence": "Genesis 5:29 gives the name נֹחַ and explains it through the wordplay on יְנַחֲמֵנוּ, “he will comfort us.”"
+          }
+        },
+        "evidence": "In בָּאוּ אֶל נֹחַ, “they came to Noah,” the marked name is the object of אֶל and identifies the person the animals approached in pairs.",
+        "gloss": "Noah",
+        "language": "he",
+        "lemma": "נֹחַ",
+        "morphology": "Masculine singular personal name without prefix or suffix.",
+        "qualifier": "",
+        "root": "נוח",
+        "sense": "Noah, son of Lamech"
+      },
+      "position": 4,
+      "surface": "נֹחַ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "The pairs came (בָּאוּ) to Noah (אֶל נֹחַ). The second אֶל introduces הַתֵּבָה, the ark they entered.",
+        "gloss": "into",
+        "language": "he",
+        "lemma": "אֶל",
+        "morphology": "Preposition with no prefix or suffix.",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "into"
+      },
+      "position": 5,
+      "surface": "אֶל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "tevah",
+            "base": null,
+            "change": "Add תֵּבָה under its own consonants תבה. The supplied gentilic gloss and root תאר do not account for the marked noun.",
+            "definition": "A container that holds living occupants on water, here the ark that carried Noah, his household, and the animals.",
+            "evidence": "Genesis 7:9 describes the animals entering the ark in pairs. Genesis 7:17–18 describes the floodwaters lifting that same ark until it floated."
+          }
+        },
+        "evidence": "The two phrases after בָּאוּ identify whom the animals came to and where they went. They came אֶל נֹחַ, “to Noah,” and אֶל הַתֵּבָה, “into the ark.” The article identifies the vessel Noah had already been told to enter with his household in Genesis 7:1.",
+        "gloss": "the ark",
+        "language": "he",
+        "lemma": "תֵּבָה",
+        "morphology": "Definite article הַ־ prefixed to a feminine singular absolute common noun.",
+        "qualifier": "",
+        "root": "תבה",
+        "sense": "The vessel that carried Noah, his household, and the animals through the flood."
+      },
+      "position": 6,
+      "surface": "הַתֵּבָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "zakar"
+        },
+        "evidence": "זָכָר וּנְקֵבָה identifies the animals that entered the ark two by two as male and female. זָכָר designates the male of each pair.",
+        "gloss": "male",
+        "language": "he",
+        "lemma": "זָכָר",
+        "morphology": "Masculine singular absolute, used substantivally, with no prefix or suffix.",
+        "qualifier": "noun",
+        "root": "זכר",
+        "sense": "male"
+      },
+      "position": 7,
+      "surface": "זָכָר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "naqav",
+            "base": null,
+            "change": "Include the animal use alongside the human use under a single sense of נְקֵבָה.",
+            "definition": "A female, whether human or animal.",
+            "evidence": "Genesis 6:19 pairs נְקֵבָה with זָכָר for the animals entering the ark. Genesis 1:27 uses the same pair for humankind."
+          }
+        },
+        "evidence": "The animals come to Noah שְׁנַיִם שְׁנַיִם, “two by two.” The phrase זָכָר וּנְקֵבָה, “male and female,” identifies the members of each pair.",
+        "gloss": "and female",
+        "language": "he",
+        "lemma": "נְקֵבָה",
+        "morphology": "Conjunction וּ־ prefixed to a feminine singular absolute common noun.",
+        "qualifier": "",
+        "root": "נקב",
+        "sense": "The female of an animal pair."
+      },
+      "position": 8,
+      "surface": "וּנְקֵבָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ashar"
+        },
+        "evidence": "כַּאֲשֶׁר introduces צִוָּה אֱלֹהִים אֶת־נֹחַ, “God commanded Noah.” The animals came to the ark in pairs, male and female, just as God had commanded.",
+        "gloss": "just as",
+        "language": "he",
+        "lemma": "אֲשֶׁר",
+        "morphology": "Relative particle with prefixed comparative preposition כַּ־.",
+        "qualifier": "",
+        "root": "אשר",
+        "sense": "with a preposition: as, where, than, until"
+      },
+      "position": 9,
+      "surface": "כַּאֲשֶׁר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "tsavah"
+        },
+        "evidence": "In כַּאֲשֶׁר צִוָּה אֱלֹהִים אֶת נֹחַ, אֱלֹהִים is the subject and אֶת marks Noah as the person God had commanded. כַּאֲשֶׁר connects the animals’ arrival in pairs with that earlier command.",
+        "gloss": "had commanded",
+        "language": "he",
+        "lemma": "צִוָּה",
+        "morphology": "Piel perfect, third person masculine singular",
+        "qualifier": "",
+        "root": "צוה",
+        "sense": "to give someone a command"
+      },
+      "position": 10,
+      "surface": "צִוָּה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "In כַּאֲשֶׁר צִוָּה אֱלֹהִים אֶת נֹחַ, “as God commanded Noah,” אֱלֹהִים is the subject of the masculine singular verb צִוָּה. The object marker אֶת identifies Noah as the one God commanded.",
+        "gloss": "God",
+        "language": "he",
+        "lemma": "אֱלֹהִים",
+        "morphology": "Common noun, masculine plural absolute, with singular agreement.",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "the Mighty One, God"
+      },
+      "position": 11,
+      "surface": "אֱלֹהִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "et"
+        },
+        "evidence": "In צִוָּה אֱלֹהִים אֶת נֹחַ, “God commanded Noah,” אֱלֹהִים is the subject of צִוָּה, and אֶת marks the proper name נֹחַ as its direct object.",
+        "gloss": "direct-object marker (untranslated)",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Unsuffixed direct-object particle, with no prefix",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "(marks the definite object)"
+      },
+      "position": 12,
+      "surface": "אֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "noah-son-of-lamech",
+            "base": null,
+            "change": "Add a personal-name article for נֹחַ linked to the root article nuach.",
+            "definition": "Noah, the son whom Lamech names in hope of relief from toil.",
+            "evidence": "Genesis 5:29 gives the name נֹחַ and explains it through the wordplay on יְנַחֲמֵנוּ, “he will comfort us.”"
+          }
+        },
+        "evidence": "In כַּאֲשֶׁר צִוָּה אֱלֹהִים אֶת נֹחַ, “as God commanded Noah,” אֶת marks the final נֹחַ as the person God commanded.",
+        "gloss": "Noah",
+        "language": "he",
+        "lemma": "נֹחַ",
+        "morphology": "Masculine singular personal name, without prefix or suffix.",
+        "qualifier": "",
+        "root": "נוח",
+        "sense": "Noah, son of Lamech"
+      },
+      "position": 13,
+      "surface": "נֹחַ"
+    }
+  ]
+}

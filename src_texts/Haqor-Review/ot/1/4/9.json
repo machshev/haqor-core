@@ -1,0 +1,321 @@
+{
+  "book": 1,
+  "chapter": 4,
+  "review": {
+    "entities": [
+      {
+        "evidence": "יַהְוֶה names the speaker who asks Cain about Abel. The LORD source tag identifies the same God as the earlier Yahweh proposal.",
+        "key": "Yahweh@Gen.2.22",
+        "new": {
+          "description": "The God of Israel, who built the rib taken from the man into a woman and brought her to the man.",
+          "kind": "person",
+          "name": "Yahweh"
+        },
+        "position": 1
+      },
+      {
+        "evidence": "Yahweh addresses Cain and calls Abel his brother, identifying the son born to Eve in Genesis 4:1.",
+        "key": "Cain@Gen.4.1",
+        "position": 3
+      },
+      {
+        "evidence": "“Your brother” identifies Abel as the brother of Cain introduced in Genesis 4:2.",
+        "key": "Abel@Gen.4.2",
+        "position": 5
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "then he said",
+        "position": 0
+      },
+      {
+        "gloss": "Yahweh",
+        "position": 1
+      },
+      {
+        "gloss": "to",
+        "position": 2
+      },
+      {
+        "gloss": "Cain",
+        "position": 3
+      },
+      {
+        "gloss": "where?",
+        "position": 4
+      },
+      {
+        "gloss": "Abel",
+        "position": 5
+      },
+      {
+        "gloss": "your brother",
+        "position": 6
+      },
+      {
+        "gloss": "and he replied",
+        "position": 7
+      },
+      {
+        "gloss": "not",
+        "position": 8
+      },
+      {
+        "gloss": "I know",
+        "position": 9
+      },
+      {
+        "gloss": "keeper",
+        "position": 10
+      },
+      {
+        "gloss": "my brother",
+        "position": 11
+      },
+      {
+        "gloss": "I",
+        "position": 12
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[Then|0] [Yahweh|1] [said|0] [to|2] [Cain|3], “ [Where|4] {is} [Abel|5] [your brother|6]?” [And he replied|7], “[I do|9] [not|8] [know|9]. [Am|10] [I|12] [my brother’s|11] [keeper|10]?”"
+  },
+  "source": "ot",
+  "verse": 9,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "amar"
+        },
+        "evidence": "יַהְוֶה is the speaker, אֶל קַיִן identifies Cain as the addressee, and אֵי הֶבֶל אָחִיךָ gives the words spoken, “Where is Abel your brother?”",
+        "gloss": "and he said",
+        "language": "he",
+        "lemma": "אָמַר",
+        "morphology": "Qal wayyiqtol, third masculine singular, with prefixed וַ־",
+        "qualifier": "",
+        "root": "אמר",
+        "sense": "say, introducing direct speech"
+      },
+      "position": 0,
+      "surface": "וַיֹּאמֶר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yahweh"
+        },
+        "evidence": "In וַיֹּאמֶר יַהְוֶה אֶל קַיִן, “Yahweh said to Cain,” יַהְוֶה names the speaker who asks Cain where his brother Abel is.",
+        "gloss": "Yahweh",
+        "language": "he",
+        "lemma": "יַהְוֶה",
+        "morphology": "Proper noun, masculine singular, without prefix or suffix",
+        "qualifier": "",
+        "root": "הוה",
+        "sense": "Personal name of the God of Israel"
+      },
+      "position": 1,
+      "surface": "יַהְוֶה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "In וַיֹּאמֶר יַהְוֶה אֶל קַיִן, אֶל introduces Cain as the person Yahweh addresses when he asks where Abel is.",
+        "gloss": "to",
+        "language": "he",
+        "lemma": "אֶל",
+        "morphology": "Preposition without prefix or suffix.",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "to (a person: speaking, sending, bringing)"
+      },
+      "position": 2,
+      "surface": "אֶל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "cain",
+            "base": null,
+            "change": "Add a personal-name article for Cain. Its proposed root link requires a companion article for קינ, which is absent from the local lexicon.",
+            "definition": "Cain, the son of Adam and Eve and brother of Abel.",
+            "evidence": "Genesis 4:1 names Eve’s son קַיִן. Genesis 4:2 identifies Abel as his brother and names Cain again when describing his work."
+          }
+        },
+        "evidence": "וַיֹּאמֶר יַהְוֶה אֶל קַיִן names Cain as the person YHWH addresses. In the question אֵי הֶבֶל אָחִיךָ, “Where is Abel your brother?”, the suffix on אָחִיךָ identifies Abel as Cain’s brother.",
+        "gloss": "Cain",
+        "language": "he",
+        "lemma": "קַיִן",
+        "morphology": "Masculine singular proper noun, with no prefix or suffix. The separate preposition אֶל introduces Cain as the addressee.",
+        "qualifier": "",
+        "root": "קינ",
+        "sense": "The personal name of Abel’s brother."
+      },
+      "position": 3,
+      "surface": "קַיִן"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "i-coastland",
+            "base": "abf693687718a33a00cdbd58ecff2b44bc640be8a9f0d26eeb11b541e12cf7c3",
+            "change": "Add the interrogative particle אֵי as a separate word under the consonantal key אי. The existing noun אִי means “island, coastland.”",
+            "definition": "אֵי introduces a question asking where someone or something is.",
+            "evidence": "In Genesis 4:9 Yahweh asks Cain where Abel is. Cain replies that he does not know and asks whether he is his brother’s keeper."
+          }
+        },
+        "evidence": "In אֵי הֶבֶל אָחִיךָ, “Where is Abel your brother?”, הֶבֶל אָחִיךָ identifies the person and אֵי asks his whereabouts. Cain answers לֹא יָדַעְתִּי, “I do not know.”",
+        "gloss": "where?",
+        "language": "he",
+        "lemma": "אֵי",
+        "morphology": "Interrogative particle of place, without prefix or suffix.",
+        "qualifier": "",
+        "root": "אי",
+        "sense": "Asks where someone or something is."
+      },
+      "position": 4,
+      "surface": "אֵי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "abel"
+        },
+        "evidence": "YHWH asks Cain אֵי הֶבֶל אָחִיךָ, “Where is Abel, your brother?” The appositive אָחִיךָ identifies Abel as Cain’s brother.",
+        "gloss": "Abel",
+        "language": "he",
+        "lemma": "הֶבֶל",
+        "morphology": "Masculine singular proper noun.",
+        "qualifier": "name",
+        "root": "הבל",
+        "sense": "Abel, Cain’s brother"
+      },
+      "position": 5,
+      "surface": "הֶבֶל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ach"
+        },
+        "evidence": "In אֵי הֶבֶל אָחִיךָ, “Where is Abel, your brother?”, אָחִיךָ stands in apposition to Abel. The suffix refers to Cain, whom YHWH addresses.",
+        "gloss": "your brother",
+        "language": "he",
+        "lemma": "אָח",
+        "morphology": "Masculine singular construct noun with a second-person masculine singular possessive suffix.",
+        "qualifier": "",
+        "root": "אחה",
+        "sense": "brother (by birth)"
+      },
+      "position": 6,
+      "surface": "אָחִיךָ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "amar"
+        },
+        "evidence": "After יַהְוֶה asks Cain where Abel is, the second וַיֹּאמֶר introduces Cain’s reply. Its subject is Cain, whose first words are לֹא יָדַעְתִּי (“I do not know”).",
+        "gloss": "and he said",
+        "language": "he",
+        "lemma": "אָמַר",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ־ and no suffix",
+        "qualifier": "",
+        "root": "אמר",
+        "sense": "say, introducing direct speech"
+      },
+      "position": 7,
+      "surface": "וַיֹּאמֶר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "lo"
+        },
+        "evidence": "In Cain’s reply לֹא יָדַעְתִּי, “I do not know,” לֹא negates יָדַעְתִּי. Cain denies knowing where Abel is.",
+        "gloss": "not",
+        "language": "he",
+        "lemma": "לֹא",
+        "morphology": "Uninflected negative particle with no prefix or suffix.",
+        "qualifier": "",
+        "root": "לא",
+        "sense": "not (of a fact)"
+      },
+      "position": 8,
+      "surface": "לֹא"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yada"
+        },
+        "evidence": "YHWH asks אֵי הֶבֶל אָחִיךָ, “Where is Abel your brother?” Cain replies לֹא יָדַעְתִּי, “I do not know.” The question supplies the understood complement, “where Abel is.”",
+        "gloss": "I know",
+        "language": "he",
+        "lemma": "יָדַע",
+        "morphology": "Qal perfect, first person common singular, with the subject ending ־תִּי.",
+        "qualifier": "",
+        "root": "ידע",
+        "sense": "to know where someone is"
+      },
+      "position": 9,
+      "surface": "יָדַעְתִּי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shamar"
+        },
+        "evidence": "Asked where Abel is, Cain replies הֲשֹׁמֵר אָחִי אָנֹכִי, “Am I my brother’s keeper?” The prefix הֲ marks the question, and שֹׁמֵר identifies the person who would watch over Abel.",
+        "gloss": "keeper",
+        "language": "he",
+        "lemma": "שָׁמַר",
+        "morphology": "Interrogative הֲ prefixed to a Qal active participle, masculine singular, used substantivally.",
+        "qualifier": "",
+        "root": "שמר",
+        "sense": "guard, watch over"
+      },
+      "position": 10,
+      "surface": "הֲשֹׁמֵר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ach"
+        },
+        "evidence": "YHWH calls Abel הֶבֶל אָחִיךָ, “Abel your brother.” Cain refers to Abel as אָחִי, “my brother,” when he asks, “Am I my brother’s keeper?”",
+        "gloss": "my brother",
+        "language": "he",
+        "lemma": "אָח",
+        "morphology": "Masculine singular construct noun with the first-person singular possessive suffix ־ִי.",
+        "qualifier": "",
+        "root": "אחה",
+        "sense": "brother (by birth)"
+      },
+      "position": 11,
+      "surface": "אָחִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ani"
+        },
+        "evidence": "Cain asks הֲשֹׁמֵר אָחִי אָנֹכִי, “Am I my brother’s keeper?” The final אָנֹכִי refers to Cain and serves as the subject of the predicate שֹׁמֵר אָחִי, “my brother’s keeper.”",
+        "gloss": "I",
+        "language": "he",
+        "lemma": "אָנֹכִי",
+        "morphology": "Independent personal pronoun, first person common singular",
+        "qualifier": "",
+        "root": "אנכי",
+        "sense": "I (the speaker named or identified)"
+      },
+      "position": 12,
+      "surface": "אָנֹכִי"
+    }
+  ]
+}

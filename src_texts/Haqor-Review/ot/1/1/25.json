@@ -1,0 +1,326 @@
+{
+  "book": 1,
+  "chapter": 1,
+  "source": "ot",
+  "verse": 25,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "asah"
+        },
+        "evidence": "אֱלֹהִים is the subject. The three direct objects introduced by אֶת are the wild animals, the livestock, and everything that creeps on the ground. God makes each group according to its kind.",
+        "gloss": "and he made",
+        "language": "he",
+        "lemma": "עָשָׂה",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ־",
+        "qualifier": "",
+        "root": "עשׂה",
+        "sense": "make, bring into being"
+      },
+      "position": 0,
+      "surface": "וַיַּעַשׂ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "In וַיַּעַשׂ אֱלֹהִים (“God made”), the masculine singular verb וַיַּעַשׂ identifies אֱלֹהִים as the single subject who made the animals.",
+        "gloss": "God",
+        "language": "he",
+        "lemma": "אֱלֹהִים",
+        "morphology": "Common noun, masculine plural absolute, with singular verbal agreement.",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "the Mighty One, God"
+      },
+      "position": 1,
+      "surface": "אֱלֹהִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "et"
+        },
+        "evidence": "אֶת introduces חַיַּת הָאָרֶץ, “the wild animals of the earth,” as the first direct object of וַיַּעַשׂ, “he made.” The article on הָאָרֶץ makes the whole construct phrase definite.",
+        "gloss": "(untranslated)",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Direct-object particle without prefix or suffix.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "(marks the definite object)"
+      },
+      "position": 2,
+      "surface": "אֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chayah"
+        },
+        "evidence": "חַיַּת stands in construct with הָאָרֶץ, giving “the wild animals of the earth.” The singular is collective. The verse lists these animals alongside livestock (הַבְּהֵמָה) and creatures that move along the ground (רֶמֶשׂ הָאֲדָמָה).",
+        "gloss": "wild animals",
+        "language": "he",
+        "lemma": "חַיָּה",
+        "morphology": "Common noun, feminine singular construct.",
+        "qualifier": "animal",
+        "root": "חיה",
+        "sense": "wild beast, beast of the field"
+      },
+      "position": 3,
+      "surface": "חַיַּת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "erets"
+        },
+        "evidence": "In חַיַּת הָאָרֶץ, “the wild animals of the land,” הָאָרֶץ identifies the animals’ terrestrial habitat. The verse groups them with livestock and with creatures that creep on the ground.",
+        "gloss": "the land",
+        "language": "he",
+        "lemma": "אֶרֶץ",
+        "morphology": "Definite article הָ־ + common noun, singular absolute, of common gender. The noun completes the construct phrase חַיַּת הָאָרֶץ.",
+        "qualifier": "",
+        "root": "ארצ",
+        "sense": "land as distinct from sea"
+      },
+      "position": 4,
+      "surface": "הָאָרֶץ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "temunah"
+        },
+        "evidence": "The suffix refers to חַיַּת הָאָרֶץ, “the wildlife of the earth,” whose head חַיַּת is feminine singular. The parallel phrases for livestock and creeping things confirm that מִין identifies the kind to which each creature belongs.",
+        "gloss": "according to its kind",
+        "language": "he",
+        "lemma": "מִין",
+        "morphology": "Preposition לְ prefixed to a masculine singular construct noun with the third-person feminine singular possessive suffix ־ָהּ.",
+        "qualifier": "",
+        "root": "מינ",
+        "sense": "kind, variety"
+      },
+      "position": 5,
+      "surface": "לְמִינָהּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "et",
+            "base": "31c9a635be8bba9a67417e75ea7122e240ae707e04a841533a59ecd2869d0f80",
+            "change": "Add Gen.1.25 to the evidence for the existing definite-object sense in et.",
+            "definition": "אֵת introduces a definite noun phrase as the direct object of a verb. In a coordinated series it can precede each object.",
+            "evidence": "In Gen.1.25, וְאֶת הַבְּהֵמָה marks the livestock as the second of three objects of וַיַּעַשׂ “he made”."
+          }
+        },
+        "evidence": "In וְאֶת הַבְּהֵמָה, וְ־ introduces the second item in the list of what God made. אֶת marks הַבְּהֵמָה “the livestock” as an object of וַיַּעַשׂ, parallel to אֶת חַיַּת הָאָרֶץ before it and וְאֵת כָּל רֶמֶשׂ הָאֲדָמָה after it.",
+        "gloss": "and [direct-object marker]",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Prefixed coordinating conjunction וְ־ “and” followed by אֶת, the unsuffixed direct-object particle.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "Marks a definite direct object."
+      },
+      "position": 6,
+      "surface": "וְאֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "behemah"
+        },
+        "evidence": "The verse lists הַבְּהֵמָה alongside חַיַּת הָאָרֶץ (the wild animals of the earth) and כָּל־רֶמֶשׂ הָאֲדָמָה (every creature that creeps on the ground). Within this list, the noun denotes livestock collectively. The feminine singular suffix in לְמִינָהּ (according to its kind) agrees with הַבְּהֵמָה.",
+        "gloss": "the livestock",
+        "language": "he",
+        "lemma": "בְּהֵמָה",
+        "morphology": "Definite article הַ־ prefixed to a feminine singular absolute common noun used collectively.",
+        "qualifier": "",
+        "root": "בהמ",
+        "sense": "livestock, cattle; tame beast"
+      },
+      "position": 7,
+      "surface": "הַבְּהֵמָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "temunah"
+        },
+        "evidence": "In הַבְּהֵמָה לְמִינָהּ, the feminine singular suffix refers to הַבְּהֵמָה, the collective noun for livestock. The parallel phrases for wild animals and creeping things likewise describe each group according to its kind.",
+        "gloss": "according to its kind",
+        "language": "he",
+        "lemma": "מִין",
+        "morphology": "Preposition לְ (“according to”) + masculine singular construct noun מִין + third-person feminine singular possessive suffix ־ָהּ (“its”).",
+        "qualifier": "",
+        "root": "מינ",
+        "sense": "kind, variety"
+      },
+      "position": 8,
+      "surface": "לְמִינָהּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "et",
+            "base": "31c9a635be8bba9a67417e75ea7122e240ae707e04a841533a59ecd2869d0f80",
+            "change": "Add Genesis 1:25 to the definite-object sense of אֵת as an example with three coordinated objects.",
+            "definition": "Introduces a definite noun phrase as the direct object of a verb.",
+            "evidence": "In Genesis 1:25 the repeated object marker places כָּל רֶמֶשׂ הָאֲדָמָה alongside the other two things God made."
+          }
+        },
+        "evidence": "וְאֵת introduces כָּל רֶמֶשׂ הָאֲדָמָה, ‘every creeping thing of the ground’, as the third object of וַיַּעַשׂ ‘he made’. The preceding two objects each have their own object marker. The prefix וְ joins the third to the list.",
+        "gloss": "and [object marker]",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Prefixed coordinating conjunction וְ ‘and’ + unsuffixed direct-object particle אֵת.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "Marks a definite direct object."
+      },
+      "position": 9,
+      "surface": "וְאֵת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "kalal"
+        },
+        "evidence": "In כָּל רֶמֶשׂ הָאֲדָמָה, כָּל quantifies the singular collective רֶמֶשׂ, yielding “every creeping thing of the ground.” The following לְמִינֵהוּ specifies “according to its kind.”",
+        "gloss": "every",
+        "language": "he",
+        "lemma": "כֹּל",
+        "morphology": "Masculine singular noun in the construct state, without prefix or suffix.",
+        "qualifier": "",
+        "root": "כלל",
+        "sense": "every, each; any"
+      },
+      "position": 10,
+      "surface": "כָּל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ramas-creep"
+        },
+        "evidence": "In כָּל רֶמֶשׂ הָאֲדָמָה, הָאֲדָמָה completes the construct phrase “all the creeping things of the ground.” The phrase names a class of creatures God made alongside wild animals and livestock.",
+        "gloss": "creeping things",
+        "language": "he",
+        "lemma": "רֶמֶשׂ",
+        "morphology": "Common noun, masculine singular construct, used collectively.",
+        "qualifier": "",
+        "root": "רמשׂ",
+        "sense": "moving creatures"
+      },
+      "position": 11,
+      "surface": "רֶמֶשׂ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "adam"
+        },
+        "evidence": "In כָּל רֶמֶשׂ הָאֲדָמָה, “every creeping thing of the ground,” הָאֲדָמָה names the surface on which the creatures move.",
+        "gloss": "the ground",
+        "language": "he",
+        "lemma": "אֲדָמָה",
+        "morphology": "Common noun, feminine singular absolute, with prefixed definite article הָ.",
+        "qualifier": "",
+        "root": "אדמ",
+        "sense": "the ground underfoot; the face of the earth"
+      },
+      "position": 12,
+      "surface": "הָאֲדָמָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "temunah"
+        },
+        "evidence": "The masculine singular suffix refers to רֶמֶשׂ in כָּל רֶמֶשׂ הָאֲדָמָה ‘every creeping thing of the ground’. The two earlier occurrences of לְמִינָהּ express the same classification with feminine singular suffixes.",
+        "gloss": "according to its kind",
+        "language": "he",
+        "lemma": "מִין",
+        "morphology": "Preposition לְ ‘according to’ + masculine singular construct noun מִין + third-person masculine singular possessive suffix ־ֵהוּ ‘its’.",
+        "qualifier": "",
+        "root": "מינ",
+        "sense": "kind, variety"
+      },
+      "position": 13,
+      "surface": "לְמִינֵהוּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "raah"
+        },
+        "evidence": "אֱלֹהִים is the subject of וַיַּרְא, and כִּי טוֹב gives the content of what God saw: that it was good.",
+        "gloss": "and he saw",
+        "language": "he",
+        "lemma": "רָאָה",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ־",
+        "qualifier": "",
+        "root": "ראה",
+        "sense": "see or perceive that something is so"
+      },
+      "position": 14,
+      "surface": "וַיַּרְא"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "In וַיַּרְא אֱלֹהִים כִּי טוֹב, “God saw that it was good,” אֱלֹהִים is the subject of the third-person masculine singular verb וַיַּרְא. It refers to the same God who made the animals earlier in the verse.",
+        "gloss": "God",
+        "language": "he",
+        "lemma": "אֱלֹהִים",
+        "morphology": "Common noun, masculine plural absolute, with singular reference.",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "the Mighty One, God"
+      },
+      "position": 15,
+      "surface": "אֱלֹהִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ki"
+        },
+        "evidence": "In וַיַּרְא אֱלֹהִים כִּי טוֹב, כִּי introduces what God saw: “that it was good.”",
+        "gloss": "that",
+        "language": "he",
+        "lemma": "כִּי",
+        "morphology": "Uninflected conjunction with no prefix or suffix",
+        "qualifier": "conjunction",
+        "root": "כי",
+        "sense": "that (what is seen, known or said)"
+      },
+      "position": 16,
+      "surface": "כִּי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "tov"
+        },
+        "evidence": "After God makes the land animals according to their kinds, וַיַּרְא אֱלֹהִים כִּי טוֹב means “God saw that it was good.” טוֹב expresses God’s assessment of what he has made.",
+        "gloss": "good",
+        "language": "he",
+        "lemma": "טוֹב",
+        "morphology": "Masculine singular absolute adjective used predicatively, without prefix or suffix.",
+        "qualifier": "adjective",
+        "root": "טוב",
+        "sense": "good (of God’s works at creation)"
+      },
+      "position": 17,
+      "surface": "טוֹב"
+    }
+  ]
+}

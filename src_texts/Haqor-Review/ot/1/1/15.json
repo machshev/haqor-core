@@ -1,0 +1,204 @@
+{
+  "book": 1,
+  "chapter": 1,
+  "review": {
+    "entities": [],
+    "glosses": [
+      {
+        "gloss": "and let them be",
+        "position": 0
+      },
+      {
+        "gloss": "as lights",
+        "position": 1
+      },
+      {
+        "gloss": "in the expanse of",
+        "position": 2
+      },
+      {
+        "gloss": "the heavens",
+        "position": 3
+      },
+      {
+        "gloss": "to give light",
+        "position": 4
+      },
+      {
+        "gloss": "on",
+        "position": 5
+      },
+      {
+        "gloss": "the earth",
+        "position": 6
+      },
+      {
+        "gloss": "and it was",
+        "position": 7
+      },
+      {
+        "gloss": "so",
+        "position": 8
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[And let them be|0] [as lights|1] [in the expanse of|2] [the heavens|3] [to give light|4] [on|5] [the earth|6].” [And it was|7] [so|8]."
+  },
+  "source": "ot",
+  "verse": 15,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "hayah"
+        },
+        "evidence": "The plural subject is the lights named in the preceding verse. לִמְאוֹרֹת gives their role, “as lights,” and לְהָאִיר עַל הָאָרֶץ states their purpose, “to give light on the earth.”",
+        "gloss": "and let them serve as",
+        "language": "he",
+        "lemma": "הָיָה",
+        "morphology": "Qal weqatal, third person common plural, with prefixed וְ. It continues the directive of the preceding verse.",
+        "qualifier": "",
+        "root": "היה",
+        "sense": "to serve as"
+      },
+      "position": 0,
+      "surface": "וְהָיוּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "or"
+        },
+        "evidence": "With וְהָיוּ, the prefixed לִ־ marks the role the lights are to serve. The phrase לְהָאִיר עַל הָאָרֶץ gives their purpose, to give light upon the earth.",
+        "gloss": "as luminaries",
+        "language": "he",
+        "lemma": "מָאוֹר",
+        "morphology": "Preposition לִ־ prefixed to a masculine plural absolute noun.",
+        "qualifier": "",
+        "root": "אור",
+        "sense": "luminary, light-giver"
+      },
+      "position": 1,
+      "surface": "לִמְאוֹרֹת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "raqia"
+        },
+        "evidence": "בִּרְקִיעַ הַשָּׁמַיִם means ‘in the expanse of the heavens’. The construct noun takes הַשָּׁמַיִם as its complement, and the prepositional phrase locates the lights that illuminate the earth.",
+        "gloss": "in the expanse",
+        "language": "he",
+        "lemma": "רָקִיעַ",
+        "morphology": "Preposition בִּ־ ‘in’ + masculine singular construct noun.",
+        "qualifier": "",
+        "root": "רקע",
+        "sense": "expanse"
+      },
+      "position": 2,
+      "surface": "בִּרְקִיעַ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shamayim"
+        },
+        "evidence": "In בִּרְקִיעַ הַשָּׁמַיִם, “in the expanse of the sky,” הַשָּׁמַיִם completes the construct phrase. The lights shine from that expanse onto the earth below.",
+        "gloss": "the sky",
+        "language": "he",
+        "lemma": "שָׁמַיִם",
+        "morphology": "Definite article הַ־ + masculine plural common noun in the absolute state.",
+        "qualifier": "",
+        "root": "שמה",
+        "sense": "sky, the visible heavens"
+      },
+      "position": 3,
+      "surface": "הַשָּׁמַיִם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "or"
+        },
+        "evidence": "לְהָאִיר states the purpose of the luminaries in the expanse of the heavens. עַל הָאָרֶץ specifies where they give light: upon the earth.",
+        "gloss": "to give light",
+        "language": "he",
+        "lemma": "אוֹר",
+        "morphology": "Hiphil infinitive construct with prefixed לְ expressing purpose",
+        "qualifier": "verb",
+        "root": "אור",
+        "sense": "give light"
+      },
+      "position": 4,
+      "surface": "לְהָאִיר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "alah"
+        },
+        "evidence": "In לְהָאִיר עַל הָאָרֶץ, “to shine upon the earth,” עַל introduces the surface on which the light falls.",
+        "gloss": "upon",
+        "language": "he",
+        "lemma": "עַל",
+        "morphology": "Preposition without prefix or suffix.",
+        "qualifier": "",
+        "root": "עלה",
+        "sense": "on, upon, over"
+      },
+      "position": 5,
+      "surface": "עַל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "erets"
+        },
+        "evidence": "The lights are set בִּרְקִיעַ הַשָּׁמַיִם ‘in the expanse of the heavens’ to shine עַל הָאָרֶץ ‘upon the earth’. The earth is the whole realm below that receives their light.",
+        "gloss": "the earth",
+        "language": "he",
+        "lemma": "אֶרֶץ",
+        "morphology": "Definite article הָ־ + common noun, singular absolute.",
+        "qualifier": "",
+        "root": "ארצ",
+        "sense": "earth"
+      },
+      "position": 6,
+      "surface": "הָאָרֶץ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "hayah"
+        },
+        "evidence": "In וַיְהִי כֵן, כֵן (“so”) refers back to the command for the lights to shine on the earth. The phrase reports its fulfillment: “and it was so.”",
+        "gloss": "and it came to pass",
+        "language": "he",
+        "lemma": "הָיָה",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed narrative וַ־",
+        "qualifier": "",
+        "root": "היה",
+        "sense": "to come to pass"
+      },
+      "position": 7,
+      "surface": "וַיְהִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ken"
+        },
+        "evidence": "In וַיְהִי כֵן (“and it was so”), כֵן refers back to the command that the lights shine on the earth. It indicates that what God commanded came to pass.",
+        "gloss": "so",
+        "language": "he",
+        "lemma": "כֵּן",
+        "morphology": "Uninflected adverb of manner with no prefix or suffix.",
+        "qualifier": "adverb",
+        "root": "כונ",
+        "sense": "so, thus (as said or done)"
+      },
+      "position": 8,
+      "surface": "כֵן"
+    }
+  ]
+}

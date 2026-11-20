@@ -1,0 +1,144 @@
+{
+  "book": 1,
+  "chapter": 8,
+  "source": "ot",
+  "verse": 8,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shalach"
+        },
+        "evidence": "אֶת־הַיּוֹנָה marks the dove as the object, and מֵאִתּוֹ means “from him.” Noah sent the dove out to see whether the floodwaters had receded.",
+        "gloss": "and he sent out",
+        "language": "he",
+        "lemma": "שָׁלַח",
+        "morphology": "Piel wayyiqtol, third-person masculine singular, with prefixed וַ and no suffix",
+        "qualifier": "",
+        "root": "שלח",
+        "sense": "send away"
+      },
+      "position": 0,
+      "surface": "וַיְשַׁלַּח"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "et"
+        },
+        "evidence": "In וַיְשַׁלַּח אֶת הַיּוֹנָה, “he sent out the dove,” אֶת marks הַיּוֹנָה, “the dove,” as the definite direct object of וַיְשַׁלַּח.",
+        "gloss": "(direct-object marker, untranslated)",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Uninflected direct-object particle, without prefix or suffix.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "(marks the definite object)"
+      },
+      "position": 1,
+      "surface": "אֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yaven"
+        },
+        "evidence": "אֶת marks הַיּוֹנָה as the direct object of וַיְשַׁלַּח. Noah sends the dove out to see whether the water has receded from the ground.",
+        "gloss": "the dove",
+        "language": "he",
+        "lemma": "יוֹנָה",
+        "morphology": "Feminine singular absolute common noun with prefixed definite article הַ־.",
+        "qualifier": "noun",
+        "root": "יונ",
+        "sense": "dove, pigeon"
+      },
+      "position": 2,
+      "surface": "הַיּוֹנָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "raah"
+        },
+        "evidence": "Noah sends the dove לִרְאוֹת, and the following question הֲקַלּוּ הַמַּיִם specifies what he wants to learn: whether the waters have receded from the ground.",
+        "gloss": "to find out",
+        "language": "he",
+        "lemma": "רָאָה",
+        "morphology": "Qal infinitive construct with prefixed לִ־ expressing purpose",
+        "qualifier": "",
+        "root": "ראה",
+        "sense": "ascertain whether something is so"
+      },
+      "position": 4,
+      "surface": "לִרְאוֹת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "qalal"
+        },
+        "evidence": "After לִרְאוֹת ‘to see’, הֲ־ introduces an indirect question. The plural verb agrees with הַמַּיִם ‘the waters’, and מֵעַל פְּנֵי הָאֲדָמָה ‘from the surface of the ground’ shows what Noah wanted to learn by sending the dove.",
+        "gloss": "whether the waters had receded",
+        "language": "he",
+        "lemma": "קָלַל",
+        "morphology": "Interrogative הֲ־ + Qal perfect, third person common plural.",
+        "qualifier": "",
+        "root": "קלל",
+        "sense": "to diminish or subside (of water)"
+      },
+      "position": 5,
+      "surface": "הֲקַלּוּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "alah"
+        },
+        "evidence": "In הֲקַלּוּ הַמַּיִם מֵעַל פְּנֵי הָאֲדָמָה, Noah asks whether the waters have receded from the surface of the ground. עַל locates the waters upon that surface, and מֵ־ marks movement away from it.",
+        "gloss": "from upon",
+        "language": "he",
+        "lemma": "עַל",
+        "morphology": "Preposition עַל with prefixed מִן in the form מֵ־.",
+        "qualifier": "",
+        "root": "עלה",
+        "sense": "on, upon, over"
+      },
+      "position": 7,
+      "surface": "מֵעַל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "panah"
+        },
+        "evidence": "פְּנֵי is in construct with הָאֲדָמָה, forming “the surface of the ground.” Noah sends the dove to see whether the waters have receded from that surface.",
+        "gloss": "surface of",
+        "language": "he",
+        "lemma": "פָּנִים",
+        "morphology": "Common noun, common gender, plural construct, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "פנה",
+        "sense": "surface (of the earth, the waters)"
+      },
+      "position": 8,
+      "surface": "פְּנֵי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "adam"
+        },
+        "evidence": "In מֵעַל פְּנֵי הָאֲדָמָה, “from the surface of the ground,” פְּנֵי is in construct with הָאֲדָמָה. Noah sends the dove to see whether the waters have receded from that surface.",
+        "gloss": "the ground",
+        "language": "he",
+        "lemma": "אֲדָמָה",
+        "morphology": "Feminine singular absolute noun with prefixed definite article הָ־.",
+        "qualifier": "",
+        "root": "אדמ",
+        "sense": "the ground underfoot; the face of the earth"
+      },
+      "position": 9,
+      "surface": "הָאֲדָמָה"
+    }
+  ]
+}

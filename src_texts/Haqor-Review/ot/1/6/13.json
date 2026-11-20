@@ -1,0 +1,286 @@
+{
+  "book": 1,
+  "chapter": 6,
+  "source": "ot",
+  "verse": 13,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "amar"
+        },
+        "evidence": "אֱלֹהִים is the speaker, and לְנֹחַ identifies Noah as the addressee. God's words follow directly, with לְפָנַי (“before me”) referring to the speaker in the first person.",
+        "gloss": "and he said",
+        "language": "he",
+        "lemma": "אָמַר",
+        "morphology": "Qal wayyiqtol, third-person masculine singular, with prefixed וַ־ and no suffix",
+        "qualifier": "",
+        "root": "אמר",
+        "sense": "say, introducing direct speech"
+      },
+      "position": 0,
+      "surface": "וַיֹּאמֶר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "In וַיֹּאמֶר אֱלֹהִים לְנֹחַ, the singular verb וַיֹּאמֶר identifies God as the one speaking to Noah. The speaker refers to himself in the singular in לְפָנַי (“before me”).",
+        "gloss": "God",
+        "language": "he",
+        "lemma": "אֱלֹהִים",
+        "morphology": "Common noun, masculine plural absolute, with singular verbal agreement.",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "the Mighty One, God"
+      },
+      "position": 1,
+      "surface": "אֱלֹהִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "noah-son-of-lamech",
+            "base": null,
+            "change": "Add a personal-name article for נֹחַ linked to the root article nuach.",
+            "definition": "Noah, the son whom Lamech names in hope of relief from toil.",
+            "evidence": "Genesis 5:29 gives the name נֹחַ and explains it through the wordplay on יְנַחֲמֵנוּ, “he will comfort us.”"
+          }
+        },
+        "evidence": "In וַיֹּאמֶר אֱלֹהִים לְנֹחַ, “God said to Noah,” לְ marks Noah as the person God addresses.",
+        "gloss": "to Noah",
+        "language": "he",
+        "lemma": "נֹחַ",
+        "morphology": "Preposition לְ prefixed to a masculine singular personal name.",
+        "qualifier": "",
+        "root": "נוח",
+        "sense": "Noah, son of Lamech"
+      },
+      "position": 2,
+      "surface": "לְנֹחַ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "qatsats"
+        },
+        "evidence": "In קֵץ כָּל בָּשָׂר, “the end of all flesh,” קֵץ heads the construct chain. The following בָּא לְפָנַי says that this end has come before God, and מַשְׁחִיתָם identifies it as the destruction he announces.",
+        "gloss": "end",
+        "language": "he",
+        "lemma": "קֵץ",
+        "morphology": "Masculine singular noun in the construct state, without prefix or suffix.",
+        "qualifier": "",
+        "root": "קצצ",
+        "sense": "end, appointed limit"
+      },
+      "position": 3,
+      "surface": "קֵץ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "kalal"
+        },
+        "evidence": "In קֵץ כָּל בָּשָׂר, “the end of all flesh,” כָּל takes the collective noun בָּשָׂר as its complement and refers to the group as a whole. The plural suffix in מַשְׁחִיתָם, “I am destroying them,” refers back to that group.",
+        "gloss": "all",
+        "language": "he",
+        "lemma": "כֹּל",
+        "morphology": "Masculine singular noun in the construct state, without prefix or suffix.",
+        "qualifier": "",
+        "root": "כלל",
+        "sense": "all, the whole"
+      },
+      "position": 4,
+      "surface": "כָּל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "basar"
+        },
+        "evidence": "In קֵץ כָּל בָּשָׂר, “the end of all flesh,” כָּל gives בָּשָׂר collective scope. The plural suffix in מַשְׁחִיתָם, “I am about to destroy them,” refers back to the living beings facing that end.",
+        "gloss": "flesh (collectively, living creatures)",
+        "language": "he",
+        "lemma": "בָּשָׂר",
+        "morphology": "Common noun, masculine singular absolute, without prefix or suffix.",
+        "qualifier": "",
+        "root": "בשׂר",
+        "sense": "all flesh: every living creature; mankind"
+      },
+      "position": 5,
+      "surface": "בָּשָׂר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "bo"
+        },
+        "evidence": "In קֵץ כָּל בָּשָׂר בָּא לְפָנַי, בָּא agrees with the masculine singular subject קֵץ, “end.” God tells Noah, “The end of all flesh has come before me.”",
+        "gloss": "has come",
+        "language": "he",
+        "lemma": "בּוֹא",
+        "morphology": "Qal perfect, third person masculine singular",
+        "qualifier": "",
+        "root": "בוא",
+        "sense": "come, arrive"
+      },
+      "position": 6,
+      "surface": "בָּא"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "panah"
+        },
+        "evidence": "God tells Noah, קֵץ כָּל בָּשָׂר בָּא לְפָנַי, “The end of all flesh has come before me.” The suffix refers to God as the speaker.",
+        "gloss": "before me",
+        "language": "he",
+        "lemma": "לִפְנֵי",
+        "morphology": "Preposition formed from לְ + פָּנִים in the plural construct, with a first-person singular pronominal suffix.",
+        "qualifier": "",
+        "root": "פנה",
+        "sense": "before, in the presence of (a person, Yahweh)"
+      },
+      "position": 7,
+      "surface": "לְפָנַי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ki"
+        },
+        "evidence": "כִּי introduces the reason God gives for the end of all flesh: מָלְאָה הָאָרֶץ חָמָס מִפְּנֵיהֶם, “the earth is full of violence because of them.”",
+        "gloss": "because",
+        "language": "he",
+        "lemma": "כִּי",
+        "morphology": "Uninflected conjunction with no prefix or suffix.",
+        "qualifier": "conjunction",
+        "root": "כי",
+        "sense": "for, because"
+      },
+      "position": 8,
+      "surface": "כִּי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "male"
+        },
+        "evidence": "מָלְאָה agrees with its feminine singular subject הָאָרֶץ, and חָמָס names what fills it. The clause gives the reason for judgment: the earth is full of violence because of them.",
+        "gloss": "is full of",
+        "language": "he",
+        "lemma": "מָלֵא",
+        "morphology": "Qal perfect, third person feminine singular",
+        "qualifier": "verb",
+        "root": "מלא",
+        "sense": "be filled"
+      },
+      "position": 9,
+      "surface": "מָלְאָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "erets"
+        },
+        "evidence": "In מָלְאָה הָאָרֶץ חָמָס, “the earth is full of violence,” הָאָרֶץ is the subject of the feminine singular verb מָלְאָה. The reference to כָּל בָּשָׂר, “all flesh,” gives the statement its worldwide scope.",
+        "gloss": "the earth",
+        "language": "he",
+        "lemma": "אֶרֶץ",
+        "morphology": "Definite article הָ־ + common noun, singular absolute, with feminine agreement.",
+        "qualifier": "",
+        "root": "ארצ",
+        "sense": "earth"
+      },
+      "position": 10,
+      "surface": "הָאָרֶץ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chamas"
+        },
+        "evidence": "In מָלְאָה הָאָרֶץ חָמָס, חָמָס names what fills the earth. מִפְּנֵיהֶם attributes that violence to the earth’s inhabitants.",
+        "gloss": "violence",
+        "language": "he",
+        "lemma": "חָמָס",
+        "morphology": "Masculine singular absolute noun, without prefix or suffix.",
+        "qualifier": "",
+        "root": "חמס",
+        "sense": "wrong inflicted on someone"
+      },
+      "position": 11,
+      "surface": "חָמָס"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "panah"
+        },
+        "evidence": "In מָלְאָה הָאָרֶץ חָמָס מִפְּנֵיהֶם, the earth is full of violence, and מִפְּנֵיהֶם identifies those responsible. The suffix refers back to כָּל בָּשָׂר, those whom God says he will destroy.",
+        "gloss": "because of them",
+        "language": "he",
+        "lemma": "מִפְּנֵי",
+        "morphology": "Compound preposition formed from מִן and the plural construct of פָּנִים, with the third-person masculine plural suffix ־הֶם.",
+        "qualifier": "",
+        "root": "פנה",
+        "sense": "because of"
+      },
+      "position": 12,
+      "surface": "מִפְּנֵיהֶם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shachat"
+        },
+        "evidence": "God has just announced to Noah the end of all flesh. וְהִנְנִי introduces the action God is about to take, and the suffix ־ָם identifies those facing destruction. The violence that fills the earth is the reason for that destruction.",
+        "gloss": "about to destroy them",
+        "language": "he",
+        "lemma": "שָׁחַת",
+        "morphology": "Hiphil active participle, masculine singular construct, with a third-person masculine plural object suffix ־ָם.",
+        "qualifier": "",
+        "root": "שחת",
+        "sense": "destroy"
+      },
+      "position": 14,
+      "surface": "מַשְׁחִיתָם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "et"
+        },
+        "evidence": "The suffix ־ָם on מַשְׁחִיתָם supplies the object “them.” אֶת introduces הָאָרֶץ, the earth that shares their fate: “I am about to destroy them together with the earth.”",
+        "gloss": "together with",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Unsuffixed preposition with no prefix.",
+        "qualifier": "preposition",
+        "root": "את",
+        "sense": "with, together with (company)"
+      },
+      "position": 15,
+      "surface": "אֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "erets"
+        },
+        "evidence": "The final הָאָרֶץ refers back to the earth described as full of violence. In the judgment on כָּל בָּשָׂר (“all flesh”), God declares that he will destroy them along with the earth.",
+        "gloss": "the earth",
+        "language": "he",
+        "lemma": "אֶרֶץ",
+        "morphology": "Definite article הָ־ prefixed to a common noun, singular absolute, common gender.",
+        "qualifier": "",
+        "root": "ארצ",
+        "sense": "earth"
+      },
+      "position": 16,
+      "surface": "הָאָרֶץ"
+    }
+  ]
+}

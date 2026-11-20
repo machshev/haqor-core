@@ -1,0 +1,184 @@
+{
+  "book": 1,
+  "chapter": 4,
+  "review": {
+    "entities": [
+      {
+        "evidence": "The speaker is Eve’s son Cain, Abel’s brother, responding to the sentence Yahweh has just pronounced on him for killing Abel.",
+        "key": "Cain@Gen.4.1",
+        "position": 1
+      },
+      {
+        "evidence": "Cain addresses יַהְוֶה, the God who has just pronounced his sentence. The LORD source tag identifies the same God as the earlier Yahweh proposal.",
+        "key": "Yahweh@Gen.2.22",
+        "new": {
+          "description": "The God of Israel, who built the rib taken from the man into a woman and brought her to the man.",
+          "kind": "person",
+          "name": "Yahweh"
+        },
+        "position": 3
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "then he said",
+        "position": 0
+      },
+      {
+        "gloss": "Cain",
+        "position": 1
+      },
+      {
+        "gloss": "to",
+        "position": 2
+      },
+      {
+        "gloss": "Yahweh",
+        "position": 3
+      },
+      {
+        "gloss": "greater",
+        "position": 4
+      },
+      {
+        "gloss": "my punishment",
+        "position": 5
+      },
+      {
+        "gloss": "than I can bear",
+        "position": 6
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[Then|0] [Cain|1] [said|0] [to|2] [Yahweh|3], “[My punishment|5] {is} [greater|4] [than I can bear|6]."
+  },
+  "source": "ot",
+  "verse": 13,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "amar"
+        },
+        "evidence": "קַיִן is the speaker, אֶל־יַהְוֶה identifies the addressee, and גָּדוֹל עֲונִי מִנְּשֹׂא gives Cain’s words directly.",
+        "gloss": "and he said",
+        "language": "he",
+        "lemma": "אָמַר",
+        "morphology": "Qal wayyiqtol, third masculine singular, with prefixed וַ־",
+        "qualifier": "",
+        "root": "אמר",
+        "sense": "say, introducing direct speech"
+      },
+      "position": 0,
+      "surface": "וַיֹּאמֶר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "cain",
+            "base": null,
+            "change": "Add a personal-name article for Cain. Its proposed root link requires a companion article for קינ, which is absent from the local lexicon.",
+            "definition": "Cain, the son of Adam and Eve and brother of Abel.",
+            "evidence": "Genesis 4:1 names Eve’s son קַיִן. Genesis 4:2 identifies Abel as his brother and names Cain again when describing his work."
+          }
+        },
+        "evidence": "In וַיֹּאמֶר קַיִן אֶל יַהְוֶה, קַיִן names the speaker, and אֶל יַהְוֶה identifies whom he addresses.",
+        "gloss": "Cain",
+        "language": "he",
+        "lemma": "קַיִן",
+        "morphology": "Masculine singular proper noun, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "קינ",
+        "sense": "The personal name of Abel’s brother."
+      },
+      "position": 1,
+      "surface": "קַיִן"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "In וַיֹּאמֶר קַיִן אֶל יַהְוֶה, “Cain said to YHWH,” אֶל introduces YHWH as the addressee of Cain’s speech.",
+        "gloss": "to",
+        "language": "he",
+        "lemma": "אֶל",
+        "morphology": "Preposition without prefix or suffix.",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "to (a person: speaking, sending, bringing)"
+      },
+      "position": 2,
+      "surface": "אֶל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yahweh"
+        },
+        "evidence": "וַיֹּאמֶר קַיִן אֶל יַהְוֶה means “Cain said to Yahweh.” The preposition אֶל introduces יַהְוֶה as the person Cain addresses.",
+        "gloss": "Yahweh",
+        "language": "he",
+        "lemma": "יַהְוֶה",
+        "morphology": "Proper noun, singular, without prefix or suffix",
+        "qualifier": "",
+        "root": "הוה",
+        "sense": "Personal name of the God of Israel"
+      },
+      "position": 3,
+      "surface": "יַהְוֶה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "gadal"
+        },
+        "evidence": "גָּדוֹל is the predicate of עֲונִי, “my guilt” or “my punishment.” מִנְּשֹׂא expresses the limit exceeded, “too great to bear.” Cain is describing the severity of his burden.",
+        "gloss": "too great",
+        "language": "he",
+        "lemma": "גָּדוֹל",
+        "morphology": "Predicative adjective, masculine singular absolute, without prefix or suffix.",
+        "qualifier": "",
+        "root": "גדל",
+        "sense": "great (in force or degree)"
+      },
+      "position": 4,
+      "surface": "גָּדוֹל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "avah"
+        },
+        "evidence": "Cain has just heard his sentence. In גָּדוֹל עֲונִי מִנְּשֹׂא, he describes it as too great to bear. Although עָוֺן can also mean guilt, Cain’s next words about exile and the danger of being killed favor the punishment sense.",
+        "gloss": "my punishment",
+        "language": "he",
+        "lemma": "עָוֺן",
+        "morphology": "Singular common-gender noun in the construct state with a first-person common singular possessive suffix.",
+        "qualifier": "",
+        "root": "עוה",
+        "sense": "punishment of iniquity"
+      },
+      "position": 5,
+      "surface": "עֲונִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "nasa-lift"
+        },
+        "evidence": "In גָּדוֹל עֲוֹנִי מִנְּשֹׂא, גָּדוֹל sets up a comparison, and מִן introduces the infinitive. Cain says his punishment is too great for him to bear.",
+        "gloss": "than I can bear",
+        "language": "he",
+        "lemma": "נָשָׂא",
+        "morphology": "Qal infinitive construct with prefixed מִן",
+        "qualifier": "",
+        "root": "נשׂא",
+        "sense": "bear or endure punishment"
+      },
+      "position": 6,
+      "surface": "מִנְּשֹׂא"
+    }
+  ]
+}

@@ -1,0 +1,264 @@
+{
+  "book": 1,
+  "chapter": 6,
+  "source": "ot",
+  "verse": 16,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "tsohar"
+        },
+        "evidence": "צֹהַר is the direct object of תַּעֲשֶׂה in the instruction to make it for the ark. The verse specifies a separate doorway in the ark’s side. The construction context establishes an architectural sense, though the wording leaves open whether צֹהַר denotes the roof or an opening for light.",
+        "gloss": "roof or opening",
+        "language": "he",
+        "lemma": "צֹהַר",
+        "morphology": "Common noun, singular absolute, without prefix or suffix. The source tags it as feminine, but the verse has no agreement marking that confirms its gender.",
+        "qualifier": "",
+        "root": "צהר",
+        "sense": "opening or roof of the ark"
+      },
+      "position": 0,
+      "surface": "צֹהַר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "asah"
+        },
+        "evidence": "צֹהַר is the direct object placed before תַּעֲשֶׂה, and לַתֵּבָה means “for the ark.” Noah is instructed to make a feature for the ark.",
+        "gloss": "you shall make",
+        "language": "he",
+        "lemma": "עָשָׂה",
+        "morphology": "Qal imperfect, second person masculine singular, with directive force",
+        "qualifier": "",
+        "root": "עשׂה",
+        "sense": "make, bring into being"
+      },
+      "position": 1,
+      "surface": "תַּעֲשֶׂה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "tevah",
+            "base": null,
+            "change": "Add תֵּבָה under its own consonants תבה for Noah’s ark and the papyrus basket that held Moses.",
+            "definition": "A vessel made watertight to hold its occupants, here Noah’s ark.",
+            "evidence": "Genesis 6:14 specifies wood and pitch for the ark, 6:16 describes its door and levels, and 7:18 shows it floating on the floodwaters."
+          }
+        },
+        "evidence": "לַתֵּבָה identifies the structure for which Noah is to make a צֹהַר. The same verse calls its door פֶּתַח הַתֵּבָה and directs Noah to set it in the ark’s side.",
+        "gloss": "for the ark",
+        "language": "he",
+        "lemma": "תֵּבָה",
+        "morphology": "Prefixed לְ with the definite article, realized as לַ with doubling of תּ. Feminine singular absolute noun.",
+        "qualifier": "",
+        "root": "תבה",
+        "sense": "The ark built to carry Noah, his family, and the animals through the flood."
+      },
+      "position": 2,
+      "surface": "לַתֵּבָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "em"
+        },
+        "evidence": "In וְאֶל אַמָּה תְּכַלֶנָּה מִלְמַעְלָה, “finish it to a cubit at the top,” אַמָּה specifies a linear measurement in the instructions for building the ark.",
+        "gloss": "a cubit",
+        "language": "he",
+        "lemma": "אַמָּה",
+        "morphology": "Common noun, feminine singular absolute, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "אממ",
+        "sense": "cubit"
+      },
+      "position": 4,
+      "surface": "אַמָּה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "kalah"
+        },
+        "evidence": "The suffix refers to the ark (תֵּבָה), a feminine noun. The phrases אֶל־אַמָּה (“to a cubit”) and מִלְמַעְלָה (“from above”) specify how Noah is to finish it.",
+        "gloss": "you shall finish it",
+        "language": "he",
+        "lemma": "כָּלָה",
+        "morphology": "Piel imperfect, second masculine singular, with a third feminine singular direct-object suffix.",
+        "qualifier": "verb",
+        "root": "כלה",
+        "sense": "bring work to completion"
+      },
+      "position": 5,
+      "surface": "תְּכַלֶנָּה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "alah"
+        },
+        "evidence": "In וְאֶל־אַמָּה תְּכַלֶנָּה מִלְמַעְלָה, the adverb locates the cubit measurement at the top of the ark. The next instruction places the doorway בְּצִדָּהּ, in its side.",
+        "gloss": "at the top",
+        "language": "he",
+        "lemma": "מַעַל",
+        "morphology": "Adverb with prefixed מִן (מִ־ before לְ) and לְ, and directional suffix ־ָה.",
+        "qualifier": "",
+        "root": "עלה",
+        "sense": "above, upward"
+      },
+      "position": 6,
+      "surface": "מִלְמַעְלָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "petach"
+        },
+        "evidence": "וּפֶתַח הַתֵּבָה means ‘and the doorway of the ark’. The instruction בְּצִדָּהּ תָּשִׂים ‘you shall set it in its side’ identifies the doorway as a physical entrance.",
+        "gloss": "doorway",
+        "language": "he",
+        "lemma": "פֶּתַח",
+        "morphology": "Masculine singular construct noun with prefixed conjunction וּ ‘and’.",
+        "qualifier": "",
+        "root": "פתח",
+        "sense": "door of a house, tent, ark, cave"
+      },
+      "position": 7,
+      "surface": "וּפֶתַח"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "tevah",
+            "base": null,
+            "change": "Add תֵּבָה under its own consonants, תבה, with senses for Noah’s ark and the basket that held Moses.",
+            "definition": "An ark, an enclosure that holds its occupants on water.",
+            "evidence": "Genesis 6:16 places a doorway in the ark’s side, and Genesis 7:18 describes the ark floating on the floodwaters. Exodus 2:3 uses the same noun for the papyrus basket holding Moses."
+          }
+        },
+        "evidence": "In וּפֶתַח הַתֵּבָה, “and the doorway of the ark,” פֶתַח is the construct noun and הַתֵּבָה identifies the structure to which the doorway belongs. The feminine singular suffix in בְּצִדָּהּ, “in its side,” refers back to the ark.",
+        "gloss": "the ark",
+        "language": "he",
+        "lemma": "תֵּבָה",
+        "morphology": "Definite article הַ־ + feminine singular absolute noun. The article doubles the initial ת.",
+        "qualifier": "",
+        "root": "תבה",
+        "sense": "The vessel built to carry Noah, his household, and the animals through the flood."
+      },
+      "position": 8,
+      "surface": "הַתֵּבָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "tsadad",
+            "base": null,
+            "change": "Add the Hebrew noun צַד under צדד with its physical sense of “side.”",
+            "definition": "A side of an object or structure.",
+            "evidence": "Genesis 6:16 locates the doorway in the side of the ark."
+          }
+        },
+        "evidence": "In וּפֶתַח הַתֵּבָה בְּצִדָּהּ תָּשִׂים, the ark’s doorway is what Noah is to place. בְּצִדָּהּ specifies where he is to place it. The feminine suffix agrees with תֵּבָה, the ark.",
+        "gloss": "in its side",
+        "language": "he",
+        "lemma": "צַד",
+        "morphology": "Preposition בְּ + masculine singular construct noun צַד (suffixed stem צִדּ־) + third-person feminine singular possessive suffix ־ָהּ, referring to הַתֵּבָה.",
+        "qualifier": "",
+        "root": "צדד",
+        "sense": "The lateral face of a structure."
+      },
+      "position": 9,
+      "surface": "בְּצִדָּהּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "sum"
+        },
+        "evidence": "פֶתַח הַתֵּבָה names what Noah is to place, the doorway of the ark. בְּצִדָּהּ specifies where he is to place it, in the ark’s side.",
+        "gloss": "you shall place",
+        "language": "he",
+        "lemma": "שִׂים",
+        "morphology": "Qal imperfect, second person masculine singular, used as an instruction",
+        "qualifier": "",
+        "root": "שׂומ",
+        "sense": "place something at a specified location"
+      },
+      "position": 10,
+      "surface": "תָּשִׂים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "tachat"
+        },
+        "evidence": "תַּחְתִּיִּם begins a series with שְׁנִיִּם ‘second’ and וּשְׁלִשִׁים ‘and third.’ All three describe levels of the ark, so the marked word designates its lowest tier. The noun ‘decks’ is implied.",
+        "gloss": "lower decks",
+        "language": "he",
+        "lemma": "תַּחְתִּי",
+        "morphology": "Masculine plural absolute adjective used substantivally.",
+        "qualifier": "",
+        "root": "תחת",
+        "sense": "lower, the bottom (of things)"
+      },
+      "position": 11,
+      "surface": "תַּחְתִּיִּם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shanah"
+        },
+        "evidence": "In תַּחְתִּיִּם שְׁנִיִּם וּשְׁלִשִׁים, שְׁנִיִּם stands between “lower” and “third” and designates the second level of the ark.",
+        "gloss": "second story",
+        "language": "he",
+        "lemma": "שֵׁנִי",
+        "morphology": "Ordinal adjective, masculine plural absolute, used substantivally.",
+        "qualifier": "",
+        "root": "שנה",
+        "sense": "second (in order)"
+      },
+      "position": 12,
+      "surface": "שְׁנִיִּם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shalosh"
+        },
+        "evidence": "The sequence תַּחְתִּיִּם שְׁנִיִּם וּשְׁלִשִׁים describes the ark’s levels in order: lower, second, and third. The noun “decks” is understood.",
+        "gloss": "and third [decks]",
+        "language": "he",
+        "lemma": "שְׁלִישִׁי",
+        "morphology": "Conjunction וּ־ plus masculine plural absolute ordinal adjective, used substantivally.",
+        "qualifier": "",
+        "root": "שלש",
+        "sense": "third (in order)"
+      },
+      "position": 13,
+      "surface": "וּשְׁלִשִׁים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "asah"
+        },
+        "evidence": "The suffix refers to הַתֵּבָה, the ark. The preceding תַּחְתִּיִּם שְׁנִיִּם וּשְׁלִשִׁים specifies how Noah is to build it, with lower, second, and third decks.",
+        "gloss": "you shall make it",
+        "language": "he",
+        "lemma": "עָשָׂה",
+        "morphology": "Qal imperfect, second masculine singular, with a third feminine singular object suffix; used as an instruction.",
+        "qualifier": "",
+        "root": "עשׂה",
+        "sense": "make, bring into being"
+      },
+      "position": 14,
+      "surface": "תַּעֲשֶׂהָ"
+    }
+  ]
+}

@@ -1,0 +1,286 @@
+{
+  "book": 40,
+  "chapter": 1,
+  "review": {
+    "entities": [
+      {
+        "evidence": "The opening clause identifies Abraham as Isaac’s father.",
+        "key": "Abraham@Gen.11.26",
+        "position": 0
+      },
+      {
+        "evidence": "Abraham fathers Isaac, whose name recurs as the subject of the next clause.",
+        "key": "Isaac@Gen.17.19",
+        "position": 2
+      },
+      {
+        "evidence": "Abraham’s son Isaac now fathers Jacob.",
+        "key": "Isaac@Gen.17.19",
+        "position": 3
+      },
+      {
+        "evidence": "Isaac fathers Jacob, the patriarch also called Israel.",
+        "key": "Israel@Gen.25.26",
+        "position": 5
+      },
+      {
+        "evidence": "The Jacob just named as Isaac’s son now fathers Judah and his brothers.",
+        "key": "Israel@Gen.25.26",
+        "position": 6
+      },
+      {
+        "evidence": "The final clause identifies Judah and his brothers as sons of the patriarch Jacob.",
+        "key": "Judah@Gen.29.35",
+        "position": 8
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "Abraham",
+        "position": 0
+      },
+      {
+        "gloss": "fathered",
+        "position": 1
+      },
+      {
+        "gloss": "Isaac",
+        "position": 2
+      },
+      {
+        "gloss": "Isaac",
+        "position": 3
+      },
+      {
+        "gloss": "fathered",
+        "position": 4
+      },
+      {
+        "gloss": "Jacob",
+        "position": 5
+      },
+      {
+        "gloss": "Jacob",
+        "position": 6
+      },
+      {
+        "gloss": "fathered",
+        "position": 7
+      },
+      {
+        "gloss": "Judah",
+        "position": 8
+      },
+      {
+        "gloss": "and his brothers",
+        "position": 9
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[Abraham|0] [begot|1] [Isaac|2]; [Isaac|3] [begot|4] [Jacob|5]; [Jacob|6] [begot|7] [Judah|8] [and his brothers|9]."
+  },
+  "source": "peshitta",
+  "verse": 2,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "abraham"
+        },
+        "evidence": "The opening clause אַבֿרָהָמ אַולֵדֿ לִאיסחָק says that Abraham fathered Isaac. Isaac then becomes the subject of the same verb in the next clause, confirming the father-to-son sequence.",
+        "gloss": "Abraham",
+        "language": "syc",
+        "lemma": "אַבֿרָהָמ",
+        "morphology": "Masculine singular personal name, without prefix or suffix, serving as the subject of אַולֵדֿ.",
+        "qualifier": "",
+        "root": "אבה",
+        "sense": "Abraham, the patriarch who fathered Isaac."
+      },
+      "position": 0,
+      "surface": "אַבֿרָהָמ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yalad"
+        },
+        "evidence": "In אַבֿרָהָמ אַולֵדֿ לִאיסחָק, Abraham is the subject and ל־ marks Isaac as the object. The genealogy then repeats the same verb with Isaac as the father of Jacob.",
+        "gloss": "fathered",
+        "language": "syc",
+        "lemma": "יְלֵד",
+        "morphology": "Aphel perfect, third person masculine singular, with no pronominal suffix",
+        "qualifier": "",
+        "root": "ילד",
+        "sense": "beget, father a child"
+      },
+      "position": 1,
+      "surface": "אַולֵדֿ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "isaac-syriac",
+            "base": null,
+            "change": "Add a personal-name article for Syriac אִיסחָק and link it to the laughter root represented in the Hebrew spelling יִשְׂחָק.",
+            "definition": "The Syriac personal name of Abraham’s son Isaac, who fathered Jacob.",
+            "evidence": "Matthew 1:2 identifies Isaac by naming his father and his son. The unprefixed form in the second clause supplies the dictionary form."
+          }
+        },
+        "evidence": "Abraham is the subject of אַולֵדֿ and לִאיסחָק names the son he fathered. The next clause repeats the name without the prefix, אִיסחָק, as the subject who fathered Jacob.",
+        "gloss": "Isaac",
+        "language": "syc",
+        "lemma": "אִיסחָק",
+        "morphology": "Masculine singular personal name with prefixed לִ־ marking the direct object of אַולֵדֿ, “fathered.”",
+        "qualifier": "",
+        "root": "שׂחק",
+        "sense": "Isaac, Abraham’s son and Jacob’s father"
+      },
+      "position": 2,
+      "surface": "לִאיסחָק"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "isaac-syriac",
+            "base": null,
+            "change": "Use the same isaac-syriac personal-name draft as position 2.",
+            "definition": "The Syriac personal name of Abraham’s son Isaac, who fathered Jacob.",
+            "evidence": "Matthew 1:2 identifies Isaac by naming his father and his son. The unprefixed form in the second clause supplies the dictionary form."
+          }
+        },
+        "evidence": "Abraham fathers לִאיסחָק in the first clause. The next clause repeats the name without לִ־ in אִיסחָק אַולֵדֿ ליַעקֻובֿ (“Isaac fathered Jacob”), making Isaac the subject and Jacob his son.",
+        "gloss": "Isaac",
+        "language": "syc",
+        "lemma": "אִיסחָק",
+        "morphology": "Masculine singular personal name, unprefixed, serving as the subject of אַולֵדֿ (“fathered”).",
+        "qualifier": "",
+        "root": "שׂחק",
+        "sense": "Isaac, Abraham’s son and Jacob’s father"
+      },
+      "position": 3,
+      "surface": "אִיסחָק"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yalad"
+        },
+        "evidence": "In אִיסחָק אַולֵדֿ ליַעקֻובֿ, Isaac is the subject and ל־ marks Jacob as the object. Isaac fathered Jacob.",
+        "gloss": "fathered",
+        "language": "syc",
+        "lemma": "יְלֵד",
+        "morphology": "Aphel perfect, third person masculine singular",
+        "qualifier": "",
+        "root": "ילד",
+        "sense": "beget, father a child"
+      },
+      "position": 4,
+      "surface": "אַולֵדֿ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "jacob-syriac",
+            "base": null,
+            "change": "Add a name article for the Syriac spelling יַעקֻובֿ, with the same root link as the Hebrew name יַעֲקֹב.",
+            "definition": "יַעקֻובֿ is the Syriac form of the personal name Jacob. In Matthew 1:2 it names the patriarch.",
+            "evidence": "Matthew 1:2 places יַעקֻובֿ between Isaac and Judah in the genealogy. The unprefixed repetition supplies the Syriac dictionary form."
+          }
+        },
+        "evidence": "In אִיסחָק אַולֵדֿ ליַעקֻובֿ, Isaac fathers Jacob. The next clause repeats the name without ל as its subject and says that Jacob fathered Judah and his brothers.",
+        "gloss": "Jacob",
+        "language": "syc",
+        "lemma": "יַעקֻובֿ",
+        "morphology": "Masculine singular personal name with prefixed ל marking the direct object of אַולֵדֿ.",
+        "qualifier": "",
+        "root": "עקב",
+        "sense": "Jacob the patriarch, son of Isaac and father of Judah."
+      },
+      "position": 5,
+      "surface": "ליַעקֻובֿ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "jacob-syriac",
+            "base": null,
+            "change": "Add a name article for the Peshitta spelling יַעקֻובֿ, linked to the same root as Hebrew יַעֲקֹב.",
+            "definition": "The Syriac form of the personal name Jacob, borne here by the patriarch.",
+            "evidence": "Matthew 1:2 identifies Jacob by naming Isaac as his father and Judah and his brothers as his sons."
+          }
+        },
+        "evidence": "Isaac fathers ליַעקֻובֿ. The genealogy then repeats the name without ל in יַעקֻובֿ אַולֵדֿ לִיהֻודָֿא ולַאחַוה_י, making Jacob the father in the next clause.",
+        "gloss": "Jacob",
+        "language": "syc",
+        "lemma": "יַעקֻובֿ",
+        "morphology": "Masculine singular personal name, unprefixed and unsuffixed, serving as the subject of אַולֵדֿ.",
+        "qualifier": "",
+        "root": "עקב",
+        "sense": "Jacob the patriarch, son of Isaac and father of Judah and his brothers."
+      },
+      "position": 6,
+      "surface": "יַעקֻובֿ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yalad"
+        },
+        "evidence": "יַעקֻובֿ is the subject of אַולֵדֿ. The following לִיהֻודָֿא ולַאחַוה_י names Judah and his brothers as the children Jacob fathered.",
+        "gloss": "fathered",
+        "language": "syc",
+        "lemma": "יְלֵד",
+        "morphology": "Aphel perfect, third person masculine singular",
+        "qualifier": "",
+        "root": "ילד",
+        "sense": "beget, father a child"
+      },
+      "position": 7,
+      "surface": "אַולֵדֿ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "judah-syriac",
+            "base": null,
+            "change": "Add a name article for the Syriac spelling יהודא, corresponding to the Hebrew יהודה in the existing Judah article.",
+            "definition": "The Syriac personal name Judah, here borne by Jacob’s son.",
+            "evidence": "Matthew 1:2 names Judah and his brothers as sons of Jacob. Genesis 29:35 connects the Hebrew name with Leah’s declaration that she will praise Yahweh."
+          }
+        },
+        "evidence": "The verse repeats the same pattern for three generations. In the final clause Jacob is the father, and לִיהֻודָֿא names the son he begot. The following ולַאחַוה_י, “and his brothers,” groups Jacob’s other sons with Judah.",
+        "gloss": "Judah",
+        "language": "syc",
+        "lemma": "יִהֻודָֿא",
+        "morphology": "Masculine singular personal name with prefixed לִ־ marking the direct object of אַולֵדֿ.",
+        "qualifier": "",
+        "root": "ידה",
+        "sense": "Judah, son of Jacob"
+      },
+      "position": 8,
+      "surface": "לִיהֻודָֿא"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ach"
+        },
+        "evidence": "Jacob is the subject of אַולֵדֿ ‘begot’. The repeated ל marks Judah and his brothers as coordinated objects. The suffix refers to Judah, identifying the other sons of Jacob as Judah’s brothers.",
+        "gloss": "and his brothers",
+        "language": "syc",
+        "lemma": "אַחָא",
+        "morphology": "Masculine plural noun in the construct state with a third-person masculine singular possessive suffix, prefixed by the conjunction ו and the object marker ל.",
+        "qualifier": "",
+        "root": "אחה",
+        "sense": "brother by kinship"
+      },
+      "position": 9,
+      "surface": "ולַאחַוה_י"
+    }
+  ]
+}

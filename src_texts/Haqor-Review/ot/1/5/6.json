@@ -1,0 +1,215 @@
+{
+  "book": 1,
+  "chapter": 5,
+  "review": {
+    "entities": [
+      {
+        "evidence": "Seth fathers Enosh here, matching Adam and Eve’s son Seth, whose son is named Enosh in Genesis 4:26.",
+        "key": "Seth@Gen.4.25",
+        "position": 1
+      },
+      {
+        "evidence": "Enosh is the son Seth fathers here, the same father and son named in Genesis 4:26.",
+        "key": "Enosh@Gen.4.26",
+        "position": 8
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "and he lived",
+        "position": 0
+      },
+      {
+        "gloss": "Seth",
+        "position": 1
+      },
+      {
+        "gloss": "five",
+        "position": 2
+      },
+      {
+        "gloss": "years",
+        "position": 3
+      },
+      {
+        "gloss": "and a hundred",
+        "position": 4
+      },
+      {
+        "gloss": "year",
+        "position": 5
+      },
+      {
+        "gloss": "then he fathered",
+        "position": 6
+      },
+      {
+        "gloss": "(untranslated)",
+        "position": 7
+      },
+      {
+        "gloss": "Enosh",
+        "position": 8
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[And|0] [Seth|1] [lived|0] [105|4,2] [years|3,5], [then he fathered|6] [Enosh|8,7]."
+  },
+  "source": "ot",
+  "verse": 6,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chayah"
+        },
+        "evidence": "שֵׁת is the subject, and חָמֵשׁ שָׁנִים וּמְאַת שָׁנָה gives the duration. Seth lived 105 years before he fathered Enosh.",
+        "gloss": "and he lived",
+        "language": "he",
+        "lemma": "חָיָה",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ־ and shortened verb form יְחִי.",
+        "qualifier": "",
+        "root": "חיה",
+        "sense": "to live for a stated length of time"
+      },
+      "position": 0,
+      "surface": "וַיְחִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "seth"
+        },
+        "evidence": "שֵׁת is the subject of וַיְחִי, “he lived,” and וַיּוֹלֶד, “he fathered.” The verse identifies Seth as the father of Enosh at age 105.",
+        "gloss": "Seth",
+        "language": "he",
+        "lemma": "שֵׁת",
+        "morphology": "Masculine singular proper noun without prefix or suffix.",
+        "qualifier": "name",
+        "root": "שית",
+        "sense": "the son of Adam and his wife born after Abel’s death"
+      },
+      "position": 1,
+      "surface": "שֵׁת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chamesh"
+        },
+        "evidence": "חָמֵשׁ שָׁנִים means “five years.” The following וּמְאַת שָׁנָה adds a hundred years, giving Seth’s age as 105 when he fathered Enosh.",
+        "gloss": "five",
+        "language": "he",
+        "lemma": "חָמֵשׁ",
+        "morphology": "Cardinal numeral, feminine singular absolute, without prefix or suffix.",
+        "qualifier": "",
+        "root": "חמש",
+        "sense": "five"
+      },
+      "position": 2,
+      "surface": "חָמֵשׁ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shanah"
+        },
+        "evidence": "חָמֵשׁ שָׁנִים means “five years.” Together with וּמְאַת שָׁנָה (“and a hundred years”), it gives Seth’s age of 105 when he fathered Enosh.",
+        "gloss": "years",
+        "language": "he",
+        "lemma": "שָׁנָה",
+        "morphology": "Feminine common noun, plural absolute",
+        "qualifier": "noun",
+        "root": "שנה",
+        "sense": "years of a life, age"
+      },
+      "position": 3,
+      "surface": "שָׁנִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "meah"
+        },
+        "evidence": "מְאַת governs שָׁנָה in וּמְאַת שָׁנָה, “and a hundred years.” The conjunction adds those years to חָמֵשׁ שָׁנִים, “five years,” giving Seth’s age as 105 when he fathered Enosh.",
+        "gloss": "and a hundred",
+        "language": "he",
+        "lemma": "מֵאָה",
+        "morphology": "Conjunction וּ־ prefixed to מְאַת, the singular construct form of the cardinal numeral מֵאָה.",
+        "qualifier": "",
+        "root": "מאה",
+        "sense": "a hundred (a count)"
+      },
+      "position": 4,
+      "surface": "וּמְאַת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shanah"
+        },
+        "evidence": "In וּמְאַת שָׁנָה, the singular שָׁנָה supplies the unit counted by מְאַת, “a hundred.” Together with חָמֵשׁ שָׁנִים, “five years,” the phrase gives Seth’s age of 105 when he fathered Enosh.",
+        "gloss": "year",
+        "language": "he",
+        "lemma": "שָׁנָה",
+        "morphology": "Common noun, feminine singular absolute, with no prefix or suffix.",
+        "qualifier": "noun",
+        "root": "שנה",
+        "sense": "years of a life, age"
+      },
+      "position": 5,
+      "surface": "שָׁנָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yalad"
+        },
+        "evidence": "שֵׁת (Seth) remains the subject of וַיּוֹלֶד, and אֶת marks אֱנוֹשׁ (Enosh) as its direct object. Seth fathered Enosh at the age of 105.",
+        "gloss": "and he fathered",
+        "language": "he",
+        "lemma": "יָלַד",
+        "morphology": "Hiphil wayyiqtol, third person masculine singular, with prefixed וַ.",
+        "qualifier": "",
+        "root": "ילד",
+        "sense": "beget, father a child"
+      },
+      "position": 6,
+      "surface": "וַיּוֹלֶד"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "et"
+        },
+        "evidence": "In וַיּוֹלֶד אֶת אֱנוֹשׁ “he fathered Enosh,” אֶת marks the personal name אֱנוֹשׁ as the direct object of וַיּוֹלֶד.",
+        "gloss": "(untranslated)",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Direct-object particle, without prefix or suffix.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "(marks the definite object)"
+      },
+      "position": 7,
+      "surface": "אֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "enosh"
+        },
+        "evidence": "Seth is the subject of וַיּוֹלֶד ‘he fathered’, and אֶת marks אֱנוֹשׁ as its direct object. Enosh names the son Seth fathered.",
+        "gloss": "Enosh",
+        "language": "he",
+        "lemma": "אֱנוֹשׁ",
+        "morphology": "Masculine singular proper noun, without prefix or suffix",
+        "qualifier": "name",
+        "root": "אנש",
+        "sense": "Personal name of Seth’s son"
+      },
+      "position": 8,
+      "surface": "אֱנוֹשׁ"
+    }
+  ]
+}

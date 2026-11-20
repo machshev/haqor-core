@@ -1,0 +1,327 @@
+{
+  "book": 1,
+  "chapter": 6,
+  "review": {
+    "entities": [],
+    "glosses": [
+      {
+        "gloss": "and from every",
+        "position": 0
+      },
+      {
+        "gloss": "living creature",
+        "position": 1
+      },
+      {
+        "gloss": "from all",
+        "position": 2
+      },
+      {
+        "gloss": "flesh",
+        "position": 3
+      },
+      {
+        "gloss": "two",
+        "position": 4
+      },
+      {
+        "gloss": "of each",
+        "position": 5
+      },
+      {
+        "gloss": "you must bring",
+        "position": 6
+      },
+      {
+        "gloss": "into",
+        "position": 7
+      },
+      {
+        "gloss": "the ark",
+        "position": 8
+      },
+      {
+        "gloss": "to keep alive",
+        "position": 9
+      },
+      {
+        "gloss": "with you",
+        "position": 10
+      },
+      {
+        "gloss": "male",
+        "position": 11
+      },
+      {
+        "gloss": "and female",
+        "position": 12
+      },
+      {
+        "gloss": "they must be",
+        "position": 13
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[And from every|0] [living {creature}|1], [from all|2] [flesh|3], [you must bring|6] [two|4] [of each {kind}|5] [into|7] [the ark|8] [to keep {them} alive|9] [with you|10]. [They must be|13] [male|11] [and female|12]."
+  },
+  "source": "ot",
+  "verse": 19,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "kalal"
+        },
+        "evidence": "וּמִכָּל הָחַי means ‘and from all that lives’. The parallel phrase מִכָּל בָּשָׂר ‘from all flesh’ confirms the collective scope. שְׁנַיִם מִכֹּל ‘two of each’ then specifies how many to bring.",
+        "gloss": "and from all",
+        "language": "he",
+        "lemma": "כֹּל",
+        "morphology": "Masculine singular construct noun with prefixed conjunction וּ־ ‘and’ and preposition מִן ‘from’, whose נ assimilates to the following כ.",
+        "qualifier": "",
+        "root": "כלל",
+        "sense": "all, the whole"
+      },
+      "position": 0,
+      "surface": "וּמִכָּל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chayah"
+        },
+        "evidence": "In וּמִכָּל הָחַי, “and from all that lives,” הָחַי stands on its own. The following מִכָּל בָּשָׂר, “from all flesh,” identifies the living creatures from which Noah is to bring two of each into the ark.",
+        "gloss": "the living",
+        "language": "he",
+        "lemma": "חַי",
+        "morphology": "Definite article הָ־ prefixed to a masculine singular absolute adjective used substantivally and collectively.",
+        "qualifier": "adjective",
+        "root": "חיה",
+        "sense": "the living; every living thing"
+      },
+      "position": 1,
+      "surface": "הָחַי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "kalal"
+        },
+        "evidence": "In מִכָּל בָּשָׂר, ‘from all flesh,’ כָּל takes the collective noun בָּשָׂר as its complement. The phrase names the whole group from which the pairs are taken. The following שְׁנַיִם מִכֹּל, ‘two of each,’ specifies how the pairs are selected.",
+        "gloss": "from all",
+        "language": "he",
+        "lemma": "כֹּל",
+        "morphology": "Masculine singular construct noun with prefixed preposition מִן. Its נ assimilates to the כ, producing the dagesh in מִכָּל.",
+        "qualifier": "",
+        "root": "כלל",
+        "sense": "all, the whole"
+      },
+      "position": 2,
+      "surface": "מִכָּל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "basar"
+        },
+        "evidence": "מִכָּל־בָּשָׂר parallels וּמִכָּל־הָחַי, “from every living thing.” The command to bring two of each into the ark, male and female, identifies “all flesh” here as the living creatures to be preserved.",
+        "gloss": "flesh (collectively, living creatures)",
+        "language": "he",
+        "lemma": "בָּשָׂר",
+        "morphology": "Common noun, masculine singular absolute, used collectively, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "בשׂר",
+        "sense": "all flesh: every living creature; mankind"
+      },
+      "position": 3,
+      "surface": "בָּשָׂר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shanah"
+        },
+        "evidence": "In שְׁנַיִם מִכֹּל תָּבִיא, שְׁנַיִם gives the number to bring into the ark, and מִכֹּל specifies that the count applies to each kind. זָכָר וּנְקֵבָה identifies the two as male and female.",
+        "gloss": "two of each kind",
+        "language": "he",
+        "lemma": "שְׁנַיִם",
+        "morphology": "Cardinal numeral, masculine dual absolute, used substantivally.",
+        "qualifier": "",
+        "root": "שנה",
+        "sense": "two"
+      },
+      "position": 4,
+      "surface": "שְׁנַיִם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "kalal"
+        },
+        "evidence": "שְׁנַיִם מִכֹּל means “two of each.” The phrase distributes the count of two across the kinds of living creatures already mentioned, and זָכָר וּנְקֵבָה specifies a male and a female in each pair.",
+        "gloss": "of each kind",
+        "language": "he",
+        "lemma": "כֹּל",
+        "morphology": "Masculine singular absolute noun with prefixed partitive מִן. The נ assimilates to כ, marked by dagesh.",
+        "qualifier": "",
+        "root": "כלל",
+        "sense": "every, each; any"
+      },
+      "position": 5,
+      "surface": "מִכֹּל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "bo"
+        },
+        "evidence": "שְׁנַיִם מִכֹּל identifies what Noah is to bring, two of each kind, and אֶל הַתֵּבָה identifies their destination, the ark.",
+        "gloss": "you shall bring",
+        "language": "he",
+        "lemma": "בּוֹא",
+        "morphology": "Hiphil imperfect, second person masculine singular, used as a directive",
+        "qualifier": "",
+        "root": "בוא",
+        "sense": "bring someone or something to a destination"
+      },
+      "position": 6,
+      "surface": "תָּבִיא"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "In תָּבִיא אֶל הַתֵּבָה, Noah is to bring the animals into the ark. לְהַחֲיֹת אִתָּךְ (“to keep them alive with you”) confirms that they are to enter it.",
+        "gloss": "into",
+        "language": "he",
+        "lemma": "אֶל",
+        "morphology": "Simple preposition without prefix or suffix.",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "into"
+      },
+      "position": 7,
+      "surface": "אֶל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "tevah",
+            "base": null,
+            "change": "Add תֵּבָה under its own consonants תבה. The proposed root תאר and gentilic gloss have no support in this passage.",
+            "definition": "An enclosed vessel that carries living occupants on water.",
+            "evidence": "Genesis 6:14 describes the ark’s wooden construction, 6:19 identifies the animals to be brought inside, and 7:18 describes the ark floating on the floodwaters."
+          }
+        },
+        "evidence": "תָּבִיא אֶל הַתֵּבָה directs Noah to bring the animals into the ark. The definite article points back to the wooden vessel he was told to build in Genesis 6:14. לְהַחֲיֹת אִתָּךְ gives the purpose of bringing them aboard, to keep them alive with him.",
+        "gloss": "the ark",
+        "language": "he",
+        "lemma": "תֵּבָה",
+        "morphology": "Prefixed definite article הַ־ with doubling of the following ת, followed by a feminine singular absolute common noun.",
+        "qualifier": "",
+        "root": "תבה",
+        "sense": "The vessel in which Noah, his household, and the animals survive the flood."
+      },
+      "position": 8,
+      "surface": "הַתֵּבָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chayah"
+        },
+        "evidence": "The infinitive gives the purpose of תָּבִיא ‘you shall bring’. Noah is to bring two of each kind into the ark to keep them alive אִתָּךְ ‘with you’. The creatures are the implied object of the verb.",
+        "gloss": "to keep them alive",
+        "language": "he",
+        "lemma": "חָיָה",
+        "morphology": "Hiphil infinitive construct with prefixed לְ marking purpose",
+        "qualifier": "",
+        "root": "חיה",
+        "sense": "keep alive"
+      },
+      "position": 9,
+      "surface": "לְהַחֲיֹת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "et",
+            "base": "31c9a635be8bba9a67417e75ea7122e240ae707e04a841533a59ecd2869d0f80",
+            "change": "Add Genesis 6:19 beside Genesis 6:18 as evidence for the existing sense of accompaniment.",
+            "definition": "In the company of someone.",
+            "evidence": "Genesis 6:19 uses אִתָּךְ of the creatures that Noah is to keep alive with him in the ark."
+          }
+        },
+        "evidence": "In Genesis 6:19, Noah is to bring two of each kind into the ark לְהַחֲיֹת אִתָּךְ, “to keep them alive with you.” The pairs are the creatures to be kept alive. אִתָּךְ identifies Noah as the person in whose company they will live.",
+        "gloss": "with you",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Preposition in its suffixed form אִתּ־ with a pausal second-person masculine singular pronominal suffix referring to Noah.",
+        "qualifier": "preposition",
+        "root": "את",
+        "sense": "with, together with (company)"
+      },
+      "position": 10,
+      "surface": "אִתָּךְ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "zakar"
+        },
+        "evidence": "זָכָר וּנְקֵבָה יִהְיוּ means “they shall be male and female.” The pairing with נְקֵבָה identifies זָכָר as the male of the two animals.",
+        "gloss": "male",
+        "language": "he",
+        "lemma": "זָכָר",
+        "morphology": "Masculine singular absolute, without prefix or suffix.",
+        "qualifier": "noun",
+        "root": "זכר",
+        "sense": "male"
+      },
+      "position": 11,
+      "surface": "זָכָר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "naqav",
+            "base": null,
+            "change": "Include the animal use alongside the human use under a single sense of נְקֵבָה.",
+            "definition": "A female, whether human or animal.",
+            "evidence": "Genesis 6:19 pairs נְקֵבָה with זָכָר for the animals entering the ark. Genesis 1:27 uses the same pair for humankind."
+          }
+        },
+        "evidence": "Genesis 6:19 specifies שְׁנַיִם מִכֹּל, ‘two of each,’ to be brought into the ark. זָכָר וּנְקֵבָה יִהְיוּ, ‘they shall be male and female,’ identifies one member of each pair as female.",
+        "gloss": "and female",
+        "language": "he",
+        "lemma": "נְקֵבָה",
+        "morphology": "Conjunction וּ ‘and’ prefixed to a feminine singular absolute common noun.",
+        "qualifier": "",
+        "root": "נקב",
+        "sense": "The female of an animal pair."
+      },
+      "position": 12,
+      "surface": "וּנְקֵבָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "hayah"
+        },
+        "evidence": "The plural subject of יִהְיוּ is the two animals Noah is to bring from each kind. The predicate זָכָר וּנְקֵבָה specifies that each pair shall be male and female.",
+        "gloss": "they shall be",
+        "language": "he",
+        "lemma": "הָיָה",
+        "morphology": "Qal imperfect, third person masculine plural",
+        "qualifier": "",
+        "root": "היה",
+        "sense": "to be in a state or condition"
+      },
+      "position": 13,
+      "surface": "יִהְיוּ"
+    }
+  ]
+}

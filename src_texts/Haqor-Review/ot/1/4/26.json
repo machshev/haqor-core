@@ -1,0 +1,212 @@
+{
+  "book": 1,
+  "chapter": 4,
+  "source": "ot",
+  "verse": 26,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "seth"
+        },
+        "evidence": "יֻלַּד בֵּן means “a son was born.” The prefixed לְ־ identifies Seth, introduced in the preceding verse, as the father. He names the child Enosh.",
+        "gloss": "and to Seth",
+        "language": "he",
+        "lemma": "שֵׁת",
+        "morphology": "Conjunction וּ־ “and” + preposition לְ־ “to” + masculine singular proper noun שֵׁת.",
+        "qualifier": "name",
+        "root": "שית",
+        "sense": "the son of Adam and his wife born after Abel’s death"
+      },
+      "position": 0,
+      "surface": "וּלְשֵׁת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "gam"
+        },
+        "evidence": "In וּלְשֵׁת גַּם הוּא יֻלַּד בֵּן, הוּא refers back to Seth. גַּם marks him as another father in the narrative: “To Seth, too, a son was born.”",
+        "gloss": "too",
+        "language": "he",
+        "lemma": "גַּם",
+        "morphology": "Invariable additive particle with no prefix or suffix.",
+        "qualifier": "",
+        "root": "גממ",
+        "sense": "also, too, as well"
+      },
+      "position": 1,
+      "surface": "גַּם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "hu"
+        },
+        "evidence": "הוּא refers back to Seth in וּלְשֵׁת. גַּם focuses the pronoun, giving the sense “to Seth, to him too, a son was born.” The לְ on Seth supplies the English “to,” and בֵּן is the subject of the passive verb יֻלַּד.",
+        "gloss": "him",
+        "language": "he",
+        "lemma": "הוּא",
+        "morphology": "Independent personal pronoun, third person masculine singular, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "הוא",
+        "sense": "he, it"
+      },
+      "position": 2,
+      "surface": "הוּא"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yalad"
+        },
+        "evidence": "בֵּן (“a son”) is the subject of the passive verb יֻלַּד, and וּלְשֵׁת identifies Seth as the parent to whom the son was born.",
+        "gloss": "was born",
+        "language": "he",
+        "lemma": "יָלַד",
+        "morphology": "Pual perfect, third person masculine singular",
+        "qualifier": "",
+        "root": "ילד",
+        "sense": "be born"
+      },
+      "position": 3,
+      "surface": "יֻלַּד"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ben"
+        },
+        "evidence": "בֵּן is the subject of יֻלַּד “was born.” A son was born to Seth (וּלְשֵׁת), and Seth named him Enosh (אֱנוֹשׁ).",
+        "gloss": "a son",
+        "language": "he",
+        "lemma": "בֵּן",
+        "morphology": "Common noun, masculine singular absolute, without prefix or suffix.",
+        "qualifier": "",
+        "root": "בנה",
+        "sense": "son, male child"
+      },
+      "position": 4,
+      "surface": "בֵּן"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "qara"
+        },
+        "evidence": "In וַיִּקְרָא אֶת שְׁמוֹ אֱנוֹשׁ, אֶת marks שְׁמוֹ (“his name”) as the direct object, and אֱנוֹשׁ supplies the name Seth gave his son.",
+        "gloss": "and he named",
+        "language": "he",
+        "lemma": "קָרָא",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ and no suffix",
+        "qualifier": "call",
+        "root": "קרא",
+        "sense": "give a name to"
+      },
+      "position": 5,
+      "surface": "וַיִּקְרָא"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "et"
+        },
+        "evidence": "In וַיִּקְרָא אֶת שְׁמוֹ אֱנוֹשׁ, “he called his name Enosh,” אֶת marks שְׁמוֹ (“his name”) as the direct object of וַיִּקְרָא. The possessive suffix makes שְׁמוֹ definite, and אֱנוֹשׁ supplies the name given.",
+        "gloss": "untranslated",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Direct-object particle, unsuffixed and without a prefix.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "(marks the definite object)"
+      },
+      "position": 6,
+      "surface": "אֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "enosh"
+        },
+        "evidence": "After reporting the birth of a son to Seth, the verse says וַיִּקְרָא אֶת־שְׁמוֹ אֱנוֹשׁ, “he called his name Enosh.” The naming formula identifies אֱנוֹשׁ as the child’s personal name.",
+        "gloss": "Enosh",
+        "language": "he",
+        "lemma": "אֱנוֹשׁ",
+        "morphology": "Masculine singular proper noun without prefix or suffix.",
+        "qualifier": "name",
+        "root": "אנש",
+        "sense": "Personal name of Seth’s son"
+      },
+      "position": 8,
+      "surface": "אֱנוֹשׁ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "az"
+        },
+        "evidence": "After Seth names his son Enosh, אָז introduces הוּחַל לִקְרֹא בְּשֵׁם יַהְוֶה, placing the beginning of calling on the name of YHWH at the time just described.",
+        "gloss": "at that time",
+        "language": "he",
+        "lemma": "אָז",
+        "morphology": "Temporal adverb, uninflected, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "אז",
+        "sense": "on that occasion"
+      },
+      "position": 9,
+      "surface": "אָז"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chalal"
+        },
+        "evidence": "אָז means “then,” and the following infinitive לִקְרֹא specifies what began. The clause אָז הוּחַל לִקְרֹא בְּשֵׁם יַהְוֶה means “then people began to call on the name of Yahweh.” The Hebrew leaves the callers unnamed.",
+        "gloss": "a beginning was made",
+        "language": "he",
+        "lemma": "חָלַל",
+        "morphology": "Hophal perfect, third person masculine singular, used impersonally.",
+        "qualifier": "",
+        "root": "חלל",
+        "sense": "begin"
+      },
+      "position": 10,
+      "surface": "הוּחַל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "qara"
+        },
+        "evidence": "לִקְרֹא בְּשֵׁם יַהְוֶה means “to call upon the name of YHWH.” The earlier וַיִּקְרָא אֶת שְׁמוֹ אֱנוֹשׁ gives the child a name. Here בְּשֵׁם introduces the divine name used in invocation.",
+        "gloss": "to call upon",
+        "language": "he",
+        "lemma": "קָרָא",
+        "morphology": "Qal infinitive construct with prefixed לִ־, complementing הוּחַל.",
+        "qualifier": "call",
+        "root": "קרא",
+        "sense": "invoke a deity by name"
+      },
+      "position": 11,
+      "surface": "לִקְרֹא"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yahweh"
+        },
+        "evidence": "In לִקְרֹא בְּשֵׁם יַהְוֶה, “to call on the name of Yahweh,” יַהְוֶה identifies the deity whose name is invoked.",
+        "gloss": "Yahweh",
+        "language": "he",
+        "lemma": "יַהְוֶה",
+        "morphology": "Singular proper noun without prefix or suffix",
+        "qualifier": "",
+        "root": "הוה",
+        "sense": "Personal name of the God of Israel"
+      },
+      "position": 13,
+      "surface": "יַהְוֶה"
+    }
+  ]
+}

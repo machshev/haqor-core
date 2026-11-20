@@ -1,0 +1,246 @@
+{
+  "book": 1,
+  "chapter": 6,
+  "source": "ot",
+  "verse": 3,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "amar"
+        },
+        "evidence": "יַהְוֶה is the subject of וַיֹּאמֶר. The first-person phrase רוּחִי (“my spirit”) in the following clause marks it as his direct speech.",
+        "gloss": "and he said",
+        "language": "he",
+        "lemma": "אָמַר",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ־",
+        "qualifier": "",
+        "root": "אמר",
+        "sense": "say, introducing direct speech"
+      },
+      "position": 0,
+      "surface": "וַיֹּאמֶר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yahweh"
+        },
+        "evidence": "In וַיֹּאמֶר יַהְוֶה (“and Yahweh said”), the name identifies the speaker, who refers to his own spirit as רוּחִי (“my spirit”).",
+        "gloss": "Yahweh",
+        "language": "he",
+        "lemma": "יַהְוֶה",
+        "morphology": "Proper noun, singular, without prefix or suffix",
+        "qualifier": "",
+        "root": "הוה",
+        "sense": "Personal name of the God of Israel"
+      },
+      "position": 1,
+      "surface": "יַהְוֶה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "lo"
+        },
+        "evidence": "לֹא negates the imperfect verb יָדוֹן, whose subject is רוּחִי, “my spirit.” With לְעֹלָם, “forever,” the clause declares that the action will not continue forever.",
+        "gloss": "not",
+        "language": "he",
+        "lemma": "לֹא",
+        "morphology": "Negative particle with no prefix or suffix.",
+        "qualifier": "",
+        "root": "לא",
+        "sense": "not (of a fact)"
+      },
+      "position": 2,
+      "surface": "לֹא"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ruach"
+        },
+        "evidence": "וַיֹּאמֶר יַהְוֶה identifies Yahweh as the speaker, so the suffix ־ִי in רוּחִי identifies the spirit as his. The clause contrasts his spirit with the human described as בָשָׂר, “flesh.”",
+        "gloss": "my spirit",
+        "language": "he",
+        "lemma": "רוּחַ",
+        "morphology": "Common-gender singular noun in the construct state with the first-person singular possessive suffix ־ִי.",
+        "qualifier": "",
+        "root": "רוח",
+        "sense": "spirit of God, of Yahweh"
+      },
+      "position": 4,
+      "surface": "רוּחִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "adam"
+        },
+        "evidence": "בָאָדָם refers to humanity collectively. The singular הוּא in הוּא בָשָׂר (“he is flesh”) refers back to אָדָם, and the statement about the days of human life applies to humanity as a whole.",
+        "gloss": "in humankind",
+        "language": "he",
+        "lemma": "אָדָם",
+        "morphology": "Preposition בְּ with the definite article, followed by a masculine singular absolute noun used collectively.",
+        "qualifier": "noun",
+        "root": "אדמ",
+        "sense": "man, mankind"
+      },
+      "position": 5,
+      "surface": "בָאָדָם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "olam"
+        },
+        "evidence": "In לֹא יָדוֹן רוּחִי בָאָדָם לְעֹלָם, the negation rules out the action continuing forever. The closing clause gives a definite span of 120 years.",
+        "gloss": "forever",
+        "language": "he",
+        "lemma": "עוֹלָם",
+        "morphology": "Preposition לְ prefixed to a masculine singular absolute noun, used adverbially.",
+        "qualifier": "",
+        "root": "עלמ",
+        "sense": "duration with no stated endpoint (in context)"
+      },
+      "position": 6,
+      "surface": "לְעֹלָם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "gam"
+        },
+        "evidence": "In בְּשַׁגַּם הוּא בָשָׂר, הוּא refers back to הָאָדָם. The clause gives the reason for the preceding limit on God's spirit in humankind: “because he too is flesh.” גַּם supplies “too,” and הוּא supplies “he.”",
+        "gloss": "because he too",
+        "language": "he",
+        "lemma": "גַּם",
+        "morphology": "Indeclinable additive particle with prefixed preposition בְּ־ and relative particle שַׁ־. Together the prefixes introduce a causal clause.",
+        "qualifier": "",
+        "root": "גממ",
+        "sense": "also, too, as well"
+      },
+      "position": 7,
+      "surface": "בְּשַׁגַּם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "hu"
+        },
+        "evidence": "In הוּא בָשָׂר, “he is flesh,” הוּא refers back to הָאָדָם, “humankind.” The pronoun supplies the subject, and בָשָׂר is its predicate.",
+        "gloss": "he",
+        "language": "he",
+        "lemma": "הוּא",
+        "morphology": "Independent third-person masculine singular personal pronoun, without prefix or suffix.",
+        "qualifier": "",
+        "root": "הוא",
+        "sense": "he, it"
+      },
+      "position": 8,
+      "surface": "הוּא"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "basar"
+        },
+        "evidence": "In הוּא בָשָׂר, “he is flesh,” הוּא refers to humankind (הָאָדָם). The contrast with רוּחִי, “my spirit,” and the limit of 120 years on “his days” give flesh its sense of human mortality.",
+        "gloss": "flesh, mortal",
+        "language": "he",
+        "lemma": "בָּשָׂר",
+        "morphology": "Masculine singular absolute noun, used as a predicate, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "בשׂר",
+        "sense": "flesh: man as weak and mortal"
+      },
+      "position": 9,
+      "surface": "בָשָׂר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "hayah"
+        },
+        "evidence": "וְהָיוּ agrees with the plural subject יָמָיו, “his days,” and links it to the stated duration מֵאָה וְעֶשְׂרִים שָׁנָה, “one hundred and twenty years.”",
+        "gloss": "and shall be",
+        "language": "he",
+        "lemma": "הָיָה",
+        "morphology": "Qal perfect, third person common plural, with prefixed conjunction וְ (weqatal), expressing future time.",
+        "qualifier": "",
+        "root": "היה",
+        "sense": "to be in a state or condition"
+      },
+      "position": 10,
+      "surface": "וְהָיוּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yom"
+        },
+        "evidence": "The suffix in יָמָיו refers back to הָאָדָם, humankind, expressed as a masculine singular. The clause וְהָיוּ יָמָיו מֵאָה וְעֶשְׂרִים שָׁנָה measures those days as 120 years, so the plural denotes the span allotted to humankind.",
+        "gloss": "his days",
+        "language": "he",
+        "lemma": "יוֹם",
+        "morphology": "Masculine plural noun in the construct state with a third-person masculine singular possessive suffix.",
+        "qualifier": "",
+        "root": "יומ",
+        "sense": "(pl.) days of a life, a reign or an age"
+      },
+      "position": 11,
+      "surface": "יָמָיו"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "meah"
+        },
+        "evidence": "In מֵאָה וְעֶשְׂרִים שָׁנָה, מֵאָה supplies the hundred and וְעֶשְׂרִים adds twenty, giving a total of 120 years.",
+        "gloss": "one hundred",
+        "language": "he",
+        "lemma": "מֵאָה",
+        "morphology": "Cardinal numeral, singular absolute, without prefix or suffix.",
+        "qualifier": "",
+        "root": "מאה",
+        "sense": "a hundred (a count)"
+      },
+      "position": 12,
+      "surface": "מֵאָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "asar"
+        },
+        "evidence": "In מֵאָה וְעֶשְׂרִים שָׁנָה, the conjunction joins twenty to one hundred, giving a total of 120 years.",
+        "gloss": "and twenty",
+        "language": "he",
+        "lemma": "עֶשְׂרִים",
+        "morphology": "Conjunction וְ prefixed to a cardinal numeral, common gender, plural absolute.",
+        "qualifier": "",
+        "root": "עשׂר",
+        "sense": "twenty"
+      },
+      "position": 13,
+      "surface": "וְעֶשְׂרִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shanah"
+        },
+        "evidence": "וְהָיוּ יָמָיו means “his days shall be.” The phrase מֵאָה וְעֶשְׂרִים שָׁנָה gives the measure of those days as 120 years. The Hebrew noun is singular after the compound numeral.",
+        "gloss": "years",
+        "language": "he",
+        "lemma": "שָׁנָה",
+        "morphology": "Feminine singular absolute noun, without prefix or suffix.",
+        "qualifier": "noun",
+        "root": "שנה",
+        "sense": "years of a life, age"
+      },
+      "position": 14,
+      "surface": "שָׁנָה"
+    }
+  ]
+}

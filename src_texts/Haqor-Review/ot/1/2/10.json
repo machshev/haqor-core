@@ -1,0 +1,276 @@
+{
+  "book": 1,
+  "chapter": 2,
+  "review": {
+    "entities": [
+      {
+        "evidence": "The river flows from Eden to water the garden planted in Eden in Gen.2.8. The source tag identifies the same place.",
+        "key": "Eden@Gen.2.8",
+        "position": 2
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "and a river",
+        "position": 0
+      },
+      {
+        "gloss": "was flowing out",
+        "position": 1
+      },
+      {
+        "gloss": "from Eden",
+        "position": 2
+      },
+      {
+        "gloss": "to water",
+        "position": 3
+      },
+      {
+        "gloss": "(untranslated)",
+        "position": 4
+      },
+      {
+        "gloss": "the garden",
+        "position": 5
+      },
+      {
+        "gloss": "and from there",
+        "position": 6
+      },
+      {
+        "gloss": "it divided",
+        "position": 7
+      },
+      {
+        "gloss": "and became",
+        "position": 8
+      },
+      {
+        "gloss": "four",
+        "position": 9
+      },
+      {
+        "gloss": "branches",
+        "position": 10
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[And a river|0] [was flowing out|1] [from Eden|2] [to water|3] [the garden|5,4], [and from there|6] [it divided|7] [and became|8] [four|9] [branches|10]."
+  },
+  "source": "ot",
+  "verse": 10,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "nahar"
+        },
+        "evidence": "נָהָר is the subject of יֹצֵא. The river flows out of Eden to water the garden and then divides into four branches. These actions identify it as a watercourse.",
+        "gloss": "and a river",
+        "language": "he",
+        "lemma": "נָהָר",
+        "morphology": "Conjunction וְ prefixed to a masculine singular absolute noun.",
+        "qualifier": "",
+        "root": "נהר",
+        "sense": "river, stream"
+      },
+      "position": 0,
+      "surface": "וְנָהָר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yatsa"
+        },
+        "evidence": "יֹצֵא agrees with נָהָר ‘river’, and מֵעֵדֶן ‘from Eden’ identifies the place from which the river flows to water the garden.",
+        "gloss": "flows out",
+        "language": "he",
+        "lemma": "יָצָא",
+        "morphology": "Qal active participle, masculine singular absolute",
+        "qualifier": "",
+        "root": "יצא",
+        "sense": "flow out from a source (of a river)"
+      },
+      "position": 1,
+      "surface": "יֹצֵא"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "eden",
+            "base": "0073ee93365c2a8b78250ac250b810c65257463dee47801a0e7571bda8592234",
+            "change": "Add a place-name word for עֵדֶן alongside the identically pointed noun meaning delight.",
+            "definition": "Eden is the place where Yahweh God planted a garden.",
+            "evidence": "Genesis 2:8 locates the garden with the phrase גַּן בְּעֵדֶן, “a garden in Eden.”"
+          }
+        },
+        "evidence": "וְנָהָר יֹצֵא מֵעֵדֶן says that a river flows out of Eden. The prefix מֵ־ marks Eden as the river’s source, and לְהַשְׁקוֹת אֶת־הַגָּן identifies the garden it waters.",
+        "gloss": "from Eden",
+        "language": "he",
+        "lemma": "עֵדֶן",
+        "morphology": "Hebrew proper noun with prefixed preposition מִן, appearing as מֵ־ before ע.",
+        "qualifier": "place name",
+        "root": "עדנ",
+        "sense": "Eden, the place where Yahweh God planted a garden."
+      },
+      "position": 2,
+      "surface": "מֵעֵדֶן"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "shaqah",
+            "base": "58eca51da110ef9ccb46d19d4744780bc41bcb5e2d5c8a82abf7eb092d51b479",
+            "change": "Add a Hiphil sense for watering the ground alongside the existing sense of giving someone drink.",
+            "definition": "To supply the ground with water.",
+            "evidence": "In Gen.2.6 the rising אֵד supplies moisture to the whole surface of the ground."
+          }
+        },
+        "evidence": "The river flows out of Eden, and לְהַשְׁקוֹת gives the purpose of its flow. The direct object אֶת הַגָּן identifies the garden as what the river waters.",
+        "gloss": "to water",
+        "language": "he",
+        "lemma": "שָׁקָה",
+        "morphology": "Hiphil infinitive construct with prefixed לְ expressing purpose",
+        "qualifier": "",
+        "root": "שקה",
+        "sense": "water the ground"
+      },
+      "position": 3,
+      "surface": "לְהַשְׁקוֹת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "et"
+        },
+        "evidence": "In לְהַשְׁקוֹת אֶת הַגָּן, “to water the garden,” אֶת marks the definite noun הַגָּן as the direct object of לְהַשְׁקוֹת.",
+        "gloss": "(untranslated)",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Unsuffixed direct-object particle, pointed אֶת, with no prefix.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "(marks the definite object)"
+      },
+      "position": 4,
+      "surface": "אֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ganan"
+        },
+        "evidence": "In לְהַשְׁקוֹת אֶת הַגָּן, אֶת marks the garden as the direct object of “to water.” The river flows from Eden to water the garden.",
+        "gloss": "the garden",
+        "language": "he",
+        "lemma": "גַּן",
+        "morphology": "Definite article הַ־ + common noun, singular absolute.",
+        "qualifier": "",
+        "root": "גננ",
+        "sense": "garden"
+      },
+      "position": 5,
+      "surface": "הַגָּן"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "shem",
+            "base": "5ff57a119255ca3775ba1c5592f6cd00e22ec622fafccd6afc08384d01b566fe",
+            "change": "Add Gen.2.10 to the existing place-adverb sense in shem to illustrate שָׁם with מִן.",
+            "definition": "שָׁם identifies a place in context. With מִן it means ‘from there’.",
+            "evidence": "In Gen.2.10, וּמִשָּׁם יִפָּרֵד describes the river dividing from the place it has just watered."
+          }
+        },
+        "evidence": "The river flows out of Eden to water the garden. שָׁם points back to the garden, and מִן marks it as the point from which the river divides into four branches.",
+        "gloss": "and from there",
+        "language": "he",
+        "lemma": "שָׁם",
+        "morphology": "Conjunction וּ־ ‘and’ + prefixed preposition מִן ‘from’, whose נ assimilates to the following שׁ as marked by the dagesh + place adverb שָׁם ‘there’.",
+        "qualifier": "",
+        "root": "שמ",
+        "sense": "there, at the place just mentioned"
+      },
+      "position": 6,
+      "surface": "וּמִשָּׁם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "parad"
+        },
+        "evidence": "The singular verb יִפָּרֵד agrees with נָהָר, “river.” וּמִשָּׁם, “and from there,” locates the division, and לְאַרְבָּעָה רָאשִׁים, “into four heads,” describes the resulting branches.",
+        "gloss": "it branches",
+        "language": "he",
+        "lemma": "פָּרַד",
+        "morphology": "Niphal imperfect, third person masculine singular",
+        "qualifier": "",
+        "root": "פרד",
+        "sense": "to divide into branches"
+      },
+      "position": 7,
+      "surface": "יִפָּרֵד"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "hayah"
+        },
+        "evidence": "The subject is נָהָר, the river. After יִפָּרֵד (‘it divides’), לְאַרְבָּעָה רָאשִׁים gives the result of the division. The one river becomes four branches.",
+        "gloss": "and becomes",
+        "language": "he",
+        "lemma": "הָיָה",
+        "morphology": "Qal perfect, third person masculine singular, with prefixed וְ in a weqatal construction continuing יִפָּרֵד.",
+        "qualifier": "",
+        "root": "היה",
+        "sense": "to become"
+      },
+      "position": 8,
+      "surface": "וְהָיָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "reva"
+        },
+        "evidence": "The river divides (יִפָּרֵד), and וְהָיָה לְאַרְבָּעָה רָאשִׁים describes the result. אַרְבָּעָה counts the masculine plural רָאשִׁים, the four branches of the river.",
+        "gloss": "into four",
+        "language": "he",
+        "lemma": "אַרְבַּע",
+        "morphology": "Preposition לְ prefixed to אַרְבָּעָה, a masculine singular absolute cardinal numeral.",
+        "qualifier": "",
+        "root": "רבע",
+        "sense": "four"
+      },
+      "position": 9,
+      "surface": "לְאַרְבָּעָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "rosh",
+            "base": "e7936d9a891da739767b2676d2d3943d805dac67a6140ebae13f22e88ebecd03",
+            "change": "Add the river-branch sense to the Hebrew noun רֹאשׁ ‘head’, with Gen.2.10 as its defining evidence.",
+            "definition": "A branch of a river, beginning where the river divides.",
+            "evidence": "In Gen.2.10 one river waters the garden and then divides. The numeral אַרְבָּעָה counts the resulting רָאשִׁים."
+          }
+        },
+        "evidence": "The subject is one river, נָהָר. וּמִשָּׁם יִפָּרֵד says that from there it divides, and וְהָיָה לְאַרְבָּעָה רָאשִׁים gives the result. The four ‘heads’ are the streams that begin at the division.",
+        "gloss": "branches",
+        "language": "he",
+        "lemma": "רֹאשׁ",
+        "morphology": "Common noun, masculine plural absolute. The plural ending is ־ִים. The word has no prefix or pronominal suffix.",
+        "qualifier": "head",
+        "root": "ראש",
+        "sense": "A branch of a river where it divides into separate streams."
+      },
+      "position": 10,
+      "surface": "רָאשִׁים"
+    }
+  ]
+}

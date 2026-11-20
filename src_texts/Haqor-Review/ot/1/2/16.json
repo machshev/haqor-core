@@ -1,0 +1,195 @@
+{
+  "book": 1,
+  "chapter": 2,
+  "source": "ot",
+  "verse": 16,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "tsavah"
+        },
+        "evidence": "יַהְוֶה אֱלֹהִים is the subject, עַל הָאָדָם identifies the man as the recipient, and לֵאמֹר introduces the words of the command.",
+        "gloss": "and he commanded",
+        "language": "he",
+        "lemma": "צִוָּה",
+        "morphology": "Piel wayyiqtol, third masculine singular, with prefixed וַ־ and an apocopated verb form.",
+        "qualifier": "",
+        "root": "צוה",
+        "sense": "to give someone a command"
+      },
+      "position": 0,
+      "surface": "וַיְצַו"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yahweh"
+        },
+        "evidence": "יַהְוֶה אֱלֹהִים is the subject of וַיְצַו (‘he commanded’). יַהְוֶה names the one who gives the command, and אֱלֹהִים (‘God’) stands in apposition to the name.",
+        "gloss": "Yahweh",
+        "language": "he",
+        "lemma": "יַהְוֶה",
+        "morphology": "Proper noun, masculine singular, without prefix or suffix",
+        "qualifier": "",
+        "root": "הוה",
+        "sense": "Personal name of the God of Israel"
+      },
+      "position": 1,
+      "surface": "יַהְוֶה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "אֱלֹהִים stands in apposition to יַהְוֶה. Together they name the single subject of וַיְצַו, “he commanded,” the masculine singular verb introducing the command to the man.",
+        "gloss": "God",
+        "language": "he",
+        "lemma": "אֱלֹהִים",
+        "morphology": "Common noun, masculine plural, absolute, with singular reference.",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "the Mighty One, God"
+      },
+      "position": 2,
+      "surface": "אֱלֹהִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "alah"
+        },
+        "evidence": "In וַיְצַו יַהְוֶה אֱלֹהִים עַל הָאָדָם, עַל marks the man as the one upon whom God lays the command. לֵאמֹר introduces the words addressed to him.",
+        "gloss": "upon",
+        "language": "he",
+        "lemma": "עַל",
+        "morphology": "Preposition without prefix or suffix.",
+        "qualifier": "",
+        "root": "עלה",
+        "sense": "upon, as a burden or responsibility"
+      },
+      "position": 3,
+      "surface": "עַל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "adam"
+        },
+        "evidence": "In וַיְצַו יַהְוֶה אֱלֹהִים עַל הָאָדָם, the definite article identifies the man already introduced in the garden narrative as the recipient of the command. The second-person masculine singular תֹּאכֵל addresses him directly.",
+        "gloss": "the man",
+        "language": "he",
+        "lemma": "אָדָם",
+        "morphology": "Definite article הָ־ + masculine singular common noun in the absolute state.",
+        "qualifier": "noun",
+        "root": "אדמ",
+        "sense": "the man (the first man)"
+      },
+      "position": 4,
+      "surface": "הָאָדָם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "amar"
+        },
+        "evidence": "לֵאמֹר introduces the words of the command reported by וַיְצַו. The second-person verb תֹּאכֵל shows that God addresses the man directly.",
+        "gloss": "saying",
+        "language": "he",
+        "lemma": "אָמַר",
+        "morphology": "Qal infinitive construct with prefixed preposition לְ.",
+        "qualifier": "",
+        "root": "אמר",
+        "sense": "say, introducing direct speech"
+      },
+      "position": 5,
+      "surface": "לֵאמֹר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "kalal"
+        },
+        "evidence": "In מִכֹּל עֵץ הַגָּן, כֹּל quantifies the singular עֵץ. The permission אָכֹל תֹּאכֵל thus applies to any tree of the garden.",
+        "gloss": "from any",
+        "language": "he",
+        "lemma": "כֹּל",
+        "morphology": "Masculine singular construct noun with prefixed מִן, whose נ assimilates to the following כ.",
+        "qualifier": "",
+        "root": "כלל",
+        "sense": "every, each; any"
+      },
+      "position": 6,
+      "surface": "מִכֹּל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ets"
+        },
+        "evidence": "עֵץ is in construct with הַגָּן, “the garden.” The phrase מִכֹּל עֵץ הַגָּן means “from every tree of the garden” and identifies the trees from which the man may eat.",
+        "gloss": "tree",
+        "language": "he",
+        "lemma": "עֵץ",
+        "morphology": "Common noun, masculine singular construct, without prefix or suffix",
+        "qualifier": "",
+        "root": "עצה",
+        "sense": "tree"
+      },
+      "position": 7,
+      "surface": "עֵץ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ganan"
+        },
+        "evidence": "In מִכֹּל עֵץ הַגָּן, “from every tree of the garden,” הַגָּן completes the construct phrase עֵץ הַגָּן and identifies the garden to which the trees belong.",
+        "gloss": "the garden",
+        "language": "he",
+        "lemma": "גַּן",
+        "morphology": "Singular absolute noun with the prefixed definite article הַ־.",
+        "qualifier": "",
+        "root": "גננ",
+        "sense": "garden"
+      },
+      "position": 8,
+      "surface": "הַגָּן"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "akal"
+        },
+        "evidence": "In אָכֹל תֹּאכֵל, the infinitive absolute precedes a finite verb of the same root and emphasizes the permission to eat from any tree of the garden.",
+        "gloss": "freely eat",
+        "language": "he",
+        "lemma": "אָכַל",
+        "morphology": "Qal infinitive absolute, without prefix or suffix",
+        "qualifier": "",
+        "root": "אכל",
+        "sense": "eat"
+      },
+      "position": 9,
+      "surface": "אָכֹל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "akal"
+        },
+        "evidence": "God addresses הָאָדָם directly. The preceding infinitive absolute אָכֹל emphasizes the permission expressed by תֹּאכֵל, yielding “you may freely eat.” מִכֹּל עֵץ הַגָּן identifies the trees from which he may eat.",
+        "gloss": "you may eat",
+        "language": "he",
+        "lemma": "אָכַל",
+        "morphology": "Qal imperfect, second person masculine singular, with the person prefix ת־ and no suffix.",
+        "qualifier": "",
+        "root": "אכל",
+        "sense": "eat"
+      },
+      "position": 10,
+      "surface": "תֹּאכֵל"
+    }
+  ]
+}

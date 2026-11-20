@@ -1,0 +1,348 @@
+{
+  "book": 1,
+  "chapter": 3,
+  "source": "ot",
+  "verse": 22,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "amar"
+        },
+        "evidence": "יַהְוֶה אֱלֹהִים is the subject of וַיֹּאמֶר. The direct speech begins with הֵן הָאָדָם הָיָה כְּאַחַד מִמֶּנּוּ (“Behold, the human has become like one of us”).",
+        "gloss": "and he said",
+        "language": "he",
+        "lemma": "אָמַר",
+        "morphology": "Qal wayyiqtol, third-person masculine singular, with prefixed וַ־.",
+        "qualifier": "",
+        "root": "אמר",
+        "sense": "say, introducing direct speech"
+      },
+      "position": 0,
+      "surface": "וַיֹּאמֶר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yahweh"
+        },
+        "evidence": "In וַיֹּאמֶר יַהְוֶה אֱלֹהִים, “Yahweh God said,” יַהְוֶה names the speaker, and אֱלֹהִים stands in apposition to the name.",
+        "gloss": "Yahweh",
+        "language": "he",
+        "lemma": "יַהְוֶה",
+        "morphology": "Proper noun, singular, without prefix or suffix",
+        "qualifier": "",
+        "root": "הוה",
+        "sense": "Personal name of the God of Israel"
+      },
+      "position": 1,
+      "surface": "יַהְוֶה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "אֱלֹהִים stands in apposition to יַהְוֶה. The singular verb וַיֹּאמֶר (“he said”) identifies Yahweh God as the speaker. The plural מִמֶּנּוּ (“of us”) occurs within his speech.",
+        "gloss": "God",
+        "language": "he",
+        "lemma": "אֱלֹהִים",
+        "morphology": "Common noun, masculine plural absolute, with singular reference and no prefix or suffix.",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "the Mighty One, God"
+      },
+      "position": 2,
+      "surface": "אֱלֹהִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "hinneh"
+        },
+        "evidence": "הֵן introduces the assertion הָאָדָם הָיָה כְּאַחַד מִמֶּנּוּ, “the human has become like one of us.” It draws attention to an established fact. וְעַתָּה, “and now,” then introduces the concern that follows from it.",
+        "gloss": "look",
+        "language": "he",
+        "lemma": "הֵן",
+        "morphology": "Uninflected demonstrative particle, without prefix or suffix.",
+        "qualifier": "interjection",
+        "root": "הנ",
+        "sense": "look, see (a fact put before the hearer)"
+      },
+      "position": 3,
+      "surface": "הֵן"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "adam"
+        },
+        "evidence": "The article identifies the particular man of the narrative. He is the subject of הָיָה, “has become,” and יָדוֹ, “his hand,” refers back to him as he might reach for the tree of life.",
+        "gloss": "the man",
+        "language": "he",
+        "lemma": "אָדָם",
+        "morphology": "Common noun, masculine singular absolute, with prefixed definite article הָ־.",
+        "qualifier": "noun",
+        "root": "אדמ",
+        "sense": "the man (the first man)"
+      },
+      "position": 4,
+      "surface": "הָאָדָם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "hayah"
+        },
+        "evidence": "כְּאַחַד מִמֶּנּוּ identifies what the human has become (‘like one of us’), and לָדַעַת טוֹב וָרָע specifies the point of likeness (‘in knowing good and evil’). וְעַתָּה (‘and now’) introduces the consequence of this change.",
+        "gloss": "has become",
+        "language": "he",
+        "lemma": "הָיָה",
+        "morphology": "Qal perfect, third person masculine singular, agreeing with הָאָדָם. No prefix or suffix.",
+        "qualifier": "",
+        "root": "היה",
+        "sense": "to enter a new state or condition"
+      },
+      "position": 5,
+      "surface": "הָיָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "echad"
+        },
+        "evidence": "In כְּאַחַד מִמֶּנּוּ, ‘like one of us,’ כְּ marks the comparison and מִמֶּנּוּ identifies the group from which one member is singled out. לָדַעַת טוֹב וָרָע specifies the point of comparison, knowing good and evil.",
+        "gloss": "like one",
+        "language": "he",
+        "lemma": "אֶחָד",
+        "morphology": "Comparative preposition כְּ prefixed to אַחַד, the masculine singular construct form of the cardinal numeral.",
+        "qualifier": "",
+        "root": "אחד",
+        "sense": "a certain one; one of"
+      },
+      "position": 6,
+      "surface": "כְּאַחַד"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yada"
+        },
+        "evidence": "טוֹב וָרָע supplies the objects of לָדַעַת. The infinitive specifies how the human has become כְּאַחַד מִמֶּנּוּ (“like one of us”): in knowing good and evil.",
+        "gloss": "in knowing",
+        "language": "he",
+        "lemma": "יָדַע",
+        "morphology": "Qal infinitive construct with prefixed preposition לָ־",
+        "qualifier": "",
+        "root": "ידע",
+        "sense": "to discern good and evil"
+      },
+      "position": 8,
+      "surface": "לָדַעַת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "tov"
+        },
+        "evidence": "In לָדַעַת טוֹב וָרָע, “to know good and evil,” טוֹב and רָע form a pair of opposites. Together they express what the human has come to know.",
+        "gloss": "good",
+        "language": "he",
+        "lemma": "טוֹב",
+        "morphology": "Masculine singular absolute adjective used substantivally, with no prefix or suffix.",
+        "qualifier": "adjective",
+        "root": "טוב",
+        "sense": "good (and evil): to know, discern or choose"
+      },
+      "position": 9,
+      "surface": "טוֹב"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ra"
+        },
+        "evidence": "In לָדַעַת טוֹב וָרָע, “to know good and evil,” וָ־ joins רָע to טוֹב. Both terms function as objects of לָדַעַת.",
+        "gloss": "and evil",
+        "language": "he",
+        "lemma": "רַע",
+        "morphology": "Conjunction וָ־ prefixed to a masculine singular absolute form used substantivally. The qamats in רָע reflects the pausal form of רַע.",
+        "qualifier": "noun",
+        "root": "רעע",
+        "sense": "(with טוֹב) good and evil"
+      },
+      "position": 10,
+      "surface": "וָרָע"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "anah"
+        },
+        "evidence": "וְעַתָּה marks the turn from what the human has become, knowing good and evil, to the concern introduced by פֶּן, “lest he reach out his hand” and take from the tree of life.",
+        "gloss": "and now",
+        "language": "he",
+        "lemma": "עַתָּה",
+        "morphology": "Conjunction וְ prefixed to the adverb עַתָּה.",
+        "qualifier": "",
+        "root": "ענה",
+        "sense": "and now, so then"
+      },
+      "position": 11,
+      "surface": "וְעַתָּה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "pen"
+        },
+        "evidence": "פֶּן introduces יִשְׁלַח יָדוֹ, “he might reach out his hand.” The following verbs extend the feared possibility to taking from the tree of life, eating, and living forever.",
+        "gloss": "lest",
+        "language": "he",
+        "lemma": "פֶּן",
+        "morphology": "Uninflected conjunction with no prefix or suffix.",
+        "qualifier": "",
+        "root": "פנ",
+        "sense": "lest something happen"
+      },
+      "position": 12,
+      "surface": "פֶּן"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shalach"
+        },
+        "evidence": "In פֶּן יִשְׁלַח יָדוֹ, “lest he reach out his hand,” יָדוֹ is the direct object. The following וְלָקַח describes what the man might reach out to do, namely take from the tree of life.",
+        "gloss": "reach out",
+        "language": "he",
+        "lemma": "שָׁלַח",
+        "morphology": "Qal imperfect, third person masculine singular",
+        "qualifier": "",
+        "root": "שלח",
+        "sense": "stretch out the hand"
+      },
+      "position": 13,
+      "surface": "יִשְׁלַח"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "laqach"
+        },
+        "evidence": "The man might reach out his hand and take from the tree of life. מֵעֵץ הַחַיִּים identifies the source, and וְאָכַל (‘and eat’) implies that what he takes is fruit.",
+        "gloss": "and take",
+        "language": "he",
+        "lemma": "לָקַח",
+        "morphology": "Qal weqatal, third person masculine singular, with prefixed וְ. It continues the action introduced by פֶּן יִשְׁלַח.",
+        "qualifier": "",
+        "root": "לקח",
+        "sense": "physically take something"
+      },
+      "position": 15,
+      "surface": "וְלָקַח"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "gam"
+        },
+        "evidence": "In וְלָקַח גַּם מֵעֵץ הַחַיִּים, “and take also from the tree of life,” גַּם marks the tree of life as a second tree from which the man might take fruit.",
+        "gloss": "also",
+        "language": "he",
+        "lemma": "גַּם",
+        "morphology": "Invariable additive particle, without prefix or suffix.",
+        "qualifier": "",
+        "root": "גממ",
+        "sense": "also, too, as well"
+      },
+      "position": 16,
+      "surface": "גַּם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ets"
+        },
+        "evidence": "מֵעֵץ הַחַיִּים means “from the tree of life.” The man might reach out, take from the tree, and eat, identifying the tree as the source of food.",
+        "gloss": "from the tree",
+        "language": "he",
+        "lemma": "עֵץ",
+        "morphology": "Prefixed preposition מֵ־ (from מִן) + masculine singular construct noun.",
+        "qualifier": "",
+        "root": "עצה",
+        "sense": "tree"
+      },
+      "position": 17,
+      "surface": "מֵעֵץ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chayah"
+        },
+        "evidence": "In מֵעֵץ הַחַיִּים, “from the tree of life,” הַחַיִּים names what the tree gives. The following words וְאָכַל וָחַי לְעֹלָם, “and eat and live forever,” explain the result of eating from it.",
+        "gloss": "life",
+        "language": "he",
+        "lemma": "חַיִּים",
+        "morphology": "Masculine plural absolute noun with the definite article הַ־.",
+        "qualifier": "",
+        "root": "חיה",
+        "sense": "life, being alive"
+      },
+      "position": 18,
+      "surface": "הַחַיִּים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "akal"
+        },
+        "evidence": "The man might take from the tree of life (וְלָקַח גַּם מֵעֵץ הַחַיִּים), eat what he takes (וְאָכַל), and live forever (וָחַי לְעֹלָם).",
+        "gloss": "and eat",
+        "language": "he",
+        "lemma": "אָכַל",
+        "morphology": "Qal perfect, third masculine singular, with prefixed וְ (weqatal), continuing the sequence governed by פֶּן.",
+        "qualifier": "",
+        "root": "אכל",
+        "sense": "eat"
+      },
+      "position": 19,
+      "surface": "וְאָכַל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chayah"
+        },
+        "evidence": "The man is already alive. וְאָכַל וָחַי לְעֹלָם gives the feared outcome of taking from the tree of life: he might eat and live forever. לְעֹלָם supplies the duration.",
+        "gloss": "and live",
+        "language": "he",
+        "lemma": "חָיָה",
+        "morphology": "Qal perfect, third-person masculine singular, with prefixed conjunction וָ־; it continues the hypothetical sequence governed by פֶּן.",
+        "qualifier": "",
+        "root": "חיה",
+        "sense": "continue to live, stay alive"
+      },
+      "position": 20,
+      "surface": "וָחַי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "olam"
+        },
+        "evidence": "In וָחַי לְעֹלָם, “and live forever,” לְעֹלָם expresses how long the human would live after eating from the tree of life. The clause gives no endpoint.",
+        "gloss": "forever",
+        "language": "he",
+        "lemma": "עוֹלָם",
+        "morphology": "Prefixed preposition לְ plus a masculine singular absolute noun, spelled עֹלָם without ו.",
+        "qualifier": "",
+        "root": "עלמ",
+        "sense": "duration with no stated endpoint (in context)"
+      },
+      "position": 21,
+      "surface": "לְעֹלָם"
+    }
+  ]
+}

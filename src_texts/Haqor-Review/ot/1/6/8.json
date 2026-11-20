@@ -1,0 +1,142 @@
+{
+  "book": 1,
+  "chapter": 6,
+  "review": {
+    "entities": [
+      {
+        "evidence": "The flood narrative identifies this Noah as Lamech’s son, the father of Shem, Ham, and Japheth, matching the source tag.",
+        "key": "Noah@Gen.5.29",
+        "position": 0
+      },
+      {
+        "evidence": "The name יַהְוֶה identifies the God in whose eyes Noah found favor. The source tag LORD refers to the same bearer as the earlier Yahweh proposal.",
+        "key": "Yahweh@Gen.2.22",
+        "new": {
+          "description": "The God of Israel, who built the rib taken from the man into a woman and brought her to the man.",
+          "kind": "person",
+          "name": "Yahweh"
+        },
+        "position": 4
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "but Noah",
+        "position": 0
+      },
+      {
+        "gloss": "found",
+        "position": 1
+      },
+      {
+        "gloss": "favor",
+        "position": 2
+      },
+      {
+        "gloss": "in the eyes of",
+        "position": 3
+      },
+      {
+        "gloss": "Yahweh",
+        "position": 4
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[But Noah|0] [found|1] [favor|2] [in the eyes of|3] [Yahweh|4]."
+  },
+  "source": "ot",
+  "verse": 8,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "noah-son-of-lamech",
+            "base": null,
+            "change": "Add a personal-name article for נֹחַ linked to the root article nuach.",
+            "definition": "Noah, the son whom Lamech names in hope of relief from toil.",
+            "evidence": "Genesis 5:29 gives the name נֹחַ and explains it through the wordplay on יְנַחֲמֵנוּ, “he will comfort us.”"
+          }
+        },
+        "evidence": "נֹחַ is the subject of מָצָא חֵן, “found favor.” The verse names Noah as the one who found favor in Yahweh’s eyes.",
+        "gloss": "but Noah",
+        "language": "he",
+        "lemma": "נֹחַ",
+        "morphology": "Masculine singular personal name with prefixed conjunction וְ, here “but.”",
+        "qualifier": "",
+        "root": "נוח",
+        "sense": "Noah, son of Lamech"
+      },
+      "position": 0,
+      "surface": "וְנֹחַ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "matsa"
+        },
+        "evidence": "נֹחַ is the subject and חֵן ‘favor’ is the direct object. With בְּעֵינֵי יַהְוֶה, the clause reads ‘Noah found favor in the eyes of YHWH.’",
+        "gloss": "found",
+        "language": "he",
+        "lemma": "מָצָא",
+        "morphology": "Qal perfect, third person masculine singular",
+        "qualifier": "",
+        "root": "מצא",
+        "sense": "find"
+      },
+      "position": 1,
+      "surface": "מָצָא"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chanan"
+        },
+        "evidence": "Noah is the subject of מָצָא, and חֵן is its direct object. The phrase בְּעֵינֵי יַהְוֶה identifies whose favour Noah found: “Noah found favour in the eyes of Yahweh.”",
+        "gloss": "favour",
+        "language": "he",
+        "lemma": "חֵן",
+        "morphology": "Masculine singular absolute noun, without prefix or suffix.",
+        "qualifier": "noun",
+        "root": "חננ",
+        "sense": "favour, goodwill (in someone's eyes)"
+      },
+      "position": 2,
+      "surface": "חֵן"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ayin"
+        },
+        "evidence": "In מָצָא חֵן בְּעֵינֵי יַהְוֶה, Noah finds favor, and יַהְוֶה completes the construct phrase עֵינֵי יַהְוֶה. The phrase identifies whose favorable regard Noah enjoys.",
+        "gloss": "in the eyes of",
+        "language": "he",
+        "lemma": "עַיִן",
+        "morphology": "Prefixed preposition בְּ + common noun עֵינֵי, dual construct, common gender.",
+        "qualifier": "",
+        "root": "עינ",
+        "sense": "in the eyes of: in one's judgment, regard"
+      },
+      "position": 3,
+      "surface": "בְּעֵינֵי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yahweh"
+        },
+        "evidence": "In בְּעֵינֵי יַהְוֶה, “in the eyes of Yahweh,” the name completes the construct phrase and identifies the one in whose eyes Noah found favor.",
+        "gloss": "Yahweh",
+        "language": "he",
+        "lemma": "יַהְוֶה",
+        "morphology": "Proper noun, singular, without prefix or suffix",
+        "qualifier": "",
+        "root": "הוה",
+        "sense": "Personal name of the God of Israel"
+      },
+      "position": 4,
+      "surface": "יַהְוֶה"
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+{
+  "book": 1,
+  "chapter": 1,
+  "source": "ot",
+  "verse": 10,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "qara"
+        },
+        "evidence": "אֱלֹהִים is the subject, לַיַּבָּשָׁה identifies the dry land as what God names, and אֶרֶץ gives it the name “Earth.”",
+        "gloss": "and he named",
+        "language": "he",
+        "lemma": "קָרָא",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ־",
+        "qualifier": "call",
+        "root": "קרא",
+        "sense": "give a name to"
+      },
+      "position": 0,
+      "surface": "וַיִּקְרָא"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "אֱלֹהִים is the subject of וַיִּקְרָא, “he called.” The masculine singular verb identifies God as the one who named the dry land אֶרֶץ, “earth.”",
+        "gloss": "God",
+        "language": "he",
+        "lemma": "אֱלֹהִים",
+        "morphology": "Masculine plural common noun in the absolute state, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "the Mighty One, God"
+      },
+      "position": 1,
+      "surface": "אֱלֹהִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yabesh"
+        },
+        "evidence": "In וַיִּקְרָא אֱלֹהִים לַיַּבָּשָׁה אֶרֶץ, לַ־ marks the dry land as the entity God names אֶרֶץ. The parallel clause names the gathered waters יַמִּים, “seas.”",
+        "gloss": "the dry land",
+        "language": "he",
+        "lemma": "יַבָּשָׁה",
+        "morphology": "Feminine singular absolute noun with prefixed לְ and the definite article, combined as לַ־.",
+        "qualifier": "",
+        "root": "יבש",
+        "sense": "dry land"
+      },
+      "position": 2,
+      "surface": "לַיַּבָּשָׁה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "erets"
+        },
+        "evidence": "God calls the dry land (לַיַּבָּשָׁה) אֶרֶץ and gives the gathered waters the parallel name יַמִּים, “seas.” The naming pair identifies אֶרֶץ as the dry portion.",
+        "gloss": "land",
+        "language": "he",
+        "lemma": "אֶרֶץ",
+        "morphology": "Common noun, singular absolute, usually feminine, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "ארצ",
+        "sense": "land as distinct from sea"
+      },
+      "position": 3,
+      "surface": "אֶרֶץ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "tiqvah",
+            "base": "e8b9abf848ec920912360143fe308cf1be78e1f53eeaaa491426b2815863a346",
+            "change": "Assign the occurrence to the water sense of מִקְוֶה in tiqvah and make the link to יִקָּווּ explicit in its verse evidence.",
+            "definition": "A body of water formed as waters gather together.",
+            "evidence": "Genesis 1:10 names the gathered waters “Seas,” following the command for the waters to gather in Genesis 1:9."
+          }
+        },
+        "evidence": "God calls מִקְוֵה הַמַּיִם, “the gathering of the waters,” יַמִּים, “Seas.” The noun echoes יִקָּווּ in Genesis 1:9, where God commands the waters to gather in one place.",
+        "gloss": "gathering",
+        "language": "he",
+        "lemma": "מִקְוֶה",
+        "morphology": "וּ־ conjunction “and” + לְ־ preposition “to” + מִקְוֵה, masculine singular construct noun governing הַמַּיִם.",
+        "qualifier": "collection of water",
+        "root": "קוה",
+        "sense": "collection of water"
+      },
+      "position": 4,
+      "surface": "וּלְמִקְוֵה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "qara"
+        },
+        "evidence": "In וּלְמִקְוֵה הַמַּיִם קָרָא יַמִּים, the phrase לְמִקְוֵה הַמַּיִם identifies what God named, and יַמִּים (“Seas”) gives the name. This parallels God’s naming the dry land אֶרֶץ (“Earth”) in the preceding clause.",
+        "gloss": "he named",
+        "language": "he",
+        "lemma": "קָרָא",
+        "morphology": "Qal perfect, third person masculine singular, without prefix or suffix",
+        "qualifier": "call",
+        "root": "קרא",
+        "sense": "give a name to"
+      },
+      "position": 6,
+      "surface": "קָרָא"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yam"
+        },
+        "evidence": "Just as God calls the dry ground אֶרֶץ, he calls the gathering of the waters (מִקְוֵה הַמַּיִם) יַמִּים. The plural names the gathered waters “seas.”",
+        "gloss": "seas",
+        "language": "he",
+        "lemma": "יָם",
+        "morphology": "Common noun, masculine plural absolute.",
+        "qualifier": "",
+        "root": "יממ",
+        "sense": "sea, the gathered waters"
+      },
+      "position": 7,
+      "surface": "יַמִּים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "raah"
+        },
+        "evidence": "In וַיַּרְא אֱלֹהִים כִּי טוֹב, אֱלֹהִים is the subject, and כִּי טוֹב gives the content of what God saw: “that it was good.”",
+        "gloss": "and he saw",
+        "language": "he",
+        "lemma": "רָאָה",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ־",
+        "qualifier": "",
+        "root": "ראה",
+        "sense": "see or perceive that something is so"
+      },
+      "position": 8,
+      "surface": "וַיַּרְא"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "In וַיַּרְא אֱלֹהִים כִּי טוֹב, “God saw that it was good,” the singular verb וַיַּרְא takes אֱלֹהִים as its subject. It refers to the same God who named the land and seas earlier in the verse.",
+        "gloss": "God",
+        "language": "he",
+        "lemma": "אֱלֹהִים",
+        "morphology": "Common noun, masculine plural absolute, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "the Mighty One, God"
+      },
+      "position": 9,
+      "surface": "אֱלֹהִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ki"
+        },
+        "evidence": "In וַיַּרְא אֱלֹהִים כִּי טוֹב, “God saw that it was good,” כִּי introduces the content of what God saw.",
+        "gloss": "that",
+        "language": "he",
+        "lemma": "כִּי",
+        "morphology": "Uninflected subordinating conjunction without prefix or suffix.",
+        "qualifier": "conjunction",
+        "root": "כי",
+        "sense": "that (what is seen, known or said)"
+      },
+      "position": 10,
+      "surface": "כִּי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "tov"
+        },
+        "evidence": "After God names the dry land and the seas, וַיַּרְא אֱלֹהִים כִּי טוֹב means “God saw that it was good.” טוֹב expresses God’s judgment of what he saw.",
+        "gloss": "good",
+        "language": "he",
+        "lemma": "טוֹב",
+        "morphology": "Predicative adjective, masculine singular absolute, with no prefix or suffix.",
+        "qualifier": "adjective",
+        "root": "טוב",
+        "sense": "good (of God’s works at creation)"
+      },
+      "position": 11,
+      "surface": "טוֹב"
+    }
+  ]
+}

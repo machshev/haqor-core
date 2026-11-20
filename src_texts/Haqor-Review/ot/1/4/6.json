@@ -1,0 +1,179 @@
+{
+  "book": 1,
+  "chapter": 4,
+  "source": "ot",
+  "verse": 6,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "amar"
+        },
+        "evidence": "יַהְוֶה is the speaker, אֶל קָיִן identifies Cain as the addressee, and the two לָמָּה questions give the words spoken.",
+        "gloss": "and he said",
+        "language": "he",
+        "lemma": "אָמַר",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ־",
+        "qualifier": "",
+        "root": "אמר",
+        "sense": "say, introducing direct speech"
+      },
+      "position": 0,
+      "surface": "וַיֹּאמֶר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yahweh"
+        },
+        "evidence": "In וַיֹּאמֶר יַהְוֶה אֶל קָיִן, יַהְוֶה names the speaker, and אֶל קָיִן identifies Cain as the person he addresses.",
+        "gloss": "Yahweh",
+        "language": "he",
+        "lemma": "יַהְוֶה",
+        "morphology": "Proper noun, masculine singular, without prefix or suffix",
+        "qualifier": "",
+        "root": "הוה",
+        "sense": "Personal name of the God of Israel"
+      },
+      "position": 1,
+      "surface": "יַהְוֶה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "In וַיֹּאמֶר יַהְוֶה אֶל קָיִן, “YHWH said to Cain,” אֶל introduces Cain as the addressee of the questions that follow.",
+        "gloss": "to",
+        "language": "he",
+        "lemma": "אֶל",
+        "morphology": "Preposition without prefix or suffix.",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "to (a person: speaking, sending, bringing)"
+      },
+      "position": 2,
+      "surface": "אֶל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "cain",
+            "base": null,
+            "change": "Add a personal-name article for Cain. Its proposed root link requires a companion article for קינ, which is absent from the local lexicon.",
+            "definition": "Cain, the son of Adam and Eve and brother of Abel.",
+            "evidence": "Genesis 4:1 names Eve’s son קַיִן. Genesis 4:2 identifies Abel as his brother and names Cain again when describing his work."
+          }
+        },
+        "evidence": "In וַיֹּאמֶר יַהְוֶה אֶל קָיִן, the preposition אֶל introduces Cain as the person YHWH addresses. The masculine singular forms לָךְ and פָנֶיךָ refer to him in the questions that follow.",
+        "gloss": "Cain",
+        "language": "he",
+        "lemma": "קַיִן",
+        "morphology": "Masculine singular personal name in the pausal form קָיִן, without prefix or suffix.",
+        "qualifier": "",
+        "root": "קינ",
+        "sense": "The personal name of Abel’s brother."
+      },
+      "position": 3,
+      "surface": "קָיִן"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "mah",
+            "base": "f85cb8318776fca83f5afc393c2265ab6e8ce3987a85da46bfa01e5efbd30297",
+            "change": "Add Genesis 4:6 as evidence for the existing Hebrew sense “why? for what purpose?”",
+            "definition": "With prefixed לְ, מָה asks for a reason.",
+            "evidence": "In Genesis 4:6, לָמָּה introduces Yahweh’s question about the reason for Cain’s anger."
+          }
+        },
+        "evidence": "In לָמָּה חָרָה לָךְ, Yahweh asks Cain why he is angry. The parallel question וְלָמָּה נָפְלוּ פָנֶיךָ likewise asks the reason for his downcast expression.",
+        "gloss": "why?",
+        "language": "he",
+        "lemma": "מָה",
+        "morphology": "Interrogative pronoun מָה with the prefixed preposition לְ, forming the interrogative adverb לָמָּה.",
+        "qualifier": "",
+        "root": "מה",
+        "sense": "Asks the reason for a state or action."
+      },
+      "position": 4,
+      "surface": "לָמָּה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "charah"
+        },
+        "evidence": "In לָמָּה חָרָה לָךְ, the verb is impersonal. לָךְ identifies Cain as the one who feels the anger, yielding ‘Why have you become angry?’ The parallel question asks why his face has fallen.",
+        "gloss": "have you become angry",
+        "language": "he",
+        "lemma": "חָרָה",
+        "morphology": "Qal perfect, third person masculine singular",
+        "qualifier": "",
+        "root": "חרה",
+        "sense": "to become angry"
+      },
+      "position": 5,
+      "surface": "חָרָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "mah",
+            "base": "f85cb8318776fca83f5afc393c2265ab6e8ce3987a85da46bfa01e5efbd30297",
+            "change": "Add Gen.4.6 as an example of the existing Hebrew ‘why?’ sense.",
+            "definition": "With לְ, מָה asks why something is so or why it happened.",
+            "evidence": "In Gen.4.6 Yahweh asks Cain why his face has fallen."
+          }
+        },
+        "evidence": "In וְלָמָּה נָפְלוּ פָנֶיךָ, ‘and why has your face fallen?’, וְ joins this question to Yahweh’s preceding question about Cain’s anger. The repeated לָמָּה asks Cain to account for his fallen expression.",
+        "gloss": "and why",
+        "language": "he",
+        "lemma": "מָה",
+        "morphology": "Conjunction וְ ‘and’ + preposition לְ ‘for’ + interrogative pronoun מָה ‘what’. Together לָמָּה functions adverbially as ‘why’.",
+        "qualifier": "",
+        "root": "מה",
+        "sense": "With לְ, asks for the reason for a state or event."
+      },
+      "position": 7,
+      "surface": "וְלָמָּה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "naphal"
+        },
+        "evidence": "נָפְלוּ agrees with the plural subject פָנֶיךָ, “your face.” The question “Why has your face fallen?” describes Cain’s downcast expression alongside the preceding question about his anger.",
+        "gloss": "have fallen",
+        "language": "he",
+        "lemma": "נָפַל",
+        "morphology": "Qal perfect, third person common plural",
+        "qualifier": "",
+        "root": "נפל",
+        "sense": "fall (of the face, expressing dejection)"
+      },
+      "position": 8,
+      "surface": "נָפְלוּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "panah"
+        },
+        "evidence": "In וְלָמָּה נָפְלוּ פָנֶיךָ, “and why has your face fallen?”, the plural verb נָפְלוּ agrees with פָנֶיךָ. The suffix addresses Cain, and the parallel question about his anger identifies his fallen face as a visible expression of his mood.",
+        "gloss": "your face",
+        "language": "he",
+        "lemma": "פָּנִים",
+        "morphology": "Common noun of both genders, plural construct with a second-person masculine singular possessive suffix.",
+        "qualifier": "",
+        "root": "פנה",
+        "sense": "countenance, look"
+      },
+      "position": 9,
+      "surface": "פָנֶיךָ"
+    }
+  ]
+}

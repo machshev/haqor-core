@@ -1,0 +1,242 @@
+{
+  "book": 1,
+  "chapter": 6,
+  "source": "ot",
+  "verse": 14,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "asah"
+        },
+        "evidence": "עֲשֵׂה commands Noah to build an ark for himself. The direct object תֵּבַת עֲצֵי גֹפֶר identifies both the structure and its material.",
+        "gloss": "build",
+        "language": "he",
+        "lemma": "עָשָׂה",
+        "morphology": "Qal imperative, second person masculine singular",
+        "qualifier": "",
+        "root": "עשׂה",
+        "sense": "make, bring into being"
+      },
+      "position": 0,
+      "surface": "עֲשֵׂה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "le",
+            "base": "96f836dfd21f3d150d1252488b03345c3c1ecca2101743792946e2c251fb5649",
+            "change": "Add Genesis 6:14 as evidence for the existing Hebrew sense le-dative.",
+            "definition": "לְ identifies the person for whom something is done, including the doer himself.",
+            "evidence": "Genesis 6:14 uses עֲשֵׂה לְךָ, “make for yourself,” with Noah as both maker and beneficiary."
+          }
+        },
+        "evidence": "In עֲשֵׂה לְךָ תֵּבַת עֲצֵי גֹפֶר, the ark is what Noah must make. The suffix ךָ refers to Noah, the person addressed by the imperative עֲשֵׂה, so לְךָ means “for yourself.”",
+        "gloss": "for yourself",
+        "language": "he",
+        "lemma": "לְ",
+        "morphology": "Preposition לְ with the second-person masculine singular pronominal suffix ךָ.",
+        "qualifier": "",
+        "root": "ל",
+        "sense": "Marks the person for whose benefit an action is done."
+      },
+      "position": 1,
+      "surface": "לְךָ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "tevah",
+            "base": null,
+            "change": "Add תֵּבָה under its own consonants תבה. The verse identifies the object as an ark and gives no basis for the supplied gloss “fire” or root תאר.",
+            "definition": "A vessel built to keep its occupants afloat on water.",
+            "evidence": "Genesis 6:14 describes the ark’s wooden construction and pitch coating. Genesis 7:17–18 describes the rising floodwaters lifting it."
+          }
+        },
+        "evidence": "תֵּבַת heads the construct chain תֵּבַת עֲצֵי גֹפֶר, “an ark of gopher wood.” The following instructions refer to the same object as הַתֵּבָה, “the ark,” and specify compartments and a coating of pitch inside and out.",
+        "gloss": "ark",
+        "language": "he",
+        "lemma": "תֵּבָה",
+        "morphology": "Common noun, feminine singular construct, without prefix or pronominal suffix.",
+        "qualifier": "",
+        "root": "תבה",
+        "sense": "A vessel built to keep its occupants afloat on water."
+      },
+      "position": 2,
+      "surface": "תֵּבַת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ets"
+        },
+        "evidence": "In תֵּבַת עֲצֵי גֹפֶר, “an ark of gopher wood,” עֲצֵי names the material from which the ark is to be built, and גֹפֶר specifies the kind of wood.",
+        "gloss": "wood of",
+        "language": "he",
+        "lemma": "עֵץ",
+        "morphology": "Masculine plural construct noun, without prefix or suffix.",
+        "qualifier": "",
+        "root": "עצה",
+        "sense": "wood, timber"
+      },
+      "position": 3,
+      "surface": "עֲצֵי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "gophrith",
+            "base": "48d3c5b909f4410692989d5c96e3ccf832b0d2f2734f4c6db29a5ad2bf9dae78",
+            "change": "Add גֹּפֶר as a distinct Hebrew noun under the consonantal key גפר. Its relationship to גָּפְרִית is uncertain.",
+            "definition": "A kind of wood specified for building the ark. Its species is uncertain.",
+            "evidence": "Genesis 6:14 specifies עֲצֵי גֹפֶר as the material for the ark."
+          }
+        },
+        "evidence": "In תֵּבַת עֲצֵי גֹפֶר, “an ark of gopher wood,” the construct plural עֲצֵי introduces גֹפֶר as the designation of the timber. The verse leaves the species unidentified. The later phrase בַּכֹּפֶר names the pitch applied inside and outside.",
+        "gloss": "gopher wood",
+        "language": "he",
+        "lemma": "גֹּפֶר",
+        "morphology": "Common noun, masculine singular absolute, without prefix or suffix.",
+        "qualifier": "",
+        "root": "גפר",
+        "sense": "wood used to build the ark"
+      },
+      "position": 4,
+      "surface": "גֹפֶר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "qanan",
+            "base": null,
+            "change": "Add the Hebrew noun קֵן under קננ with distinct senses for a bird’s nest and an ark compartment, alongside the related verb for nesting.",
+            "definition": "A nest, or by extension a compartment made within the ark.",
+            "evidence": "Deuteronomy 22:6 identifies a קֵן by the bird brooding over its eggs or young. Genesis 6:14 uses the plural in the instruction to build the ark with compartments."
+          }
+        },
+        "evidence": "In קִנִּים תַּעֲשֶׂה אֶת הַתֵּבָה, אֶת marks the ark as the object of “make.” The fronted plural קִנִּים tells how Noah is to construct it, with separate spaces inside. The singular קֵן denotes a bird’s nest holding eggs or young in Deuteronomy 22:6.",
+        "gloss": "compartments",
+        "language": "he",
+        "lemma": "קֵן",
+        "morphology": "Common noun, masculine plural absolute, with the plural ending ־ִים and no prefix or pronominal suffix.",
+        "qualifier": "",
+        "root": "קננ",
+        "sense": "A compartment within the ark, by extension from a bird’s nest."
+      },
+      "position": 5,
+      "surface": "קִנִּים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "asah"
+        },
+        "evidence": "אֶת־הַתֵּבָה marks the ark as the direct object of תַּעֲשֶׂה. The fronted קִנִּים specifies how Noah is to make it: “You shall make the ark with compartments.”",
+        "gloss": "you shall make",
+        "language": "he",
+        "lemma": "עָשָׂה",
+        "morphology": "Qal imperfect, second masculine singular, with the person prefix תַּ־ and directive force",
+        "qualifier": "",
+        "root": "עשׂה",
+        "sense": "make, bring into being"
+      },
+      "position": 6,
+      "surface": "תַּעֲשֶׂה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "et"
+        },
+        "evidence": "In תַּעֲשֶׂה אֶת הַתֵּבָה, אֶת introduces הַתֵּבָה ‘the ark’ as the definite object of תַּעֲשֶׂה ‘you shall make’.",
+        "gloss": "marks the definite direct object (untranslated)",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Unsuffixed direct-object particle, pointed אֶת.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "(marks the definite object)"
+      },
+      "position": 7,
+      "surface": "אֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "tevah",
+            "base": null,
+            "change": "Add תֵּבָה under its own consonants, תבה, with senses for Noah’s ark and Moses’ basket.",
+            "definition": "An ark or basket made to keep its occupants safe on the water.",
+            "evidence": "Genesis 6:14 describes the construction of Noah’s ark, and Genesis 7:17–18 shows it afloat. Exodus 2:3 uses the same noun for the papyrus basket that holds the infant Moses."
+          }
+        },
+        "evidence": "The verse first introduces the vessel with תֵּבַת עֲצֵי גֹפֶר, “an ark of gopher wood.” The definite article in אֶת הַתֵּבָה identifies that same ark as the object of תַּעֲשֶׂה. Noah is to make it with compartments, and the feminine singular אֹתָהּ refers back to it in the instruction to coat it inside and out with pitch.",
+        "gloss": "the ark",
+        "language": "he",
+        "lemma": "תֵּבָה",
+        "morphology": "Definite article הַ־ prefixed to a feminine singular absolute common noun.",
+        "qualifier": "",
+        "root": "תבה",
+        "sense": "The vessel built to carry Noah, his family, and the animals through the flood."
+      },
+      "position": 8,
+      "surface": "הַתֵּבָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "kaphar"
+        },
+        "evidence": "אֹתָהּ refers to the ark. מִבַּיִת וּמִחוּץ specifies where to coat it, inside and out, and בַּכֹּפֶר names the material, pitch.",
+        "gloss": "and you shall coat",
+        "language": "he",
+        "lemma": "כִּפֶּר",
+        "morphology": "Qal perfect, second person masculine singular, with prefixed וְ. The weqatal continues the instruction.",
+        "qualifier": "",
+        "root": "כפר",
+        "sense": "coat with pitch"
+      },
+      "position": 9,
+      "surface": "וְכָפַרְתָּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chuts"
+        },
+        "evidence": "מִבַּיִת וּמִחוּץ pairs the two surfaces of the ark that Noah is to coat with pitch, first the inside and then the outside.",
+        "gloss": "and on the outside",
+        "language": "he",
+        "lemma": "חוּץ",
+        "morphology": "Conjunction וּ־ “and” + preposition מִ־ (מִן) + masculine singular absolute noun חוּץ, used adverbially.",
+        "qualifier": "",
+        "root": "חוצ",
+        "sense": "the outside (of a thing)"
+      },
+      "position": 12,
+      "surface": "וּמִחוּץ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "kaphar"
+        },
+        "evidence": "וְכָפַרְתָּ אֹתָהּ directs Noah to coat the ark. מִבַּיִת וּמִחוּץ specifies where to apply the coating, inside and outside, and בַּכֹּפֶר names the material used.",
+        "gloss": "with the pitch",
+        "language": "he",
+        "lemma": "כֹּפֶר",
+        "morphology": "Masculine singular noun in the absolute state, prefixed with instrumental בְּ and the definite article הַ, which combine as בַּ־.",
+        "qualifier": "pitch",
+        "root": "כפר",
+        "sense": "pitch, bitumen"
+      },
+      "position": 13,
+      "surface": "בַּכֹּפֶר"
+    }
+  ]
+}

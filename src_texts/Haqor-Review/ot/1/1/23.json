@@ -1,0 +1,141 @@
+{
+  "book": 1,
+  "chapter": 1,
+  "review": {
+    "entities": [],
+    "glosses": [
+      {
+        "gloss": "then there was",
+        "position": 0
+      },
+      {
+        "gloss": "evening",
+        "position": 1
+      },
+      {
+        "gloss": "and there was",
+        "position": 2
+      },
+      {
+        "gloss": "morning",
+        "position": 3
+      },
+      {
+        "gloss": "day",
+        "position": 4
+      },
+      {
+        "gloss": "fifth",
+        "position": 5
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[Then there was|0] [evening|1], [and there was|2] [morning|3], [the|4] [fifth|5] [day|4]."
+  },
+  "source": "ot",
+  "verse": 23,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "hayah"
+        },
+        "evidence": "The subject עֶרֶב follows וַיְהִי, giving “and evening came.” The parallel וַיְהִי בֹקֶר then marks the arrival of morning.",
+        "gloss": "and there came",
+        "language": "he",
+        "lemma": "הָיָה",
+        "morphology": "Qal wayyiqtol, third-person masculine singular, with prefixed וַ־ and no suffix",
+        "qualifier": "",
+        "root": "היה",
+        "sense": "to come to pass"
+      },
+      "position": 0,
+      "surface": "וַיְהִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "erev"
+        },
+        "evidence": "The repeated וַיְהִי pairs עֶרֶב “evening” with בֹקֶר “morning” in the closing formula for the fifth day.",
+        "gloss": "evening",
+        "language": "he",
+        "lemma": "עֶרֶב",
+        "morphology": "Common noun, masculine singular absolute, without prefix or suffix.",
+        "qualifier": "",
+        "root": "ערב",
+        "sense": "evening, sunset"
+      },
+      "position": 1,
+      "surface": "עֶרֶב"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "hayah"
+        },
+        "evidence": "The marked וַיְהִי takes בֹקֶר (‘morning’) as its subject. It parallels וַיְהִי עֶרֶב (‘and there was evening’) and recounts the arrival of morning on the fifth day.",
+        "gloss": "and there was",
+        "language": "he",
+        "lemma": "הָיָה",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ־.",
+        "qualifier": "",
+        "root": "היה",
+        "sense": "to come to pass"
+      },
+      "position": 2,
+      "surface": "וַיְהִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "baqar"
+        },
+        "evidence": "וַיְהִי בֹקֶר (“and there was morning”) parallels וַיְהִי עֶרֶב (“and there was evening”). The paired nouns mark evening and morning on the fifth day.",
+        "gloss": "morning",
+        "language": "he",
+        "lemma": "בֹּקֶר",
+        "morphology": "Common noun, masculine singular absolute, without prefix or suffix.",
+        "qualifier": "",
+        "root": "בקר",
+        "sense": "morning"
+      },
+      "position": 3,
+      "surface": "בֹקֶר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yom"
+        },
+        "evidence": "After the evening-and-morning formula, חֲמִישִׁי (“fifth”) modifies יוֹם and identifies the day as the fifth in the sequence.",
+        "gloss": "day",
+        "language": "he",
+        "lemma": "יוֹם",
+        "morphology": "Common noun, masculine singular absolute, without prefix or suffix.",
+        "qualifier": "",
+        "root": "יומ",
+        "sense": "a day, counted"
+      },
+      "position": 4,
+      "surface": "יוֹם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chamesh"
+        },
+        "evidence": "In יוֹם חֲמִישִׁי, חֲמִישִׁי agrees with the masculine singular noun יוֹם and identifies this day as the fifth in the creation sequence.",
+        "gloss": "fifth",
+        "language": "he",
+        "lemma": "חֲמִישִׁי",
+        "morphology": "Ordinal adjective, masculine singular absolute",
+        "qualifier": "",
+        "root": "חמש",
+        "sense": "fifth (in order)"
+      },
+      "position": 5,
+      "surface": "חֲמִישִׁי"
+    }
+  ]
+}

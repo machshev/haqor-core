@@ -1,0 +1,179 @@
+{
+  "book": 1,
+  "chapter": 5,
+  "review": {
+    "entities": [
+      {
+        "evidence": "Kenan, named as Enosh’s son in Genesis 5:9, is seventy when he fathers Mahalalel here.",
+        "key": "Kenan@Gen.5.9",
+        "position": 1
+      },
+      {
+        "evidence": "Here Mahalalel is Kenan’s son in the pre-Flood genealogy. The Mahalalel of Nehemiah 11:4 is named as Shephatiah’s father.",
+        "key": "Mahalalel@Gen.5.12",
+        "position": 6
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "and he lived",
+        "position": 0
+      },
+      {
+        "gloss": "Kenan",
+        "position": 1
+      },
+      {
+        "gloss": "seventy",
+        "position": 2
+      },
+      {
+        "gloss": "years",
+        "position": 3
+      },
+      {
+        "gloss": "then he fathered",
+        "position": 4
+      },
+      {
+        "gloss": "(untranslated)",
+        "position": 5
+      },
+      {
+        "gloss": "Mahalalel",
+        "position": 6
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[And|0] [Kenan|1] [lived|0] [seventy|2] [years|3], [then he fathered|4] [Mahalalel|6,5]."
+  },
+  "source": "ot",
+  "verse": 12,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chayah"
+        },
+        "evidence": "קֵינָן is the subject, and שִׁבְעִים שָׁנָה gives the duration. Kenan lived seventy years before he fathered Mahalalel.",
+        "gloss": "and he lived",
+        "language": "he",
+        "lemma": "חָיָה",
+        "morphology": "Qal wayyiqtol, third-person masculine singular, with prefixed וַ־ and no suffix.",
+        "qualifier": "",
+        "root": "חיה",
+        "sense": "to live for a stated period"
+      },
+      "position": 0,
+      "surface": "וַיְחִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "kenan",
+            "base": null,
+            "change": "Add a personal-name article for Kenan. Its proposed link under קינ requires a companion root article with the id qayin.",
+            "definition": "Kenan, the son of Enosh in Genesis 5:9.",
+            "evidence": "וַיּוֹלֶד אֶת קֵינָן identifies Kenan as the child Enosh fathered."
+          }
+        },
+        "evidence": "קֵינָן is the subject of וַיְחִי, “he lived,” and remains the subject of וַיּוֹלֶד, “he fathered.” The verse says that Kenan was seventy when he fathered Mahalalel, continuing the genealogy that names Kenan as Enosh’s son in Genesis 5:9.",
+        "gloss": "Kenan",
+        "language": "he",
+        "lemma": "קֵינָן",
+        "morphology": "Masculine singular personal name with no prefix or suffix.",
+        "qualifier": "",
+        "root": "קינ",
+        "sense": "The personal name of the son of Enosh."
+      },
+      "position": 1,
+      "surface": "קֵינָן"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shaba"
+        },
+        "evidence": "In וַיְחִי קֵינָן שִׁבְעִים שָׁנָה, the numeral counts years. Kenan lived seventy years before he fathered Mahalalel.",
+        "gloss": "seventy",
+        "language": "he",
+        "lemma": "שִׁבְעִים",
+        "morphology": "Cardinal numeral, common gender, plural absolute.",
+        "qualifier": "",
+        "root": "שבע",
+        "sense": "seventy"
+      },
+      "position": 2,
+      "surface": "שִׁבְעִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shanah"
+        },
+        "evidence": "In וַיְחִי קֵינָן שִׁבְעִים שָׁנָה, the singular שָׁנָה follows שִׁבְעִים ‘seventy’ and gives Kenan’s age when he fathered Mahalalel.",
+        "gloss": "years",
+        "language": "he",
+        "lemma": "שָׁנָה",
+        "morphology": "Common noun, feminine singular absolute, without prefix or suffix.",
+        "qualifier": "noun",
+        "root": "שנה",
+        "sense": "years of a life, age"
+      },
+      "position": 3,
+      "surface": "שָׁנָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yalad"
+        },
+        "evidence": "Kenan is the subject, and אֶת marks Mahalalel as the direct object. The verse says that Kenan fathered Mahalalel at age seventy.",
+        "gloss": "and he fathered",
+        "language": "he",
+        "lemma": "יָלַד",
+        "morphology": "Hiphil wayyiqtol, third person masculine singular, with prefixed וַ־",
+        "qualifier": "",
+        "root": "ילד",
+        "sense": "beget, father a child"
+      },
+      "position": 4,
+      "surface": "וַיּוֹלֶד"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "et"
+        },
+        "evidence": "In וַיּוֹלֶד אֶת מַהֲלַלְאֵל, אֶת marks the personal name מַהֲלַלְאֵל as the direct object of וַיּוֹלֶד. Kenan fathered Mahalalel.",
+        "gloss": "(untranslated)",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Direct-object particle, unsuffixed and without a prefix.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "(marks the definite object)"
+      },
+      "position": 5,
+      "surface": "אֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "mahalalel"
+        },
+        "evidence": "Kenan is the subject of וַיּוֹלֶד ‘he fathered’, and אֶת marks מַהֲלַלְאֵל as its direct object. The verse thus names Kenan’s son. The source gloss ‘king of Elam’ has no support here.",
+        "gloss": "Mahalalel",
+        "language": "he",
+        "lemma": "מַהֲלַלְאֵל",
+        "morphology": "Masculine singular personal name without prefix or suffix.",
+        "qualifier": "",
+        "root": "הלל",
+        "sense": "Mahalalel, son of Kenan"
+      },
+      "position": 6,
+      "surface": "מַהֲלַלְאֵל"
+    }
+  ]
+}

@@ -1,0 +1,327 @@
+{
+  "book": 1,
+  "chapter": 7,
+  "review": {
+    "entities": [],
+    "glosses": [
+      {
+        "gloss": "and lasted",
+        "position": 0
+      },
+      {
+        "gloss": "the flood",
+        "position": 1
+      },
+      {
+        "gloss": "forty",
+        "position": 2
+      },
+      {
+        "gloss": "days",
+        "position": 3
+      },
+      {
+        "gloss": "on",
+        "position": 4
+      },
+      {
+        "gloss": "the earth",
+        "position": 5
+      },
+      {
+        "gloss": "and increased",
+        "position": 6
+      },
+      {
+        "gloss": "the waters",
+        "position": 7
+      },
+      {
+        "gloss": "and lifted",
+        "position": 8
+      },
+      {
+        "gloss": "(untranslated)",
+        "position": 9
+      },
+      {
+        "gloss": "the ark",
+        "position": 10
+      },
+      {
+        "gloss": "and it rose",
+        "position": 11
+      },
+      {
+        "gloss": "off",
+        "position": 12
+      },
+      {
+        "gloss": "the ground",
+        "position": 13
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[Then|0] [the flood|1] [on|4] [the earth|5] [lasted|0] [forty|2] [days|3], [and|6] [the waters|7] [increased|6] [and lifted|8] [the ark|10,9] [so that it rose|11] [off|12] [the ground|13]."
+  },
+  "source": "ot",
+  "verse": 17,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "hayah"
+        },
+        "evidence": "The verb agrees with its subject הַמַּבּוּל, “the flood.” The duration phrase אַרְבָּעִים יוֹם gives the clause its sense: the flood lasted forty days on the earth.",
+        "gloss": "and lasted",
+        "language": "he",
+        "lemma": "הָיָה",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed narrative וַ־",
+        "qualifier": "",
+        "root": "היה",
+        "sense": "to continue for a period of time"
+      },
+      "position": 0,
+      "surface": "וַיְהִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "mabbul",
+            "base": "576656bfe9c8441182654160615e68bbf3c36547fc5941bce079346d385586dc",
+            "change": "Define the flood itself, add Genesis 7:17 as defining evidence, and retain Psalm 29:10 as an example.",
+            "definition": "An inundation in which waters overwhelm the land.",
+            "evidence": "In Genesis 7:17 the rising waters lift the ark from the ground."
+          }
+        },
+        "evidence": "The flood lasts forty days עַל הָאָרֶץ, “upon the earth.” The next clause describes its effect: the waters increase and lift the ark above the ground.",
+        "gloss": "the flood",
+        "language": "he",
+        "lemma": "מַבּוּל",
+        "morphology": "Definite article הַ־, with doubling of the initial מ, prefixed to a masculine singular absolute noun.",
+        "qualifier": "",
+        "root": "מבול",
+        "sense": "An inundation of the land by water."
+      },
+      "position": 1,
+      "surface": "הַמַּבּוּל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "reva"
+        },
+        "evidence": "In אַרְבָּעִים יוֹם, אַרְבָּעִים gives the number forty and יוֹם supplies the unit of time. The flood lasted forty days.",
+        "gloss": "forty",
+        "language": "he",
+        "lemma": "אַרְבָּעִים",
+        "morphology": "Cardinal numeral, common gender, plural absolute, with no prefix or pronominal suffix.",
+        "qualifier": "",
+        "root": "רבע",
+        "sense": "forty"
+      },
+      "position": 2,
+      "surface": "אַרְבָּעִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yom"
+        },
+        "evidence": "In אַרְבָּעִים יוֹם, “forty days,” the numeral אַרְבָּעִים counts days to express the duration of the flood. Hebrew uses the singular noun יוֹם here.",
+        "gloss": "days",
+        "language": "he",
+        "lemma": "יוֹם",
+        "morphology": "Common noun, masculine singular absolute",
+        "qualifier": "",
+        "root": "יומ",
+        "sense": "a day, counted"
+      },
+      "position": 3,
+      "surface": "יוֹם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "alah"
+        },
+        "evidence": "עַל הָאָרֶץ means “on the earth” and tells where the flood lasted forty days.",
+        "gloss": "on",
+        "language": "he",
+        "lemma": "עַל",
+        "morphology": "Preposition without prefix or suffix",
+        "qualifier": "",
+        "root": "עלה",
+        "sense": "on, upon, over"
+      },
+      "position": 4,
+      "surface": "עַל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "erets"
+        },
+        "evidence": "In וַיְהִי הַמַּבּוּל אַרְבָּעִים יוֹם עַל הָאָרֶץ, the phrase עַל הָאָרֶץ identifies the earth as the place where the flood lasted forty days.",
+        "gloss": "the earth",
+        "language": "he",
+        "lemma": "אֶרֶץ",
+        "morphology": "Common noun, common gender, singular absolute, with prefixed definite article הָ־.",
+        "qualifier": "",
+        "root": "ארצ",
+        "sense": "earth"
+      },
+      "position": 5,
+      "surface": "הָאָרֶץ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "rabah"
+        },
+        "evidence": "הַמַּיִם is the subject of וַיִּרְבּוּ and agrees with its plural form. The next clause says that the waters lifted the ark, showing that the floodwater increased in volume.",
+        "gloss": "and [the waters] increased",
+        "language": "he",
+        "lemma": "רָבָה",
+        "morphology": "Qal wayyiqtol, third person masculine plural, with prefixed וַ־",
+        "qualifier": "",
+        "root": "רבה",
+        "sense": "increase in amount"
+      },
+      "position": 6,
+      "surface": "וַיִּרְבּוּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "mayim",
+            "base": "7a095b6c2624f5e1fa2f45c8ad0c8fa7eebb4e609589e4db6aa40b3f9ca131e1",
+            "change": "Extend the existing floodwater citation to begin at Genesis 7:17 and identify the action that establishes the sense.",
+            "definition": "מַיִם denotes a body or flow of water, here the floodwaters that lift the ark.",
+            "evidence": "Genesis 7:17 identifies the waters by their action: they increase and lift the ark above the ground."
+          }
+        },
+        "evidence": "In Genesis 7:17, הַמַּיִם is the subject of וַיִּרְבּוּ, “they increased,” and remains the subject of וַיִּשְׂאוּ אֶת הַתֵּבָה, “they lifted the ark.” The waters of the flood increased until they lifted the ark above the ground.",
+        "gloss": "the floodwaters",
+        "language": "he",
+        "lemma": "מַיִם",
+        "morphology": "Masculine plural noun in the absolute state, with the prefixed definite article הַ־ and consequent doubling of מ.",
+        "qualifier": "",
+        "root": "מימ",
+        "sense": "a body or flow of water"
+      },
+      "position": 7,
+      "surface": "הַמַּיִם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "nasa-lift"
+        },
+        "evidence": "הַמַּיִם (the waters) is the plural subject, and אֶת־הַתֵּבָה marks the ark as the direct object. The next clause, וַתָּרָם מֵעַל הָאָרֶץ (and it rose above the ground), confirms that the waters lifted the ark.",
+        "gloss": "and they lifted",
+        "language": "he",
+        "lemma": "נָשָׂא",
+        "morphology": "Qal wayyiqtol, third person masculine plural, with prefixed וַ־.",
+        "qualifier": "",
+        "root": "נשׂא",
+        "sense": "lift or raise something physically"
+      },
+      "position": 8,
+      "surface": "וַיִּשְׂאוּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "et"
+        },
+        "evidence": "In וַיִּשְׂאוּ אֶת הַתֵּבָה, “they lifted the ark,” the subject is הַמַּיִם, “the waters.” אֶת marks הַתֵּבָה, “the ark,” as the definite direct object of וַיִּשְׂאוּ.",
+        "gloss": "(untranslated)",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Direct-object particle without prefix or suffix.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "(marks the definite object)"
+      },
+      "position": 9,
+      "surface": "אֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "tevah",
+            "base": null,
+            "change": "Add the feminine noun תֵּבָה under its own consonants תבה. The supplied gentilic gloss and root תאר do not fit the object lifted by the waters.",
+            "definition": "A watertight container that holds people or animals on the water. In Genesis 7:17 it is Noah’s ark.",
+            "evidence": "Genesis 6:14 describes the ark’s timber construction and pitch coating. Genesis 7:17 shows the floodwaters lifting it."
+          }
+        },
+        "evidence": "אֶת marks הַתֵּבָה as the object of וַיִּשְׂאוּ. The rising waters lifted the ark. The feminine singular וַתָּרָם then agrees with תֵּבָה and describes the ark rising above the ground.",
+        "gloss": "the ark",
+        "language": "he",
+        "lemma": "תֵּבָה",
+        "morphology": "Definite article הַ־ prefixed to a feminine singular absolute common noun.",
+        "qualifier": "",
+        "root": "תבה",
+        "sense": "The ark that carried Noah, his household, and the animals through the flood."
+      },
+      "position": 10,
+      "surface": "הַתֵּבָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "rum"
+        },
+        "evidence": "The waters lift the ark in וַיִּשְׂאוּ אֶת הַתֵּבָה. The feminine singular וַתָּרָם then takes הַתֵּבָה as its subject, and מֵעַל הָאָרֶץ describes the ark rising above the ground.",
+        "gloss": "and it rose",
+        "language": "he",
+        "lemma": "רוּם",
+        "morphology": "Qal wayyiqtol, third person feminine singular, with prefixed וַ־.",
+        "qualifier": "",
+        "root": "רומ",
+        "sense": "rise"
+      },
+      "position": 11,
+      "surface": "וַתָּרָם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "alah"
+        },
+        "evidence": "The waters lift the ark, and וַתָּרָם מֵעַל הָאָרֶץ means “it rose off the ground.” עַל marks the ground as the supporting surface, and מֵ־ marks movement away from it.",
+        "gloss": "off",
+        "language": "he",
+        "lemma": "עַל",
+        "morphology": "Preposition עַל with prefixed מֵ־ (מִן, “from”), governing הָאָרֶץ.",
+        "qualifier": "",
+        "root": "עלה",
+        "sense": "on, upon, over"
+      },
+      "position": 12,
+      "surface": "מֵעַל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "erets"
+        },
+        "evidence": "The waters lift the ark, and וַתָּרָם מֵעַל הָאָרֶץ says that it rose above the ground. The ground is the surface from which the ark was lifted.",
+        "gloss": "the ground",
+        "language": "he",
+        "lemma": "אֶרֶץ",
+        "morphology": "Definite article הָ־ prefixed to a common noun, singular absolute, of common gender.",
+        "qualifier": "",
+        "root": "ארצ",
+        "sense": "ground, surface"
+      },
+      "position": 13,
+      "surface": "הָאָרֶץ"
+    }
+  ]
+}

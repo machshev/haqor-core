@@ -1,0 +1,274 @@
+{
+  "book": 1,
+  "chapter": 3,
+  "review": {
+    "entities": [
+      {
+        "evidence": "Yahweh is the personal name in ‘Yahweh God.’ The God who brought the woman to the man in Genesis 2:22 now sends the man out of the garden.",
+        "key": "Yahweh@Gen.2.22",
+        "new": {
+          "description": "The God of Israel, who built the rib taken from the man into a woman and brought her to the man.",
+          "kind": "person",
+          "name": "Yahweh"
+        },
+        "position": 1
+      },
+      {
+        "evidence": "The man leaves the garden that Yahweh God planted in Eden in Genesis 2:8. The source tag identifies the same place.",
+        "key": "Eden@Gen.2.8",
+        "position": 4
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "so he sent him away",
+        "position": 0
+      },
+      {
+        "gloss": "Yahweh",
+        "position": 1
+      },
+      {
+        "gloss": "God",
+        "position": 2
+      },
+      {
+        "gloss": "out of the Garden of",
+        "position": 3
+      },
+      {
+        "gloss": "Eden",
+        "position": 4
+      },
+      {
+        "gloss": "to work",
+        "position": 5
+      },
+      {
+        "gloss": "(direct-object marker)",
+        "position": 6
+      },
+      {
+        "gloss": "the ground",
+        "position": 7
+      },
+      {
+        "gloss": "which",
+        "position": 8
+      },
+      {
+        "gloss": "he had been taken",
+        "position": 9
+      },
+      {
+        "gloss": "from there",
+        "position": 10
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[So|0] [Yahweh|1] [God|2] [sent him|0] [out of the Garden of|3] [Eden|4] [to work|5] [the ground|7,6] [from|10] [which|8] [he had been taken|9]."
+  },
+  "source": "ot",
+  "verse": 23,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shalach"
+        },
+        "evidence": "יַהְוֶה אֱלֹהִים is the subject, and ־הוּ refers to the man. מִגַּן עֵדֶן identifies the place from which God sent him away, and לַעֲבֹד אֶת הָאֲדָמָה gives the purpose, to work the ground.",
+        "gloss": "and he sent him away",
+        "language": "he",
+        "lemma": "שָׁלַח",
+        "morphology": "Piel wayyiqtol, third masculine singular, with prefixed וַ־ and third masculine singular object suffix ־הוּ.",
+        "qualifier": "",
+        "root": "שלח",
+        "sense": "send away"
+      },
+      "position": 0,
+      "surface": "וַיְשַׁלְּחֵהוּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yahweh"
+        },
+        "evidence": "In יַהְוֶה אֱלֹהִים, יַהְוֶה names the subject of וַיְשַׁלְּחֵהוּ (“he sent him away”). Yahweh God sends the man out of the garden of Eden.",
+        "gloss": "Yahweh",
+        "language": "he",
+        "lemma": "יַהְוֶה",
+        "morphology": "Proper noun, singular, without prefix or suffix",
+        "qualifier": "",
+        "root": "הוה",
+        "sense": "Personal name of the God of Israel"
+      },
+      "position": 1,
+      "surface": "יַהְוֶה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "אֱלֹהִים stands in apposition to יַהְוֶה. The singular verb וַיְשַׁלְּחֵהוּ (“he sent him away”) identifies YHWH God as the one who sent the man out of the garden.",
+        "gloss": "God",
+        "language": "he",
+        "lemma": "אֱלֹהִים",
+        "morphology": "Common noun, masculine plural absolute, singular in reference.",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "the Mighty One, God"
+      },
+      "position": 2,
+      "surface": "אֱלֹהִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ganan"
+        },
+        "evidence": "מִגַּן עֵדֶן identifies the place from which God sent him away. The preposition marks the point of departure, and עֵדֶן completes the construct phrase ‘the garden of Eden’.",
+        "gloss": "from the garden of",
+        "language": "he",
+        "lemma": "גַּן",
+        "morphology": "Singular construct noun of common gender with prefixed מִן ‘from’. The נ assimilates to the following ג, marked by dagesh.",
+        "qualifier": "",
+        "root": "גננ",
+        "sense": "garden"
+      },
+      "position": 3,
+      "surface": "מִגַּן"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "eden",
+            "base": "0073ee93365c2a8b78250ac250b810c65257463dee47801a0e7571bda8592234",
+            "change": "Add a place-name word for עֵדֶן alongside the identically pointed noun meaning delight.",
+            "definition": "Eden is the place where Yahweh God planted a garden.",
+            "evidence": "Genesis 2:8 locates the garden with the phrase גַּן בְּעֵדֶן, “a garden in Eden.”"
+          }
+        },
+        "evidence": "Yahweh God sends the man מִגַּן עֵדֶן, “from the garden of Eden.” The preposition מִן is attached to גַּן, and עֵדֶן names the place associated with the garden.",
+        "gloss": "Eden",
+        "language": "he",
+        "lemma": "עֵדֶן",
+        "morphology": "Proper noun, singular, absolute, without prefix or suffix. It completes the construct phrase מִגַּן עֵדֶן.",
+        "qualifier": "place name",
+        "root": "עדנ",
+        "sense": "Eden, the place where Yahweh God planted a garden."
+      },
+      "position": 4,
+      "surface": "עֵדֶן"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "abad"
+        },
+        "evidence": "אֶת marks הָאֲדָמָה (“the ground”) as the direct object of לַעֲבֹד. The phrase gives the purpose for which God sent the man out of Eden: to till the ground from which he was taken.",
+        "gloss": "to till",
+        "language": "he",
+        "lemma": "עָבַד",
+        "morphology": "Qal infinitive construct with prefixed לַ־ expressing purpose",
+        "qualifier": "",
+        "root": "עבד",
+        "sense": "work the soil, cultivate"
+      },
+      "position": 5,
+      "surface": "לַעֲבֹד"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "et"
+        },
+        "evidence": "In לַעֲבֹד אֶת הָאֲדָמָה, “to till the ground,” אֶת marks the definite noun הָאֲדָמָה as the direct object of לַעֲבֹד.",
+        "gloss": "(untranslated)",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Direct-object particle without prefix or suffix.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "(marks the definite object)"
+      },
+      "position": 6,
+      "surface": "אֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "adam"
+        },
+        "evidence": "In לַעֲבֹד אֶת הָאֲדָמָה, אֶת marks the ground as the direct object of לַעֲבֹד, “to till.” The relative clause אֲשֶׁר לֻקַּח מִשָּׁם identifies it as the ground from which the man was taken.",
+        "gloss": "the ground",
+        "language": "he",
+        "lemma": "אֲדָמָה",
+        "morphology": "Feminine singular absolute noun with prefixed definite article הָ־.",
+        "qualifier": "",
+        "root": "אדמ",
+        "sense": "the ground that is tilled; soil"
+      },
+      "position": 7,
+      "surface": "הָאֲדָמָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ashar"
+        },
+        "evidence": "אֲשֶׁר introduces a relative clause modifying הָאֲדָמָה ‘the ground’. מִשָּׁם ‘from there’ refers back to the ground, giving ‘the ground from which he was taken’.",
+        "gloss": "which",
+        "language": "he",
+        "lemma": "אֲשֶׁר",
+        "morphology": "Indeclinable relative particle without prefix or suffix.",
+        "qualifier": "",
+        "root": "אשר",
+        "sense": "who, which, that"
+      },
+      "position": 8,
+      "surface": "אֲשֶׁר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "laqach"
+        },
+        "evidence": "In אֲשֶׁר לֻקַּח מִשָּׁם, the man is the subject of the passive verb. מִשָּׁם means “from there” and refers back to הָאֲדָמָה, the ground from which he was taken.",
+        "gloss": "he was taken",
+        "language": "he",
+        "lemma": "לָקַח",
+        "morphology": "Pual perfect, third person masculine singular",
+        "qualifier": "",
+        "root": "לקח",
+        "sense": "be taken from a source"
+      },
+      "position": 9,
+      "surface": "לֻקַּח"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "shem",
+            "base": "5ff57a119255ca3775ba1c5592f6cd00e22ec622fafccd6afc08384d01b566fe",
+            "change": "Add Genesis 3:23 to the existing locative sense of שָׁם in shem and explain the contribution of מִן.",
+            "definition": "שָׁם points to a place identified in context. With מִן it identifies the place from which someone or something is taken.",
+            "evidence": "In Genesis 3:23 the man is sent to work the ground. The relative clause אֲשֶׁר לֻקַּח מִשָּׁם identifies it as the ground from which he was taken."
+          }
+        },
+        "evidence": "In הָאֲדָמָה אֲשֶׁר לֻקַּח מִשָּׁם, ‘the ground from which he was taken’, שָׁם refers back to הָאֲדָמָה. The prefix מִן marks that ground as the source.",
+        "gloss": "from there",
+        "language": "he",
+        "lemma": "שָׁם",
+        "morphology": "Prefix מִן ‘from’ + locative adverb שָׁם ‘there’. The נ assimilates to the following שׁ, marked by the dagesh in מִשָּׁם.",
+        "qualifier": "",
+        "root": "שמ",
+        "sense": "there, referring back to the ground"
+      },
+      "position": 10,
+      "surface": "מִשָּׁם"
+    }
+  ]
+}

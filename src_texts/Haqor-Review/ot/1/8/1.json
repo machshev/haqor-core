@@ -1,0 +1,367 @@
+{
+  "book": 1,
+  "chapter": 8,
+  "source": "ot",
+  "verse": 1,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "zakar"
+        },
+        "evidence": "אֱלֹהִים is the subject. The repeated object marker אֵת identifies whom God remembered: Noah and the animals with him in the ark. God then sends a wind, and the waters subside.",
+        "gloss": "and he remembered",
+        "language": "he",
+        "lemma": "זָכַר",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ־",
+        "qualifier": "",
+        "root": "זכר",
+        "sense": "remember, call to mind"
+      },
+      "position": 0,
+      "surface": "וַיִּזְכֹּר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "אֱלֹהִים is the subject of וַיִּזְכֹּר, “he remembered.” The masculine singular verb identifies God as the one who remembered Noah and the animals with him in the ark.",
+        "gloss": "God",
+        "language": "he",
+        "lemma": "אֱלֹהִים",
+        "morphology": "Common noun, masculine plural absolute, with singular reference.",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "the Mighty One, God"
+      },
+      "position": 1,
+      "surface": "אֱלֹהִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "et"
+        },
+        "evidence": "In וַיִּזְכֹּר אֱלֹהִים אֶת נֹחַ, “God remembered Noah,” אֶת marks the proper name נֹחַ as the direct object of וַיִּזְכֹּר. The repeated וְאֵת and וְאֶת introduce the other objects of the same verb.",
+        "gloss": "(untranslated)",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Direct-object particle without prefix or suffix.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "(marks the definite object)"
+      },
+      "position": 2,
+      "surface": "אֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "noah-son-of-lamech",
+            "base": null,
+            "change": "Add a personal-name article for נֹחַ linked to the root article nuach.",
+            "definition": "Noah, the son whom Lamech names in hope of relief from toil.",
+            "evidence": "Genesis 5:29 gives the name נֹחַ and explains it through the wordplay on יְנַחֲמֵנוּ, “he will comfort us.”"
+          }
+        },
+        "evidence": "In וַיִּזְכֹּר אֱלֹהִים אֶת נֹחַ, “God remembered Noah,” אֶת marks Noah as the direct object. The verse also names the animals with him in the ark, identifying him as the Noah of the flood narrative.",
+        "gloss": "Noah",
+        "language": "he",
+        "lemma": "נֹחַ",
+        "morphology": "Masculine singular personal name with no prefix or suffix.",
+        "qualifier": "",
+        "root": "נוח",
+        "sense": "Noah, son of Lamech"
+      },
+      "position": 3,
+      "surface": "נֹחַ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "et",
+            "base": "31c9a635be8bba9a67417e75ea7122e240ae707e04a841533a59ecd2869d0f80",
+            "change": "Add Genesis 8:1 as evidence for the existing definite-object sense in et.",
+            "definition": "Introduces a definite direct object, including a further object coordinated with one already named.",
+            "evidence": "Genesis 8:1 repeats the marker before each object of “remembered”. At the marked occurrence it introduces כָּל הַחַיָּה."
+          }
+        },
+        "evidence": "In וַיִּזְכֹּר אֱלֹהִים אֶת נֹחַ וְאֵת כָּל הַחַיָּה, God remembered both Noah and all the wild animals. The prefix וְ־ coordinates the second object with Noah, and אֵת marks כָּל הַחַיָּה as a further definite object of וַיִּזְכֹּר. The same construction recurs before כָּל הַבְּהֵמָה.",
+        "gloss": "and [direct-object marker]",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Prefixed coordinating conjunction וְ־ “and” + unsuffixed definite direct-object marker אֵת.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "Marks a definite direct object."
+      },
+      "position": 4,
+      "surface": "וְאֵת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "kalal"
+        },
+        "evidence": "In וְאֵת כָּל הַחַיָּה, כָּל modifies the definite collective noun הַחַיָּה. God remembered all the wild animals with Noah in the ark, alongside the livestock named in the parallel phrase וְאֶת כָּל הַבְּהֵמָה.",
+        "gloss": "all",
+        "language": "he",
+        "lemma": "כֹּל",
+        "morphology": "Masculine singular construct noun, without prefix or suffix.",
+        "qualifier": "",
+        "root": "כלל",
+        "sense": "all, the whole"
+      },
+      "position": 5,
+      "surface": "כָּל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chayah"
+        },
+        "evidence": "The verse pairs כָּל הַחַיָּה, “all the wild animals,” with כָּל הַבְּהֵמָה, “all the livestock,” naming two groups aboard the ark with Noah.",
+        "gloss": "wild animals",
+        "language": "he",
+        "lemma": "חַיָּה",
+        "morphology": "Definite article הַ־ prefixed to a feminine singular absolute noun, used collectively.",
+        "qualifier": "animal",
+        "root": "חיה",
+        "sense": "wild beast, beast of the field"
+      },
+      "position": 6,
+      "surface": "הַחַיָּה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "et",
+            "base": "31c9a635be8bba9a67417e75ea7122e240ae707e04a841533a59ecd2869d0f80",
+            "change": "Add Genesis 8:1 as an example of the existing definite-object sense.",
+            "definition": "Introduces a definite noun phrase as the direct object of a verb.",
+            "evidence": "Genesis 8:1 repeats אֵת before each of the three objects of “remembered.” Its third occurrence introduces all the livestock."
+          }
+        },
+        "evidence": "In Genesis 8:1, וְאֶת introduces כָּל הַבְּהֵמָה, “all the livestock,” as the third object of וַיִּזְכֹּר, “he remembered.” The repeated particle marks each object in turn, and the prefixed וְ joins the livestock to the list.",
+        "gloss": "and [direct-object marker]",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Conjunction וְ prefixed to the unsuffixed direct-object particle אֶת.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "Marks a definite direct object."
+      },
+      "position": 7,
+      "surface": "וְאֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "kalal"
+        },
+        "evidence": "In וְאֶת כָּל הַבְּהֵמָה, כָּל stands in construct with the definite collective noun הַבְּהֵמָה. God remembered all the livestock with Noah in the ark, in parallel with כָּל הַחַיָּה, “all the wild animals.”",
+        "gloss": "all",
+        "language": "he",
+        "lemma": "כֹּל",
+        "morphology": "Masculine singular noun in the construct state, without prefix or suffix.",
+        "qualifier": "",
+        "root": "כלל",
+        "sense": "all, the whole"
+      },
+      "position": 8,
+      "surface": "כָּל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "behemah"
+        },
+        "evidence": "The verse lists כָּל הַחַיָּה and כָּל הַבְּהֵמָה as distinct groups with Noah in the ark. Paired with the wild animals, הַבְּהֵמָה denotes the livestock collectively.",
+        "gloss": "livestock",
+        "language": "he",
+        "lemma": "בְּהֵמָה",
+        "morphology": "Definite article הַ־ prefixed to a feminine singular absolute common noun used collectively.",
+        "qualifier": "",
+        "root": "בהמ",
+        "sense": "livestock, cattle; tame beast"
+      },
+      "position": 9,
+      "surface": "הַבְּהֵמָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ashar"
+        },
+        "evidence": "אֲשֶׁר introduces the relative clause אֲשֶׁר אִתּוֹ בַּתֵּבָה, “that were with him in the ark,” describing the animals mentioned immediately before it.",
+        "gloss": "that",
+        "language": "he",
+        "lemma": "אֲשֶׁר",
+        "morphology": "Uninflected relative particle without prefix or suffix.",
+        "qualifier": "",
+        "root": "אשר",
+        "sense": "who, which, that"
+      },
+      "position": 10,
+      "surface": "אֲשֶׁר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "tevah",
+            "base": null,
+            "change": "Add תֵּבָה under its own consonants, תבה. The verse gives no basis for assigning the noun to תאר.",
+            "definition": "A container made to keep its occupants safe on water. In Genesis it is Noah’s ark.",
+            "evidence": "Genesis 7:17–18 describes the waters lifting the ark, and Genesis 8:1 places the animals inside it with Noah. Exodus 2:3 uses the same noun for the papyrus basket in which Moses’ mother placed him."
+          }
+        },
+        "evidence": "אֲשֶׁר אִתּוֹ בַּתֵּבָה means ‘that were with him in the ark.’ The suffix on אִתּוֹ refers to Noah, and בַּתֵּבָה identifies where the animals were with him.",
+        "gloss": "in the ark",
+        "language": "he",
+        "lemma": "תֵּבָה",
+        "morphology": "Common noun, feminine singular absolute, with prefixed בְּ ‘in’ and the definite article הַ־, together realized as בַּ־ with doubling of the following ת.",
+        "qualifier": "",
+        "root": "תבה",
+        "sense": "The ark that carried Noah and the animals on the floodwaters."
+      },
+      "position": 12,
+      "surface": "בַּתֵּבָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "avar"
+        },
+        "evidence": "אֱלֹהִים is the subject, רוּחַ is the wind that God causes to move, and עַל הָאָרֶץ specifies its path over the earth.",
+        "gloss": "and he made a wind pass over",
+        "language": "he",
+        "lemma": "עָבַר",
+        "morphology": "Hiphil wayyiqtol, third-person masculine singular, with prefixed וַ־",
+        "qualifier": "",
+        "root": "עבר",
+        "sense": "cause to pass over"
+      },
+      "position": 13,
+      "surface": "וַיַּעֲבֵר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "אֱלֹהִים is the subject of the singular verb וַיַּעֲבֵר. The same God who remembered Noah now caused a wind to pass over the earth.",
+        "gloss": "God",
+        "language": "he",
+        "lemma": "אֱלֹהִים",
+        "morphology": "Masculine plural noun in the absolute state, with singular verbal agreement.",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "the Mighty One, God"
+      },
+      "position": 14,
+      "surface": "אֱלֹהִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ruach"
+        },
+        "evidence": "רוּחַ is the object of וַיַּעֲבֵר. God caused a wind to pass over the earth (עַל הָאָרֶץ), and the waters subsided (וַיָּשֹׁכּוּ הַמָּיִם).",
+        "gloss": "a wind",
+        "language": "he",
+        "lemma": "רוּחַ",
+        "morphology": "Common noun of common gender, singular absolute, without prefix or suffix.",
+        "qualifier": "",
+        "root": "רוח",
+        "sense": "wind"
+      },
+      "position": 15,
+      "surface": "רוּחַ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "alah"
+        },
+        "evidence": "In וַיַּעֲבֵר אֱלֹהִים רוּחַ עַל הָאָרֶץ, God causes a wind to pass over the earth. The phrase עַל הָאָרֶץ describes the wind’s path.",
+        "gloss": "over",
+        "language": "he",
+        "lemma": "עַל",
+        "morphology": "Preposition without prefix or suffix.",
+        "qualifier": "",
+        "root": "עלה",
+        "sense": "on, upon, over"
+      },
+      "position": 16,
+      "surface": "עַל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "erets"
+        },
+        "evidence": "In רוּחַ עַל הָאָרֶץ, the earth is the expanse over which God sends the wind as the floodwaters subside.",
+        "gloss": "the earth",
+        "language": "he",
+        "lemma": "אֶרֶץ",
+        "morphology": "Definite article הָ־ prefixed to a singular absolute common noun of common gender.",
+        "qualifier": "",
+        "root": "ארצ",
+        "sense": "earth"
+      },
+      "position": 17,
+      "surface": "הָאָרֶץ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "shakak",
+            "base": null,
+            "change": "Add the Hebrew verb שָׁכַךְ with its intransitive Qal sense in Gen.8.1.",
+            "definition": "Of floodwaters, to subside.",
+            "evidence": "In Gen.8.1, וַיָּשֹׁכּוּ הַמָּיִם means “and the waters subsided” after God sent a wind over the earth."
+          }
+        },
+        "evidence": "The plural subject הַמָּיִם follows וַיָּשֹׁכּוּ. After God causes a wind to pass over the earth, the verse reports what the waters do: they subside.",
+        "gloss": "and they subsided",
+        "language": "he",
+        "lemma": "שָׁכַךְ",
+        "morphology": "Qal wayyiqtol, third masculine plural, with prefixed וַ־ and plural ending ־וּ.",
+        "qualifier": "",
+        "root": "שככ",
+        "sense": "Of floodwaters, to subside."
+      },
+      "position": 18,
+      "surface": "וַיָּשֹׁכּוּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "mayim",
+            "base": "7a095b6c2624f5e1fa2f45c8ad0c8fa7eebb4e609589e4db6aa40b3f9ca131e1",
+            "change": "Add Genesis 8:1 as evidence for the existing sense “a body or flow of water.”",
+            "definition": "Here מַיִם denotes the floodwaters covering the land.",
+            "evidence": "Genesis 8:1 describes the same waters that rose in Genesis 7:18–20, now subsiding as a wind passes over the earth."
+          }
+        },
+        "evidence": "After God sends a wind over the earth, וַיָּשֹׁכּוּ הַמָּיִם says that the waters subsided. The definite noun is the subject of the plural verb and refers to the floodwaters surrounding Noah’s ark.",
+        "gloss": "the floodwaters",
+        "language": "he",
+        "lemma": "מַיִם",
+        "morphology": "Definite article הַ־ with doubling of the initial מ, followed by a masculine plural noun in the absolute state. The verse-final form מָּיִם has pausal lengthening.",
+        "qualifier": "",
+        "root": "מימ",
+        "sense": "a body or flow of water"
+      },
+      "position": 19,
+      "surface": "הַמָּיִם"
+    }
+  ]
+}

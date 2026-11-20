@@ -1,0 +1,82 @@
+{
+  "book": 1,
+  "chapter": 8,
+  "source": "ot",
+  "verse": 18,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yatsa"
+        },
+        "evidence": "וַיֵּצֵא נֹחַ means “and Noah went out.” The singular verb agrees with Noah, and אִתּוֹ (“with him”) identifies his family as accompanying him as he leaves the ark.",
+        "gloss": "and he went out",
+        "language": "he",
+        "lemma": "יָצָא",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ־",
+        "qualifier": "",
+        "root": "יצא",
+        "sense": "go out, depart from a place or someone’s presence"
+      },
+      "position": 0,
+      "surface": "וַיֵּצֵא"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "noah-son-of-lamech",
+            "base": null,
+            "change": "Add a personal-name article for נֹחַ linked to the root article nuach.",
+            "definition": "Noah, the son whom Lamech names in hope of relief from toil.",
+            "evidence": "Genesis 5:29 gives the name נֹחַ and explains it through the wordplay on יְנַחֲמֵנוּ, “he will comfort us.”"
+          }
+        },
+        "evidence": "וַיֵּצֵא נֹחַ means “Noah went out.” The verse then lists his sons, his wife, and his sons’ wives, and אִתּוֹ (“with him”) refers back to Noah.",
+        "gloss": "Noah",
+        "language": "he",
+        "lemma": "נֹחַ",
+        "morphology": "Masculine singular proper noun without prefix or suffix.",
+        "qualifier": "",
+        "root": "נוח",
+        "sense": "Noah, son of Lamech"
+      },
+      "position": 1,
+      "surface": "נֹחַ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "enosh"
+        },
+        "evidence": "The suffix refers to Noah. The verse lists his sons, his wife, and his sons’ wives (נְשֵׁי בָנָיו), establishing the marital sense.",
+        "gloss": "and his wife",
+        "language": "he",
+        "lemma": "אִשָּׁה",
+        "morphology": "Conjunction וְ plus feminine singular construct noun אִשְׁתּ־ with third-person masculine singular possessive suffix וֹ.",
+        "qualifier": "",
+        "root": "אנש",
+        "sense": "wife"
+      },
+      "position": 3,
+      "surface": "וְאִשְׁתּוֹ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "enosh"
+        },
+        "evidence": "וּנְשֵׁי בָנָיו means ‘and the wives of his sons’. The parallel וְאִשְׁתּוֹ ‘and his wife’ identifies the relationship as marital.",
+        "gloss": "and the wives of",
+        "language": "he",
+        "lemma": "נָשִׁים",
+        "morphology": "Conjunction וּ ‘and’ + נְשֵׁי, feminine plural construct noun.",
+        "qualifier": "",
+        "root": "אנש",
+        "sense": "wives"
+      },
+      "position": 4,
+      "surface": "וּנְשֵׁי"
+    }
+  ]
+}

@@ -1,0 +1,348 @@
+{
+  "book": 1,
+  "chapter": 3,
+  "review": {
+    "entities": [],
+    "glosses": [
+      {
+        "gloss": "then he said",
+        "position": 0
+      },
+      {
+        "gloss": "who",
+        "position": 1
+      },
+      {
+        "gloss": "told",
+        "position": 2
+      },
+      {
+        "gloss": "to you",
+        "position": 3
+      },
+      {
+        "gloss": "that",
+        "position": 4
+      },
+      {
+        "gloss": "naked",
+        "position": 5
+      },
+      {
+        "gloss": "you",
+        "position": 6
+      },
+      {
+        "gloss": "from",
+        "position": 7
+      },
+      {
+        "gloss": "the tree",
+        "position": 8
+      },
+      {
+        "gloss": "that",
+        "position": 9
+      },
+      {
+        "gloss": "I commanded you",
+        "position": 10
+      },
+      {
+        "gloss": "not",
+        "position": 11
+      },
+      {
+        "gloss": "to eat",
+        "position": 12
+      },
+      {
+        "gloss": "from it",
+        "position": 13
+      },
+      {
+        "gloss": "did you eat",
+        "position": 14
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[Then he said|0], “‌[Who|1] [told|2] [you|3] [that|4] [you|6] {were} [naked|5]? [Did you eat|14] [from|7] [the tree|8] [that|9] [I commanded you|10] [not|11] [to eat|12] [from|13]?”"
+  },
+  "source": "ot",
+  "verse": 11,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "amar"
+        },
+        "evidence": "וַיֹּאמֶר introduces two directly quoted questions. The first begins מִי הִגִּיד לְךָ, “Who told you?”",
+        "gloss": "and he said",
+        "language": "he",
+        "lemma": "אָמַר",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ",
+        "qualifier": "",
+        "root": "אמר",
+        "sense": "say, introducing direct speech"
+      },
+      "position": 0,
+      "surface": "וַיֹּאמֶר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "mi"
+        },
+        "evidence": "In מִי הִגִּיד לְךָ כִּי עֵירֹם אָתָּה, “Who told you that you were naked?”, מִי is the subject of הִגִּיד and asks for the identity of the speaker.",
+        "gloss": "who",
+        "language": "he",
+        "lemma": "מִי",
+        "morphology": "Invariable interrogative pronoun, without prefix or suffix.",
+        "qualifier": "",
+        "root": "מי",
+        "sense": "who?"
+      },
+      "position": 1,
+      "surface": "מִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "neged"
+        },
+        "evidence": "In מִי הִגִּיד לְךָ כִּי עֵירֹם אָתָּה, “Who told you that you were naked?”, מִי asks who did the telling, לְךָ identifies the recipient, and כִּי introduces what was told.",
+        "gloss": "told",
+        "language": "he",
+        "lemma": "נָגַד",
+        "morphology": "Hiphil perfect, third person masculine singular, with no attached prefix or suffix.",
+        "qualifier": "",
+        "root": "נגד",
+        "sense": "tell someone that something is the case"
+      },
+      "position": 2,
+      "surface": "הִגִּיד"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "le",
+            "base": "96f836dfd21f3d150d1252488b03345c3c1ecca2101743792946e2c251fb5649",
+            "change": "Add Genesis 3:11 as evidence for the existing Hebrew sense le-to, illustrating a pronominal addressee.",
+            "definition": "With a verb of telling, לְ marks the person who receives the message.",
+            "evidence": "Genesis 3:11 uses לְךָ after הִגִּיד to identify the man as the person told."
+          }
+        },
+        "evidence": "In מִי הִגִּיד לְךָ, “Who told you?”, מִי asks who spoke, לְךָ identifies the hearer, and כִּי עֵירֹם אָתָּה gives the message, “that you are naked.”",
+        "gloss": "to you",
+        "language": "he",
+        "lemma": "לְ",
+        "morphology": "Inseparable preposition לְ with the second-person masculine singular pronominal suffix ךָ.",
+        "qualifier": "",
+        "root": "ל",
+        "sense": "Marks the person to whom something is told."
+      },
+      "position": 3,
+      "surface": "לְךָ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ki"
+        },
+        "evidence": "In מִי הִגִּיד לְךָ כִּי עֵירֹם אָתָּה (“Who told you that you were naked?”), כִּי introduces עֵירֹם אָתָּה as the content of what was told.",
+        "gloss": "that",
+        "language": "he",
+        "lemma": "כִּי",
+        "morphology": "Uninflected subordinating conjunction with no prefix or suffix.",
+        "qualifier": "conjunction",
+        "root": "כי",
+        "sense": "that (what is seen, known or said)"
+      },
+      "position": 4,
+      "surface": "כִּי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ur"
+        },
+        "evidence": "In מִי הִגִּיד לְךָ כִּי עֵירֹם אָתָּה (“Who told you that you were naked?”), עֵירֹם describes the condition of the addressee and agrees with the masculine singular pronoun אָתָּה.",
+        "gloss": "naked",
+        "language": "he",
+        "lemma": "עֵירֹם",
+        "morphology": "Masculine singular absolute adjective used predicatively, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "עור",
+        "sense": "unclothed"
+      },
+      "position": 5,
+      "surface": "עֵירֹם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "atah"
+        },
+        "evidence": "In כִּי עֵירֹם אָתָּה, “that you are naked,” עֵירֹם is the predicate adjective and אָתָּה is its subject. The pronoun refers to the same man addressed by לְךָ, “to you.”",
+        "gloss": "you",
+        "language": "he",
+        "lemma": "אַתָּה",
+        "morphology": "Independent second-person masculine singular pronoun in the pausal form אָתָּה.",
+        "qualifier": "",
+        "root": "אנת",
+        "sense": "you (are): the one addressed named or identified"
+      },
+      "position": 6,
+      "surface": "אָתָּה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "min",
+            "base": "a8ed885685f881ad58d16600265c2176cd484c41c6480205b1d0941d765b8fa6",
+            "change": "Add Genesis 3:11 as an example of the existing min-source sense in the מִן article.",
+            "definition": "מִן marks the source from which something is taken, here the tree from which the food came.",
+            "evidence": "Gen.3.11 places מִן before הָעֵץ and repeats the relation with מִמֶּנּוּ, “from it.”"
+          }
+        },
+        "evidence": "הֲמִן הָעֵץ opens the question answered by the final verb אָכָלְתָּ, “Did you eat from the tree?” Within the intervening command, מִמֶּנּוּ, “from it,” refers back to the same tree.",
+        "gloss": "from",
+        "language": "he",
+        "lemma": "מִן",
+        "morphology": "Interrogative prefix הֲ־ attached to the full preposition מִן, governing הָעֵץ.",
+        "qualifier": "",
+        "root": "מנ",
+        "sense": "Marks the source from which something is taken."
+      },
+      "position": 7,
+      "surface": "הֲמִן"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ets"
+        },
+        "evidence": "הֲמִן הָעֵץ means “from the tree?” The relative clause identifies the tree by the command against eating from it, and מִמֶּנּוּ (“from it”) refers back to הָעֵץ.",
+        "gloss": "the tree",
+        "language": "he",
+        "lemma": "עֵץ",
+        "morphology": "Common noun, masculine singular absolute, with prefixed definite article הָ־.",
+        "qualifier": "",
+        "root": "עצה",
+        "sense": "tree"
+      },
+      "position": 8,
+      "surface": "הָעֵץ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ashar"
+        },
+        "evidence": "אֲשֶׁר introduces the clause modifying הָעֵץ, “the tree.” The suffix in מִמֶּנּוּ, “from it,” refers back to the tree: “the tree from which I commanded you not to eat.”",
+        "gloss": "which",
+        "language": "he",
+        "lemma": "אֲשֶׁר",
+        "morphology": "Invariant relative particle without prefix or suffix",
+        "qualifier": "",
+        "root": "אשר",
+        "sense": "who, which, that"
+      },
+      "position": 9,
+      "surface": "אֲשֶׁר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "tsavah"
+        },
+        "evidence": "In צִוִּיתִיךָ, the speaker gives the command and the suffix ךָ identifies the addressee. לְבִלְתִּי אֲכָל מִמֶּנּוּ gives the content of the command, “not to eat from it.”",
+        "gloss": "I commanded you",
+        "language": "he",
+        "lemma": "צִוָּה",
+        "morphology": "Piel perfect, first person common singular, with a second person masculine singular object suffix.",
+        "qualifier": "",
+        "root": "צוה",
+        "sense": "to give someone a command"
+      },
+      "position": 10,
+      "surface": "צִוִּיתִיךָ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "bal"
+        },
+        "evidence": "In צִוִּיתִיךָ לְבִלְתִּי אֲכָל מִמֶּנּוּ, לְבִלְתִּי negates אֲכָל, the infinitive of ‘eat’. The clause means ‘I commanded you not to eat from it’.",
+        "gloss": "not to",
+        "language": "he",
+        "lemma": "בִּלְתִּי",
+        "morphology": "Negative particle with prefixed preposition לְ and no suffix.",
+        "qualifier": "",
+        "root": "בלה",
+        "sense": "Negates the infinitive expressing the prohibited action."
+      },
+      "position": 11,
+      "surface": "לְבִלְתִּי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "akal"
+        },
+        "evidence": "In לְבִלְתִּי אֲכָל מִמֶּנּוּ, “not to eat from it,” לְבִלְתִּי negates the infinitive and מִמֶּנּוּ refers to the tree. The final אָכָלְתָּ asks whether the man ate from it.",
+        "gloss": "to eat",
+        "language": "he",
+        "lemma": "אָכַל",
+        "morphology": "Qal infinitive construct with no prefix or suffix",
+        "qualifier": "",
+        "root": "אכל",
+        "sense": "eat"
+      },
+      "position": 12,
+      "surface": "אֲכָל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "min",
+            "base": "a8ed885685f881ad58d16600265c2176cd484c41c6480205b1d0941d765b8fa6",
+            "change": "Add Genesis 3:11 as an example of the existing Hebrew source sense in the article min.",
+            "definition": "Marks the source from which something is taken, here the tree from which food is eaten.",
+            "evidence": "In Genesis 3:11, אֲכָל מִמֶּנּוּ means “to eat from it.” The suffix refers back to the tree named at the start of the question."
+          }
+        },
+        "evidence": "In הָעֵץ אֲשֶׁר צִוִּיתִיךָ לְבִלְתִּי אֲכָל מִמֶּנּוּ, “the tree that I commanded you not to eat from,” the suffix resumes הָעֵץ, “the tree,” inside the relative clause. This masculine singular antecedent resolves the form מִמֶּנּוּ, which in another context could also mean “from us.”",
+        "gloss": "from it",
+        "language": "he",
+        "lemma": "מִן",
+        "morphology": "Preposition with a third-person masculine singular pronominal suffix referring to הָעֵץ.",
+        "qualifier": "",
+        "root": "מנ",
+        "sense": "from, marking the source of what is eaten"
+      },
+      "position": 13,
+      "surface": "מִמֶּנּוּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "akal"
+        },
+        "evidence": "The question opens with הֲמִן הָעֵץ, “from the tree?” The intervening clause identifies the tree from which the addressee was commanded not to eat. The final אָכָלְתָּ asks whether he ate from it.",
+        "gloss": "have you eaten?",
+        "language": "he",
+        "lemma": "אָכַל",
+        "morphology": "Qal perfect, second person masculine singular, with the ending ־תָּ.",
+        "qualifier": "",
+        "root": "אכל",
+        "sense": "eat"
+      },
+      "position": 14,
+      "surface": "אָכָלְתָּ"
+    }
+  ]
+}

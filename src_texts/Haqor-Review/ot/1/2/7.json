@@ -1,0 +1,286 @@
+{
+  "book": 1,
+  "chapter": 2,
+  "source": "ot",
+  "verse": 7,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yatsar"
+        },
+        "evidence": "יַהְוֶה אֱלֹהִים is the subject, אֶת־הָאָדָם marks the human as the direct object, and עָפָר מִן־הָאֲדָמָה identifies the material as dust from the ground.",
+        "gloss": "and he formed",
+        "language": "he",
+        "lemma": "יָצַר",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ־ and no suffix.",
+        "qualifier": "",
+        "root": "יצר",
+        "sense": "to shape something from material"
+      },
+      "position": 0,
+      "surface": "וַיִּיצֶר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yahweh"
+        },
+        "evidence": "In יַהְוֶה אֱלֹהִים, “Yahweh God,” אֱלֹהִים stands in apposition to the name. The phrase identifies the subject of וַיִּיצֶר, “formed,” as Yahweh.",
+        "gloss": "Yahweh",
+        "language": "he",
+        "lemma": "יַהְוֶה",
+        "morphology": "Proper noun without prefix or suffix.",
+        "qualifier": "",
+        "root": "הוה",
+        "sense": "Personal name of the God of Israel"
+      },
+      "position": 1,
+      "surface": "יַהְוֶה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "In יַהְוֶה אֱלֹהִים, אֱלֹהִים stands in apposition to the name יַהְוֶה. The singular verbs וַיִּיצֶר (“he formed”) and וַיִּפַּח (“he breathed”) describe the actions of this one subject.",
+        "gloss": "God",
+        "language": "he",
+        "lemma": "אֱלֹהִים",
+        "morphology": "Common noun, masculine plural absolute, with a singular referent.",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "the Mighty One, God"
+      },
+      "position": 2,
+      "surface": "אֱלֹהִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "et"
+        },
+        "evidence": "In וַיִּיצֶר יַהְוֶה אֱלֹהִים אֶת הָאָדָם, יַהְוֶה אֱלֹהִים is the subject of וַיִּיצֶר ‘formed’, and אֶת marks הָאָדָם ‘the man’ as the one formed.",
+        "gloss": "(untranslated)",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Direct-object particle, unsuffixed, in the form אֶת.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "(marks the definite object)"
+      },
+      "position": 3,
+      "surface": "אֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "adam"
+        },
+        "evidence": "אֶת marks הָאָדָם as the definite object of וַיִּיצֶר, “he formed.” The verse follows this individual from his formation out of dust to the moment God breathes into his nostrils.",
+        "gloss": "the man",
+        "language": "he",
+        "lemma": "אָדָם",
+        "morphology": "Definite article הָ־ prefixed to a masculine singular common noun in the absolute state.",
+        "qualifier": "noun",
+        "root": "אדמ",
+        "sense": "the man (the first man)"
+      },
+      "position": 4,
+      "surface": "הָאָדָם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "aphar"
+        },
+        "evidence": "עָפָר names the material from which God formed the human. The following phrase מִן הָאֲדָמָה identifies its source, yielding “dust from the ground.”",
+        "gloss": "dust",
+        "language": "he",
+        "lemma": "עָפָר",
+        "morphology": "Common noun, masculine singular absolute, without prefix or suffix.",
+        "qualifier": "",
+        "root": "עפר",
+        "sense": "loose earth"
+      },
+      "position": 5,
+      "surface": "עָפָר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "min"
+        },
+        "evidence": "In עָפָר מִן הָאֲדָמָה, “dust from the ground,” מִן marks הָאֲדָמָה as the source of the dust from which God formed the human.",
+        "gloss": "from",
+        "language": "he",
+        "lemma": "מִן",
+        "morphology": "Independent preposition without prefix or suffix.",
+        "qualifier": "",
+        "root": "מנ",
+        "sense": "out of, made from; from (a source or giver)"
+      },
+      "position": 6,
+      "surface": "מִן"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "adam"
+        },
+        "evidence": "In עָפָר מִן הָאֲדָמָה, “dust from the ground,” מִן marks the ground as the source of the dust from which God forms the man.",
+        "gloss": "the ground",
+        "language": "he",
+        "lemma": "אֲדָמָה",
+        "morphology": "Common noun, feminine singular absolute, with the prefixed definite article הָ־.",
+        "qualifier": "",
+        "root": "אדמ",
+        "sense": "earth, as the stuff things are made of"
+      },
+      "position": 7,
+      "surface": "הָאֲדָמָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "naphach",
+            "base": null,
+            "change": "Add the Hebrew verb נָפַח under נפח with its Qal sense of breathing into someone or something.",
+            "definition": "To breathe out into someone or something.",
+            "evidence": "In Genesis 2:7 Yahweh God breathes the breath of life into the nostrils of the man he has formed."
+          }
+        },
+        "evidence": "Yahweh God continues as the subject of וַיִּפַּח. The object נִשְׁמַת חַיִּים identifies what he breathed, the breath of life, and בְּאַפָּיו gives its destination, into the man's nostrils. The next clause gives the result: the man became a living being.",
+        "gloss": "and he breathed",
+        "language": "he",
+        "lemma": "נָפַח",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ and no suffix. The initial root consonant נ assimilates to פ, marked by the dagesh in פּ.",
+        "qualifier": "",
+        "root": "נפח",
+        "sense": "To breathe out into someone or something."
+      },
+      "position": 8,
+      "surface": "וַיִּפַּח"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "aph"
+        },
+        "evidence": "In וַיִּפַּח בְּאַפָּיו נִשְׁמַת חַיִּים, God breathes the breath of life into the man's nostrils. The suffix refers to הָאָדָם, and בְּ marks where the breath enters.",
+        "gloss": "into his nostrils",
+        "language": "he",
+        "lemma": "אַף",
+        "morphology": "Preposition בְּ + masculine dual construct noun + third-person masculine singular possessive suffix.",
+        "qualifier": "noun",
+        "root": "אנפ",
+        "sense": "nostrils as the seat of breath and life"
+      },
+      "position": 9,
+      "surface": "בְּאַפָּיו"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "neshamah"
+        },
+        "evidence": "נִשְׁמַת is in construct with חַיִּים, forming “breath of life.” The phrase names what God blew into the man’s nostrils, after which the man became a living being.",
+        "gloss": "breath",
+        "language": "he",
+        "lemma": "נְשָׁמָה",
+        "morphology": "Common noun, feminine singular construct, without prefix or suffix.",
+        "qualifier": "",
+        "root": "נשמ",
+        "sense": "breath of life"
+      },
+      "position": 10,
+      "surface": "נִשְׁמַת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chayah"
+        },
+        "evidence": "In נִשְׁמַת חַיִּים, “breath of life,” חַיִּים completes the construct phrase begun by נִשְׁמַת. God breathes this breath into the man's nostrils, and the man becomes a living being.",
+        "gloss": "life",
+        "language": "he",
+        "lemma": "חַיִּים",
+        "morphology": "Masculine plural absolute noun, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "חיה",
+        "sense": "life as given by God's breath"
+      },
+      "position": 11,
+      "surface": "חַיִּים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "hayah"
+        },
+        "evidence": "הָאָדָם is the subject, and לְנֶפֶשׁ חַיָּה expresses the resulting state. When God breathed the breath of life into his nostrils, the man became a living being.",
+        "gloss": "and he became",
+        "language": "he",
+        "lemma": "הָיָה",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ־",
+        "qualifier": "",
+        "root": "היה",
+        "sense": "to become"
+      },
+      "position": 12,
+      "surface": "וַיְהִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "adam"
+        },
+        "evidence": "הָאָדָם is the subject of וַיְהִי and refers back to the man God formed earlier in the verse. After God breathed into his nostrils, the man became a living being.",
+        "gloss": "the man",
+        "language": "he",
+        "lemma": "אָדָם",
+        "morphology": "Masculine singular common noun in the absolute state with the prefixed definite article הָ־.",
+        "qualifier": "noun",
+        "root": "אדמ",
+        "sense": "the man (the first man)"
+      },
+      "position": 13,
+      "surface": "הָאָדָם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "nephesh"
+        },
+        "evidence": "After God breathes the breath of life into the man's nostrils, וַיְהִי הָאָדָם לְנֶפֶשׁ חַיָּה says that the man became a living being. נֶפֶשׁ denotes the being, and חַיָּה supplies “living.”",
+        "gloss": "being",
+        "language": "he",
+        "lemma": "נֶפֶשׁ",
+        "morphology": "Common noun, singular absolute, with prefixed לְ marking the result. The adjective חַיָּה shows feminine agreement.",
+        "qualifier": "",
+        "root": "נפש",
+        "sense": "living soul, living creature"
+      },
+      "position": 14,
+      "surface": "לְנֶפֶשׁ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chayah"
+        },
+        "evidence": "In לְנֶפֶשׁ חַיָּה, חַיָּה agrees with the feminine singular noun נֶפֶשׁ. After God breathes into his nostrils, the man becomes “a living being.”",
+        "gloss": "living",
+        "language": "he",
+        "lemma": "חַי",
+        "morphology": "Feminine singular absolute adjective",
+        "qualifier": "adjective",
+        "root": "חיה",
+        "sense": "living (soul): a living creature"
+      },
+      "position": 15,
+      "surface": "חַיָּה"
+    }
+  ]
+}

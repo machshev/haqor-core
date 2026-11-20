@@ -1,0 +1,247 @@
+{
+  "book": 1,
+  "chapter": 1,
+  "source": "ot",
+  "verse": 2,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "erets"
+        },
+        "evidence": "וְהָאָרֶץ is the subject of the feminine singular verb הָיְתָה. The predicate תֹהוּ וָבֹהוּ describes the earth’s condition, and the references to the deep and the waters support the sense of the earth as a whole.",
+        "gloss": "and the earth",
+        "language": "he",
+        "lemma": "אֶרֶץ",
+        "morphology": "Common noun, singular absolute, construed as feminine here, with prefixed conjunction וְ and definite article הָ.",
+        "qualifier": "",
+        "root": "ארצ",
+        "sense": "earth"
+      },
+      "position": 0,
+      "surface": "וְהָאָרֶץ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "hayah"
+        },
+        "evidence": "הָיְתָה agrees with the feminine singular subject הָאָרֶץ and links it to the predicate תֹהוּ וָבֹהוּ. The clause describes the earth’s condition.",
+        "gloss": "was",
+        "language": "he",
+        "lemma": "הָיָה",
+        "morphology": "Qal perfect, third person feminine singular",
+        "qualifier": "",
+        "root": "היה",
+        "sense": "to be in a state or condition"
+      },
+      "position": 1,
+      "surface": "הָיְתָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "tohu",
+            "base": null,
+            "change": "Add the noun תֹּהוּ with its sense of an uninhabited waste.",
+            "definition": "An uninhabited waste, said of the earth or of a tract of land.",
+            "evidence": "Genesis 1:2 applies the noun to the earth while the waters still cover it. Isaiah 45:18 sets תֹהוּ against לָשֶׁבֶת, “to be inhabited.”"
+          }
+        },
+        "evidence": "תֹהוּ and בֹהוּ together describe the earth. Darkness covers the deep, and the waters are already present. Isaiah 45:18 clarifies the sense by setting תֹהוּ against God’s purpose that the earth be inhabited.",
+        "gloss": "a waste",
+        "language": "he",
+        "lemma": "תֹּהוּ",
+        "morphology": "Masculine singular absolute noun, without prefix or suffix. It serves as a predicate of הָאָרֶץ after הָיְתָה.",
+        "qualifier": "",
+        "root": "תהו",
+        "sense": "An uninhabited waste."
+      },
+      "position": 2,
+      "surface": "תֹהוּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "bohu",
+            "base": null,
+            "change": "Add בֹּהוּ with the sense “emptiness” under the noun's own consonants, בהו. The cited uses establish no verbal derivation from בהה.",
+            "definition": "The emptiness of a place that lies uninhabited or has been laid waste.",
+            "evidence": "Genesis 1:2 pairs בֹּהוּ with תֹהוּ of the earth. Jeremiah 4:23–26 uses the pair of a depopulated land, and Isaiah 34:11 sets the two nouns in parallel in a description of Edom's desolation."
+          }
+        },
+        "evidence": "In Genesis 1:2, תֹהוּ וָבֹהוּ describes the condition of the earth. The next clause names the darkness over the deep with a separate noun, חֹשֶׁךְ. Jeremiah 4:23 repeats תֹהוּ וָבֹהוּ of the land, and 4:25 makes its emptiness concrete: no human is there and the birds have fled.",
+        "gloss": "emptiness",
+        "language": "he",
+        "lemma": "בֹּהוּ",
+        "morphology": "Conjunction וָ־ “and” prefixed to a masculine singular absolute noun.",
+        "qualifier": "",
+        "root": "בהו",
+        "sense": "Emptiness of an uninhabited place."
+      },
+      "position": 3,
+      "surface": "וָבֹהוּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "choshekh"
+        },
+        "evidence": "In וְחֹשֶׁךְ עַל־פְּנֵי תְהוֹם, חֹשֶׁךְ is the subject of a verbless clause. The phrase עַל־פְּנֵי תְהוֹם locates the darkness over the surface of the deep. The following preposition עַל supplies the meaning “upon.”",
+        "gloss": "darkness",
+        "language": "he",
+        "lemma": "חֹשֶׁךְ",
+        "morphology": "Conjunction וְ prefixed to a masculine singular absolute noun.",
+        "qualifier": "",
+        "root": "חשכ",
+        "sense": "absence of light"
+      },
+      "position": 4,
+      "surface": "וְחֹשֶׁךְ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "alah"
+        },
+        "evidence": "In וְחֹשֶׁךְ עַל פְּנֵי תְהוֹם, עַל locates the darkness over the surface of the deep. פְּנֵי supplies the sense “surface.”",
+        "gloss": "over",
+        "language": "he",
+        "lemma": "עַל",
+        "morphology": "Simple preposition without prefix or suffix.",
+        "qualifier": "",
+        "root": "עלה",
+        "sense": "on, upon, over"
+      },
+      "position": 5,
+      "surface": "עַל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "panah"
+        },
+        "evidence": "In עַל פְּנֵי תְהוֹם, darkness lies over the surface of the deep. The construct form פְּנֵי takes תְהוֹם as its complement. The parallel phrase עַל פְּנֵי הַמָּיִם confirms the spatial sense.",
+        "gloss": "surface of",
+        "language": "he",
+        "lemma": "פָּנִים",
+        "morphology": "Common noun, both genders, plural construct, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "פנה",
+        "sense": "surface (of the earth, the waters)"
+      },
+      "position": 6,
+      "surface": "פְּנֵי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "tehom"
+        },
+        "evidence": "Darkness lies עַל פְּנֵי תְהוֹם, “over the surface of the deep.” The parallel phrase עַל פְּנֵי הַמָּיִם, “over the surface of the waters,” identifies the deep as a body of water. The source gloss “breath; wind; spirit” belongs to רוּחַ in the next clause.",
+        "gloss": "the deep",
+        "language": "he",
+        "lemma": "תְּהוֹם",
+        "morphology": "Common noun, common gender, singular absolute, without prefix or suffix.",
+        "qualifier": "",
+        "root": "תהמ",
+        "sense": "the watery deep"
+      },
+      "position": 7,
+      "surface": "תְהוֹם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ruach"
+        },
+        "evidence": "רוּחַ forms a construct phrase with אֱלֹהִים, yielding “the spirit of God.” The feminine singular participle מְרַחֶפֶת agrees with רוּחַ and describes it hovering over the waters. “Wind from God” is also a possible reading.",
+        "gloss": "and the spirit of",
+        "language": "he",
+        "lemma": "רוּחַ",
+        "morphology": "Conjunction וְ־ + common-gender singular noun in the construct state, with feminine singular agreement.",
+        "qualifier": "",
+        "root": "רוח",
+        "sense": "spirit of God, of Yahweh"
+      },
+      "position": 8,
+      "surface": "וְרוּחַ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "In וְרוּחַ אֱלֹהִים, the construct noun רוּחַ takes אֱלֹהִים as its complement, yielding ‘the spirit of God.’ The preceding verse identifies God as the creator, which supports the same referent here. The feminine singular participle מְרַחֶפֶת agrees with רוּחַ.",
+        "gloss": "of God",
+        "language": "he",
+        "lemma": "אֱלֹהִים",
+        "morphology": "Masculine plural noun in the absolute state, with a singular referent.",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "the Mighty One, God"
+      },
+      "position": 9,
+      "surface": "אֱלֹהִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "rachaph",
+            "base": null,
+            "change": "Add the root רחפ with the Piel sense “hover” and the Qal sense “tremble.”",
+            "definition": "In the Piel, to hover over something, as a bird over its young.",
+            "evidence": "In Deuteronomy 32:11 the eagle hovers over its young and spreads its wings. Genesis 1:2 uses the same verb with עַל to describe the motion of רוּחַ אֱלֹהִים over the waters."
+          }
+        },
+        "evidence": "מְרַחֶפֶת describes what רוּחַ אֱלֹהִים was doing. The phrase עַל פְּנֵי הַמָּיִם places that ongoing action over the surface of the waters. Deuteronomy 32:11 uses the same Piel verb for an eagle hovering over its young.",
+        "gloss": "was hovering",
+        "language": "he",
+        "lemma": "רָחַף",
+        "morphology": "Piel active participle, feminine singular absolute, agreeing with רוּחַ. The initial מְ־ is the participial prefix.",
+        "qualifier": "",
+        "root": "רחפ",
+        "sense": "To hover over something."
+      },
+      "position": 10,
+      "surface": "מְרַחֶפֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "alah"
+        },
+        "evidence": "In מְרַחֶפֶת עַל פְּנֵי הַמָּיִם, עַל locates the hovering over the surface of the waters.",
+        "gloss": "over",
+        "language": "he",
+        "lemma": "עַל",
+        "morphology": "Preposition without prefix or suffix",
+        "qualifier": "",
+        "root": "עלה",
+        "sense": "on, upon, over"
+      },
+      "position": 11,
+      "surface": "עַל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "panah"
+        },
+        "evidence": "In עַל פְּנֵי הַמָּיִם, the construct noun פְּנֵי takes הַמָּיִם as its complement. The phrase locates the hovering above the surface of the waters.",
+        "gloss": "surface",
+        "language": "he",
+        "lemma": "פָּנִים",
+        "morphology": "Common-gender noun, plural construct",
+        "qualifier": "",
+        "root": "פנה",
+        "sense": "surface (of the earth, the waters)"
+      },
+      "position": 12,
+      "surface": "פְּנֵי"
+    }
+  ]
+}

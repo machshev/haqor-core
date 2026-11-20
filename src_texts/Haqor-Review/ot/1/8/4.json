@@ -1,0 +1,264 @@
+{
+  "book": 1,
+  "chapter": 8,
+  "review": {
+    "entities": [
+      {
+        "evidence": "In הָרֵי אֲרָרָט, “the mountains of Ararat,” Ararat names the region where the ark came to rest. The source tag identifies the same place.",
+        "key": "Ararat@Gen.8.4",
+        "position": 10
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "and it came to rest",
+        "position": 0
+      },
+      {
+        "gloss": "the ark",
+        "position": 1
+      },
+      {
+        "gloss": "in the month",
+        "position": 2
+      },
+      {
+        "gloss": "the seventh",
+        "position": 3
+      },
+      {
+        "gloss": "on the seventeenth (with עָשָׂר)",
+        "position": 4
+      },
+      {
+        "gloss": "ten (forming seventeen with שִׁבְעָה)",
+        "position": 5
+      },
+      {
+        "gloss": "day",
+        "position": 6
+      },
+      {
+        "gloss": "of the month",
+        "position": 7
+      },
+      {
+        "gloss": "on",
+        "position": 8
+      },
+      {
+        "gloss": "the mountains of",
+        "position": 9
+      },
+      {
+        "gloss": "Ararat",
+        "position": 10
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[And|0] [in|2] [the seventh|3] [month|2], [on|4] [the seventeenth|4,5] [day|6] [of the month|7], [the ark|1] [came to rest|0] [on|8] [the mountains of|9] [Ararat|10]."
+  },
+  "source": "ot",
+  "verse": 4,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "nuach"
+        },
+        "evidence": "וַתָּנַח agrees with its feminine singular subject הַתֵּבָה, “the ark.” The phrase עַל הָרֵי אֲרָרָט, “on the mountains of Ararat,” identifies where the ark came to rest.",
+        "gloss": "and it came to rest",
+        "language": "he",
+        "lemma": "נוּחַ",
+        "morphology": "Qal wayyiqtol, third-person feminine singular, with prefixed וַ־.",
+        "qualifier": "",
+        "root": "נוח",
+        "sense": "come to rest, settle"
+      },
+      "position": 0,
+      "surface": "וַתָּנַח"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "tevah",
+            "base": null,
+            "change": "Add תֵּבָה under its own consonants תבה, with evidence for Noah’s ark and the smaller container used for Moses.",
+            "definition": "A waterproofed container that holds people or animals on water. Here it is Noah’s ark.",
+            "evidence": "Genesis 6:14 describes the ark’s construction and sealing with pitch. Genesis 7:18 describes it floating, and Genesis 8:4 records where it came to rest."
+          }
+        },
+        "evidence": "הַתֵּבָה is the subject of וַתָּנַח, “came to rest,” which agrees with it in the feminine singular. עַל הָרֵי אֲרָרָט gives the place where the ark came to rest after floating on the waters in Genesis 7:18.",
+        "gloss": "the ark",
+        "language": "he",
+        "lemma": "תֵּבָה",
+        "morphology": "Definite article הַ־ with doubling of the initial ת, followed by a feminine singular absolute common noun.",
+        "qualifier": "",
+        "root": "תבה",
+        "sense": "The vessel that carried Noah, his household, and the animals on the floodwaters."
+      },
+      "position": 1,
+      "surface": "הַתֵּבָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chadash"
+        },
+        "evidence": "הַשְּׁבִיעִי modifies חֹדֶשׁ to give “in the seventh month,” and בְּשִׁבְעָה עָשָׂר יוֹם לַחֹדֶשׁ specifies the seventeenth day of that month.",
+        "gloss": "in the month",
+        "language": "he",
+        "lemma": "חֹדֶשׁ",
+        "morphology": "Preposition בְּ with the definite article הַ, prefixed to a masculine singular absolute noun.",
+        "qualifier": "",
+        "root": "חדש",
+        "sense": "month"
+      },
+      "position": 2,
+      "surface": "בַּחֹדֶשׁ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shaba"
+        },
+        "evidence": "In בַּחֹדֶשׁ הַשְּׁבִיעִי, “in the seventh month,” the ordinal agrees with חֹדֶשׁ in gender, number, and definiteness. The following phrase gives the day of that month.",
+        "gloss": "seventh",
+        "language": "he",
+        "lemma": "שְׁבִיעִי",
+        "morphology": "Ordinal adjective, masculine singular absolute, with prefixed definite article הַ־.",
+        "qualifier": "",
+        "root": "שבע",
+        "sense": "the seventh month"
+      },
+      "position": 3,
+      "surface": "הַשְּׁבִיעִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shaba"
+        },
+        "evidence": "שִׁבְעָה supplies the seven in שִׁבְעָה עָשָׂר, “seventeen,” which counts the masculine noun יוֹם. The prefixed בְּ marks the date on which the ark rested, the seventeenth day of the month.",
+        "gloss": "on the seventeenth (with עָשָׂר)",
+        "language": "he",
+        "lemma": "שֶׁבַע",
+        "morphology": "Preposition בְּ prefixed to שִׁבְעָה, a masculine singular absolute cardinal numeral.",
+        "qualifier": "",
+        "root": "שבע",
+        "sense": "seven"
+      },
+      "position": 4,
+      "surface": "בְּשִׁבְעָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "asar"
+        },
+        "evidence": "In בְּשִׁבְעָה עָשָׂר יוֹם לַחֹדֶשׁ, עָשָׂר supplies the ten and שִׁבְעָה supplies the seven. Together they date the ark’s resting to the seventeenth day of the month.",
+        "gloss": "-teen (in seventeen)",
+        "language": "he",
+        "lemma": "עָשָׂר",
+        "morphology": "Masculine singular absolute cardinal numeral, without prefix or suffix.",
+        "qualifier": "",
+        "root": "עשׂר",
+        "sense": "ten, in the numbers eleven to nineteen"
+      },
+      "position": 5,
+      "surface": "עָשָׂר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yom"
+        },
+        "evidence": "In בְּשִׁבְעָה עָשָׂר יוֹם לַחֹדֶשׁ, יוֹם is the unit counted by שִׁבְעָה עָשָׂר ‘seventeen’. The phrase dates the ark’s resting to the seventeenth day of the seventh month.",
+        "gloss": "day",
+        "language": "he",
+        "lemma": "יוֹם",
+        "morphology": "Common noun, masculine singular absolute, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "יומ",
+        "sense": "a day, counted"
+      },
+      "position": 6,
+      "surface": "יוֹם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chadash"
+        },
+        "evidence": "בְּשִׁבְעָה עָשָׂר יוֹם לַחֹדֶשׁ means “on the seventeenth day of the month.” The article refers back to the seventh month named earlier in the verse.",
+        "gloss": "of the month",
+        "language": "he",
+        "lemma": "חֹדֶשׁ",
+        "morphology": "Preposition לְ with the definite article הַ, prefixed to a masculine singular absolute noun.",
+        "qualifier": "",
+        "root": "חדש",
+        "sense": "month"
+      },
+      "position": 7,
+      "surface": "לַחֹדֶשׁ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "alah"
+        },
+        "evidence": "In עַל הָרֵי אֲרָרָט, עַל identifies where the ark came to rest: on the mountains of Ararat.",
+        "gloss": "on",
+        "language": "he",
+        "lemma": "עַל",
+        "morphology": "preposition without prefix or suffix",
+        "qualifier": "",
+        "root": "עלה",
+        "sense": "on, upon, over"
+      },
+      "position": 8,
+      "surface": "עַל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "har"
+        },
+        "evidence": "In עַל הָרֵי אֲרָרָט, “on the mountains of Ararat,” הָרֵי is bound to the place name אֲרָרָט. The phrase locates the ark’s resting place.",
+        "gloss": "mountains of",
+        "language": "he",
+        "lemma": "הַר",
+        "morphology": "Common noun, masculine plural construct, without prefix or suffix.",
+        "qualifier": "",
+        "root": "הרר",
+        "sense": "mountain, hill"
+      },
+      "position": 9,
+      "surface": "הָרֵי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "ararat",
+            "base": null,
+            "change": "Add a geographical name article keyed by the name’s own consonants, אררט.",
+            "definition": "Ararat is the region whose mountains are named as the ark’s resting place.",
+            "evidence": "Gen.8.4 locates the ark עַל הָרֵי אֲרָרָט, “on the mountains of Ararat.”"
+          }
+        },
+        "evidence": "In עַל הָרֵי אֲרָרָט, “on the mountains of Ararat,” הָרֵי is the plural construct of הַר, “mountain.” אֲרָרָט names the region to which those mountains belong. The verse gives no basis for deriving the name from ארר or glossing it as “wrath.”",
+        "gloss": "Ararat",
+        "language": "he",
+        "lemma": "אֲרָרָט",
+        "morphology": "Geographical proper noun, singular absolute, without prefix or suffix. It completes the construct phrase הָרֵי אֲרָרָט.",
+        "qualifier": "",
+        "root": "אררט",
+        "sense": "Ararat, the region whose mountains are named as the ark’s resting place."
+      },
+      "position": 10,
+      "surface": "אֲרָרָט"
+    }
+  ]
+}

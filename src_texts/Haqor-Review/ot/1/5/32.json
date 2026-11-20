@@ -1,0 +1,353 @@
+{
+  "book": 1,
+  "chapter": 5,
+  "review": {
+    "entities": [
+      {
+        "evidence": "The genealogy gives the age of the son Lamech named Noah in Genesis 5:29.",
+        "key": "Noah@Gen.5.29",
+        "position": 1
+      },
+      {
+        "evidence": "The second clause names the same Noah as the father of Shem, Ham, and Japheth.",
+        "key": "Noah@Gen.5.29",
+        "position": 7
+      },
+      {
+        "evidence": "Shem is the first son named as an object of “fathered,” alongside his brothers Ham and Japheth.",
+        "key": "Shem@Gen.5.32",
+        "position": 9
+      },
+      {
+        "evidence": "Noah fathers Ham, the son listed between Shem and Japheth.",
+        "key": "Ham@Gen.5.32",
+        "position": 11
+      },
+      {
+        "evidence": "Japheth is the third son named in the list of sons Noah fathered.",
+        "key": "Japheth@Gen.5.32",
+        "position": 13
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "and was",
+        "position": 0
+      },
+      {
+        "gloss": "Noah",
+        "position": 1
+      },
+      {
+        "gloss": "aged",
+        "position": 2
+      },
+      {
+        "gloss": "five",
+        "position": 3
+      },
+      {
+        "gloss": "hundred",
+        "position": 4
+      },
+      {
+        "gloss": "years",
+        "position": 5
+      },
+      {
+        "gloss": "then fathered",
+        "position": 6
+      },
+      {
+        "gloss": "Noah",
+        "position": 7
+      },
+      {
+        "gloss": "(direct-object marker)",
+        "position": 8
+      },
+      {
+        "gloss": "Shem",
+        "position": 9
+      },
+      {
+        "gloss": "(direct-object marker)",
+        "position": 10
+      },
+      {
+        "gloss": "Ham",
+        "position": 11
+      },
+      {
+        "gloss": "and (direct-object marker)",
+        "position": 12
+      },
+      {
+        "gloss": "Japheth",
+        "position": 13
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[And|0] [Noah|1] [was|0] [500|3,4] [years|5] [old|2]. [Then|6] [Noah|7] [fathered|6] [Shem|8,9], [Ham|10,11], [and|12] [Japheth|13]."
+  },
+  "source": "ot",
+  "verse": 32,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "hayah"
+        },
+        "evidence": "וַיְהִי links the subject נֹחַ to the age expression בֶּן חֲמֵשׁ מֵאוֹת שָׁנָה, stating that Noah was five hundred years old.",
+        "gloss": "was",
+        "language": "he",
+        "lemma": "הָיָה",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ־",
+        "qualifier": "",
+        "root": "היה",
+        "sense": "to be in a state or condition"
+      },
+      "position": 0,
+      "surface": "וַיְהִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "noah-son-of-lamech",
+            "base": null,
+            "change": "Add a personal-name article for נֹחַ linked to the root article nuach.",
+            "definition": "Noah, the son whom Lamech names in hope of relief from toil.",
+            "evidence": "Genesis 5:29 gives the name נֹחַ and explains it through the wordplay on יְנַחֲמֵנוּ, “he will comfort us.”"
+          }
+        },
+        "evidence": "In וַיְהִי נֹחַ בֶּן חֲמֵשׁ מֵאוֹת שָׁנָה, the marked נֹחַ names the man who was five hundred years old. The genealogy continues the account of Lamech’s son named in Genesis 5:29.",
+        "gloss": "Noah",
+        "language": "he",
+        "lemma": "נֹחַ",
+        "morphology": "Masculine singular personal name, without prefix or suffix.",
+        "qualifier": "",
+        "root": "נוח",
+        "sense": "Noah, son of Lamech"
+      },
+      "position": 1,
+      "surface": "נֹחַ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ben"
+        },
+        "evidence": "בֶּן stands in construct before חֲמֵשׁ מֵאוֹת שָׁנָה ‘five hundred years’. Together they state Noah’s age: he was five hundred years old.",
+        "gloss": "aged",
+        "language": "he",
+        "lemma": "בֵּן",
+        "morphology": "Masculine singular construct noun.",
+        "qualifier": "",
+        "root": "בנה",
+        "sense": "one marked by an age, a quality or a fate (idiom)"
+      },
+      "position": 2,
+      "surface": "בֶּן"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chamesh"
+        },
+        "evidence": "חֲמֵשׁ counts מֵאוֹת ‘hundreds’. The phrase בֶּן חֲמֵשׁ מֵאוֹת שָׁנָה gives Noah’s age as five hundred years.",
+        "gloss": "five",
+        "language": "he",
+        "lemma": "חָמֵשׁ",
+        "morphology": "Feminine singular absolute cardinal numeral, without prefix or suffix.",
+        "qualifier": "",
+        "root": "חמש",
+        "sense": "five"
+      },
+      "position": 3,
+      "surface": "חֲמֵשׁ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "meah"
+        },
+        "evidence": "In חֲמֵשׁ מֵאוֹת שָׁנָה, חֲמֵשׁ counts five hundreds and שָׁנָה supplies the unit of time. Noah is five hundred years old.",
+        "gloss": "hundred (in “five hundred years”)",
+        "language": "he",
+        "lemma": "מֵאָה",
+        "morphology": "Cardinal numeral, plural absolute, without prefix or suffix.",
+        "qualifier": "",
+        "root": "מאה",
+        "sense": "hundreds (plural מֵאוֹת, with the digits: three hundred to nine hundred)"
+      },
+      "position": 4,
+      "surface": "מֵאוֹת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shanah"
+        },
+        "evidence": "בֶּן חֲמֵשׁ מֵאוֹת שָׁנָה gives Noah’s age as five hundred years. The singular שָׁנָה supplies the unit counted.",
+        "gloss": "years",
+        "language": "he",
+        "lemma": "שָׁנָה",
+        "morphology": "Common noun, feminine singular absolute",
+        "qualifier": "noun",
+        "root": "שנה",
+        "sense": "years of a life, age"
+      },
+      "position": 5,
+      "surface": "שָׁנָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yalad"
+        },
+        "evidence": "Noah is the subject of וַיּוֹלֶד. The repeated direct-object marker אֶת introduces Shem, Ham, and Japheth as the three sons he fathered.",
+        "gloss": "and he fathered",
+        "language": "he",
+        "lemma": "יָלַד",
+        "morphology": "Hiphil wayyiqtol, third person masculine singular, with prefixed וַ and no suffix",
+        "qualifier": "",
+        "root": "ילד",
+        "sense": "beget, father a child"
+      },
+      "position": 6,
+      "surface": "וַיּוֹלֶד"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "noah-son-of-lamech",
+            "base": null,
+            "change": "Add a personal-name article for נֹחַ linked to the root article nuach.",
+            "definition": "Noah, the son whom Lamech names in hope of relief from toil.",
+            "evidence": "Genesis 5:29 gives the name נֹחַ and explains it through the wordplay on יְנַחֲמֵנוּ, “he will comfort us.”"
+          }
+        },
+        "evidence": "In וַיּוֹלֶד נֹחַ, the marked נֹחַ is the subject of “fathered.” It repeats the name from the first clause and identifies Noah as the father of Shem, Ham, and Japheth.",
+        "gloss": "Noah",
+        "language": "he",
+        "lemma": "נֹחַ",
+        "morphology": "Masculine singular proper noun with no prefix or suffix",
+        "qualifier": "",
+        "root": "נוח",
+        "sense": "Noah, son of Lamech"
+      },
+      "position": 7,
+      "surface": "נֹחַ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "et"
+        },
+        "evidence": "In וַיּוֹלֶד נֹחַ אֶת שֵׁם, Noah is the subject of וַיּוֹלֶד ‘fathered’, and אֶת marks the personal name שֵׁם ‘Shem’ as its direct object. The marker recurs before Ham and Japheth in the same list.",
+        "gloss": "(untranslated)",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Uninflected direct-object particle without prefix or suffix.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "(marks the definite object)"
+      },
+      "position": 8,
+      "surface": "אֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shem-son-of-noah"
+        },
+        "evidence": "Genesis 5:32 repeats אֶת before each of the three sons whom Noah fathered. שֵׁם names the first son listed, followed by חָם and יָפֶת.",
+        "gloss": "Shem",
+        "language": "he",
+        "lemma": "שֵׁם",
+        "morphology": "Masculine singular proper noun, with no prefix or suffix.",
+        "qualifier": "name",
+        "root": "שמ",
+        "sense": "Shem, son of Noah"
+      },
+      "position": 9,
+      "surface": "שֵׁם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "et"
+        },
+        "evidence": "אֶת marks חָם (Ham) as the second of the three sons named as direct objects of וַיּוֹלֶד (he fathered). The marker appears before each name.",
+        "gloss": "(untranslated)",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Unsuffixed direct-object particle with no prefix.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "(marks the definite object)"
+      },
+      "position": 10,
+      "surface": "אֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ham"
+        },
+        "evidence": "After וַיּוֹלֶד נֹחַ (“Noah fathered”), אֶת marks each son’s name as a direct object. חָם is the second name, between שֵׁם and יָפֶת.",
+        "gloss": "Ham",
+        "language": "he",
+        "lemma": "חָם",
+        "morphology": "Masculine singular proper noun, without prefix or suffix.",
+        "qualifier": "personal name",
+        "root": "חמ",
+        "sense": "Ham, son of Noah"
+      },
+      "position": 11,
+      "surface": "חָם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "et",
+            "base": "31c9a635be8bba9a67417e75ea7122e240ae707e04a841533a59ecd2869d0f80",
+            "change": "Add Gen.5.32 as an example of the existing definite-object sense in the article et.",
+            "definition": "Introduces a definite direct object, here a personal name in a series governed by one verb.",
+            "evidence": "In Gen.5.32, Noah fathered Shem, Ham, and Japheth. The repeated אֶת marks each name as an object of וַיּוֹלֶד."
+          }
+        },
+        "evidence": "In אֶת שֵׁם אֶת חָם וְאֶת יָפֶת, each son’s name has its own object marker. The marked אֶת introduces Japheth as the third object of וַיּוֹלֶד “he fathered”, and its prefix וְ־ joins him to the list.",
+        "gloss": "and [direct-object marker]",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Prefixed coordinating conjunction וְ־ “and” + unsuffixed direct-object particle אֶת.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "Marks a definite direct object."
+      },
+      "position": 12,
+      "surface": "וְאֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "japheth"
+        },
+        "evidence": "After וַיּוֹלֶד נֹחַ ‘Noah fathered’, the repeated object marker אֶת introduces each son's name. The final phrase וְאֶת יָפֶת means ‘and Japheth’. At verse end, יָפֶת is the pausal form of יֶפֶת.",
+        "gloss": "Japheth",
+        "language": "he",
+        "lemma": "יֶפֶת",
+        "morphology": "Masculine singular personal name in pausal form, without prefix or suffix.",
+        "qualifier": "",
+        "root": "פתה",
+        "sense": "Japheth, son of Noah"
+      },
+      "position": 13,
+      "surface": "יָפֶת"
+    }
+  ]
+}

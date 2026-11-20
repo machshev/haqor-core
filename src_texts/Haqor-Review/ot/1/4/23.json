@@ -1,0 +1,417 @@
+{
+  "book": 1,
+  "chapter": 4,
+  "review": {
+    "entities": [
+      {
+        "evidence": "The speaker addresses his wives Adah and Zillah, the pair named in Genesis 4:19.",
+        "key": "Lamech@Gen.4.18",
+        "position": 1
+      },
+      {
+        "evidence": "Lamech addresses Adah alongside Zillah as one of his wives, matching Genesis 4:19.",
+        "key": "Adah@Gen.4.19",
+        "position": 3
+      },
+      {
+        "evidence": "Lamech addresses Zillah alongside Adah as one of his wives, matching Genesis 4:19.",
+        "key": "Zillah@Gen.4.19",
+        "position": 4
+      },
+      {
+        "evidence": "The speaker calls Adah and Zillah “wives of Lamech,” repeating his own name.",
+        "key": "Lamech@Gen.4.18",
+        "position": 8
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "and he said",
+        "position": 0
+      },
+      {
+        "gloss": "Lamech",
+        "position": 1
+      },
+      {
+        "gloss": "to his wives",
+        "position": 2
+      },
+      {
+        "gloss": "Adah",
+        "position": 3
+      },
+      {
+        "gloss": "and Zillah",
+        "position": 4
+      },
+      {
+        "gloss": "hear",
+        "position": 5
+      },
+      {
+        "gloss": "my voice",
+        "position": 6
+      },
+      {
+        "gloss": "wives of",
+        "position": 7
+      },
+      {
+        "gloss": "Lamech",
+        "position": 8
+      },
+      {
+        "gloss": "give ear to",
+        "position": 9
+      },
+      {
+        "gloss": "my word",
+        "position": 10
+      },
+      {
+        "gloss": "for",
+        "position": 11
+      },
+      {
+        "gloss": "a man",
+        "position": 12
+      },
+      {
+        "gloss": "I killed",
+        "position": 13
+      },
+      {
+        "gloss": "for my wound",
+        "position": 14
+      },
+      {
+        "gloss": "even a young man",
+        "position": 15
+      },
+      {
+        "gloss": "for my bruise",
+        "position": 16
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[And|0] [Lamech|1] [said|0] [to his wives|2], “​[Adah|3] [and Zillah|4], [hear|5] [my voice|6]. [Wives of|7] [Lamech|8], [give ear to|9] [my word|10]: [For|11] [I killed|13] [a man|12] [for my wound|14], [even a young man|15] [for my bruise|16]."
+  },
+  "source": "ot",
+  "verse": 23,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "amar"
+        },
+        "evidence": "לֶמֶךְ is the subject, and לְנָשָׁיו identifies his wives as the addressees. His quoted speech begins by naming them, עָדָה וְצִלָּה.",
+        "gloss": "and he said",
+        "language": "he",
+        "lemma": "אָמַר",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ־.",
+        "qualifier": "",
+        "root": "אמר",
+        "sense": "say, introducing direct speech"
+      },
+      "position": 0,
+      "surface": "וַיֹּאמֶר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "lamech",
+            "base": null,
+            "change": "Add a personal-name article for לֶמֶךְ. Its derivation is unknown.",
+            "definition": "Lamech, the man identified in Genesis 4:19 as the husband of Adah and Zillah.",
+            "evidence": "Genesis 4:19 names Lamech as the man who took two wives and then identifies each wife by name."
+          }
+        },
+        "evidence": "וַיֹּאמֶר לֶמֶךְ לְנָשָׁיו identifies Lamech as the speaker. He addresses his wives by name, עָדָה וְצִלָּה, identifying him as the same man named in Genesis 4:19.",
+        "gloss": "Lamech",
+        "language": "he",
+        "lemma": "לֶמֶךְ",
+        "morphology": "Masculine singular proper noun without prefix or suffix, serving as the subject of וַיֹּאמֶר.",
+        "qualifier": "",
+        "root": "",
+        "sense": "The personal name of the man who took Adah and Zillah as wives."
+      },
+      "position": 1,
+      "surface": "לֶמֶךְ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "enosh"
+        },
+        "evidence": "Lamech speaks to Adah and Zillah. He addresses them again as נְשֵׁי לֶמֶךְ, ‘wives of Lamech’, confirming that the suffix in לְנָשָׁיו refers to him.",
+        "gloss": "to his wives",
+        "language": "he",
+        "lemma": "נָשִׁים",
+        "morphology": "Preposition לְ ‘to’ + feminine plural construct noun + third-person masculine singular possessive suffix ‘his’.",
+        "qualifier": "",
+        "root": "אנש",
+        "sense": "wives"
+      },
+      "position": 2,
+      "surface": "לְנָשָׁיו"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "adah",
+            "base": null,
+            "change": "Add a personal-name article for Adah linked to the root article ad.",
+            "definition": "Adah is a Hebrew female personal name. In Genesis 4:19 it names one of Lamech’s wives.",
+            "evidence": "Genesis 4:19 identifies Adah by the naming formula שֵׁם הָאַחַת עָדָה. Isaiah 61:10 uses the verb עדה of a bride adorning herself with jewels, suggesting a possible derivation for the name."
+          }
+        },
+        "evidence": "Lamech speaks לְנָשָׁיו (“to his wives”) and addresses Adah and Zillah by name. The feminine plural imperative שְׁמַעַן (“listen”) addresses both women, whom he then calls נְשֵׁי לֶמֶךְ (“wives of Lamech”).",
+        "gloss": "Adah",
+        "language": "he",
+        "lemma": "עָדָה",
+        "morphology": "Feminine singular proper noun used in direct address.",
+        "qualifier": "name",
+        "root": "עדה",
+        "sense": "Adah, one of Lamech’s two wives"
+      },
+      "position": 3,
+      "surface": "עָדָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "zillah"
+        },
+        "evidence": "Lamech speaks לְנָשָׁיו ‘to his wives’ and addresses them by name, עָדָה וְצִלָּה ‘Adah and Zillah’. The feminine plural imperative שְׁמַעַן ‘listen’ addresses both women.",
+        "gloss": "and Zillah",
+        "language": "he",
+        "lemma": "צִלָּה",
+        "morphology": "Conjunction וְ prefixed to a feminine singular proper name used in direct address.",
+        "qualifier": "",
+        "root": "צלל",
+        "sense": "Personal name of the second of Lamech’s two wives."
+      },
+      "position": 4,
+      "surface": "וְצִלָּה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shama"
+        },
+        "evidence": "Lamech addresses Adah and Zillah. His command שְׁמַעַן קוֹלִי, “listen to my voice,” parallels הַאְזֵנָּה אִמְרָתִי, “give ear to my words.” Both commands call on his wives to pay attention to what he is about to say.",
+        "gloss": "listen",
+        "language": "he",
+        "lemma": "שָׁמַע",
+        "morphology": "Qal imperative, second person feminine plural, with the ending ־ַן.",
+        "qualifier": "",
+        "root": "שמע",
+        "sense": "heed what someone says"
+      },
+      "position": 5,
+      "surface": "שְׁמַעַן"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "qol"
+        },
+        "evidence": "Lamech addresses his wives. His appeal שְׁמַעַן קוֹלִי, “hear my voice,” parallels הַאְזֵנָּה אִמְרָתִי, “listen to my words.” He asks them to attend to what he is about to say.",
+        "gloss": "my voice",
+        "language": "he",
+        "lemma": "קוֹל",
+        "morphology": "Masculine singular noun in the construct state with the first-person singular possessive suffix ־ִי.",
+        "qualifier": "",
+        "root": "קול",
+        "sense": "voice (of a person or creature)"
+      },
+      "position": 6,
+      "surface": "קוֹלִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "enosh"
+        },
+        "evidence": "In נְשֵׁי לֶמֶךְ, “wives of Lamech,” לֶמֶךְ completes the construct phrase. Lamech addresses Adah and Zillah, whom the verse has already called לְנָשָׁיו, “his wives.”",
+        "gloss": "wives of",
+        "language": "he",
+        "lemma": "נָשִׁים",
+        "morphology": "Common noun, feminine plural construct, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "אנש",
+        "sense": "wives"
+      },
+      "position": 7,
+      "surface": "נְשֵׁי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "lamech",
+            "base": null,
+            "change": "Add a personal-name article for לֶמֶךְ. Its derivation is unknown.",
+            "definition": "Lamech, the man identified in Genesis 4:19 as the husband of Adah and Zillah.",
+            "evidence": "Genesis 4:19 names Lamech as the man who took two wives and then identifies each wife by name."
+          }
+        },
+        "evidence": "Lamech addresses Adah and Zillah as נְשֵׁי לֶמֶךְ, “wives of Lamech.” The marked name completes the construct phrase and identifies the speaker as their husband.",
+        "gloss": "Lamech",
+        "language": "he",
+        "lemma": "לֶמֶךְ",
+        "morphology": "Masculine singular proper noun in the absolute state, without prefix or suffix.",
+        "qualifier": "",
+        "root": "",
+        "sense": "The personal name of the man who took Adah and Zillah as wives."
+      },
+      "position": 8,
+      "surface": "לֶמֶךְ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ozen"
+        },
+        "evidence": "Lamech addresses his wives, Adah and Zillah. The command הַאְזֵנָּה אִמְרָתִי, “listen to my utterance,” parallels שְׁמַעַן קוֹלִי, “hear my voice.”",
+        "gloss": "listen",
+        "language": "he",
+        "lemma": "אָזַן",
+        "morphology": "Hiphil imperative, second person feminine plural, with the ending ־נָּה.",
+        "qualifier": "",
+        "root": "אזנ",
+        "sense": "give ear, listen"
+      },
+      "position": 9,
+      "surface": "הַאְזֵנָּה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "amar"
+        },
+        "evidence": "Lamech pairs שְׁמַעַן קוֹלִי (“hear my voice”) with הַאְזֵנָּה אִמְרָתִי (“give ear to my saying”). The suffix ־ִי identifies Lamech as the speaker, and the following כִּי clause gives the content of his saying.",
+        "gloss": "my saying",
+        "language": "he",
+        "lemma": "אִמְרָה",
+        "morphology": "Feminine singular noun in the construct state with a first-person singular possessive suffix.",
+        "qualifier": "",
+        "root": "אמר",
+        "sense": "word, saying"
+      },
+      "position": 10,
+      "surface": "אִמְרָתִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ki"
+        },
+        "evidence": "Lamech urges his wives to hear him, then gives them a reason to listen. כִּי introduces his declaration, אִישׁ הָרַגְתִּי, “for I have killed a man.”",
+        "gloss": "for",
+        "language": "he",
+        "lemma": "כִּי",
+        "morphology": "Uninflected conjunction without prefix or suffix",
+        "qualifier": "conjunction",
+        "root": "כי",
+        "sense": "for, because"
+      },
+      "position": 11,
+      "surface": "כִּי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ish"
+        },
+        "evidence": "In אִישׁ הָרַגְתִּי, “a man” is the direct object of “I killed.” The parallel phrase וְיֶלֶד, “and a boy,” also describes the victim.",
+        "gloss": "a man",
+        "language": "he",
+        "lemma": "אִישׁ",
+        "morphology": "Common noun, masculine singular absolute, without prefix or suffix.",
+        "qualifier": "",
+        "root": "איש",
+        "sense": "man, a male"
+      },
+      "position": 12,
+      "surface": "אִישׁ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "harag"
+        },
+        "evidence": "Lamech speaks in the first person. אִישׁ הָרַגְתִּי means “I killed a man,” with אִישׁ as the direct object. The parallel clause וְיֶלֶד לְחַבֻּרָתִי leaves the same verb understood.",
+        "gloss": "I killed",
+        "language": "he",
+        "lemma": "הָרַג",
+        "morphology": "Qal perfect, first person common singular, with the verbal ending ־תִּי.",
+        "qualifier": "",
+        "root": "הרג",
+        "sense": "kill"
+      },
+      "position": 13,
+      "surface": "הָרַגְתִּי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "patsa",
+            "base": null,
+            "change": "Add the root פצע and its masculine noun פֶּצַע with the sense “wound.”",
+            "definition": "A wound or bodily injury inflicted by a blow.",
+            "evidence": "Genesis 4:23 pairs Lamech’s wound with his bruise. Exodus 21:25 likewise names a wound among bodily injuries for which a corresponding injury is reckoned."
+          }
+        },
+        "evidence": "Lamech says he killed a man לְפִצְעִי, “for my wound.” The parallel line puts לְחַבֻּרָתִי, “for my bruise,” in the same position. Both phrases name a bodily injury and give it as Lamech’s reason for killing.",
+        "gloss": "for my wound",
+        "language": "he",
+        "lemma": "פֶּצַע",
+        "morphology": "Preposition לְ expressing the reason for the killing + masculine singular construct noun פֶּצַע + first-person singular possessive suffix ־ִי.",
+        "qualifier": "",
+        "root": "פצע",
+        "sense": "A wound sustained by the speaker."
+      },
+      "position": 14,
+      "surface": "לְפִצְעִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yalad"
+        },
+        "evidence": "In Lamech’s speech, וְיֶלֶד parallels אִישׁ “a man.” The verb הָרַגְתִּי “I killed” carries over into the second line, where יֶלֶד identifies a youthful victim.",
+        "gloss": "and a young man",
+        "language": "he",
+        "lemma": "יֶלֶד",
+        "morphology": "Conjunction וְ־ “and” + masculine singular absolute noun.",
+        "qualifier": "",
+        "root": "ילד",
+        "sense": "youth, young man"
+      },
+      "position": 15,
+      "surface": "וְיֶלֶד"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chaburah"
+        },
+        "evidence": "In Lamech’s speech, לְחַבֻּרָתִי (“for my bruise”) parallels לְפִצְעִי (“for my wound”). Both phrases describe an injury Lamech suffered and give his reason for killing.",
+        "gloss": "for my bruise",
+        "language": "he",
+        "lemma": "חַבּוּרָה",
+        "morphology": "Preposition לְ + feminine singular construct noun + first-person singular possessive suffix ־ִי.",
+        "qualifier": "",
+        "root": "חבר",
+        "sense": "wound"
+      },
+      "position": 16,
+      "surface": "לְחַבֻּרָתִי"
+    }
+  ]
+}

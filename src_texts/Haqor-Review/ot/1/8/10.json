@@ -1,0 +1,252 @@
+{
+  "book": 1,
+  "chapter": 8,
+  "review": {
+    "entities": [],
+    "glosses": [
+      {
+        "gloss": "then he waited",
+        "position": 0
+      },
+      {
+        "gloss": "further",
+        "position": 1
+      },
+      {
+        "gloss": "seven",
+        "position": 2
+      },
+      {
+        "gloss": "days",
+        "position": 3
+      },
+      {
+        "gloss": "more",
+        "position": 4
+      },
+      {
+        "gloss": "and again",
+        "position": 5
+      },
+      {
+        "gloss": "send out",
+        "position": 6
+      },
+      {
+        "gloss": "(untranslated)",
+        "position": 7
+      },
+      {
+        "gloss": "the dove",
+        "position": 8
+      },
+      {
+        "gloss": "from",
+        "position": 9
+      },
+      {
+        "gloss": "the ark",
+        "position": 10
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[Then he waited|0] [another|1,4] [seven|2] [days|3] [and again|5] [sent out|6] [the dove|7,8] [from|9] [the ark|10]."
+  },
+  "source": "ot",
+  "verse": 10,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chayil"
+        },
+        "evidence": "עוֹד שִׁבְעַת יָמִים אֲחֵרִים gives the duration of Noah’s wait, another seven days. He then sends the dove out again.",
+        "gloss": "and he waited",
+        "language": "he",
+        "lemma": "חוּל",
+        "morphology": "Shortened Polel wayyiqtol, third person masculine singular, with prefixed וַ־ and no suffix. The source tags the stem as Piel.",
+        "qualifier": "",
+        "root": "חול",
+        "sense": "wait"
+      },
+      "position": 0,
+      "surface": "וַיָּחֶל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "edut"
+        },
+        "evidence": "After וַיָּחֶל ‘he waited’, עוֹד introduces שִׁבְעַת יָמִים אֲחֵרִים ‘seven other days’. It marks an additional period of waiting before Noah sends the dove out again.",
+        "gloss": "another (seven days)",
+        "language": "he",
+        "lemma": "עוֹד",
+        "morphology": "Uninflected adverb without prefix or suffix.",
+        "qualifier": "",
+        "root": "עוד",
+        "sense": "besides, else, other; another, more"
+      },
+      "position": 1,
+      "surface": "עוֹד"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shaba"
+        },
+        "evidence": "In שִׁבְעַת יָמִים אֲחֵרִים, “seven more days,” שִׁבְעַת is the construct form used to count the masculine plural noun יָמִים. The phrase gives the duration of Noah’s wait.",
+        "gloss": "seven",
+        "language": "he",
+        "lemma": "שֶׁבַע",
+        "morphology": "Masculine singular construct cardinal numeral",
+        "qualifier": "",
+        "root": "שבע",
+        "sense": "seven"
+      },
+      "position": 2,
+      "surface": "שִׁבְעַת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yom"
+        },
+        "evidence": "In שִׁבְעַת יָמִים אֲחֵרִים, “seven more days,” the numeral counts the days Noah waited before sending the dove out again.",
+        "gloss": "days",
+        "language": "he",
+        "lemma": "יוֹם",
+        "morphology": "Common noun, masculine plural absolute, without prefix or suffix.",
+        "qualifier": "",
+        "root": "יומ",
+        "sense": "a day, counted"
+      },
+      "position": 3,
+      "surface": "יָמִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "achar"
+        },
+        "evidence": "In שִׁבְעַת יָמִים אֲחֵרִים, the adjective agrees with יָמִים. Together with עוֹד, it indicates that Noah waited seven more days before sending the dove again.",
+        "gloss": "more",
+        "language": "he",
+        "lemma": "אַחֵר",
+        "morphology": "Masculine plural absolute adjective modifying יָמִים.",
+        "qualifier": "adjective",
+        "root": "אחר",
+        "sense": "another, a further one"
+      },
+      "position": 4,
+      "surface": "אֲחֵרִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yasaph"
+        },
+        "evidence": "וַיֹּסֶף governs the Piel infinitive construct שַׁלַּח, “to send.” After waiting another seven days, Noah sent the dove out from the ark again.",
+        "gloss": "and he again",
+        "language": "he",
+        "lemma": "יָסַף",
+        "morphology": "Hiphil wayyiqtol, third-person masculine singular, with prefixed וַ־.",
+        "qualifier": "",
+        "root": "יספ",
+        "sense": "do again"
+      },
+      "position": 5,
+      "surface": "וַיֹּסֶף"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shalach"
+        },
+        "evidence": "שַׁלַּח complements וַיֹּסֶף, expressing a repeated action. Noah again sent out the dove (אֶת הַיּוֹנָה) from the ark (מִן הַתֵּבָה).",
+        "gloss": "send out",
+        "language": "he",
+        "lemma": "שָׁלַח",
+        "morphology": "Piel infinitive construct, without prefix or suffix",
+        "qualifier": "",
+        "root": "שלח",
+        "sense": "send away"
+      },
+      "position": 6,
+      "surface": "שַׁלַּח"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "et"
+        },
+        "evidence": "אֶת introduces הַיּוֹנָה ‘the dove’ as the definite direct object of שַׁלַּח ‘to send out’. The dove is what Noah sends out from the ark.",
+        "gloss": "(untranslated)",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Direct-object particle, without prefix or suffix.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "(marks the definite object)"
+      },
+      "position": 7,
+      "surface": "אֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yaven"
+        },
+        "evidence": "In שַׁלַּח אֶת הַיּוֹנָה מִן הַתֵּבָה, אֶת marks the dove as the object sent from the ark. וַיֹּסֶף signals that Noah sent it again.",
+        "gloss": "the dove",
+        "language": "he",
+        "lemma": "יוֹנָה",
+        "morphology": "Definite article הַ־ prefixed to a feminine singular absolute common noun.",
+        "qualifier": "noun",
+        "root": "יונ",
+        "sense": "dove, pigeon"
+      },
+      "position": 8,
+      "surface": "הַיּוֹנָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "min"
+        },
+        "evidence": "In שַׁלַּח אֶת הַיּוֹנָה מִן הַתֵּבָה, מִן marks the ark as the place from which Noah sends the dove.",
+        "gloss": "from",
+        "language": "he",
+        "lemma": "מִן",
+        "morphology": "Independent preposition with no prefix or suffix.",
+        "qualifier": "",
+        "root": "מנ",
+        "sense": "from, away from (place, separation)"
+      },
+      "position": 9,
+      "surface": "מִן"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "tevah",
+            "base": null,
+            "change": "Add תֵּבָה under its own consonants, תבה, with the ark and basket uses.",
+            "definition": "A vessel that holds and protects its occupants on water, used of Noah’s ark and of the papyrus basket that held the infant Moses.",
+            "evidence": "In Genesis 7:17 the rising waters lift Noah’s ark, and in Genesis 8:10 he sends the dove from it. In Exodus 2:3 Moses’ mother coats a papyrus תֵּבָה with bitumen and pitch, places him inside, and sets it among the reeds."
+          }
+        },
+        "evidence": "In שַׁלַּח אֶת הַיּוֹנָה מִן הַתֵּבָה, the dove is what Noah sends, and מִן marks the ark as the place he sends it from. The definite article identifies the same vessel into which Noah took the dove when it returned in Genesis 8:9.",
+        "gloss": "the ark",
+        "language": "he",
+        "lemma": "תֵּבָה",
+        "morphology": "Common noun, feminine singular absolute, with the prefixed definite article הַ־.",
+        "qualifier": "",
+        "root": "תבה",
+        "sense": "The vessel that carried Noah, his household, and the animals through the flood."
+      },
+      "position": 10,
+      "surface": "הַתֵּבָה"
+    }
+  ]
+}

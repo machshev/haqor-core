@@ -1,0 +1,242 @@
+{
+  "book": 1,
+  "chapter": 2,
+  "review": {
+    "entities": [
+      {
+        "evidence": "Gihon is explicitly named as the second river in the Eden account.",
+        "key": "Gihon@Gen.2.13",
+        "position": 3
+      },
+      {
+        "evidence": "The phrase “land of Cush” identifies Cush as the territory around which the Gihon flows.",
+        "key": "Cush@Gen.2.13",
+        "position": 9
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "and the name of",
+        "position": 0
+      },
+      {
+        "gloss": "the river",
+        "position": 1
+      },
+      {
+        "gloss": "second",
+        "position": 2
+      },
+      {
+        "gloss": "Gihon",
+        "position": 3
+      },
+      {
+        "gloss": "it",
+        "position": 4
+      },
+      {
+        "gloss": "the one that goes around",
+        "position": 5
+      },
+      {
+        "gloss": "untranslated",
+        "position": 6
+      },
+      {
+        "gloss": "the whole",
+        "position": 7
+      },
+      {
+        "gloss": "land of",
+        "position": 8
+      },
+      {
+        "gloss": "Cush",
+        "position": 9
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[And the name of|0] [the|1] [second|2] [river|1] [{is}|0] [Gihon|3]. [It|4] [goes around|5] [the whole|7,6] [land of|8] [Cush|9]."
+  },
+  "source": "ot",
+  "verse": 13,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "shem",
+            "base": "5ff57a119255ca3775ba1c5592f6cd00e22ec622fafccd6afc08384d01b566fe",
+            "change": "Extend the first Hebrew noun sense in shem to include geographical names and cite Genesis 2:13.",
+            "definition": "A name identifies a person, animal, or place. Here it identifies a river.",
+            "evidence": "Genesis 2:13 explicitly gives Gihon as the name of the second river."
+          }
+        },
+        "evidence": "שֵׁם הַנָּהָר הַשֵּׁנִי means ‘the name of the second river’. The following word גִּיחוֹן supplies that name, Gihon.",
+        "gloss": "and the name of",
+        "language": "he",
+        "lemma": "שֵׁם",
+        "morphology": "Conjunction וְ ‘and’ prefixed to a masculine singular noun in the construct state.",
+        "qualifier": "noun",
+        "root": "שמ",
+        "sense": "The name by which a person, animal, or place is known."
+      },
+      "position": 0,
+      "surface": "וְשֵׁם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "nahar"
+        },
+        "evidence": "הַנָּהָר הַשֵּׁנִי means “the second river.” The verse names this river גִּיחוֹן (Gihon) and describes its course around the land of Cush.",
+        "gloss": "the river",
+        "language": "he",
+        "lemma": "נָהָר",
+        "morphology": "Masculine singular absolute noun with the prefixed definite article הַ־.",
+        "qualifier": "",
+        "root": "נהר",
+        "sense": "river, stream"
+      },
+      "position": 1,
+      "surface": "הַנָּהָר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shanah"
+        },
+        "evidence": "In הַנָּהָר הַשֵּׁנִי, “the second river,” the ordinal agrees with הַנָּהָר in gender, number, and definiteness. It identifies Gihon’s place in the sequence of rivers.",
+        "gloss": "the second",
+        "language": "he",
+        "lemma": "שֵׁנִי",
+        "morphology": "Definite article הַ־ prefixed to a masculine singular absolute ordinal adjective.",
+        "qualifier": "",
+        "root": "שנה",
+        "sense": "second (in order)"
+      },
+      "position": 2,
+      "surface": "הַשֵּׁנִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "giach"
+        },
+        "evidence": "וְשֵׁם הַנָּהָר הַשֵּׁנִי means “and the name of the second river.” גִּיחוֹן supplies that name, and the following clause identifies the river as the one that flows around the whole land of Cush.",
+        "gloss": "Gihon",
+        "language": "he",
+        "lemma": "גִּיחוֹן",
+        "morphology": "Proper noun, singular, absolute, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "גיח",
+        "sense": "Gihon, the second river of Eden"
+      },
+      "position": 3,
+      "surface": "גִּיחוֹן"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "hu"
+        },
+        "evidence": "הוּא refers back to הַנָּהָר הַשֵּׁנִי, the second river, named גִּיחוֹן. It is the subject of הוּא הַסּוֹבֵב, “it is the one that circles,” and agrees with the masculine singular הַנָּהָר.",
+        "gloss": "it",
+        "language": "he",
+        "lemma": "הוּא",
+        "morphology": "Independent personal pronoun, third person masculine singular, without prefix or suffix.",
+        "qualifier": "",
+        "root": "הוא",
+        "sense": "he, it"
+      },
+      "position": 4,
+      "surface": "הוּא"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "savav"
+        },
+        "evidence": "הוּא refers to the river Gihon. The participle הַסּוֹבֵב describes its course, and אֵת marks כָּל־אֶרֶץ כּוּשׁ as its object. Gihon goes around the whole land of Cush.",
+        "gloss": "the one that goes around",
+        "language": "he",
+        "lemma": "סָבַב",
+        "morphology": "Definite article הַ־ prefixed to a Qal active participle, masculine singular absolute.",
+        "qualifier": "",
+        "root": "סבב",
+        "sense": "to go around, encircle"
+      },
+      "position": 5,
+      "surface": "הַסּוֹבֵב"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "et"
+        },
+        "evidence": "אֵת introduces כָּל אֶרֶץ כּוּשׁ, “the whole land of Cush,” as the direct object of הַסּוֹבֵב, “the one that encircles.” The phrase names what the Gihon encircles.",
+        "gloss": "untranslated",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Direct-object particle without prefix or suffix.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "(marks the definite object)"
+      },
+      "position": 6,
+      "surface": "אֵת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "kalal"
+        },
+        "evidence": "In אֵת כָּל אֶרֶץ כּוּשׁ, כָּל modifies אֶרֶץ כּוּשׁ, “the land of Cush.” Gihon encircles the whole of that territory.",
+        "gloss": "the whole of",
+        "language": "he",
+        "lemma": "כֹּל",
+        "morphology": "Masculine singular construct noun, without prefix or suffix.",
+        "qualifier": "",
+        "root": "כלל",
+        "sense": "all, the whole"
+      },
+      "position": 7,
+      "surface": "כָּל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "erets"
+        },
+        "evidence": "In אֶרֶץ כּוּשׁ, the name כּוּשׁ identifies the territory. The verse describes the Gihon as going around כָּל אֶרֶץ כּוּשׁ, “the whole land of Cush.”",
+        "gloss": "land of",
+        "language": "he",
+        "lemma": "אֶרֶץ",
+        "morphology": "Common noun, common gender, singular construct, without prefix or suffix.",
+        "qualifier": "",
+        "root": "ארצ",
+        "sense": "land, country, territory"
+      },
+      "position": 8,
+      "surface": "אֶרֶץ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "cush"
+        },
+        "evidence": "In כָּל אֶרֶץ כּוּשׁ, “the whole land of Cush,” כּוּשׁ names the territory that the Gihon encircles.",
+        "gloss": "Cush",
+        "language": "he",
+        "lemma": "כּוּשׁ",
+        "morphology": "Proper noun, singular, absolute, without prefix or suffix.",
+        "qualifier": "",
+        "root": "כוש",
+        "sense": "Cush (the land)"
+      },
+      "position": 9,
+      "surface": "כּוּשׁ"
+    }
+  ]
+}

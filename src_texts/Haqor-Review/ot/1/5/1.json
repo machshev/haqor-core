@@ -1,0 +1,218 @@
+{
+  "book": 1,
+  "chapter": 5,
+  "source": "ot",
+  "verse": 1,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "zeh"
+        },
+        "evidence": "זֶה is the subject of the verbless clause זֶה סֵפֶר תּוֹלְדֹת אָדָם, “This is the record of Adam’s generations.” The noun phrase beginning with סֵפֶר identifies what “this” refers to.",
+        "gloss": "this",
+        "language": "he",
+        "lemma": "זֶה",
+        "morphology": "Independent masculine singular demonstrative pronoun, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "זה",
+        "sense": "Introduces the written record that follows."
+      },
+      "position": 0,
+      "surface": "זֶה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "saphar"
+        },
+        "evidence": "זֶה סֵפֶר תּוֹלְדֹת אָדָם means “This is the written record of Adam’s generations.” The construct chain identifies the contents of the record as Adam’s genealogy.",
+        "gloss": "written record of",
+        "language": "he",
+        "lemma": "סֵפֶר",
+        "morphology": "Masculine singular noun in the construct state, without prefix or suffix.",
+        "qualifier": "",
+        "root": "ספר",
+        "sense": "scroll, book"
+      },
+      "position": 1,
+      "surface": "סֵפֶר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yalad"
+        },
+        "evidence": "In זֶה סֵפֶר תּוֹלְדֹת אָדָם, the construct noun תּוֹלְדֹת takes אָדָם as its complement. The phrase introduces the written account of Adam’s descendants.",
+        "gloss": "generations of",
+        "language": "he",
+        "lemma": "תּוֹלֵדוֹת",
+        "morphology": "Common noun, feminine plural construct",
+        "qualifier": "",
+        "root": "ילד",
+        "sense": "generations, the account of what came from someone"
+      },
+      "position": 2,
+      "surface": "תּוֹלְדֹת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "adam"
+        },
+        "evidence": "In סֵפֶר תּוֹלְדֹת אָדָם, “the book of the generations of Adam,” אָדָם completes the construct chain and names the ancestor. The genealogy then gives Adam’s age at the birth of Seth (Genesis 5:3).",
+        "gloss": "Adam",
+        "language": "he",
+        "lemma": "אָדָם",
+        "morphology": "Masculine singular proper noun in the absolute state, without prefix or suffix.",
+        "qualifier": "name",
+        "root": "אדמ",
+        "sense": "Adam, the ancestor whose genealogy follows"
+      },
+      "position": 3,
+      "surface": "אָדָם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yom"
+        },
+        "evidence": "בְּיוֹם governs the infinitive construct בְּרֹא. The phrase בְּיוֹם בְּרֹא אֱלֹהִים אָדָם means “when God created humankind” and gives the time of עָשָׂה אֹתוֹ, “he made him.”",
+        "gloss": "on the day when",
+        "language": "he",
+        "lemma": "יוֹם",
+        "morphology": "Masculine singular construct noun with the prefixed preposition בְּ.",
+        "qualifier": "",
+        "root": "יומ",
+        "sense": "the time when; on the day that"
+      },
+      "position": 4,
+      "surface": "בְּיוֹם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "bara"
+        },
+        "evidence": "בְּיוֹם בְּרֹא אֱלֹהִים אָדָם means “when God created humankind.” אֱלֹהִים is the subject of the infinitive and אָדָם its object. The following clause describes the same act as making humankind in God’s likeness.",
+        "gloss": "created",
+        "language": "he",
+        "lemma": "בָּרָא",
+        "morphology": "Qal infinitive construct, with no prefix or suffix. The initial ב is the first root consonant.",
+        "qualifier": "",
+        "root": "ברא",
+        "sense": "create"
+      },
+      "position": 5,
+      "surface": "בְּרֹא"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "In בְּיוֹם בְּרֹא אֱלֹהִים אָדָם, אֱלֹהִים is the subject of בְּרֹא, “to create,” and אָדָם is its object. The verse then refers to the same creator with the masculine singular verb עָשָׂה, “he made.”",
+        "gloss": "God",
+        "language": "he",
+        "lemma": "אֱלֹהִים",
+        "morphology": "Common noun, masculine plural absolute, with singular reference. No prefix or suffix.",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "the Mighty One, God"
+      },
+      "position": 6,
+      "surface": "אֱלֹהִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "adam"
+        },
+        "evidence": "In בְּיוֹם בְּרֹא אֱלֹהִים אָדָם, אָדָם is the object of בְּרֹא, “when God created humankind.” The reference to making humankind in God’s likeness echoes Genesis 1:26–27. The singular אֹתוֹ agrees with the grammatically singular אָדָם.",
+        "gloss": "humankind",
+        "language": "he",
+        "lemma": "אָדָם",
+        "morphology": "Masculine singular common noun in the absolute state, used collectively, with no prefix or suffix.",
+        "qualifier": "noun",
+        "root": "אדמ",
+        "sense": "man, mankind"
+      },
+      "position": 7,
+      "surface": "אָדָם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "dimyon"
+        },
+        "evidence": "In בִּדְמוּת אֱלֹהִים עָשָׂה אֹתוֹ, the construct noun takes אֱלֹהִים as its complement. The phrase describes how God made the human, in the likeness of God.",
+        "gloss": "in the likeness of",
+        "language": "he",
+        "lemma": "דְּמוּת",
+        "morphology": "Prefixed preposition בִּ «in» + feminine singular common noun in the construct state.",
+        "qualifier": "",
+        "root": "דמה",
+        "sense": "likeness, representation"
+      },
+      "position": 8,
+      "surface": "בִּדְמוּת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "In בִּדְמוּת אֱלֹהִים, “in the likeness of God,” the marked noun identifies whose likeness Adam bears. It refers to the creator named earlier in the verse, who is also the subject of the singular עָשָׂה, “he made.”",
+        "gloss": "God",
+        "language": "he",
+        "lemma": "אֱלֹהִים",
+        "morphology": "Common noun, masculine plural absolute, with singular reference.",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "the Mighty One, God"
+      },
+      "position": 9,
+      "surface": "אֱלֹהִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "asah"
+        },
+        "evidence": "The clause בִּדְמוּת אֱלֹהִים עָשָׂה אֹתוֹ means “in the likeness of God he made him.” It echoes בְּרֹא אֱלֹהִים אָדָם, “when God created humankind,” which identifies God as the maker and אָדָם as the referent of אֹתוֹ.",
+        "gloss": "he made",
+        "language": "he",
+        "lemma": "עָשָׂה",
+        "morphology": "Qal perfect, third person masculine singular, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "עשׂה",
+        "sense": "make, bring into being"
+      },
+      "position": 10,
+      "surface": "עָשָׂה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "et",
+            "base": "31c9a635be8bba9a67417e75ea7122e240ae707e04a841533a59ecd2869d0f80",
+            "change": "Add Gen.5.1 to the existing object-pronoun sense of the particle in et.",
+            "definition": "With a pronominal suffix, אֵת expresses the direct object separately from the verb.",
+            "evidence": "In Gen.5.1, עָשָׂה אֹתוֹ means “he made him.” The suffix refers to אָדָם in the preceding clause."
+          }
+        },
+        "evidence": "בְּרֹא אֱלֹהִים אָדָם names אָדָם as the one God created. עָשָׂה אֹתוֹ then refers back to him as the one God made in his likeness.",
+        "gloss": "him",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Direct-object particle in its suffixed form אֹת־ with the third-person masculine singular pronominal suffix ־וֹ.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "Carries a suffix that expresses the direct object of a verb."
+      },
+      "position": 11,
+      "surface": "אֹתוֹ"
+    }
+  ]
+}

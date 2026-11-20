@@ -1,0 +1,173 @@
+{
+  "book": 1,
+  "chapter": 6,
+  "source": "ot",
+  "verse": 10,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yalad"
+        },
+        "evidence": "נֹחַ is the subject of וַיּוֹלֶד. The object שְׁלֹשָׁה בָנִים means “three sons,” whom the verse names as Shem, Ham, and Japheth.",
+        "gloss": "and he fathered",
+        "language": "he",
+        "lemma": "יָלַד",
+        "morphology": "Hiphil wayyiqtol, third person masculine singular, with prefixed וַ and no suffix",
+        "qualifier": "",
+        "root": "ילד",
+        "sense": "beget, father a child"
+      },
+      "position": 0,
+      "surface": "וַיּוֹלֶד"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "noah-son-of-lamech",
+            "base": null,
+            "change": "Add a personal-name article for נֹחַ linked to the root article nuach.",
+            "definition": "Noah, the son whom Lamech names in hope of relief from toil.",
+            "evidence": "Genesis 5:29 gives the name נֹחַ and explains it through the wordplay on יְנַחֲמֵנוּ, “he will comfort us.”"
+          }
+        },
+        "evidence": "נֹחַ is the subject of וַיּוֹלֶד, “he fathered.” The verse names his three sons as Shem, Ham, and Japheth, identifying him as the same Noah whom Lamech named in Genesis 5:29.",
+        "gloss": "Noah",
+        "language": "he",
+        "lemma": "נֹחַ",
+        "morphology": "Masculine singular personal name in the absolute state, without prefix or suffix.",
+        "qualifier": "",
+        "root": "נוח",
+        "sense": "Noah, son of Lamech"
+      },
+      "position": 1,
+      "surface": "נֹחַ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shalosh"
+        },
+        "evidence": "שְׁלֹשָׁה counts the masculine plural בָנִים. The verse names Noah’s three sons individually: Shem, Ham, and Japheth.",
+        "gloss": "three",
+        "language": "he",
+        "lemma": "שָׁלֹשׁ",
+        "morphology": "Masculine singular absolute cardinal numeral",
+        "qualifier": "",
+        "root": "שלש",
+        "sense": "three"
+      },
+      "position": 2,
+      "surface": "שְׁלֹשָׁה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "et"
+        },
+        "evidence": "אֶת introduces שֵׁם, the first of the three sons named as objects of וַיּוֹלֶד ‘he fathered’. The marker recurs before חָם and יָפֶת.",
+        "gloss": "(untranslated)",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Uninflected direct-object marker with no prefix or suffix.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "(marks the definite object)"
+      },
+      "position": 4,
+      "surface": "אֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shem-son-of-noah"
+        },
+        "evidence": "After stating that Noah fathered three sons, the verse names them in order. שֵׁם is the first name, followed by חָם and יָפֶת, each introduced by אֶת.",
+        "gloss": "Shem",
+        "language": "he",
+        "lemma": "שֵׁם",
+        "morphology": "Masculine singular proper noun, without prefix or suffix. The preceding אֶת is a separate direct-object marker.",
+        "qualifier": "name",
+        "root": "שמ",
+        "sense": "Shem, son of Noah"
+      },
+      "position": 5,
+      "surface": "שֵׁם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "et"
+        },
+        "evidence": "אֶת introduces חָם (Ham), the second of the three sons named as objects of וַיּוֹלֶד (‘he fathered’). The marker appears before each son’s name.",
+        "gloss": "(direct-object marker, untranslated)",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Uninflected direct-object particle without prefix or suffix.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "(marks the definite object)"
+      },
+      "position": 6,
+      "surface": "אֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ham"
+        },
+        "evidence": "The verse says Noah fathered three sons. The direct-object marker אֶת introduces חָם as the second son listed, between שֵׁם and יָפֶת.",
+        "gloss": "Ham",
+        "language": "he",
+        "lemma": "חָם",
+        "morphology": "Masculine singular proper noun with no prefix or suffix",
+        "qualifier": "personal name",
+        "root": "חמ",
+        "sense": "Ham, son of Noah"
+      },
+      "position": 7,
+      "surface": "חָם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "et",
+            "base": "31c9a635be8bba9a67417e75ea7122e240ae707e04a841533a59ecd2869d0f80",
+            "change": "Add Genesis 6:10 as an example under the existing definite-object sense of אֵת in et.",
+            "definition": "Introduces a definite direct object, including a proper name in a coordinated list.",
+            "evidence": "Genesis 6:10 repeats אֶת before each of Noah’s three sons’ names. In וְאֶת יָפֶת the conjunction joins Japheth to Shem and Ham."
+          }
+        },
+        "evidence": "In אֶת שֵׁם אֶת חָם וְאֶת יָפֶת, each name has its own object marker. The three names identify the שְׁלֹשָׁה בָנִים, “three sons,” whom Noah fathered. At the marked occurrence, וְ־ introduces the final name and אֶת marks יָפֶת as the third son.",
+        "gloss": "and [object marker]",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Prefixed coordinating conjunction וְ־ “and” + unsuffixed definite direct-object marker אֶת.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "Marks a definite direct object."
+      },
+      "position": 8,
+      "surface": "וְאֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "japheth"
+        },
+        "evidence": "The verse says Noah fathered three sons. The direct-object marker introduces each name in turn, and וְאֶת יָפֶת identifies Japheth as the third son listed, after Shem and Ham.",
+        "gloss": "Japheth",
+        "language": "he",
+        "lemma": "יֶפֶת",
+        "morphology": "Masculine singular personal name in pausal form יָפֶת, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "פתה",
+        "sense": "Japheth, son of Noah"
+      },
+      "position": 9,
+      "surface": "יָפֶת"
+    }
+  ]
+}

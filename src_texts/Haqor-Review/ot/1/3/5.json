@@ -1,0 +1,258 @@
+{
+  "book": 1,
+  "chapter": 3,
+  "source": "ot",
+  "verse": 5,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ki"
+        },
+        "evidence": "The opening כִּי introduces the serpent’s reason for his preceding denial: “for God knows.” The second כִּי introduces the content of what God knows.",
+        "gloss": "for",
+        "language": "he",
+        "lemma": "כִּי",
+        "morphology": "Uninflected conjunction without prefix or suffix",
+        "qualifier": "conjunction",
+        "root": "כי",
+        "sense": "for, because"
+      },
+      "position": 0,
+      "surface": "כִּי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yada"
+        },
+        "evidence": "In יֹדֵעַ אֱלֹהִים, God is the subject. The following כִּי introduces what the serpent says God knows, namely that when the addressees eat from the tree, their eyes will be opened and they will be like God, knowing good and evil.",
+        "gloss": "knows",
+        "language": "he",
+        "lemma": "יָדַע",
+        "morphology": "Qal active participle, masculine singular absolute, used predicatively",
+        "qualifier": "",
+        "root": "ידע",
+        "sense": "to know that something is the case"
+      },
+      "position": 1,
+      "surface": "יֹדֵעַ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "In יֹדֵעַ אֱלֹהִים, “God knows,” the masculine singular participle יֹדֵעַ agrees with אֱלֹהִים as its subject, identifying a single knower.",
+        "gloss": "God",
+        "language": "he",
+        "lemma": "אֱלֹהִים",
+        "morphology": "Masculine plural absolute noun with singular agreement. No prefix or suffix.",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "the Mighty One, God"
+      },
+      "position": 2,
+      "surface": "אֱלֹהִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ki"
+        },
+        "evidence": "After יֹדֵעַ אֱלֹהִים (“God knows”), the marked כִּי introduces what God knows: that when you eat from it, your eyes will open and you will be like God, knowing good and evil.",
+        "gloss": "that",
+        "language": "he",
+        "lemma": "כִּי",
+        "morphology": "Subordinating conjunction without prefix or suffix.",
+        "qualifier": "conjunction",
+        "root": "כי",
+        "sense": "that (what is seen, known or said)"
+      },
+      "position": 3,
+      "surface": "כִּי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yom"
+        },
+        "evidence": "בְּיוֹם governs the infinitive construct אֲכָלְכֶם, whose suffix identifies the eaters as “you” (plural). The phrase בְּיוֹם אֲכָלְכֶם מִמֶּנּוּ means “when you eat from it” and specifies when their eyes will open.",
+        "gloss": "when",
+        "language": "he",
+        "lemma": "יוֹם",
+        "morphology": "Noun, masculine singular construct, with prefixed preposition בְּ.",
+        "qualifier": "",
+        "root": "יומ",
+        "sense": "the time when; on the day that"
+      },
+      "position": 4,
+      "surface": "בְּיוֹם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "akal"
+        },
+        "evidence": "בְּיוֹם אֲכָלְכֶם מִמֶּנּוּ means “when you eat from it.” The suffix identifies the addressees as those who eat, and מִמֶּנּוּ specifies what they eat from.",
+        "gloss": "you eat",
+        "language": "he",
+        "lemma": "אָכַל",
+        "morphology": "Qal infinitive construct with the second-person masculine plural suffix ־כֶם marking the subject.",
+        "qualifier": "",
+        "root": "אכל",
+        "sense": "eat"
+      },
+      "position": 5,
+      "surface": "אֲכָלְכֶם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "min",
+            "base": "a8ed885685f881ad58d16600265c2176cd484c41c6480205b1d0941d765b8fa6",
+            "change": "Add Genesis 3:5 as an example of the existing partitive sense, min-some-of.",
+            "definition": "With a verb of eating, מִן marks the food of which someone eats a part.",
+            "evidence": "Genesis 3:5 repeats the suffixed preposition used with the same verb in Genesis 3:3."
+          }
+        },
+        "evidence": "בְּיוֹם אֲכָלְכֶם מִמֶּנּוּ means “when you eat of it.” The serpent repeats the woman’s לֹא תֹאכְלוּ מִמֶּנּוּ in Genesis 3:3. Her words identify what they would eat as the fruit of the tree.",
+        "gloss": "of it",
+        "language": "he",
+        "lemma": "מִן",
+        "morphology": "Preposition with a third-person masculine singular pronominal suffix.",
+        "qualifier": "",
+        "root": "מנ",
+        "sense": "Partitive, marking what someone eats some of."
+      },
+      "position": 6,
+      "surface": "מִמֶּנּוּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "paqach",
+            "base": null,
+            "change": "Add the Hebrew verb פָּקַח under פקח with its Niphal sense attested in Genesis 3:5.",
+            "definition": "In the Niphal, eyes are opened, enabling a person to perceive what was previously unrecognized.",
+            "evidence": "In Genesis 3:5 the serpent links the opening of the hearers’ eyes with knowing good and evil."
+          }
+        },
+        "evidence": "עֵינֵיכֶם, “your eyes,” is the subject of וְנִפְקְחוּ. The serpent predicts that their eyes will be opened when they eat, then describes them as יֹדְעֵי טוֹב וָרָע, “knowing good and evil.” This connects the opening of their eyes with a change in what they perceive.",
+        "gloss": "and will be opened",
+        "language": "he",
+        "lemma": "פָּקַח",
+        "morphology": "וְ prefixed to the Niphal perfect, third person common plural. The ending וּ agrees with עֵינֵיכֶם, “your eyes.” The weqatal expresses the predicted result of eating.",
+        "qualifier": "",
+        "root": "פקח",
+        "sense": "For eyes to be opened so that a person perceives something previously unrecognized."
+      },
+      "position": 7,
+      "surface": "וְנִפְקְחוּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ayin"
+        },
+        "evidence": "The serpent promises וְנִפְקְחוּ עֵינֵיכֶם, “your eyes will be opened.” The following phrase יֹדְעֵי טוֹב וָרָע, “knowing good and evil,” explains the opening of their eyes as gaining understanding.",
+        "gloss": "your eyes",
+        "language": "he",
+        "lemma": "עַיִן",
+        "morphology": "Common noun, dual construct, with a second-person masculine plural possessive suffix.",
+        "qualifier": "",
+        "root": "עינ",
+        "sense": "eyes to see: perception, understanding"
+      },
+      "position": 8,
+      "surface": "עֵינֵיכֶם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "hayah"
+        },
+        "evidence": "The serpent predicts what will follow when the hearers eat. After “your eyes will be opened,” כֵּאלֹהִים describes what they will become like, and יֹדְעֵי טוֹב וָרָע specifies the point of likeness: knowing good and evil.",
+        "gloss": "and you will become",
+        "language": "he",
+        "lemma": "הָיָה",
+        "morphology": "Qal perfect, second masculine plural, with prefixed conjunction וִ־ (weqatal), expressing a predicted result",
+        "qualifier": "",
+        "root": "היה",
+        "sense": "to become"
+      },
+      "position": 9,
+      "surface": "וִהְיִיתֶם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "The serpent first says יֹדֵעַ אֱלֹהִים, “God knows,” with a singular participle. The repetition in כֵּאלֹהִים naturally points back to that same God. The plural יֹדְעֵי, “knowing,” can describe the plural addressees of וִהְיִיתֶם, “you will be,” and specifies how they will resemble God.",
+        "gloss": "like God",
+        "language": "he",
+        "lemma": "אֱלֹהִים",
+        "morphology": "Comparative prefix כֵּ־ attached to a masculine plural absolute noun.",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "the Mighty One, God"
+      },
+      "position": 10,
+      "surface": "כֵּאלֹהִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yada"
+        },
+        "evidence": "The plural participle יֹדְעֵי describes those addressed by וִהְיִיתֶם (“you will be”). Its construct form links it to טוֹב וָרָע (“good and evil”), specifying what they will be able to discern.",
+        "gloss": "knowing",
+        "language": "he",
+        "lemma": "יָדַע",
+        "morphology": "Qal active participle, masculine plural construct",
+        "qualifier": "",
+        "root": "ידע",
+        "sense": "to discern good and evil"
+      },
+      "position": 11,
+      "surface": "יֹדְעֵי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "tov"
+        },
+        "evidence": "In יֹדְעֵי טוֹב וָרָע, “knowing good and evil,” טוֹב and רָע form a pair of opposites specifying what will be known.",
+        "gloss": "good",
+        "language": "he",
+        "lemma": "טוֹב",
+        "morphology": "Masculine singular absolute adjective used substantivally, with no prefix or suffix.",
+        "qualifier": "adjective",
+        "root": "טוב",
+        "sense": "good (and evil): to know, discern or choose"
+      },
+      "position": 12,
+      "surface": "טוֹב"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ra"
+        },
+        "evidence": "In יֹדְעֵי טוֹב וָרָע, “knowing good and evil,” וָ־ joins רָע to טוֹב. The two terms name what is known.",
+        "gloss": "and evil",
+        "language": "he",
+        "lemma": "רַע",
+        "morphology": "Conjunction וָ־ prefixed to a masculine singular absolute form used substantivally. רָע is the pausal form of רַע.",
+        "qualifier": "noun",
+        "root": "רעע",
+        "sense": "(with טוֹב) good and evil"
+      },
+      "position": 13,
+      "surface": "וָרָע"
+    }
+  ]
+}

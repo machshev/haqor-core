@@ -1,0 +1,141 @@
+{
+  "book": 1,
+  "chapter": 1,
+  "review": {
+    "entities": [],
+    "glosses": [
+      {
+        "gloss": "then there was",
+        "position": 0
+      },
+      {
+        "gloss": "evening",
+        "position": 1
+      },
+      {
+        "gloss": "and there was",
+        "position": 2
+      },
+      {
+        "gloss": "morning",
+        "position": 3
+      },
+      {
+        "gloss": "day",
+        "position": 4
+      },
+      {
+        "gloss": "third",
+        "position": 5
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[Then there was|0] [evening|1], [and there was|2] [morning|3], [the|4] [third|5] [day|4]."
+  },
+  "source": "ot",
+  "verse": 13,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "hayah"
+        },
+        "evidence": "עֶרֶב is the subject of וַיְהִי. The parallel clauses describe evening coming and then morning coming, in sequence on the third day.",
+        "gloss": "and there came",
+        "language": "he",
+        "lemma": "הָיָה",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ־.",
+        "qualifier": "",
+        "root": "היה",
+        "sense": "to come to pass"
+      },
+      "position": 0,
+      "surface": "וַיְהִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "erev"
+        },
+        "evidence": "The parallel clauses וַיְהִי עֶרֶב and וַיְהִי בֹקֶר pair evening with morning in the account of the third day.",
+        "gloss": "evening",
+        "language": "he",
+        "lemma": "עֶרֶב",
+        "morphology": "Common noun, masculine singular absolute, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "ערב",
+        "sense": "evening, sunset"
+      },
+      "position": 1,
+      "surface": "עֶרֶב"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "hayah"
+        },
+        "evidence": "The marked וַיְהִי has בֹקֶר as its subject. It parallels וַיְהִי עֶרֶב, narrating the arrival of morning after evening on the third day.",
+        "gloss": "and morning came",
+        "language": "he",
+        "lemma": "הָיָה",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ־",
+        "qualifier": "",
+        "root": "היה",
+        "sense": "to come to pass"
+      },
+      "position": 2,
+      "surface": "וַיְהִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "baqar"
+        },
+        "evidence": "The parallel clauses וַיְהִי עֶרֶב and וַיְהִי בֹקֶר pair evening with morning in the account of the third day. בֹקֶר is the subject of the second וַיְהִי.",
+        "gloss": "morning",
+        "language": "he",
+        "lemma": "בֹּקֶר",
+        "morphology": "Common noun, masculine singular absolute, without prefix or suffix.",
+        "qualifier": "",
+        "root": "בקר",
+        "sense": "morning"
+      },
+      "position": 3,
+      "surface": "בֹקֶר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yom"
+        },
+        "evidence": "The ordinal שְׁלִישִׁי (‘third’) modifies יוֹם, counting the day marked by the evening and morning.",
+        "gloss": "day",
+        "language": "he",
+        "lemma": "יוֹם",
+        "morphology": "Masculine singular absolute noun.",
+        "qualifier": "",
+        "root": "יומ",
+        "sense": "a day, counted"
+      },
+      "position": 4,
+      "surface": "יוֹם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shalosh"
+        },
+        "evidence": "In יוֹם שְׁלִישִׁי, the adjective agrees with יוֹם in gender and number and identifies the day as the third in the creation sequence.",
+        "gloss": "third",
+        "language": "he",
+        "lemma": "שְׁלִישִׁי",
+        "morphology": "Ordinal adjective, masculine singular absolute, without prefix or suffix.",
+        "qualifier": "",
+        "root": "שלש",
+        "sense": "third (in order)"
+      },
+      "position": 5,
+      "surface": "שְׁלִישִׁי"
+    }
+  ]
+}

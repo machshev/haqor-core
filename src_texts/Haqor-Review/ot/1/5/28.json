@@ -1,0 +1,216 @@
+{
+  "book": 1,
+  "chapter": 5,
+  "review": {
+    "entities": [
+      {
+        "evidence": "Genesis 5:25 identifies this Lamech as Methuselah’s son, and 5:29 names his son Noah. The Lamech of Genesis 4:18 is Methushael’s son.",
+        "key": "Lamech@Gen.5.25",
+        "position": 1
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "and he lived",
+        "position": 0
+      },
+      {
+        "gloss": "Lamech",
+        "position": 1
+      },
+      {
+        "gloss": "two",
+        "position": 2
+      },
+      {
+        "gloss": "and eighty",
+        "position": 3
+      },
+      {
+        "gloss": "years",
+        "position": 4
+      },
+      {
+        "gloss": "and a hundred",
+        "position": 5
+      },
+      {
+        "gloss": "years",
+        "position": 6
+      },
+      {
+        "gloss": "then he fathered",
+        "position": 7
+      },
+      {
+        "gloss": "a son",
+        "position": 8
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[And|0] [Lamech|1] [lived|0] [182 years|6,5,4,3,2], [then he fathered|7] [a son|8],"
+  },
+  "source": "ot",
+  "verse": 28,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chayah"
+        },
+        "evidence": "לֶמֶךְ is the subject of וַיְחִי. The following numerals give the duration of Lamech’s life before he fathered a son, 182 years.",
+        "gloss": "and he lived",
+        "language": "he",
+        "lemma": "חָיָה",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ־ and no suffix",
+        "qualifier": "",
+        "root": "חיה",
+        "sense": "live for a stated length of time"
+      },
+      "position": 0,
+      "surface": "וַיְחִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "lamech",
+            "base": null,
+            "change": "Add a personal-name article for לֶמֶךְ with the derivation left open.",
+            "definition": "A Hebrew masculine personal name, borne here by the son of Methuselah.",
+            "evidence": "Genesis 5:25 names the child in וַיּוֹלֶד אֶת לָמֶךְ, “and he fathered Lamech.”"
+          }
+        },
+        "evidence": "Genesis 5:25 identifies Lamech as Methuselah’s son. In 5:28, לֶמֶךְ is the subject of וַיְחִי, “he lived,” and remains the subject of וַיּוֹלֶד בֵּן, “he fathered a son.”",
+        "gloss": "Lamech",
+        "language": "he",
+        "lemma": "לֶמֶךְ",
+        "morphology": "Masculine singular proper noun without prefix or suffix.",
+        "qualifier": "",
+        "root": "",
+        "sense": "Lamech, the son of Methuselah"
+      },
+      "position": 1,
+      "surface": "לֶמֶךְ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shanah"
+        },
+        "evidence": "שְׁתַּיִם agrees with the feminine noun שָׁנָה and supplies the units in Lamech’s age: two plus eighty plus one hundred years.",
+        "gloss": "two",
+        "language": "he",
+        "lemma": "שְׁנַיִם",
+        "morphology": "Cardinal numeral, feminine dual absolute",
+        "qualifier": "",
+        "root": "שנה",
+        "sense": "two"
+      },
+      "position": 2,
+      "surface": "שְׁתַּיִם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shemen"
+        },
+        "evidence": "In שְׁתַּיִם וּשְׁמֹנִים שָׁנָה, two and eighty make eighty-two years. The following וּמְאַת שָׁנָה adds one hundred years, giving Lamech’s age as 182.",
+        "gloss": "and eighty",
+        "language": "he",
+        "lemma": "שְׁמֹנִים",
+        "morphology": "Conjunction וּ־ prefixed to a cardinal numeral, common gender, plural absolute.",
+        "qualifier": "",
+        "root": "שמנ",
+        "sense": "eighty"
+      },
+      "position": 3,
+      "surface": "וּשְׁמֹנִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shanah"
+        },
+        "evidence": "In שְׁתַּיִם וּשְׁמֹנִים שָׁנָה, the singular noun supplies the unit for “eighty-two.” The following וּמְאַת שָׁנָה adds a hundred years, giving Lamech’s age as 182 when he fathered a son.",
+        "gloss": "years",
+        "language": "he",
+        "lemma": "שָׁנָה",
+        "morphology": "Feminine singular absolute noun, without prefix or suffix.",
+        "qualifier": "noun",
+        "root": "שנה",
+        "sense": "years of a life, age"
+      },
+      "position": 4,
+      "surface": "שָׁנָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "meah"
+        },
+        "evidence": "מְאַת stands in construct before שָׁנָה ‘year’. The conjunction adds a hundred years to the preceding eighty-two, giving Lamech’s age as 182 when he fathered a son.",
+        "gloss": "and a hundred",
+        "language": "he",
+        "lemma": "מֵאָה",
+        "morphology": "Conjunction וּ־ ‘and’ + feminine singular construct numeral מְאַת ‘a hundred’.",
+        "qualifier": "",
+        "root": "מאה",
+        "sense": "a hundred (a count)"
+      },
+      "position": 5,
+      "surface": "וּמְאַת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shanah"
+        },
+        "evidence": "In וּמְאַת שָׁנָה, “and a hundred years,” מְאַת is the construct form of “hundred” and שָׁנָה supplies the unit. These hundred years complete the count of 182 years that Lamech lived before he fathered a son.",
+        "gloss": "years",
+        "language": "he",
+        "lemma": "שָׁנָה",
+        "morphology": "Common noun, feminine singular absolute, with no prefix or suffix.",
+        "qualifier": "noun",
+        "root": "שנה",
+        "sense": "years of a life, age"
+      },
+      "position": 6,
+      "surface": "שָׁנָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yalad"
+        },
+        "evidence": "לֶמֶךְ is the subject of וַיּוֹלֶד, and בֵּן is its direct object. After stating Lamech’s age, the verse says that he fathered a son.",
+        "gloss": "and he fathered",
+        "language": "he",
+        "lemma": "יָלַד",
+        "morphology": "Hiphil wayyiqtol, third person masculine singular, with prefixed וַ־",
+        "qualifier": "",
+        "root": "ילד",
+        "sense": "beget, father a child"
+      },
+      "position": 7,
+      "surface": "וַיּוֹלֶד"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ben"
+        },
+        "evidence": "In וַיּוֹלֶד בֵּן, “he fathered a son,” בֵּן is the direct object of וַיּוֹלֶד and identifies Lamech’s child as male.",
+        "gloss": "a son",
+        "language": "he",
+        "lemma": "בֵּן",
+        "morphology": "Common noun, masculine singular absolute, without prefix or suffix.",
+        "qualifier": "",
+        "root": "בנה",
+        "sense": "son, male child"
+      },
+      "position": 8,
+      "surface": "בֵּן"
+    }
+  ]
+}

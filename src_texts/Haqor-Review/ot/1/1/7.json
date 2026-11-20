@@ -1,0 +1,292 @@
+{
+  "book": 1,
+  "chapter": 1,
+  "source": "ot",
+  "verse": 7,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "asah"
+        },
+        "evidence": "אֱלֹהִים is the subject, and אֶת marks הָרָקִיעַ as the direct object: God made the expanse. The following verb וַיַּבְדֵּל describes the separation of the waters.",
+        "gloss": "and he made",
+        "language": "he",
+        "lemma": "עָשָׂה",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ־ and an apocopated verbal form.",
+        "qualifier": "",
+        "root": "עשׂה",
+        "sense": "make, bring into being"
+      },
+      "position": 0,
+      "surface": "וַיַּעַשׂ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "אֱלֹהִים is the subject of וַיַּעַשׂ (“he made”) and וַיַּבְדֵּל (“he separated”). Both verbs are third-person masculine singular, identifying God as the one who made the expanse and separated the waters.",
+        "gloss": "God",
+        "language": "he",
+        "lemma": "אֱלֹהִים",
+        "morphology": "Masculine plural absolute noun with singular reference",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "the Mighty One, God"
+      },
+      "position": 1,
+      "surface": "אֱלֹהִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "et"
+        },
+        "evidence": "In וַיַּעַשׂ אֱלֹהִים אֶת הָרָקִיעַ, “God made the expanse,” אֶת marks הָרָקִיעַ as the definite direct object of וַיַּעַשׂ.",
+        "gloss": "(untranslated)",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Direct-object particle without prefix or suffix.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "(marks the definite object)"
+      },
+      "position": 2,
+      "surface": "אֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "raqia"
+        },
+        "evidence": "אֶת marks הָרָקִיעַ as the direct object of וַיַּעַשׂ, identifying the expanse as what God made. The verse then distinguishes the waters below the expanse from the waters above it.",
+        "gloss": "the expanse",
+        "language": "he",
+        "lemma": "רָקִיעַ",
+        "morphology": "Masculine singular common noun in the absolute state, with the prefixed definite article הָ־.",
+        "qualifier": "",
+        "root": "רקע",
+        "sense": "expanse"
+      },
+      "position": 3,
+      "surface": "הָרָקִיעַ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "badal",
+            "base": null,
+            "change": "Add the Hebrew verb בָּדַל with its Hiphil sense of separating.",
+            "definition": "To separate one thing from another.",
+            "evidence": "In Gen.1.4, God separates light from darkness. The repeated בֵּין introduces each member of the pair."
+          }
+        },
+        "evidence": "אֱלֹהִים continues as the subject. The paired בֵּין and וּבֵין identify what God separated: the waters below the expanse and the waters above it.",
+        "gloss": "and he separated",
+        "language": "he",
+        "lemma": "בָּדַל",
+        "morphology": "Hiphil wayyiqtol, third person masculine singular, with prefixed וַ־",
+        "qualifier": "",
+        "root": "בדל",
+        "sense": "to separate one thing from another"
+      },
+      "position": 4,
+      "surface": "וַיַּבְדֵּל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "bayin"
+        },
+        "evidence": "After וַיַּבְדֵּל ‘he separated’, בֵּין introduces the waters below the expanse. The matching וּבֵין introduces the waters above it. The two groups are separated by their location.",
+        "gloss": "between",
+        "language": "he",
+        "lemma": "בַּיִן",
+        "morphology": "Unsuffixed preposition בֵּין with no prefix.",
+        "qualifier": "",
+        "root": "בינ",
+        "sense": "between (in place)"
+      },
+      "position": 5,
+      "surface": "בֵּין"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ashar"
+        },
+        "evidence": "אֲשֶׁר introduces the clause מִתַּחַת לָרָקִיעַ describing הַמַּיִם, giving “the waters which were below the expanse.” The verb “were” is understood from the Hebrew verbless clause.",
+        "gloss": "which",
+        "language": "he",
+        "lemma": "אֲשֶׁר",
+        "morphology": "Invariable relative particle without prefix or suffix.",
+        "qualifier": "",
+        "root": "אשר",
+        "sense": "who, which, that"
+      },
+      "position": 7,
+      "surface": "אֲשֶׁר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "tachat"
+        },
+        "evidence": "Both groups of waters are located relative to the expanse. מִתַּחַת לָרָקִיעַ places the first group below it, and the parallel מֵעַל לָרָקִיעַ places the second group above it.",
+        "gloss": "below",
+        "language": "he",
+        "lemma": "תַּחַת",
+        "morphology": "Preposition תַּחַת with prefixed מִן. The נ assimilates to the initial ת, yielding מִתַּחַת.",
+        "qualifier": "",
+        "root": "תחת",
+        "sense": "under, beneath, below"
+      },
+      "position": 8,
+      "surface": "מִתַּחַת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "raqia"
+        },
+        "evidence": "In מִתַּחַת לָרָקִיעַ, “below the expanse,” לָ introduces the reference point for מִתַּחַת. The noun refers back to הָרָקִיעַ, the expanse God made, and the verse contrasts the waters below it with the waters above it.",
+        "gloss": "the expanse",
+        "language": "he",
+        "lemma": "רָקִיעַ",
+        "morphology": "Preposition לְ with the definite article הַ, realized together as לָ before ר, followed by a masculine singular absolute noun.",
+        "qualifier": "",
+        "root": "רקע",
+        "sense": "expanse"
+      },
+      "position": 9,
+      "surface": "לָרָקִיעַ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "bayin"
+        },
+        "evidence": "In וַיַּבְדֵּל בֵּין … וּבֵין, the marked וּבֵין introduces the second group of waters. God separates the waters below the expanse from the waters above it.",
+        "gloss": "and from",
+        "language": "he",
+        "lemma": "בַּיִן",
+        "morphology": "Conjunction וּ־ prefixed to the preposition בֵּין, with no suffix.",
+        "qualifier": "",
+        "root": "בינ",
+        "sense": "between (in place)"
+      },
+      "position": 10,
+      "surface": "וּבֵין"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "mayim",
+            "base": "7a095b6c2624f5e1fa2f45c8ad0c8fa7eebb4e609589e4db6aa40b3f9ca131e1",
+            "change": "Add Gen.1.7 as evidence for the existing sense “a body or flow of water.”",
+            "definition": "Water considered collectively as a body of water, here the waters above the expanse.",
+            "evidence": "In Gen.1.7, אֲשֶׁר מֵעַל לָרָקִיעַ specifies the location of the second הַמַּיִם."
+          }
+        },
+        "evidence": "The marked הַמַּיִם follows וּבֵין in the second half of the separation. Its relative clause אֲשֶׁר מֵעַל לָרָקִיעַ identifies the waters above the expanse, corresponding to the waters below it in the first half.",
+        "gloss": "the waters",
+        "language": "he",
+        "lemma": "מַיִם",
+        "morphology": "Definite article הַ־ with doubling of the following מ, prefixed to a masculine plural common noun in the absolute state.",
+        "qualifier": "",
+        "root": "מימ",
+        "sense": "a body or flow of water"
+      },
+      "position": 11,
+      "surface": "הַמַּיִם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ashar"
+        },
+        "evidence": "אֲשֶׁר introduces the clause מֵעַל לָרָקִיעַ describing the second הַמַּיִם, “the waters which were above the expanse.”",
+        "gloss": "which",
+        "language": "he",
+        "lemma": "אֲשֶׁר",
+        "morphology": "Uninflected relative particle with no prefix or suffix.",
+        "qualifier": "",
+        "root": "אשר",
+        "sense": "who, which, that"
+      },
+      "position": 12,
+      "surface": "אֲשֶׁר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "alah"
+        },
+        "evidence": "מֵעַל לָרָקִיעַ locates the waters above the expanse, parallel to מִתַּחַת לָרָקִיעַ for the waters below it.",
+        "gloss": "above",
+        "language": "he",
+        "lemma": "עַל",
+        "morphology": "Preposition עַל with prefixed מִן (מֵ־).",
+        "qualifier": "",
+        "root": "עלה",
+        "sense": "on, upon, over"
+      },
+      "position": 13,
+      "surface": "מֵעַל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "raqia"
+        },
+        "evidence": "מֵעַל לָרָקִיעַ locates the second body of water above the expanse. The parallel phrase מִתַּחַת לָרָקִיעַ locates the first below that same expanse.",
+        "gloss": "the expanse",
+        "language": "he",
+        "lemma": "רָקִיעַ",
+        "morphology": "Prefixed preposition לְ with the definite article, followed by a masculine singular absolute common noun.",
+        "qualifier": "",
+        "root": "רקע",
+        "sense": "expanse"
+      },
+      "position": 14,
+      "surface": "לָרָקִיעַ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "hayah"
+        },
+        "evidence": "In וַיְהִי כֵן, כֵן means “so” and refers back to the separation of the waters below the expanse from those above it. The clause confirms that the separation took place as described.",
+        "gloss": "and it came to pass",
+        "language": "he",
+        "lemma": "הָיָה",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ־ and no suffix",
+        "qualifier": "",
+        "root": "היה",
+        "sense": "to come to pass"
+      },
+      "position": 15,
+      "surface": "וַיְהִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ken"
+        },
+        "evidence": "In וַיְהִי כֵן, “and it was so,” כֵן refers back to the separation just described. The waters below the expanse stood apart from the waters above it, as God had commanded.",
+        "gloss": "so",
+        "language": "he",
+        "lemma": "כֵּן",
+        "morphology": "Uninflected adverb with no prefix or suffix.",
+        "qualifier": "adverb",
+        "root": "כונ",
+        "sense": "so, thus (as said or done)"
+      },
+      "position": 16,
+      "surface": "כֵן"
+    }
+  ]
+}

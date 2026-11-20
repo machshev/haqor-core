@@ -1,0 +1,218 @@
+{
+  "book": 1,
+  "chapter": 2,
+  "source": "ot",
+  "verse": 17,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ets"
+        },
+        "evidence": "עֵץ stands in construct with הַדַּעַת in the phrase “the tree of the knowledge of good and evil.” The prohibition לֹא תֹאכַל מִמֶּנּוּ (“you shall not eat from it”) refers back to that tree.",
+        "gloss": "but from the tree of",
+        "language": "he",
+        "lemma": "עֵץ",
+        "morphology": "Conjunction וּ־ plus preposition מֵ־ (from מִן) plus masculine singular construct noun עֵץ.",
+        "qualifier": "",
+        "root": "עצה",
+        "sense": "tree"
+      },
+      "position": 0,
+      "surface": "וּמֵעֵץ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yada"
+        },
+        "evidence": "In עֵץ הַדַּעַת טוֹב וָרָע, הַדַּעַת completes the construct phrase “tree of knowledge,” and טוֹב וָרָע specifies what is known, “good and evil.”",
+        "gloss": "the knowledge",
+        "language": "he",
+        "lemma": "דַּעַת",
+        "morphology": "Feminine singular absolute noun with the prefixed definite article הַ־.",
+        "qualifier": "",
+        "root": "ידע",
+        "sense": "the knowledge of good and evil"
+      },
+      "position": 1,
+      "surface": "הַדַּעַת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "tov"
+        },
+        "evidence": "In הַדַּעַת טוֹב וָרָע, “the knowledge of good and evil,” טוֹב is paired with its opposite רָע. Together they name what is known.",
+        "gloss": "good",
+        "language": "he",
+        "lemma": "טוֹב",
+        "morphology": "Masculine singular absolute adjective used substantivally.",
+        "qualifier": "adjective",
+        "root": "טוב",
+        "sense": "good (and evil): to know, discern or choose"
+      },
+      "position": 2,
+      "surface": "טוֹב"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ra"
+        },
+        "evidence": "In הַדַּעַת טוֹב וָרָע, the conjunction pairs רָע with טוֹב as the two objects of knowledge, “good and evil.”",
+        "gloss": "and evil",
+        "language": "he",
+        "lemma": "רַע",
+        "morphology": "Conjunction וָ־ plus masculine singular absolute רָע, the pausal form of רַע, used substantivally.",
+        "qualifier": "noun",
+        "root": "רעע",
+        "sense": "(with טוֹב) good and evil"
+      },
+      "position": 3,
+      "surface": "וָרָע"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "lo"
+        },
+        "evidence": "לֹא precedes תֹאכַל, a second-person masculine singular imperfect. The clause לֹא תֹאכַל מִמֶּנּוּ means “you shall not eat from it.” The following clause states the consequence of eating, confirming that the speaker is giving a prohibition.",
+        "gloss": "not",
+        "language": "he",
+        "lemma": "לֹא",
+        "morphology": "Negative particle, without prefix or suffix.",
+        "qualifier": "",
+        "root": "לא",
+        "sense": "you shall not (prohibition)"
+      },
+      "position": 4,
+      "surface": "לֹא"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "akal"
+        },
+        "evidence": "לֹא תֹאכַל מִמֶּנּוּ means “you shall not eat from it.” לֹא supplies the prohibition, and מִמֶּנּוּ refers to the tree of the knowledge of good and evil.",
+        "gloss": "you shall eat",
+        "language": "he",
+        "lemma": "אָכַל",
+        "morphology": "Qal imperfect, second person masculine singular",
+        "qualifier": "",
+        "root": "אכל",
+        "sense": "eat"
+      },
+      "position": 5,
+      "surface": "תֹאכַל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ki"
+        },
+        "evidence": "כִּי introduces the reason for the prohibition לֹא תֹאכַל מִמֶּנּוּ ‘you shall not eat from it’. The phrase בְּיוֹם אֲכָלְךָ מִמֶּנּוּ ‘when you eat from it’ gives the timing, and מוֹת תָּמוּת ‘you will surely die’ states the consequence.",
+        "gloss": "for",
+        "language": "he",
+        "lemma": "כִּי",
+        "morphology": "Uninflected conjunction with no prefix or suffix.",
+        "qualifier": "conjunction",
+        "root": "כי",
+        "sense": "for, because"
+      },
+      "position": 7,
+      "surface": "כִּי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yom"
+        },
+        "evidence": "בְּיוֹם governs the infinitive construct אֲכָלְךָ, whose suffix identifies the eater as “you.” The phrase בְּיוֹם אֲכָלְךָ מִמֶּנּוּ means “when you eat from it” and sets the time for מוֹת תָּמוּת, “you shall surely die.”",
+        "gloss": "on the day that",
+        "language": "he",
+        "lemma": "יוֹם",
+        "morphology": "Preposition בְּ prefixed to a masculine singular construct noun.",
+        "qualifier": "",
+        "root": "יומ",
+        "sense": "the time when; on the day that"
+      },
+      "position": 8,
+      "surface": "בְּיוֹם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "akal"
+        },
+        "evidence": "בְּיוֹם אֲכָלְךָ מִמֶּנּוּ means “on the day you eat from it,” repeating the action forbidden in לֹא תֹאכַל מִמֶּנּוּ (“you shall not eat from it”).",
+        "gloss": "you eat",
+        "language": "he",
+        "lemma": "אָכַל",
+        "morphology": "Qal infinitive construct with a second-person masculine singular suffix marking the subject.",
+        "qualifier": "",
+        "root": "אכל",
+        "sense": "eat"
+      },
+      "position": 9,
+      "surface": "אֲכָלְךָ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "min",
+            "base": "a8ed885685f881ad58d16600265c2176cd484c41c6480205b1d0941d765b8fa6",
+            "change": "Add Genesis 2:17 to the Hebrew partitive sense in the existing min article.",
+            "definition": "With a verb of eating, מִן marks that of which someone eats a portion.",
+            "evidence": "Genesis 2:17 names the tree, then refers to it with מִמֶּנּוּ after אֲכָלְךָ. Genesis 3:3 makes the fruit explicit in describing the same prohibition."
+          }
+        },
+        "evidence": "In בְּיוֹם אֲכָלְךָ מִמֶּנּוּ, “on the day you eat from it,” the suffix on אֲכָלְךָ identifies the eater as “you.” The suffix on מִמֶּנּוּ refers back to the masculine singular עֵץ in וּמֵעֵץ הַדַּעַת, “and from the tree of knowledge.” The warning thus concerns eating any of that tree’s fruit.",
+        "gloss": "from it",
+        "language": "he",
+        "lemma": "מִן",
+        "morphology": "Preposition with a third-person masculine singular pronominal suffix referring to עֵץ, “tree.”",
+        "qualifier": "",
+        "root": "מנ",
+        "sense": "Partitive, marking what one eats some of."
+      },
+      "position": 10,
+      "surface": "מִמֶּנּוּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "mut"
+        },
+        "evidence": "In מוֹת תָּמוּת, the infinitive absolute מוֹת precedes the second-person masculine singular verb תָּמוּת from the same root. The repetition emphasizes the certainty of death if the addressee eats from the tree.",
+        "gloss": "surely (in “you will surely die”)",
+        "language": "he",
+        "lemma": "מוּת",
+        "morphology": "Qal infinitive absolute, without prefix or suffix",
+        "qualifier": "",
+        "root": "מות",
+        "sense": "to die"
+      },
+      "position": 11,
+      "surface": "מוֹת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "mut"
+        },
+        "evidence": "תָּמוּת states what will happen to the person addressed if he eats from the tree. The preceding infinitive absolute מוֹת emphasizes the certainty of the outcome, giving מוֹת תָּמוּת the force of “you will surely die.”",
+        "gloss": "you will die",
+        "language": "he",
+        "lemma": "מוּת",
+        "morphology": "Qal imperfect, second person masculine singular, with person prefix ת־ and no suffix",
+        "qualifier": "",
+        "root": "מות",
+        "sense": "die, come to the end of life"
+      },
+      "position": 12,
+      "surface": "תָּמוּת"
+    }
+  ]
+}

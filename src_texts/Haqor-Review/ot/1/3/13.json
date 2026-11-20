@@ -1,0 +1,195 @@
+{
+  "book": 1,
+  "chapter": 3,
+  "source": "ot",
+  "verse": 13,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "amar"
+        },
+        "evidence": "יַהְוֶה אֱלֹהִים is the speaker, and לָאִשָּׁה identifies the woman as the addressee. וַיֹּאמֶר introduces the quoted question מַה זֹּאת עָשִׂית, “What have you done?”",
+        "gloss": "and he said",
+        "language": "he",
+        "lemma": "אָמַר",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ־",
+        "qualifier": "",
+        "root": "אמר",
+        "sense": "say, introducing direct speech"
+      },
+      "position": 0,
+      "surface": "וַיֹּאמֶר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yahweh"
+        },
+        "evidence": "In וַיֹּאמֶר יַהְוֶה אֱלֹהִים לָאִשָּׁה (“Yahweh God said to the woman”), יַהְוֶה names the speaker and אֱלֹהִים stands in apposition. The woman is the addressee.",
+        "gloss": "Yahweh",
+        "language": "he",
+        "lemma": "יַהְוֶה",
+        "morphology": "Proper noun, masculine singular, without prefix or suffix",
+        "qualifier": "",
+        "root": "הוה",
+        "sense": "Personal name of the God of Israel"
+      },
+      "position": 1,
+      "surface": "יַהְוֶה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "In וַיֹּאמֶר יַהְוֶה אֱלֹהִים לָאִשָּׁה, אֱלֹהִים stands in apposition to יַהְוֶה. The singular verb וַיֹּאמֶר identifies one speaker who addresses the woman.",
+        "gloss": "God",
+        "language": "he",
+        "lemma": "אֱלֹהִים",
+        "morphology": "Common noun, masculine plural absolute, with singular reference.",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "the Mighty One, God"
+      },
+      "position": 2,
+      "surface": "אֱלֹהִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "enosh"
+        },
+        "evidence": "לָאִשָּׁה identifies the woman to whom God speaks. The reply וַתֹּאמֶר הָאִשָּׁה (“and the woman said”) names the same participant.",
+        "gloss": "to the woman",
+        "language": "he",
+        "lemma": "אִשָּׁה",
+        "morphology": "Feminine singular absolute noun with prefixed preposition לְ and definite article, combined as לָ־.",
+        "qualifier": "",
+        "root": "אנש",
+        "sense": "woman"
+      },
+      "position": 3,
+      "surface": "לָאִשָּׁה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "mah"
+        },
+        "evidence": "In מַה זֹּאת עָשִׂית, “What is this you have done?”, מַה asks the woman to identify her deed. She names it in her reply וָאֹכֵל, “and I ate.”",
+        "gloss": "what",
+        "language": "he",
+        "lemma": "מָה",
+        "morphology": "Uninflected interrogative pronoun, without prefix or suffix.",
+        "qualifier": "",
+        "root": "מה",
+        "sense": "what?"
+      },
+      "position": 4,
+      "surface": "מַה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "asah"
+        },
+        "evidence": "God asks the woman מַה זֹּאת עָשִׂית, “What is this you have done?” Her reply וָאֹכֵל, “and I ate,” identifies the act.",
+        "gloss": "you have done",
+        "language": "he",
+        "lemma": "עָשָׂה",
+        "morphology": "Qal perfect, second person feminine singular",
+        "qualifier": "",
+        "root": "עשׂה",
+        "sense": "do, perform an act"
+      },
+      "position": 6,
+      "surface": "עָשִׂית"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "amar"
+        },
+        "evidence": "The feminine singular verb agrees with its subject הָאִשָּׁה, “the woman,” and introduces her reply הַנָּחָשׁ הִשִּׁיאַנִי וָאֹכֵל, “The serpent deceived me, and I ate.”",
+        "gloss": "and she said",
+        "language": "he",
+        "lemma": "אָמַר",
+        "morphology": "Qal wayyiqtol, third person feminine singular, with prefixed וַ and no suffix",
+        "qualifier": "",
+        "root": "אמר",
+        "sense": "say, introducing direct speech"
+      },
+      "position": 7,
+      "surface": "וַתֹּאמֶר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "enosh"
+        },
+        "evidence": "In וַתֹּאמֶר הָאִשָּׁה, “the woman said,” the noun identifies the speaker as the woman God has just addressed in לָאִשָּׁה.",
+        "gloss": "the woman",
+        "language": "he",
+        "lemma": "אִשָּׁה",
+        "morphology": "Definite article הָ־ prefixed to a feminine singular absolute common noun.",
+        "qualifier": "",
+        "root": "אנש",
+        "sense": "woman"
+      },
+      "position": 8,
+      "surface": "הָאִשָּׁה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "nachash"
+        },
+        "evidence": "In הַנָּחָשׁ הִשִּׁיאַנִי (“the serpent deceived me”), the woman identifies the serpent as the one who deceived her. The definite article refers back to the serpent that spoke to her.",
+        "gloss": "the serpent",
+        "language": "he",
+        "lemma": "נָחָשׁ",
+        "morphology": "Masculine singular common noun in the absolute state with the definite article הַ־.",
+        "qualifier": "",
+        "root": "נחש",
+        "sense": "the serpent of Eden"
+      },
+      "position": 9,
+      "surface": "הַנָּחָשׁ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "nasha"
+        },
+        "evidence": "The woman names הַנָּחָשׁ (“the serpent”) as the subject. The suffix ־נִי refers to the woman herself. She explains why she ate: “The serpent deceived me, and I ate.”",
+        "gloss": "deceived me",
+        "language": "he",
+        "lemma": "נָשָׁא",
+        "morphology": "Hiphil perfect, third masculine singular, with a first common singular object suffix.",
+        "qualifier": "",
+        "root": "נשא",
+        "sense": "deceive"
+      },
+      "position": 10,
+      "surface": "הִשִּׁיאַנִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "akal"
+        },
+        "evidence": "The woman says הַנָּחָשׁ הִשִּׁיאַנִי, “the serpent deceived me,” then gives her own action in the first person, וָאֹכֵל, “and I ate.”",
+        "gloss": "and I ate",
+        "language": "he",
+        "lemma": "אָכַל",
+        "morphology": "Qal wayyiqtol, first person common singular, with prefixed וָ־.",
+        "qualifier": "",
+        "root": "אכל",
+        "sense": "eat"
+      },
+      "position": 11,
+      "surface": "וָאֹכֵל"
+    }
+  ]
+}

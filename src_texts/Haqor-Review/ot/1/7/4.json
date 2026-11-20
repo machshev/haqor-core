@@ -1,0 +1,456 @@
+{
+  "book": 1,
+  "chapter": 7,
+  "review": {
+    "entities": [],
+    "glosses": [
+      {
+        "gloss": "because",
+        "position": 0
+      },
+      {
+        "gloss": "in … days",
+        "position": 1
+      },
+      {
+        "gloss": "more",
+        "position": 2
+      },
+      {
+        "gloss": "seven",
+        "position": 3
+      },
+      {
+        "gloss": "I",
+        "position": 4
+      },
+      {
+        "gloss": "will cause it to rain",
+        "position": 5
+      },
+      {
+        "gloss": "on",
+        "position": 6
+      },
+      {
+        "gloss": "the earth",
+        "position": 7
+      },
+      {
+        "gloss": "forty",
+        "position": 8
+      },
+      {
+        "gloss": "days",
+        "position": 9
+      },
+      {
+        "gloss": "and forty",
+        "position": 10
+      },
+      {
+        "gloss": "nights",
+        "position": 11
+      },
+      {
+        "gloss": "and I will wipe",
+        "position": 12
+      },
+      {
+        "gloss": "untranslated (marks the direct object)",
+        "position": 13
+      },
+      {
+        "gloss": "every",
+        "position": 14
+      },
+      {
+        "gloss": "living thing",
+        "position": 15
+      },
+      {
+        "gloss": "that",
+        "position": 16
+      },
+      {
+        "gloss": "I have made",
+        "position": 17
+      },
+      {
+        "gloss": "off",
+        "position": 18
+      },
+      {
+        "gloss": "the surface of",
+        "position": 19
+      },
+      {
+        "gloss": "the ground",
+        "position": 20
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[because|0] [in|1] [seven|3] [more|2] [days|1] [I|4] [will cause it to rain|5] [on|6] [the earth|7] {for} [forty|8] [days|9] [and forty|10] [nights|11], [and I will wipe|12] [every|14,13] [living thing|15] [that|16] [I have made|17] [off|18] [the surface of|19] [the ground|20].”"
+  },
+  "source": "ot",
+  "verse": 4,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ki"
+        },
+        "evidence": "כִּי introduces the reason for the preceding instructions to Noah. God says that in seven days he will bring rain on the earth for forty days and forty nights.",
+        "gloss": "for",
+        "language": "he",
+        "lemma": "כִּי",
+        "morphology": "Unprefixed conjunction without a suffix.",
+        "qualifier": "conjunction",
+        "root": "כי",
+        "sense": "for, because"
+      },
+      "position": 0,
+      "surface": "כִּי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yom"
+        },
+        "evidence": "In לְיָמִים עוֹד שִׁבְעָה, שִׁבְעָה counts the days remaining before the rain begins. The phrase means “in seven more days.”",
+        "gloss": "days",
+        "language": "he",
+        "lemma": "יוֹם",
+        "morphology": "Preposition לְ prefixed to a masculine plural absolute noun.",
+        "qualifier": "",
+        "root": "יומ",
+        "sense": "a day, counted"
+      },
+      "position": 1,
+      "surface": "לְיָמִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "edut"
+        },
+        "evidence": "In לְיָמִים עוֹד שִׁבְעָה, עוֹד marks the seven days remaining before the rain begins. The following forty days and forty nights give the duration of the rain.",
+        "gloss": "more (seven more days)",
+        "language": "he",
+        "lemma": "עוֹד",
+        "morphology": "Temporal adverb without prefix or suffix.",
+        "qualifier": "",
+        "root": "עוד",
+        "sense": "yet (so long), within (of time still to run)"
+      },
+      "position": 2,
+      "surface": "עוֹד"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shaba"
+        },
+        "evidence": "In לְיָמִים עוֹד שִׁבְעָה, “in seven more days,” שִׁבְעָה counts the masculine plural noun יָמִים and gives the interval before the rain begins.",
+        "gloss": "seven",
+        "language": "he",
+        "lemma": "שֶׁבַע",
+        "morphology": "Cardinal numeral, masculine singular absolute.",
+        "qualifier": "",
+        "root": "שבע",
+        "sense": "seven"
+      },
+      "position": 3,
+      "surface": "שִׁבְעָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ani"
+        },
+        "evidence": "In אָנֹכִי מַמְטִיר, the pronoun supplies the subject of the participle מַמְטִיר. Yahweh tells Noah what he himself will do in seven days: “I will cause it to rain.”",
+        "gloss": "I",
+        "language": "he",
+        "lemma": "אָנֹכִי",
+        "morphology": "Independent personal pronoun, first person common singular, without prefix or suffix.",
+        "qualifier": "",
+        "root": "אנכי",
+        "sense": "I (the speaker named or identified)"
+      },
+      "position": 4,
+      "surface": "אָנֹכִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "matar"
+        },
+        "evidence": "אָנֹכִי identifies the speaker as the one who will cause the rain to fall. עַל הָאָרֶץ specifies where it will fall, and the forty days and forty nights specify its duration. The seven-day interval places the action in the future.",
+        "gloss": "will cause rain to fall",
+        "language": "he",
+        "lemma": "מָטַר",
+        "morphology": "Hiphil active participle, masculine singular absolute, used predicatively with אָנֹכִי.",
+        "qualifier": "",
+        "root": "מטר",
+        "sense": "cause rain to fall"
+      },
+      "position": 5,
+      "surface": "מַמְטִיר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "alah"
+        },
+        "evidence": "In מַמְטִיר עַל הָאָרֶץ, עַל introduces the surface on which the rain will fall, הָאָרֶץ (“the earth”).",
+        "gloss": "upon",
+        "language": "he",
+        "lemma": "עַל",
+        "morphology": "Preposition without prefix or suffix.",
+        "qualifier": "",
+        "root": "עלה",
+        "sense": "on, upon, over"
+      },
+      "position": 6,
+      "surface": "עַל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "erets"
+        },
+        "evidence": "In מַמְטִיר עַל הָאָרֶץ, the earth receives the rain. The promise to wipe away כָּל הַיְקוּם אֲשֶׁר עָשִׂיתִי, everything God has made that lives on the ground, gives the statement its broad scope.",
+        "gloss": "the earth",
+        "language": "he",
+        "lemma": "אֶרֶץ",
+        "morphology": "Definite article הָ־ + common noun, singular absolute.",
+        "qualifier": "",
+        "root": "ארצ",
+        "sense": "earth"
+      },
+      "position": 7,
+      "surface": "הָאָרֶץ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "reva"
+        },
+        "evidence": "אַרְבָּעִים counts יוֹם in אַרְבָּעִים יוֹם, “forty days.” The parallel וְאַרְבָּעִים לָיְלָה, “and forty nights,” completes the duration of the rain.",
+        "gloss": "forty",
+        "language": "he",
+        "lemma": "אַרְבָּעִים",
+        "morphology": "Cardinal numeral, common gender, plural absolute, without prefix or suffix.",
+        "qualifier": "",
+        "root": "רבע",
+        "sense": "forty days (and forty nights)"
+      },
+      "position": 8,
+      "surface": "אַרְבָּעִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yom"
+        },
+        "evidence": "In אַרְבָּעִים יוֹם וְאַרְבָּעִים לָיְלָה, “forty days and forty nights,” אַרְבָּעִים counts the days of rain. The Hebrew noun is singular after “forty.”",
+        "gloss": "days",
+        "language": "he",
+        "lemma": "יוֹם",
+        "morphology": "Common noun, masculine singular absolute.",
+        "qualifier": "",
+        "root": "יומ",
+        "sense": "a day, counted"
+      },
+      "position": 9,
+      "surface": "יוֹם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "reva"
+        },
+        "evidence": "In אַרְבָּעִים יוֹם וְאַרְבָּעִים לָיְלָה, the marked numeral counts the nights. The conjunction וְ joins “forty nights” to “forty days” to express the duration of the rain.",
+        "gloss": "and forty",
+        "language": "he",
+        "lemma": "אַרְבָּעִים",
+        "morphology": "Cardinal numeral, common gender, plural absolute, with prefixed conjunction וְ.",
+        "qualifier": "",
+        "root": "רבע",
+        "sense": "forty days (and forty nights)"
+      },
+      "position": 10,
+      "surface": "וְאַרְבָּעִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "layil"
+        },
+        "evidence": "אַרְבָּעִים יוֹם וְאַרְבָּעִים לָיְלָה means “forty days and forty nights.” The repeated numeral counts the nights alongside the days of rain. Hebrew uses a singular noun after forty in both phrases.",
+        "gloss": "nights",
+        "language": "he",
+        "lemma": "לַיְלָה",
+        "morphology": "Common noun, masculine singular absolute, in pausal form.",
+        "qualifier": "",
+        "root": "ליל",
+        "sense": "the hours of darkness"
+      },
+      "position": 11,
+      "surface": "לָיְלָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "machah"
+        },
+        "evidence": "The speaker announces forty days and nights of rain. The direct object אֶת כָּל הַיְקוּם אֲשֶׁר עָשִׂיתִי identifies what he will wipe out as every living thing he has made, and מֵעַל פְּנֵי הָאֲדָמָה specifies its removal from the face of the ground.",
+        "gloss": "and I will wipe out",
+        "language": "he",
+        "lemma": "מָחָה",
+        "morphology": "Qal perfect, first person common singular, with prefixed conjunction וּ (weqatal), expressing a future action.",
+        "qualifier": "wipe, erase, blot out",
+        "root": "מחה",
+        "sense": "Wipe out living beings from the face of the earth."
+      },
+      "position": 12,
+      "surface": "וּמָחִיתִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "et"
+        },
+        "evidence": "אֶת introduces כָּל הַיְקוּם אֲשֶׁר עָשִׂיתִי (“every living thing that I have made”) as the direct object of וּמָחִיתִי (“I will wipe out”).",
+        "gloss": "untranslated",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Direct-object particle in the form אֶת, without prefix or suffix.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "(marks the definite object)"
+      },
+      "position": 13,
+      "surface": "אֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "kalal"
+        },
+        "evidence": "In אֶת כָּל הַיְקוּם, כָּל quantifies the definite collective noun הַיְקוּם. The whole phrase is the object of וּמָחִיתִי, expressing the full extent of what God will wipe away.",
+        "gloss": "all",
+        "language": "he",
+        "lemma": "כֹּל",
+        "morphology": "Masculine singular noun in the construct state, without prefix or suffix.",
+        "qualifier": "",
+        "root": "כלל",
+        "sense": "all, the whole"
+      },
+      "position": 14,
+      "surface": "כָּל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "qum"
+        },
+        "evidence": "כָּל הַיְקוּם אֲשֶׁר עָשִׂיתִי means “every living thing that I have made.” The phrase is the object of וּמָחִיתִי, “I will wipe out,” and מֵעַל פְּנֵי הָאֲדָמָה locates those living things on the surface of the ground.",
+        "gloss": "living thing",
+        "language": "he",
+        "lemma": "יְקוּם",
+        "morphology": "Definite article הַ prefixed to a masculine singular absolute noun used collectively.",
+        "qualifier": "",
+        "root": "קומ",
+        "sense": "living thing, all that stands"
+      },
+      "position": 15,
+      "surface": "הַיְקוּם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ashar"
+        },
+        "evidence": "אֲשֶׁר introduces a relative clause modifying כָּל הַיְקוּם, “every living thing.” Its antecedent supplies the understood object of עָשִׂיתִי, “I made,” yielding “every living thing that I made.”",
+        "gloss": "that",
+        "language": "he",
+        "lemma": "אֲשֶׁר",
+        "morphology": "Indeclinable relative particle without prefix or suffix.",
+        "qualifier": "",
+        "root": "אשר",
+        "sense": "who, which, that"
+      },
+      "position": 16,
+      "surface": "אֲשֶׁר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "asah"
+        },
+        "evidence": "In כָּל־הַיְקוּם אֲשֶׁר עָשִׂיתִי, “every living thing that I made,” the living things are the object of עָשִׂיתִי. The speaker identifies what he will wipe away as what he previously brought into being.",
+        "gloss": "I made",
+        "language": "he",
+        "lemma": "עָשָׂה",
+        "morphology": "Qal perfect, first person common singular, with subject ending ־תִי.",
+        "qualifier": "",
+        "root": "עשׂה",
+        "sense": "make, bring into being"
+      },
+      "position": 17,
+      "surface": "עָשִׂיתִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "alah"
+        },
+        "evidence": "In וּמָחִיתִי … מֵעַל פְּנֵי הָאֲדָמָה, עַל locates what is to be wiped away on the surface of the ground, and מֵ־ marks removal from that surface.",
+        "gloss": "from off",
+        "language": "he",
+        "lemma": "עַל",
+        "morphology": "Preposition עַל with prefixed מֵ־ (מִן, “from”).",
+        "qualifier": "",
+        "root": "עלה",
+        "sense": "on, upon, over"
+      },
+      "position": 18,
+      "surface": "מֵעַל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "panah"
+        },
+        "evidence": "In מֵעַל פְּנֵי הָאֲדָמָה, “from the surface of the ground,” פְּנֵי is in construct with הָאֲדָמָה and names the surface from which all that lives will be wiped away.",
+        "gloss": "surface of",
+        "language": "he",
+        "lemma": "פָּנִים",
+        "morphology": "Common-gender plural noun in the construct state, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "פנה",
+        "sense": "surface (of the earth, the waters)"
+      },
+      "position": 19,
+      "surface": "פְּנֵי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "adam"
+        },
+        "evidence": "In מֵעַל פְּנֵי הָאֲדָמָה, “from the face of the ground,” הָאֲדָמָה completes the construct phrase with פְּנֵי. It identifies the surface from which God will wipe away every living thing he has made.",
+        "gloss": "the ground",
+        "language": "he",
+        "lemma": "אֲדָמָה",
+        "morphology": "Feminine singular absolute common noun with prefixed definite article הָ־.",
+        "qualifier": "",
+        "root": "אדמ",
+        "sense": "the ground underfoot; the face of the earth"
+      },
+      "position": 20,
+      "surface": "הָאֲדָמָה"
+    }
+  ]
+}

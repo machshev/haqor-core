@@ -1,0 +1,342 @@
+{
+  "book": 1,
+  "chapter": 7,
+  "review": {
+    "entities": [],
+    "glosses": [
+      {
+        "gloss": "from",
+        "position": 0
+      },
+      {
+        "gloss": "the animals",
+        "position": 1
+      },
+      {
+        "gloss": "clean",
+        "position": 2
+      },
+      {
+        "gloss": "and from",
+        "position": 3
+      },
+      {
+        "gloss": "the animals",
+        "position": 4
+      },
+      {
+        "gloss": "that",
+        "position": 5
+      },
+      {
+        "gloss": "are not",
+        "position": 6
+      },
+      {
+        "gloss": "clean",
+        "position": 7
+      },
+      {
+        "gloss": "and from",
+        "position": 8
+      },
+      {
+        "gloss": "the birds",
+        "position": 9
+      },
+      {
+        "gloss": "and everything",
+        "position": 10
+      },
+      {
+        "gloss": "that",
+        "position": 11
+      },
+      {
+        "gloss": "moves",
+        "position": 12
+      },
+      {
+        "gloss": "on",
+        "position": 13
+      },
+      {
+        "gloss": "the ground",
+        "position": 14
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[{Pairs} from|0] [the|1] [clean|2] [animal{s}|1] [and from|3] [the animal{s}|4] [that|5] [are not|6] [clean|7] [and from|8] [the bird{s}|9] [and everything|10] [that|11] [moves|12] [on|13] [the ground|14]"
+  },
+  "source": "ot",
+  "verse": 8,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "min"
+        },
+        "evidence": "מִן הַבְּהֵמָה הַטְּהוֹרָה means “of the clean animals.” The repeated וּמִן introduces other groups, and שְׁנַיִם שְׁנַיִם (“two by two”) in the next verse describes how members of those groups entered the ark.",
+        "gloss": "of",
+        "language": "he",
+        "lemma": "מִן",
+        "morphology": "Independent preposition without prefix or suffix.",
+        "qualifier": "",
+        "root": "מנ",
+        "sense": "some of, (one) of, any of"
+      },
+      "position": 0,
+      "surface": "מִן"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "behemah"
+        },
+        "evidence": "הַטְּהוֹרָה agrees with הַבְּהֵמָה in gender, number and definiteness, giving מִן הַבְּהֵמָה הַטְּהוֹרָה the sense “from among the clean animals.” The verse then lists unclean animals, birds and creatures that creep on the ground.",
+        "gloss": "the animals",
+        "language": "he",
+        "lemma": "בְּהֵמָה",
+        "morphology": "Definite article הַ־ + feminine singular absolute common noun, used collectively.",
+        "qualifier": "",
+        "root": "בהמ",
+        "sense": "beast, four-footed animal"
+      },
+      "position": 1,
+      "surface": "הַבְּהֵמָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "taher"
+        },
+        "evidence": "הַטְּהוֹרָה agrees with הַבְּהֵמָה in gender, number, and definiteness. The contrasting phrase הַבְּהֵמָה אֲשֶׁר אֵינֶנָּה טְהֹרָה distinguishes the clean animals from those that are not clean.",
+        "gloss": "clean",
+        "language": "he",
+        "lemma": "טָהוֹר",
+        "morphology": "Attributive adjective, feminine singular absolute, with the definite article הַ.",
+        "qualifier": "",
+        "root": "טהר",
+        "sense": "clean (of animals and birds)"
+      },
+      "position": 2,
+      "surface": "הַטְּהוֹרָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "min",
+            "base": "a8ed885685f881ad58d16600265c2176cd484c41c6480205b1d0941d765b8fa6",
+            "change": "Add Genesis 7:8–9 as an example of the existing Hebrew partitive sense min-some-of.",
+            "definition": "Introduces a group from which particular members are taken or identified.",
+            "evidence": "Genesis 7:8–9 identifies animals that came two by two from among the animals that were not clean."
+          }
+        },
+        "evidence": "In Genesis 7:8, וּמִן introduces הַבְּהֵמָה אֲשֶׁר אֵינֶנָּה טְהֹרָה, “the animals that are not clean.” The preceding phrase names clean animals in the same construction. Genesis 7:9 says they came two by two, so מִן marks the class from which those animals came.",
+        "gloss": "from among",
+        "language": "he",
+        "lemma": "מִן",
+        "morphology": "Prefixed coordinating conjunction וּ־ “and” + independent preposition מִן, without a suffix.",
+        "qualifier": "",
+        "root": "מנ",
+        "sense": "some of, (one) of, any of"
+      },
+      "position": 3,
+      "surface": "וּמִן"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "behemah"
+        },
+        "evidence": "אֲשֶׁר אֵינֶנָּה טְהֹרָה qualifies this second occurrence as the animals that are not clean. The verse groups them with the clean animals before listing birds and creatures that creep on the ground. The distinction concerns cleanness, with no restriction to livestock.",
+        "gloss": "the animals",
+        "language": "he",
+        "lemma": "בְּהֵמָה",
+        "morphology": "Definite article הַ־ + feminine singular absolute common noun, used collectively.",
+        "qualifier": "",
+        "root": "בהמ",
+        "sense": "beast, four-footed animal"
+      },
+      "position": 4,
+      "surface": "הַבְּהֵמָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ashar"
+        },
+        "evidence": "אֲשֶׁר introduces אֵינֶנָּה טְהֹרָה, “is not clean,” as a relative clause modifying הַבְּהֵמָה, “the animal.” The feminine singular forms in the clause agree with הַבְּהֵמָה.",
+        "gloss": "that",
+        "language": "he",
+        "lemma": "אֲשֶׁר",
+        "morphology": "Invariable relative particle with no prefix or suffix.",
+        "qualifier": "",
+        "root": "אשר",
+        "sense": "who, which, that"
+      },
+      "position": 5,
+      "surface": "אֲשֶׁר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "eyn"
+        },
+        "evidence": "In הַבְּהֵמָה אֲשֶׁר אֵינֶנָּה טְהֹרָה, “the animal that is not clean,” אֵינֶנָּה negates the predicate adjective טְהֹרָה. The preceding phrase הַבְּהֵמָה הַטְּהוֹרָה supplies the contrast, “the clean animal.”",
+        "gloss": "is not",
+        "language": "he",
+        "lemma": "אַיִן",
+        "morphology": "Negative particle with a third-person feminine singular pronominal suffix referring to הַבְּהֵמָה.",
+        "qualifier": "",
+        "root": "אינ",
+        "sense": "not (with a participle or adjective)"
+      },
+      "position": 6,
+      "surface": "אֵינֶנָּה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "taher"
+        },
+        "evidence": "In הַבְּהֵמָה אֲשֶׁר אֵינֶנָּה טְהֹרָה, “the animal that is not clean,” טְהֹרָה agrees with the feminine singular הַבְּהֵמָה. The preceding אֵינֶנָּה supplies the negation.",
+        "gloss": "clean",
+        "language": "he",
+        "lemma": "טָהוֹר",
+        "morphology": "Adjective, feminine singular absolute, used predicatively.",
+        "qualifier": "",
+        "root": "טהר",
+        "sense": "clean (of animals and birds)"
+      },
+      "position": 7,
+      "surface": "טְהֹרָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "min",
+            "base": "a8ed885685f881ad58d16600265c2176cd484c41c6480205b1d0941d765b8fa6",
+            "change": "Add Genesis 7:8 to the evidence for the Hebrew partitive sense min-some-of in the existing min article.",
+            "definition": "Partitive מִן introduces a whole or group from which some members are taken.",
+            "evidence": "Genesis 7:8 uses וּמִן הָעוֹף to add birds to the groups represented, repeating the construction used for the clean and unclean animals."
+          }
+        },
+        "evidence": "In Genesis 7:8, וּמִן הָעוֹף means “and from among the birds.” The verse repeats מִן before each group of animals, first the clean animals, then the unclean animals, then the birds. The collective noun הָעוֹף names the group from which individual birds come.",
+        "gloss": "and from among",
+        "language": "he",
+        "lemma": "מִן",
+        "morphology": "Prefixed coordinating conjunction וּ־ “and” + preposition מִן, governing הָעוֹף without a pronominal suffix.",
+        "qualifier": "",
+        "root": "מנ",
+        "sense": "Partitive. Introduces the group from which members are drawn."
+      },
+      "position": 8,
+      "surface": "וּמִן"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "uph"
+        },
+        "evidence": "וּמִן הָעוֹף means “and from among the birds.” The verse lists birds alongside clean animals, unclean animals, and creatures that move on the ground.",
+        "gloss": "the birds",
+        "language": "he",
+        "lemma": "עוֹף",
+        "morphology": "Definite article הָ־ prefixed to a masculine singular absolute noun used collectively.",
+        "qualifier": "",
+        "root": "עופ",
+        "sense": "birds collectively"
+      },
+      "position": 9,
+      "surface": "הָעוֹף"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "kalal"
+        },
+        "evidence": "כֹל has no following head noun. The relative clause אֲשֶׁר רֹמֵשׂ עַל הָאֲדָמָה restricts its reference to everything that moves along the ground.",
+        "gloss": "and everything",
+        "language": "he",
+        "lemma": "כֹּל",
+        "morphology": "Masculine singular absolute noun with prefixed conjunction וְ ‘and’.",
+        "qualifier": "",
+        "root": "כלל",
+        "sense": "everything, all things"
+      },
+      "position": 10,
+      "surface": "וְכֹל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ashar"
+        },
+        "evidence": "In וְכֹל אֲשֶׁר רֹמֵשׂ עַל הָאֲדָמָה, “and everything that creeps on the ground,” אֲשֶׁר introduces the clause specifying which creatures כֹל includes.",
+        "gloss": "that",
+        "language": "he",
+        "lemma": "אֲשֶׁר",
+        "morphology": "Invariable relative particle with no prefix or suffix.",
+        "qualifier": "",
+        "root": "אשר",
+        "sense": "who, which, that"
+      },
+      "position": 11,
+      "surface": "אֲשֶׁר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ramas-creep"
+        },
+        "evidence": "In וְכֹל אֲשֶׁר רֹמֵשׂ עַל הָאֲדָמָה, “and everything that moves about on the ground,” רֹמֵשׂ serves as the predicate of the relative clause. It describes how the creatures move, and עַל הָאֲדָמָה specifies where.",
+        "gloss": "moves about",
+        "language": "he",
+        "lemma": "רָמַשׂ",
+        "morphology": "Qal active participle, masculine singular absolute",
+        "qualifier": "",
+        "root": "רמשׂ",
+        "sense": "move about"
+      },
+      "position": 12,
+      "surface": "רֹמֵשׂ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "alah"
+        },
+        "evidence": "In רֹמֵשׂ עַל הָאֲדָמָה, “creeps on the ground,” עַל introduces הָאֲדָמָה as the surface on which the creature moves.",
+        "gloss": "on",
+        "language": "he",
+        "lemma": "עַל",
+        "morphology": "Preposition without prefix or suffix",
+        "qualifier": "",
+        "root": "עלה",
+        "sense": "on, upon, over"
+      },
+      "position": 13,
+      "surface": "עַל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "adam"
+        },
+        "evidence": "In כֹל אֲשֶׁר רֹמֵשׂ עַל הָאֲדָמָה, “everything that creeps on the ground,” עַל identifies the ground as the surface on which the creatures move.",
+        "gloss": "the ground",
+        "language": "he",
+        "lemma": "אֲדָמָה",
+        "morphology": "Feminine singular absolute noun with the prefixed definite article הָ־.",
+        "qualifier": "",
+        "root": "אדמ",
+        "sense": "the ground underfoot; the face of the earth"
+      },
+      "position": 14,
+      "surface": "הָאֲדָמָה"
+    }
+  ]
+}

@@ -1,0 +1,211 @@
+{
+  "book": 40,
+  "chapter": 1,
+  "review": {
+    "entities": [
+      {
+        "evidence": "The title “the Messiah” and the descent from David and Abraham identify Jesus, the subject of Matthew’s genealogy.",
+        "key": "Jesus@Isa.7.14",
+        "position": 2
+      },
+      {
+        "evidence": "“The son of David” identifies Jesus as a descendant of King David, son of Jesse.",
+        "key": "David@Rut.4.17",
+        "position": 5
+      },
+      {
+        "evidence": "“The son of Abraham” traces Jesus’s ancestry to the patriarch Abraham, father of Isaac.",
+        "key": "Abraham@Gen.11.26",
+        "position": 7
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "the book",
+        "position": 0
+      },
+      {
+        "gloss": "of the genealogy",
+        "position": 1
+      },
+      {
+        "gloss": "of Jesus",
+        "position": 2
+      },
+      {
+        "gloss": "the Messiah",
+        "position": 3
+      },
+      {
+        "gloss": "the son",
+        "position": 4
+      },
+      {
+        "gloss": "of David",
+        "position": 5
+      },
+      {
+        "gloss": "the son",
+        "position": 6
+      },
+      {
+        "gloss": "of Abraham",
+        "position": 7
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[The book|0] [of the genealogy|1] [of Jesus|2] [the Messiah|3], [the son|4] [of David|5], [the son|6] [of Abraham|7]."
+  },
+  "source": "peshitta",
+  "verse": 1,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "katav"
+        },
+        "evidence": "כּתָֿבָֿא heads the phrase כּתָֿבָֿא דִּילִידֻֿותֵֿה דּיֵשֻוע משִיחָא, “the record of the genealogy of Jesus the Messiah.” The references to David and Abraham identify the ancestry that the record recounts.",
+        "gloss": "record",
+        "language": "syc",
+        "lemma": "כְּתָבָא",
+        "morphology": "Masculine singular noun in the emphatic state, with no prefix or suffix pronoun.",
+        "qualifier": "",
+        "root": "כתב",
+        "sense": "book"
+      },
+      "position": 0,
+      "surface": "כּתָֿבָֿא"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yalad"
+        },
+        "evidence": "The prefix links the noun to כּתָֿבָֿא ‘book’, and דּיֵשֻוע משִיחָא ‘of Jesus Christ’ identifies whose genealogy it is. The repeated בּרֵה ‘son of’ traces his descent through David and Abraham.",
+        "gloss": "of his genealogy",
+        "language": "syc",
+        "lemma": "יְלִידוּתָא",
+        "morphology": "Feminine singular noun with the genitive prefix דּ־ and a third-person masculine singular possessive suffix ־ֵה referring to Jesus.",
+        "qualifier": "",
+        "root": "ילד",
+        "sense": "genealogy, descent"
+      },
+      "position": 1,
+      "surface": "דִּילִידֻֿותֵֿה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "yeshua",
+            "base": null,
+            "change": "Add a personal-name article for the Syriac form יֵשֻוע and link it to the Hebrew root ישע.",
+            "definition": "יֵשֻוע is the Syriac personal name rendered Jesus in English.",
+            "evidence": "Matthew 1:1 names Jesus as the subject of the genealogy. Matthew 1:21 connects the choice of his name with his saving his people from their sins."
+          }
+        },
+        "evidence": "In דִּילִידֻֿותֵֿה דּיֵשֻוע, the suffix ־ֵה (“his”) anticipates the name introduced by דּ־. The genealogy is Jesus’s, and the following title משִיחָא identifies him as the Messiah.",
+        "gloss": "Jesus",
+        "language": "syc",
+        "lemma": "יֵשֻוע",
+        "morphology": "Masculine singular personal name with prefixed genitive linker דּ־, “of.”",
+        "qualifier": "",
+        "root": "ישע",
+        "sense": "The personal name of Jesus the Messiah."
+      },
+      "position": 2,
+      "surface": "דּיֵשֻוע"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "mashach"
+        },
+        "evidence": "In דּיֵשֻוע משִיחָא, “of Jesus the Messiah,” משִיחָא follows Jesus’ name as his title. The genealogy then identifies him as son of David and son of Abraham.",
+        "gloss": "the Anointed One",
+        "language": "syc",
+        "lemma": "מְשִׁיחָא",
+        "morphology": "Masculine singular noun in the emphatic state, with no prefix or pronominal suffix.",
+        "qualifier": "",
+        "root": "משח",
+        "sense": "the Messiah"
+      },
+      "position": 3,
+      "surface": "משִיחָא"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ben"
+        },
+        "evidence": "בּרֵה דּדַֿוִידֿ identifies Jesus the Messiah as David’s descendant. The suffix refers forward to David, who is named in the following דּ־phrase. The parallel phrase בּרֵה דַּאבֿרָהָמ confirms the genealogical sense.",
+        "gloss": "son of David",
+        "language": "syc",
+        "lemma": "בְּרָא",
+        "morphology": "Masculine singular noun with the third-person masculine singular possessive suffix ־ֵה, anticipating דּדַֿוִידֿ.",
+        "qualifier": "noun",
+        "root": "בנה",
+        "sense": "son in a genealogy, including a descendant across generations"
+      },
+      "position": 4,
+      "surface": "בּרֵה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "david-syc",
+            "base": null,
+            "change": "Add the pointed Syriac spelling as a name article linked to the same root as Hebrew דָּוִד.",
+            "definition": "The Syriac personal name David, here naming an ancestor of Jesus the Messiah.",
+            "evidence": "Matthew 1:1 places David and Abraham in parallel expressions of descent."
+          }
+        },
+        "evidence": "בּרֵה דּדַֿוִידֿ means “son of David.” The suffix on בּרֵה anticipates the person identified by דּ־. The parallel בּרֵה דַּאבֿרָהָמ, “son of Abraham,” confirms the genealogical use.",
+        "gloss": "of David",
+        "language": "syc",
+        "lemma": "דַּוִידֿ",
+        "morphology": "Masculine singular personal name with prefixed genitive דּ־. The initial dalath of the name is spirantized after the prefix.",
+        "qualifier": "",
+        "root": "דוד",
+        "sense": "David, the ancestor named in the genealogy of Jesus the Messiah."
+      },
+      "position": 5,
+      "surface": "דּדַֿוִידֿ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ben"
+        },
+        "evidence": "The marked בּרֵה is followed by דַּאבֿרָהָמ. Its suffix anticipates Abraham as the possessor, so the phrase reads “son of Abraham.” It parallels the preceding “son of David” in the genealogy.",
+        "gloss": "son of",
+        "language": "syc",
+        "lemma": "בְּרָא",
+        "morphology": "Masculine singular noun with a third-person masculine singular possessive suffix.",
+        "qualifier": "noun",
+        "root": "בנה",
+        "sense": "son in a genealogy, including a more remote descendant"
+      },
+      "position": 6,
+      "surface": "בּרֵה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "abraham"
+        },
+        "evidence": "In Matthew 1:1, בּרֵה דַּאבֿרָהָמ means “son of Abraham.” It parallels בּרֵה דּדַֿוִידֿ, “son of David,” identifying Abraham as an ancestor in the genealogy.",
+        "gloss": "Abraham",
+        "language": "syc",
+        "lemma": "אַבֿרָהָמ",
+        "morphology": "Masculine singular personal name with prefixed genitive particle דּ־, “of”.",
+        "qualifier": "",
+        "root": "אבה",
+        "sense": "Abraham, the patriarch named as an ancestor of Jesus the Messiah."
+      },
+      "position": 7,
+      "surface": "דַּאבֿרָהָמ"
+    }
+  ]
+}

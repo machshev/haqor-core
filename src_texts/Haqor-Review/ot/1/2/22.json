@@ -1,0 +1,299 @@
+{
+  "book": 1,
+  "chapter": 2,
+  "review": {
+    "entities": [
+      {
+        "evidence": "יַהְוֶה explicitly names the subject of וַיִּבֶן. The appositive אֱלֹהִים identifies him as God, and the source tags both words LORD@Gen.1.1.",
+        "key": "Yahweh@Gen.2.22",
+        "new": {
+          "description": "The God of Israel, who built the rib taken from the man into a woman and brought her to the man.",
+          "kind": "person",
+          "name": "Yahweh"
+        },
+        "position": 1
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "and he built",
+        "position": 0
+      },
+      {
+        "gloss": "Yahweh",
+        "position": 1
+      },
+      {
+        "gloss": "God",
+        "position": 2
+      },
+      {
+        "gloss": "(direct-object marker)",
+        "position": 3
+      },
+      {
+        "gloss": "the rib",
+        "position": 4
+      },
+      {
+        "gloss": "which",
+        "position": 5
+      },
+      {
+        "gloss": "he had taken",
+        "position": 6
+      },
+      {
+        "gloss": "from",
+        "position": 7
+      },
+      {
+        "gloss": "the man",
+        "position": 8
+      },
+      {
+        "gloss": "into a woman",
+        "position": 9
+      },
+      {
+        "gloss": "and he brought her",
+        "position": 10
+      },
+      {
+        "gloss": "to",
+        "position": 11
+      },
+      {
+        "gloss": "the man",
+        "position": 12
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[Then|0] [Yahweh|1] [God|2] [built|0] [the rib|4,3] [which|5] [he had taken|6] [from|7] [the man|8] [into a woman|9], [and he brought her|10] [to|11] [the man|12]."
+  },
+  "source": "ot",
+  "verse": 22,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ben"
+        },
+        "evidence": "יַהְוֶה אֱלֹהִים is the subject. אֶת־הַצֵּלָע marks the rib as the direct object, and לְאִשָּׁה gives the result. God built the rib he had taken into a woman.",
+        "gloss": "and he built",
+        "language": "he",
+        "lemma": "בָּנָה",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed conjunction וַ־ and an apocopated stem.",
+        "qualifier": "",
+        "root": "בנה",
+        "sense": "build, form something from material"
+      },
+      "position": 0,
+      "surface": "וַיִּבֶן"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yahweh"
+        },
+        "evidence": "In וַיִּבֶן יַהְוֶה אֱלֹהִים, יַהְוֶה names the subject of וַיִּבֶן ‘he built’, and אֱלֹהִים ‘God’ stands in apposition. Yahweh God builds the rib into a woman.",
+        "gloss": "Yahweh",
+        "language": "he",
+        "lemma": "יַהְוֶה",
+        "morphology": "Proper noun, masculine singular, without prefix or suffix.",
+        "qualifier": "",
+        "root": "הוה",
+        "sense": "Personal name of the God of Israel"
+      },
+      "position": 1,
+      "surface": "יַהְוֶה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "אֱלֹהִים stands in apposition to יַהְוֶה. The masculine singular verb וַיִּבֶן (“he built”) identifies יַהְוֶה אֱלֹהִים as the one who built the rib into a woman.",
+        "gloss": "God",
+        "language": "he",
+        "lemma": "אֱלֹהִים",
+        "morphology": "Common noun, masculine plural absolute, with singular reference. No prefix or suffix.",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "the Mighty One, God"
+      },
+      "position": 2,
+      "surface": "אֱלֹהִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "et"
+        },
+        "evidence": "אֶת introduces הַצֵּלָע ‘the rib’ as the definite direct object of וַיִּבֶן ‘he built’. The rib is what Yahweh God formed into a woman.",
+        "gloss": "(direct-object marker)",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Uninflected direct-object particle without prefix or suffix",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "(marks the definite object)"
+      },
+      "position": 3,
+      "surface": "אֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "tsela"
+        },
+        "evidence": "אֶת marks הַצֵּלָע as the object of וַיִּבֶן. The clause אֲשֶׁר לָקַח מִן הָאָדָם identifies it as the rib God took from the man and formed into a woman.",
+        "gloss": "the rib",
+        "language": "he",
+        "lemma": "צֵלָע",
+        "morphology": "Definite article הַ־ prefixed to a common noun, singular absolute, of common gender.",
+        "qualifier": "",
+        "root": "צלע",
+        "sense": "rib"
+      },
+      "position": 4,
+      "surface": "הַצֵּלָע"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ashar"
+        },
+        "evidence": "אֲשֶׁר introduces the clause לָקַח מִן הָאָדָם, “he took from the man.” Its antecedent is הַצֵּלָע, “the rib,” understood as the object of לָקַח.",
+        "gloss": "which",
+        "language": "he",
+        "lemma": "אֲשֶׁר",
+        "morphology": "Uninflected relative particle without prefix or suffix.",
+        "qualifier": "",
+        "root": "אשר",
+        "sense": "who, which, that"
+      },
+      "position": 5,
+      "surface": "אֲשֶׁר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "laqach"
+        },
+        "evidence": "In הַצֵּלָע אֲשֶׁר לָקַח מִן הָאָדָם, the rib is what God had taken, and מִן הָאָדָם identifies the man from whom he removed it.",
+        "gloss": "had taken",
+        "language": "he",
+        "lemma": "לָקַח",
+        "morphology": "Qal perfect, third person masculine singular",
+        "qualifier": "",
+        "root": "לקח",
+        "sense": "take away, remove"
+      },
+      "position": 6,
+      "surface": "לָקַח"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "min"
+        },
+        "evidence": "In אֲשֶׁר לָקַח מִן הָאָדָם, “which he took from the man,” מִן introduces the man as the source of the rib.",
+        "gloss": "from",
+        "language": "he",
+        "lemma": "מִן",
+        "morphology": "Independent preposition with no prefix or suffix.",
+        "qualifier": "",
+        "root": "מנ",
+        "sense": "out of, made from; from (a source or giver)"
+      },
+      "position": 7,
+      "surface": "מִן"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "adam"
+        },
+        "evidence": "In אֲשֶׁר לָקַח מִן הָאָדָם, “which he took from the man,” מִן marks the man as the source of the rib. The definite article identifies the particular man already introduced in the narrative.",
+        "gloss": "the man",
+        "language": "he",
+        "lemma": "אָדָם",
+        "morphology": "Masculine singular common noun in the absolute state with the prefixed definite article הָ־.",
+        "qualifier": "noun",
+        "root": "אדמ",
+        "sense": "the man (the first man)"
+      },
+      "position": 8,
+      "surface": "הָאָדָם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "enosh"
+        },
+        "evidence": "הַצֵּלָע is the object of וַיִּבֶן, and לְאִשָּׁה identifies what God made the rib into. The feminine singular suffix in וַיְבִאֶהָ then refers to the woman he brought to the man.",
+        "gloss": "into a woman",
+        "language": "he",
+        "lemma": "אִשָּׁה",
+        "morphology": "Preposition לְ marking the result of וַיִּבֶן, followed by a feminine singular absolute noun.",
+        "qualifier": "",
+        "root": "אנש",
+        "sense": "woman"
+      },
+      "position": 9,
+      "surface": "לְאִשָּׁה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "bo"
+        },
+        "evidence": "יַהְוֶה אֱלֹהִים remains the subject. The suffix ־הָ refers to the woman just mentioned in לְאִשָּׁה, and אֶל הָאָדָם identifies the man as the one to whom God brought her.",
+        "gloss": "and he brought her",
+        "language": "he",
+        "lemma": "בּוֹא",
+        "morphology": "Hiphil wayyiqtol, third masculine singular, with prefixed וַ־ and a third feminine singular object suffix ־הָ.",
+        "qualifier": "",
+        "root": "בוא",
+        "sense": "bring someone or something to a destination"
+      },
+      "position": 10,
+      "surface": "וַיְבִאֶהָ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "In וַיְבִאֶהָ אֶל הָאָדָם, “he brought her to the man,” אֶל introduces the person to whom she was brought.",
+        "gloss": "to",
+        "language": "he",
+        "lemma": "אֶל",
+        "morphology": "Preposition without prefix or suffix.",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "to (a person: speaking, sending, bringing)"
+      },
+      "position": 11,
+      "surface": "אֶל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "adam"
+        },
+        "evidence": "In וַיְבִאֶהָ אֶל הָאָדָם (“he brought her to the man”), הָאָדָם identifies the same man from whom God took the rib earlier in the verse.",
+        "gloss": "the man",
+        "language": "he",
+        "lemma": "אָדָם",
+        "morphology": "Masculine singular absolute noun with prefixed definite article הָ־.",
+        "qualifier": "noun",
+        "root": "אדמ",
+        "sense": "the man (the first man)"
+      },
+      "position": 12,
+      "surface": "הָאָדָם"
+    }
+  ]
+}

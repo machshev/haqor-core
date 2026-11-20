@@ -1,0 +1,315 @@
+{
+  "book": 1,
+  "chapter": 8,
+  "review": {
+    "entities": [],
+    "glosses": [
+      {
+        "gloss": "every",
+        "position": 0
+      },
+      {
+        "gloss": "animal",
+        "position": 1
+      },
+      {
+        "gloss": "every",
+        "position": 2
+      },
+      {
+        "gloss": "crawling thing",
+        "position": 3
+      },
+      {
+        "gloss": "and every",
+        "position": 4
+      },
+      {
+        "gloss": "bird",
+        "position": 5
+      },
+      {
+        "gloss": "everything",
+        "position": 6
+      },
+      {
+        "gloss": "that moves about",
+        "position": 7
+      },
+      {
+        "gloss": "on",
+        "position": 8
+      },
+      {
+        "gloss": "the ground",
+        "position": 9
+      },
+      {
+        "gloss": "by their families",
+        "position": 10
+      },
+      {
+        "gloss": "went out",
+        "position": 11
+      },
+      {
+        "gloss": "of",
+        "position": 12
+      },
+      {
+        "gloss": "the ark",
+        "position": 13
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[Every|0] [animal|1], [every|2] [crawling thing|3], [and every|4] [bird|5]—[everything|6] [that moves about|7] [on|8] [the ground|9]—[went out|11] [of|12] [the ark|13] [by their families|10]."
+  },
+  "source": "ot",
+  "verse": 19,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "kalal"
+        },
+        "evidence": "In כָּל הַחַיָּה, כָּל quantifies the definite collective noun הַחַיָּה (‘the animals’). The parallel phrases כָּל הָרֶמֶשׂ and וְכָל הָעוֹף likewise include each group in full among those that left the ark.",
+        "gloss": "all",
+        "language": "he",
+        "lemma": "כֹּל",
+        "morphology": "Common noun, masculine singular construct, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "כלל",
+        "sense": "all, the whole"
+      },
+      "position": 0,
+      "surface": "כָּל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chayah"
+        },
+        "evidence": "כָּל הַחַיָּה means “every animal.” It heads the list of animals, creeping things, and birds that left the ark by their families.",
+        "gloss": "animal",
+        "language": "he",
+        "lemma": "חַיָּה",
+        "morphology": "Definite article הַ־ + feminine singular absolute common noun, used collectively.",
+        "qualifier": "animal",
+        "root": "חיה",
+        "sense": "living thing, animal"
+      },
+      "position": 1,
+      "surface": "הַחַיָּה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "kalal"
+        },
+        "evidence": "In כָּל הָרֶמֶשׂ, כָּל takes the definite collective noun הָרֶמֶשׂ as its complement. The phrase means “all the creeping things” and names one of the groups that left the ark.",
+        "gloss": "all",
+        "language": "he",
+        "lemma": "כֹּל",
+        "morphology": "Masculine singular noun in the construct state.",
+        "qualifier": "",
+        "root": "כלל",
+        "sense": "all, the whole"
+      },
+      "position": 2,
+      "surface": "כָּל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ramas-creep"
+        },
+        "evidence": "כָּל הָרֶמֶשׂ occurs between כָּל הַחַיָּה and וְכָל הָעוֹף in the list of creatures that left the ark. The parallel phrases identify רֶמֶשׂ as a collective noun, and the later רוֹמֵשׂ עַל הָאָרֶץ describes movement on the ground.",
+        "gloss": "the creeping creatures",
+        "language": "he",
+        "lemma": "רֶמֶשׂ",
+        "morphology": "Definite article הָ־ prefixed to a masculine singular absolute noun used collectively.",
+        "qualifier": "",
+        "root": "רמשׂ",
+        "sense": "moving creatures"
+      },
+      "position": 3,
+      "surface": "הָרֶמֶשׂ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "kalal"
+        },
+        "evidence": "In וְכָל הָעוֹף, הָעוֹף is a singular collective meaning “the birds.” כָל includes the entire group among those that left the ark, and וְ־ joins it to the preceding groups.",
+        "gloss": "and all",
+        "language": "he",
+        "lemma": "כֹּל",
+        "morphology": "Conjunction וְ־ prefixed to a masculine singular construct noun.",
+        "qualifier": "",
+        "root": "כלל",
+        "sense": "all, the whole"
+      },
+      "position": 4,
+      "surface": "וְכָל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "uph"
+        },
+        "evidence": "וְכָל הָעוֹף means “and all the birds.” The singular noun names a whole class among the creatures that left the ark by their families.",
+        "gloss": "birds",
+        "language": "he",
+        "lemma": "עוֹף",
+        "morphology": "Definite article הָ־ + masculine singular absolute common noun used collectively.",
+        "qualifier": "",
+        "root": "עופ",
+        "sense": "birds collectively"
+      },
+      "position": 5,
+      "surface": "הָעוֹף"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "kalal"
+        },
+        "evidence": "In כֹּל רוֹמֵשׂ עַל הָאָרֶץ, “everything that moves on the earth,” כֹּל sums up the creatures just listed. The participle רוֹמֵשׂ specifies what they do.",
+        "gloss": "everything",
+        "language": "he",
+        "lemma": "כֹּל",
+        "morphology": "Masculine singular absolute noun, without prefix or suffix.",
+        "qualifier": "",
+        "root": "כלל",
+        "sense": "everything, all things"
+      },
+      "position": 6,
+      "surface": "כֹּל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ramas-creep"
+        },
+        "evidence": "כֹּל רוֹמֵשׂ עַל הָאָרֶץ means “everything that moves about on the earth.” The participle describes the creatures leaving the ark by their activity.",
+        "gloss": "that moves about",
+        "language": "he",
+        "lemma": "רָמַשׂ",
+        "morphology": "Qal active participle, masculine singular absolute, used substantivally",
+        "qualifier": "",
+        "root": "רמשׂ",
+        "sense": "move about"
+      },
+      "position": 7,
+      "surface": "רוֹמֵשׂ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "alah"
+        },
+        "evidence": "In כֹּל רוֹמֵשׂ עַל הָאָרֶץ, “everything that moves on the ground,” עַל introduces הָאָרֶץ as the surface on which the creatures move.",
+        "gloss": "on",
+        "language": "he",
+        "lemma": "עַל",
+        "morphology": "Preposition without prefix or suffix.",
+        "qualifier": "",
+        "root": "עלה",
+        "sense": "on, upon, over"
+      },
+      "position": 8,
+      "surface": "עַל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "erets"
+        },
+        "evidence": "In כֹּל רוֹמֵשׂ עַל הָאָרֶץ, “everything that moves on the ground,” עַל marks the ground as the surface on which the creatures move.",
+        "gloss": "the ground",
+        "language": "he",
+        "lemma": "אֶרֶץ",
+        "morphology": "Definite article הָ־ + common noun, singular absolute, common gender.",
+        "qualifier": "",
+        "root": "ארצ",
+        "sense": "ground, surface"
+      },
+      "position": 9,
+      "surface": "הָאָרֶץ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "mishpachah"
+        },
+        "evidence": "The suffix refers to the creatures listed in the verse. With יָצְאוּ מִן הַתֵּבָה, “they came out of the ark,” לְ has distributive force: the creatures came out grouped by kind.",
+        "gloss": "according to their kinds",
+        "language": "he",
+        "lemma": "מִשְׁפָּחָה",
+        "morphology": "Preposition לְ + feminine plural construct noun + third-person masculine plural possessive suffix.",
+        "qualifier": "",
+        "root": "שפח",
+        "sense": "kind, sort"
+      },
+      "position": 10,
+      "surface": "לְמִשְׁפְּחֹתֵיהֶם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yatsa"
+        },
+        "evidence": "The animals are the plural subject of יָצְאוּ, and מִן הַתֵּבָה identifies the place they left, the ark.",
+        "gloss": "went out",
+        "language": "he",
+        "lemma": "יָצָא",
+        "morphology": "Qal perfect, third person common plural",
+        "qualifier": "",
+        "root": "יצא",
+        "sense": "go out, depart from a place or someone’s presence"
+      },
+      "position": 11,
+      "surface": "יָצְאוּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "min"
+        },
+        "evidence": "In יָצְאוּ מִן הַתֵּבָה, “they went out of the ark,” מִן marks the ark as the place the animals left.",
+        "gloss": "from",
+        "language": "he",
+        "lemma": "מִן",
+        "morphology": "Independent preposition without prefix or suffix.",
+        "qualifier": "",
+        "root": "מנ",
+        "sense": "from, away from (place, separation)"
+      },
+      "position": 12,
+      "surface": "מִן"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "tevah",
+            "base": null,
+            "change": "Add תֵּבָה under its own consonants תבה, with senses for Noah’s ark and the reed basket used for Moses.",
+            "definition": "A container that holds living beings on water. Here it is Noah’s ark.",
+            "evidence": "The ark floats on the water in Genesis 7:18, and the animals leave it in Genesis 8:19. Exodus 2:3 uses the same noun for the reed basket in which Moses’ mother places him."
+          }
+        },
+        "evidence": "In Genesis 8:19 the animals and birds are the subject of יָצְאוּ, “they went out.” The phrase מִן הַתֵּבָה identifies the ark as the place they left. The definite article points back to the vessel that floated on the floodwaters in Genesis 7:18.",
+        "gloss": "the ark",
+        "language": "he",
+        "lemma": "תֵּבָה",
+        "morphology": "Definite article הַ־ followed by a feminine singular absolute noun, with no suffix.",
+        "qualifier": "",
+        "root": "תבה",
+        "sense": "The ark that carried Noah, his family, and the animals through the flood."
+      },
+      "position": 13,
+      "surface": "הַתֵּבָה"
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "book": 1,
+  "chapter": 5,
+  "source": "ot",
+  "verse": 24,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "halak"
+        },
+        "evidence": "חֲנוֹךְ is the subject, and אֶת הָאֱלֹהִים means “with God.” The verse repeats the wording of Genesis 5:22, where Enoch’s walk with God extends over three hundred years. It describes his continuing way of life.",
+        "gloss": "and he walked",
+        "language": "he",
+        "lemma": "הָלַךְ",
+        "morphology": "Hitpael wayyiqtol, third person masculine singular, with prefixed וַ and no suffix",
+        "qualifier": "",
+        "root": "הלכ",
+        "sense": "conduct one’s life in fellowship with God"
+      },
+      "position": 0,
+      "surface": "וַיִּתְהַלֵּךְ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "enoch"
+        },
+        "evidence": "חֲנוֹךְ is the subject of וַיִּתְהַלֵּךְ, “he walked.” The statement that Enoch walked with God repeats Genesis 5:22 and refers to the same Enoch whom Genesis 5:18 identifies as Jared’s son.",
+        "gloss": "Enoch",
+        "language": "he",
+        "lemma": "חֲנוֹךְ",
+        "morphology": "Masculine singular proper noun without prefix or suffix.",
+        "qualifier": "",
+        "root": "חנכ",
+        "sense": "Enoch, son of Jared"
+      },
+      "position": 1,
+      "surface": "חֲנוֹךְ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "et"
+        },
+        "evidence": "In וַיִּתְהַלֵּךְ חֲנוֹךְ אֶת הָאֱלֹהִים, Enoch is the subject of “walked,” and אֶת introduces his companion, God. The phrase means “Enoch walked with God.”",
+        "gloss": "with",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Preposition, unsuffixed, with no prefix.",
+        "qualifier": "preposition",
+        "root": "את",
+        "sense": "with, together with (company)"
+      },
+      "position": 2,
+      "surface": "אֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "In וַיִּתְהַלֵּךְ חֲנוֹךְ אֶת הָאֱלֹהִים, אֶת means “with” and identifies God as the one with whom Enoch walked. The closing clause כִּי לָקַח אֹתוֹ אֱלֹהִים refers to the same God and uses the singular verb לָקַח, “he took.”",
+        "gloss": "God",
+        "language": "he",
+        "lemma": "אֱלֹהִים",
+        "morphology": "Definite article הָ־ + masculine plural noun in the absolute state, with singular reference.",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "the Mighty One, God"
+      },
+      "position": 3,
+      "surface": "הָאֱלֹהִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "eyn"
+        },
+        "evidence": "The suffix refers to Enoch. The following clause כִּי לָקַח אֹתוֹ אֱלֹהִים, “because God took him,” explains why he was no longer present.",
+        "gloss": "and he was no more",
+        "language": "he",
+        "lemma": "אַיִן",
+        "morphology": "Conjunction וְ plus the negative existential particle אֵין with a third-person masculine singular pronominal suffix.",
+        "qualifier": "",
+        "root": "אינ",
+        "sense": "is not, is no more"
+      },
+      "position": 4,
+      "surface": "וְאֵינֶנּוּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ki"
+        },
+        "evidence": "כִּי introduces לָקַח אֹתוֹ אֱלֹהִים, “God took him,” as the reason for וְאֵינֶנּוּ, “and he was no more.”",
+        "gloss": "because",
+        "language": "he",
+        "lemma": "כִּי",
+        "morphology": "Unprefixed Hebrew conjunction without a suffix.",
+        "qualifier": "conjunction",
+        "root": "כי",
+        "sense": "for, because"
+      },
+      "position": 5,
+      "surface": "כִּי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "laqach"
+        },
+        "evidence": "אֱלֹהִים is the subject, and אֹתוֹ refers to Enoch. The כִּי clause explains וְאֵינֶנּוּ, “he was no longer there”: God had taken him away.",
+        "gloss": "took away",
+        "language": "he",
+        "lemma": "לָקַח",
+        "morphology": "Qal perfect, third person masculine singular, with no prefix or suffix",
+        "qualifier": "",
+        "root": "לקח",
+        "sense": "take away, remove"
+      },
+      "position": 6,
+      "surface": "לָקַח"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "In כִּי לָקַח אֹתוֹ אֱלֹהִים, “because God took him,” אֱלֹהִים is the subject of the masculine singular verb לָקַח. It refers to the same God with whom Enoch walked earlier in the verse.",
+        "gloss": "God",
+        "language": "he",
+        "lemma": "אֱלֹהִים",
+        "morphology": "Masculine plural noun in the absolute state, with singular reference and no prefix or suffix.",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "the Mighty One, God"
+      },
+      "position": 8,
+      "surface": "אֱלֹהִים"
+    }
+  ]
+}

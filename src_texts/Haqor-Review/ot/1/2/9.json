@@ -1,0 +1,337 @@
+{
+  "book": 1,
+  "chapter": 2,
+  "source": "ot",
+  "verse": 9,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "tsemah"
+        },
+        "evidence": "יַהְוֶה אֱלֹהִים is the subject and כָּל עֵץ (‘every tree’) is the object. The Hiphil expresses that Yahweh God caused the trees to grow, and מִן הָאֲדָמָה (‘from the ground’) identifies where they emerged.",
+        "gloss": "and he made grow",
+        "language": "he",
+        "lemma": "צָמַח",
+        "morphology": "Hiphil wayyiqtol, third person masculine singular, with prefixed וַ־.",
+        "qualifier": "",
+        "root": "צמח",
+        "sense": "to cause plants to grow from the ground"
+      },
+      "position": 0,
+      "surface": "וַיַּצְמַח"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yahweh"
+        },
+        "evidence": "יַהְוֶה אֱלֹהִים is the subject of וַיַּצְמַח (“caused to grow”). יַהְוֶה names the God who caused the trees to grow from the ground.",
+        "gloss": "Yahweh",
+        "language": "he",
+        "lemma": "יַהְוֶה",
+        "morphology": "Proper noun with no prefix or suffix",
+        "qualifier": "",
+        "root": "הוה",
+        "sense": "Personal name of the God of Israel"
+      },
+      "position": 1,
+      "surface": "יַהְוֶה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "אֱלֹהִים stands in apposition to יַהְוֶה. Together they name the subject of the singular verb וַיַּצְמַח, “he caused to grow.”",
+        "gloss": "God",
+        "language": "he",
+        "lemma": "אֱלֹהִים",
+        "morphology": "Common noun, masculine plural absolute, with singular reference.",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "the Mighty One, God"
+      },
+      "position": 2,
+      "surface": "אֱלֹהִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "min"
+        },
+        "evidence": "With וַיַּצְמַח “he caused to sprout,” מִן הָאֲדָמָה identifies the ground as the source from which the trees sprang.",
+        "gloss": "out of",
+        "language": "he",
+        "lemma": "מִן",
+        "morphology": "Independent preposition with no prefix or suffix.",
+        "qualifier": "",
+        "root": "מנ",
+        "sense": "out of, made from; from (a source or giver)"
+      },
+      "position": 3,
+      "surface": "מִן"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "adam"
+        },
+        "evidence": "מִן הָאֲדָמָה identifies the soil from which God caused every tree to grow (וַיַּצְמַח).",
+        "gloss": "the ground",
+        "language": "he",
+        "lemma": "אֲדָמָה",
+        "morphology": "Feminine singular absolute common noun with the prefixed definite article הָ־.",
+        "qualifier": "",
+        "root": "אדמ",
+        "sense": "the ground that is tilled; soil"
+      },
+      "position": 4,
+      "surface": "הָאֲדָמָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "kalal"
+        },
+        "evidence": "כָּל precedes the indefinite singular עֵץ in כָּל עֵץ נֶחְמָד לְמַרְאֶה וְטוֹב לְמַאֲכָל, meaning “every tree pleasant to the sight and good for food.” It quantifies the trees that meet that description.",
+        "gloss": "every",
+        "language": "he",
+        "lemma": "כֹּל",
+        "morphology": "Masculine singular noun in the construct state, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "כלל",
+        "sense": "every, each; any"
+      },
+      "position": 5,
+      "surface": "כָּל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ets"
+        },
+        "evidence": "כָּל עֵץ means “every tree.” God causes each tree to grow from the ground, and נֶחְמָד לְמַרְאֶה וְטוֹב לְמַאֲכָל describes it as pleasing to the eye and good for food.",
+        "gloss": "tree",
+        "language": "he",
+        "lemma": "עֵץ",
+        "morphology": "Common noun, masculine singular absolute, without prefix or suffix.",
+        "qualifier": "",
+        "root": "עצה",
+        "sense": "tree"
+      },
+      "position": 6,
+      "surface": "עֵץ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chamad"
+        },
+        "evidence": "נֶחְמָד agrees with עֵץ ‘tree’. The parallel phrases נֶחְמָד לְמַרְאֶה ‘pleasing to the eye’ and טוֹב לְמַאֲכָל ‘good for food’ describe the tree’s visual appeal and its value as food.",
+        "gloss": "pleasing",
+        "language": "he",
+        "lemma": "חָמַד",
+        "morphology": "Niphal participle, masculine singular absolute, used attributively",
+        "qualifier": "",
+        "root": "חמד",
+        "sense": "be desirable"
+      },
+      "position": 7,
+      "surface": "נֶחְמָד"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "raah"
+        },
+        "evidence": "נֶחְמָד לְמַרְאֶה describes each tree as pleasing to the eye. The parallel וְטוֹב לְמַאֲכָל describes it as good for food. In each phrase, לְ marks the respect in which the tree has the stated quality.",
+        "gloss": "to the sight",
+        "language": "he",
+        "lemma": "מַרְאֶה",
+        "morphology": "Preposition לְ prefixed to a masculine singular absolute noun.",
+        "qualifier": "",
+        "root": "ראה",
+        "sense": "appearance of a thing, how it looks"
+      },
+      "position": 8,
+      "surface": "לְמַרְאֶה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "tov"
+        },
+        "evidence": "טוֹב agrees with עֵץ, and וְ joins it to נֶחְמָד. The following word לְמַאֲכָל supplies “for food” and specifies the use for which the tree is good.",
+        "gloss": "and good",
+        "language": "he",
+        "lemma": "טוֹב",
+        "morphology": "Conjunction וְ prefixed to a masculine singular absolute adjective.",
+        "qualifier": "adjective",
+        "root": "טוב",
+        "sense": "good in quality, fine, fit for use"
+      },
+      "position": 9,
+      "surface": "וְטוֹב"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "akal"
+        },
+        "evidence": "The verse describes each tree as נֶחְמָד לְמַרְאֶה, “pleasing to the sight,” and טוֹב לְמַאֲכָל, “good for food.” The second phrase describes the tree’s suitability for eating.",
+        "gloss": "for food",
+        "language": "he",
+        "lemma": "מַאֲכָל",
+        "morphology": "Preposition לְ prefixed to a masculine singular absolute noun.",
+        "qualifier": "",
+        "root": "אכל",
+        "sense": "food, what is for eating"
+      },
+      "position": 10,
+      "surface": "לְמַאֲכָל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ets"
+        },
+        "evidence": "וְעֵץ הַחַיִּים means “and the tree of life.” The definite noun הַחַיִּים completes the construct phrase, and בְּתוֹךְ הַגָּן locates the tree in the middle of the garden.",
+        "gloss": "and the tree of",
+        "language": "he",
+        "lemma": "עֵץ",
+        "morphology": "Conjunction וְ prefixed to a masculine singular noun in the construct state.",
+        "qualifier": "",
+        "root": "עצה",
+        "sense": "tree"
+      },
+      "position": 11,
+      "surface": "וְעֵץ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chayah"
+        },
+        "evidence": "In וְעֵץ הַחַיִּים, “and the tree of life,” הַחַיִּים completes the construct phrase and names the quality associated with the tree, just as הַדַּעַת names knowledge in the parallel phrase וְעֵץ הַדַּעַת.",
+        "gloss": "life",
+        "language": "he",
+        "lemma": "חַיִּים",
+        "morphology": "Masculine plural noun in the absolute state with the prefixed definite article הַ־. The plural form has an abstract singular meaning.",
+        "qualifier": "",
+        "root": "חיה",
+        "sense": "life, being alive"
+      },
+      "position": 12,
+      "surface": "הַחַיִּים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "tavek",
+            "base": "d8dce38f79549e3ae5a33b554106d9b697991b2bf1b18199b19be20e491dca9b",
+            "change": "Assign this occurrence to the existing tavek-middle sense in tavek and clarify the construct phrase in its Gen.2.9 evidence note.",
+            "definition": "The middle of a place. With prefixed בְּ and a following place name or noun, the phrase locates something in the middle of that place.",
+            "evidence": "In Gen.2.9, עֵץ הַחַיִּים בְּתוֹךְ הַגָּן locates the tree of life relative to the garden. The construct form תוֹךְ takes הַגָּן as its complement."
+          }
+        },
+        "evidence": "Gen.2.9 places בְּתוֹךְ הַגָּן immediately after עֵץ הַחַיִּים. The phrase locates the tree of life in the middle of the garden. הַגָּן supplies the place whose middle is meant.",
+        "gloss": "in the middle of",
+        "language": "he",
+        "lemma": "תָּוֶךְ",
+        "morphology": "Prefixed preposition בְּ ‘in’ + תוֹךְ, masculine singular construct noun, followed by הַגָּן ‘the garden’. The final ךְ belongs to the noun. There is no pronominal suffix.",
+        "qualifier": "",
+        "root": "תוכ",
+        "sense": "middle, centre"
+      },
+      "position": 13,
+      "surface": "בְּתוֹךְ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ganan"
+        },
+        "evidence": "בְּתוֹךְ הַגָּן means “in the midst of the garden.” It locates the tree of life within the garden where God caused trees to grow.",
+        "gloss": "the garden",
+        "language": "he",
+        "lemma": "גַּן",
+        "morphology": "Common noun of common gender, singular absolute, with the prefixed definite article הַ־.",
+        "qualifier": "",
+        "root": "גננ",
+        "sense": "garden"
+      },
+      "position": 14,
+      "surface": "הַגָּן"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ets"
+        },
+        "evidence": "וְעֵץ הַדַּעַת טוֹב וָרָע means “and the tree of the knowledge of good and evil.” The following הַדַּעַת completes the construct phrase, parallel to וְעֵץ הַחַיִּים, “and the tree of life.”",
+        "gloss": "and the tree of",
+        "language": "he",
+        "lemma": "עֵץ",
+        "morphology": "Masculine singular construct noun with prefixed conjunction וְ.",
+        "qualifier": "",
+        "root": "עצה",
+        "sense": "tree"
+      },
+      "position": 15,
+      "surface": "וְעֵץ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yada"
+        },
+        "evidence": "In וְעֵץ הַדַּעַת טוֹב וָרָע, הַדַּעַת names the knowledge associated with the tree. The following words טוֹב וָרָע specify what is known, good and evil.",
+        "gloss": "the knowledge",
+        "language": "he",
+        "lemma": "דַּעַת",
+        "morphology": "Feminine singular absolute noun with the prefixed definite article הַ־.",
+        "qualifier": "",
+        "root": "ידע",
+        "sense": "the knowledge of good and evil"
+      },
+      "position": 16,
+      "surface": "הַדַּעַת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "tov"
+        },
+        "evidence": "In עֵץ הַדַּעַת טוֹב וָרָע, “the tree of the knowledge of good and evil,” טוֹב is paired with רָע. Together they name what is known.",
+        "gloss": "good",
+        "language": "he",
+        "lemma": "טוֹב",
+        "morphology": "Masculine singular absolute adjective used substantivally.",
+        "qualifier": "adjective",
+        "root": "טוב",
+        "sense": "good (and evil): to know, discern or choose"
+      },
+      "position": 17,
+      "surface": "טוֹב"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ra"
+        },
+        "evidence": "In עֵץ הַדַּעַת טוֹב וָרָע, “the tree of the knowledge of good and evil,” טוֹב and רָע together name what is known. רָע functions substantivally as the counterpart of טוֹב.",
+        "gloss": "and evil",
+        "language": "he",
+        "lemma": "רַע",
+        "morphology": "Conjunction וָ־ + masculine singular absolute רַע, in the pausal form רָע.",
+        "qualifier": "noun",
+        "root": "רעע",
+        "sense": "(with טוֹב) good and evil"
+      },
+      "position": 18,
+      "surface": "וָרָע"
+    }
+  ]
+}

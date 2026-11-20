@@ -1,0 +1,311 @@
+{
+  "book": 1,
+  "chapter": 7,
+  "review": {
+    "entities": [
+      {
+        "evidence": "Yahweh is the personal name of the God who commanded Noah and then shut him in the ark. Both clauses carry the same source bearer tag, supporting reuse of the previously proposed Yahweh key.",
+        "key": "Yahweh@Gen.2.22",
+        "new": {
+          "description": "The God of Israel, who built the rib taken from the man into a woman and brought her to the man.",
+          "kind": "person",
+          "name": "Yahweh"
+        },
+        "position": 11
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "and those who went in",
+        "position": 0
+      },
+      {
+        "gloss": "male",
+        "position": 1
+      },
+      {
+        "gloss": "and female",
+        "position": 2
+      },
+      {
+        "gloss": "from all",
+        "position": 3
+      },
+      {
+        "gloss": "flesh",
+        "position": 4
+      },
+      {
+        "gloss": "they went in",
+        "position": 5
+      },
+      {
+        "gloss": "just as",
+        "position": 6
+      },
+      {
+        "gloss": "had commanded",
+        "position": 7
+      },
+      {
+        "gloss": "him",
+        "position": 8
+      },
+      {
+        "gloss": "God",
+        "position": 9
+      },
+      {
+        "gloss": "then he shut",
+        "position": 10
+      },
+      {
+        "gloss": "Yahweh",
+        "position": 11
+      },
+      {
+        "gloss": "behind him",
+        "position": 12
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[And those who went in|0], [male|1] [and female|2] [from all|3] [flesh|4], [went in|5] [just as|6] [God|9] [had commanded|7] [him|8]. [Then|10] [Yahweh|11] [shut|10] [him in|12]."
+  },
+  "source": "ot",
+  "verse": 16,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "bo"
+        },
+        "evidence": "זָכָר וּנְקֵבָה מִכָּל בָּשָׂר identifies those entering as male and female creatures of every kind. The finite verb בָּאוּ resumes the participle and confirms their entry into the ark, which the closing clause depicts YHWH shutting behind Noah.",
+        "gloss": "and those entering",
+        "language": "he",
+        "lemma": "בּוֹא",
+        "morphology": "Conjunction וְ plus definite article הַ plus Qal active participle, masculine plural absolute, used substantivally.",
+        "qualifier": "",
+        "root": "בוא",
+        "sense": "enter, go into"
+      },
+      "position": 0,
+      "surface": "וְהַבָּאִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "zakar"
+        },
+        "evidence": "זָכָר וּנְקֵבָה means “male and female.” The pair identifies the sexes of those who entered the ark.",
+        "gloss": "male",
+        "language": "he",
+        "lemma": "זָכָר",
+        "morphology": "Masculine singular absolute, used substantivally.",
+        "qualifier": "noun",
+        "root": "זכר",
+        "sense": "male"
+      },
+      "position": 1,
+      "surface": "זָכָר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "naqav",
+            "base": null,
+            "change": "Include the animal use alongside the human use under a single sense of נְקֵבָה.",
+            "definition": "A female, whether human or animal.",
+            "evidence": "Genesis 6:19 pairs נְקֵבָה with זָכָר for the animals entering the ark. Genesis 1:27 uses the same pair for humankind."
+          }
+        },
+        "evidence": "זָכָר וּנְקֵבָה, “male and female,” describes the animals entering the ark. נְקֵבָה denotes the female counterpart to זָכָר.",
+        "gloss": "and female",
+        "language": "he",
+        "lemma": "נְקֵבָה",
+        "morphology": "Conjunction וּ־ “and” prefixed to a feminine singular absolute common noun.",
+        "qualifier": "",
+        "root": "נקב",
+        "sense": "The female of an animal pair."
+      },
+      "position": 2,
+      "surface": "וּנְקֵבָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "kalal"
+        },
+        "evidence": "In מִכָּל בָּשָׂר (“from all flesh”), כֹּל quantifies the collective noun בָּשָׂר. The male and female entrants come from that whole group.",
+        "gloss": "from all",
+        "language": "he",
+        "lemma": "כֹּל",
+        "morphology": "Masculine singular construct noun with prefixed מִן (“from”). The נ assimilates to the following כ, marked by the dagesh.",
+        "qualifier": "",
+        "root": "כלל",
+        "sense": "all, the whole"
+      },
+      "position": 3,
+      "surface": "מִכָּל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "basar"
+        },
+        "evidence": "מִכָּל בָּשָׂר means “from among all living creatures.” זָכָר וּנְקֵבָה (“male and female”) describes the creatures that entered the ark.",
+        "gloss": "living creatures",
+        "language": "he",
+        "lemma": "בָּשָׂר",
+        "morphology": "Common noun, masculine singular absolute, used collectively.",
+        "qualifier": "",
+        "root": "בשׂר",
+        "sense": "all flesh: every living creature; mankind"
+      },
+      "position": 4,
+      "surface": "בָּשָׂר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "bo"
+        },
+        "evidence": "בָּאוּ states what the male and female creatures did. The ark is the implied destination, and וַיִּסְגֹּר יַהְוֶה בַּעֲדוֹ describes YHWH shutting Noah in after they entered.",
+        "gloss": "they went in",
+        "language": "he",
+        "lemma": "בּוֹא",
+        "morphology": "Qal perfect, third person common plural",
+        "qualifier": "",
+        "root": "בוא",
+        "sense": "enter, go into"
+      },
+      "position": 5,
+      "surface": "בָּאוּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ashar"
+        },
+        "evidence": "כַּאֲשֶׁר links בָּאוּ (“they came”) to צִוָּה אֹתוֹ אֱלֹהִים (“God had commanded him”). The animals came in as God had commanded Noah.",
+        "gloss": "as",
+        "language": "he",
+        "lemma": "אֲשֶׁר",
+        "morphology": "Prefixed preposition כַּ־ with the indeclinable relative particle אֲשֶׁר.",
+        "qualifier": "",
+        "root": "אשר",
+        "sense": "with a preposition: as, where, than, until"
+      },
+      "position": 6,
+      "surface": "כַּאֲשֶׁר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "tsavah"
+        },
+        "evidence": "כַּאֲשֶׁר צִוָּה אֹתוֹ אֱלֹהִים means “as God had commanded him.” God is the subject, and אֹתוֹ refers to Noah, who received the command.",
+        "gloss": "had commanded",
+        "language": "he",
+        "lemma": "צִוָּה",
+        "morphology": "Piel perfect, third person masculine singular",
+        "qualifier": "",
+        "root": "צוה",
+        "sense": "to give someone a command"
+      },
+      "position": 7,
+      "surface": "צִוָּה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "et",
+            "base": "31c9a635be8bba9a67417e75ea7122e240ae707e04a841533a59ecd2869d0f80",
+            "change": "Add Genesis 7:16 as evidence for the existing object-pronoun sense in et.",
+            "definition": "אֵת carries a pronominal suffix to express the direct object separately from the verb.",
+            "evidence": "Genesis 7:16 uses אֹתוֹ for the person whom God commanded."
+          }
+        },
+        "evidence": "In כַּאֲשֶׁר צִוָּה אֹתוֹ אֱלֹהִים, “as God had commanded him,” אֱלֹהִים is the subject of צִוָּה. The suffix on אֹתוֹ refers to Noah, the person God commanded.",
+        "gloss": "him",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Direct-object particle in its suffixed form אֹת־ with the third-person masculine singular pronominal suffix וֹ.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "Marks the suffixed pronoun as the direct object of the verb."
+      },
+      "position": 8,
+      "surface": "אֹתוֹ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "In כַּאֲשֶׁר צִוָּה אֹתוֹ אֱלֹהִים (“as God had commanded him”), אֱלֹהִים is the subject of the masculine singular verb צִוָּה. The plural noun form refers to the one God who commanded Noah.",
+        "gloss": "God",
+        "language": "he",
+        "lemma": "אֱלֹהִים",
+        "morphology": "Common noun, masculine plural absolute, with singular agreement.",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "the Mighty One, God"
+      },
+      "position": 9,
+      "surface": "אֱלֹהִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "sagar"
+        },
+        "evidence": "After the animals enter the ark, יַהְוֶה is the subject of וַיִּסְגֹּר. The phrase בַּעֲדוֹ means “behind him” and refers to Noah. The ark’s entrance is the implied object.",
+        "gloss": "and he shut",
+        "language": "he",
+        "lemma": "סָגַר",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ and no suffix.",
+        "qualifier": "",
+        "root": "סגר",
+        "sense": "close up a physical opening"
+      },
+      "position": 10,
+      "surface": "וַיִּסְגֹּר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yahweh"
+        },
+        "evidence": "In וַיִּסְגֹּר יַהְוֶה בַּעֲדוֹ, “Yahweh shut him in,” יַהְוֶה is the subject of the masculine singular verb וַיִּסְגֹּר. The name identifies the God who had commanded Noah in the preceding clause.",
+        "gloss": "Yahweh",
+        "language": "he",
+        "lemma": "יַהְוֶה",
+        "morphology": "Proper noun, masculine singular, without prefix or suffix.",
+        "qualifier": "",
+        "root": "הוה",
+        "sense": "Personal name of the God of Israel"
+      },
+      "position": 11,
+      "surface": "יַהְוֶה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "baad"
+        },
+        "evidence": "After the account of entry into the ark, וַיִּסְגֹּר יַהְוֶה בַּעֲדוֹ says that YHWH shut it behind Noah, enclosing him inside.",
+        "gloss": "behind him",
+        "language": "he",
+        "lemma": "בַּעַד",
+        "morphology": "Preposition with the third-person masculine singular pronominal suffix ־וֹ, referring to Noah.",
+        "qualifier": "",
+        "root": "בעד",
+        "sense": "behind, enclosing"
+      },
+      "position": 12,
+      "surface": "בַּעֲדוֹ"
+    }
+  ]
+}

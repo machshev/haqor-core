@@ -1,0 +1,194 @@
+{
+  "book": 1,
+  "chapter": 5,
+  "review": {
+    "entities": [
+      {
+        "evidence": "This Enoch fathers Methuselah, identifying him as Jared’s son in Genesis 5:18.",
+        "key": "Enoch@Gen.5.18",
+        "position": 1
+      },
+      {
+        "evidence": "Methuselah is named as the son whom Enoch fathered at age sixty-five.",
+        "key": "Methuselah@Gen.5.21",
+        "position": 7
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "and he lived",
+        "position": 0
+      },
+      {
+        "gloss": "Enoch",
+        "position": 1
+      },
+      {
+        "gloss": "five",
+        "position": 2
+      },
+      {
+        "gloss": "and sixty",
+        "position": 3
+      },
+      {
+        "gloss": "years",
+        "position": 4
+      },
+      {
+        "gloss": "then he fathered",
+        "position": 5
+      },
+      {
+        "gloss": "(untranslated)",
+        "position": 6
+      },
+      {
+        "gloss": "Methuselah",
+        "position": 7
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[And|0] [Enoch|1] [lived|0] [sixty|3]-[five|2] [years|4], [then he fathered|5] [Methuselah|6,7]."
+  },
+  "source": "ot",
+  "verse": 21,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chayah"
+        },
+        "evidence": "חֲנוֹךְ (Enoch) is the subject of וַיְחִי. The phrase חָמֵשׁ וְשִׁשִּׁים שָׁנָה gives the duration, sixty-five years, and וַיּוֹלֶד introduces the next event, when Enoch fathered Methuselah.",
+        "gloss": "and he lived",
+        "language": "he",
+        "lemma": "חָיָה",
+        "morphology": "Qal wayyiqtol, third-person masculine singular, with prefixed וַ־ and no suffix",
+        "qualifier": "",
+        "root": "חיה",
+        "sense": "to live for a stated length of time"
+      },
+      "position": 0,
+      "surface": "וַיְחִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "enoch"
+        },
+        "evidence": "חֲנוֹךְ is the subject of וַיְחִי and וַיּוֹלֶד. The verse says that Enoch was sixty-five when he fathered Methuselah, identifying him as the son of Jared in this genealogy.",
+        "gloss": "Enoch",
+        "language": "he",
+        "lemma": "חֲנוֹךְ",
+        "morphology": "Masculine singular proper noun without prefix or suffix.",
+        "qualifier": "",
+        "root": "חנכ",
+        "sense": "Enoch, son of Jared"
+      },
+      "position": 1,
+      "surface": "חֲנוֹךְ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chamesh"
+        },
+        "evidence": "In חָמֵשׁ וְשִׁשִּׁים שָׁנָה, חָמֵשׁ supplies the five in “five and sixty years,” Enoch’s age when he fathered Methuselah.",
+        "gloss": "five",
+        "language": "he",
+        "lemma": "חָמֵשׁ",
+        "morphology": "Cardinal numeral, feminine singular absolute.",
+        "qualifier": "",
+        "root": "חמש",
+        "sense": "five"
+      },
+      "position": 2,
+      "surface": "חָמֵשׁ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shesh"
+        },
+        "evidence": "In חָמֵשׁ וְשִׁשִּׁים שָׁנָה, וְ joins five and sixty to give Enoch’s age of sixty-five years when he fathered Methuselah. The Haqor article for שֵׁשׁ explicitly assigns both “six” and “sixty” the root key שדש. Its ד represents a historical consonant preserved in Sabaic s¹dṯy “sixty”.",
+        "gloss": "and sixty",
+        "language": "he",
+        "lemma": "שִׁשִּׁים",
+        "morphology": "Prefixed conjunction וְ (“and”) + cardinal numeral שִׁשִּׁים, common gender, plural absolute.",
+        "qualifier": "",
+        "root": "שדש",
+        "sense": "sixty"
+      },
+      "position": 3,
+      "surface": "וְשִׁשִּׁים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shanah"
+        },
+        "evidence": "In חָמֵשׁ וְשִׁשִּׁים שָׁנָה, the singular שָׁנָה supplies the unit for sixty-five. With וַיְחִי חֲנוֹךְ, the phrase gives Enoch’s age when he fathered Methuselah.",
+        "gloss": "years",
+        "language": "he",
+        "lemma": "שָׁנָה",
+        "morphology": "Common noun, feminine singular absolute, without prefix or suffix.",
+        "qualifier": "noun",
+        "root": "שנה",
+        "sense": "years of a life, age"
+      },
+      "position": 4,
+      "surface": "שָׁנָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yalad"
+        },
+        "evidence": "Enoch is the subject of וַיּוֹלֶד, and אֶת marks Methuselah as its direct object. The verse records that Enoch fathered Methuselah at age sixty-five.",
+        "gloss": "and he fathered",
+        "language": "he",
+        "lemma": "יָלַד",
+        "morphology": "Hiphil wayyiqtol, third person masculine singular, with prefixed conjunction וַ־",
+        "qualifier": "",
+        "root": "ילד",
+        "sense": "beget, father a child"
+      },
+      "position": 5,
+      "surface": "וַיּוֹלֶד"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "et"
+        },
+        "evidence": "In וַיּוֹלֶד אֶת מְתוּשָׁלַח, “he fathered Methuselah,” אֶת marks the personal name מְתוּשָׁלַח as the direct object of וַיּוֹלֶד.",
+        "gloss": "(untranslated)",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Direct-object particle, without prefix or suffix.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "(marks the definite object)"
+      },
+      "position": 6,
+      "surface": "אֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "methuselah"
+        },
+        "evidence": "Enoch (חֲנוֹךְ) is the subject of וַיּוֹלֶד ‘he fathered’, and אֶת marks מְתוּשָׁלַח as its direct object, identifying Methuselah as his son. The verse-final form has pausal שָׁ in place of dictionary-form שֶׁ.",
+        "gloss": "Methuselah",
+        "language": "he",
+        "lemma": "מְתוּשֶׁלַח",
+        "morphology": "Masculine singular personal name in pausal form, without prefix or suffix.",
+        "qualifier": "",
+        "root": "שלח",
+        "sense": "Methuselah, son of Enoch."
+      },
+      "position": 7,
+      "surface": "מְתוּשָׁלַח"
+    }
+  ]
+}

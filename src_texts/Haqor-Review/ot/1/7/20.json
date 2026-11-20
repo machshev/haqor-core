@@ -1,0 +1,189 @@
+{
+  "book": 1,
+  "chapter": 7,
+  "review": {
+    "entities": [],
+    "glosses": [
+      {
+        "gloss": "five (in fifteen)",
+        "position": 0
+      },
+      {
+        "gloss": "ten (in fifteen)",
+        "position": 1
+      },
+      {
+        "gloss": "cubits",
+        "position": 2
+      },
+      {
+        "gloss": "above",
+        "position": 3
+      },
+      {
+        "gloss": "rose",
+        "position": 4
+      },
+      {
+        "gloss": "the waters",
+        "position": 5
+      },
+      {
+        "gloss": "and were covered",
+        "position": 6
+      },
+      {
+        "gloss": "the mountains",
+        "position": 7
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[The waters|5] [rose|4] [fifteen|0,1] [cubits|2] [above|3] {them}, [so that|6] [the mountains|7] [were covered|6]."
+  },
+  "source": "ot",
+  "verse": 20,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chamesh"
+        },
+        "evidence": "חֲמֵשׁ supplies the five in חֲמֵשׁ עֶשְׂרֵה אַמָּה, “fifteen cubits,” a measure of how high the waters rose.",
+        "gloss": "five (in fifteen)",
+        "language": "he",
+        "lemma": "חָמֵשׁ",
+        "morphology": "Feminine singular absolute cardinal numeral, in the form used before עֶשְׂרֵה.",
+        "qualifier": "",
+        "root": "חמש",
+        "sense": "five"
+      },
+      "position": 0,
+      "surface": "חֲמֵשׁ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "asar"
+        },
+        "evidence": "In חֲמֵשׁ עֶשְׂרֵה אַמָּה, “fifteen cubits,” עֶשְׂרֵה supplies ten and חֲמֵשׁ supplies five. The feminine form agrees with אַמָּה, “cubit.”",
+        "gloss": "-teen (in fifteen)",
+        "language": "he",
+        "lemma": "עָשָׂר",
+        "morphology": "Feminine singular absolute cardinal numeral, second element of a compound numeral.",
+        "qualifier": "",
+        "root": "עשׂר",
+        "sense": "ten, in the numbers eleven to nineteen"
+      },
+      "position": 1,
+      "surface": "עֶשְׂרֵה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "em"
+        },
+        "evidence": "חֲמֵשׁ עֶשְׂרֵה אַמָּה means “fifteen cubits” and measures how far the floodwaters rose above the mountains.",
+        "gloss": "cubit",
+        "language": "he",
+        "lemma": "אַמָּה",
+        "morphology": "Feminine singular absolute noun.",
+        "qualifier": "",
+        "root": "אממ",
+        "sense": "cubit"
+      },
+      "position": 2,
+      "surface": "אַמָּה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "alah"
+        },
+        "evidence": "חֲמֵשׁ עֶשְׂרֵה אַמָּה gives the vertical distance, fifteen cubits. מִלְמַעְלָה places the waters that far above the mountains, which the closing clause says were covered.",
+        "gloss": "above",
+        "language": "he",
+        "lemma": "מַעַל",
+        "morphology": "Adverb with prefixed מִן (מִ־ before לְ־) and לְ־, and directional suffix ־ָה.",
+        "qualifier": "",
+        "root": "עלה",
+        "sense": "above, upward"
+      },
+      "position": 3,
+      "surface": "מִלְמַעְלָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "gavar"
+        },
+        "evidence": "The plural verb גָּבְרוּ agrees with הַמָּיִם, “the waters.” The phrase חֲמֵשׁ עֶשְׂרֵה אַמָּה מִלְמַעְלָה measures their rise at fifteen cubits, and the following clause says the mountains were covered.",
+        "gloss": "rose",
+        "language": "he",
+        "lemma": "גָּבַר",
+        "morphology": "Qal perfect, third person common plural, with verbal ending ־וּ and no prefix or pronominal suffix.",
+        "qualifier": "",
+        "root": "גבר",
+        "sense": "prevail, grow strong"
+      },
+      "position": 4,
+      "surface": "גָּבְרוּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "mayim",
+            "base": "7a095b6c2624f5e1fa2f45c8ad0c8fa7eebb4e609589e4db6aa40b3f9ca131e1",
+            "change": "Add a note to the existing Genesis 7:18–20 citation explaining how verse 20 illustrates the body-of-water sense.",
+            "definition": "מַיִם can denote a body of water, here the floodwaters that covered the mountains.",
+            "evidence": "Genesis 7:20 measures the rise of הַמָּיִם at fifteen cubits and describes the mountains as covered."
+          }
+        },
+        "evidence": "הַמָּיִם is the subject of the plural verb גָּבְרוּ. The verse measures the waters’ rise in cubits and says that the mountains were covered.",
+        "gloss": "the floodwaters",
+        "language": "he",
+        "lemma": "מַיִם",
+        "morphology": "Masculine plural absolute noun with the prefixed definite article הַ־, which doubles the initial מ.",
+        "qualifier": "",
+        "root": "מימ",
+        "sense": "a body or flow of water"
+      },
+      "position": 5,
+      "surface": "הַמָּיִם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "kasah"
+        },
+        "evidence": "The passive verb וַיְכֻסּוּ agrees with its following subject הֶהָרִים, “the mountains.” The preceding clause names הַמָּיִם, “the waters,” as what rose and covered them.",
+        "gloss": "and were covered",
+        "language": "he",
+        "lemma": "כָּסָה",
+        "morphology": "Pual wayyiqtol, third person masculine plural, with prefixed וַ and no suffix pronoun",
+        "qualifier": "",
+        "root": "כסה",
+        "sense": "to be covered by water"
+      },
+      "position": 6,
+      "surface": "וַיְכֻסּוּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "har"
+        },
+        "evidence": "In וַיְכֻסּוּ הֶהָרִים, “the mountains were covered,” הֶהָרִים is the subject of the plural passive verb. The rising floodwaters cover the mountains.",
+        "gloss": "the mountains",
+        "language": "he",
+        "lemma": "הַר",
+        "morphology": "Masculine plural absolute noun with the prefixed definite article הֶ־.",
+        "qualifier": "",
+        "root": "הרר",
+        "sense": "mountain, hill"
+      },
+      "position": 7,
+      "surface": "הֶהָרִים"
+    }
+  ]
+}

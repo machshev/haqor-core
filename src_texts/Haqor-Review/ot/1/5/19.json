@@ -1,0 +1,184 @@
+{
+  "book": 1,
+  "chapter": 5,
+  "source": "ot",
+  "verse": 19,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chayah"
+        },
+        "evidence": "יֶרֶד is the subject of וַיְחִי. The phrase אַחֲרֵי הוֹלִידוֹ אֶת־חֲנוֹךְ sets the starting point at the birth of Enoch, and שְׁמֹנֶה מֵאוֹת שָׁנָה gives the eight hundred years Jared lived thereafter.",
+        "gloss": "and he lived",
+        "language": "he",
+        "lemma": "חָיָה",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ־",
+        "qualifier": "",
+        "root": "חיה",
+        "sense": "continue to live"
+      },
+      "position": 0,
+      "surface": "וַיְחִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "yered",
+            "base": null,
+            "change": "Add a personal-name article for יֶרֶד linked to the consonantal root ירד.",
+            "definition": "Jared is the personal name of Mahalalel’s son in Genesis 5:15.",
+            "evidence": "וַיּוֹלֶד אֶת יָרֶד means “he fathered Jared.” The genealogy identifies the bearer and gives no explanation of the name’s origin."
+          }
+        },
+        "evidence": "יֶרֶד is the subject of וַיְחִי, “Jared lived.” אַחֲרֵי הוֹלִידוֹ אֶת חֲנוֹךְ, “after he fathered Enoch,” identifies him as Enoch’s father in the genealogy.",
+        "gloss": "Jared",
+        "language": "he",
+        "lemma": "יֶרֶד",
+        "morphology": "Masculine singular personal name in the absolute state, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "ירד",
+        "sense": "Jared, son of Mahalalel"
+      },
+      "position": 1,
+      "surface": "יֶרֶד"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "achar"
+        },
+        "evidence": "אַחֲרֵי introduces הוֹלִידוֹ אֶת חֲנוֹךְ, “his fathering Enoch.” Jared lived eight hundred years after that event.",
+        "gloss": "after",
+        "language": "he",
+        "lemma": "אַחַר",
+        "morphology": "Preposition in the plural construct form אַחֲרֵי, without prefix or suffix.",
+        "qualifier": "",
+        "root": "אחר",
+        "sense": "after (time)"
+      },
+      "position": 2,
+      "surface": "אַחֲרֵי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yalad"
+        },
+        "evidence": "אַחֲרֵי הוֹלִידוֹ אֶת־חֲנוֹךְ means “after he fathered Enoch.” The suffix identifies Jared as the father, and אֶת marks Enoch as the direct object.",
+        "gloss": "he fathered",
+        "language": "he",
+        "lemma": "יָלַד",
+        "morphology": "Hiphil infinitive construct with a third-person masculine singular subject suffix וֹ referring to Jared.",
+        "qualifier": "",
+        "root": "ילד",
+        "sense": "beget, father a child"
+      },
+      "position": 3,
+      "surface": "הוֹלִידוֹ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "et"
+        },
+        "evidence": "In אַחֲרֵי הוֹלִידוֹ אֶת חֲנוֹךְ (‘after he fathered Enoch’), אֶת marks the proper name חֲנוֹךְ as the direct object of הוֹלִידוֹ.",
+        "gloss": "(untranslated)",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Direct-object particle without prefix or suffix.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "(marks the definite object)"
+      },
+      "position": 4,
+      "surface": "אֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "enoch"
+        },
+        "evidence": "In אַחֲרֵי הוֹלִידוֹ אֶת חֲנוֹךְ, “after he fathered Enoch,” the suffix on הוֹלִידוֹ refers to Jared, and אֶת marks Enoch as the direct object.",
+        "gloss": "Enoch",
+        "language": "he",
+        "lemma": "חֲנוֹךְ",
+        "morphology": "Masculine singular proper noun with no prefix or suffix.",
+        "qualifier": "",
+        "root": "חנכ",
+        "sense": "Enoch, son of Jared"
+      },
+      "position": 5,
+      "surface": "חֲנוֹךְ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shemen"
+        },
+        "evidence": "In שְׁמֹנֶה מֵאוֹת שָׁנָה, שְׁמֹנֶה counts the hundreds (מֵאוֹת), giving the eight hundred years Jared lived after fathering Enoch.",
+        "gloss": "eight",
+        "language": "he",
+        "lemma": "שְׁמֹנֶה",
+        "morphology": "Cardinal numeral, feminine singular absolute, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "שמנ",
+        "sense": "eight as the multiplier of hundreds"
+      },
+      "position": 6,
+      "surface": "שְׁמֹנֶה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "meah"
+        },
+        "evidence": "שְׁמֹנֶה מֵאוֹת שָׁנָה means “eight hundred years.” שְׁמֹנֶה counts the hundreds in the span Jared lived after fathering Enoch.",
+        "gloss": "hundred",
+        "language": "he",
+        "lemma": "מֵאָה",
+        "morphology": "Cardinal numeral, plural absolute, without prefix or suffix.",
+        "qualifier": "",
+        "root": "מאה",
+        "sense": "hundreds (plural מֵאוֹת, with the digits: three hundred to nine hundred)"
+      },
+      "position": 7,
+      "surface": "מֵאוֹת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shanah"
+        },
+        "evidence": "שְׁמֹנֶה מֵאוֹת שָׁנָה counts the eight hundred years Jared lived after he fathered Enoch. The singular noun supplies the unit for this span of his life.",
+        "gloss": "years",
+        "language": "he",
+        "lemma": "שָׁנָה",
+        "morphology": "Common noun, feminine singular absolute",
+        "qualifier": "noun",
+        "root": "שנה",
+        "sense": "years of a life, age"
+      },
+      "position": 8,
+      "surface": "שָׁנָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yalad"
+        },
+        "evidence": "Jared (יֶרֶד) is the subject. The direct objects בָּנִים וּבָנוֹת, “sons and daughters,” identify the children he fathered.",
+        "gloss": "and he fathered",
+        "language": "he",
+        "lemma": "יָלַד",
+        "morphology": "Hiphil wayyiqtol, third person masculine singular, with prefixed וַ and no suffix",
+        "qualifier": "",
+        "root": "ילד",
+        "sense": "beget, father a child"
+      },
+      "position": 9,
+      "surface": "וַיּוֹלֶד"
+    }
+  ]
+}

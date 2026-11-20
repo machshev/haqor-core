@@ -1,0 +1,322 @@
+{
+  "book": 1,
+  "chapter": 6,
+  "review": {
+    "entities": [
+      {
+        "evidence": "The heading introduces the family of Noah, Lamech’s son, whose sons Shem, Ham, and Japheth are named in Genesis 6:10.",
+        "key": "Noah@Gen.5.29",
+        "position": 2
+      },
+      {
+        "evidence": "The repeated name identifies the Noah of the family heading as the righteous man.",
+        "key": "Noah@Gen.5.29",
+        "position": 3
+      },
+      {
+        "evidence": "The final occurrence names the same Noah as the subject of “walked with God.”",
+        "key": "Noah@Gen.5.29",
+        "position": 12
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "these",
+        "position": 0
+      },
+      {
+        "gloss": "the generations of",
+        "position": 1
+      },
+      {
+        "gloss": "Noah",
+        "position": 2
+      },
+      {
+        "gloss": "Noah",
+        "position": 3
+      },
+      {
+        "gloss": "a man",
+        "position": 4
+      },
+      {
+        "gloss": "righteous",
+        "position": 5
+      },
+      {
+        "gloss": "blameless",
+        "position": 6
+      },
+      {
+        "gloss": "he was",
+        "position": 7
+      },
+      {
+        "gloss": "among his contemporaries",
+        "position": 8
+      },
+      {
+        "gloss": "with",
+        "position": 9
+      },
+      {
+        "gloss": "God",
+        "position": 10
+      },
+      {
+        "gloss": "walked",
+        "position": 11
+      },
+      {
+        "gloss": "Noah",
+        "position": 12
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[These|0] {are} [the generations of|1] [Noah|2]. [Noah|3] {was} [a|4] [righteous|5] [man|4]. [He was|7] [blameless|6] [among his contemporaries|8]. [Noah|12] [walked|11] [with|9] [God|10]."
+  },
+  "source": "ot",
+  "verse": 9,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "In אֵלֶּה תּוֹלְדֹת נֹחַ (“These are the generations of Noah”), אֵלֶּה is the subject of a verbless clause. It points forward to the account of Noah that follows.",
+        "gloss": "these",
+        "language": "he",
+        "lemma": "אֵלֶּה",
+        "morphology": "Common plural demonstrative pronoun, without prefix or suffix.",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "these"
+      },
+      "position": 0,
+      "surface": "אֵלֶּה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yalad"
+        },
+        "evidence": "In אֵלֶּה תּוֹלְדֹת נֹחַ, the construct noun takes נֹחַ as its complement. The phrase introduces Noah’s family history, and the account begins by describing Noah himself.",
+        "gloss": "family history of",
+        "language": "he",
+        "lemma": "תּוֹלֵדוֹת",
+        "morphology": "Common noun, feminine plural construct, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "ילד",
+        "sense": "generations, the account of what came from someone"
+      },
+      "position": 1,
+      "surface": "תּוֹלְדֹת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "noah-son-of-lamech",
+            "base": null,
+            "change": "Add a personal-name article for נֹחַ linked to the root article nuach.",
+            "definition": "Noah, the son whom Lamech names in hope of relief from toil.",
+            "evidence": "Genesis 5:29 gives the name נֹחַ and explains it through the wordplay on יְנַחֲמֵנוּ, “he will comfort us.”"
+          }
+        },
+        "evidence": "In אֵלֶּה תּוֹלְדֹת נֹחַ, “these are the generations of Noah,” the marked name completes the construct phrase תּוֹלְדֹת נֹחַ and identifies whose generations are introduced.",
+        "gloss": "Noah",
+        "language": "he",
+        "lemma": "נֹחַ",
+        "morphology": "Masculine singular proper noun in the absolute state, without prefix or suffix.",
+        "qualifier": "",
+        "root": "נוח",
+        "sense": "Noah, son of Lamech"
+      },
+      "position": 2,
+      "surface": "נֹחַ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "noah-son-of-lamech",
+            "base": null,
+            "change": "Add a personal-name article for נֹחַ linked to the root article nuach.",
+            "definition": "Noah, the son whom Lamech names in hope of relief from toil.",
+            "evidence": "Genesis 5:29 gives the name נֹחַ and explains it through the wordplay on יְנַחֲמֵנוּ, “he will comfort us.”"
+          }
+        },
+        "evidence": "After אֵלֶּה תּוֹלְדֹת נֹחַ (“These are the generations of Noah”), the marked נֹחַ names the subject of the next clause, which describes Noah as אִישׁ צַדִּיק (“a righteous man”).",
+        "gloss": "Noah",
+        "language": "he",
+        "lemma": "נֹחַ",
+        "morphology": "Masculine singular personal name, without prefix or suffix.",
+        "qualifier": "",
+        "root": "נוח",
+        "sense": "Noah, son of Lamech"
+      },
+      "position": 3,
+      "surface": "נֹחַ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ish"
+        },
+        "evidence": "In נֹחַ אִישׁ צַדִּיק, “Noah was a righteous man,” אִישׁ identifies Noah as a man. The adjective צַדִּיק supplies the description “righteous.”",
+        "gloss": "man",
+        "language": "he",
+        "lemma": "אִישׁ",
+        "morphology": "Common noun, masculine singular absolute, without prefix or suffix.",
+        "qualifier": "",
+        "root": "איש",
+        "sense": "man, a male"
+      },
+      "position": 4,
+      "surface": "אִישׁ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "tsedeq"
+        },
+        "evidence": "אִישׁ צַדִּיק describes Noah as “a righteous man.” The verse also calls him תָּמִים (“blameless”) and says that he walked with God.",
+        "gloss": "righteous",
+        "language": "he",
+        "lemma": "צַדִּיק",
+        "morphology": "Adjective, masculine singular absolute, modifying אִישׁ.",
+        "qualifier": "",
+        "root": "צדק",
+        "sense": "righteous (of a man): doing right before God"
+      },
+      "position": 5,
+      "surface": "צַדִּיק"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "tamam"
+        },
+        "evidence": "תָּמִים הָיָה בְּדֹרֹתָיו describes Noah as blameless among his contemporaries. The verse calls him אִישׁ צַדִּיק, “a righteous man,” and says that he walked with God. Both descriptions support a sense of integrity in his conduct.",
+        "gloss": "blameless",
+        "language": "he",
+        "lemma": "תָּמִים",
+        "morphology": "Adjective, masculine singular absolute, used predicatively with הָיָה.",
+        "qualifier": "",
+        "root": "תממ",
+        "sense": "whole-hearted, blameless (of a person’s walk)"
+      },
+      "position": 6,
+      "surface": "תָּמִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "hayah"
+        },
+        "evidence": "In תָּמִים הָיָה בְּדֹרֹתָיו, הָיָה links Noah to the adjective תָּמִים: he was blameless in his generations.",
+        "gloss": "was",
+        "language": "he",
+        "lemma": "הָיָה",
+        "morphology": "Qal perfect, third person masculine singular",
+        "qualifier": "",
+        "root": "היה",
+        "sense": "to be in a state or condition"
+      },
+      "position": 7,
+      "surface": "הָיָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "dor"
+        },
+        "evidence": "The suffix refers to Noah. The phrase תָּמִים הָיָה בְּדֹרֹתָיו describes him as blameless among the people of the generations in which he lived.",
+        "gloss": "among his contemporaries",
+        "language": "he",
+        "lemma": "דּוֹר",
+        "morphology": "Preposition בְּ (in, among) + masculine plural construct noun דֹרֹת + third-person masculine singular possessive suffix ָיו (his).",
+        "qualifier": "",
+        "root": "דור",
+        "sense": "generation, the people alive at one time"
+      },
+      "position": 8,
+      "surface": "בְּדֹרֹתָיו"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "et"
+        },
+        "evidence": "In אֶת הָאֱלֹהִים הִתְהַלֶּךְ נֹחַ, “Noah walked with God,” נֹחַ is the subject of הִתְהַלֶּךְ. The verb is intransitive here, and אֶת introduces הָאֱלֹהִים as Noah’s companion.",
+        "gloss": "with",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Preposition in the short form אֶת, without prefix or suffix.",
+        "qualifier": "preposition",
+        "root": "את",
+        "sense": "with, together with (company)"
+      },
+      "position": 9,
+      "surface": "אֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "In אֶת הָאֱלֹהִים הִתְהַלֶּךְ נֹחַ, אֶת means “with” and identifies God as the one with whom Noah walked.",
+        "gloss": "God",
+        "language": "he",
+        "lemma": "אֱלֹהִים",
+        "morphology": "Definite article הָ־ + masculine plural noun in the absolute state, singular in sense.",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "the Mighty One, God"
+      },
+      "position": 10,
+      "surface": "הָאֱלֹהִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "halak"
+        },
+        "evidence": "In אֶת הָאֱלֹהִים הִתְהַלֶּךְ נֹחַ, Noah is the subject and אֶת הָאֱלֹהִים means “with God.” The preceding description of Noah as צַדִּיק and תָּמִים shows that walking with God describes his way of life.",
+        "gloss": "walked",
+        "language": "he",
+        "lemma": "הָלַךְ",
+        "morphology": "Hithpael perfect, third person masculine singular",
+        "qualifier": "",
+        "root": "הלכ",
+        "sense": "conduct one’s life in fellowship with God"
+      },
+      "position": 11,
+      "surface": "הִתְהַלֶּךְ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "noah-son-of-lamech",
+            "base": null,
+            "change": "Add a personal-name article for נֹחַ linked to the root article nuach.",
+            "definition": "Noah, the son whom Lamech names in hope of relief from toil.",
+            "evidence": "Genesis 5:29 gives the name נֹחַ and explains it through the wordplay on יְנַחֲמֵנוּ, “he will comfort us.”"
+          }
+        },
+        "evidence": "In אֶת הָאֱלֹהִים הִתְהַלֶּךְ נֹחַ, “Noah walked with God,” the final נֹחַ is the subject of הִתְהַלֶּךְ. It names the same Noah introduced at the start of the verse.",
+        "gloss": "Noah",
+        "language": "he",
+        "lemma": "נֹחַ",
+        "morphology": "Masculine singular proper noun without prefix or suffix.",
+        "qualifier": "",
+        "root": "נוח",
+        "sense": "Noah, son of Lamech"
+      },
+      "position": 12,
+      "surface": "נֹחַ"
+    }
+  ]
+}

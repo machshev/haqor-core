@@ -1,0 +1,196 @@
+{
+  "book": 1,
+  "chapter": 6,
+  "source": "ot",
+  "verse": 18,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "et"
+        },
+        "evidence": "אֶת marks בְּרִיתִי ‘my covenant’ as the direct object of וַהֲקִמֹתִי ‘I will establish’. The possessive suffix on בְּרִיתִי makes the object definite.",
+        "gloss": "(untranslated)",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Direct-object particle, without prefix or suffix.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "(marks the definite object)"
+      },
+      "position": 1,
+      "surface": "אֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "barah"
+        },
+        "evidence": "God tells Noah, וַהֲקִמֹתִי אֶת בְּרִיתִי אִתָּךְ, “I will establish my covenant with you.” אֶת marks בְּרִיתִי as the object of “establish,” the suffix ־ִי identifies God as the covenant’s possessor, and אִתָּךְ identifies Noah as the other party.",
+        "gloss": "my covenant",
+        "language": "he",
+        "lemma": "בְּרִית",
+        "morphology": "Common noun, feminine singular construct, with the first-person singular possessive suffix ־ִי.",
+        "qualifier": "",
+        "root": "ברה",
+        "sense": "Yahweh's covenant"
+      },
+      "position": 2,
+      "surface": "בְּרִיתִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "et",
+            "base": "31c9a635be8bba9a67417e75ea7122e240ae707e04a841533a59ecd2869d0f80",
+            "change": "Add the first אִתָּךְ in Genesis 6:18 as evidence for the existing covenant sense of אֵת.",
+            "definition": "Introduces the person with whom a covenant is established.",
+            "evidence": "Genesis 6:18 places אִתָּךְ immediately after “my covenant.” God establishes the covenant with Noah."
+          }
+        },
+        "evidence": "In וַהֲקִמֹתִי אֶת בְּרִיתִי אִתָּךְ, God says, “I will establish my covenant with you.” בְּרִיתִי names what God will establish, and אִתָּךְ identifies Noah as the covenant partner. The masculine singular אַתָּה in the next clause confirms the addressee.",
+        "gloss": "with you",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Preposition in its suffixed form אִתּ־ with the pausal second-person masculine singular suffix ־ָךְ.",
+        "qualifier": "preposition",
+        "root": "את",
+        "sense": "With, marking the other party to a covenant."
+      },
+      "position": 3,
+      "surface": "אִתָּךְ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "bo"
+        },
+        "evidence": "אֶל־הַתֵּבָה identifies the ark as the place Noah is to enter. אַתָּה names Noah as the singular addressee, and the following list identifies the family members who will enter with him.",
+        "gloss": "and you shall enter",
+        "language": "he",
+        "lemma": "בּוֹא",
+        "morphology": "Qal perfect, second person masculine singular, with prefixed conjunction וּ־ (weqatal).",
+        "qualifier": "",
+        "root": "בוא",
+        "sense": "enter, go into"
+      },
+      "position": 4,
+      "surface": "וּבָאתָ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "In וּבָאתָ אֶל הַתֵּבָה, “you shall go into the ark,” אֶל introduces the enclosure that Noah is to enter.",
+        "gloss": "into",
+        "language": "he",
+        "lemma": "אֶל",
+        "morphology": "Preposition without prefix or suffix.",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "into"
+      },
+      "position": 5,
+      "surface": "אֶל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "tevah",
+            "base": null,
+            "change": "Add תֵּבָה under its own consonants, תבה, with evidence for Noah’s ark and the smaller papyrus basket in Exodus.",
+            "definition": "A container that shelters its occupants on water, here Noah’s ark.",
+            "evidence": "Genesis 6:14 describes a wooden ark coated with pitch, 6:18 names the people who will enter it, and 7:17 says the rising waters lift it."
+          }
+        },
+        "evidence": "In וּבָאתָ אֶל הַתֵּבָה, “you shall enter the ark,” אֶל marks the destination and the article identifies the vessel Noah was told to build in Genesis 6:14. The rest of 6:18 names the family members who will enter with him.",
+        "gloss": "the ark",
+        "language": "he",
+        "lemma": "תֵּבָה",
+        "morphology": "Feminine singular absolute common noun with the prefixed definite article הַ־.",
+        "qualifier": "",
+        "root": "תבה",
+        "sense": "The vessel built to carry Noah’s household and the animals through the flood."
+      },
+      "position": 6,
+      "surface": "הַתֵּבָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "atah"
+        },
+        "evidence": "וּבָאתָ already means “you shall enter.” After הַתֵּבָה (“the ark”), אַתָּה singles out Noah as the first in the list of those who will enter, followed by his sons, his wife, and his sons’ wives.",
+        "gloss": "you",
+        "language": "he",
+        "lemma": "אַתָּה",
+        "morphology": "Independent personal pronoun, second person masculine singular, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "אנת",
+        "sense": "you, as for you (the one addressed set apart)"
+      },
+      "position": 7,
+      "surface": "אַתָּה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "enosh"
+        },
+        "evidence": "The verse lists Noah’s family entering the ark. The suffix ךָ refers to Noah, and the parallel phrase וּנְשֵׁי בָנֶיךָ, “and your sons’ wives,” confirms the marital sense.",
+        "gloss": "and your wife",
+        "language": "he",
+        "lemma": "אִשָּׁה",
+        "morphology": "Conjunction וְ plus feminine singular construct noun אִשְׁתְּ with second-person masculine singular possessive suffix ךָ.",
+        "qualifier": "",
+        "root": "אנש",
+        "sense": "wife"
+      },
+      "position": 9,
+      "surface": "וְאִשְׁתְּךָ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "enosh"
+        },
+        "evidence": "In וּנְשֵׁי בָנֶיךָ ‘and the wives of your sons,’ the construct form links the wives to Noah’s sons, paralleling וְאִשְׁתְּךָ ‘and your wife.’",
+        "gloss": "and the wives of",
+        "language": "he",
+        "lemma": "נָשִׁים",
+        "morphology": "Conjunction וּ ‘and’ prefixed to נְשֵׁי, a feminine plural construct noun.",
+        "qualifier": "",
+        "root": "אנש",
+        "sense": "wives"
+      },
+      "position": 10,
+      "surface": "וּנְשֵׁי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "ben",
+            "base": "cc04d1d0810e9c20e0c42c66b7fd86b9de6525a730eb3c925d3a6fbf7223dc56",
+            "change": "Add Genesis 6:18 as an example of the existing ben-son sense in the ben article.",
+            "definition": "A male child in relation to his parent.",
+            "evidence": "Genesis 6:18 calls the men entering the ark Noah’s sons and identifies their wives by that relationship."
+          }
+        },
+        "evidence": "In וּנְשֵׁי בָנֶיךָ, “and the wives of your sons,” בָנֶיךָ identifies whose wives will enter the ark. The suffix refers to Noah, and the sons are the same men just listed in אַתָּה וּבָנֶיךָ, “you and your sons.”",
+        "gloss": "your sons",
+        "language": "he",
+        "lemma": "בֵּן",
+        "morphology": "Masculine plural construct noun with a second-person masculine singular possessive suffix.",
+        "qualifier": "",
+        "root": "בנה",
+        "sense": "son, male child"
+      },
+      "position": 11,
+      "surface": "בָנֶיךָ"
+    }
+  ]
+}

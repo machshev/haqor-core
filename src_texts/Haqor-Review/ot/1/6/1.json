@@ -1,0 +1,161 @@
+{
+  "book": 1,
+  "chapter": 6,
+  "source": "ot",
+  "verse": 1,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "hayah"
+        },
+        "evidence": "וַיְהִי introduces the temporal clause כִּי הֵחֵל הָאָדָם לָרֹב, “when humankind began to multiply.” The verb functions impersonally to set the scene.",
+        "gloss": "and it came to pass",
+        "language": "he",
+        "lemma": "הָיָה",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ־",
+        "qualifier": "",
+        "root": "היה",
+        "sense": "to come to pass"
+      },
+      "position": 0,
+      "surface": "וַיְהִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ki"
+        },
+        "evidence": "After וַיְהִי, כִּי introduces the temporal clause הֵחֵל הָאָדָם לָרֹב, “humankind began to multiply.” The construction sets the scene for what follows.",
+        "gloss": "when",
+        "language": "he",
+        "lemma": "כִּי",
+        "morphology": "Uninflected conjunction with no prefix or suffix.",
+        "qualifier": "conjunction",
+        "root": "כי",
+        "sense": "when, if"
+      },
+      "position": 1,
+      "surface": "כִּי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chalal"
+        },
+        "evidence": "הֵחֵל agrees with the singular collective subject הָאָדָם, “humankind.” The infinitive לָרֹב supplies the action that began: “humankind began to multiply.”",
+        "gloss": "began",
+        "language": "he",
+        "lemma": "חָלַל",
+        "morphology": "Hiphil perfect, third person masculine singular",
+        "qualifier": "",
+        "root": "חלל",
+        "sense": "begin"
+      },
+      "position": 2,
+      "surface": "הֵחֵל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "adam"
+        },
+        "evidence": "הָאָדָם is the subject of הֵחֵל לָרֹב, “began to multiply.” The plural לָהֶם, “to them,” refers back to the people to whom daughters were born, confirming the collective sense.",
+        "gloss": "humankind",
+        "language": "he",
+        "lemma": "אָדָם",
+        "morphology": "Definite article הָ־ + masculine singular absolute common noun, used collectively.",
+        "qualifier": "noun",
+        "root": "אדמ",
+        "sense": "man, mankind"
+      },
+      "position": 3,
+      "surface": "הָאָדָם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ravav"
+        },
+        "evidence": "לָרֹב completes הֵחֵל and names what humankind (הָאָדָם) began to do on the face of the earth. The following clause, וּבָנוֹת יֻלְּדוּ לָהֶם (“and daughters were born to them”), supports the sense of population growth.",
+        "gloss": "to multiply",
+        "language": "he",
+        "lemma": "רָבַב",
+        "morphology": "Qal infinitive construct with prefixed preposition לָ־",
+        "qualifier": "be many",
+        "root": "רבב",
+        "sense": "to increase in number"
+      },
+      "position": 4,
+      "surface": "לָרֹב"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "alah"
+        },
+        "evidence": "עַל governs פְּנֵי הָאֲדָמָה, “the face of the ground.” The phrase gives the location where humankind began to multiply.",
+        "gloss": "on",
+        "language": "he",
+        "lemma": "עַל",
+        "morphology": "Preposition without prefix or suffix.",
+        "qualifier": "",
+        "root": "עלה",
+        "sense": "on, upon, over"
+      },
+      "position": 5,
+      "surface": "עַל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "panah"
+        },
+        "evidence": "פְּנֵי takes הָאֲדָמָה ‘the ground’ as its complement. The phrase עַל פְּנֵי הָאֲדָמָה means ‘on the surface of the ground’ and tells where humankind began to multiply.",
+        "gloss": "surface of",
+        "language": "he",
+        "lemma": "פָּנִים",
+        "morphology": "Common-gender noun, plural construct, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "פנה",
+        "sense": "surface (of the earth, the waters)"
+      },
+      "position": 6,
+      "surface": "פְּנֵי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "adam"
+        },
+        "evidence": "In עַל פְּנֵי הָאֲדָמָה, “on the face of the ground,” פְּנֵי is in construct with הָאֲדָמָה. The phrase identifies the surface on which humankind began to multiply.",
+        "gloss": "the ground",
+        "language": "he",
+        "lemma": "אֲדָמָה",
+        "morphology": "Feminine singular absolute noun with the definite article הָ־.",
+        "qualifier": "",
+        "root": "אדמ",
+        "sense": "the ground underfoot; the face of the earth"
+      },
+      "position": 7,
+      "surface": "הָאֲדָמָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yalad"
+        },
+        "evidence": "In וּבָנוֹת יֻלְּדוּ לָהֶם, “and daughters were born to them,” the plural verb agrees with בָנוֹת, “daughters.” The Pual expresses the passive sense, and לָהֶם identifies those to whom the daughters were born.",
+        "gloss": "were born",
+        "language": "he",
+        "lemma": "יָלַד",
+        "morphology": "Pual perfect, third person common plural, with plural ending וּ.",
+        "qualifier": "",
+        "root": "ילד",
+        "sense": "be born"
+      },
+      "position": 9,
+      "surface": "יֻלְּדוּ"
+    }
+  ]
+}

@@ -1,0 +1,219 @@
+{
+  "book": 40,
+  "chapter": 1,
+  "source": "peshitta",
+  "verse": 3,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "judah-syc",
+            "base": null,
+            "change": "Add the Syriac spelling יִהֻודָֿא as a name article linked to the same root as the Hebrew יְהוּדָה.",
+            "definition": "The Syriac form of the personal name Judah, borne here by Jacob’s son.",
+            "evidence": "Matthew 1:3 names Judah as the father of Perez and Zerah by Tamar. Genesis 29:35 connects his Hebrew name with Leah’s declaration that she will praise Yahweh."
+          }
+        },
+        "evidence": "יִהֻודָֿא stands before אַולֵדֿ, “fathered.” The two names that follow, לפַֿרצ וַלזַרח, identify his sons, and מֵנ תָּמָר names their mother. The genealogy then continues with Perez as the next father.",
+        "gloss": "Judah",
+        "language": "syc",
+        "lemma": "יִהֻודָֿא",
+        "morphology": "Masculine singular personal name, unprefixed and unsuffixed, serving as the subject of אַולֵדֿ.",
+        "qualifier": "",
+        "root": "ידה",
+        "sense": "Judah, the father of Perez and Zerah by Tamar."
+      },
+      "position": 0,
+      "surface": "יִהֻודָֿא"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yalad"
+        },
+        "evidence": "Judah is the subject of אַולֵדֿ. The ל־ before Perez and Zerah marks them as the children he fathered, and מֵנ תָּמָר identifies Tamar as their mother.",
+        "gloss": "fathered",
+        "language": "syc",
+        "lemma": "יְלֵד",
+        "morphology": "Aphel perfect, third person masculine singular",
+        "qualifier": "",
+        "root": "ילד",
+        "sense": "beget, father a child"
+      },
+      "position": 1,
+      "surface": "אַולֵדֿ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "perez"
+        },
+        "evidence": "Judah fathers לפַֿרצ וַלזַרח, Perez and Zerah, by Tamar. The next clause repeats the name without the prefix as פַּרצ and identifies him as Hezron’s father.",
+        "gloss": "Perez",
+        "language": "syc",
+        "lemma": "פַּרצ",
+        "morphology": "Masculine singular proper name with prefixed ל marking the direct object of אַולֵדֿ.",
+        "qualifier": "",
+        "root": "פרצ",
+        "sense": "Perez, son of Judah and Tamar"
+      },
+      "position": 2,
+      "surface": "לפַֿרצ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "zerah",
+            "base": null,
+            "change": "Add a personal-name article for Zerah linked to the root article zarach.",
+            "definition": "The personal name Zerah, borne here by a son of Judah and Tamar.",
+            "evidence": "Matthew 1:3 names Zerah alongside Perez as a son of Judah by Tamar."
+          }
+        },
+        "evidence": "The ל־ appears on both לפַרצ and וַלזַרח, pairing Perez and Zerah as the sons Judah fathered. מֵנ תָּמָר identifies Tamar as their mother.",
+        "gloss": "Zerah",
+        "language": "syc",
+        "lemma": "זַרח",
+        "morphology": "Masculine singular personal name with prefixed וַ־ ‘and’ and ל־ marking the direct object of אַולֵדֿ ‘fathered’.",
+        "qualifier": "",
+        "root": "זרח",
+        "sense": "Zerah, son of Judah and Tamar and brother of Perez."
+      },
+      "position": 3,
+      "surface": "וַלזַרח"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "tamar-name",
+            "base": null,
+            "change": "Add a personal-name article linked to the תמר root article.",
+            "definition": "Tamar is the woman who bore Perez and Zerah to Judah.",
+            "evidence": "Mat.1.3 names Tamar after both sons. Rut.4.12 likewise identifies Tamar as the woman who bore Perez to Judah."
+          }
+        },
+        "evidence": "In Mat.1.3, Judah is the subject of אַולֵדֿ, “fathered.” After naming both sons, the phrase מֵנ תָּמָר, “by Tamar,” identifies their mother.",
+        "gloss": "Tamar",
+        "language": "syc",
+        "lemma": "תָּמָר",
+        "morphology": "Feminine singular personal name, governed by the separate preposition מֵנ, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "תמר",
+        "sense": "Tamar, the mother of Perez and Zerah"
+      },
+      "position": 5,
+      "surface": "תָּמָר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "perez"
+        },
+        "evidence": "Judah fathers Perez and Zerah by Tamar. The next clause repeats Perez’s name as its subject: פַּרצ אַולֵדֿ לחֵצרָונ, “Perez fathered Hezron.”",
+        "gloss": "Perez",
+        "language": "syc",
+        "lemma": "פַּרצ",
+        "morphology": "Masculine singular proper name, subject of אַולֵדֿ, without prefix or suffix.",
+        "qualifier": "",
+        "root": "פרצ",
+        "sense": "Perez, son of Judah and Tamar"
+      },
+      "position": 6,
+      "surface": "פַּרצ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yalad"
+        },
+        "evidence": "In פַּרצ אַולֵדֿ לחֵצרָונ, Perez is the subject and ל־ marks Hezron as the object. The clause says that Perez fathered Hezron.",
+        "gloss": "fathered",
+        "language": "syc",
+        "lemma": "יְלֵד",
+        "morphology": "Aphel perfect, third person masculine singular",
+        "qualifier": "",
+        "root": "ילד",
+        "sense": "beget, father a child"
+      },
+      "position": 7,
+      "surface": "אַולֵדֿ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "hezron"
+        },
+        "evidence": "In פַּרצ אַולֵדֿ לחֵצרָונ, Perez fathers Hezron. The next clause repeats Hezron’s name without ל as the subject who fathers Ram.",
+        "gloss": "Hezron",
+        "language": "syc",
+        "lemma": "חֵצרָונ",
+        "morphology": "Masculine singular personal name with prefixed ל marking the direct object of אַולֵדֿ ‘fathered’.",
+        "qualifier": "",
+        "root": "חצר",
+        "sense": "Hezron, son of Perez and father of Ram."
+      },
+      "position": 8,
+      "surface": "לחֵצרָונ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "hezron"
+        },
+        "evidence": "After Perez fathers Hezron, the genealogy repeats Hezron’s name as the subject of חֵצרֻונ אַולֵדֿ לָארָמ, “Hezron fathered Ram.”",
+        "gloss": "Hezron",
+        "language": "syc",
+        "lemma": "חֵצרֻונ",
+        "morphology": "Masculine singular personal name, unprefixed and unsuffixed, serving as the subject of אַולֵדֿ.",
+        "qualifier": "",
+        "root": "חצר",
+        "sense": "Hezron, son of Perez and father of Ram."
+      },
+      "position": 9,
+      "surface": "חֵצרֻונ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yalad"
+        },
+        "evidence": "In חֵצרֻונ אַולֵדֿ לָארָמ, Hezron is the subject, and ל marks Aram as the object. The clause identifies Hezron as Aram’s father.",
+        "gloss": "fathered",
+        "language": "syc",
+        "lemma": "יְלֵד",
+        "morphology": "Aphel perfect, third person masculine singular",
+        "qualifier": "",
+        "root": "ילד",
+        "sense": "beget, father a child"
+      },
+      "position": 10,
+      "surface": "אַולֵדֿ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "aram-syriac",
+            "base": null,
+            "change": "Add the pointed Syriac name אָרָמ and document its correspondence to Hebrew רָם in this genealogy.",
+            "definition": "The Syriac personal name Aram, borne here by Hezron’s son Ram.",
+            "evidence": "Matthew 1:3 places Aram after Hezron in the genealogy. Ruth 4:18–19 gives the same succession from Perez through Hezron to Ram."
+          }
+        },
+        "evidence": "In חֵצרֻונ אַולֵדֿ לָארָמ, “Hezron fathered Aram,” the ל marks the child, just as it marks Hezron in the preceding clause, “Perez fathered Hezron.” Ruth 4:19 calls this son of Hezron רָם (Ram).",
+        "gloss": "Aram",
+        "language": "syc",
+        "lemma": "אָרָמ",
+        "morphology": "Masculine singular personal name with prefixed ל marking the direct object of אַולֵדֿ.",
+        "qualifier": "",
+        "root": "ארמ",
+        "sense": "Aram, son of Hezron"
+      },
+      "position": 11,
+      "surface": "לָארָמ"
+    }
+  ]
+}

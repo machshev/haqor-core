@@ -1,0 +1,378 @@
+{
+  "book": 1,
+  "chapter": 4,
+  "review": {
+    "entities": [],
+    "glosses": [
+      {
+        "gloss": "behold",
+        "position": 0
+      },
+      {
+        "gloss": "you have driven out",
+        "position": 1
+      },
+      {
+        "gloss": "me",
+        "position": 2
+      },
+      {
+        "gloss": "today",
+        "position": 3
+      },
+      {
+        "gloss": "from",
+        "position": 4
+      },
+      {
+        "gloss": "the surface of",
+        "position": 5
+      },
+      {
+        "gloss": "the ground",
+        "position": 6
+      },
+      {
+        "gloss": "and from your presence",
+        "position": 7
+      },
+      {
+        "gloss": "I will be hidden",
+        "position": 8
+      },
+      {
+        "gloss": "and I will be",
+        "position": 9
+      },
+      {
+        "gloss": "a fugitive",
+        "position": 10
+      },
+      {
+        "gloss": "and a wanderer",
+        "position": 11
+      },
+      {
+        "gloss": "on the earth",
+        "position": 12
+      },
+      {
+        "gloss": "and it will happen",
+        "position": 13
+      },
+      {
+        "gloss": "anyone",
+        "position": 14
+      },
+      {
+        "gloss": "who finds me",
+        "position": 15
+      },
+      {
+        "gloss": "will kill me",
+        "position": 16
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[Behold|0], [today|3] [you have driven|1] [me|2] [out|1] [from|4] [the surface of|5] [the ground|6], [and|7] [I will be hidden|8] [from your presence|7]. [And I will be|9] [a fugitive|10] [and a wanderer|11] [on the earth|12], [and it will happen|13] {that} [anyone|14] [who finds me|15] [will kill me|16]!”"
+  },
+  "source": "ot",
+  "verse": 14,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "hinneh"
+        },
+        "evidence": "Cain opens with הֵן to draw attention to what God has done. גֵּרַשְׁתָּ אֹתִי הַיּוֹם means “you have driven me out today,” and Cain goes on to describe the consequences.",
+        "gloss": "Look",
+        "language": "he",
+        "lemma": "הֵן",
+        "morphology": "Uninflected presentative particle without prefix or suffix.",
+        "qualifier": "interjection",
+        "root": "הנ",
+        "sense": "look, see (a fact put before the hearer)"
+      },
+      "position": 0,
+      "surface": "הֵן"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "garash"
+        },
+        "evidence": "Cain addresses God. אֹתִי (“me”) identifies Cain as the one driven out, and מֵעַל פְּנֵי הָאֲדָמָה (“from the face of the ground”) specifies where he is driven from.",
+        "gloss": "you have driven out",
+        "language": "he",
+        "lemma": "גָּרַשׁ",
+        "morphology": "Piel perfect, second person masculine singular, with the ending ־תָּ",
+        "qualifier": "",
+        "root": "גרש",
+        "sense": "drive out, expel"
+      },
+      "position": 1,
+      "surface": "גֵּרַשְׁתָּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "et",
+            "base": "31c9a635be8bba9a67417e75ea7122e240ae707e04a841533a59ecd2869d0f80",
+            "change": "Add Genesis 4:14 to the evidence for the existing object-pronoun sense in et.",
+            "definition": "With a pronominal suffix, אֵת expresses the direct object separately from the verb.",
+            "evidence": "Genesis 4:14 gives a first-person singular example. In גֵּרַשְׁתָּ אֹתִי, Cain is the object of “you have driven away.”"
+          }
+        },
+        "evidence": "Cain says גֵּרַשְׁתָּ אֹתִי, “you have driven me away.” The verb identifies the addressee as the one acting, and אֹתִי identifies the speaker as the one driven away.",
+        "gloss": "me",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Direct-object particle in the suffixed form אֹת־ with the first-person common singular pronominal suffix ־ִי.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "Carries a pronominal suffix as the direct object of a verb."
+      },
+      "position": 2,
+      "surface": "אֹתִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yom"
+        },
+        "evidence": "In גֵּרַשְׁתָּ אֹתִי הַיּוֹם, “you have driven me out today,” הַיּוֹם places Cain’s expulsion on the day he is speaking.",
+        "gloss": "today",
+        "language": "he",
+        "lemma": "יוֹם",
+        "morphology": "Definite article הַ־ + common noun, masculine singular absolute, used adverbially.",
+        "qualifier": "",
+        "root": "יומ",
+        "sense": "today, this day; now"
+      },
+      "position": 3,
+      "surface": "הַיּוֹם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "alah"
+        },
+        "evidence": "In גֵּרַשְׁתָּ אֹתִי הַיּוֹם מֵעַל פְּנֵי הָאֲדָמָה, Cain says, ‘You have driven me today from the face of the ground.’ עַל places him on the ground’s surface, and מֵ־ marks his removal from it.",
+        "gloss": "off, from upon",
+        "language": "he",
+        "lemma": "עַל",
+        "morphology": "Preposition עַל with prefixed מֵ־ (מִן, ‘from’).",
+        "qualifier": "",
+        "root": "עלה",
+        "sense": "on, upon, over"
+      },
+      "position": 4,
+      "surface": "מֵעַל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "panah"
+        },
+        "evidence": "פְּנֵי is in construct with הָאֲדָמָה, “the ground.” Cain says he has been driven מֵעַל פְּנֵי הָאֲדָמָה, “from the surface of the ground.”",
+        "gloss": "surface of",
+        "language": "he",
+        "lemma": "פָּנִים",
+        "morphology": "Common noun, common gender, plural construct.",
+        "qualifier": "",
+        "root": "פנה",
+        "sense": "surface (of the earth, the waters)"
+      },
+      "position": 5,
+      "surface": "פְּנֵי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "adam"
+        },
+        "evidence": "Cain says he has been driven מֵעַל פְּנֵי הָאֲדָמָה, “from the face of the ground.” The construct פְּנֵי supplies “face,” and הָאֲדָמָה names the ground whose surface he must leave.",
+        "gloss": "the ground",
+        "language": "he",
+        "lemma": "אֲדָמָה",
+        "morphology": "Feminine singular absolute noun with the prefixed definite article הָ־.",
+        "qualifier": "",
+        "root": "אדמ",
+        "sense": "the ground underfoot; the face of the earth"
+      },
+      "position": 6,
+      "surface": "הָאֲדָמָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "panah"
+        },
+        "evidence": "Cain addresses God directly. In וּמִפָּנֶיךָ אֶסָּתֵר ‘and from your presence I shall be hidden’, the suffixed preposition identifies whose presence Cain will be hidden from.",
+        "gloss": "and from your presence",
+        "language": "he",
+        "lemma": "מִפְּנֵי",
+        "morphology": "Conjunction וּ־ ‘and’ + מִן ‘from’ with its נ assimilated to פ + פָּנִים in the plural construct with a second-person masculine singular suffix ךָ ‘your’.",
+        "qualifier": "",
+        "root": "פנה",
+        "sense": "from before, away from"
+      },
+      "position": 7,
+      "surface": "וּמִפָּנֶיךָ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "satar"
+        },
+        "evidence": "וּמִפָּנֶיךָ means “and from your face.” Cain says that, as a consequence of being driven away, he will be hidden from God’s sight.",
+        "gloss": "I will be hidden",
+        "language": "he",
+        "lemma": "סָתַר",
+        "morphology": "Niphal imperfect, first person common singular, with no attached particle or suffix.",
+        "qualifier": "",
+        "root": "סתר",
+        "sense": "be hidden from someone’s sight"
+      },
+      "position": 8,
+      "surface": "אֶסָּתֵר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "hayah"
+        },
+        "evidence": "Cain describes the consequence of his expulsion. The participles נָע וָנָד express his future condition, giving the clause the sense “and I will be a fugitive and a wanderer on the earth.”",
+        "gloss": "and I will be",
+        "language": "he",
+        "lemma": "הָיָה",
+        "morphology": "Qal weqatal, first person common singular, with prefixed conjunction וְ־ and perfect ending ־תִי",
+        "qualifier": "",
+        "root": "היה",
+        "sense": "to be in a state or condition"
+      },
+      "position": 9,
+      "surface": "וְהָיִיתִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "nua"
+        },
+        "evidence": "Cain says he has been driven from the ground. In וְהָיִיתִי נָע וָנָד בָּאָרֶץ, נָע pairs with וָנָד to describe how he will wander through the land.",
+        "gloss": "a wanderer",
+        "language": "he",
+        "lemma": "נוּעַ",
+        "morphology": "Qal active participle, masculine singular absolute, used predicatively with וְהָיִיתִי.",
+        "qualifier": "",
+        "root": "נוע",
+        "sense": "to wander from place to place"
+      },
+      "position": 10,
+      "surface": "נָע"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "nud"
+        },
+        "evidence": "Cain says he has been driven from the ground. After וְהָיִיתִי ‘I will be’, נָד is paired with נָע to describe Cain wandering about the earth (בָּאָרֶץ), echoing the sentence pronounced in Genesis 4:12.",
+        "gloss": "and wandering",
+        "language": "he",
+        "lemma": "נוּד",
+        "morphology": "Conjunction וָ־ prefixed to נָד, Qal active participle, masculine singular absolute.",
+        "qualifier": "",
+        "root": "נוד",
+        "sense": "wander"
+      },
+      "position": 11,
+      "surface": "וָנָד"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "erets"
+        },
+        "evidence": "Cain says he will be נָע וָנָד, “a fugitive and a wanderer.” בָּאָרֶץ names the wider world in which he will wander after being driven from הָאֲדָמָה, the ground he worked.",
+        "gloss": "on the earth",
+        "language": "he",
+        "lemma": "אֶרֶץ",
+        "morphology": "Preposition בְּ with the definite article, followed by a common noun, singular absolute.",
+        "qualifier": "",
+        "root": "ארצ",
+        "sense": "earth"
+      },
+      "position": 12,
+      "surface": "בָּאָרֶץ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "hayah"
+        },
+        "evidence": "Cain anticipates the consequence of his wandering. וְהָיָה introduces the whole clause כָל־מֹצְאִי יַהַרְגֵנִי, “whoever finds me will kill me.”",
+        "gloss": "and it will happen that",
+        "language": "he",
+        "lemma": "הָיָה",
+        "morphology": "Qal weqatal (perfect with prefixed וְ), third person masculine singular, used impersonally with future reference.",
+        "qualifier": "",
+        "root": "היה",
+        "sense": "to come to pass"
+      },
+      "position": 13,
+      "surface": "וְהָיָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "kalal"
+        },
+        "evidence": "כָל quantifies the singular participle מֹצְאִי, “one who finds me.” Cain fears that anyone who finds him will kill him.",
+        "gloss": "anyone who",
+        "language": "he",
+        "lemma": "כֹּל",
+        "morphology": "Masculine singular construct noun without prefix or suffix.",
+        "qualifier": "",
+        "root": "כלל",
+        "sense": "every, each; any"
+      },
+      "position": 14,
+      "surface": "כָל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "matsa"
+        },
+        "evidence": "In כָל מֹצְאִי יַהַרְגֵנִי, “whoever finds me will kill me,” the participle identifies the person who finds Cain. Its suffix ־ִי refers to Cain as the one found.",
+        "gloss": "one who finds me",
+        "language": "he",
+        "lemma": "מָצָא",
+        "morphology": "Qal active participle, masculine singular construct, with a first-person singular object suffix.",
+        "qualifier": "",
+        "root": "מצא",
+        "sense": "find"
+      },
+      "position": 15,
+      "surface": "מֹצְאִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "harag"
+        },
+        "evidence": "כָל מֹצְאִי means “whoever finds me” and supplies the singular subject. The suffix ־נִי refers to Cain, who fears that whoever finds him will kill him.",
+        "gloss": "will kill me",
+        "language": "he",
+        "lemma": "הָרַג",
+        "morphology": "Qal imperfect, third person masculine singular, with a first person common singular object suffix.",
+        "qualifier": "",
+        "root": "הרג",
+        "sense": "kill"
+      },
+      "position": 16,
+      "surface": "יַהַרְגֵנִי"
+    }
+  ]
+}

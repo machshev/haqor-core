@@ -1,0 +1,488 @@
+{
+  "book": 1,
+  "chapter": 6,
+  "review": {
+    "entities": [
+      {
+        "evidence": "יַהְוֶה names the speaker, who refers to humankind as “whom I created.” The LORD source tag supports identification with the God named Yahweh in the Genesis 2:22 proposal.",
+        "key": "Yahweh@Gen.2.22",
+        "new": {
+          "description": "The God of Israel, who built the rib taken from the man into a woman and brought her to the man.",
+          "kind": "person",
+          "name": "Yahweh"
+        },
+        "position": 1
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "then he said",
+        "position": 0
+      },
+      {
+        "gloss": "Yahweh",
+        "position": 1
+      },
+      {
+        "gloss": "I will wipe away",
+        "position": 2
+      },
+      {
+        "gloss": "(direct-object marker)",
+        "position": 3
+      },
+      {
+        "gloss": "humankind",
+        "position": 4
+      },
+      {
+        "gloss": "whom",
+        "position": 5
+      },
+      {
+        "gloss": "I created",
+        "position": 6
+      },
+      {
+        "gloss": "from",
+        "position": 7
+      },
+      {
+        "gloss": "the surface of",
+        "position": 8
+      },
+      {
+        "gloss": "the ground",
+        "position": 9
+      },
+      {
+        "gloss": "from humans",
+        "position": 10
+      },
+      {
+        "gloss": "to",
+        "position": 11
+      },
+      {
+        "gloss": "land animals",
+        "position": 12
+      },
+      {
+        "gloss": "to",
+        "position": 13
+      },
+      {
+        "gloss": "crawling creatures",
+        "position": 14
+      },
+      {
+        "gloss": "and to",
+        "position": 15
+      },
+      {
+        "gloss": "the birds of",
+        "position": 16
+      },
+      {
+        "gloss": "the sky",
+        "position": 17
+      },
+      {
+        "gloss": "for",
+        "position": 18
+      },
+      {
+        "gloss": "I regret",
+        "position": 19
+      },
+      {
+        "gloss": "that",
+        "position": 20
+      },
+      {
+        "gloss": "I made them",
+        "position": 21
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[Then|0] [Yahweh|1] [said|0], “‌[I will wipe away|2] [humankind|4,3] [whom|5] [I created|6] [from|7] [the surface of|8] [the ground|9], [from humans|10] [to|11] [land animals|12], [to|13] [crawling creatures|14], [and to|15] [the birds of|16] [the sky|17], [for|18] [I regret|19] [that|20] [I made them|21].”"
+  },
+  "source": "ot",
+  "verse": 7,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "amar"
+        },
+        "evidence": "יַהְוֶה is the subject of וַיֹּאמֶר. The first-person verb אֶמְחֶה (“I will blot out”) begins his direct speech.",
+        "gloss": "and he said",
+        "language": "he",
+        "lemma": "אָמַר",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ",
+        "qualifier": "",
+        "root": "אמר",
+        "sense": "say, introducing direct speech"
+      },
+      "position": 0,
+      "surface": "וַיֹּאמֶר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yahweh"
+        },
+        "evidence": "וַיֹּאמֶר יַהְוֶה means “Yahweh said.” The first-person verb בָּרָאתִי (“I created”) identifies the named speaker as the creator of humankind.",
+        "gloss": "Yahweh",
+        "language": "he",
+        "lemma": "יַהְוֶה",
+        "morphology": "Proper noun, subject of the third-person masculine singular verb וַיֹּאמֶר, with no prefix or suffix",
+        "qualifier": "",
+        "root": "הוה",
+        "sense": "Personal name of the God of Israel"
+      },
+      "position": 1,
+      "surface": "יַהְוֶה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "machah"
+        },
+        "evidence": "YHWH names humanity as the direct object (אֶת הָאָדָם) and extends the decree to livestock, creeping things, and birds. The phrase מֵעַל פְּנֵי הָאֲדָמָה specifies where they will be wiped from.",
+        "gloss": "I will wipe out",
+        "language": "he",
+        "lemma": "מָחָה",
+        "morphology": "Qal imperfect, first person common singular, with אֶ־ marking the subject and no suffix.",
+        "qualifier": "wipe, erase, blot out",
+        "root": "מחה",
+        "sense": "Wipe out living beings from the face of the earth."
+      },
+      "position": 2,
+      "surface": "אֶמְחֶה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "et"
+        },
+        "evidence": "In אֶמְחֶה אֶת הָאָדָם, “I will blot out humankind,” אֶת marks the definite noun הָאָדָם as the direct object of אֶמְחֶה.",
+        "gloss": "(untranslated)",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Uninflected direct-object particle without prefix or suffix.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "(marks the definite object)"
+      },
+      "position": 3,
+      "surface": "אֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "adam"
+        },
+        "evidence": "אֶת marks הָאָדָם as the object of אֶמְחֶה, “I will wipe out.” The phrase מֵאָדָם עַד בְּהֵמָה, “from humans to beasts,” identifies humans as a class and confirms the collective reading.",
+        "gloss": "humankind",
+        "language": "he",
+        "lemma": "אָדָם",
+        "morphology": "Common noun, masculine singular absolute, with the prefixed definite article הָ־. Used collectively.",
+        "qualifier": "noun",
+        "root": "אדמ",
+        "sense": "man, mankind"
+      },
+      "position": 4,
+      "surface": "הָאָדָם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ashar"
+        },
+        "evidence": "In הָאָדָם אֲשֶׁר בָּרָאתִי, “humankind whom I created,” אֲשֶׁר introduces a relative clause in which הָאָדָם supplies the understood object of בָּרָאתִי, “I created.”",
+        "gloss": "whom",
+        "language": "he",
+        "lemma": "אֲשֶׁר",
+        "morphology": "Invariable relative particle without prefix or suffix.",
+        "qualifier": "",
+        "root": "אשר",
+        "sense": "who, which, that"
+      },
+      "position": 5,
+      "surface": "אֲשֶׁר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "bara"
+        },
+        "evidence": "In הָאָדָם אֲשֶׁר בָּרָאתִי, “humankind whom I created,” Yahweh is the speaker and humankind is the object of the verb. The closing עֲשִׂיתִם, “I made them,” confirms the sense.",
+        "gloss": "I created",
+        "language": "he",
+        "lemma": "בָּרָא",
+        "morphology": "Qal perfect, first person common singular, with the ending ־תִי.",
+        "qualifier": "",
+        "root": "ברא",
+        "sense": "create"
+      },
+      "position": 6,
+      "surface": "בָּרָאתִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "alah"
+        },
+        "evidence": "In אֶמְחֶה … מֵעַל פְּנֵי הָאֲדָמָה, עַל locates humankind on the surface of the ground. The prefix מֵ־ marks removal from that surface by the act of wiping out.",
+        "gloss": "from off",
+        "language": "he",
+        "lemma": "עַל",
+        "morphology": "Preposition עַל with prefixed מֵ־ (from מִן).",
+        "qualifier": "",
+        "root": "עלה",
+        "sense": "on, upon, over"
+      },
+      "position": 7,
+      "surface": "מֵעַל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "panah"
+        },
+        "evidence": "פְּנֵי takes הָאֲדָמָה as its complement. The phrase מֵעַל פְּנֵי הָאֲדָמָה means “from the surface of the ground” and identifies where humanity will be wiped away.",
+        "gloss": "surface of",
+        "language": "he",
+        "lemma": "פָּנִים",
+        "morphology": "Noun, common gender, plural construct, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "פנה",
+        "sense": "surface (of the earth, the waters)"
+      },
+      "position": 8,
+      "surface": "פְּנֵי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "adam"
+        },
+        "evidence": "In מֵעַל פְּנֵי הָאֲדָמָה, “from the face of the ground,” הָאֲדָמָה completes the construct phrase פְּנֵי הָאֲדָמָה and identifies the surface from which living creatures will be wiped away.",
+        "gloss": "the ground",
+        "language": "he",
+        "lemma": "אֲדָמָה",
+        "morphology": "Definite article הָ־ prefixed to a feminine singular absolute noun.",
+        "qualifier": "",
+        "root": "אדמ",
+        "sense": "the ground underfoot; the face of the earth"
+      },
+      "position": 9,
+      "surface": "הָאֲדָמָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "adam"
+        },
+        "evidence": "In מֵאָדָם עַד בְּהֵמָה, “from humankind to livestock,” אָדָם designates humans collectively as the first group in a list that continues with creeping things and birds.",
+        "gloss": "from humankind",
+        "language": "he",
+        "lemma": "אָדָם",
+        "morphology": "Preposition מִן in the form מֵ־ before א, followed by a masculine singular absolute noun used collectively.",
+        "qualifier": "noun",
+        "root": "אדמ",
+        "sense": "man, mankind"
+      },
+      "position": 10,
+      "surface": "מֵאָדָם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ad"
+        },
+        "evidence": "In מֵאָדָם עַד בְּהֵמָה, “from humans to livestock,” מִן marks the start of the range and the marked עַד includes livestock among those to be wiped out. The repeated עַד then extends the list to creeping things and birds.",
+        "gloss": "to (and including)",
+        "language": "he",
+        "lemma": "עַד",
+        "morphology": "Simple preposition without prefix or suffix.",
+        "qualifier": "preposition",
+        "root": "עדה",
+        "sense": "even to, extending the range to include a named category"
+      },
+      "position": 11,
+      "surface": "עַד"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "behemah"
+        },
+        "evidence": "In מֵאָדָם עַד בְּהֵמָה עַד רֶמֶשׂ וְעַד עוֹף הַשָּׁמָיִם, בְּהֵמָה names land beasts collectively alongside humans, creeping things, and birds. The list gives no indication that the beasts are specifically livestock.",
+        "gloss": "land beasts",
+        "language": "he",
+        "lemma": "בְּהֵמָה",
+        "morphology": "Common noun, feminine singular absolute, used collectively.",
+        "qualifier": "",
+        "root": "בהמ",
+        "sense": "beast, four-footed animal"
+      },
+      "position": 12,
+      "surface": "בְּהֵמָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ad"
+        },
+        "evidence": "The list begins with מֵאָדָם, “from humankind.” After בְּהֵמָה, “livestock,” the marked עַד introduces רֶמֶשׂ, “creeping things,” extending the scope of אֶמְחֶה, “I will wipe out,” to include them.",
+        "gloss": "even to",
+        "language": "he",
+        "lemma": "עַד",
+        "morphology": "Simple preposition with no prefix or suffix.",
+        "qualifier": "preposition",
+        "root": "עדה",
+        "sense": "even to, as many as, to the point of"
+      },
+      "position": 13,
+      "surface": "עַד"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ramas-creep"
+        },
+        "evidence": "The repeated עַד places רֶמֶשׂ between בְּהֵמָה (livestock) and עוֹף הַשָּׁמַיִם (birds of the sky). The singular noun names a class of creatures in the list.",
+        "gloss": "creeping creatures",
+        "language": "he",
+        "lemma": "רֶמֶשׂ",
+        "morphology": "Common noun, masculine singular absolute, used collectively.",
+        "qualifier": "",
+        "root": "רמשׂ",
+        "sense": "moving creatures"
+      },
+      "position": 14,
+      "surface": "רֶמֶשׂ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ad"
+        },
+        "evidence": "The range begins with מֵאָדָם, “from humankind.” After livestock and creeping things, וְעַד introduces עוֹף הַשָּׁמָיִם, “the birds of the heavens,” as the final group included.",
+        "gloss": "and even to",
+        "language": "he",
+        "lemma": "עַד",
+        "morphology": "Preposition with prefixed conjunction וְ.",
+        "qualifier": "preposition",
+        "root": "עדה",
+        "sense": "even to, as many as, to the point of"
+      },
+      "position": 15,
+      "surface": "וְעַד"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "uph"
+        },
+        "evidence": "עוֹף governs הַשָּׁמַיִם in the phrase עוֹף הַשָּׁמַיִם, “birds of the sky.” It follows livestock and creeping things in the list of creatures to be wiped out.",
+        "gloss": "birds",
+        "language": "he",
+        "lemma": "עוֹף",
+        "morphology": "Common noun, masculine singular construct, used collectively.",
+        "qualifier": "",
+        "root": "עופ",
+        "sense": "birds collectively"
+      },
+      "position": 16,
+      "surface": "עוֹף"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shamayim"
+        },
+        "evidence": "In עוֹף הַשָּׁמָיִם, “birds of the sky,” the sky identifies where the birds fly. The phrase completes the verse’s list of creatures.",
+        "gloss": "the sky",
+        "language": "he",
+        "lemma": "שָׁמַיִם",
+        "morphology": "Masculine plural noun in the absolute state with the prefixed definite article הַ־.",
+        "qualifier": "",
+        "root": "שמה",
+        "sense": "sky, the visible heavens"
+      },
+      "position": 17,
+      "surface": "הַשָּׁמָיִם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ki"
+        },
+        "evidence": "The marked כִּי introduces the reason for אֶמְחֶה (“I will wipe out”): “for I regret that I made them.”",
+        "gloss": "for",
+        "language": "he",
+        "lemma": "כִּי",
+        "morphology": "Uninflected conjunction with no prefix or suffix.",
+        "qualifier": "conjunction",
+        "root": "כי",
+        "sense": "for, because"
+      },
+      "position": 18,
+      "surface": "כִּי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "nacham"
+        },
+        "evidence": "YHWH gives the reason for his decision to wipe them out. The following כִּי עֲשִׂיתִם, “that I made them,” identifies the past action he regrets.",
+        "gloss": "I regret",
+        "language": "he",
+        "lemma": "נָחַם",
+        "morphology": "Niphal perfect, first person common singular, with the subject ending ־תִּי",
+        "qualifier": "",
+        "root": "נחמ",
+        "sense": "to regret a past action"
+      },
+      "position": 19,
+      "surface": "נִחַמְתִּי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ki"
+        },
+        "evidence": "In נִחַמְתִּי כִּי עֲשִׂיתִם, “I regret that I made them,” the marked כִּי introduces the clause עֲשִׂיתִם, which specifies what the speaker regrets.",
+        "gloss": "that",
+        "language": "he",
+        "lemma": "כִּי",
+        "morphology": "Uninflected subordinating conjunction with no prefix or suffix.",
+        "qualifier": "conjunction",
+        "root": "כי",
+        "sense": "that (what is seen, known or said)"
+      },
+      "position": 20,
+      "surface": "כִּי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "asah"
+        },
+        "evidence": "עֲשִׂיתִם echoes בָּרָאתִי (“I created”) earlier in the verse. The plural object suffix refers to the humans and animals just listed, whom the speaker regrets having made.",
+        "gloss": "I made them",
+        "language": "he",
+        "lemma": "עָשָׂה",
+        "morphology": "Qal perfect, first person common singular, with a third person masculine plural object suffix",
+        "qualifier": "",
+        "root": "עשׂה",
+        "sense": "make, bring into being"
+      },
+      "position": 21,
+      "surface": "עֲשִׂיתִם"
+    }
+  ]
+}

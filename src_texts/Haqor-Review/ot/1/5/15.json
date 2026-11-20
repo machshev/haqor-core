@@ -1,0 +1,221 @@
+{
+  "book": 1,
+  "chapter": 5,
+  "review": {
+    "entities": [
+      {
+        "evidence": "Kenan’s son, introduced in Genesis 5:12, is sixty-five when he fathers Jared here. The source tag agrees.",
+        "key": "Mahalalel@Gen.5.12",
+        "position": 1
+      },
+      {
+        "evidence": "The verse names Jared as Mahalalel’s son in the genealogy before the Flood. His parentage distinguishes him from Jered son of Mered in 1 Chronicles 4:18. The source tag agrees.",
+        "key": "Jared@Gen.5.15",
+        "position": 8
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "and he lived",
+        "position": 0
+      },
+      {
+        "gloss": "Mahalalel",
+        "position": 1
+      },
+      {
+        "gloss": "five",
+        "position": 2
+      },
+      {
+        "gloss": "years",
+        "position": 3
+      },
+      {
+        "gloss": "and sixty",
+        "position": 4
+      },
+      {
+        "gloss": "years",
+        "position": 5
+      },
+      {
+        "gloss": "then he fathered",
+        "position": 6
+      },
+      {
+        "gloss": "(untranslated)",
+        "position": 7
+      },
+      {
+        "gloss": "Jared",
+        "position": 8
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[And|0] [Mahalalel|1] [lived|0] [sixty|4]-[five|2] [years|3,5], [then he fathered|6] [Jared|7,8]."
+  },
+  "source": "ot",
+  "verse": 15,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chayah"
+        },
+        "evidence": "מַהֲלַלְאֵל is the subject of וַיְחִי. The following חָמֵשׁ שָׁנִים וְשִׁשִּׁים שָׁנָה gives the sixty-five years he lived before he fathered Jared.",
+        "gloss": "and he lived",
+        "language": "he",
+        "lemma": "חָיָה",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ־",
+        "qualifier": "",
+        "root": "חיה",
+        "sense": "live for a stated span of time"
+      },
+      "position": 0,
+      "surface": "וַיְחִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "mahalalel"
+        },
+        "evidence": "מַהֲלַלְאֵל is the subject of וַיְחִי and וַיּוֹלֶד. The verse continues Kenan’s genealogy by naming Mahalalel as the father of Jared at age sixty-five.",
+        "gloss": "Mahalalel",
+        "language": "he",
+        "lemma": "מַהֲלַלְאֵל",
+        "morphology": "Masculine singular proper noun, without prefix or suffix",
+        "qualifier": "",
+        "root": "הלל",
+        "sense": "Mahalalel, son of Kenan"
+      },
+      "position": 1,
+      "surface": "מַהֲלַלְאֵל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chamesh"
+        },
+        "evidence": "חָמֵשׁ שָׁנִים means “five years.” The following וְשִׁשִּׁים שָׁנָה adds sixty years, giving Mahalalel’s age as sixty-five when he fathered Jared.",
+        "gloss": "five",
+        "language": "he",
+        "lemma": "חָמֵשׁ",
+        "morphology": "Cardinal numeral, feminine singular absolute.",
+        "qualifier": "",
+        "root": "חמש",
+        "sense": "five"
+      },
+      "position": 2,
+      "surface": "חָמֵשׁ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shanah"
+        },
+        "evidence": "חָמֵשׁ שָׁנִים means “five years.” With וְשִׁשִּׁים שָׁנָה (“and sixty years”), it gives Mahalalel’s age when he fathered Jared.",
+        "gloss": "years",
+        "language": "he",
+        "lemma": "שָׁנָה",
+        "morphology": "Common noun, feminine plural absolute.",
+        "qualifier": "noun",
+        "root": "שנה",
+        "sense": "years of a life, age"
+      },
+      "position": 3,
+      "surface": "שָׁנִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shesh"
+        },
+        "evidence": "In חָמֵשׁ שָׁנִים וְשִׁשִּׁים שָׁנָה, “five years and sixty years,” וְ joins the two parts of Mahalalel’s age. The marked word contributes sixty to the total of sixty-five years.",
+        "gloss": "and sixty",
+        "language": "he",
+        "lemma": "שִׁשִּׁים",
+        "morphology": "Conjunction וְ prefixed to a cardinal numeral, plural in form, common gender, absolute state.",
+        "qualifier": "",
+        "root": "שדש",
+        "sense": "sixty"
+      },
+      "position": 4,
+      "surface": "וְשִׁשִּׁים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shanah"
+        },
+        "evidence": "The marked שָׁנָה follows וְשִׁשִּׁים ‘and sixty’. Together with חָמֵשׁ שָׁנִים ‘five years’, it gives Mahalalel’s age of sixty-five when he fathered Jared.",
+        "gloss": "years",
+        "language": "he",
+        "lemma": "שָׁנָה",
+        "morphology": "Common noun, feminine singular absolute.",
+        "qualifier": "noun",
+        "root": "שנה",
+        "sense": "years of a life, age"
+      },
+      "position": 5,
+      "surface": "שָׁנָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yalad"
+        },
+        "evidence": "מַהֲלַלְאֵל is the subject, and אֶת marks יָרֶד as the direct object. After giving Mahalalel’s age as sixty-five, the verse says that he fathered Jared.",
+        "gloss": "and he fathered",
+        "language": "he",
+        "lemma": "יָלַד",
+        "morphology": "Hiphil wayyiqtol, third person masculine singular, with prefixed וַ and no suffix",
+        "qualifier": "",
+        "root": "ילד",
+        "sense": "beget, father a child"
+      },
+      "position": 6,
+      "surface": "וַיּוֹלֶד"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "et"
+        },
+        "evidence": "In וַיּוֹלֶד אֶת יָרֶד, “he fathered Jared,” אֶת marks the personal name יָרֶד as the definite direct object of וַיּוֹלֶד.",
+        "gloss": "(untranslated)",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Direct-object particle, without prefix or suffix",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "(marks the definite object)"
+      },
+      "position": 7,
+      "surface": "אֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "yered",
+            "base": null,
+            "change": "Add a personal-name article for יֶרֶד linked to the consonantal root ירד.",
+            "definition": "Jared is the personal name of Mahalalel’s son in Genesis 5:15.",
+            "evidence": "וַיּוֹלֶד אֶת יָרֶד means “he fathered Jared.” The genealogy identifies the bearer and gives no explanation of the name’s origin."
+          }
+        },
+        "evidence": "Mahalalel is the subject of וַיּוֹלֶד, “he fathered.” The direct-object marker אֶת introduces יָרֶד as the name of his son.",
+        "gloss": "Jared",
+        "language": "he",
+        "lemma": "יֶרֶד",
+        "morphology": "Masculine singular personal name in the verse-final pausal form יָרֶד, without prefix or suffix.",
+        "qualifier": "",
+        "root": "ירד",
+        "sense": "Jared, son of Mahalalel"
+      },
+      "position": 8,
+      "surface": "יָרֶד"
+    }
+  ]
+}

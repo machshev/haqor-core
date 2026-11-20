@@ -1,0 +1,231 @@
+{
+  "book": 1,
+  "chapter": 5,
+  "review": {
+    "entities": [
+      {
+        "evidence": "This verse totals the lifespan of the Enoch whom Jared fathered in Genesis 5:18 and who fathered Methuselah in Genesis 5:21. The source tag identifies the same bearer.",
+        "key": "Enoch@Gen.5.18",
+        "position": 3
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "so … were",
+        "position": 0
+      },
+      {
+        "gloss": "all",
+        "position": 1
+      },
+      {
+        "gloss": "the days of",
+        "position": 2
+      },
+      {
+        "gloss": "Enoch",
+        "position": 3
+      },
+      {
+        "gloss": "five",
+        "position": 4
+      },
+      {
+        "gloss": "and sixty",
+        "position": 5
+      },
+      {
+        "gloss": "years",
+        "position": 6
+      },
+      {
+        "gloss": "and three",
+        "position": 7
+      },
+      {
+        "gloss": "hundreds",
+        "position": 8
+      },
+      {
+        "gloss": "years",
+        "position": 9
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[So|0] [all|1] [the days of|2] [Enoch|3] [were|0] [365 years|9,8,7,6,5,4]."
+  },
+  "source": "ot",
+  "verse": 23,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "hayah"
+        },
+        "evidence": "כָּל יְמֵי חֲנוֹךְ means “all the days of Enoch.” The two numbers that follow, sixty-five years and three hundred years, give his lifespan. וַיְהִי links those days to their total of 365 years.",
+        "gloss": "and amounted to",
+        "language": "he",
+        "lemma": "הָיָה",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed conjunction וַ־.",
+        "qualifier": "",
+        "root": "היה",
+        "sense": "to amount to a stated total"
+      },
+      "position": 0,
+      "surface": "וַיְהִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "kalal"
+        },
+        "evidence": "In כָּל יְמֵי חֲנוֹךְ, “all the days of Enoch,” כָּל takes יְמֵי חֲנוֹךְ as its complement. The verse gives a single total of 365 years for his whole lifespan.",
+        "gloss": "all",
+        "language": "he",
+        "lemma": "כֹּל",
+        "morphology": "Masculine singular construct noun, without prefix or suffix.",
+        "qualifier": "",
+        "root": "כלל",
+        "sense": "all, the whole"
+      },
+      "position": 1,
+      "surface": "כָּל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yom"
+        },
+        "evidence": "In כָּל יְמֵי חֲנוֹךְ, “all the days of Enoch,” the construct form יְמֵי links “days” to Enoch. The verse gives their total as 365 years, so “days” denotes his lifespan.",
+        "gloss": "days of",
+        "language": "he",
+        "lemma": "יוֹם",
+        "morphology": "Masculine plural construct noun",
+        "qualifier": "",
+        "root": "יומ",
+        "sense": "(pl.) days of a life, a reign or an age"
+      },
+      "position": 2,
+      "surface": "יְמֵי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "enoch"
+        },
+        "evidence": "In כָּל יְמֵי חֲנוֹךְ, “all the days of Enoch,” the name identifies whose lifespan totaled 365 years. The genealogy identifies him as Jared’s son in Genesis 5:18.",
+        "gloss": "Enoch",
+        "language": "he",
+        "lemma": "חֲנוֹךְ",
+        "morphology": "Masculine singular proper noun without prefix or suffix.",
+        "qualifier": "",
+        "root": "חנכ",
+        "sense": "Enoch, son of Jared"
+      },
+      "position": 3,
+      "surface": "חֲנוֹךְ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chamesh"
+        },
+        "evidence": "In חָמֵשׁ וְשִׁשִּׁים שָׁנָה, חָמֵשׁ supplies the five in sixty-five years. The following וּשְׁלֹשׁ מֵאוֹת שָׁנָה adds three hundred years, giving Enoch a lifespan of 365 years.",
+        "gloss": "five",
+        "language": "he",
+        "lemma": "חָמֵשׁ",
+        "morphology": "Cardinal numeral, feminine singular absolute, without prefix or suffix.",
+        "qualifier": "",
+        "root": "חמש",
+        "sense": "five"
+      },
+      "position": 4,
+      "surface": "חָמֵשׁ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shesh"
+        },
+        "evidence": "חָמֵשׁ וְשִׁשִּׁים שָׁנָה means “five and sixty years.” The following וּשְׁלֹשׁ מֵאוֹת שָׁנָה adds three hundred years, giving Enoch a lifespan of 365 years.",
+        "gloss": "and sixty",
+        "language": "he",
+        "lemma": "שִׁשִּׁים",
+        "morphology": "Conjunction וְ prefixed to a cardinal numeral, common gender, plural absolute.",
+        "qualifier": "",
+        "root": "שדש",
+        "sense": "sixty"
+      },
+      "position": 5,
+      "surface": "וְשִׁשִּׁים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shanah"
+        },
+        "evidence": "In חָמֵשׁ וְשִׁשִּׁים שָׁנָה, the marked noun gives the unit for sixty-five. The verse adds three hundred years and identifies the total as כָּל יְמֵי חֲנוֹךְ, “all the days of Enoch,” giving his lifespan as 365 years.",
+        "gloss": "years",
+        "language": "he",
+        "lemma": "שָׁנָה",
+        "morphology": "Feminine singular absolute noun.",
+        "qualifier": "noun",
+        "root": "שנה",
+        "sense": "years of a life, age"
+      },
+      "position": 6,
+      "surface": "שָׁנָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shalosh"
+        },
+        "evidence": "שְׁלֹשׁ counts מֵאוֹת ‘hundreds’ in וּשְׁלֹשׁ מֵאוֹת שָׁנָה ‘and three hundred years’. The conjunction adds those years to the preceding sixty-five, giving Enoch a lifespan of 365 years.",
+        "gloss": "and three",
+        "language": "he",
+        "lemma": "שָׁלֹשׁ",
+        "morphology": "Conjunction וּ־ ‘and’ + feminine singular construct cardinal numeral שְׁלֹשׁ.",
+        "qualifier": "",
+        "root": "שלש",
+        "sense": "three"
+      },
+      "position": 7,
+      "surface": "וּשְׁלֹשׁ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "meah"
+        },
+        "evidence": "In וּשְׁלֹשׁ מֵאוֹת שָׁנָה, שְׁלֹשׁ counts the hundreds, giving “and three hundred years.” Together with the preceding sixty-five years, this gives Enoch’s lifespan of 365 years.",
+        "gloss": "hundreds",
+        "language": "he",
+        "lemma": "מֵאָה",
+        "morphology": "Cardinal numeral, plural absolute, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "מאה",
+        "sense": "hundreds (plural מֵאוֹת, with the digits: three hundred to nine hundred)"
+      },
+      "position": 8,
+      "surface": "מֵאוֹת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shanah"
+        },
+        "evidence": "In וּשְׁלֹשׁ מֵאוֹת שָׁנָה, the marked noun supplies the unit for “three hundred years.” These are added to the preceding sixty-five years to give the length of Enoch’s life.",
+        "gloss": "years",
+        "language": "he",
+        "lemma": "שָׁנָה",
+        "morphology": "Feminine singular absolute common noun.",
+        "qualifier": "noun",
+        "root": "שנה",
+        "sense": "years of a life, age"
+      },
+      "position": 9,
+      "surface": "שָׁנָה"
+    }
+  ]
+}

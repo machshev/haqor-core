@@ -1,0 +1,168 @@
+{
+  "book": 1,
+  "chapter": 2,
+  "review": {
+    "entities": [],
+    "glosses": [
+      {
+        "gloss": "and they were",
+        "position": 0
+      },
+      {
+        "gloss": "both of them",
+        "position": 1
+      },
+      {
+        "gloss": "naked",
+        "position": 2
+      },
+      {
+        "gloss": "the man",
+        "position": 3
+      },
+      {
+        "gloss": "and his wife",
+        "position": 4
+      },
+      {
+        "gloss": "but not",
+        "position": 5
+      },
+      {
+        "gloss": "they were ashamed",
+        "position": 6
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[And|0] [the man|3] [and his wife|4] [were|0] [both|1] [naked|2], [but|5] [they were|6] [not|5] [ashamed|6]."
+  },
+  "source": "ot",
+  "verse": 25,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "hayah"
+        },
+        "evidence": "וַיִּהְיוּ links the subject שְׁנֵיהֶם (“both of them,” the man and his wife) to the predicate adjective עֲרוּמִּים (“naked”), describing their condition.",
+        "gloss": "and they were",
+        "language": "he",
+        "lemma": "הָיָה",
+        "morphology": "Qal wayyiqtol, third person masculine plural, with prefixed narrative וַ־",
+        "qualifier": "",
+        "root": "היה",
+        "sense": "to be in a state or condition"
+      },
+      "position": 0,
+      "surface": "וַיִּהְיוּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shanah"
+        },
+        "evidence": "The suffix in שְׁנֵיהֶם refers to הָאָדָם וְאִשְׁתּוֹ, “the man and his wife.” The numeral indicates that עֲרוּמִּים, “naked,” applies to both.",
+        "gloss": "both of them",
+        "language": "he",
+        "lemma": "שְׁנַיִם",
+        "morphology": "Cardinal numeral, masculine dual construct with a third-person masculine plural pronominal suffix.",
+        "qualifier": "",
+        "root": "שנה",
+        "sense": "both, the two of them"
+      },
+      "position": 1,
+      "surface": "שְׁנֵיהֶם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ur"
+        },
+        "evidence": "In וַיִּהְיוּ שְׁנֵיהֶם עֲרוּמִּים, “both of them were naked,” the plural adjective describes the man and his wife together. The closing clause says they felt no shame about their nakedness.",
+        "gloss": "naked",
+        "language": "he",
+        "lemma": "עָרוֹם",
+        "morphology": "Adjective, masculine plural absolute, used predicatively.",
+        "qualifier": "",
+        "root": "עור",
+        "sense": "naked"
+      },
+      "position": 2,
+      "surface": "עֲרוּמִּים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "adam"
+        },
+        "evidence": "הָאָדָם וְאִשְׁתּוֹ (“the man and his wife”) identifies the pair referred to by שְׁנֵיהֶם (“both of them”). The definite article singles out the man already introduced in the narrative.",
+        "gloss": "the man",
+        "language": "he",
+        "lemma": "אָדָם",
+        "morphology": "Definite article הָ־ prefixed to a masculine singular absolute common noun.",
+        "qualifier": "noun",
+        "root": "אדמ",
+        "sense": "the man (the first man)"
+      },
+      "position": 3,
+      "surface": "הָאָדָם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "enosh"
+        },
+        "evidence": "שְׁנֵיהֶם (“both of them”) refers to הָאָדָם וְאִשְׁתּוֹ (“the man and his wife”). The suffix וֹ refers to the man and identifies the woman as his wife.",
+        "gloss": "and his wife",
+        "language": "he",
+        "lemma": "אִשָּׁה",
+        "morphology": "Conjunction וְ + feminine singular construct noun אִשְׁתּ־ + third-person masculine singular possessive suffix וֹ.",
+        "qualifier": "",
+        "root": "אנש",
+        "sense": "wife"
+      },
+      "position": 4,
+      "surface": "וְאִשְׁתּוֹ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "lo",
+            "base": "ffd411d5ab468a0ba66ca0e2a4b68af3397e61abaed0e11ad5bcb26fdfcbb5d7",
+            "change": "Add Genesis 2:25 as an example under the existing Hebrew sense “not (of a fact)” in lo.",
+            "definition": "Before a verb, לֹא denies that its subject does or experiences what the verb expresses.",
+            "evidence": "Genesis 2:25 uses וְלֹא יִתְבֹּשָׁשׁוּ, “and they were not ashamed”, to describe the man and his wife."
+          }
+        },
+        "evidence": "In וְלֹא יִתְבֹּשָׁשׁוּ, לֹא directly precedes the plural verb “they felt shame”. The narrator says that the man and his wife were both naked and that neither felt shame.",
+        "gloss": "not",
+        "language": "he",
+        "lemma": "לֹא",
+        "morphology": "Prefixed coordinating conjunction וְ־ “and” + indeclinable negative particle לֹא “not”.",
+        "qualifier": "",
+        "root": "לא",
+        "sense": "Negates a statement of fact."
+      },
+      "position": 5,
+      "surface": "וְלֹא"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "bosh"
+        },
+        "evidence": "שְׁנֵיהֶם identifies the man and his wife as the subject. עֲרוּמִּים describes them both as naked, and וְלֹא negates the marked verb, so the clause means “they felt no shame.”",
+        "gloss": "they felt ashamed",
+        "language": "he",
+        "lemma": "בּוֹשׁ",
+        "morphology": "Hithpolel imperfect, third person masculine plural",
+        "qualifier": "",
+        "root": "בוש",
+        "sense": "feel shame"
+      },
+      "position": 6,
+      "surface": "יִתְבֹּשָׁשׁוּ"
+    }
+  ]
+}

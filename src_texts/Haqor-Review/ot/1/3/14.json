@@ -1,0 +1,394 @@
+{
+  "book": 1,
+  "chapter": 3,
+  "source": "ot",
+  "verse": 14,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "amar"
+        },
+        "evidence": "יַהְוֶה אֱלֹהִים is the speaker, and אֶל הַנָּחָשׁ identifies the serpent as the addressee. The direct speech begins with כִּי עָשִׂיתָ זֹּאת, “because you did this.”",
+        "gloss": "and he said",
+        "language": "he",
+        "lemma": "אָמַר",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ־",
+        "qualifier": "",
+        "root": "אמר",
+        "sense": "say, introducing direct speech"
+      },
+      "position": 0,
+      "surface": "וַיֹּאמֶר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yahweh"
+        },
+        "evidence": "In וַיֹּאמֶר יַהְוֶה אֱלֹהִים אֶל הַנָּחָשׁ, יַהְוֶה names the speaker who addresses the serpent. אֱלֹהִים stands in apposition to the name.",
+        "gloss": "Yahweh",
+        "language": "he",
+        "lemma": "יַהְוֶה",
+        "morphology": "Proper noun without prefix or suffix",
+        "qualifier": "",
+        "root": "הוה",
+        "sense": "Personal name of the God of Israel"
+      },
+      "position": 1,
+      "surface": "יַהְוֶה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "אֱלֹהִים stands in apposition to יַהְוֶה. The singular verb וַיֹּאמֶר identifies יַהְוֶה אֱלֹהִים as the one speaker addressing the serpent.",
+        "gloss": "God",
+        "language": "he",
+        "lemma": "אֱלֹהִים",
+        "morphology": "Common noun, masculine plural absolute, with singular reference.",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "the Mighty One, God"
+      },
+      "position": 2,
+      "surface": "אֱלֹהִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "After וַיֹּאמֶר ‘said’, אֶל introduces הַנָּחָשׁ ‘the serpent’ as the addressee. The second-person אַתָּה ‘you’ confirms the direct address.",
+        "gloss": "to",
+        "language": "he",
+        "lemma": "אֶל",
+        "morphology": "Preposition without prefix or suffix.",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "to (a person: speaking, sending, bringing)"
+      },
+      "position": 3,
+      "surface": "אֶל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "nachash"
+        },
+        "evidence": "אֶל הַנָּחָשׁ identifies the serpent as the one Yahweh God addresses. The words עַל גְּחֹנְךָ תֵלֵךְ, “you will go on your belly,” describe its movement.",
+        "gloss": "the serpent",
+        "language": "he",
+        "lemma": "נָחָשׁ",
+        "morphology": "Masculine singular absolute common noun with the prefixed definite article הַ־.",
+        "qualifier": "",
+        "root": "נחש",
+        "sense": "the serpent of Eden"
+      },
+      "position": 4,
+      "surface": "הַנָּחָשׁ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ki"
+        },
+        "evidence": "כִּי עָשִׂיתָ זֹּאת means “because you have done this” and gives the reason for the verdict אָרוּר אַתָּה, “cursed are you.”",
+        "gloss": "because",
+        "language": "he",
+        "lemma": "כִּי",
+        "morphology": "Uninflected causal conjunction without prefix or suffix",
+        "qualifier": "conjunction",
+        "root": "כי",
+        "sense": "for, because"
+      },
+      "position": 5,
+      "surface": "כִּי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "asah"
+        },
+        "evidence": "God addresses the serpent. In כִּי עָשִׂיתָ זֹּאת, “because you have done this,” זֹּאת is the direct object and points back to the serpent’s conduct as the reason for the curse.",
+        "gloss": "you have done",
+        "language": "he",
+        "lemma": "עָשָׂה",
+        "morphology": "Qal perfect, second person masculine singular",
+        "qualifier": "",
+        "root": "עשׂה",
+        "sense": "do, perform an act"
+      },
+      "position": 6,
+      "surface": "עָשִׂיתָ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "arar",
+            "base": null,
+            "change": "Add a Hebrew root article for ארר with the Qal verb אָרַר and its passive participle אָרוּר.",
+            "definition": "To pronounce a curse on someone. The passive participle describes the one under the curse.",
+            "evidence": "In Gen.3.14 Yahweh pronounces the serpent cursed for what it has done and declares how it will live."
+          }
+        },
+        "evidence": "In אָרוּר אַתָּה, “cursed are you,” the participle agrees with אַתָּה, the serpent Yahweh addresses. כִּי עָשִׂיתָ זֹּאת gives the reason for the curse, and the rest of the verse states its consequences: the serpent will go on its belly and eat dust all its life.",
+        "gloss": "cursed",
+        "language": "he",
+        "lemma": "אָרַר",
+        "morphology": "Qal passive participle, masculine singular absolute, used predicatively without prefix or suffix.",
+        "qualifier": "",
+        "root": "ארר",
+        "sense": "To pronounce a curse on someone."
+      },
+      "position": 8,
+      "surface": "אָרוּר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "atah"
+        },
+        "evidence": "אֶל הַנָּחָשׁ identifies the serpent as the addressee. In אָרוּר אַתָּה, “cursed are you,” אַתָּה is the subject and אָרוּר states what is true of the serpent.",
+        "gloss": "you",
+        "language": "he",
+        "lemma": "אַתָּה",
+        "morphology": "Independent second-person masculine singular pronoun, without prefix or suffix.",
+        "qualifier": "",
+        "root": "אנת",
+        "sense": "you (are): the one addressed named or identified"
+      },
+      "position": 9,
+      "surface": "אַתָּה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "kalal"
+        },
+        "evidence": "In אָרוּר אַתָּה מִכָּל הַבְּהֵמָה, כֹּל modifies the collective noun הַבְּהֵמָה. The serpent is cursed more than all the livestock.",
+        "gloss": "all the livestock",
+        "language": "he",
+        "lemma": "כֹּל",
+        "morphology": "Masculine singular construct noun with prefixed comparative מִן. The נ assimilates to the following כ.",
+        "qualifier": "",
+        "root": "כלל",
+        "sense": "all, the whole"
+      },
+      "position": 10,
+      "surface": "מִכָּל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "behemah"
+        },
+        "evidence": "The serpent is cursed more than both הַבְּהֵמָה and חַיַּת הַשָּׂדֶה, “the wild animals of the field.” The pairing identifies הַבְּהֵמָה as livestock collectively.",
+        "gloss": "the livestock",
+        "language": "he",
+        "lemma": "בְּהֵמָה",
+        "morphology": "Definite article הַ־ + feminine singular absolute common noun, used collectively.",
+        "qualifier": "",
+        "root": "בהמ",
+        "sense": "livestock, cattle; tame beast"
+      },
+      "position": 11,
+      "surface": "הַבְּהֵמָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "kalal"
+        },
+        "evidence": "חַיַּת הַשָּׂדֶה denotes the wild animals collectively. כֹּל includes that entire group in the comparison with the serpent, parallel to מִכָּל הַבְּהֵמָה in the preceding phrase.",
+        "gloss": "and more than all",
+        "language": "he",
+        "lemma": "כֹּל",
+        "morphology": "Masculine singular noun in the construct state, prefixed with the conjunction וּ־ and the comparative preposition מִן, whose נ assimilates to כ.",
+        "qualifier": "",
+        "root": "כלל",
+        "sense": "all, the whole"
+      },
+      "position": 12,
+      "surface": "וּמִכֹּל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chayah"
+        },
+        "evidence": "חַיַּת takes הַשָּׂדֶה as its complement. The phrase וּמִכֹּל חַיַּת הַשָּׂדֶה means “and more than every wild animal of the field,” pairing the wild animals with the livestock in מִכָּל הַבְּהֵמָה.",
+        "gloss": "wild animal",
+        "language": "he",
+        "lemma": "חַיָּה",
+        "morphology": "Feminine singular noun in the construct state, without prefix or suffix.",
+        "qualifier": "animal",
+        "root": "חיה",
+        "sense": "wild beast, beast of the field"
+      },
+      "position": 13,
+      "surface": "חַיַּת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "sadeh"
+        },
+        "evidence": "In חַיַּת הַשָּׂדֶה, “animal of the open country,” הַשָּׂדֶה names the animal’s habitat. The contrast with הַבְּהֵמָה, “the livestock,” supports this reading.",
+        "gloss": "the open country",
+        "language": "he",
+        "lemma": "שָׂדֶה",
+        "morphology": "Definite article הַ־ prefixed to a masculine singular absolute noun.",
+        "qualifier": "",
+        "root": "שׂדה",
+        "sense": "open country, the land outside town and house"
+      },
+      "position": 14,
+      "surface": "הַשָּׂדֶה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "alah"
+        },
+        "evidence": "In עַל גְּחֹנְךָ תֵלֵךְ, “you will go on your belly,” עַל introduces the body part on which the serpent will move.",
+        "gloss": "on",
+        "language": "he",
+        "lemma": "עַל",
+        "morphology": "Preposition without prefix or suffix.",
+        "qualifier": "",
+        "root": "עלה",
+        "sense": "on, upon, over"
+      },
+      "position": 15,
+      "surface": "עַל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "gachon",
+            "base": null,
+            "change": "Add a Hebrew noun entry for גָּחוֹן with the anatomical sense “belly.”",
+            "definition": "The belly or underside on which an animal crawls.",
+            "evidence": "Genesis 3:14 names the serpent’s belly as the part on which it will go. Leviticus 11:42 uses the same expression to distinguish animals that move on the belly from those that walk on four feet or have many feet."
+          }
+        },
+        "evidence": "Yahweh tells the serpent עַל גְּחֹנְךָ תֵלֵךְ, “on your belly you shall go.” The preposition עַל and the verb תֵלֵךְ identify the belly as the part on which the serpent moves. The suffix ךָ refers to the serpent.",
+        "gloss": "your belly",
+        "language": "he",
+        "lemma": "גָּחוֹן",
+        "morphology": "Masculine singular noun in the construct state with the second-person masculine singular possessive suffix ךָ.",
+        "qualifier": "",
+        "root": "גחנ",
+        "sense": "The belly or underside of a crawling animal."
+      },
+      "position": 16,
+      "surface": "גְּחֹנְךָ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "halak"
+        },
+        "evidence": "God addresses the serpent directly. In עַל גְּחֹנְךָ תֵלֵךְ, “on your belly you shall go,” תֵלֵךְ expresses motion and עַל גְּחֹנְךָ specifies how the serpent will move.",
+        "gloss": "you shall go",
+        "language": "he",
+        "lemma": "הָלַךְ",
+        "morphology": "Qal imperfect, second person masculine singular, with preformative ת־ and no suffix.",
+        "qualifier": "",
+        "root": "הלכ",
+        "sense": "go, move from place to place"
+      },
+      "position": 17,
+      "surface": "תֵלֵךְ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "aphar"
+        },
+        "evidence": "In וְעָפָר תֹּאכַל, “and dust you will eat,” עָפָר is the direct object of תֹּאכַל. The preceding words עַל גְּחֹנְךָ תֵלֵךְ, “you will go on your belly,” identify the dust as the loose earth at the serpent’s mouth. The image conveys humiliation within the curse.",
+        "gloss": "and dust",
+        "language": "he",
+        "lemma": "עָפָר",
+        "morphology": "Conjunction וְ prefixed to a masculine singular absolute noun.",
+        "qualifier": "",
+        "root": "עפר",
+        "sense": "loose earth"
+      },
+      "position": 18,
+      "surface": "וְעָפָר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "akal"
+        },
+        "evidence": "God addresses the serpent as אַתָּה. In וְעָפָר תֹּאכַל, עָפָר (“dust”) is the object of תֹּאכַל (“you will eat”).",
+        "gloss": "you will eat",
+        "language": "he",
+        "lemma": "אָכַל",
+        "morphology": "Qal imperfect, second person masculine singular",
+        "qualifier": "",
+        "root": "אכל",
+        "sense": "eat"
+      },
+      "position": 19,
+      "surface": "תֹּאכַל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "kalal"
+        },
+        "evidence": "In כָּל יְמֵי חַיֶּיךָ, “all the days of your life,” כָּל takes the plural יְמֵי חַיֶּיךָ as its complement. The phrase gives the duration of the serpent’s eating dust, extending it over its whole lifetime.",
+        "gloss": "all",
+        "language": "he",
+        "lemma": "כֹּל",
+        "morphology": "Masculine singular construct noun, without prefix or suffix.",
+        "qualifier": "",
+        "root": "כלל",
+        "sense": "all, the whole"
+      },
+      "position": 20,
+      "surface": "כָּל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yom"
+        },
+        "evidence": "In כָּל יְמֵי חַיֶּיךָ, “all the days of your life,” יְמֵי takes חַיֶּיךָ, “your life,” as its complement. The phrase extends the curse throughout the serpent’s lifetime.",
+        "gloss": "days of",
+        "language": "he",
+        "lemma": "יוֹם",
+        "morphology": "Masculine plural noun in the construct state.",
+        "qualifier": "",
+        "root": "יומ",
+        "sense": "(pl.) days of a life, a reign or an age"
+      },
+      "position": 21,
+      "surface": "יְמֵי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chayah"
+        },
+        "evidence": "In כָּל יְמֵי חַיֶּיךָ, “all the days of your life,” the suffix refers to the serpent. The phrase gives the duration of the curse as the serpent’s entire lifetime.",
+        "gloss": "your life",
+        "language": "he",
+        "lemma": "חַיִּים",
+        "morphology": "Masculine plural noun in the construct state with a second-person masculine singular possessive suffix.",
+        "qualifier": "",
+        "root": "חיה",
+        "sense": "lifetime, the days of one's life"
+      },
+      "position": 22,
+      "surface": "חַיֶּיךָ"
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "book": 1,
+  "chapter": 4,
+  "review": {
+    "entities": [
+      {
+        "evidence": "The Cain who leaves here is Eve’s son and Abel’s brother, whom Yahweh addressed after Abel’s death.",
+        "key": "Cain@Gen.4.1",
+        "position": 1
+      },
+      {
+        "evidence": "The divine name identifies the God who addressed Cain and whose presence Cain now leaves. The source tag LORD refers to the same bearer as the earlier Yahweh proposal.",
+        "key": "Yahweh@Gen.2.22",
+        "new": {
+          "description": "The God of Israel, who built the rib taken from the man into a woman and brought her to the man.",
+          "kind": "person",
+          "name": "Yahweh"
+        },
+        "position": 3
+      },
+      {
+        "evidence": "The phrase “in the land of Nod” names the territory where Cain settled and locates it east of Eden.",
+        "key": "Nod@Gen.4.16",
+        "position": 6
+      },
+      {
+        "evidence": "“East of Eden” locates Nod relative to the Eden where Yahweh God planted the garden in Genesis 2:8.",
+        "key": "Eden@Gen.2.8",
+        "position": 8
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "then he went out",
+        "position": 0
+      },
+      {
+        "gloss": "Cain",
+        "position": 1
+      },
+      {
+        "gloss": "from the presence of",
+        "position": 2
+      },
+      {
+        "gloss": "Yahweh",
+        "position": 3
+      },
+      {
+        "gloss": "and he settled",
+        "position": 4
+      },
+      {
+        "gloss": "in the land of",
+        "position": 5
+      },
+      {
+        "gloss": "Nod",
+        "position": 6
+      },
+      {
+        "gloss": "east of",
+        "position": 7
+      },
+      {
+        "gloss": "Eden",
+        "position": 8
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[Then|0] [Cain|1] [went out|0] [from the presence of|2] [Yahweh|3] [and settled|4] [in the land of|5] [Nod|6], [east of|7] [Eden|8]."
+  },
+  "source": "ot",
+  "verse": 16,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yatsa"
+        },
+        "evidence": "Cain is the subject of וַיֵּצֵא. The phrase מִלִּפְנֵי יַהְוֶה identifies whose presence he left, and the next clause says he settled in the land of Nod.",
+        "gloss": "and he went out",
+        "language": "he",
+        "lemma": "יָצָא",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ־",
+        "qualifier": "",
+        "root": "יצא",
+        "sense": "go out, depart from a place or someone’s presence"
+      },
+      "position": 0,
+      "surface": "וַיֵּצֵא"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "cain",
+            "base": null,
+            "change": "Add a personal-name article for Cain. Its proposed root link requires a companion article for קינ, which is absent from the local lexicon.",
+            "definition": "Cain, the son of Adam and Eve and brother of Abel.",
+            "evidence": "Genesis 4:1 names Eve’s son קַיִן. Genesis 4:2 identifies Abel as his brother and names Cain again when describing his work."
+          }
+        },
+        "evidence": "In וַיֵּצֵא קַיִן מִלִּפְנֵי יַהְוֶה, קַיִן names the subject who went out from Yahweh’s presence. The same subject carries over to וַיֵּשֶׁב, describing Cain’s settlement in the land of Nod.",
+        "gloss": "Cain",
+        "language": "he",
+        "lemma": "קַיִן",
+        "morphology": "Masculine singular proper noun with no prefix or suffix.",
+        "qualifier": "",
+        "root": "קינ",
+        "sense": "The personal name of Abel’s brother."
+      },
+      "position": 1,
+      "surface": "קַיִן"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "panah"
+        },
+        "evidence": "In וַיֵּצֵא קַיִן מִלִּפְנֵי יַהְוֶה, לִפְנֵי יַהְוֶה identifies Yahweh’s presence, and the prefixed מִן marks it as the place Cain left.",
+        "gloss": "from the presence of",
+        "language": "he",
+        "lemma": "לִפְנֵי",
+        "morphology": "Prefixed מִן with its נ assimilated to ל, followed by לִפְנֵי (לְ + פְּנֵי, plural construct of פָּנִים).",
+        "qualifier": "",
+        "root": "פנה",
+        "sense": "before, in the presence of (a person, Yahweh)"
+      },
+      "position": 2,
+      "surface": "מִלִּפְנֵי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yahweh"
+        },
+        "evidence": "In וַיֵּצֵא קַיִן מִלִּפְנֵי יַהְוֶה, “Cain went out from the presence of Yahweh,” the name identifies the one whose presence Cain left.",
+        "gloss": "Yahweh",
+        "language": "he",
+        "lemma": "יַהְוֶה",
+        "morphology": "Proper noun, singular, without prefix or suffix.",
+        "qualifier": "",
+        "root": "הוה",
+        "sense": "Personal name of the God of Israel"
+      },
+      "position": 3,
+      "surface": "יַהְוֶה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yashav"
+        },
+        "evidence": "Cain is the subject of both וַיֵּצֵא and וַיֵּשֶׁב. After he leaves Yahweh’s presence, בְּאֶרֶץ נוֹד identifies the land of Nod as the place where he settled.",
+        "gloss": "and he settled",
+        "language": "he",
+        "lemma": "יָשַׁב",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ־",
+        "qualifier": "",
+        "root": "ישב",
+        "sense": "to take up residence in a place"
+      },
+      "position": 4,
+      "surface": "וַיֵּשֶׁב"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "erets"
+        },
+        "evidence": "In וַיֵּשֶׁב בְּאֶרֶץ נוֹד, Nod names the territory where Cain settled. The phrase קִדְמַת עֵדֶן locates it east of Eden.",
+        "gloss": "in the land of",
+        "language": "he",
+        "lemma": "אֶרֶץ",
+        "morphology": "Preposition בְּ ‘in’ prefixed to a common noun in the singular construct.",
+        "qualifier": "",
+        "root": "ארצ",
+        "sense": "land, country, territory"
+      },
+      "position": 5,
+      "surface": "בְּאֶרֶץ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "nud"
+        },
+        "evidence": "In בְּאֶרֶץ נוֹד, “in the land of Nod,” נוֹד names the land where Cain settled. קִדְמַת עֵדֶן, “east of Eden,” locates it geographically.",
+        "gloss": "Nod",
+        "language": "he",
+        "lemma": "נוֹד",
+        "morphology": "Proper noun of place, singular, without prefix or suffix.",
+        "qualifier": "name",
+        "root": "נוד",
+        "sense": "land of Nod"
+      },
+      "position": 6,
+      "surface": "נוֹד"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "qedem"
+        },
+        "evidence": "In קִדְמַת עֵדֶן, the construct form קִדְמַת takes עֵדֶן as its complement and locates the land of Nod east of Eden.",
+        "gloss": "east of",
+        "language": "he",
+        "lemma": "קִדְמָה",
+        "morphology": "Common noun, feminine singular construct",
+        "qualifier": "",
+        "root": "קדמ",
+        "sense": "east of"
+      },
+      "position": 7,
+      "surface": "קִדְמַת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "eden",
+            "base": "0073ee93365c2a8b78250ac250b810c65257463dee47801a0e7571bda8592234",
+            "change": "Add a place-name word for עֵדֶן alongside the identically pointed noun meaning delight.",
+            "definition": "Eden is the place where Yahweh God planted a garden.",
+            "evidence": "Genesis 2:8 locates the garden with the phrase גַּן בְּעֵדֶן, “a garden in Eden.”"
+          }
+        },
+        "evidence": "Cain settled in the land of Nod. The phrase קִדְמַת עֵדֶן, “east of Eden,” uses Eden as the geographic reference point for Nod.",
+        "gloss": "Eden",
+        "language": "he",
+        "lemma": "עֵדֶן",
+        "morphology": "Singular proper noun without prefix or suffix, in the absolute state after the construct form קִדְמַת.",
+        "qualifier": "place name",
+        "root": "עדנ",
+        "sense": "Eden, the place where Yahweh God planted a garden."
+      },
+      "position": 8,
+      "surface": "עֵדֶן"
+    }
+  ]
+}

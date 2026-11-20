@@ -1,0 +1,336 @@
+{
+  "book": 1,
+  "chapter": 4,
+  "review": {
+    "entities": [
+      {
+        "evidence": "The verse names Eve as the man's wife and identifies her as Cain's mother.",
+        "key": "Eve@Gen.3.20",
+        "position": 3
+      },
+      {
+        "evidence": "Cain is the name of the son Eve bears in this verse.",
+        "key": "Cain@Gen.4.1",
+        "position": 8
+      },
+      {
+        "evidence": "Eve explicitly names Yahweh, the same God who brought the woman to the man in Genesis 2:22.",
+        "key": "Yahweh@Gen.2.22",
+        "new": {
+          "description": "The God of Israel, who built the rib taken from the man into a woman and brought her to the man.",
+          "kind": "person",
+          "name": "Yahweh"
+        },
+        "position": 13
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "and the man",
+        "position": 0
+      },
+      {
+        "gloss": "lay with",
+        "position": 1
+      },
+      {
+        "gloss": "(untranslated)",
+        "position": 2
+      },
+      {
+        "gloss": "Eve",
+        "position": 3
+      },
+      {
+        "gloss": "his wife",
+        "position": 4
+      },
+      {
+        "gloss": "and she conceived",
+        "position": 5
+      },
+      {
+        "gloss": "and she bore",
+        "position": 6
+      },
+      {
+        "gloss": "(untranslated)",
+        "position": 7
+      },
+      {
+        "gloss": "Cain",
+        "position": 8
+      },
+      {
+        "gloss": "and she said",
+        "position": 9
+      },
+      {
+        "gloss": "I have gained",
+        "position": 10
+      },
+      {
+        "gloss": "a man",
+        "position": 11
+      },
+      {
+        "gloss": "with",
+        "position": 12
+      },
+      {
+        "gloss": "Yahweh",
+        "position": 13
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[Then the man|0] [lay with|1] [Eve|3,2], [his wife|4], [and she conceived|5] [and bore|6] [Cain|8,7]. [And she said|9], “​[I have gained|10] [a man|11] [with|12] {the help of} [Yahweh|13]!”"
+  },
+  "source": "ot",
+  "verse": 1,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "adam"
+        },
+        "evidence": "The article marks אָדָם as definite. He is the subject of יָדַע, and the phrase חַוָּה אִשְׁתּוֹ identifies Eve as his wife, fixing the reference to the first man.",
+        "gloss": "and the man",
+        "language": "he",
+        "lemma": "אָדָם",
+        "morphology": "Conjunction וְ plus definite article הָ plus masculine singular absolute noun אָדָם.",
+        "qualifier": "noun",
+        "root": "אדמ",
+        "sense": "the man (the first man)"
+      },
+      "position": 0,
+      "surface": "וְהָאָדָם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yada"
+        },
+        "evidence": "The direct object אֶת חַוָּה אִשְׁתּוֹ identifies Eve, his wife. The next words, וַתַּהַר וַתֵּלֶד אֶת קַיִן, say that she conceived and bore Cain, establishing the sexual sense of יָדַע here.",
+        "gloss": "lay with",
+        "language": "he",
+        "lemma": "יָדַע",
+        "morphology": "Qal perfect, third person masculine singular, with no prefix or suffix",
+        "qualifier": "",
+        "root": "ידע",
+        "sense": "to have sexual intercourse with someone"
+      },
+      "position": 1,
+      "surface": "יָדַע"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "et"
+        },
+        "evidence": "In יָדַע אֶת חַוָּה אִשְׁתּוֹ, אֶת marks the proper name חַוָּה as the definite direct object of יָדַע, “knew.” The appositive אִשְׁתּוֹ, “his wife,” further identifies Eve.",
+        "gloss": "(untranslated)",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Direct-object particle without prefix or suffix.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "(marks the definite object)"
+      },
+      "position": 2,
+      "surface": "אֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "eve"
+        },
+        "evidence": "אֶת marks חַוָּה as the direct object of יָדַע. The following אִשְׁתּוֹ, “his wife,” stands in apposition and identifies Eve as the man's wife.",
+        "gloss": "Eve",
+        "language": "he",
+        "lemma": "חַוָּה",
+        "morphology": "Feminine singular proper noun, without prefix or suffix.",
+        "qualifier": "",
+        "root": "חיה",
+        "sense": "Personal name given to the man's wife."
+      },
+      "position": 3,
+      "surface": "חַוָּה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "enosh"
+        },
+        "evidence": "In אֶת חַוָּה אִשְׁתּוֹ, the noun stands in apposition to Eve’s name. The suffix ־וֹ refers to הָאָדָם, identifying Eve as his wife.",
+        "gloss": "his wife",
+        "language": "he",
+        "lemma": "אִשָּׁה",
+        "morphology": "Feminine singular common noun in construct with a third-person masculine singular possessive suffix.",
+        "qualifier": "",
+        "root": "אנש",
+        "sense": "wife"
+      },
+      "position": 4,
+      "surface": "אִשְׁתּוֹ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "harah"
+        },
+        "evidence": "Eve is the subject of the paired verbs וַתַּהַר וַתֵּלֶד. After the man knew her, she conceived and then gave birth to Cain.",
+        "gloss": "and she conceived",
+        "language": "he",
+        "lemma": "הָרָה",
+        "morphology": "Qal wayyiqtol, third-person feminine singular, with prefixed וַ־",
+        "qualifier": "verb",
+        "root": "הרה",
+        "sense": "conceive, become pregnant"
+      },
+      "position": 5,
+      "surface": "וַתַּהַר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yalad"
+        },
+        "evidence": "Eve is the subject of both וַתַּהַר “she conceived” and וַתֵּלֶד. The direct object אֶת קַיִן identifies Cain as the child she bore.",
+        "gloss": "and she gave birth to",
+        "language": "he",
+        "lemma": "יָלַד",
+        "morphology": "Qal wayyiqtol, third person feminine singular, with prefixed וַ־.",
+        "qualifier": "",
+        "root": "ילד",
+        "sense": "bear, give birth to"
+      },
+      "position": 6,
+      "surface": "וַתֵּלֶד"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "et"
+        },
+        "evidence": "In וַתֵּלֶד אֶת קַיִן, “she bore Cain,” אֶת marks the proper name קַיִן as the definite direct object of וַתֵּלֶד.",
+        "gloss": "(untranslated)",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Direct-object marker in the short form אֶת, without prefix or suffix.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "(marks the definite object)"
+      },
+      "position": 7,
+      "surface": "אֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "cain",
+            "base": null,
+            "change": "Add a personal-name article for Cain under קינ. The proposed link requires a new root article with the id qayin.",
+            "definition": "Cain, the son born to Adam and Eve in Genesis 4:1.",
+            "evidence": "Genesis 4:1 identifies the child by name in וַתֵּלֶד אֶת קַיִן and immediately gives Eve's words קָנִיתִי אִישׁ."
+          }
+        },
+        "evidence": "וַתֵּלֶד אֶת קַיִן means “she bore Cain.” Eve then says קָנִיתִי אִישׁ, “I have acquired a man.” Her words echo the sound of the child's name, but the wordplay alone does not establish its derivation.",
+        "gloss": "Cain",
+        "language": "he",
+        "lemma": "קַיִן",
+        "morphology": "Masculine singular personal name, without prefix or suffix. The separate אֶת marks it as the direct object of וַתֵּלֶד.",
+        "qualifier": "",
+        "root": "קינ",
+        "sense": "The personal name of the son Eve bears to Adam in Genesis 4:1."
+      },
+      "position": 8,
+      "surface": "קַיִן"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "amar"
+        },
+        "evidence": "Eve remains the subject after וַתֵּלֶד “and she gave birth.” Her first-person verb קָנִיתִי “I have acquired” begins the direct speech introduced by וַתֹּאמֶר.",
+        "gloss": "and she said",
+        "language": "he",
+        "lemma": "אָמַר",
+        "morphology": "Qal wayyiqtol, third person feminine singular, with prefixed וַ־.",
+        "qualifier": "",
+        "root": "אמר",
+        "sense": "say, introducing direct speech"
+      },
+      "position": 9,
+      "surface": "וַתֹּאמֶר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "qanah"
+        },
+        "evidence": "After Eve gives birth to Cain (קַיִן), she says קָנִיתִי אִישׁ, ‘I have gained a man.’ The verb takes אִישׁ as its direct object and echoes Cain’s name.",
+        "gloss": "I have gained",
+        "language": "he",
+        "lemma": "קָנָה",
+        "morphology": "Qal perfect, first person common singular, with the ending ־תִי.",
+        "qualifier": "",
+        "root": "קנה",
+        "sense": "acquire, gain"
+      },
+      "position": 10,
+      "surface": "קָנִיתִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ish"
+        },
+        "evidence": "Eve says קָנִיתִי אִישׁ, “I have acquired a man,” immediately after וַתֵּלֶד אֶת קַיִן, “she gave birth to Cain.” The noun refers to her newborn son.",
+        "gloss": "a man",
+        "language": "he",
+        "lemma": "אִישׁ",
+        "morphology": "Common noun, masculine singular absolute, without prefix or suffix.",
+        "qualifier": "",
+        "root": "איש",
+        "sense": "man, a male"
+      },
+      "position": 11,
+      "surface": "אִישׁ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "et"
+        },
+        "evidence": "In קָנִיתִי אִישׁ אֶת יַהְוֶה, אִישׁ is the object of קָנִיתִי (“I have acquired a man”). The preposition אֶת introduces יַהְוֶה as the one with whose help Eve says she acquired the child.",
+        "gloss": "with the help of",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Simple preposition in the short form אֶת, without prefix or suffix.",
+        "qualifier": "preposition",
+        "root": "את",
+        "sense": "with (Yahweh's presence and help)"
+      },
+      "position": 12,
+      "surface": "אֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yahweh"
+        },
+        "evidence": "Eve ends her statement קָנִיתִי אִישׁ אֶת יַהְוֶה by naming Yahweh. The interpretation of the preceding אֶת affects how Yahweh relates to her claim, but the divine name itself is clear.",
+        "gloss": "Yahweh",
+        "language": "he",
+        "lemma": "יַהְוֶה",
+        "morphology": "Proper noun in the absolute state, with no prefix or suffix",
+        "qualifier": "",
+        "root": "הוה",
+        "sense": "Personal name of the God of Israel"
+      },
+      "position": 13,
+      "surface": "יַהְוֶה"
+    }
+  ]
+}

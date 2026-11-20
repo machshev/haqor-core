@@ -1,0 +1,242 @@
+{
+  "book": 1,
+  "chapter": 5,
+  "review": {
+    "entities": [
+      {
+        "evidence": "Methuselah, the son of Enoch named in Genesis 5:21, fathers Lamech at age 187.",
+        "key": "Methuselah@Gen.5.21",
+        "position": 1
+      },
+      {
+        "evidence": "This verse names Methuselah as Lamech’s father. The Lamech in Genesis 4:18 is the son of Methushael.",
+        "key": "Lamech@Gen.5.25",
+        "position": 9
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "and he lived",
+        "position": 0
+      },
+      {
+        "gloss": "Methuselah",
+        "position": 1
+      },
+      {
+        "gloss": "seven",
+        "position": 2
+      },
+      {
+        "gloss": "and eighty",
+        "position": 3
+      },
+      {
+        "gloss": "years",
+        "position": 4
+      },
+      {
+        "gloss": "and a hundred",
+        "position": 5
+      },
+      {
+        "gloss": "years",
+        "position": 6
+      },
+      {
+        "gloss": "then he fathered",
+        "position": 7
+      },
+      {
+        "gloss": "(untranslated)",
+        "position": 8
+      },
+      {
+        "gloss": "Lamech",
+        "position": 9
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[And|0] [Methuselah|1] [lived|0] [187|2,3,5] [years|4,6], [then he fathered|7] [Lamech|8,9]."
+  },
+  "source": "ot",
+  "verse": 25,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chayah"
+        },
+        "evidence": "Methuselah is the subject of וַיְחִי. The following number phrase gives the 187 years he lived before he fathered Lamech.",
+        "gloss": "and he lived",
+        "language": "he",
+        "lemma": "חָיָה",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ־. The verb has the shortened form יְחִי.",
+        "qualifier": "",
+        "root": "חיה",
+        "sense": "live for a stated length of time"
+      },
+      "position": 0,
+      "surface": "וַיְחִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "methuselah"
+        },
+        "evidence": "מְתוּשֶׁלַח is the subject of וַיְחִי and remains the subject of וַיּוֹלֶד אֶת לָמֶךְ. The verse says that Methuselah fathered Lamech at age 187.",
+        "gloss": "Methuselah",
+        "language": "he",
+        "lemma": "מְתוּשֶׁלַח",
+        "morphology": "Masculine singular proper noun without prefix or suffix.",
+        "qualifier": "",
+        "root": "שלח",
+        "sense": "Methuselah, son of Enoch."
+      },
+      "position": 1,
+      "surface": "מְתוּשֶׁלַח"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shaba"
+        },
+        "evidence": "שֶׁבַע וּשְׁמֹנִים שָׁנָה means “seven and eighty years.” שֶׁבַע supplies the units in Methuselah’s age of 187 years at Lamech’s birth.",
+        "gloss": "seven",
+        "language": "he",
+        "lemma": "שֶׁבַע",
+        "morphology": "Feminine singular absolute cardinal numeral.",
+        "qualifier": "",
+        "root": "שבע",
+        "sense": "seven"
+      },
+      "position": 2,
+      "surface": "שֶׁבַע"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shemen"
+        },
+        "evidence": "שֶׁבַע וּשְׁמֹנִים שָׁנָה means ‘seven and eighty years.’ The marked numeral supplies the eighty in Methuselah’s age of 187 years, with וּמְאַת שָׁנָה adding the hundred.",
+        "gloss": "and eighty",
+        "language": "he",
+        "lemma": "שְׁמֹנִים",
+        "morphology": "Conjunction וּ־ plus cardinal numeral, common gender, plural absolute.",
+        "qualifier": "",
+        "root": "שמנ",
+        "sense": "eighty"
+      },
+      "position": 3,
+      "surface": "וּשְׁמֹנִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shanah"
+        },
+        "evidence": "In שֶׁבַע וּשְׁמֹנִים שָׁנָה, the marked noun supplies the unit for eighty-seven. וּמְאַת שָׁנָה adds a hundred years, giving Methuselah’s age as 187 when he fathered Lamech.",
+        "gloss": "years",
+        "language": "he",
+        "lemma": "שָׁנָה",
+        "morphology": "Common noun, feminine singular absolute, with no prefix or suffix.",
+        "qualifier": "noun",
+        "root": "שנה",
+        "sense": "years of a life, age"
+      },
+      "position": 4,
+      "surface": "שָׁנָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "meah"
+        },
+        "evidence": "וּמְאַת שָׁנָה adds a hundred years to the preceding eighty-seven, giving Methuselah’s age as 187 when he fathered Lamech.",
+        "gloss": "and a hundred",
+        "language": "he",
+        "lemma": "מֵאָה",
+        "morphology": "Conjunction וּ־ prefixed to the singular construct numeral מְאַת.",
+        "qualifier": "",
+        "root": "מאה",
+        "sense": "a hundred (a count)"
+      },
+      "position": 5,
+      "surface": "וּמְאַת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shanah"
+        },
+        "evidence": "In וּמְאַת שָׁנָה, “and a hundred years,” שָׁנָה supplies the unit counted by מְאַת. This hundred adds to the preceding eighty-seven years, giving Methuselah’s age of 187 when he fathered Lamech.",
+        "gloss": "years",
+        "language": "he",
+        "lemma": "שָׁנָה",
+        "morphology": "Common noun, feminine singular absolute, without prefix or suffix.",
+        "qualifier": "noun",
+        "root": "שנה",
+        "sense": "years of a life, age"
+      },
+      "position": 6,
+      "surface": "שָׁנָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yalad"
+        },
+        "evidence": "Methuselah is the subject of וַיּוֹלֶד, and אֶת marks Lamech as its direct object. After giving Methuselah’s age, the verse records that he fathered Lamech.",
+        "gloss": "and he fathered",
+        "language": "he",
+        "lemma": "יָלַד",
+        "morphology": "Hiphil wayyiqtol, third person masculine singular, with prefixed וַ and no suffix",
+        "qualifier": "",
+        "root": "ילד",
+        "sense": "beget, father a child"
+      },
+      "position": 7,
+      "surface": "וַיּוֹלֶד"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "et"
+        },
+        "evidence": "In וַיּוֹלֶד אֶת לָמֶךְ, Methuselah fathered Lamech. אֶת marks the personal name לָמֶךְ as the definite direct object of וַיּוֹלֶד.",
+        "gloss": "(untranslated)",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Direct-object particle, without prefix or suffix.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "(marks the definite object)"
+      },
+      "position": 8,
+      "surface": "אֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "lamech",
+            "base": null,
+            "change": "Add a personal-name article for לֶמֶךְ with the derivation left open.",
+            "definition": "A Hebrew masculine personal name, borne here by the son of Methuselah.",
+            "evidence": "Genesis 5:25 names the child in וַיּוֹלֶד אֶת לָמֶךְ, “and he fathered Lamech.”"
+          }
+        },
+        "evidence": "Methuselah is the subject of וַיּוֹלֶד, “he fathered.” The direct-object marker אֶת introduces לָמֶךְ as the name of his child. The verse gives no derivation for the name.",
+        "gloss": "Lamech",
+        "language": "he",
+        "lemma": "לֶמֶךְ",
+        "morphology": "Masculine singular personal name in the verse-final pausal form לָמֶךְ, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "",
+        "sense": "Lamech, the son of Methuselah"
+      },
+      "position": 9,
+      "surface": "לָמֶךְ"
+    }
+  ]
+}

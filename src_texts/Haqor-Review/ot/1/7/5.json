@@ -1,0 +1,163 @@
+{
+  "book": 1,
+  "chapter": 7,
+  "review": {
+    "entities": [
+      {
+        "evidence": "The Noah who carries out the ark instructions is Lamech’s son. The source tag identifies this flood survivor.",
+        "key": "Noah@Gen.5.29",
+        "position": 1
+      },
+      {
+        "evidence": "The name יַהְוֶה identifies the God who commanded Noah. The source tag LORD@Gen.1.1 supports the same divine identity as the previous Yahweh proposal.",
+        "key": "Yahweh@Gen.2.22",
+        "new": {
+          "description": "The God of Israel, who built the rib taken from the man into a woman and brought her to the man.",
+          "kind": "person",
+          "name": "Yahweh"
+        },
+        "position": 5
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "and he did",
+        "position": 0
+      },
+      {
+        "gloss": "Noah",
+        "position": 1
+      },
+      {
+        "gloss": "according to everything",
+        "position": 2
+      },
+      {
+        "gloss": "that",
+        "position": 3
+      },
+      {
+        "gloss": "had commanded him",
+        "position": 4
+      },
+      {
+        "gloss": "Yahweh",
+        "position": 5
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[Then|0] [Noah|1] [did|0] [all|2] [that|3] [Yahweh|5] [had commanded him|4]."
+  },
+  "source": "ot",
+  "verse": 5,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "asah"
+        },
+        "evidence": "נֹחַ is the subject. The phrase כְּכֹל אֲשֶׁר צִוָּהוּ יַהְוֶה means “according to all that YHWH had commanded him” and identifies the instructions Noah carried out.",
+        "gloss": "and he did",
+        "language": "he",
+        "lemma": "עָשָׂה",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ and no suffix.",
+        "qualifier": "",
+        "root": "עשׂה",
+        "sense": "do, carry out work"
+      },
+      "position": 0,
+      "surface": "וַיַּעַשׂ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "noah-son-of-lamech",
+            "base": null,
+            "change": "Add a personal-name article for נֹחַ linked to the root article nuach.",
+            "definition": "Noah, the son whom Lamech names in hope of relief from toil.",
+            "evidence": "Genesis 5:29 gives the name נֹחַ and explains it through the wordplay on יְנַחֲמֵנוּ, “he will comfort us.”"
+          }
+        },
+        "evidence": "In וַיַּעַשׂ נֹחַ, “Noah did,” נֹחַ names the subject of the masculine singular verb. The suffix ־הוּ in צִוָּהוּ, “commanded him,” refers back to Noah as the one whom Yahweh commanded.",
+        "gloss": "Noah",
+        "language": "he",
+        "lemma": "נֹחַ",
+        "morphology": "Masculine singular proper noun in the absolute state, without prefix or suffix.",
+        "qualifier": "",
+        "root": "נוח",
+        "sense": "Noah, son of Lamech"
+      },
+      "position": 1,
+      "surface": "נֹחַ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "kalal"
+        },
+        "evidence": "The אֲשֶׁר clause completes כֹל by specifying what it includes. כְּכֹל אֲשֶׁר צִוָּהוּ יַהְוֶה means “according to everything that Yahweh had commanded him.”",
+        "gloss": "according to everything",
+        "language": "he",
+        "lemma": "כֹּל",
+        "morphology": "Preposition כְּ prefixed to the masculine singular construct noun כֹל.",
+        "qualifier": "",
+        "root": "כלל",
+        "sense": "everything, all things"
+      },
+      "position": 2,
+      "surface": "כְּכֹל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ashar"
+        },
+        "evidence": "אֲשֶׁר introduces the clause that specifies כֹּל: Noah did according to all that YHWH had commanded him. The suffix on צִוָּהוּ refers to Noah, and כֹּל supplies the content of the command.",
+        "gloss": "that",
+        "language": "he",
+        "lemma": "אֲשֶׁר",
+        "morphology": "Invariable relative particle",
+        "qualifier": "",
+        "root": "אשר",
+        "sense": "who, which, that"
+      },
+      "position": 3,
+      "surface": "אֲשֶׁר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "tsavah"
+        },
+        "evidence": "יַהְוֶה is the subject of צִוָּהוּ, and ־הוּ refers to Noah. Noah did everything that YHWH had commanded him.",
+        "gloss": "had commanded him",
+        "language": "he",
+        "lemma": "צִוָּה",
+        "morphology": "Piel perfect, third masculine singular, with a third masculine singular object suffix ־הוּ.",
+        "qualifier": "",
+        "root": "צוה",
+        "sense": "to give someone a command"
+      },
+      "position": 4,
+      "surface": "צִוָּהוּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yahweh"
+        },
+        "evidence": "In אֲשֶׁר צִוָּהוּ יַהְוֶה, “as Yahweh had commanded him,” יַהְוֶה names the subject of צִוָּהוּ. The suffix ־הוּ refers to Noah, who carried out the command.",
+        "gloss": "Yahweh",
+        "language": "he",
+        "lemma": "יַהְוֶה",
+        "morphology": "Proper noun, masculine singular, without prefix or suffix.",
+        "qualifier": "",
+        "root": "הוה",
+        "sense": "Personal name of the God of Israel"
+      },
+      "position": 5,
+      "surface": "יַהְוֶה"
+    }
+  ]
+}

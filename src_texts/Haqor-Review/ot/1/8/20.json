@@ -1,0 +1,331 @@
+{
+  "book": 1,
+  "chapter": 8,
+  "review": {
+    "entities": [
+      {
+        "evidence": "The Noah who builds the altar after leaving the ark is the flood survivor, Lamech’s son.",
+        "key": "Noah@Gen.5.29",
+        "position": 1
+      },
+      {
+        "evidence": "The name יַהְוֶה identifies the God to whom Noah builds the altar, the same Yahweh named in Genesis 2:22.",
+        "key": "Yahweh@Gen.2.22",
+        "new": {
+          "description": "The God of Israel, who built the rib taken from the man into a woman and brought her to the man.",
+          "kind": "person",
+          "name": "Yahweh"
+        },
+        "position": 3
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "then he built",
+        "position": 0
+      },
+      {
+        "gloss": "Noah",
+        "position": 1
+      },
+      {
+        "gloss": "an altar",
+        "position": 2
+      },
+      {
+        "gloss": "to Yahweh",
+        "position": 3
+      },
+      {
+        "gloss": "and he took",
+        "position": 4
+      },
+      {
+        "gloss": "from every kind of",
+        "position": 5
+      },
+      {
+        "gloss": "land animal",
+        "position": 6
+      },
+      {
+        "gloss": "clean",
+        "position": 7
+      },
+      {
+        "gloss": "and from every kind of",
+        "position": 8
+      },
+      {
+        "gloss": "bird",
+        "position": 9
+      },
+      {
+        "gloss": "clean",
+        "position": 10
+      },
+      {
+        "gloss": "and he offered",
+        "position": 11
+      },
+      {
+        "gloss": "burnt offerings",
+        "position": 12
+      },
+      {
+        "gloss": "on the altar",
+        "position": 13
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[Then|0] [Noah|1] [built|0] [an altar|2] [to Yahweh|3], [and he took|4] [from every kind of|5] [clean|7] [land animal|6] [and from every kind of|8] [clean|10] [bird|9], [and he offered|11] [burnt offerings|12] [on the altar|13]."
+  },
+  "source": "ot",
+  "verse": 20,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ben"
+        },
+        "evidence": "נֹחַ is the subject and מִזְבֵּחַ is the direct object. Noah built an altar for YHWH and then offered burnt offerings on that altar.",
+        "gloss": "and he built",
+        "language": "he",
+        "lemma": "בָּנָה",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ־.",
+        "qualifier": "",
+        "root": "בנה",
+        "sense": "build a physical structure"
+      },
+      "position": 0,
+      "surface": "וַיִּבֶן"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "noah-son-of-lamech",
+            "base": null,
+            "change": "Add a personal-name article for נֹחַ linked to the root article nuach.",
+            "definition": "Noah, the son whom Lamech names in hope of relief from toil.",
+            "evidence": "Genesis 5:29 gives the name נֹחַ and explains it through the wordplay on יְנַחֲמֵנוּ, “he will comfort us.”"
+          }
+        },
+        "evidence": "In וַיִּבֶן נֹחַ מִזְבֵּחַ לַיהוָה, “Noah built an altar to YHWH,” נֹחַ names the subject of וַיִּבֶן. The same subject takes clean animals and birds and offers burnt offerings.",
+        "gloss": "Noah",
+        "language": "he",
+        "lemma": "נֹחַ",
+        "morphology": "Masculine singular personal name, without prefix or suffix.",
+        "qualifier": "",
+        "root": "נוח",
+        "sense": "Noah, son of Lamech"
+      },
+      "position": 1,
+      "surface": "נֹחַ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "zebach"
+        },
+        "evidence": "מִזְבֵּחַ is the direct object of וַיִּבֶן. Noah builds an altar for Yahweh, then offers burnt offerings (עֹלֹת) on that same altar (בַּמִּזְבֵּחַ).",
+        "gloss": "an altar",
+        "language": "he",
+        "lemma": "מִזְבֵּחַ",
+        "morphology": "Common noun, masculine singular absolute, without article, prefix, or suffix.",
+        "qualifier": "",
+        "root": "זבח",
+        "sense": "altar (for sacrifice)"
+      },
+      "position": 2,
+      "surface": "מִזְבֵּחַ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yahweh"
+        },
+        "evidence": "וַיִּבֶן נֹחַ מִזְבֵּחַ לַיַהְוֶה means ‘Noah built an altar to Yahweh.’ The preposition introduces the name of the one to whom Noah dedicated the altar.",
+        "gloss": "to Yahweh",
+        "language": "he",
+        "lemma": "יַהְוֶה",
+        "morphology": "Prefixed preposition לַ־ ‘to, for’ + proper noun יַהְוֶה.",
+        "qualifier": "",
+        "root": "הוה",
+        "sense": "Personal name of the God of Israel"
+      },
+      "position": 3,
+      "surface": "לַיַהְוֶה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "laqach"
+        },
+        "evidence": "Noah is the subject. The partitive phrases מִכֹּל הַבְּהֵמָה הַטְּהוֹרָה and וּמִכֹּל הָעוֹף הַטָּהֹר identify the clean animals and birds from which he took some to offer on the altar.",
+        "gloss": "and he took",
+        "language": "he",
+        "lemma": "לָקַח",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ־",
+        "qualifier": "",
+        "root": "לקח",
+        "sense": "physically take something"
+      },
+      "position": 4,
+      "surface": "וַיִּקַּח"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "kalal"
+        },
+        "evidence": "In וַיִּקַּח מִכֹּל הַבְּהֵמָה הַטְּהוֹרָה, הַבְּהֵמָה is a collective singular. Noah takes animals for offerings from each clean kind. The parallel וּמִכֹּל הָעוֹף הַטָּהֹר repeats the same selection for clean birds.",
+        "gloss": "from every kind of",
+        "language": "he",
+        "lemma": "כֹּל",
+        "morphology": "Masculine singular construct noun with prefixed מִן (partitive). The נ assimilates to כ, marked by dagesh.",
+        "qualifier": "",
+        "root": "כלל",
+        "sense": "every, each; any"
+      },
+      "position": 5,
+      "surface": "מִכֹּל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "behemah"
+        },
+        "evidence": "מִכֹּל הַבְּהֵמָה הַטְּהוֹרָה parallels וּמִכֹּל הָעוֹף הַטָּהֹר. Noah takes offerings from two classes, clean land animals and clean birds. הַטְּהוֹרָה agrees with הַבְּהֵמָה in gender, number, and definiteness.",
+        "gloss": "land animal",
+        "language": "he",
+        "lemma": "בְּהֵמָה",
+        "morphology": "Definite article הַ־ prefixed to a feminine singular absolute noun used collectively.",
+        "qualifier": "",
+        "root": "בהמ",
+        "sense": "beast, four-footed animal"
+      },
+      "position": 6,
+      "surface": "הַבְּהֵמָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "taher"
+        },
+        "evidence": "הַטְּהוֹרָה agrees with the feminine singular noun הַבְּהֵמָה. The parallel phrase הָעוֹף הַטָּהֹר applies the same adjective to birds. Noah selects from both groups for burnt offerings.",
+        "gloss": "clean",
+        "language": "he",
+        "lemma": "טָהוֹר",
+        "morphology": "Definite article הַ־ + attributive adjective, feminine singular absolute.",
+        "qualifier": "",
+        "root": "טהר",
+        "sense": "clean (of animals and birds)"
+      },
+      "position": 7,
+      "surface": "הַטְּהוֹרָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "kalal"
+        },
+        "evidence": "הָעוֹף הַטָּהֹר ‘the clean birds’ is a singular collective. Just as Noah takes from every kind of clean land animal in the preceding phrase, he takes birds from each clean kind for the burnt offerings.",
+        "gloss": "and from every kind of",
+        "language": "he",
+        "lemma": "כֹּל",
+        "morphology": "Common noun, masculine singular construct, prefixed by וּ־ ‘and’ and מִן ‘from’. The נ of מִן assimilates to the following כ.",
+        "qualifier": "",
+        "root": "כלל",
+        "sense": "every, each; any"
+      },
+      "position": 8,
+      "surface": "וּמִכֹּל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "uph"
+        },
+        "evidence": "In וּמִכֹּל הָעוֹף הַטָּהֹר, the masculine singular adjective הַטָּהֹר agrees with הָעוֹף. The parallel phrase מִכֹּל הַבְּהֵמָה הַטְּהוֹרָה shows that Noah takes offerings from two classes of creatures, clean animals and clean birds.",
+        "gloss": "the birds",
+        "language": "he",
+        "lemma": "עוֹף",
+        "morphology": "Common noun, masculine singular absolute, with prefixed definite article הָ.",
+        "qualifier": "",
+        "root": "עופ",
+        "sense": "birds collectively"
+      },
+      "position": 9,
+      "surface": "הָעוֹף"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "taher"
+        },
+        "evidence": "הַטָּהֹר agrees with הָעוֹף in gender, number, and definiteness. The phrase וּמִכֹּל הָעוֹף הַטָּהֹר parallels מִכֹּל הַבְּהֵמָה הַטְּהוֹרָה, identifying the birds Noah selected for burnt offerings as clean.",
+        "gloss": "clean",
+        "language": "he",
+        "lemma": "טָהוֹר",
+        "morphology": "Definite article הַ־ + attributive adjective, masculine singular absolute.",
+        "qualifier": "",
+        "root": "טהר",
+        "sense": "clean (of animals and birds)"
+      },
+      "position": 10,
+      "surface": "הַטָּהֹר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "alah"
+        },
+        "evidence": "Noah is the subject of וַיַּעַל. Its direct object עֹלֹת means ‘burnt offerings’, and בַּמִּזְבֵּחַ specifies where he offered them, ‘on the altar’.",
+        "gloss": "and he offered",
+        "language": "he",
+        "lemma": "עָלָה",
+        "morphology": "Hiphil wayyiqtol, third person masculine singular, with prefixed וַ and no suffix",
+        "qualifier": "",
+        "root": "עלה",
+        "sense": "offer a sacrifice"
+      },
+      "position": 11,
+      "surface": "וַיַּעַל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "alah"
+        },
+        "evidence": "עֹלֹת is the direct object of וַיַּעַל. Noah takes clean animals and birds and offers them on the altar (בַּמִּזְבֵּחַ).",
+        "gloss": "burnt offerings",
+        "language": "he",
+        "lemma": "עֹלָה",
+        "morphology": "Common noun, feminine plural absolute",
+        "qualifier": "",
+        "root": "עלה",
+        "sense": "burnt offering"
+      },
+      "position": 12,
+      "surface": "עֹלֹת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "zebach"
+        },
+        "evidence": "The definite article refers back to the altar Noah built for Yahweh earlier in the verse. In וַיַּעַל עֹלֹת בַּמִּזְבֵּחַ, the preposition marks where he offered the burnt offerings.",
+        "gloss": "on the altar",
+        "language": "he",
+        "lemma": "מִזְבֵּחַ",
+        "morphology": "Preposition בְּ with the definite article, prefixed to a masculine singular absolute noun.",
+        "qualifier": "",
+        "root": "זבח",
+        "sense": "altar (for sacrifice)"
+      },
+      "position": 13,
+      "surface": "בַּמִּזְבֵּחַ"
+    }
+  ]
+}

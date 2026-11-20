@@ -1,0 +1,183 @@
+{
+  "book": 1,
+  "chapter": 8,
+  "review": {
+    "entities": [],
+    "glosses": [
+      {
+        "gloss": "then in the month",
+        "position": 0
+      },
+      {
+        "gloss": "the second",
+        "position": 1
+      },
+      {
+        "gloss": "on the seventh",
+        "position": 2
+      },
+      {
+        "gloss": "and twenty",
+        "position": 3
+      },
+      {
+        "gloss": "day",
+        "position": 4
+      },
+      {
+        "gloss": "of the month",
+        "position": 5
+      },
+      {
+        "gloss": "was dry",
+        "position": 6
+      },
+      {
+        "gloss": "the earth",
+        "position": 7
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[Then in|0] [the second|1] [month|0], [on the|2] [twenty|3]-[seventh|2] [day|4] [of the month|5], [the earth|7] [was dry|6]."
+  },
+  "source": "ot",
+  "verse": 14,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chadash"
+        },
+        "evidence": "הַשֵּׁנִי modifies חֹדֶשׁ to give “the second month.” The verse then specifies the twenty-seventh day of that month, confirming the calendar sense.",
+        "gloss": "and in the month",
+        "language": "he",
+        "lemma": "חֹדֶשׁ",
+        "morphology": "Conjunction וּ־ + preposition בְּ־ with the definite article (בַ־) + masculine singular absolute noun.",
+        "qualifier": "",
+        "root": "חדש",
+        "sense": "month"
+      },
+      "position": 0,
+      "surface": "וּבַחֹדֶשׁ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shanah"
+        },
+        "evidence": "In וּבַחֹדֶשׁ הַשֵּׁנִי, the adjective agrees with חֹדֶשׁ in gender, number, and definiteness. It identifies the second month, whose twenty-seventh day the verse then specifies.",
+        "gloss": "the second",
+        "language": "he",
+        "lemma": "שֵׁנִי",
+        "morphology": "Definite article הַ־ prefixed to a masculine singular absolute ordinal adjective.",
+        "qualifier": "",
+        "root": "שנה",
+        "sense": "second (in order)"
+      },
+      "position": 1,
+      "surface": "הַשֵּׁנִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shaba"
+        },
+        "evidence": "שִׁבְעָה combines with וְעֶשְׂרִים ‘and twenty’ to count יוֹם ‘day’. The masculine form agrees with יוֹם, and the prefixed בְּ־ marks the date on which the earth dried, the twenty-seventh day of the second month.",
+        "gloss": "seven",
+        "language": "he",
+        "lemma": "שֶׁבַע",
+        "morphology": "Preposition בְּ־ ‘on’ prefixed to שִׁבְעָה, a masculine singular cardinal numeral in the absolute state.",
+        "qualifier": "",
+        "root": "שבע",
+        "sense": "seven"
+      },
+      "position": 2,
+      "surface": "בְּשִׁבְעָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "asar"
+        },
+        "evidence": "In בְּשִׁבְעָה וְעֶשְׂרִים יוֹם לַחֹדֶשׁ, וְ joins seven and twenty to give the date, the twenty-seventh day of the month.",
+        "gloss": "and twenty",
+        "language": "he",
+        "lemma": "עֶשְׂרִים",
+        "morphology": "Conjunction וְ prefixed to a cardinal numeral, common gender, plural absolute.",
+        "qualifier": "",
+        "root": "עשׂר",
+        "sense": "twenty"
+      },
+      "position": 3,
+      "surface": "וְעֶשְׂרִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yom"
+        },
+        "evidence": "In בְּשִׁבְעָה וְעֶשְׂרִים יוֹם לַחֹדֶשׁ, the numeral twenty-seven counts days. The phrase dates the drying of the earth to the twenty-seventh day of the second month.",
+        "gloss": "day",
+        "language": "he",
+        "lemma": "יוֹם",
+        "morphology": "Common noun, masculine singular absolute, without prefix or suffix.",
+        "qualifier": "",
+        "root": "יומ",
+        "sense": "a day, counted"
+      },
+      "position": 4,
+      "surface": "יוֹם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chadash"
+        },
+        "evidence": "The verse identifies the second month. In בְּשִׁבְעָה וְעֶשְׂרִים יוֹם לַחֹדֶשׁ, the marked word relates the twenty-seventh day to that month.",
+        "gloss": "of the month",
+        "language": "he",
+        "lemma": "חֹדֶשׁ",
+        "morphology": "Masculine singular absolute noun with prefixed preposition לְ and definite article הַ, combined as לַ.",
+        "qualifier": "",
+        "root": "חדש",
+        "sense": "month"
+      },
+      "position": 5,
+      "surface": "לַחֹדֶשׁ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yabesh"
+        },
+        "evidence": "יָבְשָׁה agrees with its feminine singular subject הָאָרֶץ, “the earth.” The opening date tells when the earth had dried out.",
+        "gloss": "had dried out",
+        "language": "he",
+        "lemma": "יָבֵשׁ",
+        "morphology": "Qal perfect, third person feminine singular",
+        "qualifier": "verb",
+        "root": "יבש",
+        "sense": "become dry"
+      },
+      "position": 6,
+      "surface": "יָבְשָׁה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "erets"
+        },
+        "evidence": "In יָבְשָׁה הָאָרֶץ, “the ground had dried,” הָאָרֶץ is the subject of the feminine singular verb יָבְשָׁה. The verse dates the drying of the ground after the flood.",
+        "gloss": "the ground",
+        "language": "he",
+        "lemma": "אֶרֶץ",
+        "morphology": "Definite article הָ־ + common noun, singular absolute. The noun takes feminine agreement here.",
+        "qualifier": "",
+        "root": "ארצ",
+        "sense": "ground, surface"
+      },
+      "position": 7,
+      "surface": "הָאָרֶץ"
+    }
+  ]
+}

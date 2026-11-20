@@ -1,0 +1,226 @@
+{
+  "book": 1,
+  "chapter": 4,
+  "review": {
+    "entities": [
+      {
+        "evidence": "The man who brings produce from the ground is Cain, the son of Adam and Eve named in Genesis 4:1 and identified as a tiller of the ground in Genesis 4:2.",
+        "key": "Cain@Gen.4.1",
+        "position": 4
+      },
+      {
+        "evidence": "The preposition לַ־ marks Yahweh as the recipient of Cain’s offering. This is the same divine bearer named in Genesis 2:22 and invoked by Eve at Cain’s birth in Genesis 4:1.",
+        "key": "Yahweh@Gen.2.22",
+        "new": {
+          "description": "The God of Israel, who built the rib taken from the man into a woman and brought her to the man.",
+          "kind": "person",
+          "name": "Yahweh"
+        },
+        "position": 8
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "and it happened",
+        "position": 0
+      },
+      {
+        "gloss": "in the course of",
+        "position": 1
+      },
+      {
+        "gloss": "days",
+        "position": 2
+      },
+      {
+        "gloss": "and he brought",
+        "position": 3
+      },
+      {
+        "gloss": "Cain",
+        "position": 4
+      },
+      {
+        "gloss": "some of the produce of",
+        "position": 5
+      },
+      {
+        "gloss": "the ground",
+        "position": 6
+      },
+      {
+        "gloss": "an offering",
+        "position": 7
+      },
+      {
+        "gloss": "to Yahweh",
+        "position": 8
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[And it happened|0] [in the course of|1] [days|2] [that|3] [Cain|4] [brought|3] [some of the produce of|5] [the ground|6] {as} [an offering|7] [to Yahweh|8]."
+  },
+  "source": "ot",
+  "verse": 3,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "hayah"
+        },
+        "evidence": "וַיְהִי introduces the event. מִקֵּץ יָמִים gives its time, and וַיָּבֵא קַיִן states what happened: Cain brought an offering.",
+        "gloss": "and it came to pass",
+        "language": "he",
+        "lemma": "הָיָה",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ־",
+        "qualifier": "",
+        "root": "היה",
+        "sense": "to come to pass"
+      },
+      "position": 0,
+      "surface": "וַיְהִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "qatsats"
+        },
+        "evidence": "מִקֵּץ יָמִים means ‘after some time’, literally ‘at the end of days’. The phrase places Cain’s offering at the end of an unspecified period.",
+        "gloss": "at the end of",
+        "language": "he",
+        "lemma": "קֵץ",
+        "morphology": "Masculine singular noun in construct with יָמִים, prefixed by the preposition מִן. Its נ assimilates to ק, producing the dagesh in מִקֵּץ.",
+        "qualifier": "",
+        "root": "קצצ",
+        "sense": "end, appointed limit"
+      },
+      "position": 1,
+      "surface": "מִקֵּץ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yom"
+        },
+        "evidence": "In מִקֵּץ יָמִים, ‘after some days,’ יָמִים gives the units of time that elapsed before Cain brought his offering. The verse leaves the number of days unspecified.",
+        "gloss": "days",
+        "language": "he",
+        "lemma": "יוֹם",
+        "morphology": "Common noun, masculine plural absolute.",
+        "qualifier": "",
+        "root": "יומ",
+        "sense": "a day, counted"
+      },
+      "position": 2,
+      "surface": "יָמִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "bo"
+        },
+        "evidence": "קַיִן is the subject. Cain brought מִנְחָה, an offering, from the produce of the ground (מִפְּרִי הָאֲדָמָה). לַיַהְוֶה identifies the recipient.",
+        "gloss": "and he brought",
+        "language": "he",
+        "lemma": "בּוֹא",
+        "morphology": "Hiphil wayyiqtol, third person masculine singular, with prefixed וַ־",
+        "qualifier": "",
+        "root": "בוא",
+        "sense": "bring someone or something to a destination"
+      },
+      "position": 3,
+      "surface": "וַיָּבֵא"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "cain",
+            "base": null,
+            "change": "Add a personal-name article for Cain under קינ. The proposed link requires a new root article with the id qayin.",
+            "definition": "Cain, the son born to Adam and Eve in Genesis 4:1.",
+            "evidence": "Genesis 4:1 identifies the child by name in וַתֵּלֶד אֶת קַיִן and immediately gives Eve's words קָנִיתִי אִישׁ."
+          }
+        },
+        "evidence": "In וַיָּבֵא קַיִן, Cain is the subject of “brought.” The rest of the verse identifies what he brought to YHWH, an offering from the produce of the ground.",
+        "gloss": "Cain",
+        "language": "he",
+        "lemma": "קַיִן",
+        "morphology": "Masculine singular proper noun without prefix or suffix.",
+        "qualifier": "",
+        "root": "קינ",
+        "sense": "The personal name of the son Eve bears to Adam in Genesis 4:1."
+      },
+      "position": 4,
+      "surface": "קַיִן"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "parah"
+        },
+        "evidence": "In מִפְּרִי הָאֲדָמָה, the construct noun is qualified by הָאֲדָמָה, “the ground.” Cain brought some of what the ground yielded as a מִנְחָה, “offering.”",
+        "gloss": "some of the produce",
+        "language": "he",
+        "lemma": "פְּרִי",
+        "morphology": "Masculine singular construct noun with prefixed partitive מִן, whose נ assimilates to פ.",
+        "qualifier": "",
+        "root": "פרה",
+        "sense": "produce, crops (of the ground)"
+      },
+      "position": 5,
+      "surface": "מִפְּרִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "adam"
+        },
+        "evidence": "In מִפְּרִי הָאֲדָמָה, “from the produce of the ground,” הָאֲדָמָה identifies the soil that yielded Cain’s offering.",
+        "gloss": "the ground",
+        "language": "he",
+        "lemma": "אֲדָמָה",
+        "morphology": "Feminine singular absolute common noun with the prefixed definite article הָ.",
+        "qualifier": "",
+        "root": "אדמ",
+        "sense": "the ground that is tilled; soil"
+      },
+      "position": 6,
+      "surface": "הָאֲדָמָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "minchah"
+        },
+        "evidence": "מִנְחָה names what Cain brought. מִפְּרִי הָאֲדָמָה identifies its contents as some of the ground’s produce, and לַיַהְוֶה identifies YHWH as the recipient. The produce is unspecified, so the broader sense ‘offering’ fits.",
+        "gloss": "offering",
+        "language": "he",
+        "lemma": "מִנְחָה",
+        "morphology": "Common noun, feminine singular absolute.",
+        "qualifier": "",
+        "root": "מנח",
+        "sense": "offering (to God)"
+      },
+      "position": 7,
+      "surface": "מִנְחָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yahweh"
+        },
+        "evidence": "Cain brought מִנְחָה, an offering. The prefixed לַ־ marks Yahweh as its recipient.",
+        "gloss": "to Yahweh",
+        "language": "he",
+        "lemma": "יַהְוֶה",
+        "morphology": "Preposition לַ־ prefixed to the divine proper name יַהְוֶה.",
+        "qualifier": "",
+        "root": "הוה",
+        "sense": "Personal name of the God of Israel"
+      },
+      "position": 8,
+      "surface": "לַיַהְוֶה"
+    }
+  ]
+}

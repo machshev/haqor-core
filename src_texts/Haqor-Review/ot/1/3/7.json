@@ -1,0 +1,230 @@
+{
+  "book": 1,
+  "chapter": 3,
+  "source": "ot",
+  "verse": 7,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "paqach",
+            "base": null,
+            "change": "Add the Hebrew verb פָּקַח under פקח with its Niphal sense attested in Genesis 3:5.",
+            "definition": "In the Niphal, eyes are opened, enabling a person to perceive what was previously unrecognized.",
+            "evidence": "In Genesis 3:5 the serpent links the opening of the hearers’ eyes with knowing good and evil."
+          }
+        },
+        "evidence": "The feminine plural verb agrees with עֵינֵי שְׁנֵיהֶם, “the eyes of both of them.” The next clause identifies what they recognized when their eyes were opened: they knew they were naked.",
+        "gloss": "and were opened",
+        "language": "he",
+        "lemma": "פָּקַח",
+        "morphology": "Niphal wayyiqtol, third-person feminine plural, with prefixed וַ־.",
+        "qualifier": "",
+        "root": "פקח",
+        "sense": "For eyes to be opened so that a person perceives something previously unrecognized."
+      },
+      "position": 0,
+      "surface": "וַתִּפָּקַחְנָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ayin"
+        },
+        "evidence": "עֵינֵי שְׁנֵיהֶם means “the eyes of both of them.” The next clause, וַיֵּדְעוּ כִּי עֵירֻמִּם הֵם (“and they knew that they were naked”), identifies the awareness they gained when their eyes opened.",
+        "gloss": "eyes of",
+        "language": "he",
+        "lemma": "עַיִן",
+        "morphology": "Common noun, dual construct, without prefix or suffix.",
+        "qualifier": "",
+        "root": "עינ",
+        "sense": "eyes to see: perception, understanding"
+      },
+      "position": 1,
+      "surface": "עֵינֵי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shanah"
+        },
+        "evidence": "עֵינֵי שְׁנֵיהֶם means “the eyes of both of them.” The suffix ־הֶם refers to the man and the woman, who are also the subject of וַיֵּדְעוּ (“they knew”).",
+        "gloss": "both of them",
+        "language": "he",
+        "lemma": "שְׁנַיִם",
+        "morphology": "Masculine dual cardinal numeral in the construct state with a third-person masculine plural pronominal suffix.",
+        "qualifier": "",
+        "root": "שנה",
+        "sense": "both, the two of them"
+      },
+      "position": 2,
+      "surface": "שְׁנֵיהֶם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yada"
+        },
+        "evidence": "After the eyes of both were opened, the כִּי clause states what they realized: עֵירֻמִּם הֵם, “they were naked.”",
+        "gloss": "and they realized",
+        "language": "he",
+        "lemma": "יָדַע",
+        "morphology": "Qal wayyiqtol, third person masculine plural, with prefixed וַ.",
+        "qualifier": "",
+        "root": "ידע",
+        "sense": "to know that something is the case"
+      },
+      "position": 3,
+      "surface": "וַיֵּדְעוּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ki"
+        },
+        "evidence": "After וַיֵּדְעוּ (“they knew”), כִּי introduces עֵירֻמִּם הֵם (“they were naked”), the clause stating what the two knew.",
+        "gloss": "that",
+        "language": "he",
+        "lemma": "כִּי",
+        "morphology": "Uninflected subordinating conjunction with no prefix or suffix.",
+        "qualifier": "conjunction",
+        "root": "כי",
+        "sense": "that (what is seen, known or said)"
+      },
+      "position": 4,
+      "surface": "כִּי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ur"
+        },
+        "evidence": "The initial עֵי־ in עֵירֻמִּם identifies the plural of עֵירֹם. In כִּי עֵירֻמִּם הֵם, the two realize that they are naked, then sew fig leaves together to make coverings for themselves.",
+        "gloss": "naked",
+        "language": "he",
+        "lemma": "עֵירֹם",
+        "morphology": "Adjective, masculine plural absolute, used predicatively with הֵם.",
+        "qualifier": "",
+        "root": "עור",
+        "sense": "unclothed"
+      },
+      "position": 5,
+      "surface": "עֵירֻמִּם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "hu"
+        },
+        "evidence": "In כִּי עֵירֻמִּם הֵם (‘that they were naked’), הֵם is the subject and עֵירֻמִּם is the predicate. The pronoun refers to the two people just mentioned in שְׁנֵיהֶם (‘both of them’).",
+        "gloss": "they",
+        "language": "he",
+        "lemma": "הֵם",
+        "morphology": "Independent personal pronoun, third person masculine plural.",
+        "qualifier": "",
+        "root": "הוא",
+        "sense": "they"
+      },
+      "position": 6,
+      "surface": "הֵם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "taphar",
+            "base": null,
+            "change": "Add the Hebrew Qal verb תָּפַר with the sense “sew together.”",
+            "definition": "To join material by stitching.",
+            "evidence": "In Genesis 3:7 the two sew fig leaves together to make waist coverings."
+          }
+        },
+        "evidence": "The verb takes עֲלֵה תְאֵנָה, “fig leaves,” as its direct object. The next clause gives the result: the two made waist coverings for themselves. The leaves are the material they stitched together.",
+        "gloss": "and they sewed together",
+        "language": "he",
+        "lemma": "תָּפַר",
+        "morphology": "Qal wayyiqtol, third masculine plural, with prefixed וַ־ and plural ending ־וּ.",
+        "qualifier": "",
+        "root": "תפר",
+        "sense": "to join material by stitching"
+      },
+      "position": 7,
+      "surface": "וַיִּתְפְּרוּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "alah"
+        },
+        "evidence": "In עֲלֵה תְאֵנָה, the construct noun names the leaves and תְאֵנָה identifies the fig tree. The pair sew the fig leaves together to make coverings for themselves.",
+        "gloss": "leaves",
+        "language": "he",
+        "lemma": "עָלֶה",
+        "morphology": "Masculine singular construct noun, used collectively.",
+        "qualifier": "",
+        "root": "עלה",
+        "sense": "leaf, foliage"
+      },
+      "position": 8,
+      "surface": "עֲלֵה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "teenah",
+            "base": null,
+            "change": "Add תְּאֵנָה under its own consonants, תאנה, with distinct senses for the tree and its fruit.",
+            "definition": "The fig tree, or the fig it bears. In Genesis 3:7 the noun denotes the tree.",
+            "evidence": "Genesis 3:7 identifies the tree by its leaves. Proverbs 27:18 speaks of tending a תְּאֵנָה and eating its fruit. Jeremiah 24:2 uses the plural for the figs in two baskets."
+          }
+        },
+        "evidence": "In עֲלֵה תְאֵנָה, “leaves of a fig tree,” עֲלֵה is the plural construct of עָלֶה. תְאֵנָה names the tree whose leaves the couple sewed together.",
+        "gloss": "fig tree",
+        "language": "he",
+        "lemma": "תְּאֵנָה",
+        "morphology": "Common noun, feminine singular absolute, without prefix or suffix.",
+        "qualifier": "",
+        "root": "תאנה",
+        "sense": "fig tree"
+      },
+      "position": 9,
+      "surface": "תְאֵנָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "asah"
+        },
+        "evidence": "חֲגֹרֹת names what they made, waist coverings, and לָהֶם means “for themselves.” The preceding clause describes how they made the coverings by sewing fig leaves together.",
+        "gloss": "and they made",
+        "language": "he",
+        "lemma": "עָשָׂה",
+        "morphology": "Qal wayyiqtol, third masculine plural, with prefixed וַ.",
+        "qualifier": "",
+        "root": "עשׂה",
+        "sense": "make, bring into being"
+      },
+      "position": 10,
+      "surface": "וַיַּעֲשׂוּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chagar"
+        },
+        "evidence": "After the two realize they are naked, they sew fig leaves together. In וַיַּעֲשׂוּ לָהֶם חֲגֹרֹת, the plural noun names the waist coverings they made for themselves.",
+        "gloss": "loincloths",
+        "language": "he",
+        "lemma": "חֲגוֹרָה",
+        "morphology": "Common noun, feminine plural absolute, without prefix or suffix",
+        "qualifier": "",
+        "root": "חגר",
+        "sense": "girdle"
+      },
+      "position": 12,
+      "surface": "חֲגֹרֹת"
+    }
+  ]
+}

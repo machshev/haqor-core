@@ -1,0 +1,236 @@
+{
+  "book": 1,
+  "chapter": 6,
+  "review": {
+    "entities": [
+      {
+        "evidence": "יַהְוֶה explicitly names the God who made humankind. The source tag LORD@Gen.1.1 identifies the same bearer as the existing Yahweh proposal.",
+        "key": "Yahweh@Gen.2.22",
+        "new": {
+          "description": "The God of Israel, who built the rib taken from the man into a woman and brought her to the man.",
+          "kind": "person",
+          "name": "Yahweh"
+        },
+        "position": 1
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "so he regretted",
+        "position": 0
+      },
+      {
+        "gloss": "Yahweh",
+        "position": 1
+      },
+      {
+        "gloss": "that",
+        "position": 2
+      },
+      {
+        "gloss": "he had made",
+        "position": 3
+      },
+      {
+        "gloss": "(untranslated)",
+        "position": 4
+      },
+      {
+        "gloss": "humankind",
+        "position": 5
+      },
+      {
+        "gloss": "on the earth",
+        "position": 6
+      },
+      {
+        "gloss": "and he grieved",
+        "position": 7
+      },
+      {
+        "gloss": "in",
+        "position": 8
+      },
+      {
+        "gloss": "his heart",
+        "position": 9
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[So|0] [Yahweh|1] [regretted|0] [that|2] [he had made|3] [humankind|5,4] [on the earth|6], [and he grieved|7] [in|8] [his heart|9]."
+  },
+  "source": "ot",
+  "verse": 6,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "nacham"
+        },
+        "evidence": "Yahweh is the subject. The כִּי clause identifies what he regretted: he had made humankind on earth. The following words וַיִּתְעַצֵּב אֶל לִבּוֹ describe the grief he felt in his heart.",
+        "gloss": "and he regretted",
+        "language": "he",
+        "lemma": "נָחַם",
+        "morphology": "Niphal wayyiqtol, third person masculine singular, with prefixed וַ.",
+        "qualifier": "",
+        "root": "נחמ",
+        "sense": "to regret a past action"
+      },
+      "position": 0,
+      "surface": "וַיִּנָּחֶם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yahweh"
+        },
+        "evidence": "יַהְוֶה names the subject of וַיִּנָּחֶם, “regretted.” The כִּי clause gives the reason for his regret: he had made humankind on the earth.",
+        "gloss": "Yahweh",
+        "language": "he",
+        "lemma": "יַהְוֶה",
+        "morphology": "Proper noun, masculine singular, without prefix or suffix",
+        "qualifier": "",
+        "root": "הוה",
+        "sense": "Personal name of the God of Israel"
+      },
+      "position": 1,
+      "surface": "יַהְוֶה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ki"
+        },
+        "evidence": "The clause כִּי עָשָׂה אֶת הָאָדָם בָּאָרֶץ gives the content of Yahweh’s regret in וַיִּנָּחֶם יַהְוֶה: he regretted that he had made humankind on the earth.",
+        "gloss": "that",
+        "language": "he",
+        "lemma": "כִּי",
+        "morphology": "Uninflected conjunction with no prefix or suffix.",
+        "qualifier": "conjunction",
+        "root": "כי",
+        "sense": "that (what is seen, known or said)"
+      },
+      "position": 2,
+      "surface": "כִּי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "asah"
+        },
+        "evidence": "יַהְוֶה is the subject, and אֶת marks הָאָדָם as the direct object. The כִּי clause states what YHWH regretted: he had made humankind on the earth.",
+        "gloss": "had made",
+        "language": "he",
+        "lemma": "עָשָׂה",
+        "morphology": "Qal perfect, third person masculine singular, with no prefix or suffix",
+        "qualifier": "",
+        "root": "עשׂה",
+        "sense": "make, bring into being"
+      },
+      "position": 3,
+      "surface": "עָשָׂה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "et"
+        },
+        "evidence": "In כִּי עָשָׂה אֶת הָאָדָם בָּאָרֶץ, אֶת marks הָאָדָם ‘humankind’ as the definite direct object of עָשָׂה ‘made’.",
+        "gloss": "(untranslated)",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Direct-object particle without prefix or suffix",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "(marks the definite object)"
+      },
+      "position": 4,
+      "surface": "אֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "adam"
+        },
+        "evidence": "In עָשָׂה אֶת הָאָדָם בָּאָרֶץ, אֶת marks הָאָדָם as the object of עָשָׂה. YHWH regrets having made humankind on earth. The singular noun with the article refers to humanity collectively.",
+        "gloss": "humankind",
+        "language": "he",
+        "lemma": "אָדָם",
+        "morphology": "Masculine singular absolute common noun with the prefixed definite article הָ־, used collectively.",
+        "qualifier": "noun",
+        "root": "אדמ",
+        "sense": "man, mankind"
+      },
+      "position": 5,
+      "surface": "הָאָדָם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "erets"
+        },
+        "evidence": "In עָשָׂה אֶת הָאָדָם בָּאָרֶץ, הָאָדָם is the object of עָשָׂה, and בָּאָרֶץ identifies where יהוה made humankind. The earth is the setting of human life.",
+        "gloss": "on the earth",
+        "language": "he",
+        "lemma": "אֶרֶץ",
+        "morphology": "Common noun, singular absolute, with locative בְּ and the definite article fused as בָּ.",
+        "qualifier": "",
+        "root": "ארצ",
+        "sense": "earth"
+      },
+      "position": 6,
+      "surface": "בָּאָרֶץ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "atsevet"
+        },
+        "evidence": "The subject is יהוה, whose regret at having made humankind is expressed by וַיִּנָּחֶם. The phrase אֶל־לִבּוֹ places the grief in his own heart, supporting the Hitpael sense of experiencing grief.",
+        "gloss": "and he grieved",
+        "language": "he",
+        "lemma": "עָצַב",
+        "morphology": "Hitpael wayyiqtol, third person masculine singular, with prefixed וַ־ and no suffix.",
+        "qualifier": "hurt, grieve",
+        "root": "עצב",
+        "sense": "feel grief"
+      },
+      "position": 7,
+      "surface": "וַיִּתְעַצֵּב"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "In וַיִּתְעַצֵּב אֶל לִבּוֹ, “he grieved in his heart,” אֶל introduces לִבּוֹ as the inner location of the grief.",
+        "gloss": "in",
+        "language": "he",
+        "lemma": "אֶל",
+        "morphology": "Preposition without prefix or suffix.",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "at, by"
+      },
+      "position": 8,
+      "surface": "אֶל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "lev"
+        },
+        "evidence": "In וַיִּתְעַצֵּב אֶל לִבּוֹ, the suffix refers to Yahweh, and וַיִּתְעַצֵּב identifies grief as what he felt in his heart.",
+        "gloss": "his heart",
+        "language": "he",
+        "lemma": "לֵב",
+        "morphology": "Masculine singular noun in construct with a third-person masculine singular possessive suffix.",
+        "qualifier": "",
+        "root": "לבב",
+        "sense": "feeling: joy and grief, desire and anger"
+      },
+      "position": 9,
+      "surface": "לִבּוֹ"
+    }
+  ]
+}

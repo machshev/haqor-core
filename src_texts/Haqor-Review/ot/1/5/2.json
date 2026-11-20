@@ -1,0 +1,190 @@
+{
+  "book": 1,
+  "chapter": 5,
+  "source": "ot",
+  "verse": 2,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "zakar"
+        },
+        "evidence": "זָכָר is paired with נְקֵבָה ‘female’ in זָכָר וּנְקֵבָה בְּרָאָם ‘male and female he created them’. The pair identifies the sexes of those created.",
+        "gloss": "male",
+        "language": "he",
+        "lemma": "זָכָר",
+        "morphology": "Masculine singular absolute, used substantivally, with no prefix or suffix.",
+        "qualifier": "noun",
+        "root": "זכר",
+        "sense": "male"
+      },
+      "position": 0,
+      "surface": "זָכָר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "naqav",
+            "base": null,
+            "change": "Add נְקֵבָה under נקב with its sense “female.”",
+            "definition": "A female, the counterpart to a male.",
+            "evidence": "Genesis 1:27 describes the humanity God created as זָכָר וּנְקֵבָה, “male and female.”"
+          }
+        },
+        "evidence": "זָכָר וּנְקֵבָה בְּרָאָם means “male and female he created them.” נְקֵבָה is paired with זָכָר “male,” and the verse calls them both אָדָם “humankind.”",
+        "gloss": "and female",
+        "language": "he",
+        "lemma": "נְקֵבָה",
+        "morphology": "Conjunction וּ ‘and’ prefixed to a feminine singular absolute common noun.",
+        "qualifier": "",
+        "root": "נקב",
+        "sense": "A female, here a female human."
+      },
+      "position": 1,
+      "surface": "וּנְקֵבָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "bara"
+        },
+        "evidence": "זָכָר וּנְקֵבָה (“male and female”) identifies whom God created. The suffix ־ם refers to both, as does אֹתָם (“them”) in the following clause, “and he blessed them.”",
+        "gloss": "he created them",
+        "language": "he",
+        "lemma": "בָּרָא",
+        "morphology": "Qal perfect, third person masculine singular, with a third person masculine plural direct-object suffix.",
+        "qualifier": "",
+        "root": "ברא",
+        "sense": "create"
+      },
+      "position": 2,
+      "surface": "בְּרָאָם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "barak"
+        },
+        "evidence": "The subject is God, and אֹתָם (“them”) refers to the male and female he created. Genesis 5:2 recalls Genesis 1:27–28, where God blesses the human pair and tells them to be fruitful and multiply.",
+        "gloss": "and he blessed",
+        "language": "he",
+        "lemma": "בָּרַךְ",
+        "morphology": "Piel wayyiqtol, third person masculine singular, with prefixed וַ־ and no suffix",
+        "qualifier": "",
+        "root": "ברכ",
+        "sense": "to bless living creatures with fruitfulness"
+      },
+      "position": 3,
+      "surface": "וַיְבָרֶךְ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "et",
+            "base": "31c9a635be8bba9a67417e75ea7122e240ae707e04a841533a59ecd2869d0f80",
+            "change": "Add Genesis 5:2 to the evidence for the existing object-pronoun sense in et.",
+            "definition": "The suffixed direct-object marker expresses the person or people acted on.",
+            "evidence": "Genesis 5:2 expresses the same object first by a suffix on בְּרָאָם and then by the separate form אֹתָם after וַיְבָרֶךְ."
+          }
+        },
+        "evidence": "In וַיְבָרֶךְ אֹתָם, “and he blessed them,” the suffix refers back to זָכָר וּנְקֵבָה, “male and female.” The preceding בְּרָאָם, “he created them,” has the same plural object.",
+        "gloss": "them",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Direct-object marker in its suffixed form אֹת־ with the third-person masculine plural pronominal suffix ־ָם.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "Carries a pronominal suffix that supplies the verb’s direct object."
+      },
+      "position": 4,
+      "surface": "אֹתָם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "qara"
+        },
+        "evidence": "אֶת marks שְׁמָם (“their name”) as the direct object, and אָדָם gives the name God assigned to the male and female together.",
+        "gloss": "and he named",
+        "language": "he",
+        "lemma": "קָרָא",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ",
+        "qualifier": "call",
+        "root": "קרא",
+        "sense": "give a name to"
+      },
+      "position": 5,
+      "surface": "וַיִּקְרָא"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "et"
+        },
+        "evidence": "In וַיִּקְרָא אֶת שְׁמָם אָדָם, “he called their name Adam,” אֶת marks שְׁמָם (“their name”) as the direct object of וַיִּקְרָא. The possessive suffix makes שְׁמָם definite, and אָדָם gives the name assigned.",
+        "gloss": "direct-object marker (untranslated)",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Unsuffixed definite direct-object marker.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "(marks the definite object)"
+      },
+      "position": 6,
+      "surface": "אֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "adam"
+        },
+        "evidence": "The plural suffix in שְׁמָם (“their name”) refers to the male and female whom God created and blessed. אָדָם is the shared designation he gives them.",
+        "gloss": "humankind",
+        "language": "he",
+        "lemma": "אָדָם",
+        "morphology": "Masculine singular absolute common noun, used collectively.",
+        "qualifier": "noun",
+        "root": "אדמ",
+        "sense": "man, mankind"
+      },
+      "position": 8,
+      "surface": "אָדָם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yom"
+        },
+        "evidence": "בְּיוֹם is followed by הִבָּרְאָם, a Niphal infinitive construct meaning “their being created.” Together they specify when God named them אָדָם, “on the day they were created.”",
+        "gloss": "on the day that",
+        "language": "he",
+        "lemma": "יוֹם",
+        "morphology": "Prefixed preposition בְּ + masculine singular construct noun יוֹם",
+        "qualifier": "",
+        "root": "יומ",
+        "sense": "the time when; on the day that"
+      },
+      "position": 9,
+      "surface": "בְּיוֹם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "bara"
+        },
+        "evidence": "The suffix refers to the male and female. The opening בְּרָאָם means “he created them,” and בְּיוֹם הִבָּרְאָם describes the same event in the passive, “on the day they were created.”",
+        "gloss": "they were created",
+        "language": "he",
+        "lemma": "בָּרָא",
+        "morphology": "Niphal infinitive construct with the third-person masculine plural suffix ־ָם as its subject.",
+        "qualifier": "",
+        "root": "ברא",
+        "sense": "create"
+      },
+      "position": 10,
+      "surface": "הִבָּרְאָם"
+    }
+  ]
+}

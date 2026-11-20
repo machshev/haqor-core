@@ -1,0 +1,204 @@
+{
+  "book": 1,
+  "chapter": 8,
+  "review": {
+    "entities": [],
+    "glosses": [
+      {
+        "gloss": "and were shut",
+        "position": 0
+      },
+      {
+        "gloss": "the springs of",
+        "position": 1
+      },
+      {
+        "gloss": "the deep",
+        "position": 2
+      },
+      {
+        "gloss": "and the floodgates of",
+        "position": 3
+      },
+      {
+        "gloss": "the heavens",
+        "position": 4
+      },
+      {
+        "gloss": "and was held back",
+        "position": 5
+      },
+      {
+        "gloss": "the rain",
+        "position": 6
+      },
+      {
+        "gloss": "from",
+        "position": 7
+      },
+      {
+        "gloss": "the heavens",
+        "position": 8
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[And|0] [the springs of|1] [the deep|2] [and the floodgates of|3] [the heavens|4] [were shut|0], [and|5] [the rain|6] [from|7] [the heavens|8] [was held back|5]."
+  },
+  "source": "ot",
+  "verse": 2,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "sakar-close"
+        },
+        "evidence": "The plural verb has two subjects, מַעְיְנֹת תְּהוֹם (the springs of the deep) and אֲרֻבֹּת הַשָּׁמָיִם (the windows of the heavens). Both are openings through which the floodwaters came. The following clause says that the rain from the heavens was restrained, reinforcing the passive reading “were shut.”",
+        "gloss": "and were shut",
+        "language": "he",
+        "lemma": "סָכַר",
+        "morphology": "Niphal wayyiqtol, third masculine plural, with prefixed וַ־.",
+        "qualifier": "",
+        "root": "סכר",
+        "sense": "to be closed so that water can no longer flow through"
+      },
+      "position": 0,
+      "surface": "וַיִּסָּכְרוּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ayin"
+        },
+        "evidence": "מַעְיְנֹת תְּהוֹם means “the springs of the deep.” The springs are shut along with the floodgates of heaven as the rain ceases.",
+        "gloss": "springs of",
+        "language": "he",
+        "lemma": "מַעְיָן",
+        "morphology": "Common noun, masculine plural construct",
+        "qualifier": "",
+        "root": "עינ",
+        "sense": "spring, fountain of water"
+      },
+      "position": 1,
+      "surface": "מַעְיְנֹת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "tehom"
+        },
+        "evidence": "In מַעְיְנֹת תְּהוֹם, “the springs of the deep,” תְּהוֹם names the waters that feed the springs. The verse pairs the closing of these springs below with the closing of the openings in the heavens above.",
+        "gloss": "the subterranean deep",
+        "language": "he",
+        "lemma": "תְּהוֹם",
+        "morphology": "Common noun, common gender, singular absolute, without prefix or suffix.",
+        "qualifier": "",
+        "root": "תהמ",
+        "sense": "waters below ground"
+      },
+      "position": 2,
+      "surface": "תְּהוֹם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "arav-ambush"
+        },
+        "evidence": "אֲרֻבֹּת forms a construct phrase with הַשָּׁמָיִם, ‘the floodgates of the heavens’. These openings and the springs of the deep are the subjects of וַיִּסָּכְרוּ, ‘were closed’, and the next clause says the rain from the heavens stopped.",
+        "gloss": "and the floodgates of",
+        "language": "he",
+        "lemma": "אֲרֻבָּה",
+        "morphology": "Conjunction וַ־ ‘and’ prefixed to a feminine plural construct noun.",
+        "qualifier": "",
+        "root": "ארב",
+        "sense": "window, opening"
+      },
+      "position": 3,
+      "surface": "וַאֲרֻבֹּת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shamayim"
+        },
+        "evidence": "In וַאֲרֻבֹּת הַשָּׁמָיִם, “and the floodgates of the sky,” הַשָּׁמָיִם completes the construct phrase. The following clause says that rain from the sky ceased, identifying the sky as the source of the rain.",
+        "gloss": "the sky",
+        "language": "he",
+        "lemma": "שָׁמַיִם",
+        "morphology": "Common noun, masculine plural absolute, with the prefixed definite article הַ־.",
+        "qualifier": "",
+        "root": "שמה",
+        "sense": "sky, the visible heavens"
+      },
+      "position": 4,
+      "surface": "הַשָּׁמָיִם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "kala-restrain"
+        },
+        "evidence": "The verb agrees with its masculine singular subject הַגֶּשֶׁם, “the rain.” In parallel with the closing of the springs and floodgates, מִן הַשָּׁמָיִם identifies the source from which the rain was withheld.",
+        "gloss": "and was held back",
+        "language": "he",
+        "lemma": "כָּלָא",
+        "morphology": "Niphal wayyiqtol, third-person masculine singular, with prefixed וַ־",
+        "qualifier": "",
+        "root": "כלא",
+        "sense": "be held back"
+      },
+      "position": 5,
+      "surface": "וַיִּכָּלֵא"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "geshem"
+        },
+        "evidence": "הַגֶּשֶׁם is the subject of וַיִּכָּלֵא ‘was held back’. The phrase מִן הַשָּׁמָיִם ‘from the heavens’ identifies the rain as the precipitation that stopped.",
+        "gloss": "the rain",
+        "language": "he",
+        "lemma": "גֶּשֶׁם",
+        "morphology": "Common noun, masculine singular absolute, with the prefixed definite article הַ.",
+        "qualifier": "noun",
+        "root": "גשמ",
+        "sense": "rain"
+      },
+      "position": 6,
+      "surface": "הַגֶּשֶׁם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "min"
+        },
+        "evidence": "In וַיִּכָּלֵא הַגֶּשֶׁם מִן הַשָּׁמָיִם, “the rain from the heavens was held back,” מִן marks the heavens as the source of the rain.",
+        "gloss": "from",
+        "language": "he",
+        "lemma": "מִן",
+        "morphology": "Independent preposition without prefix or suffix.",
+        "qualifier": "",
+        "root": "מנ",
+        "sense": "out of, made from; from (a source or giver)"
+      },
+      "position": 7,
+      "surface": "מִן"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shamayim"
+        },
+        "evidence": "In וַיִּכָּלֵא הַגֶּשֶׁם מִן הַשָּׁמָיִם, the rain is held back. The separate preposition מִן marks the sky as the source from which the rain had been falling.",
+        "gloss": "the sky",
+        "language": "he",
+        "lemma": "שָׁמַיִם",
+        "morphology": "Masculine plural noun in the absolute state with the prefixed definite article הַ־.",
+        "qualifier": "",
+        "root": "שמה",
+        "sense": "sky, the visible heavens"
+      },
+      "position": 8,
+      "surface": "הַשָּׁמָיִם"
+    }
+  ]
+}

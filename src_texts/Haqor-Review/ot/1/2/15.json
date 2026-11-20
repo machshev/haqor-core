@@ -1,0 +1,184 @@
+{
+  "book": 1,
+  "chapter": 2,
+  "source": "ot",
+  "verse": 15,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "laqach"
+        },
+        "evidence": "יַהְוֶה אֱלֹהִים is the subject of וַיִּקַּח, and אֶת marks הָאָדָם as its direct object. The next verb, וַיַּנִּחֵהוּ ‘and he placed him’, identifies the garden of Eden as the man's destination.",
+        "gloss": "and he took",
+        "language": "he",
+        "lemma": "לָקַח",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ and no suffix.",
+        "qualifier": "",
+        "root": "לקח",
+        "sense": "take a person for relocation"
+      },
+      "position": 0,
+      "surface": "וַיִּקַּח"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yahweh"
+        },
+        "evidence": "In וַיִּקַּח יַהְוֶה אֱלֹהִים אֶת הָאָדָם, יַהְוֶה names the one who takes the man. אֱלֹהִים stands in apposition to the name.",
+        "gloss": "Yahweh",
+        "language": "he",
+        "lemma": "יַהְוֶה",
+        "morphology": "Proper noun, singular, without prefix or suffix",
+        "qualifier": "",
+        "root": "הוה",
+        "sense": "Personal name of the God of Israel"
+      },
+      "position": 1,
+      "surface": "יַהְוֶה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "יַהְוֶה אֱלֹהִים is the subject of both וַיִּקַּח (“he took”) and וַיַּנִּחֵהוּ (“he placed him”). Both verbs are masculine singular, identifying one actor who takes the man and places him in the garden of Eden.",
+        "gloss": "God",
+        "language": "he",
+        "lemma": "אֱלֹהִים",
+        "morphology": "Common noun, masculine plural absolute, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "the Mighty One, God"
+      },
+      "position": 2,
+      "surface": "אֱלֹהִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "et"
+        },
+        "evidence": "אֶת introduces הָאָדָם, “the man,” as the definite direct object of וַיִּקַּח, “took.” יַהְוֶה אֱלֹהִים is the subject.",
+        "gloss": "untranslated",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Uninflected direct-object particle without prefix or suffix.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "(marks the definite object)"
+      },
+      "position": 3,
+      "surface": "אֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "adam"
+        },
+        "evidence": "אֶת marks הָאָדָם as the definite object of וַיִּקַּח, “he took.” The masculine singular suffix in וַיַּנִּחֵהוּ, “he placed him,” refers back to the same man whom God took and placed in the garden of Eden.",
+        "gloss": "the man",
+        "language": "he",
+        "lemma": "אָדָם",
+        "morphology": "Masculine singular common noun in the absolute state, with prefixed definite article הָ־.",
+        "qualifier": "noun",
+        "root": "אדמ",
+        "sense": "the man (the first man)"
+      },
+      "position": 4,
+      "surface": "הָאָדָם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "nuach"
+        },
+        "evidence": "יַהְוֶה אֱלֹהִים is the subject of both verbs. He took הָאָדָם, and the suffix ־הוּ refers back to that man. בְגַן עֵדֶן specifies where God placed him.",
+        "gloss": "and he placed him",
+        "language": "he",
+        "lemma": "נוּחַ",
+        "morphology": "Hiphil wayyiqtol, third-person masculine singular, with prefixed וַ and third-person masculine singular object suffix ־הוּ.",
+        "qualifier": "",
+        "root": "נוח",
+        "sense": "place, set down in a location"
+      },
+      "position": 5,
+      "surface": "וַיַּנִּחֵהוּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ganan"
+        },
+        "evidence": "In בְגַן עֵדֶן ‘in the garden of Eden’, עֵדֶן completes the construct phrase. The phrase tells where God placed the man, and the following verbs describe his task of cultivating and keeping the garden.",
+        "gloss": "in the garden of",
+        "language": "he",
+        "lemma": "גַּן",
+        "morphology": "Prefixed preposition בְּ ‘in’ + common noun, singular construct, of common gender.",
+        "qualifier": "",
+        "root": "גננ",
+        "sense": "garden"
+      },
+      "position": 6,
+      "surface": "בְגַן"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "eden",
+            "base": "0073ee93365c2a8b78250ac250b810c65257463dee47801a0e7571bda8592234",
+            "change": "Add a place-name word for עֵדֶן alongside the identically pointed noun meaning delight.",
+            "definition": "Eden is the place where Yahweh God planted a garden.",
+            "evidence": "Genesis 2:8 locates the garden with the phrase גַּן בְּעֵדֶן, “a garden in Eden.”"
+          }
+        },
+        "evidence": "In בְגַן עֵדֶן, “in the garden of Eden,” עֵדֶן completes the construct phrase and identifies the garden where Yahweh God placed the man. Genesis 2:8 locates that same garden in Eden.",
+        "gloss": "Eden",
+        "language": "he",
+        "lemma": "עֵדֶן",
+        "morphology": "Proper noun, singular, absolute, with no prefix or suffix.",
+        "qualifier": "place name",
+        "root": "עדנ",
+        "sense": "Eden, the place where Yahweh God planted a garden."
+      },
+      "position": 7,
+      "surface": "עֵדֶן"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "abad"
+        },
+        "evidence": "God places the human in the garden of Eden. The paired purpose expressions לְעָבְדָהּ and וּלְשָׁמְרָהּ describe the tasks of cultivating and guarding it.",
+        "gloss": "to cultivate it",
+        "language": "he",
+        "lemma": "עָבַד",
+        "morphology": "לְ marking purpose + Qal infinitive construct + third-person feminine singular object suffix הּ",
+        "qualifier": "",
+        "root": "עבד",
+        "sense": "work the soil, cultivate"
+      },
+      "position": 8,
+      "surface": "לְעָבְדָהּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shamar"
+        },
+        "evidence": "After God places the man in the garden of Eden, וּלְשָׁמְרָהּ is paired with לְעָבְדָהּ to express his purpose there. The two verbs describe tending the garden and watching over it.",
+        "gloss": "and to guard it",
+        "language": "he",
+        "lemma": "שָׁמַר",
+        "morphology": "Qal infinitive construct with conjunction וּ־, preposition לְ־, and third-person feminine singular object suffix ־ָהּ.",
+        "qualifier": "",
+        "root": "שמר",
+        "sense": "guard, watch over"
+      },
+      "position": 9,
+      "surface": "וּלְשָׁמְרָהּ"
+    }
+  ]
+}

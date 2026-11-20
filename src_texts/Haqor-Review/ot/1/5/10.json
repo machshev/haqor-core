@@ -1,0 +1,235 @@
+{
+  "book": 1,
+  "chapter": 5,
+  "source": "ot",
+  "verse": 10,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chayah"
+        },
+        "evidence": "Enosh is the subject of וַיְחִי. The verse counts the 815 years he lived after fathering Kenan.",
+        "gloss": "and he lived",
+        "language": "he",
+        "lemma": "חָיָה",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ־ and shortened verb form יְחִי.",
+        "qualifier": "",
+        "root": "חיה",
+        "sense": "live for a stated length of time"
+      },
+      "position": 0,
+      "surface": "וַיְחִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "enosh"
+        },
+        "evidence": "אֱנוֹשׁ is the named subject of וַיְחִי ‘he lived’. The phrase אַחֲרֵי הוֹלִידוֹ אֶת קֵינָן ‘after he fathered Kenan’ identifies him as Kenan’s father in the genealogy.",
+        "gloss": "Enosh",
+        "language": "he",
+        "lemma": "אֱנוֹשׁ",
+        "morphology": "Masculine singular proper noun, without prefix or suffix.",
+        "qualifier": "name",
+        "root": "אנש",
+        "sense": "Personal name of Seth’s son"
+      },
+      "position": 1,
+      "surface": "אֱנוֹשׁ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "achar"
+        },
+        "evidence": "אַחֲרֵי introduces הוֹלִידוֹ אֶת קֵינָן, “his fathering Kenan.” Enosh lived 815 years after that event.",
+        "gloss": "after",
+        "language": "he",
+        "lemma": "אַחַר",
+        "morphology": "Preposition in the plural construct form אַחֲרֵי, without prefix or suffix.",
+        "qualifier": "",
+        "root": "אחר",
+        "sense": "after (time)"
+      },
+      "position": 2,
+      "surface": "אַחֲרֵי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yalad"
+        },
+        "evidence": "After אַחֲרֵי “after,” the suffix וֹ identifies Enosh as the father, and אֶת marks Kenan as the direct object. The phrase means “after he fathered Kenan.”",
+        "gloss": "his fathering",
+        "language": "he",
+        "lemma": "יָלַד",
+        "morphology": "Hiphil infinitive construct with a third-person masculine singular subject suffix",
+        "qualifier": "",
+        "root": "ילד",
+        "sense": "beget, father a child"
+      },
+      "position": 3,
+      "surface": "הוֹלִידוֹ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "et"
+        },
+        "evidence": "In אַחֲרֵי הוֹלִידוֹ אֶת קֵינָן, “after he fathered Kenan,” אֶת marks the proper name קֵינָן as the direct object of הוֹלִידוֹ. Enosh is the father and Kenan is the child he fathered.",
+        "gloss": "(untranslated)",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Direct-object particle without prefix or suffix.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "(marks the definite object)"
+      },
+      "position": 4,
+      "surface": "אֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "kenan",
+            "base": null,
+            "change": "Add a personal-name article for Kenan. Its proposed link to קינ requires a root article with the id qayin, which is absent from the local lexicon.",
+            "definition": "Kenan, the son of Enosh named in the genealogy of Genesis 5.",
+            "evidence": "Genesis 5:10 names Kenan as the child Enosh had fathered. The verse gives no explanation of the name’s meaning."
+          }
+        },
+        "evidence": "In אַחֲרֵי הוֹלִידוֹ אֶת קֵינָן, “after he fathered Kenan,” אֶת marks קֵינָן as the direct object of “fathered.” Enosh is the father, and Kenan is the child.",
+        "gloss": "Kenan",
+        "language": "he",
+        "lemma": "קֵינָן",
+        "morphology": "Masculine singular personal name in the absolute state, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "קינ",
+        "sense": "The personal name of Enosh’s son."
+      },
+      "position": 5,
+      "surface": "קֵינָן"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chamesh"
+        },
+        "evidence": "In חֲמֵשׁ עֶשְׂרֵה שָׁנָה, חֲמֵשׁ supplies the five in “fifteen years.” The verse adds these fifteen years to eight hundred to give the time Enosh lived after fathering Kenan.",
+        "gloss": "five (in “fifteen”)",
+        "language": "he",
+        "lemma": "חָמֵשׁ",
+        "morphology": "Cardinal numeral, feminine singular absolute, in the compound חֲמֵשׁ עֶשְׂרֵה.",
+        "qualifier": "",
+        "root": "חמש",
+        "sense": "five"
+      },
+      "position": 6,
+      "surface": "חֲמֵשׁ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "asar"
+        },
+        "evidence": "In חֲמֵשׁ עֶשְׂרֵה שָׁנָה, “fifteen years,” עֶשְׂרֵה supplies the ten and חֲמֵשׁ supplies the five. The feminine form agrees with שָׁנָה, “year.”",
+        "gloss": "-teen (in fifteen)",
+        "language": "he",
+        "lemma": "עָשָׂר",
+        "morphology": "Feminine singular absolute cardinal numeral",
+        "qualifier": "",
+        "root": "עשׂר",
+        "sense": "ten, in the numbers eleven to nineteen"
+      },
+      "position": 7,
+      "surface": "עֶשְׂרֵה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shanah"
+        },
+        "evidence": "In חֲמֵשׁ עֶשְׂרֵה שָׁנָה, “fifteen years,” שָׁנָה supplies the unit for the first part of the 815 years Enosh lived after fathering Kenan.",
+        "gloss": "years",
+        "language": "he",
+        "lemma": "שָׁנָה",
+        "morphology": "Common noun, feminine singular absolute, without prefix or suffix.",
+        "qualifier": "noun",
+        "root": "שנה",
+        "sense": "years of a life, age"
+      },
+      "position": 8,
+      "surface": "שָׁנָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shemen"
+        },
+        "evidence": "In וּשְׁמֹנֶה מֵאוֹת שָׁנָה, the numeral counts מֵאוֹת “hundreds.” The conjunction joins these eight hundred years to the preceding fifteen years, giving 815 years.",
+        "gloss": "and eight",
+        "language": "he",
+        "lemma": "שְׁמֹנֶה",
+        "morphology": "Conjunction וּ־ “and” prefixed to a feminine singular absolute cardinal numeral.",
+        "qualifier": "",
+        "root": "שמנ",
+        "sense": "eight as the multiplier of hundreds"
+      },
+      "position": 9,
+      "surface": "וּשְׁמֹנֶה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "meah"
+        },
+        "evidence": "In וּשְׁמֹנֶה מֵאוֹת שָׁנָה, שְׁמֹנֶה counts the hundreds and שָׁנָה supplies the unit, yielding “and eight hundred years.”",
+        "gloss": "hundreds",
+        "language": "he",
+        "lemma": "מֵאָה",
+        "morphology": "Cardinal numeral, plural absolute, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "מאה",
+        "sense": "hundreds (plural מֵאוֹת, with the digits: three hundred to nine hundred)"
+      },
+      "position": 10,
+      "surface": "מֵאוֹת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shanah"
+        },
+        "evidence": "In וּשְׁמֹנֶה מֵאוֹת שָׁנָה, the marked noun supplies the unit for “eight hundred.” Together with the preceding fifteen years, it measures the 815 years Enosh lived after fathering Kenan.",
+        "gloss": "years",
+        "language": "he",
+        "lemma": "שָׁנָה",
+        "morphology": "Common noun, feminine singular absolute",
+        "qualifier": "noun",
+        "root": "שנה",
+        "sense": "years of a life, age"
+      },
+      "position": 11,
+      "surface": "שָׁנָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yalad"
+        },
+        "evidence": "Enosh is the subject of וַיּוֹלֶד, and בָּנִים וּבָנוֹת (“sons and daughters”) are its objects. The clause says that Enosh fathered children after Kenan.",
+        "gloss": "and he fathered",
+        "language": "he",
+        "lemma": "יָלַד",
+        "morphology": "Hiphil wayyiqtol, third person masculine singular, with prefixed וַ.",
+        "qualifier": "",
+        "root": "ילד",
+        "sense": "beget, father a child"
+      },
+      "position": 12,
+      "surface": "וַיּוֹלֶד"
+    }
+  ]
+}

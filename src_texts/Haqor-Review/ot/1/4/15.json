@@ -1,0 +1,315 @@
+{
+  "book": 1,
+  "chapter": 4,
+  "source": "ot",
+  "verse": 15,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "amar"
+        },
+        "evidence": "יַהְוֶה is the speaker, לוֹ identifies Cain as the addressee, and לָכֵן begins the words spoken.",
+        "gloss": "and he said",
+        "language": "he",
+        "lemma": "אָמַר",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ־ and no suffix.",
+        "qualifier": "",
+        "root": "אמר",
+        "sense": "say, introducing direct speech"
+      },
+      "position": 0,
+      "surface": "וַיֹּאמֶר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yahweh"
+        },
+        "evidence": "In וַיֹּאמֶר לוֹ יַהְוֶה, “Yahweh said to him,” יַהְוֶה names the speaker and is the subject of וַיֹּאמֶר. The pronoun לוֹ refers to Cain, whom Yahweh addresses.",
+        "gloss": "Yahweh",
+        "language": "he",
+        "lemma": "יַהְוֶה",
+        "morphology": "Masculine singular proper noun, without prefix or suffix",
+        "qualifier": "",
+        "root": "הוה",
+        "sense": "Personal name of the God of Israel"
+      },
+      "position": 2,
+      "surface": "יַהְוֶה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ken"
+        },
+        "evidence": "לָכֵן introduces Yahweh’s response to Cain’s fear of being killed. The clause that follows declares that anyone who kills Cain will face sevenfold vengeance.",
+        "gloss": "therefore",
+        "language": "he",
+        "lemma": "כֵּן",
+        "morphology": "Preposition לָ־ prefixed to the adverb כֵּן.",
+        "qualifier": "adverb",
+        "root": "כונ",
+        "sense": "therefore, for this reason (עַל־כֵּן, לָכֵן)"
+      },
+      "position": 3,
+      "surface": "לָכֵן"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "kalal"
+        },
+        "evidence": "In כָּל הֹרֵג קַיִן, כָּל quantifies the singular participle הֹרֵג, yielding “anyone who kills Cain.” The threat of sevenfold vengeance applies to each potential killer.",
+        "gloss": "anyone who",
+        "language": "he",
+        "lemma": "כֹּל",
+        "morphology": "Masculine singular noun in the construct state, without prefix or suffix.",
+        "qualifier": "",
+        "root": "כלל",
+        "sense": "every, each; any"
+      },
+      "position": 4,
+      "surface": "כָּל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "harag"
+        },
+        "evidence": "כָּל הֹרֵג קַיִן means “anyone who kills Cain.” The participle denotes the person who would do the killing, and קַיִן names the one who would be killed.",
+        "gloss": "one who kills",
+        "language": "he",
+        "lemma": "הָרַג",
+        "morphology": "Qal active participle, masculine singular construct",
+        "qualifier": "",
+        "root": "הרג",
+        "sense": "kill"
+      },
+      "position": 5,
+      "surface": "הֹרֵג"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "cain",
+            "base": null,
+            "change": "Add a personal-name article for Cain. Its proposed root link requires a companion article for קינ, which is absent from the local lexicon.",
+            "definition": "Cain, the son of Adam and Eve and brother of Abel.",
+            "evidence": "Genesis 4:1 names Eve’s son קַיִן. Genesis 4:2 identifies Abel as his brother and names Cain again when describing his work."
+          }
+        },
+        "evidence": "In כָּל הֹרֵג קַיִן, “anyone who kills Cain,” קַיִן names the person threatened. Later in the verse, YHWH gives Cain a sign to keep anyone who finds him from striking him.",
+        "gloss": "Cain",
+        "language": "he",
+        "lemma": "קַיִן",
+        "morphology": "Masculine singular personal name, without prefix or suffix. It is the object of the participle הֹרֵג.",
+        "qualifier": "",
+        "root": "קינ",
+        "sense": "The personal name of Abel’s brother."
+      },
+      "position": 6,
+      "surface": "קַיִן"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shaba"
+        },
+        "evidence": "In שִׁבְעָתַיִם יֻקָּם, שִׁבְעָתַיִם modifies the passive verb יֻקָּם and specifies the measure of vengeance for killing Cain.",
+        "gloss": "seven times over",
+        "language": "he",
+        "lemma": "שִׁבְעָתַיִם",
+        "morphology": "Feminine dual absolute numeral form used adverbially.",
+        "qualifier": "",
+        "root": "שבע",
+        "sense": "sevenfold"
+      },
+      "position": 7,
+      "surface": "שִׁבְעָתַיִם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "naqam"
+        },
+        "evidence": "כָּל הֹרֵג קַיִן identifies the potential killer of Cain, and שִׁבְעָתַיִם specifies the measure of retribution. Together with יֻקָּם, the warning means that sevenfold vengeance will be exacted for killing Cain. The following clause says that YHWH gave Cain a sign to keep anyone who found him from striking him.",
+        "gloss": "vengeance will be exacted",
+        "language": "he",
+        "lemma": "נָקַם",
+        "morphology": "Hophal imperfect, third-person masculine singular. The root-initial נ assimilates to ק, marked by the dagesh. No attached particle or pronominal suffix.",
+        "qualifier": "",
+        "root": "נקמ",
+        "sense": "to have vengeance exacted"
+      },
+      "position": 8,
+      "surface": "יֻקָּם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "sum"
+        },
+        "evidence": "יַהְוֶה is the subject, אוֹת is the sign he set, and לְקַיִן identifies Cain as the person for whom he set it. The purpose clause explains that the sign was to keep anyone who found Cain from striking him.",
+        "gloss": "and he set",
+        "language": "he",
+        "lemma": "שִׂים",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ־.",
+        "qualifier": "",
+        "root": "שׂומ",
+        "sense": "set a sign for someone"
+      },
+      "position": 9,
+      "surface": "וַיָּשֶׂם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yahweh"
+        },
+        "evidence": "In וַיָּשֶׂם יַהְוֶה לְקַיִן אוֹת, יַהְוֶה is the subject of וַיָּשֶׂם ‘set’. Yahweh sets a sign for Cain to keep anyone who finds him from striking him.",
+        "gloss": "Yahweh",
+        "language": "he",
+        "lemma": "יַהְוֶה",
+        "morphology": "Proper noun, masculine singular, without prefix or suffix",
+        "qualifier": "",
+        "root": "הוה",
+        "sense": "Personal name of the God of Israel"
+      },
+      "position": 10,
+      "surface": "יַהְוֶה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "cain",
+            "base": null,
+            "change": "Add a personal-name article for Cain. Its proposed root link requires a companion article for קינ, which is absent from the local lexicon.",
+            "definition": "Cain, the son of Adam and Eve and brother of Abel.",
+            "evidence": "Genesis 4:1 names Eve’s son קַיִן. Genesis 4:2 identifies Abel as his brother and names Cain again when describing his work."
+          }
+        },
+        "evidence": "In וַיָּשֶׂם יַהְוֶה לְקַיִן אוֹת, לְ marks Cain as the person for whom YHWH sets a sign. The phrase לְבִלְתִּי הַכּוֹת אֹתוֹ explains its purpose, to keep anyone who finds Cain from striking him.",
+        "gloss": "for Cain",
+        "language": "he",
+        "lemma": "קַיִן",
+        "morphology": "Preposition לְ prefixed to a masculine singular personal name.",
+        "qualifier": "",
+        "root": "קינ",
+        "sense": "The personal name of Abel’s brother."
+      },
+      "position": 11,
+      "surface": "לְקַיִן"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "taavah"
+        },
+        "evidence": "אוֹת is the direct object of וַיָּשֶׂם. YHWH set a sign for Cain (לְקַיִן) so that anyone who found him would refrain from striking him.",
+        "gloss": "a sign",
+        "language": "he",
+        "lemma": "אוֹת",
+        "morphology": "Common noun, singular absolute, without prefix or suffix. Gender is unmarked here.",
+        "qualifier": "",
+        "root": "אוה",
+        "sense": "sign"
+      },
+      "position": 12,
+      "surface": "אוֹת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "bal"
+        },
+        "evidence": "YHWH gives Cain a sign. In לְבִלְתִּי הַכּוֹת אֹתוֹ כָּל־מֹצְאוֹ, אֹתוֹ refers to Cain and כָּל־מֹצְאוֹ is the subject of הַכּוֹת. The sign serves to keep anyone who finds Cain from striking him.",
+        "gloss": "so that no one would",
+        "language": "he",
+        "lemma": "בִּלְתִּי",
+        "morphology": "Negative particle with prefixed לְ, introducing the infinitive construct הַכּוֹת in a purpose clause.",
+        "qualifier": "",
+        "root": "בלה",
+        "sense": "Negates the action that the sign is intended to prevent."
+      },
+      "position": 13,
+      "surface": "לְבִלְתִּי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "nakah"
+        },
+        "evidence": "לְבִלְתִּי negates הַכּוֹת. Its object אֹתוֹ refers to Cain, and its subject כָּל מֹצְאוֹ means “anyone who finds him.” The earlier phrase כָּל הֹרֵג קַיִן (“anyone who kills Cain”) identifies the fatal act the sign is meant to prevent.",
+        "gloss": "kill",
+        "language": "he",
+        "lemma": "נָכָה",
+        "morphology": "Hiphil infinitive construct, without a suffix",
+        "qualifier": "",
+        "root": "נכה",
+        "sense": "strike dead"
+      },
+      "position": 14,
+      "surface": "הַכּוֹת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "et",
+            "base": "31c9a635be8bba9a67417e75ea7122e240ae707e04a841533a59ecd2869d0f80",
+            "change": "Add Gen.4.15 as an example of the existing object-pronoun sense in et.",
+            "definition": "With a pronominal suffix, אֵת expresses the direct object as a pronoun separate from the verb.",
+            "evidence": "In Gen.4.15, הַכּוֹת אֹתוֹ means ‘to strike him.’ The suffix refers to Cain."
+          }
+        },
+        "evidence": "In לְבִלְתִּי הַכּוֹת אֹתוֹ כָּל מֹצְאוֹ, ‘so that no one who found him would strike him,’ כָּל מֹצְאוֹ identifies the potential striker. אֹתוֹ identifies Cain, just named in לְקַיִן, as the person who would receive the blow.",
+        "gloss": "him",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Direct-object particle in its suffixed form אֹת־ with the third-person masculine singular pronominal suffix ־וֹ.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "object-pronoun"
+      },
+      "position": 15,
+      "surface": "אֹתוֹ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "kalal"
+        },
+        "evidence": "In לְבִלְתִּי הַכּוֹת אֹתוֹ כָּל מֹצְאוֹ, כָּל quantifies the singular participle מֹצְאוֹ, ‘one who finds him’. The sign keeps anyone who finds Cain from striking him.",
+        "gloss": "anyone",
+        "language": "he",
+        "lemma": "כֹּל",
+        "morphology": "Masculine singular construct noun, without prefix or suffix.",
+        "qualifier": "",
+        "root": "כלל",
+        "sense": "every, each; any"
+      },
+      "position": 16,
+      "surface": "כָּל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "matsa"
+        },
+        "evidence": "כָּל מֹצְאוֹ means “anyone who finds him.” The sign given to Cain is to prevent such a person from striking him. The suffix on מֹצְאוֹ refers to Cain, as does אֹתוֹ after הַכּוֹת.",
+        "gloss": "one who finds him",
+        "language": "he",
+        "lemma": "מָצָא",
+        "morphology": "Qal active participle, masculine singular construct, with a third-person masculine singular object suffix referring to Cain.",
+        "qualifier": "",
+        "root": "מצא",
+        "sense": "find"
+      },
+      "position": 17,
+      "surface": "מֹצְאוֹ"
+    }
+  ]
+}

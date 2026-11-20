@@ -1,0 +1,133 @@
+{
+  "book": 1,
+  "chapter": 7,
+  "source": "ot",
+  "verse": 10,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "hayah"
+        },
+        "evidence": "וַיְהִי introduces the event and its timing. לְשִׁבְעַת הַיָּמִים places the event at the end of seven days, and the following clause states what happened: the floodwaters were upon the earth.",
+        "gloss": "and it came to pass",
+        "language": "he",
+        "lemma": "הָיָה",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ־",
+        "qualifier": "",
+        "root": "היה",
+        "sense": "to come to pass"
+      },
+      "position": 0,
+      "surface": "וַיְהִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shaba"
+        },
+        "evidence": "שִׁבְעַת counts הַיָּמִים, “the days.” The phrase לְשִׁבְעַת הַיָּמִים means “after the seven days” and gives the time when the floodwaters came upon the earth.",
+        "gloss": "seven",
+        "language": "he",
+        "lemma": "שֶׁבַע",
+        "morphology": "Preposition לְ prefixed to שִׁבְעַת, the masculine singular construct form of the cardinal numeral.",
+        "qualifier": "",
+        "root": "שבע",
+        "sense": "seven"
+      },
+      "position": 1,
+      "surface": "לְשִׁבְעַת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yom"
+        },
+        "evidence": "In לְשִׁבְעַת הַיָּמִים, the numeral שִׁבְעַת counts the seven days that elapsed before the floodwaters were on the earth.",
+        "gloss": "the days",
+        "language": "he",
+        "lemma": "יוֹם",
+        "morphology": "Definite article הַ־ prefixed to a masculine plural absolute noun.",
+        "qualifier": "",
+        "root": "יומ",
+        "sense": "a day, counted"
+      },
+      "position": 2,
+      "surface": "הַיָּמִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "mabbul",
+            "base": "576656bfe9c8441182654160615e68bbf3c36547fc5941bce079346d385586dc",
+            "change": "Amend the mabbul article to define the noun directly and cite Genesis 7:10 alongside Genesis 6:17 and Psalm 29:10.",
+            "definition": "A flood that overwhelms the land. In Genesis the noun names the deluge of Noah’s day.",
+            "evidence": "Genesis 7:10 calls the waters upon the earth מֵי הַמַּבּוּל, “the waters of the flood.”"
+          }
+        },
+        "evidence": "In וּמֵי הַמַּבּוּל, “and the waters of the flood,” מֵי is the construct form of “waters,” and הַמַּבּוּל identifies the flood to which they belong. The plural verb הָיוּ agrees with “waters,” which the verse says were upon the earth after seven days.",
+        "gloss": "the flood",
+        "language": "he",
+        "lemma": "מַבּוּל",
+        "morphology": "Masculine singular common noun in the absolute state, with the prefixed definite article הַ־, which doubles the initial מ. No suffix.",
+        "qualifier": "",
+        "root": "מבול",
+        "sense": "The flood that covered the earth in Noah’s day."
+      },
+      "position": 4,
+      "surface": "הַמַּבּוּל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "hayah"
+        },
+        "evidence": "הָיוּ agrees with the plural subject מֵי הַמַּבּוּל, “the floodwaters.” The phrase עַל הָאָרֶץ gives their location: the floodwaters were on the earth.",
+        "gloss": "were",
+        "language": "he",
+        "lemma": "הָיָה",
+        "morphology": "Qal perfect, third person common plural",
+        "qualifier": "",
+        "root": "היה",
+        "sense": "to be in a state or condition"
+      },
+      "position": 5,
+      "surface": "הָיוּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "alah"
+        },
+        "evidence": "In וּמֵי הַמַּבּוּל הָיוּ עַל הָאָרֶץ, עַל introduces the location of the floodwaters: they were on the earth.",
+        "gloss": "on",
+        "language": "he",
+        "lemma": "עַל",
+        "morphology": "Preposition without prefix or suffix.",
+        "qualifier": "",
+        "root": "עלה",
+        "sense": "on, upon, over"
+      },
+      "position": 6,
+      "surface": "עַל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "erets"
+        },
+        "evidence": "הָיוּ עַל הָאָרֶץ says that the floodwaters were upon the earth. The phrase names the earth as the place reached by the flood, without specifying a particular territory.",
+        "gloss": "the earth",
+        "language": "he",
+        "lemma": "אֶרֶץ",
+        "morphology": "Common noun, singular absolute, with prefixed definite article הָ־.",
+        "qualifier": "",
+        "root": "ארצ",
+        "sense": "earth"
+      },
+      "position": 7,
+      "surface": "הָאָרֶץ"
+    }
+  ]
+}

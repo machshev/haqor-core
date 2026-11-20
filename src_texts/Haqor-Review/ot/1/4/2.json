@@ -1,0 +1,331 @@
+{
+  "book": 1,
+  "chapter": 4,
+  "review": {
+    "entities": [
+      {
+        "evidence": "Abel is named as the brother of Cain, whom Eve bore in the preceding verse.",
+        "key": "Abel@Gen.4.2",
+        "position": 5
+      },
+      {
+        "evidence": "The repeated name identifies the same brother as a keeper of flocks.",
+        "key": "Abel@Gen.4.2",
+        "position": 7
+      },
+      {
+        "evidence": "Cain, Eve’s son named in Genesis 4:1, is paired with his brother Abel as the one who tills the soil.",
+        "key": "Cain@Gen.4.1",
+        "position": 10
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "then she again",
+        "position": 0
+      },
+      {
+        "gloss": "to give birth to",
+        "position": 1
+      },
+      {
+        "gloss": "(untranslated)",
+        "position": 2
+      },
+      {
+        "gloss": "his brother",
+        "position": 3
+      },
+      {
+        "gloss": "(untranslated)",
+        "position": 4
+      },
+      {
+        "gloss": "Abel",
+        "position": 5
+      },
+      {
+        "gloss": "now … was",
+        "position": 6
+      },
+      {
+        "gloss": "Abel",
+        "position": 7
+      },
+      {
+        "gloss": "a keeper of",
+        "position": 8
+      },
+      {
+        "gloss": "flocks",
+        "position": 9
+      },
+      {
+        "gloss": "and Cain",
+        "position": 10
+      },
+      {
+        "gloss": "was",
+        "position": 11
+      },
+      {
+        "gloss": "a tiller of",
+        "position": 12
+      },
+      {
+        "gloss": "the soil",
+        "position": 13
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[Then she again|0] [gave birth to|1] [his brother|2,3] [Abel|4,5]. [Now|6] [Abel|7] [was|6] [a keeper of|8] [flocks|9], [and Cain|10] [was|11] [a tiller of|12] [the soil|13]."
+  },
+  "source": "ot",
+  "verse": 2,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yasaph"
+        },
+        "evidence": "The infinitive לָלֶדֶת supplies the repeated action. After giving birth to Cain, Eve gives birth again, this time to his brother Abel.",
+        "gloss": "and she again",
+        "language": "he",
+        "lemma": "יָסַף",
+        "morphology": "Hiphil wayyiqtol, third-person feminine singular, with prefixed וַ־",
+        "qualifier": "",
+        "root": "יספ",
+        "sense": "do again"
+      },
+      "position": 0,
+      "surface": "וַתֹּסֶף"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yalad"
+        },
+        "evidence": "לָלֶדֶת follows וַתֹּסֶף, expressing what Eve did again. The direct object אֶת־אָחִיו אֶת־הָבֶל identifies the child she bore as Cain’s brother Abel.",
+        "gloss": "to give birth to",
+        "language": "he",
+        "lemma": "יָלַד",
+        "morphology": "Qal infinitive construct with prefixed לָ־",
+        "qualifier": "",
+        "root": "ילד",
+        "sense": "bear, give birth to"
+      },
+      "position": 1,
+      "surface": "לָלֶדֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "et"
+        },
+        "evidence": "אֶת introduces אָחִיו (“his brother”) as the direct object of לָלֶדֶת (“to give birth to”). The following אֶת הָבֶל names that brother as Abel.",
+        "gloss": "(untranslated)",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Direct-object particle, without prefix or suffix.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "(marks the definite object)"
+      },
+      "position": 2,
+      "surface": "אֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ach"
+        },
+        "evidence": "In וַתֹּסֶף לָלֶדֶת אֶת־אָחִיו אֶת־הָבֶל, the mother gives birth again. אֶת־הָבֶל names the child described as אָחִיו. The suffix refers to Cain, whose brother Abel is.",
+        "gloss": "his brother",
+        "language": "he",
+        "lemma": "אָח",
+        "morphology": "Masculine singular construct noun with a third-person masculine singular possessive suffix.",
+        "qualifier": "",
+        "root": "אחה",
+        "sense": "brother (by birth)"
+      },
+      "position": 3,
+      "surface": "אָחִיו"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "et"
+        },
+        "evidence": "In לָלֶדֶת אֶת אָחִיו אֶת הָבֶל, the marked second אֶת introduces the name הָבֶל in apposition to אָחִיו. Both phrases identify the same child born, “his brother Abel.”",
+        "gloss": "(untranslated)",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Direct-object particle, without prefix or suffix.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "(marks the definite object)"
+      },
+      "position": 4,
+      "surface": "אֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "abel"
+        },
+        "evidence": "The repeated direct-object marker in אֶת־אָחִיו אֶת־הָבֶל identifies Abel by name as the brother she bore. The next clause repeats the name in its ordinary form, הֶבֶל.",
+        "gloss": "Abel",
+        "language": "he",
+        "lemma": "הֶבֶל",
+        "morphology": "Masculine singular personal name in pausal form, without prefix or suffix.",
+        "qualifier": "name",
+        "root": "הבל",
+        "sense": "Abel, Cain’s brother"
+      },
+      "position": 5,
+      "surface": "הָבֶל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "hayah"
+        },
+        "evidence": "וַיְהִי links the subject הֶבֶל to רֹעֵה צֹאן, “a keeper of sheep.” The parallel clause וְקַיִן הָיָה עֹבֵד אֲדָמָה describes Cain’s occupation in the same way.",
+        "gloss": "was",
+        "language": "he",
+        "lemma": "הָיָה",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ־ and no suffix.",
+        "qualifier": "",
+        "root": "היה",
+        "sense": "to be in a state or condition"
+      },
+      "position": 6,
+      "surface": "וַיְהִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "abel"
+        },
+        "evidence": "The birth clause names Cain’s brother הָבֶל. The marked הֶבֶל resumes that name as the subject of וַיְהִי הֶבֶל רֹעֵה צֹאן, identifying Abel as a shepherd. The parallel clause names Cain and gives his occupation.",
+        "gloss": "Abel",
+        "language": "he",
+        "lemma": "הֶבֶל",
+        "morphology": "Masculine singular proper noun in the absolute state, without prefix or suffix.",
+        "qualifier": "name",
+        "root": "הבל",
+        "sense": "Abel, Cain’s brother"
+      },
+      "position": 7,
+      "surface": "הֶבֶל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "raah-shepherd"
+        },
+        "evidence": "In רֹעֵה צֹאן, the construct participle identifies Abel by the animals he tends. The parallel עֹבֵד אֲדָמָה identifies Cain by the ground he cultivates.",
+        "gloss": "shepherd",
+        "language": "he",
+        "lemma": "רָעָה",
+        "morphology": "Qal active participle, masculine singular construct, without prefix or suffix",
+        "qualifier": "verb",
+        "root": "רעה",
+        "sense": "tend a flock"
+      },
+      "position": 8,
+      "surface": "רֹעֵה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "tson"
+        },
+        "evidence": "In רֹעֵה צֹאן, “one who tends a flock,” צֹאן names the animals Abel tends. The parallel עֹבֵד אֲדָמָה, “one who works the soil,” identifies Cain’s occupation.",
+        "gloss": "flock",
+        "language": "he",
+        "lemma": "צֹאן",
+        "morphology": "Common noun of common gender, singular absolute, collective in meaning, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "צאנ",
+        "sense": "the flock in a shepherd's care"
+      },
+      "position": 9,
+      "surface": "צֹאן"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "cain",
+            "base": null,
+            "change": "Add a personal-name article for Cain. Its proposed root link requires a companion article for קינ, which is absent from the local lexicon.",
+            "definition": "Cain, the son of Adam and Eve and brother of Abel.",
+            "evidence": "Genesis 4:1 names Eve’s son קַיִן. Genesis 4:2 identifies Abel as his brother and names Cain again when describing his work."
+          }
+        },
+        "evidence": "The verse calls Abel אָחִיו, “his brother,” then describes each brother’s work. וְקַיִן introduces the second subject: Abel tended sheep, and Cain worked the ground.",
+        "gloss": "Cain",
+        "language": "he",
+        "lemma": "קַיִן",
+        "morphology": "Conjunction וְ prefixed to a masculine singular personal name. קַיִן is the subject of הָיָה.",
+        "qualifier": "",
+        "root": "קינ",
+        "sense": "The personal name of Abel’s brother."
+      },
+      "position": 10,
+      "surface": "וְקַיִן"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "hayah"
+        },
+        "evidence": "הָיָה agrees with the subject קַיִן and links him to the participial phrase עֹבֵד אֲדָמָה, “a tiller of the soil.” The parallel description of Abel as רֹעֵה צֹאן, “a keeper of sheep,” shows that the verse describes each brother’s occupation.",
+        "gloss": "was",
+        "language": "he",
+        "lemma": "הָיָה",
+        "morphology": "Qal perfect, third person masculine singular, without prefix or suffix",
+        "qualifier": "",
+        "root": "היה",
+        "sense": "to be in a state or condition"
+      },
+      "position": 11,
+      "surface": "הָיָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "abad"
+        },
+        "evidence": "עֹבֵד takes אֲדָמָה (“soil”) as its complement. The phrase עֹבֵד אֲדָמָה names Cain’s occupation, parallel to רֹעֵה צֹאן (“keeper of sheep”) for Abel.",
+        "gloss": "tiller of the soil",
+        "language": "he",
+        "lemma": "עָבַד",
+        "morphology": "Qal active participle, masculine singular construct",
+        "qualifier": "",
+        "root": "עבד",
+        "sense": "work the soil, cultivate"
+      },
+      "position": 12,
+      "surface": "עֹבֵד"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "adam"
+        },
+        "evidence": "עֹבֵד אֲדָמָה describes Cain as one who works the soil, alongside Abel, who tends a flock (רֹעֵה צֹאן).",
+        "gloss": "soil",
+        "language": "he",
+        "lemma": "אֲדָמָה",
+        "morphology": "Common noun, feminine singular absolute, without prefix or suffix.",
+        "qualifier": "",
+        "root": "אדמ",
+        "sense": "the ground that is tilled; soil"
+      },
+      "position": 13,
+      "surface": "אֲדָמָה"
+    }
+  ]
+}

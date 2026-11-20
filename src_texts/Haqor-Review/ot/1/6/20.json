@@ -1,0 +1,235 @@
+{
+  "book": 1,
+  "chapter": 6,
+  "source": "ot",
+  "verse": 20,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "uph"
+        },
+        "evidence": "מֵהָעוֹף לְמִינֵהוּ means “of the birds according to their kind.” The verse lists birds alongside livestock and ground creatures, with two of each to come. The singular עוֹף thus denotes birds as a class.",
+        "gloss": "of the birds",
+        "language": "he",
+        "lemma": "עוֹף",
+        "morphology": "Partitive preposition מִן (מֵ־) + definite article הָ־ + masculine singular absolute collective noun.",
+        "qualifier": "",
+        "root": "עופ",
+        "sense": "birds collectively"
+      },
+      "position": 0,
+      "surface": "מֵהָעוֹף"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "temunah"
+        },
+        "evidence": "In מֵהָעוֹף לְמִינֵהוּ, the masculine singular suffix refers to the collective הָעוֹף. The parallel הַבְּהֵמָה לְמִינָהּ uses a feminine singular suffix with its feminine antecedent. Both phrases classify the creatures by kind.",
+        "gloss": "according to its kind",
+        "language": "he",
+        "lemma": "מִין",
+        "morphology": "Preposition לְ plus masculine singular construct noun מִין with third-person masculine singular possessive suffix ־ֵהוּ.",
+        "qualifier": "",
+        "root": "מינ",
+        "sense": "kind, variety"
+      },
+      "position": 1,
+      "surface": "לְמִינֵהוּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "min",
+            "base": "a8ed885685f881ad58d16600265c2176cd484c41c6480205b1d0941d765b8fa6",
+            "change": "Add Gen.6.20 as evidence for the Hebrew partitive sense min-some-of in the existing min article.",
+            "definition": "Partitive מִן introduces a whole or group from which some members are taken or counted.",
+            "evidence": "In Gen.6.20, הַבְּהֵמָה names the group and שְׁנַיִם מִכֹּל specifies two of each kind."
+          }
+        },
+        "evidence": "וּמִן הַבְּהֵמָה לְמִינָהּ means ‘and from among the livestock according to their kinds’. שְׁנַיִם מִכֹּל, ‘two of each’, gives the number that will come from each kind.",
+        "gloss": "and from among",
+        "language": "he",
+        "lemma": "מִן",
+        "morphology": "Prefixed conjunction וּ־ ‘and’ + independent preposition מִן governing הַבְּהֵמָה ‘the livestock’. No suffix.",
+        "qualifier": "",
+        "root": "מנ",
+        "sense": "Partitive. Introduces the group from which members are selected."
+      },
+      "position": 2,
+      "surface": "וּמִן"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "behemah"
+        },
+        "evidence": "The verse lists birds, הַבְּהֵמָה, and creatures that creep on the ground. The following לְמִינָהּ, “according to its kind,” refers back to the feminine singular noun and presents it as a class of animals from which pairs will come to Noah.",
+        "gloss": "the four-footed animals",
+        "language": "he",
+        "lemma": "בְּהֵמָה",
+        "morphology": "Feminine singular absolute common noun with the definite article הַ־, used collectively.",
+        "qualifier": "",
+        "root": "בהמ",
+        "sense": "beast, four-footed animal"
+      },
+      "position": 3,
+      "surface": "הַבְּהֵמָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "temunah"
+        },
+        "evidence": "The feminine singular suffix refers to הַבְּהֵמָה. The parallel phrases for birds and creeping things use לְמִינֵהוּ, showing that each group is classified by kind.",
+        "gloss": "according to its kind",
+        "language": "he",
+        "lemma": "מִין",
+        "morphology": "Preposition לְ + masculine singular construct noun מִין + third-person feminine singular possessive suffix ־ָהּ.",
+        "qualifier": "",
+        "root": "מינ",
+        "sense": "kind, variety"
+      },
+      "position": 4,
+      "surface": "לְמִינָהּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "kalal"
+        },
+        "evidence": "In מִכֹּל רֶמֶשׂ הָאֲדָמָה, כֹּל qualifies רֶמֶשׂ “creeping thing.” The following לְמִינֵהוּ “according to its kind” makes the distribution clear. Two come from each kind.",
+        "gloss": "from every",
+        "language": "he",
+        "lemma": "כֹּל",
+        "morphology": "Masculine singular construct noun with prefixed מִן “from.” The נ assimilates to the following כ, marked by dagesh.",
+        "qualifier": "",
+        "root": "כלל",
+        "sense": "every, each; any"
+      },
+      "position": 5,
+      "surface": "מִכֹּל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ramas-creep"
+        },
+        "evidence": "In רֶמֶשׂ הָאֲדָמָה, “creeping creatures of the ground,” הָאֲדָמָה completes the construct phrase. The following לְמִינֵהוּ, “according to its kind,” groups these creatures by kind alongside the birds and livestock.",
+        "gloss": "creeping creatures",
+        "language": "he",
+        "lemma": "רֶמֶשׂ",
+        "morphology": "Common noun, masculine singular construct, used collectively.",
+        "qualifier": "",
+        "root": "רמשׂ",
+        "sense": "moving creatures"
+      },
+      "position": 6,
+      "surface": "רֶמֶשׂ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "adam"
+        },
+        "evidence": "In מִכֹּל רֶמֶשׂ הָאֲדָמָה, “from every creeping thing of the ground,” הָאֲדָמָה completes the construct phrase and names the surface on which the creatures move.",
+        "gloss": "the ground",
+        "language": "he",
+        "lemma": "אֲדָמָה",
+        "morphology": "Definite article הָ־ prefixed to a feminine singular absolute noun.",
+        "qualifier": "",
+        "root": "אדמ",
+        "sense": "the ground underfoot; the face of the earth"
+      },
+      "position": 7,
+      "surface": "הָאֲדָמָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "temunah"
+        },
+        "evidence": "In רֶמֶשׂ הָאֲדָמָה לְמִינֵהוּ, the masculine singular suffix refers to רֶמֶשׂ, the collective noun for creatures that creep on the ground. The phrase groups them by kind, as the parallel phrases do for birds and livestock.",
+        "gloss": "according to its kind",
+        "language": "he",
+        "lemma": "מִין",
+        "morphology": "Preposition לְ + masculine singular construct noun מִין + third-person masculine singular possessive suffix ־ֵהוּ.",
+        "qualifier": "",
+        "root": "מינ",
+        "sense": "kind, variety"
+      },
+      "position": 8,
+      "surface": "לְמִינֵהוּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shanah"
+        },
+        "evidence": "שְׁנַיִם מִכֹּל means “two of each.” The numeral gives the number from each kind that will come to Noah.",
+        "gloss": "two",
+        "language": "he",
+        "lemma": "שְׁנַיִם",
+        "morphology": "Cardinal numeral, masculine dual absolute, without prefix or suffix.",
+        "qualifier": "",
+        "root": "שנה",
+        "sense": "two"
+      },
+      "position": 9,
+      "surface": "שְׁנַיִם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "kalal"
+        },
+        "evidence": "The repeated phrases לְמִינֵהוּ and לְמִינָהּ group the animals by kind. In שְׁנַיִם מִכֹּל, “two of each,” מִן is partitive and כֹּל distributes the count of two over those kinds.",
+        "gloss": "of each kind",
+        "language": "he",
+        "lemma": "כֹּל",
+        "morphology": "Preposition מִן with its נ assimilated to כ, followed by a masculine singular noun in the absolute state.",
+        "qualifier": "",
+        "root": "כלל",
+        "sense": "every, each; any"
+      },
+      "position": 10,
+      "surface": "מִכֹּל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "bo"
+        },
+        "evidence": "שְׁנַיִם מִכֹּל identifies the subject as two of each kind of animal. אֵלֶיךָ (‘to you’) gives the direction of their movement: they will come to Noah.",
+        "gloss": "they will come",
+        "language": "he",
+        "lemma": "בּוֹא",
+        "morphology": "Qal imperfect, third person masculine plural",
+        "qualifier": "",
+        "root": "בוא",
+        "sense": "come, arrive"
+      },
+      "position": 11,
+      "surface": "יָבֹאוּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chayah"
+        },
+        "evidence": "שְׁנַיִם מִכֹּל יָבֹאוּ אֵלֶיךָ says that two of each kind will come to Noah. לְהַחֲיוֹת gives the purpose of their coming. The animals are the implied object of the causative verb.",
+        "gloss": "to keep them alive",
+        "language": "he",
+        "lemma": "חָיָה",
+        "morphology": "Hiphil infinitive construct with prefixed לְ expressing purpose",
+        "qualifier": "",
+        "root": "חיה",
+        "sense": "keep alive"
+      },
+      "position": 13,
+      "surface": "לְהַחֲיוֹת"
+    }
+  ]
+}

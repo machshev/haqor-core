@@ -1,0 +1,183 @@
+{
+  "book": 1,
+  "chapter": 3,
+  "review": {
+    "entities": [],
+    "glosses": [
+      {
+        "gloss": "then she said",
+        "position": 0
+      },
+      {
+        "gloss": "the woman",
+        "position": 1
+      },
+      {
+        "gloss": "to",
+        "position": 2
+      },
+      {
+        "gloss": "the serpent",
+        "position": 3
+      },
+      {
+        "gloss": "from the fruit of",
+        "position": 4
+      },
+      {
+        "gloss": "the tree of",
+        "position": 5
+      },
+      {
+        "gloss": "the garden",
+        "position": 6
+      },
+      {
+        "gloss": "we may eat",
+        "position": 7
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[Then|0] [the woman|1] [said|0] [to|2] [the serpent|3], “ [We may eat|7] [from the fruit of|4] [the tree|5]{s} [of|5] [the garden|6],"
+  },
+  "source": "ot",
+  "verse": 2,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "amar"
+        },
+        "evidence": "וַתֹּאמֶר agrees with the feminine singular subject הָאִשָּׁה. The phrase אֶל הַנָּחָשׁ identifies the serpent as her addressee, and נֹאכֵל (“we may eat”) is part of her quoted speech.",
+        "gloss": "and she said",
+        "language": "he",
+        "lemma": "אָמַר",
+        "morphology": "Qal wayyiqtol, third-person feminine singular, with prefixed וַ־",
+        "qualifier": "",
+        "root": "אמר",
+        "sense": "say, introducing direct speech"
+      },
+      "position": 0,
+      "surface": "וַתֹּאמֶר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "enosh"
+        },
+        "evidence": "In וַתֹּאמֶר הָאִשָּׁה אֶל הַנָּחָשׁ, “the woman said to the serpent,” הָאִשָּׁה identifies the speaker. The feminine singular verb וַתֹּאמֶר agrees with its subject, and the clause expresses no kinship or marital relationship.",
+        "gloss": "the woman",
+        "language": "he",
+        "lemma": "אִשָּׁה",
+        "morphology": "Definite article הָ־ prefixed to a feminine singular absolute common noun.",
+        "qualifier": "",
+        "root": "אנש",
+        "sense": "woman"
+      },
+      "position": 1,
+      "surface": "הָאִשָּׁה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "In וַתֹּאמֶר הָאִשָּׁה אֶל הַנָּחָשׁ (“the woman said to the serpent”), אֶל marks the serpent as the addressee of the woman’s speech.",
+        "gloss": "to",
+        "language": "he",
+        "lemma": "אֶל",
+        "morphology": "Preposition without prefix or suffix",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "to (a person: speaking, sending, bringing)"
+      },
+      "position": 2,
+      "surface": "אֶל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "nachash"
+        },
+        "evidence": "וַתֹּאמֶר הָאִשָּׁה אֶל הַנָּחָשׁ means “the woman said to the serpent.” The definite article identifies the serpent that addressed her in the preceding verse.",
+        "gloss": "the serpent",
+        "language": "he",
+        "lemma": "נָחָשׁ",
+        "morphology": "Common noun, masculine singular absolute, with prefixed definite article הַ.",
+        "qualifier": "",
+        "root": "נחש",
+        "sense": "the serpent of Eden"
+      },
+      "position": 3,
+      "surface": "הַנָּחָשׁ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "parah"
+        },
+        "evidence": "In מִפְּרִי עֵץ הַגָּן, עֵץ הַגָּן identifies the tree that bears the fruit. The woman says נֹאכֵל, “we may eat,” and מִן marks the fruit of which they may eat.",
+        "gloss": "some of the fruit of",
+        "language": "he",
+        "lemma": "פְּרִי",
+        "morphology": "Masculine singular construct noun with prefixed partitive מִן, appearing as מִ־ with the nun assimilated into פ.",
+        "qualifier": "",
+        "root": "פרה",
+        "sense": "fruit (of a tree or plant)"
+      },
+      "position": 4,
+      "surface": "מִפְּרִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ets"
+        },
+        "evidence": "In מִפְּרִי עֵץ הַגָּן, עֵץ stands in construct with הַגָּן, “the garden.” The woman says they eat the fruit of the garden’s trees, so the singular עֵץ refers generically to a living tree.",
+        "gloss": "tree",
+        "language": "he",
+        "lemma": "עֵץ",
+        "morphology": "Common noun, masculine singular construct.",
+        "qualifier": "",
+        "root": "עצה",
+        "sense": "tree"
+      },
+      "position": 5,
+      "surface": "עֵץ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ganan"
+        },
+        "evidence": "In מִפְּרִי עֵץ הַגָּן, “from the fruit of the trees of the garden,” הַגָּן completes the construct chain and identifies where the trees grow.",
+        "gloss": "the garden",
+        "language": "he",
+        "lemma": "גַּן",
+        "morphology": "Definite article הַ־ + common noun, singular absolute.",
+        "qualifier": "",
+        "root": "גננ",
+        "sense": "garden"
+      },
+      "position": 6,
+      "surface": "הַגָּן"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "akal"
+        },
+        "evidence": "מִפְּרִי עֵץ הַגָּן identifies what may be eaten, the fruit of the garden’s trees. In her reply to the serpent, the woman uses the first-person plural נֹאכֵל to state what they are permitted to eat.",
+        "gloss": "we may eat",
+        "language": "he",
+        "lemma": "אָכַל",
+        "morphology": "Qal imperfect, first person common plural, with preformative נ־ and no suffix.",
+        "qualifier": "",
+        "root": "אכל",
+        "sense": "eat"
+      },
+      "position": 7,
+      "surface": "נֹאכֵל"
+    }
+  ]
+}

@@ -1,0 +1,371 @@
+{
+  "book": 1,
+  "chapter": 7,
+  "source": "ot",
+  "verse": 11,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shanah"
+        },
+        "evidence": "בִּשְׁנַת introduces the date, and שֵׁשׁ מֵאוֹת שָׁנָה לְחַיֵּי נֹחַ identifies it as the six hundredth year of Noah’s life. The following month and day locate the event within that year.",
+        "gloss": "in the year of",
+        "language": "he",
+        "lemma": "שָׁנָה",
+        "morphology": "Preposition בִּ־ ‘in’ prefixed to שְׁנַת, the feminine singular construct of שָׁנָה.",
+        "qualifier": "noun",
+        "root": "שנה",
+        "sense": "years of a life, age"
+      },
+      "position": 0,
+      "surface": "בִּשְׁנַת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shesh"
+        },
+        "evidence": "In שֵׁשׁ מֵאוֹת, שֵׁשׁ counts the hundreds. The phrase dates the event to the six hundredth year of Noah’s life.",
+        "gloss": "six",
+        "language": "he",
+        "lemma": "שֵׁשׁ",
+        "morphology": "Feminine singular absolute cardinal numeral, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "שדש",
+        "sense": "six as the multiplier in six hundred"
+      },
+      "position": 1,
+      "surface": "שֵׁשׁ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "meah"
+        },
+        "evidence": "שֵׁשׁ counts the hundreds in שֵׁשׁ מֵאוֹת שָׁנָה, “six hundred years.” The phrase dates the event to the six hundredth year of Noah’s life.",
+        "gloss": "hundred (in “six hundred”)",
+        "language": "he",
+        "lemma": "מֵאָה",
+        "morphology": "Cardinal numeral, plural absolute, without prefix or suffix.",
+        "qualifier": "",
+        "root": "מאה",
+        "sense": "hundreds (plural מֵאוֹת, with the digits: three hundred to nine hundred)"
+      },
+      "position": 2,
+      "surface": "מֵאוֹת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shanah"
+        },
+        "evidence": "In שֵׁשׁ מֵאוֹת שָׁנָה, the singular שָׁנָה gives the unit counted by “six hundred.” The following לְחַיֵּי נֹחַ identifies these as years of Noah’s life, dating the event to his six hundredth year.",
+        "gloss": "years",
+        "language": "he",
+        "lemma": "שָׁנָה",
+        "morphology": "Common noun, feminine singular absolute.",
+        "qualifier": "noun",
+        "root": "שנה",
+        "sense": "years of a life, age"
+      },
+      "position": 3,
+      "surface": "שָׁנָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chayah"
+        },
+        "evidence": "The construct חַיֵּי takes נֹחַ as its possessor. The phrase לְחַיֵּי נֹחַ identifies the six hundredth year as a year of Noah’s life.",
+        "gloss": "of the life of",
+        "language": "he",
+        "lemma": "חַיִּים",
+        "morphology": "Preposition לְ prefixed to a masculine plural construct noun.",
+        "qualifier": "",
+        "root": "חיה",
+        "sense": "lifetime, the days of one's life"
+      },
+      "position": 4,
+      "surface": "לְחַיֵּי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "noah-son-of-lamech",
+            "base": null,
+            "change": "Add a personal-name article for נֹחַ linked to the root article nuach.",
+            "definition": "Noah, the son whom Lamech names in hope of relief from toil.",
+            "evidence": "Genesis 5:29 gives the name נֹחַ and explains it through the wordplay on יְנַחֲמֵנוּ, “he will comfort us.”"
+          }
+        },
+        "evidence": "In לְחַיֵּי נֹחַ, “of Noah’s life,” נֹחַ names the person whose six hundredth year dates the flood.",
+        "gloss": "Noah",
+        "language": "he",
+        "lemma": "נֹחַ",
+        "morphology": "Masculine singular proper noun in the absolute state, without prefix or suffix.",
+        "qualifier": "",
+        "root": "נוח",
+        "sense": "Noah, son of Lamech"
+      },
+      "position": 5,
+      "surface": "נֹחַ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chadash"
+        },
+        "evidence": "בַּחֹדֶשׁ הַשֵּׁנִי means “in the second month.” The verse then specifies the seventeenth day of that month, confirming the calendar sense.",
+        "gloss": "in the month",
+        "language": "he",
+        "lemma": "חֹדֶשׁ",
+        "morphology": "Preposition בְּ with the definite article הַ, followed by a masculine singular absolute noun.",
+        "qualifier": "",
+        "root": "חדש",
+        "sense": "month"
+      },
+      "position": 6,
+      "surface": "בַּחֹדֶשׁ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shanah"
+        },
+        "evidence": "In בַּחֹדֶשׁ הַשֵּׁנִי, “in the second month,” הַשֵּׁנִי agrees with חֹדֶשׁ in gender, number, and definiteness and gives the month’s position in the year.",
+        "gloss": "the second",
+        "language": "he",
+        "lemma": "שֵׁנִי",
+        "morphology": "Definite article הַ־ prefixed to a masculine singular absolute ordinal adjective.",
+        "qualifier": "",
+        "root": "שנה",
+        "sense": "second (in order)"
+      },
+      "position": 7,
+      "surface": "הַשֵּׁנִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shaba"
+        },
+        "evidence": "שִׁבְעָה combines with the following עָשָׂר to form ‘seventeen’. The counted noun יוֹם is masculine, and בְּ marks the date as ‘on the seventeenth day of the month’.",
+        "gloss": "seven (in ‘seventeen’)",
+        "language": "he",
+        "lemma": "שֶׁבַע",
+        "morphology": "Temporal preposition בְּ (‘on’) prefixed to שִׁבְעָה, the masculine singular absolute form of the cardinal numeral.",
+        "qualifier": "",
+        "root": "שבע",
+        "sense": "seven"
+      },
+      "position": 8,
+      "surface": "בְּשִׁבְעָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "asar"
+        },
+        "evidence": "In בְּשִׁבְעָה עָשָׂר יוֹם לַחֹדֶשׁ, שִׁבְעָה supplies seven and עָשָׂר supplies ten. Together they specify the seventeenth day of the month.",
+        "gloss": "-teen (in seventeen)",
+        "language": "he",
+        "lemma": "עָשָׂר",
+        "morphology": "Masculine singular absolute cardinal numeral, the second element of שִׁבְעָה עָשָׂר.",
+        "qualifier": "",
+        "root": "עשׂר",
+        "sense": "ten, in the numbers eleven to nineteen"
+      },
+      "position": 9,
+      "surface": "עָשָׂר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yom"
+        },
+        "evidence": "In בְּשִׁבְעָה עָשָׂר יוֹם לַחֹדֶשׁ, the numeral seventeen counts days of the month, giving the date ‘on the seventeenth day of the month.’",
+        "gloss": "day",
+        "language": "he",
+        "lemma": "יוֹם",
+        "morphology": "Common noun, masculine singular absolute, without prefix or suffix.",
+        "qualifier": "",
+        "root": "יומ",
+        "sense": "a day, counted"
+      },
+      "position": 10,
+      "surface": "יוֹם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chadash"
+        },
+        "evidence": "בַּחֹדֶשׁ הַשֵּׁנִי identifies the second month. In בְּשִׁבְעָה עָשָׂר יוֹם לַחֹדֶשׁ, the marked word refers back to that month and specifies that the date is its seventeenth day.",
+        "gloss": "of the month",
+        "language": "he",
+        "lemma": "חֹדֶשׁ",
+        "morphology": "Masculine singular absolute noun with prefixed preposition לְ and definite article הַ, combined as לַ־.",
+        "qualifier": "",
+        "root": "חדש",
+        "sense": "month"
+      },
+      "position": 11,
+      "surface": "לַחֹדֶשׁ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yom"
+        },
+        "evidence": "In בַּיּוֹם הַזֶּה, the demonstrative הַזֶּה points back to the seventeenth day of the second month. The phrase places the bursting of the springs and the opening of the floodgates on that same day.",
+        "gloss": "on that day",
+        "language": "he",
+        "lemma": "יוֹם",
+        "morphology": "Common noun, masculine singular absolute, with prefixed בְּ ‘on’ and the definite article הַ, contracted to בַּ־.",
+        "qualifier": "",
+        "root": "יומ",
+        "sense": "today, this day; now"
+      },
+      "position": 12,
+      "surface": "בַּיּוֹם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "baqa"
+        },
+        "evidence": "The plural verb נִבְקְעוּ agrees with its following subject כָּל מַעְיְנֹת תְּהוֹם רַבָּה, “all the springs of the great deep.” The parallel clause says that the floodgates of heaven “were opened” (נִפְתָּחוּ). Both clauses describe sources of floodwater opening.",
+        "gloss": "burst open",
+        "language": "he",
+        "lemma": "בָּקַע",
+        "morphology": "Niphal perfect, third person common plural",
+        "qualifier": "",
+        "root": "בקע",
+        "sense": "burst open"
+      },
+      "position": 14,
+      "surface": "נִבְקְעוּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "kalal"
+        },
+        "evidence": "כָּל quantifies the plural מַעְיְנֹת in כָּל מַעְיְנֹת תְּהוֹם רַבָּה. All the springs of the great deep are the subject of נִבְקְעוּ, “burst open.”",
+        "gloss": "all",
+        "language": "he",
+        "lemma": "כֹּל",
+        "morphology": "Common noun, masculine singular construct, without prefix or suffix.",
+        "qualifier": "",
+        "root": "כלל",
+        "sense": "all, the whole"
+      },
+      "position": 15,
+      "surface": "כָּל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ayin"
+        },
+        "evidence": "מַעְיְנֹת is in construct with תְּהוֹם רַבָּה, yielding “springs of the great deep.” These springs burst open (נִבְקְעוּ) as the floodgates of heaven open.",
+        "gloss": "springs of",
+        "language": "he",
+        "lemma": "מַעְיָן",
+        "morphology": "Masculine plural construct noun without prefix or suffix",
+        "qualifier": "",
+        "root": "עינ",
+        "sense": "spring, fountain of water"
+      },
+      "position": 16,
+      "surface": "מַעְיְנֹת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "tehom"
+        },
+        "evidence": "מַעְיְנֹת תְּהוֹם רַבָּה means “the springs of the great deep.” The springs burst open as the windows of the heavens open, pairing floodwaters from below with water from above.",
+        "gloss": "the deep",
+        "language": "he",
+        "lemma": "תְּהוֹם",
+        "morphology": "Common noun, singular absolute, with feminine agreement in רַבָּה.",
+        "qualifier": "",
+        "root": "תהמ",
+        "sense": "waters below ground"
+      },
+      "position": 17,
+      "surface": "תְּהוֹם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ravav"
+        },
+        "evidence": "In כָּל מַעְיְנֹת תְּהוֹם רַבָּה, “all the springs of the great deep,” רַבָּה agrees with the feminine singular תְּהוֹם and describes the vast extent of the deep.",
+        "gloss": "great",
+        "language": "he",
+        "lemma": "רַב",
+        "morphology": "Attributive adjective, feminine singular absolute.",
+        "qualifier": "adjective",
+        "root": "רבב",
+        "sense": "great in degree or extent"
+      },
+      "position": 18,
+      "surface": "רַבָּה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "arav-ambush"
+        },
+        "evidence": "אֲרֻבֹּת is in construct with הַשָּׁמַיִם, giving “the windows of heaven.” The verb נִפְתָּחוּ (“were opened”) parallels the bursting open of the springs of the deep. In this flood scene, “floodgates” conveys the function of the heavenly openings.",
+        "gloss": "and the floodgates of",
+        "language": "he",
+        "lemma": "אֲרֻבָּה",
+        "morphology": "Conjunction וַ־ plus feminine plural construct noun, with no suffix.",
+        "qualifier": "",
+        "root": "ארב",
+        "sense": "window, opening"
+      },
+      "position": 19,
+      "surface": "וַאֲרֻבֹּת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shamayim"
+        },
+        "evidence": "In וַאֲרֻבֹּת הַשָּׁמַיִם נִפְתָּחוּ, “and the floodgates of the sky were opened,” הַשָּׁמַיִם identifies where the floodgates are. The verse pairs the waters above with the springs of the great deep below.",
+        "gloss": "the sky",
+        "language": "he",
+        "lemma": "שָׁמַיִם",
+        "morphology": "Definite article הַ־ prefixed to a masculine plural noun in the absolute state.",
+        "qualifier": "",
+        "root": "שמה",
+        "sense": "sky, the visible heavens"
+      },
+      "position": 20,
+      "surface": "הַשָּׁמַיִם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "petach"
+        },
+        "evidence": "The plural verb נִפְתָּחוּ agrees with אֲרֻבֹּת הַשָּׁמַיִם, “the floodgates of heaven.” Its passive sense parallels נִבְקְעוּ, “were split open,” in the preceding clause about the springs of the deep.",
+        "gloss": "were opened",
+        "language": "he",
+        "lemma": "פָּתַח",
+        "morphology": "Niphal perfect, third person common plural",
+        "qualifier": "",
+        "root": "פתח",
+        "sense": "be opened"
+      },
+      "position": 21,
+      "surface": "נִפְתָּחוּ"
+    }
+  ]
+}

@@ -1,0 +1,269 @@
+{
+  "book": 1,
+  "chapter": 1,
+  "source": "ot",
+  "verse": 14,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "amar"
+        },
+        "evidence": "אֱלֹהִים is the subject, and יְהִי מְאֹרֹת (“Let there be lights”) begins the direct speech introduced by וַיֹּאמֶר.",
+        "gloss": "and said",
+        "language": "he",
+        "lemma": "אָמַר",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ־.",
+        "qualifier": "",
+        "root": "אמר",
+        "sense": "say, introducing direct speech"
+      },
+      "position": 0,
+      "surface": "וַיֹּאמֶר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "In וַיֹּאמֶר אֱלֹהִים, the third-person masculine singular verb וַיֹּאמֶר identifies God as the single speaker who commands the lights to appear.",
+        "gloss": "God",
+        "language": "he",
+        "lemma": "אֱלֹהִים",
+        "morphology": "Common noun, masculine plural absolute, with singular agreement.",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "the Mighty One, God"
+      },
+      "position": 1,
+      "surface": "אֱלֹהִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "hayah"
+        },
+        "evidence": "After וַיֹּאמֶר אֱלֹהִים (“God said”), יְהִי introduces the command for מְאֹרֹת (“lights”) to come into existence in the expanse of the heavens. The singular verb precedes its plural subject.",
+        "gloss": "let there be",
+        "language": "he",
+        "lemma": "הָיָה",
+        "morphology": "Qal jussive, third person masculine singular",
+        "qualifier": "",
+        "root": "היה",
+        "sense": "to come into existence"
+      },
+      "position": 2,
+      "surface": "יְהִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "or"
+        },
+        "evidence": "God calls for מְאֹרֹת in the expanse of the heavens to distinguish day from night. The plural וְהָיוּ refers back to these celestial lights, which are to mark appointed times, days, and years.",
+        "gloss": "luminaries",
+        "language": "he",
+        "lemma": "מָאוֹר",
+        "morphology": "Common noun, masculine plural absolute, with the plural ending ־ֹת.",
+        "qualifier": "",
+        "root": "אור",
+        "sense": "luminary, light-giver"
+      },
+      "position": 3,
+      "surface": "מְאֹרֹת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "raqia"
+        },
+        "evidence": "בִּרְקִיעַ הַשָּׁמַיִם means “in the expanse of the heavens.” The construct noun is linked to הַשָּׁמַיִם, and the phrase locates the lights (מְאֹרֹת).",
+        "gloss": "in the expanse",
+        "language": "he",
+        "lemma": "רָקִיעַ",
+        "morphology": "Prefixed preposition בִּ “in” + masculine singular construct noun.",
+        "qualifier": "",
+        "root": "רקע",
+        "sense": "expanse"
+      },
+      "position": 4,
+      "surface": "בִּרְקִיעַ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shamayim"
+        },
+        "evidence": "בִּרְקִיעַ הַשָּׁמַיִם places the lights “in the expanse of the sky,” where they distinguish day from night.",
+        "gloss": "the sky",
+        "language": "he",
+        "lemma": "שָׁמַיִם",
+        "morphology": "Definite article הַ־ prefixed to a masculine plural noun in the absolute state.",
+        "qualifier": "",
+        "root": "שמה",
+        "sense": "sky, the visible heavens"
+      },
+      "position": 5,
+      "surface": "הַשָּׁמַיִם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "badal",
+            "base": null,
+            "change": "Add the Hebrew verb בָּדַל with its Hiphil sense of separating.",
+            "definition": "To separate one thing from another.",
+            "evidence": "In Gen.1.4, God separates light from darkness. The repeated בֵּין introduces each member of the pair."
+          }
+        },
+        "evidence": "לְהַבְדִּיל gives the purpose of the lights. בֵּין הַיּוֹם וּבֵין הַלָּיְלָה identifies what they are to separate, the day and the night.",
+        "gloss": "to separate",
+        "language": "he",
+        "lemma": "בָּדַל",
+        "morphology": "Hiphil infinitive construct with prefixed לְ expressing purpose",
+        "qualifier": "",
+        "root": "בדל",
+        "sense": "to separate one thing from another"
+      },
+      "position": 6,
+      "surface": "לְהַבְדִּיל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "bayin"
+        },
+        "evidence": "In לְהַבְדִּיל בֵּין הַיּוֹם וּבֵין הַלָּיְלָה, “to distinguish between day and night,” the marked בֵּין introduces day as the first of the two things the lights distinguish.",
+        "gloss": "between",
+        "language": "he",
+        "lemma": "בַּיִן",
+        "morphology": "Preposition in the form בֵּין, without prefix or suffix.",
+        "qualifier": "",
+        "root": "בינ",
+        "sense": "between (things told apart or judged)"
+      },
+      "position": 7,
+      "surface": "בֵּין"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yom"
+        },
+        "evidence": "In לְהַבְדִּיל בֵּין הַיּוֹם וּבֵין הַלָּיְלָה, the lights are to distinguish the day from the night. The pairing identifies הַיּוֹם as the daylight portion of the cycle.",
+        "gloss": "the day",
+        "language": "he",
+        "lemma": "יוֹם",
+        "morphology": "Definite article הַ־ prefixed to a masculine singular absolute noun.",
+        "qualifier": "",
+        "root": "יומ",
+        "sense": "daylight, the day as against night"
+      },
+      "position": 8,
+      "surface": "הַיּוֹם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "bayin"
+        },
+        "evidence": "In לְהַבְדִּיל בֵּין הַיּוֹם וּבֵין הַלָּיְלָה, וּבֵין introduces night as the second member of the pair the lights are to distinguish, day and night.",
+        "gloss": "and between",
+        "language": "he",
+        "lemma": "בַּיִן",
+        "morphology": "Conjunction וּ prefixed to the preposition בֵין.",
+        "qualifier": "",
+        "root": "בינ",
+        "sense": "between (things told apart or judged)"
+      },
+      "position": 9,
+      "surface": "וּבֵין"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "hayah"
+        },
+        "evidence": "The plural verb refers back to מְאֹרֹת, the lights. The לְ in לְאֹתֹת specifies their function: they are to serve as signs. The rest of the clause extends that function to marking appointed times, days, and years.",
+        "gloss": "and let them serve as",
+        "language": "he",
+        "lemma": "הָיָה",
+        "morphology": "Qal perfect, third person common plural, with prefixed וְ (weqatal), continuing the directive introduced by יְהִי.",
+        "qualifier": "",
+        "root": "היה",
+        "sense": "to serve as"
+      },
+      "position": 11,
+      "surface": "וְהָיוּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "taavah"
+        },
+        "evidence": "In וְהָיוּ לְאֹתֹת, the lights are the subject of וְהָיוּ, and לְ introduces their function: they are to serve as signs. The following references to appointed times, days, and years place that function in the context of marking time.",
+        "gloss": "as signs",
+        "language": "he",
+        "lemma": "אוֹת",
+        "morphology": "Preposition לְ prefixed to a common noun of both genders, plural absolute.",
+        "qualifier": "",
+        "root": "אוה",
+        "sense": "sign"
+      },
+      "position": 12,
+      "surface": "לְאֹתֹת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yaad"
+        },
+        "evidence": "The lights distinguish day from night and mark appointed times alongside days and years. This sequence supports a calendrical sense. The verse names no particular feast.",
+        "gloss": "and for appointed times",
+        "language": "he",
+        "lemma": "מוֹעֵד",
+        "morphology": "Conjunction וּ־ ‘and’ + preposition לְ־ ‘for’ + masculine plural absolute noun מוֹעֲדִים.",
+        "qualifier": "",
+        "root": "יעד",
+        "sense": "appointed time, set time"
+      },
+      "position": 13,
+      "surface": "וּלְמוֹעֲדִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yom"
+        },
+        "evidence": "וּלְיָמִים is paired with וְשָׁנִים (“and years”), identifying days as units of time marked by the lights in the sky. Earlier in the verse, הַיּוֹם is paired with הַלָּיְלָה and means daylight.",
+        "gloss": "and for days",
+        "language": "he",
+        "lemma": "יוֹם",
+        "morphology": "וּ־ (conjunction “and”) + לְ־ (preposition “for”) + יָמִים (masculine plural absolute noun)",
+        "qualifier": "",
+        "root": "יומ",
+        "sense": "a day, counted"
+      },
+      "position": 14,
+      "surface": "וּלְיָמִים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shanah"
+        },
+        "evidence": "The lights in the sky mark units of time. In וּלְיָמִים וְשָׁנִים, “for days and years,” שָׁנִים names the longer cycle paired with days.",
+        "gloss": "and years",
+        "language": "he",
+        "lemma": "שָׁנָה",
+        "morphology": "Conjunction וְ prefixed to a feminine plural absolute noun.",
+        "qualifier": "noun",
+        "root": "שנה",
+        "sense": "year, the round of the seasons"
+      },
+      "position": 15,
+      "surface": "וְשָׁנִים"
+    }
+  ]
+}

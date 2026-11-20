@@ -1,0 +1,270 @@
+{
+  "book": 1,
+  "chapter": 5,
+  "source": "ot",
+  "verse": 29,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "qara"
+        },
+        "evidence": "אֶת־שְׁמוֹ marks “his name” as the direct object, and נֹחַ supplies the name given.",
+        "gloss": "and he named",
+        "language": "he",
+        "lemma": "קָרָא",
+        "morphology": "Qal wayyiqtol, third masculine singular, with prefixed conjunction וַ־.",
+        "qualifier": "call",
+        "root": "קרא",
+        "sense": "give a name to"
+      },
+      "position": 0,
+      "surface": "וַיִּקְרָא"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "et"
+        },
+        "evidence": "In וַיִּקְרָא אֶת שְׁמוֹ נֹחַ, אֶת marks שְׁמוֹ (“his name”) as the direct object of וַיִּקְרָא (“he called”). The possessive suffix makes שְׁמוֹ definite, and נֹחַ supplies the name given.",
+        "gloss": "(untranslated)",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Unsuffixed direct-object particle with no prefix.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "(marks the definite object)"
+      },
+      "position": 1,
+      "surface": "אֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "shem",
+            "base": "5ff57a119255ca3775ba1c5592f6cd00e22ec622fafccd6afc08384d01b566fe",
+            "change": "Add Genesis 5:29 as an example of giving a child a name under the existing Hebrew noun sense.",
+            "definition": "The personal name by which someone is known.",
+            "evidence": "Genesis 5:29 places the child's given name, נֹחַ, immediately after שְׁמוֹ, “his name.”"
+          }
+        },
+        "evidence": "In וַיִּקְרָא אֶת שְׁמוֹ נֹחַ, “he called his name Noah,” אֶת marks שְׁמוֹ as the object of וַיִּקְרָא. The following word נֹחַ supplies the name given to the child.",
+        "gloss": "his name",
+        "language": "he",
+        "lemma": "שֵׁם",
+        "morphology": "Masculine singular construct noun with the third-person masculine singular possessive suffix ־וֹ, referring to the child.",
+        "qualifier": "noun",
+        "root": "שמ",
+        "sense": "name by which someone is known"
+      },
+      "position": 2,
+      "surface": "שְׁמוֹ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "noah-son-of-lamech",
+            "base": null,
+            "change": "Add a personal-name article for נֹחַ linked to the root article nuach.",
+            "definition": "Noah, the son whom Lamech names in hope of relief from toil.",
+            "evidence": "Genesis 5:29 gives the name נֹחַ and explains it through the wordplay on יְנַחֲמֵנוּ, “he will comfort us.”"
+          }
+        },
+        "evidence": "וַיִּקְרָא אֶת־שְׁמוֹ נֹחַ means “he called his name Noah.” Lamech explains his choice with יְנַחֲמֵנוּ, “he will comfort us,” expressing hope for relief from toil on the cursed ground. The verb נחם echoes the sound of the name, which is associated with נוח, “rest.”",
+        "gloss": "Noah",
+        "language": "he",
+        "lemma": "נֹחַ",
+        "morphology": "Masculine singular personal name, without prefix or suffix.",
+        "qualifier": "",
+        "root": "נוח",
+        "sense": "Noah, son of Lamech"
+      },
+      "position": 3,
+      "surface": "נֹחַ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "amar"
+        },
+        "evidence": "After וַיִּקְרָא אֶת שְׁמוֹ נֹחַ (“he named him Noah”), לֵאמֹר introduces the father’s words explaining the name. The quotation begins זֶה יְנַחֲמֵנוּ (“this one will comfort us”).",
+        "gloss": "saying",
+        "language": "he",
+        "lemma": "אָמַר",
+        "morphology": "Qal infinitive construct with prefixed preposition לְ.",
+        "qualifier": "",
+        "root": "אמר",
+        "sense": "say, introducing direct speech"
+      },
+      "position": 4,
+      "surface": "לֵאמֹר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "zeh",
+            "base": "7126345ad6c0c225ec7d4e6a22c8ec7a86646ea1f9d4d145a312923aab4dfc83",
+            "change": "Clarify the use of prefixed לְ in the Genesis 2:23 evidence for the existing “this-one” sense of זֶה.",
+            "definition": "Used independently, the feminine singular זֹאת can point to a woman present as “this one.”",
+            "evidence": "Genesis 2:23 places לְזֹאת before יִקָּרֵא אִשָּׁה, identifying the woman who receives the designation."
+          }
+        },
+        "evidence": "After naming the child נֹחַ, his father says זֶה יְנַחֲמֵנוּ, “this one will comfort us.” זֶה points to Noah as the one who will bring comfort.",
+        "gloss": "this one",
+        "language": "he",
+        "lemma": "זֶה",
+        "morphology": "Masculine singular demonstrative pronoun, used independently as the subject of יְנַחֲמֵנוּ.",
+        "qualifier": "",
+        "root": "זה",
+        "sense": "Points to a person present as “this one.”"
+      },
+      "position": 5,
+      "surface": "זֶה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "nacham"
+        },
+        "evidence": "זֶה, “this one,” refers to the newborn Noah. The suffix ־נוּ means “us,” and מִמַּעֲשֵׂנוּ וּמֵעִצְּבוֹן יָדֵינוּ identifies the work and painful toil from which Lamech expects comfort.",
+        "gloss": "will comfort us",
+        "language": "he",
+        "lemma": "נָחַם",
+        "morphology": "Piel imperfect, third person masculine singular, with a first person common plural object suffix.",
+        "qualifier": "",
+        "root": "נחמ",
+        "sense": "to comfort"
+      },
+      "position": 6,
+      "surface": "יְנַחֲמֵנוּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "asah"
+        },
+        "evidence": "Lamech pairs מִמַּעֲשֵׂנוּ with וּמֵעִצְּבוֹן יָדֵינוּ, “and from the toil of our hands.” The reference to the ground that YHWH cursed identifies the work as the labor of cultivating it.",
+        "gloss": "from our work",
+        "language": "he",
+        "lemma": "מַעֲשֶׂה",
+        "morphology": "Masculine singular construct noun with prefixed מִן (its נ assimilates to the following מ) and first-person common plural possessive suffix ־נוּ.",
+        "qualifier": "",
+        "root": "עשׂה",
+        "sense": "work, labor"
+      },
+      "position": 7,
+      "surface": "מִמַּעֲשֵׂנוּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "atsevet"
+        },
+        "evidence": "יָדֵינוּ completes the construct phrase ‘the painful toil of our hands’. Its parallel, מִמַּעֲשֵׂנוּ ‘from our work’, and the reference to the ground that YHWH cursed identify the toil as the hardship of working the soil.",
+        "gloss": "and from the painful toil of",
+        "language": "he",
+        "lemma": "עִצָּבוֹן",
+        "morphology": "Masculine singular construct noun with prefixed וּ־ ‘and’ and מֵ־ ‘from’.",
+        "qualifier": "",
+        "root": "עצב",
+        "sense": "painful toil"
+      },
+      "position": 8,
+      "surface": "וּמֵעִצְּבוֹן"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "min"
+        },
+        "evidence": "In מִן הָאֲדָמָה, “from the ground,” the ground that YHWH cursed is the source of the painful toil described as עִצְּבוֹן יָדֵינוּ, “the toil of our hands.”",
+        "gloss": "from",
+        "language": "he",
+        "lemma": "מִן",
+        "morphology": "Independent, unsuffixed preposition before הָאֲדָמָה.",
+        "qualifier": "",
+        "root": "מנ",
+        "sense": "out of, made from; from (a source or giver)"
+      },
+      "position": 10,
+      "surface": "מִן"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "adam"
+        },
+        "evidence": "מִן הָאֲדָמָה identifies the ground as the source of the toil of their hands. The relative clause אֲשֶׁר אֵרְרָהּ יַהְוֶה identifies it as the ground YHWH cursed, linking the toil to working the soil.",
+        "gloss": "the ground",
+        "language": "he",
+        "lemma": "אֲדָמָה",
+        "morphology": "Feminine singular absolute common noun with the prefixed definite article הָ־.",
+        "qualifier": "",
+        "root": "אדמ",
+        "sense": "the ground that is tilled; soil"
+      },
+      "position": 11,
+      "surface": "הָאֲדָמָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ashar"
+        },
+        "evidence": "אֲשֶׁר introduces the clause modifying הָאֲדָמָה, “the ground which Yahweh cursed.” The feminine singular object suffix ־הּ on אֵרְרָהּ refers back to הָאֲדָמָה.",
+        "gloss": "which",
+        "language": "he",
+        "lemma": "אֲשֶׁר",
+        "morphology": "Invariable relative particle without prefix or suffix.",
+        "qualifier": "",
+        "root": "אשר",
+        "sense": "who, which, that"
+      },
+      "position": 12,
+      "surface": "אֲשֶׁר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "arar",
+            "base": null,
+            "change": "Broaden the proposed Qal definition to include a curse pronounced on a thing, and cite the feminine participle applied to the ground.",
+            "definition": "To pronounce a curse on someone or something. The passive participle describes whoever or whatever is under the curse.",
+            "evidence": "In Gen.3.17 Yahweh addresses Adam, but the subject of אֲרוּרָה is הָאֲדָמָה, the ground. In Gen.3.14 the corresponding masculine form אָרוּר describes the serpent."
+          }
+        },
+        "evidence": "In הָאֲדָמָה אֲשֶׁר אֵרְרָהּ יַהְוֶה, “the ground that Yahweh had cursed,” יַהְוֶה is the subject. The object suffix ־הּ refers back to הָאֲדָמָה, the ground pronounced cursed in Genesis 3:17.",
+        "gloss": "had cursed",
+        "language": "he",
+        "lemma": "אָרַר",
+        "morphology": "Piel perfect, third-person masculine singular, with a third-person feminine singular object suffix.",
+        "qualifier": "",
+        "root": "ארר",
+        "sense": "To pronounce a curse on someone or something."
+      },
+      "position": 13,
+      "surface": "אֵרְרָהּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yahweh"
+        },
+        "evidence": "In אֲשֶׁר אֵרְרָהּ יַהְוֶה, “which Yahweh cursed,” יַהְוֶה names the subject of אֵרְרָהּ. The feminine singular object suffix refers back to הָאֲדָמָה, “the ground.”",
+        "gloss": "Yahweh",
+        "language": "he",
+        "lemma": "יַהְוֶה",
+        "morphology": "Proper noun, masculine singular, without prefix or suffix",
+        "qualifier": "",
+        "root": "הוה",
+        "sense": "Personal name of the God of Israel"
+      },
+      "position": 14,
+      "surface": "יַהְוֶה"
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "book": 40,
+  "chapter": 1,
+  "source": "peshitta",
+  "verse": 4,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "aram-syriac",
+            "base": null,
+            "change": "Add the pointed Syriac name אָרָמ and document its correspondence to Hebrew רָם in this genealogy.",
+            "definition": "The Syriac personal name Aram, borne here by Hezron’s son Ram.",
+            "evidence": "Matthew 1:3 places Aram after Hezron in the genealogy. Ruth 4:18–19 gives the same succession from Perez through Hezron to Ram."
+          }
+        },
+        "evidence": "In אָרָמ אַולֵדֿ לעַמִינָדָֿבֿ, Aram is the father of Amminadab. The genealogy continues from verse 3, where Aram is named as Hezron’s son.",
+        "gloss": "Aram",
+        "language": "syc",
+        "lemma": "אָרָמ",
+        "morphology": "Masculine singular personal name with no prefix or suffix, serving as the subject of אַולֵדֿ.",
+        "qualifier": "",
+        "root": "ארמ",
+        "sense": "Aram, son of Hezron"
+      },
+      "position": 0,
+      "surface": "אָרָמ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yalad"
+        },
+        "evidence": "In אָרָמ אַולֵדֿ לעַמִינָדָֿבֿ, Aram is the subject and ל marks Amminadab as the object. Amminadab then becomes the subject of the same verb in the next father–son link.",
+        "gloss": "fathered",
+        "language": "syc",
+        "lemma": "יְלֵד",
+        "morphology": "Aphel perfect, third person masculine singular, without a pronominal suffix.",
+        "qualifier": "",
+        "root": "ילד",
+        "sense": "beget, father a child"
+      },
+      "position": 1,
+      "surface": "אַולֵדֿ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "amminadab"
+        },
+        "evidence": "אָרָמ אַולֵדֿ לעַמִינָדָֿבֿ means “Ram fathered Amminadab.” The next clause repeats the name without ל as the subject of “fathered Nahshon,” confirming the bearer.",
+        "gloss": "Amminadab",
+        "language": "syc",
+        "lemma": "עַמִינָדָֿבֿ",
+        "morphology": "Masculine singular personal name with prefixed ל marking the direct object of אַולֵדֿ.",
+        "qualifier": "",
+        "root": "נדב",
+        "sense": "Amminadab, son of Ram and father of Nahshon."
+      },
+      "position": 2,
+      "surface": "לעַמִינָדָֿבֿ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "amminadab"
+        },
+        "evidence": "The preceding clause names Amminadab as Aram’s son. The marked occurrence begins the next clause, עַמִינָדָֿבֿ אַולֵדֿ לנַחשָונ, “Amminadab fathered Nahshon.”",
+        "gloss": "Amminadab",
+        "language": "syc",
+        "lemma": "עַמִינָדָֿבֿ",
+        "morphology": "Masculine singular personal name, without prefix or suffix, serving as the subject of אַולֵדֿ.",
+        "qualifier": "",
+        "root": "נדב",
+        "sense": "Amminadab, son of Aram and father of Nahshon."
+      },
+      "position": 3,
+      "surface": "עַמִינָדָֿבֿ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yalad"
+        },
+        "evidence": "In עַמִינָדָֿבֿ אַולֵדֿ לנַחשָונ, Amminadab is the subject and ל־ marks Nahshon as the object. The clause records that Amminadab fathered Nahshon.",
+        "gloss": "fathered",
+        "language": "syc",
+        "lemma": "יְלֵד",
+        "morphology": "Aphel perfect, third person masculine singular",
+        "qualifier": "",
+        "root": "ילד",
+        "sense": "beget, father a child"
+      },
+      "position": 4,
+      "surface": "אַולֵדֿ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "nahshon"
+        },
+        "evidence": "In עַמִינָדָֿבֿ אַולֵדֿ לנַחשָונ, Amminadab fathers Nahshon. The next clause repeats the name without ל as its subject and says that Nahshon fathered Salmon. Ruth 4:20 gives the same succession.",
+        "gloss": "Nahshon",
+        "language": "syc",
+        "lemma": "נַחשָונ",
+        "morphology": "Masculine singular personal name with prefixed ל marking the direct object of אַולֵדֿ, “fathered.”",
+        "qualifier": "",
+        "root": "נחש",
+        "sense": "Nahshon, son of Amminadab and father of Salmon."
+      },
+      "position": 5,
+      "surface": "לנַחשָונ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "nahshon"
+        },
+        "evidence": "Amminadab fathers Nahshon in the preceding clause. The marked occurrence begins the next clause, נַחשֻונ אַולֵדֿ לסַלמָונ, “Nahshon fathered Salmon.”",
+        "gloss": "Nahshon",
+        "language": "syc",
+        "lemma": "נַחשֻונ",
+        "morphology": "Masculine singular personal name, unprefixed and unsuffixed, serving as the subject of אַולֵדֿ.",
+        "qualifier": "",
+        "root": "נחש",
+        "sense": "Nahshon, son of Amminadab and father of Salmon."
+      },
+      "position": 6,
+      "surface": "נַחשֻונ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yalad"
+        },
+        "evidence": "In נַחשֻונ אַולֵדֿ לסַלמָונ, Nahshon is the subject and the prefixed ל marks Salmon as the object. The verb states that Nahshon fathered Salmon.",
+        "gloss": "fathered",
+        "language": "syc",
+        "lemma": "יְלֵד",
+        "morphology": "Aphel perfect, third person masculine singular, without a pronominal suffix",
+        "qualifier": "",
+        "root": "ילד",
+        "sense": "beget, father a child"
+      },
+      "position": 7,
+      "surface": "אַולֵדֿ"
+    }
+  ]
+}

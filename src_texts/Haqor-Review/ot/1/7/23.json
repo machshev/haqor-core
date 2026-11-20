@@ -1,0 +1,564 @@
+{
+  "book": 1,
+  "chapter": 7,
+  "review": {
+    "entities": [
+      {
+        "evidence": "Noah survives the flood with those in the ark. This identifies the son of Lamech named in Genesis 5:29 and agrees with the source tag.",
+        "key": "Noah@Gen.5.29",
+        "position": 21
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "so he wiped out",
+        "position": 0
+      },
+      {
+        "gloss": "untranslated",
+        "position": 1
+      },
+      {
+        "gloss": "every",
+        "position": 2
+      },
+      {
+        "gloss": "living thing",
+        "position": 3
+      },
+      {
+        "gloss": "that",
+        "position": 4
+      },
+      {
+        "gloss": "on",
+        "position": 5
+      },
+      {
+        "gloss": "the surface of",
+        "position": 6
+      },
+      {
+        "gloss": "the ground",
+        "position": 7
+      },
+      {
+        "gloss": "from humans",
+        "position": 8
+      },
+      {
+        "gloss": "to",
+        "position": 9
+      },
+      {
+        "gloss": "four-footed beasts",
+        "position": 10
+      },
+      {
+        "gloss": "to",
+        "position": 11
+      },
+      {
+        "gloss": "crawling creatures",
+        "position": 12
+      },
+      {
+        "gloss": "and even to",
+        "position": 13
+      },
+      {
+        "gloss": "the birds of",
+        "position": 14
+      },
+      {
+        "gloss": "the sky",
+        "position": 15
+      },
+      {
+        "gloss": "they were wiped",
+        "position": 16
+      },
+      {
+        "gloss": "from",
+        "position": 17
+      },
+      {
+        "gloss": "the earth",
+        "position": 18
+      },
+      {
+        "gloss": "and … survived",
+        "position": 19
+      },
+      {
+        "gloss": "only",
+        "position": 20
+      },
+      {
+        "gloss": "Noah",
+        "position": 21
+      },
+      {
+        "gloss": "and those who",
+        "position": 22
+      },
+      {
+        "gloss": "with him",
+        "position": 23
+      },
+      {
+        "gloss": "in the ark",
+        "position": 24
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[So he wiped out|0] [every|2,1] [living thing|3] [that|4] {was} [on|5] [the surface of|6] [the ground|7], [from humans|8] [to|9] [four-footed beasts|10], [to|11] [crawling creatures|12], [and even to|13] [the birds of|14] [the sky|15]. [They were wiped|16] [from|17] [the earth|18], [and|19] [only|20] [Noah|21] [and|22] {those} [who|22] {were} [with him|23] [in the ark|24] [survived|19]."
+  },
+  "source": "ot",
+  "verse": 23,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "machah"
+        },
+        "evidence": "The direct object אֶת כָּל הַיְקוּם includes humans, livestock, creeping things, and birds. The passive וַיִּמָּחוּ מִן הָאָרֶץ confirms the result: they were wiped from the earth. Only Noah and those with him in the ark remained.",
+        "gloss": "and he wiped out",
+        "language": "he",
+        "lemma": "מָחָה",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ־ and apocopation of the final ה.",
+        "qualifier": "wipe, erase, blot out",
+        "root": "מחה",
+        "sense": "Wipe out living beings from the face of the earth."
+      },
+      "position": 0,
+      "surface": "וַיִּמַח"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "et"
+        },
+        "evidence": "אֶת introduces כָּל הַיְקוּם, “everything that existed,” as the definite direct object of וַיִּמַח, “he wiped out.”",
+        "gloss": "untranslated",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Unsuffixed direct-object particle in the short form אֶת.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "(marks the definite object)"
+      },
+      "position": 1,
+      "surface": "אֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "kalal"
+        },
+        "evidence": "In אֶת כָּל הַיְקוּם, כָּל modifies the singular collective הַיְקוּם. The list of humans, livestock, creeping things, and birds spells out what “all” includes.",
+        "gloss": "all",
+        "language": "he",
+        "lemma": "כֹּל",
+        "morphology": "Masculine singular construct noun, without prefix or suffix.",
+        "qualifier": "",
+        "root": "כלל",
+        "sense": "all, the whole"
+      },
+      "position": 2,
+      "surface": "כָּל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "qum"
+        },
+        "evidence": "כָּל הַיְקוּם means “every living thing.” The verse identifies what was wiped out by listing humans, livestock, creeping things, and birds.",
+        "gloss": "living thing",
+        "language": "he",
+        "lemma": "יְקוּם",
+        "morphology": "Definite article הַ־ prefixed to a masculine singular absolute noun used collectively.",
+        "qualifier": "",
+        "root": "קומ",
+        "sense": "living thing, all that stands"
+      },
+      "position": 3,
+      "surface": "הַיְקוּם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ashar"
+        },
+        "evidence": "אֲשֶׁר introduces a relative clause modifying כָּל הַיְקוּם, “every living thing.” The clause עַל פְּנֵי הָאֲדָמָה supplies its location, giving the reading “every living thing that was on the face of the ground.”",
+        "gloss": "that",
+        "language": "he",
+        "lemma": "אֲשֶׁר",
+        "morphology": "Uninflected relative particle",
+        "qualifier": "",
+        "root": "אשר",
+        "sense": "who, which, that"
+      },
+      "position": 4,
+      "surface": "אֲשֶׁר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "alah"
+        },
+        "evidence": "In אֲשֶׁר עַל פְּנֵי הָאֲדָמָה, “that was on the face of the ground,” עַל introduces פְּנֵי הָאֲדָמָה and locates what was wiped out.",
+        "gloss": "on",
+        "language": "he",
+        "lemma": "עַל",
+        "morphology": "Simple preposition without prefix or suffix.",
+        "qualifier": "",
+        "root": "עלה",
+        "sense": "on, upon, over"
+      },
+      "position": 5,
+      "surface": "עַל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "panah"
+        },
+        "evidence": "In עַל פְּנֵי הָאֲדָמָה, “on the surface of the ground,” פְּנֵי is the construct form bound to הָאֲדָמָה. The phrase locates the living things that were wiped out.",
+        "gloss": "surface of",
+        "language": "he",
+        "lemma": "פָּנִים",
+        "morphology": "Common noun, both genders, plural construct, without prefix or suffix.",
+        "qualifier": "",
+        "root": "פנה",
+        "sense": "surface (of the earth, the waters)"
+      },
+      "position": 6,
+      "surface": "פְּנֵי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "adam"
+        },
+        "evidence": "In עַל פְּנֵי הָאֲדָמָה, “on the face of the ground,” פְּנֵי is in construct with הָאֲדָמָה. The phrase identifies the surface on which the living beings were wiped out.",
+        "gloss": "the ground",
+        "language": "he",
+        "lemma": "אֲדָמָה",
+        "morphology": "Common noun, feminine singular absolute, with prefixed definite article הָ־.",
+        "qualifier": "",
+        "root": "אדמ",
+        "sense": "the ground underfoot; the face of the earth"
+      },
+      "position": 7,
+      "surface": "הָאֲדָמָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "adam"
+        },
+        "evidence": "מֵאָדָם begins a range that continues with עַד בְּהֵמָה, עַד רֶמֶשׂ, and וְעַד עוֹף הַשָּׁמַיִם. The verse lists the kinds of living beings swept away, with humans as the first group.",
+        "gloss": "from humans",
+        "language": "he",
+        "lemma": "אָדָם",
+        "morphology": "Prefixed preposition מִן in the form מֵ־, followed by a masculine singular absolute noun used collectively.",
+        "qualifier": "noun",
+        "root": "אדמ",
+        "sense": "man, mankind"
+      },
+      "position": 8,
+      "surface": "מֵאָדָם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ad"
+        },
+        "evidence": "In מֵאָדָם עַד בְּהֵמָה, “from humans to livestock,” עַד introduces livestock as the next group included among those wiped out. The list continues with creeping things and birds.",
+        "gloss": "to",
+        "language": "he",
+        "lemma": "עַד",
+        "morphology": "Uninflected preposition with no prefix or suffix.",
+        "qualifier": "preposition",
+        "root": "עדה",
+        "sense": "even to, extending the range to include a named category"
+      },
+      "position": 9,
+      "surface": "עַד"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "behemah"
+        },
+        "evidence": "The verse lists בְּהֵמָה between אָדָם (humankind) and רֶמֶשׂ (creeping things), followed by עוֹף הַשָּׁמַיִם (birds of the sky). In this account of all life wiped from the ground, the singular names four-footed beasts collectively, with no restriction to livestock.",
+        "gloss": "four-footed beasts",
+        "language": "he",
+        "lemma": "בְּהֵמָה",
+        "morphology": "Common noun, feminine singular absolute, used collectively, without prefix or suffix.",
+        "qualifier": "",
+        "root": "בהמ",
+        "sense": "beast, four-footed animal"
+      },
+      "position": 10,
+      "surface": "בְּהֵמָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ad"
+        },
+        "evidence": "After מֵאָדָם עַד בְּהֵמָה (“from humans to livestock”), the marked עַד introduces רֶמֶשׂ (“creeping things”), extending the list of living things wiped out. The list continues with וְעַד עוֹף הַשָּׁמַיִם (“and to the birds of the sky”).",
+        "gloss": "even to",
+        "language": "he",
+        "lemma": "עַד",
+        "morphology": "Simple preposition without prefix or suffix.",
+        "qualifier": "preposition",
+        "root": "עדה",
+        "sense": "even to, extending the range to include a named category"
+      },
+      "position": 11,
+      "surface": "עַד"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ramas-creep"
+        },
+        "evidence": "The repeated עַד introduces successive groups. רֶמֶשׂ stands between בְּהֵמָה (livestock) and עוֹף הַשָּׁמַיִם (birds of the sky), so the singular noun denotes creeping creatures collectively.",
+        "gloss": "creeping creatures",
+        "language": "he",
+        "lemma": "רֶמֶשׂ",
+        "morphology": "Common noun, masculine singular absolute, used collectively.",
+        "qualifier": "",
+        "root": "רמשׂ",
+        "sense": "moving creatures"
+      },
+      "position": 12,
+      "surface": "רֶמֶשׂ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ad"
+        },
+        "evidence": "The list begins with מֵאָדָם, “from humankind,” and ends with וְעַד עוֹף הַשָּׁמַיִם, “and even to the birds of the sky.” The final עַד marks birds as the last category included among the living things wiped out.",
+        "gloss": "and even to",
+        "language": "he",
+        "lemma": "עַד",
+        "morphology": "Conjunction וְ prefixed to the preposition עַד.",
+        "qualifier": "preposition",
+        "root": "עדה",
+        "sense": "even to, as many as, to the point of"
+      },
+      "position": 13,
+      "surface": "וְעַד"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "uph"
+        },
+        "evidence": "עוֹף הַשָּׁמַיִם means “the birds of the sky.” The phrase follows בְּהֵמָה and רֶמֶשׂ in a list of living creatures, so the singular עוֹף designates birds as a class.",
+        "gloss": "birds",
+        "language": "he",
+        "lemma": "עוֹף",
+        "morphology": "Common noun, masculine singular construct, used collectively.",
+        "qualifier": "",
+        "root": "עופ",
+        "sense": "birds collectively"
+      },
+      "position": 14,
+      "surface": "עוֹף"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shamayim"
+        },
+        "evidence": "In עוֹף הַשָּׁמַיִם, “birds of the sky,” the marked noun identifies where the birds fly. The phrase completes the verse’s list of creatures swept away by the flood.",
+        "gloss": "the sky",
+        "language": "he",
+        "lemma": "שָׁמַיִם",
+        "morphology": "Definite article הַ־ prefixed to a masculine plural noun in the absolute state.",
+        "qualifier": "",
+        "root": "שמה",
+        "sense": "sky, the visible heavens"
+      },
+      "position": 15,
+      "surface": "הַשָּׁמַיִם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "machah"
+        },
+        "evidence": "The opening וַיִּמַח takes אֶת־כָּל־הַיְקוּם as its object. The plural passive וַיִּמָּחוּ refers back to the humans and animals just listed and says what happened to them. מִן־הָאָרֶץ specifies that they were wiped out from the earth.",
+        "gloss": "and they were wiped out",
+        "language": "he",
+        "lemma": "מָחָה",
+        "morphology": "Niphal wayyiqtol, third-person masculine plural, with prefixed וַ and plural ending וּ.",
+        "qualifier": "wipe, erase, blot out",
+        "root": "מחה",
+        "sense": "Wipe out living beings from the face of the earth."
+      },
+      "position": 16,
+      "surface": "וַיִּמָּחוּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "min"
+        },
+        "evidence": "In וַיִּמָּחוּ מִן הָאָרֶץ, “they were wiped from the earth,” מִן introduces הָאָרֶץ as the place from which the living beings were removed.",
+        "gloss": "from",
+        "language": "he",
+        "lemma": "מִן",
+        "morphology": "Independent preposition without prefix or suffix.",
+        "qualifier": "",
+        "root": "מנ",
+        "sense": "from, away from (place, separation)"
+      },
+      "position": 17,
+      "surface": "מִן"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "erets"
+        },
+        "evidence": "מִן הָאָרֶץ means “from the earth.” It names the place from which the people and creatures previously described as living עַל פְּנֵי הָאֲדָמָה (“on the face of the ground”) were wiped out. Only Noah and those with him in the ark remained.",
+        "gloss": "the earth",
+        "language": "he",
+        "lemma": "אֶרֶץ",
+        "morphology": "Common noun, singular absolute, common gender, with prefixed definite article הָ־.",
+        "qualifier": "",
+        "root": "ארצ",
+        "sense": "earth"
+      },
+      "position": 18,
+      "surface": "הָאָרֶץ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shear"
+        },
+        "evidence": "After וַיִּמָּחוּ describes the living things being wiped from the earth, אַךְ singles out Noah and those with him in the ark as the only ones who remained alive.",
+        "gloss": "and … survived",
+        "language": "he",
+        "lemma": "שָׁאַר",
+        "morphology": "Niphal wayyiqtol, third person masculine singular, with prefixed וַ and no suffix.",
+        "qualifier": "",
+        "root": "שאר",
+        "sense": "remain alive, survive"
+      },
+      "position": 19,
+      "surface": "וַיִשָּׁאֶר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ak"
+        },
+        "evidence": "After the verse says that all living things on the ground were wiped out, אַךְ limits the subject of וַיִשָּׁאֶר to נֹחַ וַאֲשֶׁר אִתּוֹ בַּתֵּבָה. Only Noah and those with him in the ark remained.",
+        "gloss": "only",
+        "language": "he",
+        "lemma": "אַךְ",
+        "morphology": "Restrictive particle with no prefix or suffix.",
+        "qualifier": "",
+        "root": "אכ",
+        "sense": "only, alone, nothing but"
+      },
+      "position": 20,
+      "surface": "אַךְ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "noah-son-of-lamech",
+            "base": null,
+            "change": "Add a personal-name article for נֹחַ linked to the root article nuach.",
+            "definition": "Noah, the son whom Lamech names in hope of relief from toil.",
+            "evidence": "Genesis 5:29 gives the name נֹחַ and explains it through the wordplay on יְנַחֲמֵנוּ, “he will comfort us.”"
+          }
+        },
+        "evidence": "In וַיִּשָּׁאֶר אַךְ נֹחַ, Noah is the named subject of וַיִּשָּׁאֶר, “remained.” The phrase וַאֲשֶׁר אִתּוֹ בַּתֵּבָה adds those who were with him in the ark.",
+        "gloss": "Noah",
+        "language": "he",
+        "lemma": "נֹחַ",
+        "morphology": "Masculine singular proper noun without prefix or suffix.",
+        "qualifier": "",
+        "root": "נוח",
+        "sense": "Noah, son of Lamech"
+      },
+      "position": 21,
+      "surface": "נֹחַ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ashar"
+        },
+        "evidence": "וַאֲשֶׁר אִתּוֹ בַּתֵּבָה means ‘and those who were with him in the ark.’ The phrase is coordinated with נֹחַ as a subject of וַיִּשָּׁאֶר ‘remained.’ The relative clause supplies its own referent.",
+        "gloss": "and those who",
+        "language": "he",
+        "lemma": "אֲשֶׁר",
+        "morphology": "Conjunction וַ־ ‘and’ prefixed to the indeclinable relative particle אֲשֶׁר, used substantivally.",
+        "qualifier": "",
+        "root": "אשר",
+        "sense": "the one who, whoever, what"
+      },
+      "position": 22,
+      "surface": "וַאֲשֶׁר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "et",
+            "base": "31c9a635be8bba9a67417e75ea7122e240ae707e04a841533a59ecd2869d0f80",
+            "change": "Add Genesis 7:23 to the existing company sense of the preposition אֵת.",
+            "definition": "In the company of someone.",
+            "evidence": "Genesis 7:23 identifies the survivors alongside Noah as those who were אִתּוֹ, with him, in the ark."
+          }
+        },
+        "evidence": "In נֹחַ וַאֲשֶׁר אִתּוֹ בַּתֵּבָה, Noah and those who were with him in the ark are the ones who remained. אִתּוֹ identifies whose company they were in, and בַּתֵּבָה gives their location.",
+        "gloss": "with him",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Preposition in its suffixed form אִתּ־ with the third-person masculine singular pronominal suffix וֹ, referring to Noah.",
+        "qualifier": "preposition",
+        "root": "את",
+        "sense": "with, together with (company)"
+      },
+      "position": 23,
+      "surface": "אִתּוֹ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "tevah",
+            "base": null,
+            "change": "Add תֵּבָה under its own consonants, תבה. The flood narrative supplies the sense directly, and the source tag תאר has no demonstrated connection to this noun.",
+            "definition": "The ark in which Noah, his household, and the animals survived the flood.",
+            "evidence": "Genesis 7:18 describes the ark floating on the water. Genesis 7:23 identifies its occupants as the survivors."
+          }
+        },
+        "evidence": "וַיִּשָּׁאֶר אַךְ נֹחַ וַאֲשֶׁר אִתּוֹ identifies the survivors as Noah and those with him. בַּתֵּבָה locates them inside the ark already described as floating on the waters in Genesis 7:18.",
+        "gloss": "in the ark",
+        "language": "he",
+        "lemma": "תֵּבָה",
+        "morphology": "Locative preposition בְּ with the definite article הַ, fused as בַּ and doubling the following ת, plus a feminine singular absolute common noun.",
+        "qualifier": "",
+        "root": "תבה",
+        "sense": "The vessel that carried Noah and those with him through the flood."
+      },
+      "position": 24,
+      "surface": "בַּתֵּבָה"
+    }
+  ]
+}

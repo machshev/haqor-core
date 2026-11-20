@@ -1,0 +1,243 @@
+{
+  "book": 1,
+  "chapter": 4,
+  "review": {
+    "entities": [
+      {
+        "evidence": "The verse names Jabal’s brother Jubal and identifies him as the father of those who play the lyre and pipe. The source tag at position 2 identifies the same musician.",
+        "key": "Jubal@Gen.4.21",
+        "position": 2
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "and the name of",
+        "position": 0
+      },
+      {
+        "gloss": "his brother",
+        "position": 1
+      },
+      {
+        "gloss": "Jubal",
+        "position": 2
+      },
+      {
+        "gloss": "he",
+        "position": 3
+      },
+      {
+        "gloss": "was",
+        "position": 4
+      },
+      {
+        "gloss": "the father of",
+        "position": 5
+      },
+      {
+        "gloss": "all",
+        "position": 6
+      },
+      {
+        "gloss": "who play",
+        "position": 7
+      },
+      {
+        "gloss": "the lyre",
+        "position": 8
+      },
+      {
+        "gloss": "and pipe",
+        "position": 9
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[And the name of|0] [his brother|1] {was} [Jubal|2]. [He|3] [was|4] [the father of|5] [all|6] [who play|7] [the lyre|8] [and pipe|9]."
+  },
+  "source": "ot",
+  "verse": 21,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "shem",
+            "base": "5ff57a119255ca3775ba1c5592f6cd00e22ec622fafccd6afc08384d01b566fe",
+            "change": "Add Genesis 4:21 as an example of the existing identifying-name sense of שֵׁם.",
+            "definition": "The name by which a person is known.",
+            "evidence": "Genesis 4:21 identifies the brother by giving his name, Jubal."
+          }
+        },
+        "evidence": "שֵׁם אָחִיו means “his brother’s name.” The following יוּבָל supplies that name, so the clause reads “and his brother’s name was Jubal.”",
+        "gloss": "and the name of",
+        "language": "he",
+        "lemma": "שֵׁם",
+        "morphology": "Prefixed conjunction וְ (and) + masculine singular construct noun שֵׁם.",
+        "qualifier": "noun",
+        "root": "שמ",
+        "sense": "name by which someone is known"
+      },
+      "position": 0,
+      "surface": "וְשֵׁם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ach"
+        },
+        "evidence": "וְשֵׁם אָחִיו יוּבָל means “and his brother’s name was Jubal.” The suffix refers to Jabal, introduced in the preceding verse, and יוּבָל names his brother.",
+        "gloss": "his brother",
+        "language": "he",
+        "lemma": "אָח",
+        "morphology": "Masculine singular noun in the construct state with a third-person masculine singular possessive suffix.",
+        "qualifier": "",
+        "root": "אחה",
+        "sense": "brother (by birth)"
+      },
+      "position": 1,
+      "surface": "אָחִיו"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "jubal"
+        },
+        "evidence": "וְשֵׁם אָחִיו יוּבָל means “and his brother’s name was Jubal.” The following הוּא refers to Jubal and introduces him as the forefather of those who play the lyre and pipe.",
+        "gloss": "Jubal",
+        "language": "he",
+        "lemma": "יוּבָל",
+        "morphology": "Masculine singular personal name without prefix or suffix.",
+        "qualifier": "name",
+        "root": "יבל",
+        "sense": "Jubal, brother of Jabal"
+      },
+      "position": 2,
+      "surface": "יוּבָל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "hu"
+        },
+        "evidence": "In הוּא הָיָה אֲבִי, “he was the father of,” הוּא refers back to יוּבָל (Jubal) and serves as the subject of הָיָה, “was.”",
+        "gloss": "he",
+        "language": "he",
+        "lemma": "הוּא",
+        "morphology": "Independent personal pronoun, third person masculine singular.",
+        "qualifier": "",
+        "root": "הוא",
+        "sense": "he, it"
+      },
+      "position": 3,
+      "surface": "הוּא"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "hayah"
+        },
+        "evidence": "הוּא refers to Jubal. הָיָה links him to the predicate אֲבִי כָּל־תֹּפֵשׂ כִּנּוֹר וְעוּגָב, describing his role as the father of all who play the lyre and pipe.",
+        "gloss": "was",
+        "language": "he",
+        "lemma": "הָיָה",
+        "morphology": "Qal perfect, third person masculine singular, with no prefix or suffix",
+        "qualifier": "",
+        "root": "היה",
+        "sense": "to be in a state or condition"
+      },
+      "position": 4,
+      "surface": "הָיָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "av"
+        },
+        "evidence": "אֲבִי governs כָּל־תֹּפֵשׂ כִּנּוֹר וְעוּגָב, “everyone who plays the lyre and pipe.” The verse identifies Jubal as the father of a group defined by its craft, giving אָב the sense “founder.”",
+        "gloss": "founder of",
+        "language": "he",
+        "lemma": "אָב",
+        "morphology": "Common noun, masculine singular construct.",
+        "qualifier": "",
+        "root": "אבה",
+        "sense": "father of: founder, originator"
+      },
+      "position": 5,
+      "surface": "אֲבִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "kalal"
+        },
+        "evidence": "כָּל qualifies the singular participle תֹּפֵשׂ, “one who plays.” The phrase אֲבִי כָּל תֹּפֵשׂ כִּנּוֹר וְעוּגָב describes Jubal as the father of everyone who plays the lyre and pipe.",
+        "gloss": "every",
+        "language": "he",
+        "lemma": "כֹּל",
+        "morphology": "Masculine singular construct noun, without prefix or suffix.",
+        "qualifier": "",
+        "root": "כלל",
+        "sense": "every, each; any"
+      },
+      "position": 6,
+      "surface": "כָּל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "taphas"
+        },
+        "evidence": "כָּל תֹּפֵשׂ כִּנּוֹר וְעוּגָב means “everyone who plays the lyre and pipe.” The two instruments specify what the player handles.",
+        "gloss": "one who plays",
+        "language": "he",
+        "lemma": "תָּפַשׂ",
+        "morphology": "Qal active participle, masculine singular construct, used substantivally.",
+        "qualifier": "",
+        "root": "תפשׂ",
+        "sense": "handle a musical instrument in order to play it"
+      },
+      "position": 7,
+      "surface": "תֹּפֵשׂ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "kinnor"
+        },
+        "evidence": "In תֹּפֵשׂ כִּנּוֹר וְעוּגָב, the participle תֹּפֵשׂ governs two instruments, the lyre and the pipe. The phrase describes the musicians whose ancestor was Jubal.",
+        "gloss": "lyre",
+        "language": "he",
+        "lemma": "כִּנּוֹר",
+        "morphology": "Masculine singular absolute common noun, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "כנר",
+        "sense": "lyre, a hand-played stringed instrument"
+      },
+      "position": 8,
+      "surface": "כִּנּוֹר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "agab",
+            "base": null,
+            "change": "Add עוּגָב with its instrumental sense under עגב. The source gloss ‘good pleasure; will’ does not fit the two objects of תֹּפֵשׂ.",
+            "definition": "A musical instrument, probably a pipe, played alongside the lyre.",
+            "evidence": "Genesis 4:21 names the עוּגָב among the instruments handled by Jubal’s successors. Job 21:12 describes people rejoicing at its sound."
+          }
+        },
+        "evidence": "In כָּל תֹּפֵשׂ כִּנּוֹר וְעוּגָב, the conjunction places עוּגָב alongside the lyre as a second instrument that a musician handles. The verse establishes its use as an instrument but leaves its construction uncertain.",
+        "gloss": "and pipe",
+        "language": "he",
+        "lemma": "עוּגָב",
+        "morphology": "Prefixed conjunction וְ ‘and’ + masculine singular common noun in the absolute state.",
+        "qualifier": "",
+        "root": "עגב",
+        "sense": "A musical instrument, probably a pipe."
+      },
+      "position": 9,
+      "surface": "וְעוּגָב"
+    }
+  ]
+}

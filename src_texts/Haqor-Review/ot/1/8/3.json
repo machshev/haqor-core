@@ -1,0 +1,201 @@
+{
+  "book": 1,
+  "chapter": 8,
+  "source": "ot",
+  "verse": 3,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shuv"
+        },
+        "evidence": "הַמַּיִם is the subject, and מֵעַל הָאָרֶץ identifies the surface from which the waters receded. הָלוֹךְ וָשׁוֹב presents the recession as gradual, and וַיַּחְסְרוּ confirms that the waters diminished.",
+        "gloss": "and the waters receded",
+        "language": "he",
+        "lemma": "שׁוּב",
+        "morphology": "Qal wayyiqtol, third person masculine plural, with prefixed וַ־",
+        "qualifier": "",
+        "root": "שוב",
+        "sense": "recede (of water)"
+      },
+      "position": 0,
+      "surface": "וַיָּשֻׁבוּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "mayim",
+            "base": "7a095b6c2624f5e1fa2f45c8ad0c8fa7eebb4e609589e4db6aa40b3f9ca131e1",
+            "change": "Add Genesis 8:3 as evidence for the existing floodwater sense in mayim.",
+            "definition": "A body or flow of water, here the floodwaters receding from the land.",
+            "evidence": "Genesis 8:3 identifies the floodwaters by their movement off the land and their diminishing level."
+          }
+        },
+        "evidence": "הַמַּיִם is the subject of וַיָּשֻׁבוּ. The waters receded מֵעַל הָאָרֶץ, from over the land. The later clause וַיַּחְסְרוּ הַמַּיִם confirms that those same waters diminished.",
+        "gloss": "the floodwaters",
+        "language": "he",
+        "lemma": "מַיִם",
+        "morphology": "Masculine plural absolute noun with the prefixed definite article הַ־, which doubles the initial מ.",
+        "qualifier": "",
+        "root": "מימ",
+        "sense": "a body or flow of water"
+      },
+      "position": 1,
+      "surface": "הַמַּיִם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "alah"
+        },
+        "evidence": "In וַיָּשֻׁבוּ הַמַּיִם מֵעַל הָאָרֶץ, the waters recede from the surface of the earth. עַל marks their position over the earth, and מֵ־ marks movement away from it.",
+        "gloss": "from off",
+        "language": "he",
+        "lemma": "עַל",
+        "morphology": "Preposition עַל with prefixed מִן in the form מֵ־.",
+        "qualifier": "",
+        "root": "עלה",
+        "sense": "on, upon, over"
+      },
+      "position": 2,
+      "surface": "מֵעַל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "erets"
+        },
+        "evidence": "מֵעַל הָאָרֶץ means “from upon the ground.” The waters recede from the surface they had covered.",
+        "gloss": "the ground",
+        "language": "he",
+        "lemma": "אֶרֶץ",
+        "morphology": "Definite article הָ־ prefixed to a common noun, singular absolute, of common gender.",
+        "qualifier": "",
+        "root": "ארצ",
+        "sense": "ground, surface"
+      },
+      "position": 3,
+      "surface": "הָאָרֶץ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "halak"
+        },
+        "evidence": "וַיָּשֻׁבוּ says that the waters receded. In הָלוֹךְ וָשׁוֹב, שׁוֹב repeats that verb and הָלוֹךְ marks the recession as continuing. The waters kept receding from the earth.",
+        "gloss": "steadily",
+        "language": "he",
+        "lemma": "הָלַךְ",
+        "morphology": "Qal infinitive absolute, used adverbially",
+        "qualifier": "",
+        "root": "הלכ",
+        "sense": "continue an action"
+      },
+      "position": 4,
+      "surface": "הָלוֹךְ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shuv"
+        },
+        "evidence": "הָלוֹךְ וָשׁוֹב repeats the verb in וַיָּשֻׁבוּ הַמַּיִם and presents the waters’ retreat from the land as continuous. The following וַיַּחְסְרוּ הַמַּיִם confirms that the waters diminished.",
+        "gloss": "receding",
+        "language": "he",
+        "lemma": "שׁוּב",
+        "morphology": "Qal infinitive absolute with prefixed conjunction וָ־",
+        "qualifier": "",
+        "root": "שוב",
+        "sense": "recede (of water)"
+      },
+      "position": 5,
+      "surface": "וָשׁוֹב"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chaser"
+        },
+        "evidence": "The plural verb agrees with its subject הַמַּיִם, “the waters.” The preceding clause describes the waters retreating from the land. וַיַּחְסְרוּ describes the drop in their level by the end of 150 days.",
+        "gloss": "and the waters subsided",
+        "language": "he",
+        "lemma": "חָסֵר",
+        "morphology": "Qal wayyiqtol, third person masculine plural, with prefixed וַ־.",
+        "qualifier": "verb",
+        "root": "חסר",
+        "sense": "to diminish in amount or level"
+      },
+      "position": 6,
+      "surface": "וַיַּחְסְרוּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "qatseh"
+        },
+        "evidence": "מִקְצֵה governs חֲמִשִּׁים וּמְאַת יוֹם, “one hundred and fifty days.” The phrase marks the end of that period, by which time the waters had diminished.",
+        "gloss": "at the end of",
+        "language": "he",
+        "lemma": "קָצֶה",
+        "morphology": "Preposition מִן with נ assimilated to ק, followed by the singular construct noun קְצֵה.",
+        "qualifier": "",
+        "root": "קצה",
+        "sense": "end (of a period)"
+      },
+      "position": 8,
+      "surface": "מִקְצֵה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chamesh"
+        },
+        "evidence": "In מִקְצֵה חֲמִשִּׁים וּמְאַת יוֹם, חֲמִשִּׁים contributes fifty to the total of 150 days at whose end the waters had diminished.",
+        "gloss": "fifty",
+        "language": "he",
+        "lemma": "חֲמִשִּׁים",
+        "morphology": "Cardinal numeral, common gender, plural absolute, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "חמש",
+        "sense": "fifty"
+      },
+      "position": 9,
+      "surface": "חֲמִשִּׁים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "meah"
+        },
+        "evidence": "In חֲמִשִּׁים וּמְאַת יוֹם, וּמְאַת adds one hundred to the preceding fifty, and יוֹם supplies the unit. The duration is 150 days.",
+        "gloss": "and a hundred",
+        "language": "he",
+        "lemma": "מֵאָה",
+        "morphology": "Conjunction וּ־ “and” prefixed to מְאַת, the singular construct form of the cardinal numeral מֵאָה.",
+        "qualifier": "",
+        "root": "מאה",
+        "sense": "a hundred (a count)"
+      },
+      "position": 10,
+      "surface": "וּמְאַת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yom"
+        },
+        "evidence": "מִקְצֵה חֲמִשִּׁים וּמְאַת יוֹם means “at the end of 150 days.” The singular יוֹם supplies the unit counted by the numeral.",
+        "gloss": "days",
+        "language": "he",
+        "lemma": "יוֹם",
+        "morphology": "Common noun, masculine singular absolute.",
+        "qualifier": "",
+        "root": "יומ",
+        "sense": "a day, counted"
+      },
+      "position": 11,
+      "surface": "יוֹם"
+    }
+  ]
+}

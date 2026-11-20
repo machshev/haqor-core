@@ -1,0 +1,269 @@
+{
+  "book": 1,
+  "chapter": 3,
+  "source": "ot",
+  "verse": 19,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "yaza",
+            "base": null,
+            "change": "Add the feminine noun זֵעָה under יזע with the sense “sweat” for Genesis 3:19, correcting the supplied gloss “dry ground.”",
+            "definition": "Sweat that forms on the body during exertion.",
+            "evidence": "Genesis 3:19 locates the sweat on the worker’s face as he labors for bread."
+          }
+        },
+        "evidence": "אַפֶּיךָ completes the construct phrase בְּזֵעַת אַפֶּיךָ, “by the sweat of your face.” The phrase modifies תֹּאכַל לֶחֶם, “you shall eat bread,” describing the exertion required to obtain food. The ground is named separately later in the verse as הָאֲדָמָה.",
+        "gloss": "sweat",
+        "language": "he",
+        "lemma": "זֵעָה",
+        "morphology": "Prefixed preposition בְּ (by, with) + feminine singular construct noun זֵעַת (sweat of).",
+        "qualifier": "",
+        "root": "יזע",
+        "sense": "Perspiration on the face during physical exertion."
+      },
+      "position": 0,
+      "surface": "בְּזֵעַת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "aph"
+        },
+        "evidence": "בְּזֵעַת אַפֶּיךָ means “by the sweat of your face.” The sweat on the addressee’s face conveys the toil required to obtain bread.",
+        "gloss": "your face",
+        "language": "he",
+        "lemma": "אַף",
+        "morphology": "Masculine dual noun in the construct state with a second-person masculine singular possessive suffix.",
+        "qualifier": "noun",
+        "root": "אנפ",
+        "sense": "(dual) face, above all bowed to the ground"
+      },
+      "position": 1,
+      "surface": "אַפֶּיךָ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "akal"
+        },
+        "evidence": "לֶחֶם (“bread”) is the direct object of תֹּאכַל. The masculine singular suffix in אַפֶּיךָ (“your face”) confirms that the verb addresses the man directly.",
+        "gloss": "you will eat",
+        "language": "he",
+        "lemma": "אָכַל",
+        "morphology": "Qal imperfect, second person masculine singular, with preformative ת־",
+        "qualifier": "",
+        "root": "אכל",
+        "sense": "eat"
+      },
+      "position": 2,
+      "surface": "תֹּאכַל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "lechem"
+        },
+        "evidence": "לֶחֶם is the direct object of תֹּאכַל, “you will eat.” Eating bread by the sweat of one’s brow until one returns to the ground presents bread as the food that sustains life.",
+        "gloss": "bread",
+        "language": "he",
+        "lemma": "לֶחֶם",
+        "morphology": "Common noun, common gender, singular absolute, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "לחמ",
+        "sense": "food, a meal; sustenance"
+      },
+      "position": 3,
+      "surface": "לֶחֶם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ad"
+        },
+        "evidence": "עַד שׁוּבְךָ אֶל הָאֲדָמָה means “until you return to the ground.” The return marks the endpoint of eating bread by the sweat of your brow.",
+        "gloss": "until",
+        "language": "he",
+        "lemma": "עַד",
+        "morphology": "Uninflected preposition without prefix or suffix, governing the infinitive construct שׁוּבְךָ.",
+        "qualifier": "preposition",
+        "root": "עדה",
+        "sense": "until, up to (a time)"
+      },
+      "position": 4,
+      "surface": "עַד"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shuv"
+        },
+        "evidence": "עַד שׁוּבְךָ אֶל הָאֲדָמָה means “until you return to the ground.” The next clause says that the man was taken from the ground, and וְאֶל עָפָר תָּשׁוּב repeats the verb with the same subject and destination, “and to dust you will return.”",
+        "gloss": "you return",
+        "language": "he",
+        "lemma": "שׁוּב",
+        "morphology": "Qal infinitive construct with the second-person masculine singular suffix ־ךָ as its subject.",
+        "qualifier": "",
+        "root": "שוב",
+        "sense": "return to one’s place of origin"
+      },
+      "position": 5,
+      "surface": "שׁוּבְךָ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "In שׁוּבְךָ אֶל הָאֲדָמָה, “your return to the ground,” אֶל marks the ground as the destination of the return.",
+        "gloss": "to",
+        "language": "he",
+        "lemma": "אֶל",
+        "morphology": "Preposition without prefix or suffix.",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "to, toward (a place)"
+      },
+      "position": 6,
+      "surface": "אֶל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "adam"
+        },
+        "evidence": "The man will return to the ground because he was taken from it (מִמֶּנָּה לֻקָּחְתָּ). The parallel statement that he is dust and will return to dust identifies the ground as the source of his bodily substance.",
+        "gloss": "the ground",
+        "language": "he",
+        "lemma": "אֲדָמָה",
+        "morphology": "Feminine singular absolute common noun with the prefixed definite article הָ־.",
+        "qualifier": "",
+        "root": "אדמ",
+        "sense": "earth, as the stuff things are made of"
+      },
+      "position": 7,
+      "surface": "הָאֲדָמָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ki"
+        },
+        "evidence": "כִּי introduces the reason for returning to the ground. In מִמֶּנָּה לֻקָּחְתָּ (“from it you were taken”), the suffix on מִמֶּנָּה refers back to הָאֲדָמָה (“the ground”).",
+        "gloss": "because",
+        "language": "he",
+        "lemma": "כִּי",
+        "morphology": "Uninflected conjunction",
+        "qualifier": "conjunction",
+        "root": "כי",
+        "sense": "for, because"
+      },
+      "position": 8,
+      "surface": "כִּי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "laqach"
+        },
+        "evidence": "מִמֶּנָּה means “from it” and refers to הָאֲדָמָה, “the ground.” The man will return to the ground because he was taken from it. The following words, “you are dust,” identify the ground as his material source.",
+        "gloss": "you were taken",
+        "language": "he",
+        "lemma": "לָקַח",
+        "morphology": "Passive perfect (traditionally parsed as Pual), second masculine singular, with the ending ־תָּ.",
+        "qualifier": "",
+        "root": "לקח",
+        "sense": "be taken from a source"
+      },
+      "position": 10,
+      "surface": "לֻקָּחְתָּ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ki"
+        },
+        "evidence": "The second כִּי introduces the reason for the return to the ground. עָפָר אַתָּה means “you are dust,” and וְאֶל־עָפָר תָּשׁוּב continues “and to dust you will return.”",
+        "gloss": "for",
+        "language": "he",
+        "lemma": "כִּי",
+        "morphology": "Uninflected conjunction without prefix or suffix.",
+        "qualifier": "conjunction",
+        "root": "כי",
+        "sense": "for, because"
+      },
+      "position": 11,
+      "surface": "כִּי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "aphar"
+        },
+        "evidence": "In עָפָר אַתָּה, “you are dust,” עָפָר is the predicate of אַתָּה. The preceding words say that the man was taken from the ground, identifying dust as the material of his origin.",
+        "gloss": "dust",
+        "language": "he",
+        "lemma": "עָפָר",
+        "morphology": "Common noun, masculine singular absolute, without prefix or suffix.",
+        "qualifier": "",
+        "root": "עפר",
+        "sense": "loose earth"
+      },
+      "position": 12,
+      "surface": "עָפָר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "atah"
+        },
+        "evidence": "In כִּי עָפָר אַתָּה, “for you are dust,” אַתָּה is the subject and עָפָר is the predicate identifying what the man is. The next clause repeats עָפָר in “and to dust you will return.”",
+        "gloss": "you",
+        "language": "he",
+        "lemma": "אַתָּה",
+        "morphology": "Independent second-person masculine singular pronoun, without prefix or suffix.",
+        "qualifier": "",
+        "root": "אנת",
+        "sense": "you (are): the one addressed named or identified"
+      },
+      "position": 13,
+      "surface": "אַתָּה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "aphar"
+        },
+        "evidence": "In וְאֶל עָפָר תָּשׁוּב, “and to dust you will return,” עָפָר names the material to which the man returns at death. The earlier phrase אֶל הָאֲדָמָה, “to the ground,” identifies that destination, and כִּי עָפָר אַתָּה, “for you are dust,” explains the return.",
+        "gloss": "dust",
+        "language": "he",
+        "lemma": "עָפָר",
+        "morphology": "Common noun, masculine singular absolute, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "עפר",
+        "sense": "loose earth"
+      },
+      "position": 15,
+      "surface": "עָפָר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shuv"
+        },
+        "evidence": "וְאֶל־עָפָר תָּשׁוּב means “and to dust you will return.” It echoes the earlier statement that the addressee will return to the ground from which he was taken.",
+        "gloss": "you will return",
+        "language": "he",
+        "lemma": "שׁוּב",
+        "morphology": "Qal imperfect, second person masculine singular",
+        "qualifier": "",
+        "root": "שוב",
+        "sense": "return to one’s place of origin"
+      },
+      "position": 16,
+      "surface": "תָּשׁוּב"
+    }
+  ]
+}

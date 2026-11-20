@@ -1,0 +1,162 @@
+{
+  "book": 1,
+  "chapter": 3,
+  "review": {
+    "entities": [],
+    "glosses": [
+      {
+        "gloss": "but he said",
+        "position": 0
+      },
+      {
+        "gloss": "the serpent",
+        "position": 1
+      },
+      {
+        "gloss": "to",
+        "position": 2
+      },
+      {
+        "gloss": "the woman",
+        "position": 3
+      },
+      {
+        "gloss": "not",
+        "position": 4
+      },
+      {
+        "gloss": "surely",
+        "position": 5
+      },
+      {
+        "gloss": "you will die",
+        "position": 6
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[But|0] [the serpent|1] [said|0] [to|2] [the woman|3], “​[You will|6] [surely|5] [not|4] [die|6]."
+  },
+  "source": "ot",
+  "verse": 4,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "amar"
+        },
+        "evidence": "The singular verb agrees with הַנָּחָשׁ, the serpent. אֶל הָאִשָּׁה identifies the woman as the addressee, and לֹא מוֹת תְּמֻתוּן gives the serpent’s words.",
+        "gloss": "and he said",
+        "language": "he",
+        "lemma": "אָמַר",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ־",
+        "qualifier": "",
+        "root": "אמר",
+        "sense": "say, introducing direct speech"
+      },
+      "position": 0,
+      "surface": "וַיֹּאמֶר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "nachash"
+        },
+        "evidence": "In וַיֹּאמֶר הַנָּחָשׁ אֶל־הָאִשָּׁה, “the serpent said to the woman,” הַנָּחָשׁ is the subject of וַיֹּאמֶר. The definite article identifies the serpent already speaking with the woman.",
+        "gloss": "the serpent",
+        "language": "he",
+        "lemma": "נָחָשׁ",
+        "morphology": "Definite article הַ־ prefixed to a masculine singular absolute noun.",
+        "qualifier": "",
+        "root": "נחש",
+        "sense": "the serpent of Eden"
+      },
+      "position": 1,
+      "surface": "הַנָּחָשׁ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "elah"
+        },
+        "evidence": "In וַיֹּאמֶר הַנָּחָשׁ אֶל הָאִשָּׁה, “the serpent said to the woman,” אֶל introduces the woman as the addressee.",
+        "gloss": "to",
+        "language": "he",
+        "lemma": "אֶל",
+        "morphology": "Preposition without prefix or suffix.",
+        "qualifier": "",
+        "root": "אלה",
+        "sense": "to (a person: speaking, sending, bringing)"
+      },
+      "position": 2,
+      "surface": "אֶל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "enosh"
+        },
+        "evidence": "In וַיֹּאמֶר הַנָּחָשׁ אֶל הָאִשָּׁה, “the serpent said to the woman,” the phrase אֶל הָאִשָּׁה identifies the woman as the addressee.",
+        "gloss": "the woman",
+        "language": "he",
+        "lemma": "אִשָּׁה",
+        "morphology": "Feminine singular absolute common noun with the definite article הָ־.",
+        "qualifier": "",
+        "root": "אנש",
+        "sense": "woman"
+      },
+      "position": 3,
+      "surface": "הָאִשָּׁה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "lo"
+        },
+        "evidence": "In לֹא מוֹת תְּמֻתוּן, לֹא negates the death prediction emphasized by the infinitive absolute מוֹת. The serpent tells the woman, “You will certainly not die.”",
+        "gloss": "not",
+        "language": "he",
+        "lemma": "לֹא",
+        "morphology": "Negative particle without prefix or suffix.",
+        "qualifier": "",
+        "root": "לא",
+        "sense": "not (of a fact)"
+      },
+      "position": 4,
+      "surface": "לֹא"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "mut"
+        },
+        "evidence": "מוֹת precedes תְּמֻתוּן, a finite verb from the same root. The infinitive absolute adds emphasis under לֹא, giving the serpent’s denial the force of “you will surely not die.”",
+        "gloss": "surely",
+        "language": "he",
+        "lemma": "מוּת",
+        "morphology": "Qal infinitive absolute, with no prefix or suffix",
+        "qualifier": "",
+        "root": "מות",
+        "sense": "to die"
+      },
+      "position": 5,
+      "surface": "מוֹת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "mut"
+        },
+        "evidence": "תְּמֻתוּן is the finite verb. The preceding infinitive absolute מוֹת adds emphasis, and לֹא negates the statement. The serpent tells the woman, “You will certainly not die,” using a plural “you.”",
+        "gloss": "you will die",
+        "language": "he",
+        "lemma": "מוּת",
+        "morphology": "Qal imperfect, second person masculine plural, with final paragogic nun",
+        "qualifier": "",
+        "root": "מות",
+        "sense": "die, come to the end of life"
+      },
+      "position": 6,
+      "surface": "תְּמֻתוּן"
+    }
+  ]
+}

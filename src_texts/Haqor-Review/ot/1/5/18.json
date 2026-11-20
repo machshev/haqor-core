@@ -1,0 +1,242 @@
+{
+  "book": 1,
+  "chapter": 5,
+  "review": {
+    "entities": [
+      {
+        "evidence": "Genesis 5:15 names Jared as Mahalalel’s son. Here Jared fathers Enoch, matching the source tag.",
+        "key": "Jared@Gen.5.15",
+        "position": 1
+      },
+      {
+        "evidence": "Jared is the subject of “fathered,” and אֶת marks Enoch as his son in this genealogy. That relationship identifies the bearer tagged here and distinguishes him from the sons of Cain, Midian, and Reuben.",
+        "key": "Enoch@Gen.5.18",
+        "position": 9
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "and he lived",
+        "position": 0
+      },
+      {
+        "gloss": "Jared",
+        "position": 1
+      },
+      {
+        "gloss": "two",
+        "position": 2
+      },
+      {
+        "gloss": "and sixty",
+        "position": 3
+      },
+      {
+        "gloss": "years",
+        "position": 4
+      },
+      {
+        "gloss": "and a hundred",
+        "position": 5
+      },
+      {
+        "gloss": "years",
+        "position": 6
+      },
+      {
+        "gloss": "then he fathered",
+        "position": 7
+      },
+      {
+        "gloss": "(untranslated)",
+        "position": 8
+      },
+      {
+        "gloss": "Enoch",
+        "position": 9
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[And|0] [Jared|1] [lived|0] [162|2,3,5] [years|4,6], [then he fathered|7] [Enoch|8,9]."
+  },
+  "source": "ot",
+  "verse": 18,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chayah"
+        },
+        "evidence": "יֶרֶד (Jared) is the subject of וַיְחִי. The following count of 162 years gives the duration Jared lived before he fathered Enoch.",
+        "gloss": "and he lived",
+        "language": "he",
+        "lemma": "חָיָה",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ־ and an apocopated verb form.",
+        "qualifier": "",
+        "root": "חיה",
+        "sense": "to live for a stated length of time"
+      },
+      "position": 0,
+      "surface": "וַיְחִי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "yered",
+            "base": null,
+            "change": "Add a personal-name article for יֶרֶד linked to the consonantal root ירד.",
+            "definition": "Jared is the personal name of Mahalalel’s son in Genesis 5:15.",
+            "evidence": "וַיּוֹלֶד אֶת יָרֶד means “he fathered Jared.” The genealogy identifies the bearer and gives no explanation of the name’s origin."
+          }
+        },
+        "evidence": "יֶרֶד is the subject of וַיְחִי (“he lived”). The verse says that Jared lived 162 years and then fathered Enoch (וַיּוֹלֶד אֶת חֲנוֹךְ), continuing the genealogy that names Jared as Mahalalel’s son in Genesis 5:15.",
+        "gloss": "Jared",
+        "language": "he",
+        "lemma": "יֶרֶד",
+        "morphology": "Masculine singular proper noun, without prefix or suffix.",
+        "qualifier": "",
+        "root": "ירד",
+        "sense": "Jared, son of Mahalalel"
+      },
+      "position": 1,
+      "surface": "יֶרֶד"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shanah"
+        },
+        "evidence": "In שְׁתַּיִם וְשִׁשִּׁים שָׁנָה, שְׁתַּיִם supplies the two in ‘sixty-two years.’ Its feminine form agrees with שָׁנָה. The following וּמְאַת שָׁנָה adds a hundred years, giving Jared’s age as 162 when he fathered Enoch.",
+        "gloss": "two",
+        "language": "he",
+        "lemma": "שְׁנַיִם",
+        "morphology": "Cardinal numeral, feminine dual absolute",
+        "qualifier": "",
+        "root": "שנה",
+        "sense": "two"
+      },
+      "position": 2,
+      "surface": "שְׁתַּיִם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shesh"
+        },
+        "evidence": "In שְׁתַּיִם וְשִׁשִּׁים שָׁנָה, the marked word adds sixty to two to give sixty-two years. The following וּמְאַת שָׁנָה adds a hundred, giving Jared’s age as 162.",
+        "gloss": "and sixty",
+        "language": "he",
+        "lemma": "שִׁשִּׁים",
+        "morphology": "Conjunction וְ־ prefixed to a cardinal numeral, common gender, plural form, absolute state.",
+        "qualifier": "",
+        "root": "שדש",
+        "sense": "sixty"
+      },
+      "position": 3,
+      "surface": "וְשִׁשִּׁים"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shanah"
+        },
+        "evidence": "In שְׁתַּיִם וְשִׁשִּׁים שָׁנָה, the marked noun supplies the unit for sixty-two. וּמְאַת שָׁנָה adds a hundred years, giving Jared’s age as 162 when he fathered Enoch.",
+        "gloss": "years",
+        "language": "he",
+        "lemma": "שָׁנָה",
+        "morphology": "Common noun, feminine singular absolute, with no prefix or suffix.",
+        "qualifier": "noun",
+        "root": "שנה",
+        "sense": "years of a life, age"
+      },
+      "position": 4,
+      "surface": "שָׁנָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "meah"
+        },
+        "evidence": "וּמְאַת שָׁנָה means ‘and a hundred years’. This adds one hundred to the preceding sixty-two years, giving Jared’s age as 162 when he fathered Enoch.",
+        "gloss": "and a hundred",
+        "language": "he",
+        "lemma": "מֵאָה",
+        "morphology": "Conjunction וּ־ ‘and’ prefixed to מְאַת, the singular construct form of the cardinal numeral מֵאָה.",
+        "qualifier": "",
+        "root": "מאה",
+        "sense": "a hundred (a count)"
+      },
+      "position": 5,
+      "surface": "וּמְאַת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "shanah"
+        },
+        "evidence": "In וּמְאַת שָׁנָה, the marked noun supplies the unit for “one hundred years.” Added to the preceding sixty-two years, it gives Jared’s age of 162 when he fathered Enoch.",
+        "gloss": "years",
+        "language": "he",
+        "lemma": "שָׁנָה",
+        "morphology": "Feminine singular absolute noun, without prefix or suffix",
+        "qualifier": "noun",
+        "root": "שנה",
+        "sense": "years of a life, age"
+      },
+      "position": 6,
+      "surface": "שָׁנָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "yalad"
+        },
+        "evidence": "Jared (יֶרֶד) is the subject of וַיּוֹלֶד, and אֶת marks Enoch (חֲנוֹךְ) as its direct object. After giving Jared’s age, the verse says that he fathered Enoch.",
+        "gloss": "and he fathered",
+        "language": "he",
+        "lemma": "יָלַד",
+        "morphology": "Hiphil wayyiqtol, third person masculine singular, with prefixed וַ and no suffix",
+        "qualifier": "",
+        "root": "ילד",
+        "sense": "beget, father a child"
+      },
+      "position": 7,
+      "surface": "וַיּוֹלֶד"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "et"
+        },
+        "evidence": "In וַיּוֹלֶד אֶת חֲנוֹךְ, Jared fathered Enoch. אֶת marks the personal name חֲנוֹךְ as the definite direct object of וַיּוֹלֶד.",
+        "gloss": "(untranslated)",
+        "language": "he",
+        "lemma": "אֵת",
+        "morphology": "Direct-object marker without prefix or suffix.",
+        "qualifier": "particle",
+        "root": "את",
+        "sense": "(marks the definite object)"
+      },
+      "position": 8,
+      "surface": "אֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "enoch"
+        },
+        "evidence": "יֶרֶד (Jared) is the subject of וַיּוֹלֶד (he fathered), and אֶת marks חֲנוֹךְ as its direct object. The verse identifies this Enoch as Jared’s son.",
+        "gloss": "Enoch",
+        "language": "he",
+        "lemma": "חֲנוֹךְ",
+        "morphology": "Masculine singular personal name without prefix or suffix",
+        "qualifier": "",
+        "root": "חנכ",
+        "sense": "Enoch, son of Jared"
+      },
+      "position": 9,
+      "surface": "חֲנוֹךְ"
+    }
+  ]
+}

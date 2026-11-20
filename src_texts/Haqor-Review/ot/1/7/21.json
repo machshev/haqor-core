@@ -1,0 +1,369 @@
+{
+  "book": 1,
+  "chapter": 7,
+  "review": {
+    "entities": [],
+    "glosses": [
+      {
+        "gloss": "then died",
+        "position": 0
+      },
+      {
+        "gloss": "all",
+        "position": 1
+      },
+      {
+        "gloss": "flesh",
+        "position": 2
+      },
+      {
+        "gloss": "that moved about",
+        "position": 3
+      },
+      {
+        "gloss": "on",
+        "position": 4
+      },
+      {
+        "gloss": "the earth",
+        "position": 5
+      },
+      {
+        "gloss": "among the birds",
+        "position": 6
+      },
+      {
+        "gloss": "and among the livestock",
+        "position": 7
+      },
+      {
+        "gloss": "and among the wild animals",
+        "position": 8
+      },
+      {
+        "gloss": "and among all",
+        "position": 9
+      },
+      {
+        "gloss": "the swarming creatures",
+        "position": 10
+      },
+      {
+        "gloss": "that swarmed",
+        "position": 11
+      },
+      {
+        "gloss": "on",
+        "position": 12
+      },
+      {
+        "gloss": "the earth",
+        "position": 13
+      },
+      {
+        "gloss": "and all",
+        "position": 14
+      },
+      {
+        "gloss": "humankind",
+        "position": 15
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[Then|0] [all|1] [flesh|2] [that moved about|3] [on|4] [the earth|5] [died|0], [including the birds|6] [and the livestock|7] [and the wild animals|8] [and all|9] [the swarming creatures|10] [that swarmed|11] [on|12] [the earth|13], [and all|14] [humankind|15]."
+  },
+  "source": "ot",
+  "verse": 21,
+  "words": [
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "gava",
+            "base": null,
+            "change": "Add a root article for גוע with the Qal sense ‘to die’.",
+            "definition": "To die, of a person or an animal.",
+            "evidence": "Genesis 6:17 predicts that the creatures with the breath of life will perish. Genesis 7:21–22 recounts the fulfillment, using גוע and then מוּת of those who died."
+          }
+        },
+        "evidence": "The singular verb agrees with the collective subject כָּל־בָּשָׂר, “all flesh,” which the verse expands to include animals and humans. Genesis 7:22 confirms the sense with מֵתוּ, “they died.”",
+        "gloss": "and died",
+        "language": "he",
+        "lemma": "גָּוַע",
+        "morphology": "Qal wayyiqtol, third person masculine singular, with prefixed וַ־ and no suffix.",
+        "qualifier": "",
+        "root": "גוע",
+        "sense": "to die"
+      },
+      "position": 0,
+      "surface": "וַיִּגְוַע"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "kalal"
+        },
+        "evidence": "In כָּל בָּשָׂר, “all flesh,” כָּל quantifies the collective noun בָּשָׂר. The verse lists birds, livestock, wild animals, swarming creatures, and humans to show whom “all flesh” includes.",
+        "gloss": "all",
+        "language": "he",
+        "lemma": "כֹּל",
+        "morphology": "Masculine singular construct noun without prefix or suffix.",
+        "qualifier": "",
+        "root": "כלל",
+        "sense": "all, the whole"
+      },
+      "position": 1,
+      "surface": "כָּל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "basar"
+        },
+        "evidence": "כָּל בָּשָׂר is the subject of וַיִּגְוַע, “perished.” The verse specifies which creatures perished by listing birds, livestock, wild animals, swarming creatures, and finally וְכֹל הָאָדָם, “and all humankind.”",
+        "gloss": "flesh (collectively, living creatures)",
+        "language": "he",
+        "lemma": "בָּשָׂר",
+        "morphology": "Common noun, masculine singular absolute, with no prefix or suffix.",
+        "qualifier": "",
+        "root": "בשׂר",
+        "sense": "all flesh: every living creature; mankind"
+      },
+      "position": 2,
+      "surface": "בָּשָׂר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "ramas-creep"
+        },
+        "evidence": "In כָּל־בָּשָׂר הָרֹמֵשׂ עַל־הָאָרֶץ, the participle agrees with the singular collective בָּשָׂר and describes what all flesh does on the earth. The following list includes birds, livestock, wild animals, swarming creatures, and humans, supporting the broad sense of movement.",
+        "gloss": "that moves about",
+        "language": "he",
+        "lemma": "רָמַשׂ",
+        "morphology": "Definite article הָ־ prefixed to a Qal active participle, masculine singular absolute, modifying בָּשָׂר.",
+        "qualifier": "",
+        "root": "רמשׂ",
+        "sense": "move about"
+      },
+      "position": 3,
+      "surface": "הָרֹמֵשׂ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "alah"
+        },
+        "evidence": "In הָרֹמֵשׂ עַל הָאָרֶץ, “that moves on the earth,” עַל introduces the surface on which the creatures move.",
+        "gloss": "on",
+        "language": "he",
+        "lemma": "עַל",
+        "morphology": "Preposition without prefix or suffix.",
+        "qualifier": "",
+        "root": "עלה",
+        "sense": "on, upon, over"
+      },
+      "position": 4,
+      "surface": "עַל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "erets"
+        },
+        "evidence": "In הָרֹמֵשׂ עַל הָאָרֶץ, “that moves on the ground,” עַל identifies the ground as the surface on which the creatures move.",
+        "gloss": "the ground",
+        "language": "he",
+        "lemma": "אֶרֶץ",
+        "morphology": "Definite article הָ־ + common noun, common gender, singular absolute",
+        "qualifier": "",
+        "root": "ארצ",
+        "sense": "ground, surface"
+      },
+      "position": 5,
+      "surface": "הָאָרֶץ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "uph"
+        },
+        "evidence": "בָּעוֹף begins the list of groups included in כָּל בָּשָׂר, “all flesh,” that perished. The parallel phrases וּבַבְּהֵמָה and וּבַחַיָּה name livestock and wild animals, confirming that עוֹף likewise denotes a group.",
+        "gloss": "among the birds",
+        "language": "he",
+        "lemma": "עוֹף",
+        "morphology": "Preposition בְּ with the definite article, realized as בָּ before ע, followed by a masculine singular absolute collective noun.",
+        "qualifier": "",
+        "root": "עופ",
+        "sense": "birds collectively"
+      },
+      "position": 6,
+      "surface": "בָּעוֹף"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "behemah"
+        },
+        "evidence": "The verse lists וּבַבְּהֵמָה alongside בָּעוֹף ‘among the birds’ and וּבַחַיָּה ‘and among the wild animals’. The separate mention of wild animals identifies בְּהֵמָה here as livestock.",
+        "gloss": "and among the livestock",
+        "language": "he",
+        "lemma": "בְּהֵמָה",
+        "morphology": "Conjunction וּ־ + preposition בְּ־ with the definite article (בַּ־) + feminine singular absolute noun, used collectively.",
+        "qualifier": "",
+        "root": "בהמ",
+        "sense": "livestock, cattle; tame beast"
+      },
+      "position": 7,
+      "surface": "וּבַבְּהֵמָה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "chayah"
+        },
+        "evidence": "The verse lists the creatures that died. וּבַחַיָּה follows וּבַבְּהֵמָה (“and among the livestock”), distinguishing wild animals from livestock within that list.",
+        "gloss": "and among the wild animals",
+        "language": "he",
+        "lemma": "חַיָּה",
+        "morphology": "Conjunction וּ + preposition בְּ with the definite article + feminine singular absolute noun, used collectively.",
+        "qualifier": "animal",
+        "root": "חיה",
+        "sense": "wild beast, beast of the field"
+      },
+      "position": 8,
+      "surface": "וּבַחַיָּה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "kalal"
+        },
+        "evidence": "In וּבְכָל הַשֶּׁרֶץ, כָל governs the definite collective noun הַשֶּׁרֶץ. The phrase includes all the creatures that swarm on the earth in the list of those that died.",
+        "gloss": "and among all",
+        "language": "he",
+        "lemma": "כֹּל",
+        "morphology": "Conjunction וּ־ ‘and’ + preposition בְּ־ ‘among’ + masculine singular construct noun כָל.",
+        "qualifier": "",
+        "root": "כלל",
+        "sense": "all, the whole"
+      },
+      "position": 9,
+      "surface": "וּבְכָל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "sharats",
+            "base": null,
+            "change": "Add the root שרצ with the collective noun שֶׁרֶץ and its related Qal verb שָׁרַץ.",
+            "definition": "Living creatures that swarm, taken collectively.",
+            "evidence": "In Genesis 1:20, שֶׁרֶץ נֶפֶשׁ חַיָּה names the swarm of living creatures with which the waters are to teem."
+          }
+        },
+        "evidence": "The following participle הַשֹּׁרֵץ agrees with the singular noun. Together with עַל הָאָרֶץ, it identifies the creatures as those that swarm on the earth. They form one group in the verse’s list of living things that died.",
+        "gloss": "the swarming creatures",
+        "language": "he",
+        "lemma": "שֶׁרֶץ",
+        "morphology": "Definite article הַ־ prefixed to a masculine singular absolute noun used collectively.",
+        "qualifier": "",
+        "root": "שרצ",
+        "sense": "Living creatures that swarm, taken collectively."
+      },
+      "position": 10,
+      "surface": "הַשֶּׁרֶץ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "sharats",
+            "base": null,
+            "change": "Include the Qal sense with creatures as subject alongside the previously proposed sense with waters as subject and the related collective noun.",
+            "definition": "Of living creatures, to swarm.",
+            "evidence": "Genesis 7:21 describes the creatures by their activity on the ground. Genesis 1:20 uses the same verb with the waters as subject."
+          }
+        },
+        "evidence": "In הַשֶּׁרֶץ הַשֹּׁרֵץ עַל הָאָרֶץ, the participle agrees in definiteness, gender, and number with the collective noun הַשֶּׁרֶץ. The creatures themselves swarm, and עַל הָאָרֶץ tells where they do so.",
+        "gloss": "that swarm",
+        "language": "he",
+        "lemma": "שָׁרַץ",
+        "morphology": "Definite article הַ־ prefixed to a Qal active participle, masculine singular absolute, used attributively.",
+        "qualifier": "",
+        "root": "שרצ",
+        "sense": "Of living creatures, to swarm."
+      },
+      "position": 11,
+      "surface": "הַשֹּׁרֵץ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "alah"
+        },
+        "evidence": "In הַשֹּׁרֵץ עַל הָאָרֶץ, “that swarms on the ground,” עַל introduces הָאָרֶץ and indicates where the creatures swarm.",
+        "gloss": "on",
+        "language": "he",
+        "lemma": "עַל",
+        "morphology": "Preposition without prefix or suffix.",
+        "qualifier": "",
+        "root": "עלה",
+        "sense": "on, upon, over"
+      },
+      "position": 12,
+      "surface": "עַל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "erets"
+        },
+        "evidence": "In הַשֶּׁרֶץ הַשֹּׁרֵץ עַל הָאָרֶץ, the phrase עַל הָאָרֶץ identifies the surface on which the creatures swarm.",
+        "gloss": "the ground",
+        "language": "he",
+        "lemma": "אֶרֶץ",
+        "morphology": "Definite article הָ־ prefixed to a singular absolute common noun of common gender.",
+        "qualifier": "",
+        "root": "ארצ",
+        "sense": "ground, surface"
+      },
+      "position": 13,
+      "surface": "הָאָרֶץ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "kalal"
+        },
+        "evidence": "In וְכֹל הָאָדָם, הָאָדָם denotes humankind collectively. The phrase means “and all humankind” and completes the list of those who died.",
+        "gloss": "and all",
+        "language": "he",
+        "lemma": "כֹּל",
+        "morphology": "Conjunction וְ prefixed to a masculine singular noun in the construct state.",
+        "qualifier": "",
+        "root": "כלל",
+        "sense": "all, the whole"
+      },
+      "position": 14,
+      "surface": "וְכֹל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "existing": "adam"
+        },
+        "evidence": "וְכֹל הָאָדָם means “and all humankind.” It closes the list of living creatures included in כָּל בָּשָׂר (“all flesh”) that perished.",
+        "gloss": "humankind",
+        "language": "he",
+        "lemma": "אָדָם",
+        "morphology": "Definite article הָ־ prefixed to a masculine singular absolute noun used collectively.",
+        "qualifier": "noun",
+        "root": "אדמ",
+        "sense": "man, mankind"
+      },
+      "position": 15,
+      "surface": "הָאָדָם"
+    }
+  ]
+}
