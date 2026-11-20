@@ -20,15 +20,40 @@
       "stems": [
         {
           "stem": "qal",
-          "gloss": "draw up",
+          "gloss": "draw water or counsel",
           "senses": [
             {
-              "gloss": "draw up",
-              "definition": "Yahweh draws the psalmist up from the pit.",
+              "gloss": "draw water or counsel",
+              "definition": "The women fill their troughs by drawing water. Proverbs compares a person’s counsel to deep water that another can draw out.",
+              "evidence": [
+                {
+                  "ref": "Exo.2.16",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Exo.2.19"
+                },
+                {
+                  "ref": "Pro.20.5"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "draw someone up",
+          "senses": [
+            {
+              "gloss": "draw someone up",
+              "definition": "The psalmist thanks Yahweh for drawing him up, later describing his recovery as being brought up from the grave.",
               "evidence": [
                 {
                   "ref": "Psa.30.2",
                   "role": "defining"
+                },
+                {
+                  "ref": "Psa.30.4"
                 }
               ]
             }
