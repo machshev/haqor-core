@@ -1,6 +1,70 @@
 {
   "book": 1,
   "chapter": 9,
+  "review": {
+    "entities": [
+      {
+        "evidence": "Noah names Yahweh as the one he blesses.",
+        "key": "LORD@Gen.1.1",
+        "position": 2
+      },
+      {
+        "evidence": "The title “the God of Shem” identifies Yahweh, named immediately before it.",
+        "key": "LORD@Gen.1.1",
+        "position": 3
+      },
+      {
+        "evidence": "Noah refers to his son Shem in the phrase “the God of Shem.”",
+        "key": "Shem@Gen.5.32",
+        "position": 4
+      },
+      {
+        "evidence": "Noah continues speaking of Ham’s son Canaan, whom he cursed in the preceding verse.",
+        "key": "Canaan@Gen.9.18",
+        "position": 6
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "and he said",
+        "position": 0
+      },
+      {
+        "gloss": "blessed be",
+        "position": 1
+      },
+      {
+        "gloss": "Yahweh",
+        "position": 2
+      },
+      {
+        "gloss": "the God of",
+        "position": 3
+      },
+      {
+        "gloss": "Shem",
+        "position": 4
+      },
+      {
+        "gloss": "and may he be",
+        "position": 5
+      },
+      {
+        "gloss": "Canaan",
+        "position": 6
+      },
+      {
+        "gloss": "a slave",
+        "position": 7
+      },
+      {
+        "gloss": "to them",
+        "position": 8
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[Then he said|0], “[Blessed be|1] [Yahweh|2], [the God of|3] [Shem|4]! [And may|5] [Canaan|6] [be|5] [a slave|7] [to them|8]."
+  },
   "source": "ot",
   "verse": 26,
   "words": [
