@@ -2,9 +2,9 @@
   "id": "nasha",
   "root": "נשא",
   "status": "draft",
-  "updated": "2026-11-20",
+  "updated": "2026-11-19",
   "gloss": "deceive; entice",
-  "summary": "נָשָׁא describes deceptive or enticing conduct. Psalm 55 uses it for the enemies' enticement and violence.",
+  "summary": "The serpent deceives the woman, and a king warns against letting a rival mislead his listeners. Psalm 55 gives the verb a striking subject in its read wording: death.",
   "words": [
     {
       "lemma": "נָשָׁא",
@@ -23,7 +23,36 @@
               "definition": "To deceive or entice someone through misleading conduct.",
               "evidence": [
                 {
+                  "ref": "Gen.3.13",
+                  "role": "defining"
+                },
+                {
+                  "ref": "2Ki.18.29"
+                }
+              ]
+            },
+            {
+              "gloss": "take unawares",
+              "definition": "In the read wording the speaker asks that death overtake his enemies by surprise.",
+              "evidence": [
+                {
                   "ref": "Psa.55.16",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be deceived",
+          "senses": [
+            {
+              "gloss": "be deceived",
+              "definition": "The princes of Memphis have been misled and in turn lead Egypt astray.",
+              "evidence": [
+                {
+                  "ref": "Isa.19.13",
                   "role": "defining"
                 }
               ]
@@ -63,5 +92,5 @@
       "summary": "The psalms support ruin or devastation. The relationship to the verb for deception is uncertain."
     }
   ],
-  "note": "Drafted for Psalm 55 coverage. Kept distinct from נשׂא, the lift/bear root. The plural מַשּׁוּאוֹת in these psalms approaches מְשׁוֹאָה in shav. The form and the different sets of occurrences are retained for comparison. The Psalm 55:16 form יַשִּׁי is a difficult written/read form; the entry preserves the database root assignment and flags it for morphology review."
+  "note": "Psalm 55:16 reads two words, יַשִּׁי מָוֶת, with death as the subject. The single written form ישימות is indexed under יְשִׁימָה in yashimon. The relationship of the devastation noun to the deception verb remains uncertain."
 }
