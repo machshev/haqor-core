@@ -124,20 +124,26 @@
     {
       "analysis": {
         "entry": {
-          "existing": "3eecaeb",
-          "sense": "grass",
+          "draft": {
+            "article_id": "3eecaeb",
+            "base": "c8f221c1795c8533d299f7d70bb9ac66d3e62ddd5b082e700c136663f723f779",
+            "change": "Add the broader sense “herbaceous plant” to word 0 and use “herbage” as the article and word gloss. Retain the existing grass sense.",
+            "definition": "An herbaceous plant, or such plants collectively as herbage.",
+            "evidence": "Genesis 1:12 pairs seed-bearing herbage with fruit-bearing trees, echoing the command in Genesis 1:11."
+          },
+          "sense": "herbaceous-plant",
           "word": 0
         },
-        "evidence": "In וְאָכַלְתָּ אֶת עֵשֶׂב הַשָּׂדֶה, “you shall eat the vegetation of the field,” עֵשֶׂב stands in construct with הַשָּׂדֶה. The object marker אֶת marks the whole phrase as what the addressee will eat.",
+        "evidence": "In וְאָכַלְתָּ אֶת עֵשֶׂב הַשָּׂדֶה, “you shall eat the vegetation of the field,” אֶת marks the whole construct phrase as the object of “eat.” The singular עֵשֶׂב refers collectively to the field plants that provide food. The verse gives no reason to narrow the reference to grass.",
         "gloss": "vegetation",
         "language": "he",
         "lemma": "עֵשֶׂב",
         "morph": "HNcmsc",
-        "morphology": "Common noun, masculine singular construct, without prefix or suffix.",
+        "morphology": "Masculine singular common noun in construct with הַשָּׂדֶה. It has no prefix or suffix.",
         "qualifier": "",
         "root": "עשׂב",
         "segments": "עֵשֶׂב",
-        "sense": "grass"
+        "sense": "herbaceous plant"
       },
       "position": 6,
       "surface": "עֵשֶׂב"
