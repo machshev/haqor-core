@@ -2324,7 +2324,7 @@ mod tests {
     }
 
     #[test]
-    fn reads_completed_review_packets_and_ignores_partial_packets() {
+    fn reads_completed_review_packets_and_ignores_partial_translation() {
         let src = std::env::temp_dir().join(format!("haqor-review-packets-{}", std::process::id()));
         let root = src.join("Haqor-Review");
         let path = root.join("peshitta/40/1/2.json");

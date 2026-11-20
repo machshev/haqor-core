@@ -452,8 +452,9 @@ pub fn generate_runtime(
     Ok(words)
 }
 
-/// Import completed per-verse review packets as an additive runtime overlay.
-/// Partial packets are deliberately ignored until their verse review exists.
+/// Import per-verse review packets as an additive runtime overlay. Word
+/// analyses are imported as soon as they are published. Verse translations
+/// are imported separately only after the verse review is complete.
 fn import_review_occurrences(db: &Connection, src_texts: &Path) -> Result<usize> {
     let root = src_texts.join("Haqor-Review");
     if !root.exists() {
@@ -478,9 +479,9 @@ fn import_review_occurrences(db: &Connection, src_texts: &Path) -> Result<usize>
     for path in files {
         let packet: Value = serde_json::from_str(&std::fs::read_to_string(&path)?)
             .with_context(|| format!("parsing review packet {}", path.display()))?;
-        let Some(review) = packet.get("review") else {
-            continue;
-        };
+        // Word analyses are useful immediately. The verse translation is
+        // intentionally handled separately and requires a completed review.
+        let review = packet.get("review").cloned().unwrap_or(Value::Null);
         let source = packet["source"].as_str().context("review packet source")?;
         let reference = pack_ref(
             packet["book"].as_i64().context("review packet book")?,

@@ -3881,7 +3881,8 @@ impl Bible {
         // the primary key with the source token order already in it — where
         // the generation schema needed an unindexed scan of all 109k
         // occurrences and a rowid sort.
-        let mut stmt = self.db.prepare(
+        let reviewed_overlay = self.has_table("review_occurrence")?;
+        let sql = if reviewed_overlay {
             "SELECT o.ref & 255, \
                     coalesce(ro.verse_gloss, ro.gloss, (SELECT trim(coalesce(e.before, '') || ' ' || \
                                  coalesce(e.meaning, '') || ' ' || \
@@ -3895,8 +3896,17 @@ impl Bible {
              LEFT JOIN data.syriac_root r ON r.root_id = l.root_id \
              LEFT JOIN data.review_occurrence ro ON ro.source='peshitta' AND ro.ref=o.ref AND ro.position=o.ord \
              WHERE o.ref BETWEEN ?1 AND ?2 \
-             ORDER BY o.ref, o.ord",
-        )?;
+             ORDER BY o.ref, o.ord"
+        } else {
+            "SELECT o.ref & 255, \
+                    (SELECT trim(coalesce(e.before, '') || ' ' || coalesce(e.meaning, '') || ' ' || coalesce(e.after, '')) \
+                     FROM data.syriac_gloss e WHERE e.lexeme_id = w.lexeme_id ORDER BY e.gloss_id LIMIT 1), r.root,o.ord \
+             FROM data.nt_word o JOIN data.syriac_word w ON w.word_id = o.word_id \
+             LEFT JOIN data.syriac_lexeme l ON l.lexeme_id = w.lexeme_id \
+             LEFT JOIN data.syriac_root r ON r.root_id = l.root_id \
+             WHERE o.ref BETWEEN ?1 AND ?2 ORDER BY o.ref, o.ord"
+        };
+        let mut stmt = self.db.prepare(sql)?;
         let (first, last) = chapter_range(book, chapter);
         let mut rows = stmt.query([first, last])?;
         let reviewed = if include_names {
@@ -6356,7 +6366,8 @@ impl Bible {
         if !self.has_greek()? {
             return Ok(Vec::new());
         }
-        let mut stmt = self.db.prepare_cached(
+        let reviewed = self.has_table("review_occurrence")?;
+        let sql = if reviewed {
             "SELECT w.ref & 255, w.position, w.word, coalesce(ro.verse_gloss, e.text, ''), \
                     coalesce(ro.lemma, l.lemma, ''), coalesce(ro.gloss, l.gloss, ''), coalesce(g.code, ''), \
                     w.entity_id \
@@ -6365,8 +6376,17 @@ impl Bible {
              LEFT JOIN data.greek_lemma l ON l.lemma_id = w.lemma_id \
              LEFT JOIN data.greek_grammar g ON g.grammar_id = w.grammar_id \
              LEFT JOIN data.review_occurrence ro ON ro.source='greek' AND ro.ref=w.ref AND ro.position=w.position \
-             WHERE w.ref BETWEEN ?1 AND ?2 ORDER BY w.ref, w.position",
-        )?;
+             WHERE w.ref BETWEEN ?1 AND ?2 ORDER BY w.ref, w.position"
+        } else {
+            "SELECT w.ref & 255, w.position, w.word, coalesce(e.text, ''), \
+                    coalesce(l.lemma, ''), coalesce(l.gloss, ''), coalesce(g.code, ''), w.entity_id \
+             FROM data.greek_word w \
+             LEFT JOIN data.greek_english e ON e.english_id = w.english_id \
+             LEFT JOIN data.greek_lemma l ON l.lemma_id = w.lemma_id \
+             LEFT JOIN data.greek_grammar g ON g.grammar_id = w.grammar_id \
+             WHERE w.ref BETWEEN ?1 AND ?2 ORDER BY w.ref, w.position"
+        };
+        let mut stmt = self.db.prepare_cached(sql)?;
         let mut verses: Vec<GreekVerse> = Vec::new();
         let mut rows = stmt.query([first, last])?;
         while let Some(row) = rows.next()? {
