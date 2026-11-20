@@ -1,6 +1,6 @@
 {
   "id": "saq",
-  "root": "שׂקק",
+  "root": "שׂק",
   "status": "draft",
   "created": "2026-11-19",
   "updated": "2026-11-19",
@@ -53,10 +53,45 @@
           ],
           "relation": "loan"
         }
+      ],
+      "cognate_ids": [
+        "akk-sakku",
+        "grc-sakkos"
       ]
     }
   ],
-  "cognates": [],
+  "cognates": [
+    {
+      "id": "akk-sakku",
+      "lang": "akk",
+      "form": "sakku",
+      "translit": "sakku",
+      "gloss": "sackcloth",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "sakku",
+          "note": "Akkadian sackcloth term."
+        }
+      ]
+    },
+    {
+      "id": "grc-sakkos",
+      "lang": "grc",
+      "form": "σάκκος",
+      "translit": "sakkos",
+      "gloss": "sackcloth",
+      "relation": "loan",
+      "evidence": [
+        {
+          "source": "abbott-smith",
+          "locator": "σάκκος",
+          "note": "Greek loan from Semitic sackcloth."
+        }
+      ]
+    }
+  ],
   "doctrine": [],
   "note": "The Greek loan σάκκος is recorded because the New Testament uses it for sackcloth. Its etymology is recorded in the brief."
 }

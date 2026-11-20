@@ -11,21 +11,55 @@
   "summary": "bereave in Psalm 35",
   "words": [
     {
-      "lemma": "שָׁכַל",
+      "lemma": "שָׁכֹל",
       "gloss": "bereave",
-      "bdb": [],
+      "bdb": [
+        "v.dc.aa"
+      ],
       "pos": "verb",
       "stems": [
         {
           "stem": "qal",
+          "gloss": "be bereaved",
+          "senses": [
+            {
+              "gloss": "be bereaved",
+              "definition": "To lose children or descendants.",
+              "evidence": [
+                {
+                  "ref": "Psa.35.12",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
           "gloss": "bereave",
           "senses": [
             {
               "gloss": "bereave",
-              "definition": "bereave in Psalm 35",
+              "definition": "To cause loss of children.",
               "evidence": [
                 {
-                  "ref": "Psa.35.13",
+                  "ref": "Gen.42.36",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "make childless",
+          "senses": [
+            {
+              "gloss": "make childless",
+              "definition": "To cause bereavement.",
+              "evidence": [
+                {
+                  "ref": "Isa.49.20",
                   "role": "defining"
                 }
               ]
@@ -51,6 +85,88 @@
               "ref": "Psa.35.12",
               "role": "defining",
               "note": "They repay David evil for good, to the bereaving of his soul."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שָׁכוּל",
+      "gloss": "childless",
+      "bdb": [
+        "v.dc.ac"
+      ],
+      "pos": "adjective",
+      "senses": [
+        {
+          "gloss": "childless",
+          "definition": "Without children through bereavement.",
+          "evidence": [
+            {
+              "ref": "Exo.23.26",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מְשַׁכֶּלֶת",
+      "gloss": "barrenness",
+      "bdb": [
+        "v.dc.af"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "senses": [
+        {
+          "gloss": "barrenness",
+          "definition": "The condition of bereavement or loss of offspring.",
+          "evidence": [
+            {
+              "ref": "Exo.23.26",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שַׁכּוּל",
+      "gloss": "bereaved",
+      "bdb": [
+        "v.dc.ad"
+      ],
+      "pos": "adjective",
+      "senses": [
+        {
+          "gloss": "bereaved",
+          "definition": "Robbed of offspring.",
+          "evidence": [
+            {
+              "ref": "Ezk.5.17",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שִׁכֻּלִים",
+      "gloss": "bereavement",
+      "bdb": [
+        "v.dc.ae"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "senses": [
+        {
+          "gloss": "bereavement",
+          "definition": "Childlessness or loss of children.",
+          "evidence": [
+            {
+              "ref": "Hos.9.14",
+              "role": "defining"
             }
           ]
         }
