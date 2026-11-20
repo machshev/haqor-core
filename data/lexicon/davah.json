@@ -35,15 +35,22 @@
       ],
       "senses": [
         {
-          "gloss": "unwell",
-          "definition": "Faint or unwell.",
+          "gloss": "faint",
+          "definition": "Suffering persistent weakness and distress.",
           "evidence": [
             {
-              "ref": "Isa.30.22",
+              "ref": "Lam.1.13",
               "role": "defining"
-            },
+            }
+          ]
+        },
+        {
+          "gloss": "menstruating",
+          "definition": "A woman experiencing her menstrual flow.",
+          "evidence": [
             {
-              "ref": "Lam.1.13"
+              "ref": "Lev.15.33",
+              "role": "defining"
             }
           ]
         }
@@ -62,7 +69,12 @@
           "definition": "A sickness or affliction.",
           "evidence": [
             {
-              "ref": "Deu.28.61"
+              "ref": "Deu.7.15",
+              "role": "defining"
+            },
+            {
+              "ref": "Deu.28.60",
+              "role": "defining"
             }
           ]
         }
@@ -81,7 +93,38 @@
           "definition": "In a faint or weakened state.",
           "evidence": [
             {
-              "ref": "Lam.1.22"
+              "ref": "Lam.1.22",
+              "role": "defining"
+            },
+            {
+              "ref": "Isa.1.5",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "דָּוָה",
+      "pos": "verb",
+      "gloss": "menstruate",
+      "bdb": [
+        "d.at.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "menstruate",
+          "senses": [
+            {
+              "gloss": "menstruate",
+              "definition": "The infinitive describes the bleeding used to compare periods of ritual uncleanness.",
+              "evidence": [
+                {
+                  "ref": "Lev.12.2",
+                  "role": "defining"
+                }
+              ]
             }
           ]
         }
@@ -89,5 +132,6 @@
     }
   ],
   "doctrine": [],
-  "note": "Drafted for Psalms 41–43 coverage."
+  "note": "Psalm 41 describes a sickbed. Leviticus uses related forms for menstrual bleeding. The similarly indexed word for ink in Jeremiah 36:18 has no established connection with illness.",
+  "created": "2026-11-19"
 }
