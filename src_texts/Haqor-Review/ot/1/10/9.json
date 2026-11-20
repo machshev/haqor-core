@@ -1,6 +1,159 @@
 {
   "book": 1,
   "chapter": 10,
+  "review": {
+    "entities": [
+      {
+        "evidence": "יַהְוֶה names Yahweh, in whose presence Nimrod is described as a mighty hunter.",
+        "key": "LORD@Gen.1.1",
+        "position": 5
+      },
+      {
+        "evidence": "כְּנִמְרֹד means “like Nimrod.” The saying names the son of Cush introduced in Genesis 10:8.",
+        "key": "Nimrod@Gen.10.8",
+        "position": 9
+      },
+      {
+        "evidence": "The saying repeats לִפְנֵי יַהְוֶה, naming the same Yahweh as the opening clause.",
+        "key": "LORD@Gen.1.1",
+        "position": 13
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "he",
+        "position": 0
+      },
+      {
+        "gloss": "was",
+        "position": 1
+      },
+      {
+        "gloss": "mighty",
+        "position": 2
+      },
+      {
+        "gloss": "hunting",
+        "position": 3
+      },
+      {
+        "gloss": "before",
+        "position": 4
+      },
+      {
+        "gloss": "Yahweh",
+        "position": 5
+      },
+      {
+        "gloss": "for",
+        "position": 6
+      },
+      {
+        "gloss": "that reason",
+        "position": 7
+      },
+      {
+        "gloss": "it is said",
+        "position": 8
+      },
+      {
+        "gloss": "like Nimrod",
+        "position": 9
+      },
+      {
+        "gloss": "mighty",
+        "position": 10
+      },
+      {
+        "gloss": "hunting",
+        "position": 11
+      },
+      {
+        "gloss": "before",
+        "position": 12
+      },
+      {
+        "gloss": "Yahweh",
+        "position": 13
+      }
+    ],
+    "name_review_base": [
+      {
+        "key": null,
+        "position": 0,
+        "surface": "הוּא"
+      },
+      {
+        "key": null,
+        "position": 1,
+        "surface": "הָיָה"
+      },
+      {
+        "key": null,
+        "position": 2,
+        "surface": "גִבֹּר"
+      },
+      {
+        "key": null,
+        "position": 3,
+        "surface": "צַיִד"
+      },
+      {
+        "key": null,
+        "position": 4,
+        "surface": "לִפְנֵי"
+      },
+      {
+        "evidence": "יַהְוֶה names Yahweh, in whose presence Nimrod is described as a mighty hunter.",
+        "key": "LORD@Gen.1.1",
+        "position": 5,
+        "surface": "יַהְוֶה"
+      },
+      {
+        "key": null,
+        "position": 6,
+        "surface": "עַל"
+      },
+      {
+        "key": null,
+        "position": 7,
+        "surface": "כֵּן"
+      },
+      {
+        "key": null,
+        "position": 8,
+        "surface": "יֵאָמַר"
+      },
+      {
+        "evidence": "The saying names Nimrod and repeats the description of the son of Cush introduced in Genesis 10:8.",
+        "key": "Nimrod@Gen.10.8",
+        "position": 9,
+        "surface": "כְּנִמְרֹד"
+      },
+      {
+        "key": null,
+        "position": 10,
+        "surface": "גִּבּוֹר"
+      },
+      {
+        "key": null,
+        "position": 11,
+        "surface": "צַיִד"
+      },
+      {
+        "key": null,
+        "position": 12,
+        "surface": "לִפְנֵי"
+      },
+      {
+        "evidence": "The saying repeats לִפְנֵי יַהְוֶה, naming the same Yahweh as the opening clause.",
+        "key": "LORD@Gen.1.1",
+        "position": 13,
+        "surface": "יַהְוֶה"
+      }
+    ],
+    "translation": "[He|0] [was|1] [a mighty|2] [hunter|3] [before|4] [Yahweh|5]. [For|6] [that reason|7] [it is said|8], “[Like Nimrod|9], [a|11] [mighty|10] [hunter|11] [before|12] [Yahweh|13].”"
+  },
   "source": "ot",
   "verse": 9,
   "words": [
