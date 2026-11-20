@@ -1,6 +1,68 @@
 {
   "book": 1,
   "chapter": 9,
+  "review": {
+    "entities": [
+      {
+        "evidence": "The verse identifies Ham as Canaan’s father, matching the son of Noah.",
+        "key": "Ham@Gen.5.32",
+        "position": 1
+      },
+      {
+        "evidence": "The phrase אֲבִי כְנַעַן identifies Canaan as Ham’s son.",
+        "key": "Canaan@Gen.9.18",
+        "position": 3
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "and he saw",
+        "position": 0
+      },
+      {
+        "gloss": "Ham",
+        "position": 1
+      },
+      {
+        "gloss": "father of",
+        "position": 2
+      },
+      {
+        "gloss": "Canaan",
+        "position": 3
+      },
+      {
+        "gloss": "untranslated",
+        "position": 4
+      },
+      {
+        "gloss": "nakedness of",
+        "position": 5
+      },
+      {
+        "gloss": "his father",
+        "position": 6
+      },
+      {
+        "gloss": "and he told",
+        "position": 7
+      },
+      {
+        "gloss": "to two",
+        "position": 8
+      },
+      {
+        "gloss": "his brothers",
+        "position": 9
+      },
+      {
+        "gloss": "outside",
+        "position": 10
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[Then|0] [Ham|1], [the father of|2] [Canaan|3], [saw|0] [the nakedness of|5,4] [his father|6], [and he told|7] [his|9] [two|8] [brothers|9] [outside|10]."
+  },
   "source": "ot",
   "verse": 22,
   "words": [
