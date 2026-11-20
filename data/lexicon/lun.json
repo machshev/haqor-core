@@ -1,0 +1,204 @@
+{
+  "id": "lun",
+  "root": "לונ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "shelter",
+    "travel",
+    "speech"
+  ],
+  "gloss": "spend the night, remain, complain",
+  "summary": "A traveller settles down until morning, and the same verb can describe someone remaining in safety. The wilderness accounts use a similarly spelled verb for voicing a grievance.",
+  "words": [
+    {
+      "lemma": "לוּן",
+      "bdb": [
+        "l.az.aa"
+      ],
+      "pos": "verb",
+      "gloss": "lodge, remain",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "lodge or remain",
+          "senses": [
+            {
+              "gloss": "lodge for the night",
+              "definition": "The sun sets and Jacob lies down where he is. Ruth chooses to lodge wherever Naomi lodges.",
+              "evidence": [
+                {
+                  "ref": "Gen.28.11",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Rut.1.16"
+                }
+              ]
+            },
+            {
+              "gloss": "remain, abide",
+              "definition": "What is left overnight remains until morning. The psalm describes the person who fears Yahweh as lodging in goodness.",
+              "evidence": [
+                {
+                  "ref": "Exo.23.18",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.25.13"
+                },
+                {
+                  "ref": "Psa.30.6"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpolel",
+          "gloss": "make one’s lodging",
+          "senses": [
+            {
+              "gloss": "make one’s lodging",
+              "definition": "The eagle lodges on a crag. The one who lives in the shelter of the Most High lodges in his shadow.",
+              "evidence": [
+                {
+                  "ref": "Job.39.28",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.91.1"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "לוּן",
+      "bdb": [
+        "l.ba.aa"
+      ],
+      "pos": "verb",
+      "gloss": "complain, grumble",
+      "stems": [
+        {
+          "stem": "niphal",
+          "gloss": "complain against",
+          "senses": [
+            {
+              "gloss": "complain against",
+              "definition": "Thirst leads the people to complain against Moses.",
+              "evidence": [
+                {
+                  "ref": "Exo.15.24",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Num.14.2"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "voice a complaint",
+          "senses": [
+            {
+              "gloss": "voice a complaint",
+              "definition": "Moses says Yahweh has heard the people complaining about their food.",
+              "evidence": [
+                {
+                  "ref": "Exo.16.8",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Exo.17.3"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מָלוֹן",
+      "bdb": [
+        "l.az.ab"
+      ],
+      "pos": "noun",
+      "gloss": "overnight stopping place",
+      "senses": [
+        {
+          "gloss": "overnight stopping place",
+          "definition": "Joseph’s brother opens his sack to feed his donkey at the overnight stop.",
+          "evidence": [
+            {
+              "ref": "Gen.42.27",
+              "role": "defining"
+            },
+            {
+              "ref": "Exo.4.24"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "מְלוּנָה",
+      "bdb": [
+        "l.az.ac"
+      ],
+      "pos": "noun",
+      "gloss": "hut, shelter",
+      "senses": [
+        {
+          "gloss": "hut, shelter",
+          "definition": "Isaiah compares isolated Zion with a night shelter in a cucumber field.",
+          "evidence": [
+            {
+              "ref": "Isa.1.8",
+              "role": "defining"
+            },
+            {
+              "ref": "Isa.24.20"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "תְּלֻנָּה",
+      "bdb": [
+        "l.ba.ab"
+      ],
+      "pos": "noun",
+      "gloss": "complaint",
+      "senses": [
+        {
+          "gloss": "complaint",
+          "definition": "Moses tells the people that Yahweh hears their complaints.",
+          "evidence": [
+            {
+              "ref": "Exo.16.7",
+              "to": "Exo.16.9",
+              "role": "defining"
+            },
+            {
+              "ref": "Num.17.25"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    }
+  ],
+  "cognates": [],
+  "doctrine": [],
+  "note": "The two verbs share consonants. Lodging and complaining are distinguished by syntax and subject. No secure common development is apparent."
+}
