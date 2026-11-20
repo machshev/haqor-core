@@ -28,16 +28,11 @@
     {
       "analysis": {
         "entry": {
-          "draft": {
-            "article_id": "mn",
-            "base": "a8ed885685f881ad58d16600265c2176cd484c41c6480205b1d0941d765b8fa6",
-            "change": "Add Genesis 3:5 as an example of the existing partitive sense, min-some-of.",
-            "definition": "With a verb of eating, מִן marks the food of which someone eats a part.",
-            "evidence": "Genesis 3:5 repeats the suffixed preposition used with the same verb in Genesis 3:3."
-          },
+          "existing": "mn",
+          "sense": "min-some-of",
           "word": 0
         },
-        "evidence": "In וַיֵּשְׁתְּ מִן הַיַּיִן, “he drank some of the wine,” הַיַּיִן names the wine he drank, and מִן marks an unspecified portion of it.",
+        "evidence": "In וַיֵּשְׁתְּ מִן הַיַּיִן, “he drank some of the wine,” מִן marks an unspecified amount of the wine he drank.",
         "gloss": "some of",
         "language": "he",
         "lemma": "מִן",
@@ -46,7 +41,7 @@
         "qualifier": "",
         "root": "מנ",
         "segments": "מִן",
-        "sense": "Partitive, marking what someone eats some of."
+        "sense": "Partitive, marking an unspecified portion of a whole."
       },
       "position": 1,
       "surface": "מִן"
