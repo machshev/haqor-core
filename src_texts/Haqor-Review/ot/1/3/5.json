@@ -4,12 +4,12 @@
   "review": {
     "entities": [
       {
-        "evidence": "The singular participle יֹדֵעַ agrees with אֱלֹהִים. The serpent is speaking of the God who gave the command about the tree.",
+        "evidence": "The singular יֹדֵעַ agrees with אֱלֹהִים. The serpent is speaking of the God who gave the command about the tree.",
         "key": "LORD@Gen.1.1",
         "position": 2
       },
       {
-        "evidence": "The serpent repeats אֱלֹהִים with the comparative prefix כֵּ־, saying the hearers will be like the God just mentioned in their knowledge of good and evil.",
+        "evidence": "In כֵּאלֹהִים the serpent compares the hearers to the God just mentioned. The plural יֹדְעֵי describes the hearers and specifies how they will be like God.",
         "key": "LORD@Gen.1.1",
         "position": 10
       }
@@ -72,7 +72,80 @@
         "position": 13
       }
     ],
-    "name_review_base": null,
+    "name_review_base": [
+      {
+        "key": null,
+        "position": 0,
+        "surface": "כִּי"
+      },
+      {
+        "key": null,
+        "position": 1,
+        "surface": "יֹדֵעַ"
+      },
+      {
+        "evidence": "The singular participle יֹדֵעַ agrees with אֱלֹהִים. The serpent is speaking of the God who gave the command about the tree.",
+        "key": "LORD@Gen.1.1",
+        "position": 2,
+        "surface": "אֱלֹהִים"
+      },
+      {
+        "key": null,
+        "position": 3,
+        "surface": "כִּי"
+      },
+      {
+        "key": null,
+        "position": 4,
+        "surface": "בְּיוֹם"
+      },
+      {
+        "key": null,
+        "position": 5,
+        "surface": "אֲכָלְכֶם"
+      },
+      {
+        "key": null,
+        "position": 6,
+        "surface": "מִמֶּנּוּ"
+      },
+      {
+        "key": null,
+        "position": 7,
+        "surface": "וְנִפְקְחוּ"
+      },
+      {
+        "key": null,
+        "position": 8,
+        "surface": "עֵינֵיכֶם"
+      },
+      {
+        "key": null,
+        "position": 9,
+        "surface": "וִהְיִיתֶם"
+      },
+      {
+        "evidence": "The serpent repeats אֱלֹהִים with the comparative prefix כֵּ־, saying the hearers will be like the God just mentioned in their knowledge of good and evil.",
+        "key": "LORD@Gen.1.1",
+        "position": 10,
+        "surface": "כֵּאלֹהִים"
+      },
+      {
+        "key": null,
+        "position": 11,
+        "surface": "יֹדְעֵי"
+      },
+      {
+        "key": null,
+        "position": 12,
+        "surface": "טוֹב"
+      },
+      {
+        "key": null,
+        "position": 13,
+        "surface": "וָרָע"
+      }
+    ],
     "translation": "[For|0] [God|2] [knows|1] [that|3] [on the day|4] [you eat|5] [from it|6], [then|7] [your eyes|8] [will be opened|7], [and you will be|9] [like God|10] [in knowing|11] [good|12] [and evil|13].”"
   },
   "source": "ot",
