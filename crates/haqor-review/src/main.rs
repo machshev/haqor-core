@@ -1,0 +1,547 @@
+//! One Rust process coordinates independent, read-only word and verse agents.
+mod articles;
+mod inventory;
+mod jobs;
+use anyhow::{Context, Result, bail, ensure};
+use clap::{Parser, Subcommand, ValueEnum};
+use jobs::Catalog;
+use rusqlite::{Connection, params};
+use serde_json::{Value, json};
+use std::{
+    fs::{File, OpenOptions},
+    io::{self, Write},
+    path::{Path, PathBuf},
+    process::{Command, Stdio},
+    sync::mpsc,
+    thread,
+};
+
+#[derive(Debug, Clone, Copy, ValueEnum)]
+enum Source {
+    Ot,
+    Peshitta,
+    Greek,
+}
+impl Source {
+    fn name(self) -> &'static str {
+        match self {
+            Self::Ot => "ot",
+            Self::Peshitta => "peshitta",
+            Self::Greek => "greek",
+        }
+    }
+}
+#[derive(Parser)]
+struct Cli {
+    /// Persistent local queue. Use a separate file for an independent run.
+    #[arg(long, global = true, default_value = ".haqor-review/progress.sqlite")]
+    state: PathBuf,
+    #[command(subcommand)]
+    command: Action,
+}
+#[derive(Subcommand)]
+enum Action {
+    /// Snapshot all matching verses. Reseeding changed verses invalidates their results.
+    Seed {
+        #[arg(long, default_value = "data")]
+        data: PathBuf,
+        #[arg(long, value_enum)]
+        source: Option<Source>,
+        #[arg(long,value_parser=clap::value_parser!(u8).range(1..=66))]
+        book: Option<u8>,
+        #[arg(long, requires = "book")]
+        chapter: Option<u8>,
+        #[arg(long, requires = "chapter")]
+        verse: Option<u8>,
+    },
+    /// Dispatch fresh agents up to a shared concurrency limit.
+    Run {
+        #[arg(long, default_value_t = 4)]
+        max_agents: usize,
+        /// Stop automatically retrying a job after this many attempts.
+        #[arg(long, default_value_t = 3)]
+        max_attempts: u32,
+        /// Optional executable taking one prompt on stdin and returning one JSON result on stdout.
+        #[arg(long)]
+        worker: Option<PathBuf>,
+        #[arg(long, conflicts_with = "worker")]
+        model: Option<String>,
+        #[arg(long, default_value = "data/lexicon")]
+        lexicon: PathBuf,
+    },
+    /// Apply verse-reviewed Semitic draft articles through Haqor's lexicon validator.
+    ApplyArticles {
+        #[arg(long, default_value = "data/lexicon")]
+        lexicon: PathBuf,
+        #[arg(long, default_value = "data")]
+        data: PathBuf,
+    },
+    Status,
+    /// Make failed jobs eligible for a fresh set of attempts.
+    Retry,
+    /// Revisit every occurrence of this exact lexical key and its verse review.
+    Reassign {
+        #[arg(long)]
+        language: String,
+        #[arg(long)]
+        lemma: String,
+        #[arg(long, default_value = "")]
+        qualifier: String,
+        #[arg(long)]
+        reason: String,
+    },
+    /// Write reviewed verse packets including lexical drafts and contextual glosses to stdout as JSONL.
+    Export,
+}
+
+fn writer_lock(path: &Path) -> Result<File> {
+    let mut sidecar = path.as_os_str().to_owned();
+    sidecar.push(".lock");
+    let file = OpenOptions::new()
+        .create(true)
+        .truncate(false)
+        .write(true)
+        .open(sidecar)?;
+    file.try_lock().context("another harness owns this queue")?;
+    Ok(file)
+}
+
+fn main() -> Result<()> {
+    let cli = Cli::parse();
+    let writing = !matches!(cli.command, Action::Status | Action::Export);
+    if matches!(cli.command, Action::Seed { .. }) {
+        if let Some(p) = cli.state.parent().filter(|p| !p.as_os_str().is_empty()) {
+            std::fs::create_dir_all(p)?;
+        }
+    } else {
+        ensure!(cli.state.is_file(), "seed the review queue first");
+    }
+    let _lock = writing.then(|| writer_lock(&cli.state)).transpose()?;
+    let mut db = Connection::open(&cli.state)?;
+    db.busy_timeout(std::time::Duration::from_secs(5))?;
+    if writing {
+        db.execute_batch("PRAGMA journal_mode=WAL; PRAGMA foreign_keys=ON;")?;
+        db.execute_batch(jobs::SCHEMA)?;
+        // The exclusive OS lock disappears on process exit. Only this coordinator writes results.
+        db.execute(
+            "UPDATE job SET state='ready', attempts=max(0,attempts-1) WHERE state='running'",
+            [],
+        )?;
+    }
+    match cli.command {
+        Action::Seed {
+            data,
+            source,
+            book,
+            chapter,
+            verse,
+        } => {
+            let low = (i64::from(book.unwrap_or(0)) << 16)
+                + (i64::from(chapter.unwrap_or(0)) << 8)
+                + i64::from(verse.unwrap_or(0));
+            let high = (i64::from(book.unwrap_or(66)) << 16)
+                + (i64::from(chapter.unwrap_or(255)) << 8)
+                + i64::from(verse.unwrap_or(255));
+            let sources = source
+                .map(|s| vec![s])
+                .unwrap_or_else(|| vec![Source::Ot, Source::Peshitta, Source::Greek]);
+            inventory::seed(&mut db, &data, &sources, low, high)
+        }
+        Action::Run {
+            max_agents,
+            max_attempts,
+            worker,
+            model,
+            lexicon,
+        } => {
+            ensure!(
+                max_agents > 0 && max_attempts > 0,
+                "limits must be positive"
+            );
+            let catalog = Catalog::load(&lexicon)?;
+            articles::refresh_dependencies(&mut db, &catalog.revisions)?;
+            run(&mut db, &catalog, max_agents, max_attempts, &|packet| {
+                invoke(worker.as_deref(), model.as_deref(), &jobs::prompt(packet))
+            })
+        }
+        Action::Retry => {
+            println!(
+                "Reset {} failed jobs.",
+                db.execute(
+                    "UPDATE job SET state='ready',attempts=0 WHERE state='failed'",
+                    []
+                )?
+            );
+            Ok(())
+        }
+        Action::Status => {
+            let mut q=db.prepare("SELECT source,iif(pos=-1,'verse','word'),state,count(*) FROM job GROUP BY 1,2,3 ORDER BY 1,2,3")?;
+            let mut rows = q.query([])?;
+            while let Some(r) = rows.next()? {
+                println!(
+                    "{} {} {} {}",
+                    r.get::<_, String>(0)?,
+                    r.get::<_, String>(1)?,
+                    r.get::<_, String>(2)?,
+                    r.get::<_, i64>(3)?
+                );
+            }
+            Ok(())
+        }
+        Action::Reassign {
+            language,
+            lemma,
+            qualifier,
+            reason,
+        } => {
+            use unicode_normalization::UnicodeNormalization;
+            ensure!(
+                !reason.trim().is_empty(),
+                "supply a reason for reassignment"
+            );
+            let tx = db.transaction()?;
+            tx.execute("CREATE TEMP TABLE affected AS SELECT source,ref,pos FROM job WHERE pos>=0
+                AND json_extract(result,'$.language')=? AND json_extract(result,'$.lemma')=? AND json_extract(result,'$.qualifier')=?",
+                params![language,lemma.nfc().collect::<String>(),qualifier.nfc().collect::<String>()])?;
+            tx.execute("UPDATE job SET state='waiting',result=NULL,attempts=0 WHERE pos=-1 AND (source,ref) IN (SELECT source,ref FROM affected)",[])?;
+            let count=tx.execute("UPDATE job SET state='ready', result=NULL,attempts=0, feedback=? WHERE (source,ref,pos) IN (SELECT * FROM affected)",[reason])?;
+            tx.commit()?;
+            println!("Queued {count} occurrences for reassignment.");
+            Ok(())
+        }
+        Action::ApplyArticles { lexicon, data } => {
+            let result = articles::apply(&mut db, &lexicon, &data);
+            articles::refresh_dependencies(&mut db, &Catalog::load(&lexicon)?.revisions)?;
+            result
+        }
+        Action::Export => export(&db),
+    }
+}
+
+fn export(db: &Connection) -> Result<()> {
+    let mut q=db.prepare("SELECT source,ref,result,packet FROM job JOIN verse USING(source,ref) WHERE pos=-1 AND state='done' ORDER BY ref,source")?;
+    let mut rows = q.query([])?;
+    let mut stdout = io::BufWriter::new(io::stdout().lock());
+    while let Some(r) = rows.next()? {
+        let source: String = r.get(0)?;
+        let reference: i64 = r.get(1)?;
+        let packet: Value = serde_json::from_str(&r.get::<_, String>(3)?)?;
+        let mut stmt = db.prepare_cached(
+            "SELECT pos,result FROM job WHERE source=? AND ref=? AND pos>=0 ORDER BY pos",
+        )?;
+        let mut words = Vec::new();
+        let mut results = stmt.query(params![source, reference])?;
+        while let Some(row) = results.next()? {
+            let pos: i64 = row.get(0)?;
+            words.push(json!({"position":pos,"surface":packet["words"][words.len()]["surface"],"analysis":serde_json::from_str::<Value>(&row.get::<_,String>(1)?)?}));
+        }
+        writeln!(
+            stdout,
+            "{}",
+            json!({"source":source,"book":reference>>16,"chapter":(reference>>8)&255,"verse":reference&255,
+            "words":words,"review":serde_json::from_str::<Value>(&r.get::<_,String>(2)?)?})
+        )?;
+    }
+    stdout.flush()?;
+    Ok(())
+}
+
+fn run(
+    db: &mut Connection,
+    catalog: &Catalog,
+    limit: usize,
+    max_attempts: u32,
+    worker: &(impl Fn(&Value) -> Result<(Value, Value)> + Sync),
+) -> Result<()> {
+    let (tx, rx) = mpsc::channel();
+    let mut active = 0;
+    thread::scope(|scope| -> Result<()> {
+        loop {
+            while active < limit {
+                let Some(job) = jobs::next(db)? else { break };
+                let attempts: u32 = db.query_row(
+                    "SELECT attempts FROM job WHERE source=? AND ref=? AND pos=?",
+                    job.key(),
+                    |r| r.get(0),
+                )?;
+                if attempts >= max_attempts {
+                    db.execute("UPDATE job SET state='failed', error=coalesce(error,'review attempt limit reached') WHERE source=? AND ref=? AND pos=?",job.key())?;
+                    continue;
+                }
+                let packet = jobs::packet(db, &job, catalog)?;
+                db.execute("UPDATE job SET state='running',attempts=attempts+1 WHERE source=? AND ref=? AND pos=?",job.key())?;
+                let tx = tx.clone();
+                scope.spawn(move || {
+                    let start = std::time::Instant::now();
+                    let result = worker(&packet);
+                    let _ = tx.send((job, packet, result, start.elapsed()));
+                });
+                active += 1;
+            }
+            if active == 0 {
+                break;
+            }
+            let (job, packet, result, elapsed) = rx.recv()?;
+            active -= 1;
+            let usage = result.as_ref().ok().map(|(_, u)| u.to_string());
+            let outcome =
+                result.and_then(|(answer, usage)| jobs::accept(db, &job, answer, &usage, &packet));
+            db.execute(
+                "INSERT INTO attempt VALUES(?,?,?,?,?,?)",
+                params![
+                    job.source,
+                    job.reference,
+                    job.pos,
+                    elapsed.as_millis() as i64,
+                    usage,
+                    outcome.as_ref().err().map(|e| format!("{e:#}"))
+                ],
+            )?;
+            if let Err(e) = outcome {
+                eprintln!(
+                    "{} {} position {}: {e:#}",
+                    job.source, job.reference, job.pos
+                );
+                db.execute("UPDATE job SET state=iif(attempts>=?,'failed','ready'), error=? WHERE source=? AND ref=? AND pos=?",
+                    params![max_attempts,format!("{e:#}"),job.source,job.reference,job.pos])?;
+            }
+        }
+        Ok(())
+    })?;
+    let failed: i64 = db.query_row("SELECT count(*) FROM job WHERE state='failed'", [], |r| {
+        r.get(0)
+    })?;
+    ensure!(
+        failed == 0,
+        "{failed} failed jobs; inspect errors in SQLite, then use retry"
+    );
+    Ok(())
+}
+
+fn invoke(worker: Option<&Path>, model: Option<&str>, prompt: &str) -> Result<(Value, Value)> {
+    let mut cmd = Command::new(worker.unwrap_or(Path::new("codex")));
+    if worker.is_none() {
+        cmd.args(["exec", "--ephemeral", "--sandbox", "read-only", "--json",
+            "--disable","apps","--disable","memories","--disable","multi_agent",
+            "--enable","omit_skill_descriptions",
+            "-c",r#"base_instructions="You are a biblical-language corpus reviewer. Complete only the assigned word or verse, consult local sources as needed, and answer with the requested JSON." "#.trim(),
+        ]);
+        if let Some(m) = model {
+            cmd.args(["--model", m]);
+        }
+        cmd.arg("-");
+    }
+    let mut child = cmd
+        .stdin(Stdio::piped())
+        .stdout(Stdio::piped())
+        .stderr(Stdio::piped())
+        .spawn()
+        .context("start review worker")?;
+    let sent = child
+        .stdin
+        .take()
+        .context("worker stdin")?
+        .write_all(prompt.as_bytes());
+    let output = child.wait_with_output()?;
+    ensure!(
+        output.status.success(),
+        "worker {}: {}",
+        output.status,
+        String::from_utf8_lossy(&output.stderr)
+            .chars()
+            .take(2000)
+            .collect::<String>()
+    );
+    sent?;
+    if worker.is_some() {
+        return Ok((serde_json::from_slice(&output.stdout)?, Value::Null));
+    }
+    let mut last = None;
+    let mut usage = Value::Null;
+    for line in std::str::from_utf8(&output.stdout)?.lines() {
+        let event: Value = serde_json::from_str(line)?;
+        match event["type"].as_str() {
+            Some("item.completed") if event["item"]["type"] == "agent_message" => {
+                last = event["item"]["text"].as_str().map(str::to_owned)
+            }
+            Some("turn.completed") => usage = event["usage"].clone(),
+            Some("turn.failed") => bail!("Codex turn failed: {}", event["error"]),
+            _ => {}
+        }
+    }
+    Ok((
+        serde_json::from_str(&last.context("Codex returned no final answer")?)?,
+        usage,
+    ))
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+    use std::sync::{
+        Condvar, Mutex,
+        atomic::{AtomicUsize, Ordering},
+    };
+    use std::time::Duration;
+
+    fn fixture(counts: &[usize]) -> Connection {
+        let db = Connection::open_in_memory().unwrap();
+        db.execute_batch(jobs::SCHEMA).unwrap();
+        for (i, count) in counts.iter().enumerate() {
+            let reference = (43 << 16) + (11 << 8) + 1 + i as i64;
+            let words = (0..*count)
+                .map(|p| json!({"position":p,"surface":"λόγος","source_analysis":{}}))
+                .collect::<Vec<_>>();
+            db.execute(
+                "INSERT INTO verse VALUES('greek',?,?)",
+                params![reference, json!({"words":words,"english":[]}).to_string()],
+            )
+            .unwrap();
+            db.execute(
+                "INSERT INTO job(source,ref,pos,state) VALUES('greek',?,-1,'waiting')",
+                [reference],
+            )
+            .unwrap();
+            for p in 0..*count {
+                db.execute(
+                    "INSERT INTO job(source,ref,pos,state) VALUES('greek',?,?,'ready')",
+                    params![reference, p as i64],
+                )
+                .unwrap();
+            }
+        }
+        db
+    }
+    fn word() -> Value {
+        json!({"language":"grc","lemma":"λόγος","root":"","qualifier":"","morphology":"noun",
+            "sense":"word","gloss":"word","evidence":"fixture occurrence","entry":{"draft":{"definition":"word","change":"new","evidence":"fixture"}}})
+    }
+    fn verse(p: &Value) -> Value {
+        let words = p["words"].as_array().unwrap();
+        let spans = words
+            .iter()
+            .map(|w| format!("[word|{}]", w["position"]))
+            .collect::<Vec<_>>()
+            .join(" ");
+        json!({"translation":spans,"glosses":words.iter().map(|w|json!({"position":w["position"],"gloss":"word"})).collect::<Vec<_>>()})
+    }
+    #[test]
+    fn later_words_overlap_ready_verse_with_one_shared_limit() {
+        let mut db = fixture(&[1, 3, 2]);
+        let active = AtomicUsize::new(0);
+        let peak = AtomicUsize::new(0);
+        let gate = (Mutex::new(false), Condvar::new());
+        run(&mut db, &Catalog::default(), 2, 1, &|p| {
+            let n = active.fetch_add(1, Ordering::SeqCst) + 1;
+            peak.fetch_max(n, Ordering::SeqCst);
+            let answer = if p["kind"] == "word" {
+                if p["verse"] == 2 && p["position"] == 0 {
+                    let started = gate.0.lock().unwrap();
+                    let (started, _) = gate
+                        .1
+                        .wait_timeout_while(started, Duration::from_secs(3), |b| !*b)
+                        .unwrap();
+                    ensure!(*started, "later word could not overlap a ready verse");
+                }
+                word()
+            } else {
+                if p["verse"] == 1 {
+                    *gate.0.lock().unwrap() = true;
+                    gate.1.notify_all();
+                }
+                let expected = if p["verse"] == 1 {
+                    1
+                } else if p["verse"] == 2 {
+                    3
+                } else {
+                    2
+                };
+                assert_eq!(p["words"].as_array().unwrap().len(), expected);
+                verse(p)
+            };
+            active.fetch_sub(1, Ordering::SeqCst);
+            Ok((answer, Value::Null))
+        })
+        .unwrap();
+        assert_eq!(peak.load(Ordering::SeqCst), 2);
+        assert_eq!(
+            db.query_row("SELECT count(*) FROM job WHERE state='done'", [], |r| r
+                .get::<_, i64>(0))
+                .unwrap(),
+            9
+        );
+        run(&mut db, &Catalog::default(), 2, 1, &|_| {
+            bail!("completed work redispatched")
+        })
+        .unwrap();
+    }
+    #[test]
+    fn failed_word_blocks_only_its_verse_and_rework_targets_one_position() {
+        let mut db = fixture(&[2, 1]);
+        let result = run(&mut db, &Catalog::default(), 2, 1, &|p| {
+            let answer = if p["kind"] == "word" {
+                if p["verse"] == 1 && p["position"] == 1 {
+                    json!({})
+                } else {
+                    word()
+                }
+            } else {
+                assert_eq!(p["verse"], 2);
+                verse(p)
+            };
+            Ok((answer, Value::Null))
+        });
+        assert!(result.is_err());
+        db.execute(
+            "UPDATE job SET state='ready',attempts=0 WHERE state='failed'",
+            [],
+        )
+        .unwrap();
+        run(&mut db, &Catalog::default(), 2, 3, &|p| {
+            assert_eq!(p["verse"], 1);
+            let answer = if p["kind"] == "word" {
+                if p["position"] == 0 {
+                    assert_eq!(p["feedback"], "check morphology");
+                }
+                word()
+            } else if p["feedback"].is_null() {
+                json!({"rework":[{"position":0,"reason":"check morphology"}]})
+            } else {
+                verse(p)
+            };
+            Ok((answer, Value::Null))
+        })
+        .unwrap();
+        assert_eq!(
+            db.query_row("SELECT count(*) FROM job WHERE state='done'", [], |r| r
+                .get::<_, i64>(0))
+                .unwrap(),
+            5
+        );
+    }
+
+    #[test]
+    fn changed_lexicon_article_reopens_only_dependent_words_and_verses() {
+        let mut db = fixture(&[2, 1]);
+        db.execute("UPDATE job SET state='done'", []).unwrap();
+        db.execute("INSERT INTO dependency SELECT source,ref,pos,'example',0,'old' FROM job WHERE ref=(SELECT min(ref) FROM verse) AND pos=1",[]).unwrap();
+        articles::refresh_dependencies(&mut db, &Default::default()).unwrap();
+        let jobs: Vec<(i64, String)> = db
+            .prepare("SELECT pos,state FROM job ORDER BY ref,pos")
+            .unwrap()
+            .query_map([], |r| Ok((r.get(0)?, r.get(1)?)))
+            .unwrap()
+            .collect::<rusqlite::Result<_>>()
+            .unwrap();
+        assert_eq!(
+            jobs,
+            [
+                (-1, "waiting".into()),
+                (0, "done".into()),
+                (1, "ready".into()),
+                (-1, "done".into()),
+                (0, "done".into())
+            ]
+        );
+    }
+}
