@@ -137,15 +137,21 @@
     {
       "analysis": {
         "entry": {
-          "existing": "7aam",
+          "draft": {
+            "article_id": "7aam",
+            "base": "eab1750c1b64861213980db45a18247d4d619e6921a468f319f1554f4b1129c1",
+            "change": "Add Genesis 7:13 as defining evidence for Ham’s identity in the existing personal-name article.",
+            "definition": "Ham is one of Noah’s three sons.",
+            "evidence": "Genesis 7:13 names Ham with his brothers Shem and Japheth among those who entered the ark."
+          },
           "word": 0
         },
-        "evidence": "The verse says Noah fathered three sons. The direct-object marker אֶת introduces חָם as the second son listed, between שֵׁם and יָפֶת.",
+        "evidence": "The verse says Noah fathered three sons and names each after אֶת. חָם is the second son listed, between שֵׁם and יָפֶת.",
         "gloss": "Ham",
         "language": "he",
         "lemma": "חָם",
         "morph": "HNp",
-        "morphology": "Masculine singular proper noun with no prefix or suffix",
+        "morphology": "Masculine singular personal name with no prefix or suffix. The direct-object marker אֶת is a separate word.",
         "qualifier": "personal name",
         "root": "חמ",
         "segments": "חָם",
