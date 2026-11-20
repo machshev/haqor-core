@@ -1,0 +1,1080 @@
+{
+  "id": "yadah",
+  "created": "2026-11-19",
+  "root": "ידה",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "tags": [
+    "thanksgiving",
+    "praise",
+    "confession",
+    "sacrifice",
+    "worship"
+  ],
+  "gloss": "give thanks, acknowledge, confess, throw",
+  "summary": "יָדָה in its qal and piel is to throw or cast (Jer 50:14; Lam 3:53); its hiphil, nearly all its uses, is to acknowledge openly: to give thanks to Yahweh for what he is and does (Psa 136:1) and to confess one’s sin to him (Psa 32:5), and its hithpael is confession of sin, as over the goat of the day of covering (Lev 16:21). תּוֹדָה is that thanksgiving, the thank offering, and confession.",
+  "words": [
+    {
+      "lemma": "יָדָה",
+      "pos": "verb",
+      "gloss": "throw, cast; (hiphil) give thanks, praise, acknowledge, confess; (hithpael) confess",
+      "bdb": [
+        "j.at.aa"
+      ],
+      "summary": "114 uses, 100 of them hiphil. The qal and piel, three uses in all, are to throw or cast; the hiphil and hithpael are to acknowledge openly, in thanks to Yahweh or in confession of sin. Scripture does not show how the two meanings join, nor whether either comes from יָד, the hand.",
+      "greek": [
+        {
+          "lemma": "ἐξομολογέω",
+          "gloss": "acknowledge, confess; give thanks, praise",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.18.50, אוֹדְךָ → ἐξομολογήσομαί; Psa.136.1, הוֹדוּ → ἐξομολογεῖσθε; Dan.9.4, וָאֶתְוַדֶּה → ἐξωμολογησάμην; ἐξομολογέω and its forms render יָדָה about 80 times"
+            },
+            {
+              "ref": "Rom.15.9",
+              "role": "defining",
+              "note": "“Therefore I will ἐξομολογήσομαί you among the nations and sing to your name”: Psa 18:50, אוֹדְךָ בַגּוֹיִם."
+            },
+            {
+              "ref": "Mat.3.6",
+              "note": "Baptised by John “ἐξομολογούμενοι their sins”, as Israel confessed theirs (Neh 9:2)."
+            },
+            {
+              "ref": "Mrk.1.5"
+            },
+            {
+              "ref": "Mat.11.25",
+              "note": "“I ἐξομολογοῦμαί you, Father, Lord of heaven and earth.”"
+            },
+            {
+              "ref": "Jas.5.16",
+              "note": "“Confess your faults one to another.”"
+            }
+          ]
+        }
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "shoot, throw",
+          "cognate_ids": [
+            "gez-wadaya",
+            "uga-ydy"
+          ],
+          "senses": [
+            {
+              "id": "throw",
+              "gloss": "shoot (arrows), throw",
+              "definition": "Let fly at a target: shoot arrows at an enemy.",
+              "evidence": [
+                {
+                  "ref": "Jer.50.14",
+                  "role": "defining",
+                  "note": "“All you who bend the bow, shoot (יְדוּ) at her; spare no arrow.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "cast, cast down",
+          "cognate_ids": [
+            "gez-wadaya",
+            "uga-ydy"
+          ],
+          "senses": [
+            {
+              "gloss": "cast; cast down",
+              "definition": "Throw a thing at or down: stones at a man, the horns of the nations down to the ground.",
+              "evidence": [
+                {
+                  "ref": "Lam.3.53",
+                  "role": "defining",
+                  "note": "“They cut off my life in the pit and cast (וַיַּדּוּ) a stone on me.”"
+                },
+                {
+                  "ref": "Zec.2.4",
+                  "role": "defining",
+                  "note": "The craftsmen come “to cast down (לְיַדּוֹת) the horns of the nations” that scattered Judah."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "give thanks, praise; acknowledge, confess",
+          "cognate_ids": [
+            "arc-awdi"
+          ],
+          "senses": [
+            {
+              "id": "give-thanks",
+              "gloss": "give thanks to, praise (Yahweh)",
+              "definition": "Declare openly, before others, what Yahweh is and has done: thank him for his goodness and faithfulness. It stands beside “sing praise” and “bless”, and its fixed refrain gives its reason: “for he is good, for his חֶסֶד is forever”.",
+              "evidence": [
+                {
+                  "ref": "Psa.136.1",
+                  "role": "defining",
+                  "note": "“Give thanks to Yahweh, for he is good, for his חֶסֶד is forever”, the refrain of the whole psalm (136:2–3, 26)."
+                },
+                {
+                  "ref": "Gen.29.35",
+                  "role": "defining",
+                  "note": "Leah at Judah’s birth: “This time I will praise (אוֹדֶה) Yahweh.”"
+                },
+                {
+                  "ref": "Psa.18.50",
+                  "role": "defining",
+                  "note": "“I will give thanks to you among the nations and sing praise to your name”, quoted in Rom 15:9."
+                },
+                {
+                  "ref": "Psa.92.2",
+                  "role": "defining",
+                  "note": "“It is good to give thanks to Yahweh and to sing praises to your name, Most High.”"
+                },
+                {
+                  "ref": "Psa.100.4",
+                  "note": "“Enter his gates with תּוֹדָה …; give thanks to him, bless his name.”"
+                },
+                {
+                  "ref": "Psa.107.8",
+                  "note": "“Let them thank Yahweh for his חֶסֶד and his wonders to the sons of man”, four times (107:15, 21, 31)."
+                },
+                {
+                  "ref": "Psa.145.10",
+                  "note": "“All your works shall thank you, and your faithful ones bless you.”"
+                },
+                {
+                  "ref": "Isa.12.1",
+                  "role": "defining",
+                  "note": "“I will thank you, Yahweh; though you were angry with me, your anger turned away and you comforted me.”"
+                },
+                {
+                  "ref": "Isa.38.19",
+                  "role": "defining",
+                  "note": "“The living, the living, he thanks you, as I do this day”, against the grave and death that cannot (38:18)."
+                },
+                {
+                  "ref": "1Ch.16.34"
+                },
+                {
+                  "ref": "2Ch.5.13",
+                  "note": "The singers “to praise and to give thanks to Yahweh”, and the house was filled with a cloud."
+                },
+                {
+                  "ref": "Ezr.3.11",
+                  "note": "At the founding of the second house they sang “praising and giving thanks to Yahweh, for he is good”."
+                },
+                {
+                  "ref": "Jer.33.11",
+                  "note": "In restored Jerusalem, the voice of those saying “Give thanks to Yahweh of hosts”."
+                },
+                {
+                  "ref": "1Ch.25.3",
+                  "note": "Jeduthun prophesied with the harp “to give thanks and to praise Yahweh”."
+                },
+                {
+                  "ref": "Psa.122.4",
+                  "note": "The tribes go up “to give thanks to the name of Yahweh”."
+                }
+              ]
+            },
+            {
+              "id": "confess-sin",
+              "gloss": "acknowledge, confess (sin)",
+              "definition": "Own openly to Yahweh what one has done, the opposite of covering it.",
+              "evidence": [
+                {
+                  "ref": "Psa.32.5",
+                  "role": "defining",
+                  "note": "“My iniquity I did not cover; I said, I will confess (אוֹדֶה) my transgressions to Yahweh, and you forgave the iniquity of my sin.”"
+                },
+                {
+                  "ref": "Pro.28.13",
+                  "role": "defining",
+                  "note": "“He who covers his transgressions will not prosper, but he who confesses (מוֹדֶה) and forsakes them will find mercy.”"
+                },
+                {
+                  "ref": "1Ki.8.33",
+                  "note": "If Israel is struck down for its sin and turns again “and confesses your name” and prays in this house."
+                },
+                {
+                  "ref": "1Ki.8.35"
+                },
+                {
+                  "ref": "2Ch.6.24"
+                }
+              ]
+            },
+            {
+              "gloss": "praise, acknowledge (a man)",
+              "definition": "Of men toward a man: praise him, or own what he is or can do.",
+              "evidence": [
+                {
+                  "ref": "Gen.49.8",
+                  "role": "defining",
+                  "note": "“Judah, you, your brothers shall praise you (יוֹדוּךָ)”: the name heard again."
+                },
+                {
+                  "ref": "Psa.49.19",
+                  "note": "“Men praise you when you do well for yourself.”"
+                },
+                {
+                  "ref": "Psa.45.18",
+                  "note": "Of the king: “the peoples shall praise you forever and ever”."
+                },
+                {
+                  "ref": "Job.40.14",
+                  "role": "defining",
+                  "note": "Yahweh to Job: “Then I too will acknowledge to you that your own right hand can save you.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpael",
+          "gloss": "confess (sin); give thanks",
+          "cognate_ids": [
+            "arc-awdi"
+          ],
+          "senses": [
+            {
+              "id": "confess-hithpael",
+              "gloss": "confess (sin)",
+              "definition": "Speak out one’s own or one’s people’s sin before Yahweh: required of the guilty with his offering or restitution, done by the high priest over the living goat, and by Daniel, Ezra and Nehemiah for the nation.",
+              "evidence": [
+                {
+                  "ref": "Lev.5.5",
+                  "role": "defining",
+                  "note": "“When he is guilty in one of these, he shall confess that in which he sinned”, and then bring his guilt offering."
+                },
+                {
+                  "ref": "Lev.16.21",
+                  "role": "defining",
+                  "note": "Aaron lays his hands on the living goat “and confesses over it all the iniquities of the sons of Israel”, putting them on its head."
+                },
+                {
+                  "ref": "Num.5.7",
+                  "note": "“They shall confess their sin that they have done” and restore it in full with a fifth added."
+                },
+                {
+                  "ref": "Lev.26.40",
+                  "role": "defining",
+                  "note": "“If they confess their iniquity and the iniquity of their fathers … then I will remember my covenant with Jacob” (26:40–42)."
+                },
+                {
+                  "ref": "Dan.9.4",
+                  "note": "“I prayed to Yahweh my God and confessed.”"
+                },
+                {
+                  "ref": "Dan.9.20"
+                },
+                {
+                  "ref": "Ezr.10.1",
+                  "note": "Ezra praying and confessing, weeping and casting himself down before the house of God."
+                },
+                {
+                  "ref": "Neh.1.6"
+                },
+                {
+                  "ref": "Neh.9.2",
+                  "note": "Israel stood “and confessed their sins and the iniquities of their fathers”."
+                },
+                {
+                  "ref": "Neh.9.3"
+                }
+              ]
+            },
+            {
+              "gloss": "give thanks",
+              "definition": "Once of thanks: the Levites at Hezekiah’s feast “giving thanks to Yahweh”.",
+              "evidence": [
+                {
+                  "ref": "2Ch.30.22",
+                  "role": "defining",
+                  "note": "Seven days of the feast, “sacrificing peace offerings and giving thanks (מִתְוַדִּים) to Yahweh, the God of their fathers”."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "זָמַר",
+            "note": "“Sing praise”, in the next line.",
+            "evidence": [
+              {
+                "ref": "Psa.18.50",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.92.2"
+              },
+              {
+                "ref": "Psa.30.5"
+              }
+            ]
+          },
+          {
+            "lemma": "הָלַל",
+            "note": "“Praise”, beside it.",
+            "evidence": [
+              {
+                "ref": "Isa.38.18",
+                "role": "defining"
+              },
+              {
+                "ref": "1Ch.25.3"
+              },
+              {
+                "ref": "2Ch.5.13"
+              }
+            ]
+          },
+          {
+            "lemma": "בָּרַךְ",
+            "note": "“Bless”, beside it.",
+            "evidence": [
+              {
+                "ref": "Psa.100.4",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.145.10"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "כָּסָה",
+            "note": "“Cover” sin, against confessing it.",
+            "evidence": [
+              {
+                "ref": "Pro.28.13",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.32.5",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "הוֹדוּ לַיהוָה כִּי־טוֹב כִּי לְעוֹלָם חַסְדּוֹ",
+            "gloss": "give thanks to Yahweh, for he is good, for his חֶסֶד is forever",
+            "evidence": [
+              {
+                "ref": "Psa.136.1",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.106.1"
+              },
+              {
+                "ref": "Psa.107.1"
+              },
+              {
+                "ref": "Psa.118.1"
+              },
+              {
+                "ref": "Psa.118.29"
+              },
+              {
+                "ref": "1Ch.16.34"
+              },
+              {
+                "ref": "Jer.33.11"
+              }
+            ]
+          },
+          {
+            "phrase": "הוֹדָה לְשֵׁם יְהוָה",
+            "gloss": "give thanks to the name of Yahweh",
+            "evidence": [
+              {
+                "ref": "Psa.122.4",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.106.47"
+              },
+              {
+                "ref": "Psa.140.14"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "תּוֹדָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "thanksgiving, praise; thank offering; confession; thanksgiving choir",
+      "bdb": [
+        "j.at.ad"
+      ],
+      "cognate_ids": [
+        "arc-awdi"
+      ],
+      "summary": "32 uses: the noun of the hiphil, the thanks itself, the peace offering brought for it, the confession of sin, and in Nehemiah the companies that sang it on the wall.",
+      "senses": [
+        {
+          "id": "thanksgiving",
+          "gloss": "thanksgiving, praise",
+          "definition": "Thanks and praise spoken or sung to Yahweh.",
+          "kin": [
+            "give-thanks"
+          ],
+          "evidence": [
+            {
+              "ref": "Psa.100.4",
+              "role": "defining",
+              "note": "“Enter his gates with תּוֹדָה, his courts with praise; give thanks to him.”"
+            },
+            {
+              "ref": "Psa.95.2",
+              "note": "“Let us come before his face with תּוֹדָה; let us shout to him with psalms.”"
+            },
+            {
+              "ref": "Psa.69.31",
+              "to": "Psa.69.32",
+              "role": "defining",
+              "note": "“I will praise the name of God with a song and magnify him with תּוֹדָה; and it will please Yahweh more than an ox.”"
+            },
+            {
+              "ref": "Psa.26.7",
+              "note": "“To make heard the voice of תּוֹדָה and tell all your wonders.”"
+            },
+            {
+              "ref": "Psa.42.5"
+            },
+            {
+              "ref": "Isa.51.3",
+              "note": "In comforted Zion, “joy and gladness, תּוֹדָה and the voice of song”."
+            },
+            {
+              "ref": "Jer.30.19",
+              "note": "“Out of them shall go out תּוֹדָה and the voice of those who make merry.”"
+            },
+            {
+              "ref": "Jon.2.10",
+              "note": "“I will sacrifice to you with the voice of תּוֹדָה.”"
+            },
+            {
+              "ref": "Psa.147.7"
+            }
+          ]
+        },
+        {
+          "id": "thank-offering",
+          "gloss": "thank offering",
+          "definition": "The peace offering brought for thanksgiving: with unleavened cakes and leavened bread, its flesh eaten on the day it is offered.",
+          "evidence": [
+            {
+              "ref": "Lev.7.12",
+              "role": "defining",
+              "note": "“If he offers it for תּוֹדָה, he shall offer with the זֶבַח הַתּוֹדָה unleavened cakes mixed with oil.”"
+            },
+            {
+              "ref": "Lev.7.13",
+              "note": "With loaves of leavened bread."
+            },
+            {
+              "ref": "Lev.7.15",
+              "role": "defining",
+              "note": "Its flesh “shall be eaten on the day of its offering; he shall not leave any of it until morning”."
+            },
+            {
+              "ref": "Lev.22.29"
+            },
+            {
+              "ref": "Amo.4.5",
+              "note": "Israel burns leavened bread as a thank offering and boasts of it: the offering without the heart."
+            },
+            {
+              "ref": "Psa.50.14",
+              "role": "defining",
+              "note": "“Sacrifice תּוֹדָה to God and pay your vows to the Most High.”"
+            },
+            {
+              "ref": "Psa.50.23",
+              "note": "“He who sacrifices תּוֹדָה honours me.”"
+            },
+            {
+              "ref": "Psa.107.22"
+            },
+            {
+              "ref": "Psa.116.17",
+              "note": "“I will sacrifice to you the זֶבַח תּוֹדָה and call on the name of Yahweh.”"
+            },
+            {
+              "ref": "Psa.56.13"
+            },
+            {
+              "ref": "Jer.17.26"
+            },
+            {
+              "ref": "Jer.33.11",
+              "note": "Those bringing תּוֹדָה into the house of Yahweh in the restored city."
+            },
+            {
+              "ref": "2Ch.29.31"
+            },
+            {
+              "ref": "2Ch.33.16"
+            }
+          ]
+        },
+        {
+          "id": "confession",
+          "gloss": "confession",
+          "definition": "Owning the truth to Yahweh, of sin done.",
+          "kin": [
+            "confess-sin",
+            "confess-hithpael"
+          ],
+          "evidence": [
+            {
+              "ref": "Jos.7.19",
+              "role": "defining",
+              "note": "Joshua to Achan: “Give glory to Yahweh the God of Israel and give him תּוֹדָה; tell me now what you have done.”"
+            },
+            {
+              "ref": "Ezr.10.11",
+              "role": "defining",
+              "note": "“Now give תּוֹדָה to Yahweh the God of your fathers and do his will, and separate yourselves.”"
+            }
+          ]
+        },
+        {
+          "gloss": "thanksgiving choir, company",
+          "definition": "In Nehemiah, the two great companies that went round the wall singing at its dedication.",
+          "kin": [
+            "give-thanks"
+          ],
+          "evidence": [
+            {
+              "ref": "Neh.12.31",
+              "role": "defining",
+              "note": "“I appointed two great תּוֹדֹת and processions”, one to the right on the wall."
+            },
+            {
+              "ref": "Neh.12.38"
+            },
+            {
+              "ref": "Neh.12.40",
+              "note": "“So the two תּוֹדֹת stood in the house of God.”"
+            },
+            {
+              "ref": "Neh.12.27",
+              "note": "The dedication kept “with gladness and with תּוֹדוֹת and with singing”."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "αἴνεσις",
+          "gloss": "praise",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Lev.7.12, תּוֹדָה → αἰνέσεως (twice); Psa.116.17, תּוֹדָה → αἰνέσεως; αἴνεσις renders תּוֹדָה ×16"
+            },
+            {
+              "ref": "Heb.13.15",
+              "role": "defining",
+              "note": "“Let us offer the θυσίαν αἰνέσεως to God continually, that is, the fruit of lips confessing his name”: the Septuagint’s name for the זֶבַח תּוֹדָה, and the Peshitta’s “confessing” is מַודּיָנ of this root."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "הֻיְּדוֹת",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "songs of thanksgiving",
+      "bdb": [
+        "j.at.ac"
+      ],
+      "summary": "Once, in a plural form of the hiphil’s pattern. Its sense rests on that one verse and on the other Levites of Nehemiah 12 set over thanksgiving (12:24, 27); the Septuagint read it as “hands”.",
+      "senses": [
+        {
+          "gloss": "songs of thanksgiving",
+          "definition": "What Mattaniah and his brothers were set over among the Levites of the return: the songs of thanks.",
+          "kin": [
+            "give-thanks"
+          ],
+          "evidence": [
+            {
+              "ref": "Neh.12.8",
+              "role": "defining",
+              "note": "Mattaniah, “he and his brothers, over הֻיְּדוֹת”."
+            },
+            {
+              "ref": "Neh.12.24",
+              "note": "The chiefs of the Levites, “to praise and to give thanks, according to the command of David”."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "יְדָא",
+      "lang": "arc",
+      "root": "ידא",
+      "pos": "verb",
+      "gloss": "(haphel, aphel) give thanks, praise",
+      "bdb": [
+        "xj.ab.aa"
+      ],
+      "cognate_ids": [
+        "arc-awdi"
+      ],
+      "summary": "Twice, both of Daniel, with ה or א for the Hebrew’s ה and the same w: מְהוֹדֵא, מוֹדֵא.",
+      "stems": [
+        {
+          "stem": "haphel",
+          "gloss": "give thanks",
+          "senses": [
+            {
+              "gloss": "give thanks to God",
+              "definition": "Daniel thanks God for revealing the king’s dream.",
+              "kin": [
+                "give-thanks"
+              ],
+              "evidence": [
+                {
+                  "ref": "Dan.2.23",
+                  "role": "defining",
+                  "note": "“To you, God of my fathers, I give thanks (מְהוֹדֵא) and praise (וּמְשַׁבַּח), for you have given me wisdom and might.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "aphel",
+          "gloss": "give thanks",
+          "senses": [
+            {
+              "gloss": "give thanks to God",
+              "definition": "Daniel’s thanks with his prayer three times a day, kept against the king’s decree.",
+              "kin": [
+                "give-thanks"
+              ],
+              "evidence": [
+                {
+                  "ref": "Dan.6.11",
+                  "role": "defining",
+                  "note": "Three times a day he knelt “and prayed and gave thanks (מוֹדֵא) before his God, as he had done before”."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "יְדָא",
+      "lang": "syc",
+      "root": "ידא",
+      "pos": "verb",
+      "gloss": "(aphel) give thanks, confess, acknowledge; (eshtaphal) promise, agree",
+      "summary": "The Peshitta’s verb, about 80 times. Its aphel ܐܘܕܝ (ʾawdī), with the same w as the Hebrew hiphil, renders both ἐξομολογέω and εὐχαριστέω and ὁμολογέω: thanks, confession of sins, and confession of Christ. Its eshtaphal ܐܫܬܘܕܝ is to promise or agree, a sense the Hebrew does not show.",
+      "stems": [
+        {
+          "stem": "aphel",
+          "gloss": "give thanks; confess, acknowledge",
+          "senses": [
+            {
+              "gloss": "give thanks",
+              "definition": "Thank God openly, as the Hebrew hiphil.",
+              "kin": [
+                "give-thanks"
+              ],
+              "evidence": [
+                {
+                  "ref": "Rom.15.9",
+                  "role": "defining",
+                  "note": "דַּאודֵּא לָכֿ בּעַמ_מֵא, “I will give thanks to you among the nations”: Psa 18:50."
+                },
+                {
+                  "ref": "Mat.11.25",
+                  "role": "defining",
+                  "note": "מַודֵּא א_נָא לָכֿ אָבֿי, “I thank you, my Father”."
+                },
+                {
+                  "ref": "Luk.2.38",
+                  "note": "Anna “gave thanks to the Lord” (וַאודּיַתֿ למָריָא)."
+                },
+                {
+                  "ref": "Luk.17.16",
+                  "note": "The Samaritan fell at Jesus’ feet, מַודֵּא לֵה, giving him thanks."
+                },
+                {
+                  "ref": "Heb.13.15",
+                  "note": "“The fruit of lips דּמַודּיָנ לַשמֵה, confessing (thanking) his name.”"
+                }
+              ]
+            },
+            {
+              "gloss": "confess sins; confess, acknowledge (Christ)",
+              "definition": "Own openly: one’s sins, and Jesus as the Christ and Lord.",
+              "kin": [
+                "confess-sin",
+                "confess-hithpael"
+              ],
+              "evidence": [
+                {
+                  "ref": "Mat.3.6",
+                  "role": "defining",
+                  "note": "Baptised in the Jordan, כַּדֿ מַודֵּינ בַּחטָהַיהֻונ, “confessing their sins”."
+                },
+                {
+                  "ref": "Mrk.1.5"
+                },
+                {
+                  "ref": "Mat.10.32",
+                  "role": "defining",
+                  "note": "“Whoever confesses me (נַודֵּא בִּי) before men, I will confess him before my Father.”"
+                },
+                {
+                  "ref": "Jhn.1.20",
+                  "note": "John “confessed and did not deny, and confessed, I am not the Christ”."
+                },
+                {
+                  "ref": "Php.2.11",
+                  "note": "“Every tongue shall confess that Jesus Christ is Lord, to the glory of God the Father.”"
+                },
+                {
+                  "ref": "Rom.14.11",
+                  "note": "“Every tongue shall confess (נַודֵּא) to God”: Isa 45:23, whose Hebrew verb is תִּשָּׁבַע, “swear”."
+                }
+              ]
+            }
+          ],
+          "cognate_ids": [
+            "arc-awdi"
+          ]
+        },
+        {
+          "stem": "eshtaphal",
+          "gloss": "promise, agree",
+          "senses": [
+            {
+              "id": "syc-promise",
+              "gloss": "promise; agree",
+              "definition": "Bind oneself by word: God’s promise to Abraham, and the priests’ agreement to pay Judas.",
+              "evidence": [
+                {
+                  "ref": "Act.7.5",
+                  "role": "defining",
+                  "note": "God gave Abraham no inheritance in the land, “and promised (וֵאשתַּודִּי) to give it to him and his seed”."
+                },
+                {
+                  "ref": "Act.7.17",
+                  "note": "The time of the promise “which God had promised (דֵּאשתַּודִּי) to Abraham”."
+                },
+                {
+                  "ref": "Mrk.14.11",
+                  "note": "The chief priests “promised” Judas money."
+                },
+                {
+                  "ref": "Luk.22.6",
+                  "note": "Judas “agreed” (וֵאשתַּודִּי) and sought an opportunity."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "תַּודִּיתָא",
+      "lang": "syc",
+      "root": "ידא",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "thanksgiving; confession",
+      "cognate_ids": [
+        "arc-awdi"
+      ],
+      "summary": "The Peshitta’s ܬܘܕܝܬܐ (tawdītā), 17 times, the Syriac form of תּוֹדָה: thanksgiving (εὐχαριστία) and the confession of faith (ὁμολογία).",
+      "senses": [
+        {
+          "gloss": "thanksgiving",
+          "definition": "Thanks to God, offered with prayer.",
+          "kin": [
+            "thanksgiving"
+          ],
+          "evidence": [
+            {
+              "ref": "Php.4.6",
+              "role": "defining",
+              "note": "“In prayer and petition וַבֿתַֿודִּיתָֿא, with thanksgiving, let your requests be made known before God.”"
+            },
+            {
+              "ref": "1Co.14.16",
+              "note": "How shall the unlearned say Amen at תַּודִּיתָֿכֿ, your thanksgiving?"
+            },
+            {
+              "ref": "2Co.9.11",
+              "to": "2Co.9.12"
+            }
+          ]
+        },
+        {
+          "gloss": "confession (of faith)",
+          "definition": "What is openly owned and held: the confession of Christ and of the hope.",
+          "kin": [
+            "confession"
+          ],
+          "evidence": [
+            {
+              "ref": "1Ti.6.12",
+              "role": "defining",
+              "note": "“You confessed (וַאודִּיתֿ) the good confession (תַּודִּיתָֿא) before many witnesses.”"
+            },
+            {
+              "ref": "Heb.3.1",
+              "note": "Jesus Christ, “apostle and high priest of our תַּודִּיתָֿא”."
+            },
+            {
+              "ref": "Heb.10.23",
+              "role": "defining",
+              "note": "“Let us hold fast the confession of our hope without wavering.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שׁוּדָּיָא",
+      "lang": "syc",
+      "root": "ידא",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "promise",
+      "summary": "The Peshitta’s ܫܘܘܕܝܐ (šuwdāyā), 13 times, for ἐπαγγελία: the noun of the eshtaphal “promise”. The Hebrew has no word of this sense from the root.",
+      "senses": [
+        {
+          "gloss": "promise",
+          "definition": "What God has bound himself by word to give: the holy spirit, the inheritance promised to Abraham.",
+          "kin": [
+            "syc-promise"
+          ],
+          "evidence": [
+            {
+              "ref": "Act.1.4",
+              "role": "defining",
+              "note": "Wait for “the promise of the Father”."
+            },
+            {
+              "ref": "Act.2.39",
+              "note": "“The promise is to you and to your children, and to all who are far off.”"
+            },
+            {
+              "ref": "Gal.3.14",
+              "note": "“That we might receive the promise of the spirit through faith.”"
+            },
+            {
+              "ref": "Gal.3.19"
+            },
+            {
+              "ref": "Heb.6.17",
+              "role": "defining",
+              "note": "God willing to show the heirs of the promise that his counsel does not change, “confirmed it by an oath”."
+            },
+            {
+              "ref": "Heb.8.6"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "gez-wadaya",
+      "lang": "gez",
+      "form": "ወደየ",
+      "translit": "wädäyä",
+      "gloss": "cast, throw, put on; add",
+      "relation": "cognate",
+      "note": "The first letter is w: the verb “throw” is *wdy, as the Hebrew hiphil הוֹדָה and hithpael הִתְוַדָּה also show, and not the y of the hand.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Ge'ez ወደየ",
+          "url": "https://en.wiktionary.org/wiki/%E1%8B%88%E1%8B%B0%E1%8B%A8",
+          "note": "“to cast, throw, put on”; compare Hebrew יָדָה."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000513 wdy [throw], GEZ006033 wadaya [add], HEB002801 yadah [throw]"
+        }
+      ]
+    },
+    {
+      "id": "uga-ydy",
+      "lang": "uga",
+      "form": "𐎊𐎄𐎊",
+      "translit": "ydy",
+      "gloss": "throw (or scratch)",
+      "relation": "possible",
+      "note": "One word, read either way: the root list sets it under *wdy “throw”, Segert’s glossary under “scratch” (in mourning, 1.5 VI 18), so it does not settle the sense.",
+      "evidence": [
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000513 wdy [throw], UGC004744 ydy [throw]"
+        },
+        {
+          "source": "segert-1984",
+          "locator": "p. 188, §93 Glossary, /y-d-y/",
+          "note": "“ydy 1.5:VI:18 = 87.3 ‘to scratch’ (cf. Arab. wada(y))”."
+        }
+      ]
+    },
+    {
+      "id": "arc-awdi",
+      "lang": "arc",
+      "form": "אוֹדִי, אִתְוַדֵּי",
+      "translit": "ʾōdī, ʾitwaddē",
+      "gloss": "(aphel) admit, acknowledge, give thanks; (ithpaal) confess",
+      "relation": "cognate",
+      "note": "The Targums split the root as the Hebrew does: the causative is to admit or give thanks, the reflexive to confess sin (Onkelos Lev 5:5, for the Hebrew hithpael), each with the w. The Peshitta’s ʾawdī, “give thanks, confess”, is the same.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. יְדִי, J00101",
+          "note": "Pa. וַדֵּי, Ithpa. אִתְוַדֵּי “to confess”, Targ. O. Lev. V, 5; Af. אוֹדִי, הוֹדִי, Targ. Prov. XXVIII, 13; Targ. Gen. XLIX, 8; “he must offer thanks”."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "confession-and-forgiveness",
+      "statement": "The verb that thanks Yahweh for his goodness also confesses sin: both are owning openly what is true, of him and of oneself. The law required the guilty man to confess the sin he had done with his offering or restitution (Lev 5:5; Num 5:7); the high priest confessed all Israel’s iniquities over the living goat (Lev 16:21); and Yahweh promised that if Israel in exile confessed their iniquity he would remember his covenant with Jacob, Isaac and Abraham (Lev 26:40–42). David: “My iniquity I did not cover; I said, I will confess my transgressions to Yahweh, and you forgave” (Psa 32:5); “he who covers his transgressions will not prosper, but he who confesses and forsakes them will find mercy” (Pro 28:13). Daniel, Ezra and Nehemiah confessed the nation’s sins (Dan 9:4, 20; Ezr 10:1; Neh 9:2). Those John baptised came “confessing their sins” (Mat 3:6; Mrk 1:5), and “if we confess our sins, he is faithful and just to forgive us our sins” (1Jn 1:9). From the verses: forgiveness is promised to sin owned and forsaken, not to sin covered.",
+      "evidence": [
+        {
+          "ref": "Lev.5.5"
+        },
+        {
+          "ref": "Num.5.7"
+        },
+        {
+          "ref": "Lev.16.21"
+        },
+        {
+          "ref": "Lev.26.40",
+          "to": "Lev.26.42"
+        },
+        {
+          "ref": "Psa.32.5"
+        },
+        {
+          "ref": "Pro.28.13"
+        },
+        {
+          "ref": "Dan.9.4"
+        },
+        {
+          "ref": "Dan.9.20"
+        },
+        {
+          "ref": "Ezr.10.1"
+        },
+        {
+          "ref": "Neh.9.2"
+        },
+        {
+          "ref": "Mat.3.6"
+        },
+        {
+          "ref": "Mrk.1.5"
+        },
+        {
+          "ref": "1Jn.1.9"
+        }
+      ]
+    },
+    {
+      "topic": "the-dead-do-not-praise",
+      "statement": "Thanksgiving belongs to the living. Hezekiah, raised from his sickness: “The grave does not thank you, death does not praise you; those who go down to the pit do not hope for your faithfulness. The living, the living, he thanks you, as I do this day” (Isa 38:18–19). “In death there is no remembrance of you; in the grave who will thank you?” (Psa 6:6). “Will the dust thank you? Will it declare your faithfulness?” (Psa 30:10). “Will you work wonders for the dead? Will the shades rise and thank you?” (Psa 88:11). The preacher says the same without the verb: “the dead know nothing … there is no work or thought or knowledge or wisdom in the grave” (Ecc 9:5, 10). From the verses: the dead are not alive elsewhere giving thanks; they lie silent in the grave, and the only way they will thank God again is the one Psalm 88 asks about, rising from it (Isa 26:19; Dan 12:2).",
+      "evidence": [
+        {
+          "ref": "Isa.38.18",
+          "to": "Isa.38.19"
+        },
+        {
+          "ref": "Psa.6.6"
+        },
+        {
+          "ref": "Psa.30.10"
+        },
+        {
+          "ref": "Psa.88.11"
+        },
+        {
+          "ref": "Ecc.9.5"
+        },
+        {
+          "ref": "Ecc.9.10"
+        },
+        {
+          "ref": "Isa.26.19"
+        },
+        {
+          "ref": "Dan.12.2"
+        }
+      ]
+    },
+    {
+      "topic": "sacrifice-of-thanksgiving",
+      "statement": "The thank offering (זֶבַח תּוֹדָה) was a peace offering brought for thanks, with unleavened cakes and leavened bread, its flesh eaten the day it was offered (Lev 7:12–15; 22:29–30). The psalms make the thanks itself the offering God asks for: “Sacrifice thanksgiving to God and pay your vows to the Most High” (Psa 50:14); “he who sacrifices thanksgiving honours me” (Psa 50:23); a song with thanksgiving “will please Yahweh more than an ox” (Psa 69:31–32); and Jeremiah foresees thank offerings and the cry “give thanks to Yahweh of hosts, for Yahweh is good” in Jerusalem again (Jer 33:11). Hebrews: “Through him let us offer the sacrifice of praise to God continually, that is, the fruit of lips confessing his name” (Heb 13:15), where θυσία αἰνέσεως is the Septuagint’s name for the זֶבַח תּוֹדָה (Lev 7:12) and the Peshitta’s “confessing” is the verb of this root. From the verses: the animal offerings end in Christ’s own, but the thank offering goes on, as thanks spoken to God through him.",
+      "evidence": [
+        {
+          "ref": "Lev.7.12",
+          "to": "Lev.7.15"
+        },
+        {
+          "ref": "Lev.22.29",
+          "to": "Lev.22.30"
+        },
+        {
+          "ref": "Psa.50.14"
+        },
+        {
+          "ref": "Psa.50.23"
+        },
+        {
+          "ref": "Psa.69.31",
+          "to": "Psa.69.32"
+        },
+        {
+          "ref": "Jer.33.11"
+        },
+        {
+          "ref": "Heb.13.15"
+        },
+        {
+          "ref": "Heb.10.12"
+        }
+      ]
+    }
+  ],
+  "note": "The hiphil and hithpael show an older w, as do Aramaic and Syriac ʾawdī and Geʿez wadaya. The noun for the hand retains y across these languages and is filed under יד. How throwing came to express acknowledgement is uncertain. SEDRA 1298–1300 supply the Syriac verb, promise and thanksgiving. The derivation of the Syriac promise sense remains open. Jidlaph has no established connection to this verb."
+}
