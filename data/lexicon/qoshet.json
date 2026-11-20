@@ -25,6 +25,9 @@
             }
           ]
         }
+      ],
+      "cognate_ids": [
+        "arc-qashshit"
       ]
     },
     {
@@ -69,9 +72,27 @@
           ]
         }
       ],
-      "lang": "arc"
+      "lang": "arc",
+      "cognate_ids": [
+        "arc-qashshit"
+      ]
     }
   ],
-  "cognates": [],
+  "cognates": [
+    {
+      "id": "arc-qashshit",
+      "lang": "arc",
+      "form": "קַשִּׁיט",
+      "translit": "qaššīṭ",
+      "gloss": "upright, true",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "קַשִּׁיט, S02244"
+        }
+      ]
+    }
+  ],
   "note": "The psalm key is indexed near קשח. Its final consonant is ט. The usual Hebrew noun for bow is קֶשֶׁת in qeshet. Proverbs and Daniel independently support the truth reading."
 }
