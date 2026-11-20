@@ -54,7 +54,6 @@
       "pos": "noun",
       "senses": [
         {
-          "id": "water-to-drink-wash",
           "cognate_ids": [
             "akk-mu",
             "arc-mayya"
@@ -76,10 +75,10 @@
               "ref": "Isa.55.1"
             }
           ],
-          "gloss": "water to drink, wash with or sustain growth"
+          "gloss": "water to drink, wash with or sustain growth",
+          "id": "water-to-drink-wash"
         },
         {
-          "id": "a-body-or-flow",
           "cognate_ids": [
             "akk-mu",
             "arc-mayya"
@@ -147,12 +146,17 @@
             {
               "note": "As the floodwaters recede, the mountaintops become visible.",
               "ref": "Gen.8.5"
+            },
+            {
+              "note": "God promises that all flesh will never again be cut off by the waters of the flood, מִמֵּי הַמַּבּוּל.",
+              "ref": "Gen.9.11",
+              "role": "example"
             }
           ],
-          "gloss": "a body or flow of water"
+          "gloss": "a body or flow of water",
+          "id": "a-body-or-flow"
         },
         {
-          "id": "overwhelming-waters-of-distress",
           "cognate_ids": [
             "akk-mu",
             "arc-mayya"
@@ -172,10 +176,10 @@
               "ref": "Isa.43.2"
             }
           ],
-          "gloss": "overwhelming waters, of distress"
+          "gloss": "overwhelming waters, of distress",
+          "id": "overwhelming-waters-of-distress"
         },
         {
-          "id": "water-poured-out-of",
           "definition": "Water spilled on the ground cannot be gathered back. The psalmist uses pouring water as an image of strength ebbing from his body.",
           "evidence": [
             {
@@ -186,7 +190,8 @@
               "ref": "Psa.22.15"
             }
           ],
-          "gloss": "water poured out, of spent strength or lost life"
+          "gloss": "water poured out, of spent strength or lost life",
+          "id": "water-poured-out-of"
         }
       ],
       "usage": {
@@ -212,9 +217,6 @@
                 "ref": "Jer.17.8"
               },
               {
-                "ref": "Jer.31.9"
-              },
-              {
                 "ref": "Pro.21.1"
               },
               {
@@ -237,7 +239,6 @@
       "root": "מיא",
       "senses": [
         {
-          "id": "water-in-which-a",
           "cognate_ids": [
             "akk-mu",
             "arc-mayya"
@@ -253,10 +254,10 @@
               "ref": "Jhn.13.5"
             }
           ],
-          "gloss": "water in which a person is washed or drinks"
+          "gloss": "water in which a person is washed or drinks",
+          "id": "water-in-which-a"
         },
         {
-          "id": "water-in-which-a-2",
           "definition": "John baptizes with water, and Philip and the Ethiopian go down into the water together for baptism and come up out of it.",
           "evidence": [
             {
@@ -265,10 +266,10 @@
               "to": "Act.8.39"
             }
           ],
-          "gloss": "water in which a person is baptized"
+          "gloss": "water in which a person is baptized",
+          "id": "water-in-which-a-2"
         },
         {
-          "id": "living-water-given-to",
           "cognate_ids": [
             "akk-mu",
             "arc-mayya"
@@ -285,7 +286,8 @@
               "to": "Jhn.7.39"
             }
           ],
-          "gloss": "living water given to the thirsty"
+          "gloss": "living water given to the thirsty",
+          "id": "living-water-given-to"
         }
       ]
     }
