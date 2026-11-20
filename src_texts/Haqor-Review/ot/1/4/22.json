@@ -165,45 +165,20 @@
           "draft": {
             "article_id": "ttwwbal-qayin",
             "base": null,
-            "change": "Add a personal-name article for Tubal-cain. Its proposed link through the marked component קַיִן requires the companion root article qayin.",
-            "definition": "The personal name of Zillah’s son, the metalworker whose sister was Naamah.",
-            "evidence": "Genesis 4:22 uses the full name twice for the same man, first at his birth and again when naming his sister.",
-            "reconciliation": {
-              "article": {
-                "english": "Tubal-cain",
-                "entry": "qyn",
-                "evidence": [
-                  {
-                    "note": "יָלְדָה אֶת תּוּבַל קַיִן gives the child’s name at birth. וַאֲחוֹת תּוּבַל קַיִן נַעֲמָה repeats the same two-part name in identifying his sister.",
-                    "ref": "Gen.4.22",
-                    "role": "defining"
-                  }
-                ],
-                "gloss": "Tubal-cain",
-                "id": "ttwwbal-qayin",
-                "name": "תּוּבַל קַיִן",
-                "note": "קינ records the consonants of the second component. The verse supplies no derivation for either component.",
-                "people": [],
-                "root": "קינ",
-                "status": "draft",
-                "summary": "Zillah bears Tubal-cain, whom Genesis associates with work in bronze and iron. The verse repeats his full name when it identifies Naamah as his sister. Its literal meaning is uncertain.",
-                "updated": "2026-11-20"
-              },
-              "base": null,
-              "conflicts": [
-                "resolve the bearer and validate its name article against the current lexicon"
-              ]
-            }
-          }
+            "change": "Add a personal-name article for Tubal-cain with his verified bearer. Remove the earlier draft’s proposed link to qayin. That article names Eve’s son Cain, and the verse supplies no etymological root for Tubal-cain.",
+            "definition": "Tubal-cain, the son of Zillah and brother of Naamah, associated with work in bronze and iron.",
+            "evidence": "Genesis 4:22 gives the same two-part name at the child’s birth and when identifying his sister. The local person record identifies him as Tubal-cain@Gen.4.22."
+          },
+          "word": 0
         },
-        "evidence": "After יָלְדָה אֶת, the two words תּוּבַל קַיִן name the child Zillah bore. The verse repeats both words in וַאֲחוֹת תּוּבַל קַיִן נַעֲמָה, identifying Naamah as his sister. This repetition establishes the extent of the name.",
+        "evidence": "Zillah bears the child named in יָלְדָה אֶת תּוּבַל קַיִן. The verse repeats the full name in וַאֲחוֹת תּוּבַל קַיִן נַעֲמָה, identifying Naamah as his sister and confirming that the marked קַיִן belongs to the child’s name.",
         "gloss": "Tubal-cain",
         "language": "he",
         "lemma": "תּוּבַל קַיִן",
         "morph": "HNp",
-        "morphology": "קַיִן is the second component of a masculine singular personal name. It has no prefix or suffix. The whole name is the direct object of יָלְדָה, marked by אֶת.",
+        "morphology": "קַיִן is the second component of a masculine singular personal name and has no prefix or suffix. The object marker אֶת introduces the full name as the direct object of יָלְדָה.",
         "qualifier": "",
-        "root": "קינ",
+        "root": "",
         "segments": "קַיִן",
         "sense": "Tubal-cain, Zillah’s son and Naamah’s brother."
       },
