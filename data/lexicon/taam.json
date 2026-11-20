@@ -3,7 +3,7 @@
   "root": "טעמ",
   "status": "draft",
   "created": "2026-11-19",
-  "updated": "2026-11-19",
+  "updated": "2026-11-20",
   "tags": [
     "taste",
     "judgment"
@@ -63,6 +63,75 @@
         }
       ],
       "gloss": "taste"
+    },
+    {
+      "lemma": "טְעֵם",
+      "gloss": "taste; judgment",
+      "bdb": [
+        "xi.ab.ab"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "senses": [
+        {
+          "gloss": "taste",
+          "definition": "Taste or judgment.",
+          "evidence": [
+            {
+              "ref": "Dan.3.27",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַטְעָם",
+      "gloss": "delicacy",
+      "bdb": [
+        "i.be.ac"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "senses": [
+        {
+          "gloss": "delicacy",
+          "definition": "Prepared food regarded as a delicacy.",
+          "evidence": [
+            {
+              "ref": "Gen.27.4",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "טְעֵם",
+      "lang": "arc",
+      "gloss": "decree; taste",
+      "bdb": [
+        "xi.ab.aa"
+      ],
+      "pos": "verb",
+      "stems": [
+        {
+          "stem": "pael",
+          "gloss": "taste; decree",
+          "senses": [
+            {
+              "gloss": "decree",
+              "definition": "To issue a decree or command.",
+              "evidence": [
+                {
+                  "ref": "Ezr.5.17",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "cognates": [],

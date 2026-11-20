@@ -3,7 +3,7 @@
   "root": "שקה",
   "status": "draft",
   "created": "2026-11-19",
-  "updated": "2026-11-19",
+  "updated": "2026-11-20",
   "tags": [
     "drink"
   ],
@@ -36,6 +36,70 @@
         }
       ],
       "gloss": "give drink"
+    },
+    {
+      "lemma": "מַשְׁקֶה",
+      "gloss": "cupbearer; drink",
+      "bdb": [
+        "v.fo.ad",
+        "v.fo.ae"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "senses": [
+        {
+          "gloss": "cupbearer",
+          "definition": "A person or thing supplying drink.",
+          "evidence": [
+            {
+              "ref": "Gen.40.1",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שִׁקּוּי",
+      "gloss": "watering",
+      "bdb": [
+        "v.fo.ab"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "senses": [
+        {
+          "gloss": "watering",
+          "definition": "Water supplied for drinking.",
+          "evidence": [
+            {
+              "ref": "Isa.35.7",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שֹׁקֶת",
+      "gloss": "watering trough",
+      "bdb": [
+        "v.fo.ac"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "senses": [
+        {
+          "gloss": "trough",
+          "definition": "A vessel or trough from which animals drink.",
+          "evidence": [
+            {
+              "ref": "Gen.30.38",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
     }
   ],
   "cognates": [],
