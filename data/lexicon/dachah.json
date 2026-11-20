@@ -14,8 +14,7 @@
       "lemma": "דָּחָה",
       "gloss": "drive away",
       "bdb": [
-        "d.bb.aa",
-        "d.bb.ab"
+        "d.bb.aa"
       ],
       "pos": "verb",
       "stems": [
@@ -35,10 +34,48 @@
             }
           ]
         }
+      ],
+      "cognate_ids": [
+        "arc-d00407"
+      ]
+    },
+    {
+      "lemma": "דְּחִי",
+      "pos": "noun",
+      "gloss": "rejection",
+      "bdb": [
+        "d.bb.ab"
+      ],
+      "senses": [
+        {
+          "gloss": "rejection",
+          "definition": "Being thrust away or rejected.",
+          "evidence": [
+            {
+              "ref": "Psa.56.14",
+              "role": "defining"
+            }
+          ]
+        }
       ]
     }
   ],
-  "cognates": [],
+  "cognates": [
+    {
+      "id": "arc-d00407",
+      "lang": "arc",
+      "form": "דְּחִי",
+      "translit": "dəḥî",
+      "gloss": "thrust, push down",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "דְּחִי, D00407, Targum Numbers 35:20"
+        }
+      ]
+    }
+  ],
   "doctrine": [],
   "note": "Drafted for Psalm 35 coverage."
 }

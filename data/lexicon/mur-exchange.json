@@ -14,8 +14,7 @@
     {
       "lemma": "מוּר",
       "bdb": [
-        "m.bc.aa",
-        "m.bc.al"
+        "m.bc.aa"
       ],
       "pos": "verb",
       "gloss": "exchange, alter",
@@ -124,6 +123,32 @@
       "gender": "f",
       "cognate_ids": [
         "arc-mur"
+      ]
+    },
+    {
+      "lemma": "מוּשׁ",
+      "pos": "verb",
+      "gloss": "depart; remove",
+      "bdb": [
+        "m.bc.al"
+      ],
+      "stems": [
+        {
+          "stem": "hiphil",
+          "gloss": "remove",
+          "senses": [
+            {
+              "gloss": "remove",
+              "definition": "To remove or make depart.",
+              "evidence": [
+                {
+                  "ref": "Psa.55.12",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
       ]
     }
   ],
