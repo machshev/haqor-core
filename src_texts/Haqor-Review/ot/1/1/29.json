@@ -131,20 +131,26 @@
     {
       "analysis": {
         "entry": {
-          "existing": "3eecaeb",
-          "sense": "grass",
+          "draft": {
+            "article_id": "3eecaeb",
+            "base": "c8f221c1795c8533d299f7d70bb9ac66d3e62ddd5b082e700c136663f723f779",
+            "change": "Add the broader sense “herbaceous plant” to word 0 and use “herbage” as the article and word gloss. Retain the existing grass sense.",
+            "definition": "An herbaceous plant, or such plants collectively as herbage.",
+            "evidence": "Genesis 1:12 pairs seed-bearing herbage with fruit-bearing trees, echoing the command in Genesis 1:11."
+          },
+          "sense": "herbaceous-plant",
           "word": 0
         },
-        "evidence": "כָּל עֵשֶׂב זֹרֵעַ זֶרַע means “every seed-bearing plant.” The masculine singular participle זֹרֵעַ modifies עֵשֶׂב. The verse lists these plants alongside fruit trees as food.",
+        "evidence": "כָּל עֵשֶׂב זֹרֵעַ זֶרַע means “every seed-bearing plant.” The verse names fruit trees separately and gives both groups as food, supporting the broader sense “herbaceous plant.”",
         "gloss": "plant",
         "language": "he",
         "lemma": "עֵשֶׂב",
         "morph": "HNcmsa",
-        "morphology": "Common noun, masculine singular absolute, without prefix or suffix.",
+        "morphology": "Masculine singular common noun in the absolute state, without a prefix or suffix. The masculine singular participle זֹרֵעַ agrees with it.",
         "qualifier": "",
         "root": "עשׂב",
         "segments": "עֵשֶׂב",
-        "sense": "grass"
+        "sense": "herbaceous plant"
       },
       "position": 7,
       "surface": "עֵשֶׂב"
