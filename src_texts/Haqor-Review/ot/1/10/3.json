@@ -7,6 +7,33 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article_id": "ben",
+            "base": "48b33d48d084fd7645e8d19d65733e5a125a97d6ac928de7032ad408ff896854",
+            "change": "Add Genesis 10:3 as evidence for the existing ben-son sense of בֵּן in the ben article.",
+            "definition": "A male child in relation to his parent.",
+            "evidence": "Genesis 10:3 places גֹּמֶר after the plural construct בְנֵי and then names his three sons."
+          },
+          "sense": "ben-son",
+          "word": 0
+        },
+        "evidence": "וּבְנֵי גֹּמֶר introduces Ashkenaz, Riphath, and Togarmah by name as Gomer’s sons.",
+        "gloss": "and the sons of",
+        "language": "he",
+        "lemma": "בֵּן",
+        "morph": "HC/Ncmpc",
+        "morphology": "וּ is the prefixed conjunction “and.” בְנֵי is the masculine plural construct of the common noun בֵּן. The following name גֹּמֶר completes the construct phrase.",
+        "qualifier": "",
+        "root": "בנה",
+        "segments": "וּ/בְנֵי",
+        "sense": "son, male child"
+      },
+      "position": 0,
+      "surface": "וּבְנֵי"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "gomer",
           "word": 0
         },
