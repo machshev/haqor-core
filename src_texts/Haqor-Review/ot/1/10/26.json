@@ -7,6 +7,57 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article": {
+              "created": "2026-11-20",
+              "english": "Joktan",
+              "entry": "",
+              "evidence": [
+                {
+                  "note": "After naming Peleg as one of Eber’s two sons, the verse names his brother Joktan.",
+                  "ref": "Gen.10.25",
+                  "role": "defining"
+                },
+                {
+                  "note": "Joktan fathered Almodad, Sheleph, Hazarmaveth, and Jerah.",
+                  "ref": "Gen.10.26",
+                  "role": "defining"
+                }
+              ],
+              "gloss": "Joktan, son of Eber",
+              "id": "yaaqe6aan",
+              "name": "יָקְטָן",
+              "people": [],
+              "root": "",
+              "status": "draft",
+              "summary": "Eber’s two sons are Peleg and Joktan. The genealogy lists Joktan’s sons beginning with Almodad. The meaning of Joktan’s name is uncertain.",
+              "updated": "2026-11-20"
+            },
+            "article_id": "yaaqe6aan",
+            "base": null,
+            "change": "Add a personal-name article for יָקְטָן. Leave the root unassigned because the genealogy gives no evidence for the proposed derivation from יקה.",
+            "definition": "Joktan, son of Eber and brother of Peleg.",
+            "evidence": "Genesis 10:25 identifies Joktan as Peleg’s brother. Genesis 10:26 names Almodad, Sheleph, Hazarmaveth, and Jerah among his sons."
+          },
+          "word": 0
+        },
+        "evidence": "In וְיָקְטָן יָלַד אֶת אַלְמוֹדָד, Joktan is the father and אֶת marks Almodad as the first child named. The genealogy identifies Joktan but gives no derivation for his name.",
+        "gloss": "and Joktan",
+        "language": "he",
+        "lemma": "יָקְטָן",
+        "morph": "HC/Np",
+        "morphology": "The conjunction וְ, “and,” prefixes the masculine personal name יָקְטָן. Joktan is the subject of the third-person masculine singular verb יָלַד, “fathered.”",
+        "qualifier": "",
+        "root": "",
+        "segments": "וְ/יָקְטָן",
+        "sense": "Joktan, the son of Eber and brother of Peleg"
+      },
+      "position": 0,
+      "surface": "וְיָקְטָן"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "yld",
           "sense": "beget",
           "word": 0
