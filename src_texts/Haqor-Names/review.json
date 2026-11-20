@@ -1,5 +1,13 @@
 {
-  "records": {},
+  "records": {
+    "Heavens@Gen.1.8": {
+      "id": 100001,
+      "name": "Heavens",
+      "kind": "place",
+      "description": "The sky, the expanse between the waters that God names on the second day of creation.",
+      "form": "שָׁמַיִם"
+    }
+  },
   "verses": {
     "greek": {
       "2820899": [
@@ -184,6 +192,60 @@
         {
           "position": 12,
           "surface": "אֶחָד",
+          "key": null
+        }
+      ],
+      "65800": [
+        {
+          "position": 0,
+          "surface": "וַיִּקְרָא",
+          "key": null
+        },
+        {
+          "position": 1,
+          "surface": "אֱלֹהִים",
+          "key": "LORD@Gen.1.1",
+          "evidence": "אֱלֹהִים is the Creator who names the expanse, matching the bearer tagged at this position."
+        },
+        {
+          "position": 2,
+          "surface": "לָרָקִיעַ",
+          "key": null
+        },
+        {
+          "position": 3,
+          "surface": "שָׁמָיִם",
+          "key": "Heavens@Gen.1.8",
+          "evidence": "שָׁמָיִם is the name God explicitly gives the expanse in this verse."
+        },
+        {
+          "position": 4,
+          "surface": "וַיְהִי",
+          "key": null
+        },
+        {
+          "position": 5,
+          "surface": "עֶרֶב",
+          "key": null
+        },
+        {
+          "position": 6,
+          "surface": "וַיְהִי",
+          "key": null
+        },
+        {
+          "position": 7,
+          "surface": "בֹקֶר",
+          "key": null
+        },
+        {
+          "position": 8,
+          "surface": "יוֹם",
+          "key": null
+        },
+        {
+          "position": 9,
+          "surface": "שֵׁנִי",
           "key": null
         }
       ],

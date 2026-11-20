@@ -1,6 +1,69 @@
 {
   "book": 1,
   "chapter": 1,
+  "review": {
+    "entities": [
+      {
+        "evidence": "אֱלֹהִים is the Creator who names the expanse, matching the bearer tagged at this position.",
+        "key": "LORD@Gen.1.1",
+        "position": 1
+      },
+      {
+        "evidence": "שָׁמָיִם is the name God explicitly gives the expanse in this verse.",
+        "key": "Heavens@Gen.1.8",
+        "new": {
+          "description": "The sky, the expanse between the waters that God names on the second day of creation.",
+          "kind": "place",
+          "name": "Heavens"
+        },
+        "position": 3
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "and he called",
+        "position": 0
+      },
+      {
+        "gloss": "God",
+        "position": 1
+      },
+      {
+        "gloss": "the expanse",
+        "position": 2
+      },
+      {
+        "gloss": "Heavens",
+        "position": 3
+      },
+      {
+        "gloss": "then there was",
+        "position": 4
+      },
+      {
+        "gloss": "evening",
+        "position": 5
+      },
+      {
+        "gloss": "and there was",
+        "position": 6
+      },
+      {
+        "gloss": "morning",
+        "position": 7
+      },
+      {
+        "gloss": "day",
+        "position": 8
+      },
+      {
+        "gloss": "second",
+        "position": 9
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[And|0] [God|1] [called|0] [the expanse|2] [Heavens|3]. [Then there was|4] [evening|5], [and there was|6] [morning|7], [the|8] [second|9] [day|8]."
+  },
   "source": "ot",
   "verse": 8,
   "words": [
