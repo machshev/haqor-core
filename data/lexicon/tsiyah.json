@@ -2,62 +2,31 @@
   "id": "tsiyah",
   "root": "ציה",
   "status": "draft",
-  "updated": "2026-11-20",
-  "gloss": "dryness",
-  "summary": "ציה denotes a dry or parched place.",
+  "updated": "2026-11-19",
+  "gloss": "dry land, drought",
+  "summary": "Here water is absent. The thirsty psalmist compares his longing for God to thirst in a weary land, and Isaiah pictures a stream bringing relief to parched ground.",
   "words": [
     {
-      "lemma": "צִיָּה",
+      "lemma": "צִיָּה",
       "pos": "noun",
-      "gloss": "dry land",
+      "gloss": "dry land, drought",
+      "gender": "f",
       "bdb": [
         "r.bt.ab"
       ],
       "senses": [
         {
-          "gloss": "dry land",
-          "definition": "A dry, parched region.",
+          "gloss": "dry land, drought",
+          "definition": "The psalm explains the condition of the land by adding “without water.” Isaiah promises streams on the dry ground.",
           "evidence": [
             {
               "ref": "Psa.63.2",
               "role": "defining"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "lemma": "צִיּוֹן",
-      "pos": "name",
-      "gloss": "Zion",
-      "bdb": [
-        "r.bt.aa"
-      ],
-      "senses": [
-        {
-          "gloss": "Zion",
-          "definition": "The mountain and city chosen by Yahweh.",
-          "evidence": [
+            },
             {
-              "ref": "Psa.132.13",
+              "ref": "Isa.41.18",
               "role": "defining"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "lemma": "צָיוֹן",
-      "pos": "noun",
-      "gloss": "dry ground",
-      "bdb": [
-        "r.bt.ac"
-      ],
-      "senses": [
-        {
-          "gloss": "dry ground",
-          "definition": "Dry ground or a dry place.",
-          "evidence": [
+            },
             {
               "ref": "Isa.35.1",
               "role": "defining"
@@ -69,35 +38,31 @@
     {
       "lemma": "צָיוֹן",
       "pos": "noun",
-      "gloss": "dry ground",
+      "gloss": "parched ground",
+      "gender": "m",
       "bdb": [
         "r.bt.ac"
       ],
       "senses": [
         {
-          "gloss": "dry ground",
-          "definition": "Dry ground or a dry place.",
+          "gloss": "parched ground",
+          "definition": "Isaiah compares the relief given by a protector to streams in dry country and a rock’s shade in exhausted land.",
           "evidence": [
             {
-              "ref": "Isa.35.1",
+              "ref": "Isa.32.2",
+              "role": "defining"
+            },
+            {
+              "ref": "Isa.25.5",
               "role": "defining"
             }
           ]
         }
       ]
-    },
-    {
-      "lemma": "צִי",
-      "pos": "noun",
-      "gloss": "desert creature",
-      "bdb": ["r.bs.ag"],
-      "senses": [{
-        "gloss": "desert creature",
-        "definition": "A creature of the dry wilderness that bows before the king.",
-        "evidence": [{"ref": "Ps.72.9", "role": "defining"}]
-      }]
     }
   ],
   "doctrine": [],
-  "note": "Drafted for Psalm 63 coverage."
+  "note": "The place-name Zion (צִיּוֹן, r.bt.ad) is in tsiyon. Its consonants alone cannot identify it with the dry-ground noun. The separately indexed desert dweller צִי is in tsachar.",
+  "cognates": [],
+  "created": "2026-11-19"
 }
