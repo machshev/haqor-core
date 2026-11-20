@@ -1,697 +1,121 @@
 {
-  "id": "3yr",
-  "root": "עיר",
-  "status": "draft",
-  "updated": "2026-11-15",
-  "tags": [
-    "city",
-    "dwelling",
-    "refuge",
-    "jerusalem",
-    "animals"
-  ],
-  "gloss": "city, town",
-  "summary": "עִיר is a settled place enclosed for defence: a city or town of any size, set against the open field, the wilderness and the unwalled villages around it, and also the stronghold within a city, as the stronghold of Zion is “the city of David”. Its plural is עָרִים. Scripture uses it of the cities given to the Levites and the cities of refuge, and above all of Jerusalem, the city of holiness and the city of Yahweh. The same spelling holds עַיִר, the male or young ass, a separate word whose tie to “city” no verse or cognate shows.",
-  "words": [
-    {
-      "lemma": "עִיר",
-      "pos": "noun",
-      "gender": "f",
-      "gloss": "city, town",
-      "bdb": [
-        "p.cm.ad"
-      ],
-      "summary": "The plural is עָרִים, as if from a singular עָר, the form of the Moabite place Ar (Num 21:28; Isa 15:1); once the plural is עֲיָרִים, in a play on the asses of Jdg 10:4. Size does not make an עִיר: Zoar is “a little one” and Nineveh “great”. What marks it is the wall and gate that the villages lack.",
-      "cognate_ids": [
-        "uga-ir",
-        "phn-r",
-        "sab-r"
-      ],
-      "senses": [
-        {
-          "id": "city",
-          "gloss": "city, town",
-          "definition": "A built and settled place enclosed by a wall, with a gate where its elders sit, of any size; distinguished from the villages that have no wall and from the open field.",
-          "evidence": [
-            {
-              "ref": "Lev.25.29",
-              "to": "Lev.25.31",
-              "role": "defining",
-              "note": "A house in עִיר חוֹמָה, “a city with a wall”, is set against the houses of הַחֲצֵרִים אֲשֶׁר אֵין־לָהֶם חֹמָה סָבִיב, “the villages that have no wall around”, which are counted with the field."
-            },
-            {
-              "ref": "Deu.3.5",
-              "role": "defining",
-              "note": "עָרִים בְּצֻרוֹת חוֹמָה גְבֹהָה דְּלָתַיִם וּבְרִיחַ: fortified cities with high wall, doors and bar, apart from the many עָרֵי הַפְּרָזִי, towns of the open country."
-            },
-            {
-              "ref": "Num.13.19",
-              "role": "defining",
-              "note": "The spies are to see what הֶעָרִים are, “whether in camps or in fortresses”; the answer (Num 13:28) is that the cities are fortified and very great."
-            },
-            {
-              "ref": "Gen.4.17",
-              "note": "The first city: Cain וַיְהִי בֹּנֶה עִיר, “was building a city”, and named it after his son Enoch."
-            },
-            {
-              "ref": "Gen.11.4",
-              "note": "נִבְנֶה־לָּנוּ עִיר וּמִגְדָּל: “let us build ourselves a city and a tower”."
-            },
-            {
-              "ref": "Gen.19.20",
-              "note": "Zoar: הָעִיר הַזֹּאת … וְהִיא מִצְעָר, “this city … and it is a little one”."
-            },
-            {
-              "ref": "Jon.3.3",
-              "note": "Nineveh, a great city, a journey of three days."
-            },
-            {
-              "ref": "Deu.21.19",
-              "note": "The elders of his city sit at the gate of his place."
-            },
-            {
-              "ref": "Jos.6.5",
-              "note": "The wall of the city (Jericho) falls."
-            },
-            {
-              "ref": "1Sa.6.18",
-              "note": "The whole range of settlements: מֵעִיר מִבְצָר וְעַד כֹּפֶר הַפְּרָזִי, “from fortified city to village of the open country”."
-            },
-            {
-              "ref": "Pro.25.28",
-              "note": "A city broken into, without a wall, is the picture of a man without rule over his spirit."
-            }
-          ],
-          "senses": [
-            {
-              "id": "city-people",
-              "gloss": "the people of a city",
-              "definition": "The city for those who live in it: it cries out, is stirred, flees.",
-              "evidence": [
-                {
-                  "ref": "1Sa.4.13",
-                  "role": "defining",
-                  "note": "וַתִּזְעַק כָּל־הָעִיר: “all the city cried out”."
-                },
-                {
-                  "ref": "Rut.1.19",
-                  "role": "defining",
-                  "note": "All the city was stirred over Naomi and Ruth."
-                },
-                {
-                  "ref": "Jer.4.29",
-                  "note": "“Every city flees” from the noise of horseman and archer; “every city is forsaken, and no man dwells in them”."
-                }
-              ]
-            },
-            {
-              "id": "mother-city",
-              "gloss": "a city with its dependent towns",
-              "definition": "A chief city together with the smaller places that belong to it, called its daughters, its villages or its cities.",
-              "evidence": [
-                {
-                  "ref": "Num.21.25",
-                  "role": "defining",
-                  "note": "Israel dwelt in all the cities of the Amorite, בְּחֶשְׁבּוֹן וּבְכָל־בְּנֹתֶיהָ, “in Heshbon and in all its daughters”."
-                },
-                {
-                  "ref": "Jos.19.30",
-                  "note": "“Twenty-two cities and their villages” (וְחַצְרֵיהֶן)."
-                },
-                {
-                  "ref": "Jer.19.15",
-                  "note": "“This city and all its cities”: Jerusalem and the towns of Judah that belong to it."
-                },
-                {
-                  "ref": "2Sa.20.19",
-                  "note": "Abel is עִיר וְאֵם בְּיִשְׂרָאֵל, “a city and a mother in Israel”."
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "citadel",
-          "gloss": "stronghold or quarter within a city",
-          "definition": "A fortified or distinct part of a larger city: its stronghold, its water quarter, the precinct of a temple.",
-          "evidence": [
-            {
-              "ref": "2Sa.5.7",
-              "role": "defining",
-              "note": "David took מְצֻדַת צִיּוֹן הִיא עִיר דָּוִד: “the stronghold of Zion, that is the city of David”."
-            },
-            {
-              "ref": "2Sa.5.9",
-              "role": "defining",
-              "note": "“David dwelt in the stronghold and called it the city of David.”"
-            },
-            {
-              "ref": "1Ch.11.7",
-              "note": "“David dwelt in the stronghold; therefore they called it the city of David.”"
-            },
-            {
-              "ref": "2Sa.12.26",
-              "to": "2Sa.12.27",
-              "note": "Within Rabbah Joab takes עִיר הַמְּלוּכָה, “the city of the kingdom”, which he then calls עִיר הַמָּיִם, “the city of waters”, before the whole city falls to David."
-            },
-            {
-              "ref": "2Ki.10.25",
-              "note": "Within Samaria: עִיר בֵּית־הַבָּעַל, “the city of the house of Baal”."
-            }
-          ]
-        }
-      ],
-      "greek": [
-        {
-          "lemma": "πόλις",
-          "gloss": "city",
-          "evidence": [
-            {
-              "source": "macula-lxx",
-              "locator": "Isa.52.1, עִיר הַקֹּדֶשׁ → πόλις ἁγία; πόλις renders עִיר ×933"
-            },
-            {
-              "ref": "Mat.4.5",
-              "note": "“The holy city”, the name of Isa 52:1 and Neh 11:1."
-            },
-            {
-              "ref": "Mat.27.53"
-            },
-            {
-              "ref": "Rev.21.2",
-              "note": "“The holy city, new Jerusalem”."
-            },
-            {
-              "source": "macula-lxx",
-              "locator": "Psa.87.3 (LXX 86:3), עִיר הָאֱלֹהִים → πόλις τοῦ θεοῦ"
-            },
-            {
-              "ref": "Heb.12.22",
-              "note": "“The city of the living God”."
-            },
-            {
-              "ref": "Heb.11.10"
-            }
-          ]
-        }
-      ],
-      "usage": {
-        "parallels": [
-          {
-            "lemma": "קִרְיָה",
-            "note": "The other word for a city, of another root, set beside עִיר in the two halves of a line.",
-            "evidence": [
-              {
-                "ref": "Isa.1.26",
-                "role": "defining",
-                "note": "עִיר הַצֶּדֶק קִרְיָה נֶאֱמָנָה: “city of righteousness, faithful town”."
-              },
-              {
-                "ref": "Hab.2.12",
-                "note": "“Woe to him who builds עִיר with blood and founds קִרְיָה with iniquity.”"
-              },
-              {
-                "ref": "Deu.2.36",
-                "note": "“The city (הָעִיר) that is in the wadi … there was not a town (קִרְיָה) too high for us.”"
-              }
-            ]
-          },
-          {
-            "lemma": "מְצוּדָה",
-            "note": "The stronghold of Zion is the city of David.",
-            "evidence": [
-              {
-                "ref": "2Sa.5.7",
-                "role": "defining"
-              },
-              {
-                "ref": "1Ch.11.5"
-              }
-            ]
-          }
-        ],
-        "opposites": [
-          {
-            "lemma": "שָׂדֶה",
-            "note": "City and field together are everywhere a man lives and works.",
-            "evidence": [
-              {
-                "ref": "Deu.28.3",
-                "role": "defining",
-                "note": "בָּרוּךְ אַתָּה בָּעִיר וּבָרוּךְ אַתָּה בַּשָּׂדֶה."
-              },
-              {
-                "ref": "Deu.28.16"
-              }
-            ]
-          },
-          {
-            "lemma": "חָצֵר",
-            "note": "The unwalled village, which belongs to a city and is reckoned with the field.",
-            "evidence": [
-              {
-                "ref": "Lev.25.31",
-                "role": "defining"
-              },
-              {
-                "ref": "Jos.19.30"
-              }
-            ]
-          },
-          {
-            "lemma": "מִדְבָּר",
-            "note": "The wilderness is where no city is; a forsaken city becomes like it.",
-            "evidence": [
-              {
-                "ref": "Psa.107.4",
-                "role": "defining",
-                "note": "They wandered in the wilderness and found no עִיר מוֹשָׁב, “city to dwell in”."
-              },
-              {
-                "ref": "Isa.27.10",
-                "note": "The fortified city is left alone, forsaken like the wilderness."
-              }
-            ]
-          }
-        ],
-        "phrases": [
-          {
-            "phrase": "עִיר דָּוִד",
-            "gloss": "the city of David: the stronghold of Zion",
-            "evidence": [
-              {
-                "ref": "2Sa.5.7",
-                "role": "defining"
-              },
-              {
-                "ref": "2Sa.5.9",
-                "role": "defining"
-              },
-              {
-                "ref": "1Ki.8.1",
-                "note": "The ark is brought up “from the city of David, that is Zion” to the temple: the city of David is a part of Jerusalem, not the whole."
-              },
-              {
-                "ref": "1Ki.2.10",
-                "note": "David was buried in the city of David, as the kings of Judah after him."
-              },
-              {
-                "ref": "Neh.3.15",
-                "note": "The stairs going down from the city of David."
-              }
-            ]
-          },
-          {
-            "phrase": "עִיר מִקְלָט",
-            "gloss": "city of refuge",
-            "evidence": [
-              {
-                "ref": "Num.35.11",
-                "role": "defining",
-                "note": "עָרֵי מִקְלָט תִּהְיֶינָה לָכֶם: cities to which one who has struck a person by mistake may flee."
-              },
-              {
-                "ref": "Num.35.6",
-                "note": "Six of the Levites' forty-eight cities are עָרֵי הַמִּקְלָט."
-              },
-              {
-                "ref": "Num.35.25",
-                "note": "עִיר מִקְלָטוֹ, “the city of his refuge”, where he stays until the death of the great priest."
-              },
-              {
-                "ref": "Jos.20.2"
-              }
-            ]
-          },
-          {
-            "phrase": "עִיר הַקֹּדֶשׁ",
-            "gloss": "the city of holiness, the holy city: Jerusalem",
-            "evidence": [
-              {
-                "ref": "Isa.52.1",
-                "role": "defining",
-                "note": "יְרוּשָׁלִַם עִיר הַקֹּדֶשׁ: the uncircumcised and the unclean shall no more come into her."
-              },
-              {
-                "ref": "Neh.11.1",
-                "role": "defining"
-              },
-              {
-                "ref": "Neh.11.18"
-              },
-              {
-                "ref": "Isa.48.2"
-              },
-              {
-                "ref": "Dan.9.24",
-                "note": "עִיר קָדְשֶׁךָ, “the city of your holiness”."
-              },
-              {
-                "ref": "Mat.4.5"
-              },
-              {
-                "ref": "Rev.21.2"
-              }
-            ]
-          },
-          {
-            "phrase": "עִיר הָאֱלֹהִים",
-            "gloss": "the city of God; also עִיר יַהְוֶה, the city of Yahweh",
-            "evidence": [
-              {
-                "ref": "Psa.87.3",
-                "role": "defining"
-              },
-              {
-                "ref": "Psa.46.5"
-              },
-              {
-                "ref": "Psa.48.9",
-                "note": "בְּעִיר־יַהְוֶה צְבָאוֹת בְּעִיר אֱלֹהֵינוּ: “God will establish it for ever”."
-              },
-              {
-                "ref": "Psa.101.8"
-              },
-              {
-                "ref": "Isa.60.14",
-                "note": "“They shall call you עִיר יַהְוֶה, Zion of the Holy One of Israel.”"
-              }
-            ]
-          },
-          {
-            "phrase": "עִיר מִבְצָר",
-            "gloss": "fortified city",
-            "evidence": [
-              {
-                "ref": "2Ki.17.9",
-                "role": "defining",
-                "note": "מִמִּגְדַּל נוֹצְרִים עַד־עִיר מִבְצָר: “from watchmen's tower to fortified city”, every kind of settlement."
-              },
-              {
-                "ref": "1Sa.6.18"
-              },
-              {
-                "ref": "Psa.60.11"
-              }
-            ]
-          },
-          {
-            "phrase": "עָרֵי מִסְכְּנוֹת",
-            "gloss": "store cities",
-            "evidence": [
-              {
-                "ref": "Exo.1.11",
-                "role": "defining",
-                "note": "Israel built Pithom and Rameses as store cities for Pharaoh."
-              },
-              {
-                "ref": "1Ki.9.19",
-                "note": "Solomon's store cities, cities of the chariots and cities of the horsemen."
-              }
-            ]
-          },
-          {
-            "phrase": "עִיר הַתְּמָרִים",
-            "gloss": "the city of palm trees: Jericho",
-            "evidence": [
-              {
-                "ref": "Deu.34.3",
-                "role": "defining",
-                "note": "בִּקְעַת יְרֵחוֹ עִיר הַתְּמָרִים."
-              },
-              {
-                "ref": "2Ch.28.15"
-              },
-              {
-                "ref": "Jdg.1.16"
-              }
-            ]
-          },
-          {
-            "phrase": "עִיר הַדָּמִים",
-            "gloss": "the city of blood",
-            "evidence": [
-              {
-                "ref": "Ezk.22.2",
-                "role": "defining",
-                "note": "Jerusalem."
-              },
-              {
-                "ref": "Nam.3.1",
-                "note": "Nineveh: עִיר דָּמִים."
-              }
-            ]
-          },
-          {
-            "phrase": "עִיר וָעִיר",
-            "gloss": "city by city, every city",
-            "evidence": [
-              {
-                "ref": "Est.8.11",
-                "role": "defining"
-              }
-            ]
-          },
-          {
-            "phrase": "שַׁעַר הָעִיר",
-            "gloss": "the gate of the city, where its elders judge",
-            "evidence": [
-              {
-                "ref": "Jos.20.4",
-                "role": "defining",
-                "note": "The manslayer stands at the entrance of the gate of the city and speaks in the ears of the elders of that city."
-              },
-              {
-                "ref": "Gen.23.10"
-              },
-              {
-                "ref": "Gen.34.20"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "lemma": "עַיִר",
-      "pos": "noun",
-      "gender": "m",
-      "gloss": "male ass, young ass",
-      "bdb": [
-        "p.cn.ab"
-      ],
-      "summary": "A separate word in the same letters: the he-ass, and especially the young one that is ridden. Its cognates are the Arabic and Ugaritic words for the ass, not the words for a city, and how its meaning goes back to a root shared with עִיר is not understood. Scripture plays on the likeness once (Jdg 10:4). Of the eight tokens counted under its key one is that verse's “cities”; Gen 49:11's עִירוֹ is counted with “city” by its spelling.",
-      "cognate_ids": [
-        "ar-ayr",
-        "uga-ayr"
-      ],
-      "senses": [
-        {
-          "id": "male-ass-young-ass",
-          "gloss": "male ass; young ass, colt",
-          "definition": "The male ass, listed beside the she-asses; a young ass ridden by men of rank, loaded, or worked on the land.",
-          "evidence": [
-            {
-              "ref": "Gen.32.16",
-              "role": "defining",
-              "note": "Jacob's gift: twenty she-asses (אֲתֹנֹת) and ten males, וַעְיָרִם, the males beside the females."
-            },
-            {
-              "ref": "Zec.9.9",
-              "role": "defining",
-              "note": "The king comes riding on an ass, וְעַל־עַיִר בֶּן־אֲתֹנוֹת, “on a colt, the son of she-asses”."
-            },
-            {
-              "ref": "Gen.49.11",
-              "role": "defining",
-              "note": "עִירוֹ, “his colt”, is set beside בְּנִי אֲתֹנוֹ, “his she-ass's son”."
-            },
-            {
-              "ref": "Mat.21.5",
-              "note": "Quotes Zec 9:9 of Jesus entering Jerusalem: “on a colt, the foal of an ass”; again Jhn 12:15."
-            },
-            {
-              "ref": "Jdg.10.4",
-              "note": "Jair's thirty sons rode on thirty עֲיָרִים and had thirty עֲיָרִים, cities: the plural of עִיר is shaped to match."
-            },
-            {
-              "ref": "Jdg.12.14",
-              "note": "Abdon's seventy sons and grandsons ride seventy of them."
-            },
-            {
-              "ref": "Isa.30.6",
-              "note": "They carry riches on their shoulder."
-            },
-            {
-              "ref": "Isa.30.24",
-              "note": "With the oxen they work the ground."
-            },
-            {
-              "ref": "Job.11.12",
-              "note": "עַיִר פֶּרֶא: the colt of a wild ass."
-            }
-          ]
-        }
-      ],
-      "greek": [
-        {
-          "lemma": "πῶλος",
-          "gloss": "colt, foal",
-          "evidence": [
-            {
-              "source": "macula-lxx",
-              "locator": "Zec.9.9, עַיִר → πῶλον"
-            },
-            {
-              "ref": "Mat.21.5"
-            },
-            {
-              "ref": "Jhn.12.15"
-            }
-          ]
-        }
-      ],
-      "usage": {
-        "parallels": [
-          {
-            "lemma": "אָתוֹן",
-            "note": "The she-ass, whose son or mate the עַיִר is.",
-            "evidence": [
-              {
-                "ref": "Gen.49.11",
-                "role": "defining"
-              },
-              {
-                "ref": "Zec.9.9"
-              },
-              {
-                "ref": "Gen.32.16"
-              }
-            ]
-          }
-        ]
-      }
-    }
-  ],
   "cognates": [
     {
+      "evidence": [
+        {
+          "locator": "p. 196, §93 Glossary, ʿr",
+          "note": "ʿr /ʿir-/, KTU 1.100:62, “city” (H. ʿîr).",
+          "source": "segert-1984"
+        },
+        {
+          "locator": "p. 83, §61.4, KTU 1.100:62",
+          "note": "ʿr.dqdm, “city (that) of the East”.",
+          "source": "segert-1984"
+        },
+        {
+          "locator": "Ugaritic 𐎓𐎗 (ʿr)",
+          "note": "“city, town”; “Compare Hebrew עִיר (ʿīr).”",
+          "source": "wiktionary",
+          "url": "https://en.wiktionary.org/wiki/%F0%90%8E%93%F0%90%8E%97"
+        }
+      ],
+      "form": "𐎓𐎗",
+      "gloss": "city",
       "id": "uga-ir",
       "lang": "uga",
-      "form": "𐎓𐎗",
-      "translit": "ʿr",
-      "gloss": "city",
+      "note": "The Hebrew word with the same vowel, written with ʿ in a script that keeps ʿ and ġ apart. The usual Ugaritic word for a city is qrt, as Hebrew has קִרְיָה and קֶרֶת beside עִיר.",
       "relation": "cognate",
       "sounds": {
         "ע": "ʿ"
       },
-      "evidence": [
-        {
-          "source": "segert-1984",
-          "locator": "p. 196, §93 Glossary, ʿr",
-          "note": "ʿr /ʿir-/, KTU 1.100:62, “city” (H. ʿîr)."
-        },
-        {
-          "source": "segert-1984",
-          "locator": "p. 83, §61.4, KTU 1.100:62",
-          "note": "ʿr.dqdm, “city (that) of the East”."
-        },
-        {
-          "source": "wiktionary",
-          "locator": "Ugaritic 𐎓𐎗 (ʿr)",
-          "url": "https://en.wiktionary.org/wiki/%F0%90%8E%93%F0%90%8E%97",
-          "note": "“city, town”; “Compare Hebrew עִיר (ʿīr).”"
-        }
-      ],
-      "note": "The Hebrew word with the same vowel, written with ʿ in a script that keeps ʿ and ġ apart. The usual Ugaritic word for a city is qrt, as Hebrew has קִרְיָה and קֶרֶת beside עִיר."
+      "translit": "ʿr"
     },
     {
+      "evidence": [
+        {
+          "locator": "p. 386, ʿR II",
+          "note": "“[Heb. ʿîr] n.m. CITY”: a Phoenician account of payments “to those who dwell in the city” (the translation is marked highly problematic), and a Neo-Punic deed, bhgw ʿr, “inside the city”.",
+          "source": "krahmalkov-2000"
+        }
+      ],
+      "form": "𐤏𐤓",
+      "gloss": "city",
       "id": "phn-r",
       "lang": "phn",
-      "form": "𐤏𐤓",
-      "translit": "ʿr",
-      "gloss": "city",
+      "note": "Rare in Phoenician and Punic, whose usual word is qrt (as in the name Carthage). The spelling ʿr, with no y, agrees with the Hebrew plural עָרִים.",
       "relation": "cognate",
-      "evidence": [
-        {
-          "source": "krahmalkov-2000",
-          "locator": "p. 386, ʿR II",
-          "note": "“[Heb. ʿîr] n.m. CITY”: a Phoenician account of payments “to those who dwell in the city” (bʿr; the translation is marked highly problematic), and a Neo-Punic deed, bhgw ʿr, “inside the city”."
-        }
-      ],
-      "note": "Rare in Phoenician and Punic, whose usual word is qrt (as in the name Carthage). The spelling ʿr, with no y, agrees with the Hebrew plural עָרִים."
+      "translit": "ʿr"
     },
     {
+      "evidence": [
+        {
+          "locator": "p. 385, ʿRR I",
+          "note": "“(1) BEDROCK; ROCK, HILL”; “(2) FORTRESS ON A HILL, CITADEL [cf Heb ʿîr, p ʿārîm “city,” Yem ʿurr “hill fortress.”]”, R3945/4 “he burned their towns and took over their fortress”; “(3) INHABITED AREA, VILLAGE (opposed to sr “cultivated area”)”.",
+          "source": "biella-1982",
+          "url": "https://archive.org/details/DOOSA"
+        }
+      ],
+      "form": "𐩲𐩧",
+      "gloss": "bedrock, rock, hill; fortress on a hill, citadel; inhabited area, village",
       "id": "sab-r",
       "lang": "sem",
-      "form": "𐩲𐩧",
-      "translit": "ʿr, plural ʾʿrr",
-      "gloss": "bedrock, rock, hill; fortress on a hill, citadel; inhabited area, village",
+      "note": "Sabaean, filed under a root ʿrr, which suits the Hebrew plural עָרִים. Its senses run from the rock or hill, to the stronghold built on it, to the inhabited place as against the tilled land: the stronghold sense is that of “the stronghold of Zion, that is the city of David”, and the last is the Hebrew contrast of city and field. In the Sabaean text the ʿr is the fortress and the towns around it are hgr.",
       "relation": "cognate",
       "sounds": {
         "ע": "ʿ"
       },
-      "evidence": [
-        {
-          "source": "biella-1982",
-          "locator": "p. 385, ʿRR I",
-          "url": "https://archive.org/details/DOOSA",
-          "note": "“(1) BEDROCK; ROCK, HILL”; “(2) FORTRESS ON A HILL, CITADEL [cf Heb ʿîr, p ʿārîm “city,” Yem ʿurr “hill fortress.”]”, R3945/4 “he burned their towns and took over their fortress”; “(3) INHABITED AREA, VILLAGE (opposed to sr “cultivated area”)”."
-        }
-      ],
-      "note": "Sabaean, filed under a root ʿrr, which suits the Hebrew plural עָרִים. Its senses run from the rock or hill, to the stronghold built on it, to the inhabited place as against the tilled land: the stronghold sense is that of “the stronghold of Zion, that is the city of David”, and the last is the Hebrew contrast of city and field. In the Sabaean text the ʿr is the fortress and the towns around it are hgr."
+      "translit": "ʿr, plural ʾʿrr"
     },
     {
+      "evidence": [
+        {
+          "locator": "Book I, p. 2208, art. عير, عَيْرٌ (n31189)",
+          "note": "“The ass; both the wild and the domestic; its predominant application is to the former: so called because he goes away hither and thither in the desert.”",
+          "source": "lane"
+        },
+        {
+          "locator": "Book I, p. 2207, art. عير, عَارَ (n31181)",
+          "note": "“He went, or journeyed”; of a horse, “went away hither and thither”.",
+          "source": "lane"
+        }
+      ],
+      "form": "عَيْر",
+      "gloss": "ass, wild or domestic",
       "id": "ar-ayr",
       "lang": "ar",
-      "form": "عَيْر",
-      "translit": "ʿayr",
-      "gloss": "ass, wild or domestic",
+      "note": "The Hebrew עַיִר with the same consonants and vowel pattern. The Arabic lexicographers derive it from the verb “to go to and fro”; Arabic has no word for a city from this root.",
       "relation": "cognate",
       "sounds": {
         "ע": "ʿ"
       },
-      "evidence": [
-        {
-          "source": "lane",
-          "locator": "Book I, p. 2208, art. عير, عَيْرٌ (n31189)",
-          "note": "“The ass; both the wild and the domestic; its predominant application is to the former: so called because he goes away hither and thither in the desert.”"
-        },
-        {
-          "source": "lane",
-          "locator": "Book I, p. 2207, art. عير, عَارَ (n31181)",
-          "note": "“He went, or journeyed”; of a horse, “went away hither and thither”."
-        }
-      ],
-      "note": "The Hebrew עַיִר with the same consonants and vowel pattern. The Arabic lexicographers derive it from the verb “to go to and fro”; Arabic has no word for a city from this root."
+      "translit": "ʿayr"
     },
     {
+      "evidence": [
+        {
+          "locator": "pp. 196–197, §93 Glossary, ʿr",
+          "note": "ʿr, “he-)ass” (the vowel is not legible enough in the text layer) (cf. H. ʿayir “(he-)ass”, Arab. ʿayr “(wild) ass”).",
+          "source": "segert-1984"
+        },
+        {
+          "locator": "SEM000628 ʿyr [donkey], UGC001006 ʿr [donkey], HEB005489 ʿayir [he-ass], EAB003511 Eayor [ass]",
+          "source": "anderson-moser-2024"
+        }
+      ],
+      "form": "𐎓𐎗",
+      "gloss": "he-ass",
       "id": "uga-ayr",
       "lang": "uga",
-      "form": "𐎓𐎗",
-      "translit": "ʿr",
-      "gloss": "he-ass",
+      "note": "Written like the Ugaritic word for a city but read with another vowel, as in Hebrew.",
       "relation": "cognate",
       "sounds": {
         "ע": "ʿ"
       },
-      "evidence": [
-        {
-          "source": "segert-1984",
-          "locator": "pp. 196–197, §93 Glossary, ʿr",
-          "note": "ʿr, “(he-)ass” (the vowel is not legible in the text layer) (cf. H. ʿayir “(he-)ass”, Arab. ʿayr “(wild) ass”)."
-        },
-        {
-          "source": "anderson-moser-2024",
-          "locator": "SEM000628 ʿyr [donkey], UGC001006 ʿr [donkey], HEB005489 ʿayir [he-ass], ARB023511 Eayor [Ass]"
-        }
-      ],
-      "note": "Written like the Ugaritic word for a city but read with another vowel, as in Hebrew."
+      "translit": "ʿr"
     }
   ],
   "doctrine": [
     {
-      "topic": "city-of-god",
-      "statement": "Jerusalem is called the city of God and the city of Yahweh of hosts, which God will establish for ever (Psa 48:2, 9; 87:3), and the city of holiness (Isa 52:1). Yahweh says he will return to Zion and dwell in the midst of Jerusalem, and it shall be called the city of truth (Zec 8:3); the city shall be built to Yahweh (Jer 31:38), its despisers shall call it the city of Yahweh (Isa 60:14), and its name from that day shall be “Yahweh is there” (Ezk 48:35). Jesus calls Jerusalem the city of the great King (Mat 5:35). Abraham looked for the city that has foundations, whose builder and maker is God (Heb 11:10); here we have no abiding city but look for the one to come (Heb 13:14); and John saw the holy city, new Jerusalem, coming down out of heaven from God (Rev 21:2, 10). The city God has prepared is not a place the faithful go up to: it is made by him and comes down, and the promises fix it at Zion, on the earth, where Yahweh will dwell.",
       "evidence": [
         {
           "ref": "Psa.48.2"
@@ -732,11 +156,11 @@
         {
           "ref": "Rev.21.10"
         }
-      ]
+      ],
+      "statement": "Jerusalem is called the city of God and the city of Yahweh of hosts, which God will establish for ever (Psa 48:2, 9; 87:3), and the city of holiness (Isa 52:1). Yahweh says he will return to Zion and dwell in the midst of Jerusalem, and it shall be called the city of truth (Zec 8:3); the city men build for their own name shall be built to Yahweh (Jer 31:38); its despisers shall call it the city of Yahweh (Isa 60:14); and its name from that day shall be “Yahweh is there” (Ezk 48:35). Jesus calls Jerusalem the city of the great King (Mat 5:35). Abraham looked for the city that has foundations, whose builder and maker is God (Heb 11:10); here we have no abiding city but look for the one to come (Heb 13:14); and John saw the holy city, new Jerusalem, coming down out of heaven from God (Rev 21:2, 10). The city God has prepared is not a place the faithful go up to: it is made by him and comes down, and the promises fix it at Zion, on the earth, where Yahweh will dwell.",
+      "topic": "city-of-god"
     },
     {
-      "topic": "refuge",
-      "statement": "Six cities are set apart so that one who has killed a person by mistake may flee there and live (Num 35:11; Deu 4:41–42). He states his case at the gate to the elders of the city, who take him in (Jos 20:4); the congregation delivers him from the redeemer of blood and returns him to the city of his refuge (Num 35:25). He must stay in it until the death of the great priest, and after the great priest's death he returns to the land of his possession (Num 35:28; Jos 20:6). His life is kept only inside the city appointed, and his release to his inheritance comes by the death of the high priest.",
       "evidence": [
         {
           "ref": "Num.35.11"
@@ -757,11 +181,11 @@
         {
           "ref": "Jos.20.6"
         }
-      ]
+      ],
+      "statement": "Six cities are set apart so that one who has killed a person by mistake may flee there and live (Num 35:11; Deu 4:41–42; Jos 20:2–3). He states his case at the gate to the elders of the city, who take him in (Jos 20:4); the congregation delivers him from the redeemer of blood and returns him to the city of his refuge (Num 35:25). He must stay in it until the death of the great priest, and after the great priest's death he returns to the land of his possession (Num 35:28; Jos 20:6). His life is kept only inside the city appointed, and his release to his inheritance comes by the death of the high priest.",
+      "topic": "refuge"
     },
     {
-      "topic": "babel",
-      "statement": "Men said, “Let us build ourselves a city and a tower with its top in the heavens, and let us make ourselves a name, lest we be scattered over the face of all the earth” (Gen 11:4). Yahweh came down to see the city and the tower, scattered them from there over the face of all the earth, and they left off building the city (Gen 11:5, 8). The psalm draws the rule: unless Yahweh keeps a city, the watchman wakes in vain (Psa 127:1). A city men build for their own name does not stand against him.",
       "evidence": [
         {
           "ref": "Gen.11.4"
@@ -775,8 +199,591 @@
         {
           "ref": "Psa.127.1"
         }
-      ]
+      ],
+      "statement": "Men said, “Let us build ourselves a city and a tower with its top in the heavens, and let us make ourselves a name, lest we be scattered over the face of all the earth” (Gen 11:4). Yahweh came down to see the city and the tower, scattered them from there over the face of all the earth, and they left off building the city (Gen 11:5, 8). The psalm draws the rule: unless Yahweh keeps a city, the watchman wakes in vain (Psa 127:1). A city men build for their own name does not stand against him.",
+      "topic": "babel"
     }
   ],
-  "note": "Drafted 2026-11-15. Root key: BDB files עִיר “city” (p.cm.ad) under עיפ, an alphabetical accident (עָיֵף “weary” is the real root there), and the database's word_info gives most of its tokens the root עור by spelling. The entry is keyed by the noun's own consonants, עיר, as ki.json (כי, filed under כוה) and im.json (אמ, filed under אלצ) are, and joins to the tokens by the BDB key p.cm.ad. עיר is also the key BDB gives עַיִר “male ass” (p.cn.ab), so by “one spelling, one entry” that word is kept here, with its own cognates; all the cognates show ʿ, so the sounds do not separate the two, but nothing ties their meanings. Left for entries of their own: עוּר “awake”, עִיר “excitement, anguish” (p.bp.ab: Jer 15:8; Hos 11:9; its token count is the city's, by spelling), עוֹר “skin”, עִוֵּר “blind”, עָרוֹם / עֵירֹם “naked” (all under עור), and עָיֵף / עִיף “weary” (עיפ). The Aramaic עִיר “watcher” of Dan 4:10, 14, 20 (xp.ad.ak, which the database keys to the root עיר) belongs with עוּר “awake” and is left for that entry; until it exists a root lookup for עיר will bring a watcher token here. Scripture's Aramaic word for a city is קִרְיָה (another root), and the Peshitta has another word (Mat 4:5, לַמדִֿינַתֿ קֻודֿשָא in the database's Hebrew-script transliteration), so the entry has no Aramaic word. Places are left out: עָר Ar of Moab (p.fa.af), עִיר שֶׁמֶשׁ (p.cm.ah), עִיר־הַמֶּלַח (p.cm.af), עִיר הַתְּמָרִים (p.cm.ai, treated as a phrase), עִיר נָחָשׁ. Names drafted: Ir, Iri, Iram, Irad; not drafted: עִירָא Ira (p.cn.ac, three men) and עִירוּ Iru (p.cn.ae), whose tie to this word rests on spelling alone. Brief's reference list for “city” includes tokens of other words: Gen 49:11 עִירוֹ is the colt, and the verb forms of עוּר are already excluded. Leads not followed: Sumerian iri/uru “city”, which Wiktionary compares (not a Semitic language, and no dictionary of it is among the sources); Mari Akkadian ḫârum, ayarum “he-ass”, which Segert compares (not found in the Oracc glossaries); Syriac ܥܝܠܐ “colt”, the Peshitta's word in Mat 21:5, which Wiktionary compares with עַיִר though it has l for r; Datina and Hadrami ʿurr “mountain” and Yemeni ʿurr “hill fortress”, named by Biella. Krahmalkov's page is read from the text layer's page footers (ʿR II follows the footer 385), and his first text is printed in the text layer as KAI 31 A 7, probably the Kition account KAI 37: check against the scan. Segert's text number for the ass (KTU 1.19) was not legible enough in the text layer to cite by line."
+  "gloss": "city, town",
+  "id": "3yr",
+  "note": "Drafted 2026-11-15. Root key: BDB files עִיר “city” (p.cm.ad) under עיפ, an alphabetical accident (עָיֵף “weary” is the real root there), and the database's word_info gives most of its tokens the root עור by spelling. The entry is keyed by the noun's own consonants, עיר, as ki.json (כי, filed under כוה) and im.json (אמ, filed under אלצ) are, and joins to the tokens by the BDB key p.cm.ad. עיר is also the key BDB gives עַיִר “male ass” (p.cn.ab), so by “one spelling, one entry” that word is kept here, with its own cognates; all the cognates show ʿ, so the sounds do not separate the two, but nothing ties their meanings. Left for entries of their own: עוּר “awake”, עִיר “excitement, anguish” (p.bp.ab: Jer 15:8; Hos 11:9; its token count is the city's, by spelling), עוֹר “skin”, עִוֵּר “blind”, עָרוֹם / עֵירֹם “naked” (all under עור), and עָיֵף / עִיף “weary” (עיפ). The Aramaic עִיר “watcher” of Dan 4:10, 14, 20 (xp.ad.ak, which the database keys to the root עיר) belongs with עוּר “awake” and is left for that entry; until it exists a root lookup for עיר will bring a watcher token here. Scripture's Aramaic word for a city is קִרְיָה (another root), and the Peshitta has another word (Mat 4:5, לַמדִֿינַתֿ קֻודֿשָא in the database's Hebrew-script transliteration), so the entry has no Aramaic word. Places are left out: עָר Ar of Moab (p.fa.af), עִיר שֶׁמֶשׁ (p.cm.ah), עִיר־הַמֶּלַח (p.cm.af), עִיר הַתְּמָרִים (p.cm.ai, treated as a phrase), עִיר נָחָשׁ. Names drafted: Ir, Iri, Iram, Irad; not drafted: עִירָא Ira (p.cn.ac, three men) and עִירוּ Iru (p.cn.ae), whose tie to this word rests on spelling alone. Brief's reference list for “city” includes tokens of other words: Gen 49:11 עִירוֹ is the colt, and the verb forms of עוּר are already excluded. Leads not followed: Sumerian iri/uru “city”, which Wiktionary compares (not a Semitic language, and no dictionary of it is among the sources); Mari Akkadian ḫârum, ayarum “he-ass”, which Segert compares (not found in the Oracc glossaries); Syriac ܥܝܠܐ “colt”, the Peshitta's word in Mat 21:5, which Wiktionary compares with עַיִר though it has l for r; Datina and Hadrami ʿurr “mountain” and Yemeni ʿurr “hill fortress”, named by Biella. Krahmalkov's page is read from the text layer's page footers (ʿR II follows the footer 385), and his first text is printed in the text layer as KAI 31 A 7, probably the Kition account KAI 37: check against the scan. Segert's text number for the ass (KTU 1.19) was not legible enough in the text layer to cite by line.",
+  "root": "עיר",
+  "status": "draft",
+  "summary": "עִיר is a settled place enclosed for defence: a city or town of any size, set against the open field, the wilderness and the unwalled villages around it, and also the stronghold within a city, as the stronghold of Zion is “the city of David”. Its plural is עָרִים. Scripture uses it of the cities given to the Levites and the cities of refuge, and above all of Jerusalem, the city of holiness and the city of Yahweh. The same spelling holds עַיִר, the male or young ass, a separate word whose tie to “city” no verse or cognate shows.",
+  "tags": [
+    "city",
+    "dwelling",
+    "refuge",
+    "jerusalem",
+    "animals"
+  ],
+  "updated": "2026-11-20",
+  "words": [
+    {
+      "bdb": [
+        "p.cm.ad"
+      ],
+      "cognate_ids": [
+        "uga-ir",
+        "phn-r",
+        "sab-r"
+      ],
+      "gender": "f",
+      "gloss": "city, town",
+      "greek": [
+        {
+          "evidence": [
+            {
+              "locator": "Isa.52.1, עִיר הַקֹּדֶשׁ → πόλις ἁγία; πόλις renders עִיר ×933",
+              "source": "macula-lxx"
+            },
+            {
+              "note": "“The holy city”, the name of Isa 52:1 and Neh 11:1.",
+              "ref": "Mat.4.5"
+            },
+            {
+              "ref": "Mat.27.53"
+            },
+            {
+              "ref": "Rev.21.2"
+            },
+            {
+              "locator": "Psa.87.3 (LXX 86:3), עִיר הָאֱלֹהִים → πόλις τοῦ θεοῦ",
+              "source": "macula-lxx"
+            },
+            {
+              "note": "“The city of the living God”.",
+              "ref": "Heb.12.22"
+            },
+            {
+              "ref": "Heb.11.10"
+            }
+          ],
+          "gloss": "city",
+          "lemma": "πόλις"
+        }
+      ],
+      "lemma": "עִיר",
+      "pos": "noun",
+      "senses": [
+        {
+          "definition": "A built and settled place enclosed by a wall, with a gate where its elders sit, of any size; distinguished from the villages that have no wall and from the open field.",
+          "evidence": [
+            {
+              "note": "A house in עִיר חוֹמָה, “a city with a wall”, is set against the houses of הַחֲצֵרִים אֲשֶׁר אֵין־לָהֶם חֹמָה סָבִיב, “the villages that have no wall around”, which are counted with the field.",
+              "ref": "Lev.25.29",
+              "role": "defining",
+              "to": "Lev.25.31"
+            },
+            {
+              "note": "עָרִים בְּצֻרוֹת חוֹמָה גְבֹהָה דְּלָתַיִם וּבְרִיחַ: fortified cities with high wall, doors and bar, apart from the many עָרֵי הַפְּרָזִי, towns of the open country.",
+              "ref": "Deu.3.5",
+              "role": "defining"
+            },
+            {
+              "note": "The spies are to see what הֶעָרִים are, “whether in camps or in fortresses”; the answer (Num 13:28) is that the cities are fortified and very great.",
+              "ref": "Num.13.19",
+              "role": "defining"
+            },
+            {
+              "note": "The first city: Cain וַיְהִי בֹּנֶה עִיר, “was building a city”, and named it after his son Enoch.",
+              "ref": "Gen.4.17"
+            },
+            {
+              "note": "After locating Resen between Nineveh and Calah, the verse describes a place as הָעִיר הַגְּדֹלָה, “the great city”.",
+              "ref": "Gen.10.12"
+            },
+            {
+              "note": "נִבְנֶה־לָּנוּ עִיר וּמִגְדָּל: “let us build ourselves a city and a tower”.",
+              "ref": "Gen.11.4"
+            },
+            {
+              "note": "Zoar: הָעִיר הַזֹּאת … וְהִיא מִצְעָר, “this city … and it is a little one”.",
+              "ref": "Gen.19.20"
+            },
+            {
+              "note": "Nineveh, a great city, a journey of three days.",
+              "ref": "Jon.3.3"
+            },
+            {
+              "note": "The elders of his city sit at the gate of his place.",
+              "ref": "Deu.21.19"
+            },
+            {
+              "note": "The wall of the city (Jericho) falls.",
+              "ref": "Jos.6.5"
+            },
+            {
+              "note": "The whole range of settlements: מֵעִיר מִבְצָר וְעַד כֹּפֶר הַפְּרָזִי, “from fortified city to village of the open country”.",
+              "ref": "1Sa.6.18"
+            },
+            {
+              "note": "A city broken into, without a wall, is the picture of a man without rule over his spirit.",
+              "ref": "Pro.25.28"
+            }
+          ],
+          "gloss": "city, town",
+          "id": "city",
+          "senses": [
+            {
+              "definition": "The city for those who live in it: it cries out, is stirred, flees.",
+              "evidence": [
+                {
+                  "note": "וַתִּזְעַק כָּל־הָעִיר: “all the city cried out”.",
+                  "ref": "1Sa.4.13",
+                  "role": "defining"
+                },
+                {
+                  "note": "All the city was stirred over Naomi and Ruth.",
+                  "ref": "Rut.1.19",
+                  "role": "defining"
+                },
+                {
+                  "note": "“Every city flees” from the noise of horseman and archer; “every city is forsaken, and no man dwells in them”.",
+                  "ref": "Jer.4.29"
+                }
+              ],
+              "gloss": "the people of a city",
+              "id": "city-people"
+            },
+            {
+              "definition": "A chief city together with the smaller places that belong to it, called its daughters, its villages or its cities.",
+              "evidence": [
+                {
+                  "note": "Israel dwelt in all the cities of the Amorite, בְּחֶשְׁבּוֹן וּבְכָל־בְּנֹתֶיהָ, “in Heshbon and in all its daughters”.",
+                  "ref": "Num.21.25",
+                  "role": "defining"
+                },
+                {
+                  "note": "“Twenty-two cities and their villages” (וְחַצְרֵיהֶן).",
+                  "ref": "Jos.19.30"
+                },
+                {
+                  "note": "“This city and all its cities”: Jerusalem and the towns of Judah that belong to it.",
+                  "ref": "Jer.19.15"
+                },
+                {
+                  "note": "Abel is עִיר וְאֵם בְּיִשְׂרָאֵל, “a city and a mother in Israel”.",
+                  "ref": "2Sa.20.19"
+                }
+              ],
+              "gloss": "a city with its dependent towns",
+              "id": "mother-city"
+            }
+          ]
+        },
+        {
+          "definition": "A fortified or distinct part of a larger city: its stronghold, its water quarter, the precinct of a temple.",
+          "evidence": [
+            {
+              "note": "David took מְצֻדַת צִיּוֹן הִיא עִיר דָּוִד: “the stronghold of Zion, that is the city of David”.",
+              "ref": "2Sa.5.7",
+              "role": "defining"
+            },
+            {
+              "note": "“David dwelt in the stronghold and called it the city of David.”",
+              "ref": "2Sa.5.9",
+              "role": "defining"
+            },
+            {
+              "note": "“David dwelt in the stronghold; therefore they called it the city of David.”",
+              "ref": "1Ch.11.7"
+            },
+            {
+              "note": "Within Rabbah Joab takes עִיר הַמְּלוּכָה, “the city of the kingdom”, which he then calls עִיר הַמָּיִם, “the city of waters”, before the whole city falls to David.",
+              "ref": "2Sa.12.26",
+              "to": "2Sa.12.27"
+            },
+            {
+              "note": "Within Samaria: עִיר בֵּית־הַבָּעַל, “the city of the house of Baal”.",
+              "ref": "2Ki.10.25"
+            }
+          ],
+          "gloss": "stronghold or quarter within a city",
+          "id": "citadel"
+        }
+      ],
+      "summary": "The plural is עָרִים, as if from a singular עָר, the form of the Moabite place Ar (Num 21:28; Isa 15:1); once the plural is עֲיָרִים, in a play on the asses of Jdg 10:4. Size does not make an עִיר: Zoar is “a little one” and Nineveh “great”. What marks it is the wall and gate that the villages lack.",
+      "usage": {
+        "opposites": [
+          {
+            "evidence": [
+              {
+                "note": "בָּרוּךְ אַתָּה בָּעִיר וּבָרוּךְ אַתָּה בַּשָּׂדֶה.",
+                "ref": "Deu.28.3",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.28.16"
+              }
+            ],
+            "lemma": "שָׂדֶה",
+            "note": "City and field together are everywhere a man lives and works."
+          },
+          {
+            "evidence": [
+              {
+                "ref": "Lev.25.31",
+                "role": "defining"
+              },
+              {
+                "ref": "Jos.19.30"
+              }
+            ],
+            "lemma": "חָצֵר",
+            "note": "The unwalled village, which belongs to a city and is reckoned with the field."
+          },
+          {
+            "evidence": [
+              {
+                "note": "They wandered in the wilderness and found no עִיר מוֹשָׁב, “city to dwell in”.",
+                "ref": "Psa.107.4"
+              },
+              {
+                "note": "The fortified city is left alone, forsaken like the wilderness.",
+                "ref": "Isa.27.10"
+              }
+            ],
+            "lemma": "מִדְבָּר",
+            "note": "The wilderness is where no city is; a forsaken city becomes like it."
+          }
+        ],
+        "parallels": [
+          {
+            "evidence": [
+              {
+                "note": "עִיר הַצֶּדֶק קִרְיָה נֶאֱמָנָה, “city of righteousness, faithful town”.",
+                "ref": "Isa.1.26",
+                "role": "defining"
+              },
+              {
+                "note": "“Woe to him who builds עִיר with blood and founds קִרְיָה with iniquity.”",
+                "ref": "Hab.2.12"
+              },
+              {
+                "note": "“The city (הָעִיר) that is in the wadi … there was not a town (קִרְיָה) too high for us.”",
+                "ref": "Deu.2.36"
+              }
+            ],
+            "lemma": "קִרְיָה",
+            "note": "The other word for a city, of another root, set beside עִיר in the two halves of a line."
+          },
+          {
+            "evidence": [
+              {
+                "ref": "2Sa.5.7",
+                "role": "defining"
+              },
+              {
+                "ref": "1Ch.11.5"
+              }
+            ],
+            "lemma": "מְצוּדָה",
+            "note": "The stronghold of Zion is the city of David."
+          }
+        ],
+        "phrases": [
+          {
+            "evidence": [
+              {
+                "ref": "2Sa.5.7",
+                "role": "defining"
+              },
+              {
+                "ref": "2Sa.5.9"
+              },
+              {
+                "note": "The ark is brought up “from the city of David, that is Zion” to the temple: the city of David is a part of Jerusalem, not the whole.",
+                "ref": "1Ki.8.1"
+              },
+              {
+                "note": "David was buried in the city of David, as the kings of Judah after him.",
+                "ref": "1Ki.2.10"
+              },
+              {
+                "note": "The stairs going down from the city of David.",
+                "ref": "Neh.3.15"
+              }
+            ],
+            "gloss": "the city of David: the stronghold of Zion",
+            "phrase": "עִיר דָּוִד"
+          },
+          {
+            "evidence": [
+              {
+                "note": "עָרֵי מִקְלָט תִּהְיֶינָה לָכֶם: cities to which one who has struck a person by mistake may flee.",
+                "ref": "Num.35.11",
+                "role": "defining"
+              },
+              {
+                "note": "Six of the Levites' forty-eight cities are עָרֵי הַמִּקְלָט.",
+                "ref": "Num.35.6"
+              },
+              {
+                "note": "The congregation returns the manslayer to עִיר מִקְלָטוֹ, “the city of his refuge”, where he stays until the death of the great priest.",
+                "ref": "Num.35.25"
+              },
+              {
+                "ref": "Jos.20.2"
+              }
+            ],
+            "gloss": "city of refuge",
+            "phrase": "עִיר מִקְלָט"
+          },
+          {
+            "evidence": [
+              {
+                "note": "יְרוּשָׁלַ͏ִם עִיר הַקֹּדֶשׁ: the uncircumcised and the unclean shall no more come into her.",
+                "ref": "Isa.52.1",
+                "role": "defining"
+              },
+              {
+                "ref": "Neh.11.1"
+              },
+              {
+                "ref": "Neh.11.18"
+              },
+              {
+                "ref": "Isa.48.2"
+              },
+              {
+                "ref": "Dan.9.24"
+              },
+              {
+                "note": "“The holy city”, the name of Isa 52:1 and Neh 11:1.",
+                "ref": "Mat.4.5"
+              },
+              {
+                "ref": "Mat.27.53"
+              },
+              {
+                "ref": "Rev.21.2"
+              }
+            ],
+            "gloss": "the city of holiness, the holy city: Jerusalem",
+            "phrase": "עִיר הַקֹּדֶשׁ"
+          },
+          {
+            "evidence": [
+              {
+                "ref": "Psa.87.3",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.46.5"
+              },
+              {
+                "note": "“In the city of Yahweh of hosts, in the city of our God: God will establish it for ever”.",
+                "ref": "Psa.48.9"
+              },
+              {
+                "ref": "Psa.101.8"
+              },
+              {
+                "note": "“They shall call you עִיר יַהְוֶה, Zion of the Holy One of Israel.”",
+                "ref": "Isa.60.14"
+              },
+              {
+                "note": "“The city of the living God”.",
+                "ref": "Heb.12.22"
+              }
+            ],
+            "gloss": "the city of God; also עִיר יַהְוֶה, the city of Yahweh",
+            "phrase": "עִיר הָאֱלֹהִים"
+          },
+          {
+            "evidence": [
+              {
+                "note": "מִמִּגְדַּל נוֹצְרִים עַד־עִיר מִבְצָר: “from watchmen's tower to fortified city”, every kind of settlement.",
+                "ref": "2Ki.17.9",
+                "role": "defining"
+              },
+              {
+                "ref": "1Sa.6.18"
+              },
+              {
+                "ref": "Psa.60.11"
+              }
+            ],
+            "gloss": "fortified city",
+            "phrase": "עִיר מִבְצָר"
+          },
+          {
+            "evidence": [
+              {
+                "note": "Israel built Pithom and Raamses as store cities for Pharaoh.",
+                "ref": "Exo.1.11",
+                "role": "defining"
+              },
+              {
+                "note": "Solomon built store cities, cities for his chariots and cities for his horsemen.",
+                "ref": "1Ki.9.19"
+              }
+            ],
+            "gloss": "store cities",
+            "phrase": "עָרֵי מִסְכְּנוֹת"
+          },
+          {
+            "evidence": [
+              {
+                "note": "בִּקְעַת יְרֵחוֹ עִיר הַתְּמָרִים.",
+                "ref": "Deu.34.3",
+                "role": "defining"
+              },
+              {
+                "ref": "2Ch.28.15"
+              },
+              {
+                "ref": "Jdg.1.16"
+              }
+            ],
+            "gloss": "the city of palm trees: Jericho",
+            "phrase": "עִיר הַתְּמָרִים"
+          },
+          {
+            "evidence": [
+              {
+                "note": "Jerusalem.",
+                "ref": "Ezk.22.2",
+                "role": "defining"
+              },
+              {
+                "note": "Nineveh: עִיר דָּמִים.",
+                "ref": "Nam.3.1"
+              }
+            ],
+            "gloss": "city of blood",
+            "phrase": "עִיר הַדָּמִים"
+          },
+          {
+            "evidence": [
+              {
+                "ref": "Est.8.11",
+                "role": "defining"
+              }
+            ],
+            "gloss": "city by city, every city",
+            "phrase": "עִיר וָעִיר"
+          },
+          {
+            "evidence": [
+              {
+                "note": "The manslayer stands at the entrance of the gate of the city and speaks in the ears of the elders of that city.",
+                "ref": "Jos.20.4",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.23.10"
+              },
+              {
+                "ref": "Gen.34.20"
+              }
+            ],
+            "gloss": "the gate of the city, where its elders judge",
+            "phrase": "שַׁעַר הָעִיר"
+          }
+        ]
+      }
+    },
+    {
+      "bdb": [
+        "p.cn.ab"
+      ],
+      "cognate_ids": [
+        "ar-ayr",
+        "uga-ayr"
+      ],
+      "gender": "m",
+      "gloss": "male ass, young ass",
+      "greek": [
+        {
+          "evidence": [
+            {
+              "locator": "Zec.9.9, עַיִר → πῶλον",
+              "source": "macula-lxx"
+            },
+            {
+              "ref": "Mat.21.5"
+            },
+            {
+              "ref": "Jhn.12.15"
+            }
+          ],
+          "gloss": "colt, foal",
+          "lemma": "πῶλος"
+        }
+      ],
+      "lemma": "עַיִר",
+      "pos": "noun",
+      "senses": [
+        {
+          "definition": "The male ass, listed beside the she-asses; a young ass ridden by men of rank, loaded, or worked on the land.",
+          "evidence": [
+            {
+              "note": "Jacob's gift: twenty she-asses (אֲתֹנֹת) and ten males, וַעְיָרִם, the males beside the females.",
+              "ref": "Gen.32.16",
+              "role": "defining"
+            },
+            {
+              "note": "The king comes riding on an ass, וְעַל־עַיִר בֶּן־אֲתֹנוֹת, “on a colt, the son of she-asses”.",
+              "ref": "Zec.9.9",
+              "role": "defining"
+            },
+            {
+              "note": "עִירוֹ, “his colt”, is set beside בְּנִי אֲתֹנוֹ, “his she-ass's son”.",
+              "ref": "Gen.49.11",
+              "role": "defining"
+            },
+            {
+              "note": "Quotes Zec 9:9 of Jesus entering Jerusalem: “on a colt, the foal of an ass”; again Jhn 12:15.",
+              "ref": "Mat.21.5"
+            },
+            {
+              "note": "Jair's thirty sons rode on thirty עֲיָרִים and had thirty עֲיָרִים, cities: the plural of עִיר is shaped to match.",
+              "ref": "Jdg.10.4"
+            },
+            {
+              "note": "Abdon's seventy sons and grandsons ride seventy of them.",
+              "ref": "Jdg.12.14"
+            },
+            {
+              "note": "They carry riches on their shoulder.",
+              "ref": "Isa.30.6"
+            },
+            {
+              "note": "With the oxen they work the ground.",
+              "ref": "Isa.30.24"
+            },
+            {
+              "note": "עַיִר פֶּרֶא: the colt of a wild ass.",
+              "ref": "Job.11.12"
+            }
+          ],
+          "gloss": "male ass; young ass, colt",
+          "id": "male-ass-young-ass"
+        }
+      ],
+      "summary": "A separate word in the same letters: the he-ass, and especially the young one that is ridden. Its cognates are the Arabic and Ugaritic words for the ass, not the words for a city, and how its meaning goes back to a root shared with עִיר is not understood. Scripture plays on the likeness once (Jdg 10:4). Of the eight tokens counted under its key one is that verse's “cities”; Gen 49:11's עִירוֹ is counted with “city” by its spelling.",
+      "usage": {
+        "parallels": [
+          {
+            "evidence": [
+              {
+                "ref": "Gen.49.11",
+                "role": "defining"
+              },
+              {
+                "ref": "Zec.9.9"
+              },
+              {
+                "ref": "Gen.32.16"
+              }
+            ],
+            "lemma": "אָתוֹן",
+            "note": "The she-ass, whose son or mate the עַיִר is."
+          }
+        ]
+      }
+    }
+  ]
 }
