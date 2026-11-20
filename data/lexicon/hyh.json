@@ -1,968 +1,103 @@
 {
-  "id": "hyh",
-  "created": "2026-11-08",
-  "root": "היה",
-  "status": "reviewed",
-  "reviewed": "2026-11-12",
-  "updated": "2026-11-12",
-  "tags": [
-    "existence",
-    "change",
-    "presence",
-    "covenant",
-    "calamity",
-    "desire"
-  ],
-  "gloss": "befall, come to pass; become; be",
-  "summary": "הָיָה says that something comes to pass, that someone or something becomes what is named, or that it is; with לְ, what someone has or is to another (“I will be their God”), and with עִם, that someone is present with another, often to help. Scripture tells the same events with נָפַל “fall”: Yahweh’s hand, his spirit or a dread “is” upon a man or “falls” upon him, and land “is” or “falls” to a tribe; so the verb pictures a thing befalling. Aramaic הֲוָא carries the same uses in Daniel, Ezra and the Peshitta, and Hebrew keeps its ו in the rarer verb הָוָה and in the nouns הֹוָה and הַוָּה, what befalls: “disaster, ruin”. In three verses הַוָּה is a soul’s craving, which may be אַוָּה “desire” in another spelling.",
-  "words": [
-    {
-      "lemma": "הָיָה",
-      "pos": "verb",
-      "gloss": "come to pass, become, be",
-      "bdb": [
-        "e.bf.aa"
-      ],
-      "stems": [
-        {
-          "stem": "qal",
-          "gloss": "come to pass; come upon; become; be",
-          "senses": [
-            {
-              "id": "happen",
-              "gloss": "happen, come to pass",
-              "definition": "Of an event or thing that comes about, or of the coming of a time; וַיְהִי “and it came to pass” introduces an occurrence in narrative.",
-              "evidence": [
-                {
-                  "ref": "Gen.22.1",
-                  "role": "defining",
-                  "note": "After these things, the testing of Abraham takes place."
-                },
-                {
-                  "ref": "Gen.1.3",
-                  "role": "defining",
-                  "note": "God speaks, and light comes to be."
-                },
-                {
-                  "ref": "Exo.32.1",
-                  "role": "defining",
-                  "note": "“We do not know what has happened to him”; Acts 7:40 quotes it."
-                },
-                {
-                  "ref": "Act.7.40"
-                },
-                {
-                  "ref": "Jol.3.1",
-                  "note": "“It will come to pass afterward”: a time to come; Acts 2:17 takes it up."
-                },
-                {
-                  "ref": "Act.2.17"
-                }
-              ],
-              "cognate_ids": [
-                "arc-hwy",
-                "syc-hwa"
-              ]
-            },
-            {
-              "id": "come-upon",
-              "gloss": "come upon, befall",
-              "definition": "With עַל or אֶל, of Yahweh’s hand, his spirit, or a dread: come upon a person or a people. Other verses tell the same with נָפַל, “fall upon”.",
-              "evidence": [
-                {
-                  "ref": "Ezk.1.3",
-                  "role": "defining",
-                  "note": "וַתְּהִי עָלָיו שָׁם יַד־יַהְוֶה, “the hand of Yahweh was upon him there”."
-                },
-                {
-                  "ref": "Ezk.8.1",
-                  "note": "The same with the other verb: וַתִּפֹּל עָלַי שָׁם יַד אֲדֹנָי יַהְוֶה, “the hand of the Lord Yahweh fell upon me there”."
-                },
-                {
-                  "ref": "Num.24.2",
-                  "role": "defining",
-                  "note": "וַתְּהִי עָלָיו רוּחַ אֱלֹהִים: the spirit of God came upon Balaam."
-                },
-                {
-                  "ref": "Ezk.11.5",
-                  "note": "וַתִּפֹּל עָלַי רוּחַ יַהְוֶה, “the spirit of Yahweh fell upon me”."
-                },
-                {
-                  "ref": "Gen.35.5",
-                  "role": "defining",
-                  "note": "וַיְהִי חִתַּת אֱלֹהִים עַל־הֶעָרִים: a terror of God was upon the cities."
-                },
-                {
-                  "ref": "1Sa.11.7",
-                  "note": "וַיִּפֹּל פַּחַד־יַהְוֶה עַל־הָעָם, “the dread of Yahweh fell upon the people”."
-                },
-                {
-                  "ref": "2Ch.17.10",
-                  "note": "וַיְהִי פַּחַד יַהְוֶה עַל כָּל־מַמְלְכוֹת הָאֲרָצוֹת: the dread of Yahweh was upon all the kingdoms."
-                },
-                {
-                  "ref": "1Ki.18.46",
-                  "note": "With אֶל: the hand of Yahweh was on Elijah."
-                },
-                {
-                  "ref": "Luk.1.65",
-                  "note": "The New Testament keeps the pattern: fear came upon all (the Peshitta, וַהְוָת דֵּחְלְתָא עַל כֻּלְהוּן); in 1:12 fear fell upon Zechariah."
-                }
-              ],
-              "cognate_ids": [
-                "arc-hwy",
-                "syc-hwa"
-              ],
-              "kin": [
-                "howah-disaster",
-                "syc-come-upon"
-              ]
-            },
-            {
-              "id": "become",
-              "gloss": "become",
-              "definition": "Come to be what the following expression names, often with לְ before it.",
-              "evidence": [
-                {
-                  "ref": "Gen.2.7",
-                  "role": "defining",
-                  "note": "The man became a living נֶפֶשׁ; 1 Cor 15:45 quotes it."
-                },
-                {
-                  "ref": "1Co.15.45"
-                },
-                {
-                  "ref": "Gen.19.26",
-                  "role": "defining",
-                  "note": "The woman became a pillar of salt."
-                },
-                {
-                  "ref": "Gen.2.24",
-                  "role": "defining",
-                  "note": "The two become one flesh; quoted in Matt 19:5 and Eph 5:31."
-                },
-                {
-                  "ref": "Mat.19.5"
-                },
-                {
-                  "ref": "Eph.5.31"
-                },
-                {
-                  "ref": "Isa.1.9",
-                  "note": "“We would have become like Sodom”; Rom 9:29 quotes it."
-                },
-                {
-                  "ref": "Rom.9.29"
-                }
-              ],
-              "cognate_ids": [
-                "akk-ewu",
-                "arc-hwy",
-                "syc-hwa"
-              ]
-            },
-            {
-              "id": "be-exist",
-              "gloss": "be, exist",
-              "definition": "Be present or exist, or be in a stated condition or place.",
-              "evidence": [
-                {
-                  "ref": "Gen.1.2",
-                  "role": "defining",
-                  "note": "The earth was formless and empty: a condition, not a change expressed by the verb itself."
-                },
-                {
-                  "ref": "Gen.2.5",
-                  "role": "defining",
-                  "note": "No shrub was yet in the earth: not yet existing."
-                },
-                {
-                  "ref": "Job.10.19",
-                  "role": "defining",
-                  "note": "“I would be as though I had not been”: being set against not having existed."
-                },
-                {
-                  "ref": "Gen.15.13",
-                  "note": "Your seed will be sojourners in a land not theirs; Acts 7:6 retells it."
-                },
-                {
-                  "ref": "Act.7.6"
-                }
-              ],
-              "cognate_ids": [
-                "arc-hwy",
-                "syc-hwa"
-              ]
-            },
-            {
-              "id": "belong-to",
-              "gloss": "belong to; be to someone as",
-              "definition": "With לְ, be someone’s possession, or be to someone what the phrase names: their God, their people, father or son.",
-              "evidence": [
-                {
-                  "ref": "Gen.12.16",
-                  "role": "defining",
-                  "note": "Livestock and servants belonged to Abram."
-                },
-                {
-                  "ref": "Jer.31.33",
-                  "role": "defining",
-                  "note": "I will be their God, and they will be my people; Heb 8:10 quotes it."
-                },
-                {
-                  "ref": "Heb.8.10"
-                },
-                {
-                  "ref": "2Sa.7.14",
-                  "role": "defining",
-                  "note": "“I will be to him a father, and he will be to me a son”; Heb 1:5 quotes it of Christ."
-                },
-                {
-                  "ref": "Heb.1.5"
-                },
-                {
-                  "ref": "Num.34.12",
-                  "note": "זֹאת תִּהְיֶה לָכֶם הָאָרֶץ, “this will be your land”; verse 2 says the same land “will fall” (תִּפֹּל) to them as an inheritance."
-                }
-              ],
-              "cognate_ids": [
-                "arc-hwy",
-                "syc-hwa"
-              ]
-            },
-            {
-              "id": "be-with",
-              "gloss": "be with",
-              "definition": "Be present with someone; where the context promises help, support that person.",
-              "evidence": [
-                {
-                  "ref": "Exo.3.12",
-                  "role": "defining",
-                  "note": "אֶהְיֶה עִמָּךְ promises Moses God’s presence."
-                },
-                {
-                  "ref": "Gen.39.2",
-                  "role": "defining",
-                  "note": "Yahweh was with Joseph, and Joseph prospered."
-                }
-              ],
-              "cognate_ids": [
-                "syc-hwa"
-              ]
-            }
-          ]
-        },
-        {
-          "stem": "niphal",
-          "gloss": "happen, be brought about; become; be done",
-          "senses": [
-            {
-              "id": "happen-be-brought-about",
-              "gloss": "happen, be brought about",
-              "definition": "Of an event that comes about, often something exceptional, or a thing brought about by someone.",
-              "evidence": [
-                {
-                  "ref": "Exo.11.6",
-                  "role": "defining",
-                  "note": "A cry unlike anything that has happened before."
-                },
-                {
-                  "ref": "Deu.4.32",
-                  "role": "defining",
-                  "note": "Has anything as great as this happened?"
-                },
-                {
-                  "ref": "Jdg.19.30",
-                  "role": "defining"
-                },
-                {
-                  "ref": "1Ki.12.24",
-                  "role": "defining",
-                  "note": "“This thing has been brought about from me”: Yahweh is its cause."
-                },
-                {
-                  "ref": "Dan.12.1",
-                  "note": "A time of distress such as has not been."
-                }
-              ],
-              "cognate_ids": [
-                "arc-hwy",
-                "syc-hwa"
-              ]
-            },
-            {
-              "id": "become-2",
-              "gloss": "become",
-              "definition": "Enter a state or relationship.",
-              "evidence": [
-                {
-                  "ref": "Deu.27.9",
-                  "role": "defining",
-                  "note": "Today you have become a people to Yahweh."
-                }
-              ],
-              "cognate_ids": [
-                "akk-ewu",
-                "arc-hwy",
-                "syc-hwa"
-              ]
-            },
-            {
-              "id": "be-done-fulfilled",
-              "gloss": "be done, fulfilled",
-              "definition": "Of a thing that has come about in full: a desire fulfilled, a promised day that comes and is done.",
-              "evidence": [
-                {
-                  "ref": "Pro.13.19",
-                  "role": "defining",
-                  "note": "תַּאֲוָה נִהְיָה, a desire that has come about, is sweet to the soul."
-                },
-                {
-                  "ref": "Ezk.39.8",
-                  "role": "defining",
-                  "note": "“It is coming and it will be done”: the day Yahweh spoke of."
-                }
-              ],
-              "cognate_ids": [
-                "syc-hwa"
-              ],
-              "senses": [
-                {
-                  "id": "be-done-for-spent",
-                  "gloss": "be done for, spent",
-                  "definition": "Of a person or his sleep: be finished, gone, spent. Only in Daniel, and the force rests on the context: sleep that was “done” on the troubled king, Daniel “done” and then sick for days.",
-                  "evidence": [
-                    {
-                      "ref": "Dan.2.1",
-                      "role": "defining",
-                      "note": "The king’s spirit was troubled, and his sleep נִהְיְתָה עָלָיו: it was over, gone from him."
-                    },
-                    {
-                      "ref": "Dan.8.27",
-                      "role": "defining",
-                      "note": "נִהְיֵיתִי וְנֶחֱלֵיתִי: Daniel was spent and was sick for days."
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "greek": [
-        {
-          "lemma": "γίνομαι",
-          "gloss": "become, happen",
-          "evidence": [
-            {
-              "source": "macula-lxx",
-              "locator": "Gen.2.7, וַיְהִי → ἐγένετο"
-            },
-            {
-              "ref": "1Co.15.45"
-            }
-          ]
-        },
-        {
-          "lemma": "εἰμί",
-          "gloss": "be",
-          "evidence": [
-            {
-              "source": "macula-lxx",
-              "locator": "Jer.31.33, וְהָיִיתִי → ἔσομαι"
-            },
-            {
-              "ref": "Heb.8.10"
-            }
-          ]
-        }
-      ],
-      "usage": {
-        "phrases": [
-          {
-            "phrase": "אֶהְיֶה עִמָּךְ",
-            "gloss": "I will be with you",
-            "evidence": [
-              {
-                "ref": "Exo.3.12",
-                "role": "defining"
-              }
-            ]
-          },
-          {
-            "phrase": "אֶהְיֶה אֲשֶׁר אֶהְיֶה",
-            "gloss": "I will be who I will be",
-            "evidence": [
-              {
-                "ref": "Exo.3.14",
-                "role": "defining",
-                "note": "The same אֶהְיֶה as in the promise of 3:12; the formula is God’s answer to Moses’s question about his name."
-              }
-            ]
-          },
-          {
-            "phrase": "וַיְהִי",
-            "gloss": "and it came to pass",
-            "evidence": [
-              {
-                "ref": "Gen.22.1",
-                "role": "defining",
-                "note": "Opens a new event in the narrative."
-              }
-            ]
-          }
-        ],
-        "parallels": [
-          {
-            "lemma": "נָפַל",
-            "note": "The same events are told with either verb: a hand, a spirit or a dread upon someone, and land or a lot to a tribe. How a matter “falls” is how it turns out.",
-            "evidence": [
-              {
-                "ref": "Ezk.47.22",
-                "role": "defining",
-                "note": "Both in one verse: the sojourners וְהָיוּ לָכֶם, “shall be to you” as native-born, and with you יִפְּלוּ בְנַחֲלָה, “they shall fall in inheritance”."
-              },
-              {
-                "ref": "Ecc.11.3",
-                "role": "defining",
-                "note": "Where the tree falls (יִפּוֹל), there it will be (יְהוּא)."
-              },
-              {
-                "ref": "Num.34.2",
-                "note": "The land that will fall (תִּפֹּל) to you as an inheritance; in verse 12, “this will be (תִּהְיֶה) your land”."
-              },
-              {
-                "ref": "Jos.17.1",
-                "note": "וַיְהִי הַגּוֹרָל, the lot “was” for Manasseh; in verse 5 his portions “fell” (וַיִּפְּלוּ)."
-              },
-              {
-                "ref": "Jos.17.5",
-                "note": "Ten portions fell to Manasseh."
-              },
-              {
-                "ref": "Jon.1.7",
-                "note": "The lot fell upon Jonah."
-              },
-              {
-                "ref": "Rut.3.18",
-                "note": "אֵיךְ יִפֹּל דָּבָר, “how the matter will fall”: how it will turn out."
-              },
-              {
-                "ref": "Isa.9.7",
-                "note": "The Lord sent a word into Jacob, and it fell (וְנָפַל) on Israel; the word of Yahweh “was” to a prophet (Ezek 1:3)."
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "lemma": "הָוָה",
-      "pos": "verb",
-      "gloss": "be, become; fall",
-      "summary": "The same verb as הָיָה, spelled with the ו that Aramaic הֲוָא also has; a handful of uses, in poetry and late books. In Job 37:6 the snow is told הֱוֵא אָרֶץ: bare אָרֶץ reads as a direction, as after a verb of motion, which makes this “fall to earth”, the one verse where the verb itself seems to say “fall”.",
-      "root": "הוא",
-      "bdb": [
-        "e.az.aa"
-      ],
-      "stems": [
-        {
-          "stem": "qal",
-          "gloss": "be, become; fall",
-          "senses": [
-            {
-              "id": "be-become",
-              "gloss": "be, become",
-              "definition": "Be or become what follows, as הָיָה does.",
-              "kin": [
-                "be-exist",
-                "become"
-              ],
-              "evidence": [
-                {
-                  "ref": "Gen.27.29",
-                  "role": "defining",
-                  "note": "הֱוֵה גְבִיר לְאַחֶיךָ, “be lord over your brothers”."
-                },
-                {
-                  "ref": "Isa.16.4",
-                  "role": "defining",
-                  "note": "הֱוִי־סֵתֶר לָמוֹ, “be a hiding place for them”."
-                },
-                {
-                  "ref": "Neh.6.6",
-                  "role": "defining",
-                  "note": "You are becoming their king."
-                },
-                {
-                  "ref": "Ecc.11.3",
-                  "role": "defining",
-                  "note": "Where the tree falls (יִפּוֹל), there it will be (יְהוּא)."
-                },
-                {
-                  "ref": "Ecc.2.22",
-                  "note": "What is there for a man in all his toil? With לְ, as הָיָה."
-                }
-              ],
-              "cognate_ids": [
-                "akk-ewu",
-                "arc-hwy",
-                "syc-hwa"
-              ]
-            },
-            {
-              "id": "fall-to",
-              "gloss": "fall (to the earth)",
-              "definition": "Of snow, at God’s word: fall to the earth. Bare אָרֶץ gives a direction, as after a verb of motion; “be on the earth” is the other reading.",
-              "evidence": [
-                {
-                  "ref": "Job.37.6",
-                  "role": "defining",
-                  "note": "לַשֶּׁלֶג יֹאמַר הֱוֵא אָרֶץ, “to the snow he says, Fall to earth”, beside the downpour of rain."
-                },
-                {
-                  "ref": "Psa.147.15",
-                  "note": "הַשֹּׁלֵחַ אִמְרָתוֹ אָרֶץ, “who sends his word to earth”: bare אָרֶץ as a direction, in a passage on snow and frost."
-                }
-              ],
-              "cognate_ids": [
-                "ar-hawa"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "lemma": "הֲוָא",
-      "pos": "verb",
-      "gloss": "be, become, happen",
-      "stems": [
-        {
-          "stem": "peal",
-          "gloss": "be, become, happen",
-          "senses": [
-            {
-              "id": "be-become-2",
-              "gloss": "be, become",
-              "definition": "Exist in a condition, or come into it.",
-              "evidence": [
-                {
-                  "ref": "Dan.2.20",
-                  "role": "defining",
-                  "note": "May God’s name be blessed."
-                },
-                {
-                  "ref": "Dan.4.22",
-                  "role": "defining",
-                  "note": "Your dwelling will be with the animals."
-                },
-                {
-                  "ref": "Dan.2.35",
-                  "role": "defining",
-                  "note": "The stone that struck the image became a great mountain."
-                }
-              ],
-              "cognate_ids": [
-                "akk-ewu",
-                "arc-hwy",
-                "syc-hwa"
-              ]
-            },
-            {
-              "id": "happen-2",
-              "gloss": "happen",
-              "definition": "Come about, including a future event.",
-              "evidence": [
-                {
-                  "ref": "Dan.2.28",
-                  "role": "defining",
-                  "note": "What will happen at the end of days."
-                }
-              ],
-              "cognate_ids": [
-                "arc-hwy",
-                "syc-hwa"
-              ]
-            }
-          ]
-        }
-      ],
-      "lang": "arc",
-      "root": "הוא",
-      "bdb": [
-        "xe.ae.aa"
-      ]
-    },
-    {
-      "lemma": "הֲוָא",
-      "pos": "verb",
-      "gloss": "be, become, happen",
-      "stems": [
-        {
-          "stem": "peal",
-          "gloss": "be, become, happen; come upon",
-          "senses": [
-            {
-              "id": "become-come-to-be",
-              "gloss": "become, come to be",
-              "definition": "Come into existence or a stated condition.",
-              "evidence": [
-                {
-                  "ref": "Jhn.1.3",
-                  "role": "defining",
-                  "note": "The Peshitta says that everything came to be through him."
-                },
-                {
-                  "ref": "Jhn.1.14",
-                  "role": "defining",
-                  "note": "The word became flesh."
-                }
-              ],
-              "cognate_ids": [
-                "akk-ewu",
-                "arc-hwy",
-                "syc-hwa"
-              ]
-            },
-            {
-              "id": "happen-3",
-              "gloss": "happen",
-              "definition": "Of an event that occurs.",
-              "evidence": [
-                {
-                  "ref": "Mat.1.22",
-                  "role": "defining",
-                  "note": "All this happened so that what was spoken would be fulfilled."
-                }
-              ],
-              "cognate_ids": [
-                "arc-hwy",
-                "syc-hwa"
-              ]
-            },
-            {
-              "id": "syc-come-upon",
-              "gloss": "come upon",
-              "definition": "With עַל, of fear or of the word of God: come upon someone. In the same books fear also “falls” (נְפַל) upon people.",
-              "evidence": [
-                {
-                  "ref": "Luk.1.65",
-                  "role": "defining",
-                  "note": "וַהְוָת דֵּחְלְתָא עַל כֻּלְהוּן: fear came upon all their neighbours."
-                },
-                {
-                  "ref": "Luk.3.2",
-                  "role": "defining",
-                  "note": "הְוָת מֵלְתָא דַּאלָהָא עַל יוּחַנָן: the word of God came upon John."
-                },
-                {
-                  "ref": "Luk.1.12",
-                  "note": "With the other verb: דֵּחְלְתָא נֵפְלַת, “fear fell” upon Zechariah."
-                },
-                {
-                  "ref": "Rev.11.11",
-                  "note": "Both in one verse: the spirit of life fell (נֵפְלַת) upon them, and great fear was (הְוָת) upon those who saw."
-                },
-                {
-                  "ref": "Act.19.17",
-                  "note": "Fear fell (נֵפְלַת) upon them all."
-                }
-              ],
-              "cognate_ids": [
-                "arc-hwy",
-                "syc-hwa"
-              ],
-              "kin": [
-                "come-upon"
-              ]
-            }
-          ]
-        }
-      ],
-      "lang": "syc",
-      "root": "הוא"
-    },
-    {
-      "lemma": "הַוָּה",
-      "pos": "noun",
-      "gender": "f",
-      "gloss": "ruin, calamity; craving",
-      "summary": "Ruin: what befalls a person, and the ruin the wicked intend and speak against others. In Job 6:2 it is written היתי and read הַוָּתִי, the י and the ו of the verb. In three verses it is a soul’s craving. The same phrase is elsewhere אַוַּת נֶפֶשׁ, so this may be אַוָּה “desire” in another spelling; or it is the soul’s falling toward a thing, as Arabic هَوًى is “inclination of the soul”. The verses do not decide between the two.",
-      "root": "הוה",
-      "bdb": [
-        "e.az.ab"
-      ],
-      "senses": [
-        {
-          "id": "hawwah-ruin",
-          "gloss": "ruin, calamity",
-          "definition": "Ruin that befalls someone, and the ruin the wicked intend and speak against others.",
-          "evidence": [
-            {
-              "ref": "Psa.57.2",
-              "role": "defining",
-              "note": "I take refuge in the shadow of your wings עַד יַעֲבֹר הַוּוֹת, until the calamities pass by."
-            },
-            {
-              "ref": "Pro.19.13",
-              "role": "defining",
-              "note": "A foolish son is הַוֹּת, ruin, to his father."
-            },
-            {
-              "ref": "Job.6.2",
-              "note": "Job’s calamity, weighed in the balances; written היתי (ketiv), read הַוָּתִי."
-            },
-            {
-              "ref": "Job.30.13",
-              "note": "They profit from my calamity."
-            },
-            {
-              "ref": "Psa.91.3",
-              "note": "He rescues you from the snare and מִדֶּבֶר הַוּוֹת, from the plague of calamities."
-            },
-            {
-              "ref": "Psa.5.10",
-              "note": "Their inward part is הַוּוֹת, ruin; their throat an open grave."
-            },
-            {
-              "ref": "Psa.38.13",
-              "note": "The seekers of my harm speak הַוּוֹת, ruin."
-            },
-            {
-              "ref": "Psa.52.4",
-              "note": "Your tongue devises ruin, like a sharpened razor."
-            },
-            {
-              "ref": "Psa.55.12",
-              "note": "Ruin is in the midst of the city."
-            },
-            {
-              "ref": "Psa.94.20",
-              "note": "כִּסֵּא הַוּוֹת, a throne of ruin."
-            },
-            {
-              "ref": "Pro.17.4",
-              "note": "A tongue of ruin."
-            },
-            {
-              "ref": "Job.6.30",
-              "note": "Can my palate not discern calamities?"
-            }
-          ],
-          "cognate_ids": [
-            "ar-hawa"
-          ],
-          "kin": [
-            "howah-disaster"
-          ]
-        },
-        {
-          "id": "hawwah-desire",
-          "gloss": "craving, desire",
-          "definition": "What a soul craves, said of the great man who speaks it, of the wicked and of the treacherous; the desire of the righteous is called תַּאֲוָה.",
-          "evidence": [
-            {
-              "ref": "Mic.7.3",
-              "role": "defining",
-              "note": "The great one speaks הַוַּת נַפְשׁוֹ, “the craving of his soul”."
-            },
-            {
-              "ref": "Deu.12.15",
-              "note": "The same phrase with א: בְּכָל־אַוַּת נַפְשְׁךָ, “with all the craving of your soul”; so also Deut 12:20, 21; 18:6; 1 Sam 23:20; Jer 2:24."
-            },
-            {
-              "ref": "Pro.10.3",
-              "role": "defining",
-              "note": "Yahweh will not let the soul (נֶפֶשׁ) of the righteous hunger, but הַוַּת רְשָׁעִים, the craving of the wicked, he thrusts away: set against a soul’s hunger."
-            },
-            {
-              "ref": "Pro.10.24",
-              "note": "וְתַאֲוַת צַדִּיקִים יִתֵּן: the desire of the righteous, with the א-word, is granted."
-            },
-            {
-              "ref": "Pro.11.6",
-              "note": "By the craving of the treacherous they are caught."
-            },
-            {
-              "ref": "Psa.52.9",
-              "note": "He trusted in his great wealth, יָעֹז בְּהַוָּתוֹ, he was strong in his craving (or his ruin of others)."
-            }
-          ],
-          "cognate_ids": [
-            "ar-hawa"
-          ]
-        }
-      ]
-    },
-    {
-      "lemma": "הֹוָה",
-      "pos": "noun",
-      "gender": "f",
-      "gloss": "disaster: what befalls",
-      "summary": "Shaped as the verb’s feminine participle, “a thing befalling”: its masculine, הֹוֶה, is “being, becoming” (Ecc 2:22; Neh 6:6), as רֹעָה “shepherdess” (Gen 29:9) stands beside רֹעֶה. Isaiah says it “falls” (וְתִפֹּל) on Babylon, and Ezekiel sets it beside the verb itself.",
-      "root": "הוה",
-      "bdb": [
-        "e.az.ad"
-      ],
-      "senses": [
-        {
-          "id": "howah-disaster",
-          "gloss": "disaster",
-          "definition": "Sudden disaster that falls on a people as judgment: a thing befalling them.",
-          "evidence": [
-            {
-              "ref": "Isa.47.11",
-              "role": "defining",
-              "note": "וְתִפֹּל עָלַיִךְ הֹוָה, “disaster will fall upon you”, between רָעָה “evil” and שׁוֹאָה “devastation”, which “come” upon her."
-            },
-            {
-              "ref": "Ezk.7.26",
-              "role": "defining",
-              "note": "הֹוָה עַל־הֹוָה תָּבוֹא וּשְׁמֻעָה אֶל־שְׁמוּעָה תִּהְיֶה: disaster upon disaster comes, and report upon report “is”; the noun and the verb in one line."
-            },
-            {
-              "ref": "Neh.6.6",
-              "note": "הֹוֶה, the masculine of the same participle: “you are becoming their king”."
-            }
-          ],
-          "cognate_ids": [
-            "ar-hawa"
-          ],
-          "kin": [
-            "hawwah-ruin",
-            "come-upon"
-          ]
-        }
-      ]
-    },
-    {
-      "lemma": "הַוְתָא",
-      "pos": "noun",
-      "gender": "f",
-      "gloss": "gulf, chasm",
-      "summary": "The Peshitta’s word for the great gulf set between Abraham and the rich man. It has the letters of Hebrew הַוָּה with the Aramaic ending; Arabic هُوَّة is “a deep hollow” and هَاوِيَة “an abyss”.",
-      "senses": [
-        {
-          "id": "hawta-gulf",
-          "gloss": "gulf, chasm",
-          "definition": "A gulf set between two places, which none can cross.",
-          "evidence": [
-            {
-              "ref": "Luk.16.26",
-              "role": "defining",
-              "note": "הַוְתָא רַבְּתָא, “a great gulf”, is set between us and you, so that none can cross from either side."
-            }
-          ],
-          "cognate_ids": [
-            "ar-hawa"
-          ]
-        }
-      ],
-      "lang": "syc",
-      "root": "הוא"
-    }
-  ],
   "cognates": [
     {
+      "evidence": [
+        {
+          "locator": "hwy vb., G pəˁal “to be”",
+          "note": "Senses “to be”; “to become” (Old Aramaic Tell Fakhariyah 12 hdd gbr lhwy qblh “may hero Hadad become his accuser”; Sefire 3 a22 qtlw mrʾkm whwy ḥlph “kill your lord and become his successor”); “w. l_: to change state, to turn into”; “to endure, to exist” (Bukân stele 3 “every kind of plague that ever existed in the whole world”); “w. l_: to possess”; “to come to pass, to happen”, “to come into existence” (Idumean document 6 bnyn dkryn zy yhwwn ly “male children that I will have”; Targum Onqelos Gen 1:3); Official Aramaic imperative TAD A4.1 R.5 dkyn hww “be pure”.",
+          "source": "cal",
+          "url": "https://cal.huc.edu/oneentry.php?cits=all&lemma=hwy+V"
+        },
+        {
+          "locator": "s.v. הֲוֵי (הֲוָא, הֲוָה)",
+          "note": "“same” as Hebrew הוי “to exist; to be, become; to occur, come to pass”; Targ. Gen. I, 3; Ber. 3ᵃ ג׳ משמרות הוי “the night consists of three watches”; B. Bath. 73ᵇ הוה אזלינן “it happened that we…”; Ned. 50ᵃ אי הואי לי “if I become wealthy”.",
+          "source": "jastrow-1903",
+          "url": "https://www.sefaria.org/Jastrow,_%D7%94%D6%B2%D7%95%D6%B5%D7%99.1"
+        }
+      ],
+      "form": "הוה",
+      "gloss": "be; become; exist; come to pass, happen; with l- possess",
       "id": "arc-hwy",
       "lang": "arc",
-      "form": "הוה",
-      "translit": "hwy, hăwā",
-      "gloss": "be; become; exist; come to pass, happen; with l- possess",
+      "note": "Aramaic outside scripture, from the Old Aramaic inscriptions through the Official Aramaic of Egypt to the Targums and Talmud, uses this verb for every main use of הָיָה: being, existing, becoming, happening, and having (with l-), as Daniel and Ezra do.",
       "relation": "cognate",
-      "evidence": [
-        {
-          "source": "cal",
-          "locator": "hwy vb., G pəˁal “to be”",
-          "url": "https://cal.huc.edu/oneentry.php?cits=all&lemma=hwy+V",
-          "note": "Senses “to be”; “to become” (Old Aramaic Tell Fakhariyah 12 hdd gbr lhwy qblh “may hero Hadad become his accuser”; Sefire 3 a22 qtlw mrʾkm whwy ḥlph “kill your lord and become his successor”); “w. l_: to change state, to turn into”; “to endure, to exist” (Bukân stele 3 “every kind of plague that ever existed in the whole world”); “w. l_: to possess”; “to come to pass, to happen”, “to come into existence” (Idumean document 6 bnyn dkryn zy yhwwn ly “male children that I will have”; Targum Onqelos Gen 1:3); Official Aramaic imperative TAD A4.1 R.5 dkyn hww “be pure”."
-        },
-        {
-          "source": "jastrow-1903",
-          "locator": "s.v. הֲוֵי (הֲוָא, הֲוָה)",
-          "url": "https://www.sefaria.org/Jastrow,_%D7%94%D6%B2%D7%95%D6%B5%D7%99.1",
-          "note": "“same” as Hebrew הוי “to exist; to be, become; to occur, come to pass”; Targ. Gen. I, 3; Ber. 3ᵃ ג׳ משמרות הוי “the night consists of three watches”; B. Bath. 73ᵇ הוה אזלינן “it happened that we…”; Ned. 50ᵃ אי הואי לי “if I become wealthy”."
-        }
-      ],
-      "note": "Aramaic outside scripture, from the Old Aramaic inscriptions through the Official Aramaic of Egypt to the Targums and Talmud, uses this verb for every main use of הָיָה: being, existing, becoming, happening, and having (with l-), as Daniel and Ezra do."
+      "translit": "hwy, hăwā"
     },
     {
+      "evidence": [
+        {
+          "locator": "p. 101, ܗܘܐ",
+          "note": "“a) the substantive verb to be, to exist; to be, remain or live in a place … with ܥܡ to be with, follow; … with ܠ to have, possess; to be for, serve as …; with ܠܘܬ to be with, stay with … b) to begin to be, become, be made, done or wrought, to come to pass, happen”; Aph. “to give existence, to create”.",
+          "source": "payne-smith-1903",
+          "url": "https://www.dukhrana.com/lexicon/PayneSmith/pages/0110.jpg"
+        }
+      ],
+      "form": "ܗܘܐ",
+      "gloss": "be, exist; be with; have (with l-); become, be done, come to pass",
       "id": "syc-hwa",
       "lang": "syc",
-      "form": "ܗܘܐ",
-      "translit": "hwā",
-      "gloss": "be, exist; be with; have (with l-); become, be done, come to pass",
+      "note": "Syriac outside the Peshitta, with the whole range of הָיָה: “be with” (Exod 3:12) and “be done” (the niphal of Prov 13:19, Ezek 39:8) included.",
       "relation": "cognate",
-      "evidence": [
-        {
-          "source": "payne-smith-1903",
-          "locator": "p. 101, ܗܘܐ",
-          "url": "https://www.dukhrana.com/lexicon/PayneSmith/pages/0110.jpg",
-          "note": "“a) the substantive verb to be, to exist; to be, remain or live in a place … with ܥܡ to be with, follow; … with ܠ to have, possess; to be for, serve as …; with ܠܘܬ to be with, stay with … b) to begin to be, become, be made, done or wrought, to come to pass, happen”; Aph. “to give existence, to create”."
-        }
-      ],
-      "note": "Syriac outside the Peshitta, with the whole range of הָיָה: “be with” (Exod 3:12) and “be done” (the niphal of Prov 13:19, Ezek 39:8) included."
+      "translit": "hwā"
     },
     {
-      "id": "akk-ewu",
-      "lang": "akk",
-      "form": "ewû",
-      "translit": "ewû(m), emû",
-      "gloss": "become, turn into; stative “is (like)”; D, Š make into, make like",
-      "relation": "possible",
       "evidence": [
         {
-          "source": "ebl",
           "locator": "ewû I",
-          "url": "https://www.ebl.lmu.de/api/words/ew%C3%BB%20I",
-          "note": "“to become” Bab., OA; G with acc., of day “turn into” darkness, of loan into grain; with -iš, e.g. awīliš “into a man”; with kī(ma) “become like”; stat. “is (like)”; D and Š “make s.o./s.th. like” or “into”."
+          "note": "“to become” Bab., OA; G with acc., of day “turn into” darkness, of loan into grain; with -iš, e.g. awīliš “into a man”; with kī(ma) “become like”; stat. “is (like)”; D and Š “make s.o./s.th. like” or “into”.",
+          "source": "ebl",
+          "url": "https://www.ebl.lmu.de/api/words/ew%C3%BB%20I"
         },
         {
-          "source": "oracc",
           "locator": "armep x000075680, ewû [become] V",
+          "source": "oracc",
           "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000075680.html"
         },
         {
-          "source": "anderson-moser-2024",
           "locator": "SEM000114 hlk [go], AKK000325 alāku [go]; SEM000153 hwt [matter], AKK001113 awātu [word]",
-          "note": "Roots beginning with h answer to Akkadian words beginning with a-."
+          "note": "Roots beginning with h answer to Akkadian words beginning with a-.",
+          "source": "anderson-moser-2024"
         }
       ],
-      "note": "Akkadian keeps the “become” use (day becoming darkness, as the woman became a pillar of salt), and its stative says what something is like; it is not Akkadian’s ordinary word for “be” or “happen”, so it is named only on the senses of becoming. The match is kept as possible: a root beginning with h answers to Akkadian a- (alāku “go” beside הָלַךְ; awātu “word” beside Ugaritic hwt), and ewû begins with e-."
+      "form": "ewû",
+      "gloss": "become, turn into; stative “is (like)”; D, Š make into, make like",
+      "id": "akk-ewu",
+      "lang": "akk",
+      "note": "Akkadian keeps the “become” use (day becoming darkness, as the woman became a pillar of salt), and its stative says what something is like; it is not Akkadian’s ordinary word for “be” or “happen”, so it is named only on the senses of becoming. The match is kept as possible: a root beginning with h answers to Akkadian a- (alāku “go” beside הָלַךְ; awātu “word” beside Ugaritic hwt), and ewû begins with e-.",
+      "relation": "possible",
+      "translit": "ewû(m), emû"
     },
     {
-      "id": "ar-hawa",
-      "lang": "ar",
-      "form": "هَوَى",
-      "translit": "hawā",
-      "gloss": "fall down, sink; perish; (of wind) waft; (n. hawan) love, desire; (huwwa, hāwiya) pit, abyss; (hawāʾ) empty space, air",
-      "relation": "cognate",
       "evidence": [
         {
-          "source": "lane",
           "locator": "p. 3046, root هوى, هَوَى بِهِ (n44380), الهَوَى (n44385), هُوَّةٌ (n44386), هَوَآءٌ (n44387), هَاوِيَةٌ (n44390)",
-          "url": "https://www.laneslexicon.com/word/%D9%87%D9%88%D9%89/n44380",
-          "note": "هَوَى بِهِ “He made it to fall down”; الهَوَى “Love, and attachment: then, inclination of the soul … to a thing”; هُوَّةٌ “A deep hollow in the ground”; هَوَآءٌ “A vacancy; a vacuity; a vacant, or an empty, space”; هَاوِيَةٌ “An abyss”."
-        },
-        {
-          "source": "wiktionary",
-          "locator": "Arabic هوى (hawā, verb; hawan, noun), هواء (hawāʔ), هوة (huwwa), هاوية (hāwiya)",
-          "note": "هَوَى “to breeze, to waft”, “to come down, to descend, to sink”, “to die”, “to lose one’s child”; هَوًى “desire, love, passion”; هَوَاء “air”, “atmosphere”, “empty space, vacancy, void”; هُوَّة “hole, depression, declivity, chasm, gulf, gap”; هَاوِيَة “abyss, bottomless pit”."
-        },
-        {
+          "note": "هَوَى بِهِ “He made it to fall down”; الهَوَى “Love, and attachment: then, inclination of the soul … to a thing”; هُوَّةٌ “A deep hollow in the ground”; هَوَآءٌ “A vacancy; a vacuity; a vacant, or an empty, space”; هَاوِيَةٌ “An abyss”.",
           "source": "lane",
+          "url": "https://www.laneslexicon.com/word/%D9%87%D9%88%D9%89/n44380"
+        },
+        {
+          "locator": "Arabic هوى (hawā, verb; hawan, noun), هواء (hawāʔ), هوة (huwwa), هاوية (hāwiya)",
+          "note": "هَوَى “to breeze, to waft”, “to come down, to descend, to sink”, “to die”, “to lose one’s child”; هَوًى “desire, love, passion”; هَوَاء “air”, “atmosphere”, “empty space, vacancy, void”; هُوَّة “hole, depression, declivity, chasm, gulf, gap”; هَاوِيَة “abyss, bottomless pit”.",
+          "source": "wiktionary"
+        },
+        {
           "locator": "p. 3057, root وقع, وَقَعَ الأَمْرُ (n44679); p. 3058, أَوْقَعَ الأَمْرَ (n44682), وَاقِعٌ (n44688)",
-          "note": "Another Arabic root makes the same step from falling to happening: وَقَعَ الأَمْرُ “The thing, or affair, [fell, befell,] happened; took place; came to pass …”; أَوْقَعَ الأَمْرَ “He made the thing, or affair, to happen, to take place, to come to pass …”; وَاقِعٌ “An event; a fact; a case”."
+          "note": "Another Arabic root makes the same step from falling to happening: وَقَعَ الأَمْرُ “The thing, or affair, [fell, befell,] happened; took place; came to pass …”; أَوْقَعَ الأَمْرَ “He made the thing, or affair, to happen, to take place, to come to pass …”; وَاقِعٌ “An event; a fact; a case”.",
+          "source": "lane"
         }
       ],
-      "note": "Arabic keeps the root’s picture whole: one verb for falling, sinking and perishing, with the pit, the abyss and the empty air things fall through, and desire as the soul’s inclining. It is named on the words that share these meanings: הָוָה “fall”, הֹוָה and הַוָּה “disaster, ruin”, הַוָּה “craving”, and the Peshitta’s הַוְתָא “gulf”. No Arabic use of this root means “be”, “become” or “happen”; Arabic tells those with other verbs, “happen” with وَقَعَ “fall”. Its “air” is the open, empty space, and the verb is used of a breeze; no word of the root in scripture means breath or wind."
+      "form": "هَوَى",
+      "gloss": "fall down, sink; perish; (of wind) waft; (n. hawan) love, desire; (huwwa, hāwiya) pit, abyss; (hawāʾ) empty space, air",
+      "id": "ar-hawa",
+      "lang": "ar",
+      "note": "Arabic keeps the root’s picture whole: one verb for falling, sinking and perishing, with the pit, the abyss and the empty air things fall through, and desire as the soul’s inclining. It is named on the words that share these meanings: הָוָה “fall”, הֹוָה and הַוָּה “disaster, ruin”, הַוָּה “craving”, and the Peshitta’s הַוְתָא “gulf”. No Arabic use of this root means “be”, “become” or “happen”; Arabic tells those with other verbs, “happen” with وَقَعَ “fall”. Its “air” is the open, empty space, and the verb is used of a breeze; no word of the root in scripture means breath or wind.",
+      "relation": "cognate",
+      "translit": "hawā"
     }
   ],
+  "created": "2026-11-08",
   "doctrine": [
     {
-      "topic": "divine-presence",
-      "statement": "In Exodus 3:12 Yahweh answers Moses’s fear with אֶהְיֶה עִמָּךְ, “I will be with you”; in 3:14 he uses אֶהְיֶה in answering the question about his name. The name-answer belongs to this promise of his own presence and action. The verb itself also describes ordinary created things and does not by itself define a divine attribute.",
       "evidence": [
         {
           "ref": "Exo.3.12"
@@ -976,11 +111,11 @@
         {
           "ref": "Gen.1.2"
         }
-      ]
+      ],
+      "statement": "In Exodus 3:12 Yahweh answers Moses’s fear with אֶהְיֶה עִמָּךְ, “I will be with you”; in 3:14 he uses אֶהְיֶה in answering the question about his name. The name-answer belongs to this promise of his own presence and action. The verb itself also describes ordinary created things and does not by itself define a divine attribute.",
+      "topic": "divine-presence"
     },
     {
-      "topic": "divine-name",
-      "statement": "Yahweh calls his name “my memorial to generation after generation” (Exodus 3:15), and in Isaiah 41:4 he is the one “calling the generations from the beginning: I, Yahweh, first, and with the last ones, I am he.” The first is one; the last are many, and he is with them, as he promised Moses “I will be with you” (Exodus 3:12). Those called by his name are the ones he created, formed and made for his glory (Isaiah 43:7). The name is put on the people (Numbers 6:27); Israel is his firstborn son (Exodus 4:22); the righteous branch is called “Yahweh our righteousness” (Jeremiah 23:6), and Jerusalem is given the same name (Jeremiah 33:16). The New Testament sets out the same order: Christ the firstfruits, then those who are Christ’s at his coming (1 Corinthians 15:20, 23), as the one sheaf is waved before the two loaves of firstfruits (Leviticus 23:10–11, 17); Abraham’s seed is one, Christ, and those who are Christ’s are that seed (Galatians 3:16, 29); God made Abraham father of many nations as the one who “calls the things that are not as being” (Romans 4:17); every family is named from the Father (Ephesians 3:14–15); and the redeemed bear the Father’s name (Revelation 3:12, 14:1). So the name stands over a purpose: one who is first, and from him a family of many, brought into being and called by his name.",
       "evidence": [
         {
           "ref": "Exo.3.15"
@@ -1038,8 +173,887 @@
         {
           "ref": "Rev.14.1"
         }
-      ]
+      ],
+      "statement": "Yahweh calls his name “my memorial to generation after generation” (Exodus 3:15), and in Isaiah 41:4 he is the one “calling the generations from the beginning: I, Yahweh, first, and with the last ones, I am he.” The first is one; the last are many, and he is with them, as he promised Moses “I will be with you” (Exodus 3:12). Those called by his name are the ones he created, formed and made for his glory (Isaiah 43:7). The name is put on the people (Numbers 6:27); Israel is his firstborn son (Exodus 4:22); the righteous branch is called “Yahweh our righteousness” (Jeremiah 23:6), and Jerusalem is given the same name (Jeremiah 33:16). The New Testament sets out the same order: Christ the firstfruits, then those who are Christ’s at his coming (1 Corinthians 15:20, 23), as the one sheaf is waved before the two loaves of firstfruits (Leviticus 23:10–11, 17); Abraham’s seed is one, Christ, and those who are Christ’s are that seed (Galatians 3:16, 29); God made Abraham father of many nations as the one who “calls the things that are not as being” (Romans 4:17); every family is named from the Father (Ephesians 3:14–15); and the redeemed bear the Father’s name (Revelation 3:12, 14:1). So the name stands over a purpose: one who is first, and from him a family of many, brought into being and called by his name.",
+      "topic": "divine-name"
     }
   ],
-  "note": "Mic 2:4 נִהְיָה is filed by spelling but analysed under נהה, and is not evidence for this verb. The Aramaic הֲוָא words and the Hebrew הָוָה are under the database root key הוא (verb, distinct from the pronoun of the same consonants), and the nouns הַוָּה, הֹוָה and the divine name under הוה; the brief for היה does not find them (run the brief for הוה: its הָוָה tokens Gen 27:29, Isa 16:4, Job 37:6, Ecc 2:22, 11:3, Neh 6:6 are analysed under הוא; lexicon-support counts them through e.az.aa; BDB’s separate הָוָא “fall”, e.ax.aa, lists the same tokens and is not named). Re-evaluated 2026-11-12: the root’s picture is taken as “fall, befall”, with “be” its last stage, on scripture’s own use: the same events told with הָיָה and with נָפַל (the “come upon” sense and the parallels under הָיָה), הֹוָה shaped as the verb’s feminine participle, and Job 6:2’s ketiv היתי for הַוָּתִי. It is a cumulative case: no language uses the root both as a verb “fall” and as a verb “be”, so two older roots fallen together cannot be ruled out, and ה, ו and י each stand for one older sound, so no merged letter can decide it. The craving sense of הַוָּה is left open between אַוָּה in another spelling (the text swaps א and ה: אֲדֹרָם 1 Kgs 12:18 and הֲדֹרָם 2 Chr 10:18; אֵיךְ 2 Sam 6:9 and הֵיךְ 1 Chr 13:12) and the soul’s falling toward a thing; scripture pictures craving as a pit (Isa 5:14; Hab 2:5; Prov 27:20). אוה has no entry yet. BDB’s הַיָּה (e.az.ac) is the ketiv spelling of הַוָּה at Job 6:2; the text reads the qere, so it has no tokens and is not a word here. The divine name has its own entry, names/yahweh.json. Niphal Dan 2:1 and 8:27: the forms נִהְיְתָה, נִהְיֵיתִי are regular niphals of היה, kept under “be done” (Prov 13:19, Ezek 39:8) as “be done for, spent”; they may be the verb’s counterpart of הַוָּה “ruin” (one befallen, undone), which Job 6:2’s ketiv allows, but no verse fixes it. Peshitta הַוְתָא: SEDRA files it (lexeme 788) under its own root ܗܘ, the letters of the pronoun ܗܘ, so it is given the verb’s root key הוא here, and the word sheet of Luke 16:26 does not reach this entry; a lexicon’s further senses for it (“destruction”) are not followed to verses. Arabic: Lane’s article on هوى is from his unfinished last volumes and is thin, so Wiktionary is cited beside it; the Qur’an’s uses (53:1 a star that goes down; 20:81 has perished; 14:37 hearts that incline; 22:31 the wind; 53:53 the causative, “overthrew”; 14:43 empty; 101:9 the Pit; read on the Quranic Arabic Corpus root page, not a registered source) are leads. Cognates checked and not found: Ugaritic says “be” with k-w-n (ykn, Segert 1984 p. 189), Phoenician with K-N I “BE” (Krahmalkov 2000 p. 231); neither has hwy “be” in those works. The regular Akkadian and Ugaritic match for the letters is “speak, word” (awû, awātu; Ugaritic hwt), which no word of the root in scripture means. Biella’s Sabaic HWY is ḤWY “live” (a different root, cf. חיה), so no Sabaic cognate is recorded. The Mesha stele has no form of the verb. No Ge'ez cognate looked up yet (Dillmann/Leslau not consulted). CAD E (ewû A) not yet consulted; eBL cited instead; Akkadian ewû stays possible until a source explains its e-. Set aside: a link of the verb to the pronoun הוּא (the verb takes עַל, אֶל and לְ like a verb of event, not a link-word), and “breathe” as the root’s picture (no verse uses the root of breath or wind)."
+  "gloss": "befall, come to pass; become; be",
+  "id": "hyh",
+  "note": "Mic 2:4 נִהְיָה is filed by spelling but analysed under נהה, and is not evidence for this verb. The Aramaic הֲוָא words and the Hebrew הָוָה are under the database root key הוא (verb, distinct from the pronoun of the same consonants), and the nouns הַוָּה, הֹוָה and the divine name under הוה; the brief for היה does not find them (run the brief for הוה: its הָוָה tokens Gen 27:29, Isa 16:4, Job 37:6, Ecc 2:22, 11:3, Neh 6:6 are analysed under הוא; lexicon-support counts them through e.az.aa; BDB’s separate הָוָא “fall”, e.ax.aa, lists the same tokens and is not named). Re-evaluated 2026-11-12: the root’s picture is taken as “fall, befall”, with “be” its last stage, on scripture’s own use: the same events told with הָיָה and with נָפַל (the “come upon” sense and the parallels under הָיָה), הֹוָה shaped as the verb’s feminine participle, and Job 6:2’s ketiv היתי for הַוָּתִי. It is a cumulative case: no language uses the root both as a verb “fall” and as a verb “be”, so two older roots fallen together cannot be ruled out, and ה, ו and י each stand for one older sound, so no merged letter can decide it. The craving sense of הַוָּה is left open between אַוָּה in another spelling (the text swaps א and ה: אֲדֹרָם 1 Kgs 12:18 and הֲדֹרָם 2 Chr 10:18; אֵיךְ 2 Sam 6:9 and הֵיךְ 1 Chr 13:12) and the soul’s falling toward a thing; scripture pictures craving as a pit (Isa 5:14; Hab 2:5; Prov 27:20). אוה has no entry yet. BDB’s הַיָּה (e.az.ac) is the ketiv spelling of הַוָּה at Job 6:2; the text reads the qere, so it has no tokens and is not a word here. The divine name has its own entry, names/yahweh.json. Niphal Dan 2:1 and 8:27: the forms נִהְיְתָה, נִהְיֵיתִי are regular niphals of היה, kept under “be done” (Prov 13:19, Ezek 39:8) as “be done for, spent”; they may be the verb’s counterpart of הַוָּה “ruin” (one befallen, undone), which Job 6:2’s ketiv allows, but no verse fixes it. Peshitta הַוְתָא: SEDRA files it (lexeme 788) under its own root ܗܘ, the letters of the pronoun ܗܘ, so it is given the verb’s root key הוא here, and the word sheet of Luke 16:26 does not reach this entry; a lexicon’s further senses for it (“destruction”) are not followed to verses. Arabic: Lane’s article on هوى is from his unfinished last volumes and is thin, so Wiktionary is cited beside it; the Qur’an’s uses (53:1 a star that goes down; 20:81 has perished; 14:37 hearts that incline; 22:31 the wind; 53:53 the causative, “overthrew”; 14:43 empty; 101:9 the Pit; read on the Quranic Arabic Corpus root page, not a registered source) are leads. Cognates checked and not found: Ugaritic says “be” with k-w-n (ykn, Segert 1984 p. 189), Phoenician with K-N I “BE” (Krahmalkov 2000 p. 231); neither has hwy “be” in those works. The regular Akkadian and Ugaritic match for the letters is “speak, word” (awû, awātu; Ugaritic hwt), which no word of the root in scripture means. Biella’s Sabaic HWY is ḤWY “live” (a different root, cf. חיה), so no Sabaic cognate is recorded. The Mesha stele has no form of the verb. No Ge'ez cognate looked up yet (Dillmann/Leslau not consulted). CAD E (ewû A) not yet consulted; eBL cited instead; Akkadian ewû stays possible until a source explains its e-. Set aside: a link of the verb to the pronoun הוּא (the verb takes עַל, אֶל and לְ like a verb of event, not a link-word), and “breathe” as the root’s picture (no verse uses the root of breath or wind).",
+  "root": "היה",
+  "status": "draft",
+  "summary": "הָיָה says that something comes to pass, that someone or something becomes what is named, or that it is; with לְ, what someone has or is to another (“I will be their God”), and with עִם, that someone is present with another, often to help. Scripture tells the same events with נָפַל “fall”: Yahweh’s hand, his spirit or a dread “is” upon a man or “falls” upon him, and land “is” or “falls” to a tribe; so the verb pictures a thing befalling. Aramaic הֲוָא carries the same uses in Daniel, Ezra and the Peshitta, and Hebrew keeps its ו in the rarer verb הָוָה and in the nouns הֹוָה and הַוָּה, what befalls: “disaster, ruin”. In three verses הַוָּה is a soul’s craving, which may be אַוָּה “desire” in another spelling.",
+  "tags": [
+    "existence",
+    "change",
+    "presence",
+    "covenant",
+    "calamity",
+    "desire"
+  ],
+  "updated": "2026-11-20",
+  "words": [
+    {
+      "bdb": [
+        "e.bf.aa"
+      ],
+      "gloss": "come to pass, become, be",
+      "greek": [
+        {
+          "evidence": [
+            {
+              "locator": "Gen.2.7, וַיְהִי → ἐγένετο",
+              "source": "macula-lxx"
+            },
+            {
+              "ref": "1Co.15.45"
+            }
+          ],
+          "gloss": "become, happen",
+          "lemma": "γίνομαι"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "Jer.31.33, וְהָיִיתִי → ἔσομαι",
+              "source": "macula-lxx"
+            },
+            {
+              "ref": "Heb.8.10"
+            }
+          ],
+          "gloss": "be",
+          "lemma": "εἰμί"
+        }
+      ],
+      "lemma": "הָיָה",
+      "pos": "verb",
+      "stems": [
+        {
+          "gloss": "come to pass; come upon; become; be",
+          "senses": [
+            {
+              "cognate_ids": [
+                "arc-hwy",
+                "syc-hwa"
+              ],
+              "definition": "Of an event or thing that comes about, or of the coming of a time; וַיְהִי “and it came to pass” introduces an occurrence in narrative.",
+              "evidence": [
+                {
+                  "note": "After these things, the testing of Abraham takes place.",
+                  "ref": "Gen.22.1",
+                  "role": "defining"
+                },
+                {
+                  "note": "God speaks, and light comes to be.",
+                  "ref": "Gen.1.3",
+                  "role": "defining"
+                },
+                {
+                  "note": "“We do not know what has happened to him”; Acts 7:40 quotes it.",
+                  "ref": "Exo.32.1",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Act.7.40"
+                },
+                {
+                  "note": "“It will come to pass afterward”: a time to come; Acts 2:17 takes it up.",
+                  "ref": "Jol.3.1"
+                },
+                {
+                  "ref": "Act.2.17"
+                }
+              ],
+              "gloss": "happen, come to pass",
+              "id": "happen"
+            },
+            {
+              "cognate_ids": [
+                "arc-hwy",
+                "syc-hwa"
+              ],
+              "definition": "With עַל or אֶל, of Yahweh’s hand, his spirit, or a dread: come upon a person or a people. Other verses tell the same with נָפַל, “fall upon”.",
+              "evidence": [
+                {
+                  "note": "וַתְּהִי עָלָיו שָׁם יַד־יַהְוֶה, “the hand of Yahweh was upon him there”.",
+                  "ref": "Ezk.1.3",
+                  "role": "defining"
+                },
+                {
+                  "note": "The same with the other verb: וַתִּפֹּל עָלַי שָׁם יַד אֲדֹנָי יַהְוֶה, “the hand of the Lord Yahweh fell upon me there”.",
+                  "ref": "Ezk.8.1"
+                },
+                {
+                  "note": "וַתְּהִי עָלָיו רוּחַ אֱלֹהִים: the spirit of God came upon Balaam.",
+                  "ref": "Num.24.2",
+                  "role": "defining"
+                },
+                {
+                  "note": "וַתִּפֹּל עָלַי רוּחַ יַהְוֶה, “the spirit of Yahweh fell upon me”.",
+                  "ref": "Ezk.11.5"
+                },
+                {
+                  "note": "וַיְהִי חִתַּת אֱלֹהִים עַל־הֶעָרִים: a terror of God was upon the cities.",
+                  "ref": "Gen.35.5",
+                  "role": "defining"
+                },
+                {
+                  "note": "וַיִּפֹּל פַּחַד־יַהְוֶה עַל־הָעָם, “the dread of Yahweh fell upon the people”.",
+                  "ref": "1Sa.11.7"
+                },
+                {
+                  "note": "וַיְהִי פַּחַד יַהְוֶה עַל כָּל־מַמְלְכוֹת הָאֲרָצוֹת: the dread of Yahweh was upon all the kingdoms.",
+                  "ref": "2Ch.17.10"
+                },
+                {
+                  "note": "With אֶל: the hand of Yahweh was on Elijah.",
+                  "ref": "1Ki.18.46"
+                },
+                {
+                  "note": "The New Testament keeps the pattern: fear came upon all (the Peshitta, וַהְוָת דֵּחְלְתָא עַל כֻּלְהוּן); in 1:12 fear fell upon Zechariah.",
+                  "ref": "Luk.1.65"
+                }
+              ],
+              "gloss": "come upon, befall",
+              "id": "come-upon",
+              "kin": [
+                "howah-disaster",
+                "syc-come-upon"
+              ]
+            },
+            {
+              "cognate_ids": [
+                "akk-ewu",
+                "arc-hwy",
+                "syc-hwa"
+              ],
+              "definition": "Come to be what the following expression names, often with לְ before it.",
+              "evidence": [
+                {
+                  "note": "The man became a living נֶפֶשׁ; 1 Cor 15:45 quotes it.",
+                  "ref": "Gen.2.7",
+                  "role": "defining"
+                },
+                {
+                  "ref": "1Co.15.45"
+                },
+                {
+                  "note": "The woman became a pillar of salt.",
+                  "ref": "Gen.19.26",
+                  "role": "defining"
+                },
+                {
+                  "note": "The two become one flesh; quoted in Matt 19:5 and Eph 5:31.",
+                  "ref": "Gen.2.24",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Mat.19.5"
+                },
+                {
+                  "ref": "Eph.5.31"
+                },
+                {
+                  "note": "“We would have become like Sodom”; Rom 9:29 quotes it.",
+                  "ref": "Isa.1.9"
+                },
+                {
+                  "ref": "Rom.9.29"
+                }
+              ],
+              "gloss": "become",
+              "id": "become"
+            },
+            {
+              "cognate_ids": [
+                "arc-hwy",
+                "syc-hwa"
+              ],
+              "definition": "Be present or exist, or be in a stated condition or place.",
+              "evidence": [
+                {
+                  "note": "The earth was formless and empty: a condition, not a change expressed by the verb itself.",
+                  "ref": "Gen.1.2",
+                  "role": "defining"
+                },
+                {
+                  "note": "No shrub was yet in the earth: not yet existing.",
+                  "ref": "Gen.2.5",
+                  "role": "defining"
+                },
+                {
+                  "note": "“I would be as though I had not been”: being set against not having existed.",
+                  "ref": "Job.10.19",
+                  "role": "defining"
+                },
+                {
+                  "note": "Your seed will be sojourners in a land not theirs; Acts 7:6 retells it.",
+                  "ref": "Gen.15.13"
+                },
+                {
+                  "ref": "Act.7.6"
+                }
+              ],
+              "gloss": "be, exist",
+              "id": "be-exist"
+            },
+            {
+              "cognate_ids": [
+                "arc-hwy",
+                "syc-hwa"
+              ],
+              "definition": "With לְ, be someone’s possession, or be to someone what the phrase names: their God, their people, father or son.",
+              "evidence": [
+                {
+                  "note": "Livestock and servants belonged to Abram.",
+                  "ref": "Gen.12.16",
+                  "role": "defining"
+                },
+                {
+                  "note": "I will be their God, and they will be my people; Heb 8:10 quotes it.",
+                  "ref": "Jer.31.33",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Heb.8.10"
+                },
+                {
+                  "note": "“I will be to him a father, and he will be to me a son”; Heb 1:5 quotes it of Christ.",
+                  "ref": "2Sa.7.14",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Heb.1.5"
+                },
+                {
+                  "note": "זֹאת תִּהְיֶה לָכֶם הָאָרֶץ, “this will be your land”; verse 2 says the same land “will fall” (תִּפֹּל) to them as an inheritance.",
+                  "ref": "Num.34.12"
+                }
+              ],
+              "gloss": "belong to; be to someone as",
+              "id": "belong-to"
+            },
+            {
+              "cognate_ids": [
+                "syc-hwa"
+              ],
+              "definition": "Be present with someone; where the context promises help, support that person.",
+              "evidence": [
+                {
+                  "note": "אֶהְיֶה עִמָּךְ promises Moses God’s presence.",
+                  "ref": "Exo.3.12",
+                  "role": "defining"
+                },
+                {
+                  "note": "Yahweh was with Joseph, and Joseph prospered.",
+                  "ref": "Gen.39.2",
+                  "role": "defining"
+                }
+              ],
+              "gloss": "be with",
+              "id": "be-with"
+            },
+            {
+              "cognate_ids": [
+                "syc-hwa"
+              ],
+              "definition": "With לְ introducing a role or function, be or serve as what the following noun names.",
+              "evidence": [
+                {
+                  "note": "וְהָיְתָה לְאוֹת בְּרִית says what the bow in the cloud will serve as, a sign of the covenant between God and the earth.",
+                  "ref": "Gen.9.13",
+                  "role": "defining"
+                }
+              ],
+              "gloss": "be or serve as something",
+              "id": "serve-as"
+            }
+          ],
+          "stem": "qal"
+        },
+        {
+          "gloss": "happen, be brought about; become; be done",
+          "senses": [
+            {
+              "cognate_ids": [
+                "arc-hwy",
+                "syc-hwa"
+              ],
+              "definition": "Of an event that comes about, often something exceptional, or a thing brought about by someone.",
+              "evidence": [
+                {
+                  "note": "A cry unlike anything that has happened before.",
+                  "ref": "Exo.11.6",
+                  "role": "defining"
+                },
+                {
+                  "note": "Has anything as great as this happened?",
+                  "ref": "Deu.4.32",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jdg.19.30",
+                  "role": "defining"
+                },
+                {
+                  "note": "“This thing has been brought about from me”: Yahweh is its cause.",
+                  "ref": "1Ki.12.24",
+                  "role": "defining"
+                },
+                {
+                  "note": "A time of distress such as has not been.",
+                  "ref": "Dan.12.1"
+                }
+              ],
+              "gloss": "happen, be brought about",
+              "id": "happen-be-brought-about"
+            },
+            {
+              "cognate_ids": [
+                "akk-ewu",
+                "arc-hwy",
+                "syc-hwa"
+              ],
+              "definition": "Enter a state or relationship.",
+              "evidence": [
+                {
+                  "note": "Today you have become a people to Yahweh.",
+                  "ref": "Deu.27.9",
+                  "role": "defining"
+                }
+              ],
+              "gloss": "become",
+              "id": "become-2"
+            },
+            {
+              "cognate_ids": [
+                "syc-hwa"
+              ],
+              "definition": "Of a thing that has come about in full: a desire fulfilled, a promised day that comes and is done.",
+              "evidence": [
+                {
+                  "note": "תַּאֲוָה נִהְיָה, a desire that has come about, is sweet to the soul.",
+                  "ref": "Pro.13.19",
+                  "role": "defining"
+                },
+                {
+                  "note": "“It is coming and it will be done”: the day Yahweh spoke of.",
+                  "ref": "Ezk.39.8",
+                  "role": "defining"
+                }
+              ],
+              "gloss": "be done, fulfilled",
+              "id": "be-done-fulfilled",
+              "senses": [
+                {
+                  "definition": "Of a person or his sleep: be finished, gone, spent. Only in Daniel, and the force rests on the context: sleep that was “done” on the troubled king, Daniel “done” and then sick for days.",
+                  "evidence": [
+                    {
+                      "note": "The king’s spirit was troubled, and his sleep נִהְיְתָה עָלָיו: it was over, gone from him.",
+                      "ref": "Dan.2.1",
+                      "role": "defining"
+                    },
+                    {
+                      "note": "נִהְיֵיתִי וְנֶחֱלֵיתִי: Daniel was spent and was sick for days.",
+                      "ref": "Dan.8.27",
+                      "role": "defining"
+                    }
+                  ],
+                  "gloss": "be done for, spent",
+                  "id": "be-done-for-spent"
+                }
+              ]
+            }
+          ],
+          "stem": "niphal"
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "evidence": [
+              {
+                "note": "Both in one verse: the sojourners וְהָיוּ לָכֶם, “shall be to you” as native-born, and with you יִפְּלוּ בְנַחֲלָה, “they shall fall in inheritance”.",
+                "ref": "Ezk.47.22",
+                "role": "defining"
+              },
+              {
+                "note": "Where the tree falls (יִפּוֹל), there it will be (יְהוּא).",
+                "ref": "Ecc.11.3",
+                "role": "defining"
+              },
+              {
+                "note": "The land that will fall (תִּפֹּל) to you as an inheritance; in verse 12, “this will be (תִּהְיֶה) your land”.",
+                "ref": "Num.34.2"
+              },
+              {
+                "note": "וַיְהִי הַגּוֹרָל, the lot “was” for Manasseh; in verse 5 his portions “fell” (וַיִּפְּלוּ).",
+                "ref": "Jos.17.1"
+              },
+              {
+                "note": "Ten portions fell to Manasseh.",
+                "ref": "Jos.17.5"
+              },
+              {
+                "note": "The lot fell upon Jonah.",
+                "ref": "Jon.1.7"
+              },
+              {
+                "note": "אֵיךְ יִפֹּל דָּבָר, “how the matter will fall”: how it will turn out.",
+                "ref": "Rut.3.18"
+              },
+              {
+                "note": "The Lord sent a word into Jacob, and it fell (וְנָפַל) on Israel; the word of Yahweh “was” to a prophet (Ezek 1:3).",
+                "ref": "Isa.9.7"
+              }
+            ],
+            "lemma": "נָפַל",
+            "note": "The same events are told with either verb: a hand, a spirit or a dread upon someone, and land or a lot to a tribe. How a matter “falls” is how it turns out."
+          }
+        ],
+        "phrases": [
+          {
+            "evidence": [
+              {
+                "ref": "Exo.3.12",
+                "role": "defining"
+              }
+            ],
+            "gloss": "I will be with you",
+            "phrase": "אֶהְיֶה עִמָּךְ"
+          },
+          {
+            "evidence": [
+              {
+                "note": "The same אֶהְיֶה as in the promise of 3:12; the formula is God’s answer to Moses’s question about his name.",
+                "ref": "Exo.3.14",
+                "role": "defining"
+              }
+            ],
+            "gloss": "I will be who I will be",
+            "phrase": "אֶהְיֶה אֲשֶׁר אֶהְיֶה"
+          },
+          {
+            "evidence": [
+              {
+                "note": "Opens a new event in the narrative.",
+                "ref": "Gen.22.1",
+                "role": "defining"
+              }
+            ],
+            "gloss": "and it came to pass",
+            "phrase": "וַיְהִי"
+          }
+        ]
+      }
+    },
+    {
+      "bdb": [
+        "e.az.aa"
+      ],
+      "gloss": "be, become; fall",
+      "lemma": "הָוָה",
+      "pos": "verb",
+      "root": "הוא",
+      "stems": [
+        {
+          "gloss": "be, become; fall",
+          "senses": [
+            {
+              "cognate_ids": [
+                "akk-ewu",
+                "arc-hwy",
+                "syc-hwa"
+              ],
+              "definition": "Be or become what follows, as הָיָה does.",
+              "evidence": [
+                {
+                  "note": "הֱוֵה גְבִיר לְאַחֶיךָ, “be lord over your brothers”.",
+                  "ref": "Gen.27.29",
+                  "role": "defining"
+                },
+                {
+                  "note": "הֱוִי־סֵתֶר לָמוֹ, “be a hiding place for them”.",
+                  "ref": "Isa.16.4",
+                  "role": "defining"
+                },
+                {
+                  "note": "You are becoming their king.",
+                  "ref": "Neh.6.6",
+                  "role": "defining"
+                },
+                {
+                  "note": "Where the tree falls (יִפּוֹל), there it will be (יְהוּא).",
+                  "ref": "Ecc.11.3",
+                  "role": "defining"
+                },
+                {
+                  "note": "What is there for a man in all his toil? With לְ, as הָיָה.",
+                  "ref": "Ecc.2.22"
+                }
+              ],
+              "gloss": "be, become",
+              "id": "be-become",
+              "kin": [
+                "be-exist",
+                "become"
+              ]
+            },
+            {
+              "cognate_ids": [
+                "ar-hawa"
+              ],
+              "definition": "Of snow, at God’s word: fall to the earth. Bare אָרֶץ gives a direction, as after a verb of motion; “be on the earth” is the other reading.",
+              "evidence": [
+                {
+                  "note": "לַשֶּׁלֶג יֹאמַר הֱוֵא אָרֶץ, “to the snow he says, Fall to earth”, beside the downpour of rain.",
+                  "ref": "Job.37.6",
+                  "role": "defining"
+                },
+                {
+                  "note": "הַשֹּׁלֵחַ אִמְרָתוֹ אָרֶץ, “who sends his word to earth”: bare אָרֶץ as a direction, in a passage on snow and frost.",
+                  "ref": "Psa.147.15"
+                }
+              ],
+              "gloss": "fall (to the earth)",
+              "id": "fall-to"
+            }
+          ],
+          "stem": "qal"
+        }
+      ],
+      "summary": "The same verb as הָיָה, spelled with the ו that Aramaic הֲוָא also has; a handful of uses, in poetry and late books. In Job 37:6 the snow is told הֱוֵא אָרֶץ: bare אָרֶץ reads as a direction, as after a verb of motion, which makes this “fall to earth”, the one verse where the verb itself seems to say “fall”."
+    },
+    {
+      "bdb": [
+        "xe.ae.aa"
+      ],
+      "gloss": "be, become, happen",
+      "lang": "arc",
+      "lemma": "הֲוָא",
+      "pos": "verb",
+      "root": "הוא",
+      "stems": [
+        {
+          "gloss": "be, become, happen",
+          "senses": [
+            {
+              "cognate_ids": [
+                "akk-ewu",
+                "arc-hwy",
+                "syc-hwa"
+              ],
+              "definition": "Exist in a condition, or come into it.",
+              "evidence": [
+                {
+                  "note": "May God’s name be blessed.",
+                  "ref": "Dan.2.20",
+                  "role": "defining"
+                },
+                {
+                  "note": "Your dwelling will be with the animals.",
+                  "ref": "Dan.4.22",
+                  "role": "defining"
+                },
+                {
+                  "note": "The stone that struck the image became a great mountain.",
+                  "ref": "Dan.2.35",
+                  "role": "defining"
+                }
+              ],
+              "gloss": "be, become",
+              "id": "be-become-2"
+            },
+            {
+              "cognate_ids": [
+                "arc-hwy",
+                "syc-hwa"
+              ],
+              "definition": "Come about, including a future event.",
+              "evidence": [
+                {
+                  "note": "What will happen at the end of days.",
+                  "ref": "Dan.2.28",
+                  "role": "defining"
+                }
+              ],
+              "gloss": "happen",
+              "id": "happen-2"
+            }
+          ],
+          "stem": "peal"
+        }
+      ]
+    },
+    {
+      "gloss": "be, become, happen",
+      "lang": "syc",
+      "lemma": "הֲוָא",
+      "pos": "verb",
+      "root": "הוא",
+      "stems": [
+        {
+          "gloss": "be, become, happen; come upon",
+          "senses": [
+            {
+              "cognate_ids": [
+                "akk-ewu",
+                "arc-hwy",
+                "syc-hwa"
+              ],
+              "definition": "Come into existence or a stated condition.",
+              "evidence": [
+                {
+                  "note": "The Peshitta says that everything came to be through him.",
+                  "ref": "Jhn.1.3",
+                  "role": "defining"
+                },
+                {
+                  "note": "The word became flesh.",
+                  "ref": "Jhn.1.14",
+                  "role": "defining"
+                }
+              ],
+              "gloss": "become, come to be",
+              "id": "become-come-to-be"
+            },
+            {
+              "cognate_ids": [
+                "arc-hwy",
+                "syc-hwa"
+              ],
+              "definition": "Of an event that occurs.",
+              "evidence": [
+                {
+                  "note": "All this happened so that what was spoken would be fulfilled.",
+                  "ref": "Mat.1.22",
+                  "role": "defining"
+                }
+              ],
+              "gloss": "happen",
+              "id": "happen-3"
+            },
+            {
+              "cognate_ids": [
+                "arc-hwy",
+                "syc-hwa"
+              ],
+              "definition": "With עַל, of fear or of the word of God: come upon someone. In the same books fear also “falls” (נְפַל) upon people.",
+              "evidence": [
+                {
+                  "note": "וַהְוָת דֵּחְלְתָא עַל כֻּלְהוּן: fear came upon all their neighbours.",
+                  "ref": "Luk.1.65",
+                  "role": "defining"
+                },
+                {
+                  "note": "הְוָת מֵלְתָא דַּאלָהָא עַל יוּחַנָן: the word of God came upon John.",
+                  "ref": "Luk.3.2",
+                  "role": "defining"
+                },
+                {
+                  "note": "With the other verb: דֵּחְלְתָא נֵפְלַת, “fear fell” upon Zechariah.",
+                  "ref": "Luk.1.12"
+                },
+                {
+                  "note": "Both in one verse: the spirit of life fell (נֵפְלַת) upon them, and great fear was (הְוָת) upon those who saw.",
+                  "ref": "Rev.11.11"
+                },
+                {
+                  "note": "Fear fell (נֵפְלַת) upon them all.",
+                  "ref": "Act.19.17"
+                }
+              ],
+              "gloss": "come upon",
+              "id": "syc-come-upon",
+              "kin": [
+                "come-upon"
+              ]
+            }
+          ],
+          "stem": "peal"
+        }
+      ]
+    },
+    {
+      "bdb": [
+        "e.az.ab"
+      ],
+      "gender": "f",
+      "gloss": "ruin, calamity; craving",
+      "lemma": "הַוָּה",
+      "pos": "noun",
+      "root": "הוה",
+      "senses": [
+        {
+          "cognate_ids": [
+            "ar-hawa"
+          ],
+          "definition": "Ruin that befalls someone, and the ruin the wicked intend and speak against others.",
+          "evidence": [
+            {
+              "note": "I take refuge in the shadow of your wings עַד יַעֲבֹר הַוּוֹת, until the calamities pass by.",
+              "ref": "Psa.57.2",
+              "role": "defining"
+            },
+            {
+              "note": "A foolish son is הַוֹּת, ruin, to his father.",
+              "ref": "Pro.19.13",
+              "role": "defining"
+            },
+            {
+              "note": "Job’s calamity, weighed in the balances; written היתי (ketiv), read הַוָּתִי.",
+              "ref": "Job.6.2"
+            },
+            {
+              "note": "They profit from my calamity.",
+              "ref": "Job.30.13"
+            },
+            {
+              "note": "He rescues you from the snare and מִדֶּבֶר הַוּוֹת, from the plague of calamities.",
+              "ref": "Psa.91.3"
+            },
+            {
+              "note": "Their inward part is הַוּוֹת, ruin; their throat an open grave.",
+              "ref": "Psa.5.10"
+            },
+            {
+              "note": "The seekers of my harm speak הַוּוֹת, ruin.",
+              "ref": "Psa.38.13"
+            },
+            {
+              "note": "Your tongue devises ruin, like a sharpened razor.",
+              "ref": "Psa.52.4"
+            },
+            {
+              "note": "Ruin is in the midst of the city.",
+              "ref": "Psa.55.12"
+            },
+            {
+              "note": "כִּסֵּא הַוּוֹת, a throne of ruin.",
+              "ref": "Psa.94.20"
+            },
+            {
+              "note": "A tongue of ruin.",
+              "ref": "Pro.17.4"
+            },
+            {
+              "note": "Can my palate not discern calamities?",
+              "ref": "Job.6.30"
+            }
+          ],
+          "gloss": "ruin, calamity",
+          "id": "hawwah-ruin",
+          "kin": [
+            "howah-disaster"
+          ]
+        },
+        {
+          "cognate_ids": [
+            "ar-hawa"
+          ],
+          "definition": "What a soul craves, said of the great man who speaks it, of the wicked and of the treacherous; the desire of the righteous is called תַּאֲוָה.",
+          "evidence": [
+            {
+              "note": "The great one speaks הַוַּת נַפְשׁוֹ, “the craving of his soul”.",
+              "ref": "Mic.7.3",
+              "role": "defining"
+            },
+            {
+              "note": "The same phrase with א: בְּכָל־אַוַּת נַפְשְׁךָ, “with all the craving of your soul”; so also Deut 12:20, 21; 18:6; 1 Sam 23:20; Jer 2:24.",
+              "ref": "Deu.12.15"
+            },
+            {
+              "note": "Yahweh will not let the soul (נֶפֶשׁ) of the righteous hunger, but הַוַּת רְשָׁעִים, the craving of the wicked, he thrusts away: set against a soul’s hunger.",
+              "ref": "Pro.10.3",
+              "role": "defining"
+            },
+            {
+              "note": "וְתַאֲוַת צַדִּיקִים יִתֵּן: the desire of the righteous, with the א-word, is granted.",
+              "ref": "Pro.10.24"
+            },
+            {
+              "note": "By the craving of the treacherous they are caught.",
+              "ref": "Pro.11.6"
+            },
+            {
+              "note": "He trusted in his great wealth, יָעֹז בְּהַוָּתוֹ, he was strong in his craving (or his ruin of others).",
+              "ref": "Psa.52.9"
+            }
+          ],
+          "gloss": "craving, desire",
+          "id": "hawwah-desire"
+        }
+      ],
+      "summary": "Ruin: what befalls a person, and the ruin the wicked intend and speak against others. In Job 6:2 it is written היתי and read הַוָּתִי, the י and the ו of the verb. In three verses it is a soul’s craving. The same phrase is elsewhere אַוַּת נֶפֶשׁ, so this may be אַוָּה “desire” in another spelling; or it is the soul’s falling toward a thing, as Arabic هَوًى is “inclination of the soul”. The verses do not decide between the two."
+    },
+    {
+      "bdb": [
+        "e.az.ad"
+      ],
+      "gender": "f",
+      "gloss": "disaster: what befalls",
+      "lemma": "הֹוָה",
+      "pos": "noun",
+      "root": "הוה",
+      "senses": [
+        {
+          "cognate_ids": [
+            "ar-hawa"
+          ],
+          "definition": "Sudden disaster that falls on a people as judgment: a thing befalling them.",
+          "evidence": [
+            {
+              "note": "וְתִפֹּל עָלַיִךְ הֹוָה, “disaster will fall upon you”, between רָעָה “evil” and שׁוֹאָה “devastation”, which “come” upon her.",
+              "ref": "Isa.47.11",
+              "role": "defining"
+            },
+            {
+              "note": "הֹוָה עַל־הֹוָה תָּבוֹא וּשְׁמֻעָה אֶל־שְׁמוּעָה תִּהְיֶה: disaster upon disaster comes, and report upon report “is”; the noun and the verb in one line.",
+              "ref": "Ezk.7.26",
+              "role": "defining"
+            },
+            {
+              "note": "הֹוֶה, the masculine of the same participle: “you are becoming their king”.",
+              "ref": "Neh.6.6"
+            }
+          ],
+          "gloss": "disaster",
+          "id": "howah-disaster",
+          "kin": [
+            "hawwah-ruin",
+            "come-upon"
+          ]
+        }
+      ],
+      "summary": "Shaped as the verb’s feminine participle, “a thing befalling”: its masculine, הֹוֶה, is “being, becoming” (Ecc 2:22; Neh 6:6), as רֹעָה “shepherdess” (Gen 29:9) stands beside רֹעֶה. Isaiah says it “falls” (וְתִפֹּל) on Babylon, and Ezekiel sets it beside the verb itself."
+    },
+    {
+      "gender": "f",
+      "gloss": "gulf, chasm",
+      "lang": "syc",
+      "lemma": "הַוְתָא",
+      "pos": "noun",
+      "root": "הוא",
+      "senses": [
+        {
+          "cognate_ids": [
+            "ar-hawa"
+          ],
+          "definition": "A gulf set between two places, which none can cross.",
+          "evidence": [
+            {
+              "note": "הַוְתָא רַבְּתָא, “a great gulf”, is set between us and you, so that none can cross from either side.",
+              "ref": "Luk.16.26",
+              "role": "defining"
+            }
+          ],
+          "gloss": "gulf, chasm",
+          "id": "hawta-gulf"
+        }
+      ],
+      "summary": "The Peshitta’s word for the great gulf set between Abraham and the rich man. It has the letters of Hebrew הַוָּה with the Aramaic ending; Arabic هُوَّة is “a deep hollow” and هَاوِيَة “an abyss”."
+    }
+  ]
 }

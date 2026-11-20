@@ -143,11 +143,17 @@
     {
       "analysis": {
         "entry": {
-          "existing": "hyh",
-          "sense": "belong-to",
+          "draft": {
+            "article_id": "hyh",
+            "base": "b81e8888cdea81427afc26dd4bffe9a90c58b74adf26143129a3eff3bd4bb488",
+            "change": "Add the Qal sense serve-as to הָיָה and cite Genesis 9:13 as defining evidence.",
+            "definition": "With לְ introducing a role or function, be or serve as what the following noun names.",
+            "evidence": "In Genesis 9:13 the bow is the subject of וְהָיְתָה, and לְאוֹת בְּרִית identifies the function it will have as a covenant sign."
+          },
+          "sense": "serve-as",
           "word": 0
         },
-        "evidence": "After נָתַתִּי, “I have set,” וְהָיְתָה לְאוֹת בְּרִית states what the bow will serve as. The לְ in לְאוֹת marks its role as a sign of the covenant between God and the earth.",
+        "evidence": "After נָתַתִּי, “I have set,” וְהָיְתָה states what the bow will serve as. The לְ in לְאוֹת בְּרִית introduces its role as a sign of the covenant between God and the earth.",
         "gloss": "and it shall serve",
         "language": "he",
         "lemma": "הָיָה",
@@ -156,7 +162,7 @@
         "qualifier": "",
         "root": "היה",
         "segments": "וְ/הָיְתָה",
-        "sense": "to serve as something"
+        "sense": "to be or serve as something"
       },
       "position": 4,
       "surface": "וְהָיְתָה"
