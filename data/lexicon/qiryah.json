@@ -1,11 +1,11 @@
 {
   "id": "qiryah",
   "created": "2026-11-20",
-  "root": "קרה",
+  "root": "קריה",
   "status": "draft",
   "updated": "2026-11-20",
   "gloss": "city",
-  "summary": "קִרְיָה is a fortified city or settlement. Zion is called the city of the great King.",
+  "summary": "קִרְיָה is a city or settled town. Zion is called the city of the great King. The noun is kept under its own consonants, distinct from the verb קרה.",
   "words": [
     {
       "lemma": "קִרְיָה",
@@ -29,5 +29,21 @@
       ]
     }
   ],
-  "note": "Drafted from Psalm 48.3; broader root evidence remains to review."
+  "cognates": [
+    {
+      "id": "arc-qarya",
+      "lang": "arc",
+      "form": "ܩܪܝܐ",
+      "translit": "qəriyā",
+      "gloss": "city",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "payne-smith-1903",
+          "locator": "ܩܪܝܐ, city"
+        }
+      ]
+    }
+  ],
+  "note": "The noun קריה is kept separate from the unrelated verb קרה. Syriac ܩܪܝܐ supplies the city cognate."
 }
