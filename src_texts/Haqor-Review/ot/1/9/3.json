@@ -221,6 +221,33 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article_id": "l",
+            "base": "17704063ba8cc123b4afb258554e6e0bf1a70e82b648188e14472b7185316fa2",
+            "change": "Add Gen.9.3 as an example of the existing le-dative sense of Hebrew לְ at word index 0.",
+            "definition": "לְ marks the person or people to whom something is given.",
+            "evidence": "Gen.9.3 uses נָתַתִּי לָכֶם, “I have given to you,” in the same construction as Gen.1.29."
+          },
+          "sense": "le-dative",
+          "word": 0
+        },
+        "evidence": "In נָתַתִּי לָכֶם אֶת כֹּל, “I have given everything to you,” אֶת כֹּל identifies what was given and לָכֶם identifies who received it.",
+        "gloss": "to you",
+        "language": "he",
+        "lemma": "לְ",
+        "morph": "HR/Sp2mp",
+        "morphology": "The Hebrew preposition לְ takes the form לָ־ before the second-person masculine plural pronominal suffix כֶם.",
+        "qualifier": "",
+        "root": "ל",
+        "segments": "לָ/כֶם",
+        "sense": "Marks the recipients of a gift."
+      },
+      "position": 11,
+      "surface": "לָכֶם"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "2t",
           "sense": "definite-object",
           "word": 0
