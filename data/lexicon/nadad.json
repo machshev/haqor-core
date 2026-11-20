@@ -1,0 +1,88 @@
+{
+  "id": "nadad",
+  "root": "נדד",
+  "status": "draft",
+  "updated": "2026-11-20",
+  "gloss": "flee, wander, drive away",
+  "summary": "נדד describes movement away from a place, whether a person flees or wanders, or something is driven away. In Psalm 31 the singer's acquaintances are driven far from him.",
+  "words": [
+    {
+      "lemma": "נָדַד",
+      "pos": "verb",
+      "gloss": "flee, wander, drive away",
+      "bdb": [
+        "n.bd.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "flee, wander",
+          "senses": [
+            {
+              "gloss": "flee or wander away",
+              "definition": "To move away from a place or person in flight or wandering.",
+              "evidence": [
+                {
+                  "ref": "Psa.31.12",
+                  "role": "defining",
+                  "note": "The singer is forgotten like a dead man and is a vessel lost from their hearts."
+                },
+                {
+                  "ref": "Job.14.2"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "drive away",
+          "senses": [
+            {
+              "gloss": "drive away",
+              "definition": "To cause someone or something to move away.",
+              "evidence": [
+                {
+                  "ref": "Psa.68.13"
+                },
+                {
+                  "ref": "Psa.144.14"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "נֵד",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "heap, standing mass",
+      "bdb": [
+        "n.be.ab"
+      ],
+      "senses": [
+        {
+          "gloss": "standing heap",
+          "definition": "A mass standing or gathered together, as water held back in a heap.",
+          "evidence": [
+            {
+              "ref": "Psa.33.7",
+              "role": "defining",
+              "note": "Yahweh gathers the waters of the sea as a heap."
+            },
+            {
+              "ref": "Exo.15.8"
+            },
+            {
+              "ref": "Jos.3.13"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "Drafted from the lexicon brief. The noun נֵד shares the spelling family but its relation to the movement sense needs further lexical review."
+}

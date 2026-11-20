@@ -1,0 +1,177 @@
+{
+  "id": "shetef",
+  "root": "שטפ",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "gloss": "overflow, rinse",
+  "summary": "A flood pours over people and sweeps them away. In instructions about cleansing, the verb describes water washing over hands or utensils.",
+  "words": [
+    {
+      "lemma": "שָׁטַף",
+      "pos": "verb",
+      "gloss": "overflow, rinse",
+      "bdb": [
+        "v.cs.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "overflow",
+          "senses": [
+            {
+              "gloss": "overflow",
+              "definition": "The rising current passes over a person. An invading army likewise sweeps through Judah like a river reaching to the neck.",
+              "evidence": [
+                {
+                  "ref": "Psa.69.3",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.69.16",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Isa.8.8",
+                  "role": "defining"
+                }
+              ],
+              "cognate_ids": [
+                "arc-flood"
+              ]
+            },
+            {
+              "gloss": "rinse",
+              "definition": "Water is run over the hands or an object to wash it.",
+              "evidence": [
+                {
+                  "ref": "Lev.15.11",
+                  "role": "defining"
+                },
+                {
+                  "ref": "1Ki.22.38",
+                  "role": "defining"
+                }
+              ],
+              "cognate_ids": [
+                "arc-rinse"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be rinsed or swept away",
+          "senses": [
+            {
+              "gloss": "be rinsed or swept away",
+              "definition": "Water rinses a wooden vessel. In Daniel, overwhelming force sweeps away and breaks armed opposition.",
+              "evidence": [
+                {
+                  "ref": "Lev.15.12",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Dan.11.22",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be rinsed",
+          "senses": [
+            {
+              "gloss": "be rinsed",
+              "definition": "After the offering is cooked a bronze vessel is scoured and rinsed in water.",
+              "evidence": [
+                {
+                  "ref": "Lev.6.21",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שֶׁטֶף",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "flood",
+      "bdb": [
+        "v.cs.ab"
+      ],
+      "senses": [
+        {
+          "gloss": "flood",
+          "definition": "A rushing flood that overwhelms what is in its path.",
+          "evidence": [
+            {
+              "ref": "Psa.32.6",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-flood"
+      ]
+    },
+    {
+      "lemma": "שֶׁצֶף",
+      "pos": "noun",
+      "gloss": "surge, outburst",
+      "bdb": [
+        "v.fm.al"
+      ],
+      "senses": [
+        {
+          "gloss": "surge, outburst",
+          "definition": "Yahweh briefly hides his face in overflowing anger and promises enduring compassion. The unusual consonant appears here alone.",
+          "evidence": [
+            {
+              "ref": "Isa.54.8",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "Isaiah’s שֶׁצֶף may be a sound variant. The Syriac alabaster flask and the lexeme glossed “cleave” lack evidence tying them to washing or flooding.",
+  "cognates": [
+    {
+      "id": "arc-flood",
+      "lang": "arc",
+      "form": "שִׁטְפָא",
+      "translit": "šiṭpā",
+      "gloss": "flood",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "U00765, Targum Job 38:25"
+        }
+      ]
+    },
+    {
+      "id": "arc-rinse",
+      "lang": "arc",
+      "form": "שְׁטֵף",
+      "translit": "šəṭēp̄",
+      "gloss": "wash, rinse",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. שְׁטֵף, Targum 1 Kings 22:38"
+        }
+      ]
+    }
+  ],
+  "created": "2026-11-19"
+}

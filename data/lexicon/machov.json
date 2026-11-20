@@ -1,0 +1,105 @@
+{
+  "id": "machov",
+  "root": "כאב",
+  "status": "draft",
+  "updated": "2026-11-20",
+  "gloss": "pain, sorrow",
+  "summary": "כאב is physical or inward pain and sorrow. The verb describes suffering or causing pain, while מַכְאוֹב and כְּאֵב name pain and grief.",
+  "words": [
+    {
+      "lemma": "מַכְאוֹב",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "pain, sorrow",
+      "bdb": [
+        "k.ac.ac"
+      ],
+      "senses": [
+        {
+          "gloss": "pain",
+          "definition": "Pain or sorrow suffered by a person.",
+          "evidence": [
+            {
+              "ref": "Psa.32.10",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "כָּאַב",
+      "pos": "verb",
+      "gloss": "be in pain, cause pain",
+      "bdb": [
+        "k.ac.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "be in pain",
+          "senses": [
+            {
+              "gloss": "be in pain",
+              "definition": "To feel pain or grief.",
+              "evidence": [
+                {
+                  "ref": "Psa.69.30",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Pro.14.13"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "cause pain",
+          "senses": [
+            {
+              "gloss": "cause pain",
+              "definition": "To cause pain, grief or ruin.",
+              "evidence": [
+                {
+                  "ref": "Ezk.13.22",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Job.5.18"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "כְּאֵב",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "pain, grief",
+      "bdb": [
+        "k.ac.ab"
+      ],
+      "senses": [
+        {
+          "gloss": "pain",
+          "definition": "Pain or grief suffered in body or heart.",
+          "evidence": [
+            {
+              "ref": "Psa.39.3",
+              "role": "defining"
+            },
+            {
+              "ref": "Jer.15.18"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "Drafted from the כאב brief. כְּאֵב is a separate noun from מַכְאוֹב, and the verb כָּאַב has qal and hiphil uses."
+}
