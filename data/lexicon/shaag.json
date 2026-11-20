@@ -1,0 +1,71 @@
+{
+  "id": "shaag",
+  "root": "שאג",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "roar",
+    "speech"
+  ],
+  "gloss": "roar, groan",
+  "summary": "A lion roars, and a sufferer can use the same sound for his groaning before Yahweh. Psalm 22 uses it for the tearing roar of enemies.",
+  "words": [
+    {
+      "lemma": "שָׁאַג",
+      "bdb": [
+        "v.ad.aa"
+      ],
+      "pos": "verb",
+      "gloss": "roar",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "roar",
+          "senses": [
+            {
+              "gloss": "roar",
+              "definition": "A lion roars, and Yahweh’s voice is compared with that roar.",
+              "evidence": [
+                {
+                  "ref": "Psa.22.14",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Amo.3.8"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שְׁאָגָה",
+      "bdb": [
+        "v.ad.ab"
+      ],
+      "pos": "noun",
+      "gloss": "roaring, groaning",
+      "senses": [
+        {
+          "gloss": "roaring, groaning",
+          "definition": "The noun can describe the roar of a lion or the groaning of a sufferer.",
+          "evidence": [
+            {
+              "ref": "Psa.22.2",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.38.9"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    }
+  ],
+  "cognates": [],
+  "doctrine": [],
+  "note": ""
+}
