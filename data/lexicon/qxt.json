@@ -1,60 +1,254 @@
 {
+  "cognates": [
+    {
+      "evidence": [
+        {
+          "locator": "x000002380, qšt",
+          "source": "oracc-ugarit"
+        }
+      ],
+      "form": "𐎖𐎌𐎚",
+      "gloss": "bow",
+      "id": "ug-bow",
+      "lang": "uga",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š"
+      },
+      "translit": "qšt"
+    },
+    {
+      "evidence": [
+        {
+          "locator": "armep x000015080",
+          "source": "oracc"
+        }
+      ],
+      "form": "qaštu",
+      "gloss": "bow",
+      "id": "akk-bow",
+      "lang": "akk",
+      "relation": "cognate",
+      "translit": "qaštu"
+    },
+    {
+      "evidence": [
+        {
+          "locator": "armep x000155290, a phrase containing the noun qaštu",
+          "source": "oracc"
+        }
+      ],
+      "form": "ṣāb qašti",
+      "gloss": "archer",
+      "id": "akk-archer",
+      "lang": "akk",
+      "relation": "cognate",
+      "translit": "ṣāb qašti"
+    },
+    {
+      "evidence": [
+        {
+          "locator": "QŠT, EH 100.3, Punic occupational description of Hanno, a bow maker",
+          "source": "krahmalkov-2000"
+        }
+      ],
+      "form": "𐤒𐤔𐤕",
+      "gloss": "bow",
+      "id": "punic-bow",
+      "lang": "phn",
+      "relation": "cognate",
+      "translit": "qšt"
+    },
+    {
+      "evidence": [
+        {
+          "locator": "S02272, Onkelos Gen 21:16 and Targum Isa 21:15",
+          "source": "jastrow-1903"
+        }
+      ],
+      "form": "קַשְׁתָּא",
+      "gloss": "bow, rainbow",
+      "id": "arc-bow",
+      "lang": "arc",
+      "relation": "cognate",
+      "translit": "qaštā"
+    },
+    {
+      "evidence": [
+        {
+          "locator": "S02274, Onkelos Gen 21:20, Berliner reading",
+          "source": "jastrow-1903"
+        }
+      ],
+      "form": "קַשָּׁתָא",
+      "gloss": "archer",
+      "id": "arc-archer",
+      "lang": "arc",
+      "relation": "cognate",
+      "translit": "qaššātā"
+    },
+    {
+      "evidence": [
+        {
+          "locator": "qašta, MG 98:10, plural at MG 171:16f.",
+          "source": "drower-macuch-1963"
+        }
+      ],
+      "form": "ࡒࡀࡔࡕࡀ",
+      "gloss": "bow",
+      "id": "mandaic-bow",
+      "lang": "arc",
+      "relation": "cognate",
+      "translit": "qašta"
+    },
+    {
+      "evidence": [
+        {
+          "locator": "qašta, phrase qašta rama, DC 34.664 and MG 318:8",
+          "source": "drower-macuch-1963"
+        }
+      ],
+      "form": "ࡒࡀࡔࡕࡀ ࡓࡀࡌࡀ",
+      "gloss": "rainbow",
+      "id": "mandaic-rainbow",
+      "lang": "arc",
+      "relation": "cognate",
+      "translit": "qašta rama"
+    },
+    {
+      "evidence": [
+        {
+          "locator": "lexeme 2904, Rev 4:3, 6:2 and 10:1",
+          "source": "sedra"
+        }
+      ],
+      "form": "ܩܫܬܐ",
+      "gloss": "bow, rainbow",
+      "id": "syc-bow",
+      "lang": "syc",
+      "relation": "cognate",
+      "translit": "qeštā"
+    },
+    {
+      "evidence": [
+        {
+          "locator": "Book I, p. 2574, n36409",
+          "source": "lane"
+        }
+      ],
+      "form": "قَوْسٌ",
+      "gloss": "bow",
+      "id": "ar-bow",
+      "lang": "ar",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š"
+      },
+      "translit": "qaws"
+    },
+    {
+      "evidence": [
+        {
+          "locator": "Book I, p. 2574, n36409, compound expression",
+          "source": "lane"
+        }
+      ],
+      "form": "قَوْسُ قُزَحَ",
+      "gloss": "rainbow",
+      "id": "ar-rainbow",
+      "lang": "ar",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š"
+      },
+      "translit": "qaws quzaḥ"
+    },
+    {
+      "evidence": [
+        {
+          "locator": "cols. 433–434, ቀስት, bow at Rev 6:2 and rainbow in Gen 9 and Ezk 1:28",
+          "source": "dillmann-1865"
+        }
+      ],
+      "form": "ቀስት",
+      "gloss": "bow, rainbow",
+      "id": "gez-bow",
+      "lang": "gez",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š"
+      },
+      "translit": "qast"
+    },
+    {
+      "evidence": [
+        {
+          "locator": "Maltese lexeme 5200a370e36f237988000132",
+          "source": "gabra"
+        }
+      ],
+      "form": "qaws",
+      "gloss": "bow",
+      "id": "mt-bow",
+      "lang": "sem",
+      "relation": "cognate",
+      "translit": "qaws"
+    },
+    {
+      "evidence": [
+        {
+          "locator": "Maltese lexeme 522d864d6f3bad51370011b3",
+          "source": "gabra"
+        }
+      ],
+      "form": "qawsalla",
+      "gloss": "rainbow",
+      "id": "mt-rainbow",
+      "lang": "sem",
+      "relation": "cognate",
+      "translit": "qawsalla"
+    }
+  ],
+  "doctrine": [
+    {
+      "evidence": [
+        {
+          "note": "The promise concerns all flesh and the earth.",
+          "ref": "Gen.9.11",
+          "role": "defining"
+        },
+        {
+          "note": "God sees the bow and remembers the everlasting covenant.",
+          "ref": "Gen.9.16",
+          "role": "defining"
+        }
+      ],
+      "statement": "God sets the rainbow in the clouds as the sign of his covenant with Noah and every living creature that a flood will never again destroy all flesh.",
+      "topic": "rainbow-covenant"
+    }
+  ],
+  "gloss": "bow, rainbow; archer",
   "id": "qxt",
+  "note": "The corpus groups the bow and archer with קשש ‘gather stubble’. The final taw and the comparative forms support treating the bow family separately. The Maltese and Arabic rainbow compounds and the Mandaic expression show how the bow noun can be qualified to denote the sky phenomenon.",
   "root": "קשת",
   "status": "draft",
-  "updated": "2026-11-18",
+  "summary": "The bow belongs to hunters and warriors. Genesis uses the same word for the rainbow in the clouds, the sign of God’s covenant with the earth. Both meanings recur in the Syriac text of Revelation.",
   "tags": [
     "nature",
     "covenant"
   ],
-  "gloss": "bow, rainbow; archer",
-  "summary": "The bow belongs to hunters and warriors. Genesis uses the same word for the rainbow in the clouds, the sign of God’s covenant with the earth. Both meanings recur in the Syriac text of Revelation.",
+  "updated": "2026-11-18",
   "words": [
     {
-      "lemma": "קֶשֶׁת",
-      "pos": "noun",
-      "gender": "f",
       "bdb": [
         "s.dy.ab"
       ],
+      "gender": "f",
       "gloss": "bow, rainbow",
+      "lemma": "קֶשֶׁת",
+      "pos": "noun",
       "senses": [
         {
-          "id": "bow",
-          "gloss": "bow",
-          "definition": "The bow carried by a hunter or warrior. It can also represent the strength of a fighting force.",
-          "evidence": [
-            {
-              "ref": "Gen.27.3",
-              "role": "defining",
-              "note": "Isaac names Esau’s bow among the things he takes hunting."
-            },
-            {
-              "ref": "1Sa.18.4",
-              "role": "defining",
-              "note": "Jonathan gives David his bow with his robe, sword and belt."
-            },
-            {
-              "ref": "2Sa.1.22",
-              "role": "defining",
-              "note": "David’s lament remembers Jonathan’s bow alongside Saul’s sword."
-            },
-            {
-              "ref": "1Sa.2.4",
-              "role": "defining",
-              "note": "Broken bows mark the reversal of the warriors’ strength."
-            },
-            {
-              "ref": "Hos.1.5",
-              "role": "defining",
-              "note": "Breaking Israel’s bow represents the defeat of its military power."
-            },
-            {
-              "ref": "Psa.44.7",
-              "role": "defining",
-              "note": "The speaker refuses to trust in his own bow or sword."
-            }
-          ],
           "cognate_ids": [
             "ug-bow",
             "akk-bow",
@@ -65,34 +259,44 @@
             "ar-bow",
             "gez-bow",
             "mt-bow"
-          ]
-        },
-        {
-          "id": "rainbow",
-          "gloss": "rainbow",
-          "definition": "The coloured arc that appears in the clouds after rain.",
+          ],
+          "definition": "The bow carried by a hunter or warrior. It can also represent the strength of a fighting force.",
           "evidence": [
             {
-              "ref": "Gen.9.13",
-              "role": "defining",
-              "note": "God sets his bow in the clouds as the sign of his covenant with the earth."
+              "note": "Isaac names Esau’s bow among the things he takes hunting.",
+              "ref": "Gen.27.3",
+              "role": "defining"
             },
             {
-              "ref": "Gen.9.14",
-              "role": "defining",
-              "note": "The bow appears when God brings clouds over the earth."
+              "note": "Jonathan gives David his bow with his robe, sword and belt.",
+              "ref": "1Sa.18.4",
+              "role": "defining"
             },
             {
-              "ref": "Gen.9.16",
-              "role": "defining",
-              "note": "The covenant extends to every living creature."
+              "note": "David’s lament remembers Jonathan’s bow alongside Saul’s sword.",
+              "ref": "2Sa.1.22",
+              "role": "defining"
             },
             {
-              "ref": "Ezk.1.28",
-              "role": "defining",
-              "note": "The brilliance surrounding the vision resembles a bow in a rain cloud."
+              "note": "Broken bows mark the reversal of the warriors’ strength.",
+              "ref": "1Sa.2.4",
+              "role": "defining"
+            },
+            {
+              "note": "Breaking Israel’s bow represents the defeat of its military power.",
+              "ref": "Hos.1.5",
+              "role": "defining"
+            },
+            {
+              "note": "The speaker refuses to trust in his own bow or sword.",
+              "ref": "Psa.44.7",
+              "role": "defining"
             }
           ],
+          "gloss": "bow",
+          "id": "bow"
+        },
+        {
           "cognate_ids": [
             "arc-bow",
             "mandaic-rainbow",
@@ -100,34 +304,59 @@
             "ar-rainbow",
             "gez-bow",
             "mt-rainbow"
-          ]
+          ],
+          "definition": "The coloured arc that appears in the clouds after rain.",
+          "evidence": [
+            {
+              "note": "God sets his bow in the clouds as the sign of his covenant with the earth.",
+              "ref": "Gen.9.13",
+              "role": "defining"
+            },
+            {
+              "note": "The bow appears when God brings clouds over the earth.",
+              "ref": "Gen.9.14",
+              "role": "defining"
+            },
+            {
+              "note": "The covenant extends to every living creature.",
+              "ref": "Gen.9.16",
+              "role": "defining"
+            },
+            {
+              "note": "The brilliance surrounding the vision resembles a bow in a rain cloud.",
+              "ref": "Ezk.1.28",
+              "role": "defining"
+            }
+          ],
+          "gloss": "rainbow",
+          "id": "rainbow"
         }
       ]
     },
     {
-      "lemma": "קַשָּׁת",
-      "pos": "noun",
-      "gender": "m",
       "bdb": [
         "s.dy.ac"
       ],
+      "gender": "m",
       "gloss": "archer",
+      "lemma": "קַשָּׁת",
+      "pos": "noun",
       "senses": [
         {
-          "id": "archer",
-          "gloss": "archer",
-          "definition": "A person skilled with a bow.",
-          "evidence": [
-            {
-              "ref": "Gen.21.20",
-              "role": "defining",
-              "note": "Ishmael grows up in the wilderness and becomes an archer."
-            }
-          ],
           "cognate_ids": [
             "arc-archer",
             "akk-archer"
           ],
+          "definition": "A person skilled with a bow.",
+          "evidence": [
+            {
+              "note": "Ishmael grows up in the wilderness and becomes an archer.",
+              "ref": "Gen.21.20",
+              "role": "defining"
+            }
+          ],
+          "gloss": "archer",
+          "id": "archer",
           "kin": [
             "bow"
           ]
@@ -135,23 +364,13 @@
       ]
     },
     {
+      "gloss": "bow, rainbow",
+      "lang": "syc",
       "lemma": "קֵשְׁתָּא",
       "pos": "noun",
-      "lang": "syc",
       "root": "קשת",
-      "gloss": "bow, rainbow",
       "senses": [
         {
-          "id": "syc-bow-weapon",
-          "gloss": "bow",
-          "definition": "A bow carried by a rider.",
-          "evidence": [
-            {
-              "ref": "Rev.6.2",
-              "role": "defining",
-              "note": "The rider on the white horse holds a bow."
-            }
-          ],
           "cognate_ids": [
             "ug-bow",
             "akk-bow",
@@ -163,26 +382,21 @@
             "gez-bow",
             "mt-bow"
           ],
+          "definition": "A bow carried by a rider.",
+          "evidence": [
+            {
+              "note": "The rider on the white horse holds a bow.",
+              "ref": "Rev.6.2",
+              "role": "defining"
+            }
+          ],
+          "gloss": "bow",
+          "id": "syc-bow-weapon",
           "kin": [
             "bow"
           ]
         },
         {
-          "id": "syc-rainbow",
-          "gloss": "rainbow",
-          "definition": "A coloured arc seen in a vision.",
-          "evidence": [
-            {
-              "ref": "Rev.4.3",
-              "role": "defining",
-              "note": "A rainbow encircles the throne."
-            },
-            {
-              "ref": "Rev.10.1",
-              "role": "defining",
-              "note": "The angel is clothed with a cloud and has a rainbow above his head."
-            }
-          ],
           "cognate_ids": [
             "arc-bow",
             "mandaic-rainbow",
@@ -191,240 +405,26 @@
             "gez-bow",
             "mt-rainbow"
           ],
+          "definition": "A coloured arc seen in a vision.",
+          "evidence": [
+            {
+              "note": "A rainbow encircles the throne.",
+              "ref": "Rev.4.3",
+              "role": "defining"
+            },
+            {
+              "note": "The angel is clothed with a cloud and has a rainbow above his head.",
+              "ref": "Rev.10.1",
+              "role": "defining"
+            }
+          ],
+          "gloss": "rainbow",
+          "id": "syc-rainbow",
           "kin": [
             "rainbow"
           ]
         }
       ]
     }
-  ],
-  "cognates": [
-    {
-      "id": "ug-bow",
-      "lang": "uga",
-      "form": "𐎖𐎌𐎚",
-      "translit": "qšt",
-      "gloss": "bow",
-      "relation": "cognate",
-      "evidence": [
-        {
-          "source": "oracc-ugarit",
-          "locator": "x000002380, qšt"
-        }
-      ],
-      "sounds": {
-        "ש": "š"
-      }
-    },
-    {
-      "id": "akk-bow",
-      "lang": "akk",
-      "form": "qaštu",
-      "translit": "qaštu",
-      "gloss": "bow",
-      "relation": "cognate",
-      "evidence": [
-        {
-          "source": "oracc",
-          "locator": "armep x000015080"
-        }
-      ]
-    },
-    {
-      "id": "akk-archer",
-      "lang": "akk",
-      "form": "ṣāb qašti",
-      "translit": "ṣāb qašti",
-      "gloss": "archer",
-      "relation": "cognate",
-      "evidence": [
-        {
-          "source": "oracc",
-          "locator": "armep x000155290, a phrase containing the noun qaštu"
-        }
-      ]
-    },
-    {
-      "id": "punic-bow",
-      "lang": "phn",
-      "form": "𐤒𐤔𐤕",
-      "translit": "qšt",
-      "gloss": "bow",
-      "relation": "cognate",
-      "evidence": [
-        {
-          "source": "krahmalkov-2000",
-          "locator": "QŠT, EH 100.3, Punic occupational description of Hanno, a bow maker"
-        }
-      ]
-    },
-    {
-      "id": "arc-bow",
-      "lang": "arc",
-      "form": "קַשְׁתָּא",
-      "translit": "qaštā",
-      "gloss": "bow, rainbow",
-      "relation": "cognate",
-      "evidence": [
-        {
-          "source": "jastrow-1903",
-          "locator": "S02272, Onkelos Gen 21:16 and Targum Isa 21:15"
-        }
-      ]
-    },
-    {
-      "id": "arc-archer",
-      "lang": "arc",
-      "form": "קַשָּׁתָא",
-      "translit": "qaššātā",
-      "gloss": "archer",
-      "relation": "cognate",
-      "evidence": [
-        {
-          "source": "jastrow-1903",
-          "locator": "S02274, Onkelos Gen 21:20, Berliner reading"
-        }
-      ]
-    },
-    {
-      "id": "mandaic-bow",
-      "lang": "arc",
-      "form": "ࡒࡀࡔࡕࡀ",
-      "translit": "qašta",
-      "gloss": "bow",
-      "relation": "cognate",
-      "evidence": [
-        {
-          "source": "drower-macuch-1963",
-          "locator": "qašta, MG 98:10, plural at MG 171:16f."
-        }
-      ]
-    },
-    {
-      "id": "mandaic-rainbow",
-      "lang": "arc",
-      "form": "ࡒࡀࡔࡕࡀ ࡓࡀࡌࡀ",
-      "translit": "qašta rama",
-      "gloss": "rainbow",
-      "relation": "cognate",
-      "evidence": [
-        {
-          "source": "drower-macuch-1963",
-          "locator": "qašta, phrase qašta rama, DC 34.664 and MG 318:8"
-        }
-      ]
-    },
-    {
-      "id": "syc-bow",
-      "lang": "syc",
-      "form": "ܩܫܬܐ",
-      "translit": "qeštā",
-      "gloss": "bow, rainbow",
-      "relation": "cognate",
-      "evidence": [
-        {
-          "source": "sedra",
-          "locator": "lexeme 2904, Rev 4:3, 6:2 and 10:1"
-        }
-      ]
-    },
-    {
-      "id": "ar-bow",
-      "lang": "ar",
-      "form": "قَوْسٌ",
-      "translit": "qaws",
-      "gloss": "bow",
-      "relation": "cognate",
-      "evidence": [
-        {
-          "source": "lane",
-          "locator": "p. 2574, n36409"
-        }
-      ],
-      "sounds": {
-        "ש": "š"
-      }
-    },
-    {
-      "id": "ar-rainbow",
-      "lang": "ar",
-      "form": "قَوْسُ قُزَحَ",
-      "translit": "qaws quzaḥ",
-      "gloss": "rainbow",
-      "relation": "cognate",
-      "evidence": [
-        {
-          "source": "lane",
-          "locator": "p. 2574, n36409, compound expression"
-        }
-      ],
-      "sounds": {
-        "ש": "š"
-      }
-    },
-    {
-      "id": "gez-bow",
-      "lang": "gez",
-      "form": "ቀስት",
-      "translit": "qast",
-      "gloss": "bow, rainbow",
-      "relation": "cognate",
-      "evidence": [
-        {
-          "source": "dillmann-1865",
-          "locator": "cols. 433–434, ቀስት, bow at Rev 6:2 and rainbow in Gen 9 and Ezk 1:28"
-        }
-      ],
-      "sounds": {
-        "ש": "š"
-      }
-    },
-    {
-      "id": "mt-bow",
-      "lang": "sem",
-      "form": "qaws",
-      "translit": "qaws",
-      "gloss": "bow",
-      "relation": "cognate",
-      "evidence": [
-        {
-          "source": "gabra",
-          "locator": "Maltese lexeme 5200a370e36f237988000132"
-        }
-      ]
-    },
-    {
-      "id": "mt-rainbow",
-      "lang": "sem",
-      "form": "qawsalla",
-      "translit": "qawsalla",
-      "gloss": "rainbow",
-      "relation": "cognate",
-      "evidence": [
-        {
-          "source": "gabra",
-          "locator": "Maltese lexeme 522d864d6f3bad51370011b3"
-        }
-      ]
-    }
-  ],
-  "doctrine": [
-    {
-      "topic": "rainbow-covenant",
-      "statement": "God sets the rainbow in the clouds as the sign of his covenant with Noah and every living creature that a flood will never again destroy all flesh.",
-      "evidence": [
-        {
-          "ref": "Gen.9.11",
-          "role": "defining",
-          "note": "The promise concerns all flesh and the earth."
-        },
-        {
-          "ref": "Gen.9.16",
-          "role": "defining",
-          "note": "God sees the bow and remembers the everlasting covenant."
-        }
-      ]
-    }
-  ],
-  "note": "The corpus groups the bow and archer with קשש ‘gather stubble’. The final taw and the comparative forms support treating the bow family separately. The Maltese and Arabic rainbow compounds and the Mandaic expression show how the bow noun can be qualified to denote the sky phenomenon."
+  ]
 }

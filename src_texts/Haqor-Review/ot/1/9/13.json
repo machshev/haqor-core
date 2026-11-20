@@ -28,6 +28,33 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article_id": "qxt",
+            "base": "2bd835a62f1f7896070993c29fa23f247b249a09b9f820ad07a9815e210573a1",
+            "change": "Correct the occurrence’s root assignment from קשש to קשת and link it to the existing rainbow sense of קֶשֶׁת at word index 0.",
+            "definition": "A rainbow, the bow visible in the clouds.",
+            "evidence": "Genesis 9:13 identifies the bow in the cloud as the sign of God's covenant with the earth. The existing קשת article cites this verse under the rainbow sense of קֶשֶׁת."
+          },
+          "sense": "rainbow",
+          "word": 0
+        },
+        "evidence": "אֶת marks קַשְׁתִּי as the object of נָתַתִּי, “I have set.” God sets his bow בֶּעָנָן, “in the cloud,” and calls it לְאוֹת בְּרִית, “a sign of the covenant.” Its location identifies the bow as a rainbow.",
+        "gloss": "my bow",
+        "language": "he",
+        "lemma": "קֶשֶׁת",
+        "morph": "HNcfsc/Sp1cs",
+        "morphology": "Feminine singular common noun in the construct state with a first-person singular possessive suffix, “my.” The ת belongs to the noun קֶשֶׁת.",
+        "qualifier": "",
+        "root": "קשת",
+        "segments": "קַשְׁתִּ/י",
+        "sense": "rainbow"
+      },
+      "position": 1,
+      "surface": "קַשְׁתִּי"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "ntn",
           "word": 0
         },
