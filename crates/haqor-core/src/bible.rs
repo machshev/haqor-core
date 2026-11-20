@@ -4415,6 +4415,37 @@ impl Bible {
         Ok(None)
     }
 
+    /// Resolve the reviewed article attached to one concrete occurrence. This
+    /// preserves homograph distinctions that root-first lookup cannot retain.
+    pub fn haqor_lexicon_entry_at(
+        &self,
+        book: u8,
+        chapter: u8,
+        verse: u8,
+        position: u32,
+    ) -> rusqlite::Result<Option<(String, String)>> {
+        if !self.has_table("review_occurrence")? || !self.has_table("haqor_lexicon")? {
+            return Ok(None);
+        }
+        let id: Option<String> = self
+            .db
+            .query_row(
+                "SELECT entry_id FROM data.review_occurrence WHERE source IN ('ot','peshitta') AND ref=?1 AND position=?2 AND entry_id IS NOT NULL",
+                rusqlite::params![pack_ref(book, chapter, verse), position],
+                |row| row.get(0),
+            )
+            .optional()?;
+        id.map_or(Ok(None), |id| {
+            self.db
+                .query_row(
+                    "SELECT id,json FROM data.haqor_lexicon WHERE id=?1",
+                    [&id],
+                    |row| Ok((row.get(0)?, row.get(1)?)),
+                )
+                .optional()
+        })
+    }
+
     /// The Haqor name entry (`data/lexicon/names`) of the person
     /// `entity_id` (a `name_entity` id), as its id and JSON. `None` where
     /// Haqor has none, or the database was built without them.
