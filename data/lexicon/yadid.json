@@ -5,7 +5,7 @@
   "created": "2026-11-20",
   "updated": "2026-11-20",
   "gloss": "beloved",
-  "summary": "The root is associated with beloved.",
+  "summary": "ידיד describes one who is beloved. Psalm 60 asks Yahweh to save his beloved ones.",
   "words": [
     {
       "lemma": "יָדִיד",
@@ -23,6 +23,56 @@
             {
               "ref": "Psa.45.1",
               "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "יְדִדוּת",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "love, belovedness",
+      "bdb": [
+        "j.as.ac"
+      ],
+      "senses": [
+        {
+          "gloss": "love",
+          "definition": "Belovedness describes one held dear.",
+          "evidence": [
+            {
+              "ref": "Jer.12.7",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "יָדַד",
+      "pos": "verb",
+      "gloss": "cast",
+      "bdb": [
+        "j.ar.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "cast",
+          "senses": [
+            {
+              "gloss": "cast lots",
+              "definition": "People cast lots when dividing spoil.",
+              "evidence": [
+                {
+                  "ref": "Jol.4.3",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Oba.1.11"
+                }
+              ]
             }
           ]
         }
