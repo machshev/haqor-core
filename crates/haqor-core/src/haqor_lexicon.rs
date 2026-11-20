@@ -350,7 +350,8 @@ pub struct Stem {
 #[serde(deny_unknown_fields)]
 pub struct Sense {
     /// Kebab case, unique in the entry, so a sense of a sibling word can name
-    /// it in `kin`.
+    /// it in `kin` and a reviewed occurrence can name the sense it bears.
+    /// Required; kept as an option so the validator can name the missing one.
     #[serde(default)]
     pub id: Option<String>,
     pub gloss: String,
@@ -846,6 +847,10 @@ impl Checker<'_> {
             let at = format!("{at}.senses[{i}]");
             self.summary.senses += 1;
             self.text(&at, "gloss", &sense.gloss);
+            // Reviewed occurrences of the text name the sense they bear by it.
+            if sense.id.is_none() {
+                self.fault(&at, "a sense needs an `id`");
+            }
             self.text(&at, "definition", &sense.definition);
             self.tags(&at, &sense.tags);
             self.cognate_ids(&at, &sense.cognate_ids);
@@ -2128,6 +2133,7 @@ mod tests {
             "gender": "f",
             "gloss": "living being",
             "senses": [{
+                "id": "living-being",
                 "gloss": "living being",
                 "definition": "A creature that breathes.",
                 "evidence": [
@@ -2406,6 +2412,7 @@ mod tests {
             "gloss": "evening",
             "cognate_ids": ["ar-gharb"],
             "senses": [{
+                "id": "evening",
                 "gloss": "evening",
                 "definition": "The end of the day.",
                 "evidence": [{ "ref": "Gen.1.24" }]
@@ -2419,6 +2426,7 @@ mod tests {
                 "gloss": "stand surety",
                 "cognate_ids": ["ar-arabun"],
                 "senses": [{
+                    "id": "pledge",
                     "gloss": "pledge",
                     "definition": "Give a pledge.",
                     "evidence": [{ "ref": "Gen.2.7" }]
@@ -2433,6 +2441,7 @@ mod tests {
                 "stem": "hithpaal",
                 "gloss": "be mixed",
                 "senses": [{
+                    "id": "be-mixed",
                     "gloss": "be mixed",
                     "definition": "Be mixed together.",
                     "evidence": [{ "ref": "Gen.2.8" }]
@@ -2462,22 +2471,26 @@ mod tests {
                 "definition""#
                 ),
             )
-            .replace(
-                r#""gloss": "pledge","#,
-                r#""id": "pledge", "gloss": "pledge","#,
-            )
         };
         check(&with_kin("pledge")).unwrap();
         let error = check(&with_kin("dusk")).unwrap_err().to_string();
         assert!(error.contains("`kin` names no sense `dusk`"), "{error}");
-        let same = with_kin("evening").replace(
-            r#""gloss": "evening",
-                "kin""#,
-            r#""id": "evening", "gloss": "evening",
-                "kin""#,
-        );
+        // The evening sense is the same word's own (its id is `evening`).
+        let same = with_kin("evening");
         let error = check(&same).unwrap_err().to_string();
         assert!(error.contains("is a sense of the same word"), "{error}");
+    }
+
+    #[test]
+    fn every_sense_has_an_id() {
+        let without = EREV.replace(
+            r#""id": "pledge",
+"#,
+            "",
+        );
+        assert_ne!(without, EREV, "the fixture names its pledge sense");
+        let error = check(&without).unwrap_err().to_string();
+        assert!(error.contains("a sense needs an `id`"), "{error}");
     }
 
     #[test]
@@ -2533,18 +2546,13 @@ mod tests {
 
     #[test]
     fn a_kin_senses_cognates_do_not_count_against_it() {
-        let json = EREV
-            .replace(
-                r#""gloss": "be mixed",
+        let json = EREV.replace(
+            r#""gloss": "be mixed",
                     "definition""#,
-                r#""gloss": "be mixed",
+            r#""gloss": "be mixed",
                     "kin": ["pledge"],
                     "definition""#,
-            )
-            .replace(
-                r#""gloss": "pledge","#,
-                r#""id": "pledge", "gloss": "pledge","#,
-            );
+        );
         let entry: Entry = serde_json::from_str(&json).unwrap();
         let support = entry_support(&entry, &|_| None);
         let mixed = &support[2];

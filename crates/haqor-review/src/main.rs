@@ -147,6 +147,14 @@ enum Action {
         #[arg(long, default_value = "data/lexicon")]
         lexicon: PathBuf,
     },
+    /// Record the sense id on occurrences reviewed before it was required, where
+    /// the lexeme has one sense or the prose sense names one.
+    LinkSenses {
+        #[arg(long, default_value = "data/lexicon")]
+        lexicon: PathBuf,
+        #[arg(long)]
+        dry_run: bool,
+    },
     /// Record the machine-readable morphology on occurrences reviewed before it
     /// was required, from agreeing OSHB tags; reopen the rest.
     FillMorph,
@@ -407,6 +415,9 @@ fn main() -> Result<()> {
             lexicon,
         } => people::publish(&db, &src_texts, &data, &lexicon),
         Action::Export => export(&db),
+        Action::LinkSenses { lexicon, dry_run } => {
+            lexemes::link_senses(&src.join("Haqor-Review"), &lexicon, dry_run)
+        }
         Action::FillMorph => morph::fill(&mut db, &src.join("Haqor-Review"), Path::new(&data)),
         Action::LinkLexemes { lexicon } => {
             lexemes::link(&mut db, &src.join("Haqor-Review"), &lexicon)

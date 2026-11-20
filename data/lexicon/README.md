@@ -112,7 +112,7 @@ A verb has `stems` and no `senses`; any other word has `senses` and no `stems`.
 
 | Field | |
 |---|---|
-| `id` | Optional, kebab case, unique in the entry (`right-path-is`), for a sibling word's `kin` to name. |
+| `id` | Kebab case, unique in the entry (`right-path-is`). A sibling word's `kin` names a sense by it, and so does each reviewed occurrence of the text that bears it, so an id is never renamed or removed once given. |
 | `gloss` | A few words. |
 | `definition` | A sentence or two, drawn from the evidence. |
 | `evidence` | At least one scripture citation. Mark the verses whose use fixes the sense `"role": "defining"`. |

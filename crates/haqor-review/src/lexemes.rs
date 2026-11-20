@@ -248,3 +248,109 @@ mod tests {
         assert_eq!(resolve(&a, "greek", &json!({})), Ok(0));
     }
 }
+
+/// Normalized words of a gloss, for matching a reviewer's prose sense.
+fn words_of(s: &str) -> String {
+    s.to_lowercase()
+        .split(|c: char| !c.is_alphanumeric())
+        .filter(|w| !w.is_empty())
+        .collect::<Vec<_>>()
+        .join(" ")
+}
+
+/// The sense id a reviewed occurrence's prose `sense` names: the lexeme's only
+/// sense, or the one sense whose gloss the prose matches.
+fn sense_of(senses: &[Value], prose: &str) -> Option<String> {
+    let ids: Vec<(&str, String)> = senses
+        .iter()
+        .filter_map(|s| {
+            Some((
+                s["id"].as_str()?,
+                words_of(s["gloss"].as_str().unwrap_or("")),
+            ))
+        })
+        .collect();
+    if let [(id, _)] = ids.as_slice() {
+        return Some(id.to_string());
+    }
+    let prose = words_of(prose);
+    let matches = |pick: &dyn Fn(&str) -> bool| -> Option<String> {
+        let found: Vec<&str> = ids
+            .iter()
+            .filter(|(_, g)| pick(g))
+            .map(|(id, _)| *id)
+            .collect();
+        match found.as_slice() {
+            [one] => Some(one.to_string()),
+            _ => None,
+        }
+    };
+    matches(&|g| !g.is_empty() && g == prose)
+        .or_else(|| matches(&|g| !g.is_empty() && prose.contains(g)))
+        .or_else(|| matches(&|g| !prose.is_empty() && g.contains(&prose)))
+}
+
+/// Record `entry.sense` on reviewed occurrences from before it was required,
+/// where the lexeme has one sense or the prose sense names one. The rest keep
+/// their prose until their word is next reviewed.
+pub fn link_senses(review: &Path, lexicon: &Path, dry_run: bool) -> Result<()> {
+    let mut articles: BTreeMap<String, Value> = BTreeMap::new();
+    for (id, text) in haqor_lexicon::read_entry_texts(lexicon)? {
+        articles.insert(id, serde_json::from_str(&text)?);
+    }
+    let mut paths = Vec::new();
+    if review.try_exists()? {
+        files(review, &mut paths)?;
+    }
+    paths.sort();
+    let (mut linked, mut open) = (0, 0);
+    for path in paths {
+        let mut verse: Value = serde_json::from_str(&fs::read_to_string(&path)?)?;
+        if verse["source"] == "greek" {
+            continue;
+        }
+        let mut changed = false;
+        for word in verse["words"].as_array_mut().into_iter().flatten() {
+            let analysis = &mut word["analysis"];
+            let entry = &analysis["entry"];
+            if entry.get("sense").is_some() {
+                continue;
+            }
+            let (Some(id), Some(index)) = (
+                entry["existing"]
+                    .as_str()
+                    .or(entry["draft"]["article_id"].as_str()),
+                entry["word"].as_u64(),
+            ) else {
+                continue;
+            };
+            // Name articles have no senses; their occurrences bear none.
+            let Some(lexeme) = articles.get(id).map(|a| &a["words"][index as usize]) else {
+                continue;
+            };
+            let senses = crate::jobs::sense_list(lexeme);
+            if senses.is_empty() {
+                continue;
+            }
+            match sense_of(&senses, analysis["sense"].as_str().unwrap_or("")) {
+                Some(sense) => {
+                    analysis["entry"]["sense"] = json!(sense);
+                    changed = true;
+                    linked += 1;
+                }
+                None => open += 1,
+            }
+        }
+        if changed && !dry_run {
+            let text = serde_json::to_string_pretty(&verse)? + "\n";
+            let tmp = path.with_extension(format!("{}.tmp", std::process::id()));
+            fs::write(&tmp, text)?;
+            fs::rename(tmp, &path)?;
+        }
+    }
+    println!(
+        "{} the sense of {linked} reviewed occurrences. {open} name no single sense of their lexeme; they keep their prose sense.",
+        if dry_run { "Would link" } else { "Linked" }
+    );
+    Ok(())
+}

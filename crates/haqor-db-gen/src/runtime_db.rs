@@ -453,14 +453,16 @@ pub fn generate_runtime(
 }
 
 /// Columns the reviewed analysis of a word adds to `word_info` and `nt_word`.
-const REVIEW_COLUMNS: [(&str, &str, &str); 12] = [
+const REVIEW_COLUMNS: [(&str, &str, &str); 14] = [
     ("word_info", "entry_id", "TEXT"),
     ("word_info", "lexeme", "INTEGER"),
+    ("word_info", "sense_id", "TEXT"),
     ("word_info", "base_id", "INTEGER"),
     ("nt_word", "root", "TEXT"),
     ("nt_word", "gloss", "TEXT"),
     ("nt_word", "entry_id", "TEXT"),
     ("nt_word", "lexeme", "INTEGER"),
+    ("nt_word", "sense_id", "TEXT"),
     ("nt_word", "cell_id", "INTEGER"),
     ("greek_word", "reviewed", "INTEGER"),
     ("greek_word", "base_lemma_id", "INTEGER"),
@@ -626,7 +628,7 @@ pub(crate) fn apply_reviews(
     }
     if peshitta {
         db.execute_batch(
-            "UPDATE nt_word SET root = NULL, gloss = NULL, entry_id = NULL, lexeme = NULL, cell_id = NULL
+            "UPDATE nt_word SET root = NULL, gloss = NULL, entry_id = NULL, lexeme = NULL, sense_id = NULL, cell_id = NULL
                WHERE root IS NOT NULL OR gloss IS NOT NULL OR entry_id IS NOT NULL OR cell_id IS NOT NULL",
         )?;
     }
@@ -671,7 +673,7 @@ pub(crate) fn apply_reviews(
     } else {
         None
     };
-    let mut cells = if ot || peshitta {
+    let mut cells = if (ot || peshitta) && has("morph_cell")? {
         Some(CellIds::new(db)?)
     } else {
         None
@@ -755,6 +757,9 @@ pub(crate) fn apply_reviews(
                 .as_str()
                 .or_else(|| analysis["entry"]["draft"]["article_id"].as_str());
             let lexeme = analysis["entry"]["word"].as_i64();
+            let sense_id = analysis["entry"]["sense"]
+                .as_str()
+                .filter(|s| !s.is_empty());
             // The reviewed OSHB reading over the word's segments (Hebrew, Aramaic
             // and Syriac), or the Greek Robinson code.
             let reading = match (text("morph"), analysis["segments"].as_str()) {
@@ -793,17 +798,17 @@ pub(crate) fn apply_reviews(
                         Some(g) => Some(glosses.as_mut().unwrap().id(g)?),
                         None => base_gloss,
                     };
-                    let (cell_id, flags) = match &reading {
-                        Some(word) => (
-                            cells.as_mut().unwrap().id(&MorphCell::of(word))?,
+                    let (cell_id, flags) = match (&reading, cells.as_mut()) {
+                        (Some(word), Some(cells)) => (
+                            cells.id(&MorphCell::of(word))?,
                             if word.vav_con { FLAG_VAV_CON } else { 0 }
                                 | if word.is_name { FLAG_IS_NAME } else { 0 },
                         ),
-                        None => (cell_id, flags),
+                        _ => (cell_id, flags),
                     };
                     db.execute(
-                        "INSERT INTO word_info(surface_id, root, gloss_id, cell_id, flags, entry_id, lexeme, base_id)
-                         VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8)",
+                        "INSERT INTO word_info(surface_id, root, gloss_id, cell_id, flags, entry_id, lexeme, sense_id, base_id)
+                         VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9)",
                         params![
                             surface_id,
                             text("root").map(str::to_owned).unwrap_or(base_root),
@@ -812,6 +817,7 @@ pub(crate) fn apply_reviews(
                             flags | FLAG_REVIEWED,
                             entry_id,
                             lexeme,
+                            sense_id,
                             base_id
                         ],
                     )?;
@@ -821,14 +827,14 @@ pub(crate) fn apply_reviews(
                     )?;
                 }
                 "peshitta" if peshitta => {
-                    let cell_id = match &reading {
-                        Some(word) => Some(cells.as_mut().unwrap().id(&MorphCell::of(word))?),
-                        None => None,
+                    let cell_id = match (&reading, cells.as_mut()) {
+                        (Some(word), Some(cells)) => Some(cells.id(&MorphCell::of(word))?),
+                        _ => None,
                     };
                     db.execute(
-                        "UPDATE nt_word SET root = ?3, gloss = ?4, entry_id = ?5, lexeme = ?6, cell_id = ?7
+                        "UPDATE nt_word SET root = ?3, gloss = ?4, entry_id = ?5, lexeme = ?6, cell_id = ?7, sense_id = ?8
                          WHERE ref = ?1 AND ord = ?2",
-                        params![reference, position, text("root"), gloss, entry_id, lexeme, cell_id],
+                        params![reference, position, text("root"), gloss, entry_id, lexeme, cell_id, sense_id],
                     )?;
                 }
                 "greek" if greek => {
@@ -946,10 +952,11 @@ CREATE TABLE word_info(
     cell_id    INTEGER NOT NULL,
     flags      INTEGER NOT NULL,
     -- A reviewed analysis (flags & 4) of one word: its Haqor lexicon article,
-    -- the lexeme (its index in the article's `words`), and the generated
-    -- analysis it refines.
+    -- the lexeme (its index in the article's `words`), the sense it bears (a
+    -- sense `id` of that lexeme), and the generated analysis it refines.
     entry_id   TEXT,
     lexeme     INTEGER,
+    sense_id   TEXT,
     base_id    INTEGER
 );
 
@@ -1137,6 +1144,7 @@ CREATE TABLE nt_word(
     gloss    TEXT,
     entry_id TEXT,
     lexeme   INTEGER,
+    sense_id TEXT,
     -- The reviewed morphology (morph_cell).
     cell_id  INTEGER,
     PRIMARY KEY(ref, ord)

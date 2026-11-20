@@ -90,6 +90,11 @@ pub fn stage(tx: &Connection, j: &Job, answer: &mut Value, packet: &Value) -> Re
             article["words"].get(index as usize).is_some_and(covers),
             "draft word {index} is not the resolved word and root"
         );
+        crate::jobs::check_sense(
+            answer,
+            false,
+            &json!(crate::jobs::sense_list(&article["words"][index as usize])),
+        )?;
     } else {
         use unicode_normalization::UnicodeNormalization;
         ensure!(
@@ -98,6 +103,7 @@ pub fn stage(tx: &Connection, j: &Job, answer: &mut Value, packet: &Value) -> Re
                 .is_some_and(|s| s.nfc().eq(answer["lemma"].as_str().unwrap_or("").chars())),
             "draft name differs from lemma"
         );
+        crate::jobs::check_sense(answer, true, &Value::Null)?;
         ensure!(
             index == 0,
             "a personal-name article holds one lexeme: word must be 0"
@@ -333,6 +339,19 @@ pub fn moved_lexeme(current: &str, draft: &Value) -> Result<Option<String>> {
         if after.get(index).map(identity) != Some((lemma.clone(), lang.clone(), pos.clone())) {
             return Ok(Some(format!(
                 "The draft moves or removes word {index} ({lemma}, {lang}, {pos}) of the current article. Reviewed occurrences address lexemes by index: keep every existing word at its index and append new lexemes at the end."
+            )));
+        }
+        // Occurrences name the sense they bear by id, so a lexeme keeps them all.
+        let ids = |w: &Value| -> Vec<String> {
+            crate::jobs::sense_list(w)
+                .iter()
+                .filter_map(|s| s["id"].as_str().map(str::to_owned))
+                .collect()
+        };
+        let kept = ids(&after[index]);
+        if let Some(id) = ids(word).into_iter().find(|id| !kept.contains(id)) {
+            return Ok(Some(format!(
+                "The draft removes or renames sense `{id}` of word {index} ({lemma}). Reviewed occurrences name the sense they bear by id: keep every existing sense id in its word."
             )));
         }
     }

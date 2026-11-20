@@ -51,6 +51,23 @@ impl Job {
     }
 }
 
+/// A lexeme's senses, in its stems and nested senses, as `{id, gloss, stem}`:
+/// what a worker chooses `entry.sense` from.
+pub fn sense_list(word: &Value) -> Vec<Value> {
+    fn walk(senses: &Value, stem: &Value, out: &mut Vec<Value>) {
+        for s in senses.as_array().into_iter().flatten() {
+            out.push(json!({"id": s["id"], "gloss": s["gloss"], "stem": stem}));
+            walk(&s["senses"], stem, out);
+        }
+    }
+    let mut out = Vec::new();
+    walk(&word["senses"], &Value::Null, &mut out);
+    for stem in word["stems"].as_array().into_iter().flatten() {
+        walk(&stem["senses"], &stem["stem"], &mut out);
+    }
+    out
+}
+
 #[derive(Default)]
 pub struct Catalog {
     pub people: Option<crate::people::People>,
@@ -80,7 +97,7 @@ impl Catalog {
                 let root = w["root"].as_str().or(e["root"].as_str()).unwrap_or("");
                 let lemma = w["lemma"].as_str().unwrap_or("");
                 let summary = json!({"entry":e["id"],"word":index,"revision":revision,"name":e.get("name").is_some(),"root":root,"lemma":lemma,"language":w["lang"].as_str().unwrap_or("he"),
-                    "pos":w["pos"],"gloss":w["gloss"],"senses":w["senses"].as_array().into_iter().flatten().map(|s| &s["gloss"]).collect::<Vec<_>>()});
+                    "pos":w["pos"],"gloss":w["gloss"],"senses":sense_list(&w)});
                 for k in BTreeSet::from([fold_consonants(root), fold_consonants(lemma)]) {
                     if !k.is_empty() {
                         catalog.words.entry(k).or_default().push(summary.clone());
@@ -282,8 +299,8 @@ pub struct Word {
     evidence: String,
     entry: Value,
 }
-const WORD: &str = r#"Analyse only the marked occurrence in its verse. Return one JSON object with string fields language (he, arc, syc, grc), lemma (pointed dictionary form, Hebrew script for Semitic), qualifier (empty unless needed to distinguish a homograph, e.g. noun), root (Haqor consonantal root; empty if unknown), morph, segments, morphology, sense, gloss, evidence (explain using the text), and entry. For entry use {"existing":"article id","word":N} when a candidate covers this word and sense, where N is that candidate's word index: the position of the lexeme in the article's words list. Otherwise provide {"draft":{"definition":"...","evidence":"...","change":"..."},"word":N} proposing the new or corrected lexical content, where N is the index of this occurrence's lexeme in draft.article.words (0 for a personal-name or Greek article). Existing lexemes keep their indices: never reorder or remove words in an article; add a new lexeme at the end of its words list. If a previous analysis covers exactly your language, lemma, qualifier, root and sense, copy those fields and return entry {"reuse":[ref,pos]} using its at coordinates. For a new or amended Semitic entry include draft.article, the COMPLETE draft Haqor JSON article, following data/lexicon/README.md, with its lemma, root, senses and verse evidence. For a personal-name article preserve its existing people list; a new article may leave people empty until verse review assigns its bearers. Read the existing article before editing it. Use the candidate revision as draft.base, or null for a new file. If you discover an existing article outside the listed candidates use its SHA256 file digest. For Greek use an existing Greek dictionary candidate if it covers this sense, or provide draft.definition, draft.evidence and draft.change to update the shared Greek entry. Use Greek script for Greek. Treat source tags and candidate roots as evidence to check. If the occurrence cannot be assigned responsibly, return only {"unresolved":"explain the competing readings and what evidence is missing"}. morph is the machine-readable morphology. For Hebrew, Aramaic and Syriac give an OSHB morphology code: H for Hebrew or A for Aramaic and Syriac, then one segment per part of the word separated by /, prefixes first and pronominal suffixes last (e.g. HC/Vqw3ms, HR/Ncfsa, HNcmpc/Sp3ms). The packet's source_analysis.oshb_morph is the OSHB reading: check it and correct it where the text requires. segments is the word split at / into the same parts as the code (e.g. וַ/יְבָרֶךְ); a word of one part is written whole. For Greek give the Robinson code (e.g. V-AAI-3S) as in source_analysis.grammar, and segments empty. morphology explains the reading in prose. Prefixes and suffixes belong in morphology. Use read-only local reference material when needed."#;
-const VERSE: &str = r#"Review every word's gloss in context, then read the whole verse in continuous English. Return {"translation":"...","glosses":[{"position":0,"gloss":"..."}]} with exactly one gloss per listed position. In translation encode English spans as [English|position] (multiple positions comma-separated only when necessary), supplied words in braces. Account for every source position. Preserve the project's translation conventions. If a word analysis needs changing first, instead return {"rework":[{"position":0,"reason":"..."}]}. Give precise reasons and return only the affected positions. On every completed verse include entities: an array of {position,key,evidence} for EACH explicit person or place name. Empty means no such names. Match the actual bearer using verse context, family, role and location. Check all same-name candidates; source tags are evidence. Reuse the existing bearer key wherever supported, including previous proposals. If a bearer is missing, add new:{name,kind,description} to its mention, with kind person or place and a description distinguishing it from homonyms. Use a stable Name@Book.Chapter.Verse key anchored to evidence; when the same verse introduces two namesakes append # plus a distinguishing role. Distinct bearers may have identical names and dictionary forms. Preserve uncertain identity for review by returning {"unresolved":"reason"} rather than inventing a bearer. Do not identify mere pronouns or ordinary nouns as names."#;
+const WORD: &str = r#"Analyse only the marked occurrence in its verse. Return one JSON object with string fields language (he, arc, syc, grc), lemma (pointed dictionary form, Hebrew script for Semitic), qualifier (empty unless needed to distinguish a homograph, e.g. noun), root (Haqor consonantal root; empty if unknown), morph, segments, morphology, sense, gloss, evidence (explain using the text), and entry. For entry use {"existing":"article id","word":N,"sense":"sense id"} when a candidate covers this word and sense, where N is that candidate's word index (the position of the lexeme in the article's words list) and sense is the id of the candidate's sense this occurrence bears. Otherwise provide {"draft":{"definition":"...","evidence":"...","change":"..."},"word":N} proposing the new or corrected lexical content, where N is the index of this occurrence's lexeme in draft.article.words (0 for a personal-name or Greek article), with "sense": the id of the sense it bears in that lexeme (omit it for a personal name; for Greek, the sense name). Existing lexemes keep their indices and existing senses keep their ids: never reorder or remove words, never rename or remove a sense id; add a new lexeme at the end of its words list, and give every new sense a new kebab-case id. If a previous analysis covers exactly your language, lemma, qualifier, root and sense, copy those fields and return entry {"reuse":[ref,pos]} using its at coordinates. For a new or amended Semitic entry include draft.article, the COMPLETE draft Haqor JSON article, following data/lexicon/README.md, with its lemma, root, senses and verse evidence. For a personal-name article preserve its existing people list; a new article may leave people empty until verse review assigns its bearers. Read the existing article before editing it. Use the candidate revision as draft.base, or null for a new file. If you discover an existing article outside the listed candidates use its SHA256 file digest. For Greek use an existing Greek dictionary candidate if it covers this sense, or provide draft.definition, draft.evidence and draft.change to update the shared Greek entry. Use Greek script for Greek. Treat source tags and candidate roots as evidence to check. If the occurrence cannot be assigned responsibly, return only {"unresolved":"explain the competing readings and what evidence is missing"}. morph is the machine-readable morphology. For Hebrew, Aramaic and Syriac give an OSHB morphology code: H for Hebrew or A for Aramaic and Syriac, then one segment per part of the word separated by /, prefixes first and pronominal suffixes last (e.g. HC/Vqw3ms, HR/Ncfsa, HNcmpc/Sp3ms). The packet's source_analysis.oshb_morph is the OSHB reading: check it and correct it where the text requires. segments is the word split at / into the same parts as the code (e.g. וַ/יְבָרֶךְ); a word of one part is written whole. For Greek give the Robinson code (e.g. V-AAI-3S) as in source_analysis.grammar, and segments empty. morphology explains the reading in prose. Prefixes and suffixes belong in morphology. Use read-only local reference material when needed."#;
+const VERSE: &str = r#"Review every word's gloss in context, then read the whole verse in continuous English. Return {"translation":"...","glosses":[{"position":0,"gloss":"..."}]} with exactly one gloss per listed position. In translation encode English spans as [English|position] (multiple positions comma-separated only when necessary), supplied words in braces. Account for every source position. Preserve the project's translation conventions. If a word analysis needs changing first, instead return {"rework":[{"position":0,"reason":"..."}]}. Give precise reasons and return only the affected positions. On every completed verse include entities: an array of {position,key,evidence} for EACH explicit person or place name, and each name of God or of another named divine being, which the candidates hold as existing records (kind other). Empty means no such names. Match the actual bearer using verse context, family, role and location. Check all same-name candidates; source tags are evidence. Reuse the existing bearer key wherever supported, including previous proposals. If a bearer is missing, add new:{name,kind,description} to its mention, with kind person or place and a description distinguishing it from homonyms. Use a stable Name@Book.Chapter.Verse key anchored to evidence; when the same verse introduces two namesakes append # plus a distinguishing role. Distinct bearers may have identical names and dictionary forms. Preserve uncertain identity for review by returning {"unresolved":"reason"} rather than inventing a bearer. Do not identify mere pronouns or ordinary nouns as names."#;
 pub fn prompt(packet: &Value) -> String {
     format!(
         "{}\nUse the published analysis or translation in this packet as the current edition when making corrections. Preserve prior supported content. Return JSON only. Source packet:\n{}",
@@ -322,6 +339,33 @@ fn check_morph(word: &Word, packet: &Value) -> Result<()> {
     if let Some(error) = haqor_core::bible::oshb_parts_error(&word.morph, &word.segments, surface) {
         bail!("morph: {error}");
     }
+    Ok(())
+}
+
+/// The sense an occurrence bears, `entry.sense`: one of its lexeme's sense ids
+/// (`{id}` rows, or a Greek entry's `{sense}` names); none for a personal name.
+pub fn check_sense(answer: &Value, name: bool, senses: &Value) -> Result<()> {
+    let sense = answer["entry"]["sense"].as_str().filter(|s| !s.is_empty());
+    if name {
+        ensure!(
+            sense.is_none(),
+            "a personal name bears no sense: omit entry.sense"
+        );
+        return Ok(());
+    }
+    let ids: Vec<&str> = senses
+        .as_array()
+        .into_iter()
+        .flatten()
+        .filter_map(|s| s["id"].as_str().or(s["sense"].as_str()))
+        .collect();
+    let sense = sense.with_context(|| {
+        format!("entry needs sense: the id of the sense this occurrence bears, one of {ids:?}")
+    })?;
+    ensure!(
+        ids.contains(&sense),
+        "sense {sense:?} is not a sense of this lexeme; its senses are {ids:?}"
+    );
     Ok(())
 }
 
@@ -488,6 +532,7 @@ pub fn accept(
                             lexeme["lemma"], lexeme["language"], lexeme["root"]
                         )
                     })?;
+                check_sense(&answer, candidate["name"] == true, &candidate["senses"])?;
                 tx.execute(
                     "INSERT OR REPLACE INTO dependency VALUES(?,?,?,?,?,?)",
                     params![
@@ -580,4 +625,31 @@ fn position(item: &Value, positions: &BTreeSet<u16>) -> Result<u16> {
         bail!("unknown position {p}")
     }
     Ok(p)
+}
+
+#[cfg(test)]
+mod sense_tests {
+    use super::*;
+
+    #[test]
+    fn an_occurrence_names_one_of_its_lexemes_senses() {
+        let lexeme = json!({"senses":[{"id":"evening","gloss":"evening"}],
+            "stems":[{"stem":"qal","senses":[{"id":"pledge","gloss":"pledge",
+                "senses":[{"id":"surety","gloss":"stand surety"}]}]}]});
+        let senses = json!(sense_list(&lexeme));
+        assert_eq!(senses.as_array().unwrap().len(), 3);
+        assert_eq!(senses[1]["stem"], "qal");
+        let answer = |sense: Value| json!({"entry":{"existing":"erev","word":0,"sense":sense}});
+        check_sense(&answer(json!("surety")), false, &senses).unwrap();
+        let error = check_sense(&answer(json!("dusk")), false, &senses).unwrap_err();
+        assert!(
+            error.to_string().contains("not a sense of this lexeme"),
+            "{error}"
+        );
+        assert!(check_sense(&answer(Value::Null), false, &senses).is_err());
+        // A personal name bears none; Greek names its senses by key.
+        check_sense(&answer(Value::Null), true, &Value::Null).unwrap();
+        assert!(check_sense(&answer(json!("surety")), true, &Value::Null).is_err());
+        check_sense(&answer(json!("word")), false, &json!([{"sense":"word"}])).unwrap();
+    }
 }

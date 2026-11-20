@@ -201,7 +201,7 @@ impl People {
             .filter_map(|k| {
                 self.records
                     .get(&k)
-                    .filter(|b| matches!(b.kind.as_str(), "person" | "place"))
+                    .filter(|b| matches!(b.kind.as_str(), "person" | "place" | "other"))
                     .map(|b| (k, b))
             })
             .collect();
@@ -256,6 +256,10 @@ pub fn validate(db: &Connection, j: &Job, answer: &mut Value, packet: &Value) ->
                     .any(|w| w["position"] == pos),
             "invalid or repeated entity position"
         );
+        // A worker may spell an absent record as null.
+        if m.get("new").is_some_and(Value::is_null) {
+            m.as_object_mut().context("invalid entity")?.remove("new");
+        }
         let key = m["key"].as_str().context("entity needs a key")?.to_owned();
         ensure!(
             m["evidence"].as_str().is_some_and(|s| !s.trim().is_empty()),
@@ -263,7 +267,7 @@ pub fn validate(db: &Connection, j: &Job, answer: &mut Value, packet: &Value) ->
         );
         let context = &packet["people_and_places"];
         let known: bool = db.query_row(
-            "SELECT EXISTS(SELECT 1 FROM known_bearer WHERE key=? AND kind IN ('person','place'))",
+            "SELECT EXISTS(SELECT 1 FROM known_bearer WHERE key=? AND kind IN ('person','place','other'))",
             [&key],
             |r| r.get(0),
         )?;
