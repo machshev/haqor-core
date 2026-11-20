@@ -45,6 +45,7 @@ pub mod resolve;
 /// People, places and word senses (STEP Bible's TIPNR and TBESH, with
 /// OpenBible.info's geocoding), as `haqor.db` stores them.
 pub mod names;
+pub mod reviewed_names;
 
 /// Verse syntax trees (MACULA Hebrew), as `haqor.db` stores them.
 pub mod syntax;

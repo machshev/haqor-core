@@ -62,3 +62,9 @@ The queue contains the detailed work and staged articles. For a consistent backu
 ```sh
 sqlite3 .haqor-review/progress.sqlite ".backup '/tmp/haqor-review-backup.sqlite'"
 ```
+
+## People and places
+
+The verse reviewer identifies each explicit person or place at its source position. The packet includes existing occurrence tags, candidate records for matching names, and descriptions that distinguish namesakes. The reviewer selects a bearer by its stable record key and gives evidence from the verse. If the dataset lacks the bearer, the reviewer proposes a new person or place with a distinguishing description. An unresolved identity keeps the verse open. When resuming a queue created before identity review, the harness reopens completed verses and retains their word analyses.
+
+Run `haqor-review apply-names` after verse review, followed by `haqor-review apply-articles` to publish staged lexicon articles. The first command writes the source overlay in `src_texts/Haqor-Names/review.json` and adds newly identified bearers to existing personal-name articles. Rebuilding with `haqor db gen-names` applies the overlay to the runtime database. `haqor db gen-greek` also honours the reviewed Greek assignments on subsequent builds. Rebuild the Haqor lexicon with `haqor db gen-haqor-lexicon` for updated name articles. Peshitta and Greek positions follow their respective source texts.

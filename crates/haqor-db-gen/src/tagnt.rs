@@ -1181,6 +1181,29 @@ pub fn build_greek(db: &Connection, src_texts: &Path) -> Result<GreekSummary> {
             insert.execute(params![id, value])?;
         }
     }
+    tx.execute_batch("DROP TABLE IF EXISTS reviewed_greek_baseline")?;
+    let reviewed = haqor_core::reviewed_names::ReviewedNames::read(src_texts)?;
+    if reviewed.verses.contains_key("greek") {
+        let mut ids = HashMap::new();
+        let mut scoped = std::collections::HashSet::new();
+        for (key, (id, kind, _)) in haqor_core::haqor_lexicon::people_records(src_texts)? {
+            if matches!(kind.as_str(), "person" | "place") {
+                scoped.insert(u32::try_from(id)?);
+            }
+            ids.insert(key, u32::try_from(id)?);
+        }
+        if crate::translation::has_table(&tx, "name_record_key")? {
+            for row in tx
+                .prepare("SELECT key,entity_id,kind FROM name_record_key JOIN name_entity USING(entity_id)")?
+                .query_map([], |r| Ok((r.get::<_, String>(0)?, r.get::<_, u32>(1)?,r.get::<_,String>(2)?)))?
+            {
+                let (key, id, kind) = row?;
+                if matches!(kind.as_str(),"person"|"place"){scoped.insert(id);}
+                ids.insert(key, id);
+            }
+        }
+        crate::reviewed_names::apply(&tx, &reviewed, "greek", &ids, &scoped)?;
+    }
     tx.commit()?;
     crate::greek_lexicon::build(db, &dir)?;
     // The Peshitta's words' Greek equivalents, where the database has both.

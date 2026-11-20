@@ -30,6 +30,7 @@ mod prefilter;
 mod proper_names;
 mod prophecy;
 mod quotations;
+mod reviewed_names;
 mod runtime_db;
 mod sedra;
 mod sedra_db;

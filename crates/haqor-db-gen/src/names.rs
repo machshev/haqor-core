@@ -540,6 +540,8 @@ pub fn build_names(
         .collect::<serde_json::Result<_>>()
         .context("reading the prepared TIPNR records")?;
     let splits = amend_records(place_overrides, &mut records)?;
+    let reviewed = haqor_core::reviewed_names::ReviewedNames::read(src_texts)?;
+    crate::reviewed_names::extend(&mut records, &reviewed)?;
     let places = crate::geocoding::read_prepared(src_texts)?;
     let images = crate::geocoding::read_images(src_texts)?;
     let keys: HashSet<String> = records.iter().map(|r| text(r, "key")).collect();
@@ -792,6 +794,51 @@ pub fn build_names(
             "{} places {key}, which no TIPNR place record has",
             place_overrides.display()
         );
+    }
+    let ids: HashMap<String, u32> = records
+        .iter()
+        .map(|r| {
+            Ok((
+                text(r, "key"),
+                u32::try_from(r["id"].as_u64().context("missing entity id")?)?,
+            ))
+        })
+        .collect::<Result<_>>()?;
+    let scoped: HashSet<u32> = records
+        .iter()
+        .filter(|r| matches!(r["kind"].as_str(), Some("person" | "place")))
+        .map(|r| ids[&text(r, "key")])
+        .collect();
+    tx.execute_batch("DROP TABLE IF EXISTS reviewed_name_verse; CREATE TABLE reviewed_name_verse(ref INTEGER PRIMARY KEY);")?;
+    for edition in ["ot", "peshitta"] {
+        if let Some(verses) = reviewed.verses.get(edition) {
+            let mut add = tx.prepare("INSERT INTO reviewed_name_verse VALUES(?)")?;
+            for r in verses.keys() {
+                add.execute([r])?;
+            }
+        }
+        crate::reviewed_names::apply(&tx, &reviewed, edition, &ids, &scoped)?;
+    }
+    if crate::translation::has_table(&tx, "greek_word")? {
+        crate::reviewed_names::apply(&tx, &reviewed, "greek", &ids, &scoped)?;
+    }
+    if !reviewed.verses.is_empty() {
+        tx.execute_batch("CREATE TEMP TABLE reviewed_counts AS SELECT entity_id,count(*) AS n FROM word_name WHERE ref < (40<<16) GROUP BY entity_id;
+            CREATE UNIQUE INDEX temp.reviewed_counts_id ON reviewed_counts(entity_id);
+            UPDATE name_entity SET occurrences=coalesce((SELECT n FROM reviewed_counts WHERE reviewed_counts.entity_id=name_entity.entity_id),0);
+            DROP TABLE reviewed_counts;")?;
+        summary.name_words =
+            tx.query_row("SELECT count(*) FROM word_name", [], |r| r.get::<_, u32>(0))? as usize;
+        summary.name_verses = tx.query_row("SELECT count(*) FROM name_verse", [], |r| {
+            r.get::<_, u32>(0)
+        })? as usize;
+    }
+    tx.execute_batch("DROP TABLE IF EXISTS name_record_key; CREATE TABLE name_record_key(key TEXT PRIMARY KEY,entity_id INTEGER UNIQUE NOT NULL) WITHOUT ROWID;")?;
+    {
+        let mut insert = tx.prepare("INSERT INTO name_record_key VALUES(?,?)")?;
+        for (key, id) in &ids {
+            insert.execute(params![key, id])?;
+        }
     }
     let place_keys: HashMap<String, (u32, String)> = records
         .iter()
@@ -1047,6 +1094,10 @@ mod tests {
              INSERT INTO surface SELECT surface_id, text FROM src.surface;
              CREATE TABLE verse(ref INTEGER PRIMARY KEY);
              INSERT INTO verse SELECT ref FROM src.verse;
+             CREATE TABLE nt_word AS SELECT ref,ord,word_id FROM src.nt_word;
+             CREATE INDEX nt_positions ON nt_word(ref,ord);
+             CREATE TABLE syriac_word AS SELECT word_id,word,vocalised FROM src.syriac_word;
+             CREATE UNIQUE INDEX syriac_words ON syriac_word(word_id);
              DETACH DATABASE src;",
         )
         .unwrap();

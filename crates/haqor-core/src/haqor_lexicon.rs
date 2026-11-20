@@ -252,6 +252,20 @@ pub fn people_records(src_texts: &Path) -> Result<HashMap<String, (i64, String, 
             out.insert(key.to_string(), (id, kind, category));
         }
     }
+    for (key, record) in crate::reviewed_names::ReviewedNames::read(src_texts)?.records {
+        anyhow::ensure!(
+            out.insert(
+                key.clone(),
+                (
+                    record.id.into(),
+                    record.bearer.kind.clone(),
+                    record.bearer.kind
+                )
+            )
+            .is_none(),
+            "duplicate reviewed name key {key}"
+        );
+    }
     Ok(out)
 }
 

@@ -3,6 +3,7 @@ mod articles;
 mod chat;
 mod inventory;
 mod jobs;
+mod people;
 use anyhow::{Context, Result, bail, ensure};
 use clap::{Parser, Subcommand, ValueEnum};
 use jobs::Catalog;
@@ -72,6 +73,10 @@ enum Action {
         model: Option<String>,
         #[arg(long, default_value = "data/lexicon")]
         lexicon: PathBuf,
+        #[arg(long, default_value = "data")]
+        data: PathBuf,
+        #[arg(long, default_value = "src_texts")]
+        src_texts: PathBuf,
     },
     /// Apply verse-reviewed Semitic draft articles through Haqor's lexicon validator.
     ApplyArticles {
@@ -79,6 +84,15 @@ enum Action {
         lexicon: PathBuf,
         #[arg(long, default_value = "data")]
         data: PathBuf,
+    },
+    /// Publish reviewed occurrences and new people or places into source data.
+    ApplyNames {
+        #[arg(long, default_value = "data")]
+        data: PathBuf,
+        #[arg(long, default_value = "src_texts")]
+        src_texts: PathBuf,
+        #[arg(long, default_value = "data/lexicon")]
+        lexicon: PathBuf,
     },
     Status,
     /// Make failed jobs eligible for a fresh set of attempts.
@@ -137,6 +151,7 @@ fn main() -> Result<()> {
     if writing {
         db.execute_batch("PRAGMA journal_mode=WAL; PRAGMA foreign_keys=ON;")?;
         db.execute_batch(jobs::SCHEMA)?;
+        db.execute_batch(people::SCHEMA)?;
         // The exclusive OS lock disappears on process exit. Only this coordinator writes results.
         db.execute(
             "UPDATE job SET state='ready', attempts=max(0,attempts-1) WHERE state='running'",
@@ -167,6 +182,8 @@ fn main() -> Result<()> {
             max_attempts,
             worker,
             chat_endpoint,
+            data,
+            src_texts,
             model,
             lexicon,
         } => {
@@ -174,7 +191,10 @@ fn main() -> Result<()> {
                 max_agents > 0 && max_attempts > 0,
                 "limits must be positive"
             );
-            let catalog = Catalog::load(&lexicon)?;
+            let mut catalog = Catalog::load(&lexicon)?;
+            let people = people::People::load(&src_texts, &data)?;
+            people.refresh(&mut db)?;
+            catalog.people = Some(people);
             articles::refresh_dependencies(&mut db, &catalog.revisions)?;
             run(&mut db, &catalog, max_agents, max_attempts, &|packet| {
                 if let Some(endpoint) = &chat_endpoint {
@@ -192,9 +212,9 @@ fn main() -> Result<()> {
             if let Some(evidence) = evidence {
                 ensure!(
                     !evidence.trim().is_empty(),
-                    "supply evidence for unresolved words"
+                    "supply evidence for unresolved review jobs"
                 );
-                println!("Reopened {} unresolved words.",db.execute("UPDATE job SET state='ready',attempts=0,feedback=feedback||char(10)||? WHERE state='unresolved'",[evidence])?);
+                println!("Reopened {} unresolved review jobs.",db.execute("UPDATE job SET state='ready',attempts=0,feedback=feedback||char(10)||? WHERE state='unresolved'",[evidence])?);
             }
             println!(
                 "Reset {} failed jobs.",
@@ -261,6 +281,11 @@ fn main() -> Result<()> {
             articles::refresh_dependencies(&mut db, &Catalog::load(&lexicon)?.revisions)?;
             result
         }
+        Action::ApplyNames {
+            data,
+            src_texts,
+            lexicon,
+        } => people::publish(&db, &src_texts, &data, &lexicon),
         Action::Export => export(&db),
     }
 }
@@ -378,7 +403,7 @@ fn run(
     )?;
     ensure!(
         unresolved == 0,
-        "{unresolved} unresolved words await evidence; their verses remain pending"
+        "{unresolved} unresolved review jobs await evidence"
     );
     Ok(())
 }
@@ -512,7 +537,7 @@ mod tests {
             .map(|w| format!("[word|{}]", w["position"]))
             .collect::<Vec<_>>()
             .join(" ");
-        json!({"translation":spans,"glosses":words.iter().map(|w|json!({"position":w["position"],"gloss":"word"})).collect::<Vec<_>>()})
+        json!({"entities":[],"translation":spans,"glosses":words.iter().map(|w|json!({"position":w["position"],"gloss":"word"})).collect::<Vec<_>>()})
     }
     #[test]
     fn later_words_overlap_ready_verse_with_one_shared_limit() {

@@ -3648,6 +3648,26 @@ impl Bible {
             .collect()
     }
 
+    fn reviewed_name_positions(
+        &self,
+        book: u8,
+        chapter: u8,
+    ) -> rusqlite::Result<HashMap<u8, HashSet<u32>>> {
+        let mut reviewed = HashMap::<u8, HashSet<u32>>::new();
+        if self.has_table("reviewed_name_verse")? {
+            let (first, last) = chapter_range(book, chapter);
+            let mut stmt=self.db.prepare_cached("SELECT v.ref,w.position FROM data.reviewed_name_verse v LEFT JOIN data.word_name w ON w.ref=v.ref WHERE v.ref BETWEEN ? AND ?")?;
+            let mut rows = stmt.query([first, last])?;
+            while let Some(row) = rows.next()? {
+                let positions = reviewed.entry(ref_verse(row.get(0)?)).or_default();
+                if let Some(pos) = row.get::<_, Option<u32>>(1)? {
+                    positions.insert(pos);
+                }
+            }
+        }
+        Ok(reviewed)
+    }
+
     /// Proper-name flags aligned with the lexical words in a verse.
     ///
     /// The chapter reader uses these to distinguish personal and place names
@@ -3660,6 +3680,20 @@ impl Bible {
         chapter: u8,
         verse: u8,
     ) -> rusqlite::Result<Vec<bool>> {
+        if let Some(positions) = self.reviewed_name_positions(book, chapter)?.get(&verse) {
+            let sql = if book >= 40 {
+                "SELECT ord FROM data.nt_word WHERE ref=? ORDER BY ord"
+            } else {
+                "SELECT position FROM data.word WHERE ref=? ORDER BY position"
+            };
+            return self
+                .db
+                .prepare_cached(sql)?
+                .query_map([pack_ref(book, chapter, verse)], |r| {
+                    Ok(positions.contains(&r.get::<_, u32>(0)?))
+                })?
+                .collect();
+        }
         let mut stmt = self.db.prepare(
             "SELECT s.text, w.position FROM data.word w \
              JOIN data.surface s ON s.surface_id = w.surface_id \
@@ -3725,6 +3759,11 @@ impl Bible {
         let mut stmt = self.db.prepare(&sql)?;
         let (first, last) = chapter_range(book, chapter);
         let mut rows = stmt.query([first, last])?;
+        let reviewed = if include_names {
+            self.reviewed_name_positions(book, chapter)?
+        } else {
+            HashMap::new()
+        };
         let mut metadata = HashMap::<u8, ReaderVerseMetadata>::new();
 
         while let Some(row) = rows.next()? {
@@ -3792,9 +3831,10 @@ impl Bible {
             }
 
             if include_names {
-                verse_metadata
-                    .names
-                    .push(info.is_some_and(|info| info.is_name));
+                verse_metadata.names.push(match reviewed.get(&verse) {
+                    Some(positions) => positions.contains(&row.get::<_, u32>(1)?),
+                    None => info.is_some_and(|info| info.is_name),
+                });
             }
             if include_roots {
                 verse_metadata
@@ -3848,7 +3888,7 @@ impl Bible {
                                  coalesce(e.after, '')) \
                      FROM data.syriac_gloss e \
                      WHERE e.lexeme_id = w.lexeme_id \
-                     ORDER BY e.gloss_id LIMIT 1), r.root \
+                     ORDER BY e.gloss_id LIMIT 1), r.root,o.ord \
              FROM data.nt_word o \
              JOIN data.syriac_word w ON w.word_id = o.word_id \
              LEFT JOIN data.syriac_lexeme l ON l.lexeme_id = w.lexeme_id \
@@ -3858,6 +3898,11 @@ impl Bible {
         )?;
         let (first, last) = chapter_range(book, chapter);
         let mut rows = stmt.query([first, last])?;
+        let reviewed = if include_names {
+            self.reviewed_name_positions(book, chapter)?
+        } else {
+            HashMap::new()
+        };
         let mut metadata = HashMap::<u8, ReaderVerseMetadata>::new();
 
         while let Some(row) = rows.next()? {
@@ -3873,7 +3918,12 @@ impl Bible {
                 // SEDRA has no dependable proper-name flag. Keep the vector
                 // aligned so the independent reader setting cannot shift
                 // styling onto a later word.
-                verse_metadata.names.push(false);
+                let pos: u32 = row.get(3)?;
+                verse_metadata.names.push(
+                    reviewed
+                        .get(&verse)
+                        .is_some_and(|positions| positions.contains(&pos)),
+                );
             }
             if include_roots {
                 verse_metadata.roots.push(
@@ -6575,8 +6625,8 @@ impl Bible {
 
     /// The person, place or other named thing the word at `position` of a
     /// verse names (STEP Bible's TIPNR, which tells apart those sharing a
-    /// name), with everything known of it. `None` for a word naming none, the
-    /// New Testament, and a database built before names were.
+    /// name), with everything known of it. `None` for a word naming none, an untagged
+    /// occurrence, or a database built before names were.
     pub fn word_name(
         &self,
         book: u8,
@@ -6846,17 +6896,13 @@ impl Bible {
     ) -> rusqlite::Result<Vec<((u8, u8), u32)>> {
         let (first, last) = chapters_range(book, &chapters);
         let mut named = Vec::new();
-        for (table, order) in [
-            ("word_name", "ref, position"),
-            ("name_verse", "ref, entity_id"),
-        ] {
-            if !self.has_table(table)? {
-                continue;
-            }
-            let mut stmt = self.db.prepare_cached(&format!(
-                "SELECT ref, entity_id FROM data.{table} \
-                 WHERE ref BETWEEN ?1 AND ?2 ORDER BY {order}"
-            ))?;
+        let (table, order) = if book < 40 {
+            ("word_name", "ref, position")
+        } else {
+            ("name_verse", "ref, entity_id")
+        };
+        if self.has_table(table)? {
+            let mut stmt=self.db.prepare_cached(&format!("SELECT ref, entity_id FROM data.{table} WHERE ref BETWEEN ?1 AND ?2 ORDER BY {order}"))?;
             for row in stmt.query_map([first, last], |row| {
                 Ok((ref_chapter_verse(row.get(0)?), row.get(1)?))
             })? {
@@ -8527,6 +8573,42 @@ mod tests {
         assert!(verse(44, 8, 37).unwrap().text().contains("πιστεύω"));
         assert!(verse(62, 5, 7).unwrap().text().contains("πατήρ"));
         assert!(bible.greek_chapter(1, 1).unwrap().is_empty());
+    }
+
+    #[test]
+    fn peshitta_name_review_distinguishes_the_three_men_named_james() {
+        require_data!();
+        let bible = Bible::open(data_dir()).unwrap();
+        if !bible.has_table("reviewed_name_verse").unwrap() {
+            return;
+        }
+        let meta = bible
+            .chapter_reader_metadata(44, 1, false, false, true, false)
+            .unwrap();
+        let flags = bible.verse_name_flags(44, 1, 13).unwrap();
+        assert_eq!(flags, meta[&13].names);
+        for (position, relation, relative) in [
+            (12, "father", "Zebedee"),
+            (18, "father", "Alphaeus"),
+            (25, "child", "Judas"),
+        ] {
+            let person = bible.word_name(44, 1, 13, position).unwrap().unwrap();
+            assert!(flags[position as usize]);
+            assert_eq!(person.summary.name, "James");
+            assert!(
+                person
+                    .links
+                    .iter()
+                    .any(|l| l.relation == relation && l.other.name == relative)
+            );
+        }
+        assert!(!flags[19]); // "son of" introduces Alphaeus.
+        let city = bible.word_name(44, 1, 12, 4).unwrap().unwrap();
+        assert_eq!(city.summary.name, "Jerusalem");
+        assert_eq!(
+            city.summary.id,
+            bible.word_name(44, 1, 12, 13).unwrap().unwrap().summary.id
+        );
     }
 
     /// A word names the one person it means, with the family the text gives

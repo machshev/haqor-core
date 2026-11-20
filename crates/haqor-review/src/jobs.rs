@@ -51,6 +51,7 @@ impl Job {
 
 #[derive(Default)]
 pub struct Catalog {
+    pub people: Option<crate::people::People>,
     words: BTreeMap<String, Vec<Value>>,
     pub revisions: BTreeMap<(String, bool), String>,
 }
@@ -221,6 +222,9 @@ pub fn packet(db: &Connection, j: &Job, catalog: &Catalog) -> Result<Value> {
             ensure!(word["position"] == pos, "position mismatch");
             reviewed.push(json!({"position":pos,"surface":word["surface"],"analysis":serde_json::from_str::<Value>(&result)?}));
         }
+        if let Some(people) = &catalog.people {
+            p["people_and_places"] = people.context(db, j, &reviewed)?;
+        }
         p["words"] = json!(reviewed);
     }
     Ok(p)
@@ -239,8 +243,8 @@ pub struct Word {
     evidence: String,
     entry: Value,
 }
-const WORD: &str = r#"Analyse only the marked occurrence in its verse. Return one JSON object with string fields language (he, arc, syc, grc), lemma (pointed dictionary form, Hebrew script for Semitic), qualifier (empty unless needed to distinguish a homograph, e.g. noun), root (Haqor consonantal root; empty if unknown), morphology, sense, gloss, evidence (explain using the text), and entry. For entry use {"existing":"article id"} when the candidate covers this word and sense. Otherwise provide {"draft":{"definition":"...","evidence":"...","change":"..."}} proposing the new or corrected lexical content. If a previous analysis covers exactly your language, lemma, qualifier, root and sense, copy those fields and return entry {"reuse":[ref,pos]} using its at coordinates. For a new or amended Semitic entry include draft.article, the COMPLETE draft Haqor JSON article, following data/lexicon/README.md, with its lemma, root, senses and verse evidence. Read the existing article before editing it. Use the candidate revision as draft.base, or null for a new file. If you discover an existing article outside the listed candidates use its SHA256 file digest. For Greek the SQLite lexical draft is the entry. Use Greek script for Greek. Treat source tags and candidate roots as evidence to check. If the occurrence cannot be assigned responsibly, return only {"unresolved":"explain the competing readings and what evidence is missing"}. Prefixes and suffixes belong in morphology. Use read-only local reference material when needed."#;
-const VERSE: &str = r#"Review every word's gloss in context, then read the whole verse in continuous English. Return {"translation":"...","glosses":[{"position":0,"gloss":"..."}]} with exactly one gloss per listed position. In translation encode English spans as [English|position] (multiple positions comma-separated only when necessary), supplied words in braces. Account for every source position. Preserve the project's translation conventions. If a word analysis needs changing first, instead return {"rework":[{"position":0,"reason":"..."}]}. Give precise reasons and return only the affected positions."#;
+const WORD: &str = r#"Analyse only the marked occurrence in its verse. Return one JSON object with string fields language (he, arc, syc, grc), lemma (pointed dictionary form, Hebrew script for Semitic), qualifier (empty unless needed to distinguish a homograph, e.g. noun), root (Haqor consonantal root; empty if unknown), morphology, sense, gloss, evidence (explain using the text), and entry. For entry use {"existing":"article id"} when the candidate covers this word and sense. Otherwise provide {"draft":{"definition":"...","evidence":"...","change":"..."}} proposing the new or corrected lexical content. If a previous analysis covers exactly your language, lemma, qualifier, root and sense, copy those fields and return entry {"reuse":[ref,pos]} using its at coordinates. For a new or amended Semitic entry include draft.article, the COMPLETE draft Haqor JSON article, following data/lexicon/README.md, with its lemma, root, senses and verse evidence. For a personal-name article preserve its existing people list; a new article may leave people empty until verse review assigns its bearers. Read the existing article before editing it. Use the candidate revision as draft.base, or null for a new file. If you discover an existing article outside the listed candidates use its SHA256 file digest. For Greek the SQLite lexical draft is the entry. Use Greek script for Greek. Treat source tags and candidate roots as evidence to check. If the occurrence cannot be assigned responsibly, return only {"unresolved":"explain the competing readings and what evidence is missing"}. Prefixes and suffixes belong in morphology. Use read-only local reference material when needed."#;
+const VERSE: &str = r#"Review every word's gloss in context, then read the whole verse in continuous English. Return {"translation":"...","glosses":[{"position":0,"gloss":"..."}]} with exactly one gloss per listed position. In translation encode English spans as [English|position] (multiple positions comma-separated only when necessary), supplied words in braces. Account for every source position. Preserve the project's translation conventions. If a word analysis needs changing first, instead return {"rework":[{"position":0,"reason":"..."}]}. Give precise reasons and return only the affected positions. On every completed verse include entities: an array of {position,key,evidence} for EACH explicit person or place name. Empty means no such names. Match the actual bearer using verse context, family, role and location. Check all same-name candidates; source tags are evidence. Reuse the existing bearer key wherever supported, including previous proposals. If a bearer is missing, add new:{name,kind,description} to its mention, with kind person or place and a description distinguishing it from homonyms. Use a stable Name@Book.Chapter.Verse key anchored to evidence; when the same verse introduces two namesakes append # plus a distinguishing role. Distinct bearers may have identical names and dictionary forms. Preserve uncertain identity for review by returning {"unresolved":"reason"} rather than inventing a bearer. Do not identify mere pronouns or ordinary nouns as names."#;
 pub fn prompt(packet: &Value) -> String {
     format!(
         "{}\nReturn JSON only. Source packet:\n{}",
@@ -268,15 +272,18 @@ pub fn accept(
     usage: &Value,
     packet: &Value,
 ) -> Result<()> {
+    if j.pos < 0 && packet.get("people_and_places").is_some() {
+        crate::people::request_names(db, j, &answer)?;
+    }
     let tx = db.transaction()?;
-    if j.pos >= 0 {
-        if answer.get("unresolved").is_some() {
-            nonempty(&answer, "unresolved")?;
-            tx.execute("UPDATE job SET state='unresolved',feedback=?,result=NULL,usage=?,error=NULL WHERE source=? AND ref=? AND pos=?",
+    if answer.get("unresolved").is_some() {
+        nonempty(&answer, "unresolved")?;
+        tx.execute("UPDATE job SET state='unresolved',feedback=?,result=NULL,usage=?,error=NULL WHERE source=? AND ref=? AND pos=?",
                 params![answer["unresolved"].as_str(),usage.to_string(),j.source,j.reference,j.pos])?;
-            tx.commit()?;
-            return Ok(());
-        }
+        tx.commit()?;
+        return Ok(());
+    }
+    if j.pos >= 0 {
         let word: Word = serde_json::from_value(answer.clone())?;
         for field in ["lemma", "morphology", "gloss", "sense", "evidence"] {
             nonempty(&answer, field)?;
@@ -368,10 +375,23 @@ pub fn accept(
                 params![j.reference,j.pos,j.source,reference,pos])?;
         } else {
             if let Some(id) = word.entry["existing"].as_str() {
-                let candidate=packet["candidates"].as_array().into_iter().flatten().find(|r|
-                r["entry"]==id && r["language"]==answer["language"] && r["root"]==answer["root"] &&
-                r["lemma"].as_str().is_some_and(|s|s.nfc().eq(lemma.chars())))
-                .context("article must cover the resolved language, dictionary form and root; supply a draft correction otherwise")?;
+                let candidate = packet["candidates"]
+                    .as_array()
+                    .into_iter()
+                    .flatten()
+                    .find(|r| {
+                        if r["entry"] != id || r["root"] != answer["root"] {
+                            return false;
+                        }
+                        let Some(head) = r["lemma"].as_str() else {
+                            return false;
+                        };
+                        if r["name"] == true && matches!(word.language.as_str(), "arc" | "syc") {
+                            return fold_consonants(head) == fold_consonants(lemma);
+                        }
+                        r["language"] == answer["language"] && head.nfc().eq(lemma.chars())
+                    })
+                    .context("article must cover the resolved dictionary form and root")?;
                 tx.execute(
                     "INSERT OR REPLACE INTO dependency VALUES(?,?,?,?,?,?)",
                     params![
@@ -409,6 +429,9 @@ pub fn accept(
                 params![answer.to_string(),usage.to_string(),j.source,j.reference])?;
             tx.commit()?;
             return Ok(());
+        }
+        if packet.get("people_and_places").is_some() {
+            crate::people::validate(&tx, j, &mut answer, packet)?;
         }
         nonempty(&answer, "translation")?;
         let spans = translation::parse(
