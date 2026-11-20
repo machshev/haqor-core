@@ -275,47 +275,19 @@
         "entry": {
           "draft": {
             "article_id": "ttwwbal-qayin",
-            "base": null,
-            "change": "Add a personal-name article for תּוּבַל קַיִן. Leave its root unassigned.",
-            "definition": "Tubal-cain is the personal name of Zillah’s son, the brother of Naamah.",
-            "evidence": "Genesis 4:22 repeats the full name in the birth notice and in the statement identifying his sister.",
-            "reconciliation": {
-              "article": {
-                "created": "2026-11-20",
-                "english": "Tubal-cain",
-                "entry": "",
-                "evidence": [
-                  {
-                    "note": "Both the birth notice and the expression אֲחוֹת תּוּבַל קַיִן use the two elements together to name one man.",
-                    "ref": "Gen.4.22",
-                    "role": "defining"
-                  }
-                ],
-                "gloss": "Tubal-cain",
-                "id": "ttwwbal-qayin",
-                "name": "תּוּבַל קַיִן",
-                "note": "The verse gives no explanation of the name’s meaning.",
-                "people": [
-                  "Tubal-cain@Gen.4.22"
-                ],
-                "root": "",
-                "status": "draft",
-                "summary": "Zillah gives birth to Tubal-cain. The same verse repeats his full name when it identifies Naamah as his sister.",
-                "updated": "2026-11-20"
-              },
-              "base": null,
-              "conflicts": [
-                "resolve the bearer and validate its name article against the current lexicon"
-              ]
-            }
-          }
+            "base": "1556e979342dc0ca197f01a7606ce4809090550f815a5812378c1215f0c14182",
+            "change": "Reconcile the earlier proposal with the current personal-name article, which already records the bearer identified in this verse.",
+            "definition": "Tubal-cain, Zillah’s son and Naamah’s brother.",
+            "evidence": "Genesis 4:22 uses the same two-word name in Zillah’s birth notice and in the clause naming Naamah as his sister."
+          },
+          "word": 0
         },
-        "evidence": "The verse first names Zillah’s child as תּוּבַל קַיִן. At the marked occurrence, וַאֲחוֹת תּוּבַל קַיִן נַעֲמָה repeats both elements and identifies Naamah as his sister. The verse establishes the bearer of the name but gives no derivation for תּוּבַל.",
+        "evidence": "The birth notice names Zillah’s son תּוּבַל קַיִן. At the marked occurrence, וַאֲחוֹת תּוּבַל קַיִן נַעֲמָה repeats his full name and identifies Naamah as his sister. The verse gives no derivation for the name.",
         "gloss": "Tubal-cain",
         "language": "he",
         "lemma": "תּוּבַל קַיִן",
         "morph": "HNp",
-        "morphology": "Masculine singular proper name. תּוּבַל is the first element of the two-word name, with no prefix or suffix. The full name follows the construct noun אֲחוֹת, “sister of.”",
+        "morphology": "תּוּבַל is the first element of a masculine singular personal name and has no prefix or suffix. The full name follows אֲחוֹת, the construct form meaning “sister of.”",
         "qualifier": "",
         "root": "",
         "segments": "תּוּבַל",
