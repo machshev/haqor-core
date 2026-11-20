@@ -33,6 +33,52 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article": {
+              "created": "2026-11-20",
+              "english": "Elam",
+              "entry": "",
+              "evidence": [
+                {
+                  "note": "עֵילָם follows בְּנֵי שֵׁם, “the sons of Shem,” as the first name in the list.",
+                  "ref": "Gen.10.22",
+                  "role": "defining"
+                }
+              ],
+              "gloss": "Elam",
+              "id": "3eeylaam",
+              "name": "עֵילָם",
+              "people": [],
+              "root": "",
+              "status": "draft",
+              "summary": "Genesis names Elam among the sons of Shem. The meaning of his name is uncertain.",
+              "updated": "2026-11-20"
+            },
+            "article_id": "3eeylaam",
+            "base": null,
+            "change": "Add a personal-name article for עֵילָם. Leave the root unassigned because the text gives no evidence connecting the name to עיט.",
+            "definition": "Elam, named among the sons of Shem.",
+            "evidence": "Genesis 10:22 lists Elam first under “the sons of Shem.”"
+          },
+          "word": 0
+        },
+        "evidence": "עֵילָם is the first name after בְּנֵי שֵׁם, “the sons of Shem.” The conjunction on וְאַשּׁוּר, “and Asshur,” introduces the next son. The verse identifies Elam by kinship and gives no derivation for his name.",
+        "gloss": "Elam",
+        "language": "he",
+        "lemma": "עֵילָם",
+        "morph": "HNp",
+        "morphology": "Hebrew proper noun with no prefix or suffix.",
+        "qualifier": "",
+        "root": "",
+        "segments": "עֵילָם",
+        "sense": "Elam, a son of Shem"
+      },
+      "position": 2,
+      "surface": "עֵילָם"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "2earaam",
           "word": 0
         },
