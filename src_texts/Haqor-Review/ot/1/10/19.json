@@ -70,6 +70,33 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article_id": "9iydwon",
+            "base": null,
+            "change": "Add a geographical sense for צִידוֹן and correct the occurrence gloss from “Zebulun” to “from Sidon.”",
+            "definition": "Sidon is the city from which the description of the Canaanite boundary begins.",
+            "evidence": "Genesis 10:19 places Sidon at the starting point of the boundary by prefixing מִן to the name."
+          },
+          "sense": "sidon-city",
+          "word": 0
+        },
+        "evidence": "גְּבוּל הַכְּנַעֲנִי identifies the subject as the Canaanite boundary. מִצִּידֹן gives its starting point, and the following phrases trace its course toward Gerar and as far as Gaza.",
+        "gloss": "from Sidon",
+        "language": "he",
+        "lemma": "צִידוֹן",
+        "morph": "HR/Np",
+        "morphology": "The preposition מִן means “from.” Its nun assimilates to the initial צ of the proper name, producing the dagesh in צּ. The name is written here with ḥolam on ד.",
+        "qualifier": "place",
+        "root": "צידונ",
+        "segments": "מִ/צִּידֹן",
+        "sense": "Sidon, the city"
+      },
+      "position": 3,
+      "surface": "מִצִּידֹן"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "bw2",
           "sense": "come-arrive-enter",
           "word": 0
