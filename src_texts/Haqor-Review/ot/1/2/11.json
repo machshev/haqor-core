@@ -73,7 +73,13 @@
     {
       "analysis": {
         "entry": {
-          "existing": "xm",
+          "draft": {
+            "article_id": "xm",
+            "base": "5ff57a119255ca3775ba1c5592f6cd00e22ec622fafccd6afc08384d01b566fe",
+            "change": "Broaden the first Hebrew noun sense to include geographical names and cite Genesis 2:14 as defining evidence.",
+            "definition": "A name identifies its bearer, including a geographical feature such as a river.",
+            "evidence": "Genesis 2:14 explicitly gives חִדֶּקֶל as the שֵׁם of the third river."
+          },
           "word": 0
         },
         "evidence": "שֵׁם הָאֶחָד means “the name of the first [river].” פִּישׁוֹן supplies that name.",
@@ -81,11 +87,11 @@
         "language": "he",
         "lemma": "שֵׁם",
         "morph": "HNcmsc",
-        "morphology": "Common noun, masculine singular construct, without prefix or suffix.",
+        "morphology": "Masculine singular common noun in the construct state, with no prefix or suffix.",
         "qualifier": "noun",
         "root": "שמ",
         "segments": "שֵׁם",
-        "sense": "name by which someone is known"
+        "sense": "name by which a river is known"
       },
       "position": 0,
       "surface": "שֵׁם"
