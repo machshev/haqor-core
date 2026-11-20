@@ -1,6 +1,88 @@
 {
   "book": 1,
   "chapter": 2,
+  "review": {
+    "entities": [
+      {
+        "evidence": "יַהְוֶה names the God who forms the man.",
+        "key": "LORD@Gen.1.1",
+        "position": 1
+      },
+      {
+        "evidence": "אֱלֹהִים stands in apposition to יַהְוֶה and designates the same divine subject of וַיִּיצֶר.",
+        "key": "LORD@Gen.1.1",
+        "position": 2
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "then he formed",
+        "position": 0
+      },
+      {
+        "gloss": "Yahweh",
+        "position": 1
+      },
+      {
+        "gloss": "God",
+        "position": 2
+      },
+      {
+        "gloss": "(marks the definite object)",
+        "position": 3
+      },
+      {
+        "gloss": "the man",
+        "position": 4
+      },
+      {
+        "gloss": "dust",
+        "position": 5
+      },
+      {
+        "gloss": "from",
+        "position": 6
+      },
+      {
+        "gloss": "the ground",
+        "position": 7
+      },
+      {
+        "gloss": "and he breathed",
+        "position": 8
+      },
+      {
+        "gloss": "into his nostrils",
+        "position": 9
+      },
+      {
+        "gloss": "the breath of",
+        "position": 10
+      },
+      {
+        "gloss": "life",
+        "position": 11
+      },
+      {
+        "gloss": "and he became",
+        "position": 12
+      },
+      {
+        "gloss": "the man",
+        "position": 13
+      },
+      {
+        "gloss": "a soul",
+        "position": 14
+      },
+      {
+        "gloss": "living",
+        "position": 15
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[Then|0] [Yahweh|1] [God|2] [formed|0] [the man|4,3] {out of} [dust|5] [from|6] [the ground|7], [and he breathed|8] [into his nostrils|9] [the breath of|10] [life|11], [and|12] [the man|13] [became|12] [a|14] [living|15] [soul|14]."
+  },
   "source": "ot",
   "verse": 7,
   "words": [
