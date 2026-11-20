@@ -7,12 +7,16 @@ use std::{collections::HashMap, path::Path};
 
 use crate::Source;
 
+// Packets show the generated analysis. Where the build merged a review into
+// a word, these read through to the analysis it replaced (`base_id`, `base_*`),
+// so a review never becomes its own source evidence.
 const OT: &str = "SELECT w.ref,w.position,s.text,json_object(
  'root',i.root,'gloss',g.text,'pos',m.part_of_speech,'form',m.form,'tense',m.tense,
  'person',m.person,'gender',m.gender,'number',m.number,'state',m.state,
  'prefix',m.prefix,'suffix',m.obj_suffix,'oshb_lemma',o.lemma,'oshb_morph',o.morph)
  FROM word w JOIN surface s USING(surface_id)
- LEFT JOIN word_info i ON i.info_id=coalesce(w.info_id,s.info_id)
+ LEFT JOIN word_info r ON r.info_id=coalesce(w.info_id,s.info_id)
+ LEFT JOIN word_info i ON i.info_id=coalesce(r.base_id,r.info_id)
  LEFT JOIN morph_cell m USING(cell_id) LEFT JOIN gloss g ON g.gloss_id=coalesce(w.gloss_id,i.gloss_id)
  LEFT JOIN heb.oshb_primary o ON o.book=w.ref>>16 AND o.chapter=((w.ref>>8)&255)
  AND o.verse=(w.ref&255) AND o.position=w.position
@@ -25,8 +29,10 @@ const PES: &str = "SELECT n.ref,n.ord,coalesce(nullif(w.vocalised,''),w.word),js
  FROM nt_word n LEFT JOIN syriac_word w USING(word_id) LEFT JOIN syriac_lexeme l USING(lexeme_id)
  LEFT JOIN syriac_root r USING(root_id) WHERE n.ref BETWEEN ?1 AND ?2 ORDER BY n.ref,n.ord";
 const GRK: &str = "SELECT w.ref,w.position,w.word,json_object('lemma',l.lemma,'gloss',l.gloss,
- 'grammar',g.code,'english',e.text) FROM greek_word w LEFT JOIN greek_lemma l USING(lemma_id)
- LEFT JOIN greek_grammar g USING(grammar_id) LEFT JOIN greek_english e USING(english_id)
+ 'grammar',g.code,'english',e.text) FROM greek_word w
+ LEFT JOIN greek_lemma l ON l.lemma_id=iif(w.reviewed,w.base_lemma_id,w.lemma_id)
+ LEFT JOIN greek_grammar g ON g.grammar_id=iif(w.reviewed,w.base_grammar_id,w.grammar_id)
+ LEFT JOIN greek_english e ON e.english_id=iif(w.reviewed,w.base_english_id,w.english_id)
  WHERE w.ref BETWEEN ?1 AND ?2 ORDER BY w.ref,w.position";
 
 pub fn seed(

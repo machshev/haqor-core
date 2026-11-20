@@ -1058,6 +1058,12 @@ CREATE TABLE greek_word(
     grammar_id INTEGER,
     english_id INTEGER,
     entity_id  INTEGER,
+    -- Set where a corpus review replaced lemma_id, english_id or grammar_id;
+    -- base_* keep the generated ids (haqor-db-gen runtime_db::apply_reviews).
+    reviewed        INTEGER,
+    base_lemma_id   INTEGER,
+    base_english_id INTEGER,
+    base_grammar_id INTEGER,
     PRIMARY KEY(ref, position)
 ) WITHOUT ROWID;
 CREATE INDEX idx_greek_word_lemma ON greek_word(lemma_id);

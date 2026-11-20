@@ -274,13 +274,15 @@ pub struct Word {
     lemma: String,
     qualifier: String,
     root: String,
+    morph: String,
+    segments: String,
     morphology: String,
     sense: String,
     gloss: String,
     evidence: String,
     entry: Value,
 }
-const WORD: &str = r#"Analyse only the marked occurrence in its verse. Return one JSON object with string fields language (he, arc, syc, grc), lemma (pointed dictionary form, Hebrew script for Semitic), qualifier (empty unless needed to distinguish a homograph, e.g. noun), root (Haqor consonantal root; empty if unknown), morphology, sense, gloss, evidence (explain using the text), and entry. For entry use {"existing":"article id","word":N} when a candidate covers this word and sense, where N is that candidate's word index: the position of the lexeme in the article's words list. Otherwise provide {"draft":{"definition":"...","evidence":"...","change":"..."},"word":N} proposing the new or corrected lexical content, where N is the index of this occurrence's lexeme in draft.article.words (0 for a personal-name or Greek article). Existing lexemes keep their indices: never reorder or remove words in an article; add a new lexeme at the end of its words list. If a previous analysis covers exactly your language, lemma, qualifier, root and sense, copy those fields and return entry {"reuse":[ref,pos]} using its at coordinates. For a new or amended Semitic entry include draft.article, the COMPLETE draft Haqor JSON article, following data/lexicon/README.md, with its lemma, root, senses and verse evidence. For a personal-name article preserve its existing people list; a new article may leave people empty until verse review assigns its bearers. Read the existing article before editing it. Use the candidate revision as draft.base, or null for a new file. If you discover an existing article outside the listed candidates use its SHA256 file digest. For Greek use an existing Greek dictionary candidate if it covers this sense, or provide draft.definition, draft.evidence and draft.change to update the shared Greek entry. Use Greek script for Greek. Treat source tags and candidate roots as evidence to check. If the occurrence cannot be assigned responsibly, return only {"unresolved":"explain the competing readings and what evidence is missing"}. Prefixes and suffixes belong in morphology. Use read-only local reference material when needed."#;
+const WORD: &str = r#"Analyse only the marked occurrence in its verse. Return one JSON object with string fields language (he, arc, syc, grc), lemma (pointed dictionary form, Hebrew script for Semitic), qualifier (empty unless needed to distinguish a homograph, e.g. noun), root (Haqor consonantal root; empty if unknown), morph, segments, morphology, sense, gloss, evidence (explain using the text), and entry. For entry use {"existing":"article id","word":N} when a candidate covers this word and sense, where N is that candidate's word index: the position of the lexeme in the article's words list. Otherwise provide {"draft":{"definition":"...","evidence":"...","change":"..."},"word":N} proposing the new or corrected lexical content, where N is the index of this occurrence's lexeme in draft.article.words (0 for a personal-name or Greek article). Existing lexemes keep their indices: never reorder or remove words in an article; add a new lexeme at the end of its words list. If a previous analysis covers exactly your language, lemma, qualifier, root and sense, copy those fields and return entry {"reuse":[ref,pos]} using its at coordinates. For a new or amended Semitic entry include draft.article, the COMPLETE draft Haqor JSON article, following data/lexicon/README.md, with its lemma, root, senses and verse evidence. For a personal-name article preserve its existing people list; a new article may leave people empty until verse review assigns its bearers. Read the existing article before editing it. Use the candidate revision as draft.base, or null for a new file. If you discover an existing article outside the listed candidates use its SHA256 file digest. For Greek use an existing Greek dictionary candidate if it covers this sense, or provide draft.definition, draft.evidence and draft.change to update the shared Greek entry. Use Greek script for Greek. Treat source tags and candidate roots as evidence to check. If the occurrence cannot be assigned responsibly, return only {"unresolved":"explain the competing readings and what evidence is missing"}. morph is the machine-readable morphology. For Hebrew, Aramaic and Syriac give an OSHB morphology code: H for Hebrew or A for Aramaic and Syriac, then one segment per part of the word separated by /, prefixes first and pronominal suffixes last (e.g. HC/Vqw3ms, HR/Ncfsa, HNcmpc/Sp3ms). The packet's source_analysis.oshb_morph is the OSHB reading: check it and correct it where the text requires. segments is the word split at / into the same parts as the code (e.g. וַ/יְבָרֶךְ); a word of one part is written whole. For Greek give the Robinson code (e.g. V-AAI-3S) as in source_analysis.grammar, and segments empty. morphology explains the reading in prose. Prefixes and suffixes belong in morphology. Use read-only local reference material when needed."#;
 const VERSE: &str = r#"Review every word's gloss in context, then read the whole verse in continuous English. Return {"translation":"...","glosses":[{"position":0,"gloss":"..."}]} with exactly one gloss per listed position. In translation encode English spans as [English|position] (multiple positions comma-separated only when necessary), supplied words in braces. Account for every source position. Preserve the project's translation conventions. If a word analysis needs changing first, instead return {"rework":[{"position":0,"reason":"..."}]}. Give precise reasons and return only the affected positions. On every completed verse include entities: an array of {position,key,evidence} for EACH explicit person or place name. Empty means no such names. Match the actual bearer using verse context, family, role and location. Check all same-name candidates; source tags are evidence. Reuse the existing bearer key wherever supported, including previous proposals. If a bearer is missing, add new:{name,kind,description} to its mention, with kind person or place and a description distinguishing it from homonyms. Use a stable Name@Book.Chapter.Verse key anchored to evidence; when the same verse introduces two namesakes append # plus a distinguishing role. Distinct bearers may have identical names and dictionary forms. Preserve uncertain identity for review by returning {"unresolved":"reason"} rather than inventing a bearer. Do not identify mere pronouns or ordinary nouns as names."#;
 pub fn prompt(packet: &Value) -> String {
     format!(
@@ -292,6 +294,35 @@ pub fn prompt(packet: &Value) -> String {
         },
         packet
     )
+}
+
+/// A word's machine-readable morphology: an OSHB code over the word's
+/// segments for Hebrew, Aramaic and Syriac, a Robinson code for Greek.
+fn check_morph(word: &Word, packet: &Value) -> Result<()> {
+    let surface = packet["word"]["surface"].as_str().unwrap_or("");
+    if word.language == "grc" {
+        ensure!(
+            !word.morph.is_empty()
+                && word.morph.split('-').all(|p| {
+                    !p.is_empty()
+                        && p.chars()
+                            .all(|c| c.is_ascii_uppercase() || c.is_ascii_digit())
+                })
+                && word.segments.is_empty(),
+            "morph must be a Robinson code such as V-AAI-3S, with segments empty"
+        );
+        return Ok(());
+    }
+    let letter = if word.language == "he" { 'H' } else { 'A' };
+    ensure!(
+        word.morph.starts_with(letter),
+        "morph for language {} starts with {letter}",
+        word.language
+    );
+    if let Some(error) = haqor_core::bible::oshb_parts_error(&word.morph, &word.segments, surface) {
+        bail!("morph: {error}");
+    }
+    Ok(())
 }
 
 /// The lexeme an occurrence resolves to: its index in the article's `words`.
@@ -352,6 +383,7 @@ pub fn accept(
             ensure!(!s.chars().any(char::is_numeric), "numeric lexical key");
             answer[key] = json!(s);
         }
+        check_morph(&word, packet)?;
         let lemma = answer["lemma"].as_str().unwrap();
         let retired: Option<String> = tx
             .query_row(

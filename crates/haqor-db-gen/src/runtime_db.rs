@@ -130,6 +130,8 @@ impl MorphCell {
 
 const FLAG_VAV_CON: i64 = 1;
 const FLAG_IS_NAME: i64 = 2;
+/// A `word_info` row holding a corpus review's analysis of one word.
+pub(crate) const FLAG_REVIEWED: i64 = 4;
 
 /// A resolved rendering, keyed by the surface and the OSHB tagging that
 /// produced it. Tokens sharing both share a row.
@@ -450,39 +452,193 @@ pub fn generate_runtime(
     Ok(words)
 }
 
-/// Import per-verse review packets as an additive runtime overlay. Word
-/// analyses are imported as soon as they are published. Verse translations
-/// are imported separately only after the verse review is complete.
-pub(crate) fn import_review_occurrences(
+/// Columns the reviewed analysis of a word adds to `word_info` and `nt_word`.
+const REVIEW_COLUMNS: [(&str, &str, &str); 12] = [
+    ("word_info", "entry_id", "TEXT"),
+    ("word_info", "lexeme", "INTEGER"),
+    ("word_info", "base_id", "INTEGER"),
+    ("nt_word", "root", "TEXT"),
+    ("nt_word", "gloss", "TEXT"),
+    ("nt_word", "entry_id", "TEXT"),
+    ("nt_word", "lexeme", "INTEGER"),
+    ("nt_word", "cell_id", "INTEGER"),
+    ("greek_word", "reviewed", "INTEGER"),
+    ("greek_word", "base_lemma_id", "INTEGER"),
+    ("greek_word", "base_english_id", "INTEGER"),
+    ("greek_word", "base_grammar_id", "INTEGER"),
+];
+
+/// Interns texts into a `(id INTEGER PRIMARY KEY, text TEXT)` table.
+struct TextIds<'a> {
+    db: &'a Connection,
+    table: &'static str,
+    column: &'static str,
+    ids: HashMap<String, i64>,
+}
+
+impl<'a> TextIds<'a> {
+    fn new(
+        db: &'a Connection,
+        table: &'static str,
+        column: &'static str,
+        id: &str,
+    ) -> Result<Self> {
+        let ids = db
+            .prepare(&format!("SELECT {column}, {id} FROM {table}"))?
+            .query_map([], |r| Ok((r.get(0)?, r.get(1)?)))?
+            .collect::<rusqlite::Result<_>>()?;
+        Ok(Self {
+            db,
+            table,
+            column,
+            ids,
+        })
+    }
+    fn id(&mut self, text: &str) -> Result<i64> {
+        if let Some(id) = self.ids.get(text) {
+            return Ok(*id);
+        }
+        self.db.execute(
+            &format!("INSERT INTO {} ({}) VALUES (?1)", self.table, self.column),
+            [text],
+        )?;
+        let id = self.db.last_insert_rowid();
+        self.ids.insert(text.to_owned(), id);
+        Ok(id)
+    }
+}
+
+/// Interns morphology cells into `morph_cell`.
+struct CellIds<'a> {
+    db: &'a Connection,
+    ids: HashMap<MorphCell, i64>,
+}
+
+impl<'a> CellIds<'a> {
+    fn new(db: &'a Connection) -> Result<Self> {
+        let ids = db
+            .prepare(
+                "SELECT part_of_speech, form, tense, person, gender, number, state, prefix, obj_suffix, cell_id
+                 FROM morph_cell",
+            )?
+            .query_map([], |r| {
+                Ok((
+                    MorphCell {
+                        part_of_speech: r.get(0)?,
+                        form: r.get(1)?,
+                        tense: r.get(2)?,
+                        person: r.get(3)?,
+                        gender: r.get(4)?,
+                        number: r.get(5)?,
+                        state: r.get(6)?,
+                        prefix: r.get(7)?,
+                        obj_suffix: r.get(8)?,
+                    },
+                    r.get(9)?,
+                ))
+            })?
+            .collect::<rusqlite::Result<_>>()?;
+        Ok(Self { db, ids })
+    }
+    fn id(&mut self, cell: &MorphCell) -> Result<i64> {
+        if let Some(id) = self.ids.get(cell) {
+            return Ok(*id);
+        }
+        self.db.execute(
+            "INSERT INTO morph_cell(part_of_speech, form, tense, person, gender, number, state, prefix, obj_suffix)
+             VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9)",
+            params![
+                cell.part_of_speech,
+                cell.form,
+                cell.tense,
+                cell.person,
+                cell.gender,
+                cell.number,
+                cell.state,
+                cell.prefix,
+                cell.obj_suffix
+            ],
+        )?;
+        let id = self.db.last_insert_rowid();
+        self.ids.insert(cell.clone(), id);
+        Ok(id)
+    }
+}
+
+/// Merge the reviewed analyses of `src_texts/Haqor-Review` into the word
+/// tables, so the runtime holds one answer per word:
+///
+/// - an OT word's `info_id` names a reviewed `word_info` row: the reviewed
+///   root, gloss in context, morphology cell, Haqor article and lexeme over the generated
+///   analysis it refines (`base_id`), with [`FLAG_REVIEWED`] set;
+/// - a Peshitta word's `nt_word` row takes the reviewed root, gloss,
+///   morphology cell, article and lexeme;
+/// - a Greek word's `english_id`, `lemma_id` and `grammar_id` name the
+///   reviewed gloss, dictionary form and Robinson code, with `reviewed` set and the generated ids kept in
+///   `base_*`.
+///
+/// Reapplying first restores every word to its generated analysis, so the
+/// refresh is repeatable, and haqor-review reads the generated analysis
+/// through the base references. Returns the completed verse
+/// translations, which the caller applies.
+pub(crate) fn apply_reviews(
     db: &rusqlite::Transaction,
     src_texts: &Path,
 ) -> Result<Vec<(String, i64, String)>> {
-    db.execute_batch(
-        "CREATE TABLE IF NOT EXISTS review_occurrence(\
-        source TEXT NOT NULL, ref INTEGER NOT NULL, position INTEGER NOT NULL,\
-        lemma TEXT, root TEXT, morphology TEXT, gloss TEXT, sense TEXT, verse_gloss TEXT,\
-        language TEXT, qualifier TEXT, entry_id TEXT, lexeme INTEGER,\
-        PRIMARY KEY(source, ref, position)) WITHOUT ROWID",
-    )?;
-    let existing: std::collections::HashSet<String> = db
-        .prepare("PRAGMA table_info(review_occurrence)")?
-        .query_map([], |row| row.get(1))?
-        .collect::<rusqlite::Result<_>>()?;
-    for (column, kind) in [
-        ("language", "TEXT"),
-        ("qualifier", "TEXT"),
-        ("entry_id", "TEXT"),
-        ("lexeme", "INTEGER"),
-    ] {
-        if !existing.contains(column) {
+    // Databases from before the merge kept reviews in an overlay table.
+    db.execute_batch("DROP TABLE IF EXISTS review_occurrence")?;
+    for (table, column, kind) in REVIEW_COLUMNS {
+        let present: bool = db.query_row(
+            "SELECT EXISTS(SELECT 1 FROM pragma_table_info(?1) WHERE name = ?2)",
+            [table, column],
+            |r| r.get(0),
+        )?;
+        let exists: bool = db.query_row(
+            "SELECT EXISTS(SELECT 1 FROM sqlite_master WHERE type='table' AND name=?1)",
+            [table],
+            |r| r.get(0),
+        )?;
+        if exists && !present {
             db.execute(
-                &format!("ALTER TABLE review_occurrence ADD COLUMN {column} {kind}"),
+                &format!("ALTER TABLE {table} ADD COLUMN {column} {kind}"),
                 [],
             )?;
         }
     }
+    let has = |table: &str| -> Result<bool> {
+        Ok(db.query_row(
+            "SELECT EXISTS(SELECT 1 FROM sqlite_master WHERE type='table' AND name=?1)",
+            [table],
+            |r| r.get(0),
+        )?)
+    };
+    let (ot, peshitta, greek) = (
+        has("word_info")? && has("word")?,
+        has("nt_word")?,
+        has("greek_word")? && has("greek_lemma")? && has("greek_english")?,
+    );
+    if ot {
+        db.execute_batch(
+            "UPDATE word SET info_id = (SELECT base_id FROM word_info r WHERE r.info_id = word.info_id)
+               WHERE info_id IN (SELECT info_id FROM word_info WHERE base_id IS NOT NULL);
+             DELETE FROM word_info WHERE base_id IS NOT NULL;",
+        )?;
+    }
+    if peshitta {
+        db.execute_batch(
+            "UPDATE nt_word SET root = NULL, gloss = NULL, entry_id = NULL, lexeme = NULL, cell_id = NULL
+               WHERE root IS NOT NULL OR gloss IS NOT NULL OR entry_id IS NOT NULL OR cell_id IS NOT NULL",
+        )?;
+    }
+    if greek {
+        db.execute_batch(
+            "UPDATE greek_word SET lemma_id = base_lemma_id, english_id = base_english_id,
+                 grammar_id = base_grammar_id, reviewed = NULL, base_lemma_id = NULL,
+                 base_english_id = NULL, base_grammar_id = NULL
+               WHERE reviewed IS NOT NULL",
+        )?;
+    }
     let root = src_texts.join("Haqor-Review");
-    db.execute("DELETE FROM review_occurrence", [])?;
     if !root.try_exists()? {
         return Ok(Vec::new());
     }
@@ -499,8 +655,28 @@ pub(crate) fn import_review_occurrences(
         Ok(())
     }
     visit(&root, &mut files)?;
+    files.sort();
+    let mut glosses = if ot {
+        Some(TextIds::new(db, "gloss", "text", "gloss_id")?)
+    } else {
+        None
+    };
+    let mut english = if greek {
+        Some(TextIds::new(db, "greek_english", "text", "english_id")?)
+    } else {
+        None
+    };
+    let mut grammar = if greek {
+        Some(TextIds::new(db, "greek_grammar", "code", "grammar_id")?)
+    } else {
+        None
+    };
+    let mut cells = if ot || peshitta {
+        Some(CellIds::new(db)?)
+    } else {
+        None
+    };
     let mut translations = Vec::new();
-    let mut insert = db.prepare("INSERT INTO review_occurrence(source,ref,position,lemma,root,morphology,gloss,sense,verse_gloss,language,qualifier,entry_id,lexeme) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)")?;
     let mut count = 0;
     for path in files {
         let packet: Value = serde_json::from_str(&std::fs::read_to_string(&path)?)
@@ -542,7 +718,7 @@ pub(crate) fn import_review_occurrences(
                 .with_context(|| format!("invalid reviewed translation in {}", path.display()))?;
             translations.push((source.to_owned(), reference, english.to_owned()));
         }
-        let glosses: HashMap<i64, &str> = review["glosses"]
+        let verse_glosses: HashMap<i64, &str> = review["glosses"]
             .as_array()
             .into_iter()
             .flatten()
@@ -568,30 +744,144 @@ pub(crate) fn import_review_occurrences(
                 "review packet surface differs from runtime at {source} {reference:#x} position {position}"
             );
             let analysis = &word["analysis"];
-            let verse_gloss = glosses.get(&position).copied();
+            let text = |key: &str| analysis[key].as_str().filter(|s| !s.is_empty());
+            // The gloss in context, where the verse review gave one.
+            let gloss = verse_glosses
+                .get(&position)
+                .copied()
+                .filter(|s| !s.is_empty())
+                .or(text("gloss"));
             let entry_id = analysis["entry"]["existing"]
                 .as_str()
                 .or_else(|| analysis["entry"]["draft"]["article_id"].as_str());
-            insert.execute(params![
-                source,
-                reference,
-                position,
-                analysis["lemma"].as_str(),
-                analysis["root"].as_str(),
-                analysis["morphology"].as_str(),
-                analysis["gloss"].as_str(),
-                analysis["sense"].as_str(),
-                verse_gloss,
-                analysis["language"].as_str(),
-                analysis["qualifier"].as_str(),
-                entry_id,
-                analysis["entry"]["word"].as_i64()
-            ])?;
+            let lexeme = analysis["entry"]["word"].as_i64();
+            // The reviewed OSHB reading over the word's segments (Hebrew, Aramaic
+            // and Syriac), or the Greek Robinson code.
+            let reading = match (text("morph"), analysis["segments"].as_str()) {
+                (Some(code), Some(parts)) if source != "greek" => {
+                    Some(haqor_core::bible::decode_oshb_morph(code, parts))
+                }
+                _ => None,
+            };
+            match source {
+                "ot" if ot => {
+                    let base: Option<(i64, i64, String, Option<i64>, i64, i64)> = db
+                        .query_row(
+                            "SELECT i.info_id, w.surface_id, i.root, i.gloss_id, i.cell_id, i.flags
+                             FROM word w JOIN word_info i ON i.info_id = w.info_id
+                             WHERE w.ref = ?1 AND w.position = ?2",
+                            params![reference, position],
+                            |r| {
+                                Ok((
+                                    r.get(0)?,
+                                    r.get(1)?,
+                                    r.get(2)?,
+                                    r.get(3)?,
+                                    r.get(4)?,
+                                    r.get(5)?,
+                                ))
+                            },
+                        )
+                        .optional()?;
+                    // Every corpus word has a rendering; one without has
+                    // nothing for the review to refine.
+                    let Some((base_id, surface_id, base_root, base_gloss, cell_id, flags)) = base
+                    else {
+                        continue;
+                    };
+                    let gloss_id = match gloss {
+                        Some(g) => Some(glosses.as_mut().unwrap().id(g)?),
+                        None => base_gloss,
+                    };
+                    let (cell_id, flags) = match &reading {
+                        Some(word) => (
+                            cells.as_mut().unwrap().id(&MorphCell::of(word))?,
+                            if word.vav_con { FLAG_VAV_CON } else { 0 }
+                                | if word.is_name { FLAG_IS_NAME } else { 0 },
+                        ),
+                        None => (cell_id, flags),
+                    };
+                    db.execute(
+                        "INSERT INTO word_info(surface_id, root, gloss_id, cell_id, flags, entry_id, lexeme, base_id)
+                         VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8)",
+                        params![
+                            surface_id,
+                            text("root").map(str::to_owned).unwrap_or(base_root),
+                            gloss_id,
+                            cell_id,
+                            flags | FLAG_REVIEWED,
+                            entry_id,
+                            lexeme,
+                            base_id
+                        ],
+                    )?;
+                    db.execute(
+                        "UPDATE word SET info_id = ?3 WHERE ref = ?1 AND position = ?2",
+                        params![reference, position, db.last_insert_rowid()],
+                    )?;
+                }
+                "peshitta" if peshitta => {
+                    let cell_id = match &reading {
+                        Some(word) => Some(cells.as_mut().unwrap().id(&MorphCell::of(word))?),
+                        None => None,
+                    };
+                    db.execute(
+                        "UPDATE nt_word SET root = ?3, gloss = ?4, entry_id = ?5, lexeme = ?6, cell_id = ?7
+                         WHERE ref = ?1 AND ord = ?2",
+                        params![reference, position, text("root"), gloss, entry_id, lexeme, cell_id],
+                    )?;
+                }
+                "greek" if greek => {
+                    db.execute(
+                        "UPDATE greek_word SET reviewed = 1, base_lemma_id = lemma_id,
+                             base_english_id = english_id, base_grammar_id = grammar_id
+                         WHERE ref = ?1 AND position = ?2",
+                        params![reference, position],
+                    )?;
+                    if let Some(g) = gloss {
+                        let id = english.as_mut().unwrap().id(g)?;
+                        db.execute(
+                            "UPDATE greek_word SET english_id = ?3 WHERE ref = ?1 AND position = ?2",
+                            params![reference, position, id],
+                        )?;
+                    }
+                    if let Some(code) = text("morph") {
+                        let id = grammar.as_mut().unwrap().id(code)?;
+                        db.execute(
+                            "UPDATE greek_word SET grammar_id = ?3 WHERE ref = ?1 AND position = ?2",
+                            params![reference, position, id],
+                        )?;
+                    }
+                    if let (Some(lemma), Some(lexical)) = (text("lemma"), text("gloss")) {
+                        let id: i64 = match db
+                            .query_row(
+                                "SELECT lemma_id FROM greek_lemma WHERE lemma = ?1 AND gloss = ?2",
+                                [lemma, lexical],
+                                |r| r.get(0),
+                            )
+                            .optional()?
+                        {
+                            Some(id) => id,
+                            None => {
+                                db.execute(
+                                    "INSERT INTO greek_lemma(lemma, gloss) VALUES (?1, ?2)",
+                                    [lemma, lexical],
+                                )?;
+                                db.last_insert_rowid()
+                            }
+                        };
+                        db.execute(
+                            "UPDATE greek_word SET lemma_id = ?3 WHERE ref = ?1 AND position = ?2",
+                            params![reference, position, id],
+                        )?;
+                    }
+                }
+                _ => continue,
+            }
             count += 1;
         }
     }
-    info!("Imported {count} reviewed lexical occurrences");
-    crate::haqor_lexicon::check_review_lexemes(db)?;
+    info!("Merged {count} reviewed word analyses into the word tables");
     Ok(translations)
 }
 
@@ -640,27 +930,6 @@ CREATE TABLE word(
     PRIMARY KEY(ref, position)
 ) WITHOUT ROWID;
 
--- Source-linked lexical decisions made by the resumable corpus review.  The
--- generated tables remain the fallback, while this keyed overlay lets the
--- reader show a completed word decision without changing source databases.
-CREATE TABLE review_occurrence(
-    source TEXT NOT NULL,
-    ref INTEGER NOT NULL,
-    position INTEGER NOT NULL,
-    lemma TEXT,
-    root TEXT,
-    morphology TEXT,
-    gloss TEXT,
-    sense TEXT,
-    verse_gloss TEXT,
-    language TEXT,
-    qualifier TEXT,
-    entry_id TEXT,
-    -- The lexeme: its index in the article's `words` (haqor_lexicon.json).
-    lexeme INTEGER,
-    PRIMARY KEY(source, ref, position)
-) WITHOUT ROWID;
-
 -- `word` with its reference unpacked. The tutor scores whole-corpus
 -- aggregates by book/chapter/verse; `ref` passes through so a query that
 -- filters on a reference still uses the primary key.
@@ -675,7 +944,13 @@ CREATE TABLE word_info(
     root       TEXT    NOT NULL,
     gloss_id   INTEGER,
     cell_id    INTEGER NOT NULL,
-    flags      INTEGER NOT NULL
+    flags      INTEGER NOT NULL,
+    -- A reviewed analysis (flags & 4) of one word: its Haqor lexicon article,
+    -- the lexeme (its index in the article's `words`), and the generated
+    -- analysis it refines.
+    entry_id   TEXT,
+    lexeme     INTEGER,
+    base_id    INTEGER
 );
 
 CREATE TABLE morph_cell(
@@ -856,6 +1131,14 @@ CREATE TABLE nt_word(
     ref     INTEGER NOT NULL,
     ord     INTEGER NOT NULL,
     word_id INTEGER NOT NULL,
+    -- The corpus review's root, gloss in context, Haqor lexicon article and
+    -- lexeme, where the word has been reviewed.
+    root     TEXT,
+    gloss    TEXT,
+    entry_id TEXT,
+    lexeme   INTEGER,
+    -- The reviewed morphology (morph_cell).
+    cell_id  INTEGER,
     PRIMARY KEY(ref, ord)
 ) WITHOUT ROWID;
 ";

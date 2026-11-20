@@ -6,6 +6,7 @@ mod inventory;
 mod jobs;
 mod lexemes;
 mod live;
+mod morph;
 mod people;
 mod progress;
 mod quota;
@@ -146,6 +147,9 @@ enum Action {
         #[arg(long, default_value = "data/lexicon")]
         lexicon: PathBuf,
     },
+    /// Record the machine-readable morphology on occurrences reviewed before it
+    /// was required, from agreeing OSHB tags; reopen the rest.
+    FillMorph,
     /// Write reviewed verse packets including lexical drafts and contextual glosses to stdout as JSONL.
     Export,
 }
@@ -403,6 +407,7 @@ fn main() -> Result<()> {
             lexicon,
         } => people::publish(&db, &src_texts, &data, &lexicon),
         Action::Export => export(&db),
+        Action::FillMorph => morph::fill(&mut db, &src.join("Haqor-Review"), Path::new(&data)),
         Action::LinkLexemes { lexicon } => {
             lexemes::link(&mut db, &src.join("Haqor-Review"), &lexicon)
         }
@@ -784,7 +789,7 @@ mod tests {
     }
     fn word() -> Value {
         json!({"language":"grc","lemma":"λόγος","root":"","qualifier":"","morphology":"noun",
-            "sense":"word","gloss":"word","evidence":"fixture occurrence","entry":{"draft":{"definition":"word","change":"new","evidence":"fixture"},"word":0}})
+            "morph":"N-NSM","segments":"","sense":"word","gloss":"word","evidence":"fixture occurrence","entry":{"draft":{"definition":"word","change":"new","evidence":"fixture"},"word":0}})
     }
     fn verse(p: &Value) -> Value {
         let words = p["words"].as_array().unwrap();

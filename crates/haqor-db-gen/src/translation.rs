@@ -2102,9 +2102,7 @@ pub fn build_translation(
         .enumerate()
         .map(|(i, (r, _))| (*r, i))
         .collect();
-    for (source, reference, english) in
-        crate::runtime_db::import_review_occurrences(&tx, src_texts)?
-    {
+    for (source, reference, english) in crate::runtime_db::apply_reviews(&tx, src_texts)? {
         let (rows, indices) = if source == "greek" {
             (&mut greek, &mut greek_indices)
         } else {
@@ -2298,7 +2296,7 @@ mod tests {
         .unwrap();
         let db = Connection::open_in_memory().unwrap();
         let tx = db.unchecked_transaction().unwrap();
-        let result = crate::runtime_db::import_review_occurrences(&tx, &src).unwrap();
+        let result = crate::runtime_db::apply_reviews(&tx, &src).unwrap();
         assert_eq!(
             result,
             vec![(

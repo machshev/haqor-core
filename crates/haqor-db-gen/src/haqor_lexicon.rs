@@ -120,7 +120,7 @@ pub fn build_haqor_lexicon(db: &Connection, dir: &Path, src_texts: &Path) -> Res
         }
     }
     tx.commit()?;
-    check_review_lexemes(db)?;
+    check_review_lexemes(&lexicon, src_texts)?;
     info!(
         "Haqor lexicon: {} entries, {} names",
         lexicon.entries.len(),
@@ -130,46 +130,73 @@ pub fn build_haqor_lexicon(db: &Connection, dir: &Path, src_texts: &Path) -> Res
 }
 
 /// Reviewed occurrences address a lexeme by its index in the article's
-/// `words`. Warn of any whose index no longer names a word with the reviewed
-/// dictionary form, as after an article's words were reordered by hand.
-pub fn check_review_lexemes(db: &Connection) -> Result<usize> {
-    let present: bool = db.query_row(
-        "SELECT count(*) = 2 FROM sqlite_master WHERE type = 'table' AND name IN ('review_occurrence', 'haqor_lexicon')",
-        [],
-        |r| r.get(0),
-    )?;
-    if !present {
+/// `words`. Warn of any in `src_texts/Haqor-Review` whose index no longer
+/// names a word with the reviewed dictionary form, as after an article's
+/// words were reordered by hand.
+pub fn check_review_lexemes(lexicon: &Lexicon, src_texts: &Path) -> Result<usize> {
+    let root = src_texts.join("Haqor-Review");
+    if !root.try_exists()? {
         return Ok(0);
     }
-    let mut stmt = db.prepare(
-        "SELECT r.source, r.ref, r.position, r.entry_id, r.lexeme, r.lemma,
-                json_extract(h.json, '$.words[' || r.lexeme || '].lemma')
-         FROM review_occurrence r JOIN haqor_lexicon h ON h.id = r.entry_id
-         WHERE r.lexeme IS NOT NULL AND json_type(h.json, '$.words') = 'array'
-           -- A name article may share its id with an ordinary one.
-           AND NOT (r.lexeme = 0 AND EXISTS (SELECT 1 FROM haqor_lexicon_name n
-                    WHERE n.id = r.entry_id AND json_extract(n.json, '$.name') = r.lemma))",
-    )?;
-    let mut rows = stmt.query([])?;
+    let nfc = |s: &str| s.nfc().collect::<String>();
+    let mut files = Vec::new();
+    let mut dirs = vec![root];
+    while let Some(dir) = dirs.pop() {
+        for entry in std::fs::read_dir(&dir)? {
+            let path = entry?.path();
+            if path.is_dir() {
+                dirs.push(path);
+            } else if path.extension().is_some_and(|e| e == "json") {
+                files.push(path);
+            }
+        }
+    }
+    files.sort();
     let mut wrong = Vec::new();
-    while let Some(row) = rows.next()? {
-        let lemma: Option<String> = row.get(5)?;
-        let found: Option<String> = row.get(6)?;
-        let same = match (&lemma, &found) {
-            (Some(a), Some(b)) => a.nfc().eq(b.nfc()),
-            _ => false,
-        };
-        if !same {
-            wrong.push(format!(
-                "{} {:#x}:{} {} word {} is {:?}, reviewed as {:?}",
-                row.get::<_, String>(0)?,
-                row.get::<_, i64>(1)?,
-                row.get::<_, i64>(2)?,
-                row.get::<_, String>(3)?,
-                row.get::<_, i64>(4)?,
-                found,
-                lemma
-            ));
+    for path in files {
+        let packet: serde_json::Value = serde_json::from_str(&std::fs::read_to_string(&path)?)
+            .with_context(|| format!("parsing {}", path.display()))?;
+        if packet["source"] == "greek" {
+            continue;
+        }
+        for word in packet["words"].as_array().into_iter().flatten() {
+            let analysis = &word["analysis"];
+            let entry = &analysis["entry"];
+            let (Some(id), Some(index)) = (
+                entry["existing"]
+                    .as_str()
+                    .or(entry["draft"]["article_id"].as_str()),
+                entry["word"].as_u64(),
+            ) else {
+                continue;
+            };
+            let lemma = nfc(analysis["lemma"].as_str().unwrap_or(""));
+            // An Aramaic or Syriac name matches its Hebrew name article by its
+            // consonants, as haqor-review accepts it.
+            let syriac = matches!(analysis["language"].as_str(), Some("arc" | "syc"));
+            let fold = haqor_core::data_support::fold_consonants;
+            // A name article may share its id with an ordinary one.
+            let named = index == 0
+                && lexicon.names.iter().any(|n| {
+                    n.id == id && (nfc(&n.name) == lemma || syriac && fold(&n.name) == fold(&lemma))
+                });
+            let found = lexicon
+                .entries
+                .iter()
+                .find(|e| e.id == id)
+                .and_then(|e| e.words.get(index as usize))
+                .map(|w| nfc(&w.lemma));
+            // An article not published yet is checked when it is.
+            let unpublished = found.is_none()
+                && !lexicon.entries.iter().any(|e| e.id == id)
+                && !lexicon.names.iter().any(|n| n.id == id);
+            if !named && !unpublished && found.as_deref() != Some(lemma.as_str()) {
+                wrong.push(format!(
+                    "{} position {}: {id} word {index} is {found:?}, reviewed as {lemma}",
+                    path.display(),
+                    word["position"]
+                ));
+            }
         }
     }
     if !wrong.is_empty() {
@@ -202,25 +229,32 @@ mod tests {
 
     #[test]
     fn a_review_lexeme_index_must_name_the_reviewed_word() -> Result<()> {
-        let db = Connection::open_in_memory()?;
-        db.execute_batch(
-            r#"CREATE TABLE review_occurrence(source TEXT, ref INTEGER, position INTEGER, lemma TEXT, entry_id TEXT, lexeme INTEGER);
-            CREATE TABLE haqor_lexicon(id TEXT, root TEXT, json TEXT);
-            CREATE TABLE haqor_lexicon_name(id TEXT, entry TEXT, json TEXT);
-            INSERT INTO haqor_lexicon VALUES('barak','ברכ','{"words":[{"lemma":"בָּרַךְ"},{"lemma":"בְּרָכָה"}]}');
-            INSERT INTO haqor_lexicon_name VALUES('barak','barak','{"name":"בָּרָק"}');
-            INSERT INTO review_occurrence VALUES('ot',1,0,'בָּרַךְ','barak',0),('ot',1,1,'בְּרָכָה','barak',1),('ot',1,2,'בָּרָק','barak',0);"#,
-        )?;
-        assert_eq!(check_review_lexemes(&db)?, 0);
-        db.execute(
-            "INSERT INTO review_occurrence VALUES('ot',1,3,'בְּרָכָה','barak',0)",
-            [],
-        )?;
-        db.execute(
-            "INSERT INTO review_occurrence VALUES('ot',1,4,'בְּרָכָה','barak',7)",
-            [],
-        )?;
-        assert_eq!(check_review_lexemes(&db)?, 2);
+        let src = std::env::temp_dir().join(format!("haqor-review-lexemes-{}", std::process::id()));
+        let dir = src.join("Haqor-Review/ot/1/1");
+        std::fs::create_dir_all(&dir)?;
+        let word = |position: u32, lemma: &str, index: u32| serde_json::json!({"position":position,"surface":"x","analysis":{"lemma":lemma,"entry":{"existing":"barak","word":index}}});
+        let write = |words: Vec<serde_json::Value>| {
+            std::fs::write(
+                dir.join("1.json"),
+                serde_json::json!({"source":"ot","book":1,"chapter":1,"verse":1,"words":words})
+                    .to_string(),
+            )
+        };
+        let mut lexicon = Lexicon {
+            sources: Vec::new(),
+            entries: Vec::new(),
+            names: Vec::new(),
+        };
+        let entry: Entry = serde_json::from_value(serde_json::json!({
+            "id":"barak","root":"ברכ","status":"draft","updated":"2026-11-20","gloss":"bless","summary":"",
+            "words":[{"lemma":"בָּרַךְ","pos":"verb","gloss":"bless"},{"lemma":"בְּרָכָה","pos":"noun","gloss":"blessing"}]
+        }))?;
+        lexicon.entries.push(entry);
+        write(vec![word(0, "בָּרַךְ", 0), word(1, "בְּרָכָה", 1)])?;
+        assert_eq!(check_review_lexemes(&lexicon, &src)?, 0);
+        write(vec![word(0, "בְּרָכָה", 0), word(1, "בְּרָכָה", 7)])?;
+        assert_eq!(check_review_lexemes(&lexicon, &src)?, 2);
+        std::fs::remove_dir_all(src)?;
         Ok(())
     }
 }

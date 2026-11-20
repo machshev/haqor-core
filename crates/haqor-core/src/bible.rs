@@ -775,6 +775,138 @@ pub(crate) fn apply_oshb_analysis(
     (word, oshb_strong(&analysis.lemma, main_index))
 }
 
+/// Why `code` is not a well-formed OSHB morphology code, checked position by
+/// position: a language letter (`H` Hebrew, `A` Aramaic, also used for
+/// Syriac) and `/`-separated segments of one part of speech each, the main
+/// word last apart from trailing suffixes (`S…`). This is the grammar of
+/// every code in the OSHB, which a reviewed morphology must also follow.
+pub fn oshb_morph_error(code: &str) -> Option<String> {
+    let mut chars = code.chars();
+    let aramaic = match chars.next() {
+        Some('H') => false,
+        Some('A') => true,
+        _ => return Some("an OSHB code starts with H (Hebrew) or A (Aramaic, Syriac)".into()),
+    };
+    let segments: Vec<&str> = chars.as_str().split('/').collect();
+    let Some(main) = segments.iter().rposition(|s| !s.starts_with('S')) else {
+        return Some("the code has no word segment, only suffixes".into());
+    };
+    if segments[..main].iter().any(|s| s.starts_with('S')) {
+        return Some("a suffix segment (S…) can only follow the word".into());
+    }
+    let one_of = |c: Option<char>, set: &str| c.is_some_and(|c| set.contains(c));
+    for segment in &segments {
+        let s: Vec<char> = segment.chars().collect();
+        let at = |i: usize| s.get(i).copied();
+        let ok = match (at(0), s.len()) {
+            (Some('C' | 'D'), 1) => true,
+            (Some('R'), 1) => true,
+            (Some('R'), 2) => at(1) == Some('d'),
+            (Some('T'), 1) => true,
+            (Some('T'), 2) => one_of(at(1), "adeijmnor"),
+            (Some('A'), 5) => {
+                one_of(at(1), "acgo")
+                    && one_of(at(2), "bcfmx")
+                    && one_of(at(3), "dpsx")
+                    && one_of(at(4), "acd")
+            }
+            (Some('N'), 2) => at(1) == Some('p'),
+            (Some('N'), 5) => {
+                one_of(at(1), "cgx")
+                    && one_of(at(2), "bcfmx")
+                    && one_of(at(3), "dpsx")
+                    && one_of(at(4), "acd")
+            }
+            (Some('P'), 2) => one_of(at(1), "fi"),
+            (Some('P'), 5) => {
+                one_of(at(1), "dfipr")
+                    && one_of(at(2), "123x")
+                    && one_of(at(3), "bcfm")
+                    && one_of(at(4), "ps")
+            }
+            (Some('S'), 2) => one_of(at(1), "dhn"),
+            (Some('S'), 5) => {
+                at(1) == Some('p')
+                    && one_of(at(2), "123")
+                    && one_of(at(3), "cfm")
+                    && one_of(at(4), "ps")
+            }
+            (Some('V'), 3) => {
+                at(1).is_some_and(|c| oshb_binyan(c, aramaic).is_some()) && one_of(at(2), "ac")
+            }
+            (Some('V'), 6) => {
+                at(1).is_some_and(|c| oshb_binyan(c, aramaic).is_some())
+                    && match at(2) {
+                        // Participles: gender, number, state.
+                        Some('r' | 's') => {
+                            one_of(at(3), "bcfm") && one_of(at(4), "dps") && one_of(at(5), "acd")
+                        }
+                        // Finite forms: person, gender, number.
+                        Some('h' | 'i' | 'j' | 'p' | 'q' | 'v' | 'w') => {
+                            one_of(at(3), "123") && one_of(at(4), "bcfm") && one_of(at(5), "dps")
+                        }
+                        _ => false,
+                    }
+            }
+            _ => false,
+        };
+        if !ok {
+            return Some(format!(
+                "segment {segment:?} is not an OSHB part-of-speech code"
+            ));
+        }
+    }
+    None
+}
+
+/// Why `parts` (the word's surface split at `/` into the code's segments, as
+/// the OSHB writes `וַ/יְבָרֶךְ`) does not fit `code` and `surface`.
+pub fn oshb_parts_error(code: &str, parts: &str, surface: &str) -> Option<String> {
+    if let Some(error) = oshb_morph_error(code) {
+        return Some(error);
+    }
+    let segments = code.split('/').count();
+    let pieces: Vec<&str> = parts.split('/').collect();
+    if pieces.len() != segments {
+        return Some(format!(
+            "segments {parts:?} has {} parts for the code's {segments}",
+            pieces.len()
+        ));
+    }
+    let joined = crate::normalize_surface(&pieces.concat());
+    let maqaf = |s: &str| s.trim_end_matches('\u{05BE}').to_string();
+    if maqaf(&joined) != maqaf(&crate::normalize_surface(surface))
+        || pieces.iter().any(|p| p.is_empty())
+    {
+        return Some(format!(
+            "segments {parts:?} do not spell the word {surface:?}"
+        ));
+    }
+    None
+}
+
+/// The grammatical reading of a reviewed OSHB code over its segmented
+/// surface: part of speech, stem, form, person, gender, number, state, the
+/// proclitic prefix and any pronominal suffix, with the vav-consecutive and
+/// proper-name flags. Only the grammatical fields of the word are set.
+pub fn decode_oshb_morph(code: &str, parts: &str) -> HebrewWord {
+    apply_oshb_analysis(
+        HebrewWord::default(),
+        &OshbAnalysis {
+            source_word: parts.to_string(),
+            lemma: String::new(),
+            morph: code.to_string(),
+        },
+    )
+    .0
+}
+
+/// An OSHB-segmented word (`וַ/יְבָרֶךְ`) as the reader spells it: each
+/// part normalized, accents and all, the `/` kept.
+pub fn normalize_oshb_segments(source_word: &str) -> String {
+    normalize_oshb_word(source_word)
+}
+
 /// Reader-only metadata aligned with the lexical words in one verse.
 ///
 /// The chapter reader normally needs both compact glosses and proper-name
@@ -3144,6 +3276,8 @@ const WORD_INFO_JOINS: &str = "LEFT JOIN data.word_info wi ON wi.info_id = %.inf
 
 const FLAG_VAV_CON: i64 = 1;
 const FLAG_IS_NAME: i64 = 2;
+/// The analysis a corpus review gave one word (haqor-review).
+const FLAG_REVIEWED: i64 = 4;
 
 /// Rebuild a [`HebrewWord`] from a stored rendering, starting at column
 /// `first`. `None` when the row carried no rendering at all.
@@ -3745,30 +3879,19 @@ impl Bible {
         // stored rendering with it. This used to be a four-table join per
         // chapter plus a resolution — and a cache to make the repeats
         // bearable — for an answer that is now fixed at build time.
-        let reviewed_overlay = self.has_table("review_occurrence")?;
-        let columns = if reviewed_overlay {
-            "COALESCE(rg.text, ''), COALESCE(ro.root, wi.root), COALESCE(ro.gloss, g.text, ''), c.part_of_speech, c.form, c.tense, c.person, c.gender, c.number, c.state, c.prefix, c.obj_suffix, coalesce(wi.flags,0), coalesce(ro.verse_gloss,ro.gloss),ro.morphology".to_owned()
-        } else {
-            format!("COALESCE(rg.text, ''), {WORD_INFO_COLUMNS}, NULL, NULL")
-        };
-        let overlay_join = if reviewed_overlay {
-            "LEFT JOIN data.review_occurrence ro ON ro.source='ot' AND ro.ref=w.ref AND ro.position=w.position"
-        } else {
-            ""
-        };
+        // A reviewed analysis carries the reviewer's gloss in context, which
+        // the reader shows ahead of the curated and generated glosses.
         let sql = format!(
             "SELECT w.ref & 255, w.position, w.surface_id, s.text, \
-                    {columns} \
+                    COALESCE(rg.text, ''), {WORD_INFO_COLUMNS}, \
+                    CASE WHEN wi.flags & {FLAG_REVIEWED} THEN g.text END, NULL \
              FROM data.word w \
              JOIN data.surface s ON s.surface_id = w.surface_id \
              LEFT JOIN data.reader_gloss rg ON rg.gloss_id = w.gloss_id \
              {joins} \
-             {overlay_join} \
              WHERE w.ref BETWEEN ?1 AND ?2 \
              ORDER BY w.ref, w.position",
             joins = WORD_INFO_JOINS.replace('%', "w"),
-            columns = columns,
-            overlay_join = overlay_join,
         );
         let mut stmt = self.db.prepare(&sql)?;
         let (first, last) = chapter_range(book, chapter);
@@ -3898,20 +4021,24 @@ impl Bible {
         // the primary key with the source token order already in it — where
         // the generation schema needed an unindexed scan of all 109k
         // occurrences and a rowid sort.
-        let reviewed_overlay = self.has_table("review_occurrence")?;
-        let sql = if reviewed_overlay {
+        // A reviewed word's own root, gloss in context and morphology cell are
+        // on its row. The cell is read as a stored rendering (columns 5-16).
+        let cells = self.has_column("nt_word", "cell_id")?;
+        let sql = if cells {
             "SELECT o.ref & 255, \
-                    coalesce(ro.verse_gloss, ro.gloss, (SELECT trim(coalesce(e.before, '') || ' ' || \
+                    coalesce(o.gloss, (SELECT trim(coalesce(e.before, '') || ' ' || \
                                  coalesce(e.meaning, '') || ' ' || \
                                  coalesce(e.after, '')) \
                      FROM data.syriac_gloss e \
                      WHERE e.lexeme_id = w.lexeme_id \
-                     ORDER BY e.gloss_id LIMIT 1)), coalesce(ro.root, r.root), coalesce(ro.morphology, ''), o.ord \
+                     ORDER BY e.gloss_id LIMIT 1)), coalesce(o.root, r.root), '', o.ord, \
+                    CASE WHEN c.cell_id IS NOT NULL THEN '' END, '', c.part_of_speech, c.form, c.tense, \
+                    c.person, c.gender, c.number, c.state, c.prefix, c.obj_suffix, 0 \
              FROM data.nt_word o \
              JOIN data.syriac_word w ON w.word_id = o.word_id \
+             LEFT JOIN data.morph_cell c ON c.cell_id = o.cell_id \
              LEFT JOIN data.syriac_lexeme l ON l.lexeme_id = w.lexeme_id \
              LEFT JOIN data.syriac_root r ON r.root_id = l.root_id \
-             LEFT JOIN data.review_occurrence ro ON ro.source='peshitta' AND ro.ref=o.ref AND ro.position=o.ord \
              WHERE o.ref BETWEEN ?1 AND ?2 \
              ORDER BY o.ref, o.ord"
         } else {
@@ -3940,9 +4067,14 @@ impl Bible {
                 verse_metadata
                     .glosses
                     .push(row.get::<_, Option<String>>(1)?.unwrap_or_default());
+                let cell = if cells {
+                    word_from_row(row, 5, "")?
+                } else {
+                    None
+                };
                 verse_metadata
                     .morphologies
-                    .push(row.get::<_, Option<String>>(3)?.unwrap_or_default());
+                    .push(cell.as_ref().map(morph_summary).unwrap_or_default());
             }
             if include_names {
                 // SEDRA has no dependable proper-name flag. Keep the vector
@@ -4099,21 +4231,7 @@ impl Bible {
             &sql,
             rusqlite::params![pack_ref(book, chapter, verse), position as i64, norm],
             &norm,
-        ).map(|mut info| {
-            if let Ok(Some((root, gloss))) = self.db.query_row(
-                "SELECT root, coalesce(verse_gloss, gloss, '') FROM data.review_occurrence WHERE source='ot' AND ref=?1 AND position=?2",
-                rusqlite::params![pack_ref(book, chapter, verse), position as i64],
-                |row| Ok((row.get::<_, Option<String>>(0)?, row.get::<_, String>(1)?)),
-            ).optional() {
-                if let Some(root) = root { info.root = root; }
-                if !gloss.is_empty() { info.gloss = gloss; }
-            }
-            if let Ok(Some((root, gloss, _))) = self.lexicon_entry_override(&info.word) {
-                info.root = root;
-                info.gloss = gloss;
-            }
-            info
-        })
+        )
     }
 
     /// A lexicon entry's article, decoded from however the build stored it.
@@ -4426,19 +4544,29 @@ impl Bible {
         verse: u8,
         position: u32,
     ) -> rusqlite::Result<Option<(String, String, Option<u32>)>> {
-        if !self.has_table("review_occurrence")? || !self.has_table("haqor_lexicon")? {
+        if !self.has_table("haqor_lexicon")? {
             return Ok(None);
         }
-        // Databases built before the review recorded lexemes lack the column.
-        let lexeme = if self.has_column("review_occurrence", "lexeme")? {
-            "lexeme"
+        // The OT word's reviewed analysis, or the Peshitta word's own row.
+        // Databases built before reviews were merged lack the columns.
+        let sql = if book < 40 {
+            if !self.has_column("word_info", "entry_id")? {
+                return Ok(None);
+            }
+            "SELECT wi.entry_id, wi.lexeme FROM data.word w \
+             JOIN data.word_info wi ON wi.info_id = w.info_id \
+             WHERE w.ref = ?1 AND w.position = ?2 AND wi.entry_id IS NOT NULL"
         } else {
-            "NULL"
+            if !self.has_column("nt_word", "entry_id")? {
+                return Ok(None);
+            }
+            "SELECT entry_id, lexeme FROM data.nt_word \
+             WHERE ref = ?1 AND ord = ?2 AND entry_id IS NOT NULL"
         };
         let found: Option<(String, Option<u32>)> = self
             .db
             .query_row(
-                &format!("SELECT entry_id,{lexeme} FROM data.review_occurrence WHERE source IN ('ot','peshitta') AND ref=?1 AND position=?2 AND entry_id IS NOT NULL"),
+                sql,
                 rusqlite::params![pack_ref(book, chapter, verse), position],
                 |row| Ok((row.get(0)?, row.get(1)?)),
             )
@@ -6428,26 +6556,14 @@ impl Bible {
         if !self.has_greek()? {
             return Ok(Vec::new());
         }
-        let reviewed = self.has_table("review_occurrence")?;
-        let sql = if reviewed {
-            "SELECT w.ref & 255, w.position, w.word, coalesce(ro.verse_gloss, e.text, ''), \
-                    coalesce(ro.lemma, l.lemma, ''), coalesce(ro.gloss, l.gloss, ''), coalesce(g.code, ''), \
-                    w.entity_id \
-             FROM data.greek_word w \
-             LEFT JOIN data.greek_english e ON e.english_id = w.english_id \
-             LEFT JOIN data.greek_lemma l ON l.lemma_id = w.lemma_id \
-             LEFT JOIN data.greek_grammar g ON g.grammar_id = w.grammar_id \
-             LEFT JOIN data.review_occurrence ro ON ro.source='greek' AND ro.ref=w.ref AND ro.position=w.position \
-             WHERE w.ref BETWEEN ?1 AND ?2 ORDER BY w.ref, w.position"
-        } else {
-            "SELECT w.ref & 255, w.position, w.word, coalesce(e.text, ''), \
+        // The build merges reviewed glosses and dictionary forms into the ids.
+        let sql = "SELECT w.ref & 255, w.position, w.word, coalesce(e.text, ''), \
                     coalesce(l.lemma, ''), coalesce(l.gloss, ''), coalesce(g.code, ''), w.entity_id \
              FROM data.greek_word w \
              LEFT JOIN data.greek_english e ON e.english_id = w.english_id \
              LEFT JOIN data.greek_lemma l ON l.lemma_id = w.lemma_id \
              LEFT JOIN data.greek_grammar g ON g.grammar_id = w.grammar_id \
-             WHERE w.ref BETWEEN ?1 AND ?2 ORDER BY w.ref, w.position"
-        };
+             WHERE w.ref BETWEEN ?1 AND ?2 ORDER BY w.ref, w.position";
         let mut stmt = self.db.prepare_cached(sql)?;
         let mut verses: Vec<GreekVerse> = Vec::new();
         let mut rows = stmt.query([first, last])?;
@@ -8894,18 +9010,69 @@ mod tests {
     }
 
     #[test]
+    fn reviewed_morphology_follows_the_oshb_grammar() {
+        assert_eq!(oshb_morph_error("HC/Vpw3ms"), None);
+        assert_eq!(oshb_morph_error("HNcmpc/Sp3ms"), None);
+        assert_eq!(
+            oshb_morph_error("ANpm"),
+            Some("segment \"Npm\" is not an OSHB part-of-speech code".into())
+        );
+        assert!(oshb_morph_error("HVqw3xs").is_some());
+        assert!(oshb_morph_error("HSp3ms/Ncmsa").is_some());
+        assert!(oshb_morph_error("Vqp3ms").is_some());
+        // Segments must spell the word, one per segment of the code.
+        assert_eq!(oshb_parts_error("HC/Vpw3ms", "וַ/יְבָרֶךְ", "וַיְבָרֶךְ"), None);
+        assert!(oshb_parts_error("HC/Vpw3ms", "וַיְבָרֶךְ", "וַיְבָרֶךְ").is_some());
+        assert!(oshb_parts_error("HC/Vpw3ms", "וַ/יְבָרֵךְ", "וַיְבָרֶךְ").is_some());
+        let word = decode_oshb_morph("HC/Vpw3ms", "וַ/יְבָרֶךְ");
+        assert_eq!(word.form.as_deref(), Some("Piel"));
+        assert_eq!(word.tense.as_deref(), Some("Wayyiqtol"));
+        assert_eq!(word.prefix.as_deref(), Some("וַ"));
+        // Every reading the OSHB gives is well formed.
+        let path = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data/hebrew.db");
+        if let Ok(db) =
+            Connection::open_with_flags(&path, rusqlite::OpenFlags::SQLITE_OPEN_READ_ONLY)
+        {
+            let mut stmt = db
+                .prepare("SELECT DISTINCT morph, source_word FROM oshb_primary")
+                .unwrap();
+            let mut rows = stmt.query([]).unwrap();
+            let mut checked = 0;
+            while let Some(row) = rows.next().unwrap() {
+                let (code, word): (String, String) = (row.get(0).unwrap(), row.get(1).unwrap());
+                let parts = normalize_oshb_segments(&word);
+                assert_eq!(
+                    oshb_parts_error(&code, &parts, &parts.replace('/', "")),
+                    None,
+                    "{code} {word}"
+                );
+                checked += 1;
+            }
+            assert!(checked > 3000, "{checked}");
+        }
+    }
+
+    #[test]
     fn a_reviewed_occurrence_names_its_article_and_lexeme() {
         let db = Connection::open_in_memory().unwrap();
         db.execute_batch(
             "ATTACH DATABASE ':memory:' AS data;
              CREATE TABLE data.haqor_lexicon(id TEXT, root TEXT, json TEXT);
-             CREATE TABLE data.review_occurrence(source TEXT, ref INTEGER, position INTEGER, entry_id TEXT);
-             INSERT INTO data.haqor_lexicon VALUES ('barak', 'ברכ', '{}');",
+             CREATE TABLE data.word(ref INTEGER, position INTEGER, info_id INTEGER);
+             CREATE TABLE data.word_info(info_id INTEGER, flags INTEGER);
+             CREATE TABLE data.nt_word(ref INTEGER, ord INTEGER);
+             INSERT INTO data.haqor_lexicon VALUES ('barak', 'ברכ', '{}');
+             INSERT INTO data.word_info VALUES (1, 0);",
         )
         .unwrap();
         db.execute(
-            "INSERT INTO data.review_occurrence VALUES ('ot', ?1, 0, 'barak')",
+            "INSERT INTO data.word VALUES (?1, 0, 1), (?1, 1, 1)",
             [pack_ref(1, 9, 1)],
+        )
+        .unwrap();
+        db.execute(
+            "INSERT INTO data.nt_word VALUES (?1, 2)",
+            [pack_ref(40, 1, 1)],
         )
         .unwrap();
         let bible = Bible {
@@ -8913,23 +9080,36 @@ mod tests {
             blobs: BlobReader::Plain,
             runtime_lexicon_entries: RefCell::new(HashMap::new()),
         };
-        // A database built before lexemes were recorded.
-        assert_eq!(
-            bible.haqor_lexicon_entry_at(1, 9, 1, 0).unwrap(),
-            Some(("barak".into(), "{}".into(), None))
-        );
+        // A database built before reviews were merged into the word tables.
+        assert_eq!(bible.haqor_lexicon_entry_at(1, 9, 1, 0).unwrap(), None);
         bible
             .db
             .execute_batch(
-                "ALTER TABLE data.review_occurrence ADD COLUMN lexeme INTEGER;
-                 UPDATE data.review_occurrence SET lexeme = 4;",
+                "ALTER TABLE data.word_info ADD COLUMN entry_id TEXT;
+                 ALTER TABLE data.word_info ADD COLUMN lexeme INTEGER;
+                 ALTER TABLE data.nt_word ADD COLUMN entry_id TEXT;
+                 ALTER TABLE data.nt_word ADD COLUMN lexeme INTEGER;
+                 INSERT INTO data.word_info VALUES (2, 4, 'barak', 4);
+                 UPDATE data.nt_word SET entry_id = 'barak';",
+            )
+            .unwrap();
+        bible
+            .db
+            .execute(
+                "UPDATE data.word SET info_id = 2 WHERE ref = ?1 AND position = 0",
+                [pack_ref(1, 9, 1)],
             )
             .unwrap();
         assert_eq!(
             bible.haqor_lexicon_entry_at(1, 9, 1, 0).unwrap(),
             Some(("barak".into(), "{}".into(), Some(4)))
         );
+        // An unreviewed word shares the generated analysis.
         assert_eq!(bible.haqor_lexicon_entry_at(1, 9, 1, 1).unwrap(), None);
+        assert_eq!(
+            bible.haqor_lexicon_entry_at(40, 1, 1, 2).unwrap(),
+            Some(("barak".into(), "{}".into(), None))
+        );
     }
 
     #[test]
