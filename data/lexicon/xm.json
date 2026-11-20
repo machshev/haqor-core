@@ -78,7 +78,6 @@
       "pos": "noun",
       "senses": [
         {
-          "id": "identifying-name",
           "cognate_ids": [
             "phn-shm",
             "akk-shumu"
@@ -91,9 +90,9 @@
               "role": "defining"
             },
             {
+              "note": "Cain names the city כְּשֵׁם בְּנוֹ, after the name of his son Enoch.",
               "ref": "Gen.4.17",
-              "role": "defining",
-              "note": "Cain names the city כְּשֵׁם בְּנוֹ, after the name of his son Enoch."
+              "role": "defining"
             },
             {
               "ref": "Exo.3.13",
@@ -128,34 +127,38 @@
               "to": "Exo.3.15"
             },
             {
-              "ref": "Gen.2.19",
-              "note": "The man gives names to the creatures brought before him."
+              "ref": "Exo.3.13",
+              "to": "Exo.3.15"
             },
             {
-              "ref": "Gen.2.20",
-              "note": "The man gives names to every beast, bird, and cattle."
+              "note": "The man gives names to the creatures brought before him.",
+              "ref": "Gen.2.19"
             },
             {
-              "ref": "Gen.4.21",
-              "note": "The name of Jubal identifies the place in the naming account."
+              "note": "The man gives names to every beast, bird, and cattle.",
+              "ref": "Gen.2.20"
             },
             {
-              "ref": "Gen.4.25",
-              "note": "Eve names the son given in place of Abel."
+              "note": "The name of Jubal identifies the place in the naming account.",
+              "ref": "Gen.4.21"
             },
             {
-              "ref": "Gen.5.3",
-              "note": "Adam names the son born in his likeness."
+              "note": "Eve names the son given in place of Abel.",
+              "ref": "Gen.4.25"
             },
             {
-              "ref": "Gen.5.29",
-              "note": "Lamech names Noah in the naming account."
+              "note": "Adam names the son born in his likeness.",
+              "ref": "Gen.5.3"
+            },
+            {
+              "note": "Lamech names Noah in the naming account.",
+              "ref": "Gen.5.29"
             }
           ],
-          "gloss": "identifying name"
+          "gloss": "identifying name",
+          "id": "identifying-name"
         },
         {
-          "id": "renown-enduring-remembrance",
           "cognate_ids": [
             "phn-shm",
             "akk-shumu"
@@ -173,10 +176,10 @@
               "ref": "2Sa.7.9"
             }
           ],
-          "gloss": "renown, enduring remembrance"
+          "gloss": "renown, enduring remembrance",
+          "id": "renown-enduring-remembrance"
         },
         {
-          "id": "the-one-named-particularly",
           "cognate_ids": [
             "phn-shm",
             "akk-shumu"
@@ -197,7 +200,8 @@
               "ref": "Psa.20.8"
             }
           ],
-          "gloss": "the one named, particularly in worship or appeal"
+          "gloss": "the one named, particularly in worship or appeal",
+          "id": "the-one-named-particularly"
         }
       ]
     },
@@ -213,7 +217,6 @@
       "pos": "adverb",
       "senses": [
         {
-          "id": "there-to-that-place",
           "definition": "The adverb points to a place identified in context, as when Yahweh plants a garden and places the man there. With מִן it means ‘from there’.",
           "evidence": [
             {
@@ -232,9 +235,15 @@
               "note": "In אֲשֶׁר לֻקַּח מִשָּׁם, שָׁם points back to the ground and מִן identifies it as the place from which the man was taken.",
               "ref": "Gen.3.23",
               "role": "defining"
+            },
+            {
+              "note": "After the mention of the Casluhim, יָצְאוּ מִשָּׁם describes the Philistines as coming out ‘from there’.",
+              "ref": "Gen.10.14",
+              "role": "example"
             }
           ],
-          "gloss": "there, to that place"
+          "gloss": "there, to that place",
+          "id": "there-to-that-place"
         }
       ]
     },
@@ -249,7 +258,6 @@
       "pos": "noun",
       "senses": [
         {
-          "id": "personal-name",
           "cognate_ids": [
             "phn-shm",
             "akk-shumu"
@@ -267,10 +275,10 @@
               "ref": "Dan.2.26"
             }
           ],
-          "gloss": "personal name"
+          "gloss": "personal name",
+          "id": "personal-name"
         },
         {
-          "id": "name-invoked-or-blessed",
           "cognate_ids": [
             "phn-shm",
             "akk-shumu"
@@ -285,7 +293,8 @@
               "role": "defining"
             }
           ],
-          "gloss": "name invoked or blessed"
+          "gloss": "name invoked or blessed",
+          "id": "name-invoked-or-blessed"
         }
       ]
     },
@@ -302,7 +311,6 @@
       "pos": "noun",
       "senses": [
         {
-          "id": "name",
           "definition": "Joseph is instructed to give the child the name Jesus. Jesus teaches his disciples to ask that their Father’s name be hallowed.",
           "evidence": [
             {
@@ -316,7 +324,8 @@
               "ref": "Mat.6.9"
             }
           ],
-          "gloss": "name"
+          "gloss": "name",
+          "id": "name"
         }
       ]
     },
@@ -331,7 +340,6 @@
           "gloss": "name, call",
           "senses": [
             {
-              "id": "name-call",
               "cognate_ids": [
                 "phn-shm",
                 "akk-shumu"
@@ -343,7 +351,8 @@
                   "role": "defining"
                 }
               ],
-              "gloss": "name, call"
+              "gloss": "name, call",
+              "id": "name-call"
             }
           ],
           "stem": "pael"
@@ -361,7 +370,6 @@
           "gloss": "be called or designated",
           "senses": [
             {
-              "id": "be-called-or-designated",
               "cognate_ids": [
                 "phn-shm",
                 "akk-shumu"
@@ -376,7 +384,8 @@
                   "ref": "Heb.5.10"
                 }
               ],
-              "gloss": "be called or designated"
+              "gloss": "be called or designated",
+              "id": "be-called-or-designated"
             }
           ],
           "stem": "ethpaal"
@@ -392,14 +401,14 @@
       "pos": "adjective",
       "senses": [
         {
-          "id": "shemidaite",
           "definition": "The census names the clan descended from Shemida among the descendants of Manasseh.",
           "evidence": [
             {
               "ref": "Num.26.32"
             }
           ],
-          "gloss": "Shemidaite"
+          "gloss": "Shemidaite",
+          "id": "shemidaite"
         }
       ]
     }

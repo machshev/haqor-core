@@ -103,6 +103,33 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article_id": "xm",
+            "base": "972d9a7565dd38b5ebf11aa7f797ca40ebed32aaa92b4590597070a325c5f4c1",
+            "change": "Add Genesis 10:14 as an example of the existing sense there-to-that-place at word index 1.",
+            "definition": "שָׁם points to a place identified in context. With מִן it means ‘from there’.",
+            "evidence": "Genesis 10:14 uses מִשָּׁם with יָצְאוּ to identify the starting point of the Philistines’ movement."
+          },
+          "sense": "there-to-that-place",
+          "word": 1
+        },
+        "evidence": "In אֲשֶׁר יָצְאוּ מִשָּׁם פְּלִשְׁתִּים, the Philistines are the subject of יָצְאוּ ‘came out’. שָׁם points back to the place associated with the Casluhim, and מִן marks it as the place from which they came.",
+        "gloss": "from there",
+        "language": "he",
+        "lemma": "שָׁם",
+        "morph": "HR/D",
+        "morphology": "The preposition מִן prefixes the place adverb שָׁם. Its nun assimilates to the shin, producing the dagesh in שָּׁם.",
+        "qualifier": "",
+        "root": "שמ",
+        "segments": "מִ/שָּׁם",
+        "sense": "there, referring back to a place of origin"
+      },
+      "position": 6,
+      "surface": "מִשָּׁם"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "plx",
           "sense": "philistine",
           "word": 0
