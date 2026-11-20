@@ -1,0 +1,491 @@
+{
+  "id": "2r9",
+  "created": "2026-11-08",
+  "root": "ארצ",
+  "status": "reviewed",
+  "reviewed": "2026-11-08",
+  "updated": "2026-11-08",
+  "tags": [
+    "earth",
+    "land",
+    "creation",
+    "inheritance"
+  ],
+  "gloss": "earth, land, ground",
+  "summary": "אֶרֶץ is the earth beneath the heavens, a particular land or territory, or the ground underfoot. Its extent is supplied by the context: the same word can name the whole inhabited earth or a single country. Biblical Aramaic אֲרַע and Peshitta אַרְעָא belong here, with their own root spelling ארע.",
+  "words": [
+    {
+      "lemma": "אֶרֶץ",
+      "pos": "noun",
+      "gloss": "earth, land, ground",
+      "bdb": [
+        "a.fx.aa"
+      ],
+      "senses": [
+        {
+          "id": "earth",
+          "gloss": "earth",
+          "definition": "The earthly realm, commonly paired with or opposed to the heavens.",
+          "evidence": [
+            {
+              "ref": "Gen.1.1",
+              "role": "defining",
+              "note": "The heavens and the earth are the two named objects of creation."
+            },
+            {
+              "ref": "Exo.19.5",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.24.1",
+              "role": "defining"
+            }
+          ],
+          "cognate_ids": [
+            "ar-ard",
+            "akk-ersetu",
+            "uga-ars",
+            "phn-ars",
+            "sab-ard"
+          ]
+        },
+        {
+          "id": "land-country-territory",
+          "gloss": "land, country, territory",
+          "definition": "A bounded territory, homeland, or country, often named by its inhabitants or ruler.",
+          "evidence": [
+            {
+              "ref": "Gen.12.1",
+              "role": "defining",
+              "note": "Abram is to leave his land for a land God will show him."
+            },
+            {
+              "ref": "Deu.32.49",
+              "role": "defining",
+              "note": "The land of Canaan is the territory given as a possession."
+            }
+          ],
+          "cognate_ids": [
+            "ar-ard",
+            "akk-ersetu",
+            "uga-ars",
+            "phn-ars",
+            "moab-ars",
+            "sab-ard"
+          ]
+        },
+        {
+          "id": "ground-surface",
+          "gloss": "ground, surface",
+          "definition": "The ground upon which someone stands, lies, falls, or places something.",
+          "evidence": [
+            {
+              "ref": "Gen.18.2",
+              "role": "defining",
+              "note": "Abraham bows toward the ground."
+            },
+            {
+              "ref": "Gen.33.3",
+              "role": "defining",
+              "note": "Jacob bows to the ground seven times."
+            }
+          ],
+          "cognate_ids": [
+            "ar-ard",
+            "akk-ersetu",
+            "uga-ars"
+          ]
+        },
+        {
+          "id": "earth-as-the-dwelling",
+          "gloss": "earth as the dwelling of the dead",
+          "definition": "In expressions of descent or darkness, the earth beneath the living, where the dead are placed. The surrounding words, rather than אֶרֶץ alone, identify this use.",
+          "evidence": [
+            {
+              "ref": "Job.10.21",
+              "role": "defining",
+              "note": "A land of darkness and death-shadow, to which the speaker goes without returning."
+            },
+            {
+              "ref": "Psa.63.10",
+              "role": "defining",
+              "note": "Those seeking the speaker’s life go into the lower parts of the earth."
+            }
+          ],
+          "cognate_ids": [
+            "akk-ersetu",
+            "uga-ars"
+          ]
+        }
+      ],
+      "gender": "f",
+      "greek": [
+        {
+          "lemma": "γῆ",
+          "gloss": "earth, land",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.37.11 (LXX 36:11), אָרֶץ → γῆν"
+            },
+            {
+              "ref": "Mat.5.5"
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.24.1 (LXX 23:1), הָאָרֶץ → γῆ"
+            },
+            {
+              "ref": "1Co.10.26"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "תֵּבֵל",
+            "note": "The earth and its fullness stand beside the inhabited world and its dwellers.",
+            "evidence": [
+              {
+                "ref": "Psa.24.1",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "שָׁמַיִם",
+            "note": "Heavens and earth name the upper and lower realms together.",
+            "evidence": [
+              {
+                "ref": "Gen.1.1",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "אֲרַע",
+      "pos": "noun",
+      "gloss": "earth, land",
+      "bdb": [
+        "xa.bi.ae"
+      ],
+      "senses": [
+        {
+          "id": "earth-land",
+          "gloss": "earth, land",
+          "definition": "The earthly realm or the territory inhabited by peoples.",
+          "evidence": [
+            {
+              "ref": "Dan.2.35",
+              "role": "defining",
+              "note": "The stone becomes a mountain filling the whole earth."
+            },
+            {
+              "ref": "Dan.7.23",
+              "role": "defining"
+            },
+            {
+              "ref": "Jer.10.11",
+              "role": "defining",
+              "note": "The gods that did not make heaven and earth will perish from the earth."
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "lang": "arc",
+      "root": "ארע",
+      "cognate_ids": [
+        "ar-ard",
+        "akk-ersetu",
+        "uga-ars",
+        "phn-ars",
+        "moab-ars",
+        "sab-ard"
+      ]
+    },
+    {
+      "lemma": "אֲרַק",
+      "pos": "noun",
+      "gloss": "earth",
+      "bdb": [
+        "xa.bi.ag"
+      ],
+      "senses": [
+        {
+          "id": "earth-2",
+          "gloss": "earth",
+          "definition": "The earth as what the gods addressed did not create.",
+          "evidence": [
+            {
+              "ref": "Jer.10.11",
+              "role": "defining",
+              "note": "The first land-word is אַרְקָא; the second is אַרְעָא."
+            }
+          ]
+        }
+      ],
+      "lang": "arc",
+      "root": "ארק",
+      "gender": "f",
+      "cognate_ids": [
+        "ar-ard",
+        "akk-ersetu",
+        "uga-ars",
+        "phn-ars",
+        "sab-ard"
+      ],
+      "summary": "The form with ק occurs once, beside the form with ע later in the same Aramaic verse."
+    },
+    {
+      "lemma": "אַרְעָא",
+      "pos": "noun",
+      "gloss": "earth, land, ground",
+      "senses": [
+        {
+          "id": "earth-land-2",
+          "gloss": "earth; land",
+          "definition": "The earthly realm or a particular country.",
+          "evidence": [
+            {
+              "ref": "Mat.5.5",
+              "role": "defining",
+              "note": "The meek will inherit the earth, echoing Psa 37:11."
+            },
+            {
+              "ref": "Mat.2.20",
+              "role": "defining",
+              "note": "The land of Israel is the place to which Joseph is to return."
+            }
+          ],
+          "cognate_ids": [
+            "ar-ard",
+            "akk-ersetu",
+            "uga-ars",
+            "phn-ars",
+            "moab-ars",
+            "sab-ard"
+          ]
+        },
+        {
+          "id": "ground-soil",
+          "gloss": "ground, soil",
+          "definition": "The ground as a surface or the soil in which seed grows.",
+          "evidence": [
+            {
+              "ref": "Mat.13.8",
+              "role": "defining",
+              "note": "Other seed falls on good ground."
+            }
+          ],
+          "cognate_ids": [
+            "ar-ard",
+            "akk-ersetu",
+            "uga-ars"
+          ]
+        }
+      ],
+      "gender": "f",
+      "lang": "syc",
+      "root": "ארע"
+    },
+    {
+      "lemma": "אַרְעָנָיָא",
+      "pos": "adjective",
+      "gloss": "earthly, of the earth",
+      "senses": [
+        {
+          "id": "earthly",
+          "gloss": "earthly",
+          "definition": "Belonging to the earth; in a contrast with heaven, earthly rather than heavenly.",
+          "evidence": [
+            {
+              "ref": "1Co.15.40",
+              "role": "defining",
+              "note": "Earthly bodies stand beside heavenly bodies."
+            },
+            {
+              "ref": "Jas.3.15",
+              "role": "defining",
+              "note": "This wisdom does not descend from above but is earthly."
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "root": "ארע"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-ard",
+      "lang": "ar",
+      "form": "أَرْض",
+      "translit": "ʾarḍ",
+      "gloss": "earth, land, ground",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 48, root أرض, الأَرْضُ (n579)"
+        }
+      ],
+      "sounds": {
+        "צ": "ṣ́"
+      },
+      "note": "Arabic ḍ corresponds to the older emphatic lateral recorded as ṣ́ behind Hebrew צ; Aramaic has ע in the land-word."
+    },
+    {
+      "id": "akk-ersetu",
+      "lang": "akk",
+      "form": "erṣetu",
+      "translit": "erṣetu",
+      "gloss": "earth, land, ground; netherworld",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000003460, erṣetu [earth] N",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000003460.html"
+        }
+      ]
+    },
+    {
+      "id": "uga-ars",
+      "lang": "uga",
+      "form": "𐎀𐎗𐎕",
+      "translit": "ʾarṣ",
+      "gloss": "earth, land, ground",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 180, §93 Glossary, arṣ",
+          "note": "\"arṣ /ʾarṣ-/, cf. ar-ṣum U:V:137:III:14′, “earth” (H. ʾæræṣ, Aram. ʾarqāʾ, ʾarʿāʾ, Arab. ʾarḍ)\"."
+        },
+        {
+          "source": "segert-1984",
+          "locator": "p. 94, §64.52, KTU 1.4:VIII:8",
+          "note": "tspr.by|rdm.arṣ, \"you will be counted among those who go down (in)to the earth\"."
+        },
+        {
+          "source": "fisher-1969",
+          "locator": "p. 47, arṣ",
+          "note": "Ugaritic arṣ \"earth\" beside Tigre ʾarḍ, ʾɨrḍ, ʾardāt \"earth, land\", which Leslau takes to be Arabic loans; Fisher adds \"But note ESA ʾrḍ\"."
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Ugaritic 𐎀𐎗𐎕 (ảrṣ)",
+          "url": "https://en.wiktionary.org/wiki/%F0%90%8E%80%F0%90%8E%97%F0%90%8E%95",
+          "note": "\"earth; land; ground\"; \"From Proto-Semitic *ʔarṣ́-.\""
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000575 ʾrḍ [earth], UGC000591 arṣ [earth]"
+        }
+      ],
+      "note": "Ugaritic writes ṣ here, so it does not show which older sound stands behind צ. Those who die “go down into the earth” (KTU 1.4:VIII:8), as אֶרֶץ can be the dwelling of the dead."
+    },
+    {
+      "id": "phn-ars",
+      "lang": "phn",
+      "form": "𐤀𐤓𐤑",
+      "translit": "ʾrṣ",
+      "gloss": "earth; land, country; motherland; region; territory of a state",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "pp. 73–74, ʾRṢ, pl. ʾRṢT",
+          "note": "\"[Heb. ʾereṣ] n.f. 1. THE EARTH\", KAI 26 A 18 and KAI 129.1 ʾl qn ʾrṣ, \"El, Creator of the Earth\"; \"2. LAND, COUNTRY\", KAI 26 A I 9 bʾrṣ, \"in the land\"; \"3. MOTHERLAND\"; \"4. REGION, AREA\", KAI 14.18–19; \"5. TERRITORY of a state\", KAI 26 A I 4–5, \"I enlarged the territory of the Valley of Adana\"."
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Phoenician 𐤀𐤓𐤑; Punic 𐤀𐤓𐤑",
+          "url": "https://en.wiktionary.org/wiki/%F0%90%A4%80%F0%90%A4%93%F0%90%A4%91",
+          "note": "Phoenician \"earth; land\", plural ʾrṣt; Punic \"earth; land\"."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000575 ʾrḍ [earth], PUN000219 ʾrṣ [earth;]"
+        }
+      ],
+      "note": "Phoenician and Punic, with the range of אֶרֶץ: the whole earth made by El, a country, a region and a state’s territory."
+    },
+    {
+      "id": "moab-ars",
+      "lang": "sem",
+      "form": "ארץ",
+      "translit": "ʾrṣ",
+      "gloss": "land",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "compston-1919",
+          "locator": "KAI 181, lines 5–6, 7–8, 10, 29, 31",
+          "url": "https://en.wikisource.org/wiki/The_Inscription_on_the_Stele_of_M%C3%A9%C5%A1a%CA%BF/The_Text_in_Hebrew_Square_Script",
+          "note": "Line 10 ואש גד ישב בארץ עטרת מעלמ; lines 5–6 כי יאנפ כמש בארצה; lines 7–8 וירש עמרי את [אר]ץ מהבא; line 29 אשר יספתי על הארצ; line 31 הארץ."
+        },
+        {
+          "source": "compston-1919",
+          "locator": "Translation, lines 5–8, 10, 29, 31",
+          "url": "https://en.wikisource.org/wiki/The_Inscription_on_the_Stele_of_M%C3%A9%C5%A1a%CA%BF/Translation",
+          "note": "\"Kemôš was angry with his land\"; \"ʿOmrî possessed the [land] of Mehēḏeḇā\"; \"the men of Gaḏ had dwelt in the land of ʿǎṭarôṯ from of old\"; \"the cities which I added to the land\"."
+        }
+      ],
+      "note": "Moabite, the Mesha stele: a particular land, a god's own land, and the district a king holds and adds cities to, as אֶרֶץ names a territory."
+    },
+    {
+      "id": "sab-ard",
+      "lang": "sem",
+      "form": "𐩱𐩧𐩳",
+      "translit": "ʾrḍ",
+      "gloss": "land (political entity); piece of land, territory, field; earth",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "p. 27, ʾRḌ",
+          "url": "https://archive.org/details/DOOSA",
+          "note": "\"(1) LAND (political entity) [Ar ʾarḍ id]\", J555/4 ʾrḍ QTBN \"the land of Q.\"; \"(2) PIECE OF LAND = TERRITORY, FIELD\"; \"(3) EARTH\", MuBilinguis/2–3 mrʾ smyn wʾrḍn \"Lord of heaven and earth\"."
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Proto-Semitic *ʔarṣ́-, descendants: Sabaic, Minaean, Qatabanic and Hadramitic 𐩱𐩧𐩳 (ʾrḍ)",
+          "url": "https://en.wiktionary.org/wiki/Reconstruction:Proto-Semitic/%CA%94ar%E1%B9%A3%CC%81-"
+        }
+      ],
+      "sounds": {
+        "צ": "ṣ́"
+      },
+      "note": "Sabaic, with ḍ agreeing with Arabic on the older emphatic lateral behind צ; Wiktionary also lists Minaean, Qatabanic and Hadramitic. “Lord of heaven and earth” pairs the word with heaven as Gen 14:19 pairs אֶרֶץ with שָׁמַיִם."
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "earth-belongs-to-god",
+      "statement": "Yahweh says that all the earth is his (Exo 19:5); Psalm 24:1 joins the earth’s fullness with the world’s inhabitants as his possession. Psalm 37:11 promises the land to the meek, and Matthew 5:5 takes up that promise. Ownership by God and inheritance received from him are held together.",
+      "evidence": [
+        {
+          "ref": "Exo.19.5"
+        },
+        {
+          "ref": "Psa.24.1"
+        },
+        {
+          "ref": "Psa.37.11"
+        },
+        {
+          "ref": "Mat.5.5"
+        }
+      ]
+    }
+  ],
+  "note": "אַרְצָא, a person’s name, is left for a name entry. The Aramaic land-word has root ארע, so a brief for ארצ misses it. Syriac ארע “meet” and אורעא “meeting” share its written root key but are not land-words; no derivation of them from ארצ is asserted. Hebrew earth/land is feminine; the isolated masculine agreement noted in grammatical inventories does not require another word. The Arabic sound is recorded as ṣ́, the README’s notation for the older emphatic lateral, not modern Arabic pronunciation. The ק-form אֲרַק of Jer 10:11 is also included under its own database key ארק."
+}

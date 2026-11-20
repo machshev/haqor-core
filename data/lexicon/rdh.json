@@ -1,0 +1,58 @@
+{
+  "id": "rdh",
+  "created": "2026-11-19",
+  "root": "רדה",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "gloss": "rule, have dominion",
+  "summary": "רָדָה describes ruling or exercising dominion. In Psalm 49 the upright will rule over the wicked in the morning.",
+  "words": [
+    {
+      "lemma": "רָדָה",
+      "pos": "verb",
+      "gloss": "rule, have dominion",
+      "bdb": [
+        "t.az.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "rule",
+          "senses": [
+            {
+              "id": "rule",
+              "gloss": "rule",
+              "definition": "To exercise dominion over others.",
+              "evidence": [
+                {
+                  "ref": "Psa.49.15",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.68.28"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-rdy",
+      "lang": "arc",
+      "form": "רְדֵי",
+      "translit": "rədē",
+      "gloss": "rule, exercise dominion",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "T00242, רְדֵי, Targum Psalm 110:2"
+        }
+      ]
+    }
+  ],
+  "note": "Targumic רְדֵי supports ruling or exercising dominion (Jastrow T00242)."
+}

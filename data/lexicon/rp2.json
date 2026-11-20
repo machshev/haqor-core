@@ -1,0 +1,341 @@
+{
+  "id": "rp2",
+  "root": "רפא",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "health",
+    "restoration"
+  ],
+  "gloss": "heal, restore, repair",
+  "summary": "To heal is to restore what sickness or injury has impaired. Hezekiah will rise from his illness, a broken arm can carry a sword again, and harmful water can sustain life. Elijah uses the same verb when he repairs an altar.",
+  "words": [
+    {
+      "lemma": "רָפָא",
+      "bdb": [
+        "t.dv.aa"
+      ],
+      "pos": "verb",
+      "gloss": "heal, restore",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "heal or restore",
+          "senses": [
+            {
+              "gloss": "heal the sick",
+              "definition": "Hezekiah weeps and prays in his illness. Yahweh promises to heal him so that on the third day he will go up to the house of Yahweh. A healer is one who treats a wound.",
+              "evidence": [
+                {
+                  "ref": "2Ki.20.5",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.6.3"
+                },
+                {
+                  "ref": "Jer.8.22"
+                },
+                {
+                  "ref": "Exo.15.26"
+                },
+                {
+                  "ref": "Gen.20.17"
+                }
+              ],
+              "id": "heal",
+              "kin": [
+                "recovery",
+                "health"
+              ]
+            },
+            {
+              "id": "restore-a-people",
+              "gloss": "restore a people",
+              "definition": "Yahweh promises to heal Israel’s turning away and to love them freely. Isaiah joins turning back to being healed.",
+              "evidence": [
+                {
+                  "ref": "Hos.14.5",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Isa.6.10"
+                },
+                {
+                  "ref": "Mat.13.15"
+                },
+                {
+                  "ref": "Act.28.27"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be healed",
+          "senses": [
+            {
+              "id": "be-restored-to-health",
+              "gloss": "be restored to health or wholeness",
+              "definition": "Jeremiah asks Yahweh to heal him so that he will be healed. Isaiah speaks of healing through the servant’s wounds. Peter applies the words to those returning to the shepherd.",
+              "evidence": [
+                {
+                  "ref": "Jer.17.14",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Isa.53.5"
+                },
+                {
+                  "ref": "1Pe.2.24",
+                  "to": "1Pe.2.25"
+                },
+                {
+                  "ref": "Deu.28.27"
+                },
+                {
+                  "ref": "Ezk.47.9"
+                }
+              ],
+              "kin": [
+                "recovery"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "treat, repair",
+          "senses": [
+            {
+              "id": "treat-a-wound-or",
+              "gloss": "treat a wound or remedy damage",
+              "definition": "Israel’s shepherds neglected the sick. The false prophets treat the people’s wound lightly by announcing peace. Yahweh makes the harmful waters of Jericho wholesome.",
+              "evidence": [
+                {
+                  "ref": "Ezk.34.4",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jer.6.14"
+                },
+                {
+                  "ref": "2Ki.2.21",
+                  "to": "2Ki.2.22"
+                }
+              ],
+              "kin": [
+                "medicine"
+              ]
+            },
+            {
+              "id": "repair",
+              "gloss": "repair",
+              "definition": "Elijah restores the broken altar of Yahweh before setting the sacrifice in order.",
+              "evidence": [
+                {
+                  "ref": "1Ki.18.30",
+                  "role": "defining"
+                }
+              ],
+              "cognate_ids": [
+                "ar-rafaa"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpael",
+          "gloss": "recuperate",
+          "senses": [
+            {
+              "id": "recuperate",
+              "gloss": "recuperate",
+              "definition": "Joram goes back to Jezreel to recover from the wounds he received at Ramah.",
+              "evidence": [
+                {
+                  "ref": "2Ki.8.29",
+                  "role": "defining"
+                },
+                {
+                  "ref": "2Ki.9.15"
+                },
+                {
+                  "ref": "2Ch.22.6"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἰάομαι",
+          "gloss": "heal",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "PSA 6:3 word 6, ἴασαί"
+            },
+            {
+              "ref": "1Pe.2.24"
+            },
+            {
+              "ref": "Act.28.27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַרְפֵּא",
+      "bdb": [
+        "t.dv.am"
+      ],
+      "pos": "noun",
+      "gloss": "healing, remedy, calmness",
+      "senses": [
+        {
+          "gloss": "recovery, a remedy",
+          "definition": "Jeremiah sets the time of healing opposite terror and asks why the stricken people find no healing. Wise speech can bring healing where rash words wound.",
+          "evidence": [
+            {
+              "ref": "Jer.14.19",
+              "role": "defining"
+            },
+            {
+              "ref": "Jer.8.15"
+            },
+            {
+              "ref": "Pro.12.18"
+            },
+            {
+              "ref": "Pro.15.4"
+            }
+          ],
+          "id": "recovery",
+          "kin": [
+            "heal",
+            "medicine"
+          ]
+        },
+        {
+          "id": "calm-composure",
+          "gloss": "calm composure",
+          "definition": "When a ruler’s temper rises, the counsel is to stay in place. Calmness can lay great offences to rest.",
+          "evidence": [
+            {
+              "ref": "Ecc.10.4",
+              "role": "defining"
+            },
+            {
+              "ref": "Pro.14.30"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "רְפֻאָה",
+      "bdb": [
+        "t.dv.ah"
+      ],
+      "pos": "noun",
+      "gloss": "medicine, treatment",
+      "senses": [
+        {
+          "gloss": "remedy",
+          "definition": "In the image of a broken arm, treatment includes a bandage so the arm can again hold a sword. Egypt may take many medicines and still find no healing.",
+          "evidence": [
+            {
+              "ref": "Ezk.30.21",
+              "role": "defining"
+            },
+            {
+              "ref": "Jer.46.11"
+            },
+            {
+              "ref": "Jer.30.13"
+            }
+          ],
+          "id": "medicine",
+          "kin": [
+            "heal",
+            "recovery"
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "רִפְאוּת",
+      "bdb": [
+        "t.dv.ai"
+      ],
+      "pos": "noun",
+      "gloss": "healing, health",
+      "senses": [
+        {
+          "gloss": "health",
+          "definition": "Turning from evil brings healing to the body and refreshment to the bones. The noun occurs here alone.",
+          "evidence": [
+            {
+              "ref": "Pro.3.7",
+              "to": "Pro.3.8",
+              "role": "defining"
+            }
+          ],
+          "id": "health",
+          "kin": [
+            "heal",
+            "recovery"
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "יִרְפְּאֵל",
+      "bdb": [
+        "t.dv.al"
+      ],
+      "pos": "name",
+      "gloss": "Irpeel",
+      "senses": [
+        {
+          "id": "irpeel",
+          "gloss": "Irpeel",
+          "definition": "Irpeel is named among the towns allotted to Benjamin, with Rekem and Taralah. Its form can be read “God heals.”",
+          "evidence": [
+            {
+              "ref": "Jos.18.27",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "summary": "The boundary list gives the town’s name without explaining it."
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-rafaa",
+      "lang": "ar",
+      "form": "رَفَأَ",
+      "translit": "rafaʾa",
+      "gloss": "repair a torn garment",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 1117, رَفَأَ n16083, the passage on mending or darning a garment"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The Peshitta root spelled רפא means slacken or let go, answering to Hebrew רפה. It is distinct from healing. The Arabic use for repairing cloth supports the repair sense in 1 Kings 18:30. The shorter names Rapha and Raphu permit a connection with healing, although their stories offer no explanation."
+}

@@ -1,0 +1,173 @@
+{
+  "id": "9ll",
+  "root": "צלל",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "light",
+    "shelter",
+    "time"
+  ],
+  "gloss": "shade, shadow, grow dark",
+  "summary": "Shade comes between the sun and the one sheltered. Psalm 17 draws on this everyday experience to describe the safety sought under Yahweh’s wings.",
+  "words": [
+    {
+      "lemma": "צֵל",
+      "bdb": [
+        "r.cc.ab"
+      ],
+      "pos": "noun",
+      "gloss": "shade, shadow, shelter",
+      "senses": [
+        {
+          "id": "shade-cast-by-an",
+          "gloss": "shade cast by an object",
+          "definition": "Jonah sits in the shade of a shelter and welcomes the plant that shades his head. The movement of a shadow on steps marks time in Hezekiah’s sign.",
+          "evidence": [
+            {
+              "ref": "Jon.4.5",
+              "to": "Jon.4.6",
+              "role": "defining"
+            },
+            {
+              "ref": "Isa.38.8"
+            }
+          ]
+        },
+        {
+          "id": "shelter-or-protection",
+          "gloss": "shelter or protection",
+          "definition": "The psalmist asks to be hidden in the shadow of Yahweh’s wings. A traveler in another psalm has Yahweh as shade at his right hand.",
+          "evidence": [
+            {
+              "ref": "Psa.17.8",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.36.8"
+            },
+            {
+              "ref": "Psa.121.5"
+            }
+          ]
+        },
+        {
+          "id": "passing-shadow",
+          "gloss": "passing shadow",
+          "definition": "Days that stretch out like an evening shadow or pass like a shadow give the psalmists an image of life’s brevity.",
+          "evidence": [
+            {
+              "ref": "Psa.102.12",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.144.4"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "ar-zill"
+      ]
+    },
+    {
+      "lemma": "צָלַל",
+      "bdb": [
+        "r.cc.aa"
+      ],
+      "pos": "verb",
+      "gloss": "grow dark, give shade",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "grow dark",
+          "senses": [
+            {
+              "id": "grow-dark",
+              "gloss": "grow dark",
+              "definition": "As evening falls before the sabbath the gates of Jerusalem grow dark. Nehemiah commands them to be shut.",
+              "evidence": [
+                {
+                  "ref": "Neh.13.19",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "give shade",
+          "senses": [
+            {
+              "id": "give-shade",
+              "gloss": "give shade",
+              "definition": "A great cedar’s spreading growth gives shade.",
+              "evidence": [
+                {
+                  "ref": "Ezk.31.3",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-zill"
+      ]
+    },
+    {
+      "lemma": "צַלְמָוֶת",
+      "bdb": [
+        "r.cc.ae"
+      ],
+      "pos": "noun",
+      "gloss": "deep darkness, shadow of death",
+      "senses": [
+        {
+          "id": "deep-darkness-shadow-of",
+          "gloss": "deep darkness, shadow of death",
+          "definition": "A traveler passes through a dark valley with Yahweh beside him. Job uses the expression of the darkness of the land to which he expects to go; Isaiah sets it against the light that dawns.",
+          "evidence": [
+            {
+              "ref": "Psa.23.4",
+              "role": "defining"
+            },
+            {
+              "ref": "Job.10.21",
+              "to": "Job.10.22"
+            },
+            {
+              "ref": "Isa.9.1"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-zill",
+      "lang": "ar",
+      "form": "ظِلّ",
+      "translit": "ẓill",
+      "gloss": "shade, shadow",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I p. 1915, n27591, shade cast by an object; compare n27590, taking shelter in shade"
+        }
+      ],
+      "sounds": {
+        "צ": "ṯ̣"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "The vocalization of צַלְמָוֶת suggests “shadow of death”; its use for deep darkness is clear even where death is not explicit. The same Hebrew consonants also spell verbs for ringing and sinking, with distinct meanings."
+}

@@ -1,0 +1,102 @@
+{
+  "id": "6wl",
+  "root": "טול",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "gloss": "cast, throw",
+  "summary": "To be cast down or thrown.",
+  "words": [
+    {
+      "lemma": "טוּל",
+      "pos": "verb",
+      "gloss": "cast down",
+      "bdb": [
+        "i.am.aa"
+      ],
+      "stems": [
+        {
+          "stem": "hophal",
+          "gloss": "be hurled down",
+          "senses": [
+            {
+              "id": "be-hurled-down",
+              "gloss": "be hurled down",
+              "definition": "Although a righteous person stumbles he is not cast down, since Yahweh holds him by the hand.",
+              "evidence": [
+                {
+                  "ref": "Psa.37.24",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jer.22.28",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "hurl",
+          "senses": [
+            {
+              "id": "hurl",
+              "gloss": "hurl",
+              "definition": "Saul hurls a spear at David. Jonah asks the sailors to throw him into the sea.",
+              "evidence": [
+                {
+                  "ref": "1Sa.18.11",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jon.1.12",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pilpel",
+          "gloss": "fling away",
+          "senses": [
+            {
+              "id": "fling-away",
+              "gloss": "fling away",
+              "definition": "Isaiah describes a man about to be violently flung out of his position.",
+              "evidence": [
+                {
+                  "ref": "Isa.22.17",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "טַלְטֵלָה",
+      "bdb": [
+        "i.am.ab"
+      ],
+      "pos": "noun",
+      "gloss": "violent hurling",
+      "senses": [
+        {
+          "id": "violent-hurling",
+          "gloss": "violent hurling",
+          "definition": "Isaiah pictures Shebna being seized and flung out of his high station.",
+          "evidence": [
+            {
+              "ref": "Isa.22.17",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    }
+  ],
+  "note": "Drafted for Psalm 37 coverage."
+}

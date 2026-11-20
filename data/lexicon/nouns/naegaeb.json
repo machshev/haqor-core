@@ -1,0 +1,121 @@
+{
+  "id": "naegaeb",
+  "root": "נגב",
+  "status": "draft",
+  "updated": "2026-11-18",
+  "tags": [
+    "land",
+    "direction"
+  ],
+  "gloss": "Negev, south",
+  "summary": "Abram travels into the Negev and later returns from Egypt through it. The same noun gives a compass bearing when the bronze oxen beneath the temple basin face north, west, south and east.",
+  "words": [
+    {
+      "lemma": "נֶגֶב",
+      "bdb": [
+        "n.aq.ab"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "Negev, south",
+      "senses": [
+        {
+          "id": "the-negev-the-southern",
+          "gloss": "the Negev, the southern country",
+          "definition": "The southern tract of the land, within which particular districts and towns can be named.",
+          "evidence": [
+            {
+              "ref": "Jos.15.21",
+              "note": "Judah’s towns in the Negev lie toward the border of Edom.",
+              "role": "defining"
+            },
+            {
+              "ref": "1Sa.27.10",
+              "note": "David names the Negev of Judah, of the Jerahmeelites and of the Kenites."
+            },
+            {
+              "ref": "Jos.15.19",
+              "note": "Achsah asks for springs to go with the Negev land she has received."
+            },
+            {
+              "ref": "Psa.126.4",
+              "note": "The singer asks Yahweh to restore his people’s fortunes like watercourses in the Negev."
+            }
+          ]
+        },
+        {
+          "id": "south-southward",
+          "gloss": "south, southward",
+          "definition": "One of the four compass directions. It describes the orientation of an object, the course of a boundary or the extent of land in view.",
+          "evidence": [
+            {
+              "ref": "1Ki.7.25",
+              "note": "Of the twelve oxen supporting the basin, three face south.",
+              "role": "defining"
+            },
+            {
+              "ref": "Exo.36.23",
+              "note": "The builders set twenty frames on the south side of the dwelling."
+            },
+            {
+              "ref": "Gen.13.14",
+              "note": "Yahweh tells Abram to look in all four directions from where he stands."
+            }
+          ],
+          "cognate_ids": [
+            "arc-south"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-south",
+      "lang": "arc",
+      "form": "נגב",
+      "translit": "ngb",
+      "gloss": "south",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "cal",
+          "locator": "ngb V, derivatives, ngb/ngbʾ (ngb#2 N), South",
+          "url": "https://cal.huc.edu/cal_entry_web.php?lemma=ngb+V"
+        }
+      ]
+    },
+    {
+      "id": "arc-dry",
+      "lang": "arc",
+      "form": "הנגבת",
+      "translit": "hngbt",
+      "gloss": "dried up",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "cal",
+          "locator": "ngb V, causative, Samaritan Aramaic, Marqe 1.785, of the flood waters",
+          "url": "https://cal.huc.edu/cal_entry_web.php?lemma=ngb+V"
+        }
+      ]
+    },
+    {
+      "id": "syc-dry",
+      "lang": "syc",
+      "form": "ܐܬܢܓܒ",
+      "translit": "ʾetnagab",
+      "gloss": "became dry",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "cal",
+          "locator": "ngb V, reflexive stem, Syriac, AGnEx 20.5, of the surface drying",
+          "url": "https://cal.huc.edu/cal_entry_web.php?lemma=ngb+V"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The Aramaic noun supplies a direct comparison for the compass sense. The Samaritan Aramaic and Syriac verbs describe drying. Achsah’s request for springs suits a connection with dry land, but how the regional name and the compass term developed remains open."
+}

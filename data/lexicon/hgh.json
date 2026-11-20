@@ -1,0 +1,299 @@
+{
+  "id": "hgh",
+  "root": "הגה",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "speech",
+    "thought",
+    "music"
+  ],
+  "gloss": "murmur, meditate, utter, remove",
+  "summary": "A dove coos, a mourner moans, and a tongue gives voice to what fills the heart. In Psalm 1 the reader returns to Yahweh’s instruction day and night. The same spelling also describes taking dross from silver.",
+  "words": [
+    {
+      "lemma": "הָגָה",
+      "bdb": [
+        "e.aj.aa"
+      ],
+      "pos": "verb",
+      "gloss": "murmur, utter, meditate",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "make a low sound, speak, ponder",
+          "senses": [
+            {
+              "gloss": "growl, moan or coo",
+              "definition": "The lion growls over its prey. The mourners compare the sound they make to the low calls of doves.",
+              "evidence": [
+                {
+                  "ref": "Isa.31.4",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Isa.38.14"
+                },
+                {
+                  "ref": "Isa.59.11"
+                }
+              ],
+              "id": "low-sound",
+              "kin": [
+                "murmur"
+              ]
+            },
+            {
+              "id": "utter",
+              "gloss": "utter",
+              "definition": "The palate or tongue gives voice to something, whether truth, wickedness or praise.",
+              "evidence": [
+                {
+                  "ref": "Pro.8.7",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Isa.59.3"
+                },
+                {
+                  "ref": "Psa.35.28"
+                },
+                {
+                  "ref": "Psa.115.7"
+                }
+              ],
+              "cognate_ids": [
+                "arc-hage"
+              ]
+            },
+            {
+              "gloss": "rehearse, ponder, devise",
+              "definition": "Return repeatedly to a matter in thought or speech. Joshua is to keep the instruction in his mouth day and night so that he can carry it out. The nations in Psalm 2 occupy their thoughts with a fruitless plan.",
+              "evidence": [
+                {
+                  "ref": "Jos.1.8",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.1.2"
+                },
+                {
+                  "ref": "Psa.2.1"
+                },
+                {
+                  "ref": "Pro.24.2"
+                },
+                {
+                  "ref": "Act.4.25",
+                  "to": "Act.4.26"
+                }
+              ],
+              "id": "ponder",
+              "kin": [
+                "meditation"
+              ],
+              "cognate_ids": [
+                "arc-hage"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "mutter",
+          "senses": [
+            {
+              "id": "make-a-muttering-sound",
+              "gloss": "make a muttering sound",
+              "definition": "Isaiah identifies those consulted about the dead by their chirping and muttering.",
+              "evidence": [
+                {
+                  "ref": "Isa.8.19",
+                  "role": "defining"
+                }
+              ],
+              "kin": [
+                "murmur"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "poel",
+          "gloss": "utter inwardly",
+          "senses": [
+            {
+              "id": "utter-words-conceived-in",
+              "gloss": "utter words conceived in the heart",
+              "definition": "In a confession of falsehood, speaking rebellion is paired with conceiving and uttering lies from the heart.",
+              "evidence": [
+                {
+                  "ref": "Isa.59.13",
+                  "role": "defining"
+                }
+              ],
+              "cognate_ids": [
+                "arc-hage"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "הִגָּיוֹן",
+      "bdb": [
+        "e.aj.ad"
+      ],
+      "pos": "noun",
+      "gloss": "meditation, muttering, music",
+      "senses": [
+        {
+          "gloss": "meditation or murmuring",
+          "definition": "Psalm 19 sets the heart’s meditation beside the mouth’s words. Lamentations speaks of enemies murmuring against the speaker all day.",
+          "evidence": [
+            {
+              "ref": "Psa.19.15",
+              "role": "defining"
+            },
+            {
+              "ref": "Lam.3.62"
+            }
+          ],
+          "id": "meditation",
+          "kin": [
+            "ponder"
+          ],
+          "cognate_ids": [
+            "arc-hage"
+          ]
+        },
+        {
+          "id": "sound-of-music-musical",
+          "gloss": "sound of music, musical direction",
+          "definition": "Psalm 92 names the sound made on a lyre. The word stands beside Selah in Psalm 9, where the precise direction is uncertain.",
+          "evidence": [
+            {
+              "ref": "Psa.92.4",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.9.17"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "הֶגֶה",
+      "bdb": [
+        "e.aj.ab"
+      ],
+      "pos": "noun",
+      "gloss": "sound, sigh or lament",
+      "senses": [
+        {
+          "gloss": "sound of a voice or sigh",
+          "definition": "Job hears a sound coming from God’s mouth with the thunder. A psalm compares passing years to a sigh, and Ezekiel reads a scroll filled with mourning.",
+          "evidence": [
+            {
+              "ref": "Job.37.2",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.90.9"
+            },
+            {
+              "ref": "Ezk.2.10"
+            }
+          ],
+          "id": "murmur",
+          "kin": [
+            "low-sound"
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "הָגָה",
+      "bdb": [
+        "e.ak.aa"
+      ],
+      "pos": "verb",
+      "gloss": "remove",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "take away",
+          "senses": [
+            {
+              "id": "remove-what-is-present",
+              "gloss": "remove what is present",
+              "definition": "The refiner takes dross from silver. The next line applies the same action to removing a wicked person from the king’s presence.",
+              "evidence": [
+                {
+                  "ref": "Pro.25.4",
+                  "to": "Pro.25.5",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Isa.27.8"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "summary": "The act of removal is clear in Proverbs. Its connection to the verb of sound or thought is unknown."
+    },
+    {
+      "lemma": "הָגוּת",
+      "bdb": [
+        "e.aj.ac"
+      ],
+      "pos": "noun",
+      "gloss": "meditation",
+      "senses": [
+        {
+          "id": "what-the-heart-considers",
+          "gloss": "what the heart considers",
+          "definition": "The singer’s mouth speaks wisdom and his heart considers understanding.",
+          "evidence": [
+            {
+              "ref": "Psa.49.4",
+              "role": "defining"
+            }
+          ],
+          "kin": [
+            "ponder"
+          ],
+          "cognate_ids": [
+            "arc-hage"
+          ]
+        }
+      ],
+      "gender": "f"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-hage",
+      "lang": "arc",
+      "form": "הָגֵי",
+      "translit": "hāgē",
+      "gloss": "reason, speak, study",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. הגי II, participle הָגֵי, Targum Joshua 1:8"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The direction in Psalm 9 follows a declaration of judgment. Psalm 92 supplies a musical setting but does not settle whether a pause or instrumental sound is intended in Psalm 9. The Aramaic comparison supports speech and study. The verb of removal stands apart."
+}

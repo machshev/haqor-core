@@ -1,0 +1,166 @@
+{
+  "id": "cy7",
+  "root": "שׂיח",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "gloss": "complaint, speak",
+  "summary": "שיח denotes a complaint as a noun and speaking as a verb.",
+  "words": [
+    {
+      "lemma": "שִׂיחַ",
+      "pos": "noun",
+      "gloss": "complaint",
+      "bdb": [
+        "u.bb.ab"
+      ],
+      "senses": [
+        {
+          "id": "complaint",
+          "gloss": "complaint",
+          "definition": "A complaint or troubled discourse.",
+          "evidence": [
+            {
+              "ref": "Psa.64.2",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.55.3",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שִׂיחַ",
+      "pos": "verb",
+      "gloss": "speak",
+      "bdb": [
+        "u.bb.ad"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "speak",
+          "senses": [
+            {
+              "id": "speak",
+              "gloss": "speak",
+              "definition": "Speak or recount.",
+              "evidence": [
+                {
+                  "ref": "Psa.69.13",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.55.18",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "consider",
+          "senses": [
+            {
+              "id": "consider",
+              "gloss": "consider",
+              "definition": "Consider or attend to a matter.",
+              "evidence": [
+                {
+                  "ref": "Isa.53.8",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "polel",
+          "gloss": "reflect",
+          "senses": [
+            {
+              "id": "reflect",
+              "gloss": "reflect",
+              "definition": "Reflect on Yahweh’s works.",
+              "evidence": [
+                {
+                  "ref": "Psa.143.5",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שִׂיחַ",
+      "pos": "noun",
+      "gloss": "shrub",
+      "bdb": [
+        "u.bc.ab"
+      ],
+      "senses": [
+        {
+          "id": "shrub",
+          "gloss": "shrub",
+          "definition": "A shrub or brush plant.",
+          "evidence": [
+            {
+              "ref": "Gen.2.5",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שִׂיחָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "complaint",
+      "bdb": [
+        "u.bb.ac"
+      ],
+      "senses": [
+        {
+          "id": "complaint-2",
+          "gloss": "complaint",
+          "definition": "A woman’s complaint or lament.",
+          "evidence": [
+            {
+              "ref": "1Sa.1.16",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שֵׂחַ",
+      "pos": "noun",
+      "gloss": "thought",
+      "bdb": [
+        "u.bb.ae"
+      ],
+      "senses": [
+        {
+          "id": "thought",
+          "gloss": "thought",
+          "definition": "Thought or reflection.",
+          "evidence": [
+            {
+              "ref": "Psa.145.5",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The Psalm 64 noun and Psalm 69 verb are kept as separate words."
+}

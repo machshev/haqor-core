@@ -1,0 +1,56 @@
+{
+  "id": "7eeyq",
+  "root": "חוק",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "psalm-35"
+  ],
+  "gloss": "bosom",
+  "summary": "bosom in Psalm 35",
+  "words": [
+    {
+      "lemma": "חֵיק",
+      "gloss": "bosom",
+      "bdb": [
+        "h.bk.ac"
+      ],
+      "pos": "noun",
+      "senses": [
+        {
+          "id": "bosom",
+          "gloss": "bosom",
+          "definition": "bosom in Psalm 35",
+          "evidence": [
+            {
+              "ref": "Psa.35.13",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-h00867"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-h00867",
+      "lang": "arc",
+      "form": "חֵיקָא",
+      "translit": "ḥēqā",
+      "gloss": "bosom",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "חֵיקָא, H00867, Targum 2 Samuel 12:3"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "Drafted for Psalm 35 coverage."
+}

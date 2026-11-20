@@ -1,0 +1,1348 @@
+{
+  "id": "rx3",
+  "root": "רשע",
+  "status": "draft",
+  "updated": "2026-11-18",
+  "tags": [
+    "wickedness",
+    "guilt",
+    "judgment",
+    "righteousness",
+    "justification",
+    "repentance",
+    "death"
+  ],
+  "gloss": "wicked, in the wrong, guilty; act wickedly; condemn",
+  "summary": "To be in the wrong. The רָשָׁע is first the guilty party in a dispute, whom the judges condemn (הִרְשִׁיעוּ) as they justify the righteous (Deu 25:1), and then the man whose way is set against Yahweh's: the standing opposite of the צַדִּיק through Psalms, Proverbs and Ezekiel. The verb is to be in the wrong or act wickedly, and its hiphil both condemns, declares in the wrong, and acts wickedly; the nouns רֶשַׁע and רִשְׁעָה are wickedness and the guilt it brings. Scripture sets the end of the wicked against the life of the righteous: they perish and are no more, unless they turn from their way and live (Ezk 18:21–23).",
+  "words": [
+    {
+      "lemma": "רָשָׁע",
+      "pos": "adjective",
+      "gloss": "wicked; guilty, in the wrong",
+      "bdb": [
+        "t.et.ab"
+      ],
+      "cognate_ids": [
+        "arc-rsha",
+        "syc-rsha"
+      ],
+      "summary": "The root's commonest word, over 260 times, most often as a noun, “the wicked (one)”. In a case at law it is the party in the wrong, the guilty; in Psalms, Proverbs, Job and Ezekiel it is the man who does not keep Yahweh's way, always over against the צַדִּיק “righteous”.",
+      "senses": [
+        {
+          "id": "guilty",
+          "gloss": "guilty, in the wrong",
+          "definition": "The party in the wrong in a dispute or a case at law: the one the judges condemn, who deserves the punishment, as against the one in the right.",
+          "evidence": [
+            {
+              "ref": "Deu.25.1",
+              "role": "defining",
+              "note": "“They shall justify the righteous (הַצַּדִּיק) and condemn the guilty (הָרָשָׁע)”: the two parties of a lawsuit."
+            },
+            {
+              "ref": "Deu.25.2",
+              "role": "defining",
+              "note": "“If the guilty one is worthy of beating …”: the condemned party receives the stripes."
+            },
+            {
+              "ref": "Exo.2.13",
+              "role": "defining",
+              "note": "Moses says to the one in the wrong (לָרָשָׁע) of two Hebrews fighting, “Why do you strike your fellow?”"
+            },
+            {
+              "ref": "Exo.9.27",
+              "role": "defining",
+              "note": "Pharaoh: “Yahweh is the righteous one, and I and my people are the ones in the wrong (הָרְשָׁעִים).”"
+            },
+            {
+              "ref": "Num.35.31",
+              "role": "defining",
+              "note": "A murderer “who is guilty to die (רָשָׁע לָמוּת)”: no ransom may be taken for him."
+            },
+            {
+              "ref": "Exo.23.1",
+              "note": "“Do not put your hand with a guilty one to be a violent witness.”"
+            },
+            {
+              "ref": "Exo.23.7",
+              "note": "“I will not justify a guilty one (לֹא־אַצְדִּיק רָשָׁע).”"
+            },
+            {
+              "ref": "1Ki.8.32",
+              "note": "Solomon asks Yahweh to judge, condemning the guilty and justifying the righteous."
+            },
+            {
+              "ref": "Psa.109.7",
+              "note": "“When he is judged, may he come out guilty (רָשָׁע).”"
+            },
+            {
+              "ref": "Gen.18.25",
+              "note": "“To put to death the righteous with the guilty, so that the righteous is as the guilty: far be it from you! Shall the Judge of all the earth not do justice?”"
+            }
+          ]
+        },
+        {
+          "id": "wicked",
+          "gloss": "wicked; a wicked man",
+          "definition": "One who does not keep Yahweh's way and does not seek him: who plots against the righteous, takes and does not repay, and whose way perishes. The constant opposite of the צַדִּיק.",
+          "evidence": [
+            {
+              "ref": "Psa.1.1",
+              "role": "defining",
+              "note": "“The counsel of the wicked” beside the way of sinners and the seat of scoffers."
+            },
+            {
+              "ref": "Psa.1.6",
+              "role": "defining",
+              "note": "“Yahweh knows the way of the righteous, but the way of the wicked will perish.”"
+            },
+            {
+              "ref": "Mal.3.18",
+              "role": "defining",
+              "note": "“Between the righteous and the wicked, between one serving God and one who has not served him.”"
+            },
+            {
+              "ref": "Psa.10.4",
+              "role": "defining",
+              "note": "“The wicked, in the height of his nose, does not seek; ‘There is no God’ is all his schemes.”"
+            },
+            {
+              "ref": "Psa.37.21",
+              "note": "“The wicked borrows and does not repay, but the righteous is gracious and gives.”"
+            },
+            {
+              "ref": "Psa.36.2",
+              "note": "“There is no fear of God before his eyes.”"
+            },
+            {
+              "ref": "Isa.55.7",
+              "role": "defining",
+              "note": "“Let the wicked forsake his way and the man of iniquity his thoughts, and let him return to Yahweh.”"
+            },
+            {
+              "ref": "Ezk.18.20",
+              "note": "“The righteousness of the righteous will be on him, and the wickedness of the wicked will be on him.”"
+            },
+            {
+              "ref": "Pro.12.10",
+              "note": "“The righteous knows the life of his beast, but the compassions of the wicked are cruel.”"
+            },
+            {
+              "ref": "Pro.15.8",
+              "note": "“The sacrifice of the wicked is an abomination to Yahweh.”"
+            },
+            {
+              "ref": "Pro.11.31",
+              "note": "“The righteous will be repaid in the earth; how much more the wicked and the sinner”: quoted at 1Pe 4:18."
+            },
+            {
+              "ref": "1Pe.4.18",
+              "note": "“If the righteous is scarcely saved, where will the ungodly and sinner appear?”, from Pro 11:31; the Peshitta has רַשִיעָא for “ungodly”."
+            },
+            {
+              "ref": "Jud.1.15",
+              "note": "The Peshitta's רַשִיעֵא, “sinners, wicked ones”, judged at the Lord's coming."
+            }
+          ],
+          "senses": [
+            {
+              "id": "wicked-oppressor",
+              "gloss": "the oppressor of the righteous",
+              "definition": "The wicked as the one who lies in wait for, swallows up and oppresses the righteous and the poor, and the wicked ruler.",
+              "evidence": [
+                {
+                  "ref": "Hab.1.13",
+                  "role": "defining",
+                  "note": "“Why are you silent when the wicked swallows one more righteous than he?”"
+                },
+                {
+                  "ref": "Hab.1.4",
+                  "note": "“The wicked surrounds the righteous; therefore justice goes out perverted.”"
+                },
+                {
+                  "ref": "Psa.37.14",
+                  "role": "defining",
+                  "note": "“The wicked have drawn the sword and bent their bow, to bring down the poor and needy.”"
+                },
+                {
+                  "ref": "Psa.82.4",
+                  "note": "“Rescue the poor and needy; deliver them from the hand of the wicked.”"
+                },
+                {
+                  "ref": "Pro.28.15",
+                  "note": "“A roaring lion and a charging bear is a wicked ruler over a poor people.”"
+                },
+                {
+                  "ref": "Pro.29.2",
+                  "note": "“When a wicked one rules, the people groan.”"
+                },
+                {
+                  "ref": "Ezk.21.30",
+                  "note": "“You, profane one, wicked one, prince of Israel, whose day has come.”"
+                },
+                {
+                  "ref": "Act.2.23",
+                  "note": "Christ was crucified “by the hands of wicked men”: the Peshitta's רַשִיעֵא, Greek ἀνόμων."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἀσεβής",
+          "gloss": "ungodly",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.1.1, Psa.1.6, רְשָׁעִים → ἀσεβῶν; Isa.11.4 רָשָׁע → ἀσεβῆ; Deu.25.1; Ezk.33.11; ἀσεβής renders רָשָׁע ×112"
+            },
+            {
+              "ref": "1Pe.4.18",
+              "role": "defining",
+              "note": "Pro 11:31 quoted: “the ungodly (ὁ ἀσεβής) and sinner”."
+            },
+            {
+              "ref": "Rom.5.6",
+              "note": "“Christ died for the ungodly (ἀσεβῶν)”; the Peshitta has רַשִיעֵא."
+            },
+            {
+              "ref": "Rom.4.5",
+              "note": "“Him who justifies the ungodly (τὸν ἀσεβῆ)”."
+            }
+          ]
+        },
+        {
+          "lemma": "ἁμαρτωλός",
+          "gloss": "sinner",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "ἁμαρτωλός renders רָשָׁע ×53"
+            },
+            {
+              "ref": "1Pe.4.18",
+              "note": "“The ungodly and sinner (ἁμαρτωλός)”, from Pro 11:31."
+            }
+          ]
+        },
+        {
+          "lemma": "ἄνομος",
+          "gloss": "lawless",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Ezk.18.21 רָשָׁע → ἄνομος; ἄνομος renders רָשָׁע ×20"
+            },
+            {
+              "ref": "Act.2.23",
+              "note": "“By the hands of lawless men (ἀνόμων)”; the Peshitta has רַשִיעֵא."
+            },
+            {
+              "ref": "2Th.2.8",
+              "note": "“The lawless one (ὁ ἄνομος), whom the Lord will consume with the breath of his mouth”: the words of Isa 11:4, “with the breath of his lips he will put the wicked to death”."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "חַטָּא",
+            "note": "“Sinner”: the wicked and the sinner together.",
+            "evidence": [
+              {
+                "ref": "Psa.1.1",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.104.35"
+              },
+              {
+                "ref": "Pro.11.31"
+              }
+            ]
+          },
+          {
+            "lemma": "פֹּעֲלֵי אָוֶן",
+            "note": "“Workers of iniquity”.",
+            "evidence": [
+              {
+                "ref": "Psa.28.3",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.92.8"
+              },
+              {
+                "ref": "Psa.141.10"
+              }
+            ]
+          },
+          {
+            "lemma": "לֵץ",
+            "note": "“Scoffer”.",
+            "evidence": [
+              {
+                "ref": "Psa.1.1"
+              },
+              {
+                "ref": "Pro.9.7",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "אִישׁ אָוֶן",
+            "note": "“The man of iniquity”, who is to forsake his thoughts as the wicked his way.",
+            "evidence": [
+              {
+                "ref": "Isa.55.7",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "צַדִּיק",
+            "note": "“Righteous”: the word's constant opposite, in court and in life.",
+            "evidence": [
+              {
+                "ref": "Gen.18.23",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.25.1"
+              },
+              {
+                "ref": "Psa.1.6"
+              },
+              {
+                "ref": "Mal.3.18"
+              },
+              {
+                "ref": "Pro.10.3"
+              },
+              {
+                "ref": "Ezk.18.20"
+              }
+            ]
+          },
+          {
+            "lemma": "יָשָׁר",
+            "note": "“Upright”.",
+            "evidence": [
+              {
+                "ref": "Pro.14.11",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.21.29"
+              }
+            ]
+          },
+          {
+            "lemma": "תָּמִים",
+            "note": "“Blameless”.",
+            "evidence": [
+              {
+                "ref": "Pro.11.5",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "רָשָׁע לָמוּת",
+            "gloss": "guilty to die, worthy of death",
+            "evidence": [
+              {
+                "ref": "Num.35.31",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "phrase": "אֵין שָׁלוֹם … לָרְשָׁעִים",
+            "gloss": "there is no peace for the wicked",
+            "evidence": [
+              {
+                "ref": "Isa.48.22",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.57.21"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "רָשַׁע",
+      "pos": "verb",
+      "gloss": "be in the wrong, act wickedly; (hiphil) condemn, declare guilty; act wickedly",
+      "bdb": [
+        "t.et.ad"
+      ],
+      "cognate_ids": [
+        "arc-rsha",
+        "syc-rsha",
+        "uga-rsa"
+      ],
+      "summary": "About forty times. The qal is to be in the wrong, or to have acted wickedly, in confession and in Job's protest; the hiphil is most often to condemn, the judge's verdict against the one in the wrong, the opposite of הִצְדִּיק “justify”, and also simply to act wickedly.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "be in the wrong, be guilty; act wickedly",
+          "senses": [
+            {
+              "id": "be-guilty",
+              "gloss": "be in the wrong, be guilty",
+              "definition": "To be the one in the wrong before God, the opposite of being in the right.",
+              "evidence": [
+                {
+                  "ref": "Job.10.15",
+                  "role": "defining",
+                  "note": "“If I am in the wrong (רָשַׁעְתִּי), woe to me; and if I am in the right (וְצָדַקְתִּי), I will not lift my head.”"
+                },
+                {
+                  "ref": "Job.9.29",
+                  "note": "“I am to be guilty; why then do I labour in vain?”"
+                },
+                {
+                  "ref": "Job.10.7",
+                  "note": "“You know that I am not guilty.”"
+                }
+              ],
+              "kin": [
+                "guilty"
+              ]
+            },
+            {
+              "id": "act-wickedly",
+              "gloss": "act wickedly, depart wickedly",
+              "definition": "To do wickedly, confessed beside sinning and doing iniquity; with מִן, to depart wickedly from God.",
+              "evidence": [
+                {
+                  "ref": "1Ki.8.47",
+                  "role": "defining",
+                  "note": "“We have sinned, and done iniquity, we have acted wickedly (רָשָׁעְנוּ).”"
+                },
+                {
+                  "ref": "Psa.18.22",
+                  "role": "defining",
+                  "note": "“I have kept the ways of Yahweh, and have not wickedly departed (רָשַׁעְתִּי) from my God.”"
+                },
+                {
+                  "ref": "2Sa.22.22"
+                },
+                {
+                  "ref": "Dan.9.15",
+                  "note": "“We have sinned, we have acted wickedly.”"
+                },
+                {
+                  "ref": "2Ch.6.37"
+                },
+                {
+                  "ref": "Ecc.7.17",
+                  "note": "“Do not be very wicked, and do not be a fool: why should you die before your time?”"
+                }
+              ],
+              "kin": [
+                "wicked"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "condemn, declare in the wrong; act wickedly",
+          "senses": [
+            {
+              "id": "condemn",
+              "gloss": "condemn, declare guilty",
+              "definition": "To give the verdict against someone, declaring him the one in the wrong: the judge's act, the opposite of הִצְדִּיק “justify”.",
+              "evidence": [
+                {
+                  "ref": "Deu.25.1",
+                  "role": "defining",
+                  "note": "“They shall justify the righteous and condemn (וְהִרְשִׁיעוּ) the guilty.”"
+                },
+                {
+                  "ref": "Pro.17.15",
+                  "role": "defining",
+                  "note": "“One who justifies the wicked and one who condemns (וּמַרְשִׁיעַ) the righteous: both are an abomination to Yahweh.”"
+                },
+                {
+                  "ref": "Exo.22.8",
+                  "role": "defining",
+                  "note": "In a dispute over property, “he whom God condemns (יַרְשִׁיעֻן) shall pay double to his neighbour.”"
+                },
+                {
+                  "ref": "1Ki.8.32",
+                  "note": "“Condemning the guilty, to bring his way on his head, and justifying the righteous.”"
+                },
+                {
+                  "ref": "Job.9.20",
+                  "role": "defining",
+                  "note": "“If I am in the right, my own mouth will condemn me.”"
+                },
+                {
+                  "ref": "Job.10.2",
+                  "note": "“Do not condemn me; let me know why you contend with me.”"
+                },
+                {
+                  "ref": "Job.32.3",
+                  "note": "Elihu's anger with Job's friends, who “found no answer, and yet condemned Job.”"
+                },
+                {
+                  "ref": "Job.40.8",
+                  "note": "“Will you condemn me, that you may be in the right?”"
+                },
+                {
+                  "ref": "Psa.37.33",
+                  "note": "“Yahweh will not leave him in his hand, nor condemn him when he is judged.”"
+                },
+                {
+                  "ref": "Psa.94.21",
+                  "note": "“They condemn innocent blood.”"
+                },
+                {
+                  "ref": "Isa.50.9",
+                  "role": "defining",
+                  "note": "The servant: “Behold, the Lord Yahweh will help me; who is he that will condemn me?”"
+                },
+                {
+                  "ref": "Isa.54.17",
+                  "note": "“Every tongue that rises against you in judgment you will condemn.”"
+                },
+                {
+                  "ref": "Rom.8.34",
+                  "note": "“Who is he that condemns? It is Christ who died”, after “it is God who justifies” (Rom 8:33): the words of Isa 50:8–9."
+                },
+                {
+                  "ref": "1Sa.14.47",
+                  "note": "Of Saul's wars: “wherever he turned, he condemned (יַרְשִׁיעַ)”, that is, brought his enemies to their verdict and punishment."
+                }
+              ],
+              "kin": [
+                "guilty"
+              ]
+            },
+            {
+              "id": "hiphil-act-wickedly",
+              "gloss": "act wickedly",
+              "definition": "To do wickedly, as the qal: in confession, of kings, and of those who forsake the covenant.",
+              "evidence": [
+                {
+                  "ref": "Psa.106.6",
+                  "role": "defining",
+                  "note": "“We have sinned with our fathers, we have done iniquity, we have acted wickedly (הִרְשָׁעְנוּ).”"
+                },
+                {
+                  "ref": "Dan.9.5",
+                  "note": "“We have sinned and done iniquity and acted wickedly and rebelled.”"
+                },
+                {
+                  "ref": "Neh.9.33",
+                  "role": "defining",
+                  "note": "“You are righteous in all that has come on us, for you have done truth, and we have acted wickedly.”"
+                },
+                {
+                  "ref": "Job.34.12",
+                  "role": "defining",
+                  "note": "“Surely God will not act wickedly, and Shaddai will not pervert justice.”"
+                },
+                {
+                  "ref": "Dan.11.32",
+                  "note": "“Those who act wickedly against the covenant (מַרְשִׁיעֵי בְרִית) he will corrupt with flatteries.”"
+                },
+                {
+                  "ref": "Dan.12.10",
+                  "note": "“Many will be purified and made white and refined, but the wicked will act wickedly.”"
+                },
+                {
+                  "ref": "2Ch.20.35",
+                  "note": "Jehoshaphat joined himself with Ahaziah, “who acted wickedly.”"
+                },
+                {
+                  "ref": "2Ch.22.3",
+                  "note": "Ahaziah's mother “was his counsellor to act wickedly.”"
+                }
+              ],
+              "kin": [
+                "wicked"
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἀσεβέω",
+          "gloss": "act ungodly",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Dan.9.5 הִרְשַׁעְנוּ → ἠσεβήσαμεν; ἀσεβέω renders רָשַׁע ×5 (ἠσέβησα ×3, ἀσεβέω ×2)"
+            },
+            {
+              "ref": "Jud.1.15",
+              "note": "“All their works of ungodliness which they did ungodly (ἠσέβησαν)”; the Peshitta has the aphel דַּארשעו."
+            }
+          ]
+        },
+        {
+          "lemma": "καταγινώσκω",
+          "gloss": "condemn",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Deu.25.1 וְהִרְשִׁיעוּ → καταγνῶσιν"
+            },
+            {
+              "ref": "1Jn.3.20",
+              "note": "“If our heart condemns (καταγινώσκῃ) us, God is greater than our heart.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "חָטָא",
+            "note": "“Sin”, first in the confessions.",
+            "evidence": [
+              {
+                "ref": "1Ki.8.47",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.106.6"
+              },
+              {
+                "ref": "Dan.9.5"
+              }
+            ]
+          },
+          {
+            "lemma": "עָוָה",
+            "note": "“Do iniquity”.",
+            "evidence": [
+              {
+                "ref": "1Ki.8.47",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.106.6"
+              }
+            ]
+          },
+          {
+            "lemma": "עִוֵּת מִשְׁפָּט",
+            "note": "“Pervert justice”, of what God will not do.",
+            "evidence": [
+              {
+                "ref": "Job.34.12",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "הִצְדִּיק",
+            "note": "“Justify, declare in the right”.",
+            "evidence": [
+              {
+                "ref": "Deu.25.1",
+                "role": "defining"
+              },
+              {
+                "ref": "1Ki.8.32"
+              },
+              {
+                "ref": "Pro.17.15"
+              }
+            ]
+          },
+          {
+            "lemma": "צָדַק",
+            "note": "“Be in the right”.",
+            "evidence": [
+              {
+                "ref": "Job.10.15",
+                "role": "defining"
+              },
+              {
+                "ref": "Job.9.20"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "רֶשַׁע",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "wickedness; wrong, dishonesty",
+      "bdb": [
+        "t.et.ac"
+      ],
+      "cognate_ids": [
+        "arc-rsha",
+        "syc-rsha"
+      ],
+      "senses": [
+        {
+          "id": "wickedness",
+          "gloss": "wickedness",
+          "definition": "What the wicked does and is: the opposite of righteousness and truth, which Yahweh hates and from which a man is to turn.",
+          "evidence": [
+            {
+              "ref": "Psa.45.8",
+              "role": "defining",
+              "note": "“You have loved righteousness and hated wickedness (רֶשַׁע); therefore God, your God, has anointed you”: quoted of the Son at Heb 1:9."
+            },
+            {
+              "ref": "Heb.1.9",
+              "role": "defining",
+              "note": "Psa 45:8 applied to Christ: “you have loved righteousness and hated lawlessness (ἀνομίαν).”"
+            },
+            {
+              "ref": "Pro.8.7",
+              "role": "defining",
+              "note": "“My palate will utter truth, and wickedness is an abomination to my lips.”"
+            },
+            {
+              "ref": "Psa.5.5",
+              "note": "“You are not a God who delights in wickedness; evil will not sojourn with you.”"
+            },
+            {
+              "ref": "Ecc.3.16",
+              "role": "defining",
+              "note": "“The place of justice, there was wickedness, and the place of righteousness, there was wickedness.”"
+            },
+            {
+              "ref": "Ezk.3.19",
+              "note": "“If he does not turn from his wickedness or from his wicked way, he will die in his iniquity.”"
+            },
+            {
+              "ref": "Psa.84.11",
+              "note": "“The tents of wickedness”, set against the house of my God."
+            },
+            {
+              "ref": "Deu.9.27",
+              "note": "Moses' prayer: “Do not look at the stubbornness of this people, or at their wickedness, or at their sin.”"
+            },
+            {
+              "ref": "Psa.125.3",
+              "note": "“The sceptre of wickedness will not rest on the lot of the righteous.”"
+            }
+          ],
+          "senses": [
+            {
+              "id": "dishonest-gain",
+              "gloss": "dishonesty, wrongful gain",
+              "definition": "Wickedness in trade and wealth: false scales, and treasures gained wrongly.",
+              "evidence": [
+                {
+                  "ref": "Mic.6.11",
+                  "role": "defining",
+                  "note": "“Shall I be pure with scales of wickedness (רֶשַׁע) and with a bag of deceitful weights?”"
+                },
+                {
+                  "ref": "Mic.6.10",
+                  "note": "“Treasures of wickedness in the house of the wicked, and the scant measure that is cursed.”"
+                },
+                {
+                  "ref": "Pro.10.2",
+                  "role": "defining",
+                  "note": "“Treasures of wickedness do not profit, but righteousness delivers from death.”"
+                }
+              ]
+            }
+          ],
+          "kin": [
+            "wicked",
+            "wickedness-f"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἀνομία",
+          "gloss": "lawlessness",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.45.8 רֶשַׁע → ἀνομίαν; ἀνομία renders רֶשַׁע ×2, רִשְׁעָה ×4"
+            },
+            {
+              "ref": "Heb.1.9",
+              "role": "defining",
+              "note": "Psa 45:8 quoted: “hated lawlessness (ἀνομίαν)”."
+            }
+          ]
+        },
+        {
+          "lemma": "ἀσέβεια",
+          "gloss": "ungodliness",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "ἀσέβεια renders רֶשַׁע ×3"
+            },
+            {
+              "ref": "Rom.1.18",
+              "note": "“The wrath of God is revealed from heaven against all ungodliness (ἀσέβειαν)”; the Peshitta has רֻושעהֻונ."
+            },
+            {
+              "ref": "Tit.2.12",
+              "note": "“Denying ungodliness (ἀσέβειαν)”; the Peshitta has רֻושעָא."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "opposites": [
+          {
+            "lemma": "צֶדֶק",
+            "note": "“Righteousness”.",
+            "evidence": [
+              {
+                "ref": "Psa.45.8",
+                "role": "defining"
+              },
+              {
+                "ref": "Ecc.3.16"
+              }
+            ]
+          },
+          {
+            "lemma": "אֱמֶת",
+            "note": "“Truth”.",
+            "evidence": [
+              {
+                "ref": "Pro.8.7",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "צְדָקָה",
+            "note": "“Righteousness”, which delivers from death.",
+            "evidence": [
+              {
+                "ref": "Pro.10.2",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "רִשְׁעָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "wickedness; guilt",
+      "bdb": [
+        "t.et.ae"
+      ],
+      "cognate_ids": [
+        "arc-rsha",
+        "syc-rsha"
+      ],
+      "summary": "Fifteen times, as רֶשַׁע: the wickedness of a man or a nation, and the guilt by which the condemned is punished.",
+      "senses": [
+        {
+          "id": "wickedness-f",
+          "gloss": "wickedness",
+          "definition": "The wickedness of a man or a nation, for which Yahweh judges, and from which the wicked may turn and live.",
+          "evidence": [
+            {
+              "ref": "Deu.9.5",
+              "role": "defining",
+              "note": "“Not for your righteousness … but for the wickedness of these nations Yahweh your God is driving them out.”"
+            },
+            {
+              "ref": "Deu.9.4"
+            },
+            {
+              "ref": "Ezk.18.27",
+              "role": "defining",
+              "note": "“When the wicked turns from his wickedness that he has done, and does justice and righteousness, he will keep his soul alive.”"
+            },
+            {
+              "ref": "Ezk.18.20",
+              "note": "“The wickedness of the wicked will be on him.”"
+            },
+            {
+              "ref": "Ezk.33.19"
+            },
+            {
+              "ref": "Pro.11.5",
+              "role": "defining",
+              "note": "“The righteousness of the blameless makes his way straight, but by his wickedness the wicked falls.”"
+            },
+            {
+              "ref": "Isa.9.17",
+              "note": "“Wickedness burns like fire; it devours briars and thorns.”"
+            },
+            {
+              "ref": "Mal.3.19",
+              "note": "“All the arrogant and every doer of wickedness will be stubble.”"
+            },
+            {
+              "ref": "Mal.1.4",
+              "note": "Edom: “they will call them the territory of wickedness.”"
+            },
+            {
+              "ref": "Zec.5.8",
+              "note": "Of the woman sitting in the ephah: “This is wickedness (הָרִשְׁעָה)”; she is carried away to the land of Shinar."
+            }
+          ],
+          "senses": [
+            {
+              "id": "guilt",
+              "gloss": "guilt deserving punishment",
+              "definition": "The wrong of a condemned man, measured by the punishment it deserves.",
+              "evidence": [
+                {
+                  "ref": "Deu.25.2",
+                  "role": "defining",
+                  "note": "The judge has him beaten “according to his wickedness (רִשְׁעָתוֹ), by number”."
+                }
+              ]
+            }
+          ],
+          "kin": [
+            "wickedness",
+            "guilty"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἀνομία",
+          "gloss": "lawlessness",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Zec.5.8 רִשְׁעָה → ἀνομία; ἀνομία renders רִשְׁעָה ×4"
+            },
+            {
+              "ref": "2Th.2.7",
+              "note": "“The mystery of lawlessness (τῆς ἀνομίας) is already at work.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מִרְשַׁעַת",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "wickedness, wicked woman",
+      "bdb": [
+        "t.et.af"
+      ],
+      "cognate_ids": [
+        "arc-rsha",
+        "syc-rsha"
+      ],
+      "summary": "Once only, of Athaliah: the abstract noun set beside her name, “Athaliah, the wickedness”, that is, the wicked woman. One use is a word scripture barely fixes; its sense rests on the root's.",
+      "senses": [
+        {
+          "id": "wickedness-the-wicked-woman",
+          "gloss": "wickedness; the wicked woman",
+          "definition": "Wickedness embodied in a person: Athaliah, whose sons broke into the house of God.",
+          "evidence": [
+            {
+              "ref": "2Ch.24.7",
+              "role": "defining",
+              "note": "“Athaliah, the wickedness (הַמִּרְשַׁעַת), her sons had broken into the house of God.”"
+            }
+          ],
+          "kin": [
+            "wickedness-f",
+            "wicked"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "רַשִיעָא",
+      "lang": "syc",
+      "pos": "adjective",
+      "gloss": "wicked, ungodly",
+      "cognate_ids": [
+        "syc-rsha",
+        "arc-rsha"
+      ],
+      "summary": "The Peshitta's word for the wicked, for Greek ἀσεβής, ἄνομος and ἀνόσιος: those for whom Christ died, those who crucified him, and those kept for the day of judgment.",
+      "senses": [
+        {
+          "id": "wicked-ungodly",
+          "gloss": "wicked, ungodly",
+          "definition": "The ungodly and lawless, set beside sinners and against the righteous, as the Hebrew רָשָׁע.",
+          "evidence": [
+            {
+              "ref": "Rom.5.6",
+              "role": "defining",
+              "note": "“The Messiah, in this time, died for the wicked (חלָפֿ רַשִיעֵא).”"
+            },
+            {
+              "ref": "Rom.5.7",
+              "note": "“Hardly will a man die for the wicked; for the good perhaps one would dare to die.” The Peshitta has רַשִיעֵא where the Greek has δικαίου."
+            },
+            {
+              "ref": "1Pe.4.18",
+              "role": "defining",
+              "note": "“If the righteous (זַדִּיקָא) scarcely lives, the wicked (רַשִיעָא) and sinner, where will he be found?”, from Pro 11:31."
+            },
+            {
+              "ref": "Act.2.23",
+              "note": "“You delivered him into the hands of the wicked (רַשִיעֵא), and crucified and killed him.”"
+            },
+            {
+              "ref": "1Ti.1.9",
+              "note": "The law is set “for the wicked and sinners”."
+            },
+            {
+              "ref": "2Ti.3.2"
+            },
+            {
+              "ref": "2Pe.2.5",
+              "note": "The flood brought on “the world of the wicked”."
+            },
+            {
+              "ref": "2Pe.2.6",
+              "note": "Sodom and Gomorrah an example “to the wicked who would come”."
+            },
+            {
+              "ref": "2Pe.3.7",
+              "note": "“The day of judgment and destruction of wicked men.”"
+            },
+            {
+              "ref": "Jud.1.4"
+            },
+            {
+              "ref": "Jud.1.15",
+              "note": "Judgment on “sinners, wicked ones”."
+            }
+          ],
+          "kin": [
+            "wicked"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "רֻושעָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "wickedness, ungodliness",
+      "cognate_ids": [
+        "syc-rsha",
+        "arc-rsha"
+      ],
+      "senses": [
+        {
+          "id": "wickedness-ungodliness",
+          "gloss": "wickedness, ungodliness",
+          "definition": "Ungodliness, for Greek ἀσέβεια: what God's wrath is revealed against, and what the grace of God teaches men to deny.",
+          "evidence": [
+            {
+              "ref": "Rom.1.18",
+              "role": "defining",
+              "note": "“The wrath of God is revealed from heaven against all the iniquity and wickedness (ורֻושעהֻונ) of men.”"
+            },
+            {
+              "ref": "Tit.2.12",
+              "role": "defining",
+              "note": "“That we should deny wickedness (בּרֻושעָא) and the desires of the world.”"
+            },
+            {
+              "ref": "2Ti.2.16",
+              "note": "Empty words “add to their wickedness”."
+            },
+            {
+              "ref": "Jud.1.18",
+              "note": "Mockers “walking after their desires in wickedness”."
+            }
+          ],
+          "kin": [
+            "wickedness"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "רשַע",
+      "lang": "syc",
+      "pos": "verb",
+      "gloss": "(aphel) act wickedly",
+      "cognate_ids": [
+        "syc-rsha",
+        "arc-rsha"
+      ],
+      "summary": "Once in the Peshitta, in the aphel, for Greek ἀσεβέω.",
+      "stems": [
+        {
+          "stem": "aphel",
+          "gloss": "act wickedly",
+          "senses": [
+            {
+              "id": "act-wickedly-2",
+              "gloss": "act wickedly",
+              "definition": "To do wicked deeds, of the ungodly whom the Lord comes to judge.",
+              "evidence": [
+                {
+                  "ref": "Jud.1.15",
+                  "role": "defining",
+                  "note": "“Concerning all the works they did wickedly (דַּארשעו)”: Greek ἠσέβησαν."
+                }
+              ],
+              "kin": [
+                "hiphil-act-wickedly"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-rsha",
+      "lang": "arc",
+      "form": "רְשַׁע، רִשְׁעָא، רַשִּׁיעָא",
+      "translit": "rəšaʿ, rišʿā, raššīʿā",
+      "gloss": "be wicked, (aphel) act wickedly, (ithpaal) talk wickedly; wickedness; wicked",
+      "relation": "cognate",
+      "note": "Jewish Aramaic of the Targums and Talmud: the Targums render Hebrew רָשָׁע by רַשִּׁיעָא (Targ. Ps 1:1; 37:10) and רֶשַׁע by רִשְׁעָא (Targ. Ps 18:22; Prov 8:7). Aramaic keeps ṯ apart (as ת), so its ש shows š.",
+      "sounds": {
+        "ש": "š"
+      },
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. רְשַׁע I (ch.), citing Targ. Deut. XVIII, 23; Af. Targ. Deut. I, 43; Ithpa. Targ. Is. XXVIII, 22"
+        },
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. רִשְׁעָא (ch.), citing Targ. O. Deut. XVIII, 22; Targ. Ps. XVIII, 22; Targ. Prov. VIII, 7"
+        },
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. רַשִּׁיעָא (ch.), “= h. רָשָׁע”, citing Targ. Ps. XXXVII, 10; Targ. Ps. I, 1"
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Aramaic רשע, רשעא",
+          "note": "“to be wicked, to be evil”; “wickedness, evil, impiety”."
+        }
+      ]
+    },
+    {
+      "id": "syc-rsha",
+      "lang": "syc",
+      "form": "ܪܫܥ، ܪܘܫܥܐ، ܪܫܝܥܐ",
+      "translit": "ršaʿ, rušʿā, rašīʿā",
+      "gloss": "act wickedly; wickedness, ungodliness; wicked, ungodly, impious",
+      "relation": "cognate",
+      "note": "The Syriac of the Peshitta, the same three words as the Hebrew verb, noun and adjective.",
+      "sounds": {
+        "ש": "š"
+      },
+      "evidence": [
+        {
+          "source": "sedra",
+          "locator": "root 1793 RWE; lexemes 3080 ROWEA (wickedness; ungodliness), 3081 RW;EA (impious; wicked; ungodly), 3082 RWE (act wickedly)"
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Classical Syriac ܪܫܥܐ",
+          "note": "“wickedness, evil, impiety”; compares Hebrew רֶשַׁע."
+        }
+      ]
+    },
+    {
+      "id": "uga-rsa",
+      "lang": "uga",
+      "form": "𐎗𐎌𐎓",
+      "translit": "ršʿ",
+      "gloss": "(D stem) do harm, act wickedly",
+      "relation": "possible",
+      "note": "Known here only from Anderson and Moser's root set ršʿ “harm”, which lists a Ugaritic D-stem verb beside the Hebrew and Aramaic; not yet checked in a Ugaritic dictionary. Ugaritic keeps š, ṯ, ʿ and ġ apart, so if confirmed it shows š and ʿ behind the Hebrew letters.",
+      "sounds": {
+        "ש": "š",
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000372 ršʿ[harm]V, UGC003682 ršʿ[D]V; ARM028994 RŠʿ[wicked]V"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "justification",
+      "statement": "The law charges judges to “justify the righteous and condemn the guilty” (Deu 25:1); he who justifies the wicked and he who condemns the righteous are both an abomination to Yahweh (Pro 17:15; Isa 5:23); and Yahweh says of himself, “I will not justify the wicked” (Exo 23:7). Yet Paul writes that God “justifies the ungodly” who believes (Rom 4:5), and he shows how: “Christ died for the ungodly” (Rom 5:6, where the Peshitta has רַשִיעֵא), set forth as a propitiation “that he might be righteous and the one who justifies him who has faith in Jesus” (Rom 3:25–26). The servant of Isaiah, whom Yahweh helps, asks “who is he that will condemn me?” (Isa 50:9), and Paul answers with the same words for those in Christ: “It is God who justifies; who is he that condemns? It is Christ who died, yes, rather who was raised” (Rom 8:33–34). From the verses: God does not call the wicked righteous while he stays in his wickedness; the wicked forsakes his way and returns to Yahweh, who pardons (Isa 55:7), and God remains just because sin was condemned in the death of his Son.",
+      "evidence": [
+        {
+          "ref": "Deu.25.1"
+        },
+        {
+          "ref": "Pro.17.15"
+        },
+        {
+          "ref": "Isa.5.23"
+        },
+        {
+          "ref": "Exo.23.7"
+        },
+        {
+          "ref": "Rom.4.5"
+        },
+        {
+          "ref": "Rom.5.6"
+        },
+        {
+          "ref": "Rom.3.25",
+          "to": "Rom.3.26"
+        },
+        {
+          "ref": "Isa.50.8",
+          "to": "Isa.50.9"
+        },
+        {
+          "ref": "Rom.8.33",
+          "to": "Rom.8.34"
+        },
+        {
+          "ref": "Isa.55.7"
+        }
+      ]
+    },
+    {
+      "topic": "end-of-the-wicked",
+      "statement": "Scripture's pictures of the end of the wicked are all of ceasing to be: chaff the wind drives away (Psa 1:4); “yet a little while, and the wicked will not be; you will look at his place, and he is not” (Psa 37:10); they perish and vanish like smoke (Psa 37:20); “the transgressors will be destroyed together; the end of the wicked will be cut off” (Psa 37:38); “let sinners be consumed from the earth, and the wicked be no more” (Psa 104:35); “as the whirlwind passes, the wicked is no more” (Pro 10:25). Malachi says every doer of wickedness will be stubble that the coming day burns up, leaving neither root nor branch, and that they will be ashes under the soles of the feet of those who fear Yahweh's name (Mal 3:19, 21). “The wicked will not stand in the judgment”, and “the way of the wicked will perish” (Psa 1:5–6). Ezekiel sets the choice as death or life: “the soul that sins, it will die” (Ezk 18:20–21). From the verses: the end of the wicked is death and destruction, to be no more, not life in torment.",
+      "evidence": [
+        {
+          "ref": "Psa.1.4",
+          "to": "Psa.1.6"
+        },
+        {
+          "ref": "Psa.37.10"
+        },
+        {
+          "ref": "Psa.37.20"
+        },
+        {
+          "ref": "Psa.37.38"
+        },
+        {
+          "ref": "Psa.104.35"
+        },
+        {
+          "ref": "Pro.10.25"
+        },
+        {
+          "ref": "Mal.3.19"
+        },
+        {
+          "ref": "Mal.3.21"
+        },
+        {
+          "ref": "Ezk.18.20",
+          "to": "Ezk.18.21"
+        }
+      ]
+    },
+    {
+      "topic": "repentance",
+      "statement": "Yahweh's word to Ezekiel: “If the wicked turns from all his sins that he has done, and keeps all my statutes and does justice and righteousness, he will surely live; he will not die” (Ezk 18:21), and “Have I any pleasure at all that the wicked should die, says the Lord Yahweh, and not that he should turn from his ways and live?” (Ezk 18:23). It is sworn: “As I live, I have no pleasure in the death of the wicked, but that the wicked turn from his way and live; turn, turn from your evil ways, for why will you die, house of Israel?” (Ezk 33:11). The wickedness of the wicked will not make him stumble on the day he turns from it (Ezk 33:12), and the watchman who does not warn the wicked bears his blood (Ezk 3:18). Isaiah: “Let the wicked forsake his way … and let him return to Yahweh, and he will have compassion on him” (Isa 55:7). From the verses: the wicked is not fixed in his end; Yahweh calls him to turn, and the one who turns lives.",
+      "evidence": [
+        {
+          "ref": "Ezk.18.21"
+        },
+        {
+          "ref": "Ezk.18.23"
+        },
+        {
+          "ref": "Ezk.18.27"
+        },
+        {
+          "ref": "Ezk.33.11"
+        },
+        {
+          "ref": "Ezk.33.12"
+        },
+        {
+          "ref": "Ezk.33.14",
+          "to": "Ezk.33.15"
+        },
+        {
+          "ref": "Ezk.3.18"
+        },
+        {
+          "ref": "Isa.55.7"
+        }
+      ]
+    },
+    {
+      "topic": "servant-with-the-wicked",
+      "statement": "Of the servant who bore the sin of many: “they gave his grave with the wicked (רְשָׁעִים), and with a rich man in his deaths, although he had done no violence, and there was no deceit in his mouth” (Isa 53:9). Peter says the same of Christ: “who did no sin, nor was deceit found in his mouth” (1Pe 2:22). He was crucified between two evildoers (Luk 23:32–33), by the hands of the wicked (Act 2:23, the Peshitta's רַשִיעֵא), and Joseph, a rich man, laid him in his own new tomb (Mat 27:57–60). From the verses: the righteous servant was counted and put to death with the wicked, though he was not one of them.",
+      "evidence": [
+        {
+          "ref": "Isa.53.9"
+        },
+        {
+          "ref": "1Pe.2.22"
+        },
+        {
+          "ref": "Luk.23.32",
+          "to": "Luk.23.33"
+        },
+        {
+          "ref": "Act.2.23"
+        },
+        {
+          "ref": "Mat.27.57",
+          "to": "Mat.27.60"
+        }
+      ]
+    },
+    {
+      "topic": "kingdom-of-god",
+      "statement": "The shoot from the stump of Jesse will judge the poor with righteousness, strike the earth with the rod of his mouth, “and with the breath of his lips he will put the wicked to death” (Isa 11:4); Paul applies the words to the Lord Jesus at his coming, who will consume the lawless one “with the breath of his mouth” (2Th 2:8). The psalm that says “yet a little while, and the wicked will not be” goes on, “but the meek will inherit the earth” (Psa 37:10–11), which Jesus repeats (Mat 5:5). From the verses: the removal of the wicked is the work of the Messiah when he comes to reign, and it clears the earth for the meek to inherit it.",
+      "evidence": [
+        {
+          "ref": "Isa.11.1",
+          "to": "Isa.11.4"
+        },
+        {
+          "ref": "2Th.2.8"
+        },
+        {
+          "ref": "Psa.37.10",
+          "to": "Psa.37.11"
+        },
+        {
+          "ref": "Mat.5.5"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-18. The verb is denominative in BDB's analysis; the entry does not decide which came first. BDB's hiphil list (t.et.ad) omits Dan 9:5 הִרְשַׁעְנוּ, which is cited by verse but not counted. Six tokens of מֵרְשָׁעִים are listed twice in the brief (verb with no stem, also t.et.ab); they are the adjective. 1Sa 14:47 יַרְשִׁיעַ is read as condemn (bring to the verdict of defeat); the Septuagint has ἐσῴζετο, as if יוֹשִׁיעַ, which is not evidence of the Hebrew. Names: כּוּשַׁן רִשְׁעָתַיִם (k.az.af) has its own entry (names/cushan-rishathaim.json); בִּרְשַׁע Birsha king of Gomorrah (b.dh.ad, Gen 14:2) is not drafted, since its tie to this root (בְּ + רֶשַׁע “in wickedness”?) rests on spelling alone and the root of the name is unknown. Krahmalkov lists a Punic personal name RSʾ, “vocalisation and meaning uncertain”, not entered. Peshitta: SEDRA root 1793 RWE; tokens found from BFBS: adjective Act 2:23; Rom 5:6, 7; 1Ti 1:9; 2Ti 3:2; 1Pe 4:18; 2Pe 2:5, 6; 3:7; Jud 1:4, 15; noun Rom 1:18; 2Ti 2:16; Tit 2:12; Jud 1:18; verb (aphel) Jud 1:15. The SEDRA word ורֻושעָא (28853) was not located in BFBS. Leads not followed: Arabic rasaʿa “be loose (of limbs)” and Ge'ez rasʿa “forget” (named by Klein; Lane's art. رسع is not in the vendored text, only a cross-reference under رصع; Dillmann not consulted), neither of which shares the meaning; Ge'ez raṣiʿ “wicked”, said to be a loan from Syriac; Ugaritic ršʿ to be checked in DULAT; Payne Smith for the Syriac. Open questions: whether the forensic sense (in the wrong, guilty) is the root's first, with the moral sense from it, as the parallel צדק suggests; the doctrine “kingdom-of-god” for the reviewer's reading of 2Th 2:8."
+}

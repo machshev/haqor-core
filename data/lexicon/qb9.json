@@ -1,0 +1,102 @@
+{
+  "id": "qb9",
+  "root": "קבצ",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "gloss": "gather",
+  "summary": "קבצ means to gather people together.",
+  "words": [
+    {
+      "lemma": "קָבַץ",
+      "pos": "verb",
+      "gloss": "gather",
+      "bdb": [
+        "s.ag.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "gather",
+          "senses": [
+            {
+              "id": "gather",
+              "gloss": "gather",
+              "definition": "To gather people together.",
+              "evidence": [
+                {
+                  "ref": "Psa.41.7",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קִבּוּץ",
+      "pos": "noun",
+      "gloss": "heap",
+      "bdb": [
+        "s.ag.ab"
+      ],
+      "senses": [
+        {
+          "id": "heap",
+          "gloss": "heap",
+          "definition": "A heap or gathered mass.",
+          "evidence": [
+            {
+              "ref": "Isa.57.13",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קְבֻצָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "gathering",
+      "bdb": [
+        "s.ag.ac"
+      ],
+      "senses": [
+        {
+          "id": "gathering",
+          "gloss": "gathering",
+          "definition": "A gathered group.",
+          "evidence": [
+            {
+              "ref": "Ezk.22.20",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "Drafted for Psalms 41–43 coverage.",
+  "cognates": [
+    {
+      "id": "ar-qabad",
+      "lang": "ar",
+      "form": "قَبَضَ",
+      "translit": "qabaḍa",
+      "gloss": "seize, gather",
+      "relation": "possible",
+      "sounds": {
+        "צ": "ṣ"
+      },
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Arabic قبض (qabaḍa), to seize; Hebrew קבץ entry links this as a possible cognate"
+        }
+      ]
+    }
+  ],
+  "created": "2026-11-19"
+}

@@ -1,0 +1,255 @@
+{
+  "id": "tnwr",
+  "root": "תנור",
+  "status": "draft",
+  "updated": "2026-11-18",
+  "tags": [],
+  "gloss": "oven, furnace, firepot",
+  "summary": "Bread and grain offerings bake in a tannur. Hosea compares the heat of a plot against the king to an oven whose fire smoulders overnight and flares in the morning.",
+  "words": [
+    {
+      "lemma": "תַּנּוּר",
+      "pos": "noun",
+      "gender": "m",
+      "bdb": [
+        "w.bd.ae"
+      ],
+      "gloss": "oven, furnace, firepot",
+      "senses": [
+        {
+          "id": "oven",
+          "gloss": "baking oven",
+          "definition": "An enclosed place for heating and baking food. Its heat and smoke also furnish comparisons.",
+          "evidence": [
+            {
+              "ref": "Exo.7.28",
+              "role": "defining",
+              "note": "Frogs invade the ovens and kneading bowls along with the rest of the household."
+            },
+            {
+              "ref": "Lev.2.4",
+              "role": "defining",
+              "note": "The offering baked in an oven can be presented as unleavened loaves or wafers."
+            },
+            {
+              "ref": "Lev.7.9",
+              "role": "defining",
+              "note": "The oven is distinguished from the griddle and pan."
+            },
+            {
+              "ref": "Lev.11.35",
+              "role": "defining",
+              "note": "An oven contaminated by a carcass must be broken down."
+            },
+            {
+              "ref": "Lev.26.26",
+              "role": "defining",
+              "note": "In the threatened scarcity, ten women share a single oven and bread is weighed out."
+            },
+            {
+              "ref": "Neh.3.11",
+              "role": "defining",
+              "note": "A section of Jerusalem’s wall is identified by the Tower of the Ovens."
+            },
+            {
+              "ref": "Neh.12.38",
+              "role": "defining",
+              "note": "The same tower marks the route of the procession."
+            },
+            {
+              "ref": "Hos.7.4",
+              "role": "defining",
+              "note": "The baker’s oven remains hot while dough is kneaded and left to rise."
+            },
+            {
+              "ref": "Hos.7.6",
+              "role": "defining",
+              "note": "The heat of hearts plotting in ambush is compared with an oven blazing in the morning."
+            },
+            {
+              "ref": "Hos.7.7",
+              "role": "defining",
+              "note": "Those as hot as an oven devour their rulers."
+            },
+            {
+              "ref": "Lam.5.10",
+              "role": "defining",
+              "note": "Skin affected by famine is compared with an oven."
+            }
+          ],
+          "cognate_ids": [
+            "akk-oven",
+            "arc-oven",
+            "mand-oven",
+            "syc-oven",
+            "ar-oven",
+            "egy-oven",
+            "ug-oven"
+          ]
+        },
+        {
+          "id": "furnace",
+          "gloss": "furnace, smoking firepot",
+          "definition": "A source of intense heat or smoke in visions and declarations of judgment.",
+          "evidence": [
+            {
+              "ref": "Gen.15.17",
+              "role": "defining",
+              "note": "A smoking firepot appears with a flaming torch between the divided pieces."
+            },
+            {
+              "ref": "Isa.31.9",
+              "role": "defining",
+              "note": "Yahweh’s fire is in Zion and his furnace in Jerusalem."
+            },
+            {
+              "ref": "Psa.21.10",
+              "role": "defining",
+              "note": "The king’s enemies become like a fiery furnace."
+            },
+            {
+              "ref": "Mal.3.19",
+              "role": "defining",
+              "note": "The coming day burns like a furnace, with the evildoers pictured as stubble."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "תַּנּוּרָא",
+      "pos": "noun",
+      "gender": "m",
+      "lang": "syc",
+      "root": "תנורא",
+      "gloss": "oven",
+      "senses": [
+        {
+          "id": "oven-fuel",
+          "gloss": "oven",
+          "definition": "The oven into which short-lived vegetation is thrown as fuel.",
+          "evidence": [
+            {
+              "ref": "Mat.6.30",
+              "role": "defining",
+              "note": "The grass of the field is here today and put into the oven tomorrow."
+            },
+            {
+              "ref": "Luk.12.28",
+              "role": "defining",
+              "note": "The same image contrasts the grass’s brief life with God’s care for it."
+            }
+          ],
+          "cognate_ids": [
+            "syc-oven"
+          ],
+          "kin": [
+            "oven"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-oven",
+      "lang": "akk",
+      "form": "tinūru",
+      "translit": "tinūru",
+      "gloss": "oven",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "cmawro x000017710"
+        }
+      ]
+    },
+    {
+      "id": "arc-oven",
+      "lang": "arc",
+      "form": "תנורא",
+      "translit": "tannūrā",
+      "gloss": "oven",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "cal",
+          "locator": "tnwr, tnwrˀ, noun, oven"
+        }
+      ]
+    },
+    {
+      "id": "mand-oven",
+      "lang": "arc",
+      "form": "ࡕࡀࡍࡅࡓࡀ",
+      "translit": "tanura",
+      "gloss": "oven",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "drower-macuch-1963",
+          "locator": "Mandaic tanura, AM 134:15, kindling an oven, and DC 46.179:16, a heated oven"
+        }
+      ]
+    },
+    {
+      "id": "syc-oven",
+      "lang": "syc",
+      "form": "ܬܢܘܪܐ",
+      "translit": "tannūrā",
+      "gloss": "oven",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "sedra",
+          "locator": "lexeme 3417, Mat 6:30 and Luk 12:28"
+        }
+      ]
+    },
+    {
+      "id": "ar-oven",
+      "lang": "ar",
+      "form": "تَنُّورٌ",
+      "translit": "tannūr",
+      "gloss": "bread oven",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 318, n4137, distinguishes forms of baking oven"
+        }
+      ]
+    },
+    {
+      "id": "egy-oven",
+      "lang": "egy",
+      "form": "trr",
+      "translit": "trr",
+      "gloss": "baker’s oven",
+      "relation": "loan",
+      "evidence": [
+        {
+          "source": "tla",
+          "locator": "lemma 172850, Wb 5, 318.18, Semitic loan"
+        }
+      ]
+    },
+    {
+      "id": "ug-oven",
+      "lang": "uga",
+      "form": "tnrr",
+      "translit": "tnrr",
+      "gloss": "oven, proposed reading",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "dulat-2015",
+          "locator": "under nr, KTU 1.119:9, Watson’s noun reading among the alternatives to a verb meaning burn"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The Egyptian oven word was borrowed from Semitic. Kilani, Vocalisation in Group Writing, p. 46, compares its spelling with Ugaritic tnrr. The interpretation of the Ugaritic passage as a noun is disputed. The database also groups the ear term תְּנוּךְ under the same index key."
+}

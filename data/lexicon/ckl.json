@@ -1,0 +1,253 @@
+{
+  "id": "ckl",
+  "root": "שׂכל",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "wisdom",
+    "teaching"
+  ],
+  "gloss": "understand, act wisely, give insight",
+  "summary": "Wisdom is shown in judgment that guides action. Psalm 2 asks the rulers to act wisely while there is time to heed the warning, and Psalm 32 places instruction beside counsel about the way to walk.",
+  "words": [
+    {
+      "lemma": "שָׂכַל",
+      "bdb": [
+        "u.bi.aa"
+      ],
+      "pos": "verb",
+      "gloss": "act wisely, understand, give insight",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "act with skill or success",
+          "senses": [
+            {
+              "id": "act-with-skill-or",
+              "gloss": "act with skill or success",
+              "definition": "David distinguishes himself in his conduct when the Philistine commanders come out against Israel.",
+              "evidence": [
+                {
+                  "ref": "1Sa.18.30",
+                  "role": "defining"
+                }
+              ],
+              "cognate_ids": [
+                "arc-sekhal"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "gain or give understanding, act prudently",
+          "senses": [
+            {
+              "id": "understand-and-act-wisely",
+              "gloss": "understand and act wisely",
+              "definition": "The kings in Psalm 2 are called to exercise sound judgment and accept correction. Joshua is to attend to the instruction so that his actions will succeed.",
+              "evidence": [
+                {
+                  "ref": "Psa.2.10",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jos.1.8"
+                },
+                {
+                  "ref": "Dan.9.13"
+                }
+              ],
+              "cognate_ids": [
+                "arc-sekhal"
+              ]
+            },
+            {
+              "id": "give-insight-or-instruction",
+              "gloss": "give insight or instruction",
+              "definition": "The speaker promises instruction in the way to go. Daniel is addressed by one who has come to give him insight.",
+              "evidence": [
+                {
+                  "ref": "Psa.32.8",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Dan.9.22"
+                }
+              ],
+              "cognate_ids": [
+                "arc-sekhal"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "direct the hands crosswise",
+          "senses": [
+            {
+              "id": "direct-the-hands-crosswise",
+              "gloss": "direct the hands crosswise",
+              "definition": "Jacob puts his right hand on the younger grandson though the elder is on the other side. His choice is deliberate despite Joseph’s objection.",
+              "evidence": [
+                {
+                  "ref": "Gen.48.14",
+                  "to": "Gen.48.19",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שֵׂכֶל",
+      "bdb": [
+        "u.bi.ab"
+      ],
+      "pos": "noun",
+      "gloss": "insight, discretion",
+      "senses": [
+        {
+          "id": "insight-discretion",
+          "gloss": "insight, discretion",
+          "definition": "A person’s insight is shown in restraint of anger and in the ability to understand instruction. In Daniel it can be turned to cunning.",
+          "evidence": [
+            {
+              "ref": "Pro.19.11",
+              "role": "defining"
+            },
+            {
+              "ref": "Neh.8.8"
+            },
+            {
+              "ref": "Dan.8.25"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "arc-sekhal"
+      ]
+    },
+    {
+      "lemma": "מַשְׂכִּיל",
+      "bdb": [
+        "u.bi.ac",
+        "m.dr.ar"
+      ],
+      "pos": "noun",
+      "gloss": "maskil, a kind of psalm",
+      "senses": [
+        {
+          "id": "maskil-a-kind-of",
+          "gloss": "maskil, a kind of psalm",
+          "definition": "The heading of Psalm 32 calls the composition a maskil, and its speaker offers instruction. Other psalms carry the same designation.",
+          "evidence": [
+            {
+              "ref": "Psa.32.1",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.32.8"
+            },
+            {
+              "ref": "Psa.42.1"
+            },
+            {
+              "ref": "Psa.78.1"
+            },
+            {
+              "ref": "Psa.47.8",
+              "note": "The command to sing is followed by מַשְׂכִּיל, here in the body of the psalm. It may call for a song of insight or for singing with understanding."
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "summary": "The form suggests an association with insight. The headings leave the precise poetic or musical distinction unstated."
+    },
+    {
+      "lemma": "שָׂכְלְתָנוּ",
+      "bdb": [
+        "xu.ae.ab"
+      ],
+      "pos": "noun",
+      "gloss": "understanding",
+      "senses": [
+        {
+          "id": "understanding",
+          "gloss": "understanding",
+          "definition": "Daniel’s understanding is displayed in his capacity to interpret dreams, explain riddles and resolve difficulties.",
+          "evidence": [
+            {
+              "ref": "Dan.5.11",
+              "to": "Dan.5.12",
+              "role": "defining"
+            },
+            {
+              "ref": "Dan.5.14"
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "lang": "arc",
+      "cognate_ids": [
+        "arc-sekhal"
+      ]
+    },
+    {
+      "lemma": "שְׂכַל",
+      "bdb": [
+        "xu.ae.aa"
+      ],
+      "pos": "verb",
+      "gloss": "consider",
+      "stems": [
+        {
+          "stem": "hithpaal",
+          "gloss": "consider attentively",
+          "senses": [
+            {
+              "id": "consider-attentively",
+              "gloss": "consider attentively",
+              "definition": "Daniel studies the horns in his vision and sees another horn arise among them.",
+              "evidence": [
+                {
+                  "ref": "Dan.7.8",
+                  "role": "defining"
+                }
+              ],
+              "cognate_ids": [
+                "arc-sekhal"
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "arc"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-sekhal",
+      "lang": "arc",
+      "form": "סְכַל",
+      "translit": "səkal",
+      "gloss": "see clearly, be sensible",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. סְכַל, Targum Psalms 36:4"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The corpus counts the crossed-hands verse and the ordinary wisdom verb under both u.bi.aa and u.bj.aa. The narrative explains the placement of Jacob’s hands but leaves open whether the verb emphasizes crossing or deliberate guidance."
+}

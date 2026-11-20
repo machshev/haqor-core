@@ -1,0 +1,1479 @@
+{
+  "id": "ymm",
+  "root": "יממ",
+  "status": "draft",
+  "updated": "2026-11-15",
+  "tags": [
+    "sea",
+    "water",
+    "creation",
+    "direction",
+    "nations",
+    "temple",
+    "exodus"
+  ],
+  "gloss": "sea; west",
+  "summary": "יָם is the sea: the gathered waters God named on the third day, made, bounded and ruled by him (Gen 1:10; Exo 20:11; Job 38:8–11), and with a name a particular sea or lake, the Sea of Reeds, the Great Sea, the Salt Sea, Kinnereth. Since the Great Sea lies west of the land, יָם and יָמָּה are also “west, westward” (Num 34:6; Gen 13:14), and Solomon’s great cast basin was “the sea” (1Ki 7:23). In figure the sand of the sea is a countless multitude, and the roaring, restless sea is the peoples in tumult (Isa 17:12; 57:20), the sea out of which Daniel’s beasts rise (Dan 7:2–3; Rev 13:1; 17:15). Ugaritic ym, Phoenician ym and Aramaic יַמָּא share the word; Biblical Aramaic יַם and the Peshitta’s יַמָא belong to the entry.",
+  "words": [
+    {
+      "lemma": "יָם",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "sea, lake; west, westward (יָמָּה); the cast sea of the temple",
+      "bdb": [
+        "j.br.ab"
+      ],
+      "cognate_ids": [
+        "uga-ym",
+        "phn-ym",
+        "arc-yamma",
+        "ar-yamm",
+        "egy-ym"
+      ],
+      "senses": [
+        {
+          "id": "sea",
+          "gloss": "sea, the gathered waters",
+          "definition": "The great body of water God gathered apart from the dry land and named “seas”, made by him with the heavens and the earth and held within the bound he set it; home of the fish, and the way of ships.",
+          "evidence": [
+            {
+              "ref": "Gen.1.10",
+              "role": "defining",
+              "note": "God calls the gathered waters יַמִּים and the dry ground land."
+            },
+            {
+              "ref": "Exo.20.11",
+              "role": "defining",
+              "note": "The sea is one of the things Yahweh made in six days, with the heavens and the earth."
+            },
+            {
+              "ref": "Psa.95.5",
+              "role": "defining",
+              "note": "The sea is his, he made it, as his hands formed the dry land."
+            },
+            {
+              "ref": "Job.38.8",
+              "to": "Job.38.11",
+              "role": "defining",
+              "note": "God shut in the sea with doors and set it a bound: “Unto here you will come, but you will not continue.”"
+            },
+            {
+              "ref": "Pro.8.29",
+              "role": "defining",
+              "note": "He set the sea its statute, that the waters should not cross his command."
+            },
+            {
+              "ref": "Jer.5.22",
+              "role": "defining",
+              "note": "Sand is the sea’s border by an eternal decree; its waves roar but do not cross it."
+            },
+            {
+              "ref": "Gen.1.26",
+              "note": "The fish of the sea, beside the birds of the sky."
+            },
+            {
+              "ref": "Lev.11.9",
+              "note": "Creatures with fins and scales in the seas and in the rivers."
+            },
+            {
+              "ref": "Psa.104.25",
+              "note": "The sea, great and broad, full of living things without number."
+            },
+            {
+              "ref": "Ecc.1.7",
+              "note": "All the rivers go to the sea, yet it is not full."
+            },
+            {
+              "ref": "Psa.107.23",
+              "note": "Those who go down to the sea in ships."
+            },
+            {
+              "ref": "Jon.1.4",
+              "note": "A great storm on the sea."
+            },
+            {
+              "ref": "Jon.1.9",
+              "note": "Yahweh, the God of heaven, made the sea and the dry land."
+            },
+            {
+              "ref": "Act.4.24",
+              "note": "The apostles pray to God who made the heaven, the earth and the sea, in the words of Psa 146:6."
+            }
+          ],
+          "senses": [
+            {
+              "id": "sea-under-god",
+              "gloss": "the sea under God’s hand",
+              "definition": "The sea as the scene of God’s power: he divides it, dries it, rebukes it, treads its waves and stills its roar.",
+              "evidence": [
+                {
+                  "ref": "Exo.14.21",
+                  "role": "defining",
+                  "note": "Yahweh drives the sea back by a strong east wind and makes it dry land."
+                },
+                {
+                  "ref": "Exo.14.29",
+                  "note": "Israel walked on dry land in the midst of the sea."
+                },
+                {
+                  "ref": "Psa.74.13",
+                  "note": "You divided the sea by your strength."
+                },
+                {
+                  "ref": "Isa.51.10",
+                  "note": "He dried up the sea and made its depths a way for the redeemed."
+                },
+                {
+                  "ref": "Psa.114.3",
+                  "note": "The sea looked and fled."
+                },
+                {
+                  "ref": "Psa.89.10",
+                  "role": "defining",
+                  "note": "You rule the surging of the sea; when its waves rise, you still them."
+                },
+                {
+                  "ref": "Isa.51.15",
+                  "note": "Yahweh stirs the sea so that its waves roar."
+                },
+                {
+                  "ref": "Job.9.8",
+                  "note": "He treads on the waves of the sea."
+                },
+                {
+                  "ref": "Nam.1.4",
+                  "note": "He rebukes the sea and makes it dry."
+                },
+                {
+                  "ref": "Jon.1.15",
+                  "note": "The sea ceased from its raging."
+                },
+                {
+                  "ref": "Mat.8.26",
+                  "to": "Mat.8.27",
+                  "note": "Jesus rebukes the wind and the sea, and there is a great calm."
+                },
+                {
+                  "ref": "1Co.10.1",
+                  "to": "1Co.10.2",
+                  "note": "The fathers passed through the sea and were baptized into Moses in the cloud and in the sea."
+                }
+              ]
+            },
+            {
+              "id": "sea-river",
+              "gloss": "a great river (the Nile, the Euphrates)",
+              "definition": "The broad water of Egypt’s river or Babylon’s, called a sea in prophecies of their drying up.",
+              "evidence": [
+                {
+                  "ref": "Isa.19.5",
+                  "role": "defining",
+                  "note": "The waters dry up from the sea, parallel to the river (Egypt’s) drying up."
+                },
+                {
+                  "ref": "Nam.3.8",
+                  "role": "defining",
+                  "note": "Thebes, on the Nile, whose rampart was the sea."
+                },
+                {
+                  "ref": "Jer.51.36",
+                  "note": "“I will dry up her sea and make her fountain dry,” of Babylon."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "named-sea",
+          "gloss": "a particular sea or lake, by name",
+          "definition": "With a name or a defining word, one particular body of water: the Sea of Reeds, the Great Sea to the west, the Salt Sea (the Sea of the Arabah), the Sea of Kinnereth (a lake), the Sea of the Philistines, and the eastern and western seas as the land’s bounds.",
+          "evidence": [
+            {
+              "ref": "Exo.15.4",
+              "role": "defining",
+              "note": "Pharaoh’s officers sank in יַם סוּף."
+            },
+            {
+              "ref": "Num.34.6",
+              "role": "defining",
+              "note": "The Great Sea is the land’s western border."
+            },
+            {
+              "ref": "Gen.14.3",
+              "role": "defining",
+              "note": "The Valley of Siddim, which is the Salt Sea."
+            },
+            {
+              "ref": "Deu.3.17",
+              "note": "The Sea of the Arabah, the Salt Sea."
+            },
+            {
+              "ref": "Num.34.11",
+              "role": "defining",
+              "note": "The border reaches the shoulder of the Sea of Kinnereth on the east."
+            },
+            {
+              "ref": "Exo.23.31",
+              "note": "From the Sea of Reeds to the Sea of the Philistines."
+            },
+            {
+              "ref": "Zec.14.8",
+              "note": "Living waters go out from Jerusalem to the eastern sea and the western sea."
+            },
+            {
+              "ref": "Isa.8.23",
+              "note": "“The way of the sea, beyond the Jordan, Galilee of the nations”, quoted in Mat 4:15."
+            },
+            {
+              "ref": "Mat.4.15",
+              "note": "The Greek renders דֶּרֶךְ הַיָּם “way of the sea”."
+            },
+            {
+              "ref": "Mat.4.18",
+              "note": "Jesus walks beside the Sea of Galilee, Kinnereth’s lake."
+            },
+            {
+              "ref": "Heb.11.29",
+              "note": "By faith they crossed the Red Sea as on dry land."
+            }
+          ]
+        },
+        {
+          "id": "west",
+          "gloss": "west; westward, seaward (יָמָּה)",
+          "definition": "Since the Great Sea bounds the land on the west, יָם names the west, and with the ending of direction, יָמָּה, “westward”; set against קֶדֶם and קָדִים, the east.",
+          "evidence": [
+            {
+              "ref": "Num.34.6",
+              "role": "defining",
+              "note": "“The border of the west (יָם): the Great Sea”; the sea is the west."
+            },
+            {
+              "ref": "Gen.12.8",
+              "role": "defining",
+              "note": "Bethel מִיָּם and Ai מִקֶּדֶם, west and east of Abram’s tent."
+            },
+            {
+              "ref": "Gen.13.14",
+              "role": "defining",
+              "note": "Northward, southward, eastward and וָיָמָּה, the four directions."
+            },
+            {
+              "ref": "Gen.28.14",
+              "note": "You will spread out יָמָּה and eastward and northward and southward."
+            },
+            {
+              "ref": "Exo.10.19",
+              "role": "defining",
+              "note": "רוּחַ יָם, the west wind, takes away the locusts the east wind brought (Exo 10:13)."
+            },
+            {
+              "ref": "Exo.26.22",
+              "note": "The back of the Dwelling, westward."
+            },
+            {
+              "ref": "Exo.27.12",
+              "note": "The court’s west side, לִפְאַת יָם."
+            },
+            {
+              "ref": "Num.2.18",
+              "note": "Ephraim’s camp on the west."
+            },
+            {
+              "ref": "Deu.33.23",
+              "note": "Naphtali will possess west and south."
+            },
+            {
+              "ref": "Ezk.42.19",
+              "note": "He turned to the west side (רוּחַ הַיָּם) and measured."
+            },
+            {
+              "ref": "Dan.8.4",
+              "note": "The ram goring westward and northward and southward."
+            },
+            {
+              "ref": "Hos.11.10",
+              "note": "Sons come trembling from the west."
+            }
+          ]
+        },
+        {
+          "id": "bronze-sea",
+          "gloss": "the cast sea of the temple",
+          "definition": "The great round basin of cast bronze Solomon made for the temple court, ten cubits across, standing on twelve oxen, in which the priests washed; carried off in pieces by the Chaldeans.",
+          "evidence": [
+            {
+              "ref": "1Ki.7.23",
+              "role": "defining",
+              "note": "He made the cast sea, ten cubits from lip to lip, round, five cubits high."
+            },
+            {
+              "ref": "1Ki.7.25",
+              "note": "It stood on twelve oxen facing the four directions."
+            },
+            {
+              "ref": "2Ch.4.6",
+              "role": "defining",
+              "note": "The sea was for the priests to wash in."
+            },
+            {
+              "ref": "1Ki.7.39",
+              "note": "Set on the right side of the house, to the south-east."
+            },
+            {
+              "ref": "1Ch.18.8",
+              "note": "Made from the bronze David took from Hadadezer: יָם הַנְּחֹשֶׁת."
+            },
+            {
+              "ref": "2Ki.16.17",
+              "note": "Ahaz took it down from the bronze oxen."
+            },
+            {
+              "ref": "2Ki.25.13",
+              "note": "The Chaldeans broke up the sea of bronze and carried its bronze to Babylon."
+            },
+            {
+              "ref": "Jer.52.17"
+            }
+          ]
+        },
+        {
+          "id": "sea-figure",
+          "gloss": "the sea as a figure: multitude, the restless peoples",
+          "definition": "The sea stands for what cannot be counted and for what cannot rest: its sand for a countless multitude, its roar and tossing for the tumult of the peoples and for the wicked.",
+          "evidence": [
+            {
+              "ref": "Isa.17.12",
+              "role": "defining",
+              "note": "Many peoples roar like the roaring of the seas."
+            }
+          ],
+          "senses": [
+            {
+              "id": "sand-of-the-sea",
+              "gloss": "the sand of the sea: a countless number",
+              "definition": "חוֹל הַיָּם, the sand on the sea’s shore, for what cannot be counted or measured: Abraham’s seed, an army, grain, wisdom.",
+              "evidence": [
+                {
+                  "ref": "Gen.22.17",
+                  "role": "defining",
+                  "note": "Your seed as the stars of the heavens and as the sand on the shore of the sea."
+                },
+                {
+                  "ref": "Gen.32.13",
+                  "role": "defining",
+                  "note": "As the sand of the sea, which cannot be counted for multitude."
+                },
+                {
+                  "ref": "Gen.41.49",
+                  "note": "Grain like the sand of the sea, until counting stopped."
+                },
+                {
+                  "ref": "Jdg.7.12",
+                  "note": "Midian’s camels like the sand on the shore of the sea."
+                },
+                {
+                  "ref": "1Ki.5.9",
+                  "note": "Breadth of heart like the sand on the shore of the sea."
+                },
+                {
+                  "ref": "Hos.2.1",
+                  "note": "Israel like the sand of the sea, neither measured nor counted."
+                },
+                {
+                  "ref": "Isa.10.22",
+                  "note": "Though Israel be as the sand of the sea, a remnant will return; quoted in Rom 9:27."
+                },
+                {
+                  "ref": "Jer.33.22"
+                },
+                {
+                  "ref": "Heb.11.12",
+                  "note": "From one man, as good as dead, as many as the sand by the shore of the sea."
+                },
+                {
+                  "ref": "Rom.9.27"
+                }
+              ]
+            },
+            {
+              "id": "nations-as-sea",
+              "gloss": "the peoples in tumult; the wicked who cannot rest",
+              "definition": "The roaring sea set beside, or standing for, the multitude of the nations in their tumult, and the wicked who, like the driven sea, cannot be at rest.",
+              "evidence": [
+                {
+                  "ref": "Isa.17.12",
+                  "to": "Isa.17.13",
+                  "role": "defining",
+                  "note": "The multitude of many peoples rage like the raging of the seas."
+                },
+                {
+                  "ref": "Psa.65.8",
+                  "role": "defining",
+                  "note": "God stills the roar of the seas, the roar of their waves, and the tumult of the peoples."
+                },
+                {
+                  "ref": "Isa.60.5",
+                  "role": "defining",
+                  "note": "הֲמוֹן יָם “the abundance of the sea” in parallel with חֵיל גּוֹיִם “the wealth of the nations”."
+                },
+                {
+                  "ref": "Isa.57.20",
+                  "to": "Isa.57.21",
+                  "role": "defining",
+                  "note": "The wicked are like the driven sea, which cannot rest; there is no peace for the wicked."
+                },
+                {
+                  "ref": "Ezk.26.3",
+                  "role": "defining",
+                  "note": "Many nations brought up against Tyre as the sea brings up its waves."
+                },
+                {
+                  "ref": "Jer.6.23",
+                  "note": "The invader’s voice roars like the sea."
+                },
+                {
+                  "ref": "Jer.50.42"
+                },
+                {
+                  "ref": "Jer.51.42",
+                  "note": "The sea has come up over Babylon; she is covered by its tumultuous waves."
+                },
+                {
+                  "ref": "Isa.5.30",
+                  "note": "The invader growls over the land like the growling of the sea."
+                },
+                {
+                  "ref": "Luk.21.25",
+                  "note": "Distress of nations, with the roaring of the sea."
+                },
+                {
+                  "ref": "Rev.13.1",
+                  "note": "A beast rising out of the sea, as in Dan 7:3; it is given authority over every people and nation (Rev 13:7)."
+                },
+                {
+                  "ref": "Rev.17.15",
+                  "note": "The many waters are “peoples and multitudes and nations and languages”."
+                }
+              ],
+              "kin": [
+                "arc-sea"
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "θάλασσα",
+          "gloss": "sea",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.20.11, הַיָּם → θάλασσαν; Psa.146.6 (LXX 145:6) → θάλασσαν"
+            },
+            {
+              "ref": "Act.4.24"
+            },
+            {
+              "ref": "Act.14.15"
+            },
+            {
+              "ref": "Rev.14.7"
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.22.17, הַיָּם → θαλάσσης"
+            },
+            {
+              "ref": "Heb.11.12"
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "Isa.10.22, הַיָּם → θαλάσσης"
+            },
+            {
+              "ref": "Rom.9.27"
+            },
+            {
+              "ref": "Mat.4.15",
+              "note": "Isa 8:23 דֶּרֶךְ הַיָּם, “way of the sea”."
+            }
+          ]
+        },
+        {
+          "lemma": "ἐρυθρός",
+          "gloss": "red; ἡ ἐρυθρὰ θάλασσα, the Red Sea, for יַם סוּף",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.15.4, בְיַם סוּף → ἐν ἐρυθρᾷ θαλάσσῃ (סוּף → ἐρυθρᾷ, יַם → θαλάσσῃ)"
+            },
+            {
+              "ref": "Act.7.36"
+            },
+            {
+              "ref": "Heb.11.29"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "נָהָר",
+            "note": "Sea and river(s) side by side, of the world’s waters and of Egypt’s.",
+            "evidence": [
+              {
+                "ref": "Psa.24.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.19.5",
+                "role": "defining"
+              },
+              {
+                "ref": "Nam.1.4"
+              },
+              {
+                "ref": "Psa.72.8"
+              }
+            ]
+          },
+          {
+            "lemma": "תְּהוֹם",
+            "note": "The deep beside the sea.",
+            "evidence": [
+              {
+                "ref": "Job.38.16",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.51.10"
+              },
+              {
+                "ref": "Psa.135.6"
+              }
+            ]
+          },
+          {
+            "lemma": "מַיִם רַבִּים",
+            "note": "“Many waters” beside the sea and its breakers.",
+            "evidence": [
+              {
+                "ref": "Psa.93.4",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.107.23"
+              },
+              {
+                "ref": "Hab.3.15"
+              }
+            ]
+          },
+          {
+            "lemma": "עַם",
+            "note": "Seas and peoples, waves and nations, in parallel lines.",
+            "evidence": [
+              {
+                "ref": "Isa.17.12",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.65.8",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.60.5",
+                "note": "With גּוֹיִם."
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "יַבָּשָׁה",
+            "note": "The dry land, which God separated from the sea and named land.",
+            "evidence": [
+              {
+                "ref": "Gen.1.10",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.95.5",
+                "note": "יַבֶּשֶׁת."
+              },
+              {
+                "ref": "Jon.1.9"
+              },
+              {
+                "ref": "Exo.14.16"
+              }
+            ]
+          },
+          {
+            "lemma": "קֶדֶם",
+            "note": "East against west.",
+            "evidence": [
+              {
+                "ref": "Gen.12.8",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.28.14"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "יַם סוּף",
+            "gloss": "the Sea of Reeds (the Red Sea)",
+            "evidence": [
+              {
+                "ref": "Exo.13.18",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.15.4"
+              },
+              {
+                "ref": "Exo.15.22"
+              },
+              {
+                "ref": "Psa.106.9"
+              },
+              {
+                "ref": "Psa.136.13"
+              },
+              {
+                "ref": "1Ki.9.26",
+                "note": "Solomon’s fleet at Ezion Geber, on its shore in Edom."
+              },
+              {
+                "ref": "Act.7.36"
+              },
+              {
+                "ref": "Heb.11.29"
+              }
+            ]
+          },
+          {
+            "phrase": "הַיָּם הַגָּדוֹל",
+            "gloss": "the Great Sea (the sea west of the land)",
+            "evidence": [
+              {
+                "ref": "Num.34.6",
+                "role": "defining"
+              },
+              {
+                "ref": "Jos.1.4",
+                "note": "“The Great Sea, toward the going down of the sun.”"
+              },
+              {
+                "ref": "Ezk.47.10"
+              }
+            ]
+          },
+          {
+            "phrase": "יָם הַמֶּלַח",
+            "gloss": "the Salt Sea",
+            "evidence": [
+              {
+                "ref": "Gen.14.3",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.34.3"
+              },
+              {
+                "ref": "Num.34.12"
+              },
+              {
+                "ref": "Jos.15.2"
+              },
+              {
+                "ref": "Jos.15.5"
+              }
+            ]
+          },
+          {
+            "phrase": "יָם הָעֲרָבָה",
+            "gloss": "the Sea of the Arabah (the Salt Sea)",
+            "evidence": [
+              {
+                "ref": "Deu.3.17",
+                "role": "defining"
+              },
+              {
+                "ref": "Jos.3.16"
+              },
+              {
+                "ref": "Jos.12.3"
+              }
+            ]
+          },
+          {
+            "phrase": "יָם כִּנֶּרֶת",
+            "gloss": "the Sea of Kinnereth (the Sea of Galilee)",
+            "evidence": [
+              {
+                "ref": "Num.34.11",
+                "role": "defining"
+              },
+              {
+                "ref": "Jos.13.27"
+              },
+              {
+                "ref": "Jos.12.3",
+                "note": "Spelled יָם כִּנְרוֹת."
+              }
+            ]
+          },
+          {
+            "phrase": "יָם פְּלִשְׁתִּים",
+            "gloss": "the Sea of the Philistines",
+            "evidence": [
+              {
+                "ref": "Exo.23.31",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "phrase": "הַיָּם הָאַחֲרוֹן",
+            "gloss": "the hinder sea: the western sea",
+            "evidence": [
+              {
+                "ref": "Deu.11.24",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.34.2"
+              },
+              {
+                "ref": "Jol.2.20"
+              },
+              {
+                "ref": "Zec.14.8"
+              }
+            ]
+          },
+          {
+            "phrase": "הַיָּם הַקַּדְמוֹנִי",
+            "gloss": "the eastern sea (the Salt Sea)",
+            "evidence": [
+              {
+                "ref": "Ezk.47.18",
+                "role": "defining"
+              },
+              {
+                "ref": "Zec.14.8"
+              },
+              {
+                "ref": "Jol.2.20",
+                "note": "Spelled הַקַּדְמֹנִי."
+              }
+            ]
+          },
+          {
+            "phrase": "יָם הַנְּחֹשֶׁת",
+            "gloss": "the sea of bronze, the temple’s cast basin",
+            "evidence": [
+              {
+                "ref": "2Ki.25.13",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.52.17"
+              },
+              {
+                "ref": "1Ch.18.8"
+              }
+            ]
+          },
+          {
+            "phrase": "חוֹל הַיָּם",
+            "gloss": "the sand of the sea: a number past counting",
+            "evidence": [
+              {
+                "ref": "Gen.32.13",
+                "role": "defining"
+              },
+              {
+                "ref": "Hos.2.1"
+              },
+              {
+                "ref": "Isa.10.22"
+              },
+              {
+                "ref": "Jer.33.22"
+              }
+            ]
+          },
+          {
+            "phrase": "שְׂפַת הַיָּם",
+            "gloss": "the lip of the sea: the shore",
+            "evidence": [
+              {
+                "ref": "Gen.22.17",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.14.30"
+              },
+              {
+                "ref": "1Ki.5.9"
+              }
+            ]
+          },
+          {
+            "phrase": "דְגֵי הַיָּם",
+            "gloss": "the fish of the sea",
+            "evidence": [
+              {
+                "ref": "Psa.8.9",
+                "role": "defining"
+              },
+              {
+                "ref": "Hab.1.14"
+              },
+              {
+                "ref": "Gen.1.26",
+                "note": "Singular collective, בִדְגַת הַיָּם."
+              }
+            ]
+          },
+          {
+            "phrase": "מִיָּם עַד יָם",
+            "gloss": "from sea to sea: from one end of the land or earth to the other",
+            "evidence": [
+              {
+                "ref": "Psa.72.8",
+                "role": "defining"
+              },
+              {
+                "ref": "Zec.9.10"
+              },
+              {
+                "ref": "Amo.8.12"
+              }
+            ]
+          },
+          {
+            "phrase": "בְּלֵב יַמִּים",
+            "gloss": "in the heart of the seas: far out at sea",
+            "evidence": [
+              {
+                "ref": "Ezk.27.4",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezk.28.2"
+              },
+              {
+                "ref": "Ezk.28.8"
+              },
+              {
+                "ref": "Psa.46.3"
+              },
+              {
+                "ref": "Exo.15.8",
+                "note": "Singular, בְּלֶב יָם."
+              }
+            ]
+          },
+          {
+            "phrase": "הַיָּם וּמְלֹאוֹ",
+            "gloss": "the sea and all that fills it",
+            "evidence": [
+              {
+                "ref": "Psa.96.11",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.98.7"
+              },
+              {
+                "ref": "Isa.42.10"
+              }
+            ]
+          },
+          {
+            "phrase": "יוֹרְדֵי הַיָּם",
+            "gloss": "those who go down to the sea: seafarers",
+            "evidence": [
+              {
+                "ref": "Psa.107.23",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.42.10"
+              }
+            ]
+          },
+          {
+            "phrase": "מְצֻלוֹת יָם",
+            "gloss": "the depths of the sea",
+            "evidence": [
+              {
+                "ref": "Mic.7.19",
+                "role": "defining",
+                "note": "You will cast all their sins into the depths of the sea."
+              },
+              {
+                "ref": "Psa.68.23"
+              }
+            ]
+          },
+          {
+            "phrase": "רוּחַ יָם",
+            "gloss": "the west wind",
+            "evidence": [
+              {
+                "ref": "Exo.10.19",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "יַם",
+      "lang": "arc",
+      "root": "ימ",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "sea",
+      "bdb": [
+        "xj.ag.ab"
+      ],
+      "cognate_ids": [
+        "uga-ym",
+        "phn-ym",
+        "arc-yamma"
+      ],
+      "senses": [
+        {
+          "id": "arc-sea",
+          "gloss": "the great sea of Daniel’s vision",
+          "definition": "יַמָּא רַבָּא, the great sea which the four winds of heaven stir up, out of which four beasts come up; the beasts are explained as four kings.",
+          "evidence": [
+            {
+              "ref": "Dan.7.2",
+              "role": "defining",
+              "note": "The four winds of the heavens stirring up לְיַמָּא רַבָּא."
+            },
+            {
+              "ref": "Dan.7.3",
+              "role": "defining",
+              "note": "Four great beasts come up מִן יַמָּא."
+            },
+            {
+              "ref": "Dan.7.17",
+              "note": "The great beasts are four kings."
+            },
+            {
+              "ref": "Rev.13.1",
+              "note": "John sees a beast rising out of the sea, with the features of Daniel’s four."
+            }
+          ],
+          "kin": [
+            "nations-as-sea",
+            "sea"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "θάλασσα",
+          "gloss": "sea",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Dan.7.3, מִן יַמָּא → ἐκ τῆς θαλάσσης; Dan.7.2 → τὴν θάλασσαν"
+            },
+            {
+              "ref": "Rev.13.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "יַמָא",
+      "lang": "syc",
+      "root": "ימא",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "sea; the Sea of Galilee (Peshitta)",
+      "cognate_ids": [
+        "uga-ym",
+        "phn-ym",
+        "arc-yamma"
+      ],
+      "senses": [
+        {
+          "id": "syc-sea",
+          "gloss": "sea, lake",
+          "definition": "The sea God made, and the Sea of Galilee on which the disciples fished and which Jesus stilled.",
+          "evidence": [
+            {
+              "ref": "Act.4.24",
+              "role": "defining",
+              "note": "God who made heaven, earth and the seas (יַמ_מֵא)."
+            },
+            {
+              "ref": "Act.14.15"
+            },
+            {
+              "ref": "Rev.14.7"
+            },
+            {
+              "ref": "Mat.4.18",
+              "role": "defining",
+              "note": "יַמָא דַּגֿלִילָא, the Sea of Galilee; Simon and Andrew cast nets בּיַמָא."
+            },
+            {
+              "ref": "Mat.8.26",
+              "to": "Mat.8.27",
+              "note": "He rebuked the wind and the sea; the wind and the sea obey him."
+            },
+            {
+              "ref": "Mat.4.15",
+              "note": "אֻורחָא דּיַמָא “the way of the sea”, from Isa 8:23."
+            },
+            {
+              "ref": "Heb.11.12",
+              "note": "As the sand on the shore of the sea, from Gen 22:17."
+            },
+            {
+              "ref": "1Co.10.1",
+              "to": "1Co.10.2",
+              "note": "The fathers all passed through the sea and were baptized in the cloud and in the sea."
+            }
+          ],
+          "kin": [
+            "sea",
+            "named-sea"
+          ]
+        },
+        {
+          "id": "syc-sea-figure",
+          "gloss": "the restless sea; the peoples",
+          "definition": "The roaring, wind-driven sea for the distress of the nations and for unstable men, and the sea out of which the beast rises, which is no more in the new heavens and earth.",
+          "evidence": [
+            {
+              "ref": "Luk.21.25",
+              "role": "defining",
+              "note": "Distress of the peoples (עַמ_מֵא) at the roar of the sea (דּקָלָא דּיַמָא)."
+            },
+            {
+              "ref": "Rev.13.1",
+              "role": "defining",
+              "note": "The beast rising מֵנ יַמָא, given authority over all peoples (Rev 13:7)."
+            },
+            {
+              "ref": "Jas.1.6",
+              "note": "The doubter is like the waves of the sea which the wind stirs."
+            },
+            {
+              "ref": "Jud.1.13",
+              "note": "Wild waves of the sea, foaming out their shame."
+            },
+            {
+              "ref": "Rev.21.1",
+              "note": "In the new heavens and new earth “the sea is no more”."
+            }
+          ],
+          "kin": [
+            "nations-as-sea",
+            "arc-sea"
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "יַמָא-דֿסֻופֿ",
+            "gloss": "the Sea of Reeds (Red Sea), Hebrew יַם סוּף",
+            "evidence": [
+              {
+                "ref": "Act.7.36",
+                "role": "defining"
+              },
+              {
+                "ref": "Heb.11.29"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "יַמתָֿא",
+      "lang": "syc",
+      "root": "ימא",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "lake (Peshitta)",
+      "summary": "The feminine of יַמָא, used of the Lake of Gennesaret and of “the lake of fire”.",
+      "cognate_ids": [
+        "uga-ym",
+        "phn-ym",
+        "arc-yamma"
+      ],
+      "senses": [
+        {
+          "id": "lake",
+          "gloss": "lake",
+          "definition": "An inland water: the Lake of Gennesaret, on which the disciples sailed and Jesus walked; and the lake of fire, which is the second death.",
+          "evidence": [
+            {
+              "ref": "Luk.5.1",
+              "role": "defining",
+              "note": "יַמתָֿא דּגֵֿנֵסַר, the lake of Gennesaret."
+            },
+            {
+              "ref": "Luk.8.23",
+              "note": "A storm of wind came down on the lake."
+            },
+            {
+              "ref": "Jhn.6.19",
+              "note": "Jesus walking on the lake (Greek θάλασσα)."
+            },
+            {
+              "ref": "Rev.20.14",
+              "role": "defining",
+              "note": "Death and Sheol are cast into the lake of fire; this is the second death."
+            },
+            {
+              "ref": "Rev.19.20"
+            }
+          ],
+          "kin": [
+            "named-sea",
+            "syc-sea"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "יֵמִם",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "(meaning uncertain) water found in the wilderness, perhaps hot springs",
+      "summary": "Found once, of what Anah found in the wilderness while pasturing his father’s donkeys (Gen 36:24). The verse does not define it; something found in the wilderness by a herdsman suits a water source, but neither its meaning nor its tie to יָם “sea” is established, and no cognate has been found for it, so the root’s cognates count against it.",
+      "bdb": [
+        "j.br.ac"
+      ],
+      "senses": [
+        {
+          "id": "uncertain-springs",
+          "gloss": "(uncertain) springs?",
+          "definition": "Something Anah found in the wilderness while he pastured the donkeys; the context alone does not fix what.",
+          "evidence": [
+            {
+              "ref": "Gen.36.24",
+              "role": "defining",
+              "note": "Anah “who found הַיֵּמִם in the wilderness when he was pasturing the donkeys for Zibeon his father”."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "uga-ym",
+      "lang": "uga",
+      "form": "𐎊𐎎",
+      "translit": "ym /yamm-/",
+      "gloss": "sea; Yamm, the sea as a god",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 188, §93 Glossary, ym /yamm-/",
+          "note": "“ym /yamm-/ ‘sea’, 1.2:IV:7 = 88.51 DN (perhaps also 1.4:IV:31 = 85.2) (H. yam, yamm-, Aram. yamma, Arab. yamm)”; set apart from ym /yôm-/ “day” in the entry before it."
+        },
+        {
+          "source": "segert-1984",
+          "locator": "p. 115, §75.2, rbt.atrt.ym (KTU 1.4:IV:31)",
+          "note": "“Lady Athirat of the Sea”."
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Ugaritic 𐎊𐎎 (ym), Etymology 2",
+          "url": "https://en.wiktionary.org/wiki/%F0%90%8E%8A%F0%90%8E%8E",
+          "note": "“sea; Yam (god of the sea)”."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000537 ym [sea], UGC004786 ym [sea]"
+        }
+      ],
+      "note": "The doubled m (yamm-) agrees with the Hebrew plural יַמִּים and Aramaic יַמָּא. In the Baal cycle the sea is a god, Prince Yamm, whom Baal fights (KTU 1.2:IV); in scripture the sea is a thing God made and commands (Psa 95:5; Job 38:8–11)."
+    },
+    {
+      "id": "phn-ym",
+      "lang": "phn",
+      "form": "𐤉𐤌",
+      "translit": "ym",
+      "gloss": "sea",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 208, YM I",
+          "note": "“[Heb. yam] n.m. SEA”: KAI 14.16, 18 (Ph) ṣdn ʾrṣ ym, “Sidon, land of the sea”; KAI 51 Reverse 2, “governor of ḤRMN-on-sea”; KAI 145 I 4–6 (NPu), “I, Mescar, rule the seas (ymm)”. Entered apart from YM II “day”."
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Phoenician 𐤉𐤌 (ym), Etymology 2",
+          "url": "https://en.wiktionary.org/wiki/%F0%90%A4%89%F0%90%A4%8C",
+          "note": "“open sea”."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000537 ym [sea], PUN000813 ym [sea]"
+        }
+      ],
+      "note": "Phoenician and Punic, the speech of the sea-going coast north of Israel: a coastal city is “land of the sea” and a ruler claims the seas."
+    },
+    {
+      "id": "arc-yamma",
+      "lang": "arc",
+      "form": "יַמָּא",
+      "translit": "yammā",
+      "gloss": "sea",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. יַמָּא",
+          "note": "ch. “same” (as Hebrew יָם “sea, lake, reservoir”): Targ. Gen. IX, 2; Targ. I Kings VII, 23; pl. יַמְמַיָּא, יַמַּיָּא, Targ. Gen. I, 10."
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Aramaic ימא (yammā), Etymology 1",
+          "url": "https://en.wiktionary.org/wiki/%D7%99%D7%9E%D7%90",
+          "note": "“sea”."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000537 ym [sea], ARM011977 ym [sea]"
+        }
+      ],
+      "note": "The Targums use the word where the Hebrew has יָם, for the seas of creation (Gen 1:10), the fish of the sea (Gen 9:2) and Solomon’s cast sea (1Ki 7:23)."
+    },
+    {
+      "id": "ar-yamm",
+      "lang": "ar",
+      "form": "يَمّ",
+      "translit": "yamm",
+      "gloss": "the (open) sea",
+      "relation": "loan",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 1542, root شرك, الفَرِيضَةُ المُشَرَّكَةُ (n22234)",
+          "note": "حَجَرًا مُلْقًى فِى اليَمِّ, “a stone thrown into the sea”, whence the case was also called يَمِّيَّة."
+        },
+        {
+          "source": "lane",
+          "locator": "p. 3064, root يم, الفَرِيضَةُ اليَمِّيَّةُ (n44804)",
+          "note": "Refers to المُشَرَّكَةُ; Lane’s article يم has no separate entry for the noun."
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Arabic يم (yamm)",
+          "url": "https://en.wiktionary.org/wiki/%D9%8A%D9%85",
+          "note": "“open sea”; “Borrowed from a Northwest Semitic language, most probably Aramaic ימא (yammā) or Hebrew יָם (yām).”"
+        }
+      ],
+      "note": "Arabic’s own word for the sea is baḥr; yamm is taken to be borrowed from Aramaic or Hebrew, so it is a witness to the word’s meaning, not an independent cognate."
+    },
+    {
+      "id": "egy-ym",
+      "lang": "egy",
+      "form": "ym",
+      "translit": "ym",
+      "gloss": "sea",
+      "relation": "loan",
+      "evidence": [
+        {
+          "source": "tla",
+          "locator": "tla24730, ym “sea (Sem. loan word)” (Wb 1, 78.11; Hoch, Sem. Words, no. 52)"
+        }
+      ],
+      "note": "An Egyptian word borrowed from a Semitic language (the dictionary marks it “Sem. loan word”), the reverse of the usual direction: the Canaanite word for the sea in New Kingdom Egyptian."
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "creation-in-six-days",
+      "statement": "On the third day God gathered the waters under the heavens into one place, let the dry land appear, and called the gathered waters יַמִּים, “seas” (Gen 1:9–10, 13). The fourth commandment names the sea among the works of the six days: “in six days Yahweh made the heavens and the earth, the sea, and all that is in them, and rested on the seventh day” (Exo 20:11). The sea is his because he made it (Psa 95:5; Jon 1:9; Neh 9:6), and he set it a bound it cannot pass (Job 38:8–11; Pro 8:29; Jer 5:22). The apostles pray and preach in the same words, to God “who made the heaven and the earth and the sea and all that is in them” (Act 4:24; 14:15; Rev 14:7). From the verses: the sea is no god and no primeval chaos but a thing made, on a named day of the creation week, and held in place by God’s decree ever since.",
+      "evidence": [
+        {
+          "ref": "Gen.1.9",
+          "to": "Gen.1.10"
+        },
+        {
+          "ref": "Gen.1.13"
+        },
+        {
+          "ref": "Exo.20.11"
+        },
+        {
+          "ref": "Psa.95.5"
+        },
+        {
+          "ref": "Jon.1.9"
+        },
+        {
+          "ref": "Neh.9.6"
+        },
+        {
+          "ref": "Job.38.8",
+          "to": "Job.38.11"
+        },
+        {
+          "ref": "Pro.8.29"
+        },
+        {
+          "ref": "Jer.5.22"
+        },
+        {
+          "ref": "Act.4.24"
+        },
+        {
+          "ref": "Act.14.15"
+        },
+        {
+          "ref": "Rev.14.7"
+        }
+      ]
+    },
+    {
+      "topic": "authority-given-to-the-son",
+      "statement": "The Psalms give the stilling of the sea to God: he stills the roar of the seas (Psa 65:8), rules the surging of the sea and calms its waves (Psa 89:10), and makes the storm a calm (Psa 107:29). Jesus rebuked the wind and the sea and there was a great calm, and the men asked what man this was, that even the winds and the sea obey him (Mat 8:26–27). The crowds who saw his works glorified God, “who had given such authority to men” (Mat 9:8), and Jesus himself says, “All authority has been given to me in heaven and on earth” (Mat 28:18). From the verses: the power over the sea is God’s, and the son exercised it as one to whom his Father gave it.",
+      "evidence": [
+        {
+          "ref": "Psa.65.8"
+        },
+        {
+          "ref": "Psa.89.10"
+        },
+        {
+          "ref": "Psa.107.29"
+        },
+        {
+          "ref": "Mat.8.26",
+          "to": "Mat.8.27"
+        },
+        {
+          "ref": "Mat.9.8"
+        },
+        {
+          "ref": "Mat.28.18"
+        }
+      ]
+    },
+    {
+      "topic": "baptism",
+      "statement": "Israel went into the midst of the sea on dry ground with the waters a wall on either side, and that day Yahweh saved Israel from the hand of Egypt (Exo 14:22, 29–30). Paul says that the fathers “all passed through the sea, and all were baptized into Moses in the cloud and in the sea”, and adds that with most of them God was not pleased, for they fell in the wilderness (1Co 10:1–2, 5). From the verses: the passage through the sea is scripture’s own figure of baptism, a going through the water out of bondage into a new allegiance; and, as with the fathers, it begins the journey but does not finish it.",
+      "evidence": [
+        {
+          "ref": "Exo.14.22"
+        },
+        {
+          "ref": "Exo.14.29",
+          "to": "Exo.14.30"
+        },
+        {
+          "ref": "1Co.10.1",
+          "to": "1Co.10.2"
+        },
+        {
+          "ref": "1Co.10.5"
+        }
+      ]
+    },
+    {
+      "topic": "nations-as-the-sea",
+      "statement": "Isaiah sets the roar of many peoples beside the roaring of the seas (Isa 17:12), the psalmist God’s stilling of the seas beside his stilling of the tumult of the peoples (Psa 65:8), and “the abundance of the sea” beside “the wealth of the nations” (Isa 60:5); Ezekiel’s nations come up against Tyre as the sea brings up its waves (Ezk 26:3). The wicked are “like the driven sea, for it cannot rest”, and have no peace (Isa 57:20–21). Daniel sees the four winds stir up the great sea and four beasts come up out of it, and is told the beasts are four kings (Dan 7:2–3, 17). John sees a beast rise out of the sea and receive authority over every tribe, people, tongue and nation (Rev 13:1, 7), and is told that the waters he saw are “peoples and multitudes and nations and languages” (Rev 17:15). Jesus foretells “distress of nations” with the roaring of the sea (Luk 21:25). In the new heavens and new earth “the sea is no more” (Rev 21:1). From the verses: in prophecy the sea is the nations in their unrest, out of which the kingdoms of men arise; that the sea is no more means that, when God’s kingdom is established, the restless nations opposed to him are no more.",
+      "evidence": [
+        {
+          "ref": "Isa.17.12",
+          "to": "Isa.17.13"
+        },
+        {
+          "ref": "Psa.65.8"
+        },
+        {
+          "ref": "Isa.60.5"
+        },
+        {
+          "ref": "Ezk.26.3"
+        },
+        {
+          "ref": "Isa.57.20",
+          "to": "Isa.57.21"
+        },
+        {
+          "ref": "Dan.7.2",
+          "to": "Dan.7.3"
+        },
+        {
+          "ref": "Dan.7.17"
+        },
+        {
+          "ref": "Rev.13.1"
+        },
+        {
+          "ref": "Rev.13.7"
+        },
+        {
+          "ref": "Rev.17.15"
+        },
+        {
+          "ref": "Luk.21.25"
+        },
+        {
+          "ref": "Rev.21.1"
+        }
+      ]
+    },
+    {
+      "topic": "kingdom-of-god",
+      "statement": "The king of Psalm 72 is to rule “from sea to sea, and from the River to the ends of the earth” (Psa 72:8), and Zechariah says the same of the king who comes to Zion lowly on a donkey, who will speak peace to the nations (Zec 9:9–10). In that day living waters will go out from Jerusalem to the eastern sea and to the western sea, and Yahweh will be king over all the earth (Zec 14:8–9); the waters going out from the temple heal the Salt Sea, so that fishermen spread their nets there and its fish are like the fish of the Great Sea (Ezk 47:8–10). The earth will be full of the knowledge of Yahweh “as the waters cover the sea” (Isa 11:9; Hab 2:14). From the verses: the kingdom is a reign on this earth, centred on Jerusalem, reaching to the seas that bound the land and to the ends of the earth, which God’s knowledge will fill.",
+      "evidence": [
+        {
+          "ref": "Psa.72.8"
+        },
+        {
+          "ref": "Zec.9.9",
+          "to": "Zec.9.10"
+        },
+        {
+          "ref": "Zec.14.8",
+          "to": "Zec.14.9"
+        },
+        {
+          "ref": "Ezk.47.8",
+          "to": "Ezk.47.10"
+        },
+        {
+          "ref": "Isa.11.9"
+        },
+        {
+          "ref": "Hab.2.14"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-15. ROOT: the database keys יָם (j.br.ab) and יֵמִם (j.br.ac) under יממ, BDB’s heading j.br.aa (an assumed verb ימם with no tokens), so the entry’s root is יממ; no entry has that root (yom.json is יומ, its Syriac אִימָמָא is איממ; yamin.json is ימנ). Biblical Aramaic יַם (xj.ag.ab, Dan 7:2–3) is keyed ימ, given as its word root. The Peshitta words carry SEDRA’s root ימא (root 824: lexemes 1385 ימא ×108, 1386 ימתא ×11, 1387 ימא-דסופ ×2, the last entered as a phrase); SEDRA root 823 is a different ימא, “swear” (ימא, מומתא), and is not part of this entry. Syriac lemmas are copied from the database’s vocalised forms. j.br.aa is the root heading only and has no tokens. VERSE NUMBERS are the Hebrew text’s: Isa 8:23 = Eng 9:1; Hos 2:1 = 1:10; 1Ki 5:9 = 4:29; Gen 32:13 = 32:12; Psa 8:9 = 8:8; Psa 46:3 = 46:2; Psa 65:8 = 65:7; Psa 89:10 = 89:9; Psa 68:23 = 68:22. SENSES: Psa 107:3 and Isa 49:12 (“from the north and from the sea”) are not cited for “west”, since the sea there may be the south. Isa 21:1 “wilderness of the sea” is left unassigned. COGNATES: Segert’s page 188 is read from the OCR between the running heads 187 and 189 (the 188 head is missing); check the scan. Krahmalkov p. 208 is from the text layer. Akkadian: the sea-word is tiāmtu, which answers to תְּהוֹם, not to יָם, and no Akkadian yāmu was found in Oracc; Wiktionary’s Eblaite wamû “sea” and Proto-Semitic *wamm- are leads not followed to a dictionary. Ge'ez not consulted. Syriac dictionaries (Payne Smith) not consulted for ܝܡܐ beyond SEDRA. Arabic yamm is entered as a loan, following Wiktionary’s etymology. LEADS: Rev 4:6 and 15:2, the “sea of glass” before the throne, may answer to the temple’s cast sea; not asserted. The Peshitta renders Rev 19:20–21:8 “lake of fire” with יַמתָֿא. Open: the gloss and meaning of יֵמִם (Gen 36:24) remain uncertain; its negative balance reflects that. The doctrine ‘nations-as-the-sea’ states the Christadelphian reading of Rev 21:1 plainly; check its wording."
+}

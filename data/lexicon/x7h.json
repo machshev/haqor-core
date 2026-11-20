@@ -1,0 +1,1149 @@
+{
+  "id": "x7h",
+  "root": "שחה",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "tags": [
+    "worship",
+    "homage",
+    "prostration",
+    "idolatry",
+    "kingdom-of-god",
+    "pit"
+  ],
+  "gloss": "bow down, prostrate oneself, do homage, worship; bow low; pit",
+  "summary": "To bow down to the ground before another: almost always the long form הִשְׁתַּחֲוָה, often with “nostrils to the ground” or after falling on the face. The same act is homage to a man (Abraham to the sons of Heth, the brothers to Joseph, David to Saul, all the king's servants to Haman) and worship of Yahweh, at his house, at his footstool, with sacrifice and firstfruits; and the law forbids it to any other god, image or the army of the heavens, joining it to “serve”. The prophets and psalms foretell that kings and all nations will bow down to Yahweh and to his king, going up to Jerusalem year by year. The plain verb bows low (Isa 51:23) or weighs the heart down (Pro 12:25); two rare nouns mean “pit”.",
+  "words": [
+    {
+      "lemma": "שָׁחָה",
+      "pos": "verb",
+      "gloss": "bow down, prostrate oneself, do homage, worship; bow low; weigh down",
+      "bdb": [
+        "v.cg.aa"
+      ],
+      "summary": "172 times, all but two in the long form הִשְׁתַּחֲוָה (וַיִּשְׁתַּחוּ, יִשְׁתַּחֲווּ, לְהִשְׁתַּחֲוֹת), which the corpus tags 91 times hishtaphel and 79 times hithpael: one form, recorded here as hishtaphel. Ugaritic has the same form, tštḥwy “she bows down”, which it builds with š and t on a root ḥwy, so the long form may come from ḥwy rather than from שחה “bow low” of the qal and hiphil; the corpus files them together and so does this entry, but the tie between the two is not settled (see the cognates).",
+      "stems": [
+        {
+          "stem": "hishtaphel",
+          "gloss": "bow down, prostrate oneself; do homage; worship",
+          "cognate_ids": [
+            "uga-tshthwy",
+            "ar-istahya",
+            "ar-tahawwa"
+          ],
+          "senses": [
+            {
+              "id": "bow-homage",
+              "gloss": "bow down to a man, do homage",
+              "definition": "To bow to the ground before a man as a mark of honour and submission: to a host, a brother, a king, a prophet, a mother; once, of a servant, as a word of thanks. Also before a messenger of Yahweh who appears as a man.",
+              "evidence": [
+                {
+                  "ref": "Gen.23.7",
+                  "role": "defining",
+                  "note": "Abraham “rose and bowed to the people of the land, to the sons of Heth”, as he bought a grave."
+                },
+                {
+                  "ref": "Gen.23.12"
+                },
+                {
+                  "ref": "Gen.33.3",
+                  "note": "Jacob “bowed to the ground seven times” as he came near Esau."
+                },
+                {
+                  "ref": "Gen.42.6",
+                  "role": "defining",
+                  "note": "Joseph was governor over the land, and his brothers “bowed down to him, nostrils to the ground (אַפַּיִם אָרְצָה)”."
+                },
+                {
+                  "ref": "Gen.43.26"
+                },
+                {
+                  "ref": "Gen.43.28"
+                },
+                {
+                  "ref": "Exo.18.7",
+                  "note": "Moses went out to meet his father-in-law, “bowed down and kissed him”."
+                },
+                {
+                  "ref": "1Sa.24.9",
+                  "role": "defining",
+                  "note": "David called after Saul, “My lord the king!”, bowed his face to the ground and prostrated himself."
+                },
+                {
+                  "ref": "1Sa.25.23",
+                  "note": "Abigail got down from the donkey, fell on her face before David and bowed to the ground."
+                },
+                {
+                  "ref": "1Sa.25.41"
+                },
+                {
+                  "ref": "2Sa.9.6",
+                  "note": "Mephibosheth “fell on his face and prostrated himself”: “Behold your servant.”"
+                },
+                {
+                  "ref": "2Sa.9.8"
+                },
+                {
+                  "ref": "2Sa.14.4"
+                },
+                {
+                  "ref": "2Sa.14.33"
+                },
+                {
+                  "ref": "2Sa.16.4",
+                  "note": "Ziba to the king: “I bow down (הִשְׁתַּחֲוֵיתִי); may I find favour in your eyes”, the act as a word of thanks."
+                },
+                {
+                  "ref": "1Ki.1.16"
+                },
+                {
+                  "ref": "1Ki.1.31",
+                  "note": "Bathsheba bowed, nostrils to the ground: “May my lord King David live for ever!”"
+                },
+                {
+                  "ref": "1Ki.1.53"
+                },
+                {
+                  "ref": "1Ki.2.19",
+                  "note": "King Solomon rose to meet his mother “and bowed down to her”, then sat on his throne."
+                },
+                {
+                  "ref": "1Sa.2.36",
+                  "note": "The remnant of Eli's house will “come to bow down to him for a piece of silver and a loaf of bread”."
+                },
+                {
+                  "ref": "2Ki.2.15",
+                  "note": "The sons of the prophets “came to meet him and bowed down to him to the ground”."
+                },
+                {
+                  "ref": "2Ki.4.37",
+                  "note": "The Shunammite “fell at his feet and bowed down to the ground”, then took up her son."
+                },
+                {
+                  "ref": "Rut.2.10",
+                  "note": "Ruth “fell on her face and bowed down to the ground” before Boaz."
+                },
+                {
+                  "ref": "Est.3.2",
+                  "role": "defining",
+                  "note": "All the king's servants bowed and prostrated themselves (כֹּרְעִים וּמִשְׁתַּחֲוִים) to Haman, “for so the king had commanded”; “but Mordecai did not bow nor prostrate himself”."
+                },
+                {
+                  "ref": "Est.3.5"
+                },
+                {
+                  "ref": "2Ch.24.17",
+                  "note": "After Jehoiada's death “the princes of Judah came and bowed down to the king”, and he listened to them."
+                },
+                {
+                  "ref": "1Ch.29.20",
+                  "note": "The assembly blessed Yahweh “and bowed down and prostrated themselves to Yahweh and to the king”."
+                },
+                {
+                  "ref": "Gen.18.2",
+                  "note": "Abraham ran to meet the three men “and bowed himself to the ground”."
+                },
+                {
+                  "ref": "Gen.19.1",
+                  "note": "Lot rose to meet the two messengers “and bowed, nostrils to the ground”."
+                },
+                {
+                  "ref": "Num.22.31",
+                  "note": "Balaam saw the messenger of Yahweh with drawn sword, “bowed and prostrated himself”."
+                },
+                {
+                  "ref": "Jos.5.14",
+                  "note": "Joshua fell on his face before the commander of Yahweh's army and bowed down: “What does my lord say to his servant?”"
+                },
+                {
+                  "ref": "Mat.18.26",
+                  "note": "The servant “fell down and bowed down to him (προσεκύνει)”: “Lord, have patience with me”."
+                }
+              ]
+            },
+            {
+              "id": "bow-in-subjection",
+              "gloss": "bow down in subjection (foretold)",
+              "definition": "Of brothers, peoples and kings who will bow before the one Yahweh has raised over them: Jacob, Judah, Joseph, Zion and Yahweh's king.",
+              "evidence": [
+                {
+                  "ref": "Gen.27.29",
+                  "role": "defining",
+                  "note": "Isaac's blessing: “May peoples serve you, and nations bow down to you; be lord over your brothers, and may your mother's sons bow down to you.”"
+                },
+                {
+                  "ref": "Gen.37.7",
+                  "note": "Joseph's dream: the brothers' sheaves “bowed down to my sheaf”."
+                },
+                {
+                  "ref": "Gen.37.9"
+                },
+                {
+                  "ref": "Gen.37.10",
+                  "role": "defining",
+                  "note": "“Shall I and your mother and your brothers indeed come to bow down to you to the ground?”, fulfilled at Gen 42:6."
+                },
+                {
+                  "ref": "Gen.49.8",
+                  "note": "“Judah … your father's sons shall bow down to you.”"
+                },
+                {
+                  "ref": "Psa.45.12",
+                  "note": "To the king's bride: “Because he is your lord, bow down to him.”"
+                },
+                {
+                  "ref": "Psa.72.11",
+                  "role": "defining",
+                  "note": "Of the king's son (Psa 72:1): “May all kings bow down to him, all nations serve him.”"
+                },
+                {
+                  "ref": "Isa.45.14",
+                  "note": "Egypt, Cush and the Sabeans “will bow down to you … ‘Surely God is in you, and there is no other’”."
+                },
+                {
+                  "ref": "Isa.49.7",
+                  "note": "“Kings will see and arise, princes, and they will bow down, because of Yahweh.”"
+                },
+                {
+                  "ref": "Isa.49.23",
+                  "role": "defining",
+                  "note": "“With nostrils to the ground they will bow down to you and lick the dust of your feet, and you will know that I am Yahweh.”"
+                },
+                {
+                  "ref": "Isa.60.14",
+                  "note": "The sons of those who afflicted Zion “will bow down at the soles of your feet, and call you the City of Yahweh”."
+                },
+                {
+                  "ref": "Rev.3.9",
+                  "note": "“I will make them come and bow down (προσκυνήσωσιν) before your feet”: the words of Isa 60:14 and 49:23, said to the faithful in Philadelphia."
+                }
+              ]
+            },
+            {
+              "id": "worship-yahweh",
+              "gloss": "bow down to Yahweh, worship",
+              "definition": "To bow down before Yahweh: in thanks when he answers or acts, at his house and altar with sacrifice and firstfruits, at his footstool and toward his holy temple; the act of worship itself, “to go up to worship”.",
+              "evidence": [
+                {
+                  "ref": "Gen.24.26",
+                  "role": "defining",
+                  "note": "Abraham's servant, when Rebekah was shown him, “bowed his head (וַיִּקֹּד) and prostrated himself to Yahweh” and blessed him."
+                },
+                {
+                  "ref": "Gen.24.48"
+                },
+                {
+                  "ref": "Gen.24.52"
+                },
+                {
+                  "ref": "Gen.22.5",
+                  "note": "“I and the boy will go over there and bow down, and come back to you.”"
+                },
+                {
+                  "ref": "Gen.47.31",
+                  "note": "“Israel bowed down at the head of the bed”; Heb 11:21, “Jacob … worshipped (προσεκύνησεν)”."
+                },
+                {
+                  "ref": "Exo.4.31",
+                  "note": "The people believed that Yahweh had seen their affliction, “and they bowed their heads and prostrated themselves”."
+                },
+                {
+                  "ref": "Exo.12.27"
+                },
+                {
+                  "ref": "Exo.24.1",
+                  "note": "“Come up to Yahweh … and bow down from afar.”"
+                },
+                {
+                  "ref": "Exo.33.10"
+                },
+                {
+                  "ref": "Exo.34.8",
+                  "note": "When Yahweh proclaimed his name, Moses “hurried and bowed his head to the ground and prostrated himself”."
+                },
+                {
+                  "ref": "Deu.26.10",
+                  "role": "defining",
+                  "note": "“Set it down before Yahweh your God, and bow down before Yahweh your God”: the firstfruits offered."
+                },
+                {
+                  "ref": "1Sa.1.3",
+                  "role": "defining",
+                  "note": "Elkanah went up year by year “to worship and to sacrifice to Yahweh of Armies in Shiloh”."
+                },
+                {
+                  "ref": "1Sa.1.19"
+                },
+                {
+                  "ref": "1Sa.1.28"
+                },
+                {
+                  "ref": "1Sa.15.25",
+                  "note": "Saul: “Return with me, that I may worship Yahweh.”"
+                },
+                {
+                  "ref": "1Sa.15.30"
+                },
+                {
+                  "ref": "2Sa.12.20",
+                  "note": "David rose from the ground, washed, “came into the house of Yahweh and worshipped”."
+                },
+                {
+                  "ref": "2Sa.15.32",
+                  "note": "The top of the ascent, “where God was worshipped”."
+                },
+                {
+                  "ref": "1Ki.1.47",
+                  "note": "The old king “bowed himself on the bed” and blessed Yahweh (1Ki 1:48)."
+                },
+                {
+                  "ref": "2Ki.17.36",
+                  "role": "defining",
+                  "note": "“Yahweh, who brought you up from Egypt … him you shall fear, to him you shall bow down, and to him you shall sacrifice.”"
+                },
+                {
+                  "ref": "2Ki.18.22",
+                  "note": "Hezekiah's word: “Before this altar you shall bow down in Jerusalem” (also Isa 36:7; 2Ch 32:12)."
+                },
+                {
+                  "ref": "Isa.36.7"
+                },
+                {
+                  "ref": "2Ch.32.12"
+                },
+                {
+                  "ref": "Jer.7.2",
+                  "note": "“All Judah, who enter these gates to bow down to Yahweh.”"
+                },
+                {
+                  "ref": "Ezk.46.2",
+                  "note": "The prince bows down at the threshold of the gate; the people at the entrance of the gate on sabbaths and new moons."
+                },
+                {
+                  "ref": "Ezk.46.3"
+                },
+                {
+                  "ref": "Ezk.46.9"
+                },
+                {
+                  "ref": "Job.1.20",
+                  "note": "Job tore his robe, “fell to the ground and worshipped”: “Yahweh gave, and Yahweh has taken.”"
+                },
+                {
+                  "ref": "Neh.8.6",
+                  "note": "“They bowed their heads and worshipped Yahweh with nostrils to the ground.”"
+                },
+                {
+                  "ref": "Neh.9.3"
+                },
+                {
+                  "ref": "Neh.9.6",
+                  "note": "“You alone are Yahweh; you made the heavens … and the army of the heavens bows down to you.”"
+                },
+                {
+                  "ref": "2Ch.7.3",
+                  "note": "When fire came down and the glory of Yahweh filled the house, they bowed with nostrils to the pavement “and worshipped and gave thanks”."
+                },
+                {
+                  "ref": "2Ch.20.18"
+                },
+                {
+                  "ref": "2Ch.29.28",
+                  "to": "2Ch.29.30",
+                  "note": "At the burnt offering the assembly worshipped; the king and all with him bowed (כָּרְעוּ) and worshipped."
+                },
+                {
+                  "ref": "Psa.95.6",
+                  "role": "defining",
+                  "note": "“Come, let us bow down (נִשְׁתַּחֲוֶה) and kneel (וְנִכְרָעָה); let us bless before Yahweh our maker.”"
+                },
+                {
+                  "ref": "Psa.29.2",
+                  "note": "“Bow down to Yahweh in the splendour of holiness” (also Psa 96:9; 1Ch 16:29)."
+                },
+                {
+                  "ref": "Psa.96.9"
+                },
+                {
+                  "ref": "1Ch.16.29"
+                },
+                {
+                  "ref": "Psa.99.5",
+                  "note": "“Exalt Yahweh our God, and bow down at his footstool; holy is he.”"
+                },
+                {
+                  "ref": "Psa.99.9"
+                },
+                {
+                  "ref": "Psa.132.7"
+                },
+                {
+                  "ref": "Psa.5.8",
+                  "note": "“I will bow down toward your holy temple in fear of you.”"
+                },
+                {
+                  "ref": "Psa.138.2"
+                },
+                {
+                  "ref": "Jhn.4.20",
+                  "to": "Jhn.4.24",
+                  "note": "“Our fathers worshipped (προσεκύνησαν) on this mountain, and you say that in Jerusalem is the place where one must worship”: the place of bowing down, and the worship in spirit and truth that the Father seeks."
+                },
+                {
+                  "ref": "Act.8.27",
+                  "note": "The Cushite official “had come to Jerusalem to worship”."
+                },
+                {
+                  "ref": "1Co.14.25",
+                  "note": "“Falling on his face he will worship God, declaring that God is truly among you.”"
+                }
+              ]
+            },
+            {
+              "id": "worship-other-gods",
+              "gloss": "bow down to other gods, idols, the army of the heavens",
+              "definition": "To give the same act to another god, a made image, the sun, moon and stars: forbidden in the law, nearly always joined with “serve” (עָבַד), and the chief charge the prophets bring against Israel.",
+              "evidence": [
+                {
+                  "ref": "Exo.20.5",
+                  "role": "defining",
+                  "note": "“You shall not bow down to them nor serve them, for I, Yahweh your God, am a jealous God” (also Deu 5:9)."
+                },
+                {
+                  "ref": "Deu.5.9"
+                },
+                {
+                  "ref": "Exo.34.14",
+                  "role": "defining",
+                  "note": "“You shall not bow down to another god, for Yahweh, whose name is Jealous, is a jealous God.”"
+                },
+                {
+                  "ref": "Exo.23.24"
+                },
+                {
+                  "ref": "Lev.26.1",
+                  "note": "No figured stone in the land “to bow down to it, for I am Yahweh your God”."
+                },
+                {
+                  "ref": "Deu.4.19",
+                  "role": "defining",
+                  "note": "Lest you see the sun, the moon and the stars “and be drawn away and bow down to them and serve them”."
+                },
+                {
+                  "ref": "Deu.8.19"
+                },
+                {
+                  "ref": "Deu.11.16"
+                },
+                {
+                  "ref": "Deu.17.3"
+                },
+                {
+                  "ref": "Deu.29.25"
+                },
+                {
+                  "ref": "Deu.30.17"
+                },
+                {
+                  "ref": "Exo.32.8",
+                  "role": "defining",
+                  "note": "“They have made a molten calf and bowed down to it and sacrificed to it, and said, ‘These are your gods, Israel’” (Psa 106:19)."
+                },
+                {
+                  "ref": "Psa.106.19"
+                },
+                {
+                  "ref": "Num.25.2",
+                  "note": "At Baal Peor “the people ate and bowed down to their gods”."
+                },
+                {
+                  "ref": "Jos.23.7"
+                },
+                {
+                  "ref": "Jdg.2.12"
+                },
+                {
+                  "ref": "Jdg.2.19"
+                },
+                {
+                  "ref": "1Ki.9.6"
+                },
+                {
+                  "ref": "1Ki.11.33"
+                },
+                {
+                  "ref": "1Ki.16.31"
+                },
+                {
+                  "ref": "1Ki.22.54"
+                },
+                {
+                  "ref": "2Ki.17.35",
+                  "note": "“You shall not fear other gods, nor bow down to them, nor serve them, nor sacrifice to them.”"
+                },
+                {
+                  "ref": "2Ki.21.3",
+                  "note": "Manasseh “bowed down to all the army of the heavens and served them” (2Ch 33:3)."
+                },
+                {
+                  "ref": "2Ch.33.3"
+                },
+                {
+                  "ref": "2Ki.5.18",
+                  "note": "Naaman asks pardon for bowing in the house of Rimmon when his master leans on his hand there."
+                },
+                {
+                  "ref": "2Ki.19.37",
+                  "note": "Sennacherib was killed “as he was bowing down in the house of Nisroch his god”."
+                },
+                {
+                  "ref": "2Ch.25.14",
+                  "note": "Amaziah set up the gods of Seir “and bowed down before them”."
+                },
+                {
+                  "ref": "Isa.2.8",
+                  "note": "“They bow down to the work of their hands, to what their own fingers have made.”"
+                },
+                {
+                  "ref": "Isa.2.20"
+                },
+                {
+                  "ref": "Isa.44.17",
+                  "role": "defining",
+                  "note": "Of the rest of the wood: “he makes a god, his idol; he bows down (יִסְגָּד) to it and prostrates himself and prays to it, ‘Deliver me, for you are my god.’”"
+                },
+                {
+                  "ref": "Isa.46.6"
+                },
+                {
+                  "ref": "Mic.5.12",
+                  "note": "“You shall no more bow down to the work of your hands.”"
+                },
+                {
+                  "ref": "Jer.1.16"
+                },
+                {
+                  "ref": "Jer.8.2",
+                  "note": "Their bones spread before the sun, moon and army of the heavens, “which they served … and to which they bowed down”."
+                },
+                {
+                  "ref": "Jer.13.10"
+                },
+                {
+                  "ref": "Jer.25.6"
+                },
+                {
+                  "ref": "Ezk.8.16",
+                  "role": "defining",
+                  "note": "Twenty-five men in the inner court, “their backs to the temple of Yahweh and their faces to the east, bowing down eastward to the sun”."
+                },
+                {
+                  "ref": "Zep.1.5",
+                  "note": "“Those who bow down on the roofs to the army of the heavens, and those who bow down and swear to Yahweh and swear by Malcam.”"
+                },
+                {
+                  "ref": "Psa.81.10",
+                  "note": "“You shall not bow down to a foreign god.”"
+                },
+                {
+                  "ref": "Psa.97.7",
+                  "note": "“Let all who serve images be ashamed … bow down to him, all gods.”"
+                },
+                {
+                  "ref": "Mat.4.9",
+                  "role": "defining",
+                  "note": "The adversary: “All these I will give you, if you will fall down and bow down to me (προσκυνήσῃς)”; Jesus answers with Deu 6:13, “You shall worship the Lord your God, and him only shall you serve” (Mat 4:10)."
+                },
+                {
+                  "ref": "Rev.9.20",
+                  "note": "They did not repent “that they should not worship (προσκυνήσωσιν) … idols of gold and silver”."
+                },
+                {
+                  "ref": "Rev.13.4"
+                }
+              ]
+            },
+            {
+              "id": "nations-bow",
+              "gloss": "all nations will bow down to Yahweh",
+              "definition": "Foretold of the nations and of all flesh: they will come to Jerusalem and bow down to Yahweh the King.",
+              "evidence": [
+                {
+                  "ref": "Zec.14.16",
+                  "role": "defining",
+                  "note": "“Everyone left of all the nations that came against Jerusalem shall go up year by year to bow down to the King, Yahweh of Armies, and to keep the feast of Booths.”"
+                },
+                {
+                  "ref": "Zec.14.17",
+                  "note": "Whoever of the families of the earth does not go up to bow down, “on them there will be no rain”."
+                },
+                {
+                  "ref": "Isa.66.23",
+                  "role": "defining",
+                  "note": "“From new moon to new moon and from sabbath to sabbath, all flesh shall come to bow down before me, says Yahweh.”"
+                },
+                {
+                  "ref": "Isa.27.13",
+                  "note": "The lost in Assyria and the outcasts in Egypt “will bow down to Yahweh on the holy mountain at Jerusalem”."
+                },
+                {
+                  "ref": "Psa.22.28",
+                  "note": "“All the ends of the earth will remember and turn to Yahweh, and all the families of the nations will bow down before you.”"
+                },
+                {
+                  "ref": "Psa.22.30"
+                },
+                {
+                  "ref": "Psa.66.4"
+                },
+                {
+                  "ref": "Psa.86.9",
+                  "role": "defining",
+                  "note": "“All the nations you have made will come and bow down before you, Lord, and glorify your name”; Rev 15:4, “all the nations will come and worship (προσκυνήσουσιν) before you”."
+                },
+                {
+                  "ref": "Zep.2.11",
+                  "note": "Yahweh will starve all the gods of the earth, “and they will bow down to him, each from his place, all the coasts of the nations”."
+                },
+                {
+                  "ref": "Rev.15.4"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "qal",
+          "gloss": "bow low, lie down",
+          "cognate_ids": [
+            "arc-shechi"
+          ],
+          "senses": [
+            {
+              "id": "bow-low-lie-down",
+              "gloss": "bow low, lie down",
+              "definition": "To bend down low, flat to the ground, so that another can walk over: the humbling Zion's oppressors demanded.",
+              "evidence": [
+                {
+                  "ref": "Isa.51.23",
+                  "role": "defining",
+                  "note": "Her tormentors “said to your soul, ‘שְׁחִי, that we may pass over’, and you made your back like the ground, like the street for those who pass over.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "weigh down, bow (the heart)",
+          "cognate_ids": [
+            "arc-shechi"
+          ],
+          "senses": [
+            {
+              "id": "weigh-down-make-bow",
+              "gloss": "weigh down, make bow",
+              "definition": "Of anxiety, to bow the heart down, the opposite of making it glad.",
+              "evidence": [
+                {
+                  "ref": "Pro.12.25",
+                  "role": "defining",
+                  "note": "“Anxiety in a man's heart יַשְׁחֶנָּה, but a good word makes it glad (יְשַׂמְּחֶנָּה).”"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "προσκυνέω",
+          "gloss": "bow down to, do homage, worship",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.18.2 and through the Old Testament: 154 alignments of the long form (MACULA lemma חוה) → προσκυνέω, e.g. Gen.22.5, Exo.20.5, Psa.95.6, Zec.14.16"
+            },
+            {
+              "ref": "Mat.4.10",
+              "role": "defining",
+              "note": "“You shall worship (προσκυνήσεις) the Lord your God, and him only shall you serve”: the pair “bow down and serve” of Exo 20:5 and 2Ki 17:35–36."
+            },
+            {
+              "ref": "Heb.1.6",
+              "note": "“Let all God's angels worship him”, in words that answer to Psa 97:7, “bow down to him, all gods”."
+            },
+            {
+              "ref": "Heb.11.21",
+              "note": "Jacob “worshipped, leaning on the top of his staff”: Gen 47:31."
+            },
+            {
+              "ref": "Rev.3.9",
+              "note": "Isa 60:14 applied to the faithful."
+            },
+            {
+              "ref": "Rev.15.4",
+              "note": "Psa 86:9 quoted."
+            },
+            {
+              "ref": "Rev.19.10",
+              "note": "The messenger refuses it: “I am your fellow servant … worship God.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "קָדַד",
+            "note": "“Bow the head”, then bow down: the two steps of one act.",
+            "evidence": [
+              {
+                "ref": "Gen.24.26",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.34.8"
+              },
+              {
+                "ref": "1Sa.24.9"
+              },
+              {
+                "ref": "Neh.8.6"
+              }
+            ]
+          },
+          {
+            "lemma": "כָּרַע",
+            "note": "“Kneel, bow”, beside it in worship and homage.",
+            "evidence": [
+              {
+                "ref": "Psa.95.6",
+                "role": "defining"
+              },
+              {
+                "ref": "Est.3.2",
+                "role": "defining"
+              },
+              {
+                "ref": "2Ch.29.29"
+              }
+            ]
+          },
+          {
+            "lemma": "נָפַל",
+            "note": "“Fall on the face”, then bow down.",
+            "evidence": [
+              {
+                "ref": "Jos.5.14",
+                "role": "defining"
+              },
+              {
+                "ref": "2Sa.9.6"
+              },
+              {
+                "ref": "Rut.2.10"
+              },
+              {
+                "ref": "Job.1.20"
+              }
+            ]
+          },
+          {
+            "lemma": "עָבַד",
+            "note": "“Serve”: bowing down and serving go together, to Yahweh or to other gods.",
+            "evidence": [
+              {
+                "ref": "Exo.20.5",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.8.19"
+              },
+              {
+                "ref": "2Ki.17.35"
+              },
+              {
+                "ref": "Psa.72.11"
+              }
+            ]
+          },
+          {
+            "lemma": "סָגַד",
+            "note": "“Bow down”, beside it in every Hebrew use of סָגַד for bowing to an idol.",
+            "evidence": [
+              {
+                "ref": "Isa.44.17",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.46.6"
+              }
+            ]
+          },
+          {
+            "lemma": "זָבַח",
+            "note": "“Sacrifice”, offered to the one bowed down to.",
+            "evidence": [
+              {
+                "ref": "1Sa.1.3",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.32.8"
+              },
+              {
+                "ref": "2Ki.17.36"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "הִשְׁתַּחֲוָה אַפַּיִם אַרְצָה",
+            "gloss": "bow down, nostrils to the ground",
+            "evidence": [
+              {
+                "ref": "Gen.19.1"
+              },
+              {
+                "ref": "Gen.42.6"
+              },
+              {
+                "ref": "1Sa.25.41"
+              },
+              {
+                "ref": "1Ki.1.31"
+              }
+            ]
+          },
+          {
+            "phrase": "הִשְׁתַּחֲוָה לַהֲדֹם רַגְלָיו",
+            "gloss": "bow down at his footstool",
+            "evidence": [
+              {
+                "ref": "Psa.99.5"
+              },
+              {
+                "ref": "Psa.132.7"
+              }
+            ]
+          },
+          {
+            "phrase": "הִשְׁתַּחֲוָה לַיהוָה בְּהַדְרַת־קֹדֶשׁ",
+            "gloss": "bow down to Yahweh in the splendour of holiness",
+            "evidence": [
+              {
+                "ref": "Psa.29.2"
+              },
+              {
+                "ref": "Psa.96.9"
+              },
+              {
+                "ref": "1Ch.16.29"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "שְׁחִית",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "pit",
+      "bdb": [
+        "v.cg.ac"
+      ],
+      "summary": "Twice, plural, of pits that take a man. Its tie to “bow down” is not clear; no cognate of the root means “pit”, and BDB's other words for a pit (שׁוּחָה, שַׁחַת) are of the roots שׁוח “sink down” and שחת, which the verb forms of Psa 44:26 and Pro 2:18 (שָׁחָה “sinks down”) show beside this spelling.",
+      "senses": [
+        {
+          "id": "shechit-pit",
+          "gloss": "pit, trap",
+          "definition": "A pit in which one is caught, as a hunter's trap; and the pit from which Yahweh delivers.",
+          "evidence": [
+            {
+              "ref": "Lam.4.20",
+              "role": "defining",
+              "note": "“The breath of our nostrils, Yahweh's anointed, was caught in their pits (בִּשְׁחִיתוֹתָם).”"
+            },
+            {
+              "ref": "Psa.107.20",
+              "note": "“He sent his word and healed them, and delivered them from their pits (מִשְּׁחִיתוֹתָם).”"
+            }
+          ],
+          "kin": [
+            "shechut-pit"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שְׁחוּת",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "pit",
+      "bdb": [
+        "v.cg.ab"
+      ],
+      "summary": "Once, the pit the wicked digs and falls into himself; as with שְׁחִית, its tie to the root's sense is not clear.",
+      "senses": [
+        {
+          "id": "shechut-pit",
+          "gloss": "pit",
+          "definition": "A dug pit, into which the one who misleads the upright falls.",
+          "evidence": [
+            {
+              "ref": "Pro.28.10",
+              "role": "defining",
+              "note": "“He who leads the upright astray into an evil way will himself fall into his own pit (בִּשְׁחוּתוֹ).”"
+            }
+          ],
+          "kin": [
+            "shechit-pit"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "uga-tshthwy",
+      "lang": "uga",
+      "form": "𐎚𐎌𐎚𐎈𐎆𐎊",
+      "translit": "tštḥwy, yštḥwy",
+      "gloss": "she (he) bows down, greets by prostration",
+      "relation": "cognate",
+      "note": "The same form as הִשְׁתַּחֲוָה, used at the feet of a god (“she bowed and fell down and did him honour”). The grammar takes it as the š-causative with reflexive t of a root ḥwy, perhaps “live” (“ask life for oneself”), and names a reflexive of a root šḥw as the other reading. It shows ḥ behind ח.",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 185, §93 Glossary, /ḥ-w-y/",
+          "note": "“St: tšthwy (‘to ask life for oneself’ >) ‘to greet/prostrate oneself’ … St cf. H. hištaḥawâ (or derived from š-ḥ-y(?), cf. H. š-ḥ-h, š-ḥ-ḥ ‘to bow down’)”."
+        },
+        {
+          "source": "segert-1984",
+          "locator": "p. 68, §54.45, the Št pattern",
+          "note": "“yšthwy … St /ḥ-w-y/ ‘to greet (by prostration)’. The form yšthwy can also be explained as a reflexive from a root /š-ḥ-w/.”"
+        },
+        {
+          "source": "segert-1984",
+          "locator": "p. 145, notes to KTU 1.4:IV:25–26",
+          "note": "“tšthwy … she greets/prostrates herself; the root is probably /ḥ-w-y/”, after thbr “bow down” and tql “fall down”."
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Hebrew השתחוה, etymology",
+          "note": "Compares Ugaritic hštḥwy and the Arabic Form X (istafʿala)."
+        }
+      ]
+    },
+    {
+      "id": "ar-istahya",
+      "lang": "ar",
+      "form": "اِسْتَحْيَا",
+      "translit": "istaḥyā",
+      "gloss": "let live, spare; feel shame, be bashful",
+      "relation": "possible",
+      "note": "The same st-prefixed form (Form X) of ḥyy “live”: it would fit the Ugaritic grammar's “ask life for oneself”, but no Arabic use means “bow down”.",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 680, art. حى, اِسْتَحْيَاهُ (n9668)",
+          "note": "“He spared him; let him live … He felt, or had a sense of … shame, shyness, or bashfulness.”"
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Arabic استحيا, etymology",
+          "note": "“Possibly related to Hebrew הִשְׁתַּחֲוָה.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-tahawwa",
+      "lang": "ar",
+      "form": "تَحَوَّى",
+      "translit": "taḥawwā",
+      "gloss": "gather itself together, coil itself (of a serpent)",
+      "relation": "possible",
+      "note": "Arabic ḥwy: drawing oneself together, curling up. One way a ḥwy “bow down” could be explained; not argued from any Arabic use for bowing.",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 679, art. حوى, تحوّى (n9643)",
+          "note": "“It gathered itself together, and coiled itself … The serpent gathered itself together, and wound, or coiled, itself.”"
+        },
+        {
+          "source": "lane",
+          "locator": "Book I, p. 678, art. حوى, تَحْوِيَةٌ (n9642)",
+          "note": "“The act of drawing together, or contracting … أُحَوِّى نَفْسِى, I draw myself together.”"
+        }
+      ]
+    },
+    {
+      "id": "arc-shechi",
+      "lang": "arc",
+      "form": "שְׁחֵי، שִׁחְיָא",
+      "translit": "šəḥē, šiḥyā",
+      "gloss": "be bent, cower; bending, bowing the head",
+      "relation": "cognate",
+      "note": "Jewish Aramaic of the Targums: the plain sense of the qal and hiphil, bending low. The Targum of Psa 35:14 uses it for Hebrew שַׁחוֹתִי “I bowed down” (of שׁחח).",
+      "sounds": {
+        "ש": "š"
+      },
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. שְׁחֵי I (ch.), citing Targ. Ps. XXXV, 14; Targ. Job XXXVIII, 40",
+          "note": "“To be bent, cower.”"
+        },
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. שִׁחְיָא (ch.), citing Bets. 24a",
+          "note": "“Bending, bowing the head.”"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "worship-god-alone",
+      "statement": "The verb is one act whoever receives it: Abraham bowed down to the sons of Heth, the brothers to Joseph, Bathsheba to David, Solomon to his mother, and none of them was rebuked (Gen 23:7; 42:6; 1Ki 1:31; 2:19). What the law forbids is bowing down to another god or a made thing: “you shall not bow down to them nor serve them, for I, Yahweh your God, am a jealous God”; “you shall not bow down to another god, for Yahweh, whose name is Jealous, is a jealous God” (Exo 20:4–5; 34:14). Israel was told, “you shall not fear other gods nor bow down to them … but Yahweh, who brought you up out of Egypt, him you shall fear, to him you shall bow down” (2Ki 17:35–36), and Nehemiah gives the reason, “you alone are Yahweh; you made the heavens … and the army of the heavens bows down to you” (Neh 9:6). When Mordecai would not bow to Haman (Est 3:2–5), when Jesus answered the adversary, “you shall worship the Lord your God, and him only shall you serve” (Mat 4:9–10), when Peter raised Cornelius, “stand up; I myself am also a man”, and when the messenger told John twice, “do not; I am your fellow servant … worship God” (Act 10:25–26; Rev 19:10; 22:8–9), the bowing refused is bowing as to a god. From the verses: homage to a man for his place is lawful, but worship belongs to Yahweh the maker alone, and not even his messengers or apostles may take it (Rev 14:7).",
+      "evidence": [
+        {
+          "ref": "Gen.23.7"
+        },
+        {
+          "ref": "Gen.42.6"
+        },
+        {
+          "ref": "1Ki.1.31"
+        },
+        {
+          "ref": "1Ki.2.19"
+        },
+        {
+          "ref": "Exo.20.4",
+          "to": "Exo.20.5"
+        },
+        {
+          "ref": "Exo.34.14"
+        },
+        {
+          "ref": "2Ki.17.35",
+          "to": "2Ki.17.36"
+        },
+        {
+          "ref": "Neh.9.6"
+        },
+        {
+          "ref": "Est.3.2",
+          "to": "Est.3.5"
+        },
+        {
+          "ref": "Mat.4.9",
+          "to": "Mat.4.10"
+        },
+        {
+          "ref": "Act.10.25",
+          "to": "Act.10.26"
+        },
+        {
+          "ref": "Rev.19.10"
+        },
+        {
+          "ref": "Rev.22.8",
+          "to": "Rev.22.9"
+        },
+        {
+          "ref": "Rev.14.7"
+        }
+      ]
+    },
+    {
+      "topic": "homage-to-the-son",
+      "statement": "The psalms foretell bowing down to Yahweh's king: “because he is your lord, bow down to him”; “may all kings bow down to him, all nations serve him”, of the king's son to whom God gives his judgments (Psa 45:12; 72:1, 11). The New Testament records it given to Jesus, by the wise men, by the women and the disciples after his resurrection (Mat 2:11; 28:9, 17), and Hebrews says that when God brings the firstborn into the world he says, “let all God's angels worship him”, in words that answer to Psa 97:7 (Heb 1:6). It is given at God's command and for God's glory: “God has highly exalted him and given him the name above every name, that at the name of Jesus every knee should bow … and every tongue confess that Jesus Christ is Lord, to the glory of God the Father”, and “that all may honour the Son as they honour the Father who sent him” (Php 2:9–11; Jhn 5:23). From the verses: the Son is bowed down to as the lord and king God has made him, as Joseph's brothers bowed to the one their father's God had set over them (Gen 37:10; 42:6), and the honour passes through him to the Father who exalted him.",
+      "evidence": [
+        {
+          "ref": "Psa.45.12"
+        },
+        {
+          "ref": "Psa.72.1"
+        },
+        {
+          "ref": "Psa.72.11"
+        },
+        {
+          "ref": "Mat.2.11"
+        },
+        {
+          "ref": "Mat.28.9"
+        },
+        {
+          "ref": "Mat.28.17"
+        },
+        {
+          "ref": "Heb.1.6"
+        },
+        {
+          "ref": "Psa.97.7"
+        },
+        {
+          "ref": "Php.2.9",
+          "to": "Php.2.11"
+        },
+        {
+          "ref": "Jhn.5.23"
+        },
+        {
+          "ref": "Gen.37.10"
+        },
+        {
+          "ref": "Gen.42.6"
+        }
+      ]
+    },
+    {
+      "topic": "kingdom-of-god",
+      "statement": "Zechariah sees all the nations gathered against Jerusalem, Yahweh going out to fight them, and then “Yahweh will be king over all the earth”; after that “everyone left of all the nations that came against Jerusalem shall go up year by year to bow down to the King, Yahweh of Armies, and to keep the feast of Booths”, and on any family of the earth that does not go up “there will be no rain” (Zec 14:2–3, 9, 16–17). Isaiah says the same: the outcasts “will bow down to Yahweh on the holy mountain at Jerusalem”, and “from new moon to new moon and from sabbath to sabbath, all flesh shall come to bow down before me” (Isa 27:13; 66:23); the psalm, “all the nations you have made shall come and bow down before you” (Psa 86:9), is sung again in Rev 15:4. From the verses: this bowing down is on the earth, at Jerusalem, by nations that still have seasons and rain and can still refuse, under Yahweh reigning as king over the whole earth: the kingdom of God set up on the earth after the nations' last attack on Jerusalem.",
+      "evidence": [
+        {
+          "ref": "Zec.14.2",
+          "to": "Zec.14.3"
+        },
+        {
+          "ref": "Zec.14.9"
+        },
+        {
+          "ref": "Zec.14.16",
+          "to": "Zec.14.17"
+        },
+        {
+          "ref": "Isa.27.13"
+        },
+        {
+          "ref": "Isa.66.23"
+        },
+        {
+          "ref": "Psa.22.28"
+        },
+        {
+          "ref": "Psa.86.9"
+        },
+        {
+          "ref": "Rev.15.4"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-19. Root key שחה; BDB keys v.cg.aa verb, v.cg.ab שְׁחוּת, v.cg.ac שְׁחִית, all assigned; no personal names are formed from the root. The long form הִשְׁתַּחֲוָה is filed here because the corpus files its 170 tokens under v.cg.aa; the corpus tags 91 of them hishtaphel and 79 hithpael (often the same spelling, e.g. Gen 27:29 in both), and the entry records them all under hishtaphel. MACULA lemmatizes the form as חוה, and Ugaritic tštḥwy (Segert) analyses it as Št of ḥwy, so the long form may belong to a root חוה, not שחה; if an entry for חוה is written (Aramaic חֲוָה “declare” is a different root, and Hebrew חַוָּה “tent village” may be the Arabic ḥiwāʾ, Lane p. 679), decide where it goes. Open questions: (1) whether the long form is ḥwy (Ugaritic) or שחה with a palel/hithpalel (the qal Isa 51:23 and hiphil Pro 12:25 are שחה, bow low); (2) the nouns שְׁחִית and שְׁחוּת “pit” have no cognate and score negative in lexicon-support; they may belong with שׁוּחָה and שִׁיחָה under שׁוח “sink down” (Psa 44:26; Pro 2:18), which has no entry yet. Leads not followed: Akkadian šuḫḫû or a šḫ- “bow” (a lexicon's lead; nothing found in Oracc), DULAT for ḥwy and for Ugaritic tštḥwy beyond Segert, Old South Arabian and Ge'ez. Peshitta: the Syriac for προσκυνέω is ܣܓܕ (see sagad), not this root; the brief found no Peshitta cognate. Greek: the brief's MACULA counts for שָׁחָה (κύπτω, ταπεινόω) are the qal and hiphil only, as MACULA files the long form under חוה."
+}

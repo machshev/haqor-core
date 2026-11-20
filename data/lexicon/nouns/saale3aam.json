@@ -1,0 +1,59 @@
+{
+  "id": "saale3aam",
+  "root": "סלעמ",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "tags": [
+    "animals"
+  ],
+  "gloss": "an edible kind of locust",
+  "summary": "Leviticus names the solʿām second among four kinds of winged insects that may be eaten. The preceding verse describes the jointed legs they use to leap from the ground.",
+  "words": [
+    {
+      "lemma": "סָלְעָם",
+      "pos": "noun",
+      "gender": "m",
+      "bdb": [
+        "o.bq.ad"
+      ],
+      "gloss": "an edible kind of locust",
+      "senses": [
+        {
+          "id": "locust",
+          "gloss": "an edible kind of locust",
+          "definition": "A kind of edible locust, distinguished in the list from the ʾarbeh, ḥargōl and ḥāgāb.",
+          "evidence": [
+            {
+              "ref": "Lev.11.22",
+              "role": "defining",
+              "note": "The solʿām follows the ʾarbeh in the list. Each is permitted for food ‘according to its kind’."
+            }
+          ],
+          "cognate_ids": [
+            "arc-swallow"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-swallow",
+      "lang": "arc",
+      "form": "סַלְעֵם",
+      "translit": "salʿēm",
+      "gloss": "swallow up, ruin",
+      "relation": "possible",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "O01017, Targum Job 10:8 and Nahum 3:11"
+        }
+      ]
+    }
+  ],
+  "note": "The traditional rendering ‘bald locust’ supplies a feature the verse does not describe. The Aramaic verb for swallowing up may explain the name as a reference to feeding, but the biblical occurrence gives no evidence for that derivation."
+}

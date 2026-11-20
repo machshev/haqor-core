@@ -1,0 +1,59 @@
+{
+  "id": "ntb",
+  "root": "נתב",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "gloss": "path, way",
+  "summary": "נָתִיב is a path or course, here the path of Yahweh's anger.",
+  "words": [
+    {
+      "lemma": "נָתִיב",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "path",
+      "bdb": [
+        "n.gd.ab"
+      ],
+      "senses": [
+        {
+          "id": "path",
+          "gloss": "path",
+          "definition": "Yahweh made a path for his anger when he did not spare the Egyptians.",
+          "evidence": [
+            {
+              "ref": "Psa.78.50",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "נְתִיבָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "path",
+      "senses": [
+        {
+          "id": "path-2",
+          "gloss": "path",
+          "definition": "A way along which someone walks. God’s word gives light to the psalmist’s path, while Job says that darkness has been set on his paths.",
+          "evidence": [
+            {
+              "ref": "Psa.119.105",
+              "role": "defining"
+            },
+            {
+              "ref": "Job.19.8",
+              "role": "example"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [],
+  "doctrine": [],
+  "note": "The two noun headings share the same indexed surfaces. The one BDB key counts both. The singular in Psa 78:50 is masculine."
+}

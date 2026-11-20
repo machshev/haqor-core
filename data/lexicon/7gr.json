@@ -1,0 +1,135 @@
+{
+  "id": "7gr",
+  "root": "חגר",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "gloss": "gird, belt",
+  "summary": "חגר is to gird or bind around the body. A girdle or belt is the thing used for that binding, and girding can picture readiness and rejoicing.",
+  "words": [
+    {
+      "lemma": "חָגַר",
+      "bdb": [
+        "h.ap.aa"
+      ],
+      "pos": "verb",
+      "gloss": "gird",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "gird",
+          "senses": [
+            {
+              "id": "gird",
+              "gloss": "gird",
+              "definition": "People gird themselves with clothing or weapons, and the hills are pictured as girding on rejoicing.",
+              "evidence": [
+                {
+                  "ref": "Psa.65.13",
+                  "role": "defining"
+                },
+                {
+                  "ref": "1Sa.17.39"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חֲגוֹר",
+      "bdb": [
+        "h.ap.ab"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "belt",
+      "senses": [
+        {
+          "id": "belt",
+          "gloss": "belt",
+          "definition": "A belt or girdle is worn around the body.",
+          "evidence": [
+            {
+              "ref": "1Sa.18.4",
+              "role": "defining"
+            },
+            {
+              "ref": "2Sa.20.8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חֲגוֹרָה",
+      "bdb": [
+        "h.ap.ad"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "girdle",
+      "senses": [
+        {
+          "id": "girdle",
+          "gloss": "girdle",
+          "definition": "A girdle is a band of clothing around the waist.",
+          "evidence": [
+            {
+              "ref": "Isa.3.24",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חָגוֹר",
+      "bdb": [
+        "h.ap.ac"
+      ],
+      "pos": "adjective",
+      "gloss": "girded",
+      "senses": [
+        {
+          "id": "girded",
+          "gloss": "girded",
+          "definition": "The adjective describes one wearing a girdle or prepared for action.",
+          "evidence": [
+            {
+              "ref": "Ezk.23.15",
+              "role": "defining"
+            },
+            {
+              "ref": "Pro.31.24"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַחֲגֹרֶת",
+      "bdb": [
+        "h.ap.ae"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "girding",
+      "senses": [
+        {
+          "id": "girding",
+          "gloss": "girding",
+          "definition": "A girding is a band or act of binding around the body.",
+          "evidence": [
+            {
+              "ref": "Isa.3.24",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "note": "The second zero-token מַחֲגֹרֶת key is a cross-reference."
+}

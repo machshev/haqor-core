@@ -1,0 +1,130 @@
+{
+  "id": "n7h",
+  "root": "נחה",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "direction",
+    "travel",
+    "righteousness"
+  ],
+  "gloss": "lead, guide",
+  "summary": "A guide leads people along a road to their destination. David also uses the verb when he asks Yahweh to direct his conduct in the sight of his adversaries.",
+  "words": [
+    {
+      "lemma": "נָחָה",
+      "bdb": [
+        "n.co.aa"
+      ],
+      "pos": "verb",
+      "gloss": "lead, guide",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "lead along a way",
+          "senses": [
+            {
+              "id": "lead-on-a-journey",
+              "gloss": "lead on a journey",
+              "definition": "Abraham’s servant blesses Yahweh for leading him to the household of his master’s kinsmen. Moses must lead the people to the place Yahweh named.",
+              "evidence": [
+                {
+                  "ref": "Gen.24.27",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Exo.32.34"
+                },
+                {
+                  "ref": "Psa.77.21"
+                }
+              ],
+              "cognate_ids": [
+                "ar-naha"
+              ]
+            },
+            {
+              "id": "guide-a-person-s",
+              "gloss": "guide a person’s conduct",
+              "definition": "Under his opponents’ scrutiny, David asks Yahweh to guide him in righteousness and make the path before him straight.",
+              "evidence": [
+                {
+                  "ref": "Psa.5.9",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.27.11"
+                },
+                {
+                  "ref": "Psa.139.24"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "guide to a destination or in conduct",
+          "senses": [
+            {
+              "id": "guide-along-a-route",
+              "gloss": "guide along a route",
+              "definition": "Abraham’s servant retraces how Yahweh guided him on his journey. In the wilderness the cloud by day and fire by night guided Israel.",
+              "evidence": [
+                {
+                  "ref": "Gen.24.48",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.78.14"
+                },
+                {
+                  "ref": "Psa.61.3"
+                }
+              ],
+              "cognate_ids": [
+                "ar-naha"
+              ]
+            },
+            {
+              "id": "give-direction",
+              "gloss": "give direction",
+              "definition": "David guides the people with skilful hands. Integrity guides the upright in Proverbs.",
+              "evidence": [
+                {
+                  "ref": "Psa.78.72",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Pro.11.3"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-naha",
+      "lang": "ar",
+      "form": "نَحَا",
+      "translit": "naḥā",
+      "gloss": "go towards, pursue a course",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 3029, نحو, n43863"
+        }
+      ],
+      "sounds": {
+        "ח": "ḥ"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "The Arabic verb expresses direction of travel. The Hebrew passages usually name someone who guides another. The comparison is therefore tentative."
+}

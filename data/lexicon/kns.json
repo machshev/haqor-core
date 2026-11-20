@@ -1,0 +1,83 @@
+{
+  "id": "kns",
+  "root": "כנס",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "gloss": "gather, collect",
+  "summary": "כנס is to gather or collect into one place.",
+  "words": [
+    {
+      "lemma": "כָּנַס",
+      "pos": "verb",
+      "gloss": "gather",
+      "bdb": [
+        "k.cc.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "gather",
+          "senses": [
+            {
+              "id": "gather",
+              "gloss": "gather",
+              "definition": "To collect or gather together.",
+              "evidence": [
+                {
+                  "ref": "Psa.33.7",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-k00861"
+      ]
+    },
+    {
+      "lemma": "מִכְנָס",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "drawers",
+      "bdb": [
+        "k.cc.ab"
+      ],
+      "senses": [
+        {
+          "id": "drawers",
+          "gloss": "drawers",
+          "definition": "A garment worn as underclothing.",
+          "evidence": [
+            {
+              "ref": "Exo.28.42",
+              "role": "defining"
+            },
+            {
+              "ref": "Ezk.44.18"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "Drafted from Psalms 32–33 audit.",
+  "cognates": [
+    {
+      "id": "arc-k00861",
+      "lang": "arc",
+      "form": "כְּנַס",
+      "translit": "kənas",
+      "gloss": "collect, gather",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "כְּנַס, K00861, Targum Esther 4:16"
+        }
+      ]
+    }
+  ]
+}

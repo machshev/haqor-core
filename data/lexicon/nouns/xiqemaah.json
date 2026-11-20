@@ -1,0 +1,66 @@
+{
+  "id": "xiqemaah",
+  "root": "שקמ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "gloss": "sycamore",
+  "summary": "שִׁקְמָה is the sycamore tree struck by hail in Egypt.",
+  "words": [
+    {
+      "lemma": "שִׁקְמָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "sycamore",
+      "bdb": [
+        "v.fq.af"
+      ],
+      "senses": [
+        {
+          "id": "sycamore",
+          "gloss": "sycamore",
+          "definition": "A fig-bearing tree tended by Amos, common in the lowlands and contrasted with the cedar. The Egyptian trees are destroyed along with the vines.",
+          "evidence": [
+            {
+              "ref": "Psa.78.47",
+              "role": "defining"
+            },
+            {
+              "ref": "Amo.7.14",
+              "role": "defining"
+            },
+            {
+              "ref": "1Ki.10.27",
+              "role": "example"
+            },
+            {
+              "ref": "Isa.9.9",
+              "role": "example"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-sycamore"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-sycamore",
+      "lang": "arc",
+      "form": "שִׁקְמָא",
+      "translit": "šiḳmā",
+      "gloss": "sycamore fig tree",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. שִׁקְמָא, Targum Amos 7:14, 1 Kings 10:27 and Psalms 78:47"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The Aramaic tree name preserves š-q-m. Egyptian nht names the same tree but supplies no evidence for borrowing this word."
+}

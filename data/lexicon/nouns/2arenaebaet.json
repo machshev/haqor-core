@@ -1,0 +1,123 @@
+{
+  "id": "2arenaebaet",
+  "root": "אנב",
+  "status": "draft",
+  "updated": "2026-11-18",
+  "tags": [
+    "animals",
+    "food"
+  ],
+  "gloss": "hare",
+  "summary": "Both lists of animals Israel must leave uneaten name the hare. Leviticus gives the hare its own verse immediately after the hyrax. Deuteronomy names the two animals together with the camel.",
+  "words": [
+    {
+      "lemma": "אַרְנֶבֶת",
+      "bdb": [
+        "a.eb.ab"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "hare",
+      "senses": [
+        {
+          "id": "hare",
+          "gloss": "hare",
+          "definition": "An animal listed among those Israel must leave uneaten. The law describes its chewing and its undivided foot.",
+          "evidence": [
+            {
+              "ref": "Lev.11.6",
+              "role": "defining",
+              "note": "The hare receives a separate ruling from the hyrax in the preceding verse."
+            },
+            {
+              "ref": "Deu.14.7",
+              "role": "defining",
+              "note": "The hare and the hyrax occur as two distinct items in the list."
+            }
+          ],
+          "cognate_ids": [
+            "akk-hare",
+            "ar-hare",
+            "arc-hare",
+            "syc-hare"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-hare",
+      "lang": "akk",
+      "form": "arnabu",
+      "translit": "arnabu",
+      "gloss": "hare",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "dcclt x0009464, arnabu"
+        }
+      ]
+    },
+    {
+      "id": "ar-hare",
+      "lang": "ar",
+      "form": "أَرْنَبٌ",
+      "translit": "ʾarnab",
+      "gloss": "hare, also rabbit",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 1164, n16760; Lane describes the long hind legs and notes the wider Arabic usage"
+        }
+      ]
+    },
+    {
+      "id": "arc-hare",
+      "lang": "arc",
+      "form": "אַרְנַבְתָּא",
+      "translit": "ʾarnabtā",
+      "gloss": "hare",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "A03196, Targum Lev 11:6; compare ארנבא in Nedarim 65a"
+        }
+      ]
+    },
+    {
+      "id": "syc-hare",
+      "lang": "syc",
+      "form": "ܐܪܢܒܐ",
+      "translit": "ʾarnəḇā",
+      "gloss": "hare",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "payne-smith-1903",
+          "locator": "ܐܪܢܒܐ, sense a, feminine animal noun"
+        }
+      ]
+    },
+    {
+      "id": "mandaic-hare",
+      "lang": "arc",
+      "form": "ࡀࡓࡍࡀࡁ",
+      "translit": "arnab",
+      "gloss": "hare",
+      "relation": "loan",
+      "evidence": [
+        {
+          "source": "drower-macuch-1963",
+          "locator": "arnab, AM 131, last line; identified in the dictionary as Arabic"
+        }
+      ],
+      "note": "Mandaic borrowing from Arabic."
+    }
+  ],
+  "doctrine": [],
+  "note": "אנב is the corpus index key. The attested Hebrew word and the comparison forms preserve r. The two passages give no basis for identifying a particular species of hare. The interrogative אָנָה is a cross-reference to אַי in the index."
+}

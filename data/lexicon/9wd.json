@@ -1,0 +1,350 @@
+{
+  "id": "9wd",
+  "root": "צוד",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "hunting",
+    "refuge",
+    "food"
+  ],
+  "gloss": "hunt, provisions, net, fortress",
+  "summary": "Hunting supplies game for food, while a net holds the quarry. In Psalm 18 the fortress image turns on the security of the one sheltering inside it.",
+  "words": [
+    {
+      "lemma": "צוּד",
+      "bdb": [
+        "r.ax.aa"
+      ],
+      "pos": "verb",
+      "gloss": "hunt, catch",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "hunt game",
+          "senses": [
+            {
+              "id": "hunt-game",
+              "gloss": "hunt game",
+              "definition": "Isaac tells Esau to go into the field and hunt game for him. The lamenter compares his pursuers to hunters after a bird.",
+              "evidence": [
+                {
+                  "ref": "Gen.27.3",
+                  "to": "Gen.27.5",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Lev.17.13"
+                },
+                {
+                  "ref": "Lam.3.52"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "polel",
+          "gloss": "hunt down",
+          "senses": [
+            {
+              "id": "hunt-down",
+              "gloss": "hunt down",
+              "definition": "Ezekiel charges women with hunting people’s lives, picturing the captives as birds Yahweh will release.",
+              "evidence": [
+                {
+                  "ref": "Ezk.13.18",
+                  "to": "Ezk.13.20",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-sayd"
+      ]
+    },
+    {
+      "lemma": "צַיִד",
+      "bdb": [
+        "r.ax.ab"
+      ],
+      "pos": "noun",
+      "gloss": "hunting, game",
+      "senses": [
+        {
+          "id": "hunting-game",
+          "gloss": "hunting, game",
+          "definition": "Nimrod is renowned for hunting; Isaac enjoys the game Esau brings home.",
+          "evidence": [
+            {
+              "ref": "Gen.10.9",
+              "role": "defining"
+            },
+            {
+              "ref": "Gen.25.27",
+              "to": "Gen.25.28"
+            },
+            {
+              "ref": "Gen.27.3"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "ar-sayd"
+      ]
+    },
+    {
+      "lemma": "צַיָּד",
+      "bdb": [
+        "r.ax.ac"
+      ],
+      "pos": "noun",
+      "gloss": "hunter",
+      "senses": [
+        {
+          "id": "hunter",
+          "gloss": "hunter",
+          "definition": "Jeremiah pictures hunters searching mountains, hills and rocky clefts.",
+          "evidence": [
+            {
+              "ref": "Jer.16.16",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "ar-sayd"
+      ]
+    },
+    {
+      "lemma": "צִיד",
+      "bdb": [
+        "r.ay.ad"
+      ],
+      "pos": "verb",
+      "gloss": "take provisions",
+      "stems": [
+        {
+          "stem": "hithpael",
+          "gloss": "take supplies for a journey",
+          "senses": [
+            {
+              "id": "take-supplies-for-a",
+              "gloss": "take supplies for a journey",
+              "definition": "The Gibeonites claim that the bread they had taken for their journey was hot when they left home.",
+              "evidence": [
+                {
+                  "ref": "Jos.9.12",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "צַיִד",
+      "bdb": [
+        "r.ay.ab"
+      ],
+      "pos": "noun",
+      "gloss": "provisions",
+      "senses": [
+        {
+          "id": "provisions",
+          "gloss": "provisions",
+          "definition": "Israel’s leaders inspect the Gibeonites’ provisions. In the psalm Yahweh promises to bless Zion’s food supply and satisfy its poor with bread.",
+          "evidence": [
+            {
+              "ref": "Jos.9.14",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.132.15"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "צֵידָה",
+      "bdb": [
+        "r.ay.ac"
+      ],
+      "pos": "noun",
+      "gloss": "provisions for a journey",
+      "senses": [
+        {
+          "id": "provisions-for-a-journey",
+          "gloss": "provisions for a journey",
+          "definition": "Joseph orders food for his brothers’ journey. Joshua instructs the people to prepare provisions before crossing the Jordan.",
+          "evidence": [
+            {
+              "ref": "Gen.42.25",
+              "role": "defining"
+            },
+            {
+              "ref": "Jos.1.11"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "מְצוּדָה",
+      "bdb": [
+        "r.ax.aj",
+        "r.ax.ai"
+      ],
+      "pos": "noun",
+      "gloss": "fortress, stronghold",
+      "senses": [
+        {
+          "id": "fortress-stronghold",
+          "gloss": "fortress, stronghold",
+          "definition": "David takes the stronghold of Zion. When he calls Yahweh his stronghold, he draws on the security of a place that a pursuer cannot readily enter. The noun also occurs as מְצוֹדָה.",
+          "evidence": [
+            {
+              "ref": "2Sa.5.7",
+              "to": "2Sa.5.9",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.18.3"
+            },
+            {
+              "ref": "Psa.31.3"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "מְצָד",
+      "bdb": [
+        "r.ax.ad"
+      ],
+      "pos": "noun",
+      "gloss": "stronghold",
+      "senses": [
+        {
+          "id": "stronghold",
+          "gloss": "stronghold",
+          "definition": "Israel takes refuge in mountain shelters during Midian’s raids. David stays in the desert strongholds beyond Saul’s reach.",
+          "evidence": [
+            {
+              "ref": "Jdg.6.2",
+              "role": "defining"
+            },
+            {
+              "ref": "1Sa.23.14"
+            },
+            {
+              "ref": "1Sa.23.19"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "מְצוּדָה",
+      "bdb": [
+        "r.ax.ah",
+        "r.ax.ag"
+      ],
+      "pos": "noun",
+      "gloss": "net",
+      "senses": [
+        {
+          "id": "net",
+          "gloss": "net",
+          "definition": "Ezekiel describes a captured ruler taken in Yahweh’s net. Ecclesiastes compares an unforeseen disaster to the net that catches fish. The second example has the form מְצוֹדָה.",
+          "evidence": [
+            {
+              "ref": "Ezk.12.13",
+              "role": "defining"
+            },
+            {
+              "ref": "Ezk.17.20"
+            },
+            {
+              "ref": "Ecc.9.12"
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "cognate_ids": [
+        "ar-sayd"
+      ]
+    },
+    {
+      "lemma": "מָצוֹד",
+      "bdb": [
+        "r.ax.af",
+        "r.ax.ae"
+      ],
+      "pos": "noun",
+      "gloss": "catch or hunting net; siegework",
+      "senses": [
+        {
+          "id": "catch-or-net",
+          "gloss": "catch or net",
+          "definition": "The wicked covet what evildoers take; the expression in Proverbs can denote their catch or the means of taking it.",
+          "evidence": [
+            {
+              "ref": "Pro.12.12",
+              "role": "defining"
+            }
+          ]
+        },
+        {
+          "id": "siegeworks",
+          "gloss": "siegeworks",
+          "definition": "A powerful king builds great works against a small city to capture it.",
+          "evidence": [
+            {
+              "ref": "Ecc.9.14",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-sayd",
+      "lang": "ar",
+      "form": "صَيْد",
+      "translit": "ṣayd",
+      "gloss": "hunting, game taken in the hunt",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I p. 1753, n25311; compare the hunting verb n25308"
+        }
+      ],
+      "sounds": {
+        "צ": "ṣ"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "The Arabic comparison supports the hunting words. Whether the stronghold nouns and the siegeworks of Ecclesiastes share their origin with the hunting terms is less certain."
+}

@@ -1,0 +1,216 @@
+{
+  "id": "3r9",
+  "root": "ערצ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "fear",
+    "violence"
+  ],
+  "gloss": "dread, terrify",
+  "summary": "The same verb describes the fear someone feels and the terror another inflicts. Psalm 10 closes by asking for that terror to end.",
+  "words": [
+    {
+      "lemma": "עָרַץ",
+      "bdb": [
+        "p.fr.aa"
+      ],
+      "pos": "verb",
+      "gloss": "dread, terrify",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "dread or terrify",
+          "senses": [
+            {
+              "gloss": "be terrified",
+              "definition": "Moses urges Israel to face its enemies without trembling. Job speaks of fearing a crowd and the contempt of his clan.",
+              "evidence": [
+                {
+                  "ref": "Deu.1.29",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Deu.7.21"
+                },
+                {
+                  "ref": "Job.31.34"
+                }
+              ],
+              "id": "dread"
+            },
+            {
+              "gloss": "terrify another",
+              "definition": "Yahweh rises to terrify the earth. Psalm 10 asks him to secure justice so that a mortal can no longer terrorize the vulnerable.",
+              "evidence": [
+                {
+                  "ref": "Isa.2.19",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.10.18"
+                },
+                {
+                  "ref": "Job.13.25"
+                }
+              ],
+              "id": "terrify"
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "regard with dread or awe",
+          "senses": [
+            {
+              "id": "regard-with-dread-or",
+              "gloss": "regard with dread or awe",
+              "definition": "Isaiah tells his hearers to direct their dread toward Yahweh, and later describes Jacob’s children revering the God of Israel.",
+              "evidence": [
+                {
+                  "ref": "Isa.8.12",
+                  "to": "Isa.8.13",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Isa.29.23"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be held in awe",
+          "senses": [
+            {
+              "id": "be-held-in-awe",
+              "gloss": "be held in awe",
+              "definition": "God is held in awe in the council of the holy ones.",
+              "evidence": [
+                {
+                  "ref": "Psa.89.8",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עָרִיץ",
+      "bdb": [
+        "p.fr.ac"
+      ],
+      "pos": "adjective",
+      "gloss": "formidable, ruthless",
+      "senses": [
+        {
+          "id": "formidable",
+          "gloss": "formidable",
+          "definition": "Jeremiah likens Yahweh at his side to a warrior who fills his pursuers with fear.",
+          "evidence": [
+            {
+              "ref": "Jer.20.11",
+              "role": "defining"
+            }
+          ],
+          "kin": [
+            "terrify"
+          ]
+        },
+        {
+          "id": "ruthless-or-violent",
+          "gloss": "ruthless or violent",
+          "definition": "The psalmist sees a ruthless man flourishing, and speaks of a band of violent men seeking his life.",
+          "evidence": [
+            {
+              "ref": "Psa.37.35",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.86.14"
+            },
+            {
+              "ref": "Ezk.30.11"
+            }
+          ],
+          "kin": [
+            "terrify"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַעֲרָצָה",
+      "bdb": [
+        "p.fr.ad"
+      ],
+      "pos": "noun",
+      "gloss": "terrifying force",
+      "senses": [
+        {
+          "id": "terrifying-force",
+          "gloss": "terrifying force",
+          "definition": "Yahweh lops off branches with terrifying force, felling the tallest trees.",
+          "evidence": [
+            {
+              "ref": "Isa.10.33",
+              "role": "defining"
+            }
+          ],
+          "kin": [
+            "terrify"
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "עָרוּץ",
+      "bdb": [
+        "p.fr.ab"
+      ],
+      "pos": "noun",
+      "gloss": "ravine slope",
+      "senses": [
+        {
+          "id": "ravine-slope",
+          "gloss": "ravine slope",
+          "definition": "Job locates the outcasts’ dwelling in the sides of wadis, beside holes in the ground and rocks.",
+          "evidence": [
+            {
+              "ref": "Job.30.6",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-aris",
+      "lang": "ar",
+      "form": "عَرِصَ",
+      "translit": "ʿariṣa",
+      "gloss": "be brisk or leap",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2001, عَرِصَ, entry n28668"
+        }
+      ],
+      "sounds": {
+        "ע": "ʿ",
+        "צ": "ṣ"
+      },
+      "note": "The consonants correspond. The Arabic movement is lively or bounding, while the Hebrew speaks of dread."
+    }
+  ],
+  "doctrine": [],
+  "note": "The slope in Job 30:6 is identifiable from its setting, but its derivation is uncertain. The Syriac words for happening and for a stranger offer no clear semantic evidence for dread."
+}

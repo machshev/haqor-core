@@ -1,0 +1,147 @@
+{
+  "id": "n29",
+  "root": "נאצ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "speech",
+    "rejection"
+  ],
+  "gloss": "spurn, revile",
+  "summary": "The person who spurns instruction treats it as having no claim upon him. In Psalm 10 the wicked man treats Yahweh this way and denies that he must answer for his actions.",
+  "words": [
+    {
+      "lemma": "נָאַץ",
+      "bdb": [
+        "n.af.aa"
+      ],
+      "pos": "verb",
+      "gloss": "spurn, treat with contempt",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "spurn or reject",
+          "senses": [
+            {
+              "gloss": "spurn or reject",
+              "definition": "Those who reject correction are reproved in Proverbs. Psalm 107 sets the rejection of the Most High’s counsel beside rebellion against God’s words.",
+              "evidence": [
+                {
+                  "ref": "Pro.1.30",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.107.11"
+                }
+              ],
+              "id": "spurn"
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "show contempt",
+          "senses": [
+            {
+              "id": "show-contempt",
+              "gloss": "show contempt",
+              "definition": "The wilderness generation treats Yahweh with contempt despite the signs it has seen. Psalm 10 connects such contempt with the belief that God will never call wrongdoing to account.",
+              "evidence": [
+                {
+                  "ref": "Num.14.11",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.10.3"
+                },
+                {
+                  "ref": "Psa.10.13"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpolel",
+          "gloss": "be treated with contempt",
+          "senses": [
+            {
+              "id": "be-treated-with-contempt",
+              "gloss": "be treated with contempt",
+              "definition": "When the people are taken away, Yahweh declares that his name is continually reviled.",
+              "evidence": [
+                {
+                  "ref": "Isa.52.5",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-naats"
+      ]
+    },
+    {
+      "lemma": "נְאָצָה",
+      "bdb": [
+        "n.af.ab",
+        "n.af.ac"
+      ],
+      "pos": "noun",
+      "gloss": "contempt, insult",
+      "senses": [
+        {
+          "id": "insult-or-provocation",
+          "gloss": "insult or provocation",
+          "definition": "Hezekiah describes the day of the Assyrian challenge as a day of distress, rebuke and insult. Nehemiah includes Israel’s making the calf among its great provocations.",
+          "evidence": [
+            {
+              "ref": "2Ki.19.3",
+              "role": "defining"
+            },
+            {
+              "ref": "Isa.37.3"
+            },
+            {
+              "ref": "Neh.9.18"
+            },
+            {
+              "ref": "Neh.9.26"
+            }
+          ],
+          "kin": [
+            "spurn"
+          ]
+        }
+      ],
+      "gender": "f",
+      "cognate_ids": [
+        "arc-naats"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-naats",
+      "lang": "arc",
+      "form": "נאץ",
+      "translit": "nʾṣ",
+      "gloss": "despise",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000289, Aramaic NʾṢ [despise] and Hebrew naʾaṣ [spurn]"
+        }
+      ],
+      "sounds": {
+        "צ": "ṣ"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "The two noun headings share their attested forms and senses. Ecclesiastes 12:5 uses a disputed form with the almond tree, usually understood to refer to flowering. That context does not support a sense of contempt."
+}

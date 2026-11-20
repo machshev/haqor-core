@@ -1,0 +1,239 @@
+{
+  "id": "pr7",
+  "root": "פרח",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "gloss": "blossom",
+  "summary": "A vine buds and puts forth blossoms. The righteous flourish in the king’s days, just as a plant flowers. The spreading of a skin eruption is also described by this verb.",
+  "words": [
+    {
+      "lemma": "פָּרַח",
+      "pos": "verb",
+      "gloss": "blossom",
+      "bdb": [
+        "q.cx.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "blossom",
+          "senses": [
+            {
+              "id": "blossom",
+              "gloss": "blossom",
+              "definition": "Put forth flowers and flourish.",
+              "evidence": [
+                {
+                  "ref": "Psa.72.7",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Gen.40.10",
+                  "role": "defining"
+                }
+              ]
+            },
+            {
+              "id": "break-out",
+              "gloss": "break out",
+              "definition": "A skin condition breaks out and spreads over the body.",
+              "evidence": [
+                {
+                  "ref": "Lev.13.12",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "cause to bloom",
+          "senses": [
+            {
+              "id": "cause-to-bloom",
+              "gloss": "cause to bloom",
+              "definition": "The grower makes a seed sprout and blossom.",
+              "evidence": [
+                {
+                  "ref": "Isa.17.11",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-bloom"
+      ]
+    },
+    {
+      "lemma": "פֶּרַח",
+      "pos": "noun",
+      "gloss": "flower",
+      "bdb": [
+        "q.cx.ab"
+      ],
+      "senses": [
+        {
+          "id": "flower",
+          "gloss": "flower",
+          "definition": "A flower or blossom.",
+          "evidence": [
+            {
+              "ref": "Isa.18.5",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-bloom"
+      ]
+    },
+    {
+      "lemma": "אֶפְרֹחַ",
+      "bdb": [
+        "q.cx.ad"
+      ],
+      "pos": "noun",
+      "gloss": "young bird",
+      "senses": [
+        {
+          "id": "young-bird",
+          "gloss": "young bird",
+          "definition": "The law about a bird’s nest distinguishes the mother from the young birds or eggs.",
+          "evidence": [
+            {
+              "ref": "Deu.22.6",
+              "role": "defining"
+            },
+            {
+              "ref": "Job.39.30",
+              "role": "example"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "פִּרְחַח",
+      "bdb": [
+        "q.cx.ac"
+      ],
+      "pos": "noun",
+      "gloss": "brood, rabble",
+      "senses": [
+        {
+          "id": "brood-rabble",
+          "gloss": "brood, rabble",
+          "definition": "Job calls the young men who push him aside a brood. This sole use leaves the precise force of the collective uncertain.",
+          "evidence": [
+            {
+              "ref": "Job.30.12",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "פְּרַח",
+      "pos": "verb",
+      "gloss": "fly, squander",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "fly",
+          "senses": [
+            {
+              "id": "fly",
+              "gloss": "fly",
+              "definition": "One of the living creatures resembles an eagle in flight.",
+              "evidence": [
+                {
+                  "ref": "Rev.4.7",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pael",
+          "gloss": "scatter, squander",
+          "senses": [
+            {
+              "id": "scatter-squander",
+              "gloss": "scatter, squander",
+              "definition": "The older son accuses his brother of squandering their father’s property.",
+              "evidence": [
+                {
+                  "ref": "Luk.15.30",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "syc"
+    },
+    {
+      "lemma": "פַּרְחָאִית",
+      "pos": "adverb",
+      "gloss": "wastefully",
+      "senses": [
+        {
+          "id": "wastefully",
+          "gloss": "wastefully",
+          "definition": "The younger son lives wastefully in a distant land.",
+          "evidence": [
+            {
+              "ref": "Luk.15.13",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "lang": "syc"
+    },
+    {
+      "lemma": "פָּרַחְתָא",
+      "pos": "noun",
+      "gloss": "bird",
+      "senses": [
+        {
+          "id": "bird",
+          "gloss": "bird",
+          "definition": "Jesus points to the birds of the sky which neither sow nor reap.",
+          "evidence": [
+            {
+              "ref": "Mat.6.26",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "lang": "syc"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-bloom",
+      "lang": "arc",
+      "form": "פְּרַח",
+      "translit": "pəraḥ",
+      "gloss": "bloom, fly",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. פְּרַח I, Targum Genesis 30:37 and Onqelos Genesis 1:21"
+        }
+      ]
+    }
+  ]
+}

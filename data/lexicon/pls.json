@@ -1,0 +1,105 @@
+{
+  "id": "pls",
+  "root": "פלס",
+  "status": "draft",
+  "created": "2026-11-20",
+  "updated": "2026-11-19",
+  "gloss": "level, weigh",
+  "summary": "פלס describes making a path level and weighing rightly. Scripture uses it for Yahweh's ordered ways and for the wicked weighing out violence.",
+  "words": [
+    {
+      "lemma": "פָּלַס",
+      "pos": "verb",
+      "gloss": "level, weigh",
+      "bdb": [
+        "q.br.ac"
+      ],
+      "stems": [
+        {
+          "stem": "piel",
+          "gloss": "level, weigh",
+          "senses": [
+            {
+              "id": "weigh-out",
+              "gloss": "weigh out",
+              "definition": "The wicked weigh out violence in their hands on the earth.",
+              "evidence": [
+                {
+                  "ref": "Psa.58.3",
+                  "role": "defining"
+                }
+              ],
+              "kin": [
+                "balance"
+              ]
+            },
+            {
+              "id": "make-level",
+              "gloss": "make level",
+              "definition": "Yahweh makes the path of the righteous level, and wisdom teaches a person to make his path level.",
+              "evidence": [
+                {
+                  "ref": "Isa.26.7",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Pro.4.26"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "פֶּלֶס",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "balance, scale",
+      "bdb": [
+        "q.br.ab"
+      ],
+      "senses": [
+        {
+          "gloss": "scale",
+          "definition": "A scale measures and weighs, and Yahweh's scales are instruments of justice.",
+          "evidence": [
+            {
+              "ref": "Pro.16.11",
+              "role": "defining"
+            },
+            {
+              "ref": "Isa.40.12"
+            }
+          ],
+          "id": "balance"
+        }
+      ]
+    },
+    {
+      "lemma": "מִפְלָשׂ",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "balancing",
+      "bdb": [
+        "q.br.ad"
+      ],
+      "senses": [
+        {
+          "id": "balancing",
+          "gloss": "balancing",
+          "definition": "The balancing of the cloud belongs to God's perfect knowledge.",
+          "evidence": [
+            {
+              "ref": "Job.37.16",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "root": "פלשׂ"
+    }
+  ],
+  "cognates": [],
+  "note": "Job’s noun has the written variant שׂ for ס. The clouds hang poised above the earth. The Hebrew scales and road images supply the evidence for the two verbal senses."
+}

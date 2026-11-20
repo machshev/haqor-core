@@ -1,0 +1,70 @@
+{
+  "id": "ggareggar",
+  "root": "גרגר",
+  "status": "draft",
+  "updated": "2026-11-18",
+  "tags": [],
+  "gloss": "olive berry",
+  "summary": "Isaiah compares the survivors to the few olives still hanging on a tree after its branches have been beaten.",
+  "words": [
+    {
+      "lemma": "גַּרְגַּר",
+      "pos": "noun",
+      "gender": "m",
+      "bdb": [
+        "c.df.ad"
+      ],
+      "gloss": "olive berry",
+      "senses": [
+        {
+          "id": "fruit",
+          "gloss": "olive berry",
+          "definition": "An individual fruit of the olive tree, counted among the gleanings on its branches.",
+          "evidence": [
+            {
+              "ref": "Isa.17.6",
+              "role": "defining",
+              "note": "Two or three fruits remain at the very top, and four or five on the fruitful branches. The comparison names the tree as an olive."
+            }
+          ],
+          "cognate_ids": [
+            "arc-berry",
+            "ar-olive"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-berry",
+      "lang": "arc",
+      "form": "גַּרְגְּרָא",
+      "translit": "gargərā",
+      "gloss": "berry",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "C01258, Targum Isa 17:6 and Palestinian Targum Deu 32:14"
+        }
+      ]
+    },
+    {
+      "id": "ar-olive",
+      "lang": "ar",
+      "form": "جرجير",
+      "translit": "ǧarǧīr",
+      "gloss": "shriveled olive in Levantine Arabic",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "bassal-substrata",
+          "locator": "pp. 96–97, ǧarǧīr, with an example from spoken Palestinian Arabic"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The Levantine Arabic term specifically describes a shriveled olive and may have entered the dialect through Aramaic. Isaiah describes the few fruits still on the branches without saying that they are shriveled."
+}

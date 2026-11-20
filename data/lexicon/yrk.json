@@ -1,0 +1,364 @@
+{
+  "id": "yrk",
+  "root": "ירכ",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "tags": [
+    "body"
+  ],
+  "gloss": "thigh, hip, flank, rear, recess",
+  "summary": "Jacob limps after he is touched at the socket of his hip. The phrase ‘those who came from his thigh’ identifies a man’s descendants. The body word also names the side of the dwelling and the base of the lampstand. A related noun reaches from the back of a tent to the farthest part of a country.",
+  "words": [
+    {
+      "lemma": "יָרֵךְ",
+      "pos": "noun",
+      "gender": "f",
+      "bdb": [
+        "j.dm.ab"
+      ],
+      "gloss": "thigh, hip, side, base",
+      "senses": [
+        {
+          "id": "thigh",
+          "gloss": "thigh, hip",
+          "definition": "The upper leg or the part of the body where it joins the trunk.",
+          "evidence": [
+            {
+              "ref": "Gen.32.26",
+              "role": "defining",
+              "note": "The wrestler touches Jacob at the socket of the hip, and the joint is put out."
+            },
+            {
+              "ref": "Exo.28.42",
+              "role": "defining",
+              "note": "The priests’ linen undergarments extend from the waist to the thighs."
+            },
+            {
+              "ref": "Jer.31.19",
+              "role": "defining",
+              "note": "Ephraim describes striking his thigh in remorse."
+            },
+            {
+              "ref": "Gen.24.2",
+              "role": "defining",
+              "note": "Abraham asks his servant to place a hand under his thigh before taking an oath."
+            }
+          ],
+          "cognate_ids": [
+            "arc-thigh",
+            "ar-hip",
+            "mt-thigh",
+            "sab-hip",
+            "tir-hip",
+            "amh-hip",
+            "meh-hip",
+            "jib-hip",
+            "ebl-hip",
+            "uga-flank"
+          ]
+        },
+        {
+          "id": "descent",
+          "gloss": "loins, as the source of descendants",
+          "definition": "In the expression ‘come from someone’s thigh’, to belong to that person’s line by birth.",
+          "evidence": [
+            {
+              "ref": "Gen.46.26",
+              "role": "defining",
+              "note": "Jacob’s descendants who come to Egypt are counted apart from his sons’ wives."
+            },
+            {
+              "ref": "Jdg.8.30",
+              "role": "defining",
+              "note": "The narrator uses this expression of Gideon’s seventy sons."
+            }
+          ]
+        },
+        {
+          "id": "side",
+          "gloss": "side, flank",
+          "definition": "The side of an object or structure, often identified by a compass direction.",
+          "evidence": [
+            {
+              "ref": "Exo.40.22",
+              "role": "defining",
+              "note": "The table stands on the north side of the dwelling."
+            },
+            {
+              "ref": "Lev.1.11",
+              "role": "defining",
+              "note": "The animal is slaughtered on the north side of the altar."
+            }
+          ],
+          "cognate_ids": [
+            "uga-flank"
+          ]
+        },
+        {
+          "id": "base",
+          "gloss": "base of a lampstand",
+          "definition": "The lower supporting part of a lampstand.",
+          "evidence": [
+            {
+              "ref": "Exo.25.31",
+              "role": "defining",
+              "note": "The description distinguishes the base from the shaft and ornamental cups."
+            },
+            {
+              "ref": "Num.8.4",
+              "role": "defining",
+              "note": "The span from the base to the blossom describes the extent of the hammered gold work."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "יַרְכָה",
+      "pos": "noun",
+      "gender": "f",
+      "bdb": [
+        "j.dm.ac"
+      ],
+      "gloss": "flank, rear, recess, farthest part",
+      "senses": [
+        {
+          "id": "rear",
+          "gloss": "flank, rear portion",
+          "definition": "The side or rear boundary of a territory, building or enclosure.",
+          "evidence": [
+            {
+              "ref": "Gen.49.13",
+              "role": "defining",
+              "note": "Zebulun’s flank extends toward Sidon."
+            },
+            {
+              "ref": "Exo.36.27",
+              "role": "defining",
+              "note": "The six frames assigned to the back of the dwelling face west."
+            }
+          ],
+          "cognate_ids": [
+            "uga-flank",
+            "akk-rear"
+          ]
+        },
+        {
+          "id": "recess",
+          "gloss": "recess, remote part",
+          "definition": "A part far from an opening or point of approach, whether inside an enclosure or at the limits of a region.",
+          "evidence": [
+            {
+              "ref": "1Sa.24.4",
+              "role": "defining",
+              "note": "Saul enters the cave while David and his men sit farther inside."
+            },
+            {
+              "ref": "Jon.1.5",
+              "role": "defining",
+              "note": "Jonah has gone down into the ship’s interior to sleep."
+            },
+            {
+              "ref": "Jer.6.22",
+              "role": "defining",
+              "note": "The nation coming from the north is stirred up at the far reaches of the earth."
+            },
+            {
+              "ref": "Isa.14.15",
+              "role": "defining",
+              "note": "The descent to the grave ends in the depths of the pit."
+            }
+          ],
+          "cognate_ids": [
+            "akk-rear"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "יַרְכָא",
+      "lang": "arc",
+      "pos": "noun",
+      "gender": "f",
+      "bdb": [
+        "xj.ak.ag"
+      ],
+      "gloss": "thigh",
+      "senses": [
+        {
+          "id": "aramaic-thigh",
+          "gloss": "thigh",
+          "definition": "The upper leg of the human figure in Nebuchadnezzar’s dream.",
+          "evidence": [
+            {
+              "ref": "Dan.2.32",
+              "role": "defining",
+              "note": "The belly and thighs of the statue are bronze, between its silver upper body and iron legs."
+            }
+          ],
+          "kin": [
+            "thigh"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-thigh",
+      "lang": "arc",
+      "form": "יַרְכָּא",
+      "translit": "yarkā",
+      "gloss": "thigh",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "J00643, manuscript reading in Targum Onkelos Numbers 5:22"
+        }
+      ]
+    },
+    {
+      "id": "ar-hip",
+      "lang": "ar",
+      "form": "وَرِكٌ",
+      "translit": "warik",
+      "gloss": "hip, haunch",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 3052, n44530"
+        }
+      ]
+    },
+    {
+      "id": "mt-thigh",
+      "lang": "sem",
+      "form": "wirk",
+      "translit": "wirk",
+      "gloss": "Maltese thigh",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "gabra",
+          "locator": "lexeme 561906aa93f9884b20a9bb07"
+        }
+      ]
+    },
+    {
+      "id": "sab-hip",
+      "lang": "sem",
+      "form": "wrk",
+      "translit": "wrk",
+      "gloss": "Sabaic hip or thigh",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "kogan-2011-lexicon",
+          "locator": "§6.3.2.2, *warik-, SED I no. 288"
+        }
+      ]
+    },
+    {
+      "id": "tir-hip",
+      "lang": "sem",
+      "form": "wäräkät",
+      "translit": "wäräkät",
+      "gloss": "Tigrinya hip or thigh",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "kogan-2011-lexicon",
+          "locator": "§6.3.2.2, *warik-, SED I no. 288"
+        }
+      ]
+    },
+    {
+      "id": "amh-hip",
+      "lang": "sem",
+      "form": "wärč",
+      "translit": "wärč",
+      "gloss": "Amharic hip or thigh",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "kogan-2011-lexicon",
+          "locator": "§6.3.2.2, *warik-, SED I no. 288"
+        }
+      ]
+    },
+    {
+      "id": "meh-hip",
+      "lang": "sem",
+      "form": "wərkīt",
+      "translit": "wərkīt",
+      "gloss": "Mehri hip or thigh",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "kogan-2011-lexicon",
+          "locator": "§6.3.2.2, *warik-, SED I no. 288"
+        }
+      ]
+    },
+    {
+      "id": "jib-hip",
+      "lang": "sem",
+      "form": "irs̃ét",
+      "translit": "irs̃ét",
+      "gloss": "Jibbali hip or thigh",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "kogan-2011-lexicon",
+          "locator": "§6.3.2.2, *warik-, SED I no. 288"
+        }
+      ]
+    },
+    {
+      "id": "ebl-hip",
+      "lang": "sem",
+      "form": "wa-rí-gúm",
+      "translit": "wa-rí-gúm",
+      "gloss": "Ebla lexical list, possibly hip",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "kogan-2011-lexicon",
+          "locator": "§6.3.2.2, VE 864, alternative spelling wa-rí-ku₁₇-um, Sumerian íb.áš"
+        }
+      ]
+    },
+    {
+      "id": "uga-flank",
+      "lang": "uga",
+      "form": "𐎊𐎗𐎋",
+      "translit": "yrk",
+      "gloss": "flank, side",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "watson-2015-anatomy",
+          "locator": "s.v. yrk, notes 244–245"
+        }
+      ]
+    },
+    {
+      "id": "akk-rear",
+      "lang": "akk",
+      "form": "warkatu",
+      "translit": "warkatu",
+      "gloss": "rear, back side",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep/x000005890"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The Hebrew and Ugaritic forms begin with y where Arabic and Sabaic have w. The Ebla list offers a possible early anatomical parallel, although the meaning of its entry is uncertain. The similar-looking names Jarmuth, Jeremoth and Jeremai share the catalogue grouping, but their consonants give no basis for deriving them from ירכ."
+}

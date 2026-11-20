@@ -1,0 +1,148 @@
+{
+  "id": "kbb",
+  "root": "כבב",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "sky",
+    "creation"
+  ],
+  "gloss": "star",
+  "summary": "A star is a light in the night sky. Stars that defy counting illustrate the promise to Abraham. Their light and position also supply images for people and rulers.",
+  "words": [
+    {
+      "lemma": "כּוֹכָב",
+      "bdb": [
+        "k.ae.ab",
+        "k.at.ae"
+      ],
+      "pos": "noun",
+      "gloss": "star",
+      "senses": [
+        {
+          "gloss": "star in the sky",
+          "definition": "God makes the stars and sets them in the heavens. Psalm 8 places the stars beside the moon as works of his fingers. The psalmist marvels that their maker also attends to human beings.",
+          "evidence": [
+            {
+              "ref": "Gen.1.16",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.8.4",
+              "to": "Psa.8.5"
+            },
+            {
+              "ref": "Psa.147.4"
+            }
+          ],
+          "id": "star"
+        },
+        {
+          "id": "stars-as-a-measure",
+          "gloss": "stars as a measure of multitude",
+          "definition": "Abraham is asked to count the stars and is promised offspring as numerous. The comparison recurs when the promise is repeated to Isaac.",
+          "evidence": [
+            {
+              "ref": "Gen.15.5",
+              "role": "defining"
+            },
+            {
+              "ref": "Gen.26.4"
+            },
+            {
+              "ref": "Deu.1.10"
+            }
+          ]
+        },
+        {
+          "id": "star-as-an-image",
+          "gloss": "star as an image of a ruler or person",
+          "definition": "Joseph sees eleven stars bow to him in a dream. Balaam sets a star rising from Jacob beside a sceptre from Israel. Daniel compares those who lead many to righteousness with shining stars.",
+          "evidence": [
+            {
+              "ref": "Gen.37.9",
+              "to": "Gen.37.10",
+              "role": "defining"
+            },
+            {
+              "ref": "Num.24.17"
+            },
+            {
+              "ref": "Dan.12.3"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "akk-kakkabu"
+      ],
+      "greek": [
+        {
+          "lemma": "ἄστρον",
+          "gloss": "star",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "GEN 15:5, stars to be counted"
+            },
+            {
+              "ref": "Heb.11.12"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "כַּוְכְּבָא",
+      "pos": "noun",
+      "gloss": "star",
+      "senses": [
+        {
+          "id": "star-2",
+          "gloss": "star",
+          "definition": "The travellers from the east see a star and follow it. Paul compares the differing brightness of stars, and Hebrews recalls the promise of descendants as numerous as the stars.",
+          "evidence": [
+            {
+              "ref": "Mat.2.2",
+              "role": "defining"
+            },
+            {
+              "ref": "Mat.2.9"
+            },
+            {
+              "ref": "1Co.15.41"
+            },
+            {
+              "ref": "Heb.11.12"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "lang": "syc",
+      "cognate_ids": [
+        "akk-kakkabu"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-kakkabu",
+      "lang": "akk",
+      "form": "kakkabu",
+      "translit": "kakkabu",
+      "gloss": "star",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep/x000006060, kakkabu [star]"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The Syriac word is indexed under כוכב. The received Hebrew noun supplies the evidence for star. A Hebrew verb meaning shine or roll cannot be established from its use."
+}

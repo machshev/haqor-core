@@ -1,0 +1,169 @@
+{
+  "id": "7r9",
+  "root": "חרצ",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "gloss": "gold",
+  "summary": "חָרוּץ is refined gold.",
+  "words": [
+    {
+      "lemma": "חָרוּץ",
+      "bdb": [
+        "h.gd.ab"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "gold",
+      "senses": [
+        {
+          "id": "gold",
+          "gloss": "gold",
+          "definition": "The dove’s pinions are overlaid with gleaming gold.",
+          "evidence": [
+            {
+              "ref": "Psa.68.14",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חָרוּץ",
+      "pos": "adjective",
+      "gloss": "sharp, diligent",
+      "bdb": [
+        "h.gc.ab"
+      ],
+      "senses": [
+        {
+          "id": "sharp-diligent",
+          "gloss": "sharp, diligent",
+          "definition": "Sharp or diligent.",
+          "evidence": [
+            {
+              "ref": "Pro.10.4",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חָרוּץ",
+      "pos": "noun",
+      "gloss": "decision, trench",
+      "bdb": [
+        "h.gc.ac",
+        "h.gc.ad"
+      ],
+      "senses": [
+        {
+          "id": "decision",
+          "gloss": "decision",
+          "definition": "A decisive judgment or trench.",
+          "evidence": [
+            {
+              "ref": "Jol.4.14",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.68.14"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חָרַץ",
+      "pos": "verb",
+      "gloss": "cut, decide",
+      "bdb": [
+        "h.gc.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "cut, decide",
+          "senses": [
+            {
+              "id": "cut-decide",
+              "gloss": "cut, decide",
+              "definition": "Cut sharply or determine decisively.",
+              "evidence": [
+                {
+                  "ref": "Isa.10.22",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חָרִיץ",
+      "pos": "noun",
+      "gloss": "cut, sharp tool",
+      "bdb": [
+        "h.gc.af"
+      ],
+      "senses": [
+        {
+          "id": "cut",
+          "gloss": "cut",
+          "definition": "A cut or sharp instrument.",
+          "evidence": [
+            {
+              "ref": "1Sa.13.21",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חַרְצַנִּים",
+      "pos": "noun",
+      "gloss": "grape kernels",
+      "bdb": [
+        "h.gc.ag"
+      ],
+      "senses": [
+        {
+          "id": "grape-kernels",
+          "gloss": "grape kernels",
+          "definition": "Seeds or kernels of grapes.",
+          "evidence": [
+            {
+              "ref": "Num.6.4",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חֲרַץ",
+      "pos": "noun",
+      "gloss": "loin",
+      "bdb": [
+        "xh.ao.ab"
+      ],
+      "senses": [
+        {
+          "id": "loin",
+          "gloss": "loin",
+          "definition": "The loin of an animal.",
+          "evidence": [
+            {
+              "ref": "Dan.5.6",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "note": "Drafted for Psalm 68 coverage."
+}

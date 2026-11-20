@@ -1,0 +1,200 @@
+{
+  "id": "p7d",
+  "root": "פחד",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "fear",
+    "reverence"
+  ],
+  "gloss": "dread, tremble, fear",
+  "summary": "The verb and noun together picture a sudden experience of dread in Psalm 14. The object of fear varies from a human oppressor to God himself.",
+  "words": [
+    {
+      "lemma": "פָּחַד",
+      "bdb": [
+        "q.bb.aa"
+      ],
+      "pos": "verb",
+      "gloss": "fear, tremble",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "feel dread or awe",
+          "senses": [
+            {
+              "gloss": "be seized with fear",
+              "definition": "In Psalm 14 the wicked are seized by dread because God is with the righteous. The related noun stands beside the verb and intensifies it.",
+              "evidence": [
+                {
+                  "ref": "Psa.14.5",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.53.6"
+                },
+                {
+                  "ref": "Deu.28.66",
+                  "to": "Deu.28.67"
+                }
+              ],
+              "id": "fear"
+            },
+            {
+              "id": "tremble-in-awe",
+              "gloss": "tremble in awe",
+              "definition": "The psalmist’s heart trembles at Yahweh’s words, and Hosea speaks of Israel coming trembling to Yahweh and his goodness.",
+              "evidence": [
+                {
+                  "ref": "Psa.119.161",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Hos.3.5"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "stand in fear",
+          "senses": [
+            {
+              "id": "stand-in-fear",
+              "gloss": "stand in fear",
+              "definition": "Isaiah addresses someone who lives in constant fear of an oppressor. Proverbs commends the person who is always wary.",
+              "evidence": [
+                {
+                  "ref": "Isa.51.13",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Pro.28.14"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "cause to tremble",
+          "senses": [
+            {
+              "id": "cause-to-tremble",
+              "gloss": "cause to tremble",
+              "definition": "Eliphaz describes a fear that came upon him and made his bones tremble.",
+              "evidence": [
+                {
+                  "ref": "Job.4.14",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-pehad"
+      ]
+    },
+    {
+      "lemma": "פַּחַד",
+      "bdb": [
+        "q.bb.ab"
+      ],
+      "pos": "noun",
+      "gloss": "dread, object of fear",
+      "senses": [
+        {
+          "id": "dread-or-terror",
+          "gloss": "dread or terror",
+          "definition": "The noun may name the fear that falls on people or their dread of another. In Psalm 14 it reinforces the verb for fearing.",
+          "evidence": [
+            {
+              "ref": "Psa.14.5",
+              "role": "defining"
+            },
+            {
+              "ref": "Deu.11.25"
+            },
+            {
+              "ref": "Jer.30.5"
+            }
+          ],
+          "kin": [
+            "fear"
+          ]
+        },
+        {
+          "id": "one-who-is-feared",
+          "gloss": "one who is feared",
+          "definition": "Jacob invokes the Fear of Isaac together with the God of Abraham, and swears by the Fear of his father.",
+          "evidence": [
+            {
+              "ref": "Gen.31.42",
+              "role": "defining"
+            },
+            {
+              "ref": "Gen.31.53"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "arc-pehad"
+      ]
+    },
+    {
+      "lemma": "פַּחְדָּה",
+      "bdb": [
+        "q.bb.ac"
+      ],
+      "pos": "noun",
+      "gloss": "dread",
+      "senses": [
+        {
+          "id": "dread-or-reverence",
+          "gloss": "dread or reverence",
+          "definition": "Yahweh tells Judah that abandoning him is bitter and that dread of him is absent.",
+          "evidence": [
+            {
+              "ref": "Jer.2.19",
+              "role": "defining"
+            }
+          ],
+          "kin": [
+            "fear"
+          ]
+        }
+      ],
+      "gender": "f",
+      "cognate_ids": [
+        "arc-pehad"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-pehad",
+      "lang": "arc",
+      "form": "פְּחַד",
+      "translit": "pəḥad",
+      "gloss": "be afraid",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "פְּחַד, passive participle in Targum Onkelos Deuteronomy 28:66"
+        }
+      ],
+      "sounds": {
+        "ח": "ḥ"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "The office title פֶּחָה “governor” and the anatomical word for thigh are separate. Their occurrence in the neighbouring headings supplies no evidence for the senses of fearing."
+}

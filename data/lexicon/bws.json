@@ -1,0 +1,139 @@
+{
+  "id": "bws",
+  "root": "בוס",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "gloss": "trample",
+  "summary": "בוס means to trample or tread down. Psalm 60 promises Yahweh will trample adversaries.",
+  "words": [
+    {
+      "lemma": "בּוּס",
+      "bdb": [
+        "b.as.aa"
+      ],
+      "pos": "verb",
+      "gloss": "trample",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "trample",
+          "senses": [
+            {
+              "id": "trample",
+              "gloss": "trample",
+              "definition": "Scripture uses this word in the sense of trample.",
+              "evidence": [
+                {
+                  "ref": "Psa.44.6",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpolel",
+          "gloss": "kick about",
+          "senses": [
+            {
+              "id": "kick-about",
+              "gloss": "kick about",
+              "definition": "A person may kick about in blood.",
+              "evidence": [
+                {
+                  "ref": "Ezk.16.6",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "polel",
+          "gloss": "trample",
+          "senses": [
+            {
+              "id": "trample-2",
+              "gloss": "trample",
+              "definition": "Adversaries trample the sanctuary.",
+              "evidence": [
+                {
+                  "ref": "Isa.63.18",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hophal",
+          "gloss": "be trampled",
+          "senses": [
+            {
+              "id": "be-trampled",
+              "gloss": "be trampled",
+              "definition": "The fallen one is like a trampled corpse.",
+              "evidence": [
+                {
+                  "ref": "Isa.14.19",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מְבוּסָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "trampling, ruin",
+      "bdb": [
+        "b.as.ad"
+      ],
+      "senses": [
+        {
+          "id": "trampling",
+          "gloss": "trampling",
+          "definition": "Trampling marks devastation.",
+          "evidence": [
+            {
+              "ref": "Isa.18.2",
+              "role": "defining"
+            },
+            {
+              "ref": "Isa.22.5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "תְּבוּסָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "ruin, destruction",
+      "bdb": [
+        "b.as.ae"
+      ],
+      "senses": [
+        {
+          "id": "destruction",
+          "gloss": "destruction",
+          "definition": "Destruction may come as judgment.",
+          "evidence": [
+            {
+              "ref": "2Ch.22.7",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [],
+  "doctrine": [],
+  "note": "Drafted for coverage of Psa.44.6; cognate research remains open."
+}

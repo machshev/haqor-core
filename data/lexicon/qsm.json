@@ -1,0 +1,637 @@
+{
+  "id": "qsm",
+  "root": "קסמ",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "tags": [
+    "divination",
+    "prophecy",
+    "false-prophets",
+    "idolatry",
+    "nations"
+  ],
+  "gloss": "divine, seek a decision by omen or lot; divination",
+  "summary": "To seek a decision or a word about what is to come by omens and lots: the diviner shakes arrows, asks the teraphim and looks at the liver (Ezk 21:26), or calls up the dead (1Sa 28:8). The nations listened to diviners, but Israel was forbidden them and given a prophet from Yahweh instead (Deu 18:10–15), and in the prophets קֶסֶם and מִקְסָם are the false prophets' “divination of a lie”, set beside a vision of falsehood and spoken for silver, which Yahweh has not sent. Only once is the noun used without blame: a king's verdict is קֶסֶם, a decision as final as an oracle (Pro 16:10). Arabic istaqsama “seek one's allotted share by the divining arrows” and Ge'ez astaqsama “divine” point to an older sense “divide, apportion”: divination asks what has been allotted.",
+  "words": [
+    {
+      "lemma": "קָסַם",
+      "pos": "verb",
+      "gloss": "divine, practise divination; (participle) diviner",
+      "bdb": [
+        "s.cf.ac"
+      ],
+      "cognate_ids": [
+        "ar-qasama",
+        "gez-astaqsama",
+        "arc-qesam"
+      ],
+      "summary": "About twenty times, all qal, most often the participle קֹסֵם “diviner”, named with the prophets, seers, dreamers and sorcerers. The brief files 335 tokens of the particle נָא under this key by spelling; they are not this verb, and its count of uses is inflated by them. Two qal tokens the brief's list misses are cited here: קָסֳמִי־נָא (1Sa 28:8) and כִּקְסָם (Ezk 21:28).",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "divine; (participle) diviner",
+          "senses": [
+            {
+              "id": "qasam-divine",
+              "gloss": "divine, seek a decision by omens",
+              "definition": "To seek a decision, or knowledge of what is to come, by omens, lots or the dead: by shaking arrows, asking the teraphim and looking at the liver, or through a medium. Often with its own noun, קָסַם קְסָמִים “divine divinations”.",
+              "evidence": [
+                {
+                  "ref": "Ezk.21.26",
+                  "role": "defining",
+                  "note": "The king of Babylon at the parting of the ways “לִקְסָם־קָסֶם: he shakes the arrows, he asks the teraphim, he looks at the liver.”"
+                },
+                {
+                  "ref": "1Sa.28.8",
+                  "role": "defining",
+                  "note": "Saul to the woman of En-dor: “קָסֳמִי־נָא לִי בָּאוֹב, and bring up for me whom I shall name to you.”"
+                },
+                {
+                  "ref": "Deu.18.10",
+                  "role": "defining",
+                  "note": "“There shall not be found among you … קֹסֵם קְסָמִים, one who practises augury, or a diviner, or a sorcerer.”"
+                },
+                {
+                  "ref": "2Ki.17.17",
+                  "note": "Israel “made their sons and their daughters pass through the fire, וַיִּקְסְמוּ קְסָמִים and practised augury”."
+                },
+                {
+                  "ref": "Ezk.21.28",
+                  "note": "To the men of Jerusalem it will seem “כִּקְסָם־שָׁוְא”, a worthless divining, yet it brings their iniquity to remembrance."
+                },
+                {
+                  "ref": "Isa.44.25",
+                  "note": "Yahweh “frustrates the signs of liars and makes fools of קֹסְמִים”."
+                }
+              ],
+              "kin": [
+                "qesem-divination"
+              ]
+            },
+            {
+              "id": "qasam-diviner",
+              "gloss": "diviner",
+              "definition": "The participle as a noun: one whose craft is divining, consulted by the nations and their kings, and listed among the men a nation leans on.",
+              "evidence": [
+                {
+                  "ref": "Deu.18.14",
+                  "role": "defining",
+                  "note": "“These nations … listen to soothsayers and to קֹסְמִים; but as for you, Yahweh your God has not allowed you so.”"
+                },
+                {
+                  "ref": "Jos.13.22",
+                  "role": "defining",
+                  "note": "“Balaam the son of Beor, הַקּוֹסֵם, the sons of Israel killed with the sword.”"
+                },
+                {
+                  "ref": "1Sa.6.2",
+                  "note": "The Philistines call “the priests and the diviners” to ask how to send back the ark of Yahweh."
+                },
+                {
+                  "ref": "Isa.3.2",
+                  "note": "Among the props Yahweh takes from Jerusalem: “judge and prophet, וְקֹסֵם and elder”."
+                },
+                {
+                  "ref": "Jer.27.9",
+                  "note": "“Do not listen to your prophets, your קֹסְמִים, your dreams, your soothsayers or your sorcerers, who say, You shall not serve the king of Babylon.”"
+                }
+              ]
+            },
+            {
+              "id": "qasam-lie",
+              "gloss": "divine falsely (of prophets)",
+              "definition": "Of prophets in Israel who claim to speak for Yahweh: to divine a lie, for themselves or for pay, beside seeing a vision of falsehood. Yahweh has not sent them, and their divining ends in darkness and shame.",
+              "evidence": [
+                {
+                  "ref": "Ezk.22.28",
+                  "role": "defining",
+                  "note": "“Her prophets … seeing falsehood וְקֹסְמִים לָהֶם כָּזָב, saying, Thus says the Lord Yahweh, when Yahweh has not spoken.”"
+                },
+                {
+                  "ref": "Mic.3.11",
+                  "role": "defining",
+                  "note": "“Her prophets בְּכֶסֶף יִקְסֹמוּ, yet they lean on Yahweh.”"
+                },
+                {
+                  "ref": "Mic.3.6",
+                  "to": "Mic.3.7",
+                  "role": "defining",
+                  "note": "“It shall be dark to you מִקְּסֹם … the seers shall be ashamed and הַקֹּסְמִים disgraced … for there is no answer of God.”"
+                },
+                {
+                  "ref": "Ezk.13.9",
+                  "note": "“The prophets who see falsehood וְהַקֹּסְמִים כָּזָב shall not be in the council of my people.”"
+                },
+                {
+                  "ref": "Ezk.13.23",
+                  "note": "To the women who prophesy: “you shall no more see falsehood, וְקֶסֶם לֹא־תִקְסַמְנָה עוֹד.”"
+                },
+                {
+                  "ref": "Ezk.21.34",
+                  "note": "To Ammon: “while they see falsehood for you, בִּקְסָם־לָךְ כָּזָב.”"
+                },
+                {
+                  "ref": "Jer.29.8",
+                  "note": "“Let not your prophets and your diviners who are among you deceive you.”"
+                },
+                {
+                  "ref": "Zec.10.2",
+                  "note": "“The teraphim speak iniquity, וְהַקּוֹסְמִים see a lie, and tell false dreams.”"
+                }
+              ],
+              "kin": [
+                "qesem-lie",
+                "miqsam-lie"
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "μαντεύομαι",
+          "gloss": "divine, practise soothsaying",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Deu.18.10, קֹסֵם → μαντευόμενος; 1Sa.28.8, קָסֳמִי → μάντευσαι; 2Ki.17.17; Mic.3.11 → ἐμαντεύοντο; Ezk.13.23 → μαντεύσησθε; Ezk.21.26 → μαντεύσασθαι; also Jer.27.9; Ezk.12.24; 13.6; 21.28; 22.28"
+            },
+            {
+              "ref": "Act.16.16",
+              "role": "defining",
+              "note": "A slave girl “bringing her masters much gain by soothsaying (μαντευομένη)”; the Peshitta has the same root, בּקֵצמָא דּקָצמָא הוָת."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "חָזָה",
+            "note": "“See (a vision)”: the false prophets see falsehood and divine a lie.",
+            "evidence": [
+              {
+                "ref": "Ezk.13.9",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezk.22.28"
+              },
+              {
+                "ref": "Ezk.21.34"
+              },
+              {
+                "ref": "Zec.10.2"
+              },
+              {
+                "ref": "Mic.3.6",
+                "to": "Mic.3.7"
+              }
+            ]
+          },
+          {
+            "lemma": "נָחַשׁ",
+            "note": "“Practise augury”: named with divining among the practices of the nations.",
+            "evidence": [
+              {
+                "ref": "2Ki.17.17",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.18.10"
+              },
+              {
+                "ref": "Num.23.23"
+              }
+            ]
+          },
+          {
+            "lemma": "עָנַן",
+            "note": "“Soothsayer” (poel participle): beside the diviner.",
+            "evidence": [
+              {
+                "ref": "Deu.18.14",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.27.9"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "נָבִיא",
+            "note": "The prophet Yahweh raises up and puts his words in his mouth, given to Israel in place of the diviners the nations listen to.",
+            "evidence": [
+              {
+                "ref": "Deu.18.14",
+                "to": "Deu.18.15",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.18.18"
+              },
+              {
+                "ref": "Act.3.22"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "קָסַם קְסָמִים",
+            "gloss": "divine divinations, practise divination",
+            "evidence": [
+              {
+                "ref": "Deu.18.10",
+                "role": "defining"
+              },
+              {
+                "ref": "2Ki.17.17"
+              },
+              {
+                "ref": "Ezk.21.26"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "קֶסֶם",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "divination; oracle, decision",
+      "bdb": [
+        "s.cf.ab"
+      ],
+      "cognate_ids": [
+        "ar-qasama",
+        "gez-astaqsama",
+        "arc-qesam"
+      ],
+      "senses": [
+        {
+          "id": "qesem-divination",
+          "gloss": "divination",
+          "definition": "The practice of divining, or a single act of it: what the nations do and Israel may not, set beside augury and the teraphim.",
+          "evidence": [
+            {
+              "ref": "Num.23.23",
+              "role": "defining",
+              "note": "Balaam: “There is no augury (נַחַשׁ) in Jacob, וְלֹא־קֶסֶם in Israel; now it shall be said of Jacob and Israel, What has God done!”"
+            },
+            {
+              "ref": "Ezk.21.27",
+              "role": "defining",
+              "note": "“At his right hand was הַקֶּסֶם for Jerusalem, to set battering rams”: the lot drawn at the parting of the ways."
+            },
+            {
+              "ref": "1Sa.15.23",
+              "role": "defining",
+              "note": "“Rebellion is as חַטַּאת־קֶסֶם, and stubbornness as iniquity and teraphim; because you have rejected the word of Yahweh.”"
+            },
+            {
+              "ref": "2Ki.17.17"
+            },
+            {
+              "ref": "Deu.18.10"
+            }
+          ],
+          "kin": [
+            "qasam-divine"
+          ]
+        },
+        {
+          "id": "qesem-lie",
+          "gloss": "divination (of false prophets)",
+          "definition": "What the false prophets give as Yahweh's word: a divination of a lie, which he has not sent.",
+          "evidence": [
+            {
+              "ref": "Ezk.13.6",
+              "role": "defining",
+              "note": "“They have seen falsehood וְקֶסֶם כָּזָב, who say, Declares Yahweh, when Yahweh has not sent them.”"
+            },
+            {
+              "ref": "Jer.14.14",
+              "role": "defining",
+              "note": "“They prophesy to you a lying vision, וְקֶסֶם, and worthlessness, and the deceit of their heart.”"
+            },
+            {
+              "ref": "Ezk.13.23"
+            }
+          ],
+          "kin": [
+            "qasam-lie",
+            "miqsam-lie"
+          ]
+        },
+        {
+          "id": "qesem-fee",
+          "gloss": "fee for divination",
+          "definition": "Once, the plural carried in the hand to a diviner: what is brought for divining, the fee.",
+          "evidence": [
+            {
+              "ref": "Num.22.7",
+              "role": "defining",
+              "note": "“The elders of Moab and the elders of Midian went וּקְסָמִים בְּיָדָם, and came to Balaam.”"
+            },
+            {
+              "ref": "2Pe.2.15",
+              "note": "Balaam “loved the wages of unrighteousness”."
+            },
+            {
+              "ref": "Jud.1.11",
+              "note": "“They rushed into the error of Balaam for a reward.”"
+            }
+          ]
+        },
+        {
+          "id": "qesem-decision",
+          "gloss": "decision, oracle (of a king)",
+          "definition": "Once without blame: the verdict on a king's lips in judgment, final as an oracle. The Jewish Aramaic קִסְמָא “decision” has the same sense.",
+          "evidence": [
+            {
+              "ref": "Pro.16.10",
+              "role": "defining",
+              "note": "“קֶסֶם is on the lips of a king; in judgment his mouth does not transgress.”"
+            },
+            {
+              "ref": "Pro.16.33",
+              "note": "“The lot is cast into the lap, but its every decision is from Yahweh.”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "μαντεία",
+          "gloss": "divination",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Num.23.23 → μαντεία; 2Ki.17.17; Jer.14.14; Ezk.13.23; Ezk.21.26 → μαντείας, μαντείαν; Pro.16.10; Ezk.21.27 → μαντεῖον; not in the New Testament"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מִקְסָם",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "divination",
+      "bdb": [
+        "s.cf.ad",
+        "m.df.ax"
+      ],
+      "cognate_ids": [
+        "gez-astaqsama"
+      ],
+      "senses": [
+        {
+          "id": "miqsam-lie",
+          "gloss": "divination (false)",
+          "definition": "Twice, in Ezekiel, beside a vision of falsehood: the false prophets' divination, smooth or lying, which will cease in Israel.",
+          "evidence": [
+            {
+              "ref": "Ezk.12.24",
+              "role": "defining",
+              "note": "“There shall be no more any vision of falsehood וּמִקְסַם חָלָק in the midst of the house of Israel.”"
+            },
+            {
+              "ref": "Ezk.13.7",
+              "role": "defining",
+              "note": "“Have you not seen a vision of falsehood וּמִקְסַם כָּזָב, saying, Declares Yahweh, though I have not spoken?”"
+            }
+          ],
+          "kin": [
+            "qesem-lie",
+            "qasam-lie"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קְצַם",
+      "lang": "syc",
+      "root": "קצמ",
+      "pos": "verb",
+      "gloss": "divine",
+      "summary": "The Peshitta's ܩܨܡ (qṣam), with ṣ for the Hebrew's s, for μαντεύομαι.",
+      "cognate_ids": [
+        "ar-qasama",
+        "gez-astaqsama",
+        "arc-qesam"
+      ],
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "divine, soothsay",
+          "senses": [
+            {
+              "id": "divine-for-gain",
+              "gloss": "divine for gain",
+              "definition": "Of the slave girl at Philippi, who brought her masters gain by divining until Paul commanded in the name of Jesus Christ and it left her.",
+              "evidence": [
+                {
+                  "ref": "Act.16.16",
+                  "role": "defining",
+                  "note": "“She brought her masters much gain בּקֵצמָא דּקָצמָא הוָת, by the divination that she divined.”"
+                },
+                {
+                  "ref": "Act.16.19",
+                  "note": "Her masters saw “that the hope of their gain was gone”: divining for silver, as Mic 3:11."
+                }
+              ],
+              "kin": [
+                "qasam-divine"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קֶצְמָא",
+      "lang": "syc",
+      "root": "קצמ",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "divination",
+      "summary": "The Peshitta's ܩܨܡܐ (qeṣmā), for the Greek's “spirit of Python” and “by soothsaying”.",
+      "cognate_ids": [
+        "ar-qasama",
+        "gez-astaqsama",
+        "arc-qesam"
+      ],
+      "senses": [
+        {
+          "id": "divination",
+          "gloss": "divination",
+          "definition": "Divining, in “a spirit of divinations” (the plural) and “by divination”.",
+          "evidence": [
+            {
+              "ref": "Act.16.16",
+              "role": "defining",
+              "note": "“A girl who had רֻוחָא דּקֵצמֵא … by divination (בּקֵצמָא)”."
+            },
+            {
+              "ref": "Act.16.18",
+              "note": "Paul: “I command you in the name of Jesus Christ to come out of her”, and it came out that hour."
+            }
+          ],
+          "kin": [
+            "qesem-divination"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-qasama",
+      "lang": "ar",
+      "form": "قَسَمَ، اِسْتَقْسَمَ",
+      "translit": "qasama, istaqsama",
+      "gloss": "divide, apportion; (form X) seek to know one's allotted portion by the divining arrows",
+      "relation": "cognate",
+      "note": "Form X is divination by lot: the أَزْلَام were headless arrows marked “my Lord has commanded me” and “my Lord has forbidden me”, drawn from a receptacle before a journey or an undertaking (Lane p. 1247, n18048). This is the shaking of the arrows in Ezk 21:26, and the ground sense “divide, allot” explains divination as asking what has been apportioned.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2988, art. قسم, قَسَمَ (n42665)",
+          "note": "“He divided; parted; divided in parts or shares; distributed.”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 2988, art. قسم, form X اِسْتَقْسَمَ (n42670)",
+          "note": "“He sought to know what was allotted to him, by means of the أَزْلَام, and what was not allotted to him.”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 1247, art. زلم, زَلَمٌ (n18048)",
+          "note": "The divining arrows “by means of which the Arabs in the Time of Ignorance sought to know what was allotted to them”."
+        }
+      ]
+    },
+    {
+      "id": "gez-astaqsama",
+      "lang": "gez",
+      "form": "አስተቀሰመ፡ መቅሰም፡",
+      "translit": "ʾastaqsama, maqsam",
+      "gloss": "augur, divine; (maqsam) divination, augury, oracle",
+      "relation": "cognate",
+      "note": "Dillmann gives the root as unused in its simple stem, “first to cut off, then to divide and define, then to divine”. The noun maqsam is the same formation as Hebrew מִקְסָם.",
+      "evidence": [
+        {
+          "source": "dillmann-1865",
+          "locator": "cols. 432–433, II ቀሰመ, አስተቀሰመ",
+          "note": "“oraculis definire, augurari, divinare, hariolari”; Ethiopic 1Sa 28:8; 2Ki 17:17."
+        },
+        {
+          "source": "dillmann-1865",
+          "locator": "col. 433, መቅሰም",
+          "note": "“ominum captatio, sortilegium, augurium, divinatio, oraculum”; Ethiopic Num 23:23; Deu 18:10."
+        }
+      ]
+    },
+    {
+      "id": "arc-qesam",
+      "lang": "arc",
+      "form": "קְסַם، קִסְמָא",
+      "translit": "qəsam, qismā",
+      "gloss": "divine; (qismā) divination, divining tools; decision",
+      "relation": "cognate",
+      "note": "The Targums use the same root for the Hebrew's, and render קֶסֶם of Pro 16:10 by קִסְמָא “decision”. Jastrow's Hebrew-Aramaic קָסַם “cut, carve; decide” keeps the older sense.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. קְסַם (verb)",
+          "note": "“to divine”: Targ. Ezk 21:26; Targ. Deu 18:10; Gitt. 68b."
+        },
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. קְסַם, קִסְמָא (noun)",
+          "note": "“decision”, Targ. Prov 16:10; “divination, divining tools”, Targ. Ezk 21:26–27; Targ. Deu 18:10."
+        },
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. קָסַם",
+          "note": "“to cut, carve”; “to decide”; “to divine”."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "word-of-yahweh-not-divination",
+      "statement": "Moses forbade Israel every way the nations used to learn what was to come: “one who divines divinations, a soothsayer, an augur, a sorcerer … or one who inquires of the dead”, for “these nations … listen to soothsayers and to diviners, but as for you, Yahweh your God has not allowed you so” (Deu 18:10–14). In their place Yahweh would raise up a prophet like Moses and put his words in his mouth (Deu 18:15, 18), and Peter says that prophet is Jesus (Act 3:22–23). Samuel told Saul that rebellion is as the sin of divination, because he had rejected the word of Yahweh (1Sa 15:23); when Yahweh no longer answered him, Saul went to a medium and said “divine for me” (1Sa 28:6–8), and he died “for asking a medium, to inquire, and did not inquire of Yahweh” (1Ch 10:13–14). Balaam the diviner could not curse Israel, “for there is no divination in Israel” (Num 23:23). The prophets of Israel who divined for silver are the false prophets: Yahweh had not sent them, their divination was a lie, and it would end in darkness, “for there is no answer of God” (Mic 3:6–7, 11; Ezk 13:6–9). Yahweh “frustrates the signs of liars and makes fools of diviners”, but “confirms the word of his servant” (Isa 44:25–26). From the verses: knowledge of Yahweh's will and of what is to come is given only by his own word through the prophets he sends, and now through his Son (Heb 1:1–2); any other way of seeking it is rebellion against that word.",
+      "evidence": [
+        {
+          "ref": "Deu.18.10",
+          "to": "Deu.18.15"
+        },
+        {
+          "ref": "Deu.18.18"
+        },
+        {
+          "ref": "Act.3.22",
+          "to": "Act.3.23"
+        },
+        {
+          "ref": "1Sa.15.23"
+        },
+        {
+          "ref": "1Sa.28.6",
+          "to": "1Sa.28.8"
+        },
+        {
+          "ref": "1Ch.10.13",
+          "to": "1Ch.10.14"
+        },
+        {
+          "ref": "Num.23.23"
+        },
+        {
+          "ref": "Mic.3.6",
+          "to": "Mic.3.7"
+        },
+        {
+          "ref": "Mic.3.11"
+        },
+        {
+          "ref": "Ezk.13.6",
+          "to": "Ezk.13.9"
+        },
+        {
+          "ref": "Isa.44.25",
+          "to": "Isa.44.26"
+        },
+        {
+          "ref": "Heb.1.1",
+          "to": "Heb.1.2"
+        }
+      ]
+    },
+    {
+      "topic": "yahweh-rules-the-lot",
+      "statement": "When the king of Babylon stood at the parting of the ways and divined, shaking arrows, asking the teraphim and looking at the liver, the lot at his right hand fell on Jerusalem (Ezk 21:26–27). To the men of Jerusalem it seemed a worthless divining, but Yahweh had already said to the land of Israel, “I will draw my sword out of its sheath”, and the divination brought their iniquity to remembrance (Ezk 21:8–9, 28–29). “The lot is cast into the lap, but its every decision is from Yahweh” (Pro 16:33). From the verses: the heathen king's divination did not decide the outcome; Yahweh used it to carry out the judgment he had declared by his prophet.",
+      "evidence": [
+        {
+          "ref": "Ezk.21.26",
+          "to": "Ezk.21.29"
+        },
+        {
+          "ref": "Ezk.21.8",
+          "to": "Ezk.21.9"
+        },
+        {
+          "ref": "Pro.16.33"
+        }
+      ]
+    }
+  ],
+  "note": "BDB key s.cf.ac has 335 tokens of the particle נָא filed here by spelling (also under n.ab.aa, n.df.ab): lexicon-support's use count for the verb is inflated by them; the real qal count is about 19, including 1Sa 28:8 (קָסֳמִי־נָא) and Ezk 21:28 (כִּקְסָם) which the brief's qal list misses (both checked in the text and in MACULA's alignment). Deu 18:10 קֹסֵם is filed under the noun's key with a qal stem. Ezekiel's chapter 21 verse numbers are the Hebrew's (English 21:21–23). The Peshitta OT was not checked for qṣm. Leads not followed: Klein's Palmyrene קסמא “divination” and Old South Arabian mqšm (check SabaWeb); Wiktionary's claim that modern Hebrew קֶסֶם comes from Akkadian kišum (no Oracc entry for qsm; doubtful). Syriac outside the Peshitta: Payne Smith p. 515, ܩܨܡ “to divine, use divinations, consult an oracle”, ܩܨܡܐ “divination; omen, oracle”. The Syriac ṣ for s is the usual emphatic assimilation after q. Klein's second קסם “munch” and the polel of Ezk 17:9 are the root קסס, not this one. Cosam (Luk 3:28, Peshitta קֻוסַם with ס) has no name file: nothing ties it to this root. Open question: whether Arabic qasama “divide” and the noun of oath qasam both continue the same older root, and whether Pro 16:10 “decision” is the older sense rather than a positive use of “oracle”."
+}

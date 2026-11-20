@@ -1,0 +1,249 @@
+{
+  "id": "7lh",
+  "root": "חלה",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "psalm-35"
+  ],
+  "gloss": "be sick",
+  "summary": "be sick in Psalm 35",
+  "words": [
+    {
+      "lemma": "חָלָה",
+      "gloss": "be sick",
+      "bdb": [
+        "h.cn.aa"
+      ],
+      "pos": "verb",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "be sick",
+          "senses": [
+            {
+              "id": "be-sick",
+              "gloss": "be sick",
+              "definition": "be sick in Psalm 35",
+              "evidence": [
+                {
+                  "ref": "Psa.35.13",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-h01029"
+      ]
+    },
+    {
+      "lemma": "חֳלִי",
+      "pos": "noun",
+      "gloss": "sickness",
+      "bdb": [
+        "h.cn.ab"
+      ],
+      "senses": [
+        {
+          "id": "sickness",
+          "gloss": "sickness",
+          "definition": "A bodily sickness or affliction.",
+          "evidence": [
+            {
+              "ref": "Psa.41.4",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חָלָה",
+      "pos": "verb",
+      "gloss": "entreat",
+      "bdb": [
+        "h.co.aa"
+      ],
+      "stems": [
+        {
+          "stem": "piel",
+          "gloss": "entreat",
+          "senses": [
+            {
+              "id": "entreat",
+              "gloss": "entreat",
+              "definition": "To seek favor by earnest entreaty.",
+              "evidence": [
+                {
+                  "ref": "Psa.45.13",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַחֲלֶה",
+      "pos": "noun",
+      "gloss": "sickness",
+      "bdb": [
+        "h.cn.ac"
+      ],
+      "senses": [
+        {
+          "id": "illness",
+          "gloss": "illness",
+          "definition": "The human spirit can sustain a person through illness, while Jehoram is told of the illness that will affect his bowels.",
+          "evidence": [
+            {
+              "ref": "Pro.18.14",
+              "role": "defining"
+            },
+            {
+              "ref": "2Ch.21.15",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַחֲלָה",
+      "pos": "noun",
+      "gloss": "sickness",
+      "bdb": [
+        "h.cn.ad"
+      ],
+      "senses": [
+        {
+          "id": "disease",
+          "gloss": "disease",
+          "definition": "In Solomon’s prayer, disease appears alongside famine and pestilence among the afflictions that bring a person to prayer.",
+          "evidence": [
+            {
+              "ref": "1Ki.8.37",
+              "role": "defining"
+            },
+            {
+              "ref": "2Ch.6.28",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַחֲלַת",
+      "pos": "noun",
+      "gloss": "song title",
+      "bdb": [
+        "h.co.ab"
+      ],
+      "senses": [
+        {
+          "id": "mahalath",
+          "gloss": "Mahalath",
+          "definition": "A musical title in a psalm superscription.",
+          "evidence": [
+            {
+              "ref": "Psa.53.1",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חֲלִי",
+      "pos": "noun",
+      "gloss": "ornament",
+      "bdb": [
+        "h.cp.ab"
+      ],
+      "senses": [
+        {
+          "id": "ornament",
+          "gloss": "ornament",
+          "definition": "The comparison is to gold jewelry worn on the ear. The Song compares the curves of the thighs to ornaments made by a craftsman.",
+          "evidence": [
+            {
+              "ref": "Pro.25.12",
+              "role": "defining"
+            },
+            {
+              "ref": "Sng.7.2",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חֶלְיָה",
+      "pos": "noun",
+      "gloss": "jewelry",
+      "bdb": [
+        "h.cp.ad"
+      ],
+      "senses": [
+        {
+          "id": "jewelry",
+          "gloss": "jewelry",
+          "definition": "A piece of jewelry.",
+          "evidence": [
+            {
+              "ref": "Hos.2.15",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַחֲלוּי",
+      "bdb": [
+        "h.cn.ae"
+      ],
+      "pos": "noun",
+      "gloss": "illness, injuries",
+      "senses": [
+        {
+          "id": "illness-injuries",
+          "gloss": "illness, injuries",
+          "definition": "Joash’s attackers leave him suffering severely before his servants conspire against him in his bed.",
+          "evidence": [
+            {
+              "ref": "2Ch.24.25",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-h01029",
+      "lang": "arc",
+      "form": "חֲלִי",
+      "translit": "ḥălî",
+      "gloss": "be sick, grieve",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "חֲלִי, H01029, Yoma 22b"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "Drafted for Psalm 35 coverage."
+}

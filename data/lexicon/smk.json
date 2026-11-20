@@ -1,0 +1,299 @@
+{
+  "id": "smk",
+  "root": "סמכ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "support",
+    "trust",
+    "meals"
+  ],
+  "gloss": "lean, rest upon, sustain",
+  "summary": "A hand can rest on an offering and a person can lean on a pillar. David uses the same verb of the support Yahweh gives him through the night.",
+  "words": [
+    {
+      "lemma": "סָמַךְ",
+      "bdb": [
+        "o.bt.aa"
+      ],
+      "pos": "verb",
+      "gloss": "lay, lean, sustain",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "lay on, press against, sustain",
+          "senses": [
+            {
+              "id": "lay-a-hand-upon",
+              "gloss": "lay a hand upon",
+              "definition": "The worshipper lays a hand on the offering. Moses is told to lay his hand on Joshua.",
+              "evidence": [
+                {
+                  "ref": "Lev.1.4",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Num.27.18"
+                }
+              ],
+              "cognate_ids": [
+                "arc-semak"
+              ]
+            },
+            {
+              "id": "sustain",
+              "gloss": "sustain",
+              "definition": "David wakes after sleeping because Yahweh sustains him. In another psalm God helps to uphold his life.",
+              "evidence": [
+                {
+                  "ref": "Psa.3.6",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.54.6"
+                }
+              ],
+              "cognate_ids": [
+                "arc-semak"
+              ]
+            },
+            {
+              "id": "press-against",
+              "gloss": "press against",
+              "definition": "Ezekiel dates the siege to the day the Babylonian king presses against Jerusalem.",
+              "evidence": [
+                {
+                  "ref": "Ezk.24.2",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "lean upon, rely on",
+          "senses": [
+            {
+              "id": "lean-upon-rely-on",
+              "gloss": "lean upon, rely on",
+              "definition": "Samson leans on the pillars. Isaiah pictures trust in Egypt as leaning on a broken reed.",
+              "evidence": [
+                {
+                  "ref": "Jdg.16.29",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Isa.36.6"
+                },
+                {
+                  "ref": "Psa.71.6"
+                }
+              ],
+              "cognate_ids": [
+                "arc-semak"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "sustain, refresh",
+          "senses": [
+            {
+              "id": "sustain-refresh",
+              "gloss": "sustain, refresh",
+              "definition": "The woman asks to be sustained with raisin cakes and refreshed with apples.",
+              "evidence": [
+                {
+                  "ref": "Sng.2.5",
+                  "role": "defining"
+                }
+              ],
+              "cognate_ids": [
+                "arc-semak"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "סמַך",
+      "bdb": [],
+      "pos": "verb",
+      "gloss": "rest, recline, seat",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "rest or recline",
+          "senses": [
+            {
+              "id": "rest-lay-down",
+              "gloss": "rest, lay down",
+              "definition": "The Son of Man has nowhere to rest his head.",
+              "evidence": [
+                {
+                  "ref": "Mat.8.20",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Luk.9.58"
+                }
+              ],
+              "cognate_ids": [
+                "arc-semak"
+              ]
+            },
+            {
+              "id": "recline-at-table",
+              "gloss": "recline at table",
+              "definition": "Jesus reclines at supper with the twelve.",
+              "evidence": [
+                {
+                  "ref": "Mat.26.20",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Mrk.14.18"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "ethpeel",
+          "gloss": "take a place at table",
+          "senses": [
+            {
+              "id": "take-a-place-at",
+              "gloss": "take a place at table",
+              "definition": "Jesus takes his place at the meal in the Pharisee’s house.",
+              "evidence": [
+                {
+                  "ref": "Luk.7.36",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Luk.22.14"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "aphel",
+          "gloss": "have others sit down",
+          "senses": [
+            {
+              "id": "have-others-sit-down",
+              "gloss": "have others sit down",
+              "definition": "Jesus directs his disciples to seat the people in companies.",
+              "evidence": [
+                {
+                  "ref": "Mrk.6.39",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Luk.9.14",
+                  "to": "Luk.9.15"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "syc"
+    },
+    {
+      "lemma": "סמָכָא",
+      "bdb": [],
+      "pos": "noun",
+      "gloss": "place at a meal, company at table",
+      "senses": [
+        {
+          "id": "place-at-a-meal",
+          "gloss": "place at a meal, company at table",
+          "definition": "Jesus speaks of the foremost places at banquets. The people he feeds sit down in companies.",
+          "evidence": [
+            {
+              "ref": "Mat.23.6",
+              "role": "defining"
+            },
+            {
+              "ref": "Mrk.6.39",
+              "to": "Mrk.6.40"
+            }
+          ]
+        }
+      ],
+      "lang": "syc"
+    },
+    {
+      "lemma": "סמִיכָא",
+      "bdb": [],
+      "pos": "adjective",
+      "gloss": "reclining at table, a guest",
+      "senses": [
+        {
+          "id": "reclining-at-table-a",
+          "gloss": "reclining at table, a guest",
+          "definition": "The king enters to see the guests at his son’s wedding. Lazarus is among those at table with Jesus.",
+          "evidence": [
+            {
+              "ref": "Mat.22.10",
+              "to": "Mat.22.11",
+              "role": "defining"
+            },
+            {
+              "ref": "Jhn.12.2"
+            }
+          ]
+        }
+      ],
+      "lang": "syc"
+    },
+    {
+      "lemma": "סָמכָא",
+      "bdb": [],
+      "pos": "noun",
+      "gloss": "firm support, steadfastness",
+      "senses": [
+        {
+          "id": "firm-support-steadfastness",
+          "gloss": "firm support, steadfastness",
+          "definition": "Peter warns his readers against falling from their own steadfastness.",
+          "evidence": [
+            {
+              "ref": "2Pe.3.17",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "cognate_ids": [
+        "arc-semak"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-semak",
+      "lang": "arc",
+      "form": "סְמַךְ",
+      "translit": "səmak",
+      "gloss": "press, lay hands on, lean on",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "סְמַךְ, Targum on Exodus 29:10 and Amos 5:19"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The indexed noun סֶמֶל, an image, ends in a different consonant. The Peshitta uses two distinct nouns spelled סמכא for a place at table and for steadfastness."
+}

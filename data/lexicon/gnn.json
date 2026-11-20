@@ -1,0 +1,278 @@
+{
+  "id": "gnn",
+  "root": "גננ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "protection",
+    "gardening"
+  ],
+  "gloss": "protect, shield, garden",
+  "summary": "Yahweh calls himself Abram’s shield and promises to defend Jerusalem. A garden is a place set apart for planting and tending trees or vegetables.",
+  "words": [
+    {
+      "lemma": "גָּנַן",
+      "bdb": [
+        "c.cp.aa"
+      ],
+      "pos": "verb",
+      "gloss": "protect, defend",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "protect",
+          "senses": [
+            {
+              "id": "protect",
+              "gloss": "protect",
+              "definition": "Yahweh promises to defend Jerusalem. Isaiah compares his protection to birds hovering over their young.",
+              "evidence": [
+                {
+                  "ref": "2Ki.19.34",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Isa.31.5"
+                },
+                {
+                  "ref": "Zec.12.8"
+                }
+              ],
+              "kin": [
+                "shield"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מָגֵן",
+      "bdb": [
+        "c.cp.ag"
+      ],
+      "pos": "noun",
+      "gloss": "shield, protector",
+      "senses": [
+        {
+          "gloss": "shield",
+          "definition": "Soldiers carry shields for protection. Shields also appear among the treasures taken from Solomon’s palace.",
+          "evidence": [
+            {
+              "ref": "1Ch.5.18",
+              "role": "defining"
+            },
+            {
+              "ref": "1Ki.14.26"
+            }
+          ],
+          "id": "shield",
+          "cognate_ids": [
+            "ar-mijann"
+          ]
+        },
+        {
+          "id": "protector",
+          "gloss": "protector",
+          "definition": "Abram receives the assurance that Yahweh is his shield. With enemies all around him, David calls Yahweh a shield about him.",
+          "evidence": [
+            {
+              "ref": "Gen.15.1",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.3.4"
+            },
+            {
+              "ref": "Psa.7.11"
+            },
+            {
+              "ref": "Psa.18.3"
+            }
+          ],
+          "cognate_ids": [
+            "ar-mijann"
+          ]
+        }
+      ],
+      "gender": "mf"
+    },
+    {
+      "lemma": "גַּן",
+      "bdb": [
+        "c.cp.ab"
+      ],
+      "pos": "noun",
+      "gloss": "garden",
+      "senses": [
+        {
+          "id": "garden",
+          "gloss": "garden",
+          "definition": "Yahweh plants the garden in Eden and puts the man there to tend it. Ahab wants Naboth’s vineyard for a vegetable garden.",
+          "evidence": [
+            {
+              "ref": "Gen.2.8",
+              "role": "defining"
+            },
+            {
+              "ref": "Gen.2.15"
+            },
+            {
+              "ref": "1Ki.21.2"
+            }
+          ]
+        }
+      ],
+      "gender": "mf",
+      "cognate_ids": [
+        "ar-janna"
+      ]
+    },
+    {
+      "lemma": "גַּנָּה",
+      "bdb": [
+        "c.cp.ac"
+      ],
+      "pos": "noun",
+      "gloss": "garden, orchard",
+      "senses": [
+        {
+          "id": "garden-orchard",
+          "gloss": "garden, orchard",
+          "definition": "The exiles are told to plant gardens and eat their fruit. The king in Ecclesiastes plants gardens with fruit trees.",
+          "evidence": [
+            {
+              "ref": "Jer.29.5",
+              "role": "defining"
+            },
+            {
+              "ref": "Ecc.2.5"
+            },
+            {
+              "ref": "Isa.1.30"
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "cognate_ids": [
+        "ar-janna"
+      ]
+    },
+    {
+      "lemma": "מְגִנָּה",
+      "bdb": [
+        "c.cp.ah"
+      ],
+      "pos": "noun",
+      "gloss": "covering, dullness of heart",
+      "senses": [
+        {
+          "id": "covering-dullness-of-heart",
+          "gloss": "covering, dullness of heart",
+          "definition": "The speaker asks that his persecutors be given a covering of heart. The curse in the next phrase makes this an affliction.",
+          "evidence": [
+            {
+              "ref": "Lam.3.65",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "מָגַן",
+      "bdb": [
+        "c.cp.ai"
+      ],
+      "pos": "verb",
+      "gloss": "hand over, give",
+      "stems": [
+        {
+          "stem": "piel",
+          "gloss": "hand over, give",
+          "senses": [
+            {
+              "id": "hand-over-give",
+              "gloss": "hand over, give",
+              "definition": "Melchizedek blesses God for handing Abram’s enemies over to him. In Hosea Yahweh asks how he could give Israel up.",
+              "evidence": [
+                {
+                  "ref": "Gen.14.20",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Hos.11.8"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "גַּנְתָא",
+      "bdb": [],
+      "pos": "noun",
+      "gloss": "garden",
+      "senses": [
+        {
+          "id": "garden-2",
+          "gloss": "garden",
+          "definition": "A man sows a mustard seed in his garden. Jesus crosses the Kidron with his disciples and enters a garden.",
+          "evidence": [
+            {
+              "ref": "Luk.13.19",
+              "role": "defining"
+            },
+            {
+              "ref": "Jhn.18.1"
+            },
+            {
+              "ref": "Jhn.19.41"
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "lang": "syc",
+      "cognate_ids": [
+        "ar-janna"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-janna",
+      "lang": "ar",
+      "form": "جَنَّةٌ",
+      "translit": "janna",
+      "gloss": "garden, walled garden",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 463, جن, n6380"
+        }
+      ]
+    },
+    {
+      "id": "ar-mijann",
+      "lang": "ar",
+      "form": "مِجَنٌّ",
+      "translit": "mijann",
+      "gloss": "shield",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 464, جن, n6401"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The verb with initial mem means handing over in Genesis and Hosea. Its relationship to the shield noun is uncertain. The covering of the heart occurs only in Lamentations 3:65."
+}

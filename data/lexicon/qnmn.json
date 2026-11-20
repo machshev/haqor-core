@@ -1,0 +1,127 @@
+{
+  "id": "qnmn",
+  "root": "קנמנ",
+  "status": "draft",
+  "updated": "2026-11-18",
+  "tags": [
+    "plants",
+    "spices"
+  ],
+  "gloss": "cinnamon",
+  "summary": "Cinnamon is weighed for the anointing oil in Exodus, used to perfume a bed in Proverbs and named among the aromatics of the Song’s garden.",
+  "words": [
+    {
+      "lemma": "קִנָּמוֹן",
+      "pos": "noun",
+      "bdb": [
+        "s.cc.ag"
+      ],
+      "gloss": "cinnamon",
+      "senses": [
+        {
+          "id": "cinnamon",
+          "gloss": "cinnamon",
+          "definition": "An aromatic spice used in scented mixtures.",
+          "evidence": [
+            {
+              "ref": "Exo.30.23",
+              "role": "defining",
+              "note": "The recipe specifies half as much fragrant cinnamon as liquid myrrh."
+            },
+            {
+              "ref": "Pro.7.17",
+              "role": "defining",
+              "note": "The speaker scents her bed with myrrh, aloes and cinnamon."
+            },
+            {
+              "ref": "Sng.4.14",
+              "role": "defining",
+              "note": "The garden’s aromatics include fragrant cane and cinnamon as separate items."
+            }
+          ],
+          "cognate_ids": [
+            "arc-cinnamon",
+            "syc-cinnamon",
+            "gez-cinnamon"
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "קוּנִימָוֹן",
+      "pos": "noun",
+      "gloss": "cinnamon",
+      "senses": [
+        {
+          "id": "cinnamon-cargo",
+          "gloss": "cinnamon",
+          "definition": "A spice sold as merchandise.",
+          "evidence": [
+            {
+              "ref": "Rev.18.13",
+              "role": "defining",
+              "note": "The merchants’ list includes cinnamon alongside perfumes and frankincense."
+            }
+          ],
+          "cognate_ids": [
+            "syc-cinnamon",
+            "gez-cinnamon"
+          ],
+          "kin": [
+            "cinnamon"
+          ]
+        }
+      ],
+      "lang": "syc",
+      "root": "קונימונ"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-cinnamon",
+      "lang": "arc",
+      "form": "קִינְמוֹן",
+      "translit": "qinmōn",
+      "gloss": "cinnamon",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "cal",
+          "locator": "qnmwn, qwnm, masculine noun; Onkelos Exo 30:23"
+        }
+      ]
+    },
+    {
+      "id": "syc-cinnamon",
+      "lang": "syc",
+      "form": "ܩܘܢܘܡܘܢ",
+      "translit": "qwnwmwn",
+      "gloss": "cinnamon",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "sedra",
+          "locator": "lexeme 2773, Rev 18:13"
+        }
+      ]
+    },
+    {
+      "id": "gez-cinnamon",
+      "lang": "gez",
+      "form": "ቅናሞሙ",
+      "translit": "qənāmomu",
+      "gloss": "cinnamon",
+      "relation": "loan",
+      "evidence": [
+        {
+          "source": "dillmann-1865",
+          "locator": "col. 443, ቅናሞሙ and variants, Exo 30:23 and Rev 18:13"
+        }
+      ],
+      "note": "Dillmann traces the Geʿez variants to Greek forms of the spice name."
+    }
+  ],
+  "doctrine": [],
+  "note": "The earlier קנה entry reserves cinnamon for its own entry. The index groups it with cane, but Exo 30:23 names and weighs the two separately. The route by which the spice name reached Hebrew remains uncertain."
+}

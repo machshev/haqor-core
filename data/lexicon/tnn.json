@@ -1,0 +1,86 @@
+{
+  "id": "tnn",
+  "root": "תננ",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "gloss": "sea monster, dragon",
+  "summary": "תנין denotes a great serpent or sea monster.",
+  "words": [
+    {
+      "lemma": "תַּנִּין",
+      "pos": "noun",
+      "gloss": "sea monster, dragon",
+      "bdb": [
+        "w.be.ac"
+      ],
+      "senses": [
+        {
+          "id": "sea-monster-dragon",
+          "gloss": "sea monster, dragon",
+          "definition": "The noun names the great sea creatures whose heads Yahweh breaks.",
+          "evidence": [
+            {
+              "ref": "Psa.74.13",
+              "role": "defining"
+            },
+            {
+              "ref": "Gen.1.21",
+              "role": "defining"
+            },
+            {
+              "ref": "Exo.7.10",
+              "role": "example"
+            },
+            {
+              "ref": "Isa.27.1",
+              "role": "example"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-serpent"
+      ]
+    },
+    {
+      "lemma": "תַּן",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "jackal",
+      "bdb": [
+        "w.be.ab"
+      ],
+      "senses": [
+        {
+          "id": "jackal",
+          "gloss": "jackal",
+          "definition": "A jackal or wild creature named among desolate places.",
+          "evidence": [
+            {
+              "ref": "Psa.44.20",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "note": "Singular tannîn and plural tannînîm are distinguished from the similar plural tannîm, jackals, by the contexts.",
+  "created": "2026-11-19",
+  "cognates": [
+    {
+      "id": "arc-serpent",
+      "lang": "arc",
+      "form": "תַּנִּינָא",
+      "translit": "tannînā",
+      "gloss": "serpent, sea creature",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. תַּנִּינָא, Targum Onqelos Exodus 7:9 and Targum Isaiah 27:1"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,259 @@
+{
+  "id": "ndd",
+  "root": "נדד",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "gloss": "flee, wander, drive away",
+  "summary": "נדד describes movement away from a place, whether a person flees or wanders, or something is driven away. In Psalm 31 the singer's acquaintances are driven far from him.",
+  "words": [
+    {
+      "lemma": "נָדַד",
+      "pos": "verb",
+      "gloss": "flee, wander, drive away",
+      "bdb": [
+        "n.bd.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "flee, wander",
+          "senses": [
+            {
+              "id": "flee-or-wander-away",
+              "gloss": "flee or wander away",
+              "definition": "To move away from a place or person in flight or wandering.",
+              "evidence": [
+                {
+                  "ref": "Psa.31.12",
+                  "role": "defining",
+                  "note": "Those who see the speaker in the street flee from him."
+                },
+                {
+                  "ref": "Psa.68.13",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Job.14.2",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "drive away",
+          "senses": [
+            {
+              "id": "drive-away",
+              "gloss": "drive away",
+              "definition": "To cause someone or something to move away.",
+              "evidence": [
+                {
+                  "ref": "Job.18.18",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpolel",
+          "gloss": "flee, recoil",
+          "senses": [
+            {
+              "id": "flee-recoil",
+              "gloss": "flee, recoil",
+              "definition": "When the plotters’ tongues bring them down, those who see them draw back.",
+              "evidence": [
+                {
+                  "ref": "Psa.64.9",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hophal",
+          "gloss": "be driven away",
+          "senses": [
+            {
+              "id": "be-driven-away",
+              "gloss": "be driven away",
+              "definition": "The wicked are like thorns cast aside.",
+              "evidence": [
+                {
+                  "ref": "2Sa.23.6",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "poal",
+          "gloss": "fly away",
+          "senses": [
+            {
+              "id": "fly-away",
+              "gloss": "fly away",
+              "definition": "Locusts settle on a wall in the cold and fly away when the sun appears.",
+              "evidence": [
+                {
+                  "ref": "Nam.3.17",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-n00212"
+      ]
+    },
+    {
+      "lemma": "נֵד",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "heap, standing mass",
+      "bdb": [
+        "n.be.ab"
+      ],
+      "senses": [
+        {
+          "id": "standing-heap",
+          "gloss": "standing heap",
+          "definition": "A mass standing or gathered together, as water held back in a heap.",
+          "evidence": [
+            {
+              "ref": "Psa.33.7",
+              "role": "defining",
+              "note": "Yahweh gathers the waters of the sea as a heap."
+            },
+            {
+              "ref": "Exo.15.8"
+            },
+            {
+              "ref": "Jos.3.13"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "נְדוּד",
+      "pos": "noun",
+      "gloss": "restless tossing",
+      "bdb": [
+        "n.bd.ab"
+      ],
+      "senses": [
+        {
+          "id": "restless-tossing",
+          "gloss": "restless tossing",
+          "definition": "Unable to sleep, Job tosses until dawn.",
+          "evidence": [
+            {
+              "ref": "Job.7.4",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "נִדָּה",
+      "pos": "noun",
+      "gloss": "menstrual impurity, exclusion",
+      "bdb": [
+        "n.bd.ac"
+      ],
+      "senses": [
+        {
+          "id": "menstrual-impurity-exclusion",
+          "gloss": "menstrual impurity, exclusion",
+          "definition": "The law specifies the period of impurity associated with menstruation. Ezekiel uses that condition as a figure for the people’s conduct.",
+          "evidence": [
+            {
+              "ref": "Lev.15.19",
+              "role": "defining"
+            },
+            {
+              "ref": "Ezk.36.17",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "נִידָה",
+      "pos": "noun",
+      "gloss": "object of avoidance",
+      "bdb": [
+        "n.bd.ad"
+      ],
+      "senses": [
+        {
+          "id": "object-of-avoidance",
+          "gloss": "object of avoidance",
+          "definition": "Those who once honoured Jerusalem despise her when her disgrace is exposed.",
+          "evidence": [
+            {
+              "ref": "Lam.1.8",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "נְדַד",
+      "pos": "verb",
+      "gloss": "depart",
+      "lang": "arc",
+      "bdb": [
+        "xn.ad.aa"
+      ],
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "depart",
+          "senses": [
+            {
+              "id": "depart",
+              "gloss": "depart",
+              "definition": "After Daniel is thrown to the lions, sleep departs from the king.",
+              "evidence": [
+                {
+                  "ref": "Dan.6.19",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "Drafted from the lexicon brief. The noun נֵד shares the spelling family but its relation to the movement sense needs further lexical review.",
+  "cognates": [
+    {
+      "id": "arc-n00212",
+      "lang": "arc",
+      "form": "נְדַד",
+      "translit": "nədad",
+      "gloss": "be restless, flee",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "נְדַד, N00212, Targum Psalms 55:8"
+        }
+      ]
+    }
+  ]
+}

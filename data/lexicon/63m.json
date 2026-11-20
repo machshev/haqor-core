@@ -1,0 +1,177 @@
+{
+  "id": "63m",
+  "root": "טעמ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "taste",
+    "judgment"
+  ],
+  "gloss": "taste; discernment",
+  "summary": "טעם concerns tasting and the discernment or judgment associated with it. Psalm 34:9 invites the reader to taste and see that Yahweh is good.",
+  "words": [
+    {
+      "lemma": "טַעַם",
+      "bdb": [
+        "i.be.ab"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "senses": [
+        {
+          "id": "taste-judgment-behaviour",
+          "gloss": "taste, judgment, behaviour",
+          "definition": "The palate discriminates food. Abigail’s discernment earns David’s blessing. In the superscription David changes his behaviour, as in the account before Achish.",
+          "evidence": [
+            {
+              "ref": "Job.12.11",
+              "role": "defining"
+            },
+            {
+              "ref": "1Sa.25.33",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.34.1",
+              "role": "defining"
+            },
+            {
+              "ref": "1Sa.21.14",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gloss": "taste"
+    },
+    {
+      "lemma": "טָעַם",
+      "bdb": [
+        "i.be.aa"
+      ],
+      "pos": "verb",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "taste",
+          "senses": [
+            {
+              "id": "taste",
+              "gloss": "taste",
+              "definition": "To taste or experience.",
+              "evidence": [
+                {
+                  "ref": "Psa.34.9",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gloss": "taste",
+      "cognate_ids": [
+        "arc-i00610"
+      ]
+    },
+    {
+      "lemma": "טְעֵם",
+      "gloss": "taste; judgment",
+      "bdb": [
+        "xi.ab.ab"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "senses": [
+        {
+          "id": "judgment-order",
+          "gloss": "judgment, order",
+          "definition": "Daniel addresses the officer with discretion. The decree of the king commands those assembled to worship the image.",
+          "evidence": [
+            {
+              "ref": "Dan.2.14",
+              "role": "defining"
+            },
+            {
+              "ref": "Dan.3.10",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַטְעָם",
+      "gloss": "delicacy",
+      "bdb": [
+        "i.be.ac"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "senses": [
+        {
+          "id": "delicacy",
+          "gloss": "delicacy",
+          "definition": "Prepared food regarded as a delicacy.",
+          "evidence": [
+            {
+              "ref": "Gen.27.4",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "טְעֵם",
+      "lang": "arc",
+      "gloss": "decree; taste",
+      "bdb": [
+        "xi.ab.aa"
+      ],
+      "pos": "verb",
+      "stems": [
+        {
+          "stem": "pael",
+          "gloss": "feed",
+          "senses": [
+            {
+              "id": "feed",
+              "gloss": "feed",
+              "definition": "The king is made to eat grass like cattle during the period of his humiliation.",
+              "evidence": [
+                {
+                  "ref": "Dan.4.22",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Dan.4.29",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-i00610",
+      "lang": "arc",
+      "form": "טְעַם",
+      "translit": "ṭəʿam",
+      "gloss": "taste",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "טְעַם, I00610, Targum 1 Samuel 14:24"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "Drafted for Psalm 34 coverage."
+}

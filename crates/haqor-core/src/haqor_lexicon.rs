@@ -142,8 +142,6 @@ pub const MERGED_LETTERS: &[(&str, &[&str])] = &[
 pub struct Entry {
     pub id: String,
     pub root: String,
-    #[serde(default)]
-    pub homograph: Option<u8>,
     pub status: Status,
     /// The date the entry was signed off, while `status` is `reviewed`.
     #[serde(default)]
@@ -597,7 +595,21 @@ pub fn read_lexicon(dir: &Path) -> Result<Lexicon> {
     let sources = serde_json::from_str::<SourcesFile>(&raw)
         .with_context(|| format!("parsing {}", sources_path.display()))?
         .sources;
-    let entries = read_entries(entry_paths(dir, false)?, |e: &Entry| &e.id)?;
+    let mut entries = read_entries(entry_paths(dir, false)?, |e: &Entry| &e.id)?;
+    if let Some(entry) = entries.iter().find(|e| is_noun_entry(e)) {
+        bail!(
+            "{}.json is one word with no verb: it belongs in {NOUNS_DIR}/",
+            entry.id
+        );
+    }
+    let nouns = read_entries(entry_paths(&dir.join(NOUNS_DIR), true)?, |e: &Entry| &e.id)?;
+    if let Some(entry) = nouns.iter().find(|e| !is_noun_entry(e)) {
+        bail!(
+            "{NOUNS_DIR}/{}.json has a verb or more than one word: it belongs at the top level, named by its root",
+            entry.id
+        );
+    }
+    entries.extend(nouns);
     let names = read_entries(entry_paths(&dir.join(NAMES_DIR), true)?, |e: &NameEntry| {
         &e.id
     })?;
@@ -613,11 +625,32 @@ pub fn read_name_texts(dir: &Path) -> Result<Vec<(String, String)>> {
     texts_of(entry_paths(&dir.join(NAMES_DIR), true)?)
 }
 
-/// Every entry file's id and text as written, in file name order: what the
-/// review page shows and edits. Root entries only; [`read_name_texts`] reads
-/// the names.
+/// Every word entry file's ([`NOUNS_DIR`]) id and text as written, in file
+/// name order.
+pub fn read_noun_texts(dir: &Path) -> Result<Vec<(String, String)>> {
+    texts_of(entry_paths(&dir.join(NOUNS_DIR), true)?)
+}
+
+/// One entry file's text as written, by id: a root entry's at the top level,
+/// or a word entry's under [`NOUNS_DIR`].
+pub fn read_entry_text(dir: &Path, id: &str) -> Result<String> {
+    if id.is_empty() || !id.bytes().all(|b| b.is_ascii_alphanumeric() || b == b'-') {
+        bail!("`{id}` is no entry id");
+    }
+    let file = [dir.join(format!("{id}.json")), dir.join(NOUNS_DIR).join(format!("{id}.json"))]
+        .into_iter()
+        .find(|f| f.is_file())
+        .with_context(|| format!("no entry `{id}` in {}", dir.display()))?;
+    std::fs::read_to_string(&file).with_context(|| format!("reading {}", file.display()))
+}
+
+/// Every entry file's id and text as written: the root entries in file name
+/// order, then the word entries ([`read_noun_texts`]). What the review page
+/// shows and edits; [`read_name_texts`] reads the names.
 pub fn read_entry_texts(dir: &Path) -> Result<Vec<(String, String)>> {
-    texts_of(entry_paths(dir, false)?)
+    let mut texts = texts_of(entry_paths(dir, false)?)?;
+    texts.extend(read_noun_texts(dir)?);
+    Ok(texts)
 }
 
 fn texts_of(paths: Vec<std::path::PathBuf>) -> Result<Vec<(String, String)>> {
@@ -681,11 +714,17 @@ pub fn save_entry(dir: &Path, text: &str, verses: &HashSet<i64>) -> Result<Lexic
         let entry: Entry =
             serde_json::from_str(text).context("the entry does not fit the schema")?;
         let id = entry.id.clone();
+        let dir = if is_noun_entry(&entry) {
+            dir.join(NOUNS_DIR)
+        } else {
+            dir.to_path_buf()
+        };
         lexicon.entries.retain(|e| e.id != id);
         lexicon.entries.push(entry);
-        (id, dir.to_path_buf())
+        (id, dir)
     };
     let summary = check_lexicon(&lexicon, verses, None)?;
+    std::fs::create_dir_all(&dir).with_context(|| format!("creating {}", dir.display()))?;
     let path = dir.join(format!("{id}.json"));
     let temporary = dir.join(format!(".{id}.json.{}.tmp", std::process::id()));
     let mut text = text.trim_end().to_string();
@@ -707,6 +746,431 @@ pub fn verses_of(db: &Connection) -> Result<HashSet<i64>> {
         .collect::<rusqlite::Result<_>>()?;
     Ok(verses)
 }
+
+// ---------------------------------------------------------------------------
+// Article ids: a lossless ASCII transliteration of the Hebrew.
+//
+// A root entry is named by its root key (`נפש` → `npx`), a word entry under
+// `nouns/` by its pointed lemma (`עֵץ` → `3ee9`) and a name entry by its
+// pointed name. Each consonant is one character, so an id turns back into
+// exactly the Hebrew it was made from ([`root_of_id`], [`word_of_id`]) and
+// two entries can only share an id by sharing a spelling. The emphatics and
+// gutturals take the digits the Arabic chat alphabet gives them, and shin
+// takes Maltese `x`; the vowels are runs of `a e i o u`, one run per
+// consonant. Dagesh doubles its consonant's letter; `0` parts two letters
+// that would otherwise read as one with dagesh; `1` is rafe; a space is `-`
+// and maqaf `--`. Cantillation, meteg and the grapheme joiner are not part of
+// the word and are left out. The table is in the README.
+// ---------------------------------------------------------------------------
+
+/// The lexicon's subdirectory of word entries: a word with no other word of
+/// its root and no verb (`nouns/<id>.json`, named by its pointed lemma).
+pub const NOUNS_DIR: &str = "nouns";
+
+const SHIN_DOT: char = '\u{05C1}';
+const SIN_DOT: char = '\u{05C2}';
+const DAGESH: char = '\u{05BC}';
+const RAFE: char = '\u{05BF}';
+const MAQAF: char = '\u{05BE}';
+const CGJ: char = '\u{034F}';
+
+/// Each consonant's letter in an id. Shin and sin are `x` and `c`.
+const ID_CONSONANTS: &[(char, char)] = &[
+    ('א', '2'),
+    ('ב', 'b'),
+    ('ג', 'g'),
+    ('ד', 'd'),
+    ('ה', 'h'),
+    ('ו', 'w'),
+    ('ז', 'z'),
+    ('ח', '7'),
+    ('ט', '6'),
+    ('י', 'y'),
+    ('כ', 'k'),
+    ('ל', 'l'),
+    ('מ', 'm'),
+    ('נ', 'n'),
+    ('ס', 's'),
+    ('ע', '3'),
+    ('פ', 'p'),
+    ('צ', '9'),
+    ('ק', 'q'),
+    ('ר', 'r'),
+    ('ת', 't'),
+];
+
+/// The final forms and the letters they end a word for.
+const FINAL_FORMS: &[(char, char)] = &[
+    ('ך', 'כ'),
+    ('ם', 'מ'),
+    ('ן', 'נ'),
+    ('ף', 'פ'),
+    ('ץ', 'צ'),
+];
+
+/// Each vowel point's run of vowel letters in an id.
+const ID_VOWELS: &[(char, &str)] = &[
+    ('\u{05B0}', "e"),   // sheva
+    ('\u{05B1}', "eae"), // hataf segol
+    ('\u{05B2}', "ea"),  // hataf patah
+    ('\u{05B3}', "eao"), // hataf qamats
+    ('\u{05B4}', "i"),   // hireq
+    ('\u{05B5}', "ee"),  // tsere
+    ('\u{05B6}', "ae"),  // segol
+    ('\u{05B7}', "a"),   // patah
+    ('\u{05B8}', "aa"),  // qamats
+    ('\u{05C7}', "ao"),  // qamats qatan
+    ('\u{05B9}', "o"),   // holam
+    ('\u{05BA}', "oo"),  // holam haser for vav
+    ('\u{05BB}', "u"),   // qubbuts
+];
+
+/// Marks that are not part of the word: cantillation, meteg, the grapheme
+/// joiner and zero-width characters.
+fn id_ignores(c: char) -> bool {
+    matches!(c as u32, 0x0591..=0x05AF | 0x05BD | 0x200B..=0x200D)
+}
+
+fn id_letter(base: char, dot: Option<char>) -> Option<char> {
+    match (base, dot) {
+        ('ש', Some(SHIN_DOT)) => Some('x'),
+        ('ש', Some(SIN_DOT)) => Some('c'),
+        ('ש', None) => Some('j'),
+        ('ש', _) => None,
+        (_, Some(_)) => None,
+        _ => ID_CONSONANTS.iter().find(|(h, _)| *h == base).map(|(_, a)| *a),
+    }
+}
+
+fn hebrew_letter(letter: char) -> Option<(char, Option<char>)> {
+    match letter {
+        'x' => Some(('ש', Some(SHIN_DOT))),
+        'c' => Some(('ש', Some(SIN_DOT))),
+        'j' => Some(('ש', None)),
+        _ => ID_CONSONANTS
+            .iter()
+            .find(|(_, a)| *a == letter)
+            .map(|(h, _)| (*h, None)),
+    }
+}
+
+/// The id of a root key (`נפש` → `npx`, `עשׂה` → `3ch`): one letter per
+/// consonant, shin written bare in the key and sin `שׂ`.
+pub fn root_id(root: &str) -> Result<String> {
+    let mut out = String::new();
+    let mut chars = root.chars().filter(|&c| !id_ignores(c)).peekable();
+    while let Some(c) = chars.next() {
+        let dot = if c == 'ש' {
+            match chars.peek() {
+                Some(&SIN_DOT) => chars.next(),
+                _ => Some(SHIN_DOT),
+            }
+        } else {
+            None
+        };
+        match id_letter(c, dot) {
+            Some(letter) => out.push(letter),
+            None => bail!("root `{root}` has `{c}` ({:04X}), not a root letter", c as u32),
+        }
+    }
+    if out.is_empty() {
+        bail!("root `{root}` has no letters");
+    }
+    Ok(out)
+}
+
+/// The root key a root id stands for ([`root_id`] backwards).
+pub fn root_of_id(id: &str) -> Result<String> {
+    let mut out = String::new();
+    for c in id.chars() {
+        match hebrew_letter(c) {
+            Some(('ש', Some(SHIN_DOT))) => out.push('ש'),
+            Some(('ש', None)) => bail!("`{id}` is not a root id: `j`"),
+            Some((base, dot)) => {
+                out.push(base);
+                out.extend(dot);
+            }
+            None => bail!("`{id}` is not a root id: `{c}`"),
+        }
+    }
+    Ok(out)
+}
+
+/// One consonant of a pointed word with its points.
+#[derive(PartialEq)]
+struct Letter {
+    base: char,
+    dot: Option<char>,
+    dagesh: bool,
+    vowel: Option<char>,
+    /// A second vowel after the grapheme joiner (ירושלַ͏ִם's patah and hireq).
+    vowel2: Option<char>,
+    rafe: bool,
+    /// Written in its final form (`ך` for `כ`).
+    final_form: bool,
+}
+
+enum Piece {
+    Letter(Letter),
+    Space,
+    Maqaf,
+}
+
+/// The id of a pointed word (`נֶפֶשׁ` → `naepaex`): every consonant and point
+/// of it, so that [`word_of_id`] gives the word back.
+pub fn word_id(word: &str) -> Result<String> {
+    let mut pieces: Vec<Piece> = Vec::new();
+    let mut prev = None;
+    for c in word.trim().chars().filter(|&c| !id_ignores(c)) {
+        let joined = std::mem::replace(&mut prev, Some(c)) == Some(CGJ);
+        let last = match pieces.last_mut() {
+            Some(Piece::Letter(letter)) => Some(letter),
+            _ => None,
+        };
+        match c {
+            ' ' => pieces.push(Piece::Space),
+            MAQAF => pieces.push(Piece::Maqaf),
+            SHIN_DOT | SIN_DOT => match last {
+                Some(l) if l.base == 'ש' && l.dot.is_none() => l.dot = Some(c),
+                _ => bail!("`{word}`: a shin or sin dot off a ש"),
+            },
+            DAGESH => match last {
+                Some(l) if !l.dagesh => l.dagesh = true,
+                _ => bail!("`{word}`: a dagesh with no letter of its own"),
+            },
+            RAFE => match last {
+                Some(l) if !l.rafe => l.rafe = true,
+                _ => bail!("`{word}`: a rafe with no letter of its own"),
+            },
+            _ if ID_VOWELS.iter().any(|(v, _)| *v == c) => match last {
+                Some(l) if l.vowel.is_none() => l.vowel = Some(c),
+                Some(l) if joined && l.vowel2.is_none() => l.vowel2 = Some(c),
+                _ => bail!("`{word}`: two vowels on one letter"),
+            },
+            CGJ => {}
+            _ => {
+                let (base, last_form) = match FINAL_FORMS.iter().find(|(f, _)| *f == c) {
+                    Some((_, base)) => (*base, true),
+                    None => (c, false),
+                };
+                if base != 'ש' && id_letter(base, None).is_none() {
+                    bail!("`{word}` has `{c}` ({:04X}), not part of a word", c as u32);
+                }
+                pieces.push(Piece::Letter(Letter {
+                    base,
+                    dot: None,
+                    dagesh: false,
+                    vowel: None,
+                    vowel2: None,
+                    rafe: false,
+                    final_form: last_form,
+                }));
+            }
+        }
+    }
+    let mut out = String::new();
+    for (i, piece) in pieces.iter().enumerate() {
+        match piece {
+            Piece::Space => out.push('-'),
+            Piece::Maqaf => out.push_str("--"),
+            Piece::Letter(l) => {
+                let ends_word = !matches!(pieces.get(i + 1), Some(Piece::Letter(_)));
+                let has_final = FINAL_FORMS.iter().any(|(_, b)| *b == l.base);
+                let letter = id_letter(l.base, l.dot).context("a letter with no id letter")?;
+                out.push(letter);
+                if l.dagesh {
+                    out.push(letter);
+                }
+                // A letter not in the form its place calls for.
+                if has_final && l.final_form != ends_word {
+                    out.push('5');
+                }
+                if let Some(v) = l.vowel {
+                    out.push_str(ID_VOWELS.iter().find(|(p, _)| *p == v).unwrap().1);
+                }
+                if let Some(v) = l.vowel2 {
+                    out.push('8');
+                    out.push_str(ID_VOWELS.iter().find(|(p, _)| *p == v).unwrap().1);
+                }
+                if l.rafe {
+                    out.push('1');
+                }
+                if !l.dagesh && l.vowel.is_none() && !l.rafe && !(has_final && l.final_form != ends_word)
+                    && let Some(Piece::Letter(next)) = pieces.get(i + 1)
+                    && id_letter(next.base, next.dot) == Some(letter)
+                {
+                    out.push('0');
+                }
+            }
+        }
+    }
+    if out.is_empty() {
+        bail!("`{word}` has no letters");
+    }
+    Ok(out)
+}
+
+/// The pointed word a word id stands for ([`word_id`] backwards), its points
+/// in the canonical order.
+pub fn word_of_id(id: &str) -> Result<String> {
+    let chars: Vec<char> = id.chars().collect();
+    let mut pieces: Vec<Piece> = Vec::new();
+    let mut i = 0;
+    while i < chars.len() {
+        let c = chars[i];
+        if c == '-' {
+            let run = chars[i..].iter().take_while(|&&d| d == '-').count();
+            pieces.push(match run {
+                1 => Piece::Space,
+                2 => Piece::Maqaf,
+                _ => bail!("`{id}`: {run} hyphens"),
+            });
+            i += run;
+            continue;
+        }
+        let (base, dot) = hebrew_letter(c).with_context(|| format!("`{id}`: `{c}` is no letter"))?;
+        i += 1;
+        let dagesh = chars.get(i) == Some(&c);
+        if dagesh {
+            i += 1;
+        }
+        let flip = chars.get(i) == Some(&'5');
+        if flip {
+            i += 1;
+        }
+        let vowel_at = |i: &mut usize| -> Result<Option<char>> {
+            let run: String = chars[*i..]
+                .iter()
+                .take_while(|d| "aeiou".contains(**d))
+                .collect();
+            *i += run.chars().count();
+            if run.is_empty() {
+                return Ok(None);
+            }
+            Ok(Some(
+                ID_VOWELS
+                    .iter()
+                    .find(|(_, r)| *r == run)
+                    .with_context(|| format!("`{id}`: `{run}` is no vowel"))?
+                    .0,
+            ))
+        };
+        let vowel = vowel_at(&mut i)?;
+        let vowel2 = if vowel.is_some() && chars.get(i) == Some(&'8') {
+            i += 1;
+            Some(vowel_at(&mut i)?.with_context(|| format!("`{id}`: `8` with no vowel after"))?)
+        } else {
+            None
+        };
+        let rafe = chars.get(i) == Some(&'1');
+        if rafe {
+            i += 1;
+        }
+        if chars.get(i) == Some(&'0') {
+            if dagesh || flip || vowel.is_some() || rafe || chars.get(i + 1) != Some(&c) {
+                bail!("`{id}`: `0` only parts a bare letter from the same letter");
+            }
+            i += 1;
+        }
+        pieces.push(Piece::Letter(Letter {
+            base,
+            dot,
+            dagesh,
+            vowel,
+            vowel2,
+            rafe,
+            final_form: flip,
+        }));
+    }
+    let mut out = String::new();
+    for (i, piece) in pieces.iter().enumerate() {
+        match piece {
+            Piece::Space => out.push(' '),
+            Piece::Maqaf => out.push(MAQAF),
+            Piece::Letter(l) => {
+                let ends_word = !matches!(pieces.get(i + 1), Some(Piece::Letter(_)));
+                // `final_form` holds whether the id flipped the form its place calls for.
+                let base = match FINAL_FORMS.iter().find(|(_, b)| *b == l.base) {
+                    Some((form, _)) if ends_word != l.final_form => *form,
+                    _ => l.base,
+                };
+                out.push(base);
+                // Canonical order: vowel, dagesh, rafe, then the shin/sin dot.
+                out.extend(l.vowel);
+                if let Some(v) = l.vowel2 {
+                    out.push(CGJ);
+                    out.push(v);
+                }
+                if l.dagesh {
+                    out.push(DAGESH);
+                }
+                if l.rafe {
+                    out.push(RAFE);
+                }
+                out.extend(l.dot);
+            }
+        }
+    }
+    Ok(out)
+}
+
+/// A pointed word as [`word_of_id`] gives it back: its points in canonical
+/// order, cantillation and meteg left out. Two spellings with the same id
+/// are the same word.
+pub fn canonical_word(word: &str) -> Result<String> {
+    word_of_id(&word_id(word)?)
+}
+
+/// Whether an entry belongs under [`NOUNS_DIR`]: no verb, and one lemma (its
+/// Hebrew, or the same word written again in Aramaic).
+pub fn is_noun_entry(entry: &Entry) -> bool {
+    let mut lemmas = entry.words.iter().map(|w| canonical_word(&w.lemma).ok());
+    let first = lemmas.next().flatten();
+    first.is_some()
+        && lemmas.all(|l| l == first)
+        && entry.words.iter().all(|w| w.pos != Pos::Verb)
+}
+
+/// The id an entry must have: its root's ([`root_id`]) at the top level, its
+/// lemma's ([`word_id`]) under [`NOUNS_DIR`].
+pub fn entry_id(entry: &Entry) -> Result<String> {
+    if is_noun_entry(entry) {
+        word_id(&entry.words[0].lemma)
+    } else {
+        root_id(&entry.root)
+    }
+}
+
+/// The id a name entry must have: its pointed name's ([`word_id`]).
+pub fn name_entry_id(name: &NameEntry) -> Result<String> {
+    word_id(&name.name)
+}
+
+/// Where an entry's file is, from the lexicon directory, as faults name it.
+pub fn entry_file(entry: &Entry) -> String {
+    if is_noun_entry(entry) {
+        format!("{NOUNS_DIR}/{}.json", entry.id)
+    } else {
+        format!("{}.json", entry.id)
+    }
+}
+
+/// Where an article's JSON text belongs: its id and the lexicon
+/// subdirectory it is filed in (`""` for a root entry, [`NOUNS_DIR`] or
+/// [`NAMES_DIR`]). What the harness and the review page name new articles by.
+pub fn article_id(text: &str) -> Result<(String, &'static str)> {
+    if is_name_entry(text) {
+        let name: NameEntry =
+            serde_json::from_str(text).context("the name entry does not fit the schema")?;
+        Ok((name_entry_id(&name)?, NAMES_DIR))
+    } else {
+        let entry: Entry =
+            serde_json::from_str(text).context("the entry does not fit the schema")?;
+        let dir = if is_noun_entry(&entry) { NOUNS_DIR } else { "" };
+        Ok((entry_id(&entry)?, dir))
+    }
+}
+
 
 fn is_kebab(s: &str) -> bool {
     !s.is_empty()
@@ -979,13 +1443,18 @@ impl Checker<'_> {
     }
 
     fn entry(&mut self, entry: &Entry) {
-        let at = format!("{}.json", entry.id);
+        let at = entry_file(entry);
         self.summary.entries += 1;
         if entry.status == Status::Reviewed {
             self.summary.reviewed += 1;
         }
-        if !is_kebab(&entry.id) {
-            self.fault(&at, "`id` must be kebab case");
+        match entry_id(entry) {
+            Ok(id) if id == entry.id => {}
+            Ok(id) => self.fault(
+                &at,
+                format_args!("`id` must be `{id}`, the transliteration of its {}", if is_noun_entry(entry) { "lemma" } else { "root" }),
+            ),
+            Err(error) => self.fault(&at, format_args!("no id: {error:#}")),
         }
         if !is_root(&entry.root) {
             self.fault(
@@ -995,9 +1464,6 @@ impl Checker<'_> {
                     entry.root
                 ),
             );
-        }
-        if entry.homograph == Some(0) {
-            self.fault(&at, "`homograph` counts from 1");
         }
         if !is_date(&entry.updated) {
             self.fault(&at, "`updated` must be YYYY-MM-DD");
@@ -1118,8 +1584,13 @@ impl Checker<'_> {
     ) {
         let at = format!("{NAMES_DIR}/{}.json", name.id);
         self.summary.names += 1;
-        if !is_kebab(&name.id) {
-            self.fault(&at, "`id` must be kebab case");
+        match name_entry_id(name) {
+            Ok(id) if id == name.id => {}
+            Ok(id) => self.fault(
+                &at,
+                format_args!("`id` must be `{id}`, the transliteration of its name"),
+            ),
+            Err(error) => self.fault(&at, format_args!("no id: {error:#}")),
         }
         if !is_hebrew(&name.name) {
             self.fault(&at, format_args!("name `{}` must be Hebrew", name.name));
@@ -1269,14 +1740,14 @@ pub fn check_lexicon(
         }
     }
     checker.sources = ids;
-    let mut roots = HashSet::new();
+    let mut roots: HashMap<&str, &str> = HashMap::new();
     let mut bdb_keys: HashMap<&str, &str> = HashMap::new();
     for entry in &lexicon.entries {
-        if !roots.insert((entry.root.as_str(), entry.homograph)) {
+        if let Some(other) = roots.insert(entry.root.as_str(), &entry.id) {
             checker.fault(
-                &format!("{}.json", entry.id),
+                &entry_file(entry),
                 format_args!(
-                    "root `{}` has another entry; number them with `homograph`",
+                    "root `{}` also has `{other}`: one root, one entry, so merge them",
                     entry.root
                 ),
             );
@@ -2134,7 +2605,7 @@ mod tests {
     }
 
     const ENTRY: &str = r#"{
-        "id": "nephesh",
+        "id": "naepaex",
         "root": "נפש",
         "status": "draft",
         "updated": "2026-11-06",
@@ -2178,11 +2649,11 @@ mod tests {
     }
 
     const NAME: &str = r#"{
-        "id": "naphish",
+        "id": "naapiyx",
         "name": "נָפִישׁ",
         "english": "Naphish",
         "root": "נפש",
-        "entry": "nephesh",
+        "entry": "naepaex",
         "word": "נֶפֶשׁ",
         "status": "draft",
         "updated": "2026-11-08",
@@ -2219,14 +2690,15 @@ mod tests {
             check_lexicon(&lexicon, &verses(), None)
         };
         // The same bearer's same name drafted twice is one article split in two.
-        let twin = NAME.replace(r#""id": "naphish""#, r#""id": "naphish-2""#);
+        let twin = NAME.replace(r#""id": "naapiyx""#, r#""id": "naapiyx-2""#);
         let error = names(&twin).unwrap_err().to_string();
         assert!(
-            error.contains("already bears this name in `naphish`"),
+            error.contains("already bears this name in `naapiyx`"),
             "{error}"
         );
         // A second name of the same bearer, even one spelled alike, is its own.
-        let other = twin.replace(r#""name": "נָפִישׁ""#, r#""name": "נֶפֶשׁ""#);
+        let other = twin.replace(r#""name": "נָפִישׁ""#, r#""name": "נֶפֶשׁ""#)
+            .replace(r#""id": "naapiyx-2""#, r#""id": "naepaex""#);
         assert_eq!(names(&other).unwrap().names, 2);
     }
 
@@ -2234,7 +2706,7 @@ mod tests {
     fn accepts_a_draft_name_with_explicitly_unknown_etymology() {
         let json = NAME
             .replace(r#""root": "נפש""#, r#""root": """#)
-            .replace(r#""entry": "nephesh""#, r#""entry": """#)
+            .replace(r#""entry": "naepaex""#, r#""entry": """#)
             .replace("        \"word\": \"נֶפֶשׁ\",\n", "")
             .replace(r#", "additional_roots": ["צדק"]"#, "")
             .replace(r#", "cognate_ids": ["lane"]"#, "");
@@ -2255,7 +2727,7 @@ mod tests {
     #[test]
     fn rejects_a_name_entry_with_broken_links() {
         let json = NAME
-            .replace(r#""entry": "nephesh""#, r#""entry": "ruach""#)
+            .replace(r#""entry": "naepaex""#, r#""entry": "ruach""#)
             .replace(r#"["Naphish@Gen.25.15"]"#, r#"["Naphish"]"#);
         let error = check_name(&json).unwrap_err().to_string();
         assert!(error.contains("names no root entry `ruach`"), "{error}");
@@ -2265,10 +2737,10 @@ mod tests {
             .replace(r#""word": "נֶפֶשׁ""#, r#""word": "רוּחַ""#);
         let error = check_name(&json).unwrap_err().to_string();
         assert!(
-            error.contains("is not the root of entry `nephesh`"),
+            error.contains("is not the root of entry `naepaex`"),
             "{error}"
         );
-        assert!(error.contains("is no word of `nephesh`"), "{error}");
+        assert!(error.contains("is no word of `naepaex`"), "{error}");
     }
 
     #[test]
@@ -2402,14 +2874,14 @@ mod tests {
         .unwrap();
         let summary = save_entry(&dir, ENTRY, &verses()).unwrap();
         assert_eq!(summary.entries, 1);
-        let saved = std::fs::read_to_string(dir.join("nephesh.json")).unwrap();
+        let saved = std::fs::read_to_string(dir.join("nouns/naepaex.json")).unwrap();
         assert_eq!(saved.trim_end(), ENTRY.trim_end());
 
         // A citation of no verse is refused, and the file is left as it was.
         let broken = ENTRY.replace("Gen.2.7", "Gen.2.99");
         assert!(save_entry(&dir, &broken, &verses()).is_err());
         assert_eq!(
-            std::fs::read_to_string(dir.join("nephesh.json")).unwrap(),
+            std::fs::read_to_string(dir.join("nouns/naepaex.json")).unwrap(),
             saved
         );
         std::fs::remove_dir_all(&dir).unwrap();
@@ -2436,7 +2908,7 @@ mod tests {
     /// One spelling, two older roots: evening behind ġ, pledge behind ʿ, with
     /// an Aramaic word of scripture inside the entry.
     const EREV: &str = r#"{
-        "id": "erev",
+        "id": "3rb",
         "root": "ערב",
         "status": "draft",
         "updated": "2026-11-07",
@@ -2547,7 +3019,7 @@ mod tests {
     #[test]
     fn am_words_keep_their_two_older_roots_apart() {
         let entry: Entry =
-            serde_json::from_str(include_str!("../../../data/lexicon/am.json")).unwrap();
+            serde_json::from_str(include_str!("../../../data/lexicon/3mm.json")).unwrap();
         let support = entry_support(&entry, &|_| None);
         let people = &support[0].cognates;
         let dim = &support[3].cognates;
@@ -2681,7 +3153,7 @@ mod tests {
         assert_eq!(splits[0].letter, "ע");
         assert_eq!(splits[0].sounds["ġ"], ["עֶרֶב: evening"]);
         assert_eq!(splits[0].sounds["ʿ"], ["עָרַב qal: pledge"]);
-        assert!(sound_splits_report(&lexicon).contains("**ערב** `erev` (split)"));
+        assert!(sound_splits_report(&lexicon).contains("**ערב** `3rb` (split)"));
     }
 
     #[test]
@@ -2729,5 +3201,58 @@ mod tests {
             error.contains("a loan cites the New Testament verses"),
             "{error}"
         );
+    }
+
+    #[test]
+    fn article_ids_transliterate_roots_and_words() {
+        assert_eq!(root_id("נפש").unwrap(), "npx");
+        assert_eq!(root_id("עשׂה").unwrap(), "3ch");
+        assert_eq!(root_id("קבב").unwrap(), "qbb");
+        assert_eq!(root_of_id("3ch").unwrap(), "עשׂה");
+        assert!(root_id("נפשׁ").is_err(), "shin is bare in a root key");
+        assert!(root_id("מלך").is_err(), "a root key has no final forms");
+        for (word, id) in [
+            ("נֶפֶשׁ", "naepaex"),
+            ("עֵץ", "3ee9"),
+            ("אֱלֹהִים", "2eaelohiym"),
+            ("שָׂדֶה", "caadaeh"),
+            ("חִנְנִי", "7ineniy"),
+            ("בְּאֵר שֶׁבַע", "bbe2eer-xaeba3"),
+            ("בְּלִי־מָה", "bbeliy--maah"),
+            ("יִשָּׂשכָר", "yiccaajkaar"),
+            ("שלֵימָונ", "jleeymaawn5"),
+            ("עַמּוּד", "3ammwwd"),
+            ("שִׁפְרָה", "xiperaah"),
+            ("יְרוּשָׁלַ͏ִם", "yerwwxaala8im"),
+        ] {
+            assert_eq!(word_id(word).unwrap(), id, "{word}");
+            assert_eq!(word_of_id(id).unwrap(), word, "{id}");
+        }
+        // Cantillation and meteg are not part of the word.
+        assert_eq!(word_id("כֶּ֫סֶל").unwrap(), word_id("כֶּסֶל").unwrap());
+        // `0` parts a bare letter from the same letter with dagesh.
+        let id = word_id("הִנְנִי").unwrap();
+        assert_eq!(word_of_id(&id).unwrap(), "הִנְנִי");
+        assert_eq!(word_of_id("b0bba").unwrap(), "בבַּ");
+        assert!(word_of_id("ba0b").is_err());
+    }
+
+    #[test]
+    fn every_lexicon_spelling_has_a_lossless_id() {
+        let dir = Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data/lexicon");
+        let lexicon = read_lexicon(&dir).unwrap();
+        for entry in &lexicon.entries {
+            let root = root_id(&entry.root).unwrap();
+            assert_eq!(root_of_id(&root).unwrap(), entry.root);
+            for word in &entry.words {
+                let id = word_id(&word.lemma).unwrap();
+                assert_eq!(word_of_id(&id).unwrap(), canonical_word(&word.lemma).unwrap());
+                assert_eq!(word_id(&word_of_id(&id).unwrap()).unwrap(), id);
+            }
+        }
+        for name in &lexicon.names {
+            let id = name_entry_id(name).unwrap();
+            assert_eq!(word_id(&word_of_id(&id).unwrap()).unwrap(), id);
+        }
     }
 }

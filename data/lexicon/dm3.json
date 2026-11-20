@@ -1,0 +1,214 @@
+{
+  "id": "dm3",
+  "root": "דמע",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "grief",
+    "water"
+  ],
+  "gloss": "shed tears, tear",
+  "summary": "A tear is the water that runs from a weeping eye. In Psalm 6 the speaker weeps until the couch is soaked. Isaiah pictures Yahweh bringing grief to an end by wiping tears from every face.",
+  "words": [
+    {
+      "lemma": "דִּמְעָה",
+      "bdb": [
+        "d.bx.ac"
+      ],
+      "pos": "noun",
+      "gloss": "tear",
+      "senses": [
+        {
+          "gloss": "tear",
+          "definition": "Water that runs from the eyes. Jeremiah sets eyes running with tears beside eyelids flowing with water. The tears left on a cheek or on a bed make grief visible.",
+          "evidence": [
+            {
+              "ref": "Jer.9.17",
+              "role": "defining"
+            },
+            {
+              "ref": "Lam.1.2"
+            },
+            {
+              "ref": "Psa.6.7"
+            },
+            {
+              "ref": "2Ki.20.5"
+            },
+            {
+              "ref": "Isa.25.8"
+            },
+            {
+              "ref": "Rev.21.4"
+            }
+          ],
+          "id": "tear",
+          "kin": [
+            "weep"
+          ]
+        }
+      ],
+      "gender": "f",
+      "cognate_ids": [
+        "ar-dam",
+        "akk-dimtu"
+      ],
+      "greek": [
+        {
+          "lemma": "δάκρυ",
+          "gloss": "tear",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "ISA 25:8 word 7"
+            },
+            {
+              "ref": "Rev.7.17"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "דָּמַע",
+      "bdb": [
+        "d.bx.aa"
+      ],
+      "pos": "verb",
+      "gloss": "shed tears",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "shed tears",
+          "senses": [
+            {
+              "gloss": "weep",
+              "definition": "Jeremiah weeps in secret over the captivity of Yahweh’s flock. His eyes run with tears, and the infinitive followed by the finite verb stresses his weeping.",
+              "evidence": [
+                {
+                  "ref": "Jer.13.17",
+                  "role": "defining"
+                }
+              ],
+              "id": "weep",
+              "kin": [
+                "tear"
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-dam"
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "בָּכָה",
+            "note": "Both verbs describe the prophet’s response to the captivity of the flock.",
+            "evidence": [
+              {
+                "ref": "Jer.13.17"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "דֶּמַע",
+      "bdb": [
+        "d.bx.ab"
+      ],
+      "pos": "noun",
+      "gloss": "liquid produce",
+      "senses": [
+        {
+          "id": "liquid-produce",
+          "gloss": "liquid produce",
+          "definition": "Israel must give Yahweh a share of this produce alongside the fullness of the harvest. The image of liquid dripping like tears suggests the yield of the press. The verse leaves the crop unnamed.",
+          "evidence": [
+            {
+              "ref": "Exo.22.28",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "summary": "The law mentions this produce once. Its pairing with the harvest points to an agricultural yield."
+    },
+    {
+      "lemma": "דֵּמְעְתָא",
+      "pos": "noun",
+      "gloss": "tear",
+      "senses": [
+        {
+          "id": "tear-2",
+          "gloss": "tear",
+          "definition": "The woman wets Jesus’ feet with her tears and wipes them with her hair. Revelation describes God wiping every tear from the eyes of his people.",
+          "evidence": [
+            {
+              "ref": "Luk.7.38",
+              "role": "defining"
+            },
+            {
+              "ref": "Luk.7.44"
+            },
+            {
+              "ref": "Rev.7.17"
+            },
+            {
+              "ref": "Rev.21.4"
+            }
+          ],
+          "kin": [
+            "tear"
+          ]
+        }
+      ],
+      "lang": "syc",
+      "gender": "f",
+      "cognate_ids": [
+        "ar-dam",
+        "akk-dimtu"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-dam",
+      "lang": "ar",
+      "form": "دَمَعَ، دَمْعٌ",
+      "translit": "damaʿa, damʿ",
+      "gloss": "shed tears, tears",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 913, دَمَعَتِ العَيْنُ n13085 and دَمْعٌ n13090"
+        }
+      ],
+      "sounds": {
+        "ע": "ʿ"
+      }
+    },
+    {
+      "id": "akk-dimtu",
+      "lang": "akk",
+      "form": "dimtu",
+      "translit": "dimtu",
+      "gloss": "tear",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep/x000016600, dimtu [tear]"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The name Damascus and the difficult דְּמֶשֶׁק in Amos 3:12 have different consonants. Their index position supplies no derivation from דמע. The precise agricultural product in Exodus 22:28 is uncertain. SEDRA lexeme 728 supplies the Syriac noun."
+}

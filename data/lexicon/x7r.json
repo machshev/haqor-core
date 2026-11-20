@@ -1,0 +1,215 @@
+{
+  "id": "x7r",
+  "root": "שחר",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-20",
+  "tags": [
+    "time-light"
+  ],
+  "gloss": "dawn, seek early, black",
+  "summary": "Dawn marks the rising of light, while the related verb describes seeking at first light. The same consonants also describe blackness and dark colour.",
+  "words": [
+    {
+      "lemma": "שַׁחַר",
+      "bdb": [
+        "v.cp.ab"
+      ],
+      "pos": "noun",
+      "gloss": "dawn",
+      "senses": [
+        {
+          "id": "dawn",
+          "gloss": "dawn",
+          "definition": "Dawn comes up and marks the beginning of day. The psalm addresses Yahweh from the dawn.",
+          "evidence": [
+            {
+              "ref": "Psa.22.1",
+              "role": "defining"
+            },
+            {
+              "ref": "Gen.32.27"
+            },
+            {
+              "ref": "Hos.6.3"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "שָׁחַר",
+      "bdb": [
+        "v.cp.ac"
+      ],
+      "pos": "verb",
+      "gloss": "seek early",
+      "stems": [
+        {
+          "stem": "piel",
+          "gloss": "seek diligently",
+          "senses": [
+            {
+              "id": "seek-diligently",
+              "gloss": "seek diligently",
+              "definition": "Those who seek Yahweh early are promised to find him.",
+              "evidence": [
+                {
+                  "ref": "Pro.8.17",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Hos.5.15"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שָׁחַר",
+      "bdb": [
+        "v.co.aa"
+      ],
+      "pos": "verb",
+      "gloss": "be black",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "be black",
+          "senses": [
+            {
+              "id": "be-black",
+              "gloss": "be black",
+              "definition": "The sufferer describes skin blackened by disease.",
+              "evidence": [
+                {
+                  "ref": "Job.30.30",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שָׁחֹר",
+      "bdb": [
+        "v.co.ac"
+      ],
+      "pos": "adjective",
+      "gloss": "black",
+      "senses": [
+        {
+          "id": "black",
+          "gloss": "black",
+          "definition": "The word describes black or dark appearance.",
+          "evidence": [
+            {
+              "ref": "Sng.5.11",
+              "role": "defining"
+            },
+            {
+              "ref": "Job.30.30"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "שְׁחוֹר",
+      "bdb": [
+        "v.co.ab"
+      ],
+      "pos": "noun",
+      "gloss": "blackness",
+      "senses": [
+        {
+          "id": "blackness",
+          "gloss": "blackness",
+          "definition": "Blackness names a dark appearance.",
+          "evidence": [
+            {
+              "ref": "Lam.4.8",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "שַׁחֲרוּת",
+      "bdb": [
+        "v.co.ad"
+      ],
+      "pos": "noun",
+      "gloss": "blackness, dawn",
+      "senses": [
+        {
+          "id": "blackness-dawn",
+          "gloss": "blackness, dawn",
+          "definition": "The noun holds together dawn and blackness as the colour word develops.",
+          "evidence": [
+            {
+              "ref": "Job.3.9",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "שְׁחַרְחֹר",
+      "bdb": [
+        "v.co.ae"
+      ],
+      "pos": "adjective",
+      "gloss": "blackish",
+      "senses": [
+        {
+          "id": "blackish",
+          "gloss": "blackish",
+          "definition": "The repeated form describes something darkish.",
+          "evidence": [
+            {
+              "ref": "Lev.13.31",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "מִשְׁחָר",
+      "bdb": [
+        "v.cp.ae"
+      ],
+      "pos": "noun",
+      "gloss": "dawn",
+      "senses": [
+        {
+          "id": "dawn-2",
+          "gloss": "dawn",
+          "definition": "The dawn is a time of early rising.",
+          "evidence": [
+            {
+              "ref": "Psa.110.3",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    }
+  ],
+  "cognates": [],
+  "doctrine": [],
+  "note": "The personal names filed under this spelling receive separate name entries where needed. The black and dawn senses are retained together by the corpus spelling. Added all nonzero brief keys; the three proper names receive separate files below."
+}

@@ -1,0 +1,105 @@
+{
+  "id": "7ck",
+  "root": "חשׂכ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "restraint"
+  ],
+  "gloss": "withhold, restrain, spare",
+  "summary": "The object may be a gift withheld or a person restrained from an act. Psalm 19 asks for restraint before the feared conduct gains mastery.",
+  "words": [
+    {
+      "lemma": "חָשַׂךְ",
+      "bdb": [
+        "h.gp.aa"
+      ],
+      "pos": "verb",
+      "gloss": "withhold, restrain, spare",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "hold back",
+          "senses": [
+            {
+              "id": "restrain-someone",
+              "gloss": "restrain someone",
+              "definition": "God tells Abimelech that he kept him from sinning. The psalmist asks God to keep his servant back from the presumptuous.",
+              "evidence": [
+                {
+                  "ref": "Gen.20.6",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.19.14"
+                }
+              ]
+            },
+            {
+              "id": "withhold-or-spare-something",
+              "gloss": "withhold or spare something",
+              "definition": "Abraham is commended for having withheld nothing, even his son. Proverbs warns against withholding the rod.",
+              "evidence": [
+                {
+                  "ref": "Gen.22.12",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Gen.22.16"
+                },
+                {
+                  "ref": "Pro.13.24"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be held back or relieved",
+          "senses": [
+            {
+              "id": "be-held-back-or",
+              "gloss": "be held back or relieved",
+              "definition": "Job says that speaking fails to relieve his pain; elsewhere the wicked are described as reserved for a day of calamity.",
+              "evidence": [
+                {
+                  "ref": "Job.16.6",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Job.21.30"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-hasakh"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-hasakh",
+      "lang": "arc",
+      "form": "חֲשַׂךְ",
+      "translit": "ḥăśak",
+      "gloss": "spare, withhold",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "חֲשַׂךְ, Targum Proverbs 13:24 and 17:27"
+        }
+      ],
+      "sounds": {
+        "ח": "ḥ"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "The sin in this root distinguishes it from the shin in the verb for growing dark."
+}

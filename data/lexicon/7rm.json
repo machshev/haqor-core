@@ -1,0 +1,193 @@
+{
+  "id": "7rm",
+  "root": "חרמ",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "gloss": "devote, ban",
+  "summary": "חרם concerns something set apart under a ban or devoted status.",
+  "words": [
+    {
+      "lemma": "חֶרְמוֹנִים",
+      "pos": "noun",
+      "gloss": "Hermons",
+      "bdb": [
+        "h.fv.af"
+      ],
+      "senses": [
+        {
+          "id": "hermons",
+          "gloss": "Hermons",
+          "definition": "The Hermon heights named in the psalm.",
+          "evidence": [
+            {
+              "ref": "Psa.42.7",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חָרַם",
+      "pos": "verb",
+      "gloss": "ban, devote; mutilate",
+      "bdb": [
+        "h.fv.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "ban, devote",
+          "senses": [
+            {
+              "id": "devote",
+              "gloss": "devote",
+              "definition": "To devote something to destruction or sacred use.",
+              "evidence": [
+                {
+                  "ref": "Lev.27.28",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "devote, exterminate",
+          "senses": [
+            {
+              "id": "devote-to-destruction",
+              "gloss": "devote to destruction",
+              "definition": "To devote people or things to destruction under the ban.",
+              "evidence": [
+                {
+                  "ref": "Jos.10.40",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hophal",
+          "gloss": "be devoted",
+          "senses": [
+            {
+              "id": "be-devoted-to-destruction",
+              "gloss": "be devoted to destruction",
+              "definition": "To be placed under the ban and devoted to destruction.",
+              "evidence": [
+                {
+                  "ref": "Lev.27.29",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-haruma"
+      ]
+    },
+    {
+      "lemma": "חֵרֶם",
+      "pos": "noun",
+      "gloss": "devoted thing; net",
+      "bdb": [
+        "h.fv.ab",
+        "h.fw.ab"
+      ],
+      "senses": [
+        {
+          "id": "devoted-thing",
+          "gloss": "devoted thing",
+          "definition": "A thing devoted under a ban.",
+          "evidence": [
+            {
+              "ref": "Jos.6.17",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-haruma"
+      ]
+    },
+    {
+      "lemma": "חֶרְמֵשׁ",
+      "pos": "noun",
+      "gloss": "sickle",
+      "bdb": [
+        "h.fw.ac"
+      ],
+      "senses": [
+        {
+          "id": "sickle",
+          "gloss": "sickle",
+          "definition": "A curved tool for cutting grain.",
+          "evidence": [
+            {
+              "ref": "Deu.16.9",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-haruma"
+      ]
+    },
+    {
+      "lemma": "חָרַם",
+      "pos": "verb",
+      "gloss": "slit, mutilate",
+      "bdb": [
+        "h.fw.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "mutilate",
+          "senses": [
+            {
+              "id": "mutilate",
+              "gloss": "mutilate",
+              "definition": "To mutilate or make a disfiguring cut.",
+              "evidence": [
+                {
+                  "ref": "Lev.21.18",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "Drafted for Psalms 41–43 coverage.",
+  "cognates": [
+    {
+      "id": "ar-haruma",
+      "lang": "ar",
+      "form": "حَرُمَ",
+      "translit": "ḥaruma",
+      "gloss": "be sacred, inviolable",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Arabic حرم (ḥaruma), etymology compares Hebrew חֵרֶם"
+        }
+      ]
+    }
+  ],
+  "created": "2026-11-19"
+}

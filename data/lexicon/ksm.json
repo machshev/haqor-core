@@ -1,0 +1,189 @@
+{
+  "id": "ksm",
+  "root": "כסמ",
+  "status": "draft",
+  "updated": "2026-11-18",
+  "tags": [
+    "food",
+    "plants"
+  ],
+  "gloss": "trim; a grain, traditionally spelt; gnaw away",
+  "summary": "Ezekiel uses the verb twice in a rule for priests’ hair. The grain name occurs in descriptions of the Egyptian crops, a farmer’s sowing and Ezekiel’s bread. A four-consonant verb describes what a boar does to a vine.",
+  "words": [
+    {
+      "lemma": "כָּסַם",
+      "pos": "verb",
+      "bdb": [
+        "k.ck.aa"
+      ],
+      "gloss": "trim",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "trim",
+          "senses": [
+            {
+              "id": "trim",
+              "gloss": "trim",
+              "definition": "To shorten hair by cutting. Priests are to keep their hair trimmed between the extremes of shaving and letting it grow loose.",
+              "evidence": [
+                {
+                  "ref": "Ezk.44.20",
+                  "role": "defining",
+                  "note": "The infinitive absolute and finite verb repeat the instruction to trim the hair of their heads."
+                }
+              ],
+              "cognate_ids": [
+                "akk-cut",
+                "akk-chopped",
+                "akk-cutting"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "כֻּסֶּמֶת",
+      "pos": "noun",
+      "gender": "f",
+      "bdb": [
+        "k.ck.ab"
+      ],
+      "gloss": "spelt or emmer",
+      "senses": [
+        {
+          "id": "spelt-or-emmer",
+          "gloss": "spelt or emmer",
+          "definition": "A cereal sown as a distinct crop and used for bread.",
+          "evidence": [
+            {
+              "ref": "Exo.9.32",
+              "role": "defining",
+              "note": "It survives the hail with the wheat because both crops mature later than the barley and flax."
+            },
+            {
+              "ref": "Isa.28.25",
+              "role": "defining",
+              "note": "The farmer gives this crop a place at the field’s edge."
+            },
+            {
+              "ref": "Ezk.4.9",
+              "role": "defining",
+              "note": "The plural כֻּסְּמִים closes the list of ingredients Ezekiel mixes for bread."
+            }
+          ],
+          "cognate_ids": [
+            "ug-grain"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "כִּרְסֵם",
+      "pos": "verb",
+      "bdb": [
+        "k.ck.ac"
+      ],
+      "gloss": "gnaw away",
+      "stems": [
+        {
+          "stem": "piel",
+          "gloss": "gnaw away",
+          "senses": [
+            {
+              "id": "gnaw-away",
+              "gloss": "gnaw away",
+              "definition": "To damage a plant by eating it. The boar attacks the exposed vine that represents Israel.",
+              "evidence": [
+                {
+                  "ref": "Psa.80.14",
+                  "role": "defining",
+                  "note": "The boar from the forest ravages the vine while other wild creatures feed on it."
+                }
+              ],
+              "cognate_ids": [
+                "arc-nibble"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-cut",
+      "lang": "akk",
+      "form": "kasāmu",
+      "translit": "kasāmu",
+      "gloss": "cut up",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000097870, including the finite form iksimā"
+        }
+      ]
+    },
+    {
+      "id": "akk-chopped",
+      "lang": "akk",
+      "form": "kasmu",
+      "translit": "kasmu",
+      "gloss": "chopped",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000025890, Middle Assyrian adjective"
+        }
+      ]
+    },
+    {
+      "id": "akk-cutting",
+      "lang": "akk",
+      "form": "kismu",
+      "translit": "kismu",
+      "gloss": "a cutting",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000098790, noun, also used of a growth of leeks"
+        }
+      ]
+    },
+    {
+      "id": "ug-grain",
+      "lang": "uga",
+      "form": "𐎋𐎒𐎎",
+      "translit": "ksm",
+      "gloss": "spelt or emmer",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "dulat-2015",
+          "locator": "s.v. ksm; Watson, A Botanical Snapshot of Ugarit (2004), p. 122, ksm and kśmn, including KTU 1.39:9 and 4.269:4, 20"
+        }
+      ]
+    },
+    {
+      "id": "arc-nibble",
+      "lang": "arc",
+      "form": "קַרְסֵם",
+      "translit": "qarsēm",
+      "gloss": "bite, nibble",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "S02126, Palestinian Targum to Deut 28:38"
+        }
+      ],
+      "note": "The Aramaic form begins with qoph where the Hebrew psalm has kaph."
+    }
+  ],
+  "doctrine": [],
+  "note": "The three grain passages do not distinguish spelt from emmer. The agricultural noun’s derivation from the clipping verb is uncertain, as is the historical relationship of the psalm’s four-consonant verb to כסם."
+}

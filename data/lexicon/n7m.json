@@ -1,0 +1,225 @@
+{
+  "id": "n7m",
+  "root": "נחמ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "psalms-21-30"
+  ],
+  "gloss": "comfort",
+  "summary": "The root turns between grief and comfort. A person may grieve or relent, while the piel gives comfort and the passive stems receive it. Psalm 23 places comfort in Yahweh’s shepherding presence.",
+  "words": [
+    {
+      "lemma": "נָחַם",
+      "bdb": [
+        "n.cr.aa"
+      ],
+      "pos": "verb",
+      "gloss": "comfort",
+      "stems": [
+        {
+          "stem": "niphal",
+          "gloss": "regret, relent, be consoled",
+          "senses": [
+            {
+              "id": "regret-relent",
+              "gloss": "regret, relent",
+              "definition": "Yahweh grieves over having made humanity and relents concerning announced disaster after Moses intercedes.",
+              "evidence": [
+                {
+                  "ref": "Gen.6.6",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Exo.32.14"
+                }
+              ]
+            },
+            {
+              "id": "be-consoled",
+              "gloss": "be consoled",
+              "definition": "Isaac is comforted after his mother’s death.",
+              "evidence": [
+                {
+                  "ref": "Gen.24.67",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "comfort",
+          "senses": [
+            {
+              "id": "comfort",
+              "gloss": "comfort",
+              "definition": "Joseph speaks to his brothers’ hearts to comfort them. The shepherd’s staff and rod reassure the psalmist.",
+              "evidence": [
+                {
+                  "ref": "Gen.50.21",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.23.4"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be comforted",
+          "senses": [
+            {
+              "id": "be-comforted",
+              "gloss": "be comforted",
+              "definition": "Yahweh addresses the afflicted city that has been tossed about and has received no comfort.",
+              "evidence": [
+                {
+                  "ref": "Isa.54.11",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpael",
+          "gloss": "seek comfort, console oneself",
+          "senses": [
+            {
+              "id": "seek-comfort-console-oneself",
+              "gloss": "seek comfort, console oneself",
+              "definition": "Jacob refuses to be comforted for Joseph.",
+              "evidence": [
+                {
+                  "ref": "Gen.37.35",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "נֶחָמָה",
+      "bdb": [
+        "n.cr.ai"
+      ],
+      "pos": "noun",
+      "gloss": "comfort",
+      "senses": [
+        {
+          "id": "comfort-2",
+          "gloss": "comfort",
+          "definition": "Isaiah speaks of comfort after mourning.",
+          "evidence": [
+            {
+              "ref": "Isa.40.1",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "תַּנְחוּם",
+      "bdb": [
+        "n.cr.ak"
+      ],
+      "pos": "noun",
+      "gloss": "consolation",
+      "senses": [
+        {
+          "id": "consolation",
+          "gloss": "consolation",
+          "definition": "Yahweh’s consolations gladden the speaker when anxiety multiplies.",
+          "evidence": [
+            {
+              "ref": "Psa.94.19",
+              "role": "defining"
+            },
+            {
+              "ref": "Isa.66.11"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "נִחוּם",
+      "bdb": [
+        "n.cr.af"
+      ],
+      "pos": "noun",
+      "gloss": "comfort, compassion",
+      "senses": [
+        {
+          "id": "comfort-compassion",
+          "gloss": "comfort, compassion",
+          "definition": "Yahweh promises comfort to mourners. Hosea speaks of compassion stirring within.",
+          "evidence": [
+            {
+              "ref": "Isa.57.18",
+              "role": "defining"
+            },
+            {
+              "ref": "Hos.11.8"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "נֹחַם",
+      "bdb": [
+        "n.cr.ac"
+      ],
+      "pos": "noun",
+      "gloss": "compassion, change of purpose",
+      "senses": [
+        {
+          "id": "compassion-change-of-purpose",
+          "gloss": "compassion, change of purpose",
+          "definition": "In the oracle against Ephraim, compassion or a change of purpose is hidden from sight.",
+          "evidence": [
+            {
+              "ref": "Hos.13.14",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "נוחמא",
+      "pos": "noun",
+      "gloss": "resurrection",
+      "senses": [
+        {
+          "id": "resurrection",
+          "gloss": "resurrection",
+          "definition": "Martha says her brother will rise in the resurrection on the last day.",
+          "evidence": [
+            {
+              "ref": "Jhn.11.24",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "lang": "syc"
+    }
+  ],
+  "cognates": [],
+  "doctrine": [],
+  "note": "No Qal is needed for Exodus 32:14: וַיִּנָּחֶם is niphal. The Peshitta noun naming resurrection has a distinct use; the link to consolation is uncertain."
+}

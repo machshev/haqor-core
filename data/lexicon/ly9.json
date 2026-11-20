@@ -1,0 +1,253 @@
+{
+  "id": "ly9",
+  "root": "ליצ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "speech",
+    "wisdom"
+  ],
+  "gloss": "scoff, interpret",
+  "summary": "The scoffer takes pleasure in mockery and resents the person who corrects him. Another use of the verb describes an interpreter who speaks between people, as in Joseph’s conversation with his brothers.",
+  "words": [
+    {
+      "lemma": "לִיץ",
+      "bdb": [
+        "l.bn.aa",
+        "l.bc.ab"
+      ],
+      "pos": "verb",
+      "gloss": "scoff, speak for someone",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "scoff",
+          "senses": [
+            {
+              "gloss": "scoff",
+              "definition": "Treat correction with contempt. Proverbs contrasts the person who bears the consequences of scoffing with the one who gains from wisdom.",
+              "evidence": [
+                {
+                  "ref": "Pro.9.12",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Pro.1.22"
+                },
+                {
+                  "ref": "Psa.1.1"
+                }
+              ],
+              "id": "scoff",
+              "kin": [
+                "mockery"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "mock, interpret or represent",
+          "senses": [
+            {
+              "id": "mock",
+              "gloss": "mock",
+              "definition": "Belittle another person or make light of what is right. James and Peter take up the contrast between the proud and the humble in Proverbs.",
+              "evidence": [
+                {
+                  "ref": "Psa.119.51",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Pro.19.28"
+                },
+                {
+                  "ref": "Pro.3.34"
+                },
+                {
+                  "ref": "Jas.4.6"
+                },
+                {
+                  "ref": "1Pe.5.5"
+                }
+              ],
+              "kin": [
+                "mockery"
+              ]
+            },
+            {
+              "id": "interpret-or-speak-on",
+              "gloss": "interpret or speak on behalf of another",
+              "definition": "Joseph’s brothers speak through an interpreter because they assume Joseph cannot understand them. In Job a messenger explains a man’s duty to him.",
+              "evidence": [
+                {
+                  "ref": "Gen.42.23",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Job.33.23"
+                },
+                {
+                  "ref": "Isa.43.27"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "polel",
+          "gloss": "scoff",
+          "senses": [
+            {
+              "id": "join-in-mockery",
+              "gloss": "join in mockery",
+              "definition": "Hosea pictures the king extending his hand to scoffers while the princes drink.",
+              "evidence": [
+                {
+                  "ref": "Hos.7.5",
+                  "role": "defining"
+                }
+              ],
+              "kin": [
+                "mockery"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpolel",
+          "gloss": "act scornfully",
+          "senses": [
+            {
+              "id": "engage-in-mockery",
+              "gloss": "engage in mockery",
+              "definition": "Isaiah urges the rulers who boast of their security to give up their mocking response to his warning.",
+              "evidence": [
+                {
+                  "ref": "Isa.28.22",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Isa.28.14",
+                  "to": "Isa.28.15"
+                }
+              ],
+              "kin": [
+                "mockery"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "לֵץ",
+      "bdb": [
+        "l.bw.ab"
+      ],
+      "pos": "noun",
+      "gloss": "scoffer",
+      "senses": [
+        {
+          "id": "one-who-scorns-correction",
+          "gloss": "one who scorns correction",
+          "definition": "A scoffer responds to correction with hatred, where a wise person responds with love. Driving the scoffer away brings quarrels to an end.",
+          "evidence": [
+            {
+              "ref": "Pro.9.7",
+              "to": "Pro.9.8",
+              "role": "defining"
+            },
+            {
+              "ref": "Pro.13.1"
+            },
+            {
+              "ref": "Pro.21.24"
+            },
+            {
+              "ref": "Pro.22.10"
+            },
+            {
+              "ref": "Psa.1.1"
+            }
+          ],
+          "kin": [
+            "scoff",
+            "mockery"
+          ]
+        }
+      ],
+      "gender": "m",
+      "summary": "This form functions as a noun. The corpus counts the plural in Psalm 1 and most other examples under the verb."
+    },
+    {
+      "lemma": "לָצוֹן",
+      "bdb": [
+        "l.bn.ab"
+      ],
+      "pos": "noun",
+      "gloss": "mockery",
+      "senses": [
+        {
+          "gloss": "scornful speech or conduct",
+          "definition": "The behavior that scoffers take pleasure in stirs up a city. The wise can turn away its anger.",
+          "evidence": [
+            {
+              "ref": "Pro.1.22",
+              "role": "defining"
+            },
+            {
+              "ref": "Pro.29.8"
+            },
+            {
+              "ref": "Isa.28.14"
+            }
+          ],
+          "id": "mockery",
+          "kin": [
+            "scoff"
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "מְלִיצָה",
+      "bdb": [
+        "l.bn.ac",
+        "m.cc.ad"
+      ],
+      "pos": "noun",
+      "gloss": "figurative saying, taunt",
+      "senses": [
+        {
+          "id": "figurative-saying",
+          "gloss": "figurative saying",
+          "definition": "A saying whose point requires interpretation, paired with a proverb and the riddles of the wise.",
+          "evidence": [
+            {
+              "ref": "Pro.1.6",
+              "role": "defining"
+            }
+          ]
+        },
+        {
+          "id": "taunting-saying",
+          "gloss": "taunting saying",
+          "definition": "The peoples take up a saying against their conqueror that exposes his plunder and asks how long he can keep it.",
+          "evidence": [
+            {
+              "ref": "Hab.2.6",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    }
+  ],
+  "cognates": [],
+  "doctrine": [],
+  "note": "The connection between speaking scornfully and interpreting for another person remains uncertain. Job 16:20 can be read of either advocacy or mockery. The Arabic verb in Lane at p. 2681 concerns glancing or turning aside, and Akkadian elēṣu in Oracc concerns rejoicing. Neither establishes the sense or older consonant of the Hebrew. The productive key l.bn.aa counts both verbs and nominal scoffers."
+}

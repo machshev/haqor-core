@@ -1,0 +1,203 @@
+{
+  "id": "7p9",
+  "root": "חפצ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "desire",
+    "pleasure"
+  ],
+  "gloss": "delight, desire, purpose",
+  "summary": "A person’s delight is what he gladly returns to, as the reader of Psalm 1 returns to Yahweh’s instruction. The same noun can name a purpose that is carried out or an affair with its appointed time. Job uses a similarly spelled verb for a movement of the tail.",
+  "words": [
+    {
+      "lemma": "חָפֵץ",
+      "bdb": [
+        "h.eq.aa"
+      ],
+      "pos": "verb",
+      "gloss": "take pleasure in, desire",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "delight in, wish",
+          "senses": [
+            {
+              "gloss": "delight in someone or something",
+              "definition": "The speaker recognizes Yahweh’s favor in his rescue from enemies. The person who fears Yahweh takes pleasure in his commands.",
+              "evidence": [
+                {
+                  "ref": "Psa.18.20",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.41.12"
+                },
+                {
+                  "ref": "Psa.112.1"
+                }
+              ],
+              "id": "delight-in",
+              "kin": [
+                "pleasure"
+              ]
+            },
+            {
+              "id": "wish-or-choose-to",
+              "gloss": "wish or choose to do something",
+              "definition": "What one desires can be expressed in a choice or deed. Yahweh accomplishes what he desires and sends his word to do his will.",
+              "evidence": [
+                {
+                  "ref": "Isa.55.11",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Isa.53.10"
+                },
+                {
+                  "ref": "Psa.115.3"
+                }
+              ],
+              "kin": [
+                "purpose"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חֵפֶץ",
+      "bdb": [
+        "h.eq.ac"
+      ],
+      "pos": "noun",
+      "gloss": "delight, purpose, affair",
+      "senses": [
+        {
+          "gloss": "pleasure or the object of pleasure",
+          "definition": "Psalm 1 shows the reader’s delight in instruction by his returning to it day and night. In Psalm 16 the speaker locates his delight among the holy ones.",
+          "evidence": [
+            {
+              "ref": "Psa.1.2",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.16.3"
+            }
+          ],
+          "id": "pleasure",
+          "kin": [
+            "delight-in"
+          ]
+        },
+        {
+          "gloss": "purpose, undertaking or affair",
+          "definition": "The purpose of Yahweh prospers in his servant’s hand. Ecclesiastes uses the noun more broadly of an affair that has its appointed time.",
+          "evidence": [
+            {
+              "ref": "Isa.53.10",
+              "role": "defining"
+            },
+            {
+              "ref": "Ecc.3.1"
+            },
+            {
+              "ref": "Ecc.3.17"
+            }
+          ],
+          "id": "purpose"
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "חָפֵץ",
+      "bdb": [
+        "h.eq.ab"
+      ],
+      "pos": "adjective",
+      "gloss": "desirous, taking pleasure in",
+      "senses": [
+        {
+          "id": "disposed-to-desire-or",
+          "gloss": "disposed to desire or welcome something",
+          "definition": "Psalm 34 asks who desires life, then restates the question in terms of loving days in which to see good.",
+          "evidence": [
+            {
+              "ref": "Psa.34.13",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.5.5"
+            },
+            {
+              "ref": "Psa.35.27"
+            },
+            {
+              "ref": "Psa.40.15"
+            }
+          ],
+          "kin": [
+            "pleasure"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חָפַץ",
+      "bdb": [
+        "h.er.aa"
+      ],
+      "pos": "verb",
+      "gloss": "bend or move",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "move the tail",
+          "senses": [
+            {
+              "id": "move-or-bend-the",
+              "gloss": "move or bend the tail",
+              "definition": "Behemoth moves its tail like a cedar. The comparison evokes the strength of the movement, though the precise posture is uncertain.",
+              "evidence": [
+                {
+                  "ref": "Job.40.17",
+                  "role": "defining"
+                }
+              ],
+              "cognate_ids": [
+                "ar-khafada"
+              ]
+            }
+          ]
+        }
+      ],
+      "summary": "This physical movement is attested in a single description. The Arabic comparison suggests lowering or bending."
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-khafada",
+      "lang": "ar",
+      "form": "خَفَضَ",
+      "translit": "ḫafaḍa",
+      "gloss": "lower, depress",
+      "relation": "possible",
+      "sounds": {
+        "ח": "ḫ",
+        "צ": "ṣ́"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 773, art. خفض, n11111",
+          "note": "The contrary is to raise something."
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "Most surfaces counted for bending are shared with the much commoner verb of delight. Job 40:17 is the evidence for the physical sense. The Arabic comparison bears only on this use. Ordinary instances of בָּהּ are also counted under the personal name by surface spelling."
+}

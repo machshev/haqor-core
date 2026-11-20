@@ -1,0 +1,343 @@
+{
+  "id": "y7m",
+  "root": "יחמ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "heat",
+    "anger"
+  ],
+  "gloss": "grow hot, burn with anger",
+  "summary": "A pot grows hot on the coals, and two people lying together keep warm. Jacob’s flocks come into heat and bear young. Anger, too, can grow hot enough to drive a person to violence.",
+  "words": [
+    {
+      "lemma": "חֵמָה",
+      "bdb": [
+        "j.bg.ab"
+      ],
+      "pos": "noun",
+      "gloss": "wrath, venom",
+      "senses": [
+        {
+          "gloss": "wrath, fury",
+          "definition": "News can make the king flare up in anger. The psalmist asks Yahweh to spare him discipline administered in such heat.",
+          "evidence": [
+            {
+              "ref": "2Sa.11.20",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.6.2"
+            },
+            {
+              "ref": "Psa.37.8"
+            },
+            {
+              "ref": "Jer.7.20"
+            }
+          ],
+          "id": "wrath",
+          "kin": [
+            "heated"
+          ],
+          "cognate_ids": [
+            "syc-hemta"
+          ]
+        },
+        {
+          "id": "venom",
+          "gloss": "venom",
+          "definition": "Snake venom gives the image for poisonous wine. The venom of serpents is under the lips of violent men.",
+          "evidence": [
+            {
+              "ref": "Deu.32.33",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.140.4"
+            },
+            {
+              "ref": "Rom.3.13"
+            }
+          ],
+          "cognate_ids": [
+            "syc-hemta"
+          ]
+        }
+      ],
+      "gender": "f",
+      "greek": [
+        {
+          "lemma": "ὀργή",
+          "gloss": "anger, wrath",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "PSA 6:2 word 6"
+            },
+            {
+              "ref": "Eph.4.31"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "יָחַם",
+      "bdb": [
+        "j.bg.aa"
+      ],
+      "pos": "verb",
+      "gloss": "be warm, mate, conceive",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "become warm, be in heat",
+          "senses": [
+            {
+              "id": "be-warm-or-hot",
+              "gloss": "be warm or hot",
+              "definition": "Two people lying together keep warm. An empty bronze pot heats up on the coals.",
+              "evidence": [
+                {
+                  "ref": "Ecc.4.11",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Ezk.24.11"
+                },
+                {
+                  "ref": "1Ki.1.1"
+                }
+              ],
+              "cognate_ids": [
+                "arc-yecham"
+              ]
+            },
+            {
+              "gloss": "grow hot with anger",
+              "definition": "The avenger of blood pursues with his heart hot and may strike the fugitive dead.",
+              "evidence": [
+                {
+                  "ref": "Deu.19.6",
+                  "role": "defining"
+                }
+              ],
+              "id": "heated",
+              "kin": [
+                "wrath"
+              ]
+            },
+            {
+              "id": "be-in-heat-mate",
+              "gloss": "be in heat, mate",
+              "definition": "At the troughs the flocks mate and later bear their young.",
+              "evidence": [
+                {
+                  "ref": "Gen.30.38",
+                  "to": "Gen.30.39",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "mate, conceive",
+          "senses": [
+            {
+              "id": "mate-conceive",
+              "gloss": "mate, conceive",
+              "definition": "The he-goats mount the females when the flock is in heat. The psalmist speaks of his own conception by his mother.",
+              "evidence": [
+                {
+                  "ref": "Gen.31.10",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Gen.30.41"
+                },
+                {
+                  "ref": "Psa.51.7"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חֱמָא",
+      "bdb": [
+        "xj.ae.ab"
+      ],
+      "pos": "noun",
+      "gloss": "fury",
+      "senses": [
+        {
+          "id": "fury",
+          "gloss": "fury",
+          "definition": "Nebuchadnezzar summons the three men in a rage and orders the furnace heated after hearing their answer.",
+          "evidence": [
+            {
+              "ref": "Dan.3.13",
+              "role": "defining"
+            },
+            {
+              "ref": "Dan.3.19"
+            }
+          ],
+          "kin": [
+            "wrath"
+          ],
+          "cognate_ids": [
+            "syc-hemta"
+          ]
+        }
+      ],
+      "lang": "arc",
+      "root": "חמא",
+      "gender": "f"
+    },
+    {
+      "lemma": "חֲמַת",
+      "pos": "verb",
+      "gloss": "become angry",
+      "stems": [
+        {
+          "stem": "ethpaal",
+          "gloss": "become furious or indignant",
+          "senses": [
+            {
+              "id": "become-furious-or-indignant",
+              "gloss": "become furious or indignant",
+              "definition": "Herod is enraged when the wise men leave without returning to him. The ruler of the synagogue is indignant at a healing on the sabbath.",
+              "evidence": [
+                {
+                  "ref": "Mat.2.16",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Luk.13.14"
+                },
+                {
+                  "ref": "Act.4.2"
+                }
+              ],
+              "kin": [
+                "wrath"
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "root": "חמת",
+      "cognate_ids": [
+        "syc-hemta"
+      ]
+    },
+    {
+      "lemma": "חֵמְתָא",
+      "pos": "noun",
+      "gloss": "anger, venom",
+      "senses": [
+        {
+          "id": "anger",
+          "gloss": "anger",
+          "definition": "Jesus looks around in anger at hardness of heart. In Nazareth the listeners are filled with fury and drive him out.",
+          "evidence": [
+            {
+              "ref": "Mrk.3.5",
+              "role": "defining"
+            },
+            {
+              "ref": "Luk.4.28",
+              "to": "Luk.4.29"
+            }
+          ],
+          "kin": [
+            "wrath"
+          ]
+        },
+        {
+          "id": "venom-2",
+          "gloss": "venom",
+          "definition": "Paul describes venom beneath the lips when he cites the psalm.",
+          "evidence": [
+            {
+              "ref": "Rom.3.13",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.140.4"
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "root": "חמת",
+      "gender": "f",
+      "cognate_ids": [
+        "syc-hemta"
+      ]
+    },
+    {
+      "lemma": "חֵמְתָנָא",
+      "pos": "adjective",
+      "gloss": "quick-tempered",
+      "senses": [
+        {
+          "id": "quick-tempered",
+          "gloss": "quick-tempered",
+          "definition": "An overseer must be someone who can be trusted with God’s household. A quick temper disqualifies him.",
+          "evidence": [
+            {
+              "ref": "Tit.1.7",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "root": "חמת",
+      "cognate_ids": [
+        "syc-hemta"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-yecham",
+      "lang": "arc",
+      "form": "יְחַם",
+      "translit": "yəḥam",
+      "gloss": "be warm",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. יְחַם, Onkelos Genesis 18:1 and Targum 2 Samuel 4:5"
+        }
+      ]
+    },
+    {
+      "id": "syc-hemta",
+      "lang": "syc",
+      "form": "ܚܡܬܐ",
+      "translit": "ḥemṯā",
+      "gloss": "heat, wrath, venom",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Classical Syriac ܚܡܬܐ, noun, etymology 2"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The identically indexed curds in Genesis 18:8 are חֶמְאָה, a dairy food. The name Jahmai is filed under חמה and its single occurrence in 1 Chronicles 7:2 gives no derivation. The relationship between יחם and חמם merits further comparison. SEDRA indexes the Syriac anger family under חמת."
+}

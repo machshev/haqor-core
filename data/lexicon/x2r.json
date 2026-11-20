@@ -1,0 +1,1364 @@
+{
+  "id": "x2r",
+  "root": "שאר",
+  "status": "draft",
+  "updated": "2026-11-18",
+  "tags": [
+    "remnant",
+    "survival",
+    "judgment",
+    "restoration",
+    "flesh",
+    "kinship",
+    "food"
+  ],
+  "gloss": "remain, be left; leave over, spare; remnant, rest; (שְׁאֵר) flesh, kin",
+  "summary": "To be what is left when the rest is gone: the niphal is to remain or be left, as only Noah was left in the ark and not one of Pharaoh's army remained; the hiphil is to leave over or spare, most often in “he left no survivor”, and of Yahweh who “will leave” seven thousand in Israel and a humble people in Zion. The nouns שְׁאָר and שְׁאֵרִית are the remnant, above all the remnant of Israel that survives judgment, returns, is gathered and is ruled by Yahweh on Mount Zion, and also simply “the rest” of a people or a thing; Isaiah's son is named שְׁאָר יָשׁוּב, “a remnant will return”. Arabic saʾira “remain” and suʾr “remainder” and the Aramaic verb “leave over” are the same root. A second noun of the same letters, שְׁאֵר, is flesh: the body, meat as food, and one's own flesh, a near blood relation, as Ugaritic šir, Akkadian šīru and Punic šʾr “flesh”; how it is related to “remain” is not known.",
+  "words": [
+    {
+      "lemma": "שָׁאַר",
+      "pos": "verb",
+      "gloss": "remain, be left; leave over, spare",
+      "bdb": [
+        "v.ak.aa"
+      ],
+      "cognate_ids": [
+        "ar-saira",
+        "arc-shear",
+        "uga-shar"
+      ],
+      "summary": "133 tokens: niphal 94, hiphil 38, qal once. What remains is always measured against what has gone: those who die, flee or are taken, the plagues that left nothing, the years already past.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "remain",
+          "senses": [
+            {
+              "id": "remain-be-still-to",
+              "gloss": "remain, be still to come",
+              "definition": "Once: one son of Jesse remained besides those already passed before Samuel.",
+              "evidence": [
+                {
+                  "ref": "1Sa.16.11",
+                  "role": "defining",
+                  "note": "“Are the young men complete?” “The youngest still remains (עוֹד שָׁאַר), and behold, he is keeping the sheep.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "remain, be left, survive",
+          "senses": [
+            {
+              "id": "niphal-survive",
+              "gloss": "be left alive, survive",
+              "definition": "Of people: to be left when the rest have died, fled or been carried away; the survivors are הַנִּשְׁאָרִים, “those left”.",
+              "evidence": [
+                {
+                  "ref": "Gen.7.23",
+                  "role": "defining",
+                  "note": "Every living thing on the face of the ground was wiped from the earth, “and only Noah was left (וַיִּשָּׁאֶר), and those with him in the ark”."
+                },
+                {
+                  "ref": "Exo.14.28",
+                  "role": "defining",
+                  "note": "The waters covered all Pharaoh's army; “not so much as one of them remained”."
+                },
+                {
+                  "ref": "Rut.1.3",
+                  "note": "Elimelech died, “and she was left, she and her two sons”; again at Rut 1:5, without sons or husband."
+                },
+                {
+                  "ref": "Rut.1.5"
+                },
+                {
+                  "ref": "Gen.32.9",
+                  "note": "If Esau strikes one camp, “the camp that is left will escape (לִפְלֵיטָה)”."
+                },
+                {
+                  "ref": "Jdg.7.3",
+                  "note": "Twenty-two thousand turned back, “and ten thousand remained”."
+                },
+                {
+                  "ref": "Isa.4.3",
+                  "role": "defining",
+                  "note": "“He who is left (הַנִּשְׁאָר) in Zion and he who remains (הַנּוֹתָר) in Jerusalem will be called holy, everyone written for life in Jerusalem.”"
+                },
+                {
+                  "ref": "Isa.24.6",
+                  "note": "A curse devours the earth, its inhabitants burn, “and few men are left”."
+                },
+                {
+                  "ref": "Isa.37.31",
+                  "note": "“The survival of the house of Judah that is left will again take root downward and bear fruit upward.”"
+                },
+                {
+                  "ref": "Ezk.9.8",
+                  "note": "While the slayers struck, “I was left (וְנֵאשֲׁאַר אָנִי)”: Ezekiel alone, crying for the remnant of Israel."
+                },
+                {
+                  "ref": "Ezk.6.12",
+                  "note": "Far off by plague, near by sword, “and he who is left and preserved will die by famine”."
+                },
+                {
+                  "ref": "Neh.1.3",
+                  "note": "“Those who are left, who were left from the captivity there in the province, are in great trouble.”"
+                },
+                {
+                  "ref": "Ezr.9.15",
+                  "note": "“We are left as survivors (נִשְׁאַרְנוּ פְלֵיטָה), as at this day.”"
+                },
+                {
+                  "ref": "Hag.2.3",
+                  "note": "“Who is left among you who saw this house in its former glory?”"
+                },
+                {
+                  "ref": "Isa.11.11",
+                  "note": "“The remnant of his people who will be left (אֲשֶׁר יִשָּׁאֵר) from Assyria and from Egypt …”"
+                }
+              ]
+            },
+            {
+              "id": "be-left-over-remain",
+              "gloss": "be left over, remain (of things)",
+              "definition": "Of land, years, livestock, strength or food: to be left over, still there after the rest is used, taken or gone.",
+              "evidence": [
+                {
+                  "ref": "Exo.10.26",
+                  "role": "defining",
+                  "note": "“Our livestock also will go with us; not a hoof shall be left behind.”"
+                },
+                {
+                  "ref": "Lev.25.52",
+                  "role": "defining",
+                  "note": "“If only a few years remain until the year of jubilee”, the price of redemption is reckoned by them."
+                },
+                {
+                  "ref": "Jos.13.1",
+                  "note": "“There remains very much land to possess.”"
+                },
+                {
+                  "ref": "Dan.10.8",
+                  "note": "“I was left alone … and no strength remained in me.”"
+                },
+                {
+                  "ref": "1Sa.9.24",
+                  "note": "“Behold what was kept back (הַנִּשְׁאָר); set it before you and eat”: the portion reserved for Saul."
+                },
+                {
+                  "ref": "Isa.17.6",
+                  "note": "“Gleanings will be left in it, as at the beating of an olive tree, two or three berries at the top of the bough.”"
+                },
+                {
+                  "ref": "Deu.3.11",
+                  "note": "“Only Og king of Bashan remained of the rest (מִיֶּתֶר) of the Rephaim.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "leave over, leave alive, spare",
+          "senses": [
+            {
+              "id": "hiphil-leave-alive",
+              "gloss": "leave alive, spare",
+              "definition": "To leave people alive when the rest are struck down. Most often denied in conquest, “he left no survivor (שָׂרִיד)”; but Yahweh leaves a remnant for himself.",
+              "evidence": [
+                {
+                  "ref": "Deu.2.34",
+                  "role": "defining",
+                  "note": "“We devoted every city, men, women and children; we left no survivor (לֹא הִשְׁאַרְנוּ שָׂרִיד).”"
+                },
+                {
+                  "ref": "Jos.10.28",
+                  "note": "“He devoted every soul in it; he left no survivor.” The phrase recurs through Jos 10:30–40."
+                },
+                {
+                  "ref": "Jos.11.14",
+                  "note": "“They did not leave any that breathed.”"
+                },
+                {
+                  "ref": "1Ki.15.29",
+                  "note": "Baasha “did not leave to Jeroboam any that breathed, until he had destroyed him”."
+                },
+                {
+                  "ref": "1Ki.19.18",
+                  "role": "defining",
+                  "note": "“I will leave (וְהִשְׁאַרְתִּי) in Israel seven thousand, all the knees that have not bowed to Baal.” Quoted in Rom 11:4."
+                },
+                {
+                  "ref": "Rom.11.4",
+                  "role": "defining",
+                  "note": "“I have reserved (κατέλιπον) for myself seven thousand men”; and Rom 11:5, “so at this present time also there is a remnant (λεῖμμα) according to the election of grace”."
+                },
+                {
+                  "ref": "Rom.11.5"
+                },
+                {
+                  "ref": "Zep.3.12",
+                  "role": "defining",
+                  "note": "“I will leave in your midst a humble and lowly people, and they will take refuge in the name of Yahweh.”"
+                },
+                {
+                  "ref": "Jer.50.20",
+                  "note": "“I will pardon those whom I leave (לַאֲשֶׁר אַשְׁאִיר).”"
+                },
+                {
+                  "ref": "Ezr.9.8",
+                  "note": "Grace from Yahweh “to leave us survivors (לְהַשְׁאִיר לָנוּ פְּלֵיטָה)”."
+                },
+                {
+                  "ref": "Amo.5.3",
+                  "note": "“The city that went out a thousand will have a hundred left, and that which went out a hundred will have ten left.”"
+                },
+                {
+                  "ref": "Jer.52.16",
+                  "note": "Nebuzaradan left some of the poorest of the land as vinedressers and farmers."
+                }
+              ]
+            },
+            {
+              "id": "leave-over-leave-behind",
+              "gloss": "leave over, leave behind (things)",
+              "definition": "To leave something over: what the hail left, the gleanings grape-gatherers leave, food an enemy does not leave; and Yahweh who may “leave a blessing behind him”.",
+              "evidence": [
+                {
+                  "ref": "Exo.10.12",
+                  "role": "defining",
+                  "note": "The locusts are to eat “all that the hail has left (הִשְׁאִיר)”."
+                },
+                {
+                  "ref": "Oba.1.5",
+                  "role": "defining",
+                  "note": "“If grape-gatherers came to you, would they not leave gleanings?”"
+                },
+                {
+                  "ref": "Jdg.6.4",
+                  "note": "Midian destroyed the produce of the land “and left no sustenance in Israel”."
+                },
+                {
+                  "ref": "Deu.28.51",
+                  "note": "The enemy “will not leave you grain, new wine or oil”."
+                },
+                {
+                  "ref": "Jol.2.14",
+                  "note": "“Who knows whether he will turn and relent, and leave a blessing behind him (וְהִשְׁאִיר אַחֲרָיו בְּרָכָה)?”"
+                },
+                {
+                  "ref": "Jer.49.9"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "καταλείπω",
+          "gloss": "leave behind; reserve",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "1Ki.19.18, הִשְׁאַרְתִּי → καταλείψεις; καταλείπω renders שָׁאַר ×28, with its passive forms (κατελείφθησαν, καταλειφθέντες…) for the niphal"
+            },
+            {
+              "ref": "Rom.11.4",
+              "role": "defining",
+              "note": "“I have reserved (κατέλιπον) for myself seven thousand men”: Paul quoting 1Ki 19:18, the hiphil of Yahweh leaving a remnant."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "יָתַר",
+            "note": "“Be left over”: הַנִּשְׁאָר and הַנּוֹתָר side by side of the survivors in Zion.",
+            "evidence": [
+              {
+                "ref": "Isa.4.3",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.3.11"
+              }
+            ]
+          },
+          {
+            "lemma": "פְּלֵיטָה",
+            "note": "“Escape, survivors”: those left are those who escaped.",
+            "evidence": [
+              {
+                "ref": "Ezr.9.15",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.32.9"
+              },
+              {
+                "ref": "Isa.37.31"
+              },
+              {
+                "ref": "Ezr.9.8"
+              }
+            ]
+          }
+        ],
+        "opposites": [],
+        "phrases": [
+          {
+            "phrase": "לֹא הִשְׁאִיר שָׂרִיד",
+            "gloss": "he left no survivor",
+            "evidence": [
+              {
+                "ref": "Deu.2.34",
+                "role": "defining"
+              },
+              {
+                "ref": "Jos.10.28"
+              },
+              {
+                "ref": "Jos.10.30"
+              },
+              {
+                "ref": "Jos.10.33"
+              },
+              {
+                "ref": "Jos.10.37"
+              },
+              {
+                "ref": "Jos.10.39"
+              },
+              {
+                "ref": "Jos.10.40"
+              },
+              {
+                "ref": "Jos.11.8"
+              },
+              {
+                "ref": "Num.21.35"
+              },
+              {
+                "ref": "Deu.3.3"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "שְׁאֵרִית",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "remnant, remainder, rest",
+      "bdb": [
+        "v.ak.ad"
+      ],
+      "cognate_ids": [
+        "ar-sur",
+        "arc-shaara"
+      ],
+      "summary": "66 tokens, above all in the prophets: the remnant of a people that survives a judgment, and of Israel the remnant Yahweh will gather and save. Once spelled without alef, שֵׁרִית (1Ch 12:39).",
+      "senses": [
+        {
+          "id": "remnant-survivors",
+          "gloss": "remnant, survivors",
+          "definition": "The part of a people left after war, famine, exile or judgment has taken the rest; set beside פְּלֵיטָה “escape” and opposed to a full end.",
+          "evidence": [
+            {
+              "ref": "Gen.45.7",
+              "role": "defining",
+              "note": "“God sent me before you to preserve for you a remnant on the earth, and to keep you alive by a great escape (לִפְלֵיטָה).”"
+            },
+            {
+              "ref": "Ezr.9.14",
+              "role": "defining",
+              "note": "“Would you not be angry with us until you had consumed us, so that there would be no remnant (שְׁאֵרִית) and no survivor (פְלֵיטָה)?”"
+            },
+            {
+              "ref": "Ezk.11.13",
+              "role": "defining",
+              "note": "“Ah, Lord Yahweh! Will you make a full end (כָלָה) of the remnant of Israel?”"
+            },
+            {
+              "ref": "2Ki.19.4",
+              "note": "“Lift up a prayer for the remnant that is left (הַנִּמְצָאָה).”"
+            },
+            {
+              "ref": "Isa.37.32",
+              "note": "“Out of Jerusalem shall go a remnant, and survivors out of Mount Zion; the zeal of Yahweh of Armies will do this.”"
+            },
+            {
+              "ref": "Jer.40.15",
+              "note": "“Why should he kill you, so that … the remnant of Judah perish?”"
+            },
+            {
+              "ref": "Jer.44.14",
+              "note": "“None of the remnant of Judah who have come to sojourn in the land of Egypt shall escape or survive.”"
+            },
+            {
+              "ref": "Jer.15.9",
+              "note": "“The rest of them I will give to the sword.”"
+            },
+            {
+              "ref": "Amo.1.8",
+              "note": "“The remnant of the Philistines will perish.”"
+            },
+            {
+              "ref": "2Ki.21.14",
+              "note": "“I will forsake the remnant of my inheritance and give them into the hand of their enemies.”"
+            }
+          ],
+          "senses": [
+            {
+              "id": "remnant-of-israel",
+              "gloss": "the remnant of Israel, gathered and saved",
+              "definition": "In the prophets, the remnant of Israel that Yahweh pardons, gathers from all the lands, brings back to their pasture, makes a strong nation and reigns over on Mount Zion.",
+              "evidence": [
+                {
+                  "ref": "Jer.23.3",
+                  "role": "defining",
+                  "note": "“I will gather the remnant of my flock out of all the lands where I have driven them, and bring them back to their pasture, and they will be fruitful and multiply.”"
+                },
+                {
+                  "ref": "Mic.2.12",
+                  "role": "defining",
+                  "note": "“I will surely gather Jacob, all of you; I will surely assemble the remnant of Israel.”"
+                },
+                {
+                  "ref": "Mic.4.7",
+                  "role": "defining",
+                  "note": "“I will make the lame a remnant, and the cast off a strong nation, and Yahweh will reign over them in Mount Zion from now and forever.”"
+                },
+                {
+                  "ref": "Mic.5.6",
+                  "note": "“The remnant of Jacob will be in the midst of many peoples like dew from Yahweh.”"
+                },
+                {
+                  "ref": "Mic.5.7",
+                  "note": "“… like a lion among the beasts of the forest.”"
+                },
+                {
+                  "ref": "Mic.7.18",
+                  "note": "“Who is a God like you, pardoning iniquity and passing over transgression for the remnant of his inheritance?”"
+                },
+                {
+                  "ref": "Zep.3.13",
+                  "role": "defining",
+                  "note": "“The remnant of Israel will do no unrighteousness and speak no lies … they will feed and lie down, and none will make them afraid.”"
+                },
+                {
+                  "ref": "Zep.2.7"
+                },
+                {
+                  "ref": "Zep.2.9",
+                  "note": "“The remnant of my people will plunder them, and the rest (יֶתֶר) of my nation will possess them.”"
+                },
+                {
+                  "ref": "Jer.31.7",
+                  "note": "“Yahweh, save your people, the remnant of Israel.”"
+                },
+                {
+                  "ref": "Isa.46.3",
+                  "note": "“House of Jacob, and all the remnant of the house of Israel, borne by me from the womb.”"
+                },
+                {
+                  "ref": "Amo.5.15",
+                  "note": "“It may be that Yahweh God of Armies will be gracious to the remnant of Joseph.”"
+                },
+                {
+                  "ref": "Zec.8.6"
+                },
+                {
+                  "ref": "Zec.8.11"
+                },
+                {
+                  "ref": "Zec.8.12",
+                  "note": "“I will cause the remnant of this people to possess all these things.”"
+                },
+                {
+                  "ref": "Hag.1.12",
+                  "note": "Zerubbabel, Joshua “and all the remnant of the people obeyed the voice of Yahweh”: the returned exiles."
+                },
+                {
+                  "ref": "Amo.9.12",
+                  "role": "defining",
+                  "note": "“That they may possess the remnant of Edom and all the nations who are called by my name”; read by James in Act 15:17 as “the remnant of men” seeking the Lord."
+                },
+                {
+                  "ref": "Act.15.17",
+                  "note": "“That the remnant (οἱ κατάλοιποι) of men may seek the Lord, and all the Gentiles upon whom my name is called”: James's quotation of Amo 9:11–12 at the council in Jerusalem."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "remainder-of-thing",
+          "gloss": "remainder, rest (of a thing)",
+          "definition": "What is left of a thing when part of it is used: the rest of a tree after the fire, the rest of the wrath, the rest of the people.",
+          "evidence": [
+            {
+              "ref": "Isa.44.17",
+              "role": "defining",
+              "note": "Half the wood he burns, “and the rest of it (וּשְׁאֵרִיתוֹ) he makes into a god, his idol”."
+            },
+            {
+              "ref": "Psa.76.11",
+              "note": "“The wrath of man will praise you; the remainder of wrath you will gird on.”"
+            },
+            {
+              "ref": "Neh.7.71",
+              "note": "“That which the rest of the people gave.”"
+            },
+            {
+              "ref": "1Ch.12.39",
+              "note": "“All the rest (שֵׁרִית, without alef) of Israel were of one heart to make David king.”"
+            },
+            {
+              "ref": "1Ch.4.43",
+              "note": "They struck “the rest of the Amalekites who had escaped”."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "κατάλοιπος",
+          "gloss": "remaining; (as a noun) the rest, remnant",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Amo.9.12, שְׁאֵרִית → κατάλοιποι; also Jer.40.15; 44.28; Amo.1.8; Zep.3.13; Hag.1.12; κατάλοιπος renders שְׁאֵרִית ×7 and its other cases ×12"
+            },
+            {
+              "ref": "Act.15.17",
+              "role": "defining",
+              "note": "“That the remnant (οἱ κατάλοιποι) of men may seek the Lord”: James quoting Amo 9:12."
+            }
+          ]
+        },
+        {
+          "lemma": "κατάλειμμα",
+          "gloss": "remnant",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Mic.4.7; 5.6; 5.7; 2Ki.21.14, שְׁאֵרִית → κατάλειμμα"
+            },
+            {
+              "ref": "Rom.9.27",
+              "note": "“The remnant (τὸ κατάλειμμα) will be saved”: Paul quoting Isa 10:22, where the Hebrew is שְׁאָר."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "פְּלֵיטָה",
+            "note": "“Escape, survivors”: the fixed partner of the remnant.",
+            "evidence": [
+              {
+                "ref": "Gen.45.7",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezr.9.14",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.37.32"
+              },
+              {
+                "ref": "2Ki.19.31"
+              }
+            ]
+          },
+          {
+            "lemma": "שָׂרִיד",
+            "note": "“Survivor”: none of the remnant will survive.",
+            "evidence": [
+              {
+                "ref": "Jer.44.14",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.42.17"
+              }
+            ]
+          },
+          {
+            "lemma": "יֶתֶר",
+            "note": "“Remainder”: the remnant of my people and the rest of my nation.",
+            "evidence": [
+              {
+                "ref": "Zep.2.9",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "כָּלָה",
+            "note": "“A full end”: a remnant is what remains when Yahweh does not make an end.",
+            "evidence": [
+              {
+                "ref": "Ezk.11.13",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezr.9.14",
+                "role": "defining",
+                "note": "עַד־כַּלֵּה לְאֵין שְׁאֵרִית “to consuming, so that there is no remnant”."
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "שְׁאֵרִית יִשְׂרָאֵל",
+            "gloss": "the remnant of Israel",
+            "evidence": [
+              {
+                "ref": "Mic.2.12",
+                "role": "defining"
+              },
+              {
+                "ref": "Zep.3.13"
+              },
+              {
+                "ref": "Jer.31.7"
+              },
+              {
+                "ref": "Ezk.9.8"
+              },
+              {
+                "ref": "Ezk.11.13"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "שְׁאָר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "remnant; the rest",
+      "bdb": [
+        "v.ak.ab"
+      ],
+      "cognate_ids": [
+        "ar-sur",
+        "ar-sair",
+        "arc-shaara"
+      ],
+      "summary": "37 tokens with the Aramaic, which BDB counts under this key and its Aramaic one alike (see the Aramaic word below). In Isaiah it is the remnant, as in the name שְׁאָר יָשׁוּב; in Esther, Ezra, Nehemiah and Chronicles it is “the rest of” a group or thing.",
+      "senses": [
+        {
+          "id": "shear-remnant",
+          "kin": [
+            "remnant-survivors"
+          ],
+          "gloss": "remnant",
+          "definition": "The few left of a people or a thing after judgment; in Isaiah the remnant of Israel that will return to God and lean on him.",
+          "evidence": [
+            {
+              "ref": "Isa.10.20",
+              "role": "defining",
+              "note": "“The remnant of Israel and the survivors (וּפְלֵיטַת) of the house of Jacob will no more lean on him who struck them, but will lean on Yahweh, the Holy One of Israel, in truth.”"
+            },
+            {
+              "ref": "Isa.10.21",
+              "role": "defining",
+              "note": "“A remnant will return (שְׁאָר יָשׁוּב), the remnant of Jacob, to the mighty God (אֵל גִּבּוֹר).”"
+            },
+            {
+              "ref": "Isa.10.22",
+              "role": "defining",
+              "note": "“Though your people Israel be as the sand of the sea, a remnant of them will return.” Quoted in Rom 9:27."
+            },
+            {
+              "ref": "Rom.9.27",
+              "note": "“Though the number of the sons of Israel be as the sand of the sea, the remnant (τὸ κατάλειμμα) will be saved.”"
+            },
+            {
+              "ref": "Isa.11.11",
+              "note": "“The Lord will set his hand again the second time to recover the remnant of his people.”"
+            },
+            {
+              "ref": "Isa.11.16",
+              "note": "“There will be a highway for the remnant of his people who will be left from Assyria.”"
+            },
+            {
+              "ref": "Isa.28.5",
+              "note": "“Yahweh of Armies will be a crown of glory … to the remnant of his people.”"
+            },
+            {
+              "ref": "Isa.10.19",
+              "note": "“The rest of the trees of his forest will be few, so that a child can write them down.”"
+            },
+            {
+              "ref": "Isa.14.22",
+              "note": "“I will cut off from Babylon name and remnant (שֵׁם וּשְׁאָר), offspring and posterity.”"
+            },
+            {
+              "ref": "Isa.16.14",
+              "note": "“The remnant will be very small and feeble.”"
+            },
+            {
+              "ref": "Isa.17.3"
+            },
+            {
+              "ref": "Isa.21.17"
+            },
+            {
+              "ref": "Zep.1.4",
+              "note": "“I will cut off the remnant of Baal from this place.”"
+            },
+            {
+              "ref": "Mal.2.15",
+              "note": "“Did he not make one, though he had the rest of the spirit (וּשְׁאָר רוּחַ)?” The sense of the line is disputed."
+            }
+          ]
+        },
+        {
+          "id": "shear-rest",
+          "kin": [
+            "remainder-of-thing"
+          ],
+          "gloss": "the rest, the remainder",
+          "definition": "The rest of a group or thing besides those already named.",
+          "evidence": [
+            {
+              "ref": "Est.9.16",
+              "role": "defining",
+              "note": "“The rest of the Jews who were in the king's provinces”, beside those in Susa (Est 9:12)."
+            },
+            {
+              "ref": "Est.9.12"
+            },
+            {
+              "ref": "Neh.11.1",
+              "role": "defining",
+              "note": "The leaders lived in Jerusalem, “and the rest of the people cast lots”."
+            },
+            {
+              "ref": "2Ch.24.14",
+              "note": "“They brought the rest of the money before the king and Jehoiada.”"
+            },
+            {
+              "ref": "1Ch.11.8",
+              "note": "“Joab repaired the rest of the city.”"
+            },
+            {
+              "ref": "Ezr.3.8"
+            },
+            {
+              "ref": "Ezr.4.3"
+            },
+            {
+              "ref": "Neh.10.29"
+            },
+            {
+              "ref": "Neh.11.20"
+            },
+            {
+              "ref": "1Ch.16.41"
+            },
+            {
+              "ref": "2Ch.9.29",
+              "note": "“The rest of the acts of Solomon.”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "κατάλειμμα",
+          "gloss": "remnant",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Mal.2.15, שְׁאָר → κατάλειμμα; Isa.10.22 not aligned, its Greek τὸ κατάλειμμα αὐτῶν σωθήσεται"
+            },
+            {
+              "ref": "Rom.9.27",
+              "role": "defining",
+              "note": "“The remnant (τὸ κατάλειμμα) will be saved”: Paul quoting Isa 10:22."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "פְּלֵיטָה",
+            "note": "“Survivors”: the remnant of Israel and the survivors of the house of Jacob.",
+            "evidence": [
+              {
+                "ref": "Isa.10.20",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "opposites": [],
+        "phrases": [
+          {
+            "phrase": "שְׁאָר יָשׁוּב",
+            "gloss": "a remnant will return",
+            "evidence": [
+              {
+                "ref": "Isa.10.21",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.10.22"
+              },
+              {
+                "ref": "Isa.7.3",
+                "note": "The name of Isaiah's son."
+              }
+            ]
+          },
+          {
+            "phrase": "שֵׁם וּשְׁאָר",
+            "gloss": "name and remnant: all that would carry a family on",
+            "evidence": [
+              {
+                "ref": "Isa.14.22",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "שְׁאָר",
+      "lang": "arc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "the rest, remainder",
+      "bdb": [
+        "xv.aa.ad"
+      ],
+      "cognate_ids": [
+        "ar-sur",
+        "ar-sair",
+        "arc-shaara"
+      ],
+      "summary": "Scripture's Aramaic, in Daniel and Ezra: “the rest of” a group, and once with the article, שְׁאָרָא “the rest”. BDB files the same tokens under this key and the Hebrew one.",
+      "senses": [
+        {
+          "id": "the-rest-remainder",
+          "kin": [
+            "shear-rest"
+          ],
+          "gloss": "the rest, remainder",
+          "definition": "The rest of a group or a store besides those named: the rest of the wise men, of the beasts, of the companions, of the silver and gold.",
+          "evidence": [
+            {
+              "ref": "Dan.7.7",
+              "role": "defining",
+              "note": "The fourth beast “devoured and broke in pieces, and stamped the rest (וּשְׁאָרָא) with its feet”; again Dan 7:19."
+            },
+            {
+              "ref": "Dan.7.19"
+            },
+            {
+              "ref": "Dan.7.12",
+              "role": "defining",
+              "note": "“As for the rest of the beasts, their dominion was taken away, yet their lives were prolonged for a season and a time.”"
+            },
+            {
+              "ref": "Dan.2.18",
+              "note": "That Daniel and his companions should not perish “with the rest of the wise men of Babylon”."
+            },
+            {
+              "ref": "Ezr.4.9",
+              "note": "“Rehum … Shimshai the scribe, and the rest of their companions.”"
+            },
+            {
+              "ref": "Ezr.4.10"
+            },
+            {
+              "ref": "Ezr.4.17"
+            },
+            {
+              "ref": "Ezr.6.16",
+              "note": "“The priests, the Levites and the rest of the sons of the exile kept the dedication of this house of God with joy.”"
+            },
+            {
+              "ref": "Ezr.7.18",
+              "note": "“Whatever seems good to you to do with the rest of the silver and the gold.”"
+            },
+            {
+              "ref": "Ezr.7.20"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שְׁאֵר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "flesh, body; meat; blood relation",
+      "bdb": [
+        "v.al.ab"
+      ],
+      "cognate_ids": [
+        "uga-shir",
+        "akk-shiru",
+        "phn-shar"
+      ],
+      "summary": "17 tokens. Flesh as the stuff of the body, as meat to eat, and as one's own flesh, a near relation. Its link to “remain” is not understood: the cognates of both show š behind ש (Ugaritic šir “flesh”, Arabic saʾira “remain”), so the letters agree, but no verse or cognate joins the two meanings.",
+      "senses": [
+        {
+          "id": "flesh-body",
+          "gloss": "flesh, body",
+          "definition": "The flesh of the body, beside skin, bones and heart; it fails and is consumed at the end of life.",
+          "evidence": [
+            {
+              "ref": "Mic.3.2",
+              "role": "defining",
+              "note": "“Who tear their skin from off them, and their flesh (וּשְׁאֵרָם) from off their bones.”"
+            },
+            {
+              "ref": "Mic.3.3",
+              "role": "defining",
+              "note": "“Who eat the flesh of my people … and break their bones, and chop them as for the pot, as flesh (וּכְבָשָׂר) in the cauldron.”"
+            },
+            {
+              "ref": "Psa.73.26",
+              "role": "defining",
+              "note": "“My flesh and my heart fail, but God is the rock of my heart and my portion forever.”"
+            },
+            {
+              "ref": "Pro.5.11",
+              "note": "“You groan at your end, when your flesh and your body (בְּשָׂרְךָ וּשְׁאֵרֶךָ) are consumed.”"
+            },
+            {
+              "ref": "Jer.51.35",
+              "note": "“The violence done to me and to my flesh be upon Babylon”, parallel “my blood” upon the Chaldeans."
+            }
+          ]
+        },
+        {
+          "id": "meat-food",
+          "gloss": "meat, food",
+          "definition": "Flesh as food: the meat Yahweh rained down in the wilderness; a wife's food, with her clothing and her marriage right.",
+          "evidence": [
+            {
+              "ref": "Psa.78.20",
+              "role": "defining",
+              "note": "“Can he give bread also? Can he provide meat (שְׁאֵר) for his people?”"
+            },
+            {
+              "ref": "Psa.78.27",
+              "role": "defining",
+              "note": "“He rained meat upon them like dust, and winged birds like the sand of the seas.”"
+            },
+            {
+              "ref": "Exo.21.10",
+              "note": "“If he takes another wife, he shall not diminish her food (שְׁאֵרָהּ), her clothing or her marriage right.”"
+            }
+          ]
+        },
+        {
+          "id": "flesh-kin",
+          "gloss": "own flesh, near blood relation",
+          "definition": "One's own flesh: a near relation by blood, too near to marry, near enough to be mourned by a priest, to redeem or to inherit.",
+          "evidence": [
+            {
+              "ref": "Lev.18.6",
+              "role": "defining",
+              "note": "“None of you shall approach any that is near of kin to him (שְׁאֵר בְּשָׂרוֹ, ‘flesh of his flesh’) to uncover nakedness.”"
+            },
+            {
+              "ref": "Lev.18.12",
+              "role": "defining",
+              "note": "Your father's sister: “she is your father's flesh (שְׁאֵר אָבִיךָ)”; and your mother's at Lev 18:13."
+            },
+            {
+              "ref": "Lev.18.13"
+            },
+            {
+              "ref": "Lev.20.19",
+              "note": "Of an aunt: “he has made naked his own flesh”."
+            },
+            {
+              "ref": "Lev.21.2",
+              "role": "defining",
+              "note": "A priest may defile himself only “for his flesh that is near to him: his mother, his father, his son, his daughter, his brother”."
+            },
+            {
+              "ref": "Lev.25.49",
+              "note": "“His uncle or his uncle's son may redeem him, or any of the flesh of his flesh (מִשְּׁאֵר בְּשָׂרוֹ) of his family.”"
+            },
+            {
+              "ref": "Num.27.11",
+              "note": "The inheritance goes “to his flesh that is nearest to him of his family”."
+            },
+            {
+              "ref": "Pro.11.17",
+              "note": "“The man of loving-kindness does good to his own soul, but the cruel troubles his own flesh (שְׁאֵרוֹ)”: parallel נַפְשׁוֹ, his own self."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "σάρξ",
+          "gloss": "flesh",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.78.27; Mic.3.2; 3.3, שְׁאֵר → σάρξ; also σῶμα at Pro.5.11; 11.17, and οἰκεῖος “kinsman” at Lev.18.6; 25.49"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "בָּשָׂר",
+            "note": "“Flesh”: set beside it and joined to it, “flesh of his flesh”.",
+            "evidence": [
+              {
+                "ref": "Pro.5.11",
+                "role": "defining"
+              },
+              {
+                "ref": "Mic.3.3"
+              },
+              {
+                "ref": "Lev.18.6"
+              },
+              {
+                "ref": "Lev.25.49"
+              }
+            ]
+          },
+          {
+            "lemma": "לֶחֶם",
+            "note": "“Bread”: bread and meat, the food of the wilderness.",
+            "evidence": [
+              {
+                "ref": "Psa.78.20",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "opposites": [],
+        "phrases": [
+          {
+            "phrase": "שְׁאֵר בְּשָׂרוֹ",
+            "gloss": "flesh of his flesh: his near kin",
+            "evidence": [
+              {
+                "ref": "Lev.18.6",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.25.49"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "שַׁאֲרָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "blood relation, kinswomen",
+      "cognate_ids": [
+        "uga-shir",
+        "akk-shiru",
+        "phn-shar"
+      ],
+      "summary": "Once, Lev 18:17, a feminine form beside שְׁאֵר, of the women of one family. BDB files its token under שְׁאֵר (v.al.ab) and gives this key (v.al.ac) no tokens.",
+      "senses": [
+        {
+          "id": "blood-relation",
+          "kin": [
+            "flesh-kin"
+          ],
+          "gloss": "blood relation",
+          "definition": "Women of one blood: a woman and her daughter or granddaughter are one flesh, so a man may not take both.",
+          "evidence": [
+            {
+              "ref": "Lev.18.17",
+              "role": "defining",
+              "note": "“You shall not uncover the nakedness of a woman and her daughter … they are near kin (שַׁאֲרָה הֵנָּה); it is wickedness.”"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-saira",
+      "lang": "ar",
+      "form": "سَئِرَ، أَسْأَرَ",
+      "translit": "saʾira, ʾasʾara",
+      "gloss": "remain, be left as a residue; (form IV) leave a remainder",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š"
+      },
+      "note": "Arabic س answers to Hebrew שׁ where the older sound is š (ṯ would give ث, and ثأر is “blood revenge”). The plain verb is the niphal's “remain”, the causative form IV the hiphil's “leave over”, of a drink left in the cup, water left in the trough.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 1282, art. سأر, forms 1 and 4",
+          "note": "“سَئِرَ … It remained; became left, as a residue … 4 He left a remainder, or somewhat remaining … اسأرهُ He left it remaining.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-sur",
+      "lang": "ar",
+      "form": "سُؤْر",
+      "translit": "suʾr",
+      "gloss": "remainder, residue",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š"
+      },
+      "note": "The noun of the root, as שְׁאָר and שְׁאֵרִית: the remainder of a thing, properly the water a drinker leaves.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 1282, art. سأر, سُؤْرٌ",
+          "note": "“A remainder, or residue; of a thing, or of anything … properly applied to a remainder of water left by the drinker in a vessel.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-sair",
+      "lang": "ar",
+      "form": "سَائِر",
+      "translit": "sāʾir",
+      "gloss": "the rest, the remainder (of a thing or of people)",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š"
+      },
+      "note": "Used as שְׁאָר is in Esther, Ezra and Nehemiah: “the rest of” a thing or of men, not the whole.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 1282, art. سأر, سَائِرٌ",
+          "note": "“The rest, or remainder, of a thing, whether little or much; and of men, or people: not the whole, or all, as many imagine it to mean.”"
+        }
+      ]
+    },
+    {
+      "id": "arc-shear",
+      "lang": "arc",
+      "form": "שְׁאַר",
+      "translit": "šəʾar",
+      "gloss": "(aphel) leave over; (ithpeel) be left, remain (Jewish Aramaic)",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š"
+      },
+      "note": "Aramaic writes ת where the older sound is ṯ, and keeps שׁ here. The Targums use it for the Hebrew verb: the aphel at Exo 10:12, 26, the reflexive at Gen 7:23 and Exo 8:5.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. שְׁאַר (ch.)",
+          "note": "“Af. to leave over. Targ. O. Ex. X, 12 … Ithpa. Ithpe. to be left over, remain. Targ. Gen. VII, 23. Targ. Ex. VIII, 5.”"
+        }
+      ]
+    },
+    {
+      "id": "arc-shaara",
+      "lang": "arc",
+      "form": "שְׁאָרָא",
+      "translit": "šəʾārā",
+      "gloss": "remainder, remnant (Jewish Aramaic)",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š"
+      },
+      "note": "The Targum's word for שְׁאֵרִית at Gen 45:7 and for שְׁאָר at Isa 10:19 and following.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. שְׁאָר, שְׁאָרָא (ch.)",
+          "note": "“Targ. O. Gen. XLV, 7 (h. text שארית). Targ. Is. X, 19, sq.”"
+        }
+      ]
+    },
+    {
+      "id": "uga-shar",
+      "lang": "uga",
+      "form": "𐎌𐎀𐎗",
+      "translit": "šʾr",
+      "gloss": "(Gt) remain",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š"
+      },
+      "note": "Ugaritic keeps š apart from ṯ and writes this root with š. Known here only from the root list; not yet found in a Ugaritic glossary.",
+      "evidence": [
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000464 šʾr [remain] V; UGC003943 šʾr [Gt] V",
+          "note": "Set with Hebrew šaʾar, Aramaic ŠʾR “remain” and Arabic saʾara “left”."
+        }
+      ]
+    },
+    {
+      "id": "uga-shir",
+      "lang": "uga",
+      "form": "𐎌𐎛𐎗",
+      "translit": "šir",
+      "gloss": "flesh",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š"
+      },
+      "note": "Ugaritic writes the word for flesh with š, not ṯ: the same sound as the cognates of “remain”. In KTU 1.6 II 35–37 the flesh of Mot is eaten by birds.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 201, §93 Glossary, šir",
+          "note": "“šir — 1.6:II:35, 37 … ‘flesh,’ cf. si-i(?)[-r]u … (H. šəʾēr, Akkad. šīru)” (OCR read)."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000399 šiʾr [flesh] N; UGC003944 šir [flesh] N"
+        }
+      ]
+    },
+    {
+      "id": "akk-shiru",
+      "lang": "akk",
+      "form": "šīru",
+      "translit": "šīru",
+      "gloss": "flesh, meat; body; (in omens) the entrails",
+      "relation": "cognate",
+      "note": "The common Akkadian word for flesh, in every period. Akkadian š stands for both older sounds, so it does not show which lies behind the Hebrew letter.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000003930, šīru [flesh] N",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000003930.html",
+          "note": "Meanings: body; condition; entrails; flesh; meat; omen; skin; 2,866 instances."
+        }
+      ]
+    },
+    {
+      "id": "phn-shar",
+      "lang": "phn",
+      "form": "𐤔𐤀𐤓",
+      "translit": "šʾr",
+      "gloss": "meat; flesh, one's own self",
+      "relation": "cognate",
+      "note": "Punic has both senses of שְׁאֵר: the meat of a sacrifice (“the rest of the meat shall belong to the sacrificer”), and “of his own flesh” of a child vowed by its father, flesh as blood relation.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "pp. 451–452, Š-ʾ-R",
+          "note": "“[Heb. šeʾar] n.m. 1. MEAT. KAI 69.4 … 2. FLESH, ONE'S SELF. KAI 104.1/3 … ‘of his own flesh’.” Page from the text extraction's page breaks; the PDF was not rendered."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "remnant",
+      "statement": "Isaiah says that though Israel be as the sand of the sea, only a remnant will return, to the mighty God, and will lean on Yahweh in truth (Isa 10:20–22); Paul quotes it, “the remnant will be saved” (Rom 9:27). In Elijah's day Yahweh left himself seven thousand who had not bowed to Baal, and Paul says that so now there is a remnant according to the election of grace (1Ki 19:18; Rom 11:4–5). The remnant is not saved by being Israel's number: it is the humble and lowly people Yahweh leaves, who take refuge in his name, do no wrong and speak no lie, whom he pardons, and who are written for life (Zep 3:12–13; Jer 50:20; Isa 4:3).",
+      "evidence": [
+        {
+          "ref": "Isa.10.20",
+          "to": "Isa.10.22"
+        },
+        {
+          "ref": "Rom.9.27"
+        },
+        {
+          "ref": "1Ki.19.18"
+        },
+        {
+          "ref": "Rom.11.4",
+          "to": "Rom.11.5"
+        },
+        {
+          "ref": "Zep.3.12",
+          "to": "Zep.3.13"
+        },
+        {
+          "ref": "Jer.50.20"
+        },
+        {
+          "ref": "Isa.4.3"
+        }
+      ]
+    },
+    {
+      "topic": "kingdom-of-god",
+      "statement": "Yahweh promises to gather the remnant of his flock out of all the lands where he drove them and bring them back to their pasture, and in the same breath to raise to David a righteous Branch who will reign as king and do justice in the land (Jer 23:3–6). He will set his hand the second time to recover the remnant of his people from Assyria, Egypt and the coastlands (Isa 11:11, 16). He will make the remnant a strong nation, “and Yahweh will reign over them in Mount Zion from now and forever” (Mic 4:6–7). The remnant is gathered to a king and a land, on the earth, at Zion. James read Amos's promise of David's fallen tabernacle rebuilt, and “the remnant” and the nations called by Yahweh's name, as the plan God was carrying out in calling the Gentiles (Amo 9:11–12; Act 15:14–17).",
+      "evidence": [
+        {
+          "ref": "Jer.23.3",
+          "to": "Jer.23.6"
+        },
+        {
+          "ref": "Isa.11.11"
+        },
+        {
+          "ref": "Isa.11.16"
+        },
+        {
+          "ref": "Mic.4.6",
+          "to": "Mic.4.7"
+        },
+        {
+          "ref": "Mic.2.12"
+        },
+        {
+          "ref": "Amo.9.11",
+          "to": "Amo.9.12"
+        },
+        {
+          "ref": "Act.15.14",
+          "to": "Act.15.17"
+        }
+      ]
+    },
+    {
+      "topic": "the-flood",
+      "statement": "The waters covered all the high mountains under the whole heaven, every living thing on the face of the ground was wiped from the earth, “and only Noah was left, and those with him in the ark” (Gen 7:19, 23). The verb leaves no one else alive anywhere: the flood was over the whole earth, and all the living since come from those eight souls (1Pe 3:20; Luk 17:27).",
+      "evidence": [
+        {
+          "ref": "Gen.7.19"
+        },
+        {
+          "ref": "Gen.7.23"
+        },
+        {
+          "ref": "1Pe.3.20"
+        },
+        {
+          "ref": "Luk.17.27"
+        }
+      ]
+    }
+  ],
+  "note": "Root: שאר, the key BDB files the words under; no other entry has it. Two meanings share the letters: “remain” (verb, שְׁאָר, שְׁאֵרִית) and “flesh” (שְׁאֵר, שַׁאֲרָה). Their cognates all show š behind ש (Arabic سأر “remain”, Ugaritic šir “flesh”), so this is no ש split, but nothing joins the meanings; they are kept in one entry by the one-spelling rule. Arabic ثأر “blood revenge” (Lane p. 327; Sabaean ṯʾr, Biella) has ṯ and so does not match Ugaritic šir; it is left out, though Lev 25:49 sets שְׁאֵר beside the redeemer. Left out as another root: שְׁבָא Sheba (v.al.ag, 23 tokens) and the gentilic שְׁבָאִי (v.al.ah), which BDB's numbering puts among these keys but which are the land and people of Sheba; they want their own entry. Names have their own entries: Shear-jashub (v.ak.ac) and Sheerah (v.al.ad); the place Uzzen-sheerah (1Ch 7:24) has none. Keys with no tokens: v.gb.al (שֵׁרִית, 1Ch 12:39, cited under שְׁאֵרִית) and v.al.ac (שַׁאֲרָה, its token counted under v.al.ab), given to no word. v.ak.ab and xv.aa.ad list the same 37 tokens (Hebrew and Aramaic together); each word cites only its own verses. Leads not followed: Old South Arabian s¹ʾr “remaining” (Biella has no entry under S'R; not otherwise checked); the Ugaritic verb šʾr is cited only from Anderson–Moser, not found in Segert's OCR; Syriac has no šʾr “remain” (SEDRA's verb is ܫܪܟ), and SEDRA's ܬܐܪܬܐ “conscience”, which Wiktionary links to שְׁאֵר, was not followed. Krahmalkov's page is from the text extraction: check pp. 451–452 against the scan. To review: (1) Mal 2:15 וּשְׁאָר רוּחַ is placed under “remnant” with no interpretation; (2) Pro 11:17 could be “self” rather than “kin”; (3) Exo 21:10 שְׁאֵרָהּ “her food” is placed under meat."
+}

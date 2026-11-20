@@ -1,0 +1,196 @@
+{
+  "id": "xpk",
+  "root": "שפכ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "pour",
+    "out"
+  ],
+  "gloss": "pour, spill",
+  "summary": "Water is poured from a vessel and blood is shed in killing. Hannah and the psalmist describe speaking to God from the depths of their distress as pouring out their souls.",
+  "words": [
+    {
+      "lemma": "שָׁפַךְ",
+      "bdb": [
+        "v.fh.aa"
+      ],
+      "pos": "verb",
+      "gloss": "pour out",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "pour out liquid, blood or one’s heart",
+          "senses": [
+            {
+              "id": "pour-out-liquid-blood",
+              "gloss": "pour out liquid, blood or one’s heart",
+              "definition": "Samuel pours water before Yahweh. Shedding blood means taking life. Hannah pours out her soul in prayer, as the psalmist does in remembering the festival procession.",
+              "evidence": [
+                {
+                  "ref": "1Sa.7.6",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Gen.9.6",
+                  "role": "defining"
+                },
+                {
+                  "ref": "1Sa.1.15",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.42.5",
+                  "role": "defining"
+                }
+              ]
+            },
+            {
+              "id": "be-poured-out-slip",
+              "gloss": "be poured out, slip away",
+              "definition": "Asaph describes his steps as nearly poured out, parallel to saying that his feet had almost turned aside.",
+              "evidence": [
+                {
+                  "ref": "Psa.73.2",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be poured out",
+          "senses": [
+            {
+              "id": "be-poured-out",
+              "gloss": "be poured out",
+              "definition": "The sufferer is poured out like water and his heart melts. Ashes spill from a broken altar.",
+              "evidence": [
+                {
+                  "ref": "Psa.22.15",
+                  "role": "defining"
+                },
+                {
+                  "ref": "1Ki.13.5",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "have been shed",
+          "senses": [
+            {
+              "id": "have-been-shed",
+              "gloss": "have been shed",
+              "definition": "The blood already shed on the land calls for an accounting.",
+              "evidence": [
+                {
+                  "ref": "Num.35.33",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpael",
+          "gloss": "pour oneself out, spill out",
+          "senses": [
+            {
+              "id": "pour-oneself-out-spill",
+              "gloss": "pour oneself out, spill out",
+              "definition": "Job feels his life poured out within him. Children pour out their lives in their mothers’ arms, while stones lie scattered at the head of every street.",
+              "evidence": [
+                {
+                  "ref": "Job.30.16",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Lam.2.12",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Lam.4.1",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-pour"
+      ]
+    },
+    {
+      "lemma": "שֶׁפֶךְ",
+      "bdb": [
+        "v.fh.ab"
+      ],
+      "pos": "noun",
+      "gloss": "pouring",
+      "senses": [
+        {
+          "id": "pouring",
+          "gloss": "pouring",
+          "definition": "The pouring out of blood is used in judgments and sacrifices.",
+          "evidence": [
+            {
+              "ref": "Lev.4.7",
+              "role": "defining"
+            },
+            {
+              "ref": "Ezk.24.8"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "שָׁפְכָה",
+      "bdb": [
+        "v.fh.ac"
+      ],
+      "pos": "noun",
+      "gloss": "male organ",
+      "senses": [
+        {
+          "id": "male-organ",
+          "gloss": "male organ",
+          "definition": "The word is a bodily term in the legal text.",
+          "evidence": [
+            {
+              "ref": "Deu.23.2",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-pour",
+      "lang": "arc",
+      "form": "שְׁפַךְ",
+      "translit": "šəfaḵ",
+      "gloss": "pour out",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "שְׁפַךְ U01765, Targum Ezekiel 24:7 and Avodah Zarah 72b"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "Zephaniah 1:17 uses a passive form of the verb. Psalm 73:2 uses the image of steps nearly slipping. Genesis 35:18 describes Rachel’s departing life with a different verb. Psalm 73:2 uses a passive qal form, listed with the qal."
+}

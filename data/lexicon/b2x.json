@@ -1,0 +1,140 @@
+{
+  "id": "b2x",
+  "root": "באש",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "gloss": "stink, become offensive",
+  "summary": "To become foul or offensive.",
+  "words": [
+    {
+      "lemma": "בָּאַשׁ",
+      "pos": "verb",
+      "gloss": "stink",
+      "bdb": [
+        "b.ad.aa"
+      ],
+      "stems": [
+        {
+          "stem": "hiphil",
+          "gloss": "make foul",
+          "senses": [
+            {
+              "id": "become-foul",
+              "gloss": "become foul",
+              "definition": "The wounds become foul and fester because of folly.",
+              "evidence": [
+                {
+                  "ref": "Psa.38.6",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "בְּאֹשׁ",
+      "bdb": [
+        "b.ad.ab"
+      ],
+      "pos": "noun",
+      "gloss": "stench",
+      "senses": [
+        {
+          "id": "stench",
+          "gloss": "stench",
+          "definition": "The smell of dead bodies rises after a defeat. Amos likewise speaks of a stench reaching the survivors’ nostrils.",
+          "evidence": [
+            {
+              "ref": "Isa.34.3",
+              "role": "defining"
+            },
+            {
+              "ref": "Amo.4.10",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "בָּאְשָׁה",
+      "bdb": [
+        "b.ad.ac"
+      ],
+      "pos": "noun",
+      "gloss": "foul weed",
+      "senses": [
+        {
+          "id": "foul-weed",
+          "gloss": "foul weed",
+          "definition": "Job calls for offensive weeds to grow in place of barley if he has consumed the land’s yield unjustly.",
+          "evidence": [
+            {
+              "ref": "Job.31.40",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "בְּאֻשִׁים",
+      "bdb": [
+        "b.ad.ad"
+      ],
+      "pos": "noun",
+      "gloss": "bad grapes",
+      "senses": [
+        {
+          "id": "bad-grapes",
+          "gloss": "bad grapes",
+          "definition": "The well-tended vineyard produces bad grapes when its owner has every reason to expect good fruit.",
+          "evidence": [
+            {
+              "ref": "Isa.5.2",
+              "role": "defining"
+            },
+            {
+              "ref": "Isa.5.4",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "בְּאֵשׁ",
+      "bdb": [
+        "xb.ab.aa"
+      ],
+      "pos": "verb",
+      "gloss": "be displeasing",
+      "lang": "arc",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "be displeasing",
+          "senses": [
+            {
+              "id": "be-displeasing",
+              "gloss": "be displeasing",
+              "definition": "The accusation against Daniel deeply troubles the king, who then sets about finding a way to rescue him.",
+              "evidence": [
+                {
+                  "ref": "Dan.6.15",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "note": "Drafted for Psalm 38 coverage."
+}

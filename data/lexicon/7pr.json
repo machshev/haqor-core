@@ -1,0 +1,246 @@
+{
+  "id": "7pr",
+  "root": "חפר",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "work",
+    "earth",
+    "shame"
+  ],
+  "gloss": "dig or search out, be ashamed",
+  "summary": "Two distinct verbs share these Hebrew consonants. Wells, pits and scouting expeditions illustrate the first. Parallel expressions for shame and loss of face establish the second.",
+  "words": [
+    {
+      "lemma": "חָפַר",
+      "bdb": [
+        "h.es.aa"
+      ],
+      "pos": "verb",
+      "gloss": "dig, search out",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "dig or explore",
+          "senses": [
+            {
+              "gloss": "dig into the ground",
+              "definition": "Isaac reopens his father’s wells. In Psalm 7 the wrongdoer hollows out a pit into which he falls.",
+              "evidence": [
+                {
+                  "ref": "Gen.26.18",
+                  "to": "Gen.26.19",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.7.16"
+                },
+                {
+                  "ref": "Num.21.18"
+                }
+              ],
+              "id": "dig"
+            },
+            {
+              "id": "search-out",
+              "gloss": "search out",
+              "definition": "The scouts enter Jericho to search out the land. Moses recalls the people’s proposal to explore their route.",
+              "evidence": [
+                {
+                  "ref": "Jos.2.2",
+                  "to": "Jos.2.3",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Deu.1.22"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-hafara"
+      ]
+    },
+    {
+      "lemma": "חָפֵר",
+      "bdb": [
+        "h.et.aa"
+      ],
+      "pos": "verb",
+      "gloss": "be abashed",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "be put to shame",
+          "senses": [
+            {
+              "id": "be-put-to-shame",
+              "gloss": "be put to shame",
+              "definition": "Seers cover their mouths when their predictions fail. The psalmist asks that those who rejoice in his trouble be disgraced.",
+              "evidence": [
+                {
+                  "ref": "Mic.3.7",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.35.26"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "show or cause disgrace",
+          "senses": [
+            {
+              "id": "show-or-cause-disgrace",
+              "gloss": "show or cause disgrace",
+              "definition": "Isaiah tells the humiliated woman she will have no cause for disgrace. In Proverbs wicked conduct brings reproach.",
+              "evidence": [
+                {
+                  "ref": "Isa.54.4",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Pro.13.5"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-khafira"
+      ]
+    },
+    {
+      "lemma": "חֲפַרְפָּרָה",
+      "bdb": [
+        "h.es.af"
+      ],
+      "pos": "noun",
+      "gloss": "burrowing animal, mole",
+      "senses": [
+        {
+          "id": "burrowing-animal-mole",
+          "gloss": "burrowing animal, mole",
+          "definition": "People discard their idols among burrowing creatures and bats. The phrase is written as two words, and the species is uncertain.",
+          "evidence": [
+            {
+              "ref": "Isa.2.20",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "cognate_ids": [
+        "ar-hafara"
+      ]
+    },
+    {
+      "lemma": "חֶפְרִי",
+      "bdb": [
+        "h.es.ac"
+      ],
+      "pos": "adjective",
+      "gloss": "Hepherite",
+      "senses": [
+        {
+          "id": "hepherite",
+          "gloss": "Hepherite",
+          "definition": "The census identifies the clan descended from Hepher among the descendants of Gilead.",
+          "evidence": [
+            {
+              "ref": "Num.26.30",
+              "to": "Num.26.33",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חְפַר",
+      "pos": "verb",
+      "gloss": "dig",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "dig into the earth",
+          "senses": [
+            {
+              "id": "dig-into-the-earth",
+              "gloss": "dig into the earth",
+              "definition": "A man digs down to lay a foundation on rock. The servant who hides the money digs into the ground.",
+              "evidence": [
+                {
+                  "ref": "Luk.6.48",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Mat.25.18"
+                },
+                {
+                  "ref": "Mat.21.33"
+                },
+                {
+                  "ref": "Luk.16.3"
+                }
+              ],
+              "kin": [
+                "dig"
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "cognate_ids": [
+        "ar-hafara"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-hafara",
+      "lang": "ar",
+      "form": "حَفَرَ",
+      "translit": "ḥafara",
+      "gloss": "dig, hollow out",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 600, حَفَرَ, n8472"
+        }
+      ],
+      "sounds": {
+        "ח": "ḥ"
+      }
+    },
+    {
+      "id": "ar-khafira",
+      "lang": "ar",
+      "form": "خَفِرَ",
+      "translit": "ḫafira",
+      "gloss": "feel shy or ashamed",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 772, خفر, n11096, and خَفِرٌ n11099"
+        }
+      ],
+      "sounds": {
+        "ח": "ḫ"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "Arabic distinguishes the two initial consonants that Hebrew writes with ח. The names Hapharaim and Hepher resemble the digging verb, but their origin is uncertain. Hophra in Jeremiah 44:30 is the name of an Egyptian king."
+}

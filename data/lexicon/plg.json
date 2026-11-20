@@ -1,0 +1,579 @@
+{
+  "id": "plg",
+  "root": "פלג",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "water",
+    "division"
+  ],
+  "gloss": "divide, portion, watercourse",
+  "summary": "A whole can be divided into parts and a people into groups. Job describes cutting a channel for rain, and the psalms call the channels that water a tree or a city by the noun פֶּלֶג.",
+  "words": [
+    {
+      "lemma": "פֶּלֶג",
+      "bdb": [
+        "q.bl.ab"
+      ],
+      "pos": "noun",
+      "gloss": "stream, channel",
+      "senses": [
+        {
+          "id": "stream-channel",
+          "gloss": "stream, channel",
+          "definition": "A course water follows. The river in Psalm 46 has channels, and the tree in Psalm 1 draws on streams to bear fruit. Tears and oil can also be pictured as flowing in streams.",
+          "evidence": [
+            {
+              "ref": "Psa.46.5",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.1.3"
+            },
+            {
+              "ref": "Isa.32.2"
+            },
+            {
+              "ref": "Psa.119.136"
+            },
+            {
+              "ref": "Job.29.6"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "ar-falaj"
+      ]
+    },
+    {
+      "lemma": "פָּלַג",
+      "bdb": [
+        "q.bl.aa"
+      ],
+      "pos": "verb",
+      "gloss": "divide, cut a channel",
+      "stems": [
+        {
+          "stem": "niphal",
+          "gloss": "be divided",
+          "senses": [
+            {
+              "id": "be-divided",
+              "gloss": "be divided",
+              "definition": "Genesis explains Peleg’s name by the division of the earth in his days.",
+              "evidence": [
+                {
+                  "ref": "Gen.10.25",
+                  "role": "defining"
+                },
+                {
+                  "ref": "1Ch.1.19"
+                }
+              ],
+              "cognate_ids": [
+                "ar-falaja"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "divide, cut through",
+          "senses": [
+            {
+              "id": "divide",
+              "gloss": "divide",
+              "definition": "The speaker asks God to divide the speech of those whose violence fills the city.",
+              "evidence": [
+                {
+                  "ref": "Psa.55.10",
+                  "role": "defining"
+                }
+              ],
+              "cognate_ids": [
+                "ar-falaja"
+              ]
+            },
+            {
+              "id": "cut-a-channel",
+              "gloss": "cut a channel",
+              "definition": "A cut or opening gives the downpour a course to follow.",
+              "evidence": [
+                {
+                  "ref": "Job.38.25",
+                  "role": "defining"
+                }
+              ],
+              "kin": [
+                "currents"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "פְּלֻגָּה",
+      "bdb": [
+        "q.bl.ae"
+      ],
+      "pos": "noun",
+      "gloss": "division, group",
+      "senses": [
+        {
+          "id": "division-group",
+          "gloss": "division, group",
+          "definition": "In the temple the people stand according to divisions of their ancestral houses. Deborah’s song speaks of the divisions of Reuben.",
+          "evidence": [
+            {
+              "ref": "2Ch.35.5",
+              "role": "defining"
+            },
+            {
+              "ref": "Jdg.5.15",
+              "to": "Jdg.5.16"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "פְּלַגָּה",
+      "bdb": [
+        "q.bl.ad"
+      ],
+      "pos": "noun",
+      "gloss": "watercourse",
+      "senses": [
+        {
+          "gloss": "streams",
+          "definition": "Job pictures riches flowing like rivers of honey and curds. The noun stands beside two other words for streams.",
+          "evidence": [
+            {
+              "ref": "Job.20.17",
+              "role": "defining"
+            }
+          ],
+          "id": "currents"
+        }
+      ],
+      "gender": "f",
+      "cognate_ids": [
+        "ar-falaj"
+      ]
+    },
+    {
+      "lemma": "מִפְלַגָּה",
+      "bdb": [
+        "q.bl.af"
+      ],
+      "pos": "noun",
+      "gloss": "division of families",
+      "senses": [
+        {
+          "id": "division-of-families",
+          "gloss": "division of families",
+          "definition": "The offerings reach the people through groups organized by ancestral household.",
+          "evidence": [
+            {
+              "ref": "2Ch.35.12",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "פְּלַג",
+      "bdb": [
+        "xq.ab.aa"
+      ],
+      "pos": "verb",
+      "gloss": "divide",
+      "stems": [
+        {
+          "stem": "peil",
+          "gloss": "be divided",
+          "senses": [
+            {
+              "id": "be-divided-2",
+              "gloss": "be divided",
+              "definition": "The divided kingdom is pictured by feet made partly of iron and partly of clay.",
+              "evidence": [
+                {
+                  "ref": "Dan.2.41",
+                  "role": "defining"
+                }
+              ],
+              "cognate_ids": [
+                "ar-falaja"
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "arc"
+    },
+    {
+      "lemma": "פְּלַג",
+      "bdb": [
+        "xq.ab.ab"
+      ],
+      "pos": "noun",
+      "gloss": "half",
+      "senses": [
+        {
+          "id": "half",
+          "gloss": "half",
+          "definition": "The final fraction in the sequence of a time, times and half a time.",
+          "evidence": [
+            {
+              "ref": "Dan.7.25",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "lang": "arc"
+    },
+    {
+      "lemma": "פְּלֻגָּה",
+      "bdb": [
+        "xq.ab.ac"
+      ],
+      "pos": "noun",
+      "gloss": "division of priests",
+      "senses": [
+        {
+          "id": "division-of-priests",
+          "gloss": "division of priests",
+          "definition": "Priests serve in assigned groups, paired with the courses of the Levites.",
+          "evidence": [
+            {
+              "ref": "Ezr.6.18",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "lang": "arc"
+    },
+    {
+      "lemma": "פּלַג",
+      "bdb": [],
+      "pos": "verb",
+      "gloss": "divide, distribute, waver",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "divide or allot",
+          "senses": [
+            {
+              "id": "divide-or-allot",
+              "gloss": "divide or allot",
+              "definition": "A man asks Jesus to have his brother divide the inheritance with him. Paul speaks of the measure allotted to each person.",
+              "evidence": [
+                {
+                  "ref": "Luk.12.13",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Rom.12.3"
+                }
+              ],
+              "cognate_ids": [
+                "ar-falaja"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "ethpeel",
+          "gloss": "be divided",
+          "senses": [
+            {
+              "id": "be-divided-3",
+              "gloss": "be divided",
+              "definition": "A household is divided against itself and the assembly splits over resurrection.",
+              "evidence": [
+                {
+                  "ref": "Luk.12.53",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Act.23.7"
+                }
+              ],
+              "cognate_ids": [
+                "ar-falaja"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pael",
+          "gloss": "distribute",
+          "senses": [
+            {
+              "id": "distribute",
+              "gloss": "distribute",
+              "definition": "Jesus distributes bread and gives the cup to the disciples to share.",
+              "evidence": [
+                {
+                  "ref": "Jhn.6.11",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Luk.22.17"
+                }
+              ],
+              "cognate_ids": [
+                "ar-falaja"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "ethpaal",
+          "gloss": "be divided or waver",
+          "senses": [
+            {
+              "id": "be-divided-4",
+              "gloss": "be divided",
+              "definition": "A kingdom or household split against itself cannot stand.",
+              "evidence": [
+                {
+                  "ref": "Mat.12.25",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Mrk.3.24",
+                  "to": "Mrk.3.25"
+                }
+              ],
+              "cognate_ids": [
+                "ar-falaja"
+              ]
+            },
+            {
+              "id": "hesitate-doubt",
+              "gloss": "hesitate, doubt",
+              "definition": "Jesus asks Peter why he doubted when he became afraid on the water.",
+              "evidence": [
+                {
+                  "ref": "Mat.14.31",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jas.1.6"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "syc"
+    },
+    {
+      "lemma": "מפַֿלגָנָא",
+      "bdb": [],
+      "pos": "noun",
+      "gloss": "divider",
+      "senses": [
+        {
+          "id": "divider",
+          "gloss": "divider",
+          "definition": "Jesus asks who appointed him to divide an inheritance between two brothers.",
+          "evidence": [
+            {
+              "ref": "Luk.12.13",
+              "to": "Luk.12.14",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "lang": "syc"
+    },
+    {
+      "lemma": "פּוּלָגָא",
+      "bdb": [],
+      "pos": "noun",
+      "gloss": "distribution, distinction, dispute",
+      "senses": [
+        {
+          "id": "distribution-or-distinction",
+          "gloss": "distribution or distinction",
+          "definition": "Paul distinguishes the various gifts, services and workings given among believers.",
+          "evidence": [
+            {
+              "ref": "1Co.12.4",
+              "to": "1Co.12.6",
+              "role": "defining"
+            },
+            {
+              "ref": "Heb.2.4"
+            }
+          ]
+        },
+        {
+          "id": "dispute-or-hesitation",
+          "gloss": "dispute or hesitation",
+          "definition": "Paul asks the Philippians to act free from grumbling and disputing.",
+          "evidence": [
+            {
+              "ref": "Php.2.14",
+              "role": "defining"
+            },
+            {
+              "ref": "Act.11.12"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "lang": "syc"
+    },
+    {
+      "lemma": "פֶּלגָּא",
+      "bdb": [],
+      "pos": "noun",
+      "gloss": "half, middle",
+      "senses": [
+        {
+          "id": "half-middle",
+          "gloss": "half, middle",
+          "definition": "Herod offers up to half his kingdom. In descriptions of time the word identifies the middle of the night or the day.",
+          "evidence": [
+            {
+              "ref": "Mrk.6.23",
+              "role": "defining"
+            },
+            {
+              "ref": "Mat.25.6"
+            },
+            {
+              "ref": "Act.22.6"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "lang": "syc"
+    },
+    {
+      "lemma": "פֶּלגּוּתָא",
+      "bdb": [],
+      "pos": "noun",
+      "gloss": "half",
+      "senses": [
+        {
+          "id": "half-2",
+          "gloss": "half",
+          "definition": "Zacchaeus gives half his possessions to the poor. Revelation uses the fraction of an hour or a time.",
+          "evidence": [
+            {
+              "ref": "Luk.19.8",
+              "role": "defining"
+            },
+            {
+              "ref": "Rev.8.1"
+            },
+            {
+              "ref": "Rev.12.14"
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "lang": "syc"
+    },
+    {
+      "lemma": "פָּלגוּתָא",
+      "bdb": [],
+      "pos": "noun",
+      "gloss": "division, share",
+      "senses": [
+        {
+          "id": "division-share",
+          "gloss": "division, share",
+          "definition": "The crowd divides over Jesus. A portion of property can also be divided off to be given to a son.",
+          "evidence": [
+            {
+              "ref": "Jhn.7.43",
+              "role": "defining"
+            },
+            {
+              "ref": "Jhn.9.16"
+            },
+            {
+              "ref": "Luk.15.12"
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "lang": "syc"
+    },
+    {
+      "lemma": "פְּלִיגָא",
+      "bdb": [],
+      "pos": "adjective",
+      "gloss": "divided",
+      "senses": [
+        {
+          "id": "divided-in-allegiance",
+          "gloss": "divided in allegiance",
+          "definition": "James calls those divided in mind to purify their hearts.",
+          "evidence": [
+            {
+              "ref": "Jas.4.8",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "lang": "syc"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-falaja",
+      "lang": "ar",
+      "form": "فَلَجَ",
+      "translit": "falaja",
+      "gloss": "divide in halves",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 2436, n34447"
+        }
+      ]
+    },
+    {
+      "id": "ar-falaj",
+      "lang": "ar",
+      "form": "فَلَجٌ",
+      "translit": "falaj",
+      "gloss": "small river or watercourse",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 2437, n34456"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The spelling of Peleg overlaps the common noun and Psalm 65:10 is about a watercourse. The longer words for concubine, steel and the name Pildash have different consonants and no attested derivation here. The two Syriac nouns with the consonants פלגותא are distinct SEDRA lexemes 2523 and 2524."
+}

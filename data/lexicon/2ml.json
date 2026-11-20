@@ -1,0 +1,154 @@
+{
+  "id": "2ml",
+  "root": "אמל",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "weakness",
+    "plants"
+  ],
+  "gloss": "grow weak, languish, wither",
+  "summary": "A fig tree withers when the land dries out. The same verb describes people whose strength has failed them. In Psalm 6 the sufferer calls himself frail as he asks Yahweh to heal him.",
+  "words": [
+    {
+      "lemma": "אָמַל",
+      "bdb": [
+        "a.dw.aa"
+      ],
+      "pos": "verb",
+      "gloss": "languish, wither",
+      "stems": [
+        {
+          "stem": "polal",
+          "gloss": "be weakened, wither",
+          "senses": [
+            {
+              "gloss": "wither",
+              "definition": "Joel describes a dried vine, a withered fig tree and the loss of all the fruit trees. The same language pictures a land losing its life.",
+              "evidence": [
+                {
+                  "ref": "Jol.1.12",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Isa.24.4"
+                },
+                {
+                  "ref": "Nam.1.4"
+                }
+              ],
+              "id": "wither"
+            },
+            {
+              "gloss": "languish",
+              "definition": "A mother of seven grows faint and gasps out her life. People who live by fishing languish when the river fails them.",
+              "evidence": [
+                {
+                  "ref": "Jer.15.9",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Isa.19.8"
+                },
+                {
+                  "ref": "1Sa.2.5"
+                }
+              ],
+              "id": "languish",
+              "kin": [
+                "frail",
+                "feeble"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "qal",
+          "gloss": "be weak or sick",
+          "senses": [
+            {
+              "id": "be-weak-or-sick",
+              "gloss": "be weak or sick",
+              "definition": "Ezekiel describes Jerusalem’s heart as sick in a charge against her conduct. The form occurs here alone.",
+              "evidence": [
+                {
+                  "ref": "Ezk.16.30",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אֻמְלַל",
+      "bdb": [
+        "a.dw.ac"
+      ],
+      "pos": "adjective",
+      "gloss": "frail, weak",
+      "senses": [
+        {
+          "gloss": "frail",
+          "definition": "The sufferer asks for grace because he is weak, and for healing because his bones tremble.",
+          "evidence": [
+            {
+              "ref": "Psa.6.3",
+              "role": "defining"
+            }
+          ],
+          "id": "frail",
+          "kin": [
+            "languish",
+            "feeble"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἀσθενής",
+          "gloss": "weak, sick",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "PSA 6:3 word 4"
+            },
+            {
+              "ref": "Mat.25.39"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אֲמֵלָל",
+      "bdb": [
+        "a.dw.ab"
+      ],
+      "pos": "adjective",
+      "gloss": "feeble",
+      "senses": [
+        {
+          "gloss": "feeble",
+          "definition": "Sanballat mocks the Judeans at work on the wall, asking whether such feeble people can rebuild it with stones from the rubble. This is his estimate of their strength.",
+          "evidence": [
+            {
+              "ref": "Neh.3.34",
+              "role": "defining"
+            }
+          ],
+          "id": "feeble",
+          "kin": [
+            "languish",
+            "frail"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [],
+  "doctrine": [],
+  "note": "The corpus calls the reduplicated passive Pulal, represented by polal here. Joel 1:10 and Nahum 1:4 are also indexed under the adjective because their spelling coincides. Lane p. 99 أَمَلَهُ means to hope. Oracc’s ummulu entries describe something stifled or faintly shining. Neither establishes a cognate for the Hebrew sense."
+}

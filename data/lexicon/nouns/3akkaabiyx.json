@@ -1,0 +1,140 @@
+{
+  "id": "3akkaabiyx",
+  "root": "עכביש",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "tags": [
+    "animals"
+  ],
+  "gloss": "spider",
+  "summary": "Isaiah pictures people weaving a spider’s web that cannot clothe them. Bildad compares the confidence of someone who forgets God to a spider’s house that gives way when leaned on.",
+  "words": [
+    {
+      "lemma": "עַכָּבִישׁ",
+      "pos": "noun",
+      "gender": "m",
+      "bdb": [
+        "p.cn.am"
+      ],
+      "gloss": "spider",
+      "senses": [
+        {
+          "id": "spider",
+          "gloss": "spider",
+          "definition": "The animal that spins a web, pictured through the frailty of what it builds.",
+          "evidence": [
+            {
+              "ref": "Isa.59.5",
+              "role": "defining",
+              "note": "The workers of evil weave a spider’s webs. The following verse says that their webs cannot serve as clothing."
+            },
+            {
+              "ref": "Job.8.14",
+              "role": "defining",
+              "note": "Bildad calls the object of a godless person’s trust a spider’s house. In the next verse it gives way under his weight."
+            }
+          ],
+          "cognate_ids": [
+            "ar-spider",
+            "arc-spider",
+            "meh-spider",
+            "jib-spider",
+            "mlt-web"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-spider",
+      "lang": "ar",
+      "form": "عَنْكَبُوت",
+      "translit": "ʿankabūt",
+      "gloss": "spider",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2177, n30812"
+        },
+        {
+          "source": "kogan-2011-lexicon",
+          "locator": "p. 213, §5.7, SED II no. 33"
+        }
+      ]
+    },
+    {
+      "id": "arc-spider",
+      "lang": "arc",
+      "form": "ʁakkbītā",
+      "translit": "ʿakkbītā",
+      "gloss": "spider",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "ids-aramaic",
+          "locator": "215-3-818-2"
+        }
+      ]
+    },
+    {
+      "id": "meh-spider",
+      "lang": "sem",
+      "form": "ʾānšɛ̄t",
+      "translit": "ʾānšɛ̄t",
+      "gloss": "Mehri spider",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "kogan-2011-lexicon",
+          "locator": "p. 213, §5.7, SED II no. 33"
+        }
+      ]
+    },
+    {
+      "id": "jib-spider",
+      "lang": "sem",
+      "form": "ʿəns̃yét",
+      "translit": "ʿəns̃yét",
+      "gloss": "Jibbali spider",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "kogan-2011-lexicon",
+          "locator": "p. 213, §5.7, SED II no. 33"
+        }
+      ]
+    },
+    {
+      "id": "mlt-web",
+      "lang": "sem",
+      "form": "għanqbut",
+      "translit": "għanqbut",
+      "gloss": "Maltese cobweb, spider’s web",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "gabra",
+          "locator": "52a5b0f929f971ff69f1ee94"
+        }
+      ]
+    }
+  ],
+  "note": "The Hebrew noun names the animal. ‘House’ in Job and ‘webs’ in Isaiah supply the woven structure. Maltese uses the related form for the web itself. The final š of the Hebrew form has no secure counterpart in these comparisons. Kogan questions the proposed connection with Akkadian ettūtu."
+}

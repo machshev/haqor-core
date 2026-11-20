@@ -1,0 +1,115 @@
+{
+  "id": "hwm",
+  "root": "הומ",
+  "status": "draft",
+  "updated": "2026-11-20",
+  "gloss": "roar; tumult",
+  "summary": "הום is to roar, resound or become agitated, and מְהוּמָה is the tumult or confusion that results.",
+  "words": [
+    {
+      "lemma": "הוּם",
+      "pos": "verb",
+      "gloss": "roar; be agitated",
+      "bdb": [
+        "e.bb.aa"
+      ],
+      "stems": [
+        {
+          "stem": "niphal",
+          "gloss": "be agitated; resound",
+          "senses": [
+            {
+              "id": "be-agitated",
+              "gloss": "be agitated",
+              "definition": "To resound or become agitated in tumult.",
+              "evidence": [
+                {
+                  "ref": "1Sa.4.5",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Rut.1.19"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "make noisy; moan",
+          "senses": [
+            {
+              "id": "make-noisy",
+              "gloss": "make noisy",
+              "definition": "To make a loud, troubled sound or moan.",
+              "evidence": [
+                {
+                  "ref": "Psa.55.3",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Mic.2.12"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מְהוּמָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "tumult; confusion",
+      "bdb": [
+        "e.bb.ab"
+      ],
+      "senses": [
+        {
+          "id": "tumult",
+          "gloss": "tumult",
+          "definition": "Confusion, panic or uproar among people.",
+          "evidence": [
+            {
+              "ref": "Deu.7.23",
+              "role": "defining"
+            },
+            {
+              "ref": "Isa.22.5"
+            },
+            {
+              "ref": "Psa.55.3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "הִים",
+      "pos": "verb",
+      "gloss": "be agitated",
+      "bdb": [
+        "e.bh.ac"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "be agitated",
+          "senses": [
+            {
+              "id": "be-agitated-2",
+              "gloss": "be agitated",
+              "definition": "A spelling variant of הוּם describing agitation.",
+              "evidence": [
+                {
+                  "ref": "Psa.55.3"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "note": "Drafted for Psalm 55 coverage."
+}

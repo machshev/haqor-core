@@ -1,0 +1,344 @@
+{
+  "id": "7l9",
+  "root": "חלצ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "deliverance",
+    "clothing",
+    "battle"
+  ],
+  "gloss": "pull out, rescue, equip",
+  "summary": "A woman pulls a sandal from a foot, and workers pull stones from a wall. When David asks Yahweh to draw him out, it is his life he wants rescued from danger. Men ready to cross the Jordan for battle are called equipped.",
+  "words": [
+    {
+      "lemma": "חָלַץ",
+      "bdb": [
+        "h.cy.aa"
+      ],
+      "pos": "verb",
+      "gloss": "pull off or out, rescue, equip",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "pull off, withdraw, be equipped",
+          "senses": [
+            {
+              "gloss": "pull off or withdraw",
+              "definition": "The widow pulls a sandal from the man’s foot before the elders. Hosea speaks of Yahweh withdrawing from those who seek him.",
+              "evidence": [
+                {
+                  "ref": "Deu.25.9",
+                  "to": "Deu.25.10",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Isa.20.2"
+                },
+                {
+                  "ref": "Hos.5.6"
+                }
+              ],
+              "id": "strip",
+              "kin": [
+                "spoils"
+              ],
+              "cognate_ids": [
+                "arc-chalats"
+              ]
+            },
+            {
+              "id": "equipped-for-battle",
+              "gloss": "equipped for battle",
+              "definition": "The armed advance guard goes before the priests. Judah’s men equipped for war carry shields and spears.",
+              "evidence": [
+                {
+                  "ref": "Jos.6.9",
+                  "role": "defining"
+                },
+                {
+                  "ref": "1Ch.12.25"
+                },
+                {
+                  "ref": "Deu.3.18"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "extract, deliver",
+          "senses": [
+            {
+              "id": "pull-out",
+              "gloss": "pull out",
+              "definition": "Stones affected by the disease in a house are pulled out and carried away.",
+              "evidence": [
+                {
+                  "ref": "Lev.14.40",
+                  "role": "defining"
+                }
+              ]
+            },
+            {
+              "id": "rescue",
+              "gloss": "rescue",
+              "definition": "The speaker asks Yahweh to draw his life out of danger. David describes his deliverance as being brought into an open space.",
+              "evidence": [
+                {
+                  "ref": "Psa.6.5",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.18.20"
+                },
+                {
+                  "ref": "Psa.116.8"
+                },
+                {
+                  "ref": "2Sa.22.20"
+                }
+              ],
+              "cognate_ids": [
+                "ar-khalasa"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be rescued, equip oneself",
+          "senses": [
+            {
+              "id": "be-delivered",
+              "gloss": "be delivered",
+              "definition": "The righteous person comes out of trouble, and the wicked person takes his place.",
+              "evidence": [
+                {
+                  "ref": "Pro.11.8",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.108.7"
+                }
+              ],
+              "cognate_ids": [
+                "ar-khalasa"
+              ]
+            },
+            {
+              "id": "equip-oneself",
+              "gloss": "equip oneself",
+              "definition": "Moses directs the tribes to prepare for battle and cross the Jordan before their brothers.",
+              "evidence": [
+                {
+                  "ref": "Num.32.20",
+                  "to": "Num.32.21",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "strengthen",
+          "senses": [
+            {
+              "id": "strengthen",
+              "gloss": "strengthen",
+              "definition": "Isaiah promises a person guided by Yahweh strength in the bones, like a garden sustained by water. This is the only occurrence of the stem.",
+              "evidence": [
+                {
+                  "ref": "Isa.58.11",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ῥύομαι",
+          "gloss": "rescue",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "PSA 6:5 word 3"
+            },
+            {
+              "ref": "2Ti.4.18"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חָלָץ",
+      "bdb": [
+        "h.cz.ab"
+      ],
+      "pos": "noun",
+      "gloss": "loins",
+      "senses": [
+        {
+          "id": "waist-loins",
+          "gloss": "waist, loins",
+          "definition": "A belt is fastened around the loins. Those who will be born to Jacob are said to come out of his loins.",
+          "evidence": [
+            {
+              "ref": "Isa.5.27",
+              "role": "defining"
+            },
+            {
+              "ref": "Isa.11.5"
+            },
+            {
+              "ref": "Job.38.3"
+            },
+            {
+              "ref": "Gen.35.11"
+            }
+          ]
+        }
+      ],
+      "summary": "The association with a person girding himself for action is possible, though the noun’s derivation is uncertain."
+    },
+    {
+      "lemma": "חֲלִיצָה",
+      "bdb": [
+        "h.cy.ab"
+      ],
+      "pos": "noun",
+      "gloss": "gear stripped from someone",
+      "senses": [
+        {
+          "gloss": "spoils",
+          "definition": "Samson takes the clothing of slain men and gives changes of clothing to those who answered his riddle.",
+          "evidence": [
+            {
+              "ref": "Jdg.14.19",
+              "role": "defining"
+            },
+            {
+              "ref": "2Sa.2.21"
+            }
+          ],
+          "id": "spoils",
+          "kin": [
+            "strip"
+          ],
+          "cognate_ids": [
+            "arc-chalats"
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "מַחֲלָצָה",
+      "bdb": [
+        "h.cy.ac"
+      ],
+      "pos": "noun",
+      "gloss": "dress robe",
+      "senses": [
+        {
+          "id": "dress-robe",
+          "gloss": "dress robe",
+          "definition": "When Joshua’s filthy clothes are removed, he is clothed in robes fit for his restored office. Isaiah includes such garments among articles of finery.",
+          "evidence": [
+            {
+              "ref": "Zec.3.3",
+              "to": "Zec.3.5",
+              "role": "defining"
+            },
+            {
+              "ref": "Isa.3.22"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "חֲלַץ",
+      "pos": "verb",
+      "gloss": "strip, plunder",
+      "stems": [
+        {
+          "stem": "pael",
+          "gloss": "plunder",
+          "senses": [
+            {
+              "id": "plunder",
+              "gloss": "plunder",
+              "definition": "Paul calls his taking support from other assemblies to serve the Corinthians plundering them. The word is also used for robbing temples.",
+              "evidence": [
+                {
+                  "ref": "2Co.11.8",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Act.19.37"
+                },
+                {
+                  "ref": "Rom.2.22"
+                },
+                {
+                  "ref": "Col.2.8"
+                }
+              ],
+              "kin": [
+                "spoils"
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "cognate_ids": [
+        "arc-chalats"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-khalasa",
+      "lang": "ar",
+      "form": "خَلَّصَ",
+      "translit": "ḫallaṣa",
+      "gloss": "free, deliver",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 785, خلّصهُ n11266, and p. 786 تخلّص n11269"
+        }
+      ],
+      "sounds": {
+        "ח": "ḫ",
+        "צ": "ṣ"
+      }
+    },
+    {
+      "id": "arc-chalats",
+      "lang": "arc",
+      "form": "חֲלַץ",
+      "translit": "ḥălaṣ",
+      "gloss": "take off, strip, withdraw",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. חֲלַץ, Targum 2 Samuel 6:20 and Targum 1 Samuel 31:9"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The verb indexes share the same tokens, including the armed participles. The Arabic sounds apply to deliverance. The relationship of loins, readiness for battle and strength in Isaiah 58:11 to extraction remains uncertain. SEDRA lexeme 1048, strong, has no NT token in the corpus. Lexeme 1049 supplies the attested plundering verb."
+}

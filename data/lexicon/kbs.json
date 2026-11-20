@@ -1,0 +1,105 @@
+{
+  "id": "kbs",
+  "root": "כבס",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "gloss": "wash",
+  "summary": "To wash clothing or a person so that uncleanness is removed.",
+  "words": [
+    {
+      "lemma": "כָּבַס",
+      "pos": "verb",
+      "gloss": "wash",
+      "bdb": [
+        "k.aj.aa"
+      ],
+      "stems": [
+        {
+          "stem": "piel",
+          "gloss": "wash",
+          "senses": [
+            {
+              "id": "wash-clean",
+              "gloss": "wash clean",
+              "definition": "The penitent asks Yahweh to wash away his iniquity and make him clean.",
+              "evidence": [
+                {
+                  "ref": "Psa.51.4",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "qal",
+          "gloss": "washer, fuller",
+          "senses": [
+            {
+              "id": "washer",
+              "gloss": "washer",
+              "definition": "A fuller or washer is named in the field beside Jerusalem.",
+              "evidence": [
+                {
+                  "ref": "Isa.7.3",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hothpaal",
+          "gloss": "be washed",
+          "senses": [
+            {
+              "id": "be-washed",
+              "gloss": "be washed",
+              "definition": "A garment is washed and inspected for uncleanness.",
+              "evidence": [
+                {
+                  "ref": "Lev.13.55",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be washed",
+          "senses": [
+            {
+              "id": "be-washed-2",
+              "gloss": "be washed",
+              "definition": "Clothing and leather are washed in water.",
+              "evidence": [
+                {
+                  "ref": "Lev.15.17",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-kabasu",
+      "lang": "akk",
+      "form": "kabāsu",
+      "translit": "kabāsu",
+      "gloss": "tread down, flatten",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep/x000011760, kabāsu"
+        }
+      ]
+    }
+  ],
+  "note": "The Psalm form is piel, washing or cleansing. Akkadian kabāsu means tread down or flatten and is recorded as possible only."
+}

@@ -1,0 +1,235 @@
+{
+  "id": "mdd",
+  "root": "מדד",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [],
+  "gloss": "measure, measured extent",
+  "summary": "An omer measures gathered manna and a line measures land. David asks what measure has been assigned to his days.",
+  "words": [
+    {
+      "lemma": "מִדָּה",
+      "pos": "noun",
+      "gloss": "measure, dimension, allotted span",
+      "bdb": [
+        "m.al.ac"
+      ],
+      "gender": "f",
+      "senses": [
+        {
+          "id": "dimension",
+          "gloss": "dimension",
+          "definition": "The curtains are to have the same dimensions. A measure can also be a length of time.",
+          "evidence": [
+            {
+              "ref": "Exo.26.2",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.39.5",
+              "role": "defining"
+            }
+          ]
+        },
+        {
+          "id": "standard-of-measure",
+          "gloss": "standard of measure",
+          "definition": "Justice applies to the measure used when goods are exchanged.",
+          "evidence": [
+            {
+              "ref": "Lev.19.35",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "akk-measure"
+      ]
+    },
+    {
+      "lemma": "מָדַד",
+      "pos": "verb",
+      "gloss": "measure",
+      "bdb": [
+        "m.al.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "measure",
+          "senses": [
+            {
+              "id": "measure",
+              "gloss": "measure",
+              "definition": "The people use an omer to measure what they gathered.",
+              "evidence": [
+                {
+                  "ref": "Exo.16.18",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "measure out",
+          "senses": [
+            {
+              "id": "measure-out",
+              "gloss": "measure out",
+              "definition": "David uses a cord to divide people into groups. The psalm speaks of measuring out a valley.",
+              "evidence": [
+                {
+                  "ref": "2Sa.8.2",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.60.8",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be measured",
+          "senses": [
+            {
+              "id": "be-measured",
+              "gloss": "be measured",
+              "definition": "The number of Israel is compared to sand that cannot be measured.",
+              "evidence": [
+                {
+                  "ref": "Hos.2.1",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpolel",
+          "gloss": "stretch oneself out",
+          "senses": [
+            {
+              "id": "stretch-oneself-out",
+              "gloss": "stretch oneself out",
+              "definition": "Elijah stretches his own body over the child three times.",
+              "evidence": [
+                {
+                  "ref": "1Ki.17.21",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "akk-measure"
+      ]
+    },
+    {
+      "lemma": "מַד",
+      "pos": "noun",
+      "gloss": "garment, measured portion",
+      "bdb": [
+        "m.al.ab"
+      ],
+      "gender": "m",
+      "senses": [
+        {
+          "id": "garment",
+          "gloss": "garment",
+          "definition": "Jonathan gives David his clothing along with his weapons.",
+          "evidence": [
+            {
+              "ref": "1Sa.18.4",
+              "role": "defining"
+            }
+          ]
+        },
+        {
+          "id": "measured-share",
+          "gloss": "measured share",
+          "definition": "Jerusalem’s lot is the portion measured to her.",
+          "evidence": [
+            {
+              "ref": "Jer.13.25",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מֵמַד",
+      "pos": "noun",
+      "gloss": "measurement",
+      "bdb": [
+        "m.al.ad"
+      ],
+      "gender": "m",
+      "senses": [
+        {
+          "id": "measurement",
+          "gloss": "measurement",
+          "definition": "The builder establishes the earth’s dimensions and stretches a measuring line over it.",
+          "evidence": [
+            {
+              "ref": "Job.38.5",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "akk-measure"
+      ]
+    },
+    {
+      "lemma": "מִדָּה",
+      "pos": "noun",
+      "gloss": "tribute",
+      "bdb": [
+        "m.al.af"
+      ],
+      "gender": "f",
+      "senses": [
+        {
+          "id": "tribute",
+          "gloss": "tribute",
+          "definition": "The people borrow money against fields and vineyards for the king’s levy.",
+          "evidence": [
+            {
+              "ref": "Neh.5.4",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-measure",
+      "lang": "akk",
+      "form": "madādu",
+      "translit": "madādu",
+      "gloss": "measure out",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep/x000012270"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The assessment in Nehemiah and the ordinary measurement share spellings in the surface index. Middin is a town."
+}

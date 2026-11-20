@@ -1,0 +1,852 @@
+{
+  "id": "pll",
+  "root": "פלל",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "tags": [
+    "prayer",
+    "intercession",
+    "judgment",
+    "worship"
+  ],
+  "gloss": "arbitrate, judge, intervene; pray, intercede",
+  "summary": "To stand between two parties and decide or plead: the piel is to arbitrate or intervene, as God (or the judges) arbitrates between man and man and Phinehas intervened so that the plague was stayed, and once to reckon or expect; the nouns פָּלִיל and its kin are the judges and their decision. The hithpael, the root's common form, is to pray: to bring a case before God, above all for another (Abraham, Moses, Samuel and Job pray “for” others), and also for oneself; תְּפִלָּה is prayer, and the title of psalms. 1Sa 2:25 sets the two side by side: if a man sins against a man God arbitrates (פִּלְלוֹ), but if against Yahweh, who will pray (יִתְפַּלֶּל) for him?",
+  "words": [
+    {
+      "lemma": "פָּלַל",
+      "pos": "verb",
+      "gloss": "arbitrate, intervene; reckon, expect; (hithpael) pray, intercede",
+      "bdb": [
+        "q.bq.aa"
+      ],
+      "summary": "Eighty-four times, four in the piel and the rest in the hithpael. The piel decides between parties; the hithpael is to make one's plea before God. The link is shown by 1Sa 2:25, where the two stems answer each other, and by the constructions: the one who prays does so בְּעַד or עַל “for” another, as an advocate.",
+      "stems": [
+        {
+          "stem": "piel",
+          "gloss": "arbitrate, judge, intervene; reckon, expect",
+          "senses": [
+            {
+              "id": "arbitrate",
+              "gloss": "arbitrate, judge between, intervene",
+              "definition": "To come between parties and settle the matter: to arbitrate between a man and the man he wronged, or to step in and execute judgment so that wrath is turned away.",
+              "evidence": [
+                {
+                  "ref": "1Sa.2.25",
+                  "role": "defining",
+                  "note": "“If a man sins against a man, וּפִלְלוֹ אֱלֹהִים; but if a man sins against Yahweh, who will pray (יִתְפַּלֶּל) for him?” The piel arbitrates between two men; against Yahweh there is no third party to decide, only one to plead."
+                },
+                {
+                  "ref": "Psa.106.30",
+                  "role": "defining",
+                  "note": "“Phinehas stood וַיְפַלֵּל, and the plague was stayed”: he executed judgment on the offenders (Num 25:7–8), and it was counted to him for righteousness (Psa 106:31)."
+                },
+                {
+                  "ref": "Num.25.7",
+                  "to": "Num.25.8",
+                  "note": "What Phinehas did: he took a spear and thrust them through, “and the plague was stayed”."
+                },
+                {
+                  "ref": "Ezk.16.52",
+                  "note": "“Bear your shame, אֲשֶׁר פִּלַּלְתְּ לַאֲחוֹתֵךְ”: by sinning worse than Samaria and Sodom, Jerusalem has decided the case in her sisters' favour; “they are more righteous than you”."
+                }
+              ],
+              "kin": [
+                "judges",
+                "judgment-office",
+                "for-judges",
+                "giving-decision"
+              ],
+              "cognate_ids": [
+                "arc-pelal",
+                "ar-falla"
+              ]
+            },
+            {
+              "id": "reckon",
+              "gloss": "reckon, expect",
+              "definition": "To judge in one's own mind what will be: Jacob had not reckoned to see Joseph's face again.",
+              "evidence": [
+                {
+                  "ref": "Gen.48.11",
+                  "role": "defining",
+                  "note": "“To see your face לֹא פִלָּלְתִּי, and behold, God has let me see your offspring also.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpael",
+          "gloss": "pray; intercede",
+          "senses": [
+            {
+              "id": "intercede",
+              "gloss": "pray for, intercede",
+              "definition": "With בְּעַד or עַל: to plead with God on behalf of another, that he be spared, healed or forgiven. Prophets and leaders do it, and are asked to; Yahweh can forbid it.",
+              "evidence": [
+                {
+                  "ref": "Gen.20.7",
+                  "role": "defining",
+                  "note": "“He is a prophet, וְיִתְפַּלֵּל בַּעַדְךָ, and you shall live.”"
+                },
+                {
+                  "ref": "Gen.20.17",
+                  "note": "“Abraham prayed to God, and God healed Abimelech.”"
+                },
+                {
+                  "ref": "Num.21.7",
+                  "role": "defining",
+                  "note": "“We have sinned … pray to Yahweh that he take away the serpents from us”; “and Moses prayed בְּעַד הָעָם”."
+                },
+                {
+                  "ref": "Deu.9.20",
+                  "note": "Yahweh was angry with Aaron to destroy him, “and I prayed for Aaron also at that time”."
+                },
+                {
+                  "ref": "1Sa.7.5",
+                  "note": "“Gather all Israel to Mizpah, and I will pray for you to Yahweh.”"
+                },
+                {
+                  "ref": "1Sa.12.23",
+                  "role": "defining",
+                  "note": "“Far be it from me to sin against Yahweh by ceasing לְהִתְפַּלֵּל בַּעַדְכֶם.”"
+                },
+                {
+                  "ref": "Job.42.8",
+                  "note": "“My servant Job shall pray for you, for him I will accept.”"
+                },
+                {
+                  "ref": "Job.42.10",
+                  "note": "Yahweh restored Job's fortunes “when he prayed for his friends”."
+                },
+                {
+                  "ref": "Jer.7.16",
+                  "role": "defining",
+                  "note": "“Do not pray for this people, and do not lift up cry or prayer (תְּפִלָּה) for them … for I will not hear you.”"
+                },
+                {
+                  "ref": "Jer.29.7",
+                  "note": "“Seek the peace of the city … and pray for it to Yahweh.”"
+                },
+                {
+                  "ref": "Jer.42.2"
+                }
+              ],
+              "kin": [
+                "prayer-for-others"
+              ]
+            },
+            {
+              "id": "pray",
+              "gloss": "pray (to God)",
+              "definition": "With אֶל, לִפְנֵי or עַל: to address God with one's request, confession or praise; in Solomon's prayer, toward the house he chose, or toward the land and city from captivity.",
+              "evidence": [
+                {
+                  "ref": "1Sa.1.10",
+                  "note": "Hannah, “bitter of soul, וַתִּתְפַּלֵּל to Yahweh, and wept”."
+                },
+                {
+                  "ref": "1Sa.1.27",
+                  "role": "defining",
+                  "note": "“For this boy I prayed, and Yahweh has given me my request which I asked of him.”"
+                },
+                {
+                  "ref": "1Sa.2.1",
+                  "note": "“And Hannah prayed and said, My heart exults in Yahweh”: her prayer is praise."
+                },
+                {
+                  "ref": "1Ki.8.28",
+                  "role": "defining",
+                  "note": "“The prayer (הַתְּפִלָּה) which your servant prays (מִתְפַּלֵּל) before you today”: the verb with its noun."
+                },
+                {
+                  "ref": "1Ki.8.30",
+                  "note": "“Which they pray toward this place … hear and forgive.”"
+                },
+                {
+                  "ref": "1Ki.8.48",
+                  "note": "From the land of their captors, “and they pray to you toward their land … the city you have chosen, and the house”."
+                },
+                {
+                  "ref": "2Ki.20.2",
+                  "note": "Hezekiah turned his face to the wall “and prayed to Yahweh”; and Yahweh answered “I have heard your prayer” (2Ki 20:5)."
+                },
+                {
+                  "ref": "Jon.2.2",
+                  "note": "“Jonah prayed to Yahweh his God from the belly of the fish.”"
+                },
+                {
+                  "ref": "Psa.5.3",
+                  "note": "“My king and my God, for to you I pray.”"
+                },
+                {
+                  "ref": "Psa.32.6",
+                  "note": "“For this let every godly one pray to you in a time of finding.”"
+                },
+                {
+                  "ref": "Neh.1.4",
+                  "note": "“Fasting and praying before the God of heaven.”"
+                },
+                {
+                  "ref": "Dan.9.4",
+                  "note": "“I prayed to Yahweh my God and confessed.”"
+                }
+              ],
+              "kin": [
+                "prayer"
+              ]
+            },
+            {
+              "id": "pray-idol",
+              "gloss": "pray to an idol",
+              "definition": "Of the nations: to pray to a god of wood that cannot save, or to a high place's sanctuary to no effect.",
+              "evidence": [
+                {
+                  "ref": "Isa.44.17",
+                  "role": "defining",
+                  "note": "Of the rest of the wood “he makes a god … and bows down to it and prays to it and says, Deliver me, for you are my god”."
+                },
+                {
+                  "ref": "Isa.45.20",
+                  "role": "defining",
+                  "note": "“They carry the wood of their idol וּמִתְפַּלְלִים אֶל־אֵל לֹא יוֹשִׁיעַ.”"
+                },
+                {
+                  "ref": "Isa.16.12",
+                  "note": "Moab wearies himself on the high place and comes to his sanctuary to pray, “and will not prevail”."
+                },
+                {
+                  "ref": "Isa.45.14",
+                  "note": "The opposite: the nations will bow down to Israel and pray to her, “Surely God is in you, and there is no other”."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "προσεύχομαι",
+          "gloss": "pray",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.20.7, וְיִתְפַּלֵּל → προσεύξεται; 1Sa.1.10; 1Ki.8.30; προσεύχομαι renders פָּלַל ×34 as aligned under the lemma, with further inflected forms (προσεύχονται ×8, προσεύχωνται ×7, …)"
+            },
+            {
+              "ref": "Jas.5.14",
+              "role": "defining",
+              "note": "“Let him call the elders of the assembly, and let them pray (προσευξάσθωσαν) over him”: intercession for the sick, as Abraham’s for Abimelech (Gen 20:7, 17)."
+            },
+            {
+              "ref": "Mat.6.6",
+              "note": "“When you pray (προσεύχῃ), go into your room … and pray to your Father who is in secret.”"
+            },
+            {
+              "ref": "1Th.5.17",
+              "note": "“Pray (προσεύχεσθε) without ceasing”: as Samuel would not cease to pray (1Sa 12:23)."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "שָׁאַל",
+            "note": "“Ask”: what Hannah prayed for is her request (שְׁאֵלָה) which she asked.",
+            "evidence": [
+              {
+                "ref": "1Sa.1.27",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "הִשְׁתַּחֲוָה",
+            "note": "“Bow down”: beside praying, to an idol or to Israel.",
+            "evidence": [
+              {
+                "ref": "Isa.44.17",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.45.14"
+              }
+            ]
+          },
+          {
+            "lemma": "הִתְוַדָּה",
+            "note": "“Confess”: prayer as confession of sin.",
+            "evidence": [
+              {
+                "ref": "Dan.9.4",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezr.10.1"
+              },
+              {
+                "ref": "Neh.1.6"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "הִתְפַּלֵּל בְּעַד",
+            "gloss": "pray for, intercede for",
+            "evidence": [
+              {
+                "ref": "Gen.20.7",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.21.7"
+              },
+              {
+                "ref": "1Sa.12.23"
+              },
+              {
+                "ref": "Jer.7.16"
+              }
+            ]
+          },
+          {
+            "phrase": "הִתְפַּלֵּל דֶּרֶךְ",
+            "gloss": "pray toward (the land, the city, the house)",
+            "evidence": [
+              {
+                "ref": "1Ki.8.44",
+                "role": "defining"
+              },
+              {
+                "ref": "1Ki.8.48"
+              },
+              {
+                "ref": "2Ch.6.38"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "תְּפִלָּה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "prayer",
+      "bdb": [
+        "q.bq.ab"
+      ],
+      "summary": "The noun of the hithpael, seventy-seven times: what one prays, a plea for oneself or for others; and the title of a psalm or song of prayer.",
+      "senses": [
+        {
+          "id": "prayer",
+          "gloss": "prayer, plea to God",
+          "definition": "What one prays: the plea, confession or praise brought before God, which he hears or refuses.",
+          "evidence": [
+            {
+              "ref": "1Ki.8.28",
+              "role": "defining",
+              "note": "“The prayer which your servant prays before you.”"
+            },
+            {
+              "ref": "Pro.15.8",
+              "role": "defining",
+              "note": "“The sacrifice of the wicked is an abomination to Yahweh, but the prayer of the upright is his delight.”"
+            },
+            {
+              "ref": "Pro.15.29",
+              "note": "“Yahweh is far from the wicked, but the prayer of the righteous he hears.”"
+            },
+            {
+              "ref": "Pro.28.9",
+              "note": "“One who turns away his ear from hearing the law, even his prayer is an abomination.”"
+            },
+            {
+              "ref": "Isa.1.15",
+              "note": "“Even though you make many prayers, I will not hear; your hands are full of blood.”"
+            },
+            {
+              "ref": "Psa.65.3",
+              "note": "“You who hear prayer, to you all flesh shall come.”"
+            },
+            {
+              "ref": "Psa.141.2",
+              "role": "defining",
+              "note": "“Let my prayer be set as incense before you, the lifting up of my palms as the evening offering.”"
+            },
+            {
+              "ref": "Jon.2.8",
+              "note": "“My prayer came to you, to your holy temple.”"
+            },
+            {
+              "ref": "2Ki.20.5",
+              "note": "“I have heard your prayer, I have seen your tears.”"
+            },
+            {
+              "ref": "Lam.3.44",
+              "note": "“You have covered yourself with a cloud, so that no prayer passes through.”"
+            },
+            {
+              "ref": "Dan.9.21",
+              "note": "“While I was speaking in prayer”, Gabriel came at the time of the evening offering."
+            }
+          ],
+          "kin": [
+            "pray"
+          ]
+        },
+        {
+          "id": "prayer-for-others",
+          "gloss": "prayer for others, intercession",
+          "definition": "A prayer lifted up on behalf of others.",
+          "evidence": [
+            {
+              "ref": "2Ki.19.4",
+              "role": "defining",
+              "note": "“Lift up a prayer for the remnant that is left.”"
+            },
+            {
+              "ref": "Jer.7.16",
+              "note": "“Do not lift up cry or prayer for them.”"
+            },
+            {
+              "ref": "Psa.35.13",
+              "note": "For his enemies in their sickness he wore sackcloth and fasted, “and my prayer returned to my own bosom”."
+            },
+            {
+              "ref": "Psa.109.4",
+              "note": "“In return for my love they are my adversaries, וַאֲנִי תְפִלָּה”: and I am all prayer."
+            }
+          ],
+          "kin": [
+            "intercede"
+          ]
+        },
+        {
+          "id": "prayer-psalm",
+          "gloss": "a prayer (as a title of a psalm or song)",
+          "definition": "A composition of prayer, named in its heading; the psalms of David are called his prayers.",
+          "evidence": [
+            {
+              "ref": "Psa.72.20",
+              "role": "defining",
+              "note": "“The prayers of David son of Jesse are ended.”"
+            },
+            {
+              "ref": "Hab.3.1",
+              "role": "defining",
+              "note": "“A prayer of Habakkuk the prophet, on shigionoth”: a song with musical directions (Hab 3:19)."
+            },
+            {
+              "ref": "Psa.17.1"
+            },
+            {
+              "ref": "Psa.86.1"
+            },
+            {
+              "ref": "Psa.90.1",
+              "note": "“A prayer of Moses, the man of God.”"
+            },
+            {
+              "ref": "Psa.102.1",
+              "note": "“A prayer of the afflicted, when he faints and pours out his complaint before Yahweh.”"
+            },
+            {
+              "ref": "Psa.142.1"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "προσευχή",
+          "gloss": "prayer",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Isa.56.7, בֵּית־תְּפִלָּה → οἶκος προσευχῆς; Psa.141.2, תְּפִלָּתִי → ἡ προσευχή μου; προσευχή renders תְּפִלָּה ×48"
+            },
+            {
+              "ref": "Mrk.11.17",
+              "role": "defining",
+              "note": "“Is it not written, My house shall be called a house of prayer (οἶκος προσευχῆς) for all the nations?” Isa 56:7."
+            },
+            {
+              "ref": "Mat.21.13"
+            },
+            {
+              "ref": "Luk.19.46"
+            },
+            {
+              "ref": "Rev.8.4",
+              "note": "“The smoke of the incense, with the prayers (προσευχαῖς) of the saints, went up before God”: Psa 141:2."
+            },
+            {
+              "ref": "Rev.5.8"
+            }
+          ]
+        },
+        {
+          "lemma": "δέησις",
+          "gloss": "petition, supplication",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "δέησις renders תְּפִלָּה ×5"
+            },
+            {
+              "ref": "Jas.5.16",
+              "note": "“The petition (δέησις) of a righteous man avails much”: the prayer of the righteous that Yahweh hears (Pro 15:29)."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "תְּחִנָּה",
+            "note": "“Supplication”: the fixed partner of תְּפִלָּה in Solomon's prayer.",
+            "evidence": [
+              {
+                "ref": "1Ki.8.28",
+                "role": "defining"
+              },
+              {
+                "ref": "1Ki.8.45"
+              },
+              {
+                "ref": "2Ch.6.39"
+              }
+            ]
+          },
+          {
+            "lemma": "רִנָּה",
+            "note": "“Ringing cry”.",
+            "evidence": [
+              {
+                "ref": "1Ki.8.28"
+              },
+              {
+                "ref": "Jer.7.16"
+              },
+              {
+                "ref": "Psa.17.1",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "קְטֹרֶת",
+            "note": "“Incense”: prayer set before God as incense.",
+            "evidence": [
+              {
+                "ref": "Psa.141.2",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "זֶבַח רְשָׁעִים",
+            "note": "“The sacrifice of the wicked”, an abomination, against the prayer of the upright, his delight.",
+            "evidence": [
+              {
+                "ref": "Pro.15.8",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "בֵּית תְּפִלָּה",
+            "gloss": "house of prayer",
+            "evidence": [
+              {
+                "ref": "Isa.56.7",
+                "role": "defining",
+                "note": "“My house shall be called a house of prayer for all the peoples.”"
+              },
+              {
+                "ref": "Mrk.11.17"
+              }
+            ]
+          },
+          {
+            "phrase": "נָשָׂא תְפִלָּה",
+            "gloss": "lift up a prayer",
+            "evidence": [
+              {
+                "ref": "2Ki.19.4",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.37.4"
+              },
+              {
+                "ref": "Jer.7.16"
+              }
+            ]
+          },
+          {
+            "phrase": "שָׁמַע תְּפִלָּה",
+            "gloss": "hear prayer",
+            "evidence": [
+              {
+                "ref": "Psa.65.3",
+                "role": "defining"
+              },
+              {
+                "ref": "1Ki.9.3"
+              },
+              {
+                "ref": "2Ki.20.5"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "פָּלִיל",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "judge, arbiter",
+      "bdb": [
+        "q.bq.ad"
+      ],
+      "summary": "Three times, always plural: those who settle a case and fix a penalty.",
+      "senses": [
+        {
+          "id": "judges",
+          "gloss": "judges, arbiters",
+          "definition": "Those who decide between parties: the damages a man pays are fixed by them; an offence “of judges” is one they would punish.",
+          "evidence": [
+            {
+              "ref": "Exo.21.22",
+              "role": "defining",
+              "note": "When men fight and strike a pregnant woman, he shall be fined as her husband lays on him, “וְנָתַן בִּפְלִלִים”: and pay as the arbiters decide."
+            },
+            {
+              "ref": "Job.31.11",
+              "role": "defining",
+              "note": "Adultery “is lewdness, and it is עָוֺן פְּלִילִים”: an iniquity for the judges."
+            },
+            {
+              "ref": "Deu.32.31",
+              "note": "“Their rock is not as our Rock, וְאֹיְבֵינוּ פְּלִילִים”: our enemies themselves being judges."
+            }
+          ],
+          "kin": [
+            "arbitrate"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "פְּלִילָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "arbitration, decision",
+      "bdb": [
+        "q.bq.ae"
+      ],
+      "summary": "Once, in Moab's plea to Zion; its sense rests on its parallel and on the root's other words.",
+      "senses": [
+        {
+          "id": "judgment-office",
+          "gloss": "arbitration, a judge's decision",
+          "definition": "The deciding of a case: Zion is asked to give counsel and decide for the fugitives of Moab, sheltering them.",
+          "evidence": [
+            {
+              "ref": "Isa.16.3",
+              "role": "defining",
+              "note": "“Bring counsel, עֲשׂוּ פְלִילָה; make your shade like night at noon; hide the outcasts.”"
+            }
+          ],
+          "kin": [
+            "arbitrate",
+            "judges"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "פְּלִילִי",
+      "pos": "adjective",
+      "gloss": "for judges, punishable",
+      "bdb": [
+        "q.bq.af"
+      ],
+      "summary": "Once, in the phrase of Job 31:11 with the adjective for the noun.",
+      "senses": [
+        {
+          "id": "for-judges",
+          "gloss": "for the judges, punishable",
+          "definition": "Of an offence: one the judges would punish.",
+          "evidence": [
+            {
+              "ref": "Job.31.28",
+              "role": "defining",
+              "note": "Worshipping the sun and moon “also is עָוֺן פְּלִילִי, for I would have denied God above”: as עָוֺן פְּלִילִים in Job 31:11."
+            }
+          ],
+          "kin": [
+            "judges"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "פְּלִילִיָּה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "judgment, giving a decision",
+      "bdb": [
+        "q.bq.ag"
+      ],
+      "summary": "Once, of drunken priests and prophets.",
+      "senses": [
+        {
+          "id": "giving-decision",
+          "gloss": "judgment, the giving of a decision",
+          "definition": "The decision the priest gives: the drunken priest stumbles in it as the prophet reels in vision.",
+          "evidence": [
+            {
+              "ref": "Isa.28.7",
+              "role": "defining",
+              "note": "“They reel in vision (בָּרֹאֶה), they stumble פְּלִילִיָּה”: the prophet's seeing and the priest's deciding, both confused by drink."
+            },
+            {
+              "ref": "Deu.17.9",
+              "note": "The priests and the judge give the decision in hard cases."
+            }
+          ],
+          "kin": [
+            "arbitrate",
+            "judges"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-pelal",
+      "lang": "arc",
+      "form": "פְּלַל",
+      "translit": "pəlal",
+      "gloss": "argue, debate",
+      "relation": "possible",
+      "note": "Jewish Aramaic of the Jerusalem Talmud: to hold debates with fellow students over a problem. Arguing a case is near the Hebrew's arbitration and pleading, but the word is rare and Jastrow refers it to פלפל.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. פְּלַל (ch.), citing Y. Shebi. VIII, 38b top (דלא פַלְתָּה עם חביריך, that you did not hold debates with your fellow students)"
+        }
+      ]
+    },
+    {
+      "id": "ar-falla",
+      "lang": "ar",
+      "form": "فَلَّ",
+      "translit": "falla",
+      "gloss": "break or notch the edge of; defeat; (once explained as) altercate, wrangle with",
+      "relation": "possible",
+      "note": "The sense is breaking and notching; only one gloss, on a phrase in the story of Umm-Zara, gives “altercate, wrangle with thee”, which would touch the Hebrew's pleading and deciding. Kept as a lead, not as support.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 2433, art. فل, فَلَّهُ (n34412)",
+          "note": "“He broke it, or notched it, in its edge … He defeated the army … or by فلّك is meant altercate, or wrangle, with thee.”"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "prayer",
+      "statement": "Prayer is to Yahweh, who hears it: “you who hear prayer, to you all flesh shall come” (Psa 65:3). The man who makes a god of wood prays to it, “Deliver me”, but it is “a god that cannot save” (Isa 44:17; 45:20), and the nations will at last pray to Israel, saying “God is in you, and there is no other” (Isa 45:14). Prayer is heard according to the one who prays: the prayer of the upright is Yahweh's delight, while the prayer of one who turns his ear from the law is an abomination, and hands full of blood are not heard however many the prayers (Pro 15:8, 29; 28:9; Isa 1:15).",
+      "evidence": [
+        {
+          "ref": "Psa.65.3"
+        },
+        {
+          "ref": "Isa.44.17"
+        },
+        {
+          "ref": "Isa.45.20"
+        },
+        {
+          "ref": "Isa.45.14"
+        },
+        {
+          "ref": "Pro.15.8"
+        },
+        {
+          "ref": "Pro.15.29"
+        },
+        {
+          "ref": "Pro.28.9"
+        },
+        {
+          "ref": "Isa.1.15"
+        }
+      ]
+    },
+    {
+      "topic": "mediator",
+      "statement": "Scripture's intercessors are men chosen by God: Abraham the prophet prays for Abimelech and he lives, Moses for the people and for Aaron, Samuel counts it sin to cease praying for Israel, and Yahweh accepts Job's prayer for his friends (Gen 20:7; Num 21:7; Deu 9:20; 1Sa 12:23; Job 42:8). Eli asks, if a man sins against Yahweh, “who will pray for him?” (1Sa 2:25). The New Testament answers: “there is one God, and one mediator between God and men, the man Christ Jesus”, who, raised from the dead and at God's right hand, “always lives to make intercession” for those who come to God through him (1Ti 2:5; Rom 8:34; Heb 7:25).",
+      "evidence": [
+        {
+          "ref": "Gen.20.7"
+        },
+        {
+          "ref": "Num.21.7"
+        },
+        {
+          "ref": "Deu.9.20"
+        },
+        {
+          "ref": "1Sa.12.23"
+        },
+        {
+          "ref": "Job.42.8"
+        },
+        {
+          "ref": "1Sa.2.25"
+        },
+        {
+          "ref": "1Ti.2.5"
+        },
+        {
+          "ref": "Rom.8.34"
+        },
+        {
+          "ref": "Heb.7.25"
+        }
+      ]
+    },
+    {
+      "topic": "kingdom-of-god",
+      "statement": "Yahweh promises to bring the foreigners who keep his covenant to his holy mountain and make them joyful in his house of prayer, “for my house shall be called a house of prayer for all the peoples” (Isa 56:6–7). Jesus quoted it of the house in Jerusalem (Mrk 11:17). The house on Zion is to be the place where all nations come to Yahweh, as the nations stream to the mountain of the house of Yahweh in the last days (Isa 2:2–3).",
+      "evidence": [
+        {
+          "ref": "Isa.56.6",
+          "to": "Isa.56.7"
+        },
+        {
+          "ref": "Mrk.11.17"
+        },
+        {
+          "ref": "Isa.2.2",
+          "to": "Isa.2.3"
+        }
+      ]
+    }
+  ],
+  "note": "Words: פָּלַל (q.bq.aa), תְּפִלָּה (q.bq.ab), פָּלִיל (q.bq.ad), פְּלִילָה (q.bq.ae), פְּלִילִי (q.bq.af), פְּלִילִיָּה (q.bq.ag). Names in their own files: names/palal.json (q.bq.ac), names/pelaliah.json (q.bq.ah), names/ephlal.json (q.bq.ai). Left out: the gentilic פְּלֹנִי Pelonite (q.bq.ak, 1Ch 11:27, 36; 27:10), a TIPNR group (Pelonites@2Sa.23.26), not a person; 2Sa 23:26 has פַּלְטִי there, so it is probably a place name of another root; also the zero-token cross-references a.fb.ah and w.bk.ad. Not taken: אֱלִיפַל Eliphal (a.dl.aw, 1Ch 11:35), read by some as “God has judged”, but its parallel in 2Sa 23:34 is אֱלִיפֶלֶט (root פלט), so the name may be a variant of Eliphelet; left for the user to decide. Open questions: (1) the tie between the piel “arbitrate” and the hithpael “pray” rests on 1Sa 2:25 and the בְּעַד construction; no cognate decides it. Klein's leads were not followed: an Old Assyrian palālum “sit in judgment” (CAD P not consulted; the Oracc glossaries have no palālu), and Arabic falā “search, examine” (Lane art. فلو/فلى has wean, desert; the search sense not found there). (2) Gen 48:11 “reckon, expect” is taken as judging in the mind. No Syriac root PLL in SEDRA and no Peshitta words; Biblical Aramaic prays with צְלָא (Dan 6:11), another root."
+}

@@ -1,0 +1,136 @@
+{
+  "id": "g3x",
+  "root": "געש",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "earth",
+    "water",
+    "movement"
+  ],
+  "gloss": "shake, surge, stagger",
+  "summary": "In Psalm 18 the first verb marks the shaking of the earth and a second form describes the mountain foundations. Jeremiah extends the same movement to heaving waters and people staggering under judgment.",
+  "words": [
+    {
+      "lemma": "גָּעַשׁ",
+      "bdb": [
+        "c.cs.aa"
+      ],
+      "pos": "verb",
+      "gloss": "shake, surge, stagger",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "shake",
+          "senses": [
+            {
+              "id": "shake",
+              "gloss": "shake",
+              "definition": "The earth itself shakes as Yahweh answers the cry for help.",
+              "evidence": [
+                {
+                  "ref": "Psa.18.8",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpael",
+          "gloss": "shake or surge",
+          "senses": [
+            {
+              "id": "shake-or-surge",
+              "gloss": "shake or surge",
+              "definition": "The mountain foundations shake in David’s song. Waves surge against the boundary Yahweh has given the sea.",
+              "evidence": [
+                {
+                  "ref": "Psa.18.8",
+                  "role": "defining"
+                },
+                {
+                  "ref": "2Sa.22.8"
+                },
+                {
+                  "ref": "Jer.5.22"
+                },
+                {
+                  "ref": "Jer.46.7"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpolel",
+          "gloss": "toss or stagger",
+          "senses": [
+            {
+              "id": "toss-or-stagger",
+              "gloss": "toss or stagger",
+              "definition": "Egypt rises like the Nile with tossing waters. Nations that drink the cup stagger at the coming sword.",
+              "evidence": [
+                {
+                  "ref": "Jer.46.8",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jer.25.16"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be shaken",
+          "senses": [
+            {
+              "id": "be-shaken",
+              "gloss": "be shaken",
+              "definition": "In Job’s account people are shaken at midnight and the mighty pass away.",
+              "evidence": [
+                {
+                  "ref": "Job.34.20",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "גַּעַשׁ",
+      "bdb": [
+        "c.cs.ab"
+      ],
+      "pos": "name",
+      "gloss": "Gaash",
+      "senses": [
+        {
+          "id": "gaash",
+          "gloss": "Gaash",
+          "definition": "Joshua is buried north of Mount Gaash in the hill country of Ephraim. One of David’s warriors is identified by the valleys of Gaash.",
+          "evidence": [
+            {
+              "ref": "Jos.24.30",
+              "role": "defining"
+            },
+            {
+              "ref": "Jdg.2.9"
+            },
+            {
+              "ref": "2Sa.23.30"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [],
+  "doctrine": [],
+  "note": "The suggested Akkadian comparison gešû means belch (Oracc, armep x000067210). It offers little evidence for the earthquake sense. The origin of the mountain name is uncertain; Gatam in Genesis 36 has different final consonants."
+}

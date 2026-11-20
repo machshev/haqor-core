@@ -1,0 +1,227 @@
+{
+  "id": "7md",
+  "root": "חמד",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "desire"
+  ],
+  "gloss": "desire, take delight in",
+  "summary": "The object and setting determine the force of desire. The commandments forbid coveting a neighbour’s possessions, while the psalmist values Yahweh’s judgments above gold.",
+  "words": [
+    {
+      "lemma": "חָמַד",
+      "bdb": [
+        "h.de.aa"
+      ],
+      "pos": "verb",
+      "gloss": "desire",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "desire, covet",
+          "senses": [
+            {
+              "id": "desire-covet",
+              "gloss": "desire, covet",
+              "definition": "Achan sees valuable spoil, desires it and takes it.",
+              "evidence": [
+                {
+                  "ref": "Jos.7.21",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Exo.20.17"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be desirable",
+          "senses": [
+            {
+              "id": "be-desirable",
+              "gloss": "be desirable",
+              "definition": "The trees are pleasing to the eye. Yahweh’s judgments are more desirable than fine gold.",
+              "evidence": [
+                {
+                  "ref": "Psa.19.11",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Gen.2.9"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "delight in",
+          "senses": [
+            {
+              "id": "delight-in",
+              "gloss": "delight in",
+              "definition": "The speaker delights to sit in the shade of her beloved.",
+              "evidence": [
+                {
+                  "ref": "Sng.2.3",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-comparison"
+      ]
+    },
+    {
+      "lemma": "חֶמֶד",
+      "bdb": [
+        "h.de.ab"
+      ],
+      "pos": "noun",
+      "gloss": "delight",
+      "senses": [
+        {
+          "id": "delight",
+          "gloss": "delight",
+          "definition": "The vineyard and fruitful fields are spoken of as delightful.",
+          "evidence": [
+            {
+              "ref": "Isa.27.2",
+              "role": "defining"
+            },
+            {
+              "ref": "Isa.32.12"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "חֶמְדָּה",
+      "bdb": [
+        "h.de.ac"
+      ],
+      "pos": "noun",
+      "gloss": "desirability, precious thing",
+      "senses": [
+        {
+          "id": "desirability-precious-thing",
+          "gloss": "desirability, precious thing",
+          "definition": "Rebekah selects Esau’s prized clothes. The psalm calls the land a desirable land.",
+          "evidence": [
+            {
+              "ref": "Gen.27.15",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.106.24"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "חֲמוּדָה",
+      "bdb": [
+        "h.de.ad"
+      ],
+      "pos": "noun",
+      "gloss": "preciousness",
+      "senses": [
+        {
+          "id": "preciousness",
+          "gloss": "preciousness",
+          "definition": "The messenger addresses Daniel as a man greatly treasured.",
+          "evidence": [
+            {
+              "ref": "Dan.10.11",
+              "role": "defining"
+            },
+            {
+              "ref": "Dan.9.23"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "מַחְמָד",
+      "bdb": [
+        "h.de.af"
+      ],
+      "pos": "noun",
+      "gloss": "delight, treasure",
+      "senses": [
+        {
+          "id": "delight-treasure",
+          "gloss": "delight, treasure",
+          "definition": "What is precious to the eyes can be demanded as spoil. Ezekiel also applies the expression to his wife.",
+          "evidence": [
+            {
+              "ref": "1Ki.20.6",
+              "role": "defining"
+            },
+            {
+              "ref": "Ezk.24.16"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "מַחְמֹד",
+      "bdb": [
+        "h.de.ag"
+      ],
+      "pos": "noun",
+      "gloss": "precious possession",
+      "senses": [
+        {
+          "id": "precious-possession",
+          "gloss": "precious possession",
+          "definition": "Jerusalem recalls the treasures she enjoyed before her fall.",
+          "evidence": [
+            {
+              "ref": "Lam.1.7",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-comparison",
+      "lang": "arc",
+      "form": "חֲמַד",
+      "translit": "ḥămad",
+      "gloss": "desire, long for",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "חֲמַד, Targum Onkelos Genesis 31:30"
+        }
+      ],
+      "sounds": {
+        "ח": "ḥ"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "Daniel’s plural of desirability describes the person held dear. The spelling of the noun in Lamentations 1:7 differs from the usual form."
+}

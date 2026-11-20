@@ -1,0 +1,1533 @@
+{
+  "id": "m92",
+  "root": "מצא",
+  "status": "draft",
+  "updated": "2026-11-15",
+  "tags": [
+    "finding",
+    "seeking",
+    "favour",
+    "judgment",
+    "kingdom",
+    "time"
+  ],
+  "gloss": "find; come upon, reach; attain; suffice; be found, be present",
+  "summary": "The verb is to find: to come upon what is sought (Joseph found his brothers at Dothan, the lost asses were found), or upon what was not sought (the angel found Hagar, a lion met the man of God), and so to reach, obtain or get (Isaac reaped a hundredfold, “happy the man who finds wisdom”). It is also to find out what a man is (“God has found out the iniquity of your servants”), and with “hand” to have enough or be able (“if her hand does not find enough for a lamb”). The niphal is to be found, to be caught in an act, and to be present or at hand; and “to find favour in the eyes of” someone is to be looked on with goodwill. Yahweh is found by those who seek him with all their heart, and evil and sin “find” the one who does them. The Aramaic of Daniel and the Peshitta say the same with מְטָא, to reach or arrive (the son of man reached the Ancient of Days; the time came and the saints possessed the kingdom), and the Akkadian, Ugaritic and Jewish Aramaic cognates mean reach, suffice, be able.",
+  "words": [
+    {
+      "lemma": "מָצָא",
+      "pos": "verb",
+      "gloss": "find, come upon; meet, befall; find out; attain, get; (with hand) have enough, be able; suffice; (niphal) be found, be caught, be present; (hiphil) bring to, deliver, make find",
+      "bdb": [
+        "m.db.aa"
+      ],
+      "cognate_ids": [
+        "akk-masu",
+        "uga-mza",
+        "arc-meta",
+        "arc-mesa"
+      ],
+      "summary": "About 455 uses: some 307 in the qal, 140 in the niphal and 8 in the hiphil. Its core is coming upon something or someone, whether sought or not; the context shows whether the finding is the end of a search, a chance meeting, a discovery of guilt, or reaching enough of something. The cognates (Akkadian maṣû “reach, suffice, be able”, Ugaritic mẓʾ “reach”, Aramaic מְטָא “reach, arrive”) show the older sense “reach, come to”.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "find (what is sought); come upon, meet; befall; find out, discover; attain, get; (with hand) have enough, be able; suffice; find favour",
+          "senses": [
+            {
+              "id": "find-sought",
+              "gloss": "find (what is sought)",
+              "definition": "To come upon a person or thing that one has been looking for. The verb is the answer to בִּקֵּשׁ “seek”: seeking ends either in finding or in “and I did not find”.",
+              "evidence": [
+                {
+                  "ref": "Gen.37.15",
+                  "note": "A man found Joseph wandering in the field and asked him, “What are you seeking (מַה תְּבַקֵּשׁ)?”"
+                },
+                {
+                  "ref": "Gen.37.17",
+                  "role": "defining",
+                  "note": "“Joseph went after his brothers וַיִּמְצָאֵם בְּדֹתָן”: the search ends in the finding."
+                },
+                {
+                  "ref": "Sng.3.1",
+                  "role": "defining",
+                  "note": "“I sought him whom my soul loves; בִּקַּשְׁתִּיו וְלֹא מְצָאתִיו”: seeking without finding."
+                },
+                {
+                  "ref": "Sng.3.4",
+                  "note": "“Hardly had I passed by them when I found him whom my soul loves; I held him and would not let him go.”"
+                },
+                {
+                  "ref": "Deu.22.3",
+                  "role": "defining",
+                  "note": "“Every lost thing (אֲבֵדַת) of your brother which is lost from him וּמְצָאתָהּ”: finding is the opposite of losing."
+                },
+                {
+                  "ref": "Ecc.7.28",
+                  "note": "“Which still my soul sought, but I have not found: one man among a thousand I found.”"
+                },
+                {
+                  "ref": "Jer.5.1",
+                  "note": "“Seek in her squares, if you can find a man, if there is one who does justice.”"
+                },
+                {
+                  "ref": "Ezk.22.30",
+                  "note": "“I sought among them a man who would build up the wall and stand in the gap … but I did not find one.”"
+                },
+                {
+                  "ref": "Pro.31.10",
+                  "note": "“A woman of worth, who can find?”"
+                }
+              ]
+            },
+            {
+              "id": "find-yahweh",
+              "gloss": "find Yahweh, find his word",
+              "definition": "Of men seeking Yahweh or his word: they find him when they seek him with the whole heart, and do not find him when he has withdrawn from them.",
+              "evidence": [
+                {
+                  "ref": "Deu.4.29",
+                  "role": "defining",
+                  "note": "“From there you will seek Yahweh your God וּמָצָאתָ, when you seek him with all your heart and with all your soul.”"
+                },
+                {
+                  "ref": "Jer.29.13",
+                  "role": "defining",
+                  "note": "“You will seek me and find me (וּמְצָאתֶם), when you seek me with all your heart.”"
+                },
+                {
+                  "ref": "Pro.8.17",
+                  "note": "Wisdom: “those who seek me diligently will find me (יִמְצָאֻנְנִי)”."
+                },
+                {
+                  "ref": "Hos.5.6",
+                  "role": "defining",
+                  "note": "“With their flocks and herds they will go to seek Yahweh, וְלֹא יִמְצָאוּ; he has withdrawn from them.”"
+                },
+                {
+                  "ref": "Amo.8.12",
+                  "note": "“They will rove about to seek the word of Yahweh, and they will not find it.”"
+                },
+                {
+                  "ref": "Job.23.3",
+                  "note": "“Who will give that I knew, and I would find him; I would come to his place!”"
+                },
+                {
+                  "ref": "Job.11.7",
+                  "note": "“Will you find God by searching?”"
+                }
+              ]
+            },
+            {
+              "id": "come-upon",
+              "gloss": "come upon, meet (without seeking)",
+              "definition": "To come upon someone or something by the way, unlooked for: a spring, a vine, a man in the field. Of an enemy, a beast or an archer it is to meet with harm.",
+              "evidence": [
+                {
+                  "ref": "Gen.16.7",
+                  "role": "defining",
+                  "note": "“The angel of Yahweh found her by a spring of water in the wilderness.”"
+                },
+                {
+                  "ref": "Gen.36.24",
+                  "note": "Anah “who found the hot springs in the wilderness when he was pasturing the donkeys”."
+                },
+                {
+                  "ref": "2Ki.4.39",
+                  "note": "One went out to gather herbs “and found a vine of the field”."
+                },
+                {
+                  "ref": "1Sa.30.11",
+                  "note": "“They found an Egyptian in the field.”"
+                },
+                {
+                  "ref": "1Ki.13.24",
+                  "role": "defining",
+                  "note": "“A lion met him (וַיִּמְצָאֵהוּ) in the road and killed him.”"
+                },
+                {
+                  "ref": "Gen.4.14",
+                  "note": "Cain: “everyone who finds me will kill me”."
+                },
+                {
+                  "ref": "1Sa.31.3",
+                  "note": "“The archers found him (וַיִּמְצָאֻהוּ), and he was badly wounded by the archers.”"
+                },
+                {
+                  "ref": "Deu.32.10",
+                  "note": "Yahweh “found him in a wilderness land” and kept him as the pupil of his eye."
+                },
+                {
+                  "ref": "Hos.9.10",
+                  "note": "“Like grapes in the wilderness I found Israel.”"
+                }
+              ]
+            },
+            {
+              "id": "befall",
+              "gloss": "befall, come upon (of trouble, sin, judgment)",
+              "definition": "With trouble, evil or sin as subject: it reaches and overtakes a man. With “hand” of a king or of Yahweh, the hand reaches his enemies.",
+              "evidence": [
+                {
+                  "ref": "Num.32.23",
+                  "role": "defining",
+                  "note": "“Know your sin, that it will find you (אֲשֶׁר תִּמְצָא אֶתְכֶם).”"
+                },
+                {
+                  "ref": "Deu.31.17",
+                  "role": "defining",
+                  "note": "“Many evils and troubles will find him (וּמְצָאֻהוּ), and he will say … have not these evils found me because my God is not among us?”"
+                },
+                {
+                  "ref": "Deu.31.21"
+                },
+                {
+                  "ref": "Exo.18.8",
+                  "note": "“All the hardship that had found them on the way.”"
+                },
+                {
+                  "ref": "Gen.44.34",
+                  "note": "“The evil that would find my father.”"
+                },
+                {
+                  "ref": "Psa.116.3",
+                  "note": "“The cords of death surrounded me, and the straits of the grave found me (מְצָאוּנִי).”"
+                },
+                {
+                  "ref": "Psa.21.9",
+                  "role": "defining",
+                  "note": "“Your hand will find all your enemies; your right hand will find those who hate you”: the hand reaches them."
+                },
+                {
+                  "ref": "Isa.10.10",
+                  "note": "The king of Assyria: “as my hand has found (reached) the kingdoms of the idols”."
+                },
+                {
+                  "ref": "Isa.10.14"
+                }
+              ],
+              "kin": [
+                "arc-come-upon"
+              ]
+            },
+            {
+              "id": "find-out",
+              "gloss": "find out, discover; find (someone) to be",
+              "definition": "To learn by search or trial what a thing or a man is: to find out guilt, to find nothing against a man, to find a heart faithful, to find something written.",
+              "evidence": [
+                {
+                  "ref": "Gen.44.16",
+                  "role": "defining",
+                  "note": "Judah: “God has found out the iniquity of your servants (מָצָא אֶת עֲון עֲבָדֶיךָ).”"
+                },
+                {
+                  "ref": "1Sa.29.3",
+                  "role": "defining",
+                  "note": "Achish: “I have found nothing in him (וְלֹא מָצָאתִי בוֹ מְאוּמָה) from the day he fell to me.”"
+                },
+                {
+                  "ref": "Psa.17.3",
+                  "role": "defining",
+                  "note": "“You have examined my heart … you have tried me, and you find nothing.”"
+                },
+                {
+                  "ref": "Neh.9.8",
+                  "note": "“You found his heart faithful before you” (Abraham)."
+                },
+                {
+                  "ref": "Jer.2.34",
+                  "note": "“I did not find them by breaking in”: blood found on her skirts."
+                },
+                {
+                  "ref": "Hos.12.9",
+                  "note": "Ephraim: “in all my labours they will find in me no iniquity that is sin.”"
+                },
+                {
+                  "ref": "Job.33.10",
+                  "note": "“He finds occasions against me.”"
+                },
+                {
+                  "ref": "2Ki.22.8",
+                  "note": "“I have found the scroll of the law in the house of Yahweh.”"
+                },
+                {
+                  "ref": "Ecc.7.29",
+                  "note": "“This only I have found: that God made man upright, but they have sought out many schemes.”"
+                },
+                {
+                  "ref": "Ecc.8.17",
+                  "note": "“Man is not able to find out the work that is done under the sun.”"
+                }
+              ]
+            },
+            {
+              "id": "attain-get",
+              "gloss": "attain, get, obtain",
+              "definition": "To come to have something: a harvest, wealth, rest, wisdom, life. Proverbs sets it beside הֵפִיק “obtain”.",
+              "evidence": [
+                {
+                  "ref": "Gen.26.12",
+                  "role": "defining",
+                  "note": "“Isaac sowed in that land וַיִּמְצָא in that year a hundredfold”: he reaped, got."
+                },
+                {
+                  "ref": "Pro.3.13",
+                  "role": "defining",
+                  "note": "“Happy is the man who finds (מָצָא) wisdom, and the man who obtains (יָפִיק) understanding”: in parallel."
+                },
+                {
+                  "ref": "Pro.8.35",
+                  "role": "defining",
+                  "note": "“Whoever finds me finds life (מֹצְאִי מָצָא חַיִּים), and obtains favour from Yahweh.”"
+                },
+                {
+                  "ref": "Pro.18.22",
+                  "note": "“He who finds a wife finds good, and obtains favour from Yahweh.”"
+                },
+                {
+                  "ref": "Pro.4.22",
+                  "note": "Wisdom's words “are life to those who find them”."
+                },
+                {
+                  "ref": "Hos.12.9",
+                  "note": "“I have become rich, I have found wealth for myself.”"
+                },
+                {
+                  "ref": "Gen.8.9",
+                  "role": "defining",
+                  "note": "“The dove found no rest (לֹא מָצְאָה מָנוֹחַ) for the sole of its foot.”"
+                },
+                {
+                  "ref": "Rut.1.9",
+                  "note": "“May Yahweh grant that you find rest, each in the house of her husband.”"
+                },
+                {
+                  "ref": "Lam.1.3",
+                  "note": "Judah “dwells among the nations; she has found no rest”."
+                },
+                {
+                  "ref": "Isa.58.13",
+                  "note": "On the Sabbath, refraining “from finding your own pleasure”."
+                },
+                {
+                  "ref": "Job.3.22",
+                  "note": "The bitter in soul “rejoice when they find the grave (קָבֶר)”."
+                },
+                {
+                  "ref": "Sng.8.10",
+                  "note": "“Then I was in his eyes כְּמוֹצְאֵת שָׁלוֹם”, as one who finds peace. The form could also be read as the hiphil of יָצָא, “as one who brings out peace”."
+                }
+              ],
+              "kin": [
+                "syc-attain"
+              ]
+            },
+            {
+              "id": "hand-finds",
+              "gloss": "(the hand) finds: have enough, be able",
+              "definition": "With יָד “hand” as subject: to have the means for something, to afford it, or to be able to do it; “do as your hand finds” is to do whatever one is able.",
+              "evidence": [
+                {
+                  "ref": "Lev.12.8",
+                  "role": "defining",
+                  "note": "“If her hand does not find enough for a lamb (לֹא תִמְצָא יָדָהּ דֵּי שֶׂה), she shall take two turtledoves.”"
+                },
+                {
+                  "ref": "Lev.25.26",
+                  "role": "defining",
+                  "note": "“His hand reaches (הִשִּׂיגָה יָדוֹ) and he finds enough (וּמָצָא כְּדֵי) for his redemption”: in parallel with הִשִּׂיג “reach”."
+                },
+                {
+                  "ref": "Lev.25.28",
+                  "note": "“If his hand has not found enough to restore it to him.”"
+                },
+                {
+                  "ref": "1Sa.10.7",
+                  "role": "defining",
+                  "note": "“Do for yourself what your hand finds, for God is with you.”"
+                },
+                {
+                  "ref": "1Sa.25.8",
+                  "note": "“Give whatever your hand finds to your servants.”"
+                },
+                {
+                  "ref": "Jdg.9.33",
+                  "note": "“Do to him as your hand finds.”"
+                },
+                {
+                  "ref": "Ecc.9.10",
+                  "role": "defining",
+                  "note": "“All that your hand finds to do, do it with your strength, for there is no work … in the grave.”"
+                }
+              ],
+              "kin": [
+                "syc-be-able"
+              ]
+            },
+            {
+              "id": "suffice",
+              "gloss": "suffice, be enough (for)",
+              "definition": "With לְ of the persons: to reach the measure needed, to be enough for them.",
+              "evidence": [
+                {
+                  "ref": "Num.11.22",
+                  "role": "defining",
+                  "note": "Moses: “Shall flocks and herds be slaughtered for them וּמָצָא לָהֶם? Or shall all the fish of the sea be gathered for them וּמָצָא לָהֶם?”: will it be enough for them?"
+                },
+                {
+                  "ref": "Jdg.21.14",
+                  "role": "defining",
+                  "note": "The women of Jabesh-gilead were given to Benjamin, “וְלֹא מָצְאוּ לָהֶם כֵּן”: they were not enough for them."
+                }
+              ]
+            },
+            {
+              "id": "find-favour",
+              "gloss": "find favour (in the eyes of)",
+              "definition": "In the phrase מָצָא חֵן בְּעֵינֵי: to be looked on with goodwill by someone, so that he grants what is asked. It is said of men before Yahweh and of men before men, and is the language of a request (“if now I have found favour in your eyes”). The favour is given, not owed: Ruth asks why she has found it, being a foreigner.",
+              "evidence": [
+                {
+                  "ref": "Gen.6.8",
+                  "role": "defining",
+                  "note": "“Noah found favour in the eyes of Yahweh (מָצָא חֵן בְּעֵינֵי יַהְוֶה).”"
+                },
+                {
+                  "ref": "Exo.33.17",
+                  "role": "defining",
+                  "note": "“I will do this thing also that you have spoken, for you have found favour in my eyes, and I know you by name.”"
+                },
+                {
+                  "ref": "Exo.33.12"
+                },
+                {
+                  "ref": "Exo.33.13"
+                },
+                {
+                  "ref": "Exo.34.9"
+                },
+                {
+                  "ref": "Gen.18.3",
+                  "note": "Abraham: “If now I have found favour in your eyes, do not pass by your servant.”"
+                },
+                {
+                  "ref": "Gen.47.29",
+                  "note": "Jacob to Joseph: “if now I have found favour in your eyes … do not bury me in Egypt”."
+                },
+                {
+                  "ref": "Gen.33.8",
+                  "note": "Jacob's droves were sent “to find favour in the eyes of my lord”."
+                },
+                {
+                  "ref": "Rut.2.10",
+                  "role": "defining",
+                  "note": "“Why have I found favour in your eyes, that you should take notice of me, since I am a foreigner?”"
+                },
+                {
+                  "ref": "1Sa.1.18",
+                  "note": "Hannah: “Let your maidservant find favour in your eyes.”"
+                },
+                {
+                  "ref": "Est.5.8",
+                  "note": "“If I have found favour in the eyes of the king.”"
+                },
+                {
+                  "ref": "Deu.24.1",
+                  "note": "“If she finds no favour in his eyes, because he has found (מָצָא) in her some indecent thing”: the phrase and the plain verb together."
+                },
+                {
+                  "ref": "Jer.31.2",
+                  "note": "“The people who survived the sword found favour in the wilderness.”"
+                },
+                {
+                  "ref": "Pro.3.4",
+                  "note": "“Find favour and good understanding in the eyes of God and man.”"
+                }
+              ]
+            },
+            {
+              "id": "find-one-s-heart",
+              "gloss": "find (one's heart, courage)",
+              "definition": "“Your servant has found his heart”: to find the courage or will to do something.",
+              "evidence": [
+                {
+                  "ref": "2Sa.7.27",
+                  "role": "defining",
+                  "note": "“Therefore your servant has found his heart (מָצָא עַבְדְּךָ אֶת לִבּוֹ) to pray this prayer to you.”"
+                },
+                {
+                  "ref": "1Ch.17.25",
+                  "note": "The same words without לִבּוֹ: “therefore your servant has found (מָצָא) to pray before you.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be found; be found out, be caught; be found to be; be present, be at hand; be enough",
+          "senses": [
+            {
+              "id": "be-found",
+              "gloss": "be found (of what was sought or lost)",
+              "definition": "The passive of the qal: to be come upon after a search, or not to be found, so to be gone.",
+              "evidence": [
+                {
+                  "ref": "1Sa.9.20",
+                  "role": "defining",
+                  "note": "“As for the asses that were lost (הָאֹבְדוֹת) to you three days ago … they have been found (נִמְצָאוּ).”"
+                },
+                {
+                  "ref": "1Sa.10.21",
+                  "role": "defining",
+                  "note": "“They sought him, but he was not found.”"
+                },
+                {
+                  "ref": "Psa.37.36",
+                  "role": "defining",
+                  "note": "“He passed away, and behold, he was not (אֵינֶנּוּ); I sought him, and he was not found.”"
+                },
+                {
+                  "ref": "Job.28.12",
+                  "note": "“But wisdom, where shall it be found?”"
+                },
+                {
+                  "ref": "Job.28.13",
+                  "note": "“It is not found in the land of the living.”"
+                },
+                {
+                  "ref": "Ezr.2.62",
+                  "note": "“These sought their record among those enrolled by genealogy, but they were not found.”"
+                },
+                {
+                  "ref": "Gen.18.29",
+                  "note": "“Suppose forty are found there?”"
+                },
+                {
+                  "ref": "Isa.65.8",
+                  "note": "“As new wine is found in the cluster, and one says, Do not destroy it, for a blessing is in it.”"
+                },
+                {
+                  "ref": "Dan.12.1",
+                  "role": "defining",
+                  "note": "“Your people will be rescued, everyone who is found written in the book (כָּל הַנִּמְצָא כָּתוּב בַּסֵּפֶר).”"
+                },
+                {
+                  "ref": "Est.6.2",
+                  "note": "“It was found written that Mordecai had told about Bigthana and Teresh.”"
+                },
+                {
+                  "ref": "Neh.13.1",
+                  "note": "“It was found written in it that no Ammonite or Moabite should enter the assembly of God.”"
+                }
+              ]
+            },
+            {
+              "id": "be-found-yahweh",
+              "gloss": "be found (of Yahweh, by those who seek him)",
+              "definition": "Of Yahweh: to let himself be found by those who seek him, or, as Isaiah says, even by those who did not.",
+              "evidence": [
+                {
+                  "ref": "Jer.29.14",
+                  "role": "defining",
+                  "note": "“I will be found by you (וְנִמְצֵאתִי לָכֶם), declares Yahweh, and I will restore your fortunes and gather you from all the nations.”"
+                },
+                {
+                  "ref": "1Ch.28.9",
+                  "role": "defining",
+                  "note": "“If you seek him, he will be found by you (יִמָּצֵא לָךְ); but if you forsake him, he will cast you off for ever.”"
+                },
+                {
+                  "ref": "2Ch.15.2",
+                  "note": "“If you seek him, he will be found by you; but if you forsake him, he will forsake you.”"
+                },
+                {
+                  "ref": "2Ch.15.4",
+                  "note": "“In their distress they turned to Yahweh … and sought him, and he was found by them.”"
+                },
+                {
+                  "ref": "2Ch.15.15"
+                },
+                {
+                  "ref": "Isa.55.6",
+                  "role": "defining",
+                  "note": "“Seek Yahweh while he may be found (בְּהִמָּצְאוֹ); call on him while he is near”: in parallel with being near."
+                },
+                {
+                  "ref": "Isa.65.1",
+                  "role": "defining",
+                  "note": "“I was sought (נִדְרַשְׁתִּי) by those who did not ask; I was found (נִמְצֵאתִי) by those who did not seek me”; quoted in Rom 10:20."
+                },
+                {
+                  "ref": "Rom.10.20",
+                  "note": "Paul quotes Isa 65:1 of the nations: “I was found (εὑρέθην) by those who did not seek me”; the Peshitta has ܐܫܬܟܚܬ."
+                },
+                {
+                  "ref": "Psa.46.2",
+                  "note": "God is “a help in troubles, very much found”: ready at hand."
+                }
+              ]
+            },
+            {
+              "id": "be-caught",
+              "gloss": "be found out, be caught (in an act); be found (in someone)",
+              "definition": "In the law and the prophets: to be caught in a deed, or of a thing stolen, to be found in a man's possession; of a fault or a good thing, to be found in a man, so that it is known to be there.",
+              "evidence": [
+                {
+                  "ref": "Exo.22.1",
+                  "role": "defining",
+                  "note": "“If the thief is found (יִמָּצֵא) breaking in, and is struck so that he dies, there is no bloodguilt for him.”"
+                },
+                {
+                  "ref": "Exo.22.3",
+                  "note": "“If the stolen thing is found alive in his hand, he shall pay double.”"
+                },
+                {
+                  "ref": "Exo.21.16",
+                  "note": "Whoever steals a man, “whether he sells him or he is found in his hand”, shall be put to death."
+                },
+                {
+                  "ref": "Gen.44.16",
+                  "note": "“Both we and he in whose hand the cup was found (נִמְצָא).”"
+                },
+                {
+                  "ref": "Deu.22.22",
+                  "role": "defining",
+                  "note": "“If a man is found lying with a woman married to a husband, both of them shall die.”"
+                },
+                {
+                  "ref": "Deu.17.2",
+                  "note": "“If there is found among you … a man or woman who does evil in the eyes of Yahweh your God.”"
+                },
+                {
+                  "ref": "Deu.18.10",
+                  "note": "“There shall not be found among you one who makes his son or daughter pass through the fire.”"
+                },
+                {
+                  "ref": "Deu.21.1",
+                  "note": "“If one slain is found in the land … and it is not known who struck him.”"
+                },
+                {
+                  "ref": "Pro.6.31",
+                  "note": "The thief, “if he is found, shall repay sevenfold”."
+                },
+                {
+                  "ref": "Jer.2.26",
+                  "note": "“As a thief is ashamed when he is found.”"
+                },
+                {
+                  "ref": "1Ki.1.52",
+                  "note": "“If evil is found in him, he shall die.”"
+                },
+                {
+                  "ref": "1Ki.14.13",
+                  "role": "defining",
+                  "note": "Abijah alone of Jeroboam's house will come to the grave, “because in him was found something good toward Yahweh”."
+                },
+                {
+                  "ref": "Ezk.28.15",
+                  "role": "defining",
+                  "note": "“You were blameless in your ways from the day you were created, until unrighteousness was found in you.”"
+                },
+                {
+                  "ref": "Mal.2.6",
+                  "note": "Of Levi: “the law of truth was in his mouth, and unrighteousness was not found on his lips”."
+                },
+                {
+                  "ref": "Zep.3.13",
+                  "role": "defining",
+                  "note": "“The remnant of Israel will not do unrighteousness nor speak lies, nor will a deceitful tongue be found in their mouth”; taken up in Rev 14:5."
+                },
+                {
+                  "ref": "Dan.1.19",
+                  "note": "“Among them all none was found like Daniel, Hananiah, Mishael and Azariah.”"
+                },
+                {
+                  "ref": "Pro.16.31",
+                  "note": "Grey hair is a crown of glory: “it is found in the way of righteousness”."
+                }
+              ]
+            },
+            {
+              "id": "be-present",
+              "gloss": "be present, be at hand; (participle) those present, what is at hand",
+              "definition": "The participle הַנִּמְצָא and its plural: whatever or whoever is to be found in a place at the time, so what is at hand or those present.",
+              "evidence": [
+                {
+                  "ref": "1Sa.13.15",
+                  "role": "defining",
+                  "note": "“Saul numbered the people who were present with him (הַנִּמְצְאִים עִמּוֹ), about six hundred men.”"
+                },
+                {
+                  "ref": "1Sa.21.4",
+                  "role": "defining",
+                  "note": "“Give five loaves into my hand, or whatever is at hand (הַנִּמְצָא).”"
+                },
+                {
+                  "ref": "1Sa.13.22",
+                  "note": "“Neither sword nor spear was found in the hand of any of the people … but it was found with Saul and Jonathan.”"
+                },
+                {
+                  "ref": "Gen.47.14",
+                  "note": "“Joseph gathered all the silver that was found in the land of Egypt.”"
+                },
+                {
+                  "ref": "2Ki.22.9",
+                  "note": "“The silver that was found in the house.”"
+                },
+                {
+                  "ref": "2Ch.5.11",
+                  "note": "“All the priests who were present (הַנִּמְצְאִים) had sanctified themselves.”"
+                },
+                {
+                  "ref": "Est.4.16",
+                  "note": "“Gather all the Jews who are present in Shushan, and fast for me.”"
+                },
+                {
+                  "ref": "Isa.37.4",
+                  "note": "“Lift up a prayer for the remnant that is left (הַנִּמְצָאָה).”"
+                },
+                {
+                  "ref": "Isa.51.3",
+                  "note": "Zion's wilderness made like Eden: “joy and gladness will be found in her, thanksgiving and the voice of song”."
+                },
+                {
+                  "ref": "Hos.14.9",
+                  "note": "“From me your fruit is found.”"
+                }
+              ]
+            },
+            {
+              "id": "be-enough",
+              "gloss": "be enough, suffice",
+              "definition": "With לְ: to be found sufficient for someone; with a negative, to be too little for them.",
+              "evidence": [
+                {
+                  "ref": "Jos.17.16",
+                  "role": "defining",
+                  "note": "“The hill country is not enough for us (לֹא יִמָּצֵא לָנוּ הָהָר), and the Canaanites in the valley have chariots of iron.”"
+                },
+                {
+                  "ref": "Zec.10.10",
+                  "role": "defining",
+                  "note": "“I will bring them to the land of Gilead and Lebanon, וְלֹא יִמָּצֵא לָהֶם”: there will not be room enough for them."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "make find, bring upon; deliver (into the hand); bring, hand (to)",
+          "senses": [
+            {
+              "id": "make-it-find-bring",
+              "gloss": "make (it) find, bring upon (in requital)",
+              "definition": "To cause a man's deeds or a cloud's errand to reach its object: God makes a man's way come upon him.",
+              "evidence": [
+                {
+                  "ref": "Job.34.11",
+                  "role": "defining",
+                  "note": "“The deed of a man he repays to him, and according to a man's way he makes it find him (יַמְצִאֶנּוּ).”"
+                },
+                {
+                  "ref": "Job.37.13",
+                  "note": "Of the clouds: “whether for a rod, or for his land, or for kindness, he makes it find (its place)”."
+                }
+              ]
+            },
+            {
+              "id": "deliver-into-the-hand",
+              "gloss": "deliver (into the hand of)",
+              "definition": "With בְּיַד: to make a man come into another's power.",
+              "evidence": [
+                {
+                  "ref": "2Sa.3.8",
+                  "role": "defining",
+                  "note": "Abner: “I have not delivered you (הִמְצִיתִךָ) into the hand of David.”"
+                },
+                {
+                  "ref": "Zec.11.6",
+                  "role": "defining",
+                  "note": "“I am delivering (מַמְצִיא) men, each into the hand of his neighbour and into the hand of his king.”"
+                }
+              ]
+            },
+            {
+              "id": "bring-hand-to",
+              "gloss": "bring, hand (to)",
+              "definition": "In the ordination of the priests: to bring the blood or the pieces to Aaron so that they reach him.",
+              "evidence": [
+                {
+                  "ref": "Lev.9.12",
+                  "role": "defining",
+                  "note": "“The sons of Aaron brought (וַיַּמְצִאוּ) the blood to him, and he sprinkled it on the altar.”"
+                },
+                {
+                  "ref": "Lev.9.13"
+                },
+                {
+                  "ref": "Lev.9.18"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "εὑρίσκω",
+          "gloss": "find; (passive) be found",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.6.8, מָצָא → εὗρεν; Psa.89.21, מָצָאתִי → εὗρον; Psa.132.5, אֶמְצָא → εὕρω; Isa.65.1, נִמְצֵאתִי → εὑρέθην; Zep.3.13, יִמָּצֵא → εὑρεθῇ; εὑρίσκω renders מָצָא ×273"
+            },
+            {
+              "ref": "Rom.10.20",
+              "role": "defining",
+              "note": "Isa 65:1 quoted: “I was found (εὑρέθην) by those who did not seek me.”"
+            },
+            {
+              "ref": "Act.13.22",
+              "role": "defining",
+              "note": "Psa 89:21 quoted with 1Sa 13:14: “I have found (εὗρον) David the son of Jesse, a man after my heart.”"
+            },
+            {
+              "ref": "Act.7.46",
+              "note": "David “found favour (εὗρεν χάριν) before God and asked to find a dwelling for the God of Jacob”: the phrase of Gen 6:8 and the words of Psa 132:5."
+            },
+            {
+              "ref": "Rev.14.5",
+              "note": "“In their mouth no deceit was found (εὑρέθη)”: Zep 3:13 of the remnant."
+            },
+            {
+              "ref": "Luk.1.30",
+              "note": "“You have found favour (εὗρες χάριν) with God”: the Hebrew phrase מָצָא חֵן."
+            },
+            {
+              "ref": "Heb.4.16",
+              "note": "“That we may receive mercy and find grace (χάριν εὕρωμεν) for help in time of need.”"
+            },
+            {
+              "ref": "Mat.7.7",
+              "note": "“Seek, and you will find”: as Jer 29:13 and Deu 4:29."
+            }
+          ]
+        },
+        {
+          "lemma": "ἀρκέω",
+          "gloss": "be enough, suffice",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Num.11.22, וּמָצָא לָהֶם → ἀρκέσει (twice); Jos.17.16, לֹא יִמָּצֵא לָנוּ → ἀρκέσει"
+            },
+            {
+              "ref": "Jhn.6.7",
+              "note": "Philip, before the feeding of the multitude: “two hundred denarii of bread are not enough (οὐκ ἀρκοῦσιν) for them”, the question Moses asked in Num 11:22."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "בִּקֵּשׁ",
+            "note": "Seeking, which finding answers, or does not: “I sought him, but I did not find him.”",
+            "evidence": [
+              {
+                "ref": "Sng.3.1",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.29.13"
+              },
+              {
+                "ref": "Ecc.7.28"
+              },
+              {
+                "ref": "1Sa.10.21"
+              }
+            ]
+          },
+          {
+            "lemma": "הֵפִיק",
+            "note": "“Obtain”: wisdom, understanding and favour are found and obtained.",
+            "evidence": [
+              {
+                "ref": "Pro.3.13",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.8.35"
+              },
+              {
+                "ref": "Pro.18.22"
+              }
+            ]
+          },
+          {
+            "lemma": "הִשִּׂיג",
+            "note": "“Reach, attain”: “his hand reaches and he finds enough”.",
+            "evidence": [
+              {
+                "ref": "Lev.25.26",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "נִדְרַשׁ",
+            "note": "“Be sought, be inquired of” beside “be found” of Yahweh.",
+            "evidence": [
+              {
+                "ref": "Isa.65.1",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "אָבַד",
+            "note": "“Be lost”: what was lost is found.",
+            "evidence": [
+              {
+                "ref": "Deu.22.3",
+                "role": "defining"
+              },
+              {
+                "ref": "1Sa.9.20"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "מָצָא חֵן בְּעֵינֵי",
+            "gloss": "find favour in the eyes of: be looked on with goodwill by",
+            "evidence": [
+              {
+                "ref": "Gen.6.8",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.33.17"
+              },
+              {
+                "ref": "Rut.2.10"
+              },
+              {
+                "ref": "Gen.18.3"
+              },
+              {
+                "ref": "Est.5.8"
+              }
+            ]
+          },
+          {
+            "phrase": "מָצְאָה יָדוֹ",
+            "gloss": "his hand finds: he has the means, is able",
+            "evidence": [
+              {
+                "ref": "Lev.12.8",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.25.28"
+              },
+              {
+                "ref": "1Sa.10.7"
+              },
+              {
+                "ref": "Ecc.9.10"
+              }
+            ]
+          },
+          {
+            "phrase": "מָצָא מָנוֹחַ",
+            "gloss": "find rest, a resting place",
+            "evidence": [
+              {
+                "ref": "Gen.8.9",
+                "role": "defining"
+              },
+              {
+                "ref": "Lam.1.3"
+              },
+              {
+                "ref": "Rut.1.9"
+              }
+            ]
+          },
+          {
+            "phrase": "נִמְצָא בְיָדוֹ",
+            "gloss": "be found in his hand: be found in his possession (of stolen goods)",
+            "evidence": [
+              {
+                "ref": "Exo.21.16",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.22.3"
+              },
+              {
+                "ref": "Gen.44.16"
+              }
+            ]
+          },
+          {
+            "phrase": "עֵת מְצֹא",
+            "gloss": "a time of finding: while he may be found",
+            "evidence": [
+              {
+                "ref": "Psa.32.6",
+                "role": "defining",
+                "note": "“Let everyone who is faithful pray to you at a time of finding.”"
+              },
+              {
+                "ref": "Isa.55.6",
+                "note": "בְּהִמָּצְאוֹ, “while he may be found”."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "מְטָא",
+      "lang": "arc",
+      "root": "מטא",
+      "pos": "verb",
+      "gloss": "reach, attain to; come upon; arrive (of a time)",
+      "bdb": [
+        "xm.ad.aa"
+      ],
+      "cognate_ids": [
+        "arc-meta",
+        "uga-mza",
+        "uga-mgy",
+        "akk-masu"
+      ],
+      "summary": "The Aramaic of Daniel, eight times. It answers to Hebrew מָצָא as Aramaic ṭ answers to Hebrew צ where the older sound was ṯ̣ (Ugaritic mẓʾ, with ẓ, keeps it apart). It keeps the older sense “reach, come to” where the Hebrew has mostly moved to “find”.",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "reach, attain to; come upon; arrive",
+          "senses": [
+            {
+              "id": "arc-reach",
+              "gloss": "reach (a place, a person)",
+              "definition": "To reach as far as something: the tree's height to the heavens, the men cast into the den to its floor, the one like a son of man to the Ancient of Days.",
+              "evidence": [
+                {
+                  "ref": "Dan.4.8",
+                  "role": "defining",
+                  "note": "“The tree grew and became strong, וְרוּמֵהּ יִמְטֵא לִשְׁמַיָּא”: its height reached to the heavens."
+                },
+                {
+                  "ref": "Dan.4.17"
+                },
+                {
+                  "ref": "Dan.4.19",
+                  "note": "“Your greatness has grown and reached (וּמְטָת) to the heavens, and your dominion to the end of the earth.”"
+                },
+                {
+                  "ref": "Dan.6.25",
+                  "role": "defining",
+                  "note": "Daniel's accusers were cast into the den, “וְלָא מְטוֹ לְאַרְעִית גֻּבָּא”: they had not reached the bottom of the den before the lions overpowered them."
+                },
+                {
+                  "ref": "Dan.7.13",
+                  "role": "defining",
+                  "note": "“With the clouds of the heavens one like a son of man was coming, וְעַד עַתִּיק יוֹמַיָּא מְטָה”: he reached the Ancient of Days, and they brought him near before him."
+                }
+              ]
+            },
+            {
+              "id": "arc-come-upon",
+              "gloss": "come upon, befall",
+              "definition": "Of a decree or a judgment: to come upon a man.",
+              "evidence": [
+                {
+                  "ref": "Dan.4.21",
+                  "role": "defining",
+                  "note": "“It is the decree of the Most High דִּי מְטָת עַל מָרִי מַלְכָּא”, which has come upon my lord the king."
+                },
+                {
+                  "ref": "Dan.4.25",
+                  "role": "defining",
+                  "note": "“כֹּלָּא מְּטָא עַל נְבוּכַדְנֶצַּר מַלְכָּא”: all this came upon king Nebuchadnezzar."
+                }
+              ],
+              "kin": [
+                "befall"
+              ]
+            },
+            {
+              "id": "arc-time-came",
+              "gloss": "arrive, come (of a time)",
+              "definition": "Of an appointed time: to arrive.",
+              "evidence": [
+                {
+                  "ref": "Dan.7.22",
+                  "role": "defining",
+                  "note": "“Until the Ancient of Days came … וְזִמְנָא מְטָה, and the saints possessed the kingdom”: the time came."
+                }
+              ],
+              "kin": [
+                "syc-time-came"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מְטָא",
+      "lang": "syc",
+      "root": "מטא",
+      "pos": "verb",
+      "gloss": "reach, arrive; come (of a time); attain; fall to (as a share)",
+      "cognate_ids": [
+        "arc-meta",
+        "uga-mza",
+        "uga-mgy",
+        "akk-masu"
+      ],
+      "summary": "The Peshitta's ܡܛܐ (mṭā), 66 times in the New Testament: the same verb as the Aramaic of Daniel. It is used of travellers arriving, of a time or an hour that has come, and of attaining a goal. The Peshitta's word for “find” is another verb, ܫܟܚ.",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "reach, arrive; come (of a time); attain; fall to",
+          "senses": [
+            {
+              "id": "syc-arrive",
+              "gloss": "reach, arrive at (a place)",
+              "definition": "To come to a place at the end of a journey.",
+              "evidence": [
+                {
+                  "ref": "Act.21.3",
+                  "role": "defining",
+                  "note": "“From there we reached (ܡܛܝܢ) Tyre.”"
+                },
+                {
+                  "ref": "Act.27.8"
+                },
+                {
+                  "ref": "Luk.19.29"
+                }
+              ],
+              "kin": [
+                "arc-reach"
+              ]
+            },
+            {
+              "id": "syc-time-came",
+              "gloss": "come, arrive (of a time, an hour, the kingdom)",
+              "definition": "Of an appointed time, an hour, a season or the kingdom of God: to arrive, to be at hand.",
+              "evidence": [
+                {
+                  "ref": "Mrk.1.15",
+                  "role": "defining",
+                  "note": "“The time is fulfilled, and the kingdom of God has arrived (ܘܡܛܬ)”: the Greek has ἤγγικεν, “has drawn near”."
+                },
+                {
+                  "ref": "Gal.4.4",
+                  "role": "defining",
+                  "note": "“When the fullness of time came (ܡܛܐ), God sent his son, born of a woman.”"
+                },
+                {
+                  "ref": "Mat.26.45",
+                  "note": "“Behold, the hour has come (ܡܛܬ), and the son of man is delivered into the hands of sinners.”"
+                },
+                {
+                  "ref": "Jhn.13.1",
+                  "note": "Jesus knew “that his hour had come” to depart to the Father."
+                },
+                {
+                  "ref": "Mrk.4.29",
+                  "note": "“He puts in the sickle, because the harvest has come.”"
+                },
+                {
+                  "ref": "Mrk.13.28",
+                  "note": "“You know that summer has come.”"
+                },
+                {
+                  "ref": "1Co.10.11",
+                  "note": "“Upon whom the ends of the ages have come (ܡܛܝܬ).”"
+                },
+                {
+                  "ref": "1Pe.4.7",
+                  "note": "“The end of all things has come near.”"
+                }
+              ],
+              "kin": [
+                "arc-time-came"
+              ]
+            },
+            {
+              "id": "syc-attain",
+              "gloss": "attain (to)",
+              "definition": "To come to a goal that is striven for.",
+              "evidence": [
+                {
+                  "ref": "Php.3.11",
+                  "role": "defining",
+                  "note": "“If perhaps I may be able to attain (ܐܡܛܐ) to the resurrection from among the dead.”"
+                },
+                {
+                  "ref": "Php.3.16"
+                }
+              ],
+              "kin": [
+                "attain-get"
+              ]
+            },
+            {
+              "id": "fall-to-as-a",
+              "gloss": "fall to (as a share)",
+              "definition": "The participle, of a portion: what comes to someone as his share.",
+              "evidence": [
+                {
+                  "ref": "Luk.15.12",
+                  "role": "defining",
+                  "note": "“Give me the portion that falls to me (ܕܡܛܝܐ ܠܝ).”"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מְצָא",
+      "lang": "syc",
+      "pos": "verb",
+      "gloss": "be able; (ethpeel) be able, prevail",
+      "cognate_ids": [
+        "akk-masu",
+        "arc-mesa"
+      ],
+      "summary": "The Peshitta's ܡܨܐ (mṣā), 14 times in the New Testament, mostly in Revelation: the same spelling as Hebrew מָצָא, meaning “be able”. It answers to the Hebrew “the hand finds”, to have the means or the power, and to Akkadian maṣû “suffice, be able”. Its ṣ, where Daniel's מְטָא has ṭ, leaves open whether it is the same older word or was taken from a neighbouring language.",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "be able",
+          "senses": [
+            {
+              "id": "syc-be-able",
+              "gloss": "be able, have power (to)",
+              "definition": "To have the power to do something.",
+              "evidence": [
+                {
+                  "ref": "Php.4.13",
+                  "role": "defining",
+                  "note": "“For all things I am able (ܡܨܐ) through the Messiah who strengthens me.”"
+                },
+                {
+                  "ref": "Eph.3.20",
+                  "role": "defining",
+                  "note": "“To him who is able (ܕܡܨܐ) by power to do for us more than all.”"
+                },
+                {
+                  "ref": "Heb.4.15",
+                  "note": "“We do not have a high priest who is not able to suffer with our weakness.”"
+                },
+                {
+                  "ref": "1Co.10.13"
+                },
+                {
+                  "ref": "Rev.7.9"
+                }
+              ],
+              "kin": [
+                "hand-finds"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "ethpeel",
+          "gloss": "be able, prevail",
+          "senses": [
+            {
+              "id": "be-able-prevail",
+              "gloss": "be able, prevail",
+              "definition": "To be able, or with a negative, not to prevail.",
+              "evidence": [
+                {
+                  "ref": "Rev.5.3",
+                  "role": "defining",
+                  "note": "“No one was able (ܕܐܬܡܨܝ) in heaven or on earth or under the earth to open the book.”"
+                },
+                {
+                  "ref": "Rev.12.8",
+                  "role": "defining",
+                  "note": "“They did not prevail (ܘܠܐ ܐܬܡܨܝܘ), nor was their place found in heaven any more.”"
+                },
+                {
+                  "ref": "Rev.14.3"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-masu",
+      "lang": "akk",
+      "form": "maṣû",
+      "translit": "maṣû",
+      "gloss": "correspond to, be equal to; reach, attain; suffice; be able",
+      "relation": "cognate",
+      "note": "The Akkadian verb, in every period, ranges over “reach, attain, achieve”, “suffice” and “be able”, the senses of the Hebrew “reach, obtain”, “suffice” and “the hand finds”. Akkadian ṣ does not show which older sound stands behind Hebrew צ.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000025610, maṣû [correspond] V",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000025610.html",
+          "note": "Meanings in the glossaries include: reach, achieve, make attain, suffice, cause to suffice, be(come) able to, be(come) equal to, correspond; 524 instances."
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000027740, maṣû [sufficient] AJ",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000027740.html",
+          "note": "Meaning: sufficient."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000242 mṣʾ [encounter], AKK006667 maṣû [correspond with]"
+        }
+      ]
+    },
+    {
+      "id": "uga-mza",
+      "lang": "uga",
+      "form": "𐎎𐎑𐎀",
+      "translit": "mẓʾ",
+      "gloss": "reach; meet",
+      "relation": "cognate",
+      "note": "Ugaritic writes the root with ẓ, which keeps apart the older ṯ̣ that Hebrew merged into צ and Aramaic into ṭ (מְטָא). Segert gives it as a variant beside m-ṣ-ʾ.",
+      "sounds": {
+        "צ": "ṯ̣"
+      },
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 147, §85.2, note to KTU 1.4 IV 31",
+          "note": "“/m-ġ-y/ ‘to reach, arrive’; cf. also /m-ṣ-ʾ/ var. /m-ẓ-ʾ/ ‘to reach’” (OCR read, which loses the dots and the ʾ; PDF not rendered)."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000242 mṣʾ [encounter], UGC002991 mẓʾ [meet]"
+        }
+      ]
+    },
+    {
+      "id": "uga-mgy",
+      "lang": "uga",
+      "form": "𐎎𐎙𐎊",
+      "translit": "mġy",
+      "gloss": "reach, arrive",
+      "relation": "possible",
+      "note": "The commoner Ugaritic verb for arriving (“Horan reached his house”). Segert compares Aramaic מְטָא, Syriac mṭā and Hebrew מָצָא with it. Its last letter is y, as the Aramaic verb is often written (מְטֵי), not ʾ, and its ġ for older ṯ̣ is a Ugaritic peculiarity, so the tie is argued but not certain; no sound is recorded for it.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 192, §93 Glossary, /m-ġ-y/",
+          "note": "“mġy, mġyt, mġt, ymġ, ymġy, tmġyy … ‘to reach, arrive’ (cf. Arab. maḍā(y), yamḍi ‘to go out/further,’ Aram. məṭā (mṭy Kt.), Syr. mṭā, mṭi ‘he reached’; also H. māṣāʾ ‘he found’)” (OCR read, diacritics restored from the sense; PDF not rendered)."
+        },
+        {
+          "source": "segert-1984",
+          "locator": "p. 147, §85.2, note to KTU 1.4 IV 31",
+          "note": "mġyt, “perf. 3. sing. f. /m-ġ-y/ ‘to reach, arrive’” (OCR read)."
+        }
+      ]
+    },
+    {
+      "id": "arc-meta",
+      "lang": "arc",
+      "form": "מְטֵי, מְטָא",
+      "translit": "məṭā",
+      "gloss": "reach, arrive at; obtain; happen to (Jewish Aramaic)",
+      "relation": "cognate",
+      "note": "The Targums' verb, which Jastrow sets equal to Hebrew מָצָא: “it reached her hand” (Targ. Esth 5:2), “the eve of the Day of Atonement came”, “an accident befell him”. Aramaic ṭ here answers to Hebrew צ from older ṯ̣, as in נְטַר beside נָצַר.",
+      "sounds": {
+        "צ": "ṯ̣"
+      },
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. מְטֵי, מְטָא, מְטָה (M00995)",
+          "url": "https://www.sefaria.org/Jastrow,_%D7%9E%D6%B0%D7%98%D6%B5%D7%99.1",
+          "note": "“(= h. מָצָא) to stretch, reach; to arrive at; to obtain; to happen to. Targ. Gen. XI, 4 … Targ. II Kings XIX, 26 … Targ. Esth. V, 2 [read:] ומְטָת לִידָהּ and it (the scepter) reached her hand.”"
+        }
+      ]
+    },
+    {
+      "id": "arc-mesa",
+      "lang": "arc",
+      "form": "מְצָא, מְצִי",
+      "translit": "məṣā",
+      "gloss": "reach, be able; master (Jewish Aramaic)",
+      "relation": "cognate",
+      "note": "The Babylonian Talmud's verb “be able”, as Syriac ܡܨܐ: “I could not master four orders”. It has ṣ where מְטָא has ṭ, so it may be the same older word kept in another form or one borrowed from Hebrew or Akkadian; no sound is recorded for it.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. מְצִי I, מְצָא (M02307)",
+          "note": "“to reach, be able; to master. B. Mets. 114ᵇ בארבעה לא מָצִינָא I could not master four orders of the Talmud, how could I master six?”"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "seeking-god",
+      "statement": "Moses told Israel that from the lands of their scattering “you will seek Yahweh your God and you will find him, when you seek him with all your heart and with all your soul” (Deu 4:29), and Jeremiah gave the exiles the same word: “you will seek me and find me, when you seek me with all your heart; and I will be found by you” (Jer 29:13–14). David told Solomon, and Azariah told Asa, “if you seek him, he will be found by you; but if you forsake him, he will cast you off” (1Ch 28:9; 2Ch 15:2), and in Asa's day “they sought him, and he was found by them” (2Ch 15:4). There is a time to seek: “seek Yahweh while he may be found” (Isa 55:6); those who come to him only with their sacrifices “will not find him; he has withdrawn from them” (Hos 5:6), and a famine of hearing his word will come when men seek it and do not find it (Amo 8:12). Isaiah adds that he would be found by a nation that did not seek him (Isa 65:1), and Paul reads that of the nations coming to him (Rom 10:20). Jesus says the same as Moses: “seek, and you will find” (Mat 7:7–8). From the verses: Yahweh is found by those who seek him wholeheartedly, and the finding is his gift, open to Israel and the nations alike, but not for ever to those who turn from him.",
+      "evidence": [
+        {
+          "ref": "Deu.4.29"
+        },
+        {
+          "ref": "Jer.29.13",
+          "to": "Jer.29.14"
+        },
+        {
+          "ref": "1Ch.28.9"
+        },
+        {
+          "ref": "2Ch.15.2"
+        },
+        {
+          "ref": "2Ch.15.4"
+        },
+        {
+          "ref": "Isa.55.6"
+        },
+        {
+          "ref": "Hos.5.6"
+        },
+        {
+          "ref": "Amo.8.12"
+        },
+        {
+          "ref": "Isa.65.1"
+        },
+        {
+          "ref": "Rom.10.20"
+        },
+        {
+          "ref": "Mat.7.7",
+          "to": "Mat.7.8"
+        }
+      ]
+    },
+    {
+      "topic": "grace",
+      "statement": "When all flesh had corrupted its way and Yahweh resolved to blot out man from the face of the ground, “Noah found favour in the eyes of Yahweh” (Gen 6:8). Moses pleaded on the ground that he had found favour, and Yahweh answered, “I will do this thing also, for you have found favour in my eyes, and I know you by name” (Exo 33:12–17). Ruth asked Boaz, “why have I found favour in your eyes, since I am a foreigner?” (Rut 2:10): favour is not owed but given by the one in whose eyes it is found. The angel told Mary, “you have found favour with God” (Luk 1:30), and the letter to the Hebrews bids believers draw near “to find grace for help in time of need” (Heb 4:16). From the verses: the grace by which men are saved is something found in God's eyes, by his goodwill, not earned.",
+      "evidence": [
+        {
+          "ref": "Gen.6.8"
+        },
+        {
+          "ref": "Exo.33.12",
+          "to": "Exo.33.17"
+        },
+        {
+          "ref": "Rut.2.10"
+        },
+        {
+          "ref": "Luk.1.30"
+        },
+        {
+          "ref": "Heb.4.16"
+        }
+      ]
+    },
+    {
+      "topic": "judgment",
+      "statement": "Moses warned the two and a half tribes, “know your sin, that it will find you” (Num 32:23), and said of Israel turning to other gods that “many evils and troubles will find him” (Deu 31:17, 21). Elihu says God repays a man's deed, “and according to a man's way he makes it find him” (Job 34:11). What is hidden is found out: “God has found out the iniquity of your servants” (Gen 44:16); of the king of Tyre, “you were blameless in your ways … until unrighteousness was found in you” (Ezk 28:15). Of the remnant, by contrast, “a deceitful tongue will not be found in their mouth” (Zep 3:13), which Revelation repeats of those with the lamb (Rev 14:5), and at the end “everyone who is found written in the book” will be delivered (Dan 12:1). From the verses: a man's deeds reach him again, and judgment is a finding out of what is in him.",
+      "evidence": [
+        {
+          "ref": "Num.32.23"
+        },
+        {
+          "ref": "Deu.31.17"
+        },
+        {
+          "ref": "Deu.31.21"
+        },
+        {
+          "ref": "Job.34.11"
+        },
+        {
+          "ref": "Gen.44.16"
+        },
+        {
+          "ref": "Ezk.28.15"
+        },
+        {
+          "ref": "Zep.3.13"
+        },
+        {
+          "ref": "Rev.14.5"
+        },
+        {
+          "ref": "Dan.12.1"
+        }
+      ]
+    },
+    {
+      "topic": "kingdom-of-god",
+      "statement": "In Daniel's vision one like a son of man came with the clouds of the heavens “and reached (מְטָה) the Ancient of Days”, and was given dominion and glory and a kingdom, that all peoples should serve him (Dan 7:13–14). The horn made war with the saints “until the Ancient of Days came … and the time arrived (מְטָה), and the saints possessed the kingdom” (Dan 7:22), the kingdom “under the whole heaven” (Dan 7:27). Jesus applied the son of man coming on the clouds of heaven to himself (Mat 26:64). The Peshitta uses the same verb when Jesus begins to preach: “the time is fulfilled, and the kingdom of God has arrived (ܡܛܬ)” (Mrk 1:15), and when Paul says that “when the fullness of time arrived, God sent his son, born of a woman” (Gal 4:4). From the verses: the son of man is a man brought to the Ancient of Days, distinct from him, and given the kingdom; the kingdom is under the heaven, on the earth, and is given to the saints when the appointed time arrives.",
+      "evidence": [
+        {
+          "ref": "Dan.7.13",
+          "to": "Dan.7.14"
+        },
+        {
+          "ref": "Dan.7.22"
+        },
+        {
+          "ref": "Dan.7.27"
+        },
+        {
+          "ref": "Mat.26.64"
+        },
+        {
+          "ref": "Mrk.1.15"
+        },
+        {
+          "ref": "Gal.4.4"
+        }
+      ]
+    },
+    {
+      "topic": "resurrection",
+      "statement": "Daniel is told that at the time of trouble “your people will be delivered, everyone who is found written in the book”, and that “many of those who sleep in the ground of dust will awake, some to everlasting life” (Dan 12:1–2): those found written are the sleepers who awake. Paul's hope, in the Peshitta's words, was “if perhaps I may attain (ܐܡܛܐ) to the resurrection from among the dead” (Php 3:11). From the verses: the dead sleep in the dust until they are raised, and the goal a believer reaches is the resurrection, not a life before it.",
+      "evidence": [
+        {
+          "ref": "Dan.12.1",
+          "to": "Dan.12.2"
+        },
+        {
+          "ref": "Php.3.11"
+        }
+      ]
+    },
+    {
+      "topic": "mortality",
+      "statement": "Qoheleth says, “all that your hand finds to do, do it with your strength, for there is no work or reckoning or knowledge or wisdom in the grave, where you are going” (Ecc 9:10). What a man is able to do (what his hand “finds”) belongs to this life; in the grave there is no working or knowing.",
+      "evidence": [
+        {
+          "ref": "Ecc.9.10"
+        }
+      ]
+    }
+  ],
+  "note": "Root: BDB's key מצא is the verb's own root and no other entry has it. `db lexicon-brief מצא` lists the verb (m.db.aa, 455 tokens: qal 307, niphal 140, hiphil 8). Left out: מְצֹבָיָה (m.db.ad, 1Ch 11:47 “the Mezobaite”, 1 use), a gentilic of a place whose derivation is unknown; it is a people/place name, not a word of this root's sense, and its key is left unclaimed. מַצָּבָה (n.ep.ag, 0 tokens) belongs to נצב. The brief lists εὑρίσκω as a Greek loan: it is not a loan, and is recorded only as a rendering. Sng 8:10 כְּמוֹצְאֵת is counted under the hiphil by the brief; it is cited under the qal “attain” with the reading as hiphil of יָצָא noted. The Aramaic מְטָא is a word of the entry with its own root מטא (xm.ad.aa, 8 uses in Daniel). The Peshitta has two verbs: ܡܛܐ “reach, arrive” (SEDRA lexeme 1741, root 1041 MYA), and ܡܨܐ “be able” (SEDRA lexeme 1826, root 1094 M/A); both are kept as words. Sounds: Ugaritic mẓʾ and Aramaic mṭʾ show ṯ̣ behind צ. Akkadian maṣû cannot show the sound; Syriac and Jewish Aramaic mṣʾ “be able” show ṣ, which, if inherited, would make a second older root (*mṣʾ “suffice, be able” beside *mṯ̣ʾ “reach”); no sound is recorded for them, since they may be borrowed from Akkadian or Hebrew. Open question for the reviewer. Segert is cited from the Archive.org OCR (pp. 147, 192 by running heads); the Ugaritic signs for mẓʾ are written with ʾa, which is a guess at the root's form. Leads not followed: DULAT (del Olmo Lete and Sanmartín) for mẓʾ and mġy; Ge'ez maṣʾa “come” (Dillmann, Leslau; Wiktionary's Hebrew entry compares it, and Fisher 1969 seems to compare mġy with Ge'ez, but the OCR is unreadable); Payne Smith and Brockelmann for ܡܛܐ and ܡܨܐ; CAD M/1 for maṣû; Klein's Arabic comparison; Arabic maḍā (Segert) not checked in Lane. Peshitta verses for ܡܛܐ and ܡܨܐ were found through the Haqor database's SEDRA word links."
+}

@@ -1,0 +1,101 @@
+{
+  "id": "nhg",
+  "created": "2026-11-19",
+  "root": "נהג",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "gloss": "guide",
+  "summary": "נָהַג means to guide or lead. Yahweh guides his people continually, even beyond death.",
+  "words": [
+    {
+      "lemma": "נָהַג",
+      "pos": "verb",
+      "gloss": "guide, lead",
+      "bdb": [
+        "n.bk.aa"
+      ],
+      "stems": [
+        {
+          "stem": "piel",
+          "gloss": "guide",
+          "senses": [
+            {
+              "id": "guide",
+              "gloss": "guide",
+              "definition": "To lead and guide a people on their way.",
+              "evidence": [
+                {
+                  "ref": "Psa.48.15",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "qal",
+          "gloss": "drive, lead",
+          "senses": [
+            {
+              "id": "drive-lead",
+              "gloss": "drive, lead",
+              "definition": "Moses leads the flock into the wilderness. The psalm calls on the shepherd of Israel who leads Joseph like a flock.",
+              "evidence": [
+                {
+                  "ref": "Exo.3.1",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.80.2",
+                  "role": "example"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מִנְהָג",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "driving, conduct",
+      "bdb": [
+        "n.bk.ab"
+      ],
+      "senses": [
+        {
+          "id": "driving-conduct",
+          "gloss": "driving, conduct",
+          "definition": "A manner of driving or customary conduct derived from leading.",
+          "evidence": [
+            {
+              "ref": "Psa.48.15",
+              "role": "defining"
+            },
+            {
+              "ref": "2Ki.9.20"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-nhg",
+      "lang": "arc",
+      "form": "נְהַג",
+      "translit": "nəhag",
+      "gloss": "custom, practice",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "N00251, נְהַג, Targum Ruth 4:7"
+        }
+      ]
+    }
+  ],
+  "note": "Targumic נְהַג denotes customary practice (Jastrow N00251), alongside the Hebrew senses of leading and conduct."
+}

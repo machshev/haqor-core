@@ -1,0 +1,282 @@
+{
+  "id": "twh",
+  "root": "תוה",
+  "status": "draft",
+  "updated": "2026-11-18",
+  "tags": [
+    "writing",
+    "distress"
+  ],
+  "gloss": "make a mark; be astounded",
+  "summary": "Ezekiel sees a man place a mark on the foreheads of those who lament what is happening in Jerusalem. Job calls attention to his own mark when he asks for a hearing. In Daniel, the Aramaic verb describes the king’s astonishment at seeing four men walking in the furnace.",
+  "words": [
+    {
+      "lemma": "תָּו",
+      "pos": "noun",
+      "gender": "m",
+      "bdb": [
+        "w.ai.ab"
+      ],
+      "gloss": "identifying mark",
+      "senses": [
+        {
+          "id": "identifying-mark",
+          "gloss": "identifying mark",
+          "definition": "A sign placed on a person so that the bearer can be recognised.",
+          "evidence": [
+            {
+              "ref": "Ezk.9.4",
+              "role": "defining",
+              "note": "The mark is put on the forehead. Those who bear it are to be spared."
+            },
+            {
+              "ref": "Ezk.9.6"
+            }
+          ],
+          "cognate_ids": [
+            "arc-mark"
+          ]
+        },
+        {
+          "id": "personal-mark",
+          "gloss": "personal mark",
+          "definition": "A mark of attestation. Job presents his case as though he has set his mark to a written declaration.",
+          "evidence": [
+            {
+              "ref": "Job.31.35",
+              "role": "defining",
+              "note": "Job asks for a hearing and a written statement from his accuser."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "תָּוָה",
+      "pos": "verb",
+      "bdb": [
+        "w.ai.ad"
+      ],
+      "gloss": "set a mark",
+      "stems": [
+        {
+          "stem": "hiphil",
+          "gloss": "set a mark",
+          "senses": [
+            {
+              "id": "set-a-mark",
+              "gloss": "set a mark",
+              "definition": "Place a visible sign on a person. The verb takes the related noun תָּו as its object.",
+              "evidence": [
+                {
+                  "ref": "Ezk.9.4",
+                  "role": "defining",
+                  "note": "The writer is told to go through Jerusalem marking those who sigh and groan."
+                }
+              ],
+              "cognate_ids": [
+                "arc-mark"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "תָּוָה",
+      "pos": "verb",
+      "bdb": [
+        "w.aj.aa"
+      ],
+      "gloss": "grieve, give offence",
+      "stems": [
+        {
+          "stem": "hiphil",
+          "gloss": "grieve, give offence",
+          "senses": [
+            {
+              "id": "grieve-give-offence",
+              "gloss": "grieve, give offence",
+              "definition": "Describe the effect of Israel’s repeated testing of God. The parallel and the preceding verse suggest the pain of rebellion.",
+              "evidence": [
+                {
+                  "ref": "Psa.78.41",
+                  "role": "defining",
+                  "note": "The first half of the line speaks of testing God. Verse 40 has already described grieving him."
+                },
+                {
+                  "ref": "Psa.78.40"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "summary": "This sense rests on a single verse. How it relates to marking is uncertain."
+    },
+    {
+      "lemma": "תַּאֲוָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "limit, extent (proposed)",
+      "senses": [
+        {
+          "id": "limit-extent-proposed",
+          "gloss": "limit, extent (proposed)",
+          "definition": "One reading gives the distant limit reached by the blessings Jacob pronounces over Joseph.",
+          "evidence": [
+            {
+              "ref": "Gen.49.26",
+              "role": "defining",
+              "note": "The wording pairs the disputed noun with enduring hills. The surrounding comparison concerns the reach or abundance of blessings."
+            }
+          ]
+        }
+      ],
+      "summary": "The phrase can also be read as what is desirable or choice about the hills. The boundary reading is uncertain."
+    },
+    {
+      "lemma": "תְּוַהּ",
+      "pos": "verb",
+      "bdb": [
+        "xw.ac.aa"
+      ],
+      "gloss": "be astounded",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "be astounded",
+          "senses": [
+            {
+              "id": "be-astounded",
+              "gloss": "be astounded",
+              "definition": "Be startled by a sight that overturns an expectation.",
+              "evidence": [
+                {
+                  "ref": "Dan.3.24",
+                  "role": "defining",
+                  "note": "The king rises hastily and asks how many men were thrown into the fire. He sees four walking free."
+                },
+                {
+                  "ref": "Dan.3.25"
+                }
+              ],
+              "cognate_ids": [
+                "mand-tihua",
+                "ar-taha"
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "arc"
+    },
+    {
+      "lemma": "תּוַה",
+      "pos": "verb",
+      "gloss": "be amazed, disturbed",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "be amazed, disturbed",
+          "senses": [
+            {
+              "id": "be-amazed-disturbed",
+              "gloss": "be amazed, disturbed",
+              "definition": "React with amazement to a person or be unsettled by a report.",
+              "evidence": [
+                {
+                  "ref": "Mrk.9.15",
+                  "role": "defining",
+                  "note": "The crowd sees Jesus, is amazed, and runs to greet him."
+                },
+                {
+                  "ref": "2Th.2.2"
+                }
+              ],
+              "cognate_ids": [
+                "mand-tihua",
+                "ar-taha"
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "syc"
+    },
+    {
+      "lemma": "תַּוהתָֿא",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "bewilderment",
+      "senses": [
+        {
+          "id": "bewilderment",
+          "gloss": "bewilderment",
+          "definition": "The dismay of nations faced with overwhelming sights and sounds.",
+          "evidence": [
+            {
+              "ref": "Luk.21.25",
+              "role": "defining",
+              "note": "The upheaval of the sea accompanies bewilderment on earth."
+            }
+          ],
+          "cognate_ids": [
+            "mand-tihua",
+            "ar-taha"
+          ]
+        }
+      ],
+      "lang": "syc"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-mark",
+      "lang": "arc",
+      "form": "תְּוָא",
+      "translit": "təwā",
+      "gloss": "mark",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "Aramaic תְּוָא II, V00137, Targum to Ezekiel 9:4",
+          "note": "The cognate occurs in a translation of the Hebrew marking scene."
+        }
+      ]
+    },
+    {
+      "id": "mand-tihua",
+      "lang": "arc",
+      "form": "ࡕࡉࡄࡅࡀ",
+      "translit": "tihua",
+      "gloss": "dismay, amazement",
+      "relation": "cognate",
+      "note": "Mandaic. The dictionary treats the order of the middle sounds as a transposition.",
+      "evidence": [
+        {
+          "source": "drower-macuch-1963",
+          "locator": "s.v. tihua, scan leaf 259, citing Q 59:28 and CP 117, last line"
+        }
+      ]
+    },
+    {
+      "id": "ar-taha",
+      "lang": "ar",
+      "form": "تَاهَ",
+      "translit": "tāha",
+      "gloss": "lose one’s way; become perplexed",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 323, root توه, n4210",
+          "note": "Perplexity is explicit, alongside the concrete sense of losing one’s way."
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "תָּוֶךְ and תִּיכוֹן belong to tavek. Most tokens of w.ai.ac are desire from אוה, so no count key is assigned for the disputed boundary in Gen 49:26. The independent noun or participle תּוֹלָל in Psa 137:3 has a repeated lamed and no demonstrated derivation from marking or astonishment. The name Toah/Tohu (Tohu@1Sa.1.1) contains ח, not the ה in this root; its origin is uncertain. No name assigned. SEDRA lexemes 3375 and 3376 attest the Syriac senses. No direct evidence establishes a link between Hebrew marking and Aramaic amazement."
+}

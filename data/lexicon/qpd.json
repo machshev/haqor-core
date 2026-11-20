@@ -1,0 +1,245 @@
+{
+  "id": "qpd",
+  "root": "קפד",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "tags": [
+    "animals"
+  ],
+  "gloss": "animal of ruined places, probably hedgehog, roll up, terror",
+  "summary": "Three prophecies place the qippod in the ruins of a city or land. Several related languages name a hedgehog with this word. Hezekiah uses a similarly spelled verb when he compares his life to a weaver’s work, and Ezekiel uses a noun for the terror that comes when peace fails.",
+  "words": [
+    {
+      "lemma": "קִפֹּד",
+      "pos": "noun",
+      "gender": "m",
+      "bdb": [
+        "s.ck.ab"
+      ],
+      "gloss": "animal of ruined places, probably hedgehog",
+      "senses": [
+        {
+          "id": "animal",
+          "gloss": "hedgehog or other ruin-dwelling animal",
+          "definition": "An animal that occupies places from which people have vanished. The comparative evidence favours a hedgehog, though the Hebrew descriptions allow a bird.",
+          "evidence": [
+            {
+              "ref": "Isa.14.23",
+              "role": "defining",
+              "note": "Babylon becomes the possession of this creature and a place of pools after it is swept away."
+            },
+            {
+              "ref": "Isa.34.11",
+              "role": "defining",
+              "note": "The creature takes possession of Edom with the qāʾat, while other creatures, including ravens, settle there."
+            },
+            {
+              "ref": "Zep.2.14",
+              "role": "defining",
+              "note": "The qippod and the qāʾat spend the night on or among Nineveh’s exposed capitals."
+            }
+          ],
+          "cognate_ids": [
+            "arc-hedgehog",
+            "syc-hedgehog",
+            "ar-hedgehog",
+            "mt-hedgehog",
+            "gez-hedgehog",
+            "mand-hedgehog",
+            "ebla-animal"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קָפַד",
+      "pos": "verb",
+      "bdb": [
+        "s.ck.aa"
+      ],
+      "gloss": "roll up, draw together",
+      "stems": [
+        {
+          "stem": "piel",
+          "gloss": "roll up",
+          "senses": [
+            {
+              "id": "weaver",
+              "gloss": "roll up",
+              "definition": "To gather something in like cloth at the end of weaving.",
+              "evidence": [
+                {
+                  "ref": "Isa.38.12",
+                  "role": "defining",
+                  "note": "Hezekiah likens himself to a weaver rolling up his life, then pictures God cutting him free from the loom."
+                }
+              ],
+              "cognate_ids": [
+                "arc-contract"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קְפָדָה",
+      "pos": "noun",
+      "gender": "f",
+      "bdb": [
+        "s.ck.ac"
+      ],
+      "gloss": "terror, shuddering",
+      "senses": [
+        {
+          "id": "dread",
+          "gloss": "terror",
+          "definition": "The dread that overtakes people when they can find no peace.",
+          "evidence": [
+            {
+              "ref": "Ezk.7.25",
+              "role": "defining",
+              "note": "The coming of terror sends people searching fruitlessly for peace."
+            }
+          ],
+          "cognate_ids": [
+            "arc-fear"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-hedgehog",
+      "lang": "arc",
+      "form": "קֻפְדִין",
+      "translit": "qup̄dīn",
+      "gloss": "hedgehogs",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "cal",
+          "locator": "qwpd noun no. 2, plural in Targum Jonathan Isaiah 34:11"
+        }
+      ]
+    },
+    {
+      "id": "syc-hedgehog",
+      "lang": "syc",
+      "form": "ܩܘܦܕܐ",
+      "translit": "qupdā",
+      "gloss": "hedgehog, porcupine",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "payne-smith-1903",
+          "locator": "s.v. ܩܘܦܕܐ, with sea urchin as a qualified use"
+        }
+      ]
+    },
+    {
+      "id": "ar-hedgehog",
+      "lang": "ar",
+      "form": "قُنْفُذ",
+      "translit": "qunfuḏ",
+      "gloss": "hedgehog",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "kogan-2011-lexicon",
+          "locator": "§5.2.5.2, SED II no. 133"
+        },
+        {
+          "source": "lane",
+          "locator": "n42848, p. 2993"
+        }
+      ]
+    },
+    {
+      "id": "mt-hedgehog",
+      "lang": "sem",
+      "form": "qanfud",
+      "translit": "qanfud",
+      "gloss": "Maltese hedgehog",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "gabra",
+          "locator": "lexeme 5200a382e36f2379880003c1"
+        }
+      ]
+    },
+    {
+      "id": "gez-hedgehog",
+      "lang": "gez",
+      "form": "ቍንፍዝ",
+      "translit": "qʷənfəz",
+      "gloss": "hedgehog",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "kogan-2011-lexicon",
+          "locator": "§5.2.5.2, SED II no. 133"
+        }
+      ]
+    },
+    {
+      "id": "mand-hedgehog",
+      "lang": "arc",
+      "form": "qunpud",
+      "translit": "qunpud",
+      "gloss": "Mandaic hedgehog",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "drower-macuch-1963",
+          "locator": "qunpud, DC 36 no. 254"
+        }
+      ]
+    },
+    {
+      "id": "ebla-animal",
+      "lang": "sem",
+      "form": "ḳì-pá-šum",
+      "translit": "ḳì-pá-šum",
+      "gloss": "Ebla lexical-list animal name, possibly hedgehog",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "kogan-2011-lexicon",
+          "locator": "§5.2.5.2, VE 872, citing Civil 1984 p. 91"
+        }
+      ]
+    },
+    {
+      "id": "arc-contract",
+      "lang": "arc",
+      "form": "קפד",
+      "translit": "qpd",
+      "gloss": "contract, become short",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "cal",
+          "locator": "qpd verb, Targum Jonathan Isaiah 50:2"
+        }
+      ]
+    },
+    {
+      "id": "arc-fear",
+      "lang": "arc",
+      "form": "קפד",
+      "translit": "qpd",
+      "gloss": "bristle or contract in fear",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "cal",
+          "locator": "qpd verb, G stem"
+        }
+      ]
+    }
+  ],
+  "note": "Isaiah’s pools and Zephaniah’s capitals have encouraged identifications such as bittern and owl. None of the three verses describes plumage, spines or a diagnostic call. The Mandaic word may reflect contact with Arabic, and the Ebla comparison is tentative. The animal name alone cannot establish the origin of the verb."
+}

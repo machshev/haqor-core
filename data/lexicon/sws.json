@@ -1,0 +1,167 @@
+{
+  "id": "sws",
+  "root": "סוס",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "animals",
+    "kingship"
+  ],
+  "gloss": "horse, mare",
+  "summary": "Horses draw chariots and carry riders. Psalm 20 places this familiar source of military confidence beside the community’s appeal to the name of Yahweh.",
+  "words": [
+    {
+      "lemma": "סוּס",
+      "bdb": [
+        "o.as.af"
+      ],
+      "pos": "noun",
+      "gloss": "horse",
+      "senses": [
+        {
+          "id": "horse-for-riding-or",
+          "gloss": "horse for riding or drawing chariots",
+          "definition": "Egypt pursues Israel with horses and chariots. Solomon gathers chariots and horsemen and obtains horses from abroad.",
+          "evidence": [
+            {
+              "ref": "Exo.14.9",
+              "role": "defining"
+            },
+            {
+              "ref": "1Ki.10.26",
+              "to": "1Ki.10.29"
+            }
+          ]
+        },
+        {
+          "id": "military-strength",
+          "gloss": "military strength",
+          "definition": "The singers of Psalm 20 name horses and chariots as things in which others take confidence. Another psalm declares a horse an unreliable means of escape despite its strength.",
+          "evidence": [
+            {
+              "ref": "Psa.20.8",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.33.17"
+            },
+            {
+              "ref": "Pro.21.31"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "akk-sisu",
+        "syc-susya"
+      ]
+    },
+    {
+      "lemma": "סוּסָה",
+      "bdb": [
+        "o.as.ag"
+      ],
+      "pos": "noun",
+      "gloss": "mare",
+      "senses": [
+        {
+          "id": "mare",
+          "gloss": "mare",
+          "definition": "The lover compares his companion to his mare among Pharaoh’s chariots.",
+          "evidence": [
+            {
+              "ref": "Sng.1.9",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "cognate_ids": [
+        "akk-sisu",
+        "syc-susya"
+      ]
+    },
+    {
+      "lemma": "חֲצַר סוּסָה",
+      "bdb": [
+        "h.fb.ae"
+      ],
+      "pos": "name",
+      "gloss": "Hazar-susah",
+      "senses": [
+        {
+          "id": "hazar-susah",
+          "gloss": "Hazar-susah",
+          "definition": "The allotment of Simeon includes Hazar-susah. Chronicles gives the corresponding town as Hazar-susim, with the plural horse element.",
+          "evidence": [
+            {
+              "ref": "Jos.19.5",
+              "role": "defining"
+            },
+            {
+              "ref": "1Ch.4.31"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "סוּסְיָא",
+      "pos": "noun",
+      "gloss": "horse",
+      "senses": [
+        {
+          "id": "horse",
+          "gloss": "horse",
+          "definition": "Revelation distinguishes successive horses by color and identifies their riders.",
+          "evidence": [
+            {
+              "ref": "Rev.6.2",
+              "role": "defining"
+            },
+            {
+              "ref": "Rev.6.4",
+              "to": "Rev.6.5"
+            }
+          ]
+        }
+      ],
+      "lang": "syc"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-sisu",
+      "lang": "akk",
+      "form": "sisû",
+      "translit": "sisû",
+      "gloss": "horse",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "sisû [horse] N, armep x000005840"
+        }
+      ]
+    },
+    {
+      "id": "syc-susya",
+      "lang": "syc",
+      "form": "ܣܘܣܝܐ",
+      "translit": "sūsyā",
+      "gloss": "horse",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "sedra",
+          "locator": "lexeme 2095, gloss 3668; Revelation 6:2"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The bird name in Isaiah 38:14 is a homonym. The close parallels across languages establish the animal sense without settling the earliest origin of the word."
+}

@@ -1,0 +1,64 @@
+{
+  "id": "grz",
+  "root": "גרז",
+  "status": "draft",
+  "updated": "2026-11-20",
+  "gloss": "cut off",
+  "summary": "גרז describes being cut off or severed, used in Psalm 31 for the speaker's life as if cut away from Yahweh's sight.",
+  "words": [
+    {
+      "lemma": "גָּרַז",
+      "pos": "verb",
+      "gloss": "cut off",
+      "bdb": [
+        "c.cy.aa"
+      ],
+      "stems": [
+        {
+          "stem": "niphal",
+          "gloss": "be cut off",
+          "senses": [
+            {
+              "id": "be-cut-off",
+              "gloss": "be cut off",
+              "definition": "To be severed or cut away.",
+              "evidence": [
+                {
+                  "ref": "Psa.31.23",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "גַּרְזֶן",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "axe, pick",
+      "bdb": [
+        "c.cy.ab"
+      ],
+      "senses": [
+        {
+          "id": "axe",
+          "gloss": "axe",
+          "definition": "An iron axe or pick used to cut wood or hew stone.",
+          "evidence": [
+            {
+              "ref": "Deu.19.5",
+              "role": "defining"
+            },
+            {
+              "ref": "Isa.10.15"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "Drafted from the Psalms 31–33 coverage brief. Cognate evidence requires review."
+}

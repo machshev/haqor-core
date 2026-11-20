@@ -1,0 +1,172 @@
+{
+  "id": "zhr",
+  "root": "זהר",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "instruction",
+    "light"
+  ],
+  "gloss": "warn, take heed, shine",
+  "summary": "The watchman warns of danger, and the hearer can take heed. Daniel uses a similarly spelled verb for the radiance of the wise.",
+  "words": [
+    {
+      "lemma": "זָהַר",
+      "bdb": [
+        "g.ao.aa"
+      ],
+      "pos": "verb",
+      "gloss": "warn, be warned",
+      "stems": [
+        {
+          "stem": "niphal",
+          "gloss": "take warning",
+          "senses": [
+            {
+              "id": "take-warning",
+              "gloss": "take warning",
+              "definition": "The servant takes warning from Yahweh’s judgments. Ezekiel describes the response of a person who heeds a warning.",
+              "evidence": [
+                {
+                  "ref": "Psa.19.12",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Ezk.3.21"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "warn, instruct",
+          "senses": [
+            {
+              "id": "warn-instruct",
+              "gloss": "warn, instruct",
+              "definition": "The watchman must convey the warning he hears from Yahweh.",
+              "evidence": [
+                {
+                  "ref": "Ezk.3.17",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Ezk.33.7"
+                },
+                {
+                  "ref": "Exo.18.20"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-comparison"
+      ]
+    },
+    {
+      "lemma": "זָהַר",
+      "bdb": [
+        "g.an.aa"
+      ],
+      "pos": "verb",
+      "gloss": "shine",
+      "stems": [
+        {
+          "stem": "hiphil",
+          "gloss": "shine",
+          "senses": [
+            {
+              "id": "shine",
+              "gloss": "shine",
+              "definition": "Daniel compares the wise with the brightness of the expanse.",
+              "evidence": [
+                {
+                  "ref": "Dan.12.3",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "זֹהַר",
+      "bdb": [
+        "g.an.ab"
+      ],
+      "pos": "noun",
+      "gloss": "radiance",
+      "senses": [
+        {
+          "id": "radiance",
+          "gloss": "radiance",
+          "definition": "Ezekiel sees brightness around the fiery figure. Daniel speaks of the brightness of the heavens.",
+          "evidence": [
+            {
+              "ref": "Ezk.8.2",
+              "role": "defining"
+            },
+            {
+              "ref": "Dan.12.3"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "זְהַר",
+      "bdb": [
+        "xg.ab.aa"
+      ],
+      "pos": "verb",
+      "gloss": "be watchful",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "take care",
+          "senses": [
+            {
+              "id": "take-care",
+              "gloss": "take care",
+              "definition": "The royal order tells its recipients to guard against neglect.",
+              "evidence": [
+                {
+                  "ref": "Ezr.4.22",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "arc"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-comparison",
+      "lang": "arc",
+      "form": "זְהַר",
+      "translit": "zəhar",
+      "gloss": "be on guard",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "זְהַר, sense 2, Ḥagigah 23a"
+        }
+      ],
+      "sounds": {
+        "ז": "z"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "The verb of warning and the verb of shining have separate lexical keys. Their historical connection is uncertain."
+}

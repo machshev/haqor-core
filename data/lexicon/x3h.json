@@ -1,0 +1,137 @@
+{
+  "id": "x3h",
+  "root": "שעה",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [],
+  "gloss": "look toward or away, attend",
+  "summary": "Yahweh regards Abel and his offering. Direction matters in Psalm 39, where the sufferer asks him to turn his gaze away for a little relief.",
+  "words": [
+    {
+      "lemma": "שָׁעָה",
+      "pos": "verb",
+      "gloss": "direct the gaze",
+      "bdb": [
+        "v.et.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "look toward, regard",
+          "senses": [
+            {
+              "id": "look-toward-regard",
+              "gloss": "look toward, regard",
+              "definition": "The contrast between Cain and Abel concerns the regard shown to them and their offerings. Isaiah contrasts looking to one’s Maker with looking to altars.",
+              "evidence": [
+                {
+                  "ref": "Gen.4.4",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Gen.4.5",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Isa.17.7",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Isa.17.8",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "turn the gaze away",
+          "senses": [
+            {
+              "id": "turn-the-gaze-away",
+              "gloss": "turn the gaze away",
+              "definition": "David asks God to look away from him so that he can brighten before he dies.",
+              "evidence": [
+                {
+                  "ref": "Psa.39.14",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "akk-seek"
+      ]
+    },
+    {
+      "lemma": "שָׁעָה",
+      "pos": "noun",
+      "gloss": "moment, short interval",
+      "bdb": [
+        "xv.ba.ac"
+      ],
+      "lang": "arc",
+      "gender": "f",
+      "senses": [
+        {
+          "id": "moment-short-interval",
+          "gloss": "moment, short interval",
+          "definition": "The threat of the furnace takes effect that very moment. Daniel is appalled for a while before he answers.",
+          "evidence": [
+            {
+              "ref": "Dan.3.6",
+              "role": "defining"
+            },
+            {
+              "ref": "Dan.4.16",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-hour"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-seek",
+      "lang": "akk",
+      "form": "šeʾû",
+      "translit": "šeʾû",
+      "gloss": "seek out",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep/x000017920, šeʾû [seek (out)]"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "šʿy[seek]V"
+        }
+      ]
+    },
+    {
+      "id": "arc-hour",
+      "lang": "arc",
+      "form": "שַׁעְתָּא",
+      "translit": "šaʿtā",
+      "gloss": "while, hour",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "שַׁעְתָּא, U01699, Targum 2 Kings 5:26"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The link between the Aramaic time noun and directing one’s gaze is uncertain."
+}

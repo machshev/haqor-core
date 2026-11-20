@@ -1,0 +1,91 @@
+{
+  "id": "stm",
+  "root": "סתמ",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "gloss": "hidden, secret",
+  "summary": "A hidden or secret place, including the inward place of the heart.",
+  "words": [
+    {
+      "lemma": "סָתַם",
+      "pos": "verb",
+      "gloss": "secret",
+      "bdb": [
+        "o.cp.aa"
+      ],
+      "stems": [
+        {
+          "stem": "niphal",
+          "gloss": "be closed",
+          "senses": [
+            {
+              "id": "be-closed",
+              "gloss": "be closed",
+              "definition": "A breach in a wall is closed.",
+              "evidence": [
+                {
+                  "ref": "Neh.4.1",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "stop up",
+          "senses": [
+            {
+              "id": "stop-up",
+              "gloss": "stop up",
+              "definition": "The Philistines stop up Isaac’s wells.",
+              "evidence": [
+                {
+                  "ref": "Gen.26.15",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "qal",
+          "gloss": "stop, close",
+          "senses": [
+            {
+              "id": "stop-up-2",
+              "gloss": "stop up",
+              "definition": "Springs, prayers and visions may be stopped or closed.",
+              "evidence": [
+                {
+                  "ref": "2Ki.3.19",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Dan.12.4"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-satama",
+      "lang": "ar",
+      "form": "صَتَمَ",
+      "translit": "ṣatama",
+      "gloss": "be locked, have no exit",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Arabic صتم (ṣatama)"
+        }
+      ]
+    }
+  ],
+  "note": "The closed place in Psalm 51:8 is the noun sense of סתם. Arabic صَتَمَ means to be locked or have no exit. The filename setam avoids collision with satam, the separate root שׂטמ."
+}

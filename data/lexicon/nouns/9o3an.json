@@ -1,0 +1,65 @@
+{
+  "id": "9o3an",
+  "root": "צענ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "gloss": "Zoan",
+  "summary": "צֹעַן is the Egyptian city Zoan, named in the account of Yahweh's signs in Egypt.",
+  "words": [
+    {
+      "lemma": "צֹעַן",
+      "pos": "name",
+      "gloss": "Zoan",
+      "bdb": [
+        "r.da.ab"
+      ],
+      "senses": [
+        {
+          "id": "zoan",
+          "gloss": "Zoan",
+          "definition": "The psalm recalls Yahweh's wonders in the field of Zoan.",
+          "evidence": [
+            {
+              "ref": "Psa.78.12",
+              "role": "defining"
+            },
+            {
+              "ref": "Num.13.22",
+              "role": "defining"
+            },
+            {
+              "ref": "Isa.19.11",
+              "role": "example"
+            },
+            {
+              "ref": "Psa.78.43",
+              "role": "example"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "egy-tanis"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "egy-tanis",
+      "lang": "egy",
+      "form": "Ḏꜥn.t",
+      "translit": "Ḏꜥn.t",
+      "gloss": "Tanis",
+      "relation": "loan",
+      "evidence": [
+        {
+          "source": "tla",
+          "locator": "Ancient Egyptian Dictionary, place name Ḏꜥn.t, TLA 853903"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "Egyptian supplies the place name. The similar Hebrew verb for moving camp in Isaiah 33:20 does not explain the city name."
+}

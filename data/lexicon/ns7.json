@@ -1,0 +1,84 @@
+{
+  "id": "ns7",
+  "root": "נסח",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "gloss": "tear away",
+  "summary": "To tear away or uproot.",
+  "words": [
+    {
+      "lemma": "נָסַח",
+      "pos": "verb",
+      "gloss": "tear away",
+      "bdb": [
+        "n.dt.aa"
+      ],
+      "stems": [
+        {
+          "stem": "niphal",
+          "gloss": "be torn away",
+          "senses": [
+            {
+              "id": "be-torn-away",
+              "gloss": "be torn away",
+              "definition": "The wicked man is torn away from his tent and uprooted from the land of the living.",
+              "evidence": [
+                {
+                  "ref": "Psa.52.7",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "qal",
+          "gloss": "tear away",
+          "senses": [
+            {
+              "id": "tear-away",
+              "gloss": "tear away",
+              "definition": "Yahweh tears away the wicked from their place.",
+              "evidence": [
+                {
+                  "ref": "Psa.52.7",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "נְסַח",
+      "lang": "arc",
+      "root": "נסח",
+      "pos": "verb",
+      "gloss": "be pulled away",
+      "bdb": [
+        "xn.aj.aa"
+      ],
+      "stems": [
+        {
+          "stem": "hithpeel",
+          "gloss": "be pulled",
+          "senses": [
+            {
+              "id": "be-pulled",
+              "gloss": "be pulled",
+              "definition": "A beam shall be pulled from the house of anyone who changes the decree.",
+              "evidence": [
+                {
+                  "ref": "Ezr.6.11",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "note": "Drafted for Psalm 52 coverage."
+}

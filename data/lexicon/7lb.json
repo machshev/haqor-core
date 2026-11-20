@@ -1,0 +1,280 @@
+{
+  "id": "7lb",
+  "root": "חלב",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "body",
+    "food",
+    "sacrifice"
+  ],
+  "gloss": "fat, richest portion; milk",
+  "summary": "The vowel pattern distinguishes fat from milk. The fat offered at the altar supplies a concrete example of a portion set apart, while agricultural uses can designate the best of a crop.",
+  "words": [
+    {
+      "lemma": "חֵלֶב",
+      "bdb": [
+        "h.ck.ab"
+      ],
+      "pos": "noun",
+      "gloss": "fat, richest portion",
+      "senses": [
+        {
+          "id": "animal-fat",
+          "gloss": "animal fat",
+          "definition": "The instructions for the peace offering specify the fat covering the inner organs and reserve it for Yahweh.",
+          "evidence": [
+            {
+              "ref": "Lev.3.14",
+              "to": "Lev.3.17",
+              "role": "defining"
+            },
+            {
+              "ref": "Gen.4.4"
+            }
+          ]
+        },
+        {
+          "id": "richest-portion",
+          "gloss": "richest portion",
+          "definition": "The fat of oil, wine and grain is the choice produce given from the firstfruits. Joseph’s family is offered the best of Egypt in the same terms.",
+          "evidence": [
+            {
+              "ref": "Num.18.12",
+              "role": "defining"
+            },
+            {
+              "ref": "Gen.45.18"
+            },
+            {
+              "ref": "Psa.147.14"
+            }
+          ]
+        },
+        {
+          "id": "fat-as-an-image",
+          "gloss": "fat as an image of insensibility",
+          "definition": "In Psalm 17 the attackers close up their fat and speak arrogantly. The heart compared to fat elsewhere in the Psalms suggests the image of a person unmoved by what he hears.",
+          "evidence": [
+            {
+              "ref": "Psa.17.10",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.119.70"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "חָלָב",
+      "bdb": [
+        "h.cj.ab"
+      ],
+      "pos": "noun",
+      "gloss": "milk",
+      "senses": [
+        {
+          "id": "milk-for-nourishment",
+          "gloss": "milk for nourishment",
+          "definition": "Abraham sets milk before his guests. Goat’s milk supplies food for a whole household.",
+          "evidence": [
+            {
+              "ref": "Gen.18.8",
+              "role": "defining"
+            },
+            {
+              "ref": "Pro.27.27"
+            },
+            {
+              "ref": "Jdg.4.19"
+            }
+          ]
+        },
+        {
+          "id": "milk-and-honey",
+          "gloss": "milk and honey",
+          "definition": "The abundance promised in the land is expressed in a picture of milk and honey flowing there.",
+          "evidence": [
+            {
+              "ref": "Exo.3.8",
+              "role": "defining"
+            },
+            {
+              "ref": "Num.13.27"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "ar-halaba",
+        "syc-halba"
+      ]
+    },
+    {
+      "lemma": "חֶלְבְּנָה",
+      "bdb": [
+        "h.ck.af"
+      ],
+      "pos": "noun",
+      "gloss": "galbanum",
+      "senses": [
+        {
+          "id": "galbanum",
+          "gloss": "galbanum",
+          "definition": "An aromatic substance mixed with other spices and frankincense for the holy incense.",
+          "evidence": [
+            {
+              "ref": "Exo.30.34",
+              "to": "Exo.30.35",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "אַחְלָב",
+      "bdb": [
+        "h.ck.ag"
+      ],
+      "pos": "name",
+      "gloss": "Ahlab",
+      "senses": [
+        {
+          "id": "ahlab",
+          "gloss": "Ahlab",
+          "definition": "Ahlab appears in the list of places whose inhabitants Asher failed to displace.",
+          "evidence": [
+            {
+              "ref": "Jdg.1.31",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חֶלְבָּה",
+      "bdb": [
+        "h.ck.ad"
+      ],
+      "pos": "name",
+      "gloss": "Helbah",
+      "senses": [
+        {
+          "id": "helbah",
+          "gloss": "Helbah",
+          "definition": "Helbah is listed between Achzib and Aphek among Asher’s unconquered towns.",
+          "evidence": [
+            {
+              "ref": "Jdg.1.31",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חֶלְבּוֹן",
+      "bdb": [
+        "h.ck.ae"
+      ],
+      "pos": "name",
+      "gloss": "Helbon",
+      "senses": [
+        {
+          "id": "helbon",
+          "gloss": "Helbon",
+          "definition": "Ezekiel names Helbon as the source of wine traded by Damascus with Tyre.",
+          "evidence": [
+            {
+              "ref": "Ezk.27.18",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חַלְבָא",
+      "pos": "noun",
+      "gloss": "milk",
+      "senses": [
+        {
+          "id": "milk-of-a-flock",
+          "gloss": "milk of a flock",
+          "definition": "Paul asks who tends a flock without taking some of its milk.",
+          "evidence": [
+            {
+              "ref": "1Co.9.7",
+              "role": "defining"
+            }
+          ]
+        },
+        {
+          "id": "milk-as-elementary-nourishment",
+          "gloss": "milk as elementary nourishment",
+          "definition": "Milk is contrasted with solid food in teaching believers. Peter compares the desire for nourishment to that of newborn children.",
+          "evidence": [
+            {
+              "ref": "1Co.3.2",
+              "role": "defining"
+            },
+            {
+              "ref": "Heb.5.12",
+              "to": "Heb.5.13"
+            },
+            {
+              "ref": "1Pe.2.2"
+            }
+          ]
+        }
+      ],
+      "lang": "syc"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-halaba",
+      "lang": "ar",
+      "form": "حَلَبَ",
+      "translit": "ḥalaba",
+      "gloss": "milk an animal",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I p. 623, n8785, action of milking"
+        }
+      ],
+      "sounds": {
+        "ח": "ḥ"
+      }
+    },
+    {
+      "id": "syc-halba",
+      "lang": "syc",
+      "form": "ܚܠܒܐ",
+      "translit": "ḥalbā",
+      "gloss": "milk",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "sedra",
+          "locator": "lexeme 1036, English gloss 1803; 1 Corinthians 9:7"
+        }
+      ],
+      "sounds": {
+        "ח": "ḥ"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "The image of closed fat in Psalm 17:10 is compressed. The derivation of the place names and the gum name is uncertain. The warrior Heleb appears in the Heled name entry under the spelling in Chronicles."
+}

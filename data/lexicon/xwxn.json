@@ -1,0 +1,114 @@
+{
+  "id": "xwxn",
+  "root": "שושנ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "gloss": "lily",
+  "summary": "The lily supplies an image of beauty, from the flower among thorns to the ornament on the bronze sea. Several psalm headings use its name as a musical direction.",
+  "words": [
+    {
+      "lemma": "שׁוּשַׁן",
+      "pos": "noun",
+      "gloss": "lily",
+      "cognate_ids": [
+        "arc-lily"
+      ],
+      "bdb": [
+        "v.cc.ag"
+      ],
+      "senses": [
+        {
+          "id": "lily",
+          "gloss": "lily",
+          "definition": "A flower grows among thorns. The rim of the bronze sea is fashioned like its blossom.",
+          "evidence": [
+            {
+              "ref": "Sng.2.2",
+              "role": "defining"
+            },
+            {
+              "ref": "1Ki.7.26",
+              "role": "defining"
+            },
+            {
+              "ref": "Hos.14.6",
+              "role": "defining"
+            },
+            {
+              "ref": "Sng.2.1"
+            }
+          ]
+        },
+        {
+          "id": "lilies-a-musical-heading",
+          "gloss": "Lilies, a musical heading",
+          "definition": "The plural occurs in directions to the music leader. The heading names “Lilies” without explaining whether it is a tune or another musical term.",
+          "evidence": [
+            {
+              "ref": "Psa.45.1",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.69.1",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.60.1",
+              "note": "The heading names Lily of Testimony."
+            },
+            {
+              "ref": "Psa.80.1",
+              "note": "The direction to the music leader names Lilies and Testimony together."
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "שׁוּשַׁנְתָא",
+      "pos": "noun",
+      "gloss": "lily",
+      "lang": "syc",
+      "cognate_ids": [
+        "arc-lily"
+      ],
+      "senses": [
+        {
+          "id": "lily-2",
+          "gloss": "lily",
+          "definition": "Jesus asks his hearers to consider the lilies growing in the field.",
+          "evidence": [
+            {
+              "ref": "Mat.6.28",
+              "role": "defining"
+            },
+            {
+              "ref": "Luk.12.27",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-lily",
+      "lang": "arc",
+      "form": "שׁוֹשַׁנְתָּא",
+      "translit": "šōšantā",
+      "gloss": "lily",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. שׁוֹשַׁן, Targums of Hosea 14:6 and 1 Kings 7:19"
+        }
+      ]
+    }
+  ],
+  "note": "The stem of the noun includes nun, as the Hebrew plural and Aramaic flower name show. The proposed Egyptian origin is uncertain. The Persian capital Susa has a separate geographical identity. SEDRA distinguishes Susanna (3157) and lily (3158).",
+  "doctrine": []
+}

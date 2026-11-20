@@ -1,0 +1,2028 @@
+{
+  "id": "ktb",
+  "root": "כתב",
+  "status": "draft",
+  "updated": "2026-11-15",
+  "tags": [
+    "writing",
+    "scripture",
+    "book",
+    "law",
+    "covenant",
+    "record",
+    "decree",
+    "heart"
+  ],
+  "gloss": "write; record, enrol; a writing, what is written",
+  "summary": "The verb is to write: to set words down on a tablet, a scroll, a stone, a doorpost or a wall, so that they stay and can be read. From that it is to write a letter or a deed, to record a matter or enrol a name in a register, and to lay down in writing what is to be done. Scripture's first writer is God, whose finger wrote the ten words on the tablets of stone; Moses, Joshua, the prophets and the kings' scribes write after him, and “as it is written” (כַּכָּתוּב) becomes the way scripture appeals to scripture, taken up in the New Testament as γέγραπται and in the Peshitta as כּתִיב. The nouns כְּתָב, מִכְתָּב and כְּתֹבֶת are what is written: a writing, a script, a register, a written edict, a mark written in the flesh. Phoenician ktb, the Aramaic of Daniel and Ezra and Arabic كتب give the same sense.",
+  "words": [
+    {
+      "lemma": "כָּתַב",
+      "pos": "verb",
+      "gloss": "write; write down, record, enrol; write (a letter, a deed); prescribe in writing",
+      "bdb": [
+        "k.dn.aa"
+      ],
+      "cognate_ids": [
+        "phn-ktb",
+        "ar-kataba",
+        "arc-ketav"
+      ],
+      "summary": "About 220 times, nearly all in the qal, and about half of those the passive participle כָּתוּב, “written”. What is written is fixed and can be read again, by the writer or by a later generation, which is why a covenant, a law, a deed, a sentence and a prophecy are written.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "write (on a tablet, scroll, stone); write a letter or deed; write down, record, enrol; (passive participle) written, what is written; write on the heart; write against, decree",
+          "senses": [
+            {
+              "id": "write-down",
+              "gloss": "write (words on a surface)",
+              "definition": "To set words down on something that keeps them: a scroll with ink, a tablet, plastered stones, a doorpost, a staff, a piece of wood. The words are spoken first and then written, and what is written is there to be read.",
+              "evidence": [
+                {
+                  "ref": "Jer.36.18",
+                  "role": "defining",
+                  "note": "Baruch: “from his mouth he called out to me all these words, וַאֲנִי כֹּתֵב עַל־הַסֵּפֶר בַּדְּיוֹ”: I was writing on the scroll with the ink."
+                },
+                {
+                  "ref": "Exo.24.4",
+                  "role": "defining",
+                  "note": "“וַיִּכְתֹּב מֹשֶׁה all the words of Yahweh”: what Yahweh had spoken (Exo 24:3) is then written, and read out as the book of the covenant (24:7)."
+                },
+                {
+                  "ref": "Deu.27.3",
+                  "role": "defining",
+                  "note": "On the plastered stones: “וְכָתַבְתָּ עֲלֵיהֶן all the words of this law”; Deu 27:8 adds בַּאֵר הֵיטֵב, very plainly."
+                },
+                {
+                  "ref": "Deu.27.8"
+                },
+                {
+                  "ref": "Hab.2.2",
+                  "role": "defining",
+                  "note": "“כְּתוֹב חָזוֹן and make it plain on the tablets, so that he who reads it may run”: writing is for the reader."
+                },
+                {
+                  "ref": "Deu.31.24",
+                  "note": "Moses finished “לִכְתֹּב the words of this law on a scroll, until they were complete”."
+                },
+                {
+                  "ref": "Deu.31.9",
+                  "note": "“Moses wrote this law and gave it to the priests.”"
+                },
+                {
+                  "ref": "Deu.31.19",
+                  "note": "“Write for yourselves this song, and teach it to the sons of Israel … that this song may be a witness for me.”"
+                },
+                {
+                  "ref": "Deu.6.9",
+                  "note": "“וּכְתַבְתָּם on the doorposts of your house and on your gates”; so Deu 11:20."
+                },
+                {
+                  "ref": "Num.17.17",
+                  "note": "“Each man's name תִּכְתֹּב on his staff.”"
+                },
+                {
+                  "ref": "Jos.8.32",
+                  "note": "Joshua wrote on the stones a copy of the law of Moses."
+                },
+                {
+                  "ref": "Jos.24.26",
+                  "note": "“Joshua wrote these words in the book of the law of God.”"
+                },
+                {
+                  "ref": "1Sa.10.25",
+                  "note": "Samuel told the people the rule of the kingdom, “וַיִּכְתֹּב בַּסֵּפֶר and laid it up before Yahweh”."
+                },
+                {
+                  "ref": "Isa.8.1",
+                  "note": "“Take a large tablet וּכְתֹב on it with a man's stylus.”"
+                },
+                {
+                  "ref": "Isa.30.8",
+                  "role": "defining",
+                  "note": "“Write it on a tablet with them, and inscribe it on a scroll, that it may be for a later day, for ever and ever”: written so as to last."
+                },
+                {
+                  "ref": "Jer.36.2",
+                  "note": "“Take a scroll of a book וְכָתַבְתָּ on it all the words that I have spoken to you.”"
+                },
+                {
+                  "ref": "Jer.36.4",
+                  "note": "“Baruch wrote from the mouth of Jeremiah all the words of Yahweh … on a scroll of a book.”"
+                },
+                {
+                  "ref": "Ezk.37.16",
+                  "note": "“Take one stick וּכְתֹב on it, For Judah.”"
+                },
+                {
+                  "ref": "Ezk.2.10",
+                  "note": "The scroll spread before Ezekiel was “written front and back”."
+                }
+              ]
+            },
+            {
+              "id": "god-writes",
+              "gloss": "God writes (the tablets, his law, his book)",
+              "definition": "Of God as the writer: the ten words on the two tablets of stone, written with his finger; the law and commandment he wrote to teach Israel; his own book.",
+              "evidence": [
+                {
+                  "ref": "Exo.31.18",
+                  "role": "defining",
+                  "note": "“Tablets of stone, כְּתֻבִים בְּאֶצְבַּע אֱלֹהִים”: written with the finger of God; so Deu 9:10."
+                },
+                {
+                  "ref": "Deu.9.10"
+                },
+                {
+                  "ref": "Exo.24.12",
+                  "role": "defining",
+                  "note": "“The tablets of stone, and the law and the commandment אֲשֶׁר כָּתַבְתִּי to teach them.”"
+                },
+                {
+                  "ref": "Exo.34.1",
+                  "note": "“וְכָתַבְתִּי on the tablets the words that were on the first tablets, which you broke”; so Deu 10:2."
+                },
+                {
+                  "ref": "Deu.10.2"
+                },
+                {
+                  "ref": "Deu.4.13",
+                  "note": "“He declared to you his covenant … the ten words, וַיִּכְתְּבֵם on two tablets of stone.”"
+                },
+                {
+                  "ref": "Deu.5.22",
+                  "note": "“These words Yahweh spoke … and he added no more, וַיִּכְתְּבֵם on two tablets of stone and gave them to me.”"
+                },
+                {
+                  "ref": "Exo.32.15",
+                  "note": "The tablets “written on both their sides”."
+                },
+                {
+                  "ref": "Exo.32.32",
+                  "role": "defining",
+                  "note": "Moses: “blot me, I pray, out of your book אֲשֶׁר כָּתָבְתָּ.”"
+                },
+                {
+                  "ref": "2Ki.17.37",
+                  "note": "“The statutes and the judgments and the law and the commandment אֲשֶׁר כָּתַב לָכֶם you shall keep to do all the days.”"
+                },
+                {
+                  "ref": "Hos.8.12",
+                  "note": "“אֶכְתָּב־לוֹ the many things of my law: they are counted as a strange thing.”"
+                }
+              ]
+            },
+            {
+              "id": "write-letter",
+              "gloss": "write (a letter, a deed, a bill)",
+              "definition": "To write a document that does something: a letter sent by a messenger, a bill of divorce put in the woman's hand, a deed of purchase, an accusation, a covenant that is then sealed.",
+              "evidence": [
+                {
+                  "ref": "2Sa.11.14",
+                  "role": "defining",
+                  "note": "“וַיִּכְתֹּב דָּוִד סֵפֶר to Joab and sent it by the hand of Uriah”; 2Sa 11:15 gives what he wrote in it."
+                },
+                {
+                  "ref": "2Sa.11.15"
+                },
+                {
+                  "ref": "1Ki.21.8",
+                  "role": "defining",
+                  "note": "Jezebel “wrote letters in the name of Ahab and sealed them with his seal, and sent the letters to the elders”."
+                },
+                {
+                  "ref": "2Ki.10.1",
+                  "note": "“Jehu wrote letters and sent to Samaria.”"
+                },
+                {
+                  "ref": "Deu.24.1",
+                  "role": "defining",
+                  "note": "“וְכָתַב לָהּ סֵפֶר כְּרִיתֻת and puts it in her hand and sends her from his house”; so Deu 24:3."
+                },
+                {
+                  "ref": "Deu.24.3"
+                },
+                {
+                  "ref": "Jer.32.10",
+                  "role": "defining",
+                  "note": "The purchase of the field: “וָאֶכְתֹּב בַּסֵּפֶר and sealed it, and called witnesses, and weighed the silver”."
+                },
+                {
+                  "ref": "Jer.32.44",
+                  "note": "“Fields shall be bought for silver, וְכָתוֹב בַּסֵּפֶר and sealed and witnessed.”"
+                },
+                {
+                  "ref": "Est.8.10",
+                  "note": "“He wrote in the name of king Ahasuerus and sealed with the king's signet, and sent letters by couriers.”"
+                },
+                {
+                  "ref": "Est.9.20",
+                  "note": "“Mordecai wrote these things and sent letters to all the Jews.”"
+                },
+                {
+                  "ref": "2Ch.30.1",
+                  "note": "Hezekiah “also wrote letters (אִגְּרוֹת כָּתַב) to Ephraim and Manasseh, to come to the house of Yahweh”."
+                },
+                {
+                  "ref": "Ezr.4.6",
+                  "note": "“They wrote an accusation against the inhabitants of Judah and Jerusalem.”"
+                },
+                {
+                  "ref": "Job.31.35",
+                  "note": "“The scroll which my adversary at law has written.”"
+                },
+                {
+                  "ref": "Neh.10.1",
+                  "note": "“We are making a firm covenant וְכֹתְבִים, and on the sealed document are our princes, our Levites, our priests.”"
+                }
+              ]
+            },
+            {
+              "id": "record-enrol",
+              "gloss": "write down, record; enrol, register",
+              "definition": "To put a matter or a name on record: the stages of a journey, the acts of a king, the men of a town, the divisions of a land; and so to enrol a person in a list, where to be “written” is to be counted in.",
+              "evidence": [
+                {
+                  "ref": "Num.33.2",
+                  "role": "defining",
+                  "note": "“Moses wrote their goings out by their journeys at the mouth of Yahweh.”"
+                },
+                {
+                  "ref": "Exo.17.14",
+                  "role": "defining",
+                  "note": "“כְּתֹב זֹאת זִכָּרוֹן בַּסֵּפֶר”: write this as a memorial in the book."
+                },
+                {
+                  "ref": "Jdg.8.14",
+                  "role": "defining",
+                  "note": "The youth of Succoth “wrote down for him the princes of Succoth and its elders, seventy-seven men”: a list of names."
+                },
+                {
+                  "ref": "Jos.18.9",
+                  "note": "The men passed through the land “וַיִּכְתְּבוּהָ by cities in seven portions on a scroll”: a written survey; so Jos 18:4, 6, 8."
+                },
+                {
+                  "ref": "Jos.18.4"
+                },
+                {
+                  "ref": "Num.11.26",
+                  "role": "defining",
+                  "note": "Eldad and Medad “were בַּכְּתֻבִים, but had not gone out to the tent”: among those written, the enrolled seventy."
+                },
+                {
+                  "ref": "1Ch.24.6",
+                  "note": "Shemaiah the scribe “wrote them” before the king: the courses of the priests."
+                },
+                {
+                  "ref": "1Ch.4.41",
+                  "note": "“These written by names came in the days of Hezekiah.”"
+                },
+                {
+                  "ref": "Neh.12.22",
+                  "note": "The Levites “were written, heads of fathers' houses”."
+                },
+                {
+                  "ref": "1Ki.11.41",
+                  "role": "defining",
+                  "note": "“The rest of the acts of Solomon … הֲלוֹא־הֵם כְּתֻבִים on the book of the acts of Solomon?”: the kings' record, and so of every king after him (1Ki 14:19)."
+                },
+                {
+                  "ref": "1Ki.14.19"
+                },
+                {
+                  "ref": "Jos.10.13",
+                  "note": "“Is it not written on the book of Jashar?”; so 2Sa 1:18."
+                },
+                {
+                  "ref": "Est.6.2",
+                  "note": "“It was found written, that Mordecai had told of Bigthana and Teresh.”"
+                },
+                {
+                  "ref": "Isa.4.3",
+                  "role": "defining",
+                  "note": "“He who is left in Zion … shall be called holy, כָּל־הַכָּתוּב לַחַיִּים in Jerusalem”: everyone written for life."
+                },
+                {
+                  "ref": "Dan.12.1",
+                  "role": "defining",
+                  "note": "“At that time your people shall be delivered, כָּל־הַנִּמְצָא כָּתוּב בַּסֵּפֶר”: everyone found written in the book."
+                },
+                {
+                  "ref": "Psa.87.6",
+                  "note": "“Yahweh counts, בִּכְתוֹב עַמִּים: this one was born there”: when he writes up the peoples."
+                },
+                {
+                  "ref": "Jer.22.30",
+                  "note": "“כִּתְבוּ this man childless”: enter him so in the record."
+                },
+                {
+                  "ref": "Isa.10.19",
+                  "note": "The trees left of his forest “shall be a number, and a lad may write them”."
+                }
+              ],
+              "kin": [
+                "register"
+              ]
+            },
+            {
+              "id": "it-is-written",
+              "gloss": "(passive participle) written; what is written; “as it is written”",
+              "definition": "The passive participle כָּתוּב: what stands written in the book of the law, and so the rule by which a thing is to be done or judged. With כְּ, “according to what is written”, it is the formula by which the later books appeal to the law of Moses.",
+              "evidence": [
+                {
+                  "ref": "Jos.8.31",
+                  "role": "defining",
+                  "note": "The altar on Ebal was built “as Moses the servant of Yahweh commanded … כַּכָּתוּב בְּסֵפֶר תּוֹרַת מֹשֶׁה, an altar of whole stones”: the words that follow are those of Deu 27:5–6."
+                },
+                {
+                  "ref": "2Ki.14.6",
+                  "role": "defining",
+                  "note": "Amaziah did not put the murderers' sons to death, “כַּכָּתוּב בְּסֵפֶר תּוֹרַת־מֹשֶׁה, which Yahweh commanded, saying, Fathers shall not be put to death for sons” (Deu 24:16): what is written is what Yahweh commanded."
+                },
+                {
+                  "ref": "Jos.1.8",
+                  "role": "defining",
+                  "note": "“This book of the law shall not depart from your mouth … that you may keep to do כְּכָל־הַכָּתוּב בּוֹ.”"
+                },
+                {
+                  "ref": "Jos.23.6",
+                  "note": "“Be very strong to keep and to do all that is written in the book of the law of Moses, not to turn from it right or left.”"
+                },
+                {
+                  "ref": "1Ki.2.3",
+                  "note": "David to Solomon: keep his statutes, commandments, judgments and testimonies “כַּכָּתוּב בְּתוֹרַת מֹשֶׁה”."
+                },
+                {
+                  "ref": "Deu.28.58",
+                  "note": "“All the words of this law הַכְּתוּבִים בַּסֵּפֶר הַזֶּה.”"
+                },
+                {
+                  "ref": "Deu.30.10",
+                  "note": "“His commandments and his statutes written in this book of the law.”"
+                },
+                {
+                  "ref": "Deu.29.20",
+                  "note": "“All the curses of the covenant written in this book of the law.”"
+                },
+                {
+                  "ref": "2Ki.22.13",
+                  "role": "defining",
+                  "note": "Josiah: Yahweh's wrath is great “because our fathers did not listen to the words of this book, to do כְּכָל־הַכָּתוּב עָלֵינוּ”."
+                },
+                {
+                  "ref": "2Ki.23.21",
+                  "note": "“Keep the Passover to Yahweh your God, כַּכָּתוּב on this book of the covenant.”"
+                },
+                {
+                  "ref": "2Ch.23.18",
+                  "note": "Burnt offerings offered “כַּכָּתוּב בְּתוֹרַת מֹשֶׁה”."
+                },
+                {
+                  "ref": "2Ch.30.5",
+                  "note": "They had not kept the Passover in great numbers “כַּכָּתוּב”; in 2Ch 30:18 many ate it “בְּלֹא כַכָּתוּב”, otherwise than is written."
+                },
+                {
+                  "ref": "2Ch.30.18"
+                },
+                {
+                  "ref": "2Ch.31.3"
+                },
+                {
+                  "ref": "2Ch.35.12"
+                },
+                {
+                  "ref": "Ezr.3.2",
+                  "note": "The altar built to offer burnt offerings “כַּכָּתוּב בְּתוֹרַת מֹשֶׁה the man of God”; Ezr 3:4, the feast of booths “כַּכָּתוּב”."
+                },
+                {
+                  "ref": "Ezr.3.4"
+                },
+                {
+                  "ref": "Neh.8.14",
+                  "role": "defining",
+                  "note": "“They found written in the law (וַיִּמְצְאוּ כָּתוּב בַּתּוֹרָה) which Yahweh commanded by the hand of Moses, that the sons of Israel should dwell in booths”, and they did so (Neh 8:15–17)."
+                },
+                {
+                  "ref": "Neh.10.35"
+                },
+                {
+                  "ref": "Neh.13.1",
+                  "note": "“It was found written in it that no Ammonite or Moabite should come into the assembly of God.”"
+                },
+                {
+                  "ref": "Dan.9.13",
+                  "role": "defining",
+                  "note": "“כַּאֲשֶׁר כָּתוּב בְּתוֹרַת מֹשֶׁה, all this evil has come upon us”: the written curse fulfilled; so Dan 9:11."
+                },
+                {
+                  "ref": "Dan.9.11"
+                },
+                {
+                  "ref": "Jer.25.13",
+                  "note": "“I will bring on that land … all that is written in this book, which Jeremiah prophesied against all the nations.”"
+                },
+                {
+                  "ref": "Psa.40.8",
+                  "role": "defining",
+                  "note": "“Behold, I come; in the scroll of the book כָּתוּב עָלָי”: it is written of me. Quoted of Christ in Heb 10:7."
+                },
+                {
+                  "ref": "Heb.10.7",
+                  "note": "Psa 40:8 quoted: “ἐν κεφαλίδι βιβλίου γέγραπται περὶ ἐμοῦ”; Peshitta “כּתִיב עלַי”."
+                }
+              ]
+            },
+            {
+              "id": "write-on-heart",
+              "gloss": "write on the heart, on the hand",
+              "definition": "A figure from the tablets: to write words on “the tablet of the heart” is to fix them within a man so that he keeps them; sin too is written there. To write on the hand is to mark oneself as belonging to another.",
+              "evidence": [
+                {
+                  "ref": "Pro.3.3",
+                  "role": "defining",
+                  "note": "“Let not kindness and truth forsake you: bind them on your neck, כָּתְבֵם עַל־לוּחַ לִבֶּךָ.”"
+                },
+                {
+                  "ref": "Pro.7.3",
+                  "note": "Of the father's commandments: “bind them on your fingers, write them on the tablet of your heart”."
+                },
+                {
+                  "ref": "Jer.31.33",
+                  "role": "defining",
+                  "note": "The new covenant: “I will put my law within them, וְעַל־לִבָּם אֶכְתֲּבֶנָּה, and I will be their God and they shall be my people.”"
+                },
+                {
+                  "ref": "Heb.8.10",
+                  "role": "defining",
+                  "note": "Jer 31:33 quoted: “ἐπὶ καρδίας αὐτῶν ἐπιγράψω αὐτούς”; Peshitta “ועַל לֵבַּוָתהֻון אֵכתּבִיוהי”. So Heb 10:16."
+                },
+                {
+                  "ref": "Heb.10.16"
+                },
+                {
+                  "ref": "Jer.17.1",
+                  "role": "defining",
+                  "note": "“The sin of Judah is כְּתוּבָה with a pen of iron, with a point of diamond; engraved on the tablet of their heart.”"
+                },
+                {
+                  "ref": "Isa.44.5",
+                  "note": "“This one shall say, I am Yahweh's … and this one יִכְתֹּב יָדוֹ לַיהוָה”: shall write on his hand, Yahweh's."
+                }
+              ]
+            },
+            {
+              "id": "write-against",
+              "gloss": "write against, lay down in writing, decree",
+              "definition": "To set down in writing what is to befall someone or be done to him: a sentence, a judgment, a royal order.",
+              "evidence": [
+                {
+                  "ref": "Job.13.26",
+                  "role": "defining",
+                  "note": "“For תִכְתֹּב עָלַי bitter things, and make me inherit the iniquities of my youth.”"
+                },
+                {
+                  "ref": "Isa.65.6",
+                  "role": "defining",
+                  "note": "“Behold, כְתוּבָה לְפָנָי: I will not keep silence, but I will repay.”"
+                },
+                {
+                  "ref": "Psa.149.9",
+                  "note": "“To do among them מִשְׁפָּט כָּתוּב”: the judgment written."
+                },
+                {
+                  "ref": "Est.8.8",
+                  "role": "defining",
+                  "note": "“Write concerning the Jews as is good in your eyes, in the king's name, and seal with the king's signet.”"
+                },
+                {
+                  "ref": "Est.8.5",
+                  "note": "The letters “which he wrote to destroy the Jews”."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be written, be recorded; be enrolled; be decreed in writing",
+          "senses": [
+            {
+              "id": "be-written-down-be",
+              "gloss": "be written down, be recorded",
+              "definition": "Passive of the qal: of a matter put on record so that it is kept.",
+              "evidence": [
+                {
+                  "ref": "Est.2.23",
+                  "role": "defining",
+                  "note": "“וַיִּכָּתֵב in the book of the chronicles before the king.”"
+                },
+                {
+                  "ref": "Mal.3.16",
+                  "role": "defining",
+                  "note": "“Yahweh gave heed and heard, וַיִּכָּתֵב סֵפֶר זִכָּרוֹן לְפָנָיו for those who feared Yahweh and thought on his name.”"
+                },
+                {
+                  "ref": "Psa.102.19",
+                  "role": "defining",
+                  "note": "“תִּכָּתֶב זֹאת לְדוֹר אַחֲרוֹן, and a people to be created shall praise Yah”: written for a generation to come."
+                },
+                {
+                  "ref": "Job.19.23",
+                  "note": "“Oh that my words were written! Oh that they were inscribed in a book!”"
+                },
+                {
+                  "ref": "Psa.139.16",
+                  "note": "“Your eyes saw my unformed substance, and on your book all of them were written.”"
+                },
+                {
+                  "ref": "Est.9.32",
+                  "note": "The command of Esther confirmed these matters of Purim, “וְנִכְתָּב בַּסֵּפֶר”."
+                },
+                {
+                  "ref": "Ezr.8.34",
+                  "note": "“All the weight was written at that time.”"
+                }
+              ]
+            },
+            {
+              "id": "be-enrolled-among-a",
+              "gloss": "be enrolled (among a people, in the earth)",
+              "definition": "To have one's name entered in a register, and so to belong; not to be written is to be shut out.",
+              "kin": [
+                "register"
+              ],
+              "evidence": [
+                {
+                  "ref": "Ezk.13.9",
+                  "role": "defining",
+                  "note": "The false prophets “shall not be in the council of my people, וּבִכְתָב בֵּית־יִשְׂרָאֵל לֹא יִכָּתֵבוּ, and to the land of Israel they shall not come”."
+                },
+                {
+                  "ref": "Psa.69.29",
+                  "role": "defining",
+                  "note": "“Let them be blotted out of the book of the living, וְעִם צַדִּיקִים אַל־יִכָּתֵבוּ.”"
+                },
+                {
+                  "ref": "Jer.17.13",
+                  "role": "defining",
+                  "note": "“Those who turn from me בָּאָרֶץ יִכָּתֵבוּ, for they have forsaken Yahweh, the fountain of living waters”: written in the earth."
+                }
+              ]
+            },
+            {
+              "id": "be-decreed-in-writing",
+              "gloss": "be decreed in writing",
+              "definition": "Of a royal order: to be put in writing, and so made law.",
+              "evidence": [
+                {
+                  "ref": "Est.1.19",
+                  "role": "defining",
+                  "note": "“Let a royal word go out from him, וְיִכָּתֵב in the laws of Persia and Media, that it may not pass away.”"
+                },
+                {
+                  "ref": "Est.3.9",
+                  "note": "Haman: “יִכָּתֵב לְאַבְּדָם”: let it be written to destroy them."
+                },
+                {
+                  "ref": "Est.3.12",
+                  "note": "“In the name of king Ahasuerus נִכְתָּב and sealed with the king's signet.”"
+                },
+                {
+                  "ref": "Est.8.8",
+                  "role": "defining",
+                  "note": "“A writing which נִכְתָּב in the king's name and sealed with the king's signet cannot be revoked.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "write (decrees), keep writing",
+          "senses": [
+            {
+              "id": "write-decrees",
+              "gloss": "write decrees",
+              "definition": "Once, in two forms in one line, of officials who write out unjust decrees.",
+              "evidence": [
+                {
+                  "ref": "Isa.10.1",
+                  "role": "defining",
+                  "note": "“Woe to those who decree decrees of iniquity, וּמְכַתְּבִים עָמָל כִּתֵּבוּ”: and the writers who write trouble; beside חָקַק, to decree."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "γράφω",
+          "gloss": "write",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.24.4, וַיִּכְתֹּב → ἔγραψεν; Jos.8.31 and 2Ki.14.6, כַּכָּתוּב → γέγραπται; Jer.31.33, אֶכְתֲּבֶנָּה → γράψω; Psa.40.8, כָּתוּב → γέγραπται; γράφω renders כָּתַב ×152"
+            },
+            {
+              "ref": "Mat.4.4",
+              "role": "defining",
+              "note": "“γέγραπται· οὐκ ἐπ᾽ ἄρτῳ μόνῳ ζήσεται ἄνθρωπος”: Jesus answers with Deu 8:3, and again with “γέγραπται” in Mat 4:7 and 4:10. Peshitta “כּתִיב”."
+            },
+            {
+              "ref": "Mat.4.7"
+            },
+            {
+              "ref": "Mat.4.10"
+            },
+            {
+              "ref": "Luk.24.44",
+              "role": "defining",
+              "note": "“δεῖ πληρωθῆναι πάντα τὰ γεγραμμένα ἐν τῷ νόμῳ Μωσέως καὶ προφήταις καὶ ψαλμοῖς περὶ ἐμοῦ.”"
+            },
+            {
+              "ref": "Jhn.5.46",
+              "note": "“περὶ γὰρ ἐμοῦ ἐκεῖνος ἔγραψεν”: Moses wrote of me."
+            },
+            {
+              "ref": "Gal.3.10",
+              "note": "“ἐπικατάρατος πᾶς ὃς οὐκ ἐμμένει ἐν πᾶσιν τοῖς γεγραμμένοις ἐν τῷ βιβλίῳ τοῦ νόμου”: Deu 27:26 with the wording of Deu 28:58."
+            },
+            {
+              "ref": "1Co.4.6",
+              "note": "“τὸ μὴ ὑπὲρ ὃ γέγραπται φρονεῖν.”"
+            },
+            {
+              "ref": "1Co.10.11",
+              "note": "“ἐγράφη δὲ πρὸς νουθεσίαν ἡμῶν.”"
+            },
+            {
+              "ref": "Luk.10.20",
+              "note": "“τὰ ὀνόματα ὑμῶν ἐγράφη ἐν τοῖς οὐρανοῖς.”"
+            },
+            {
+              "ref": "Rev.20.12",
+              "note": "“ἐκρίθησαν οἱ νεκροὶ ἐκ τῶν γεγραμμένων ἐν τοῖς βιβλίοις.”"
+            }
+          ]
+        },
+        {
+          "lemma": "ἐπιγράφω",
+          "gloss": "write upon, inscribe",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Pro.7.3, כָּתְבֵם → ἐπίγραψον; the form ἐπίγραψον renders כָּתַב ×3"
+            },
+            {
+              "ref": "Heb.8.10",
+              "role": "defining",
+              "note": "Jer 31:33 quoted: “ἐπὶ καρδίας αὐτῶν ἐπιγράψω αὐτούς”."
+            },
+            {
+              "ref": "Heb.10.16"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "חָקַק",
+            "note": "“Inscribe, engrave; decree”, set beside כָּתַב of writing on a scroll and of writing decrees.",
+            "evidence": [
+              {
+                "ref": "Isa.30.8",
+                "role": "defining",
+                "note": "“כָתְבָהּ עַל־לוּחַ … וְעַל־סֵפֶר חֻקָּהּ.”"
+              },
+              {
+                "ref": "Job.19.23"
+              },
+              {
+                "ref": "Isa.10.1"
+              }
+            ]
+          },
+          {
+            "lemma": "חָרַשׁ",
+            "note": "“Engrave”: the sin of Judah written with an iron pen, engraved on the tablet of the heart.",
+            "evidence": [
+              {
+                "ref": "Jer.17.1",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "חָתַם",
+            "note": "“Seal”: a letter or deed is written and then sealed, which makes it binding.",
+            "evidence": [
+              {
+                "ref": "Jer.32.10",
+                "role": "defining"
+              },
+              {
+                "ref": "1Ki.21.8"
+              },
+              {
+                "ref": "Est.8.8"
+              },
+              {
+                "ref": "Neh.10.1"
+              }
+            ]
+          },
+          {
+            "lemma": "סָפַר",
+            "note": "“Count”: to count and to write up are one act of registering.",
+            "evidence": [
+              {
+                "ref": "Psa.87.6",
+                "role": "defining",
+                "note": "“יַהְוֶה יִסְפֹּר בִּכְתוֹב עַמִּים.”"
+              },
+              {
+                "ref": "Isa.10.19"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "מָחָה",
+            "note": "“Wipe out, blot out”: what is written can be wiped off, and a name written can be blotted out.",
+            "evidence": [
+              {
+                "ref": "Exo.32.32",
+                "role": "defining",
+                "note": "“מְחֵנִי נָא מִסִּפְרְךָ אֲשֶׁר כָּתָבְתָּ.”"
+              },
+              {
+                "ref": "Num.5.23",
+                "role": "defining",
+                "note": "“The priest shall write these curses in the book, וּמָחָה into the water of bitterness.”"
+              },
+              {
+                "ref": "Psa.69.29"
+              },
+              {
+                "ref": "Exo.17.14",
+                "note": "Write this as a memorial, “for I will utterly blot out the memory of Amalek”."
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "כַּכָּתוּב",
+            "gloss": "as it is written, according to what is written (in the law): scripture's formula for citing scripture",
+            "evidence": [
+              {
+                "ref": "Jos.8.31",
+                "role": "defining"
+              },
+              {
+                "ref": "2Ki.14.6",
+                "role": "defining"
+              },
+              {
+                "ref": "1Ki.2.3"
+              },
+              {
+                "ref": "2Ki.23.21"
+              },
+              {
+                "ref": "2Ch.23.18"
+              },
+              {
+                "ref": "2Ch.30.5"
+              },
+              {
+                "ref": "Ezr.3.2"
+              },
+              {
+                "ref": "Ezr.3.4"
+              },
+              {
+                "ref": "Neh.10.35"
+              },
+              {
+                "ref": "Mat.4.4",
+                "note": "The same formula in the New Testament: γέγραπται, Peshitta כּתִיב."
+              },
+              {
+                "ref": "Act.15.15",
+                "note": "Peshitta “אַיך מָא דַּכתִיב”: as it is written."
+              }
+            ]
+          },
+          {
+            "phrase": "כָּתוּב בַּסֵּפֶר",
+            "gloss": "written in the book (of the law, of the kings' acts)",
+            "evidence": [
+              {
+                "ref": "Deu.28.58",
+                "role": "defining"
+              },
+              {
+                "ref": "1Ki.11.41"
+              },
+              {
+                "ref": "1Ki.14.19"
+              },
+              {
+                "ref": "2Ki.23.3"
+              },
+              {
+                "ref": "Dan.12.1"
+              }
+            ]
+          },
+          {
+            "phrase": "כְּתֻבִים בְּאֶצְבַּע אֱלֹהִים",
+            "gloss": "written with the finger of God",
+            "evidence": [
+              {
+                "ref": "Exo.31.18",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.9.10"
+              }
+            ]
+          },
+          {
+            "phrase": "כָּתַב עַל־לוּחַ לֵב",
+            "gloss": "write on the tablet of the heart",
+            "evidence": [
+              {
+                "ref": "Pro.3.3",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.7.3"
+              },
+              {
+                "ref": "Jer.17.1"
+              },
+              {
+                "ref": "Jer.31.33"
+              }
+            ]
+          },
+          {
+            "phrase": "כָּתַב מִפִּי",
+            "gloss": "write from the mouth of, at the dictation of",
+            "evidence": [
+              {
+                "ref": "Jer.36.4",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.36.18"
+              },
+              {
+                "ref": "Jer.36.32"
+              },
+              {
+                "ref": "Jer.45.1"
+              }
+            ]
+          },
+          {
+            "phrase": "כָּתַב סֵפֶר כְּרִיתֻת",
+            "gloss": "write a bill of divorce",
+            "evidence": [
+              {
+                "ref": "Deu.24.1",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.24.3"
+              },
+              {
+                "ref": "Mrk.10.4",
+                "note": "Peshitta: “דּנֵכתֻּוב כּתָבָא דּשֻובקָנָא”, that we should write a writing of dismissal."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "כְּתָב",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "a writing, written document, edict; script; register",
+      "bdb": [
+        "k.dn.ab"
+      ],
+      "cognate_ids": [
+        "ar-kitab",
+        "arc-ketava",
+        "phn-ktbt"
+      ],
+      "summary": "Seventeen times, all in the books of the exile and after (Ezekiel, Esther, Daniel, Ezra, Nehemiah, Chronicles), where the Aramaic of the same books has the same word. It is the thing written: a document, the script it is written in, or a register of names.",
+      "senses": [
+        {
+          "id": "writing-document",
+          "gloss": "a writing, written document, edict",
+          "definition": "Something set down in writing: a letter in reply, a written order of the king, which once written and sealed stands.",
+          "kin": [
+            "miktav-document",
+            "arc-written-decree"
+          ],
+          "evidence": [
+            {
+              "ref": "Est.8.8",
+              "role": "defining",
+              "note": "“כְתָב אֲשֶׁר־נִכְתָּב in the king's name and sealed with the king's signet cannot be revoked.”"
+            },
+            {
+              "ref": "Est.3.14",
+              "role": "defining",
+              "note": "“פַּתְשֶׁגֶן הַכְּתָב, to be given as law in every province”: a copy of the writing; so Est 8:13, and Est 4:8, “the copy of the writing of the law”."
+            },
+            {
+              "ref": "Est.8.13"
+            },
+            {
+              "ref": "Est.4.8"
+            },
+            {
+              "ref": "2Ch.2.10",
+              "role": "defining",
+              "note": "“Huram king of Tyre said בִּכְתָב, and sent to Solomon”: answered in writing."
+            },
+            {
+              "ref": "2Ch.35.4",
+              "note": "“Prepare yourselves by your divisions, בִּכְתָב דָּוִיד king of Israel and בְמִכְתַּב Solomon his son.”"
+            },
+            {
+              "ref": "Est.9.27",
+              "note": "To keep these two days “כִּכְתָבָם and at their time”: as written of them."
+            }
+          ]
+        },
+        {
+          "id": "writing-from-god",
+          "gloss": "a writing from God",
+          "definition": "Of what God has set down: the pattern of the house given to David in writing, and “the writing of truth” in which what is to come stands inscribed.",
+          "kin": [
+            "miktav-writing",
+            "god-writes"
+          ],
+          "evidence": [
+            {
+              "ref": "1Ch.28.19",
+              "role": "defining",
+              "note": "“הַכֹּל בִּכְתָב מִיַּד יַהְוֶה עָלַי he made me understand, all the works of the pattern.”"
+            },
+            {
+              "ref": "Dan.10.21",
+              "role": "defining",
+              "note": "“I will tell you what is inscribed בִּכְתָב אֱמֶת”: in a writing of truth."
+            }
+          ]
+        },
+        {
+          "id": "script",
+          "gloss": "script, way of writing",
+          "definition": "The characters a people writes in, set beside its tongue.",
+          "evidence": [
+            {
+              "ref": "Est.1.22",
+              "role": "defining",
+              "note": "Letters “to every province כִּכְתָבָהּ and to every people כִּלְשׁוֹנוֹ”: according to its writing and its tongue; so Est 3:12."
+            },
+            {
+              "ref": "Est.3.12"
+            },
+            {
+              "ref": "Est.8.9",
+              "role": "defining",
+              "note": "“And to the Jews כִּכְתָבָם וְכִלְשׁוֹנָם.”"
+            },
+            {
+              "ref": "Ezr.4.7",
+              "note": "“וּכְתָב הַנִּשְׁתְּוָן was written in Aramaic and translated in Aramaic.”"
+            }
+          ]
+        },
+        {
+          "id": "register",
+          "gloss": "register, enrolment",
+          "definition": "A written list of those who belong to a people or a family; not to be found in it is to be shut out.",
+          "kin": [
+            "record-enrol"
+          ],
+          "evidence": [
+            {
+              "ref": "Ezk.13.9",
+              "role": "defining",
+              "note": "“וּבִכְתָב בֵּית־יִשְׂרָאֵל they shall not be written.”"
+            },
+            {
+              "ref": "Ezr.2.62",
+              "role": "defining",
+              "note": "“These sought כְתָבָם הַמִּתְיַחְשִׂים, and they were not found, and they were put out of the priesthood as defiled”; so Neh 7:64."
+            },
+            {
+              "ref": "Neh.7.64"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "γραφή",
+          "gloss": "a writing; scripture",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "1Ch.28.19, בִּכְתָב → γραφῇ; 2Ch.2.10, בִּכְתָב → γραφῇ; Ezr.2.62, כְתָבָם → γραφὴν; γραφή renders כְּתָב ×6 (Hebrew and Aramaic counted together)"
+            },
+            {
+              "ref": "Jhn.10.35",
+              "role": "defining",
+              "note": "“καὶ οὐ δύναται λυθῆναι ἡ γραφή”: Peshitta “ולָא מֵשכַּח כּתָבָא דּנֵשתּרֵא”."
+            },
+            {
+              "ref": "2Ti.3.16",
+              "role": "defining",
+              "note": "“Πᾶσα γραφὴ θεόπνευστος καὶ ὠφέλιμος πρὸς διδασκαλίαν”: Peshitta “כֻּל כּתָב דַּברֻוחָא אֵתכּתֵב”."
+            },
+            {
+              "ref": "Luk.24.27",
+              "note": "“διηρμήνευεν αὐτοῖς ἐν πάσαις ταῖς γραφαῖς τὰ περὶ ἑαυτοῦ.”"
+            },
+            {
+              "ref": "Jhn.5.39",
+              "note": "“ἐραυνᾶτε τὰς γραφάς … ἐκεῖναί εἰσιν αἱ μαρτυροῦσαι περὶ ἐμοῦ.”"
+            },
+            {
+              "ref": "Rom.15.4"
+            },
+            {
+              "ref": "Act.17.11"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "כְּתָב",
+      "lang": "arc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "a writing, inscription; written decree; what is written",
+      "bdb": [
+        "xk.aj.ab"
+      ],
+      "cognate_ids": [
+        "ar-kitab",
+        "arc-ketava",
+        "phn-ktbt"
+      ],
+      "summary": "The Aramaic of Daniel and Ezra, twelve times, mostly in the emphatic כְּתָבָא: the writing on Belshazzar's wall, the decree Darius signed, and what is written in the book of Moses.",
+      "senses": [
+        {
+          "id": "arc-inscription",
+          "gloss": "a writing, inscription",
+          "definition": "Words written on a surface, to be read and explained: the writing on the wall.",
+          "kin": [
+            "miktav-writing"
+          ],
+          "evidence": [
+            {
+              "ref": "Dan.5.8",
+              "role": "defining",
+              "note": "The wise men “were not able כְּתָבָא לְמִקְרֵא, nor to make its interpretation known to the king”: a writing is a thing read."
+            },
+            {
+              "ref": "Dan.5.25",
+              "role": "defining",
+              "note": "“וּדְנָה כְתָבָא דִּי רְשִׁים: מְנֵא מְנֵא תְּקֵל וּפַרְסִין.”"
+            },
+            {
+              "ref": "Dan.5.7"
+            },
+            {
+              "ref": "Dan.5.15"
+            },
+            {
+              "ref": "Dan.5.16"
+            },
+            {
+              "ref": "Dan.5.17",
+              "note": "Daniel: “כְּתָבָא אֶקְרֵא לְמַלְכָּא, and the interpretation I will make known to him.”"
+            },
+            {
+              "ref": "Dan.5.24"
+            }
+          ]
+        },
+        {
+          "id": "arc-written-decree",
+          "gloss": "written decree",
+          "definition": "A royal order put in writing and signed, which then cannot be changed.",
+          "kin": [
+            "writing-document"
+          ],
+          "evidence": [
+            {
+              "ref": "Dan.6.9",
+              "role": "defining",
+              "note": "“Establish the interdict וְתִרְשֻׁם כְּתָבָא, that it may not be changed, according to the law of Media and Persia.”"
+            },
+            {
+              "ref": "Dan.6.10",
+              "note": "“King Darius signed כְּתָבָא וֶאֱסָרָא.”"
+            },
+            {
+              "ref": "Dan.6.11"
+            }
+          ]
+        },
+        {
+          "id": "arc-what-is-written",
+          "gloss": "what is written, prescription",
+          "definition": "What a book lays down; without it, without a prescribed amount.",
+          "kin": [
+            "it-is-written"
+          ],
+          "evidence": [
+            {
+              "ref": "Ezr.6.18",
+              "role": "defining",
+              "note": "The priests and Levites set in their divisions “כִּכְתָב סְפַר מֹשֶׁה”: as the writing of the book of Moses, the Aramaic of כַּכָּתוּב."
+            },
+            {
+              "ref": "Ezr.7.22",
+              "note": "“And salt דִּי־לָא כְתָב”: which is not written, that is, without a set amount."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מִכְתָּב",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "writing, handwriting; a written document, letter",
+      "bdb": [
+        "k.dn.ad"
+      ],
+      "cognate_ids": [
+        "ar-kitab",
+        "arc-ketava",
+        "phn-ktbt"
+      ],
+      "summary": "Nine times: the writing itself as it stands on a surface (God's own on the tablets), and a thing written and sent or left, as a letter, a proclamation or a composition.",
+      "senses": [
+        {
+          "id": "miktav-writing",
+          "gloss": "writing, the writing on a thing",
+          "definition": "The written characters themselves, as they stand on tablets or on the gold plate.",
+          "kin": [
+            "arc-inscription",
+            "writing-from-god",
+            "god-writes"
+          ],
+          "evidence": [
+            {
+              "ref": "Exo.32.16",
+              "role": "defining",
+              "note": "“The tablets were the work of God, וְהַמִּכְתָּב מִכְתַּב אֱלֹהִים הוּא, engraved on the tablets.”"
+            },
+            {
+              "ref": "Deu.10.4",
+              "role": "defining",
+              "note": "“He wrote on the tablets כַּמִּכְתָּב הָרִאשׁוֹן the ten words”: as the first writing."
+            },
+            {
+              "ref": "Exo.39.30",
+              "note": "On the plate of the holy crown “they wrote מִכְתַּב פִּתּוּחֵי חוֹתָם: Holy to Yahweh”: a writing of signet engravings."
+            }
+          ]
+        },
+        {
+          "id": "miktav-document",
+          "gloss": "a written document, letter, composition",
+          "definition": "A thing written and sent or kept: a prophet's letter, a king's proclamation in writing beside the spoken one, a written order, a king's written song.",
+          "kin": [
+            "writing-document",
+            "write-letter"
+          ],
+          "evidence": [
+            {
+              "ref": "2Ch.21.12",
+              "role": "defining",
+              "note": "“וַיָּבֹא אֵלָיו מִכְתָּב from Elijah the prophet, saying, Thus says Yahweh.”"
+            },
+            {
+              "ref": "Ezr.1.1",
+              "role": "defining",
+              "note": "Cyrus “made a voice pass through all his kingdom, וְגַם־בְּמִכְתָּב”: by word of mouth, and also in writing; so 2Ch 36:22."
+            },
+            {
+              "ref": "2Ch.36.22"
+            },
+            {
+              "ref": "2Ch.35.4",
+              "note": "“By the writing of David … וּבְמִכְתַּב שְׁלֹמֹה his son.”"
+            },
+            {
+              "ref": "Isa.38.9",
+              "note": "“מִכְתָּב לְחִזְקִיָּהוּ king of Judah, when he had been sick and had recovered”: the heading of his written song."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "γραφή",
+          "gloss": "a writing",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.32.16, וְהַמִּכְתָּב מִכְתַּב → γραφὴ (twice); γραφή renders מִכְתָּב ×2"
+            },
+            {
+              "ref": "Jhn.10.35"
+            }
+          ]
+        },
+        {
+          "lemma": "γράμμα",
+          "gloss": "a letter, written character; (plural) writings",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.39.30, מִכְתַּב → γράμματα; also Lev.19.28, כְתֹבֶת → γράμματα"
+            },
+            {
+              "ref": "2Co.3.7",
+              "role": "defining",
+              "note": "The tablets of Exo 32:16: “ἡ διακονία τοῦ θανάτου ἐν γράμμασιν ἐντετυπωμένη ἐν λίθοις”; Peshitta “בַּכתָבָא אֵתרַשמַת בּכִאפֵא”."
+            },
+            {
+              "ref": "2Co.3.6",
+              "note": "“οὐ γράμματος ἀλλὰ πνεύματος· τὸ γὰρ γράμμα ἀποκτείνει, τὸ δὲ πνεῦμα ζῳοποιεῖ.”"
+            },
+            {
+              "ref": "Jhn.5.47",
+              "note": "Of Moses: “εἰ δὲ τοῖς ἐκείνου γράμμασιν οὐ πιστεύετε”; Peshitta “לַכתָבַוהי”."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "opposites": [
+          {
+            "lemma": "קוֹל",
+            "note": "“Voice”: a proclamation goes out by voice and also in writing.",
+            "evidence": [
+              {
+                "ref": "Ezr.1.1",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "כְּתַב",
+      "lang": "arc",
+      "pos": "verb",
+      "gloss": "write; (passive) be written",
+      "bdb": [
+        "xk.aj.aa"
+      ],
+      "cognate_ids": [
+        "phn-ktb",
+        "ar-kataba",
+        "arc-ketav"
+      ],
+      "summary": "The Aramaic of Daniel and Ezra, eight times, with the same range as the Hebrew: a hand writing on a wall, a king writing to his peoples, officials writing a letter, a prophet writing down his dream.",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "write, write down",
+          "senses": [
+            {
+              "id": "write-write-down",
+              "gloss": "write, write down",
+              "definition": "To set words down, on a wall, in a letter, in a record.",
+              "kin": [
+                "write-down",
+                "write-letter",
+                "record-enrol"
+              ],
+              "evidence": [
+                {
+                  "ref": "Dan.5.5",
+                  "role": "defining",
+                  "note": "“Fingers of a man's hand came out וְכָתְבָן … on the plaster of the wall of the king's palace, and the king saw the palm of the hand דִּי כָתְבָה.”"
+                },
+                {
+                  "ref": "Dan.7.1",
+                  "role": "defining",
+                  "note": "“Then חֶלְמָא כְתַב; he told the sum of the matters”: he wrote the dream down."
+                },
+                {
+                  "ref": "Dan.6.26",
+                  "note": "“Then king Darius כְּתַב to all the peoples, nations and tongues.”"
+                },
+                {
+                  "ref": "Ezr.4.8",
+                  "note": "Rehum and Shimshai “כְּתַבוּ אִגְּרָה חֲדָה against Jerusalem”."
+                },
+                {
+                  "ref": "Ezr.5.10",
+                  "note": "“We asked them their names … דִּי נִכְתֻּב the name of the men at their head.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "peil",
+          "gloss": "be written",
+          "senses": [
+            {
+              "id": "be-written-in-a",
+              "gloss": "be written (in a document)",
+              "definition": "The passive כְּתִיב, of what stands written in a letter or a scroll.",
+              "kin": [
+                "it-is-written"
+              ],
+              "evidence": [
+                {
+                  "ref": "Ezr.5.7",
+                  "role": "defining",
+                  "note": "“They sent him a report, וְכִדְנָה כְּתִיב בְּגַוֵּהּ”: and thus it was written in it."
+                },
+                {
+                  "ref": "Ezr.6.2",
+                  "role": "defining",
+                  "note": "A scroll was found at Achmetha, “וְכֵן־כְּתִיב בְּגַוַּהּ”."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "כְּתֹבֶת",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "a writing (marked in the flesh)",
+      "bdb": [
+        "k.dn.ac"
+      ],
+      "cognate_ids": [
+        "phn-ktbt",
+        "arc-ketava"
+      ],
+      "summary": "Once only, so the verse alone fixes it: a “writing” put on the body, forbidden beside a cut made in the flesh for the dead. The word with it, קַעֲקַע, occurs nowhere else, so what kind of mark it was rests on this one verse. Punic ktbt, “writing”, is the same form.",
+      "senses": [
+        {
+          "id": "a-writing-marked-on",
+          "gloss": "a writing marked on the body",
+          "definition": "A written mark put on a person's body.",
+          "evidence": [
+            {
+              "ref": "Lev.19.28",
+              "role": "defining",
+              "note": "“A cut for a soul you shall not put in your flesh, וּכְתֹבֶת קַעֲקַע לֹא תִתְּנוּ בָּכֶם; I am Yahweh.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "כְּתַב",
+      "lang": "syc",
+      "pos": "verb",
+      "gloss": "write; (passive participle) it is written; (ethpeel) be written",
+      "cognate_ids": [
+        "arc-ketav",
+        "ar-kataba",
+        "phn-ktb"
+      ],
+      "summary": "The Peshitta's verb for writing (SEDRA lexeme 1600), 231 times, where the Greek has γράφω. Its passive participle כּתִיב, “it is written”, is the New Testament's formula for citing scripture, as כְּתִיב is in Ezra's Aramaic.",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "write; (passive participle) written, it is written",
+          "senses": [
+            {
+              "id": "write",
+              "gloss": "write",
+              "definition": "To write words: on a tablet, in a book, on a title, on a person.",
+              "kin": [
+                "write-down",
+                "write-letter"
+              ],
+              "evidence": [
+                {
+                  "ref": "Jhn.19.22",
+                  "role": "defining",
+                  "note": "Pilate: “מֵדֵּם דּכֵתבֵּת כֵּתבֵּת”: what I have written, I have written."
+                },
+                {
+                  "ref": "Jhn.5.46",
+                  "role": "defining",
+                  "note": "“מֻושֵא גֵּיר עלַי כּתַב”: for Moses wrote of me."
+                },
+                {
+                  "ref": "Luk.1.63",
+                  "note": "Zechariah asked for a tablet “וַכתַב”, and wrote."
+                },
+                {
+                  "ref": "Rev.1.19",
+                  "note": "“כּתֻוב therefore what you have seen.”"
+                },
+                {
+                  "ref": "Rev.3.12",
+                  "note": "“וֵאכתֻּוב עלַוהי the name of my God”: compare Isa 44:5."
+                },
+                {
+                  "ref": "Heb.8.10",
+                  "note": "“On their hearts אֵכתּבִיוהי”: Jer 31:33."
+                },
+                {
+                  "ref": "Mrk.10.4"
+                }
+              ]
+            },
+            {
+              "id": "passive-participle-it-is",
+              "gloss": "(passive participle) it is written",
+              "definition": "The participle כּתִיב, citing scripture as the settled word: “it is written”, “as it is written”, “all that is written”.",
+              "kin": [
+                "it-is-written"
+              ],
+              "evidence": [
+                {
+                  "ref": "Mat.4.4",
+                  "role": "defining",
+                  "note": "“כּתִיב דּלָא הוָא בּלַחמָא בַּלחֻוד חָיֵא בַּרנָשָא”: it is written, not by bread alone does man live (Deu 8:3); so Mat 4:7, 10."
+                },
+                {
+                  "ref": "Mat.4.7"
+                },
+                {
+                  "ref": "Mat.4.10"
+                },
+                {
+                  "ref": "Luk.24.44",
+                  "role": "defining",
+                  "note": "“כֻּל מֵדֵּם דַּכתִיב בּנָמֻוסָא דּמֻושֵא ובַנבִיֵא וַבמַזמֻורֵא עלַי” must be fulfilled."
+                },
+                {
+                  "ref": "Mat.26.24",
+                  "note": "“The Son of man goes אַיכַּנָא דַּכתִיב עלַוהי.”"
+                },
+                {
+                  "ref": "1Co.4.6",
+                  "role": "defining",
+                  "note": "“Not to think beyond מָא דַּכתִיב.”"
+                },
+                {
+                  "ref": "1Co.15.3",
+                  "note": "The Messiah died for our sins “אַיכַּנָא דַּכתִיב”, and rose the third day “אַיך דַּכתִיב” (1Co 15:4), where the Greek has κατὰ τὰς γραφάς."
+                },
+                {
+                  "ref": "1Co.15.4"
+                },
+                {
+                  "ref": "Gal.3.10",
+                  "note": "“Cursed is everyone who does not do כֻּל דַּכתִיב בּנָמֻוסָא הָנָא.”"
+                },
+                {
+                  "ref": "Jhn.20.31",
+                  "note": "“These דַּכתִיבָן, that you may believe that Jesus is the Messiah, the son of God.”"
+                },
+                {
+                  "ref": "Rom.2.15",
+                  "note": "The work of the law “כּתִיב עַל לֵבּהֻון”."
+                },
+                {
+                  "ref": "Rev.13.8",
+                  "note": "Those “not written (כּתִיבִין) in the book of life”."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "ethpeel",
+          "gloss": "be written; be enrolled",
+          "senses": [
+            {
+              "id": "be-written-be-enrolled",
+              "gloss": "be written; be enrolled",
+              "definition": "Passive: of scripture written for those who come after, and of names written in heaven.",
+              "evidence": [
+                {
+                  "ref": "Rom.15.4",
+                  "role": "defining",
+                  "note": "“כֻּל מֵדֵּם גֵּיר דּמֵן קדִים אֵתכּתֵב ליֻולפָּנָא הֻו דִּילַן אֵתכּתֵב”: all that was written of old was written for our teaching."
+                },
+                {
+                  "ref": "1Co.10.11",
+                  "note": "These things “וֵאתכּתֵב for our instruction”."
+                },
+                {
+                  "ref": "Luk.10.20",
+                  "role": "defining",
+                  "note": "“Rejoice דַּשמָהַיכֻּון אֵתכּתֵבו בַּשמַיָא”: that your names have been written in heaven."
+                },
+                {
+                  "ref": "Heb.12.23",
+                  "note": "The firstborn “דּמֵתכַּתבִּין בַּשמַיָא”."
+                },
+                {
+                  "ref": "2Ti.3.16",
+                  "note": "“כֻּל כּתָב דַּברֻוחָא אֵתכּתֵב”: every writing that was written by the spirit."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "כְּתָבָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "a writing; scripture; book; bill, document; the letter",
+      "cognate_ids": [
+        "arc-ketava",
+        "ar-kitab",
+        "phn-ktbt"
+      ],
+      "summary": "The Peshitta's כּתָבָא (SEDRA lexeme 1601), about a hundred times: the word for scripture (Greek γραφή), and also for a book (βιβλίον, as “the book of life”), a written bill, and “the letter” set against the spirit (γράμμα). It is the emphatic form of the כְּתָב of Daniel and Ezra.",
+      "senses": [
+        {
+          "id": "scripture-the-writings",
+          "gloss": "scripture, the writings",
+          "definition": "What is written by God's direction, singular for a passage or the whole and plural for the writings together: it speaks, it is fulfilled, and it cannot be undone.",
+          "kin": [
+            "writing-from-god",
+            "arc-what-is-written"
+          ],
+          "evidence": [
+            {
+              "ref": "Jhn.10.35",
+              "role": "defining",
+              "note": "“ולָא מֵשכַּח כּתָבָא דּנֵשתּרֵא”: and the writing cannot be loosed."
+            },
+            {
+              "ref": "Luk.24.27",
+              "role": "defining",
+              "note": "Beginning from Moses and all the prophets he explained to them about himself “מֵן כֻּלהֻון כּתָבֵא”."
+            },
+            {
+              "ref": "Mat.22.29",
+              "note": "“You err, not knowing כּתָבֵא nor the power of God.”"
+            },
+            {
+              "ref": "Mat.26.54",
+              "note": "“How then would כּתָבֵא be fulfilled, that thus it must be?”"
+            },
+            {
+              "ref": "Luk.4.21",
+              "note": "“Today כּתָבָא הָנָא is fulfilled in your ears.”"
+            },
+            {
+              "ref": "Jhn.5.47",
+              "note": "“If you do not believe לַכתָבַוהי”, the writings of Moses."
+            },
+            {
+              "ref": "Act.17.11",
+              "note": "The Bereans examined “מֵן כּתָבֵא whether these things were so”."
+            },
+            {
+              "ref": "Rom.15.4"
+            },
+            {
+              "ref": "2Ti.3.16"
+            }
+          ]
+        },
+        {
+          "id": "book",
+          "gloss": "book",
+          "definition": "A written book, above all “the book of life” in which names are written.",
+          "kin": [
+            "register"
+          ],
+          "evidence": [
+            {
+              "ref": "Php.4.3",
+              "role": "defining",
+              "note": "“דַּשמָהַיהֻון כּתִיבִין בַּכתָבָא דּחַיֵא”: whose names are written in the book of life."
+            },
+            {
+              "ref": "Rev.13.8"
+            },
+            {
+              "ref": "Rev.21.27",
+              "note": "Those “written בַּכתָבֵה דֵּאמרָא”."
+            },
+            {
+              "ref": "Rev.1.11",
+              "note": "“What you see, write בַּכתָבָא.”"
+            },
+            {
+              "ref": "Rev.22.19"
+            }
+          ]
+        },
+        {
+          "id": "bill-written-document-inscription",
+          "gloss": "bill, written document; inscription",
+          "definition": "A document that does something: a bill of divorce, a debtor's bill; and the written title on the stake.",
+          "kin": [
+            "writing-document",
+            "miktav-document"
+          ],
+          "evidence": [
+            {
+              "ref": "Mat.19.7",
+              "role": "defining",
+              "note": "“כּתָבָא דּשֻובקָנָא”: a writing of dismissal, the סֵפֶר כְּרִיתֻת of Deu 24:1."
+            },
+            {
+              "ref": "Luk.16.6",
+              "role": "defining",
+              "note": "“Take כּתָבָך and sit down quickly and write fifty.”"
+            },
+            {
+              "ref": "Mat.5.31"
+            },
+            {
+              "ref": "Mat.27.37",
+              "note": "The cause of his death set over his head “בַּכתָבָא”."
+            }
+          ]
+        },
+        {
+          "id": "the-letter-against-the",
+          "gloss": "the letter (against the spirit)",
+          "definition": "The written code as a thing outward, on stone and in the flesh, set against the spirit and the heart.",
+          "kin": [
+            "miktav-writing"
+          ],
+          "evidence": [
+            {
+              "ref": "2Co.3.6",
+              "role": "defining",
+              "note": "Ministers of a new covenant, “לָא בַּכתָבָא אֵלָא בּרֻוחָא; כּתָבָא גֵּיר קָטֵל, רֻוחָא דֵּין מַחיָא”."
+            },
+            {
+              "ref": "2Co.3.7"
+            },
+            {
+              "ref": "Rom.2.29",
+              "note": "Circumcision is of the heart, “בּרֻוח ולָא בַּכתָבָא”."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "phn-ktb",
+      "lang": "phn",
+      "form": "𐤊𐤕𐤁",
+      "translit": "ktb",
+      "gloss": "write, inscribe, record",
+      "relation": "cognate",
+      "note": "Phoenician and Punic use the verb as Hebrew does, of inscribing a plaque or a stele and of writing a man's story in an inscription: those in charge of the temple “shall inscribe this resolution upon a stele of gold” (KAI 60.4/5).",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 244, K-T-B",
+          "note": "“[Heb. k-t-b] v. qal WRITE, INSCRIBE, RECORD”, citing KAI 43.13, KAI 60.4/5 and CIS i 6000.7/8; “v. piʿel RECORD”, KAI 160.2 (text obscure). Read from the scan's extracted text; the PDF page was not rendered."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000193 ktb[write]V; PUN000962 ktb[write]V"
+        }
+      ]
+    },
+    {
+      "id": "phn-ktbt",
+      "lang": "phn",
+      "form": "𐤊𐤕𐤁𐤕",
+      "translit": "ktbt",
+      "gloss": "writing; book, document",
+      "relation": "cognate",
+      "note": "The same form as כְּתֹבֶת, with the senses of כְּתָב and מִכְתָּב: a statue “having writing on its abdomen” (KAI 119.1/2), and payments made “in the amount set down in the book” (KAI 69.16/17). A second entry gives ktbt as a letter of the alphabet (RES 1543.4/5).",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "pp. 244–245, KTBT I",
+          "note": "“[Heb. ktobet, ktiba; Aram. ktaba; Ar. kitab] n.f. 1. WRITING … 2. BOOK, DOCUMENT”. Read from the scan's extracted text; the PDF page was not rendered."
+        },
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 245, KTBT II",
+          "note": "“n.f. LETTER of the alphabet.”"
+        }
+      ]
+    },
+    {
+      "id": "phn-mktb",
+      "lang": "phn",
+      "form": "𐤌𐤊𐤕𐤁",
+      "translit": "mktb",
+      "gloss": "writing (?)",
+      "relation": "possible",
+      "note": "The form of מִכְתָּב, once in a Punic text whose context is too broken to translate.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 281, MKTB",
+          "note": "“n.m. ?WRITING”, CIS i 6000.6: “Context obscure; translation not possible.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-kataba",
+      "lang": "ar",
+      "form": "كَتَبَ",
+      "translit": "kataba",
+      "gloss": "write; (of God) prescribe, ordain; pass sentence; also draw together, sew",
+      "relation": "cognate",
+      "note": "The Arabic verb has the Hebrew's range: to write, and, of God, to prescribe or ordain (“fasting is prescribed for you”), and to decree against a man, as Job 13:26 and Isa 65:6. Lane also records an unrelated-looking sense, to draw together or sew a skin with thongs (see ar-kutba).",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2589, كَتَبَهُ (n36626)",
+          "note": "“He wrote it”; -A2- “He (God) prescribed, appointed, or ordained, and made obligatory”; “He judged, passed sentence, or decreed, against him”; -A3- “He drew together; brought together; conjoined … He sewed a قِرْبَة”."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000193 ktb[write]V; ARB031682 kataba[Wrote]"
+        }
+      ]
+    },
+    {
+      "id": "ar-kitab",
+      "lang": "ar",
+      "form": "كِتَابٌ",
+      "translit": "kitāb",
+      "gloss": "a writing, book, letter, record; a revealed scripture; a divine prescript or decree",
+      "relation": "cognate",
+      "note": "The noun answers to כְּתָב and the Peshitta's כּתָבָא in each of their senses: a thing written, a letter sent, a register, a revealed scripture, and what God has prescribed.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2590, كِتَابٌ (n36634)",
+          "note": "“A thing in which, or on which, one writes: [a book:] … [a record, or register; and a written mandate;] … a writing, or writ, or thing written … a letter, or epistle”; “A revealed scripture”; -A2- “Divine prescript, appointment, or ordinance: judgment, or sentence”."
+        }
+      ]
+    },
+    {
+      "id": "ar-kutba",
+      "lang": "ar",
+      "form": "كُتْبَةٌ",
+      "translit": "kutba",
+      "gloss": "a thong for sewing a skin; a seam",
+      "relation": "possible",
+      "note": "Arabic has, beside “write”, a sense of stitching skins together with a thong. Whether writing was first a pricking or stitching of marks, and whether the כְּתֹבֶת put in the flesh (Lev 19:28) keeps anything of it, the evidence does not settle; scripture's use of the root is writing throughout.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2590, كُتْبَةٌ (n36631)",
+          "note": "“A thong with which one sews a مَزَادَة or a قِرْبَة … A seam or suture, in a skin or hide”."
+        }
+      ]
+    },
+    {
+      "id": "arc-ketav",
+      "lang": "arc",
+      "form": "כְּתַב",
+      "translit": "kǝtab",
+      "gloss": "write (Jewish Aramaic); passive participle כְּתִיב, it is written",
+      "relation": "cognate",
+      "note": "The Targums render כָּתַב by it (Deu 6:9; 31:24; Jos 18:4), and the passive participle כְּתִיב is the standing way of citing the biblical text: “it is written, it reads”.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. כְּתַב I",
+          "note": "“Targ. Deut. VI, 9 … Ib. XXXI, 24. Targ. Josh. XVIII, 4”; “Part. pass. כְּתִיב. Targ. Ex. XXXI, 18”; “כְּתִיב it is written, it reads”."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000193 ktb[write]V; ARM013512 KTB[write]V"
+        }
+      ]
+    },
+    {
+      "id": "arc-ketava",
+      "lang": "arc",
+      "form": "כְּתָבָא",
+      "translit": "kǝtābā",
+      "gloss": "writing, writ, document (Jewish Aramaic)",
+      "relation": "cognate",
+      "note": "The Targums use this one noun for Hebrew מִכְתָּב (Exo 32:16) and for כְּתֹבֶת (Lev 19:28), and it is used of “your sacred writ”.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. כְּתַב II (כְּתָבָא)",
+          "note": "“Targ. Y. Lev. XIX, 28 (h. text כְּתֹבֶת) … Targ. Ex. XXXII, 16 (h. text מכתב)”; “what your sacred writ says”."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "authority-of-scripture",
+      "statement": "The first thing scripture says was written, God wrote: the tablets were “written with the finger of God” (Exo 31:18), “and the writing was the writing of God” (Exo 32:16). He then told Moses to write (“write for yourself these words, for according to these words I have made a covenant with you and with Israel”, Exo 34:27), and Moses wrote the law on a scroll until it was complete (Deu 31:24). From then on Israel is ruled by what is written. The king is to write himself a copy of the law and read in it all the days of his life, “that he may learn to fear Yahweh his God, to keep all the words of this law” (Deu 17:18–19); Joshua is to do “according to all that is written in it” (Jos 1:8); kings and priests act “as it is written in the law of Moses” (2Ki 14:6; Ezr 3:2), and when the lost book is found Josiah counts the fathers guilty because they did not do “according to all that is written” (2Ki 22:13). What is not as written is wrong even when well meant (2Ch 30:18). Jesus stands in the same place. He answers each of the three temptations with “it is written” and nothing else (Mat 4:4, 7, 10); he says “the scripture cannot be broken” (Jhn 10:35) and that “all things written in the law of Moses and the prophets and the psalms concerning me must be fulfilled” (Luk 24:44); he holds that a man who does not believe Moses' writings will not believe his own words (Jhn 5:46–47). The apostles do the same: the gospel is that Christ died and rose “according to the scriptures” (1Co 15:3–4), the Bereans are commended for examining the scriptures daily to see whether what Paul said was so (Act 17:11), and believers are “not to think beyond what is written” (1Co 4:6). From the verses: what is written is God's word in fixed form, and it is the rule by which every teacher, king and practice is tried; Jesus himself submitted to it and required belief in it.",
+      "evidence": [
+        {
+          "ref": "Exo.31.18"
+        },
+        {
+          "ref": "Exo.32.16"
+        },
+        {
+          "ref": "Exo.34.27"
+        },
+        {
+          "ref": "Deu.31.24"
+        },
+        {
+          "ref": "Deu.17.18",
+          "to": "Deu.17.19"
+        },
+        {
+          "ref": "Jos.1.8"
+        },
+        {
+          "ref": "2Ki.14.6"
+        },
+        {
+          "ref": "Ezr.3.2"
+        },
+        {
+          "ref": "2Ki.22.13"
+        },
+        {
+          "ref": "2Ch.30.18"
+        },
+        {
+          "ref": "Mat.4.4"
+        },
+        {
+          "ref": "Mat.4.7"
+        },
+        {
+          "ref": "Mat.4.10"
+        },
+        {
+          "ref": "Jhn.10.35"
+        },
+        {
+          "ref": "Luk.24.44"
+        },
+        {
+          "ref": "Jhn.5.46",
+          "to": "Jhn.5.47"
+        },
+        {
+          "ref": "1Co.15.3",
+          "to": "1Co.15.4"
+        },
+        {
+          "ref": "Act.17.11"
+        },
+        {
+          "ref": "1Co.4.6"
+        }
+      ]
+    },
+    {
+      "topic": "written-for-our-learning",
+      "statement": "Scripture says why things were written. The song of Moses was to be written and taught “that this song may be a witness for me” (Deu 31:19). Isaiah is told to write “that it may be for a later day, for ever and ever” (Isa 30:8), Habakkuk to write the vision plainly “so that he who reads it may run” (Hab 2:2), and the psalmist says “this shall be written for a generation to come, and a people to be created shall praise Yah” (Psa 102:19). The New Testament reads the Old in that way: “whatever was written before was written for our teaching, that through patience and the comfort of the scriptures we might have hope” (Rom 15:4); what befell Israel in the wilderness “was written for our admonition” (1Co 10:11); and John's signs “are written that you may believe that Jesus is the Christ, the son of God, and that believing you may have life in his name” (Jhn 20:31). “Every scripture is God-breathed and profitable for teaching, for reproof, for correction, for instruction in righteousness” (2Ti 3:16). From the verses: the writing was meant from the first for readers not yet born, so that faith and hope come by reading and believing what is written.",
+      "evidence": [
+        {
+          "ref": "Deu.31.19"
+        },
+        {
+          "ref": "Isa.30.8"
+        },
+        {
+          "ref": "Hab.2.2"
+        },
+        {
+          "ref": "Psa.102.19"
+        },
+        {
+          "ref": "Rom.15.4"
+        },
+        {
+          "ref": "1Co.10.11"
+        },
+        {
+          "ref": "Jhn.20.31"
+        },
+        {
+          "ref": "2Ti.3.16"
+        }
+      ]
+    },
+    {
+      "topic": "law-written-on-the-heart",
+      "statement": "God wrote the ten words on tablets of stone (Exo 31:18; Deu 4:13), but the words were always meant to be within: “these words which I command you today shall be on your heart”, and then written on the doorposts (Deu 6:6, 9); the son is told, “write them on the tablet of your heart” (Pro 3:3; 7:3). What Judah had written there instead was its sin, “with a pen of iron … engraved on the tablet of their heart” (Jer 17:1). So Yahweh promises a new covenant: “I will put my law within them, and on their heart I will write it; and I will be their God, and they shall be my people” (Jer 31:33). Hebrews quotes this as the covenant Christ mediates (Heb 8:10; 10:16), and Paul tells the Corinthians that they are “a letter of Christ … written not with ink but with the spirit of the living God, not on tablets of stone but on tablets of hearts of flesh” (2Co 3:3), for “the letter kills, but the spirit gives life” (2Co 3:6). From the verses: the same law that was written outside a man is to be written inside him, by God, so that he does it; the contrast is not between a written word and no word, but between a word left on stone and a word believed and kept.",
+      "evidence": [
+        {
+          "ref": "Exo.31.18"
+        },
+        {
+          "ref": "Deu.4.13"
+        },
+        {
+          "ref": "Deu.6.6"
+        },
+        {
+          "ref": "Deu.6.9"
+        },
+        {
+          "ref": "Pro.3.3"
+        },
+        {
+          "ref": "Pro.7.3"
+        },
+        {
+          "ref": "Jer.17.1"
+        },
+        {
+          "ref": "Jer.31.33"
+        },
+        {
+          "ref": "Heb.8.10"
+        },
+        {
+          "ref": "Heb.10.16"
+        },
+        {
+          "ref": "2Co.3.3"
+        },
+        {
+          "ref": "2Co.3.6"
+        }
+      ]
+    },
+    {
+      "topic": "book-of-life",
+      "statement": "To be written is to be counted among a people. The false prophets “shall not be written in the writing of the house of Israel, and to the land of Israel they shall not come” (Ezk 13:9); the priests whose writing could not be found were put out of the priesthood (Ezr 2:62). Scripture speaks of God's register in the same way. Moses speaks of “your book which you have written” (Exo 32:32); the survivor in Zion is “everyone written for life in Jerusalem” (Isa 4:3); the wicked are not to be “written with the righteous” (Psa 69:29). Those who turn from Yahweh “shall be written in the earth” (Jer 17:13), while Jesus tells his disciples to rejoice “that your names are written in the heavens” (Luk 10:20). Daniel is told that “everyone found written in the book” shall be delivered, when “many of those who sleep in the dust of the earth shall awake” (Dan 12:1–2), and John sees the dead judged “out of the things written in the books”, and whoever was not found written in the book of life cast into the lake of fire (Rev 20:12, 15). From the verses: the writing is God's remembrance of those who are his, kept while they sleep in the dust; life is given to the written at the resurrection and judgment, not before.",
+      "evidence": [
+        {
+          "ref": "Ezk.13.9"
+        },
+        {
+          "ref": "Ezr.2.62"
+        },
+        {
+          "ref": "Exo.32.32"
+        },
+        {
+          "ref": "Isa.4.3"
+        },
+        {
+          "ref": "Psa.69.29"
+        },
+        {
+          "ref": "Jer.17.13"
+        },
+        {
+          "ref": "Luk.10.20"
+        },
+        {
+          "ref": "Dan.12.1",
+          "to": "Dan.12.2"
+        },
+        {
+          "ref": "Rev.20.12"
+        },
+        {
+          "ref": "Rev.20.15"
+        }
+      ]
+    }
+  ],
+  "note": "Root: כתב, the brief's key, which is the words' own root; no other entry has it. Counts: BDB's k.dn.aa gathers 1261 tokens, but 1040 of them are the word לוֹ, filed there by spelling (the brief's “(no stem)” group); the verb itself is 202 qal, 17 niphal and 2 piel tokens. Hos 8:12 (אֶכְתָּב־) is not in the brief's qal list but is the verb. Est 8:8 כְתָב and Ezr 7:22 כְתָב are counted under both k.dn.ab and xk.aj.ab: the first is Hebrew, the second Aramaic. Exo 34:27, Jer 30:2 and Ezk 24:2 (כְּתָב־ imperative) are counted under the noun k.dn.ab by spelling but are the verb. Left out: כִּתִּי / כִּתִּים (k.dn.ae), a people (Gen 10:4), filed under כתב by alphabet only and no word of this root (Phoenician kt, kty, Kition); m.by.am is a zero-token cross-reference. No personal name is formed from the root. Peshitta words not drafted: כתבונא “little book” (SEDRA 1602; Rev 10:2 and following), כתבתא “handwriting” (1603; 1Co 16:21; 2Th 3:17), מכתבנותא “enrolment” (1604; Luk 2:2) and כתיבתא “inscription, letters” (3491; Luk 20:24; Heb 5:12; Rev 21:12). Leads not followed: Ugaritic ktb (“write”; listed in Anderson and Moser SEM000193 as UGC002391, but not in Segert's glossary, and DULAT not seen); Geʿez kätäbä / kǝtab (Leslau 1987 and Dillmann not seen; kǝtab may be a loan from Arabic); Sabaic (Biella's scan not searchable for the root); Old and Imperial Aramaic ktb in inscriptions (DEAPS, CAL not consulted); Oracc gives no Akkadian ktb. Krahmalkov's pages were read from the scan's extracted text only: check pp. 244–245 and 281 against the PDF. Open question: whether “write” goes back to pricking or stitching (ar-kutba, recorded as possible and named on no word)."
+}

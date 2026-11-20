@@ -1,0 +1,645 @@
+{
+  "id": "mnh",
+  "root": "מנה",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "counting",
+    "allotment"
+  ],
+  "gloss": "count, assign, apportion",
+  "summary": "A count establishes how many there are. To assign is to designate a task, a provision or a share. Psalm 11 speaks of the share in a cup of judgment, while Psalm 16 names Yahweh as the speaker’s portion.",
+  "words": [
+    {
+      "lemma": "מָנָה",
+      "bdb": [
+        "m.cm.aa"
+      ],
+      "pos": "verb",
+      "gloss": "count, assign",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "count or number",
+          "senses": [
+            {
+              "gloss": "count or number",
+              "definition": "God likens Abram’s descendants to the dust of the earth, beyond anyone’s power to count. Moses asks for wisdom to number the days of life.",
+              "evidence": [
+                {
+                  "ref": "Gen.13.16",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.90.12"
+                },
+                {
+                  "ref": "Num.23.10"
+                }
+              ],
+              "id": "count"
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be counted among",
+          "senses": [
+            {
+              "id": "be-counted-among",
+              "gloss": "be counted among",
+              "definition": "Solomon’s people are too numerous to count. Isaiah’s servant is counted among transgressors, words that Jesus applies to himself.",
+              "evidence": [
+                {
+                  "ref": "1Ki.3.8",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Isa.53.12"
+                },
+                {
+                  "ref": "Luk.22.37"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "appoint or assign",
+          "senses": [
+            {
+              "gloss": "appoint or assign",
+              "definition": "The king allocates daily provisions, while Yahweh appoints a fish, a plant, a worm and a wind in Jonah’s story.",
+              "evidence": [
+                {
+                  "ref": "Dan.1.5",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jon.2.1"
+                },
+                {
+                  "ref": "Jon.4.6",
+                  "to": "Jon.4.8"
+                }
+              ],
+              "id": "assign"
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be appointed",
+          "senses": [
+            {
+              "id": "be-appointed",
+              "gloss": "be appointed",
+              "definition": "Levites are appointed over sanctuary vessels and supplies.",
+              "evidence": [
+                {
+                  "ref": "1Ch.9.29",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "akk-manu",
+        "syc-mna"
+      ]
+    },
+    {
+      "lemma": "מָנָה",
+      "bdb": [
+        "m.cm.ab"
+      ],
+      "pos": "noun",
+      "gloss": "share, portion",
+      "senses": [
+        {
+          "id": "share-portion",
+          "gloss": "share, portion",
+          "definition": "Elkanah distributes portions at the sacrificial meal. Samuel reserves a particular portion for Saul.",
+          "evidence": [
+            {
+              "ref": "1Sa.1.4",
+              "to": "1Sa.1.5",
+              "role": "defining"
+            },
+            {
+              "ref": "1Sa.9.23",
+              "to": "1Sa.9.24"
+            }
+          ],
+          "kin": [
+            "assign"
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "מְנָת",
+      "bdb": [
+        "m.cm.af"
+      ],
+      "pos": "noun",
+      "gloss": "allotted portion",
+      "senses": [
+        {
+          "gloss": "allotted share",
+          "definition": "The wicked receive a cup of judgment as their share. The speaker of Psalm 16 calls Yahweh the portion of his inheritance and his cup.",
+          "evidence": [
+            {
+              "ref": "Psa.11.6",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.16.5"
+            },
+            {
+              "ref": "Psa.63.11"
+            }
+          ],
+          "id": "portion",
+          "kin": [
+            "assign"
+          ]
+        },
+        {
+          "id": "provision-due",
+          "gloss": "provision due",
+          "definition": "Judah is instructed to give the portion owed to the priests and Levites. Nehemiah learns that the Levites have gone without theirs.",
+          "evidence": [
+            {
+              "ref": "2Ch.31.4",
+              "role": "defining"
+            },
+            {
+              "ref": "Neh.13.10"
+            }
+          ],
+          "kin": [
+            "assign"
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "מָנֶה",
+      "bdb": [
+        "m.cm.ac"
+      ],
+      "pos": "noun",
+      "gloss": "mina, a unit of weight",
+      "senses": [
+        {
+          "id": "mina-a-unit-of",
+          "gloss": "mina, a unit of weight",
+          "definition": "The mina measures silver contributed for the temple. Ezekiel sets out the shekel reckoning for a mina.",
+          "evidence": [
+            {
+              "ref": "Ezr.2.69",
+              "role": "defining"
+            },
+            {
+              "ref": "Ezk.45.12"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "akk-mina"
+      ]
+    },
+    {
+      "lemma": "מֹנֶה",
+      "bdb": [
+        "m.cm.ad"
+      ],
+      "pos": "noun",
+      "gloss": "time, counted occurrence",
+      "senses": [
+        {
+          "id": "time-counted-occurrence",
+          "gloss": "time, counted occurrence",
+          "definition": "Jacob tells Laban and his daughters that Laban changed his wages ten times.",
+          "evidence": [
+            {
+              "ref": "Gen.31.7",
+              "role": "defining"
+            },
+            {
+              "ref": "Gen.31.41"
+            }
+          ],
+          "kin": [
+            "count"
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "מְנָה",
+      "bdb": [
+        "xm.al.aa"
+      ],
+      "pos": "verb",
+      "gloss": "number, appoint",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "number",
+          "senses": [
+            {
+              "id": "number",
+              "gloss": "number",
+              "definition": "Daniel interprets the writing on the wall by saying God has numbered the days of Belshazzar’s kingdom.",
+              "evidence": [
+                {
+                  "ref": "Dan.5.26",
+                  "role": "defining"
+                }
+              ],
+              "kin": [
+                "count"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pael",
+          "gloss": "appoint",
+          "senses": [
+            {
+              "id": "appoint",
+              "gloss": "appoint",
+              "definition": "Officials have been appointed over Babylon, and Ezra receives authority to appoint judges.",
+              "evidence": [
+                {
+                  "ref": "Dan.3.12",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Ezr.7.25"
+                }
+              ],
+              "kin": [
+                "assign"
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "arc",
+      "cognate_ids": [
+        "akk-manu",
+        "syc-mna"
+      ]
+    },
+    {
+      "lemma": "מִנְיָן",
+      "bdb": [
+        "xm.al.ac"
+      ],
+      "pos": "noun",
+      "gloss": "number",
+      "senses": [
+        {
+          "id": "number-2",
+          "gloss": "number",
+          "definition": "The offerings at the dedication include twelve male goats according to the number of the tribes of Israel.",
+          "evidence": [
+            {
+              "ref": "Ezr.6.17",
+              "role": "defining"
+            }
+          ],
+          "kin": [
+            "count"
+          ]
+        }
+      ],
+      "lang": "arc",
+      "gender": "m"
+    },
+    {
+      "lemma": "מְנֵא",
+      "bdb": [
+        "xm.al.ab"
+      ],
+      "pos": "noun",
+      "gloss": "Mene, a weight name",
+      "senses": [
+        {
+          "id": "mene-a-weight-name",
+          "gloss": "Mene, a weight name",
+          "definition": "The inscription begins with this repeated word. Daniel interprets it through the related verb for numbering.",
+          "evidence": [
+            {
+              "ref": "Dan.5.25",
+              "to": "Dan.5.26",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "lang": "arc",
+      "cognate_ids": [
+        "akk-mina"
+      ]
+    },
+    {
+      "lemma": "מְנָא",
+      "pos": "verb",
+      "gloss": "number, reckon",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "count",
+          "senses": [
+            {
+              "id": "count-2",
+              "gloss": "count",
+              "definition": "Peter speaks of Judas as one counted among the apostles.",
+              "evidence": [
+                {
+                  "ref": "Act.1.17",
+                  "role": "defining"
+                }
+              ],
+              "kin": [
+                "count"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "ithpeel",
+          "gloss": "be counted",
+          "senses": [
+            {
+              "id": "be-counted",
+              "gloss": "be counted",
+              "definition": "Jesus quotes Isaiah concerning his being counted among transgressors.",
+              "evidence": [
+                {
+                  "ref": "Luk.22.37",
+                  "role": "defining"
+                }
+              ],
+              "kin": [
+                "count"
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "cognate_ids": [
+        "syc-mna"
+      ]
+    },
+    {
+      "lemma": "מַנְיָא",
+      "pos": "noun",
+      "gloss": "mina",
+      "senses": [
+        {
+          "id": "mina",
+          "gloss": "mina",
+          "definition": "A nobleman entrusts minas to his servants and later requires an account of them.",
+          "evidence": [
+            {
+              "ref": "Luk.19.13",
+              "role": "defining"
+            },
+            {
+              "ref": "Luk.19.24"
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "cognate_ids": [
+        "akk-mina"
+      ]
+    },
+    {
+      "lemma": "מֶנְיָנָא",
+      "pos": "noun",
+      "gloss": "number",
+      "senses": [
+        {
+          "id": "number-3",
+          "gloss": "number",
+          "definition": "The evangelist gives the approximate number of men reclining before the distribution of bread.",
+          "evidence": [
+            {
+              "ref": "Jhn.6.10",
+              "role": "defining"
+            }
+          ],
+          "kin": [
+            "count"
+          ]
+        }
+      ],
+      "lang": "syc"
+    },
+    {
+      "lemma": "מְנָתָא",
+      "pos": "noun",
+      "gloss": "share",
+      "senses": [
+        {
+          "id": "share",
+          "gloss": "share",
+          "definition": "Paul gives thanks to the Father for a share in the inheritance of the holy ones.",
+          "evidence": [
+            {
+              "ref": "Col.1.12",
+              "role": "defining"
+            }
+          ],
+          "kin": [
+            "portion"
+          ]
+        }
+      ],
+      "lang": "syc"
+    },
+    {
+      "lemma": "מְנִי",
+      "bdb": [
+        "m.cm.ae"
+      ],
+      "pos": "name",
+      "gloss": "Meni, Destiny",
+      "senses": [
+        {
+          "id": "meni-destiny",
+          "gloss": "Meni, Destiny",
+          "definition": "Isaiah rebukes those who pour mixed wine for Destiny and spread a table for Fortune.",
+          "evidence": [
+            {
+              "ref": "Isa.65.11",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "תִּמְנָה",
+      "bdb": [
+        "m.cm.ag"
+      ],
+      "pos": "name",
+      "gloss": "Timnah",
+      "senses": [
+        {
+          "id": "timnah",
+          "gloss": "Timnah",
+          "definition": "Judah goes up to Timnah for sheepshearing, and Samson later visits a Philistine town bearing this name.",
+          "evidence": [
+            {
+              "ref": "Gen.38.12",
+              "to": "Gen.38.14",
+              "role": "defining"
+            },
+            {
+              "ref": "Jdg.14.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "תִּמְנִי",
+      "bdb": [
+        "m.cm.ah"
+      ],
+      "pos": "adjective",
+      "gloss": "Timnite",
+      "senses": [
+        {
+          "id": "timnite",
+          "gloss": "Timnite",
+          "definition": "The epithet identifies Samson’s father-in-law by his town.",
+          "evidence": [
+            {
+              "ref": "Jdg.15.6",
+              "role": "defining"
+            },
+            {
+              "ref": "Jdg.14.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "תִּמְנַת סֶרַח",
+      "bdb": [
+        "m.cm.aj"
+      ],
+      "pos": "name",
+      "gloss": "Timnath-serah",
+      "senses": [
+        {
+          "id": "timnath-serah",
+          "gloss": "Timnath-serah",
+          "definition": "Joshua receives the town in the hill country of Ephraim and is buried there.",
+          "evidence": [
+            {
+              "ref": "Jos.19.49",
+              "to": "Jos.19.50",
+              "role": "defining"
+            },
+            {
+              "ref": "Jos.24.30"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "תִּמְנַת חֶרֶס",
+      "bdb": [
+        "m.cm.ai"
+      ],
+      "pos": "name",
+      "gloss": "Timnath-heres",
+      "senses": [
+        {
+          "id": "timnath-heres",
+          "gloss": "Timnath-heres",
+          "definition": "Judges uses this form of the name for Joshua’s burial place north of Mount Gaash.",
+          "evidence": [
+            {
+              "ref": "Jdg.2.9",
+              "role": "defining"
+            },
+            {
+              "ref": "Jos.24.30"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-manu",
+      "lang": "akk",
+      "form": "manû",
+      "translit": "manû",
+      "gloss": "count",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep, x000004410, manû [count]"
+        }
+      ]
+    },
+    {
+      "id": "akk-mina",
+      "lang": "akk",
+      "form": "manû",
+      "translit": "manû",
+      "gloss": "mina",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep, x000001210, manû [mina]"
+        }
+      ]
+    },
+    {
+      "id": "syc-mna",
+      "lang": "syc",
+      "form": "ܡܢܐ",
+      "translit": "mənā",
+      "gloss": "number, reckon",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "sedra",
+          "locator": "lexeme 1802. Related family forms in lexemes 1803–1805"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The place names Timnath-serah and Timnath-heres occur in parallel accounts with the last consonants of the second element reversed. The rare word מָנוֹן in Proverbs 29:21 has an uncertain sense and no secure connection with counting or allotment."
+}

@@ -1,0 +1,143 @@
+{
+  "id": "d7h",
+  "root": "דחה",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "psalm-35"
+  ],
+  "gloss": "drive away",
+  "summary": "drive away in Psalm 35",
+  "words": [
+    {
+      "lemma": "דָּחָה",
+      "gloss": "drive away",
+      "bdb": [
+        "d.bb.aa"
+      ],
+      "pos": "verb",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "push, drive away",
+          "senses": [
+            {
+              "id": "push-drive-away",
+              "gloss": "push, drive away",
+              "definition": "Chaff before the wind pictures the enemies driven away by Yahweh’s messenger.",
+              "evidence": [
+                {
+                  "ref": "Psa.35.5",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be driven out",
+          "senses": [
+            {
+              "id": "be-driven-out",
+              "gloss": "be driven out",
+              "definition": "The outcasts of Israel have been scattered and will be gathered again.",
+              "evidence": [
+                {
+                  "ref": "Isa.11.12",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Isa.56.8",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be thrust down",
+          "senses": [
+            {
+              "id": "be-thrust-down",
+              "gloss": "be thrust down",
+              "definition": "The evildoers fall and cannot get back up.",
+              "evidence": [
+                {
+                  "ref": "Psa.36.13",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-d00407"
+      ]
+    },
+    {
+      "lemma": "דְּחִי",
+      "pos": "noun",
+      "gloss": "rejection",
+      "bdb": [
+        "d.bb.ab"
+      ],
+      "senses": [
+        {
+          "id": "rejection",
+          "gloss": "rejection",
+          "definition": "Being thrust away or rejected.",
+          "evidence": [
+            {
+              "ref": "Psa.56.14",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מִדְחֶה",
+      "bdb": [
+        "d.bb.ac"
+      ],
+      "pos": "noun",
+      "gloss": "occasion of a fall",
+      "senses": [
+        {
+          "id": "occasion-of-a-fall",
+          "gloss": "occasion of a fall",
+          "definition": "A flattering mouth brings about another person’s ruin.",
+          "evidence": [
+            {
+              "ref": "Pro.26.28",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-d00407",
+      "lang": "arc",
+      "form": "דְּחִי",
+      "translit": "dəḥî",
+      "gloss": "thrust, push down",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "דְּחִי, D00407, Targum Numbers 35:20"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "Drafted for Psalm 35 coverage."
+}

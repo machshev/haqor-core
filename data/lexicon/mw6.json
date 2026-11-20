@@ -1,0 +1,224 @@
+{
+  "id": "mw6",
+  "root": "מוט",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "movement",
+    "stability"
+  ],
+  "gloss": "slip, totter, carrying pole",
+  "summary": "A slipping foot illustrates the loss of security. Psalm 10 puts a boast of security in the mouth of the wicked, while Psalms 15 and 16 associate stability with integrity and trust in Yahweh.",
+  "words": [
+    {
+      "lemma": "מוֹט",
+      "bdb": [
+        "m.aw.aa"
+      ],
+      "pos": "verb",
+      "gloss": "slip, totter, be shaken",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "slip or lose support",
+          "senses": [
+            {
+              "gloss": "slip or lose support",
+              "definition": "The foot of the wrongdoer slips in due time. A poor brother whose hand gives way needs support.",
+              "evidence": [
+                {
+                  "ref": "Deu.32.35",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Lev.25.35"
+                },
+                {
+                  "ref": "Psa.66.9",
+                  "note": "God keeps the foot from slipping. The infinitive follows the denial that he lets the foot give way."
+                }
+              ],
+              "id": "slip"
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be shaken",
+          "senses": [
+            {
+              "id": "lose-footing-or-stability",
+              "gloss": "lose footing or stability",
+              "definition": "The petitioner fears that his enemies will celebrate if he falters. Another psalm speaks of feet that have not slipped from the paths.",
+              "evidence": [
+                {
+                  "ref": "Psa.13.5",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.17.5"
+                }
+              ]
+            },
+            {
+              "id": "be-secure-against-a",
+              "gloss": "be secure against a fall",
+              "definition": "The wicked man boasts that he cannot be shaken. Psalm 15 promises stability to a person of integrity, and Psalm 16 grounds it in Yahweh’s presence.",
+              "evidence": [
+                {
+                  "ref": "Psa.10.6",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.15.5"
+                },
+                {
+                  "ref": "Psa.16.8"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "bring down upon",
+          "senses": [
+            {
+              "id": "bring-down-upon",
+              "gloss": "bring down upon",
+              "definition": "Enemies bring trouble upon the speaker and harass him in anger.",
+              "evidence": [
+                {
+                  "ref": "Psa.55.4",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpolel",
+          "gloss": "shake violently",
+          "senses": [
+            {
+              "id": "shake-violently",
+              "gloss": "shake violently",
+              "definition": "The earth staggers under judgment. Repeated verbal forms describe it breaking, splitting and shaking.",
+              "evidence": [
+                {
+                  "ref": "Isa.24.19",
+                  "to": "Isa.24.20",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-mut"
+      ]
+    },
+    {
+      "lemma": "מוֹט",
+      "bdb": [
+        "m.aw.ab"
+      ],
+      "pos": "noun",
+      "gloss": "slipping, carrying pole, yoke bar",
+      "senses": [
+        {
+          "id": "pole-for-carrying-a",
+          "gloss": "pole for carrying a load",
+          "definition": "Two scouts carry a cluster of grapes on a pole between them. The sanctuary vessels can likewise be placed on a carrying frame.",
+          "evidence": [
+            {
+              "ref": "Num.13.23",
+              "role": "defining"
+            },
+            {
+              "ref": "Num.4.10"
+            },
+            {
+              "ref": "Num.4.12"
+            }
+          ]
+        },
+        {
+          "id": "bar-of-a-yoke",
+          "gloss": "bar of a yoke",
+          "definition": "The promise to break the oppressor’s bar is paired with tearing off the bonds.",
+          "evidence": [
+            {
+              "ref": "Nam.1.13",
+              "role": "defining"
+            }
+          ]
+        },
+        {
+          "id": "a-slipping-of-the",
+          "gloss": "a slipping of the foot",
+          "definition": "The psalm credits God with keeping the foot from giving way. The expression can also be read with the verbal infinitive “to slip.”",
+          "evidence": [
+            {
+              "ref": "Psa.66.9",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.121.3",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "מוֹטָה",
+      "bdb": [
+        "m.aw.ac"
+      ],
+      "pos": "noun",
+      "gloss": "yoke bar",
+      "senses": [
+        {
+          "id": "yoke-bar",
+          "gloss": "yoke bar",
+          "definition": "Yahweh breaks the bars of Israel’s yoke when he frees the people from Egypt. Jeremiah carries a yoke as a sign of servitude, and Isaiah calls for the breaking of every yoke.",
+          "evidence": [
+            {
+              "ref": "Lev.26.13",
+              "role": "defining"
+            },
+            {
+              "ref": "Jer.27.2"
+            },
+            {
+              "ref": "Isa.58.6"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-mut",
+      "lang": "arc",
+      "form": "מוּט",
+      "translit": "mūṭ",
+      "gloss": "totter, slip",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "מוּט, Targum Leviticus 25:35 and Deuteronomy 32:35"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The pole and bar nouns carry loads or constrain movement. Their exact relationship to the verb for tottering is uncertain."
+}

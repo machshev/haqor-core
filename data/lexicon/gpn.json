@@ -1,0 +1,276 @@
+{
+  "id": "gpn",
+  "root": "גפנ",
+  "status": "draft",
+  "updated": "2026-11-18",
+  "tags": [
+    "plants",
+    "fruit"
+  ],
+  "gloss": "vine, grapevine",
+  "summary": "The cupbearer sees a vine put out branches, blossom and bear ripe grapes. Israel can itself be pictured as a vine brought out of Egypt and planted in the land. In John, Jesus calls himself the vine and his disciples the branches.",
+  "words": [
+    {
+      "lemma": "גֶּפֶן",
+      "bdb": [
+        "c.ct.ab"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "vine, grapevine",
+      "senses": [
+        {
+          "gloss": "grapevine",
+          "definition": "The plant whose clusters yield grapes and wine. Its wood, leaves and fruit may each be in view.",
+          "evidence": [
+            {
+              "ref": "Gen.40.10",
+              "role": "defining",
+              "note": "Three branches bud and blossom, and their clusters ripen into grapes."
+            },
+            {
+              "ref": "Num.6.4",
+              "note": "The Nazirite abstains from everything produced by the wine vine."
+            },
+            {
+              "ref": "Jdg.9.13"
+            },
+            {
+              "ref": "Ezk.15.2",
+              "note": "Ezekiel asks what use the wood of a vine has among the trees."
+            },
+            {
+              "ref": "Sng.2.13"
+            }
+          ],
+          "id": "grapevine",
+          "cognate_ids": [
+            "ugaritic-vine",
+            "sabaean-vines",
+            "arabic-vine",
+            "aramaic-vine",
+            "mandaic-vine",
+            "syriac-vine"
+          ]
+        },
+        {
+          "id": "one-s-own-vine",
+          "gloss": "one’s own vine",
+          "definition": "A vine beside a fig tree pictures the settled enjoyment of the land and its produce.",
+          "evidence": [
+            {
+              "ref": "Mic.4.4",
+              "role": "defining",
+              "note": "Each sits under his vine and fig tree with no one to frighten him."
+            },
+            {
+              "ref": "1Ki.5.5"
+            },
+            {
+              "ref": "2Ki.18.31",
+              "note": "The Assyrian envoy promises each man the fruit of his own vine."
+            }
+          ]
+        },
+        {
+          "id": "vine-as-an-image",
+          "gloss": "vine as an image of a person or people",
+          "definition": "The planting, spreading and fruitfulness of a vine describe people and their fortunes.",
+          "evidence": [
+            {
+              "ref": "Psa.80.9",
+              "role": "defining",
+              "note": "God brought a vine out of Egypt and planted it after driving out nations."
+            },
+            {
+              "ref": "Hos.10.1",
+              "note": "Israel is called a vine that bears fruit."
+            },
+            {
+              "ref": "Ezk.17.6",
+              "note": "In the eagle riddle the seed grows into a low, spreading vine."
+            },
+            {
+              "ref": "Psa.128.3",
+              "note": "The wife is compared to a fruitful vine."
+            }
+          ]
+        },
+        {
+          "id": "wild-vine",
+          "gloss": "wild vine",
+          "definition": "A trailing field plant from which a gatherer took wild gourds.",
+          "evidence": [
+            {
+              "ref": "2Ki.4.39",
+              "role": "defining",
+              "note": "The gatherer cuts its unfamiliar fruits into the stew."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "גְּפֶתָּא",
+      "root": "גפתא",
+      "lang": "syc",
+      "pos": "noun",
+      "gloss": "vine",
+      "senses": [
+        {
+          "id": "grapevine-2",
+          "gloss": "grapevine",
+          "definition": "The vine bears fruit and supports the branches from which the fruit grows.",
+          "evidence": [
+            {
+              "ref": "Jhn.15.4",
+              "role": "defining",
+              "note": "A detached branch cannot bear fruit."
+            },
+            {
+              "ref": "Mat.26.29"
+            },
+            {
+              "ref": "Mrk.14.25"
+            },
+            {
+              "ref": "Jas.3.12"
+            }
+          ],
+          "kin": [
+            "grapevine"
+          ],
+          "cognate_ids": [
+            "ugaritic-vine",
+            "sabaean-vines",
+            "arabic-vine",
+            "aramaic-vine",
+            "mandaic-vine",
+            "syriac-vine"
+          ]
+        },
+        {
+          "id": "jesus-as-the-vine",
+          "gloss": "Jesus as the vine",
+          "definition": "Jesus describes his disciples as branches whose fruit depends on their remaining in him.",
+          "evidence": [
+            {
+              "ref": "Jhn.15.1",
+              "role": "defining",
+              "note": "Jesus identifies himself as the true vine and his Father as the cultivator."
+            },
+            {
+              "ref": "Jhn.15.5"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ugaritic-vine",
+      "lang": "uga",
+      "form": "𐎂𐎔𐎐",
+      "translit": "gpn",
+      "gloss": "vine, vinestock",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "dulat-2015",
+          "locator": "gpn I, KTU 1.23:9, zbrm gpn, vine pruners"
+        }
+      ]
+    },
+    {
+      "id": "sabaean-vines",
+      "lang": "sem",
+      "form": "𐩴𐩰𐩬𐩩",
+      "translit": "gfnt",
+      "gloss": "vines",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "gfnt, CIH 522/4, fragmentary regulation concerning damage to a vineyard"
+        }
+      ],
+      "note": "Sabaean plural."
+    },
+    {
+      "id": "arabic-vine",
+      "lang": "ar",
+      "form": "جَفْنٌ",
+      "translit": "jafn",
+      "gloss": "vine, vinestock, vine shoot",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 434, n5993; the whole vine in Yemeni usage"
+        }
+      ]
+    },
+    {
+      "id": "aramaic-vine",
+      "lang": "arc",
+      "form": "גופנא",
+      "translit": "gūpnā",
+      "gloss": "vine",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "cal",
+          "locator": "gpn N, Targum Onkelos Gen 40:10; Targum Jonathan Hos 10:1; Babylonian Talmud Bava Batra 12a"
+        }
+      ]
+    },
+    {
+      "id": "mandaic-vine",
+      "lang": "arc",
+      "form": "ࡂࡅࡐࡍࡀ",
+      "translit": "gupna",
+      "gloss": "vine",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "drower-macuch-1963",
+          "locator": "gupna, pp. 84–85; Q 23:33, ʾlana gupna, vine-tree"
+        }
+      ],
+      "note": "Classical Mandaic."
+    },
+    {
+      "id": "syriac-vine",
+      "lang": "syc",
+      "form": "ܓܘܦܢܐ",
+      "translit": "gūpnā",
+      "gloss": "vine",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "cal",
+          "locator": "gpn N, Ephrem, Nisibene Hymns 5:23.2, plural ܓܘ̈ܦܢܐ"
+        }
+      ],
+      "note": "This form retains the n. The Peshitta noun below has a feminine ending."
+    },
+    {
+      "id": "akkadian-bush",
+      "lang": "akk",
+      "form": "gapnu",
+      "translit": "gapnu",
+      "gloss": "bush, fruit tree",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000091500; rinap x000031010"
+        }
+      ],
+      "note": "The Akkadian glossary gives a broader plant term. Its attested glosses here do not identify a grapevine."
+    }
+  ],
+  "doctrine": [],
+  "note": "The fruit in 2Ki 4:39 is called wild gourds. The verse supports a field vine but leaves its precise botanical identity uncertain. No verse requires the broad Akkadian sense ‘bush’ for the Hebrew. The Peshitta word is SEDRA lexeme 619."
+}

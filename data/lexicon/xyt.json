@@ -1,0 +1,212 @@
+{
+  "id": "xyt",
+  "root": "שית",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "position",
+    "appointment",
+    "clothing",
+    "vegetation"
+  ],
+  "gloss": "put, set, foundation",
+  "summary": "A person can set a hand on someone, direct attention to a matter or appoint a time. In Psalm 3 David describes the position his opponents have taken around him.",
+  "words": [
+    {
+      "lemma": "שִׁית",
+      "bdb": [
+        "v.cx.aa"
+      ],
+      "pos": "verb",
+      "gloss": "put, set, assign",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "set, position, appoint",
+          "senses": [
+            {
+              "id": "put-in-a-position",
+              "gloss": "put in a position",
+              "definition": "Jacob puts his hand on Ephraim’s head. David describes the people who have set themselves against him on every side.",
+              "evidence": [
+                {
+                  "ref": "Gen.48.14",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.3.7"
+                },
+                {
+                  "ref": "Psa.101.3"
+                }
+              ],
+              "cognate_ids": [
+                "phn-sht"
+              ]
+            },
+            {
+              "id": "appoint-establish",
+              "gloss": "appoint, establish",
+              "definition": "Eve says God has appointed another offspring in Abel’s place. Job asks God to set a time to remember him.",
+              "evidence": [
+                {
+                  "ref": "Gen.4.25",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Job.14.13"
+                }
+              ],
+              "cognate_ids": [
+                "phn-sht"
+              ]
+            },
+            {
+              "id": "make-or-bring-into",
+              "gloss": "make or bring into a condition",
+              "definition": "Yahweh promises to put the oppressed in safety. The psalmist asks God to make his enemies like windblown chaff.",
+              "evidence": [
+                {
+                  "ref": "Psa.12.6",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.83.14"
+                }
+              ]
+            },
+            {
+              "id": "set-one-s-mind",
+              "gloss": "set one’s mind on",
+              "definition": "The listener is told to direct his heart toward instruction. A keeper of livestock must give his attention to the herds.",
+              "evidence": [
+                {
+                  "ref": "Pro.22.17",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Pro.27.23"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hophal",
+          "gloss": "be imposed",
+          "senses": [
+            {
+              "id": "be-imposed",
+              "gloss": "be imposed",
+              "definition": "A ransom may be imposed on the owner of a dangerous ox.",
+              "evidence": [
+                {
+                  "ref": "Exo.21.30",
+                  "role": "defining"
+                }
+              ],
+              "cognate_ids": [
+                "phn-sht"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שָׁת",
+      "bdb": [
+        "v.cx.ad"
+      ],
+      "pos": "noun",
+      "gloss": "foundation, support",
+      "senses": [
+        {
+          "id": "foundation-support",
+          "gloss": "foundation, support",
+          "definition": "The question in Psalm 11 pictures the foundations being torn down and asks what a righteous person can do.",
+          "evidence": [
+            {
+              "ref": "Psa.11.3",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "שִׁית",
+      "bdb": [
+        "v.cx.ab"
+      ],
+      "pos": "noun",
+      "gloss": "garment, attire",
+      "senses": [
+        {
+          "id": "garment-attire",
+          "gloss": "garment, attire",
+          "definition": "Violence covers the arrogant like clothing. Proverbs describes a woman by her attire.",
+          "evidence": [
+            {
+              "ref": "Psa.73.6",
+              "role": "defining"
+            },
+            {
+              "ref": "Pro.7.10"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "שַׁיִת",
+      "bdb": [
+        "v.cx.ae"
+      ],
+      "pos": "noun",
+      "gloss": "thornbushes",
+      "senses": [
+        {
+          "id": "thornbushes",
+          "gloss": "thornbushes",
+          "definition": "When the vineyard is abandoned, thornbushes grow where vines were tended. Isaiah pairs them with briers.",
+          "evidence": [
+            {
+              "ref": "Isa.5.6",
+              "role": "defining"
+            },
+            {
+              "ref": "Isa.7.23",
+              "to": "Isa.7.25"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "phn-sht",
+      "lang": "phn",
+      "form": "שת",
+      "translit": "št",
+      "gloss": "place, set, stipulate",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "pp. 483–484, Š-T, KAI 10.13 and 69.18"
+        }
+      ],
+      "sounds": {
+        "ש": "š"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "The garment and thornbush are attested nouns whose connection to placing is uncertain. Proverbs 27:23 has an imperative, although the spelling also matches the garment noun."
+}

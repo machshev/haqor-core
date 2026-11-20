@@ -1,0 +1,107 @@
+{
+  "id": "ddebeelaah",
+  "root": "דבל",
+  "status": "draft",
+  "updated": "2026-11-18",
+  "tags": [
+    "agriculture"
+  ],
+  "gloss": "cake of pressed figs",
+  "summary": "Abigail sends two hundred fig cakes to David. Later his men give a starving traveler a piece of one. The same preparation is laid on Hezekiah’s boil.",
+  "words": [
+    {
+      "lemma": "דְּבֵלָה",
+      "pos": "noun",
+      "gender": "f",
+      "bdb": [
+        "d.ag.ab"
+      ],
+      "gloss": "fig cake",
+      "senses": [
+        {
+          "id": "fig-cake",
+          "gloss": "cake of pressed figs",
+          "definition": "Figs pressed together in a mass that can be carried whole or divided into portions.",
+          "evidence": [
+            {
+              "ref": "1Sa.25.18",
+              "role": "defining",
+              "note": "Abigail loads two hundred cakes on donkeys with bread, wine and other provisions."
+            },
+            {
+              "ref": "1Sa.30.12",
+              "role": "defining",
+              "note": "David’s men give the Egyptian a piece of one cake along with raisins."
+            },
+            {
+              "ref": "1Ch.12.41",
+              "role": "defining",
+              "note": "Fig cakes and raisins are among the foods brought to David at Hebron."
+            },
+            {
+              "ref": "2Ki.20.7",
+              "role": "defining",
+              "note": "At Isaiah’s direction a cake of figs is laid on Hezekiah’s sore."
+            },
+            {
+              "ref": "Isa.38.21",
+              "role": "defining",
+              "note": "Isaiah’s parallel instruction names figs as the material to be spread on the boil."
+            }
+          ],
+          "cognate_ids": [
+            "ug-figs",
+            "syc-figs",
+            "ar-lump"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ug-figs",
+      "lang": "uga",
+      "form": "dblt",
+      "translit": "dblt",
+      "gloss": "dried figs, fig cake",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "dulat-2015",
+          "locator": "s.v. dblt, KTU 1.71:27 and 4.60:5, 9"
+        }
+      ]
+    },
+    {
+      "id": "syc-figs",
+      "lang": "syc",
+      "form": "ܕܒܠܬܐ",
+      "translit": "dəḇeltā",
+      "gloss": "cake of dried figs",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "payne-smith-1903",
+          "locator": "p. 82, ܕܒܠܬܐ, alone or with the word for figs"
+        }
+      ]
+    },
+    {
+      "id": "ar-lump",
+      "lang": "ar",
+      "form": "دُبْلَةٌ",
+      "translit": "dubla",
+      "gloss": "compact lump, portion of kneaded food",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 850, n12069, compare the food shaped by hand in n12065"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "Egyptian Aramaic also attests דבלה for a fig cake (TAD D1.11:2, indexed by Muraoka and Porten in A Grammar of Egyptian Aramaic). The place Diblah occurs in Ezk.6.14. The verse gives no explanation of its name."
+}

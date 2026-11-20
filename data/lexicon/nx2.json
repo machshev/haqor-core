@@ -1,0 +1,100 @@
+{
+  "id": "nx2",
+  "root": "נשא",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "gloss": "deceive; entice",
+  "summary": "The serpent deceives the woman, and a king warns against letting a rival mislead his listeners. Psalm 55 gives the verb a striking subject in its read wording: death.",
+  "words": [
+    {
+      "lemma": "נָשָׁא",
+      "pos": "verb",
+      "gloss": "deceive; entice",
+      "bdb": [
+        "n.fq.aa"
+      ],
+      "stems": [
+        {
+          "stem": "hiphil",
+          "gloss": "deceive",
+          "senses": [
+            {
+              "id": "deceive",
+              "gloss": "deceive",
+              "definition": "To deceive or entice someone through misleading conduct.",
+              "evidence": [
+                {
+                  "ref": "Gen.3.13",
+                  "role": "defining"
+                },
+                {
+                  "ref": "2Ki.18.29"
+                }
+              ]
+            },
+            {
+              "id": "take-unawares",
+              "gloss": "take unawares",
+              "definition": "In the read wording the speaker asks that death overtake his enemies by surprise.",
+              "evidence": [
+                {
+                  "ref": "Psa.55.16",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be deceived",
+          "senses": [
+            {
+              "id": "be-deceived",
+              "gloss": "be deceived",
+              "definition": "The princes of Memphis have been misled and in turn lead Egypt astray.",
+              "evidence": [
+                {
+                  "ref": "Isa.19.13",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַשּׁוּאָה",
+      "bdb": [
+        "n.fq.ac"
+      ],
+      "pos": "noun",
+      "gloss": "ruin, devastation",
+      "senses": [
+        {
+          "id": "ruin-devastation",
+          "gloss": "ruin, devastation",
+          "definition": "The wicked are cast down into ruin and perish in a moment. In the sanctuary the damage done by the enemy can still be seen.",
+          "evidence": [
+            {
+              "ref": "Psa.73.18",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.73.19",
+              "role": "example"
+            },
+            {
+              "ref": "Psa.74.3",
+              "role": "example"
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "summary": "The psalms support ruin or devastation. The relationship to the verb for deception is uncertain."
+    }
+  ],
+  "note": "Psalm 55:16 reads two words, יַשִּׁי מָוֶת, with death as the subject. The single written form ישימות is indexed under יְשִׁימָה in yashimon. The relationship of the devastation noun to the deception verb remains uncertain."
+}

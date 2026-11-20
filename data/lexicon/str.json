@@ -1,0 +1,423 @@
+{
+  "id": "str",
+  "root": "סתר",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "shelter",
+    "secrecy"
+  ],
+  "gloss": "hide, conceal, hiding place",
+  "summary": "A hiding place can shelter someone in danger or conceal someone lying in wait. Psalm 10 uses both concealment in an ambush and the attacker’s claim that God has turned his face away.",
+  "words": [
+    {
+      "lemma": "סָתַר",
+      "bdb": [
+        "o.cq.aa"
+      ],
+      "pos": "verb",
+      "gloss": "hide, conceal",
+      "stems": [
+        {
+          "stem": "hiphil",
+          "gloss": "hide a person or turn a face away",
+          "senses": [
+            {
+              "gloss": "give shelter by hiding",
+              "definition": "The petitioner asks to be hidden in the shadow of Yahweh’s wings. Moses hides his face because he fears to look at God.",
+              "evidence": [
+                {
+                  "ref": "Psa.17.8",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Exo.3.6"
+                }
+              ],
+              "id": "hide"
+            },
+            {
+              "id": "hide-the-face-withhold",
+              "gloss": "hide the face, withhold attention",
+              "definition": "The oppressor claims that God hides his face and will never see. Psalm 13 asks how long Yahweh will hide his face from the petitioner.",
+              "evidence": [
+                {
+                  "ref": "Psa.10.11",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.13.2"
+                },
+                {
+                  "ref": "Deu.31.18"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be hidden, escape notice",
+          "senses": [
+            {
+              "id": "be-hidden-escape-notice",
+              "gloss": "be hidden, escape notice",
+              "definition": "Nothing is hidden from the sun’s heat. The psalmist asks to be cleared of faults that escape his own notice.",
+              "evidence": [
+                {
+                  "ref": "Psa.19.7",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.19.13"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpael",
+          "gloss": "hide oneself",
+          "senses": [
+            {
+              "id": "hide-oneself",
+              "gloss": "hide oneself",
+              "definition": "The Ziphites report to Saul where David has been hiding.",
+              "evidence": [
+                {
+                  "ref": "1Sa.23.19",
+                  "role": "defining"
+                },
+                {
+                  "ref": "1Sa.26.1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "shelter someone",
+          "senses": [
+            {
+              "id": "shelter-someone",
+              "gloss": "shelter someone",
+              "definition": "The appeal asks its hearers to shelter outcasts and keep fugitives from being betrayed.",
+              "evidence": [
+                {
+                  "ref": "Isa.16.3",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be concealed",
+          "senses": [
+            {
+              "id": "be-concealed",
+              "gloss": "be concealed",
+              "definition": "Open rebuke is judged better than love kept hidden.",
+              "evidence": [
+                {
+                  "ref": "Pro.27.5",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-satara"
+      ]
+    },
+    {
+      "lemma": "סֵתֶר",
+      "bdb": [
+        "o.cq.ab"
+      ],
+      "pos": "noun",
+      "gloss": "concealment, hiding place",
+      "senses": [
+        {
+          "id": "concealment-hiding-place",
+          "gloss": "concealment, hiding place",
+          "definition": "Yahweh makes darkness his hiding place in the storm. David is told to stay in hiding. Psalm 91 pictures the shelter of the Most High.",
+          "evidence": [
+            {
+              "ref": "Psa.18.12",
+              "role": "defining"
+            },
+            {
+              "ref": "1Sa.19.2"
+            },
+            {
+              "ref": "Psa.91.1"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "ar-satara"
+      ]
+    },
+    {
+      "lemma": "סִתְרָה",
+      "bdb": [
+        "o.cq.ac"
+      ],
+      "pos": "noun",
+      "gloss": "protection, shelter",
+      "senses": [
+        {
+          "id": "protection-shelter",
+          "gloss": "protection, shelter",
+          "definition": "The song challenges the gods to whom sacrifices were offered to rise and give shelter to their worshippers.",
+          "evidence": [
+            {
+              "ref": "Deu.32.38",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "cognate_ids": [
+        "ar-satara"
+      ]
+    },
+    {
+      "lemma": "מִסְתָּר",
+      "bdb": [
+        "o.cq.ag"
+      ],
+      "pos": "noun",
+      "gloss": "hidden place, cover for an ambush",
+      "senses": [
+        {
+          "id": "hidden-place-cover-for",
+          "gloss": "hidden place, cover for an ambush",
+          "definition": "The attacker waits under cover to seize the poor. Psalm 17 pictures a young lion crouching in a hidden place.",
+          "evidence": [
+            {
+              "ref": "Psa.10.8",
+              "to": "Psa.10.9",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.17.12"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "ar-satara"
+      ]
+    },
+    {
+      "lemma": "מִסְתּוֹר",
+      "bdb": [
+        "o.cq.af",
+        "m.ct.ae"
+      ],
+      "pos": "noun",
+      "gloss": "shelter",
+      "senses": [
+        {
+          "id": "shelter",
+          "gloss": "shelter",
+          "definition": "Isaiah describes a booth giving shade by day and shelter from storm and rain.",
+          "evidence": [
+            {
+              "ref": "Isa.4.6",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "ar-satara"
+      ]
+    },
+    {
+      "lemma": "מַסְתֵּר",
+      "bdb": [
+        "o.cq.ah"
+      ],
+      "pos": "noun",
+      "gloss": "hiding of the face",
+      "senses": [
+        {
+          "id": "hiding-of-the-face",
+          "gloss": "hiding of the face",
+          "definition": "The servant is despised and faces are turned away from him. The construction leaves some uncertainty about who does the hiding.",
+          "evidence": [
+            {
+              "ref": "Isa.53.3",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "ar-satara"
+      ]
+    },
+    {
+      "lemma": "סְתַר",
+      "bdb": [
+        "xo.ah.aa"
+      ],
+      "pos": "verb",
+      "gloss": "conceal",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "be hidden",
+          "senses": [
+            {
+              "id": "be-hidden",
+              "gloss": "be hidden",
+              "definition": "Daniel says God reveals what is deep and hidden and knows what lies in darkness. The word is a passive participle.",
+              "evidence": [
+                {
+                  "ref": "Dan.2.22",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "arc",
+      "cognate_ids": [
+        "ar-satara"
+      ]
+    },
+    {
+      "lemma": "סְתַר",
+      "bdb": [
+        "xo.ai.aa"
+      ],
+      "pos": "verb",
+      "gloss": "demolish",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "pull down a building",
+          "senses": [
+            {
+              "gloss": "pull down a building",
+              "definition": "The elders tell Tattenai that Nebuchadnezzar destroyed the temple and carried the people to Babylon.",
+              "evidence": [
+                {
+                  "ref": "Ezr.5.12",
+                  "role": "defining"
+                }
+              ],
+              "id": "destroy"
+            }
+          ]
+        }
+      ],
+      "lang": "arc",
+      "cognate_ids": [
+        "arc-setar"
+      ]
+    },
+    {
+      "lemma": "סְתַר",
+      "pos": "verb",
+      "gloss": "pull down",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "demolish",
+          "senses": [
+            {
+              "id": "demolish",
+              "gloss": "demolish",
+              "definition": "Jesus speaks of destroying the temple. The rich man in the parable plans to pull down his barns to build larger ones.",
+              "evidence": [
+                {
+                  "ref": "Jhn.2.19",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Luk.12.18"
+                }
+              ],
+              "kin": [
+                "destroy"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "ethpeel",
+          "gloss": "be pulled down",
+          "senses": [
+            {
+              "id": "be-pulled-down",
+              "gloss": "be pulled down",
+              "definition": "Jesus tells the disciples that the stones of the temple buildings will be thrown down.",
+              "evidence": [
+                {
+                  "ref": "Mrk.13.2",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Mat.24.2"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "cognate_ids": [
+        "arc-setar"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-satara",
+      "lang": "ar",
+      "form": "سَتَرَ",
+      "translit": "satara",
+      "gloss": "cover, conceal",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 1304, سَتَرَ n18853"
+        }
+      ]
+    },
+    {
+      "id": "arc-setar",
+      "lang": "arc",
+      "form": "סְתַר",
+      "translit": "səṯar",
+      "gloss": "tear down, destroy",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "סְתַר, Targum Yerushalmi Deuteronomy 7:5"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "Daniel’s hidden things belong with concealment. Ezra and the Syriac passages about pulling down a building use a distinct sense of the same consonants."
+}

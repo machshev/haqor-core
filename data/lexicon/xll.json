@@ -1,0 +1,104 @@
+{
+  "id": "xll",
+  "root": "שלל",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "gloss": "spoil",
+  "summary": "שָׁלָל is spoil taken in victory.",
+  "words": [
+    {
+      "lemma": "שָׁלָל",
+      "bdb": [
+        "v.dr.ab"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "spoil",
+      "senses": [
+        {
+          "id": "spoil",
+          "gloss": "spoil",
+          "definition": "The women at home divide the spoil after Yahweh gives the word.",
+          "evidence": [
+            {
+              "ref": "Psa.68.13",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שָׁלַל",
+      "pos": "verb",
+      "gloss": "plunder",
+      "bdb": [
+        "v.dr.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "plunder",
+          "senses": [
+            {
+              "id": "plunder",
+              "gloss": "plunder",
+              "definition": "To take property by force as spoil.",
+              "evidence": [
+                {
+                  "ref": "Ezk.38.12",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpolel",
+          "gloss": "be stripped of spoil",
+          "senses": [
+            {
+              "id": "be-stripped-of-spoil",
+              "gloss": "be stripped of spoil",
+              "definition": "The stouthearted lie stripped of their strength or plunder as the warriors sink into sleep and their hands fail them.",
+              "evidence": [
+                {
+                  "ref": "Psa.76.6",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שָׁלַל",
+      "pos": "verb",
+      "gloss": "draw out",
+      "bdb": [
+        "v.dq.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "draw out",
+          "senses": [
+            {
+              "id": "draw-out",
+              "gloss": "draw out",
+              "definition": "To draw out or take away.",
+              "evidence": [
+                {
+                  "ref": "Rut.2.16",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "note": "Drafted for Psalm 68 coverage."
+}

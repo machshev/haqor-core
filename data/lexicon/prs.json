@@ -1,0 +1,266 @@
+{
+  "id": "prs",
+  "root": "פרס",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "gloss": "divide, split",
+  "summary": "Bread is divided to feed someone else, and an animal’s split hoof marks its kind. Daniel uses the Aramaic verb to explain the writing that foretells the division of a kingdom.",
+  "words": [
+    {
+      "lemma": "פַּרְסָה",
+      "pos": "noun",
+      "gloss": "hoof",
+      "gender": "f",
+      "bdb": [
+        "q.de.ac"
+      ],
+      "senses": [
+        {
+          "id": "hoof",
+          "gloss": "hoof",
+          "definition": "Hooves distinguish kinds of animals. Moses tells Pharaoh that Israel’s herds must leave without even one hoof remaining behind.",
+          "evidence": [
+            {
+              "ref": "Exo.10.26",
+              "role": "defining"
+            },
+            {
+              "ref": "Lev.11.3",
+              "role": "defining"
+            },
+            {
+              "ref": "Lev.11.7",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "פָּרַס",
+      "pos": "verb",
+      "gloss": "divide, have a divided hoof",
+      "cognate_ids": [
+        "akk-cut"
+      ],
+      "bdb": [
+        "q.de.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "divide, share out",
+          "senses": [
+            {
+              "id": "divide-share-out",
+              "gloss": "divide, share out",
+              "definition": "Bread is divided for someone who is hungry or bereaved.",
+              "evidence": [
+                {
+                  "ref": "Isa.58.7",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jer.16.7",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "have a divided hoof",
+          "senses": [
+            {
+              "id": "have-a-divided-hoof",
+              "gloss": "have a divided hoof",
+              "definition": "The laws of food describe the hoof split into two. The bull in Psalm 69 has horns and divided hooves.",
+              "evidence": [
+                {
+                  "ref": "Lev.11.3",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Deu.14.6",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.69.32",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "פֶּרֶס",
+      "pos": "noun",
+      "gloss": "a bird of prey",
+      "bdb": [
+        "q.de.ab"
+      ],
+      "senses": [
+        {
+          "id": "a-bird-of-prey",
+          "gloss": "a bird of prey",
+          "definition": "A bird listed between the eagle and the osprey among those forbidden as food. These lists leave its exact species uncertain.",
+          "evidence": [
+            {
+              "ref": "Lev.11.13",
+              "role": "defining"
+            },
+            {
+              "ref": "Deu.14.12",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "פְּרַס",
+      "pos": "verb",
+      "gloss": "divide",
+      "lang": "arc",
+      "cognate_ids": [
+        "akk-cut"
+      ],
+      "bdb": [
+        "xq.ae.aa"
+      ],
+      "stems": [
+        {
+          "stem": "peil",
+          "gloss": "be divided",
+          "senses": [
+            {
+              "id": "be-divided",
+              "gloss": "be divided",
+              "definition": "Daniel interprets the writing as the division of Belshazzar’s kingdom and its transfer to the Medes and Persians.",
+              "evidence": [
+                {
+                  "ref": "Dan.5.28",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "פְּרֵס",
+      "pos": "noun",
+      "gloss": "division, portion",
+      "lang": "arc",
+      "cognate_ids": [
+        "akk-cut"
+      ],
+      "bdb": [
+        "xq.ae.ab"
+      ],
+      "senses": [
+        {
+          "id": "division-portion",
+          "gloss": "division, portion",
+          "definition": "The word on the wall appears first in the plural. Daniel repeats it in the singular and explains it by the division of the kingdom.",
+          "evidence": [
+            {
+              "ref": "Dan.5.25",
+              "role": "defining"
+            },
+            {
+              "ref": "Dan.5.28",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "פְּרִיסְתָא",
+      "pos": "noun",
+      "gloss": "loaf",
+      "lang": "syc",
+      "senses": [
+        {
+          "id": "loaf",
+          "gloss": "loaf",
+          "definition": "The believers share bread in their homes.",
+          "evidence": [
+            {
+              "ref": "Act.2.46",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "פְּרָסָא",
+      "pos": "noun",
+      "gloss": "portion",
+      "lang": "syc",
+      "senses": [
+        {
+          "id": "portion",
+          "gloss": "portion",
+          "definition": "The steward distributes the household’s portion of food at the proper time.",
+          "evidence": [
+            {
+              "ref": "Luk.12.42",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "פְּרַס",
+      "pos": "verb",
+      "gloss": "spread",
+      "lang": "syc",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "spread out",
+          "senses": [
+            {
+              "id": "spread-out",
+              "gloss": "spread out",
+              "definition": "People spread their clothes on the road before Jesus.",
+              "evidence": [
+                {
+                  "ref": "Luk.19.36",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-cut",
+      "lang": "akk",
+      "form": "parāsu",
+      "translit": "parāsu",
+      "gloss": "cut, divide",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000038610, parāsu, cut off"
+        }
+      ]
+    }
+  ],
+  "note": "Daniel plays on the sound of Persia and division. Persia is an Iranian country name and the verse gives no Semitic derivation. The relation of the bird name to breaking is open. The Syriac verb for dividing (SEDRA 2597) has no indexed NT token.",
+  "created": "2026-11-19",
+  "doctrine": []
+}

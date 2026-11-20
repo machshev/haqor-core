@@ -1,0 +1,175 @@
+{
+  "id": "3rc",
+  "root": "ערשׂ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "household"
+  ],
+  "gloss": "bed, couch",
+  "summary": "A couch is a place to stretch out and rest. Job looks to his couch for comfort, while in Psalm 6 the speaker spends the night soaking his couch with tears.",
+  "words": [
+    {
+      "lemma": "עֶרֶשׂ",
+      "bdb": [
+        "p.fv.ab"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "bed, couch",
+      "senses": [
+        {
+          "id": "bed",
+          "gloss": "bed, couch",
+          "definition": "A piece of furniture on which a person lies down. It can be spread with coverings, and a sick person may lie on it.",
+          "kin": [
+            "pallet"
+          ],
+          "cognate_ids": [
+            "akk-ershu"
+          ],
+          "evidence": [
+            {
+              "ref": "Amo.6.4",
+              "role": "defining",
+              "note": "Lying on ivory beds is paired with stretching out on couches."
+            },
+            {
+              "ref": "Pro.7.16",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.41.4"
+            },
+            {
+              "ref": "Psa.6.7"
+            },
+            {
+              "ref": "Job.7.13"
+            },
+            {
+              "ref": "Deu.3.11",
+              "note": "Og's iron couch is measured in cubits."
+            },
+            {
+              "ref": "Sng.1.16"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "מִטָּה",
+            "note": "Job names his couch and his bed as places where he hopes to find relief.",
+            "evidence": [
+              {
+                "ref": "Job.7.13"
+              },
+              {
+                "ref": "Amo.6.4"
+              }
+            ]
+          }
+        ]
+      },
+      "greek": [
+        {
+          "lemma": "κλίνη",
+          "gloss": "bed",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "PSA 41:4 word 4 and PRO 7:16 word 3"
+            },
+            {
+              "ref": "Mat.9.2",
+              "note": "The paralysed man lies on a bed."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עַרְסָא",
+      "root": "ערסא",
+      "lang": "syc",
+      "pos": "noun",
+      "gloss": "bed, pallet, bier",
+      "senses": [
+        {
+          "id": "pallet",
+          "gloss": "bed or pallet",
+          "definition": "A bed on which a person can sleep or be carried. The man lowered through the roof picks up his pallet and walks out with it.",
+          "kin": [
+            "bed"
+          ],
+          "cognate_ids": [
+            "akk-ershu"
+          ],
+          "evidence": [
+            {
+              "ref": "Mrk.2.4",
+              "role": "defining"
+            },
+            {
+              "ref": "Mrk.2.12",
+              "role": "defining"
+            },
+            {
+              "ref": "Luk.11.7"
+            }
+          ]
+        },
+        {
+          "id": "bier",
+          "gloss": "bier",
+          "definition": "In the funeral procession at Nain it carries the dead youth. Jesus touches it and the bearers stop.",
+          "evidence": [
+            {
+              "ref": "Luk.7.14",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-ershu",
+      "lang": "akk",
+      "form": "eršu",
+      "translit": "eršu",
+      "gloss": "bed",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep/x000036940, eršu [bed]"
+        }
+      ]
+    },
+    {
+      "id": "ar-arsh",
+      "lang": "ar",
+      "form": "عَرْشٌ",
+      "translit": "ʿarš",
+      "gloss": "framework for shade, royal throne",
+      "relation": "possible",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "note": "A constructed support may connect the furniture terms. Lane gives the king's seat and shelters made with reeds or palm sticks.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2000, عَرْشٌ, n28662"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "SEDRA lexeme 2418 (ERSA) includes bed, pallet and bier. Whether the Hebrew noun originally named a frame, as the Arabic comparison might suggest, is uncertain. No verse specifies the construction of an ordinary couch."
+}

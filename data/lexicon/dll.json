@@ -1,0 +1,164 @@
+{
+  "id": "dll",
+  "root": "דלל",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "gloss": "be low, poor",
+  "summary": "דלל describes lowliness, weakness and poverty.",
+  "words": [
+    {
+      "lemma": "דַּל",
+      "pos": "adjective",
+      "gloss": "weak, poor",
+      "bdb": [
+        "d.bo.ab"
+      ],
+      "senses": [
+        {
+          "id": "poor",
+          "gloss": "poor",
+          "definition": "A person with little means, entitled to consideration in Psalm 41 and impartial judgment in Exodus.",
+          "evidence": [
+            {
+              "ref": "Psa.41.2",
+              "role": "defining"
+            },
+            {
+              "ref": "Exo.23.3",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "akk-dallu"
+      ]
+    },
+    {
+      "lemma": "דָּלַל",
+      "pos": "verb",
+      "gloss": "be brought low",
+      "bdb": [
+        "d.bo.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "be brought low",
+          "senses": [
+            {
+              "id": "be-brought-low",
+              "gloss": "be brought low",
+              "definition": "To lose strength or be reduced to a helpless condition.",
+              "evidence": [
+                {
+                  "ref": "Psa.79.8",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.116.6",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "akk-dalalu"
+      ]
+    },
+    {
+      "lemma": "דַּלָּה",
+      "pos": "noun",
+      "gloss": "hanging hair or threads",
+      "bdb": [
+        "d.bo.ac"
+      ],
+      "gender": "f",
+      "senses": [
+        {
+          "id": "flowing-hair",
+          "gloss": "flowing hair",
+          "definition": "Hair that hangs from the head.",
+          "evidence": [
+            {
+              "ref": "Sng.7.6",
+              "role": "defining"
+            }
+          ]
+        },
+        {
+          "id": "loom-threads",
+          "gloss": "loom threads",
+          "definition": "Threads from which the weaver cuts the cloth.",
+          "evidence": [
+            {
+              "ref": "Isa.38.12",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "דַּלָּה",
+      "pos": "noun",
+      "gloss": "the poor",
+      "bdb": [
+        "d.bo.ad"
+      ],
+      "gender": "f",
+      "senses": [
+        {
+          "id": "the-poor",
+          "gloss": "the poor",
+          "definition": "The impoverished people who remained in the land after deportation.",
+          "evidence": [
+            {
+              "ref": "2Ki.24.14",
+              "role": "defining"
+            },
+            {
+              "ref": "2Ki.25.12",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The two feminine nouns have the same spelling. The objects hanging from a head or loom and the people left on the land distinguish their uses. The connection of the personal name Delilah with weakness is uncertain.",
+  "cognates": [
+    {
+      "id": "akk-dallu",
+      "lang": "akk",
+      "form": "dallu",
+      "translit": "dallu",
+      "gloss": "small",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep/x000066460"
+        }
+      ]
+    },
+    {
+      "id": "akk-dalalu",
+      "lang": "akk",
+      "form": "dalālu",
+      "translit": "dalālu",
+      "gloss": "become small",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep/x000089400"
+        }
+      ]
+    }
+  ],
+  "created": "2026-11-19"
+}

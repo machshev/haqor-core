@@ -1,0 +1,369 @@
+{
+  "id": "m7h",
+  "root": "מחה",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "judgment",
+    "writing"
+  ],
+  "gloss": "wipe away, strike",
+  "summary": "Writing can be washed away and a name erased from a record. The same image expresses the removal of guilt or the extinction of someone’s memory. The similarly spelled striking verb belongs with the vocabulary of blows and impacts.",
+  "words": [
+    {
+      "lemma": "מָחָה",
+      "bdb": [
+        "m.bl.aa"
+      ],
+      "pos": "verb",
+      "gloss": "wipe, erase, blot out",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "wipe away",
+          "senses": [
+            {
+              "gloss": "wipe off a surface",
+              "definition": "The priest writes the curses and washes the writing off into water. Jerusalem’s coming judgment is compared to wiping a dish and turning it upside down.",
+              "evidence": [
+                {
+                  "ref": "Num.5.23",
+                  "role": "defining"
+                },
+                {
+                  "ref": "2Ki.21.13"
+                }
+              ],
+              "id": "wipe"
+            },
+            {
+              "id": "remove-a-name-memory",
+              "gloss": "remove a name, memory or sin",
+              "definition": "In Psalm 9 the name of the wicked is blotted out. Moses speaks of removal from a written book. Isaiah describes transgressions wiped away so they will no longer be remembered.",
+              "evidence": [
+                {
+                  "ref": "Psa.9.6",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Exo.32.32",
+                  "to": "Exo.32.33"
+                },
+                {
+                  "ref": "Isa.43.25"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be wiped out",
+          "senses": [
+            {
+              "id": "be-wiped-out",
+              "gloss": "be wiped out",
+              "definition": "Living creatures are wiped away in the flood. The law seeks to prevent the name of a deceased brother from being lost in Israel.",
+              "evidence": [
+                {
+                  "ref": "Gen.7.23",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Deu.25.6"
+                },
+                {
+                  "ref": "Psa.69.29"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "cause to be erased",
+          "senses": [
+            {
+              "id": "cause-to-be-erased",
+              "gloss": "cause to be erased",
+              "definition": "Nehemiah asks that his acts of faithfulness should not be wiped away. Jeremiah asks that his opponents’ sin should remain on record.",
+              "evidence": [
+                {
+                  "ref": "Neh.13.14",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jer.18.23"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-maha"
+      ]
+    },
+    {
+      "lemma": "מָחָה",
+      "bdb": [
+        "m.bm.aa"
+      ],
+      "pos": "verb",
+      "gloss": "strike, reach against",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "touch against",
+          "senses": [
+            {
+              "id": "touch-against",
+              "gloss": "touch against",
+              "definition": "The eastern boundary descends until it meets the eastern slope of the Sea of Kinnereth. The movement of the boundary fixes the force of strike here.",
+              "evidence": [
+                {
+                  "ref": "Num.34.11",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-meha"
+      ]
+    },
+    {
+      "lemma": "מְחִי",
+      "bdb": [
+        "m.bm.ab",
+        "m.bn.ae"
+      ],
+      "pos": "noun",
+      "gloss": "blow, impact",
+      "senses": [
+        {
+          "id": "blow-impact",
+          "gloss": "blow, impact",
+          "definition": "In the siege of Tyre a battering ram strikes the walls and weapons pull down the towers.",
+          "evidence": [
+            {
+              "ref": "Ezk.26.9",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "arc-meha"
+      ]
+    },
+    {
+      "lemma": "מָחָא",
+      "bdb": [
+        "m.bk.aa"
+      ],
+      "pos": "verb",
+      "gloss": "clap",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "strike the hands together",
+          "senses": [
+            {
+              "gloss": "strike the hands together",
+              "definition": "The rivers clap their hands in praise and the trees of the field do so as the people go forth in peace.",
+              "evidence": [
+                {
+                  "ref": "Psa.98.8",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Isa.55.12"
+                }
+              ],
+              "id": "strike"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-meha"
+      ]
+    },
+    {
+      "lemma": "מְחָא",
+      "bdb": [
+        "xm.ac.aa"
+      ],
+      "pos": "verb",
+      "gloss": "strike",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "strike a blow",
+          "senses": [
+            {
+              "id": "strike-a-blow",
+              "gloss": "strike a blow",
+              "definition": "The stone strikes the feet of the statue. Nebuchadnezzar declares that no one can strike God’s hand to stop him.",
+              "evidence": [
+                {
+                  "ref": "Dan.2.34",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Dan.4.32"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "arc",
+      "cognate_ids": [
+        "arc-meha"
+      ]
+    },
+    {
+      "lemma": "מָחוֹז",
+      "bdb": [
+        "m.bm.ae"
+      ],
+      "pos": "noun",
+      "gloss": "harbour, desired destination",
+      "senses": [
+        {
+          "id": "harbour-desired-destination",
+          "gloss": "harbour, desired destination",
+          "definition": "When the storm is stilled, Yahweh guides the sailors to the harbour they desired. The verse identifies a destination reachable by sea.",
+          "evidence": [
+            {
+              "ref": "Psa.107.30",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "מְחָא",
+      "pos": "verb",
+      "gloss": "strike or afflict",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "strike",
+          "senses": [
+            {
+              "id": "strike-2",
+              "gloss": "strike",
+              "definition": "Jesus speaks of someone striking another on the cheek. Paul protests when the high priest orders those nearby to strike him on the mouth.",
+              "evidence": [
+                {
+                  "ref": "Mat.5.39",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Act.23.2",
+                  "to": "Act.23.3"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pael",
+          "gloss": "afflict with sores",
+          "senses": [
+            {
+              "id": "afflict-with-sores",
+              "gloss": "afflict with sores",
+              "definition": "Lazarus lies at the rich man’s gate covered with sores.",
+              "evidence": [
+                {
+                  "ref": "Luk.16.20",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "cognate_ids": [
+        "arc-meha"
+      ]
+    },
+    {
+      "lemma": "מְחוֹתָא",
+      "pos": "noun",
+      "gloss": "blow, wound, plague",
+      "senses": [
+        {
+          "id": "blow-wound-plague",
+          "gloss": "blow, wound, plague",
+          "definition": "Jesus heals people suffering from afflictions. Revelation describes the beast’s wound and the plagues poured out on the earth.",
+          "evidence": [
+            {
+              "ref": "Luk.7.21",
+              "role": "defining"
+            },
+            {
+              "ref": "Rev.13.3"
+            },
+            {
+              "ref": "Rev.15.1"
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "cognate_ids": [
+        "arc-meha"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-maha",
+      "lang": "ar",
+      "form": "مَحَا",
+      "translit": "maḥā",
+      "gloss": "erase, remove a trace",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 3018, مَحَاهُ n43530"
+        }
+      ],
+      "sounds": {
+        "ח": "ḥ"
+      }
+    },
+    {
+      "id": "arc-meha",
+      "lang": "arc",
+      "form": "מְחִי",
+      "translit": "məḥî",
+      "gloss": "smite, wound",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "מְחִי, Targum Exodus 7:20"
+        }
+      ],
+      "sounds": {
+        "ח": "ḥ"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "Isaiah 25:6 describes food rich in marrow and supplies no evidence for wiping. The harbour noun has close Aramaic parallels but no secure derivation from either Hebrew verb. Mahol, father of the sages in 1 Kings 5:11, has a different final consonant."
+}

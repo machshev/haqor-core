@@ -1,0 +1,334 @@
+{
+  "id": "bl3",
+  "root": "בלע",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "food",
+    "destruction"
+  ],
+  "gloss": "swallow, engulf",
+  "summary": "A mouth takes food or prey inside. Scripture applies the same action to the earth taking people alive, an enemy destroying a people, and death itself being overcome.",
+  "words": [
+    {
+      "lemma": "בָּלַע",
+      "bdb": [
+        "b.by.aa"
+      ],
+      "pos": "verb",
+      "gloss": "swallow, engulf, destroy",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "swallow down",
+          "senses": [
+            {
+              "id": "swallow-down",
+              "gloss": "swallow down",
+              "definition": "The great fish takes Jonah into its belly. The earth likewise opens its mouth and takes in the rebels.",
+              "evidence": [
+                {
+                  "ref": "Jon.2.1",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Num.16.30"
+                }
+              ]
+            }
+          ],
+          "cognate_ids": [
+            "ar-balia"
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "swallow up, destroy",
+          "senses": [
+            {
+              "id": "swallow-up-destroy",
+              "gloss": "swallow up, destroy",
+              "definition": "Yahweh consumes the king’s enemies as fire consumes its fuel. Isaiah promises that death itself will be swallowed up, a promise Paul applies to resurrection.",
+              "evidence": [
+                {
+                  "ref": "Psa.21.10",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Isa.25.8"
+                },
+                {
+                  "ref": "1Co.15.54"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be swallowed up",
+          "senses": [
+            {
+              "id": "be-swallowed-up",
+              "gloss": "be swallowed up",
+              "definition": "David must cross the river so that neither he nor his people will be engulfed by the disaster.",
+              "evidence": [
+                {
+                  "ref": "2Sa.17.16",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Job.37.20"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be engulfed",
+          "senses": [
+            {
+              "id": "be-engulfed",
+              "gloss": "be engulfed",
+              "definition": "Israel has been swallowed up among the nations. Isaiah pictures priests overwhelmed by wine.",
+              "evidence": [
+                {
+                  "ref": "Hos.8.8",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Isa.28.7"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpael",
+          "gloss": "be at a loss",
+          "senses": [
+            {
+              "id": "be-at-a-loss",
+              "gloss": "be at a loss",
+              "definition": "A ship pitches in a storm until the sailors’ skill fails them.",
+              "evidence": [
+                {
+                  "ref": "Psa.107.27",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "καταπίνω",
+          "gloss": "swallow down",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Num 16:30, בלע"
+            },
+            {
+              "ref": "1Co.15.54"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "בֶּלַע",
+      "bdb": [
+        "b.by.ab"
+      ],
+      "pos": "noun",
+      "gloss": "what is swallowed, destruction",
+      "senses": [
+        {
+          "id": "what-is-swallowed-destruction",
+          "gloss": "what is swallowed, destruction",
+          "definition": "Yahweh will bring out of Bel’s mouth what he has swallowed. Words that consume a person are called words of destruction.",
+          "evidence": [
+            {
+              "ref": "Jer.51.44",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.52.6"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "בַּלְעִי",
+      "bdb": [
+        "b.by.ad"
+      ],
+      "pos": "adjective",
+      "gloss": "Belaite",
+      "senses": [
+        {
+          "id": "belaite",
+          "gloss": "Belaite",
+          "definition": "Bela’s descendants are counted as a clan of Benjamin.",
+          "evidence": [
+            {
+              "ref": "Num.26.38",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "בֶּלַע",
+      "bdb": [
+        "b.by.ae"
+      ],
+      "pos": "name",
+      "gloss": "Bela, Zoar",
+      "senses": [
+        {
+          "id": "bela-zoar",
+          "gloss": "Bela, Zoar",
+          "definition": "The list of cities explicitly identifies Bela as Zoar.",
+          "evidence": [
+            {
+              "ref": "Gen.14.2",
+              "role": "defining"
+            },
+            {
+              "ref": "Gen.14.8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "בִּלְעָם",
+      "bdb": [
+        "b.by.ah"
+      ],
+      "pos": "name",
+      "gloss": "Bileam",
+      "senses": [
+        {
+          "id": "bileam",
+          "gloss": "Bileam",
+          "definition": "Manasseh assigns Bileam and its pastureland to the Kohathites.",
+          "evidence": [
+            {
+              "ref": "1Ch.6.55",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "בלע",
+      "pos": "verb",
+      "gloss": "swallow, receive blows",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "swallow, receive blows",
+          "senses": [
+            {
+              "id": "swallow",
+              "gloss": "swallow",
+              "definition": "The hearers strain out the gnat and swallow the camel.",
+              "evidence": [
+                {
+                  "ref": "Mat.23.24",
+                  "role": "defining"
+                },
+                {
+                  "ref": "1Pe.5.8"
+                }
+              ],
+              "cognate_ids": [
+                "ar-balia"
+              ]
+            },
+            {
+              "id": "receive-blows",
+              "gloss": "receive blows",
+              "definition": "Paul recounts the blows that he received.",
+              "evidence": [
+                {
+                  "ref": "2Co.11.24",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "ethpeel",
+          "gloss": "be swallowed",
+          "senses": [
+            {
+              "id": "be-swallowed",
+              "gloss": "be swallowed",
+              "definition": "Death is swallowed up in victory.",
+              "evidence": [
+                {
+                  "ref": "1Co.15.54",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "syc"
+    },
+    {
+      "lemma": "בלועא",
+      "pos": "noun",
+      "gloss": "fishhook",
+      "senses": [
+        {
+          "id": "fishhook",
+          "gloss": "fishhook",
+          "definition": "Peter is instructed to cast a hook and take the first fish that comes up.",
+          "evidence": [
+            {
+              "ref": "Mat.17.27",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "lang": "syc"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-balia",
+      "lang": "ar",
+      "form": "بَلِعَهُ",
+      "translit": "baliʿahu",
+      "gloss": "he swallowed it",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I p. 249, n3194"
+        }
+      ],
+      "sounds": {
+        "ע": "ʿ"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "The Peshitta also uses the verb with blows received. The longer names Bileam and Balaam have no explanation in their naming passages."
+}

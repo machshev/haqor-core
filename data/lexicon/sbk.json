@@ -1,0 +1,126 @@
+{
+  "id": "sbk",
+  "root": "סבכ",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "gloss": "entwine, thicket",
+  "summary": "Branches and roots interlace to form a dense growth. The ram caught by its horns shows how a thicket can hold an animal fast.",
+  "words": [
+    {
+      "lemma": "סְבַךְ",
+      "pos": "noun",
+      "gloss": "interweave, lattice",
+      "bdb": [
+        "o.ae.ab"
+      ],
+      "senses": [
+        {
+          "id": "thicket",
+          "gloss": "interwoven branches",
+          "definition": "An interwoven thicket or lattice of branches.",
+          "evidence": [
+            {
+              "ref": "Psa.74.5",
+              "role": "defining"
+            },
+            {
+              "ref": "Gen.22.13",
+              "role": "defining"
+            },
+            {
+              "ref": "Isa.9.17",
+              "role": "example"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "סָבַךְ",
+      "bdb": [
+        "o.ae.aa"
+      ],
+      "pos": "verb",
+      "gloss": "entangle",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "be entangled",
+          "senses": [
+            {
+              "id": "be-entangled",
+              "gloss": "be entangled",
+              "definition": "The enemy is compared to thorns tangled together.",
+              "evidence": [
+                {
+                  "ref": "Nam.1.10",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be interwoven",
+          "senses": [
+            {
+              "id": "be-interwoven",
+              "gloss": "be interwoven",
+              "definition": "A plant’s roots entwine themselves about a heap of stones.",
+              "evidence": [
+                {
+                  "ref": "Job.8.17",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-weave"
+      ]
+    },
+    {
+      "lemma": "סְבֹךְ",
+      "bdb": [
+        "o.ae.ac"
+      ],
+      "pos": "noun",
+      "gloss": "thicket, lair",
+      "senses": [
+        {
+          "id": "thicket-lair",
+          "gloss": "thicket, lair",
+          "definition": "A lion emerges from its cover as a destroyer sets out against the land.",
+          "evidence": [
+            {
+              "ref": "Jer.4.7",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    }
+  ],
+  "note": "The two noun forms differ in vowel pattern. The plural of סְבַךְ names dense woodland in battle and judgment imagery.",
+  "created": "2026-11-19",
+  "cognates": [
+    {
+      "id": "arc-weave",
+      "lang": "arc",
+      "form": "סְבַךְ",
+      "translit": "səbaḵ",
+      "gloss": "interweave, weave a net",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. סְבַךְ, pael, Targum Proverbs 30:28"
+        }
+      ]
+    }
+  ]
+}

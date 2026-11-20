@@ -1,0 +1,71 @@
+{
+  "id": "qab",
+  "root": "קב",
+  "status": "draft",
+  "updated": "2026-11-18",
+  "tags": [],
+  "gloss": "kab, a dry measure",
+  "summary": "During the siege of Samaria even a quarter of a kab of dove dung fetches five pieces of silver.",
+  "words": [
+    {
+      "lemma": "קַב",
+      "pos": "noun",
+      "gender": "m",
+      "bdb": [
+        "s.ab.ab",
+        "s.aa.ae"
+      ],
+      "gloss": "kab, a dry measure",
+      "senses": [
+        {
+          "id": "thing",
+          "gloss": "kab, a dry measure",
+          "definition": "A unit of capacity for dry goods. The price is quoted for a quarter of the unit.",
+          "evidence": [
+            {
+              "ref": "2Ki.6.25",
+              "role": "defining",
+              "note": "The narrator gives two prices to convey the severity of the famine, one for a donkey’s head and one for a quarter-kab of dove dung."
+            }
+          ],
+          "cognate_ids": [
+            "arc-kab",
+            "syc-kab"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-kab",
+      "lang": "arc",
+      "form": "קב",
+      "translit": "qab",
+      "gloss": "unit of dry capacity",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "cal",
+          "locator": "qb n.m., TAD D7.6 line 7 and IduOstr 1:5.3"
+        }
+      ]
+    },
+    {
+      "id": "syc-kab",
+      "lang": "syc",
+      "form": "ܩܒܐ",
+      "translit": "qabbā",
+      "gloss": "kab, a measure",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "cal",
+          "locator": "qb n.m., Peshitta 2 Kings 6:25"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The Idumaean receipts abbreviate the measure to q. An Aramaic letter from Egypt spells it qb in an instruction about making bread. The biblical price establishes the fraction sold but gives no conversion."
+}

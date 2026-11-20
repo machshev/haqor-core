@@ -1,0 +1,75 @@
+{
+  "id": "raexaep",
+  "root": "רשפ",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "gloss": "flame, burning dart",
+  "summary": "Resheph names a flash of fire and the bolt that flies from a bow. It can also name a burning affliction among judgments on a people.",
+  "words": [
+    {
+      "lemma": "רֶ֫שֶׁף",
+      "pos": "noun",
+      "gloss": "flame, burning dart",
+      "bdb": [
+        "t.eu.ab"
+      ],
+      "senses": [
+        {
+          "id": "flame-fiery-bolt",
+          "gloss": "flame, fiery bolt",
+          "definition": "Fiery flashes stand beside fire in the Song. Lightning destroys livestock in Egypt, and the bolts of the bow belong among the weapons God breaks.",
+          "evidence": [
+            {
+              "ref": "Sng.8.6",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.78.48",
+              "role": "example"
+            },
+            {
+              "ref": "Psa.76.4",
+              "role": "example"
+            }
+          ],
+          "cognate_ids": [
+            "arc-spark"
+          ]
+        },
+        {
+          "id": "burning-plague",
+          "gloss": "burning plague",
+          "definition": "In the song of Moses this affliction accompanies hunger and pestilence.",
+          "evidence": [
+            {
+              "ref": "Deu.32.24",
+              "role": "defining"
+            },
+            {
+              "ref": "Hab.3.5",
+              "role": "example"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "note": "The fire image is clear. The precise affliction in Deuteronomy is uncertain.",
+  "created": "2026-11-19",
+  "cognates": [
+    {
+      "id": "arc-spark",
+      "lang": "arc",
+      "form": "רִשְׁפָּא",
+      "translit": "rišpā",
+      "gloss": "spark, lightning",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. רִשְׁפָּא, Targum Psalms 78:48"
+        }
+      ]
+    }
+  ]
+}

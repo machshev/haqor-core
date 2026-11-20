@@ -1,0 +1,70 @@
+{
+  "id": "ziyz",
+  "root": "זוז",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [],
+  "gloss": "field creatures, abundance",
+  "summary": "In both psalms the creatures of the open country are mentioned with other wild animals. Isaiah uses the same noun for something a nursing child can draw from in abundance.",
+  "words": [
+    {
+      "lemma": "זִיז",
+      "pos": "noun",
+      "gloss": "creatures of the field, abundance",
+      "bdb": [
+        "g.as.ab"
+      ],
+      "gender": "m",
+      "senses": [
+        {
+          "id": "field-creatures",
+          "gloss": "field creatures",
+          "definition": "God knows the birds and the creatures of the field. In the vineyard song the forest boar ravages vines and the field creatures feed on them. The passages give no narrower species.",
+          "evidence": [
+            {
+              "ref": "Psa.50.11",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.80.14",
+              "role": "defining"
+            }
+          ],
+          "cognate_ids": [
+            "arc-creature"
+          ]
+        },
+        {
+          "id": "abundance-fullness",
+          "gloss": "abundance, fullness",
+          "definition": "Jerusalem is pictured as a mother. Her children suck and delight themselves in the fullness of her glory. This sense rests on one passage.",
+          "evidence": [
+            {
+              "ref": "Isa.66.11",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-creature",
+      "lang": "arc",
+      "form": "זִיזָא",
+      "translit": "zīzā",
+      "gloss": "a small moving creature",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "זִיזָא II G00324, Targum Deuteronomy 14:19"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The second heading g.at.ab indexes the same three tokens. A historical connection between the field creatures and the abundance in Isaiah is uncertain. The doorpost is treated under mezuzah. Ziza, Zizah, Zaza and Jaziz resemble the root, but the genealogies give no evidence of meanings tied to these senses."
+}

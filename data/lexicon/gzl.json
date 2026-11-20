@@ -1,0 +1,115 @@
+{
+  "id": "gzl",
+  "root": "גזל",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "gloss": "rob",
+  "summary": "גזל describes robbery and unjust seizure.",
+  "words": [
+    {
+      "lemma": "גָּזַל",
+      "pos": "verb",
+      "gloss": "rob",
+      "bdb": [
+        "c.bl.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "rob",
+          "senses": [
+            {
+              "id": "rob",
+              "gloss": "rob",
+              "definition": "Take another's property by force or fraud.",
+              "evidence": [
+                {
+                  "ref": "Psa.35.10",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.62.11"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "גָּזֵל",
+      "pos": "noun",
+      "gloss": "robbery",
+      "bdb": [
+        "c.bl.ab"
+      ],
+      "senses": [
+        {
+          "id": "robbery",
+          "gloss": "robbery",
+          "definition": "Property taken by robbery.",
+          "evidence": [
+            {
+              "ref": "Psa.62.11",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "גְּזֵלָה",
+      "bdb": [
+        "c.bl.ac"
+      ],
+      "pos": "noun",
+      "gloss": "plunder, stolen property",
+      "senses": [
+        {
+          "id": "plunder-stolen-property",
+          "gloss": "plunder, stolen property",
+          "definition": "The righteous man returns property taken by robbery. Isaiah accuses leaders of keeping goods plundered from the poor in their houses.",
+          "evidence": [
+            {
+              "ref": "Ezk.18.7",
+              "role": "defining"
+            },
+            {
+              "ref": "Isa.3.14",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "גּוֹזָל",
+      "bdb": [
+        "c.bm.ab"
+      ],
+      "pos": "noun",
+      "gloss": "young bird",
+      "senses": [
+        {
+          "id": "young-bird",
+          "gloss": "young bird",
+          "definition": "An eagle hovers over its young. Abram takes a young bird alongside a turtledove. The noun’s connection with seizing prey is uncertain.",
+          "evidence": [
+            {
+              "ref": "Deu.32.11",
+              "role": "defining"
+            },
+            {
+              "ref": "Gen.15.9",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    }
+  ],
+  "doctrine": [],
+  "note": "Drafted for Psalm 62 coverage."
+}

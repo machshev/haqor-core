@@ -1,0 +1,79 @@
+{
+  "id": "psg",
+  "created": "2026-11-19",
+  "root": "פסג",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "gloss": "survey, mark out",
+  "summary": "פָּסַג calls for surveying or marking the strongholds of Zion so they can be recounted to the next generation.",
+  "words": [
+    {
+      "lemma": "פָּסַג",
+      "pos": "verb",
+      "gloss": "survey, mark out",
+      "bdb": [
+        "q.bx.aa"
+      ],
+      "stems": [
+        {
+          "stem": "piel",
+          "gloss": "survey",
+          "senses": [
+            {
+              "id": "survey",
+              "gloss": "survey",
+              "definition": "To inspect and mark out the city's fortifications.",
+              "evidence": [
+                {
+                  "ref": "Psa.48.14",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "פִּסְגָּה",
+      "pos": "name",
+      "gloss": "Pisgah",
+      "bdb": [
+        "q.bx.ab"
+      ],
+      "senses": [
+        {
+          "id": "pisgah",
+          "gloss": "Pisgah",
+          "definition": "The mountain ridge or summit overlooking the land of Moab.",
+          "evidence": [
+            {
+              "ref": "Deu.3.27",
+              "role": "defining"
+            },
+            {
+              "ref": "Num.21.20"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-psg",
+      "lang": "arc",
+      "form": "פְּסַג",
+      "translit": "pəsaĝ",
+      "gloss": "divide, split",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "Q01228, פְּסַג, Targum Genesis 15:10"
+        }
+      ]
+    }
+  ],
+  "note": "The Targumic פְּסַג means divide or split (Jastrow Q01228), a possible cognate for surveying or marking out."
+}

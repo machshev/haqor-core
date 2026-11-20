@@ -1,0 +1,215 @@
+{
+  "id": "lw3",
+  "root": "לוע",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "tags": [
+    "body"
+  ],
+  "gloss": "throat, swallow, speak rashly",
+  "summary": "Proverbs locates the throat in a warning to a diner with a strong appetite. Obadiah pictures the nations drinking and swallowing. In Job and Proverbs similarly spelled verbs concern words uttered under pressure or before reflection.",
+  "words": [
+    {
+      "lemma": "לֹעַ",
+      "pos": "noun",
+      "gender": "m",
+      "bdb": [
+        "l.bb.ab"
+      ],
+      "gloss": "throat",
+      "senses": [
+        {
+          "id": "throat",
+          "gloss": "throat",
+          "definition": "The part of the neck associated with swallowing.",
+          "evidence": [
+            {
+              "ref": "Pro.23.2",
+              "role": "defining",
+              "note": "The guest is told to put a knife to his throat if appetite might overcome his restraint at the ruler’s table."
+            }
+          ],
+          "cognate_ids": [
+            "akk-throat",
+            "arc-jaw",
+            "cpa-jaw",
+            "syr-jaw",
+            "syr-cheek"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "לוּעַ",
+      "pos": "verb",
+      "bdb": [
+        "l.bb.aa",
+        "l.bq.al"
+      ],
+      "gloss": "swallow",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "swallow",
+          "senses": [
+            {
+              "id": "swallow",
+              "gloss": "swallow down",
+              "definition": "To take drink down the throat.",
+              "evidence": [
+                {
+                  "ref": "Oba.1.16",
+                  "role": "defining",
+                  "note": "Drinking is repeated immediately before the verb, in a judgment saying about the nations."
+                }
+              ],
+              "cognate_ids": [
+                "akk-swallow"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "לוּע",
+      "pos": "verb",
+      "bdb": [
+        "l.bc.aa",
+        "l.bs.af",
+        "l.bu.ac"
+      ],
+      "gloss": "speak rashly or wildly",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "speak rashly or wildly",
+          "senses": [
+            {
+              "id": "speak",
+              "gloss": "speak rashly or wildly",
+              "definition": "To give words to distress or make a declaration before weighing its consequences.",
+              "evidence": [
+                {
+                  "ref": "Job.6.3",
+                  "role": "defining",
+                  "note": "Job explains the character of his words by the overwhelming weight of his grief."
+                },
+                {
+                  "ref": "Pro.20.25",
+                  "role": "defining",
+                  "note": "The warning turns on the order of events: a man declares something holy, then weighs his vow."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-throat",
+      "lang": "akk",
+      "form": "luʾu",
+      "translit": "luʾu",
+      "gloss": "throat",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000101700"
+        }
+      ],
+      "sounds": {
+        "ע": "ʿ"
+      }
+    },
+    {
+      "id": "arc-jaw",
+      "lang": "arc",
+      "form": "לוּעָא",
+      "translit": "lūʿā",
+      "gloss": "jaw, cheek",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "cal",
+          "locator": "lwˁ, lwˁˀ, Targum Onkelos Deuteronomy 18:3 and Babylonian Talmud Shabbat 67a"
+        }
+      ],
+      "sounds": {
+        "ע": "ʿ"
+      }
+    },
+    {
+      "id": "cpa-jaw",
+      "lang": "arc",
+      "form": "ܠܘܥܝܟܘܢ",
+      "translit": "lwʿykwn",
+      "gloss": "Christian Palestinian Aramaic your jaws",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "cal",
+          "locator": "lwˁ, lwˁˀ, CPA lectionary 97, Job 21:5"
+        }
+      ],
+      "sounds": {
+        "ע": "ʿ"
+      }
+    },
+    {
+      "id": "syr-jaw",
+      "lang": "syc",
+      "form": "ܠܘܥܐ",
+      "translit": "lūʿā",
+      "gloss": "jaw",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "cal",
+          "locator": "lwˁ, lwˁˀ, Peshitta Judges 15:19, variant"
+        }
+      ],
+      "sounds": {
+        "ע": "ʿ"
+      }
+    },
+    {
+      "id": "syr-cheek",
+      "lang": "syc",
+      "form": "ܠܘܥܛܐ",
+      "translit": "lūʿāṭā",
+      "gloss": "jaw, cheek",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "cal",
+          "locator": "lwˁṭ, lwˁṭˀ, Syrohexapla Ezekiel 38:4, a derivative of lwˁ"
+        }
+      ],
+      "sounds": {
+        "ע": "ʿ"
+      }
+    },
+    {
+      "id": "akk-swallow",
+      "lang": "akk",
+      "form": "laʾātu",
+      "translit": "laʾātu",
+      "gloss": "swallow up",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000069620"
+        }
+      ],
+      "sounds": {
+        "ע": "ʿ"
+      }
+    }
+  ],
+  "note": "The anatomical comparison is strongest with Akkadian luʾu. The Aramaic forms denote the neighboring jaw or cheek. The catalogue indexes Obadiah 1:16 and Job 6:3 under both verbs. Drinking in Obadiah and Job’s explicit reference to his words guide the assignments here. The derivation of the speech verb remains uncertain."
+}

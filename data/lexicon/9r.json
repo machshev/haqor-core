@@ -1,0 +1,114 @@
+{
+  "id": "9r",
+  "root": "צר",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [],
+  "gloss": "Tyre, Tyrian",
+  "summary": "Tyre is the seaport ruled by Hiram. The wedding song speaks of the daughter of Tyre bringing a gift, and Ezekiel portrays the city trading with peoples on many coasts.",
+  "words": [
+    {
+      "lemma": "צֹר",
+      "pos": "name",
+      "gloss": "Tyre",
+      "bdb": [
+        "r.dr.an"
+      ],
+      "senses": [
+        {
+          "id": "tyre",
+          "gloss": "Tyre",
+          "definition": "Hiram sends timber and craftsmen to David. Ezekiel addresses the city at the approaches to the sea, where ships exchange merchandise.",
+          "evidence": [
+            {
+              "ref": "2Sa.5.11",
+              "role": "defining"
+            },
+            {
+              "ref": "Ezk.27.3",
+              "role": "defining"
+            },
+            {
+              "ref": "Ezk.27.25",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.45.13",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "phn-tyre"
+      ]
+    },
+    {
+      "lemma": "צֹרִי",
+      "pos": "adjective",
+      "gloss": "Tyrian",
+      "bdb": [
+        "r.dr.ao"
+      ],
+      "senses": [
+        {
+          "id": "tyrian",
+          "gloss": "Tyrian",
+          "definition": "These people from Tyre bring fish and other merchandise into Jerusalem. A Tyrian craftsman makes the bronze furnishings for Solomon.",
+          "evidence": [
+            {
+              "ref": "Neh.13.16",
+              "role": "defining"
+            },
+            {
+              "ref": "1Ki.7.14",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "phn-tyrian"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "phn-tyre",
+      "lang": "phn",
+      "form": "𐤑𐤓",
+      "translit": "Ṣr",
+      "gloss": "Tyre",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "ṢR II, Hill 255 and Hill cxxxiii, coinage of Tyre"
+        }
+      ],
+      "sounds": {
+        "צ": "ṣ"
+      }
+    },
+    {
+      "id": "phn-tyrian",
+      "lang": "phn",
+      "form": "𐤑𐤓𐤉",
+      "translit": "ṣry",
+      "gloss": "Tyrian",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "ʿK, KAI 49.34, hṣry, the Tyrian resident of Acco"
+        }
+      ],
+      "sounds": {
+        "צ": "ṣ"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "The city also appears as צוֹר. Ezekiel 26:4 compares its future site to bare rock. The similar word for rock is under tsur. The lexicon’s page grouping under צפר gives no explanation for the place-name."
+}

@@ -1,0 +1,266 @@
+{
+  "id": "nxq",
+  "root": "נשק",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "affection",
+    "equipment"
+  ],
+  "gloss": "kiss, touch, be equipped",
+  "summary": "A kiss can welcome a relative, express affection or show submission. The same consonants also occur with carrying weapons, though the historical relationship of the two uses is unclear.",
+  "words": [
+    {
+      "lemma": "נָשַׁק",
+      "bdb": [
+        "n.fz.aa"
+      ],
+      "pos": "verb",
+      "gloss": "kiss, touch, be equipped",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "kiss, touch or bear equipment",
+          "senses": [
+            {
+              "id": "kiss-in-greeting-affection",
+              "gloss": "kiss in greeting, affection or homage",
+              "definition": "Isaac asks his son to come near for a kiss. Samuel kisses Saul when he anoints him. In Psalm 2 the kiss belongs to the appeal for submission to the king.",
+              "evidence": [
+                {
+                  "ref": "Gen.27.26",
+                  "to": "Gen.27.27",
+                  "role": "defining"
+                },
+                {
+                  "ref": "1Sa.10.1"
+                },
+                {
+                  "ref": "Psa.2.12"
+                },
+                {
+                  "ref": "1Ki.19.18"
+                }
+              ],
+              "cognate_ids": [
+                "akk-nashaqu"
+              ],
+              "kin": [
+                "kiss"
+              ]
+            },
+            {
+              "id": "be-equipped-with-a",
+              "gloss": "be equipped with a bow",
+              "definition": "Men with bows are identified by what they carry. The sons of Ephraim are described as armed bowmen.",
+              "evidence": [
+                {
+                  "ref": "1Ch.12.2",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.78.9"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "kiss or embrace in greeting",
+          "senses": [
+            {
+              "id": "kiss-or-embrace-in",
+              "gloss": "kiss or embrace in greeting",
+              "definition": "Laban runs to meet Jacob, embraces him and kisses him. A kiss also accompanies a farewell.",
+              "evidence": [
+                {
+                  "ref": "Gen.29.13",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Gen.32.1"
+                }
+              ],
+              "cognate_ids": [
+                "akk-nashaqu"
+              ],
+              "kin": [
+                "kiss"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "make contact",
+          "senses": [
+            {
+              "id": "make-contact",
+              "gloss": "make contact",
+              "definition": "Ezekiel hears the sound of the living creatures’ wings touching one another.",
+              "evidence": [
+                {
+                  "ref": "Ezk.3.13",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "נֶשֶׁק",
+      "bdb": [
+        "n.ga.ab"
+      ],
+      "pos": "noun",
+      "gloss": "equipment, weapons",
+      "senses": [
+        {
+          "id": "equipment-weapons",
+          "gloss": "equipment, weapons",
+          "definition": "Weapons appear among the gifts brought to Solomon. Isaiah speaks of turning to the weapons in the House of the Forest.",
+          "evidence": [
+            {
+              "ref": "1Ki.10.25",
+              "role": "defining"
+            },
+            {
+              "ref": "Isa.22.8"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "נְשִׁיקָה",
+      "bdb": [
+        "n.fz.ab"
+      ],
+      "pos": "noun",
+      "gloss": "kiss",
+      "senses": [
+        {
+          "gloss": "kiss",
+          "definition": "The woman in the Song longs for kisses from her beloved. Proverbs warns that an enemy can give kisses as well.",
+          "evidence": [
+            {
+              "ref": "Sng.1.2",
+              "role": "defining"
+            },
+            {
+              "ref": "Pro.27.6"
+            }
+          ],
+          "id": "kiss",
+          "cognate_ids": [
+            "akk-nashaqu"
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "נשַׁק",
+      "bdb": [],
+      "pos": "verb",
+      "gloss": "kiss",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "kiss",
+          "senses": [
+            {
+              "id": "kiss-2",
+              "gloss": "kiss",
+              "definition": "Judas greets Jesus with a kiss to identify him.",
+              "evidence": [
+                {
+                  "ref": "Mat.26.48",
+                  "to": "Mat.26.49",
+                  "role": "defining"
+                }
+              ],
+              "cognate_ids": [
+                "akk-nashaqu"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pael",
+          "gloss": "kiss repeatedly or affectionately",
+          "senses": [
+            {
+              "id": "kiss-repeatedly-or-affectionately",
+              "gloss": "kiss repeatedly or affectionately",
+              "definition": "The woman kisses Jesus’ feet as she weeps and anoints them.",
+              "evidence": [
+                {
+                  "ref": "Luk.7.38",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Luk.7.45"
+                }
+              ],
+              "cognate_ids": [
+                "akk-nashaqu"
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "syc"
+    },
+    {
+      "lemma": "נוּשַׁקְתָא",
+      "bdb": [],
+      "pos": "noun",
+      "gloss": "kiss",
+      "senses": [
+        {
+          "id": "kiss-3",
+          "gloss": "kiss",
+          "definition": "Jesus asks Judas whether he betrays the Son of Man with a kiss.",
+          "evidence": [
+            {
+              "ref": "Luk.22.48",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "lang": "syc",
+      "cognate_ids": [
+        "akk-nashaqu"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-nashaqu",
+      "lang": "akk",
+      "form": "našāqu",
+      "translit": "našāqu",
+      "gloss": "kiss",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep/x000025730, našāqu [kiss] V"
+        }
+      ],
+      "sounds": {
+        "ש": "š"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "The verb keys return identical token lists and are counted once. The weapon uses rest on their own contexts. The difficult complement בַר in Psalm 2:12 does not alter the usual reading of the imperative as kiss."
+}

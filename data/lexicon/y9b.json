@@ -1,0 +1,211 @@
+{
+  "id": "y9b",
+  "root": "יצב",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "standing",
+    "certainty"
+  ],
+  "gloss": "take one’s stand, establish as certain",
+  "summary": "Moses’ sister takes up a position to watch him, and Israel stands at the foot of the mountain to meet God. Psalm 2 describes kings taking their stand against Yahweh. Daniel’s Aramaic uses the root for gaining certainty about a matter.",
+  "words": [
+    {
+      "lemma": "יָצַב",
+      "bdb": [
+        "j.cr.aa"
+      ],
+      "pos": "verb",
+      "gloss": "station oneself, take one’s stand",
+      "stems": [
+        {
+          "stem": "hithpael",
+          "gloss": "take up a position",
+          "senses": [
+            {
+              "id": "station-oneself",
+              "gloss": "station oneself",
+              "definition": "Take up a position and remain there for a purpose. Moses’ sister stations herself far enough away to watch what happens to him.",
+              "evidence": [
+                {
+                  "ref": "Exo.2.4",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Num.23.3"
+                },
+                {
+                  "ref": "Exo.19.17"
+                }
+              ],
+              "cognate_ids": [
+                "ar-wasaba"
+              ]
+            },
+            {
+              "id": "present-oneself-before-someone",
+              "gloss": "present oneself before someone",
+              "definition": "Come to stand before someone in authority, as Israel’s leaders do when Joshua assembles them before God.",
+              "evidence": [
+                {
+                  "ref": "Jos.24.1",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Job.2.1"
+                },
+                {
+                  "ref": "Pro.22.29"
+                }
+              ]
+            },
+            {
+              "id": "take-a-stand-against",
+              "gloss": "take a stand against someone",
+              "definition": "Take up a position in opposition or in preparation for battle. The kings gather against Yahweh and his anointed, a passage the believers apply to the rulers who acted against Jesus.",
+              "evidence": [
+                {
+                  "ref": "Psa.2.2",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Act.4.26",
+                  "to": "Act.4.28"
+                },
+                {
+                  "ref": "Deu.11.25"
+                },
+                {
+                  "ref": "Jer.46.4"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "παρίστημι",
+          "gloss": "stand, take one’s place",
+          "evidence": [
+            {
+              "ref": "Act.4.26"
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "Psalm 2:2, יִתְיַצְּבוּ and παρέστησαν"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "יַצִּיב",
+      "bdb": [
+        "xj.aj.ab"
+      ],
+      "pos": "adjective",
+      "gloss": "certain, true",
+      "senses": [
+        {
+          "gloss": "certain or reliable",
+          "definition": "Daniel pairs the certainty of the interpretation with the truth of the dream. A king’s advisers likewise confirm a statement by saying it is certain.",
+          "evidence": [
+            {
+              "ref": "Dan.2.45",
+              "role": "defining"
+            },
+            {
+              "ref": "Dan.3.24"
+            },
+            {
+              "ref": "Dan.6.13"
+            },
+            {
+              "ref": "Dan.7.16"
+            }
+          ],
+          "id": "certain"
+        }
+      ],
+      "lang": "arc",
+      "root": "יציב"
+    },
+    {
+      "lemma": "יְצַב",
+      "bdb": [
+        "xj.aj.aa"
+      ],
+      "pos": "verb",
+      "gloss": "ascertain",
+      "stems": [
+        {
+          "stem": "pael",
+          "gloss": "seek certainty",
+          "senses": [
+            {
+              "id": "learn-for-certain",
+              "gloss": "learn for certain",
+              "definition": "Daniel asks for a sure account of the fourth beast after asking an attendant to explain the vision.",
+              "evidence": [
+                {
+                  "ref": "Dan.7.19",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Dan.7.16"
+                }
+              ],
+              "kin": [
+                "certain"
+              ],
+              "cognate_ids": [
+                "arc-yatsev"
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "arc"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-wasaba",
+      "lang": "ar",
+      "form": "وَصَبَ",
+      "translit": "waṣaba",
+      "gloss": "continue, be fixed or firm",
+      "relation": "possible",
+      "sounds": {
+        "צ": "ṣ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 2944, n41983"
+        }
+      ]
+    },
+    {
+      "id": "arc-yatsev",
+      "lang": "arc",
+      "form": "יַצֵּב",
+      "translit": "yaṣṣēb",
+      "gloss": "establish",
+      "relation": "cognate",
+      "sounds": {
+        "צ": "ṣ"
+      },
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. יְצַב, pael, Targum 1 Chronicles 4:23"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The Arabic sense of remaining fixed provides a possible comparison. The Hebrew hithpael specifically describes taking a position. The Aramaic adjective has a separate database root key, יציב."
+}

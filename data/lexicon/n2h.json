@@ -1,0 +1,80 @@
+{
+  "id": "n2h",
+  "root": "נאה",
+  "status": "draft",
+  "updated": "2026-11-20",
+  "gloss": "beautiful, fitting",
+  "summary": "נָאוֶה describes what is beautiful and fitting for praise.",
+  "words": [
+    {
+      "lemma": "נָאוֶה",
+      "pos": "adjective",
+      "gloss": "beautiful, fitting",
+      "bdb": [
+        "n.ac.ab"
+      ],
+      "senses": [
+        {
+          "id": "fitting",
+          "gloss": "fitting",
+          "definition": "Beautiful or fitting in its setting, especially praise offered to Yahweh.",
+          "evidence": [
+            {
+              "ref": "Psa.33.1",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "נָאָה",
+      "pos": "verb",
+      "gloss": "be beautiful, befit",
+      "bdb": [
+        "n.ac.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "be beautiful",
+          "senses": [
+            {
+              "id": "be-beautiful",
+              "gloss": "be beautiful",
+              "definition": "To be beautiful or fitting.",
+              "evidence": [
+                {
+                  "ref": "Isa.52.7",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Sng.1.10"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "adorn",
+          "senses": [
+            {
+              "id": "adorn",
+              "gloss": "adorn",
+              "definition": "To adorn or be fitting for a holy dwelling.",
+              "evidence": [
+                {
+                  "ref": "Psa.93.5",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "Drafted for Psalm 33 coverage."
+}

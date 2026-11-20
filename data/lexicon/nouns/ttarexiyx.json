@@ -1,0 +1,86 @@
+{
+  "id": "ttarexiyx",
+  "created": "2026-11-19",
+  "root": "תרשיש",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "gloss": "Tarshish",
+  "summary": "תַּרְשִׁישׁ is a named distant place associated with seafaring ships and maritime trade. Psalm 48 invokes its ships as an image of power broken by Yahweh's east wind.",
+  "words": [
+    {
+      "lemma": "תַּרְשִׁישׁ",
+      "pos": "name",
+      "gloss": "Tarshish, a maritime place",
+      "bdb": [
+        "w.bq.ay"
+      ],
+      "senses": [
+        {
+          "id": "tarshish",
+          "gloss": "Tarshish",
+          "definition": "A named maritime place whose ships carried valuable cargo and were known throughout the ancient world.",
+          "evidence": [
+            {
+              "ref": "Psa.48.8",
+              "role": "defining",
+              "note": "The ships of Tarshish are broken by the east wind."
+            },
+            {
+              "ref": "1Ki.10.22",
+              "note": "Solomon's fleet of ships of Tarshish brought wealth."
+            },
+            {
+              "ref": "Ezk.27.12",
+              "note": "Tarshish traded silver, iron, tin and lead."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "תַּרְשִׁישׁ",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "a precious stone",
+      "bdb": [
+        "w.bq.ax"
+      ],
+      "senses": [
+        {
+          "id": "a-precious-stone",
+          "gloss": "a precious stone",
+          "definition": "The name of a precious stone used in the high priest's breastpiece and in descriptions of splendid ornament.",
+          "evidence": [
+            {
+              "ref": "Exo.28.20",
+              "role": "defining"
+            },
+            {
+              "ref": "Ezk.28.13"
+            },
+            {
+              "ref": "Sng.5.14"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "χρυσόλιθος",
+          "gloss": "chrysolite",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "EXO 28:20, word 3, תַּרְשִׁישׁ rendered χρυσόλιθος"
+            },
+            {
+              "ref": "Rev.21.20",
+              "note": "The seventh foundation stone is called χρυσόλιθος."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "note": "The port, the name used by three people and the stone share a spelling. The city’s location, the mineral’s identification and a possible connection through trade remain uncertain. The people are recorded in names/tarshish."
+}

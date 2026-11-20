@@ -1,0 +1,193 @@
+{
+  "cognates": [
+    {
+      "evidence": [
+        {
+          "locator": "Book I, p. 3015, n43458, with p. 2858, n40636, s.v. نَهَارٌ",
+          "note": "Lane defines daytime by its opposition to layl.",
+          "source": "lane"
+        }
+      ],
+      "form": "لَيْلٌ",
+      "gloss": "night",
+      "id": "ar-layl",
+      "lang": "ar",
+      "relation": "cognate",
+      "translit": "layl"
+    }
+  ],
+  "created": "2026-11-19",
+  "doctrine": [],
+  "gloss": "night",
+  "id": "lyl",
+  "note": "The spelling and the Aramaic and Arabic parallels identify the night word independently of its position under לטש “sharpen” in the index. SEDRA lexeme 1675 gives the Syriac noun. Isaiah 34:14 names a creature, לִילִית, for which Akkadian lilītu (Oracc armep/x000101240) is a separate lexical comparison. Its derivation from the Hebrew word for night is uncertain.",
+  "root": "ליל",
+  "status": "draft",
+  "summary": "God calls the darkness night and the light day. The psalmist who meditates day and night keeps returning to Yahweh’s instruction through both.",
+  "tags": [
+    "time",
+    "darkness"
+  ],
+  "updated": "2026-11-20",
+  "words": [
+    {
+      "bdb": [
+        "l.bm.ad"
+      ],
+      "gender": "m",
+      "gloss": "night",
+      "lemma": "לַיְלָה",
+      "pos": "noun",
+      "senses": [
+        {
+          "id": "the-hours-of-darkness",
+          "cognate_ids": [
+            "ar-layl"
+          ],
+          "definition": "God names the darkness Night. Night is the time when the sun has gone down and a person keeps watch, sleeps or waits for dawn.",
+          "evidence": [
+            {
+              "ref": "Gen.1.5",
+              "role": "defining"
+            },
+            {
+              "ref": "Gen.1.16"
+            },
+            {
+              "ref": "Exo.12.29"
+            },
+            {
+              "ref": "Psa.6.7"
+            },
+            {
+              "ref": "Psa.17.3"
+            },
+            {
+              "ref": "Psa.19.3"
+            },
+            {
+              "note": "The lights rule in the day and in the night, and distinguish light from darkness.",
+              "ref": "Gen.1.18",
+              "role": "example"
+            }
+          ],
+          "gloss": "the hours of darkness"
+        },
+        {
+          "id": "day-and-night-continually",
+          "cognate_ids": [
+            "ar-layl"
+          ],
+          "definition": "Day and night together span the whole cycle. The reader of Yahweh’s instruction returns to it in both parts of the day.",
+          "evidence": [
+            {
+              "ref": "Jos.1.8",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.1.2"
+            },
+            {
+              "ref": "Gen.8.22"
+            }
+          ],
+          "gloss": "day and night, continually"
+        }
+      ],
+      "usage": {
+        "opposites": [
+          {
+            "evidence": [
+              {
+                "ref": "Gen.1.5"
+              }
+            ],
+            "lemma": "יוֹם",
+            "note": "God names the light Day and the darkness Night."
+          }
+        ],
+        "phrases": [
+          {
+            "evidence": [
+              {
+                "ref": "Psa.1.2"
+              }
+            ],
+            "gloss": "by day and by night",
+            "phrase": "יוֹמָם וָלַיְלָה"
+          }
+        ]
+      }
+    },
+    {
+      "bdb": [
+        "xl.ag.af"
+      ],
+      "cognate_ids": [
+        "ar-layl"
+      ],
+      "gender": "m",
+      "gloss": "night",
+      "lang": "arc",
+      "lemma": "לֵילְיָא",
+      "pos": "noun",
+      "root": "לילא",
+      "senses": [
+        {
+          "id": "night",
+          "definition": "Daniel receives a vision in the night. The same word fixes the time of Belshazzar’s death.",
+          "evidence": [
+            {
+              "ref": "Dan.2.19",
+              "role": "defining"
+            },
+            {
+              "ref": "Dan.5.30"
+            },
+            {
+              "ref": "Dan.7.2"
+            },
+            {
+              "ref": "Dan.7.7"
+            },
+            {
+              "ref": "Dan.7.13"
+            }
+          ],
+          "gloss": "night"
+        }
+      ]
+    },
+    {
+      "bdb": [],
+      "cognate_ids": [
+        "ar-layl"
+      ],
+      "gender": "m",
+      "gloss": "night",
+      "lang": "syc",
+      "lemma": "לִליָא",
+      "pos": "noun",
+      "root": "לילי",
+      "senses": [
+        {
+          "id": "night-2",
+          "definition": "Shepherds keep watch over their flock by night. John marks the departure of Judas from the meal by saying it was night.",
+          "evidence": [
+            {
+              "ref": "Luk.2.8",
+              "role": "defining"
+            },
+            {
+              "ref": "Jhn.13.30"
+            },
+            {
+              "ref": "Jhn.11.10"
+            }
+          ],
+          "gloss": "night"
+        }
+      ]
+    }
+  ]
+}

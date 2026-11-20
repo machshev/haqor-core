@@ -1,0 +1,146 @@
+{
+  "id": "2yh",
+  "root": "איה",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [],
+  "gloss": "where?",
+  "summary": "The question seeks the location of a person or thing. A taunt can take the same form when someone expects God to act yet sees no sign of his help.",
+  "words": [
+    {
+      "lemma": "אַיֵּה",
+      "pos": "adverb",
+      "gloss": "where?",
+      "bdb": [
+        "a.cu.ab"
+      ],
+      "senses": [
+        {
+          "id": "asking-where-someone-is",
+          "gloss": "asking where someone is",
+          "definition": "Reuel asks his daughters where the man who helped them has gone. Absalom’s servants ask a woman where Ahimaaz and Jonathan are.",
+          "evidence": [
+            {
+              "ref": "Exo.2.20",
+              "role": "defining"
+            },
+            {
+              "ref": "2Sa.17.20",
+              "role": "defining"
+            }
+          ]
+        },
+        {
+          "id": "challenging-someone-to-show",
+          "gloss": "challenging someone to show where help is",
+          "definition": "The psalmist’s enemies ask where his God is while he weeps. The Assyrian speaker challenges Jerusalem to point to gods that delivered other cities.",
+          "evidence": [
+            {
+              "ref": "Psa.42.4",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.42.11",
+              "role": "defining"
+            },
+            {
+              "ref": "2Ki.18.34",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-where",
+        "akk-where"
+      ]
+    },
+    {
+      "lemma": "אַיְכָּא",
+      "pos": "adverb",
+      "gloss": "where, where one is",
+      "lang": "syc",
+      "senses": [
+        {
+          "id": "where-where-one-is",
+          "gloss": "where, where one is",
+          "definition": "Jesus asks where he may eat the Passover. The word also introduces a place without asking a question.",
+          "evidence": [
+            {
+              "ref": "Mrk.14.14",
+              "role": "defining"
+            },
+            {
+              "ref": "Mat.6.21",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-where"
+      ],
+      "root": "איכא"
+    },
+    {
+      "lemma": "אַיְכּוּ",
+      "pos": "adverb",
+      "gloss": "where is he?",
+      "lang": "syc",
+      "senses": [
+        {
+          "id": "where-is-he",
+          "gloss": "where is he?",
+          "definition": "The visitors ask where the newborn king is. The opponents in Jerusalem ask where Jesus is.",
+          "evidence": [
+            {
+              "ref": "Mat.2.2",
+              "role": "defining"
+            },
+            {
+              "ref": "Jhn.7.11",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-where"
+      ],
+      "root": "איכא"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-where",
+      "lang": "arc",
+      "form": "אֵיכָא",
+      "translit": "ʾēḵā",
+      "gloss": "where?",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "אֵיכָא A01248, Targum Genesis 37:16"
+        }
+      ]
+    },
+    {
+      "id": "akk-where",
+      "lang": "akk",
+      "form": "ayyānu",
+      "translit": "ayyānu",
+      "gloss": "where?",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep/x000083470"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "SEDRA 83 and 3457 are listed under איכא. Their additional consonants distinguish the Syriac formations. The initial interrogative element also occurs in Aramaic אֵיכָא. The bird אַיָּה has its own key."
+}

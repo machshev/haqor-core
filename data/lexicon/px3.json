@@ -1,0 +1,886 @@
+{
+  "id": "px3",
+  "root": "פשע",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "tags": [
+    "sin",
+    "transgression",
+    "rebellion",
+    "covenant",
+    "forgiveness",
+    "atonement",
+    "repentance",
+    "judgment"
+  ],
+  "gloss": "rebel, break away; transgress; transgression, offence",
+  "summary": "To break away from the one to whom allegiance is owed. The verb is used of a subject people that throws off its overlord: Moab against the king of Israel, Edom “from under the hand of Judah” (2Ki 8:20), Israel against the house of David; and of sons against the father who raised them: “sons I raised and brought up, and they rebelled against me” (Isa 1:2), so of Israel against Yahweh and his covenant (Hos 8:1). The noun פֶּשַׁע is the breach itself: a wrong done to a brother, a master or a neighbour (Gen 31:36; 50:17; 1Sa 24:12), and above all transgression against Yahweh, set beside עָוֹן and חַטָּאת, which he alone bears, passes over and blots out (Exo 34:7; Mic 7:18; Isa 43:25). The servant of Isaiah is pierced for transgressions and numbered with the transgressors (Isa 53:5, 12), which Jesus says is fulfilled in him (Luk 22:37). Ugaritic pšʿ “transgression” and the Jewish Aramaic verb “rebel, be faithless” share the meaning.",
+  "words": [
+    {
+      "lemma": "פֶּשַׁע",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "transgression, rebellion; offence, wrong",
+      "bdb": [
+        "q.dy.ab"
+      ],
+      "cognate_ids": [
+        "uga-psha",
+        "arc-psha"
+      ],
+      "summary": "About ninety times, often in the plural and with a suffix (“my, our transgressions”). Between men it is a wrong that breaks faith with another; toward Yahweh it is transgression, constantly beside עָוֹן “iniquity” and חַטָּאת “sin”, most of all in Psalms, Isaiah, Ezekiel, Amos and Proverbs.",
+      "senses": [
+        {
+          "id": "offence",
+          "gloss": "offence, wrong done to another",
+          "definition": "A wrong that breaks faith with someone to whom one is bound: a kinsman, a master, a neighbour; the matter in dispute when one party is charged with it.",
+          "evidence": [
+            {
+              "ref": "Gen.31.36",
+              "role": "defining",
+              "note": "Jacob to Laban: “What is my פֶּשַׁע? What is my sin, that you have hotly pursued me?”"
+            },
+            {
+              "ref": "Gen.50.17",
+              "role": "defining",
+              "note": "“Forgive the פֶּשַׁע of your brothers and their sin, for they did evil to you”: the brothers' wrong against Joseph."
+            },
+            {
+              "ref": "1Sa.24.12",
+              "role": "defining",
+              "note": "David to Saul: “There is no evil or פֶשַׁע in my hand, and I have not sinned against you, though you hunt my life.”"
+            },
+            {
+              "ref": "1Sa.25.28",
+              "note": "Abigail to David: “Forgive the פֶשַׁע of your handmaid.”"
+            },
+            {
+              "ref": "Exo.22.8",
+              "role": "defining",
+              "note": "“For every matter of פֶּשַׁע, for ox, for ass, for sheep, for garment, for anything lost”: a charge of wrongful dealing with a neighbour's goods, brought before the judges."
+            },
+            {
+              "ref": "Pro.10.12",
+              "note": "“Hatred stirs up strifes, but love covers all transgressions.”"
+            },
+            {
+              "ref": "Pro.17.9",
+              "note": "“He who covers a transgression seeks love.”"
+            },
+            {
+              "ref": "Pro.19.11",
+              "note": "A man's glory is “to pass over a transgression”."
+            },
+            {
+              "ref": "Pro.28.24",
+              "note": "He who robs his father and mother and says “It is no transgression.”"
+            },
+            {
+              "ref": "Amo.1.3",
+              "note": "“For three transgressions of Damascus … because they threshed Gilead with threshing sledges of iron”: the nations' crimes against other peoples, in Amos's refrain (Amo 1:3 to 2:6)."
+            }
+          ],
+          "kin": [
+            "wronged"
+          ]
+        },
+        {
+          "id": "transgression",
+          "gloss": "transgression, rebellion against Yahweh",
+          "definition": "A breach of faith with Yahweh: rebellion against his word and covenant, confessed with iniquity and sin, which he bears, passes over, blots out and removes, and for which he punishes when it is not turned from.",
+          "evidence": [
+            {
+              "ref": "Lev.16.21",
+              "role": "defining",
+              "note": "Aaron confesses over the living goat “all the iniquities of the sons of Israel and all their פִּשְׁעֵיהֶם, for all their sins”."
+            },
+            {
+              "ref": "Lev.16.16",
+              "note": "Atonement for the holy place “from their פִּשְׁעֵיהֶם, for all their sins”."
+            },
+            {
+              "ref": "Exo.34.7",
+              "role": "defining",
+              "note": "Yahweh “bearing iniquity and transgression and sin”."
+            },
+            {
+              "ref": "Exo.23.21",
+              "note": "Of the angel in whom is Yahweh's name: “Do not rebel against him, for he will not bear your transgression.”"
+            },
+            {
+              "ref": "Amo.2.4",
+              "role": "defining",
+              "note": "“For three transgressions of Judah … because they rejected the law of Yahweh and have not kept his statutes.”"
+            },
+            {
+              "ref": "Job.13.23",
+              "note": "“How many are my iniquities and sins? Make me know my transgression and my sin.”"
+            },
+            {
+              "ref": "Psa.32.1",
+              "role": "defining",
+              "note": "“Blessed is he whose transgression is borne, whose sin is covered”: quoted at Rom 4:7."
+            },
+            {
+              "ref": "Psa.32.5",
+              "note": "“I said, I will confess my transgressions to Yahweh, and you bore the iniquity of my sin.”"
+            },
+            {
+              "ref": "Psa.51.3",
+              "note": "“According to the abundance of your compassions, blot out my transgressions.”"
+            },
+            {
+              "ref": "Psa.51.5",
+              "note": "“For I know my transgressions, and my sin is before me continually.”"
+            },
+            {
+              "ref": "Psa.19.14",
+              "note": "“Then I shall be blameless, and innocent of great transgression.”"
+            },
+            {
+              "ref": "Psa.103.12",
+              "note": "“As far as the east is from the west, so far has he removed our transgressions from us.”"
+            },
+            {
+              "ref": "Isa.43.25",
+              "role": "defining",
+              "note": "“I, I am he who blots out your transgressions for my own sake, and I will not remember your sins.”"
+            },
+            {
+              "ref": "Isa.44.22",
+              "note": "“I have blotted out like a cloud your transgressions … return to me, for I have redeemed you.”"
+            },
+            {
+              "ref": "Isa.53.5",
+              "role": "defining",
+              "note": "“He was pierced for our transgressions, crushed for our iniquities.”"
+            },
+            {
+              "ref": "Isa.53.8",
+              "note": "“He was cut off from the land of the living for the transgression of my people.”"
+            },
+            {
+              "ref": "Isa.59.20",
+              "note": "“A redeemer will come to Zion, and to those who turn from transgression in Jacob”: quoted at Rom 11:26."
+            },
+            {
+              "ref": "Mic.1.5",
+              "note": "“What is the transgression of Jacob? Is it not Samaria?”: the city of its idolatry is its transgression."
+            },
+            {
+              "ref": "Mic.7.18",
+              "role": "defining",
+              "note": "“Who is a God like you, bearing iniquity and passing over transgression?”"
+            },
+            {
+              "ref": "Ezk.18.30",
+              "to": "Ezk.18.31",
+              "role": "defining",
+              "note": "“Turn, and turn away from all your transgressions … cast away from you all your transgressions which you have transgressed, and make yourselves a new heart … why will you die?”"
+            },
+            {
+              "ref": "Ezk.37.23",
+              "note": "Restored Israel will no more defile itself “with all their transgressions”."
+            },
+            {
+              "ref": "Pro.28.13",
+              "note": "“He who covers his transgressions will not prosper, but he who confesses and forsakes them will find compassion.”"
+            },
+            {
+              "ref": "Job.31.33",
+              "note": "“If I covered my transgressions as Adam, hiding my iniquity in my bosom.”"
+            },
+            {
+              "ref": "Dan.9.24",
+              "note": "Seventy weeks are decreed “to finish the transgression, and to seal up sins, and to atone for iniquity”."
+            },
+            {
+              "ref": "Rom.4.7",
+              "note": "“Blessed are they whose lawlessnesses (ἀνομίαι) are forgiven”, Psa 32:1, as the blessedness of the man to whom God reckons righteousness apart from works."
+            },
+            {
+              "ref": "Rom.11.26",
+              "note": "“The Deliverer will come out of Zion, and will turn away ungodliness (ἀσεβείας) from Jacob”, Isa 59:20."
+            }
+          ],
+          "kin": [
+            "transgress-against-yahweh"
+          ],
+          "senses": [
+            {
+              "id": "guilt-of-transgression",
+              "gloss": "transgression as a load, its guilt",
+              "definition": "Transgression as a weight on the one who did it: a load, a yoke, what one would give one's firstborn to be rid of.",
+              "evidence": [
+                {
+                  "ref": "Ezk.33.10",
+                  "role": "defining",
+                  "note": "“Our transgressions and our sins are upon us, and in them we are rotting away; how then shall we live?”"
+                },
+                {
+                  "ref": "Isa.24.20",
+                  "note": "The earth staggers like a drunkard, “and its transgression is heavy upon it, and it falls and will not rise again”."
+                },
+                {
+                  "ref": "Lam.1.14",
+                  "note": "“The yoke of my transgressions is bound by his hand.”"
+                },
+                {
+                  "ref": "Mic.6.7",
+                  "note": "“Shall I give my firstborn for my transgression, the fruit of my body for the sin of my soul?”"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἀσέβεια",
+          "gloss": "ungodliness",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Isa.59.20 פֶשַׁע → ἀσεβείας; Amo.1.3 to Amo.2.6; Mic.7.18; ἀσέβεια renders פֶּשַׁע ×16"
+            },
+            {
+              "ref": "Rom.11.26",
+              "role": "defining",
+              "note": "Isa 59:20 quoted: “and will turn away ungodliness (ἀσεβείας) from Jacob”."
+            }
+          ]
+        },
+        {
+          "lemma": "ἀνομία",
+          "gloss": "lawlessness",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Isa.53.8 פֶּשַׁע → ἀνομιῶν; Isa.59.12; Isa.50.1; ἀνομία renders פֶּשַׁע ×5"
+            },
+            {
+              "ref": "Rom.4.7",
+              "role": "defining",
+              "note": "Psa 32:1 quoted: “whose lawlessnesses (αἱ ἀνομίαι) are forgiven”."
+            }
+          ]
+        },
+        {
+          "lemma": "ἀδικία",
+          "gloss": "unrighteousness, wrong",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.50.17; Exo.34.7; Num.14.18; Job.34.6; ἀδικία renders פֶּשַׁע ×4"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "חַטָּאת",
+            "note": "“Sin”: the commonest companion.",
+            "evidence": [
+              {
+                "ref": "Gen.31.36",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.32.1"
+              },
+              {
+                "ref": "Psa.51.5"
+              },
+              {
+                "ref": "Isa.43.25"
+              },
+              {
+                "ref": "Ezk.33.10"
+              }
+            ]
+          },
+          {
+            "lemma": "עָוֹן",
+            "note": "“Iniquity”.",
+            "evidence": [
+              {
+                "ref": "Exo.34.7",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.16.21"
+              },
+              {
+                "ref": "Isa.53.5"
+              },
+              {
+                "ref": "Mic.7.18"
+              },
+              {
+                "ref": "Job.31.33"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "נֹשֵׂא עָוֹן וָפֶשַׁע",
+            "gloss": "bearing iniquity and transgression: Yahweh's forgiveness",
+            "evidence": [
+              {
+                "ref": "Exo.34.7",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.14.18"
+              },
+              {
+                "ref": "Psa.32.1"
+              }
+            ]
+          },
+          {
+            "phrase": "עָבַר עַל־פֶּשַׁע",
+            "gloss": "pass over a transgression, overlook it",
+            "evidence": [
+              {
+                "ref": "Mic.7.18",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.19.11"
+              }
+            ]
+          },
+          {
+            "phrase": "מָחָה פְשָׁעִים",
+            "gloss": "blot out transgressions",
+            "evidence": [
+              {
+                "ref": "Isa.43.25",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.44.22"
+              },
+              {
+                "ref": "Psa.51.3"
+              }
+            ]
+          },
+          {
+            "phrase": "כִּסָּה פֶשַׁע",
+            "gloss": "cover a transgression: another's, in love; one's own, in concealment",
+            "evidence": [
+              {
+                "ref": "Pro.10.12",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.17.9"
+              },
+              {
+                "ref": "Pro.28.13",
+                "role": "defining"
+              },
+              {
+                "ref": "Job.31.33"
+              }
+            ]
+          },
+          {
+            "phrase": "עַל־שְׁלֹשָׁה פִּשְׁעֵי … וְעַל־אַרְבָּעָה",
+            "gloss": "for three transgressions of … and for four: Amos's refrain of judgment",
+            "evidence": [
+              {
+                "ref": "Amo.1.3",
+                "role": "defining"
+              },
+              {
+                "ref": "Amo.2.4"
+              },
+              {
+                "ref": "Amo.2.6"
+              }
+            ]
+          },
+          {
+            "phrase": "הַפֶּשַׁע שֹׁמֵם",
+            "gloss": "the transgression that makes desolate",
+            "evidence": [
+              {
+                "ref": "Dan.8.13",
+                "role": "defining",
+                "note": "Beside the taking away of the continual offering and the trampling of the sanctuary and the host."
+              },
+              {
+                "ref": "Dan.8.12",
+                "note": "“A host was given over against the continual offering through transgression.”"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "פָּשַׁע",
+      "pos": "verb",
+      "gloss": "rebel, revolt, break away; transgress; (niphal) be wronged",
+      "bdb": [
+        "q.dy.aa"
+      ],
+      "cognate_ids": [
+        "uga-psha",
+        "arc-psha"
+      ],
+      "summary": "About forty times, almost all qal. Its plain use in Kings is a vassal throwing off its overlord; the prophets use the same word of Israel against Yahweh, the father and king it was bound to. The participle פֹּשְׁעִים is “transgressors”. The niphal occurs once, of a wronged brother (Pro 18:19).",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "rebel, revolt, break away; transgress against",
+          "senses": [
+            {
+              "id": "revolt",
+              "gloss": "revolt, break away from an overlord",
+              "definition": "Of a subject people or king: to throw off the rule of the one it served, and set up its own king.",
+              "evidence": [
+                {
+                  "ref": "2Ki.8.20",
+                  "role": "defining",
+                  "note": "“In his days Edom revolted from under the hand of Judah, and made a king over themselves.”"
+                },
+                {
+                  "ref": "2Ki.8.22",
+                  "note": "“So Edom revolted from under the hand of Judah to this day; then Libnah revolted at that time.”"
+                },
+                {
+                  "ref": "2Ki.1.1",
+                  "role": "defining",
+                  "note": "“Moab rebelled against Israel after the death of Ahab.”"
+                },
+                {
+                  "ref": "2Ki.3.5",
+                  "note": "The king of Moab, who had paid tribute of lambs and rams, rebelled against the king of Israel."
+                },
+                {
+                  "ref": "2Ki.3.7"
+                },
+                {
+                  "ref": "1Ki.12.19",
+                  "role": "defining",
+                  "note": "“So Israel rebelled against the house of David to this day.”"
+                },
+                {
+                  "ref": "2Ch.10.19"
+                },
+                {
+                  "ref": "2Ch.21.8",
+                  "to": "2Ch.21.10",
+                  "note": "Edom and Libnah revolt from Judah, “because he had forsaken Yahweh the God of his fathers”."
+                }
+              ]
+            },
+            {
+              "id": "transgress-against-yahweh",
+              "gloss": "rebel against, transgress against Yahweh",
+              "definition": "To break faith with Yahweh as sons with the father who raised them and as subjects with their king: to transgress his covenant and law, deny him and turn back from following him.",
+              "evidence": [
+                {
+                  "ref": "Isa.1.2",
+                  "role": "defining",
+                  "note": "“Sons I have raised and brought up, and they have rebelled against me (פָּשְׁעוּ בִי).”"
+                },
+                {
+                  "ref": "Hos.8.1",
+                  "role": "defining",
+                  "note": "“Because they have transgressed my covenant, and rebelled against my law.”"
+                },
+                {
+                  "ref": "Isa.59.13",
+                  "role": "defining",
+                  "note": "“Transgressing and denying Yahweh, and turning away from after our God.”"
+                },
+                {
+                  "ref": "Ezk.2.3",
+                  "note": "“Rebellious nations that have rebelled (מָרְדוּ) against me; they and their fathers have transgressed against me to this very day.”"
+                },
+                {
+                  "ref": "Lam.3.42",
+                  "note": "“We have transgressed and rebelled (וּמָרִינוּ); you have not forgiven.”"
+                },
+                {
+                  "ref": "Jer.2.29",
+                  "note": "“Why do you contend with me? You have all transgressed against me.”"
+                },
+                {
+                  "ref": "Jer.3.13",
+                  "note": "“Only know your iniquity, that you have transgressed against Yahweh your God.”"
+                },
+                {
+                  "ref": "Isa.43.27",
+                  "note": "“Your first father sinned, and your interpreters transgressed against me.”"
+                },
+                {
+                  "ref": "1Ki.8.50",
+                  "note": "“Forgive your people … all their transgressions which they have transgressed against you.”"
+                },
+                {
+                  "ref": "Jer.33.8"
+                },
+                {
+                  "ref": "Ezk.18.31"
+                },
+                {
+                  "ref": "Hos.7.13",
+                  "note": "“Destruction to them, for they have transgressed against me.”"
+                },
+                {
+                  "ref": "Amo.4.4",
+                  "note": "“Come to Bethel and transgress; at Gilgal multiply transgression”: the worship at the calf shrines is itself the transgression."
+                },
+                {
+                  "ref": "Zep.3.11"
+                },
+                {
+                  "ref": "Ezr.10.13",
+                  "note": "“We have greatly transgressed in this matter”: the foreign wives."
+                },
+                {
+                  "ref": "Pro.28.21",
+                  "note": "“For a piece of bread a man will transgress.”"
+                }
+              ],
+              "kin": [
+                "transgression"
+              ],
+              "senses": [
+                {
+                  "id": "transgressors",
+                  "gloss": "transgressors, rebels (participle)",
+                  "definition": "The participle as a noun: those who have rebelled against Yahweh, set against the righteous and destined to be destroyed unless they turn.",
+                  "evidence": [
+                    {
+                      "ref": "Hos.14.10",
+                      "role": "defining",
+                      "note": "“The ways of Yahweh are right, and the righteous walk in them, but transgressors stumble in them.”"
+                    },
+                    {
+                      "ref": "Psa.37.38",
+                      "role": "defining",
+                      "note": "“Transgressors are destroyed together; the future of the wicked is cut off.”"
+                    },
+                    {
+                      "ref": "Isa.1.28",
+                      "note": "“The breaking of transgressors and sinners together, and those who forsake Yahweh will be consumed.”"
+                    },
+                    {
+                      "ref": "Psa.51.15",
+                      "note": "“I will teach transgressors your ways, and sinners will return to you.”"
+                    },
+                    {
+                      "ref": "Isa.46.8",
+                      "note": "“Bring it back to heart, you transgressors.”"
+                    },
+                    {
+                      "ref": "Isa.48.8",
+                      "note": "“You were called a transgressor from the womb.”"
+                    },
+                    {
+                      "ref": "Ezk.20.38",
+                      "note": "“I will purge out from you the rebels and those who transgress against me … they will not enter the land of Israel.”"
+                    },
+                    {
+                      "ref": "Isa.53.12",
+                      "role": "defining",
+                      "note": "The servant “was numbered with transgressors, and he bore the sin of many and interceded for the transgressors”."
+                    },
+                    {
+                      "ref": "Luk.22.37",
+                      "note": "Jesus: “this which is written must be fulfilled in me, ‘And he was reckoned with the lawless (ἀνόμων)’”, Isa 53:12."
+                    },
+                    {
+                      "ref": "Mrk.15.28",
+                      "note": "Crucified between two robbers: “he was reckoned with the lawless”."
+                    },
+                    {
+                      "ref": "Isa.66.24",
+                      "note": "“The corpses of the men who have rebelled against me”."
+                    },
+                    {
+                      "ref": "Dan.8.23",
+                      "note": "“When the transgressors have come to the full, a king fierce of face will arise.”"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be wronged, offended",
+          "senses": [
+            {
+              "id": "wronged",
+              "gloss": "be wronged, offended",
+              "definition": "Of a brother: to be the one against whom the breach of faith was done, and so to be harder to win back than a strong city.",
+              "evidence": [
+                {
+                  "ref": "Pro.18.19",
+                  "role": "defining",
+                  "note": "“A brother wronged (נִפְשָׁע) is more than a strong city, and quarrels are like the bar of a citadel.” The only niphal."
+                }
+              ],
+              "kin": [
+                "offence"
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἄνομος",
+          "gloss": "lawless",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Isa.53.12 פֹּשְׁעִים → ἀνόμοις; Isa.1.28; Isa.48.8; Psa.51.15; ἄνομος renders פָּשַׁע ×4"
+            },
+            {
+              "ref": "Luk.22.37",
+              "role": "defining",
+              "note": "Isa 53:12 quoted: “and he was reckoned with the lawless (μετὰ ἀνόμων)”."
+            },
+            {
+              "ref": "Mrk.15.28",
+              "note": "The same quotation, at the crucifixion."
+            }
+          ]
+        },
+        {
+          "lemma": "ἀθετέω",
+          "gloss": "set aside, break faith with",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "1Ki.12.19; 2Ki.1.1; 2Ki.3.5; 2Ki.8.20; 2Ki.8.22; 2Ch.10.19 → ἠθέτησεν; Isa.1.2 → ἠθέτησαν: the political revolt and the sons' rebellion"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "מָרַד",
+            "note": "“Rebel”.",
+            "evidence": [
+              {
+                "ref": "Ezk.2.3",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezk.20.38"
+              }
+            ]
+          },
+          {
+            "lemma": "מָרָה",
+            "note": "“Be rebellious”.",
+            "evidence": [
+              {
+                "ref": "Lam.3.42",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "עָבַר בְּרִית",
+            "note": "“Transgress the covenant”.",
+            "evidence": [
+              {
+                "ref": "Hos.8.1",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "כִּחֵשׁ",
+            "note": "“Deny, deal falsely with” Yahweh.",
+            "evidence": [
+              {
+                "ref": "Isa.59.13",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "צַדִּיקִים",
+            "note": "“The righteous”, who walk in Yahweh's ways where transgressors stumble.",
+            "evidence": [
+              {
+                "ref": "Hos.14.10",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "cognates": [
+    {
+      "id": "uga-psha",
+      "lang": "uga",
+      "form": "𐎔𐎌𐎓",
+      "translit": "pšʿ",
+      "gloss": "transgression, rebellion",
+      "relation": "cognate",
+      "note": "The same three consonants with the Hebrew noun's meaning. Ugaritic keeps š apart from ṯ and ʿ apart from ġ, so it shows š and ʿ behind the Hebrew letters.",
+      "sounds": {
+        "ש": "š",
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "dulat-2015",
+          "locator": "s.v. pšʿ"
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Ugaritic 𐎔𐎌𐎓",
+          "note": "“rebellion”; compares Hebrew פֶּשַׁע."
+        }
+      ]
+    },
+    {
+      "id": "arc-psha",
+      "lang": "arc",
+      "form": "פְּשַׁע",
+      "translit": "pəšaʿ",
+      "gloss": "rebel, refuse; be faithless to, maltreat",
+      "relation": "cognate",
+      "note": "Jewish Babylonian Aramaic of the Talmud: a child who rebels and will not study; one who was faithless to the children in his charge. The breach of a bond of duty, as in the Hebrew. Aramaic keeps ṯ apart (as ת), so its ש shows š. Attested only in Talmudic Aramaic, where a borrowing from the schools' Hebrew cannot be ruled out.",
+      "sounds": {
+        "ש": "š"
+      },
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. פְּשַׁע (ch.), citing Taan. 24a (כל מאן דפ׳, a child who rebels, refuses to study); Gitt. 36a (הוה פָּשַׁע בינוקי, was faithless to, maltreated, the children)"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "atonement",
+      "statement": "On the Day of Atonement the high priest confessed over the living goat “all their transgressions” and sent it away bearing them into the wilderness (Lev 16:21–22). Isaiah's servant is the one on whom they are laid: “pierced for our transgressions”, “cut off from the land of the living for the transgression of my people”, he “poured out his soul (נַפְשׁוֹ) to death and was numbered with the transgressors, and he bore the sin of many and interceded for the transgressors” (Isa 53:5, 8, 12). Jesus says this “must be fulfilled in me” (Luk 22:37), and Peter writes that he “bore our sins in his own body on the tree … by whose stripes you were healed” (1Pe 2:24). The servant truly died: his life was poured out to death and he was cut off from the living. Yet the same chapter says “he will prolong days” (Isa 53:10), and Paul says he “was delivered for our offences and raised for our justification” (Rom 4:25). From the verses: transgression is not overlooked but borne, by the death of the one Yahweh provided, and his resurrection follows.",
+      "evidence": [
+        {
+          "ref": "Lev.16.21",
+          "to": "Lev.16.22"
+        },
+        {
+          "ref": "Isa.53.5"
+        },
+        {
+          "ref": "Isa.53.8"
+        },
+        {
+          "ref": "Isa.53.10"
+        },
+        {
+          "ref": "Isa.53.12"
+        },
+        {
+          "ref": "Luk.22.37"
+        },
+        {
+          "ref": "1Pe.2.24"
+        },
+        {
+          "ref": "Rom.4.25"
+        }
+      ]
+    },
+    {
+      "topic": "forgiveness",
+      "statement": "Yahweh declares himself the God who bears transgression (Exo 34:7), passes over it (Mic 7:18), blots it out for his own sake and does not remember it (Isa 43:25), and removes it as far as the east is from the west (Psa 103:12). The way to it is confession and forsaking: David hid nothing, “I will confess my transgressions to Yahweh, and you bore the iniquity of my sin” (Psa 32:5); “he who covers his transgressions will not prosper, but he who confesses and forsakes them will find compassion” (Pro 28:13). Paul quotes Psa 32:1 for the man to whom God reckons righteousness apart from works (Rom 4:6–7). The unrepentant are warned in plain terms: “turn and live … why will you die?” (Ezk 18:30–32). From the verses: forgiveness is God's act toward the one who confesses and turns, and the alternative set before Israel is death, not another life.",
+      "evidence": [
+        {
+          "ref": "Exo.34.7"
+        },
+        {
+          "ref": "Mic.7.18"
+        },
+        {
+          "ref": "Isa.43.25"
+        },
+        {
+          "ref": "Psa.103.12"
+        },
+        {
+          "ref": "Psa.32.1"
+        },
+        {
+          "ref": "Psa.32.5"
+        },
+        {
+          "ref": "Pro.28.13"
+        },
+        {
+          "ref": "Rom.4.6",
+          "to": "Rom.4.7"
+        },
+        {
+          "ref": "Ezk.18.30",
+          "to": "Ezk.18.32"
+        }
+      ]
+    },
+    {
+      "topic": "judgment",
+      "statement": "The end of those who rebel against Yahweh is told in the root's own words: “transgressors are destroyed together; the future of the wicked is cut off” (Psa 37:38); “the breaking of transgressors and sinners together, and those who forsake Yahweh will be consumed” (Isa 1:28). Isaiah's last verse shows them as “the corpses of the men who have rebelled against me, for their worm will not die and their fire will not be quenched” (Isa 66:24), and Jesus takes these words for the valley of Hinnom (γέεννα, Mrk 9:47–48). From the verses: what the worm and the fire consume are corpses, dead men; the punishment of the rebel is destruction, not conscious life.",
+      "evidence": [
+        {
+          "ref": "Psa.37.38"
+        },
+        {
+          "ref": "Isa.1.28"
+        },
+        {
+          "ref": "Isa.66.24"
+        },
+        {
+          "ref": "Mrk.9.47",
+          "to": "Mrk.9.48"
+        }
+      ]
+    },
+    {
+      "topic": "kingdom-of-god",
+      "statement": "Ezekiel foresees Israel brought out from the lands of its sojourning and judged: “I will purge out from you the rebels and those who transgress against me … they will not enter the land of Israel” (Ezk 20:38). Those brought back “will no more defile themselves … with all their transgressions”; Yahweh will save and cleanse them, and “my servant David will be king over them” (Ezk 37:21–24). Isaiah says “a redeemer will come to Zion, and to those who turn from transgression in Jacob” (Isa 59:20), and Paul quotes it of a time still future to him: when the fulness of the Gentiles has come in, “all Israel will be saved, as it is written, The Deliverer will come out of Zion and turn away ungodliness from Jacob” (Rom 11:25–27). From the verses: the land of Israel, a king of David's line, and the turning of Jacob from transgression belong together, at the coming of the Deliverer to Zion.",
+      "evidence": [
+        {
+          "ref": "Ezk.20.38"
+        },
+        {
+          "ref": "Ezk.37.21",
+          "to": "Ezk.37.24"
+        },
+        {
+          "ref": "Isa.59.20"
+        },
+        {
+          "ref": "Rom.11.25",
+          "to": "Rom.11.27"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-19. Root key פשע. BDB keys: q.dy.ab noun פֶּשַׁע, q.dy.aa verb פָּשַׁע. The two share tokens by spelling: the brief lists 2Ki 3:7, 8:20 and 2Ch 21:8 (qal פָּשַׁע) under the noun, and five pausal nouns (Pro 10:19; 19:11; 28:24; 29:16; 29:22) under the verb; these are cited under the right word, and the counts in lexicon-support will be off by those tokens. LEFT OUT, though the brief lists them from BDB's section: פֵּשֶׁת and פִּשְׁתָּה “flax, linen” (q.dy.ad, q.dy.ae; root פשת, Ugaritic pṯt, Punic pšt: another root with ṯ, not ש of this root); פֵּשֶׁר “interpretation” (q.dy.ac, Ecc 8:1; root פשר, Aramaic פְּשַׁר); פַּתְבַּג “king's portion” and פִּתְגָּם “decree” (q.dy.aj, q.dy.ak; Old Persian loans); פֹּת “socket; forehead?” (q.dy.ag; uncertain, linked by Wiktionary to Proto-Semitic piʔat- “side”). None has an entry yet; each belongs under its own root. NO PESHITTA: SEDRA has no root PWE, and the brief finds no Peshitta cognate; the Peshitta renders the NT quotations of Psa 32:1, Isa 53:12 and Isa 59:20 with עַולָא/עַוָלֵא. Klein's Syriac pšaʿ “was terrified” not checked (Payne Smith not consulted); it would not share the meaning. Arabic: no فسع (Lane, Wiktionary) with this sense; no Akkadian found. Ugaritic: cited by DULAT lemma and Wiktionary only; the text attestation (KTU 1.17 VI 43, bntb pšʿ “in the path of transgression”?) is unchecked. Jastrow's Aramaic פְּשַׁע is Talmudic, possibly a Hebraism. Niphal Pro 18:19 is a single, difficult verse; “wronged” follows the context of quarrels and the brother. OPEN QUESTIONS: (1) whether political revolt against an overlord (Kings) is the root's first sense, with transgression against Yahweh the covenant use of it, as Isa 1:2 (sons) and Hos 8:1 (covenant) suggest; the entry states the core as breach of allegiance without deciding the order. (2) Dan 8:12–13 הַפֶּשַׁע שֹׁמֵם “the transgression that makes desolate” is entered as a phrase only; its relation to the שִׁקּוּץ שֹׁמֵם of Dan 9:27; 11:31; 12:11 and Mat 24:15 (AD 70) is left for the reviewer, as is Dan 9:24 “to finish the transgression”."
+}

@@ -1,0 +1,117 @@
+{
+  "id": "6w7",
+  "root": "טוח",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "gloss": "cover, inward parts",
+  "summary": "The inner parts, hidden from outward sight.",
+  "words": [
+    {
+      "lemma": "טֻחוֹת",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "inward parts",
+      "bdb": [
+        "i.ak.ac"
+      ],
+      "senses": [
+        {
+          "id": "inward-parts",
+          "gloss": "inward parts",
+          "definition": "Yahweh teaches wisdom in the hidden inward parts of a person.",
+          "evidence": [
+            {
+              "ref": "Psa.51.8",
+              "role": "defining"
+            },
+            {
+              "ref": "Ezk.13.10"
+            },
+            {
+              "ref": "Ezk.22.28"
+            },
+            {
+              "ref": "Ezk.13.10"
+            },
+            {
+              "ref": "Ezk.22.28"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "טוּחַ",
+      "pos": "verb",
+      "gloss": "plaster, overlay",
+      "bdb": [
+        "i.ak.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "plaster, overlay",
+          "senses": [
+            {
+              "id": "plaster",
+              "gloss": "plaster",
+              "definition": "A wall or house is plastered or overlaid, and false prophets smear a wall with whitewash.",
+              "evidence": [
+                {
+                  "ref": "Lev.14.42",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Ezk.13.10"
+                },
+                {
+                  "ref": "1Ch.29.4"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be plastered",
+          "senses": [
+            {
+              "id": "be-plastered",
+              "gloss": "be plastered",
+              "definition": "A house is inspected after its plastering.",
+              "evidence": [
+                {
+                  "ref": "Lev.14.43",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "טִיחַ",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "coating, plaster",
+      "bdb": [
+        "i.ak.ab"
+      ],
+      "senses": [
+        {
+          "id": "coating",
+          "gloss": "coating",
+          "definition": "The coating smeared on a wall is exposed when the wall falls.",
+          "evidence": [
+            {
+              "ref": "Ezk.13.12",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "note": "Drafted for Psalm 51 coverage."
+}

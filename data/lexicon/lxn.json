@@ -1,0 +1,269 @@
+{
+  "id": "lxn",
+  "root": "לשנ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "speech",
+    "body",
+    "language"
+  ],
+  "gloss": "tongue, speech, language",
+  "summary": "The tongue is an organ of speech. Its name can therefore stand for what a person says or for the language of a whole people. Its shape also supplies a name for a projecting strip of water or metal.",
+  "words": [
+    {
+      "lemma": "לָשׁוֹן",
+      "bdb": [
+        "l.cd.ab"
+      ],
+      "pos": "noun",
+      "gloss": "tongue, speech, language",
+      "senses": [
+        {
+          "id": "tongue-in-the-mouth",
+          "gloss": "tongue in the mouth",
+          "definition": "The poet pictures honey and milk beneath the beloved’s tongue. In Job the tongue and palate are the organs by which words are formed.",
+          "evidence": [
+            {
+              "ref": "Sng.4.11",
+              "role": "defining"
+            },
+            {
+              "ref": "Job.33.2"
+            }
+          ],
+          "cognate_ids": [
+            "akk-lishanu",
+            "ar-lisan"
+          ]
+        },
+        {
+          "id": "speech-manner-of-speaking",
+          "gloss": "speech, manner of speaking",
+          "definition": "In Psalm 5 the speakers flatter with their tongues. Psalm 15 pictures a person who refuses to slander a neighbour, and Psalm 51 a tongue singing of righteousness.",
+          "evidence": [
+            {
+              "ref": "Psa.5.10",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.15.3"
+            },
+            {
+              "ref": "Psa.51.16"
+            }
+          ],
+          "cognate_ids": [
+            "akk-lishanu",
+            "ar-lisan"
+          ]
+        },
+        {
+          "id": "language-of-a-people",
+          "gloss": "language of a people",
+          "definition": "Genesis distinguishes peoples by their lands and languages. Jeremiah warns of a people whose language the hearers cannot understand.",
+          "evidence": [
+            {
+              "ref": "Gen.10.5",
+              "role": "defining"
+            },
+            {
+              "ref": "Jer.5.15"
+            }
+          ],
+          "cognate_ids": [
+            "akk-lishanu",
+            "ar-lisan"
+          ]
+        },
+        {
+          "id": "tongue-shaped-projection-or",
+          "gloss": "tongue-shaped projection or strip",
+          "definition": "Joshua locates a boundary at the tongue of the Salt Sea. Achan’s tongue of gold is weighed in shekels.",
+          "evidence": [
+            {
+              "ref": "Jos.15.2",
+              "role": "defining"
+            },
+            {
+              "ref": "Jos.7.21"
+            }
+          ],
+          "cognate_ids": [
+            "akk-lishanu"
+          ]
+        }
+      ],
+      "gender": "mf"
+    },
+    {
+      "lemma": "לָשַׁן",
+      "bdb": [
+        "l.cd.ac"
+      ],
+      "pos": "verb",
+      "gloss": "slander",
+      "stems": [
+        {
+          "stem": "hiphil",
+          "gloss": "slander, accuse",
+          "senses": [
+            {
+              "id": "slander-accuse",
+              "gloss": "slander, accuse",
+              "definition": "Proverbs warns against speaking maliciously about a servant to his master.",
+              "evidence": [
+                {
+                  "ref": "Pro.30.10",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "poel",
+          "gloss": "slander secretly",
+          "senses": [
+            {
+              "id": "slander-secretly",
+              "gloss": "slander secretly",
+              "definition": "The king says he will silence anyone who slanders a neighbour in secret.",
+              "evidence": [
+                {
+                  "ref": "Psa.101.5",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "לִשָּׁן",
+      "bdb": [
+        "xl.ag.ag"
+      ],
+      "pos": "noun",
+      "gloss": "language, people speaking a language",
+      "senses": [
+        {
+          "id": "language-people-speaking-a",
+          "gloss": "language, people speaking a language",
+          "definition": "In Daniel’s Aramaic the royal herald addresses peoples, nations and languages. Daniel sees those same groups serving the one like a son of man.",
+          "evidence": [
+            {
+              "ref": "Dan.3.4",
+              "role": "defining"
+            },
+            {
+              "ref": "Dan.7.14"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "lang": "arc",
+      "cognate_ids": [
+        "akk-lishanu",
+        "ar-lisan"
+      ]
+    },
+    {
+      "lemma": "לֶשָּׁנָא",
+      "bdb": [],
+      "pos": "noun",
+      "gloss": "tongue, language",
+      "senses": [
+        {
+          "id": "tongue",
+          "gloss": "tongue",
+          "definition": "Jesus touches the tongue of a man who has difficulty speaking. Zechariah’s tongue is freed and he speaks again.",
+          "evidence": [
+            {
+              "ref": "Mrk.7.33",
+              "to": "Mrk.7.35",
+              "role": "defining"
+            },
+            {
+              "ref": "Luk.1.64"
+            }
+          ],
+          "cognate_ids": [
+            "akk-lishanu",
+            "ar-lisan"
+          ]
+        },
+        {
+          "id": "language",
+          "gloss": "language",
+          "definition": "At Pentecost people hear the disciples speaking in the languages in which they grew up.",
+          "evidence": [
+            {
+              "ref": "Act.2.4",
+              "to": "Act.2.11",
+              "role": "defining"
+            }
+          ],
+          "cognate_ids": [
+            "akk-lishanu",
+            "ar-lisan"
+          ]
+        },
+        {
+          "id": "tongue-shaped-appearance",
+          "gloss": "tongue-shaped appearance",
+          "definition": "Those gathered see divided tongues like fire.",
+          "evidence": [
+            {
+              "ref": "Act.2.3",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "lang": "syc"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-lishanu",
+      "lang": "akk",
+      "form": "lišānu",
+      "translit": "lišānu",
+      "gloss": "tongue, language, blade",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep/x000012250, lišānu [tongue] N"
+        }
+      ],
+      "sounds": {
+        "ש": "š"
+      }
+    },
+    {
+      "id": "ar-lisan",
+      "lang": "ar",
+      "form": "لِسَانٌ",
+      "translit": "lisān",
+      "gloss": "tongue, language",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 3010, لسن, n43297"
+        }
+      ],
+      "sounds": {
+        "ש": "š"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "Psalm 101:5 preserves a written and a read form of the rare slander verb. Lasha in Genesis 10:19 ends with ayin and has no established relationship to tongue."
+}

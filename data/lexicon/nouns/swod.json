@@ -1,0 +1,79 @@
+{
+  "id": "swod",
+  "root": "סוד",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "speech",
+    "assembly"
+  ],
+  "gloss": "council, confidential counsel",
+  "summary": "A person belongs to a close circle and hears what it discusses. The noun covers both the company assembled and the counsel disclosed to trusted hearers.",
+  "words": [
+    {
+      "lemma": "סוֹד",
+      "bdb": [
+        "o.ao.ab"
+      ],
+      "pos": "noun",
+      "gloss": "council, counsel shared in confidence",
+      "senses": [
+        {
+          "id": "council-intimate-company",
+          "gloss": "council, intimate company",
+          "definition": "Jacob sets council alongside assembly. Jeremiah describes a prophet who has stood in Yahweh’s council and heard his word.",
+          "evidence": [
+            {
+              "ref": "Gen.49.6",
+              "role": "defining"
+            },
+            {
+              "ref": "Jer.23.18"
+            },
+            {
+              "ref": "Jer.23.22"
+            }
+          ]
+        },
+        {
+          "id": "confidential-counsel",
+          "gloss": "confidential counsel",
+          "definition": "Yahweh discloses his counsel to his prophets. Psalm 25 connects his confidence with making his covenant known to those who fear him.",
+          "evidence": [
+            {
+              "ref": "Amo.3.7",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.25.14"
+            },
+            {
+              "ref": "Pro.3.32"
+            },
+            {
+              "ref": "Pro.25.9"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "קָהָל",
+            "note": "Jacob sets the council and the assembly side by side.",
+            "evidence": [
+              {
+                "ref": "Gen.49.6"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "cognates": [],
+  "doctrine": [],
+  "note": "Psalm 25:14 can emphasize either intimate fellowship or the counsel communicated within it. The covenant made known in the second line supports the latter."
+}

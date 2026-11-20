@@ -1,0 +1,196 @@
+{
+  "id": "l7x",
+  "root": "לחש",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "gloss": "whisper, charm",
+  "summary": "לחש covers whispering and the quiet utterance of a charm or prayer. Psalm 58 speaks of charmers whose voice the deaf adder does not hear.",
+  "words": [
+    {
+      "lemma": "לַחַשׁ",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "charm, whisper",
+      "bdb": [
+        "l.bk.ab"
+      ],
+      "senses": [
+        {
+          "id": "charm",
+          "gloss": "charm",
+          "definition": "A charmer's quiet utterance is powerless against the deaf adder.",
+          "evidence": [
+            {
+              "ref": "Ecc.10.11",
+              "role": "defining"
+            },
+            {
+              "ref": "Jer.8.17"
+            }
+          ]
+        },
+        {
+          "id": "prayer",
+          "gloss": "prayer",
+          "definition": "In distress God's people pour out a quiet prayer to him.",
+          "evidence": [
+            {
+              "ref": "Isa.26.16",
+              "role": "defining"
+            }
+          ]
+        },
+        {
+          "id": "amulets",
+          "gloss": "amulets",
+          "definition": "Isaiah includes these objects with the perfume containers and ornaments the women wear. Their association with charms explains the use of the noun.",
+          "evidence": [
+            {
+              "ref": "Isa.3.20",
+              "role": "defining"
+            }
+          ]
+        },
+        {
+          "id": "an-amulet",
+          "gloss": "an amulet",
+          "definition": "The list of Jerusalem’s ornaments puts these objects beside armlets. The connection to the spoken charm probably lies in what the ornament was worn for.",
+          "evidence": [
+            {
+              "ref": "Isa.3.20",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-whisper"
+      ]
+    },
+    {
+      "lemma": "לָחַשׁ",
+      "pos": "verb",
+      "gloss": "whisper, charm",
+      "bdb": [
+        "l.bk.aa"
+      ],
+      "stems": [
+        {
+          "stem": "piel",
+          "gloss": "charm",
+          "senses": [
+            {
+              "id": "charm-2",
+              "gloss": "charm",
+              "definition": "The charmer charms with a quiet utterance, but the deaf adder does not listen.",
+              "evidence": [
+                {
+                  "ref": "Psa.58.6",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpael",
+          "gloss": "whisper together",
+          "senses": [
+            {
+              "id": "whisper",
+              "gloss": "whisper",
+              "definition": "Enemies whisper together against the one they hate.",
+              "evidence": [
+                {
+                  "ref": "Psa.41.8",
+                  "role": "defining"
+                },
+                {
+                  "ref": "2Sa.12.19",
+                  "note": "David sees his servants whispering together."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-whisper"
+      ]
+    },
+    {
+      "lemma": "לְחַשׁ",
+      "pos": "verb",
+      "gloss": "whisper",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "whisper",
+          "senses": [
+            {
+              "id": "whisper-2",
+              "gloss": "whisper",
+              "definition": "What was whispered in the ear behind closed doors will be proclaimed from the roofs.",
+              "evidence": [
+                {
+                  "ref": "Luk.12.3",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "cognate_ids": [
+        "arc-whisper"
+      ]
+    },
+    {
+      "lemma": "לְחֵשׁ",
+      "pos": "verb",
+      "gloss": "whisper",
+      "lang": "syc",
+      "stems": [
+        {
+          "stem": "pael",
+          "gloss": "speak quietly",
+          "senses": [
+            {
+              "id": "speak-quietly",
+              "gloss": "speak quietly",
+              "definition": "Words whispered in an inner room will be proclaimed openly.",
+              "evidence": [
+                {
+                  "ref": "Luk.12.3",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-whisper"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-whisper",
+      "lang": "arc",
+      "form": "לְחַשׁ",
+      "translit": "ləḥaš",
+      "gloss": "whisper, charm",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "לְחַשׁ L00373, Targum Pseudo-Jonathan Genesis 11:28"
+        }
+      ]
+    }
+  ],
+  "note": "SEDRA 1666 attests whispering in Luke 12:3. The traded resin לֹט is under lot-resin. Hallohesh is the participial personal name, with the article."
+}

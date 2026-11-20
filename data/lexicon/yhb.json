@@ -1,0 +1,101 @@
+{
+  "id": "yhb",
+  "root": "יהב",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "psalms",
+    "creation",
+    "worship"
+  ],
+  "gloss": "give, provide",
+  "summary": "The verb gives or presents something to another. Psalm 29 uses its imperative to call the mighty ones to give Yahweh glory.",
+  "words": [
+    {
+      "lemma": "יָהַב",
+      "bdb": [
+        "j.av.aa"
+      ],
+      "pos": "verb",
+      "gloss": "give",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "give",
+          "senses": [
+            {
+              "id": "give",
+              "gloss": "give",
+              "definition": "The imperative calls the sons of the mighty to give glory and strength to Yahweh.",
+              "evidence": [
+                {
+                  "ref": "Psa.29.1",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.29.2"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "יְהַב",
+      "bdb": [
+        "xj.ad.aa"
+      ],
+      "pos": "verb",
+      "gloss": "give",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "give",
+          "senses": [
+            {
+              "id": "give-2",
+              "gloss": "give",
+              "definition": "Aramaic usage expresses giving or placing a thing.",
+              "evidence": [
+                {
+                  "ref": "Dan.5.18",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Dan.6.24"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "arc"
+    },
+    {
+      "lemma": "יְהָב",
+      "bdb": [
+        "j.av.ab"
+      ],
+      "pos": "noun",
+      "gloss": "lot, gift",
+      "senses": [
+        {
+          "id": "lot-gift",
+          "gloss": "lot, gift",
+          "definition": "A given portion or lot is named from the act of giving.",
+          "evidence": [
+            {
+              "ref": "Psa.30.7",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [],
+  "doctrine": [],
+  "note": "Drafted for Psalms 21–30."
+}

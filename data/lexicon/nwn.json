@@ -1,0 +1,89 @@
+{
+  "id": "nwn",
+  "root": "נונ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "gloss": "continue",
+  "summary": "נונ describes continuing or enduring.",
+  "words": [
+    {
+      "lemma": "נוּן",
+      "pos": "verb",
+      "gloss": "continue",
+      "bdb": [
+        "n.cb.aa"
+      ],
+      "stems": [
+        {
+          "stem": "hiphil",
+          "gloss": "continue",
+          "senses": [
+            {
+              "id": "continue",
+              "gloss": "continue",
+              "definition": "Continue or endure through generations.",
+              "evidence": [
+                {
+                  "ref": "Psa.72.17",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be continued",
+          "senses": [
+            {
+              "id": "be-continued",
+              "gloss": "be continued",
+              "definition": "Endure through generations.",
+              "evidence": [
+                {
+                  "ref": "Psa.72.17",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "נִין",
+      "bdb": [
+        "n.cb.ac"
+      ],
+      "pos": "noun",
+      "gloss": "offspring, posterity",
+      "senses": [
+        {
+          "id": "offspring-posterity",
+          "gloss": "offspring, posterity",
+          "definition": "Abimelech asks Abraham to deal faithfully with him and his descendants. Job describes a man left without offspring or survivor. The pointed form in Psalm 74:8 can be read “their offspring”.",
+          "evidence": [
+            {
+              "ref": "Gen.21.23",
+              "role": "defining"
+            },
+            {
+              "ref": "Job.18.19",
+              "role": "example"
+            },
+            {
+              "ref": "Isa.14.22",
+              "role": "example"
+            },
+            {
+              "ref": "Psa.74.8",
+              "role": "example"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "note": "Psalm 72.17 has qere יִנּוֹן, parsed as Niphal, and ketiv ינין, parsed as Hiphil. Both are retained under the same root."
+}

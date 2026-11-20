@@ -1,0 +1,189 @@
+{
+  "id": "q93",
+  "root": "קצע",
+  "status": "draft",
+  "updated": "2026-11-20",
+  "tags": [],
+  "gloss": "scrape, shaping tool, cassia; corner, set in corners",
+  "summary": "A priest orders a house scraped, and a woodworker uses tools of a related name to shape an image. The spice name occurs among the perfumes of a king’s garments.\n\nThe noun marks the angle where sides meet in a structure, including a city wall. Ezekiel uses a related passive form of the four small courts at the corners of the outer court.",
+  "words": [
+    {
+      "lemma": "קָצַע",
+      "pos": "verb",
+      "bdb": [
+        "s.cr.aa",
+        "s.cs.ac"
+      ],
+      "gloss": "have scraped; set in corners",
+      "stems": [
+        {
+          "stem": "hiphil",
+          "gloss": "have scraped",
+          "senses": [
+            {
+              "id": "scrape",
+              "gloss": "have scraped",
+              "definition": "To have the surface layer removed from the inside of a house.",
+              "evidence": [
+                {
+                  "ref": "Lev.14.41",
+                  "role": "defining",
+                  "note": "After the affected stones are taken out, the priest orders the interior scraped all around. The loosened plaster is carried outside the city."
+                }
+              ],
+              "cognate_ids": [
+                "arc-trim"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hophal",
+          "gloss": "set in corners",
+          "senses": [
+            {
+              "id": "cornered",
+              "gloss": "set in corners",
+              "definition": "Situated at the corners of a larger enclosure.",
+              "evidence": [
+                {
+                  "ref": "Ezk.46.22",
+                  "role": "defining",
+                  "note": "The description gives the same dimensions for all four courts just located at the corners."
+                }
+              ],
+              "kin": [
+                "angle"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַקְצֻעָה",
+      "pos": "noun",
+      "gender": "f",
+      "bdb": [
+        "s.cr.ad"
+      ],
+      "gloss": "wood-shaping tool",
+      "senses": [
+        {
+          "id": "tool",
+          "gloss": "wood-shaping tool",
+          "definition": "A tool with which a craftsperson shapes wood to a marked outline.",
+          "evidence": [
+            {
+              "ref": "Isa.44.13",
+              "role": "defining",
+              "note": "The carpenter stretches a line, marks out the figure and works it with these tools until it resembles a person."
+            }
+          ],
+          "kin": [
+            "scrape"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קְצִיעָה",
+      "pos": "noun",
+      "gender": "f",
+      "bdb": [
+        "s.cr.ab"
+      ],
+      "gloss": "cassia",
+      "senses": [
+        {
+          "id": "cassia",
+          "gloss": "cassia",
+          "definition": "An aromatic bark used as a perfume.",
+          "evidence": [
+            {
+              "ref": "Psa.45.9",
+              "role": "defining",
+              "note": "Cassia is named with myrrh and aloes in the description of the king’s fragrant garments."
+            }
+          ],
+          "cognate_ids": [
+            "arc-bark"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מִקְצֹעַ",
+      "pos": "noun",
+      "gender": "m",
+      "bdb": [
+        "s.cs.ab"
+      ],
+      "gloss": "corner, angle",
+      "senses": [
+        {
+          "id": "angle",
+          "gloss": "corner, angle",
+          "definition": "A place where sides meet or a wall changes direction.",
+          "evidence": [
+            {
+              "ref": "Exo.26.24",
+              "role": "defining",
+              "note": "The two paired frames are joined at the two corners of the dwelling."
+            },
+            {
+              "ref": "Neh.3.20",
+              "role": "defining",
+              "note": "Baruch’s section of wall starts at the angle and runs to the entrance of Eliashib’s house."
+            },
+            {
+              "ref": "Ezk.46.21",
+              "role": "defining",
+              "note": "Ezekiel finds a smaller court in each of the four corners of the outer court."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-trim",
+      "lang": "arc",
+      "form": "קַצֵּעַ",
+      "translit": "qaṣṣēaʿ",
+      "gloss": "trim, cut",
+      "relation": "cognate",
+      "sounds": {
+        "צ": "ṣ",
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "S01829, Pael, Zevahim 94a on trimming a hide"
+        }
+      ]
+    },
+    {
+      "id": "arc-bark",
+      "lang": "arc",
+      "form": "קְצִיעֲתָא",
+      "translit": "qəṣīʿăṯā",
+      "gloss": "cassia",
+      "relation": "cognate",
+      "sounds": {
+        "צ": "ṣ",
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "S01818, Targum Exodus 30:24 and Targum Psalms 45:9"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The psalm establishes the scent. Aramaic supplies the identification as cassia. A derivation from scraping bark is possible, though the verse describes the scented garments alone. Isaiah leaves the precise shape of the carpenter’s tool open.\n\nThe four-court arrangement gives the passive form its probable meaning. Its only occurrence is the final word of Ezekiel 46:22. A historical connection between the architectural and scraping terms remains uncertain.\n\nMerged from `qatsa`, `qatsa-corner` on 2026-11-20: one root, one entry."
+}

@@ -94,7 +94,9 @@ behind it:
 
 ### Shape and storage
 
-- One JSON file per root in `data/lexicon/`, named by the entry's `id`, with its
+- One JSON file per root in `data/lexicon/`, named by the entry's `id` (the
+  root transliterated without loss; one-word entries under `nouns/`, named by
+  their lemma), with its
   schema described in `data/lexicon/README.md`. JSON follows the project's other
   curated data (`artifacts.json`, `apologetics.json`) and needs no new
   dependency.

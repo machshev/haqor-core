@@ -1,0 +1,148 @@
+{
+  "id": "xw3",
+  "root": "שוע",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "prayer",
+    "distress",
+    "hearing"
+  ],
+  "gloss": "cry for help",
+  "summary": "In Psalm 18 the verb and the feminine noun occur together. David cries out, and his cry reaches Yahweh’s ears. Psalm 5 uses a shorter noun for the appeal.",
+  "words": [
+    {
+      "lemma": "שָׁוַע",
+      "bdb": [
+        "v.bv.aa"
+      ],
+      "pos": "verb",
+      "gloss": "cry for help",
+      "stems": [
+        {
+          "stem": "piel",
+          "gloss": "cry out for help",
+          "senses": [
+            {
+              "id": "cry-out-for-help",
+              "gloss": "cry out for help",
+              "definition": "In distress David calls to Yahweh and cries for help. Jonah says that from the belly of the grave he cried out and his voice was heard.",
+              "evidence": [
+                {
+                  "ref": "Psa.18.7",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jon.2.3"
+                },
+                {
+                  "ref": "Isa.58.9"
+                }
+              ],
+              "kin": [
+                "appeal"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שֶׁוַע",
+      "bdb": [
+        "v.bv.ab"
+      ],
+      "pos": "noun",
+      "gloss": "cry for help",
+      "senses": [
+        {
+          "gloss": "an appeal for help",
+          "definition": "The speaker asks his king and God to hear the sound of his cry. The possessive ending makes it “my cry.”",
+          "evidence": [
+            {
+              "ref": "Psa.5.3",
+              "role": "defining"
+            }
+          ],
+          "id": "appeal"
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "שַׁוְעָה",
+      "bdb": [
+        "v.bv.ad"
+      ],
+      "pos": "noun",
+      "gloss": "cry for help",
+      "senses": [
+        {
+          "id": "cry-for-help",
+          "gloss": "cry for help",
+          "definition": "Israel’s cry rises to God because of slavery. In David’s song it is the cry of one who seeks deliverance from danger.",
+          "evidence": [
+            {
+              "ref": "Exo.2.23",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.18.7"
+            },
+            {
+              "ref": "Psa.39.13"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "שׁוֹעַ",
+      "bdb": [
+        "v.bv.ac"
+      ],
+      "pos": "noun",
+      "gloss": "cry of distress",
+      "senses": [
+        {
+          "id": "cry-of-distress",
+          "gloss": "cry of distress",
+          "definition": "Amid the tumult and confusion of the valley of vision, a cry reaches toward the mountains.",
+          "evidence": [
+            {
+              "ref": "Isa.22.5",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "שׁוֹעַ",
+      "bdb": [
+        "v.bv.af"
+      ],
+      "pos": "name",
+      "gloss": "Shoa",
+      "senses": [
+        {
+          "id": "shoa",
+          "gloss": "Shoa",
+          "definition": "Ezekiel names Shoa together with Pekod and Koa among the peoples coming against Jerusalem.",
+          "evidence": [
+            {
+              "ref": "Ezk.23.23",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [],
+  "doctrine": [],
+  "note": "The index assigns the noun in Psalm 5:3 to the verb key. The shorter noun is represented separately here under v.bv.ab. The title noble in Isaiah 32:5 and the disputed riches in Job 36:19 are already in yasha. Shoa’s name has no established connection to a cry. The Aramaic words for plastering and for a magnate do not substantiate the Hebrew cry."
+}

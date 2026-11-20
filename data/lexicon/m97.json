@@ -1,0 +1,121 @@
+{
+  "id": "m97",
+  "root": "מצח",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "tags": [
+    "body"
+  ],
+  "gloss": "forehead, greave",
+  "summary": "Aaron wears the inscribed gold plate on his forehead. A hard forehead can express both the people’s refusal to listen and the firmness Ezekiel needs to speak to them. The related-looking noun מִצְחָה names a piece of leg armour.",
+  "words": [
+    {
+      "lemma": "מֵצַח",
+      "pos": "noun",
+      "gender": "m",
+      "bdb": [
+        "m.dd.ab"
+      ],
+      "gloss": "forehead, brow",
+      "senses": [
+        {
+          "id": "brow",
+          "gloss": "forehead",
+          "definition": "The front of the head above the eyes, a visible place for an inscription, mark or blemish.",
+          "evidence": [
+            {
+              "ref": "Exo.28.38",
+              "role": "defining",
+              "note": "The gold plate fastened to Aaron’s turban rests on his forehead."
+            },
+            {
+              "ref": "Ezk.9.4",
+              "role": "defining",
+              "note": "The man in linen is told to mark the foreheads of those who grieve over Jerusalem’s abominations."
+            },
+            {
+              "ref": "2Ch.26.20",
+              "role": "defining",
+              "note": "The priests see the outbreak on Uzziah’s forehead as he stands in the sanctuary."
+            }
+          ],
+          "cognate_ids": [
+            "arc-brow"
+          ]
+        },
+        {
+          "id": "resolve",
+          "gloss": "forehead as an image of defiance or resolve",
+          "definition": "In descriptions of someone facing another, the brow can express open shamelessness, resistance to correction or the resolve to withstand opposition.",
+          "evidence": [
+            {
+              "ref": "Jer.3.3",
+              "role": "defining",
+              "note": "The image of a prostitute’s forehead is explained by the accusation that Judah refuses to feel shame."
+            },
+            {
+              "ref": "Isa.48.4",
+              "role": "defining",
+              "note": "A bronze forehead and an iron neck portray the people’s stubbornness."
+            },
+            {
+              "ref": "Ezk.3.7",
+              "role": "defining",
+              "note": "Israel’s hard forehead is paired with hardness of heart and refusal to hear."
+            },
+            {
+              "ref": "Ezk.3.9",
+              "role": "defining",
+              "note": "Yahweh makes Ezekiel’s forehead harder than flint and tells him to face the rebellious people without fear."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מִצְחָה",
+      "pos": "noun",
+      "gender": "f",
+      "bdb": [
+        "m.dd.ac"
+      ],
+      "gloss": "greave, leg armour",
+      "senses": [
+        {
+          "id": "greave",
+          "gloss": "greave",
+          "definition": "A protective covering worn on the lower legs.",
+          "evidence": [
+            {
+              "ref": "1Sa.17.6",
+              "role": "defining",
+              "note": "The inventory of Goliath’s armour locates the bronze piece on his legs."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-brow",
+      "lang": "arc",
+      "form": "מִצְחָא",
+      "translit": "miṣḥā",
+      "gloss": "forehead",
+      "relation": "possible",
+      "sounds": {
+        "צ": "ṣ",
+        "ח": "ḥ"
+      },
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "M02303, Targum Pseudo-Jonathan Genesis 4:8, with M02302"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "Jewish Aramaic has a matching word for the forehead, but the attestation leaves inheritance and borrowing open. The explanation of the greave as covering the front of the leg suits its position in 1 Samuel 17:6. The verse gives no account of how the piece got its name."
+}

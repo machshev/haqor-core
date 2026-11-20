@@ -1,0 +1,210 @@
+{
+  "id": "qr7",
+  "root": "קרח",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "gloss": "make bald; bald, ice",
+  "summary": "קרח covers making the head bald, baldness and bald people, and the separate noun ice or frost. Personal names formed from the baldness sense are kept in dedicated name entries.",
+  "words": [
+    {
+      "lemma": "קָרְחָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "baldness",
+      "bdb": [
+        "s.dd.ac"
+      ],
+      "senses": [
+        {
+          "id": "baldness",
+          "gloss": "baldness",
+          "definition": "A bald patch or shaved baldness, especially in mourning for the dead.",
+          "evidence": [
+            {
+              "ref": "Deu.14.1",
+              "role": "defining"
+            },
+            {
+              "ref": "Lev.21.5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קָרְחִי",
+      "pos": "adjective",
+      "gloss": "Korahite",
+      "bdb": [
+        "s.dd.ag"
+      ],
+      "senses": [
+        {
+          "id": "korahite",
+          "gloss": "Korahite",
+          "definition": "Belonging to the clan or descendants of Korah.",
+          "evidence": [
+            {
+              "ref": "Exo.6.24",
+              "role": "defining"
+            },
+            {
+              "ref": "1Ch.9.19"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קֶרַח",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "ice, frost",
+      "bdb": [
+        "s.de.ab"
+      ],
+      "senses": [
+        {
+          "id": "ice-frost",
+          "gloss": "ice, frost",
+          "definition": "Frozen water or frost formed by cold.",
+          "evidence": [
+            {
+              "ref": "Job.37.10",
+              "role": "defining"
+            },
+            {
+              "ref": "Gen.31.40"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קָרַח",
+      "pos": "verb",
+      "gloss": "make bald",
+      "bdb": [
+        "s.dd.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "make bald",
+          "senses": [
+            {
+              "id": "make-bald",
+              "gloss": "make bald",
+              "definition": "To make the head bald in mourning.",
+              "evidence": [
+                {
+                  "ref": "Mic.1.16",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be bald",
+          "senses": [
+            {
+              "id": "be-bald",
+              "gloss": "be bald",
+              "definition": "To become or be made bald.",
+              "evidence": [
+                {
+                  "ref": "Jer.16.6",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "make bald",
+          "senses": [
+            {
+              "id": "make-bald-2",
+              "gloss": "make bald",
+              "definition": "To make another bald.",
+              "evidence": [
+                {
+                  "ref": "Ezk.27.31",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hophal",
+          "gloss": "be made bald",
+          "senses": [
+            {
+              "id": "be-made-bald",
+              "gloss": "be made bald",
+              "definition": "To have the head made bald.",
+              "evidence": [
+                {
+                  "ref": "Ezk.29.18",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קָרַחַת",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "bald spot",
+      "bdb": [
+        "s.dd.ad"
+      ],
+      "senses": [
+        {
+          "id": "bald-spot",
+          "gloss": "bald spot",
+          "definition": "A bald area on the back or front of the head or skin.",
+          "evidence": [
+            {
+              "ref": "Lev.13.42",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קֵרֵחַ",
+      "pos": "adjective",
+      "gloss": "bald",
+      "bdb": [
+        "s.dd.ab"
+      ],
+      "senses": [
+        {
+          "id": "bald",
+          "gloss": "bald",
+          "definition": "Having a bare or hairless head.",
+          "evidence": [
+            {
+              "ref": "Lev.13.40",
+              "role": "defining"
+            },
+            {
+              "ref": "2Ki.2.23"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "Proper names קֹרַח and קָרֵחַ are represented by names/korah.json and names/kareah.json. Arabic qaraḥ and Akkadian qarḫu are leads in the brief and require source citations before adding as cognates."
+}

@@ -1,0 +1,261 @@
+{
+  "id": "lwz",
+  "root": "לוז",
+  "status": "draft",
+  "updated": "2026-11-20",
+  "tags": [],
+  "gloss": "turn aside, be devious; almond tree",
+  "summary": "Proverbs tells the pupil to keep sound judgement in sight and to put crooked speech far away. The verb describes both something slipping from view and someone straying from an upright path.\n\nJacob cuts fresh rods from three kinds of trees and peels strips from them. The almond is the second tree in the list.",
+  "words": [
+    {
+      "lemma": "לוּז",
+      "pos": "verb",
+      "bdb": [
+        "l.av.aa"
+      ],
+      "gloss": "depart, be crooked",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "depart from sight",
+          "senses": [
+            {
+              "id": "depart",
+              "gloss": "depart from sight",
+              "definition": "Pass out of sight or attention.",
+              "evidence": [
+                {
+                  "ref": "Pro.3.21",
+                  "role": "defining",
+                  "note": "The pupil is to keep sound judgement and discretion before his eyes."
+                }
+              ],
+              "cognate_ids": []
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be crooked or devious",
+          "senses": [
+            {
+              "id": "crooked",
+              "gloss": "be crooked or devious",
+              "definition": "Turn away from an upright course in conduct.",
+              "evidence": [
+                {
+                  "ref": "Pro.2.15",
+                  "role": "defining",
+                  "note": "Crooked paths characterise those who leave upright ways."
+                },
+                {
+                  "ref": "Pro.3.32",
+                  "role": "defining",
+                  "note": "The devious person is contrasted with those whom Yahweh takes into his counsel."
+                },
+                {
+                  "ref": "Pro.14.2",
+                  "role": "defining",
+                  "note": "Crooked conduct expresses contempt for Yahweh."
+                },
+                {
+                  "ref": "Isa.30.12",
+                  "role": "defining",
+                  "note": "Oppression and crooked dealing have become objects of trust."
+                }
+              ],
+              "cognate_ids": [],
+              "kin": [
+                "speech"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "let slip from sight",
+          "senses": [
+            {
+              "id": "let-depart",
+              "gloss": "let slip from sight",
+              "definition": "Allow something to pass from view.",
+              "evidence": [
+                {
+                  "ref": "Pro.4.21",
+                  "role": "defining",
+                  "note": "The pupil is told to keep the words before his eyes and within his heart."
+                }
+              ],
+              "cognate_ids": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "לָזוּת",
+      "pos": "noun",
+      "gender": "f",
+      "bdb": [
+        "l.av.ab",
+        "l.bd.ad"
+      ],
+      "gloss": "crooked speech",
+      "senses": [
+        {
+          "id": "speech",
+          "gloss": "crooked speech",
+          "definition": "Deviousness in what a person says.",
+          "evidence": [
+            {
+              "ref": "Pro.4.24",
+              "role": "defining",
+              "note": "The crookedness of the lips is paired with perversity of the mouth."
+            }
+          ],
+          "cognate_ids": [],
+          "kin": [
+            "crooked"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "לוּז",
+      "pos": "noun",
+      "gender": "m",
+      "bdb": [
+        "l.av.ac"
+      ],
+      "gloss": "almond tree",
+      "senses": [
+        {
+          "id": "tree",
+          "gloss": "almond tree",
+          "definition": "A tree used for its fresh wood in the account of Jacob’s flocks.",
+          "evidence": [
+            {
+              "ref": "Gen.30.37",
+              "role": "defining",
+              "note": "Jacob takes rods from poplar, almond and plane trees and strips away bark to expose the light wood."
+            }
+          ],
+          "cognate_ids": [
+            "arc-almond",
+            "syc-almond",
+            "mand-almond",
+            "ar-almond",
+            "gez-almond",
+            "mt-almond"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-almond",
+      "lang": "arc",
+      "form": "לוּזָא",
+      "translit": "lūzā",
+      "gloss": "almond tree",
+      "relation": "possible",
+      "sounds": {
+        "ז": "z"
+      },
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "L00227, Onkelos Gen 30:37"
+        }
+      ]
+    },
+    {
+      "id": "syc-almond",
+      "lang": "syc",
+      "form": "ܠܘܙܐ",
+      "translit": "lawzā",
+      "gloss": "almond tree and nut",
+      "relation": "possible",
+      "sounds": {
+        "ז": "z"
+      },
+      "evidence": [
+        {
+          "source": "payne-smith-1903",
+          "locator": "s.v. ܠܘܙܐ, including sweet almonds"
+        }
+      ]
+    },
+    {
+      "id": "mand-almond",
+      "lang": "arc",
+      "form": "luza",
+      "translit": "luza",
+      "gloss": "Mandaic almond",
+      "relation": "possible",
+      "sounds": {
+        "ז": "z"
+      },
+      "evidence": [
+        {
+          "source": "drower-macuch-1963",
+          "locator": "s.v. luza, DC 46.136:10"
+        }
+      ]
+    },
+    {
+      "id": "ar-almond",
+      "lang": "ar",
+      "form": "لَوْز",
+      "translit": "lawz",
+      "gloss": "almonds",
+      "relation": "possible",
+      "sounds": {
+        "ז": "z"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I p. 2681, n38130"
+        }
+      ]
+    },
+    {
+      "id": "gez-almond",
+      "lang": "gez",
+      "form": "ለውዝ",
+      "translit": "lawz",
+      "gloss": "almond tree",
+      "relation": "possible",
+      "sounds": {
+        "ז": "z"
+      },
+      "evidence": [
+        {
+          "source": "dillmann-1865",
+          "locator": "s.v. ለውዝ, including the marginal reading at Jer 1:11"
+        }
+      ]
+    },
+    {
+      "id": "mt-almond",
+      "lang": "sem",
+      "form": "lewż",
+      "translit": "lewż",
+      "gloss": "Maltese almonds",
+      "relation": "possible",
+      "sounds": {
+        "ז": "z"
+      },
+      "evidence": [
+        {
+          "source": "gabra",
+          "locator": "lexeme 522d859b6f3bad513700009a"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The sound of Arabic lāḏa invites comparison, but Lane’s usual sense is seeking refuge or protection (p. 2680). That meaning gives little support for the Hebrew ethical sense.\n\nGenesis describes the wood. The identification of the tree as almond rests chiefly on the Aramaic, Syriac and Arabic plant names. The city Luz, later called Bethel, is a proper name whose origin the narrative does not explain.\n\nMerged from `luz`, `luz-almond` on 2026-11-20: one root, one entry."
+}

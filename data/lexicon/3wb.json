@@ -1,0 +1,124 @@
+{
+  "id": "3wb",
+  "root": "עוב",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "weather",
+    "darkness"
+  ],
+  "gloss": "cloud, cover with cloud",
+  "summary": "A cloud can bring rain or conceal what is within it. Both aspects appear in accounts of Yahweh’s approach.",
+  "words": [
+    {
+      "lemma": "עָב",
+      "bdb": [
+        "p.ba.ab"
+      ],
+      "pos": "noun",
+      "gloss": "cloud, cloud mass, thicket",
+      "senses": [
+        {
+          "id": "cloud",
+          "gloss": "cloud",
+          "definition": "Elijah’s servant sees a small cloud rise from the sea; soon the sky darkens with clouds and rain. Clouds pour out water in the psalm recalling the passage through the sea.",
+          "evidence": [
+            {
+              "ref": "1Ki.18.44",
+              "to": "1Ki.18.45",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.77.18"
+            }
+          ]
+        },
+        {
+          "id": "cloud-cover",
+          "gloss": "cloud cover",
+          "definition": "Yahweh comes to Moses in a thick cloud. David pictures clouds enveloping Yahweh in darkness as he comes to the speaker’s aid.",
+          "evidence": [
+            {
+              "ref": "Exo.19.9",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.18.12",
+              "to": "Psa.18.13"
+            },
+            {
+              "ref": "2Sa.22.12"
+            }
+          ]
+        },
+        {
+          "id": "thicket",
+          "gloss": "thicket",
+          "definition": "In Jeremiah’s description of the fleeing population some enter dense cover while others climb the rocks. The setting supports the traditional reading of vegetation here.",
+          "evidence": [
+            {
+              "ref": "Jer.4.29",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "arc-eba"
+      ]
+    },
+    {
+      "lemma": "עוּב",
+      "bdb": [
+        "p.ba.ac"
+      ],
+      "pos": "verb",
+      "gloss": "cover with cloud",
+      "stems": [
+        {
+          "stem": "hiphil",
+          "gloss": "cover with cloud",
+          "senses": [
+            {
+              "id": "cover-with-cloud",
+              "gloss": "cover with cloud",
+              "definition": "The lament pictures the daughter of Zion clouded over by Yahweh in his anger.",
+              "evidence": [
+                {
+                  "ref": "Lam.2.1",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-eba"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-eba",
+      "lang": "arc",
+      "form": "עֵיבָא",
+      "translit": "ʿēbā",
+      "gloss": "cloud, thickness, darkness",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "עֵיבָא, Targum Exodus 19:9 and Isaiah 44:22"
+        }
+      ],
+      "sounds": {
+        "ע": "ʿ"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "The reading “thicket” is confined to Jeremiah 4:29. Density supplies a possible connection to the usual meaning cloud."
+}

@@ -1,0 +1,131 @@
+{
+  "id": "xg7",
+  "root": "שגח",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "sight",
+    "music",
+    "prayer"
+  ],
+  "gloss": "look closely, peer",
+  "summary": "Yahweh looks on the inhabitants of the earth, and a lover peers through a lattice. The index also places here the musical heading of Psalm 7. How the heading acquired its name is uncertain.",
+  "words": [
+    {
+      "lemma": "שָׁגַח",
+      "bdb": [
+        "v.bc.aa"
+      ],
+      "pos": "verb",
+      "gloss": "look closely",
+      "stems": [
+        {
+          "stem": "hiphil",
+          "gloss": "gaze, peer",
+          "senses": [
+            {
+              "id": "gaze-peer",
+              "gloss": "gaze, peer",
+              "definition": "In the Song the beloved stands behind the wall, looking through its windows and peering through its lattice. Isaiah describes onlookers studying the fallen ruler to see who he is.",
+              "evidence": [
+                {
+                  "ref": "Sng.2.9",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Isa.14.16"
+                },
+                {
+                  "ref": "Psa.33.13",
+                  "to": "Psa.33.15"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-shegach"
+      ]
+    },
+    {
+      "lemma": "שִׁגָּיוֹן",
+      "bdb": [
+        "v.bc.ab"
+      ],
+      "pos": "noun",
+      "gloss": "a term for a sung prayer",
+      "senses": [
+        {
+          "id": "a-sung-prayer-or",
+          "gloss": "a sung prayer or its manner of performance",
+          "definition": "David sings the composition to Yahweh concerning Cush’s words. Habakkuk places the plural in the heading of his prayer, which ends with an instruction about stringed instruments. Neither passage specifies a metre or a tune.",
+          "evidence": [
+            {
+              "ref": "Psa.7.1",
+              "role": "defining"
+            },
+            {
+              "ref": "Hab.3.1"
+            },
+            {
+              "ref": "Hab.3.19"
+            }
+          ],
+          "cognate_ids": [
+            "akk-shigu"
+          ]
+        }
+      ],
+      "summary": "The heading identifies a kind of composition or a way to perform it. A connection with the verb for gazing is uncertain.",
+      "greek": [
+        {
+          "lemma": "ψαλμός",
+          "gloss": "psalm",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "PSA 7:1 word 1"
+            },
+            {
+              "ref": "Luk.20.42"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-shegach",
+      "lang": "arc",
+      "form": "אַשְׁגַּח",
+      "translit": "ʾašgaḥ",
+      "gloss": "look, pay attention",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. שְׁגַח, aphel, Targum Song 2:9 and Targum Job 22:2"
+        }
+      ]
+    },
+    {
+      "id": "akk-shigu",
+      "lang": "akk",
+      "form": "šigû",
+      "translit": "šigû",
+      "gloss": "a cry of lamentation",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep/x000075210, šigû [a cry of lamentation]"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The Akkadian lament term resembles the song heading. It does not establish a particular performance technique. No source checked distinguishes the older consonants behind the verb’s shin or ḥeth."
+}

@@ -1,0 +1,179 @@
+{
+  "id": "3wp",
+  "root": "עופ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "movement",
+    "birds"
+  ],
+  "gloss": "fly, birds, flying creatures",
+  "summary": "Winged creatures provide the ordinary image of flight. In the psalm the verb portrays the speed of Yahweh’s approach in response to David’s cry.",
+  "words": [
+    {
+      "lemma": "עוּף",
+      "bdb": [
+        "p.bk.aa"
+      ],
+      "pos": "verb",
+      "gloss": "fly, fly away",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "fly",
+          "senses": [
+            {
+              "id": "fly",
+              "gloss": "fly",
+              "definition": "A winged bird flies in the heavens. In David’s song Yahweh rides on a cherub and flies on the wings of the wind.",
+              "evidence": [
+                {
+                  "ref": "Deu.4.17",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.18.11"
+                },
+                {
+                  "ref": "2Sa.22.11"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "polel",
+          "gloss": "fly or hover",
+          "senses": [
+            {
+              "id": "fly-or-hover",
+              "gloss": "fly or hover",
+              "definition": "God commands flying creatures to fly above the earth. Isaiah describes the seraph using two wings for flight.",
+              "evidence": [
+                {
+                  "ref": "Gen.1.20",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Isa.6.2"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpolel",
+          "gloss": "fly away",
+          "senses": [
+            {
+              "id": "fly-away",
+              "gloss": "fly away",
+              "definition": "Ephraim’s glory is pictured flying away like a bird.",
+              "evidence": [
+                {
+                  "ref": "Hos.9.11",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "phn-bird"
+      ]
+    },
+    {
+      "lemma": "עוֹף",
+      "bdb": [
+        "p.bk.ab"
+      ],
+      "pos": "noun",
+      "gloss": "birds, flying creatures",
+      "senses": [
+        {
+          "id": "birds-collectively",
+          "gloss": "birds collectively",
+          "definition": "Birds fly over the earth in the creation account and are gathered into the ark according to their kinds.",
+          "evidence": [
+            {
+              "ref": "Gen.1.20",
+              "to": "Gen.1.22",
+              "role": "defining"
+            },
+            {
+              "ref": "Gen.6.20"
+            }
+          ]
+        },
+        {
+          "id": "winged-creatures",
+          "gloss": "winged creatures",
+          "definition": "The dietary regulations use the term in a compound for winged swarming creatures, including insects with jumping legs.",
+          "evidence": [
+            {
+              "ref": "Lev.11.20",
+              "to": "Lev.11.22",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "phn-bird"
+      ]
+    },
+    {
+      "lemma": "עוֹף",
+      "bdb": [
+        "xp.ad.ac"
+      ],
+      "pos": "noun",
+      "gloss": "birds",
+      "senses": [
+        {
+          "id": "birds",
+          "gloss": "birds",
+          "definition": "Daniel describes the birds of the sky sheltering in the branches of the tree in the king’s dream.",
+          "evidence": [
+            {
+              "ref": "Dan.4.9",
+              "role": "defining"
+            },
+            {
+              "ref": "Dan.4.18"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "lang": "arc",
+      "cognate_ids": [
+        "phn-bird"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "phn-bird",
+      "lang": "phn",
+      "form": "𐤏𐤐𐤕",
+      "translit": "ʿpt",
+      "gloss": "bird",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "KAI 10.5, gold bird in the temple furnishings; text also cited at TKT"
+        }
+      ],
+      "sounds": {
+        "ע": "ʿ"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "The eyelid noun עַפְעַף is covered in aphaph. Similar spellings for darkness and weariness have different senses and do not explain the flight in Psalm 18."
+}

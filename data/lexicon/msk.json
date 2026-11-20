@@ -1,0 +1,107 @@
+{
+  "id": "msk",
+  "root": "מסכ",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "gloss": "mixture, mixed drink",
+  "summary": "Wisdom mixes wine before inviting guests to drink. A mixture is also prepared in the cup of judgment.",
+  "words": [
+    {
+      "lemma": "מֶסֶךְ",
+      "bdb": [
+        "m.cr.ab"
+      ],
+      "pos": "noun",
+      "gloss": "mixture in a cup",
+      "senses": [
+        {
+          "id": "mixture-in-a-cup",
+          "gloss": "mixture in a cup",
+          "definition": "The wine in Yahweh’s cup foams with a full mixture. He pours it out and the wicked drink to the dregs.",
+          "evidence": [
+            {
+              "ref": "Psa.75.9",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "arc-mix"
+      ]
+    },
+    {
+      "lemma": "מָסַךְ",
+      "pos": "verb",
+      "gloss": "mix, produce by mixing",
+      "bdb": [
+        "m.cr.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "mix",
+          "senses": [
+            {
+              "id": "mix-verb",
+              "gloss": "mix",
+              "definition": "To mix wine or substances.",
+              "evidence": [
+                {
+                  "ref": "Pro.9.2",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-mix"
+      ]
+    },
+    {
+      "lemma": "מִמְסָךְ",
+      "pos": "noun",
+      "gloss": "mixed drink",
+      "bdb": [
+        "m.cr.ac"
+      ],
+      "senses": [
+        {
+          "id": "drink",
+          "gloss": "mixed drink",
+          "definition": "A drink prepared by mixing wine and spices.",
+          "evidence": [
+            {
+              "ref": "Pro.9.2",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-mix"
+      ]
+    }
+  ],
+  "note": "Compare Aramaic מזג for mixing wine. The consonants differ. The words for poverty belong to misken, with Akkadian muškēnu.",
+  "created": "2026-11-19",
+  "cognates": [
+    {
+      "id": "arc-mix",
+      "lang": "arc",
+      "form": "מְזַג",
+      "translit": "məzag",
+      "gloss": "mix drink",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. מְזַג, Targum Proverbs 9:2 and Eruvin 54a"
+        }
+      ]
+    }
+  ]
+}

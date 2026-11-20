@@ -1,0 +1,1014 @@
+{
+  "id": "b3l",
+  "root": "בעל",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "tags": [
+    "ownership",
+    "marriage",
+    "husband",
+    "lordship",
+    "idolatry",
+    "covenant"
+  ],
+  "gloss": "own, be lord of; marry, be husband; owner, husband, lord; Baal",
+  "summary": "To own and to be lord of something, above all of a wife: the verb is to marry or be husband to a woman, and once to rule over a people; the noun בַּעַל is the owner of an ox or a house, a woman's husband, the lords or citizens of a city, and before another noun the one who has or is marked by it (“master of dreams”, “possessor of wrath”). Its feminine בַּעֲלָה is a mistress, and Aramaic בְּעֵל is “lord of” a decree. As a title, “the lord”, it became the name of the Canaanite god הַבַּעַל, whose worship scripture sets against Yahweh as a wife's adultery against her husband: Yahweh is Israel's true husband (Isa 54:5; Jer 31:32), who will no longer be called “my Baal” but “my man” (Hos 2:18). Arabic baʿl “husband, lord, owner”, Ugaritic and Phoenician bʿl, and Akkadian bēlu “lord” show the same word across the Semitic languages.",
+  "words": [
+    {
+      "lemma": "בַּעַל",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "owner, master; husband; lord, citizen; one possessed of; Baal",
+      "bdb": [
+        "b.ci.ab",
+        "b.ci.ac"
+      ],
+      "cognate_ids": [
+        "ar-baal",
+        "uga-bal",
+        "phn-bal",
+        "akk-belu",
+        "sab-bal",
+        "gez-baal",
+        "arc-beel",
+        "syc-bel"
+      ],
+      "summary": "About three hundred times, a word of relation: it names the one to whom something belongs, or who belongs to it, and is nearly always followed by what is owned or ruled (the ox, the house, the woman, the city) or carries a suffix. The brief's counts for b.ci.ab take in בְּרִית tokens filed here by spelling; b.ci.ac holds the real בַּעַל tokens, owner and god alike.",
+      "senses": [
+        {
+          "id": "baal-owner",
+          "gloss": "owner, master",
+          "definition": "The owner of a beast, a house, land or goods, answerable for it and entitled to it.",
+          "evidence": [
+            {
+              "ref": "Exo.21.28",
+              "role": "defining",
+              "note": "“If an ox gores … the owner (בַּעַל) of the ox shall be clear.”"
+            },
+            {
+              "ref": "Exo.21.29",
+              "note": "“Its owner has been warned … its owner also shall be put to death.”"
+            },
+            {
+              "ref": "Exo.21.34",
+              "note": "“The owner of the pit shall make it good; he shall return money to its owner.”"
+            },
+            {
+              "ref": "Exo.22.7",
+              "role": "defining",
+              "note": "“The owner of the house (בַּעַל הַבַּיִת) shall be brought to God.”"
+            },
+            {
+              "ref": "Exo.22.10",
+              "to": "Exo.22.14",
+              "note": "Goods kept for a neighbour: “its owner shall accept it … its owner being with it.”"
+            },
+            {
+              "ref": "Isa.1.3",
+              "role": "defining",
+              "note": "“The ox knows its owner (קֹנֵהוּ), and the donkey the crib of its master (בְּעָלָיו)”: parallel to קֹנֶה “one who acquires”."
+            },
+            {
+              "ref": "Ecc.5.12",
+              "note": "“Riches kept for their owner to his hurt.”"
+            },
+            {
+              "ref": "Pro.3.27",
+              "note": "“Do not withhold good from its owners (מִבְּעָלָיו).”"
+            },
+            {
+              "ref": "Job.31.39",
+              "note": "“If I have made its owners (בְּעָלֶיהָ) breathe out their life”: the owners of land."
+            }
+          ]
+        },
+        {
+          "id": "baal-husband",
+          "gloss": "husband",
+          "definition": "A woman's husband, the man to whom she is bound in marriage; with אִשָּׁה “a husband of a wife”, a married man.",
+          "evidence": [
+            {
+              "ref": "Exo.21.3",
+              "role": "defining",
+              "note": "“If he is the husband of a wife (בַּעַל אִשָּׁה), his wife shall go out with him.”"
+            },
+            {
+              "ref": "Exo.21.22",
+              "note": "“As the woman's husband (בַּעַל הָאִשָּׁה) lays on him.”"
+            },
+            {
+              "ref": "Deu.24.4",
+              "role": "defining",
+              "note": "“Her first husband (בַּעְלָהּ הָרִאשׁוֹן) who sent her away may not take her again to be his wife.”"
+            },
+            {
+              "ref": "2Sa.11.26",
+              "note": "“The wife of Uriah heard that Uriah her husband (אִישָׁהּ) was dead, and she mourned for her husband (בַּעְלָהּ)”: אִישׁ and בַּעַל of the same man."
+            },
+            {
+              "ref": "Jol.1.8",
+              "note": "“Wail like a virgin girded with sackcloth for the husband of her youth.”"
+            },
+            {
+              "ref": "Pro.12.4",
+              "note": "“A woman of strength is the crown of her husband.”"
+            },
+            {
+              "ref": "Pro.31.11",
+              "note": "“The heart of her husband trusts in her.”"
+            },
+            {
+              "ref": "Pro.31.23"
+            },
+            {
+              "ref": "Est.1.17",
+              "note": "“To make their husbands despised in their eyes.”"
+            },
+            {
+              "ref": "Est.1.20"
+            },
+            {
+              "ref": "Rom.7.2",
+              "note": "“The married woman is bound by law to her living husband”: the Peshitta writes בַּעְלָהּ, Syriac ܒܥܠܗ, for ἀνήρ."
+            }
+          ],
+          "kin": [
+            "baal-marry",
+            "baal-married"
+          ]
+        },
+        {
+          "id": "baal-lords",
+          "gloss": "lords, citizens (of a city)",
+          "definition": "In the plural with a city or land, its lords: the landholding men who answer for it and decide for it.",
+          "evidence": [
+            {
+              "ref": "Jdg.9.2",
+              "role": "defining",
+              "note": "“Speak in the ears of all the lords of Shechem (בַּעֲלֵי שְׁכֶם).”"
+            },
+            {
+              "ref": "Jdg.9.6",
+              "note": "“All the lords of Shechem gathered … and made Abimelech king.”"
+            },
+            {
+              "ref": "Jdg.9.20"
+            },
+            {
+              "ref": "1Sa.23.11",
+              "to": "1Sa.23.12",
+              "role": "defining",
+              "note": "“Will the lords of Keilah deliver me into his hand?”"
+            },
+            {
+              "ref": "Jos.24.11",
+              "note": "“The lords of Jericho fought against you.”"
+            },
+            {
+              "ref": "2Sa.21.12",
+              "note": "“From the lords of Jabesh-gilead.”"
+            },
+            {
+              "ref": "Isa.16.8",
+              "note": "“The lords of the nations have struck down its choice vines.”"
+            },
+            {
+              "ref": "Gen.14.13",
+              "note": "Mamre, Eshcol and Aner were “lords of the covenant of Abram” (בַּעֲלֵי בְרִית־אַבְרָם), his sworn allies."
+            }
+          ],
+          "kin": [
+            "baal-rule"
+          ]
+        },
+        {
+          "id": "baal-having",
+          "gloss": "one possessed of, marked by",
+          "definition": "Before another noun, the one who has it or is ruled by it: a man of dreams, of hair, of anger, of appetite; a bird “possessor of wings”, a ram “possessor of two horns”.",
+          "evidence": [
+            {
+              "ref": "Gen.37.19",
+              "role": "defining",
+              "note": "“Behold, this master of dreams (בַּעַל הַחֲלֹמוֹת) comes.”"
+            },
+            {
+              "ref": "2Ki.1.8",
+              "role": "defining",
+              "note": "“A man, a possessor of hair (בַּעַל שֵׂעָר), with a belt of leather about his waist”: Elijah."
+            },
+            {
+              "ref": "Pro.22.24",
+              "note": "“Make no friendship with a possessor of anger (בַּעַל אָף).”"
+            },
+            {
+              "ref": "Pro.29.22",
+              "note": "“A possessor of wrath (בַּעַל חֵמָה) abounds in transgression”, parallel אִישׁ אַף."
+            },
+            {
+              "ref": "Pro.23.2",
+              "note": "“If you are a possessor of appetite (בַּעַל נֶפֶשׁ).”"
+            },
+            {
+              "ref": "Nam.1.2",
+              "role": "defining",
+              "note": "“Yahweh avenges and is a possessor of wrath (בַּעַל חֵמָה)”: the same phrase of Yahweh's anger against his adversaries."
+            },
+            {
+              "ref": "Dan.8.6",
+              "note": "“The ram, the possessor of the two horns (בַּעַל הַקְּרָנַיִם).”"
+            },
+            {
+              "ref": "Dan.8.20"
+            },
+            {
+              "ref": "Ecc.10.20",
+              "note": "“A possessor of wings (בַּעַל כְּנָפַיִם) will tell the matter”: a bird; so Pro 1:17."
+            },
+            {
+              "ref": "Isa.41.15",
+              "note": "A threshing sledge “possessor of edges (בַּעַל פִּיפִיּוֹת)”."
+            },
+            {
+              "ref": "Exo.24.14",
+              "note": "“Whoever is a possessor of matters (בַּעַל דְּבָרִים)”: whoever has a case."
+            },
+            {
+              "ref": "Isa.50.8",
+              "role": "defining",
+              "note": "“Who is the possessor of my judgment (בַּעַל מִשְׁפָּטִי)? Let him come near me”: the one who has a case against me, my adversary at law, parallel “who will contend with me?”"
+            },
+            {
+              "ref": "Mat.5.25",
+              "note": "“Agree with your adversary at law (ἀντίδικος)”: the Peshitta writes ܒܥܠ ܕܝܢܟ, “possessor of your judgment”, the phrase of Isa 50:8."
+            },
+            {
+              "ref": "Neh.6.18",
+              "note": "“Many in Judah were possessors of oath (בַּעֲלֵי שְׁבוּעָה) to him”: sworn to Tobiah."
+            }
+          ],
+          "kin": [
+            "beel-lord-of"
+          ]
+        },
+        {
+          "id": "baal-god",
+          "gloss": "Baal, the Canaanite god; the Baals",
+          "definition": "With the article, הַבַּעַל “the lord”, the title become the name of the god of Canaan and Tyre, and in the plural הַבְּעָלִים the Baals of many places (Baal of Peor, Baal-berith, Baal-zebub). Israel served him in the judges' days and under Ahab and Manasseh, with his altars, pillars, Asherah and high places, and burned their sons to him.",
+          "evidence": [
+            {
+              "ref": "Jdg.2.11",
+              "to": "Jdg.2.13",
+              "role": "defining",
+              "note": "“They served the Baals … they forsook Yahweh and served the Baal and the Ashtaroth.”"
+            },
+            {
+              "ref": "Jdg.6.25",
+              "to": "Jdg.6.32",
+              "role": "defining",
+              "note": "Gideon throws down the altar of the Baal; Joash: “Will you contend for the Baal? … if he is a god, let him contend for himself.”"
+            },
+            {
+              "ref": "1Ki.16.31",
+              "to": "1Ki.16.32",
+              "note": "Ahab took Jezebel daughter of Ethbaal, “served the Baal and bowed down to him”, and built him a house in Samaria."
+            },
+            {
+              "ref": "1Ki.18.21",
+              "role": "defining",
+              "note": "“If Yahweh is the God, go after him; but if the Baal, go after him.”"
+            },
+            {
+              "ref": "1Ki.18.26",
+              "note": "“O Baal, answer us!” But there was no voice, and no one answering."
+            },
+            {
+              "ref": "1Ki.19.18",
+              "note": "“Seven thousand in Israel, all the knees that have not bowed to the Baal.”"
+            },
+            {
+              "ref": "Rom.11.4",
+              "note": "Paul quotes 1Ki 19:18: “who have not bowed the knee τῇ Βάαλ”; the Peshitta writes ܒܥܠ."
+            },
+            {
+              "ref": "2Ki.10.18",
+              "to": "2Ki.10.28",
+              "note": "Jehu destroys the servants of the Baal and his house."
+            },
+            {
+              "ref": "2Ki.23.4",
+              "to": "2Ki.23.5",
+              "note": "Josiah burns the vessels made for the Baal and removes those burning incense to him."
+            },
+            {
+              "ref": "Jer.19.5",
+              "note": "“They built the high places of the Baal to burn their sons in the fire as burnt offerings to the Baal.”"
+            },
+            {
+              "ref": "Hos.2.10",
+              "note": "“Silver I multiplied to her, and gold, which they made for the Baal.”"
+            },
+            {
+              "ref": "Hos.2.15",
+              "note": "“The days of the Baals, to which she burned incense … and forgot me.”"
+            },
+            {
+              "ref": "Zep.1.4",
+              "note": "“I will cut off the remnant of the Baal from this place.”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἀνήρ",
+          "gloss": "man, husband",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Jol.1.8, בַּעַל → ἄνδρα; Pro.31.11, בַּעְלָהּ → ἀνδρὸς; Jdg.9.2, בַּעֲלֵי שְׁכֶם → ἀνδρῶν"
+            },
+            {
+              "ref": "Rom.7.2",
+              "role": "defining",
+              "note": "“The married woman is bound by law to her living husband (ἀνδρί).”"
+            }
+          ]
+        },
+        {
+          "lemma": "κύριος",
+          "gloss": "owner, lord",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.21.28, בַּעַל הַשּׁוֹר → ὁ κύριος τοῦ ταύρου; Exo.22.7, בַּעַל הַבַּיִת → κύριος; Isa.1.3, בְּעָלָיו → κυρίου"
+            },
+            {
+              "ref": "Mat.21.40",
+              "note": "“When the lord (κύριος) of the vineyard comes”: the owner of a property."
+            }
+          ]
+        },
+        {
+          "lemma": "Βάαλ",
+          "gloss": "Baal",
+          "relation": "loan",
+          "evidence": [
+            {
+              "ref": "Rom.11.4",
+              "role": "defining",
+              "note": "“Seven thousand men who have not bowed the knee to Baal”, from 1Ki 19:18."
+            },
+            {
+              "source": "abbott-smith",
+              "locator": "s.v. Βάαλ",
+              "note": "Indeclinable, from Hebrew בַּעַל “lord”; the feminine article follows the Septuagint's reading αἰσχύνη “shame” for the name."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "קֹנֶה",
+            "note": "“One who acquires, owner”, beside בְּעָלָיו of the ox and the donkey.",
+            "evidence": [
+              {
+                "ref": "Isa.1.3",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "אִישׁ",
+            "note": "Of the same husband: Uriah is אִישָׁהּ and בַּעְלָהּ in one verse.",
+            "evidence": [
+              {
+                "ref": "2Sa.11.26",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.29.22"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "אִישִׁי",
+            "note": "“My man”, the name by which Israel will call Yahweh, set against בַּעְלִי “my Baal, my lord”, which will be called no more.",
+            "evidence": [
+              {
+                "ref": "Hos.2.18",
+                "role": "defining"
+              },
+              {
+                "ref": "Hos.2.19"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "בַּעַל הַבַּיִת",
+            "gloss": "owner of the house, householder",
+            "evidence": [
+              {
+                "ref": "Exo.22.7",
+                "role": "defining"
+              },
+              {
+                "ref": "Jdg.19.22"
+              },
+              {
+                "ref": "Jdg.19.23"
+              }
+            ]
+          },
+          {
+            "phrase": "בַּעַל אִשָּׁה",
+            "gloss": "husband of a wife, a married man",
+            "evidence": [
+              {
+                "ref": "Exo.21.3",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "phrase": "עָבַד אֶת־הַבַּעַל",
+            "gloss": "serve the Baal",
+            "evidence": [
+              {
+                "ref": "Jdg.2.13",
+                "role": "defining"
+              },
+              {
+                "ref": "1Ki.16.31"
+              },
+              {
+                "ref": "2Ki.10.18"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "בָּעַל",
+      "pos": "verb",
+      "gloss": "marry, be husband; rule over",
+      "bdb": [
+        "b.ci.aa"
+      ],
+      "cognate_ids": [
+        "ar-baal",
+        "phn-bal",
+        "akk-belu",
+        "sab-bal",
+        "arc-beel",
+        "syc-bel"
+      ],
+      "summary": "Sixteen times, the verb of the noun: to become or be a woman's בַּעַל. Its passive participle בְּעוּלָה is “a married woman”. Twice it is to be lord over a people (Isa 26:13; 1Ch 4:22).",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "marry, take as wife; be husband; rule over; (passive participle) married",
+          "senses": [
+            {
+              "id": "baal-marry",
+              "gloss": "marry, take as wife; be husband to",
+              "definition": "To take a woman as wife and become her husband; of Yahweh, to be husband to Israel.",
+              "evidence": [
+                {
+                  "ref": "Deu.21.13",
+                  "role": "defining",
+                  "note": "“After that you may go in to her and be her husband (וּבְעַלְתָּהּ), and she shall be your wife.”"
+                },
+                {
+                  "ref": "Deu.24.1",
+                  "role": "defining",
+                  "note": "“When a man takes a wife and marries her (וּבְעָלָהּ).”"
+                },
+                {
+                  "ref": "Isa.62.5",
+                  "role": "defining",
+                  "note": "“As a young man marries (יִבְעַל) a virgin, so shall your sons marry you (יִבְעָלוּךְ); and as the bridegroom rejoices over the bride, so shall your God rejoice over you.”"
+                },
+                {
+                  "ref": "Mal.2.11",
+                  "note": "“Judah … has married (וּבָעַל) the daughter of a foreign god.”"
+                },
+                {
+                  "ref": "Isa.54.5",
+                  "role": "defining",
+                  "note": "“For your husband (בֹעֲלַיִךְ) is your Maker, Yahweh of armies is his name.”"
+                },
+                {
+                  "ref": "Jer.3.14",
+                  "note": "“Return, faithless sons, for I am husband to you (בָּעַלְתִּי בָכֶם).”"
+                },
+                {
+                  "ref": "Jer.31.32",
+                  "role": "defining",
+                  "note": "“My covenant which they broke, although I was a husband to them (בָּעַלְתִּי בָם).”"
+                },
+                {
+                  "ref": "Heb.8.9",
+                  "note": "Quoting Jer 31:32 from the Greek: “they did not continue in my covenant.”"
+                }
+              ],
+              "kin": [
+                "baal-husband"
+              ]
+            },
+            {
+              "id": "baal-married",
+              "gloss": "(passive participle) married",
+              "definition": "בְּעוּלָה, a woman who has a husband; with בַּעַל, “married to a husband”.",
+              "evidence": [
+                {
+                  "ref": "Gen.20.3",
+                  "role": "defining",
+                  "note": "“She is married to a husband (בְּעֻלַת בָּעַל).”"
+                },
+                {
+                  "ref": "Deu.22.22",
+                  "note": "“A woman married to a husband.”"
+                },
+                {
+                  "ref": "Isa.54.1",
+                  "role": "defining",
+                  "note": "“More are the sons of the desolate than the sons of the married (בְעוּלָה)”: opposite שׁוֹמֵמָה."
+                },
+                {
+                  "ref": "Gal.4.27",
+                  "note": "Isa 54:1 quoted of “the Jerusalem above”, the mother of the children of promise: “than of her who has the husband.”"
+                },
+                {
+                  "ref": "Isa.62.4",
+                  "role": "defining",
+                  "note": "“You shall no more be called Forsaken … but your land Married (בְּעוּלָה)”: opposite עֲזוּבָה."
+                }
+              ],
+              "kin": [
+                "baal-husband"
+              ]
+            },
+            {
+              "id": "baal-rule",
+              "gloss": "be lord over, rule",
+              "definition": "To be lord over a people or land.",
+              "evidence": [
+                {
+                  "ref": "Isa.26.13",
+                  "role": "defining",
+                  "note": "“Yahweh our God, lords (אֲדֹנִים) other than you have ruled us (בְּעָלוּנוּ); by you alone we make mention of your name.”"
+                },
+                {
+                  "ref": "1Ch.4.22",
+                  "note": "Of men of Judah “who ruled in Moab (בָּעֲלוּ לְמוֹאָב)”."
+                }
+              ],
+              "kin": [
+                "baal-lords",
+                "baal-owner"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be married",
+          "senses": [
+            {
+              "id": "be-married",
+              "gloss": "be married",
+              "definition": "To be taken as wife; of the land of Israel, to be married again to its people and its God.",
+              "evidence": [
+                {
+                  "ref": "Isa.62.4",
+                  "role": "defining",
+                  "note": "“For Yahweh delights in you, and your land shall be married (תִּבָּעֵל).”"
+                },
+                {
+                  "ref": "Pro.30.23",
+                  "role": "defining",
+                  "note": "“An unloved woman when she is married (תִבָּעֵל).”"
+                }
+              ],
+              "kin": [
+                "baal-husband"
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "συνοικέω",
+          "gloss": "live with as husband",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Deu.24.1, וּבְעָלָהּ → συνοικήσῃ; Deu.21.13 → συνοικισθήσῃ; Isa.62.5, יִבְעַל → συνοικῶν"
+            },
+            {
+              "ref": "1Pe.3.7",
+              "note": "“Husbands, likewise, live with (συνοικοῦντες) them with understanding.”"
+            }
+          ]
+        },
+        {
+          "lemma": "ἀμελέω",
+          "gloss": "disregard",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Jer.31.32 (LXX 38.32), בָּעַלְתִּי → ἠμέλησα"
+            },
+            {
+              "ref": "Heb.8.9",
+              "note": "“And I disregarded (ἠμέλησα) them”: the Septuagint's reading of Jer 31:32, quoted as it stands; the Hebrew says “I was husband to them”."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "opposites": [
+          {
+            "lemma": "שׁוֹמֵמָה",
+            "note": "The desolate woman, set against the married.",
+            "evidence": [
+              {
+                "ref": "Isa.54.1",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "עֲזוּבָה",
+            "note": "Forsaken, set against Married.",
+            "evidence": [
+              {
+                "ref": "Isa.62.4",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "בְּעֻלַת בַּעַל",
+            "gloss": "married to a husband",
+            "evidence": [
+              {
+                "ref": "Gen.20.3",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.22.22"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "בַּעֲלָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "mistress, owner",
+      "bdb": [
+        "b.ci.ao"
+      ],
+      "cognate_ids": [
+        "phn-bal",
+        "akk-belu",
+        "sab-bal"
+      ],
+      "summary": "Four times, always in the construct בַּעֲלַת: the woman who owns or rules a house, or who is marked by a practice, as the masculine is. The fifth token in the brief (Jos 19:8) is the place Baalath-beer.",
+      "senses": [
+        {
+          "id": "baalah-mistress",
+          "gloss": "mistress (of), woman possessed of",
+          "definition": "The mistress of a house; a woman marked by and practising something.",
+          "evidence": [
+            {
+              "ref": "1Ki.17.17",
+              "role": "defining",
+              "note": "“The son of the woman, the mistress of the house (בַּעֲלַת הַבָּיִת), fell sick.”"
+            },
+            {
+              "ref": "1Sa.28.7",
+              "role": "defining",
+              "note": "“Seek me a woman, a possessor of an אוֹב (בַּעֲלַת־אוֹב)”: the medium of Endor."
+            },
+            {
+              "ref": "Nam.3.4",
+              "note": "Nineveh, “the mistress of sorceries (בַּעֲלַת כְּשָׁפִים)”."
+            }
+          ],
+          "kin": [
+            "baal-owner",
+            "baal-having"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "בְּעֵל",
+      "lang": "arc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "lord, master (of)",
+      "bdb": [
+        "xb.ak.ac"
+      ],
+      "cognate_ids": [
+        "arc-beel",
+        "syc-bel"
+      ],
+      "senses": [
+        {
+          "id": "beel-lord-of",
+          "gloss": "lord of, possessor of",
+          "definition": "In the title בְּעֵל טְעֵם, “lord of decree”: the Persian officer with authority to issue and answer orders, as the Hebrew word of relation.",
+          "evidence": [
+            {
+              "ref": "Ezr.4.8",
+              "role": "defining",
+              "note": "“Rehum, lord of decree (בְּעֵל־טְעֵם), and Shimshai the scribe wrote a letter.”"
+            },
+            {
+              "ref": "Ezr.4.9"
+            },
+            {
+              "ref": "Ezr.4.17",
+              "note": "The king's answer “to Rehum, lord of decree”."
+            }
+          ],
+          "kin": [
+            "baal-having"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-baal",
+      "lang": "ar",
+      "form": "بَعْلٌ، بَعَلَ",
+      "translit": "baʿl, baʿala",
+      "gloss": "husband (also wife); lord, master, owner; an idol Baʿl; (verb) become a husband, marry; resist as a lord over",
+      "relation": "cognate",
+      "note": "The same word with the same range: husband first, then owner and lord, and the god. Arabic keeps ʿ and ġ apart and shows ʿ behind ע.",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 228, art. بعل, بَعْلٌ (n2911)",
+          "note": "“A husband … And A wife … A lord, a master, an owner, or a possessor, of a thing, such as a house, and a beast … A certain idol … mentioned in the Kur xxxvii. 123.”"
+        },
+        {
+          "source": "lane",
+          "locator": "Book I, p. 228, art. بعل, بَعَلَ (n2907)",
+          "note": "“He became a husband … he married, or took a wife”; بَعَلَ عَلَيْهِ “as though originally signifying He became a بَعْل, or lord, over him”."
+        }
+      ]
+    },
+    {
+      "id": "uga-bal",
+      "lang": "uga",
+      "form": "𐎁𐎓𐎍",
+      "translit": "bʿl",
+      "gloss": "owner, lord; (word of relation) one with; Baal, the god",
+      "relation": "cognate",
+      "note": "Ugaritic uses it as Hebrew does: an owner, a word of relation (bʿl qrnm “possessor of horns”, as Dan 8:6), and the god's name from the epithet “lord”. Ugaritic keeps ʿ and ġ apart.",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 181, §93 Glossary, bʿl",
+          "note": "“/baʿl-/ … ‘owner, lord’, pl. /baʿalūma/ … word of relation bʿl.qrnm 1.114:20 ‘(owner >) that of/with (two) horns’ … DN (< epithet of god Hadd).”"
+        }
+      ]
+    },
+    {
+      "id": "phn-bal",
+      "lang": "phn",
+      "form": "𐤁𐤏𐤋، 𐤁𐤏𐤋𐤕",
+      "translit": "bʿl, bʿlt",
+      "gloss": "(verb) possess, command; owner, possessor; divine lord; proprietary god of a city; king; citizen; (f.) citizenry; Baalt, lady of Byblos",
+      "relation": "cognate",
+      "note": "The Phoenician range matches the Hebrew closely: “owner of cattle”, the god as “owner of Tyre”, and the citizens of a city, as the lords of Shechem.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "pp. 109–110, B-ʿ-L I (v. qal POSSESS, COMMAND) and BʿL II (OWNER, POSSESSOR; DIVINE LORD; PROPRIETARY GOD; KING; CITIZEN)",
+          "note": "KAI 24.11/12: “He who had never owned a lamb I made owner (bʿl) of a flock”; KAI 47.1: “Milqart, the proprietary god (lit. owner) of Tyre”; KAI 19: “the citizens (bʿl) of Hammon”."
+        },
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 119, BʿLT and BʿLT GBL",
+          "note": "“The citizenry of Tingis”; Baalt of Byblos, “his lady (goddess)”."
+        }
+      ]
+    },
+    {
+      "id": "akk-belu",
+      "lang": "akk",
+      "form": "bēlu, bêlu, bēltu",
+      "translit": "bēlu, bêlu, bēltu",
+      "gloss": "lord, master, owner, possessor; (verb) rule over, take possession of; (f.) lady, mistress, proprietress",
+      "relation": "cognate",
+      "note": "Akkadian lost ʿ, leaving the e-vowels; the meanings are those of the Hebrew noun, verb and feminine.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000003090, bēlu [lord] N",
+          "note": "lord; master; one responsible for something; owner; possessor; proprietor of"
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000043780, bêlu [rule (over)] V",
+          "note": "be(come) victorious; rule (over); take possession of"
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000006090, bēltu [lady] N",
+          "note": "goddess; lady; mistress; proprietress of"
+        }
+      ]
+    },
+    {
+      "id": "akk-bel",
+      "lang": "akk",
+      "form": "bēl",
+      "translit": "bēl",
+      "gloss": "lord (construct of bēlu); Bēl, title of Marduk of Babylon",
+      "relation": "loan",
+      "note": "Hebrew בֵּל, the god of Babylon (Isa 46:1; Jer 50:2; 51:44), and the first part of Belshazzar's name, is this Akkadian word borrowed, not the Hebrew בַּעַל: the vowel ē is Akkadian's reflex of baʿl-. Jer 50:2 sets Bel beside מְרֹדָךְ, Marduk, whose title it was.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000121270, bēl [lord] N"
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000003090, bēlu [lord] N",
+          "note": "construct form bēl among its norms"
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Akkadian bēlum, noun: lord; proprietor, owner; Bel, a Babylonian deity related to the Semitic Baal; an epithet of other deities, particularly Marduk"
+        }
+      ]
+    },
+    {
+      "id": "sab-bal",
+      "lang": "sem",
+      "form": "𐩨𐩲𐩡",
+      "translit": "bʿl, bʿlt",
+      "gloss": "(Sabaean) acquire, possess; (causative) take possession of, conquer; lord, owner (esp. of gods); citizen; husband; (f.) lady",
+      "relation": "cognate",
+      "note": "Old South Arabian, which keeps ʿ and ġ apart: the verb “acquire, possess”, and the noun as lord, citizen and husband, the three Hebrew senses.",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "pp. 50–51, BʿL I v. and BʿL II n.",
+          "note": "“ACQUIRE, POSSESS [Cf Heb baʿal, Akk baʾālu ‘rule over’; Ar baʿala, Aram beʿal ‘take to wife’]”; n. “(1) LORD, OWNER (esp of gods) … (2) CITIZEN … (3) m only: HUSBAND”."
+        }
+      ]
+    },
+    {
+      "id": "gez-baal",
+      "lang": "gez",
+      "form": "በዓል",
+      "translit": "baʿāl",
+      "gloss": "possessor, lord, master; (before a noun) one who has or practises",
+      "relation": "cognate",
+      "note": "Ge'ez uses it, like Hebrew, as a word of relation: “owner of the house”, “possessor of a debt” (creditor).",
+      "evidence": [
+        {
+          "source": "dillmann-1865",
+          "locator": "cols. 529–530, በዕል and በዓል",
+          "note": "“possessor, dominus, -a, herus, -a”: በዓለ፡ ምድር፡ Job 31:39; “usurpatur ad significandum eum, qui aliquid habet, administrat, facit”."
+        }
+      ]
+    },
+    {
+      "id": "arc-beel",
+      "lang": "arc",
+      "form": "בְּעַל، בַּעֲלָא",
+      "translit": "bəʿal, baʿălā",
+      "gloss": "(verb) take to wife, have intercourse; (pael passive participle) married; husband; Baal",
+      "relation": "cognate",
+      "note": "Jewish Aramaic of the Targums and Talmud: the verb of marriage and the noun husband, and Baal in the Targum of Judges.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. בְּעַל (ch.), citing Targ. O. Deut. XXI, 13; Pa. part. pass. f. מְבַעֲלָא “married”, Targ. Ruth I, 12"
+        },
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. בַּעֲלָא, citing Targ. O. Ex. XXI, 3 (husband); Targ. Jon. Judg. VI, 25 (Baal)"
+        }
+      ]
+    },
+    {
+      "id": "syc-bel",
+      "lang": "syc",
+      "form": "ܒܥܠ، ܒܥܠܐ، ܒܥܝܠܬܐ",
+      "translit": "bʿal, baʿlā, bʿīltā",
+      "gloss": "marry; lord, husband, master; married woman; Baal; (in compounds) ܒܥܠܕܒܒܐ enemy, ܒܥܠܕܝܢܐ adversary at law",
+      "relation": "cognate",
+      "note": "The Syriac of the Peshitta, which uses it for the husband (Rom 7:2), for Baal (Rom 11:4), and in ܒܥܠ ܕܝܢܐ “adversary at law” (Mat 5:25), the בַּעַל מִשְׁפָּט of Isa 50:8.",
+      "evidence": [
+        {
+          "source": "sedra",
+          "locator": "root 298 BEL; lexemes 434 BE;LTA (married woman), 435 BEL (marry), 436 BELA (lord; husband; master), 437 BELDBBA (enemy), 439 BELD;NA (adversary), 440 BELA (Baal)"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "covenant",
+      "statement": "Scripture calls Yahweh Israel's husband, using this root: “your husband is your Maker, Yahweh of armies is his name” (Isa 54:5); the covenant of Sinai was a marriage which Israel broke, “although I was a husband to them” (Jer 31:32), and he promises a new covenant in its place (Jer 31:31–34), which the letter to the Hebrews says is made through Jesus (Heb 8:6–13). Going after the Baals is therefore adultery against a husband (Hos 2:15; Jer 3:14), and the restoration is a remarriage: Israel will call Yahweh “my man” and no longer “my Baal”, and he will betroth her to himself for ever (Hos 2:18–21). Isaiah adds that the land itself, called Forsaken and Desolate, shall be called Married, “for Yahweh delights in you, and your land shall be married” (Isa 62:4–5): the promise concerns the land of Israel, not a heaven above it. Paul reads Isa 54:1 of the Jerusalem above, the mother of the children of the promise made to Abraham (Gal 4:26–28), and calls the believers a virgin betrothed to one husband, Christ (2Co 11:2; Eph 5:25–32).",
+      "evidence": [
+        {
+          "ref": "Isa.54.5"
+        },
+        {
+          "ref": "Jer.31.31",
+          "to": "Jer.31.34"
+        },
+        {
+          "ref": "Heb.8.6",
+          "to": "Heb.8.13"
+        },
+        {
+          "ref": "Jer.3.14"
+        },
+        {
+          "ref": "Hos.2.15"
+        },
+        {
+          "ref": "Hos.2.18",
+          "to": "Hos.2.21"
+        },
+        {
+          "ref": "Isa.62.4",
+          "to": "Isa.62.5"
+        },
+        {
+          "ref": "Gal.4.26",
+          "to": "Gal.4.28"
+        },
+        {
+          "ref": "2Co.11.2"
+        },
+        {
+          "ref": "Eph.5.25",
+          "to": "Eph.5.32"
+        }
+      ]
+    },
+    {
+      "topic": "one-god",
+      "statement": "Baal is only a title, “lord”, given to a god who is not one. On Carmel his prophets cried from morning to noon, “O Baal, answer us”, and “there was no voice, and no one answering” (1Ki 18:26–29), while Yahweh answered by fire and the people said, “Yahweh, he is the God” (1Ki 18:39). Joash had already said that if Baal were a god he could contend for himself (Jdg 6:31). Yahweh alone is God, and other lords who have ruled his people are to be no more remembered (Isa 26:13–14; Hos 2:19). Paul cites the seven thousand who had not bowed to Baal as the pattern of a remnant chosen by grace (Rom 11:2–5).",
+      "evidence": [
+        {
+          "ref": "1Ki.18.26",
+          "to": "1Ki.18.29"
+        },
+        {
+          "ref": "1Ki.18.39"
+        },
+        {
+          "ref": "Jdg.6.31"
+        },
+        {
+          "ref": "Isa.26.13",
+          "to": "Isa.26.14"
+        },
+        {
+          "ref": "Hos.2.19"
+        },
+        {
+          "ref": "Rom.11.2",
+          "to": "Rom.11.5"
+        }
+      ]
+    }
+  ],
+  "note": "BDB keys: the noun takes b.ci.ab and b.ci.ac. In the database b.ci.ab's 318 tokens include בְּרִית tokens filed by spelling (they are b.da.ab, the barah entry's word), and b.ci.ac holds בַּעַל tokens of every sense, including the god, the Reubenite and Benjamite named Baal, and the place Baal of Simeon (1Ch 4:33); the two keys overlap, and both are named so the noun's tokens are counted. Left out, as place names: בַּעֲלָה Baalah (b.ci.ap, whose tokens in the database are יְהוּדָה, filed by spelling), בַּעֲלָת, בְּעָלוֹת, בַּעֲלַת בְּאֵר (tokens are בְּאֵר), and the compounds Baal-gad, Baal-hamon, Baal-hazor, Baal-hermon, Baal-meon, Baal-perazim, Baal-zephon, Baal-shalishah, Baal-tamar (b.ci.ad–an; their tokens are the second element, filed by spelling), and Baal-peor (b.ci.aj), which is the god Baal of Peor and is tagged under names/baal. Names written: names/baal (the god and two men), jerubbaal, merib-baal, beeliada, bealiah, ethbaal, baal-zebub, bel, belshazzar. Already elsewhere: Baal-berith (names/baal-berith, under ברה), Baal-hanan (names/baal-hanan, under חננ), Eshbaal (names/eshbaal, under איש). Not written, root uncertain: בַּעֲלִיס Baalis, the Ammonite king (b.ci.ax), and בַּעֲנָא / בַּעֲנָה Baana, Baanah (b.ci.az, b.ci.ba), which may be בֶּן־עֲנָה or not of this root at all. The verb b.br.an and b.bz.ac are cross-references to Bel and Belshazzar. Open questions: (1) Jer 3:14 and 31:32 בָּעַלְתִּי could be “I have been lord over” rather than “husband”; the marriage context (Jer 3:1–14; 31:32 with the covenant) favours husband, kept so. (2) Peshitta forms in Rom 7:2, 11:4, Mat 5:25 and Gal 4:27 were read from the SEDRA lexemes and the Haqor-Peshitta translation, not checked word by word in the text. (3) Wiktionary's Hebrew “ownership” abstract בַּעֲלוּת is post-biblical and not entered."
+}

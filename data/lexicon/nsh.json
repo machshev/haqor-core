@@ -1,0 +1,251 @@
+{
+  "id": "nsh",
+  "root": "נסה",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "testing",
+    "faith"
+  ],
+  "gloss": "try, put to the test",
+  "summary": "Testing discloses what a person will do. Abraham’s obedience is tested, but Israel is forbidden to demand that Yahweh prove himself.",
+  "words": [
+    {
+      "lemma": "נָסָה",
+      "bdb": [
+        "n.ds.aa"
+      ],
+      "pos": "verb",
+      "gloss": "put to the test",
+      "stems": [
+        {
+          "stem": "piel",
+          "gloss": "test, try",
+          "senses": [
+            {
+              "id": "prove-by-a-trial",
+              "gloss": "prove by a trial",
+              "definition": "God tests Abraham. The psalmist asks Yahweh to examine him and test his heart.",
+              "evidence": [
+                {
+                  "ref": "Gen.22.1",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.26.2"
+                },
+                {
+                  "ref": "Heb.11.17"
+                }
+              ]
+            },
+            {
+              "id": "put-someone-to-the",
+              "gloss": "put someone to the test",
+              "definition": "Israel tests Yahweh by demanding proof of his presence. Jesus cites the prohibition when urged to throw himself down.",
+              "evidence": [
+                {
+                  "ref": "Exo.17.7",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Deu.6.16"
+                },
+                {
+                  "ref": "Mat.4.7"
+                }
+              ]
+            },
+            {
+              "id": "try-out-equipment",
+              "gloss": "try out equipment",
+              "definition": "David attempts to walk in Saul’s armour and removes it because he has never tested it.",
+              "evidence": [
+                {
+                  "ref": "1Sa.17.39",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "venture, be attempted",
+          "senses": [
+            {
+              "id": "venture-be-attempted",
+              "gloss": "venture, be attempted",
+              "definition": "Eliphaz asks whether Job can bear someone venturing a word to him.",
+              "evidence": [
+                {
+                  "ref": "Job.4.2",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "πειράζω",
+          "gloss": "test",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen 22:1, נסה"
+            },
+            {
+              "ref": "Heb.11.17"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַסָּה",
+      "bdb": [
+        "n.ds.ab"
+      ],
+      "pos": "noun",
+      "gloss": "test, trial",
+      "senses": [
+        {
+          "id": "test-trial",
+          "gloss": "test, trial",
+          "definition": "Moses calls Israel to remember the great trials, signs and wonders seen in Egypt.",
+          "evidence": [
+            {
+              "ref": "Deu.4.34",
+              "role": "defining"
+            },
+            {
+              "ref": "Deu.7.19"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "מַסָּה",
+      "bdb": [
+        "n.ds.ac"
+      ],
+      "pos": "name",
+      "gloss": "Massah, Testing",
+      "senses": [
+        {
+          "id": "massah-testing",
+          "gloss": "Massah, Testing",
+          "definition": "Moses names the place for Israel’s test of Yahweh in demanding water.",
+          "evidence": [
+            {
+              "ref": "Exo.17.7",
+              "role": "defining"
+            },
+            {
+              "ref": "Deu.6.16"
+            },
+            {
+              "ref": "Psa.95.8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "נסא",
+      "pos": "verb",
+      "gloss": "test, tempt",
+      "stems": [
+        {
+          "stem": "pael",
+          "gloss": "test, tempt",
+          "senses": [
+            {
+              "id": "test-tempt",
+              "gloss": "test, tempt",
+              "definition": "The tempter urges Jesus to turn stones to bread.",
+              "evidence": [
+                {
+                  "ref": "Mat.4.3",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "ethpaal",
+          "gloss": "be tested",
+          "senses": [
+            {
+              "id": "be-tested",
+              "gloss": "be tested",
+              "definition": "Jesus is led into the wilderness to be tested.",
+              "evidence": [
+                {
+                  "ref": "Mat.4.1",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "root": "נסא"
+    },
+    {
+      "lemma": "נסיונא",
+      "pos": "noun",
+      "gloss": "trial, temptation",
+      "senses": [
+        {
+          "id": "trial-temptation",
+          "gloss": "trial, temptation",
+          "definition": "Jesus teaches the disciples to ask to be spared temptation. Paul warns that desire for wealth draws people into temptation.",
+          "evidence": [
+            {
+              "ref": "Mat.6.13",
+              "role": "defining"
+            },
+            {
+              "ref": "1Ti.6.9"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "lang": "syc",
+      "root": "נסא"
+    },
+    {
+      "lemma": "נסינא",
+      "pos": "noun",
+      "gloss": "proof, test",
+      "senses": [
+        {
+          "id": "proof-test",
+          "gloss": "proof, test",
+          "definition": "Paul writes to learn the proof of the Corinthians’ obedience.",
+          "evidence": [
+            {
+              "ref": "2Co.2.9",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "lang": "syc",
+      "root": "נסא"
+    }
+  ],
+  "cognates": [],
+  "doctrine": [],
+  "note": "Massah is explicitly explained from the verb. The ambiguous Job 9:23 noun can also be read with the family of melting and despair."
+}

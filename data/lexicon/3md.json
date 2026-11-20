@@ -1,0 +1,2577 @@
+{
+  "id": "3md",
+  "root": "עמד",
+  "status": "draft",
+  "updated": "2026-11-15",
+  "tags": [
+    "standing",
+    "service",
+    "endurance",
+    "pillar",
+    "appointment",
+    "judgment",
+    "resurrection",
+    "baptism"
+  ],
+  "gloss": "stand, take one’s stand; stand still, stay; stand firm, endure; stand before (serve); (hiphil) make stand, station, set up, establish; pillar; station",
+  "summary": "To be on one’s feet and stay there: to stand in a place, to stand before a king or before Yahweh as his servant, to stand still and stop, to hold one’s ground against an enemy, and so to last (Gen 18:22; 1Ki 17:1; Jos 10:13; Jos 21:44; Psa 33:11). Where קוּם is the movement of getting up, עָמַד is the state of standing and remaining, though the late books (Daniel, Ezra, Nehemiah, Chronicles, Esther) also use it for a king or a deliverer “arising” and for Daniel standing up to his lot at the end of the days (Dan 8:23; Est 4:14; Dan 12:13). The hiphil makes stand: presents a person before another, stations and appoints, sets up doors and idols, and establishes a covenant or a throne (Num 27:19; 2Ch 19:5; Neh 3:1; Psa 105:10). Its chief noun is עַמּוּד, the pillar that stands and holds up, whether of the tabernacle, of Solomon’s house, or of cloud and fire; Arabic ʿamada “prop up” and ʿamūd “tent-pole, pillar”, Akkadian emēdu “lean on, be propped up”, Phoenician ʿmd and Geʿez ʿamd “column” show the same root.",
+  "words": [
+    {
+      "lemma": "עָמַד",
+      "pos": "verb",
+      "gloss": "stand, take one’s stand; stand still, stay; endure; stand before (serve); withstand; arise; (hiphil) make stand, station, appoint, set up, establish",
+      "bdb": [
+        "p.df.aa"
+      ],
+      "cognate_ids": [
+        "ar-amada",
+        "akk-emedu",
+        "gez-ammada"
+      ],
+      "summary": "About 520 uses: some 430 in the qal, 85 in the hiphil and two in the hophal. More than a third of the hiphil’s uses, and the qal senses “arise, come on the scene” and “stand up”, are in Daniel, Ezra, Nehemiah, Chronicles and Esther, where עָמַד does work that the earlier books give to קוּם. The count takes in three infinitives עָמְדוֹ also counted under the noun עֹמֶד, and a few tokens of the nouns עֹמֶד and מָעֳמָד spelt like verb forms.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "stand; stand before (serve); stand still, stop; stay, remain; endure; hold one’s ground; stand against; arise; stand up",
+          "senses": [
+            {
+              "id": "stand",
+              "gloss": "stand, be standing; take one’s stand",
+              "definition": "To be upright on one’s feet in a place, or to go and take up a place there; of things, to be set upright or to rest on a base. It is set against sitting and against walking on.",
+              "evidence": [
+                {
+                  "ref": "Exo.18.13",
+                  "role": "defining",
+                  "note": "Moses sat (וַיֵּשֶׁב) to judge, “and the people stood around Moses from the morning until the evening”."
+                },
+                {
+                  "ref": "Psa.1.1",
+                  "role": "defining",
+                  "note": "The three postures in order: he has not walked in the counsel of wicked men, nor stood in the way of sinners, nor sat in the seat of scoffers."
+                },
+                {
+                  "ref": "Exo.3.5",
+                  "role": "defining",
+                  "note": "“The place on which you are standing (עוֹמֵד) is holy ground”; quoted in Act 7:33."
+                },
+                {
+                  "ref": "Act.7.33",
+                  "note": "Stephen quotes Exo 3:5 with ἕστηκας; the Peshitta has ܩܐܡ, its usual word for standing."
+                },
+                {
+                  "ref": "Gen.18.8",
+                  "note": "Abraham “was standing by them under the tree, and they ate”."
+                },
+                {
+                  "ref": "Gen.24.30",
+                  "note": "The man “was standing by the camels at the spring”."
+                },
+                {
+                  "ref": "Gen.41.17",
+                  "note": "Pharaoh in his dream stood on the bank of the river."
+                },
+                {
+                  "ref": "Exo.20.21",
+                  "note": "“The people stood far off, and Moses drew near.”"
+                },
+                {
+                  "ref": "Deu.27.12",
+                  "note": "Six tribes “shall stand on Mount Gerizim to bless the people”."
+                },
+                {
+                  "ref": "1Ki.8.14",
+                  "note": "“All the assembly of Israel was standing” while Solomon blessed them."
+                },
+                {
+                  "ref": "Neh.8.4",
+                  "note": "Ezra stood on a platform of wood made for the purpose."
+                },
+                {
+                  "ref": "Zec.14.4",
+                  "note": "“His feet shall stand in that day on the Mount of Olives.”"
+                },
+                {
+                  "ref": "Psa.122.2",
+                  "note": "“Our feet are standing in your gates, Jerusalem.”"
+                },
+                {
+                  "ref": "Exo.26.15",
+                  "note": "Of things: the boards of the Dwelling are acacia wood “standing up” (עֹמְדִים)."
+                },
+                {
+                  "ref": "1Ki.7.25",
+                  "note": "The sea “stood on twelve oxen”."
+                },
+                {
+                  "ref": "Exo.33.10",
+                  "note": "All the people saw the pillar of cloud “standing at the entrance of the tent”."
+                }
+              ],
+              "kin": [
+                "standing-place",
+                "station",
+                "foothold",
+                "pillar"
+              ]
+            },
+            {
+              "id": "stand-before",
+              "gloss": "stand before (a king, Yahweh): attend on, serve",
+              "definition": "With לִפְנֵי: to be in attendance on a superior, ready for his word, and so to be in his service. It is said of a king’s servants and counsellors, of the priests and Levites, of the prophets, and of the host of the heavens.",
+              "evidence": [
+                {
+                  "ref": "1Ki.10.8",
+                  "role": "defining",
+                  "note": "“Happy are these your servants, who stand before you continually, who hear your wisdom.”"
+                },
+                {
+                  "ref": "Deu.10.8",
+                  "role": "defining",
+                  "note": "Yahweh set apart the tribe of Levi “to stand before Yahweh to serve him (לְשָׁרְתוֹ) and to bless in his name”."
+                },
+                {
+                  "ref": "1Ki.17.1",
+                  "role": "defining",
+                  "note": "Elijah’s oath: “As Yahweh the God of Israel lives, before whom I stand.” So 1Ki 18:15; 2Ki 3:14; 5:16."
+                },
+                {
+                  "ref": "Gen.41.46",
+                  "note": "Joseph was thirty years old “when he stood before Pharaoh king of Egypt”."
+                },
+                {
+                  "ref": "1Sa.16.22",
+                  "note": "Saul to Jesse: “Let David stand before me, for he has found favour in my eyes.”"
+                },
+                {
+                  "ref": "1Ki.1.2",
+                  "note": "A young woman is to “stand before the king” and care for him."
+                },
+                {
+                  "ref": "1Ki.12.6",
+                  "note": "The elders “who had stood before Solomon his father while he lived”."
+                },
+                {
+                  "ref": "Dan.1.19",
+                  "note": "Daniel and his companions “stood before the king”; Dan 1:5."
+                },
+                {
+                  "ref": "Deu.18.5",
+                  "note": "Yahweh chose the priest “to stand to serve in the name of Yahweh, him and his sons all the days”."
+                },
+                {
+                  "ref": "2Ch.29.11",
+                  "note": "“Yahweh has chosen you to stand before him, to serve him.”"
+                },
+                {
+                  "ref": "Psa.134.1",
+                  "note": "The servants of Yahweh “who stand in the house of Yahweh in the nights”; Psa 135:2."
+                },
+                {
+                  "ref": "Heb.10.11",
+                  "note": "“Every priest stands (ἕστηκεν) daily ministering”: the same standing to serve, set against Christ who “sat down”."
+                },
+                {
+                  "ref": "1Ki.22.19",
+                  "note": "Micaiah saw Yahweh sitting on his throne “and all the host of the heavens standing by him on his right and on his left”."
+                },
+                {
+                  "ref": "Luk.1.19",
+                  "note": "“I am Gabriel, who stand before God” (παρεστηκώς; Peshitta ܩܐܡ)."
+                },
+                {
+                  "ref": "Zec.4.14",
+                  "note": "The two sons of oil “who stand by the Lord of all the earth”; taken up in Rev 11:4."
+                },
+                {
+                  "ref": "Rev.11.4"
+                },
+                {
+                  "ref": "Jer.15.19",
+                  "note": "To Jeremiah: “If you return, I will bring you back; you shall stand before me.”"
+                },
+                {
+                  "ref": "Jer.35.19",
+                  "note": "Jonadab son of Rechab “shall not lack a man to stand before me all the days”."
+                },
+                {
+                  "ref": "Jer.23.18",
+                  "note": "“Who has stood in the council of Yahweh, and seen and heard his word?” The true prophet is one who has (Jer 23:22)."
+                },
+                {
+                  "ref": "Zec.3.7",
+                  "note": "Joshua the high priest is promised “goings among these who stand here”."
+                }
+              ],
+              "kin": [
+                "station",
+                "attendance"
+              ]
+            },
+            {
+              "id": "stand-for-judgment",
+              "gloss": "stand before (a judge, the congregation, Yahweh): appear, present oneself",
+              "definition": "To come and stand before one who will hear and decide: a litigant before the judges, a petitioner before a ruler, the people before Yahweh.",
+              "evidence": [
+                {
+                  "ref": "Deu.19.17",
+                  "role": "defining",
+                  "note": "“The two men who have the dispute shall stand before Yahweh, before the priests and the judges who shall be in those days.”"
+                },
+                {
+                  "ref": "Num.35.12",
+                  "role": "defining",
+                  "note": "The manslayer shall not die “until he stands before the congregation for the judgment”; Jos 20:6, 9."
+                },
+                {
+                  "ref": "Num.27.2",
+                  "note": "The daughters of Zelophehad “stood before Moses and before Eleazar the priest” with their claim."
+                },
+                {
+                  "ref": "1Ki.3.16",
+                  "note": "Two women came to the king “and stood before him”."
+                },
+                {
+                  "ref": "Gen.43.15",
+                  "note": "Joseph’s brothers went down to Egypt “and stood before Joseph”."
+                },
+                {
+                  "ref": "Num.27.21",
+                  "note": "Joshua “shall stand before Eleazar the priest”, who shall ask for him by the judgment of the Urim."
+                },
+                {
+                  "ref": "Lev.9.5",
+                  "note": "“All the congregation drew near and stood before Yahweh.”"
+                },
+                {
+                  "ref": "Deu.4.10",
+                  "note": "“The day that you stood before Yahweh your God in Horeb.”"
+                },
+                {
+                  "ref": "Jer.7.10",
+                  "note": "“And you come and stand before me in this house, which is called by my name, and say, We are delivered?”"
+                },
+                {
+                  "ref": "Isa.50.8",
+                  "note": "“Who will contend with me? Let us stand together.”"
+                },
+                {
+                  "ref": "Isa.3.13",
+                  "note": "Of the judge himself: “Yahweh has taken his place to contend, and is standing to judge peoples.”"
+                },
+                {
+                  "ref": "Rom.14.10",
+                  "note": "“We shall all stand before the judgment seat of Christ.”"
+                }
+              ]
+            },
+            {
+              "id": "stand-for",
+              "gloss": "stand for, stand over, stand in the breach: intercede, protect",
+              "definition": "To take one’s stand between a person and what threatens him, or over him as his guard: of Moses, Aaron and Phinehas turning away wrath, of a prophet speaking good for the people, of Michael the prince of Daniel’s people, and of Yahweh at the right hand of the needy.",
+              "evidence": [
+                {
+                  "ref": "Psa.106.23",
+                  "role": "defining",
+                  "note": "He would have destroyed them, “had not Moses his chosen stood in the breach before him, to turn back his wrath from destroying”."
+                },
+                {
+                  "ref": "Num.17.13",
+                  "role": "defining",
+                  "note": "Aaron with the censer “stood between the dead and the living, and the plague was stayed”."
+                },
+                {
+                  "ref": "Ezk.22.30",
+                  "note": "“I sought among them a man building a wall and standing in the breach before me for the land, that I should not destroy it, and I found none.”"
+                },
+                {
+                  "ref": "Jer.18.20",
+                  "note": "“Remember my standing before you to speak good for them, to turn back your wrath from them.”"
+                },
+                {
+                  "ref": "Jer.15.1",
+                  "note": "“Though Moses and Samuel stood before me, my soul would not be toward this people.”"
+                },
+                {
+                  "ref": "Psa.106.30",
+                  "note": "“Phinehas stood and intervened, and the plague was stayed.”"
+                },
+                {
+                  "ref": "Deu.5.5",
+                  "note": "Moses: “I stood between Yahweh and you at that time, to declare to you the word of Yahweh.”"
+                },
+                {
+                  "ref": "Psa.109.31",
+                  "note": "Yahweh “stands at the right hand of the needy, to save him from those who judge his soul”."
+                },
+                {
+                  "ref": "Dan.12.1",
+                  "note": "Michael is “the great prince who stands over (הָעֹמֵד עַל) the sons of your people”."
+                },
+                {
+                  "ref": "Est.8.11",
+                  "note": "The Jews are allowed “to gather and to stand for their life”; Est 9:16."
+                },
+                {
+                  "ref": "Ezr.10.14",
+                  "note": "“Let our princes stand for all the assembly.”"
+                }
+              ]
+            },
+            {
+              "id": "stand-still",
+              "gloss": "stand still, stop, cease",
+              "definition": "To stop moving or stop doing: of the sun and moon, of waters, of a pursuing army, of oil that stops flowing and of a woman who stops bearing. It is set against going, fleeing and hurrying.",
+              "evidence": [
+                {
+                  "ref": "Jos.10.13",
+                  "role": "defining",
+                  "note": "“The sun was still (וַיִּדֹּם) and the moon stood (עָמָד) … the sun stood in the midst of the heavens and did not hurry to go down for about a whole day.”"
+                },
+                {
+                  "ref": "Ezk.1.21",
+                  "role": "defining",
+                  "note": "Of the wheels and the living ones: “when those went, these went; and when those stood, these stood”."
+                },
+                {
+                  "ref": "2Sa.2.28",
+                  "role": "defining",
+                  "note": "Joab blew the trumpet, “and all the people stood, and pursued Israel no more”."
+                },
+                {
+                  "ref": "Hab.3.11",
+                  "note": "“Sun, moon stood in their dwelling.”"
+                },
+                {
+                  "ref": "Jos.3.16",
+                  "note": "The waters of the Jordan coming down from above “stood, they rose up in one heap”; Jos 3:13."
+                },
+                {
+                  "ref": "Gen.19.17",
+                  "note": "“Do not look behind you, and do not stand in all the plain; escape to the mountain.”"
+                },
+                {
+                  "ref": "Jer.4.6",
+                  "note": "“Flee for safety, do not stand”; Jer 51:50."
+                },
+                {
+                  "ref": "Nam.2.9",
+                  "note": "Nineveh’s people flee: “Stand, stand! but none turns back.”"
+                },
+                {
+                  "ref": "1Sa.20.38",
+                  "note": "“Quickly, hurry, do not stand.”"
+                },
+                {
+                  "ref": "2Ki.4.6",
+                  "note": "There was no vessel more, “and the oil stood”."
+                },
+                {
+                  "ref": "Gen.29.35",
+                  "note": "Leah “stood from bearing”; Gen 30:9."
+                },
+                {
+                  "ref": "Jon.1.15",
+                  "note": "They threw Jonah into the sea, “and the sea stood from its raging”."
+                },
+                {
+                  "ref": "2Ki.13.18",
+                  "note": "Joash struck the ground three times “and stood” (stopped)."
+                },
+                {
+                  "ref": "1Sa.9.27",
+                  "note": "“But you, stand now, and I will let you hear the word of God.”"
+                },
+                {
+                  "ref": "Job.37.14",
+                  "note": "“Stand, and consider the wonders of God.”"
+                }
+              ]
+            },
+            {
+              "id": "stay",
+              "gloss": "stay, remain, wait; be left as it was",
+              "definition": "To stay where one is and not go; of a thing, to remain in its place or in its state, unchanged.",
+              "evidence": [
+                {
+                  "ref": "Deu.5.31",
+                  "role": "defining",
+                  "note": "The people are sent back to their tents: “but you, stand here with me, and I will speak to you all the commandment”."
+                },
+                {
+                  "ref": "Lev.13.5",
+                  "role": "defining",
+                  "note": "“The plague has stood in his eyes; the plague has not spread in the skin”; Lev 13:23, 28, 37."
+                },
+                {
+                  "ref": "Jer.48.11",
+                  "role": "defining",
+                  "note": "Moab has not been emptied from vessel to vessel: “therefore his taste has stood in him, and his scent has not changed”."
+                },
+                {
+                  "ref": "Gen.45.9",
+                  "note": "“Come down to me, do not stand” (do not delay)."
+                },
+                {
+                  "ref": "Exo.9.28",
+                  "note": "Pharaoh: “I will let you go, and you shall stand no longer.”"
+                },
+                {
+                  "ref": "1Sa.30.9",
+                  "note": "At the brook Besor “those left behind stood”; two hundred stayed (1Sa 30:10)."
+                },
+                {
+                  "ref": "2Ki.15.20",
+                  "note": "The king of Assyria turned back “and did not stand there in the land”."
+                },
+                {
+                  "ref": "Est.7.7",
+                  "note": "The king went out to the garden, “but Haman stood to seek for his life from Esther”."
+                },
+                {
+                  "ref": "2Ki.6.31",
+                  "note": "“If the head of Elisha the son of Shaphat shall stand on him today.”"
+                },
+                {
+                  "ref": "Hag.2.5",
+                  "note": "“My spirit stands in your midst; do not fear.”"
+                },
+                {
+                  "ref": "Ecc.2.9",
+                  "note": "“Also my wisdom stood to me.”"
+                },
+                {
+                  "ref": "Dan.10.17",
+                  "note": "“From now no strength stands in me, and no breath is left in me.”"
+                },
+                {
+                  "ref": "Exo.8.18",
+                  "note": "The land of Goshen, “on which my people stands” (stays, dwells)."
+                }
+              ]
+            },
+            {
+              "id": "endure",
+              "gloss": "stand, endure, last",
+              "definition": "To go on standing through time: of the earth, of Yahweh himself and his counsel, righteousness and praise, of a house, a seed and a name, a word or a document. It is set against perishing and passing away.",
+              "evidence": [
+                {
+                  "ref": "Psa.102.27",
+                  "role": "defining",
+                  "note": "Of the heavens and the earth: “they shall perish (יֹאבֵדוּ), but you shall stand (תַעֲמֹד)”; quoted in Heb 1:11."
+                },
+                {
+                  "ref": "Heb.1.11",
+                  "note": "Psa 102:27 quoted: “they shall perish, but you remain (διαμένεις)”; Peshitta ܩܝܡ."
+                },
+                {
+                  "ref": "Ecc.1.4",
+                  "role": "defining",
+                  "note": "“A generation goes and a generation comes, but the earth stands for ever.”"
+                },
+                {
+                  "ref": "Psa.33.11",
+                  "role": "defining",
+                  "note": "“The counsel of Yahweh stands for ever, the thoughts of his heart to generation and generation.”"
+                },
+                {
+                  "ref": "Psa.112.9",
+                  "note": "“His righteousness stands for ever”; quoted in 2Co 9:9. So Psa 111:3; 112:3."
+                },
+                {
+                  "ref": "2Co.9.9",
+                  "note": "Psa 112:9 quoted: “his righteousness remains (μένει) for ever”; Peshitta ܩܝܡܐ."
+                },
+                {
+                  "ref": "Psa.19.10",
+                  "note": "“The fear of Yahweh is clean, standing for ever.”"
+                },
+                {
+                  "ref": "Psa.111.10",
+                  "note": "“His praise stands for ever.”"
+                },
+                {
+                  "ref": "Isa.66.22",
+                  "note": "“As the new heavens and the new earth which I make stand before me … so shall your seed and your name stand.”"
+                },
+                {
+                  "ref": "Psa.119.90",
+                  "note": "“You established the earth, and it stands”; all things “stand today” by his judgments (Psa 119:91)."
+                },
+                {
+                  "ref": "Pro.12.7",
+                  "note": "“The wicked are overthrown and are not, but the house of righteous men shall stand.”"
+                },
+                {
+                  "ref": "Jer.32.14",
+                  "note": "The deeds are put in an earthen vessel “that they may stand many days”."
+                },
+                {
+                  "ref": "Est.3.4",
+                  "note": "“To see whether Mordecai’s words would stand.”"
+                },
+                {
+                  "ref": "Exo.18.23",
+                  "note": "Jethro to Moses: “then you will be able to stand” (to last under the load)."
+                },
+                {
+                  "ref": "Exo.21.21",
+                  "note": "A struck servant who “stands a day or two” (lives on)."
+                },
+                {
+                  "ref": "Ezk.17.14",
+                  "note": "The kingdom was to keep the covenant “that it might stand”."
+                },
+                {
+                  "ref": "Dan.11.17",
+                  "note": "Of a plan: “it shall not stand, nor be for him.”"
+                }
+              ]
+            },
+            {
+              "id": "come-to-stand",
+              "gloss": "stand at God’s word, come to be",
+              "definition": "Of what God made: to stand in its place at his command.",
+              "evidence": [
+                {
+                  "ref": "Psa.33.9",
+                  "role": "defining",
+                  "note": "“He spoke, and it was; he commanded, and it stood.”"
+                },
+                {
+                  "ref": "Isa.48.13",
+                  "role": "defining",
+                  "note": "Of earth and heavens: “I call to them, they stand together.”"
+                },
+                {
+                  "ref": "Psa.119.91",
+                  "note": "“By your judgments they stand today, for all are your servants.”"
+                },
+                {
+                  "ref": "Psa.104.6",
+                  "note": "At the first, “the waters stood above the mountains”, until his rebuke (Psa 104:7)."
+                }
+              ]
+            },
+            {
+              "id": "withstand",
+              "gloss": "stand before, hold one’s ground, withstand",
+              "definition": "With לִפְנֵי or בִּפְנֵי, mostly in the negative or as a question: to keep one’s feet before an enemy, before Yahweh’s anger or in his judgment, and not fall or flee.",
+              "evidence": [
+                {
+                  "ref": "Jos.21.44",
+                  "role": "defining",
+                  "note": "“Not a man of all their enemies stood before them; Yahweh gave all their enemies into their hand.” So Jos 10:8; 23:9."
+                },
+                {
+                  "ref": "Nam.1.6",
+                  "role": "defining",
+                  "note": "“Before his indignation who can stand (יַעֲמוֹד)? And who can rise (יָקוּם) in the heat of his anger?”"
+                },
+                {
+                  "ref": "Mal.3.2",
+                  "role": "defining",
+                  "note": "“Who can bear the day of his coming, and who is he that stands when he appears?”"
+                },
+                {
+                  "ref": "Rev.6.17",
+                  "note": "“The great day of his wrath is come, and who is able to stand (σταθῆναι)?”: the question of Nam 1:6 and Mal 3:2."
+                },
+                {
+                  "ref": "Psa.130.3",
+                  "note": "“If you should mark iniquities, Yah, O Lord, who shall stand?”"
+                },
+                {
+                  "ref": "Psa.76.8",
+                  "note": "“Who shall stand before you once you are angry?”"
+                },
+                {
+                  "ref": "1Sa.6.20",
+                  "note": "“Who is able to stand before Yahweh, this holy God?”"
+                },
+                {
+                  "ref": "Ezr.9.15",
+                  "note": "“We are before you in our guilt, for none can stand before you because of this.”"
+                },
+                {
+                  "ref": "Jdg.2.14",
+                  "note": "Israel “could no longer stand before their enemies”."
+                },
+                {
+                  "ref": "2Ki.10.4",
+                  "note": "“Two kings did not stand before him; how then shall we stand?”"
+                },
+                {
+                  "ref": "Amo.2.15",
+                  "note": "“He who handles the bow shall not stand.”"
+                },
+                {
+                  "ref": "Jer.46.21",
+                  "note": "Egypt’s hired men “turned, fled together, did not stand”."
+                },
+                {
+                  "ref": "Ezk.22.14",
+                  "note": "“Will your heart stand, or your hands be strong, in the days when I deal with you?”"
+                },
+                {
+                  "ref": "Ezk.13.5",
+                  "note": "The prophets built no wall “to stand in the battle in the day of Yahweh”."
+                },
+                {
+                  "ref": "Dan.8.7",
+                  "note": "“There was no strength in the ram to stand before him”; Dan 8:4; 11:15, 16."
+                },
+                {
+                  "ref": "Exo.9.11",
+                  "note": "“The magicians could not stand before Moses because of the boils.”"
+                },
+                {
+                  "ref": "Luk.21.36",
+                  "note": "“That you may be counted worthy … to stand (σταθῆναι) before the son of man.”"
+                }
+              ],
+              "kin": [
+                "foothold"
+              ]
+            },
+            {
+              "id": "stand-against",
+              "gloss": "stand against, oppose",
+              "definition": "With עַל, or with נֶגֶד or לְנֶגֶד: to take a stand against a person, to oppose or attack him.",
+              "evidence": [
+                {
+                  "ref": "2Ch.26.18",
+                  "role": "defining",
+                  "note": "The priests “stood against Uzziah the king and said to him, It is not for you, Uzziah, to burn incense to Yahweh”."
+                },
+                {
+                  "ref": "1Ch.21.1",
+                  "role": "defining",
+                  "note": "“An adversary (שָׂטָן, without the article) stood against Israel and moved David to number Israel.”"
+                },
+                {
+                  "ref": "2Ch.20.23",
+                  "note": "“The sons of Ammon and Moab stood against the dwellers of Mount Seir, to devote and destroy them.”"
+                },
+                {
+                  "ref": "Dan.8.25",
+                  "note": "The king of fierce face “shall stand against a prince of princes, and shall be broken without hand”."
+                },
+                {
+                  "ref": "Dan.11.14",
+                  "note": "“In those times many shall stand against the king of the south.”"
+                },
+                {
+                  "ref": "Dan.10.13",
+                  "note": "“The prince of the kingdom of Persia stood against me (עֹמֵד לְנֶגְדִּי) twenty-one days.”"
+                },
+                {
+                  "ref": "Jdg.6.31",
+                  "note": "Joash spoke “to all who stood against him”."
+                },
+                {
+                  "ref": "Lev.19.16",
+                  "note": "“You shall not stand against the blood of your neighbour.”"
+                },
+                {
+                  "ref": "Ezr.10.15",
+                  "note": "Only Jonathan and Jahzeiah “stood against this”."
+                },
+                {
+                  "ref": "Zec.3.1",
+                  "note": "Joshua stood before the angel of Yahweh, “and the adversary (הַשָּׂטָן) standing at his right hand to be an adversary to him”; so Psa 109:6."
+                },
+                {
+                  "ref": "Ecc.4.12",
+                  "note": "“If one overpowers him, the two shall stand against him.”"
+                }
+              ]
+            },
+            {
+              "id": "arise",
+              "gloss": "arise, come on the scene, stand up in office",
+              "definition": "In the late books, of a person or thing coming to be there where it was not: a king, a kingdom, a priest, deliverance, war. The earlier books use קוּם for this (Exo 1:8; Deu 34:10; Jdg 5:7).",
+              "evidence": [
+                {
+                  "ref": "Dan.8.23",
+                  "role": "defining",
+                  "note": "“At the latter end of their kingdom … a king of fierce face shall stand.” The four kingdoms that “stand” out of the nation are in Dan 8:22."
+                },
+                {
+                  "ref": "Dan.11.3",
+                  "role": "defining",
+                  "note": "“A mighty king shall stand, and shall rule with great dominion”; “when he has stood, his kingdom shall be broken” (Dan 11:4)."
+                },
+                {
+                  "ref": "Ezr.2.63",
+                  "role": "defining",
+                  "note": "They were not to eat of the most holy things “until a priest stood with Urim and with Thummim”; Neh 7:65."
+                },
+                {
+                  "ref": "Dan.11.2",
+                  "note": "“Three kings more are standing for Persia.”"
+                },
+                {
+                  "ref": "Dan.11.7",
+                  "note": "“One from a shoot of her roots shall stand in his place”; so Dan 11:20, 21."
+                },
+                {
+                  "ref": "Dan.12.1",
+                  "note": "“At that time shall Michael stand, the great prince who stands over the sons of your people; and there shall be a time of distress such as has not been since there was a nation.”"
+                },
+                {
+                  "ref": "Est.4.14",
+                  "note": "“Relief and deliverance shall stand for the Jews from another place.”"
+                },
+                {
+                  "ref": "1Ch.20.4",
+                  "note": "“War stood at Gezer with the Philistines”, where 2Sa 21:18 has “there was again war”."
+                },
+                {
+                  "ref": "Ecc.4.15",
+                  "note": "“The second youth, who shall stand in his place.”"
+                },
+                {
+                  "ref": "Mic.5.3",
+                  "note": "Of the ruler from Bethlehem: “he shall stand and shepherd in the strength of Yahweh”."
+                },
+                {
+                  "ref": "Isa.11.10",
+                  "note": "“The root of Jesse, which stands for a banner of peoples: him shall nations seek.”"
+                }
+              ]
+            },
+            {
+              "id": "stand-up",
+              "gloss": "stand up, get to one’s feet; stand up from the dead",
+              "definition": "To come to a standing position from sitting, from lying on the face, or from death: often “on one’s feet”. Of Daniel it is said of the end of the days, after he has rested.",
+              "evidence": [
+                {
+                  "ref": "Ezk.37.10",
+                  "role": "defining",
+                  "note": "Of the slain in the valley: “the breath came into them, and they lived, and stood on their feet, a very, very great force.” Rev 11:11 takes up the words."
+                },
+                {
+                  "ref": "Dan.12.13",
+                  "role": "defining",
+                  "note": "“And you, go to the end; and you shall rest (וְתָנוּחַ), and shall stand (וְתַעֲמֹד) to your lot at the end of the days.” The rest is the sleep in the dust of Dan 12:2; the standing follows it."
+                },
+                {
+                  "ref": "Rev.11.11",
+                  "note": "“A spirit of life from God entered into them, and they stood on their feet (ἔστησαν ἐπὶ τοὺς πόδας αὐτῶν)”; Peshitta ܘܩܡܘ."
+                },
+                {
+                  "ref": "Ezk.2.1",
+                  "role": "defining",
+                  "note": "To Ezekiel, fallen on his face (Ezk 1:28): “Son of man, stand on your feet, and I will speak with you.” Act 26:16 uses the same words to Saul."
+                },
+                {
+                  "ref": "Act.26.16",
+                  "note": "“Rise, and stand on your feet (στῆθι ἐπὶ τοὺς πόδας σου)”; Peshitta ܩܘܡ."
+                },
+                {
+                  "ref": "Dan.10.11",
+                  "note": "“Stand on your standing-place … and when he had spoken this word with me, I stood trembling.”"
+                },
+                {
+                  "ref": "Neh.8.5",
+                  "note": "When Ezra opened the book, “all the people stood”."
+                },
+                {
+                  "ref": "Job.29.8",
+                  "note": "“Aged men rose (קָמוּ), stood (עָמָדוּ)”: the rising, then the standing."
+                },
+                {
+                  "ref": "Est.8.4",
+                  "note": "“Esther rose (וַתָּקָם) and stood (וַתַּעֲמֹד) before the king.”"
+                },
+                {
+                  "ref": "2Ch.20.20",
+                  "note": "As they went out, “Jehoshaphat stood and said, Hear me, Judah”."
+                },
+                {
+                  "ref": "Zec.14.12",
+                  "note": "Flesh shall rot “while he stands on his feet”."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "make stand; set before, present; station, appoint; set up, erect; establish, confirm; raise (a host)",
+          "senses": [
+            {
+              "id": "make-stand",
+              "gloss": "make stand, set on one’s feet; set in a place",
+              "definition": "To put someone on his feet, or to make him stand in a place.",
+              "evidence": [
+                {
+                  "ref": "Ezk.2.2",
+                  "role": "defining",
+                  "note": "“Spirit came into me … and made me stand on my feet”; Ezk 3:24."
+                },
+                {
+                  "ref": "Dan.8.18",
+                  "role": "defining",
+                  "note": "Daniel lay in a deep sleep with his face to the ground; “he touched me and made me stand on my standing-place”."
+                },
+                {
+                  "ref": "Psa.18.34",
+                  "note": "“He makes my feet like the hinds’, and makes me stand on my high places”; 2Sa 22:34."
+                },
+                {
+                  "ref": "Psa.31.9",
+                  "note": "“You have made my feet stand in a broad place.”"
+                },
+                {
+                  "ref": "Jdg.16.25",
+                  "note": "They “made him stand between the pillars”."
+                },
+                {
+                  "ref": "Num.11.24",
+                  "note": "Moses gathered seventy elders “and made them stand around the tent”."
+                },
+                {
+                  "ref": "2Ch.34.32",
+                  "note": "Josiah “made all who were found in Jerusalem and Benjamin stand” to the covenant."
+                },
+                {
+                  "ref": "Rom.14.4",
+                  "note": "Of a servant before his master: “he shall be made to stand, for God is able to make him stand (στῆσαι)”; Peshitta ܕܢܩܝܡܝܘܗܝ."
+                }
+              ]
+            },
+            {
+              "id": "present",
+              "gloss": "set before, present",
+              "definition": "With לִפְנֵי: to bring a person or an animal and stand it before another, before a king, a priest or Yahweh. It is the causative of standing before.",
+              "evidence": [
+                {
+                  "ref": "Gen.47.7",
+                  "role": "defining",
+                  "note": "“Joseph brought Jacob his father and made him stand before Pharaoh.”"
+                },
+                {
+                  "ref": "Num.27.19",
+                  "role": "defining",
+                  "note": "Of Joshua: “make him stand before Eleazar the priest and before all the congregation, and charge him before their eyes”; done in Num 27:22."
+                },
+                {
+                  "ref": "Lev.16.7",
+                  "note": "The two goats are made to stand before Yahweh at the entrance of the tent of meeting."
+                },
+                {
+                  "ref": "Lev.14.11",
+                  "note": "The priest makes the man who is to be cleansed stand before Yahweh."
+                },
+                {
+                  "ref": "Num.5.16",
+                  "note": "The priest makes the woman stand before Yahweh; Num 5:18, 30."
+                },
+                {
+                  "ref": "Lev.27.8",
+                  "note": "A poor man is made to stand before the priest, who values him; so an animal, Lev 27:11."
+                },
+                {
+                  "ref": "Num.3.6",
+                  "note": "“Bring the tribe of Levi near and make it stand before Aaron the priest, and they shall serve him”; Num 8:13."
+                }
+              ],
+              "kin": [
+                "station",
+                "attendance"
+              ]
+            },
+            {
+              "id": "appoint",
+              "gloss": "station, post; appoint (to an office)",
+              "definition": "To put men at their posts, or a man in an office: watchmen, guards, singers, gatekeepers, priests, judges, a king’s heir. Mostly in Chronicles and Nehemiah.",
+              "evidence": [
+                {
+                  "ref": "2Ch.19.5",
+                  "role": "defining",
+                  "note": "Jehoshaphat “made judges stand in the land, in all the fortified cities of Judah, city by city”; 2Ch 19:8."
+                },
+                {
+                  "ref": "Neh.4.7",
+                  "role": "defining",
+                  "note": "“I made the people stand by families, with their swords, their spears and their bows.”"
+                },
+                {
+                  "ref": "Isa.21.6",
+                  "note": "“Go, make the watchman stand; what he sees let him declare.”"
+                },
+                {
+                  "ref": "1Ki.12.32",
+                  "note": "Jeroboam “made stand in Bethel the priests of the high places which he had made”; 2Ch 11:15."
+                },
+                {
+                  "ref": "1Ch.15.16",
+                  "note": "The Levites are told “to make their brothers the singers stand, with instruments of song”; 1Ch 15:17; 6:16."
+                },
+                {
+                  "ref": "2Ch.8.14",
+                  "note": "Solomon “made stand, by the ordinance of David his father, the divisions of the priests over their service”."
+                },
+                {
+                  "ref": "2Ch.23.19",
+                  "note": "Jehoiada “made the gatekeepers stand at the gates of the house of Yahweh”."
+                },
+                {
+                  "ref": "2Ch.11.22",
+                  "note": "“Rehoboam made Abijah the son of Maacah stand as head, as leader among his brothers, to make him king.”"
+                },
+                {
+                  "ref": "Neh.6.7",
+                  "note": "“You have also made prophets stand to proclaim of you in Jerusalem, A king is in Judah.”"
+                },
+                {
+                  "ref": "Neh.13.11",
+                  "note": "“I gathered them and made them stand at their station.”"
+                },
+                {
+                  "ref": "Est.4.5",
+                  "note": "Hathach, of the king’s eunuchs, “whom he had made stand before her”."
+                },
+                {
+                  "ref": "Exo.9.16",
+                  "note": "To Pharaoh: “for this I have made you stand (הֶעֱמַדְתִּיךָ), to show you my power, and that my name be declared in all the earth”; quoted in Rom 9:17."
+                },
+                {
+                  "ref": "Rom.9.17",
+                  "note": "Paul quotes Exo 9:16 with ἐξήγειρά σε, “I raised you up”; the Peshitta has ܐܩܝܡܬܟ, “I made you stand”."
+                }
+              ],
+              "kin": [
+                "station",
+                "standing-place"
+              ]
+            },
+            {
+              "id": "set-up",
+              "gloss": "set up, erect; restore",
+              "definition": "To stand a thing upright in its place: doors in a gate, an idol, a house on its site; and of ruins, to set them up again.",
+              "evidence": [
+                {
+                  "ref": "Neh.3.1",
+                  "role": "defining",
+                  "note": "They built the sheep gate, consecrated it “and set up its doors”; so Neh 3:3, 6, 13–15; 6:1; 7:1."
+                },
+                {
+                  "ref": "2Ch.25.14",
+                  "role": "defining",
+                  "note": "Amaziah brought the gods of the sons of Seir “and set them up for himself as gods”."
+                },
+                {
+                  "ref": "2Ch.33.19",
+                  "note": "Manasseh “set up the Asherim and the carved images”."
+                },
+                {
+                  "ref": "Ezr.2.68",
+                  "note": "They gave freely for the house of God, “to set it up on its site”."
+                },
+                {
+                  "ref": "Ezr.9.9",
+                  "note": "“To raise up the house of our God and to set up its ruins.”"
+                },
+                {
+                  "ref": "2Ch.24.13",
+                  "note": "“They set up the house of God to its measure and strengthened it.”"
+                },
+                {
+                  "ref": "Ezk.24.11",
+                  "note": "“Stand it empty on its coals, that it may be hot.”"
+                }
+              ],
+              "kin": [
+                "pillar"
+              ]
+            },
+            {
+              "id": "establish",
+              "gloss": "establish, make endure; confirm, decree",
+              "definition": "To make a thing stand so that it lasts: a covenant, a king and his throne, a land, the heavens; and in the late books to lay down a rule or a decree. It is the causative of “endure”, and does what הֵקִים does in the earlier books.",
+              "evidence": [
+                {
+                  "ref": "Psa.105.10",
+                  "role": "defining",
+                  "note": "The covenant with Abraham and oath to Isaac “he made stand to Jacob for a statute, to Israel for an age-lasting covenant”; 1Ch 16:17."
+                },
+                {
+                  "ref": "Psa.148.6",
+                  "role": "defining",
+                  "note": "Of the heavens and their host: “he made them stand for ever and ever; he gave a decree and it shall not pass away (וְלֹא יַעֲבוֹר)”."
+                },
+                {
+                  "ref": "1Ch.17.14",
+                  "role": "defining",
+                  "note": "Of David’s son: “I will make him stand in my house and in my kingdom for ever, and his throne shall be established for ever.”"
+                },
+                {
+                  "ref": "2Ch.9.8",
+                  "note": "“Because your God loved Israel, to make it stand for ever, he set you over them as king.”"
+                },
+                {
+                  "ref": "Pro.29.4",
+                  "note": "“A king by judgment makes a land stand, but a man of exactions tears it down (יֶהֶרְסֶנָּה).”"
+                },
+                {
+                  "ref": "1Ki.15.4",
+                  "note": "For David’s sake Yahweh gave him a lamp in Jerusalem, “to raise up his son after him and to make Jerusalem stand”."
+                },
+                {
+                  "ref": "Psa.30.8",
+                  "note": "“Yahweh, in your favour you made strength stand for my mountain.”"
+                },
+                {
+                  "ref": "Neh.10.33",
+                  "note": "“We made commandments stand upon us, to give a third of a shekel in the year.”"
+                },
+                {
+                  "ref": "2Ch.30.5",
+                  "note": "“They made a word stand, to send a proclamation through all Israel.”"
+                },
+                {
+                  "ref": "Dan.11.14",
+                  "note": "Violent men of Daniel’s people lift themselves up “to make vision stand, and they shall stumble”."
+                },
+                {
+                  "ref": "Job.34.24",
+                  "note": "“He breaks mighty men without inquiry, and makes others stand in their place.”"
+                }
+              ]
+            },
+            {
+              "id": "raise-a-multitude-a",
+              "gloss": "raise (a multitude, a storm)",
+              "definition": "To bring a host into the field, or a wind into being: the causative of “arise”.",
+              "evidence": [
+                {
+                  "ref": "Dan.11.11",
+                  "role": "defining",
+                  "note": "The king of the north “shall make a great multitude stand, and the multitude shall be given into his hand”; again Dan 11:13."
+                },
+                {
+                  "ref": "Psa.107.25",
+                  "note": "“He spoke, and made a storm wind stand, and it lifted up its waves.”"
+                }
+              ]
+            },
+            {
+              "id": "hold-fixed-the-face",
+              "gloss": "hold fixed (the face)",
+              "definition": "To keep one’s face set and unmoving. One use.",
+              "evidence": [
+                {
+                  "ref": "2Ki.8.11",
+                  "role": "defining",
+                  "note": "Elisha “made his face stand and set it, until he was ashamed; and the man of God wept”."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hophal",
+          "gloss": "be made to stand; be held upright",
+          "senses": [
+            {
+              "id": "be-made-to-stand",
+              "gloss": "be made to stand, be presented; be held upright",
+              "definition": "The passive of the hiphil: to be stood before Yahweh, and of a wounded man, to be kept standing.",
+              "evidence": [
+                {
+                  "ref": "Lev.16.10",
+                  "role": "defining",
+                  "note": "The goat on which the lot for Azazel fell “shall be made to stand alive before Yahweh, to make a covering over it, to send it away”."
+                },
+                {
+                  "ref": "1Ki.22.35",
+                  "role": "defining",
+                  "note": "The wounded king “was held standing (מָעֳמָד) in the chariot facing Aram, and died in the evening”; 2Ch 18:34 has the hiphil participle מַעֲמִיד."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἵστημι",
+          "gloss": "stand; make stand",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.3.5, עוֹמֵד → ἕστηκας; Ezk.2.1 עֲמֹד → στῆθι; Ezk.37.10 וַיַּעַמְדוּ → ἔστησαν; Zec.14.4 וְעָמְדוּ → στήσονται; ἵστημι renders עָמַד ×294"
+            },
+            {
+              "ref": "Act.7.33",
+              "role": "defining",
+              "note": "Exo 3:5 quoted: “the place on which you stand (ἕστηκας) is holy ground”."
+            },
+            {
+              "ref": "Act.26.16",
+              "note": "“Stand on your feet”, the words of Ezk 2:1."
+            },
+            {
+              "ref": "Rev.11.11",
+              "note": "“They stood on their feet”, the words of Ezk 37:10."
+            },
+            {
+              "ref": "Rev.6.17",
+              "note": "“Who is able to stand?”"
+            },
+            {
+              "ref": "Luk.21.36",
+              "note": "“To stand before the son of man.”"
+            },
+            {
+              "ref": "Heb.10.11",
+              "note": "“Every priest stands daily ministering.”"
+            },
+            {
+              "ref": "Rev.11.4",
+              "note": "The two olive trees “standing before the Lord of the earth” (Zec 4:14)."
+            }
+          ]
+        },
+        {
+          "lemma": "παρίστημι",
+          "gloss": "stand by, stand before; present",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "1Ki.17.1, עָמַדְתִּי לְפָנָיו → παρέστην ἐνώπιον αὐτοῦ; Deu.10.8 לַעֲמֹד → παρεστάναι; Zec.4.14 הָעֹמְדִים → παρεστήκασιν; παρίστημι renders עָמַד ×27"
+            },
+            {
+              "ref": "Luk.1.19",
+              "role": "defining",
+              "note": "“I am Gabriel, who stand before God (ὁ παρεστηκὼς ἐνώπιον τοῦ θεοῦ)”: Elijah’s phrase of 1Ki 17:1."
+            }
+          ]
+        },
+        {
+          "lemma": "μένω, διαμένω",
+          "gloss": "remain, abide",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.112.9, עֹמֶדֶת → μένει; Psa.102.27 תַעֲמֹד → διαμενεῖς; Psa.33.11 תַּעֲמֹד → μένει; μένω renders עָמַד ×14, διαμένω ×5"
+            },
+            {
+              "ref": "2Co.9.9",
+              "role": "defining",
+              "note": "Psa 112:9 quoted: “his righteousness remains for ever”."
+            },
+            {
+              "ref": "Heb.1.11",
+              "role": "defining",
+              "note": "Psa 102:27 quoted: “they shall perish, but you remain”."
+            }
+          ]
+        },
+        {
+          "lemma": "ἀνίστημι",
+          "gloss": "rise, stand up",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Dan.12.13, וְתַעֲמֹד → ἀναστήσῃ; ἀνίστημι renders עָמַד ×20"
+            },
+            {
+              "ref": "Jhn.11.24",
+              "note": "“I know that he shall rise (ἀναστήσεται) in the resurrection at the last day”: the verb the Septuagint uses for Daniel’s standing at the end of the days."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "קוּם",
+            "note": "“Rise”, beside it. קוּם is the getting up and עָמַד the standing that follows (Job 29:8; Est 8:4); in “who can stand … who can rise” the two say one thing. In the late books עָמַד also takes over קוּם’s senses “arise” (a king, a deliverer) and, in the hiphil, “establish”.",
+            "evidence": [
+              {
+                "ref": "Nam.1.6",
+                "role": "defining"
+              },
+              {
+                "ref": "Job.29.8",
+                "role": "defining"
+              },
+              {
+                "ref": "Est.8.4"
+              },
+              {
+                "ref": "Job.8.15",
+                "note": "“He leans on his house and it does not stand (יַעֲמֹד); he holds it fast and it does not rise (יָקוּם).”"
+              }
+            ]
+          },
+          {
+            "lemma": "נִצַּב, הִתְיַצֵּב",
+            "note": "“Take one’s place, station oneself”, beside it.",
+            "evidence": [
+              {
+                "ref": "Isa.3.13",
+                "role": "defining",
+                "note": "“Yahweh has taken his place (נִצָּב) to contend, and stands (וְעֹמֵד) to judge peoples.”"
+              },
+              {
+                "ref": "Hab.2.1",
+                "note": "“I will stand on my watch and station myself on the tower.”"
+              },
+              {
+                "ref": "2Ch.20.17",
+                "note": "“Station yourselves, stand, and see the salvation of Yahweh.”"
+              }
+            ]
+          },
+          {
+            "lemma": "דָּמַם",
+            "note": "“Be still”, beside standing still.",
+            "evidence": [
+              {
+                "ref": "Jos.10.13",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "שֵׁרֵת",
+            "note": "“Serve, minister”: what one who stands before a master does.",
+            "evidence": [
+              {
+                "ref": "Deu.10.8",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.18.5"
+              },
+              {
+                "ref": "Num.16.9"
+              },
+              {
+                "ref": "Ezk.44.15"
+              }
+            ]
+          },
+          {
+            "lemma": "כּוּן",
+            "note": "“Be established”, beside the hiphil “make stand”.",
+            "evidence": [
+              {
+                "ref": "1Ch.17.14",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.119.90"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "הָלַךְ, יָשַׁב",
+            "note": "Walking and sitting, against standing.",
+            "evidence": [
+              {
+                "ref": "Psa.1.1",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezk.1.21",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.18.13"
+              }
+            ]
+          },
+          {
+            "lemma": "נוּס",
+            "note": "Fleeing, against standing one’s ground or standing still.",
+            "evidence": [
+              {
+                "ref": "Jer.46.21",
+                "role": "defining"
+              },
+              {
+                "ref": "Nam.2.9"
+              },
+              {
+                "ref": "Job.14.2",
+                "note": "Man “flees like the shadow and does not stand”."
+              }
+            ]
+          },
+          {
+            "lemma": "אָבַד, עָבַר",
+            "note": "Perishing and passing away, against standing for ever.",
+            "evidence": [
+              {
+                "ref": "Psa.102.27",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.148.6",
+                "role": "defining"
+              },
+              {
+                "ref": "Ecc.1.4"
+              }
+            ]
+          },
+          {
+            "lemma": "נָפַל",
+            "note": "Falling on the face, against being made to stand.",
+            "evidence": [
+              {
+                "ref": "Dan.8.17",
+                "role": "defining",
+                "note": "Daniel fell on his face; the angel made him stand (Dan 8:18)."
+              },
+              {
+                "ref": "1Co.10.12",
+                "note": "“Let him who thinks he stands take heed lest he fall.”"
+              }
+            ]
+          },
+          {
+            "lemma": "הָרַס",
+            "note": "“Tear down”, against the hiphil “make stand”.",
+            "evidence": [
+              {
+                "ref": "Pro.29.4",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "עָמַד לִפְנֵי",
+            "gloss": "“stand before”: be in attendance on, serve (a king, Yahweh); also appear before a judge, and (in the negative) withstand",
+            "evidence": [
+              {
+                "ref": "1Ki.17.1",
+                "role": "defining"
+              },
+              {
+                "ref": "1Ki.10.8"
+              },
+              {
+                "ref": "Deu.19.17"
+              },
+              {
+                "ref": "Jdg.2.14"
+              }
+            ]
+          },
+          {
+            "phrase": "עָמַד בַּפֶּרֶץ",
+            "gloss": "“stand in the breach”: put oneself between the people and Yahweh’s wrath",
+            "evidence": [
+              {
+                "ref": "Psa.106.23",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezk.22.30"
+              }
+            ]
+          },
+          {
+            "phrase": "עֹמֶדֶת לָעַד",
+            "gloss": "“standing for ever”: of Yahweh’s righteousness, his praise, the fear of him",
+            "evidence": [
+              {
+                "ref": "Psa.111.3",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.112.9"
+              },
+              {
+                "ref": "Psa.19.10"
+              }
+            ]
+          },
+          {
+            "phrase": "מִי יַעֲמֹד",
+            "gloss": "“who shall stand?”: none can keep his feet before Yahweh’s anger",
+            "evidence": [
+              {
+                "ref": "Psa.130.3",
+                "role": "defining"
+              },
+              {
+                "ref": "Nam.1.6"
+              },
+              {
+                "ref": "Psa.76.8"
+              },
+              {
+                "ref": "Psa.147.17"
+              }
+            ]
+          },
+          {
+            "phrase": "עָמַד עַל רַגְלָיו",
+            "gloss": "“stand on one’s feet”: get up from the ground, or from death",
+            "evidence": [
+              {
+                "ref": "Ezk.37.10",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezk.2.1"
+              },
+              {
+                "ref": "Zec.14.12"
+              }
+            ]
+          },
+          {
+            "phrase": "עָמַד מֵרָחֹק",
+            "gloss": "“stand far off”: keep one’s distance, in fear or in desertion",
+            "evidence": [
+              {
+                "ref": "Exo.20.18",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.38.12"
+              },
+              {
+                "ref": "Psa.10.1",
+                "note": "“Why, Yahweh, do you stand far off?”"
+              },
+              {
+                "ref": "Isa.59.14"
+              }
+            ]
+          },
+          {
+            "phrase": "עָמַד בַּבְּרִית",
+            "gloss": "“stand in the covenant”: take one’s stand to it, enter into it",
+            "evidence": [
+              {
+                "ref": "2Ki.23.3",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "עַמּוּד",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "pillar, column; pillar (of cloud, fire, smoke)",
+      "bdb": [
+        "p.df.ad"
+      ],
+      "cognate_ids": [
+        "ar-amud",
+        "phn-md",
+        "gez-amd",
+        "arc-ammuda",
+        "sab-md",
+        "uga-md"
+      ],
+      "summary": "The thing that stands and holds up: 111 uses, some forty of the pillars of the Dwelling and its court, some forty of the pillars of Solomon’s buildings, chiefly the two of bronze before the temple, and about twenty of the pillar of cloud and of fire. The same noun, with the same sense, is in Arabic, Phoenician, Geʿez and Aramaic.",
+      "senses": [
+        {
+          "id": "pillar",
+          "gloss": "pillar, column (of a tent or building)",
+          "definition": "An upright of wood, stone or metal on which hangings or a roof rest: those of the Dwelling stand in sockets and carry the veil and the court’s curtains; those of a house carry the house.",
+          "evidence": [
+            {
+              "ref": "Jdg.16.29",
+              "role": "defining",
+              "note": "Samson took hold of “the two middle pillars on which the house was set, and leaned on them”; the house fell when they gave (Jdg 16:30)."
+            },
+            {
+              "ref": "Exo.26.32",
+              "role": "defining",
+              "note": "The veil hangs “on four pillars of acacia overlaid with gold … on four sockets of silver”."
+            },
+            {
+              "ref": "Exo.27.10",
+              "note": "The court’s twenty pillars and their twenty sockets of bronze, with hooks and bands of silver."
+            },
+            {
+              "ref": "Num.3.36",
+              "note": "The sons of Merari have charge of the boards, bars, pillars and sockets of the Dwelling."
+            },
+            {
+              "ref": "1Ki.7.6",
+              "note": "Solomon made “the porch of the pillars”."
+            },
+            {
+              "ref": "1Ki.7.2",
+              "note": "The house of the forest of Lebanon stood “on four rows of cedar pillars, with cedar beams on the pillars”."
+            },
+            {
+              "ref": "Est.1.6",
+              "note": "Hangings on silver rods “and pillars of marble”."
+            },
+            {
+              "ref": "Sng.3.10",
+              "note": "Solomon’s litter: “its pillars he made of silver”."
+            },
+            {
+              "ref": "Ezk.42.6",
+              "note": "The chambers “had no pillars like the pillars of the courts”."
+            },
+            {
+              "ref": "Pro.9.1",
+              "note": "“Wisdom has built her house, she has hewn her seven pillars.”"
+            }
+          ],
+          "kin": [
+            "stand",
+            "set-up"
+          ]
+        },
+        {
+          "id": "the-two-bronze-pillars",
+          "gloss": "the two bronze pillars of the temple; the king’s pillar",
+          "definition": "The two pillars of bronze that Solomon set up at the porch of the temple and named Jachin and Boaz, broken up and carried off by the Chaldeans; and “the pillar” in the house of Yahweh beside which the king stood.",
+          "evidence": [
+            {
+              "ref": "1Ki.7.21",
+              "role": "defining",
+              "note": "“He set up the pillars at the porch of the temple; he set up the right pillar and called its name Jachin, and he set up the left pillar and called its name Boaz.”"
+            },
+            {
+              "ref": "1Ki.7.15",
+              "note": "Each pillar of bronze was eighteen cubits high."
+            },
+            {
+              "ref": "2Ki.25.13",
+              "note": "“The pillars of bronze that were in the house of Yahweh … the Chaldeans broke, and carried their bronze to Babylon”; Jer 52:17, 20–22."
+            },
+            {
+              "ref": "2Ki.11.14",
+              "note": "“The king was standing by the pillar, according to the custom”; so Josiah, 2Ki 23:3."
+            },
+            {
+              "ref": "Rev.3.12",
+              "note": "“He who overcomes, I will make him a pillar (στῦλον) in the temple of my God, and he shall go out no more”: a pillar that is not carried away."
+            },
+            {
+              "ref": "Gal.2.9",
+              "note": "James, Cephas and John “were reputed to be pillars”."
+            },
+            {
+              "ref": "1Ti.3.15",
+              "note": "The ecclesia of the living God is “pillar and stay of the truth”."
+            }
+          ]
+        },
+        {
+          "id": "pillar-of-cloud",
+          "gloss": "pillar (of cloud, of fire, of smoke)",
+          "definition": "A standing column of cloud, fire or smoke: above all the pillar of cloud by day and of fire by night in which Yahweh went before Israel, which stood at the door of the tent when he spoke with Moses.",
+          "evidence": [
+            {
+              "ref": "Exo.13.21",
+              "role": "defining",
+              "note": "“Yahweh went before them by day in a pillar of cloud to lead them the way, and by night in a pillar of fire to give them light.”"
+            },
+            {
+              "ref": "Exo.33.9",
+              "role": "defining",
+              "note": "“The pillar of cloud came down and stood (וְעָמַד) at the entrance of the tent, and he spoke with Moses”: the noun with its verb."
+            },
+            {
+              "ref": "Exo.14.19",
+              "note": "“The angel of God who went before the camp of Israel moved and went behind them; and the pillar of cloud moved from before them and stood behind them.”"
+            },
+            {
+              "ref": "Exo.14.24",
+              "note": "Yahweh looked on the camp of Egypt “in the pillar of fire and cloud”."
+            },
+            {
+              "ref": "Num.12.5",
+              "note": "“Yahweh came down in a pillar of cloud and stood at the entrance of the tent.”"
+            },
+            {
+              "ref": "Num.14.14",
+              "note": "“Your cloud stands over them, and in a pillar of cloud you go before them by day, and in a pillar of fire by night.”"
+            },
+            {
+              "ref": "Deu.31.15"
+            },
+            {
+              "ref": "Neh.9.12",
+              "note": "“In a pillar of cloud you led them by day”; not taken away in the wilderness, Neh 9:19."
+            },
+            {
+              "ref": "Psa.99.7",
+              "note": "“In the pillar of cloud he spoke to them.”"
+            },
+            {
+              "ref": "Jdg.20.40",
+              "note": "The signal went up from the city, “a pillar of smoke”."
+            },
+            {
+              "ref": "Rev.10.1",
+              "note": "An angel clothed with a cloud, “his feet as pillars of fire”."
+            }
+          ]
+        },
+        {
+          "id": "pillars-of-the-earth",
+          "gloss": "pillars (of the earth, of the heavens); a pillar (of a man)",
+          "definition": "In figure: what the earth and the heavens are said to stand on, which God set and can shake; and a man made firm as an iron pillar.",
+          "evidence": [
+            {
+              "ref": "Psa.75.4",
+              "role": "defining",
+              "note": "“The earth and all its dwellers are melting; I have set firm its pillars.”"
+            },
+            {
+              "ref": "Job.9.6",
+              "note": "He “shakes the earth out of its place, and its pillars tremble”."
+            },
+            {
+              "ref": "Job.26.11",
+              "note": "“The pillars of the heavens tremble, and are astonished at his rebuke.”"
+            },
+            {
+              "ref": "Jer.1.18",
+              "role": "defining",
+              "note": "“I have made you today a fortified city and an iron pillar and walls of bronze against the whole land.”"
+            },
+            {
+              "ref": "Sng.5.15",
+              "note": "“His legs are pillars of marble, set on sockets of fine gold.”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "στῦλος",
+          "gloss": "pillar",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "1Ki.7.21, הָעַמֻּדִים → τοὺς στύλους; Exo.13.21 בְּעַמּוּד עָנָן → ἐν στύλῳ νεφέλης; στῦλος renders עַמּוּד ×60 and more"
+            },
+            {
+              "ref": "Rev.3.12",
+              "role": "defining",
+              "note": "“A pillar in the temple of my God.”"
+            },
+            {
+              "ref": "Rev.10.1",
+              "note": "“His feet as pillars of fire.”"
+            },
+            {
+              "ref": "Gal.2.9"
+            },
+            {
+              "ref": "1Ti.3.15"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "אֶדֶן",
+            "note": "The “socket” or base a pillar stands in; the two are named together throughout the account of the Dwelling.",
+            "evidence": [
+              {
+                "ref": "Exo.27.10",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.26.32"
+              },
+              {
+                "ref": "Sng.5.15"
+              }
+            ]
+          },
+          {
+            "lemma": "חוֹמָה",
+            "note": "“Wall”, beside the iron pillar, of a man made unyielding.",
+            "evidence": [
+              {
+                "ref": "Jer.1.18",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "עַמּוּד הֶעָנָן",
+            "gloss": "“the pillar of the cloud”, with עַמּוּד הָאֵשׁ “the pillar of the fire”: the cloud in which Yahweh led Israel and spoke at the tent",
+            "evidence": [
+              {
+                "ref": "Exo.13.22",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.33.10"
+              },
+              {
+                "ref": "Neh.9.19"
+              }
+            ]
+          },
+          {
+            "phrase": "עַמּוּדֵי שָׁמַיִם",
+            "gloss": "“the pillars of the heavens”",
+            "evidence": [
+              {
+                "ref": "Job.26.11",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "עֹמֶד",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "standing-place, station",
+      "bdb": [
+        "p.df.ab"
+      ],
+      "summary": "Only with a suffix after עַל, and only in Daniel, Nehemiah and Chronicles: the spot where one stands, or the post one is assigned. No cognate noun of this form was found; it rests on the verb. Of the nine tokens counted, three (Num 35:12; Jos 20:6, 9) are the verb’s infinitive עָמְדוֹ, “his standing” before the congregation, spelt alike, and the three in Daniel are counted under the verb.",
+      "senses": [
+        {
+          "id": "standing-place",
+          "gloss": "standing-place; station, post",
+          "definition": "The place where a person stands or has been put to stand.",
+          "evidence": [
+            {
+              "ref": "Dan.8.18",
+              "role": "defining",
+              "note": "The angel “made me stand on my standing-place (עַל עָמְדִי)”; he had come “beside my standing-place” (Dan 8:17)."
+            },
+            {
+              "ref": "2Ch.30.16",
+              "role": "defining",
+              "note": "The priests and Levites “stood at their station (עַל עָמְדָם) according to their ordinance, according to the law of Moses”."
+            },
+            {
+              "ref": "Dan.10.11",
+              "note": "“Stand on your standing-place.”"
+            },
+            {
+              "ref": "Neh.13.11",
+              "note": "“I gathered them and made them stand at their station.”"
+            },
+            {
+              "ref": "2Ch.35.10",
+              "note": "“The priests stood at their station, and the Levites in their divisions.”"
+            },
+            {
+              "ref": "2Ch.34.31",
+              "note": "“The king stood at his station and made the covenant before Yahweh”; 2Ki 23:3 has “by the pillar”."
+            },
+            {
+              "ref": "Neh.8.7",
+              "note": "The Levites explained the law, “and the people were at their place”; Neh 9:3."
+            }
+          ],
+          "kin": [
+            "stand",
+            "appoint"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַעֲמָד",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "station, post; attendance",
+      "bdb": [
+        "p.df.ae"
+      ],
+      "summary": "Five uses. The noun of place and manner from “stand before”: the post a servant holds, and the standing in attendance itself. No cognate noun of this form was found; it rests on the verb.",
+      "senses": [
+        {
+          "id": "station",
+          "gloss": "station, post, office",
+          "definition": "The place and duty assigned to one who stands in service.",
+          "evidence": [
+            {
+              "ref": "Isa.22.19",
+              "role": "defining",
+              "note": "To Shebna the steward: “I will thrust you from your post (מַצָּב), and from your station (מַעֲמָד) he shall pull you down.”"
+            },
+            {
+              "ref": "2Ch.35.15",
+              "role": "defining",
+              "note": "“The singers, the sons of Asaph, were at their station, according to the command of David.”"
+            },
+            {
+              "ref": "1Ch.23.28",
+              "note": "The Levites’ “station was at the hand of the sons of Aaron, for the service of the house of Yahweh”."
+            }
+          ],
+          "kin": [
+            "stand-before",
+            "appoint",
+            "present"
+          ]
+        },
+        {
+          "id": "attendance",
+          "gloss": "attendance, standing in waiting",
+          "definition": "The standing of servants in attendance on a king.",
+          "evidence": [
+            {
+              "ref": "1Ki.10.5",
+              "role": "defining",
+              "note": "The queen of Sheba saw “the sitting of his servants and the standing (מַעֲמַד) of his ministers, and their clothing”; she then calls them happy “who stand before you continually” (1Ki 10:8). So 2Ch 9:4."
+            }
+          ],
+          "kin": [
+            "stand-before",
+            "present"
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "מַצָּב",
+            "note": "“Post”, beside it.",
+            "evidence": [
+              {
+                "ref": "Isa.22.19",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "מוֹשָׁב",
+            "note": "The “sitting” of the servants, beside the “standing” of the ministers.",
+            "evidence": [
+              {
+                "ref": "1Ki.10.5",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "מָעֳמָד",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "foothold, ground to stand on",
+      "bdb": [
+        "p.df.af"
+      ],
+      "summary": "One use (Psa 69:3). The second token counted is the hophal participle of 1Ki 22:35, spelt alike. One verse fixes it, and no cognate of this form was found; it rests on the verb.",
+      "senses": [
+        {
+          "id": "foothold",
+          "gloss": "foothold",
+          "definition": "Firm ground on which the feet can stand.",
+          "evidence": [
+            {
+              "ref": "Psa.69.3",
+              "role": "defining",
+              "note": "“I have sunk in deep mire, and there is no foothold (וְאֵין מָעֳמָד); I have come into depths of water, and a flood has swept over me.”"
+            }
+          ],
+          "kin": [
+            "stand",
+            "withstand"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עֶמְדָּה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "standing-place, stay (?)",
+      "bdb": [
+        "p.df.ac"
+      ],
+      "summary": "One use, in a line of word-plays on town names whose sense is not settled (Mic 1:11). The verse does not fix the meaning, and no cognate of this form was found: the gloss rests on the root alone.",
+      "senses": [
+        {
+          "id": "standing-place-place-to",
+          "gloss": "standing-place, place to stay (?)",
+          "definition": "What Beth-ezel can no longer give the fugitives: a place to stand or stay, or a support.",
+          "evidence": [
+            {
+              "ref": "Mic.1.11",
+              "role": "defining",
+              "note": "“The mourning of Beth-ezel shall take from you its standing-place (עֶמְדָּתוֹ).” The towns before it cannot go out; this one offers no stop."
+            }
+          ],
+          "kin": [
+            "stay",
+            "stand"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עַמּוּדָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "pillar",
+      "cognate_ids": [
+        "ar-amud",
+        "arc-ammuda",
+        "gez-amd"
+      ],
+      "summary": "The Peshitta’s ܥܡܘܕܐ (ʿammūdā), the same noun as עַמּוּד, in each of the four places where the Greek has στῦλος.",
+      "senses": [
+        {
+          "id": "syc-pillar",
+          "gloss": "pillar",
+          "definition": "A pillar of a building, used of men and of the ecclesia as what holds firm and holds up; and of fire.",
+          "evidence": [
+            {
+              "ref": "Rev.3.12",
+              "role": "defining",
+              "note": "“I will make him a pillar (ܥܡܘܕܐ) in the temple of God, and he shall not go outside again.”"
+            },
+            {
+              "ref": "Gal.2.9",
+              "role": "defining",
+              "note": "James, Cephas and John, “who were considered to be pillars”."
+            },
+            {
+              "ref": "1Ti.3.15",
+              "note": "The ecclesia of the living God, “the pillar and foundation of the truth”."
+            },
+            {
+              "ref": "Rev.10.1",
+              "note": "“His feet like pillars of fire.”"
+            }
+          ],
+          "kin": [
+            "pillar",
+            "pillar-of-cloud"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עֲמַד",
+      "lang": "syc",
+      "pos": "verb",
+      "gloss": "be immersed, be baptized; wash; (aphel) immerse, baptize",
+      "cognate_ids": [
+        "ar-ghamada",
+        "ar-ammada"
+      ],
+      "summary": "The Peshitta’s ܥܡܕ (ʿmad), about 80 uses, its word for βαπτίζω. It does not mean “stand”, for which the Peshitta uses ܩܡ. How it belongs to this root is not clear. Syriac ʿ covers both older ʿ and ġ, and Arabic ġamada, “sheathe (a sword), cover”, has been compared, which would make it another older root in the same spelling; the Arabic ʿammada “baptize” is itself borrowed from the Syriac. The meaning rests on the Peshitta’s own use: the one baptized goes down into water and comes up out of it.",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "be immersed, be baptized; wash oneself",
+          "senses": [
+            {
+              "id": "syc-be-baptized",
+              "gloss": "be immersed, be baptized; wash oneself",
+              "definition": "To go under water: of those baptized by John and by the apostles, and of Jews washing before a meal.",
+              "evidence": [
+                {
+                  "ref": "Mat.3.16",
+                  "role": "defining",
+                  "note": "“When Jesus was baptized (ܥܡܕ), immediately he came up from the water.”"
+                },
+                {
+                  "ref": "Jhn.3.23",
+                  "role": "defining",
+                  "note": "John was baptizing at Aenon “because there were many waters there, and they came and were baptized (ܘܥܡܕܝܢ)”."
+                },
+                {
+                  "ref": "Mat.3.6",
+                  "note": "“They were baptized by him in the Jordan river, confessing their sins.”"
+                },
+                {
+                  "ref": "Act.2.38",
+                  "note": "“Repent and be baptized, every one of you, in the name of the Lord Jesus.”"
+                },
+                {
+                  "ref": "1Co.10.2",
+                  "note": "“All were baptized through Moses in the cloud and in the sea.”"
+                },
+                {
+                  "ref": "Luk.11.38",
+                  "note": "The Pharisee marvelled “that he had not first washed (ܥܡܕ) before his meal”."
+                },
+                {
+                  "ref": "Mrk.7.4",
+                  "note": "Coming from the market, “unless they wash (ܥܡܕܝܢ) they do not eat”."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "aphel",
+          "gloss": "immerse, baptize",
+          "senses": [
+            {
+              "id": "syc-baptize",
+              "gloss": "immerse, baptize",
+              "definition": "To put another under water, as John did and as the apostles did to those who believed.",
+              "evidence": [
+                {
+                  "ref": "Act.8.38",
+                  "role": "defining",
+                  "note": "“Both of them went down to the water, and Philip baptized (ܘܐܥܡܕܗ) the eunuch”; then “they came up from the water” (Act 8:39)."
+                },
+                {
+                  "ref": "Mat.3.11",
+                  "note": "“I baptize (ܡܥܡܕ) you with water for repentance.”"
+                },
+                {
+                  "ref": "Jhn.1.31",
+                  "note": "“For this I came baptizing with water.”"
+                },
+                {
+                  "ref": "1Co.1.16",
+                  "note": "“I baptized also the household of Stephanas.”"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַעְמוּדִיתָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "immersion, baptism; washing; pool",
+      "cognate_ids": [
+        "ar-ghamada",
+        "ar-ammada"
+      ],
+      "summary": "The Peshitta’s ܡܥܡܘܕܝܬܐ (maʿmūdītā), about 30 uses, the noun of the Syriac verb “be immersed”: its tie to “stand” is no clearer than the verb’s. With it goes ܡܥܡܕܢܐ (maʿmdānā), “the baptizer”, of John (Mat 3:1).",
+      "senses": [
+        {
+          "id": "syc-baptism",
+          "gloss": "immersion, baptism",
+          "definition": "The act of being put under water: John’s, and that into Christ, which Paul calls a burial with him.",
+          "evidence": [
+            {
+              "ref": "Rom.6.4",
+              "role": "defining",
+              "note": "“We were buried with him in baptism (ܒܡܥܡܘܕܝܬܐ) into death, that as Jesus the Messiah rose from among the dead … so we also should walk in a new life.”"
+            },
+            {
+              "ref": "Col.2.12",
+              "role": "defining",
+              "note": "“You were buried with him in baptism, and in it you rose with him.”"
+            },
+            {
+              "ref": "Mrk.1.4",
+              "note": "John proclaimed “the baptism of repentance for the forgiveness of sins”."
+            },
+            {
+              "ref": "Mat.21.25",
+              "note": "“The baptism of John, from where is it?”"
+            },
+            {
+              "ref": "Eph.4.5",
+              "note": "“One Lord, one faith, one baptism.”"
+            },
+            {
+              "ref": "1Pe.3.21"
+            }
+          ],
+          "kin": [
+            "syc-be-baptized",
+            "syc-baptize"
+          ]
+        },
+        {
+          "id": "washing-of-vessels-pool",
+          "gloss": "washing (of vessels); pool",
+          "definition": "A dipping of things in water, and a body of water to go down into.",
+          "evidence": [
+            {
+              "ref": "Mrk.7.4",
+              "role": "defining",
+              "note": "“Washings (ܡܥܡܘܕܝܬܐ) of cups and of jugs and of bronze vessels.”"
+            },
+            {
+              "ref": "Jhn.5.2",
+              "role": "defining",
+              "note": "Bethesda in Jerusalem is “a place of immersion” (ܕܡܥܡܘܕܝܬܐ), a pool; so the pool of Siloam, Jhn 9:7."
+            },
+            {
+              "ref": "Jhn.5.7",
+              "note": "“I have no man to put me into the pool when the waters are moved.”"
+            }
+          ],
+          "kin": [
+            "syc-be-baptized"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-amada",
+      "lang": "ar",
+      "form": "عَمَدَ",
+      "translit": "ʿamada",
+      "gloss": "stay, prop up, support (a wall); (VII) be propped up; (VIII) lean on, rest on, rely on; (with li-, ilā) make for, intend",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "note": "The Arabic verb is transitive, “hold a thing upright”, where the Hebrew qal is “stand”; it answers the hiphil “make stand” and the hophal of 1Ki 22:35, the wounded king “held standing” in his chariot, as Arabic ʿamīd is a sick man who cannot sit unless propped up.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2151, root عمد, عَمَدَهُ (n30491)",
+          "note": "“He stayed it, propped it up, or supported it; namely, a wall, or other thing … he placed beneath it columns, pillars, or props … عَمَدَ لَهُ … He intended it, or purposed it.”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 2151, root عمد, اِعْتَمَدْتُ عَلَى الشَّىْءِ (n30494); انعمد (n30493)",
+          "note": "“I leaned, reclined, bore, or rested, upon the thing; stayed, propped, or supported, myself upon it”; VII “It became stayed, propped up, or supported; said of a wall.”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 2153, root عمد, عَمِيدٌ (n30505)",
+          "note": "“A man sick, or very sick, so that he cannot sit unless propped up by cushions placed at his sides.”"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000601 ʿmd [lean]"
+        }
+      ]
+    },
+    {
+      "id": "ar-amud",
+      "lang": "ar",
+      "form": "عَمُود",
+      "translit": "ʿamūd",
+      "gloss": "pole of a tent; column, pillar of a house; (ʿimād) prop, lofty buildings; (ʿumdah) stay, support",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "note": "The same noun as עַמּוּד, first of a tent-pole, as the Hebrew is first of the pillars of the Dwelling. The Koran’s heavens raised “without pillars that you see” stand beside Job’s “pillars of the heavens”.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2152, root عمد, عَمُودٌ (n30504)",
+          "note": "“a pole of a tent; as also عِمَادٌ: and a column, or pillar, of a house or the like … خَلَقَ ٱلسَّمٰوَاتِ بِغَيْرِ عَمَدٍ تَرَوْنَهَا … He created the heavens without pillars as ye see them.”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 2152, root عمد, عُمْدَةٌ (n30497); عِمَادٌ (n30503)",
+          "note": "“A thing by which another thing is stayed, propped, or supported; a stay, prop, or support”; عِمَادٌ “Lofty buildings”."
+        }
+      ]
+    },
+    {
+      "id": "ar-ammada",
+      "lang": "ar",
+      "form": "عَمَّدَ",
+      "translit": "ʿammada",
+      "gloss": "baptize (Christian Arabic); (maʿmūdiyyah) baptism",
+      "relation": "loan",
+      "note": "Borrowed from the Syriac verb and its noun ܡܥܡܘܕܝܬܐ, so no independent witness to their meaning or to the older sound behind the ע.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2151, root عمد, عمّد (n30492)",
+          "note": "“[عمّدهُ as used by the Christians, and held to be of Syriac origin, means He baptized him: see مَعْمُودِيَةٌ.]”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 2153, root عمد, المَعْمُودِيَةُ (n30511)",
+          "note": "“held by some to be of Arabic origin, but by others, of Syriac … [Baptism: and baptismal water] … in which they dip their children.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-ghamada",
+      "lang": "ar",
+      "form": "غَمَدَ",
+      "translit": "ġamada",
+      "gloss": "put (a sword) into its sheath; cover; (V) cover over, conceal; (VIII) enter into (the night)",
+      "relation": "possible",
+      "sounds": {
+        "ע": "ġ"
+      },
+      "note": "Compared with the Syriac “be immersed”: to be plunged into water as a sword into its sheath. If it holds, the Syriac verb is an older ġmd and not the ʿmd of “stand”. Lane gives no sense of dipping in water, so the link is only possible.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2291, root غمد, غَمَدَهُ (n32375)",
+          "note": "“He put it (i. e. a sword, or the like) into its غِمْد [i. e. scabbard, or sheath] … Hence, غَمَدَهُ بِكَذَا He covered him, or it, with such a thing.”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 2291, root غمد, تغمّد (n32376); اغتمد اللَّيْلَ (n32377)",
+          "note": "“He took the man beneath him, to cover him over, or conceal him … God covered him with his mercy, as with a veil”; VIII “He entered into [the darkness of] the night; as though it became as a غِمْد to him.”"
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Classical Syriac ܥܡܘܕܐ, etymology 2 (diver; baptismal candidate): “From the root ܥ ܡ ܕ related to immersing, from Proto-Semitic *ġ-m-d”"
+        }
+      ]
+    },
+    {
+      "id": "akk-emedu",
+      "lang": "akk",
+      "form": "emēdu",
+      "translit": "emēdu",
+      "gloss": "lean on, be propped up; be stationary; impose, set up; (imdu) support; (nēmedu) that on which one leans, base, socle",
+      "relation": "cognate",
+      "note": "Akkadian has lost the first consonant, leaving its e-colouring. “Be stationary”, “be propped up” and “set up” lie beside the Hebrew “stand still” and “make stand”, and nēmedu, the base a cult object stands on, is the same kind of noun as מַעֲמָד.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000004570, emēdu [lean on] V",
+          "note": "Meanings listed include “be at a stationary point; be propped up; be(come) stationary; impose; install; lean on; set up; take refuge”."
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000024970, imdu [support] N; armep x000049080, nēmedu [that on which one leans] N",
+          "note": "nēmedu: “(back)rest; base, socle for cultic symbol; cult platform; support”."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000601 ʿmd [lean], AKK002311 emēdu [lean on]"
+        }
+      ]
+    },
+    {
+      "id": "phn-md",
+      "lang": "phn",
+      "form": "𐤏𐤌𐤃",
+      "translit": "ʿmd",
+      "gloss": "column",
+      "relation": "cognate",
+      "note": "In the Byblos inscription of Yehawmilk, “this portico and its columns (wʿmdh) and the capitals that are on them”, and in Neo-Punic of columns given to a public building: the Hebrew noun in its building sense.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 376, ʿMD",
+          "note": "“[Heb. ʿammud] n.m. COLUMN, KAI 10.3/6 (Ph) … ‘this portico and its columns and the capitals that are atop them and its ceiling’ … KAI 124.1/2 (NPu) … ‘He presented the columns and roofed the structure’.”"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM001033 ʿmd [column], PUN001547 ʿmd [column]"
+        }
+      ]
+    },
+    {
+      "id": "gez-amd",
+      "lang": "gez",
+      "form": "ዐምድ",
+      "translit": "ʿamd",
+      "gloss": "column, pillar; mast; stele",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "note": "Geʿez keeps ʿ (ዐ) apart, and has the noun with the Hebrew’s sense. Cited from Wiktionary only; Dillmann’s and Leslau’s entries were not read.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Ge'ez ዐምድ (ʿämd), noun: column supporting member in a structure; obelisk, pillar; mast; stele"
+        }
+      ]
+    },
+    {
+      "id": "gez-ammada",
+      "lang": "gez",
+      "form": "ዐመደ",
+      "translit": "ʿammada",
+      "gloss": "sustain, prop",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "note": "Recorded only in the root-set data, under the same root as Akkadian emēdu and Hebrew ʿamad; the Geʿez dictionaries were not read for this entry, and the form in Geʿez script is written from the transliteration.",
+      "evidence": [
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000601 ʿmd [lean], GEZ000771 ʿammada [sustain]"
+        }
+      ]
+    },
+    {
+      "id": "sab-md",
+      "lang": "sem",
+      "form": "𐩱𐩲𐩣𐩵",
+      "translit": "ʾʿmd (Sabaic, plural)",
+      "gloss": "vine-props; (b-ʿmd ʿdy) straight to, directly to",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "note": "Sabaic has the noun of things that hold up: sixty thousand “props” of vines plundered. Its phrase b-ʿmd ʿdy “straight to” goes with Arabic ʿamada ilā “make for”.",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "p. 371, ʿMD III (J 577/15)",
+          "url": "https://archive.org/details/DOOSA",
+          "note": "“VINE-PROPS, as a measure of plundered territory [Cf Ar ʿamūd (al-biʾr) ‘one of the two posts supporting the bucket-rope of a well.’] … ‘they plundered sixty thousand vine-props’.”"
+        },
+        {
+          "source": "biella-1982",
+          "locator": "p. 370, ʿMD I (R 4176/2)",
+          "url": "https://archive.org/details/DOOSA",
+          "note": "“in exp b-ʿmd ʿdy: STRAIGHT TO, DIRECTLY TO [Ar ʿamada ʾilā ‘he intended it, he directed himself, or his course … to it’ (Lane/2151A).]”"
+        }
+      ]
+    },
+    {
+      "id": "arc-ammuda",
+      "lang": "arc",
+      "form": "עַמּוּדָא",
+      "translit": "ʿammūdā",
+      "gloss": "column, stand (Jewish Aramaic)",
+      "relation": "cognate",
+      "note": "The Targums use it for Hebrew עַמּוּד, as of the pillar of cloud (Targ. Exo 13:22), and the Talmud of “a column of fire”. For the verb “stand” Aramaic uses קוּם.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. עַמּוּדָא I",
+          "note": "“column, stand. Targ. Y. Gen. XIX, 26. Targ. Ex. XIII, 22; a. fr. … Keth. 17ᵃ איפסיק ע׳ דנורא a column of fire was interposed between him and the rest of the world.”"
+        }
+      ]
+    },
+    {
+      "id": "uga-md",
+      "lang": "uga",
+      "form": "𐎓𐎎𐎄",
+      "translit": "ʿmd",
+      "gloss": "pillar, column; stand",
+      "relation": "possible",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "note": "Listed by Wiktionary as a noun “pillar” and a verb “to stand”, with no text cited. No Ugaritic dictionary or passage was read for this entry, so it is kept as possible only.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Ugaritic 𐎓𐎎𐎄 (ʿmd), noun: pillar, column; verb: to stand"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "resurrection",
+      "statement": "Daniel is told that “many of those who sleep in the dust of the ground shall awake, some to life of the age and some to reproaches, to contempt of the age” (Dan 12:2), and then of himself: “go to the end; and you shall rest, and shall stand to your lot at the end of the days” (Dan 12:13). The order is rest first and standing after: his lot is not given him at death, and he is not said to be anywhere but at rest until the days end. The time is fixed by Dan 12:1, when Michael “shall stand”, in a time of distress such as never was, and Daniel’s people are delivered, “every one found written in the book”; Jesus sets that distress before his own coming (Mat 24:21, 30). Ezekiel’s vision uses the same word of the dead: breath came into the slain “and they lived, and stood on their feet” (Ezk 37:10), which Yahweh explains as opening graves and bringing his people up out of them (Ezk 37:12). From the verses: the dead rest in the dust, knowing nothing of the days that pass, and the hope held out to a faithful man is to be made to stand again on the earth at the end of the days, and there to receive his lot.",
+      "evidence": [
+        {
+          "ref": "Dan.12.2"
+        },
+        {
+          "ref": "Dan.12.13"
+        },
+        {
+          "ref": "Dan.12.1"
+        },
+        {
+          "ref": "Mat.24.21"
+        },
+        {
+          "ref": "Mat.24.30"
+        },
+        {
+          "ref": "Ezk.37.10"
+        },
+        {
+          "ref": "Ezk.37.12"
+        }
+      ]
+    },
+    {
+      "topic": "judgment",
+      "statement": "No man can stand before Yahweh on his own footing: “If you should mark iniquities, Yah, who shall stand? But with you is forgiveness” (Psa 130:3–4); “none can stand before you because of this” (Ezr 9:15); “before his indignation who can stand?” (Nam 1:6). Malachi asks it of the day when the Lord comes to his temple: “who is he that stands when he appears?” (Mal 3:2), and the Revelation repeats it: “the great day of his wrath is come, and who is able to stand?” (Rev 6:17). The answer given is that some will: “watch, and pray always, that you may be counted worthy … to stand before the son of man” (Luk 21:36); “we shall all stand before the judgment seat of Christ” (Rom 14:10), and of his servant, “he shall be made to stand, for God is able to make him stand” (Rom 14:4). From the verses: standing in the judgment is not a man’s own strength but forgiveness, and it is God who makes his servant stand.",
+      "evidence": [
+        {
+          "ref": "Psa.130.3",
+          "to": "Psa.130.4"
+        },
+        {
+          "ref": "Ezr.9.15"
+        },
+        {
+          "ref": "Nam.1.6"
+        },
+        {
+          "ref": "Mal.3.2"
+        },
+        {
+          "ref": "Rev.6.17"
+        },
+        {
+          "ref": "Luk.21.36"
+        },
+        {
+          "ref": "Rom.14.10"
+        },
+        {
+          "ref": "Rom.14.4"
+        }
+      ]
+    },
+    {
+      "topic": "kingdom-of-god",
+      "statement": "“A generation goes and a generation comes, but the earth stands for ever” (Ecc 1:4); “you established the earth, and it stands” (Psa 119:90); of the heavens and their host, “he made them stand for ever and ever; he gave a decree and it shall not pass away” (Psa 148:6). What stands on it is to be Yahweh’s own: of David’s son, “I will make him stand in my house and in my kingdom for ever” (1Ch 17:14); the ruler out of Bethlehem “shall stand and shepherd in the strength of Yahweh … for now he shall be great to the ends of the earth” (Mic 5:3); “the root of Jesse, which stands for a banner of peoples: him shall nations seek” (Isa 11:10); and in the day of Yahweh “his feet shall stand on the Mount of Olives, which is before Jerusalem on the east” (Zec 14:4), the mountain from which Jesus was taken up and of which the angels said he would so come (Act 1:11–12). “As the new heavens and the new earth which I make stand before me, so shall your seed and your name stand” (Isa 66:22). From the verses: the earth is not to be done away but to stand, and the kingdom promised to David’s son is set on it, with Jerusalem at its centre.",
+      "evidence": [
+        {
+          "ref": "Ecc.1.4"
+        },
+        {
+          "ref": "Psa.119.90"
+        },
+        {
+          "ref": "Psa.148.6"
+        },
+        {
+          "ref": "1Ch.17.14"
+        },
+        {
+          "ref": "Mic.5.3"
+        },
+        {
+          "ref": "Isa.11.10"
+        },
+        {
+          "ref": "Zec.14.4"
+        },
+        {
+          "ref": "Act.1.11",
+          "to": "Act.1.12"
+        },
+        {
+          "ref": "Isa.66.22"
+        }
+      ]
+    },
+    {
+      "topic": "gods-word-stands",
+      "statement": "“He spoke, and it was; he commanded, and it stood” (Psa 33:9); two verses on, “the counsel of Yahweh stands for ever, the thoughts of his heart to generation and generation”, while he “brings the counsel of nations to nothing” (Psa 33:10–11). The covenant sworn to Abraham and Isaac “he made stand to Jacob for a statute, to Israel for an age-lasting covenant, saying, To you I will give the land of Canaan” (Psa 105:10–11). His righteousness “stands for ever” (Psa 111:3), which Paul quotes of the man who gives as God gives (Psa 112:9; 2Co 9:9); and the psalm that says heaven and earth “shall perish, but you shall stand” (Psa 102:27) is applied in Hebrews to the son, through whom the age to come is made (Heb 1:10–12). From the verses: what Yahweh has purposed and promised does not lapse with the generations that hear it; the promise of the land stands as surely as the creation that his word set in place.",
+      "evidence": [
+        {
+          "ref": "Psa.33.9",
+          "to": "Psa.33.11"
+        },
+        {
+          "ref": "Psa.105.10",
+          "to": "Psa.105.11"
+        },
+        {
+          "ref": "Psa.111.3"
+        },
+        {
+          "ref": "Psa.112.9"
+        },
+        {
+          "ref": "2Co.9.9"
+        },
+        {
+          "ref": "Psa.102.27"
+        },
+        {
+          "ref": "Heb.1.10",
+          "to": "Heb.1.12"
+        }
+      ]
+    },
+    {
+      "topic": "standing-before-yahweh",
+      "statement": "To “stand before” a king is to be his servant, waiting on his word (1Ki 10:8), and the same phrase is used of those who serve Yahweh. The host of the heavens stand by his throne (1Ki 22:19), and Gabriel names himself by it: “I am Gabriel, who stand before God, and I was sent to speak to you” (Luk 1:19). The tribe of Levi was set apart “to stand before Yahweh to serve him and to bless in his name” (Deu 10:8); Elijah swears by “Yahweh … before whom I stand” (1Ki 17:1); and a true prophet is one who “has stood in the council of Yahweh” and so makes his people hear his words (Jer 23:18, 22). When Yahweh went before Israel it was in the pillar of cloud, and with it “the angel of God who went before the camp” (Exo 14:19); the pillar “stood at the entrance of the tent, and he spoke with Moses” (Exo 33:9). From the verses: angels, priests and prophets are alike servants who stand before the one God to do his word, and Yahweh’s presence with Israel in the pillar was by the angel who bore his name.",
+      "evidence": [
+        {
+          "ref": "1Ki.10.8"
+        },
+        {
+          "ref": "1Ki.22.19"
+        },
+        {
+          "ref": "Luk.1.19"
+        },
+        {
+          "ref": "Deu.10.8"
+        },
+        {
+          "ref": "1Ki.17.1"
+        },
+        {
+          "ref": "Jer.23.18"
+        },
+        {
+          "ref": "Jer.23.22"
+        },
+        {
+          "ref": "Exo.14.19"
+        },
+        {
+          "ref": "Exo.33.9"
+        },
+        {
+          "ref": "Exo.23.20",
+          "to": "Exo.23.21"
+        }
+      ]
+    },
+    {
+      "topic": "baptism",
+      "statement": "The Peshitta’s word for baptism is used of going into water: John baptized at Aenon “because there were many waters there” (Jhn 3:23); Jesus, baptized, “came up from the water” (Mat 3:16); Philip and the eunuch “both went down to the water, and Philip baptized him”, and they “came up from the water” (Act 8:38–39). The same word is used of a pool (Jhn 5:2). Those baptized were those who had heard and believed: “repent and be baptized, every one of you” (Act 2:38); “when they believed Philip … they were baptized, men and women” (Act 8:12). Paul explains it as a burial and a rising: “we were buried with him in baptism into death, that as the Messiah rose from among the dead … so we also should walk in a new life” (Rom 6:4; Col 2:12). From the verses: baptism is the immersion in water of one who believes, a burial with Christ and a rising with him, which sprinkling does not picture and an infant cannot answer to.",
+      "evidence": [
+        {
+          "ref": "Jhn.3.23"
+        },
+        {
+          "ref": "Mat.3.16"
+        },
+        {
+          "ref": "Act.8.38",
+          "to": "Act.8.39"
+        },
+        {
+          "ref": "Jhn.5.2"
+        },
+        {
+          "ref": "Act.2.38"
+        },
+        {
+          "ref": "Act.8.12"
+        },
+        {
+          "ref": "Rom.6.4"
+        },
+        {
+          "ref": "Col.2.12"
+        }
+      ]
+    }
+  ],
+  "note": "Root: BDB’s key עמד is kept; it is the verb’s own root and no other entry has it. The preposition עִמָּדִי “with me” (BDB p.df.ag, cross-referenced to עִם) is already a word of am.json and is left there. `db lexicon-brief עמד` does not list the verb at all (its key p.df.aa is the root heading in the database and has no word row), so the verb’s 527 tokens were read straight from the database by that key; the brief’s counts cover the nouns only. Ezk 29:7 וְהַעֲמַדְתָּ “you made all their loins stand” is in a verse whose sense calls for “shake” (the hiphil of מעד, as הַמְעַד “make shake” of the loins in Psa 69:24), a transposition of two letters; it is counted under the hiphil but cited for no sense. Dan 11:1 עָמְדִי is pointed as the noun or infinitive (“my standing was to strengthen him”) and is cited for no sense. Mic 1:11 עֶמְדָּתוֹ is uncertain. The Syriac ܥܡܕ “be immersed” is kept as a word of the entry by its spelling; whether it is ʿmd “stand” (a standing in the water) or an older ġmd (Arabic ġamada “sheathe”) is open, and Payne Smith and Brockelmann were not read. Leads not followed: Dillmann and Leslau for Geʿez ʿamd and ʿammada (cited here from Wiktionary and the root-set data only); a Ugaritic dictionary (DULAT) for ʿmd, which Wiktionary lists without texts; CAD for emēdu, imdu and nēmedu (cited from Oracc’s glossary only); Aramaic ʿMD “stand” in the root-set data (ARM022577), not found in Jastrow except as a variant of עֲמַר; Old Aramaic and Palmyrene ʿmwd “column”; Klein’s derivation of Arabic ʿinda “at” from ʿimda. Jhn 11:24 under ἀνίστημι is an allusion by shared wording with the Septuagint of Dan 12:13, not a quotation. Krahmalkov’s page for ʿMD is read from the OCR’s running page numbers (the entry falls between the heads of pp. 376 and 377)."
+}

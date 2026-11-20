@@ -1,0 +1,286 @@
+{
+  "id": "ggab",
+  "root": "גבב",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "tags": [
+    "body"
+  ],
+  "gloss": "back, brow, rim, raised structure",
+  "summary": "The psalmist pictures ploughmen cutting furrows in his back. With ‘eyes’ the Hebrew noun names the brows. In descriptions of made objects it can name a wheel rim, the boss of a shield or a raised structure.",
+  "words": [
+    {
+      "lemma": "גַּב",
+      "pos": "noun",
+      "gender": "m",
+      "bdb": [
+        "c.af.ab",
+        "c.ad.ac"
+      ],
+      "gloss": "back, brow, rim, raised structure",
+      "senses": [
+        {
+          "id": "back",
+          "gloss": "back",
+          "definition": "The upper or rear surface of the body.",
+          "evidence": [
+            {
+              "ref": "Psa.129.3",
+              "role": "defining",
+              "note": "Israel describes past suffering as ploughmen cutting long furrows in its back."
+            },
+            {
+              "ref": "Ezk.10.12",
+              "role": "defining",
+              "note": "The description of the cherubim lists their backs with their hands and wings."
+            }
+          ],
+          "cognate_ids": [
+            "uga-back",
+            "arc-back",
+            "syc-side",
+            "ar-side",
+            "mt-side",
+            "gez-side",
+            "tir-side",
+            "tig-side",
+            "akk-body"
+          ]
+        },
+        {
+          "id": "brow",
+          "gloss": "eyebrow",
+          "definition": "The ridge above an eye and the hair that grows there, in the expression ‘brows of the eyes’.",
+          "evidence": [
+            {
+              "ref": "Lev.14.9",
+              "role": "defining",
+              "note": "The person being cleansed shaves the hair of the head, beard and eyebrows."
+            }
+          ]
+        },
+        {
+          "id": "rim",
+          "gloss": "rim, boss",
+          "definition": "A prominent outer part of an object, especially the rim of a wheel or the boss of a shield.",
+          "evidence": [
+            {
+              "ref": "1Ki.7.33",
+              "role": "defining",
+              "note": "The rims are cast with the spokes, hubs and other parts of the wheels beneath the bronze stands."
+            },
+            {
+              "ref": "Ezk.1.18",
+              "role": "defining",
+              "note": "Eyes run all around the high rims of the four wheels."
+            },
+            {
+              "ref": "Job.15.26",
+              "role": "defining",
+              "note": "The raised parts belong to the thick shields of the one who charges."
+            }
+          ]
+        },
+        {
+          "id": "structure",
+          "gloss": "mound, platform, raised part",
+          "definition": "A constructed elevation or projecting part of a structure.",
+          "evidence": [
+            {
+              "ref": "Ezk.16.24",
+              "role": "defining",
+              "note": "Jerusalem builds the structure for herself and makes a raised platform in every square."
+            },
+            {
+              "ref": "Ezk.16.39",
+              "role": "defining",
+              "note": "The same structures can be pulled down when the city is stripped."
+            },
+            {
+              "ref": "Ezk.43.13",
+              "role": "defining",
+              "note": "The word concludes the description of the dimensions and border of the altar base."
+            }
+          ]
+        },
+        {
+          "id": "defence",
+          "gloss": "defence, bulwark",
+          "definition": "An image for the arguments on which Job’s friends rely.",
+          "evidence": [
+            {
+              "ref": "Job.13.12",
+              "role": "defining",
+              "note": "Job calls their maxims ashes and their defences clay, stressing how easily both give way."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "גַּב",
+      "lang": "arc",
+      "root": "גב",
+      "pos": "noun",
+      "gender": "m",
+      "bdb": [
+        "xc.aa.ac"
+      ],
+      "gloss": "back, side",
+      "senses": [
+        {
+          "id": "side",
+          "gloss": "back, side",
+          "definition": "The part of the beast’s body that bears the wings in Daniel’s vision, according to the written reading.",
+          "evidence": [
+            {
+              "ref": "Dan.7.6",
+              "role": "defining",
+              "note": "The leopard-like beast has four wings on its back or sides. This form belongs to the ketiv."
+            }
+          ],
+          "cognate_ids": [
+            "uga-back",
+            "arc-back",
+            "syc-side",
+            "ar-side",
+            "mt-side",
+            "gez-side",
+            "tir-side",
+            "tig-side"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "uga-back",
+      "lang": "uga",
+      "form": "𐎂𐎁",
+      "translit": "gb",
+      "gloss": "spine, back",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000074, UGC001493"
+        }
+      ]
+    },
+    {
+      "id": "arc-back",
+      "lang": "arc",
+      "form": "גַּבָּא",
+      "translit": "gabbā",
+      "gloss": "back, upper surface",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "C00032, Yoma 78a, top of the foot"
+        }
+      ]
+    },
+    {
+      "id": "syc-side",
+      "lang": "syc",
+      "form": "ܓܒܐ",
+      "translit": "gabbā",
+      "gloss": "side",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "blazek-2020-anatomy",
+          "locator": "s.v. geb ‘side’, comparative Semitic forms"
+        }
+      ]
+    },
+    {
+      "id": "ar-side",
+      "lang": "ar",
+      "form": "جَنْبٌ",
+      "translit": "janb",
+      "gloss": "side, flank",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 465, n6415"
+        }
+      ]
+    },
+    {
+      "id": "mt-side",
+      "lang": "sem",
+      "form": "ġenb",
+      "translit": "ġenb",
+      "gloss": "Maltese side, hip",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "gabra",
+          "locator": "lexeme 5200a36ee36f2379880000e0"
+        }
+      ]
+    },
+    {
+      "id": "gez-side",
+      "lang": "gez",
+      "form": "ገቦ",
+      "translit": "gabo",
+      "gloss": "side, flank",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "leslau-1987",
+          "locator": "p. 176, s.v. gabo"
+        }
+      ]
+    },
+    {
+      "id": "tir-side",
+      "lang": "sem",
+      "form": "ጎቦ",
+      "translit": "gobo",
+      "gloss": "Tigrinya side",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "blazek-2020-anatomy",
+          "locator": "s.v. geb ‘side’, comparative Semitic forms"
+        }
+      ]
+    },
+    {
+      "id": "tig-side",
+      "lang": "sem",
+      "form": "gäbo",
+      "translit": "gäbo",
+      "gloss": "Tigre side",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "blazek-2020-anatomy",
+          "locator": "s.v. geb ‘side’, comparative Semitic forms"
+        }
+      ]
+    },
+    {
+      "id": "akk-body",
+      "lang": "akk",
+      "form": "gabbu",
+      "translit": "gabbu",
+      "gloss": "a part of the body",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "cad",
+          "locator": "G p. 5, gabbu, anatomical noun"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The use with ‘eyes’ identifies eyebrows specifically. The meaning of the clay structures in Job 13:12 is figurative and their precise shape is unclear. Gob and Gibbethon are place names. Gabbai is a Benjaminite in Nehemiah 11:8, but the text supplies no derivation of his name from the anatomical noun."
+}

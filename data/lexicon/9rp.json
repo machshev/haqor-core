@@ -1,0 +1,214 @@
+{
+  "id": "9rp",
+  "root": "צרפ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "metalwork",
+    "testing"
+  ],
+  "gloss": "refine metal, test",
+  "summary": "A refiner works metal until the dross is removed. Psalms 12 and 18 use the resulting metal to describe words that can be trusted.",
+  "words": [
+    {
+      "lemma": "צָרַף",
+      "bdb": [
+        "r.dy.aa"
+      ],
+      "pos": "verb",
+      "gloss": "smelt, refine, test",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "refine or put to the test",
+          "senses": [
+            {
+              "gloss": "refine metal",
+              "definition": "A refiner separates dross from silver. The participle can designate a metalworker making an image.",
+              "evidence": [
+                {
+                  "ref": "Pro.25.4",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jer.6.29"
+                },
+                {
+                  "ref": "Isa.46.6"
+                }
+              ],
+              "id": "refine"
+            },
+            {
+              "id": "test-and-prove",
+              "gloss": "test and prove",
+              "definition": "The image of refined silver describes the purity of Yahweh’s words. People too can be tested as metal is tested.",
+              "evidence": [
+                {
+                  "ref": "Psa.12.7",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.18.31"
+                },
+                {
+                  "ref": "Psa.66.10"
+                },
+                {
+                  "ref": "Zec.13.9"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "refine",
+          "senses": [
+            {
+              "id": "refine-2",
+              "gloss": "refine",
+              "definition": "Malachi pictures a refiner sitting over silver as he purifies the sons of Levi.",
+              "evidence": [
+                {
+                  "ref": "Mal.3.2",
+                  "to": "Mal.3.3",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be refined",
+          "senses": [
+            {
+              "id": "be-refined",
+              "gloss": "be refined",
+              "definition": "Daniel describes many being purified and refined through the time of trial.",
+              "evidence": [
+                {
+                  "ref": "Dan.12.10",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "akk-sarapu"
+      ]
+    },
+    {
+      "lemma": "מַצְרֵף",
+      "bdb": [
+        "r.dy.ad"
+      ],
+      "pos": "noun",
+      "gloss": "crucible",
+      "senses": [
+        {
+          "id": "vessel-for-refining-silver",
+          "gloss": "vessel for refining silver",
+          "definition": "Proverbs pairs a crucible for silver with a furnace for gold, and speaks of Yahweh testing hearts.",
+          "evidence": [
+            {
+              "ref": "Pro.17.3",
+              "role": "defining"
+            },
+            {
+              "ref": "Pro.27.21"
+            }
+          ],
+          "kin": [
+            "refine"
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "akk-sarapu"
+      ]
+    },
+    {
+      "lemma": "צֹרְפִי",
+      "bdb": [
+        "r.dy.ab"
+      ],
+      "pos": "noun",
+      "gloss": "goldsmiths",
+      "senses": [
+        {
+          "id": "a-member-of-the",
+          "gloss": "a member of the goldsmiths",
+          "definition": "Malchijah is identified with the goldsmiths while repairing Jerusalem’s wall.",
+          "evidence": [
+            {
+              "ref": "Neh.3.31",
+              "role": "defining"
+            }
+          ],
+          "kin": [
+            "refine"
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "akk-sarapu"
+      ]
+    },
+    {
+      "lemma": "צָרְפַת",
+      "bdb": [
+        "r.dy.ac"
+      ],
+      "pos": "name",
+      "gloss": "Zarephath",
+      "senses": [
+        {
+          "id": "zarephath",
+          "gloss": "Zarephath",
+          "definition": "Elijah is sent to a widow in this Sidonian town during the drought. Jesus recalls the episode in Nazareth.",
+          "evidence": [
+            {
+              "ref": "1Ki.17.9",
+              "to": "1Ki.17.10",
+              "role": "defining"
+            },
+            {
+              "ref": "Oba.1.20"
+            },
+            {
+              "ref": "Luk.4.26"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-sarapu",
+      "lang": "akk",
+      "form": "ṣarāpu",
+      "translit": "ṣarāpu",
+      "gloss": "burn, smelt, refine",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep, x000035440, ṣarāpu [burn], including smelt and refine"
+        }
+      ],
+      "sounds": {
+        "צ": "ṣ"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "The name Zarephath resembles the refining root, but the biblical accounts do not explain its name."
+}

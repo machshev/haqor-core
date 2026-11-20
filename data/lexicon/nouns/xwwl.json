@@ -1,0 +1,111 @@
+{
+  "id": "xwwl",
+  "root": "שול",
+  "status": "draft",
+  "updated": "2026-11-18",
+  "tags": [],
+  "gloss": "hem, skirts, train of a robe",
+  "summary": "Bells and woven pomegranates run around the hem of the priestly robe. Isaiah sees the train of a robe fill the temple. In the prophets a city is pictured as a woman whose skirts can be lifted to expose her.",
+  "words": [
+    {
+      "lemma": "שׁוּל",
+      "pos": "noun",
+      "gender": "m",
+      "bdb": [
+        "v.bu.ab"
+      ],
+      "gloss": "hem, skirts, train",
+      "senses": [
+        {
+          "id": "hem",
+          "gloss": "hem, lower edge of a robe",
+          "definition": "The edge that runs around the bottom of a garment, where ornaments can be attached.",
+          "evidence": [
+            {
+              "ref": "Exo.28.33",
+              "role": "defining",
+              "note": "Yarn pomegranates and gold bells are to hang all around the hem."
+            },
+            {
+              "ref": "Exo.28.34",
+              "role": "defining",
+              "note": "A bell alternates with a pomegranate around the robe."
+            },
+            {
+              "ref": "Exo.39.24",
+              "role": "defining",
+              "note": "The workers make pomegranates for the hem."
+            },
+            {
+              "ref": "Exo.39.25",
+              "role": "defining",
+              "note": "They place the gold bells between the pomegranates."
+            },
+            {
+              "ref": "Exo.39.26",
+              "role": "defining",
+              "note": "The completed row runs around the hem of the robe worn in service."
+            }
+          ]
+        },
+        {
+          "id": "skirts",
+          "gloss": "skirts, train",
+          "definition": "The lower, hanging part of a robe. It can spread behind the wearer or be lifted up.",
+          "evidence": [
+            {
+              "ref": "Isa.6.1",
+              "role": "defining",
+              "note": "The seated figure’s robe extends so far that its skirts fill the temple."
+            },
+            {
+              "ref": "Jer.13.22",
+              "role": "defining",
+              "note": "Jerusalem asks why her skirts have been uncovered and her heels exposed."
+            },
+            {
+              "ref": "Jer.13.26",
+              "role": "defining",
+              "note": "The skirts are raised over her face to expose her shame."
+            },
+            {
+              "ref": "Nam.3.5",
+              "role": "defining",
+              "note": "The same gesture exposes Nineveh before the nations."
+            },
+            {
+              "ref": "Lam.1.9",
+              "role": "defining",
+              "note": "Jerusalem’s uncleanness is visible in her skirts."
+            }
+          ],
+          "cognate_ids": [
+            "ar-hang"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-hang",
+      "lang": "ar",
+      "form": "سَوِلَ",
+      "translit": "sawila",
+      "gloss": "hang loosely",
+      "relation": "possible",
+      "sounds": {
+        "ש": "š"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 1473, n21313, second verb under سَالَ, with the adjective أَسْوَلُ on p. 1474"
+        }
+      ],
+      "note": "The proposed connection concerns the way a garment hangs. The Arabic verb is also used of the body."
+    }
+  ],
+  "doctrine": [],
+  "note": "Egyptian swr names a piece of chariot equipment (TLA 130450, Hoch no. 361). Kilani suggests a textile covering or its edges, but the item’s function and its connection with the Hebrew remain uncertain. Garlic is covered under shum. Shuni, Shunem, the Shunammite and the Shulammite also occur under this index key without an established derivation from the garment word."
+}

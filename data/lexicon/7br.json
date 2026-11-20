@@ -1,0 +1,558 @@
+{
+  "id": "7br",
+  "root": "חבר",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "gloss": "join, bind, associate, stripe",
+  "summary": "Curtains are fastened with clasps to make one tent. People also join as companions or allies. Psalm 58 uses the verb and noun together for the binding spell a charmer speaks.",
+  "words": [
+    {
+      "lemma": "חָבֵר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "companion",
+      "bdb": [
+        "h.ai.af"
+      ],
+      "senses": [
+        {
+          "id": "companion",
+          "gloss": "companion",
+          "definition": "A person who shares someone’s company. One companion lifts the other after a fall. The psalm addresses a king set above his companions.",
+          "evidence": [
+            {
+              "ref": "Ecc.4.10",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.45.8"
+            },
+            {
+              "ref": "Psa.119.63"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-h00113"
+      ]
+    },
+    {
+      "lemma": "חַבּוּרָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "stripe, wound",
+      "bdb": [
+        "h.ai.aj"
+      ],
+      "senses": [
+        {
+          "id": "wound",
+          "gloss": "wound",
+          "definition": "The Psalmist's wounds are foul and festering.",
+          "evidence": [
+            {
+              "ref": "Psa.38.6",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חָבַר",
+      "pos": "verb",
+      "gloss": "join, bind",
+      "bdb": [
+        "h.ai.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "join",
+          "senses": [
+            {
+              "id": "join-together",
+              "gloss": "join together",
+              "definition": "Kings meet to form an alliance. Curtains are coupled in sets to form the tent.",
+              "evidence": [
+                {
+                  "ref": "Gen.14.3",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Exo.26.3"
+                }
+              ]
+            },
+            {
+              "id": "join",
+              "gloss": "join",
+              "definition": "The charmer joins words or binds them in an incantation.",
+              "evidence": [
+                {
+                  "ref": "Psa.58.6",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "join, fasten",
+          "senses": [
+            {
+              "id": "join-fasten",
+              "gloss": "join, fasten",
+              "definition": "Clasps fit the loops on the two curtains and unite the dwelling into one.",
+              "evidence": [
+                {
+                  "ref": "Exo.26.6",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be joined",
+          "senses": [
+            {
+              "id": "be-joined",
+              "gloss": "be joined",
+              "definition": "The shoulder pieces of the ephod attach at its two ends.",
+              "evidence": [
+                {
+                  "ref": "Exo.28.7",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Exo.39.4"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpael",
+          "gloss": "ally oneself",
+          "senses": [
+            {
+              "id": "ally-oneself",
+              "gloss": "ally oneself",
+              "definition": "Two royal houses enter into an alliance.",
+              "evidence": [
+                {
+                  "ref": "Dan.11.6",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Dan.11.23"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "string together",
+          "senses": [
+            {
+              "id": "string-together",
+              "gloss": "string together",
+              "definition": "Job could also have assembled words against his visitors if their positions had been reversed.",
+              "evidence": [
+                {
+                  "ref": "Job.16.4",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-h00108"
+      ]
+    },
+    {
+      "lemma": "חֶבֶר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "company, band, binding spell",
+      "bdb": [
+        "h.ai.ab"
+      ],
+      "senses": [
+        {
+          "id": "band-company",
+          "gloss": "band, company",
+          "definition": "Hosea compares a company of priests to a band lying in wait on the road.",
+          "evidence": [
+            {
+              "ref": "Hos.6.9",
+              "role": "defining"
+            }
+          ],
+          "cognate_ids": [
+            "arc-h00113"
+          ]
+        },
+        {
+          "id": "binding-spell",
+          "gloss": "binding spell",
+          "definition": "The deaf serpent ignores even a skilled charmer. Deuteronomy names the practice of binding a spell among the forbidden arts.",
+          "evidence": [
+            {
+              "ref": "Psa.58.6",
+              "role": "defining"
+            },
+            {
+              "ref": "Deu.18.11"
+            },
+            {
+              "ref": "Isa.47.9"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַחְבֶּרֶת",
+      "bdb": [
+        "h.ai.ao"
+      ],
+      "pos": "noun",
+      "gloss": "joined set of curtains",
+      "senses": [
+        {
+          "id": "joined-set-of-curtains",
+          "gloss": "joined set of curtains",
+          "definition": "Loops along the edge of each assembled set allow two sections of curtains to be fastened together.",
+          "evidence": [
+            {
+              "ref": "Exo.26.4",
+              "role": "defining"
+            },
+            {
+              "ref": "Exo.26.5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חֹבֶרֶת",
+      "bdb": [
+        "h.ai.ah"
+      ],
+      "pos": "noun",
+      "gloss": "joined piece",
+      "senses": [
+        {
+          "id": "joined-piece",
+          "gloss": "joined piece",
+          "definition": "The outermost curtain of the joined piece carries the loops.",
+          "evidence": [
+            {
+              "ref": "Exo.26.10",
+              "role": "defining"
+            },
+            {
+              "ref": "Exo.26.4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מְחַבְּרָה",
+      "bdb": [
+        "h.ai.ap"
+      ],
+      "pos": "noun",
+      "gloss": "clamp, brace",
+      "senses": [
+        {
+          "id": "clamp-brace",
+          "gloss": "clamp, brace",
+          "definition": "Builders need these pieces alongside the nails for the gates and the timber for the houses.",
+          "evidence": [
+            {
+              "ref": "1Ch.22.3",
+              "role": "defining"
+            },
+            {
+              "ref": "2Ch.34.11"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חֶבְרָה",
+      "bdb": [
+        "h.ai.ae"
+      ],
+      "pos": "noun",
+      "gloss": "company",
+      "senses": [
+        {
+          "id": "company",
+          "gloss": "company",
+          "definition": "Job is accused of walking in company with evildoers.",
+          "evidence": [
+            {
+              "ref": "Job.34.8",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חֲבֶרֶת",
+      "bdb": [
+        "h.ai.ag"
+      ],
+      "pos": "noun",
+      "gloss": "companion, wife",
+      "senses": [
+        {
+          "id": "companion-wife",
+          "gloss": "companion, wife",
+          "definition": "Malachi calls a man’s wife his companion and the wife of his covenant.",
+          "evidence": [
+            {
+              "ref": "Mal.2.14",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חַבָּר",
+      "bdb": [
+        "h.ai.ai"
+      ],
+      "pos": "noun",
+      "gloss": "trading partner",
+      "senses": [
+        {
+          "id": "trading-partner",
+          "gloss": "trading partner",
+          "definition": "The question is whether partners could bargain over Leviathan and divide it among merchants.",
+          "evidence": [
+            {
+              "ref": "Job.40.30",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חֲבַרְבֻּרָה",
+      "bdb": [
+        "h.ai.ak"
+      ],
+      "pos": "noun",
+      "gloss": "spot, marking",
+      "senses": [
+        {
+          "id": "spot-marking",
+          "gloss": "spot, marking",
+          "definition": "Jeremiah asks whether a leopard can change its markings. The relation to a stripe from a blow is possible.",
+          "evidence": [
+            {
+              "ref": "Jer.13.23",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חֲבַר",
+      "bdb": [
+        "xh.ab.aa"
+      ],
+      "pos": "noun",
+      "gloss": "companion",
+      "senses": [
+        {
+          "id": "companion-2",
+          "gloss": "companion",
+          "definition": "Daniel tells his three companions what has happened and asks them to pray.",
+          "evidence": [
+            {
+              "ref": "Dan.2.17",
+              "role": "defining"
+            },
+            {
+              "ref": "Dan.2.18"
+            }
+          ]
+        }
+      ],
+      "lang": "arc",
+      "cognate_ids": [
+        "arc-h00113"
+      ]
+    },
+    {
+      "lemma": "חַבְרָה",
+      "bdb": [
+        "xh.ab.ab"
+      ],
+      "pos": "noun",
+      "gloss": "fellow",
+      "senses": [
+        {
+          "id": "fellow",
+          "gloss": "fellow",
+          "definition": "The horn looks larger than its fellows, the horns beside it.",
+          "evidence": [
+            {
+              "ref": "Dan.7.20",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "lang": "arc"
+    },
+    {
+      "lemma": "חַבְרָא",
+      "pos": "noun",
+      "gloss": "fellow, neighbour",
+      "senses": [
+        {
+          "id": "fellow-neighbour",
+          "gloss": "fellow, neighbour",
+          "definition": "Paul tells each believer to seek the good of the other.",
+          "evidence": [
+            {
+              "ref": "1Co.10.24",
+              "role": "defining"
+            },
+            {
+              "ref": "Php.2.4"
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "cognate_ids": [
+        "arc-h00113"
+      ]
+    },
+    {
+      "lemma": "חֶבְרִי",
+      "bdb": [
+        "h.ai.ad"
+      ],
+      "pos": "adjective",
+      "gloss": "Heberite",
+      "senses": [
+        {
+          "id": "heberite",
+          "gloss": "Heberite",
+          "definition": "One of Asher’s clans takes the name of Heber son of Beriah.",
+          "evidence": [
+            {
+              "ref": "Num.26.45",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חֶבְרוֹנִי",
+      "bdb": [
+        "h.ai.an"
+      ],
+      "pos": "adjective",
+      "gloss": "Hebronite",
+      "senses": [
+        {
+          "id": "hebronite",
+          "gloss": "Hebronite",
+          "definition": "A Kohathite clan takes its name from Hebron.",
+          "evidence": [
+            {
+              "ref": "Num.3.27",
+              "role": "defining"
+            },
+            {
+              "ref": "Exo.6.18"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חֶבְרוֹן",
+      "bdb": [
+        "h.ai.al"
+      ],
+      "pos": "name",
+      "gloss": "Hebron",
+      "senses": [
+        {
+          "id": "hebron",
+          "gloss": "Hebron",
+          "definition": "Abram pitches his tents by Mamre at Hebron, and later buys a burial place there. The city also bears the name Kiriath Arba.",
+          "evidence": [
+            {
+              "ref": "Gen.13.18",
+              "role": "defining"
+            },
+            {
+              "ref": "Gen.23.2"
+            },
+            {
+              "ref": "Gen.23.19"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "note": "The place Hebron and the personal name share a form. The histories identify the bearers without explicitly deriving their names. The river Habor in 2 Kings 17:6 has no demonstrated connection to joining.",
+  "cognates": [
+    {
+      "id": "arc-h00108",
+      "lang": "arc",
+      "form": "חֲבַר",
+      "translit": "ḥăbar",
+      "gloss": "join, fasten",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "חֲבַר, H00108, Targum Psalms 119:69"
+        }
+      ]
+    },
+    {
+      "id": "arc-h00113",
+      "lang": "arc",
+      "form": "חַבְרָא",
+      "translit": "ḥabrā",
+      "gloss": "friend, associate",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "חַבְרָא, H00113, Targum Proverbs 10:24"
+        }
+      ]
+    }
+  ],
+  "created": "2026-11-19"
+}

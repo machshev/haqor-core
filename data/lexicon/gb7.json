@@ -1,0 +1,123 @@
+{
+  "id": "gb7",
+  "root": "גבח",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "tags": [
+    "body"
+  ],
+  "gloss": "bald at the front, bare front area",
+  "summary": "Leviticus distinguishes hair loss at the front of the scalp from the reddish-white mark a priest examines there. Later in the chapter the same noun describes part of a textile or leather article.",
+  "words": [
+    {
+      "lemma": "גִּבֵּחַ",
+      "pos": "adjective",
+      "bdb": [
+        "c.ai.ab"
+      ],
+      "gloss": "bald at the front",
+      "senses": [
+        {
+          "id": "bald",
+          "gloss": "bald at the front of the head",
+          "definition": "Describes a person whose hair has receded from the face.",
+          "evidence": [
+            {
+              "ref": "Lev.13.41",
+              "role": "defining",
+              "note": "The law describes hair loss on the side toward the face and declares the person clean."
+            }
+          ],
+          "cognate_ids": [
+            "syc-bald",
+            "akk-bald"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "גַּבַּחַת",
+      "pos": "noun",
+      "gender": "f",
+      "bdb": [
+        "c.ai.ac"
+      ],
+      "gloss": "bare front of the scalp or of material",
+      "senses": [
+        {
+          "id": "scalp",
+          "gloss": "bald area at the front of the head",
+          "definition": "The exposed skin at the front of a balding scalp.",
+          "evidence": [
+            {
+              "ref": "Lev.13.42",
+              "role": "defining",
+              "note": "A reddish-white mark may appear on either of the two bald areas distinguished in the preceding verses."
+            },
+            {
+              "ref": "Lev.13.43",
+              "role": "defining",
+              "note": "The priest looks at the swelling on the bald patch and examines its colour."
+            }
+          ],
+          "kin": [
+            "bald"
+          ],
+          "cognate_ids": [
+            "syc-bald"
+          ]
+        },
+        {
+          "id": "material",
+          "gloss": "bare area on the front or face of material",
+          "definition": "One of two contrasted areas where damage can remain visible on a washed article of cloth or leather.",
+          "evidence": [
+            {
+              "ref": "Lev.13.55",
+              "role": "defining",
+              "note": "The priest inspects the washed article. The paired terms previously used of the scalp now locate the damage on the material."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "syc-bald",
+      "lang": "syc",
+      "form": "ܓܒܚܘܬܐ",
+      "translit": "gḇāḥūṯā",
+      "gloss": "frontal baldness",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "evidence": [
+        {
+          "source": "payne-smith-1903",
+          "locator": "s.v. ܓܒܚܘܬܐ, baldness on the forepart of the head"
+        }
+      ]
+    },
+    {
+      "id": "akk-bald",
+      "lang": "akk",
+      "form": "gubbuhu",
+      "translit": "gubbuhu",
+      "gloss": "bald",
+      "relation": "possible",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep/x000009330, dcclt/x0010360, also written qubbuhu"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The Syriac noun specifies the same part of the scalp. The Akkadian adjective describes baldness more generally, and its historical connection is uncertain. Leviticus 13:55 transfers the scalp terminology to material. Which aspect of the material’s surface the pair distinguishes remains open."
+}

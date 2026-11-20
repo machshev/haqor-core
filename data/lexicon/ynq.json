@@ -1,0 +1,223 @@
+{
+  "id": "ynq",
+  "root": "ינק",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "family",
+    "plants"
+  ],
+  "gloss": "suck milk, give suck",
+  "summary": "The verb distinguishes the child taking milk from the mother or nurse who gives it. Related plant nouns describe a tender shoot sprouting from a tree.",
+  "words": [
+    {
+      "lemma": "יָנַק",
+      "bdb": [
+        "j.bw.aa",
+        "m.bv.ad",
+        "m.cp.ah"
+      ],
+      "pos": "verb",
+      "gloss": "suck milk, nurse",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "take milk at the breast",
+          "senses": [
+            {
+              "gloss": "take milk at the breast",
+              "definition": "Job remembers the breasts at which he nursed. The participle describes children still at the breast, whose voices Psalm 8 sets against the enemy and avenger.",
+              "evidence": [
+                {
+                  "ref": "Job.3.12",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.8.3"
+                },
+                {
+                  "ref": "Num.11.12"
+                },
+                {
+                  "ref": "Lam.2.11"
+                }
+              ],
+              "id": "suck"
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "give milk, nurse a child",
+          "senses": [
+            {
+              "gloss": "give milk, nurse a child",
+              "definition": "Pharaoh’s daughter pays Moses’ mother to nurse him. The participle can designate the woman who nurses a child. Jackals too give their young milk.",
+              "evidence": [
+                {
+                  "ref": "Exo.2.7",
+                  "to": "Exo.2.9",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Gen.35.8"
+                },
+                {
+                  "ref": "Lam.4.3"
+                }
+              ],
+              "id": "nurse"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "akk-enequ"
+      ],
+      "greek": [
+        {
+          "lemma": "θηλάζω",
+          "gloss": "suck milk, nurse",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "PSA 8:3, cited in Matthew"
+            },
+            {
+              "ref": "Mat.21.16"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "יוֹנֵק",
+      "bdb": [
+        "j.bw.ab"
+      ],
+      "pos": "noun",
+      "gloss": "tender shoot",
+      "senses": [
+        {
+          "id": "tender-shoot",
+          "gloss": "tender shoot",
+          "definition": "The servant grows like a young shoot, compared in the next line to a root in dry ground.",
+          "evidence": [
+            {
+              "ref": "Isa.53.2",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "יוֹנֶקֶת",
+      "bdb": [
+        "j.bw.ac"
+      ],
+      "pos": "noun",
+      "gloss": "young shoot, twig",
+      "senses": [
+        {
+          "id": "young-shoot-twig",
+          "gloss": "young shoot, twig",
+          "definition": "Even after a tree is cut down, its shoot may grow again. Ezekiel pictures a tender twig taken from the top of a cedar.",
+          "evidence": [
+            {
+              "ref": "Job.14.7",
+              "role": "defining"
+            },
+            {
+              "ref": "Ezk.17.22"
+            },
+            {
+              "ref": "Hos.14.7"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "יְנִיקָה",
+      "bdb": [
+        "j.bw.ad"
+      ],
+      "pos": "noun",
+      "gloss": "tender shoot",
+      "senses": [
+        {
+          "id": "tender-shoot-2",
+          "gloss": "tender shoot",
+          "definition": "In Ezekiel’s riddle an eagle plucks the top of a cedar’s young shoots and carries it to a city of merchants.",
+          "evidence": [
+            {
+              "ref": "Ezk.17.3",
+              "to": "Ezk.17.4",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "אֵינֶק",
+      "pos": "verb",
+      "gloss": "give suck, nurse",
+      "stems": [
+        {
+          "stem": "aphel",
+          "gloss": "nurse at the breast",
+          "senses": [
+            {
+              "id": "nurse-at-the-breast",
+              "gloss": "nurse at the breast",
+              "definition": "A woman blesses the breasts that nursed Jesus. He later speaks of breasts that have never nursed and of women nursing children in the time of distress.",
+              "evidence": [
+                {
+                  "ref": "Luk.11.27",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Luk.23.29"
+                },
+                {
+                  "ref": "Mat.24.19"
+                }
+              ],
+              "kin": [
+                "nurse"
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "cognate_ids": [
+        "akk-enequ"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-enequ",
+      "lang": "akk",
+      "form": "enēqu",
+      "translit": "enēqu",
+      "gloss": "suck, suckle",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep/x000066850, enēqu [suck]"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "In Psalm 8 the nursing child is expressed by a participle. Isaiah 53:2 places the same form between a verb of growth and the image of a root, indicating a young plant."
+}

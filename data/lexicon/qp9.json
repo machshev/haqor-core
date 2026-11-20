@@ -1,0 +1,100 @@
+{
+  "id": "qp9",
+  "root": "קפצ",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "gloss": "shut, close",
+  "summary": "קפץ describes closing or shutting tightly.",
+  "words": [
+    {
+      "lemma": "קָפַץ",
+      "pos": "verb",
+      "gloss": "shut, close",
+      "bdb": [
+        "s.cm.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "close, shut up",
+          "senses": [
+            {
+              "id": "close-shut-up",
+              "gloss": "close, shut up",
+              "definition": "One must not close a hand to a poor brother. Asaph asks whether God has shut up his compassion in anger.",
+              "evidence": [
+                {
+                  "ref": "Deu.15.7",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.77.10",
+                  "role": "example"
+                },
+                {
+                  "ref": "Isa.52.15",
+                  "role": "example"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be gathered in",
+          "senses": [
+            {
+              "id": "be-gathered-in",
+              "gloss": "be gathered in",
+              "definition": "Those briefly exalted are brought low and gathered in like the rest, cut off like heads of grain.",
+              "evidence": [
+                {
+                  "ref": "Job.24.24",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "leap",
+          "senses": [
+            {
+              "id": "leap",
+              "gloss": "leap",
+              "definition": "The beloved bounds over hills in parallel with leaping over mountains.",
+              "evidence": [
+                {
+                  "ref": "Sng.2.8",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-shut"
+      ]
+    }
+  ],
+  "note": "Job 24:24 fixes the outcome more clearly than the precise image of gathering in.",
+  "created": "2026-11-19",
+  "cognates": [
+    {
+      "id": "arc-shut",
+      "lang": "arc",
+      "form": "קְפַץ",
+      "translit": "qəp̄aṣ",
+      "gloss": "close, contract, leap",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. קְפַץ, Targum Onqelos Deuteronomy 15:7 and Niddah 8b"
+        }
+      ]
+    }
+  ]
+}

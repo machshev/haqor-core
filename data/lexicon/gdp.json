@@ -1,0 +1,106 @@
+{
+  "id": "gdp",
+  "root": "גדפ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "gloss": "blaspheme",
+  "summary": "The root is associated with blaspheme.",
+  "words": [
+    {
+      "lemma": "גָּדַף",
+      "bdb": [
+        "c.as.aa"
+      ],
+      "pos": "verb",
+      "gloss": "blaspheme",
+      "stems": [
+        {
+          "stem": "piel",
+          "gloss": "blaspheme",
+          "senses": [
+            {
+              "id": "blaspheme",
+              "gloss": "blaspheme",
+              "definition": "Scripture uses this word in the sense of blaspheme.",
+              "evidence": [
+                {
+                  "ref": "Psa.44.17",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "גְּדוּפָה",
+      "bdb": [
+        "c.as.ab"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "taunt",
+      "senses": [
+        {
+          "id": "taunt",
+          "gloss": "taunt",
+          "definition": "A reviling taunt or insult.",
+          "evidence": [
+            {
+              "ref": "Ezk.5.15",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "גִּדּוּפִים",
+      "bdb": [
+        "c.as.ac"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "revilings",
+      "senses": [
+        {
+          "id": "revilings",
+          "gloss": "revilings",
+          "definition": "Words of reviling or blasphemy.",
+          "evidence": [
+            {
+              "ref": "Isa.43.28",
+              "role": "defining"
+            },
+            {
+              "ref": "Isa.51.7"
+            },
+            {
+              "ref": "Zep.2.8"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-gadaph",
+      "lang": "arc",
+      "form": "גְּדַף",
+      "translit": "gəḏap̄",
+      "gloss": "blaspheme",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "C00238"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "Drafted for coverage of Psa.44.17; cognate research remains open."
+}

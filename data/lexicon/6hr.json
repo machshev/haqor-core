@@ -1,0 +1,1394 @@
+{
+  "id": "6hr",
+  "root": "טהר",
+  "status": "draft",
+  "updated": "2026-11-18",
+  "tags": [
+    "cleanness",
+    "purity",
+    "law",
+    "priesthood",
+    "sin",
+    "atonement",
+    "gold"
+  ],
+  "gloss": "be clean, pure; cleanse, pronounce clean; purity, clearness",
+  "summary": "To be clean, free from what defiles, and to make or declare clean: the opposite of טָמֵא “unclean”, set beside קָדַשׁ “holy” (Lev 10:10). The qal is to become clean, after washing, the evening, or the offering by which the priest makes a covering (Lev 11:32; 14:20), and of Naaman, whose flesh came back like a little child's when he washed and was clean (2Ki 5:14); the piel is the priest's declaring a man clean (Lev 13:6) and the cleansing of the Levites, the altar, the house of Yahweh and the land, and Yahweh's own cleansing of his people from their sins (Lev 16:30; Psa 51:4; Jer 33:8); the hithpael is to purify oneself. The adjective טָהוֹר is clean, of men, animals and places, and pure, above all of the tabernacle's “pure gold” and of a clean heart (Psa 51:12). The noun טֹהַר is the clearness of the sky (Exo 24:10), and Arabic ṭahura “be clean, pure” and Ugaritic ṭhr “pure” are the same root.",
+  "words": [
+    {
+      "lemma": "טָהֵר",
+      "pos": "verb",
+      "gloss": "be clean; cleanse, purify, pronounce clean; purify oneself",
+      "bdb": [
+        "i.ah.aa"
+      ],
+      "cognate_ids": [
+        "ar-tahura",
+        "arc-tehar",
+        "gez-tahara"
+      ],
+      "summary": "About ninety-five times, in four stems, most of them in the law of cleanness (Lev 11–16; Num 8; 19; 31) and in the cleansings of the house of Yahweh under Hezekiah, Josiah and Nehemiah. What is clean may come near what is holy and eat of it (Lev 22:4–7); the opposite is טָמֵא, and the means are water, blood, fire and the offering that covers (Num 31:23; Lev 16:19, 30). The brief's one token with no stem (Job 17:9, וּטֳהָר־יָדַיִם) is the adjective and is cited there.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "be, become clean",
+          "senses": [
+            {
+              "id": "be-clean",
+              "gloss": "be, become clean (by the law)",
+              "definition": "To come out of uncleanness into the state in which a person or thing may again come near what is holy: after washing and the setting of the sun, after the days are counted, or after the offering by which the priest makes a covering.",
+              "evidence": [
+                {
+                  "ref": "Lev.11.32",
+                  "role": "defining",
+                  "note": "A vessel an unclean creature falls on is put in water, “unclean until the evening, וְטָהֵר”."
+                },
+                {
+                  "ref": "Lev.22.7",
+                  "role": "defining",
+                  "note": "“When the sun goes, וְטָהֵר, and afterward he may eat of the holy things.”"
+                },
+                {
+                  "ref": "Lev.14.20",
+                  "role": "defining",
+                  "note": "“The priest shall make a covering for him, וְטָהֵר.”"
+                },
+                {
+                  "ref": "Lev.12.7",
+                  "note": "The mother after childbirth: “he shall make a covering for her, and she will be clean from the flow of her blood.”"
+                },
+                {
+                  "ref": "Lev.12.8"
+                },
+                {
+                  "ref": "Lev.13.6",
+                  "note": "The priest pronounces him clean; he washes his clothes, “and he will be clean”."
+                },
+                {
+                  "ref": "Lev.13.34"
+                },
+                {
+                  "ref": "Lev.13.58",
+                  "note": "A garment washed a second time, “and it will be clean”."
+                },
+                {
+                  "ref": "Lev.14.8",
+                  "note": "The one being cleansed washes, shaves and bathes, “and he will be clean”."
+                },
+                {
+                  "ref": "Lev.14.9"
+                },
+                {
+                  "ref": "Lev.14.53",
+                  "note": "Of a house: the priest makes a covering for it, “and it will be clean”."
+                },
+                {
+                  "ref": "Lev.15.13",
+                  "role": "defining",
+                  "note": "The man with a flow counts seven days “for his cleansing (לְטָהֳרָתוֹ)”, washes, bathes in living water, “and he will be clean”."
+                },
+                {
+                  "ref": "Lev.15.28"
+                },
+                {
+                  "ref": "Lev.17.15"
+                },
+                {
+                  "ref": "Lev.22.4",
+                  "note": "No son of Aaron with a skin disease or a flow may eat of the holy things “until he is clean”."
+                },
+                {
+                  "ref": "Num.19.12",
+                  "role": "defining",
+                  "note": "Of one who touched the dead: “he shall purify himself (יִתְחַטָּא) with it on the third day and the seventh day, and he will be clean; and if he does not … he will not be clean.”"
+                },
+                {
+                  "ref": "Num.19.19"
+                },
+                {
+                  "ref": "Num.31.23",
+                  "note": "What can stand fire is passed through the fire, “and it will be clean”, yet purified with the water of impurity too."
+                },
+                {
+                  "ref": "Num.31.24"
+                }
+              ],
+              "kin": [
+                "clean-by-law"
+              ]
+            },
+            {
+              "id": "be-clean-healed",
+              "gloss": "be clean (of a skin disease healed)",
+              "definition": "Of Naaman: to be made clean of his skin disease by washing in the Jordan as the prophet told him, his flesh restored.",
+              "evidence": [
+                {
+                  "ref": "2Ki.5.10",
+                  "role": "defining",
+                  "note": "“Go and wash seven times in the Jordan, and your flesh will return to you, וּטְהָר.”"
+                },
+                {
+                  "ref": "2Ki.5.12",
+                  "note": "“May I not wash in them and be clean?”"
+                },
+                {
+                  "ref": "2Ki.5.13",
+                  "note": "“How much more when he says to you, Wash and be clean?”"
+                },
+                {
+                  "ref": "2Ki.5.14",
+                  "role": "defining",
+                  "note": "“His flesh returned like the flesh of a little boy, וַיִּטְהָר.”"
+                }
+              ]
+            },
+            {
+              "id": "be-clean-of-sin",
+              "gloss": "be clean (of sin) before God",
+              "definition": "To be clean of sin and uncleanness in Yahweh's sight: given by him on the day of covering, asked of him, and never a man's own doing.",
+              "evidence": [
+                {
+                  "ref": "Lev.16.30",
+                  "role": "defining",
+                  "note": "“On this day he will make a covering for you, to cleanse you; from all your sins before Yahweh תִּטְהָרוּ.”"
+                },
+                {
+                  "ref": "Psa.51.9",
+                  "role": "defining",
+                  "note": "“Purify me (תְּחַטְּאֵנִי) with hyssop, וְאֶטְהָר; wash me, and I will be whiter than snow.”"
+                },
+                {
+                  "ref": "Pro.20.9",
+                  "role": "defining",
+                  "note": "“Who can say, I have made my heart clean (זִכִּיתִי), טָהַרְתִּי from my sin?”"
+                },
+                {
+                  "ref": "Job.4.17",
+                  "note": "“Can a man be more righteous than God, or a strong man יִטְהַר more than his maker?”"
+                },
+                {
+                  "ref": "Jer.13.27",
+                  "note": "To Jerusalem, after her adulteries on the hills: “You will not be clean! After how long yet?”"
+                },
+                {
+                  "ref": "Ezk.24.13",
+                  "note": "“I cleansed you and you were not clean; from your uncleanness you will not be clean again until I have spent my fury on you.”"
+                },
+                {
+                  "ref": "Ezk.36.25",
+                  "note": "“I will sprinkle clean water on you, and you will be clean from all your uncleannesses.”"
+                }
+              ],
+              "kin": [
+                "clean-moral"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "cleanse, purify; pronounce clean",
+          "senses": [
+            {
+              "id": "pronounce-clean",
+              "gloss": "pronounce clean",
+              "definition": "The priest's declaration, after he has looked at a skin disease, a garment or a house, that it is clean.",
+              "evidence": [
+                {
+                  "ref": "Lev.13.6",
+                  "role": "defining",
+                  "note": "“Behold, the infection has faded and has not spread, וְטִהֲרוֹ הַכֹּהֵן: it is a scab.”"
+                },
+                {
+                  "ref": "Lev.13.13",
+                  "note": "If the disease covers all his flesh and has all turned white, “he shall pronounce clean the infected one; he is clean”."
+                },
+                {
+                  "ref": "Lev.13.17"
+                },
+                {
+                  "ref": "Lev.13.23"
+                },
+                {
+                  "ref": "Lev.13.28"
+                },
+                {
+                  "ref": "Lev.13.34"
+                },
+                {
+                  "ref": "Lev.13.37",
+                  "note": "“The scall is healed, he is clean, and the priest shall pronounce him clean.”"
+                },
+                {
+                  "ref": "Lev.13.59",
+                  "role": "defining",
+                  "note": "“This is the law … to pronounce it clean (לְטַהֲרוֹ) or to pronounce it unclean (לְטַמְּאוֹ).”"
+                },
+                {
+                  "ref": "Lev.14.7"
+                },
+                {
+                  "ref": "Lev.14.11",
+                  "note": "“The priest who pronounces clean (הַמְטַהֵר)” sets the man before Yahweh."
+                },
+                {
+                  "ref": "Lev.14.48",
+                  "note": "Of a house: “the priest shall pronounce the house clean, for the infection is healed.”"
+                }
+              ]
+            },
+            {
+              "id": "cleanse",
+              "gloss": "cleanse, purify (persons, altar, house, land)",
+              "definition": "To make clean by the rites of the law (water of purification, blood sprinkled, the offering) or by removing what defiles: the Levites for their service, the altar, the house of Yahweh and its vessels, the chambers of the temple, Judah and Jerusalem cleared of their high places, and the land cleared of the dead.",
+              "evidence": [
+                {
+                  "ref": "Num.8.6",
+                  "role": "defining",
+                  "note": "“Take the Levites from among the sons of Israel and cleanse them.”"
+                },
+                {
+                  "ref": "Num.8.7",
+                  "role": "defining",
+                  "note": "“Thus you shall do to them to cleanse them: sprinkle on them the water of sin offering, let them pass a razor over all their flesh and wash their clothes.”"
+                },
+                {
+                  "ref": "Num.8.15"
+                },
+                {
+                  "ref": "Num.8.21"
+                },
+                {
+                  "ref": "Lev.16.19",
+                  "role": "defining",
+                  "note": "Of the altar on the day of covering: he sprinkles the blood on it seven times “וְטִהֲרוֹ וְקִדְּשׁוֹ from the uncleannesses of the sons of Israel”."
+                },
+                {
+                  "ref": "Ezk.43.26",
+                  "note": "“Seven days they shall make a covering for the altar and cleanse it.”"
+                },
+                {
+                  "ref": "2Ch.29.15",
+                  "note": "The Levites under Hezekiah came “to cleanse the house of Yahweh”."
+                },
+                {
+                  "ref": "2Ch.29.16",
+                  "note": "They brought out all the uncleanness they found in the temple to the brook Kidron."
+                },
+                {
+                  "ref": "2Ch.29.18",
+                  "note": "“We have cleansed all the house of Yahweh, the altar of burnt offering and all its vessels.”"
+                },
+                {
+                  "ref": "2Ch.34.3",
+                  "role": "defining",
+                  "note": "Josiah “began to cleanse Judah and Jerusalem from the high places and the Asherim and the carved and cast images”."
+                },
+                {
+                  "ref": "2Ch.34.5"
+                },
+                {
+                  "ref": "2Ch.34.8"
+                },
+                {
+                  "ref": "Neh.12.30",
+                  "note": "The priests and Levites purified themselves, and purified the people, the gates and the wall."
+                },
+                {
+                  "ref": "Neh.13.9",
+                  "note": "After Tobiah's goods were thrown out, “they cleansed the chambers”."
+                },
+                {
+                  "ref": "Neh.13.30",
+                  "note": "“I cleansed them from everything foreign.”"
+                },
+                {
+                  "ref": "Ezk.39.12",
+                  "role": "defining",
+                  "note": "The house of Israel buries Gog's multitude seven months “to cleanse the land”."
+                },
+                {
+                  "ref": "Ezk.39.14"
+                },
+                {
+                  "ref": "Ezk.39.16"
+                }
+              ],
+              "kin": [
+                "purification"
+              ]
+            },
+            {
+              "id": "cleanse-from-sin",
+              "gloss": "(Yahweh) cleanse from sin",
+              "definition": "Yahweh's cleansing of his people from their sin, iniquity and idols, set beside forgiving, washing and covering.",
+              "evidence": [
+                {
+                  "ref": "Psa.51.4",
+                  "role": "defining",
+                  "note": "“Wash me thoroughly from my iniquity, and cleanse me (טַהֲרֵנִי) from my sin.”"
+                },
+                {
+                  "ref": "Jer.33.8",
+                  "role": "defining",
+                  "note": "“I will cleanse them from all their iniquity by which they sinned against me, and I will forgive all their iniquities.”"
+                },
+                {
+                  "ref": "Lev.16.30",
+                  "note": "The day of covering is “to cleanse you (לְטַהֵר אֶתְכֶם)”."
+                },
+                {
+                  "ref": "Ezk.36.25",
+                  "note": "“From all your idols I will cleanse you.”"
+                },
+                {
+                  "ref": "Ezk.36.33",
+                  "note": "“In the day I cleanse you from all your iniquities I will cause the cities to be inhabited.”"
+                },
+                {
+                  "ref": "Ezk.37.23",
+                  "role": "defining",
+                  "note": "“I will save them from all their dwellings in which they sinned, and cleanse them, and they will be my people.”"
+                },
+                {
+                  "ref": "Ezk.24.13",
+                  "note": "“I cleansed you, and you were not clean.”"
+                },
+                {
+                  "ref": "Mal.3.3",
+                  "role": "defining",
+                  "note": "“He will sit as a refiner and purifier (וּמְטַהֵר) of silver, and he will purify the sons of Levi and refine them like gold and silver”: cleansing as the refining of metal."
+                }
+              ],
+              "kin": [
+                "clean-moral"
+              ]
+            },
+            {
+              "id": "clear-sky",
+              "gloss": "clear (the sky)",
+              "definition": "Of the wind: to sweep the skies clear, so that the light in them is bright.",
+              "evidence": [
+                {
+                  "ref": "Job.37.21",
+                  "role": "defining",
+                  "note": "“Now men do not look on the light when it is bright in the skies, when the wind has passed and cleared them (וַתְּטַהֲרֵם).”"
+                }
+              ],
+              "cognate_ids": [
+                "arc-tahara"
+              ],
+              "kin": [
+                "clearness"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be cleansed",
+          "senses": [
+            {
+              "id": "be-cleansed",
+              "gloss": "be cleansed",
+              "definition": "Passive of the piel, of a land.",
+              "evidence": [
+                {
+                  "ref": "Ezk.22.24",
+                  "role": "defining",
+                  "note": "“You are a land that is not cleansed (מְטֹהָרָה), not rained on in the day of indignation”; the chapter lists its bloodshed and idols, and its priests who did not teach clean from unclean (Ezk 22:26)."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpael",
+          "gloss": "purify oneself; (participle) the one being cleansed",
+          "senses": [
+            {
+              "id": "purify-oneself",
+              "gloss": "purify oneself",
+              "definition": "To make oneself clean, to be fit to come before Yahweh or serve him: by putting away foreign gods, washing and changing clothes, or by the rites of the law.",
+              "evidence": [
+                {
+                  "ref": "Gen.35.2",
+                  "role": "defining",
+                  "note": "Before going up to Bethel: “Put away the foreign gods among you, וְהִטַּהֲרוּ, and change your clothes.”"
+                },
+                {
+                  "ref": "Num.8.7",
+                  "note": "The Levites wash their clothes “and cleanse themselves”."
+                },
+                {
+                  "ref": "Ezr.6.20",
+                  "role": "defining",
+                  "note": "“The priests and the Levites had purified themselves as one; all of them were clean”, and they killed the Passover."
+                },
+                {
+                  "ref": "Neh.12.30"
+                },
+                {
+                  "ref": "Neh.13.22",
+                  "note": "The Levites purify themselves and come to keep the gates, to make the sabbath day holy."
+                },
+                {
+                  "ref": "2Ch.30.18",
+                  "role": "defining",
+                  "note": "Many from the northern tribes “had not cleansed themselves, yet they ate the Passover”, and Hezekiah prayed for them (2Ch 30:19–20)."
+                },
+                {
+                  "ref": "Jos.22.17",
+                  "note": "“Is the iniquity of Peor too little for us, from which we have not cleansed ourselves to this day?”"
+                },
+                {
+                  "ref": "Isa.66.17",
+                  "note": "False purity: “those who make themselves holy and purify themselves for the gardens … eating the flesh of the pig.”"
+                }
+              ]
+            },
+            {
+              "id": "one-being-cleansed",
+              "gloss": "(participle) the one being cleansed",
+              "definition": "In the law of the skin disease, the man who presents himself to the priest to be made clean.",
+              "evidence": [
+                {
+                  "ref": "Lev.14.4",
+                  "role": "defining",
+                  "note": "“For the one being cleansed (לַמִּטַּהֵר) two live clean birds, cedar wood, scarlet and hyssop.”"
+                },
+                {
+                  "ref": "Lev.14.7"
+                },
+                {
+                  "ref": "Lev.14.8"
+                },
+                {
+                  "ref": "Lev.14.11"
+                },
+                {
+                  "ref": "Lev.14.14",
+                  "note": "The blood of the guilt offering on the right ear, thumb and great toe of the one being cleansed."
+                },
+                {
+                  "ref": "Lev.14.17"
+                },
+                {
+                  "ref": "Lev.14.18"
+                },
+                {
+                  "ref": "Lev.14.19",
+                  "note": "“He shall make a covering for the one being cleansed from his uncleanness.”"
+                },
+                {
+                  "ref": "Lev.14.25"
+                },
+                {
+                  "ref": "Lev.14.28"
+                },
+                {
+                  "ref": "Lev.14.29"
+                },
+                {
+                  "ref": "Lev.14.31"
+                }
+              ],
+              "kin": [
+                "purification"
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "καθαρίζω",
+          "gloss": "cleanse, make clean; pronounce clean",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "2Ki.5.14, וַיִּטְהָר → ἐκαθαρίσθη; Psa.51.9, וְאֶטְהָר → καθαρισθήσομαι; Jer.33.8, וְטִהַרְתִּים → καθαριῶ; Lev.16.30; καθαρίζω renders טָהֵר ×38 as a lemma, more under its forms"
+            },
+            {
+              "ref": "Luk.4.27",
+              "role": "defining",
+              "note": "“There were many lepers in Israel in the time of Elisha the prophet, and none of them was cleansed (ἐκαθαρίσθη) but Naaman the Syrian”: the qal of 2Ki 5:14."
+            },
+            {
+              "ref": "Mrk.1.40",
+              "to": "Mrk.1.42",
+              "note": "“If you will, you can make me clean (καθαρίσαι)” … “I will; be clean (καθαρίσθητι)”, and he was cleansed."
+            },
+            {
+              "ref": "Heb.9.22",
+              "to": "Heb.9.23",
+              "note": "“By the law almost everything is cleansed (καθαρίζεται) with blood”: the altar of Lev 16:19."
+            },
+            {
+              "ref": "1Jn.1.7",
+              "note": "“The blood of Jesus his Son cleanses (καθαρίζει) us from all sin.”"
+            },
+            {
+              "ref": "1Jn.1.9",
+              "note": "“He is faithful and just to forgive us our sins and to cleanse (καθαρίσῃ) us from all unrighteousness”: the forgiving and cleansing of Jer 33:8."
+            },
+            {
+              "ref": "Act.10.15",
+              "note": "“What God has cleansed (ἐκαθάρισεν), do not call common.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "טָהוֹר",
+      "pos": "adjective",
+      "gloss": "clean; pure",
+      "bdb": [
+        "i.ah.ae"
+      ],
+      "cognate_ids": [
+        "ar-tahura",
+        "uga-thr",
+        "phn-thr"
+      ],
+      "summary": "About ninety times: clean in the law's sense (of persons, animals, places and things), and pure, of gold, incense and the tabernacle's furniture made of it, and of the heart, words and eyes.",
+      "senses": [
+        {
+          "id": "clean-by-law",
+          "gloss": "clean (in the law)",
+          "definition": "Of a person, a place or a thing: in the state that may come near what is holy, the opposite of טָמֵא; the priests were to teach the difference.",
+          "evidence": [
+            {
+              "ref": "Lev.10.10",
+              "role": "defining",
+              "note": "“To distinguish between the holy and the common, and between the unclean and the clean (הַטָּהוֹר).”"
+            },
+            {
+              "ref": "Lev.14.57",
+              "role": "defining",
+              "note": "“To teach when it is unclean and when it is clean.”"
+            },
+            {
+              "ref": "Ezk.22.26",
+              "note": "Her priests “have not taught between the unclean and the clean”."
+            },
+            {
+              "ref": "Ezk.44.23",
+              "note": "In Ezekiel's temple the priests “shall make known to them between the unclean and the clean”."
+            },
+            {
+              "ref": "Lev.7.19",
+              "note": "“Every one who is clean may eat the flesh.”"
+            },
+            {
+              "ref": "Num.18.11",
+              "note": "“Every clean one in your house may eat of it.”"
+            },
+            {
+              "ref": "Num.18.13"
+            },
+            {
+              "ref": "Num.9.13",
+              "note": "The man who is clean and not on a journey and does not keep the Passover is cut off."
+            },
+            {
+              "ref": "1Sa.20.26",
+              "note": "Saul of David's absence: “He is not clean, surely he is not clean.”"
+            },
+            {
+              "ref": "Deu.23.11",
+              "note": "“If there is among you a man who is not clean by a chance of the night, he shall go outside the camp.”"
+            },
+            {
+              "ref": "Deu.12.15",
+              "note": "Meat killed at home: “the unclean and the clean may eat of it”."
+            },
+            {
+              "ref": "Deu.12.22"
+            },
+            {
+              "ref": "Deu.15.22"
+            },
+            {
+              "ref": "Num.19.9",
+              "note": "“A clean man shall gather the ashes of the heifer and lay them outside the camp in a clean place.”"
+            },
+            {
+              "ref": "Num.19.18"
+            },
+            {
+              "ref": "Num.19.19"
+            },
+            {
+              "ref": "Lev.4.12",
+              "note": "The bull of the sin offering is burnt “outside the camp, to a clean place”."
+            },
+            {
+              "ref": "Lev.6.4"
+            },
+            {
+              "ref": "Lev.10.14",
+              "note": "The breast and thigh are eaten “in a clean place”."
+            },
+            {
+              "ref": "Lev.13.13",
+              "note": "Of the skin: “it has all turned white; he is clean”."
+            },
+            {
+              "ref": "Lev.13.17"
+            },
+            {
+              "ref": "Lev.13.37"
+            },
+            {
+              "ref": "Lev.13.39"
+            },
+            {
+              "ref": "Lev.13.40",
+              "note": "A man whose hair has fallen from his head “is bald; he is clean”."
+            },
+            {
+              "ref": "Lev.13.41"
+            },
+            {
+              "ref": "Lev.15.8"
+            },
+            {
+              "ref": "Lev.11.36",
+              "note": "“A spring or a cistern holding water will be clean.”"
+            },
+            {
+              "ref": "Lev.11.37"
+            },
+            {
+              "ref": "Num.5.28",
+              "note": "“If the woman has not defiled herself but is clean, she shall be free.”"
+            },
+            {
+              "ref": "Ezk.36.25",
+              "note": "“I will sprinkle clean water on you.”"
+            },
+            {
+              "ref": "Isa.66.20",
+              "note": "“As the sons of Israel bring the offering in a clean vessel to the house of Yahweh.”"
+            },
+            {
+              "ref": "2Ch.30.17"
+            },
+            {
+              "ref": "Ezr.6.20"
+            },
+            {
+              "ref": "Zec.3.5",
+              "role": "defining",
+              "note": "When Joshua's filthy garments are taken away and his iniquity caused to pass from him (Zec 3:4), “Let them set a clean turban on his head.”"
+            }
+          ],
+          "kin": [
+            "be-clean"
+          ]
+        },
+        {
+          "id": "clean-animal",
+          "gloss": "clean (of animals and birds)",
+          "definition": "Of a beast or bird: one that may be eaten and offered, as against the unclean.",
+          "evidence": [
+            {
+              "ref": "Gen.7.2",
+              "role": "defining",
+              "note": "“Of every clean beast take seven pairs … and of the beasts that are not clean, two.”"
+            },
+            {
+              "ref": "Gen.7.8"
+            },
+            {
+              "ref": "Gen.8.20",
+              "role": "defining",
+              "note": "Noah “took of every clean beast and of every clean bird and offered burnt offerings on the altar”."
+            },
+            {
+              "ref": "Lev.11.47",
+              "role": "defining",
+              "note": "“To distinguish between the unclean and the clean, and between the living creature that may be eaten and the living creature that may not be eaten.”"
+            },
+            {
+              "ref": "Lev.20.25",
+              "note": "“You shall distinguish between the clean beast and the unclean, and between the unclean bird and the clean.”"
+            },
+            {
+              "ref": "Deu.14.11",
+              "note": "“Every clean bird you may eat.”"
+            },
+            {
+              "ref": "Deu.14.20"
+            },
+            {
+              "ref": "Lev.14.4",
+              "note": "Two live clean birds for the one being cleansed."
+            }
+          ],
+          "kin": [
+            "be-clean"
+          ]
+        },
+        {
+          "id": "pure-material",
+          "gloss": "pure (gold, incense, the holy furniture)",
+          "definition": "Unmixed, without dross: the gold of the tabernacle and temple, the incense, and the lampstand and table made of pure gold, called “the pure lampstand” and “the pure table”.",
+          "evidence": [
+            {
+              "ref": "Exo.25.11",
+              "role": "defining",
+              "note": "The ark: “overlay it with pure gold (זָהָב טָהוֹר), inside and outside.”"
+            },
+            {
+              "ref": "Exo.25.17",
+              "note": "The covering lid of pure gold."
+            },
+            {
+              "ref": "Exo.25.24"
+            },
+            {
+              "ref": "Exo.25.29"
+            },
+            {
+              "ref": "Exo.25.31",
+              "note": "“A lampstand of pure gold, of beaten work.”"
+            },
+            {
+              "ref": "Exo.25.36"
+            },
+            {
+              "ref": "Exo.25.38"
+            },
+            {
+              "ref": "Exo.25.39"
+            },
+            {
+              "ref": "Exo.28.14"
+            },
+            {
+              "ref": "Exo.28.22"
+            },
+            {
+              "ref": "Exo.28.36",
+              "note": "The plate of pure gold engraved “Holy to Yahweh”."
+            },
+            {
+              "ref": "Exo.30.3"
+            },
+            {
+              "ref": "Exo.30.35",
+              "role": "defining",
+              "note": "The incense “seasoned with salt, pure (טָהוֹר), holy”."
+            },
+            {
+              "ref": "Exo.31.8",
+              "note": "“The pure lampstand and all its vessels.”"
+            },
+            {
+              "ref": "Exo.37.2"
+            },
+            {
+              "ref": "Exo.37.29",
+              "note": "“The pure incense of spices.”"
+            },
+            {
+              "ref": "Exo.39.30"
+            },
+            {
+              "ref": "Exo.39.37"
+            },
+            {
+              "ref": "Lev.24.4",
+              "note": "The lamps “on the pure lampstand”."
+            },
+            {
+              "ref": "Lev.24.6",
+              "note": "The bread “on the pure table before Yahweh”."
+            },
+            {
+              "ref": "2Ch.13.11"
+            },
+            {
+              "ref": "1Ch.28.17"
+            },
+            {
+              "ref": "2Ch.3.4"
+            },
+            {
+              "ref": "2Ch.9.17",
+              "note": "Solomon's throne overlaid with pure gold."
+            },
+            {
+              "ref": "Job.28.19",
+              "role": "defining",
+              "note": "Wisdom “is not valued in pure gold”."
+            }
+          ]
+        },
+        {
+          "id": "clean-moral",
+          "gloss": "pure, clean (of heart, words, eyes)",
+          "definition": "Free from sin and falsehood: a heart God creates, his words and his fear, the eyes too pure to look on evil; and the question whether a man born unclean can be clean.",
+          "evidence": [
+            {
+              "ref": "Psa.51.12",
+              "role": "defining",
+              "note": "“Create in me a clean heart (לֵב טָהוֹר), O God, and renew a steadfast spirit within me.”"
+            },
+            {
+              "ref": "Psa.12.7",
+              "role": "defining",
+              "note": "“The words of Yahweh are pure words, silver refined in a furnace of earth, purified seven times.”"
+            },
+            {
+              "ref": "Psa.19.10",
+              "note": "“The fear of Yahweh is clean, standing for ever.”"
+            },
+            {
+              "ref": "Hab.1.13",
+              "role": "defining",
+              "note": "“You are of purer eyes than to see evil, and cannot look on wrong.”"
+            },
+            {
+              "ref": "Pro.15.26",
+              "note": "“The thoughts of the evil are an abomination to Yahweh, but pleasant words are pure.”"
+            },
+            {
+              "ref": "Pro.30.12",
+              "note": "“A generation pure in its own eyes, yet not washed from its filth.”"
+            },
+            {
+              "ref": "Job.14.4",
+              "role": "defining",
+              "note": "“Who can bring a clean thing out of an unclean? Not one.”"
+            },
+            {
+              "ref": "Job.17.9",
+              "note": "“The clean of hands (וּטֳהָר־יָדַיִם) will grow stronger”: the brief files this under the verb with no stem."
+            },
+            {
+              "ref": "Ecc.9.2",
+              "note": "One event to the righteous and the wicked, “to the clean and to the unclean”."
+            },
+            {
+              "ref": "Mal.1.11",
+              "role": "defining",
+              "note": "“In every place incense is offered to my name, and a pure offering (מִנְחָה טְהוֹרָה), for my name is great among the nations.”"
+            }
+          ],
+          "kin": [
+            "be-clean-of-sin",
+            "cleanse-from-sin"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "καθαρός",
+          "gloss": "clean, pure",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.7.2, הַטְּהוֹרָה → καθαρῶν; Exo.25.17, טָהוֹר → καθαροῦ; Psa.51.12, טָהוֹר → καθαράν; Mal.1.11, טְהוֹרָה → καθαρά; καθαρός renders טָהוֹר ×70"
+            },
+            {
+              "ref": "Mat.5.8",
+              "note": "“Blessed are the pure (καθαροί) in heart, for they shall see God”: the clean heart of Psa 51:12."
+            },
+            {
+              "ref": "Rev.21.18",
+              "note": "The city “pure gold (χρυσίον καθαρόν), like clear glass”: the tabernacle's pure gold."
+            },
+            {
+              "ref": "Tit.1.15",
+              "note": "“To the pure all things are pure, but to the defiled and unbelieving nothing is pure.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "opposites": [
+          {
+            "lemma": "טָמֵא",
+            "note": "“Unclean”: the constant opposite, in the law and in the prophets.",
+            "evidence": [
+              {
+                "ref": "Lev.10.10",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.11.47"
+              },
+              {
+                "ref": "Ezk.22.26"
+              },
+              {
+                "ref": "Job.14.4"
+              },
+              {
+                "ref": "Ecc.9.2"
+              }
+            ]
+          }
+        ],
+        "parallels": [
+          {
+            "lemma": "קֹדֶשׁ",
+            "note": "“Holy”: cleanness is the condition for coming near what is holy, and the two are paired.",
+            "evidence": [
+              {
+                "ref": "Lev.10.10",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.30.35"
+              },
+              {
+                "ref": "Lev.16.19"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "זָהָב טָהוֹר",
+            "gloss": "pure gold",
+            "evidence": [
+              {
+                "ref": "Exo.25.11",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.25.31"
+              },
+              {
+                "ref": "Job.28.19"
+              }
+            ]
+          },
+          {
+            "phrase": "לֵב טָהוֹר",
+            "gloss": "a clean heart",
+            "evidence": [
+              {
+                "ref": "Psa.51.12",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "טָהֳרָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "cleansing, purification",
+      "bdb": [
+        "i.ah.ad"
+      ],
+      "cognate_ids": [
+        "ar-tahura",
+        "arc-tahara"
+      ],
+      "summary": "Fifteen times: the cleansing of a person in the law, and the days it takes; and the purifying of the holy things in the Levites' service.",
+      "senses": [
+        {
+          "id": "purification",
+          "gloss": "cleansing, purification (of a person)",
+          "definition": "The process and time of being made clean: the mother's days after childbirth, and the cleansing of one healed of a skin disease or a flow, of a Nazirite defiled by a death, or of a priest.",
+          "evidence": [
+            {
+              "ref": "Lev.12.4",
+              "role": "defining",
+              "note": "“Thirty-three days she shall stay in the blood of her purification; she shall not touch any holy thing … until the days of her purification are full.”"
+            },
+            {
+              "ref": "Lev.12.5"
+            },
+            {
+              "ref": "Lev.12.6",
+              "note": "“When the days of her purification are full” she brings a burnt offering and a sin offering."
+            },
+            {
+              "ref": "Lev.13.7"
+            },
+            {
+              "ref": "Lev.13.35"
+            },
+            {
+              "ref": "Lev.14.2",
+              "role": "defining",
+              "note": "“This shall be the law of the one with a skin disease in the day of his cleansing: he shall be brought to the priest.”"
+            },
+            {
+              "ref": "Lev.14.23"
+            },
+            {
+              "ref": "Lev.14.32"
+            },
+            {
+              "ref": "Lev.15.13",
+              "note": "He counts seven days “for his cleansing”."
+            },
+            {
+              "ref": "Num.6.9",
+              "note": "The Nazirite shaves his head “on the day of his cleansing”."
+            },
+            {
+              "ref": "Ezk.44.26",
+              "note": "Of a priest defiled by a death: “after his cleansing they shall count seven days for him”."
+            }
+          ],
+          "kin": [
+            "cleanse",
+            "one-being-cleansed"
+          ]
+        },
+        {
+          "id": "purifying-holy",
+          "gloss": "the purifying (of the holy things)",
+          "definition": "The Levites' charge of keeping the holy things and the house clean, and the cleanness the sanctuary required.",
+          "evidence": [
+            {
+              "ref": "1Ch.23.28",
+              "role": "defining",
+              "note": "The Levites' service included “the purifying of every holy thing”."
+            },
+            {
+              "ref": "Neh.12.45",
+              "note": "They kept “the charge of their God and the charge of the purification”."
+            },
+            {
+              "ref": "2Ch.30.19",
+              "role": "defining",
+              "note": "Hezekiah prays for everyone who sets his heart to seek God, “though not according to the cleanness of the sanctuary”; and Yahweh heard and healed the people (2Ch 30:20)."
+            }
+          ],
+          "kin": [
+            "cleanse"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "καθαρισμός",
+          "gloss": "cleansing, purification",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Lev.14.32, בְּטָהֳרָתוֹ → καθαρισμοῦ; 1Ch.23.28; Neh.12.45; and Psa.89.45 for טְהָר"
+            },
+            {
+              "ref": "Luk.2.22",
+              "role": "defining",
+              "note": "“When the days of their purification (καθαρισμοῦ) according to the law of Moses were fulfilled”: the days of Lev 12:4–6."
+            },
+            {
+              "ref": "Mrk.1.44",
+              "role": "defining",
+              "note": "“Offer for your cleansing (καθαρισμοῦ) what Moses commanded”: the law of Lev 14:2."
+            },
+            {
+              "ref": "Heb.1.3",
+              "note": "“When he had made purification (καθαρισμόν) of sins, he sat down at the right hand of the Majesty on high.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "טֹהַר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "clearness; brightness, lustre",
+      "bdb": [
+        "i.ah.ab"
+      ],
+      "cognate_ids": [
+        "arc-tahara"
+      ],
+      "summary": "Twice. The corpus counts both tokens under two BDB words, טֹהַר and טְהָר (i.ah.ac); they are one word here, filed under the first key. Its sense is the clearness and brightness of the sky that the piel's wind makes (Job 37:21), as Jewish Aramaic טַהֲרָה is the sky cleared after rain.",
+      "senses": [
+        {
+          "id": "clearness",
+          "gloss": "clearness (of the sky)",
+          "definition": "The clear brightness of the sky, unclouded.",
+          "evidence": [
+            {
+              "ref": "Exo.24.10",
+              "role": "defining",
+              "note": "“They saw the God of Israel, and under his feet as it were a work of sapphire stone, and as the very heavens for clearness (לָטֹהַר).”"
+            }
+          ],
+          "kin": [
+            "clear-sky"
+          ]
+        },
+        {
+          "id": "lustre",
+          "gloss": "brightness, lustre (of a king)",
+          "definition": "The brightness or splendour of the king of David's line, which Yahweh made to cease.",
+          "evidence": [
+            {
+              "ref": "Psa.89.45",
+              "role": "defining",
+              "note": "“You have made his brightness (מִטְּהָרוֹ) cease, and cast his throne down to the ground”: set beside the throne."
+            }
+          ],
+          "kin": [
+            "clear-sky"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-tahura",
+      "lang": "ar",
+      "form": "طَهُرَ، طَهَّرَ، طَاهِرٌ، طُهْرٌ",
+      "translit": "ṭahura, ṭahhara, ṭāhir, ṭuhr",
+      "gloss": "be clean, free from dirt, pure; (of a woman) be pure from the menstrual flow; (II) cleanse, purify, wash with water; (V) purify oneself, wash; clean, pure; cleanness",
+      "relation": "cognate",
+      "note": "The same root and the same senses in the same forms: the basic stem “be clean”, the doubled stem “cleanse” (the Hebrew piel), the reflexive “purify oneself” (the hithpael), and the adjective ṭāhir “clean, pure”. Its use of a woman pure again after her flow answers Lev 12 and 15:28.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 1886, art. طهر, طَهَرَ (n27212)",
+          "note": "“It was, or became, clean, free from dirt or filth, or pure … She was, or became, pure from the menstrual discharge.”"
+        },
+        {
+          "source": "lane",
+          "locator": "Book I, p. 1887, art. طهر, طهّرهُ (n27213)",
+          "note": "“He cleansed, or purified, him, or it … he washed him, or it, with water.”"
+        },
+        {
+          "source": "lane",
+          "locator": "Book I, p. 1887, art. طهر, تطهّر (n27214)",
+          "note": "“He became cleansed, or purified: or he cleansed, or purified, himself: and he washed himself.”"
+        },
+        {
+          "source": "lane",
+          "locator": "Book I, p. 1887, art. طهر, طَاهِرٌ (n27223)",
+          "note": "“Clean; free from dirt or filth; or pure.”"
+        }
+      ]
+    },
+    {
+      "id": "arc-tehar",
+      "lang": "arc",
+      "form": "טְהַר",
+      "translit": "ṭǝhar",
+      "gloss": "be clean; (pael) declare clean",
+      "relation": "cognate",
+      "note": "Jewish Aramaic of the Talmud, used beside the commoner דכי: the qal “be clean” and a pael “declare clean”, as the Hebrew piel of Lev 13.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. טְהֵר, טְהַר (ch.)",
+          "note": "“To be clean (usually דכי) … Pa. to declare clean. B. Mets. 84ᵇ טַהֲרִינְהוּ he declared them clean.”"
+        }
+      ]
+    },
+    {
+      "id": "arc-tahara",
+      "lang": "arc",
+      "form": "טַהֲרָה، טִיהֲרָא",
+      "translit": "ṭahărā, ṭīhărā",
+      "gloss": "clearness of the sky after the rainy season; bright sky; (also) purity, purification",
+      "relation": "cognate",
+      "note": "Jewish Aramaic and later Hebrew: the sky “in its restored brightness” after rain is the clearness of Exo 24:10 and the skies the wind clears in Job 37:21; the same word is purity and purification, as Hebrew טָהֳרָה.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. טָהֳרָה, טַהֲרָה",
+          "note": "“Clearness of the sky after the rainy season. Ber. 59ᵃ הרואה רקיע בטָהֳרָתָהּ he who sees the sky in its restored brightness … pureness, condition of levitical cleanness; purification.”"
+        },
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. טִיהָר, טִיהֲרָא",
+          "note": "“Bright sky after rain … when is the sky seen in its brightness?”"
+        }
+      ]
+    },
+    {
+      "id": "uga-thr",
+      "lang": "uga",
+      "form": "𐎉𐎅𐎗",
+      "translit": "ṭhr",
+      "gloss": "pure, unadulterated",
+      "relation": "cognate",
+      "note": "An adjective of material purity, as Hebrew טָהוֹר of gold.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Ugaritic 𐎉𐎅𐎗",
+          "note": "“Pure, unadulterated. Compare Hebrew טהור.”"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000478 ṭhr, UGC004405",
+          "note": "ṭhr “pure”."
+        }
+      ]
+    },
+    {
+      "id": "phn-thr",
+      "lang": "phn",
+      "form": "טהר",
+      "translit": "ṭhr",
+      "gloss": "pure",
+      "relation": "cognate",
+      "note": "Punic; listed in the root set, not yet checked in Krahmalkov.",
+      "evidence": [
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000478 ṭhr, PUN000773",
+          "note": "Punic ṭhr “pure”."
+        }
+      ]
+    },
+    {
+      "id": "gez-tahara",
+      "lang": "gez",
+      "form": "ጠሀረ",
+      "translit": "ṭahara",
+      "gloss": "be pure",
+      "relation": "cognate",
+      "note": "Ge'ez; listed in the root set, not yet checked in Dillmann or Leslau.",
+      "evidence": [
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000478 ṭhr, GEZ005879",
+          "note": "Ge'ez ṭahara “pure” (verb)."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "cleansing-from-sin",
+      "statement": "On the day of covering the high priest sprinkled the blood on the altar “and cleansed it and made it holy from the uncleannesses of the sons of Israel”, and Yahweh said, “on this day he will make a covering for you, to cleanse you; from all your sins you will be clean before Yahweh” (Lev 16:19, 30). No man can do it for himself: “Who can say, I have made my heart clean, I am clean from my sin?” (Pro 20:9); “who can bring a clean thing out of an unclean? Not one” (Job 14:4). So David asks it of God: “cleanse me from my sin … purify me with hyssop and I will be clean … create in me a clean heart, O God” (Psa 51:4, 9, 12), and Yahweh promises it to Israel, “I will cleanse them from all their iniquity … and I will forgive all their iniquities” (Jer 33:8). The New Testament says that by the law almost everything was cleansed with blood, and the heavenly things with better sacrifices (Heb 9:22–23); that the Son, “when he had made purification of sins, sat down at the right hand of the Majesty on high” (Heb 1:3); and that “the blood of Jesus his Son cleanses us from all sin”, and “if we confess our sins, he is faithful and just to forgive us our sins and to cleanse us from all unrighteousness” (1Jn 1:7, 9). From the verses: cleanness before God is his gift, not a man's work; the law's blood and day of covering taught it, and it is given through the offering of Jesus to those who confess their sins.",
+      "evidence": [
+        {
+          "ref": "Lev.16.19"
+        },
+        {
+          "ref": "Lev.16.30"
+        },
+        {
+          "ref": "Pro.20.9"
+        },
+        {
+          "ref": "Job.14.4"
+        },
+        {
+          "ref": "Psa.51.4"
+        },
+        {
+          "ref": "Psa.51.9"
+        },
+        {
+          "ref": "Psa.51.12"
+        },
+        {
+          "ref": "Jer.33.8"
+        },
+        {
+          "ref": "Heb.9.22",
+          "to": "Heb.9.23"
+        },
+        {
+          "ref": "Heb.1.3"
+        },
+        {
+          "ref": "1Jn.1.7"
+        },
+        {
+          "ref": "1Jn.1.9"
+        }
+      ]
+    },
+    {
+      "topic": "heart-before-ritual",
+      "statement": "At Hezekiah's Passover many from Ephraim, Manasseh, Issachar and Zebulun “had not cleansed themselves, yet they ate the Passover otherwise than it was written”; Hezekiah prayed, “Yahweh the good make a covering for everyone who sets his heart to seek God, Yahweh the God of his fathers, though not according to the cleanness of the sanctuary”, and “Yahweh heard Hezekiah and healed the people” (2Ch 30:18–20). Isaiah condemns those who “make themselves holy and purify themselves” for the rites of the gardens (Isa 66:17), and Proverbs a generation “pure in its own eyes, yet not washed from its filth” (Pro 30:12). Jesus said, “Blessed are the pure in heart, for they shall see God” (Mat 5:8), and Paul, “to the pure all things are pure, but to the defiled and unbelieving nothing is pure” (Tit 1:15). From the verses: the rites of cleanness had their place, but Yahweh looks for a heart set to seek him, and outward purity without it is no cleanness at all.",
+      "evidence": [
+        {
+          "ref": "2Ch.30.18",
+          "to": "2Ch.30.20"
+        },
+        {
+          "ref": "Isa.66.17"
+        },
+        {
+          "ref": "Pro.30.12"
+        },
+        {
+          "ref": "Mat.5.8"
+        },
+        {
+          "ref": "Tit.1.15"
+        }
+      ]
+    },
+    {
+      "topic": "refiner-at-his-coming",
+      "statement": "Malachi foretells, “Behold, I send my messenger, and he will prepare the way before me; and the Lord whom you seek will suddenly come to his temple, the messenger of the covenant” (Mal 3:1), and Jesus says the first part was written of John the Baptist (Mat 11:10). Then: “who can endure the day of his coming? … He will sit as a refiner and purifier of silver, and he will purify the sons of Levi and refine them like gold and silver, and they will bring to Yahweh an offering in righteousness” (Mal 3:2–3). The same book says that from the rising of the sun to its setting Yahweh's name will be great among the nations, “and in every place incense is offered to my name, and a pure offering” (Mal 1:11). Ezekiel's temple has an altar cleansed for seven days and priests who teach “between the unclean and the clean” (Ezk 43:26; 44:23). From the verses: the one whose way John prepared will purify a priesthood that serves Yahweh in righteousness, and the nations will bring a pure offering to his name, in the day of his coming.",
+      "evidence": [
+        {
+          "ref": "Mal.3.1",
+          "to": "Mal.3.3"
+        },
+        {
+          "ref": "Mat.11.10"
+        },
+        {
+          "ref": "Mal.1.11"
+        },
+        {
+          "ref": "Ezk.43.26"
+        },
+        {
+          "ref": "Ezk.44.23"
+        }
+      ]
+    },
+    {
+      "topic": "cleansing-the-land-after-gog",
+      "statement": "Ezekiel sees Gog come “in the latter years” against a land “brought back from the sword, gathered out of many peoples, on the mountains of Israel”, from “his place out of the uttermost parts of the north”, he and many peoples with him (Ezk 38:8, 15–16). Yahweh brings him up and he falls on the mountains of Israel (Ezk 39:2–4). Then “the house of Israel will bury them, to cleanse the land, seven months”; men are set apart to pass through the land and bury those left on it, “to cleanse it”, and “thus they shall cleanse the land” (Ezk 39:12, 14, 16). After it, “the house of Israel shall know that I am Yahweh their God from that day and forward”, and Yahweh “will not hide my face from them any more, for I have poured out my spirit on the house of Israel” (Ezk 39:22, 29). From the verses: in the last days, with Israel regathered in its land, an invasion from the far north will be destroyed by Yahweh on the mountains of Israel, and the land will be cleansed of it, before Israel is turned wholly to Yahweh and the kingdom is established.",
+      "evidence": [
+        {
+          "ref": "Ezk.38.8"
+        },
+        {
+          "ref": "Ezk.38.15",
+          "to": "Ezk.38.16"
+        },
+        {
+          "ref": "Ezk.39.2",
+          "to": "Ezk.39.4"
+        },
+        {
+          "ref": "Ezk.39.12"
+        },
+        {
+          "ref": "Ezk.39.14"
+        },
+        {
+          "ref": "Ezk.39.16"
+        },
+        {
+          "ref": "Ezk.39.22"
+        },
+        {
+          "ref": "Ezk.39.29"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-18. Root key טהר (BDB i.ah.aa as the root heading); no existing entry used it. Keys: i.ah.aa verb, i.ah.ae adjective, i.ah.ad טָהֳרָה, i.ah.ab טֹהַר. i.ah.ac (טְהָר) is given no key: the corpus counts the same two tokens (Exo 24:10; Psa 89:45) under both i.ah.ab and i.ah.ac, so the two are one word here. Job 17:9 וּטֳהָר־יָדַיִם is filed under the verb with no stem; it is the adjective (or the noun) and is cited under the adjective's moral sense. No proper names from the root in TIPNR. No Biblical Aramaic word (Daniel uses נְקֵא for “pure”, Dan 7:9), and no Peshitta word of the root: SEDRA has no ṭhr root; the Peshitta's word for clean and cleanse is דכא (ܕܟܐ). The opposite טָמֵא is its own entry (tame), whose doctrine already covers clean and unclean animals, death defiling, and the cleansing of Israel in the kingdom (Ezk 36:25); this entry's doctrine keeps to cleansing from sin, the heart before the rite, Malachi's refiner and Ezekiel 39's cleansing of the land. Greek: καθάρσις (Lev 12:4, 6) and καθαριότης (Exo 24:10) have no New Testament use and are not recorded. Leads not followed: Ugaritic ṭhr in DULAT (not vendored; reportedly of lapis lazuli in the Baal texts, “pure lapis”, which would set it beside Exo 24:10's sapphire and clearness; unchecked); Ge'ez ṭahara in Dillmann/Leslau and Punic ṭhr in Krahmalkov (both cited only from the Anderson–Moser root list; the Ge'ez form ጠሀረ is reconstructed from its transliteration and must be checked); Old South Arabian טהר; CAL. Jastrow compares טִיהֲרָא “midday” with צָהֳרַיִם: not recorded. Akkadian candidates by sound (eṭēru, ṭerû) share no sense. Open questions: (1) whether Psa 89:45 מִטְּהָרוֹ is this noun “brightness” or, as some read, a noun מִטְהָר; (2) the doctrine statements, especially the Gog reading and Malachi's refiner, are reasoned conclusions to review."
+}

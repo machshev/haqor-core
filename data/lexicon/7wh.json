@@ -1,0 +1,173 @@
+{
+  "id": "7wh",
+  "root": "חוה",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "speech",
+    "knowledge"
+  ],
+  "gloss": "tell, disclose, show",
+  "summary": "In Psalm 19 each night discloses knowledge. Daniel uses the Aramaic counterpart for bringing a previously hidden dream or its meaning to light.",
+  "words": [
+    {
+      "lemma": "חָוָה",
+      "bdb": [
+        "h.bc.aa"
+      ],
+      "pos": "verb",
+      "gloss": "tell, declare",
+      "stems": [
+        {
+          "stem": "piel",
+          "gloss": "make known",
+          "senses": [
+            {
+              "id": "make-known",
+              "gloss": "make known",
+              "definition": "Night communicates knowledge to night. Job’s interlocutors introduce things they will tell him from observation or understanding.",
+              "evidence": [
+                {
+                  "ref": "Psa.19.3",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Job.15.17"
+                },
+                {
+                  "ref": "Job.32.6"
+                },
+                {
+                  "ref": "Job.36.2"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "syc-hawi"
+      ]
+    },
+    {
+      "lemma": "אַחְוָה",
+      "bdb": [
+        "h.bc.ab"
+      ],
+      "pos": "noun",
+      "gloss": "declaration",
+      "senses": [
+        {
+          "id": "declaration",
+          "gloss": "declaration",
+          "definition": "Job asks his hearers to listen to his speech and let his declaration enter their ears.",
+          "evidence": [
+            {
+              "ref": "Job.13.17",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "חֲוָה",
+      "bdb": [
+        "xh.ad.aa"
+      ],
+      "pos": "verb",
+      "gloss": "tell, disclose",
+      "stems": [
+        {
+          "stem": "pael",
+          "gloss": "declare",
+          "senses": [
+            {
+              "id": "declare",
+              "gloss": "declare",
+              "definition": "The Chaldeans ask the king to tell them the dream so that they may declare its interpretation.",
+              "evidence": [
+                {
+                  "ref": "Dan.2.4",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "haphel",
+          "gloss": "make known",
+          "senses": [
+            {
+              "id": "make-known-2",
+              "gloss": "make known",
+              "definition": "Nebuchadnezzar requires that the dream and its interpretation be made known to him.",
+              "evidence": [
+                {
+                  "ref": "Dan.2.6",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Dan.2.9"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "arc",
+      "cognate_ids": [
+        "syc-hawi"
+      ]
+    },
+    {
+      "lemma": "חוא",
+      "pos": "verb",
+      "gloss": "show",
+      "stems": [
+        {
+          "stem": "pael",
+          "gloss": "show",
+          "senses": [
+            {
+              "id": "show",
+              "gloss": "show",
+              "definition": "The Lord tells Ananias that he will show Saul what he must suffer for his name.",
+              "evidence": [
+                {
+                  "ref": "Act.9.16",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "syc"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "syc-hawi",
+      "lang": "syc",
+      "form": "ܚܘܝ",
+      "translit": "ḥawwī",
+      "gloss": "show",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "sedra",
+          "locator": "lexeme 970, gloss 1673, Acts 9:16"
+        }
+      ],
+      "sounds": {
+        "ח": "ḥ"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "The village term, the Hivite gentilic and the personal name Eve resemble this verb in spelling. The passages cited support the speech and disclosure family."
+}

@@ -1,0 +1,164 @@
+{
+  "id": "nrd",
+  "root": "נרד",
+  "status": "draft",
+  "updated": "2026-11-18",
+  "tags": [
+    "plants",
+    "spices"
+  ],
+  "gloss": "nard, spikenard",
+  "summary": "The Song names nard among the plants of the garden and describes its scent reaching the king at table. Mark and John name it in the costly ointment used to anoint Jesus.",
+  "words": [
+    {
+      "lemma": "נֵרְדְּ",
+      "pos": "noun",
+      "bdb": [
+        "n.fl.af"
+      ],
+      "gloss": "nard",
+      "senses": [
+        {
+          "id": "nard",
+          "gloss": "nard",
+          "definition": "A fragrant plant valued for its scent.",
+          "evidence": [
+            {
+              "ref": "Sng.1.12",
+              "role": "defining",
+              "note": "The speaker’s nard gives off its fragrance while the king reclines."
+            },
+            {
+              "ref": "Sng.4.13",
+              "role": "defining",
+              "note": "The garden contains nard plants alongside henna."
+            },
+            {
+              "ref": "Sng.4.14",
+              "role": "defining",
+              "note": "Nard opens a list with saffron, fragrant cane and cinnamon."
+            }
+          ],
+          "cognate_ids": [
+            "arc-nard",
+            "syc-nard",
+            "mandaic-nard",
+            "gez-nard",
+            "akk-nard"
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "נַרְדִּין",
+      "pos": "noun",
+      "gloss": "nard",
+      "senses": [
+        {
+          "id": "nard-perfume",
+          "gloss": "nard",
+          "definition": "The aromatic ingredient named in an expensive ointment.",
+          "evidence": [
+            {
+              "ref": "Mrk.14.3",
+              "role": "defining",
+              "note": "The woman breaks the flask and pours its contents on Jesus’ head."
+            },
+            {
+              "ref": "Jhn.12.3",
+              "role": "defining",
+              "note": "Mary anoints Jesus’ feet and the fragrance fills the house."
+            }
+          ],
+          "cognate_ids": [
+            "syc-nard",
+            "gez-nard"
+          ],
+          "kin": [
+            "nard"
+          ]
+        }
+      ],
+      "lang": "syc",
+      "root": "נרד"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-nard",
+      "lang": "arc",
+      "form": "נִרְדָּא",
+      "translit": "nirdā",
+      "gloss": "nard",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "N01266, Targum Song 1:12, with a variant reading"
+        }
+      ]
+    },
+    {
+      "id": "syc-nard",
+      "lang": "syc",
+      "form": "ܢܪܕܝܢ",
+      "translit": "nardīn",
+      "gloss": "nard",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "sedra",
+          "locator": "lexeme 2031, Mrk 14:3 and Jhn 12:3"
+        }
+      ]
+    },
+    {
+      "id": "mandaic-nard",
+      "lang": "arc",
+      "form": "ࡍࡀࡓࡃ",
+      "translit": "nard",
+      "gloss": "spikenard",
+      "relation": "loan",
+      "evidence": [
+        {
+          "source": "drower-macuch-1963",
+          "locator": "nard, DC 6 and 36 no. 248"
+        }
+      ],
+      "note": "Mandaic. The dictionary traces the spice name to Sanskrit and compares Persian."
+    },
+    {
+      "id": "gez-nard",
+      "lang": "gez",
+      "form": "ናርዶስ",
+      "translit": "nārdos",
+      "gloss": "nard",
+      "relation": "loan",
+      "evidence": [
+        {
+          "source": "dillmann-1865",
+          "locator": "col. 640, ናርዶስ, with variant ናርዱ, at Song 1:12 and John 12:3"
+        }
+      ],
+      "note": "Dillmann identifies the Geʿez form as a borrowing of Greek νάρδος."
+    },
+    {
+      "id": "akk-nard",
+      "lang": "akk",
+      "form": "lardu",
+      "translit": "lardu",
+      "gloss": "a grass identified as nard",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "cmawro x000008650; compare the broader gloss in armep x000002640"
+        }
+      ],
+      "note": "The initial consonant and the precise plant identification are uncertain."
+    }
+  ],
+  "doctrine": [],
+  "note": "The corpus files the Hebrew noun under נקש. Its attested consonants נרד and the parallels in other languages justify a separate entry. Several languages borrowed the spice name. The route by which it reached Hebrew is uncertain."
+}

@@ -1,0 +1,392 @@
+{
+  "id": "dbx",
+  "root": "דבש",
+  "status": "draft",
+  "updated": "2026-11-18",
+  "tags": [
+    "food",
+    "land"
+  ],
+  "gloss": "honey",
+  "summary": "Samson finds bees and honey in the lion’s carcass. Honey supplies a measure of sweetness for manna, for the scroll Ezekiel eats and for Yahweh’s words. Paired with milk, it describes the abundance of the promised land.",
+  "words": [
+    {
+      "lemma": "דְּבַשׁ",
+      "bdb": [
+        "d.aj.ab"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "honey",
+      "senses": [
+        {
+          "gloss": "honey for eating",
+          "definition": "A sweet food gathered, stored, given away or traded. Samson finds it where bees have gathered, and Jonathan dips his staff into the comb.",
+          "evidence": [
+            {
+              "ref": "Jdg.14.8",
+              "role": "defining",
+              "note": "A swarm and its honey occupy the lion’s carcass."
+            },
+            {
+              "ref": "Jdg.14.9"
+            },
+            {
+              "ref": "1Sa.14.27"
+            },
+            {
+              "ref": "Gen.43.11",
+              "note": "The brothers carry a little as a gift to Egypt."
+            },
+            {
+              "ref": "Jer.41.8"
+            },
+            {
+              "ref": "Ezk.27.17"
+            },
+            {
+              "ref": "Lev.2.11",
+              "note": "Honey is excluded from what is burned as a food offering."
+            }
+          ],
+          "id": "food-honey",
+          "cognate_ids": [
+            "akk-honey",
+            "sabaean-honey",
+            "jba-honey",
+            "mandaic-honey",
+            "jibbali-honey",
+            "mehri-honey",
+            "gafat-honey",
+            "argobba-honey",
+            "harari-honey",
+            "geez-honey"
+          ]
+        },
+        {
+          "id": "sweet-as-honey",
+          "gloss": "sweet as honey",
+          "definition": "Honey’s taste supplies a comparison for something pleasant to the palate, including words received with delight.",
+          "evidence": [
+            {
+              "ref": "Exo.16.31",
+              "role": "defining",
+              "note": "The taste of manna is compared with wafers made with honey."
+            },
+            {
+              "ref": "Ezk.3.3",
+              "note": "The scroll tastes like honey in Ezekiel’s mouth."
+            },
+            {
+              "ref": "Psa.119.103"
+            },
+            {
+              "ref": "Pro.16.24"
+            }
+          ],
+          "kin": [
+            "syriac-sweet"
+          ]
+        },
+        {
+          "id": "flowing-with-milk-and",
+          "gloss": "flowing with milk and honey",
+          "definition": "A description of a land rich enough to feed its inhabitants well.",
+          "evidence": [
+            {
+              "ref": "Exo.3.8",
+              "role": "defining",
+              "note": "Yahweh describes the good, broad land to which he will bring Israel."
+            },
+            {
+              "ref": "Num.13.27",
+              "note": "The scouts repeat the expression while showing the land’s fruit."
+            },
+            {
+              "ref": "Num.16.13",
+              "note": "Dathan and Abiram turn the expression back on Egypt."
+            },
+            {
+              "ref": "Deu.31.20"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "דַּבֶּשֶׁת",
+      "bdb": [
+        "d.aj.ac"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "hump of a camel",
+      "senses": [
+        {
+          "id": "camel-s-hump",
+          "gloss": "camel’s hump",
+          "definition": "The part of a camel’s back on which a load rests.",
+          "evidence": [
+            {
+              "ref": "Isa.30.6",
+              "role": "defining",
+              "note": "The carriers put riches on donkeys’ shoulders and treasure on camels’ humps."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "דַּבָּשֶׁת",
+      "pos": "name",
+      "gloss": "Dabbesheth",
+      "senses": [
+        {
+          "id": "dabbesheth",
+          "gloss": "Dabbesheth",
+          "definition": "A place on Zebulun’s boundary.",
+          "evidence": [
+            {
+              "ref": "Jos.19.11",
+              "role": "defining",
+              "note": "The boundary reaches Dabbesheth and the wadi facing Jokneam."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "דֶּבְשָׁא",
+      "lang": "syc",
+      "root": "דבשא",
+      "pos": "noun",
+      "gloss": "honey",
+      "senses": [
+        {
+          "id": "wild-honey",
+          "gloss": "wild honey",
+          "definition": "Honey gathered as food.",
+          "evidence": [
+            {
+              "ref": "Mat.3.4",
+              "role": "defining",
+              "note": "John eats locusts and wild honey."
+            },
+            {
+              "ref": "Mrk.1.6"
+            }
+          ],
+          "kin": [
+            "food-honey"
+          ],
+          "cognate_ids": [
+            "akk-honey",
+            "sabaean-honey",
+            "jba-honey",
+            "mandaic-honey",
+            "jibbali-honey",
+            "mehri-honey",
+            "gafat-honey",
+            "argobba-honey",
+            "harari-honey",
+            "geez-honey"
+          ]
+        },
+        {
+          "gloss": "sweet as honey",
+          "definition": "Honey gives the measure of sweetness for the little scroll.",
+          "evidence": [
+            {
+              "ref": "Rev.10.10",
+              "role": "defining",
+              "note": "Sweet in the mouth before it makes the belly bitter, echoing Ezk 3:3."
+            }
+          ],
+          "id": "syriac-sweet"
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-honey",
+      "lang": "akk",
+      "form": "dišpu",
+      "translit": "dišpu",
+      "gloss": "honey, syrup",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000008340, dišpu"
+        }
+      ],
+      "note": "The last two root consonants occur in reverse order, with p corresponding to Hebrew b."
+    },
+    {
+      "id": "arabic-syrup",
+      "lang": "ar",
+      "form": "دِبْسٌ",
+      "translit": "dibs",
+      "gloss": "date syrup",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 848, n12033, expressed juice of ripe dates"
+        }
+      ]
+    },
+    {
+      "id": "sabaean-honey",
+      "lang": "sem",
+      "form": "𐩵𐩨𐩪𐩣",
+      "translit": "dbs¹m",
+      "gloss": "honey or a similar food",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š"
+      },
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "DBS, CIH 548/12–13 and CIH 540/96"
+        }
+      ],
+      "note": "Sabaean. The inscriptions list it with dairy foods."
+    },
+    {
+      "id": "jba-honey",
+      "lang": "arc",
+      "form": "דובשא",
+      "translit": "dūḇšā",
+      "gloss": "honey",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š"
+      },
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "Gittin 69a, בדובשא in the entry for kneading; Bava Batra 91b, דדובשא in the entry for a thread"
+        }
+      ],
+      "note": "Jewish Babylonian Aramaic."
+    },
+    {
+      "id": "mandaic-honey",
+      "lang": "arc",
+      "form": "ࡃࡅࡁࡔࡀ",
+      "translit": "dubša",
+      "gloss": "honey",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š"
+      },
+      "evidence": [
+        {
+          "source": "drower-macuch-1963",
+          "locator": "dubša, MG 18:10; Jb 154:6, oil and honey; AM 92:9, pure honey"
+        }
+      ],
+      "note": "Classical Mandaic. The dictionary also records dupša."
+    },
+    {
+      "id": "jibbali-honey",
+      "lang": "sem",
+      "form": "dεbš",
+      "translit": "dεbš",
+      "gloss": "bee honey",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š"
+      },
+      "evidence": [
+        {
+          "source": "canova-2025",
+          "locator": "p. 89, field interviews in Dhofar, compared with Johnstone’s Jibbali Lexicon"
+        }
+      ],
+      "note": "Jibbali. The local term for date syrup ends in s."
+    },
+    {
+      "id": "mehri-honey",
+      "lang": "sem",
+      "form": "dabh",
+      "translit": "dabh",
+      "gloss": "honey",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "canova-2025",
+          "locator": "p. 89 n. 119, Mehri"
+        }
+      ]
+    },
+    {
+      "id": "gafat-honey",
+      "lang": "sem",
+      "form": "dəbsä",
+      "translit": "dəbsä",
+      "gloss": "honey",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "leslau-1958",
+          "locator": "Introduction, p. 1, Gafat"
+        }
+      ]
+    },
+    {
+      "id": "argobba-honey",
+      "lang": "sem",
+      "form": "dims",
+      "translit": "dims",
+      "gloss": "honey",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "leslau-1958",
+          "locator": "Introduction, p. 1, Argobba"
+        }
+      ]
+    },
+    {
+      "id": "harari-honey",
+      "lang": "sem",
+      "form": "dus",
+      "translit": "dus",
+      "gloss": "honey",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "leslau-1958",
+          "locator": "Introduction, p. 1, Harari"
+        }
+      ]
+    },
+    {
+      "id": "geez-honey",
+      "lang": "gez",
+      "form": "ደበሰ",
+      "translit": "dbs",
+      "gloss": "honey",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š"
+      },
+      "evidence": [
+        {
+          "source": "rie-1991",
+          "locator": "RIÉ 183, Safra, pp. 227–232; George Hatke, Folia Orientalia 60 (2023), p. 82 n. 230"
+        }
+      ],
+      "note": "The inscription is written in unvocalized Ethiopic. The transcription gives only the consonants."
+    }
+  ],
+  "doctrine": [],
+  "note": "Judges identifies bee honey. Deut 8:8 names honey with the produce of the land without saying how it was made. Arabic dibs shows that the related term can denote fruit syrup elsewhere. The hump and the place Dabbesheth share one index key. Neither passage connects them to honey. The name Idbash occurs only in a genealogy. The Syriac noun is SEDRA lexeme 653."
+}

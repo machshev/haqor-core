@@ -1,0 +1,112 @@
+{
+  "id": "m79",
+  "root": "מחצ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "injury",
+    "healing"
+  ],
+  "gloss": "strike, crush, wound",
+  "summary": "The verb describes both the impact of a blow and the wound it leaves. In Psalm 18 the result is explicit: the opponents fall and cannot rise.",
+  "words": [
+    {
+      "lemma": "מָחַץ",
+      "bdb": [
+        "m.bo.aa"
+      ],
+      "pos": "verb",
+      "gloss": "strike, crush, wound",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "strike or wound",
+          "senses": [
+            {
+              "id": "strike-a-disabling-blow",
+              "gloss": "strike a disabling blow",
+              "definition": "David describes enemies struck so severely that they cannot get up. Jael strikes Sisera’s head in the song of Deborah.",
+              "evidence": [
+                {
+                  "ref": "Psa.18.39",
+                  "role": "defining"
+                },
+                {
+                  "ref": "2Sa.22.39"
+                },
+                {
+                  "ref": "Jdg.5.26"
+                }
+              ]
+            },
+            {
+              "id": "wound",
+              "gloss": "wound",
+              "definition": "Yahweh declares that he wounds and heals. In Job the same contrast appears alongside binding up the injury.",
+              "evidence": [
+                {
+                  "ref": "Deu.32.39",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Job.5.18"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "akk-mahasu"
+      ]
+    },
+    {
+      "lemma": "מַחַץ",
+      "bdb": [
+        "m.bo.ab"
+      ],
+      "pos": "noun",
+      "gloss": "wound from a blow",
+      "senses": [
+        {
+          "id": "wound-from-a-blow",
+          "gloss": "wound from a blow",
+          "definition": "Isaiah looks to the day when Yahweh binds up his people’s injury and heals the wound caused by his blow.",
+          "evidence": [
+            {
+              "ref": "Isa.30.26",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "akk-mahasu"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-mahasu",
+      "lang": "akk",
+      "form": "maḫāṣu",
+      "translit": "maḫāṣu",
+      "gloss": "beat, strike",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "maḫāṣu [beat] V; cmawro x000024700"
+        }
+      ],
+      "sounds": {
+        "ח": "ḫ",
+        "צ": "ṣ"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "The physical sense is particularly clear where the verb is paired with healing or names the part struck."
+}

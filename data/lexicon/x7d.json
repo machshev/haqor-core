@@ -1,0 +1,169 @@
+{
+  "id": "x7d",
+  "root": "שחד",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "justice",
+    "giving"
+  ],
+  "gloss": "bribe, inducement",
+  "summary": "The gift is meant to influence another person’s decision. Psalm 15 sets refusal of a bribe alongside refusal to profit through interest.",
+  "words": [
+    {
+      "lemma": "שָׁחַד",
+      "bdb": [
+        "v.cf.aa"
+      ],
+      "pos": "verb",
+      "gloss": "give an inducement, bribe",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "induce by a gift",
+          "senses": [
+            {
+              "gloss": "induce by a gift",
+              "definition": "Ezekiel depicts Jerusalem giving gifts to attract lovers. Job asks whether he ever asked his friends to give from their wealth on his behalf.",
+              "evidence": [
+                {
+                  "ref": "Ezk.16.33",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Job.6.22"
+                }
+              ],
+              "id": "induce"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-shehad",
+        "syc-shuhda"
+      ]
+    },
+    {
+      "lemma": "שֹׁחַד",
+      "bdb": [
+        "v.cf.ab"
+      ],
+      "pos": "noun",
+      "gloss": "gift offered to influence, bribe",
+      "senses": [
+        {
+          "gloss": "bribe to pervert judgment",
+          "definition": "The law forbids gifts that blind the judge and twist the case of the innocent. Psalm 15 commends the person who refuses such a gift against an innocent person.",
+          "evidence": [
+            {
+              "ref": "Exo.23.8",
+              "role": "defining"
+            },
+            {
+              "ref": "Deu.16.19"
+            },
+            {
+              "ref": "Psa.15.5"
+            },
+            {
+              "ref": "Ezk.22.12"
+            }
+          ],
+          "id": "bribe",
+          "kin": [
+            "induce"
+          ]
+        },
+        {
+          "id": "payment-for-an-ally",
+          "gloss": "payment for an ally’s support",
+          "definition": "Asa sends silver and gold to Ben-hadad to persuade him to break his treaty with Israel.",
+          "evidence": [
+            {
+              "ref": "1Ki.15.18",
+              "to": "1Ki.15.19",
+              "role": "defining"
+            }
+          ],
+          "kin": [
+            "induce"
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "arc-shehad",
+        "syc-shuhda"
+      ]
+    },
+    {
+      "lemma": "שׁוּחְדָא",
+      "pos": "noun",
+      "gloss": "bribe",
+      "senses": [
+        {
+          "id": "bribe-2",
+          "gloss": "bribe",
+          "definition": "Felix sends for Paul repeatedly in the hope of receiving money from him. The Syriac calls the expected payment a bribe.",
+          "evidence": [
+            {
+              "ref": "Act.24.26",
+              "role": "defining"
+            }
+          ],
+          "kin": [
+            "bribe"
+          ]
+        }
+      ],
+      "gender": "m",
+      "lang": "syc",
+      "cognate_ids": [
+        "arc-shehad",
+        "syc-shuhda"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-shehad",
+      "lang": "arc",
+      "form": "שְׁחַד",
+      "translit": "šəḥad",
+      "gloss": "win favour by a gift, bribe",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "שְׁחַד, Targum Ezekiel 16:33 and Job 6:22"
+        }
+      ],
+      "sounds": {
+        "ש": "š",
+        "ח": "ḥ"
+      }
+    },
+    {
+      "id": "syc-shuhda",
+      "lang": "syc",
+      "form": "ܫܘܚܕܐ",
+      "translit": "šuḥdā",
+      "gloss": "bribe",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "sedra",
+          "locator": "lexeme 3162, Acts 24:26"
+        }
+      ],
+      "sounds": {
+        "ש": "š",
+        "ח": "ḥ"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "The diplomatic inducement in 1 Kings 15:19 has a wider setting than a payment to a judge. In Psalm 15 the innocent party makes the judicial harm explicit."
+}

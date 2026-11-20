@@ -1,0 +1,149 @@
+{
+  "id": "9w9",
+  "root": "צוצ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "gloss": "blossom, flower, peer",
+  "summary": "A rod puts forth a blossom, and a crown of flowers fades. The noun also names the gold ornament worn on the high priest’s forehead.",
+  "words": [
+    {
+      "lemma": "צוּץ",
+      "bdb": [
+        "r.bf.aa"
+      ],
+      "pos": "verb",
+      "gloss": "blossom, peer",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "blossom",
+          "senses": [
+            {
+              "id": "blossom",
+              "gloss": "blossom",
+              "definition": "The rod has blossomed and insolence has budded.",
+              "evidence": [
+                {
+                  "ref": "Ezk.7.10",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "put forth blossom, peer out",
+          "senses": [
+            {
+              "id": "put-forth-blossom-peer",
+              "gloss": "put forth blossom, peer out",
+              "definition": "Aaron’s staff put forth flowers. The psalm wishes the city’s people growth like grass. In the Song, a lover peers through a lattice.",
+              "evidence": [
+                {
+                  "ref": "Num.17.23",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.72.16",
+                  "role": "example"
+                },
+                {
+                  "ref": "Sng.2.9",
+                  "role": "example"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-bloom"
+      ]
+    },
+    {
+      "lemma": "צִיץ",
+      "bdb": [
+        "r.bf.ab"
+      ],
+      "pos": "noun",
+      "gloss": "flower, gold rosette",
+      "senses": [
+        {
+          "id": "flower-gold-rosette",
+          "gloss": "flower, gold rosette",
+          "definition": "A flower fades, while the priest’s gold ornament is inscribed “Holy to Yahweh”.",
+          "evidence": [
+            {
+              "ref": "Isa.40.7",
+              "role": "defining"
+            },
+            {
+              "ref": "Exo.28.36",
+              "role": "example"
+            },
+            {
+              "ref": "Isa.28.1",
+              "role": "example"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-plate"
+      ]
+    },
+    {
+      "lemma": "צִיצָה",
+      "bdb": [
+        "r.bf.ac"
+      ],
+      "pos": "noun",
+      "gloss": "flower",
+      "senses": [
+        {
+          "id": "flower",
+          "gloss": "flower",
+          "definition": "Isaiah compares fading splendour to a flower about to fall.",
+          "evidence": [
+            {
+              "ref": "Isa.28.4",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-bloom",
+      "lang": "arc",
+      "form": "צִיץ",
+      "translit": "ṣîṣ",
+      "gloss": "stand forth, bloom, look for",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. צִיץ, Targum Ecclesiastes 12:5 (variant) and Proverbs 2:4"
+        }
+      ]
+    },
+    {
+      "id": "arc-plate",
+      "lang": "arc",
+      "form": "צִיצָא",
+      "translit": "ṣîṣā",
+      "gloss": "gold plate, high priest’s front plate",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. צִיצָא, Targum Exodus 28:36"
+        }
+      ]
+    }
+  ]
+}

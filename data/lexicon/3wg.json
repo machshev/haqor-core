@@ -1,0 +1,91 @@
+{
+  "id": "3wg",
+  "root": "עוג",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "psalm-35"
+  ],
+  "gloss": "morsel",
+  "summary": "morsel in Psalm 35",
+  "words": [
+    {
+      "lemma": "מָעוֹג",
+      "gloss": "morsel",
+      "bdb": [
+        "p.bb.ad"
+      ],
+      "pos": "noun",
+      "senses": [
+        {
+          "id": "cake-morsel",
+          "gloss": "cake, morsel",
+          "definition": "David describes people who mock and gnash their teeth. The difficult expression may refer to mockers at a meal or to mockery for the sake of a morsel.",
+          "evidence": [
+            {
+              "ref": "Psa.35.16",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עֻגָה",
+      "bdb": [
+        "p.bb.ab"
+      ],
+      "pos": "noun",
+      "gloss": "round bread cake",
+      "senses": [
+        {
+          "id": "round-bread-cake",
+          "gloss": "round bread cake",
+          "definition": "Elijah asks the widow to prepare a small cake. Later he finds a cake baked on hot stones beside his head.",
+          "evidence": [
+            {
+              "ref": "1Ki.17.13",
+              "role": "defining"
+            },
+            {
+              "ref": "1Ki.19.6",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "עוּג",
+      "bdb": [
+        "p.bb.ac"
+      ],
+      "pos": "verb",
+      "gloss": "bake a cake",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "bake a cake",
+          "senses": [
+            {
+              "id": "bake-a-cake",
+              "gloss": "bake a cake",
+              "definition": "Ezekiel is told to bake his ration as a barley cake before those who watch.",
+              "evidence": [
+                {
+                  "ref": "Ezk.4.12",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [],
+  "doctrine": [],
+  "note": "Drafted for Psalm 35 coverage."
+}

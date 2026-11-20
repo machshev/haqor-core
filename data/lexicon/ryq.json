@@ -1,0 +1,293 @@
+{
+  "id": "ryq",
+  "root": "ריק",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "emptiness",
+    "speech"
+  ],
+  "gloss": "empty, empty out, in vain",
+  "summary": "A sack can be emptied and a vessel stands empty until someone fills it. An undertaking is empty when it produces nothing, as with the nations’ plans in Psalm 2.",
+  "words": [
+    {
+      "lemma": "רִיק",
+      "bdb": [
+        "t.co.aa"
+      ],
+      "pos": "verb",
+      "gloss": "empty, pour out, draw out",
+      "stems": [
+        {
+          "stem": "hiphil",
+          "gloss": "empty or draw out",
+          "senses": [
+            {
+              "id": "empty-a-container-or",
+              "gloss": "empty a container or pour out its contents",
+              "definition": "The brothers find their money while emptying their sacks. Emptying jars, tipping netted fish out and pouring a blessing all draw on the same action.",
+              "evidence": [
+                {
+                  "ref": "Gen.42.35",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jer.48.12"
+                },
+                {
+                  "ref": "Hab.1.17"
+                },
+                {
+                  "ref": "Mal.3.10"
+                },
+                {
+                  "ref": "Psa.18.43"
+                }
+              ],
+              "kin": [
+                "empty"
+              ]
+            },
+            {
+              "id": "draw-out-for-use",
+              "gloss": "draw out for use",
+              "definition": "An enemy draws a sword to pursue, and the speaker in Psalm 35 asks Yahweh to draw a spear to meet his pursuers. Abram brings his trained men out for pursuit.",
+              "evidence": [
+                {
+                  "ref": "Exo.15.9",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Ezk.28.7"
+                },
+                {
+                  "ref": "Psa.35.3"
+                },
+                {
+                  "ref": "Gen.14.14"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hophal",
+          "gloss": "be poured or emptied out",
+          "senses": [
+            {
+              "id": "be-poured-out",
+              "gloss": "be poured out",
+              "definition": "Wine that remains on its dregs has never been emptied from vessel to vessel. A beloved name is compared to fragrant oil poured out.",
+              "evidence": [
+                {
+                  "ref": "Jer.48.11",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Sng.1.3"
+                }
+              ],
+              "kin": [
+                "empty"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "רֵיקָם",
+      "bdb": [
+        "t.co.ad"
+      ],
+      "pos": "adverb",
+      "gloss": "empty-handed, without result or cause",
+      "senses": [
+        {
+          "id": "with-nothing-in-hand",
+          "gloss": "with nothing in hand",
+          "definition": "A released servant is to leave with provisions. Naomi recalls leaving full and returning empty-handed.",
+          "evidence": [
+            {
+              "ref": "Deu.15.13",
+              "to": "Deu.15.14",
+              "role": "defining"
+            },
+            {
+              "ref": "Rut.1.21"
+            },
+            {
+              "ref": "Exo.23.15"
+            },
+            {
+              "ref": "Jer.14.3"
+            }
+          ],
+          "kin": [
+            "empty"
+          ],
+          "cognate_ids": [
+            "akk-riqu"
+          ]
+        },
+        {
+          "id": "to-no-effect-without",
+          "gloss": "to no effect, without cause",
+          "definition": "A word that returns empty has failed to carry out its purpose. Applied to treachery the adverb describes acting without grounds.",
+          "evidence": [
+            {
+              "ref": "Isa.55.11",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.25.3"
+            }
+          ],
+          "kin": [
+            "futile"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "רֵיק",
+      "bdb": [
+        "t.co.ab",
+        "t.ej.ae"
+      ],
+      "pos": "adjective",
+      "gloss": "empty, worthless",
+      "senses": [
+        {
+          "gloss": "containing nothing",
+          "definition": "The widow borrows empty vessels so that they can be filled with oil. Thin ears of grain are empty of what should nourish.",
+          "evidence": [
+            {
+              "ref": "2Ki.4.3",
+              "to": "2Ki.4.6",
+              "role": "defining"
+            },
+            {
+              "ref": "Gen.41.27"
+            },
+            {
+              "ref": "Isa.29.8"
+            }
+          ],
+          "id": "empty",
+          "cognate_ids": [
+            "akk-riqu"
+          ]
+        },
+        {
+          "id": "without-worth",
+          "gloss": "without worth",
+          "definition": "A thing may lack value or a man be treated as worthless. Moses tells Israel that the instruction he gives them is their very life.",
+          "evidence": [
+            {
+              "ref": "Deu.32.47",
+              "role": "defining"
+            },
+            {
+              "ref": "Jdg.11.3"
+            },
+            {
+              "ref": "2Sa.6.20"
+            }
+          ],
+          "kin": [
+            "futile"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ῥακά",
+          "gloss": "empty one, a term of contempt",
+          "relation": "loan",
+          "evidence": [
+            {
+              "ref": "Mat.5.22"
+            },
+            {
+              "source": "abbott-smith",
+              "locator": "s.v. ῥακά, Aramaic רֵיקָא",
+              "note": "The borrowing is from the Aramaic member of this family."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "רִיק",
+      "bdb": [
+        "t.co.ac"
+      ],
+      "pos": "noun",
+      "gloss": "emptiness, futility",
+      "senses": [
+        {
+          "gloss": "effort with nothing to show for it",
+          "definition": "The farmer sows but another eats the crop. The nations in Psalm 2 plan something that cannot succeed, while Psalm 4 sets what is empty beside a lie.",
+          "evidence": [
+            {
+              "ref": "Lev.26.16",
+              "role": "defining"
+            },
+            {
+              "ref": "Lev.26.20"
+            },
+            {
+              "ref": "Isa.49.4"
+            },
+            {
+              "ref": "Psa.2.1"
+            },
+            {
+              "ref": "Psa.4.3"
+            },
+            {
+              "ref": "Act.4.25"
+            }
+          ],
+          "id": "futile"
+        }
+      ],
+      "gender": "m",
+      "greek": [
+        {
+          "lemma": "κενός",
+          "gloss": "empty, vain",
+          "evidence": [
+            {
+              "ref": "Act.4.25"
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "Psalm 2:1, רִיק and κενά"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-riqu",
+      "lang": "akk",
+      "form": "rīqu",
+      "translit": "rīqu",
+      "gloss": "empty, idle, empty-handed",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep/x000015570, rīqu [empty] AJ"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The borrowing in Matthew 5:22 is linked through the Aramaic insult. Genesis 14:14 extends the action to bringing out men. Whether the image there is drawing out a weapon or emptying a reserve of men is uncertain."
+}

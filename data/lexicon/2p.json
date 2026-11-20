@@ -1,0 +1,136 @@
+{
+  "id": "2p",
+  "root": "אפ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "grammar",
+    "addition"
+  ],
+  "gloss": "also, even",
+  "summary": "The particle adds a further person, fact or consideration. With a comparison it can emphasize the greater force of what follows.",
+  "words": [
+    {
+      "lemma": "אַף",
+      "bdb": [
+        "a.ex.aa"
+      ],
+      "pos": "particle",
+      "gloss": "also, even, indeed",
+      "senses": [
+        {
+          "gloss": "also, in addition",
+          "definition": "Psalm 16 adds one blessing to another: the inheritance is pleasing, the inner being gives instruction at night, and the flesh too rests secure.",
+          "evidence": [
+            {
+              "ref": "Psa.16.6",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.16.7"
+            },
+            {
+              "ref": "Psa.16.9"
+            }
+          ],
+          "id": "also"
+        },
+        {
+          "id": "even-how-much-more",
+          "gloss": "even, how much more or less",
+          "definition": "Proverbs draws an inference from the fate of the righteous to that of the wicked. Solomon uses the construction when asking whether the temple could contain God.",
+          "evidence": [
+            {
+              "ref": "Pro.11.31",
+              "role": "defining"
+            },
+            {
+              "ref": "1Ki.8.27"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "syc-aph"
+      ]
+    },
+    {
+      "lemma": "אַף",
+      "bdb": [
+        "xa.be.aa"
+      ],
+      "pos": "particle",
+      "gloss": "also, moreover",
+      "senses": [
+        {
+          "id": "also-2",
+          "gloss": "also",
+          "definition": "The officials add that they asked for the builders’ names. The decree adds instructions for the returned temple vessels.",
+          "evidence": [
+            {
+              "ref": "Ezr.5.10",
+              "role": "defining"
+            },
+            {
+              "ref": "Ezr.6.5"
+            },
+            {
+              "ref": "Dan.6.23"
+            }
+          ],
+          "kin": [
+            "also"
+          ]
+        }
+      ],
+      "lang": "arc",
+      "cognate_ids": [
+        "syc-aph"
+      ]
+    },
+    {
+      "lemma": "אָף",
+      "pos": "particle",
+      "gloss": "also, even",
+      "senses": [
+        {
+          "id": "also-or-even",
+          "gloss": "also or even",
+          "definition": "Jesus tells the disciples that their Father knows even the hairs on their heads.",
+          "evidence": [
+            {
+              "ref": "Mat.10.30",
+              "role": "defining"
+            }
+          ],
+          "kin": [
+            "also"
+          ]
+        }
+      ],
+      "lang": "syc",
+      "cognate_ids": [
+        "syc-aph"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "syc-aph",
+      "lang": "syc",
+      "form": "ܐܦ",
+      "translit": "ʾāp",
+      "gloss": "also, even",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "sedra",
+          "locator": "lexeme 243, אפ"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The identically spelled Hebrew noun for nose or anger belongs to aph under אנפ. Here the syntax calls for a particle in each of the three Psalm 16 occurrences."
+}

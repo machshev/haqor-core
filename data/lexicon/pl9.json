@@ -1,0 +1,104 @@
+{
+  "id": "pl9",
+  "root": "פלצ",
+  "status": "draft",
+  "updated": "2026-11-20",
+  "gloss": "terror; trembling",
+  "summary": "The noun פַּלָּצוּת describes terror and trembling before danger.",
+  "words": [
+    {
+      "lemma": "פַּלָּצוּת",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "terror; trembling",
+      "bdb": [
+        "q.bs.ab"
+      ],
+      "senses": [
+        {
+          "id": "terror",
+          "gloss": "terror",
+          "definition": "A state of fearful trembling and terror.",
+          "evidence": [
+            {
+              "ref": "Psa.55.6",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מִפְלֶצֶת",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "horror, horrid thing",
+      "bdb": [
+        "q.bs.ac"
+      ],
+      "senses": [
+        {
+          "id": "horrid-thing",
+          "gloss": "horrid thing",
+          "definition": "A horrid image made for Asherah was cut down and burned.",
+          "evidence": [
+            {
+              "ref": "1Ki.15.13",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "תִּפְלֶצֶת",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "terror",
+      "bdb": [
+        "q.bs.ad"
+      ],
+      "senses": [
+        {
+          "id": "terror-2",
+          "gloss": "terror",
+          "definition": "Terror deceives the proud who trust in high places.",
+          "evidence": [
+            {
+              "ref": "Jer.49.16",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "פָּלַץ",
+      "pos": "verb",
+      "gloss": "shudder",
+      "bdb": [
+        "q.bs.aa"
+      ],
+      "stems": [
+        {
+          "stem": "hithpael",
+          "gloss": "tremble",
+          "senses": [
+            {
+              "id": "tremble",
+              "gloss": "tremble",
+              "definition": "The earths pillars tremble before Yahweh.",
+              "evidence": [
+                {
+                  "ref": "Job.9.6",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "note": "Drafted for Psalm 55 coverage."
+}

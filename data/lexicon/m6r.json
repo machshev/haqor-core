@@ -1,0 +1,218 @@
+{
+  "id": "m6r",
+  "root": "מטר",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "weather",
+    "rain"
+  ],
+  "gloss": "rain, send rain",
+  "summary": "Rain nourishes the land. The verb also describes other things falling in quantity from above, including the fire of judgment in Psalm 11.",
+  "words": [
+    {
+      "lemma": "מָטָר",
+      "bdb": [
+        "m.bs.aa"
+      ],
+      "pos": "noun",
+      "gloss": "rain",
+      "senses": [
+        {
+          "gloss": "rainfall",
+          "definition": "The land receives rain in season so that grain, wine and oil can be gathered. The psalmist describes God providing rain and making grass grow on mountains.",
+          "evidence": [
+            {
+              "ref": "Deu.11.14",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.147.8"
+            },
+            {
+              "ref": "Job.5.10"
+            }
+          ],
+          "id": "rain"
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "ar-matar",
+        "syc-metra"
+      ]
+    },
+    {
+      "lemma": "מָטַר",
+      "bdb": [
+        "m.bs.ab"
+      ],
+      "pos": "verb",
+      "gloss": "cause rain to fall, rain down",
+      "stems": [
+        {
+          "stem": "hiphil",
+          "gloss": "rain down",
+          "senses": [
+            {
+              "id": "send-rain",
+              "gloss": "send rain",
+              "definition": "The ground in Genesis lacks rain until God provides it. Amos describes rain reaching one town while another goes without.",
+              "evidence": [
+                {
+                  "ref": "Gen.2.5",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Amo.4.7"
+                }
+              ],
+              "kin": [
+                "rain"
+              ]
+            },
+            {
+              "gloss": "shower down other things",
+              "definition": "Yahweh rains sulphur and fire on Sodom. Psalm 11 uses the same verb when describing the fate of the wicked, while Psalm 78 uses it of food from heaven.",
+              "evidence": [
+                {
+                  "ref": "Gen.19.24",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.11.6"
+                },
+                {
+                  "ref": "Psa.78.24"
+                },
+                {
+                  "ref": "Psa.78.27"
+                }
+              ],
+              "id": "rain-down"
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "receive rain",
+          "senses": [
+            {
+              "id": "receive-rain",
+              "gloss": "receive rain",
+              "definition": "Amos describes one plot receiving rain while another dries up.",
+              "evidence": [
+                {
+                  "ref": "Amo.4.7",
+                  "role": "defining"
+                }
+              ],
+              "kin": [
+                "rain"
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-matar",
+        "syc-metra"
+      ]
+    },
+    {
+      "lemma": "מְטַר",
+      "pos": "verb",
+      "gloss": "bring down like rain",
+      "stems": [
+        {
+          "stem": "aphel",
+          "gloss": "rain down",
+          "senses": [
+            {
+              "id": "rain-down-2",
+              "gloss": "rain down",
+              "definition": "Jesus recalls the fire and sulphur that rained from heaven on the day Lot left Sodom.",
+              "evidence": [
+                {
+                  "ref": "Luk.17.29",
+                  "role": "defining"
+                }
+              ],
+              "kin": [
+                "rain-down"
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "cognate_ids": [
+        "ar-matar",
+        "syc-metra"
+      ]
+    },
+    {
+      "lemma": "מֶטְרָא",
+      "pos": "noun",
+      "gloss": "rain",
+      "senses": [
+        {
+          "id": "rainfall",
+          "gloss": "rainfall",
+          "definition": "In Jesus’ comparison the rain descends upon houses built on rock and sand.",
+          "evidence": [
+            {
+              "ref": "Mat.7.25",
+              "role": "defining"
+            },
+            {
+              "ref": "Mat.7.27"
+            }
+          ],
+          "kin": [
+            "rain"
+          ]
+        }
+      ],
+      "gender": "m",
+      "lang": "syc",
+      "cognate_ids": [
+        "ar-matar",
+        "syc-metra"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-matar",
+      "lang": "ar",
+      "form": "مَطَرٌ",
+      "translit": "maṭar",
+      "gloss": "rain",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2722, مَطَرٌ. For the verb see p. 2721, مَطَرَتِ السَّمَاءُ"
+        }
+      ]
+    },
+    {
+      "id": "syc-metra",
+      "lang": "syc",
+      "form": "ܡܛܪܐ",
+      "translit": "meṭrā",
+      "gloss": "rain",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "sedra",
+          "locator": "lexeme 1744, מטרא, Matthew 7:25. Compare verb lexeme 1743 in Luke 17:29"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The family of the Matrite is named at Saul’s selection. Its name has the same consonants as rain but no biblical explanation of its derivation."
+}

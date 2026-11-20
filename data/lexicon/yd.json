@@ -1,0 +1,963 @@
+{
+  "cognates": [
+    {
+      "evidence": [
+        {
+          "locator": "p. 3063, root يد, يَدٌ (n44787)",
+          "note": "“The arm, from the shoulder-joint to the extremities of the fingers … عَلَى يَدِهِ By his agency, or means … تَحْتَ يَدِهِ Under his authority … I owe such a one a benefit.”",
+          "source": "lane"
+        },
+        {
+          "locator": "SEM000534 yd [hand], ARB048373 yad [Hand]",
+          "source": "anderson-moser-2024"
+        }
+      ],
+      "form": "يَدٌ",
+      "gloss": "hand, arm; foreleg; power, authority; a benefit or favour done",
+      "id": "ar-yad",
+      "lang": "ar",
+      "note": "Lane’s article gives the hand and arm, the foreleg of a beast, تَحْتَ يَدِهِ “under his authority”, عَلَى يَدِهِ “by his agency” (Lane himself compares the Hebrew), and “I owe such a one a benefit (يَدٌ)”: power, agency and possession as in the Hebrew.",
+      "relation": "cognate",
+      "translit": "yad"
+    },
+    {
+      "evidence": [
+        {
+          "locator": "armep x000002970, idu [arm] N",
+          "note": "arm; direction; handle; power; side; strength; wages",
+          "source": "oracc"
+        },
+        {
+          "locator": "SEM000534 yd [hand], AKK004154 idu [arm]",
+          "source": "anderson-moser-2024"
+        }
+      ],
+      "form": "idu",
+      "gloss": "arm; side; strength, power; wages, hire",
+      "id": "akk-idu",
+      "lang": "akk",
+      "note": "Akkadian’s everyday word for “hand” is qātu; idu is the arm, and like the Hebrew יָד also the side of a thing and strength.",
+      "relation": "cognate",
+      "translit": "idu"
+    },
+    {
+      "evidence": [
+        {
+          "locator": "p. 188, §93 Glossary, yd /yad-/ “hand”",
+          "note": "“hand” … 1.14:III:13 “portion”; ydk 1.23:47 “(member >) penis”; byd 3.4:14 “from (the hand of)”; 1.6:II:25 “because of”; also yd preposition “(together) with”.",
+          "source": "segert-1984"
+        },
+        {
+          "locator": "Ugaritic 𐎊𐎄",
+          "note": "“hand”; from Proto-Semitic *yad-.",
+          "source": "wiktionary",
+          "url": "https://en.wiktionary.org/wiki/%F0%90%8E%8A%F0%90%8E%84"
+        }
+      ],
+      "form": "𐎊𐎄",
+      "gloss": "hand; portion; (byd) from the hand of, because of; (preposition) with",
+      "id": "uga-yd",
+      "lang": "uga",
+      "note": "The Ugaritic hand also means a portion, as the Hebrew יָדוֹת “shares” (Gen 43:34), and byd “from the hand of” is the Hebrew מִיַּד.",
+      "relation": "cognate",
+      "translit": "yd"
+    },
+    {
+      "evidence": [
+        {
+          "locator": "p. 204, YD",
+          "note": "“n.f. 1. HAND, ARM … 2. STRENGTH”; KAI 24.5–6, KAI 30.2.",
+          "source": "krahmalkov-2000"
+        },
+        {
+          "locator": "SEM000534 yd [hand], PUN000790 yd [hand]",
+          "source": "anderson-moser-2024"
+        }
+      ],
+      "form": "𐤉𐤃",
+      "gloss": "hand, arm; strength",
+      "id": "phn-yd",
+      "lang": "phn",
+      "note": "Kilamuwa’s “each extended his hand to fight” and “in the hand of those kings I was like a fire”; and “in him was the strength (yd) of Baal”.",
+      "relation": "cognate",
+      "translit": "yd"
+    },
+    {
+      "evidence": [
+        {
+          "locator": "Ge'ez እድ",
+          "note": "“hand, arm, leg (of animals), part, side”.",
+          "source": "wiktionary",
+          "url": "https://en.wiktionary.org/wiki/%E1%8A%A5%E1%8B%B5"
+        },
+        {
+          "locator": "SEM000534 yd [hand], GEZ000083 ʾEd [hand]",
+          "source": "anderson-moser-2024"
+        }
+      ],
+      "form": "እድ",
+      "gloss": "hand, arm; leg (of animals); part; side",
+      "id": "gez-ed",
+      "lang": "gez",
+      "relation": "cognate",
+      "translit": "ʾəd"
+    },
+    {
+      "evidence": [
+        {
+          "locator": "s.v. יַד (ch.), J00094",
+          "note": "Targ. Num. XXXV, 17; Targ. Is. XIII, 7; עַל יְדֵי Targ. Ps. LXXXIX, 20; Targ. Y. Num. XXXIII, 1.",
+          "source": "jastrow-1903"
+        }
+      ],
+      "form": "יַד, יְדָא",
+      "gloss": "hand; (עַל יְדֵי) through, by means of",
+      "id": "arc-yeda",
+      "lang": "arc",
+      "note": "The Targums’ hand, with עַל יְדֵי “through” (an agent) as Hebrew בְּיַד.",
+      "relation": "cognate",
+      "translit": "yad, yədā"
+    }
+  ],
+  "created": "2026-11-13",
+  "doctrine": [
+    {
+      "evidence": [
+        {
+          "ref": "Deu.26.8"
+        },
+        {
+          "ref": "Num.11.23"
+        },
+        {
+          "ref": "Isa.59.1"
+        },
+        {
+          "ref": "Isa.66.2"
+        },
+        {
+          "ref": "Act.7.50"
+        },
+        {
+          "ref": "Psa.102.26"
+        },
+        {
+          "ref": "Heb.1.10"
+        },
+        {
+          "ref": "Ezk.37.1"
+        },
+        {
+          "ref": "Ezk.1.3"
+        },
+        {
+          "ref": "Ezk.3.14"
+        },
+        {
+          "ref": "2Ki.3.15"
+        },
+        {
+          "ref": "Luk.11.20"
+        },
+        {
+          "ref": "Mat.12.28"
+        }
+      ],
+      "statement": "Yahweh’s hand is his power at work. With “a strong hand and an outstretched arm” he brought Israel out of Egypt (Deu 26:8); his hand is not too short to save (Num 11:23; Isa 59:1); his hand made heaven and earth (Isa 66:2, quoted in Act 7:50; Psa 102:26, quoted in Heb 1:10). When it is “on” a prophet he is moved by it to see and to speak: “the hand of Yahweh was on me, and he brought me out by the spirit of Yahweh” (Ezk 37:1; also 1:3; 3:14; 2Ki 3:15). Jesus’ words “if I by the finger of God cast out demons” (Luk 11:20) are in Matthew “by the spirit of God” (Mat 12:28). From the verses: hand, finger and spirit are scripture’s names for one thing, God’s own power put forth, and not for a person beside him.",
+      "topic": "hand-of-yahweh"
+    },
+    {
+      "evidence": [
+        {
+          "ref": "Dan.2.34",
+          "to": "Dan.2.35"
+        },
+        {
+          "ref": "Dan.2.44",
+          "to": "Dan.2.45"
+        },
+        {
+          "ref": "Isa.66.2"
+        },
+        {
+          "ref": "Act.7.48",
+          "to": "Act.7.50"
+        },
+        {
+          "ref": "Mrk.14.58"
+        },
+        {
+          "ref": "Heb.9.11"
+        },
+        {
+          "ref": "Heb.9.24"
+        },
+        {
+          "ref": "Col.2.11"
+        },
+        {
+          "ref": "2Co.5.1"
+        }
+      ],
+      "statement": "Nebuchadnezzar saw a stone “cut out not by hands” (Aramaic דִּי־לָא בִידַיִן) strike the image on its feet and become a mountain filling the whole earth; Daniel explains it as the kingdom the God of heaven will set up, which will break all these kingdoms and stand forever (Dan 2:34–35, 44–45). What men’s hands make, God does not need: “Has not my hand made all these things?” (Isa 66:2, quoted in Act 7:48–50). The New Testament keeps the contrast: the temple “not made with hands” Jesus would raise (Mrk 14:58), the greater tabernacle “not made with hands” and the holy place “not made with hands” Christ entered (Heb 9:11, 24), the circumcision “made without hands” (Col 2:11), the house “not made with hands, eternal in the heavens” (2Co 5:1). From the verses: the kingdom of Daniel 2 is God’s own work, not built by men, and it comes when Christ returns and breaks the kingdoms of men, as the stone strikes the image.",
+      "topic": "made-without-hands"
+    }
+  ],
+  "gloss": "hand, power, agency, side, share",
+  "id": "yd",
+  "note": "The noun for the hand shows y across the Semitic cognates. Its direct Hebrew index key is j.aq.aa, even where the morphology supplies no verbal root. Biblical Aramaic xb-style surface matching also counts some Hebrew forms under xj.aa.ad. The Syriac noun is SEDRA 74. The verb for giving thanks and confessing is under ידה in yadah.",
+  "root": "יד",
+  "status": "draft",
+  "summary": "יָד is the hand, and with it what a hand holds and does: power and possession (“given into your hand”), the one through whom a thing is done (“by the hand of Moses”, Num 10:13), a side or place, a share, a monument (2Sa 18:18), and Yahweh’s own hand, his power at work (Deu 26:8; Ezk 37:1). The Hebrew and Aramaic nouns retain the initial consonant in the cognate languages.",
+  "tags": [
+    "body",
+    "hand",
+    "power",
+    "agency"
+  ],
+  "updated": "2026-11-20",
+  "words": [
+    {
+      "bdb": [
+        "j.aq.aa"
+      ],
+      "cognate_ids": [
+        "ar-yad",
+        "akk-idu",
+        "uga-yd",
+        "phn-yd",
+        "gez-ed",
+        "arc-yeda"
+      ],
+      "gender": "f",
+      "gloss": "hand; power, control; agency (“by the hand of”); side; share; monument",
+      "greek": [
+        {
+          "evidence": [
+            {
+              "locator": "Psa.31.6, בְּיָדְךָ → χεῖράς; Psa.102.26, יָדֶיךָ → χειρῶν; Isa.65.2, יָדַי → χεῖράς; Jer.31.32, בְיָדָם → χειρὸς; χείρ renders יָד ×1239",
+              "source": "macula-lxx"
+            },
+            {
+              "note": "“Father, into your hands I commit my spirit”: Psa 31:6.",
+              "ref": "Luk.23.46",
+              "role": "defining"
+            },
+            {
+              "note": "“The heavens are the works of your hands”: Psa 102:26.",
+              "ref": "Heb.1.10"
+            },
+            {
+              "note": "“All day long I stretched out my hands to a disobedient people”: Isa 65:2.",
+              "ref": "Rom.10.21"
+            },
+            {
+              "note": "“In the day I took them by the hand to lead them out of Egypt”: Jer 31:32.",
+              "ref": "Heb.8.9"
+            },
+            {
+              "note": "“Did not my hand make all these things?”: Isa 66:2.",
+              "ref": "Act.7.50"
+            },
+            {
+              "note": "“A fearful thing to fall into the hands of the living God”; compare 2Sa 24:14.",
+              "ref": "Heb.10.31"
+            }
+          ],
+          "gloss": "hand",
+          "lemma": "χείρ"
+        }
+      ],
+      "lemma": "יָד",
+      "pos": "noun",
+      "senses": [
+        {
+          "definition": "The hand, or the arm with it: what a man reaches out with, takes, holds, lifts and lays on a thing.",
+          "evidence": [
+            {
+              "note": "“Lest he put forth his hand and take also of the tree of life.”",
+              "ref": "Gen.3.22",
+              "role": "defining"
+            },
+            {
+              "note": "The ground opened its mouth to receive Abel’s blood מִיָּדֶךָ, “from your hand”. Cain is addressed as the one who shed it.",
+              "ref": "Gen.4.11",
+              "role": "example"
+            },
+            {
+              "note": "“The voice is the voice of Jacob, but the hands are the hands of Esau”: the hands felt for their hair.",
+              "ref": "Gen.27.22",
+              "role": "defining"
+            },
+            {
+              "note": "When Moses held up his hand Israel prevailed; Aaron and Hur held up his hands until sunset.",
+              "ref": "Exo.17.11",
+              "role": "defining",
+              "to": "Exo.17.12"
+            },
+            {
+              "note": "Aaron lays his two hands on the head of the living goat.",
+              "ref": "Lev.16.21"
+            },
+            {
+              "note": "“Without you no man shall lift up his hand or his foot in all the land of Egypt.”",
+              "ref": "Gen.41.44"
+            },
+            {
+              "note": "“When you spread out your hands … your hands are full of blood.”",
+              "ref": "Isa.1.15"
+            },
+            {
+              "note": "Noah stretches out יָדוֹ, his hand, and takes the returning dove into the ark.",
+              "ref": "Gen.8.9",
+              "role": "defining"
+            }
+          ],
+          "gloss": "hand (the limb)",
+          "id": "hand-limb"
+        },
+        {
+          "definition": "What is “in the hand” of someone is in his power or keeping; to give into a hand is to hand over to his control, to deliver from a hand is to free from it.",
+          "evidence": [
+            {
+              "note": "Every beast and fish: “into your hand they are given.”",
+              "ref": "Gen.9.2",
+              "role": "defining"
+            },
+            {
+              "note": "Abram to Sarai: “Your maid is in your hand; do to her what is good in your eyes.”",
+              "ref": "Gen.16.6",
+              "role": "defining"
+            },
+            {
+              "note": "Yahweh gave them into the hand of plunderers and sold them into the hand of their enemies.",
+              "ref": "Jdg.2.14",
+              "role": "defining"
+            },
+            {
+              "note": "Blessed be Yahweh, who delivered you out of the hand of the Egyptians and out of the hand of Pharaoh.",
+              "ref": "Exo.18.10"
+            },
+            {
+              "note": "“I kill and I make alive … and there is none who delivers out of my hand.”",
+              "ref": "Deu.32.39",
+              "role": "defining"
+            },
+            {
+              "note": "“My times are in your hand; deliver me from the hand of my enemies.”",
+              "ref": "Psa.31.16",
+              "role": "defining"
+            },
+            {
+              "note": "“Into your hand I commit my spirit”, quoted by Jesus on the cross (Luk 23:46).",
+              "ref": "Psa.31.6"
+            },
+            {
+              "note": "“In his hand are the depths of the earth.”",
+              "ref": "Psa.95.4"
+            },
+            {
+              "note": "“My strength and the might of my hand have made me this wealth.”",
+              "ref": "Deu.8.17"
+            },
+            {
+              "note": "“Whatever your hand finds to do, do it with your strength.”",
+              "ref": "Ecc.9.10"
+            }
+          ],
+          "gloss": "power, control, possession",
+          "id": "hand-power"
+        },
+        {
+          "definition": "Yahweh’s hand is his power put forth: in delivering Israel and striking Egypt, in creation, and on a prophet, moving him to see and to speak.",
+          "evidence": [
+            {
+              "note": "“Yahweh brought us out of Egypt with a strong hand and an outstretched arm.”",
+              "ref": "Deu.26.8",
+              "role": "defining"
+            },
+            {
+              "note": "“The hand of Yahweh is on your cattle in the field”: the plague.",
+              "ref": "Exo.9.3"
+            },
+            {
+              "note": "“With a strong hand Yahweh brought you out of Egypt.”",
+              "ref": "Exo.13.9"
+            },
+            {
+              "note": "“Is the hand of Yahweh shortened?”: is his power too small to do it?",
+              "ref": "Num.11.23",
+              "role": "defining"
+            },
+            {
+              "note": "“The hand of Yahweh is not shortened, that it cannot save.”",
+              "ref": "Isa.59.1",
+              "role": "defining"
+            },
+            {
+              "note": "“All these things my hand made”, quoted by Stephen (Act 7:50).",
+              "ref": "Isa.66.2"
+            },
+            {
+              "note": "The word of Yahweh came to Ezekiel “and the hand of Yahweh was on him there”.",
+              "ref": "Ezk.1.3",
+              "role": "defining"
+            },
+            {
+              "note": "“The spirit lifted me up … and the hand of Yahweh was strong on me.”",
+              "ref": "Ezk.3.14"
+            },
+            {
+              "note": "“The hand of Yahweh was on me, and he brought me out by the spirit of Yahweh”: hand and spirit side by side.",
+              "ref": "Ezk.37.1",
+              "role": "defining"
+            },
+            {
+              "note": "When the minstrel played, “the hand of Yahweh came on him” and Elisha prophesied.",
+              "ref": "2Ki.3.15"
+            },
+            {
+              "note": "“Let us fall into the hand of Yahweh, for his mercies are many, but let me not fall into the hand of man.”",
+              "ref": "2Sa.24.14"
+            }
+          ],
+          "gloss": "the hand of Yahweh: his power at work",
+          "id": "hand-of-yahweh"
+        },
+        {
+          "definition": "בְּיַד with a person names the one through whom another acts or speaks: Yahweh commands by the hand of Moses, sends his word by the hand of the prophets.",
+          "evidence": [
+            {
+              "note": "They set out the first time “at the mouth of Yahweh by the hand of Moses”: Yahweh commands, Moses passes it on.",
+              "ref": "Num.10.13",
+              "role": "defining"
+            },
+            {
+              "note": "Aaron and his sons did all that Yahweh commanded by the hand of Moses.",
+              "ref": "Lev.8.36",
+              "role": "defining"
+            },
+            {
+              "note": "The statutes Yahweh gave on Mount Sinai by the hand of Moses.",
+              "ref": "Lev.26.46"
+            },
+            {
+              "note": "The commandments Yahweh commanded by the hand of Moses in the plains of Moab.",
+              "ref": "Num.36.13"
+            },
+            {
+              "ref": "Num.4.37"
+            },
+            {
+              "note": "Yahweh warned Israel “by the hand of all his prophets”.",
+              "ref": "2Ki.17.13",
+              "role": "defining"
+            },
+            {
+              "note": "The word of Yahweh came by the hand of Haggai the prophet.",
+              "ref": "Hag.1.1"
+            },
+            {
+              "note": "The burden of the word of Yahweh to Israel by the hand of Malachi.",
+              "ref": "Mal.1.1"
+            }
+          ],
+          "gloss": "by the hand of: through, by means of",
+          "id": "by-the-hand-of"
+        },
+        {
+          "definition": "What a man’s hand “reaches” or “finds” is what he can afford; the law fits the offering and the valuation to it.",
+          "evidence": [
+            {
+              "note": "“If his hand cannot reach to a lamb”, two turtledoves or two young pigeons.",
+              "ref": "Lev.5.7",
+              "role": "defining"
+            },
+            {
+              "note": "Two turtledoves or two young pigeons, “such as his hand can reach”.",
+              "ref": "Lev.14.22"
+            },
+            {
+              "note": "“If his hand has not found enough to give back to him”, the land stays with the buyer until the jubilee.",
+              "ref": "Lev.25.28",
+              "role": "defining"
+            },
+            {
+              "note": "The priest values the poor man “according to what the hand of the vower can reach”.",
+              "ref": "Lev.27.8"
+            }
+          ],
+          "gloss": "means, what one can afford",
+          "id": "hand-means"
+        },
+        {
+          "definition": "By likeness, the side of a thing or the place beside it: the bank of a river, the side of a road, a man’s own place in the camp or on the wall.",
+          "evidence": [
+            {
+              "note": "The Canaanite dwells by the sea and “on the hand of the Jordan”: along its side.",
+              "ref": "Num.13.29",
+              "role": "defining"
+            },
+            {
+              "note": "Pharaoh’s daughter’s maids walked “on the hand of the river”.",
+              "ref": "Exo.2.5"
+            },
+            {
+              "note": "“All the hand of the river Jabbok”: its whole side.",
+              "ref": "Deu.2.37"
+            },
+            {
+              "note": "Eli sat on a seat “by the hand of the road”, watching.",
+              "ref": "1Sa.4.13",
+              "role": "defining"
+            },
+            {
+              "note": "The tribes set out “each in his place (עַל־יָדוֹ)” by their standards.",
+              "ref": "Num.2.17",
+              "role": "defining"
+            },
+            {
+              "note": "“And at his hand (next to him) built the men of Jericho.”",
+              "ref": "Neh.3.2"
+            }
+          ],
+          "gloss": "side, edge; place",
+          "id": "hand-side"
+        },
+        {
+          "definition": "A portion counted out, and so, with a number, so many times over.",
+          "evidence": [
+            {
+              "note": "Benjamin’s portion was “five hands” more than any of theirs.",
+              "ref": "Gen.43.34",
+              "role": "defining"
+            },
+            {
+              "note": "A fifth to Pharaoh, “and four hands (parts) shall be yours” for seed and food.",
+              "ref": "Gen.47.24",
+              "role": "defining"
+            },
+            {
+              "note": "The king found them “ten hands”, ten times, better than all the magicians.",
+              "ref": "Dan.1.20",
+              "role": "defining"
+            },
+            {
+              "note": "Israel to Judah: “We have ten hands in the king.”",
+              "ref": "2Sa.19.44"
+            }
+          ],
+          "gloss": "share, part; times (in multiplying)",
+          "id": "hand-share"
+        },
+        {
+          "definition": "A pillar set up to keep a name in memory, called a hand.",
+          "evidence": [
+            {
+              "note": "Saul came to Carmel “and behold, he set up a hand for himself”.",
+              "ref": "1Sa.15.12",
+              "role": "defining"
+            },
+            {
+              "note": "Absalom set up a pillar, “for he said, I have no son to keep my name in remembrance; … it is called the hand of Absalom to this day.”",
+              "ref": "2Sa.18.18",
+              "role": "defining"
+            },
+            {
+              "note": "To the eunuchs who keep his covenant Yahweh gives “in my house and within my walls יָד וָשֵׁם, a hand and a name, better than sons and daughters”.",
+              "ref": "Isa.56.5",
+              "role": "defining"
+            }
+          ],
+          "gloss": "monument, memorial pillar",
+          "id": "hand-monument"
+        },
+        {
+          "definition": "The parts of a made thing that stick out or hold, as a hand does: the tenons of the tabernacle’s boards, the axles of the stands, the arms of a throne.",
+          "evidence": [
+            {
+              "note": "“Two hands for each board, joined one to another”: tenons.",
+              "ref": "Exo.26.17",
+              "role": "defining"
+            },
+            {
+              "note": "“The hands of the wheels were in the stand”: axles.",
+              "ref": "1Ki.7.32"
+            },
+            {
+              "note": "Solomon’s throne had “hands on either side of the seat, and two lions standing beside the hands”: arm-rests.",
+              "ref": "1Ki.10.19",
+              "role": "defining"
+            }
+          ],
+          "gloss": "tenon, axle, arm (of a thing)",
+          "id": "hand-parts"
+        }
+      ],
+      "summary": "About 1,600 uses. The hand itself; then what is in a man’s hand, his power and possession; the hand through which another acts; and by likeness a side, a share, a pillar, the tenons and arms of things. The noun has no verb of its own in Hebrew; the verb יָדָה in this entry may belong to another older root (see the root’s summary).",
+      "usage": {
+        "opposites": [],
+        "parallels": [
+          {
+            "evidence": [
+              {
+                "ref": "Deu.26.8",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.4.34"
+              }
+            ],
+            "lemma": "זְרוֹעַ",
+            "note": "“Arm”: a strong hand and an outstretched arm."
+          },
+          {
+            "evidence": [
+              {
+                "ref": "Psa.89.14",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.48.13"
+              }
+            ],
+            "lemma": "יָמִין",
+            "note": "“Right hand”, in the next line."
+          },
+          {
+            "evidence": [
+              {
+                "ref": "Ezk.37.1",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezk.3.14"
+              }
+            ],
+            "lemma": "רוּחַ",
+            "note": "The spirit of Yahweh beside his hand on the prophet."
+          },
+          {
+            "evidence": [
+              {
+                "ref": "Gen.41.44",
+                "role": "defining"
+              }
+            ],
+            "lemma": "רֶגֶל",
+            "note": "Hand and foot together: any movement at all."
+          }
+        ],
+        "phrases": [
+          {
+            "evidence": [
+              {
+                "ref": "Num.10.13",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.8.36"
+              },
+              {
+                "ref": "Num.36.13"
+              }
+            ],
+            "gloss": "by the hand of Moses: through Moses",
+            "phrase": "בְּיַד מֹשֶׁה"
+          },
+          {
+            "evidence": [
+              {
+                "ref": "Jdg.2.14",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.9.2"
+              }
+            ],
+            "gloss": "give into the hand of: hand over to",
+            "phrase": "נָתַן בְּיַד"
+          },
+          {
+            "evidence": [
+              {
+                "note": "“Anoint them and fill their hand and sanctify them, that they may serve me as priests.”",
+                "ref": "Exo.28.41",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.8.33"
+              },
+              {
+                "ref": "Jdg.17.5"
+              },
+              {
+                "note": "“Now you have filled your hand to Yahweh”: of the whole assembly.",
+                "ref": "2Ch.29.31"
+              }
+            ],
+            "gloss": "fill the hand: consecrate to priestly service",
+            "phrase": "מִלֵּא יָד"
+          },
+          {
+            "evidence": [
+              {
+                "note": "“The land which I lifted my hand to give to Abraham.”",
+                "ref": "Exo.6.8",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.14.30"
+              },
+              {
+                "note": "“I lift my hand to heaven and say, As I live forever.”",
+                "ref": "Deu.32.40"
+              },
+              {
+                "ref": "Ezk.20.5"
+              }
+            ],
+            "gloss": "lift the hand: swear",
+            "phrase": "נָשָׂא יָד"
+          },
+          {
+            "evidence": [
+              {
+                "note": "He lays his hand on the head of the burnt offering, and it is accepted for him to cover him.",
+                "ref": "Lev.1.4",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.16.21"
+              },
+              {
+                "note": "Moses lays his hands on Joshua.",
+                "ref": "Num.27.18",
+                "to": "Num.27.23"
+              },
+              {
+                "ref": "Deu.34.9"
+              }
+            ],
+            "gloss": "lean the hand on: lay a hand on an offering or a man",
+            "phrase": "סָמַךְ יָד"
+          },
+          {
+            "evidence": [
+              {
+                "note": "Israel went out of Egypt “with a high hand in the eyes of all the Egyptians”.",
+                "ref": "Num.33.3",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.14.8"
+              },
+              {
+                "note": "The soul who sins “with a high hand” blasphemes Yahweh and is cut off: presumptuous sin, against the unwitting sin of 15:27–29.",
+                "ref": "Num.15.30",
+                "role": "defining"
+              }
+            ],
+            "gloss": "with a high hand: openly, defiantly",
+            "phrase": "בְּיָד רָמָה"
+          },
+          {
+            "evidence": [
+              {
+                "ref": "Deu.4.34",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.26.8"
+              },
+              {
+                "ref": "Deu.5.15"
+              }
+            ],
+            "gloss": "a strong hand and an outstretched arm",
+            "phrase": "יָד חֲזָקָה וּזְרוֹעַ נְטוּיָה"
+          },
+          {
+            "evidence": [
+              {
+                "ref": "Isa.56.5",
+                "role": "defining"
+              }
+            ],
+            "gloss": "a hand and a name: a lasting memorial",
+            "phrase": "יָד וָשֵׁם"
+          }
+        ]
+      }
+    },
+    {
+      "bdb": [
+        "xj.aa.ad"
+      ],
+      "cognate_ids": [
+        "ar-yad",
+        "akk-idu",
+        "uga-yd",
+        "phn-yd",
+        "gez-ed",
+        "arc-yeda"
+      ],
+      "gender": "f",
+      "gloss": "hand; power",
+      "lang": "arc",
+      "lemma": "יַד",
+      "pos": "noun",
+      "root": "יד",
+      "senses": [
+        {
+          "id": "hand",
+          "definition": "The hand itself, and in Daniel’s dream a stone cut out “not by hands”.",
+          "evidence": [
+            {
+              "note": "Fingers of a man’s hand wrote on the wall; the king saw the palm of the hand that wrote.",
+              "ref": "Dan.5.5",
+              "role": "defining"
+            },
+            {
+              "ref": "Dan.5.24"
+            },
+            {
+              "note": "“A stone was cut out, not by hands (דִּי־לָא בִידַיִן)”, and struck the image.",
+              "ref": "Dan.2.34",
+              "role": "defining"
+            },
+            {
+              "note": "The stone cut from the mountain “not by hands”: the kingdom the God of heaven sets up (2:44).",
+              "ref": "Dan.2.45"
+            }
+          ],
+          "gloss": "hand",
+          "kin": [
+            "hand-limb"
+          ]
+        },
+        {
+          "id": "power-control-keeping",
+          "definition": "What is in someone’s hand is in his power or care.",
+          "evidence": [
+            {
+              "note": "Men, beasts and birds “he has given into your hand”.",
+              "ref": "Dan.2.38",
+              "role": "defining"
+            },
+            {
+              "note": "“Who is the god who will deliver you out of my hands?”",
+              "ref": "Dan.3.15",
+              "role": "defining"
+            },
+            {
+              "ref": "Dan.3.17"
+            },
+            {
+              "note": "“None can strike his hand or say to him, What are you doing?”",
+              "ref": "Dan.4.32",
+              "role": "defining"
+            },
+            {
+              "note": "“The God in whose hand is your breath.”",
+              "ref": "Dan.5.23"
+            },
+            {
+              "note": "He delivered Daniel “from the hand of the lions”.",
+              "ref": "Dan.6.28"
+            },
+            {
+              "note": "The holy ones “shall be given into his hand for a time, times and half a time”.",
+              "ref": "Dan.7.25"
+            },
+            {
+              "note": "The work prospers in their hands.",
+              "ref": "Ezr.5.8"
+            },
+            {
+              "ref": "Ezr.5.12"
+            },
+            {
+              "note": "“According to the law of your God which is in your hand.”",
+              "ref": "Ezr.7.14"
+            },
+            {
+              "ref": "Ezr.7.25"
+            },
+            {
+              "note": "Any king or people who “put out their hand” to alter the decree.",
+              "ref": "Ezr.6.12"
+            }
+          ],
+          "gloss": "power, control, keeping",
+          "kin": [
+            "hand-power"
+          ]
+        }
+      ],
+      "summary": "The Aramaic of Daniel and Ezra, as the Hebrew: the hand, and power over a thing."
+    },
+    {
+      "cognate_ids": [
+        "ar-yad",
+        "akk-idu",
+        "uga-yd",
+        "phn-yd",
+        "gez-ed",
+        "arc-yeda"
+      ],
+      "gender": "f",
+      "gloss": "hand; power",
+      "lang": "syc",
+      "lemma": "אִידָא",
+      "pos": "noun",
+      "root": "יד",
+      "senses": [
+        {
+          "id": "hand-power-2",
+          "definition": "The hand, and the power or keeping it stands for; with a negative, what no human hand made.",
+          "evidence": [
+            {
+              "note": "“Father, בִּאידַֿיכּ, into your hands, I commit my spirit”: Psa 31:6.",
+              "ref": "Luk.23.46",
+              "role": "defining"
+            },
+            {
+              "note": "“Has not אִידָֿא דִּילי, my hand, made all these?”: Isa 66:2.",
+              "ref": "Act.7.50",
+              "role": "defining"
+            },
+            {
+              "note": "“The heavens are the work of אִידַֿיכּ”: Psa 102:26.",
+              "ref": "Heb.1.10"
+            },
+            {
+              "note": "“No man shall snatch them out of my hand … out of my Father’s hand”, as none delivers out of Yahweh’s (Deu 32:39).",
+              "ref": "Jhn.10.28",
+              "role": "defining",
+              "to": "Jhn.10.29"
+            },
+            {
+              "note": "To fall בִּאידַֿוה_י, into the hands of the living God.",
+              "ref": "Heb.10.31"
+            },
+            {
+              "note": "A temple “made with hands” and another “not made with hands”, דּלָא עבִֿידֿ בִּאידַֿיָא.",
+              "ref": "Mrk.14.58"
+            },
+            {
+              "ref": "Heb.9.24"
+            }
+          ],
+          "gloss": "hand; power",
+          "kin": [
+            "hand-limb",
+            "hand-power",
+            "hand-of-yahweh"
+          ]
+        }
+      ],
+      "summary": "The Peshitta’s ܐܝܕܐ (ʾīdā), about 360 times, for χείρ, including where the New Testament quotes the Hebrew יָד."
+    }
+  ]
+}

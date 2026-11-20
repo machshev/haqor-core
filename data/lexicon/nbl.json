@@ -1,0 +1,1302 @@
+{
+  "id": "nbl",
+  "root": "נבל",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "tags": [
+    "withering",
+    "death",
+    "corpse",
+    "folly",
+    "disgrace",
+    "music",
+    "vessels",
+    "uncleanness",
+    "resurrection"
+  ],
+  "gloss": "wither, fade, fall; carcass, corpse; senseless, base fool; outrage; skin-jar, harp",
+  "summary": "The spelling נבל covers several groups of words. The verb is to wither and fade, as a leaf or flower does, and so to wear out and crumble away: “the grass dries up, the flower withers, but the word of our God will stand for ever” (Isa 40:8); its piel treats someone as base and vile. נְבֵלָה is a carcass or corpse, the beast that died of itself and makes unclean, the body of a man left unburied, and the dead body that will rise (Isa 26:19). נָבָל is the senseless, base man who disregards God, who “says in his heart, No God” (Psa 14:1), and נְבָלָה is his senseless outrage, the deed that “is not done in Israel”. נֵבֶל is a skin or jar for wine and a stringed instrument, the harp beside the כִּנּוֹר; how it joins the rest of the root is not shown.",
+  "words": [
+    {
+      "lemma": "נָבֵל",
+      "pos": "verb",
+      "gloss": "wither, fade, fall away; wear out; act senselessly; (piel) treat as vile, disgrace",
+      "bdb": [
+        "n.ao.aa"
+      ],
+      "summary": "Twenty-five times. The qal is the withering of leaves, flowers, grass and fruit, and so of the earth, of men and peoples, and even of a mountain; once it is to act as a נָבָל (Pro 30:32). The piel is to treat as vile. BDB files the forms under two verbs, נָבֵל “wither” and נָבַל “be senseless”, which the text's forms cannot be told apart by; they are taken here as one word, its senses grouped as the verses use them. Whether “be senseless” grew from “wither”, or the two are older roots in one spelling, the evidence does not yet show.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "wither, fade, fall; wear out; crumble; act senselessly",
+          "senses": [
+            {
+              "id": "wither-fade",
+              "gloss": "wither, fade and fall",
+              "definition": "Of a leaf, a flower, grass or fruit: to dry, lose its life and drop. Set beside יָבֵשׁ “dry up”, and against what stands and bears fruit.",
+              "cognate_ids": [
+                "arc-nivla-fig"
+              ],
+              "evidence": [
+                {
+                  "ref": "Isa.40.7",
+                  "role": "defining",
+                  "note": "“The grass dries up (יָבֵשׁ), the flower withers (נָבֵל), because the breath of Yahweh blows on it; surely the people is grass.”"
+                },
+                {
+                  "ref": "Isa.40.8",
+                  "role": "defining",
+                  "note": "“The grass dries up, the flower withers, but the word of our God will stand (יָקוּם) for ever.”"
+                },
+                {
+                  "ref": "1Pe.1.24",
+                  "to": "1Pe.1.25",
+                  "note": "Peter quotes Isa 40:6–8: “the grass withered and its flower fell off (ἐξέπεσεν), but the word of the Lord abides for ever.”"
+                },
+                {
+                  "ref": "Jas.1.10",
+                  "to": "Jas.1.11",
+                  "note": "The rich man passes away “as the flower of the grass”: the sun withers the grass “and its flower falls (ἐξέπεσεν)”, after Isa 40:7."
+                },
+                {
+                  "ref": "Psa.1.3",
+                  "role": "defining",
+                  "note": "The righteous man is a tree planted by streams of water, “and its leaf does not wither (לֹא יִבּוֹל)”."
+                },
+                {
+                  "ref": "Psa.37.2",
+                  "role": "defining",
+                  "note": "The evildoers “like grass soon wither (יִמָּלוּ), and like green herb fade (יִבּוֹלוּן)”."
+                },
+                {
+                  "ref": "Isa.1.30",
+                  "note": "“You shall be like an oak whose leaf withers (נֹבֶלֶת), and like a garden that has no water.”"
+                },
+                {
+                  "ref": "Isa.34.4",
+                  "role": "defining",
+                  "note": "“All their host will wither (יִבּוֹל) as the leaf withers from the vine, and as what withers (כְּנֹבֶלֶת) from the fig tree”: dry fruit dropping."
+                },
+                {
+                  "ref": "Rev.6.13",
+                  "to": "Rev.6.14",
+                  "note": "After Isa 34:4: the stars fall “as a fig tree casts its unripe figs”, and the heaven departs as a scroll rolled up."
+                },
+                {
+                  "ref": "Jer.8.13",
+                  "note": "“No grapes on the vine, no figs on the fig tree, and the leaf has withered (נָבֵל).”"
+                },
+                {
+                  "ref": "Ezk.47.12",
+                  "note": "By the river from the sanctuary, “its leaf will not wither (לֹא־יִבּוֹל), nor its fruit fail … and its leaf for healing.”"
+                },
+                {
+                  "ref": "Rev.22.2",
+                  "note": "The tree of life by the river, “the leaves of the tree for the healing of the nations”, after Ezk 47:12."
+                },
+                {
+                  "ref": "Isa.28.1",
+                  "note": "“The fading flower (צִיץ נֹבֵל) of his glorious beauty”: the crown of the drunkards of Ephraim."
+                },
+                {
+                  "ref": "Isa.28.4"
+                },
+                {
+                  "ref": "Isa.64.5",
+                  "role": "defining",
+                  "note": "“We all wither (וַנָּבֶל) like a leaf, and our iniquities, like the wind, carry us away.”"
+                },
+                {
+                  "ref": "Isa.24.4",
+                  "role": "defining",
+                  "note": "“The earth mourns (אָבְלָה), withers (נָבְלָה); the world languishes (אֻמְלְלָה), withers.”"
+                },
+                {
+                  "ref": "Psa.18.46",
+                  "note": "“Sons of the foreigner fade away, and come trembling out of their strongholds.”"
+                },
+                {
+                  "ref": "2Sa.22.46"
+                }
+              ]
+            },
+            {
+              "id": "wear-out",
+              "gloss": "wear out; crumble away",
+              "definition": "Of a man worn down by a load too heavy for him, or a mountain that falls and crumbles: to lose strength and come to nothing.",
+              "cognate_ids": [
+                "arc-nivla-fig"
+              ],
+              "evidence": [
+                {
+                  "ref": "Exo.18.18",
+                  "role": "defining",
+                  "note": "Jethro to Moses: “You will surely wear out (נָבֹל תִּבֹּל), both you and this people with you, for the thing is too heavy for you.”"
+                },
+                {
+                  "ref": "Job.14.18",
+                  "role": "defining",
+                  "note": "“A mountain falling (נוֹפֵל) crumbles away (יִבּוֹל), and the rock is moved from its place”: and so “you destroy the hope of man” (Job 14:19)."
+                }
+              ]
+            },
+            {
+              "id": "act-senselessly",
+              "gloss": "act as a fool, senselessly",
+              "definition": "To behave as a נָבָל: once, of lifting oneself up.",
+              "kin": [
+                "fool-godless"
+              ],
+              "evidence": [
+                {
+                  "ref": "Pro.30.32",
+                  "role": "defining",
+                  "note": "“If you have acted senselessly (נָבַלְתָּ) in lifting yourself up, or if you have planned evil, hand to mouth!”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "treat as vile, despise, disgrace",
+          "cognate_ids": [
+            "arc-nevel"
+          ],
+          "senses": [
+            {
+              "id": "treat-as-vile",
+              "gloss": "treat as base, despise; disgrace, make vile",
+              "definition": "To count and treat someone as worthless, a נָבָל: a people its Rock, a son his father; and of Yahweh, to make a city vile before the nations, or (prayed against) to disgrace his own throne.",
+              "kin": [
+                "fool-godless",
+                "outrage-in-israel"
+              ],
+              "evidence": [
+                {
+                  "ref": "Deu.32.15",
+                  "role": "defining",
+                  "note": "Jeshurun grew fat “and forsook God who made him, וַיְנַבֵּל the Rock of his salvation”: treated him as worthless."
+                },
+                {
+                  "ref": "Mic.7.6",
+                  "role": "defining",
+                  "note": "“For a son treats his father as vile (מְנַבֵּל), a daughter rises against her mother.”"
+                },
+                {
+                  "ref": "Mat.10.35",
+                  "to": "Mat.10.36",
+                  "note": "Jesus applies Mic 7:6 to the division his word brings: “a man's enemies will be those of his own house.”"
+                },
+                {
+                  "ref": "Nam.3.6",
+                  "role": "defining",
+                  "note": "Of Nineveh: “I will throw filth on you, וְנִבַּלְתִּיךְ, and make you a spectacle.”"
+                },
+                {
+                  "ref": "Jer.14.21",
+                  "note": "“Do not spurn us, for your name's sake; do not disgrace (אַל־תְּנַבֵּל) the throne of your glory.”"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἐκπίπτω",
+          "gloss": "fall off, drop",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Isa.40.7, “the flower withers (נָבֵל צִיץ)” → τὸ ἄνθος ἐξέπεσεν (aligned to צִיץ)"
+            },
+            {
+              "ref": "1Pe.1.24",
+              "role": "defining",
+              "note": "Quoting Isa 40:7: “the flower fell off (ἐξέπεσεν).”"
+            },
+            {
+              "ref": "Jas.1.11"
+            }
+          ]
+        },
+        {
+          "lemma": "ἀτιμάζω",
+          "gloss": "dishonour",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Mic.7.6, מְנַבֵּל → ἀτιμάζει"
+            },
+            {
+              "ref": "Jhn.8.49",
+              "note": "“I honour my Father, and you dishonour (ἀτιμάζετε) me.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "יָבֵשׁ",
+            "note": "“Dry up”: the grass dries, the flower withers.",
+            "evidence": [
+              {
+                "ref": "Isa.40.7",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.40.8"
+              }
+            ]
+          },
+          {
+            "lemma": "אָמַל",
+            "note": "“Languish”: the earth and the world withering.",
+            "evidence": [
+              {
+                "ref": "Isa.24.4",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "מָלַל",
+            "note": "“Wither, be cut off”: the evildoers like grass.",
+            "evidence": [
+              {
+                "ref": "Psa.37.2",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "קוּם",
+            "note": "“Stand”: the word of our God stands for ever while the flower withers.",
+            "evidence": [
+              {
+                "ref": "Isa.40.8",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "נְבֵלָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "carcass, corpse",
+      "bdb": [
+        "n.ao.ab"
+      ],
+      "cognate_ids": [
+        "arc-nevelta"
+      ],
+      "summary": "Forty-eight times: the dead body of a beast or a man. Of beasts it is above all the carcass that makes unclean, the beast that died of itself, set beside טְרֵפָה “torn”; of men, the body left unburied for birds and beasts, as the judgment on the wicked, and once the dead body that will rise (Isa 26:19). How it joins the verb's withering and falling is not stated in the text; the beast that “dies of itself” (Deu 14:21) is the nearest link.",
+      "senses": [
+        {
+          "id": "carcass-unclean",
+          "gloss": "carcass of a beast",
+          "definition": "The dead body of an animal, above all one that died of itself or was torn, not slain for food: whoever touches or carries it is unclean until evening, and Israel must not eat it.",
+          "tags": [
+            "uncleanness"
+          ],
+          "evidence": [
+            {
+              "ref": "Deu.14.21",
+              "role": "defining",
+              "note": "“You shall not eat any נְבֵלָה; you may give it to the sojourner in your gates … for you are a holy people to Yahweh your God.”"
+            },
+            {
+              "ref": "Lev.11.39",
+              "role": "defining",
+              "note": "“If any beast that you may eat dies, whoever touches its carcass (בְּנִבְלָתָהּ) shall be unclean until the evening.”"
+            },
+            {
+              "ref": "Lev.11.40"
+            },
+            {
+              "ref": "Lev.11.8",
+              "note": "“Of their flesh you shall not eat, and their carcasses you shall not touch.”"
+            },
+            {
+              "ref": "Lev.11.24",
+              "to": "Lev.11.28"
+            },
+            {
+              "ref": "Lev.11.35",
+              "to": "Lev.11.38"
+            },
+            {
+              "ref": "Lev.5.2",
+              "note": "Touching the carcass of an unclean beast, even unknowingly, makes one unclean and guilty."
+            },
+            {
+              "ref": "Lev.7.24",
+              "note": "“The fat of a נְבֵלָה and the fat of a טְרֵפָה may be used for any work, but you shall not eat it.”"
+            },
+            {
+              "ref": "Lev.17.15",
+              "role": "defining",
+              "note": "“Every soul that eats a נְבֵלָה or a טְרֵפָה … shall wash his clothes and bathe in water, and be unclean until the evening.”"
+            },
+            {
+              "ref": "Lev.22.8"
+            },
+            {
+              "ref": "Ezk.4.14",
+              "note": "“I have never eaten what died of itself (נְבֵלָה) or was torn.”"
+            },
+            {
+              "ref": "Ezk.44.31"
+            },
+            {
+              "ref": "Deu.14.8",
+              "note": "Of the pig: “of their flesh you shall not eat, and their carcasses you shall not touch.”"
+            },
+            {
+              "ref": "Jer.16.18",
+              "note": "Idols as carcasses: they defiled the land “with the carcasses of their detestable things”."
+            }
+          ]
+        },
+        {
+          "id": "corpse",
+          "gloss": "corpse, dead body",
+          "definition": "The dead body of a man, above all left unburied on the ground, as food for birds and beasts; under the curse; and once, of the dead who will rise.",
+          "tags": [
+            "death"
+          ],
+          "evidence": [
+            {
+              "ref": "1Ki.13.24",
+              "to": "1Ki.13.30",
+              "role": "defining",
+              "note": "The man of God's body thrown in the road with the lion standing by it; the old prophet lifted “the corpse (נִבְלַת) of the man of God” and buried it in his own grave."
+            },
+            {
+              "ref": "1Ki.13.22",
+              "note": "“Your corpse shall not come to the grave of your fathers.”"
+            },
+            {
+              "ref": "Deu.21.23",
+              "role": "defining",
+              "note": "“His body (נִבְלָתוֹ) shall not remain all night on the tree, but you shall surely bury him that day, for one hanged is cursed of God.”"
+            },
+            {
+              "ref": "Gal.3.13",
+              "note": "Paul quotes Deu 21:23 of Christ: “cursed is everyone who hangs on a tree.”"
+            },
+            {
+              "ref": "Jos.8.29",
+              "note": "The king of Ai's body taken down from the tree at sunset."
+            },
+            {
+              "ref": "Deu.28.26",
+              "role": "defining",
+              "note": "“Your corpse shall be food for every bird of the heavens and beast of the earth, and none shall frighten them away.”"
+            },
+            {
+              "ref": "Jer.7.33"
+            },
+            {
+              "ref": "Jer.16.4"
+            },
+            {
+              "ref": "Jer.19.7"
+            },
+            {
+              "ref": "Jer.34.20"
+            },
+            {
+              "ref": "Psa.79.2",
+              "note": "“They have given the dead bodies of your servants as food to the birds of the heavens.”"
+            },
+            {
+              "ref": "Jer.9.21"
+            },
+            {
+              "ref": "Jer.26.23",
+              "note": "Jehoiakim threw Uriah's body into the graves of the common people."
+            },
+            {
+              "ref": "Jer.36.30",
+              "note": "Jehoiakim's “dead body shall be cast out to the heat by day and the frost by night”."
+            },
+            {
+              "ref": "2Ki.9.37",
+              "note": "“The corpse of Jezebel shall be as dung on the face of the field.”"
+            },
+            {
+              "ref": "Isa.5.25",
+              "note": "“Their corpses were as refuse in the midst of the streets.”"
+            },
+            {
+              "ref": "Isa.26.19",
+              "role": "defining",
+              "note": "“Your dead shall live; my dead body (נְבֵלָתִי), they shall rise. Awake and sing, you who dwell in the dust.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "טְרֵפָה",
+            "note": "“What is torn” by beasts: named with the carcass as unclean food.",
+            "evidence": [
+              {
+                "ref": "Lev.17.15",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.7.24"
+              },
+              {
+                "ref": "Lev.22.8"
+              },
+              {
+                "ref": "Ezk.4.14"
+              },
+              {
+                "ref": "Ezk.44.31"
+              }
+            ]
+          },
+          {
+            "lemma": "מֵת",
+            "note": "“The dead”: your dead shall live, my dead body shall rise.",
+            "evidence": [
+              {
+                "ref": "Isa.26.19",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "נֵבֶל",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "skin-bottle, jar; harp",
+      "bdb": [
+        "n.am.ab",
+        "n.am.ac"
+      ],
+      "summary": "Forty times, in two senses: a skin or earthenware jar for wine, and a stringed instrument named beside the כִּנּוֹר in praise. BDB files them under two keys with the same tokens; here they are one word with two senses. Whether the instrument is named from a vessel's shape or its sounding body is not shown, and neither sense has a clear tie to the rest of the root. The brief's tokens at 2Sa 13:13 and Ezk 13:3 are the adjective נָבָל, filed here by spelling.",
+      "senses": [
+        {
+          "id": "skin-jar",
+          "gloss": "skin-bottle, jar",
+          "definition": "A vessel for wine: a skin carried on a donkey with bread and fruit, or an earthenware jar made by the potter, which shatters.",
+          "cognate_ids": [
+            "akk-nablu-vessel"
+          ],
+          "evidence": [
+            {
+              "ref": "1Sa.1.24",
+              "role": "defining",
+              "note": "Hannah brought Samuel up “with three bulls, an ephah of flour, and a skin of wine (וְנֵבֶל יַיִן)”."
+            },
+            {
+              "ref": "1Sa.10.3"
+            },
+            {
+              "ref": "1Sa.25.18",
+              "note": "Abigail took “two skins of wine” with bread and sheep and raisins."
+            },
+            {
+              "ref": "2Sa.16.1"
+            },
+            {
+              "ref": "Jer.13.12",
+              "role": "defining",
+              "note": "“Every jar (נֵבֶל) shall be filled with wine.”"
+            },
+            {
+              "ref": "Jer.48.12",
+              "note": "“They shall empty his vessels and break their jars (וְנִבְלֵיהֶם).”"
+            },
+            {
+              "ref": "Isa.30.14",
+              "role": "defining",
+              "note": "“As the breaking of a potters' jar (נֵבֶל יוֹצְרִים), smashed without pity, so that not a sherd is found among its pieces.”"
+            },
+            {
+              "ref": "Lam.4.2",
+              "role": "defining",
+              "note": "“The precious sons of Zion … how they are counted as earthen jars (לְנִבְלֵי־חֶרֶשׂ), the work of the hands of a potter!”"
+            },
+            {
+              "ref": "Isa.22.24",
+              "note": "“All the vessels of small size, from the bowls to all the jars (הַנְּבָלִים).”"
+            },
+            {
+              "ref": "Job.38.37",
+              "note": "“Who can tilt the water-skins (נִבְלֵי) of the heavens?”: the clouds as wineskins."
+            }
+          ]
+        },
+        {
+          "id": "harp",
+          "gloss": "harp, lyre",
+          "definition": "A stringed instrument, some of ten strings, made of wood and played in praise of Yahweh, with the prophets, at feasts, and by the Levites in the house of Yahweh; named beside the כִּנּוֹר.",
+          "tags": [
+            "music"
+          ],
+          "cognate_ids": [
+            "arc-nivla-lyre",
+            "syc-nabla",
+            "akk-nabalu-harp"
+          ],
+          "evidence": [
+            {
+              "ref": "Psa.33.2",
+              "role": "defining",
+              "note": "“Give thanks to Yahweh with the כִּנּוֹר; make music to him with the נֵבֶל of ten strings.”"
+            },
+            {
+              "ref": "Psa.144.9",
+              "role": "defining",
+              "note": "“On a נֵבֶל of ten strings I will make music to you.”"
+            },
+            {
+              "ref": "Psa.92.4",
+              "note": "“On ten strings and on the נֵבֶל, on the הִגָּיוֹן with the כִּנּוֹר.”"
+            },
+            {
+              "ref": "1Ki.10.12",
+              "role": "defining",
+              "note": "Solomon made of the almug wood “lyres and harps (וּנְבָלִים) for the singers”."
+            },
+            {
+              "ref": "2Ch.9.11"
+            },
+            {
+              "ref": "Psa.57.9",
+              "note": "“Awake, נֵבֶל and כִּנּוֹר; I will awake the dawn.”"
+            },
+            {
+              "ref": "Psa.108.3"
+            },
+            {
+              "ref": "Psa.71.22"
+            },
+            {
+              "ref": "Psa.81.3"
+            },
+            {
+              "ref": "Psa.150.3"
+            },
+            {
+              "ref": "1Sa.10.5",
+              "note": "A band of prophets coming down “with נֵבֶל, tambourine, flute and כִּנּוֹר”, prophesying."
+            },
+            {
+              "ref": "2Sa.6.5"
+            },
+            {
+              "ref": "1Ch.13.8"
+            },
+            {
+              "ref": "1Ch.15.16",
+              "role": "defining",
+              "note": "David told the chiefs of the Levites to appoint singers “with instruments of song, harps and lyres and cymbals”."
+            },
+            {
+              "ref": "1Ch.15.20"
+            },
+            {
+              "ref": "1Ch.15.28"
+            },
+            {
+              "ref": "1Ch.16.5"
+            },
+            {
+              "ref": "1Ch.25.1"
+            },
+            {
+              "ref": "1Ch.25.6"
+            },
+            {
+              "ref": "2Ch.5.12"
+            },
+            {
+              "ref": "2Ch.20.28"
+            },
+            {
+              "ref": "2Ch.29.25",
+              "note": "Hezekiah stationed the Levites “with cymbals, harps and lyres, according to the commandment of David … for the commandment was by the hand of Yahweh through his prophets”."
+            },
+            {
+              "ref": "Neh.12.27"
+            },
+            {
+              "ref": "Isa.5.12",
+              "note": "“The כִּנּוֹר and the נֵבֶל, the tambourine and the flute, and wine are at their feasts, but they do not regard the work of Yahweh.”"
+            },
+            {
+              "ref": "Isa.14.11",
+              "note": "Of the king of Babylon: “Your pride is brought down to the grave, the sound of your harps.”"
+            },
+            {
+              "ref": "Amo.5.23",
+              "note": "“Take away from me the noise of your songs; the music of your harps I will not hear.”"
+            },
+            {
+              "ref": "Amo.6.5"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "כִּנּוֹר",
+            "note": "The lyre: the other stringed instrument, named with the נֵבֶל in praise and at feasts.",
+            "evidence": [
+              {
+                "ref": "Psa.33.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.57.9",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.92.4"
+              },
+              {
+                "ref": "1Ki.10.12"
+              },
+              {
+                "ref": "Isa.5.12"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "נֵבֶל עָשׂוֹר",
+            "gloss": "harp of ten strings",
+            "evidence": [
+              {
+                "ref": "Psa.33.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.144.9"
+              }
+            ]
+          },
+          {
+            "phrase": "נֵבֶל יַיִן",
+            "gloss": "skin of wine",
+            "evidence": [
+              {
+                "ref": "1Sa.1.24",
+                "role": "defining"
+              },
+              {
+                "ref": "1Sa.10.3"
+              },
+              {
+                "ref": "2Sa.16.1"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "נָבָל",
+      "pos": "adjective",
+      "gloss": "senseless, base; a fool",
+      "bdb": [
+        "n.an.ab"
+      ],
+      "summary": "About eighteen times outside the name Nabal (1Sa 25), as adjective and noun. The נָבָל is not slow of mind but base and godless: he says there is no God, reproaches God's name, forgets the Father who made him, speaks folly and lets the hungry go empty. He is set against the wise (חָכָם) and the noble (נָדִיב), and beside the כְּסִיל and the man “of no name”.",
+      "senses": [
+        {
+          "id": "fool-godless",
+          "gloss": "senseless, base, godless fool",
+          "definition": "One who disregards God and what is right, and so acts basely toward men: a man, a people or a nation without understanding of the God who made them.",
+          "kin": [
+            "act-senselessly",
+            "treat-as-vile",
+            "folly"
+          ],
+          "evidence": [
+            {
+              "ref": "Psa.14.1",
+              "role": "defining",
+              "note": "“The נָבָל says in his heart, There is no God. They are corrupt, they do abominable deeds; there is none who does good.”"
+            },
+            {
+              "ref": "Psa.53.2"
+            },
+            {
+              "ref": "Rom.3.10",
+              "to": "Rom.3.12",
+              "note": "Paul quotes Psa 14:1–3 (Psa 53): “there is none righteous … none who seeks after God … none who does good”."
+            },
+            {
+              "ref": "Isa.32.5",
+              "role": "defining",
+              "note": "“The נָבָל shall no more be called noble (נָדִיב), nor the scoundrel said to be generous.”"
+            },
+            {
+              "ref": "Isa.32.6",
+              "role": "defining",
+              "note": "“For the נָבָל speaks folly (נְבָלָה), and his heart works iniquity, to practise godlessness and to speak error against Yahweh, to leave the hungry soul empty.”"
+            },
+            {
+              "ref": "Deu.32.6",
+              "role": "defining",
+              "note": "“Do you thus repay Yahweh, people נָבָל and not wise? Is he not your father who made you?”"
+            },
+            {
+              "ref": "Deu.32.21",
+              "role": "defining",
+              "note": "“I will provoke them with a no-people; with a נָבָל nation I will anger them.”"
+            },
+            {
+              "ref": "Rom.10.19",
+              "note": "Paul quotes Deu 32:21: “by a nation without understanding (ἀσυνέτῳ) I will anger you.”"
+            },
+            {
+              "ref": "Psa.74.18",
+              "role": "defining",
+              "note": "“The enemy has reproached Yahweh, and a נָבָל people has despised your name.”"
+            },
+            {
+              "ref": "Psa.74.22",
+              "note": "“Remember how the נָבָל reproaches you all the day.”"
+            },
+            {
+              "ref": "Psa.39.9",
+              "note": "“Do not make me the reproach of the נָבָל.”"
+            },
+            {
+              "ref": "Job.2.10",
+              "note": "Job to his wife: “You speak as one of the foolish women (הַנְּבָלוֹת) speaks. Shall we receive good from God and not evil?”"
+            },
+            {
+              "ref": "Job.30.8",
+              "note": "“Sons of the נָבָל, sons of no name (בְּלִי־שֵׁם), they were scourged out of the land.”"
+            },
+            {
+              "ref": "Pro.17.7",
+              "note": "“Excellent speech does not suit a נָבָל, much less lying lips a noble.”"
+            },
+            {
+              "ref": "Pro.17.21",
+              "note": "“He who begets a כְּסִיל does so to his grief, and the father of a נָבָל has no joy.”"
+            },
+            {
+              "ref": "Pro.30.22",
+              "note": "Among the things the earth cannot bear: “a נָבָל when he is filled with food”."
+            },
+            {
+              "ref": "2Sa.3.33",
+              "note": "David's lament: “Should Abner die as a נָבָל dies?”"
+            },
+            {
+              "ref": "2Sa.13.13",
+              "note": "Tamar to Amnon: “You would be as one of the נְבָלִים in Israel.”"
+            },
+            {
+              "ref": "Jer.17.11",
+              "note": "He who gets riches unjustly, “at his end he will be a נָבָל”."
+            },
+            {
+              "ref": "Luk.12.20",
+              "note": "“ἄφρων, this night your soul is required of you; then whose will these things be?”: the rich man of Jer 17:11's end."
+            },
+            {
+              "ref": "Ezk.13.3",
+              "note": "“Woe to the נָבָל prophets, who follow their own spirit and have seen nothing.”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἄφρων",
+          "gloss": "senseless, fool",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.14.1; Psa.53.2; Psa.39.9; Psa.74.18, 22; Job.2.10; Pro.17.7; Pro.30.22; Jer.17.11; 2Sa.13.13, נָבָל → ἄφρων ×10"
+            },
+            {
+              "ref": "Luk.12.20"
+            },
+            {
+              "ref": "Luk.11.40",
+              "note": "“Fools (ἄφρονες), did not he who made the outside make the inside also?”"
+            },
+            {
+              "ref": "1Co.15.36",
+              "note": "“Fool (ἄφρων), what you sow is not made alive unless it dies.”"
+            }
+          ]
+        },
+        {
+          "lemma": "ἀσύνετος",
+          "gloss": "without understanding",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Deu.32.21, בְּגוֹי נָבָל → ἐπ᾽ ἔθνει ἀσυνέτῳ"
+            },
+            {
+              "ref": "Rom.10.19",
+              "role": "defining",
+              "note": "Paul's quotation of Deu 32:21, of the nations through whom Israel is provoked."
+            }
+          ]
+        },
+        {
+          "lemma": "μωρός",
+          "gloss": "foolish",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Deu.32.6; Isa.32.5; Isa.32.6, נָבָל → μωρός"
+            },
+            {
+              "ref": "Mat.5.22",
+              "note": "“Whoever says, μωρέ, shall be liable to the valley of Hinnom's fire.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "כְּסִיל",
+            "note": "“Fool”: the father of each has no joy.",
+            "evidence": [
+              {
+                "ref": "Pro.17.21",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "בְּלִי־שֵׁם",
+            "note": "“Of no name”: the base and nameless men driven out of the land.",
+            "evidence": [
+              {
+                "ref": "Job.30.8",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "חָכָם",
+            "note": "“Wise”: a people נָבָל and not wise.",
+            "evidence": [
+              {
+                "ref": "Deu.32.6",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "נָדִיב",
+            "note": "“Noble, generous”: the נָבָל will no more be called noble.",
+            "evidence": [
+              {
+                "ref": "Isa.32.5",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.17.7"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "נְבָלָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "senseless outrage; folly, disgrace",
+      "bdb": [
+        "n.an.ad"
+      ],
+      "summary": "Thirteen times: what a נָבָל does or says. Above all the outrage “done in Israel” that the people must not tolerate: rape, fornication, adultery, the sacrilege of Achan, the crime of Gibeah. Also the folly of godless speech, and once what Yahweh would have done to Job's friends had he dealt with them as they deserved.",
+      "senses": [
+        {
+          "id": "outrage-in-israel",
+          "gloss": "outrage, disgraceful deed",
+          "definition": "A shameful act against God's order among his people, above all a sexual wrong, which “is not done in Israel” and is punished as such.",
+          "kin": [
+            "treat-as-vile"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.34.7",
+              "role": "defining",
+              "note": "Shechem “had done an outrage in Israel by lying with Jacob's daughter, and such a thing is not done”."
+            },
+            {
+              "ref": "2Sa.13.12",
+              "role": "defining",
+              "note": "Tamar: “No, my brother, do not humble me, for it is not done so in Israel; do not do this outrage.”"
+            },
+            {
+              "ref": "Deu.22.21",
+              "role": "defining",
+              "note": "The girl found not a virgin is stoned, “because she has done an outrage in Israel, to play the harlot in her father's house”."
+            },
+            {
+              "ref": "Jdg.19.23",
+              "to": "Jdg.19.24"
+            },
+            {
+              "ref": "Jdg.20.6",
+              "note": "“They have committed lewdness (זִמָּה) and outrage in Israel.”"
+            },
+            {
+              "ref": "Jdg.20.10"
+            },
+            {
+              "ref": "Jer.29.23",
+              "note": "Ahab and Zedekiah “have done outrage in Israel, and committed adultery with their neighbours' wives, and spoken lying words in my name”."
+            },
+            {
+              "ref": "Jos.7.15",
+              "role": "defining",
+              "note": "Achan “transgressed the covenant of Yahweh, and because he has done an outrage in Israel”."
+            }
+          ]
+        },
+        {
+          "id": "folly",
+          "gloss": "folly, senselessness",
+          "definition": "The senseless and godless speech or conduct that marks the נָבָל.",
+          "kin": [
+            "fool-godless"
+          ],
+          "evidence": [
+            {
+              "ref": "1Sa.25.25",
+              "role": "defining",
+              "note": "“As his name is, so is he: Nabal is his name, and נְבָלָה is with him.”"
+            },
+            {
+              "ref": "Isa.32.6",
+              "role": "defining",
+              "note": "“The נָבָל speaks נְבָלָה.”"
+            },
+            {
+              "ref": "Isa.9.16",
+              "note": "“Every one is godless and an evildoer, and every mouth speaks folly.”"
+            },
+            {
+              "ref": "Job.42.8",
+              "note": "Yahweh to Eliphaz: Job will pray for you, “lest I deal with you according to folly, for you have not spoken of me what is right”."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἀφροσύνη",
+          "gloss": "folly",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Deu.22.21; Jdg.19.23, 24; 1Sa.25.25; 2Sa.13.12, נְבָלָה → ἀφροσύνη"
+            },
+            {
+              "ref": "Mrk.7.22",
+              "note": "Among the evils that come out of the heart, with adulteries, fornications and lewdness: ἀφροσύνη."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "זִמָּה",
+            "note": "“Lewdness”: named with the outrage of Gibeah.",
+            "evidence": [
+              {
+                "ref": "Jdg.20.6",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "עָשָׂה נְבָלָה בְּיִשְׂרָאֵל",
+            "gloss": "do an outrage in Israel",
+            "evidence": [
+              {
+                "ref": "Gen.34.7",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.22.21"
+              },
+              {
+                "ref": "Jos.7.15"
+              },
+              {
+                "ref": "Jdg.20.6"
+              },
+              {
+                "ref": "Jdg.20.10"
+              },
+              {
+                "ref": "Jer.29.23"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "נַבְלוּת",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "shamelessness, disgrace",
+      "bdb": [
+        "n.an.ae"
+      ],
+      "summary": "Once, of Israel as an unfaithful wife: the shame that will be laid bare. The sense rests on this one verse and its kin נְבָלָה.",
+      "senses": [
+        {
+          "id": "shamelessness",
+          "gloss": "shamelessness, shameful state",
+          "definition": "The disgrace of the adulterous wife, uncovered before her lovers.",
+          "kin": [
+            "outrage-in-israel",
+            "treat-as-vile"
+          ],
+          "evidence": [
+            {
+              "ref": "Hos.2.12",
+              "role": "defining",
+              "note": "“Now I will uncover her נַבְלוּת in the sight of her lovers, and no one shall rescue her out of my hand.”"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-nivla-fig",
+      "lang": "arc",
+      "form": "נִבְלָא",
+      "translit": "niḇlā",
+      "gloss": "an inferior variety of figs (= Hebrew נוֹבֶלֶת, fruit that withers and drops)",
+      "relation": "cognate",
+      "note": "Jewish Aramaic, in the Targums of the very verses where the Hebrew has the qal of withering fruit: the fig that withers and falls.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. נִבְלָא II",
+          "note": "“= h. נוֹבֶלֶת, an inferior variety of figs. Targ. Jer. VIII, 13. Targ. Is. XXXIV, 4.”"
+        }
+      ]
+    },
+    {
+      "id": "arc-nevel",
+      "lang": "arc",
+      "form": "נְבֵל، נַבֵּל",
+      "translit": "nəḇēl, nabbēl",
+      "gloss": "be soiled; (pael) disgrace, make vile",
+      "relation": "cognate",
+      "note": "Jewish Aramaic: the Targum renders the Hebrew piel of Nah 3:6 with the same pael, “make vile”.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. נְבֵל (ch.)",
+          "note": "“to be soiled … Pa. to disgrace, make vile. Targ. Am. VI, 8. Targ. Nah. III, 6.”"
+        }
+      ]
+    },
+    {
+      "id": "arc-nevelta",
+      "lang": "arc",
+      "form": "נְבֵלְתָּא",
+      "translit": "nəḇēltā",
+      "gloss": "carcass, corpse",
+      "relation": "cognate",
+      "note": "Jewish Aramaic, in the Targum of Deu 21:23 for the hanged man's body.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. נְבֵלְתָּא",
+          "note": "“Targ. O. Deut. XXI, 23 נְבֵילְתֵּיה … his corpse. Targ. Lev. XXII, 8.” Pes. 113a: “flay a carcass in the street”."
+        }
+      ]
+    },
+    {
+      "id": "arc-nivla-lyre",
+      "lang": "arc",
+      "form": "נִבְלָא",
+      "translit": "niḇlā",
+      "gloss": "lyre, harp",
+      "relation": "cognate",
+      "note": "Jewish Aramaic, in the Targums for the Hebrew נֵבֶל; it may be the Hebrew word taken over.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. נֵבֶל (ch.), נִבְלָא I",
+          "note": "“lyre, nebel. Targ. Is. V, 12. Targ. O. Gen. IV, 21 … Pl. נִבְלִין. Targ. I Sam. X, 5. Targ. Is. XXII, 24.”"
+        }
+      ]
+    },
+    {
+      "id": "syc-nabla",
+      "lang": "syc",
+      "form": "ܢܒܠܐ",
+      "translit": "nablā",
+      "gloss": "nabla, a kind of harp",
+      "relation": "loan",
+      "note": "Borrowed into Syriac through Greek νάβλα, itself from the Hebrew נֵבֶל: evidence that the instrument was known by this name, not of the root's sense.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Classical Syriac ܢܒܠܐ, noun: nabla, kind of harp; from Ancient Greek νάβλα, from Hebrew נֵבֶל",
+          "url": "https://en.wiktionary.org/wiki/%DC%A2%DC%92%DC%A0%DC%90"
+        }
+      ]
+    },
+    {
+      "id": "akk-nabalu-harp",
+      "lang": "akk",
+      "form": "nabalu",
+      "translit": "nabalu",
+      "gloss": "harp (a stringed instrument)",
+      "relation": "possible",
+      "note": "Middle Babylonian, twice, in a lexical list; not followed to the tablets.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000013790, nabalu [harp] N; dcclt x0006067"
+        }
+      ]
+    },
+    {
+      "id": "akk-nablu-vessel",
+      "lang": "akk",
+      "form": "nablu",
+      "translit": "nablu",
+      "gloss": "a vessel (?)",
+      "relation": "possible",
+      "note": "Neo-Assyrian, four times; the meaning is not certain.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000139720, nablu [(a vessel?)] N"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "mortality",
+      "statement": "Isaiah says, “All flesh is grass … the grass dries up, the flower withers, because the breath of Yahweh blows on it; surely the people is grass. The grass dries up, the flower withers, but the word of our God will stand for ever” (Isa 40:6–8). The confession of the people is the same: “we all wither like a leaf” (Isa 64:5); the evildoers “like grass soon wither” (Psa 37:2); even a mountain falls and crumbles, “so you destroy the hope of man” (Job 14:18–19). Peter quotes Isaiah and says what lasts: believers are “born again, not of corruptible seed but incorruptible, through the word of God which lives and abides”, and “this is the word which was preached to you” (1Pe 1:23–25); James sets the rich man fading like the flower of the grass beside the crown of life promised to those who love God (Jas 1:10–12). From the verses: man as he is withers and dies like grass, with nothing in him that does not fade; what abides is God's word, and life that lasts comes to man through that word, believed and obeyed.",
+      "evidence": [
+        {
+          "ref": "Isa.40.6",
+          "to": "Isa.40.8"
+        },
+        {
+          "ref": "Isa.64.5"
+        },
+        {
+          "ref": "Psa.37.2"
+        },
+        {
+          "ref": "Job.14.18",
+          "to": "Job.14.19"
+        },
+        {
+          "ref": "1Pe.1.23",
+          "to": "1Pe.1.25"
+        },
+        {
+          "ref": "Jas.1.10",
+          "to": "Jas.1.12"
+        }
+      ]
+    },
+    {
+      "topic": "resurrection",
+      "statement": "Of the oppressors Isaiah says, “The dead shall not live, the רְפָאִים shall not rise; therefore you have visited and destroyed them, and made every memory of them perish” (Isa 26:14). Of Yahweh's own he says the opposite, in the word for a dead body: “Your dead shall live; my dead body (נְבֵלָתִי), they shall rise. Awake and sing, you who dwell in the dust” (Isa 26:19). The dead are in the dust, as man was told, “dust you are, and to dust you shall return” (Gen 3:19), and those who rise are those “sleeping in the dust of the earth” who “shall awake” (Dan 12:2). Jesus says the same: “all who are in the graves will hear his voice and come out” (Jhn 5:28–29), and Paul, “the dead will be raised incorruptible” (1Co 15:52). From the verses: hope for the dead is not a soul that lives on elsewhere but the dead body raised from the dust; and resurrection is promised to Yahweh's people, not to all, for of some it is said they shall not rise.",
+      "evidence": [
+        {
+          "ref": "Isa.26.14"
+        },
+        {
+          "ref": "Isa.26.19"
+        },
+        {
+          "ref": "Gen.3.19"
+        },
+        {
+          "ref": "Dan.12.2"
+        },
+        {
+          "ref": "Jhn.5.28",
+          "to": "Jhn.5.29"
+        },
+        {
+          "ref": "1Co.15.52"
+        }
+      ]
+    },
+    {
+      "topic": "folly-of-godlessness",
+      "statement": "The נָבָל of scripture is not one who lacks wit but one who leaves God out: he “says in his heart, There is no God”, and the same psalm goes on, “they are corrupt … there is none who does good” (Psa 14:1). His speech and his deeds follow from it: he “speaks folly, and his heart works iniquity, to practise godlessness and to speak error against Yahweh, to leave the hungry soul empty” (Isa 32:6). Israel itself was called “a people נָבָל and not wise” for repaying Yahweh, its father and maker, with corruption (Deu 32:5–6), and having made him jealous with no-gods, it was in turn provoked by a נָבָל nation (Deu 32:21), which Paul applies to the nations that received the gospel (Rom 10:19). Paul takes Psa 14 to show that Jew and Greek alike are under sin: “there is none righteous, no, not one; there is none who understands, none who seeks after God” (Rom 3:9–12). From the verses: folly in scripture's sense is moral and religious, the refusal of God, and every man by nature stands in it until he seeks God.",
+      "evidence": [
+        {
+          "ref": "Psa.14.1",
+          "to": "Psa.14.3"
+        },
+        {
+          "ref": "Psa.53.2"
+        },
+        {
+          "ref": "Isa.32.5",
+          "to": "Isa.32.6"
+        },
+        {
+          "ref": "Deu.32.5",
+          "to": "Deu.32.6"
+        },
+        {
+          "ref": "Deu.32.21"
+        },
+        {
+          "ref": "Rom.10.19"
+        },
+        {
+          "ref": "Rom.3.9",
+          "to": "Rom.3.12"
+        }
+      ]
+    }
+  ],
+  "note": "Words: the verb (BDB's two verbs נָבֵל “wither” n.ao.aa and נָבַל “be senseless” n.an.aa list the same 25 tokens, so the word names n.ao.aa only; the qal at Pro 30:32 and the piel are BDB's נָבַל). נֵבֶל skin-jar and נֵבֶל harp are likewise one token set under n.am.ab and n.am.ac; one word here with two senses, naming n.am.ab. The proper name נָבָל (n.an.ac) is in names/nabal.json. Left out: נְבַלָּט Neballat (n.ao.ac, Neh 11:34), a place name, whose tie to the root is unknown. Open questions: (1) Is “senseless, base” (נָבָל, נְבָלָה, the piel) one root with “wither” and “carcass”, or another root in the same spelling? No merged letter is involved, so sounds cannot decide it; the Aramaic “be soiled; make vile” (Jastrow) supports the piel and through kin the fool, while the figs of Targ. Jer 8:13 and the corpse support wither and carcass. (2) The harp and skin-jar have no tie to the rest; the Akkadian nabalu “harp” and nablu “vessel(?)” are recorded as possible only, not checked in CAD. Leads not followed: Klein's Arabic nabīla “corpse” and Akkadian nabultu “corpse” (not in the vendored Lane, whose art. نبل, p. 3027, gives only nabl “arrows” and nubl “sagacity, nobility”, neither sharing a sense; Lane's later volumes are thin here); Ugaritic nbl (DULAT not vendored); Payne Smith for any Syriac nbl verb (SEDRA has no NBL root and the brief finds no Peshitta use). Greek νάβλα/ναβλα in the Septuagint is a transliteration, not in the New Testament, and not recorded as a loan. Akkadian nābalu “dry land” is from abālu “dry”, not this root. 1Sa 25:25 plays on the name: “as his name is, so is he”. The harp headword n.am.ac is linked explicitly for Psalm 33:2. Its surface occurrences overlap the vessel heading n.am.ab."
+}

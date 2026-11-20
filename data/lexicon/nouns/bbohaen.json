@@ -1,0 +1,110 @@
+{
+  "id": "bbohaen",
+  "root": "בהנ",
+  "status": "draft",
+  "updated": "2026-11-18",
+  "tags": [],
+  "gloss": "thumb, big toe",
+  "summary": "Hebrew uses one word for the thumb of the hand and the big toe of the foot. The priestly rites name each in turn. Judges uses a single plural to cover both.",
+  "words": [
+    {
+      "lemma": "בֹּהֶן",
+      "pos": "noun",
+      "gender": "f",
+      "bdb": [
+        "b.am.ab"
+      ],
+      "gloss": "thumb, big toe",
+      "senses": [
+        {
+          "id": "first-digit",
+          "gloss": "thumb, big toe",
+          "definition": "The first digit of a hand or foot. The adjoining body-part noun identifies which is meant.",
+          "evidence": [
+            {
+              "ref": "Exo.29.20",
+              "role": "defining",
+              "note": "The ordination instructions pair the thumb of the right hand with the big toe of the right foot."
+            },
+            {
+              "ref": "Lev.8.23",
+              "role": "defining",
+              "note": "Moses marks both digits on Aaron."
+            },
+            {
+              "ref": "Lev.8.24",
+              "role": "defining",
+              "note": "Aaron’s sons receive the same markings."
+            },
+            {
+              "ref": "Lev.14.14",
+              "role": "defining",
+              "note": "The blood of the guilt offering is applied to both digits of the person being cleansed."
+            },
+            {
+              "ref": "Lev.14.17",
+              "role": "defining",
+              "note": "The priest applies oil over the blood on the hand and foot."
+            },
+            {
+              "ref": "Lev.14.25",
+              "role": "defining",
+              "note": "Blood goes on the same two digits in the provision for a poor worshipper."
+            },
+            {
+              "ref": "Lev.14.28",
+              "role": "defining",
+              "note": "The oil is applied to the places already marked with blood."
+            },
+            {
+              "ref": "Jdg.1.6",
+              "role": "defining",
+              "note": "Adoni-bezek’s captors cut off the digits of his hands and feet."
+            },
+            {
+              "ref": "Jdg.1.7",
+              "role": "defining",
+              "note": "He recalls inflicting the same injury on seventy kings."
+            }
+          ],
+          "cognate_ids": [
+            "ar-digit",
+            "akk-digit"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-digit",
+      "lang": "ar",
+      "form": "إِبْهَامٌ",
+      "translit": "ʾibhām",
+      "gloss": "thumb, big toe",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 269, n3459"
+        }
+      ]
+    },
+    {
+      "id": "akk-digit",
+      "lang": "akk",
+      "form": "ubānu",
+      "translit": "ubānu",
+      "gloss": "finger",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000005600"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "Kogan, Proto-Semitic Lexicon §6.3.1.2, cites the Ebla spelling ba-ʾà-núm (VE 499) and compares Mehri hābēn and Harsusi ḥābēn ‘thumb’. The Arabic word has final m where Hebrew has n. The Akkadian form denotes a finger more generally. The name Bohan occurs in Joshua’s boundary descriptions."
+}

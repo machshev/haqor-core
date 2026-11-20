@@ -1,0 +1,86 @@
+{
+  "id": "yxm",
+  "root": "ישמ",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "gloss": "desert",
+  "summary": "יְשִׁימוֹן denotes a desolate wilderness. The related יְשִׁימָה names a desolate place.",
+  "words": [
+    {
+      "lemma": "יְשִׁימוֹן",
+      "bdb": [
+        "j.dw.ac"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "desert",
+      "senses": [
+        {
+          "id": "desert",
+          "gloss": "desert",
+          "definition": "Yahweh goes before his people through the wilderness.",
+          "evidence": [
+            {
+              "ref": "Psa.68.8",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "יְשִׁימָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "desolate place",
+      "senses": [
+        {
+          "id": "desolate-place",
+          "gloss": "desolate place",
+          "definition": "A desolate place or wilderness.",
+          "evidence": [
+            {
+              "ref": "Psa.55.16",
+              "role": "defining",
+              "note": "The single written word ישימות can be understood as “desolations”. The read text divides it into a verb and מָוֶת, “death”."
+            }
+          ]
+        }
+      ],
+      "bdb": [
+        "j.dw.ab"
+      ]
+    },
+    {
+      "lemma": "יָשַׁם",
+      "bdb": [
+        "j.dw.aa"
+      ],
+      "pos": "verb",
+      "gloss": "be desolate",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "be desolate",
+          "senses": [
+            {
+              "id": "be-desolate",
+              "gloss": "be desolate",
+              "definition": "Land and cities become desolate when their fullness is removed or their inhabitants are judged.",
+              "evidence": [
+                {
+                  "ref": "Ezk.6.6",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Ezk.12.19"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "note": "Drafted for Psalm 68 coverage. The separate spelling formerly occupying shamem.json is kept here under ישמ."
+}

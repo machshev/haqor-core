@@ -1,0 +1,132 @@
+{
+  "id": "rkk",
+  "root": "רככ",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "gloss": "soft; gentle",
+  "summary": "רכך means to be soft or gentle. Psalm 55 contrasts soft words with a sword-like heart.",
+  "words": [
+    {
+      "lemma": "רָכַךְ",
+      "pos": "verb",
+      "gloss": "be soft; gentle",
+      "bdb": [
+        "t.cr.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "be soft",
+          "senses": [
+            {
+              "id": "be-soft",
+              "gloss": "be soft",
+              "definition": "To be soft or gentle in speech while concealing violence.",
+              "evidence": [
+                {
+                  "ref": "Psa.55.22",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "רַךְ",
+      "pos": "adjective",
+      "gloss": "tender; soft",
+      "bdb": [
+        "t.cr.ab"
+      ],
+      "senses": [
+        {
+          "id": "tender",
+          "gloss": "tender",
+          "definition": "Tender, delicate or soft in body, age or disposition.",
+          "evidence": [
+            {
+              "ref": "Gen.18.7",
+              "role": "defining"
+            },
+            {
+              "ref": "Gen.29.17"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "רֹךְ",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "softness",
+      "bdb": [
+        "t.cr.ac"
+      ],
+      "senses": [
+        {
+          "id": "softness",
+          "gloss": "softness",
+          "definition": "Tenderness or softness.",
+          "evidence": [
+            {
+              "ref": "Pro.15.1",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מֹרֶךְ",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "weakness",
+      "bdb": [
+        "t.cr.ad"
+      ],
+      "senses": [
+        {
+          "id": "weakness",
+          "gloss": "weakness",
+          "definition": "Weakness or faintness.",
+          "evidence": [
+            {
+              "ref": "Lev.26.36",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מֹרָךְ",
+      "pos": "verb",
+      "gloss": "be softened",
+      "bdb": [
+        "m.dm.aj"
+      ],
+      "stems": [
+        {
+          "stem": "niphal",
+          "gloss": "be softened",
+          "senses": [
+            {
+              "id": "be-softened",
+              "gloss": "be softened",
+              "definition": "To become softened or weak.",
+              "evidence": [
+                {
+                  "ref": "Ezk.21.15"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "note": "Drafted for Psalm 55 coverage."
+}

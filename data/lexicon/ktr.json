@@ -1,0 +1,112 @@
+{
+  "id": "ktr",
+  "root": "כתר",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-20",
+  "tags": [
+    "encircle",
+    "crown"
+  ],
+  "gloss": "surround, crown",
+  "summary": "To encircle is to close around someone. Psalm 22 pictures the bulls surrounding the sufferer.",
+  "words": [
+    {
+      "lemma": "כָּתַר",
+      "bdb": [
+        "k.dt.aa"
+      ],
+      "pos": "verb",
+      "gloss": "surround, crown",
+      "stems": [
+        {
+          "stem": "piel",
+          "gloss": "surround",
+          "senses": [
+            {
+              "id": "surround",
+              "gloss": "surround",
+              "definition": "The enemies surround the sufferer like bulls.",
+              "evidence": [
+                {
+                  "ref": "Psa.22.13",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "qal",
+          "gloss": "be patient",
+          "senses": [
+            {
+              "id": "be-patient",
+              "gloss": "be patient",
+              "definition": "The qal can mean waiting patiently.",
+              "evidence": [
+                {
+                  "ref": "Job.36.2",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "כֹּתֶרֶת",
+      "bdb": [
+        "k.dt.ac"
+      ],
+      "pos": "noun",
+      "gloss": "capital, crown molding",
+      "senses": [
+        {
+          "id": "capital-crown-molding",
+          "gloss": "capital, crown molding",
+          "definition": "The capital crowns a column and surrounds its top.",
+          "evidence": [
+            {
+              "ref": "1Ki.7.16",
+              "role": "defining"
+            },
+            {
+              "ref": "2Ch.4.12"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "כֶּתֶר",
+      "bdb": [
+        "k.dt.ab"
+      ],
+      "pos": "noun",
+      "gloss": "crown",
+      "senses": [
+        {
+          "id": "crown",
+          "gloss": "crown",
+          "definition": "A crown is placed on the head of a king.",
+          "evidence": [
+            {
+              "ref": "Est.2.17",
+              "role": "defining"
+            },
+            {
+              "ref": "Est.6.8"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    }
+  ],
+  "cognates": [],
+  "doctrine": [],
+  "note": " Added both sibling nouns in the brief."
+}

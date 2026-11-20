@@ -1,0 +1,313 @@
+{
+  "id": "n7t",
+  "root": "נחת",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "movement",
+    "descent"
+  ],
+  "gloss": "descend, bring down, press down",
+  "summary": "The construction in Psalm 18 is unusual. The corresponding line in Samuel again gives the arms and a bronze bow, supporting the sense of bringing the bow under tension.",
+  "words": [
+    {
+      "lemma": "נָחֵת",
+      "bdb": [
+        "n.cy.aa"
+      ],
+      "pos": "verb",
+      "gloss": "descend, press down",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "come down",
+          "senses": [
+            {
+              "id": "come-down",
+              "gloss": "come down",
+              "definition": "The sufferer feels Yahweh’s hand come down upon him. A rebuke goes deep into someone with understanding.",
+              "evidence": [
+                {
+                  "ref": "Psa.38.3",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Pro.17.10"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "sink in",
+          "senses": [
+            {
+              "id": "sink-in",
+              "gloss": "sink in",
+              "definition": "The speaker likens what he endures to arrows that have sunk into him.",
+              "evidence": [
+                {
+                  "ref": "Psa.38.3",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "press down",
+          "senses": [
+            {
+              "id": "bend-a-bow",
+              "gloss": "bend a bow",
+              "definition": "Both versions of David’s song connect the training of his hands with his arms bending a bronze bow.",
+              "evidence": [
+                {
+                  "ref": "Psa.18.35",
+                  "role": "defining"
+                },
+                {
+                  "ref": "2Sa.22.35"
+                }
+              ]
+            },
+            {
+              "id": "settle-ridges",
+              "gloss": "settle ridges",
+              "definition": "Rain settles the ridges of plowed land and softens them.",
+              "evidence": [
+                {
+                  "ref": "Psa.65.11",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "bring down",
+          "senses": [
+            {
+              "id": "bring-down",
+              "gloss": "bring down",
+              "definition": "Joel calls to Yahweh to bring his mighty ones down to the place where the nations gather.",
+              "evidence": [
+                {
+                  "ref": "Jol.4.11",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "syc-nhet"
+      ]
+    },
+    {
+      "lemma": "נַחַת",
+      "bdb": [
+        "n.cy.ab"
+      ],
+      "pos": "noun",
+      "gloss": "descent, downward stroke",
+      "senses": [
+        {
+          "id": "descent-downward-stroke",
+          "gloss": "descent, downward stroke",
+          "definition": "Isaiah couples the sound of Yahweh’s majestic voice with the descent of his arm in judgment.",
+          "evidence": [
+            {
+              "ref": "Isa.30.30",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "syc-nhet"
+      ]
+    },
+    {
+      "lemma": "נָחֵת",
+      "bdb": [
+        "n.cy.ac"
+      ],
+      "pos": "adjective",
+      "gloss": "descending",
+      "senses": [
+        {
+          "id": "descending",
+          "gloss": "descending",
+          "definition": "The man of God warns Israel’s king that the Arameans are coming down to a particular place.",
+          "evidence": [
+            {
+              "ref": "2Ki.6.9",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "syc-nhet"
+      ]
+    },
+    {
+      "lemma": "נְחֵת",
+      "bdb": [
+        "xn.ag.aa"
+      ],
+      "pos": "verb",
+      "gloss": "descend, set down",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "come down",
+          "senses": [
+            {
+              "id": "come-down-2",
+              "gloss": "come down",
+              "definition": "A holy watcher comes down from heaven in the king’s dream.",
+              "evidence": [
+                {
+                  "ref": "Dan.4.10",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Dan.4.20"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "aphel",
+          "gloss": "deposit",
+          "senses": [
+            {
+              "id": "deposit",
+              "gloss": "deposit",
+              "definition": "The temple vessels are to be taken back to Jerusalem and set down there.",
+              "evidence": [
+                {
+                  "ref": "Ezr.5.15",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Ezr.6.5"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "haphel",
+          "gloss": "deposit for storage",
+          "senses": [
+            {
+              "id": "deposit-for-storage",
+              "gloss": "deposit for storage",
+              "definition": "The search takes place where the treasures had been deposited in Babylon.",
+              "evidence": [
+                {
+                  "ref": "Ezr.6.1",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hophal",
+          "gloss": "be brought down",
+          "senses": [
+            {
+              "id": "be-brought-down",
+              "gloss": "be brought down",
+              "definition": "The king is deposed from his throne after he grows proud.",
+              "evidence": [
+                {
+                  "ref": "Dan.5.20",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "arc",
+      "cognate_ids": [
+        "syc-nhet"
+      ]
+    },
+    {
+      "lemma": "נחת",
+      "pos": "verb",
+      "gloss": "descend, take down",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "go down",
+          "senses": [
+            {
+              "id": "go-down",
+              "gloss": "go down",
+              "definition": "A royal official asks Jesus to come down and heal his son.",
+              "evidence": [
+                {
+                  "ref": "Jhn.4.47",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "aphel",
+          "gloss": "take down",
+          "senses": [
+            {
+              "id": "take-down",
+              "gloss": "take down",
+              "definition": "Paul recounts how Jesus was taken down from the tree and laid in a tomb.",
+              "evidence": [
+                {
+                  "ref": "Act.13.29",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "syc"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "syc-nhet",
+      "lang": "syc",
+      "form": "ܢܚܬ",
+      "translit": "nḥet",
+      "gloss": "descend",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "sedra",
+          "locator": "lexeme 1949, gloss 3411; John 4:47 and Acts 13:29"
+        }
+      ],
+      "sounds": {
+        "ח": "ḥ"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "The distinct noun נַחַת for rest shares the spelling. The exact grammatical construction of the bow line is less certain than its picture of strength gained through training."
+}

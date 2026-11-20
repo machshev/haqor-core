@@ -1,0 +1,179 @@
+{
+  "id": "6b7",
+  "root": "טבח",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "gloss": "slaughter",
+  "summary": "To slaughter or kill for sacrifice or judgment.",
+  "words": [
+    {
+      "lemma": "טִבְחָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "slaughter",
+      "bdb": [
+        "i.ac.ad"
+      ],
+      "senses": [
+        {
+          "id": "slaughter",
+          "gloss": "slaughter",
+          "definition": "The noun names a slaughter appointed for the faithful.",
+          "evidence": [
+            {
+              "ref": "Psa.44.23",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "טָבַח",
+      "pos": "verb",
+      "gloss": "slaughter",
+      "bdb": [
+        "i.ac.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "slaughter",
+          "senses": [
+            {
+              "id": "slaughter-2",
+              "gloss": "slaughter",
+              "definition": "The wicked draw the sword to slaughter the upright and poor.",
+              "evidence": [
+                {
+                  "ref": "Psa.37.14",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "טֶבַח",
+      "bdb": [
+        "i.ac.ab"
+      ],
+      "pos": "noun",
+      "gloss": "slaughter",
+      "senses": [
+        {
+          "id": "slaughter-3",
+          "gloss": "slaughter",
+          "definition": "Jeremiah pictures the doomed as sheep for a day of slaughter. In Proverbs a feast is prepared by slaughtering animals.",
+          "evidence": [
+            {
+              "ref": "Jer.12.3",
+              "role": "defining"
+            },
+            {
+              "ref": "Pro.9.2",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "טַבָּח",
+      "bdb": [
+        "i.ac.ae"
+      ],
+      "pos": "noun",
+      "gloss": "cook, guardsman",
+      "senses": [
+        {
+          "id": "cook-guardsman",
+          "gloss": "cook, guardsman",
+          "definition": "Samuel’s cook serves a reserved portion to Saul. In a court title the word denotes a member or officer of the royal guard.",
+          "evidence": [
+            {
+              "ref": "1Sa.9.23",
+              "role": "defining"
+            },
+            {
+              "ref": "Gen.39.1",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "טַבָחָה",
+      "bdb": [
+        "i.ac.af"
+      ],
+      "pos": "noun",
+      "gloss": "female cook",
+      "senses": [
+        {
+          "id": "female-cook",
+          "gloss": "female cook",
+          "definition": "Samuel warns that a king will take daughters to prepare perfumes, cook and bake.",
+          "evidence": [
+            {
+              "ref": "1Sa.8.13",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "מַטְבֵּחַ",
+      "bdb": [
+        "i.ac.ag"
+      ],
+      "pos": "noun",
+      "gloss": "place of slaughter",
+      "senses": [
+        {
+          "id": "place-of-slaughter",
+          "gloss": "place of slaughter",
+          "definition": "Isaiah calls for a place of slaughter to be prepared for the oppressor’s sons.",
+          "evidence": [
+            {
+              "ref": "Isa.14.21",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "טַבָּח",
+      "bdb": [
+        "xi.aa.ac"
+      ],
+      "pos": "noun",
+      "gloss": "royal guard",
+      "lang": "arc",
+      "senses": [
+        {
+          "id": "royal-guard",
+          "gloss": "royal guard",
+          "definition": "Arioch, chief of the king’s guards, goes out to execute the wise men of Babylon.",
+          "evidence": [
+            {
+              "ref": "Dan.2.14",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    }
+  ],
+  "note": "Drafted for Psalm 37 coverage."
+}

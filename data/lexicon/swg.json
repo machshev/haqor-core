@@ -1,0 +1,164 @@
+{
+  "id": "swg",
+  "root": "סוג",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "psalm-35"
+  ],
+  "gloss": "turn aside",
+  "summary": "turn aside in Psalm 35",
+  "words": [
+    {
+      "lemma": "סוּג",
+      "gloss": "turn aside",
+      "bdb": [
+        "o.am.aa"
+      ],
+      "pos": "verb",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "turn back",
+          "senses": [
+            {
+              "id": "turn-back",
+              "gloss": "turn back",
+              "definition": "The speaker disavows turning back from Yahweh. Elsewhere all have turned aside together.",
+              "evidence": [
+                {
+                  "ref": "Psa.80.19",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.53.4",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "draw back",
+          "senses": [
+            {
+              "id": "draw-back",
+              "gloss": "draw back",
+              "definition": "David asks that people pursuing him for harm retreat in disgrace. Saul’s sword is praised for never returning empty.",
+              "evidence": [
+                {
+                  "ref": "Psa.35.4",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.40.15",
+                  "role": "defining"
+                },
+                {
+                  "ref": "2Sa.1.22",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "move back",
+          "senses": [
+            {
+              "id": "move-back",
+              "gloss": "move back",
+              "definition": "Moving a neighbour’s boundary deprives him of inherited land.",
+              "evidence": [
+                {
+                  "ref": "Deu.19.14",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Deu.27.17",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hophal",
+          "gloss": "be driven back",
+          "senses": [
+            {
+              "id": "be-driven-back",
+              "gloss": "be driven back",
+              "definition": "Justice is pushed back while righteousness stands at a distance.",
+              "evidence": [
+                {
+                  "ref": "Isa.59.14",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "סִיג",
+      "bdb": [
+        "o.am.ac"
+      ],
+      "pos": "noun",
+      "gloss": "dross",
+      "senses": [
+        {
+          "id": "dross",
+          "gloss": "dross",
+          "definition": "Ezekiel compares the house of Israel to the dross left among metals in a furnace. The relation to drawing back is uncertain.",
+          "evidence": [
+            {
+              "ref": "Ezk.22.18",
+              "role": "defining"
+            },
+            {
+              "ref": "Ezk.22.19",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "סוּג",
+      "bdb": [
+        "o.an.aa"
+      ],
+      "pos": "verb",
+      "gloss": "fence in",
+      "stems": [
+        {
+          "stem": "pilpel",
+          "gloss": "fence in",
+          "senses": [
+            {
+              "id": "fence-in",
+              "gloss": "fence in",
+              "definition": "Isaiah describes tending a planting and fencing it in on the day it is planted.",
+              "evidence": [
+                {
+                  "ref": "Isa.17.11",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [],
+  "doctrine": [],
+  "note": "Drafted for Psalm 35 coverage."
+}

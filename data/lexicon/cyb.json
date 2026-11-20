@@ -1,0 +1,245 @@
+{
+  "id": "cyb",
+  "root": "שׂיב",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "tags": [
+    "age",
+    "old-age",
+    "gray-hair",
+    "elders"
+  ],
+  "gloss": "grow old; gray hair, old age; elder",
+  "summary": "שׂיב describes becoming old and the gray hair that marks old age. שֵׂיבָה is gray hair or old age, while the Aramaic שִׂיב is an elder. Scripture joins gray hair with a long life, honour and the hope of being kept alive to declare Yahweh's power (Gen 15:15; Psa 71:18; Pro 16:31).",
+  "words": [
+    {
+      "lemma": "שֵׂיבָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "gray hair; old age",
+      "bdb": [
+        "u.az.ac"
+      ],
+      "cognate_ids": [
+        "ar-shaba",
+        "akk-shibutu"
+      ],
+      "senses": [
+        {
+          "id": "gray-hair",
+          "gloss": "gray hair, gray head",
+          "definition": "The gray or white hair of age, spoken of as the visible honour and splendour of the old.",
+          "evidence": [
+            {
+              "ref": "Psa.71.18",
+              "role": "defining",
+              "note": "The psalmist asks not to be forsaken until old age and gray hair, while he declares Yahweh's arm to the coming generation."
+            },
+            {
+              "ref": "Pro.16.31",
+              "role": "defining",
+              "note": "Gray hair is a crown of splendour found on the way of righteousness."
+            },
+            {
+              "ref": "Pro.20.29",
+              "role": "defining",
+              "note": "Gray hair is the adornment of old men, set beside the strength of young men."
+            },
+            {
+              "ref": "Hos.7.9",
+              "note": "Gray hair is sprinkled on Ephraim, but he does not know it."
+            }
+          ]
+        },
+        {
+          "id": "old-age",
+          "gloss": "old age",
+          "definition": "The late part of a person's life, when the person is old and full of days.",
+          "evidence": [
+            {
+              "ref": "Gen.15.15",
+              "role": "defining",
+              "note": "Abraham is promised that he will go to his fathers in peace and be buried in good old age."
+            },
+            {
+              "ref": "Gen.25.8",
+              "role": "defining",
+              "note": "Abraham dies in a good old age, old and full of days."
+            },
+            {
+              "ref": "Rut.4.15",
+              "note": "The child will nourish Naomi in her old age."
+            },
+            {
+              "ref": "1Ki.2.9",
+              "note": "David speaks of bringing Shimei's gray hair down to the grave with blood."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שִׂיב",
+      "lang": "arc",
+      "pos": "noun",
+      "gloss": "elder, old man",
+      "bdb": [
+        "xu.ad.aa"
+      ],
+      "cognate_ids": [
+        "akk-shibu"
+      ],
+      "senses": [
+        {
+          "id": "elder",
+          "gloss": "elder",
+          "definition": "An old man recognized as an elder among the people.",
+          "evidence": [
+            {
+              "ref": "Ezr.5.5",
+              "role": "defining",
+              "note": "The elders of the Jews are watched by the eye of God while they build."
+            },
+            {
+              "ref": "Ezr.6.7",
+              "note": "The governor and elders of the Jews are to build the house of God."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שִׂיב",
+      "pos": "verb",
+      "gloss": "become gray-haired, grow old",
+      "bdb": [
+        "u.az.aa"
+      ],
+      "cognate_ids": [
+        "ar-shaba"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "become gray-haired, grow old",
+          "senses": [
+            {
+              "id": "grow-old",
+              "gloss": "grow old",
+              "definition": "To become gray-haired and old.",
+              "evidence": [
+                {
+                  "ref": "1Sa.12.2",
+                  "role": "defining",
+                  "note": "Samuel says he has grown old and gray-headed."
+                },
+                {
+                  "ref": "Job.15.10",
+                  "note": "The gray-haired and aged are named among the elders."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שֵׂיב",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "old age",
+      "bdb": [
+        "u.az.ab"
+      ],
+      "cognate_ids": [
+        "ar-shaba"
+      ],
+      "senses": [
+        {
+          "id": "old-age-2",
+          "gloss": "old age",
+          "definition": "Age advanced enough to impair the body.",
+          "evidence": [
+            {
+              "ref": "1Ki.14.4",
+              "role": "defining",
+              "note": "Ahijah could not see because of his age."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שָׂב",
+      "pos": "adjective",
+      "gloss": "gray-haired, old",
+      "bdb": [
+        "u.ab.ad"
+      ],
+      "cognate_ids": [
+        "ar-shaba"
+      ],
+      "senses": [
+        {
+          "id": "gray-haired",
+          "gloss": "gray-haired",
+          "definition": "Having gray hair from age.",
+          "evidence": [
+            {
+              "ref": "Job.15.10",
+              "role": "defining",
+              "note": "The gray-haired and aged are present among the speakers."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-shaba",
+      "lang": "ar",
+      "form": "شَابَ",
+      "translit": "shāba",
+      "gloss": "become gray-haired, grow old",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 1627, root شيب, شَابَ: became white-haired or hoary"
+        }
+      ]
+    },
+    {
+      "id": "akk-shibu",
+      "lang": "akk",
+      "form": "šību",
+      "translit": "šību",
+      "gloss": "elder, old man",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep/x000005370, šību: elder; old; old one; witness"
+        }
+      ]
+    },
+    {
+      "id": "akk-shibutu",
+      "lang": "akk",
+      "form": "šībūtu",
+      "translit": "šībūtu",
+      "gloss": "old age, status of elder",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep/x000018590, šībūtu: old age; status of elder"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "Added for the previously uncovered Psalm 71:18 word שֵׂיבָה. The root's other scriptural words are included from the brief. The Arabic and Akkadian cognates support gray hair, old age and elders.",
+  "created": "2026-11-19"
+}

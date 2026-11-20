@@ -1,0 +1,115 @@
+{
+  "id": "3ng",
+  "root": "ענג",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "gloss": "take delight",
+  "summary": "To delight oneself, especially in Yahweh.",
+  "words": [
+    {
+      "lemma": "עָנֹג",
+      "pos": "verb",
+      "gloss": "delight",
+      "bdb": [
+        "p.dr.aa"
+      ],
+      "stems": [
+        {
+          "stem": "hithpael",
+          "gloss": "take delight",
+          "senses": [
+            {
+              "id": "delight",
+              "gloss": "delight",
+              "definition": "The faithful are told to delight in Yahweh, who gives the desires of their heart.",
+              "evidence": [
+                {
+                  "ref": "Psa.37.4",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עֹנֶג",
+      "bdb": [
+        "p.dr.ab"
+      ],
+      "pos": "noun",
+      "gloss": "delight",
+      "senses": [
+        {
+          "id": "delight-2",
+          "gloss": "delight",
+          "definition": "Isaiah calls the sabbath a delight and speaks of palaces made for pleasure.",
+          "evidence": [
+            {
+              "ref": "Isa.58.13",
+              "role": "defining"
+            },
+            {
+              "ref": "Isa.13.22",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "עָנֹג",
+      "bdb": [
+        "p.dr.ac"
+      ],
+      "pos": "adjective",
+      "gloss": "delicate, accustomed to comfort",
+      "senses": [
+        {
+          "id": "delicate-accustomed-to-comfort",
+          "gloss": "delicate, accustomed to comfort",
+          "definition": "The curse describes a man and a woman so accustomed to comfort that privation brings out cruelty toward their own families.",
+          "evidence": [
+            {
+              "ref": "Deu.28.54",
+              "role": "defining"
+            },
+            {
+              "ref": "Deu.28.56",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "תַּעֲנוּג",
+      "bdb": [
+        "p.dr.ad"
+      ],
+      "pos": "noun",
+      "gloss": "luxury, cherished pleasure",
+      "senses": [
+        {
+          "id": "luxury-cherished-pleasure",
+          "gloss": "luxury, cherished pleasure",
+          "definition": "The king surrounds himself with the pleasures of the court. Micah calls children a parent’s delight as he describes their exile.",
+          "evidence": [
+            {
+              "ref": "Ecc.2.8",
+              "role": "defining"
+            },
+            {
+              "ref": "Mic.1.16",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    }
+  ],
+  "note": "Drafted for Psalm 37 coverage."
+}

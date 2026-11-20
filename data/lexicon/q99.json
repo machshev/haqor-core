@@ -1,0 +1,175 @@
+{
+  "id": "q99",
+  "root": "קצצ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [],
+  "gloss": "cut off, end",
+  "summary": "What is cut off has a definite limit. An interval ends when its allotted time has passed, and the end curtain is the one at the edge of a set.",
+  "words": [
+    {
+      "lemma": "קֵץ",
+      "pos": "noun",
+      "gloss": "end, appointed limit",
+      "bdb": [
+        "s.cv.ab"
+      ],
+      "gender": "m",
+      "senses": [
+        {
+          "id": "end-appointed-limit",
+          "gloss": "end, appointed limit",
+          "definition": "Israel leaves Egypt at the end of a counted period. The psalmist asks to know where his own days end.",
+          "evidence": [
+            {
+              "ref": "Exo.12.41",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.39.5",
+              "role": "defining"
+            },
+            {
+              "ref": "Dan.12.13",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קָצַץ",
+      "pos": "verb",
+      "gloss": "cut off",
+      "bdb": [
+        "s.cv.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "cut off",
+          "senses": [
+            {
+              "id": "cut-off",
+              "gloss": "cut off",
+              "definition": "The law prescribes severing a hand. Jeremiah describes clipped hair at the temples.",
+              "evidence": [
+                {
+                  "ref": "Deu.25.12",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jer.25.23",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "cut up, cut off",
+          "senses": [
+            {
+              "id": "cut-up-cut-off",
+              "gloss": "cut up, cut off",
+              "definition": "Gold is cut into strips for weaving. The victors sever Adoni-bezek’s thumbs and big toes.",
+              "evidence": [
+                {
+                  "ref": "Exo.39.3",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jdg.1.6",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be cut off",
+          "senses": [
+            {
+              "id": "be-cut-off",
+              "gloss": "be cut off",
+              "definition": "Adoni-bezek recalls kings whose thumbs and big toes had been severed.",
+              "evidence": [
+                {
+                  "ref": "Jdg.1.7",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-cut",
+        "arc-cut"
+      ]
+    },
+    {
+      "lemma": "קִיצוֹן",
+      "pos": "adjective",
+      "gloss": "outermost",
+      "bdb": [
+        "s.cv.ad"
+      ],
+      "senses": [
+        {
+          "id": "outermost",
+          "gloss": "outermost",
+          "definition": "The loops are attached to the edge of the last curtain in a joined set.",
+          "evidence": [
+            {
+              "ref": "Exo.26.4",
+              "role": "defining"
+            },
+            {
+              "ref": "Exo.26.10",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-cut",
+      "lang": "ar",
+      "form": "قَصَّ",
+      "translit": "qaṣṣa",
+      "gloss": "cut, clip",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 2526, قص"
+        }
+      ],
+      "sounds": {
+        "צ": "ṣ"
+      }
+    },
+    {
+      "id": "arc-cut",
+      "lang": "arc",
+      "form": "קְצַץ",
+      "translit": "qəṣaṣ",
+      "gloss": "cut",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "קְצַץ, S01837, Targum Deuteronomy 19:5"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "Emek Keziz in Joshua 18:21 is a place. The connection of that place-name to cutting remains uncertain."
+}

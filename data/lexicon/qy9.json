@@ -1,0 +1,168 @@
+{
+  "id": "qy9",
+  "root": "קיצ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "sleep",
+    "resurrection",
+    "seasons"
+  ],
+  "gloss": "awake, summer",
+  "summary": "David wakes after a night of sleep, while Daniel speaks of an awakening from the dust. The noun for summer can also denote the fruit gathered in that season.",
+  "words": [
+    {
+      "lemma": "קִיץ",
+      "bdb": [
+        "s.bl.aa"
+      ],
+      "pos": "verb",
+      "gloss": "awake",
+      "stems": [
+        {
+          "stem": "hiphil",
+          "gloss": "awake, rouse oneself",
+          "senses": [
+            {
+              "id": "wake-from-sleep",
+              "gloss": "wake from sleep",
+              "definition": "David wakes from sleep and credits Yahweh with sustaining him. Isaiah pictures a hungry dreamer waking to find himself still empty.",
+              "evidence": [
+                {
+                  "ref": "Psa.3.6",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Isa.29.8"
+                },
+                {
+                  "ref": "Jer.31.26"
+                },
+                {
+                  "ref": "Psa.17.15"
+                }
+              ]
+            },
+            {
+              "id": "awake-from-death",
+              "gloss": "awake from death",
+              "definition": "Daniel says that many sleepers in the dust will awake. Isaiah calls those who dwell in dust to awake and sing.",
+              "evidence": [
+                {
+                  "ref": "Dan.12.2",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Isa.26.19"
+                }
+              ]
+            },
+            {
+              "id": "rouse-oneself-to-act",
+              "gloss": "rouse oneself to act",
+              "definition": "The speaker calls on Yahweh to awake and take up his cause.",
+              "evidence": [
+                {
+                  "ref": "Psa.35.23",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.44.24"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "qal",
+          "gloss": "rouse oneself",
+          "senses": [
+            {
+              "id": "rouse-oneself",
+              "gloss": "rouse oneself",
+              "definition": "Habakkuk asks whether the creditors will rise and those who make the plunderer tremble will awake.",
+              "evidence": [
+                {
+                  "ref": "Hab.2.7",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קַיִץ",
+      "bdb": [
+        "s.bm.ab"
+      ],
+      "pos": "noun",
+      "gloss": "summer, summer fruit",
+      "senses": [
+        {
+          "id": "summer",
+          "gloss": "summer",
+          "definition": "Summer stands opposite winter. Ants prepare food in summer, when it is available.",
+          "evidence": [
+            {
+              "ref": "Gen.8.22",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.74.17"
+            },
+            {
+              "ref": "Pro.30.25"
+            }
+          ],
+          "cognate_ids": [
+            "ar-qayz"
+          ]
+        },
+        {
+          "id": "summer-fruit",
+          "gloss": "summer fruit",
+          "definition": "Amos sees a basket of summer fruit. Ziba brings summer fruit as food for the young men.",
+          "evidence": [
+            {
+              "ref": "Amo.8.1",
+              "to": "Amo.8.2",
+              "role": "defining"
+            },
+            {
+              "ref": "2Sa.16.1",
+              "to": "2Sa.16.2"
+            }
+          ],
+          "cognate_ids": [
+            "ar-qayz"
+          ]
+        }
+      ],
+      "gender": "m"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-qayz",
+      "lang": "ar",
+      "form": "قَيْظٌ",
+      "translit": "qayẓ",
+      "gloss": "intense summer heat",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2579, قيظ, n36484"
+        }
+      ],
+      "sounds": {
+        "צ": "ṯ̣"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "The Arabic seasonal noun gives a sound correspondence for summer. A historical connection with awakening is uncertain. The brief groups wall, Kir, Kish, Kishon and the plant in Jonah by dictionary position. Their consonants differ."
+}

@@ -1,0 +1,71 @@
+{
+  "cognates": [],
+  "created": "2026-11-20",
+  "doctrine": [],
+  "gloss": "hide, conceal",
+  "id": "7b2",
+  "note": "",
+  "root": "חבא",
+  "status": "draft",
+  "summary": "In the Hithpael and Niphal, חָבָא describes people hiding themselves from view. In Gen.3.8 the man and his wife hide among the garden trees, and in Gen.3.10 the man recounts that he hid.",
+  "tags": [
+    "concealment"
+  ],
+  "updated": "2026-11-20",
+  "words": [
+    {
+      "gloss": "hide, conceal",
+      "greek": [],
+      "lemma": "חָבָא",
+      "pos": "verb",
+      "stems": [
+        {
+          "gloss": "hide oneself",
+          "senses": [
+            {
+              "id": "hide-oneself",
+              "definition": "To take cover so as to remain unseen.",
+              "evidence": [
+                {
+                  "note": "The man and his wife are the ones who hide. מִפְּנֵי יַהְוֶה אֱלֹהִים names the one from whom they hide, and בְּתוֹךְ עֵץ הַגָּן identifies their hiding place.",
+                  "ref": "Gen.3.8",
+                  "role": "defining"
+                },
+                {
+                  "note": "The man explains that he was afraid because he was naked and says וָאֵחָבֵא, “and I hid.”",
+                  "ref": "Gen.3.10",
+                  "role": "defining"
+                }
+              ],
+              "gloss": "hide oneself"
+            }
+          ],
+          "stem": "hithpael"
+        },
+        {
+          "gloss": "hide oneself",
+          "senses": [
+            {
+              "id": "hide-oneself-2",
+              "definition": "To conceal oneself from view.",
+              "evidence": [
+                {
+                  "note": "The man explains that he was afraid because he was naked and says וָאֵחָבֵא, “and I hid.”",
+                  "ref": "Gen.3.10",
+                  "role": "defining"
+                }
+              ],
+              "gloss": "hide oneself"
+            }
+          ],
+          "stem": "niphal"
+        }
+      ],
+      "usage": {
+        "opposites": [],
+        "parallels": [],
+        "phrases": []
+      }
+    }
+  ]
+}

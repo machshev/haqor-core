@@ -1,0 +1,125 @@
+{
+  "id": "3nq",
+  "root": "ענק",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "gloss": "necklace, adorn the neck, furnish generously",
+  "summary": "A necklace hangs about the throat. Asaph gives pride that place on the wicked, alongside violence worn as clothing. Deuteronomy uses the verb for outfitting a released servant.",
+  "words": [
+    {
+      "lemma": "עָנַק",
+      "bdb": [
+        "p.eb.ad"
+      ],
+      "pos": "verb",
+      "gloss": "encircle the neck, furnish",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "encircle like a necklace",
+          "senses": [
+            {
+              "id": "encircle-like-a-necklace",
+              "gloss": "encircle like a necklace",
+              "definition": "Pride encircles the wicked as a necklace while violence covers them as a garment.",
+              "evidence": [
+                {
+                  "ref": "Psa.73.6",
+                  "role": "defining"
+                }
+              ]
+            }
+          ],
+          "cognate_ids": [
+            "arc-necklace"
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "furnish generously",
+          "senses": [
+            {
+              "id": "furnish-generously",
+              "gloss": "furnish generously",
+              "definition": "The departing servant is to receive liberally from the flock, threshing floor and winepress.",
+              "evidence": [
+                {
+                  "ref": "Deu.15.14",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עֲנָק",
+      "bdb": [
+        "p.eb.ac"
+      ],
+      "pos": "noun",
+      "gloss": "necklace",
+      "senses": [
+        {
+          "id": "necklace",
+          "gloss": "necklace",
+          "definition": "Parental teaching is compared to an ornament for the head and chains for the neck. The Midianite camels also wear neck ornaments.",
+          "evidence": [
+            {
+              "ref": "Pro.1.9",
+              "role": "defining"
+            },
+            {
+              "ref": "Jdg.8.26",
+              "role": "example"
+            },
+            {
+              "ref": "Sng.4.9",
+              "role": "example"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-necklace",
+        "ar-neck"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-necklace",
+      "lang": "arc",
+      "form": "עִנְקָא",
+      "translit": "ʿinqā",
+      "gloss": "neck, necklace",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. עִנְקָא, Targum Judges 8:21, 26"
+        }
+      ]
+    },
+    {
+      "id": "ar-neck",
+      "lang": "ar",
+      "form": "عُنُقٌ",
+      "translit": "ʿunuq",
+      "gloss": "neck",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 2175, art. عنق, n30791"
+        }
+      ],
+      "sounds": {
+        "ע": "ʿ"
+      }
+    }
+  ],
+  "note": "Aner in Gen 14:13 has a different final consonant. The relationship of the personal name Anak to a necklace is uncertain."
+}

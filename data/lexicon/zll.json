@@ -1,0 +1,167 @@
+{
+  "id": "zll",
+  "root": "זלל",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "worth",
+    "character"
+  ],
+  "gloss": "be of little account, vileness",
+  "summary": "Psalm 12 ends with what people prize. The wicked are free to walk about when people give honour to what is base.",
+  "words": [
+    {
+      "lemma": "זָלַל",
+      "bdb": [
+        "g.bl.aa"
+      ],
+      "pos": "verb",
+      "gloss": "be of little account, be profligate",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "be base or profligate",
+          "senses": [
+            {
+              "gloss": "be held cheap or despised",
+              "definition": "Jeremiah sets the precious against the worthless. Jerusalem appeals to Yahweh to see how despised she has become.",
+              "evidence": [
+                {
+                  "ref": "Jer.15.19",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Lam.1.11"
+                }
+              ],
+              "id": "base"
+            },
+            {
+              "id": "be-profligate-in-eating",
+              "gloss": "be profligate in eating",
+              "definition": "Parents accuse their rebellious son of gluttony and drunkenness. Proverbs warns against keeping company with those who gorge themselves.",
+              "evidence": [
+                {
+                  "ref": "Deu.21.20",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Pro.23.20",
+                  "to": "Pro.23.21"
+                },
+                {
+                  "ref": "Pro.28.7"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-dhalil"
+      ]
+    },
+    {
+      "lemma": "זֻלּוּת",
+      "bdb": [
+        "g.bl.ab"
+      ],
+      "pos": "noun",
+      "gloss": "vileness, worthlessness",
+      "senses": [
+        {
+          "id": "what-is-base",
+          "gloss": "what is base",
+          "definition": "The psalmist describes wicked people walking on every side as vileness is elevated among humankind.",
+          "evidence": [
+            {
+              "ref": "Psa.12.9",
+              "role": "defining"
+            }
+          ],
+          "kin": [
+            "base"
+          ]
+        }
+      ],
+      "gender": "f",
+      "cognate_ids": [
+        "ar-dhalil"
+      ]
+    },
+    {
+      "lemma": "זָלַל",
+      "bdb": [
+        "g.bk.aa"
+      ],
+      "pos": "verb",
+      "gloss": "quake",
+      "stems": [
+        {
+          "stem": "niphal",
+          "gloss": "quake or shake",
+          "senses": [
+            {
+              "id": "quake-or-shake",
+              "gloss": "quake or shake",
+              "definition": "Isaiah asks that the mountains quake before Yahweh and recalls that they quaked when he came down.",
+              "evidence": [
+                {
+                  "ref": "Isa.63.19",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Isa.64.2"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "זַלְזַל",
+      "bdb": [
+        "g.bk.ab"
+      ],
+      "pos": "noun",
+      "gloss": "tendril or shoot",
+      "senses": [
+        {
+          "id": "tendril-or-shoot",
+          "gloss": "tendril or shoot",
+          "definition": "The pruner cuts away the shoots just before the harvest.",
+          "evidence": [
+            {
+              "ref": "Isa.18.5",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-dhalil",
+      "lang": "ar",
+      "form": "ذَلِيلٌ",
+      "translit": "ḏalīl",
+      "gloss": "low, abased, contemptible",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 973, ذَلِيلٌ"
+        }
+      ],
+      "sounds": {
+        "ז": "ḏ"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "The Arabic comparison bears on low esteem. Isaiah’s quaking mountains and the shoots cut by the pruner have different senses, and their historical relationship to the word for worthlessness is uncertain."
+}

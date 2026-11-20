@@ -1,0 +1,123 @@
+{
+  "id": "d2h",
+  "root": "דאה",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "birds",
+    "movement"
+  ],
+  "gloss": "swoop, kite",
+  "summary": "The verb repeatedly describes a bird’s swift flight. The associated bird names occur in dietary lists and in a picture of wildlife inhabiting ruins.",
+  "words": [
+    {
+      "lemma": "דָּאָה",
+      "bdb": [
+        "d.ad.aa"
+      ],
+      "pos": "verb",
+      "gloss": "swoop, fly swiftly",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "fly swiftly",
+          "senses": [
+            {
+              "id": "fly-swiftly",
+              "gloss": "fly swiftly",
+              "definition": "Yahweh rides a cherub and moves on the wings of the wind. Elsewhere an eagle’s rapid approach illustrates an invader’s descent upon a country.",
+              "evidence": [
+                {
+                  "ref": "Psa.18.11",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Deu.28.49"
+                },
+                {
+                  "ref": "Jer.48.40"
+                },
+                {
+                  "ref": "Jer.49.22"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "דָּאָה",
+      "bdb": [
+        "d.ad.ab"
+      ],
+      "pos": "noun",
+      "gloss": "kite or similar bird of prey",
+      "senses": [
+        {
+          "id": "kite-or-similar-bird",
+          "gloss": "kite or similar bird of prey",
+          "definition": "The bird is named among those Israel must not eat, beside another group of birds of prey.",
+          "evidence": [
+            {
+              "ref": "Lev.11.13",
+              "to": "Lev.11.14",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "cognate_ids": [
+        "arc-dayeta"
+      ]
+    },
+    {
+      "lemma": "דַּיָּה",
+      "bdb": [
+        "d.ad.ac"
+      ],
+      "pos": "noun",
+      "gloss": "kite or similar bird of prey",
+      "senses": [
+        {
+          "id": "kite-or-similar-bird-2",
+          "gloss": "kite or similar bird of prey",
+          "definition": "Deuteronomy lists this bird and others of its kind. In Isaiah the birds gather in the abandoned land.",
+          "evidence": [
+            {
+              "ref": "Deu.14.13",
+              "role": "defining"
+            },
+            {
+              "ref": "Isa.34.15"
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "cognate_ids": [
+        "arc-dayeta"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-dayeta",
+      "lang": "arc",
+      "form": "דַּיְּיתָא",
+      "translit": "dayyətā",
+      "gloss": "bird of prey, kite",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "דַּיְּיתָא, Targum Leviticus 11:14 and Deuteronomy 14:13"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The Aramaic names support the identification of a bird of prey. The lists give too little description to identify a modern species with confidence."
+}

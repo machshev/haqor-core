@@ -1,0 +1,158 @@
+{
+  "id": "bls",
+  "created": "2026-11-19",
+  "root": "בלס",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "tags": [],
+  "gloss": "tend sycamore figs",
+  "summary": "When Amaziah challenges Amos at Bethel, Amos describes his work among the herds and the sycamore figs. The participle identifies his occupation.",
+  "words": [
+    {
+      "lemma": "בָּלַס",
+      "pos": "verb",
+      "bdb": [
+        "b.bx.ab"
+      ],
+      "gloss": "tend sycamore figs",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "tend sycamore figs",
+          "senses": [
+            {
+              "id": "tend",
+              "gloss": "tend sycamore figs",
+              "definition": "To work with the fruit of the sycamore fig tree.",
+              "evidence": [
+                {
+                  "ref": "Amo.7.14",
+                  "role": "defining",
+                  "note": "Amos calls himself a herdsman and a bōlēs of sycamore figs. In the next verse Yahweh calls him from following the flock."
+                }
+              ],
+              "cognate_ids": [
+                "gez-fig",
+                "ar-fig",
+                "tig-fig",
+                "tir-fig",
+                "amh-fig",
+                "arg-fig",
+                "sod-fig"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "gez-fig",
+      "lang": "gez",
+      "form": "በለስ",
+      "translit": "balas",
+      "gloss": "fig tree or its fruit",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "dillmann-1865",
+          "locator": "col. 487, በለስ"
+        },
+        {
+          "source": "bulakh-2014",
+          "locator": "p. 185, §2.28, MY-002 fol. 1rb, line 18"
+        }
+      ]
+    },
+    {
+      "id": "ar-fig",
+      "lang": "ar",
+      "form": "بَلَس",
+      "translit": "balas",
+      "gloss": "Yemeni Arabic fig, fig tree",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 325, n4261, under تِينٌ"
+        },
+        {
+          "source": "bulakh-2014",
+          "locator": "p. 185, §2.28, Piamenta 38 and Behnstedt 106"
+        }
+      ]
+    },
+    {
+      "id": "tig-fig",
+      "lang": "sem",
+      "form": "balas",
+      "translit": "balas",
+      "gloss": "Tigre fig tree",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "bulakh-2014",
+          "locator": "p. 185, §2.28, Littmann–Höfner 270"
+        }
+      ]
+    },
+    {
+      "id": "tir-fig",
+      "lang": "sem",
+      "form": "bäläs",
+      "translit": "bäläs",
+      "gloss": "Tigrinya fig, fig tree",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "bulakh-2014",
+          "locator": "p. 185, §2.28, Kane 1090"
+        }
+      ]
+    },
+    {
+      "id": "amh-fig",
+      "lang": "sem",
+      "form": "bäläs",
+      "translit": "bäläs",
+      "gloss": "Amharic fig, fig tree",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "bulakh-2014",
+          "locator": "p. 185, §2.28, Kane 862"
+        }
+      ]
+    },
+    {
+      "id": "arg-fig",
+      "lang": "sem",
+      "form": "bïläs",
+      "translit": "bïläs",
+      "gloss": "Argobba fig tree",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "bulakh-2014",
+          "locator": "p. 185, §2.28, Leslau 195"
+        }
+      ]
+    },
+    {
+      "id": "sod-fig",
+      "lang": "sem",
+      "form": "bïläs",
+      "translit": "bïläs",
+      "gloss": "Soddo fig tree",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "bulakh-2014",
+          "locator": "p. 185, §2.28, Leslau 142"
+        }
+      ]
+    }
+  ],
+  "note": "The nouns for figs in Ethiopic and Yemeni Arabic support understanding the Hebrew verb as formed from a fruit name. Whether Amos gathered the fruit or scored it to encourage ripening remains open. The object שִׁקְמִים identifies the trees he tended."
+}

@@ -1,0 +1,1709 @@
+{
+  "id": "3lh",
+  "created": "2026-11-08",
+  "root": "עלה",
+  "status": "reviewed",
+  "reviewed": "2026-11-08",
+  "updated": "2026-11-08",
+  "tags": [
+    "height",
+    "movement",
+    "offering",
+    "position",
+    "healing"
+  ],
+  "gloss": "go up, rise; bring up; on, above",
+  "summary": "עָלָה is upward movement: people ascend, water or smoke rises, and plants come up. The hiphil brings something up, including an offering presented on the altar; related words name an ascent, a step, an upper room, or what is high. עַל expresses being on or over something and extends to opposition, concern, and cause. Leaves, a pestle, a water-channel and healing remain in the family, without treating their links to rising as settled. Akkadian, Ugaritic, Phoenician, Arabic and Ge'ez share both the verb of going up and the preposition “on”; Ugaritic and Phoenician also use the verb for offering up a sacrifice, and Phoenician names the whole burnt offering ʿlt.",
+  "words": [
+    {
+      "lemma": "עַל",
+      "pos": "preposition",
+      "gloss": "on, over, against; concerning, because of",
+      "bdb": [
+        "p.cs.ar"
+      ],
+      "senses": [
+        {
+          "id": "on-upon-over",
+          "gloss": "on, upon, over",
+          "definition": "Mark position on a surface or above an object.",
+          "evidence": [
+            {
+              "ref": "Gen.1.2",
+              "role": "defining",
+              "note": "Darkness is over the face of the deep."
+            },
+            {
+              "ref": "Gen.22.9",
+              "role": "defining",
+              "note": "Abraham lays Isaac on the altar, on top of the wood."
+            }
+          ],
+          "cognate_ids": [
+            "ar-ala-prep",
+            "akk-eli",
+            "uga-al",
+            "phn-al",
+            "gez-laela"
+          ]
+        },
+        {
+          "id": "against",
+          "gloss": "against",
+          "definition": "Mark the person or object opposed, attacked, or treated as an adversary.",
+          "evidence": [
+            {
+              "ref": "Jer.48.42",
+              "role": "defining",
+              "note": "Moab has magnified himself against Yahweh."
+            }
+          ],
+          "cognate_ids": [
+            "ar-ala-prep",
+            "akk-eli",
+            "uga-al",
+            "phn-al"
+          ]
+        },
+        {
+          "id": "concerning-on-account-of",
+          "gloss": "concerning; on account of",
+          "definition": "Introduce the matter spoken about or the reason for an action.",
+          "evidence": [
+            {
+              "ref": "Gen.21.12",
+              "role": "defining",
+              "note": "Do not be distressed concerning the boy and your servant woman."
+            },
+            {
+              "ref": "Jer.5.9",
+              "role": "defining",
+              "note": "Shall I not punish on account of these things?"
+            }
+          ],
+          "cognate_ids": [
+            "ar-ala-prep",
+            "akk-eli",
+            "phn-al"
+          ]
+        },
+        {
+          "id": "upon-as-a-burden",
+          "gloss": "upon, as a burden or responsibility",
+          "definition": "Mark the one upon whom a burden, obligation, or consequence rests.",
+          "evidence": [
+            {
+              "ref": "Deu.26.6",
+              "role": "defining",
+              "note": "The Egyptians lay hard labor upon Israel."
+            },
+            {
+              "ref": "Jdg.19.20",
+              "role": "defining",
+              "note": "All your need is upon me."
+            }
+          ],
+          "cognate_ids": [
+            "ar-ala-prep",
+            "akk-eli",
+            "uga-al",
+            "phn-al"
+          ]
+        },
+        {
+          "id": "beside-at-toward",
+          "gloss": "beside, at, toward",
+          "definition": "Mark a location by something or a direction toward it; the precise relation depends on the construction.",
+          "evidence": [
+            {
+              "ref": "Gen.16.7",
+              "role": "defining",
+              "note": "The spring is by the road to Shur."
+            },
+            {
+              "ref": "2Sa.2.19",
+              "role": "defining",
+              "note": "Asahel does not turn to the right or left."
+            }
+          ],
+          "cognate_ids": [
+            "akk-eli",
+            "phn-al"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עָלָה",
+      "pos": "verb",
+      "gloss": "go up; bring up, offer",
+      "bdb": [
+        "p.cs.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "go up, rise",
+          "senses": [
+            {
+              "id": "go-up-ascend",
+              "gloss": "go up, ascend",
+              "definition": "Move from a lower place to a higher one, including a journey to higher ground.",
+              "evidence": [
+                {
+                  "ref": "Exo.19.3",
+                  "role": "defining",
+                  "note": "Moses goes up to God."
+                },
+                {
+                  "ref": "2Sa.15.30",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.68.19",
+                  "role": "defining"
+                }
+              ],
+              "cognate_ids": [
+                "ar-ala",
+                "akk-elu",
+                "uga-aly",
+                "phn-aly",
+                "gez-laala"
+              ]
+            },
+            {
+              "id": "rise-come-up",
+              "gloss": "rise, come up",
+              "definition": "Of water, smoke, fire, or growth, move or appear upward.",
+              "evidence": [
+                {
+                  "ref": "Gen.2.6",
+                  "role": "defining",
+                  "note": "Moisture comes up from the earth."
+                },
+                {
+                  "ref": "Jdg.13.20",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Isa.32.13",
+                  "role": "defining"
+                }
+              ],
+              "cognate_ids": [
+                "ar-ala",
+                "akk-elu",
+                "uga-aly",
+                "phn-aly",
+                "gez-laala"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "bring up, raise; offer",
+          "senses": [
+            {
+              "id": "bring-up-raise",
+              "gloss": "bring up, raise",
+              "definition": "Cause someone or something to ascend, or raise it to a higher position.",
+              "evidence": [
+                {
+                  "ref": "Exo.32.7",
+                  "role": "defining",
+                  "note": "The people whom Moses brought up from Egypt."
+                },
+                {
+                  "ref": "2Sa.6.15",
+                  "role": "defining"
+                }
+              ],
+              "cognate_ids": [
+                "ar-ala",
+                "akk-elu",
+                "uga-aly",
+                "phn-aly",
+                "gez-laala"
+              ]
+            },
+            {
+              "gloss": "offer on the altar",
+              "definition": "Present a sacrifice by making it go up on the altar.",
+              "evidence": [
+                {
+                  "ref": "Gen.8.20",
+                  "role": "defining",
+                  "note": "Noah offers burnt offerings on the altar."
+                },
+                {
+                  "ref": "Gen.22.2",
+                  "role": "defining"
+                }
+              ],
+              "id": "offer-up",
+              "kin": [
+                "burnt-offering"
+              ],
+              "cognate_ids": [
+                "akk-elu",
+                "uga-aly",
+                "phn-aly"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "rise, be lifted; withdraw",
+          "senses": [
+            {
+              "id": "be-lifted-be-exalted",
+              "gloss": "be lifted, be exalted",
+              "definition": "Be raised up or stand high.",
+              "evidence": [
+                {
+                  "ref": "Exo.40.36",
+                  "role": "defining",
+                  "note": "The cloud is lifted from over the Dwelling."
+                },
+                {
+                  "ref": "Psa.97.9",
+                  "role": "defining"
+                }
+              ],
+              "cognate_ids": [
+                "ar-ala",
+                "akk-elu",
+                "uga-aly",
+                "phn-aly",
+                "gez-laala"
+              ]
+            },
+            {
+              "id": "withdraw-lift-away",
+              "gloss": "withdraw, lift away",
+              "definition": "Move away from a place or from pursuit, with מֵעַל.",
+              "evidence": [
+                {
+                  "ref": "Jer.37.11",
+                  "role": "defining",
+                  "note": "The Chaldean army withdraws from Jerusalem."
+                },
+                {
+                  "ref": "2Sa.2.27",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hophal",
+          "gloss": "be brought up, be offered",
+          "senses": [
+            {
+              "id": "be-brought-up-or",
+              "gloss": "be brought up or offered",
+              "definition": "Be caused to go up; of a victim, be offered on an altar.",
+              "evidence": [
+                {
+                  "ref": "Jdg.6.28",
+                  "role": "defining",
+                  "note": "The bull has been offered on the newly built altar."
+                },
+                {
+                  "ref": "2Ch.20.34",
+                  "role": "defining",
+                  "note": "The account is brought into the book of Israel’s kings."
+                }
+              ],
+              "cognate_ids": [
+                "phn-aly"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpael",
+          "gloss": "raise oneself (uncertain)",
+          "senses": [
+            {
+              "id": "raise-oneself",
+              "gloss": "raise oneself",
+              "definition": "Rise or raise oneself in armor. The single form occurs in a difficult line whose negative particles and repeated verb also need review.",
+              "evidence": [
+                {
+                  "ref": "Jer.51.3",
+                  "role": "defining",
+                  "note": "יִתְעַל בְּסִרְיֹנוֹ, raise himself in his body armor."
+                }
+              ],
+              "cognate_ids": [
+                "ar-ala",
+                "akk-elu",
+                "gez-laala"
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἀναβαίνω",
+          "gloss": "go up, ascend",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.68.19 (LXX 67:19), עָלִיתָ → ἀνέβης"
+            },
+            {
+              "ref": "Eph.4.8"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "opposites": [
+          {
+            "lemma": "יָרַד",
+            "note": "Going up and going down are contrasted explicitly.",
+            "evidence": [
+              {
+                "ref": "Ecc.3.21",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "עֹלָה",
+      "pos": "noun",
+      "gloss": "burnt offering; ascent",
+      "bdb": [
+        "p.cs.ae"
+      ],
+      "senses": [
+        {
+          "gloss": "burnt offering",
+          "definition": "The offering burned on the altar, described as the whole being made to smoke.",
+          "evidence": [
+            {
+              "ref": "Lev.1.9",
+              "role": "defining",
+              "note": "The priest makes all of it smoke on the altar."
+            },
+            {
+              "ref": "Gen.8.20",
+              "role": "defining"
+            }
+          ],
+          "id": "burnt-offering",
+          "kin": [
+            "offer-up"
+          ],
+          "cognate_ids": [
+            "phn-alt"
+          ]
+        },
+        {
+          "id": "ascent-way-up",
+          "gloss": "ascent, way up",
+          "definition": "A means of ascent, including the steps by which a gate is reached.",
+          "evidence": [
+            {
+              "ref": "Ezk.40.26",
+              "role": "defining",
+              "note": "Seven steps are its ascents."
+            }
+          ],
+          "cognate_ids": [
+            "ar-ala",
+            "akk-melitu"
+          ]
+        }
+      ],
+      "gender": "f",
+      "greek": [
+        {
+          "lemma": "ὁλοκαύτωμα",
+          "gloss": "whole burnt offering",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.40.7 (LXX 39:7), עוֹלָה → ὁλοκαύτωμα"
+            },
+            {
+              "ref": "Heb.10.6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַעַל",
+      "pos": "adverb",
+      "gloss": "above, upward",
+      "bdb": [
+        "p.cs.am"
+      ],
+      "senses": [
+        {
+          "id": "above-upward",
+          "gloss": "above, upward",
+          "definition": "The higher region or direction, often with מִן or לְ.",
+          "evidence": [
+            {
+              "ref": "Gen.6.16",
+              "role": "defining",
+              "note": "The ark is finished to a cubit from above."
+            },
+            {
+              "ref": "Ecc.3.21",
+              "role": "defining",
+              "note": "The human spirit is described as going upward, לְמָעְלָה."
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-ala",
+        "akk-elenu",
+        "gez-laela"
+      ]
+    },
+    {
+      "lemma": "עָלֶה",
+      "pos": "noun",
+      "gloss": "leaf, foliage",
+      "bdb": [
+        "p.cs.ab"
+      ],
+      "senses": [
+        {
+          "id": "leaf-foliage",
+          "gloss": "leaf, foliage",
+          "definition": "The leafy part of a plant, picked, withering, or remaining green.",
+          "evidence": [
+            {
+              "ref": "Gen.3.7",
+              "role": "defining",
+              "note": "Fig leaves are sewn together."
+            },
+            {
+              "ref": "Gen.8.11",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.1.3",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "summary": "The leaf of a plant, including collected foliage. The verses do not tie it to going up; leaves grow up toward the light at the top of a tree, which may be the link. Arabic has a separate root with ġ, غلو, used of plants growing high and of a vine's leaves growing thick (ar-ghala): either it fits the same picture of growing upward, or two older roots have merged in this spelling.",
+      "cognate_ids": [
+        "ar-ghala"
+      ]
+    },
+    {
+      "lemma": "מַעֲלָה",
+      "pos": "noun",
+      "gloss": "step, ascent; what comes up",
+      "bdb": [
+        "p.cs.an"
+      ],
+      "senses": [
+        {
+          "id": "step-ascent",
+          "gloss": "step, ascent",
+          "definition": "A stair or means of ascent; also the ascent named in the titles of songs.",
+          "evidence": [
+            {
+              "ref": "Exo.20.26",
+              "role": "defining",
+              "note": "The altar must not be approached by steps."
+            },
+            {
+              "ref": "1Ki.10.20",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.121.1",
+              "role": "defining"
+            }
+          ],
+          "cognate_ids": [
+            "ar-ala",
+            "akk-melitu"
+          ]
+        },
+        {
+          "id": "what-comes-up-in",
+          "gloss": "what comes up in the mind",
+          "definition": "What rises or occurs in someone’s spirit, in this one figurative use.",
+          "evidence": [
+            {
+              "ref": "Ezk.11.5",
+              "role": "defining",
+              "note": "Yahweh knows the מַעֲלוֹת of their spirit."
+            }
+          ],
+          "cognate_ids": [
+            "ar-ala"
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "עֶלְיוֹן",
+      "pos": "adjective",
+      "gloss": "upper, highest; Most High",
+      "bdb": [
+        "p.cs.ai"
+      ],
+      "senses": [
+        {
+          "id": "upper-higher",
+          "gloss": "upper, higher",
+          "definition": "Situated above another object or part.",
+          "evidence": [
+            {
+              "ref": "Gen.40.17",
+              "role": "defining",
+              "note": "The uppermost basket holds food."
+            },
+            {
+              "ref": "2Ki.18.17",
+              "role": "defining"
+            }
+          ],
+          "cognate_ids": [
+            "ar-ala",
+            "akk-elitu"
+          ]
+        },
+        {
+          "id": "most-high",
+          "gloss": "Most High",
+          "definition": "An exalted title of God, expressing his supremacy.",
+          "evidence": [
+            {
+              "ref": "Gen.14.18",
+              "role": "defining",
+              "note": "Melchizedek is priest of אֵל עֶלְיוֹן."
+            },
+            {
+              "ref": "Psa.97.9",
+              "role": "defining"
+            }
+          ],
+          "cognate_ids": [
+            "ar-ala"
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "gez-leul"
+      ]
+    },
+    {
+      "lemma": "מַעֲלֶה",
+      "pos": "noun",
+      "gloss": "ascent, way up",
+      "bdb": [
+        "p.cs.al"
+      ],
+      "senses": [
+        {
+          "id": "ascent-upward-road",
+          "gloss": "ascent, upward road",
+          "definition": "The upward stretch of a route, or steps by which one ascends.",
+          "evidence": [
+            {
+              "ref": "Jos.10.10",
+              "role": "defining",
+              "note": "The ascent of Beth Horon is a route of pursuit."
+            },
+            {
+              "ref": "2Sa.15.30",
+              "role": "defining"
+            },
+            {
+              "ref": "Neh.9.4",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "ar-ala",
+        "akk-melu"
+      ]
+    },
+    {
+      "lemma": "עֲלִיָּה",
+      "pos": "noun",
+      "gloss": "upper room",
+      "bdb": [
+        "p.cs.ah"
+      ],
+      "senses": [
+        {
+          "id": "upper-room-upper-chamber",
+          "gloss": "upper room, upper chamber",
+          "definition": "A room above the ground floor; also used of God’s chambers above the waters.",
+          "evidence": [
+            {
+              "ref": "1Ki.17.19",
+              "role": "defining",
+              "note": "Elijah carries the child up into the room where he lives."
+            },
+            {
+              "ref": "2Ki.4.10",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.104.3",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "cognate_ids": [
+        "ar-ala",
+        "ar-ulliyya",
+        "phn-alt-chamber"
+      ]
+    },
+    {
+      "lemma": "תְּעָלָה",
+      "pos": "noun",
+      "gloss": "channel; healing",
+      "bdb": [
+        "p.cs.ap"
+      ],
+      "senses": [
+        {
+          "id": "channel-trench",
+          "gloss": "channel, trench",
+          "definition": "A channel made to hold or carry water.",
+          "evidence": [
+            {
+              "ref": "1Ki.18.35",
+              "role": "defining",
+              "note": "Water fills the trench around Elijah’s altar."
+            },
+            {
+              "ref": "2Ki.20.20",
+              "role": "defining"
+            },
+            {
+              "ref": "Job.38.25",
+              "role": "defining"
+            }
+          ]
+        },
+        {
+          "id": "healing-recovery",
+          "gloss": "healing, recovery",
+          "definition": "Restoration from a wound or sickness, denied to the one addressed.",
+          "evidence": [
+            {
+              "ref": "Jer.30.13",
+              "role": "defining",
+              "note": "No healing is available for the wound."
+            },
+            {
+              "ref": "Jer.46.11",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "summary": "A water-channel or trench, and in two passages healing or recovery. The contexts fix these meanings, but the relationship between them and the verb “go up” is unclear."
+    },
+    {
+      "lemma": "עִלִּי",
+      "pos": "adjective",
+      "gloss": "upper",
+      "bdb": [
+        "p.cs.ag"
+      ],
+      "senses": [
+        {
+          "id": "upper",
+          "gloss": "upper",
+          "definition": "Situated above another; both occurrences contrast upper and lower springs.",
+          "evidence": [
+            {
+              "ref": "Jos.15.19",
+              "role": "defining",
+              "note": "Upper springs are given along with lower springs."
+            },
+            {
+              "ref": "Jdg.1.15",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-ala",
+        "akk-elitu",
+        "gez-leul"
+      ]
+    },
+    {
+      "lemma": "עֱלִי",
+      "pos": "noun",
+      "gloss": "pestle",
+      "bdb": [
+        "p.cs.ac"
+      ],
+      "senses": [
+        {
+          "id": "pestle",
+          "gloss": "pestle",
+          "definition": "An implement with which something is pounded in a mortar.",
+          "evidence": [
+            {
+              "ref": "Pro.27.22",
+              "role": "defining",
+              "note": "The fool is imagined being pounded among grain with a pestle."
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "summary": "The pounding implement used with a mortar. The one verse establishes its use, but not a derivation from going up. Arabic files عَلَاة “anvil”, another pounding block, under its root of height (ar-alat).",
+      "cognate_ids": [
+        "ar-alat"
+      ]
+    },
+    {
+      "lemma": "מֹעַל",
+      "pos": "noun",
+      "gloss": "lifting up",
+      "bdb": [
+        "p.cs.ak"
+      ],
+      "senses": [
+        {
+          "id": "lifting",
+          "gloss": "lifting",
+          "definition": "The act or position of lifting the hands, in its single occurrence.",
+          "evidence": [
+            {
+              "ref": "Neh.8.6",
+              "role": "defining",
+              "note": "The people answer Amen with uplifted hands."
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "ar-ala"
+      ]
+    },
+    {
+      "lemma": "עַל",
+      "pos": "preposition",
+      "gloss": "on, over, concerning",
+      "bdb": [
+        "xp.af.aa"
+      ],
+      "senses": [
+        {
+          "id": "on-over",
+          "gloss": "on, over",
+          "definition": "Position on something, or authority over it.",
+          "evidence": [
+            {
+              "ref": "Dan.6.11",
+              "role": "defining",
+              "note": "Daniel kneels on his knees."
+            },
+            {
+              "ref": "Dan.2.48",
+              "role": "defining"
+            }
+          ]
+        },
+        {
+          "id": "concerning",
+          "gloss": "concerning",
+          "definition": "Introduce the matter about which an action is taken.",
+          "evidence": [
+            {
+              "ref": "Dan.2.18",
+              "role": "defining",
+              "note": "Mercy is sought concerning this mystery."
+            }
+          ]
+        }
+      ],
+      "lang": "arc",
+      "root": "על",
+      "cognate_ids": [
+        "ar-ala-prep",
+        "akk-eli",
+        "uga-al",
+        "phn-al",
+        "gez-laela"
+      ]
+    },
+    {
+      "lemma": "עֲלָת",
+      "pos": "noun",
+      "gloss": "burnt offering",
+      "bdb": [
+        "xp.ae.ab"
+      ],
+      "senses": [
+        {
+          "id": "burnt-offering-2",
+          "gloss": "burnt offering",
+          "definition": "An offering presented to God, in the supplies for temple worship.",
+          "evidence": [
+            {
+              "ref": "Ezr.6.9",
+              "role": "defining",
+              "note": "Bulls, rams and lambs are supplied for burnt offerings."
+            }
+          ],
+          "kin": [
+            "burnt-offering"
+          ]
+        }
+      ],
+      "lang": "arc",
+      "root": "עלת",
+      "gender": "f",
+      "cognate_ids": [
+        "phn-alt"
+      ]
+    },
+    {
+      "lemma": "עִלַּי",
+      "pos": "adjective",
+      "gloss": "Most High",
+      "bdb": [
+        "xp.ae.ac"
+      ],
+      "senses": [
+        {
+          "id": "most-high-2",
+          "gloss": "Most High",
+          "definition": "The title of God as supreme over human kingship.",
+          "evidence": [
+            {
+              "ref": "Dan.4.22",
+              "role": "defining",
+              "note": "The Most High rules over human kingship."
+            },
+            {
+              "ref": "Dan.4.29",
+              "role": "defining",
+              "note": "The same title is repeated in the announced judgment."
+            }
+          ]
+        }
+      ],
+      "lang": "arc",
+      "root": "עלי",
+      "cognate_ids": [
+        "ar-ala",
+        "gez-leul"
+      ]
+    },
+    {
+      "lemma": "עֶלְיוֹן",
+      "pos": "adjective",
+      "gloss": "Most High",
+      "bdb": [
+        "xp.ae.ad"
+      ],
+      "senses": [
+        {
+          "id": "most-high-3",
+          "gloss": "Most High",
+          "definition": "The plural title עֶלְיוֹנִין in expressions naming the holy ones of the Most High.",
+          "evidence": [
+            {
+              "ref": "Dan.7.18",
+              "role": "defining",
+              "note": "The holy ones of the Most High receive the kingdom."
+            },
+            {
+              "ref": "Dan.7.25",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "lang": "arc",
+      "root": "עליונ",
+      "cognate_ids": [
+        "ar-ala",
+        "gez-leul"
+      ]
+    },
+    {
+      "lemma": "עֲלִי",
+      "pos": "noun",
+      "gloss": "upper room",
+      "bdb": [
+        "xp.ae.ae"
+      ],
+      "senses": [
+        {
+          "id": "upper-room",
+          "gloss": "upper room",
+          "definition": "Daniel’s upper chamber, whose windows face Jerusalem.",
+          "evidence": [
+            {
+              "ref": "Dan.6.11",
+              "role": "defining",
+              "note": "The chamber is named as the place in which Daniel prays."
+            }
+          ]
+        }
+      ],
+      "lang": "arc",
+      "root": "עלי",
+      "gender": "f",
+      "cognate_ids": [
+        "ar-ala",
+        "ar-ulliyya",
+        "phn-alt-chamber"
+      ]
+    },
+    {
+      "lemma": "עִלָּא",
+      "pos": "adjective",
+      "gloss": "Most High",
+      "senses": [
+        {
+          "id": "most-high-4",
+          "gloss": "Most High",
+          "definition": "The title of God’s supremacy over human rule.",
+          "evidence": [
+            {
+              "ref": "Dan.4.14",
+              "role": "defining",
+              "note": "The living are to know that the Most High rules."
+            },
+            {
+              "ref": "Dan.7.25",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "lang": "arc",
+      "root": "עלא",
+      "cognate_ids": [
+        "ar-ala",
+        "gez-leul"
+      ],
+      "summary": "The emphatic form עִלָּאָה is written with א in these passages, beside עִלָּיָא in Daniel 4:22, 29."
+    },
+    {
+      "lemma": "עֵלָּא",
+      "pos": "adverb",
+      "gloss": "above",
+      "bdb": [
+        "xp.af.ab"
+      ],
+      "senses": [
+        {
+          "id": "above-over",
+          "gloss": "above, over",
+          "definition": "A higher position in authority, in its one occurrence.",
+          "evidence": [
+            {
+              "ref": "Dan.6.3",
+              "role": "defining",
+              "note": "Three chief officials are over the satraps."
+            }
+          ]
+        }
+      ],
+      "lang": "arc",
+      "root": "עלא",
+      "cognate_ids": [
+        "ar-ala",
+        "akk-elenu",
+        "gez-laela"
+      ]
+    },
+    {
+      "lemma": "עַל",
+      "pos": "preposition",
+      "gloss": "on, concerning",
+      "senses": [
+        {
+          "id": "on-upon",
+          "gloss": "on, upon",
+          "definition": "Mark position on a surface or object.",
+          "evidence": [
+            {
+              "ref": "Mat.3.4",
+              "role": "defining",
+              "note": "A leather belt is on John’s waist."
+            }
+          ]
+        },
+        {
+          "id": "concerning-because-of",
+          "gloss": "concerning, because of",
+          "definition": "Introduce the matter investigated or the occasion of grief.",
+          "evidence": [
+            {
+              "ref": "Mat.2.8",
+              "role": "defining",
+              "note": "Inquire carefully concerning the child."
+            },
+            {
+              "ref": "Mat.2.18",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "root": "על",
+      "cognate_ids": [
+        "ar-ala-prep",
+        "akk-eli",
+        "uga-al",
+        "phn-al",
+        "gez-laela"
+      ]
+    },
+    {
+      "lemma": "עַלָּא",
+      "pos": "verb",
+      "gloss": "be raised; exalt oneself",
+      "stems": [
+        {
+          "stem": "ethpaal",
+          "gloss": "be lifted, exalted",
+          "senses": [
+            {
+              "id": "be-raised-exalted",
+              "gloss": "be raised, exalted",
+              "definition": "Be lifted to a higher place or position.",
+              "evidence": [
+                {
+                  "ref": "Act.10.16",
+                  "role": "defining",
+                  "note": "The vessel is raised to heaven."
+                },
+                {
+                  "ref": "Luk.14.10",
+                  "role": "defining"
+                }
+              ],
+              "cognate_ids": [
+                "ar-ala",
+                "gez-laala"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "eshtaphal",
+          "gloss": "exalt oneself, boast",
+          "senses": [
+            {
+              "id": "exalt-oneself",
+              "gloss": "exalt oneself",
+              "definition": "Lift oneself above others or boast.",
+              "evidence": [
+                {
+                  "ref": "2Th.2.4",
+                  "role": "defining",
+                  "note": "The opponent exalts himself above all that is called God."
+                },
+                {
+                  "ref": "Jas.3.5",
+                  "role": "defining"
+                }
+              ],
+              "cognate_ids": [
+                "ar-ala",
+                "gez-laala"
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "root": "עלא"
+    },
+    {
+      "lemma": "עֶלָּיָא",
+      "pos": "adjective",
+      "gloss": "upper; Most High",
+      "senses": [
+        {
+          "id": "most-high-5",
+          "gloss": "Most High",
+          "definition": "God’s title of supremacy.",
+          "evidence": [
+            {
+              "ref": "Luk.1.32",
+              "role": "defining",
+              "note": "The child will be called Son of the Most High."
+            },
+            {
+              "ref": "Luk.1.35",
+              "role": "defining"
+            }
+          ]
+        },
+        {
+          "id": "upper-above",
+          "gloss": "upper, above",
+          "definition": "Located above, or in the upper regions.",
+          "evidence": [
+            {
+              "ref": "Act.19.1",
+              "role": "defining",
+              "note": "Paul passes through the upper regions."
+            },
+            {
+              "ref": "Gal.4.26",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "root": "עלא",
+      "cognate_ids": [
+        "ar-ala",
+        "gez-leul"
+      ]
+    },
+    {
+      "lemma": "עֶלִּיתָא",
+      "pos": "noun",
+      "gloss": "upper room",
+      "senses": [
+        {
+          "id": "upper-room-2",
+          "gloss": "upper room",
+          "definition": "A room above the ground floor, used for gathering or lodging.",
+          "evidence": [
+            {
+              "ref": "Mrk.14.15",
+              "role": "defining",
+              "note": "A large furnished upper room is shown to the disciples."
+            },
+            {
+              "ref": "Act.1.13",
+              "role": "defining"
+            },
+            {
+              "ref": "Act.20.8",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "root": "עלא",
+      "gender": "f",
+      "cognate_ids": [
+        "ar-ala",
+        "ar-ulliyya",
+        "phn-alt-chamber"
+      ]
+    },
+    {
+      "lemma": "עֲלָתָא",
+      "pos": "noun",
+      "gloss": "altar",
+      "senses": [
+        {
+          "id": "altar",
+          "gloss": "altar",
+          "definition": "A structure dedicated to a deity, here bearing an inscription.",
+          "evidence": [
+            {
+              "ref": "Act.17.23",
+              "role": "defining",
+              "note": "Paul finds an altar inscribed “To an unknown god”."
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "root": "עלא",
+      "gender": "f",
+      "summary": "An altar in its one occurrence. The form is retained with the offering-family, without using this one verse to reconstruct its derivation.",
+      "cognate_ids": [
+        "phn-alt"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-ala",
+      "lang": "ar",
+      "form": "عَلَا",
+      "translit": "ʿalā",
+      "gloss": "rise, ascend; be high or exalted",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "pp. 2142–2143, root علو, عَلَا (n30391); أَعْلَاهُ (n30394)"
+        }
+      ],
+      "sounds": {
+        "ע": "ʿ"
+      }
+    },
+    {
+      "id": "ar-ala-prep",
+      "lang": "ar",
+      "form": "عَلَى",
+      "translit": "ʿalā",
+      "gloss": "on, upon, over; against",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "pp. 2144–2146, root علو, عَلَى (n30407)"
+        }
+      ],
+      "sounds": {
+        "ע": "ʿ"
+      }
+    },
+    {
+      "id": "akk-elu",
+      "lang": "akk",
+      "form": "elû",
+      "translit": "elû",
+      "gloss": "go up, rise, climb; (causative) raise, bring up; dedicate, donate",
+      "relation": "cognate",
+      "note": "The ordinary Akkadian verb of going up, attested over four thousand times; its causative (ušēli) makes something go up, and Oracc's senses for it include “dedicate” and “donate”, as the hiphil of עָלָה makes an offering go up.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000003100, elû [go up] V"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000600 ʿly [rise], AKK002295 elû [go up]"
+        }
+      ]
+    },
+    {
+      "id": "akk-eli",
+      "lang": "akk",
+      "form": "eli",
+      "translit": "eli",
+      "gloss": "on, upon, over; against; concerning, on account of; incumbent on; more than; towards",
+      "relation": "cognate",
+      "note": "The preposition covers the same range as עַל: position on or over, opposition, the matter concerned, and what rests on someone as a duty.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000006180, eli [on] PRP"
+        }
+      ]
+    },
+    {
+      "id": "akk-elenu",
+      "lang": "akk",
+      "form": "elēnu",
+      "translit": "elēnu",
+      "gloss": "above, over",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000023640, elēnu [above]"
+        }
+      ]
+    },
+    {
+      "id": "akk-elitu",
+      "lang": "akk",
+      "form": "elītu",
+      "translit": "elītu",
+      "gloss": "that which is above, upper part; upper garment",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000008570, elītu [that which is above]; atae x000002640, elītu [upper (garment)]"
+        }
+      ]
+    },
+    {
+      "id": "akk-melu",
+      "lang": "akk",
+      "form": "mēlû",
+      "translit": "mēlû",
+      "gloss": "height",
+      "relation": "cognate",
+      "note": "A noun with prefixed m-, built as מַעֲלֶה is.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000013000, mēlû [height] N"
+        }
+      ]
+    },
+    {
+      "id": "akk-melitu",
+      "lang": "akk",
+      "form": "mēlītu",
+      "translit": "mēlītu",
+      "gloss": "step",
+      "relation": "cognate",
+      "note": "The feminine of the same m-noun, meaning “step”, as מַעֲלָה is a step.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000136680, mēlītu [step]"
+        }
+      ]
+    },
+    {
+      "id": "uga-aly",
+      "lang": "uga",
+      "form": "𐎓𐎍𐎊",
+      "translit": "ʿly",
+      "gloss": "go up; (Š) erect, offer up",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "note": "Ugaritic writes ʿ and ġ with different letters; this verb has ʿ. Its causative (Š) is “erect, offer up”, as the hiphil of עָלָה offers a sacrifice.",
+      "evidence": [
+        {
+          "source": "fisher-1969",
+          "locator": "pp. 153–154, ʿly"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000600 ʿly [rise], UGC000918 ʿly [go]"
+        }
+      ]
+    },
+    {
+      "id": "phn-aly",
+      "lang": "phn",
+      "form": "𐤏𐤋𐤉",
+      "translit": "ʿly",
+      "gloss": "go up, come up against; sail upstream; go up (of a burnt offering on the altar); be entered in a book; (yiphʿil) offer up a burnt sacrifice, raise a building",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "pp. 369–370, ʿ-L-Y"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000600 ʿly [rise], PUN001527 ʿly [go]"
+        }
+      ],
+      "note": "Phoenician uses the verb of a whole burnt offering going up on the altar (CIS i 170), and its causative of offering one up (KAI 159). “Be entered in a book” (KAI 124) is the use of the hophal in 2Ch 20:34, which Krahmalkov compares."
+    },
+    {
+      "id": "ar-ulliyya",
+      "lang": "ar",
+      "form": "عُلِّيَّة",
+      "translit": "ʿulliyya, ʿilliyya",
+      "gloss": "upper chamber",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "note": "Formed from عَلَا “be high”, the same room as עֲלִיָּה.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2147, root علو, عُلِّيَّةٌ (n30429)"
+        }
+      ]
+    },
+    {
+      "id": "ar-alat",
+      "lang": "ar",
+      "form": "عَلَاة",
+      "translit": "ʿalāh",
+      "gloss": "anvil; a stone on which curd is dried or cooked",
+      "relation": "possible",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "note": "A pounding block filed under the root of height, as the pestle עֱלִי is a pounding tool in this Hebrew root; an anvil is not a pestle, so the match is of use, not of the object.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2146, root علو, عَلَاةٌ (n30409)"
+        }
+      ]
+    },
+    {
+      "id": "ar-ghala",
+      "lang": "ar",
+      "form": "تَغَالَى",
+      "translit": "taġālā (غَلَا ġalā)",
+      "gloss": "(of plants) grow high, become luxuriant; (of a vine) its leaves become dense",
+      "relation": "possible",
+      "sounds": {
+        "ע": "ġ"
+      },
+      "note": "The root غلو, with ġ, “exceed, be excessive”, is used of herbage growing high and of a vine's leaves growing thick; its stem IV is also thinning a vine's leaves so that it grows high. If עָלֶה “leaf” belongs to it, the leaf has a ġ behind its ע where the root's words for going up have ʿ.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2288, root غلو, 6 تغالى; p. 2287, 4 اغلى"
+        }
+      ]
+    },
+    {
+      "id": "gez-laala",
+      "lang": "gez",
+      "form": "ለዐለ",
+      "translit": "laʿala",
+      "gloss": "be high, superior, exalted; (causative አልዐለ) raise, lift up, exalt; (ተለዐለ) be raised, exalted",
+      "relation": "cognate",
+      "note": "The ʿ and l stand in the other order. Dillmann explains the form from a doubled ʿlʿl and sets it beside עָלָה and Arabic علا; Fisher pairs it with Ugaritic ʿly “go up”.",
+      "evidence": [
+        {
+          "source": "dillmann-1865",
+          "locator": "cols. 54–55, ለዐለ",
+          "url": "https://archive.org/details/lexiconlinguaeae00dilluoft/page/n50"
+        },
+        {
+          "source": "fisher-1969",
+          "locator": "pp. 153–154, ʿly"
+        }
+      ]
+    },
+    {
+      "id": "gez-leul",
+      "lang": "gez",
+      "form": "ልዑል",
+      "translit": "ləʿul",
+      "gloss": "high, exalted, superior; (of God) Most High",
+      "relation": "cognate",
+      "note": "Dillmann: used very often of God, where the Greek has ὕψιστος, as עֶלְיוֹן is the Most High.",
+      "evidence": [
+        {
+          "source": "dillmann-1865",
+          "locator": "col. 56, ልዑል",
+          "url": "https://archive.org/details/lexiconlinguaeae00dilluoft/page/n51"
+        }
+      ]
+    },
+    {
+      "id": "gez-laela",
+      "lang": "gez",
+      "form": "ላዕለ",
+      "translit": "laʿla",
+      "gloss": "(preposition) on, upon, over, above; (ላዕል) height, above",
+      "relation": "cognate",
+      "note": "Dillmann gives the preposition as the same word as עַל and Arabic عَلَى.",
+      "evidence": [
+        {
+          "source": "dillmann-1865",
+          "locator": "col. 56, ላዕል and ላዕለ",
+          "url": "https://archive.org/details/lexiconlinguaeae00dilluoft/page/n51"
+        }
+      ]
+    },
+    {
+      "id": "uga-al",
+      "lang": "uga",
+      "form": "𐎓𐎍",
+      "translit": "ʿl",
+      "gloss": "upon, on (a day); owed by, in charge of; against",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "fisher-1969",
+          "locator": "p. 153, ʿl"
+        }
+      ]
+    },
+    {
+      "id": "phn-al",
+      "lang": "phn",
+      "form": "𐤏𐤋",
+      "translit": "ʿl",
+      "gloss": "on, upon; at, along; against; greater than; in charge of; incumbent upon; for the sake of",
+      "relation": "cognate",
+      "note": "The same range as עַל: position on, opposition, authority over, and a duty resting on someone (“I shall be responsible for my taxes”, KAI 3).",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "pp. 367–369, ʿL I"
+        }
+      ]
+    },
+    {
+      "id": "phn-alt",
+      "lang": "phn",
+      "form": "𐤏𐤋𐤕",
+      "translit": "ʿlt",
+      "gloss": "whole burnt offering",
+      "relation": "cognate",
+      "note": "Offered up with a minḥa-offering in the sanctuary (KAI 159), as עֹלָה and מִנְחָה stand together.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 373, ʿLT I"
+        }
+      ]
+    },
+    {
+      "id": "phn-alt-chamber",
+      "lang": "phn",
+      "form": "𐤏𐤋𐤕",
+      "translit": "ʿlt",
+      "gloss": "chamber",
+      "relation": "cognate",
+      "note": "Krahmalkov compares Hebrew עֲלִיָּה; the inscription is at the entrance of a tomb chamber.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 373, ʿLT II"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "the-ascending-offering",
+      "statement": "The עֹלָה takes its name from the verb: the offerer makes it go up on the altar, and the priest burns all of it, a pleasing aroma to Yahweh (Lev 1:9). The offerer lays his hand on its head, and it is accepted for him, to make a covering for him (Lev 1:4). Abraham is told to make his son, his only son whom he loves, go up as an עֹלָה (Gen 22:2). He answers that God will provide the lamb for the עֹלָה (Gen 22:8), and a ram goes up in his son’s place (Gen 22:13). The offering was never valued for itself: to obey Yahweh’s voice is better than עֹלוֹת (1Sa 15:22), and he desires kindness and the knowledge of God more than עֹלוֹת (Hos 6:6). The scribe says the same to Jesus, that to love God and one’s neighbour is more than all the whole burnt offerings (Mrk 12:33). In Psalm 40 the speaker says that Yahweh did not ask for עוֹלָה or sin offering, and comes to do his will (Psa 40:7–9). Hebrews hears Christ saying it, and says that by that will we are made holy through the offering of his body once for all (Heb 10:5–10). Paul says Christ gave himself for us as an offering and sacrifice to God, a pleasing aroma (Eph 5:2), in the words used of the עֹלָה.",
+      "evidence": [
+        {
+          "ref": "Lev.1.9"
+        },
+        {
+          "ref": "Lev.1.4"
+        },
+        {
+          "ref": "Gen.22.2"
+        },
+        {
+          "ref": "Gen.22.8"
+        },
+        {
+          "ref": "Gen.22.13"
+        },
+        {
+          "ref": "1Sa.15.22"
+        },
+        {
+          "ref": "Hos.6.6"
+        },
+        {
+          "ref": "Mrk.12.33"
+        },
+        {
+          "ref": "Psa.40.7",
+          "to": "Psa.40.9"
+        },
+        {
+          "ref": "Heb.10.5",
+          "to": "Heb.10.10"
+        },
+        {
+          "ref": "Eph.5.2"
+        }
+      ]
+    },
+    {
+      "topic": "going-up-to-worship",
+      "statement": "Scripture speaks of coming to Yahweh’s house as going up. Israel’s men go up three times a year to appear before him (Exo 34:24); Elkanah went up from his city year by year to worship at Shiloh (1Sa 1:3); and Jerusalem is where the tribes go up, to give thanks to the name of Yahweh (Psa 122:4). Fifteen psalms (Psa 120–134) are each titled שִׁיר הַמַּעֲלוֹת, “a song of the ascents”, with the noun for steps and ascents. Among them Psalm 122 opens with gladness at “let us go to the house of Yahweh” (Psa 122:1). The titles do not say which ascents they mean; Ezra uses the same noun for the return, “the going up from Babylon” (Ezr 7:9). Who may go up is a matter of character: “Who shall go up into the mountain of Yahweh?… The one with clean hands and a pure heart” (Psa 24:3–4). Jesus went up to Jerusalem for the feasts from his childhood (Luk 2:42; Jhn 2:13), and last of all to be handed over and killed, so that what the prophets wrote would be fulfilled (Luk 18:31–33).",
+      "evidence": [
+        {
+          "ref": "Exo.34.24"
+        },
+        {
+          "ref": "1Sa.1.3"
+        },
+        {
+          "ref": "Psa.122.4"
+        },
+        {
+          "ref": "Psa.120.1"
+        },
+        {
+          "ref": "Psa.122.1"
+        },
+        {
+          "ref": "Ezr.7.9"
+        },
+        {
+          "ref": "Psa.24.3",
+          "to": "Psa.24.4"
+        },
+        {
+          "ref": "Luk.2.42"
+        },
+        {
+          "ref": "Jhn.2.13"
+        },
+        {
+          "ref": "Luk.18.31",
+          "to": "Luk.18.33"
+        }
+      ]
+    },
+    {
+      "topic": "brought-up-to-the-land",
+      "statement": "Yahweh is the one who brings his people up. He came down to bring Israel up out of Egypt into a good land (Exo 3:8), as Joseph had said he would (Gen 50:24). Jeremiah says that a greater bringing up is coming, from the land of the north and from all the lands where he had driven them, back to the land he gave their fathers (Jer 16:14–15). In Cyrus’s decree the return is a going up: “let him go up to Jerusalem” (Ezr 1:3), and in the Hebrew order of the books its last word, וְיָעַל “and let him go up”, is the Hebrew Bible’s last word (2Ch 36:23). The prophets carry the going up to the nations in the kingdom: many peoples will say “Come, let us go up to the mountain of Yahweh”, for teaching will go out from Zion (Isa 2:3), and those left of the nations will go up year by year to worship the King, Yahweh of hosts, and keep the feast of Sukkot (Zec 14:16).",
+      "evidence": [
+        {
+          "ref": "Exo.3.8"
+        },
+        {
+          "ref": "Gen.50.24"
+        },
+        {
+          "ref": "Jer.16.14",
+          "to": "Jer.16.15"
+        },
+        {
+          "ref": "Ezr.1.3"
+        },
+        {
+          "ref": "2Ch.36.23"
+        },
+        {
+          "ref": "Isa.2.3"
+        },
+        {
+          "ref": "Zec.14.16"
+        }
+      ]
+    }
+  ],
+  "note": "Duplicate spelling inventories p.cs.ae/af (עֹלָה), p.cs.ai/aj (עֶלְיוֹן), p.cs.an/ao (מַעֲלָה), and p.cs.ap/aq (תְּעָלָה) share occurrences: one key per combined word is used. The key totals can therefore include a sibling meaning or a verbal participle and are not sense totals. The rare hithpael at Jer 51:3 and ascent/burnt-offering at 1Ki 10:5 need review; the noun’s ascent sense is instead anchored at Ezk 40:26. Proper names and redirect-only rows are omitted. עַלְוָה “injustice” at Hos 10:9 is assigned elsewhere under עלוה/עול, not taken from the name Alvah. Aramaic/Syriac enter-verbs contracted to על belong with עלל, not with “ascend”; they are not included on spelling alone. Syriac עלוא “waking state” has no Peshitta token and is omitted. Leaf, pestle, water-channel and healing are retained without speculative semantic bridges or unrelated cognates. Left out for עלל: Biblical Aramaic עִלָּה and the Peshitta's ܥܠܬܐ “cause, ground of accusation” (Dan 6:5–6; Mat 19:3), which answer to Arabic عِلَّة ʿilla “cause, pretext”, of the root علل, not علو; they go with the עלל entry, as the enter-verbs do. Cognates added 2026-11-08 from Oracc, Lane and Anderson–Moser. Checked 2026-11-08: Ge'ez in Dillmann cols. 54–56, Ugaritic in Fisher pp. 153–154, Phoenician in Krahmalkov pp. 367–373. Krahmalkov also has ʿLH, a temple column called a “riser” (p. 367; he compares Hebrew עֹלֶה, “one going up”), and ʿLYN “Highest One”, known only from Philo of Byblos' Greek (Ἐλιοῦν, p. 370); neither is entered as a cognate. DULAT not consulted."
+}

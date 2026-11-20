@@ -1,0 +1,134 @@
+{
+  "id": "mn3",
+  "root": "מנע",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "restraint",
+    "giving"
+  ],
+  "gloss": "withhold, hold back",
+  "summary": "To withhold is to keep someone from receiving something or from taking action. The request in Psalm 21 is one Yahweh freely grants.",
+  "words": [
+    {
+      "lemma": "מָנַע",
+      "bdb": [
+        "m.cp.aa"
+      ],
+      "pos": "verb",
+      "gloss": "withhold, restrain",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "withhold, restrain",
+          "senses": [
+            {
+              "id": "withhold-a-gift",
+              "gloss": "withhold a gift",
+              "definition": "The giver holds back rain, children, or a benefit that another seeks. The psalm thanks Yahweh for granting the king’s request.",
+              "evidence": [
+                {
+                  "ref": "Amo.4.7",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.21.3"
+                },
+                {
+                  "ref": "Gen.30.2"
+                },
+                {
+                  "ref": "Pro.3.27"
+                }
+              ]
+            },
+            {
+              "id": "hold-someone-back",
+              "gloss": "hold someone back",
+              "definition": "Abigail credits Yahweh with restraining David from bloodshed. Jeremiah calls for the voice to cease weeping.",
+              "evidence": [
+                {
+                  "ref": "1Sa.25.26",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jer.31.16"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be held back",
+          "senses": [
+            {
+              "id": "be-held-back",
+              "gloss": "be held back",
+              "definition": "Balak urges Balaam to allow nothing to keep him from coming. Jeremiah describes rain showers being withheld.",
+              "evidence": [
+                {
+                  "ref": "Num.22.16",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jer.3.3"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-manaa"
+      ]
+    },
+    {
+      "lemma": "מנע",
+      "pos": "verb",
+      "gloss": "reach, attain",
+      "stems": [
+        {
+          "stem": "pael",
+          "gloss": "attain",
+          "senses": [
+            {
+              "id": "attain",
+              "gloss": "attain",
+              "definition": "Paul speaks of the promise which the twelve tribes hope to attain.",
+              "evidence": [
+                {
+                  "ref": "Act.26.7",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "syc"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-manaa",
+      "lang": "ar",
+      "form": "مَنَعَ",
+      "translit": "manaʿa",
+      "gloss": "prevent, withhold",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I p. 3024, n43727"
+        }
+      ],
+      "sounds": {
+        "ע": "ʿ"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "The Syriac verb in Acts 26:7 expresses attainment. Its relationship to the Hebrew sense remains unclear. Genesis 41:51 connects Manasseh with forgetting. The labour levy מַס has different consonants."
+}

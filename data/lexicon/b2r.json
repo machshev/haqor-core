@@ -1,0 +1,397 @@
+{
+  "id": "b2r",
+  "root": "באר",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "water",
+    "earth"
+  ],
+  "gloss": "well, pit, cistern",
+  "summary": "A well provides water, while a cistern may hold water, mud or nothing at all. Its depth makes it a prison or a trap. Psalm 7 turns the image against the person who dug the pit.",
+  "words": [
+    {
+      "lemma": "בּוֹר",
+      "bdb": [
+        "b.ac.am",
+        "b.ac.al"
+      ],
+      "pos": "noun",
+      "gloss": "pit, cistern",
+      "senses": [
+        {
+          "gloss": "excavated hollow or cistern",
+          "definition": "Joseph’s brothers throw him into an empty cistern. Jeremiah sinks into mud at the bottom of another. David longs for water from the cistern at Bethlehem’s gate.",
+          "evidence": [
+            {
+              "ref": "Gen.37.24",
+              "role": "defining"
+            },
+            {
+              "ref": "Jer.38.6"
+            },
+            {
+              "ref": "2Sa.23.15",
+              "to": "2Sa.23.16"
+            }
+          ],
+          "id": "pit"
+        },
+        {
+          "id": "pitfall-and-pit-of",
+          "gloss": "pitfall and pit of death",
+          "definition": "A person digging a pit for someone else falls into it. The nations sink in the pit they made. Those descending to the pit are counted among the dead.",
+          "evidence": [
+            {
+              "ref": "Psa.7.16",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.9.16"
+            },
+            {
+              "ref": "Psa.28.1"
+            },
+            {
+              "ref": "Psa.88.5"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "ar-bir"
+      ]
+    },
+    {
+      "lemma": "בְּאֵר",
+      "bdb": [
+        "b.ac.ab"
+      ],
+      "pos": "noun",
+      "gloss": "well",
+      "senses": [
+        {
+          "id": "well",
+          "gloss": "well",
+          "definition": "Isaac’s servants dig in a valley and find a well of flowing water. The song in Numbers addresses a well dug by the leaders.",
+          "evidence": [
+            {
+              "ref": "Gen.26.19",
+              "role": "defining"
+            },
+            {
+              "ref": "Num.21.16",
+              "to": "Num.21.18"
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "cognate_ids": [
+        "ar-bir"
+      ]
+    },
+    {
+      "lemma": "בָּאַר",
+      "bdb": [
+        "b.ac.aa"
+      ],
+      "pos": "verb",
+      "gloss": "explain, write plainly",
+      "stems": [
+        {
+          "stem": "piel",
+          "gloss": "make clear",
+          "senses": [
+            {
+              "id": "make-clear",
+              "gloss": "make clear",
+              "definition": "Moses undertakes to explain the law. Israel must inscribe its words plainly on stones, and Habakkuk must write his vision clearly on tablets.",
+              "evidence": [
+                {
+                  "ref": "Deu.1.5",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Deu.27.8"
+                },
+                {
+                  "ref": "Hab.2.2"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "בֵּארָא",
+      "pos": "noun",
+      "gloss": "well, shaft",
+      "senses": [
+        {
+          "id": "well-shaft",
+          "gloss": "well, shaft",
+          "definition": "The Samaritan woman describes Jacob’s well as deep. Revelation depicts smoke rising from an opened shaft.",
+          "evidence": [
+            {
+              "ref": "Jhn.4.11",
+              "to": "Jhn.4.12",
+              "role": "defining"
+            },
+            {
+              "ref": "Rev.9.1",
+              "to": "Rev.9.2"
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "cognate_ids": [
+        "ar-bir"
+      ]
+    },
+    {
+      "lemma": "בְּאֵר שֶׁבַע",
+      "bdb": [
+        "b.ac.ae"
+      ],
+      "pos": "noun",
+      "gloss": "Beersheba",
+      "senses": [
+        {
+          "id": "beersheba",
+          "gloss": "Beersheba",
+          "definition": "Abraham sets aside seven ewe lambs and swears an oath at the well. The narrative associates the place-name with both seven and swearing.",
+          "evidence": [
+            {
+              "ref": "Gen.21.28",
+              "to": "Gen.21.32",
+              "role": "defining"
+            },
+            {
+              "ref": "Gen.26.33"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "בְּאֵר לַחַי רֹאִי",
+      "bdb": [
+        "b.ac.ad"
+      ],
+      "pos": "noun",
+      "gloss": "Beer-lahai-roi",
+      "senses": [
+        {
+          "id": "beer-lahai-roi",
+          "gloss": "Beer-lahai-roi",
+          "definition": "Hagar speaks of the God who sees her. The well between Kadesh and Bered receives a name recalling the living one who sees.",
+          "evidence": [
+            {
+              "ref": "Gen.16.13",
+              "to": "Gen.16.14",
+              "role": "defining"
+            },
+            {
+              "ref": "Gen.24.62"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "בְּאֵר אֵילִים",
+      "bdb": [
+        "b.ac.ac"
+      ],
+      "pos": "noun",
+      "gloss": "Beer-elim",
+      "senses": [
+        {
+          "id": "beer-elim",
+          "gloss": "Beer-elim",
+          "definition": "The lament over Moab reaches this place whose first element means well.",
+          "evidence": [
+            {
+              "ref": "Isa.15.8",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "בְּאֵרוֹת",
+      "bdb": [
+        "b.ac.ah"
+      ],
+      "pos": "noun",
+      "gloss": "Beeroth",
+      "senses": [
+        {
+          "id": "beeroth",
+          "gloss": "Beeroth",
+          "definition": "The Gibeonite towns include Beeroth. Joshua also lists the town in Benjamin’s territory.",
+          "evidence": [
+            {
+              "ref": "Jos.9.17",
+              "role": "defining"
+            },
+            {
+              "ref": "Jos.18.25"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "בְּאֵרֹת בְּנֵי־יַעֲקָן",
+      "bdb": [
+        "b.ac.aj"
+      ],
+      "pos": "noun",
+      "gloss": "Wells of the sons of Jaakan",
+      "senses": [
+        {
+          "id": "wells-of-the-sons",
+          "gloss": "Wells of the sons of Jaakan",
+          "definition": "Deuteronomy names this station in Israel’s wilderness travels.",
+          "evidence": [
+            {
+              "ref": "Deu.10.6",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "בּוֹר הַסִּרָה",
+      "bdb": [
+        "b.ac.an"
+      ],
+      "pos": "noun",
+      "gloss": "Cistern of Sirah",
+      "senses": [
+        {
+          "id": "cistern-of-sirah",
+          "gloss": "Cistern of Sirah",
+          "definition": "Joab’s messengers bring Abner back from this named cistern.",
+          "evidence": [
+            {
+              "ref": "2Sa.3.26",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "בּוֹר עָשָׁן",
+      "bdb": [
+        "b.ac.ao"
+      ],
+      "pos": "noun",
+      "gloss": "Bor-ashan",
+      "senses": [
+        {
+          "id": "bor-ashan",
+          "gloss": "Bor-ashan",
+          "definition": "David sends part of the spoil to those in Bor-ashan.",
+          "evidence": [
+            {
+              "ref": "1Sa.30.30",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "בֵּרֹתָה",
+      "bdb": [
+        "b.ac.ar"
+      ],
+      "pos": "noun",
+      "gloss": "Berothah",
+      "senses": [
+        {
+          "id": "berothah",
+          "gloss": "Berothah",
+          "definition": "Ezekiel locates this place on the northern boundary.",
+          "evidence": [
+            {
+              "ref": "Ezk.47.16",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "בֵּרֹתַי",
+      "bdb": [
+        "b.ac.as"
+      ],
+      "pos": "noun",
+      "gloss": "Berothai",
+      "senses": [
+        {
+          "id": "berothai",
+          "gloss": "Berothai",
+          "definition": "David takes bronze from this town belonging to Hadadezer. Its identification with Berothah is uncertain.",
+          "evidence": [
+            {
+              "ref": "2Sa.8.8",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "בְּאֵרֹתִי",
+      "bdb": [
+        "b.ac.ai"
+      ],
+      "pos": "adjective",
+      "gloss": "Beerothite",
+      "senses": [
+        {
+          "id": "beerothite",
+          "gloss": "Beerothite",
+          "definition": "Rechab and Baanah are sons of Rimmon the Beerothite. The account explains why Beeroth is reckoned to Benjamin.",
+          "evidence": [
+            {
+              "ref": "2Sa.4.2",
+              "to": "2Sa.4.3",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-bir",
+      "lang": "ar",
+      "form": "بِئْرٌ",
+      "translit": "biʾr",
+      "gloss": "well",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 145, بِئْرٌ"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The form with aleph is especially clear in the Bethlehem well. The verb for explaining or writing clearly shares consonants with well, but its origin is uncertain."
+}

@@ -1,0 +1,211 @@
+{
+  "id": "xrx",
+  "root": "שרש",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "gloss": "root, take root, uproot",
+  "summary": "Roots anchor a plant and draw water. Israel takes root like a transplanted vine, and Isaiah speaks of a root of Jesse to whom the nations turn.",
+  "words": [
+    {
+      "lemma": "שָׁרַשׁ",
+      "pos": "verb",
+      "gloss": "take root, uproot",
+      "bdb": [
+        "v.gf.ac"
+      ],
+      "stems": [
+        {
+          "stem": "hiphil",
+          "gloss": "take root",
+          "senses": [
+            {
+              "id": "take-root",
+              "gloss": "take root",
+              "definition": "The vine put down roots when ground was cleared for it.",
+              "evidence": [
+                {
+                  "ref": "Psa.80.10",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "uproot",
+          "senses": [
+            {
+              "id": "uproot",
+              "gloss": "uproot",
+              "definition": "Yahweh uproots the wicked man from the land of the living.",
+              "evidence": [
+                {
+                  "ref": "Psa.52.7",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "poal",
+          "gloss": "take root",
+          "senses": [
+            {
+              "id": "take-root-2",
+              "gloss": "take root",
+              "definition": "They have taken root.",
+              "evidence": [
+                {
+                  "ref": "Jer.12.2",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "poel",
+          "gloss": "root",
+          "senses": [
+            {
+              "id": "root",
+              "gloss": "root",
+              "definition": "The planted stem has rooted in the earth.",
+              "evidence": [
+                {
+                  "ref": "Isa.40.24",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be uprooted",
+          "senses": [
+            {
+              "id": "be-uprooted",
+              "gloss": "be uprooted",
+              "definition": "The crop may be uprooted.",
+              "evidence": [
+                {
+                  "ref": "Job.31.8",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שֹׁרֶשׁ",
+      "bdb": [
+        "v.gf.ab"
+      ],
+      "pos": "noun",
+      "gloss": "root, line of descent",
+      "senses": [
+        {
+          "id": "root-line-of-descent",
+          "gloss": "root, line of descent",
+          "definition": "A vine takes hold of the land by its roots. Isaiah’s root of Jesse stands as a signal for peoples, a promise Paul applies to the hope of the nations.",
+          "evidence": [
+            {
+              "ref": "Psa.80.10",
+              "role": "defining"
+            },
+            {
+              "ref": "Jer.17.8",
+              "role": "example"
+            },
+            {
+              "ref": "Isa.11.10",
+              "role": "example"
+            },
+            {
+              "ref": "Rom.15.12",
+              "role": "example"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "akk-root"
+      ]
+    },
+    {
+      "lemma": "שֹׁרֶשׁ",
+      "bdb": [
+        "xv.bg.aa"
+      ],
+      "pos": "noun",
+      "gloss": "root",
+      "senses": [
+        {
+          "id": "root-2",
+          "gloss": "root",
+          "definition": "In Nebuchadnezzar’s dream the stump with its roots remains in the earth after the tree is cut down.",
+          "evidence": [
+            {
+              "ref": "Dan.4.12",
+              "role": "defining"
+            },
+            {
+              "ref": "Dan.4.20",
+              "role": "example"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "lang": "arc",
+      "cognate_ids": [
+        "akk-root"
+      ]
+    },
+    {
+      "lemma": "שָׁרֹשׁוּ",
+      "bdb": [
+        "xv.bg.ab"
+      ],
+      "pos": "noun",
+      "gloss": "uprooting, banishment",
+      "senses": [
+        {
+          "id": "uprooting-banishment",
+          "gloss": "uprooting, banishment",
+          "definition": "The royal decree lists this penalty alongside death, confiscation and imprisonment. Its exact legal form is uncertain.",
+          "evidence": [
+            {
+              "ref": "Ezr.7.26",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "lang": "arc"
+    }
+  ],
+  "note": "The noun and its denominative verb occur together in Psalm 80. Ezra’s penalty may picture banishment as uprooting.",
+  "cognates": [
+    {
+      "id": "akk-root",
+      "lang": "akk",
+      "form": "šuršu",
+      "translit": "šuršu",
+      "gloss": "root",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "cmawro glossary, šuršu [root], x000021980"
+        }
+      ]
+    }
+  ]
+}

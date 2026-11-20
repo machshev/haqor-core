@@ -1,0 +1,236 @@
+{
+  "id": "2yk",
+  "root": "איכ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "question",
+    "comparison"
+  ],
+  "gloss": "how?",
+  "summary": "The question asks about manner or possibility. In a lament it voices astonishment at what has happened.",
+  "words": [
+    {
+      "lemma": "אֵיךְ",
+      "bdb": [
+        "a.cu.ac"
+      ],
+      "pos": "adverb",
+      "gloss": "how?",
+      "senses": [
+        {
+          "gloss": "ask how something is possible",
+          "definition": "Abimelech challenges Isaac’s account of his wife. The psalmist challenges those who tell him to flee when he has taken refuge in Yahweh.",
+          "evidence": [
+            {
+              "ref": "Gen.26.9",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.11.1"
+            },
+            {
+              "ref": "Psa.137.4"
+            }
+          ],
+          "id": "how"
+        },
+        {
+          "id": "express-astonishment-or-lament",
+          "gloss": "express astonishment or lament",
+          "definition": "David’s lament repeats the exclamation over the fall of the mighty.",
+          "evidence": [
+            {
+              "ref": "2Sa.1.19",
+              "role": "defining"
+            },
+            {
+              "ref": "2Sa.1.25"
+            },
+            {
+              "ref": "2Sa.1.27"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-ekh"
+      ]
+    },
+    {
+      "lemma": "אֵיכָה",
+      "bdb": [
+        "a.cu.ad"
+      ],
+      "pos": "adverb",
+      "gloss": "how?",
+      "senses": [
+        {
+          "id": "ask-in-what-way",
+          "gloss": "ask in what way",
+          "definition": "Moses asks how he can carry the people’s burdens alone. Israel asks how the outrage at Gibeah came about.",
+          "evidence": [
+            {
+              "ref": "Deu.1.12",
+              "role": "defining"
+            },
+            {
+              "ref": "Jdg.20.3"
+            }
+          ],
+          "kin": [
+            "how"
+          ]
+        },
+        {
+          "id": "exclaim-in-lament",
+          "gloss": "exclaim in lament",
+          "definition": "The word opens the lament over Jerusalem sitting alone after being full of people.",
+          "evidence": [
+            {
+              "ref": "Lam.1.1",
+              "role": "defining"
+            },
+            {
+              "ref": "Lam.2.1"
+            },
+            {
+              "ref": "Lam.4.1"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-ekh"
+      ]
+    },
+    {
+      "lemma": "אֵיכָכָה",
+      "bdb": [
+        "a.cu.af"
+      ],
+      "pos": "adverb",
+      "gloss": "how could?",
+      "senses": [
+        {
+          "id": "ask-how-something-can",
+          "gloss": "ask how something can be done or borne",
+          "definition": "The woman asks how she can put her garment back on. Esther asks how she can bear to see her people destroyed.",
+          "evidence": [
+            {
+              "ref": "Sng.5.3",
+              "role": "defining"
+            },
+            {
+              "ref": "Est.8.6"
+            }
+          ],
+          "kin": [
+            "how"
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-ekh"
+      ]
+    },
+    {
+      "lemma": "אֵיכֹה",
+      "bdb": [
+        "a.cu.ae"
+      ],
+      "pos": "adverb",
+      "gloss": "where?",
+      "senses": [
+        {
+          "id": "where",
+          "gloss": "where?",
+          "definition": "The king orders his servants to find where Elisha is so that he may seize him.",
+          "evidence": [
+            {
+              "ref": "2Ki.6.13",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אַיךְ",
+      "pos": "adverb",
+      "gloss": "as, according to",
+      "senses": [
+        {
+          "id": "as-according-to",
+          "gloss": "as, according to",
+          "definition": "Jesus compares his will with his Father’s when praying in Gethsemane.",
+          "evidence": [
+            {
+              "ref": "Mat.26.39",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "cognate_ids": [
+        "syc-ayk"
+      ]
+    },
+    {
+      "lemma": "אַכְמָא",
+      "pos": "adverb",
+      "gloss": "just as, in proportion as",
+      "senses": [
+        {
+          "id": "just-as-in-proportion",
+          "gloss": "just as, in proportion as",
+          "definition": "Hebrews compares the excellence of Jesus’ ministry with that of the covenant he mediates.",
+          "evidence": [
+            {
+              "ref": "Heb.8.6",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "cognate_ids": [
+        "syc-ayk"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-ekh",
+      "lang": "arc",
+      "form": "אֵיךְ",
+      "translit": "ʾēḵ",
+      "gloss": "as, how",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "אֵיךְ, Targum Proverbs 20:20"
+        }
+      ]
+    },
+    {
+      "id": "syc-ayk",
+      "lang": "syc",
+      "form": "ܐܝܟ",
+      "translit": "ʾayk",
+      "gloss": "as, according to",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "sedra",
+          "locator": "lexeme 82, root 65. Compare lexeme 3456, the expanded form in Hebrews 8:6"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The longer Hebrew forms can share a question or exclamation with the short form. The form in 2 Kings 6:13 introduces a question of location. The Syriac comparison illustrates manner without itself asking a question."
+}

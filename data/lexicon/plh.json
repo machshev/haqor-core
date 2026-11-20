@@ -1,0 +1,151 @@
+{
+  "id": "plh",
+  "root": "פלה",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "distinction",
+    "speech"
+  ],
+  "gloss": "distinguish, set apart",
+  "summary": "The plagues distinguish Israel from Egypt. Psalm 4 applies the verb to the faithful person whom Yahweh sets apart for himself. The pronouns refer to a particular person or place whose name is withheld.",
+  "words": [
+    {
+      "lemma": "פָּלָה",
+      "bdb": [
+        "q.bm.aa"
+      ],
+      "pos": "verb",
+      "gloss": "distinguish, set apart",
+      "stems": [
+        {
+          "stem": "hiphil",
+          "gloss": "distinguish, make distinctive",
+          "senses": [
+            {
+              "id": "set-apart",
+              "gloss": "set apart",
+              "definition": "Yahweh distinguishes Goshen from the rest of Egypt and Israel’s livestock from Egypt’s. David says Yahweh has set apart the faithful for himself.",
+              "evidence": [
+                {
+                  "ref": "Exo.8.18",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Exo.9.4"
+                },
+                {
+                  "ref": "Exo.11.7"
+                },
+                {
+                  "ref": "Psa.4.4"
+                }
+              ]
+            },
+            {
+              "id": "show-in-a-remarkable",
+              "gloss": "show in a remarkable way",
+              "definition": "David asks Yahweh to show his covenant faithfulness to those who take refuge in him.",
+              "evidence": [
+                {
+                  "ref": "Psa.17.7",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be distinguished",
+          "senses": [
+            {
+              "id": "be-distinguished",
+              "gloss": "be distinguished",
+              "definition": "Moses says that Yahweh’s presence distinguishes him and Israel from every other people. In Psalm 139 the speaker gives thanks for the remarkable way he is made.",
+              "evidence": [
+                {
+                  "ref": "Exo.33.16",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.139.14"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "פְּלֹנִי",
+      "bdb": [
+        "q.bm.ab"
+      ],
+      "pos": "pronoun",
+      "gloss": "so-and-so, such-and-such",
+      "senses": [
+        {
+          "id": "so-and-so-such",
+          "gloss": "so-and-so, such-and-such",
+          "definition": "Boaz calls to the unnamed redeemer at the gate. Elsewhere a speaker uses the same expression for a location without naming it.",
+          "evidence": [
+            {
+              "ref": "Rut.4.1",
+              "role": "defining"
+            },
+            {
+              "ref": "1Sa.21.3"
+            },
+            {
+              "ref": "2Ki.6.8"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-pelan"
+      ]
+    },
+    {
+      "lemma": "פַּלְמוֹנִי",
+      "bdb": [
+        "q.bq.aj"
+      ],
+      "pos": "pronoun",
+      "gloss": "a certain one",
+      "senses": [
+        {
+          "id": "a-certain-one",
+          "gloss": "a certain one",
+          "definition": "Daniel hears one holy one address a particular speaker without giving his name.",
+          "evidence": [
+            {
+              "ref": "Dan.8.13",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-pelan",
+      "lang": "arc",
+      "form": "פְּלַן",
+      "translit": "pəlan",
+      "gloss": "so-and-so",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "פְּלַן, Jerusalem Talmud Kiddushin III, 63d"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The pronoun usually occurs alongside אַלְמֹנִי. Daniel has an unusual longer form. The historical link between the pronouns and the verb is uncertain. Psalm 139:14 places this verb beside a word from פלא."
+}

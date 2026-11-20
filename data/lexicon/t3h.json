@@ -1,0 +1,143 @@
+{
+  "id": "t3h",
+  "root": "תעה",
+  "status": "draft",
+  "created": "2026-11-20",
+  "updated": "2026-11-19",
+  "gloss": "wander, go astray",
+  "summary": "תעה is to wander or go astray, literally or morally. The wicked are astray from the womb, while Yahweh's people can be led back from error.",
+  "words": [
+    {
+      "lemma": "תָּעָה",
+      "pos": "verb",
+      "gloss": "wander, go astray",
+      "bdb": [
+        "w.bh.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "wander, go astray",
+          "senses": [
+            {
+              "id": "go-astray",
+              "gloss": "go astray",
+              "definition": "The wicked go astray from the womb, speaking falsehood.",
+              "evidence": [
+                {
+                  "ref": "Psa.58.4",
+                  "role": "defining"
+                }
+              ]
+            },
+            {
+              "id": "wander",
+              "gloss": "wander",
+              "definition": "People wander in the wilderness or stray like sheep from the right path.",
+              "evidence": [
+                {
+                  "ref": "Psa.107.4"
+                },
+                {
+                  "ref": "Psa.119.176",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "lead astray",
+          "senses": [
+            {
+              "id": "lead-astray",
+              "gloss": "lead astray",
+              "definition": "Leaders and false prophets lead people astray from Yahweh.",
+              "evidence": [
+                {
+                  "ref": "Jer.23.13",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Hos.4.12"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "stagger, be misled",
+          "senses": [
+            {
+              "id": "lose-one-s-bearings",
+              "gloss": "lose one’s bearings",
+              "definition": "The drunkard staggers. Job speaks of a person who deceives himself by trusting in emptiness.",
+              "evidence": [
+                {
+                  "ref": "Isa.19.14",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Job.15.31"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-tee"
+      ]
+    },
+    {
+      "lemma": "תּוֹעָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "wandering, error",
+      "bdb": [
+        "w.bh.ab"
+      ],
+      "senses": [
+        {
+          "id": "error-confusion",
+          "gloss": "error, confusion",
+          "definition": "The fool speaks error concerning Yahweh. Jerusalem’s enemies plan to cause confusion among its builders.",
+          "evidence": [
+            {
+              "ref": "Isa.32.6",
+              "role": "defining"
+            },
+            {
+              "ref": "Neh.4.2"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-tee"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-tee",
+      "lang": "arc",
+      "form": "תְּעֵי",
+      "translit": "təʿē",
+      "gloss": "stray, err",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "תְּעֵי, V00779, Targum to Psalms 119:176"
+        }
+      ],
+      "sounds": {
+        "ע": "ʿ"
+      }
+    }
+  ],
+  "note": "Proper names and place names in this root remain separate. Drafted for Psalm 58 coverage."
+}

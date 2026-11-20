@@ -1,0 +1,206 @@
+{
+  "id": "xbl",
+  "root": "שבל",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "gloss": "current, ear of grain, path",
+  "summary": "The water of a shibbolet can sweep a person away. In the fields the same form names an ear of grain. At the Jordan fords its pronunciation distinguishes an Ephraimite (Jdg 12:6).",
+  "words": [
+    {
+      "lemma": "שִׁבֹּלֶת",
+      "pos": "noun",
+      "gloss": "current of water, ear of grain",
+      "gender": "f",
+      "bdb": [
+        "v.as.ac",
+        "v.as.ad"
+      ],
+      "senses": [
+        {
+          "id": "current",
+          "gloss": "current",
+          "definition": "Water rushes over the speaker as he loses his footing. Isaiah uses the word for the current of a river.",
+          "evidence": [
+            {
+              "ref": "Psa.69.3",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.69.16",
+              "role": "defining"
+            },
+            {
+              "ref": "Isa.27.12",
+              "role": "defining"
+            }
+          ]
+        },
+        {
+          "id": "ear-of-grain",
+          "gloss": "ear of grain",
+          "definition": "Several ears grow from one stalk in Pharaoh’s dream. Ruth gathers the ears left behind the reapers.",
+          "evidence": [
+            {
+              "ref": "Gen.41.5",
+              "role": "defining"
+            },
+            {
+              "ref": "Rut.2.2",
+              "role": "defining"
+            }
+          ],
+          "cognate_ids": [
+            "akk-ear"
+          ]
+        },
+        {
+          "id": "fruiting-spray",
+          "gloss": "fruiting spray",
+          "definition": "Zechariah singles out two fruit-bearing sprays of the olive trees beside the golden pipes.",
+          "evidence": [
+            {
+              "ref": "Zec.4.12",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שֹׁבֶל",
+      "pos": "noun",
+      "gloss": "skirt, train",
+      "bdb": [
+        "v.as.ab"
+      ],
+      "senses": [
+        {
+          "id": "skirt-train",
+          "gloss": "skirt, train",
+          "definition": "Babylon is told to uncover her leg and lift the garment to cross streams. This is its only occurrence.",
+          "evidence": [
+            {
+              "ref": "Isa.47.2",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שְׁבִיל",
+      "pos": "noun",
+      "gloss": "path",
+      "cognate_ids": [
+        "arc-path"
+      ],
+      "bdb": [
+        "v.as.ae"
+      ],
+      "senses": [
+        {
+          "id": "path",
+          "gloss": "path",
+          "definition": "Israel abandons the ancient paths for an unmade road. God’s path through deep water leaves no visible footprints.",
+          "evidence": [
+            {
+              "ref": "Jer.18.15",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.77.20",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שְׁבִילָא",
+      "pos": "noun",
+      "gloss": "path",
+      "lang": "syc",
+      "cognate_ids": [
+        "arc-path"
+      ],
+      "senses": [
+        {
+          "id": "path-2",
+          "gloss": "path",
+          "definition": "The herald calls for the paths to be made straight.",
+          "evidence": [
+            {
+              "ref": "Mat.3.3",
+              "role": "defining"
+            },
+            {
+              "ref": "Mrk.1.3",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שַׁבֵּל",
+      "pos": "verb",
+      "gloss": "guide",
+      "lang": "syc",
+      "stems": [
+        {
+          "stem": "pael",
+          "gloss": "guide",
+          "senses": [
+            {
+              "id": "guide",
+              "gloss": "guide",
+              "definition": "The Lamb guides the multitude to springs of living water.",
+              "evidence": [
+                {
+                  "ref": "Rev.7.17",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-ear",
+      "lang": "akk",
+      "form": "𒋗𒁍𒌌𒌈",
+      "translit": "šubultum",
+      "gloss": "ear of grain",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000058610, šubultu, ear of corn"
+        }
+      ],
+      "sounds": {
+        "ש": "š"
+      }
+    },
+    {
+      "id": "arc-path",
+      "lang": "arc",
+      "form": "שְׁבִילָא",
+      "translit": "šəḇīlā",
+      "gloss": "path",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "U00123, Targum Jeremiah 18:15"
+        }
+      ]
+    }
+  ],
+  "note": "The test word at the ford supplies no definition. The historical connection of ear, current, path and train remains uncertain. The name Shobal occurs in Seir and Judah, with no stated derivation.",
+  "created": "2026-11-19",
+  "doctrine": []
+}

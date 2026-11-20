@@ -1,0 +1,164 @@
+{
+  "id": "m2s",
+  "root": "מאס",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "rejection",
+    "choice"
+  ],
+  "gloss": "reject, spurn",
+  "summary": "Rejection can mean refusing someone’s claim or removing someone from office. Psalm 15 uses the passive form alongside the separate verb for treating someone with contempt.",
+  "words": [
+    {
+      "lemma": "מָאַס",
+      "bdb": [
+        "m.af.aa"
+      ],
+      "pos": "verb",
+      "gloss": "reject, spurn",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "refuse or spurn",
+          "senses": [
+            {
+              "gloss": "reject instruction or a person",
+              "definition": "Saul’s rejection of Yahweh’s word is answered by Yahweh’s rejection of Saul as king. Job denies that he dismissed his servants’ case against him.",
+              "evidence": [
+                {
+                  "ref": "1Sa.15.26",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Lev.26.15"
+                },
+                {
+                  "ref": "Job.31.13"
+                }
+              ],
+              "id": "reject"
+            },
+            {
+              "id": "loathe-or-find-intolerable",
+              "gloss": "loathe or find intolerable",
+              "definition": "Job expresses his weariness of life. Isaiah describes people throwing away the silver and gold idols they made.",
+              "evidence": [
+                {
+                  "ref": "Job.7.16",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Isa.31.7"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be rejected",
+          "senses": [
+            {
+              "id": "be-rejected",
+              "gloss": "be rejected",
+              "definition": "Jeremiah calls the people rejected silver because Yahweh has rejected them. In Psalm 15 the rejected person is despised in the eyes of the faithful worshipper.",
+              "evidence": [
+                {
+                  "ref": "Jer.6.30",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.15.4"
+                },
+                {
+                  "ref": "Isa.54.6"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-meas"
+      ]
+    },
+    {
+      "lemma": "מָאוֹס",
+      "bdb": [
+        "m.af.ab"
+      ],
+      "pos": "noun",
+      "gloss": "refuse",
+      "senses": [
+        {
+          "id": "something-discarded",
+          "gloss": "something discarded",
+          "definition": "The lament pairs this word with sweepings as the speakers describe how the nations regard them.",
+          "evidence": [
+            {
+              "ref": "Lam.3.45",
+              "role": "defining"
+            }
+          ],
+          "kin": [
+            "reject"
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "arc-meas"
+      ]
+    },
+    {
+      "lemma": "מָאַס",
+      "bdb": [
+        "m.ag.aa"
+      ],
+      "pos": "verb",
+      "gloss": "dissolve or run",
+      "stems": [
+        {
+          "stem": "niphal",
+          "gloss": "dissolve, run",
+          "senses": [
+            {
+              "id": "dissolve-run",
+              "gloss": "dissolve, run",
+              "definition": "The psalmist compares the disappearance of his adversaries to water running away. Job describes changes in his afflicted skin.",
+              "evidence": [
+                {
+                  "ref": "Psa.58.8",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Job.7.5"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-meas",
+      "lang": "arc",
+      "form": "מְאַס",
+      "translit": "məʾas",
+      "gloss": "loathe, reject",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "מְאַס, Palestinian Targum Leviticus 26:44"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The forms in Psalm 58:8 and Job 7:5 describe a physical change usually understood as dissolving or running. Their relation to rejection is uncertain."
+}

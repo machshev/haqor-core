@@ -1,0 +1,110 @@
+{
+  "id": "9m7",
+  "root": "צמח",
+  "status": "draft",
+  "created": "2026-11-20",
+  "updated": "2026-11-19",
+  "gloss": "sprout, grow",
+  "summary": "צמח is growth emerging from the ground or developing like a plant. Scripture also uses the sprout as a figure for righteousness and the promised Branch.",
+  "words": [
+    {
+      "lemma": "צָמַח",
+      "bdb": [
+        "r.cj.aa"
+      ],
+      "pos": "verb",
+      "gloss": "sprout, grow",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "sprout",
+          "senses": [
+            {
+              "id": "sprout",
+              "gloss": "sprout",
+              "definition": "Plants and new things emerge and grow from the ground.",
+              "evidence": [
+                {
+                  "ref": "Gen.2.5",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Isa.43.19"
+                },
+                {
+                  "ref": "Psa.85.12"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "make sprout",
+          "senses": [
+            {
+              "id": "make-grow",
+              "gloss": "make grow",
+              "definition": "Yahweh causes plants, righteousness, salvation and the Branch to sprout.",
+              "evidence": [
+                {
+                  "ref": "Gen.2.9",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jer.33.15"
+                },
+                {
+                  "ref": "Psa.132.17"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "grow",
+          "senses": [
+            {
+              "id": "grow",
+              "gloss": "grow",
+              "definition": "Hair and beards grow after being cut.",
+              "evidence": [
+                {
+                  "ref": "Jdg.16.22",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "צֶמַח",
+      "bdb": [
+        "r.cj.ab"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "sprout, branch",
+      "senses": [
+        {
+          "id": "sprout-or-branch",
+          "gloss": "sprout or branch",
+          "definition": "A sprout is vegetation, growth or the Branch promised by Yahweh.",
+          "evidence": [
+            {
+              "ref": "Isa.4.2",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.65.11"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "note": "The figurative Branch sense is kept with the same spelling and root."
+}

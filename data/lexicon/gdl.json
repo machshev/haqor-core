@@ -1,0 +1,2356 @@
+{
+  "id": "gdl",
+  "root": "גדל",
+  "status": "draft",
+  "updated": "2026-11-15",
+  "tags": [
+    "greatness",
+    "growth",
+    "god",
+    "priesthood",
+    "praise",
+    "pride",
+    "tower",
+    "kingdom"
+  ],
+  "gloss": "great; grow up, become great; magnify; tower",
+  "summary": "To be or become great: in size, number, force, age and rank. The adjective גָּדוֹל, one of scripture's commonest words, is “great” set against קָטֹן “small” (the great and the small light, the older and the younger son), and the verb is to grow up, of a child, and to become great, of a man Yahweh blesses; in the piel to bring up children and to make great or magnify, in the hiphil to do great things or to magnify oneself, often against Yahweh. Its chief subject is Yahweh himself, “a great God and a great king above all gods”, whose name his people magnify; מִגְדָּל, a tower, is a great building. In the Peshitta the root is only to plait (the crown of thorns) and a tower, “great” there being רַבָּא, and the Hebrew גְּדִלִים “twisted threads” goes with that sense, whose tie to “great” is not yet clear.",
+  "words": [
+    {
+      "lemma": "גָּדוֹל",
+      "pos": "adjective",
+      "gloss": "great, large; loud; older; great (in rank); great things",
+      "bdb": [
+        "c.aq.ae"
+      ],
+      "cognate_ids": [
+        "uga-gdl",
+        "arc-gedal"
+      ],
+      "summary": "About 525 times. Great in whatever the noun has: size, number, force, sound, age, rank. The feminine plural is used as a noun, “great things”. A few tokens counted here are the verb spelled like it (וְגָדוֹל “and becoming great”, 2Sa 5:10; 1Ch 11:9).",
+      "senses": [
+        {
+          "id": "great-size",
+          "gloss": "great, large (in size or extent)",
+          "definition": "Large in size or extent, as against small: lights, sea creatures, a stone, a city, a river, the sea, a weight or a measure.",
+          "evidence": [
+            {
+              "ref": "Gen.1.16",
+              "role": "defining",
+              "note": "“The two great lights (הַמְּאֹרֹת הַגְּדֹלִים), הַמָּאוֹר הַגָּדֹל to rule the day and הַמָּאוֹר הַקָּטֹן to rule the night”: great against small."
+            },
+            {
+              "ref": "Deu.25.13",
+              "role": "defining",
+              "note": "“A stone and a stone, גְּדוֹלָה וּקְטַנָּה”: a large and a small weight."
+            },
+            {
+              "ref": "Gen.29.2",
+              "note": "The stone on the mouth of the well was large."
+            },
+            {
+              "ref": "Gen.1.21",
+              "note": "God created הַתַּנִּינִם הַגְּדֹלִים, the great sea creatures."
+            },
+            {
+              "ref": "Jon.3.3",
+              "note": "Nineveh “a great city to God, a journey of three days”."
+            },
+            {
+              "ref": "Gen.15.18",
+              "note": "“From the river of Egypt to הַנָּהָר הַגָּדֹל, the river Euphrates.”"
+            },
+            {
+              "ref": "Num.34.6",
+              "note": "The western border: הַיָּם הַגָּדוֹל, the Great Sea."
+            },
+            {
+              "ref": "Ezk.17.3",
+              "note": "“The great eagle, great of wings.”"
+            }
+          ]
+        },
+        {
+          "id": "great-nation",
+          "gloss": "great (in number), a great nation",
+          "definition": "Of a people: great in number and strength, many grown from few.",
+          "evidence": [
+            {
+              "ref": "Gen.12.2",
+              "role": "defining",
+              "note": "“I will make you לְגוֹי גָּדוֹל.”"
+            },
+            {
+              "ref": "Deu.26.5",
+              "role": "defining",
+              "note": "Going down to Egypt few (בִּמְתֵי מְעָט), “there he became a great, mighty and numerous (וָרָב) nation”."
+            },
+            {
+              "ref": "Gen.18.18",
+              "note": "Abraham “will surely become a great and mighty nation”."
+            },
+            {
+              "ref": "Gen.21.18",
+              "note": "Of Ishmael: “I will make him into a great nation.”"
+            }
+          ]
+        },
+        {
+          "id": "great-force",
+          "gloss": "great (in force or degree)",
+          "definition": "Great in force or degree: a cry, fear, trembling, a slaughter, a sin or an evil.",
+          "evidence": [
+            {
+              "ref": "Gen.27.34",
+              "role": "defining",
+              "note": "Esau “cried out צְעָקָה גְּדֹלָה וּמָרָה עַד־מְאֹד”."
+            },
+            {
+              "ref": "Exo.32.30",
+              "role": "defining",
+              "note": "“You have sinned חֲטָאָה גְדֹלָה”: a great sin."
+            },
+            {
+              "ref": "Gen.27.33",
+              "note": "Isaac trembled “a very great trembling”."
+            },
+            {
+              "ref": "Jon.1.10",
+              "note": "The men feared a great fear."
+            },
+            {
+              "ref": "Jdg.11.33",
+              "note": "“A very great slaughter.”"
+            },
+            {
+              "ref": "Gen.39.9",
+              "note": "Joseph: “how can I do this great evil, and sin against God?”"
+            },
+            {
+              "ref": "Gen.20.9"
+            }
+          ]
+        },
+        {
+          "id": "loud",
+          "gloss": "loud (of a voice)",
+          "definition": "With קוֹל: a great, that is a loud, voice.",
+          "evidence": [
+            {
+              "ref": "Gen.39.14",
+              "role": "defining",
+              "note": "“I called out בְּקוֹל גָּדוֹל.”"
+            },
+            {
+              "ref": "Deu.5.22",
+              "note": "Yahweh spoke the ten words “with a great voice” from the fire."
+            },
+            {
+              "ref": "1Ki.8.55",
+              "note": "Solomon blessed the assembly with a great voice."
+            },
+            {
+              "ref": "Ezr.10.12",
+              "note": "The assembly answered with a loud voice."
+            }
+          ]
+        },
+        {
+          "id": "older",
+          "gloss": "older, elder, eldest",
+          "definition": "Of brothers and sisters: the greater in age, set against the קָטֹן, the younger.",
+          "evidence": [
+            {
+              "ref": "Gen.29.16",
+              "role": "defining",
+              "note": "“The name of הַגְּדֹלָה was Leah, and the name of הַקְּטַנָּה Rachel.”"
+            },
+            {
+              "ref": "Gen.27.15",
+              "role": "defining",
+              "note": "“Esau בְּנָהּ הַגָּדֹל … Jacob בְּנָהּ הַקָּטָן.”"
+            },
+            {
+              "ref": "Gen.44.12",
+              "role": "defining",
+              "note": "“He began with the oldest and ended with the youngest (בַּגָּדוֹל הֵחֵל וּבַקָּטֹן כִּלָּה).”"
+            },
+            {
+              "ref": "Gen.27.1",
+              "note": "Isaac called Esau his elder son."
+            },
+            {
+              "ref": "Gen.10.21",
+              "note": "“The brother of Japheth the elder.”"
+            },
+            {
+              "ref": "1Sa.17.14",
+              "note": "“David was the youngest, and the three eldest went after Saul.”"
+            },
+            {
+              "ref": "1Sa.18.17",
+              "note": "Saul's older daughter Merab."
+            }
+          ]
+        },
+        {
+          "id": "great-rank",
+          "gloss": "great (in rank or honour); the great ones",
+          "definition": "Great in standing among men: a great man, a chief; in the plural, the great ones of a city or a king's house. In judgment the great is to be heard no more than the small.",
+          "evidence": [
+            {
+              "ref": "Exo.11.3",
+              "role": "defining",
+              "note": "“The man Moses was very great in the land of Egypt, in the eyes of Pharaoh's servants and in the eyes of the people.”"
+            },
+            {
+              "ref": "Lev.19.15",
+              "role": "defining",
+              "note": "“You shall not lift the face of the poor (דָל), nor honour the face of the great (גָדוֹל).”"
+            },
+            {
+              "ref": "Deu.1.17",
+              "role": "defining",
+              "note": "“You shall hear כַּקָּטֹן כַּגָּדֹל, small and great alike.”"
+            },
+            {
+              "ref": "2Ki.5.1",
+              "note": "Naaman “a great man before his master”."
+            },
+            {
+              "ref": "Est.10.3",
+              "note": "Mordecai, second to the king and great among the Jews."
+            },
+            {
+              "ref": "Jer.5.5",
+              "note": "“I will go to the great ones (הַגְּדֹלִים) and speak with them.”"
+            },
+            {
+              "ref": "2Ki.10.6",
+              "note": "The great ones of the city were bringing up the king's sons."
+            },
+            {
+              "ref": "2Sa.3.38",
+              "note": "“A commander and a great man has fallen this day in Israel.”"
+            },
+            {
+              "ref": "Dan.12.1",
+              "note": "“Michael, the great prince who stands over the sons of your people.”"
+            }
+          ],
+          "senses": [
+            {
+              "id": "great-priest",
+              "gloss": "the great priest (high priest)",
+              "definition": "הַכֹּהֵן הַגָּדוֹל, the priest great among his brothers, anointed with the oil of anointing: the high priest.",
+              "evidence": [
+                {
+                  "ref": "Lev.21.10",
+                  "role": "defining",
+                  "note": "“וְהַכֹּהֵן הַגָּדוֹל מֵאֶחָיו, on whose head the oil of anointing was poured.”"
+                },
+                {
+                  "ref": "Num.35.25",
+                  "note": "The manslayer stays in the city of refuge “until the death of the great priest, whom one anointed with the holy oil”."
+                },
+                {
+                  "ref": "Num.35.28"
+                },
+                {
+                  "ref": "Hag.1.1",
+                  "note": "Joshua son of Jehozadak הַכֹּהֵן הַגָּדוֹל."
+                },
+                {
+                  "ref": "Zec.3.1"
+                },
+                {
+                  "ref": "Zec.6.11",
+                  "note": "Crowns set on the head of Joshua the great priest."
+                },
+                {
+                  "ref": "Neh.3.1",
+                  "note": "Eliashib the great priest."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "god-great",
+          "gloss": "great (of Yahweh, his name and his works)",
+          "definition": "Of Yahweh: great above all gods, great in his name, his hand and his works; the confession that he is great goes with the confession that he alone is God.",
+          "evidence": [
+            {
+              "ref": "Deu.10.17",
+              "role": "defining",
+              "note": "“הָאֵל הַגָּדֹל הַגִּבֹּר וְהַנּוֹרָא, who does not lift up a face and takes no bribe.”"
+            },
+            {
+              "ref": "Psa.95.3",
+              "role": "defining",
+              "note": "“כִּי אֵל גָּדוֹל יַהְוֶה וּמֶלֶךְ גָּדוֹל עַל־כָּל־אֱלֹהִים.”"
+            },
+            {
+              "ref": "Psa.86.10",
+              "role": "defining",
+              "note": "“For you are great and do wonders; you are God, you alone.”"
+            },
+            {
+              "ref": "Exo.18.11",
+              "role": "defining",
+              "note": "Jethro: “Now I know that Yahweh is greater than all the gods.”"
+            },
+            {
+              "ref": "Psa.48.2",
+              "note": "“Great is Yahweh and greatly to be praised.”"
+            },
+            {
+              "ref": "Psa.99.2",
+              "note": "“Yahweh in Zion is great, and he is high over all the peoples.”"
+            },
+            {
+              "ref": "Psa.145.3"
+            },
+            {
+              "ref": "Jer.10.6",
+              "note": "“There is none like you, Yahweh; you are great, and your name is great in might.”"
+            },
+            {
+              "ref": "Mal.1.11",
+              "note": "“My name will be great among the nations.”"
+            },
+            {
+              "ref": "Mal.1.14",
+              "note": "“I am a great king, says Yahweh of armies.”"
+            },
+            {
+              "ref": "Psa.47.3",
+              "note": "“A great king over all the earth.”"
+            },
+            {
+              "ref": "Neh.1.5"
+            },
+            {
+              "ref": "Exo.14.31",
+              "note": "Israel saw הַיָּד הַגְּדֹלָה, the great hand Yahweh used against Egypt."
+            },
+            {
+              "ref": "2Ch.2.4",
+              "note": "“The house I build is great, for our God is greater than all gods.”"
+            }
+          ]
+        },
+        {
+          "id": "great-things",
+          "gloss": "great things, great deeds",
+          "definition": "The feminine plural as a noun: great things, chiefly the deeds Yahweh does; of a man, great things sought or spoken beyond his place.",
+          "evidence": [
+            {
+              "ref": "Deu.10.21",
+              "role": "defining",
+              "note": "“Your God, who has done for you הַגְּדֹלֹת וְאֶת־הַנּוֹרָאֹת which your eyes have seen.”"
+            },
+            {
+              "ref": "Job.5.9",
+              "note": "“Who does great things and unsearchable, wonders without number.”"
+            },
+            {
+              "ref": "Psa.106.21",
+              "note": "“They forgot God their saviour, who did great things in Egypt.”"
+            },
+            {
+              "ref": "Jer.33.3",
+              "note": "“I will tell you גְּדֹלוֹת וּבְצֻרוֹת which you do not know.”"
+            },
+            {
+              "ref": "Jer.45.5",
+              "role": "defining",
+              "note": "To Baruch: “And you, do you seek גְדֹלוֹת for yourself? Do not seek them.”"
+            },
+            {
+              "ref": "Psa.131.1",
+              "note": "“Nor do I walk in great things and in wonders beyond me.”"
+            },
+            {
+              "ref": "Psa.12.4",
+              "note": "“The tongue speaking great things.”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "μέγας",
+          "gloss": "great, large; loud",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.1.16, הַגָּדֹל → μέγαν; Lev.21.10, הַגָּדוֹל → μέγας; Hag.1.1 → μέγαν; Jol.3.4 → μεγάλην; Jer.31.34, גְּדוֹלָם → μεγάλου; μέγας renders גָּדוֹל ×409"
+            },
+            {
+              "ref": "Heb.10.21",
+              "role": "defining",
+              "note": "“And having ἱερέα μέγαν over the house of God”: the Hebrew “great priest”."
+            },
+            {
+              "ref": "Heb.4.14",
+              "note": "“Having then ἀρχιερέα μέγαν who has passed through the heavens, Jesus the son of God.”"
+            },
+            {
+              "ref": "Act.2.20",
+              "role": "defining",
+              "note": "Joel 3:4 quoted: “before the great and notable day of the Lord comes (τὴν ἡμέραν κυρίου τὴν μεγάλην)”."
+            },
+            {
+              "ref": "Heb.8.11",
+              "role": "defining",
+              "note": "Jer 31:34 quoted: “all will know me, ἀπὸ μικροῦ αὐτῶν ἕως μεγάλου αὐτῶν”."
+            },
+            {
+              "ref": "Luk.1.32",
+              "note": "Of Jesus: “he will be great (μέγας), and will be called son of the Highest”."
+            }
+          ]
+        },
+        {
+          "lemma": "πρεσβύτερος",
+          "gloss": "older, elder",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.27.1, הַגָּדֹל → πρεσβύτερον; πρεσβύτερος renders גָּדוֹל ×7"
+            },
+            {
+              "ref": "Luk.15.25",
+              "note": "“His elder son (ὁ υἱὸς αὐτοῦ ὁ πρεσβύτερος) was in the field.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "נוֹרָא",
+            "note": "“Fearful”: great and fearful, of Yahweh, his deeds and his day.",
+            "evidence": [
+              {
+                "ref": "Deu.10.21",
+                "role": "defining"
+              },
+              {
+                "ref": "Neh.1.5"
+              },
+              {
+                "ref": "Jol.3.4"
+              }
+            ]
+          },
+          {
+            "lemma": "רַב",
+            "note": "“Many, abundant”: beside גָּדוֹל of a nation and of Yahweh's counsel and deeds.",
+            "evidence": [
+              {
+                "ref": "Jer.32.19",
+                "role": "defining",
+                "note": "“גְּדֹל הָעֵצָה וְרַב הָעֲלִילִיָּה.”"
+              },
+              {
+                "ref": "Deu.26.5"
+              },
+              {
+                "ref": "Jol.2.11"
+              }
+            ]
+          },
+          {
+            "lemma": "רָם",
+            "note": "“High”.",
+            "evidence": [
+              {
+                "ref": "Psa.99.2",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "עָצוּם",
+            "note": "“Mighty, numerous”, of a nation.",
+            "evidence": [
+              {
+                "ref": "Gen.18.18",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.26.5"
+              }
+            ]
+          },
+          {
+            "lemma": "מְהֻלָּל",
+            "note": "“To be praised”: great is Yahweh and greatly to be praised.",
+            "evidence": [
+              {
+                "ref": "Psa.48.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.145.3"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "קָטֹן",
+            "note": "“Small, young”: the constant opposite, in size, age and rank.",
+            "evidence": [
+              {
+                "ref": "Gen.1.16",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.29.16",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.25.13"
+              },
+              {
+                "ref": "Gen.27.15"
+              },
+              {
+                "ref": "Gen.44.12"
+              },
+              {
+                "ref": "1Sa.17.14"
+              },
+              {
+                "ref": "Deu.1.17"
+              }
+            ]
+          },
+          {
+            "lemma": "דַּל",
+            "note": "“Poor, weak”: the face of the poor and of the great are alike in judgment.",
+            "evidence": [
+              {
+                "ref": "Lev.19.15",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "הַכֹּהֵן הַגָּדוֹל",
+            "gloss": "the great priest, the high priest",
+            "evidence": [
+              {
+                "ref": "Lev.21.10",
+                "role": "defining"
+              },
+              {
+                "ref": "Hag.1.1"
+              },
+              {
+                "ref": "Zec.6.11"
+              }
+            ]
+          },
+          {
+            "phrase": "מִקְּטַנָּם וְעַד־גְּדוֹלָם",
+            "gloss": "from the least of them to the greatest of them: all, without exception",
+            "evidence": [
+              {
+                "ref": "Jer.6.13",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.31.34"
+              },
+              {
+                "ref": "Jon.3.5",
+                "note": "In the reverse order, מִגְּדוֹלָם וְעַד־קְטַנָּם."
+              }
+            ]
+          },
+          {
+            "phrase": "יוֹם יַהְוֶה הַגָּדוֹל",
+            "gloss": "the great day of Yahweh",
+            "evidence": [
+              {
+                "ref": "Jol.3.4",
+                "role": "defining",
+                "note": "“The great and fearful day of Yahweh.”"
+              },
+              {
+                "ref": "Mal.3.23"
+              },
+              {
+                "ref": "Zep.1.14"
+              },
+              {
+                "ref": "Jol.2.11"
+              }
+            ]
+          },
+          {
+            "phrase": "הָאֵל הַגָּדוֹל וְהַנּוֹרָא",
+            "gloss": "the great and fearful God",
+            "evidence": [
+              {
+                "ref": "Neh.1.5",
+                "role": "defining"
+              },
+              {
+                "ref": "Dan.9.4"
+              },
+              {
+                "ref": "Deu.10.17"
+              }
+            ]
+          },
+          {
+            "phrase": "קוֹל גָּדוֹל",
+            "gloss": "a loud voice",
+            "evidence": [
+              {
+                "ref": "Gen.39.14",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.5.22"
+              }
+            ]
+          },
+          {
+            "phrase": "הַיָּם הַגָּדוֹל",
+            "gloss": "the Great Sea (the Mediterranean)",
+            "evidence": [
+              {
+                "ref": "Num.34.6",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "גָּדַל",
+      "pos": "verb",
+      "gloss": "grow up, become great, be great; (piel) bring up, make grow, make great, magnify; (hiphil) make great, do great things, magnify oneself; (hithpael) magnify oneself",
+      "bdb": [
+        "c.aq.aa"
+      ],
+      "cognate_ids": [
+        "uga-gdl",
+        "arc-gedal"
+      ],
+      "summary": "About 118 times. The qal is growing: a child grows up, a man grows great; and being great, of Yahweh and his name, and of a sin or a grief. The causative stems make great: the piel of bringing up children and making a man or a name great, and of praise, “magnify Yahweh”; the hiphil of doing great things, and of a man or nation making itself great against Yahweh. The brief's verb tokens with no stem are the names Giddel and Giddalti.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "grow up; become great; be great",
+          "senses": [
+            {
+              "id": "grow-up",
+              "gloss": "grow up (of a child)",
+              "definition": "Of a child or young animal: to grow up, from weaning to manhood.",
+              "cognate_ids": [
+                "ar-jadil"
+              ],
+              "evidence": [
+                {
+                  "ref": "Gen.21.8",
+                  "role": "defining",
+                  "note": "“וַיִּגְדַּל הַיֶּלֶד וַיִּגָּמַל”: the child grew and was weaned."
+                },
+                {
+                  "ref": "Gen.25.27",
+                  "role": "defining",
+                  "note": "“וַיִּגְדְּלוּ הַנְּעָרִים, and Esau was a man who knew hunting.”"
+                },
+                {
+                  "ref": "Exo.2.10",
+                  "note": "The child grew, and she brought him to Pharaoh's daughter."
+                },
+                {
+                  "ref": "Exo.2.11",
+                  "note": "“When Moses had grown up he went out to his brothers.”"
+                },
+                {
+                  "ref": "Gen.38.11",
+                  "note": "“Until Shelah my son grows up.”"
+                },
+                {
+                  "ref": "Gen.21.20"
+                },
+                {
+                  "ref": "Jdg.13.24",
+                  "note": "Samson: “the boy grew, and Yahweh blessed him”."
+                },
+                {
+                  "ref": "1Sa.3.19"
+                },
+                {
+                  "ref": "2Ki.4.18"
+                },
+                {
+                  "ref": "1Ki.12.8",
+                  "note": "“The young men who had grown up with him.”"
+                },
+                {
+                  "ref": "2Sa.12.3",
+                  "note": "The poor man's ewe lamb “grew up with him and with his sons”."
+                }
+              ]
+            },
+            {
+              "id": "become-great",
+              "gloss": "become great (in wealth, power, rank)",
+              "definition": "Of a man or a people: to become great, in flocks, riches, wisdom or dominion, often because Yahweh is with him or has blessed him.",
+              "evidence": [
+                {
+                  "ref": "Gen.26.13",
+                  "role": "defining",
+                  "note": "“וַיִּגְדַּל הָאִישׁ, and went on growing great (הָלוֹךְ וְגָדֵל) until he was very great.”"
+                },
+                {
+                  "ref": "Gen.24.35",
+                  "role": "defining",
+                  "note": "“Yahweh has blessed my master greatly וַיִּגְדָּל, and has given him flocks and herds, silver and gold.”"
+                },
+                {
+                  "ref": "1Ki.10.23",
+                  "role": "defining",
+                  "note": "Solomon became greater than all the kings of the earth in riches and in wisdom."
+                },
+                {
+                  "ref": "Gen.48.19",
+                  "role": "defining",
+                  "note": "“He also will be great, but his younger brother (אָחִיו הַקָּטֹן) will be greater than he.”"
+                },
+                {
+                  "ref": "Gen.41.40",
+                  "note": "Pharaoh: “only in the throne will I be greater than you”."
+                },
+                {
+                  "ref": "Ecc.2.9"
+                },
+                {
+                  "ref": "Jer.5.27",
+                  "note": "“Their houses are full of deceit; therefore they have become great and rich.”"
+                },
+                {
+                  "ref": "Mic.5.3",
+                  "note": "The ruler from Bethlehem: “now he will be great to the ends of the earth”."
+                },
+                {
+                  "ref": "Dan.8.9",
+                  "note": "The little horn “grew exceedingly great”."
+                },
+                {
+                  "ref": "Dan.8.10"
+                }
+              ]
+            },
+            {
+              "id": "be-great",
+              "gloss": "be great, be magnified",
+              "definition": "To be great: of Yahweh, his name and his works, which his people wish and declare great; of a man's life valued in another's eyes; of a sin, an outcry or a grief.",
+              "evidence": [
+                {
+                  "ref": "2Sa.7.22",
+                  "role": "defining",
+                  "note": "“Therefore גָּדַלְתָּ, my Lord Yahweh, for there is none like you, and there is no God besides you.”"
+                },
+                {
+                  "ref": "Psa.35.27",
+                  "role": "defining",
+                  "note": "“Let them say continually, יִגְדַּל יַהְוֶה.”"
+                },
+                {
+                  "ref": "Psa.40.17"
+                },
+                {
+                  "ref": "2Sa.7.26",
+                  "note": "“Let your name be great for ever.”"
+                },
+                {
+                  "ref": "Psa.104.1",
+                  "note": "“Yahweh my God, you are very great.”"
+                },
+                {
+                  "ref": "Psa.92.6",
+                  "note": "“How great are your works, Yahweh.”"
+                },
+                {
+                  "ref": "Mal.1.5",
+                  "note": "“Great is Yahweh beyond the border of Israel.”"
+                },
+                {
+                  "ref": "Num.14.17",
+                  "note": "“Let the power of my Lord be great.”"
+                },
+                {
+                  "ref": "1Sa.26.24",
+                  "role": "defining",
+                  "note": "“As your life was great (גָּדְלָה נַפְשְׁךָ) this day in my eyes, so let my life be great in the eyes of Yahweh.”"
+                },
+                {
+                  "ref": "Gen.19.13",
+                  "note": "“Their outcry has become great before Yahweh.”"
+                },
+                {
+                  "ref": "Lam.4.6",
+                  "note": "The iniquity of my people is greater than the sin of Sodom."
+                },
+                {
+                  "ref": "Ezr.9.6",
+                  "note": "“Our guilt has grown up to the heavens.”"
+                },
+                {
+                  "ref": "Job.2.13",
+                  "note": "“They saw that his grief was very great.”"
+                },
+                {
+                  "ref": "Zec.12.11",
+                  "note": "“The mourning in Jerusalem will be great.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "bring up, rear; make grow; make great; magnify",
+          "senses": [
+            {
+              "id": "rear",
+              "gloss": "bring up, rear (children)",
+              "definition": "To bring up children: to make them grow.",
+              "cognate_ids": [
+                "ar-jadil"
+              ],
+              "evidence": [
+                {
+                  "ref": "Isa.1.2",
+                  "role": "defining",
+                  "note": "“בָּנִים גִּדַּלְתִּי וְרוֹמַמְתִּי, and they have rebelled against me.”"
+                },
+                {
+                  "ref": "Isa.23.4",
+                  "note": "“I have not brought up (גִדַּלְתִּי) young men, nor raised (רוֹמַמְתִּי) virgins.”"
+                },
+                {
+                  "ref": "Isa.49.21",
+                  "note": "“And these, who brought them up (מִי גִדֵּל)?”"
+                },
+                {
+                  "ref": "Isa.51.18"
+                },
+                {
+                  "ref": "Hos.9.12",
+                  "note": "“Though they bring up their sons, I will bereave them.”"
+                },
+                {
+                  "ref": "2Ki.10.6",
+                  "note": "The great men of the city were bringing up the king's seventy sons."
+                },
+                {
+                  "ref": "Dan.1.5",
+                  "note": "The king appointed food “to nourish them three years”."
+                }
+              ]
+            },
+            {
+              "id": "make-grow",
+              "gloss": "make grow, let grow (hair, plants)",
+              "definition": "To let hair grow long, or to make a tree grow.",
+              "evidence": [
+                {
+                  "ref": "Num.6.5",
+                  "role": "defining",
+                  "note": "The Nazirite: “he shall let grow (גַּדֵּל) the locks of the hair of his head”."
+                },
+                {
+                  "ref": "Isa.44.14",
+                  "role": "defining",
+                  "note": "“He plants a pine, and the rain makes it grow (יְגַדֵּל).”"
+                },
+                {
+                  "ref": "Ezk.31.4",
+                  "note": "“The waters made it grow, the deep made it high.”"
+                },
+                {
+                  "ref": "Jon.4.10",
+                  "note": "The plant “for which you did not labour, nor made it grow”."
+                }
+              ]
+            },
+            {
+              "id": "make-great",
+              "gloss": "make great (a man, a name, a throne)",
+              "definition": "To make a man, his name or his throne great: to raise him in the eyes of others. Yahweh is the usual subject; a king may do it too.",
+              "evidence": [
+                {
+                  "ref": "Gen.12.2",
+                  "role": "defining",
+                  "note": "“וַאֲגַדְּלָה שְׁמֶךָ”: I will make your name great."
+                },
+                {
+                  "ref": "Jos.3.7",
+                  "role": "defining",
+                  "note": "“This day I will begin to make you great (גַּדֶּלְךָ) in the eyes of all Israel, that they may know that as I was with Moses, I will be with you.”"
+                },
+                {
+                  "ref": "Jos.4.14"
+                },
+                {
+                  "ref": "1Ki.1.37",
+                  "note": "“May he make his throne greater than the throne of my lord King David.”"
+                },
+                {
+                  "ref": "1Ki.1.47"
+                },
+                {
+                  "ref": "1Ch.29.25",
+                  "note": "Yahweh made Solomon exceedingly great in the eyes of all Israel."
+                },
+                {
+                  "ref": "2Ch.1.1"
+                },
+                {
+                  "ref": "1Ch.29.12",
+                  "note": "“In your hand it is to make great and to give strength to all.”"
+                },
+                {
+                  "ref": "Est.3.1",
+                  "note": "Ahasuerus made Haman great and lifted him up."
+                },
+                {
+                  "ref": "Est.5.11"
+                },
+                {
+                  "ref": "Est.10.2"
+                },
+                {
+                  "ref": "Job.7.17",
+                  "note": "“What is man that you make him great?”"
+                }
+              ]
+            },
+            {
+              "id": "magnify",
+              "gloss": "magnify (Yahweh), declare great",
+              "definition": "To make Yahweh great in speech and song: to declare his greatness, beside “exalt” and “praise”.",
+              "evidence": [
+                {
+                  "ref": "Psa.34.4",
+                  "role": "defining",
+                  "note": "“גַּדְּלוּ לַיַהְוֶה אִתִּי, and let us exalt (וּנְרוֹמְמָה) his name together.”"
+                },
+                {
+                  "ref": "Psa.69.31",
+                  "role": "defining",
+                  "note": "“I will praise the name of God with a song, וַאֲגַדְּלֶנּוּ with thanksgiving.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be grown up",
+          "senses": [
+            {
+              "id": "grown-up-well-grown",
+              "gloss": "grown up, well grown",
+              "definition": "Of young plants: grown up, the picture of sons in their youth.",
+              "evidence": [
+                {
+                  "ref": "Psa.144.12",
+                  "role": "defining",
+                  "note": "“Our sons like plants מְגֻדָּלִים in their youth.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "make great; do great things; magnify oneself",
+          "senses": [
+            {
+              "id": "make-great-hiphil",
+              "gloss": "make great, enlarge",
+              "definition": "To make a thing great or greater: mercy, salvation, joy, wisdom, a building, a heap; dishonestly, a shekel.",
+              "cognate_ids": [
+                "phn-gdl"
+              ],
+              "evidence": [
+                {
+                  "ref": "Gen.19.19",
+                  "role": "defining",
+                  "note": "“וַתַּגְדֵּל חַסְדְּךָ which you have done with me, to keep my soul alive.”"
+                },
+                {
+                  "ref": "Amo.8.5",
+                  "role": "defining",
+                  "note": "“לְהַקְטִין אֵיפָה וּלְהַגְדִּיל שֶׁקֶל”: making the ephah small and the shekel great."
+                },
+                {
+                  "ref": "Psa.18.51",
+                  "note": "מַגְדִּיל יְשׁוּעוֹת מַלְכּוֹ: “making great the salvation of his king”."
+                },
+                {
+                  "ref": "Isa.9.2",
+                  "note": "“You have made great the joy.”"
+                },
+                {
+                  "ref": "Isa.28.29",
+                  "note": "“He makes wisdom great.”"
+                },
+                {
+                  "ref": "Isa.42.21",
+                  "note": "Yahweh was pleased “to make the law great and glorious”."
+                },
+                {
+                  "ref": "Psa.138.2"
+                },
+                {
+                  "ref": "Ecc.1.16"
+                },
+                {
+                  "ref": "Ecc.2.4",
+                  "note": "“I made my works great.”"
+                },
+                {
+                  "ref": "1Ch.22.5",
+                  "note": "The house for Yahweh is to be made exceedingly great."
+                },
+                {
+                  "ref": "Ezk.24.9"
+                },
+                {
+                  "ref": "1Sa.20.41",
+                  "note": "They wept together “until David exceeded” (הִגְדִּיל)."
+                }
+              ]
+            },
+            {
+              "id": "do-great",
+              "gloss": "do great things",
+              "definition": "With לַעֲשׂוֹת or alone: to do great things, of Yahweh's deliverance of his people.",
+              "evidence": [
+                {
+                  "ref": "Psa.126.2",
+                  "role": "defining",
+                  "note": "“They said among the nations, הִגְדִּיל יַהְוֶה לַעֲשׂוֹת עִם־אֵלֶּה.”"
+                },
+                {
+                  "ref": "Psa.126.3"
+                },
+                {
+                  "ref": "Jol.2.21",
+                  "role": "defining",
+                  "note": "“Fear not, land; be glad and rejoice, for Yahweh has done great things.”"
+                },
+                {
+                  "ref": "Jol.2.20"
+                },
+                {
+                  "ref": "1Sa.12.24",
+                  "note": "“Consider what great things he has done with you.”"
+                }
+              ]
+            },
+            {
+              "id": "magnify-against",
+              "gloss": "magnify oneself (against), act proudly",
+              "definition": "To make oneself great, with עַל “against” a person or Yahweh, or with “the mouth”: to boast and act proudly.",
+              "cognate_ids": [
+                "phn-gdl"
+              ],
+              "evidence": [
+                {
+                  "ref": "Jer.48.26",
+                  "role": "defining",
+                  "note": "“For against Yahweh he has made himself great (עַל־יַהְוֶה הִגְדִּיל).”"
+                },
+                {
+                  "ref": "Jer.48.42"
+                },
+                {
+                  "ref": "Oba.1.12",
+                  "role": "defining",
+                  "note": "“Do not make your mouth great (וְאַל־תַּגְדֵּל פִּיךָ) in the day of distress.”"
+                },
+                {
+                  "ref": "Zep.2.8",
+                  "note": "Moab and Ammon reproached my people and made themselves great against their border."
+                },
+                {
+                  "ref": "Zep.2.10"
+                },
+                {
+                  "ref": "Psa.35.26"
+                },
+                {
+                  "ref": "Psa.38.17",
+                  "note": "“When my foot slips, they magnify themselves against me.”"
+                },
+                {
+                  "ref": "Psa.55.13"
+                },
+                {
+                  "ref": "Job.19.5"
+                },
+                {
+                  "ref": "Lam.1.9",
+                  "note": "“The enemy has magnified himself.”"
+                },
+                {
+                  "ref": "Ezk.35.13",
+                  "note": "“You magnified yourselves against me with your mouth.”"
+                },
+                {
+                  "ref": "Psa.41.10"
+                },
+                {
+                  "ref": "Dan.8.4",
+                  "note": "The ram “did as it willed and became great”."
+                },
+                {
+                  "ref": "Dan.8.8"
+                },
+                {
+                  "ref": "Dan.8.11"
+                },
+                {
+                  "ref": "Dan.8.25",
+                  "note": "“In his heart he will make himself great … and stand against the Prince of princes.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpael",
+          "gloss": "magnify oneself",
+          "senses": [
+            {
+              "id": "magnify-oneself",
+              "gloss": "magnify oneself",
+              "definition": "To show oneself great: of a tool against the one who wields it, and of a king against every god; of Yahweh, to show his greatness before the nations.",
+              "evidence": [
+                {
+                  "ref": "Isa.10.15",
+                  "role": "defining",
+                  "note": "“Shall the axe boast itself against the one who hews with it? Or יִתְגַּדֵּל הַמַּשּׂוֹר against the one who moves it?”"
+                },
+                {
+                  "ref": "Ezk.38.23",
+                  "role": "defining",
+                  "note": "“וְהִתְגַּדִּלְתִּי וְהִתְקַדִּשְׁתִּי, and I will be known in the eyes of many nations.”"
+                },
+                {
+                  "ref": "Dan.11.36",
+                  "note": "The king “will exalt himself and magnify himself above every god”."
+                },
+                {
+                  "ref": "Dan.11.37"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "μεγαλύνω",
+          "gloss": "make great, magnify",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.12.2, אֲגַדְּלָה → μεγαλυνῶ; Gen.19.19, תַּגְדֵּל → ἐμεγάλυνας; Psa.34.4, גַּדְּלוּ → μεγαλύνατε; Psa.69.31 → μεγαλυνῶ; Mic.5.3, יִגְדַּל → μεγαλυνθήσεται; Ezk.38.23 → μεγαλυνθήσομαι"
+            },
+            {
+              "ref": "Luk.1.46",
+              "role": "defining",
+              "note": "Mary: “my soul magnifies (μεγαλύνει) the Lord”, as Psa 34:4 and 69:31."
+            },
+            {
+              "ref": "Luk.1.58",
+              "role": "defining",
+              "note": "“The Lord had magnified his mercy (ἐμεγάλυνεν κύριος τὸ ἔλεος αὐτοῦ) with her”: the phrase of Gen 19:19."
+            },
+            {
+              "ref": "Act.19.17",
+              "note": "“The name of the Lord Jesus was magnified.”"
+            },
+            {
+              "ref": "Php.1.20",
+              "note": "“Christ will be magnified in my body, whether by life or by death.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "רוֹמֵם",
+            "note": "“Raise up, exalt”: the piel of רוּם beside the piel of גָּדַל, of bringing up children and of exalting Yahweh.",
+            "evidence": [
+              {
+                "ref": "Isa.1.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.23.4"
+              },
+              {
+                "ref": "Psa.34.4",
+                "role": "defining"
+              },
+              {
+                "ref": "Dan.11.36",
+                "note": "The hithpael pair: וְיִתְרוֹמֵם וְיִתְגַּדֵּל."
+              }
+            ]
+          },
+          {
+            "lemma": "הִתְקַדֵּשׁ",
+            "note": "“Sanctify oneself”: Yahweh shows himself great and holy.",
+            "evidence": [
+              {
+                "ref": "Ezk.38.23",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "הִקְטִין",
+            "note": "“Make small”.",
+            "evidence": [
+              {
+                "ref": "Amo.8.5",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "יִגְדַּל יַהְוֶה",
+            "gloss": "let Yahweh be great, Yahweh is great",
+            "evidence": [
+              {
+                "ref": "Psa.35.27",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.40.17"
+              },
+              {
+                "ref": "Mal.1.5"
+              }
+            ]
+          },
+          {
+            "phrase": "הִגְדִּיל לַעֲשׂוֹת",
+            "gloss": "did great things",
+            "evidence": [
+              {
+                "ref": "Psa.126.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Jol.2.21"
+              }
+            ]
+          },
+          {
+            "phrase": "עַל־יַהְוֶה הִגְדִּיל",
+            "gloss": "he magnified himself against Yahweh",
+            "evidence": [
+              {
+                "ref": "Jer.48.26",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.38.17"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "מִגְדָּל",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "tower; platform; raised bed",
+      "bdb": [
+        "c.aq.am"
+      ],
+      "cognate_ids": [
+        "uga-mgdl",
+        "phn-mgdl",
+        "arc-migdal",
+        "egy-mktr",
+        "ar-mijdal"
+      ],
+      "summary": "A tower: a great, high building, in a city or its wall, in a field or a vineyard; once Ezra's wooden platform. The place names Migdal-el (Jos 19:38), Migdal-gad (Jos 15:37) and Migdal-eder (Gen 35:21) are among its tokens.",
+      "senses": [
+        {
+          "id": "tower",
+          "gloss": "tower",
+          "definition": "A tall building: the tower of Babel, a city's stronghold, a tower on its wall, a watchtower in a field, a vineyard or the wilderness.",
+          "evidence": [
+            {
+              "ref": "Gen.11.4",
+              "role": "defining",
+              "note": "“Let us build us a city וּמִגְדָּל, whose top is in the heavens.”"
+            },
+            {
+              "ref": "Jdg.9.51",
+              "role": "defining",
+              "note": "“There was וּמִגְדַּל־עֹז in the midst of the city, and they fled there … and went up on the roof of the tower.”"
+            },
+            {
+              "ref": "Isa.5.2",
+              "role": "defining",
+              "note": "The vineyard: “he built a tower (מִגְדָּל) in its midst, and also hewed out a winepress in it”."
+            },
+            {
+              "ref": "Gen.11.5"
+            },
+            {
+              "ref": "Jdg.8.9",
+              "note": "Gideon: “I will break down this tower.”"
+            },
+            {
+              "ref": "2Ki.17.9",
+              "note": "“From the tower of the watchmen to the fortified city.”"
+            },
+            {
+              "ref": "Isa.2.15",
+              "note": "“Against every high tower and every fortified wall.”"
+            },
+            {
+              "ref": "Psa.48.13",
+              "note": "“Go round Zion, count her towers.”"
+            },
+            {
+              "ref": "2Ch.26.10",
+              "note": "Uzziah built towers in the wilderness."
+            },
+            {
+              "ref": "Neh.3.1",
+              "note": "The tower of the Hundred and the tower of Hananel."
+            },
+            {
+              "ref": "Mic.4.8",
+              "note": "“And you, מִגְדַּל־עֵדֶר, the hill of the daughter of Zion, to you it shall come, the former dominion.”"
+            },
+            {
+              "ref": "Sng.4.4",
+              "note": "“Your neck is like the tower of David.”"
+            }
+          ],
+          "senses": [
+            {
+              "id": "strong-tower",
+              "gloss": "a strong tower (of Yahweh, a refuge)",
+              "definition": "מִגְדַּל־עֹז as a picture of Yahweh and his name: the refuge the righteous run into.",
+              "evidence": [
+                {
+                  "ref": "Pro.18.10",
+                  "role": "defining",
+                  "note": "“מִגְדַּל־עֹז שֵׁם יַהְוֶה; the righteous runs into it and is set on high.”"
+                },
+                {
+                  "ref": "Psa.61.4",
+                  "role": "defining",
+                  "note": "“You have been a refuge for me, a strong tower from the enemy.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "platform-of-wood",
+          "gloss": "platform (of wood)",
+          "definition": "A raised wooden platform for reading the law to the people.",
+          "evidence": [
+            {
+              "ref": "Neh.8.4",
+              "role": "defining",
+              "note": "“Ezra the scribe stood עַל־מִגְדַּל־עֵץ which they had made for the purpose.”"
+            }
+          ]
+        },
+        {
+          "id": "raised-bed-of-spices",
+          "gloss": "raised bed (of spices)",
+          "definition": "A raised bed of spice plants, beside כַּעֲרוּגַת הַבֹּשֶׂם “like a bed of spices”.",
+          "evidence": [
+            {
+              "ref": "Sng.5.13",
+              "role": "defining",
+              "note": "“His cheeks are like a bed of spices, מִגְדְּלוֹת מֶרְקָחִים.”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "πύργος",
+          "gloss": "tower",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.11.4, מִגְדָּל → πύργον; Isa.5.2 → πύργον; Psa.61.4, מִגְדַּל → πύργος; Sng.4.4 → πύργος"
+            },
+            {
+              "ref": "Mat.21.33",
+              "role": "defining",
+              "note": "The parable from Isa 5:2: a man planted a vineyard “and built a tower (πύργον)”."
+            },
+            {
+              "ref": "Mrk.12.1"
+            },
+            {
+              "ref": "Luk.14.28",
+              "note": "“Which of you, wishing to build a tower, does not first sit down and count the cost?”"
+            },
+            {
+              "ref": "Luk.13.4",
+              "note": "The eighteen on whom the tower in Siloam fell."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "חוֹמָה",
+            "note": "“Wall”: the high tower and the fortified wall.",
+            "evidence": [
+              {
+                "ref": "Isa.2.15",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "מַחְסֶה",
+            "note": "“Refuge”.",
+            "evidence": [
+              {
+                "ref": "Psa.61.4",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "opposites": [],
+        "phrases": [
+          {
+            "phrase": "מִגְדַּל־עֹז",
+            "gloss": "a strong tower",
+            "evidence": [
+              {
+                "ref": "Pro.18.10",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.61.4"
+              },
+              {
+                "ref": "Jdg.9.51"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "גֹּדֶל",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "greatness; size; pride (of heart)",
+      "bdb": [
+        "c.aq.ac"
+      ],
+      "cognate_ids": [
+        "uga-gdl"
+      ],
+      "senses": [
+        {
+          "id": "godel-of-god",
+          "gloss": "greatness (of Yahweh)",
+          "definition": "Yahweh's greatness, shown in his deeds for Israel, in his covenant faithfulness and the strength of his arm; ascribed to him in praise.",
+          "evidence": [
+            {
+              "ref": "Deu.3.24",
+              "role": "defining",
+              "note": "“You have begun to show your servant גָּדְלְךָ and your strong hand.”"
+            },
+            {
+              "ref": "Deu.32.3",
+              "role": "defining",
+              "note": "“For I proclaim the name of Yahweh: הָבוּ גֹדֶל לֵאלֹהֵינוּ.”"
+            },
+            {
+              "ref": "Num.14.19",
+              "role": "defining",
+              "note": "“Forgive the iniquity of this people כְּגֹדֶל חַסְדֶּךָ.”"
+            },
+            {
+              "ref": "Deu.5.24",
+              "note": "“Yahweh our God has shown us his glory and his greatness.”"
+            },
+            {
+              "ref": "Deu.9.26"
+            },
+            {
+              "ref": "Deu.11.2"
+            },
+            {
+              "ref": "Psa.79.11",
+              "note": "“According to the greatness of your arm, preserve the sons of death.”"
+            },
+            {
+              "ref": "Psa.150.2",
+              "note": "“Praise him according to the abundance of his greatness.”"
+            }
+          ],
+          "kin": [
+            "god-great",
+            "gedullah-of-yahweh"
+          ]
+        },
+        {
+          "id": "greatness-size",
+          "gloss": "greatness, size",
+          "definition": "The size of a tree, the picture of Pharaoh's greatness.",
+          "evidence": [
+            {
+              "ref": "Ezk.31.7",
+              "role": "defining",
+              "note": "“It was beautiful בְּגָדְלוֹ, in the length of its branches.”"
+            },
+            {
+              "ref": "Ezk.31.2",
+              "note": "“Whom are you like in your greatness?”"
+            },
+            {
+              "ref": "Ezk.31.18"
+            }
+          ],
+          "kin": [
+            "great-size"
+          ]
+        },
+        {
+          "id": "greatness-of-heart-pride",
+          "gloss": "greatness of heart, pride",
+          "definition": "גֹדֶל לֵבָב, a heart made great: pride, beside גַּאֲוָה and the height of the eyes.",
+          "evidence": [
+            {
+              "ref": "Isa.9.8",
+              "role": "defining",
+              "note": "“בְּגַאֲוָה וּבְגֹדֶל לֵבָב, saying …”"
+            },
+            {
+              "ref": "Isa.10.12",
+              "role": "defining",
+              "note": "“I will punish the fruit of גֹדֶל לְבַב of the king of Assyria and the glory of the height of his eyes.”"
+            }
+          ],
+          "kin": [
+            "magnify-against"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "μεγαλωσύνη",
+          "gloss": "greatness, majesty",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Deu.32.3, גֹדֶל → μεγαλωσύνην"
+            },
+            {
+              "ref": "Jud.1.25",
+              "note": "“To the only God our saviour be glory and greatness (μεγαλωσύνη), might and authority.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "גַּאֲוָה",
+            "note": "“Pride”.",
+            "evidence": [
+              {
+                "ref": "Isa.9.8",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "opposites": [],
+        "phrases": [
+          {
+            "phrase": "גֹדֶל לֵבָב",
+            "gloss": "greatness of heart, pride",
+            "evidence": [
+              {
+                "ref": "Isa.9.8",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.10.12"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "גְּדוּלָּה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "greatness; great deeds; honour",
+      "bdb": [
+        "c.aq.af"
+      ],
+      "cognate_ids": [
+        "uga-gdl"
+      ],
+      "senses": [
+        {
+          "id": "gedullah-of-yahweh",
+          "gloss": "greatness (of Yahweh)",
+          "definition": "The greatness that belongs to Yahweh, unsearchable, named first among his glories.",
+          "evidence": [
+            {
+              "ref": "1Ch.29.11",
+              "role": "defining",
+              "note": "“לְךָ יַהְוֶה הַגְּדֻלָּה וְהַגְּבוּרָה וְהַתִּפְאֶרֶת … yours, Yahweh, is the kingdom.”"
+            },
+            {
+              "ref": "Psa.145.3",
+              "role": "defining",
+              "note": "“גָּדוֹל יַהְוֶה … וְלִגְדֻלָּתוֹ אֵין חֵקֶר”: of his greatness there is no searching."
+            }
+          ],
+          "kin": [
+            "god-great"
+          ]
+        },
+        {
+          "id": "great-deeds",
+          "gloss": "great deeds",
+          "definition": "A great thing done, and in the plural great deeds, of Yahweh's acts for David and for Israel.",
+          "evidence": [
+            {
+              "ref": "2Sa.7.21",
+              "role": "defining",
+              "note": "“You have done all this greatness (הַגְּדוּלָּה) to make your servant know it.”"
+            },
+            {
+              "ref": "2Sa.7.23"
+            },
+            {
+              "ref": "1Ch.17.19"
+            },
+            {
+              "ref": "1Ch.17.21"
+            }
+          ],
+          "kin": [
+            "great-things"
+          ]
+        },
+        {
+          "id": "greatness-honour-of-a",
+          "gloss": "greatness, honour (of a man)",
+          "definition": "The greatness of a king or of a man he honours: his standing and glory.",
+          "evidence": [
+            {
+              "ref": "Est.6.3",
+              "role": "defining",
+              "note": "“What honour and greatness (יְקָר וּגְדוּלָּה) has been done to Mordecai for this?”"
+            },
+            {
+              "ref": "Est.1.4",
+              "note": "The king displayed “the splendour and beauty of his greatness”."
+            },
+            {
+              "ref": "Est.10.2",
+              "note": "The greatness of Mordecai to which the king made him great."
+            },
+            {
+              "ref": "Psa.71.21",
+              "note": "“May you increase my greatness and comfort me again.”"
+            }
+          ],
+          "kin": [
+            "great-rank"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "μεγαλωσύνη",
+          "gloss": "greatness, majesty",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "1Ch.29.11, הַגְּדֻלָּה → μεγαλωσύνη; Psa.145.3, וְלִגְדֻלָּתוֹ → μεγαλωσύνης"
+            },
+            {
+              "ref": "Heb.1.3",
+              "role": "defining",
+              "note": "The son “sat down at the right hand of the greatness (τῆς μεγαλωσύνης) on high”: God himself is called by his greatness."
+            },
+            {
+              "ref": "Jud.1.25",
+              "note": "The ascription of 1Ch 29:11: “glory and greatness, might and authority”."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "גְּבוּרָה",
+            "note": "“Might”, with תִּפְאֶרֶת, נֵצַח and הוֹד.",
+            "evidence": [
+              {
+                "ref": "1Ch.29.11",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "יְקָר",
+            "note": "“Honour”.",
+            "evidence": [
+              {
+                "ref": "Est.6.3",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "opposites": [],
+        "phrases": []
+      }
+    },
+    {
+      "lemma": "מִגְדּוֹל",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "tower; Migdol (a place in Egypt)",
+      "bdb": [
+        "c.aq.aq"
+      ],
+      "cognate_ids": [
+        "uga-mgdl",
+        "phn-mgdl",
+        "egy-mktr"
+      ],
+      "summary": "Another spelling of the tower, once as a common noun (2Sa 22:51, where Psa 18:51 has the verb מַגְדִּיל) and otherwise as Migdol, a fortified place on Egypt's border. The tokens counted for it are the place.",
+      "senses": [
+        {
+          "id": "tower-2",
+          "gloss": "tower",
+          "definition": "A tower, of Yahweh as the tower of salvation of his king.",
+          "evidence": [
+            {
+              "ref": "2Sa.22.51",
+              "role": "defining",
+              "note": "“מִגְדּוֹל יְשׁוּעוֹת מַלְכּוֹ”: a tower of salvations of his king."
+            },
+            {
+              "ref": "Psa.18.51",
+              "note": "The same line with the hiphil participle מַגְדִּיל, “making great”."
+            }
+          ],
+          "kin": [
+            "tower"
+          ]
+        },
+        {
+          "id": "migdol-a-place",
+          "gloss": "Migdol (a place)",
+          "definition": "Migdol, a place on Egypt's north-eastern border, by which Israel camped before the sea, and where Jews later dwelt.",
+          "evidence": [
+            {
+              "ref": "Exo.14.2",
+              "role": "defining",
+              "note": "“Camp before Pi-hahiroth, between מִגְדֹּל and the sea.”"
+            },
+            {
+              "ref": "Num.33.7"
+            },
+            {
+              "ref": "Jer.44.1",
+              "note": "The Jews dwelling in Migdol, Tahpanhes and Memphis."
+            },
+            {
+              "ref": "Jer.46.14"
+            },
+            {
+              "ref": "Ezk.29.10",
+              "note": "“From Migdol to Syene.”"
+            },
+            {
+              "ref": "Ezk.30.6"
+            }
+          ],
+          "kin": [
+            "tower"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "גָּדֵל",
+      "pos": "adjective",
+      "gloss": "growing, becoming great; great (of flesh)",
+      "bdb": [
+        "c.aq.ab"
+      ],
+      "cognate_ids": [
+        "uga-gdl",
+        "ar-jadil"
+      ],
+      "summary": "The verbal adjective of the qal, four times, three of them in the phrase הָלוֹךְ וְגָדֵל “going on and growing great”.",
+      "senses": [
+        {
+          "id": "growing-becoming-great",
+          "gloss": "growing; becoming great",
+          "definition": "Growing, of a boy; becoming great, of a man rising in wealth or power.",
+          "evidence": [
+            {
+              "ref": "1Sa.2.26",
+              "role": "defining",
+              "note": "“The boy Samuel went on growing (הֹלֵךְ וְגָדֵל) and good, both with Yahweh and with men.”"
+            },
+            {
+              "ref": "Gen.26.13",
+              "role": "defining",
+              "note": "Isaac “went on growing great (הָלוֹךְ וְגָדֵל) until he was very great”."
+            },
+            {
+              "ref": "2Ch.17.12",
+              "note": "Jehoshaphat went on growing great exceedingly."
+            }
+          ],
+          "kin": [
+            "grow-up",
+            "become-great"
+          ]
+        },
+        {
+          "id": "great-of-flesh",
+          "gloss": "great (of flesh)",
+          "definition": "In the construct, great of flesh.",
+          "evidence": [
+            {
+              "ref": "Ezk.16.26",
+              "role": "defining",
+              "note": "“The sons of Egypt, your neighbours, גִּדְלֵי בָשָׂר.”"
+            }
+          ],
+          "kin": [
+            "great-size"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "גְּדִלִים",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "twisted threads; tassels; festoons",
+      "bdb": [
+        "c.aq.ad"
+      ],
+      "cognate_ids": [
+        "ar-jadala",
+        "akk-gidlu",
+        "arc-gedal-twine"
+      ],
+      "summary": "Twice: twisted cords as tassels on a garment's four corners, and as wreathed work on the temple's capitals. The cognates (Arabic “twist firmly”, Akkadian “plaited string”, Aramaic “twine threads”) and the Peshitta's גְּדַל “plait” give this sense; how it ties to “great” is not yet shown from scripture. Lane's Arabic gives both “twist firmly” and “make firm, strong” under one verb, and a boy “grown strong”, which may be the bridge.",
+      "senses": [
+        {
+          "id": "twisted-threads",
+          "gloss": "twisted threads; tassels, festoons",
+          "definition": "Cords of twisted thread: tassels on the corners of a garment, and chain-like wreaths on the capitals of the pillars.",
+          "evidence": [
+            {
+              "ref": "Deu.22.12",
+              "role": "defining",
+              "note": "“גְּדִלִים you shall make for yourself on the four corners of your covering.”"
+            },
+            {
+              "ref": "1Ki.7.17",
+              "role": "defining",
+              "note": "“Nets of network, גְּדִלִים of chain-work, for the capitals on the top of the pillars.”"
+            },
+            {
+              "ref": "Num.15.38",
+              "note": "The same command with צִיצִת, “a tassel on the corners of their garments”, and a cord of blue."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "גְּדַל",
+      "lang": "syc",
+      "pos": "verb",
+      "gloss": "plait, weave",
+      "cognate_ids": [
+        "arc-gedal-twine",
+        "ar-jadala"
+      ],
+      "summary": "The Peshitta's verb of the root, used only of the soldiers' plaiting the crown of thorns (Greek πλέκω). The Peshitta's word for “great” is רַבָּא, of another root.",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "plait, weave",
+          "senses": [
+            {
+              "id": "plait-weave-a-crown",
+              "gloss": "plait, weave (a crown)",
+              "definition": "To plait or weave thorns into a crown.",
+              "evidence": [
+                {
+                  "ref": "Mat.27.29",
+                  "role": "defining",
+                  "note": "“וַגֿדַֿלו כּלִילָא of thorns and set it on his head”, where the Greek has πλέξαντες."
+                },
+                {
+                  "ref": "Mrk.15.17"
+                },
+                {
+                  "ref": "Jhn.19.2",
+                  "role": "defining",
+                  "note": "“The soldiers גּדַֿלו a crown of thorns.”"
+                }
+              ],
+              "kin": [
+                "twisted-threads"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "גְּדוּלָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "plait, braid (of hair)",
+      "cognate_ids": [
+        "arc-gedal-twine",
+        "ar-jadala"
+      ],
+      "senses": [
+        {
+          "id": "braid-plaiting-of-hair",
+          "gloss": "braid, plaiting (of hair)",
+          "definition": "Braided hair, as an outward adornment the apostles set against modesty and a quiet spirit.",
+          "evidence": [
+            {
+              "ref": "1Ti.2.9",
+              "role": "defining",
+              "note": "“Not with braids (בַּגֿדֻֿולֵא) and gold or pearls”, where the Greek has πλέγμασιν."
+            },
+            {
+              "ref": "1Pe.3.3",
+              "role": "defining",
+              "note": "“Not the outward adornment of the braids of your hair”, Greek ἐμπλοκῆς τριχῶν."
+            }
+          ],
+          "kin": [
+            "twisted-threads"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַגְדְּלָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "tower",
+      "cognate_ids": [
+        "arc-migdal"
+      ],
+      "senses": [
+        {
+          "id": "tower-3",
+          "gloss": "tower",
+          "definition": "A tower: in the vineyard of the parable (from Isa 5:2), the tower a man counts the cost of, and the tower in Siloam.",
+          "evidence": [
+            {
+              "ref": "Mat.21.33",
+              "role": "defining",
+              "note": "“He planted a vineyard … וַבֿנָא בֵּה מַגֿדּלָא.”"
+            },
+            {
+              "ref": "Mrk.12.1"
+            },
+            {
+              "ref": "Luk.14.28",
+              "role": "defining",
+              "note": "“Which of you, wishing to build a tower, does not first sit and count its cost?”"
+            },
+            {
+              "ref": "Luk.13.4",
+              "note": "The eighteen on whom the tower in Siloam fell."
+            }
+          ],
+          "kin": [
+            "tower"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "uga-gdl",
+      "lang": "uga",
+      "form": "gdl",
+      "translit": "gdl",
+      "gloss": "big, great; (f.) gdlt, a large beast, a cow",
+      "relation": "cognate",
+      "note": "The Ugaritic adjective “big”, with a feminine gdlt for a head of large cattle in the offering lists: the sense of גָּדוֹל.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "§93 Glossary, gdl (p. 182)",
+          "note": "gdl “big”; f. gdlt 1.109:13 = §86.71 “(a female head of) large (cattle), cow” (H. gadol)."
+        }
+      ]
+    },
+    {
+      "id": "uga-mgdl",
+      "lang": "uga",
+      "form": "mgdl",
+      "translit": "mgdl",
+      "gloss": "tower, fortress",
+      "relation": "cognate",
+      "note": "The Ugaritic noun with m- of the same root, as מִגְדָּל.",
+      "evidence": [
+        {
+          "source": "fisher-1969",
+          "locator": "p. 25 (OCR only; page unverified), under Ugaritic g = Ethiopic g",
+          "note": "The place name Magdala, “cf. mgdl ‘tower, fortress’”."
+        }
+      ]
+    },
+    {
+      "id": "phn-gdl",
+      "lang": "phn",
+      "form": "G-D-L",
+      "translit": "gdl (yiphil)",
+      "gloss": "magnify, make great",
+      "relation": "cognate",
+      "note": "Punic, in the causative: Plautus' migdil ix “big liar”, literally one who makes falsehood great; the hiphil participle of Psa 18:51 (מַגְדִּיל) and the hiphil of Gen 19:19 are the same form.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 136, G-D-L",
+          "note": "v. yiphʿil MAGNIFY; Poen. 1033 (Pu) migdil ix, “You big liar!”, lit. “perpetrator of great falsehood”; compared with Ps 18:51 and Gn 19:19."
+        }
+      ]
+    },
+    {
+      "id": "phn-mgdl",
+      "lang": "phn",
+      "form": "MGDL",
+      "translit": "migdal",
+      "gloss": "tall, tower-like building",
+      "relation": "cognate",
+      "note": "Neo-Punic [mig]dal, a tall fortified farmhouse.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 268, MGDL",
+          "note": "n.m. TALL, TOWER-LIKE BUILDING; PBSR 28 (1960), 54 no. 7.3 (NPu) [mig]dal isith, “This tall building.”"
+        }
+      ]
+    },
+    {
+      "id": "arc-gedal",
+      "lang": "arc",
+      "form": "גְּדַל",
+      "translit": "gəḏal",
+      "gloss": "grow up; (pael) raise, rear; (ithpaal) be exalted",
+      "relation": "cognate",
+      "note": "Jewish Aramaic of the Talmud and Targums, with the Hebrew's senses: grown up; to bring up children; and in the Targum to Psa 104:1, to be exalted.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. גְּדַל I (ch.)",
+          "note": "Kidd. 71b, was grown up and not yet married; Pa. to raise, rear; Ithpa. to be exalted, Targ. Ps. CIV, 1."
+        }
+      ]
+    },
+    {
+      "id": "arc-gedal-twine",
+      "lang": "arc",
+      "form": "גְּדַל",
+      "translit": "gəḏal",
+      "gloss": "twine threads, weave (nets); plait hair",
+      "relation": "cognate",
+      "note": "Jewish Aramaic “twine, plait”, the sense of גְּדִלִים and of the Peshitta's גְּדַל.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. גְּדַל II (ch.)",
+          "note": "Gitt. 69a, let him twine two threads; M. Kat. 11a, to weave nets; Pa. of the women's hair-dresser."
+        }
+      ]
+    },
+    {
+      "id": "arc-migdal",
+      "lang": "arc",
+      "form": "מִגְדְּלָא",
+      "translit": "migdəlā",
+      "gloss": "tower",
+      "relation": "cognate",
+      "note": "The Targums' word for the Hebrew מִגְדָּל, as at Isa 2:15 and Gen 11:4.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. מִגְדַּל (ch.)",
+          "note": "Targ. Is. II, 15; Targ. Gen. XI, 4; Targ. Jud. VIII, 9; pl. מִגְדָּלַיָּא."
+        }
+      ]
+    },
+    {
+      "id": "ar-jadala",
+      "lang": "ar",
+      "form": "جَدَلَ",
+      "translit": "jadala",
+      "gloss": "twist (a rope) firmly; make firm, strong, compact",
+      "relation": "cognate",
+      "note": "Arabic j answers Hebrew g. Its first sense is the twisting of a rope, with جَدِيل “a firmly twisted rope”: the sense of גְּדִלִים. Its second, “made firm, strong, compact”, is close to the growing strong of جَادِل.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 391, art. جدل (جَدَلَهُ)",
+          "note": "He twisted it firmly; namely, a rope. He made it firm, strong, or compact."
+        },
+        {
+          "source": "lane",
+          "locator": "Book I, p. 392, art. جدل (جَدِيلٌ)",
+          "note": "Applied to a rope, firmly twisted; a camel's nose-rein firmly twisted."
+        }
+      ]
+    },
+    {
+      "id": "ar-jadil",
+      "lang": "ar",
+      "form": "جَادِلٌ",
+      "translit": "jādil",
+      "gloss": "(a boy) become strong; (a young camel) grown strong, walking with its mother",
+      "relation": "cognate",
+      "note": "Of the young grown strong, and with form IV of a gazelle whose young is grown enough to walk with her: the growing up of the qal and the bringing up of the piel.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 392, art. جدل (جَادِلٌ)",
+          "note": "A boy becoming, or become, strong; a she-camel's young one … such as has become strong, and walks with his mother."
+        },
+        {
+          "source": "lane",
+          "locator": "Book I, p. 392, art. جدل (اجدلت)",
+          "note": "She (a gazelle) had her young one [sufficiently grown to be] walking with her."
+        }
+      ]
+    },
+    {
+      "id": "ar-mijdal",
+      "lang": "ar",
+      "form": "مِجْدَلٌ",
+      "translit": "mijdal",
+      "gloss": "a strongly built palace or pavilion",
+      "relation": "possible",
+      "note": "The Arabic form answers to מִגְדָּל, and Lane gives اجتدال “building, construction” beside it; but it may have been borrowed from Aramaic מַגְדְּלָא, so it is kept as possible.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 392, art. جدل (مِجْدَلٌ)",
+          "note": "A قَصْر [or palace, or pavilion] strongly constructed; pl. مَجَادِلُ."
+        }
+      ]
+    },
+    {
+      "id": "akk-gidlu",
+      "lang": "akk",
+      "form": "gidlu",
+      "translit": "gidlu",
+      "gloss": "plaited string, braid",
+      "relation": "cognate",
+      "note": "Neo-Assyrian: a plaited string, the sense of גְּדִלִים.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000042420, gidlu [plaited string] N",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000042420.html",
+          "note": "Meaning: braid; 41 instances, Neo-Assyrian."
+        }
+      ]
+    },
+    {
+      "id": "egy-mktr",
+      "lang": "egy",
+      "form": "mktr",
+      "translit": "mktr",
+      "gloss": "tower",
+      "relation": "loan",
+      "note": "A Semitic word borrowed into Egyptian, the Egyptian form of מִגְדָּל, and the name of the border fort Migdol (Exo 14:2; Jer 44:1). Coptic keeps it as ⲙⲉϭⲧⲱⲗ “tower”.",
+      "evidence": [
+        {
+          "source": "tla",
+          "locator": "tla77140, mktr",
+          "note": "tower (Sem. loan word)."
+        },
+        {
+          "source": "coptic-lexicon",
+          "locator": "C2346, ⲙⲉϭⲧⲱⲗ",
+          "note": "tower, fortification tower."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "god-is-one",
+      "statement": "Scripture calls Yahweh great as it calls no other: “the God, the great, the mighty and the fearful” (Deu 10:17), “a great God, and a great king above all gods” (Psa 95:3). Each time the reason is given, it is that he has no equal: “you are great and do wonders; you are God, you alone” (Psa 86:10); “you are great, my Lord Yahweh, for there is none like you, and there is no God besides you” (2Sa 7:22). Jethro learned it from what Yahweh did to Egypt: “now I know that Yahweh is greater than all the gods” (Exo 18:11). His greatness cannot be searched out (Psa 145:3), and David gives all greatness to him alone: “yours, Yahweh, is the greatness” (1Ch 29:11). From the verses: the greatness of God is the greatness of the one God, who has no second beside him to share it.",
+      "evidence": [
+        {
+          "ref": "Deu.10.17"
+        },
+        {
+          "ref": "Psa.95.3"
+        },
+        {
+          "ref": "Psa.86.10"
+        },
+        {
+          "ref": "2Sa.7.22"
+        },
+        {
+          "ref": "Exo.18.11"
+        },
+        {
+          "ref": "Psa.145.3"
+        },
+        {
+          "ref": "1Ch.29.11"
+        }
+      ]
+    },
+    {
+      "topic": "high-priest",
+      "statement": "The law's high priest is הַכֹּהֵן הַגָּדוֹל מֵאֶחָיו, “the priest great from among his brothers”, anointed with the oil (Lev 21:10): a man of his brothers, raised above them. Zechariah set crowns on the head of Joshua the great priest and spoke of “a man, Branch is his name”, who will build the temple of Yahweh, bear glory, rule on his throne and be a priest on his throne (Zec 6:11–13). Hebrews gives the title to Jesus: “a great high priest who has passed through the heavens, Jesus the son of God” (Heb 4:14), “a great priest over the house of God” (Heb 10:21). It says why he could be one: every high priest is “taken from among men” (Heb 5:1), and he had “to be made like his brothers in all things” to be merciful and faithful (Heb 2:17). From the verses: Jesus is the great priest the law and Zechariah pictured, a man taken from among his brothers, now raised over the house of God and to be priest on his throne.",
+      "evidence": [
+        {
+          "ref": "Lev.21.10"
+        },
+        {
+          "ref": "Zec.6.11",
+          "to": "Zec.6.13"
+        },
+        {
+          "ref": "Heb.4.14"
+        },
+        {
+          "ref": "Heb.10.21"
+        },
+        {
+          "ref": "Heb.5.1"
+        },
+        {
+          "ref": "Heb.2.17"
+        }
+      ]
+    },
+    {
+      "topic": "kingdom-of-god",
+      "statement": "Micah foretells a ruler to come out of Bethlehem for Yahweh (Mic 5:1), whom Matthew identifies with Jesus born there (Mat 2:6). “He will stand and shepherd in the strength of Yahweh, in the majesty of the name of Yahweh his God … for now he will be great (יִגְדַּל) to the ends of the earth” (Mic 5:3). The angel says the same of Mary's son: “he will be great, and will be called son of the Highest, and the Lord God will give him the throne of David his father, and he will reign over the house of Jacob for ever” (Luk 1:32–33). His greatness is given him by his God, and it is the throne of David over Jacob's house, reaching to the ends of the earth, as the name of David's house was to be made great for ever (2Sa 7:26). From the verses: the son's greatness is a kingdom God gives him, David's throne ruling on the earth.",
+      "evidence": [
+        {
+          "ref": "Mic.5.1"
+        },
+        {
+          "ref": "Mat.2.6"
+        },
+        {
+          "ref": "Mic.5.3"
+        },
+        {
+          "ref": "Luk.1.32",
+          "to": "Luk.1.33"
+        },
+        {
+          "ref": "2Sa.7.26"
+        }
+      ]
+    },
+    {
+      "topic": "humility",
+      "statement": "The verb that praises Yahweh, “magnify Yahweh with me” (Psa 34:4), condemns a man when he is its object. Moab is destroyed “because he magnified himself against Yahweh” (Jer 48:26, 42); Yahweh will punish “the greatness of heart” of the king of Assyria, who is like an axe boasting against the one who hews with it (Isa 10:12, 15); Edom is told not to “make your mouth great” in Judah's distress (Oba 12). To Baruch: “do you seek great things for yourself? Do not seek them” (Jer 45:5), and David says, “I do not walk in great things, too wonderful for me” (Psa 131:1). It is Yahweh who will magnify himself and be known among the nations (Ezk 38:23). From the verses: greatness is Yahweh's to show and to give, not a man's to take.",
+      "evidence": [
+        {
+          "ref": "Psa.34.4"
+        },
+        {
+          "ref": "Jer.48.26"
+        },
+        {
+          "ref": "Jer.48.42"
+        },
+        {
+          "ref": "Isa.10.12"
+        },
+        {
+          "ref": "Isa.10.15"
+        },
+        {
+          "ref": "Oba.1.12"
+        },
+        {
+          "ref": "Jer.45.5"
+        },
+        {
+          "ref": "Psa.131.1"
+        },
+        {
+          "ref": "Ezk.38.23"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-15. Root key גדל, the brief's key; no other entry had it. BDB keys: c.aq.ag (Haggedolim, Neh 11:14) counts every token of גָּדוֹל and is left off (BDB lists the same occurrences under two keys; c.aq.ae is named); the person Haggedolim@Neh.11.14 has no name entry yet. c.aq.ai and c.aq.aj (Gedaliah) list the same tokens; names/gedaliah.json takes c.aq.aj. c.aq.ah (Giddel) also counts Isa 49:21 and c.aq.ak (Giddalti) Isa 23:4, both piel verbs; the verb's tokens with no stem are these two names. c.aq.aq and c.aq.ar list the same six tokens of the place Migdol; c.aq.aq is named on מִגְדּוֹל. Places left out: מִגְדַּל־אֵל c.aq.an (its 249 tokens are אֵל and Bethel by spelling; the place is Jos 19:38), מִגְדַּל־גַּד c.aq.ao (28 tokens of Gad; the place is Jos 15:37), מִגְדַּל־עֵדֶר c.aq.ap (8 tokens of עֵדֶר; Gen 35:21, Mic 4:8), מִגְדֹּל c.aq.ar. Zero-token cross-references j.ak.ad and m.aj.af left out. The few tokens of c.aq.ae marked qal (2Sa 5:10; 1Ch 11:9; Nam 1:3) are the verb spelled like the adjective. There is no Biblical Aramaic of the root: Daniel and Ezra say רַב (see ravav). The Syriac lemmas are pointed in Hebrew script from the database's vocalised Peshitta forms (גּדַֿלו, בַּגֿדֻֿולֵא, מַגֿדּלָא). Leads not followed: Ge'ez gadala (Fisher p. 24 OCR reads “gaadala (dominate)”; Dillmann and Leslau not consulted); Syriac גְּדִיל “high” (Payne Smith not consulted); DULAT and CAD not consulted for Ugaritic gdl, mgdl and Akkadian; the page of Fisher's mgdl is unverified. Arabic مِجْدَل is kept as possible because it may be an Aramaic loan (not verified). Open questions: (1) whether “twist” (גְּדִלִים, the Peshitta, Akkadian gidlu) and “great” are one root; Lane's جَدَلَ “twist firmly … make firm, strong” and جَادِل “a boy become strong” suggest the bridge, but scripture does not show it; (2) the doctrine statements are reasoned conclusions to review."
+}

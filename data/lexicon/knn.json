@@ -1,0 +1,130 @@
+{
+  "id": "knn",
+  "root": "כננ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "gloss": "stock, base, fixed support",
+  "summary": "In the lament for Israel the vine stock is the one God’s right hand planted. The base of the sanctuary basin illustrates a fixed support.",
+  "words": [
+    {
+      "lemma": "כַּנָּה",
+      "bdb": [
+        "k.cb.ac"
+      ],
+      "pos": "noun",
+      "gloss": "vine stock",
+      "senses": [
+        {
+          "id": "vine-stock",
+          "gloss": "vine stock",
+          "definition": "The psalm asks God to visit the vine and tend the stock planted by his right hand. This is its only occurrence.",
+          "evidence": [
+            {
+              "ref": "Psa.80.16",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.80.15",
+              "role": "example"
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "cognate_ids": [
+        "akk-shoot"
+      ]
+    },
+    {
+      "lemma": "כֵּן",
+      "bdb": [
+        "k.ca.ab"
+      ],
+      "pos": "noun",
+      "gloss": "base, station",
+      "senses": [
+        {
+          "id": "base-station",
+          "gloss": "base, station",
+          "definition": "The bronze basin stands on its base. Pharaoh’s cupbearer is restored to his former position.",
+          "evidence": [
+            {
+              "ref": "Exo.30.18",
+              "role": "defining"
+            },
+            {
+              "ref": "Gen.40.13",
+              "role": "example"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "akk-stand"
+      ]
+    },
+    {
+      "lemma": "כֵּן",
+      "bdb": [
+        "k.cb.ab"
+      ],
+      "pos": "noun",
+      "gloss": "gnat, small biting insect",
+      "senses": [
+        {
+          "id": "gnat-small-biting-insect",
+          "gloss": "gnat, small biting insect",
+          "definition": "When Aaron strikes the dust it becomes a swarm of insects on people and animals. The passage identifies the plague more clearly than the insect species.",
+          "evidence": [
+            {
+              "ref": "Exo.8.12",
+              "role": "defining"
+            },
+            {
+              "ref": "Exo.8.13",
+              "role": "example"
+            },
+            {
+              "ref": "Psa.105.31",
+              "role": "example"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-shoot",
+      "lang": "akk",
+      "form": "kannu",
+      "translit": "kannu",
+      "gloss": "shoot, sprig",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep, kannu [shoot], x000045620"
+        }
+      ]
+    },
+    {
+      "id": "akk-stand",
+      "lang": "akk",
+      "form": "kannu",
+      "translit": "kannu",
+      "gloss": "vessel stand",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep, kannu [(vessel)-stand], x000009340"
+        }
+      ]
+    }
+  ],
+  "note": "The stock’s relation to the base or pedestal is possible. The insect has no demonstrated connection. For כֵּן meaning “thus” or “right” see ken under כונ."
+}

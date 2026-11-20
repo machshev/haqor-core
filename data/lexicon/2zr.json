@@ -1,0 +1,152 @@
+{
+  "id": "2zr",
+  "root": "אזר",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "clothing",
+    "strength"
+  ],
+  "gloss": "gird, equip, waistcloth",
+  "summary": "Clothing fastened around the waist supplies the image of strength put on before action. David repeatedly names God as the one who equips him.",
+  "words": [
+    {
+      "lemma": "אָזַר",
+      "bdb": [
+        "a.ci.aa"
+      ],
+      "pos": "verb",
+      "gloss": "gird, equip",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "gird on",
+          "senses": [
+            {
+              "id": "gird-on",
+              "gloss": "gird on",
+              "definition": "A leather belt is fastened about Elijah’s waist. Hannah sings of the formerly feeble putting on strength.",
+              "evidence": [
+                {
+                  "ref": "2Ki.1.8",
+                  "role": "defining"
+                },
+                {
+                  "ref": "1Sa.2.4"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "equip with strength",
+          "senses": [
+            {
+              "id": "equip-with-strength",
+              "gloss": "equip with strength",
+              "definition": "David credits God with girding him with strength for battle. Yahweh also speaks of equipping Cyrus.",
+              "evidence": [
+                {
+                  "ref": "Psa.18.33",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.18.40"
+                },
+                {
+                  "ref": "Isa.45.5"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be girded",
+          "senses": [
+            {
+              "id": "be-girded",
+              "gloss": "be girded",
+              "definition": "The one who establishes mountains is described as girded with might.",
+              "evidence": [
+                {
+                  "ref": "Psa.65.7",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpael",
+          "gloss": "gird oneself",
+          "senses": [
+            {
+              "id": "gird-oneself",
+              "gloss": "gird oneself",
+              "definition": "Isaiah challenges the peoples to arm themselves and foretells their defeat.",
+              "evidence": [
+                {
+                  "ref": "Isa.8.9",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-izar"
+      ]
+    },
+    {
+      "lemma": "אֵזוֹר",
+      "bdb": [
+        "a.ci.ab"
+      ],
+      "pos": "noun",
+      "gloss": "belt, waistcloth",
+      "senses": [
+        {
+          "id": "belt-waistcloth",
+          "gloss": "belt, waistcloth",
+          "definition": "Elijah wears a leather belt. Jeremiah ties a linen waistcloth around himself and later retrieves it ruined, as a sign concerning Judah.",
+          "evidence": [
+            {
+              "ref": "2Ki.1.8",
+              "role": "defining"
+            },
+            {
+              "ref": "Jer.13.1",
+              "to": "Jer.13.11"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "ar-izar"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-izar",
+      "lang": "ar",
+      "form": "إِزَار",
+      "translit": "ʾizār",
+      "gloss": "waist wrapper",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I p. 53, n662, إِزَارٌ"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The repeated military use in Psalm 18 describes strength supplied for the task."
+}

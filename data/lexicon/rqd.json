@@ -1,0 +1,140 @@
+{
+  "id": "rqd",
+  "root": "רקד",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "psalms",
+    "creation",
+    "worship"
+  ],
+  "gloss": "skip, dance",
+  "summary": "To skip or dance is vigorous movement, used in Psalm 29 for Yahweh making Lebanon leap like a calf.",
+  "words": [
+    {
+      "lemma": "רָקַד",
+      "bdb": [
+        "t.el.aa"
+      ],
+      "pos": "verb",
+      "gloss": "skip, dance",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "skip, dance",
+          "senses": [
+            {
+              "id": "skip-dance",
+              "gloss": "skip, dance",
+              "definition": "Mountains skip like rams; the poem answers the sea’s flight with the hills’ dancing.",
+              "evidence": [
+                {
+                  "ref": "Psa.114.4",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.114.6"
+                },
+                {
+                  "ref": "Ecc.3.4"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "dance, bound",
+          "senses": [
+            {
+              "id": "dance-bound",
+              "gloss": "dance, bound",
+              "definition": "Children dance in Job’s description of a prosperous household. David dances before the ark.",
+              "evidence": [
+                {
+                  "ref": "Job.21.11",
+                  "role": "defining"
+                },
+                {
+                  "ref": "1Ch.15.29"
+                },
+                {
+                  "ref": "Jol.2.5"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "make leap",
+          "senses": [
+            {
+              "id": "make-leap",
+              "gloss": "make leap",
+              "definition": "Yahweh makes Lebanon skip like a calf and Sirion like a young wild ox.",
+              "evidence": [
+                {
+                  "ref": "Psa.29.6",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "רקד",
+      "pos": "verb",
+      "gloss": "dance, lament",
+      "stems": [
+        {
+          "stem": "pael",
+          "gloss": "dance",
+          "senses": [
+            {
+              "id": "dance",
+              "gloss": "dance",
+              "definition": "Herodias’s daughter dances at the feast.",
+              "evidence": [
+                {
+                  "ref": "Mat.14.6",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Mrk.6.22"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "aphel",
+          "gloss": "lament",
+          "senses": [
+            {
+              "id": "lament",
+              "gloss": "lament",
+              "definition": "The mourners lament on the way to the execution; the kings also lament over Babylon.",
+              "evidence": [
+                {
+                  "ref": "Luk.23.27",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Rev.18.9"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "syc"
+    }
+  ],
+  "cognates": [],
+  "doctrine": [],
+  "note": "Psalm 29:6 has the causative, “he makes them skip”. The verb in Judges 21:21 belongs to another Hebrew family."
+}

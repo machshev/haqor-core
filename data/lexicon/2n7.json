@@ -1,0 +1,263 @@
+{
+  "id": "2n7",
+  "root": "אנח",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "grief",
+    "speech"
+  ],
+  "gloss": "groan, sigh",
+  "summary": "Israel groaned under slavery, and God heard. Groaning gives distress a voice when people are in pain, when food fails, or when what they see grieves them. Even cattle groan when their pasture is gone.",
+  "words": [
+    {
+      "lemma": "אָנַח",
+      "pos": "verb",
+      "gloss": "groan, sigh",
+      "bdb": [
+        "a.ef.aa"
+      ],
+      "stems": [
+        {
+          "stem": "niphal",
+          "gloss": "groan aloud, sigh",
+          "senses": [
+            {
+              "id": "groan",
+              "kin": [
+                "sighing"
+              ],
+              "cognate_ids": [
+                "ar-anaha",
+                "arc-anach"
+              ],
+              "gloss": "give voice to distress",
+              "definition": "The Israelites groan under the burden of slavery. Ezekiel must groan in public so that those who ask why will hear the news that has distressed him.",
+              "evidence": [
+                {
+                  "ref": "Exo.2.23",
+                  "to": "Exo.2.24",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Ezk.21.11",
+                  "to": "Ezk.21.12",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jol.1.18"
+                },
+                {
+                  "ref": "Lam.1.11"
+                },
+                {
+                  "ref": "Ezk.9.4"
+                },
+                {
+                  "ref": "Act.7.34",
+                  "note": "Stephen recounts how God heard the groaning of his people in Egypt."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "opposites": [
+          {
+            "lemma": "שָׂמַח",
+            "note": "The people rejoice when the righteous increase and groan under a wicked ruler.",
+            "evidence": [
+              {
+                "ref": "Pro.29.2"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "אֲנָחָה",
+      "pos": "noun",
+      "gender": "f",
+      "bdb": [
+        "a.ef.ab"
+      ],
+      "gloss": "sighing, groaning",
+      "senses": [
+        {
+          "id": "sighing",
+          "kin": [
+            "groan"
+          ],
+          "cognate_ids": [
+            "ar-anaha",
+            "arc-anach"
+          ],
+          "gloss": "an audible expression of grief",
+          "definition": "The sound a sufferer makes. In Psalm 6 the speaker is exhausted by groaning and wets the bed with tears. When the ransomed return singing, sighing and sorrow flee.",
+          "evidence": [
+            {
+              "ref": "Psa.6.7",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.102.6",
+              "role": "defining"
+            },
+            {
+              "ref": "Isa.35.10"
+            },
+            {
+              "ref": "Isa.51.11"
+            },
+            {
+              "ref": "Jer.45.3"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "στεναγμός",
+          "gloss": "groaning",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "PSA 102:6 word 2 and ISA 35:10 word 16"
+            },
+            {
+              "ref": "Act.7.34"
+            },
+            {
+              "ref": "Rom.8.26"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אֲנַח",
+      "lang": "syc",
+      "pos": "verb",
+      "gloss": "sigh, groan, complain",
+      "stems": [
+        {
+          "stem": "ethpaal",
+          "gloss": "sigh, groan, complain",
+          "senses": [
+            {
+              "id": "sigh-or-groan",
+              "gloss": "sigh or groan",
+              "kin": [
+                "groan"
+              ],
+              "cognate_ids": [
+                "ar-anaha",
+                "arc-anach"
+              ],
+              "definition": "Jesus sighs as he looks up to heaven before healing a deaf man. Paul speaks of groaning while waiting for the redemption of the body.",
+              "evidence": [
+                {
+                  "ref": "Mrk.7.34",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Mrk.8.12"
+                },
+                {
+                  "ref": "Rom.8.22",
+                  "to": "Rom.8.23"
+                },
+                {
+                  "ref": "2Co.5.2"
+                }
+              ]
+            },
+            {
+              "id": "complain-against-another",
+              "gloss": "complain against another",
+              "definition": "James warns the brothers against directing their groans at one another.",
+              "evidence": [
+                {
+                  "ref": "Jas.5.9",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "תֵּנְחָתָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "groaning",
+      "senses": [
+        {
+          "id": "groaning",
+          "gloss": "groaning",
+          "kin": [
+            "sighing"
+          ],
+          "cognate_ids": [
+            "ar-anaha",
+            "arc-anach"
+          ],
+          "definition": "What God heard from his people in Egypt. Paul also speaks of groanings beyond words.",
+          "evidence": [
+            {
+              "ref": "Act.7.34",
+              "role": "defining"
+            },
+            {
+              "ref": "Rom.8.26"
+            },
+            {
+              "ref": "Heb.13.17"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-anaha",
+      "lang": "ar",
+      "form": "أَنَحَ",
+      "translit": "ʾanaḥa",
+      "gloss": "breathe hard under distress",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 112, أَنَحَ, n1323",
+          "note": "Describes the strained sound made in illness or breathlessness."
+        }
+      ]
+    },
+    {
+      "id": "arc-anach",
+      "lang": "arc",
+      "form": "אִתְאַנַּח",
+      "translit": "ʾitʾannaḥ",
+      "gloss": "groan, sigh",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. אֲנַח, Ithpa., Targum Lamentations 1:4, 11 and Targum Isaiah 24:7"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "Anaharath (Joshua 19:19) is a town of Issachar. The boundary list offers no evidence that its name means groaning. The pronoun נַחְנוּ belongs with אֲנַחְנוּ. The Arabic comparison points to ḥ. The alternative reconstruction with ḫ depends on a proposed connection with Akkadian weariness."
+}

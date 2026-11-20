@@ -1,0 +1,235 @@
+{
+  "id": "hpk",
+  "root": "הפכ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "psalms"
+  ],
+  "gloss": "turn, overturn, perversity",
+  "summary": "To turn can transform, overturn or reverse a condition. The same family names overthrow, contrariness, crookedness and the stocks that turn a prisoner’s posture.",
+  "words": [
+    {
+      "lemma": "הָפַךְ",
+      "bdb": [
+        "e.cb.aa"
+      ],
+      "pos": "verb",
+      "gloss": "turn, overturn",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "turn, transform",
+          "senses": [
+            {
+              "id": "turn-transform",
+              "gloss": "turn, transform",
+              "definition": "Yahweh turns mourning into dancing and overturns cities.",
+              "evidence": [
+                {
+                  "ref": "Psa.30.12",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Gen.19.26"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be turned",
+          "senses": [
+            {
+              "id": "be-turned",
+              "gloss": "be turned",
+              "definition": "The waters and circumstances are turned by Yahweh.",
+              "evidence": [
+                {
+                  "ref": "Exo.7.15",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpael",
+          "gloss": "turn oneself",
+          "senses": [
+            {
+              "id": "turn-oneself",
+              "gloss": "turn oneself",
+              "definition": "A person turns himself or changes course.",
+              "evidence": [
+                {
+                  "ref": "1Sa.10.6",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-e00741"
+      ]
+    },
+    {
+      "lemma": "תַּהְפֻּכָה",
+      "bdb": [
+        "e.cb.ag"
+      ],
+      "pos": "noun",
+      "gloss": "perversity",
+      "senses": [
+        {
+          "id": "perversity",
+          "gloss": "perversity",
+          "definition": "A perverse generation turns away from faithfulness.",
+          "evidence": [
+            {
+              "ref": "Deu.32.20",
+              "role": "defining"
+            },
+            {
+              "ref": "Pro.2.12"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "מַהְפֵּכָה",
+      "bdb": [
+        "e.cb.ae"
+      ],
+      "pos": "noun",
+      "gloss": "overthrow",
+      "senses": [
+        {
+          "id": "overthrow",
+          "gloss": "overthrow",
+          "definition": "The destruction of Sodom is the model for a land overthrown by judgment.",
+          "evidence": [
+            {
+              "ref": "Deu.29.22",
+              "role": "defining"
+            },
+            {
+              "ref": "Amo.4.11"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "מַהְפֶּכֶת",
+      "bdb": [
+        "e.cb.af"
+      ],
+      "pos": "noun",
+      "gloss": "stocks",
+      "senses": [
+        {
+          "id": "stocks",
+          "gloss": "stocks",
+          "definition": "Jeremiah is put in stocks that restrain the body.",
+          "evidence": [
+            {
+              "ref": "Jer.20.2",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "הֶפֶךְ",
+      "bdb": [
+        "e.cb.ab"
+      ],
+      "pos": "noun",
+      "gloss": "contrary, overturning",
+      "senses": [
+        {
+          "id": "contrary-overturning",
+          "gloss": "contrary, overturning",
+          "definition": "The contrary or overturning opposes the expected order.",
+          "evidence": [
+            {
+              "ref": "Isa.29.16",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "הֲפֵכָה",
+      "bdb": [
+        "e.cb.ac"
+      ],
+      "pos": "noun",
+      "gloss": "overthrow",
+      "senses": [
+        {
+          "id": "overthrow-2",
+          "gloss": "overthrow",
+          "definition": "God remembers Abraham when he overthrows the cities where Lot lived.",
+          "evidence": [
+            {
+              "ref": "Gen.19.29",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "הֲפַכְפַּךְ",
+      "bdb": [
+        "e.cb.ad"
+      ],
+      "pos": "adjective",
+      "gloss": "crooked, perverse",
+      "senses": [
+        {
+          "id": "crooked-perverse",
+          "gloss": "crooked, perverse",
+          "definition": "The guilty person’s way is crooked, while the pure person’s way is upright.",
+          "evidence": [
+            {
+              "ref": "Pro.21.8",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-e00741",
+      "lang": "arc",
+      "form": "הֲפַךְ",
+      "translit": "hăpak",
+      "gloss": "turn, change",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "הֲפַךְ, E00741, Targum Psalms 105:29"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The proper place names Hor and Hara are not derivatives of the turning root and are omitted. The remaining lexical forms and verbal stems are retained."
+}

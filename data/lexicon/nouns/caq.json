@@ -1,0 +1,84 @@
+{
+  "id": "caq",
+  "root": "שׂק",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "psalms"
+  ],
+  "gloss": "sackcloth",
+  "summary": "Sackcloth is a coarse garment of mourning. The Greek σάκκος is a New Testament loan from this word.",
+  "words": [
+    {
+      "lemma": "שַׂק",
+      "bdb": [
+        "u.bz.ab"
+      ],
+      "pos": "noun",
+      "gloss": "sack, sackcloth",
+      "senses": [
+        {
+          "id": "sack-sackcloth",
+          "gloss": "sack, sackcloth",
+          "definition": "The psalmist removes sackcloth when Yahweh restores him.",
+          "evidence": [
+            {
+              "ref": "Psa.30.12",
+              "role": "defining"
+            },
+            {
+              "ref": "Gen.37.34"
+            },
+            {
+              "ref": "Psa.35.13",
+              "role": "example",
+              "note": "David wears sackcloth in fasting."
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "greek": [
+        {
+          "lemma": "σάκκος",
+          "gloss": "sackcloth",
+          "relation": "loan",
+          "evidence": [
+            {
+              "ref": "Rev.6.12",
+              "note": "σάκκος is used for sackcloth."
+            },
+            {
+              "source": "abbott-smith",
+              "locator": "σάκκος",
+              "note": "Greek lexicon derives the loan from Hebrew שׂק."
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "grc-sakkos"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "grc-sakkos",
+      "lang": "grc",
+      "form": "σάκκος",
+      "translit": "sakkos",
+      "gloss": "sackcloth",
+      "relation": "loan",
+      "evidence": [
+        {
+          "source": "abbott-smith",
+          "locator": "σάκκος",
+          "note": "Greek loan from Hebrew שַׂק."
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The Greek loan σάκκος is represented both as a grc loan cognate and as the Greek word used in New Testament sackcloth passages; the Greek language placement is intentional."
+}

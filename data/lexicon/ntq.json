@@ -1,0 +1,214 @@
+{
+  "id": "ntq",
+  "root": "נתק",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "binding",
+    "freedom"
+  ],
+  "gloss": "pull away, tear apart",
+  "summary": "The verb describes separating something from its attachment, from a rope snapped by Samson to a signet pulled off a hand. Psalm 2 uses broken bonds for a rebellion against the rule of Yahweh and his anointed.",
+  "words": [
+    {
+      "lemma": "נָתַק",
+      "bdb": [
+        "n.gk.aa"
+      ],
+      "pos": "verb",
+      "gloss": "pull away, break apart",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "pull off, draw away",
+          "senses": [
+            {
+              "id": "pull-from-a-position",
+              "gloss": "pull from a position or attachment",
+              "definition": "Yahweh likens removing Coniah to pulling a signet from his own hand. Pursuers can likewise be drawn from a city.",
+              "evidence": [
+                {
+                  "ref": "Jer.22.24",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jdg.20.32"
+                },
+                {
+                  "ref": "Lev.22.24"
+                }
+              ],
+              "cognate_ids": [
+                "arc-atteq"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be pulled away or broken",
+          "senses": [
+            {
+              "id": "be-drawn-away",
+              "gloss": "be drawn away",
+              "definition": "The people of Ai pursue Joshua and are drawn away from their city. The priests lift their feet free of the Jordan.",
+              "evidence": [
+                {
+                  "ref": "Jos.8.16",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jos.4.18"
+                },
+                {
+                  "ref": "Job.18.14"
+                }
+              ],
+              "cognate_ids": [
+                "arc-atteq"
+              ]
+            },
+            {
+              "id": "snap-or-be-broken",
+              "gloss": "snap or be broken off",
+              "definition": "A threefold cord resists snapping. When tent cords break, the tent can no longer stand. Job speaks in the same terms of plans cut short.",
+              "evidence": [
+                {
+                  "ref": "Ecc.4.12",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jer.10.20"
+                },
+                {
+                  "ref": "Job.17.11"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "tear loose, snap",
+          "senses": [
+            {
+              "id": "break-a-fastening-or",
+              "gloss": "break a fastening or tear something loose",
+              "definition": "Samson snaps the ropes on his arms. The kings in Psalm 2 want to break the bonds that represent submission, while Psalm 107 pictures God freeing prisoners by breaking their bonds. A vine too can be torn up by its roots.",
+              "evidence": [
+                {
+                  "ref": "Jdg.16.9",
+                  "to": "Jdg.16.12",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.2.3"
+                },
+                {
+                  "ref": "Psa.107.14"
+                },
+                {
+                  "ref": "Isa.58.6"
+                },
+                {
+                  "ref": "Ezk.17.9"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "draw away",
+          "senses": [
+            {
+              "id": "cause-to-leave-a",
+              "gloss": "cause to leave a place",
+              "definition": "Joshua draws the defenders out by feigned retreat. Jeremiah asks Yahweh to take the wicked away like sheep for slaughter.",
+              "evidence": [
+                {
+                  "ref": "Jos.8.6",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jer.12.3"
+                }
+              ],
+              "cognate_ids": [
+                "arc-atteq"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hophal",
+          "gloss": "be drawn away",
+          "senses": [
+            {
+              "id": "be-lured-from-a",
+              "gloss": "be lured from a position",
+              "definition": "Benjamin leaves the city to pursue Israel’s retreating forces along the roads.",
+              "evidence": [
+                {
+                  "ref": "Jdg.20.31",
+                  "to": "Jdg.20.32",
+                  "role": "defining"
+                }
+              ],
+              "cognate_ids": [
+                "arc-atteq"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "נֶתֶק",
+      "bdb": [
+        "n.gk.ab"
+      ],
+      "pos": "noun",
+      "gloss": "affected patch of scalp or beard",
+      "senses": [
+        {
+          "id": "patch-examined-for-hair",
+          "gloss": "patch examined for hair loss or changed hair",
+          "definition": "The priest examines a patch on the head or beard for thin yellow hair and for spread. Growth of black hair in the patch indicates healing.",
+          "evidence": [
+            {
+              "ref": "Lev.13.29",
+              "to": "Lev.13.32",
+              "role": "defining"
+            },
+            {
+              "ref": "Lev.13.35",
+              "to": "Lev.13.37"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "summary": "The signs identify the affected patch. Hair coming away could account for the link to the verb, but the law does not give an etymology."
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-atteq",
+      "lang": "arc",
+      "form": "אַתֵּיק",
+      "translit": "ʾattēq",
+      "gloss": "pull away, drag",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. נְתַק, aphel, Targum Jeremiah 12:3"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The skin term belongs to the priest’s description of changes in a hairy area. The relationship to pulling away remains uncertain."
+}

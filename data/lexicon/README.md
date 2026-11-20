@@ -47,7 +47,8 @@ Further reading:
   covers two older roots (ערב "evening" behind ġ, "pledge" behind ʿ), the
   entry stays one, and each sense names the cognates that go with it
   (`cognate_ids`), whose `sounds` record the older sound behind the merged
-  letter. `db lexicon-splits` lists these across the lexicon.
+  letter. `db lexicon-splits` lists these across the lexicon. Two roots that
+  share a spelling are one entry too, with no numbering to tell them apart.
 - **Hebrew and Aramaic together.** Scripture's Aramaic words are words of the
   entry, marked by `lang`, with their own `root` where the spelling differs
   (Aramaic דְּהַב under Hebrew זָהָב). Their meaning is shown from their own
@@ -66,16 +67,58 @@ Further reading:
 
 ## Files
 
-- `<id>.json`: one root, named by its `id`.
+- `<id>.json`: a root entry: a root and all its words.
+- `nouns/<id>.json`: a word entry: one word with no verb and no other word of
+  its root (a noun, a particle, a place). It moves to the top level, renamed
+  by its root, when a second word of its root or a verb joins it.
+- `names/<id>.json`: a name entry (below).
 - `sources.json`: every external work an entry cites (below).
+
+### Ids
+
+An entry's `id`, and so its file name, is never chosen: it is the Hebrew
+itself, transliterated without loss. A root entry is named by its `root`
+(`נפש` → `npx`, `עשׂה` → `3ch`), a word entry by its pointed lemma (`עֵץ` →
+`3ee9`) and a name entry by its pointed `name` (`שִׁפְרָה` → `xiperaah`).
+`root_id`, `word_id` and `article_id` in `haqor_lexicon.rs` make them, and
+`root_of_id` and `word_of_id` turn them back into the Hebrew. Two entries can
+only share an id by sharing a spelling, and then they are one entry.
+
+| Hebrew | Id | Hebrew | Id | Hebrew | Id |
+|---|---|---|---|---|---|
+| א | `2` | ט | `6` | ע | `3` |
+| ב | `b` | י | `y` | פ | `p` |
+| ג | `g` | כ | `k` | צ | `9` |
+| ד | `d` | ל | `l` | ק | `q` |
+| ה | `h` | מ | `m` | ר | `r` |
+| ו | `w` | נ | `n` | שׁ | `x` |
+| ז | `z` | ס | `s` | שׂ | `c` |
+| ח | `7` | | | ת | `t` |
+
+| Point | Id | Point | Id | Point | Id |
+|---|---|---|---|---|---|
+| sheva ְ | `e` | tsere ֵ | `ee` | holam ֹ | `o` |
+| hataf patah ֲ | `ea` | segol ֶ | `ae` | holam for vav ֺ | `oo` |
+| hataf segol ֱ | `eae` | patah ַ | `a` | qubbuts ֻ | `u` |
+| hataf qamats ֳ | `eao` | qamats ָ | `aa` | qamats qatan ׇ | `ao` |
+| hireq ִ | `i` | | | | |
+
+The gutturals and emphatics take the digits the Arabic chat alphabet gives
+them, and shin takes Maltese `x`. A dagesh or mappiq doubles its letter
+(`עַמּוּד` → `3ammwwd`). A final form is written as its letter, since the end
+of the word says which form it takes; `5` after a letter marks one written
+in the other form. `0` parts a bare letter from the same letter after it,
+which would otherwise read as one letter with dagesh; `1` is rafe; `8` puts a
+second vowel on a letter after the grapheme joiner (`יְרוּשָׁלַ͏ִם` →
+`yerwwxaala8im`); a ש with no dot is `j`. A space is `-` and maqaf `--`.
+Cantillation and meteg are not part of the word and are left out.
 
 ## An entry
 
 | Field | |
 |---|---|
-| `id` | Kebab case ASCII, Haqor's own, never reused (`nephesh`, `amar`). The file is `<id>.json`. |
+| `id` | The root transliterated (see "Ids"): `npx` for `נפש`. In a word entry under `nouns/`, its lemma's (`naepaex`). The file is `<id>.json`. |
 | `root` | The root as the database keys roots, so entries join to the words: bare consonants with no final forms, sin written `שׂ` and shin a bare `ש` (`נפש`, `מלכ`, `עשׂה`). A noun with no verbal root gives its own consonants. |
-| `homograph` | 1, 2… where two unrelated roots share consonants; left out otherwise. |
 | `status` | `draft` until the user has signed it off, then `reviewed`. |
 | `created` | Date the entry was first added to the lexicon, `YYYY-MM-DD`. Existing entries use their first Git addition date. |
 | `reviewed` | The date it was signed off, `YYYY-MM-DD`, while `status` is `reviewed`; left out of a draft. An `updated` later than it means the entry has changed since. |
@@ -145,7 +188,7 @@ cites what ties the name to it.
 
 | Field | |
 |---|---|
-| `id` | Kebab case ASCII (`shiphrah`). The file is `names/<id>.json`. |
+| `id` | The pointed `name` transliterated (see "Ids"): `xiperaah` for `שִׁפְרָה`. The file is `names/<id>.json`. |
 | `name` | The pointed name as the text spells it (`שִׁפְרָה`). |
 | `english` | The name in English (`Shiphrah`). |
 | `root` | The root key it is formed from: the root entry's own, or one of its words' `root`s. A draft whose etymology is unknown leaves this and `entry` empty. |
@@ -309,7 +352,7 @@ A source in `sources.json`:
    the Peshitta's cognate root, the Greek words Abbott-Smith or Thayer derive
    from the root's words (loans) with their New Testament verses, and the
    other lexicons' text, as leads only.
-3. Write `<id>.json` from the brief, following the evidence back to the verses
+3. Write the entry from the brief, filed under its id (see "Ids"), following the evidence back to the verses
    and to the cognate languages' own dictionaries.
 4. `cargo run -- db check-lexicon` checks it, listing every fault.
    `cargo run -- db lexicon-support` counts each word's evidence (see

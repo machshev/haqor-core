@@ -1,0 +1,62 @@
+{
+  "id": "r3p",
+  "root": "רעפ",
+  "status": "draft",
+  "created": "2026-11-20",
+  "updated": "2026-11-19",
+  "gloss": "drip, rain down",
+  "summary": "רעף describes liquid falling in drops, especially rain and dew, and Yahweh's abundant provision.",
+  "words": [
+    {
+      "lemma": "רָעַף",
+      "bdb": [
+        "t.ds.aa"
+      ],
+      "pos": "verb",
+      "gloss": "drip, rain down",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "drip",
+          "senses": [
+            {
+              "id": "drip",
+              "gloss": "drip",
+              "definition": "Clouds and pastures drip water, while Yahweh's tracks drip fatness.",
+              "evidence": [
+                {
+                  "ref": "Psa.65.12",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.65.13"
+                },
+                {
+                  "ref": "Pro.3.20"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "rain down",
+          "senses": [
+            {
+              "id": "rain-down",
+              "gloss": "rain down",
+              "definition": "The heavens rain down righteousness upon the earth.",
+              "evidence": [
+                {
+                  "ref": "Isa.45.8",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "note": "Arabic leads in the brief do not establish a cognate meaning for this entry."
+}

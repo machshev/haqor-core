@@ -1,0 +1,203 @@
+{
+  "id": "yqr",
+  "root": "יקר",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "value"
+  ],
+  "gloss": "precious; costly",
+  "summary": "יקר describes something valuable or rare. Psalm 36:8 calls Yahweh's covenant faithfulness precious.",
+  "words": [
+    {
+      "lemma": "יָקָר",
+      "bdb": [
+        "j.dd.ab"
+      ],
+      "pos": "adjective",
+      "senses": [
+        {
+          "id": "precious",
+          "gloss": "precious",
+          "definition": "Highly valued and costly.",
+          "evidence": [
+            {
+              "ref": "Psa.36.8",
+              "role": "defining",
+              "note": "Yahweh's covenant faithfulness is precious."
+            },
+            {
+              "ref": "Psa.37.20",
+              "role": "example",
+              "note": "The preciousness of Yahweh’s enemies vanishes like smoke."
+            }
+          ]
+        }
+      ],
+      "gloss": "precious",
+      "cognate_ids": [
+        "arc-dear"
+      ]
+    },
+    {
+      "lemma": "יְקָר",
+      "gloss": "preciousness",
+      "bdb": [
+        "j.dd.ac"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "senses": [
+        {
+          "id": "honour-splendour",
+          "gloss": "honour, splendour",
+          "definition": "The king displays his splendour and the decree calls for honour. A human being may live in honour, yet in Psalm 49 even this distinction cannot preserve life.",
+          "evidence": [
+            {
+              "ref": "Est.1.4",
+              "role": "defining"
+            },
+            {
+              "ref": "Est.1.20",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.49.13",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.49.21",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-dear"
+      ]
+    },
+    {
+      "lemma": "יָקַר",
+      "gloss": "be precious",
+      "bdb": [
+        "j.dd.aa"
+      ],
+      "pos": "verb",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "be precious",
+          "senses": [
+            {
+              "id": "be-precious",
+              "gloss": "be precious",
+              "definition": "To be valued as precious.",
+              "evidence": [
+                {
+                  "ref": "Psa.49.9",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "make rare",
+          "senses": [
+            {
+              "id": "make-rare",
+              "gloss": "make rare",
+              "definition": "People become scarcer than fine gold. Proverbs applies the verb to limiting one’s visits to a neighbour.",
+              "evidence": [
+                {
+                  "ref": "Isa.13.12",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Pro.25.17",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-dear"
+      ]
+    },
+    {
+      "lemma": "יְקָר",
+      "gloss": "honour",
+      "bdb": [
+        "xj.ak.ac"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "senses": [
+        {
+          "id": "honour",
+          "gloss": "honour",
+          "definition": "The king promises gifts and honour to whoever explains his dream. Daniel tells him that God has given him power and glory.",
+          "evidence": [
+            {
+              "ref": "Dan.2.6",
+              "role": "defining"
+            },
+            {
+              "ref": "Dan.2.37",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-dear"
+      ]
+    },
+    {
+      "lemma": "יַקִּיר",
+      "gloss": "dear",
+      "bdb": [
+        "j.dd.ad"
+      ],
+      "pos": "adjective",
+      "senses": [
+        {
+          "id": "dear",
+          "gloss": "dear",
+          "definition": "Highly valued and dear.",
+          "evidence": [
+            {
+              "ref": "Jer.31.20",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-dear"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-dear",
+      "lang": "arc",
+      "form": "יְקַר",
+      "translit": "yəqar",
+      "gloss": "be precious, hold in honour",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "יְקַר J00581, Targum 1 Samuel 26:21 and Isaiah 58:13"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "Drafted for Psalm 36 coverage."
+}

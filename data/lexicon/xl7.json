@@ -1,0 +1,2574 @@
+{
+  "id": "xl7",
+  "created": "2026-11-15",
+  "root": "שלח",
+  "status": "draft",
+  "updated": "2026-11-15",
+  "tags": [
+    "sending",
+    "mission",
+    "prophets",
+    "apostle",
+    "release",
+    "divorce",
+    "hand",
+    "judgment",
+    "table",
+    "weapon"
+  ],
+  "gloss": "send; stretch out (the hand); let go, send away; table; weapon",
+  "summary": "The verb is to make a thing or a person go from oneself: to send a messenger, a letter or a gift, and to put out the hand or what is in it. In the piel the stress is on the letting go: to release a captive or a slave, to see a guest off, to drive out, to send away a wife, and, of Yahweh, to let loose sword, famine and pestilence. Scripture's commonest sender is Yahweh, who sends Moses, the prophets, his angel, his word and his spirit; the one sent speaks and acts for the one who sent him, and in the Peshitta the same root names the apostles, the שְׁלִיחֵא, “sent ones”. Its nouns are a sending out (מִשְׁלָח, מִשְׁלוֹחַ), a send-off or parting gift (שִׁלּוּחִים), shoots a plant puts out, and the conduit שִׁלֹחַ, which John interprets “Sent”. Two words of the same spelling stand apart: שֶׁלַח “weapon”, and שֻׁלְחָן “table”, which the Ugaritic shows to be of another older root.",
+  "words": [
+    {
+      "lemma": "שָׁלַח",
+      "pos": "verb",
+      "gloss": "send; stretch out; let go, send away",
+      "bdb": [
+        "v.dl.aa"
+      ],
+      "cognate_ids": [
+        "uga-shlh",
+        "phn-shlh",
+        "arc-shelach",
+        "ar-saraha"
+      ],
+      "summary": "About 850 times, two thirds in the qal and most of the rest in the piel. The qal is chiefly to send someone or something to a place or a person, and to put out the hand; the piel is chiefly to let go what one holds or has with one, and so to release, dismiss, drive out or divorce, though each stem is sometimes used as the other. With Yahweh as subject both stems are used of the plagues and judgments he sends, and the five uses of the hiphil are all of that.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "send (a person, word, a thing); of God, send a prophet, his word, a plague; stretch out (the hand); lay a hand on; let go",
+          "senses": [
+            {
+              "id": "send-person",
+              "gloss": "send (someone) on an errand",
+              "definition": "To make a person go from oneself to a place or to another person to do something there: a son, a servant, messengers, spies. Who is sent goes for the sender and reports to him.",
+              "evidence": [
+                {
+                  "ref": "Gen.37.13",
+                  "role": "defining",
+                  "note": "Israel to Joseph: “Are not your brothers shepherding in Shechem? Come, וְאֶשְׁלָחֲךָ to them”; and in verse 14 he sends him to see how they fare “and bring me word again”."
+                },
+                {
+                  "ref": "Num.13.2",
+                  "role": "defining",
+                  "note": "“שְׁלַח־לְךָ men, that they may spy out the land of Canaan … one man for each tribe of his fathers תִּשְׁלָחוּ.”"
+                },
+                {
+                  "ref": "Gen.32.4",
+                  "note": "“Jacob sent messengers (וַיִּשְׁלַח … מַלְאָכִים) before him to Esau his brother.”"
+                },
+                {
+                  "ref": "2Sa.11.6",
+                  "note": "“David sent to Joab: שְׁלַח to me Uriah the Hittite; and Joab sent Uriah to David.”"
+                },
+                {
+                  "ref": "Gen.28.5",
+                  "note": "“Isaac sent Jacob, and he went to Paddan-aram, to Laban.”"
+                },
+                {
+                  "ref": "Gen.43.8",
+                  "note": "Judah to his father: “שִׁלְחָה the lad with me, and we will arise and go.”"
+                },
+                {
+                  "ref": "1Ki.5.15",
+                  "note": "“Hiram king of Tyre sent his servants to Solomon.”"
+                }
+              ]
+            },
+            {
+              "id": "send-word",
+              "gloss": "send (word, a letter); send for",
+              "definition": "With no object named, or with “words” or “a letter”: to send a message, often followed by what is said or done through the messenger (“sent and called”, “sent and took”). The message may go “by the hand of” its bearer.",
+              "evidence": [
+                {
+                  "ref": "Gen.41.14",
+                  "role": "defining",
+                  "note": "“Pharaoh וַיִּשְׁלַח and called Joseph, and they hurried him out of the pit”: to send is to send for."
+                },
+                {
+                  "ref": "Gen.27.42",
+                  "note": "Rebekah “sent and called Jacob her younger son”."
+                },
+                {
+                  "ref": "2Sa.11.14",
+                  "role": "defining",
+                  "note": "“David wrote a letter to Joab וַיִּשְׁלַח בְּיַד Uriah”: sent it by Uriah's hand."
+                },
+                {
+                  "ref": "Jer.29.1",
+                  "note": "“The words of the letter which Jeremiah the prophet sent from Jerusalem to the rest of the elders of the exile.”"
+                },
+                {
+                  "ref": "Est.9.20",
+                  "note": "“Mordecai wrote these things and sent letters to all the Jews.”"
+                },
+                {
+                  "ref": "Pro.26.6",
+                  "role": "defining",
+                  "note": "“He cuts off his own feet and drinks violence who sends words by the hand of a fool (שֹׁלֵחַ דְּבָרִים בְּיַד־כְּסִיל).”"
+                },
+                {
+                  "ref": "Exo.4.13",
+                  "note": "Moses: “Send, I pray, by the hand you will send (שְׁלַח־נָא בְּיַד־תִּשְׁלָח)”: by whomever else."
+                }
+              ]
+            },
+            {
+              "id": "send-things",
+              "gloss": "send (a gift, goods, portions)",
+              "definition": "To have a thing carried to someone: a present, provisions, payment, portions of food.",
+              "evidence": [
+                {
+                  "ref": "Gen.45.23",
+                  "role": "defining",
+                  "note": "“To his father he sent (שָׁלַח) ten donkeys carrying the good of Egypt, and ten she-donkeys carrying grain and bread.”"
+                },
+                {
+                  "ref": "Gen.38.20",
+                  "note": "“Judah sent the kid by the hand of his friend the Adullamite, to take the pledge from the woman's hand.”"
+                },
+                {
+                  "ref": "1Ki.15.19",
+                  "note": "Asa to Ben-hadad: “Behold, I have sent you a present of silver and gold.”"
+                },
+                {
+                  "ref": "Neh.8.10",
+                  "role": "defining",
+                  "note": "“Eat the fat and drink the sweet, וְשִׁלְחוּ מָנוֹת to him for whom nothing is prepared.”"
+                }
+              ],
+              "kin": [
+                "sending-of-portions"
+              ]
+            },
+            {
+              "id": "god-sends-man",
+              "gloss": "of God: send (a prophet, a deliverer, his angel)",
+              "definition": "Yahweh's commissioning of a man or an angel to go, speak and act for him. The one sent does not come of himself or speak his own words; that Yahweh sent him is what gives his word its authority, and “I did not send them” is the mark of the false prophet.",
+              "evidence": [
+                {
+                  "ref": "Exo.3.10",
+                  "role": "defining",
+                  "note": "“And now come, וְאֶשְׁלָחֲךָ to Pharaoh, and bring my people out of Egypt.” Through verses 12 to 15 Moses is to say “the God of your fathers שְׁלָחַנִי to you”."
+                },
+                {
+                  "ref": "Exo.3.14",
+                  "note": "“Thus you shall say to the sons of Israel: אֶהְיֶה שְׁלָחַנִי אֲלֵיכֶם.”"
+                },
+                {
+                  "ref": "Num.16.28",
+                  "role": "defining",
+                  "note": "“By this you shall know that Yahweh שְׁלָחַנִי to do all these works, for it is not from my own heart”: sent is set against self-appointed."
+                },
+                {
+                  "ref": "Isa.6.8",
+                  "role": "defining",
+                  "note": "“Whom shall I send (אֶת־מִי אֶשְׁלַח), and who will go for us? And I said, Here am I; שְׁלָחֵנִי.”"
+                },
+                {
+                  "ref": "Jer.1.7",
+                  "note": "“To all to whom I send you, you shall go, and all that I command you, you shall speak.”"
+                },
+                {
+                  "ref": "Jer.7.25",
+                  "note": "“I sent to you all my servants the prophets, daily rising early and sending.”"
+                },
+                {
+                  "ref": "Jer.14.14",
+                  "role": "defining",
+                  "note": "“The prophets prophesy falsehood in my name: לֹא שְׁלַחְתִּים, nor did I command them, nor speak to them.” So Jer 23:21, “I did not send the prophets, yet they ran”."
+                },
+                {
+                  "ref": "Jer.23.21"
+                },
+                {
+                  "ref": "Jer.28.9",
+                  "note": "“When the word of the prophet comes to pass, the prophet shall be known, that Yahweh has truly sent him.”"
+                },
+                {
+                  "ref": "Gen.45.7",
+                  "note": "Joseph: “God sent me before you to set for you a remnant in the earth.” So Psa 105:17, “he sent a man before them”."
+                },
+                {
+                  "ref": "Psa.105.17"
+                },
+                {
+                  "ref": "Exo.23.20",
+                  "note": "“Behold, I send an angel (שֹׁלֵחַ מַלְאָךְ) before you, to keep you in the way.”"
+                },
+                {
+                  "ref": "Mal.3.1",
+                  "note": "“Behold, I send my messenger, and he shall prepare a way before me.” Quoted of John the Baptist, Mat 11:10."
+                },
+                {
+                  "ref": "Mat.11.10"
+                },
+                {
+                  "ref": "Mal.3.23",
+                  "note": "“Behold, I am sending you Elijah the prophet before the coming of the great and fearful day of Yahweh.”"
+                },
+                {
+                  "ref": "Isa.61.1",
+                  "role": "defining",
+                  "note": "“The spirit of my Lord Yahweh is upon me, because Yahweh has anointed me to bring good news to the meek; שְׁלָחַנִי to bind up the broken-hearted.” Jesus reads it of himself, Luk 4:18."
+                },
+                {
+                  "ref": "Luk.4.18",
+                  "note": "“He has sent me (Peshitta וְשַׁלְחַנִי, the same root) to heal the broken-hearted.”"
+                },
+                {
+                  "ref": "Isa.48.16",
+                  "note": "“And now my Lord Yahweh has sent me, and his spirit.”"
+                }
+              ]
+            },
+            {
+              "id": "god-sends-things",
+              "gloss": "of God: send (his word, help, a plague, arrows)",
+              "definition": "Yahweh's sending of what is his to do his work on earth: his word, his light and truth, help, food, redemption; and plagues, the hornet, fire, darkness and his arrows.",
+              "evidence": [
+                {
+                  "ref": "Psa.107.20",
+                  "role": "defining",
+                  "note": "“יִשְׁלַח דְּבָרוֹ and healed them, and delivered them from their pits.”"
+                },
+                {
+                  "ref": "Psa.147.15",
+                  "role": "defining",
+                  "note": "“Who sends his saying to the earth; his word runs very swiftly”; and verse 18, “he sends his word and melts them; he makes his wind blow, the waters flow”."
+                },
+                {
+                  "ref": "Psa.147.18"
+                },
+                {
+                  "ref": "Isa.55.11",
+                  "role": "defining",
+                  "note": "“So shall my word be that goes out of my mouth: it shall not return to me empty, but … shall prosper in that for which I sent it (אֲשֶׁר שְׁלַחְתִּיו).”"
+                },
+                {
+                  "ref": "Isa.9.7",
+                  "note": "“My Lord sent a word into Jacob, and it has fallen on Israel.”"
+                },
+                {
+                  "ref": "Zec.7.12",
+                  "note": "“The words which Yahweh of hosts sent by his spirit, by the hand of the former prophets.”"
+                },
+                {
+                  "ref": "Psa.43.3",
+                  "note": "“Send your light and your truth; let them lead me.”"
+                },
+                {
+                  "ref": "Psa.20.3",
+                  "note": "“May he send your help from the holy place.”"
+                },
+                {
+                  "ref": "Psa.111.9",
+                  "note": "“He sent redemption to his people; he commanded his covenant for ever.”"
+                },
+                {
+                  "ref": "Jol.2.19",
+                  "note": "“Behold, I am sending you the grain and the new wine and the oil.”"
+                },
+                {
+                  "ref": "Exo.9.14",
+                  "role": "defining",
+                  "note": "“This time I am sending all my plagues to your heart, and on your servants and your people.”"
+                },
+                {
+                  "ref": "Exo.23.28",
+                  "note": "“I will send the hornet before you, and it shall drive out the Hivite.”"
+                },
+                {
+                  "ref": "Psa.18.15",
+                  "note": "“He sent his arrows and scattered them.”"
+                },
+                {
+                  "ref": "Lam.1.13",
+                  "note": "“From on high he sent fire into my bones.”"
+                }
+              ]
+            },
+            {
+              "id": "stretch-out",
+              "gloss": "stretch out, put out (the hand, a staff, a sickle)",
+              "definition": "To put forth the hand, or a thing held in it, toward something, most often to take it or to do something with it. The hand goes out from the body as a messenger goes out from the sender.",
+              "evidence": [
+                {
+                  "ref": "Gen.3.22",
+                  "role": "defining",
+                  "note": "“And now, lest יִשְׁלַח יָדוֹ and take also of the tree of the life, and eat, and live for ever.”"
+                },
+                {
+                  "ref": "Gen.8.9",
+                  "role": "defining",
+                  "note": "Noah, when the dove returned: “וַיִּשְׁלַח יָדוֹ and took her, and brought her in to him into the ark.”"
+                },
+                {
+                  "ref": "Gen.22.10",
+                  "note": "“Abraham stretched out his hand and took the knife to slay his son.”"
+                },
+                {
+                  "ref": "Exo.4.4",
+                  "note": "“שְׁלַח יָדְךָ and take it by its tail; and he put out his hand and caught it.”"
+                },
+                {
+                  "ref": "1Sa.14.27",
+                  "role": "defining",
+                  "note": "Jonathan “put out the end of the staff that was in his hand and dipped it in the honeycomb, and brought his hand back to his mouth”: put out and brought back."
+                },
+                {
+                  "ref": "Jol.4.13",
+                  "note": "“שִׁלְחוּ מַגָּל, for the harvest is ripe”: put in the sickle."
+                },
+                {
+                  "ref": "Psa.110.2",
+                  "note": "“The rod of your strength Yahweh will send out (יִשְׁלַח) from Zion: rule in the midst of your enemies.”"
+                },
+                {
+                  "ref": "2Sa.6.6",
+                  "note": "“Uzzah put out [his hand] to the ark of God and took hold of it”: the object left unsaid."
+                },
+                {
+                  "ref": "Psa.144.7",
+                  "note": "“Send your hands from on high; rescue me and deliver me out of many waters.”"
+                },
+                {
+                  "ref": "Ezk.2.9",
+                  "note": "“Behold, a hand שְׁלוּחָה to me, and in it a scroll.”"
+                }
+              ]
+            },
+            {
+              "id": "lay-hand-on",
+              "gloss": "lay a hand on (to harm or to seize)",
+              "definition": "שָׁלַח יָד with בְּ, אֶל or עַל: to put out the hand against a person to hurt or kill him, or on goods to take them.",
+              "evidence": [
+                {
+                  "ref": "Gen.22.12",
+                  "role": "defining",
+                  "note": "“אַל־תִּשְׁלַח יָדְךָ אֶל־הַנַּעַר, and do nothing to him.”"
+                },
+                {
+                  "ref": "Gen.37.22",
+                  "note": "Reuben: “Shed no blood; cast him into this pit … וְיָד אַל־תִּשְׁלְחוּ־בוֹ”."
+                },
+                {
+                  "ref": "1Sa.26.9",
+                  "role": "defining",
+                  "note": "“Who has put out his hand against Yahweh's anointed (שָׁלַח יָדוֹ בִּמְשִׁיחַ יַהְוֶה) and been guiltless?” So 1Sa 24:7."
+                },
+                {
+                  "ref": "1Sa.24.7"
+                },
+                {
+                  "ref": "Exo.22.7",
+                  "role": "defining",
+                  "note": "The keeper of goods is brought to God to see “whether he has not put his hand to his neighbour's property”."
+                },
+                {
+                  "ref": "Est.9.10",
+                  "note": "They killed the ten sons of Haman, “but on the spoil they did not lay their hand”."
+                },
+                {
+                  "ref": "Exo.24.11",
+                  "note": "“Against the nobles of the sons of Israel he did not put out his hand; they saw God, and ate and drank.”"
+                },
+                {
+                  "ref": "Exo.3.20",
+                  "note": "“I will put out my hand and strike Egypt with all my wonders … and after that he will let you go”: qal and piel in one verse."
+                },
+                {
+                  "ref": "Job.1.11",
+                  "note": "“But put out your hand now and touch all that is his.”"
+                },
+                {
+                  "ref": "Psa.55.21",
+                  "note": "“He has put out his hands against those at peace with him; he has profaned his covenant.”"
+                },
+                {
+                  "ref": "Psa.125.3",
+                  "note": "“That the righteous may not put out their hands to iniquity.”"
+                }
+              ]
+            },
+            {
+              "id": "let-go-qal",
+              "gloss": "let go, let loose",
+              "definition": "Rarely in the qal, the piel's sense: to let someone go away, or to give a thing free rein.",
+              "evidence": [
+                {
+                  "ref": "Jdg.11.38",
+                  "role": "defining",
+                  "note": "Jephthah to his daughter: “Go; וַיִּשְׁלַח אוֹתָהּ for two months.”"
+                },
+                {
+                  "ref": "Psa.50.19",
+                  "role": "defining",
+                  "note": "“Your mouth you have let loose in evil (פִּיךָ שָׁלַחְתָּ בְרָעָה), and your tongue frames deceit.”"
+                },
+                {
+                  "ref": "Gen.49.21",
+                  "note": "“Naphtali is a hind let loose (אַיָּלָה שְׁלֻחָה).”"
+                },
+                {
+                  "ref": "Job.5.10",
+                  "note": "“Who gives rain on the face of the earth, and sends waters (וְשֹׁלֵחַ מַיִם) on the face of the fields.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "let go, set free; send off, dismiss; send out, drive out; send away (a wife); let loose (a judgment); send forth (springs, shoots); give over (to fire); stretch out, shoot",
+          "senses": [
+            {
+              "id": "let-go",
+              "gloss": "let go, release, set free",
+              "definition": "To let go one who is held: a people in bondage, a slave, a captive, a bird or beast, a man one has hold of. Its opposite is to hold fast and to refuse.",
+              "evidence": [
+                {
+                  "ref": "Exo.5.1",
+                  "role": "defining",
+                  "note": "“Thus says Yahweh, the God of Israel: שַׁלַּח אֶת־עַמִּי, that they may keep a feast to me in the wilderness.”"
+                },
+                {
+                  "ref": "Exo.9.2",
+                  "role": "defining",
+                  "note": "“If you refuse to let go (לְשַׁלֵּחַ), and still hold them fast (מַחֲזִיק בָּם)”: letting go against holding."
+                },
+                {
+                  "ref": "Gen.32.27",
+                  "role": "defining",
+                  "note": "“שַׁלְּחֵנִי, for the dawn has come up. And he said, לֹא אֲשַׁלֵּחֲךָ unless you bless me.”"
+                },
+                {
+                  "ref": "Deu.15.12",
+                  "role": "defining",
+                  "note": "The Hebrew slave: “in the seventh year תְּשַׁלְּחֶנּוּ חָפְשִׁי from you”; verse 13, “you shall not send him away empty”."
+                },
+                {
+                  "ref": "Deu.15.13"
+                },
+                {
+                  "ref": "Exo.21.26",
+                  "note": "For the slave's eye “he shall let him go free”."
+                },
+                {
+                  "ref": "Isa.58.6",
+                  "role": "defining",
+                  "note": "“To loose the bonds of wickedness, to undo the bands of the yoke, וְשַׁלַּח רְצוּצִים חָפְשִׁים”. Jesus reads it with Isa 61:1, Luk 4:18: “to send away the crushed in release”."
+                },
+                {
+                  "ref": "Luk.4.18"
+                },
+                {
+                  "ref": "Jer.50.33",
+                  "note": "“All who took them captive held them fast; they refused to let them go.”"
+                },
+                {
+                  "ref": "Zec.9.11",
+                  "note": "“By the blood of your covenant I have sent out your prisoners from the pit in which is no water.”"
+                },
+                {
+                  "ref": "Lev.14.7",
+                  "note": "The priest “shall let the living bird go on the face of the field”."
+                },
+                {
+                  "ref": "Deu.22.7",
+                  "note": "“You shall surely let the mother go (שַׁלֵּחַ תְּשַׁלַּח), and the young you may take.”"
+                },
+                {
+                  "ref": "Job.39.5",
+                  "note": "“Who sent out the wild ass free? Who loosed the bonds of the onager?”"
+                }
+              ]
+            },
+            {
+              "id": "send-off",
+              "gloss": "send off, dismiss, see on the way",
+              "definition": "To let a guest, a kinsman or an assembled people go their way, often with a blessing, a gift or company on the road.",
+              "evidence": [
+                {
+                  "ref": "Gen.18.16",
+                  "role": "defining",
+                  "note": "The men rose up, “and Abraham was going with them לְשַׁלְּחָם”: to see them off."
+                },
+                {
+                  "ref": "Gen.24.59",
+                  "note": "“They sent away Rebekah their sister, and her nurse, and Abraham's servant.”"
+                },
+                {
+                  "ref": "Gen.26.29",
+                  "note": "“We did you only good וַנְּשַׁלֵּחֲךָ בְּשָׁלוֹם.”"
+                },
+                {
+                  "ref": "Gen.31.27",
+                  "role": "defining",
+                  "note": "Laban: “Why did you flee in secret … I would have sent you away with joy and with songs, with timbrel and with lyre.”"
+                },
+                {
+                  "ref": "Exo.18.27",
+                  "note": "“Moses sent off his father-in-law, and he went to his own land.”"
+                },
+                {
+                  "ref": "Jos.22.6",
+                  "note": "“Joshua blessed them and sent them away, and they went to their tents.”"
+                },
+                {
+                  "ref": "1Ki.8.66",
+                  "note": "“On the eighth day he sent the people away, and they blessed the king.”"
+                }
+              ]
+            },
+            {
+              "id": "send-out",
+              "gloss": "send out, drive out, put away from",
+              "definition": "To make someone leave a place where he may not stay: out of the garden, the house, the camp, the land, or from before Yahweh's face.",
+              "evidence": [
+                {
+                  "ref": "Gen.3.23",
+                  "role": "defining",
+                  "note": "“So Yahweh God וַיְשַׁלְּחֵהוּ from the garden of Eden, to till the ground from which he was taken”; verse 24, “he drove out (וַיְגָרֶשׁ) the man”."
+                },
+                {
+                  "ref": "Gen.21.14",
+                  "note": "Abraham gave Hagar bread and a skin of water and the child, “and sent her away”."
+                },
+                {
+                  "ref": "Gen.25.6",
+                  "note": "To the sons of the concubines Abraham gave gifts, “and sent them away from Isaac his son”."
+                },
+                {
+                  "ref": "Num.5.2",
+                  "role": "defining",
+                  "note": "“That they send out of the camp every leper, and everyone with a discharge, and everyone unclean by a soul.”"
+                },
+                {
+                  "ref": "Lev.18.24",
+                  "note": "“The nations which I am sending out before you.”"
+                },
+                {
+                  "ref": "Lev.16.10",
+                  "note": "The goat for Azazel stands alive before Yahweh “to make a covering over it, לְשַׁלַּח אֹתוֹ to Azazel into the wilderness”; verses 21 and 22, it bears all their iniquities to a land cut off."
+                },
+                {
+                  "ref": "Lev.16.21",
+                  "to": "Lev.16.22"
+                },
+                {
+                  "ref": "Jer.15.1",
+                  "note": "“Send them away from my face, and let them go out.”"
+                },
+                {
+                  "ref": "1Ki.9.7",
+                  "note": "“The house which I have made holy for my name I will send away from my face.”"
+                },
+                {
+                  "ref": "Exo.6.1",
+                  "note": "“By a strong hand he will let them go, and by a strong hand he will drive them out of his land”: שִׁלַּח beside גֵּרֵשׁ."
+                }
+              ]
+            },
+            {
+              "id": "divorce",
+              "gloss": "send away (a wife), divorce",
+              "definition": "To send a wife out of one's house, ending the marriage; the law joins it to the writing of a scroll of cutting off.",
+              "evidence": [
+                {
+                  "ref": "Deu.24.1",
+                  "role": "defining",
+                  "note": "“He writes her a scroll of cutting off (סֵפֶר כְּרִיתֻת) and gives it into her hand, וְשִׁלְּחָהּ מִבֵּיתוֹ.”"
+                },
+                {
+                  "ref": "Deu.22.19",
+                  "note": "“She shall be his wife; he may not send her away all his days.”"
+                },
+                {
+                  "ref": "Jer.3.8",
+                  "role": "defining",
+                  "note": "“For all the adulteries of backsliding Israel שִׁלַּחְתִּיהָ, and gave her the scroll of her cutting off.”"
+                },
+                {
+                  "ref": "Isa.50.1",
+                  "note": "“Where is the scroll of your mother's cutting off, with which I sent her away?”"
+                },
+                {
+                  "ref": "Mal.2.16",
+                  "role": "defining",
+                  "note": "“For he hates sending away (שָׂנֵא שַׁלַּח), says Yahweh, the God of Israel.”"
+                },
+                {
+                  "ref": "Mat.19.7",
+                  "to": "Mat.19.8",
+                  "note": "The Pharisees cite Deu 24:1; Jesus: “Moses, for the hardness of your heart, allowed you to send away your wives, but from the beginning it was not so.”"
+                }
+              ]
+            },
+            {
+              "id": "send-judgment",
+              "gloss": "of God: let loose (sword, famine, pestilence, beasts, fire) on",
+              "definition": "Yahweh's sending of a judgment into or upon a people, mostly with בְּ “among, against”: the thing is let loose and does its work.",
+              "evidence": [
+                {
+                  "ref": "Ezk.14.21",
+                  "role": "defining",
+                  "note": "“My four sore judgments, sword and famine and evil beast and pestilence, שִׁלַּחְתִּי to Jerusalem, to cut off from it man and beast.”"
+                },
+                {
+                  "ref": "Lev.26.25",
+                  "note": "“I will send pestilence among you, and you shall be given into the hand of the enemy.”"
+                },
+                {
+                  "ref": "Num.21.6",
+                  "role": "defining",
+                  "note": "“Yahweh sent among the people the burning serpents, and they bit the people.”"
+                },
+                {
+                  "ref": "2Ki.17.25",
+                  "note": "“Yahweh sent the lions among them.”"
+                },
+                {
+                  "ref": "Amo.1.4",
+                  "note": "“I will send a fire on the house of Hazael, and it shall devour the palaces of Ben-hadad.”"
+                },
+                {
+                  "ref": "Psa.78.45",
+                  "note": "“He sent among them the swarm, and it devoured them”; verse 49, “he sent among them the burning of his anger”."
+                },
+                {
+                  "ref": "Psa.78.49"
+                },
+                {
+                  "ref": "Exo.15.7",
+                  "note": "“You send out your burning anger; it consumes them like stubble.”"
+                },
+                {
+                  "ref": "Deu.28.20",
+                  "note": "“Yahweh will send on you the curse, the confusion and the rebuke.”"
+                },
+                {
+                  "ref": "Deu.32.24",
+                  "note": "“The tooth of beasts I will send among them.”"
+                }
+              ]
+            },
+            {
+              "id": "send-forth",
+              "gloss": "send forth, let run (springs, the spirit, shoots, roots, cattle)",
+              "definition": "To let a thing go out freely from its source: God sends springs into the valleys and sends out his spirit; a tree sends out roots and branches; a man lets his cattle range.",
+              "evidence": [
+                {
+                  "ref": "Psa.104.10",
+                  "role": "defining",
+                  "note": "“Who sends springs into the valleys (הַמְשַׁלֵּחַ מַעְיָנִים בַּנְּחָלִים); they run between the mountains.”"
+                },
+                {
+                  "ref": "Psa.104.30",
+                  "role": "defining",
+                  "note": "“תְּשַׁלַּח רוּחֲךָ, they are created, and you renew the face of the ground”, against verse 29, “you gather their spirit, they expire”."
+                },
+                {
+                  "ref": "Ezk.31.4",
+                  "note": "The deep “sent out its channels (תְּעָלֹתֶיהָ שִׁלְחָה) to all the trees of the field”."
+                },
+                {
+                  "ref": "Job.12.15",
+                  "note": "“He withholds the waters and they dry up; he sends them out and they overturn the earth.”"
+                },
+                {
+                  "ref": "Jer.17.8",
+                  "role": "defining",
+                  "note": "The tree planted by water “sends out its roots (יְשַׁלַּח שָׁרָשָׁיו) by the stream”."
+                },
+                {
+                  "ref": "Psa.80.12",
+                  "note": "The vine out of Egypt “sent out its boughs to the sea”."
+                },
+                {
+                  "ref": "Ezk.17.6",
+                  "note": "The vine “made branches and sent out sprays”."
+                },
+                {
+                  "ref": "Exo.22.4",
+                  "note": "A man “lets his beast loose (וְשִׁלַּח אֶת־בְּעִירוֹ) and it feeds in another's field”."
+                },
+                {
+                  "ref": "Isa.32.20",
+                  "note": "“Who send out the foot of the ox and the donkey”: let them range."
+                },
+                {
+                  "ref": "Ecc.11.1",
+                  "note": "“Send your bread on the face of the waters, for in many days you will find it.”"
+                }
+              ],
+              "kin": [
+                "shoots",
+                "vine-shoots",
+                "letting-range",
+                "shiloah-waters"
+              ]
+            },
+            {
+              "id": "give-over",
+              "gloss": "give over (to fire, to one's own way)",
+              "definition": "To let a thing go into the power of something that destroys it: a city “into the fire”, a people into the hand of their own transgression.",
+              "evidence": [
+                {
+                  "ref": "Jdg.1.8",
+                  "role": "defining",
+                  "note": "Judah took Jerusalem, struck it with the sword, “and the city שִׁלְּחוּ בָאֵשׁ”."
+                },
+                {
+                  "ref": "Psa.74.7",
+                  "note": "“They have sent your sanctuary into the fire.”"
+                },
+                {
+                  "ref": "Psa.81.13",
+                  "role": "defining",
+                  "note": "“So I let them go (וָאֲשַׁלְּחֵהוּ) in the stubbornness of their heart; they walk in their own counsels.”"
+                },
+                {
+                  "ref": "Job.8.4",
+                  "note": "“If your sons sinned against him, he sent them into the hand of their transgression.”"
+                }
+              ]
+            },
+            {
+              "id": "stretch-shoot",
+              "gloss": "stretch out (the hands); let down; shoot",
+              "definition": "As the qal with the hand; also to let a man down by ropes and to let arrows fly.",
+              "evidence": [
+                {
+                  "ref": "Pro.31.19",
+                  "role": "defining",
+                  "note": "“Her hands she puts out to the distaff”; verse 20, “her palm she spreads to the poor, and her hands she puts out to the needy”."
+                },
+                {
+                  "ref": "Pro.31.20"
+                },
+                {
+                  "ref": "Jer.38.6",
+                  "note": "“They let Jeremiah down with ropes” into the pit."
+                },
+                {
+                  "ref": "1Sa.20.20",
+                  "role": "defining",
+                  "note": "“I will shoot three arrows to its side, לְשַׁלַּח־לִי at a mark.”"
+                },
+                {
+                  "ref": "Ezk.5.16",
+                  "note": "“When I send on them the evil arrows of famine.”"
+                }
+              ]
+            },
+            {
+              "id": "send-piel",
+              "gloss": "send (messengers, portions, pieces) about",
+              "definition": "As the qal “send”, often of sending to many or in every direction.",
+              "evidence": [
+                {
+                  "ref": "1Sa.31.9",
+                  "role": "defining",
+                  "note": "They cut off Saul's head and stripped his armour, “and sent into the land of the Philistines all around, to carry the news”."
+                },
+                {
+                  "ref": "Num.22.40",
+                  "note": "“Balak sacrificed oxen and sheep, and sent to Balaam and to the princes with him.”"
+                },
+                {
+                  "ref": "Neh.8.12",
+                  "note": "The people went “to eat and to drink and to send portions (וּלְשַׁלַּח מָנוֹת)”, the qal's phrase of verse 10."
+                },
+                {
+                  "ref": "Isa.66.19",
+                  "note": "“I will send of them survivors to the nations … and they shall declare my glory among the nations.”"
+                },
+                {
+                  "ref": "Pro.6.19",
+                  "note": "“One who sends out strife among brothers (מְשַׁלֵּחַ מְדָנִים).”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be sent off; be sent away, put away; be let loose, forsaken",
+          "senses": [
+            {
+              "id": "be-sent-be-sent",
+              "gloss": "be sent, be sent off",
+              "definition": "The passive of the piel's sending: to be sent on one's way or on a mission.",
+              "evidence": [
+                {
+                  "ref": "Gen.44.3",
+                  "role": "defining",
+                  "note": "“The morning was light, and the men שֻׁלְּחוּ, they and their donkeys.”"
+                },
+                {
+                  "ref": "Dan.10.11",
+                  "role": "defining",
+                  "note": "The angel to Daniel: “Stand upright, for now שֻׁלַּחְתִּי to you.”"
+                },
+                {
+                  "ref": "Oba.1.1",
+                  "note": "“An envoy has been sent among the nations.”"
+                },
+                {
+                  "ref": "Pro.17.11",
+                  "note": "“A cruel messenger shall be sent against him.”"
+                }
+              ]
+            },
+            {
+              "id": "be-sent-away-put",
+              "gloss": "be sent away, put away; let loose, left to itself",
+              "definition": "The passive of the piel's sending away and letting go: a wife put away, a child left to himself, a dwelling forsaken.",
+              "evidence": [
+                {
+                  "ref": "Isa.50.1",
+                  "role": "defining",
+                  "note": "“For your transgressions your mother שֻׁלְּחָה”: was put away."
+                },
+                {
+                  "ref": "Pro.29.15",
+                  "role": "defining",
+                  "note": "“The rod and reproof give wisdom, but a boy let loose (נַעַר מְשֻׁלָּח) shames his mother.”"
+                },
+                {
+                  "ref": "Isa.27.10",
+                  "note": "“The fortified city is solitary, a dwelling sent away and forsaken (מְשֻׁלָּח וְנֶעֱזָב) like the wilderness.”"
+                },
+                {
+                  "ref": "Isa.16.2",
+                  "note": "“Like a wandering bird, a nest cast out.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "of God: send (a plague, famine, beasts, an enemy) on",
+          "senses": [
+            {
+              "id": "send-a-judgment-on",
+              "gloss": "send (a judgment) on",
+              "definition": "All five uses have Yahweh as subject and a plague or enemy as object, with בְּ of those it comes on: the piel's sending of judgment.",
+              "evidence": [
+                {
+                  "ref": "Exo.8.17",
+                  "role": "defining",
+                  "note": "“If you do not let my people go (מְשַׁלֵּחַ), behold, I am sending (מַשְׁלִיחַ) the swarm on you”: piel and hiphil set against each other."
+                },
+                {
+                  "ref": "Lev.26.22",
+                  "role": "defining",
+                  "note": "“I will send the beast of the field among you, and it shall bereave you.”"
+                },
+                {
+                  "ref": "2Ki.15.37",
+                  "note": "“Yahweh began to send against Judah Rezin king of Aram and Pekah son of Remaliah.”"
+                },
+                {
+                  "ref": "Ezk.14.13",
+                  "note": "“I break its staff of bread and send famine on it.”"
+                },
+                {
+                  "ref": "Amo.8.11",
+                  "note": "“I will send a famine in the land: not a famine of bread … but of hearing the words of Yahweh.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be sent",
+          "senses": [
+            {
+              "id": "be-sent-of-letters",
+              "gloss": "be sent (of letters)",
+              "definition": "Once, an infinitive: the passive of the qal.",
+              "evidence": [
+                {
+                  "ref": "Est.3.13",
+                  "role": "defining",
+                  "note": "“וְנִשְׁלוֹחַ סְפָרִים by the hand of the runners to all the king's provinces.”"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἀποστέλλω",
+          "gloss": "send, send off",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.3.10, אֶשְׁלָחֲךָ → ἀποστείλω; Isa.6.8, אֶשְׁלַח → ἀποστείλω; Isa.61.1, שְׁלָחַנִי → ἀπέσταλκέν; Exo.23.20, שֹׁלֵחַ → ἀποστέλλω; Lev.16.10, לְשַׁלַּח → ἀποστεῖλαι; ἀποστέλλω renders שָׁלַח ×454"
+            },
+            {
+              "ref": "Luk.4.18",
+              "role": "defining",
+              "note": "Isa 61:1 and 58:6 read by Jesus: “he has sent me (ἀπέσταλκέν με) … to send away (ἀποστεῖλαι) the crushed in release”: the qal's sending and the piel's letting go in one verse."
+            },
+            {
+              "ref": "Mat.11.10",
+              "role": "defining",
+              "note": "“Behold, I send (ἀποστέλλω) my messenger before your face”: Mal 3:1 with Exo 23:20."
+            },
+            {
+              "ref": "Act.7.34",
+              "role": "defining",
+              "note": "Stephen quotes Exo 3:10: “and now come, I will send you to Egypt”; verse 35, “this Moses … God sent as ruler and deliverer”."
+            },
+            {
+              "ref": "Act.7.35"
+            },
+            {
+              "ref": "Jhn.9.7",
+              "note": "“Siloam, which is interpreted, Sent (ἀπεσταλμένος)”: John gives the Hebrew name שִׁלֹחַ by this verb."
+            },
+            {
+              "ref": "Jhn.17.3",
+              "note": "“That they may know you, the only true God, and Jesus Christ whom you sent (ἀπέστειλας).”"
+            }
+          ]
+        },
+        {
+          "lemma": "ἐξαποστέλλω",
+          "gloss": "send out, send away",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.3.23, וַיְשַׁלְּחֵהוּ → ἐξαπέστειλεν; Exo.5.1, שַׁלַּח → ἐξαπόστειλον; Deu.24.1, וְשִׁלְּחָהּ → ἐξαποστελεῖ; Mal.3.1, שֹׁלֵחַ → ἐξαποστέλλω; ἐξαποστέλλω renders שָׁלַח ×161 and more under inflected forms the alignment leaves unlemmatised"
+            },
+            {
+              "ref": "Luk.1.53",
+              "role": "defining",
+              "note": "“The rich he has sent away empty (ἐξαπέστειλεν κενούς)”: the phrase of Gen 31:42 and Deu 15:13, שִׁלַּח רֵיקָם."
+            },
+            {
+              "ref": "Gal.4.4",
+              "note": "“God sent out his son, come of a woman, come under law.”"
+            },
+            {
+              "ref": "Act.7.12",
+              "note": "“Jacob … sent out our fathers first.”"
+            }
+          ]
+        },
+        {
+          "lemma": "ἐκτείνω",
+          "gloss": "stretch out",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.22.10, וַיִּשְׁלַח → ἐξέτεινεν; Exo.3.20, וְשָׁלַחְתִּי → ἐκτείνας; 1Ki.13.4, וַיִּשְׁלַח … שָׁלַח → ἐξέτεινεν (twice); ἐκτείνω renders שָׁלַח ×24"
+            },
+            {
+              "ref": "Mat.12.13",
+              "role": "defining",
+              "note": "“Stretch out your hand; and he stretched it out, and it was restored”; compare the hand Jeroboam put out, which withered and was restored (1Ki 13:4, 6)."
+            },
+            {
+              "ref": "Luk.22.53",
+              "role": "defining",
+              "note": "“You did not stretch out your hands against me”: שָׁלַח יָד בְּ, to lay hands on."
+            },
+            {
+              "ref": "Act.4.30",
+              "note": "“While you stretch out your hand to heal.”"
+            }
+          ]
+        },
+        {
+          "lemma": "ἀπόστολος",
+          "gloss": "one sent, an apostle",
+          "evidence": [
+            {
+              "source": "abbott-smith",
+              "locator": "ἀπόστολος (< ἀποστέλλω): “a messenger, one sent on a mission”; in the LXX only III Ki 14:6 A"
+            },
+            {
+              "ref": "1Ki.14.6",
+              "note": "Ahijah to Jeroboam's wife: “I am sent (שָׁלוּחַ) to you with a hard thing”: the passive participle the Greek word answers to."
+            },
+            {
+              "ref": "Jhn.13.16",
+              "role": "defining",
+              "note": "“A servant is not greater than his lord, nor one sent (ἀπόστολος, Peshitta שְׁלִיחָא) greater than he who sent him.”"
+            },
+            {
+              "ref": "Heb.3.1",
+              "note": "“Consider the apostle and high priest of our confession, Jesus.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "צִוָּה",
+            "note": "“Command”: whom Yahweh sends he commands what to say.",
+            "evidence": [
+              {
+                "ref": "Jer.14.14",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.23.32",
+                "note": "“I did not send them, nor command them.”"
+              },
+              {
+                "ref": "Psa.111.9",
+                "note": "“He sent redemption … he commanded his covenant.”"
+              }
+            ]
+          },
+          {
+            "lemma": "גֵּרֵשׁ",
+            "note": "“Drive out”, beside the piel.",
+            "evidence": [
+              {
+                "ref": "Exo.6.1",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.3.23",
+                "to": "Gen.3.24"
+              }
+            ]
+          },
+          {
+            "lemma": "פָּרַשׂ",
+            "note": "“Spread out” the palm, beside putting out the hands.",
+            "evidence": [
+              {
+                "ref": "Pro.31.20",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "עָזַב",
+            "note": "“Forsake”, beside the pual “sent away”.",
+            "evidence": [
+              {
+                "ref": "Isa.27.10",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "נָתַן",
+            "note": "“Give” rain, beside “send” waters.",
+            "evidence": [
+              {
+                "ref": "Job.5.10",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "הֶחֱזִיק",
+            "note": "“Hold fast”: what the piel lets go.",
+            "evidence": [
+              {
+                "ref": "Exo.9.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.50.33"
+              }
+            ]
+          },
+          {
+            "lemma": "עָצַר",
+            "note": "“Hold back” the waters, against sending them out.",
+            "evidence": [
+              {
+                "ref": "Job.12.15",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "הֵשִׁיב",
+            "note": "“Bring back”: the hand or staff put out is drawn back.",
+            "evidence": [
+              {
+                "ref": "1Sa.14.27",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "שָׁלַח יָד בְּ",
+            "gloss": "lay a hand on, put out the hand against",
+            "evidence": [
+              {
+                "ref": "1Sa.26.9",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.22.7"
+              },
+              {
+                "ref": "Est.2.21",
+                "note": "Two eunuchs “sought to lay a hand on the king”."
+              }
+            ]
+          },
+          {
+            "phrase": "שָׁלַח בְּיַד",
+            "gloss": "send by the hand of",
+            "evidence": [
+              {
+                "ref": "2Sa.11.14",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.38.20"
+              },
+              {
+                "ref": "Pro.26.6"
+              }
+            ]
+          },
+          {
+            "phrase": "הַשְׁכֵּם וְשָׁלֹחַ",
+            "gloss": "rising early and sending: again and again",
+            "evidence": [
+              {
+                "ref": "Jer.7.25",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.25.4"
+              },
+              {
+                "ref": "2Ch.36.15",
+                "note": "“Yahweh sent to them by the hand of his messengers, rising early and sending, because he had compassion on his people.”"
+              }
+            ]
+          },
+          {
+            "phrase": "שִׁלַּח חָפְשִׁי",
+            "gloss": "let go free",
+            "evidence": [
+              {
+                "ref": "Deu.15.12",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.34.9"
+              },
+              {
+                "ref": "Isa.58.6"
+              }
+            ]
+          },
+          {
+            "phrase": "שִׁלַּח רֵיקָם",
+            "gloss": "send away empty",
+            "evidence": [
+              {
+                "ref": "Gen.31.42",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.15.13"
+              }
+            ]
+          },
+          {
+            "phrase": "שִׁלַּח בָּאֵשׁ",
+            "gloss": "set on fire (“send into the fire”)",
+            "evidence": [
+              {
+                "ref": "Jdg.1.8",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.74.7"
+              }
+            ]
+          },
+          {
+            "phrase": "שִׁלַּח מְדָנִים",
+            "gloss": "sow strife (“send out quarrels”)",
+            "evidence": [
+              {
+                "ref": "Pro.6.19",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.6.14"
+              },
+              {
+                "ref": "Pro.16.28"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "שֻׁלְחָן",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "table",
+      "bdb": [
+        "v.dm.ab"
+      ],
+      "cognate_ids": [
+        "uga-tlhn"
+      ],
+      "summary": "A table for food: the king's, at which his sons and his guests eat; the table of the bread of the face in the tabernacle and the house; and Yahweh's table, the altar. Its link to the root's “send, stretch out” is not shown. The Ugaritic word for a table is ṯlḥn, with ṯ where the verb “send” has š, so the two are of different older roots that Hebrew writes alike; the cognates of the verb therefore count against this word in the evidence table, and no cognate fixes what the noun is formed from.",
+      "senses": [
+        {
+          "id": "table-meal",
+          "gloss": "table (for a meal)",
+          "definition": "The table food is set out on and people sit at; to “eat at a man's table” is to be kept by him as one of his household, and to “set a table” is to lay a meal.",
+          "evidence": [
+            {
+              "ref": "2Sa.9.7",
+              "role": "defining",
+              "note": "David to Mephibosheth: “you shall eat bread at my table continually”; verse 11, “as one of the king's sons”."
+            },
+            {
+              "ref": "2Sa.9.11"
+            },
+            {
+              "ref": "1Ki.2.7",
+              "note": "The sons of Barzillai: “let them be among those who eat at your table”."
+            },
+            {
+              "ref": "1Ki.18.19",
+              "note": "The four hundred prophets of the Asherah, “who eat at Jezebel's table”."
+            },
+            {
+              "ref": "Jdg.1.7",
+              "note": "Adoni-bezek: “Seventy kings, their thumbs and great toes cut off, were gathering under my table.”"
+            },
+            {
+              "ref": "Psa.23.5",
+              "role": "defining",
+              "note": "“You set a table before me (תַּעֲרֹךְ לְפָנַי שֻׁלְחָן) in the presence of my enemies.”"
+            },
+            {
+              "ref": "Psa.78.19",
+              "note": "“Can God set a table in the wilderness?”"
+            },
+            {
+              "ref": "Pro.9.2",
+              "note": "Wisdom “has slaughtered her meat, mixed her wine, also set her table”."
+            },
+            {
+              "ref": "Psa.128.3",
+              "note": "“Your sons like olive shoots around your table.”"
+            },
+            {
+              "ref": "2Ki.4.10",
+              "role": "defining",
+              "note": "The room for Elisha: “a bed and a table and a seat and a lampstand”: a piece of furniture."
+            },
+            {
+              "ref": "Psa.69.23",
+              "note": "“Let their table before them become a snare.” Quoted Rom 11:9."
+            },
+            {
+              "ref": "Dan.11.27",
+              "note": "The two kings “at one table shall speak lies”."
+            }
+          ]
+        },
+        {
+          "id": "table-of-the-face",
+          "gloss": "the table (of the bread of the face)",
+          "definition": "The table of acacia wood overlaid with gold in the holy place, on which the bread of the face was set before Yahweh continually; in Solomon's house, of gold, and ten tables.",
+          "evidence": [
+            {
+              "ref": "Exo.25.23",
+              "role": "defining",
+              "note": "“You shall make a table of acacia wood: two cubits its length, a cubit its breadth, a cubit and a half its height.”"
+            },
+            {
+              "ref": "Exo.25.30",
+              "role": "defining",
+              "note": "“You shall set on the table bread of the face (לֶחֶם פָּנִים) before me continually.”"
+            },
+            {
+              "ref": "Lev.24.6",
+              "note": "The twelve loaves in two rows “on the pure table before Yahweh”."
+            },
+            {
+              "ref": "Num.4.7",
+              "note": "“On the table of the face (שֻׁלְחַן הַפָּנִים) they shall spread a cloth of blue.”"
+            },
+            {
+              "ref": "1Ki.7.48",
+              "note": "Solomon made “the table on which was the bread of the face, of gold”."
+            },
+            {
+              "ref": "2Ch.4.8",
+              "note": "“He made ten tables and set them in the temple, five on the right and five on the left.”"
+            },
+            {
+              "ref": "Heb.9.2",
+              "note": "The first tent, “in which were the lampstand and the table and the setting out of the loaves”."
+            }
+          ]
+        },
+        {
+          "id": "table-of-yahweh",
+          "gloss": "Yahweh's table: the altar; a table spread to a god",
+          "definition": "The altar spoken of as the table at which Yahweh is served with his food; also the tables on which the offerings were slaughtered, and a table spread for an idol.",
+          "evidence": [
+            {
+              "ref": "Mal.1.7",
+              "role": "defining",
+              "note": "“You bring polluted bread on my altar … in that you say, The table of Yahweh is contemptible”: altar and table are one. So verse 12."
+            },
+            {
+              "ref": "Mal.1.12"
+            },
+            {
+              "ref": "Ezk.41.22",
+              "role": "defining",
+              "note": "The altar of wood, three cubits high: “This is the table that is before Yahweh.”"
+            },
+            {
+              "ref": "Ezk.44.16",
+              "note": "The sons of Zadok “shall come near to my table, to minister to me”."
+            },
+            {
+              "ref": "Ezk.40.39",
+              "note": "Tables in the porch of the gate, “to slaughter on them the burnt offering and the sin offering and the guilt offering”."
+            },
+            {
+              "ref": "Ezk.39.20",
+              "note": "To bird and beast: “you shall be filled at my table with horse and chariot”."
+            },
+            {
+              "ref": "Isa.65.11",
+              "note": "“You who forsake Yahweh … who set a table for Gad.”"
+            },
+            {
+              "ref": "1Co.10.21",
+              "note": "“You cannot partake of the table of the Lord and the table of demons”: Malachi's phrase."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "τράπεζα",
+          "gloss": "table",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.25.23, שֻׁלְחָן → τράπεζαν; Psa.23.5 → τράπεζαν; Psa.69.23, שֻׁלְחָנָם → τράπεζα; Mal.1.7, שֻׁלְחַן יַהְוֶה → τράπεζα; τράπεζα renders שֻׁלְחָן ×49"
+            },
+            {
+              "ref": "Rom.11.9",
+              "role": "defining",
+              "note": "Psa 69:23 quoted: “Let their table become a snare and a trap.”"
+            },
+            {
+              "ref": "1Co.10.21",
+              "role": "defining",
+              "note": "“The table of the Lord” (Mal 1:7, 12) against “the table of demons” (Isa 65:11)."
+            },
+            {
+              "ref": "Heb.9.2",
+              "note": "The table of the tabernacle."
+            },
+            {
+              "ref": "Luk.22.30",
+              "note": "“That you may eat and drink at my table in my kingdom”: to eat at the king's table, as 2Sa 9:7."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "מִזְבֵּחַ",
+            "note": "“Altar”: called Yahweh's table.",
+            "evidence": [
+              {
+                "ref": "Mal.1.7",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezk.41.22"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "עָרַךְ שֻׁלְחָן",
+            "gloss": "set a table, lay a meal",
+            "evidence": [
+              {
+                "ref": "Psa.23.5",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.21.5"
+              },
+              {
+                "ref": "Pro.9.2"
+              }
+            ]
+          },
+          {
+            "phrase": "אֹכְלֵי שֻׁלְחָן",
+            "gloss": "those who eat at (someone's) table: his household and pensioners",
+            "evidence": [
+              {
+                "ref": "1Ki.2.7",
+                "role": "defining"
+              },
+              {
+                "ref": "1Ki.18.19"
+              }
+            ]
+          },
+          {
+            "phrase": "שֻׁלְחַן הַפָּנִים",
+            "gloss": "the table of the face (of the bread set before Yahweh)",
+            "evidence": [
+              {
+                "ref": "Num.4.7",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "phrase": "שֻׁלְחַן יַהְוֶה",
+            "gloss": "the table of Yahweh: the altar",
+            "evidence": [
+              {
+                "ref": "Mal.1.7",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "שְׁלַח",
+      "lang": "arc",
+      "pos": "verb",
+      "gloss": "send; put out (the hand)",
+      "bdb": [
+        "xv.ar.aa"
+      ],
+      "cognate_ids": [
+        "uga-shlh",
+        "phn-shlh",
+        "arc-shelach"
+      ],
+      "summary": "The Aramaic of Daniel and Ezra, fourteen times: twelve in the peal and two in its passive. It is used as the Hebrew qal: kings send word and letters, God sends his angel, and a man puts out his hand against God's house. The count of uses beside this word is swollen by Hebrew forms of the same spelling (שְׁלַח, יִשְׁלַח).",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "send (word, a letter, an angel); put out (the hand)",
+          "senses": [
+            {
+              "id": "send-word-a-letter",
+              "gloss": "send (word, a letter)",
+              "definition": "Of kings and officials: to send an order, a letter or an answer.",
+              "evidence": [
+                {
+                  "ref": "Dan.3.2",
+                  "role": "defining",
+                  "note": "“Nebuchadnezzar the king שְׁלַח to gather the satraps, the prefects and the governors.”"
+                },
+                {
+                  "ref": "Ezr.4.11",
+                  "role": "defining",
+                  "note": "“This is the copy of the letter that they sent (שְׁלַחוּ) to him.”"
+                },
+                {
+                  "ref": "Ezr.4.14",
+                  "note": "“Therefore we have sent and made it known to the king.”"
+                },
+                {
+                  "ref": "Ezr.5.17",
+                  "note": "“Let the king send us his pleasure in this matter.”"
+                }
+              ],
+              "kin": [
+                "send-word"
+              ]
+            },
+            {
+              "id": "of-god-send-his",
+              "gloss": "of God: send (his angel)",
+              "definition": "God's sending of his angel to deliver his servants.",
+              "evidence": [
+                {
+                  "ref": "Dan.3.28",
+                  "role": "defining",
+                  "note": "“Blessed be the God of Shadrach, Meshach and Abed-nego, who שְׁלַח מַלְאֲכֵהּ and delivered his servants.”"
+                },
+                {
+                  "ref": "Dan.6.23",
+                  "role": "defining",
+                  "note": "“My God sent his angel and shut the lions' mouth.”"
+                }
+              ],
+              "kin": [
+                "god-sends-man"
+              ]
+            },
+            {
+              "id": "put-out-the-hand",
+              "gloss": "put out (the hand) against",
+              "definition": "To put out the hand to harm, as Hebrew שָׁלַח יָד.",
+              "evidence": [
+                {
+                  "ref": "Ezr.6.12",
+                  "role": "defining",
+                  "note": "“Any king or people who יִשְׁלַח יְדֵהּ to alter, to destroy that house of God.”"
+                }
+              ],
+              "kin": [
+                "lay-hand-on"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "peil",
+          "gloss": "be sent",
+          "senses": [
+            {
+              "id": "be-sent",
+              "gloss": "be sent",
+              "definition": "The passive of the peal: of a hand sent from God, and of Ezra sent by the king.",
+              "evidence": [
+                {
+                  "ref": "Dan.5.24",
+                  "role": "defining",
+                  "note": "“Then from before him was sent (שְׁלִיחַ) the palm of the hand, and this writing was inscribed.”"
+                },
+                {
+                  "ref": "Ezr.7.14",
+                  "role": "defining",
+                  "note": "“Because you are sent from before the king and his seven counsellors, to inquire about Judah and Jerusalem.”"
+                }
+              ],
+              "kin": [
+                "stretch-out",
+                "send-person"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שֶׁלַח",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "weapon; (plural) shoots",
+      "bdb": [
+        "v.dl.ab"
+      ],
+      "summary": "Seven times a weapon carried in the hand, once in the plural of what a garden puts forth. Chronicles writes שִׁלְחוֹ where Kings has כֵּלָיו “his weapons”, and Arabic and Ugaritic have the word for a weapon and a sword. That the weapon is so named as a thing sent, a missile, is likely from the verb's use with arrows (Psa 18:15; 1Sa 20:20) but no verse shows it. The plural “shoots” names no cognate of its own and rests on its kin, the piel “send forth”. The count of uses beside this word includes the name Shelah and the pool of הַשֶּׁלַח, which are spelt the same.",
+      "senses": [
+        {
+          "id": "weapon",
+          "gloss": "weapon",
+          "definition": "A weapon of war held in the hand, named beside the shield; “to pass by the weapon” is to die by it.",
+          "evidence": [
+            {
+              "ref": "2Ch.23.10",
+              "role": "defining",
+              "note": "“Each man with שִׁלְחוֹ in his hand”; the same guard in 2Ki 11:11 stands “each man with his weapons (כֵלָיו) in his hand”."
+            },
+            {
+              "ref": "2Ki.11.11"
+            },
+            {
+              "ref": "Neh.4.11",
+              "role": "defining",
+              "note": "The builders: “with one hand he did the work, and the other held הַשָּׁלַח”; verse 12 adds each builder's sword at his side."
+            },
+            {
+              "ref": "2Ch.32.5",
+              "note": "Hezekiah “made שֶׁלַח in abundance, and shields”."
+            },
+            {
+              "ref": "Jol.2.8",
+              "note": "“Through the weapons (וּבְעַד הַשֶּׁלַח) they fall and do not break off.”"
+            },
+            {
+              "ref": "Job.33.18",
+              "role": "defining",
+              "note": "“He keeps back his soul from the pit, and his life from passing by the weapon (מֵעֲבֹר בַּשָּׁלַח)”: beside the pit, a way of death. So Job 36:12, “they shall pass by the weapon, and expire without knowledge”."
+            },
+            {
+              "ref": "Job.36.12"
+            },
+            {
+              "ref": "Neh.4.17",
+              "note": "“Each man, his weapon, the water” (אִישׁ שִׁלְחוֹ הַמָּיִם): the sentence is broken, but the watch kept their weapons by them."
+            }
+          ],
+          "cognate_ids": [
+            "ar-silah",
+            "uga-shlh-sword",
+            "akk-shalu"
+          ]
+        },
+        {
+          "id": "shoots",
+          "gloss": "shoots, what is put forth",
+          "definition": "In the plural, of the bride as a garden: what she sends out, as a tree sends out its shoots or a spring its channels.",
+          "evidence": [
+            {
+              "ref": "Sng.4.13",
+              "role": "defining",
+              "note": "After “a garden locked, a spring sealed” (verse 12): “שְׁלָחַיִךְ are an orchard of pomegranates with choice fruits.”"
+            },
+            {
+              "ref": "Sng.4.12"
+            }
+          ],
+          "kin": [
+            "send-forth",
+            "vine-shoots"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מִשְׁלָח",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "a putting out (of the hand): undertaking; a place to let cattle range",
+      "bdb": [
+        "v.dl.aj",
+        "m.dw.ae"
+      ],
+      "cognate_ids": [
+        "uga-shlh",
+        "phn-shlh",
+        "arc-shelach"
+      ],
+      "summary": "Seven times, always in the construct מִשְׁלַח: six in Deuteronomy's phrase “the putting out of your hand” for whatever a man sets his hand to, and once of land where cattle are let loose. The count beside it includes the three uses of מִשְׁלוֹחַ, which is spelt alike without its vowels.",
+      "senses": [
+        {
+          "id": "putting-out-of-hand",
+          "gloss": "the putting out of the hand: what one undertakes",
+          "definition": "מִשְׁלַח יָד, all that a man puts his hand to: his work and its gain, which Yahweh blesses or curses.",
+          "evidence": [
+            {
+              "ref": "Deu.12.7",
+              "role": "defining",
+              "note": "“You shall rejoice in all the putting out of your hand (בְּכֹל מִשְׁלַח יֶדְכֶם), you and your households, in which Yahweh your God has blessed you.”"
+            },
+            {
+              "ref": "Deu.15.10",
+              "role": "defining",
+              "note": "“Yahweh your God will bless you in all your work and in all the putting out of your hand”: beside מַעֲשֶׂה, work."
+            },
+            {
+              "ref": "Deu.28.8",
+              "note": "The blessing “in your barns and in all the putting out of your hand”."
+            },
+            {
+              "ref": "Deu.28.20",
+              "note": "The curse “in all the putting out of your hand that you do”."
+            }
+          ],
+          "kin": [
+            "stretch-out"
+          ]
+        },
+        {
+          "id": "letting-range",
+          "gloss": "a place where cattle are let loose",
+          "definition": "Ground given up to grazing.",
+          "evidence": [
+            {
+              "ref": "Isa.7.25",
+              "role": "defining",
+              "note": "The hoed hills “shall be for the sending out of the ox (לְמִשְׁלַח שׁוֹר) and for the trampling of the sheep”."
+            }
+          ],
+          "kin": [
+            "send-forth"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מִשְׁלוֹחַ",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "a sending; a putting out (of the hand)",
+      "bdb": [
+        "v.dl.ak"
+      ],
+      "cognate_ids": [
+        "uga-shlh",
+        "phn-shlh",
+        "arc-shelach"
+      ],
+      "summary": "Three times: the sending of portions at Purim, and once what the hand is laid on. The count beside it includes the seven uses of מִשְׁלָח.",
+      "senses": [
+        {
+          "id": "sending-of-portions",
+          "gloss": "a sending (of portions)",
+          "definition": "The act of sending food to one another on a day of feasting.",
+          "evidence": [
+            {
+              "ref": "Est.9.19",
+              "role": "defining",
+              "note": "The fourteenth of Adar is kept with “joy and feasting and a good day, וּמִשְׁלוֹחַ מָנוֹת each man to his neighbour”."
+            },
+            {
+              "ref": "Est.9.22",
+              "note": "“Days of feasting and joy, and of sending portions to one another, and gifts to the needy.”"
+            }
+          ],
+          "kin": [
+            "send-things"
+          ]
+        },
+        {
+          "id": "what-the-hand-is",
+          "gloss": "what the hand is laid on",
+          "definition": "מִשְׁלוֹחַ יָד of peoples: those on whom Israel shall lay its hand, its subjects.",
+          "evidence": [
+            {
+              "ref": "Isa.11.14",
+              "role": "defining",
+              "note": "“Edom and Moab shall be the putting out of their hand (מִשְׁלוֹח יָדָם), and the sons of Ammon their obedience.”"
+            }
+          ],
+          "kin": [
+            "lay-hand-on"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שִׁלּוּחִים",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "a sending away; a parting gift",
+      "bdb": [
+        "v.dl.ah"
+      ],
+      "cognate_ids": [
+        "uga-shlh",
+        "phn-shlh",
+        "arc-shelach"
+      ],
+      "summary": "A plural noun of the piel, three times: the sending away of a wife to her father's house, and what is given with a daughter or a city when it is sent away.",
+      "senses": [
+        {
+          "id": "sending-away",
+          "gloss": "sending away",
+          "definition": "The act of sending someone away.",
+          "evidence": [
+            {
+              "ref": "Exo.18.2",
+              "role": "defining",
+              "note": "Jethro took Zipporah, Moses' wife, “after her sending away (אַחַר שִׁלּוּחֶיהָ)”, and brought her back to him."
+            }
+          ],
+          "kin": [
+            "send-off",
+            "send-out"
+          ]
+        },
+        {
+          "id": "a-parting-gift",
+          "gloss": "a parting gift",
+          "definition": "A gift given to one who is sent away: to a daughter leaving for her husband, and, in bitter play, to a town that must be given up.",
+          "evidence": [
+            {
+              "ref": "1Ki.9.16",
+              "role": "defining",
+              "note": "Pharaoh took Gezer “and gave it as שִׁלֻּחִים to his daughter, Solomon's wife”."
+            },
+            {
+              "ref": "Mic.1.14",
+              "note": "“Therefore you shall give parting gifts to Moresheth-gath.”"
+            }
+          ],
+          "kin": [
+            "send-off"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἀποστολή",
+          "gloss": "a sending away; a sending on a mission, apostleship",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "1Ki.9.16, שִׁלֻּחִים → ἀποστολάς; Psa.78.49, מִשְׁלַחַת → ἀποστολήν; Ecc.8.8, מִשְׁלַחַת → ἀποστολή"
+            },
+            {
+              "ref": "Act.1.25",
+              "role": "defining",
+              "note": "“To take the place of this service and apostleship”; the Peshitta's שְׁלִיחוּתָא."
+            },
+            {
+              "ref": "Rom.1.5",
+              "note": "“Through whom we received grace and apostleship.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מִשְׁלַחַת",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "a sending, a band sent; release",
+      "bdb": [
+        "v.dl.al"
+      ],
+      "cognate_ids": [
+        "uga-shlh",
+        "phn-shlh",
+        "arc-shelach"
+      ],
+      "summary": "Twice, once for each side of the piel: a company let loose on Egypt, and a letting go from the battle.",
+      "senses": [
+        {
+          "id": "a-sending-a-band",
+          "gloss": "a sending, a band sent",
+          "definition": "What Yahweh sends on a people in judgment, taken as a company.",
+          "evidence": [
+            {
+              "ref": "Psa.78.49",
+              "role": "defining",
+              "note": "“He sent (יְשַׁלַּח) among them the burning of his anger … מִשְׁלַחַת מַלְאֲכֵי רָעִים, a sending of messengers of evils”: the noun beside its verb."
+            }
+          ],
+          "kin": [
+            "send-judgment"
+          ]
+        },
+        {
+          "id": "release-discharge",
+          "gloss": "release, discharge",
+          "definition": "A letting go from service.",
+          "evidence": [
+            {
+              "ref": "Ecc.8.8",
+              "role": "defining",
+              "note": "“No man has power over the spirit to hold back the spirit, and there is no power in the day of death, וְאֵין מִשְׁלַחַת בַּמִּלְחָמָה”: no one is let go from that war."
+            }
+          ],
+          "kin": [
+            "let-go"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שְׁלֻחוֹת",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "shoots (of a vine)",
+      "bdb": [
+        "v.dl.ai"
+      ],
+      "cognate_ids": [
+        "uga-shlh",
+        "phn-shlh",
+        "arc-shelach"
+      ],
+      "summary": "Once, in the plural with a suffix: what the vine has sent out, the passive participle of the verb used as a noun.",
+      "senses": [
+        {
+          "id": "vine-shoots",
+          "gloss": "shoots, tendrils",
+          "definition": "The branches a vine sends out.",
+          "evidence": [
+            {
+              "ref": "Isa.16.8",
+              "role": "defining",
+              "note": "The vine of Sibmah: “שְׁלֻחוֹתֶיהָ were spread abroad; they passed over the sea.” Compare Psa 80:12, the vine that “sent out (תְּשַׁלַּח) its boughs to the sea”."
+            },
+            {
+              "ref": "Psa.80.12"
+            }
+          ],
+          "kin": [
+            "send-forth",
+            "shoots"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שִׁלֹחַ",
+      "pos": "name",
+      "gloss": "Shiloah, Siloam: “sent”",
+      "bdb": [
+        "v.dl.ag",
+        "v.dl.ad"
+      ],
+      "cognate_ids": [
+        "uga-shlh",
+        "phn-shlh",
+        "arc-shelach"
+      ],
+      "summary": "The waters and pool at the south-east of Jerusalem, by the king's garden: הַשִּׁלֹחַ in Isaiah, הַשֶּׁלַח in Nehemiah, Σιλωάμ in the New Testament, where John gives its meaning: “Sent”. The name has the article and is the conduit's own description, water sent, as the verb is used of springs and channels (Psa 104:10; Ezk 31:4). The count beside it includes Joel 2:8, where הַשֶּׁלַח is the weapon.",
+      "senses": [
+        {
+          "id": "shiloah-waters",
+          "gloss": "Shiloah, the sent waters; the pool of Shelah",
+          "definition": "The gently flowing waters of Jerusalem and the pool they fill.",
+          "evidence": [
+            {
+              "ref": "Jhn.9.7",
+              "role": "defining",
+              "note": "“Go, wash in the pool of Siloam (which is interpreted, Sent).” The Greek explains the name by the passive participle of “send”; the Peshitta, in which שִׁילוֹחָא needs no interpreting, has no such clause."
+            },
+            {
+              "ref": "Isa.8.6",
+              "role": "defining",
+              "note": "“Because this people has refused the waters of הַשִּׁלֹחַ that go gently”: set against the strong waters of the River, the king of Assyria (verse 7)."
+            },
+            {
+              "ref": "Neh.3.15",
+              "note": "“The wall of the pool of הַשֶּׁלַח by the king's garden, as far as the stairs that go down from the city of David.”"
+            },
+            {
+              "ref": "Jhn.9.11",
+              "note": "The man born blind: “I went and washed, and I received sight.”"
+            },
+            {
+              "ref": "Luk.13.4",
+              "note": "“Those eighteen on whom the tower in Siloam fell.”"
+            }
+          ],
+          "kin": [
+            "send-forth"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "Σιλωάμ",
+          "gloss": "Siloam",
+          "relation": "loan",
+          "evidence": [
+            {
+              "source": "abbott-smith",
+              "locator": "Σιλωάμ: indeclinable, “Heb. שִׁלֹחַ”; Lk 13:4, Jo 9:7, 11"
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "Isa.8.6, הַשִּׁלֹחַ → Σιλωαμ"
+            },
+            {
+              "ref": "Jhn.9.7",
+              "role": "defining",
+              "note": "“Siloam, ὃ ἑρμηνεύεται ἀπεσταλμένος”: scripture's own account of the name."
+            },
+            {
+              "ref": "Jhn.9.11"
+            },
+            {
+              "ref": "Luk.13.4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שִׁלְחִים",
+      "pos": "name",
+      "gloss": "Shilhim (a town of Judah)",
+      "bdb": [
+        "v.dl.af"
+      ],
+      "summary": "A town in the south of Judah, named once. The form is a plural of the root, but nothing in the text says what the town was named for, so its tie to “send” or to “weapon” is not shown; it names no cognate and the evidence table counts the root's cognates against it.",
+      "senses": [
+        {
+          "id": "shilhim",
+          "gloss": "Shilhim",
+          "definition": "One of the twenty-nine towns of Judah toward the border of Edom in the south.",
+          "evidence": [
+            {
+              "ref": "Jos.15.32",
+              "role": "defining",
+              "note": "“Lebaoth and שִׁלְחִים and Ain and Rimmon.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שְׁלַח",
+      "lang": "syc",
+      "pos": "verb",
+      "gloss": "send; (ethpeel) be sent",
+      "cognate_ids": [
+        "uga-shlh",
+        "phn-shlh",
+        "arc-shelach"
+      ],
+      "summary": "The Peshitta's ܫܠܚ. Its common verb for sending is ܫܕܪ; ܫܠܚ comes eighteen times in the New Testament, most of them of one sent by God or by the ecclesia with a charge: the Father who sent Jesus, Gabriel sent to Mary, the prophets sent to Jerusalem, Barnabas and Saul sent out by the holy spirit.",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "send",
+          "senses": [
+            {
+              "id": "send-with-a-charge",
+              "gloss": "send (with a charge)",
+              "definition": "As the Hebrew qal: to send someone to speak or act for the sender.",
+              "evidence": [
+                {
+                  "ref": "Luk.4.18",
+                  "role": "defining",
+                  "note": "ܘܫܠܚܢܝ, “and he has sent me to heal the broken-hearted”: Isa 61:1, שְׁלָחַנִי, in the same root."
+                },
+                {
+                  "ref": "Mat.10.40",
+                  "role": "defining",
+                  "note": "“He who receives you receives me, and he who receives me receives him who sent me (ܕܫܠܚܢܝ).”"
+                },
+                {
+                  "ref": "Jhn.5.36",
+                  "note": "“The works that I do bear witness of me, that the Father has sent me.”"
+                },
+                {
+                  "ref": "Mat.23.37",
+                  "note": "“Jerusalem … who stones those who are sent (ܕܫܠܝܚܝܢ) to her.”"
+                },
+                {
+                  "ref": "Rev.1.1",
+                  "note": "The revelation God gave to Jesus Christ, which “he made known, sending (ܫܠܚ) by the hand of his angel to his servant John”: the Hebrew “send by the hand of”."
+                }
+              ],
+              "kin": [
+                "god-sends-man",
+                "send-word"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "ethpeel",
+          "gloss": "be sent",
+          "senses": [
+            {
+              "id": "be-sent-2",
+              "gloss": "be sent",
+              "definition": "The passive: of an angel sent from God, and of men sent out to preach.",
+              "evidence": [
+                {
+                  "ref": "Luk.1.26",
+                  "role": "defining",
+                  "note": "“In the sixth month the angel Gabriel was sent (ܐܫܬܠܚ) from God to Galilee.” So Luk 1:19, “I was sent to speak with you”."
+                },
+                {
+                  "ref": "Luk.1.19"
+                },
+                {
+                  "ref": "Rom.10.15",
+                  "role": "defining",
+                  "note": "“How shall they preach unless they are sent (ܢܫܬܠܚܘܢ)?”"
+                },
+                {
+                  "ref": "Act.13.4",
+                  "note": "Barnabas and Saul, “being sent out by the holy spirit, went down to Seleucia”."
+                }
+              ],
+              "kin": [
+                "god-sends-man"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שְׁלִיחָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "one sent: apostle",
+      "cognate_ids": [
+        "arc-sheliach",
+        "uga-shlh",
+        "phn-shlh"
+      ],
+      "summary": "The Peshitta's ܫܠܝܚܐ, the passive participle “sent” used as a noun, some eighty-six times for ἀπόστολος. An apostle is by his name a man sent, who stands under the one who sent him; the word is used of the twelve, of Paul, and once of Jesus himself.",
+      "senses": [
+        {
+          "id": "one-sent-an-apostle",
+          "gloss": "one sent; an apostle",
+          "definition": "A man sent by another with his message and authority; the title of those Christ sent out.",
+          "evidence": [
+            {
+              "ref": "Jhn.13.16",
+              "role": "defining",
+              "note": "“A servant is not greater than his lord, nor a ܫܠܝܚܐ greater than he who sent him.”"
+            },
+            {
+              "ref": "Luk.6.13",
+              "role": "defining",
+              "note": "“He chose twelve of them, whom he named ܫܠܝܚܐ.”"
+            },
+            {
+              "ref": "Mat.10.2",
+              "note": "“The names of the twelve ܫܠܝܚܐ are these.”"
+            },
+            {
+              "ref": "1Co.9.2",
+              "note": "“If to others I am not an apostle, yet to you I am; the seal of my apostleship (ܫܠܝܚܘܬܝ) you are.”"
+            },
+            {
+              "ref": "Heb.3.1",
+              "role": "defining",
+              "note": "“Consider this ܫܠܝܚܐ and high priest of our confession, Jesus the Messiah, who was faithful to him who made him” (verse 2)."
+            }
+          ],
+          "kin": [
+            "god-sends-man"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שְׁלִיחוּתָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "apostleship: the charge of one sent",
+      "cognate_ids": [
+        "arc-sheliach",
+        "uga-shlh",
+        "phn-shlh"
+      ],
+      "summary": "The Peshitta's ܫܠܝܚܘܬܐ, the abstract noun of ܫܠܝܚܐ, five times for ἀποστολή.",
+      "senses": [
+        {
+          "id": "apostleship",
+          "gloss": "apostleship",
+          "definition": "The office and charge of one who is sent.",
+          "evidence": [
+            {
+              "ref": "Act.1.25",
+              "role": "defining",
+              "note": "“To receive the lot of the service and ܫܠܝܚܘܬܐ from which Judas went out.”"
+            },
+            {
+              "ref": "Gal.2.8",
+              "role": "defining",
+              "note": "“He who worked in Cephas for the apostleship of the circumcision worked also in me for the apostleship of the nations.”"
+            },
+            {
+              "ref": "Rom.1.5"
+            }
+          ],
+          "kin": [
+            "god-sends-man"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "uga-shlh",
+      "lang": "uga",
+      "form": "𐎌𐎍𐎈",
+      "translit": "šlḥ",
+      "gloss": "send (G and D stems)",
+      "relation": "cognate",
+      "note": "The verb in the Ugaritic poems, in the basic stem and in the doubled stem (ašlḥk, “I will send you”, in Aqhat) as Hebrew has qal and piel. Ugaritic writes š and ḥ, each kept apart from ṯ and ḫ, so the Hebrew verb's letters stand for š and ḥ.",
+      "sounds": {
+        "ש": "š",
+        "ח": "ḥ"
+      },
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 202, §93 Glossary, /š-l-ḥ/",
+          "note": "“1.24:21 … ‘to send’; D ašlḥk 1.17:VI:28 … ‘to send’ (H. šālaḥ, yišlaḥ, also Pi. (of God); Aram. šəlaḥ, yišlaḥ)” (OCR read; PDF not rendered)."
+        }
+      ]
+    },
+    {
+      "id": "uga-shlh-sword",
+      "lang": "uga",
+      "form": "𐎌𐎍𐎈",
+      "translit": "šlḥ",
+      "gloss": "sword, weapon",
+      "relation": "cognate",
+      "note": "A noun of the same spelling as the Ugaritic verb “send”, as Hebrew שֶׁלַח “weapon” is of the same spelling as שָׁלַח.",
+      "sounds": {
+        "ש": "š",
+        "ח": "ḥ"
+      },
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Ugaritic 𐎌𐎍𐎈 (šlḥ), noun",
+          "note": "“sword”. No Ugaritic dictionary entry or text was checked for this noun: see the entry's note."
+        }
+      ]
+    },
+    {
+      "id": "uga-tlhn",
+      "lang": "uga",
+      "form": "𐎘𐎍𐎈𐎐",
+      "translit": "ṯlḥn",
+      "gloss": "table (plural ṯlḥnt)",
+      "relation": "cognate",
+      "note": "The same word as שֻׁלְחָן, plural שֻׁלְחָנוֹת: the gods “eat from the tables” in the Baal cycle. Its first letter is ṯ, not the š of šlḥ “send”, so in Ugaritic “table” and “send” are different roots; Hebrew, which writes both sounds ש, cannot show the difference.",
+      "sounds": {
+        "ש": "ṯ",
+        "ח": "ḥ"
+      },
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 204, §93 Glossary, ṯlḥn",
+          "note": "“ṯlḥn, pl. ṯlḥnt ‘table’ (H. šulḥān(ôt))” (OCR read; PDF not rendered)."
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Ugaritic 𐎘𐎍𐎈𐎐 (ṯlḥn), noun",
+          "note": "“table … Compare Hebrew שֻׁלְחָן (šulḥān).”"
+        }
+      ]
+    },
+    {
+      "id": "phn-shlh",
+      "lang": "phn",
+      "form": "𐤔𐤋𐤇",
+      "translit": "šlḥ",
+      "gloss": "send; stretch forth (the hand); commission",
+      "relation": "cognate",
+      "note": "Phoenician and Punic have the Hebrew verb's three chief uses: sending money and a document, a king who “stretched forth his hand to fight” (Kilamuwa: Hebrew שָׁלַח יָד), and a god who commissions a king to build. Names are formed with it: ʾšršlḥ, “Assur, send!”. Phoenician writes one letter for š and ṯ, so it does not show which stands here.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "pp. 460–461, Š-L-Ḥ I",
+          "note": "“[Heb. š-l-ḥ] v. qal 1. SEND, KAI 50.3/4 … 2. EXTEND, STRETCH FORTH, KAI 24.5/6 (Ph) … ‘each of whom stretched forth his arm to fight’ … 3. COMMISSION someone for a specific task, KAI 26 A II 9/12 (Ph) … ‘Baal and Rasap … commissioned me to build’.”"
+        },
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 461, ŠLḤ (personal name); p. 85, ʾŠRŠLḤ",
+          "note": "“short form of the name-type šlḥ-DN, DN-šlḥ, DN send!”; “ʾASSUR-SALOḤ (‘Assur send!’)”."
+        }
+      ]
+    },
+    {
+      "id": "arc-shelach",
+      "lang": "arc",
+      "form": "שְׁלַח",
+      "translit": "šəlaḥ",
+      "gloss": "send, send off; (pael) send away, dismiss (Jewish Aramaic)",
+      "relation": "cognate",
+      "note": "The Targums' verb where the Hebrew has שָׁלַח, in the peal for the qal and the pael for the piel (Onkelos at Lev 16:21 of the goat). Aramaic writes ṯ as ת, so its ש here agrees with the Ugaritic š. The same dictionary article has a second verb of this spelling, “strip, flay”, which is no part of the Hebrew root: see the entry's note.",
+      "sounds": {
+        "ש": "š"
+      },
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. שְׁלַח (U01266)",
+          "url": "https://www.sefaria.org/Jastrow,_%D7%A9%D6%B0%D7%81%D7%9C%D6%B7%D7%97.1",
+          "note": "“to send, send off. Targ. Num. XIII, 2. Targ. O. ib. 16 … Pa. to send; to send off, dismiss. Targ. O. Lev. XVI, 21, sq. Targ. O. Ex. VIII, 17”."
+        }
+      ]
+    },
+    {
+      "id": "arc-sheliach",
+      "lang": "arc",
+      "form": "שְׁלִיחַ",
+      "translit": "šəlîaḥ",
+      "gloss": "sent; a messenger, one commissioned (Jewish Aramaic)",
+      "relation": "cognate",
+      "note": "The passive participle of the Aramaic verb used as a noun, as in the Syriac ܫܠܝܚܐ: a messenger or agent, with its abstract שְׁלִיחוּתָא, a commission.",
+      "sounds": {
+        "ש": "š"
+      },
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. שְׁלַח (U01266), Part. pass. שְׁלִיחַ",
+          "note": "“Part. pass. שְׁלִיחַ; f. שְׁלִיחָא; pl. שְׁלִיחִין … Targ. Is. XLIV, 26 שְׁלִיחוֹהִי … Koh. R. to III, 2 … the messenger of men”."
+        },
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. שְׁלִיחוּתָא (U01311)",
+          "note": "“עבדה שְׁלִיחוּתֵיה it … carried out his commission”."
+        }
+      ]
+    },
+    {
+      "id": "ar-silah",
+      "lang": "ar",
+      "form": "سِلَاح",
+      "translit": "silāḥ",
+      "gloss": "a weapon, weapons; an instrument of war",
+      "relation": "cognate",
+      "note": "The common Arabic word for a weapon of any kind, sword or spear, with سِلْح beside it and the verbs “arm” and “arm oneself”. It answers to שֶׁלַח letter for letter (Arabic s for Hebrew š, and ḥ), and its sense is the general one of 2Ch 23:10 beside 2Ki 11:11. Arabic has no verb “send” of this root.",
+      "sounds": {
+        "ש": "š",
+        "ח": "ḥ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 1402, root سلح, سِلَاحٌ",
+          "note": "“A weapon, or weapons; i. e. an instrument, or instruments, of war; the thing [or things] with which one fights in war, and repels, or defends oneself; anything with which one repels the enemy, as a sword and spear &c.”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 1402, root سلح, سلّحهُ (form 2); تسلّح (form 5)",
+          "note": "“He armed him with a weapon or weapons”; “He wore, or put on, [or armed himself with,] a weapon, or weapons.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-saraha",
+      "lang": "ar",
+      "form": "سَرَحَ",
+      "translit": "saraḥa",
+      "gloss": "send forth (cattle) to pasture; send (a messenger); (form 2) dismiss a wife, let water flow",
+      "relation": "possible",
+      "note": "Its uses run beside the Hebrew verb's closely: sending a messenger, sending cattle out to graze (Isa 7:25; 32:20), dismissing a wife (Deu 24:1), letting water flow (Psa 104:10). But its middle letter is r, not l, and no rule of sound makes the two the same root, so it is recorded as possible only.",
+      "sounds": {
+        "ש": "š",
+        "ח": "ḥ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 1344, root سرح, سَرَحَ",
+          "note": "“He sent forth, or set free, [or drove,] the cattle, or camels, to pasture … He sent a messenger to another person, or such a one to such a place.”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 1344, root سرح, سَرَّحَ (form 2)",
+          "note": "“The dismissing a wife by divorcement … He sent her forth from his abode; or let her go free … [And The causing water to flow; or letting it flow.]”"
+        }
+      ]
+    },
+    {
+      "id": "akk-shalu",
+      "lang": "akk",
+      "form": "šalû",
+      "translit": "šalû",
+      "gloss": "fling, cast away; shoot",
+      "relation": "possible",
+      "note": "Akkadian lost ḥ, so a root šlḥ would appear as a verb ending in a weak consonant, as this one does (šalāʾišunu). Its sense, to fling and to shoot, would suit שֶׁלַח as a missile and the piel “shoot”. The match is of two consonants only, and is recorded as possible.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000025370, šalû [fling] V",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000025370.html",
+          "note": "Meanings: cast away, cast off, flinging, shoot, shooting off, spray, throw, throw away (×92, Middle and Neo-Assyrian)."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "jesus-sent-by-god",
+      "statement": "Whom Yahweh sends, he sends as his agent: Moses is to say “the God of your fathers has sent me” (Exo 3:13–15), and proves it by works that are “not from my own heart” (Num 16:28); the prophets are “my servants” whom he sent “rising early and sending” (Jer 7:25); the man who comes unsent is the false prophet (Jer 14:14; 23:21). The servant of Isaiah speaks the same way, “my Lord Yahweh has sent me, and his spirit” (Isa 48:16), “Yahweh has anointed me … he has sent me” (Isa 61:1), and Jesus reads that scripture of himself (Luk 4:18, 21). He says of himself what Moses said: “my teaching is not mine, but his who sent me” (Jhn 7:16), and he did not come of himself, but God sent him (Jhn 8:42). He states the rule: “a servant is not greater than his lord, nor one sent greater than he who sent him” (Jhn 13:16). Eternal life is to know “you, the only true God, and Jesus Christ whom you sent” (Jhn 17:3). Being sent does not mean having lived in heaven before: John was “a man sent from God” (Jhn 1:6), and God “sent out his son, come of a woman” (Gal 4:4). Hebrews calls Jesus “the apostle … of our confession, faithful to him who made him, as also Moses was” (Heb 3:1–2), and he sends his own as he was sent (Jhn 20:21). From the verses: the sender is the one true God, the Father; Jesus is the one he sent, his son, a man anointed and commissioned as the prophets were and above them, who speaks and acts for God and is not the God who sent him.",
+      "evidence": [
+        {
+          "ref": "Exo.3.13",
+          "to": "Exo.3.15"
+        },
+        {
+          "ref": "Num.16.28"
+        },
+        {
+          "ref": "Jer.7.25"
+        },
+        {
+          "ref": "Jer.14.14"
+        },
+        {
+          "ref": "Jer.23.21"
+        },
+        {
+          "ref": "Isa.48.16"
+        },
+        {
+          "ref": "Isa.61.1"
+        },
+        {
+          "ref": "Luk.4.18"
+        },
+        {
+          "ref": "Luk.4.21"
+        },
+        {
+          "ref": "Jhn.7.16"
+        },
+        {
+          "ref": "Jhn.8.42"
+        },
+        {
+          "ref": "Jhn.13.16"
+        },
+        {
+          "ref": "Jhn.17.3"
+        },
+        {
+          "ref": "Jhn.1.6"
+        },
+        {
+          "ref": "Gal.4.4"
+        },
+        {
+          "ref": "Heb.3.1",
+          "to": "Heb.3.2"
+        },
+        {
+          "ref": "Jhn.20.21"
+        }
+      ]
+    },
+    {
+      "topic": "spirit-of-god",
+      "statement": "Yahweh sends his spirit and his word as he sends his other works. “You send out your spirit, they are created, and you renew the face of the ground”, and when he gathers it in they expire and return to their dust (Psa 104:29–30). “He sent his word and healed them” (Psa 107:20); he “sends his saying to the earth; his word runs very swiftly … he sends his word and melts them; he makes his wind (רוּחוֹ) blow” (Psa 147:15, 18); the word that goes out of his mouth does what he sent it for (Isa 55:11). The words of the prophets are what “Yahweh of hosts sent by his spirit, by the hand of the former prophets” (Zec 7:12). The same verb, with the same sender, is used of his arrows, his plagues, the hornet, fire and help (Psa 18:15; Exo 9:14; 23:28; Lam 1:13; Psa 20:3). From the verses: the spirit is something of God's that he sends out and takes back, by which he creates, gives life and speaks through men: his power at work, spoken of beside his word and his breath, and not a person beside him.",
+      "evidence": [
+        {
+          "ref": "Psa.104.29",
+          "to": "Psa.104.30"
+        },
+        {
+          "ref": "Psa.107.20"
+        },
+        {
+          "ref": "Psa.147.15"
+        },
+        {
+          "ref": "Psa.147.18"
+        },
+        {
+          "ref": "Isa.55.11"
+        },
+        {
+          "ref": "Zec.7.12"
+        },
+        {
+          "ref": "Psa.18.15"
+        },
+        {
+          "ref": "Exo.9.14"
+        },
+        {
+          "ref": "Exo.23.28"
+        },
+        {
+          "ref": "Lam.1.13"
+        },
+        {
+          "ref": "Psa.20.3"
+        }
+      ]
+    },
+    {
+      "topic": "mortality",
+      "statement": "After the sentence “dust you are, and to dust you shall return” (Gen 3:19), Yahweh God says, “lest he put out his hand and take also of the tree of the life, and eat, and live for ever”, and for that reason “sent him out of the garden of Eden” and set the cherubim “to keep the way of the tree of the life” (Gen 3:22–24). The verb is used twice: the man must not put out (יִשְׁלַח) his hand, so he is sent out (וַיְשַׁלְּחֵהוּ). To live for ever was therefore something the man did not have and was kept from taking. The tree is offered again only as a gift to come: “to him who overcomes I will give to eat of the tree of the life” (Rev 2:7; 22:14). From the verses: man is mortal; living for ever is not his by nature but is given by God to those he approves.",
+      "evidence": [
+        {
+          "ref": "Gen.3.19"
+        },
+        {
+          "ref": "Gen.3.22",
+          "to": "Gen.3.24"
+        },
+        {
+          "ref": "Rev.2.7"
+        },
+        {
+          "ref": "Rev.22.14"
+        }
+      ]
+    },
+    {
+      "topic": "kingdom-of-god",
+      "statement": "To David's lord it is said, “the rod of your strength Yahweh will send out from Zion: rule in the midst of your enemies” (Psa 110:2): the rule goes out from a place on earth, among enemies on earth. Before that day Yahweh sends: “Behold, I am sending you Elijah the prophet before the coming of the great and fearful day of Yahweh” (Mal 3:23). Peter tells Jerusalem that God “will send Jesus Christ … whom heaven must receive until the times of restoration of all things, of which God spoke by the mouth of all his holy prophets” (Act 3:20–21). And Jesus appoints his apostles a kingdom, “that you may eat and drink at my table in my kingdom, and sit on thrones judging the twelve tribes of Israel” (Luk 22:29–30), as Mephibosheth ate at David's table in Jerusalem (2Sa 9:7, 13). From the verses: God will send Jesus back from heaven to the earth, and his kingdom is to be ruled from Zion.",
+      "evidence": [
+        {
+          "ref": "Psa.110.2"
+        },
+        {
+          "ref": "Mal.3.23"
+        },
+        {
+          "ref": "Act.3.20",
+          "to": "Act.3.21"
+        },
+        {
+          "ref": "Luk.22.29",
+          "to": "Luk.22.30"
+        },
+        {
+          "ref": "2Sa.9.7"
+        },
+        {
+          "ref": "2Sa.9.13"
+        }
+      ]
+    },
+    {
+      "topic": "marriage",
+      "statement": "The law regulates a man's sending away of his wife: he writes her a scroll of cutting off, gives it into her hand and sends her from his house, and may not take her back once she has been another's (Deu 24:1–4). Yahweh uses the same words of Israel, whom he sent away for her adulteries (Jer 3:8), yet asks Judah, “where is the scroll of your mother's cutting off, with which I sent her away?” (Isa 50:1). Malachi gives his mind: “he hates sending away” (Mal 2:16). Jesus says the law's provision was made “for the hardness of your heart … but from the beginning it was not so” (Mat 19:8), and takes them back to Gen 2:24. From the verses: the sending away of a wife was allowed, not approved; what God joined at the beginning he means to stay joined.",
+      "evidence": [
+        {
+          "ref": "Deu.24.1",
+          "to": "Deu.24.4"
+        },
+        {
+          "ref": "Jer.3.8"
+        },
+        {
+          "ref": "Isa.50.1"
+        },
+        {
+          "ref": "Mal.2.16"
+        },
+        {
+          "ref": "Mat.19.4",
+          "to": "Mat.19.8"
+        },
+        {
+          "ref": "Gen.2.24"
+        }
+      ]
+    }
+  ],
+  "note": "Root: the brief's key שלח is kept; no existing entry has it, and BDB's key is the root itself. BDB files שֻׁלְחָן under its own heading (v.dm); it is kept here under “one spelling, one entry”, with Ugaritic ṯlḥn recording that its ש is ṯ where the verb's is š: lexicon-splits should show the split. Token counts in the brief are by spelling: שְׁלַח (arc) really has 14 uses, שֶׁלַח “weapon” 8, מִשְׁלָח 7, מִשְׁלוֹחַ 3, שִׁלֹחַ 2 (Isa 8:6; Neh 3:15), and the name Shelah 9; the rest are the verb's or each other's forms. v.dl.ad (BDB's שֶׁלַח of Neh 3:15) is put with v.dl.ag on שִׁלֹחַ; m.dw.ae is BDB's cross-reference heading for מִשְׁלָח and has no tokens. Names: שֶׁלַח son of Arpachshad (v.dl.ac), מְתוּשֶׁלַח (m.ea.ac, filed by BDB under מת) and שִׁלְחִי (v.dl.ae) have name entries (shelah, methuselah, shilhi). Judah's son שֵׁלָה (Gen 38:5) is spelt with ה and belongs to another root (שלה); he is left out, and so is Shiloh. Left out as another root: Aramaic and Syriac שְׁלַח “strip, take off, flay” with שִׁלְחָא “hide” (Peshitta ܫܠܚ, SEDRA root 1874, lexemes 3214–3215: Mat 27:28, 31; Mrk 15:20; Luk 10:30; Act 19:16; 2Co 5:4; Col 3:9; the noun at Col 2:11, 15; Jastrow s.v. שְׁלַח, second meaning, and שֶׁלַח I “hide”). Arabic سَلَخَ “strip off the hide” (Lane p. 1403) shows ḫ behind its ח, against the ḥ of Ugaritic šlḥ and Arabic silāḥ, and no Hebrew word of scripture has the sense (Hebrew uses פָּשַׁט). A reviewer who wants the Peshitta's homograph in the entry could add it as a syc word with ar سلخ as its cognate ({\"ח\": \"ḫ\"}); it would then count against the “send” words in lexicon-support. Leads not followed: (1) Ugaritic šlḥ as a noun “sword/weapon” is cited from Wiktionary only; check DULAT (šlḥ II) and the Kirta passage usually cited (KTU 1.14 I 20) and replace the citation. (2) DULAT for šlḥ “send” and ṯlḥn, to replace or join Segert's glossary; Segert pages are from the OCR text with the running heads (pp. 202, 204), PDF not rendered. (3) Akkadian šiltāḫu “arrow” (Oracc armep x000020410) has been connected with שֶׁלַח; it has ḫ and an infixed t and was not recorded. Akkadian šalāḫu “pull out” (Oracc, Neo-Assyrian) may belong with the “strip” root. (4) Old Aramaic and Deir ʿAlla uses of šlḥ, and Sabaic, not checked (nothing found in Biella's OCR text). (5) Later Hebrew שֶׁלַח / בֵּית הַשְּׁלָחִין “irrigation channel, irrigated field” (Jastrow s.v. שֶׁלַח III, who compares Job 5:10 and Neh 3:15) bears on שִׁלֹחַ, on Sng 4:13 and on Job 33:18; 36:12, which some read as “pass over the channel”; the entry keeps “weapon” in Job because the same book's parallel is the pit and death, but the reviewer should look at it. (6) Neh 4:17 אִישׁ שִׁלְחוֹ הַמָּיִם is left as a broken sentence. (7) The Septuagint's ἀπόστολος at 3 Kingdoms 14:6 is in Codex Alexandrinus only (so Abbott-Smith); MACULA's alignment does not have it. (8) MACULA leaves many inflected forms of ἐξαποστέλλω unlemmatised, so its count (161) is low. Peshitta facts are from SEDRA root 1873 (lexemes 3211 ܫܠܚ ×18, 3212 ܫܠܝܚܐ ×86, 3213 ܫܠܝܚܘܬܐ ×5) through the runtime database."
+}

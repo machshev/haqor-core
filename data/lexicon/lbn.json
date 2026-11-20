@@ -1,0 +1,441 @@
+{
+  "id": "lbn",
+  "root": "לבנ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "music",
+    "colour",
+    "building"
+  ],
+  "gloss": "Muth-labben, white, brick",
+  "summary": "Psalm 9 preserves a musical expression whose precise meaning is unknown. Its second word resembles several forms under this index. Elsewhere white describes animals, hair and branches, while brick and brickmaking appear together in the accounts of Babel and Egypt.",
+  "words": [
+    {
+      "lemma": "עַלְמוּת לַבֵּן",
+      "bdb": [
+        "l.ak.aq"
+      ],
+      "pos": "noun",
+      "gloss": "Muth-labben, a musical direction",
+      "senses": [
+        {
+          "id": "muth-labben-a-musical",
+          "gloss": "Muth-labben, a musical direction",
+          "definition": "The two words follow the direction to the music leader and precede a psalm of David. One interpretation divides the phrase as concerning the death of the son. The heading gives no identification of the son or account of a death.",
+          "evidence": [
+            {
+              "ref": "Psa.9.1",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.48.15",
+              "note": "The shorter expression concludes the psalm. Its relationship to the heading of Psalm 9 is uncertain."
+            }
+          ]
+        }
+      ],
+      "summary": "The closing words עַל־מוּת of Psalm 48:15 have also been indexed here. That verse lacks לַבֵּן and can be read with the verb מוּת, as discussed under mut."
+    },
+    {
+      "lemma": "לָבָן",
+      "bdb": [
+        "l.ak.ab"
+      ],
+      "pos": "adjective",
+      "gloss": "white",
+      "senses": [
+        {
+          "id": "white",
+          "gloss": "white",
+          "definition": "Jacob separates white animals from dark and spotted ones. The priest examines whether the hair in a skin lesion has turned white.",
+          "evidence": [
+            {
+              "ref": "Gen.30.35",
+              "role": "defining"
+            },
+            {
+              "ref": "Lev.13.3"
+            },
+            {
+              "ref": "Lev.13.10"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-laban"
+      ]
+    },
+    {
+      "lemma": "לָבֵן",
+      "bdb": [
+        "l.ak.aa"
+      ],
+      "pos": "verb",
+      "gloss": "become white",
+      "stems": [
+        {
+          "stem": "hiphil",
+          "gloss": "become or turn white",
+          "senses": [
+            {
+              "id": "become-or-turn-white",
+              "gloss": "become or turn white",
+              "definition": "Isaiah compares the removal of scarlet sins to becoming white as snow. Stripped branches appear white after the bark has been torn off.",
+              "evidence": [
+                {
+                  "ref": "Isa.1.18",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jol.1.7"
+                },
+                {
+                  "ref": "Psa.51.9"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpael",
+          "gloss": "be made white",
+          "senses": [
+            {
+              "id": "be-made-white",
+              "gloss": "be made white",
+              "definition": "Daniel pictures people being purified, whitened and refined.",
+              "evidence": [
+                {
+                  "ref": "Dan.12.10",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-laban"
+      ]
+    },
+    {
+      "lemma": "לְבָנָה",
+      "bdb": [
+        "l.ak.ac"
+      ],
+      "pos": "noun",
+      "gloss": "moon, bright moon",
+      "senses": [
+        {
+          "id": "moon-bright-moon",
+          "gloss": "moon, bright moon",
+          "definition": "The moon and sun stand side by side in descriptions of the heavens. The Song compares the woman’s beauty to the moon.",
+          "evidence": [
+            {
+              "ref": "Isa.24.23",
+              "role": "defining"
+            },
+            {
+              "ref": "Isa.30.26"
+            },
+            {
+              "ref": "Sng.6.10"
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "cognate_ids": [
+        "arc-laban"
+      ]
+    },
+    {
+      "lemma": "לְבֹנָה",
+      "bdb": [
+        "l.ak.ah"
+      ],
+      "pos": "noun",
+      "gloss": "frankincense",
+      "senses": [
+        {
+          "id": "frankincense",
+          "gloss": "frankincense",
+          "definition": "The grain offering receives oil and frankincense. Isaiah speaks of caravans bringing gold and frankincense.",
+          "evidence": [
+            {
+              "ref": "Lev.2.1",
+              "to": "Lev.2.2",
+              "role": "defining"
+            },
+            {
+              "ref": "Isa.60.6"
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "greek": [
+        {
+          "lemma": "λίβανος",
+          "gloss": "frankincense",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "ISA 60:6, gold and frankincense"
+            },
+            {
+              "ref": "Mat.2.11"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "לְבֵנָה",
+      "bdb": [
+        "l.ak.an"
+      ],
+      "pos": "noun",
+      "gloss": "brick, tile",
+      "senses": [
+        {
+          "id": "brick-tile",
+          "gloss": "brick, tile",
+          "definition": "The builders at Babel use bricks for stone. Ezekiel is to take a brick and draw the city of Jerusalem on it.",
+          "evidence": [
+            {
+              "ref": "Gen.11.3",
+              "role": "defining"
+            },
+            {
+              "ref": "Ezk.4.1"
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "cognate_ids": [
+        "akk-libittu"
+      ]
+    },
+    {
+      "lemma": "לָבַן",
+      "bdb": [
+        "l.ak.ao"
+      ],
+      "pos": "verb",
+      "gloss": "make bricks",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "form bricks",
+          "senses": [
+            {
+              "id": "form-bricks",
+              "gloss": "form bricks",
+              "definition": "At Babel the builders make and fire bricks. Pharaoh orders the Israelites to gather their own straw while continuing to make bricks.",
+              "evidence": [
+                {
+                  "ref": "Gen.11.3",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Exo.5.7",
+                  "to": "Exo.5.8"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "akk-libittu"
+      ]
+    },
+    {
+      "lemma": "מַלְבֵּן",
+      "bdb": [
+        "l.ak.ap",
+        "m.bz.am"
+      ],
+      "pos": "noun",
+      "gloss": "brick mould or brickwork",
+      "senses": [
+        {
+          "id": "brick-mould-or-brickwork",
+          "gloss": "brick mould or brickwork",
+          "definition": "Nahum tells the besieged city to strengthen the brick mould. Jeremiah places stones in mortar at the brickwork by the entrance to Pharaoh’s house.",
+          "evidence": [
+            {
+              "ref": "Nam.3.14",
+              "role": "defining"
+            },
+            {
+              "ref": "Jer.43.9"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "akk-libittu"
+      ]
+    },
+    {
+      "lemma": "לְבָנוֹן",
+      "bdb": [
+        "l.ak.al"
+      ],
+      "pos": "noun",
+      "gloss": "Lebanon",
+      "senses": [
+        {
+          "id": "lebanon",
+          "gloss": "Lebanon",
+          "definition": "The mountains of Lebanon form part of the northern landscape of the land. Solomon requests cedars from Lebanon for the temple.",
+          "evidence": [
+            {
+              "ref": "Deu.3.25",
+              "role": "defining"
+            },
+            {
+              "ref": "1Ki.5.20"
+            },
+            {
+              "ref": "Psa.29.5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "לָבָן",
+      "bdb": [
+        "l.ak.ae"
+      ],
+      "pos": "noun",
+      "gloss": "Laban, a wilderness location",
+      "senses": [
+        {
+          "id": "laban-a-wilderness-location",
+          "gloss": "Laban, a wilderness location",
+          "definition": "Deuteronomy includes Laban among the places used to locate Moses’ address to Israel.",
+          "evidence": [
+            {
+              "ref": "Deu.1.1",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "לִבְנָה",
+      "bdb": [
+        "l.ak.ag"
+      ],
+      "pos": "noun",
+      "gloss": "Libnah",
+      "senses": [
+        {
+          "id": "libnah",
+          "gloss": "Libnah",
+          "definition": "Joshua captures Libnah. It later appears as a town assigned to the priests. Numbers also names a wilderness station with this spelling.",
+          "evidence": [
+            {
+              "ref": "Jos.10.29",
+              "to": "Jos.10.30",
+              "role": "defining"
+            },
+            {
+              "ref": "Jos.21.13"
+            },
+            {
+              "ref": "Num.33.20"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "לְבוֹנָה",
+      "bdb": [
+        "l.ak.ai"
+      ],
+      "pos": "noun",
+      "gloss": "Lebonah",
+      "senses": [
+        {
+          "id": "lebonah",
+          "gloss": "Lebonah",
+          "definition": "The description of the road to Shiloh places Shiloh south of Lebonah.",
+          "evidence": [
+            {
+              "ref": "Jdg.21.19",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "לִבְנִי",
+      "bdb": [
+        "l.ak.ak"
+      ],
+      "pos": "adjective",
+      "gloss": "Libnite",
+      "senses": [
+        {
+          "id": "libnite",
+          "gloss": "Libnite",
+          "definition": "The census names a Levite clan descended from Libni.",
+          "evidence": [
+            {
+              "ref": "Num.3.21",
+              "role": "defining"
+            },
+            {
+              "ref": "Num.26.58"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-laban",
+      "lang": "arc",
+      "form": "לָבָן",
+      "translit": "lāḇān",
+      "gloss": "white",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "לָבָן, Aramaic entry, Targum Yerushalmi Genesis 30:37"
+        }
+      ]
+    },
+    {
+      "id": "akk-libittu",
+      "lang": "akk",
+      "form": "libittu",
+      "translit": "libittu",
+      "gloss": "mudbrick",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep/x000003730, libittu [mudbrick]"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The heading is filed under its full wording. Its placement under לבנ follows the index and does not derive the musical phrase from white or brick. Reading death of the son requires separating the opening word. It may preserve a tune title, whose original setting is unknown. The tree לִבְנֶה already belongs to libneh."
+}

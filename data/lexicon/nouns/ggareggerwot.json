@@ -1,0 +1,100 @@
+{
+  "id": "ggareggerwot",
+  "root": "גרגרת",
+  "status": "draft",
+  "updated": "2026-11-18",
+  "tags": [],
+  "gloss": "neck, throat",
+  "summary": "Proverbs pictures instruction worn around the neck like a pendant. The image gives wisdom a place both on the body and in the heart.",
+  "words": [
+    {
+      "lemma": "גַּרְגְּרוֹת",
+      "pos": "noun",
+      "gender": "f",
+      "bdb": [
+        "c.df.ae"
+      ],
+      "gloss": "neck, throat",
+      "senses": [
+        {
+          "id": "neck",
+          "gloss": "neck",
+          "definition": "The part of the body around which a pendant or necklace hangs. Proverbs uses the plural form for one person’s neck.",
+          "evidence": [
+            {
+              "ref": "Pro.1.9",
+              "role": "defining",
+              "note": "A garland goes on the head and pendants around the neck."
+            },
+            {
+              "ref": "Pro.3.3",
+              "role": "defining",
+              "note": "The pupil binds loyal love and faithfulness around the neck and writes them on the heart."
+            },
+            {
+              "ref": "Pro.3.22",
+              "role": "defining",
+              "note": "Wisdom and discretion adorn the neck."
+            },
+            {
+              "ref": "Pro.6.21",
+              "role": "defining",
+              "note": "The parents’ teaching is bound on the heart and tied around the neck."
+            }
+          ],
+          "cognate_ids": [
+            "syc-throat",
+            "mand-throat",
+            "akk-gullet"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "syc-throat",
+      "lang": "syc",
+      "form": "ܓܓܪܬܐ",
+      "translit": "gaggarṯā",
+      "gloss": "throat",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "cal",
+          "locator": "ggrh, ggrtʾ, Peshitta Ps 69:4"
+        }
+      ]
+    },
+    {
+      "id": "mand-throat",
+      "lang": "arc",
+      "form": "gangarata",
+      "translit": "gangarata",
+      "gloss": "Mandaic, throat or tonsils",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "drower-macuch-1963",
+          "locator": "s.v. gangarata, AM 182:1 and DC 37:38"
+        }
+      ]
+    },
+    {
+      "id": "akk-gullet",
+      "lang": "akk",
+      "form": "gaggurītu",
+      "translit": "gaggurītu",
+      "gloss": "part of an animal, possibly its gullet",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "cad",
+          "locator": "G, s.v. gaggurītu, variant gangurītu, Hg. D 46 and Hg. B IV 43"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The Syriac and Mandaic forms refer to the throat and can name internal anatomy. The four Hebrew passages present the neck as the place for an ornament. The Akkadian term is less secure because its precise anatomical referent is unknown."
+}

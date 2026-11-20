@@ -1,0 +1,351 @@
+{
+  "id": "nmr",
+  "root": "נמר",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "tags": [
+    "animals"
+  ],
+  "gloss": "leopard",
+  "summary": "The leopard is recognized by its spotted coat. Jeremiah pictures it waiting outside cities, and Habakkuk uses its speed to describe the Chaldean horses. Isaiah pictures the same predator lying down with a young goat. Daniel and Revelation draw on its appearance in their descriptions of beasts.",
+  "words": [
+    {
+      "lemma": "נָמֵר",
+      "pos": "noun",
+      "gender": "m",
+      "bdb": [
+        "n.dr.ab"
+      ],
+      "gloss": "leopard",
+      "senses": [
+        {
+          "id": "leopard",
+          "gloss": "leopard",
+          "definition": "A spotted predatory cat known for its speed and its habit of lying in wait.",
+          "evidence": [
+            {
+              "ref": "Jer.13.23",
+              "role": "defining",
+              "note": "The leopard’s spots illustrate something as fixed as the colour of a person’s skin."
+            },
+            {
+              "ref": "Jer.5.6",
+              "role": "defining",
+              "note": "The leopard watches the cities and tears those who venture out."
+            },
+            {
+              "ref": "Hab.1.8",
+              "role": "defining",
+              "note": "The invaders’ horses are described as even swifter than leopards."
+            },
+            {
+              "ref": "Isa.11.6",
+              "role": "defining",
+              "note": "The leopard rests beside the young goat in Isaiah’s picture of peace."
+            },
+            {
+              "ref": "Sng.4.8",
+              "role": "defining",
+              "note": "The mountains of leopards stand in parallel with the lions’ dens."
+            },
+            {
+              "ref": "Hos.13.7",
+              "role": "defining",
+              "note": "The leopard waits beside the path."
+            }
+          ],
+          "cognate_ids": [
+            "akk-leopard",
+            "ebla-leopard",
+            "arc-leopard",
+            "mand-leopard",
+            "ar-leopard",
+            "sab-leopard",
+            "had-leopard",
+            "gez-leopard",
+            "amh-leopard",
+            "pun-cat"
+          ],
+          "kin": [
+            "dan-leopard",
+            "rev-leopard"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "נְמַר",
+      "pos": "noun",
+      "lang": "arc",
+      "gender": "m",
+      "bdb": [
+        "xn.ai.ad"
+      ],
+      "gloss": "leopard",
+      "senses": [
+        {
+          "id": "dan-leopard",
+          "gloss": "leopard",
+          "definition": "The animal whose appearance gives Daniel a point of comparison for the third beast.",
+          "evidence": [
+            {
+              "ref": "Dan.7.6",
+              "role": "defining",
+              "note": "The beast looks like a leopard and has four wings and four heads."
+            }
+          ],
+          "cognate_ids": [
+            "akk-leopard",
+            "ebla-leopard",
+            "arc-leopard",
+            "mand-leopard",
+            "ar-leopard",
+            "sab-leopard",
+            "had-leopard",
+            "gez-leopard",
+            "amh-leopard",
+            "pun-cat"
+          ],
+          "kin": [
+            "leopard",
+            "rev-leopard"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "נֶמְרָא",
+      "pos": "noun",
+      "lang": "syc",
+      "root": "נמרא",
+      "gender": "m",
+      "gloss": "leopard",
+      "senses": [
+        {
+          "id": "rev-leopard",
+          "gloss": "leopard",
+          "definition": "The spotted cat to which John compares the beast rising from the sea.",
+          "evidence": [
+            {
+              "ref": "Rev.13.2",
+              "role": "defining",
+              "note": "The beast resembles a leopard, while its feet resemble a bear’s and its mouth a lion’s."
+            }
+          ],
+          "cognate_ids": [
+            "akk-leopard",
+            "ebla-leopard",
+            "arc-leopard",
+            "mand-leopard",
+            "ar-leopard",
+            "sab-leopard",
+            "had-leopard",
+            "gez-leopard",
+            "amh-leopard",
+            "pun-cat"
+          ],
+          "kin": [
+            "leopard",
+            "dan-leopard"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "נִמְרָה",
+      "pos": "name",
+      "bdb": [
+        "n.dr.ac"
+      ],
+      "gloss": "Nimrah",
+      "senses": [
+        {
+          "id": "nimrah",
+          "gloss": "Nimrah",
+          "definition": "A settlement east of the Jordan named among the places sought by the livestock owners.",
+          "evidence": [
+            {
+              "ref": "Num.32.3",
+              "role": "defining",
+              "note": "Nimrah appears between Jazer and Heshbon in the petitioners’ list."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "נִמְרִים",
+      "pos": "name",
+      "bdb": [
+        "n.dr.ad"
+      ],
+      "gloss": "Nimrim",
+      "senses": [
+        {
+          "id": "nimrim",
+          "gloss": "Nimrim",
+          "definition": "A Moabite locality known in the prophets by its waters.",
+          "evidence": [
+            {
+              "ref": "Isa.15.6",
+              "role": "defining",
+              "note": "The waters of Nimrim are desolate and their vegetation has withered."
+            },
+            {
+              "ref": "Jer.48.34",
+              "role": "defining",
+              "note": "The waters of Nimrim are again named in a lament over Moab."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-leopard",
+      "lang": "akk",
+      "form": "nimru",
+      "translit": "nimru",
+      "gloss": "leopard",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000002690"
+        }
+      ]
+    },
+    {
+      "id": "ebla-leopard",
+      "lang": "akk",
+      "form": "na-me-lum",
+      "translit": "na-me-lum",
+      "gloss": "leopard in the animal list from Ebla",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "dcclt P241948, MEE 04, 116, obverse i 5"
+        }
+      ]
+    },
+    {
+      "id": "arc-leopard",
+      "lang": "arc",
+      "form": "נִמְרָא",
+      "translit": "nimrā",
+      "gloss": "leopard",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "N00891, Targum Jeremiah 5:6 and Song of Songs 4:8"
+        }
+      ]
+    },
+    {
+      "id": "mand-leopard",
+      "lang": "arc",
+      "form": "namar",
+      "translit": "namar",
+      "gloss": "Mandaic leopard",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "drower-macuch-1963",
+          "locator": "namar, AM 128:20, with nimar and namr as variants"
+        }
+      ]
+    },
+    {
+      "id": "ar-leopard",
+      "lang": "ar",
+      "form": "نَمِرٌ",
+      "translit": "namir",
+      "gloss": "leopard",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "n40558, p. 2853, also nimr"
+        }
+      ]
+    },
+    {
+      "id": "sab-leopard",
+      "lang": "sem",
+      "form": "𐩬𐩣𐩧",
+      "translit": "nmr",
+      "gloss": "Sabaic leopard, panther",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "NMR, Ry 538/28 and CIH 350/12"
+        }
+      ]
+    },
+    {
+      "id": "had-leopard",
+      "lang": "sem",
+      "form": "𐩬𐩣𐩧",
+      "translit": "nmr",
+      "gloss": "Hadramitic leopard",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "kogan-2011-lexicon",
+          "locator": "§5.2.1.1, Lion, leopard, SED II no. 164"
+        }
+      ]
+    },
+    {
+      "id": "gez-leopard",
+      "lang": "gez",
+      "form": "ነምር",
+      "translit": "namr",
+      "gloss": "leopard",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "dillmann-1865",
+          "locator": "s.v. ነምር, Isaiah 11:6 and Daniel 7:6"
+        }
+      ]
+    },
+    {
+      "id": "amh-leopard",
+      "lang": "sem",
+      "form": "ነብር",
+      "translit": "näbər",
+      "gloss": "Amharic leopard",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "kogan-2011-lexicon",
+          "locator": "§5.2.1.1, Lion, leopard, SED II no. 164"
+        }
+      ]
+    },
+    {
+      "id": "pun-cat",
+      "lang": "phn",
+      "form": "𐤍𐤌𐤓",
+      "translit": "nmr",
+      "gloss": "Punic personal name, possibly panther",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 329, NMR, Benz 147"
+        },
+        {
+          "source": "minunno-2022",
+          "locator": "p. 153, note 173, single Carthaginian attestation"
+        }
+      ]
+    }
+  ],
+  "note": "The passages establish the places Nimrah and Nimrim but give no explanation of their names. The Punic evidence is a personal name whose interpretation as a particular species is uncertain. The catalogue also groups Nimrod and Nimshi here, though their narratives do not derive either name from the leopard."
+}

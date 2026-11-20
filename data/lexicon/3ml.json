@@ -1,0 +1,275 @@
+{
+  "id": "3ml",
+  "root": "עמל",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "work",
+    "suffering"
+  ],
+  "gloss": "work hard, toil, trouble",
+  "summary": "The same noun can name strenuous work, the fruit left to another, or the hardship borne by the worker. In Psalm 7 it is the trouble a person sets out to cause and eventually suffers himself.",
+  "words": [
+    {
+      "lemma": "עָמָל",
+      "bdb": [
+        "p.dh.ab"
+      ],
+      "pos": "noun",
+      "gloss": "toil, its yield, trouble",
+      "senses": [
+        {
+          "gloss": "work or what it produces",
+          "definition": "Ecclesiastes asks what a person gains from labour. Someone who has worked skilfully must leave its results to another who has done none of the work.",
+          "evidence": [
+            {
+              "ref": "Ecc.2.18",
+              "to": "Ecc.2.22",
+              "role": "defining"
+            },
+            {
+              "ref": "Ecc.4.8"
+            }
+          ],
+          "id": "toil",
+          "kin": [
+            "labour"
+          ],
+          "cognate_ids": [
+            "ar-amila"
+          ]
+        },
+        {
+          "gloss": "suffering or trouble brought about",
+          "definition": "Joseph says God has made him forget his hardship. In Psalm 7 the wrongdoer conceives trouble and it returns on his own head.",
+          "evidence": [
+            {
+              "ref": "Gen.41.51",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.7.15",
+              "to": "Psa.7.17"
+            },
+            {
+              "ref": "Psa.10.14"
+            },
+            {
+              "ref": "Psa.25.18"
+            }
+          ],
+          "id": "hardship"
+        }
+      ],
+      "gender": "mf",
+      "greek": [
+        {
+          "lemma": "πόνος",
+          "gloss": "trouble, pain",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "PSA 7:15 word 5"
+            },
+            {
+              "ref": "Rev.21.4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עָמַל",
+      "bdb": [
+        "p.dh.aa"
+      ],
+      "pos": "verb",
+      "gloss": "work, toil",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "put effort into work",
+          "senses": [
+            {
+              "gloss": "labour",
+              "definition": "Builders labour on a house. Jonah is asked to consider the difference between his concern for the plant and the work he never did to make it grow.",
+              "evidence": [
+                {
+                  "ref": "Psa.127.1",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jon.4.10"
+                },
+                {
+                  "ref": "Ecc.2.21"
+                }
+              ],
+              "id": "labour",
+              "kin": [
+                "toil"
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-amila"
+      ]
+    },
+    {
+      "lemma": "עָמֵל",
+      "bdb": [
+        "p.dh.ad"
+      ],
+      "pos": "adjective",
+      "gloss": "toiling, afflicted",
+      "senses": [
+        {
+          "id": "one-who-works",
+          "gloss": "one who works",
+          "definition": "The worker asks what endures from his efforts. His appetite drives him to work.",
+          "evidence": [
+            {
+              "ref": "Ecc.3.9",
+              "role": "defining"
+            },
+            {
+              "ref": "Pro.16.26"
+            }
+          ],
+          "kin": [
+            "labour"
+          ],
+          "cognate_ids": [
+            "ar-amila"
+          ]
+        },
+        {
+          "id": "one-in-distress",
+          "gloss": "one in distress",
+          "definition": "Job asks why light is given to the afflicted and life to the bitter in soul.",
+          "evidence": [
+            {
+              "ref": "Job.3.20",
+              "role": "defining"
+            }
+          ],
+          "kin": [
+            "hardship"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עֲמַל",
+      "pos": "verb",
+      "gloss": "toil, trouble",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "toil, exert oneself",
+          "senses": [
+            {
+              "id": "toil-exert-oneself",
+              "gloss": "toil, exert oneself",
+              "definition": "Paul labours and strives to present every person mature. Epaphras labours on behalf of his people in prayer.",
+              "evidence": [
+                {
+                  "ref": "Col.1.29",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Col.4.12"
+                }
+              ],
+              "kin": [
+                "labour"
+              ],
+              "cognate_ids": [
+                "ar-amila"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "aphel",
+          "gloss": "trouble someone",
+          "senses": [
+            {
+              "id": "trouble-someone",
+              "gloss": "trouble someone",
+              "definition": "The messengers urge the synagogue ruler to stop troubling the teacher after his daughter has died.",
+              "evidence": [
+                {
+                  "ref": "Luk.8.49",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Mrk.5.35"
+                }
+              ],
+              "kin": [
+                "hardship"
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "syc"
+    },
+    {
+      "lemma": "עַמְלָא",
+      "pos": "noun",
+      "gloss": "labour, weariness",
+      "senses": [
+        {
+          "id": "labour-and-what-it",
+          "gloss": "labour and what it costs",
+          "definition": "Paul reminds the Thessalonians of the labour by which he supported himself. Jesus tells the disciples that they have entered into other people’s labour.",
+          "evidence": [
+            {
+              "ref": "1Th.2.9",
+              "role": "defining"
+            },
+            {
+              "ref": "Jhn.4.38"
+            },
+            {
+              "ref": "1Co.15.58"
+            }
+          ],
+          "kin": [
+            "toil"
+          ],
+          "cognate_ids": [
+            "ar-amila"
+          ]
+        }
+      ],
+      "lang": "syc"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-amila",
+      "lang": "ar",
+      "form": "عَمِلَ",
+      "translit": "ʿamila",
+      "gloss": "work, labour, serve",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2158, عَمِلَ n30565"
+        }
+      ],
+      "sounds": {
+        "ע": "ʿ"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "The two keys for the worker or afflicted person share the same occurrences. The extra qoph of Amalek and Amalekite belongs to those names throughout their inflection. Genesis 36:12 supplies no derivation from toil."
+}

@@ -1,0 +1,190 @@
+{
+  "id": "y9q",
+  "root": "יצק",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "gloss": "pour out, cast",
+  "summary": "Oil is poured from a vessel and molten bronze is cast in a mould. The wedding song applies the same image to the grace on the king’s lips.",
+  "words": [
+    {
+      "lemma": "יָצַק",
+      "pos": "verb",
+      "gloss": "pour out, cast",
+      "bdb": [
+        "j.cu.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "pour out, cast metal",
+          "senses": [
+            {
+              "id": "pour-out-cast-metal",
+              "gloss": "pour out, cast metal",
+              "definition": "Jacob pours oil on the stone at Bethel, and the craftsmen cast bronze in earthen moulds. In Psalm 41 the visitors say that something deadly has fastened upon the sick man, as if poured solid upon him. The force of that image is uncertain.",
+              "evidence": [
+                {
+                  "ref": "Gen.28.18",
+                  "role": "defining"
+                },
+                {
+                  "ref": "1Ki.7.46",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.41.9",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "empty out, set down",
+          "senses": [
+            {
+              "id": "empty-out-set-down",
+              "gloss": "empty out, set down",
+              "definition": "The men spread the stolen goods out before Yahweh. Zadok and the Levites set down the ark while the people leave the city.",
+              "evidence": [
+                {
+                  "ref": "Jos.7.23",
+                  "role": "defining"
+                },
+                {
+                  "ref": "2Sa.15.24",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hophal",
+          "gloss": "be poured out, be cast",
+          "senses": [
+            {
+              "id": "be-poured-out-be",
+              "gloss": "be poured out, be cast",
+              "definition": "Oil is poured on the head of the high priest. In the wedding song grace is poured upon the king’s lips. Bronze capitals illustrate the casting of metal.",
+              "evidence": [
+                {
+                  "ref": "Lev.21.10",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.45.3",
+                  "role": "defining"
+                },
+                {
+                  "ref": "1Ki.7.16",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "uga-yasaq"
+      ]
+    },
+    {
+      "lemma": "מוּצָק",
+      "pos": "noun",
+      "gloss": "casting",
+      "bdb": [
+        "j.cu.ac"
+      ],
+      "senses": [
+        {
+          "id": "casting",
+          "gloss": "casting",
+          "definition": "A cast or molded object.",
+          "evidence": [
+            {
+              "ref": "1Ki.7.23",
+              "role": "defining"
+            },
+            {
+              "ref": "Job.37.18"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "uga-yasaq"
+      ]
+    },
+    {
+      "lemma": "יְצֻקָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "casting",
+      "bdb": [
+        "j.cu.ab"
+      ],
+      "senses": [
+        {
+          "id": "casting-2",
+          "gloss": "casting",
+          "definition": "Something poured or cast.",
+          "evidence": [
+            {
+              "ref": "1Ki.7.24",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "uga-yasaq"
+      ]
+    },
+    {
+      "lemma": "מוּצֶקֶת",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "pipe",
+      "bdb": [
+        "j.cu.ad"
+      ],
+      "senses": [
+        {
+          "id": "pipe",
+          "gloss": "pipe",
+          "definition": "A conduit through which oil is poured.",
+          "evidence": [
+            {
+              "ref": "Zec.4.2",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "uga-yasaq"
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "Drafted for Psalms 41–43 coverage.",
+  "cognates": [
+    {
+      "id": "uga-yasaq",
+      "lang": "uga",
+      "form": "𐎊𐎕𐎖",
+      "translit": "yṣq",
+      "gloss": "pour out",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc-ugarit",
+          "locator": "Oracc Ugaritic glossary, yṣq [pour (out)] V"
+        }
+      ]
+    }
+  ],
+  "created": "2026-11-19"
+}

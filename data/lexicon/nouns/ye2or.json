@@ -1,0 +1,70 @@
+{
+  "id": "ye2or",
+  "root": "יאור",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "gloss": "Nile channel",
+  "summary": "Pharaoh dreams beside the Nile. The plural also denotes the watercourses of Egypt that were turned to blood.",
+  "words": [
+    {
+      "lemma": "יְאֹר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "Nile channel",
+      "bdb": [
+        "j.ae.ab"
+      ],
+      "cognate_ids": [
+        "egy-ior"
+      ],
+      "senses": [
+        {
+          "id": "nile-channel",
+          "gloss": "Nile channel",
+          "definition": "The Nile itself, its watercourses or, by extension, a river. Pharaoh stands by the Nile in his dream, while Exodus distinguishes Egypt’s channels and pools.",
+          "evidence": [
+            {
+              "ref": "Psa.78.44",
+              "role": "defining"
+            },
+            {
+              "ref": "Gen.41.1",
+              "role": "defining"
+            },
+            {
+              "ref": "Exo.7.19",
+              "role": "example"
+            },
+            {
+              "ref": "Isa.33.21",
+              "role": "example"
+            }
+          ],
+          "cognate_ids": [
+            "egy-ior"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "egy-ior",
+      "lang": "egy",
+      "form": "jtr.w",
+      "translit": "jtr.w",
+      "gloss": "river, canal, Nile",
+      "relation": "loan",
+      "evidence": [
+        {
+          "source": "tla",
+          "locator": "Ancient Egyptian Dictionary, jtr.w, TLA 33370 (Wb I, 146)",
+          "note": "Egyptian river-name and channel term underlying Hebrew יְאֹר."
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "Egyptian loanword. The root is the word's own consonants, יאור."
+}

@@ -1,0 +1,216 @@
+{
+  "id": "k7x",
+  "root": "כחש",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "speech",
+    "weakness"
+  ],
+  "gloss": "deny, feign allegiance, waste away",
+  "summary": "Speech can deny what happened, and an expected harvest can fail the one who relies on it. In the song of victory the foreigners profess submission under pressure.",
+  "words": [
+    {
+      "lemma": "כָּחַשׁ",
+      "bdb": [
+        "k.bf.aa"
+      ],
+      "pos": "verb",
+      "gloss": "deny, feign submission, fail",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "grow lean",
+          "senses": [
+            {
+              "id": "grow-lean",
+              "gloss": "grow lean",
+              "definition": "Fasting leaves the speaker weak at the knees and his flesh depleted.",
+              "evidence": [
+                {
+                  "ref": "Psa.109.24",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "deny or disappoint",
+          "senses": [
+            {
+              "id": "deny-or-deceive",
+              "gloss": "deny or deceive",
+              "definition": "Sarah denies laughing. The law forbids deceiving a neighbor about property entrusted to one’s care.",
+              "evidence": [
+                {
+                  "ref": "Gen.18.15",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Lev.5.21",
+                  "to": "Lev.5.22"
+                },
+                {
+                  "ref": "Lev.19.11"
+                }
+              ]
+            },
+            {
+              "id": "offer-feigned-allegiance",
+              "gloss": "offer feigned allegiance",
+              "definition": "Foreigners submit at the report of David’s victories. Another psalm describes enemies yielding before God’s great power.",
+              "evidence": [
+                {
+                  "ref": "Psa.18.45",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.66.3"
+                },
+                {
+                  "ref": "Psa.81.16"
+                }
+              ]
+            },
+            {
+              "id": "fail-to-yield",
+              "gloss": "fail to yield",
+              "definition": "Habakkuk speaks of an olive crop that fails; Hosea says the new wine will disappoint the people.",
+              "evidence": [
+                {
+                  "ref": "Hab.3.17",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Hos.9.2"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "cringe in submission",
+          "senses": [
+            {
+              "id": "cringe-in-submission",
+              "gloss": "cringe in submission",
+              "definition": "In Moses’ blessing, Israel’s enemies submit before the people Yahweh has saved.",
+              "evidence": [
+                {
+                  "ref": "Deu.33.29",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpael",
+          "gloss": "profess submission",
+          "senses": [
+            {
+              "id": "profess-submission",
+              "gloss": "profess submission",
+              "definition": "The parallel song in Samuel describes foreigners yielding at the report of David.",
+              "evidence": [
+                {
+                  "ref": "2Sa.22.45",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-kehash"
+      ]
+    },
+    {
+      "lemma": "כַּחַשׁ",
+      "bdb": [
+        "k.bf.ab"
+      ],
+      "pos": "noun",
+      "gloss": "falsehood, wasting",
+      "senses": [
+        {
+          "id": "falsehood",
+          "gloss": "falsehood",
+          "definition": "Ephraim surrounds Yahweh with lies, and the psalm contrasts false speech with efforts to pull a man down.",
+          "evidence": [
+            {
+              "ref": "Hos.12.1",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.62.5"
+            }
+          ]
+        },
+        {
+          "id": "wasting-or-gauntness",
+          "gloss": "wasting or gauntness",
+          "definition": "A witness rises up against Job in the form of his own wasted condition.",
+          "evidence": [
+            {
+              "ref": "Job.16.8",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "arc-kehash"
+      ]
+    },
+    {
+      "lemma": "כֶּחָשׁ",
+      "bdb": [
+        "k.bf.ac"
+      ],
+      "pos": "adjective",
+      "gloss": "deceitful",
+      "senses": [
+        {
+          "id": "deceitful",
+          "gloss": "deceitful",
+          "definition": "Isaiah calls the rebellious people deceitful children, unwilling to hear Yahweh’s teaching.",
+          "evidence": [
+            {
+              "ref": "Isa.30.9",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-kehash",
+      "lang": "arc",
+      "form": "כְּחַשׁ",
+      "translit": "kəḥaš",
+      "gloss": "be lean, grow weak",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "כְּחַשׁ, Sanhedrin 95a, strength failing"
+        }
+      ],
+      "sounds": {
+        "ח": "ḥ",
+        "ש": "š"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "The Aramaic parallel supports the physical sense of depletion. The insincerity suggested in the submission passages is clearest when they are read alongside the verb’s ordinary uses for denial."
+}

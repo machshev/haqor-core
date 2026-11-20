@@ -1,0 +1,89 @@
+{
+  "id": "p6r",
+  "root": "פטר",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-20",
+  "tags": [
+    "open",
+    "release"
+  ],
+  "gloss": "open, release",
+  "summary": "To open or release is to let something go free. Psalm 22 describes people opening their mouths against the sufferer.",
+  "words": [
+    {
+      "lemma": "פָּטַר",
+      "bdb": [
+        "q.bg.aa"
+      ],
+      "pos": "verb",
+      "gloss": "open, release",
+      "stems": [
+        {
+          "stem": "hiphil",
+          "gloss": "open wide",
+          "senses": [
+            {
+              "id": "open-wide",
+              "gloss": "open wide",
+              "definition": "The enemies open their mouths against the sufferer.",
+              "evidence": [
+                {
+                  "ref": "Psa.22.8",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "פֶּטֶר",
+      "bdb": [
+        "q.bg.ab"
+      ],
+      "pos": "noun",
+      "gloss": "first opening",
+      "senses": [
+        {
+          "id": "first-opening",
+          "gloss": "first opening",
+          "definition": "The firstborn is the first opening of the womb.",
+          "evidence": [
+            {
+              "ref": "Exo.13.2",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "פִּטְרָה",
+      "bdb": [
+        "q.bg.ac"
+      ],
+      "pos": "noun",
+      "gloss": "first opening",
+      "senses": [
+        {
+          "id": "first-opening-2",
+          "gloss": "first opening",
+          "definition": "This feminine form names the same first opening.",
+          "evidence": [
+            {
+              "ref": "Num.18.15",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    }
+  ],
+  "cognates": [],
+  "doctrine": [],
+  "note": "The Pi-hahiroth and Pi-beseth place names in the brief are compounds beginning with פִּי, not derivatives of פטר, and are intentionally omitted. The פטר verb and first-opening nouns remain."
+}

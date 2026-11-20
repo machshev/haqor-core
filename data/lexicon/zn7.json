@@ -1,0 +1,108 @@
+{
+  "id": "zn7",
+  "root": "זנח",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [],
+  "gloss": "reject, cast away, become foul",
+  "summary": "The question “Why have you rejected me?” is put to the very God in whom the speaker takes refuge. People can also reject someone, or discard objects formerly used in worship. Isaiah uses a similar form when Egypt’s waterways fail.",
+  "words": [
+    {
+      "lemma": "זָנַח",
+      "pos": "verb",
+      "gloss": "reject, discard, become foul",
+      "bdb": [
+        "g.bv.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "reject, spurn",
+          "senses": [
+            {
+              "id": "reject-spurn",
+              "gloss": "reject, spurn",
+              "definition": "God’s people feel cast off when their armies suffer defeat. The lament sets that experience against trust that rejection will come to an end.",
+              "evidence": [
+                {
+                  "ref": "Psa.43.2",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.44.10",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.60.3",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Lam.3.31",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "reject or cast out",
+          "senses": [
+            {
+              "id": "reject-or-cast-out",
+              "gloss": "reject or cast out",
+              "definition": "Jeroboam and his sons exclude the Levites from priestly service, and Ahaz discards the temple vessels.",
+              "evidence": [
+                {
+                  "ref": "2Ch.11.14",
+                  "role": "defining"
+                },
+                {
+                  "ref": "2Ch.29.19",
+                  "role": "defining"
+                }
+              ]
+            },
+            {
+              "id": "become-foul",
+              "gloss": "become foul",
+              "definition": "As the waterways dry up, the streams become foul and the reeds wither. This reading depends on one verse.",
+              "evidence": [
+                {
+                  "ref": "Isa.19.6",
+                  "role": "defining"
+                }
+              ],
+              "cognate_ids": [
+                "ar-rancid"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-rancid",
+      "lang": "ar",
+      "form": "زَنِخَ",
+      "translit": "zaniḫa",
+      "gloss": "become rancid or foul-smelling",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 1257, زنخ"
+        }
+      ],
+      "sounds": {
+        "ז": "z",
+        "ח": "ḫ"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "The two verb keys share their runtime token list. The Egyptian waterways in Isaiah 19:6 give a distinct sense for which Arabic provides a comparison. Zanoah is a place-name of uncertain derivation."
+}

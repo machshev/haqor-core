@@ -1,0 +1,275 @@
+{
+  "id": "kl2",
+  "root": "כלא",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [],
+  "gloss": "restrain, shut in, withhold",
+  "summary": "Calves can be shut up inside and a person kept in prison. David uses restraint twice in Psalm 40. He has freely spoken of Yahweh’s righteousness and asks that Yahweh freely show him compassion.",
+  "words": [
+    {
+      "lemma": "כָּלָא",
+      "pos": "verb",
+      "gloss": "restrain, withhold",
+      "bdb": [
+        "k.bi.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "hold back or confine",
+          "senses": [
+            {
+              "id": "hold-back-or-confine",
+              "gloss": "hold back or confine",
+              "definition": "The Philistines shut the calves indoors. David does not hold his lips back and asks Yahweh to withhold no mercy.",
+              "evidence": [
+                {
+                  "ref": "1Sa.6.10",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.40.10",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.40.12",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be stopped",
+          "senses": [
+            {
+              "id": "be-stopped",
+              "gloss": "be stopped",
+              "definition": "Rain is stopped at the flood’s end, and the people are stopped from bringing any more materials for the sanctuary.",
+              "evidence": [
+                {
+                  "ref": "Gen.8.2",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Exo.36.6",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "restrain",
+          "senses": [
+            {
+              "id": "restrain",
+              "gloss": "restrain",
+              "definition": "Daniel’s seventy weeks concern bringing transgression to an end. The form can be understood as restraining it.",
+              "evidence": [
+                {
+                  "ref": "Dan.9.24",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "akk-hold"
+      ]
+    },
+    {
+      "lemma": "כֶּלֶא",
+      "pos": "noun",
+      "gloss": "confinement, prison",
+      "bdb": [
+        "k.bi.ab",
+        "k.bi.ac"
+      ],
+      "gender": "m",
+      "senses": [
+        {
+          "id": "confinement-prison",
+          "gloss": "confinement, prison",
+          "definition": "The king orders Micaiah kept on prison rations. Jeremiah is confined in a house converted to a prison.",
+          "evidence": [
+            {
+              "ref": "1Ki.22.27",
+              "role": "defining"
+            },
+            {
+              "ref": "Jer.37.15",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "akk-hold"
+      ]
+    },
+    {
+      "lemma": "כִּלְאַיִם",
+      "pos": "noun",
+      "gloss": "two kinds mixed together",
+      "bdb": [
+        "k.bi.ae"
+      ],
+      "senses": [
+        {
+          "id": "two-kinds-mixed-together",
+          "gloss": "two kinds mixed together",
+          "definition": "The prohibition concerns breeding animals, sowing fields and weaving cloth with unlike kinds. The connection with restraint is uncertain.",
+          "evidence": [
+            {
+              "ref": "Lev.19.19",
+              "role": "defining"
+            },
+            {
+              "ref": "Deu.22.9",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מִכְלָה",
+      "pos": "noun",
+      "gloss": "enclosure, fold",
+      "bdb": [
+        "k.bi.ad"
+      ],
+      "senses": [
+        {
+          "id": "enclosure-fold",
+          "gloss": "enclosure, fold",
+          "definition": "Shepherds keep flocks in folds. David was taken from them to shepherd Israel.",
+          "evidence": [
+            {
+              "ref": "Psa.78.70",
+              "role": "defining"
+            },
+            {
+              "ref": "Hab.3.17",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "כלָא",
+      "pos": "verb",
+      "gloss": "prevent, forbid",
+      "lang": "syc",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "hinder, forbid",
+          "senses": [
+            {
+              "id": "hinder-forbid",
+              "gloss": "hinder, forbid",
+              "definition": "Jesus tells the disciples to let children come and forbids putting an obstacle in their way.",
+              "evidence": [
+                {
+                  "ref": "Mrk.10.14",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "ethpeel",
+          "gloss": "be hindered",
+          "senses": [
+            {
+              "id": "be-hindered",
+              "gloss": "be hindered",
+              "definition": "Paul often planned to visit the Romans but encountered obstacles.",
+              "evidence": [
+                {
+                  "ref": "Rom.1.13",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "akk-hold"
+      ]
+    },
+    {
+      "lemma": "כֶּליָנָא",
+      "pos": "noun",
+      "gloss": "hindrance",
+      "lang": "syc",
+      "senses": [
+        {
+          "id": "hindrance",
+          "gloss": "hindrance",
+          "definition": "Acts ends with Paul teaching openly, free of hindrance.",
+          "evidence": [
+            {
+              "ref": "Act.28.31",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "akk-hold"
+      ]
+    },
+    {
+      "lemma": "כּלִיתָא",
+      "pos": "noun",
+      "gloss": "obstacle",
+      "lang": "syc",
+      "senses": [
+        {
+          "id": "obstacle",
+          "gloss": "obstacle",
+          "definition": "On finding water the traveller asks what stands in the way of his baptism.",
+          "evidence": [
+            {
+              "ref": "Act.8.36",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "akk-hold"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-hold",
+      "lang": "akk",
+      "form": "kalû",
+      "translit": "kalû",
+      "gloss": "hold back",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep/x000016400"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The spelling of the prison noun varies in the text. The personal name Chileab has an uncertain first element."
+}

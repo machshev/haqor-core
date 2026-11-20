@@ -1,0 +1,184 @@
+{
+  "id": "3yp",
+  "root": "עיפ",
+  "status": "draft",
+  "updated": "2026-11-18",
+  "tags": [
+    "strength",
+    "hunger",
+    "thirst"
+  ],
+  "gloss": "weary, faint",
+  "summary": "Esau comes in exhausted from the field and asks for food. Gideon’s men can still pursue their enemies, but they need bread to sustain them. In the Psalms even the land is called weary when it lacks water.",
+  "words": [
+    {
+      "lemma": "עָיֵף",
+      "pos": "adjective",
+      "bdb": [
+        "p.cm.ab"
+      ],
+      "gloss": "weary, exhausted; parched",
+      "senses": [
+        {
+          "id": "weary",
+          "gloss": "physically spent",
+          "definition": "Lacking strength after exertion or for want of food, water or rest.",
+          "cognate_ids": [
+            "syc-faint"
+          ],
+          "kin": [
+            "lose-strength",
+            "faint-on-road"
+          ],
+          "evidence": [
+            {
+              "ref": "Jdg.8.5",
+              "role": "defining",
+              "note": "Gideon asks for bread because his men are weary while still in pursuit."
+            },
+            {
+              "ref": "Isa.29.8",
+              "role": "defining",
+              "note": "The thirsty dreamer wakes faint, with his need still unmet."
+            },
+            {
+              "ref": "Gen.25.29",
+              "to": "Gen.25.30"
+            },
+            {
+              "ref": "Isa.28.12"
+            },
+            {
+              "ref": "Pro.25.25"
+            }
+          ]
+        },
+        {
+          "id": "parched",
+          "gloss": "parched",
+          "definition": "Applied to land in an image of thirst. The worshipper reaches for God as dry ground waits for water.",
+          "evidence": [
+            {
+              "ref": "Psa.63.2",
+              "role": "defining",
+              "note": "The weary land is explicitly said to lack water."
+            },
+            {
+              "ref": "Psa.143.6"
+            },
+            {
+              "ref": "Isa.32.2"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "יָגֵעַ",
+            "note": "Israel was both faint and worn out when Amalek attacked the stragglers.",
+            "evidence": [
+              {
+                "ref": "Deu.25.18"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "עִיף",
+      "pos": "verb",
+      "bdb": [
+        "p.cm.aa"
+      ],
+      "gloss": "grow faint",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "lose strength",
+          "senses": [
+            {
+              "id": "lose-strength",
+              "kin": [
+                "weary",
+                "faint-on-road"
+              ],
+              "cognate_ids": [
+                "syc-faint"
+              ],
+              "gloss": "grow faint",
+              "definition": "One’s strength gives way. Zion speaks as a woman gasping and spreading her hands in distress.",
+              "evidence": [
+                {
+                  "ref": "Jer.4.31",
+                  "role": "defining",
+                  "note": "The daughter of Zion says that her soul faints before those who kill."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עָפֿ",
+      "lang": "syc",
+      "root": "עפ",
+      "pos": "verb",
+      "gloss": "faint on the way",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "grow faint",
+          "senses": [
+            {
+              "id": "faint-on-road",
+              "kin": [
+                "lose-strength",
+                "weary"
+              ],
+              "cognate_ids": [
+                "syc-faint"
+              ],
+              "gloss": "faint from hunger",
+              "definition": "Become too weak to continue a journey without food.",
+              "evidence": [
+                {
+                  "ref": "Mat.15.32",
+                  "role": "defining",
+                  "note": "Jesus says that sending the fasting crowd away would leave them faint on the road."
+                },
+                {
+                  "ref": "Mrk.8.3"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "syc-faint",
+      "lang": "syc",
+      "form": "ܥܦ",
+      "translit": "ʿāp̄",
+      "gloss": "lose strength, faint",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "payne-smith-1903",
+          "locator": "pp. 405–406, ܥܦ / ܥܘܦ, peal sense d, fainting from hunger on the road"
+        },
+        {
+          "source": "sedra",
+          "locator": "root of lexeme 2275, two peal occurrences"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The city noun and the personal name Ir belong to ir and names/ir. The compound place names likewise use city. מָעוּף is a cross-reference to the darkness group under עוף. The differently ordered Hebrew יעף also expresses weariness; whether the two spellings derive from one another is uncertain. The Syriac root also contains double and fold in its dictionary treatment; their relationship to fainting remains open. Lane’s Arabic عيف n31237 concerns aversion, including aversion to food, and does not establish exhaustion. No additional personal name could be derived from weary."
+}

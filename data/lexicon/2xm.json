@@ -1,0 +1,221 @@
+{
+  "id": "2xm",
+  "root": "אשמ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "guilt",
+    "justice",
+    "offerings"
+  ],
+  "gloss": "incur guilt, reparation, guilt offering",
+  "summary": "The word can identify responsibility for an offence, the reparation due for it or the offering brought to Yahweh. In Psalm 5 David asks God to hold people accountable for their rebellion.",
+  "words": [
+    {
+      "lemma": "אָשַׁם",
+      "bdb": [
+        "a.gf.aa"
+      ],
+      "pos": "verb",
+      "gloss": "incur guilt, hold guilty",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "incur guilt",
+          "senses": [
+            {
+              "id": "incur-guilt",
+              "gloss": "incur guilt",
+              "definition": "A person or an entire congregation can incur guilt by doing what Yahweh has forbidden, even when the offence was unintentional.",
+              "evidence": [
+                {
+                  "ref": "Lev.4.13",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Lev.4.27"
+                },
+                {
+                  "ref": "Num.5.6"
+                }
+              ],
+              "cognate_ids": [
+                "ar-athima"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "hold guilty",
+          "senses": [
+            {
+              "id": "hold-guilty",
+              "gloss": "hold guilty",
+              "definition": "David asks God to hold his accusers guilty, then asks that their schemes bring them down.",
+              "evidence": [
+                {
+                  "ref": "Psa.5.11",
+                  "role": "defining"
+                }
+              ],
+              "cognate_ids": [
+                "ar-athima"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "suffer the consequences",
+          "senses": [
+            {
+              "id": "suffer-the-consequences",
+              "gloss": "suffer the consequences",
+              "definition": "In Joel’s description of ruined grazing land even the flocks suffer. The animals share in the disaster that has overtaken the land.",
+              "evidence": [
+                {
+                  "ref": "Jol.1.18",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אָשָׁם",
+      "bdb": [
+        "a.gf.ac"
+      ],
+      "pos": "noun",
+      "gloss": "guilt, reparation, guilt offering",
+      "senses": [
+        {
+          "id": "guilt-incurred",
+          "gloss": "guilt incurred",
+          "definition": "Abimelech warns Isaac that his deception could have brought guilt upon the people.",
+          "evidence": [
+            {
+              "ref": "Gen.26.10",
+              "role": "defining"
+            }
+          ],
+          "cognate_ids": [
+            "ar-athima"
+          ]
+        },
+        {
+          "id": "reparation-owed",
+          "gloss": "reparation owed",
+          "definition": "When the injured party has no relative to receive repayment, the reparation is given to the priest. Numbers distinguishes it from the ram offered for atonement.",
+          "evidence": [
+            {
+              "ref": "Num.5.7",
+              "to": "Num.5.8",
+              "role": "defining"
+            }
+          ]
+        },
+        {
+          "id": "guilt-offering",
+          "gloss": "guilt offering",
+          "definition": "Leviticus prescribes a ram as a guilt offering for an offence concerning holy things. Isaiah uses the same noun of the servant whose life is given for others.",
+          "evidence": [
+            {
+              "ref": "Lev.5.15",
+              "to": "Lev.5.16",
+              "role": "defining"
+            },
+            {
+              "ref": "Lev.7.1"
+            },
+            {
+              "ref": "Isa.53.10"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "אַשְׁמָה",
+      "bdb": [
+        "a.gf.ad"
+      ],
+      "pos": "noun",
+      "gloss": "guilt, liability for an offence",
+      "senses": [
+        {
+          "id": "guilt-liability-for-an",
+          "gloss": "guilt, liability for an offence",
+          "definition": "The anointed priest can bring guilt on the people. Ezra confesses the accumulated guilt of the community.",
+          "evidence": [
+            {
+              "ref": "Lev.4.3",
+              "role": "defining"
+            },
+            {
+              "ref": "Ezr.9.6",
+              "to": "Ezr.9.7"
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "cognate_ids": [
+        "ar-athima"
+      ]
+    },
+    {
+      "lemma": "אָשֵׁם",
+      "bdb": [
+        "a.gf.ab"
+      ],
+      "pos": "adjective",
+      "gloss": "guilty",
+      "senses": [
+        {
+          "id": "guilty",
+          "gloss": "guilty",
+          "definition": "Joseph’s brothers acknowledge to one another that they are guilty of ignoring his distress.",
+          "evidence": [
+            {
+              "ref": "Gen.42.21",
+              "role": "defining"
+            },
+            {
+              "ref": "Ezr.10.19"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-athima"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-athima",
+      "lang": "ar",
+      "form": "أَثِمَ",
+      "translit": "ʾaṯima",
+      "gloss": "commit a sin or offence",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 21, اثم, form I, n235"
+        }
+      ],
+      "sounds": {
+        "ש": "ṯ"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "The niphal form in Joel occurs alongside the distress of grazing animals. Its immediate force is suffering the consequences of disaster. The other passages more directly concern an offender’s guilt."
+}

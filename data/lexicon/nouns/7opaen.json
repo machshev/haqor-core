@@ -1,0 +1,170 @@
+{
+  "id": "7opaen",
+  "root": "חפנ",
+  "status": "draft",
+  "updated": "2026-11-18",
+  "tags": [],
+  "gloss": "cupped hands, handfuls",
+  "summary": "Moses and Aaron scoop up soot, the high priest takes incense, and a cherub places burning coals into waiting hands. The word measures each load by what the hands can hold.",
+  "words": [
+    {
+      "lemma": "חֹפֶן",
+      "pos": "noun",
+      "gender": "m",
+      "bdb": [
+        "h.en.ab"
+      ],
+      "gloss": "cupped hands, handfuls",
+      "senses": [
+        {
+          "id": "handfuls",
+          "gloss": "cupped hands, handfuls",
+          "definition": "The hollows made by cupping the hands, or the amount they hold. The biblical forms refer to both hands.",
+          "evidence": [
+            {
+              "ref": "Exo.9.8",
+              "role": "defining",
+              "note": "Moses and Aaron are told to take their hands full of furnace soot."
+            },
+            {
+              "ref": "Lev.16.12",
+              "role": "defining",
+              "note": "The priest takes two handfuls of finely ground incense inside the veil, alongside a censer of coals."
+            },
+            {
+              "ref": "Ezk.10.2",
+              "role": "defining",
+              "note": "The linen-clad man is instructed to fill his hands with burning coals."
+            },
+            {
+              "ref": "Ezk.10.7",
+              "role": "defining",
+              "note": "A cherub places the coals into the man’s cupped hands."
+            },
+            {
+              "ref": "Pro.30.4",
+              "role": "defining",
+              "note": "The question asks who could gather the wind into cupped hands."
+            },
+            {
+              "ref": "Ecc.4.6",
+              "role": "defining",
+              "note": "One palm full with rest is weighed against two handfuls gained through toil."
+            }
+          ],
+          "cognate_ids": [
+            "akk-hand",
+            "arc-hand",
+            "syc-hand",
+            "ar-handful",
+            "gez-handful",
+            "sab-measure"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-hand",
+      "lang": "akk",
+      "form": "upnu",
+      "translit": "upnu",
+      "gloss": "cupped hand, fist",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000032020"
+        }
+      ]
+    },
+    {
+      "id": "arc-hand",
+      "lang": "arc",
+      "form": "חָפְנָא",
+      "translit": "ḥop̄nā",
+      "gloss": "hollow of the hand, handful",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "H01461, Targum Exo 9:8 and Ecc 4:6"
+        }
+      ]
+    },
+    {
+      "id": "syc-hand",
+      "lang": "syc",
+      "form": "ܚܘܦܢܐ",
+      "translit": "ḥupnā",
+      "gloss": "hollow of the hand, handful",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "evidence": [
+        {
+          "source": "payne-smith-1903",
+          "locator": "s.v. ܚܘܦܢܐ, including the expression for taking handfuls"
+        }
+      ]
+    },
+    {
+      "id": "ar-handful",
+      "lang": "ar",
+      "form": "حَفْنَةٌ",
+      "translit": "ḥafna",
+      "gloss": "handful",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 604, n8534"
+        }
+      ]
+    },
+    {
+      "id": "gez-handful",
+      "lang": "gez",
+      "form": "ሕፍን",
+      "translit": "ḥəfn",
+      "gloss": "handful, fist",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "evidence": [
+        {
+          "source": "dillmann-1865",
+          "locator": "s.v. ሕፍን, Ecc 4:6, with examples of a handful of water and of beans"
+        }
+      ]
+    },
+    {
+      "id": "sab-measure",
+      "lang": "sem",
+      "form": "ḥfnnhn",
+      "translit": "ḥfnnhn",
+      "gloss": "two containers or measures",
+      "relation": "possible",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "s.v. ḤFN, R 4930, first-fruits dedication"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "Sabaic ḥfnnhn counts two containers or measures of first fruits. The inscription does not establish their capacity. Kogan, Proto-Semitic Lexicon §6.3.1.1, also compares Amharic əffəñ, Mehri ḥāfən and Jibbali ḥáfən. Hophni’s name resembles this Hebrew word, but its derivation is disputed."
+}

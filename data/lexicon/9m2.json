@@ -1,0 +1,232 @@
+{
+  "id": "9m2",
+  "root": "צמא",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [],
+  "gloss": "thirst, thirsty ground",
+  "summary": "The Israelites ask for water when they thirst in the wilderness. The worshipper describes his longing for the living God as thirst. Of land the same family describes a waterless place that can become springs of water.",
+  "words": [
+    {
+      "lemma": "צָמָא",
+      "pos": "noun",
+      "gloss": "thirst",
+      "bdb": [
+        "r.ch.ab"
+      ],
+      "gender": "m",
+      "senses": [
+        {
+          "id": "need-for-drink",
+          "gloss": "need for drink",
+          "definition": "The people complain that they and their animals will die of thirst.",
+          "evidence": [
+            {
+              "ref": "Exo.17.3",
+              "role": "defining"
+            },
+            {
+              "ref": "Deu.28.48",
+              "role": "defining"
+            }
+          ]
+        },
+        {
+          "id": "longing-to-hear-yahweh",
+          "gloss": "longing to hear Yahweh",
+          "definition": "Amos compares the search for Yahweh’s words with a famine and thirst.",
+          "evidence": [
+            {
+              "ref": "Amo.8.11",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-thirst",
+        "akk-thirst"
+      ]
+    },
+    {
+      "lemma": "צָמֵא",
+      "pos": "verb",
+      "gloss": "be thirsty",
+      "bdb": [
+        "r.ch.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "thirst, long for",
+          "senses": [
+            {
+              "id": "thirst-long-for",
+              "gloss": "thirst, long for",
+              "definition": "Sisera asks for water because he is thirsty. The psalmist thirsts for the living God and wants to come into his presence.",
+              "evidence": [
+                {
+                  "ref": "Jdg.4.19",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.42.3",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.63.2",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-thirst",
+        "akk-thirst"
+      ]
+    },
+    {
+      "lemma": "צָמֵא",
+      "pos": "adjective",
+      "gloss": "thirsty",
+      "bdb": [
+        "r.ch.ac"
+      ],
+      "senses": [
+        {
+          "id": "thirsty",
+          "gloss": "thirsty",
+          "definition": "Water is brought to meet the thirsty. Isaiah invites everyone who is thirsty to come and drink.",
+          "evidence": [
+            {
+              "ref": "Isa.21.14",
+              "role": "defining"
+            },
+            {
+              "ref": "Isa.55.1",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-thirst",
+        "akk-thirst"
+      ]
+    },
+    {
+      "lemma": "צִמְאָה",
+      "pos": "noun",
+      "gloss": "thirst, dryness",
+      "bdb": [
+        "r.ch.ad"
+      ],
+      "gender": "f",
+      "senses": [
+        {
+          "id": "thirst-dryness",
+          "gloss": "thirst, dryness",
+          "definition": "The prophet speaks of keeping the throat from thirst. The form occurs only in this warning.",
+          "evidence": [
+            {
+              "ref": "Jer.2.25",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-thirst",
+        "akk-thirst"
+      ]
+    },
+    {
+      "lemma": "צִמָּאוֹן",
+      "pos": "noun",
+      "gloss": "parched ground",
+      "bdb": [
+        "r.ch.ae"
+      ],
+      "gender": "m",
+      "senses": [
+        {
+          "id": "parched-ground",
+          "gloss": "parched ground",
+          "definition": "A place without water in the wilderness becomes springs in Isaiah’s picture of renewal. A psalm uses the image in reverse.",
+          "evidence": [
+            {
+              "ref": "Deu.8.15",
+              "role": "defining"
+            },
+            {
+              "ref": "Isa.35.7",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.107.33",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-parched"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-thirst",
+      "lang": "ar",
+      "form": "ظَمِئَ",
+      "translit": "ẓamiʾa",
+      "gloss": "be thirsty",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 1923, ظمأ"
+        }
+      ],
+      "sounds": {
+        "צ": "ṯ̣"
+      }
+    },
+    {
+      "id": "ar-parched",
+      "lang": "ar",
+      "form": "مَظْمَأٌ",
+      "translit": "maẓmaʾ",
+      "gloss": "a thirsty place",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 1924, ظمأ"
+        }
+      ],
+      "sounds": {
+        "צ": "ṯ̣"
+      }
+    },
+    {
+      "id": "akk-thirst",
+      "lang": "akk",
+      "form": "ṣamû",
+      "translit": "ṣamû",
+      "gloss": "become thirsty",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep/x000031830"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "Arabic ẓ and Akkadian ṣ correspond in the words for thirst. The Arabic spelling distinguishes an older sound behind Hebrew צ. The Peshitta commonly uses צהא for thirst. Its middle consonant differs, and its derivation is uncertain."
+}

@@ -1,0 +1,1535 @@
+{
+  "id": "2yn",
+  "root": "אינ",
+  "status": "draft",
+  "updated": "2026-11-15",
+  "tags": [
+    "grammar",
+    "negation",
+    "question",
+    "mortality",
+    "one-god"
+  ],
+  "gloss": "nothing; there is not, is not; (מֵאַיִן) from where?",
+  "summary": "The word that denies that a thing is there. As a noun אַיִן is “nothing” (the nations are “as nothing” before God); far more often, in its short form אֵין, it stands before a noun or a pronoun ending and says “there is no…”, “he has no…”, “he is not”, “no one is …ing”, and with בְּ, מִן or לְ “without”. Its opposite is יֵשׁ “there is”, and it differs from לֹא, which denies a verb: אֵין denies a being or a presence, and so it is scripture's word for the one God beside whom “there is no other”, for the idol in which “there is no breath”, and for the dead man who “is not”. The same spelling asks “where?”: מֵאַיִן “from where?”, with its shortened form אָן, אָנָה “where? to where?”; the question word has its own cognates (Arabic ʾayna, Akkadian ayyānu), and the negative may have grown out of it (“where is he?”, meaning he is not to be found, Job 14:10).",
+  "words": [
+    {
+      "lemma": "אַיִן",
+      "pos": "particle",
+      "gloss": "nothing; there is not, has not, is not; without",
+      "bdb": [
+        "a.cz.aa",
+        "a.cz.ab"
+      ],
+      "cognate_ids": [
+        "uga-in",
+        "akk-yanu",
+        "moab-an",
+        "ar-in-neg"
+      ],
+      "summary": "About 790 times. The full form אַיִן stands alone or at the end of its clause (“and man there was none”, Gen 2:5; “if not”, Gen 30:1); the short form אֵין stands before the word it denies, and takes the pronoun endings (אֵינֶנִּי “I am not”, אֵינֶנּוּ “he is not”, אֵינָם “they are not”). It denies a noun clause, where לֹא denies a verb, and the two stand side by side (Gen 2:5). Scripture's Aramaic says the same thing with לָא אִיתַי (Dan 2:10) and the Peshitta with לַיתּ (Rom 3:10–12), which is לָא and אִית joined: a different word, so this entry has no Aramaic word. Once it is pointed אִין (1Sa 21:9).",
+      "senses": [
+        {
+          "id": "nothing",
+          "gloss": "nothing, nought",
+          "definition": "As a noun: what is not, nothing. Things are counted “as nothing”, brought “to nothing”, or are “of nothing”; כְּאַיִן is also “all but, almost”.",
+          "evidence": [
+            {
+              "ref": "Isa.40.17",
+              "role": "defining",
+              "note": "“All the nations are as nothing (כְּאַיִן) before him; they are counted by him as less than nothing (אֶפֶס) and emptiness (וָתֹהוּ).”"
+            },
+            {
+              "ref": "Isa.40.23",
+              "role": "defining",
+              "note": "“Who brings princes to nothing (לְאָיִן); he makes the judges of earth as emptiness.”"
+            },
+            {
+              "ref": "Isa.41.12",
+              "note": "“They shall be as nothing and as nought (כְאַיִן וּכְאֶפֶס), the men who war against you.”"
+            },
+            {
+              "ref": "Isa.41.24",
+              "note": "To the idols: “Behold, you are of nothing (מֵאַיִן), and your work of nought.”"
+            },
+            {
+              "ref": "Psa.39.6",
+              "note": "“My lifetime is as nothing before you.”"
+            },
+            {
+              "ref": "Hag.2.3",
+              "note": "The second house beside the first: “is it not as nothing in your eyes?”"
+            },
+            {
+              "ref": "Psa.73.2",
+              "note": "כְּאַיִן as “all but”: “my steps had all but slipped”, beside כִּמְעַט “almost”."
+            }
+          ]
+        },
+        {
+          "id": "there-is-not",
+          "gloss": "there is no, there is not",
+          "definition": "Denies that a thing or person exists or is present, in whatever time the context gives: “there is no”, “there was no”, “there will be no”. The opposite of יֵשׁ “there is”.",
+          "evidence": [
+            {
+              "ref": "Gen.2.5",
+              "role": "defining",
+              "note": "“Yahweh God had not (לֹא) caused it to rain on the earth, and man there was none (וְאָדָם אַיִן) to work the ground”: לֹא with the verb, אַיִן with the noun."
+            },
+            {
+              "ref": "Exo.17.7",
+              "role": "defining",
+              "note": "“Is Yahweh among us, or not?” (הֲיֵשׁ … אִם־אָיִן): set against יֵשׁ."
+            },
+            {
+              "ref": "Num.13.20",
+              "role": "defining",
+              "note": "“Whether there are trees in it or not” (הֲיֵשׁ־בָּהּ עֵץ אִם־אַיִן)."
+            },
+            {
+              "ref": "Jdg.21.25",
+              "note": "“In those days there was no king in Israel.”"
+            },
+            {
+              "ref": "Gen.37.29",
+              "note": "“Behold, Joseph was not in the pit” (אֵין־יוֹסֵף בַּבּוֹר)."
+            },
+            {
+              "ref": "Num.14.42",
+              "note": "“Do not go up, for Yahweh is not among you.”"
+            },
+            {
+              "ref": "Isa.45.5",
+              "note": "“I am Yahweh, and there is no other; besides me there is no God.”"
+            },
+            {
+              "ref": "1Ki.18.26",
+              "note": "The prophets of Baal call from morning to noon: “but there was no voice, and none answering.”"
+            },
+            {
+              "ref": "Isa.9.6",
+              "note": "“Of the increase of the dominion and of peace there shall be no end (אֵין־קֵץ), on the throne of David.” Luk 1:33 says the same of Mary's son."
+            },
+            {
+              "ref": "Psa.14.1",
+              "note": "“The fool has said in his heart, There is no God.”"
+            },
+            {
+              "ref": "Psa.36.2",
+              "note": "“There is no dread of God before his eyes”, quoted in Rom 3:18 (οὐκ ἔστιν; Peshitta לַיתּ)."
+            },
+            {
+              "ref": "Ecc.1.9",
+              "note": "“There is nothing new under the sun” (אֵין כָּל־חָדָשׁ)."
+            }
+          ]
+        },
+        {
+          "id": "has-not",
+          "gloss": "has no (אֵין לְ)",
+          "definition": "With לְ and the owner, “there is not to him”: he has not. Hebrew has no verb “to have”; יֵשׁ לְ and אֵין לְ say it.",
+          "evidence": [
+            {
+              "ref": "Gen.11.30",
+              "role": "defining",
+              "note": "“Sarai was barren; she had no child” (אֵין לָהּ וָלָד)."
+            },
+            {
+              "ref": "1Sa.1.2",
+              "role": "defining",
+              "note": "“Peninnah had children, but Hannah had no children”: וַיְהִי לִ… set against וּלְ… אֵין."
+            },
+            {
+              "ref": "Num.27.8",
+              "note": "The law of inheritance: “if a man dies and has no son” (וּבֵן אֵין לוֹ), repeated through Num 27:9–11."
+            },
+            {
+              "ref": "Deu.25.5",
+              "note": "The brother who dies “and has no son”; the Sadducees put the case to Jesus (Mat 22:24, μὴ ἔχων τέκνα)."
+            },
+            {
+              "ref": "Num.27.17",
+              "note": "“That the congregation of Yahweh be not as sheep which have no shepherd” (אֲשֶׁר אֵין־לָהֶם רֹעֶה); so Jesus sees the crowds (Mat 9:36)."
+            },
+            {
+              "ref": "Est.2.7",
+              "note": "Esther “had neither father nor mother”."
+            },
+            {
+              "ref": "Lam.1.2",
+              "note": "“She has no comforter among all her lovers.”"
+            },
+            {
+              "ref": "Exo.22.2",
+              "note": "Without the thing owned: “if he has nothing (אִם־אֵין לוֹ), he shall be sold for his theft.”"
+            },
+            {
+              "ref": "Dan.9.26",
+              "note": "“An anointed one shall be cut off, and have nothing” (וְאֵין לוֹ)."
+            }
+          ]
+        },
+        {
+          "id": "is-no-more",
+          "gloss": "is not, is no more",
+          "definition": "With a pronoun ending and nothing after it: the person or thing is not there, is gone, is no more. Said of one missing, of one taken away, and of the dead.",
+          "evidence": [
+            {
+              "ref": "Gen.42.13",
+              "role": "defining",
+              "note": "Joseph's brothers: “the youngest is with our father today, and the one is not” (וְהָאֶחָד אֵינֶנּוּ). They say the same of him in Gen 44:20 with “his brother is dead”."
+            },
+            {
+              "ref": "Jer.31.15",
+              "role": "defining",
+              "note": "“Rachel weeping for her sons; she refuses to be comforted for her sons, because they are not” (כִּי אֵינֶנּוּ). Quoted of the slain children of Bethlehem in Mat 2:18."
+            },
+            {
+              "ref": "Gen.5.24",
+              "note": "“Enoch walked with God, and he was not (וְאֵינֶנּוּ), for God took him”: he was no longer there. Heb 11:5 has “he was not found”."
+            },
+            {
+              "ref": "Gen.37.30",
+              "note": "Reuben at the empty pit: “the boy is not; and I, where shall I go?”"
+            },
+            {
+              "ref": "Gen.42.36",
+              "note": "Jacob: “Joseph is not, and Simeon is not”: one believed dead, one held in Egypt."
+            },
+            {
+              "ref": "Job.7.21",
+              "note": "“Now I shall lie down in the dust; you will seek me, and I shall not be” (וְאֵינֶנִּי)."
+            },
+            {
+              "ref": "Psa.39.14",
+              "note": "“Before I go, and am not.”"
+            },
+            {
+              "ref": "Psa.103.16",
+              "note": "Man as the flower of the field: “the wind passes over it, and it is not, and its place knows it no more.”"
+            },
+            {
+              "ref": "Psa.37.10",
+              "note": "“Yet a little, and the wicked is not (וְאֵין רָשָׁע); you will look at his place, and he is not.”"
+            },
+            {
+              "ref": "Pro.12.7",
+              "note": "“The wicked are overthrown, and are not; but the house of the righteous stands.”"
+            },
+            {
+              "ref": "1Sa.10.14",
+              "note": "Without an ending, of the lost donkeys: “we saw that they were not” (כִי־אַיִן)."
+            }
+          ]
+        },
+        {
+          "id": "not-predicate",
+          "gloss": "not (with a participle or adjective)",
+          "definition": "Before a participle or an adjective, usually with a pronoun ending for the subject, it denies what the subject is or is doing: “I am not giving”, “it is not clean”. Here it does for the noun clause what לֹא does for the verb.",
+          "evidence": [
+            {
+              "ref": "Exo.5.10",
+              "role": "defining",
+              "note": "“Thus says Pharaoh, I am not giving you straw” (אֵינֶנִּי נֹתֵן)."
+            },
+            {
+              "ref": "Gen.7.8",
+              "role": "defining",
+              "note": "“Of the clean beasts, and of the beasts that are not clean” (אֲשֶׁר אֵינֶנָּה טְהֹרָה)."
+            },
+            {
+              "ref": "Gen.39.9",
+              "note": "“He is not greater in this house than I” (אֵינֶנּוּ גָדוֹל), followed by וְלֹא with a verb."
+            },
+            {
+              "ref": "Lev.11.4",
+              "note": "The camel: “it brings up the cud, but it does not part the hoof” (וּפַרְסָה אֵינֶנּוּ מַפְרִיס)."
+            },
+            {
+              "ref": "Deu.1.32",
+              "note": "“In this thing you were not believing Yahweh your God.”"
+            },
+            {
+              "ref": "Jer.7.16",
+              "note": "“Do not pray for this people… for I am not hearing you.”"
+            },
+            {
+              "ref": "Ecc.9.5",
+              "note": "“The living know that they shall die, but the dead know not anything” (אֵינָם יוֹדְעִים מְאוּמָה)."
+            },
+            {
+              "ref": "Jdg.12.3",
+              "note": "“I saw that you were not saving” (כִּי־אֵינְךָ מוֹשִׁיע)."
+            }
+          ]
+        },
+        {
+          "id": "none",
+          "gloss": "none, no one (who …)",
+          "definition": "Before a participle with no subject named, “there is none who…”: no one does it. Often a clause of its own closing a sentence: “and none makes afraid”, “and none delivers”.",
+          "evidence": [
+            {
+              "ref": "Psa.14.3",
+              "role": "defining",
+              "note": "“There is none doing good, there is not even one” (אֵין עֹשֵׂה־טוֹב אֵין גַּם־אֶחָד). Paul quotes it in Rom 3:12 (οὐκ ἔστιν; Peshitta לַיתּ)."
+            },
+            {
+              "ref": "Isa.22.22",
+              "role": "defining",
+              "note": "The key of the house of David: “he shall open, and none shall shut; he shall shut, and none shall open.” Rev 3:7 gives the words to Jesus (οὐδεὶς κλείει)."
+            },
+            {
+              "ref": "Gen.41.8",
+              "note": "Pharaoh told his dream, “but there was none interpreting them”."
+            },
+            {
+              "ref": "Lev.26.6",
+              "note": "“You shall lie down, and none shall make you afraid” (וְאֵין מַחֲרִיד)."
+            },
+            {
+              "ref": "Deu.32.39",
+              "note": "“There is none delivering from my hand” (וְאֵין מִיָּדִי מַצִּיל), after “there is no god with me”."
+            },
+            {
+              "ref": "Isa.51.18",
+              "note": "“There is none guiding her of all the sons she has borne.”"
+            },
+            {
+              "ref": "Isa.63.5",
+              "note": "“I looked, and there was none helping… so my own arm saved for me”; so Isa 59:16."
+            },
+            {
+              "ref": "Psa.72.12",
+              "note": "The king delivers “the poor, and him who has no helper” (וְאֵין־עֹזֵר לוֹ)."
+            }
+          ]
+        },
+        {
+          "id": "without",
+          "gloss": "without; for want of (בְּאֵין, מֵאֵין, לְאֵין)",
+          "definition": "Describing a state by what is missing from it: “with no…”, “without”. Bare אֵין does this, and so does אֵין after a preposition: בְּאֵין “when or where there is no”, מֵאֵין “from there being no”, so “without” or “for want of”, לְאֵין “to there being no” or “to him who has no”.",
+          "evidence": [
+            {
+              "ref": "Hos.3.4",
+              "role": "defining",
+              "note": "“The sons of Israel shall dwell many days without king and without prince and without sacrifice” (אֵין מֶלֶךְ וְאֵין שָׂר וְאֵין זֶבַח)."
+            },
+            {
+              "ref": "Pro.11.14",
+              "role": "defining",
+              "note": "“Where there is no guidance (בְּאֵין תַּחְבֻּלוֹת) a people falls, but there is safety in many counsellors”: set against בְּרֹב “in the abundance of”."
+            },
+            {
+              "ref": "Pro.8.24",
+              "note": "Wisdom: “when there were no depths (בְּאֵין־תְּהֹמוֹת) I was brought forth.”"
+            },
+            {
+              "ref": "Isa.5.9",
+              "note": "“Many houses shall be a desolation… without inhabitant” (מֵאֵין יוֹשֵׁב); so Jer 4:7."
+            },
+            {
+              "ref": "Isa.50.2",
+              "note": "“Their fish stink for want of water” (מֵאֵין מַיִם)."
+            },
+            {
+              "ref": "Exo.21.11",
+              "note": "“She shall go out for nothing, without silver” (אֵין כָּסֶף)."
+            },
+            {
+              "ref": "Jol.1.6",
+              "note": "“A nation strong and without number” (וְאֵין מִסְפָּר)."
+            },
+            {
+              "ref": "Isa.40.29",
+              "note": "“To him who has no might (וּלְאֵין אוֹנִים) he increases strength.”"
+            },
+            {
+              "ref": "2Ch.14.12",
+              "note": "The Cushites fell “until there was no life left to them” (לְאֵין לָהֶם מִחְיָה)."
+            },
+            {
+              "ref": "Exo.14.11",
+              "note": "Doubled with בְּלִי: “Was it for want of there being no graves in Egypt (הַמִבְּלִי אֵין־קְבָרִים)?”; so 2Ki 1:3."
+            }
+          ]
+        },
+        {
+          "id": "cannot",
+          "gloss": "there is no …ing: it cannot, may not be done (אֵין לְ with an infinitive)",
+          "definition": "With לְ and an infinitive, mostly in the later books: the thing is not possible, or not permitted.",
+          "evidence": [
+            {
+              "ref": "Est.4.2",
+              "role": "defining",
+              "note": "Mordecai stopped before the king's gate, “for there is no entering (אֵין לָבוֹא) the king's gate clothed in sackcloth”: it is not allowed."
+            },
+            {
+              "ref": "Ecc.3.14",
+              "role": "defining",
+              "note": "Of what God does: “there is no adding to it, and no taking from it”: it cannot be done."
+            },
+            {
+              "ref": "Est.8.8",
+              "note": "A writing sealed with the king's ring “there is no reversing”."
+            },
+            {
+              "ref": "Ezr.9.15",
+              "note": "“There is no standing before you because of this.”"
+            },
+            {
+              "ref": "2Ch.20.6",
+              "note": "“In your hand is power and might, and there is no standing against you” (וְאֵין עִמְּךָ לְהִתְיַצֵּב)."
+            },
+            {
+              "ref": "1Sa.9.7",
+              "note": "An earlier case: “there is no present to bring to the man of God.”"
+            }
+          ]
+        },
+        {
+          "id": "if-not",
+          "gloss": "no; (וְאִם־אַיִן) and if not",
+          "definition": "Standing alone it answers a question about whether something is there: “there is not”, “no”. After אִם it stands for a whole clause: “and if not”, “or not”.",
+          "evidence": [
+            {
+              "ref": "Jdg.4.20",
+              "role": "defining",
+              "note": "“If a man comes and asks you, Is there a man here? (הֲיֵשׁ־פֹּה אִישׁ) you shall say, No (אָיִן).”"
+            },
+            {
+              "ref": "Gen.30.1",
+              "role": "defining",
+              "note": "Rachel: “Give me sons, and if not (וְאִם־אַיִן), I die.”"
+            },
+            {
+              "ref": "Exo.32.32",
+              "note": "Moses: “if you will forgive their sin; and if not, blot me, I pray, out of your book.”"
+            },
+            {
+              "ref": "2Ki.2.10",
+              "note": "“If you see me taken from you, it shall be so for you; and if not, it shall not be.”"
+            },
+            {
+              "ref": "Job.33.33",
+              "note": "“If not, listen to me.”"
+            },
+            {
+              "ref": "1Sa.9.4",
+              "note": "The search for the donkeys: “they passed through the land of Shaalim, and nothing” (וָאַיִן), between two “they did not find”."
+            }
+          ]
+        },
+        {
+          "id": "is-there-not",
+          "gloss": "is there not? (אִין, once)",
+          "definition": "Pointed אִין in one verse, opening a question and followed by יֵשׁ. One verse does not fix it: it reads as “and is there not here…?”, or as a question word “is there here…?” of the kind Aramaic has.",
+          "evidence": [
+            {
+              "ref": "1Sa.21.9",
+              "role": "defining",
+              "note": "David to Ahimelech: וְאִין יֶשׁ־פֹּה תַחַת־יָדְךָ חֲנִית אוֹ־חָרֶב, “and is there not here under your hand a spear or a sword?”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "אֶפֶס",
+            "note": "“End, nought”: the commonest word beside it, both as a noun (“as nothing and as nought”) and as a denial (“there is none besides me”).",
+            "evidence": [
+              {
+                "ref": "Isa.40.17"
+              },
+              {
+                "ref": "Isa.41.12"
+              },
+              {
+                "ref": "Isa.45.6",
+                "note": "אֶפֶס בִּלְעָדָי in one line, וְאֵין עוֹד in the next."
+              },
+              {
+                "ref": "Isa.46.9"
+              }
+            ]
+          },
+          {
+            "lemma": "תֹּהוּ",
+            "note": "“Emptiness”, in the parallel line.",
+            "evidence": [
+              {
+                "ref": "Isa.40.17"
+              },
+              {
+                "ref": "Isa.40.23"
+              }
+            ]
+          },
+          {
+            "lemma": "לֹא",
+            "note": "“Not”: לֹא denies the verb, אֵין the noun, in neighbouring clauses.",
+            "evidence": [
+              {
+                "ref": "Gen.2.5"
+              },
+              {
+                "ref": "Gen.39.9"
+              },
+              {
+                "ref": "1Sa.9.4"
+              }
+            ]
+          },
+          {
+            "lemma": "בְּלִי",
+            "note": "“Without”, in the parallel line or joined to it.",
+            "evidence": [
+              {
+                "ref": "Psa.19.4",
+                "note": "“There is no speech and there are no words; their voice is not heard” (בְּלִי נִשְׁמָע)."
+              },
+              {
+                "ref": "Exo.14.11"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "יֵשׁ",
+            "note": "“There is”: the question is put with יֵשׁ and denied with אַיִן, and the two are set against each other in one line.",
+            "evidence": [
+              {
+                "ref": "Exo.17.7"
+              },
+              {
+                "ref": "Num.13.20"
+              },
+              {
+                "ref": "Jdg.4.20"
+              },
+              {
+                "ref": "Pro.13.7",
+                "note": "“There is (יֵשׁ) one who makes himself rich, and has nothing at all (וְאֵין כֹּל).”"
+              },
+              {
+                "ref": "Ecc.4.8",
+                "note": "“There is one, and there is no second.”"
+              },
+              {
+                "ref": "Gen.44.26",
+                "note": "“If our youngest brother is with us (אִם־יֵשׁ)… and our youngest brother is not with us (אֵינֶנּוּ).”"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "אֵין עוֹד",
+            "gloss": "there is no other; there is no more",
+            "evidence": [
+              {
+                "ref": "Deu.4.35"
+              },
+              {
+                "ref": "Deu.4.39"
+              },
+              {
+                "ref": "Isa.45.22"
+              },
+              {
+                "ref": "Jol.2.27"
+              },
+              {
+                "ref": "Ecc.9.5",
+                "note": "Of the dead: “there is no more a reward for them.”"
+              }
+            ]
+          },
+          {
+            "phrase": "אֵין כָּמוֹךָ / אֵין כַּיַהְוֶה",
+            "gloss": "there is none like you, none like Yahweh",
+            "evidence": [
+              {
+                "ref": "Exo.8.6"
+              },
+              {
+                "ref": "Exo.9.14"
+              },
+              {
+                "ref": "2Sa.7.22"
+              },
+              {
+                "ref": "Jer.10.6",
+                "note": "With מִן: מֵאֵין כָּמוֹךָ."
+              },
+              {
+                "ref": "1Sa.2.2"
+              }
+            ]
+          },
+          {
+            "phrase": "וְאִם־אַיִן",
+            "gloss": "and if not",
+            "evidence": [
+              {
+                "ref": "Gen.30.1"
+              },
+              {
+                "ref": "Exo.32.32"
+              },
+              {
+                "ref": "2Ki.2.10"
+              }
+            ]
+          },
+          {
+            "phrase": "וְאֵין מַחֲרִיד",
+            "gloss": "and none makes afraid",
+            "evidence": [
+              {
+                "ref": "Lev.26.6"
+              },
+              {
+                "ref": "Mic.4.4"
+              },
+              {
+                "ref": "Zep.3.13"
+              },
+              {
+                "ref": "Ezk.34.28"
+              }
+            ]
+          },
+          {
+            "phrase": "וְאֵין מַצִּיל",
+            "gloss": "and none delivers",
+            "evidence": [
+              {
+                "ref": "Deu.32.39"
+              },
+              {
+                "ref": "Isa.43.13"
+              },
+              {
+                "ref": "Psa.7.3"
+              }
+            ]
+          },
+          {
+            "phrase": "אֵין קֵץ",
+            "gloss": "there is no end; endless",
+            "evidence": [
+              {
+                "ref": "Isa.9.6"
+              },
+              {
+                "ref": "Ecc.4.8"
+              },
+              {
+                "ref": "Ecc.12.12"
+              }
+            ]
+          },
+          {
+            "phrase": "אֵין מִסְפָּר",
+            "gloss": "without number",
+            "evidence": [
+              {
+                "ref": "Jol.1.6"
+              },
+              {
+                "ref": "Psa.147.5",
+                "note": "“His understanding is without number.”"
+              }
+            ]
+          },
+          {
+            "phrase": "אֵין חֵקֶר",
+            "gloss": "there is no searching out: unsearchable",
+            "evidence": [
+              {
+                "ref": "Isa.40.28"
+              },
+              {
+                "ref": "Psa.145.3"
+              }
+            ]
+          },
+          {
+            "phrase": "מֵאֵין יוֹשֵׁב",
+            "gloss": "without inhabitant",
+            "evidence": [
+              {
+                "ref": "Isa.5.9"
+              },
+              {
+                "ref": "Jer.4.7"
+              }
+            ]
+          },
+          {
+            "phrase": "אֵין מֶלֶךְ בְּיִשְׂרָאֵל",
+            "gloss": "there was no king in Israel",
+            "evidence": [
+              {
+                "ref": "Jdg.17.6"
+              },
+              {
+                "ref": "Jdg.21.25"
+              }
+            ]
+          },
+          {
+            "phrase": "הַמִבְּלִי אֵין",
+            "gloss": "is it because there is no…?",
+            "evidence": [
+              {
+                "ref": "Exo.14.11"
+              },
+              {
+                "ref": "2Ki.1.3"
+              }
+            ]
+          }
+        ]
+      },
+      "greek": [
+        {
+          "lemma": "οὐ",
+          "gloss": "not; (οὐκ ἔστιν) there is not",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "PSA 14:3 word 5",
+              "note": "οὐκ … ποιῶν χρηστότητα for אֵין עֹשֵׂה־טוֹב."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "PSA 36:2 word 6"
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "DEU 4:35 word 8",
+              "note": "οὐκ … ἔτι for אֵין עוֹד."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "JER 31:15 word 19",
+              "note": "ὅτι οὐκ εἰσίν for כִּי אֵינֶנּוּ."
+            },
+            {
+              "ref": "Rom.3.10",
+              "note": "“There is none righteous, not even one” (οὐκ ἔστιν δίκαιος οὐδὲ εἷς), from Psa 14:1–3 and Ecc 7:20."
+            },
+            {
+              "ref": "Rom.3.12",
+              "note": "Psa 14:3: “there is none doing good, there is not so much as one.”"
+            },
+            {
+              "ref": "Rom.3.18",
+              "note": "Psa 36:2: “there is no fear of God before their eyes.”"
+            },
+            {
+              "ref": "Mat.2.18",
+              "note": "Jer 31:15: “because they are not” (ὅτι οὐκ εἰσίν)."
+            },
+            {
+              "ref": "Mrk.12.32",
+              "note": "The scribe, in the words of Deu 4:35: “he is one, and there is no other besides him.”"
+            },
+            {
+              "ref": "Luk.1.33",
+              "note": "“Of his kingdom there shall be no end” (οὐκ ἔσται τέλος), as Isa 9:6's אֵין־קֵץ."
+            },
+            {
+              "ref": "Act.4.12",
+              "note": "“There is no salvation in any other”, in the form of Isa 43:11 and Hos 13:4."
+            }
+          ]
+        },
+        {
+          "lemma": "οὐδείς",
+          "gloss": "no one, nothing",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "ISA 40:23 word 3",
+              "note": "εἰς οὐδέν for לְאָיִן."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "ISA 63:5 word 2",
+              "note": "οὐδεὶς βοηθός for אֵין עֹזֵר."
+            },
+            {
+              "ref": "Rev.3.7",
+              "note": "Isa 22:22: “who opens and no one shuts, and shuts and no one opens.”"
+            },
+            {
+              "ref": "1Co.8.4",
+              "note": "“An idol is nothing in the world, and there is no other God but one.”"
+            }
+          ]
+        },
+        {
+          "lemma": "μή",
+          "gloss": "not",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "GEN 30:1 word 17",
+              "note": "εἰ μή for אִם־אַיִן."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "GEN 44:26 word 19"
+            },
+            {
+              "ref": "Mat.9.36",
+              "note": "Num 27:17: “as sheep not having a shepherd” (μὴ ἔχοντα ποιμένα)."
+            },
+            {
+              "ref": "Mat.22.24",
+              "note": "Deu 25:5: “if a man dies, not having children.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מֵאַיִן",
+      "pos": "adverb",
+      "gloss": "from where? whence?",
+      "bdb": [
+        "a.cu.ag"
+      ],
+      "cognate_ids": [
+        "ar-ayna",
+        "akk-ayyanu",
+        "arc-an"
+      ],
+      "summary": "The question word אַיִן “where?”, found in scripture only with מִן before it: “from where?”. Seventeen times; the spelling מֵאַיִן is shared with the negative, which it is in Isa 41:24 (“of nothing”) and Jer 30:7 (“there is none like it”), so the count by spelling is two too high. It is the question word אֵי “where?” with n added, as Arabic ʾayna and Akkadian ayyānu are; its tie to the negative אַיִן is not settled (see the entry's summary). At 2Ki 5:25 the text is written מאן and read מֵאַיִן, which shows אָן to be the same word shortened.",
+      "senses": [
+        {
+          "id": "whence",
+          "gloss": "from where? (of a place)",
+          "definition": "Asks the place a person has come from, or belongs to. The answer begins with מִן “from”.",
+          "kin": [
+            "whither"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.29.4",
+              "role": "defining",
+              "note": "“My brothers, where are you from?” “We are from Haran” (מֵאַיִן אַתֶּם … מֵחָרָן)."
+            },
+            {
+              "ref": "Gen.42.7",
+              "role": "defining",
+              "note": "“Where have you come from?” “From the land of Canaan.”"
+            },
+            {
+              "ref": "Jdg.19.17",
+              "role": "defining",
+              "note": "“Where are you going (אָנָה), and where do you come from (וּמֵאַיִן)?”: the two questions of a journey."
+            },
+            {
+              "ref": "Jos.9.8",
+              "note": "“Who are you, and where do you come from?”"
+            },
+            {
+              "ref": "Jdg.17.9",
+              "note": "Micah to the Levite, who answers “from Bethlehem of Judah”."
+            },
+            {
+              "ref": "2Ki.5.25",
+              "note": "Elisha: “Where from, Gehazi?” Written מאן, read מֵאַיִן; Gehazi answers with אָנֶה וָאָנָה."
+            },
+            {
+              "ref": "2Ki.20.14",
+              "note": "Isaiah to Hezekiah of the envoys: “from where did they come to you?” “From a far land, from Babylon”; so Isa 39:3."
+            },
+            {
+              "ref": "Jon.1.8",
+              "note": "The sailors to Jonah, beside אֵי־מִזֶּה “of what (people)?”."
+            },
+            {
+              "ref": "Job.1.7",
+              "note": "Yahweh to the adversary: “From where do you come?” “From going to and fro in the earth.”"
+            }
+          ]
+        },
+        {
+          "id": "from-where-of-a",
+          "gloss": "from where? (of a source)",
+          "definition": "Asks where a thing needed is to come from: food, help, a comforter, wisdom. The question often expects the answer “from nowhere” or “from God alone”.",
+          "evidence": [
+            {
+              "ref": "Psa.121.1",
+              "role": "defining",
+              "note": "“From where shall my help come?”, answered in Psa 121:2: “My help is from Yahweh, maker of heaven and earth.”"
+            },
+            {
+              "ref": "Num.11.13",
+              "role": "defining",
+              "note": "Moses: “From where have I flesh to give to all this people?” The disciples ask the same of bread in a wilderness (Mrk 8:4, πόθεν)."
+            },
+            {
+              "ref": "2Ki.6.27",
+              "note": "The king in the famine: “from where shall I save you? from the threshing floor, or from the winepress?”"
+            },
+            {
+              "ref": "Nam.3.7",
+              "note": "Of Nineveh: “from where shall I seek comforters for you?”"
+            },
+            {
+              "ref": "Job.28.12",
+              "note": "“But wisdom, from where shall it be found?”, beside אֵי זֶה “where is…?”; again Job 28:20, “from where does it come?”"
+            },
+            {
+              "ref": "Job.28.20"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "אָנָה",
+            "note": "“To where?”, the other half of the traveller's question.",
+            "evidence": [
+              {
+                "ref": "Jdg.19.17"
+              }
+            ]
+          },
+          {
+            "lemma": "אֵי",
+            "note": "“Where?”, in אֵי־מִזֶּה and אֵי זֶה in the next clause.",
+            "evidence": [
+              {
+                "ref": "Jon.1.8"
+              },
+              {
+                "ref": "Job.28.12"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "מֵאַיִן תָּבוֹא",
+            "gloss": "where do you come from?",
+            "evidence": [
+              {
+                "ref": "Jdg.17.9"
+              },
+              {
+                "ref": "Jdg.19.17"
+              },
+              {
+                "ref": "Jon.1.8"
+              },
+              {
+                "ref": "Job.1.7"
+              }
+            ]
+          }
+        ]
+      },
+      "greek": [
+        {
+          "lemma": "πόθεν",
+          "gloss": "from where?",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "PSA 121:1 word 7"
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "JOB 1:7 word 5"
+            },
+            {
+              "ref": "Jhn.19.9",
+              "note": "Pilate to Jesus: “Where are you from?” (πόθεν εἶ σύ), the question of Gen 29:4."
+            },
+            {
+              "ref": "Mrk.8.4",
+              "note": "“From where can anyone satisfy these with bread here in a wilderness?”, as Num 11:13."
+            },
+            {
+              "ref": "Jhn.7.27",
+              "note": "“We know where this man is from.”"
+            },
+            {
+              "ref": "Jas.4.1",
+              "note": "“From where are wars and fightings among you?”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אָן",
+      "root": "אנ",
+      "pos": "adverb",
+      "gloss": "where? to where?; (עַד־אָנָה) how long?",
+      "bdb": [
+        "a.cu.ah"
+      ],
+      "cognate_ids": [
+        "arc-an",
+        "ar-ayna",
+        "akk-ayyanu"
+      ],
+      "summary": "The question word אַיִן shortened, about forty times, nearly always with the ending of direction: אָנָה “to where?”. The bare אָן is in 1Sa 10:14 and Job 8:2, and the text written מאן at 2Ki 5:25 is read מֵאַיִן. With עַד “until” the question turns from place to time, “how long?”; doubled, אָנֶה וָאָנָה, it is no longer a question but “here or there, anywhere”.",
+      "senses": [
+        {
+          "id": "whither",
+          "gloss": "where? to where?",
+          "definition": "Asks the place a person is going to; less often simply where something was done.",
+          "kin": [
+            "whence"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.16.8",
+              "role": "defining",
+              "note": "The angel to Hagar: “from where have you come (אֵי־מִזֶּה בָאת), and where are you going (וְאָנָה תֵלֵכִי)?”"
+            },
+            {
+              "ref": "1Sa.10.14",
+              "role": "defining",
+              "note": "“Where did you go?” (אָן הֲלַכְתֶּם), answered “to seek the donkeys”. The same verse has the negative אַיִן: “we saw that they were not.”"
+            },
+            {
+              "ref": "Psa.139.7",
+              "role": "defining",
+              "note": "“Where shall I go from your spirit? and where shall I flee from your face?”"
+            },
+            {
+              "ref": "Gen.37.30",
+              "note": "Reuben: “the boy is not (אֵינֶנּוּ); and I, where shall I go?”"
+            },
+            {
+              "ref": "Jos.2.5",
+              "note": "Indirect: “I do not know where the men went.”"
+            },
+            {
+              "ref": "Deu.1.28",
+              "note": "“Where are we going up?”"
+            },
+            {
+              "ref": "2Sa.13.13",
+              "note": "Tamar: “and I, where shall I carry my reproach?”"
+            },
+            {
+              "ref": "Zec.5.10",
+              "note": "“Where are they taking the ephah?”"
+            },
+            {
+              "ref": "Rut.2.19",
+              "note": "Of place without motion: “Where (אֵיפֹה) did you glean today, and where (וְאָנָה) did you work?”"
+            }
+          ]
+        },
+        {
+          "id": "how-long",
+          "gloss": "how long? (עַד־אָנָה, עַד־אָן)",
+          "definition": "With עַד “until”: until what point, how long? It is the question of one whose patience is at an end, Yahweh's with Israel or the sufferer's with his trouble.",
+          "evidence": [
+            {
+              "ref": "Num.14.11",
+              "role": "defining",
+              "note": "“How long will this people spurn me? and how long will they not believe in me, for all the signs I have done among them?”"
+            },
+            {
+              "ref": "Psa.13.2",
+              "role": "defining",
+              "note": "“How long, Yahweh? will you forget me for ever? how long will you hide your face from me?”: four times in two verses."
+            },
+            {
+              "ref": "Exo.16.28",
+              "note": "“How long do you refuse to keep my commandments?”"
+            },
+            {
+              "ref": "Hab.1.2",
+              "note": "“How long, Yahweh, shall I cry, and you will not hear?”"
+            },
+            {
+              "ref": "Job.8.2",
+              "note": "With the bare form: עַד־אָן, “how long will you speak these things?”"
+            }
+          ]
+        },
+        {
+          "id": "here-or-there-anywhere",
+          "gloss": "here or there, anywhere (אָנֶה וָאָנָה)",
+          "definition": "Doubled and no longer asking: to this place or that, anywhere at all.",
+          "evidence": [
+            {
+              "ref": "1Ki.2.36",
+              "role": "defining",
+              "note": "Solomon to Shimei: “dwell there, and do not go out from there anywhere”; repeated in 1Ki 2:42."
+            },
+            {
+              "ref": "2Ki.5.25",
+              "note": "Gehazi: “your servant did not go anywhere.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "מֵאַיִן",
+            "note": "“From where?”, asked with it.",
+            "evidence": [
+              {
+                "ref": "Jdg.19.17"
+              }
+            ]
+          },
+          {
+            "lemma": "אֵיפֹה",
+            "note": "“Where?”, in the parallel question.",
+            "evidence": [
+              {
+                "ref": "Rut.2.19"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "עַד־אָנָה",
+            "gloss": "how long?",
+            "evidence": [
+              {
+                "ref": "Exo.16.28"
+              },
+              {
+                "ref": "Num.14.11"
+              },
+              {
+                "ref": "Psa.13.2"
+              },
+              {
+                "ref": "Hab.1.2"
+              }
+            ]
+          },
+          {
+            "phrase": "אָנֶה וָאָנָה",
+            "gloss": "here or there, anywhere",
+            "evidence": [
+              {
+                "ref": "1Ki.2.36"
+              },
+              {
+                "ref": "1Ki.2.42"
+              },
+              {
+                "ref": "2Ki.5.25"
+              }
+            ]
+          }
+        ]
+      },
+      "greek": [
+        {
+          "lemma": "ποῦ",
+          "gloss": "where?",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "GEN 16:8 word 8"
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "PSA 139:7 word 1"
+            },
+            {
+              "ref": "Jhn.13.36",
+              "note": "Peter: “Lord, where are you going?” (ποῦ ὑπάγεις)."
+            },
+            {
+              "ref": "Jhn.8.14",
+              "note": "Both questions of Jdg 19:17 together: “I know from where I came (πόθεν) and where I am going (ποῦ).”"
+            },
+            {
+              "ref": "Jhn.16.5"
+            }
+          ]
+        },
+        {
+          "lemma": "πότε",
+          "gloss": "when? (ἕως πότε, how long?)",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "PSA 13:2 word 2",
+              "note": "ἕως πότε for עַד־אָנָה."
+            },
+            {
+              "ref": "Mat.17.17",
+              "note": "Jesus, in the words of Num 14:11: “O faithless generation, how long shall I be with you? how long shall I bear with you?”"
+            },
+            {
+              "ref": "Rev.6.10",
+              "note": "“How long, Lord, holy and true, do you not judge?”, as Psa 13:2 and Hab 1:2."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "uga-in",
+      "lang": "uga",
+      "form": "𐎛𐎐",
+      "translit": "ỉn",
+      "gloss": "there is not",
+      "relation": "cognate",
+      "note": "The Ugaritic word of non-existence, the opposite of ỉṯ “there is” as אֵין is of יֵשׁ, and used the same way before a noun: wn ỉn bt “and there is no house” (KTU 1.4 IV 50). Segert takes it from *ʾayn and says it “apparently originated from an interrogative adverb”, comparing Hebrew אַיִן and Arabic ʾayna “where?”: that is, the negative and the question word of this entry would be one word.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "§55.7 “Expressions of existence and its modifications”",
+          "note": "“The expression of non-existence in /ʾēn-/ < *ʾayn ‘there is not’ apparently originated from an interrogative adverb (cf. H. ʾayin, Arab. ʾayna ‘where?’).”"
+        },
+        {
+          "source": "segert-1984",
+          "locator": "§57.21 and §65.3",
+          "note": "wn.in.bt 1.4:IV:50 “and there is no house”; “The particles of existence, iṯ, and non-existence, in, developed from nominal bases… They occur only as nominal predicates.”"
+        },
+        {
+          "source": "segert-1984",
+          "locator": "§93 Glossary, in",
+          "note": "“there is not” (H. ʾáyin, ʾēn-, Akkad. yanu)."
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Ugaritic 𐎛𐎐",
+          "url": "https://en.wiktionary.org/wiki/%F0%90%8E%9B%F0%90%8E%90",
+          "note": "“non-existence; there is not”; “From earlier *ʾaynu/a; compare Hebrew אֵין”."
+        }
+      ]
+    },
+    {
+      "id": "akk-yanu",
+      "lang": "akk",
+      "form": "yānu",
+      "translit": "yānu",
+      "gloss": "(there) is not",
+      "relation": "cognate",
+      "note": "Akkadian's later word for “there is not”, from Middle Assyrian on, also written yaʾnu; the Assyrian dialect more often says laššu (lā “not” and išû “have”, built as Aramaic לַיִת is). Also “otherwise”, as וְאִם־אַיִן is “and if not”.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000004540, yānu [(there) is not] V",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000004540.html",
+          "note": "“(there) is not; otherwise”; written yānu, yaʾnu, yānum, yānumma; Middle Assyrian to Seleucid, about 400 instances."
+        }
+      ]
+    },
+    {
+      "id": "moab-an",
+      "lang": "sem",
+      "form": "אן",
+      "translit": "ʾn",
+      "gloss": "there is not (Moabite)",
+      "relation": "cognate",
+      "note": "On Mesha's stele, about 840 BC, written without the י: ובר אנ בקרב הקר בקרחה, “and cistern there was none in the midst of the city, in Qarḥoh”. The noun stands first and the negative after it, exactly as וְאָדָם אַיִן in Gen 2:5.",
+      "evidence": [
+        {
+          "source": "compston-1919",
+          "locator": "KAI 181, line 24",
+          "url": "https://en.wikisource.org/wiki/The_Inscription_on_the_Stele_of_M%C3%A9%C5%A1a%CA%BF/The_Text_in_Hebrew_Square_Script",
+          "note": "ובר אנ בקרב הקר בקרחה."
+        },
+        {
+          "source": "compston-1919",
+          "locator": "Translation, line 24",
+          "url": "https://en.wikisource.org/wiki/The_Inscription_on_the_Stele_of_M%C3%A9%C5%A1a%CA%BF/Translation",
+          "note": "“Now cistern there was none in the middle of the city, in Ḳrḥh.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-in-neg",
+      "lang": "ar",
+      "form": "إِنْ",
+      "translit": "ʾin",
+      "gloss": "not (a negative, like مَا)",
+      "relation": "possible",
+      "note": "Arabic has a negative ʾin beside its conditional ʾin “if”, used before a noun clause as אֵין is: إِنِ ٱلْكَافِرُونَ إِلَّا فِى غُرُورٍ “the unbelievers are not in aught save a deception”. It has been set beside אֵין, but Arabic has no y in it, and it may be the conditional particle in another use; so it is recorded as possible only.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 106, art. ان, إِنْ",
+          "note": "“[Secondly,] it is a negative, syn. with مَا; and is put before a nominal proposition… and before a verbal proposition.”"
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Ugaritic 𐎛𐎐, etymology",
+          "url": "https://en.wiktionary.org/wiki/%F0%90%8E%9B%F0%90%8E%90",
+          "note": "Compares Hebrew אֵין and Arabic إِنْ (ʾin) with Ugaritic ỉn."
+        }
+      ]
+    },
+    {
+      "id": "ar-ayna",
+      "lang": "ar",
+      "form": "أَيْنَ",
+      "translit": "ʾayna",
+      "gloss": "where?; (مِنْ أَيْنَ) from where?",
+      "relation": "cognate",
+      "note": "The same word as the question אַיִן, consonant for consonant, and used with “from” as מֵאַיִן is: مِنْ أَيْنَ “from what place? whence?”, and إِلَى أَيْنَ “to what place?”, as Hebrew says אָנָה.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 139, art. اين, أَيْنَ",
+          "note": "“an interrogative respecting a place: [signifying Where? in what place?]… you say, مِنْ أَيْنَ [meaning From what place? whence?]: [and you say also, إِلَى أَيْنَ To what place? whither?]”."
+        }
+      ]
+    },
+    {
+      "id": "akk-ayyanu",
+      "lang": "akk",
+      "form": "ayyānu",
+      "translit": "ayyānu",
+      "gloss": "where? from where?",
+      "relation": "cognate",
+      "note": "Also written ayin and ayinna, the form nearest Hebrew אַיִן. Built on ayyu “which?”, as אַיִן is on אֵי.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000006400, ayyānu [where?] QP",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000006400.html",
+          "note": "“whence?; where?”; written ayin, ayinna, ayyānu; Middle Babylonian and Neo-Assyrian."
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000021830, ayyu [which?] QP",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000021830.html",
+          "note": "“which?; what?; who?”"
+        }
+      ]
+    },
+    {
+      "id": "arc-an",
+      "lang": "arc",
+      "form": "אָן",
+      "translit": "ʾān",
+      "gloss": "where?; (מְנָן) from where?",
+      "relation": "cognate",
+      "note": "The Targums' word for “where?”, the same shortened form as Hebrew אָן; with מִן it is מְנָן “from where?”, which the Targum writes for Hebrew מֵאַיִן at Num 11:13 and Jon 1:8. For the negative אֵין the Targums use another word, לַיִת (לָא and אִית joined; Targ. Gen 2:5).",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. אָן (Aramaic)",
+          "note": "“(interrog.) where? Targ. Gen. IV, 9”; also relative, “where, wherever”."
+        },
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. מְנָן",
+          "note": "“(= מן אן) whence? Targ. Num. XI, 13… Targ. Jon. I, 8”."
+        },
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. לַיִת",
+          "note": "“(= לָא אִית) there is (was) not, none. Targ. O. Gen. II, 5”."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "one-god",
+      "statement": "Scripture states that God is one by denying, with this word, that there is any other. Moses: “Yahweh, he is God; there is no other besides him” (אֵין עוֹד מִלְבַדּוֹ, Deu 4:35), “in the heavens above and on the earth beneath; there is no other” (Deu 4:39). Yahweh himself: “there is no god with me” (Deu 32:39); “I am first and I am last, and besides me there is no God” (Isa 44:6); “I am Yahweh, and there is no other; besides me there is no God” (Isa 45:5); “a righteous God and a saviour; there is none besides me” (Isa 45:21). Hannah and David say it back to him (1Sa 2:2; 2Sa 7:22). When Jesus quotes “Yahweh our God, Yahweh is one” as the first commandment, the scribe answers in the words of Deu 4:35, “he is one, and there is no other besides him”, and Jesus judges that he has answered wisely (Mrk 12:29, 32, 34). Jesus calls the Father “the only true God” and himself the one whom he sent (Jhn 17:3). Paul writes that “there is no other God but one”, and names him: “to us there is one God, the Father… and one Lord, Jesus Christ” (1Co 8:4, 6). The denial leaves no room for a second or a third beside the Father: the one God is the Father, and Jesus is the one he sent.",
+      "evidence": [
+        {
+          "ref": "Deu.4.35"
+        },
+        {
+          "ref": "Deu.4.39"
+        },
+        {
+          "ref": "Deu.32.39"
+        },
+        {
+          "ref": "1Sa.2.2"
+        },
+        {
+          "ref": "2Sa.7.22"
+        },
+        {
+          "ref": "Isa.44.6"
+        },
+        {
+          "ref": "Isa.45.5"
+        },
+        {
+          "ref": "Isa.45.21"
+        },
+        {
+          "ref": "Mrk.12.29"
+        },
+        {
+          "ref": "Mrk.12.32"
+        },
+        {
+          "ref": "Mrk.12.34"
+        },
+        {
+          "ref": "Jhn.17.3"
+        },
+        {
+          "ref": "1Co.8.4"
+        },
+        {
+          "ref": "1Co.8.6"
+        }
+      ]
+    },
+    {
+      "topic": "idols-are-nothing",
+      "statement": "What scripture denies of the gods of the nations it denies with this word. Yahweh says to them, “Behold, you are of nothing (מֵאַיִן), and your work of nought” (Isa 41:24). On Carmel the prophets of Baal call all day, “but there was no voice, and none answering, and none paying heed” (1Ki 18:26, 29). Of the image overlaid with gold and silver, “there is no breath at all within it” (Hab 2:19; Psa 135:17); the idols cannot do harm, “and to do good is not in them” (Jer 10:5). Paul draws the conclusion in the same terms: “we know that an idol is nothing in the world, and that there is no other God but one” (1Co 8:4). A god other than Yahweh is not a lesser power but nothing at all.",
+      "evidence": [
+        {
+          "ref": "Isa.41.24"
+        },
+        {
+          "ref": "1Ki.18.26"
+        },
+        {
+          "ref": "1Ki.18.29"
+        },
+        {
+          "ref": "Hab.2.19"
+        },
+        {
+          "ref": "Psa.135.17"
+        },
+        {
+          "ref": "Jer.10.5"
+        },
+        {
+          "ref": "1Co.8.4"
+        }
+      ]
+    },
+    {
+      "topic": "mortality",
+      "statement": "Scripture says of the dead that they “are not”. Joseph's brothers, believing him dead, say “the one is not” (Gen 42:13), and of the same brother “his brother is dead” (Gen 44:20). Rachel weeps for her sons “because they are not” (Jer 31:15), which Matthew applies to the children killed in Bethlehem (Mat 2:18). Job expects to “lie down in the dust; you will seek me, and I shall not be” (Job 7:21), and David prays for relief “before I go, and am not” (Psa 39:14). Man is like the flower of the field: “the wind passes over it, and it is not” (Psa 103:15–16). The same word then denies to the dead everything that belongs to the living: “the dead know not anything, and there is no more a reward for them… there is no portion for them any more for ever in all that is done under the sun” (Ecc 9:5–6); “there is no work, nor device, nor knowledge, nor wisdom in the grave where you are going” (Ecc 9:10); “in death there is no remembrance of you” (Psa 6:6); and man has no advantage over the beast, for both die alike (Ecc 3:19). So a dead man does not live on somewhere else: he is not. The comfort Yahweh gives Rachel is accordingly not that her sons are alive but that “they shall come back from the land of the enemy” (Jer 31:16–17), and the hope of the dead is to awake from the dust of the ground (Dan 12:2); without that, those who have fallen asleep in Christ have perished (1Co 15:18).",
+      "evidence": [
+        {
+          "ref": "Gen.42.13"
+        },
+        {
+          "ref": "Gen.44.20"
+        },
+        {
+          "ref": "Jer.31.15"
+        },
+        {
+          "ref": "Mat.2.18"
+        },
+        {
+          "ref": "Job.7.21"
+        },
+        {
+          "ref": "Psa.39.14"
+        },
+        {
+          "ref": "Psa.103.15",
+          "to": "Psa.103.16"
+        },
+        {
+          "ref": "Ecc.9.5",
+          "to": "Ecc.9.6"
+        },
+        {
+          "ref": "Ecc.9.10"
+        },
+        {
+          "ref": "Psa.6.6"
+        },
+        {
+          "ref": "Ecc.3.19"
+        },
+        {
+          "ref": "Jer.31.16",
+          "to": "Jer.31.17"
+        },
+        {
+          "ref": "Dan.12.2"
+        },
+        {
+          "ref": "1Co.15.18"
+        }
+      ]
+    },
+    {
+      "topic": "judgment",
+      "statement": "The end of the wicked is stated with the same word as the state of the dead. “Yet a little, and the wicked is not; you will look at his place, and he is not. But the meek shall inherit the earth” (Psa 37:10–11), the promise Jesus repeats (Mat 5:5). “When the whirlwind passes, the wicked is not, but the righteous is an everlasting foundation” (Pro 10:25); “the wicked are overthrown, and are not” (Pro 12:7); “let sinners be consumed out of the earth, and let the wicked be no more” (Psa 104:35); those who war against Israel “shall be as nothing, and shall perish” (Isa 41:11–12). The verses set two ends side by side: one lot ceases to be, and the other remains on the earth. None of them speaks of the wicked as kept alive in suffering.",
+      "evidence": [
+        {
+          "ref": "Psa.37.10",
+          "to": "Psa.37.11"
+        },
+        {
+          "ref": "Mat.5.5"
+        },
+        {
+          "ref": "Pro.10.25"
+        },
+        {
+          "ref": "Pro.12.7"
+        },
+        {
+          "ref": "Psa.104.35"
+        },
+        {
+          "ref": "Isa.41.11",
+          "to": "Isa.41.12"
+        }
+      ]
+    },
+    {
+      "topic": "kingdom-of-god",
+      "statement": "Isaiah says of the child to be born that “of the increase of the dominion and of peace there shall be no end (אֵין־קֵץ), on the throne of David and over his kingdom, to establish it… from now and for ever” (Isa 9:6). Gabriel tells Mary that God will give her son “the throne of David his father… and of his kingdom there shall be no end” (Luk 1:32–33). The prophets describe life under that rule with a phrase first given as a blessing of the law, “you shall lie down, and none shall make you afraid” (Lev 26:6): in the last days, when the nations beat their swords into ploughshares, “they shall sit every man under his vine and under his fig tree, and none shall make them afraid” (Mic 4:1–4); so of the remnant of Israel (Zep 3:13), and of the flock under “my servant David” (Ezk 34:23–24, 28). The throne is David's, the vines and fig trees are on the earth, and the kingdom has no end.",
+      "evidence": [
+        {
+          "ref": "Isa.9.6"
+        },
+        {
+          "ref": "Luk.1.32",
+          "to": "Luk.1.33"
+        },
+        {
+          "ref": "Lev.26.6"
+        },
+        {
+          "ref": "Mic.4.1",
+          "to": "Mic.4.4"
+        },
+        {
+          "ref": "Zep.3.13"
+        },
+        {
+          "ref": "Ezk.34.23",
+          "to": "Ezk.34.24"
+        },
+        {
+          "ref": "Ezk.34.28"
+        }
+      ]
+    }
+  ],
+  "note": "Root: keyed אינ, the key the database files these words under and the consonants of אַיִן itself; no existing entry has it. No verb or noun of scripture gives the word (the later verb אִיֵּן “negate” is made from it), so it is a particle keyed by its own consonants, as lo.json and ki.json are. Two words share the spelling: the negative (Ugaritic ỉn, Akkadian yānu, Moabite ʾn) and the question word “where?” (Arabic ʾayna, Akkadian ayyānu, Aramaic אָן). They are kept in one entry under the one-spelling rule, each with its own cognates. Whether they are one word in origin is open: Segert (§55.7) derives the Ugaritic negative from the interrogative, and Job 14:10 (וַיִּגְוַע אָדָם וְאַיּוֹ, “man expires, and where is he?”) shows the step in Hebrew itself; but Akkadian keeps yānu and ayyānu apart, and the question word is plainly אֵי with n added, so the summary says “may”. For the reviewer: (1) אָן / אָנָה (BDB a.cu.ah, which the database gives no root) is added here as the shortened form of the question word, on the evidence of the ketiv מאן at 2Ki 5:25 and of Aramaic אָן; it could equally go to a future entry for the interrogatives built on אֵי (אֵי, אַיֵּה, אֵיךְ, אֵיכָה, אֵיפֹה; BDB a.cu.aa–af, ai, all unclaimed), and מֵאַיִן with it. Its word root is given as אנ. (2) The second word's lemma is written מֵאַיִן, the only form scripture has, to keep it apart from the negative אַיִן. Counts: a.cu.ag's 19 tokens are every מֵאַיִן, of which Isa 41:24 and Jer 30:7 are the negative; the same tokens are also counted under a.cz.aa. Deu 25:7's מֵאֵין is the verb מאן “refuse”. Left out: אֵיפָה “ephah” (a.cz.ac, 40 uses), filed under this key by alphabet only: it is a measure, with no tie in sense to either word, and it answers to Egyptian jp.t “oipe (a dry measure)” (TLA lemma 24120; Coptic ⲟⲉⲓⲡⲉ), so it is a loan and needs an entry of its own under איפה; the Septuagint's οιφι is the same word. אֵיפֹה “where?” (a.cz.ad, a cross-reference with no tokens; its uses are a.cu.ai) is אֵי and פֹּה and belongs with אֵי. אִי “not” (Job 22:30 אִי־נָקִי, and the name אִי־כָבוֹד, Ichabod, 1Sa 4:21, BDB a.cw.ab) is not filed under this key and is not shown to be this word: Phoenician has a negative ʾy that Krahmalkov (pp. 44–45, s.v. ʾY II) compares with Akkadian ai, e, not with אַיִן; so no name entry for Ichabod is drafted here, and it should go with אִי when that is written (if אִי proves to be אֵי “where?”, the name is “where is glory?”). No name entries: the root forms no personal name. Aramaic and Syriac: scripture's Aramaic denies existence with לָא אִיתַי (Dan 2:10, 11; 3:29, in lo.json) and the Peshitta with ܠܝܬ (SEDRA root ܐܝܬ), both under the root of יֵשׁ; the Peshitta's “from where?” is ܐܝܡܟܐ and “where?” ܐܝܟܐ, built on ʾay without n; the Syriac ܐܝܢ “yes” (Mat 5:37), which the brief lists under these consonants, is the affirmative הֵן and unrelated. So the entry has no Aramaic or Syriac word. Psalms are cited by Hebrew verse numbers. Leads not followed: Ge'ez ʾen- (in ʾenbala “without”) and ʾi- “not”, in Leslau and Dillmann, not read; CAD for yānu (said to come from ayyānu “where?”, which would settle the question of one word or two) and for ayyānu, not consulted; DULAT s.v. ỉn not read (Segert's grammar and Wiktionary only); Old South Arabian not checked; Arabic أَنَّى “from where? how?” (Lane, art. انى) not weighed against אָן; Segert's page numbers were not confirmed against the scan, so his sections are cited; the Moabite line and translation were checked on Compston's Wikisource pages (he writes the final nun as נ). The senses of אֵין are illustrated, not exhaustive: about 790 uses."
+}

@@ -1,0 +1,120 @@
+{
+  "id": "nwm",
+  "root": "נומ",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "gloss": "sleep, be dormant",
+  "summary": "נום describes sleep and stillness.",
+  "words": [
+    {
+      "lemma": "נוּם",
+      "pos": "verb",
+      "gloss": "sleep, be dormant",
+      "bdb": [
+        "n.ca.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "sleep, be dormant",
+          "senses": [
+            {
+              "id": "sleep-be-dormant",
+              "gloss": "sleep, be dormant",
+              "definition": "The verb describes warriors sunk into sleep and unable to act.",
+              "evidence": [
+                {
+                  "ref": "Psa.76.6",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.121.4",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Isa.5.27",
+                  "role": "example"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-slumber"
+      ]
+    },
+    {
+      "lemma": "תְּנוּמָה",
+      "bdb": [
+        "n.ca.ac"
+      ],
+      "pos": "noun",
+      "gloss": "slumber",
+      "senses": [
+        {
+          "id": "slumber",
+          "gloss": "slumber",
+          "definition": "The psalm pairs slumber given to the eyelids with sleep given to the eyes.",
+          "evidence": [
+            {
+              "ref": "Psa.132.4",
+              "role": "defining"
+            },
+            {
+              "ref": "Pro.6.4",
+              "role": "example"
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "cognate_ids": [
+        "arc-slumber"
+      ]
+    },
+    {
+      "lemma": "נוּמָה",
+      "bdb": [
+        "n.ca.ab"
+      ],
+      "pos": "noun",
+      "gloss": "drowsiness",
+      "senses": [
+        {
+          "id": "drowsiness",
+          "gloss": "drowsiness",
+          "definition": "The drowsiness of one given to excess leaves him clothed in rags.",
+          "evidence": [
+            {
+              "ref": "Pro.23.21",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "cognate_ids": [
+        "arc-slumber"
+      ]
+    }
+  ],
+  "note": "Psalm 76 places the sleep of the warriors beside the failure of their hands.",
+  "created": "2026-11-19",
+  "cognates": [
+    {
+      "id": "arc-slumber",
+      "lang": "arc",
+      "form": "נוּם",
+      "translit": "nûm",
+      "gloss": "slumber, nap",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. נוּם, Targum Isaiah 5:27 and Psalms 121:3–4"
+        }
+      ]
+    }
+  ]
+}

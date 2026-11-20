@@ -1,0 +1,103 @@
+{
+  "id": "lb2",
+  "root": "לבא",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "gloss": "lions",
+  "summary": "לְבָאִים are lions, the fierce enemies pictured in Psalm 57.",
+  "words": [
+    {
+      "lemma": "לְבִי",
+      "pos": "noun",
+      "gloss": "lion",
+      "bdb": [
+        "l.ah.ab"
+      ],
+      "senses": [
+        {
+          "id": "lion",
+          "gloss": "lion",
+          "definition": "A lion, used as an image for fierce enemies.",
+          "evidence": [
+            {
+              "ref": "Psa.57.5",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "לְבִיָּא",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "lioness",
+      "bdb": [
+        "l.ah.ac"
+      ],
+      "senses": [
+        {
+          "id": "lioness",
+          "gloss": "lioness",
+          "definition": "A female lion used in images of fierce nations and Judah.",
+          "evidence": [
+            {
+              "ref": "Gen.49.9",
+              "role": "defining"
+            },
+            {
+              "ref": "Num.23.24"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "לָבִיא",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "lion",
+      "bdb": [
+        "l.ah.ad"
+      ],
+      "senses": [
+        {
+          "id": "lion-2",
+          "gloss": "lion",
+          "definition": "A lion, the strong predator used as an image of a people.",
+          "evidence": [
+            {
+              "ref": "Gen.49.9",
+              "role": "defining"
+            },
+            {
+              "ref": "Num.24.9"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "לְבָאוֹת",
+      "pos": "name",
+      "gloss": "Lebaoth",
+      "bdb": [
+        "l.ah.ae"
+      ],
+      "senses": [
+        {
+          "id": "lebaoth",
+          "gloss": "Lebaoth",
+          "definition": "A city of Judah.",
+          "evidence": [
+            {
+              "ref": "Jos.15.32",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "note": "Drafted for Psalm 57 coverage. Root relation to לבב remains uncertain."
+}

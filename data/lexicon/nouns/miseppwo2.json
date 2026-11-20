@@ -1,0 +1,92 @@
+{
+  "id": "miseppwo2",
+  "root": "ספא",
+  "status": "draft",
+  "updated": "2026-11-18",
+  "tags": [
+    "agriculture"
+  ],
+  "gloss": "fodder",
+  "summary": "Rebekah offers straw and fodder for the camels. In Joseph’s story a traveler can carry fodder for his donkey in a sack.",
+  "words": [
+    {
+      "lemma": "מִסְפּוֹא",
+      "pos": "noun",
+      "gender": "m",
+      "bdb": [
+        "o.cb.ab"
+      ],
+      "gloss": "fodder",
+      "senses": [
+        {
+          "id": "fodder",
+          "gloss": "fodder",
+          "definition": "Feed supplied to domestic animals on a journey or at a lodging place.",
+          "evidence": [
+            {
+              "ref": "Gen.24.25",
+              "role": "defining",
+              "note": "Rebekah says her family has plenty of straw and fodder."
+            },
+            {
+              "ref": "Gen.24.32",
+              "role": "defining",
+              "note": "The unloaded camels receive both."
+            },
+            {
+              "ref": "Gen.42.27",
+              "role": "defining",
+              "note": "A brother opens his sack to feed his donkey."
+            },
+            {
+              "ref": "Gen.43.24",
+              "role": "defining",
+              "note": "Joseph’s steward feeds the travelers’ donkeys."
+            },
+            {
+              "ref": "Jdg.19.19",
+              "role": "defining",
+              "note": "The traveler has straw and fodder for the donkeys and bread and wine for the people."
+            }
+          ],
+          "cognate_ids": [
+            "arc-feed",
+            "ug-eat"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-feed",
+      "lang": "arc",
+      "form": "סְפֵי",
+      "translit": "səp̄ē",
+      "gloss": "give someone food",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "O01349, Ḥullin 107b, feeding a child"
+        }
+      ]
+    },
+    {
+      "id": "ug-eat",
+      "lang": "uga",
+      "form": "spủ",
+      "translit": "spʾ",
+      "gloss": "consume, eat",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "dulat-2015",
+          "locator": "KTU 1.17 I 31, eating one's share, and 1.103:51, consuming the land"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "Genesis and Judges distinguish this feed from straw when they mention both. The passages leave its ingredients unspecified. The Ugaritic comparison concerns eating and supplies no direct parallel for the Hebrew noun."
+}

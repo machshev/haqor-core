@@ -1,0 +1,2023 @@
+{
+  "id": "7km",
+  "root": "חכמ",
+  "status": "draft",
+  "updated": "2026-11-18",
+  "tags": [
+    "wisdom",
+    "skill",
+    "understanding",
+    "judgment",
+    "fear-of-yahweh",
+    "instruction",
+    "folly"
+  ],
+  "gloss": "be wise; wise, skilled; wisdom, skill",
+  "summary": "Wisdom is the skill to do a thing rightly: the craftsman's skill of hand that made the priests' garments and the tabernacle (Exo 28:3; 31:3–6), the discernment of a judge or ruler (1Ki 3:28), and above all the life lived in the fear of Yahweh, which is its beginning (Pro 9:10; Job 28:28). It is Yahweh's gift, by his spirit and his law (Exo 31:3; Psa 19:8; Pro 2:6), learned by hearing instruction and rebuke, and set against the fool and the mocker. There is also the wisdom of the world, of Egypt's and Babylon's wise men and of those “wise to do evil”, which Yahweh brings to nothing (Isa 29:14, quoted in 1Co 1:19). Arabic ḥikma “wisdom”, ḥakīm “wise, skilled”, Ugaritic and Phoenician ḥkm(t), and the Aramaic and Syriac words agree.",
+  "words": [
+    {
+      "lemma": "חָכְמָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "wisdom; skill",
+      "bdb": [
+        "h.cg.ac"
+      ],
+      "cognate_ids": [
+        "ar-hikma",
+        "uga-hkm",
+        "phn-hkmt"
+      ],
+      "summary": "About 150 times, most in Proverbs, Job and Ecclesiastes, and in the accounts of Bezalel's work and Solomon's reign. The same word is a craftsman's skill, a ruler's discernment, and the wisdom that begins with the fear of Yahweh. The plural חָכְמוֹת (Pro 1:20; 9:1) is wisdom personified as a woman who calls.",
+      "senses": [
+        {
+          "id": "skill",
+          "gloss": "skill, craftsmanship",
+          "definition": "The skill of hand to make a thing well: to spin, weave, carve, engrave and cast, as Yahweh gave it to the makers of the tabernacle and Solomon's temple; also the seaman's skill.",
+          "cognate_ids": [
+            "ar-hakama"
+          ],
+          "kin": [
+            "skilled"
+          ],
+          "evidence": [
+            {
+              "ref": "Exo.28.3",
+              "role": "defining",
+              "note": "“All the wise of heart whom I have filled with the spirit of wisdom, and they shall make the clothes of Aaron.”"
+            },
+            {
+              "ref": "Exo.31.3",
+              "role": "defining",
+              "note": "Bezalel filled “with the spirit of God, in wisdom, in understanding, in knowledge, and in all workmanship”, to devise designs and work in gold, silver and bronze (31:4–5)."
+            },
+            {
+              "ref": "Exo.31.6"
+            },
+            {
+              "ref": "Exo.35.26",
+              "role": "defining",
+              "note": "“All the women whose heart lifted them up in wisdom spun the goats' hair.”"
+            },
+            {
+              "ref": "Exo.35.31"
+            },
+            {
+              "ref": "Exo.35.35",
+              "note": "“He has filled them with wisdom of heart to do every work of the engraver and designer and embroiderer … and weaver.”"
+            },
+            {
+              "ref": "Exo.36.1"
+            },
+            {
+              "ref": "Exo.36.2"
+            },
+            {
+              "ref": "1Ki.7.14",
+              "role": "defining",
+              "note": "Hiram of Tyre, a worker in bronze, “filled with wisdom and understanding and knowledge to do all work in bronze”."
+            },
+            {
+              "ref": "Psa.107.27",
+              "note": "Seamen in the storm: “all their wisdom is swallowed up”: their seamanship is at an end."
+            }
+          ]
+        },
+        {
+          "id": "wisdom-to-judge",
+          "gloss": "wisdom to judge and rule",
+          "definition": "The discernment by which a king or a judge sees what is right and does it; given by God to Solomon and on Joshua by the laying on of hands, and in the prophecy rests on the shoot from Jesse.",
+          "cognate_ids": [
+            "ar-hakama"
+          ],
+          "evidence": [
+            {
+              "ref": "1Ki.3.28",
+              "role": "defining",
+              "note": "After the judgment of the two women, “they saw that the wisdom of God was in him to do judgment”."
+            },
+            {
+              "ref": "2Ch.1.10",
+              "role": "defining",
+              "note": "“Give me now wisdom and knowledge, that I may go out and come in before this people, for who can judge this your great people?”"
+            },
+            {
+              "ref": "2Ch.1.11"
+            },
+            {
+              "ref": "2Ch.1.12"
+            },
+            {
+              "ref": "Deu.34.9",
+              "role": "defining",
+              "note": "“Joshua the son of Nun was full of the spirit of wisdom, for Moses had laid his hands on him, and the sons of Israel listened to him.”"
+            },
+            {
+              "ref": "Isa.11.2",
+              "role": "defining",
+              "note": "“The spirit of Yahweh shall rest on him, the spirit of wisdom and understanding”; so that he will judge the poor with righteousness (11:4)."
+            },
+            {
+              "ref": "1Ki.5.9",
+              "note": "“God gave Solomon wisdom and understanding exceedingly much.”"
+            },
+            {
+              "ref": "1Ki.5.10"
+            },
+            {
+              "ref": "1Ki.5.14",
+              "note": "From all peoples they came to hear Solomon's wisdom."
+            },
+            {
+              "ref": "1Ki.10.4"
+            },
+            {
+              "ref": "1Ki.10.7"
+            },
+            {
+              "ref": "1Ki.10.8",
+              "note": "The queen of Sheba: “happy are your servants … who hear your wisdom”."
+            },
+            {
+              "ref": "1Ki.10.24"
+            },
+            {
+              "ref": "Mat.12.42",
+              "note": "“The queen of the south came from the ends of the earth to hear the wisdom of Solomon, and behold, more than Solomon is here.”"
+            },
+            {
+              "ref": "2Sa.14.20",
+              "note": "“My lord is wise, according to the wisdom of a messenger of God, to know all that is in the land.”"
+            },
+            {
+              "ref": "2Sa.20.22",
+              "note": "The wise woman of Abel went to all the people “in her wisdom”, and the city was spared."
+            },
+            {
+              "ref": "Ecc.9.15",
+              "note": "A poor wise man delivered the city by his wisdom, and no one remembered him."
+            },
+            {
+              "ref": "Pro.24.3",
+              "note": "“By wisdom a house is built, and by understanding it is established.”"
+            }
+          ]
+        },
+        {
+          "id": "wisdom-fear-of-yahweh",
+          "gloss": "wisdom: knowing and keeping Yahweh's ways",
+          "definition": "The wisdom of Proverbs, Job and the Psalms: to fear Yahweh, to keep his law and depart from evil. It is given by Yahweh, learned from instruction and rebuke, worth more than gold, and spoken by the mouth of the righteous.",
+          "evidence": [
+            {
+              "ref": "Pro.9.10",
+              "role": "defining",
+              "note": "“The beginning of wisdom is the fear of Yahweh, and the knowledge of the Holy One is understanding.”"
+            },
+            {
+              "ref": "Psa.111.10",
+              "role": "defining",
+              "note": "“The beginning of wisdom is the fear of Yahweh; a good understanding have all who do them.”"
+            },
+            {
+              "ref": "Job.28.28",
+              "role": "defining",
+              "note": "“Behold, the fear of the Lord, that is wisdom, and to depart from evil is understanding.”"
+            },
+            {
+              "ref": "Deu.4.6",
+              "role": "defining",
+              "note": "Of the statutes and judgments: “keep and do them, for that is your wisdom and your understanding in the sight of the peoples”."
+            },
+            {
+              "ref": "Jer.8.9",
+              "role": "defining",
+              "note": "“Behold, they have rejected the word of Yahweh, and what wisdom is in them?”"
+            },
+            {
+              "ref": "Pro.1.7",
+              "note": "“The fear of Yahweh is the beginning of knowledge; fools despise wisdom and instruction.”"
+            },
+            {
+              "ref": "Pro.15.33"
+            },
+            {
+              "ref": "Pro.2.6",
+              "role": "defining",
+              "note": "“Yahweh gives wisdom; from his mouth come knowledge and understanding.”"
+            },
+            {
+              "ref": "Dan.1.17",
+              "note": "“God gave them knowledge and skill in all writing and wisdom.”"
+            },
+            {
+              "ref": "Pro.4.5",
+              "note": "“Acquire wisdom, acquire understanding.”"
+            },
+            {
+              "ref": "Pro.4.7"
+            },
+            {
+              "ref": "Pro.3.13"
+            },
+            {
+              "ref": "Pro.16.16",
+              "note": "“How much better to acquire wisdom than gold.”"
+            },
+            {
+              "ref": "Pro.29.15",
+              "note": "“The rod and rebuke give wisdom.”"
+            },
+            {
+              "ref": "Job.28.12",
+              "note": "“But wisdom, where shall it be found?”, and the answer is 28:28."
+            },
+            {
+              "ref": "Job.28.18"
+            },
+            {
+              "ref": "Job.28.20"
+            },
+            {
+              "ref": "Psa.37.30",
+              "note": "“The mouth of the righteous utters wisdom, and his tongue speaks judgment; the law of his God is in his heart.”"
+            },
+            {
+              "ref": "Psa.51.8"
+            },
+            {
+              "ref": "Psa.90.12",
+              "note": "“Teach us to number our days, that we may bring in a heart of wisdom.”"
+            },
+            {
+              "ref": "Pro.31.26",
+              "note": "The capable woman: “she opens her mouth in wisdom”."
+            },
+            {
+              "ref": "Isa.33.6",
+              "note": "“Wisdom and knowledge will be the stability of your times … the fear of Yahweh is his treasure.”"
+            }
+          ],
+          "senses": [
+            {
+              "id": "wisdom-personified",
+              "gloss": "Wisdom, personified as a woman",
+              "definition": "In Proverbs wisdom is figured as a woman who calls to the simple in the streets and gates, builds her house and spreads her table, and whom the son is to call his sister; Folly is another woman who calls.",
+              "evidence": [
+                {
+                  "ref": "Pro.1.20",
+                  "role": "defining",
+                  "note": "“Wisdom cries aloud in the street; in the squares she gives her voice.”"
+                },
+                {
+                  "ref": "Pro.8.1",
+                  "role": "defining",
+                  "note": "“Does not wisdom call, and understanding give her voice?”"
+                },
+                {
+                  "ref": "Pro.8.11"
+                },
+                {
+                  "ref": "Pro.8.12",
+                  "note": "“I, wisdom, dwell with prudence.”"
+                },
+                {
+                  "ref": "Pro.9.1",
+                  "role": "defining",
+                  "note": "“Wisdom has built her house; she has hewn her seven pillars”, set against the woman Folly of 9:13."
+                },
+                {
+                  "ref": "Pro.7.4",
+                  "note": "“Say to wisdom, You are my sister.”"
+                },
+                {
+                  "ref": "Mat.11.19",
+                  "note": "“Wisdom is justified by her works”: the same figure in the Lord's mouth."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "wisdom-of-yahweh",
+          "gloss": "Yahweh's wisdom in creation",
+          "definition": "The wisdom by which Yahweh founded the earth and stretched out the heavens, and which sees what no man can.",
+          "evidence": [
+            {
+              "ref": "Pro.3.19",
+              "role": "defining",
+              "note": "“Yahweh by wisdom founded the earth; by understanding he established the heavens.”"
+            },
+            {
+              "ref": "Jer.10.12",
+              "role": "defining",
+              "note": "“He made the earth by his power, established the world by his wisdom.”"
+            },
+            {
+              "ref": "Jer.51.15"
+            },
+            {
+              "ref": "Psa.104.24",
+              "note": "“How many are your works, Yahweh! In wisdom you have made them all.”"
+            },
+            {
+              "ref": "Job.38.36"
+            },
+            {
+              "ref": "Job.38.37",
+              "note": "“Who can number the clouds in wisdom?”"
+            },
+            {
+              "ref": "Job.12.13",
+              "note": "“With him are wisdom and might; he has counsel and understanding.”"
+            }
+          ]
+        },
+        {
+          "id": "wisdom-of-the-world",
+          "gloss": "the wisdom of men, that perishes",
+          "definition": "The skill and cleverness of nations and men apart from Yahweh: Assyria's, Tyre's, Edom's, Babylon's; it makes men proud, and Yahweh brings it to nothing. Ecclesiastes weighs it: better than folly and strength, yet it cannot master the work of God.",
+          "evidence": [
+            {
+              "ref": "Isa.29.14",
+              "role": "defining",
+              "note": "“The wisdom of their wise men shall perish, and the understanding of their discerning men shall be hidden”; quoted in 1Co 1:19."
+            },
+            {
+              "ref": "1Co.1.19",
+              "role": "defining",
+              "note": "“I will destroy the wisdom of the wise”, Isa 29:14."
+            },
+            {
+              "ref": "Isa.10.13",
+              "note": "The king of Assyria: “By the strength of my hand I have done it, and by my wisdom, for I am discerning.”"
+            },
+            {
+              "ref": "Isa.47.10",
+              "note": "To Babylon: “your wisdom and your knowledge, it has turned you aside”."
+            },
+            {
+              "ref": "Ezk.28.4",
+              "note": "To the prince of Tyre: “by your wisdom and your understanding you have made wealth for yourself”."
+            },
+            {
+              "ref": "Ezk.28.5"
+            },
+            {
+              "ref": "Ezk.28.7"
+            },
+            {
+              "ref": "Ezk.28.17",
+              "role": "defining",
+              "note": "“Your heart was lifted up because of your beauty; you corrupted your wisdom because of your splendour.”"
+            },
+            {
+              "ref": "Jer.9.22",
+              "role": "defining",
+              "note": "“Let not the wise boast in his wisdom … but let him who boasts boast in this, that he understands and knows me” (9:23); quoted in 1Co 1:31."
+            },
+            {
+              "ref": "Jer.49.7",
+              "note": "“Is wisdom no more in Teman?”"
+            },
+            {
+              "ref": "Ecc.1.18",
+              "note": "“In much wisdom is much vexation.”"
+            },
+            {
+              "ref": "Ecc.1.16"
+            },
+            {
+              "ref": "Ecc.2.13",
+              "note": "“Wisdom excels folly, as light excels darkness.”"
+            },
+            {
+              "ref": "Ecc.7.12"
+            },
+            {
+              "ref": "Ecc.9.16",
+              "note": "“Wisdom is better than might, yet the poor man's wisdom is despised.”"
+            },
+            {
+              "ref": "Ecc.9.18"
+            },
+            {
+              "ref": "Job.12.2",
+              "note": "Job's irony: “No doubt you are the people, and wisdom will die with you.”"
+            },
+            {
+              "ref": "Job.13.5",
+              "note": "“If only you would be silent, and it would be your wisdom.”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "σοφία",
+          "gloss": "wisdom",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "σοφία renders חָכְמָה ×119; Isa.29.14, חָכְמַת → τὴν σοφίαν"
+            },
+            {
+              "ref": "1Co.1.19",
+              "role": "defining",
+              "note": "“I will destroy the wisdom (τὴν σοφίαν) of the wise”, Isa 29:14."
+            },
+            {
+              "ref": "Mat.12.42",
+              "note": "“To hear the wisdom of Solomon”, 1Ki 10."
+            },
+            {
+              "ref": "Act.7.10",
+              "note": "God gave Joseph “favour and wisdom before Pharaoh”, after Gen 41:39."
+            },
+            {
+              "ref": "Jas.1.5",
+              "note": "“If any of you lacks wisdom, let him ask of God, who gives to all generously”, as Pro 2:6."
+            }
+          ]
+        },
+        {
+          "lemma": "τέχνη",
+          "gloss": "craft, skill",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "τέχνη renders חָכְמָה ×2"
+            },
+            {
+              "ref": "Act.17.29",
+              "note": "“Gold or silver or stone engraved by the craft (τέχνης) and device of man”: the craftsman's skill."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "תְּבוּנָה",
+            "note": "“Understanding”: wisdom's constant partner.",
+            "evidence": [
+              {
+                "ref": "Pro.3.19",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.2.2"
+              },
+              {
+                "ref": "Pro.8.1"
+              },
+              {
+                "ref": "Jer.10.12"
+              },
+              {
+                "ref": "Exo.31.3"
+              }
+            ]
+          },
+          {
+            "lemma": "בִּינָה",
+            "note": "“Understanding, discernment”.",
+            "evidence": [
+              {
+                "ref": "Pro.4.5",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.4.7"
+              },
+              {
+                "ref": "Job.28.12"
+              },
+              {
+                "ref": "Job.28.28"
+              },
+              {
+                "ref": "Isa.11.2"
+              }
+            ]
+          },
+          {
+            "lemma": "דַּעַת",
+            "note": "“Knowledge”.",
+            "evidence": [
+              {
+                "ref": "Pro.2.6",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.2.10"
+              },
+              {
+                "ref": "2Ch.1.10"
+              },
+              {
+                "ref": "Ecc.1.16"
+              },
+              {
+                "ref": "Isa.33.6"
+              }
+            ]
+          },
+          {
+            "lemma": "מוּסָר",
+            "note": "“Instruction, discipline”: wisdom is learned by it.",
+            "evidence": [
+              {
+                "ref": "Pro.1.7",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.1.2"
+              },
+              {
+                "ref": "Pro.15.33"
+              },
+              {
+                "ref": "Pro.23.23"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "אִוֶּלֶת",
+            "note": "“Folly”: what fools despise wisdom for.",
+            "evidence": [
+              {
+                "ref": "Pro.1.7",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.14.8"
+              }
+            ]
+          },
+          {
+            "lemma": "סִכְלוּת",
+            "note": "“Folly”, in Ecclesiastes' weighing.",
+            "evidence": [
+              {
+                "ref": "Ecc.2.13",
+                "role": "defining"
+              },
+              {
+                "ref": "Ecc.2.12"
+              },
+              {
+                "ref": "Ecc.1.17"
+              },
+              {
+                "ref": "Ecc.10.1"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "רֵאשִׁית חָכְמָה",
+            "gloss": "the beginning of wisdom",
+            "evidence": [
+              {
+                "ref": "Psa.111.10",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.4.7"
+              }
+            ]
+          },
+          {
+            "phrase": "תְּחִלַּת חָכְמָה",
+            "gloss": "the beginning of wisdom",
+            "evidence": [
+              {
+                "ref": "Pro.9.10",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "phrase": "רוּחַ חָכְמָה",
+            "gloss": "the spirit of wisdom",
+            "evidence": [
+              {
+                "ref": "Exo.28.3",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.34.9"
+              },
+              {
+                "ref": "Isa.11.2"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "חָכָם",
+      "pos": "adjective",
+      "gloss": "wise; skilled",
+      "bdb": [
+        "h.cg.ab"
+      ],
+      "cognate_ids": [
+        "ar-hikma",
+        "uga-hkm"
+      ],
+      "summary": "About 140 times: one who has חָכְמָה in any of its kinds, the skilled worker, the discerning counsellor, the wise man of Proverbs who hears and fears; as a plural noun, the wise men, the sages and counsellors of a court. חֲכַם־לֵב “wise of heart” is used both of the skilled worker and of the one who receives commands.",
+      "senses": [
+        {
+          "id": "skilled",
+          "gloss": "skilled, skilful",
+          "definition": "Skilled in a craft or task: the craftsmen of the tabernacle and temple, the women who spun, the pilots of Tyre's ships, the skilled mourning women.",
+          "cognate_ids": [
+            "ar-hakama"
+          ],
+          "kin": [
+            "skill"
+          ],
+          "evidence": [
+            {
+              "ref": "Exo.35.10",
+              "role": "defining",
+              "note": "“Let every wise of heart among you come and make all that Yahweh has commanded.”"
+            },
+            {
+              "ref": "Exo.35.25",
+              "role": "defining",
+              "note": "“Every woman wise of heart spun with her hands.”"
+            },
+            {
+              "ref": "Exo.36.4",
+              "note": "“All the wise men who were doing all the work of the holy place came.”"
+            },
+            {
+              "ref": "Exo.36.8"
+            },
+            {
+              "ref": "Exo.28.3"
+            },
+            {
+              "ref": "Exo.31.6"
+            },
+            {
+              "ref": "Isa.40.20",
+              "role": "defining",
+              "note": "“He seeks for himself a skilled craftsman to set up an image that will not totter.”"
+            },
+            {
+              "ref": "Jer.10.9",
+              "note": "The idols are “all the work of skilled men”."
+            },
+            {
+              "ref": "1Ch.22.15"
+            },
+            {
+              "ref": "2Ch.2.6",
+              "note": "“Send me a man wise to work in gold and silver.”"
+            },
+            {
+              "ref": "2Ch.2.12"
+            },
+            {
+              "ref": "Ezk.27.8",
+              "note": "Tyre's “wise men were in you, they were your pilots”."
+            },
+            {
+              "ref": "Jer.9.16",
+              "note": "“Call for the mourning women … send for the skilful women.”"
+            },
+            {
+              "ref": "1Co.3.10",
+              "note": "Paul, “as a wise (σοφὸς) master builder, I laid the foundation”: the craftsman's wisdom."
+            }
+          ]
+        },
+        {
+          "id": "wise-discerning",
+          "gloss": "wise, discerning (in counsel and rule)",
+          "definition": "Able to see what should be done and to give counsel or judgment: the man to be set over Egypt, the heads and judges of the tribes, Solomon, the wise woman of Tekoa.",
+          "cognate_ids": [
+            "ar-hakama"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.41.33",
+              "role": "defining",
+              "note": "“Let Pharaoh look for a discerning and wise man, and set him over the land of Egypt.”"
+            },
+            {
+              "ref": "Gen.41.39"
+            },
+            {
+              "ref": "Deu.1.13",
+              "role": "defining",
+              "note": "“Choose for yourselves wise and discerning and known men”, to be heads and judges (1:15–16)."
+            },
+            {
+              "ref": "Deu.1.15"
+            },
+            {
+              "ref": "Deu.16.19",
+              "note": "“A bribe blinds the eyes of the wise.”"
+            },
+            {
+              "ref": "1Ki.3.12",
+              "role": "defining",
+              "note": "“I have given you a wise and discerning heart.”"
+            },
+            {
+              "ref": "1Ki.2.9",
+              "note": "David to Solomon: “you are a wise man, and you will know what you ought to do to him”."
+            },
+            {
+              "ref": "2Sa.14.2"
+            },
+            {
+              "ref": "2Sa.20.16"
+            }
+          ]
+        },
+        {
+          "id": "wise-righteous",
+          "gloss": "wise (who hears and fears Yahweh)",
+          "definition": "The wise man of Proverbs and the Psalms: he hears counsel and rebuke and loves the one who rebukes him, fears and turns from evil, and is not wise in his own eyes; set against the fool and the mocker.",
+          "evidence": [
+            {
+              "ref": "Pro.9.8",
+              "role": "defining",
+              "note": "“Rebuke a wise man and he will love you.”"
+            },
+            {
+              "ref": "Pro.9.9"
+            },
+            {
+              "ref": "Pro.12.15",
+              "role": "defining",
+              "note": "“The way of a fool is right in his own eyes, but he who listens to counsel is wise.”"
+            },
+            {
+              "ref": "Pro.14.16",
+              "role": "defining",
+              "note": "“A wise man fears and turns from evil, but a fool is arrogant and careless.”"
+            },
+            {
+              "ref": "Pro.10.1",
+              "note": "“A wise son makes a glad father.”"
+            },
+            {
+              "ref": "Pro.10.8",
+              "note": "“The wise of heart receives commandments.”"
+            },
+            {
+              "ref": "Pro.13.1"
+            },
+            {
+              "ref": "Pro.13.20",
+              "note": "“Walk with the wise and you will become wise.”"
+            },
+            {
+              "ref": "Pro.15.31"
+            },
+            {
+              "ref": "Pro.3.7",
+              "role": "defining",
+              "note": "“Do not be wise in your own eyes; fear Yahweh and turn from evil.”"
+            },
+            {
+              "ref": "Pro.26.12"
+            },
+            {
+              "ref": "Hos.14.10",
+              "role": "defining",
+              "note": "“Who is wise, that he may understand these things? … for the ways of Yahweh are right, and the righteous walk in them.”"
+            },
+            {
+              "ref": "Psa.107.43"
+            },
+            {
+              "ref": "Ecc.2.14",
+              "note": "“The wise man's eyes are in his head, but the fool walks in darkness.”"
+            },
+            {
+              "ref": "Ecc.7.5"
+            },
+            {
+              "ref": "Mat.7.24",
+              "note": "“I will liken him to a wise man who built his house on the rock”, set against the foolish man (7:26)."
+            }
+          ]
+        },
+        {
+          "id": "wise-men",
+          "gloss": "the wise men, sages",
+          "definition": "As a noun in the plural, the learned counsellors of a king or nation, often beside magicians and astrologers; their counsel is set beside the priest's law and the prophet's word, and fails before Yahweh.",
+          "evidence": [
+            {
+              "ref": "Gen.41.8",
+              "role": "defining",
+              "note": "Pharaoh “called all the magicians of Egypt and all its wise men”, and none could interpret."
+            },
+            {
+              "ref": "Exo.7.11"
+            },
+            {
+              "ref": "Isa.19.11",
+              "role": "defining",
+              "note": "“The wisest counsellors of Pharaoh give stupid counsel.”"
+            },
+            {
+              "ref": "Isa.19.12"
+            },
+            {
+              "ref": "Est.1.13",
+              "note": "“The wise men who knew the times.”"
+            },
+            {
+              "ref": "Est.6.13"
+            },
+            {
+              "ref": "Jer.18.18",
+              "role": "defining",
+              "note": "“The law shall not perish from the priest, nor counsel from the wise, nor the word from the prophet.”"
+            },
+            {
+              "ref": "Jer.50.35"
+            },
+            {
+              "ref": "Jer.51.57"
+            },
+            {
+              "ref": "Isa.44.25",
+              "note": "Yahweh “turns wise men back, and makes their knowledge foolish”."
+            },
+            {
+              "ref": "Oba.1.8"
+            },
+            {
+              "ref": "Isa.29.14"
+            }
+          ]
+        },
+        {
+          "id": "wise-shrewd",
+          "gloss": "shrewd, wise in one's own eyes",
+          "definition": "Clever without the fear of Yahweh: wise to do evil, wise in one's own eyes, crafty.",
+          "evidence": [
+            {
+              "ref": "Jer.4.22",
+              "role": "defining",
+              "note": "“They are wise to do evil, but to do good they do not know.”"
+            },
+            {
+              "ref": "Isa.5.21",
+              "role": "defining",
+              "note": "“Woe to those wise in their own eyes.”"
+            },
+            {
+              "ref": "2Sa.13.3",
+              "note": "Jonadab, “a very wise man”, who counselled Amnon's crime."
+            },
+            {
+              "ref": "Job.5.13",
+              "role": "defining",
+              "note": "“He catches the wise in their own craftiness”; quoted in 1Co 3:19."
+            },
+            {
+              "ref": "1Co.3.19",
+              "note": "“He catches the wise (τοὺς σοφοὺς) in their craftiness”, Job 5:13."
+            },
+            {
+              "ref": "Jer.8.8",
+              "note": "“How do you say, We are wise, and the law of Yahweh is with us?”"
+            },
+            {
+              "ref": "Job.37.24",
+              "note": "“He does not regard any who are wise of heart.”"
+            },
+            {
+              "ref": "Deu.32.6",
+              "note": "“O foolish people and not wise.”"
+            }
+          ]
+        },
+        {
+          "id": "wise-god",
+          "gloss": "wise (of God)",
+          "definition": "Of Yahweh: wise and mighty, whose word stands.",
+          "evidence": [
+            {
+              "ref": "Job.9.4",
+              "role": "defining",
+              "note": "“Wise in heart and mighty in strength: who has hardened himself against him and prospered?”"
+            },
+            {
+              "ref": "Isa.31.2",
+              "role": "defining",
+              "note": "“He also is wise, and will bring evil, and will not call back his words.”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "σοφός",
+          "gloss": "wise; skilled",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "σοφός renders חָכָם ×76; Job.5.13, חֲכָמִים → σοφοὺς; Isa.29.14, חֲכָמָיו → τῶν σοφῶν"
+            },
+            {
+              "ref": "1Co.3.19",
+              "role": "defining",
+              "note": "Job 5:13 quoted."
+            },
+            {
+              "ref": "1Co.1.19",
+              "note": "Isa 29:14 quoted."
+            },
+            {
+              "ref": "1Co.3.10",
+              "note": "“A wise master builder”."
+            }
+          ]
+        },
+        {
+          "lemma": "φρόνιμος",
+          "gloss": "prudent, sensible",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "φρόνιμος renders חָכָם ×3"
+            },
+            {
+              "ref": "Mat.7.24",
+              "note": "The wise man who built on the rock."
+            },
+            {
+              "ref": "Mat.25.2",
+              "note": "The five wise virgins."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "נָבוֹן",
+            "note": "“Discerning”: the fixed pair, wise and discerning.",
+            "evidence": [
+              {
+                "ref": "Gen.41.33",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.41.39"
+              },
+              {
+                "ref": "Deu.1.13"
+              },
+              {
+                "ref": "1Ki.3.12"
+              },
+              {
+                "ref": "Hos.14.10"
+              },
+              {
+                "ref": "Isa.5.21"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "כְּסִיל",
+            "note": "“Fool”: the wise man's constant opposite.",
+            "evidence": [
+              {
+                "ref": "Pro.10.1",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.3.35"
+              },
+              {
+                "ref": "Pro.13.20"
+              },
+              {
+                "ref": "Pro.15.2"
+              },
+              {
+                "ref": "Ecc.2.14"
+              },
+              {
+                "ref": "Ecc.10.2"
+              }
+            ]
+          },
+          {
+            "lemma": "אֱוִיל",
+            "note": "“Fool”.",
+            "evidence": [
+              {
+                "ref": "Pro.12.15",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.10.8"
+              },
+              {
+                "ref": "Pro.14.3"
+              }
+            ]
+          },
+          {
+            "lemma": "לֵץ",
+            "note": "“Mocker”: rebuke a wise man, not a mocker.",
+            "evidence": [
+              {
+                "ref": "Pro.9.8",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.13.1"
+              },
+              {
+                "ref": "Pro.21.11"
+              }
+            ]
+          },
+          {
+            "lemma": "נָבָל",
+            "note": "“Senseless”.",
+            "evidence": [
+              {
+                "ref": "Deu.32.6",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "חֲכַם־לֵב",
+            "gloss": "wise of heart: skilled; wise",
+            "evidence": [
+              {
+                "ref": "Exo.35.10",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.28.3"
+              },
+              {
+                "ref": "Exo.36.1"
+              },
+              {
+                "ref": "Pro.10.8",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.16.21"
+              },
+              {
+                "ref": "Job.9.4"
+              }
+            ]
+          },
+          {
+            "phrase": "חָכָם בְּעֵינָיו",
+            "gloss": "wise in his own eyes",
+            "evidence": [
+              {
+                "ref": "Pro.3.7",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.26.5"
+              },
+              {
+                "ref": "Pro.26.12"
+              },
+              {
+                "ref": "Pro.26.16"
+              },
+              {
+                "ref": "Pro.28.11"
+              },
+              {
+                "ref": "Isa.5.21"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "חָכַם",
+      "pos": "verb",
+      "gloss": "be wise, become wise; make wise",
+      "bdb": [
+        "h.cg.aa"
+      ],
+      "cognate_ids": [
+        "ar-hikma",
+        "uga-hkm",
+        "arc-hkm",
+        "akk-hakamu"
+      ],
+      "summary": "Only 27 times as a verb: the qal is to be or become wise, the piel, pual and hiphil to make wise, and the hithpael to act shrewdly or make oneself wise. The 81 tokens of the brief with no stem are the noun and adjective, filed under this key by spelling.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "be wise; become wise",
+          "senses": [
+            {
+              "id": "be-wise",
+              "gloss": "be wise",
+              "definition": "To have wisdom: to understand what is coming and what is right.",
+              "evidence": [
+                {
+                  "ref": "Deu.32.29",
+                  "role": "defining",
+                  "note": "“If they were wise, they would understand this; they would discern their latter end.”"
+                },
+                {
+                  "ref": "Job.32.9",
+                  "role": "defining",
+                  "note": "“The great are not wise, nor do the aged understand judgment.”"
+                },
+                {
+                  "ref": "1Ki.5.11",
+                  "note": "Solomon “was wiser than all men”."
+                },
+                {
+                  "ref": "Pro.23.15",
+                  "note": "“My son, if your heart is wise, my heart will be glad.”"
+                },
+                {
+                  "ref": "Pro.9.12",
+                  "note": "“If you are wise, you are wise for yourself.”"
+                },
+                {
+                  "ref": "Pro.20.1",
+                  "note": "“Whoever goes astray by it is not wise.”"
+                },
+                {
+                  "ref": "Ecc.2.15"
+                },
+                {
+                  "ref": "Ecc.2.19"
+                },
+                {
+                  "ref": "Ecc.7.23",
+                  "note": "“I said, I will be wise, but it was far from me.”"
+                },
+                {
+                  "ref": "Zec.9.2",
+                  "note": "Tyre and Sidon, “for she is very wise”, as Ezk 28."
+                }
+              ]
+            },
+            {
+              "id": "become-wise",
+              "gloss": "become wise, learn wisdom",
+              "definition": "To grow wise by hearing instruction and counsel, by watching the ant, by walking with the wise, or by seeing the mocker punished.",
+              "evidence": [
+                {
+                  "ref": "Pro.8.33",
+                  "role": "defining",
+                  "note": "“Hear instruction and be wise, and do not neglect it.”"
+                },
+                {
+                  "ref": "Pro.19.20",
+                  "role": "defining",
+                  "note": "“Listen to counsel and receive instruction, that you may be wise in your latter end.”"
+                },
+                {
+                  "ref": "Pro.6.6",
+                  "note": "“Go to the ant, you sluggard; consider her ways and be wise.”"
+                },
+                {
+                  "ref": "Pro.13.20",
+                  "note": "“Walk with the wise and become wise.”"
+                },
+                {
+                  "ref": "Pro.21.11",
+                  "role": "defining",
+                  "note": "“When the mocker is punished, the simple becomes wise.”"
+                },
+                {
+                  "ref": "Pro.9.9"
+                },
+                {
+                  "ref": "Pro.23.19"
+                },
+                {
+                  "ref": "Pro.27.11"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "make wise, teach wisdom",
+          "senses": [
+            {
+              "id": "make-wise",
+              "gloss": "make wise, teach wisdom",
+              "definition": "To give wisdom to another: Joseph to Pharaoh's elders, Yahweh's commandment to the psalmist, God to man above the beasts.",
+              "evidence": [
+                {
+                  "ref": "Psa.105.22",
+                  "role": "defining",
+                  "note": "Joseph was set “to bind his princes at his pleasure and to teach his elders wisdom”."
+                },
+                {
+                  "ref": "Psa.119.98",
+                  "role": "defining",
+                  "note": "“Your commandment makes me wiser than my enemies.”"
+                },
+                {
+                  "ref": "Job.35.11"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be made wise; skilled",
+          "senses": [
+            {
+              "id": "made-wise-skilled",
+              "gloss": "made wise, skilled",
+              "definition": "The participle: skilled, of a charmer; made wise, of four small creatures.",
+              "evidence": [
+                {
+                  "ref": "Pro.30.24",
+                  "role": "defining",
+                  "note": "“Four things are small on the earth, but they are exceedingly wise (חֲכָמִים מְחֻכָּמִים)”: the ants, conies, locusts and lizard."
+                },
+                {
+                  "ref": "Psa.58.6",
+                  "note": "“The voice of charmers, of one skilled in charms.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "make wise",
+          "senses": [
+            {
+              "id": "make-wise-hiphil",
+              "gloss": "make wise",
+              "definition": "Of Yahweh's testimony: it makes the simple wise.",
+              "evidence": [
+                {
+                  "ref": "Psa.19.8",
+                  "role": "defining",
+                  "note": "“The testimony of Yahweh is sure, making wise the simple.”"
+                },
+                {
+                  "ref": "2Ti.3.15",
+                  "note": "“The holy writings, which are able to make you wise (σοφίσαι) unto salvation.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpael",
+          "gloss": "act shrewdly; make oneself wise",
+          "senses": [
+            {
+              "id": "deal-shrewdly-make-oneself",
+              "gloss": "deal shrewdly; make oneself (too) wise",
+              "definition": "To use cleverness against someone, as Pharaoh against Israel; to make oneself overly wise.",
+              "evidence": [
+                {
+                  "ref": "Exo.1.10",
+                  "role": "defining",
+                  "note": "“Come, let us deal shrewdly with him, lest he multiply”; Stephen says Pharaoh “dealt craftily (κατασοφισάμενος) with our race” (Act 7:19)."
+                },
+                {
+                  "ref": "Act.7.19"
+                },
+                {
+                  "ref": "Ecc.7.16",
+                  "role": "defining",
+                  "note": "“Do not be overly righteous, and do not make yourself overly wise.”"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "σοφίζω",
+          "gloss": "make wise",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.19.8, מַחְכִּימַת → σοφίζουσα"
+            },
+            {
+              "ref": "2Ti.3.15",
+              "role": "defining",
+              "note": "The writings “able to make you wise (σοφίσαι) unto salvation”, as Psa 19:8."
+            }
+          ]
+        },
+        {
+          "lemma": "κατασοφίζομαι",
+          "gloss": "deal craftily with",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Exo.1.10, נִתְחַכְּמָה → κατασοφισώμεθα"
+            },
+            {
+              "ref": "Act.7.19",
+              "role": "defining",
+              "note": "Stephen's account of Exo 1:10."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חַכִּים",
+      "lang": "arc",
+      "root": "חכימ",
+      "pos": "noun",
+      "gloss": "wise man",
+      "bdb": [
+        "xh.ai.aa"
+      ],
+      "cognate_ids": [
+        "ar-hikma",
+        "arc-hkm"
+      ],
+      "summary": "Biblical Aramaic, fourteen times in Daniel: the wise men of Babylon, whom Daniel was set over.",
+      "senses": [
+        {
+          "id": "wise-man-sage",
+          "gloss": "wise man, sage",
+          "definition": "A member of the class of Babylon's learned counsellors, listed with enchanters, magicians and diviners; once, the wise to whom God gives wisdom.",
+          "kin": [
+            "wise-men"
+          ],
+          "evidence": [
+            {
+              "ref": "Dan.2.27",
+              "role": "defining",
+              "note": "“Wise men, enchanters, magicians, diviners cannot show the king the mystery.”"
+            },
+            {
+              "ref": "Dan.2.12"
+            },
+            {
+              "ref": "Dan.2.13"
+            },
+            {
+              "ref": "Dan.2.18"
+            },
+            {
+              "ref": "Dan.2.24"
+            },
+            {
+              "ref": "Dan.2.48",
+              "note": "Daniel made “chief of the prefects over all the wise men of Babylon”."
+            },
+            {
+              "ref": "Dan.4.3"
+            },
+            {
+              "ref": "Dan.4.15"
+            },
+            {
+              "ref": "Dan.5.7"
+            },
+            {
+              "ref": "Dan.5.8"
+            },
+            {
+              "ref": "Dan.5.15"
+            },
+            {
+              "ref": "Dan.2.21",
+              "role": "defining",
+              "note": "“He gives wisdom to the wise, and knowledge to those who know understanding.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חׇכְמָה",
+      "lang": "arc",
+      "root": "חכמה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "wisdom",
+      "bdb": [
+        "xh.ai.ab"
+      ],
+      "cognate_ids": [
+        "ar-hikma",
+        "arc-hkm"
+      ],
+      "summary": "Biblical Aramaic, eight times in Daniel and Ezra: wisdom that belongs to God and is given by him, and in Ezra the law of God in Ezra's hand.",
+      "senses": [
+        {
+          "id": "wisdom",
+          "gloss": "wisdom",
+          "definition": "Wisdom that is God's and that he gives; in Daniel the wisdom “like the wisdom of the gods” found in Daniel; in Ezra the law by which judges are appointed.",
+          "kin": [
+            "wisdom-fear-of-yahweh",
+            "wisdom-to-judge"
+          ],
+          "evidence": [
+            {
+              "ref": "Dan.2.20",
+              "role": "defining",
+              "note": "“Blessed be the name of God for ever and ever, for wisdom and might are his.”"
+            },
+            {
+              "ref": "Dan.2.21",
+              "role": "defining",
+              "note": "“He gives wisdom to the wise.”"
+            },
+            {
+              "ref": "Dan.2.23",
+              "note": "“You have given me wisdom and might.”"
+            },
+            {
+              "ref": "Dan.2.30",
+              "note": "“Not by any wisdom that is in me more than in any living has this mystery been revealed to me.”"
+            },
+            {
+              "ref": "Dan.5.11"
+            },
+            {
+              "ref": "Dan.5.14"
+            },
+            {
+              "ref": "Ezr.7.25",
+              "role": "defining",
+              "note": "“According to the wisdom of your God that is in your hand, appoint magistrates and judges … all who know the laws of your God”: the wisdom is the law."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חכִּימָא",
+      "lang": "syc",
+      "pos": "adjective",
+      "gloss": "wise, prudent",
+      "cognate_ids": [
+        "ar-hikma",
+        "arc-hkm"
+      ],
+      "summary": "The Peshitta's ܚܟܝܡܐ (ḥakkīmā), where the Greek has σοφός and φρόνιμος: the wise man and the wise virgins, the wise of this world, the wise master builder.",
+      "senses": [
+        {
+          "id": "wise-prudent",
+          "gloss": "wise, prudent",
+          "definition": "Wise in the sense of the Hebrew חָכָם: the one who hears and does, and the wise of the world, whom God puts to shame.",
+          "kin": [
+            "wise-righteous",
+            "wise-shrewd",
+            "skilled"
+          ],
+          "evidence": [
+            {
+              "ref": "Mat.7.24",
+              "role": "defining",
+              "note": "“Whoever hears these words of mine and does them, I will liken him to a wise man.”"
+            },
+            {
+              "ref": "Mat.25.2",
+              "role": "defining",
+              "note": "“Five of them were wise and five foolish.”"
+            },
+            {
+              "ref": "Mat.25.4"
+            },
+            {
+              "ref": "Mat.24.45",
+              "note": "“The faithful and wise servant.”"
+            },
+            {
+              "ref": "Mat.10.16",
+              "note": "“Wise as serpents and harmless as doves.”"
+            },
+            {
+              "ref": "Mat.11.25",
+              "role": "defining",
+              "note": "“You have hidden these things from the wise and understanding and revealed them to babes.”"
+            },
+            {
+              "ref": "1Co.1.19",
+              "note": "Isa 29:14 quoted."
+            },
+            {
+              "ref": "1Co.1.20"
+            },
+            {
+              "ref": "1Co.1.27",
+              "note": "“God chose the foolish things of the world to put the wise to shame.”"
+            },
+            {
+              "ref": "1Co.3.10",
+              "note": "“As a wise master builder.”"
+            },
+            {
+              "ref": "1Co.3.18"
+            },
+            {
+              "ref": "1Co.3.19",
+              "note": "Job 5:13 quoted."
+            },
+            {
+              "ref": "Rom.16.19",
+              "note": "“Wise toward the good, and simple toward evil.”"
+            },
+            {
+              "ref": "Jas.3.13"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חֶכמְתָא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "wisdom",
+      "cognate_ids": [
+        "ar-hikma",
+        "arc-hkm"
+      ],
+      "summary": "The Peshitta's ܚܟܡܬܐ (ḥekmtā), where the Greek has σοφία, about fifty times: the wisdom of Solomon, the child Jesus growing in wisdom, Christ the wisdom of God.",
+      "senses": [
+        {
+          "id": "wisdom-2",
+          "gloss": "wisdom",
+          "definition": "Wisdom as the Hebrew חָכְמָה: given by God, asked of him, grown in; the wisdom of the world set against the wisdom of God.",
+          "kin": [
+            "wisdom-fear-of-yahweh",
+            "wisdom-of-the-world",
+            "wisdom-to-judge"
+          ],
+          "evidence": [
+            {
+              "ref": "Luk.2.40",
+              "role": "defining",
+              "note": "“The child grew and became strong in spirit, being filled with wisdom.”"
+            },
+            {
+              "ref": "Luk.2.52",
+              "role": "defining",
+              "note": "“Jesus increased in wisdom and stature, and in favour with God and men.”"
+            },
+            {
+              "ref": "Mat.12.42",
+              "note": "“The wisdom of Solomon.”"
+            },
+            {
+              "ref": "Act.6.3",
+              "note": "“Men full of the spirit and wisdom.”"
+            },
+            {
+              "ref": "Act.6.10"
+            },
+            {
+              "ref": "Act.7.10"
+            },
+            {
+              "ref": "Act.7.22",
+              "note": "Moses was taught “all the wisdom of the Egyptians”."
+            },
+            {
+              "ref": "1Co.1.19"
+            },
+            {
+              "ref": "1Co.1.21"
+            },
+            {
+              "ref": "1Co.1.24",
+              "role": "defining",
+              "note": "“Christ the power of God and the wisdom of God.”"
+            },
+            {
+              "ref": "1Co.1.30",
+              "note": "“Who became to us wisdom from God.”"
+            },
+            {
+              "ref": "Col.2.3"
+            },
+            {
+              "ref": "Jas.1.5",
+              "role": "defining",
+              "note": "“If any of you lacks wisdom, let him ask of God.”"
+            },
+            {
+              "ref": "Jas.3.17",
+              "note": "“The wisdom from above is first pure.”"
+            },
+            {
+              "ref": "Mat.11.19"
+            },
+            {
+              "ref": "Luk.11.49",
+              "note": "“Therefore also the wisdom of God said, I will send them prophets and apostles.”"
+            },
+            {
+              "ref": "Rev.5.12"
+            },
+            {
+              "ref": "Rev.13.18",
+              "note": "“Here is wisdom.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חכַם",
+      "lang": "syc",
+      "pos": "verb",
+      "gloss": "know; make wise",
+      "cognate_ids": [
+        "arc-hkm"
+      ],
+      "summary": "The Peshitta's verb ܚܟܡ (ḥkam): in the peal “know”, including of a man knowing a woman, as Jewish Aramaic חֲכַם “recognize, know”; in the pael “make wise”, as the Hebrew piel and hiphil.",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "know",
+          "senses": [
+            {
+              "id": "know-know-a-woman",
+              "gloss": "know; know (a woman)",
+              "definition": "To know a person or a fact; of a man and a woman, to lie with.",
+              "evidence": [
+                {
+                  "ref": "Mat.1.25",
+                  "role": "defining",
+                  "note": "Joseph “did not know her until she brought forth her son”."
+                },
+                {
+                  "ref": "Luk.1.34",
+                  "role": "defining",
+                  "note": "Mary: “How will this be, since I do not know a man?”"
+                },
+                {
+                  "ref": "Jhn.21.17",
+                  "note": "Peter: “You know all things; you know that I love you.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pael",
+          "gloss": "make wise",
+          "senses": [
+            {
+              "id": "make-wise-2",
+              "gloss": "make wise",
+              "definition": "To give wisdom, as the holy writings do.",
+              "kin": [
+                "make-wise",
+                "make-wise-hiphil"
+              ],
+              "evidence": [
+                {
+                  "ref": "2Ti.3.15",
+                  "role": "defining",
+                  "note": "“The holy writings, which are able to make you wise unto salvation through faith in Christ Jesus”, as Psa 19:8."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-hikma",
+      "lang": "ar",
+      "form": "حِكْمَةٌ، حَكِيمٌ",
+      "translit": "ḥikma, ḥakīm",
+      "gloss": "wisdom, knowledge; wise, one who does a work firmly and skilfully",
+      "relation": "cognate",
+      "note": "The Hebrew's noun and adjective in their own shapes, with the same range: knowledge and wise action, and (ḥakīm) the one who executes the niceties of an art well, as the Hebrew's skilled workman. Arabic shows ḥ behind ח.",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 617, art. حكم, حِكْمَةٌ (n8716)",
+          "note": "“What prevents, or restrains, from ignorant behaviour … it means knowledge; or science … knowledge of the true natures of things, and action according to the requirements thereof.”"
+        },
+        {
+          "source": "lane",
+          "locator": "Book I, p. 618, art. حكم, حَكِيمٌ (n8718)",
+          "note": "“Possessing knowledge or science; possessing حِكْمَة … one who performs, or executes, affairs firmly, solidly, soundly, thoroughly, skilfully … one who executes well … the niceties of arts.”"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000111 ḥkmt [wisdom] N, ARB006102; SEM000112 ḥkm [wise] V"
+        }
+      ]
+    },
+    {
+      "id": "ar-hakama",
+      "lang": "ar",
+      "form": "حَكَمَ، حُكْمٌ، أَحْكَمَ",
+      "translit": "ḥakama, ḥukm, aḥkama",
+      "gloss": "restrain (from wrongdoing); judge, give judgment; (IV) make firm, do skilfully",
+      "relation": "cognate",
+      "note": "The verb of the same root: to hold back from wrong, and so to judge; its fourth form is to make a thing firm and sound by skill. These are the two sides of Hebrew חָכְמָה that are not book-learning: the wisdom to judge (1Ki 3:28) and the craftsman's skill.",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 616, art. حكم, حَكَمَهُ (n8708)",
+          "note": "“He prevented, restrained, or withheld, him from acting in an evil, or a corrupt, manner.”"
+        },
+        {
+          "source": "lane",
+          "locator": "Book I, p. 617, art. حكم, حُكْمٌ (n8714)",
+          "note": "“Originally signifies Prevention, or restraint. And hence, Judgment, or judicial decision.”"
+        },
+        {
+          "source": "lane",
+          "locator": "Book I, p. 616, art. حكم, أَحْكَمَ",
+          "note": "“He made it … firm, stable, strong, solid, compact, sound, or free from defect.”"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000112 ḥkm [wise] V, ARB006096 Hakama [judged]"
+        }
+      ]
+    },
+    {
+      "id": "uga-hkm",
+      "lang": "uga",
+      "form": "𐎈𐎋𐎎، 𐎈𐎋𐎎𐎚",
+      "translit": "ḥkm, ḥkmt",
+      "gloss": "be wise, wise; wisdom",
+      "relation": "cognate",
+      "note": "Ugaritic keeps ḥ and ḫ apart and writes ḥ.",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "evidence": [
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000112, UGC001833 ḥkm [be] V; SEM000111, UGC001835 ḥkmt [wisdom] N"
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Ugaritic 𐎈𐎋𐎎, 𐎈𐎋𐎎𐎚",
+          "note": "“wise”; “wisdom”."
+        }
+      ]
+    },
+    {
+      "id": "phn-hkmt",
+      "lang": "phn",
+      "form": "חכמת",
+      "translit": "ḥkmt",
+      "gloss": "wisdom, intelligence",
+      "relation": "cognate",
+      "note": "The Karatepe inscription: the king was adopted as father by every king “because of my righteousness and my wisdom and the goodness of my heart”: the wisdom of a ruler, as Solomon's.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 183, ḤKMT",
+          "note": "“[Heb. ḥokma] n.f. WISDOM, INTELLIGENCE”, citing KAI 26 A I 12/13 (Ph) wbḥkmty."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000111, PUN000664 ḥkmt [wisdom] N"
+        }
+      ]
+    },
+    {
+      "id": "arc-hkm",
+      "lang": "arc",
+      "form": "חֲכַם، חַכִּים",
+      "translit": "ḥăkam, ḥakkīm",
+      "gloss": "be wise, shrewd, learned; recognize, know; wise, sage",
+      "relation": "cognate",
+      "note": "Jewish Aramaic of the Targums and Talmud: the Targum of 1Ki 5:11 uses the verb for Solomon being wiser than all men, and חַכִּים for the “wise heart” of 1Ki 3:12. Its second sense, “recognize, know”, is the Peshitta's peal.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. חֲכַם",
+          "note": "“1) to be wise, shrewd; to be learned. Targ. I Kings V, 11 … 2) to recognize, to know, remember.”"
+        },
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. חַכִּים II",
+          "note": "“wise; sage, scholar. Targ. I Kings III, 12.”"
+        },
+        {
+          "source": "sedra",
+          "locator": "root 623 KCM; lexemes 1027 KC;MA (wise, prudent), 1029 KCM (know; give wisdom), 1030 KCMTA (wisdom)"
+        }
+      ]
+    },
+    {
+      "id": "akk-hakamu",
+      "lang": "akk",
+      "form": "ḫakāmu",
+      "translit": "ḫakāmu",
+      "gloss": "understand; (Š) inform, instruct",
+      "relation": "loan",
+      "note": "Found only in Neo-Assyrian and Neo-Babylonian, when Aramaic was spoken across the empire, with ḫ where the other languages have ḥ: Akkadian had lost ḥ, and ḫ is how it wrote the sound in a borrowed word. A loan from Aramaic, not a witness to the older sound.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000042960, hakāmu [understand] V",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000042960.html",
+          "note": "“be understood; explain; inform; instruct; understand”; Neo-Assyrian, Neo-Babylonian."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "fear-of-yahweh-beginning-of-wisdom",
+      "statement": "Scripture defines wisdom by its object: “the beginning of wisdom is the fear of Yahweh” (Psa 111:10; Pro 9:10), and “the fear of the Lord, that is wisdom, and to depart from evil is understanding” (Job 28:28). Moses told Israel that keeping Yahweh's statutes “is your wisdom and your understanding in the sight of the peoples” (Deu 4:6), and Jeremiah asked of those who rejected the word of Yahweh, “what wisdom is in them?” (Jer 8:9). The wisdom comes from Yahweh's mouth (Pro 2:6), and his testimony and commandment make the simple wise (Psa 19:8; 119:98), as Paul told Timothy that the holy writings “are able to make you wise unto salvation” (2Ti 3:15). Whoever lacks it is to ask God for it (Jas 1:5). From the verses: wisdom is not native cleverness but the knowledge of God's word and the fear of him that keeps it.",
+      "evidence": [
+        {
+          "ref": "Psa.111.10"
+        },
+        {
+          "ref": "Pro.9.10"
+        },
+        {
+          "ref": "Job.28.28"
+        },
+        {
+          "ref": "Deu.4.6"
+        },
+        {
+          "ref": "Jer.8.9"
+        },
+        {
+          "ref": "Pro.2.6"
+        },
+        {
+          "ref": "Psa.19.8"
+        },
+        {
+          "ref": "Psa.119.98"
+        },
+        {
+          "ref": "2Ti.3.15"
+        },
+        {
+          "ref": "Jas.1.5"
+        }
+      ]
+    },
+    {
+      "topic": "wisdom-personified",
+      "statement": "In Proverbs wisdom is a woman: she cries in the streets (Pro 1:20; 8:1–3), builds her house and spreads her table (Pro 9:1–5), and is set against another woman, Folly, who also calls to the simple (Pro 9:13–16); the son is told to say to wisdom, “You are my sister” (Pro 7:4). Wisdom also says, “I, wisdom, dwell with prudence” and “I am understanding” (Pro 8:12, 14), and the speech in which “Yahweh possessed me at the beginning of his way” (Pro 8:22) is hers in the same figure. Elsewhere the same wisdom is the attribute by which “Yahweh by wisdom founded the earth” (Pro 3:19). The Lord used the figure in the same way: “wisdom is justified by her works” (Mat 11:19). The New Testament does not call Jesus a pre-existent Wisdom: he “increased in wisdom” as a child grows (Luk 2:40, 52), and “became to us wisdom from God” (1Co 1:30), the wisdom of God's purpose made known in the crucified Christ (1Co 1:24), in whom its treasures are hidden (Col 2:3). From the verses: Wisdom in Proverbs is a personification of God's own wisdom, as Folly is of folly, not a person beside him; that wisdom was embodied in the son born in time, who grew in it.",
+      "evidence": [
+        {
+          "ref": "Pro.1.20"
+        },
+        {
+          "ref": "Pro.8.1",
+          "to": "Pro.8.3"
+        },
+        {
+          "ref": "Pro.9.1",
+          "to": "Pro.9.5"
+        },
+        {
+          "ref": "Pro.9.13",
+          "to": "Pro.9.16"
+        },
+        {
+          "ref": "Pro.7.4"
+        },
+        {
+          "ref": "Pro.8.12"
+        },
+        {
+          "ref": "Pro.8.14"
+        },
+        {
+          "ref": "Pro.8.22"
+        },
+        {
+          "ref": "Pro.3.19"
+        },
+        {
+          "ref": "Mat.11.19"
+        },
+        {
+          "ref": "Luk.2.40"
+        },
+        {
+          "ref": "Luk.2.52"
+        },
+        {
+          "ref": "1Co.1.24"
+        },
+        {
+          "ref": "1Co.1.30"
+        },
+        {
+          "ref": "Col.2.3"
+        }
+      ]
+    },
+    {
+      "topic": "spirit-of-wisdom",
+      "statement": "Wisdom of every kind is said to be given by God's spirit: the craftsmen's skill (“whom I have filled with the spirit of wisdom”, Exo 28:3; Bezalel “filled with the spirit of God, in wisdom”, Exo 31:3), Joshua's fitness to lead (“full of the spirit of wisdom, for Moses had laid his hands on him”, Deu 34:9), and the judging of the king from Jesse's root (“the spirit of wisdom and understanding” resting on him, Isa 11:2). The apostles chose seven men “full of the spirit and wisdom”, and Stephen's opponents “could not withstand the wisdom and the spirit by which he spoke” (Act 6:3, 10). From the verses: the spirit of God is his power at work in men, and wisdom, of hand, of rule and of speech, is one of its gifts.",
+      "evidence": [
+        {
+          "ref": "Exo.28.3"
+        },
+        {
+          "ref": "Exo.31.3"
+        },
+        {
+          "ref": "Deu.34.9"
+        },
+        {
+          "ref": "Isa.11.2"
+        },
+        {
+          "ref": "Act.6.3"
+        },
+        {
+          "ref": "Act.6.10"
+        }
+      ]
+    },
+    {
+      "topic": "wisdom-of-the-world",
+      "statement": "Yahweh said of a people who honoured him with their lips, “the wisdom of their wise men shall perish” (Isa 29:14), and he “turns wise men back, and makes their knowledge foolish” (Isa 44:25); the wisdom of Babylon turned her aside (Isa 47:10), and the prince of Tyre corrupted his wisdom by his splendour (Ezk 28:17). “Let not the wise boast in his wisdom … but let him who boasts boast in this, that he understands and knows me” (Jer 9:22–23). Paul quotes these verses, with Job 5:13, “he catches the wise in their craftiness”, to say that God made foolish the wisdom of the world and saved those who believe by the preaching of the cross (1Co 1:19–21, 31; 3:19). From the verses: the wisdom that does not know Yahweh is brought to nothing, and the believer's only boast is to know him.",
+      "evidence": [
+        {
+          "ref": "Isa.29.14"
+        },
+        {
+          "ref": "Isa.44.25"
+        },
+        {
+          "ref": "Isa.47.10"
+        },
+        {
+          "ref": "Ezk.28.17"
+        },
+        {
+          "ref": "Jer.9.22",
+          "to": "Jer.9.23"
+        },
+        {
+          "ref": "Job.5.13"
+        },
+        {
+          "ref": "1Co.1.19",
+          "to": "1Co.1.21"
+        },
+        {
+          "ref": "1Co.1.31"
+        },
+        {
+          "ref": "1Co.3.19"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-18. Keys: h.cg.aa (verb), h.cg.ab (adjective), h.cg.ac (noun); BDB files the noun and adjective's tokens under the verb's key too by spelling (81 no-stem tokens of h.cg.aa), and xh.ai.ab (Aramaic חָכְמָה) also counts seven Hebrew tokens (2Sa 14:20; Pro 10:23; 31:26; Job 4:21; Ecc 9:10; Dan 1:17; 2Ch 9:22), so lexicon-support's use counts overlap. Proper name: חַכְמוֹנִי Hachmoni (h.cg.ad) has its own entry, names/hachmoni.json. Left out: the gentilic תַּחְכְּמֹנִי Tahchemonite (h.cg.ae, 2Sa 23:8; w.am.ae is a zero-token cross-reference), a group in TIPNR (Hachmonites@2Sa.23.8), not a person; 1Ch 11:11 בֶּן־חַכְמוֹנִי is the same designation. Arabic: two cognates are entered from the one root حكم so that the skill and judging senses can name ḥakama/aḥkama separately from ḥikma; Lane's derivation of ḥikma from ḥakama “curb” is the Arabic grammarians' and is not taken over. Akkadian ḫakāmu is entered as a loan from Aramaic on the evidence of its periods and its ḫ; CAD Ḫ not consulted to confirm. Ugaritic cited from Anderson–Moser and Wiktionary only: Segert's scan is not downloaded and Fisher has no entry; DULAT not consulted (KTU 1.4 IV 41, El's wisdom, is the usual citation). Ge'ez not checked (Dillmann, Leslau). Syriac: the Peshitta's three lexemes are entered as words; Rom 16:27 (SEDRA's 45.16.26) not cited because of the verse-number difference. Greek: φρόνιμος renders חָכָם only three times; kept for Mat 7:24 and 25. Open questions: (1) whether the Peshitta's peal “know” is the same root's development or a separate word (Jewish Aramaic has both); (2) Ecc 7:16's hithpael “make yourself overly wise” is read as a warning against pretended wisdom; (3) the doctrine wisdom-personified reads Pro 8:22–31 as personification throughout; check the reviewer's wording."
+}

@@ -1,0 +1,143 @@
+{
+  "id": "dwh",
+  "root": "דוה",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "gloss": "be sick, languish",
+  "summary": "דוה describes sickness and languishing weakness.",
+  "words": [
+    {
+      "lemma": "דְּוַי",
+      "pos": "noun",
+      "gloss": "sickness, languishing",
+      "bdb": [
+        "d.at.ab"
+      ],
+      "senses": [
+        {
+          "id": "sickness",
+          "gloss": "sickness",
+          "definition": "A state of sickness and languishing.",
+          "evidence": [
+            {
+              "ref": "Psa.41.4",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "דָּוֶה",
+      "pos": "adjective",
+      "gloss": "faint, unwell",
+      "bdb": [
+        "d.at.ac"
+      ],
+      "senses": [
+        {
+          "id": "faint",
+          "gloss": "faint",
+          "definition": "Suffering persistent weakness and distress.",
+          "evidence": [
+            {
+              "ref": "Lam.1.13",
+              "role": "defining"
+            }
+          ]
+        },
+        {
+          "id": "menstruating",
+          "gloss": "menstruating",
+          "definition": "A woman experiencing her menstrual flow.",
+          "evidence": [
+            {
+              "ref": "Lev.15.33",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַדְוֶה",
+      "pos": "noun",
+      "gloss": "sickness",
+      "bdb": [
+        "d.at.ad"
+      ],
+      "senses": [
+        {
+          "id": "sickness-2",
+          "gloss": "sickness",
+          "definition": "A sickness or affliction.",
+          "evidence": [
+            {
+              "ref": "Deu.7.15",
+              "role": "defining"
+            },
+            {
+              "ref": "Deu.28.60",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "דַּוָּי",
+      "pos": "adjective",
+      "gloss": "faint",
+      "bdb": [
+        "d.at.ae"
+      ],
+      "senses": [
+        {
+          "id": "faint-2",
+          "gloss": "faint",
+          "definition": "In a faint or weakened state.",
+          "evidence": [
+            {
+              "ref": "Lam.1.22",
+              "role": "defining"
+            },
+            {
+              "ref": "Isa.1.5",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "דָּוָה",
+      "pos": "verb",
+      "gloss": "menstruate",
+      "bdb": [
+        "d.at.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "menstruate",
+          "senses": [
+            {
+              "id": "menstruate",
+              "gloss": "menstruate",
+              "definition": "The infinitive describes the bleeding used to compare periods of ritual uncleanness.",
+              "evidence": [
+                {
+                  "ref": "Lev.12.2",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "Psalm 41 describes a sickbed. Leviticus uses related forms for menstrual bleeding. The similarly indexed word for ink in Jeremiah 36:18 has no established connection with illness.",
+  "created": "2026-11-19"
+}

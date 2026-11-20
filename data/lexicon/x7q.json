@@ -1,0 +1,181 @@
+{
+  "id": "x7q",
+  "root": "שחק",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "sky",
+    "dust",
+    "movement"
+  ],
+  "gloss": "grind fine, dust, clouds",
+  "summary": "David uses the plural for the clouds surrounding Yahweh and the verb for reducing his enemies to dust later in the same song.",
+  "words": [
+    {
+      "lemma": "שָׁחַק",
+      "bdb": [
+        "v.cn.aa"
+      ],
+      "pos": "verb",
+      "gloss": "grind, wear away",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "grind fine or wear down",
+          "senses": [
+            {
+              "id": "grind-fine-or-wear",
+              "gloss": "grind fine or wear down",
+              "definition": "Incense is ground to powder for the sanctuary. David describes beating down his enemies until they resemble windblown dust. Job sees water wearing away stones.",
+              "evidence": [
+                {
+                  "ref": "Exo.30.36",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.18.43"
+                },
+                {
+                  "ref": "2Sa.22.43"
+                },
+                {
+                  "ref": "Job.14.19"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-shehaq"
+      ]
+    },
+    {
+      "lemma": "שַׁחַק",
+      "bdb": [
+        "v.cn.ab"
+      ],
+      "pos": "noun",
+      "gloss": "fine dust, clouds, skies",
+      "senses": [
+        {
+          "id": "fine-dust",
+          "gloss": "fine dust",
+          "definition": "Isaiah compares the nations on a balance to a trace of fine dust.",
+          "evidence": [
+            {
+              "ref": "Isa.40.15",
+              "role": "defining"
+            }
+          ]
+        },
+        {
+          "id": "clouds-or-skies",
+          "gloss": "clouds or skies",
+          "definition": "Clouds gathering around Yahweh form his shelter in David’s song. The skies pour out water in a psalm recalling his passage through the sea.",
+          "evidence": [
+            {
+              "ref": "Psa.18.12",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.77.18"
+            },
+            {
+              "ref": "Deu.33.26"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "arc-clouds"
+      ]
+    },
+    {
+      "lemma": "שחק",
+      "pos": "verb",
+      "gloss": "batter, wear down",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "batter",
+          "senses": [
+            {
+              "id": "batter",
+              "gloss": "batter",
+              "definition": "A father describes his son being violently shaken and left battered.",
+              "evidence": [
+                {
+                  "ref": "Luk.9.39",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "syc"
+    },
+    {
+      "lemma": "שַׁחְקָא",
+      "pos": "noun",
+      "gloss": "harassment, continual friction",
+      "senses": [
+        {
+          "id": "harassment-continual-friction",
+          "gloss": "harassment, continual friction",
+          "definition": "The letter describes friction among people consumed by disputes.",
+          "evidence": [
+            {
+              "ref": "1Ti.6.5",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "lang": "syc"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-shehaq",
+      "lang": "arc",
+      "form": "שְׁחַק",
+      "translit": "šəḥaq",
+      "gloss": "grind, pulverize",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "שְׁחַק, Targum Onkelos Exodus 30:36 and Jerusalem Shabbat 7:2 on grinding garlic"
+        }
+      ],
+      "sounds": {
+        "ש": "š",
+        "ח": "ḥ"
+      }
+    },
+    {
+      "id": "arc-clouds",
+      "lang": "arc",
+      "form": "שַׁחַק",
+      "translit": "šaḥaq",
+      "gloss": "cloud, sky",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "שַׁחַק, Targum Psalms 89:7 and 89:38"
+        }
+      ],
+      "sounds": {
+        "ש": "š",
+        "ח": "ḥ"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "Isaiah’s balance illustrates the fine dust sense directly. The clouds sense predominates in the plural. The Peshitta uses its related verb and noun for severe wear or friction (SEDRA 3169–3170)."
+}

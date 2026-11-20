@@ -1,0 +1,93 @@
+{
+  "id": "k2h",
+  "root": "כאה",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "suffering",
+    "courage"
+  ],
+  "gloss": "dishearten, cowed",
+  "summary": "The verb describes the loss of courage under pressure and the harm done by discouraging others. The adjective in one reading of Psalm 10 describes the victims of the oppressor.",
+  "words": [
+    {
+      "lemma": "כָּאָה",
+      "bdb": [
+        "k.ad.aa"
+      ],
+      "pos": "verb",
+      "gloss": "lose heart, dishearten",
+      "stems": [
+        {
+          "stem": "niphal",
+          "gloss": "be downcast, lose heart",
+          "senses": [
+            {
+              "gloss": "be downcast, lose heart",
+              "definition": "The persecutor pursues the needy and the brokenhearted. In Daniel the king loses heart when the ships of Kittim come against him.",
+              "evidence": [
+                {
+                  "ref": "Psa.109.16",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Dan.11.30"
+                }
+              ],
+              "id": "downcast"
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "discourage, dishearten",
+          "senses": [
+            {
+              "id": "discourage-dishearten",
+              "gloss": "discourage, dishearten",
+              "definition": "Ezekiel accuses the prophets of disheartening the righteous by falsehood while strengthening the hands of the wicked.",
+              "evidence": [
+                {
+                  "ref": "Ezk.13.22",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "כָּאֶה",
+      "bdb": [
+        "k.ad.ab"
+      ],
+      "pos": "adjective",
+      "gloss": "cowed, afflicted",
+      "senses": [
+        {
+          "id": "people-brought-low",
+          "gloss": "people brought low",
+          "definition": "The traditional two-word reading of Psalm 10:10 ends with this plural adjective. The surrounding lines describe people overcome by the strength of an attacker.",
+          "evidence": [
+            {
+              "ref": "Psa.10.10",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.10.8",
+              "to": "Psa.10.9"
+            }
+          ],
+          "kin": [
+            "downcast"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [],
+  "doctrine": [],
+  "note": "Psalm 10:10 has a single written form חלכאים and the traditional two-word reading חֵיל כָּאִים. Only the latter establishes a separate adjective here. Its syntax is uncertain. The Arabic cross-reference in Lane at p. 2582 supplies no independent definition adequate to settle the Hebrew sense."
+}

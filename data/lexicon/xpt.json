@@ -1,0 +1,133 @@
+{
+  "id": "xpt",
+  "root": "שפת",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "psalms-21-30"
+  ],
+  "gloss": "set, place",
+  "summary": "To set or place, especially beside fire. Psalm 22 pictures the sufferer being set in the dust of death, while Ezekiel and Isaiah use the root for what Yahweh establishes.",
+  "words": [
+    {
+      "lemma": "שָׁפַת",
+      "bdb": [
+        "v.fe.ab"
+      ],
+      "pos": "verb",
+      "gloss": "set",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "set, place",
+          "senses": [
+            {
+              "id": "set-in-place",
+              "gloss": "set in place",
+              "definition": "The speaker says that he is set in the dust of death.",
+              "evidence": [
+                {
+                  "ref": "Psa.22.16",
+                  "role": "defining"
+                }
+              ]
+            },
+            {
+              "id": "set-a-pot",
+              "gloss": "set a pot",
+              "definition": "Ezekiel commands the pot to be set on the fire, and Isaiah attributes established works to Yahweh.",
+              "evidence": [
+                {
+                  "ref": "Ezk.24.3"
+                },
+                {
+                  "ref": "Isa.26.12"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שְׁפַתָּיִם",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "sheepfolds or hearths",
+      "senses": [
+        {
+          "id": "a-pair-of-enclosures",
+          "gloss": "a pair of enclosures or hearths",
+          "definition": "The verse describes lying between a pair of places. The similar phrase in Deborah’s song evokes men staying with their flocks. A pair of hearths has also been proposed.",
+          "evidence": [
+            {
+              "ref": "Psa.68.14",
+              "role": "defining"
+            },
+            {
+              "ref": "Jdg.5.16",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "bdb": [
+        "v.fe.ad"
+      ]
+    },
+    {
+      "lemma": "מִשְׁפְּתַיִם",
+      "pos": "noun",
+      "gloss": "sheepfolds or hearths",
+      "bdb": [
+        "v.fe.af"
+      ],
+      "senses": [
+        {
+          "id": "sheepfolds-or-hearths",
+          "gloss": "sheepfolds or hearths",
+          "definition": "Reuben remains between them listening to the flocks. Issachar is likened to a donkey lying between them.",
+          "evidence": [
+            {
+              "ref": "Jdg.5.16",
+              "role": "defining"
+            },
+            {
+              "ref": "Gen.49.14",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אַשְׁפֹּת",
+      "pos": "noun",
+      "gloss": "refuse heap",
+      "bdb": [
+        "v.fe.ac"
+      ],
+      "senses": [
+        {
+          "id": "refuse-heap",
+          "gloss": "refuse heap",
+          "definition": "The needy are lifted from the refuse heap to sit among princes.",
+          "evidence": [
+            {
+              "ref": "1Sa.2.8",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.113.7",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [],
+  "doctrine": [],
+  "note": "The Psalm 22 form תִּשְׁפְּתֵנִי is a Qal imperfect with object suffix, “you set/place me”. Ezekiel 24:3 uses the same root for setting a cooking pot, and Isaiah 26:12 uses the related passive placement idea. The earlier morphology warning is resolved."
+}

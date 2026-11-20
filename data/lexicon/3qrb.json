@@ -1,0 +1,270 @@
+{
+  "id": "3qrb",
+  "root": "עקרב",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "tags": [
+    "animals"
+  ],
+  "gloss": "scorpion",
+  "summary": "The scorpion is one of the dangers Israel faced in the wilderness. Rehoboam threatens the people with its sting when he promises harsher punishment than his father inflicted.",
+  "words": [
+    {
+      "lemma": "עַקְרָב",
+      "pos": "noun",
+      "gender": "m",
+      "bdb": [
+        "p.ez.ag"
+      ],
+      "gloss": "scorpion",
+      "senses": [
+        {
+          "id": "animal",
+          "gloss": "scorpion",
+          "definition": "An animal with a sting in its tail, also an image of living among people who can do harm.",
+          "evidence": [
+            {
+              "ref": "Deu.8.15",
+              "role": "defining",
+              "note": "Scorpions and fiery serpents figure among the dangers of the waterless wilderness."
+            },
+            {
+              "ref": "Ezk.2.6",
+              "role": "defining",
+              "note": "Though Ezekiel dwells among scorpions, Yahweh tells him to speak without fear of the rebellious people."
+            }
+          ],
+          "cognate_ids": [
+            "arc-scorpion",
+            "uga-scorpion",
+            "ar-scorpion",
+            "gez-scorpion",
+            "tir-scorpion",
+            "mlt-scorpion"
+          ],
+          "kin": [
+            "syc-scorpion"
+          ]
+        },
+        {
+          "id": "punishment",
+          "gloss": "scorpions as an instrument of punishment",
+          "definition": "A threat of chastisement more painful than a whipping.",
+          "evidence": [
+            {
+              "ref": "1Ki.12.11",
+              "role": "defining",
+              "note": "The young advisers put scorpions in contrast with the whips used by Solomon."
+            },
+            {
+              "ref": "1Ki.12.14",
+              "role": "defining",
+              "note": "Rehoboam adopts their words in his answer to the people."
+            },
+            {
+              "ref": "2Ch.10.11",
+              "role": "defining",
+              "note": "The parallel account gives the advisers’ proposed threat."
+            },
+            {
+              "ref": "2Ch.10.14",
+              "role": "defining",
+              "note": "Rehoboam repeats the threat when the people return."
+            }
+          ],
+          "cognate_ids": [
+            "gez-scorpion"
+          ]
+        },
+        {
+          "id": "pass",
+          "gloss": "Ascent of Scorpions",
+          "definition": "The plural supplies the name of a pass used to mark a boundary.",
+          "evidence": [
+            {
+              "ref": "Num.34.4",
+              "role": "defining",
+              "note": "The southern boundary turns south of the Ascent of Akrabbim toward Zin."
+            },
+            {
+              "ref": "Jos.15.3",
+              "role": "defining",
+              "note": "The same ascent marks Judah’s southern boundary."
+            },
+            {
+              "ref": "Jdg.1.36",
+              "role": "defining",
+              "note": "The ascent appears in a description of the Amorite border."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עקרבא",
+      "lang": "syc",
+      "root": "עקרבא",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "scorpion",
+      "senses": [
+        {
+          "id": "syc-scorpion",
+          "gloss": "scorpion",
+          "definition": "An animal feared for the pain of its sting.",
+          "evidence": [
+            {
+              "ref": "Luk.10.19",
+              "role": "defining",
+              "note": "Jesus gives the disciples authority to tread on serpents and scorpions."
+            },
+            {
+              "ref": "Luk.11.12",
+              "role": "defining",
+              "note": "Jesus asks whether a father would give a scorpion to a child who asked for an egg."
+            },
+            {
+              "ref": "Rev.9.3",
+              "role": "defining",
+              "note": "The locusts receive power like that of scorpions."
+            },
+            {
+              "ref": "Rev.9.5",
+              "role": "defining",
+              "note": "The pain they inflict is compared with a scorpion’s sting."
+            },
+            {
+              "ref": "Rev.9.10",
+              "role": "defining",
+              "note": "Their tails resemble scorpions and contain stings."
+            }
+          ],
+          "cognate_ids": [
+            "arc-scorpion",
+            "uga-scorpion",
+            "ar-scorpion",
+            "gez-scorpion",
+            "tir-scorpion",
+            "mlt-scorpion"
+          ],
+          "kin": [
+            "animal"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-scorpion",
+      "lang": "arc",
+      "form": "עַקְרַבָּא",
+      "translit": "ʿaqrabbā",
+      "gloss": "scorpion",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "P01220, Onkelos Deuteronomy 8:15 and Ketubot 50a"
+        },
+        {
+          "source": "ids-aramaic",
+          "locator": "215-3-815-1, scorpion"
+        }
+      ]
+    },
+    {
+      "id": "uga-scorpion",
+      "lang": "uga",
+      "form": "𐎓𐎖𐎗𐎁",
+      "translit": "ʿqrb",
+      "gloss": "scorpion",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "kogan-2011-lexicon",
+          "locator": "§5.7, SED II no. 31"
+        }
+      ]
+    },
+    {
+      "id": "ar-scorpion",
+      "lang": "ar",
+      "form": "عَقْرَب",
+      "translit": "ʿaqrab",
+      "gloss": "scorpion",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2111, s.v. عَقْرَبٌ"
+        }
+      ]
+    },
+    {
+      "id": "gez-scorpion",
+      "lang": "gez",
+      "form": "ዐቅራብ",
+      "translit": "ʿaqrab",
+      "gloss": "scorpion",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "dillmann-1865",
+          "locator": "col. 977, s.v. ዐቅረብ, animal and scourge senses"
+        },
+        {
+          "source": "kogan-2011-lexicon",
+          "locator": "§5.7, SED II no. 31"
+        }
+      ]
+    },
+    {
+      "id": "tir-scorpion",
+      "lang": "sem",
+      "form": "ዕንቅርቢት",
+      "translit": "ʿənqərbit",
+      "gloss": "Tigrinya scorpion",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "kogan-2011-lexicon",
+          "locator": "§5.7, SED II no. 31"
+        }
+      ]
+    },
+    {
+      "id": "mlt-scorpion",
+      "lang": "sem",
+      "form": "għaqreb",
+      "translit": "għaqreb",
+      "gloss": "Maltese scorpion",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "gabra",
+          "locator": "57a0d5583ab2b80f3942f1a1, għaqreb"
+        }
+      ]
+    }
+  ],
+  "note": "The Ascent of Akrabbim already appears under עלה for the word ‘ascent’. Rehoboam’s speech leaves the construction of the threatened scourge unspecified. Kogan identifies Akkadian aqrabu in a late lexical list as a West Semitic borrowing. The Peshitta noun is SEDRA lexeme 2402."
+}

@@ -1,0 +1,101 @@
+{
+  "id": "ggob",
+  "root": "גב",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "tags": [],
+  "gloss": "pit, den",
+  "summary": "In the Aramaic account of Daniel, the lions are kept in a pit. A stone closes its mouth, and Daniel is lifted out after the king returns.",
+  "words": [
+    {
+      "lemma": "גֹּב",
+      "lang": "arc",
+      "pos": "noun",
+      "gender": "m",
+      "bdb": [
+        "xc.aa.ad"
+      ],
+      "gloss": "pit, den",
+      "senses": [
+        {
+          "id": "den",
+          "gloss": "pit, den",
+          "definition": "An enclosed pit with an opening above, used here to hold lions.",
+          "evidence": [
+            {
+              "ref": "Dan.6.17",
+              "role": "defining",
+              "note": "Daniel is thrown into the lions’ den on the king’s command."
+            },
+            {
+              "ref": "Dan.6.18",
+              "role": "defining",
+              "note": "A stone is placed over the mouth of the pit and sealed."
+            },
+            {
+              "ref": "Dan.6.24",
+              "role": "defining",
+              "note": "The king orders Daniel brought up out of the den."
+            },
+            {
+              "ref": "Dan.6.25",
+              "role": "defining",
+              "note": "The narrator speaks of the bottom of the pit."
+            }
+          ],
+          "cognate_ids": [
+            "akk-pit",
+            "arc-pit",
+            "ar-pit"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-pit",
+      "lang": "akk",
+      "form": "gubbu",
+      "translit": "gubbu",
+      "gloss": "cistern, well",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "tsae/x000016130 and armep/x000042570"
+        }
+      ]
+    },
+    {
+      "id": "arc-pit",
+      "lang": "arc",
+      "form": "גֻּבָּא",
+      "translit": "gubbā",
+      "gloss": "pit, cistern",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "C00271, Targum Exodus 21:33 and Jerusalem Talmud Avodah Zarah IV"
+        }
+      ]
+    },
+    {
+      "id": "ar-pit",
+      "lang": "ar",
+      "form": "جُبٌّ",
+      "translit": "jubb",
+      "gloss": "well, pit",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 371, n4905"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The pit’s opening and bottom are explicit in Daniel. The Aramaic word for the side or back of the winged beast in Daniel 7:6 is treated with Hebrew גַּב in the gav entry."
+}

@@ -1,0 +1,979 @@
+{
+  "id": "xp7",
+  "root": "שפח",
+  "status": "draft",
+  "updated": "2026-11-15",
+  "tags": [
+    "family",
+    "clan",
+    "tribe",
+    "kinship",
+    "inheritance",
+    "nations",
+    "servant",
+    "abraham",
+    "kingdom-of-god"
+  ],
+  "gloss": "clan, family; kind; maidservant",
+  "summary": "מִשְׁפָּחָה is the clan: the kin group between the tribe and the father's house, as the lot falls on Achan tribe by tribe, then clan by clan, then house by house, then man by man (Jos 7:14). Israel is counted, given its land and married within it by its clans (Num 1:2; 33:54; 36:6), and a man's clan is the kin who redeem him and inherit from him (Lev 25:49; Num 27:11). The word reaches out to whole peoples, “all the families of the ground” blessed in Abraham and his seed (Gen 12:3; 28:14, quoted Act 3:25), and to animals by their kinds (Gen 8:19). שִׁפְחָה is a maidservant, a female slave, and the word a woman uses of herself before a superior; how it goes with “clan” the text does not show. Ugaritic and Phoenician špḥ, “offspring, family”, give the clan's sense.",
+  "words": [
+    {
+      "lemma": "מִשְׁפָּחָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "clan, family; a people's families; kind",
+      "bdb": [
+        "v.ff.ac"
+      ],
+      "cognate_ids": [
+        "uga-sph",
+        "phn-sph"
+      ],
+      "summary": "About three hundred times, most of them in the musters and allotments of Numbers and Joshua, where a tribe is listed “by their clans” and each clan is named after a son or grandson of the tribe's father (“the clan of the Shelanite”, Num 26:20). It is the kin group a man belongs to by birth, below the tribe and above the father's house, and from there the word is used of any people's families and of Israel as one family.",
+      "senses": [
+        {
+          "id": "clan-of-tribe",
+          "gloss": "clan: the division of a tribe",
+          "definition": "The kin group between the tribe (שֵׁבֶט, מַטֶּה) and the father's house (בֵּית אָב): the descendants of one son or grandson of a tribe's father, named after him, counted, given land and represented by their heads as a unit.",
+          "tags": [
+            "clan",
+            "tribe"
+          ],
+          "evidence": [
+            {
+              "ref": "Jos.7.14",
+              "role": "defining",
+              "note": "The order of the lot: “by your tribes … the tribe which Yahweh takes shall come near לַמִּשְׁפָּחוֹת, and the מִשְׁפָּחָה which Yahweh takes shall come near by houses (לַבָּתִּים), and the house … by men (לַגְּבָרִים)”."
+            },
+            {
+              "ref": "Jos.7.17",
+              "to": "Jos.7.18",
+              "role": "defining",
+              "note": "Carried out: the clan of the Zerahite is taken, then Zabdi's house, then Achan, “of the tribe (מַטֵּה) of Judah”."
+            },
+            {
+              "ref": "1Sa.10.20",
+              "to": "1Sa.10.21",
+              "role": "defining",
+              "note": "The tribe of Benjamin is taken, then “by its clans (לְמִשְׁפְּחֹתָיו)” the clan of the Matrite, then Saul. In 10:19 the people stand “by your tribes and by your thousands”."
+            },
+            {
+              "ref": "Num.1.2",
+              "role": "defining",
+              "note": "The count of Israel “לְמִשְׁפְּחֹתָם לְבֵית אֲבֹתָם”: by their clans, by their fathers' house."
+            },
+            {
+              "ref": "Num.26.20",
+              "role": "defining",
+              "note": "“The sons of Judah by their clans: of Shelah, מִשְׁפַּחַת הַשֵּׁלָנִי; of Perez, the clan of the Perezite; of Zerah, the clan of the Zerahite”: each clan named after a son of the tribe's father."
+            },
+            {
+              "ref": "Exo.6.14",
+              "note": "“These are the heads of their fathers' houses … Hanoch and Pallu, Hezron and Carmi: these are the clans of Reuben.”"
+            },
+            {
+              "ref": "Num.3.27",
+              "note": "The Levites by clans: “of Kohath the clan of the Amramite and the clan of the Izharite …”."
+            },
+            {
+              "ref": "1Sa.9.21",
+              "role": "defining",
+              "note": "Saul: “a Benjamite, of the smallest of the tribes of Israel, and my clan the least of all the clans of the tribe of Benjamin”."
+            },
+            {
+              "ref": "Jdg.21.24",
+              "note": "Israel goes home “each to his tribe and to his clan (לְשִׁבְטוֹ וּלְמִשְׁפַּחְתּוֹ) … each to his inheritance”."
+            },
+            {
+              "ref": "Num.33.54",
+              "role": "defining",
+              "note": "“You shall inherit the land by lot by your clans … by the tribes of your fathers you shall inherit.”"
+            },
+            {
+              "ref": "Num.36.6",
+              "note": "Zelophehad's daughters may marry whom they please, “only to the clan of their father's tribe (לְמִשְׁפַּחַת מַטֵּה אֲבִיהֶם)”, so that no inheritance passes from tribe to tribe (36:8, 12)."
+            },
+            {
+              "ref": "Num.36.12"
+            },
+            {
+              "ref": "Jos.13.15",
+              "note": "Moses gave to the tribe of Reuben “by their clans”."
+            },
+            {
+              "ref": "Jdg.13.2",
+              "note": "Manoah, “of the clan of the Danite”: a whole small tribe can be called a clan."
+            },
+            {
+              "ref": "Gen.36.40",
+              "note": "The chiefs of Esau “by their clans, by their places”: the same order among Edom."
+            },
+            {
+              "ref": "1Ch.2.55",
+              "note": "“The clans of the scribes who dwelt at Jabez”, Kenites: clans known by their work as well as their father; also 1Ch 4:21, “the clans of the house of the linen workers”."
+            },
+            {
+              "ref": "1Ch.4.21"
+            }
+          ]
+        },
+        {
+          "id": "family-kin",
+          "gloss": "family, kin: a man's own relatives",
+          "definition": "The relatives a man belongs to and can call on: the kin among whom he marries, who keep a common sacrifice, who redeem him and his land, inherit from him, and avenge blood; and to whom he returns in the jubilee.",
+          "tags": [
+            "kinship",
+            "inheritance",
+            "redemption"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.24.38",
+              "role": "defining",
+              "note": "Abraham sends his servant “to my father's house and to my clan (אֶל־ בֵּית־ אָבִי … וְאֶל־ מִשְׁפַּחְתִּי)” for a wife for Isaac; also 24:40–41."
+            },
+            {
+              "ref": "Gen.24.40",
+              "to": "Gen.24.41"
+            },
+            {
+              "ref": "Lev.25.49",
+              "role": "defining",
+              "note": "The poor man sold to a sojourner may be redeemed by his uncle or uncle's son “or by any of the flesh of his kin, of his clan (מִמִּשְׁפַּחְתּוֹ)”."
+            },
+            {
+              "ref": "Lev.25.10",
+              "role": "defining",
+              "note": "In the jubilee “you shall return each to his possession, and each to his clan you shall return”; also 25:41, the freed Israelite “returns to his clan and to the possession of his fathers”."
+            },
+            {
+              "ref": "Lev.25.41"
+            },
+            {
+              "ref": "Num.27.11",
+              "role": "defining",
+              "note": "With no brothers or uncles, “give his inheritance to his flesh nearest to him of his clan, and he shall possess it”; the daughters had asked why their father's name should be taken away “from among his clan” (27:4)."
+            },
+            {
+              "ref": "Num.27.4"
+            },
+            {
+              "ref": "Rut.2.1",
+              "note": "Boaz, “a man of great worth of the clan of Elimelech”, the kinsman who redeems; also 2:3."
+            },
+            {
+              "ref": "Rut.2.3"
+            },
+            {
+              "ref": "1Sa.20.29",
+              "note": "“A sacrifice of the clan (זֶבַח מִשְׁפָּחָה) is ours in the city”; in 20:6 “the yearly sacrifice there for all the clan”."
+            },
+            {
+              "ref": "1Sa.20.6"
+            },
+            {
+              "ref": "2Sa.14.7",
+              "note": "“The whole clan has risen against your maidservant”, demanding the brother-slayer: the kin as avenger of blood."
+            },
+            {
+              "ref": "Jdg.9.1",
+              "note": "Abimelech speaks to his mother's brothers and “all the clan of the house of his mother's father (כָּל־ מִשְׁפַּחַת בֵּית־ אֲבִי אִמּוֹ)”."
+            },
+            {
+              "ref": "1Sa.18.18",
+              "note": "David: “who am I, and what is my life, my father's clan in Israel, that I should be the king's son-in-law?”"
+            },
+            {
+              "ref": "Jos.6.23",
+              "note": "Rahab is brought out with her father, mother and brothers “and all her clans (מִשְׁפְּחוֹתֶיהָ)”."
+            },
+            {
+              "ref": "Lev.20.5",
+              "note": "Yahweh sets his face “against that man and against his clan” who gives his seed to Molech."
+            },
+            {
+              "ref": "Est.9.28",
+              "note": "Purim is kept “in every generation, מִשְׁפָּחָה וּמִשְׁפָּחָה, province and province, city and city”."
+            }
+          ]
+        },
+        {
+          "id": "families-of-peoples",
+          "gloss": "the families of a people, of the earth; a people as a family",
+          "definition": "The word used of any people's families, and in the plural of the nations as made up of families (“the families of the ground”, “families of the peoples”); and in the singular of a whole people, Israel or Judah, as one family.",
+          "tags": [
+            "nations",
+            "abraham"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.10.5",
+              "role": "defining",
+              "note": "After the flood the nations spread out “each by his language, לְמִשְׁפְּחֹתָם בְּגוֹיֵהֶם”: by their families, in their nations; also 10:32, “these are the families of the sons of Noah”."
+            },
+            {
+              "ref": "Gen.10.32"
+            },
+            {
+              "ref": "Gen.12.3",
+              "role": "defining",
+              "note": "“In you shall be blessed כֹּל מִשְׁפְּחֹת הָאֲדָמָה”, all the families of the ground."
+            },
+            {
+              "ref": "Gen.28.14",
+              "role": "defining",
+              "note": "To Jacob: “in you and in your seed all the families of the ground shall be blessed”."
+            },
+            {
+              "ref": "Act.3.25",
+              "role": "defining",
+              "note": "Peter quotes the promise: “in your seed shall all the πατριαί of the earth be blessed”."
+            },
+            {
+              "ref": "Amo.3.2",
+              "role": "defining",
+              "note": "“Only you have I known of all the families of the ground; therefore I will visit on you all your iniquities.”"
+            },
+            {
+              "ref": "Amo.3.1",
+              "role": "defining",
+              "note": "Israel as one family: “against the whole מִשְׁפָּחָה which I brought up from the land of Egypt”."
+            },
+            {
+              "ref": "Jer.33.24",
+              "note": "“The two families which Yahweh chose, he has rejected them”: Israel and Judah."
+            },
+            {
+              "ref": "Jer.8.3",
+              "note": "“The remnant that remains of this evil family”; also Mic 2:3, “against this family I devise evil”."
+            },
+            {
+              "ref": "Mic.2.3"
+            },
+            {
+              "ref": "Jer.31.1",
+              "note": "“I will be God to all the clans of Israel, and they shall be my people.”"
+            },
+            {
+              "ref": "Psa.22.28",
+              "role": "defining",
+              "note": "“All the ends of the earth shall remember and turn to Yahweh, and all the families of the nations (מִשְׁפְּחוֹת גּוֹיִם) shall bow down before you.”"
+            },
+            {
+              "ref": "Psa.96.7",
+              "note": "“Ascribe to Yahweh, families of peoples (מִשְׁפְּחוֹת עַמִּים)”; also 1Ch 16:28."
+            },
+            {
+              "ref": "1Ch.16.28"
+            },
+            {
+              "ref": "Jer.10.25",
+              "note": "“Pour out your wrath on the nations that do not know you, and on the families that do not call on your name”: nations and families in parallel."
+            },
+            {
+              "ref": "Jer.1.15",
+              "note": "“All the clans of the kingdoms of the north”; also Jer 25:9."
+            },
+            {
+              "ref": "Jer.25.9"
+            },
+            {
+              "ref": "Ezk.20.32",
+              "note": "“We will be like the nations, like the families of the lands, serving wood and stone.”"
+            },
+            {
+              "ref": "Zec.14.17",
+              "role": "defining",
+              "note": "Whoever of “the families of the earth” does not go up to Jerusalem to bow down to the King, Yahweh of Armies, will have no rain; 14:18 names “the family of Egypt”."
+            },
+            {
+              "ref": "Zec.14.18"
+            },
+            {
+              "ref": "Zec.12.12",
+              "to": "Zec.12.14",
+              "note": "“The land shall mourn, מִשְׁפָּחוֹת מִשְׁפָּחוֹת apart”: the clan of the house of David, of Nathan, of Levi, of the Shimeite, and all the clans that remain."
+            },
+            {
+              "ref": "Nam.3.4",
+              "note": "Nineveh “sells nations by her harlotries and families by her sorceries”."
+            }
+          ]
+        },
+        {
+          "id": "kind",
+          "gloss": "kind, sort",
+          "definition": "A class of creatures or things that belong together, as a family does: the animals by their kinds, and the four “kinds” of destroyers.",
+          "evidence": [
+            {
+              "ref": "Gen.8.19",
+              "role": "defining",
+              "note": "Every living thing, creeping thing and bird “לְמִשְׁפְּחֹתֵיהֶם went out of the ark”: by their kinds."
+            },
+            {
+              "ref": "Jer.15.3",
+              "role": "defining",
+              "note": "“I will appoint over them אַרְבַּע מִשְׁפָּחוֹת: the sword to slay, the dogs to drag, and the birds of the heavens and the beasts of the earth to devour.”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "πατριά",
+          "gloss": "family, lineage descended from one father",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.96.7 (LXX 95:7) and 1Ch.16.28, מִשְׁפְּחוֹת עַמִּים → πατριαί; Jer.2.4; Jer.3.14; Exo.6.15; πατριά renders מִשְׁפָּחָה ×10, with πατριάς ×4. Gen 12:3 and 28:14 are left unaligned in MACULA."
+            },
+            {
+              "ref": "Act.3.25",
+              "role": "defining",
+              "note": "The promise to Abraham (Gen 12:3; 28:14) quoted: “in your seed shall all αἱ πατριαί of the earth be blessed”."
+            },
+            {
+              "ref": "Luk.2.4",
+              "note": "Joseph “of the house and πατριά of David”: house and clan, as Hebrew בַּיִת and מִשְׁפָּחָה."
+            },
+            {
+              "ref": "Eph.3.15",
+              "note": "The Father “from whom every πατριά in heaven and on earth is named”."
+            }
+          ]
+        },
+        {
+          "lemma": "φυλή",
+          "gloss": "tribe; clan",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Zec.12.12–14, מִשְׁפַּחַת / מִשְׁפָּחוֹת → φυλή ×6; Zec.14.17–18; Amo.3.1–2; Num.33.54; 1Sa.10.21; φυλή renders מִשְׁפָּחָה ×18"
+            },
+            {
+              "ref": "Mat.24.30",
+              "role": "defining",
+              "note": "Zec 12:10–14 taken up: “then shall all αἱ φυλαί of the land mourn (κόψονται), and they shall see the Son of man coming on the clouds of heaven”."
+            },
+            {
+              "ref": "Rev.1.7",
+              "role": "defining",
+              "note": "“Every eye shall see him, and those who pierced him, and all αἱ φυλαί of the land shall mourn over him”: Zec 12:10, 12."
+            }
+          ]
+        },
+        {
+          "lemma": "δῆμος",
+          "gloss": "people, populace; (LXX) clan",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Num.1.2, Num.26.20, Jos.7.14 and throughout Numbers and Joshua; δῆμος renders מִשְׁפָּחָה ×166, its commonest rendering"
+            },
+            {
+              "ref": "Act.12.22",
+              "note": "In the New Testament δῆμος is only a city's assembled people (also Act 17:5; 19:30, 33), never a clan; it quotes no verse using מִשְׁפָּחָה."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "שֵׁבֶט",
+            "note": "The tribe, the larger body the clan belongs to: named together, tribe first in the lot and in the going home, and in the warning against a man, woman, clan or tribe turning from Yahweh.",
+            "evidence": [
+              {
+                "ref": "Jos.7.14",
+                "role": "defining"
+              },
+              {
+                "ref": "Jdg.21.24",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.29.17"
+              },
+              {
+                "ref": "Jdg.18.19",
+                "note": "“Priest to a tribe and a clan in Israel” against “the house of one man”."
+              }
+            ]
+          },
+          {
+            "lemma": "מַטֶּה",
+            "note": "The tribe, in Numbers and Joshua: “the clan of their father's tribe”.",
+            "evidence": [
+              {
+                "ref": "Num.36.6",
+                "role": "defining"
+              },
+              {
+                "ref": "Jos.7.18"
+              }
+            ]
+          },
+          {
+            "lemma": "בֵּית אָב",
+            "note": "The father's house, the smaller body within the clan.",
+            "evidence": [
+              {
+                "ref": "Num.1.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.24.38",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.6.14"
+              }
+            ]
+          },
+          {
+            "lemma": "אֶלֶף",
+            "note": "A tribe's “thousand”, standing where the clan stands: “by your tribes and by your thousands”, and then the clan is taken.",
+            "evidence": [
+              {
+                "ref": "1Sa.10.19",
+                "role": "defining"
+              },
+              {
+                "ref": "1Sa.10.21"
+              }
+            ]
+          },
+          {
+            "lemma": "גּוֹי",
+            "note": "Nation: the families of the earth beside the nations of the earth, and families beside nations in parallel lines.",
+            "evidence": [
+              {
+                "ref": "Gen.10.5",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.10.25",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.18.18",
+                "note": "The promise again with “all the nations (גּוֹיֵי) of the earth”, where Gen 12:3 has families."
+              }
+            ]
+          },
+          {
+            "lemma": "עַם",
+            "note": "“Families of peoples.”",
+            "evidence": [
+              {
+                "ref": "Psa.96.7",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "לְמִשְׁפְּחֹתָם",
+            "gloss": "by their clans (in musters, allotments, genealogies)",
+            "evidence": [
+              {
+                "ref": "Num.1.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.26.20"
+              },
+              {
+                "ref": "Jos.13.15"
+              }
+            ]
+          },
+          {
+            "phrase": "מִשְׁפְּחֹת הָאֲדָמָה",
+            "gloss": "the families of the ground: all mankind by its families",
+            "evidence": [
+              {
+                "ref": "Gen.12.3",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.28.14"
+              },
+              {
+                "ref": "Amo.3.2"
+              }
+            ]
+          },
+          {
+            "phrase": "זֶבַח מִשְׁפָּחָה",
+            "gloss": "a clan's sacrifice, kept together in its city",
+            "evidence": [
+              {
+                "ref": "1Sa.20.29",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "phrase": "מִשְׁפָּחוֹת מִשְׁפָּחוֹת",
+            "gloss": "clan by clan, each clan apart",
+            "evidence": [
+              {
+                "ref": "Zec.12.12",
+                "role": "defining"
+              },
+              {
+                "ref": "Est.9.28",
+                "note": "The same distribution in the singular, מִשְׁפָּחָה וּמִשְׁפָּחָה, “every family”."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "שִׁפְחָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "maidservant, female slave",
+      "bdb": [
+        "v.ff.ab"
+      ],
+      "summary": "A woman owned as a servant: counted with menservants, flocks and camels as wealth, given with a daughter at her marriage, set opposite her mistress (גְּבִירָה); and the word a woman uses of herself in humility before a man of rank. Its tie to the root's sense of “clan” is not shown by scripture's use: no verse sets the two words together, and neither the Ugaritic nor the Phoenician dictionary entry found gives the cognate the sense “maidservant”, so the root's cognates stand against it. That a maidservant belongs to a household (Gen 24:35; Ecc 2:7) is a possible bridge, not one the text makes.",
+      "senses": [
+        {
+          "id": "female-slave",
+          "gloss": "maidservant, female slave",
+          "definition": "A woman owned by a master or mistress, bought, given or sold with the household's goods, and not free unless redeemed or set free.",
+          "evidence": [
+            {
+              "ref": "Gen.12.16",
+              "role": "defining",
+              "note": "Abram “had flocks and herds and he-asses, וַעֲבָדִים וּשְׁפָחֹת, and she-asses and camels”: maidservants counted among a man's wealth."
+            },
+            {
+              "ref": "Lev.19.20",
+              "role": "defining",
+              "note": "“She is a שִׁפְחָה betrothed to a man, and not redeemed at all nor given her freedom”: the maidservant is not free (חֻפְשָׁה)."
+            },
+            {
+              "ref": "Jer.34.9",
+              "role": "defining",
+              "note": "Each man was to let go “his servant and his maidservant, the Hebrew man and the Hebrew woman, free”; they took them back and subjected them “for servants and for maidservants” (34:11, 16)."
+            },
+            {
+              "ref": "Jer.34.16"
+            },
+            {
+              "ref": "Exo.11.5",
+              "role": "defining",
+              "note": "From the firstborn of Pharaoh on his throne “to the firstborn of the maidservant who is behind the mill”: the highest and the lowest."
+            },
+            {
+              "ref": "Gen.24.35",
+              "note": "Yahweh has given Abraham “flocks and herds, silver and gold, and menservants and maidservants, and camels and asses”."
+            },
+            {
+              "ref": "Ecc.2.7",
+              "note": "“I bought menservants and maidservants, and had sons of the house.”"
+            },
+            {
+              "ref": "Deu.28.68",
+              "note": "“You shall sell yourselves to your enemies for menservants and maidservants, and none shall buy.”"
+            },
+            {
+              "ref": "Est.7.4",
+              "note": "“If we had been sold for menservants and maidservants, I would have kept silent.”"
+            },
+            {
+              "ref": "2Sa.17.17",
+              "note": "A maidservant carries word from the city to Jonathan and Ahimaaz."
+            }
+          ]
+        },
+        {
+          "id": "wifes-maid",
+          "gloss": "a wife's maid, given her at marriage",
+          "definition": "A maidservant belonging to a wife, given her by her father at marriage, and given by her to her husband to bear children counted as the wife's.",
+          "evidence": [
+            {
+              "ref": "Gen.16.1",
+              "to": "Gen.16.3",
+              "role": "defining",
+              "note": "Sarai “had שִׁפְחָה מִצְרִית, and her name was Hagar”: “go in to my maidservant; perhaps I shall be built up from her”, and she gave her to Abram “as wife”."
+            },
+            {
+              "ref": "Gen.16.8",
+              "note": "“Hagar, maidservant of Sarai”; she answers, “from the face of Sarai my mistress (גְּבִרְתִּי)”."
+            },
+            {
+              "ref": "Gen.29.24",
+              "role": "defining",
+              "note": "Laban gave Zilpah his maidservant to Leah his daughter “for a maidservant”; and Bilhah to Rachel (29:29)."
+            },
+            {
+              "ref": "Gen.29.29"
+            },
+            {
+              "ref": "Gen.30.4",
+              "role": "defining",
+              "note": "Rachel “gave him Bilhah her maidservant as wife”: in 30:3 she had called her אֲמָתִי, “my handmaid”."
+            },
+            {
+              "ref": "Gen.30.18",
+              "note": "Leah: “God has given my wage, because I gave my maidservant to my husband.”"
+            },
+            {
+              "ref": "Gen.33.1",
+              "to": "Gen.33.2",
+              "note": "Jacob sets “the two maidservants” and their children first, then Leah, then Rachel."
+            },
+            {
+              "ref": "Gen.25.12",
+              "note": "Ishmael, “whom Hagar the Egyptian, Sarah's maidservant, bore to Abraham”."
+            }
+          ]
+        },
+        {
+          "id": "your-maidservant",
+          "gloss": "“your maidservant”: a woman speaking of herself",
+          "definition": "In speech to a man of rank (a priest, a king, a prophet, a kinsman), a free woman calls herself “your maidservant” instead of “I”.",
+          "evidence": [
+            {
+              "ref": "1Sa.1.18",
+              "role": "defining",
+              "note": "Hannah to Eli: “let שִׁפְחָתְךָ find favour in your eyes”."
+            },
+            {
+              "ref": "2Sa.14.15",
+              "role": "defining",
+              "note": "The woman of Tekoa to David: “שִׁפְחָתְךָ said, let me speak to the king; perhaps the king will do the word of אֲמָתוֹ”: both words of herself in one verse; also 14:6, 7, 12, 17, 19."
+            },
+            {
+              "ref": "2Sa.14.6"
+            },
+            {
+              "ref": "Rut.2.13",
+              "role": "defining",
+              "note": "Ruth to Boaz: “you have spoken to the heart of your maidservant, though I am not as one of your maidservants”."
+            },
+            {
+              "ref": "2Ki.4.2",
+              "note": "The widow to Elisha: “your maidservant has nothing in the house but a jar of oil”; the Shunammite, “do not lie to your maidservant” (4:16)."
+            },
+            {
+              "ref": "2Ki.4.16"
+            },
+            {
+              "ref": "1Sa.25.27",
+              "note": "Abigail to David: “this blessing which your maidservant has brought”."
+            },
+            {
+              "ref": "1Sa.28.21",
+              "note": "The woman of Endor to Saul: “your maidservant has listened to your voice”."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "παιδίσκη",
+          "gloss": "maidservant, slave girl",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.16.1, 2, 3, 5, 6, 8, שִׁפְחָה → παιδίσκη; Gen.25.12; Psa.123.2 (LXX 122:2); παιδίσκη renders שִׁפְחָה ×37 (with παιδίσκαι ×3)"
+            },
+            {
+              "ref": "Gal.4.22",
+              "role": "defining",
+              "note": "“Abraham had two sons, one ἐκ τῆς παιδίσκης and one of the free woman”: Hagar, Sarai's שִׁפְחָה (Gen 16:1–3)."
+            },
+            {
+              "ref": "Gal.4.23",
+              "note": "“The one of the παιδίσκη was born after the flesh, the one of the free woman through the promise.”"
+            },
+            {
+              "ref": "Gal.4.30",
+              "note": "“Cast out the παιδίσκη and her son”: Gen 21:10, where the Hebrew is הָאָמָה, so here παιδίσκη stands for אָמָה."
+            },
+            {
+              "ref": "Gal.4.31"
+            }
+          ]
+        },
+        {
+          "lemma": "δούλη",
+          "gloss": "female slave, bondwoman",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Jol.3.2 (LXX 3:2), הַשְּׁפָחוֹת → δούλας; 2Ki.4.2; Isa.14.2; 2Ch.28.10; δούλη renders שִׁפְחָה ×4"
+            },
+            {
+              "ref": "Act.2.18",
+              "role": "defining",
+              "note": "Joel 3:2 quoted at Pentecost: “on my servants and on my δούλας in those days I will pour out of my spirit”."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "עֶבֶד",
+            "note": "The manservant: “menservants and maidservants” is the standing pair.",
+            "evidence": [
+              {
+                "ref": "Gen.12.16",
+                "role": "defining"
+              },
+              {
+                "ref": "Jol.3.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.34.9"
+              },
+              {
+                "ref": "Psa.123.2",
+                "note": "“As the eyes of servants to the hand of their masters, as the eyes of a maidservant to the hand of her mistress.”"
+              }
+            ]
+          },
+          {
+            "lemma": "אָמָה",
+            "note": "The other word for a female servant, used of the same women: Bilhah is אָמָה and then שִׁפְחָה (Gen 30:3–4), Hagar שִׁפְחָה (Gen 16) and then אָמָה (Gen 21:10), and the woman of Tekoa calls herself both in one breath. Abigail puts them in a row: “your אָמָה is a שִׁפְחָה to wash the feet of my lord's servants”, the שִׁפְחָה the lower of the two there.",
+            "evidence": [
+              {
+                "ref": "Gen.30.3",
+                "to": "Gen.30.4",
+                "role": "defining"
+              },
+              {
+                "ref": "2Sa.14.15",
+                "role": "defining"
+              },
+              {
+                "ref": "1Sa.25.41",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.21.10"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "גְּבִירָה",
+            "note": "The mistress, the woman who owns the maidservant: the eyes of a maidservant to the hand of her mistress; a maidservant who dispossesses her mistress shakes the earth; in the day of Yahweh it will be “as with the maidservant, so with her mistress”.",
+            "evidence": [
+              {
+                "ref": "Psa.123.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.30.23",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.24.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.16.8",
+                "note": "Hagar flees “from the face of Sarai my mistress”; the angel sends her back to her mistress (16:9)."
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "עֲבָדִים וּשְׁפָחוֹת",
+            "gloss": "menservants and maidservants: the household's slaves",
+            "evidence": [
+              {
+                "ref": "Gen.12.16",
+                "role": "defining"
+              },
+              {
+                "ref": "Ecc.2.7"
+              },
+              {
+                "ref": "2Ki.5.26"
+              }
+            ]
+          },
+          {
+            "phrase": "לַעֲבָדִים וְלִשְׁפָחוֹת",
+            "gloss": "(sold, made) into menservants and maidservants",
+            "evidence": [
+              {
+                "ref": "Deu.28.68",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.34.11"
+              },
+              {
+                "ref": "Est.7.4"
+              },
+              {
+                "ref": "2Ch.28.10"
+              },
+              {
+                "ref": "Isa.14.2",
+                "note": "Turned about: Israel will possess the peoples “for menservants and for maidservants” in the land of Yahweh."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "cognates": [
+    {
+      "id": "uga-sph",
+      "lang": "uga",
+      "form": "𐎌𐎔𐎈",
+      "translit": "špḥ",
+      "gloss": "progeny, descendant; offspring",
+      "relation": "cognate",
+      "note": "King Kirta's line: “the most beautiful of the offspring (špḥ) of your first-born” (KTU 1.14 III 39–40). Offspring of one father is what a clan is, as Israel's clans are each the descendants of one son. Ugaritic keeps š apart from ṯ and ḥ apart from ḫ, and shows š and ḥ behind ש and ח.",
+      "sounds": {
+        "ש": "š",
+        "ח": "ḥ"
+      },
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 203, §93 Glossary, špḥ",
+          "note": "“špḥ 1.16:I:21, 23 = 88.73, 1.14:III:40 = 88.71 ‘progeny, descendant’ (cf. Phoen. špḥ, H. mišpāḥā ‘family, clan’)”."
+        },
+        {
+          "source": "segert-1984",
+          "locator": "p. 116, §75.3",
+          "note": "“ḥry | nʿmt.špḥ.bkrk 1.14:III:39–40 = 88.71 ‘Hurray, the most beautiful of the offspring of your first-born.’”"
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Ugaritic 𐎌𐎔𐎃 (špḫ), “family”",
+          "note": "Wiktionary spells it with ḫ; Segert's glossary and text have ḥ (𐎈), which is followed here."
+        }
+      ]
+    },
+    {
+      "id": "phn-sph",
+      "lang": "phn",
+      "form": "𐤔𐤐𐤇",
+      "translit": "špḥ",
+      "gloss": "family",
+      "relation": "cognate",
+      "note": "Phoenician and Punic špḥ is a family holding fields and vineyards, offering sacrifice as a body beside the marzeaḥ sodality, and honouring the memory of its great men: the Hebrew clan's land, sacrifice and name.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "pp. 476–477, ŠPḤ",
+          "note": "“[Heb. mišpaḥa; Ug. špḥ] n.m. 1. FAMILY”: Cebel Ires Dağı lines 6A–7A (Ph), “No one shall steal field or vineyard from the family of KLŠ”; KAI 69.16/17 (Pu), “any family or any marzeḥ-sodality of a god … who shall make a sacrifice”; CIS i 6000.7/8 (Pu), “his family has magnified his memory”."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "promises-to-the-fathers",
+      "statement": "Yahweh told Abram, “in you shall all the families of the ground be blessed” (Gen 12:3), and Jacob, “in you and in your seed” (Gen 28:14); elsewhere the promise names “all the nations of the earth” (Gen 18:18; 22:18). The word is the one used of Israel's own clans, so the promise is to every family of mankind as Israel's clans were counted, by their kin. Peter told Israel that they were “sons of the covenant” made with their fathers, quoted “in your seed shall all the families of the earth be blessed”, and said that God, having raised up his servant Jesus, sent him to them first “to bless you, in turning each of you from your iniquities” (Act 3:25–26). Paul says the scripture “preached the gospel beforehand to Abraham” in this promise, foreseeing that God would justify the nations by faith; that the seed is one, Christ; and that those who are Christ's are Abraham's seed and heirs by the promise (Gal 3:8, 16, 29). Amos shows the other side of being the chosen family: “only you have I known of all the families of the ground; therefore I will visit on you all your iniquities” (Amo 3:2). From the verses: the blessing of the families of the earth comes through one descendant of Abraham, Jesus, raised from the dead; it is the forgiveness of sins, received by faith, and it makes those who receive it, of any family, Abraham's seed and heirs of what was promised to him.",
+      "evidence": [
+        {
+          "ref": "Gen.12.3"
+        },
+        {
+          "ref": "Gen.28.14"
+        },
+        {
+          "ref": "Gen.18.18"
+        },
+        {
+          "ref": "Gen.22.18"
+        },
+        {
+          "ref": "Act.3.25",
+          "to": "Act.3.26"
+        },
+        {
+          "ref": "Gal.3.8"
+        },
+        {
+          "ref": "Gal.3.16"
+        },
+        {
+          "ref": "Gal.3.29"
+        },
+        {
+          "ref": "Amo.3.2"
+        }
+      ]
+    },
+    {
+      "topic": "kingdom-of-god",
+      "statement": "Zechariah sees the house of David and Jerusalem look on him “whom they pierced” and mourn, “the land shall mourn, clan by clan apart”: David's clan, Nathan's, Levi's, the Shimeite's and all that remain (Zec 12:10–14). Jesus applies it to his own coming: “then shall all the tribes of the land mourn, and they shall see the Son of man coming on the clouds of heaven” (Mat 24:30), and Revelation joins the two, “every eye shall see him, and those who pierced him, and all the tribes of the land shall mourn over him” (Rev 1:7). Zechariah goes on: Yahweh will be king over all the earth, and year by year the families of the earth shall go up to Jerusalem “to bow down to the King, Yahweh of Armies”, and the family that does not go up, Egypt among them, shall have no rain (Zec 14:9, 16–18). The psalm says the same: “all the families of the nations shall bow down before you, for the kingdom is Yahweh's, and he rules over the nations” (Psa 22:28–29). From the verses: when Christ returns, Israel's clans will mourn for the one they pierced, and afterwards the families of the nations will come up to Jerusalem to worship, under a reign on the earth that gives or withholds their rain.",
+      "evidence": [
+        {
+          "ref": "Zec.12.10",
+          "to": "Zec.12.14"
+        },
+        {
+          "ref": "Mat.24.30"
+        },
+        {
+          "ref": "Rev.1.7"
+        },
+        {
+          "ref": "Zec.14.9"
+        },
+        {
+          "ref": "Zec.14.16",
+          "to": "Zec.14.18"
+        },
+        {
+          "ref": "Psa.22.28",
+          "to": "Psa.22.29"
+        }
+      ]
+    },
+    {
+      "topic": "covenants-of-promise",
+      "statement": "Hagar was Sarai's שִׁפְחָה, given to Abram to build Sarai a house (Gen 16:1–3), and Sarah later had “this handmaid and her son” cast out, “for the son of this handmaid shall not inherit with my son, with Isaac” (Gen 21:10). Paul reads it: Abraham had two sons, “one of the maidservant (παιδίσκη) and one of the free woman”, the one born after the flesh and the other through the promise; the two women are two covenants, Hagar the one from Sinai bearing children to bondage, answering to the Jerusalem of his day, while “the Jerusalem above is free, which is our mother”; “we are not children of a maidservant, but of the free woman” (Gal 4:22–31). From the verses: descent by the flesh, even from Abraham, does not make an heir; the inheritance belongs to the children of the promise, who are free.",
+      "evidence": [
+        {
+          "ref": "Gen.16.1",
+          "to": "Gen.16.3"
+        },
+        {
+          "ref": "Gen.21.10"
+        },
+        {
+          "ref": "Gal.4.22",
+          "to": "Gal.4.31"
+        }
+      ]
+    },
+    {
+      "topic": "spirit-poured-out",
+      "statement": "Joel promises that Yahweh will pour out his spirit on all flesh, sons and daughters, old men and young, “and even on the menservants and on the maidservants (הַשְּׁפָחוֹת) in those days I will pour out my spirit” (Jol 3:1–2). Peter said that the gift at Pentecost was this, quoting “on my servants and on my handmaidens I will pour out of my spirit, and they shall prophesy” (Act 2:17–18). The spirit is poured out like water, by Yahweh, as his own: from the verses, it is God's power given to men and women, and the lowest slave in a household was not too low to receive it.",
+      "evidence": [
+        {
+          "ref": "Jol.3.1",
+          "to": "Jol.3.2"
+        },
+        {
+          "ref": "Act.2.17",
+          "to": "Act.2.18"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-15. Root key שפח as the corpus keys it (BDB v.ff.aa, the root heading, has no tokens; checked in data/haqor.db surface_entry). Words: מִשְׁפָּחָה v.ff.ac (303 tokens), שִׁפְחָה v.ff.ab (63). Left out: m.dx.af, BDB's zero-token cross-reference to מִשְׁפָּחָה. No personal name is formed from the root, so no name entries. No Biblical Aramaic word, and the Peshitta does not use the root (πατριά is ܫܪܒܬܐ there). Sounds: Ugaritic špḥ (Segert, checked on the PDF page) shows š and ḥ; Wiktionary's Ugaritic špḫ with ḫ is not followed. שִׁפְחָה names no cognate: no dictionary checked gives a Semitic špḥ “maidservant”, so the two cognates count against it (explained in its summary); the link “belonging to the household” is a lead from the later Jewish lexicons, not shown by the verses. Left out as cognate: Arabic safaḥa (Lane p. 1369, art. سفح), “pour out, shed (blood, tears)”, with سَفْحٌ “foot of a mountain” and سِفَاح “fornication”: the sound correspondence fits (Arabic s for Hebrew š) but no sense is shared, and Arabic has no word for family from it; recorded here only. Not yet consulted: DULAT for Ugaritic špḥ (Segert read only; KTU 1.16 I 21, 23 not read), DNWSI or CAL for Aramaic and other North-West Semitic špḥ. Greek: MACULA leaves מִשְׁפְּחֹת unaligned in Gen 12:3 and 28:14, so the Septuagint's word there is not cited. Gal 3:8 quotes the promise in the form of Gen 18:18 (τὰ ἔθνη), not Gen 12:3, and is cited only in doctrine. Sense “kind” rests on two verses (Gen 8:19; Jer 15:3). Doctrine statements are reasoned conclusions for review."
+}

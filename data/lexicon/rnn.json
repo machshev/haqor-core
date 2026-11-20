@@ -1,0 +1,283 @@
+{
+  "id": "rnn",
+  "root": "רננ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "joy",
+    "prayer",
+    "music"
+  ],
+  "gloss": "give a ringing cry, sing for joy",
+  "summary": "The raised voice expresses joy in Psalm 5 and urgent petition in Psalm 61. The object of the cry and the speaker’s situation determine its force.",
+  "words": [
+    {
+      "lemma": "רָנַן",
+      "bdb": [
+        "t.de.aa"
+      ],
+      "pos": "verb",
+      "gloss": "cry aloud, sing for joy",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "cry aloud for joy",
+          "senses": [
+            {
+              "id": "cry-aloud-for-joy",
+              "gloss": "cry aloud for joy",
+              "definition": "Isaiah calls on Zion to shout for joy and pictures the tongue of someone unable to speak breaking into song.",
+              "evidence": [
+                {
+                  "ref": "Isa.12.6",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Isa.35.6"
+                }
+              ],
+              "cognate_ids": [
+                "ar-ranna"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "raise a ringing cry",
+          "senses": [
+            {
+              "id": "raise-a-ringing-cry",
+              "gloss": "raise a ringing cry",
+              "definition": "David asks that those who take refuge in Yahweh sing for joy. The watchmen in Isaiah raise their voices together.",
+              "evidence": [
+                {
+                  "ref": "Psa.5.12",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.132.16"
+                },
+                {
+                  "ref": "Isa.52.8"
+                }
+              ],
+              "cognate_ids": [
+                "ar-ranna"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "make someone sing for joy, shout joyfully",
+          "senses": [
+            {
+              "id": "make-someone-sing-for",
+              "gloss": "make someone sing for joy, shout joyfully",
+              "definition": "Job says he made the widow’s heart sing for joy. A psalm calls the upright to shout for joy.",
+              "evidence": [
+                {
+                  "ref": "Job.29.13",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.32.11"
+                },
+                {
+                  "ref": "Psa.81.2"
+                }
+              ],
+              "cognate_ids": [
+                "ar-ranna"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be heard in joyful shouting",
+          "senses": [
+            {
+              "id": "be-heard-in-joyful",
+              "gloss": "be heard in joyful shouting",
+              "definition": "The vineyard loses its gladness and its customary shouting as the harvest fails.",
+              "evidence": [
+                {
+                  "ref": "Isa.16.10",
+                  "role": "defining"
+                }
+              ],
+              "cognate_ids": [
+                "ar-ranna"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpolel",
+          "gloss": "rouse oneself with a shout",
+          "senses": [
+            {
+              "id": "rouse-oneself-with-a",
+              "gloss": "rouse oneself with a shout",
+              "definition": "The poet pictures Yahweh awakening like a warrior who shouts under the influence of wine.",
+              "evidence": [
+                {
+                  "ref": "Psa.78.65",
+                  "role": "defining"
+                }
+              ],
+              "cognate_ids": [
+                "ar-ranna"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "רִנָּה",
+      "bdb": [
+        "t.de.ad"
+      ],
+      "pos": "noun",
+      "gloss": "ringing cry, joyful shout, plea",
+      "senses": [
+        {
+          "id": "shout-of-joy",
+          "gloss": "shout of joy",
+          "definition": "Those who sow in tears reap with shouts of joy. The cry accompanies the reversal from grief to gladness.",
+          "evidence": [
+            {
+              "ref": "Psa.126.5",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.30.6"
+            },
+            {
+              "ref": "Isa.51.11"
+            }
+          ],
+          "cognate_ids": [
+            "ar-ranna"
+          ]
+        },
+        {
+          "id": "cry-of-petition",
+          "gloss": "cry of petition",
+          "definition": "Solomon asks Yahweh to heed his cry and prayer. The same pairing appears when David asks to be heard.",
+          "evidence": [
+            {
+              "ref": "1Ki.8.28",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.61.2"
+            }
+          ],
+          "cognate_ids": [
+            "ar-ranna"
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "רְנָנָה",
+      "bdb": [
+        "t.de.ac"
+      ],
+      "pos": "noun",
+      "gloss": "joyful singing",
+      "senses": [
+        {
+          "id": "joyful-singing",
+          "gloss": "joyful singing",
+          "definition": "Worshippers come before Yahweh with joyful singing. The speaker praises him with rejoicing lips.",
+          "evidence": [
+            {
+              "ref": "Psa.100.2",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.63.6"
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "cognate_ids": [
+        "ar-ranna"
+      ]
+    },
+    {
+      "lemma": "רֹן",
+      "bdb": [
+        "t.de.ab"
+      ],
+      "pos": "noun",
+      "gloss": "ringing cry",
+      "senses": [
+        {
+          "id": "ringing-cry",
+          "gloss": "ringing cry",
+          "definition": "The psalmist says Yahweh will surround him with cries of deliverance.",
+          "evidence": [
+            {
+              "ref": "Psa.32.7",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "ar-ranna"
+      ]
+    },
+    {
+      "lemma": "רְנָנִים",
+      "bdb": [
+        "t.de.af"
+      ],
+      "pos": "noun",
+      "gloss": "ostriches",
+      "senses": [
+        {
+          "id": "ostriches",
+          "gloss": "ostriches",
+          "definition": "Job describes the bird shaking its wings, leaving its eggs on the ground and outrunning the horse.",
+          "evidence": [
+            {
+              "ref": "Job.39.13",
+              "to": "Job.39.18",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-ranna",
+      "lang": "ar",
+      "form": "رَنَّ",
+      "translit": "ranna",
+      "gloss": "emit a sound, cry aloud",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 1164, رن, form I, n16749"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The Hebrew text supplies many verb forms beyond the single infinitive listed under the dictionary key. The bird name in Job may refer to its cry, but the passage identifies it by its habits. Rissah contains samekh rather than nun."
+}

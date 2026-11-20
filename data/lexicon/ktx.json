@@ -1,0 +1,258 @@
+{
+  "id": "ktx",
+  "root": "כתש",
+  "status": "draft",
+  "updated": "2026-11-18",
+  "tags": [],
+  "gloss": "pound; mortar, hollow",
+  "summary": "Proverbs pictures a pestle pounding grain in a mortar. Even such treatment, the proverb says, would leave a fool’s folly intact. In Judges the same noun names the hollow at Lehi from which Samson drinks.",
+  "words": [
+    {
+      "lemma": "כָּתַשׁ",
+      "pos": "verb",
+      "bdb": [
+        "k.du.aa"
+      ],
+      "gloss": "pound",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "pound",
+          "senses": [
+            {
+              "id": "pound",
+              "gloss": "pound",
+              "definition": "Strike repeatedly with a pestle to break material down.",
+              "evidence": [
+                {
+                  "ref": "Pro.27.22",
+                  "role": "defining",
+                  "note": "The fool is imagined among the grain under the pestle."
+                }
+              ],
+              "cognate_ids": [
+                "arc-crush"
+              ],
+              "kin": [
+                "mortar"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַכְתֵּשׁ",
+      "pos": "noun",
+      "gender": "m",
+      "bdb": [
+        "k.du.ab"
+      ],
+      "gloss": "mortar, hollow",
+      "senses": [
+        {
+          "id": "mortar",
+          "gloss": "mortar",
+          "definition": "A vessel in which grain can be crushed with a pestle.",
+          "evidence": [
+            {
+              "ref": "Pro.27.22",
+              "role": "defining",
+              "note": "The mortar holds both the grain and the imagined fool."
+            }
+          ],
+          "kin": [
+            "pound"
+          ]
+        },
+        {
+          "id": "hollow",
+          "gloss": "hollow, basin",
+          "definition": "A hollow in the ground. The word also serves as a district name.",
+          "evidence": [
+            {
+              "ref": "Jdg.15.19",
+              "role": "defining",
+              "note": "God opens the hollow at Lehi and water flows out for Samson."
+            },
+            {
+              "ref": "Zep.1.11",
+              "role": "defining",
+              "note": "The inhabitants of the Maktesh are called to mourn with the merchants and those who weigh silver."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "כְּתַשׁ",
+      "pos": "verb",
+      "gloss": "strike, contend",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "strike",
+          "senses": [
+            {
+              "id": "strike",
+              "gloss": "strike",
+              "definition": "Deliver a blow, as a boxer does.",
+              "evidence": [
+                {
+                  "ref": "1Co.9.26",
+                  "role": "defining",
+                  "note": "Paul pictures a fighter whose blows are aimed at something more substantial than air."
+                }
+              ],
+              "cognate_ids": [
+                "syc-strike"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "ethpaal",
+          "gloss": "contend, strive",
+          "senses": [
+            {
+              "id": "contend",
+              "gloss": "contend, strive",
+              "definition": "Engage in a contest, make an effort or enter a dispute.",
+              "evidence": [
+                {
+                  "ref": "Luk.13.24",
+                  "role": "defining",
+                  "note": "Jesus urges his hearers to strive to enter through the narrow gate."
+                },
+                {
+                  "ref": "2Ti.2.5",
+                  "role": "defining",
+                  "note": "The athlete competes according to rules."
+                },
+                {
+                  "ref": "2Ti.2.24",
+                  "role": "defining",
+                  "note": "The Lord’s servant is to avoid quarrelling."
+                }
+              ],
+              "cognate_ids": [
+                "syc-contend"
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "syc"
+    },
+    {
+      "lemma": "תַּכְתּוּשָׁא",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "struggle, dispute",
+      "senses": [
+        {
+          "id": "struggle",
+          "gloss": "struggle, dispute",
+          "definition": "A contest with an opponent, including disputes provoked by foolish questions.",
+          "evidence": [
+            {
+              "ref": "Eph.6.12",
+              "role": "defining",
+              "note": "The struggle is described by naming the forces against which it is waged."
+            },
+            {
+              "ref": "2Ti.2.23",
+              "role": "defining",
+              "note": "Foolish questions give rise to disputes."
+            },
+            {
+              "ref": "Tit.3.9",
+              "role": "defining",
+              "note": "The reader is urged to avoid unprofitable disputes."
+            }
+          ],
+          "cognate_ids": [
+            "syc-struggle"
+          ],
+          "kin": [
+            "contend"
+          ]
+        }
+      ],
+      "lang": "syc",
+      "root": "תכתושא"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-crush",
+      "lang": "arc",
+      "form": "כְּתַשׁ",
+      "translit": "kəṯaš",
+      "gloss": "crush, pound",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š"
+      },
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "K01392, Targum on Exo 27:20 and Palestinian Targum on Exo 30:36"
+        }
+      ]
+    },
+    {
+      "id": "syc-strike",
+      "lang": "syc",
+      "form": "ܟܬܫ",
+      "translit": "kṯaš",
+      "gloss": "strike",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š"
+      },
+      "evidence": [
+        {
+          "source": "sedra",
+          "locator": "lexeme 1611, second occurrence in 1Co 9:26"
+        }
+      ]
+    },
+    {
+      "id": "syc-contend",
+      "lang": "syc",
+      "form": "ܐܬܟܬܫ",
+      "translit": "eṯkattaš",
+      "gloss": "strive, fight",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š"
+      },
+      "evidence": [
+        {
+          "source": "sedra",
+          "locator": "lexeme 1611, Luk 13:24 and 2Ti 4:7"
+        }
+      ]
+    },
+    {
+      "id": "syc-struggle",
+      "lang": "syc",
+      "form": "ܬܟܬܘܫܐ",
+      "translit": "taktūšā",
+      "gloss": "struggle, contest",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š"
+      },
+      "evidence": [
+        {
+          "source": "sedra",
+          "locator": "lexeme 1612, Eph 6:12 and Tit 3:9"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "Zephaniah gives the district’s inhabitants and their occupations but leaves its precise site open. The pestle in Pro.27.22 has its own word, עֱלִי, covered under alah."
+}

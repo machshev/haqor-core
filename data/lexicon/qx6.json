@@ -1,0 +1,101 @@
+{
+  "id": "qx6",
+  "root": "קשט",
+  "status": "draft",
+  "created": "2026-11-20",
+  "updated": "2026-11-19",
+  "gloss": "truth, reliability",
+  "summary": "Proverbs pairs this word with trustworthy speech. Daniel places it beside justice. Psalm 60 has a disputed use in a military setting.",
+  "words": [
+    {
+      "lemma": "קֹשְׁטְ",
+      "bdb": [
+        "s.dv.ab"
+      ],
+      "pos": "noun",
+      "gloss": "truth",
+      "senses": [
+        {
+          "id": "truth",
+          "gloss": "truth",
+          "definition": "The pupil learns sound words in order to give a trustworthy answer.",
+          "evidence": [
+            {
+              "ref": "Pro.22.21",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-qashshit"
+      ]
+    },
+    {
+      "lemma": "קֹשֶׁט",
+      "bdb": [
+        "s.du.ab"
+      ],
+      "pos": "noun",
+      "gloss": "bow, or truth",
+      "senses": [
+        {
+          "id": "bow-or-truth",
+          "gloss": "bow, or truth",
+          "definition": "The banner given to those who fear God may let them rally away from the bow. Reading the noun as truth gives another sense, a banner displayed for the sake of truth. The line alone does not decide.",
+          "evidence": [
+            {
+              "ref": "Psa.60.6",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קְשֹׁט",
+      "bdb": [
+        "xs.ak.af"
+      ],
+      "pos": "noun",
+      "gloss": "truth",
+      "senses": [
+        {
+          "id": "truth-2",
+          "gloss": "truth",
+          "definition": "The king declares Daniel’s God a revealer of secrets in truth. Nebuchadnezzar pairs the truth of God’s works with the justice of his ways.",
+          "evidence": [
+            {
+              "ref": "Dan.2.47",
+              "role": "defining"
+            },
+            {
+              "ref": "Dan.4.34"
+            }
+          ]
+        }
+      ],
+      "lang": "arc",
+      "cognate_ids": [
+        "arc-qashshit"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-qashshit",
+      "lang": "arc",
+      "form": "קַשִּׁיט",
+      "translit": "qaššīṭ",
+      "gloss": "upright, true",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "קַשִּׁיט, S02244"
+        }
+      ]
+    }
+  ],
+  "note": "The psalm key is indexed near קשח. Its final consonant is ט. The usual Hebrew noun for bow is קֶשֶׁת in qeshet. Proverbs and Daniel independently support the truth reading."
+}

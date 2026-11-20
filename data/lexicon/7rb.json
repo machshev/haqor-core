@@ -1,0 +1,2480 @@
+{
+  "id": "7rb",
+  "root": "חרב",
+  "status": "draft",
+  "updated": "2026-11-15",
+  "tags": [
+    "weapons",
+    "war",
+    "judgment",
+    "peace",
+    "dryness",
+    "drought",
+    "desolation",
+    "ruins",
+    "the-flood",
+    "exodus",
+    "restoration"
+  ],
+  "gloss": "sword; be dry; be waste, a ruin",
+  "summary": "One spelling covers two families of words. חֶרֶב is the sword, the weapon girded on the thigh and drawn from its sheath (Jdg 3:16; 1Sa 17:51), and so war and violent death, the first of Yahweh’s judgments beside famine and plague (Lev 26:25; Jer 14:12; Ezk 14:21), which the nations will beat into ploughshares when he judges between them (Isa 2:4). חָרֵב is to be dry, of waters that have gone (Gen 8:13; Psa 106:9), and to lie waste, of a city or land without inhabitant (Jer 26:9); with it go חָרָבָה “dry ground”, חֹרֶב “dryness, heat, drought” and חָרְבָּה “a waste, a ruin”, the word for Jerusalem’s seventy years (Jer 25:11; Dan 9:2) and for the ruins that are to be built again (Isa 61:4; Ezk 36:33). The cognates show two older roots behind ח: ḥ in Arabic ḥarb “war” and ḥarba “javelin” and Ugaritic ḥrb “sword, knife”; ḫ in Arabic ḫariba “be in ruins”, Akkadian ḫarābu “be deserted” and Ugaritic ḫrb “dry up”. Scripture plays the two on one another: “a sword (חֶרֶב) upon the Chaldeans … a drought (חֹרֶב) upon her waters” (Jer 50:35–38).",
+  "words": [
+    {
+      "lemma": "חֶרֶב",
+      "bdb": [
+        "h.fk.ab"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "sword; a cutting blade; the sword as war and judgment",
+      "summary": "The common weapon of the Old Testament, over four hundred times: a blade with one “mouth” or two, worn in a sheath at the thigh, that “devours” flesh. The same word names other cutting blades (flint knives, a razor, a mason’s tool), and most often stands for war and slaughter themselves, above all as the judgment Yahweh sends. Its cognates show ḥ (Arabic ḥarba, ḥarb; Ugaritic ḥrb); the ḫ cognates of “be dry, be waste” count against it in the support table, being another older root in the same spelling.",
+      "cognate_ids": [
+        "ar-harba",
+        "uga-hrb",
+        "arc-harba"
+      ],
+      "senses": [
+        {
+          "id": "cherev-sword",
+          "gloss": "sword",
+          "definition": "The weapon of the fighting man: made by a smith, with a length and one or two edges (“mouths”), girded on the thigh in a sheath, drawn, and used to strike, pierce and behead.",
+          "evidence": [
+            {
+              "ref": "Jdg.3.16",
+              "role": "defining",
+              "note": "Ehud “made himself a sword, and it had two mouths, a cubit its length, and he girded it under his clothes on his right thigh”."
+            },
+            {
+              "ref": "1Sa.17.51",
+              "role": "defining",
+              "note": "David took the Philistine’s sword, “drew it from its sheath”, killed him and cut off his head with it."
+            },
+            {
+              "ref": "1Sa.13.19",
+              "role": "defining",
+              "note": "No smith in Israel, “lest the Hebrews make sword or spear”: a forged weapon."
+            },
+            {
+              "ref": "2Sa.20.8",
+              "note": "Joab’s sword “bound on his loins in its sheath”."
+            },
+            {
+              "ref": "1Sa.31.4",
+              "note": "“Draw your sword and pierce me with it”; Saul took the sword and fell on it."
+            },
+            {
+              "ref": "Gen.27.40",
+              "note": "Esau: “by your sword you shall live”."
+            },
+            {
+              "ref": "Gen.48.22",
+              "note": "Taken from the Amorite “with my sword and with my bow”."
+            },
+            {
+              "ref": "Sng.3.8",
+              "note": "Sixty mighty men, “each with his sword on his thigh”."
+            },
+            {
+              "ref": "Num.22.23",
+              "note": "The angel of Yahweh standing in the way, “his sword drawn in his hand”."
+            },
+            {
+              "ref": "1Ch.21.16",
+              "note": "The angel’s drawn sword stretched out over Jerusalem; in 1Ch 21:27 he returns it to its sheath."
+            },
+            {
+              "ref": "Gen.3.24",
+              "note": "The first sword of scripture: “the flame of the sword that turns every way, to guard the way of the tree of life”."
+            },
+            {
+              "ref": "Mat.26.52",
+              "note": "“All who take a sword will perish by a sword.”"
+            }
+          ]
+        },
+        {
+          "id": "cherev-tool",
+          "gloss": "knife, razor, cutting tool",
+          "definition": "A cutting blade other than a weapon: the flint knives of circumcision, a blade used as a barber’s razor, the tool that dresses stone, and the iron tools that break down towers.",
+          "cognate_ids": [
+            "uga-hrb",
+            "akk-harbu-plough"
+          ],
+          "evidence": [
+            {
+              "ref": "Jos.5.2",
+              "role": "defining",
+              "note": "“Make yourself חַרְבוֹת of flint and circumcise the sons of Israel”: knives."
+            },
+            {
+              "ref": "Jos.5.3"
+            },
+            {
+              "ref": "Ezk.5.1",
+              "role": "defining",
+              "note": "“Take a sharp חֶרֶב; as a barber’s razor you shall take it, and pass it over your head and your beard.”"
+            },
+            {
+              "ref": "Exo.20.25",
+              "role": "defining",
+              "note": "An altar of unhewn stones, “for you have wielded your חֶרֶב upon it and profaned it”: the stonecutter’s tool."
+            },
+            {
+              "ref": "Ezk.26.9",
+              "note": "“Your towers he will break down with his חַרְבוֹת.”"
+            }
+          ]
+        },
+        {
+          "id": "cherev-war",
+          "gloss": "the sword: war, slaughter, Yahweh’s judgment",
+          "definition": "The sword named for what it does: war and death by violence. It “passes through” a land, “devours”, pursues and bereaves; Yahweh brings it, calls for it and puts it in a king’s hand, and it stands first among his judgments with famine and plague. Its absence is peace.",
+          "cognate_ids": [
+            "ar-harb",
+            "gez-harb"
+          ],
+          "evidence": [
+            {
+              "ref": "Lev.26.25",
+              "role": "defining",
+              "note": "“I will bring upon you a sword avenging the vengeance of the covenant.”"
+            },
+            {
+              "ref": "Lev.26.6",
+              "role": "defining",
+              "note": "“I will give peace in the land … and a sword shall not pass through your land.”"
+            },
+            {
+              "ref": "Ezk.14.21",
+              "role": "defining",
+              "note": "“My four evil judgments: sword and famine and evil beast and plague.”"
+            },
+            {
+              "ref": "Ezk.14.17",
+              "note": "“If I bring a sword upon that land and say, Sword, pass through the land.”"
+            },
+            {
+              "ref": "Jer.14.12",
+              "note": "“By the sword and by the famine and by the plague I am consuming them.”"
+            },
+            {
+              "ref": "Jer.14.15",
+              "note": "The prophets who say “sword and famine shall not be in this land” shall perish by sword and famine."
+            },
+            {
+              "ref": "Deu.32.25",
+              "note": "“Outside the sword bereaves, and in the chambers terror.”"
+            },
+            {
+              "ref": "2Sa.12.10",
+              "note": "“The sword shall not depart from your house for ever.”"
+            },
+            {
+              "ref": "Isa.1.20",
+              "note": "“If you refuse and rebel, you shall be devoured by the sword.”"
+            },
+            {
+              "ref": "Lev.26.33",
+              "note": "“I will scatter you among the nations and draw out a sword after you.”"
+            },
+            {
+              "ref": "Jer.25.29",
+              "note": "“I am calling for a sword upon all the inhabitants of the earth.”"
+            },
+            {
+              "ref": "Jer.47.6",
+              "note": "“Ah, sword of Yahweh, how long till you are quiet? Gather yourself into your sheath.”"
+            },
+            {
+              "ref": "Isa.34.5",
+              "to": "Isa.34.6",
+              "note": "“My sword … shall come down on Edom”; “the sword of Yahweh is filled with blood”."
+            },
+            {
+              "ref": "Deu.32.41",
+              "to": "Deu.32.42",
+              "note": "“If I whet the lightning of my sword … my sword shall devour flesh.”"
+            },
+            {
+              "ref": "Ezk.21.8",
+              "note": "“I will bring out my sword from its sheath and cut off from you righteous and wicked.”"
+            },
+            {
+              "ref": "Ezk.30.24",
+              "to": "Ezk.30.25",
+              "note": "“I will put my sword in the hand of the king of Babylon.”"
+            },
+            {
+              "ref": "Psa.17.13",
+              "note": "“Deliver my soul from the wicked, your sword.”"
+            },
+            {
+              "ref": "Isa.31.8",
+              "note": "“Assyria shall fall by a sword not of man.”"
+            },
+            {
+              "ref": "Isa.66.16",
+              "note": "“By fire Yahweh enters into judgment, and by his sword with all flesh.”"
+            },
+            {
+              "ref": "Zec.13.7",
+              "note": "“Sword, awake against my shepherd”; the next words are quoted in Mat 26:31."
+            },
+            {
+              "ref": "Lam.5.9",
+              "note": "“The sword of the wilderness”: the raiders who make bread a risk of life."
+            },
+            {
+              "ref": "Luk.21.24",
+              "note": "“They will fall by the mouth of the sword”: the Hebrew phrase לְפִי־חֶרֶב, of Jerusalem."
+            },
+            {
+              "ref": "Rev.6.8",
+              "note": "“To kill with sword and with famine and with death and by the beasts of the earth”: the four judgments of Ezk 14:21."
+            }
+          ]
+        },
+        {
+          "id": "cherev-tongue",
+          "gloss": "a sword, of the tongue and of words",
+          "definition": "In comparison: words that wound are a sword, and the mouth of Yahweh’s servant is made like a sharp sword.",
+          "evidence": [
+            {
+              "ref": "Psa.57.5",
+              "role": "defining",
+              "note": "“Their teeth are spear and arrows, and their tongue a sharp sword.”"
+            },
+            {
+              "ref": "Psa.64.4",
+              "role": "defining",
+              "note": "“Who have whetted their tongue like the sword.”"
+            },
+            {
+              "ref": "Isa.49.2",
+              "role": "defining",
+              "note": "“He made my mouth like a sharp sword.”"
+            },
+            {
+              "ref": "Psa.59.8",
+              "note": "“Swords are in their lips.”"
+            },
+            {
+              "ref": "Pro.12.18",
+              "note": "Rash speech “like the piercings of a sword”."
+            },
+            {
+              "ref": "Pro.25.18",
+              "note": "A false witness is “a club and a sword and a sharp arrow”."
+            },
+            {
+              "ref": "Pro.5.4",
+              "note": "The strange woman’s end is “sharp as a sword of mouths”."
+            },
+            {
+              "ref": "Job.5.15",
+              "note": "“He saves from the sword, from their mouth.”"
+            },
+            {
+              "ref": "Heb.4.12",
+              "note": "“The word of God is living and active and sharper than any two-mouthed sword.”"
+            },
+            {
+              "ref": "Rev.19.15",
+              "note": "“From his mouth goes out a sharp sword, that with it he may strike the nations.”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ῥομφαία",
+          "gloss": "sword (a large blade)",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "חֶרֶב → ῥομφαία ×184 (lemma count, MACULA alignment); Gen.3.24, Ezk.14.21 and Zec.13.7, חֶרֶב → ῥομφαία"
+            },
+            {
+              "ref": "Rev.6.8",
+              "note": "The four judgments of Ezk 14:21."
+            },
+            {
+              "ref": "Rev.1.16",
+              "note": "“From his mouth a sharp two-mouthed sword going out.”"
+            },
+            {
+              "ref": "Rev.19.15"
+            },
+            {
+              "ref": "Luk.2.35",
+              "note": "“A sword will pass through your own soul also.”"
+            }
+          ]
+        },
+        {
+          "lemma": "μάχαιρα",
+          "gloss": "sword, knife",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "חֶרֶב → μάχαιρα ×130 (lemma count, MACULA alignment); Lev.26.25, Isa.2.4 and Isa.49.2, חֶרֶב → μάχαιρα"
+            },
+            {
+              "ref": "Luk.21.24",
+              "note": "στόματι μαχαίρας, “by the mouth of the sword”."
+            },
+            {
+              "ref": "Heb.11.34",
+              "note": "“Escaped the mouths of the sword.”"
+            },
+            {
+              "ref": "Heb.4.12"
+            },
+            {
+              "ref": "Eph.6.17",
+              "note": "“The sword of the spirit, which is the word of God.”"
+            },
+            {
+              "ref": "Mat.26.52"
+            },
+            {
+              "ref": "Rev.13.10",
+              "note": "“If anyone kills with the sword, with the sword he must be killed.”"
+            },
+            {
+              "ref": "Rom.13.4",
+              "note": "The ruler “does not bear the sword in vain”."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "קֶשֶׁת",
+            "note": "Sword and bow together are a man’s or a nation’s arms.",
+            "evidence": [
+              {
+                "ref": "Gen.48.22"
+              },
+              {
+                "ref": "Jos.24.12"
+              },
+              {
+                "ref": "Psa.44.7"
+              },
+              {
+                "ref": "Hos.1.7"
+              },
+              {
+                "ref": "Hos.2.20"
+              }
+            ]
+          },
+          {
+            "lemma": "חֲנִית",
+            "note": "Sword and spear.",
+            "evidence": [
+              {
+                "ref": "1Sa.13.19"
+              },
+              {
+                "ref": "1Sa.13.22"
+              },
+              {
+                "ref": "1Sa.17.45"
+              },
+              {
+                "ref": "1Sa.17.47"
+              },
+              {
+                "ref": "Isa.2.4"
+              }
+            ]
+          },
+          {
+            "lemma": "רָעָב",
+            "note": "Sword and famine, with plague (דֶּבֶר) the three that consume a people.",
+            "evidence": [
+              {
+                "ref": "Jer.14.12"
+              },
+              {
+                "ref": "Jer.14.15"
+              },
+              {
+                "ref": "Ezk.6.11"
+              },
+              {
+                "ref": "Ezk.14.21"
+              },
+              {
+                "ref": "Lam.4.9"
+              }
+            ]
+          },
+          {
+            "lemma": "מִלְחָמָה",
+            "note": "The sword stands beside battle and for it.",
+            "evidence": [
+              {
+                "ref": "Hos.1.7"
+              },
+              {
+                "ref": "Hos.2.20"
+              },
+              {
+                "ref": "Isa.22.2"
+              },
+              {
+                "ref": "Job.5.20"
+              }
+            ]
+          },
+          {
+            "lemma": "חֹרֶב",
+            "note": "Wordplay within the root: five times “a sword upon” Babylon’s people, then “a drought (חֹרֶב) upon her waters”; and the sword brought on Egypt makes it a חָרְבָּה.",
+            "evidence": [
+              {
+                "ref": "Jer.50.35",
+                "to": "Jer.50.38"
+              },
+              {
+                "ref": "Ezk.29.8",
+                "to": "Ezk.29.10"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "שָׁלוֹם",
+            "note": "Peace is the sword’s absence.",
+            "evidence": [
+              {
+                "ref": "Lev.26.6"
+              },
+              {
+                "ref": "Jer.4.10"
+              },
+              {
+                "ref": "Jer.12.12"
+              },
+              {
+                "ref": "Jer.14.13"
+              }
+            ]
+          },
+          {
+            "lemma": "אֵת",
+            "note": "The ploughshare: swords beaten into ploughshares, and before that ploughshares into swords.",
+            "evidence": [
+              {
+                "ref": "Isa.2.4"
+              },
+              {
+                "ref": "Mic.4.3"
+              },
+              {
+                "ref": "Jol.4.10"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "לְפִי־חֶרֶב",
+            "gloss": "by the mouth of the sword (its devouring edge)",
+            "evidence": [
+              {
+                "ref": "Jos.6.21"
+              },
+              {
+                "ref": "Jos.8.24"
+              },
+              {
+                "ref": "Luk.21.24"
+              },
+              {
+                "ref": "Heb.11.34"
+              }
+            ]
+          },
+          {
+            "phrase": "שֹׁלֵף חָרֶב",
+            "gloss": "drawing sword: a fighting man",
+            "evidence": [
+              {
+                "ref": "Jdg.8.10"
+              },
+              {
+                "ref": "Jdg.20.2"
+              }
+            ]
+          },
+          {
+            "phrase": "חֶרֶב פִּיפִיּוֹת",
+            "gloss": "a sword of mouths: two-edged",
+            "evidence": [
+              {
+                "ref": "Psa.149.6"
+              },
+              {
+                "ref": "Pro.5.4",
+                "note": "חֶרֶב פִּיּוֹת."
+              },
+              {
+                "ref": "Jdg.3.16",
+                "note": "“Two mouths.”"
+              },
+              {
+                "ref": "Heb.4.12"
+              }
+            ]
+          },
+          {
+            "phrase": "חַלְלֵי־חֶרֶב",
+            "gloss": "the slain of the sword",
+            "evidence": [
+              {
+                "ref": "Ezk.32.20"
+              },
+              {
+                "ref": "Isa.22.2"
+              },
+              {
+                "ref": "Lam.4.9"
+              }
+            ]
+          },
+          {
+            "phrase": "חֶרֶב לַיַהְוֶה",
+            "gloss": "a sword for Yahweh; the sword of Yahweh",
+            "evidence": [
+              {
+                "ref": "Jdg.7.20",
+                "note": "“A sword for Yahweh and for Gideon!”"
+              },
+              {
+                "ref": "Jer.47.6"
+              },
+              {
+                "ref": "Isa.34.6"
+              },
+              {
+                "ref": "Jer.12.12"
+              }
+            ]
+          },
+          {
+            "phrase": "בַּחֶרֶב בָּרָעָב וּבַדֶּבֶר",
+            "gloss": "by the sword, by the famine and by the plague",
+            "evidence": [
+              {
+                "ref": "Jer.14.12"
+              },
+              {
+                "ref": "Ezk.6.11"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "חָרֵב",
+      "bdb": [
+        "h.fi.aa"
+      ],
+      "pos": "verb",
+      "gloss": "be dry, dry up; be waste, lie in ruins; (hiphil) dry up, lay waste",
+      "summary": "Of waters: to be gone, leaving the ground bare (Gen 8:13). Of cities, lands and houses: to lie waste, without inhabitant (Jer 26:9). The two run together where rivers and springs are dried to make a land waste (Isa 42:15; Jer 51:36), and both show ḫ in the cognates (Ugaritic ḫrb “dry up”, Arabic ḫariba and Akkadian ḫarābu “be in ruins, deserted”), so they are one word; the ḥ cognates of the sword count against it in the support table, being another older root in the same spelling. The key’s 43 tokens include the four that belong to חָרַב “slay” (2Ki 3:23 twice; Jer 50:21, 27) and three of the adjective (Pro 17:1; Neh 2:3, 17).",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "be dry, dry up; be waste, desolate",
+          "senses": [
+            {
+              "id": "charev-dry",
+              "gloss": "be dry, dry up",
+              "definition": "Of water, a sea, a river or a spring: to go, so that the ground is left bare. It is set before יָבֵשׁ as the earlier stage: the waters had dried off the earth in the first month, and the earth was dry (יָבְשָׁה) in the second.",
+              "cognate_ids": [
+                "uga-khrb",
+                "arc-harev",
+                "arc-hurba"
+              ],
+              "evidence": [
+                {
+                  "ref": "Gen.8.13",
+                  "role": "defining",
+                  "note": "“The waters had dried from off the earth … the face of the ground had dried”; Gen 8:14 follows, “the earth was dry (יָבְשָׁה)”."
+                },
+                {
+                  "ref": "Psa.106.9",
+                  "role": "defining",
+                  "note": "“He rebuked the Sea of Reeds and it dried up, and he led them through the deeps as through the wilderness.”"
+                },
+                {
+                  "ref": "Isa.19.5",
+                  "role": "defining",
+                  "note": "“Waters shall fail from the sea, and the river shall dry up and be dry (יֶחֱרַב וְיָבֵשׁ).”"
+                },
+                {
+                  "ref": "Isa.19.6"
+                },
+                {
+                  "ref": "Job.14.11",
+                  "note": "“Waters go from the sea, and a river dries up and is dry.”"
+                },
+                {
+                  "ref": "Isa.44.27",
+                  "note": "“Who says to the deep, Be dry.”"
+                },
+                {
+                  "ref": "Hos.13.15",
+                  "note": "An east wind, the wind of Yahweh: “his spring shall dry up”."
+                }
+              ]
+            },
+            {
+              "id": "charev-waste",
+              "gloss": "be waste, desolate",
+              "definition": "Of a city, land, holy place or nation: to be laid in ruins and left without inhabitant.",
+              "cognate_ids": [
+                "ar-khariba",
+                "akk-harabu",
+                "arc-harev"
+              ],
+              "kin": [
+                "chorbah-ruin",
+                "charev-adj-waste"
+              ],
+              "evidence": [
+                {
+                  "ref": "Jer.26.9",
+                  "role": "defining",
+                  "note": "“This city shall be waste, without inhabitant.”"
+                },
+                {
+                  "ref": "Isa.34.10",
+                  "role": "defining",
+                  "note": "“From generation to generation it shall lie waste; for ever and ever none passing through it.”"
+                },
+                {
+                  "ref": "Ezk.12.20",
+                  "note": "“The inhabited cities shall be laid waste, and the land shall be a desolation.”"
+                },
+                {
+                  "ref": "Ezk.6.6",
+                  "note": "“The cities shall be laid waste and the high places desolate, so that your altars may be waste.”"
+                },
+                {
+                  "ref": "Amo.7.9",
+                  "note": "“The holy places of Israel shall be laid waste.”"
+                },
+                {
+                  "ref": "Isa.60.12",
+                  "note": "The nation that will not serve Zion shall perish: “those nations shall be utterly laid waste”."
+                },
+                {
+                  "ref": "Jer.2.12",
+                  "note": "To the heavens: “be appalled … be utterly desolate”."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "dry up; lay waste",
+          "senses": [
+            {
+              "id": "charev-make-dry",
+              "gloss": "dry up (waters)",
+              "definition": "To make a sea, river or stream dry: what Yahweh did at the Sea of Reeds and does by his rebuke, and what the king of Assyria boasted of.",
+              "cognate_ids": [
+                "uga-khrb",
+                "arc-harev"
+              ],
+              "kin": [
+                "charavah-dry-ground",
+                "chorev-dryness"
+              ],
+              "evidence": [
+                {
+                  "ref": "Isa.51.10",
+                  "role": "defining",
+                  "note": "“Was it not you who dried up the sea, the waters of the great deep, who made the depths of the sea a way for the redeemed to pass over?”"
+                },
+                {
+                  "ref": "Isa.50.2",
+                  "role": "defining",
+                  "note": "“By my rebuke I dry up the sea, I make rivers a wilderness; their fish stink for want of water.”"
+                },
+                {
+                  "ref": "Nam.1.4",
+                  "note": "“He rebukes the sea and makes it dry, and all the rivers he dries up.”"
+                },
+                {
+                  "ref": "Jer.51.36",
+                  "note": "Of Babylon: “I will dry up her sea and make her spring dry.”"
+                },
+                {
+                  "ref": "2Ki.19.24",
+                  "note": "Sennacherib: “with the sole of my feet I dry up all the streams of Egypt”."
+                },
+                {
+                  "ref": "Isa.37.25"
+                }
+              ]
+            },
+            {
+              "id": "charev-lay-waste",
+              "gloss": "lay waste",
+              "definition": "To make a land, its cities or its streets a ruin, so that none passes through.",
+              "cognate_ids": [
+                "ar-khariba",
+                "akk-harabu",
+                "arc-harev"
+              ],
+              "kin": [
+                "chorbah-ruin"
+              ],
+              "evidence": [
+                {
+                  "ref": "Zep.3.6",
+                  "role": "defining",
+                  "note": "“I have laid waste their streets, with none passing through; their cities are ruined, without a man, without inhabitant.”"
+                },
+                {
+                  "ref": "2Ki.19.17",
+                  "role": "defining",
+                  "note": "“The kings of Assyria have laid waste the nations and their land.”"
+                },
+                {
+                  "ref": "Isa.37.18"
+                },
+                {
+                  "ref": "Jdg.16.24",
+                  "note": "Samson, “the waster of our land”."
+                },
+                {
+                  "ref": "Ezk.19.7",
+                  "note": "“He laid waste their cities, and the land was desolate.”"
+                },
+                {
+                  "ref": "Isa.49.17",
+                  "note": "“Those who tore you down and laid you waste shall go out from you.”"
+                },
+                {
+                  "ref": "Isa.42.15",
+                  "note": "“I will lay waste mountains and hills and dry up (אוֹבִישׁ) all their herbage”: waste by drying."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be laid waste",
+          "senses": [
+            {
+              "id": "laid-waste-of-cities",
+              "gloss": "laid waste (of cities)",
+              "definition": "A city made a ruin, like cities that are not inhabited.",
+              "cognate_ids": [
+                "ar-khariba",
+                "akk-harabu",
+                "arc-harev"
+              ],
+              "kin": [
+                "chorbah-ruin"
+              ],
+              "evidence": [
+                {
+                  "ref": "Ezk.26.19",
+                  "role": "defining",
+                  "note": "“When I make you a city laid waste, like the cities that are not inhabited.”"
+                },
+                {
+                  "ref": "Ezk.30.7",
+                  "note": "Egypt’s cities “in the midst of cities laid waste”."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hophal",
+          "gloss": "be laid waste",
+          "senses": [
+            {
+              "id": "be-laid-waste",
+              "gloss": "be laid waste",
+              "definition": "To have been made a ruin: said of Jerusalem by Tyre, and of the cities among which Egypt’s will lie.",
+              "cognate_ids": [
+                "ar-khariba",
+                "akk-harabu",
+                "arc-harev"
+              ],
+              "kin": [
+                "chorbah-ruin",
+                "arc-charav-waste"
+              ],
+              "evidence": [
+                {
+                  "ref": "Ezk.26.2",
+                  "role": "defining",
+                  "note": "Tyre of Jerusalem: “I shall be filled; she is laid waste.”"
+                },
+                {
+                  "ref": "Ezk.29.12",
+                  "note": "“Her cities shall be a desolation forty years in the midst of cities laid waste.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be dried",
+          "senses": [
+            {
+              "id": "dried-of-cords",
+              "gloss": "dried (of cords)",
+              "definition": "Of fresh cords: dried out, no longer moist.",
+              "cognate_ids": [
+                "uga-khrb"
+              ],
+              "kin": [
+                "charev-adj-dry"
+              ],
+              "evidence": [
+                {
+                  "ref": "Jdg.16.7",
+                  "role": "defining",
+                  "note": "“Seven fresh cords that have not been dried.”"
+                },
+                {
+                  "ref": "Jdg.16.8"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἐρημόω",
+          "gloss": "lay waste, make desolate",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Ezk.26.19, נֶחֱרֶבֶת → ἠρημωμένην; Isa.34.10 and Jer.26.9, תֶּחֱרָב → ἐρημωθήσεται"
+            },
+            {
+              "ref": "Rev.18.19",
+              "note": "Of Babylon the great: “in one hour she was laid waste”."
+            },
+            {
+              "ref": "Mat.12.25",
+              "note": "“Every kingdom divided against itself is laid waste.”"
+            },
+            {
+              "ref": "Rev.17.16"
+            }
+          ]
+        },
+        {
+          "lemma": "ξηραίνω",
+          "gloss": "dry up",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.106.9, וַיֶּחֱרָב → ξηραίνω (lemma)"
+            },
+            {
+              "ref": "Rev.16.12",
+              "note": "The water of the great river Euphrates “was dried up”, as Babylon’s waters in Jer 50:38 and 51:36."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "יָבֵשׁ",
+            "note": "“Be dry”: the pair for waters that fail, with חָרֵב first.",
+            "evidence": [
+              {
+                "ref": "Gen.8.13",
+                "to": "Gen.8.14"
+              },
+              {
+                "ref": "Isa.19.5"
+              },
+              {
+                "ref": "Job.14.11"
+              },
+              {
+                "ref": "Jer.51.36"
+              },
+              {
+                "ref": "Nam.1.4"
+              }
+            ]
+          },
+          {
+            "lemma": "שָׁמֵם",
+            "note": "“Be desolate”: the pair for cities and lands laid waste.",
+            "evidence": [
+              {
+                "ref": "Ezk.6.6"
+              },
+              {
+                "ref": "Ezk.12.20"
+              },
+              {
+                "ref": "Amo.7.9"
+              },
+              {
+                "ref": "Ezk.19.7"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "יָשַׁב",
+            "note": "To be waste is to be without one dwelling there.",
+            "evidence": [
+              {
+                "ref": "Jer.26.9"
+              },
+              {
+                "ref": "Ezk.26.19"
+              },
+              {
+                "ref": "Zep.3.6"
+              },
+              {
+                "ref": "Ezk.12.20"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "חָרְבָּה",
+      "bdb": [
+        "h.fj.ae"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "a waste, a ruin; (plural) ruins, waste places",
+      "summary": "What a city, house or land is when it has been laid waste: a place without inhabitant, its buildings down. It is the standing word for what Jerusalem, Judah’s cities and the house of Yahweh became under Babylon, and its plural for the ruins that are to be built and inhabited again. Its cognates show ḫ (Arabic ḫarāb, ḫirba “a ruin”; Akkadian ḫarbu, ḫuribtu “waste land, desert”); the sword’s ḥ cognates count against it in the support table.",
+      "cognate_ids": [
+        "ar-kharab",
+        "akk-harbu",
+        "arc-hurba"
+      ],
+      "senses": [
+        {
+          "id": "chorbah-ruin",
+          "gloss": "a waste, a ruin",
+          "definition": "A city, house or land laid waste and left without dweller; in the plural, its ruins. What is done to a חָרְבָּה when it is restored is to build it and to dwell in it.",
+          "kin": [
+            "charev-waste",
+            "charev-lay-waste",
+            "charev-adj-waste",
+            "chorev-desolation"
+          ],
+          "evidence": [
+            {
+              "ref": "Jer.44.2",
+              "role": "defining",
+              "note": "Jerusalem and the cities of Judah: “behold, they are a waste this day, and there is no dweller in them”."
+            },
+            {
+              "ref": "Lev.26.31",
+              "role": "defining",
+              "note": "“I will make your cities a waste and make your holy places desolate.”"
+            },
+            {
+              "ref": "Lev.26.33",
+              "note": "“Your land shall be a desolation and your cities a waste.”"
+            },
+            {
+              "ref": "Jer.22.5",
+              "role": "defining",
+              "note": "“By myself I have sworn that this house shall become a waste.”"
+            },
+            {
+              "ref": "Jer.7.34",
+              "note": "No voice of joy, of bridegroom or bride, “for the land shall become a waste”."
+            },
+            {
+              "ref": "Jer.25.11",
+              "role": "defining",
+              "note": "“All this land shall be a waste, a desolation, and these nations shall serve the king of Babylon seventy years.”"
+            },
+            {
+              "ref": "Dan.9.2",
+              "note": "“To fulfil the wastes of Jerusalem, seventy years.”"
+            },
+            {
+              "ref": "Jer.25.18"
+            },
+            {
+              "ref": "Jer.27.17",
+              "note": "“Why should this city become a waste?”"
+            },
+            {
+              "ref": "Jer.44.22",
+              "note": "“Your land became a waste and a horror and a curse, without dweller.”"
+            },
+            {
+              "ref": "Isa.64.10",
+              "note": "The holy house burned, “and all our pleasant things have become a waste”."
+            },
+            {
+              "ref": "Ezk.5.14"
+            },
+            {
+              "ref": "Ezk.35.4",
+              "note": "Of Mount Seir: “your cities I will make a waste”."
+            },
+            {
+              "ref": "Mal.1.4",
+              "role": "defining",
+              "note": "Edom: “we will return and build the ruins”; “they may build, but I will tear down”."
+            },
+            {
+              "ref": "Ezk.36.10",
+              "note": "“The cities shall be inhabited and the ruins built.”"
+            },
+            {
+              "ref": "Ezk.36.33"
+            },
+            {
+              "ref": "Isa.44.26",
+              "note": "Of Jerusalem, “she shall be inhabited”; of Judah’s cities, “they shall be built, and her ruins I will raise up”."
+            },
+            {
+              "ref": "Isa.58.12",
+              "note": "“They shall build the ruins of old.”"
+            },
+            {
+              "ref": "Isa.61.4",
+              "note": "“They shall build the ruins of old … and renew the cities of waste.”"
+            },
+            {
+              "ref": "Isa.51.3",
+              "note": "“Yahweh comforts Zion, he comforts all her ruins, and makes her wilderness like Eden.”"
+            },
+            {
+              "ref": "Isa.52.9",
+              "note": "“Break out, sing together, ruins of Jerusalem.”"
+            },
+            {
+              "ref": "Ezr.9.9",
+              "note": "“To raise up the house of our God and to set up its ruins.”"
+            },
+            {
+              "ref": "Ezk.38.8",
+              "note": "“The mountains of Israel, which had been a continual waste.”"
+            },
+            {
+              "ref": "Ezk.38.12",
+              "note": "“Ruins now inhabited.”"
+            },
+            {
+              "ref": "Ezk.33.24",
+              "note": "“The dwellers of these ruins on the ground of Israel.”"
+            },
+            {
+              "ref": "Ezk.13.4",
+              "note": "“Like foxes among ruins.”"
+            },
+            {
+              "ref": "Psa.102.7",
+              "note": "“Like an owl of the ruins.”"
+            },
+            {
+              "ref": "Job.3.14",
+              "note": "Kings and counsellors “who built ruins for themselves”."
+            },
+            {
+              "ref": "Isa.48.21",
+              "note": "“They did not thirst when he led them through the wastes; he made water flow from the rock”: the dry wilderness."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἔρημος",
+          "gloss": "desolate; a desert place",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Lev.26.31 and Isa.61.4, חָרְבָּה → ἔρημος; Lev.26.33 and Ezk.36.33, → ἔρημοι"
+            },
+            {
+              "ref": "Mat.23.38",
+              "note": "“Behold, your house is left to you desolate”: Jer 22:5, “this house shall become a waste”."
+            },
+            {
+              "ref": "Act.1.20",
+              "note": "“Let his dwelling become desolate, and let there be no one dwelling in it.”"
+            }
+          ]
+        },
+        {
+          "lemma": "ἐρήμωσις",
+          "gloss": "a laying waste, desolation",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Jer.7.34 and Jer.22.5, חָרְבָּה → ἐρήμωσιν"
+            },
+            {
+              "ref": "Luk.21.20",
+              "note": "Jerusalem surrounded by armies: “know that her desolation has come near”."
+            },
+            {
+              "ref": "Mat.24.15",
+              "note": "“The abomination of the desolation, spoken of through Daniel the prophet.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "שְׁמָמָה",
+            "note": "“Desolation”, with שַׁמָּה “a horror”: the words heaped beside it.",
+            "evidence": [
+              {
+                "ref": "Lev.26.33"
+              },
+              {
+                "ref": "Jer.25.11"
+              },
+              {
+                "ref": "Jer.44.6"
+              },
+              {
+                "ref": "Ezk.29.9"
+              },
+              {
+                "ref": "Ezk.35.4"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "בָּנָה",
+            "note": "Ruins are built again.",
+            "evidence": [
+              {
+                "ref": "Isa.44.26"
+              },
+              {
+                "ref": "Isa.58.12"
+              },
+              {
+                "ref": "Isa.61.4"
+              },
+              {
+                "ref": "Ezk.36.10"
+              },
+              {
+                "ref": "Ezk.36.33"
+              },
+              {
+                "ref": "Mal.1.4"
+              }
+            ]
+          },
+          {
+            "lemma": "עֵדֶן",
+            "note": "The waste land made like the garden of Eden.",
+            "evidence": [
+              {
+                "ref": "Isa.51.3"
+              },
+              {
+                "ref": "Ezk.36.35"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "חָרְבוֹת עוֹלָם",
+            "gloss": "ruins of old; lasting wastes",
+            "evidence": [
+              {
+                "ref": "Isa.58.12"
+              },
+              {
+                "ref": "Isa.61.4"
+              },
+              {
+                "ref": "Jer.25.9"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "חֹרֶב",
+      "bdb": [
+        "h.fi.ac"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "dryness; heat; drought; waste",
+      "summary": "The state of being חָרֵב: the dryness of ground without dew, the heat of the day that parches, drought on a land and its waters, and the waste of ruined cities. Its cognates show ḫ; the sword’s ḥ cognates count against it in the support table. For the sense “heat” only the Aramaic noun חוּרְבָּא “heat, dryness” was found, which does not show the older sound, so that sense rests chiefly on its verses.",
+      "senses": [
+        {
+          "id": "chorev-dryness",
+          "gloss": "dryness; drought",
+          "definition": "The absence of moisture: ground with no dew on it, and the drought called down on a land, its produce and its waters.",
+          "cognate_ids": [
+            "uga-khrb",
+            "arc-hurba"
+          ],
+          "kin": [
+            "charev-dry",
+            "charev-make-dry",
+            "charavah-dry-ground"
+          ],
+          "evidence": [
+            {
+              "ref": "Jdg.6.37",
+              "role": "defining",
+              "note": "“If there is dew on the fleece alone, and dryness on all the ground.”"
+            },
+            {
+              "ref": "Jdg.6.39"
+            },
+            {
+              "ref": "Jdg.6.40",
+              "note": "“There was dryness on the fleece alone, and on all the ground there was dew.”"
+            },
+            {
+              "ref": "Hag.1.11",
+              "role": "defining",
+              "note": "“I called for a drought on the land and on the mountains, on the grain, the new wine and the oil”; the heavens had withheld dew (Hag 1:10)."
+            },
+            {
+              "ref": "Jer.50.38",
+              "note": "“A drought upon her waters, and they shall dry up.”"
+            }
+          ]
+        },
+        {
+          "id": "chorev-heat",
+          "gloss": "heat",
+          "definition": "The parching heat of the day, set against the frost of the night and escaped in the shade.",
+          "evidence": [
+            {
+              "ref": "Gen.31.40",
+              "role": "defining",
+              "note": "“By day the heat consumed me, and the frost by night.”"
+            },
+            {
+              "ref": "Jer.36.30",
+              "role": "defining",
+              "note": "Jehoiakim’s body “cast out to the heat by day and to the frost by night”."
+            },
+            {
+              "ref": "Isa.4.6",
+              "note": "“A booth for shade by day from the heat.”"
+            },
+            {
+              "ref": "Isa.25.4",
+              "to": "Isa.25.5",
+              "note": "“A shade from the heat … as heat in a dry place … heat by the shade of a cloud.”"
+            },
+            {
+              "ref": "Job.30.30",
+              "note": "“My bones burn with heat.”"
+            }
+          ],
+          "cognate_ids": [
+            "arc-hurba"
+          ]
+        },
+        {
+          "id": "chorev-desolation",
+          "gloss": "waste, desolation",
+          "definition": "The ruined state of cities and lands, beside חָרְבָּה.",
+          "cognate_ids": [
+            "ar-kharab",
+            "akk-harbu",
+            "arc-hurba"
+          ],
+          "kin": [
+            "chorbah-ruin",
+            "charev-waste"
+          ],
+          "evidence": [
+            {
+              "ref": "Isa.61.4",
+              "role": "defining",
+              "note": "“They shall renew the cities of waste, the desolations of generation and generation”, beside “the ruins (חָרְבוֹת) of old”."
+            },
+            {
+              "ref": "Ezk.29.10",
+              "role": "defining",
+              "note": "Egypt made “wastes of waste (חָרְבוֹת חֹרֶב), a desolation”."
+            },
+            {
+              "ref": "Jer.49.13",
+              "note": "Bozrah “a horror, a reproach, a waste and a curse”, her cities “lasting ruins”."
+            },
+            {
+              "ref": "Zep.2.14",
+              "note": "Of Nineveh: “waste is in the threshold”."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "opposites": [
+          {
+            "lemma": "טַל",
+            "note": "Dew, against dryness.",
+            "evidence": [
+              {
+                "ref": "Jdg.6.37"
+              },
+              {
+                "ref": "Jdg.6.40"
+              }
+            ]
+          },
+          {
+            "lemma": "קֶרַח",
+            "note": "Frost by night, against heat by day.",
+            "evidence": [
+              {
+                "ref": "Gen.31.40"
+              },
+              {
+                "ref": "Jer.36.30"
+              }
+            ]
+          },
+          {
+            "lemma": "צֵל",
+            "note": "Shade, the shelter from heat.",
+            "evidence": [
+              {
+                "ref": "Isa.4.6"
+              },
+              {
+                "ref": "Isa.25.4"
+              },
+              {
+                "ref": "Isa.25.5"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "חָרֵב",
+      "bdb": [
+        "h.fi.ab"
+      ],
+      "pos": "adjective",
+      "gloss": "dry; waste, in ruins",
+      "summary": "The adjective of the verb, in both its senses: dry, of food with no oil or relish, and waste, of a place, city or house without man or beast. Its cognates show ḫ; the sword’s ḥ cognates count against it in the support table.",
+      "senses": [
+        {
+          "id": "charev-adj-dry",
+          "gloss": "dry",
+          "definition": "Of food: with nothing moist added, the grain offering not mixed with oil and the bare morsel of bread.",
+          "cognate_ids": [
+            "uga-khrb"
+          ],
+          "kin": [
+            "charev-dry"
+          ],
+          "evidence": [
+            {
+              "ref": "Lev.7.10",
+              "role": "defining",
+              "note": "“Every grain offering, mixed with oil or dry.”"
+            },
+            {
+              "ref": "Pro.17.1",
+              "role": "defining",
+              "note": "“Better a dry morsel and quiet with it than a house full of sacrifices of strife.”"
+            }
+          ]
+        },
+        {
+          "id": "charev-adj-waste",
+          "gloss": "waste, in ruins",
+          "definition": "Of a place, city or house: lying in ruins, without man and without beast.",
+          "cognate_ids": [
+            "ar-kharab",
+            "akk-harbu",
+            "arc-harev"
+          ],
+          "kin": [
+            "charev-waste",
+            "chorbah-ruin"
+          ],
+          "evidence": [
+            {
+              "ref": "Jer.33.10",
+              "role": "defining",
+              "note": "“This place, of which you say, It is waste, without man and without beast.”"
+            },
+            {
+              "ref": "Jer.33.12"
+            },
+            {
+              "ref": "Neh.2.3",
+              "role": "defining",
+              "note": "“The city, the place of my fathers’ graves, lies waste, and its gates are consumed with fire.”"
+            },
+            {
+              "ref": "Neh.2.17"
+            },
+            {
+              "ref": "Hag.1.4",
+              "note": "“Is it a time for you to dwell in your panelled houses, while this house lies waste?”"
+            },
+            {
+              "ref": "Hag.1.9",
+              "note": "“Because of my house, which lies waste”: and for it a חֹרֶב is called on the land (Hag 1:11)."
+            },
+            {
+              "ref": "Ezk.36.35",
+              "note": "“The waste and desolate and torn-down cities are fortified and inhabited.”"
+            },
+            {
+              "ref": "Ezk.36.38",
+              "note": "“The waste cities shall be full of flocks of men.”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἔρημος",
+          "gloss": "desolate",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Jer.33.10 and Hag.1.9, חָרֵב → ἔρημος; Ezk.36.35, חֳרֵבוֹת → ἔρημοι"
+            },
+            {
+              "ref": "Mat.23.38",
+              "note": "“Your house is left to you desolate”, as Haggai’s “this house lies waste”."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "opposites": [
+          {
+            "lemma": "בָּלַל",
+            "note": "“Mixed with oil”, against the dry grain offering.",
+            "evidence": [
+              {
+                "ref": "Lev.7.10"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "חָרָבָה",
+      "bdb": [
+        "h.fi.ad"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "dry ground, dry land",
+      "summary": "Ground with no water on it, set against sea and river: the land on which every breathing thing died in the flood, and the bed of the Sea of Reeds and of the Jordan when their waters were parted. Its only cognates are those of “dry up” (ḫ); the sword’s ḥ cognates count against it in the support table.",
+      "cognate_ids": [
+        "uga-khrb"
+      ],
+      "senses": [
+        {
+          "id": "charavah-dry-ground",
+          "gloss": "dry ground, dry land",
+          "definition": "Land as against water: the earth where creatures live, set beside the sea, and the bed of a sea or river from which the water has gone.",
+          "kin": [
+            "charev-dry",
+            "charev-make-dry",
+            "chorev-dryness"
+          ],
+          "evidence": [
+            {
+              "ref": "Exo.14.21",
+              "role": "defining",
+              "note": "“Yahweh drove the sea by a strong east wind all the night, and made the sea dry ground, and the waters were divided”; Exo 14:22 calls it יַבָּשָׁה."
+            },
+            {
+              "ref": "Gen.7.22",
+              "role": "defining",
+              "note": "“All in whose nostrils was the breath of the spirit of life, of all that was on the dry land, died.”"
+            },
+            {
+              "ref": "Hag.2.6",
+              "role": "defining",
+              "note": "“The heavens and the earth and the sea and the dry land.”"
+            },
+            {
+              "ref": "Jos.3.17",
+              "note": "The priests stood “on dry ground in the midst of the Jordan”, and all Israel crossed on dry ground."
+            },
+            {
+              "ref": "Jos.4.18"
+            },
+            {
+              "ref": "2Ki.2.8",
+              "note": "Elijah struck the waters, “and they two crossed on dry ground”."
+            },
+            {
+              "ref": "Ezk.30.12",
+              "note": "“I will make the rivers dry ground.”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ξηρός",
+          "gloss": "dry; (feminine) the dry land",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "חָרָבָה → ξηρός ×5 (lemma count, MACULA alignment); Gen.7.22, Exo.14.21 and Hag.2.6, חָרָבָה → ξηρός"
+            },
+            {
+              "ref": "Heb.11.29",
+              "note": "“By faith they passed through the Red Sea as through dry land.”"
+            },
+            {
+              "ref": "Mat.23.15",
+              "note": "“You go about the sea and the dry land.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "יַבָּשָׁה",
+            "note": "“The dry land”: the same sea-bed in the next verse.",
+            "evidence": [
+              {
+                "ref": "Exo.14.21",
+                "to": "Exo.14.22"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "יָם",
+            "note": "Sea against dry land.",
+            "evidence": [
+              {
+                "ref": "Hag.2.6"
+              },
+              {
+                "ref": "Exo.14.21"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "חָרַב",
+      "bdb": [
+        "h.fk.aa"
+      ],
+      "pos": "verb",
+      "gloss": "put to the sword, slay; (niphal) fight one another",
+      "summary": "The verb of חֶרֶב, in four places only: the command to slay Babylon’s people and her bulls, and Moab’s guess that the three kings had turned their swords on each other. The key’s count of 43 is by spelling and belongs almost wholly to חָרֵב “be dry, be waste”; these four tokens are what scripture gives, so the sense rests on little. Arabic ḥāraba “wage war with” and taḥārabū “they warred with one another” (ḥ) share it; the ḫ cognates of “be waste” count against it in the support table, and the two passages could also be read as that verb (“lay waste”, “the kings are destroyed”).",
+      "cognate_ids": [
+        "ar-haraba",
+        "ar-harb",
+        "gez-harb"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "put to the sword, slay",
+          "senses": [
+            {
+              "id": "charav-slay",
+              "gloss": "slay",
+              "definition": "To kill with the sword: commanded against the dwellers of a land and against bulls that go down to the slaughter.",
+              "kin": [
+                "cherev-war"
+              ],
+              "evidence": [
+                {
+                  "ref": "Jer.50.27",
+                  "role": "defining",
+                  "note": "“Slay all her bulls; let them go down to the slaughter.”"
+                },
+                {
+                  "ref": "Jer.50.21",
+                  "note": "“Go up against the land … slay and devote to destruction after them”; Jer 50:35–37 follows with “a sword upon the Chaldeans”."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "fight one another with the sword",
+          "senses": [
+            {
+              "id": "fight-one-another",
+              "gloss": "fight one another",
+              "definition": "Of allied kings: to turn the sword on each other, explained in the next clause as “they have struck each man his fellow”. The infinitive before it is pointed as a hophal.",
+              "kin": [
+                "cherev-war"
+              ],
+              "evidence": [
+                {
+                  "ref": "2Ki.3.23",
+                  "role": "defining",
+                  "note": "“This is blood: the kings have surely fought one another (הָחֳרֵב נֶחֶרְבוּ) and struck each man his fellow.”"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חֵרָבוֹן",
+      "bdb": [
+        "h.fi.ae"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "dry heat, drought (of summer)",
+      "summary": "Once only, in the plural: the dry heats of summer under which a man’s moisture is turned. One use is little to fix it by; the sense is that of חֹרֶב “dryness, heat”. The sword’s ḥ cognates count against it in the support table.",
+      "cognate_ids": [
+        "uga-khrb",
+        "arc-hurba"
+      ],
+      "senses": [
+        {
+          "id": "dry-heat-of-summer",
+          "gloss": "dry heat of summer",
+          "definition": "The parching of the summer season, a figure for the wasting of one who keeps silent about his sin.",
+          "kin": [
+            "chorev-dryness",
+            "chorev-heat"
+          ],
+          "evidence": [
+            {
+              "ref": "Psa.32.4",
+              "role": "defining",
+              "note": "“Day and night your hand was heavy on me; my moisture was turned in the droughts of summer.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חֲרַב",
+      "lang": "arc",
+      "bdb": [
+        "xh.an.aa"
+      ],
+      "pos": "verb",
+      "gloss": "(hophal) be laid waste",
+      "summary": "Ezra’s Aramaic, once, in the letter against the Jews: the reason Jerusalem lay in ruins. One use; the sense is that of the Hebrew hophal and of the Peshitta’s verb. The sword’s ḥ cognates count against it in the support table.",
+      "cognate_ids": [
+        "ar-khariba",
+        "akk-harabu",
+        "arc-harev"
+      ],
+      "stems": [
+        {
+          "stem": "hophal",
+          "gloss": "be laid waste",
+          "senses": [
+            {
+              "id": "arc-charav-waste",
+              "gloss": "be laid waste (of a city)",
+              "definition": "Of Jerusalem: made a ruin for its revolts.",
+              "kin": [
+                "charev-waste",
+                "chorbah-ruin"
+              ],
+              "evidence": [
+                {
+                  "ref": "Ezr.4.15",
+                  "role": "defining",
+                  "note": "“That city is a rebellious city … for this that city was laid waste.”"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חַרְבָּא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "sword; slaughter; ploughshare",
+      "summary": "The Peshitta’s ܚܪܒܐ (ḥarbā), the word of Hebrew חֶרֶב: the sword, for μάχαιρα and ῥομφαία; the slaughter it makes; and the blade of the plough.",
+      "cognate_ids": [
+        "ar-harba",
+        "uga-hrb",
+        "arc-harba"
+      ],
+      "senses": [
+        {
+          "id": "sword",
+          "gloss": "sword",
+          "definition": "The weapon, and the war and death it brings.",
+          "kin": [
+            "cherev-sword",
+            "cherev-war"
+          ],
+          "cognate_ids": [
+            "ar-harb",
+            "gez-harb"
+          ],
+          "evidence": [
+            {
+              "ref": "Luk.21.24",
+              "role": "defining",
+              "note": "“They will fall by the mouth of the sword (ܚܪܒܐ).”"
+            },
+            {
+              "ref": "Mat.10.34",
+              "role": "defining",
+              "note": "“I did not come to cast peace, but a sword”: set against peace."
+            },
+            {
+              "ref": "Rev.6.8",
+              "note": "“To kill with sword and with famine and with death.”"
+            },
+            {
+              "ref": "Rev.6.4",
+              "note": "“A great sword was given to him.”"
+            },
+            {
+              "ref": "Rev.13.10"
+            },
+            {
+              "ref": "Rev.2.12",
+              "note": "“He who has the sharp sword.”"
+            },
+            {
+              "ref": "Rev.2.16",
+              "note": "“I will make war on them with the sword of my mouth.”"
+            },
+            {
+              "ref": "Rev.19.15"
+            },
+            {
+              "ref": "Rev.19.21"
+            }
+          ]
+        },
+        {
+          "id": "slaughter",
+          "gloss": "slaughter",
+          "definition": "A killing by the sword.",
+          "kin": [
+            "cherev-war",
+            "charav-slay"
+          ],
+          "cognate_ids": [
+            "ar-harb",
+            "gez-harb"
+          ],
+          "evidence": [
+            {
+              "ref": "Heb.7.1",
+              "role": "defining",
+              "note": "Abraham “returning from the slaughter (ܚܪܒܐ) of the kings”."
+            },
+            {
+              "ref": "2Pe.2.12",
+              "note": "Beasts “for slaughter and corruption”."
+            }
+          ]
+        },
+        {
+          "id": "ploughshare",
+          "gloss": "ploughshare",
+          "definition": "The cutting blade of the plough.",
+          "kin": [
+            "cherev-tool"
+          ],
+          "cognate_ids": [
+            "akk-harbu-plough"
+          ],
+          "evidence": [
+            {
+              "ref": "Luk.9.62",
+              "role": "defining",
+              "note": "“No one who puts his hand on the share (ܚܪܒܐ) of the plough and looks back is fit for the kingdom of God.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חוּרְבָּא",
+      "lang": "syc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "wilderness, desert place; desolation",
+      "summary": "The Peshitta’s ܚܘܪܒܐ (ḥurbā), its usual word for ἔρημος, the wilderness and the lonely place, and for ἐρήμωσις, the laying waste of Jerusalem.",
+      "cognate_ids": [
+        "ar-kharab",
+        "akk-harbu",
+        "arc-hurba"
+      ],
+      "senses": [
+        {
+          "id": "wilderness-desert-place",
+          "gloss": "wilderness, desert place",
+          "definition": "Uninhabited country: the wilderness of Judea, and any lonely place away from the towns.",
+          "kin": [
+            "chorbah-ruin"
+          ],
+          "evidence": [
+            {
+              "ref": "Mat.3.1",
+              "role": "defining",
+              "note": "John “preaching in the wilderness (ܚܘܪܒܐ) of Judea”."
+            },
+            {
+              "ref": "Mat.3.3",
+              "note": "“The voice of one crying in the wilderness.”"
+            },
+            {
+              "ref": "Mat.14.13",
+              "role": "defining",
+              "note": "Jesus withdrew “to a desert place”, away from the cities."
+            },
+            {
+              "ref": "Heb.11.38",
+              "note": "“Wandering in the desert and in mountains and caves.”"
+            },
+            {
+              "ref": "Rev.12.6",
+              "note": "“The woman fled into the wilderness.”"
+            }
+          ]
+        },
+        {
+          "id": "desolation",
+          "gloss": "desolation",
+          "definition": "The laying waste of a city.",
+          "kin": [
+            "chorbah-ruin",
+            "chorev-desolation"
+          ],
+          "evidence": [
+            {
+              "ref": "Luk.21.20",
+              "role": "defining",
+              "note": "Jerusalem surrounded by an army: “know that her desolation (ܚܘܪܒܗ) has come near”."
+            },
+            {
+              "ref": "Mat.24.15",
+              "note": "“The unclean sign of desolation, spoken of by Daniel the prophet.”"
+            },
+            {
+              "ref": "Mrk.13.14"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חֲרֵב",
+      "lang": "syc",
+      "pos": "verb",
+      "gloss": "be laid waste; lay waste",
+      "summary": "The Peshitta’s ܚܪܒ (ḥreb), for ἐρημόω: a kingdom or city laid waste; and, transitive, Saul laying waste the ecclesia.",
+      "cognate_ids": [
+        "ar-khariba",
+        "akk-harabu",
+        "arc-harev"
+      ],
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "be laid waste; lay waste",
+          "senses": [
+            {
+              "id": "be-laid-waste-2",
+              "gloss": "be laid waste",
+              "definition": "Of a kingdom or a city: to come to ruin.",
+              "kin": [
+                "charev-waste"
+              ],
+              "evidence": [
+                {
+                  "ref": "Mat.12.25",
+                  "role": "defining",
+                  "note": "“Every kingdom divided against itself will be laid waste (ܬܚܪܒ).”"
+                },
+                {
+                  "ref": "Luk.11.17"
+                },
+                {
+                  "ref": "Rev.18.19",
+                  "note": "The great city: “in one hour she was laid waste”."
+                }
+              ]
+            },
+            {
+              "id": "lay-waste",
+              "gloss": "lay waste",
+              "definition": "To ravage, of a persecutor.",
+              "kin": [
+                "charev-lay-waste"
+              ],
+              "evidence": [
+                {
+                  "ref": "Gal.1.13",
+                  "role": "defining",
+                  "note": "“I was persecuting the ecclesia of God beyond measure and laying it waste.”"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חַרְבָּא",
+      "lang": "syc",
+      "pos": "adjective",
+      "gloss": "waste, desolate",
+      "summary": "The Peshitta’s adjective ܚܪܒܐ (ḥarbā), spelt like the sword: of a house or dwelling left desolate.",
+      "cognate_ids": [
+        "ar-kharab",
+        "akk-harbu",
+        "arc-harev"
+      ],
+      "senses": [
+        {
+          "id": "desolate",
+          "gloss": "desolate",
+          "definition": "Of a house, a dwelling or a city: left empty, laid waste.",
+          "kin": [
+            "charev-adj-waste",
+            "chorbah-ruin"
+          ],
+          "evidence": [
+            {
+              "ref": "Mat.23.38",
+              "role": "defining",
+              "note": "“Behold, your house is left to you desolate (ܚܪܒܐ).”"
+            },
+            {
+              "ref": "Luk.13.35"
+            },
+            {
+              "ref": "Act.1.20",
+              "note": "“Let his dwelling be desolate, and let there be no dweller in it.”"
+            },
+            {
+              "ref": "Rev.17.16",
+              "note": "“They will make her desolate and naked.”"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-harba",
+      "lang": "ar",
+      "form": "حَرْبَةٌ",
+      "translit": "ḥarba",
+      "gloss": "a dart or javelin: a weapon like a spear but smaller, with a wide head",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "note": "A bladed weapon, with the verb حَرَّبَ “he sharpened a spearhead”. Arabic ḥ (ح), not ḫ (خ), stands behind ח in חֶרֶב.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 541, root حرب, حَرْبَةٌ (n7536)",
+          "note": "“[A dart, or javelin;] a certain weapon resembling a spear, but smaller, having a wide head”; also “a thrust, stick, or stab”."
+        },
+        {
+          "source": "lane",
+          "locator": "p. 540, root حرب, حرّب (n7529)",
+          "note": "“He sharpened a spearhead.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-harb",
+      "lang": "ar",
+      "form": "حَرْبٌ",
+      "translit": "ḥarb",
+      "gloss": "war, battle, fight",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "note": "The contrary of سِلْمٌ “peace”, as חֶרֶב is of שָׁלוֹם (Lev 26:6): the sense Hebrew gives the sword when it stands for war.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 540, root حرب, حَرْبٌ (n7533)",
+          "note": "“War, battle, fight, or conflict; contr. of سِلْمٌ.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-haraba",
+      "lang": "ar",
+      "form": "حَارَبَ، تَحَارَبُوا",
+      "translit": "ḥāraba, taḥārabū",
+      "gloss": "wage war with; they warred one with another",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "note": "The reciprocal form answers to the niphal of 2Ki 3:23, “the kings have fought one another”. The first form, ḥaraba, is “he despoiled him of his wealth”.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 540, root حرب, حاربهُ (n7530)",
+          "note": "“He waged, or contended in, war with him; warred, or battled, with him.”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 540, root حرب, تحاربوا (n7532)",
+          "note": "“They waged, or contended in, war, one with another.”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 540, root حرب, حَرَبَهُ (n7528)",
+          "note": "“He despoiled him of his wealth, or property; or plundered him.”"
+        }
+      ]
+    },
+    {
+      "id": "uga-hrb",
+      "lang": "uga",
+      "form": "𐎈𐎗𐎁",
+      "translit": "ḥrb",
+      "gloss": "sword, knife",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "note": "Ugaritic writes ḥ (𐎈) and ḫ (𐎃) with separate letters, and has both roots: ḥrb “sword, knife” and ḫrb “dry up”.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Ugaritic 𐎈𐎗𐎁 (ḥrb), noun"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000134 ḥrb [sword] N: UGC001883 ḥrb [knife] N"
+        }
+      ]
+    },
+    {
+      "id": "gez-harb",
+      "lang": "gez",
+      "form": "ḥarb",
+      "translit": "ḥarb",
+      "gloss": "war",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "note": "Cited from the root list only, in transliteration; Dillmann and Leslau not yet checked.",
+      "evidence": [
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000134 ḥrb [sword] N: GEZ002449 ḥarb [war] N"
+        }
+      ]
+    },
+    {
+      "id": "arc-harba",
+      "lang": "arc",
+      "form": "חַרְבָּא",
+      "translit": "ḥarbā",
+      "gloss": "sword; a knife",
+      "relation": "cognate",
+      "note": "The Targums’ word for חֶרֶב. Aramaic writes one ח for both older sounds, so it does not show which stands here.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. חַרְבָּא I",
+          "note": "Targ. Gen 34:26; 3:24."
+        }
+      ]
+    },
+    {
+      "id": "akk-harbu-plough",
+      "lang": "akk",
+      "form": "ḫarbu",
+      "translit": "ḫarbu",
+      "gloss": "plough",
+      "relation": "possible",
+      "note": "A cutting implement, like the Peshitta’s ḥarbā “ploughshare” (Luk 9:62) and Hebrew חֶרֶב as a tool; but Akkadian ḫ answers to ḫ, not to the ḥ the sword’s other cognates show, so the link is uncertain.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000009740, harbu [plough] N"
+        }
+      ]
+    },
+    {
+      "id": "ar-khariba",
+      "lang": "ar",
+      "form": "خَرِبَ، أَخْرَبَ",
+      "translit": "ḫariba, ʾaḫraba",
+      "gloss": "be in ruins, waste, uninhabited; (IV) reduce to ruin, lay waste",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḫ"
+      },
+      "note": "Said of a place, country or house, “the contrary of flourishing” and of being inhabited: Hebrew חָרֵב of cities “without inhabitant”, and the hiphil “lay waste”. Arabic ḫ (خ) stands behind ח here.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 715, root خرب, خَرِبَ (n10233)",
+          "note": "“It was, or became, in a state of ruin, waste, uninhabited, depopulated, deserted, desolate, uncultivated.”"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 715, root خرب, اخرب (n10234)",
+          "note": "“He reduced to ruin; or rendered waste, uninhabited, depopulated, deserted, desolate.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-kharab",
+      "lang": "ar",
+      "form": "خَرَابٌ، خِرْبَةٌ، خَرِبٌ",
+      "translit": "ḫarāb, ḫirba, ḫarib",
+      "gloss": "a ruin, a waste; in ruins, waste",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḫ"
+      },
+      "note": "The noun and adjective of ḫariba: Hebrew חָרְבָּה “a ruin” and the adjective חָרֵב “waste”.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 716, root خرب, خَرَابٌ (n10248)",
+          "note": "With خَرِبَةٌ and خِرْبَةٌ: “a ruin, or waste; a place, country, place of abode, or house, in a state of ruin”; the contrary of عُمْرَانٌ."
+        },
+        {
+          "source": "lane",
+          "locator": "p. 716, root خرب, خَرِبٌ (n10241)",
+          "note": "“In a state of ruin, waste, uninhabited”; دَارٌ خَرِبَةٌ “a house which its owner has reduced to ruin”."
+        }
+      ]
+    },
+    {
+      "id": "akk-harabu",
+      "lang": "akk",
+      "form": "ḫarābu",
+      "translit": "ḫarābu",
+      "gloss": "be or become deserted; (Š) lay waste, devastate",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḫ"
+      },
+      "note": "The causative ušaḫrib “I laid waste” is the Assyrian kings’ own word for what 2Ki 19:17 says of them with the hiphil of חָרֵב.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000053280, harābu [be(come) deserted] V",
+          "note": "Meanings: be(come) deserted, devastate, lay waste; forms ušahrib, iharrub."
+        }
+      ]
+    },
+    {
+      "id": "akk-harbu",
+      "lang": "akk",
+      "form": "ḫarbu, ḫuribtu",
+      "translit": "ḫarbu, ḫuribtu",
+      "gloss": "deserted, waste land; desert",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḫ"
+      },
+      "note": "The adjective and noun of ḫarābu: Hebrew חָרֵב “waste” and חָרְבָּה “a waste”.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000036840, harbu [deserted] AJ",
+          "note": "Meanings: deserted, waste land."
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000009920, huribtu [desert] N"
+        }
+      ]
+    },
+    {
+      "id": "uga-khrb",
+      "lang": "uga",
+      "form": "𐎃𐎗𐎁",
+      "translit": "ḫrb",
+      "gloss": "wither, dry up",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḫ"
+      },
+      "note": "The sense “dry” with ḫ, the same sound Arabic and Akkadian show for “waste”: evidence that dry and waste are one root, apart from the sword’s ḥ.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Ugaritic 𐎃𐎗𐎁 (ḫrb), verb"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000133 ḫrb [dry] V: UGC002091 ḫrb [wither] V"
+        }
+      ]
+    },
+    {
+      "id": "arc-harev",
+      "lang": "arc",
+      "form": "חֲרֵב, חֲרוֹב",
+      "translit": "ḥărēb, ḥărōb",
+      "gloss": "be destroyed, laid waste; (aphel) destroy, lay waste",
+      "relation": "cognate",
+      "note": "The Targums’ verb for Hebrew חָרֵב, cited both where the Hebrew is “laid waste” (Ezk 26:2) and where it is “dry up” (Hos 13:15; Isa 19:5); with the adjective חָרוֹב “ruined, desolate” (Targ. Hag 1:4, 9). Aramaic ח does not show the older sound.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. חֲרֵב, חֲרוֹב, חֲרֵיב",
+          "note": "Targ. Ezk 26:2; Hos 13:15; Isa 19:5. Aphel “to destroy, lay waste”, Targ. Isa 42:15; Jdg 16:24."
+        }
+      ]
+    },
+    {
+      "id": "arc-hurba",
+      "lang": "arc",
+      "form": "חוּרְבָּא",
+      "translit": "ḥurbā",
+      "gloss": "heat, dryness; desolation, waste",
+      "relation": "cognate",
+      "note": "One Aramaic noun with both senses of Hebrew חֹרֶב, the heat and dryness and the waste. Aramaic ח does not show the older sound.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. חוּרְבָּא I, 1) and 2)",
+          "note": "1) “heat, dryness”, Targ. Psa 90:6; 2) “desolation, waste”, Targ. Ezk 29:10."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "mortality",
+      "statement": "After the man had eaten, Yahweh God said, “now, lest he put out his hand and take also of the tree of life, and eat, and live for ever”, and sent him out of the garden to work the ground from which he was taken (Gen 3:22–23). He then set the cherubim east of the garden, “and the flame of the sword that turns every way, to guard the way of the tree of life” (Gen 3:24). The sentence already passed was “dust you are, and to dust you shall return” (Gen 3:19). From the verses: the man did not have unending life in himself; living for ever lay in a tree he could be kept from, and the sword kept him from it, so that he returned to the dust.",
+      "evidence": [
+        {
+          "ref": "Gen.3.19"
+        },
+        {
+          "ref": "Gen.3.22",
+          "to": "Gen.3.24"
+        }
+      ]
+    },
+    {
+      "topic": "the-flood",
+      "statement": "When the waters prevailed, “all flesh that moved on the earth died, of bird and of cattle and of beast and of every swarming thing, and all mankind; all in whose nostrils was the breath of the spirit of life, of all that was on the dry land (חָרָבָה), died”, and only Noah was left, and those with him in the ark (Gen 7:21–23). In the six hundred and first year, on the first of the first month, “the waters had dried (חָרְבוּ) from off the earth”, and on the twenty-seventh of the second month the earth was dry (Gen 8:13–14). From the verses: the flood covered the dry land as a whole and killed every breathing creature on it, man and beast alike having the same breath in their nostrils; it is dated to the day in Noah’s life.",
+      "evidence": [
+        {
+          "ref": "Gen.7.21",
+          "to": "Gen.7.23"
+        },
+        {
+          "ref": "Gen.8.13",
+          "to": "Gen.8.14"
+        }
+      ]
+    },
+    {
+      "topic": "judgment",
+      "statement": "The sword is Yahweh’s to send. He names it first of “my four evil judgments, sword and famine and evil beast and plague” (Ezk 14:21), brings it “avenging the vengeance of the covenant” (Lev 26:25), calls for it “upon all the inhabitants of the earth” (Jer 25:29), and it is called “the sword of Yahweh” (Jer 47:6; Isa 34:6). The men who wield it are his instrument: “I will put my sword in the hand of the king of Babylon” (Ezk 30:24–25); the wicked are “your sword” (Psa 17:13). So Israel’s safety was never in its own sword, “for not by their sword did they possess the land” (Psa 44:4), and “Yahweh does not save by sword and by spear, for the battle is Yahweh’s” (1Sa 17:47). The Revelation takes up Ezekiel’s four: authority “to kill with sword and with famine and with death and by the beasts of the earth” is given (Rev 6:8). From the verses: war among the nations is not outside God’s rule; he sends the sword in judgment and sheathes it (1Ch 21:27).",
+      "evidence": [
+        {
+          "ref": "Ezk.14.21"
+        },
+        {
+          "ref": "Lev.26.25"
+        },
+        {
+          "ref": "Jer.25.29"
+        },
+        {
+          "ref": "Jer.47.6"
+        },
+        {
+          "ref": "Isa.34.6"
+        },
+        {
+          "ref": "Ezk.30.24",
+          "to": "Ezk.30.25"
+        },
+        {
+          "ref": "Psa.17.13"
+        },
+        {
+          "ref": "Psa.44.4"
+        },
+        {
+          "ref": "1Sa.17.47"
+        },
+        {
+          "ref": "Rev.6.8"
+        },
+        {
+          "ref": "1Ch.21.27"
+        }
+      ]
+    },
+    {
+      "topic": "desolation-of-jerusalem",
+      "statement": "Moses set the sword and the waste together as the end of a broken covenant: “I will make your cities a waste (חָרְבָּה) … I will scatter you among the nations and draw out a sword after you, and your land shall be a desolation and your cities a waste” (Lev 26:31–33). Jeremiah said it of the house, “this house shall become a waste” (Jer 22:5), and of the land, “all this land shall be a waste … seventy years” (Jer 25:11), and Daniel counted those seventy years of “the wastes of Jerusalem” from Jeremiah’s scroll (Dan 9:2). Jesus spoke the same words over the city of his own day: “your house is left to you desolate” (Mat 23:38); “when you see Jerusalem surrounded by armies, know that her desolation has come near … they will fall by the mouth of the sword and be led captive into all the nations, and Jerusalem will be trodden down by nations until the times of nations are fulfilled” (Luk 21:20, 24); and he said when: “all these things will come upon this generation” (Mat 23:36). From the verses: the laying waste of Jerusalem, first by Babylon and again in the generation that heard Jesus, is the covenant’s own penalty carried out, sword and scattering and waste as Leviticus set them down, and each time for a measured term.",
+      "evidence": [
+        {
+          "ref": "Lev.26.31",
+          "to": "Lev.26.33"
+        },
+        {
+          "ref": "Jer.22.5"
+        },
+        {
+          "ref": "Jer.25.11"
+        },
+        {
+          "ref": "Dan.9.2"
+        },
+        {
+          "ref": "Mat.23.36"
+        },
+        {
+          "ref": "Mat.23.38"
+        },
+        {
+          "ref": "Luk.21.20"
+        },
+        {
+          "ref": "Luk.21.24"
+        }
+      ]
+    },
+    {
+      "topic": "restoration-of-israel",
+      "statement": "The same prophets who foretold the waste foretold its end, in the same word. “Yahweh comforts Zion, he comforts all her ruins (חָרְבֹתֶיהָ), and makes her wilderness like Eden” (Isa 51:3); “the cities shall be inhabited and the ruins built … and they shall say, This land that was desolate has become like the garden of Eden, and the waste and desolate and torn-down cities are fortified and inhabited” (Ezk 36:33–35); “in this place, of which you say, It is waste, without man and without beast … there shall again be heard the voice of joy and the voice of gladness” (Jer 33:10–11); “they shall build the ruins of old” (Isa 61:4). Ezekiel sets it “in the latter years”: a land “brought back from the sword, gathered out of many peoples, on the mountains of Israel, which had been a continual waste”, its ruins “now inhabited” by “a people gathered out of nations” (Ezk 38:8, 12). From the verses: the promise is of the same land and the same cities that were laid waste, built and lived in again by the same people brought back to them.",
+      "evidence": [
+        {
+          "ref": "Isa.51.3"
+        },
+        {
+          "ref": "Ezk.36.33",
+          "to": "Ezk.36.35"
+        },
+        {
+          "ref": "Jer.33.10",
+          "to": "Jer.33.11"
+        },
+        {
+          "ref": "Isa.61.4"
+        },
+        {
+          "ref": "Ezk.38.8"
+        },
+        {
+          "ref": "Ezk.38.12"
+        }
+      ]
+    },
+    {
+      "topic": "kingdom-of-god",
+      "statement": "“He shall judge between the nations and decide for many peoples; and they shall beat their swords into ploughshares and their spears into pruning-knives; nation shall not lift up sword against nation, and they shall learn war no more” (Isa 2:4; Mic 4:3). Hosea says where: “bow and sword and war I will break from the land, and I will make them lie down in safety” (Hos 2:20). Before it the call goes the other way, “beat your ploughshares into swords”, when the nations are gathered to be judged (Jol 4:9–12). From the verses: the peace promised is among nations on the earth, who still plough and prune, under one who judges between them; the sword ends because he rules, and Israel’s land lies safe.",
+      "evidence": [
+        {
+          "ref": "Isa.2.4"
+        },
+        {
+          "ref": "Mic.4.3"
+        },
+        {
+          "ref": "Hos.2.20"
+        },
+        {
+          "ref": "Jol.4.9",
+          "to": "Jol.4.12"
+        }
+      ]
+    },
+    {
+      "topic": "word-of-god",
+      "statement": "Yahweh’s servant says, “he made my mouth like a sharp sword” (Isa 49:2). The apostles name what the sword is: “the sword of the spirit, which is the word of God” (Eph 6:17); “the word of God is living and active and sharper than any two-mouthed sword … and judges the thoughts and intents of the heart” (Heb 4:12). In the Revelation the sword of the one called the Word of God goes “out of his mouth, that with it he may strike the nations” (Rev 19:13, 15; 1:16), and he makes war on the unrepentant “with the sword of my mouth” (Rev 2:16). From the verses: the sword in Christ’s mouth is what he speaks, the word of God that judges; it is by that word that hearts are laid open now and the nations are struck at his coming.",
+      "evidence": [
+        {
+          "ref": "Isa.49.2"
+        },
+        {
+          "ref": "Eph.6.17"
+        },
+        {
+          "ref": "Heb.4.12"
+        },
+        {
+          "ref": "Rev.1.16"
+        },
+        {
+          "ref": "Rev.2.16"
+        },
+        {
+          "ref": "Rev.19.13"
+        },
+        {
+          "ref": "Rev.19.15"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-15. Root חרב is the brief’s key; no other entry has it. One spelling, two older roots: ḥrb (sword, war) and ḫrb (dry, waste), each sense tied to its cognates by cognate_ids, so every word shows a negative balance in lexicon-support from the other family, said in each summary. Keys: BDB files the verb’s 43 tokens identically under h.fi.aa (be dry), h.fj.aa (be waste) and h.fk.aa (attack), the adjective’s 10 under h.fi.ab and h.fj.ab, and the noun חֹרֶב’s 16 under h.fi.ac and h.fj.ac; one key is named for each word (h.fi.aa, h.fi.ab, h.fi.ac), and h.fk.aa for חָרַב “slay”, whose own tokens are only 2Ki 3:23 (twice) and Jer 50:21, 27. h.fj.aa, h.fj.ab and h.fj.ac are left unnamed as duplicates. Left out: חֹרֵב Horeb (h.fj.ad), a place; the text nowhere explains the name, though the setting fits (“behind the wilderness”, Exo 3:1; the rock in Horeb where there was no water, Exo 17:1–6). חַרְבוֹנָא / חַרְבוֹנָה Harbona (h.fk.ac, h.fk.ad; Harbona@Est.1.10, Harbona@Est.7.9), a eunuch of Ahasuerus: a Persian court name filed here by its letters, with nothing in the text or in a cognate found to tie it to this root, so no name entry was written. Open questions: (1) Is חָרַב “slay” a separate verb? Jer 50:21, 27 and 2Ki 3:23 can be read as חָרֵב “lay waste / be destroyed”; it is kept apart on the strength of Arabic ḥāraba, taḥārabū and the sword passage that follows in Jer 50:35–37. (2) Deu 28:22 וּבַחֶרֶב stands among fever, blight and mildew, where חֹרֶב “drought” would fit; it is pointed “sword” and is not cited either way. (3) Job 40:19 (“his maker brings near his sword”) and 2Ch 34:6 (ketiv/qere) are not cited. (4) Whether “heat” (Gen 31:40) is the same ḫrb “dry” is shown only by Aramaic חוּרְבָּא, which does not distinguish the sounds. (5) Jer 2:12 (to the heavens) is entered under “be waste”; it could be “be dried up”. Leads not followed: Ge’ez ḥarb is from the Anderson and Moser list only (Dillmann, Leslau not checked; its Ethiopic spelling not verified, so the form is given in transliteration); Sabaean ḥrb “war, fight” (Biella, SabaWeb) and Imperial Aramaic ḥrb “sword” not looked up; Egyptian ḥrp “dagger, short sword” (Wiktionary ḥjrꜣpw) was not found in the TLA list; Greek ἅρπη “sickle” has been compared and is not a demonstrated loan; Akkadian ḫarbu “plough” is recorded as possible only, since Akkadian ḫ does not regularly answer to ḥ; CAD and DULAT pages not checked (Oracc and Wiktionary cited instead); Arabic ḫaraba “bore, pierce” and ḫurba “hole” (Lane p. 715–716) are in the same Arabic root and are not used; the carob (Arabic ḫarrūb, Aramaic חָרוּבָא) is not a word of scripture’s Hebrew. The Peshitta’s Old Testament use of the root was not searched (the database has its New Testament only). Syriac lemmas are pointed from SEDRA’s vocalised forms (lexemes 1138–1142, roots 680–681)."
+}

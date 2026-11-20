@@ -1,0 +1,784 @@
+{
+  "id": "7bl",
+  "root": "חבל",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "work",
+    "birth",
+    "destruction"
+  ],
+  "gloss": "cord, pledge, birth pains, ruin",
+  "summary": "A cord may lower a person through a window or mark the boundaries of an inheritance. Other uses concern property held as security, the pangs of birth or damage inflicted on someone. The sequence of conception and birth in Psalm 7 identifies the sense intended there.",
+  "words": [
+    {
+      "lemma": "חָבַל",
+      "bdb": [
+        "h.af.aa"
+      ],
+      "pos": "verb",
+      "gloss": "take a pledge, travail",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "take as security",
+          "senses": [
+            {
+              "gloss": "take as security",
+              "definition": "A lender must return a neighbour’s cloak before sunset. Taking the millstone as collateral would deprive the household of its livelihood.",
+              "evidence": [
+                {
+                  "ref": "Exo.22.25",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Deu.24.6"
+                },
+                {
+                  "ref": "Job.24.3"
+                }
+              ],
+              "id": "pledge"
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "travail with, carry in the womb",
+          "senses": [
+            {
+              "gloss": "travail with, carry in the womb",
+              "definition": "The mother labours under the apple tree. Psalm 7 applies pregnancy and birth to a person who carries wickedness, conceives trouble and brings forth falsehood.",
+              "evidence": [
+                {
+                  "ref": "Sng.8.5",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.7.15"
+                }
+              ],
+              "id": "travail"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-habila"
+      ]
+    },
+    {
+      "lemma": "חָבַל",
+      "bdb": [
+        "h.ag.aa"
+      ],
+      "pos": "verb",
+      "gloss": "act corruptly, ruin",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "act corruptly",
+          "senses": [
+            {
+              "id": "act-corruptly",
+              "gloss": "act corruptly",
+              "definition": "Nehemiah confesses that Israel has acted corruptly by failing to keep the commandments.",
+              "evidence": [
+                {
+                  "ref": "Neh.1.7",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "spoil or destroy",
+          "senses": [
+            {
+              "gloss": "spoil or destroy",
+              "definition": "Foxes spoil the flowering vineyards. Isaiah describes the exploitation of the poor through deceit.",
+              "evidence": [
+                {
+                  "ref": "Sng.2.15",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Isa.32.7"
+                }
+              ],
+              "id": "destroy"
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be broken or ruined",
+          "senses": [
+            {
+              "id": "be-broken-or-ruined",
+              "gloss": "be broken or ruined",
+              "definition": "Job describes his spirit as broken as his days come to an end.",
+              "evidence": [
+                {
+                  "ref": "Job.17.1",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Isa.10.27"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "come to harm or incur liability",
+          "senses": [
+            {
+              "id": "come-to-harm-or",
+              "gloss": "come to harm or incur liability",
+              "definition": "The person who despises instruction incurs its penalty.",
+              "evidence": [
+                {
+                  "ref": "Pro.13.13",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-habal"
+      ]
+    },
+    {
+      "lemma": "חֶבֶל",
+      "bdb": [
+        "h.af.ab"
+      ],
+      "pos": "noun",
+      "gloss": "cord, measured portion, company",
+      "senses": [
+        {
+          "gloss": "cord or measuring line",
+          "definition": "Rahab lowers the spies through her window on a rope. A line measures out land. Death and the grave are pictured as cords that surround or entangle the speaker.",
+          "evidence": [
+            {
+              "ref": "Jos.2.15",
+              "role": "defining"
+            },
+            {
+              "ref": "Amo.7.17"
+            },
+            {
+              "ref": "Psa.18.5",
+              "to": "Psa.18.6"
+            }
+          ],
+          "id": "cord"
+        },
+        {
+          "id": "allotted-portion",
+          "gloss": "allotted portion",
+          "definition": "Joshua counts the portions allotted to Manasseh. In Psalm 16 the lines fall in pleasant places and the speaker calls his inheritance good.",
+          "evidence": [
+            {
+              "ref": "Jos.17.5",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.16.6"
+            }
+          ]
+        },
+        {
+          "id": "company",
+          "gloss": "company",
+          "definition": "Saul meets a company of prophets.",
+          "evidence": [
+            {
+              "ref": "1Sa.10.5",
+              "role": "defining"
+            },
+            {
+              "ref": "1Sa.10.10"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-habl"
+      ]
+    },
+    {
+      "lemma": "חֵבֶל",
+      "bdb": [
+        "h.af.ac"
+      ],
+      "pos": "noun",
+      "gloss": "birth pang, anguish",
+      "senses": [
+        {
+          "id": "birth-pang-anguish",
+          "gloss": "birth pang, anguish",
+          "definition": "Jeremiah likens the distress that seizes Damascus to the pains of a woman giving birth.",
+          "evidence": [
+            {
+              "ref": "Jer.49.24",
+              "role": "defining"
+            },
+            {
+              "ref": "Isa.13.8"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-habila"
+      ]
+    },
+    {
+      "lemma": "חֹבְלִים",
+      "bdb": [
+        "h.af.ah"
+      ],
+      "pos": "noun",
+      "gloss": "Binders, Union",
+      "senses": [
+        {
+          "id": "binders-union",
+          "gloss": "Binders, Union",
+          "definition": "Zechariah names one staff Union. Breaking it signifies the breaking of brotherhood between Judah and Israel.",
+          "evidence": [
+            {
+              "ref": "Zec.11.7",
+              "role": "defining"
+            },
+            {
+              "ref": "Zec.11.14"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-habl"
+      ]
+    },
+    {
+      "lemma": "חֶבֶל",
+      "bdb": [
+        "h.ag.ab"
+      ],
+      "pos": "noun",
+      "gloss": "destruction",
+      "senses": [
+        {
+          "id": "destruction",
+          "gloss": "destruction",
+          "definition": "Micah intensifies the prediction of destruction with a noun from the same consonants.",
+          "evidence": [
+            {
+              "ref": "Mic.2.10",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-habal"
+      ]
+    },
+    {
+      "lemma": "חֲבֹל",
+      "bdb": [
+        "h.af.ad"
+      ],
+      "pos": "noun",
+      "gloss": "pledge",
+      "senses": [
+        {
+          "id": "pledge-2",
+          "gloss": "pledge",
+          "definition": "The violent son retains what a debtor gave in pledge.",
+          "evidence": [
+            {
+              "ref": "Ezk.18.12",
+              "role": "defining"
+            },
+            {
+              "ref": "Ezk.33.15"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חֲבֹלָה",
+      "bdb": [
+        "h.af.ae"
+      ],
+      "pos": "noun",
+      "gloss": "pledge",
+      "senses": [
+        {
+          "id": "pledge-3",
+          "gloss": "pledge",
+          "definition": "The righteous man returns the debtor’s pledged property.",
+          "evidence": [
+            {
+              "ref": "Ezk.18.7",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חֹבֵל",
+      "bdb": [
+        "h.af.ag"
+      ],
+      "pos": "noun",
+      "gloss": "sailor, member of a ship’s crew",
+      "senses": [
+        {
+          "id": "sailor-member-of-a",
+          "gloss": "sailor, member of a ship’s crew",
+          "definition": "The chief sailor rouses Jonah during the storm. Ezekiel distinguishes the sailors aboard Tyre’s ship from others on board.",
+          "evidence": [
+            {
+              "ref": "Jon.1.6",
+              "role": "defining"
+            },
+            {
+              "ref": "Ezk.27.27"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-habl"
+      ]
+    },
+    {
+      "lemma": "תַּחְבֻּלָה",
+      "bdb": [
+        "h.af.ai"
+      ],
+      "pos": "noun",
+      "gloss": "guidance, counsel",
+      "senses": [
+        {
+          "id": "guidance-counsel",
+          "gloss": "guidance, counsel",
+          "definition": "A discerning person gains guidance. A people without it falls, while many advisers bring deliverance.",
+          "evidence": [
+            {
+              "ref": "Pro.1.5",
+              "role": "defining"
+            },
+            {
+              "ref": "Pro.11.14"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חִבֵּל",
+      "bdb": [
+        "h.af.af"
+      ],
+      "pos": "noun",
+      "gloss": "rigging or mast",
+      "senses": [
+        {
+          "id": "rigging-or-mast",
+          "gloss": "rigging or mast",
+          "definition": "The drunkard is compared to someone lying down at sea or on the top of a ship’s rigging.",
+          "evidence": [
+            {
+              "ref": "Pro.23.34",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-habl"
+      ]
+    },
+    {
+      "lemma": "חֲבַל",
+      "bdb": [
+        "xh.aa.aa"
+      ],
+      "pos": "verb",
+      "gloss": "harm or destroy",
+      "stems": [
+        {
+          "stem": "pael",
+          "gloss": "inflict harm",
+          "senses": [
+            {
+              "id": "inflict-harm",
+              "gloss": "inflict harm",
+              "definition": "Daniel says the lions have done him no harm. The watcher commands that the tree be destroyed.",
+              "evidence": [
+                {
+                  "ref": "Dan.6.23",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Dan.4.20"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpaal",
+          "gloss": "be destroyed",
+          "senses": [
+            {
+              "id": "be-destroyed",
+              "gloss": "be destroyed",
+              "definition": "The kingdom that God establishes will endure forever. Daniel’s vision likewise speaks of a dominion that cannot be destroyed.",
+              "evidence": [
+                {
+                  "ref": "Dan.2.44",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Dan.7.14"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "arc",
+      "cognate_ids": [
+        "arc-habal"
+      ]
+    },
+    {
+      "lemma": "חֲבָל",
+      "bdb": [
+        "xh.aa.ab"
+      ],
+      "pos": "noun",
+      "gloss": "injury",
+      "senses": [
+        {
+          "id": "injury",
+          "gloss": "injury",
+          "definition": "The men in the furnace are seen walking unharmed. Daniel is taken from the den without injury.",
+          "evidence": [
+            {
+              "ref": "Dan.3.25",
+              "role": "defining"
+            },
+            {
+              "ref": "Dan.6.24"
+            }
+          ]
+        }
+      ],
+      "lang": "arc",
+      "cognate_ids": [
+        "arc-habal"
+      ]
+    },
+    {
+      "lemma": "חַבֵּל",
+      "pos": "verb",
+      "gloss": "ruin, corrupt",
+      "stems": [
+        {
+          "stem": "pael",
+          "gloss": "destroy or corrupt",
+          "senses": [
+            {
+              "id": "destroy-or-corrupt",
+              "gloss": "destroy or corrupt",
+              "definition": "Jesus warns that moths destroy earthly treasure. Paul warns the Corinthians about ruining God’s temple.",
+              "evidence": [
+                {
+                  "ref": "Mat.6.19",
+                  "role": "defining"
+                },
+                {
+                  "ref": "1Co.3.17"
+                }
+              ],
+              "kin": [
+                "destroy"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "ethpaal",
+          "gloss": "decay or be subject to corruption",
+          "senses": [
+            {
+              "id": "decay-or-be-subject",
+              "gloss": "decay or be subject to corruption",
+              "definition": "Earthly prizes perish. Paul contrasts the perishable body with the imperishable one it must put on.",
+              "evidence": [
+                {
+                  "ref": "1Co.9.25",
+                  "role": "defining"
+                },
+                {
+                  "ref": "1Co.15.53",
+                  "to": "1Co.15.54"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "cognate_ids": [
+        "arc-habal"
+      ]
+    },
+    {
+      "lemma": "חַבֵּל",
+      "pos": "verb",
+      "gloss": "suffer labour pains",
+      "stems": [
+        {
+          "stem": "pael",
+          "gloss": "travail",
+          "senses": [
+            {
+              "id": "travail-2",
+              "gloss": "travail",
+              "definition": "Creation groans in labour. Paul compares his distress for the Galatians to the pangs of childbirth.",
+              "evidence": [
+                {
+                  "ref": "Rom.8.22",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Gal.4.19"
+                },
+                {
+                  "ref": "Rev.12.2"
+                }
+              ],
+              "kin": [
+                "travail"
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "cognate_ids": [
+        "ar-habila"
+      ]
+    },
+    {
+      "lemma": "חֲבָלָא",
+      "pos": "noun",
+      "gloss": "decay",
+      "senses": [
+        {
+          "id": "decay",
+          "gloss": "decay",
+          "definition": "Peter says that the Messiah’s flesh did not see decay.",
+          "evidence": [
+            {
+              "ref": "Act.2.31",
+              "role": "defining"
+            },
+            {
+              "ref": "Act.13.37"
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "cognate_ids": [
+        "arc-habal"
+      ]
+    },
+    {
+      "lemma": "חֶבְלָא",
+      "pos": "noun",
+      "gloss": "labour pang",
+      "senses": [
+        {
+          "id": "labour-pang",
+          "gloss": "labour pang",
+          "definition": "Jesus calls these events the beginning of birth pains.",
+          "evidence": [
+            {
+              "ref": "Mat.24.8",
+              "role": "defining"
+            },
+            {
+              "ref": "1Th.5.3"
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "cognate_ids": [
+        "ar-habila"
+      ]
+    },
+    {
+      "lemma": "חַבְלָא",
+      "pos": "noun",
+      "gloss": "rope, cord",
+      "senses": [
+        {
+          "id": "rope-cord",
+          "gloss": "rope, cord",
+          "definition": "Jesus makes a whip of cords. Sailors’ ropes hold the boat until the soldiers cut them.",
+          "evidence": [
+            {
+              "ref": "Jhn.2.15",
+              "role": "defining"
+            },
+            {
+              "ref": "Act.27.32"
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "cognate_ids": [
+        "ar-habl"
+      ]
+    },
+    {
+      "lemma": "מְחַבְּלָנָא",
+      "pos": "noun",
+      "gloss": "destroyer",
+      "senses": [
+        {
+          "id": "destroyer",
+          "gloss": "destroyer",
+          "definition": "Paul recalls those who grumbled and perished at the hand of the destroyer.",
+          "evidence": [
+            {
+              "ref": "1Co.10.10",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "cognate_ids": [
+        "arc-habal"
+      ]
+    },
+    {
+      "lemma": "מֶתְחַבְּלָנוּתָא",
+      "pos": "noun",
+      "gloss": "corruptibility",
+      "senses": [
+        {
+          "id": "corruptibility",
+          "gloss": "corruptibility",
+          "definition": "Paul says that the corruptible must put on incorruptibility.",
+          "evidence": [
+            {
+              "ref": "1Co.15.53",
+              "to": "1Co.15.54",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "cognate_ids": [
+        "arc-habal"
+      ]
+    },
+    {
+      "lemma": "מְחַבְּלָא",
+      "pos": "noun",
+      "gloss": "corrupt person",
+      "senses": [
+        {
+          "id": "corrupt-person",
+          "gloss": "corrupt person",
+          "definition": "Paul includes a term for a corrupt person in his warning about those who will not inherit God’s kingdom.",
+          "evidence": [
+            {
+              "ref": "1Co.6.9",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "cognate_ids": [
+        "arc-habal"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-habl",
+      "lang": "ar",
+      "form": "حَبْلٌ",
+      "translit": "ḥabl",
+      "gloss": "rope, cord",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 504, حبل, n6964"
+        }
+      ],
+      "sounds": {
+        "ח": "ḥ"
+      }
+    },
+    {
+      "id": "ar-habila",
+      "lang": "ar",
+      "form": "حَبِلَ",
+      "translit": "ḥabila",
+      "gloss": "become pregnant",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 504, حبل, n6964, pregnancy sense"
+        }
+      ],
+      "sounds": {
+        "ח": "ḥ"
+      }
+    },
+    {
+      "id": "arc-habal",
+      "lang": "arc",
+      "form": "חֲבַל",
+      "translit": "ḥăbal",
+      "gloss": "wrong, do harm",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "חֲבַל, Targum Job 34:31"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The cords of death in Psalm 18 can also suggest pangs. The placement beside snares favours cords. The flower belongs to chavatselet. Habazziniah in Jeremiah 35:3 has additional consonants and no demonstrated connection with this family."
+}

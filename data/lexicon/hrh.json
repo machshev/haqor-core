@@ -1,0 +1,184 @@
+{
+  "id": "hrh",
+  "root": "הרה",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "family",
+    "birth"
+  ],
+  "gloss": "conceive, become pregnant",
+  "summary": "The verb regularly precedes bearing a child. Psalm 7 draws on that sequence to describe the development of a harmful intention until it produces a lie.",
+  "words": [
+    {
+      "lemma": "הָרָה",
+      "bdb": [
+        "e.cd.aa"
+      ],
+      "pos": "verb",
+      "gloss": "conceive, become pregnant",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "conceive",
+          "senses": [
+            {
+              "gloss": "conceive a child",
+              "definition": "Eve conceives and then bears Cain. Sarah conceives and bears Abraham a son at the appointed time.",
+              "evidence": [
+                {
+                  "ref": "Gen.4.1",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Gen.21.2"
+                },
+                {
+                  "ref": "Jdg.13.3"
+                }
+              ],
+              "id": "conceive"
+            },
+            {
+              "id": "conceive-trouble",
+              "gloss": "conceive trouble",
+              "definition": "Psalm 7 traces a wrongdoer’s purpose from conception to birth. He conceives trouble and gives birth to falsehood. Job uses the same image of a womb fashioning deceit.",
+              "evidence": [
+                {
+                  "ref": "Psa.7.15",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Job.15.35"
+                },
+                {
+                  "ref": "Isa.33.11"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "poel",
+          "gloss": "devise in the heart",
+          "senses": [
+            {
+              "id": "devise-in-the-heart",
+              "gloss": "devise in the heart",
+              "definition": "The speakers confess to conceiving and uttering words of falsehood from the heart.",
+              "evidence": [
+                {
+                  "ref": "Isa.59.13",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be conceived",
+          "senses": [
+            {
+              "id": "be-conceived",
+              "gloss": "be conceived",
+              "definition": "Job curses the night on which a boy was conceived.",
+              "evidence": [
+                {
+                  "ref": "Job.3.3",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "akk-aru"
+      ]
+    },
+    {
+      "lemma": "הָרָה",
+      "bdb": [
+        "e.cd.ab",
+        "e.cd.ad"
+      ],
+      "pos": "adjective",
+      "gloss": "pregnant",
+      "senses": [
+        {
+          "id": "pregnant",
+          "gloss": "pregnant",
+          "definition": "Hagar is told that she is pregnant and will bear a son. The plural can designate pregnant women as a group.",
+          "evidence": [
+            {
+              "ref": "Gen.16.11",
+              "role": "defining"
+            },
+            {
+              "ref": "Gen.38.24",
+              "to": "Gen.38.25"
+            },
+            {
+              "ref": "Hos.14.1"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "akk-aru"
+      ]
+    },
+    {
+      "lemma": "הֵרָיוֹן",
+      "bdb": [
+        "e.cd.ae",
+        "e.cd.ac"
+      ],
+      "pos": "noun",
+      "gloss": "conception, pregnancy",
+      "senses": [
+        {
+          "id": "conception-pregnancy",
+          "gloss": "conception, pregnancy",
+          "definition": "Yahweh grants Ruth conception and she bears a son. Hosea describes the loss of offspring by tracing life back from birth to the womb and conception.",
+          "evidence": [
+            {
+              "ref": "Rut.4.13",
+              "role": "defining"
+            },
+            {
+              "ref": "Hos.9.11"
+            },
+            {
+              "ref": "Gen.3.16"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "akk-aru"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-aru",
+      "lang": "akk",
+      "form": "arû",
+      "translit": "arû",
+      "gloss": "become pregnant, conceive",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep/x000008710, arû [be(come) pregnant]"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The plural for pregnant women can be assigned to either adjective spelling. The nearby names Haran, Horam and Harum have no demonstrated derivation from pregnancy. Genesis 49:26 has a disputed expression sometimes read as my progenitors."
+}

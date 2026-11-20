@@ -1,0 +1,950 @@
+{
+  "id": "7w9",
+  "root": "חוצ",
+  "status": "draft",
+  "updated": "2026-11-18",
+  "tags": [
+    "place",
+    "city",
+    "street",
+    "camp",
+    "temple",
+    "wall",
+    "exclusion"
+  ],
+  "gloss": "outside; the street; outer; a partition wall",
+  "summary": "What lies outside: outside a house, a tent, an ark, a city or the camp. The noun חוּץ is the outside of a thing and, with its prepositions, “outside, out of doors”; in the plural חוּצוֹת it is the streets of a city, set beside its open squares, and the open country beyond, set beside the earth. Outside the camp the law put the unclean, the condemned and the body of the sin offering, and there Jesus suffered (Heb 13:11–13). The adjective חִיצוֹן is “outer”, above all the outer court of the house of Yahweh, and the one חַיִץ is a wall of loose stones the false prophets plaster over (Ezk 13:10). The Aramaic and Syriac verb “be tight, form a partition” and Arabic ḥāṣa “sew up” suggest a root sense of closing off, from which the wall and what lies beyond it would follow, but no verse shows that link.",
+  "words": [
+    {
+      "lemma": "חוּץ",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "the outside; outside, out of doors; (plural) streets; open country",
+      "bdb": [
+        "h.bi.ab"
+      ],
+      "summary": "About 165 times, nearly always with a preposition: בַּחוּץ “outside”, הַחוּצָה “to the outside, out”, מִחוּץ “from outside, outside of”, and מִחוּץ לְ “outside of” a camp or city. The plural חוּצוֹת is the streets, or the open land beyond the houses. No cognate yet found shares the sense “outside”; the Aramaic “partition” and Arabic “sew up” would tie it to the root only through a wall that shuts things off, which is not shown. The brief's tokens include the place name קִרְיַת חֻצוֹת (Num 22:39), which has no name entry.",
+      "senses": [
+        {
+          "id": "outside-side",
+          "gloss": "the outside (of a thing)",
+          "definition": "The outer side or surface of an object or building, set against its inside.",
+          "evidence": [
+            {
+              "ref": "Gen.6.14",
+              "role": "defining",
+              "note": "“Cover it מִבַּיִת וּמִחוּץ with pitch”: inside and outside of the ark."
+            },
+            {
+              "ref": "Exo.25.11",
+              "role": "defining",
+              "note": "The ark overlaid with gold “inside and outside (מִבַּיִת וּמִחוּץ)”."
+            },
+            {
+              "ref": "Exo.37.2"
+            },
+            {
+              "ref": "1Ki.6.6",
+              "note": "Ledges “around the house, outside (חוּצָה)”, so as not to grip its walls."
+            },
+            {
+              "ref": "Ezk.40.5",
+              "note": "“A wall on the outside (מִחוּץ) of the house, all around.”"
+            },
+            {
+              "ref": "Ezk.41.17",
+              "note": "“To the inner house and to the outside (וְלַחוּץ).”"
+            }
+          ],
+          "kin": [
+            "outer"
+          ]
+        },
+        {
+          "id": "outside-doors",
+          "gloss": "outside, out of doors",
+          "definition": "With its prepositions, the place beyond a house, tent or city: out of doors, out in the open, among the neighbours rather than at home.",
+          "evidence": [
+            {
+              "ref": "Gen.24.31",
+              "role": "defining",
+              "note": "Laban to Abraham's servant: “Why do you stand בַּחוּץ? I have prepared the house.”"
+            },
+            {
+              "ref": "Gen.15.5",
+              "note": "Yahweh “brought him outside (הַחוּצָה)” to count the stars."
+            },
+            {
+              "ref": "Gen.39.12",
+              "note": "Joseph “left his garment in her hand and fled and went outside (הַחוּצָה)”."
+            },
+            {
+              "ref": "Deu.24.11",
+              "role": "defining",
+              "note": "The lender “shall stand בַּחוּץ”, and the borrower bring the pledge out to him: he does not enter the house."
+            },
+            {
+              "ref": "Lev.18.9",
+              "role": "defining",
+              "note": "A sister “born at home or born outside (חוּץ)”: the opposite of בַּיִת."
+            },
+            {
+              "ref": "Lam.1.20",
+              "role": "defining",
+              "note": "“מִחוּץ the sword bereaves; in the house (בַּבַּיִת) it is as death.”"
+            },
+            {
+              "ref": "Ezk.7.15",
+              "role": "defining",
+              "note": "“The sword בַּחוּץ, and pestilence and famine within (מִבָּיִת)”: whoever is in the field dies by the sword, whoever is in the city by famine."
+            },
+            {
+              "ref": "Deu.32.25"
+            },
+            {
+              "ref": "Exo.21.19",
+              "note": "A man struck who “walks about outside on his staff”."
+            },
+            {
+              "ref": "Jos.2.19",
+              "note": "Whoever goes out of the doors of Rahab's house “to the outside”."
+            },
+            {
+              "ref": "2Ki.4.3",
+              "note": "“Borrow vessels מִן־הַחוּץ, from all your neighbours.”"
+            },
+            {
+              "ref": "Job.31.32",
+              "note": "“The sojourner did not lodge בַּחוּץ; I opened my doors to the traveller.”"
+            },
+            {
+              "ref": "Ezr.10.13",
+              "note": "“It is a time of rain, and there is no strength to stand outside.”"
+            },
+            {
+              "ref": "Sng.8.1",
+              "note": "“If I found you outside, I would kiss you.”"
+            },
+            {
+              "ref": "Isa.42.2",
+              "role": "defining",
+              "note": "The servant “will not make his voice heard בַּחוּץ”: in public."
+            },
+            {
+              "ref": "Mat.12.19",
+              "note": "Isa 42:2 fulfilled in Jesus: no one will hear his voice “in the streets (ἐν ταῖς πλατείαις)”."
+            },
+            {
+              "ref": "Jdg.12.9",
+              "note": "Ibzan sent thirty daughters “outside (הַחוּצָה)” and brought in thirty “from outside” for his sons: married out of and into the clan."
+            },
+            {
+              "ref": "Deu.25.5",
+              "note": "The dead man's widow shall not be married “outside (הַחוּצָה) to a stranger”."
+            }
+          ],
+          "senses": [
+            {
+              "id": "outside-camp",
+              "gloss": "outside the camp, outside the city",
+              "definition": "מִחוּץ לַמַּחֲנֶה, מִחוּץ לָעִיר: the place beyond the camp where Yahweh dwelt, or beyond a city's wall, where the unclean were put, the condemned were stoned, and the body of the sin offering was burned.",
+              "evidence": [
+                {
+                  "ref": "Num.5.3",
+                  "role": "defining",
+                  "note": "“Male and female you shall send outside the camp, that they do not defile their camps, in the midst of which I dwell.”"
+                },
+                {
+                  "ref": "Lev.13.46",
+                  "role": "defining",
+                  "note": "The leper “shall dwell alone; outside the camp is his dwelling”."
+                },
+                {
+                  "ref": "Deu.23.11",
+                  "role": "defining",
+                  "note": "The unclean man “shall go outside the camp; he shall not come into the midst (תּוֹךְ) of the camp”."
+                },
+                {
+                  "ref": "Num.12.14",
+                  "to": "Num.12.15",
+                  "note": "Miriam shut out of the camp seven days."
+                },
+                {
+                  "ref": "Lev.4.12",
+                  "role": "defining",
+                  "note": "The whole bull of the sin offering carried “outside the camp, to a clean place”, and burned."
+                },
+                {
+                  "ref": "Lev.16.27",
+                  "role": "defining",
+                  "note": "The bull and goat of the sin offering, “whose blood was brought in to make atonement in the holy place”, are carried outside the camp and burned."
+                },
+                {
+                  "ref": "Exo.29.14"
+                },
+                {
+                  "ref": "Heb.13.11",
+                  "to": "Heb.13.13",
+                  "role": "defining",
+                  "note": "Lev 16:27 expounded: the bodies are burned “outside the camp (ἔξω τῆς παρεμβολῆς)”; so Jesus “suffered outside the gate”; “let us go out to him outside the camp, bearing his reproach”."
+                },
+                {
+                  "ref": "Lev.24.14",
+                  "note": "“Bring the curser outside the camp”, to be stoned."
+                },
+                {
+                  "ref": "Num.15.35",
+                  "to": "Num.15.36"
+                },
+                {
+                  "ref": "Act.7.58",
+                  "note": "Stephen “cast out of the city” and stoned."
+                },
+                {
+                  "ref": "Exo.33.7",
+                  "note": "Moses pitched the tent of meeting “outside the camp, far from the camp”, and every seeker of Yahweh went out to it."
+                },
+                {
+                  "ref": "Gen.19.16",
+                  "note": "The men brought Lot out and “set him outside the city”."
+                },
+                {
+                  "ref": "Lev.14.40",
+                  "note": "Infected stones thrown “outside the city, to an unclean place”."
+                },
+                {
+                  "ref": "Num.35.5",
+                  "note": "The Levites' pasture measured “outside the city”, the city in the midst."
+                },
+                {
+                  "ref": "2Ki.23.4",
+                  "note": "Josiah burned the vessels of Baal “outside Jerusalem”."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "apart-from",
+          "gloss": "apart from",
+          "definition": "חוּץ מִן: once, “apart from, without”.",
+          "evidence": [
+            {
+              "ref": "Ecc.2.25",
+              "role": "defining",
+              "note": "“Who can eat, and who can have enjoyment, חוּץ מִמֶּנִּי?”: apart from him, the God who gives (2:24)."
+            }
+          ]
+        },
+        {
+          "id": "streets",
+          "gloss": "street, streets",
+          "definition": "Above all in the plural: the streets of a city, the open ways outside its houses where people walk, mourn, trade and fall, set beside its broad squares (רְחֹבוֹת).",
+          "evidence": [
+            {
+              "ref": "Pro.1.20",
+              "role": "defining",
+              "note": "“Wisdom cries out בַּחוּץ; in the squares (בָּרְחֹבוֹת) she lifts her voice.”"
+            },
+            {
+              "ref": "Jer.5.1",
+              "role": "defining",
+              "note": "“Run to and fro in the streets (בְּחוּצוֹת) of Jerusalem … seek in her squares (בִרְחוֹבוֹתֶיהָ).”"
+            },
+            {
+              "ref": "Nam.2.5",
+              "role": "defining",
+              "note": "“The chariots rage in the streets; they rush to and fro in the squares.”"
+            },
+            {
+              "ref": "Amo.5.16",
+              "note": "“In all the squares wailing, and in all the streets they say, Alas! Alas!”"
+            },
+            {
+              "ref": "Pro.22.13",
+              "note": "The sluggard: “A lion is outside! I shall be killed in the midst of the squares.”"
+            },
+            {
+              "ref": "2Sa.1.20",
+              "note": "“Do not proclaim it in the streets of Ashkelon.”"
+            },
+            {
+              "ref": "Jer.7.34",
+              "note": "“I will make to cease from the cities of Judah and from the streets of Jerusalem the voice of joy … the voice of the bridegroom and the voice of the bride.”"
+            },
+            {
+              "ref": "Rev.18.23",
+              "note": "The words of Jer 7:34 spoken of Babylon the great: “the voice of the bridegroom and of the bride will not be heard in you any more”."
+            },
+            {
+              "ref": "Jer.9.20",
+              "note": "Death cuts off “children from the street (מִחוּץ), young men from the squares”."
+            },
+            {
+              "ref": "Isa.5.25",
+              "note": "Corpses “like refuse in the midst of the streets”."
+            },
+            {
+              "ref": "Lam.2.21"
+            },
+            {
+              "ref": "Lam.4.5",
+              "note": "“Those who ate delicacies are desolate in the streets.”"
+            },
+            {
+              "ref": "Lam.4.1",
+              "note": "“The stones of the holy place are poured out at the head of every street.”"
+            },
+            {
+              "ref": "Isa.51.20"
+            },
+            {
+              "ref": "Psa.18.43",
+              "note": "“Like the mire of the streets I emptied them out.”"
+            },
+            {
+              "ref": "Mic.7.10"
+            },
+            {
+              "ref": "Zec.10.5"
+            },
+            {
+              "ref": "1Ki.20.34",
+              "note": "“You shall make streets (חוּצוֹת) for yourself in Damascus, as my father made in Samaria”: quarters or bazaars of a city."
+            },
+            {
+              "ref": "Hos.7.1",
+              "note": "“A troop raids בַּחוּץ.”"
+            }
+          ]
+        },
+        {
+          "id": "open-country",
+          "gloss": "open country, fields",
+          "definition": "In poetry, the open land outside the settlements, set beside the earth (אֶרֶץ): the fields that receive rain and where flocks graze.",
+          "evidence": [
+            {
+              "ref": "Job.5.10",
+              "role": "defining",
+              "note": "God “gives rain on the face of the earth (אֶרֶץ) and sends water on the face of the חוּצוֹת”."
+            },
+            {
+              "ref": "Pro.8.26",
+              "role": "defining",
+              "note": "“Before he had made the earth and the חוּצוֹת, or the first of the dust of the world.”"
+            },
+            {
+              "ref": "Job.18.17",
+              "note": "“His memory perishes from the earth, and he has no name on the face of the חוּץ.”"
+            },
+            {
+              "ref": "Psa.144.13",
+              "note": "“Our flocks bring forth thousands and ten thousands בְּחוּצוֹתֵינוּ.”"
+            },
+            {
+              "ref": "Pro.24.27",
+              "note": "“Prepare your work בַּחוּץ, and make it ready in the field (בַּשָּׂדֶה), and afterward build your house.”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἔξω",
+          "gloss": "outside",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Lev.4.12; 16.27; Exo.29.14; Num.5.3, מִחוּץ לַמַּחֲנֶה → ἔξω τῆς παρεμβολῆς; Isa.42.2, בַּחוּץ → ἔξω; ἔξω renders חוּץ ×79"
+            },
+            {
+              "ref": "Heb.13.11",
+              "to": "Heb.13.13",
+              "role": "defining",
+              "note": "“Burned ἔξω τῆς παρεμβολῆς … suffered ἔξω τῆς πύλης … let us go out to him ἔξω τῆς παρεμβολῆς”: Lev 16:27 expounded."
+            },
+            {
+              "ref": "Rev.22.15",
+              "note": "“Outside (ἔξω) are the dogs”: those shut out of the city."
+            }
+          ]
+        },
+        {
+          "lemma": "πλατεῖα",
+          "gloss": "street, broad way",
+          "evidence": [
+            {
+              "ref": "Mat.12.19",
+              "role": "defining",
+              "note": "The Gospel's own rendering of בַּחוּץ in Isa 42:2: “nor will anyone hear his voice ἐν ταῖς πλατείαις”."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "רְחֹב",
+            "note": "“Broad place, square”: the streets and the squares of a city.",
+            "evidence": [
+              {
+                "ref": "Pro.1.20",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.5.1",
+                "role": "defining"
+              },
+              {
+                "ref": "Nam.2.5"
+              },
+              {
+                "ref": "Amo.5.16"
+              },
+              {
+                "ref": "Pro.22.13"
+              },
+              {
+                "ref": "Jer.9.20"
+              }
+            ]
+          },
+          {
+            "lemma": "אֶרֶץ",
+            "note": "“Earth”: the open country and the earth.",
+            "evidence": [
+              {
+                "ref": "Job.5.10",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.8.26"
+              },
+              {
+                "ref": "Job.18.17"
+              }
+            ]
+          },
+          {
+            "lemma": "שָׂדֶה",
+            "note": "“Field”: outside is where the field is, set against the city and the house.",
+            "evidence": [
+              {
+                "ref": "Ezk.7.15",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.24.27"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "בַּיִת",
+            "note": "“House; inside”: outside and in the house, outside and within.",
+            "evidence": [
+              {
+                "ref": "Gen.6.14",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.25.11"
+              },
+              {
+                "ref": "Lev.18.9"
+              },
+              {
+                "ref": "Lam.1.20",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezk.7.15"
+              }
+            ]
+          },
+          {
+            "lemma": "חֶדֶר",
+            "note": "“Inner room”: the sword outside, terror in the chambers.",
+            "evidence": [
+              {
+                "ref": "Deu.32.25",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "תָּוֶךְ",
+            "note": "“Midst”: outside the camp, not in its midst where Yahweh dwells.",
+            "evidence": [
+              {
+                "ref": "Deu.23.11",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.5.3"
+              },
+              {
+                "ref": "Num.35.5"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "מִחוּץ לַמַּחֲנֶה",
+            "gloss": "outside the camp",
+            "evidence": [
+              {
+                "ref": "Lev.4.12"
+              },
+              {
+                "ref": "Lev.13.46"
+              },
+              {
+                "ref": "Lev.16.27"
+              },
+              {
+                "ref": "Num.5.3"
+              },
+              {
+                "ref": "Exo.33.7"
+              },
+              {
+                "ref": "Deu.23.13"
+              }
+            ]
+          },
+          {
+            "phrase": "מִחוּץ לָעִיר",
+            "gloss": "outside the city",
+            "evidence": [
+              {
+                "ref": "Gen.19.16"
+              },
+              {
+                "ref": "Lev.14.40"
+              },
+              {
+                "ref": "Num.35.5"
+              }
+            ]
+          },
+          {
+            "phrase": "חוּצוֹת יְרוּשָׁלִַם",
+            "gloss": "the streets of Jerusalem",
+            "evidence": [
+              {
+                "ref": "Jer.5.1"
+              },
+              {
+                "ref": "Jer.7.17"
+              },
+              {
+                "ref": "Jer.7.34"
+              },
+              {
+                "ref": "Jer.11.6"
+              },
+              {
+                "ref": "Jer.33.10"
+              },
+              {
+                "ref": "Jer.44.17"
+              }
+            ]
+          },
+          {
+            "phrase": "כְּטִיט חוּצוֹת",
+            "gloss": "like the mire of the streets: trodden down, worthless",
+            "evidence": [
+              {
+                "ref": "2Sa.22.43"
+              },
+              {
+                "ref": "Psa.18.43"
+              },
+              {
+                "ref": "Isa.10.6"
+              },
+              {
+                "ref": "Mic.7.10"
+              },
+              {
+                "ref": "Zec.9.3"
+              },
+              {
+                "ref": "Zec.10.5"
+              }
+            ]
+          },
+          {
+            "phrase": "בְּרֹאשׁ כָּל־חוּצוֹת",
+            "gloss": "at the head of every street: in full public view",
+            "evidence": [
+              {
+                "ref": "Isa.51.20"
+              },
+              {
+                "ref": "Lam.2.19"
+              },
+              {
+                "ref": "Lam.4.1"
+              },
+              {
+                "ref": "Nam.3.10"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "חִיצוֹן",
+      "pos": "adjective",
+      "gloss": "outer, outward",
+      "bdb": [
+        "h.bi.ac"
+      ],
+      "summary": "Twenty-five times, formed from חוּץ: the outer one of an inner and an outer, above all the outer court of the house of Yahweh in Ezekiel's vision. Its tie to the root rests on חוּץ.",
+      "senses": [
+        {
+          "id": "outer",
+          "gloss": "outer (court, wall, gate, room)",
+          "definition": "The outer of two: a court, a wall, a gate, an entrance, or the outer room of a house, set against the inner (פְּנִימִי).",
+          "evidence": [
+            {
+              "ref": "Ezk.10.5",
+              "role": "defining",
+              "note": "The sound of the cherubim's wings heard “as far as the outer court”, while the cloud filled the inner court (10:3)."
+            },
+            {
+              "ref": "Ezk.10.3"
+            },
+            {
+              "ref": "Ezk.44.19",
+              "role": "defining",
+              "note": "When the priests go out “to the outer court, to the people”, they put off the garments they ministered in within the gates of the inner court (44:17)."
+            },
+            {
+              "ref": "Ezk.44.17"
+            },
+            {
+              "ref": "1Ki.6.29",
+              "role": "defining",
+              "note": "Carvings on all the walls “from inside (לִפְנִים) and to the outside (וְלַחִיצוֹן)”: inner and outer rooms of the house."
+            },
+            {
+              "ref": "1Ki.6.30"
+            },
+            {
+              "ref": "Est.6.4",
+              "note": "Haman came “into the outer court of the king's house”; Esther had stood in the inner court (Est 5:1)."
+            },
+            {
+              "ref": "Est.5.1"
+            },
+            {
+              "ref": "Ezk.40.17",
+              "note": "“He brought me into the outer court.”"
+            },
+            {
+              "ref": "Ezk.40.20"
+            },
+            {
+              "ref": "Ezk.40.31"
+            },
+            {
+              "ref": "Ezk.42.1"
+            },
+            {
+              "ref": "Ezk.42.14",
+              "note": "The priests shall not go out from the holy place into the outer court without laying aside their garments."
+            },
+            {
+              "ref": "Ezk.44.1",
+              "note": "“The gate of the outer sanctuary that faces east; and it was shut.”"
+            },
+            {
+              "ref": "Ezk.46.20",
+              "note": "The offerings are not to be brought out to the outer court, “to make the people holy”."
+            },
+            {
+              "ref": "Ezk.46.21"
+            },
+            {
+              "ref": "2Ki.16.18",
+              "note": "“The king's outer entrance” to the house of Yahweh."
+            },
+            {
+              "ref": "2Ch.33.14",
+              "note": "Manasseh “built an outer wall to the city of David”."
+            }
+          ],
+          "kin": [
+            "outside-side"
+          ]
+        },
+        {
+          "id": "outward-work",
+          "gloss": "outward (work, business)",
+          "definition": "Of work: the business done outside the house of God, its outward affairs rather than its service within.",
+          "evidence": [
+            {
+              "ref": "Neh.11.16",
+              "role": "defining",
+              "note": "Levites “over the outer work (הַמְּלָאכָה הַחִיצֹנָה) of the house of God”."
+            },
+            {
+              "ref": "1Ch.26.29",
+              "role": "defining",
+              "note": "Chenaniah and his sons “for the outer work over Israel, as officers and judges”."
+            }
+          ],
+          "kin": [
+            "outside-doors"
+          ]
+        }
+      ],
+      "usage": {
+        "opposites": [
+          {
+            "lemma": "פְּנִימִי",
+            "note": "“Inner”: the inner and the outer court.",
+            "evidence": [
+              {
+                "ref": "Ezk.10.3",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezk.10.5",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezk.44.17"
+              },
+              {
+                "ref": "Ezk.44.19"
+              },
+              {
+                "ref": "1Ki.6.29"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "הֶחָצֵר הַחִיצוֹנָה",
+            "gloss": "the outer court",
+            "evidence": [
+              {
+                "ref": "Ezk.10.5"
+              },
+              {
+                "ref": "Ezk.40.17"
+              },
+              {
+                "ref": "Ezk.42.1"
+              },
+              {
+                "ref": "Ezk.44.19"
+              },
+              {
+                "ref": "Est.6.4"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "חַיִץ",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "wall (of loose stones), partition wall",
+      "bdb": [
+        "h.bj.ab"
+      ],
+      "cognate_ids": [
+        "arc-chuts"
+      ],
+      "summary": "Once, in Ezekiel's word against the false prophets. The Aramaic verb of the same consonants, “form a partition, build a wall by piling up material without cement”, fits the verse exactly: a wall that cannot stand and is plastered over to look sound.",
+      "senses": [
+        {
+          "id": "loose-wall",
+          "gloss": "a flimsy wall, a wall of piled stones",
+          "definition": "A wall built up without true mortar, plastered over with whitewash: the false prophets' message of peace, which looks sound and falls.",
+          "evidence": [
+            {
+              "ref": "Ezk.13.10",
+              "role": "defining",
+              "note": "“They led my people astray, saying Peace, and there is no peace; and he builds a חַיִץ, and behold, they plaster it with whitewash (תָּפֵל).”"
+            },
+            {
+              "ref": "Ezk.13.12",
+              "role": "defining",
+              "note": "“Behold, the wall (הַקִּיר) has fallen”: the same wall called קִיר."
+            },
+            {
+              "ref": "Ezk.13.14",
+              "note": "“I will break down the wall that you plastered … and its foundation will be laid bare.”"
+            },
+            {
+              "ref": "Act.23.3",
+              "note": "Paul to the high priest who judged against the law: “God will strike you, whitewashed wall (τοῖχε κεκονιαμένε)”, the image of Ezk 13:10–15."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "τοῖχος",
+          "gloss": "wall",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Ezk.13.10, חַיִץ → τοῖχον"
+            },
+            {
+              "ref": "Act.23.3",
+              "note": "“τοῖχε κεκονιαμένε”, the plastered wall of Ezk 13:10–15."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-chuts",
+      "lang": "arc",
+      "form": "חוּץ، חָיֵיץ، חַיִיץ",
+      "translit": "ḥūṣ, ḥāyēṣ, ḥayyīṣ",
+      "gloss": "be tight; tie closely; form a partition; build a wall by piling up material without cement; (of persons) form a lane; (ḥayyīṣ) a loose, rough embankment",
+      "relation": "cognate",
+      "note": "Jewish Aramaic: the Jerusalem Talmud, asking what the חַיִץ of Ezk 13:10 is, answers חָיֵיץ לֵיהּ, “he piles it up loose”. The partition-wall sense matches חַיִץ exactly; the sense “tight, tied close” matches the Syriac and Arabic. Aramaic צ here shows ṣ.",
+      "sounds": {
+        "צ": "ṣ"
+      },
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. חוּץ (ch.), part. חָיֵיץ, citing Keth. 17ᵃ; Meg. 29ᵃ; Y. Shebi. III, end, 34ᵈ",
+          "note": "“To form a partition, to build a wall by piling up material without cementing; (of persons) to form a lane.”"
+        },
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. חַיִיץ (h. a. ch.), citing Shebi. III, 8; Y. ib. 34ᵈ (ref. to Ez. XIII, 10)",
+          "note": "“A pile of loose and uneven material, a rough extemporised embankment, opp. to earth-covered and finished.”"
+        }
+      ]
+    },
+    {
+      "id": "syc-has",
+      "lang": "syc",
+      "form": "ܚܨ، ܚܨܐ",
+      "translit": "ḥāṣ, ḥeṣā",
+      "gloss": "tighten, strengthen; bond, shroud; (adverb) strongly",
+      "relation": "cognate",
+      "note": "Syriac: the binding sense of the root, as Jewish Aramaic “be tight, tie closely” and Arabic ḥāṣa “sew up”. No Hebrew word of the root shows it, so it is named on none; it is evidence of what the root meant before the sense “partition, outside”, if the two are one.",
+      "sounds": {
+        "צ": "ṣ"
+      },
+      "evidence": [
+        {
+          "source": "sedra",
+          "locator": "root 609 K/ (ḥwṣ); lexemes 987 KO/ (tighten; strengthen), 988 K;/A (bond; shroud), 989 K;/A;T (strongly)"
+        }
+      ]
+    },
+    {
+      "id": "ar-hasa",
+      "lang": "ar",
+      "form": "حَاصَ، حِيَاصَةٌ، حَوَصٌ",
+      "translit": "ḥāṣa, ḥiyāṣa, ḥawaṣ",
+      "gloss": "sew up, sew together; (ḥiyāṣa) girth-strap, anything one binds the waist with; (ḥawaṣ) narrowness of the eye, as though sewn up",
+      "relation": "cognate",
+      "note": "Closing up and binding tight, as the Aramaic and Syriac. Arabic shows ḥ (not ḫ) behind ח and ṣ (not ḍ or ẓ) behind צ. Arabic ḥāʾiṭ “wall” is of another root (ḥwṭ) and is not this one.",
+      "sounds": {
+        "ח": "ḥ",
+        "צ": "ṣ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 669, art. حوص, حَاصَهُ (n9502)",
+          "note": "“He sewed it, or sewed it up or together; namely, a garment … Verily the remedy for the rent is that thou sew it up.”"
+        },
+        {
+          "source": "lane",
+          "locator": "Book I, p. 670, art. حوص, حِيَاصَةٌ (n9510)",
+          "note": "“A strip, or thong, of leather, with which the girth of a horse's saddle is tied … anything with which a man binds his waist.”"
+        },
+        {
+          "source": "lane",
+          "locator": "Book I, p. 670, art. حوص, حَوَصٌ (n9507)",
+          "note": "“Narrowness, or contraction, of the outer angle of the eye … as though they were sewed up.”"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "sacrifice-of-christ",
+      "statement": "The law sent outside the camp what could not stay where Yahweh dwelt: the leper and the unclean (Lev 13:46; Num 5:3), and the blasphemer and the sabbath-breaker to be stoned (Lev 24:14; Num 15:35). There too the body of the sin offering, whose blood had been carried into the holy place, was burned (Lev 4:12; 16:27). Hebrews reads that law of Jesus: “Jesus also, that he might sanctify the people through his own blood, suffered outside the gate” (Heb 13:11–12), at a place near the city (Jhn 19:17, 20). So the place of the unclean and the condemned is where the one who was without sin was put to death, and there his blood was shed for the people. Those who are his “go out to him outside the camp, bearing his reproach”, for they have here no lasting city and seek the one to come (Heb 13:13–14).",
+      "evidence": [
+        {
+          "ref": "Lev.13.46"
+        },
+        {
+          "ref": "Num.5.3"
+        },
+        {
+          "ref": "Lev.24.14"
+        },
+        {
+          "ref": "Num.15.35"
+        },
+        {
+          "ref": "Lev.4.12"
+        },
+        {
+          "ref": "Lev.16.27"
+        },
+        {
+          "ref": "Heb.13.11",
+          "to": "Heb.13.14"
+        },
+        {
+          "ref": "Jhn.19.17"
+        },
+        {
+          "ref": "Jhn.19.20"
+        },
+        {
+          "ref": "Heb.4.15"
+        }
+      ]
+    },
+    {
+      "topic": "kingdom-of-god",
+      "statement": "The camp was to be holy because Yahweh walked in its midst, and the unclean were put outside it (Num 5:3; Deu 23:15). The city of God's kingdom keeps the same rule: nothing unclean enters it (Rev 21:27); those who do his commandments enter by the gates, and “outside are the dogs” and all who love and do falsehood (Rev 22:14–15). To be outside is to be shut out of the city and from the tree of life within it (Rev 22:14).",
+      "evidence": [
+        {
+          "ref": "Num.5.3"
+        },
+        {
+          "ref": "Deu.23.15"
+        },
+        {
+          "ref": "Rev.21.27"
+        },
+        {
+          "ref": "Rev.22.14",
+          "to": "Rev.22.15"
+        }
+      ]
+    }
+  ],
+  "note": "Words: BDB's h.bi.ab (חוּץ), h.bi.ac (חִיצוֹן) and h.bj.ab (חַיִץ); h.cd.aq is a zero-token cross-reference and is left off. The place name קִרְיַת חֻצוֹת (Num 22:39, TIPNR Kiriath-huzoth@Num.22.39) is counted among חוּץ's tokens; it is a place, so no name file. No personal name is formed from the root. Open questions: (1) The cognates (Jewish Aramaic, Syriac, Arabic) agree on “be tight, close up, bind”, and the Aramaic also on “partition, loose wall”, which matches חַיִץ; nothing yet found ties חוּץ “outside, street” to them. The reading “partition → what lies beyond it” is a guess, and lexicon-support will count the Syriac and Arabic against חוּץ and חִיצוֹן. Look for an Ugaritic or Phoenician ḥṣ “outside, street” (not in the vendored sources; DULAT and Krahmalkov not checked). (2) Akkadian aṣû/waṣû “go out” and ṣītu are the root יצא, not this one, and are left out. (3) Jastrow's חִיצָא “partition, screen” (Gen. R. 28) may be Hebrew rather than Aramaic; not cited. The SEDRA forms' vowels (K;/A) are read ḥeṣā; check against a Syriac dictionary scan (Payne Smith)."
+}

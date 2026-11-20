@@ -1,0 +1,105 @@
+{
+  "id": "yp3",
+  "root": "יפע",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [],
+  "gloss": "shine forth, radiance",
+  "summary": "God shines from Zion in Psalm 50. Deuteronomy sets his shining from Paran beside his rising like the dawn from Seir. Ezekiel describes a splendour so striking that it attracts admiration and invites pride.",
+  "words": [
+    {
+      "lemma": "יָפַע",
+      "pos": "verb",
+      "gloss": "shine forth",
+      "bdb": [
+        "j.cp.aa"
+      ],
+      "stems": [
+        {
+          "stem": "hiphil",
+          "gloss": "shine out, appear in radiance",
+          "senses": [
+            {
+              "id": "shine-out-appear-in",
+              "gloss": "shine out, appear in radiance",
+              "definition": "God shines out when he makes his presence known. Job speaks of light shining on a day or breaking through clouds.",
+              "evidence": [
+                {
+                  "ref": "Psa.50.2",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Deu.33.2",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Job.3.4",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Job.37.15",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.80.2",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-appear"
+      ]
+    },
+    {
+      "lemma": "יִפְעָה",
+      "pos": "noun",
+      "gloss": "splendour",
+      "bdb": [
+        "j.cp.ab"
+      ],
+      "gender": "f",
+      "senses": [
+        {
+          "id": "splendour",
+          "gloss": "splendour",
+          "definition": "The brightness of the ruler of Tyre is exposed to violence and becomes an occasion for pride.",
+          "evidence": [
+            {
+              "ref": "Ezk.28.7",
+              "role": "defining"
+            },
+            {
+              "ref": "Ezk.28.17",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-appear"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-appear",
+      "lang": "arc",
+      "form": "יְפַע",
+      "translit": "yəfaʿ",
+      "gloss": "appear, shine out",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "יְפַע J00512, Targum Job 3:4 and Psalm 80:2"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "Japhia is a personal name and also a boundary town. Mephaath is a town of Reuben. The texts do not explain these place-names."
+}

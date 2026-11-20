@@ -1,0 +1,2238 @@
+{
+  "id": "xp6",
+  "root": "שפט",
+  "status": "draft",
+  "updated": "2026-11-15",
+  "tags": [
+    "judgment",
+    "justice",
+    "law",
+    "government",
+    "kingdom",
+    "poor",
+    "messiah",
+    "resurrection"
+  ],
+  "gloss": "judge, govern, give justice; judgment, justice, ordinance, custom; a judge",
+  "summary": "שָׁפַט is to judge: to hear a matter between two parties and decide it (Exo 18:16; Deu 1:16), and so to give the wronged their right (Isa 1:17; Psa 72:4), to pass sentence on the guilty (Ezk 7:3), and to govern a people, as the judges and kings of Israel did (Jdg 2:16; 1Sa 8:20). Its noun מִשְׁפָּט is everything that comes of judging: the hearing and its decision, the justice that ought to be done, a person’s right or due, a ruling laid down to be kept (an ordinance), and the settled way a thing is done (a custom or plan). Yahweh is “the Judge of all the earth” (Gen 18:25) and “all his ways are justice” (Deu 32:4); he gives his judgments to the king’s son (Psa 72:1), who judges the poor with righteousness (Isa 11:4). Ugaritic ṯpṭ, Phoenician špṭ (the suffetes of Carthage) and Akkadian šapāṭu, šipṭu are the same verb, judge and judgment, with the same reach from deciding a case to ruling.",
+  "words": [
+    {
+      "lemma": "מִשְׁפָּט",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "judgment, decision; justice; right, due; ordinance; custom, plan",
+      "bdb": [
+        "v.fg.ae"
+      ],
+      "cognate_ids": [
+        "phn-mshpt",
+        "uga-tapt",
+        "akk-shiptu",
+        "sab-tft"
+      ],
+      "summary": "The noun of the verb with the prefix מ: what is judged and what judging yields. It runs from the court hearing and its sentence, through justice as a quality and a person’s right or cause, to a ruling laid down (the מִשְׁפָּטִים of the law, beside חֻקִּים) and at its widest the fixed way a thing is done, a custom, manner or plan. About 420 uses. The count includes Gen 14:7, where it is part of the place name עֵין מִשְׁפָּט.",
+      "senses": [
+        {
+          "id": "mishpat-judgment",
+          "gloss": "judgment: the hearing, the decision, the sentence",
+          "definition": "The act of judging a matter: the hearing parties come to, the decision given in it, and the sentence passed, whether by a judge, a king, the priest with the Urim, or Yahweh.",
+          "evidence": [
+            {
+              "ref": "Deu.1.17",
+              "role": "defining",
+              "note": "“You shall not regard faces in the judgment (בַּמִּשְׁפָּט); you shall hear the small as the great … for the judgment is God’s.”"
+            },
+            {
+              "ref": "1Ki.3.28",
+              "role": "defining",
+              "note": "“All Israel heard the judgment which the king had judged (הַמִּשְׁפָּט אֲשֶׁר שָׁפַט הַמֶּלֶךְ)”: the decision between the two women."
+            },
+            {
+              "ref": "Deu.17.9",
+              "role": "defining",
+              "note": "In a case too hard, the priests and the judge “shall tell you the word of the judgment”; 17:11, “according to the judgment which they say to you, you shall do”."
+            },
+            {
+              "ref": "Deu.25.1",
+              "note": "“If there is a dispute between men, and they come to the judgment, and they judge them.”"
+            },
+            {
+              "ref": "Num.35.12",
+              "note": "The manslayer is not to die “until he stands before the congregation for the judgment”; so Jos 20:6."
+            },
+            {
+              "ref": "Jdg.4.5",
+              "note": "“The sons of Israel came up to her for the judgment”: to Deborah under her palm."
+            },
+            {
+              "ref": "2Sa.15.2",
+              "note": "Any man who had a dispute “to come to the king for the judgment”."
+            },
+            {
+              "ref": "1Ki.7.7",
+              "note": "“The porch of the throne where he would judge, the porch of the judgment.”"
+            },
+            {
+              "ref": "Num.27.21",
+              "note": "Eleazar shall ask for Joshua “by the judgment of the Urim before Yahweh”: the decision Yahweh gives through the priest."
+            },
+            {
+              "ref": "Exo.28.30",
+              "note": "The Urim and Thummim are put in “the breastpiece of the judgment”, and Aaron bears “the judgment of the sons of Israel on his heart before Yahweh continually”."
+            },
+            {
+              "ref": "Pro.16.33",
+              "note": "“The lot is cast into the lap, but its every decision (מִשְׁפָּטוֹ) is from Yahweh.”"
+            },
+            {
+              "ref": "1Ki.20.40",
+              "note": "The king to the disguised prophet: “So is your judgment; you yourself have decided it.”"
+            },
+            {
+              "ref": "Jer.26.11",
+              "note": "“A judgment of death (מִשְׁפַּט מָוֶת) for this man”: a sentence. So Deu 19:6; 21:22."
+            },
+            {
+              "ref": "2Ki.25.6",
+              "note": "At Riblah “they spoke judgment with him”: the king of Babylon sentenced Zedekiah."
+            },
+            {
+              "ref": "Jer.1.16",
+              "note": "“I will speak my judgments with them for all their evil.”"
+            },
+            {
+              "ref": "Psa.1.5",
+              "role": "defining",
+              "note": "“The wicked shall not stand in the judgment, nor sinners in the congregation of the righteous.”"
+            },
+            {
+              "ref": "Psa.143.2",
+              "role": "defining",
+              "note": "“Do not enter into judgment with your servant, for no one living is righteous before you.”"
+            },
+            {
+              "ref": "Ecc.12.14",
+              "role": "defining",
+              "note": "“God will bring every deed into judgment, concerning every hidden thing, whether good or evil.” So 11:9."
+            },
+            {
+              "ref": "Isa.3.14",
+              "note": "“Yahweh will enter into judgment with the elders of his people and its princes.”"
+            },
+            {
+              "ref": "Mal.3.5",
+              "note": "“I will draw near to you for judgment, and I will be a swift witness.”"
+            },
+            {
+              "ref": "Psa.9.8",
+              "note": "“He has established his throne for the judgment.”"
+            },
+            {
+              "ref": "Psa.122.5",
+              "note": "In Jerusalem “thrones for judgment were set, thrones for the house of David”."
+            },
+            {
+              "ref": "Isa.53.8",
+              "note": "Of Yahweh’s servant: “from restraint and from judgment he was taken”; quoted in Act 8:33."
+            },
+            {
+              "ref": "Jer.48.21",
+              "note": "“Judgment has come to the land of the plain”: the sentence carried out on Moab."
+            },
+            {
+              "ref": "Isa.26.9",
+              "note": "“When your judgments are in the earth, the inhabitants of the world learn righteousness.”"
+            }
+          ],
+          "kin": [
+            "shaphat-decide",
+            "shaphat-condemn"
+          ]
+        },
+        {
+          "id": "mishpat-justice",
+          "gloss": "justice, what is right",
+          "definition": "What a true judgment gives: justice, right dealing. It is what Yahweh does and loves and looks for in rulers and in every man, most often paired with צְדָקָה, righteousness.",
+          "evidence": [
+            {
+              "ref": "Gen.18.25",
+              "role": "defining",
+              "note": "“Shall not the Judge of all the earth do justice (הֲשֹׁפֵט כָּל הָאָרֶץ לֹא יַעֲשֶׂה מִשְׁפָּט)?”: to slay the righteous with the wicked would not be מִשְׁפָּט."
+            },
+            {
+              "ref": "Gen.18.19",
+              "role": "defining",
+              "note": "Abraham’s house is to “keep the way of Yahweh, to do righteousness and justice”."
+            },
+            {
+              "ref": "Deu.32.4",
+              "role": "defining",
+              "note": "“The Rock, his work is perfect, for all his ways are justice; a God of faithfulness and without iniquity (עָוֶל), righteous and upright is he.”"
+            },
+            {
+              "ref": "Isa.5.7",
+              "role": "defining",
+              "note": "“He looked for justice (מִשְׁפָּט), but behold, bloodshed (מִשְׂפָּח); for righteousness (צְדָקָה), but behold, a cry (צְעָקָה)”: the word set against its opposite by sound."
+            },
+            {
+              "ref": "Mic.6.8",
+              "role": "defining",
+              "note": "What Yahweh seeks from man: “to do justice, and to love mercy, and to walk humbly with your God.”"
+            },
+            {
+              "ref": "Amo.5.24",
+              "note": "“Let justice roll down as waters, and righteousness as an ever-flowing stream.” 5:7, they turn justice to wormwood; 5:15, “establish justice in the gate”."
+            },
+            {
+              "ref": "Deu.16.19",
+              "note": "“You shall not bend justice; you shall not regard faces, and you shall not take a bribe.”"
+            },
+            {
+              "ref": "1Sa.8.3",
+              "note": "Samuel’s sons “took bribes and bent justice”."
+            },
+            {
+              "ref": "2Sa.8.15",
+              "note": "“David was doing justice and righteousness for all his people.” So of Solomon, 1Ki 10:9."
+            },
+            {
+              "ref": "Psa.89.15",
+              "note": "“Righteousness and justice are the foundation of your throne.” So 97:2."
+            },
+            {
+              "ref": "Psa.37.28",
+              "note": "“Yahweh loves justice.” So 33:5; 99:4; Isa 61:8."
+            },
+            {
+              "ref": "Isa.30.18",
+              "note": "“Yahweh is a God of justice.”"
+            },
+            {
+              "ref": "Isa.1.17",
+              "note": "“Seek justice, set right the oppressed.” 1:27, “Zion shall be redeemed with justice.”"
+            },
+            {
+              "ref": "Isa.9.6",
+              "note": "The son on the throne of David establishes his kingdom “with justice and with righteousness, from now and for ever”."
+            },
+            {
+              "ref": "Isa.42.1",
+              "to": "Isa.42.4",
+              "note": "Yahweh’s servant “shall bring forth justice to the nations … until he sets justice in the earth”; quoted of Jesus in Mat 12:18–20."
+            },
+            {
+              "ref": "Jer.9.23",
+              "note": "“I am Yahweh, doing mercy, justice and righteousness in the earth, for in these I delight.”"
+            },
+            {
+              "ref": "Jer.23.5",
+              "note": "The righteous branch raised up for David “shall do justice and righteousness in the land”. So 33:15."
+            },
+            {
+              "ref": "Jer.22.3",
+              "note": "To the king of Judah: “Do justice and righteousness, and deliver the robbed from the hand of the oppressor.”"
+            },
+            {
+              "ref": "Hos.12.7",
+              "note": "“Keep mercy and justice, and wait for your God continually.”"
+            },
+            {
+              "ref": "Pro.21.3",
+              "note": "“To do righteousness and justice is more acceptable to Yahweh than sacrifice.”"
+            },
+            {
+              "ref": "Job.8.3",
+              "note": "“Does God pervert justice?” 34:12, “the Almighty will not pervert justice.”"
+            },
+            {
+              "ref": "Ecc.3.16",
+              "note": "“The place of justice, there was wickedness.”"
+            },
+            {
+              "ref": "Lev.19.15",
+              "note": "“You shall do no unrighteousness (עָוֶל) in judgment … in righteousness you shall judge your neighbour.” So 19:35, in measures and weights."
+            },
+            {
+              "ref": "Jer.10.24",
+              "note": "“Correct me, Yahweh, but with justice (in measure), not in your anger.” So 30:11."
+            }
+          ],
+          "kin": [
+            "shaphat-vindicate"
+          ]
+        },
+        {
+          "id": "mishpat-right",
+          "gloss": "a person’s right, cause, due",
+          "definition": "The justice owed to a particular person: his case as he brings it, the right that a judgment should give him, and so what is due to him by rule (the priests’ due, the firstborn’s right, the right of redemption).",
+          "evidence": [
+            {
+              "ref": "Deu.10.18",
+              "role": "defining",
+              "note": "Yahweh “does the justice of the fatherless and the widow (עֹשֶׂה מִשְׁפַּט יָתוֹם וְאַלְמָנָה)”: gives them their right."
+            },
+            {
+              "ref": "Exo.23.6",
+              "role": "defining",
+              "note": "“You shall not bend the right of your poor man in his dispute.” So Deu 24:17; 27:19, of the sojourner, the fatherless and the widow."
+            },
+            {
+              "ref": "Deu.18.3",
+              "role": "defining",
+              "note": "“This shall be the priests’ due (מִשְׁפַּט הַכֹּהֲנִים) from the people”: the shoulder, the cheeks and the stomach."
+            },
+            {
+              "ref": "Deu.21.17",
+              "note": "“The right of the firstborn is his”: the double portion."
+            },
+            {
+              "ref": "Jer.32.7",
+              "note": "“The right of redemption is yours, to buy it.” 32:8, “the right of possession”."
+            },
+            {
+              "ref": "Exo.21.9",
+              "note": "A bondwoman betrothed to the master’s son is treated “according to the right of daughters”."
+            },
+            {
+              "ref": "Num.27.5",
+              "note": "“Moses brought their case (מִשְׁפָּטָן) before Yahweh”: the daughters of Zelophehad."
+            },
+            {
+              "ref": "Job.13.18",
+              "note": "“I have set my case in order; I know that I shall be found righteous.” So 23:4."
+            },
+            {
+              "ref": "Job.27.2",
+              "note": "“As God lives, who has taken away my right.” So 34:5."
+            },
+            {
+              "ref": "Isa.40.27",
+              "note": "Jacob says, “My right passes over from my God.”"
+            },
+            {
+              "ref": "Isa.49.4",
+              "note": "The servant: “Surely my right is with Yahweh, and my recompense with my God.”"
+            },
+            {
+              "ref": "Isa.50.8",
+              "note": "“Who is my opponent at law (בַעַל מִשְׁפָּטִי)? Let him come near to me.”"
+            },
+            {
+              "ref": "Psa.9.5",
+              "note": "“You have done my right and my cause (מִשְׁפָּטִי וְדִינִי)”: the two nouns together."
+            },
+            {
+              "ref": "Psa.140.13",
+              "note": "“Yahweh will do the cause (דִּין) of the afflicted, the right (מִשְׁפַּט) of the needy.” So 146:7."
+            },
+            {
+              "ref": "1Ki.8.59",
+              "note": "Solomon prays that Yahweh “do the right of his servant and the right of his people Israel”. So 8:45, 49."
+            },
+            {
+              "ref": "Mic.7.9",
+              "note": "“Until he pleads my cause and does my right.”"
+            },
+            {
+              "ref": "Lam.3.35",
+              "note": "“To turn aside the right of a man before the face of the Most High.”"
+            },
+            {
+              "ref": "1Sa.8.11",
+              "note": "“This will be the right (מִשְׁפַּט) of the king who shall reign over you: he will take your sons …”: what the king will claim as his due. So 8:9; 10:25, “the right of the kingdom”, written in a book."
+            }
+          ],
+          "kin": [
+            "shaphat-vindicate"
+          ]
+        },
+        {
+          "id": "mishpat-ordinance",
+          "gloss": "ordinance, a ruling laid down",
+          "definition": "A decision given as a standing rule: the judgments of Yahweh’s law, set before Israel to do, named beside his statutes (חֻקִּים) and commandments.",
+          "evidence": [
+            {
+              "ref": "Exo.21.1",
+              "role": "defining",
+              "note": "“These are the judgments (הַמִּשְׁפָּטִים) which you shall set before them”: the rulings of Exo 21–23, each a case and its decision."
+            },
+            {
+              "ref": "Deu.4.8",
+              "role": "defining",
+              "note": "“What great nation has statutes and judgments so righteous as all this law?” 4:1, “listen to the statutes and the judgments which I teach you to do, that you may live”."
+            },
+            {
+              "ref": "Lev.18.5",
+              "role": "defining",
+              "note": "“You shall keep my statutes and my judgments, which a man shall do and live by them”; quoted in Rom 10:5 and Gal 3:12."
+            },
+            {
+              "ref": "Psa.147.19",
+              "to": "Psa.147.20",
+              "role": "defining",
+              "note": "“He declares his word to Jacob, his statutes and his judgments to Israel. He has not done so for any nation; and judgments, they have not known them.”"
+            },
+            {
+              "ref": "Exo.24.3",
+              "note": "Moses told the people “all the words of Yahweh and all the judgments”."
+            },
+            {
+              "ref": "Exo.15.25",
+              "note": "At Marah “he made for them a statute and a judgment (חֹק וּמִשְׁפָּט)”."
+            },
+            {
+              "ref": "Lev.26.46",
+              "note": "“These are the statutes and the judgments and the laws which Yahweh gave … in Mount Sinai.”"
+            },
+            {
+              "ref": "Num.36.13",
+              "note": "“These are the commandments and the judgments which Yahweh commanded … in the plains of Moab.”"
+            },
+            {
+              "ref": "Num.27.11",
+              "note": "The ruling on inheritance becomes “a statute of judgment (חֻקַּת מִשְׁפָּט)” for Israel: a decided case made a standing law."
+            },
+            {
+              "ref": "Lev.24.22",
+              "note": "“You shall have one judgment, for the sojourner as for the native.” So Num 15:16."
+            },
+            {
+              "ref": "Deu.33.10",
+              "note": "Levi “shall teach your judgments to Jacob and your law to Israel”."
+            },
+            {
+              "ref": "Psa.19.10",
+              "note": "“The judgments of Yahweh are truth; they are righteous altogether.”"
+            },
+            {
+              "ref": "Psa.119.7",
+              "note": "“The judgments of your righteousness”; so through the psalm (119:137, “upright are your judgments”)."
+            },
+            {
+              "ref": "Ezk.20.11",
+              "note": "“I gave them my statutes and made known to them my judgments, which a man shall do and live by them.”"
+            },
+            {
+              "ref": "Neh.9.13",
+              "note": "At Sinai “you gave them upright judgments and laws of truth, good statutes and commandments”."
+            },
+            {
+              "ref": "Mal.3.22",
+              "note": "“Remember the law of Moses my servant, which I commanded him in Horeb for all Israel, statutes and judgments.”"
+            },
+            {
+              "ref": "Dan.9.5",
+              "note": "“We have sinned … turning aside from your commandments and from your judgments.”"
+            }
+          ],
+          "kin": [
+            "shaphat-decide"
+          ]
+        },
+        {
+          "id": "mishpat-custom",
+          "gloss": "custom, manner; the prescribed way, plan",
+          "definition": "The settled way a thing is done or made, as if fixed by a ruling: what is prescribed for an offering or a service, the plan a building follows, a people’s custom, a man’s habit or description.",
+          "evidence": [
+            {
+              "ref": "Exo.26.30",
+              "role": "defining",
+              "note": "“You shall set up the tabernacle according to its plan (כְּמִשְׁפָּטוֹ) which you were shown in the mountain.” So of the temple, 1Ki 6:38, “according to all its plan”."
+            },
+            {
+              "ref": "Gen.40.13",
+              "role": "defining",
+              "note": "“You shall put Pharaoh’s cup into his hand, according to the former manner (כַּמִּשְׁפָּט הָרִאשׁוֹן) when you were his cupbearer.”"
+            },
+            {
+              "ref": "Jdg.18.7",
+              "role": "defining",
+              "note": "The people of Laish dwelt securely, “after the manner of the Sidonians”."
+            },
+            {
+              "ref": "2Ki.17.26",
+              "role": "defining",
+              "note": "The settlers in Samaria “do not know the manner of the god of the land”; 17:33, they served their gods “after the manner of the nations”; 17:34, “to this day they do after the former manners”."
+            },
+            {
+              "ref": "Lev.5.10",
+              "note": "The second bird is offered as a burnt offering “according to the ordinance (כַּמִּשְׁפָּט)”: the prescribed way. So Lev 9:16; Num 29:18."
+            },
+            {
+              "ref": "1Sa.2.13",
+              "note": "“The custom of the priests with the people”: what Eli’s sons made their practice."
+            },
+            {
+              "ref": "1Sa.27.11",
+              "note": "“So was his manner all the days he dwelt in the country of the Philistines.”"
+            },
+            {
+              "ref": "Jos.6.15",
+              "note": "On the seventh day they went round the city “after this manner” seven times."
+            },
+            {
+              "ref": "1Ki.18.28",
+              "note": "The prophets of Baal cut themselves “after their manner”."
+            },
+            {
+              "ref": "2Ki.11.14",
+              "note": "The king stood by the pillar, “as the manner was”."
+            },
+            {
+              "ref": "2Ki.1.7",
+              "note": "“What was the manner of the man who came up to meet you?”: his appearance."
+            },
+            {
+              "ref": "Jdg.13.12",
+              "note": "Manoah: “What shall be the manner of the boy, and his work?”"
+            },
+            {
+              "ref": "1Ki.5.8",
+              "note": "Each officer brought barley and straw “according to his charge”."
+            },
+            {
+              "ref": "Jer.30.18",
+              "note": "“The palace shall be inhabited after its manner.”"
+            },
+            {
+              "ref": "Jer.8.7",
+              "note": "The stork, the dove and the swallow keep the time of their coming, “but my people do not know the ordinance (מִשְׁפַּט) of Yahweh”: his fixed way, as the birds know theirs."
+            },
+            {
+              "ref": "Isa.28.26",
+              "note": "Of the ploughman: “his God instructs him in the right way (לַמִּשְׁפָּט), he teaches him.”"
+            },
+            {
+              "ref": "1Ch.23.31",
+              "note": "Burnt offerings “by number, according to the ordinance concerning them”. So 2Ch 4:7; 35:13; Ezr 3:4; Neh 8:18."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "κρίσις",
+          "gloss": "judgment, justice",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "GEN 18:25 word 20",
+              "note": "κρίσιν for מִשְׁפָּט, “shall he not do justice?”; so GEN 18:19 word 16."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "ISA 42:1 word 11",
+              "note": "κρίσιν for מִשְׁפָּט, “he shall bring forth justice to the nations”; so 42:3 word 11."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "PSA 1:5 word 6",
+              "note": "κρίσει for מִּשְׁפָּט, “in the judgment”."
+            },
+            {
+              "ref": "Mat.12.18",
+              "to": "Mat.12.20",
+              "role": "defining",
+              "note": "Isa 42:1–3 quoted of Jesus: “he shall announce justice (κρίσιν) to the nations … until he brings forth justice to victory.”"
+            },
+            {
+              "ref": "Act.8.33",
+              "role": "defining",
+              "note": "Isa 53:8 as the eunuch read it: “In his humiliation his judgment (κρίσις) was taken away.”"
+            },
+            {
+              "ref": "Mat.23.23",
+              "note": "“The weightier matters of the law: justice (τὴν κρίσιν), mercy and faith”; compare Mic 6:8."
+            },
+            {
+              "ref": "Jhn.5.22",
+              "note": "“The Father has given all judgment to the Son.” So 5:27, 30."
+            },
+            {
+              "ref": "Jhn.5.29",
+              "note": "“A resurrection of judgment.”"
+            },
+            {
+              "ref": "Heb.9.27",
+              "note": "“It is appointed to men once to die, and after this, judgment.”"
+            },
+            {
+              "ref": "Rev.16.7",
+              "note": "“True and righteous are your judgments (αἱ κρίσεις σου)”, the words of Psa 19:10. So Rev 19:2."
+            }
+          ]
+        },
+        {
+          "lemma": "κρίμα",
+          "gloss": "judgment, sentence",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "PSA 19:10 word 6",
+              "note": "κρίματα for מִשְׁפְּטֵי, “the judgments of Yahweh”; κρίμα renders the noun 138 times."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "MIC 6:8 word 13",
+              "note": "κρίμα for מִשְׁפָּט in “to do justice”; so AMO 5:24 word 3."
+            },
+            {
+              "ref": "Rom.11.33",
+              "note": "“How unsearchable are his judgments (τὰ κρίματα αὐτοῦ).”"
+            },
+            {
+              "ref": "Rev.20.4",
+              "note": "“I saw thrones, and they sat on them, and judgment (κρίμα) was given to them.”"
+            },
+            {
+              "ref": "Act.24.25",
+              "note": "Paul reasoned with Felix of “the judgment to come”."
+            }
+          ]
+        },
+        {
+          "lemma": "δικαίωμα",
+          "gloss": "ordinance, righteous requirement",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "EXO 21:1 word 2",
+              "note": "δικαιώματα for הַמִּשְׁפָּטִים; it renders the noun 36 times, where it is an ordinance of the law."
+            },
+            {
+              "ref": "Luk.1.6",
+              "note": "Zacharias and Elisabeth walked “in all the commandments and ordinances (δικαιώμασιν) of the Lord”."
+            },
+            {
+              "ref": "Rom.2.26",
+              "note": "“If the uncircumcision keeps the ordinances of the law.”"
+            },
+            {
+              "ref": "Heb.9.1",
+              "note": "“The first covenant had ordinances of service.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "צְדָקָה",
+            "note": "“Righteousness” (and צֶדֶק), its constant pair: justice and righteousness are what a king and his God do.",
+            "evidence": [
+              {
+                "ref": "Gen.18.19",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.89.15",
+                "role": "defining"
+              },
+              {
+                "ref": "Amo.5.24"
+              },
+              {
+                "ref": "Isa.5.7"
+              },
+              {
+                "ref": "2Sa.8.15"
+              },
+              {
+                "ref": "Jer.23.5"
+              }
+            ]
+          },
+          {
+            "lemma": "חֹק",
+            "note": "“Statute”: the statutes and the judgments together are the law given to Israel.",
+            "evidence": [
+              {
+                "ref": "Deu.4.1",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.15.25"
+              },
+              {
+                "ref": "Psa.147.19"
+              },
+              {
+                "ref": "Mal.3.22"
+              }
+            ]
+          },
+          {
+            "lemma": "דִּין",
+            "note": "“Cause, judgment”, the neighbouring noun, beside it of a man’s case.",
+            "evidence": [
+              {
+                "ref": "Psa.9.5",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.140.13"
+              }
+            ]
+          },
+          {
+            "lemma": "חֶסֶד",
+            "note": "“Mercy, loyal love”, joined with it as what Yahweh does and requires.",
+            "evidence": [
+              {
+                "ref": "Mic.6.8",
+                "role": "defining"
+              },
+              {
+                "ref": "Hos.12.7"
+              },
+              {
+                "ref": "Jer.9.23"
+              },
+              {
+                "ref": "Psa.101.1"
+              }
+            ]
+          },
+          {
+            "lemma": "תּוֹרָה",
+            "note": "“Law, teaching”, beside it of what goes out from Yahweh to the nations.",
+            "evidence": [
+              {
+                "ref": "Isa.42.4",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.51.4"
+              },
+              {
+                "ref": "Deu.33.10"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "עָוֶל",
+            "note": "“Unrighteousness, wrong”: what has no place in judgment or in God.",
+            "evidence": [
+              {
+                "ref": "Deu.32.4",
+                "role": "defining"
+              },
+              {
+                "ref": "Lev.19.15"
+              },
+              {
+                "ref": "Lev.19.35"
+              }
+            ]
+          },
+          {
+            "lemma": "מִשְׂפָּח",
+            "note": "“Bloodshed”, found where justice was looked for; the two words sound alike.",
+            "evidence": [
+              {
+                "ref": "Isa.5.7",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "רֶשַׁע",
+            "note": "“Wickedness”, sitting in the place of justice.",
+            "evidence": [
+              {
+                "ref": "Ecc.3.16",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "עָשָׂה מִשְׁפָּט",
+            "gloss": "do justice; give (someone) his right",
+            "evidence": [
+              {
+                "ref": "Gen.18.25",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.10.18"
+              },
+              {
+                "ref": "Mic.6.8"
+              },
+              {
+                "ref": "1Ki.3.28"
+              }
+            ]
+          },
+          {
+            "phrase": "מִשְׁפָּט וּצְדָקָה",
+            "gloss": "justice and righteousness",
+            "evidence": [
+              {
+                "ref": "2Sa.8.15",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.22.3"
+              },
+              {
+                "ref": "Jer.9.23"
+              }
+            ]
+          },
+          {
+            "phrase": "חֻקִּים וּמִשְׁפָּטִים",
+            "gloss": "statutes and judgments",
+            "evidence": [
+              {
+                "ref": "Deu.4.1",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.4.8"
+              },
+              {
+                "ref": "Mal.3.22"
+              }
+            ]
+          },
+          {
+            "phrase": "הִטָּה מִשְׁפָּט",
+            "gloss": "bend justice, turn aside a person’s right",
+            "evidence": [
+              {
+                "ref": "Exo.23.6",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.16.19"
+              },
+              {
+                "ref": "Deu.27.19"
+              },
+              {
+                "ref": "1Sa.8.3"
+              }
+            ]
+          },
+          {
+            "phrase": "בּוֹא בְמִשְׁפָּט",
+            "gloss": "come, or bring, into judgment",
+            "evidence": [
+              {
+                "ref": "Psa.143.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Ecc.12.14"
+              },
+              {
+                "ref": "Isa.3.14"
+              },
+              {
+                "ref": "Job.14.3"
+              }
+            ]
+          },
+          {
+            "phrase": "מִשְׁפַּט מָוֶת",
+            "gloss": "a sentence of death",
+            "evidence": [
+              {
+                "ref": "Jer.26.11",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.19.6"
+              },
+              {
+                "ref": "Deu.21.22"
+              }
+            ]
+          },
+          {
+            "phrase": "חֹשֶׁן מִשְׁפָּט",
+            "gloss": "the breastpiece of judgment",
+            "evidence": [
+              {
+                "ref": "Exo.28.15",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.28.30"
+              }
+            ]
+          },
+          {
+            "phrase": "כַּמִּשְׁפָּט",
+            "gloss": "according to the ordinance, in the prescribed way",
+            "evidence": [
+              {
+                "ref": "Lev.5.10",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.29.18"
+              },
+              {
+                "ref": "Neh.8.18"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "שָׁפַט",
+      "pos": "verb",
+      "gloss": "judge, decide; do justice for, vindicate; pass sentence on; govern",
+      "bdb": [
+        "v.fg.aa"
+      ],
+      "cognate_ids": [
+        "uga-tpt",
+        "phn-shpt",
+        "akk-shapatu"
+      ],
+      "summary": "About 200 uses. To judge is to hear and decide between parties, and what that means for a party depends on his case: for the wronged it is to be given his right and delivered, for the guilty to be sentenced. Because judging was the chief work of a ruler, the verb is also the word for governing a people, and its participle שֹׁפֵט is the judge, whether a magistrate in the gate, a deliverer raised up to lead Israel, or Yahweh. The key also counts six tokens of the name שָׁפָט, which share its spelling (names/shaphat.json).",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "judge, decide between; do justice for, vindicate; pass sentence on; govern; (participle) a judge",
+          "senses": [
+            {
+              "id": "shaphat-decide",
+              "gloss": "judge, decide a matter between parties",
+              "definition": "To hear a dispute and decide it, with בֵּין … וּבֵין “between” the parties; the judge is to hear small and great alike and decide in righteousness.",
+              "evidence": [
+                {
+                  "ref": "Exo.18.16",
+                  "role": "defining",
+                  "note": "Moses: “When they have a matter, it comes to me, and I judge between a man and his neighbour, and make known the statutes of God and his laws.” So 18:13, 22, 26."
+                },
+                {
+                  "ref": "Deu.1.16",
+                  "role": "defining",
+                  "note": "“Hear between your brothers, and judge righteously between a man and his brother and his sojourner.”"
+                },
+                {
+                  "ref": "Deu.25.1",
+                  "role": "defining",
+                  "note": "“They come to the judgment, and they judge them, and they justify the righteous and condemn the wicked”: what judging consists of."
+                },
+                {
+                  "ref": "Gen.16.5",
+                  "note": "Sarai to Abram: “Yahweh judge between me and you.” So Gen 31:53; 1Sa 24:13."
+                },
+                {
+                  "ref": "Num.35.24",
+                  "note": "“The congregation shall judge between the striker and the avenger of blood, according to these judgments.”"
+                },
+                {
+                  "ref": "Lev.19.15",
+                  "note": "“In righteousness you shall judge your neighbour.”"
+                },
+                {
+                  "ref": "1Ki.3.9",
+                  "note": "Solomon asks for “a hearing heart to judge your people, to discern between good and evil”; 3:28, “the judgment which the king had judged”."
+                },
+                {
+                  "ref": "Jdg.11.27",
+                  "note": "Jephthah: “Yahweh the Judge judge today between the sons of Israel and the sons of Ammon.”"
+                },
+                {
+                  "ref": "Isa.2.4",
+                  "note": "“He shall judge between the nations, and decide for many peoples; and they shall beat their swords into ploughshares.” So Mic 4:3."
+                },
+                {
+                  "ref": "Isa.11.3",
+                  "note": "Of the shoot from Jesse: “he shall not judge by the sight of his eyes, nor decide by the hearing of his ears.”"
+                },
+                {
+                  "ref": "Ezk.34.17",
+                  "note": "“I judge between sheep and sheep, between the rams and the he-goats.” So 34:20, 22."
+                },
+                {
+                  "ref": "Ezk.44.24",
+                  "note": "The priests “shall stand to judge; by my judgments they shall judge it”."
+                },
+                {
+                  "ref": "Zec.8.16",
+                  "note": "“Judge truth and a judgment of peace in your gates.” So 7:9."
+                },
+                {
+                  "ref": "Gen.19.9",
+                  "note": "The men of Sodom of Lot: “This one came to sojourn, and he would indeed judge”: set himself up to decide what is right."
+                }
+              ]
+            },
+            {
+              "id": "shaphat-vindicate",
+              "gloss": "do justice for, give right to, vindicate, deliver",
+              "definition": "To judge in someone’s favour: to take up the case of one who is wronged or has no helper and give him his right, which delivers him from the hand of his oppressor.",
+              "evidence": [
+                {
+                  "ref": "Isa.1.17",
+                  "role": "defining",
+                  "note": "“Judge the fatherless (שִׁפְטוּ יָתוֹם), plead for the widow”; 1:23, the princes “do not judge the fatherless”."
+                },
+                {
+                  "ref": "Psa.72.4",
+                  "role": "defining",
+                  "note": "Of the king’s son: “He shall judge the poor of the people, he shall save the sons of the needy, and crush the oppressor.”"
+                },
+                {
+                  "ref": "2Sa.18.19",
+                  "role": "defining",
+                  "note": "“Yahweh has judged him out of the hand of his enemies (שְׁפָטוֹ יַהְוֶה מִיַּד אֹיְבָיו)”: judging as deliverance. So 18:31."
+                },
+                {
+                  "ref": "Psa.43.1",
+                  "role": "defining",
+                  "note": "“Judge me (שָׁפְטֵנִי), O God, and plead my cause against an unfaithful nation; deliver me from the man of deceit.” So 26:1; 35:24; 7:9."
+                },
+                {
+                  "ref": "1Sa.24.16",
+                  "note": "David to Saul: “Yahweh be judge … and see, and plead my cause, and judge me out of your hand.”"
+                },
+                {
+                  "ref": "Psa.82.3",
+                  "note": "“Judge the poor and the fatherless; do right to the afflicted and the needy.”"
+                },
+                {
+                  "ref": "Psa.10.18",
+                  "note": "Yahweh hears “to judge the fatherless and the oppressed”."
+                },
+                {
+                  "ref": "Isa.11.4",
+                  "note": "“With righteousness he shall judge the poor, and decide with uprightness for the meek of the earth.”"
+                },
+                {
+                  "ref": "Jer.5.28",
+                  "note": "“The right of the needy they do not judge.”"
+                },
+                {
+                  "ref": "Pro.29.14",
+                  "note": "“A king who judges the poor in truth, his throne shall be established for ever.” So 31:9."
+                },
+                {
+                  "ref": "Lam.3.59",
+                  "note": "“You have seen my wrong, Yahweh; judge my cause.”"
+                }
+              ]
+            },
+            {
+              "id": "shaphat-condemn",
+              "gloss": "pass sentence on, punish",
+              "definition": "To judge the guilty: to call them to account and bring on them what their ways deserve.",
+              "evidence": [
+                {
+                  "ref": "Ezk.7.3",
+                  "role": "defining",
+                  "note": "“I will judge you according to your ways, and bring on you all your abominations.” So 7:8; 18:30; 33:20; 36:19."
+                },
+                {
+                  "ref": "1Sa.3.13",
+                  "role": "defining",
+                  "note": "“I am judging his house for ever, for the iniquity which he knew”: Eli’s house."
+                },
+                {
+                  "ref": "2Ch.20.12",
+                  "role": "defining",
+                  "note": "Jehoshaphat, of the invading host: “Our God, will you not judge them? For we have no strength.”"
+                },
+                {
+                  "ref": "Ezk.16.38",
+                  "note": "“I will judge you with the judgments of adulteresses and shedders of blood.”"
+                },
+                {
+                  "ref": "Exo.5.21",
+                  "note": "The officers to Moses and Aaron: “Yahweh look on you and judge.”"
+                },
+                {
+                  "ref": "Jol.4.12",
+                  "note": "“There I will sit to judge all the nations round about”: in the valley of Jehoshaphat."
+                },
+                {
+                  "ref": "Psa.51.6",
+                  "note": "“That you may be righteous when you speak, and clear when you judge”; quoted in Rom 3:4."
+                },
+                {
+                  "ref": "Ezk.20.4",
+                  "note": "“Will you judge them, son of man? Make them know the abominations of their fathers”: arraign them. So 22:2; 23:36."
+                },
+                {
+                  "ref": "Psa.109.31",
+                  "note": "Yahweh stands at the right hand of the needy, “to save him from those who judge his soul”."
+                },
+                {
+                  "ref": "Ecc.3.17",
+                  "note": "“God will judge the righteous and the wicked, for there is a time for every purpose and for every work.”"
+                },
+                {
+                  "ref": "Psa.94.2",
+                  "note": "“Lift yourself up, Judge of the earth; render recompense to the proud.”"
+                }
+              ]
+            },
+            {
+              "id": "shaphat-govern",
+              "gloss": "govern, rule, lead a people",
+              "definition": "To be at the head of a people as their judge: to rule them, which in Israel’s judges included saving them from their enemies and leading them in war, and in a king is the first of his duties.",
+              "evidence": [
+                {
+                  "ref": "1Sa.8.20",
+                  "role": "defining",
+                  "note": "“Our king shall judge us, and go out before us, and fight our battles.” 8:5, “a king to judge us, like all the nations”."
+                },
+                {
+                  "ref": "Jdg.3.10",
+                  "role": "defining",
+                  "note": "Of Othniel: “The spirit of Yahweh came on him, and he judged Israel, and went out to war.”"
+                },
+                {
+                  "ref": "2Ki.15.5",
+                  "role": "defining",
+                  "note": "When the king was a leper, “Jotham the king’s son was over the house, judging the people of the land”: acting as regent."
+                },
+                {
+                  "ref": "Jdg.4.4",
+                  "note": "“Deborah, a prophetess … was judging Israel at that time.”"
+                },
+                {
+                  "ref": "Jdg.12.11",
+                  "note": "“Elon the Zebulunite judged Israel; he judged Israel ten years.” So of each judge, Jdg 10:2–3; 12:7–14; 15:20; 16:31."
+                },
+                {
+                  "ref": "1Sa.7.15",
+                  "note": "“Samuel judged Israel all the days of his life.” So 7:6, 16–17; 4:18, of Eli."
+                },
+                {
+                  "ref": "Rut.1.1",
+                  "note": "“In the days when the judges judged.” So 2Ki 23:22."
+                },
+                {
+                  "ref": "Dan.9.12",
+                  "note": "“Our judges who judged us”: Israel’s rulers."
+                },
+                {
+                  "ref": "Psa.67.5",
+                  "note": "“You shall judge the peoples with uprightness, and lead the nations on the earth”: judging beside leading."
+                },
+                {
+                  "ref": "Psa.96.13",
+                  "note": "“He comes to judge the earth; he shall judge the world in righteousness, and the peoples with his faithfulness.” So 98:9; 9:9; 1Ch 16:33."
+                },
+                {
+                  "ref": "Psa.82.8",
+                  "note": "“Arise, O God, judge the earth, for you shall inherit all the nations.”"
+                },
+                {
+                  "ref": "Isa.51.5",
+                  "note": "“My arms shall judge the peoples; the coastlands shall wait for me.”"
+                },
+                {
+                  "ref": "Oba.1.21",
+                  "note": "“Saviours shall come up on mount Zion to judge the mount of Esau, and the kingdom shall be Yahweh’s.”"
+                },
+                {
+                  "ref": "Act.13.20",
+                  "note": "Paul: “After these things he gave them judges (κριτάς) until Samuel the prophet.”"
+                }
+              ],
+              "cognate_ids": [
+                "uga-tapit",
+                "phn-shophet",
+                "akk-shapitu"
+              ]
+            },
+            {
+              "id": "shophet-judge",
+              "gloss": "(participle שֹׁפֵט) a judge",
+              "definition": "The participle as a noun: one who judges. He may be a magistrate appointed in a city, the head of the people (a ruler or deliverer), a king, or Yahweh himself.",
+              "evidence": [
+                {
+                  "ref": "Deu.16.18",
+                  "role": "defining",
+                  "note": "“Judges and officers (שֹׁפְטִים וְשֹׁטְרִים) you shall appoint in all your gates … and they shall judge the people with righteous judgment.”"
+                },
+                {
+                  "ref": "Exo.2.14",
+                  "role": "defining",
+                  "note": "“Who made you a prince and a judge (שַׂר וְשֹׁפֵט) over us?”; quoted in Act 7:27, 35."
+                },
+                {
+                  "ref": "Jdg.2.16",
+                  "role": "defining",
+                  "note": "“Yahweh raised up judges, and they saved them from the hand of those who plundered them”; 2:18, “Yahweh was with the judge”."
+                },
+                {
+                  "ref": "Gen.18.25",
+                  "role": "defining",
+                  "note": "Abraham calls Yahweh “the Judge of all the earth (שֹׁפֵט כָּל הָאָרֶץ)”."
+                },
+                {
+                  "ref": "Isa.33.22",
+                  "role": "defining",
+                  "note": "“Yahweh is our judge, Yahweh is our lawgiver, Yahweh is our king; he will save us.”"
+                },
+                {
+                  "ref": "Psa.2.10",
+                  "note": "“O kings, be wise; be instructed, judges of the earth”: kings and judges as one class. So Psa 148:11; Pro 8:16; Isa 40:23; Hos 7:7."
+                },
+                {
+                  "ref": "Deu.17.9",
+                  "note": "“The priests the Levites, and the judge who shall be in those days.” So 17:12; 19:17; 25:2."
+                },
+                {
+                  "ref": "2Ch.19.5",
+                  "to": "2Ch.19.6",
+                  "note": "Jehoshaphat set judges in the fortified cities and told them, “you judge not for man but for Yahweh, and he is with you in the matter of judgment”."
+                },
+                {
+                  "ref": "Psa.7.12",
+                  "note": "“God is a righteous judge.” So 50:6; 75:8."
+                },
+                {
+                  "ref": "Isa.1.26",
+                  "note": "“I will restore your judges as at the first, and your counsellors as at the beginning.”"
+                },
+                {
+                  "ref": "Mic.4.14",
+                  "note": "“With a rod they strike the judge of Israel on the cheek.”"
+                },
+                {
+                  "ref": "Zep.3.3",
+                  "note": "Jerusalem’s “judges are evening wolves”. So Mic 3:11; 7:3, judging for a bribe."
+                },
+                {
+                  "ref": "Hos.13.10",
+                  "note": "“Where is your king, that he may save you … and your judges, of whom you said, Give me a king and princes?”"
+                }
+              ],
+              "cognate_ids": [
+                "uga-tapit",
+                "phn-shophet",
+                "akk-shapitu"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "enter into judgment with, plead one’s case; be judged",
+          "senses": [
+            {
+              "id": "nishpat-litigate",
+              "gloss": "enter into judgment with, go to law with",
+              "definition": "Reciprocal: to go to judgment with another, each stating his case; of Yahweh, to bring his case against a people, and to carry out its sentence on them.",
+              "evidence": [
+                {
+                  "ref": "1Sa.12.7",
+                  "role": "defining",
+                  "note": "Samuel: “Stand, that I may enter into judgment with you before Yahweh concerning all the righteous acts of Yahweh.”"
+                },
+                {
+                  "ref": "Jer.25.31",
+                  "role": "defining",
+                  "note": "“Yahweh has a dispute (רִיב) with the nations; he enters into judgment with all flesh; the wicked he gives to the sword.”"
+                },
+                {
+                  "ref": "Ezk.20.35",
+                  "to": "Ezk.20.36",
+                  "role": "defining",
+                  "note": "“I will enter into judgment with you there face to face, as I entered into judgment with your fathers in the wilderness of the land of Egypt.”"
+                },
+                {
+                  "ref": "Isa.43.26",
+                  "note": "“Let us enter into judgment together; state your case, that you may be justified.”"
+                },
+                {
+                  "ref": "Pro.29.9",
+                  "note": "“A wise man goes to law with a foolish man.”"
+                },
+                {
+                  "ref": "Isa.59.4",
+                  "note": "“No one pleads (נִשְׁפָּט) in faithfulness.”"
+                },
+                {
+                  "ref": "Jer.2.35",
+                  "note": "“I enter into judgment with you, because you say, I have not sinned.”"
+                },
+                {
+                  "ref": "Isa.66.16",
+                  "note": "“By fire and by his sword Yahweh will enter into judgment with all flesh.” So Ezk 38:22, with pestilence and blood."
+                },
+                {
+                  "ref": "Jol.4.2",
+                  "note": "“I will gather all the nations … and enter into judgment with them there for my people and my inheritance Israel.”"
+                },
+                {
+                  "ref": "2Ch.22.8",
+                  "note": "“When Jehu was executing judgment on the house of Ahab.”"
+                }
+              ]
+            },
+            {
+              "id": "nishpat-be-judged",
+              "gloss": "be judged, be brought to trial",
+              "definition": "Passive: to stand trial and have judgment passed.",
+              "evidence": [
+                {
+                  "ref": "Psa.37.33",
+                  "role": "defining",
+                  "note": "Yahweh will not “condemn him when he is judged (בְּהִשָּׁפְטוֹ)”."
+                },
+                {
+                  "ref": "Psa.9.20",
+                  "role": "defining",
+                  "note": "“Let the nations be judged before your face.”"
+                },
+                {
+                  "ref": "Psa.109.7",
+                  "note": "“When he is judged, let him come out guilty.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "poel",
+          "gloss": "(participle) the one judging me, my judge",
+          "senses": [
+            {
+              "id": "my-judge",
+              "gloss": "my judge",
+              "definition": "Once, as a participle with suffix: the one who has me in judgment, to whom Job could only appeal for favour. With one use, the force of the stem cannot be fixed.",
+              "evidence": [
+                {
+                  "ref": "Job.9.15",
+                  "role": "defining",
+                  "note": "“Though I were righteous, I would not answer; I would make supplication to my judge (לִמְשֹׁפְטִי).”"
+                }
+              ],
+              "kin": [
+                "mishpat-judgment"
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "κρίνω",
+          "gloss": "judge",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "GEN 18:25 word 15",
+              "note": "κρίνων for הֲשֹׁפֵט, “the Judge (of all the earth)”; κρίνω renders the verb 88 times."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "PSA 96:13 word 9",
+              "note": "κρινεῖ for יִשְׁפֹּט, “he shall judge the world in righteousness”; so PSA 9:9 word 2 and PSA 98:9 word 7."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "PSA 51:6 word 11",
+              "note": "κρίνεσθαί for בְשָׁפְטֶךָ."
+            },
+            {
+              "ref": "Act.17.31",
+              "role": "defining",
+              "note": "“He will judge the world in righteousness by a man whom he has appointed”: the words of Psa 9:9; 96:13; 98:9."
+            },
+            {
+              "ref": "Rom.3.4",
+              "role": "defining",
+              "note": "Psa 51:6 quoted: “that you may be justified in your words, and overcome when you are judged.”"
+            },
+            {
+              "ref": "Mat.19.28",
+              "note": "“You shall sit on twelve thrones, judging the twelve tribes of Israel.” So Luk 22:30."
+            },
+            {
+              "ref": "1Co.6.2",
+              "note": "“The saints shall judge the world.”"
+            },
+            {
+              "ref": "2Ti.4.1",
+              "note": "Christ Jesus “is about to judge the living and the dead at his appearing and his kingdom”."
+            },
+            {
+              "ref": "Rev.11.18",
+              "note": "“The time of the dead, to be judged.”"
+            }
+          ]
+        },
+        {
+          "lemma": "κριτής",
+          "gloss": "judge",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "JDG 2:16 word 3",
+              "note": "κριτάς for שֹׁפְטִים; so ISA 33:22 word 3, κριτὴς for שֹׁפְטֵנוּ."
+            },
+            {
+              "ref": "Act.13.20",
+              "role": "defining",
+              "note": "“He gave them judges until Samuel the prophet”: the judges of the book of Judges."
+            },
+            {
+              "ref": "Act.10.42",
+              "note": "Jesus is “the one appointed by God judge of the living and the dead”."
+            },
+            {
+              "ref": "Heb.12.23",
+              "note": "“God the judge of all.”"
+            },
+            {
+              "ref": "2Ti.4.8",
+              "note": "“The Lord, the righteous judge”; compare Psa 7:12."
+            },
+            {
+              "ref": "Jas.5.9",
+              "note": "“The judge stands before the doors.”"
+            }
+          ]
+        },
+        {
+          "lemma": "δικαστής",
+          "gloss": "judge",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "EXO 2:14 word 6",
+              "note": "δικαστὴν for שֹׁפֵט in שַׂר וְשֹׁפֵט."
+            },
+            {
+              "ref": "Act.7.27",
+              "role": "defining",
+              "note": "Stephen quotes Exo 2:14: “Who made you a ruler and a judge over us?”"
+            },
+            {
+              "ref": "Act.7.35",
+              "note": "“This Moses whom they refused, saying, Who made you a ruler and a judge?, him God sent as ruler and redeemer.”"
+            }
+          ]
+        },
+        {
+          "lemma": "διακρίνω",
+          "gloss": "(middle) dispute, contend",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "EZK 20:35 word 6",
+              "note": "διακριθήσομαι for the niphal וְנִשְׁפַּטְתִּי, “I will enter into judgment”."
+            },
+            {
+              "ref": "Act.11.2",
+              "note": "“Those of the circumcision contended (διεκρίνοντο) with him.”"
+            },
+            {
+              "ref": "Jud.1.9",
+              "note": "Michael, “contending (διακρινόμενος) with the false accuser, disputed about the body of Moses”."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "דִּין",
+            "note": "“Judge”, the rarer verb, in the other half of the line.",
+            "evidence": [
+              {
+                "ref": "Psa.9.9",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.7.9"
+              },
+              {
+                "ref": "Pro.31.9"
+              },
+              {
+                "ref": "Jer.5.28"
+              }
+            ]
+          },
+          {
+            "lemma": "רִיב",
+            "note": "“Plead a cause, contend”: to judge someone is to take up his dispute.",
+            "evidence": [
+              {
+                "ref": "Psa.43.1",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.1.17"
+              },
+              {
+                "ref": "1Sa.24.16"
+              },
+              {
+                "ref": "Jer.25.31"
+              }
+            ]
+          },
+          {
+            "lemma": "הוֹשִׁיעַ",
+            "note": "“Save”: the judge delivers those he judges for.",
+            "evidence": [
+              {
+                "ref": "Jdg.2.16",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.72.4"
+              },
+              {
+                "ref": "Isa.33.22"
+              },
+              {
+                "ref": "Oba.1.21"
+              }
+            ]
+          },
+          {
+            "lemma": "הוֹכִיחַ",
+            "note": "“Decide, reprove”, beside it of the one who judges nations and the poor.",
+            "evidence": [
+              {
+                "ref": "Isa.2.4",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.11.3"
+              },
+              {
+                "ref": "Isa.11.4"
+              }
+            ]
+          },
+          {
+            "lemma": "מֶלֶךְ",
+            "note": "“King” (and שַׂר “prince”): the judge named beside the king and the prince as the people’s ruler.",
+            "evidence": [
+              {
+                "ref": "Psa.2.10",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.33.22"
+              },
+              {
+                "ref": "Exo.2.14"
+              },
+              {
+                "ref": "Hos.13.10"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "שָׁפַט בֵּין … וּבֵין",
+            "gloss": "judge between (two parties)",
+            "evidence": [
+              {
+                "ref": "Gen.16.5",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.18.16"
+              },
+              {
+                "ref": "Deu.1.16"
+              },
+              {
+                "ref": "Isa.2.4"
+              }
+            ]
+          },
+          {
+            "phrase": "שֹׁפֵט כָּל הָאָרֶץ",
+            "gloss": "the Judge of all the earth",
+            "evidence": [
+              {
+                "ref": "Gen.18.25",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.94.2"
+              }
+            ]
+          },
+          {
+            "phrase": "שָׁפַט מִיַּד",
+            "gloss": "judge (someone) out of the hand of: deliver by doing him justice",
+            "evidence": [
+              {
+                "ref": "2Sa.18.19",
+                "role": "defining"
+              },
+              {
+                "ref": "2Sa.18.31"
+              },
+              {
+                "ref": "1Sa.24.16"
+              }
+            ]
+          },
+          {
+            "phrase": "שָׁפַט אֶת יִשְׂרָאֵל",
+            "gloss": "judge Israel: govern it as its judge",
+            "evidence": [
+              {
+                "ref": "Jdg.3.10",
+                "role": "defining"
+              },
+              {
+                "ref": "Jdg.12.11"
+              },
+              {
+                "ref": "1Sa.7.15"
+              }
+            ]
+          },
+          {
+            "phrase": "שֹׁפְטִים וְשֹׁטְרִים",
+            "gloss": "judges and officers",
+            "evidence": [
+              {
+                "ref": "Deu.16.18",
+                "role": "defining"
+              },
+              {
+                "ref": "Jos.8.33"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "שֶׁפֶט",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "(plural) acts of judgment, punishments",
+      "bdb": [
+        "v.fg.ab"
+      ],
+      "cognate_ids": [
+        "akk-shiptu"
+      ],
+      "summary": "Only in the plural שְׁפָטִים, and nearly always with עָשָׂה “do”: the blows by which a sentence is carried out. Sixteen uses, ten of them in Ezekiel.",
+      "senses": [
+        {
+          "id": "shephet-acts",
+          "gloss": "acts of judgment, punishments",
+          "definition": "Judgments carried out on the guilty: the plagues on Egypt and its gods, the sword, famine, beasts and pestilence sent on Jerusalem, the blows prepared for scorners.",
+          "evidence": [
+            {
+              "ref": "Exo.12.12",
+              "role": "defining",
+              "note": "“I will strike every firstborn in the land of Egypt … and on all the gods of Egypt I will do judgments (אֶעֱשֶׂה שְׁפָטִים).” So Num 33:4."
+            },
+            {
+              "ref": "Ezk.14.21",
+              "role": "defining",
+              "note": "“My four sore judgments: sword and famine and evil beast and pestilence.”"
+            },
+            {
+              "ref": "Pro.19.29",
+              "role": "defining",
+              "note": "“Judgments are prepared for scorners, and blows for the back of fools”: judgments beside blows."
+            },
+            {
+              "ref": "Exo.6.6",
+              "note": "“I will redeem you with an outstretched arm and with great judgments.” So 7:4."
+            },
+            {
+              "ref": "Ezk.5.10",
+              "note": "“I will do judgments in you, and scatter all your remnant to every wind.” So 5:15; 11:9; 16:41."
+            },
+            {
+              "ref": "Ezk.28.22",
+              "note": "Of Sidon: “they shall know that I am Yahweh, when I do judgments in her.” So 25:11; 30:14, 19."
+            },
+            {
+              "ref": "2Ch.24.24",
+              "note": "The army of Aram “did judgments on Joash”, because Judah had forsaken Yahweh."
+            }
+          ],
+          "kin": [
+            "shaphat-condemn"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "ἐκδίκησις",
+          "gloss": "vengeance, a doing of justice",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "EXO 7:4 word 18",
+              "note": "ἐκδικήσει for בִּשְׁפָטִים גְּדֹלִים, “with great judgments”."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "EZK 14:21 word 9",
+              "note": "ἐκδικήσεις for שְׁפָטַי, “my four … judgments”."
+            },
+            {
+              "ref": "Luk.21.22",
+              "note": "“These are days of vengeance (ἐκδικήσεως), that all the things written may be fulfilled”: of Jerusalem’s judgment."
+            },
+            {
+              "ref": "2Th.1.8",
+              "note": "The Lord Jesus revealed “in flaming fire, giving vengeance to those who do not know God”."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "עָשָׂה שְׁפָטִים בְּ",
+            "gloss": "do judgments on, punish",
+            "evidence": [
+              {
+                "ref": "Exo.12.12",
+                "role": "defining"
+              },
+              {
+                "ref": "Ezk.5.10"
+              },
+              {
+                "ref": "Ezk.28.22"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "שְׁפוֹט",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "judgment, punishment",
+      "bdb": [
+        "v.fg.ac"
+      ],
+      "cognate_ids": [
+        "akk-shiptu"
+      ],
+      "summary": "Twice only, once singular (2Ch 20:9) and once plural, spelt שְׁפוּטִים (Ezk 23:10): the same thing as שְׁפָטִים. With two uses its difference from שֶׁפֶט, if any, cannot be shown.",
+      "senses": [
+        {
+          "id": "judgment-punishment",
+          "gloss": "judgment, punishment",
+          "definition": "Judgment as a calamity that falls on the guilty, named among sword, pestilence and famine.",
+          "evidence": [
+            {
+              "ref": "2Ch.20.9",
+              "role": "defining",
+              "note": "“If evil comes on us, sword, judgment (שְׁפוֹט), or pestilence, or famine, we will stand before this house … and cry to you.”"
+            },
+            {
+              "ref": "Ezk.23.10",
+              "role": "defining",
+              "note": "Of Oholah: “they slew her with the sword … and they did judgments (שְׁפוּטִים) on her.”"
+            }
+          ],
+          "kin": [
+            "shephet-acts",
+            "shaphat-condemn"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שְׁפַט",
+      "lang": "arc",
+      "pos": "verb",
+      "gloss": "judge; (participle) a magistrate",
+      "bdb": [
+        "xv.bb.aa"
+      ],
+      "cognate_ids": [
+        "uga-tapit",
+        "phn-shophet",
+        "akk-shapitu"
+      ],
+      "summary": "Once, as a plural participle in Artaxerxes’ letter to Ezra, beside the usual Aramaic word for judges, דַּיָּנִין. Aramaic otherwise judges with דִּין, so the word here is most likely the Hebrew title of office kept in the Aramaic of the decree.",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "(participle) magistrates, judges",
+          "senses": [
+            {
+              "id": "magistrates",
+              "gloss": "magistrates",
+              "definition": "Officers appointed to judge a people according to law.",
+              "evidence": [
+                {
+                  "ref": "Ezr.7.25",
+                  "role": "defining",
+                  "note": "“Appoint magistrates and judges (שָׁפְטִין וְדַיָּנִין) who may judge all the people beyond the River, all who know the laws of your God.”"
+                }
+              ],
+              "kin": [
+                "shophet-judge"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "uga-tpt",
+      "lang": "uga",
+      "form": "𐎘𐎔𐎉",
+      "translit": "ṯpṭ (ṯ-p-ṭ)",
+      "gloss": "judge, adjudicate",
+      "relation": "cognate",
+      "note": "In the Keret epic the king is rebuked for not judging the case of the widow nor adjudicating the suit of the wretched (ltdn dn almnt, lttpṭ ṯpṭ qṣr npš): the verb stands in the second line beside d-y-n, as שָׁפַט stands beside דִּין in Psa 9:9 and Jer 5:28, and its object is those the Hebrew verb is used of in Isa 1:17. Ugaritic keeps ṯ apart from š, so the ש of the Hebrew root is the older ṯ.",
+      "sounds": {
+        "ש": "ṯ"
+      },
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 205, §93 Glossary, /ṯ-p-ṭ/",
+          "note": "“tṯpṭ ‘to judge, adjudicate’ (H. šāpaṭ, yišpoṭ, cf. Akkad. šapāṭu)”."
+        },
+        {
+          "source": "segert-1984",
+          "locator": "p. 143, §85.1, notes to KTU 1.16:VI:45–47",
+          "note": "Negative with imperfect 2 sing. of /ṯ-p-ṭ/ “to adjudicate”, the B-word to /d-y-n/, cf. Jer 5:28, Ps 7:9; object /ṯapṭ-/ “suit, case”."
+        }
+      ]
+    },
+    {
+      "id": "uga-tapit",
+      "lang": "uga",
+      "form": "𐎘𐎔𐎉",
+      "translit": "ṯpṭ (ṯāpiṭ-)",
+      "gloss": "judge, ruler",
+      "relation": "cognate",
+      "note": "The participle as a title, as שֹׁפֵט is: the sea god is ṯpṭ nhr, “Judge River”, beside zbl ym, “Prince Sea”, a ruler’s title and not a magistrate’s.",
+      "sounds": {
+        "ש": "ṯ"
+      },
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 205, §93 Glossary, ṯpṭ /ṯāpiṭ-/",
+          "note": "KTU 1.2:IV:22; 1.3:V:32, “judge, ruler” (H. šōpēṭ, Phoen. špṭ, suffet(es))."
+        }
+      ]
+    },
+    {
+      "id": "uga-tapt",
+      "lang": "uga",
+      "form": "𐎘𐎔𐎉",
+      "translit": "ṯpṭ (ṯapṭ-)",
+      "gloss": "suit, case",
+      "relation": "cognate",
+      "note": "The case that is judged: the sense of מִשְׁפָּט in Num 27:5 and Job 13:18.",
+      "sounds": {
+        "ש": "ṯ"
+      },
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 205, §93 Glossary, ṯpṭ /ṯapṭ-/",
+          "note": "KTU 1.16:VI:47, “suit, case”."
+        }
+      ]
+    },
+    {
+      "id": "phn-shpt",
+      "lang": "phn",
+      "form": "𐤔𐤐𐤈",
+      "translit": "špṭ",
+      "gloss": "adjudge, condemn",
+      "relation": "cognate",
+      "note": "In Punic curses on anyone who removes a stele: the goddess or Baal-hammon “shall adjudge the intent of that person”, the Hebrew’s judging as passing sentence.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 477, Š-P-Ṭ I",
+          "note": "“v. qal ADJUDGE, in the expression špṭ brḥt, ‘adjudge the intent of someone’; CONDEMN”: KAI 79.6/11; CIS i 5510.1/2; CIS i 5632.7/10 (Punic)."
+        }
+      ]
+    },
+    {
+      "id": "phn-shophet",
+      "lang": "phn",
+      "form": "𐤔𐤐𐤈",
+      "translit": "špṭ (šūfeṭ)",
+      "gloss": "suffes: the chief civil magistrate of a Phoenician city",
+      "relation": "cognate",
+      "note": "The Hebrew שֹׁפֵט as a title of government: Carthage and other western Phoenician cities were ruled by two špṭm, and years were dated by them (“in the year of the suffetes …”). Latin took the word over as sufes, plural sufetes. Carthage’s republic is called “the rule of the suffetes”, in the words of Rut 1:1, בִּימֵי שְׁפֹט הַשֹּׁפְטִים.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 477, ŠPṬ II",
+          "note": "“n.m. SUFFES (pl. SUFFETES), the civil magistrate of a Western Phoenician republic (Latinized sufes, suffes, pl. sufetes, suffetes)”: KAI 69.1/2; KAI 77.1/4 (Punic)."
+        },
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 478, ŠPṬ ŠPṬM",
+          "note": "“SUFFETIC REGIME/REPUBLIC, lit., THE RULE OF THE SUFFETES”, CIS i 5632.4/7, compared with the Hebrew בִּימֵי שְׁפֹט הַשֹּׁפְטִים, “in the days when the judges judged” (Rut 1:1)."
+        },
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 478, ŠPṬ III",
+          "note": "“n.m. SUFFETSHIP”: KAI 159.5/6 (Neo-Punic)."
+        }
+      ]
+    },
+    {
+      "id": "phn-mshpt",
+      "lang": "phn",
+      "form": "𐤌𐤔𐤐𐤈",
+      "translit": "mšpṭ",
+      "gloss": "rule, royal authority",
+      "relation": "cognate",
+      "note": "The same noun as מִשְׁפָּט, on the sarcophagus of Ahiram of Byblos: a king who disturbs the coffin, “the sceptre of his mšpṭ shall break, the throne of his kingship overturn”. It is the judging that belongs to a king, his rule: compare מִשְׁפַּט הַמֶּלֶךְ (1Sa 8:9, 11) and מִשְׁפַּט הַמְּלֻכָה (1Sa 10:25).",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 318, MŠPṬ",
+          "note": "“n.m. IMPERIUM, ROYAL AUTHORITY”: KAI 1.2 (Phoenician), tḥtsp ḥṭr mšpṭh thtpk ksʾ mlkh."
+        }
+      ]
+    },
+    {
+      "id": "phn-shptbl",
+      "lang": "phn",
+      "form": "𐤔𐤐𐤈𐤁𐤏𐤋",
+      "translit": "špṭbʿl; short form špṭ",
+      "gloss": "personal names: “Baal has judged” (or “Baal, rule!”)",
+      "relation": "cognate",
+      "note": "Phoenician and Punic names join the verb to a god’s name in either order, as Hebrew joins it to Yahweh’s in שְׁפַטְיָה and יְהוֹשָׁפָט, and use the bare verb as a short form, as Hebrew does in שָׁפָט.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 478, ŠPṬBʿL",
+          "note": "“p.n. SAFOT-BAʿAL (‘Baʿal rule!’)”, Phoenician and Punic, seven times or more."
+        },
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 478, ŠPṬ (p.n.)",
+          "note": "“p.n. SAFOT, short form of the name-type špṭ-DN, DN-špṭ”; “exceedingly common” in Punic."
+        }
+      ]
+    },
+    {
+      "id": "akk-shapatu",
+      "lang": "akk",
+      "form": "šapāṭu",
+      "translit": "šapāṭu",
+      "gloss": "give judgement; punish",
+      "relation": "cognate",
+      "note": "Rare in Akkadian, whose own verb for judging is diānu (see the din entry); its noun šipṭu is common. Akkadian š stands for both older š and ṯ, so it does not show which lies behind the ש.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000123130, šapāṭu [give judgement] V",
+          "note": "giving judgement (×5; Neo-Assyrian)."
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000060580, šapāṭu [inform strictly] V",
+          "note": "punish (×4; Neo-Assyrian), norm ašpuṭ."
+        }
+      ]
+    },
+    {
+      "id": "akk-shiptu",
+      "lang": "akk",
+      "form": "šipṭu",
+      "translit": "šipṭu",
+      "gloss": "judgement, verdict; punishment; rule",
+      "relation": "cognate",
+      "note": "A noun of the same shape as שֶׁפֶט, and with its sense: the verdict and the punishment that carries it out. Its further meanings “rule” and “strict order, discipline” match מִשְׁפָּט as ordinance.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000036620, šipṭu [judgement] N",
+          "note": "judgement; punishment; rule; verdict (×207; Neo-Assyrian, Neo-Babylonian)."
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000003180, šipṭu [threat] N",
+          "note": "discipline; responsibility; strict order (×8; Neo-Assyrian, Achaemenid)."
+        }
+      ]
+    },
+    {
+      "id": "akk-shapitu",
+      "lang": "akk",
+      "form": "šāpiṭu",
+      "translit": "šāpiṭu",
+      "gloss": "district governor",
+      "relation": "cognate",
+      "note": "The participle as a title of one who governs, as שֹׁפֵט is in Judges.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000018400, šāpiṭu [district governor] N",
+          "note": "district governor (×2; Middle Babylonian)."
+        }
+      ]
+    },
+    {
+      "id": "sab-tft",
+      "lang": "sem",
+      "form": "𐩻𐩰𐩷",
+      "translit": "ṯfṭ (noun, written tfṭ in the text cited)",
+      "gloss": "judgment, decision (Sabaean)",
+      "relation": "cognate",
+      "note": "A decision recorded and dated in an inscription, “and this judgment was (enacted) in the month …”: a ruling laid down, as a מִשְׁפָּט is. The dictionary files it under the root ṮFṬ, with ṯ as in Ugaritic.",
+      "sounds": {
+        "ש": "ṯ"
+      },
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "p. 549, ṮFṬ",
+          "note": "“JUDGMENT, DECISION [Cf Heb šāpaṭ ‘judge.’]”; text A 452/6, wkwn ḏn tfṭ bwrḫ …, “and this judgment was (enacted) in the month …”."
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "one-god",
+      "statement": "Abraham, pleading for Sodom, calls Yahweh “the Judge of all the earth” and takes it as certain that he will do justice (Gen 18:25). Moses says, “all his ways are justice; a God of faithfulness and without iniquity” (Deu 32:4), and tells Israel’s judges, “the judgment is God’s” (Deu 1:17); Jehoshaphat tells his, “you judge not for man but for Yahweh” (2Ch 19:6). Isaiah joins the three offices in him: “Yahweh is our judge, Yahweh is our lawgiver, Yahweh is our king; he will save us” (Isa 33:22), and the psalms say that justice is the foundation of his throne and that he comes to judge the earth and the world in righteousness (Psa 89:15; 96:13). All judging among men is therefore held from him and answerable to him: there is one judge over all the earth, and every other judge sits for him.",
+      "evidence": [
+        {
+          "ref": "Gen.18.25"
+        },
+        {
+          "ref": "Deu.32.4"
+        },
+        {
+          "ref": "Deu.1.17"
+        },
+        {
+          "ref": "2Ch.19.6"
+        },
+        {
+          "ref": "Isa.33.22"
+        },
+        {
+          "ref": "Psa.89.15"
+        },
+        {
+          "ref": "Psa.96.13"
+        },
+        {
+          "ref": "Heb.12.23"
+        }
+      ]
+    },
+    {
+      "topic": "judgment",
+      "statement": "Psalm 72 prays, “Give the king your judgments, O God, and your righteousness to the king’s son”, so that he judges God’s people and saves the sons of the needy (Psa 72:1–4): the judgments are God’s, and they are given to a king who is a man’s son. Isaiah says of the shoot from Jesse, on whom Yahweh’s spirit rests, that he will not judge by the sight of his eyes but will judge the poor with righteousness (Isa 11:1–4), that the son given will sit on the throne of David to establish it with justice (Isa 9:5–6), and that Yahweh’s servant will bring forth justice to the nations, which Matthew applies to Jesus (Isa 42:1–4; Mat 12:18–20). Jesus says, “The Father judges no one, but has given all judgment to the Son … and has given him authority to do judgment, because he is a son of man”, and, “I can do nothing of myself; as I hear, I judge” (Jhn 5:22, 27, 30). Paul says God “will judge the world in righteousness by a man whom he has appointed”, of which he has given assurance by raising him from the dead (Act 17:31), and Peter that he is “appointed by God judge of the living and the dead” (Act 10:42). So the judging of the earth that the psalms ascribe to Yahweh (Psa 96:13; 98:9) is done by him through Jesus: a man, raised from the dead, who judges by an authority given to him and not his own.",
+      "evidence": [
+        {
+          "ref": "Psa.72.1",
+          "to": "Psa.72.4"
+        },
+        {
+          "ref": "Isa.11.1",
+          "to": "Isa.11.4"
+        },
+        {
+          "ref": "Isa.9.5",
+          "to": "Isa.9.6"
+        },
+        {
+          "ref": "Isa.42.1",
+          "to": "Isa.42.4"
+        },
+        {
+          "ref": "Mat.12.18",
+          "to": "Mat.12.20"
+        },
+        {
+          "ref": "Jhn.5.22"
+        },
+        {
+          "ref": "Jhn.5.27"
+        },
+        {
+          "ref": "Jhn.5.30"
+        },
+        {
+          "ref": "Act.17.31"
+        },
+        {
+          "ref": "Act.10.42"
+        },
+        {
+          "ref": "Psa.96.13"
+        },
+        {
+          "ref": "Psa.98.9"
+        }
+      ]
+    },
+    {
+      "topic": "resurrection",
+      "statement": "“God will bring every deed into judgment, concerning every hidden thing, whether good or evil” (Ecc 12:14), and “the wicked shall not stand in the judgment” (Psa 1:5). Daniel is told when: “many of those who sleep in the dust of the ground shall awake, some to life of the age, and some to reproaches and contempt of the age” (Dan 12:2). Jesus says the same of the judgment given to him: “an hour is coming in which all who are in the tombs shall hear his voice and come out, those who have done good to a resurrection of life, and those who have done evil to a resurrection of judgment” (Jhn 5:27–29). Paul places it at Christ’s coming: he “is about to judge the living and the dead at his appearing and his kingdom”, and the crown is given “at that day” (2Ti 4:1, 8); “we must all appear before the judgment seat of Christ, that each may receive the things done through the body” (2Co 5:10). In Revelation, when the kingdom of the world becomes the Lord’s, it is “the time of the dead, to be judged, and to give the reward to your servants” (Rev 11:15, 18). The dead are therefore not judged at death, nor rewarded then: they sleep in the dust until they are raised, and judgment and reward are given together, by Christ, when he comes.",
+      "evidence": [
+        {
+          "ref": "Ecc.12.14"
+        },
+        {
+          "ref": "Psa.1.5"
+        },
+        {
+          "ref": "Dan.12.2"
+        },
+        {
+          "ref": "Jhn.5.27",
+          "to": "Jhn.5.29"
+        },
+        {
+          "ref": "2Ti.4.1"
+        },
+        {
+          "ref": "2Ti.4.8"
+        },
+        {
+          "ref": "2Co.5.10"
+        },
+        {
+          "ref": "Rev.11.15"
+        },
+        {
+          "ref": "Rev.11.18"
+        },
+        {
+          "ref": "Act.24.15"
+        }
+      ]
+    },
+    {
+      "topic": "kingdom-of-god",
+      "statement": "In Judges and Samuel to judge Israel is to govern it (Jdg 3:10; 1Sa 8:20), and the prophets use the word in that sense of what is to come. Out of Zion the law goes forth, and “he shall judge between the nations … and they shall beat their swords into ploughshares; nation shall not lift up sword against nation” (Isa 2:3–4). Jerusalem is promised, “I will restore your judges as at the first” (Isa 1:26); “a king shall reign in righteousness, and princes shall rule in justice” (Isa 32:1); the righteous branch of David “shall do justice and righteousness in the land” (Jer 23:5); “saviours shall come up on mount Zion to judge the mount of Esau, and the kingdom shall be Yahweh’s” (Oba 1:21). Jesus tells the twelve that when the son of man sits on the throne of his glory they “shall sit on twelve thrones, judging the twelve tribes of Israel” (Mat 19:28; Luk 22:30), and Paul says “the saints shall judge the world” (1Co 6:2). The kingdom of God is thus a government on the earth, centred on Jerusalem, in which Christ and those with him judge Israel and the nations, and its mark is the justice that the kings of Israel failed to give.",
+      "evidence": [
+        {
+          "ref": "Jdg.3.10"
+        },
+        {
+          "ref": "1Sa.8.20"
+        },
+        {
+          "ref": "Isa.2.3",
+          "to": "Isa.2.4"
+        },
+        {
+          "ref": "Isa.1.26"
+        },
+        {
+          "ref": "Isa.32.1"
+        },
+        {
+          "ref": "Jer.23.5"
+        },
+        {
+          "ref": "Oba.1.21"
+        },
+        {
+          "ref": "Psa.122.5"
+        },
+        {
+          "ref": "Mat.19.28"
+        },
+        {
+          "ref": "Luk.22.30"
+        },
+        {
+          "ref": "1Co.6.2"
+        }
+      ]
+    },
+    {
+      "topic": "justice-for-the-poor",
+      "statement": "Yahweh “does the justice of the fatherless and the widow, and loves the sojourner” (Deu 10:18), and his law forbids bending the right of the poor, the sojourner, the fatherless and the widow (Exo 23:6; Deu 24:17). The prophets make this the test of Israel: “Seek justice, set right the oppressed, judge the fatherless, plead for the widow” (Isa 1:17); “let justice roll down as waters” (Amo 5:24), said to a people busy with feasts and offerings (Amo 5:21–23); “to do righteousness and justice is more acceptable to Yahweh than sacrifice” (Pro 21:3). Micah sums up what Yahweh seeks: “to do justice, and to love mercy, and to walk humbly with your God” (Mic 6:8), and Jesus names justice, mercy and faith as the weightier matters of the law, which the scribes left undone while they tithed herbs (Mat 23:23). Worship without justice to those who have no helper is not accepted; to do מִשְׁפָּט is to act toward others as God does.",
+      "evidence": [
+        {
+          "ref": "Deu.10.18"
+        },
+        {
+          "ref": "Exo.23.6"
+        },
+        {
+          "ref": "Deu.24.17"
+        },
+        {
+          "ref": "Isa.1.17"
+        },
+        {
+          "ref": "Amo.5.21",
+          "to": "Amo.5.24"
+        },
+        {
+          "ref": "Pro.21.3"
+        },
+        {
+          "ref": "Mic.6.8"
+        },
+        {
+          "ref": "Mat.23.23"
+        }
+      ]
+    },
+    {
+      "topic": "justification",
+      "statement": "Of the judgments of the law it is said, “which a man shall do and live by them” (Lev 18:5; Ezk 20:11), and Nehemiah confesses that Israel sinned against those same judgments (Neh 9:29). David, though he loved them, prays, “Do not enter into judgment with your servant, for no one living is righteous before you” (Psa 143:2). Paul quotes Lev 18:5 as the principle of the law, “the man who does them shall live by them” (Gal 3:12; Rom 10:5), and takes up David’s words: “by works of law no flesh shall be justified before him” (Rom 3:20). The judgments are righteous (Psa 19:10), but no man has kept them so as to stand when God judges; life comes by the righteousness God gives through faith, which the same passages go on to set out (Gal 3:11; Rom 3:21–22).",
+      "evidence": [
+        {
+          "ref": "Lev.18.5"
+        },
+        {
+          "ref": "Ezk.20.11"
+        },
+        {
+          "ref": "Neh.9.29"
+        },
+        {
+          "ref": "Psa.143.2"
+        },
+        {
+          "ref": "Psa.19.10"
+        },
+        {
+          "ref": "Gal.3.11",
+          "to": "Gal.3.12"
+        },
+        {
+          "ref": "Rom.10.5"
+        },
+        {
+          "ref": "Rom.3.20",
+          "to": "Rom.3.22"
+        }
+      ]
+    }
+  ],
+  "note": "Root: שפט, the brief’s key; no alphabetical accident here. BDB key m.dx.ag (מִשְׁפָּט, a cross-reference with no tokens) is not named. The participle שֹׁפֵט “judge” has no BDB key of its own, so it is written as a sense of the qal (shophet-judge) and its uses are counted with the verb’s; make it a word of its own if the app should show it as a noun. Names: שָׁפָט (v.fg.ad), שְׁפַטְיָה(וּ) (v.fg.af) and יְהוֹשָׁפָט (e.az.bb, filed by BDB under הוה) have name entries (names/shaphat.json, shephatiah.json, jehoshaphat.json); שִׁפְטָן (v.fg.ag, Num 34:24) and אֱלִישָׁפָט (a.dl.bi, 2Ch 23:1) have none yet; עֵין מִשְׁפָּט (p.ck.aj, Gen 14:7) and the valley of Jehoshaphat (Jol 4:2, 12) are places. The verb’s key counts six tokens of the name שָׁפָט by spelling, and the name’s key counts 1Sa 7:17 (the verb, pausal שָׁפָט). Cognates: Arabic has no cognate in Lane (no root ثفط, which is what Ugaritic and Sabaean ṯ would give; سفط “be cheerful, liberal” is unrelated in sense and would answer to š or s, so it is left out). The Peshitta does not use the root (SEDRA has no root ܫܦܛ; it judges with ܕܢ, as the Targums do with דִּין): so no Syriac word of the entry, and Ezr 7:25 is the root’s only Aramaic use in scripture. Leads not followed: Akkadian šapāṭu and šāpiṭum at Mari, often said to be West Semitic (Amorite) words in Akkadian, which would make them loans (check CAD Š/1 s.v. šapāṭu, šāpiṭu, šipṭu, not consulted; the Oracc records cited are Neo-Assyrian and Middle Babylonian); the Ugaritic nouns in DULAT (ṯpṭ, mṯpṭ “rule, authority”, parallel to mlk in KTU 1.2:III:18 and 1.6:VI:29, which would match Phoenician mšpṭ and the Ahiram formula); Syriac ܫܦܛܐ for the book of Judges (Payne Smith, not checked); Old South Arabian in SabaWeb; Aramaic špṭ in the Sefire and Elephantine texts. Segert’s page for §85.1 (p. 143) follows the din entry’s citation of the same passage; the glossary page (205) is from the running head in the OCR, and the Krahmalkov and Biella pages are from the page numbers in the scans’ text: check against the PDFs. Biella’s headword is ṮFṬ though the form quoted from the text is tfṭ. The poel of Job 9:15 is read by some as “my opponent at law”; “my judge” follows the plain participle. The sense mishpat-custom has no kin in the verb: it is the widest reach of the noun (what is fixed, as by a ruling), and scripture’s use is its only evidence. Doctrine topics: one-god is used for Yahweh as sole judge; rename if a better topic exists."
+}

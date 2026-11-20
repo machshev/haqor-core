@@ -1,0 +1,104 @@
+{
+  "id": "saela3",
+  "root": "סלע",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "landscape",
+    "refuge"
+  ],
+  "gloss": "crag, cliff, rocky refuge",
+  "summary": "A crag can both obstruct an approach and shelter someone who reaches it. David’s use of “my crag” in Psalm 18 takes its force from that experience.",
+  "words": [
+    {
+      "lemma": "סֶלַע",
+      "bdb": [
+        "o.bq.ab"
+      ],
+      "pos": "noun",
+      "gloss": "crag, cliff, rock",
+      "senses": [
+        {
+          "id": "rock-or-cliff",
+          "gloss": "rock or cliff",
+          "definition": "Jonathan’s approach to the Philistines passes between two projecting crags. In the wilderness account water flows from the rock for the assembled people.",
+          "evidence": [
+            {
+              "ref": "1Sa.14.4",
+              "to": "1Sa.14.5",
+              "role": "defining"
+            },
+            {
+              "ref": "Num.20.8",
+              "to": "Num.20.11"
+            }
+          ]
+        },
+        {
+          "id": "rocky-refuge",
+          "gloss": "rocky refuge",
+          "definition": "Samson stays in a cleft of the crag at Etam. David calls Yahweh his crag alongside his fortress and deliverer, using the shelter of terrain for the protection he has received.",
+          "evidence": [
+            {
+              "ref": "Psa.18.3",
+              "role": "defining"
+            },
+            {
+              "ref": "Jdg.15.8"
+            },
+            {
+              "ref": "2Sa.22.2"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "ar-sil"
+      ]
+    },
+    {
+      "lemma": "סֶלַע",
+      "bdb": [
+        "o.bq.ac"
+      ],
+      "pos": "name",
+      "gloss": "Sela",
+      "senses": [
+        {
+          "id": "sela",
+          "gloss": "Sela",
+          "definition": "After his victory over Edom in the Valley of Salt, Amaziah captures Sela and gives it the name Joktheel.",
+          "evidence": [
+            {
+              "ref": "2Ki.14.7",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-sil",
+      "lang": "ar",
+      "form": "سِلْع",
+      "translit": "silʿ",
+      "gloss": "fissure in a mountain",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I p. 1406, n20451, a crack or cleft in a mountain"
+        }
+      ],
+      "sounds": {
+        "ע": "ʿ"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "Arabic silʿ designates a fissure in a mountain and offers a possible comparison. The locust term already belongs to the solam entry. The compound Sela-hammahlekoth already belongs to the chalaq entry."
+}

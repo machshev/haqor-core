@@ -1,0 +1,234 @@
+{
+  "id": "qdd",
+  "root": "קדד",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "tags": [],
+  "gloss": "bow down, head or crown, cassia",
+  "summary": "People bow before Yahweh or a king. The noun קָדְקֹד describes the head, often its crown. The spice קִדָּה appears in the recipe for anointing oil and among Tyre’s imports.",
+  "words": [
+    {
+      "lemma": "קָדַד",
+      "pos": "verb",
+      "bdb": [
+        "s.ai.aa"
+      ],
+      "gloss": "bow down",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "bow down",
+          "senses": [
+            {
+              "id": "bow",
+              "gloss": "bow down",
+              "definition": "To bend low in reverence or as a mark of respect, sometimes bringing the face to the ground.",
+              "evidence": [
+                {
+                  "ref": "Gen.24.26",
+                  "role": "defining",
+                  "note": "Abraham’s servant bows and worships Yahweh after learning whose daughter Rebekah is."
+                },
+                {
+                  "ref": "Gen.43.28",
+                  "role": "defining",
+                  "note": "Joseph’s brothers bow after reporting that their father is alive and well."
+                },
+                {
+                  "ref": "Exo.34.8",
+                  "role": "defining",
+                  "note": "Moses hastens to bow toward the ground when Yahweh proclaims his name."
+                },
+                {
+                  "ref": "1Ki.1.31",
+                  "role": "defining",
+                  "note": "Bathsheba bows with her face toward the ground before King David and pronounces a blessing."
+                }
+              ],
+              "cognate_ids": [
+                "akk-bow",
+                "akk-bowed",
+                "akk-bower",
+                "akk-bending"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קָדְקֹד",
+      "pos": "noun",
+      "gender": "m",
+      "bdb": [
+        "s.aj.ab",
+        "s.al.ao"
+      ],
+      "gloss": "head, crown of the head",
+      "senses": [
+        {
+          "id": "head",
+          "gloss": "head, crown",
+          "definition": "The head, particularly its uppermost part when the body is described from foot to head.",
+          "evidence": [
+            {
+              "ref": "Job.2.7",
+              "role": "defining",
+              "note": "The sores cover Job from the sole of his foot to the crown of his head."
+            },
+            {
+              "ref": "2Sa.14.25",
+              "role": "defining",
+              "note": "The same two endpoints describe Absalom’s unblemished appearance."
+            },
+            {
+              "ref": "Gen.49.26",
+              "role": "defining",
+              "note": "The blessing is to rest on Joseph’s head. The second line repeats the wish using קָדְקֹד."
+            },
+            {
+              "ref": "Psa.68.22",
+              "role": "defining",
+              "note": "The hairy head of the wrongdoer stands parallel to the head of God’s enemies."
+            }
+          ],
+          "cognate_ids": [
+            "akk-head",
+            "uga-head",
+            "arc-head"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קִדָּה",
+      "pos": "noun",
+      "gender": "f",
+      "bdb": [
+        "s.aj.ac"
+      ],
+      "gloss": "an aromatic spice, traditionally cassia",
+      "senses": [
+        {
+          "id": "spice",
+          "gloss": "aromatic spice, cassia",
+          "definition": "A spice measured by weight for scented oil and traded alongside aromatic cane.",
+          "evidence": [
+            {
+              "ref": "Exo.30.24",
+              "role": "defining",
+              "note": "The recipe calls for five hundred shekels of the spice and a hin of olive oil."
+            },
+            {
+              "ref": "Ezk.27.19",
+              "role": "defining",
+              "note": "The lament over Tyre lists the spice with wrought iron and cane among the goods brought to market."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-bow",
+      "lang": "akk",
+      "form": "qadādu",
+      "translit": "qadādu",
+      "gloss": "bow down",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep/x000040290 and Old Babylonian armep/x000072080"
+        }
+      ]
+    },
+    {
+      "id": "akk-bowed",
+      "lang": "akk",
+      "form": "qaddu",
+      "translit": "qaddu",
+      "gloss": "bowed down",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep/x000141480"
+        }
+      ]
+    },
+    {
+      "id": "akk-bower",
+      "lang": "akk",
+      "form": "qādidu",
+      "translit": "qādidu",
+      "gloss": "one who bows down",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep/x000141430"
+        }
+      ]
+    },
+    {
+      "id": "akk-bending",
+      "lang": "akk",
+      "form": "qiddatu",
+      "translit": "qiddatu",
+      "gloss": "bending down",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "cmawro/x000014980, noun"
+        }
+      ]
+    },
+    {
+      "id": "akk-head",
+      "lang": "akk",
+      "form": "qaqqadu",
+      "translit": "qaqqadu",
+      "gloss": "head, upper part",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep/x000001550"
+        }
+      ]
+    },
+    {
+      "id": "uga-head",
+      "lang": "uga",
+      "form": "𐎖𐎄𐎖𐎄",
+      "translit": "qdqd",
+      "gloss": "head, pate",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "glossary s.v. qdqd and §88.64, KTU 1.18 IV 22"
+        }
+      ]
+    },
+    {
+      "id": "arc-head",
+      "lang": "arc",
+      "form": "קודקדא",
+      "translit": "qwdqdʾ",
+      "gloss": "head, skull",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "cal",
+          "locator": "qwdqd, qwdqdˀ, anatomical sense 1, 4Q569 2:9 and Targum Neofiti Deuteronomy 28:35"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The Akkadian, Ugaritic and Aramaic head nouns support a sense broad enough for poetic uses alongside רֹאשׁ. Whether the verb for bowing derives from the head noun is uncertain. Targum Onkelos renders the spice in Exodus 30:24 with its word for cassia (Jastrow S01818). The text gives its weight and use but leaves the plant species and the origin of its name open."
+}

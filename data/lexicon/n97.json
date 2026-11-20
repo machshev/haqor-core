@@ -1,0 +1,264 @@
+{
+  "id": "n97",
+  "root": "נצח",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "direction",
+    "music",
+    "duration"
+  ],
+  "gloss": "direct, excel, endure",
+  "summary": "The Psalms address the person directing the music. Ezra uses the verb for overseeing builders. The noun commonly expresses duration, and Daniel’s Aramaic verb describes distinction among officials.",
+  "words": [
+    {
+      "lemma": "נָצַח",
+      "bdb": [
+        "n.et.aa"
+      ],
+      "pos": "verb",
+      "gloss": "direct, oversee, persist",
+      "stems": [
+        {
+          "stem": "piel",
+          "gloss": "direct, oversee",
+          "senses": [
+            {
+              "id": "direct-music",
+              "gloss": "direct music",
+              "definition": "The heading of Psalm 4 addresses the director and specifies string music. Chronicles assigns named lyre players to lead.",
+              "evidence": [
+                {
+                  "ref": "Psa.4.1",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.6.1"
+                },
+                {
+                  "ref": "Psa.18.1"
+                },
+                {
+                  "ref": "Hab.3.19"
+                },
+                {
+                  "ref": "1Ch.15.21"
+                }
+              ]
+            },
+            {
+              "id": "oversee-work",
+              "gloss": "oversee work",
+              "definition": "Levites are appointed to supervise work on the house of Yahweh. In Chronicles supervisors oversee those carrying loads and doing skilled work.",
+              "evidence": [
+                {
+                  "ref": "Ezr.3.8",
+                  "to": "Ezr.3.9",
+                  "role": "defining"
+                },
+                {
+                  "ref": "2Ch.34.12",
+                  "to": "2Ch.34.13"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "persist",
+          "senses": [
+            {
+              "id": "persist",
+              "gloss": "persist",
+              "definition": "Jeremiah asks why Jerusalem persists in turning away and refuses to return.",
+              "evidence": [
+                {
+                  "ref": "Jer.8.5",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "נֵצַח",
+      "bdb": [
+        "n.et.ab"
+      ],
+      "pos": "noun",
+      "gloss": "perpetuity, eminence",
+      "senses": [
+        {
+          "id": "perpetuity-for-ever",
+          "gloss": "perpetuity, for ever",
+          "definition": "The arrogant man imagines God will never see him. Isaiah announces that death will be swallowed up for ever.",
+          "evidence": [
+            {
+              "ref": "Psa.10.11",
+              "role": "defining"
+            },
+            {
+              "ref": "Isa.25.8"
+            },
+            {
+              "ref": "Psa.74.19"
+            }
+          ]
+        },
+        {
+          "id": "eminence-glory",
+          "gloss": "eminence, glory",
+          "definition": "Samuel calls Yahweh the Glory of Israel and declares that his word stands.",
+          "evidence": [
+            {
+              "ref": "1Sa.15.29",
+              "role": "defining"
+            }
+          ],
+          "cognate_ids": [
+            "syc-natsiha"
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "נֵצַח",
+      "bdb": [
+        "n.eu.ab"
+      ],
+      "pos": "noun",
+      "gloss": "lifeblood",
+      "senses": [
+        {
+          "id": "lifeblood",
+          "gloss": "lifeblood",
+          "definition": "The figure returning from Edom describes a winepress. What spatters his clothing and runs to the ground is the lifeblood of the peoples.",
+          "evidence": [
+            {
+              "ref": "Isa.63.2",
+              "to": "Isa.63.3",
+              "role": "defining"
+            },
+            {
+              "ref": "Isa.63.6"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "נְצַח",
+      "bdb": [
+        "xn.an.aa"
+      ],
+      "pos": "verb",
+      "gloss": "excel",
+      "stems": [
+        {
+          "stem": "hithpaal",
+          "gloss": "distinguish oneself",
+          "senses": [
+            {
+              "id": "distinguish-oneself",
+              "gloss": "distinguish oneself",
+              "definition": "Daniel distinguishes himself among the administrators, and the king considers putting him over the whole kingdom.",
+              "evidence": [
+                {
+                  "ref": "Dan.6.4",
+                  "role": "defining"
+                }
+              ],
+              "cognate_ids": [
+                "syc-natsiha"
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "arc"
+    },
+    {
+      "lemma": "נצַח",
+      "bdb": [],
+      "pos": "verb",
+      "gloss": "strive",
+      "stems": [
+        {
+          "stem": "ethpaal",
+          "gloss": "strive together",
+          "senses": [
+            {
+              "id": "strive-together",
+              "gloss": "strive together",
+              "definition": "Paul calls the Philippians to stand firm and strive together for the faith of the gospel.",
+              "evidence": [
+                {
+                  "ref": "Php.1.27",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "syc"
+    },
+    {
+      "lemma": "נַצִיחָא",
+      "bdb": [],
+      "pos": "adjective",
+      "gloss": "excellent, illustrious",
+      "senses": [
+        {
+          "id": "excellent-illustrious",
+          "gloss": "excellent, illustrious",
+          "definition": "Luke addresses Theophilus with an honorific. The same adjective appears in addresses to Felix and Festus.",
+          "evidence": [
+            {
+              "ref": "Luk.1.3",
+              "role": "defining"
+            },
+            {
+              "ref": "Act.23.26"
+            },
+            {
+              "ref": "Act.26.25"
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "cognate_ids": [
+        "syc-natsiha"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "syc-natsiha",
+      "lang": "syc",
+      "form": "ܢܨܝܚܐ",
+      "translit": "naṣīḥā",
+      "gloss": "excellent, illustrious",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "sedra",
+          "locator": "lexeme 2015, Luke 1:3 and Acts 23:26"
+        }
+      ],
+      "sounds": {
+        "צ": "ṣ",
+        "ח": "ḥ"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "Isaiah’s word for lifeblood is confined to the winepress picture. Its relationship to duration or eminence is uncertain. Psalm headings identify the director without specifying the duties of the office."
+}

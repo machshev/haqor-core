@@ -1,0 +1,89 @@
+{
+  "id": "6iy6",
+  "root": "טוט",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "earth",
+    "water"
+  ],
+  "gloss": "mud, mire, clay",
+  "summary": "Wet earth can be trodden in the street, worked by a potter or deep enough to trap someone. The parallel song in Samuel makes the trampling image in Psalm 18 particularly clear.",
+  "words": [
+    {
+      "lemma": "טִיט",
+      "bdb": [
+        "i.al.ab"
+      ],
+      "pos": "noun",
+      "gloss": "mud, mire, clay",
+      "senses": [
+        {
+          "id": "mud-in-the-street",
+          "gloss": "mud in the street",
+          "definition": "David describes beating his enemies fine and casting them out like street mud. Micah similarly pictures an enemy trampled underfoot.",
+          "evidence": [
+            {
+              "ref": "Psa.18.43",
+              "role": "defining"
+            },
+            {
+              "ref": "2Sa.22.43"
+            },
+            {
+              "ref": "Mic.7.10"
+            }
+          ]
+        },
+        {
+          "id": "deep-mire",
+          "gloss": "deep mire",
+          "definition": "Jeremiah sinks into the mud at the bottom of a waterless cistern. The psalmist uses the same image when pleading for rescue.",
+          "evidence": [
+            {
+              "ref": "Jer.38.6",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.69.15"
+            }
+          ]
+        },
+        {
+          "id": "clay-worked-underfoot",
+          "gloss": "clay worked underfoot",
+          "definition": "Isaiah compares the conqueror treading rulers down to a potter treading clay.",
+          "evidence": [
+            {
+              "ref": "Isa.41.25",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "akk-tidu"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-tidu",
+      "lang": "akk",
+      "form": "ṭīdu",
+      "translit": "ṭīdu",
+      "gloss": "mud, clay",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "ṭīdu [mud] N, armep x000129460; ṭīdu [clay] N, cmawro x000023650"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The Akkadian noun is close in meaning but differs in its final consonant."
+}

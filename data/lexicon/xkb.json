@@ -1,0 +1,1432 @@
+{
+  "id": "xkb",
+  "root": "שכב",
+  "status": "draft",
+  "updated": "2026-11-18",
+  "tags": [
+    "rest",
+    "sleep",
+    "bed",
+    "death",
+    "grave",
+    "sexual-relations",
+    "resurrection"
+  ],
+  "gloss": "lie down, lie; lie with; lie down in death; (hiphil) lay down",
+  "summary": "To lie down and to be lying: to sleep at night, to lie sick or in grief, of a lion that crouches and lies down; with עִם or אֶת to lie with someone in the sexual act; and of the dead, who “lie down with their fathers” and lie in the dust and the grave until they are raised. Its opposite is קוּם “rise”: “when you lie down and when you rise up” (Deu 6:7), and “man lies down and does not rise; till the heavens are no more they will not awake” (Job 14:12). The noun מִשְׁכָּב is the bed or couch, the place of lying (in the Aramaic of Daniel too), and also the act of lying with someone; שְׁכָבָה and שְׁכֹבֶת are a lying of seed and the dew that lay on the ground. Phoenician kings wrote on their coffins “I lie (škb) in this coffin” and called the tomb their mškb “resting-place”.",
+  "words": [
+    {
+      "lemma": "שָׁכַב",
+      "pos": "verb",
+      "gloss": "lie down, lie; lie with; lie down in death; (niphal, pual) be lain with; (hiphil) lay down; (hophal) be laid",
+      "bdb": [
+        "v.cy.aa"
+      ],
+      "cognate_ids": [
+        "uga-shkb",
+        "phn-shkb",
+        "gez-sakaba",
+        "arc-shekhev"
+      ],
+      "summary": "About two hundred times, almost all in the qal. Its fixed opposite is קוּם “rise” (Deu 6:7; Gen 19:33; Pro 6:9; Job 14:12), and its companions are יָשֵׁן “sleep” (Psa 3:6; 4:9; 1Ki 19:5) and לוּן “lodge for the night” (Gen 28:11; 2Sa 12:16). The text reads the qere at Deu 28:30; Isa 13:16; Jer 3:2; Zec 14:2, where the written text has שׁגל; those tokens are filed under that word's key and not counted here.",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "lie down, lie; lie with; lie down in death",
+          "senses": [
+            {
+              "id": "lie-down-sleep",
+              "gloss": "lie down, go to bed; be lying (asleep)",
+              "definition": "To lay oneself down, above all at night to sleep, and to be lying there; the opposite of rising up in the morning.",
+              "evidence": [
+                {
+                  "ref": "Deu.6.7",
+                  "role": "defining",
+                  "note": "“בְּשָׁכְבְּךָ וּבְקוּמֶךָ”: when you lie down and when you rise up, the two ends of the day."
+                },
+                {
+                  "ref": "Gen.28.11",
+                  "role": "defining",
+                  "note": "Jacob “lodged there because the sun had set … and lay down (וַיִּשְׁכַּב) in that place”, a stone at his head."
+                },
+                {
+                  "ref": "Psa.3.6",
+                  "role": "defining",
+                  "note": "“I lay down (שָׁכַבְתִּי) and slept; I awoke, for Yahweh sustains me.”"
+                },
+                {
+                  "ref": "1Sa.3.5",
+                  "role": "defining",
+                  "note": "Eli to Samuel: “I did not call; go back, lie down (שְׁכָב); and he went and lay down.”"
+                },
+                {
+                  "ref": "1Sa.3.9",
+                  "note": "“Go, lie down; and if he calls you, say, Speak, Yahweh, for your servant hears.”"
+                },
+                {
+                  "ref": "Pro.6.9",
+                  "role": "defining",
+                  "note": "“How long, sluggard, will you lie (תִּשְׁכָּב)? When will you rise from your sleep?”"
+                },
+                {
+                  "ref": "Pro.6.10"
+                },
+                {
+                  "ref": "Gen.19.33",
+                  "note": "“He did not know when she lay down or when she rose (בְּשִׁכְבָהּ וּבְקוּמָהּ).”"
+                },
+                {
+                  "ref": "1Ki.19.5",
+                  "note": "Elijah “lay down and slept under a broom tree”."
+                },
+                {
+                  "ref": "Jon.1.5",
+                  "note": "Jonah went down into the ship “and lay down and slept heavily”."
+                },
+                {
+                  "ref": "Rut.3.4",
+                  "note": "“When he lies down, mark the place where he lies.”"
+                },
+                {
+                  "ref": "Jos.2.1",
+                  "note": "The spies came to the house of Rahab “and lay there”."
+                },
+                {
+                  "ref": "1Sa.26.7",
+                  "note": "Saul “lying asleep within the camp”, his spear stuck in the ground at his head."
+                },
+                {
+                  "ref": "2Sa.4.7",
+                  "note": "Ish-bosheth “was lying on his bed in his bedchamber” when he was killed."
+                },
+                {
+                  "ref": "2Sa.11.9",
+                  "note": "Uriah “lay at the door of the king's house” and did not go down to his house."
+                },
+                {
+                  "ref": "Job.7.4",
+                  "note": "“When I lie down, I say, When shall I rise?”"
+                },
+                {
+                  "ref": "Ecc.4.11",
+                  "note": "“If two lie together, they are warm; but how can one be warm alone?”"
+                },
+                {
+                  "ref": "1Ki.1.2",
+                  "note": "A girl to “lie in your bosom, that my lord the king may be warm”; he did not know her (1Ki 1:4)."
+                },
+                {
+                  "ref": "Exo.22.26",
+                  "note": "The pledged cloak “is his covering for his skin: in what shall he lie?”"
+                },
+                {
+                  "ref": "Deu.24.12",
+                  "note": "“You shall not lie down (sleep) with his pledge.”"
+                },
+                {
+                  "ref": "Isa.56.10",
+                  "note": "Blind watchmen, dumb dogs, “dreaming, lying down, loving to slumber”."
+                },
+                {
+                  "ref": "Amo.6.4",
+                  "note": "“Those who lie on beds of ivory.”"
+                }
+              ]
+            },
+            {
+              "id": "lie-safely",
+              "gloss": "lie down in safety, rest",
+              "definition": "To lie down with nothing to fear: the peace Yahweh gives in the land, and its lack (the heart that cannot lie down at night).",
+              "evidence": [
+                {
+                  "ref": "Lev.26.6",
+                  "role": "defining",
+                  "note": "“I will give peace in the land, and you shall lie down and none shall make you afraid.”"
+                },
+                {
+                  "ref": "Psa.4.9",
+                  "role": "defining",
+                  "note": "“In peace I will both lie down and sleep, for you alone, Yahweh, make me dwell in safety.”"
+                },
+                {
+                  "ref": "Pro.3.24",
+                  "note": "“When you lie down you will not be afraid; you will lie down and your sleep will be sweet.”"
+                },
+                {
+                  "ref": "Job.11.18",
+                  "note": "“You will look about and lie down in safety.”"
+                },
+                {
+                  "ref": "Ecc.2.23",
+                  "role": "defining",
+                  "note": "“Even in the night his heart does not lie down (לֹא־שָׁכַב לִבּוֹ)”: no rest."
+                },
+                {
+                  "ref": "Job.30.17",
+                  "note": "“My gnawing pains do not lie down (rest).”"
+                }
+              ]
+            },
+            {
+              "id": "lie-sick-grief",
+              "gloss": "lie (sick, in grief or humbling, on the ground)",
+              "definition": "To lie and not rise: on a bed in sickness or sullenness, on the ground in grief, fasting or humbling; of the slain lying in the streets; and of Ezekiel lying on his side bearing the iniquity of the house of Israel.",
+              "evidence": [
+                {
+                  "ref": "2Sa.12.16",
+                  "role": "defining",
+                  "note": "David fasted for the child “and lay all night on the ground (וְשָׁכַב אָרְצָה)”."
+                },
+                {
+                  "ref": "2Sa.13.31",
+                  "note": "The king tore his garments “and lay on the ground”."
+                },
+                {
+                  "ref": "1Ki.21.4",
+                  "role": "defining",
+                  "note": "Ahab “lay down on his bed, turned away his face, and would eat no bread”."
+                },
+                {
+                  "ref": "1Ki.21.27",
+                  "note": "Ahab humbled himself: he fasted “and lay in sackcloth”."
+                },
+                {
+                  "ref": "2Sa.13.5",
+                  "note": "“Lie down on your bed and pretend to be sick.”"
+                },
+                {
+                  "ref": "Jer.3.25",
+                  "note": "“Let us lie down in our shame, and let our dishonour cover us, for we have sinned against Yahweh our God.”"
+                },
+                {
+                  "ref": "Isa.50.11",
+                  "note": "“This you shall have from my hand: you shall lie down in torment.”"
+                },
+                {
+                  "ref": "Lam.2.21",
+                  "note": "“Young and old lie on the ground in the streets.”"
+                },
+                {
+                  "ref": "Ezk.4.4",
+                  "role": "defining",
+                  "note": "“Lie on your left side and lay the iniquity of the house of Israel upon it; the number of days you lie on it you shall bear their iniquity.”"
+                },
+                {
+                  "ref": "Ezk.4.6"
+                },
+                {
+                  "ref": "1Ki.3.19",
+                  "note": "“This woman's son died in the night, because she lay on him.”"
+                },
+                {
+                  "ref": "2Ki.4.34",
+                  "note": "Elisha “lay on the child, mouth to mouth”, and the child's flesh grew warm."
+                }
+              ]
+            },
+            {
+              "id": "lie-beast",
+              "gloss": "lie down, crouch (of animals)",
+              "definition": "Of a beast: to lie down in its place, the lion couched and not to be roused.",
+              "evidence": [
+                {
+                  "ref": "Num.24.9",
+                  "role": "defining",
+                  "note": "“He crouched, he lay down like a lion, and like a lioness: who will rouse him?”"
+                },
+                {
+                  "ref": "Num.23.24",
+                  "note": "“He shall not lie down until he eats the prey.”"
+                },
+                {
+                  "ref": "Job.40.21",
+                  "note": "Behemoth “lies under the lotus plants, in the covert of the reed”."
+                }
+              ]
+            },
+            {
+              "id": "lie-with",
+              "gloss": "lie with (sexually)",
+              "definition": "With עִם or אֶת (and once a direct object): to lie with someone in the sexual act, in marriage or in fornication, adultery, rape, incest, with a male, or with a beast.",
+              "evidence": [
+                {
+                  "ref": "Gen.39.12",
+                  "role": "defining",
+                  "note": "Potiphar's wife caught Joseph by his garment, saying, “Lie with me (שִׁכְבָה עִמִּי)”, and he fled."
+                },
+                {
+                  "ref": "Gen.39.7"
+                },
+                {
+                  "ref": "2Sa.11.11",
+                  "role": "defining",
+                  "note": "Uriah: “Shall I go to my house, to eat and drink and to lie with my wife?”"
+                },
+                {
+                  "ref": "2Sa.11.4",
+                  "note": "David took Bathsheba “and lay with her”."
+                },
+                {
+                  "ref": "2Sa.12.24",
+                  "note": "David comforted Bathsheba “and went in to her and lay with her; and she bore a son”."
+                },
+                {
+                  "ref": "Gen.30.16",
+                  "note": "Leah: “You must come in to me”; and he lay with her that night."
+                },
+                {
+                  "ref": "Gen.34.2",
+                  "role": "defining",
+                  "note": "Shechem “took her and lay with her and humbled her”."
+                },
+                {
+                  "ref": "2Sa.13.14",
+                  "note": "Amnon “was stronger than she, and humbled her, and lay with her”."
+                },
+                {
+                  "ref": "Deu.22.22",
+                  "note": "“If a man is found lying with a woman married to a husband, both of them shall die.”"
+                },
+                {
+                  "ref": "Deu.22.25"
+                },
+                {
+                  "ref": "Deu.22.28",
+                  "note": "Lying with a virgin not betrothed: he shall pay and take her as wife."
+                },
+                {
+                  "ref": "Exo.22.15"
+                },
+                {
+                  "ref": "Gen.19.33",
+                  "note": "Lot's daughters lay with their father."
+                },
+                {
+                  "ref": "Gen.35.22",
+                  "note": "Reuben “lay with Bilhah his father's concubine”."
+                },
+                {
+                  "ref": "Lev.18.22",
+                  "role": "defining",
+                  "note": "“You shall not lie with a male as one lies with a woman (מִשְׁכְּבֵי אִשָּׁה): it is an abomination.”"
+                },
+                {
+                  "ref": "Lev.20.13"
+                },
+                {
+                  "ref": "Lev.20.11",
+                  "note": "“A man who lies with his father's wife has uncovered his father's nakedness.”"
+                },
+                {
+                  "ref": "Exo.22.18",
+                  "note": "“Whoever lies with a beast shall surely be put to death.”"
+                },
+                {
+                  "ref": "Deu.27.21"
+                },
+                {
+                  "ref": "Lev.15.18",
+                  "note": "Lying with a woman, with an emission of seed: both bathe and are unclean until evening."
+                },
+                {
+                  "ref": "Lev.15.24"
+                },
+                {
+                  "ref": "Num.5.13",
+                  "note": "“A man lies with her a lying of seed, and it is hidden from her husband.”"
+                },
+                {
+                  "ref": "1Sa.2.22",
+                  "note": "Eli's sons “lay with the women who served at the entrance of the tent of meeting”."
+                },
+                {
+                  "ref": "Mic.7.5",
+                  "note": "“Guard the doors of your mouth from her who lies in your bosom.”"
+                },
+                {
+                  "ref": "Ezk.23.8",
+                  "note": "Oholah: “in her youth they lay with her”."
+                }
+              ],
+              "kin": [
+                "lying-act",
+                "lying-of-seed",
+                "giving-lying"
+              ]
+            },
+            {
+              "id": "lie-in-death",
+              "gloss": "lie down in death; lie in the grave",
+              "definition": "Of the dead: to “lie down with one's fathers”, the closing formula of a life before burial, and to lie in the dust, in the grave, in the pit among the slain, and not rise.",
+              "evidence": [
+                {
+                  "ref": "1Ki.2.10",
+                  "role": "defining",
+                  "note": "“David lay down with his fathers and was buried in the city of David.”"
+                },
+                {
+                  "ref": "Gen.47.30",
+                  "role": "defining",
+                  "note": "Jacob: “I will lie down with my fathers; carry me out of Egypt and bury me in their burying place.”"
+                },
+                {
+                  "ref": "Deu.31.16",
+                  "note": "To Moses: “Behold, you are about to lie down with your fathers.”"
+                },
+                {
+                  "ref": "2Sa.7.12",
+                  "role": "defining",
+                  "note": "“When your days are fulfilled and you lie down with your fathers, I will raise up (וַהֲקִמֹתִי) your seed after you.”"
+                },
+                {
+                  "ref": "1Ki.11.43",
+                  "note": "“Solomon lay down with his fathers and was buried in the city of David his father.”"
+                },
+                {
+                  "ref": "1Ki.14.31"
+                },
+                {
+                  "ref": "1Ki.22.40",
+                  "note": "Even Ahab, killed in battle, “lay down with his fathers”."
+                },
+                {
+                  "ref": "2Ki.14.22",
+                  "note": "“After the king lay down with his fathers.”"
+                },
+                {
+                  "ref": "2Ki.24.6"
+                },
+                {
+                  "ref": "2Ch.32.33",
+                  "note": "“Hezekiah lay down with his fathers, and they buried him in the ascent of the tombs of the sons of David.”"
+                },
+                {
+                  "ref": "Job.14.12",
+                  "role": "defining",
+                  "note": "“Man lies down and does not rise; till the heavens are no more they will not awake nor be roused from their sleep.”"
+                },
+                {
+                  "ref": "Job.3.13",
+                  "role": "defining",
+                  "note": "“For now I would have lain down and been quiet; I would have slept; then I would have had rest.”"
+                },
+                {
+                  "ref": "Job.7.21",
+                  "note": "“For now I shall lie in the dust; you will seek me, and I shall not be.”"
+                },
+                {
+                  "ref": "Job.20.11",
+                  "note": "His youthful vigour “shall lie down with him in the dust”."
+                },
+                {
+                  "ref": "Job.21.26",
+                  "role": "defining",
+                  "note": "“They lie down alike in the dust, and the worm covers them.”"
+                },
+                {
+                  "ref": "Job.27.19",
+                  "note": "“The rich man lies down, but is not gathered; he opens his eyes, and he is not.”"
+                },
+                {
+                  "ref": "Psa.88.6",
+                  "role": "defining",
+                  "note": "“Like the slain lying in the grave (שֹׁכְבֵי קֶבֶר), whom you remember no more.”"
+                },
+                {
+                  "ref": "Isa.14.18",
+                  "note": "“All the kings of the nations lie in glory, each in his own house”: the tomb."
+                },
+                {
+                  "ref": "Isa.14.8",
+                  "note": "Of the king of Babylon: “since you lay down, no feller comes up against us”."
+                },
+                {
+                  "ref": "Isa.43.17",
+                  "role": "defining",
+                  "note": "Pharaoh's chariots and army “lie down together, they shall not rise; they are extinguished, quenched like a wick”."
+                },
+                {
+                  "ref": "Ezk.32.21",
+                  "note": "“They have gone down, they lie still, the uncircumcised, slain by the sword”, spoken of “from the midst of the grave (שְׁאוֹל)”."
+                },
+                {
+                  "ref": "Ezk.32.27",
+                  "note": "The mighty “who went down to the grave with their weapons of war, and laid their swords under their heads”."
+                },
+                {
+                  "ref": "Ezk.32.28"
+                },
+                {
+                  "ref": "Ezk.32.29",
+                  "note": "Edom “shall lie with the uncircumcised and with those who go down to the pit”."
+                },
+                {
+                  "ref": "Ezk.32.30"
+                },
+                {
+                  "ref": "Ezk.31.18",
+                  "note": "Pharaoh “shall lie in the midst of the uncircumcised, with the slain of the sword”."
+                },
+                {
+                  "ref": "Act.13.36",
+                  "note": "“David … fell asleep (ἐκοιμήθη) and was laid with his fathers and saw corruption”: the Septuagint's word for שָׁכַב at 1Ki 2:10, “ἐκοιμήθη Δαυιδ μετὰ τῶν πατέρων αὐτοῦ”."
+                }
+              ],
+              "kin": [
+                "bed-grave"
+              ]
+            },
+            {
+              "id": "lie-land",
+              "gloss": "lie (on a place, in a place)",
+              "definition": "To be lying on or in a place, with the place in view: the land Jacob lay on, the man lying in the heart of the sea.",
+              "evidence": [
+                {
+                  "ref": "Gen.28.13",
+                  "role": "defining",
+                  "note": "“The land on which you lie (אַתָּה שֹׁכֵב עָלֶיהָ), to you I will give it and to your seed.”"
+                },
+                {
+                  "ref": "Pro.23.34",
+                  "note": "The drunkard “like one who lies down in the heart of the sea, like one who lies on the top of a mast”."
+                },
+                {
+                  "ref": "Psa.68.14",
+                  "note": "“When you lie among the sheepfolds.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be lain with, be ravished",
+          "senses": [
+            {
+              "id": "be-lain-with-be",
+              "gloss": "be lain with, be ravished (women in a captured city)",
+              "definition": "Of women in a city taken in war: to be lain with by force. The written text has שׁגל; the reading, which the text here follows, is this verb.",
+              "evidence": [
+                {
+                  "ref": "Isa.13.16",
+                  "role": "defining",
+                  "note": "Babylon: “their houses plundered, and their wives ravished (תִּשָּׁכַבְנָה)”."
+                },
+                {
+                  "ref": "Zec.14.2",
+                  "role": "defining",
+                  "note": "“The city shall be taken, the houses plundered, and the women ravished.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be lain with",
+          "senses": [
+            {
+              "id": "be-lain-with",
+              "gloss": "be lain with",
+              "definition": "Of unfaithful Israel as a harlot: to have been lain with. The written text has שׁגל; the reading is this verb.",
+              "evidence": [
+                {
+                  "ref": "Jer.3.2",
+                  "role": "defining",
+                  "note": "“Lift up your eyes to the bare heights and see: where have you not been lain with (שֻׁכַּבְתְּ)?”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "lay down, make lie down; tip over",
+          "senses": [
+            {
+              "id": "hiphil-lay",
+              "gloss": "lay (someone) down",
+              "definition": "To lay another down: a child in someone's bosom or on a bed, the dead on a bier, the defeated on the ground.",
+              "evidence": [
+                {
+                  "ref": "1Ki.17.19",
+                  "role": "defining",
+                  "note": "Elijah took the dead child to the upper room “and laid him on his own bed”."
+                },
+                {
+                  "ref": "2Ki.4.21",
+                  "note": "The Shunammite “laid him on the bed of the man of God”."
+                },
+                {
+                  "ref": "1Ki.3.20",
+                  "role": "defining",
+                  "note": "“She laid him in her bosom, and her dead son she laid in my bosom.”"
+                },
+                {
+                  "ref": "2Ch.16.14",
+                  "note": "Asa was buried “and they laid him on a bier (בַּמִּשְׁכָּב) filled with spices”."
+                },
+                {
+                  "ref": "2Sa.8.2",
+                  "note": "David measured Moab with a line, “making them lie down on the ground”."
+                }
+              ]
+            },
+            {
+              "id": "hiphil-make-lie-safely",
+              "gloss": "make lie down (in safety)",
+              "definition": "Of Yahweh: to make his people lie down in safety once war is broken from the land.",
+              "evidence": [
+                {
+                  "ref": "Hos.2.20",
+                  "role": "defining",
+                  "note": "“In that day … bow and sword and battle I will break from the land, and I will make them lie down in safety.”"
+                }
+              ]
+            },
+            {
+              "id": "tip-skins",
+              "gloss": "tip over, pour out (the water-skins of the heavens)",
+              "definition": "Of the clouds as water-skins: to lay them over so that they empty. The tie to “lay down” is the skin laid on its side; Arabic sakaba “pour out” is a possible link.",
+              "evidence": [
+                {
+                  "ref": "Job.38.37",
+                  "role": "defining",
+                  "note": "“Who can number the clouds by wisdom, or who can tip (יַשְׁכִּיב) the water-skins of the heavens?”"
+                }
+              ],
+              "cognate_ids": [
+                "ar-sakaba"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hophal",
+          "gloss": "be laid (dead), be laid down",
+          "senses": [
+            {
+              "id": "hophal-laid",
+              "gloss": "be laid (dead); be laid down among the slain",
+              "definition": "To be laid down: the dead child on Elisha's bed; Pharaoh and his multitude laid in the pit among the uncircumcised.",
+              "evidence": [
+                {
+                  "ref": "2Ki.4.32",
+                  "role": "defining",
+                  "note": "“The boy was dead, laid (מֻשְׁכָּב) on his bed.”"
+                },
+                {
+                  "ref": "Ezk.32.19",
+                  "role": "defining",
+                  "note": "“Go down, and be laid with the uncircumcised!”"
+                },
+                {
+                  "ref": "Ezk.32.32",
+                  "note": "“He shall be laid in the midst of the uncircumcised with the slain of the sword, Pharaoh and all his multitude.”"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "κοιμάω",
+          "gloss": "(passive) lie down to sleep, fall asleep; of the dead, sleep",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "1Ki.2.10, וַיִּשְׁכַּב → ἐκοιμήθη; Gen.47.30 → κοιμηθήσομαι; Job.14.12 → κοιμηθεὶς; Isa.14.18 → ἐκοιμήθησαν; Psa.4.9 → κοιμηθήσομαι; Lev.18.22; 20.13; κοιμάω renders שָׁכַב about 85 times"
+            },
+            {
+              "ref": "Act.13.36",
+              "role": "defining",
+              "note": "“David … fell asleep (ἐκοιμήθη), was laid with his fathers, and saw corruption”: the words of 1Ki 2:10."
+            },
+            {
+              "ref": "1Th.4.13",
+              "note": "“Concerning those who are asleep (κεκοιμημένων), that you may not grieve as others who have no hope.”"
+            },
+            {
+              "ref": "1Th.4.14"
+            },
+            {
+              "ref": "1Co.15.20",
+              "note": "“Christ has been raised from the dead, the firstfruits of those who have fallen asleep.”"
+            },
+            {
+              "ref": "Jhn.11.11",
+              "note": "“Our friend Lazarus has fallen asleep (κεκοίμηται)”; then plainly, “Lazarus is dead” (Jhn 11:14)."
+            }
+          ]
+        },
+        {
+          "lemma": "καθεύδω",
+          "gloss": "sleep, lie asleep",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "1Sa.3.3, 5; 26.5, 7 → ἐκάθευδεν; Gen.28.13 → καθεύδεις; Psa.88.6, שֹׁכְבֵי קֶבֶר → καθεύδοντες; Jon.1.5 → ἐκάθευδεν"
+            },
+            {
+              "ref": "Eph.5.14",
+              "note": "“Awake, sleeper (ὁ καθεύδων), and arise from the dead.”"
+            },
+            {
+              "ref": "1Th.5.10",
+              "note": "“Whether we wake or sleep (καθεύδωμεν), we should live together with him.”"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "יָשֵׁן",
+            "note": "“Sleep”: lying down is the going to sleep, in life and in death.",
+            "evidence": [
+              {
+                "ref": "Psa.3.6",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.4.9"
+              },
+              {
+                "ref": "1Ki.19.5"
+              },
+              {
+                "ref": "Job.3.13",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "קָבַר",
+            "note": "“Bury”: the king lies down with his fathers and is buried.",
+            "evidence": [
+              {
+                "ref": "1Ki.2.10",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.47.30"
+              },
+              {
+                "ref": "2Ch.32.33"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "קוּם",
+            "note": "“Rise”: lying down and rising up bound the night, and the dead lie down and do not rise until they are raised.",
+            "evidence": [
+              {
+                "ref": "Deu.6.7",
+                "role": "defining"
+              },
+              {
+                "ref": "Pro.6.9",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.19.33"
+              },
+              {
+                "ref": "Job.14.12",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.43.17"
+              },
+              {
+                "ref": "2Sa.7.12"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "שָׁכַב עִם־אֲבֹתָיו",
+            "gloss": "lie down with his fathers: die",
+            "evidence": [
+              {
+                "ref": "1Ki.2.10",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.47.30"
+              },
+              {
+                "ref": "Deu.31.16"
+              },
+              {
+                "ref": "2Sa.7.12"
+              },
+              {
+                "ref": "1Ki.11.43"
+              },
+              {
+                "ref": "2Ch.32.33"
+              }
+            ]
+          },
+          {
+            "phrase": "בְּשָׁכְבְּךָ וּבְקוּמֶךָ",
+            "gloss": "when you lie down and when you rise up: all the day",
+            "evidence": [
+              {
+                "ref": "Deu.6.7",
+                "role": "defining"
+              },
+              {
+                "ref": "Deu.11.19"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "מִשְׁכָּב",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "bed, couch; bedchamber; act of lying (with); bier, resting-place of the dead",
+      "bdb": [
+        "v.cy.ad"
+      ],
+      "cognate_ids": [
+        "phn-mshkb",
+        "gez-meskab",
+        "arc-shekhev"
+      ],
+      "senses": [
+        {
+          "id": "bed",
+          "gloss": "bed, couch",
+          "definition": "The place where one lies: the bed for sleep, for sickness, for thinking at night; in חֲדַר מִשְׁכָּב the bedchamber.",
+          "evidence": [
+            {
+              "ref": "2Sa.4.11",
+              "role": "defining",
+              "note": "“Wicked men have killed a righteous man in his own house on his bed.”"
+            },
+            {
+              "ref": "2Sa.13.5",
+              "role": "defining",
+              "note": "“Lie down (שְׁכַב) on your bed (מִשְׁכָּבְךָ)”: verb and noun together."
+            },
+            {
+              "ref": "2Ki.6.12",
+              "role": "defining",
+              "note": "“The words that you speak in your bedchamber (בַּחֲדַר מִשְׁכָּבֶךָ).”"
+            },
+            {
+              "ref": "Ecc.10.20",
+              "note": "“Do not curse the rich in your bedchamber.”"
+            },
+            {
+              "ref": "Exo.7.28",
+              "note": "Frogs “into your bedchamber and on your bed”."
+            },
+            {
+              "ref": "Exo.21.18",
+              "note": "A man struck “does not die but falls to his bed”."
+            },
+            {
+              "ref": "Psa.41.4",
+              "note": "“Yahweh sustains him on his sickbed; all his bed you turn in his sickness.”"
+            },
+            {
+              "ref": "Job.33.19",
+              "note": "“He is chastened with pain on his bed.”"
+            },
+            {
+              "ref": "Job.7.13",
+              "note": "“My bed will comfort me, my couch will ease my complaint.”"
+            },
+            {
+              "ref": "Job.33.15",
+              "note": "“In a dream, a vision of the night … in slumbers on the bed.”"
+            },
+            {
+              "ref": "Psa.4.5",
+              "note": "“Speak in your heart on your bed, and be still.”"
+            },
+            {
+              "ref": "Psa.36.5",
+              "note": "“He devises iniquity on his bed.”"
+            },
+            {
+              "ref": "Mic.2.1",
+              "note": "“Woe to those who devise iniquity and work evil on their beds.”"
+            },
+            {
+              "ref": "Psa.149.5",
+              "note": "“Let the faithful exult in glory, let them sing for joy on their beds.”"
+            },
+            {
+              "ref": "Hos.7.14",
+              "note": "“They do not cry to me from the heart, but they wail on their beds.”"
+            },
+            {
+              "ref": "Sng.3.1",
+              "note": "“On my bed by night I sought him whom my soul loves.”"
+            },
+            {
+              "ref": "Pro.22.27",
+              "note": "“Why should your bed be taken from under you?”"
+            },
+            {
+              "ref": "2Sa.17.28",
+              "note": "Beds brought to David at Mahanaim."
+            },
+            {
+              "ref": "Lev.15.4",
+              "note": "“Every bed on which he who has the discharge lies (יִשְׁכַּב) shall be unclean.”"
+            }
+          ]
+        },
+        {
+          "id": "lying-act",
+          "gloss": "act of lying with; the marriage bed",
+          "definition": "The lying of one with another, and the bed as the place of it: to know “the lying of a male”, a man's “lyings of a woman”, a father's bed defiled, a harlot's bed.",
+          "evidence": [
+            {
+              "ref": "Num.31.17",
+              "role": "defining",
+              "note": "“Every woman who has known a man by lying with a male (לְמִשְׁכַּב זָכָר).”"
+            },
+            {
+              "ref": "Num.31.18"
+            },
+            {
+              "ref": "Jdg.21.11",
+              "role": "defining",
+              "note": "“Every woman who has known the lying of a male you shall devote.”"
+            },
+            {
+              "ref": "Lev.18.22",
+              "role": "defining",
+              "note": "“You shall not lie with a male the lyings of a woman (מִשְׁכְּבֵי אִשָּׁה).”"
+            },
+            {
+              "ref": "Lev.20.13"
+            },
+            {
+              "ref": "Gen.49.4",
+              "role": "defining",
+              "note": "Reuben “went up to your father's bed (מִשְׁכְּבֵי אָבִיךָ); then you defiled it”."
+            },
+            {
+              "ref": "Ezk.23.17",
+              "note": "“The Babylonians came to her into the bed of love and defiled her.”"
+            },
+            {
+              "ref": "Isa.57.7",
+              "note": "“On a high and lofty mountain you have set your bed”: idolatry as harlotry."
+            },
+            {
+              "ref": "Isa.57.8"
+            },
+            {
+              "ref": "Pro.7.17",
+              "note": "The adulteress: “I have perfumed my bed with myrrh.”"
+            }
+          ],
+          "kin": [
+            "lie-with"
+          ]
+        },
+        {
+          "id": "bed-grave",
+          "gloss": "bier; resting-place of the dead",
+          "definition": "The bed on which the dead are laid, and the grave as the bed where the dead rest.",
+          "evidence": [
+            {
+              "ref": "2Ch.16.14",
+              "role": "defining",
+              "note": "Asa “was laid on the bed (בַּמִּשְׁכָּב) filled with spices” in his tomb."
+            },
+            {
+              "ref": "Isa.57.2",
+              "role": "defining",
+              "note": "The righteous perishes (Isa 57:1): “he enters peace; they rest on their beds, each who walked in his uprightness.”"
+            },
+            {
+              "ref": "Ezk.32.25",
+              "role": "defining",
+              "note": "Elam: “they have set her a bed among the slain … her graves are round about him”."
+            }
+          ],
+          "kin": [
+            "lie-in-death"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "κοίτη",
+          "gloss": "bed; the marriage bed; lying with",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.49.4, מִשְׁכְּבֵי → κοίτην; Lev.18.22; 20.13, מִשְׁכְּבֵי אִשָּׁה → κοίτην γυναικός; κοίτη renders מִשְׁכָּב about 25 times"
+            },
+            {
+              "ref": "Heb.13.4",
+              "role": "defining",
+              "note": "“Let marriage be honoured among all, and the bed (κοίτη) undefiled; for fornicators and adulterers God will judge.”"
+            },
+            {
+              "ref": "Rom.13.13",
+              "note": "“Not in revelling and drunkenness, not in lyings (κοίταις) and wantonness.”"
+            },
+            {
+              "ref": "Luk.11.7",
+              "note": "“My children are with me in bed.”"
+            },
+            {
+              "ref": "1Co.6.9",
+              "note": "ἀρσενοκοῖται among those who will not inherit the kingdom of God (also 1Ti 1:10): the word joins the two words of the Septuagint of Lev 18:22; 20:13, ἄρσενος … κοίτην."
+            },
+            {
+              "ref": "1Ti.1.10"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שְׁכָבָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "a lying; layer (of dew); a lying of seed",
+      "bdb": [
+        "v.cy.ab"
+      ],
+      "cognate_ids": [
+        "arc-shekhev"
+      ],
+      "senses": [
+        {
+          "id": "a-layer-what-lies",
+          "gloss": "a layer, what lies (of dew)",
+          "definition": "What lies on the ground: the layer of dew about the camp, which went up and left the manna.",
+          "evidence": [
+            {
+              "ref": "Exo.16.13",
+              "role": "defining",
+              "note": "“In the morning there was a layer of dew (שִׁכְבַת הַטַּל) round about the camp.”"
+            },
+            {
+              "ref": "Exo.16.14",
+              "note": "“When the layer of dew went up, behold, on the face of the wilderness a fine flake.”"
+            }
+          ]
+        },
+        {
+          "id": "lying-of-seed",
+          "gloss": "a lying of seed, emission of seed",
+          "definition": "In שִׁכְבַת־זֶרַע: the seed of a man that goes out from him, in the act of lying with a woman or apart from it, which makes unclean until evening.",
+          "evidence": [
+            {
+              "ref": "Lev.15.16",
+              "role": "defining",
+              "note": "“If a man has an emission of seed (שִׁכְבַת־זֶרַע), he shall bathe all his flesh in water and be unclean until evening.”"
+            },
+            {
+              "ref": "Lev.15.17"
+            },
+            {
+              "ref": "Lev.15.18",
+              "role": "defining",
+              "note": "“A woman with whom a man lies (יִשְׁכַּב) a lying of seed: they shall both bathe.”"
+            },
+            {
+              "ref": "Lev.15.32"
+            },
+            {
+              "ref": "Lev.22.4"
+            },
+            {
+              "ref": "Lev.19.20",
+              "note": "“A man who lies with a woman a lying of seed, and she is a slave betrothed to a man.”"
+            },
+            {
+              "ref": "Num.5.13"
+            },
+            {
+              "ref": "Rom.9.10",
+              "note": "Rebekah “having conceived (κοίτην ἔχουσα) by one, our father Isaac”: κοίτη is the Septuagint's word for שִׁכְבַת־זֶרַע (Lev 15:16)."
+            }
+          ],
+          "kin": [
+            "lie-with"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שְׁכֹבֶת",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "lying (with), copulation",
+      "bdb": [
+        "v.cy.ac"
+      ],
+      "cognate_ids": [
+        "arc-shekhev"
+      ],
+      "senses": [
+        {
+          "id": "giving-lying",
+          "gloss": "lying, the act of lying with",
+          "definition": "Always with נָתַן “give” and a suffix: a man “giving his lying” to a woman not his wife or to a beast.",
+          "evidence": [
+            {
+              "ref": "Lev.18.20",
+              "role": "defining",
+              "note": "“You shall not give your lying (שְׁכָבְתְּךָ) for seed to your neighbour's wife, to be defiled with her.”"
+            },
+            {
+              "ref": "Lev.18.23",
+              "note": "“You shall not give your lying to any beast.”"
+            },
+            {
+              "ref": "Lev.20.15",
+              "note": "“A man who gives his lying to a beast shall surely be put to death.”"
+            },
+            {
+              "ref": "Num.5.20",
+              "role": "defining",
+              "note": "“If a man other than your husband has given his lying in you.”"
+            }
+          ],
+          "kin": [
+            "lie-with"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מִשְׁכַּב",
+      "lang": "arc",
+      "root": "משכב",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "bed",
+      "bdb": [
+        "xv.an.ab"
+      ],
+      "cognate_ids": [
+        "arc-shekhev"
+      ],
+      "senses": [
+        {
+          "id": "bed-where-the-king",
+          "gloss": "bed (where the king and Daniel saw visions by night)",
+          "definition": "The bed on which Nebuchadnezzar and Daniel lay when the dreams and visions of their heads came to them.",
+          "evidence": [
+            {
+              "ref": "Dan.2.28",
+              "role": "defining",
+              "note": "“Your dream and the visions of your head on your bed (עַל־מִשְׁכְּבָךְ) are these.”"
+            },
+            {
+              "ref": "Dan.2.29"
+            },
+            {
+              "ref": "Dan.4.2"
+            },
+            {
+              "ref": "Dan.4.7"
+            },
+            {
+              "ref": "Dan.4.10"
+            },
+            {
+              "ref": "Dan.7.1",
+              "role": "defining",
+              "note": "“Daniel saw a dream and visions of his head on his bed; then he wrote the dream.”"
+            }
+          ],
+          "kin": [
+            "bed"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "uga-shkb",
+      "lang": "uga",
+      "form": "𐎌𐎋𐎁",
+      "translit": "škb",
+      "gloss": "lie, lie down",
+      "relation": "cognate",
+      "note": "Ugaritic keeps š and ṯ apart and writes š: the root's ש is š.",
+      "sounds": {
+        "ש": "š"
+      },
+      "evidence": [
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000400 škb [rest] V, UGC004006 škb [lie] V; with HEB007372 šakab [lie] V"
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Ugaritic 𐎌𐎋𐎁",
+          "note": "“to lie, lie down”"
+        }
+      ]
+    },
+    {
+      "id": "phn-shkb",
+      "lang": "phn",
+      "form": "𐤔𐤊𐤁",
+      "translit": "škb",
+      "gloss": "(qal) lie, rest; above all of the dead in the coffin",
+      "relation": "cognate",
+      "note": "Phoenician kings' and priests' coffins speak in the first person: “I lie (škb) in this coffin”, as the Hebrew dead “lie” in the grave.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 460, Š-K-B",
+          "note": "“v. qal LIE, REST”; KAI 11 “I, Bittnoam … lie in this coffin”; KAI 13.1/2 Tabnit “lie in this coffin”; KAI 14.3 Eshmunazor “I lie in this coffin and in this tomb”."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000400 škb [rest] V, PUN001945 škb [lie] V"
+        }
+      ]
+    },
+    {
+      "id": "phn-mshkb",
+      "lang": "phn",
+      "form": "𐤌𐤔𐤊𐤁",
+      "translit": "mškb",
+      "gloss": "rest; resting-place, tomb; (mškb nḥt lʿlm) eternal resting-place",
+      "relation": "cognate",
+      "note": "The same noun as מִשְׁכָּב, used of the tomb as the place where the dead lie (the sense of Isa 57:2; Ezk 32:25).",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "pp. 315–316, MŠKB I and MŠKB NḤT LʿLM",
+          "note": "“n.m. 1. REST … 2. RESTING-PLACE, TOMB”; KAI 14.4/6 Eshmunazor: “let him not open this resting-place … nor carry me out from this resting-place to another resting-place”; KAI 34; 35 “eternal resting-place”."
+        }
+      ]
+    },
+    {
+      "id": "gez-sakaba",
+      "lang": "gez",
+      "form": "ሰከበ",
+      "translit": "sakaba",
+      "gloss": "lie down, recline; go to bed, sleep; of the dying and the dead, fall asleep; lie with; (causative ʾaskaba) lay down",
+      "relation": "cognate",
+      "note": "Ge'ez has the verb's whole range: to lie down to sleep, to lie sick, to lie down in death, and to lie with. Ge'ez s stands for both older š and ṯ, so it shows no sound behind ש.",
+      "evidence": [
+        {
+          "source": "dillmann-1865",
+          "locator": "cols. 380–381, ሰከበ",
+          "note": "“cubare, recumbere … de dormituris et dormientibus: cubitum ire, dormire … de morientibus et mortuis: occumbere, obdormiscere, dormire … 2) concumbere”; causative “facere ut cubet … deponere”."
+        }
+      ]
+    },
+    {
+      "id": "gez-meskab",
+      "lang": "gez",
+      "form": "ምስካብ",
+      "translit": "məskāb",
+      "gloss": "bed, couch; the marriage bed; lair of a beast",
+      "relation": "cognate",
+      "note": "The same pattern as מִשְׁכָּב, with the same senses of bed and the bed of lying together.",
+      "evidence": [
+        {
+          "source": "dillmann-1865",
+          "locator": "col. 381, ምስካብ",
+          "note": "“locus vel res, ubi cubant: a) cubile, stratum, lectus, torus … b) lectus vel torus legitime vel illegitime concumbentium … c) cubile, lustrum bestiae”."
+        }
+      ]
+    },
+    {
+      "id": "arc-shekhev",
+      "lang": "arc",
+      "form": "שְׁכֵב، שְׁכִיב",
+      "translit": "šǝḵēḇ, šǝḵīḇ",
+      "gloss": "lie down; die; lie with; (passive participle) lying, dead; (ithpaal) be lain with, be ravished",
+      "relation": "cognate",
+      "note": "Jewish Aramaic of the Targums and Talmud, with the same three uses as the Hebrew: lying down, dying, lying with. Its ithpaal renders the Hebrew niphal of Isa 13:16 and Zec 14:2. Aramaic writes ṯ as t, so its שׁ shows š.",
+      "sounds": {
+        "ש": "š"
+      },
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. שְׁכֵב (ch.), citing Targ. O. Deut. XXIV, 12; Targ. Gen. XXVI, 10; Targ. O. Lev. XV, 24; B. Mets. 85ᵃ (died); Ithpa. Targ. Zech. XIV, 2; Targ. Is. XIII, 16"
+        }
+      ]
+    },
+    {
+      "id": "ar-sakaba",
+      "lang": "ar",
+      "form": "سَكَبَ",
+      "translit": "sakaba",
+      "gloss": "(of water, tears) pour out, flow; pour out (water)",
+      "relation": "possible",
+      "note": "Only the hiphil of Job 38:37, tipping the water-skins of the heavens so that they pour, comes near it; Arabic has no “lie down” from this root. If it is cognate, its s shows š behind ש.",
+      "sounds": {
+        "ש": "š"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 1388, art. سكب, سَكَبَ (n20176)",
+          "note": "“It poured out or forth … He poured it out or forth; namely, water, and a flow of tears.”"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "mortality",
+      "statement": "Scripture's common way of telling a death is that a man “lay down with his fathers and was buried” (1Ki 2:10; 11:43; 2Ch 32:33). The dead lie in the dust and the grave: “they lie down alike in the dust, and the worm covers them” (Job 21:26); “now I shall lie in the dust; you will seek me, and I shall not be” (Job 7:21); they are “like the slain lying in the grave, whom you remember no more” (Psa 88:6). Job says that had he died at birth he would have “lain down and been quiet … slept … had rest” (Job 3:13), and that “man lies down and does not rise; till the heavens are no more they will not awake nor be roused from their sleep” (Job 14:12). The mighty of the nations go down to the grave (שְׁאוֹל) and lie there with their swords under their heads (Ezk 32:21, 27). The New Testament uses the Septuagint's word for this verb, κοιμάω “fall asleep”: David “fell asleep, was laid with his fathers, and saw corruption” (Act 13:36), and Peter says he “is not ascended into the heavens” (Act 2:29, 34); Jesus said “Lazarus has fallen asleep”, and then plainly, “Lazarus is dead” (Jhn 11:11–14). From the verses: death is lying down in the grave, as in sleep, with no knowledge or activity; the dead are in the dust, not living elsewhere.",
+      "evidence": [
+        {
+          "ref": "1Ki.2.10"
+        },
+        {
+          "ref": "1Ki.11.43"
+        },
+        {
+          "ref": "2Ch.32.33"
+        },
+        {
+          "ref": "Job.21.26"
+        },
+        {
+          "ref": "Job.7.21"
+        },
+        {
+          "ref": "Psa.88.6"
+        },
+        {
+          "ref": "Job.3.13"
+        },
+        {
+          "ref": "Job.14.12"
+        },
+        {
+          "ref": "Ezk.32.21"
+        },
+        {
+          "ref": "Ezk.32.27"
+        },
+        {
+          "ref": "Act.13.36"
+        },
+        {
+          "ref": "Act.2.29"
+        },
+        {
+          "ref": "Act.2.34"
+        },
+        {
+          "ref": "Jhn.11.11",
+          "to": "Jhn.11.14"
+        }
+      ]
+    },
+    {
+      "topic": "resurrection",
+      "statement": "The verb's opposite is קוּם “rise” (Deu 6:7; Pro 6:9), and the one who lies down in death does not rise of himself: “man lies down and does not rise; till the heavens are no more they will not awake” (Job 14:12), and Job's hope is “you will call, and I will answer you” (Job 14:14–15). Yahweh promised David, “when you lie down with your fathers, I will raise up your seed after you … and I will establish the throne of his kingdom for ever” (2Sa 7:12–13). Paul sets the two side by side: David “fell asleep … and saw corruption, but he whom God raised up saw no corruption” (Act 13:34–37); Christ is “the firstfruits of those who have fallen asleep” (1Co 15:20), and “the Lord himself will descend from heaven … and the dead in Christ will rise first” (1Th 4:14–16). From the verses: those who lie down in death rise only when God raises them, and the time of it is Christ's return.",
+      "evidence": [
+        {
+          "ref": "Deu.6.7"
+        },
+        {
+          "ref": "Pro.6.9"
+        },
+        {
+          "ref": "Job.14.12"
+        },
+        {
+          "ref": "Job.14.14",
+          "to": "Job.14.15"
+        },
+        {
+          "ref": "2Sa.7.12",
+          "to": "2Sa.7.13"
+        },
+        {
+          "ref": "Act.13.34",
+          "to": "Act.13.37"
+        },
+        {
+          "ref": "1Co.15.20"
+        },
+        {
+          "ref": "1Th.4.14",
+          "to": "1Th.4.16"
+        }
+      ]
+    },
+    {
+      "topic": "land-promise",
+      "statement": "At Bethel Yahweh told Jacob, “the land on which you lie, to you I will give it and to your seed” (Gen 28:13). Jacob died in Egypt, and charged Joseph, “I will lie down with my fathers; carry me out of Egypt and bury me in their burying place” (Gen 47:30). Stephen says God “gave him no inheritance in it, not even a foot's length, yet promised to give it to him for a possession and to his seed after him” (Act 7:5), and the fathers “all died in faith, not having received the promises” (Heb 11:13). From the verses: the ground Jacob lay on was promised to him personally as well as to his seed; he lay down in death without it, so the promise is still to be kept, and needs his resurrection.",
+      "evidence": [
+        {
+          "ref": "Gen.28.13"
+        },
+        {
+          "ref": "Gen.47.30"
+        },
+        {
+          "ref": "Act.7.5"
+        },
+        {
+          "ref": "Heb.11.13"
+        }
+      ]
+    },
+    {
+      "topic": "sexual-purity",
+      "statement": "The law forbids a man to lie with his neighbour's wife (Lev 18:20; Deu 22:22), with a male “the lyings of a woman” (Lev 18:22; 20:13), or with a beast (Lev 18:23; Exo 22:18), and calls these abomination and defilement. Joseph, pressed daily “to lie beside her”, refused and fled (Gen 39:10–12). The New Testament keeps the same line in the Septuagint's word for מִשְׁכָּב: “let the bed (κοίτη) be undefiled, for fornicators and adulterers God will judge” (Heb 13:4), and ἀρσενοκοῖται, the word formed from Lev 18:22; 20:13, are among those who will not inherit the kingdom of God, “and such were some of you; but you were washed” (1Co 6:9–11). From the verses: lying together belongs to a man and his wife, and the law's prohibitions stand in the New Testament.",
+      "evidence": [
+        {
+          "ref": "Lev.18.20"
+        },
+        {
+          "ref": "Deu.22.22"
+        },
+        {
+          "ref": "Lev.18.22"
+        },
+        {
+          "ref": "Lev.20.13"
+        },
+        {
+          "ref": "Lev.18.23"
+        },
+        {
+          "ref": "Exo.22.18"
+        },
+        {
+          "ref": "Gen.39.10",
+          "to": "Gen.39.12"
+        },
+        {
+          "ref": "Heb.13.4"
+        },
+        {
+          "ref": "1Co.6.9",
+          "to": "1Co.6.11"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-18. Root key שכב; no existing entry used it, and no personal name in TIPNR is formed from it. BDB keys: v.cy.aa verb, v.cy.ad מִשְׁכָּב, v.cy.ab שְׁכָבָה, v.cy.ac שְׁכֹבֶת, xv.an.ab Aramaic מִשְׁכַּב (Daniel, 6 tokens; the corpus keys its root משכב). Left unassigned: m.du.ae, xm.am.ad and xv.an.aa (zero-token cross-references “see שׁכב”). Qere: the text reads שָׁכַב at Deu 28:30 (qal), Isa 13:16 and Zec 14:2 (niphal) and Jer 3:2 (pual), where the ketiv is שׁגל; BDB files these under v.bd.aa (שָׁגַל). The niphal and pual stems are recorded here with their verses but their tokens are not counted; an entry for שגל should say the same. Cognates: Ugaritic škb is cited only from the Proto-Semitic list and Wiktionary; DULAT and a text (e.g. KTU 1.14 I, Kirta lying down to sleep) not checked. Krahmalkov's page numbers come from the OCR text's page footers (Š-K-B p. 460; MŠKB I pp. 315–316), not yet checked against the PDF. Dillmann's column numbers come from archive.org's OCR of the 1865 edition (ሰከበ cols. 380–381, ምስካብ col. 381); check against the scan. No Syriac cognate recorded: SEDRA has no ܫܟܒ root (the Peshitta New Testament uses ܕܡܟ for sleep and death), and Payne Smith's ܫܟܒ was not consulted. Arabic سكب “pour” is recorded as possible, on Job 38:37 only; Oracc šukbutu “made heavy” (a Š-form of kabātu) is a false lead from sound correspondence, and Akkadian sakāpu/šakābu “overthrow” was not followed. Greek: no loans. Open questions: (1) whether Job 38:37 יַשְׁכִּיב is “tip over” (lay the skins down) or belongs with Arabic sakaba “pour”; (2) Psa 68:14 תִּשְׁכְּבוּן בֵּין שְׁפַתָּיִם is obscure (“lie among the sheepfolds”), kept under the plain sense; (3) the doctrine statements are reasoned conclusions to review."
+}

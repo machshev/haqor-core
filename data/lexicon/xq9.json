@@ -1,0 +1,92 @@
+{
+  "id": "xq9",
+  "root": "שקצ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "psalms-21-30"
+  ],
+  "gloss": "detest",
+  "summary": "To detest is to regard something as abhorrent and unclean.",
+  "words": [
+    {
+      "lemma": "שִׁקֵּץ",
+      "bdb": [
+        "v.fu.ac"
+      ],
+      "pos": "verb",
+      "gloss": "detest",
+      "stems": [
+        {
+          "stem": "piel",
+          "gloss": "detest",
+          "senses": [
+            {
+              "id": "detest",
+              "gloss": "detest",
+              "definition": "Yahweh does not despise the afflicted one.",
+              "evidence": [
+                {
+                  "ref": "Psa.22.25",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שֶׁקֶץ",
+      "bdb": [
+        "v.fu.ab"
+      ],
+      "pos": "noun",
+      "gloss": "detestable thing",
+      "senses": [
+        {
+          "id": "detestable-thing",
+          "gloss": "detestable thing",
+          "definition": "The food laws use this word for creatures Israel is to regard as detestable and abstain from eating.",
+          "evidence": [
+            {
+              "ref": "Lev.11.10",
+              "to": "Lev.11.11",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "שִׁקּוּץ",
+      "bdb": [
+        "v.fu.ad"
+      ],
+      "pos": "noun",
+      "gloss": "detestable thing, idol",
+      "senses": [
+        {
+          "id": "detestable-thing-idol",
+          "gloss": "detestable thing, idol",
+          "definition": "Moses recalls the detestable images of wood, stone, silver and gold that Israel saw among the nations.",
+          "evidence": [
+            {
+              "ref": "Deu.29.16",
+              "role": "defining"
+            },
+            {
+              "ref": "1Ki.11.5"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    }
+  ],
+  "cognates": [],
+  "doctrine": [],
+  "note": "The noun is used for idols and objects of forbidden worship. Psalm 22 denies that Yahweh treated the affliction of the lowly as detestable."
+}

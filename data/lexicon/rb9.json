@@ -1,0 +1,134 @@
+{
+  "id": "rb9",
+  "root": "רבצ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "psalms-21-30"
+  ],
+  "gloss": "lie down",
+  "summary": "The flock lies down under the shepherd’s care.",
+  "words": [
+    {
+      "lemma": "רָבַץ",
+      "bdb": [
+        "t.an.aa"
+      ],
+      "pos": "verb",
+      "gloss": "lie down",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "lie or crouch",
+          "senses": [
+            {
+              "id": "lie-or-crouch",
+              "gloss": "lie or crouch",
+              "definition": "A flock lies down in good grazing land. Sin is pictured crouching at the door.",
+              "evidence": [
+                {
+                  "ref": "Ezk.34.14",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Gen.4.7"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "make lie down",
+          "senses": [
+            {
+              "id": "make-lie-down",
+              "gloss": "make lie down",
+              "definition": "The shepherd brings the sheep to green pasture and settles them there to rest.",
+              "evidence": [
+                {
+                  "ref": "Psa.23.2",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Ezk.34.15"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "akk-rabasu"
+      ]
+    },
+    {
+      "lemma": "רֶבֶץ",
+      "bdb": [
+        "t.an.ab"
+      ],
+      "pos": "noun",
+      "gloss": "resting place",
+      "senses": [
+        {
+          "id": "resting-place",
+          "gloss": "resting place",
+          "definition": "Isaiah pictures a resting place for jackals in a land transformed by springs of water.",
+          "evidence": [
+            {
+              "ref": "Isa.35.7",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "akk-rabasu"
+      ]
+    },
+    {
+      "lemma": "מַרְבֵּץ",
+      "bdb": [
+        "t.an.ac"
+      ],
+      "pos": "noun",
+      "gloss": "resting place for a flock",
+      "senses": [
+        {
+          "id": "resting-place-for-a",
+          "gloss": "resting place for a flock",
+          "definition": "Rabbah will become pasture for camels and Ammon a resting place for flocks.",
+          "evidence": [
+            {
+              "ref": "Ezk.25.5",
+              "role": "defining"
+            },
+            {
+              "ref": "Zep.2.15"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-rabasu",
+      "lang": "akk",
+      "form": "rabāṣu",
+      "translit": "rabāṣu",
+      "gloss": "lie down, rest",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep/x000009730, rabāṣu [lie down]"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "Psalm 23:2 uses the causative form. The shepherd brings about the rest of the flock."
+}

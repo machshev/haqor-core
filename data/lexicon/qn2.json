@@ -1,0 +1,121 @@
+{
+  "id": "qn2",
+  "root": "קנא",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "gloss": "be jealous, zealous",
+  "summary": "To burn with zeal or jealousy, whether for Yahweh or against another.",
+  "words": [
+    {
+      "lemma": "קִנְאָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "jealousy, zeal",
+      "bdb": [
+        "s.ca.ab"
+      ],
+      "senses": [
+        {
+          "id": "zeal-jealousy",
+          "gloss": "zeal, jealousy",
+          "definition": "Jehu invites Jehonadab to see his zeal for Yahweh. The marriage law describes jealousy in a husband.",
+          "evidence": [
+            {
+              "ref": "2Ki.10.16",
+              "role": "defining"
+            },
+            {
+              "ref": "Num.5.14",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קָנָא",
+      "pos": "verb",
+      "gloss": "be jealous, envy",
+      "bdb": [
+        "s.ca.ac"
+      ],
+      "stems": [
+        {
+          "stem": "piel",
+          "gloss": "be jealous, envy",
+          "senses": [
+            {
+              "id": "be-jealous",
+              "gloss": "be jealous",
+              "definition": "The wicked may be envied, but the righteous are told not to burn with jealousy toward them.",
+              "evidence": [
+                {
+                  "ref": "Psa.37.1",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "provoke to jealousy",
+          "senses": [
+            {
+              "id": "provoke-to-jealousy",
+              "gloss": "provoke to jealousy",
+              "definition": "Israel provoked Yahweh to jealousy with their carved images.",
+              "evidence": [
+                {
+                  "ref": "Psa.78.58",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קַנָּא",
+      "pos": "adjective",
+      "gloss": "jealous",
+      "bdb": [
+        "s.ca.ad"
+      ],
+      "senses": [
+        {
+          "id": "jealous",
+          "gloss": "jealous",
+          "definition": "Jealous describes Yahweh's exclusive claim to worship.",
+          "evidence": [
+            {
+              "ref": "Exo.20.5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קַנּוֹא",
+      "pos": "adjective",
+      "gloss": "jealous",
+      "bdb": [
+        "s.ca.ae"
+      ],
+      "senses": [
+        {
+          "id": "jealous-2",
+          "gloss": "jealous",
+          "definition": "The adjective describes Yahweh as jealous.",
+          "evidence": [
+            {
+              "ref": "Jos.24.19"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "note": "The Aramaic verb קְנָא for buying in Ezra 7:17 belongs to Hebrew קנה and is filed in qanah."
+}

@@ -1,0 +1,76 @@
+{
+  "id": "nzl",
+  "root": "נזל",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "gloss": "flow, drip",
+  "summary": "נזל describes water flowing or streaming from a rock.",
+  "words": [
+    {
+      "lemma": "נָזַל",
+      "pos": "verb",
+      "gloss": "flow",
+      "bdb": [
+        "n.cl.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "flow",
+          "senses": [
+            {
+              "id": "flow",
+              "gloss": "flow",
+              "definition": "Water flowed like rivers from the rock when Yahweh provided for Israel.",
+              "evidence": [
+                {
+                  "ref": "Psa.78.16",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "make flow",
+          "senses": [
+            {
+              "id": "make-flow",
+              "gloss": "make flow",
+              "definition": "Water comes out of the rock when Yahweh splits it for his thirsty people.",
+              "evidence": [
+                {
+                  "ref": "Isa.48.21",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-flow"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-flow",
+      "lang": "arc",
+      "form": "נְזַל",
+      "translit": "nəzal",
+      "gloss": "flow, as running waters",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. נְזַל, Targum Psalms 78:16 and Palestinian Targum Exodus 15:8"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The plural participle in Psalm 78 means flowing waters. Compare the Aramaic plural participle."
+}

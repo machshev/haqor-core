@@ -1,0 +1,256 @@
+{
+  "id": "nqh",
+  "root": "נקה",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "justice",
+    "purity"
+  ],
+  "gloss": "be clear of guilt, innocent",
+  "summary": "A person may be clear of wrongdoing or released from a specific duty. Psalm 10 describes the innocent person killed in ambush, and Psalm 19 asks God to clear the speaker of hidden faults.",
+  "words": [
+    {
+      "lemma": "נָקָה",
+      "bdb": [
+        "n.fe.aa"
+      ],
+      "pos": "verb",
+      "gloss": "be clear, acquit",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "go clear",
+          "senses": [
+            {
+              "id": "go-clear",
+              "gloss": "go clear",
+              "definition": "Jeremiah places the infinitive before the passive form in a question about escaping judgment.",
+              "evidence": [
+                {
+                  "ref": "Jer.49.12",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be free or cleared",
+          "senses": [
+            {
+              "gloss": "be released from liability",
+              "definition": "Abraham releases the servant from his oath if the woman refuses to come. An accused woman is cleared when she is innocent.",
+              "evidence": [
+                {
+                  "ref": "Gen.24.8",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Gen.24.41"
+                },
+                {
+                  "ref": "Num.5.28"
+                }
+              ],
+              "id": "clear"
+            },
+            {
+              "id": "be-emptied",
+              "gloss": "be emptied",
+              "definition": "Zion is pictured sitting desolate on the ground after losing her people in battle.",
+              "evidence": [
+                {
+                  "ref": "Isa.3.25",
+                  "to": "Isa.3.26",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "clear of guilt or leave unpunished",
+          "senses": [
+            {
+              "id": "clear-of-guilt-or",
+              "gloss": "clear of guilt or leave unpunished",
+              "definition": "The psalmist asks to be cleared of hidden faults. The commandment about Yahweh’s name warns that he will hold the offender accountable.",
+              "evidence": [
+                {
+                  "ref": "Psa.19.13",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Exo.20.7"
+                },
+                {
+                  "ref": "Exo.34.7"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-naqqa"
+      ]
+    },
+    {
+      "lemma": "נָקִי",
+      "bdb": [
+        "n.fe.ab",
+        "n.fe.ac"
+      ],
+      "pos": "adjective",
+      "gloss": "innocent, clean, exempt",
+      "senses": [
+        {
+          "id": "innocent-of-wrongdoing",
+          "gloss": "innocent of wrongdoing",
+          "definition": "Psalm 10 describes a victim murdered in secret. The law forbids killing the innocent, and Joel uses the spelling נָקִיא for innocent blood.",
+          "evidence": [
+            {
+              "ref": "Psa.10.8",
+              "role": "defining"
+            },
+            {
+              "ref": "Exo.23.7"
+            },
+            {
+              "ref": "Jol.4.19"
+            }
+          ],
+          "kin": [
+            "clear"
+          ]
+        },
+        {
+          "id": "free-of-obligation",
+          "gloss": "free of obligation",
+          "definition": "A newly married man is exempt from public duty for a year. Abraham’s servant may likewise be free from his oath.",
+          "evidence": [
+            {
+              "ref": "Deu.24.5",
+              "role": "defining"
+            },
+            {
+              "ref": "Gen.24.41"
+            }
+          ],
+          "kin": [
+            "clear"
+          ]
+        },
+        {
+          "gloss": "clean",
+          "definition": "The worshipper has clean hands and a pure heart.",
+          "evidence": [
+            {
+              "ref": "Psa.24.4",
+              "role": "defining"
+            }
+          ],
+          "id": "clean"
+        }
+      ],
+      "cognate_ids": [
+        "ar-naqqa"
+      ]
+    },
+    {
+      "lemma": "נִקָּיוֹן",
+      "bdb": [
+        "n.fe.ad"
+      ],
+      "pos": "noun",
+      "gloss": "cleanness, innocence",
+      "senses": [
+        {
+          "id": "innocence",
+          "gloss": "innocence",
+          "definition": "Abimelech appeals to the innocence of his hands. The psalmist washes his hands in innocence before approaching the altar.",
+          "evidence": [
+            {
+              "ref": "Gen.20.5",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.26.6"
+            },
+            {
+              "ref": "Psa.73.13"
+            }
+          ],
+          "kin": [
+            "clean"
+          ]
+        },
+        {
+          "id": "cleanness-of-teeth",
+          "gloss": "cleanness of teeth",
+          "definition": "Amos pairs clean teeth with lack of bread, describing the effects of famine.",
+          "evidence": [
+            {
+              "ref": "Amo.4.6",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "ar-naqqa"
+      ]
+    },
+    {
+      "lemma": "מְנַקִּיָּה",
+      "bdb": [
+        "n.fe.ae"
+      ],
+      "pos": "noun",
+      "gloss": "libation vessel",
+      "senses": [
+        {
+          "id": "libation-vessel",
+          "gloss": "libation vessel",
+          "definition": "A gold vessel belonging to the sanctuary table and listed with its dishes and other utensils for pouring.",
+          "evidence": [
+            {
+              "ref": "Exo.25.29",
+              "role": "defining"
+            },
+            {
+              "ref": "Exo.37.16"
+            },
+            {
+              "ref": "Num.4.7"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-naqqa",
+      "lang": "ar",
+      "form": "نَقَّى",
+      "translit": "naqqā",
+      "gloss": "cleanse, clear of impurities",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 3037, نَقَّاهُ, form II"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The sanctuary vessel is identified by its use. Its relationship to the verb for clearing remains uncertain. The final aleph of the adjective in Joel does not change its sense."
+}

@@ -1,0 +1,488 @@
+{
+  "id": "x3l",
+  "root": "שעל",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "tags": [
+    "animals",
+    "body"
+  ],
+  "gloss": "fox, jackal, cupped hand, handful, narrow path",
+  "summary": "Little foxes damage the flowering vines. The same animal name appears in scenes of ruined cities and scavenging, where jackal is also a plausible rendering. A different word describes a cupped hand measuring water or holding grain. Balaam’s donkey encounters a narrow passage with a wall on either side.",
+  "words": [
+    {
+      "lemma": "שׁוּעָל",
+      "pos": "noun",
+      "gender": "m",
+      "bdb": [
+        "v.ew.ab"
+      ],
+      "gloss": "fox, jackal",
+      "senses": [
+        {
+          "id": "fox",
+          "gloss": "fox, sometimes jackal",
+          "definition": "A small wild member of the dog family that frequents vineyards and deserted places. In some contexts it feeds on the dead.",
+          "evidence": [
+            {
+              "ref": "Sng.2.15",
+              "role": "defining",
+              "note": "The little animals must be caught because they spoil the vineyards in blossom."
+            },
+            {
+              "ref": "Jdg.15.4",
+              "role": "defining",
+              "note": "Samson catches the animals and pairs them tail to tail."
+            },
+            {
+              "ref": "Neh.3.35",
+              "role": "defining",
+              "note": "Tobiah mocks the wall by claiming that even a fox climbing it would bring it down."
+            },
+            {
+              "ref": "Lam.5.18",
+              "role": "defining",
+              "note": "The animals walking over Mount Zion mark its abandonment."
+            },
+            {
+              "ref": "Ezk.13.4",
+              "role": "defining",
+              "note": "Israel’s prophets are compared to animals among ruins."
+            },
+            {
+              "ref": "Psa.63.11",
+              "role": "defining",
+              "note": "Those delivered to the sword become food for these animals, a setting consistent with jackals."
+            }
+          ],
+          "cognate_ids": [
+            "akk-fox",
+            "ar-fox",
+            "ar-thuala",
+            "arc-fox",
+            "mand-fox",
+            "meh-fox",
+            "jib-fox",
+            "amor-name",
+            "uga-name"
+          ],
+          "kin": [
+            "syc-fox"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "תַּעְלָא",
+      "pos": "noun",
+      "gender": "m",
+      "lang": "syc",
+      "root": "תעלא",
+      "gloss": "fox",
+      "senses": [
+        {
+          "id": "syc-fox",
+          "gloss": "fox",
+          "definition": "The animal that shelters in a den, also used by Jesus as a name for Herod.",
+          "evidence": [
+            {
+              "ref": "Mat.8.20",
+              "role": "defining",
+              "note": "Foxes have holes and birds have shelters, while the Son of Man lacks a resting place."
+            },
+            {
+              "ref": "Luk.9.58",
+              "role": "defining",
+              "note": "The same saying contrasts the lairs of foxes with the Son of Man’s circumstances."
+            },
+            {
+              "ref": "Luk.13.32",
+              "role": "defining",
+              "note": "Jesus tells the messengers to take his answer to Herod, whom he calls ‘that fox’."
+            }
+          ],
+          "cognate_ids": [
+            "akk-fox",
+            "ar-fox",
+            "ar-thuala",
+            "arc-fox",
+            "mand-fox",
+            "meh-fox",
+            "jib-fox",
+            "amor-name",
+            "uga-name"
+          ],
+          "kin": [
+            "fox"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שֹׁעַל",
+      "pos": "noun",
+      "gender": "m",
+      "bdb": [
+        "v.ev.ab"
+      ],
+      "gloss": "cupped hand, handful",
+      "senses": [
+        {
+          "id": "palm",
+          "gloss": "cupped hand, handful",
+          "definition": "The hollow of the palm or the quantity that fits into it.",
+          "evidence": [
+            {
+              "ref": "Isa.40.12",
+              "role": "defining",
+              "note": "Measuring water in the palm is paired with measuring heaven by the span."
+            },
+            {
+              "ref": "Ezk.13.19",
+              "role": "defining",
+              "note": "Handfuls of barley and scraps of bread are the payment."
+            },
+            {
+              "ref": "1Ki.20.10",
+              "role": "defining",
+              "note": "Ben Hadad boasts that Samaria has too little dust to give each follower a handful."
+            }
+          ],
+          "cognate_ids": [
+            "arc-palm",
+            "syc-palm"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מִשְׁעוֹל",
+      "pos": "noun",
+      "gender": "m",
+      "bdb": [
+        "v.ev.ac",
+        "m.dx.ac"
+      ],
+      "gloss": "narrow path",
+      "senses": [
+        {
+          "id": "path",
+          "gloss": "narrow path",
+          "definition": "A confined passage between vineyards.",
+          "evidence": [
+            {
+              "ref": "Num.22.24",
+              "role": "defining",
+              "note": "Walls on both sides restrict the donkey’s movement as the angel blocks the path."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שׁוּעָל",
+      "pos": "name",
+      "bdb": [
+        "v.ew.ac"
+      ],
+      "gloss": "Shual",
+      "senses": [
+        {
+          "id": "district",
+          "gloss": "land of Shual",
+          "definition": "A district on the route from the Philistine camp toward Ophrah.",
+          "evidence": [
+            {
+              "ref": "1Sa.13.17",
+              "role": "defining",
+              "note": "One of the three raiding parties heads toward Ophrah, into the land of Shual."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שַׁעַלְבִים",
+      "pos": "name",
+      "bdb": [
+        "v.ew.ae",
+        "v.ew.af"
+      ],
+      "gloss": "Shaalbim, Shaalabbin",
+      "senses": [
+        {
+          "id": "town",
+          "gloss": "Shaalbim",
+          "definition": "A town in Dan’s allotment where Amorites continued to live.",
+          "evidence": [
+            {
+              "ref": "Jos.19.42",
+              "role": "defining",
+              "note": "The allotment lists Shaalabbin beside Aijalon."
+            },
+            {
+              "ref": "Jdg.1.35",
+              "role": "defining",
+              "note": "The Amorites persist in Shaalbim and Aijalon."
+            },
+            {
+              "ref": "1Ki.4.9",
+              "role": "defining",
+              "note": "Shaalbim lies in Ben Deker’s administrative district."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שַׁעַלְבֹנִי",
+      "pos": "adjective",
+      "bdb": [
+        "v.ew.ag"
+      ],
+      "gloss": "Shaalbonite",
+      "senses": [
+        {
+          "id": "gentilic",
+          "gloss": "Shaalbonite",
+          "definition": "A designation of origin attached to Eliahba.",
+          "evidence": [
+            {
+              "ref": "2Sa.23.32",
+              "role": "defining",
+              "note": "David’s warriors include Eliahba the Shaalbonite."
+            },
+            {
+              "ref": "1Ch.11.33",
+              "role": "defining",
+              "note": "The parallel list preserves the same designation."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שְׁעָלִים",
+      "pos": "name",
+      "bdb": [
+        "v.ew.ah"
+      ],
+      "gloss": "Shaalim",
+      "senses": [
+        {
+          "id": "shaalim",
+          "gloss": "land of Shaalim",
+          "definition": "A district through which Saul passed in search of the donkeys.",
+          "evidence": [
+            {
+              "ref": "1Sa.9.4",
+              "role": "defining",
+              "note": "The search proceeds through Shaalim before continuing into Benjaminite territory."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-fox",
+      "lang": "akk",
+      "form": "šēlebu",
+      "translit": "šēlebu",
+      "gloss": "fox",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "ṯ",
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000018680"
+        }
+      ]
+    },
+    {
+      "id": "ar-fox",
+      "lang": "ar",
+      "form": "ثَعْلَبٌ",
+      "translit": "ṯaʿlab",
+      "gloss": "fox",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "ṯ",
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "n4453, p. 338"
+        }
+      ]
+    },
+    {
+      "id": "ar-thuala",
+      "lang": "ar",
+      "form": "ثُعَالَةُ",
+      "translit": "ṯuʿāla",
+      "gloss": "fox",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "ṯ",
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "n4447, p. 337"
+        }
+      ]
+    },
+    {
+      "id": "arc-fox",
+      "lang": "arc",
+      "form": "תַּעֲלָא",
+      "translit": "taʿălā",
+      "gloss": "fox",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "ṯ",
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "V00781, תַּעַל"
+        }
+      ]
+    },
+    {
+      "id": "mand-fox",
+      "lang": "arc",
+      "form": "tala",
+      "translit": "tala",
+      "gloss": "Mandaic fox",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "ṯ",
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "drower-macuch-1963",
+          "locator": "tala 1, DC 26.613"
+        }
+      ]
+    },
+    {
+      "id": "meh-fox",
+      "lang": "sem",
+      "form": "yəṯáyl",
+      "translit": "yəṯáyl",
+      "gloss": "Mehri fox",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "ṯ",
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "kogan-2011-lexicon",
+          "locator": "§5.2.1.2, Wolf, fox, SED II no. 237"
+        }
+      ]
+    },
+    {
+      "id": "jib-fox",
+      "lang": "sem",
+      "form": "iṯʿél",
+      "translit": "iṯʿél",
+      "gloss": "Jibbali fox",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "ṯ",
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "kogan-2011-lexicon",
+          "locator": "§5.2.1.2, Wolf, fox, SED II no. 237"
+        }
+      ]
+    },
+    {
+      "id": "amor-name",
+      "lang": "sem",
+      "form": "Sà-aḫ-la-ba-an",
+      "translit": "Saḫlabān",
+      "gloss": "Amorite personal name possibly formed from fox",
+      "relation": "possible",
+      "sounds": {
+        "ש": "ṯ",
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "dirbas-2017",
+          "locator": "pp. 21–22, ARM 26/1 40, 51"
+        }
+      ]
+    },
+    {
+      "id": "uga-name",
+      "lang": "uga",
+      "form": "𐎘𐎓𐎍𐎁𐎐",
+      "translit": "ṯʿlbn",
+      "gloss": "Ugaritic personal name possibly formed from fox",
+      "relation": "possible",
+      "sounds": {
+        "ש": "ṯ",
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "dirbas-2017",
+          "locator": "p. 22, Ṯʿlbn, after Gröndahl p. 198"
+        }
+      ]
+    },
+    {
+      "id": "arc-palm",
+      "lang": "arc",
+      "form": "שועלָא",
+      "translit": "šuʿlā",
+      "gloss": "palm of the hand",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š",
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "cal",
+          "locator": "šˁwl, šwˁlˀ, noun meaning palm"
+        }
+      ]
+    },
+    {
+      "id": "syc-palm",
+      "lang": "syc",
+      "form": "ܫܘܥܠܐ",
+      "translit": "šuʿlā",
+      "gloss": "hollow of the hand, handful",
+      "relation": "cognate",
+      "sounds": {
+        "ש": "š",
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "payne-smith-1903",
+          "locator": "s.v. ܫܘܥܠܐ"
+        }
+      ]
+    }
+  ],
+  "note": "Aramaic t and Arabic ṯ distinguish the fox word from the palm word, which has š in Aramaic. The passages give too little detail to identify the species in every setting. The place name Shaalbim preserves a b like Arabic ṯaʿlab, but no passage explains the town name. The relation of the narrow vineyard path to the cupped hand remains uncertain."
+}

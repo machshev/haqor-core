@@ -1,0 +1,137 @@
+{
+  "id": "hbl",
+  "root": "הבל",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "gloss": "vapor, breath, vanity",
+  "summary": "הֶבֶל is a breath or vapor and therefore something fleeting and insubstantial. Scripture uses it for the shortness of human life, empty hopes, and idols that cannot profit.",
+  "words": [
+    {
+      "lemma": "הֶבֶל",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "vapor, breath, vanity",
+      "bdb": [
+        "e.af.aa"
+      ],
+      "senses": [
+        {
+          "id": "vapor",
+          "gloss": "breath or vapor",
+          "definition": "A fleeting breath or vapor, used of the transience and insubstantiality of human life and its pursuits.",
+          "evidence": [
+            {
+              "ref": "Psa.31.7",
+              "role": "defining",
+              "note": "David hates those who regard empty vanities and trusts Yahweh."
+            },
+            {
+              "ref": "Psa.39.7",
+              "role": "defining",
+              "note": "Man walks as an image and makes an uproar for vapor."
+            },
+            {
+              "ref": "Psa.39.12",
+              "note": "All mankind is vapor before Yahweh."
+            },
+            {
+              "ref": "Psa.144.4",
+              "note": "Man is like vapor and his days like a passing shadow."
+            },
+            {
+              "ref": "Ecc.1.2",
+              "role": "defining",
+              "note": "Qoheleth says all is vapor."
+            }
+          ]
+        },
+        {
+          "id": "worthlessness",
+          "gloss": "empty or worthless thing",
+          "definition": "Something empty and unable to provide help, especially an idol or a vain hope.",
+          "evidence": [
+            {
+              "ref": "Jer.10.3"
+            },
+            {
+              "ref": "Jer.16.19"
+            },
+            {
+              "ref": "Psa.62.11"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "הָבַל",
+      "pos": "verb",
+      "gloss": "become empty, act vainly",
+      "bdb": [
+        "e.af.ab"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "become empty, act vainly",
+          "senses": [
+            {
+              "id": "become-or-act-vainly",
+              "gloss": "become or act vainly",
+              "definition": "To become empty or to place vain confidence in something.",
+              "evidence": [
+                {
+                  "ref": "Jer.2.5"
+                },
+                {
+                  "ref": "Psa.62.11"
+                },
+                {
+                  "ref": "Job.27.12"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "delude",
+          "senses": [
+            {
+              "id": "delude",
+              "gloss": "delude",
+              "definition": "To lead people into empty or false confidence.",
+              "evidence": [
+                {
+                  "ref": "Jer.23.16",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-e00041"
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "Drafted from the lexicon brief. הֶבֶל also has a distinct personal-name key for Abel, which remains separate. Cognate evidence still needs review.",
+  "cognates": [
+    {
+      "id": "arc-e00041",
+      "lang": "arc",
+      "form": "הֲבַל",
+      "translit": "hăbal",
+      "gloss": "do vain things",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "הֲבַל, E00041, Targum Job 27:12"
+        }
+      ]
+    }
+  ]
+}

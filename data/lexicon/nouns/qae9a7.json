@@ -1,0 +1,85 @@
+{
+  "id": "qae9a7",
+  "root": "קצח",
+  "status": "draft",
+  "updated": "2026-11-18",
+  "tags": [
+    "agriculture"
+  ],
+  "gloss": "black cumin",
+  "summary": "Isaiah describes a farmer scattering black cumin on level ground and beating out its seeds with a stick. He names ordinary cumin alongside it.",
+  "words": [
+    {
+      "lemma": "קֶצַח",
+      "pos": "noun",
+      "gender": "m",
+      "bdb": [
+        "s.cq.ab"
+      ],
+      "gloss": "black cumin",
+      "senses": [
+        {
+          "id": "black-cumin",
+          "gloss": "black cumin",
+          "definition": "A seed crop traditionally identified as Nigella sativa. Isaiah singles it out as a crop that calls for light threshing.",
+          "evidence": [
+            {
+              "ref": "Isa.28.25",
+              "role": "defining",
+              "note": "On the prepared soil the farmer scatters black cumin, then sows cumin and several cereals."
+            },
+            {
+              "ref": "Isa.28.27",
+              "role": "defining",
+              "note": "The name occurs twice as Isaiah contrasts the threshing sledge with the stick used to beat out this seed."
+            }
+          ],
+          "cognate_ids": [
+            "ug-seed",
+            "ar-seasoning"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ug-seed",
+      "lang": "uga",
+      "form": "qṣḥ",
+      "translit": "qṣḥ",
+      "gloss": "black cumin",
+      "relation": "cognate",
+      "sounds": {
+        "צ": "ṣ",
+        "ח": "ḥ"
+      },
+      "evidence": [
+        {
+          "source": "dulat-2015",
+          "locator": "s.v. qṣḥ, plural qṣḥm in KTU 4.751:8, listed by measure with dried figs and raisins"
+        }
+      ]
+    },
+    {
+      "id": "ar-seasoning",
+      "lang": "ar",
+      "form": "قِزْحٌ",
+      "translit": "qizḥ",
+      "gloss": "seasoning seeds",
+      "relation": "possible",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "note": "The Arabic has z in the middle. Its range includes cumin and coriander seeds.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2520, n35580, compared under Ugaritic qṣḥ in DULAT"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "Targum Jonathan on Isa.28.25 and 28.27 uses Aramaic קִצְחָא alongside its word for ordinary cumin. This translation witnesses the traditional distinction. The Ugaritic measurement comes from a separate agricultural inventory. Isaiah gives no description of the plant’s flowers or seed colour."
+}

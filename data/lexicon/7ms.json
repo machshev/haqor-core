@@ -1,0 +1,182 @@
+{
+  "id": "7ms",
+  "root": "חמס",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "justice",
+    "violence"
+  ],
+  "gloss": "violence, do wrong",
+  "summary": "A victim cries out over the wrong done to him, and the king must deliver the oppressed. A person can also violate a law or profane what is holy. In Psalm 7 the wrongdoer suffers the violence he intended for another.",
+  "words": [
+    {
+      "lemma": "חָמָס",
+      "bdb": [
+        "h.dj.ab"
+      ],
+      "pos": "noun",
+      "gloss": "violence, wrong",
+      "senses": [
+        {
+          "gloss": "wrong inflicted on someone",
+          "definition": "The earth is filled with violence before the flood. A cry of violence asks for redress, and a false witness can help inflict that wrong. The speaker in Psalm 7 sees it fall back on the wrongdoer.",
+          "evidence": [
+            {
+              "ref": "Gen.6.11",
+              "to": "Gen.6.13",
+              "role": "defining"
+            },
+            {
+              "ref": "Hab.1.2"
+            },
+            {
+              "ref": "Psa.7.17"
+            },
+            {
+              "ref": "Psa.11.5"
+            },
+            {
+              "ref": "Psa.27.12"
+            }
+          ],
+          "id": "wrong",
+          "kin": [
+            "wrong-someone"
+          ]
+        }
+      ],
+      "gender": "m",
+      "greek": [
+        {
+          "lemma": "ἀδικία",
+          "gloss": "wrong, injustice",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "GEN 6:11 word 7"
+            },
+            {
+              "ref": "Rom.1.18"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-chamas"
+      ]
+    },
+    {
+      "lemma": "חָמַס",
+      "bdb": [
+        "h.dj.aa"
+      ],
+      "pos": "verb",
+      "gloss": "wrong, violate",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "do violence, violate",
+          "senses": [
+            {
+              "gloss": "wrong a person or violate what is sacred",
+              "definition": "Jeremiah commands the king to rescue the robbed and to do no violence to the foreigner, orphan or widow. Ezekiel accuses priests of violating the law by profaning holy things.",
+              "evidence": [
+                {
+                  "ref": "Jer.22.3",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Ezk.22.26"
+                },
+                {
+                  "ref": "Pro.8.36"
+                }
+              ],
+              "id": "wrong-someone",
+              "kin": [
+                "wrong"
+              ],
+              "cognate_ids": [
+                "arc-chamas"
+              ]
+            },
+            {
+              "id": "strip-off-prematurely",
+              "gloss": "strip off prematurely",
+              "definition": "The image is of a vine losing its unripe grapes and an olive tree shedding its blossom. The exact force of the verb in this comparison is uncertain.",
+              "evidence": [
+                {
+                  "ref": "Job.15.33",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "suffer violence, be exposed",
+          "senses": [
+            {
+              "id": "suffer-violence-be-exposed",
+              "gloss": "suffer violence, be exposed",
+              "definition": "Jerusalem is pictured as a woman whose skirts are lifted and whose heels are subjected to violent treatment.",
+              "evidence": [
+                {
+                  "ref": "Jer.13.22",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "תַּחְמָס",
+      "bdb": [
+        "h.dj.ac"
+      ],
+      "pos": "noun",
+      "gloss": "a forbidden bird",
+      "senses": [
+        {
+          "id": "a-forbidden-bird",
+          "gloss": "a forbidden bird",
+          "definition": "Israel is forbidden to eat this bird, named between the ostrich and the gull in both lists. The lists give no identifying features.",
+          "evidence": [
+            {
+              "ref": "Lev.11.16",
+              "role": "defining"
+            },
+            {
+              "ref": "Deu.14.15"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "summary": "The bird’s species and the reason for its name are uncertain."
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-chamas",
+      "lang": "arc",
+      "form": "חֲמַס",
+      "translit": "ḥămas",
+      "gloss": "do violence, constrain oneself",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. חֲמַס, Targum Sheni Esther 5:10"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The unclean bird is attested only in the parallel lists. Its name gives too little evidence to identify its habits or even its species. The Jewish Aramaic verb attests the violence sense."
+}

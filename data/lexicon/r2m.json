@@ -1,0 +1,112 @@
+{
+  "id": "r2m",
+  "root": "ראמ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "psalms-21-30"
+  ],
+  "gloss": "wild ox, rise",
+  "summary": "The wild ox represents untamed strength; the verb rises.",
+  "words": [
+    {
+      "lemma": "רְאֵם",
+      "bdb": [
+        "t.ac.ab"
+      ],
+      "pos": "noun",
+      "gloss": "wild ox",
+      "senses": [
+        {
+          "id": "wild-ox",
+          "gloss": "wild ox",
+          "definition": "The psalmist asks rescue from the horns of the wild oxen.",
+          "evidence": [
+            {
+              "ref": "Psa.22.22",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.29.6"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "akk-rimu"
+      ]
+    },
+    {
+      "lemma": "רָאַם",
+      "bdb": [
+        "t.ac.aa"
+      ],
+      "pos": "verb",
+      "gloss": "rise",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "rise",
+          "senses": [
+            {
+              "id": "rise",
+              "gloss": "rise",
+              "definition": "A form of the root denotes rising.",
+              "evidence": [
+                {
+                  "ref": "Psa.22.22",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "רָאמוֹת",
+      "bdb": [
+        "t.ac.ad"
+      ],
+      "pos": "noun",
+      "gloss": "coral or another valuable commodity",
+      "senses": [
+        {
+          "id": "coral-or-another-valuable",
+          "gloss": "coral or another valuable commodity",
+          "definition": "A costly trading good appears among the wares of Tyre and among treasures that cannot purchase wisdom. The texts leave its precise identity uncertain.",
+          "evidence": [
+            {
+              "ref": "Ezk.27.16",
+              "role": "defining"
+            },
+            {
+              "ref": "Job.28.18"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-rimu",
+      "lang": "akk",
+      "form": "rīmu",
+      "translit": "rīmu",
+      "gloss": "wild bull",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000377 rʾm[bull]N; AKK010007 rīmu[wild bull]N"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "Job 39 contrasts the wild ox with an animal that can be kept at the crib or yoked for farm work. The valuable commodity rāʾmôt has no evident semantic connection to the animal."
+}

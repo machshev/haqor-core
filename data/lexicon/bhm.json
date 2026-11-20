@@ -1,0 +1,777 @@
+{
+  "id": "bhm",
+  "root": "בהמ",
+  "status": "draft",
+  "updated": "2026-11-18",
+  "tags": [
+    "animals",
+    "livestock",
+    "creation",
+    "flood",
+    "mortality",
+    "man-and-beast"
+  ],
+  "gloss": "beast, animal; livestock, cattle; Behemoth",
+  "summary": "The beast: the four-footed animal of the land, set apart from man, the birds, the creeping things and the fish. Most often it is the tame beast kept by man (livestock, cattle, the beast he rides or loads), made on the sixth day beside the wild “living thing of the earth” (Gen 1:24–25); with “of the field”, “of the earth” or “of the forest” it is the wild beast that eats carcasses. Set against man (“from man to beast”) it is the creature without understanding: a man who does not understand “is like the beasts that perish” (Psa 49:21), and man and beast have one breath and one end (Ecc 3:19). Arabic bahīma “beast, any animal that does not discriminate” is the same word; Arabic abham “without speech” and Ge'ez “be dumb” may show the root's sense, the dumb beast. Behemoth, the great beast of Job 40, is its plural used as a name.",
+  "words": [
+    {
+      "lemma": "בְּהֵמָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "beast, animal; livestock, cattle",
+      "bdb": [
+        "b.al.ab"
+      ],
+      "cognate_ids": [
+        "ar-bahima",
+        "uga-bhmt"
+      ],
+      "summary": "About 190 times, mostly singular as a collective (“the beast” for all the beasts), with the plural בְּהֵמוֹת in poetry. Its fixed partner is אָדָם: “man and beast”, “from man to beast”, the whole of the creatures that breathe on the land.",
+      "senses": [
+        {
+          "id": "livestock",
+          "gloss": "livestock, cattle; tame beast",
+          "definition": "The beasts a man owns and keeps, his herds and flocks, set apart from the wild beasts: offered in sacrifice, given the sabbath rest, counted as wealth and taken as spoil.",
+          "cognate_ids": [
+            "ar-bahm"
+          ],
+          "evidence": [
+            {
+              "ref": "Gen.1.25",
+              "role": "defining",
+              "note": "God made “the living thing of the earth (חַיַּת הָאָרֶץ) after its kind, and הַבְּהֵמָה after its kind, and every creeping thing”: the beast set beside, and apart from, the wild animal."
+            },
+            {
+              "ref": "Gen.1.24"
+            },
+            {
+              "ref": "Gen.2.20",
+              "note": "Adam named “all the beast, and the bird of the heavens, and every living thing of the field (חַיַּת הַשָּׂדֶה)”."
+            },
+            {
+              "ref": "Lev.1.2",
+              "role": "defining",
+              "note": "“When a man offers an offering to Yahweh, מִן־הַבְּהֵמָה, from the herd and from the flock, you shall offer it”: the beast is the herd and flock."
+            },
+            {
+              "ref": "Jon.3.7",
+              "role": "defining",
+              "note": "“Let man and beast, the herd and the flock (הַבָּקָר וְהַצֹּאן), taste nothing.”"
+            },
+            {
+              "ref": "Gen.34.23",
+              "role": "defining",
+              "note": "“Their livestock (מִקְנֵהֶם), their property and all their beasts (בְּהֶמְתָּם), will they not be ours?”"
+            },
+            {
+              "ref": "Exo.20.10",
+              "note": "The sabbath: “you shall not do any work, you, your son … וּבְהֶמְתֶּךָ”; also Deu 5:14."
+            },
+            {
+              "ref": "Deu.5.14"
+            },
+            {
+              "ref": "Exo.13.15",
+              "note": "Yahweh killed every firstborn in Egypt “from the firstborn of man to the firstborn of beast”, so the firstborn of beast is offered to him."
+            },
+            {
+              "ref": "Lev.27.9",
+              "to": "Lev.27.11",
+              "note": "A beast vowed to Yahweh, clean or unclean, is not to be exchanged."
+            },
+            {
+              "ref": "Num.31.9",
+              "note": "Taken as spoil with the flocks and goods of Midian."
+            },
+            {
+              "ref": "Deu.20.14"
+            },
+            {
+              "ref": "Psa.50.10",
+              "note": "“Every living thing of the forest (חַיְתוֹ־יָעַר) is mine, the בְּהֵמוֹת on a thousand hills.”"
+            },
+            {
+              "ref": "Jon.4.11",
+              "note": "Nineveh, with its people “and much beast (וּבְהֵמָה רַבָּה)”."
+            },
+            {
+              "ref": "Pro.12.10",
+              "note": "“The righteous knows the soul (נֶפֶשׁ) of his beast.”"
+            },
+            {
+              "ref": "Psa.104.14",
+              "note": "Grass made to grow for the beast."
+            }
+          ],
+          "senses": [
+            {
+              "id": "beast-of-burden",
+              "gloss": "beast ridden or loaded",
+              "definition": "The single animal a man rides or loads, a horse, mule or ass.",
+              "evidence": [
+                {
+                  "ref": "Neh.2.12",
+                  "role": "defining",
+                  "note": "“There was no beast with me except the beast that I rode on (אֲשֶׁר אֲנִי רֹכֵב בָּהּ).”"
+                },
+                {
+                  "ref": "Neh.2.14",
+                  "note": "“There was no place for the beast that was under me to pass.”"
+                },
+                {
+                  "ref": "Isa.46.1",
+                  "role": "defining",
+                  "note": "Bel and Nebo: “their idols are on the beast and on the cattle; the things you carried are loaded, a burden to the weary beast.”"
+                },
+                {
+                  "ref": "1Ki.18.5",
+                  "note": "Ahab seeks grass to keep the horses and mules alive, “so that we do not cut off any of the beasts”."
+                },
+                {
+                  "ref": "2Ki.3.9",
+                  "note": "No water “for the camp and for the beasts that were at their feet”."
+                },
+                {
+                  "ref": "Isa.30.6",
+                  "note": "“The burden of the beasts of the Negev”: asses and camels carrying riches."
+                },
+                {
+                  "ref": "Ezr.1.6",
+                  "note": "Silver, gold, goods and beasts given to the returning exiles."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "beast-animal",
+          "gloss": "beast, four-footed animal",
+          "definition": "Any four-footed animal of the land, tame or wild, as one of the kinds of living things, set beside the birds, the creeping things and the fish, and above all against man.",
+          "evidence": [
+            {
+              "ref": "Lev.11.2",
+              "role": "defining",
+              "note": "“This is the living thing that you may eat, of all the beast that is on the earth”: the beast is the kind, and clean animals are found among it."
+            },
+            {
+              "ref": "Deu.14.6",
+              "role": "defining",
+              "note": "“Every beast that parts the hoof … and chews the cud among the beast, that you may eat”, the list including the deer, gazelle and wild goat (Deu 14:5)."
+            },
+            {
+              "ref": "Deu.14.4"
+            },
+            {
+              "ref": "1Ki.5.13",
+              "role": "defining",
+              "note": "Solomon “spoke of the beast, and of the bird, and of the creeping thing, and of the fish”: the four kinds."
+            },
+            {
+              "ref": "Gen.6.7",
+              "role": "defining",
+              "note": "“I will wipe out man … from man to beast, to creeping thing, and to the bird of the heavens.”"
+            },
+            {
+              "ref": "Gen.7.2",
+              "note": "“Of every clean beast take seven pairs … and of the beast that is not clean two.”"
+            },
+            {
+              "ref": "Gen.7.21",
+              "to": "Gen.7.23"
+            },
+            {
+              "ref": "Gen.9.10"
+            },
+            {
+              "ref": "Exo.9.25",
+              "role": "defining",
+              "note": "The hail struck “all that was in the field, from man to beast”."
+            },
+            {
+              "ref": "Exo.12.12"
+            },
+            {
+              "ref": "Lev.18.23",
+              "note": "The law against lying with any beast; also Lev 20:15–16."
+            },
+            {
+              "ref": "Jer.31.27",
+              "note": "“I will sow the house of Israel and the house of Judah with the seed of man and the seed of beast.”"
+            },
+            {
+              "ref": "Ezk.14.13",
+              "note": "“I will cut off from it man and beast.”"
+            },
+            {
+              "ref": "Psa.36.7",
+              "note": "“Man and beast you save, Yahweh.”"
+            },
+            {
+              "ref": "Pro.30.30",
+              "note": "“The lion, mightiest among the beast.”"
+            },
+            {
+              "ref": "Jol.1.18",
+              "note": "“How the beast groans! The herds of cattle are perplexed.”"
+            },
+            {
+              "ref": "Act.10.12",
+              "note": "Peter's vision of “all the four-footed animals (τετράποδα) of the earth and the wild beasts and the creeping things and the birds”: the beasts of Lev 11, clean and unclean together."
+            },
+            {
+              "ref": "1Co.15.39",
+              "role": "defining",
+              "note": "“One flesh of men, another flesh of beasts (κτηνῶν), another of fish, another of birds”: the kinds of Gen 1, in the Septuagint's word for בְּהֵמָה."
+            }
+          ]
+        },
+        {
+          "id": "wild-beast",
+          "gloss": "wild beast (of the field, of the earth)",
+          "definition": "With “of the field”, “of the earth” or “of the forest”, or in judgment: the wild beasts that tear and eat the unburied dead.",
+          "evidence": [
+            {
+              "ref": "1Sa.17.44",
+              "role": "defining",
+              "note": "Goliath: “I will give your flesh to the bird of the heavens and to the beast of the field (וּלְבֶהֱמַת הַשָּׂדֶה).”"
+            },
+            {
+              "ref": "Deu.28.26",
+              "role": "defining",
+              "note": "“Your carcass shall be food for every bird of the heavens and for the beast of the earth, and none shall frighten them away.”"
+            },
+            {
+              "ref": "Mic.5.7",
+              "role": "defining",
+              "note": "The remnant of Jacob “like a lion among the beasts of the forest (בְּבַהֲמוֹת יַעַר) … which treads down and tears”."
+            },
+            {
+              "ref": "Deu.32.24",
+              "note": "“The tooth of beasts (שֶׁן־בְּהֵמוֹת) I will send among them.”"
+            },
+            {
+              "ref": "Jer.7.33"
+            },
+            {
+              "ref": "Jer.15.3",
+              "note": "Four kinds of destroyers: the sword, the dogs, the birds, “and the beast of the earth to devour and destroy”."
+            },
+            {
+              "ref": "Isa.18.6"
+            },
+            {
+              "ref": "Hab.2.17",
+              "note": "“The destruction of the beasts”, set beside the violence done to Lebanon."
+            },
+            {
+              "ref": "Jol.1.20",
+              "note": "“The beasts of the field (בַּהֲמוֹת שָׂדֶה) cry to you, for the streams are dried up.”"
+            },
+            {
+              "ref": "Psa.8.8",
+              "note": "Under man's dominion: “flocks and herds, all of them, and also the beasts of the field (בַּהֲמוֹת שָׂדָי).”"
+            }
+          ]
+        },
+        {
+          "id": "brutish",
+          "gloss": "beast, brute (of man without understanding)",
+          "definition": "A man likened to a beast: without knowledge or understanding, and like it in his death.",
+          "cognate_ids": [
+            "ar-abham",
+            "gez-bhm"
+          ],
+          "evidence": [
+            {
+              "ref": "Psa.73.22",
+              "role": "defining",
+              "note": "“I was brutish (בַעַר) and did not know; I was בְּהֵמוֹת with you.”"
+            },
+            {
+              "ref": "Job.18.3",
+              "role": "defining",
+              "note": "“Why are we counted as the beast, stupid in your eyes?”"
+            },
+            {
+              "ref": "Psa.49.21",
+              "role": "defining",
+              "note": "“A man in honour who does not understand (וְלֹא יָבִין) is like the beasts that perish.”"
+            },
+            {
+              "ref": "Psa.49.13",
+              "note": "The same refrain: “a man in honour does not abide; he is like the beasts that perish.”"
+            },
+            {
+              "ref": "Job.35.11",
+              "role": "defining",
+              "note": "God “teaches us more than the beasts of the earth, and makes us wiser than the bird of the heavens”."
+            },
+            {
+              "ref": "Job.12.7",
+              "note": "Yet “ask the beasts, and they will teach you”: what they show of the hand of Yahweh (Job 12:9)."
+            },
+            {
+              "ref": "Ecc.3.18",
+              "note": "God tests the sons of man “to see that they themselves are beast”."
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "κτῆνος",
+          "gloss": "beast, domestic animal; beast of burden",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "κτῆνος renders בְּהֵמָה ×140 (Gen.1.25; Lev.1.2; Exo.20.10 κτῆνός; Neh.2.14 κτήνει)"
+            },
+            {
+              "ref": "1Co.15.39",
+              "role": "defining",
+              "note": "“Another flesh of beasts (κτηνῶν)”, beside men, fish and birds."
+            },
+            {
+              "ref": "Luk.10.34",
+              "note": "The Samaritan set the wounded man “on his own beast (κτῆνος)”: the beast ridden, as Neh 2:12."
+            },
+            {
+              "ref": "Act.23.24",
+              "note": "“Provide beasts (κτήνη) to set Paul on.”"
+            },
+            {
+              "ref": "Rev.18.13",
+              "note": "Among Babylon's merchandise: “beasts (κτήνη) and sheep and horses”."
+            }
+          ]
+        },
+        {
+          "lemma": "τετράπους",
+          "gloss": "four-footed (animal)",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Gen.1.24; Exo.9.9; Lev.7.21; Lev.27.27; Job.12.7; Job.18.3; Job.35.11; Isa.30.6, בְּהֵמָה → τετράπους; Lev.18.23; Lev.20.15 → τετράπουν, τετράποδι"
+            },
+            {
+              "ref": "Act.10.12",
+              "note": "“All the four-footed animals (τετράποδα) of the earth”, with the creeping things and birds."
+            },
+            {
+              "ref": "Act.11.6"
+            },
+            {
+              "ref": "Rom.1.23",
+              "note": "Men exchanged the glory of God “for an image like corruptible man and birds and four-footed beasts (τετραπόδων) and creeping things”: the kinds of Gen 1:24–26."
+            }
+          ]
+        },
+        {
+          "lemma": "θηρίον",
+          "gloss": "wild beast",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Deu.28.26; Deu.32.24; Isa.18.6; Jer.7.33; Jer.15.3; Jer.19.7; Jer.34.20; Hab.2.17, בֶּהֱמַת / בְּהֵמוֹת → θηρίον"
+            },
+            {
+              "ref": "Mrk.1.13",
+              "note": "In the wilderness “he was with the wild beasts (θηρίων)”."
+            },
+            {
+              "ref": "Jas.3.7",
+              "note": "“Every kind of beasts (θηρίων) and of birds, of creeping things and of things in the sea, is tamed by mankind”: the dominion of Gen 1:26."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "עוֹף",
+            "note": "The bird of the heavens, the beast's companion in lists and in parallelism.",
+            "evidence": [
+              {
+                "ref": "Job.12.7"
+              },
+              {
+                "ref": "Job.35.11"
+              },
+              {
+                "ref": "Jer.12.4"
+              }
+            ]
+          },
+          {
+            "lemma": "חַיָּה",
+            "note": "The (wild) living thing: set beside the beast, and in poetry the wild beast is called by both.",
+            "evidence": [
+              {
+                "ref": "Gen.1.25"
+              },
+              {
+                "ref": "Psa.50.10"
+              },
+              {
+                "ref": "Isa.46.1"
+              }
+            ]
+          },
+          {
+            "lemma": "בַּעַר",
+            "note": "Brutish, without knowledge: “I was בַעַר … I was בְּהֵמוֹת with you.”",
+            "evidence": [
+              {
+                "ref": "Psa.73.22"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "אָדָם",
+            "note": "Man: the beast is the rest of the land's breathing creatures, and man has understanding the beast lacks, though in death “man has no advantage over the beast”.",
+            "evidence": [
+              {
+                "ref": "Exo.9.25"
+              },
+              {
+                "ref": "Ecc.3.19"
+              },
+              {
+                "ref": "Job.35.11"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "מֵאָדָם וְעַד־בְּהֵמָה",
+            "gloss": "from man to beast: every breathing creature, none spared",
+            "evidence": [
+              {
+                "ref": "Gen.6.7"
+              },
+              {
+                "ref": "Exo.9.25"
+              },
+              {
+                "ref": "Exo.12.12"
+              },
+              {
+                "ref": "Jer.50.3"
+              }
+            ]
+          },
+          {
+            "phrase": "בֶּהֱמַת הַשָּׂדֶה / בֶּהֱמַת הָאָרֶץ",
+            "gloss": "the beast of the field, of the earth: the wild beast",
+            "evidence": [
+              {
+                "ref": "1Sa.17.44"
+              },
+              {
+                "ref": "Deu.28.26"
+              },
+              {
+                "ref": "Jol.1.20"
+              }
+            ]
+          },
+          {
+            "phrase": "נִמְשַׁל כַּבְּהֵמוֹת נִדְמוּ",
+            "gloss": "he is like the beasts that perish",
+            "evidence": [
+              {
+                "ref": "Psa.49.13"
+              },
+              {
+                "ref": "Psa.49.21"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "בְּהֵמוֹת",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "Behemoth, the great beast",
+      "bdb": [
+        "b.al.ac"
+      ],
+      "cognate_ids": [
+        "ar-bahima",
+        "syc-behmoth",
+        "gez-behemoth"
+      ],
+      "summary": "Once as a name (Job 40:15–24): the plural of בְּהֵמָה with singular verbs, “the beast” above all beasts. The text describes a real creature God made, not one now known for certain: it eats grass like an ox, its strength is in its loins, its tail bends like a cedar, it is “the first of the ways of God”. The other two tokens BDB files here by spelling (Jer 12:4; Job 12:7) are the plural of בְּהֵמָה.",
+      "senses": [
+        {
+          "id": "behemoth",
+          "gloss": "Behemoth, the great beast",
+          "definition": "A great grass-eating beast of the river and marsh, shown to Job as the chief of God's works, made with man, which no man can take.",
+          "kin": [
+            "beast-animal"
+          ],
+          "evidence": [
+            {
+              "ref": "Job.40.15",
+              "role": "defining",
+              "note": "“Behold now בְּהֵמוֹת, which I made with you (עִמָּךְ); he eats grass like an ox.”"
+            },
+            {
+              "ref": "Job.40.16",
+              "to": "Job.40.18",
+              "role": "defining",
+              "note": "His strength in his loins; “he bends his tail like a cedar”; bones like tubes of bronze."
+            },
+            {
+              "ref": "Job.40.19",
+              "role": "defining",
+              "note": "“He is the first of the ways of God; he who made him brings near his sword.”"
+            },
+            {
+              "ref": "Job.40.21",
+              "to": "Job.40.24",
+              "note": "He lies under the lotus in the reed and marsh; a river rushes and he is not alarmed; can any take him by his eyes?"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "θηρίον",
+          "gloss": "wild beast",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Job.40.15, בְהֵמוֹת → θηρία"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-bahima",
+      "lang": "ar",
+      "form": "بَهِيمَةٌ",
+      "translit": "bahīma",
+      "gloss": "beast, brute; any quadruped, of land or sea; any animal that does not discriminate",
+      "relation": "cognate",
+      "note": "The same word as בְּהֵמָה, with the same breadth: the four-footed beast, and the animal without discernment, as Psa 49:21 and Job 35:11 set the beast against man's understanding.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 269, art. بهم, بَهِيمَةٌ (n3455)",
+          "note": "“[A beast; a brute;] any quadruped, even if in the water … and any animal that does not discriminate: pl. بَهَائِمُ.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-bahm",
+      "lang": "ar",
+      "form": "بَهْمٌ، بَهْمَةٌ",
+      "translit": "bahm, bahma",
+      "gloss": "lambs, kids; the young of sheep, goats and cattle",
+      "relation": "cognate",
+      "note": "The young of the flock and herd, and the verb بَهَّمَ “separate the lambs from their mothers and pasture them alone”: the root names the kept beast, as the Hebrew's livestock.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 268, art. بهم, بَهْمٌ (n3448)",
+          "note": "“بَهْمَةٌ signifies a lamb … or … the young one of the sheep, and of the goat, and of an animal of the bovine kind.”"
+        },
+        {
+          "source": "lane",
+          "locator": "Book I, p. 268, art. بهم, بهّموا البَهْمِ (n3446)",
+          "note": "“They separated the بهم [lambs, or kids] from their mothers, and pastured them alone.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-abham",
+      "lang": "ar",
+      "form": "أَبْهَمُ، اِسْتَبْهَمَ",
+      "translit": "abham, istabhama",
+      "gloss": "without the faculty of speech (= aʿjam); be tongue-tied; (abhama) close, make obscure",
+      "relation": "possible",
+      "note": "Speechless, closed, obscure: if this is the root's sense, the beast is the dumb creature, without speech or understanding (Psa 73:22; Job 18:3). Whether the sense of speechlessness is the source of the noun or drawn from it is not shown.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 269, art. بهم, أَبْهَمُ (n3458)",
+          "note": "“Also i. q. أَعْجَمُ [app. as meaning destitute of the faculty of speech or articulation, like the beasts].”"
+        },
+        {
+          "source": "lane",
+          "locator": "Book I, p. 268, art. بهم, إِسْتَبْهَمَ",
+          "note": "“Speech was as though it were closed against him; or he was … impeded in his speech, unable to speak, or tongue-tied.”"
+        }
+      ]
+    },
+    {
+      "id": "gez-bhm",
+      "lang": "gez",
+      "form": "ብህመ، በሃም",
+      "translit": "bəhma, baham",
+      "gloss": "be dumb, become mute; (baham) dumb, mute, slow of speech",
+      "relation": "possible",
+      "note": "Ge'ez has the verb and adjective of speechlessness, as Arabic abham, but no noun “beast”; the Ge'ez Bible uses baham for the dumb (Exo 4:11; Mrk 7:37). With Arabic it suggests the root's sense is “dumb”, the beast the dumb creature.",
+      "evidence": [
+        {
+          "source": "dillmann-1865",
+          "locator": "col. 485, ብህመ",
+          "note": "“obmutuit … mutum esse, obmutescere”; በሃም “mutus, elinguis, difficulter loquens”, citing Ex. 6, 12; Ps. 37, 14; Marc. 7, 37; Luc. 1, 20, 22."
+        }
+      ]
+    },
+    {
+      "id": "uga-bhmt",
+      "lang": "uga",
+      "form": "𐎁𐎅𐎎𐎚",
+      "translit": "bhmt",
+      "gloss": "cattle, livestock",
+      "relation": "cognate",
+      "note": "The same word, with the feminine ending, of kept animals.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Ugaritic 𐎁𐎅𐎎𐎚 (bhmt), noun: cattle, livestock; compares Hebrew בְּהֵמָה"
+        }
+      ]
+    },
+    {
+      "id": "syc-behmoth",
+      "lang": "syc",
+      "form": "ܒܗܡܘܬ",
+      "translit": "behmōṯ",
+      "gloss": "Behemoth",
+      "relation": "loan",
+      "note": "Borrowed from the Hebrew name of Job 40:15.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Classical Syriac ܒܗܡܘܬ (behmōṯ), noun: behemoth; borrowed from Biblical Hebrew בְּהֵמוֹת"
+        }
+      ]
+    },
+    {
+      "id": "gez-behemoth",
+      "lang": "gez",
+      "form": "ብሔሞት",
+      "translit": "bəḥemot",
+      "gloss": "Behemoth",
+      "relation": "loan",
+      "note": "Borrowed from the Hebrew name: the beast of Job 40, in Enoch 60:8 and 4 Ezra.",
+      "evidence": [
+        {
+          "source": "dillmann-1865",
+          "locator": "col. 485, ብሄሞት (ብሔሞት)",
+          "note": "“behemoth i. e. hippopotamus (una e bestiis libri Jobi c. 40 ingentibus …)”, citing Hen. 60, 8 and 4 Ezra"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "mortality",
+      "statement": "The beast and man were both made “living soul” (נֶפֶשׁ חַיָּה, Gen 1:24; 2:7), and the righteous man regards the soul of his beast (Pro 12:10). The Preacher says plainly: “what befalls the sons of man befalls the beast, one thing befalls them: as the one dies so dies the other; they all have one breath (רוּחַ), and man has no advantage over the beast … all go to one place; all are from the dust, and all return to the dust” (Ecc 3:19–20); he asks “who knows” whether man's breath goes upward (Ecc 3:21), and claims no knowledge that it does. Twice the psalm says, “a man in honour who does not understand is like the beasts that perish” (Psa 49:13, 21), and Peter calls the unrighteous “natural brute beasts, made to be taken and destroyed” who “shall utterly perish” (2Pe 2:12). What lifts man above the beast is not an immortal part but understanding that God gives (Job 35:11) and God's promise: “God will redeem my soul from the hand of the grave, for he will take me” (Psa 49:16). From the verses: man by nature dies as the beast dies, and his hope is redemption from the grave, given to those who understand.",
+      "evidence": [
+        {
+          "ref": "Gen.1.24"
+        },
+        {
+          "ref": "Gen.2.7"
+        },
+        {
+          "ref": "Pro.12.10"
+        },
+        {
+          "ref": "Ecc.3.18",
+          "to": "Ecc.3.21"
+        },
+        {
+          "ref": "Psa.49.13"
+        },
+        {
+          "ref": "Psa.49.21"
+        },
+        {
+          "ref": "2Pe.2.12"
+        },
+        {
+          "ref": "Job.35.11"
+        },
+        {
+          "ref": "Psa.49.16"
+        }
+      ]
+    },
+    {
+      "topic": "creation-and-flood",
+      "statement": "On the sixth day God made the beast after its kind, with the wild living thing and the creeping thing, and on the same day made man to rule over them (Gen 1:24–31); he brought every beast to Adam to be named (Gen 2:19–20). Behemoth, the greatest of them, is the beast “which I made with you” (Job 40:15). At the flood God said “I will wipe out … from man to beast” (Gen 6:7), and “all flesh that moved on the earth died, of bird and of beast and of living thing … and every man”; only Noah and those with him in the ark were left (Gen 7:21–23), the clean beasts by sevens and the others by pairs (Gen 7:2). After it God's covenant was “with every living soul that is with you, of bird, of beast and of every living thing of the earth” (Gen 9:9–10). From the verses: the land beasts and man are of one creation, made on one day, and the flood destroyed every beast on the land but those kept in the ark, from which the beasts of the earth now come.",
+      "evidence": [
+        {
+          "ref": "Gen.1.24",
+          "to": "Gen.1.31"
+        },
+        {
+          "ref": "Gen.2.19",
+          "to": "Gen.2.20"
+        },
+        {
+          "ref": "Job.40.15"
+        },
+        {
+          "ref": "Gen.6.7"
+        },
+        {
+          "ref": "Gen.7.2"
+        },
+        {
+          "ref": "Gen.7.21",
+          "to": "Gen.7.23"
+        },
+        {
+          "ref": "Gen.9.9",
+          "to": "Gen.9.10"
+        }
+      ]
+    },
+    {
+      "topic": "god-cares-for-beasts",
+      "statement": "Yahweh gives the beast its food (Psa 147:9; 104:14) and saves man and beast (Psa 36:7); the beasts are his, “the cattle on a thousand hills” (Psa 50:10). His sabbath gave rest to the beast with its master (Exo 20:10; Deu 5:14), and he spared Nineveh for its people “and much beast” (Jon 4:11). “The righteous knows the soul of his beast” (Pro 12:10). From the verses: the care that Yahweh shows his beasts is required of the men to whom he gave them.",
+      "evidence": [
+        {
+          "ref": "Psa.147.9"
+        },
+        {
+          "ref": "Psa.104.14"
+        },
+        {
+          "ref": "Psa.36.7"
+        },
+        {
+          "ref": "Psa.50.10"
+        },
+        {
+          "ref": "Exo.20.10"
+        },
+        {
+          "ref": "Deu.5.14"
+        },
+        {
+          "ref": "Jon.4.11"
+        },
+        {
+          "ref": "Pro.12.10"
+        }
+      ]
+    }
+  ],
+  "note": "No personal names are formed from בהמ (none in TIPNR). No Biblical Aramaic word of the root: Daniel and Ezra use חֵיוָה and בְּעִיר for beasts, and the brief finds no Peshitta root. BDB's b.al.ac (Behemoth, 3 tokens) includes Jer 12:4 and Job 12:7 by spelling; those are the plural of בְּהֵמָה, so lexicon-support overcounts Behemoth's uses by two; only Job 40:15 is the name. Behemoth: the description (grass-eater like an ox, tail bending like a cedar, Job 40:17, lying in reed and marsh) is written in the summary as the text gives it; the common identification with the hippopotamus does not fit the tail, and the reading of a great sauropod-like beast, made on the sixth day with man, is a lead not argued here. Arabic bahīma: Wiktionary records Arthur Jeffery's suggestion that it is borrowed from Hebrew in discussions of dietary law; Lane's native bahm “lambs” and the verb بَهَّمَ make the root native in Arabic either way, so it is recorded as a cognate. The “dumb” sense (Arabic abham, Ge'ez bəhma) is marked possible: whether the beast is named as the speechless creature, or the speechless are named from the beast, is open. Dillmann's column number (485, for ብህመ and ብሄሞት) is read from the OCR's page heads and should be checked against the scan, as should the 4 Ezra reference (OCR garbled). Ugaritic bhmt cited from Wiktionary only; check DULAT s.v. bhmt. Klein's drover בַּהָם and Jastrow's בְּהֵמָה are later Hebrew, not Aramaic cognates, so are not recorded."
+}

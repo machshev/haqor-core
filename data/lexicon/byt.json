@@ -1,0 +1,2056 @@
+{
+  "id": "byt",
+  "created": "2026-11-15",
+  "root": "בית",
+  "status": "draft",
+  "updated": "2026-11-15",
+  "tags": [
+    "house",
+    "family",
+    "temple",
+    "dwelling",
+    "kingdom",
+    "inheritance"
+  ],
+  "gloss": "house; household, family line; the inside",
+  "summary": "בַּיִת is a house: the building a man lives in, and so a king’s palace and the house of God, tabernacle or temple (Deu 22:8; 1Ki 9:1; Jdg 18:31). The same word names those who live in it, the household (Gen 7:1; Jos 24:15), and those who come from it: the father’s house by which Israel was counted, a tribe or the whole people (“house of Israel”), and a king’s line, as when Yahweh tells David, who wished to build him a house, that he will make David a house (Num 1:2; Exo 16:31; 2Sa 7:11). It is also whatever holds a thing, the grave included (Exo 25:27; Job 17:13), and, as מִבַּיִת and בַּיְתָה, the inside as against the outside (Gen 6:14). The Aramaic of Ezra and Daniel and the Peshitta use the word in the same ways, and Aramaic has beside it a verb, “pass the night” (Dan 6:19).",
+  "words": [
+    {
+      "lemma": "בַּיִת",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "house; household, family; inside",
+      "bdb": [
+        "b.bp.aa"
+      ],
+      "summary": "About two thousand times, in every book but a few of the shortest; plural בָּתִּים, construct בֵּית. The token count of its key is swollen by the place names in בֵּית־ (Bethel, Bethlehem), whose first word is spelt the same. Every Semitic language has the word, and has it for the building, the household and the temple alike.",
+      "senses": [
+        {
+          "id": "house",
+          "gloss": "house, dwelling",
+          "definition": "The building a person lives in, with doorposts, doors, roof, walls of stone, timber and plaster; it is built, bought and sold, and stands over against the tent and the open field. Animals have theirs too: the bird’s nest, the hyrax’s rock, the wild ass’s steppe.",
+          "evidence": [
+            {
+              "ref": "Deu.22.8",
+              "role": "defining",
+              "note": "“When you build a new בַּיִת, you shall make a parapet for your roof.”"
+            },
+            {
+              "ref": "Lev.14.45",
+              "role": "defining",
+              "note": "The house is pulled down: its stones, its timbers and all its plaster."
+            },
+            {
+              "ref": "Gen.19.2",
+              "to": "Gen.19.4",
+              "role": "defining",
+              "note": "Lot’s house in Sodom, where the guests lodge and which the men of the city surround."
+            },
+            {
+              "ref": "Gen.33.17",
+              "note": "Jacob built himself a house, and booths for his cattle."
+            },
+            {
+              "ref": "Deu.6.9",
+              "note": "The words written on the doorposts of the house."
+            },
+            {
+              "ref": "Exo.12.22",
+              "note": "No one is to go out of the door of his house until morning."
+            },
+            {
+              "ref": "Lev.25.29",
+              "note": "A dwelling house (בֵּית מוֹשַׁב) in a walled city, sold and redeemed."
+            },
+            {
+              "ref": "Jos.2.15",
+              "note": "Rahab’s house was in the city wall."
+            },
+            {
+              "ref": "Deu.20.5",
+              "note": "The man who has built a new house and not dedicated it goes home from the battle."
+            },
+            {
+              "ref": "Isa.65.21",
+              "note": "“They shall build houses and dwell in them.”"
+            },
+            {
+              "ref": "Psa.84.4",
+              "note": "“The sparrow has found a בַּיִת, and the swallow a nest for herself.”"
+            },
+            {
+              "ref": "Psa.104.17",
+              "note": "The stork: the fir trees are her house."
+            },
+            {
+              "ref": "Pro.30.26",
+              "note": "The hyraxes set their house in the rock."
+            },
+            {
+              "ref": "Job.39.6",
+              "note": "The wild ass, “whose house I made the steppe”."
+            },
+            {
+              "ref": "Mat.7.24",
+              "note": "The Peshitta’s בַּיְתָא: the wise man who built his house on the rock."
+            }
+          ],
+          "cognate_ids": [
+            "akk-bitu",
+            "uga-bt",
+            "phn-bt",
+            "moab-bt",
+            "ar-bayt",
+            "sab-byt",
+            "gez-bet",
+            "arc-bayta"
+          ],
+          "senses": [
+            {
+              "id": "royal-house",
+              "gloss": "king’s house, palace",
+              "definition": "The house of a king: his palace, with its own steward, treasuries and women’s house.",
+              "evidence": [
+                {
+                  "ref": "1Ki.9.1",
+                  "role": "defining",
+                  "note": "Solomon finished building “the house of Yahweh and the house of the king”."
+                },
+                {
+                  "ref": "1Ki.7.1",
+                  "role": "defining",
+                  "note": "Solomon was thirteen years building his own house."
+                },
+                {
+                  "ref": "Gen.12.15",
+                  "note": "Sarai was taken into Pharaoh’s house."
+                },
+                {
+                  "ref": "Est.2.3",
+                  "note": "The house of the women (בֵּית הַנָּשִׁים) in Susa."
+                },
+                {
+                  "ref": "Amo.3.15",
+                  "note": "The winter house and the summer house, and the houses of ivory."
+                }
+              ],
+              "cognate_ids": [
+                "akk-bitu",
+                "moab-bt",
+                "sab-byt"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "house-of-god",
+          "gloss": "house of God: tabernacle, temple",
+          "definition": "The place where God is worshipped and his name dwells: Jacob’s stone at Bethel, the tabernacle at Shiloh, then the house Solomon built and the house built after the exile, called simply “the house”. The houses of other gods are named the same way.",
+          "evidence": [
+            {
+              "ref": "Gen.28.17",
+              "role": "defining",
+              "note": "“This is none other than בֵּית אֱלֹהִים, and this is the gate of heaven”: no building at all, but the place where God appeared."
+            },
+            {
+              "ref": "Gen.28.22",
+              "note": "“This stone, which I have set up as a pillar, shall be God’s house.”"
+            },
+            {
+              "ref": "Jdg.18.31",
+              "role": "defining",
+              "note": "“All the days that the house of God was in Shiloh”: the tabernacle."
+            },
+            {
+              "ref": "Exo.23.19",
+              "note": "The firstfruits brought to “the house of Yahweh your God”, said in the wilderness."
+            },
+            {
+              "ref": "1Sa.1.7",
+              "note": "Hannah went up year by year to the house of Yahweh."
+            },
+            {
+              "ref": "1Ki.6.1",
+              "role": "defining",
+              "note": "In the 480th year after the exodus Solomon “built the house for Yahweh”."
+            },
+            {
+              "ref": "1Ki.8.13",
+              "note": "“I have built you a lofty house, a place for you to dwell in for ever.”"
+            },
+            {
+              "ref": "1Ki.8.27",
+              "role": "defining",
+              "note": "“The heavens and the heavens of heavens cannot contain you; how much less this house that I have built!”"
+            },
+            {
+              "ref": "Isa.56.7",
+              "role": "defining",
+              "note": "“My house shall be called a house of prayer for all the peoples.”"
+            },
+            {
+              "ref": "Mrk.11.17",
+              "note": "Jesus quotes Isa 56:7 of the temple in Jerusalem."
+            },
+            {
+              "ref": "Isa.66.1",
+              "note": "“Heaven is my throne and the earth my footstool: where is the house that you would build for me?”"
+            },
+            {
+              "ref": "Act.7.49",
+              "note": "Stephen quotes Isa 66:1: the Most High does not dwell in what hands have made."
+            },
+            {
+              "ref": "Hag.2.9",
+              "note": "“The latter glory of this house shall be greater than the former.”"
+            },
+            {
+              "ref": "Psa.122.1",
+              "note": "“Let us go to the house of Yahweh.”"
+            },
+            {
+              "ref": "Jdg.9.4",
+              "note": "Silver from the house of Baal-berith."
+            },
+            {
+              "ref": "1Sa.5.2",
+              "note": "The ark brought into the house of Dagon and set beside Dagon."
+            }
+          ],
+          "cognate_ids": [
+            "akk-bitu",
+            "uga-bt",
+            "phn-bt",
+            "ar-bayt",
+            "sab-byt"
+          ]
+        },
+        {
+          "id": "household",
+          "gloss": "household",
+          "definition": "Those who live in a man’s house and are under him: wife, children, servants born in the house or bought. They go where he goes, are plagued or saved with him, and are fed and clothed by the woman of the house.",
+          "evidence": [
+            {
+              "ref": "Gen.7.1",
+              "role": "defining",
+              "note": "“Come, you and all your house, into the ark”: Noah’s wife, sons and sons’ wives."
+            },
+            {
+              "ref": "Gen.17.27",
+              "role": "defining",
+              "note": "“All the men of his house, born in the house and bought with silver from a foreigner, were circumcised with him.”"
+            },
+            {
+              "ref": "Jos.24.15",
+              "role": "defining",
+              "note": "“As for me and my house, we will serve Yahweh.”"
+            },
+            {
+              "ref": "Gen.36.6",
+              "note": "Esau took his wives, sons, daughters and “all the souls of his house”."
+            },
+            {
+              "ref": "Gen.18.19",
+              "note": "Abraham will command “his sons and his house after him”."
+            },
+            {
+              "ref": "Gen.12.17",
+              "note": "Yahweh plagued Pharaoh and his house."
+            },
+            {
+              "ref": "Exo.12.3",
+              "to": "Exo.12.4",
+              "note": "A lamb for a house; “if the house is too small for a lamb”, the neighbour joins it."
+            },
+            {
+              "ref": "Lev.16.6",
+              "note": "Aaron makes a covering for himself and for his house."
+            },
+            {
+              "ref": "Pro.31.15",
+              "note": "She gives food to her house; verse 21, “all her house is clothed in scarlet”."
+            },
+            {
+              "ref": "Gen.45.18",
+              "note": "“Take your father and your houses and come to me.”"
+            },
+            {
+              "ref": "Act.16.31",
+              "note": "The Peshitta’s בַּיְתָא: “you shall live, you and your house.”"
+            }
+          ],
+          "cognate_ids": [
+            "akk-bitu",
+            "ar-bayt",
+            "sab-byt"
+          ]
+        },
+        {
+          "id": "fathers-house",
+          "gloss": "father’s house, family line; tribe, people",
+          "definition": "Those descended from one father, reckoned as his house: the family a person belongs to by birth, the division of a clan (tribe, clan, house, man), a tribe, and the whole nation as “house of Jacob” or “house of Israel”.",
+          "evidence": [
+            {
+              "ref": "Gen.12.1",
+              "role": "defining",
+              "note": "“Go from your land, from your kindred and from your father’s house”: the family Abram was born into."
+            },
+            {
+              "ref": "Jos.7.14",
+              "role": "defining",
+              "note": "The lot narrows from tribe to clan, from clan to houses, and from the house to its men."
+            },
+            {
+              "ref": "Num.1.2",
+              "role": "defining",
+              "note": "Israel numbered “by their clans, by the house of their fathers”."
+            },
+            {
+              "ref": "Gen.24.38",
+              "note": "“To my father’s house and to my clan.”"
+            },
+            {
+              "ref": "Gen.46.27",
+              "note": "“All the souls of the house of Jacob that came into Egypt were seventy.”"
+            },
+            {
+              "ref": "Exo.2.1",
+              "note": "A man of the house of Levi: the tribe."
+            },
+            {
+              "ref": "Exo.19.3",
+              "note": "“House of Jacob” in parallel with “sons of Israel”."
+            },
+            {
+              "ref": "Exo.16.31",
+              "note": "“The house of Israel called its name manna.”"
+            },
+            {
+              "ref": "2Sa.2.4",
+              "note": "David anointed king over the house of Judah."
+            },
+            {
+              "ref": "Jer.35.2",
+              "note": "The house of the Rechabites: a clan that lived in tents (verse 7)."
+            },
+            {
+              "ref": "Jer.31.31",
+              "note": "A new covenant with the house of Israel and the house of Judah; quoted in Heb 8:8."
+            },
+            {
+              "ref": "Ezk.37.11",
+              "note": "“These bones are the whole house of Israel.”"
+            },
+            {
+              "ref": "Ezk.2.5",
+              "note": "“They are a house of rebellion (בֵּית מְרִי).”"
+            },
+            {
+              "ref": "Act.2.36",
+              "note": "“Let all the house of Israel know”: the Peshitta’s בֵּית אִיסְרָיֵל."
+            }
+          ],
+          "cognate_ids": [
+            "ar-bayt",
+            "sab-byt"
+          ]
+        },
+        {
+          "id": "dynasty",
+          "gloss": "royal or priestly line, dynasty",
+          "definition": "A ruler’s descendants reigning after him, or a priest’s serving after him: a house that God “makes” or “builds” for a man, and that stands firm or is cut off.",
+          "evidence": [
+            {
+              "ref": "2Sa.7.11",
+              "role": "defining",
+              "note": "David would build Yahweh a house (verse 5); “Yahweh declares to you that Yahweh will make you a house”: his seed after him (verse 12)."
+            },
+            {
+              "ref": "2Sa.7.16",
+              "role": "defining",
+              "note": "“Your house and your kingdom shall be made sure for ever before you; your throne shall be established for ever.”"
+            },
+            {
+              "ref": "1Sa.2.35",
+              "role": "defining",
+              "note": "A faithful priest: “I will build him a sure house.”"
+            },
+            {
+              "ref": "2Sa.3.1",
+              "note": "Long war between the house of Saul and the house of David."
+            },
+            {
+              "ref": "1Ki.12.19",
+              "note": "Israel rebelled against the house of David."
+            },
+            {
+              "ref": "1Ki.11.38",
+              "note": "To Jeroboam: “I will build you a sure house, as I built for David.”"
+            },
+            {
+              "ref": "1Ki.14.10",
+              "note": "Evil on the house of Jeroboam: every male cut off."
+            },
+            {
+              "ref": "Hos.1.4",
+              "note": "The blood of Jezreel visited on the house of Jehu."
+            },
+            {
+              "ref": "Isa.7.13",
+              "note": "“Hear now, house of David”, said to Ahaz and his court."
+            },
+            {
+              "ref": "1Ki.2.24",
+              "note": "Solomon: Yahweh “has made me a house, as he said”."
+            },
+            {
+              "ref": "Luk.1.69",
+              "note": "“A horn of salvation in the house of David his servant.”"
+            }
+          ],
+          "cognate_ids": [
+            "phn-bt",
+            "moab-bt",
+            "ar-bayt"
+          ]
+        },
+        {
+          "id": "estate",
+          "gloss": "house and goods, estate",
+          "definition": "A man’s house with all that is in it and belongs to it: what a steward is set over, an heir inherits, and a king can give away.",
+          "evidence": [
+            {
+              "ref": "Gen.39.4",
+              "to": "Gen.39.5",
+              "role": "defining",
+              "note": "Potiphar set Joseph “over his house, and all that he had he gave into his hand”; the blessing was on all he had “in the house and in the field”."
+            },
+            {
+              "ref": "Est.8.1",
+              "role": "defining",
+              "note": "The king gave Esther “the house of Haman”: his estate, which she set Mordecai over (verse 2)."
+            },
+            {
+              "ref": "Gen.15.2",
+              "to": "Gen.15.3",
+              "note": "The one who will get Abram’s house; “one born in my house is my heir”."
+            },
+            {
+              "ref": "Num.22.18",
+              "note": "“If Balak gave me his house full of silver and gold.”"
+            },
+            {
+              "ref": "1Ki.13.8",
+              "note": "“If you gave me half your house.”"
+            },
+            {
+              "ref": "Exo.20.17",
+              "note": "“You shall not covet your neighbour’s house”, then his wife, servants, ox and ass, and all that is his."
+            },
+            {
+              "ref": "2Ki.20.1",
+              "note": "“Give charge concerning your house, for you shall die.”"
+            },
+            {
+              "ref": "Mic.2.2",
+              "note": "“A man and his house” beside “a man and his inheritance”."
+            }
+          ],
+          "cognate_ids": [
+            "akk-bitu"
+          ]
+        },
+        {
+          "id": "holder",
+          "gloss": "what holds a thing: holder, place; the grave",
+          "definition": "That in which something is kept or lies: rings as “houses” for carrying poles, a perfume box, a spider’s web, a measure of ground that takes so much seed, the meeting place of paths. So also the body of clay in which a man dwells, and the grave as the house to which he goes.",
+          "evidence": [
+            {
+              "ref": "Exo.25.27",
+              "role": "defining",
+              "note": "The rings are “houses for the poles (בָּתִּים לְבַדִּים)”; so Exo 26:29 of the bars."
+            },
+            {
+              "ref": "Exo.26.29"
+            },
+            {
+              "ref": "1Ki.18.32",
+              "role": "defining",
+              "note": "A trench “like the house of two seahs of seed”: as much ground as two seahs would sow."
+            },
+            {
+              "ref": "Isa.3.20",
+              "note": "בָּתֵּי הַנֶּפֶשׁ among the women’s finery: “houses of the soul (breath)”, scent boxes."
+            },
+            {
+              "ref": "Job.8.14",
+              "note": "The godless man’s trust is “a spider’s house”."
+            },
+            {
+              "ref": "Pro.8.2",
+              "note": "Wisdom stands at “the house of the paths”, where the ways meet."
+            },
+            {
+              "ref": "Job.4.19",
+              "note": "Men are “those who dwell in houses of clay, whose foundation is in the dust”."
+            },
+            {
+              "ref": "Job.17.13",
+              "role": "defining",
+              "note": "“If I wait for the grave (שְׁאוֹל) as my house, and spread my couch in the darkness.”"
+            },
+            {
+              "ref": "Job.30.23",
+              "role": "defining",
+              "note": "“You will bring me to death, and to the house appointed for all the living.”"
+            },
+            {
+              "ref": "Ecc.12.5",
+              "note": "“Man goes to his everlasting house (בֵּית עוֹלָמוֹ), and the mourners go about the street.”"
+            },
+            {
+              "ref": "Isa.14.18",
+              "note": "The kings of the nations “lie in glory, each in his house”: his tomb, as the next verse’s “cast out from your grave” shows."
+            },
+            {
+              "ref": "Neh.2.3",
+              "note": "Jerusalem, “the house of my fathers’ graves”."
+            }
+          ],
+          "cognate_ids": [
+            "akk-bitu",
+            "ar-bayt",
+            "phn-bt"
+          ]
+        },
+        {
+          "id": "inside",
+          "gloss": "inside, within (מִבַּיִת, בַּיְתָה, מִבֵּית לְ)",
+          "definition": "As an adverb and preposition, the inner side of a thing as against its outside (חוּץ): מִבַּיִת “on the inside”, בַּיְתָה “inwards”, מִבֵּית לְ “within”. The ark and the chest of the testimony, which no one lives in, have a בַּיִת in this sense.",
+          "evidence": [
+            {
+              "ref": "Gen.6.14",
+              "role": "defining",
+              "note": "The ark is covered with pitch “מִבַּיִת וּמִחוּץ, inside and outside”."
+            },
+            {
+              "ref": "Exo.25.11",
+              "role": "defining",
+              "note": "The chest overlaid with gold inside and outside."
+            },
+            {
+              "ref": "Exo.26.33",
+              "role": "defining",
+              "note": "The chest of the testimony brought “מִבֵּית לַפָּרֹכֶת, within the veil”."
+            },
+            {
+              "ref": "Lev.16.2",
+              "note": "Aaron is not to come at all times into the holy place within the veil; so verse 15."
+            },
+            {
+              "ref": "Num.18.7"
+            },
+            {
+              "ref": "1Ki.6.15",
+              "note": "The walls of the house lined “מִבַּיְתָה, on the inside”, with cedar."
+            },
+            {
+              "ref": "1Ki.7.25",
+              "role": "defining",
+              "note": "The twelve oxen under the sea: “all their hinder parts were בָּיְתָה, inwards”."
+            },
+            {
+              "ref": "Ezk.1.27",
+              "note": "The look of fire “בֵּית־לָהּ סָבִיב, within it all round”."
+            }
+          ],
+          "cognate_ids": [
+            "akk-bitanu"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "οἶκος",
+          "gloss": "house; household; family line",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Isa.56.7, בֵיתִי → οἶκός, בֵּית־ → οἶκος; Isa.66.1, בַיִת → οἶκον; Jer.31.31 (LXX 38:31), בֵּית → οἴκῳ; Psa.69.10 (LXX 68:10), בֵּיתְךָ → οἴκου; Num.12.7, בֵּיתִי → οἴκῳ; 2Sa.7.11, בַיִת → οἶκον; Gen.7.1, בֵּיתְךָ → οἶκός; οἶκος renders בַּיִת ×1544"
+            },
+            {
+              "ref": "Mrk.11.17",
+              "role": "defining",
+              "note": "Isa 56:7 quoted: “my οἶκος shall be called a house of prayer for all the nations”."
+            },
+            {
+              "ref": "Act.7.49",
+              "role": "defining",
+              "note": "Isa 66:1 quoted: “what οἶκος will you build me?”"
+            },
+            {
+              "ref": "Heb.8.8",
+              "role": "defining",
+              "note": "Jer 31:31 quoted: a new covenant with the οἶκος of Israel and the οἶκος of Judah."
+            },
+            {
+              "ref": "Jhn.2.17",
+              "note": "Psa 69:10 quoted: “the zeal of your οἶκος has eaten me up”."
+            },
+            {
+              "ref": "Heb.3.5",
+              "note": "Num 12:7 expounded: Moses faithful “in all his οἶκος” as a servant."
+            },
+            {
+              "ref": "Luk.1.33",
+              "note": "“He shall reign over the οἶκος of Jacob for ever.”"
+            }
+          ]
+        },
+        {
+          "lemma": "οἰκία",
+          "gloss": "house, dwelling; household",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Jos.24.15, בֵיתִי → οἰκία; Deu.22.8, בְּבֵיתֶךָ → οἰκίᾳ; Deu.6.9, בֵּיתֶךָ → οἰκιῶν; Isa.5.8, בַיִת בְּבַיִת → οἰκίαν … οἰκίαν; Job.4.19, בָתֵּי → οἰκίας; οἰκία renders בַּיִת ×171"
+            },
+            {
+              "ref": "Jhn.14.2",
+              "note": "“In my Father’s οἰκία are many dwelling places.”"
+            },
+            {
+              "ref": "2Co.5.1",
+              "note": "“Our earthly οἰκία of the tent”, the body: the picture of Job 4:19, “houses (οἰκίας) of clay”."
+            },
+            {
+              "ref": "Mat.7.24",
+              "note": "The house built on the rock."
+            },
+            {
+              "ref": "Jhn.4.53",
+              "note": "“He believed, and his whole οἰκία”: the household."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "אֹהֶל",
+            "note": "The tent stands beside the house as the other kind of dwelling, and also against it: Yahweh has not lived in a house but gone about in a tent.",
+            "evidence": [
+              {
+                "ref": "Pro.14.11",
+                "role": "defining",
+                "note": "“The house of the wicked shall be destroyed, but the tent of the upright shall flourish.”"
+              },
+              {
+                "ref": "2Sa.7.6",
+                "role": "defining",
+                "note": "“I have not dwelt in a house … but have walked in a tent and in a dwelling (מִשְׁכָּן).”"
+              },
+              {
+                "ref": "Psa.132.3",
+                "note": "“The tent of my house.”"
+              },
+              {
+                "ref": "Job.21.28"
+              }
+            ]
+          },
+          {
+            "lemma": "הֵיכָל",
+            "note": "The house of Yahweh and his temple (palace) are one place.",
+            "evidence": [
+              {
+                "ref": "Psa.27.4",
+                "role": "defining",
+                "note": "“To dwell in the house of Yahweh … and to inquire in his הֵיכָל.”"
+              },
+              {
+                "ref": "Psa.5.8"
+              }
+            ]
+          },
+          {
+            "lemma": "חָצֵר",
+            "note": "The courts of Yahweh’s house.",
+            "evidence": [
+              {
+                "ref": "Psa.135.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.92.14"
+              },
+              {
+                "ref": "Psa.84.11"
+              }
+            ]
+          },
+          {
+            "lemma": "קֵן",
+            "note": "The bird’s nest is its house.",
+            "evidence": [
+              {
+                "ref": "Psa.84.4",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "lemma": "מִשְׁפָּחָה",
+            "note": "The father’s house beside the clan.",
+            "evidence": [
+              {
+                "ref": "Gen.24.38",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.1.2"
+              }
+            ]
+          },
+          {
+            "lemma": "נַחֲלָה",
+            "note": "A man’s house and his inheritance; Yahweh’s house and his inheritance, the land and people.",
+            "evidence": [
+              {
+                "ref": "Mic.2.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Jer.12.7",
+                "role": "defining",
+                "note": "“I have forsaken my house, I have left my inheritance.”"
+              }
+            ]
+          },
+          {
+            "lemma": "מָקוֹם",
+            "note": "The house and the place of rest.",
+            "evidence": [
+              {
+                "ref": "Isa.66.1",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.26.8",
+                "note": "“The habitation of your house, and the place where your glory dwells.”"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "חוּץ",
+            "note": "Inside against outside.",
+            "evidence": [
+              {
+                "ref": "Gen.6.14",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.25.11"
+              }
+            ]
+          },
+          {
+            "lemma": "שָׂדֶה",
+            "note": "The house and the field: all a man has, indoors and out.",
+            "evidence": [
+              {
+                "ref": "Gen.39.5",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.5.8",
+                "note": "“House to house, field to field.”"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "בֵּית אָב",
+            "gloss": "father’s house: the family one is born into; a division of a clan (plural בֵּית אָבוֹת)",
+            "evidence": [
+              {
+                "ref": "Gen.12.1",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.1.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Num.7.2",
+                "note": "The princes are “heads of the house of their fathers”."
+              },
+              {
+                "ref": "Est.4.14"
+              }
+            ]
+          },
+          {
+            "phrase": "בֵּית יַהְוֶה",
+            "gloss": "the house of Yahweh; also בֵּית (הָ)אֱלֹהִים, the house of God",
+            "evidence": [
+              {
+                "ref": "1Ki.6.1",
+                "role": "defining"
+              },
+              {
+                "ref": "Jdg.18.31"
+              },
+              {
+                "ref": "Psa.23.6",
+                "note": "“I shall dwell in the house of Yahweh for length of days.”"
+              },
+              {
+                "ref": "Isa.2.2",
+                "note": "“The mountain of the house of Yahweh.”"
+              }
+            ]
+          },
+          {
+            "phrase": "בֵּית יִשְׂרָאֵל",
+            "gloss": "the house of Israel: the nation; so בֵּית יַעֲקֹב, בֵּית יְהוּדָה, בֵּית יוֹסֵף",
+            "evidence": [
+              {
+                "ref": "Exo.16.31",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.19.3"
+              },
+              {
+                "ref": "Jer.31.31"
+              },
+              {
+                "ref": "Ezk.37.11"
+              }
+            ]
+          },
+          {
+            "phrase": "בֵּית דָּוִד",
+            "gloss": "the house of David: his royal line",
+            "evidence": [
+              {
+                "ref": "1Ki.12.19",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.7.13"
+              },
+              {
+                "ref": "Zec.12.10"
+              },
+              {
+                "ref": "Zec.13.1"
+              }
+            ]
+          },
+          {
+            "phrase": "בָּנָה בַיִת",
+            "gloss": "build a house: put one up; also raise a family, found a line",
+            "evidence": [
+              {
+                "ref": "Deu.25.9",
+                "role": "defining",
+                "note": "The man “who will not build his brother’s house”, by raising up a name for him."
+              },
+              {
+                "ref": "Rut.4.11",
+                "role": "defining",
+                "note": "Rachel and Leah, “who between them built the house of Israel”."
+              },
+              {
+                "ref": "2Sa.7.27",
+                "note": "“I will build you a house.”"
+              },
+              {
+                "ref": "Pro.14.1"
+              },
+              {
+                "ref": "Psa.127.1",
+                "note": "“Unless Yahweh builds the house”; verse 3 goes on to sons."
+              },
+              {
+                "ref": "Exo.1.21",
+                "note": "God “made houses” for the midwives."
+              }
+            ]
+          },
+          {
+            "phrase": "אֲשֶׁר עַל־הַבַּיִת",
+            "gloss": "the one who is over the house: steward of a great man’s or the king’s house",
+            "evidence": [
+              {
+                "ref": "Gen.43.16",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.44.1"
+              },
+              {
+                "ref": "1Ki.4.6"
+              },
+              {
+                "ref": "1Ki.18.3"
+              },
+              {
+                "ref": "Isa.22.15"
+              }
+            ]
+          },
+          {
+            "phrase": "יְלִיד בַּיִת",
+            "gloss": "one born in the house: a home-born servant; so בֶּן־בַּיִת",
+            "evidence": [
+              {
+                "ref": "Gen.17.27",
+                "role": "defining"
+              },
+              {
+                "ref": "Gen.15.3"
+              }
+            ]
+          },
+          {
+            "phrase": "בֵּית עֲבָדִים",
+            "gloss": "the house of slaves: Egypt",
+            "evidence": [
+              {
+                "ref": "Exo.20.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Exo.13.3"
+              }
+            ]
+          },
+          {
+            "phrase": "בֵּית הַסֹּהַר",
+            "gloss": "the prison; so בֵּית הַכֶּלֶא, בֵּית מִשְׁמָר",
+            "evidence": [
+              {
+                "ref": "Gen.39.20",
+                "role": "defining",
+                "note": "“The place where the king’s prisoners were bound.”"
+              },
+              {
+                "ref": "1Ki.22.27"
+              },
+              {
+                "ref": "Gen.42.19"
+              }
+            ]
+          },
+          {
+            "phrase": "בֵּית מִשְׁתֶּה",
+            "gloss": "house of feasting, against בֵּית אֵבֶל, house of mourning",
+            "evidence": [
+              {
+                "ref": "Ecc.7.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Est.7.8"
+              }
+            ]
+          },
+          {
+            "phrase": "בֵּית עוֹלָם",
+            "gloss": "everlasting house: the grave",
+            "evidence": [
+              {
+                "ref": "Ecc.12.5",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "בַּיְתָא",
+      "lang": "syc",
+      "root": "בת",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "house; household; family line",
+      "summary": "The Peshitta’s ܒܝܬܐ (baytā, construct bēth, plural bāttē), in some 400 verses of the New Testament, for οἶκος and οἰκία. It has the whole range of the Hebrew word, and its construct makes names of places for things: the prison, the tomb, the treasury, the tax office.",
+      "senses": [
+        {
+          "id": "house-dwelling",
+          "gloss": "house, dwelling",
+          "definition": "The building one lives in or enters.",
+          "kin": [
+            "house"
+          ],
+          "evidence": [
+            {
+              "ref": "Mat.7.24",
+              "role": "defining",
+              "note": "The wise man “built his house on the rock”."
+            },
+            {
+              "ref": "Luk.10.5",
+              "role": "defining",
+              "note": "“Into whatever house you enter, first say, Peace to this house.”"
+            },
+            {
+              "ref": "Mat.12.29",
+              "note": "Entering the strong man’s house and plundering it."
+            },
+            {
+              "ref": "Mrk.13.35",
+              "note": "“The lord of the house (מָרֵהּ דְּבַיְתָא)” who comes at an hour not known."
+            }
+          ],
+          "cognate_ids": [
+            "akk-bitu",
+            "uga-bt",
+            "phn-bt",
+            "moab-bt",
+            "ar-bayt",
+            "sab-byt",
+            "gez-bet",
+            "arc-bayta"
+          ]
+        },
+        {
+          "id": "house-of-god-the",
+          "gloss": "house of God: the temple; the ecclesia",
+          "definition": "The temple in Jerusalem as God’s house and Jesus’ Father’s house; then the believers, who are called his house.",
+          "kin": [
+            "house-of-god"
+          ],
+          "evidence": [
+            {
+              "ref": "Mat.12.4",
+              "role": "defining",
+              "note": "David “entered the house of God” and ate the bread of the table."
+            },
+            {
+              "ref": "Mat.21.13",
+              "note": "“My house shall be called a house of prayer.”"
+            },
+            {
+              "ref": "Jhn.2.16",
+              "role": "defining",
+              "note": "“Do not make my Father’s house a house of trade.”"
+            },
+            {
+              "ref": "Luk.2.49",
+              "note": "“I must be in my Father’s house”, said in the temple."
+            },
+            {
+              "ref": "Act.7.47",
+              "note": "“Solomon built him a house.”"
+            },
+            {
+              "ref": "1Ti.3.15",
+              "role": "defining",
+              "note": "“The house of God, which is the ecclesia of the living God.”"
+            },
+            {
+              "ref": "Heb.3.6",
+              "role": "defining",
+              "note": "“The Messiah as a son over his house; and we are his house, if we hold fast to the end.”"
+            },
+            {
+              "ref": "Heb.10.21",
+              "note": "“A great priest over the house of God.”"
+            },
+            {
+              "ref": "1Pe.4.17",
+              "note": "Judgment begins from the house of God: “from us”."
+            }
+          ],
+          "cognate_ids": [
+            "akk-bitu",
+            "uga-bt",
+            "phn-bt",
+            "ar-bayt",
+            "sab-byt"
+          ]
+        },
+        {
+          "id": "household-2",
+          "gloss": "household",
+          "definition": "Those who belong to a man’s house, his family and servants; בְּנַי בַּיְתָא, “sons of the house”, are its members.",
+          "kin": [
+            "household"
+          ],
+          "evidence": [
+            {
+              "ref": "Act.16.31",
+              "role": "defining",
+              "note": "“You shall live, you and your house.”"
+            },
+            {
+              "ref": "Jhn.4.53",
+              "role": "defining",
+              "note": "“He believed, he and his whole house.”"
+            },
+            {
+              "ref": "1Co.1.16",
+              "note": "Paul baptized the house of Stephanas."
+            },
+            {
+              "ref": "1Ti.3.4",
+              "note": "An overseer “guides his own house well”, holding his children in subjection."
+            },
+            {
+              "ref": "Mrk.3.25",
+              "note": "“If a house is divided against itself, that house cannot stand.”"
+            },
+            {
+              "ref": "Tit.1.11",
+              "note": "Men who overturn whole houses by their teaching."
+            },
+            {
+              "ref": "Heb.11.7",
+              "note": "Noah made an ark “for the life of the sons of his house” (Gen 7:1)."
+            }
+          ],
+          "cognate_ids": [
+            "akk-bitu",
+            "ar-bayt",
+            "sab-byt"
+          ]
+        },
+        {
+          "id": "family-line-people-royal",
+          "gloss": "family line, people; royal line",
+          "definition": "The descendants of a forefather as his house: the house of Israel, of Jacob, of David.",
+          "kin": [
+            "fathers-house",
+            "dynasty"
+          ],
+          "evidence": [
+            {
+              "ref": "Mat.10.6",
+              "role": "defining",
+              "note": "“The sheep that are lost of the house of Israel.”"
+            },
+            {
+              "ref": "Act.2.36",
+              "note": "“Let all the house of Israel know.”"
+            },
+            {
+              "ref": "Luk.1.27",
+              "role": "defining",
+              "note": "Joseph, “of the house of David”; Luk 2:4, “of the house and family of David”."
+            },
+            {
+              "ref": "Luk.2.4"
+            },
+            {
+              "ref": "Luk.1.33",
+              "note": "“He shall reign over the house of Jacob for ever.”"
+            },
+            {
+              "ref": "Luk.1.69",
+              "note": "A horn of salvation “in the house of David his servant”."
+            },
+            {
+              "ref": "Heb.8.8",
+              "note": "Jer 31:31: “the family of the house of Israel”, where the Peshitta writes the word twice (בַּיְתָא דְּבֵית אִיסְרָיֵל)."
+            }
+          ],
+          "cognate_ids": [
+            "ar-bayt",
+            "sab-byt",
+            "phn-bt",
+            "moab-bt"
+          ]
+        },
+        {
+          "id": "place-of-what-holds",
+          "gloss": "place of, what holds: prison, tomb, treasury; the body",
+          "definition": "In the construct, the place where a thing is or is done; so the tomb, and the place of the dead from which Jesus rose. Of the body, the earthly house in which a man now is.",
+          "kin": [
+            "holder"
+          ],
+          "evidence": [
+            {
+              "ref": "Mat.27.60",
+              "role": "defining",
+              "note": "Joseph laid the body in his new בֵּית קְבוּרָא, “house of burial”, cut in the rock."
+            },
+            {
+              "ref": "Act.2.29",
+              "note": "David “died and was buried, and his בֵּית קְבוּרָא is with us to this day”."
+            },
+            {
+              "ref": "Mat.11.2",
+              "role": "defining",
+              "note": "John in בֵּית אֲסִירֵא, “the house of the bound”, the prison."
+            },
+            {
+              "ref": "Mrk.12.41",
+              "note": "בֵּית גַּזָּא, the treasury."
+            },
+            {
+              "ref": "Mat.9.9",
+              "note": "Matthew sitting at בֵּית מַכְסָא, the tax office."
+            },
+            {
+              "ref": "Rom.1.4",
+              "note": "He “rose from בֵּית מִיתֵא”, the house (place) of the dead; so 1Co 15:12."
+            },
+            {
+              "ref": "1Co.15.12"
+            },
+            {
+              "ref": "2Co.5.1",
+              "role": "defining",
+              "note": "“Our house on earth, this of the body”, set against “a house not made with hands”."
+            }
+          ],
+          "cognate_ids": [
+            "akk-bitu",
+            "ar-bayt",
+            "phn-bt"
+          ]
+        }
+      ],
+      "usage": {
+        "phrases": [
+          {
+            "phrase": "בְּנַי בַּיְתָא",
+            "gloss": "sons of the house: members of a household",
+            "evidence": [
+              {
+                "ref": "Eph.2.19",
+                "role": "defining",
+                "note": "“No longer strangers and sojourners, but sons of the city of the holy ones and sons of the house of God.”"
+              },
+              {
+                "ref": "Gal.6.10",
+                "note": "“The sons of the house of faith.”"
+              },
+              {
+                "ref": "Mat.24.45"
+              },
+              {
+                "ref": "Mat.10.25"
+              }
+            ]
+          },
+          {
+            "phrase": "רַב בַּיְתָא",
+            "gloss": "master of the house: steward",
+            "evidence": [
+              {
+                "ref": "Luk.12.42",
+                "role": "defining"
+              },
+              {
+                "ref": "Luk.16.2"
+              }
+            ]
+          },
+          {
+            "phrase": "בֵּית קְבוּרָא",
+            "gloss": "house of burial: tomb",
+            "evidence": [
+              {
+                "ref": "Mat.27.60",
+                "role": "defining"
+              },
+              {
+                "ref": "Mat.27.7"
+              },
+              {
+                "ref": "Act.2.29"
+              }
+            ]
+          },
+          {
+            "phrase": "בֵּית אֲסִירֵא",
+            "gloss": "house of the bound: prison",
+            "evidence": [
+              {
+                "ref": "Mat.11.2",
+                "role": "defining"
+              }
+            ]
+          },
+          {
+            "phrase": "בֵּית מִיתֵא",
+            "gloss": "house (place) of the dead, in “rose from the dead”",
+            "evidence": [
+              {
+                "ref": "Rom.1.4",
+                "role": "defining"
+              },
+              {
+                "ref": "1Co.15.12"
+              }
+            ]
+          },
+          {
+            "phrase": "בֵּית קוּדְשָׁא",
+            "gloss": "the holy house: the holy place of the tabernacle",
+            "evidence": [
+              {
+                "ref": "Heb.9.2",
+                "role": "defining"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "בַּיִת",
+      "lang": "arc",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "house; house of God",
+      "bdb": [
+        "xb.ag.aa"
+      ],
+      "summary": "The Aramaic of Ezra and Daniel, 44 times: emphatic בַּיְתָא, construct בֵּית, plural בָּתֵּיכוֹן. Thirty-five of them are in Ezra, nearly all of the house of God at Jerusalem. The count against its key is far higher only because the Hebrew construct בֵּית is spelt the same.",
+      "senses": [
+        {
+          "id": "house-of-god-temple",
+          "gloss": "house of God, temple",
+          "definition": "The house of God in Jerusalem, built, destroyed and rebuilt; “this house”.",
+          "kin": [
+            "house-of-god"
+          ],
+          "evidence": [
+            {
+              "ref": "Ezr.5.2",
+              "role": "defining",
+              "note": "Zerubbabel and Jeshua began “to build the house of God that is in Jerusalem”."
+            },
+            {
+              "ref": "Ezr.6.3",
+              "role": "defining",
+              "note": "Cyrus’s decree: “the house of God in Jerusalem: let the house be built, a place where sacrifices are offered.”"
+            },
+            {
+              "ref": "Ezr.6.15",
+              "note": "“This house was finished on the third day of the month Adar.”"
+            },
+            {
+              "ref": "Ezr.7.23",
+              "note": "“The house of the God of heaven.”"
+            },
+            {
+              "ref": "Dan.5.3",
+              "note": "The vessels taken from “the temple (הֵיכְלָא) of the house of God in Jerusalem”."
+            },
+            {
+              "ref": "Dan.5.23",
+              "note": "“The vessels of his house.”"
+            }
+          ],
+          "cognate_ids": [
+            "akk-bitu",
+            "uga-bt",
+            "phn-bt",
+            "ar-bayt",
+            "sab-byt"
+          ]
+        },
+        {
+          "id": "house-dwelling-king-s",
+          "gloss": "house, dwelling; king’s house",
+          "definition": "A man’s own house, which he goes home to and which can be pulled down for his offence; the king’s house, from which the cost of the building is paid.",
+          "kin": [
+            "house",
+            "royal-house"
+          ],
+          "evidence": [
+            {
+              "ref": "Dan.2.17",
+              "role": "defining",
+              "note": "“Daniel went to his house” and told his companions."
+            },
+            {
+              "ref": "Dan.6.11",
+              "role": "defining",
+              "note": "Daniel went into his house, whose upper room had windows open toward Jerusalem."
+            },
+            {
+              "ref": "Ezr.6.11",
+              "note": "A beam pulled from the offender’s house, and his house made a dunghill; so Dan 2:5; 3:29."
+            },
+            {
+              "ref": "Dan.2.5"
+            },
+            {
+              "ref": "Dan.4.1",
+              "note": "Nebuchadnezzar “at ease in my house and flourishing in my palace (הֵיכַל)”."
+            },
+            {
+              "ref": "Dan.4.27",
+              "note": "Babylon built “for a royal house (בֵּית מַלְכוּ)”."
+            },
+            {
+              "ref": "Ezr.6.4",
+              "note": "“Let the cost be given from the king’s house.”"
+            }
+          ],
+          "cognate_ids": [
+            "akk-bitu",
+            "uga-bt",
+            "phn-bt",
+            "moab-bt",
+            "ar-bayt",
+            "sab-byt",
+            "gez-bet",
+            "arc-bayta"
+          ]
+        },
+        {
+          "id": "place-where-a-thing",
+          "gloss": "place where a thing is kept or done",
+          "definition": "In the construct, a building or room named from what it holds: the treasure house, the house of the rolls, the banqueting house.",
+          "kin": [
+            "holder"
+          ],
+          "evidence": [
+            {
+              "ref": "Ezr.5.17",
+              "role": "defining",
+              "note": "Search made “in the king’s treasure house (בֵּית גִּנְזַיָּא) there in Babylon”."
+            },
+            {
+              "ref": "Ezr.6.1",
+              "role": "defining",
+              "note": "“The house of the rolls (בֵּית סִפְרַיָּא), where the treasures were laid up.”"
+            },
+            {
+              "ref": "Ezr.7.20"
+            },
+            {
+              "ref": "Dan.5.10",
+              "note": "The queen came into “the banqueting house (בֵּית מִשְׁתְּיָא)”."
+            }
+          ],
+          "cognate_ids": [
+            "akk-bitu"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "οἶκος",
+          "gloss": "house",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Ezr.5.2, בֵּית → οἶκον; Dan.4.27 (LXX 4:30), לְבֵית → οἶκος"
+            },
+            {
+              "ref": "Mat.12.4",
+              "note": "“He entered the οἶκος of God”, as Ezra’s בֵּית אֱלָהָא."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "בַּיְתוּתָא",
+      "lang": "syc",
+      "root": "בת",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "running of a house, stewardship",
+      "summary": "The Peshitta’s ܒܝܬܘܬܐ (baytūthā), four times and only in רַבַּת בַּיְתוּתָא, “headship of the household”, for οἰκονομία: the abstract noun of בַּיְתָא.",
+      "senses": [
+        {
+          "id": "stewardship-in",
+          "gloss": "stewardship (in רַבַּת בַּיְתוּתָא)",
+          "definition": "The charge of another man’s house and goods, for which the steward must give account.",
+          "kin": [
+            "estate"
+          ],
+          "evidence": [
+            {
+              "ref": "Luk.16.2",
+              "role": "defining",
+              "note": "“Give me the account of your stewardship, for you can no longer be my steward (רַב בַּיְתָא).”"
+            },
+            {
+              "ref": "Luk.16.4",
+              "note": "“When I go out from the stewardship, they will receive me into their houses.”"
+            },
+            {
+              "ref": "1Co.9.17",
+              "role": "defining",
+              "note": "“If not of my own will, a stewardship is entrusted to me.”"
+            }
+          ],
+          "cognate_ids": [
+            "akk-bitu"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "בִּיתָן",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "palace, royal pavilion",
+      "bdb": [
+        "b.bp.ca"
+      ],
+      "summary": "Three times, all in Esther and all in “the garden of the בִּיתָן (of the king)” at Susa. The form is בַּיִת with the ending ‑ān. Scripture’s use shows only a royal building with a garden and court, distinct from the banqueting house the king returns to (Est 7:8); Akkadian bītānu is the interior, the inner part of a palace, which fits, but three uses cannot fix it closer.",
+      "senses": [
+        {
+          "id": "palace-inner-royal-house",
+          "gloss": "palace, (inner) royal house",
+          "definition": "The king’s house at Susa, or the part of it that had the garden where the feast was held and to which the king went out.",
+          "kin": [
+            "royal-house"
+          ],
+          "evidence": [
+            {
+              "ref": "Est.1.5",
+              "role": "defining",
+              "note": "The seven-day feast “in the court of the garden of the king’s בִּיתָן”."
+            },
+            {
+              "ref": "Est.7.7",
+              "role": "defining",
+              "note": "The king rose in his wrath from the wine “to the garden of the בִּיתָן”."
+            },
+            {
+              "ref": "Est.7.8",
+              "note": "He came back “from the garden of the בִּיתָן to the house of the banquet of wine”."
+            }
+          ],
+          "cognate_ids": [
+            "akk-bitanu",
+            "syc-baytona"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "οἶκος",
+          "gloss": "house",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Est.1.5, בִּיתַן → οἴκου"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "בָּת",
+      "lang": "syc",
+      "root": "בת",
+      "pos": "verb",
+      "gloss": "pass the night, lodge",
+      "summary": "The Peshitta’s ܒܬ (bāth, imperfect nəbūth), three times, for αὐλίζομαι and μένω: to be somewhere for the night. Syriac files it under the same root as בַּיְתָא.",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "pass the night, lodge; stay overnight",
+          "senses": [
+            {
+              "id": "lodge-syc",
+              "gloss": "pass the night, lodge",
+              "definition": "To spend the night in a place; of a thing, to be left there overnight.",
+              "kin": [
+                "lodge-arc"
+              ],
+              "evidence": [
+                {
+                  "ref": "Mat.21.17",
+                  "role": "defining",
+                  "note": "Jesus went out of the city to Bethany “and lodged there (וּבָת תַּמָּן)”."
+                },
+                {
+                  "ref": "Luk.21.37",
+                  "role": "defining",
+                  "note": "By day he taught in the temple, “and by night he went out and lodged (בָּאֵת) on the mount”."
+                },
+                {
+                  "ref": "Jhn.19.31",
+                  "note": "“These bodies shall not stay the night (לָא נְבוּתוּן) on their crosses.”"
+                }
+              ]
+            }
+          ],
+          "cognate_ids": [
+            "akk-biatu",
+            "ar-bata",
+            "arc-bit"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "בִּית",
+      "lang": "arc",
+      "pos": "verb",
+      "gloss": "pass the night",
+      "bdb": [
+        "xb.ag.ab"
+      ],
+      "summary": "Once, of Darius after Daniel was thrown to the lions; the Peshitta, the Targums, Arabic and Akkadian have the same verb, so its sense does not rest on the one verse. Arabic and Akkadian both have verb and noun; whether to lodge is to be housed for the night, or a house is where one passes the night, the texts do not show.",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "pass the night",
+          "senses": [
+            {
+              "id": "lodge-arc",
+              "gloss": "pass the night",
+              "definition": "To spend the night, here without food or sleep.",
+              "kin": [
+                "lodge-syc"
+              ],
+              "evidence": [
+                {
+                  "ref": "Dan.6.19",
+                  "role": "defining",
+                  "note": "“The king went to his palace and passed the night fasting (וּבָת טְוָת) … and his sleep fled from him.”"
+                }
+              ]
+            }
+          ],
+          "cognate_ids": [
+            "akk-biatu",
+            "ar-bata",
+            "arc-bit"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-bitu",
+      "lang": "akk",
+      "form": "bītu",
+      "translit": "bītu",
+      "gloss": "house; household; estate, property, domain; temple, chapel; room; container, case",
+      "relation": "cognate",
+      "note": "Akkadian has the building, the household, the estate and the temple under the one word, and a container or case as well, as בָּתִּים are holders for poles (Exo 25:27).",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000003110, bītu [house] N",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000003110.html",
+          "note": "Meanings listed: “(a container); building; case; chamber; chapel; container; domain; estate; house; household; plot of land; property; room; storage; temple; workshop”."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000031 byt [house] N, AKK001567 bītu [house] N"
+        }
+      ]
+    },
+    {
+      "id": "akk-bitanu",
+      "lang": "akk",
+      "form": "bītānu",
+      "translit": "bītānu",
+      "gloss": "interior, inner part; (adverb) inside",
+      "relation": "cognate",
+      "note": "bītu with the ending ‑ānu: “the inside”, as Hebrew says מִבַּיִת and בַּיְתָה, and of a building its interior, which is what בִּיתָן looks like in form.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000036800, bītānu [interior] N",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000036800.html"
+        },
+        {
+          "source": "oracc",
+          "locator": "armep x000022810, bītānu [in the house] AV",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000022810.html",
+          "note": "Meaning listed: “inside” (Middle Assyrian)."
+        }
+      ]
+    },
+    {
+      "id": "akk-biatu",
+      "lang": "akk",
+      "form": "biātu",
+      "translit": "biātu",
+      "gloss": "spend the night, stay overnight, lodge",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000022840, biātu [spend the night] V",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000022840.html",
+          "note": "Meanings listed: “accommodate; lodge; spend the night; stay; stay overnight”."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM001320 byt [house] V, AKK001470 biātum [spend] V"
+        }
+      ]
+    },
+    {
+      "id": "uga-bt",
+      "lang": "uga",
+      "form": "𐎁𐎚",
+      "translit": "bt",
+      "gloss": "house; temple (house of a god)",
+      "relation": "cognate",
+      "note": "Ugaritic writes the word without y, as Phoenician and Moabite do, and uses it of a god’s house (bt bʿl).",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 182, §93 Glossary, bt",
+          "note": "Glossed “house”, plural bhtm; cites bt bʿl (KTU 1.17:I:31) and compares Hebrew and Aramaic bayit, Arabic bayt and Akkadian bītu."
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Ugaritic 𐎁𐎚 (bt), etymology 1",
+          "url": "https://en.wiktionary.org/wiki/%F0%90%8E%81%F0%90%8E%9A",
+          "note": "“house”; “From Proto-Semitic *bayt-. Compare Hebrew בַּיִת.”"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000031 byt [house] N, UGC001299 bt [house] N"
+        }
+      ]
+    },
+    {
+      "id": "phn-bt",
+      "lang": "phn",
+      "form": "𐤁𐤕",
+      "translit": "bt",
+      "gloss": "house, home; temple; tomb; royal house, dynasty",
+      "relation": "cognate",
+      "note": "Phoenician and Punic have the home, the temple (bt ʾlm, “house of the god”), the tomb and the royal house (bt ʾb, “house of the father”, a dynasty) under the one word, as the Hebrew has them.",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "p. 128, BT II",
+          "note": "“[Heb. bayit] n.m. 1. HOUSE, HOME”; “2. TEMPLE (short for bt ʾlm)”, KAI 4.2 and KAI 14.16–17, Eshmunazar’s building of a temple for Eshmun; “3. TOMB”, KAI 140.1; “4. ROYAL HOUSE (short for bt ʾb and bt ʾdn)”, KAI 24.15–16."
+        },
+        {
+          "source": "krahmalkov-2000",
+          "locator": "pp. 129–130, BT ʾB; BT ʾDN; BT ʾLM",
+          "note": "BT ʾB “[Heb. bēt ʾāb] n.ex. ROYAL HOUSE, DYNASTY”, KAI 24.5; BT ʾDN the same, KAI 26 A I 9–10; BT ʾLM “TEMPLE, lit. HOUSE OF THE GOD”, KAI 60.1–5."
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Phoenician 𐤁𐤕 (bt); Punic 𐤁𐤕 (bt)",
+          "url": "https://en.wiktionary.org/wiki/%F0%90%A4%81%F0%90%A4%95"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000031 byt [house] N, PUN000456 bt [house] N"
+        }
+      ]
+    },
+    {
+      "id": "moab-bt",
+      "lang": "sem",
+      "form": "בת",
+      "translit": "bt",
+      "gloss": "house; (a king’s) house",
+      "relation": "cognate",
+      "note": "Moabite, the Mesha stele: Mesha looks in triumph on Omri’s son “and on his house”, his line; builds “the king’s house”; and orders a cistern for every man “in his house”.",
+      "evidence": [
+        {
+          "source": "compston-1919",
+          "locator": "KAI 181, lines 7, 23, 25",
+          "url": "https://en.wikisource.org/wiki/The_Inscription_on_the_Stele_of_M%C3%A9%C5%A1a%CA%BF/The_Text_in_Hebrew_Square_Script",
+          "note": "Line 7 וארא בה ובבתה; line 23 בנתי בת מלך; line 25 אש בר בביתה."
+        },
+        {
+          "source": "compston-1919",
+          "locator": "Translation, lines 7, 23–25",
+          "url": "https://en.wikisource.org/wiki/The_Inscription_on_the_Stele_of_M%C3%A9%C5%A1a%CA%BF/Translation",
+          "note": "“and I looked upon him and upon his house”; “And I built the king’s house”; “Make to you every man a cistern in his house.”"
+        }
+      ]
+    },
+    {
+      "id": "ar-bayt",
+      "lang": "ar",
+      "form": "بَيْت",
+      "translit": "bayt",
+      "gloss": "tent; house, chamber, dwelling; the House (the Kaabeh); grave; a man’s household, wife; a noble family",
+      "relation": "cognate",
+      "note": "First the tent of hair or wool, then a house of clay or stone and any dwelling; “the House” and “the House of God” for a sanctuary; the grave; an animal’s burrow and the spider’s web “as being likened to the بيت of a man”; a man’s household; and the noble house of a tribe. Nearly the whole range of בַּיִת is here.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 280, root بيت, بَيْتٌ (n3602)",
+          "note": "“A tent … and also a house; a chamber … a habitation [of any kind; an abode; a dwelling]”; “البَيْتُ [The House] applies particularly to the Kaabeh … as also بَيْتُ ٱللّٰهِ [the House of God]”; “the grave”; “the web of the spider”; “A man’s household”; “the family that comprises the nobility of a tribe”."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000031 byt [house] N, ARB002588 bayot [House]"
+        }
+      ]
+    },
+    {
+      "id": "ar-bata",
+      "lang": "ar",
+      "form": "بَاتَ",
+      "translit": "bāta",
+      "gloss": "pass the night; do a thing by night",
+      "relation": "cognate",
+      "note": "The Arabic verb is of being or doing through the night, awake or asleep, as Darius passed the night fasting and sleepless (Dan 6:19).",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 279, root بيت, بَاتَ (n3598)",
+          "note": "“the action is restricted to the night: it is by night, or in night; not in sleep … he passed, or spent, the night, or a night, or a part thereof”."
+        },
+        {
+          "source": "lane",
+          "locator": "p. 281, root بيت, مَبِيتٌ (n3609)",
+          "note": "“A place in which one passes, or enters upon, the night.”"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM001320 byt [house] V, ARB002584 baAta [Passed]"
+        }
+      ]
+    },
+    {
+      "id": "sab-byt",
+      "lang": "sem",
+      "form": "𐩨𐩺𐩩",
+      "translit": "byt",
+      "gloss": "house = family, community; fortified building: temple, fortress",
+      "relation": "cognate",
+      "note": "Sabaic: “their family and tribe”, the patron gods “of their family”, and the temple of a god, as בַּיִת is the father’s house and the house of God.",
+      "evidence": [
+        {
+          "source": "biella-1982",
+          "locator": "pp. 41–42, BYT",
+          "url": "https://archive.org/details/DOOSA",
+          "note": "“(1) HOUSE = FAMILY, COMMUNITY [Ar bayt id]”, R4013/1–2 “their family and tribe”, and the patron deities “of their family”; “(2) HOUSE = (FORTIFIED) BUILDING, specifically TEMPLE or FORTRESS”, R3624 byt ʾLMQH, the temple of the god."
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Sabaean 𐩨𐩺𐩩 (byt)",
+          "url": "https://en.wiktionary.org/wiki/%F0%90%A9%A8%F0%90%A9%BA%F0%90%A9%A9",
+          "note": "“house; dwelling; building”; “household; family, lineage”; “palace; royal or princely house”; “temple”."
+        }
+      ]
+    },
+    {
+      "id": "gez-bet",
+      "lang": "gez",
+      "form": "ቤት",
+      "translit": "bet",
+      "gloss": "house",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Ge'ez ቤት (bet)",
+          "url": "https://en.wiktionary.org/wiki/%E1%89%A4%E1%89%B5",
+          "note": "“house”; from Proto-Semitic *bayt-."
+        }
+      ]
+    },
+    {
+      "id": "arc-bayta",
+      "lang": "arc",
+      "form": "בֵּיתָא",
+      "translit": "bêtāʾ",
+      "gloss": "house, household",
+      "relation": "cognate",
+      "note": "The Targums’ word for בַּיִת.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. בֵּיתָא I",
+          "note": "“same [as בַּיִת, house, household, home]. Targ. Ex. XII, 3; a. v. fr.”"
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000031 byt [house] N, ARM003742 by [house] N"
+        }
+      ]
+    },
+    {
+      "id": "arc-bit",
+      "lang": "arc",
+      "form": "בִּית",
+      "translit": "bît, bāt",
+      "gloss": "go in, lodge, pass the night",
+      "relation": "cognate",
+      "note": "The Targums and Talmud use the verb of Dan 6:19 freely: lodging for the night, going to bed fasting, water kept overnight.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. בִּית",
+          "note": "“to go in, lodge, pass the night. Dan. VI, 19. Targ. Gen. XXXII, 22; a. fr.”; “Ber. 60ᵇ בת בדברא he slept in the open field”."
+        },
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM001320 byt [house] V, ARM003578 BWT [spend] V"
+        }
+      ]
+    },
+    {
+      "id": "syc-baytona",
+      "lang": "syc",
+      "form": "ܒܝܬܘܢܐ",
+      "translit": "baytōnā",
+      "gloss": "small house, cottage; cell",
+      "relation": "possible",
+      "note": "A Syriac diminutive of ܒܝܬܐ with the same ‑ōn/‑ān ending as בִּיתָן; a small house, where Esther’s is a king’s, so it shows the formation more than the meaning.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Classical Syriac ܒܝܬܘܢܐ",
+          "url": "https://en.wiktionary.org/wiki/%DC%92%DC%9D%DC%AC%DC%98%DC%A2%DC%90",
+          "note": "“cottage, small house or building; cell”; “Diminutive of ܒܝܬܐ (baytā, ‘house’). Compare Hebrew בִּיתָן.”"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "house-of-god",
+      "statement": "Jacob called the open place where God appeared to him “the house of God” (Gen 28:17), and the tabernacle at Shiloh bore the name before any temple stood (Jdg 18:31). When David would build a house, Yahweh answered that he had never dwelt in one but had gone about in a tent (2Sa 7:5–6); Solomon, having built it, confessed that the heavens cannot contain God, “how much less this house” (1Ki 8:27); and Yahweh asks through Isaiah, “Where is the house that you would build for me?” (Isa 66:1), which Stephen quotes to show that the Most High does not dwell in what hands have made (Act 7:47–49). The house was where his name was and where men prayed (2Sa 7:13; Isa 56:7). In the New Testament the name passes to people: the house of God “is the ecclesia of the living God” (1Ti 3:15), believers are “sons of the house of God” (Eph 2:19), and “we are his house, if we hold fast to the end” (Heb 3:6). From the verses: God’s house is wherever he chooses to be known and approached, a place or a people, and never a building that holds him.",
+      "evidence": [
+        {
+          "ref": "Gen.28.17"
+        },
+        {
+          "ref": "Jdg.18.31"
+        },
+        {
+          "ref": "2Sa.7.5",
+          "to": "2Sa.7.6"
+        },
+        {
+          "ref": "1Ki.8.27"
+        },
+        {
+          "ref": "Isa.66.1"
+        },
+        {
+          "ref": "Act.7.47",
+          "to": "Act.7.49"
+        },
+        {
+          "ref": "2Sa.7.13"
+        },
+        {
+          "ref": "Isa.56.7"
+        },
+        {
+          "ref": "1Ti.3.15"
+        },
+        {
+          "ref": "Eph.2.19"
+        },
+        {
+          "ref": "Heb.3.6"
+        }
+      ]
+    },
+    {
+      "topic": "kingdom-of-god",
+      "statement": "Yahweh promised David a house: a seed raised up after him, whose throne and kingdom would be established for ever, with David’s house and kingdom made sure “before you” (2Sa 7:11–16). In Chronicles the promise reads, “I will set him in my house and in my kingdom for ever” (1Ch 17:14): David’s house and throne are Yahweh’s kingdom. The angel tells Mary that her son will be given “the throne of David his father” and “will reign over the house of Jacob for ever” (Luk 1:32–33), and Peter says David knew God had sworn to seat one of his descendants on his throne (Act 2:30). The prophets place that reign on earth: in the last days the mountain of the house of Yahweh is established, all nations flow to it, and the law goes out from Zion (Isa 2:2–3); the house is a house of prayer for all peoples (Isa 56:7); Yahweh’s glory fills it and he dwells among the sons of Israel for ever (Ezk 43:5–7); and a new covenant is made with the house of Israel and the house of Judah (Jer 31:31; Heb 8:8). From the verses: the kingdom of God is the house of David restored under Jesus, reigning over Israel and the nations from Jerusalem.",
+      "evidence": [
+        {
+          "ref": "2Sa.7.11",
+          "to": "2Sa.7.16"
+        },
+        {
+          "ref": "1Ch.17.14"
+        },
+        {
+          "ref": "Luk.1.32",
+          "to": "Luk.1.33"
+        },
+        {
+          "ref": "Act.2.30"
+        },
+        {
+          "ref": "Isa.2.2",
+          "to": "Isa.2.3"
+        },
+        {
+          "ref": "Isa.56.7"
+        },
+        {
+          "ref": "Ezk.43.5",
+          "to": "Ezk.43.7"
+        },
+        {
+          "ref": "Jer.31.31"
+        },
+        {
+          "ref": "Heb.8.8"
+        }
+      ]
+    },
+    {
+      "topic": "son-of-god",
+      "statement": "Of the seed who would build the house Yahweh said, “I will be a father to him, and he shall be a son to me” (2Sa 7:13–14), which Hebrews applies to Jesus (Heb 1:5). Yahweh called Moses “faithful in all my house” (Num 12:7). Hebrews sets the two side by side: Jesus was “faithful to him who made him, as Moses was in all his house”; Moses as a servant in the house, the Messiah “as a son over his house”; and between them, “every house is built by someone, but he who built all things is God” (Heb 3:2–6). From the verses: the house is God’s and God is its builder; Jesus is the son whom God appointed over it, greater than the servant Moses, and faithful to the one who made him so.",
+      "evidence": [
+        {
+          "ref": "2Sa.7.13",
+          "to": "2Sa.7.14"
+        },
+        {
+          "ref": "Heb.1.5"
+        },
+        {
+          "ref": "Num.12.7"
+        },
+        {
+          "ref": "Heb.3.2",
+          "to": "Heb.3.6"
+        }
+      ]
+    },
+    {
+      "topic": "mortality",
+      "statement": "Men are “those who dwell in houses of clay, whose foundation is in the dust” (Job 4:19), and Paul calls the body “our house on earth” that is taken down (2Co 5:1). The house a man goes to at death is the grave: Job waits for the grave as his house and spreads his bed in the darkness (Job 17:13); death is “the house appointed for all the living” (Job 30:23); man goes “to his everlasting house” while the mourners go about the street (Ecc 12:5); the kings of the nations lie “each in his house” (Isa 14:18). He who goes down to the grave does not come up, and “returns no more to his house” (Job 7:9–10). Paul does not wish to be unclothed but clothed upon, “that mortality may be swallowed up by life” (2Co 5:4), and the Peshitta says of Jesus that he rose “from the house of the dead” (Rom 1:4). From the verses: the dead have one house, the grave, common to all the living; they stay in it, and the hope held out is to be brought out of it and clothed with life, not to live on apart from the body.",
+      "evidence": [
+        {
+          "ref": "Job.4.19"
+        },
+        {
+          "ref": "2Co.5.1"
+        },
+        {
+          "ref": "Job.17.13"
+        },
+        {
+          "ref": "Job.30.23"
+        },
+        {
+          "ref": "Ecc.12.5"
+        },
+        {
+          "ref": "Isa.14.18"
+        },
+        {
+          "ref": "Job.7.9",
+          "to": "Job.7.10"
+        },
+        {
+          "ref": "2Co.5.4"
+        },
+        {
+          "ref": "Rom.1.4"
+        }
+      ]
+    }
+  ],
+  "note": "Root key בית: the brief’s key, and the word’s own consonants; no verbal root is assumed for the Hebrew noun. The Peshitta’s words are under SEDRA’s root בת, given as their `root`. LEFT FOR PLACE ENTRIES: the key holds some forty place names in בֵּית־ (Bethel b.bp.ad, Bethlehem b.bp.az, Beth-shemesh, Beth-aven, Beth-horon and the rest, with their gentilics, and הַבַּיִת of Isa 15:2, b.bp.ab); they are places, so they have no name entries and their keys are not claimed here. The one person is Beth-rapha (names/beth-rapha.json, b.bp.bu). LEFT OUT: בָּכָא (b.bp.cc, the balsam trees of 2Sa 5:23–24 and the valley of Psa 84:7) is filed in this key’s range only by alphabet; it belongs to בכא/בכה. COUNTS: b.bp.aa and xb.ag.aa are counted by spelling, so each takes in the other’s tokens and the first words of the place names; the Aramaic noun’s real count is 44 (Ezra 35, Daniel 9), found from the brief’s references within the Aramaic sections. CHECK: (1) בֵּית מִיתֵא (Rom 1:4; 1Co 15:12): SEDRA tags ܒܝܬ here as the noun “house”; it may instead be the preposition bēth “among” (SEDRA’s lexeme בית “between”, 46 uses, filed under ביני and so belonging to bayin.json). The phrase and its place in the mortality statement should be reviewed. (2) בִּיתָן: Akkadian bītānu is named as a cognate sharing its meaning (interior of a palace); if the reviewer thinks three uses in Esther do not bear that, make it `possible`, and the word then rests on its kin sense alone. Whether it is a loan from Akkadian through Aramaic is not shown by any source consulted. (3) The Peshitta lemmas are pointed on the model of יַוְמָא (בַּיְתָא for SEDRA’s בַּיתָּא). (4) The Mesha line numbers and readings are from the Wikisource transcription of Compston; line 25’s בביתה was assigned to that line from the page layout. LEADS NOT FOLLOWED: Ge’ez verb “pass the night” (Anderson–Moser GEZ001261 byt [spend] V; Dillmann and Leslau not consulted for form or page); Ugaritic verb bt “lodge” (DULAT not consulted); Old Aramaic and Deir ʿAlla byt (DEAPS, Hoftijzer not consulted); Akkadian bīt “where, when” as a conjunction (Oracc tsae x000005260), which looks like the noun’s construct turned into a particle; Egyptian transcriptions of Canaanite Beth- place names (bꜣtj-šꜣr and others in Wiktionary) and the Greek letter name βῆτα from Phoenician bt, neither of which is scripture’s use. The Greek place names in Βηθ‑ (Βηθλεέμ, Βηθανία, Βηθσαϊδά, Βηθφαγή, Βηθεσδά) carry בֵּית into the New Testament and belong with the place entries. The second meaning “verse, stanza” and the letter name בֵּית are later than scripture and are not recorded. Senses not given their own heading: בָּתִּים woven for the Asherah (2Ki 23:7, hangings or shrines); “my house” for Yahweh’s land and people (Hos 8:1; 9:15; Jer 12:7), cited under the parallel with נַחֲלָה. SOURCES READ FROM OCR ONLY: Segert p. 182, Krahmalkov pp. 128–130 and Biella pp. 41–42 were read in the scans’ text layers (no PDF viewer was to hand), so their notes paraphrase and the page numbers come from the running heads; check them against the scans. The OCR does not tell ʾ from ʿ, so whether Krahmalkov’s TOMB is short for bt ʿlm (“house of eternity”) was not confirmed and is not quoted."
+}

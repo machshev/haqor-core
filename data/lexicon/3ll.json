@@ -1,0 +1,922 @@
+{
+  "id": "3ll",
+  "root": "עלל",
+  "status": "draft",
+  "updated": "2026-11-18",
+  "tags": [
+    "conduct",
+    "harvest",
+    "childhood",
+    "service"
+  ],
+  "gloss": "deal with; glean; thrust in",
+  "summary": "Jerusalem asks Yahweh to deal with her enemies as he has dealt with her. A grape gatherer who gleans goes back over the branches, while Job describes thrusting his horn into the dust. The Arabic parallels for repeated picking and for insertion preserve different consonants behind Hebrew ע.",
+  "words": [
+    {
+      "lemma": "מַעֲלָל",
+      "pos": "noun",
+      "gender": "m",
+      "bdb": [
+        "p.cu.af"
+      ],
+      "gloss": "deed, practice",
+      "senses": [
+        {
+          "gloss": "deed, practice",
+          "definition": "What a person does, especially conduct whose consequences the doer bears.",
+          "evidence": [
+            {
+              "ref": "Jer.17.10",
+              "role": "defining",
+              "note": "Yahweh gives each person according to the fruit of his deeds."
+            },
+            {
+              "ref": "Isa.1.16"
+            },
+            {
+              "ref": "Isa.3.10"
+            }
+          ],
+          "id": "practice",
+          "kin": [
+            "deed",
+            "action"
+          ]
+        }
+      ],
+      "summary": "Jeremiah speaks of deeds as bearing fruit. The wider connection between this family of action nouns and the harvesting verb is uncertain."
+    },
+    {
+      "lemma": "עֹל",
+      "pos": "noun",
+      "gender": "m",
+      "bdb": [
+        "p.cw.ab"
+      ],
+      "gloss": "yoke",
+      "senses": [
+        {
+          "id": "yoke",
+          "gloss": "yoke",
+          "definition": "A frame laid on the neck of a working animal. Under a king’s yoke a people performs the service he exacts.",
+          "evidence": [
+            {
+              "ref": "Num.19.2",
+              "role": "defining",
+              "note": "The heifer must never have borne a yoke."
+            },
+            {
+              "ref": "1Ki.12.4"
+            },
+            {
+              "ref": "Lev.26.13"
+            }
+          ],
+          "cognate_ids": [
+            "ar-ghull"
+          ]
+        }
+      ],
+      "summary": "The neck and the burden connect the animal’s yoke with compulsory service. Its derivation from the verb “thrust in” remains uncertain."
+    },
+    {
+      "lemma": "עֲלִילָה",
+      "pos": "noun",
+      "gender": "f",
+      "bdb": [
+        "p.cu.ad"
+      ],
+      "gloss": "deed",
+      "senses": [
+        {
+          "gloss": "deed",
+          "definition": "An act that displays an agent’s character or power. Israel is to make Yahweh’s deeds known among the peoples.",
+          "evidence": [
+            {
+              "ref": "Isa.12.4",
+              "role": "defining",
+              "note": "What Yahweh has done is to be declared."
+            },
+            {
+              "ref": "Ezk.36.19"
+            }
+          ],
+          "id": "deed",
+          "kin": [
+            "practice",
+            "action"
+          ]
+        },
+        {
+          "id": "alleged-conduct",
+          "gloss": "alleged conduct",
+          "definition": "A charge about someone’s behaviour, which can be disproved.",
+          "evidence": [
+            {
+              "ref": "Deu.22.17",
+              "role": "defining",
+              "note": "The parents answer the husband’s charge against their daughter."
+            },
+            {
+              "ref": "Deu.22.14"
+            }
+          ],
+          "cognate_ids": [
+            "ar-illa"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עָלַל",
+      "pos": "verb",
+      "gloss": "deal with; glean; thrust in",
+      "stems": [
+        {
+          "stem": "poel",
+          "gloss": "deal severely with; glean; thrust in; act the child",
+          "senses": [
+            {
+              "id": "deal-severely-with",
+              "gloss": "deal severely with",
+              "definition": "Do something grievous to another. Jerusalem asks that her enemies experience what she has experienced.",
+              "evidence": [
+                {
+                  "ref": "Lam.1.22",
+                  "role": "defining",
+                  "note": "The same verb describes her treatment and the treatment she asks for them."
+                }
+              ]
+            },
+            {
+              "gloss": "glean",
+              "definition": "Go back over a vineyard after picking, gathering what was left. Jeremiah pictures a hand reaching back to the branches.",
+              "evidence": [
+                {
+                  "ref": "Deu.24.21",
+                  "role": "defining",
+                  "note": "The first gatherer must leave the rest for the foreigner, orphan and widow."
+                },
+                {
+                  "ref": "Jer.6.9"
+                },
+                {
+                  "ref": "Jdg.20.45"
+                }
+              ],
+              "cognate_ids": [
+                "ar-taleel"
+              ],
+              "id": "glean",
+              "kin": [
+                "gleanings"
+              ]
+            },
+            {
+              "id": "thrust-in",
+              "gloss": "thrust in",
+              "definition": "Push something into another substance. Job describes his humiliation through the image of his horn in the dust.",
+              "evidence": [
+                {
+                  "ref": "Job.16.15",
+                  "role": "defining",
+                  "note": "The dust receives the horn."
+                }
+              ],
+              "cognate_ids": [
+                "ar-ghalla"
+              ]
+            },
+            {
+              "id": "act-the-child",
+              "gloss": "act the child",
+              "definition": "On one reading, an oppressor behaves like a child. The participle is difficult, though the chapter already associates children with rule.",
+              "evidence": [
+                {
+                  "ref": "Isa.3.12",
+                  "role": "defining",
+                  "note": "Compare the youths made princes in verse 4."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpael",
+          "gloss": "abuse, make sport of",
+          "senses": [
+            {
+              "id": "abuse-make-sport-of",
+              "gloss": "abuse, make sport of",
+              "definition": "Treat another as an object of cruelty or ridicule.",
+              "evidence": [
+                {
+                  "ref": "Jdg.19.25",
+                  "role": "defining",
+                  "note": "The woman suffers abuse throughout the night."
+                },
+                {
+                  "ref": "Num.22.29"
+                },
+                {
+                  "ref": "Exo.10.2"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpolel",
+          "gloss": "engage in deeds",
+          "senses": [
+            {
+              "id": "engage-in-deeds",
+              "gloss": "engage in deeds",
+              "definition": "Take part with others in a course of action.",
+              "evidence": [
+                {
+                  "ref": "Psa.141.4",
+                  "role": "defining",
+                  "note": "The speaker prays to be kept from participating in wicked deeds."
+                }
+              ],
+              "kin": [
+                "practice"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "poal",
+          "gloss": "be dealt to someone",
+          "senses": [
+            {
+              "id": "be-dealt-to-someone",
+              "gloss": "be dealt to someone",
+              "definition": "Describe the suffering inflicted on someone from the sufferer’s side.",
+              "evidence": [
+                {
+                  "ref": "Lam.1.12",
+                  "role": "defining",
+                  "note": "Jerusalem invites passers-by to look at the pain inflicted on her."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "bdb": [
+        "p.cu.aa"
+      ]
+    },
+    {
+      "lemma": "עוֹלֵל",
+      "pos": "noun",
+      "gender": "m",
+      "bdb": [
+        "p.cv.ab"
+      ],
+      "gloss": "little child",
+      "senses": [
+        {
+          "gloss": "little child",
+          "definition": "A child still dependent on others for food and protection.",
+          "evidence": [
+            {
+              "ref": "Lam.4.4",
+              "role": "defining",
+              "note": "The children ask for bread and no one gives it to them."
+            },
+            {
+              "ref": "Psa.8.3"
+            },
+            {
+              "ref": "Jol.2.16"
+            }
+          ],
+          "cognate_ids": [
+            "pun-child"
+          ],
+          "id": "child",
+          "kin": [
+            "baby"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "νήπιος",
+          "gloss": "little child",
+          "evidence": [
+            {
+              "ref": "Mat.21.16",
+              "note": "Jesus answers the objection to children crying out in the temple by citing the mouths of children and nursing ones."
+            },
+            {
+              "source": "macula-lxx",
+              "locator": "Psalm 8:3, עוֹלְלִים / νηπίων"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עֹלֵלוֹת",
+      "pos": "noun",
+      "gender": "f",
+      "bdb": [
+        "p.cu.ab"
+      ],
+      "gloss": "gleanings",
+      "senses": [
+        {
+          "gloss": "gleanings",
+          "definition": "The small remainder of fruit left on the branches after the harvest.",
+          "evidence": [
+            {
+              "ref": "Isa.17.6",
+              "role": "defining",
+              "note": "Isaiah counts the few olives still clinging to the branches."
+            },
+            {
+              "ref": "Jdg.8.2"
+            },
+            {
+              "ref": "Oba.1.5"
+            }
+          ],
+          "cognate_ids": [
+            "ar-taleel"
+          ],
+          "id": "gleanings",
+          "kin": [
+            "glean"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "תַּעֲלוּלִים",
+      "pos": "noun",
+      "gender": "m",
+      "bdb": [
+        "p.cu.ah"
+      ],
+      "gloss": "caprice, harsh dealings",
+      "senses": [
+        {
+          "id": "caprice-harsh-dealings",
+          "gloss": "caprice, harsh dealings",
+          "definition": "Unsettled or arbitrary treatment. In Isaiah the word describes what rules a people and what Yahweh chooses to bring on those who ignore his call.",
+          "evidence": [
+            {
+              "ref": "Isa.3.4",
+              "role": "defining",
+              "note": "Youths become princes and caprice governs."
+            },
+            {
+              "ref": "Isa.66.4"
+            }
+          ]
+        }
+      ],
+      "summary": "The two passages in Isaiah differ in emphasis. The connection between capricious government and the harsh treatment chosen in judgment is uncertain."
+    },
+    {
+      "lemma": "עֲלִילִיָּה",
+      "pos": "noun",
+      "gender": "f",
+      "bdb": [
+        "p.cu.ae"
+      ],
+      "gloss": "deed",
+      "senses": [
+        {
+          "gloss": "deed",
+          "definition": "Action, paired with counsel in Jeremiah’s description of Yahweh.",
+          "evidence": [
+            {
+              "ref": "Jer.32.19",
+              "role": "defining",
+              "note": "Great in counsel and mighty in deed precedes the judgment of human deeds."
+            }
+          ],
+          "id": "action",
+          "kin": [
+            "practice",
+            "deed"
+          ]
+        }
+      ],
+      "summary": "Jeremiah uses this rare formation alongside the common noun for deeds in the same verse."
+    },
+    {
+      "lemma": "עֲלִיל",
+      "pos": "noun",
+      "gender": "m",
+      "bdb": [
+        "p.cw.ac"
+      ],
+      "gloss": "furnace or crucible",
+      "senses": [
+        {
+          "id": "furnace-or-crucible",
+          "gloss": "furnace or crucible",
+          "definition": "The setting in which silver is refined in the psalm’s comparison. The single passage leaves the precise object uncertain.",
+          "evidence": [
+            {
+              "ref": "Psa.12.7",
+              "role": "defining",
+              "note": "Silver refined and purified seven times illustrates the purity of Yahweh’s words."
+            }
+          ]
+        }
+      ],
+      "summary": "The furnace reading depends on the silver-refining image in the only occurrence. Its derivation remains unclear."
+    },
+    {
+      "lemma": "עֲלַל",
+      "pos": "verb",
+      "gloss": "enter, bring in",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "enter",
+          "senses": [
+            {
+              "id": "enter",
+              "gloss": "enter",
+              "definition": "Go into a house or into someone’s presence.",
+              "evidence": [
+                {
+                  "ref": "Dan.6.11",
+                  "role": "defining",
+                  "note": "Daniel goes into his house to pray."
+                },
+                {
+                  "ref": "Dan.2.24"
+                }
+              ],
+              "cognate_ids": [
+                "ar-ghalla",
+                "arc-enter"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "haphel",
+          "gloss": "bring in",
+          "senses": [
+            {
+              "id": "bring-in",
+              "gloss": "bring in",
+              "definition": "Cause someone to enter the presence of another.",
+              "evidence": [
+                {
+                  "ref": "Dan.2.25",
+                  "role": "defining",
+                  "note": "Arioch takes Daniel before the king."
+                }
+              ],
+              "cognate_ids": [
+                "ar-ghalla",
+                "arc-enter"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hophal",
+          "gloss": "be brought in",
+          "senses": [
+            {
+              "id": "be-brought-in",
+              "gloss": "be brought in",
+              "definition": "Be taken into someone’s presence.",
+              "evidence": [
+                {
+                  "ref": "Dan.5.13",
+                  "role": "defining",
+                  "note": "Daniel is brought before Belshazzar."
+                }
+              ],
+              "cognate_ids": [
+                "ar-ghalla",
+                "arc-enter"
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "arc"
+    },
+    {
+      "lemma": "עִלָּה",
+      "pos": "noun",
+      "gender": "f",
+      "bdb": [
+        "xp.af.ac"
+      ],
+      "gloss": "ground for a charge",
+      "senses": [
+        {
+          "id": "ground-for-a-charge",
+          "gloss": "ground for a charge",
+          "definition": "An occasion or ground on which an accusation can be made.",
+          "evidence": [
+            {
+              "ref": "Dan.6.5",
+              "role": "defining",
+              "note": "The officials look for a ground of complaint in Daniel’s administration."
+            },
+            {
+              "ref": "Dan.6.6"
+            }
+          ],
+          "cognate_ids": [
+            "ar-illa"
+          ]
+        }
+      ],
+      "lang": "arc"
+    },
+    {
+      "lemma": "עַל",
+      "pos": "verb",
+      "gloss": "enter; bring in",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "go in",
+          "senses": [
+            {
+              "id": "go-in",
+              "gloss": "go in",
+              "definition": "Pass from outside to inside.",
+              "evidence": [
+                {
+                  "ref": "Jhn.20.6",
+                  "role": "defining",
+                  "note": "Simon Peter enters the tomb."
+                }
+              ],
+              "cognate_ids": [
+                "ar-ghalla",
+                "arc-enter"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "ethpaal",
+          "gloss": "enter into",
+          "senses": [
+            {
+              "id": "enter-into",
+              "gloss": "enter into",
+              "definition": "Come into another. The form occurs of the adversary entering Judas.",
+              "evidence": [
+                {
+                  "ref": "Jhn.13.27",
+                  "role": "defining",
+                  "note": "The entry follows Judas receiving the morsel."
+                }
+              ],
+              "cognate_ids": [
+                "ar-ghalla",
+                "arc-enter"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "aphel",
+          "gloss": "bring inside",
+          "senses": [
+            {
+              "id": "bring-inside",
+              "gloss": "bring inside",
+              "definition": "Take someone into an enclosed place.",
+              "evidence": [
+                {
+                  "ref": "Act.16.24",
+                  "role": "defining",
+                  "note": "The jailer brings the prisoners into the inner prison."
+                }
+              ],
+              "cognate_ids": [
+                "ar-ghalla",
+                "arc-enter"
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "root": "על"
+    },
+    {
+      "lemma": "עֻולָא",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "baby",
+      "senses": [
+        {
+          "gloss": "baby",
+          "definition": "A child in the womb or newly born.",
+          "evidence": [
+            {
+              "ref": "Luk.1.41",
+              "role": "defining",
+              "note": "The child leaps in Elizabeth’s womb."
+            },
+            {
+              "ref": "Luk.2.12"
+            }
+          ],
+          "cognate_ids": [
+            "pun-child"
+          ],
+          "id": "baby",
+          "kin": [
+            "child"
+          ]
+        }
+      ],
+      "lang": "syc",
+      "root": "עול"
+    },
+    {
+      "lemma": "מַעלָנָא",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "entry, access",
+      "senses": [
+        {
+          "id": "entry-access",
+          "gloss": "entry, access",
+          "definition": "An arrival or the freedom to enter.",
+          "evidence": [
+            {
+              "ref": "Heb.10.19",
+              "role": "defining",
+              "note": "The worshippers have confidence to enter the holy place."
+            },
+            {
+              "ref": "1Th.2.1"
+            }
+          ],
+          "cognate_ids": [
+            "ar-ghalla",
+            "arc-enter"
+          ]
+        }
+      ],
+      "lang": "syc",
+      "root": "על"
+    },
+    {
+      "lemma": "מַעלָנֻותָֿא",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "entry",
+      "senses": [
+        {
+          "id": "entry",
+          "gloss": "entry",
+          "definition": "The act of gaining admission, here surreptitiously.",
+          "evidence": [
+            {
+              "ref": "Jud.1.4",
+              "role": "defining",
+              "note": "The author warns of people who have slipped in among the believers."
+            }
+          ],
+          "cognate_ids": [
+            "ar-ghalla",
+            "arc-enter"
+          ]
+        }
+      ],
+      "lang": "syc",
+      "root": "על"
+    },
+    {
+      "lemma": "מַעַלתָּא",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "entrance",
+      "senses": [
+        {
+          "id": "entrance",
+          "gloss": "entrance",
+          "definition": "Admission to the place or state that a promise opens.",
+          "evidence": [
+            {
+              "ref": "2Pe.1.11",
+              "role": "defining",
+              "note": "Entrance into the enduring kingdom is described as richly supplied."
+            },
+            {
+              "ref": "Heb.4.1"
+            }
+          ],
+          "cognate_ids": [
+            "ar-ghalla",
+            "arc-enter"
+          ]
+        }
+      ],
+      "lang": "syc",
+      "root": "על"
+    },
+    {
+      "lemma": "עַלַּלתָֿא",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "produce",
+      "senses": [
+        {
+          "id": "produce",
+          "gloss": "produce",
+          "definition": "The yield of a field that can be gathered and stored.",
+          "evidence": [
+            {
+              "ref": "Luk.12.17",
+              "role": "defining",
+              "note": "The landowner lacks room for his crops."
+            },
+            {
+              "ref": "1Co.9.10"
+            }
+          ],
+          "cognate_ids": [
+            "arc-harvest"
+          ]
+        }
+      ],
+      "lang": "syc",
+      "root": "על"
+    },
+    {
+      "lemma": "עֵלתָֿא",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "cause, pretext",
+      "senses": [
+        {
+          "id": "cause-pretext",
+          "gloss": "cause, pretext",
+          "definition": "The reason for an action or a ground alleged to justify it. A stated reason can disguise the real one.",
+          "evidence": [
+            {
+              "ref": "Act.27.30",
+              "role": "defining",
+              "note": "The sailors lower the boat on the pretext of putting out anchors."
+            },
+            {
+              "ref": "Luk.23.4"
+            },
+            {
+              "ref": "Php.1.18"
+            }
+          ],
+          "cognate_ids": [
+            "ar-illa"
+          ]
+        }
+      ],
+      "lang": "syc",
+      "root": "על"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-taleel",
+      "lang": "ar",
+      "form": "تَعْلِيل",
+      "translit": "taʿlīl",
+      "gloss": "repeated picking of fruit",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 2123, n30118, second sense"
+        }
+      ]
+    },
+    {
+      "id": "ar-ghalla",
+      "lang": "ar",
+      "form": "غَلَّ",
+      "translit": "ġalla",
+      "gloss": "make something enter, insert",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ġ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 2277, n32159"
+        }
+      ]
+    },
+    {
+      "id": "ar-ghull",
+      "lang": "ar",
+      "form": "غُلّ",
+      "translit": "ġull",
+      "gloss": "iron neck collar or shackle",
+      "relation": "possible",
+      "sounds": {
+        "ע": "ġ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 2278, n32166"
+        }
+      ]
+    },
+    {
+      "id": "ar-illa",
+      "lang": "ar",
+      "form": "عِلَّة",
+      "translit": "ʿilla",
+      "gloss": "cause, plea or pretext",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 2124, n30131, senses 4–5"
+        }
+      ]
+    },
+    {
+      "id": "pun-child",
+      "lang": "phn",
+      "form": "𐤏𐤋",
+      "translit": "ʿl",
+      "gloss": "nursing child",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "krahmalkov-2000",
+          "locator": "Punic ʿL I, CIS I 198, lines 1–5, Mago names his nursing son Idnibal"
+        }
+      ]
+    },
+    {
+      "id": "arc-enter",
+      "lang": "arc",
+      "form": "עֲלַל",
+      "translit": "ʿălal",
+      "gloss": "enter a town or house",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "Aramaic lemma עֲלַל I, P00815, citing Targum Proverbs 11:2 and Jerusalem Talmud Taanit I, 64b"
+        }
+      ]
+    },
+    {
+      "id": "arc-harvest",
+      "lang": "arc",
+      "form": "עֲלַלְתָּא",
+      "translit": "ʿălaltā",
+      "gloss": "harvest, produce",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "Aramaic lemma עֲלַל II, P00816, Targum Isaiah 30:23"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "gleanings-for-the-poor",
+      "statement": "When a grower has picked the vineyard, Yahweh directs that the remaining grapes be left for the foreigner, the orphan and the widow. Israel is to remember its own slavery in Egypt when it leaves that second gathering to others.",
+      "evidence": [
+        {
+          "ref": "Lev.19.10"
+        },
+        {
+          "ref": "Deu.24.21",
+          "to": "Deu.24.22"
+        }
+      ]
+    }
+  ],
+  "note": "The four Hebrew verb keys p.cu.aa/ac, p.cv.ac and p.cw.aa duplicate the same tokens. Count one set; even it includes two child nouns. The child key also includes a gleaning verb in Jer 6:9. Omitted xp.ag.aa from the Aramaic verb because it would count thousands of prepositions, which belong to alah. The SEDRA enter family is root 1378, lexemes 2313–2318; the infant is lexeme 2269. The Punic form directly parallels the shorter infant noun; its bearing on the expanded Hebrew form is semantic as well as formal. The Arabic collar is a possible parallel for the yoke. Links from deeds to the child, yoke and refining vessel remain uncertain. No clear personal name appears among the keys. The suggested Geʿez infant parallel remains to be checked against its dictionary."
+}

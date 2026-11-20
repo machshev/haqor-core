@@ -1,0 +1,129 @@
+{
+  "id": "qeebaah",
+  "root": "קבה",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "tags": [
+    "body"
+  ],
+  "gloss": "stomach, maw, belly",
+  "summary": "Deuteronomy lists the stomach beside the foreleg and cheeks as the priest’s share of an ox or sheep. Numbers uses a suffixed form for the part of the woman’s body pierced by Phinehas.",
+  "words": [
+    {
+      "lemma": "קֵבָה",
+      "pos": "noun",
+      "gender": "f",
+      "bdb": [
+        "s.ad.ab",
+        "s.ah.ae"
+      ],
+      "gloss": "stomach, maw, belly",
+      "senses": [
+        {
+          "id": "maw",
+          "gloss": "stomach of a slaughtered animal",
+          "definition": "The stomach portion set aside for the priest when an ox or sheep is slaughtered.",
+          "evidence": [
+            {
+              "ref": "Deu.18.3",
+              "role": "defining",
+              "note": "The instruction names the animal and assigns the priest three specific portions, ending with the stomach."
+            }
+          ],
+          "cognate_ids": [
+            "arc-maw",
+            "jpa-stomach",
+            "ar-maw",
+            "tig-stomach",
+            "akk-stomach"
+          ]
+        },
+        {
+          "id": "belly",
+          "gloss": "belly, abdomen",
+          "definition": "The part of the woman’s body through which the spear passes.",
+          "evidence": [
+            {
+              "ref": "Num.25.8",
+              "role": "defining",
+              "note": "The feminine suffix identifies the woman as the person whose belly the spear reaches."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-maw",
+      "lang": "arc",
+      "form": "קֵיבְתָא",
+      "translit": "qēḇṯā",
+      "gloss": "maw, part of a ruminant’s stomach",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "cal",
+          "locator": "Targum Onkelos Deuteronomy 18:3, text also cited under lwˁ, lwˁˀ"
+        }
+      ]
+    },
+    {
+      "id": "jpa-stomach",
+      "lang": "arc",
+      "form": "קיבתא",
+      "translit": "qybtʾ",
+      "gloss": "stomach compartment following the rumen",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "cal",
+          "locator": "msys, msysˀ, Qohelet Rabbah [1]21:1(10)"
+        }
+      ]
+    },
+    {
+      "id": "ar-maw",
+      "lang": "ar",
+      "form": "قِبَّةُ الشَّاةِ",
+      "translit": "qibbat al-šāh",
+      "gloss": "a chamber of the stomach of a sheep or goat",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "n35032, p. 2478, with the variant qiba at n42197, p. 2958"
+        }
+      ]
+    },
+    {
+      "id": "tig-stomach",
+      "lang": "sem",
+      "form": "kəbbet",
+      "translit": "kəbbet",
+      "gloss": "Tigre stuffed goat’s stomach",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "littmann-hoefner-1962",
+          "locator": "pp. 249–250, as cited in Dolgopolsky, Nostratic Dictionary, §1904"
+        }
+      ]
+    },
+    {
+      "id": "akk-stomach",
+      "lang": "akk",
+      "form": "kukkubānu",
+      "translit": "kukkubānu",
+      "gloss": "part of an animal’s stomach",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000099440, dcclt x0057940"
+        }
+      ]
+    }
+  ],
+  "note": "The pastoral and legal comparisons support a stomach compartment in Deuteronomy. The verse gives no anatomical description that settles which compartment. In Numbers the opening קֻבָּה names the enclosure Phinehas enters, while קֳבָתָהּ marks where he wounds the woman. The precise organ is uncertain. Dolgopolsky §1904 tentatively compares the longer Akkadian form."
+}

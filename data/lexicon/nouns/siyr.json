@@ -1,0 +1,72 @@
+{
+  "id": "siyr",
+  "root": "סיר",
+  "status": "draft",
+  "created": "2026-11-20",
+  "updated": "2026-11-19",
+  "gloss": "cooking pot, thorn",
+  "summary": "A pot is set on the fire and filled with water and meat. The same spelling also names a thorn, and Ecclesiastes plays on the sound of thorns crackling beneath a pot.",
+  "words": [
+    {
+      "lemma": "סִיר",
+      "bdb": [
+        "o.az.as"
+      ],
+      "pos": "noun",
+      "gloss": "pot, basin",
+      "senses": [
+        {
+          "id": "pot-basin",
+          "gloss": "pot, basin",
+          "definition": "Elisha tells his servant to set the large pot on to boil stew. A psalm pictures thorn fuel under cooking pots and calls Moab a basin for washing.",
+          "evidence": [
+            {
+              "ref": "2Ki.4.38",
+              "role": "defining"
+            },
+            {
+              "ref": "Ezk.24.3"
+            },
+            {
+              "ref": "Psa.58.10"
+            },
+            {
+              "ref": "Psa.60.10"
+            }
+          ]
+        }
+      ],
+      "gender": "mf"
+    },
+    {
+      "lemma": "סִיר",
+      "bdb": [
+        "o.az.at"
+      ],
+      "pos": "noun",
+      "gloss": "thorn, hook",
+      "senses": [
+        {
+          "id": "thorn-hook",
+          "gloss": "thorn, hook",
+          "definition": "Thorn bushes grow among the ruins of Edom. Ecclesiastes compares a fool’s laughter to thorns crackling under a pot. The hooks in Amos are used to haul people away.",
+          "evidence": [
+            {
+              "ref": "Isa.34.13",
+              "role": "defining"
+            },
+            {
+              "ref": "Ecc.7.6"
+            },
+            {
+              "ref": "Amo.4.2"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    }
+  ],
+  "cognates": [],
+  "note": "The indexing groups the vessel with סחר, travel and trade. Neither the form nor the passages show that derivation. The verse in Ecclesiastes deliberately brings the two nouns together."
+}

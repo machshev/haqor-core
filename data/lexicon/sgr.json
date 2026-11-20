@@ -1,0 +1,372 @@
+{
+  "id": "sgr",
+  "root": "סגר",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "confinement",
+    "craftsmanship"
+  ],
+  "gloss": "shut, confine, hand over",
+  "summary": "Doors and gates give the basic picture of closing. A person can also be enclosed for observation or handed over into another’s power.",
+  "words": [
+    {
+      "lemma": "סָגַר",
+      "bdb": [
+        "o.ai.aa"
+      ],
+      "pos": "verb",
+      "gloss": "shut, confine, surrender",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "close up",
+          "senses": [
+            {
+              "id": "shut-an-opening",
+              "gloss": "shut an opening",
+              "definition": "Visitors pull Lot to safety and close his door. The same verb describes closing an opening in flesh and shutting a womb.",
+              "evidence": [
+                {
+                  "ref": "Gen.19.10",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Gen.2.21"
+                },
+                {
+                  "ref": "1Sa.1.6"
+                }
+              ]
+            },
+            {
+              "id": "close-oneself-against-another",
+              "gloss": "close oneself against another",
+              "definition": "The enemies close up their fat and speak proudly in Psalm 17. The object makes the physical image unusual; the surrounding speech describes their hard attitude.",
+              "evidence": [
+                {
+                  "ref": "Psa.17.10",
+                  "role": "defining"
+                }
+              ]
+            },
+            {
+              "id": "choice-or-refined",
+              "gloss": "choice or refined",
+              "definition": "The passive form qualifies the gold used in the temple furnishings.",
+              "evidence": [
+                {
+                  "ref": "1Ki.7.49",
+                  "to": "1Ki.7.50",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be confined",
+          "senses": [
+            {
+              "id": "be-confined",
+              "gloss": "be confined",
+              "definition": "Miriam is confined outside the camp for seven days.",
+              "evidence": [
+                {
+                  "ref": "Num.12.14",
+                  "to": "Num.12.15",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "deliver into another’s power",
+          "senses": [
+            {
+              "id": "deliver-into-another-s",
+              "gloss": "deliver into another’s power",
+              "definition": "David says Yahweh will deliver Goliath into his hand.",
+              "evidence": [
+                {
+                  "ref": "1Sa.17.46",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be shut up",
+          "senses": [
+            {
+              "id": "be-shut-up",
+              "gloss": "be shut up",
+              "definition": "Jericho is tightly closed and nobody enters or leaves.",
+              "evidence": [
+                {
+                  "ref": "Jos.6.1",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Isa.24.10"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "confine or hand over",
+          "senses": [
+            {
+              "id": "isolate",
+              "gloss": "isolate",
+              "definition": "The priest confines a person for observation before inspecting the skin again.",
+              "evidence": [
+                {
+                  "ref": "Lev.13.4",
+                  "to": "Lev.13.5",
+                  "role": "defining"
+                }
+              ]
+            },
+            {
+              "id": "hand-over",
+              "gloss": "hand over",
+              "definition": "David asks whether the people of Keilah will surrender him to Saul.",
+              "evidence": [
+                {
+                  "ref": "1Sa.23.12",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Deu.32.30"
+                },
+                {
+                  "ref": "Amo.1.9"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-segar"
+      ]
+    },
+    {
+      "lemma": "סְגַר",
+      "bdb": [
+        "xo.ac.ad"
+      ],
+      "pos": "verb",
+      "gloss": "shut",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "shut",
+          "senses": [
+            {
+              "id": "shut",
+              "gloss": "shut",
+              "definition": "Daniel says that God sent his angel and shut the lions’ mouths.",
+              "evidence": [
+                {
+                  "ref": "Dan.6.23",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "arc",
+      "cognate_ids": [
+        "arc-segar"
+      ]
+    },
+    {
+      "lemma": "סְגוֹר",
+      "bdb": [
+        "o.ai.ab"
+      ],
+      "pos": "noun",
+      "gloss": "enclosure; gold",
+      "senses": [
+        {
+          "id": "enclosure",
+          "gloss": "enclosure",
+          "definition": "Hosea pictures a bear tearing open the covering around the heart.",
+          "evidence": [
+            {
+              "ref": "Hos.13.8",
+              "role": "defining"
+            }
+          ]
+        },
+        {
+          "id": "gold",
+          "gloss": "gold",
+          "definition": "In the poem about wisdom, this term stands parallel to silver weighed out as payment.",
+          "evidence": [
+            {
+              "ref": "Job.28.15",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "סוּגַר",
+      "bdb": [
+        "o.ai.ac"
+      ],
+      "pos": "noun",
+      "gloss": "cage",
+      "senses": [
+        {
+          "id": "cage",
+          "gloss": "cage",
+          "definition": "The captured lion is transported to the king of Babylon in a cage.",
+          "evidence": [
+            {
+              "ref": "Ezk.19.9",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "מַסְגֵּר",
+      "bdb": [
+        "o.ai.ad"
+      ],
+      "pos": "noun",
+      "gloss": "prison, smith",
+      "senses": [
+        {
+          "id": "prison",
+          "gloss": "prison",
+          "definition": "The servant is commissioned to bring prisoners out of confinement.",
+          "evidence": [
+            {
+              "ref": "Isa.42.7",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.142.8"
+            }
+          ]
+        },
+        {
+          "id": "smith-or-metalworker",
+          "gloss": "smith or metalworker",
+          "definition": "The deportation lists group these workers with other skilled craftsmen. Their exact specialization is unclear.",
+          "evidence": [
+            {
+              "ref": "Jer.24.1",
+              "role": "defining"
+            },
+            {
+              "ref": "Jer.29.2"
+            },
+            {
+              "ref": "2Ki.24.14"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "מִסְגֶּרֶת",
+      "bdb": [
+        "o.ai.ae"
+      ],
+      "pos": "noun",
+      "gloss": "rim, frame, enclosure",
+      "senses": [
+        {
+          "id": "rim-or-frame",
+          "gloss": "rim or frame",
+          "definition": "The table is fitted with a rim a handbreadth wide. The bronze stands for the temple have frames bearing animal figures.",
+          "evidence": [
+            {
+              "ref": "Exo.25.25",
+              "role": "defining"
+            },
+            {
+              "ref": "1Ki.7.28",
+              "to": "1Ki.7.29"
+            }
+          ]
+        },
+        {
+          "id": "stronghold",
+          "gloss": "stronghold",
+          "definition": "Foreigners come trembling out of their enclosed strongholds.",
+          "evidence": [
+            {
+              "ref": "Psa.18.46",
+              "role": "defining"
+            },
+            {
+              "ref": "2Sa.22.46"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "סַגְרִיר",
+      "bdb": [
+        "o.aj.ab"
+      ],
+      "pos": "noun",
+      "gloss": "persistent rain",
+      "senses": [
+        {
+          "id": "persistent-rain",
+          "gloss": "persistent rain",
+          "definition": "A proverb likens the sound of a quarrelsome woman to continual dripping on a rainy day.",
+          "evidence": [
+            {
+              "ref": "Pro.27.15",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-segar",
+      "lang": "arc",
+      "form": "סְגַר",
+      "translit": "səgar",
+      "gloss": "shut, bar",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "סְגַר, Targum Job 38:8 manuscript reading; barred or fenced in at Targum Song 1:9"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The gold terminology and the word for persistent rain have less secure connections to shutting. Similar-looking terms for linen and stocks have different consonantal roots."
+}

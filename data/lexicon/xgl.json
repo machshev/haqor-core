@@ -1,0 +1,133 @@
+{
+  "id": "xgl",
+  "root": "שגל",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [],
+  "gloss": "royal consort, violate",
+  "summary": "The queen stands at the king’s right hand in the wedding song and sits beside him when he speaks to Nehemiah. The written forms of a verb with the same consonants describe the sexual violence that accompanies conquest.",
+  "words": [
+    {
+      "lemma": "שֵׁגָל",
+      "pos": "noun",
+      "gloss": "queen, royal consort",
+      "bdb": [
+        "v.bd.ab"
+      ],
+      "gender": "f",
+      "senses": [
+        {
+          "id": "queen-royal-consort",
+          "gloss": "queen, royal consort",
+          "definition": "The woman wears Ophir gold beside the king. Nehemiah distinguishes the king who questions him from the queen seated at his side.",
+          "evidence": [
+            {
+              "ref": "Psa.45.10",
+              "role": "defining"
+            },
+            {
+              "ref": "Neh.2.6",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שֵׁגָל",
+      "pos": "noun",
+      "gloss": "royal wife",
+      "bdb": [
+        "xv.af.ab"
+      ],
+      "lang": "arc",
+      "gender": "f",
+      "senses": [
+        {
+          "id": "royal-wife",
+          "gloss": "royal wife",
+          "definition": "Belshazzar’s wives drink with him, his nobles and his concubines.",
+          "evidence": [
+            {
+              "ref": "Dan.5.2",
+              "role": "defining"
+            },
+            {
+              "ref": "Dan.5.23",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שָׁגַל",
+      "pos": "verb",
+      "gloss": "violate sexually",
+      "bdb": [
+        "v.bd.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "violate",
+          "senses": [
+            {
+              "id": "violate",
+              "gloss": "violate",
+              "definition": "The curse describes a man pledging himself to a woman and another taking her.",
+              "evidence": [
+                {
+                  "ref": "Deu.28.30",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be violated",
+          "senses": [
+            {
+              "id": "be-violated",
+              "gloss": "be violated",
+              "definition": "The invaders plunder houses and violate women.",
+              "evidence": [
+                {
+                  "ref": "Isa.13.16",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Zec.14.2",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be lain with",
+          "senses": [
+            {
+              "id": "be-lain-with",
+              "gloss": "be lain with",
+              "definition": "Jeremiah pictures Judah’s infidelity in terms of sexual encounters throughout the land.",
+              "evidence": [
+                {
+                  "ref": "Jer.3.2",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [],
+  "doctrine": [],
+  "note": "The public reading substitutes forms of שכב in the four passages with the verb. The origin of the royal title and its relation to the verb are uncertain. Lane’s سجل describes pouring water, a distant comparison."
+}

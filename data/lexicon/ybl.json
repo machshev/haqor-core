@@ -1,0 +1,511 @@
+{
+  "id": "ybl",
+  "root": "יבל",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "earth",
+    "travel",
+    "agriculture"
+  ],
+  "gloss": "world, produce, bring",
+  "summary": "The world is both the physical earth and the home of the peoples whom Yahweh judges. The verb describes bringing gifts or leading people, and other nouns name produce and flowing water.",
+  "words": [
+    {
+      "lemma": "תֵּבֵל",
+      "bdb": [
+        "j.ah.ak",
+        "w.ae.al"
+      ],
+      "pos": "noun",
+      "gloss": "world, inhabited earth",
+      "senses": [
+        {
+          "id": "world-and-its-inhabitants",
+          "gloss": "world and its inhabitants",
+          "definition": "Yahweh judges the world with righteousness and its peoples with equity. Psalm 24 pairs the world with those who live in it.",
+          "evidence": [
+            {
+              "ref": "Psa.9.9",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.24.1"
+            },
+            {
+              "ref": "Psa.96.13"
+            }
+          ]
+        },
+        {
+          "id": "world-as-a-physical",
+          "gloss": "world as a physical expanse",
+          "definition": "At Yahweh’s rebuke the foundations of the world appear. The witness of the heavens reaches to the ends of the world.",
+          "evidence": [
+            {
+              "ref": "Psa.18.16",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.19.5"
+            },
+            {
+              "ref": "Psa.90.2"
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "cognate_ids": [
+        "arc-tevel"
+      ],
+      "greek": [
+        {
+          "lemma": "οἰκουμένη",
+          "gloss": "inhabited world",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "PSA 19:5, cited in Romans"
+            },
+            {
+              "ref": "Rom.10.18"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "יָבַל",
+      "bdb": [
+        "j.ah.aa"
+      ],
+      "pos": "verb",
+      "gloss": "lead, bring",
+      "stems": [
+        {
+          "stem": "hiphil",
+          "gloss": "conduct or convey",
+          "senses": [
+            {
+              "gloss": "conduct or convey",
+              "definition": "Yahweh promises to lead the returning people beside water. Worshippers from beyond the rivers of Cush will bring an offering.",
+              "evidence": [
+                {
+                  "ref": "Jer.31.9",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Zep.3.10"
+                }
+              ],
+              "id": "bring"
+            }
+          ]
+        },
+        {
+          "stem": "hophal",
+          "gloss": "be led or brought",
+          "senses": [
+            {
+              "id": "be-led-or-brought",
+              "gloss": "be led or brought",
+              "definition": "The servant is led like a sheep to slaughter. Tribute is brought to Yahweh.",
+              "evidence": [
+                {
+                  "ref": "Isa.53.7",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Isa.18.7"
+                },
+                {
+                  "ref": "Isa.55.12"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "akk-wabalu"
+      ]
+    },
+    {
+      "lemma": "יְבוּל",
+      "bdb": [
+        "j.ah.af"
+      ],
+      "pos": "noun",
+      "gloss": "produce of the land",
+      "senses": [
+        {
+          "id": "produce-of-the-land",
+          "gloss": "produce of the land",
+          "definition": "The land yields its produce when rain comes in season. The psalm celebrates the earth giving its increase.",
+          "evidence": [
+            {
+              "ref": "Lev.26.4",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.67.7"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "בּוּל",
+      "bdb": [
+        "j.ah.ag",
+        "b.ar.ad"
+      ],
+      "pos": "noun",
+      "gloss": "produce, growth",
+      "senses": [
+        {
+          "id": "produce-growth",
+          "gloss": "produce, growth",
+          "definition": "The hills supply food for the great beast. Isaiah speaks of the product of a tree from which a person fashions an image.",
+          "evidence": [
+            {
+              "ref": "Job.40.20",
+              "role": "defining"
+            },
+            {
+              "ref": "Isa.44.19"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "יָבָל",
+      "bdb": [
+        "j.ah.ab"
+      ],
+      "pos": "noun",
+      "gloss": "watercourse",
+      "senses": [
+        {
+          "id": "watercourse",
+          "gloss": "watercourse",
+          "definition": "Isaiah pictures water running on the mountains and willows growing beside watercourses.",
+          "evidence": [
+            {
+              "ref": "Isa.30.25",
+              "role": "defining"
+            },
+            {
+              "ref": "Isa.44.4"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "יוּבַל",
+      "bdb": [
+        "j.ah.ad",
+        "j.ax.af"
+      ],
+      "pos": "noun",
+      "gloss": "stream",
+      "senses": [
+        {
+          "id": "stream",
+          "gloss": "stream",
+          "definition": "The person trusting in Yahweh is compared with a tree that sends its roots toward a stream.",
+          "evidence": [
+            {
+              "ref": "Jer.17.8",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "אוּבַל",
+      "bdb": [
+        "j.ah.aj",
+        "a.al.ac"
+      ],
+      "pos": "noun",
+      "gloss": "canal, waterway",
+      "senses": [
+        {
+          "id": "canal-waterway",
+          "gloss": "canal, waterway",
+          "definition": "Daniel sees himself beside the waterway of the Ulai at Susa.",
+          "evidence": [
+            {
+              "ref": "Dan.8.2",
+              "to": "Dan.8.3",
+              "role": "defining"
+            },
+            {
+              "ref": "Dan.8.6"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "יוֹבֵל",
+      "bdb": [
+        "j.ah.ah"
+      ],
+      "pos": "noun",
+      "gloss": "ram’s horn, jubilee",
+      "senses": [
+        {
+          "id": "ram-s-horn",
+          "gloss": "ram’s horn",
+          "definition": "A long horn blast signals when the people may approach the mountain. The priests at Jericho carry trumpets described as rams’ horns.",
+          "evidence": [
+            {
+              "ref": "Exo.19.13",
+              "role": "defining"
+            },
+            {
+              "ref": "Jos.6.4",
+              "to": "Jos.6.5"
+            }
+          ]
+        },
+        {
+          "id": "jubilee-year",
+          "gloss": "jubilee year",
+          "definition": "A trumpet sounds to proclaim liberty in the fiftieth year. People return to their hereditary property, and the land rests.",
+          "evidence": [
+            {
+              "ref": "Lev.25.9",
+              "to": "Lev.25.13",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "יַבָּל",
+      "bdb": [
+        "j.ah.ai",
+        "j.ah.am"
+      ],
+      "pos": "adjective",
+      "gloss": "having a growth or sore",
+      "senses": [
+        {
+          "id": "having-a-growth-or",
+          "gloss": "having a growth or sore",
+          "definition": "This term is among the bodily blemishes disqualifying an animal as an altar offering. The text does not specify the exact medical condition.",
+          "evidence": [
+            {
+              "ref": "Lev.22.22",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "יְבַל",
+      "bdb": [
+        "xj.aa.aa"
+      ],
+      "pos": "verb",
+      "gloss": "bring, carry",
+      "stems": [
+        {
+          "stem": "haphel",
+          "gloss": "bring from one place to another",
+          "senses": [
+            {
+              "id": "bring-from-one-place",
+              "gloss": "bring from one place to another",
+              "definition": "Nebuchadnezzar carried away the temple vessels. Ezra is authorised to bring the king’s silver and gold to Jerusalem.",
+              "evidence": [
+                {
+                  "ref": "Ezr.5.14",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Ezr.7.15"
+                }
+              ],
+              "kin": [
+                "bring"
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "arc",
+      "cognate_ids": [
+        "akk-wabalu"
+      ]
+    },
+    {
+      "lemma": "יִבְלְעָם",
+      "bdb": [
+        "j.ah.al"
+      ],
+      "pos": "noun",
+      "gloss": "Ibleam",
+      "senses": [
+        {
+          "id": "ibleam",
+          "gloss": "Ibleam",
+          "definition": "Ibleam is listed among the towns allotted to Manasseh. Its inhabitants remain there despite the Israelite settlement.",
+          "evidence": [
+            {
+              "ref": "Jos.17.11",
+              "role": "defining"
+            },
+            {
+              "ref": "Jdg.1.27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "יַבֶּל",
+      "pos": "verb",
+      "gloss": "lead, convey",
+      "stems": [
+        {
+          "stem": "aphel",
+          "gloss": "take or conduct",
+          "senses": [
+            {
+              "id": "take-or-conduct",
+              "gloss": "take or conduct",
+              "definition": "Those who arrested Jesus lead him to the high priest. A Roman officer has a young man brought to the commander.",
+              "evidence": [
+                {
+                  "ref": "Mat.26.57",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Act.23.17"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "ethpaal",
+          "gloss": "be brought down or transmitted",
+          "senses": [
+            {
+              "id": "be-brought-down-or",
+              "gloss": "be brought down or transmitted",
+              "definition": "Stephen describes the tent of testimony passing to the generation that entered the land with Joshua.",
+              "evidence": [
+                {
+                  "ref": "Act.7.45",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "cognate_ids": [
+        "akk-wabalu"
+      ]
+    },
+    {
+      "lemma": "יוּבָּלָא",
+      "pos": "noun",
+      "gloss": "course, succession",
+      "senses": [
+        {
+          "id": "course-succession",
+          "gloss": "course, succession",
+          "definition": "James pictures the tongue setting the course of life on fire.",
+          "evidence": [
+            {
+              "ref": "Jas.3.6",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "cognate_ids": [
+        "akk-wabalu"
+      ]
+    },
+    {
+      "lemma": "מוֹבָּלָא",
+      "pos": "noun",
+      "gloss": "burden, cargo",
+      "senses": [
+        {
+          "id": "burden-cargo",
+          "gloss": "burden, cargo",
+          "definition": "Jesus calls his burden light. The merchants in Revelation lose the market for their cargo.",
+          "evidence": [
+            {
+              "ref": "Mat.11.30",
+              "role": "defining"
+            },
+            {
+              "ref": "Rev.18.11",
+              "to": "Rev.18.12"
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "cognate_ids": [
+        "akk-wabalu"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-tevel",
+      "lang": "arc",
+      "form": "תֵּבֵל",
+      "translit": "tēbēl",
+      "gloss": "world",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "תֵּבֵל II, Targum Psalms 18:16 and 90:2"
+        }
+      ]
+    },
+    {
+      "id": "akk-wabalu",
+      "lang": "akk",
+      "form": "wabālu",
+      "translit": "wabālu",
+      "gloss": "bring, carry",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep/x000010270, wabālu [bring]"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The imagery of a productive world suggests a link between world and yield, but the psalms establish the meaning without relying on that derivation. The horn, jubilee and animal blemish have their own scriptural settings."
+}

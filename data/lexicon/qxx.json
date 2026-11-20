@@ -1,0 +1,267 @@
+{
+  "id": "qxx",
+  "root": "קשש",
+  "status": "draft",
+  "updated": "2026-11-18",
+  "tags": [
+    "agriculture"
+  ],
+  "gloss": "stubble; gather straw or sticks; gather together",
+  "summary": "When Pharaoh withholds straw, the Israelites gather the stalks left in the fields. The same verb describes people picking up sticks in the wilderness and at Zarephath. Zephaniah turns it into a summons addressed to a nation.",
+  "words": [
+    {
+      "lemma": "קַשׁ",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "stubble, dry stalks",
+      "bdb": [
+        "s.dx.ab"
+      ],
+      "senses": [
+        {
+          "id": "stubble",
+          "gloss": "stubble",
+          "definition": "Dry stalks left after harvest. Their lightness and their readiness to burn make them an image of how quickly someone can be swept away or destroyed.",
+          "evidence": [
+            {
+              "ref": "Exo.5.12",
+              "role": "defining",
+              "note": "The workers gather stubble as a substitute for the straw they had been given."
+            },
+            {
+              "ref": "Isa.5.24",
+              "role": "defining",
+              "note": "A tongue of fire consumes dry stalks."
+            },
+            {
+              "ref": "Isa.40.24",
+              "role": "defining",
+              "note": "A whirlwind carries the withered rulers away like stubble."
+            },
+            {
+              "ref": "Jol.2.5",
+              "role": "defining",
+              "note": "The approaching host sounds like fire consuming stubble."
+            },
+            {
+              "ref": "Job.13.25",
+              "role": "defining",
+              "note": "Job compares himself to a windblown leaf and dry stubble."
+            },
+            {
+              "ref": "Oba.1.18",
+              "role": "defining",
+              "note": "Esau is likened to stubble consumed by a flame."
+            }
+          ],
+          "cognate_ids": [
+            "arc-stubble",
+            "syc-stubble",
+            "ar-stubble"
+          ],
+          "kin": [
+            "pick-up"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קָשַׁשׁ",
+      "pos": "verb",
+      "bdb": [
+        "s.dx.ac",
+        "s.dy.aa"
+      ],
+      "gloss": "gather straw or sticks; come together",
+      "stems": [
+        {
+          "stem": "poel",
+          "gloss": "gather up",
+          "senses": [
+            {
+              "id": "pick-up",
+              "gloss": "gather up",
+              "definition": "To collect scattered stalks or pieces of wood.",
+              "evidence": [
+                {
+                  "ref": "Exo.5.7",
+                  "role": "defining",
+                  "note": "The workers must gather their own straw."
+                },
+                {
+                  "ref": "Exo.5.12",
+                  "role": "defining",
+                  "note": "Stubble is the object of the gathering."
+                },
+                {
+                  "ref": "Num.15.32",
+                  "role": "defining",
+                  "note": "A man is found gathering wood on the Sabbath."
+                },
+                {
+                  "ref": "Num.15.33",
+                  "role": "defining",
+                  "note": "Those who found him gathering wood bring him to Moses and Aaron."
+                },
+                {
+                  "ref": "1Ki.17.10",
+                  "role": "defining",
+                  "note": "Elijah meets the widow gathering sticks."
+                },
+                {
+                  "ref": "1Ki.17.12",
+                  "role": "defining",
+                  "note": "She explains that the sticks are for her last meal."
+                }
+              ],
+              "cognate_ids": [
+                "syc-gather",
+                "ar-gather"
+              ],
+              "kin": [
+                "stubble"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpolel",
+          "gloss": "gather yourselves",
+          "senses": [
+            {
+              "id": "assemble",
+              "gloss": "gather yourselves",
+              "definition": "A summons for people to come together.",
+              "evidence": [
+                {
+                  "ref": "Zep.2.1",
+                  "role": "defining",
+                  "note": "The prophet addresses the nation with a plural command to gather itself."
+                }
+              ],
+              "cognate_ids": [
+                "ar-group"
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "qal",
+          "gloss": "gather",
+          "senses": [
+            {
+              "id": "gather",
+              "gloss": "gather",
+              "definition": "To assemble, repeating the preceding summons.",
+              "evidence": [
+                {
+                  "ref": "Zep.2.1",
+                  "role": "defining",
+                  "note": "A shorter imperative follows the call to gather yourselves."
+                }
+              ],
+              "cognate_ids": [
+                "ar-group"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-stubble",
+      "lang": "arc",
+      "form": "קַשָּׁא",
+      "translit": "qaššā",
+      "gloss": "straw, stubble",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "S02213, Onkelos Exo 15:7 and Targum Isa 40:24"
+        }
+      ]
+    },
+    {
+      "id": "syc-stubble",
+      "lang": "syc",
+      "form": "ܩܫܬܐ",
+      "translit": "qeštā",
+      "gloss": "stubble, dry stalks or leaves",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "payne-smith-1903",
+          "locator": "ܩܫܬܐ, feminine plant-material noun, senses a and b"
+        }
+      ]
+    },
+    {
+      "id": "syc-gather",
+      "lang": "syc",
+      "form": "ܩܫ",
+      "translit": "qaš",
+      "gloss": "collect sticks or straw",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "payne-smith-1903",
+          "locator": "ܩܫ, Peal, sense b"
+        }
+      ]
+    },
+    {
+      "id": "ar-stubble",
+      "lang": "ar",
+      "form": "قَشٌّ",
+      "translit": "qašš",
+      "gloss": "stubble, stalks of corn, straw",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "supplement p. 2988, n42678"
+        }
+      ],
+      "note": "The shared crop sense is clear. Borrowing from Aramaic could account for the Arabic consonant."
+    },
+    {
+      "id": "ar-gather",
+      "lang": "ar",
+      "form": "قَثَّ",
+      "translit": "qaṯṯa",
+      "gloss": "collect cattle or property",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2487, n35171; compare Anderson and Moser SEM001296"
+        }
+      ],
+      "sounds": {
+        "ש": "ṯ"
+      }
+    },
+    {
+      "id": "ar-group",
+      "lang": "ar",
+      "form": "قَثِيثَةٌ",
+      "translit": "qaṯīṯa",
+      "gloss": "a group of people assembled together",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2487, n35176"
+        }
+      ],
+      "sounds": {
+        "ש": "ṯ"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "Both verb keys index the same eight occurrences. Exodus connects the verb directly with the stubble noun, while Zephaniah applies it to people. The Arabic collecting verb with ṯ and the straw noun with š need separate evaluation. Bow and archer, indexed here, are covered under קשת."
+}

@@ -1,0 +1,108 @@
+{
+  "id": "xq6",
+  "root": "שקט",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "gloss": "be quiet, rest",
+  "summary": "שקט describes becoming quiet or remaining at rest.",
+  "words": [
+    {
+      "lemma": "שָׁקַט",
+      "pos": "verb",
+      "gloss": "be quiet, rest",
+      "bdb": [
+        "v.fp.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "be quiet, rest",
+          "senses": [
+            {
+              "id": "be-quiet-rest",
+              "gloss": "be quiet, rest",
+              "definition": "The verb describes the earth becoming quiet when Yahweh rises for judgment.",
+              "evidence": [
+                {
+                  "ref": "Psa.76.9",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jdg.3.11",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "keep quiet, give rest",
+          "senses": [
+            {
+              "id": "keep-quiet-give-rest",
+              "gloss": "keep quiet, give rest",
+              "definition": "Isaiah tells Ahaz to remain quiet instead of fearing the two kings. Job asks who can condemn when God gives quiet.",
+              "evidence": [
+                {
+                  "ref": "Isa.7.4",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Job.34.29",
+                  "role": "example"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-rest"
+      ]
+    },
+    {
+      "lemma": "שֶׁקֶט",
+      "bdb": [
+        "v.fp.ab"
+      ],
+      "pos": "noun",
+      "gloss": "quiet, rest",
+      "senses": [
+        {
+          "id": "quiet-rest",
+          "gloss": "quiet, rest",
+          "definition": "David is told that Solomon will have rest from the enemies around him and Israel will enjoy peace and quiet.",
+          "evidence": [
+            {
+              "ref": "1Ch.22.9",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "arc-rest"
+      ]
+    }
+  ],
+  "note": "The stillness of the earth at judgment is paired with fear in Psalm 76.",
+  "created": "2026-11-19",
+  "cognates": [
+    {
+      "id": "arc-rest",
+      "lang": "arc",
+      "form": "שְׁקַט",
+      "translit": "šəqaṭ",
+      "gloss": "be quiet, give rest",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. שְׁקַט, Targum Judges 18:7, 27 and Isaiah 62:1"
+        }
+      ]
+    }
+  ]
+}

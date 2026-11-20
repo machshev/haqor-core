@@ -1,0 +1,119 @@
+{
+  "id": "7pp",
+  "root": "חפפ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "marriage",
+    "shelter"
+  ],
+  "gloss": "cover, canopy",
+  "summary": "The bridegroom comes out of his chamber. Isaiah uses the canopy image for protection over Zion.",
+  "words": [
+    {
+      "lemma": "חֻפָּה",
+      "bdb": [
+        "h.eo.ac"
+      ],
+      "pos": "noun",
+      "gloss": "bridal chamber, canopy",
+      "senses": [
+        {
+          "id": "bridal-chamber-canopy",
+          "gloss": "bridal chamber, canopy",
+          "definition": "The bridegroom emerges from this sheltered place. Isaiah speaks of a canopy over the assembly.",
+          "evidence": [
+            {
+              "ref": "Psa.19.6",
+              "role": "defining"
+            },
+            {
+              "ref": "Jol.2.16"
+            },
+            {
+              "ref": "Isa.4.5"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "חָפַף",
+      "bdb": [
+        "h.eo.aa"
+      ],
+      "pos": "verb",
+      "gloss": "shelter",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "shelter over",
+          "senses": [
+            {
+              "id": "shelter-over",
+              "gloss": "shelter over",
+              "definition": "The blessing on Benjamin describes protection extending over the beloved all day.",
+              "evidence": [
+                {
+                  "ref": "Deu.33.12",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-comparison"
+      ]
+    },
+    {
+      "lemma": "חוֹף",
+      "bdb": [
+        "h.eo.ab"
+      ],
+      "pos": "noun",
+      "gloss": "shore",
+      "senses": [
+        {
+          "id": "shore",
+          "gloss": "shore",
+          "definition": "Zebulun settles on the seashore where ships come in.",
+          "evidence": [
+            {
+              "ref": "Gen.49.13",
+              "role": "defining"
+            },
+            {
+              "ref": "Jdg.5.17"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-comparison",
+      "lang": "arc",
+      "form": "חֲפַף",
+      "translit": "ḥăp̄ap̄",
+      "gloss": "hover over",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "חֲפַף, Polel, Targum Deuteronomy 32:11"
+        }
+      ],
+      "sounds": {
+        "ח": "ḥ"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "The coast is the edge of the sea. Its historical connection with covering is uncertain."
+}

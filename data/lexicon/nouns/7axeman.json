@@ -1,0 +1,62 @@
+{
+  "id": "7axeman",
+  "root": "חשמנ",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "gloss": "dignitary, envoy",
+  "summary": "These visitors come from Egypt as Cush stretches out its hands to God. The surrounding invitation to kings and kingdoms gives them a public role, though it leaves their rank open.",
+  "words": [
+    {
+      "lemma": "חַשְׁמַן",
+      "pos": "noun",
+      "gloss": "dignitary, envoy",
+      "gender": "m",
+      "cognate_ids": [
+        "ar-retinue"
+      ],
+      "bdb": [
+        "h.gu.ad"
+      ],
+      "senses": [
+        {
+          "id": "dignitary-envoy",
+          "gloss": "dignitary, envoy",
+          "definition": "The plural names those coming from Egypt in the scene of nations approaching God. This verse supplies the only Hebrew example.",
+          "evidence": [
+            {
+              "ref": "Psa.68.32",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.68.30",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "note": "The noun is keyed by its own consonants. Arabic ḥašam provides a possible comparison for persons attached to a household, but does not settle the Hebrew title.",
+  "cognates": [
+    {
+      "id": "ar-retinue",
+      "lang": "ar",
+      "form": "حَشَمٌ",
+      "translit": "ḥašam",
+      "gloss": "a person’s dependants or retinue",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 577, n8122"
+        }
+      ],
+      "sounds": {
+        "ח": "ḥ",
+        "ש": "š"
+      }
+    }
+  ],
+  "created": "2026-11-19",
+  "doctrine": []
+}

@@ -1,0 +1,63 @@
+{
+  "id": "3aremwon",
+  "root": "ערמנ",
+  "status": "draft",
+  "updated": "2026-11-18",
+  "tags": [],
+  "gloss": "plane tree",
+  "summary": "Jacob uses a branch of the tree for a peeled rod. Ezekiel pictures its spreading boughs among the trees in the garden of God.",
+  "words": [
+    {
+      "lemma": "עַרְמוֹן",
+      "pos": "noun",
+      "gender": "m",
+      "bdb": [
+        "p.fm.ab"
+      ],
+      "gloss": "plane tree",
+      "senses": [
+        {
+          "id": "tree",
+          "gloss": "plane tree",
+          "definition": "A tree traditionally identified as the oriental plane, mentioned for its rods and its conspicuous branches.",
+          "evidence": [
+            {
+              "ref": "Gen.30.37",
+              "role": "defining",
+              "note": "The third kind of rod Jacob cuts is from this tree. The Septuagint calls it πλάτανος, the plane."
+            },
+            {
+              "ref": "Ezk.31.8",
+              "role": "defining",
+              "note": "Ezekiel compares the tree’s boughs with those of the great tree in his oracle."
+            }
+          ],
+          "cognate_ids": [
+            "ar-bark"
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-bark",
+      "lang": "ar",
+      "form": "عُرَام",
+      "translit": "ʿurām",
+      "gloss": "bark, pieces shed from bark",
+      "relation": "possible",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I p. 2025, n28843, bark shed from a thorn tree and the phrase ʿurām al-šajara"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "Arabic ʿurām offers a possible parallel for naming the tree after its peeling bark. It names bark rather than a tree species. Watson discusses the proposed Ugaritic ġrmn ‘plane tree’ at KTU 1.3 II 11. The parallel reference to locusts favours ‘swarm’ or ‘heap’, so the Ugaritic passage offers little independent evidence for the identification."
+}

@@ -1,0 +1,133 @@
+{
+  "id": "se2aah",
+  "root": "סאה",
+  "status": "draft",
+  "updated": "2026-11-18",
+  "tags": [],
+  "gloss": "seah, a dry measure",
+  "summary": "Sarah kneads flour measured in seahs, and Abigail takes roasted grain measured the same way. At Samaria’s gate the price of a seah of flour marks the end of the famine.",
+  "words": [
+    {
+      "lemma": "סְאָה",
+      "pos": "noun",
+      "gender": "f",
+      "bdb": [
+        "o.aa.ab"
+      ],
+      "gloss": "seah, a dry measure",
+      "senses": [
+        {
+          "id": "measure",
+          "gloss": "seah of grain or flour",
+          "definition": "A unit of capacity for dry goods, whether grain, roasted kernels or flour.",
+          "evidence": [
+            {
+              "ref": "Gen.18.6",
+              "role": "defining",
+              "note": "Abraham asks Sarah to knead three seahs of fine flour for the visitors."
+            },
+            {
+              "ref": "1Sa.25.18",
+              "role": "defining",
+              "note": "Abigail packs five seahs of roasted grain among the provisions for David."
+            },
+            {
+              "ref": "1Ki.18.32",
+              "role": "defining",
+              "note": "The trench around Elijah’s altar is described by reference to two seahs of seed."
+            },
+            {
+              "ref": "2Ki.7.1",
+              "role": "defining",
+              "note": "Elisha announces that one seah of fine flour and two seahs of barley will each sell for a shekel."
+            },
+            {
+              "ref": "2Ki.7.16",
+              "role": "defining",
+              "note": "When the people plunder the Aramean camp, flour and barley sell at the announced prices."
+            },
+            {
+              "ref": "2Ki.7.18",
+              "role": "defining",
+              "note": "The narrator repeats the two quantities and their common price at the city gate."
+            }
+          ],
+          "cognate_ids": [
+            "arc-seah",
+            "syc-seah",
+            "phn-seah"
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "σάτον",
+          "gloss": "seah, a dry measure",
+          "relation": "loan",
+          "evidence": [
+            {
+              "source": "abbott-smith",
+              "locator": "s.v. σάτον, from Aramaic סָאתָא"
+            },
+            {
+              "ref": "Mat.13.33",
+              "role": "defining",
+              "note": "A woman mixes leaven into three measures of flour."
+            },
+            {
+              "ref": "Luk.13.21",
+              "role": "defining",
+              "note": "The same parable gives the quantity of flour in three sata."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-seah",
+      "lang": "arc",
+      "form": "סאתא",
+      "translit": "saʾṯā",
+      "gloss": "seah, a measure of volume",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "cal",
+          "locator": "s.v. sʾh, sʾtʾ, especially IduOstr 1:3.3 and QumNJ 2:4::4"
+        }
+      ]
+    },
+    {
+      "id": "syc-seah",
+      "lang": "syc",
+      "form": "ܣܐܬܐ",
+      "translit": "sāʾṯā",
+      "gloss": "seah, dry measure",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "sedra",
+          "locator": "lexeme 2047 SATA, English entries 3580 and 6157"
+        }
+      ]
+    },
+    {
+      "id": "phn-seah",
+      "lang": "phn",
+      "form": "𐤎𐤕",
+      "translit": "st",
+      "gloss": "seah, a measure of capacity",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "roellig-2001",
+          "locator": "pp. 43–45, vessel inscription a, st followed by three strokes"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The expression in 1Ki.18.32 may describe the trench’s capacity or the area sown with two seahs of seed. Röllig reads Phoenician st on a vessel as the name of this measure. The inscription lacks the medial aleph found in Hebrew and Aramaic."
+}

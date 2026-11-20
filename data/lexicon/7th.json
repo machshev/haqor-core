@@ -1,0 +1,69 @@
+{
+  "id": "7th",
+  "root": "חתה",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "gloss": "take away",
+  "summary": "To take away or snatch away.",
+  "words": [
+    {
+      "lemma": "חָתָה",
+      "pos": "verb",
+      "gloss": "take away",
+      "bdb": [
+        "h.gz.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "take away",
+          "senses": [
+            {
+              "id": "take-away",
+              "gloss": "take away",
+              "definition": "Yahweh takes the wicked man away in judgment.",
+              "evidence": [
+                {
+                  "ref": "Psa.52.7",
+                  "role": "defining"
+                },
+                {
+                  "ref": "2Ki.23.15"
+                },
+                {
+                  "ref": "Isa.30.14"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַחְתָּה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "censer, firepan",
+      "bdb": [
+        "h.gz.ad"
+      ],
+      "senses": [
+        {
+          "id": "censer",
+          "gloss": "censer",
+          "definition": "A censer carries coals and incense before Yahweh.",
+          "evidence": [
+            {
+              "ref": "Lev.16.12",
+              "role": "defining"
+            },
+            {
+              "ref": "Num.16.17"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "note": "Drafted for Psalm 52 coverage."
+}

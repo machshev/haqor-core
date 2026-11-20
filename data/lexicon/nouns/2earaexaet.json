@@ -1,0 +1,74 @@
+{
+  "id": "2earaexaet",
+  "root": "ארש",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "prayer",
+    "speech"
+  ],
+  "gloss": "request of the lips",
+  "summary": "The king expresses a desire in words, and Yahweh grants it. Psalm 21 supplies the only biblical instance of the noun.",
+  "words": [
+    {
+      "lemma": "אֲרֶשֶׁת",
+      "bdb": [
+        "a.ga.ab"
+      ],
+      "pos": "noun",
+      "gloss": "spoken request",
+      "senses": [
+        {
+          "id": "spoken-request",
+          "gloss": "spoken request",
+          "definition": "The request made by the king’s lips stands parallel to the desire of his heart. The following lines give an example: he asked for life, and Yahweh gave it to him.",
+          "evidence": [
+            {
+              "ref": "Psa.21.3",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.21.5"
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "cognate_ids": [
+        "akk-eristu"
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "תַּאֲוָה",
+            "note": "The desire of his heart is given, and the request of his lips is granted.",
+            "evidence": [
+              {
+                "ref": "Psa.21.3"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-eristu",
+      "lang": "akk",
+      "form": "erištu",
+      "translit": "erištu",
+      "gloss": "request, desire, demand",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep/x000059720, erištu [demand]"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The corresponding Akkadian noun supports “request”. Akkadian š alone does not resolve the older sibilant. The Persian royal name Artaxerxes and the names beginning אשׂר have a different formation."
+}

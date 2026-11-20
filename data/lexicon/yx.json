@@ -1,0 +1,186 @@
+{
+  "id": "yx",
+  "root": "יש",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "existence",
+    "possession"
+  ],
+  "gloss": "there is, have",
+  "summary": "The word says that a person or thing is present. In a question it asks whether there is anyone or anything answering the description. With a possessor it says what someone has.",
+  "words": [
+    {
+      "lemma": "יֵשׁ",
+      "bdb": [
+        "j.dr.ae"
+      ],
+      "pos": "particle",
+      "gloss": "there is, there are, have",
+      "senses": [
+        {
+          "gloss": "someone or something exists or is present",
+          "definition": "Jeremiah answers the king’s question about a word from Yahweh with the single word “there is.” In Psalm 7 the speaker asks whether any wrong is present in his hands.",
+          "evidence": [
+            {
+              "ref": "Jer.37.17",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.7.4"
+            },
+            {
+              "ref": "Psa.14.2"
+            },
+            {
+              "ref": "Gen.28.16"
+            }
+          ],
+          "id": "exists"
+        },
+        {
+          "id": "have-be-available-to",
+          "gloss": "have, be available to someone",
+          "definition": "Jacob says that he has everything. With the possessor marked by לְ, the construction says that something is there for that person.",
+          "evidence": [
+            {
+              "ref": "Gen.33.9",
+              "to": "Gen.33.11",
+              "role": "defining"
+            },
+            {
+              "ref": "2Ki.4.2"
+            }
+          ],
+          "cognate_ids": [
+            "akk-ishu"
+          ]
+        },
+        {
+          "id": "substance-or-possessions",
+          "gloss": "substance or possessions",
+          "definition": "Wisdom promises to endow those who love her with substance and to fill their treasuries. This use as a noun is unusual.",
+          "evidence": [
+            {
+              "ref": "Pro.8.21",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "opposites": [
+          {
+            "lemma": "אַיִן",
+            "note": "The scouts are to see whether there are trees in the land or none.",
+            "evidence": [
+              {
+                "ref": "Num.13.20"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "אִיתַי",
+      "bdb": [
+        "xa.ak.ai"
+      ],
+      "pos": "particle",
+      "gloss": "there is, there are",
+      "senses": [
+        {
+          "id": "exist-or-be-present",
+          "gloss": "exist or be present",
+          "definition": "The Chaldeans say there is no man on earth who can meet the king’s demand. Later the accusers point out that there are Judean men who disobey his order.",
+          "evidence": [
+            {
+              "ref": "Dan.2.10",
+              "role": "defining"
+            },
+            {
+              "ref": "Dan.3.12"
+            }
+          ],
+          "kin": [
+            "exists"
+          ]
+        }
+      ],
+      "lang": "arc",
+      "root": "איתי",
+      "cognate_ids": [
+        "akk-ishu"
+      ]
+    },
+    {
+      "lemma": "אִית",
+      "pos": "particle",
+      "gloss": "there is, have",
+      "senses": [
+        {
+          "id": "exist-or-be-present-2",
+          "gloss": "exist or be present",
+          "definition": "Matthew introduces the herd of pigs feeding at a distance. Jesus asks the disciples how many loaves they have.",
+          "evidence": [
+            {
+              "ref": "Mat.8.30",
+              "role": "defining"
+            },
+            {
+              "ref": "Mat.15.34"
+            }
+          ],
+          "kin": [
+            "exists"
+          ]
+        }
+      ],
+      "lang": "syc",
+      "root": "אית",
+      "cognate_ids": [
+        "akk-ishu"
+      ]
+    },
+    {
+      "lemma": "אִיתוּתָא",
+      "pos": "noun",
+      "gloss": "being, substance",
+      "senses": [
+        {
+          "id": "being-substance",
+          "gloss": "being, substance",
+          "definition": "Hebrews describes the Son as the imprint of God’s being. The abstract noun names that of which he is the imprint.",
+          "evidence": [
+            {
+              "ref": "Heb.1.3",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "root": "אית"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-ishu",
+      "lang": "akk",
+      "form": "išû",
+      "translit": "išû",
+      "gloss": "have, possess, exist",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep/x000003830, išû [have]"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The particle is keyed by its own consonants. The adjoining headings for Issachar, Jesharelah and the verb put do not supply its derivation. SEDRA lexemes 102 and 103 give the Syriac particle and abstract noun."
+}

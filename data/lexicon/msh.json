@@ -1,0 +1,155 @@
+{
+  "id": "msh",
+  "root": "מסה",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "water",
+    "grief"
+  ],
+  "gloss": "make melt, dissolve",
+  "summary": "Yahweh sends his word and ice melts into running water. The same verb describes what tears do to a couch in a night of weeping and what a frightening report does to the courage of those who hear it.",
+  "words": [
+    {
+      "lemma": "מָסָה",
+      "pos": "verb",
+      "bdb": [
+        "m.cq.aa"
+      ],
+      "gloss": "make melt, dissolve",
+      "stems": [
+        {
+          "stem": "hiphil",
+          "gloss": "make melt or waste away",
+          "cognate_ids": [
+            "syc-msa"
+          ],
+          "senses": [
+            {
+              "id": "melt-dissolve",
+              "gloss": "melt, dissolve",
+              "definition": "What was solid gives way. When Yahweh sends his word after the frost, water flows. The psalmist pictures a whole couch dissolving in his tears.",
+              "evidence": [
+                {
+                  "ref": "Psa.147.17",
+                  "to": "Psa.147.18",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.6.7",
+                  "role": "defining",
+                  "note": "The other half of the line pictures the bed swimming every night."
+                },
+                {
+                  "ref": "Psa.39.12",
+                  "note": "Under rebuke, what a person prizes wastes away."
+                }
+              ]
+            },
+            {
+              "id": "make-courage-fail",
+              "gloss": "make courage fail",
+              "definition": "Caleb says that the other spies melted the people's heart. The people heard of the fortified cities and refused to go up.",
+              "evidence": [
+                {
+                  "ref": "Jos.14.8",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Deu.1.26",
+                  "to": "Deu.1.28"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "βρέχω",
+          "gloss": "wet",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "PSA 6:7, word 9"
+            },
+            {
+              "ref": "Luk.7.38",
+              "note": "The woman wets Jesus' feet with her tears."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַסָּח",
+      "pos": "noun",
+      "bdb": [
+        "m.cq.ag"
+      ],
+      "gloss": "a guard or barrier (?)",
+      "summary": "The word occurs in instructions for guarding the palace. The precise duty and any connection with melting are unclear.",
+      "senses": [
+        {
+          "id": "a-guard-or-barrier",
+          "gloss": "a guard or barrier (?)",
+          "definition": "One of the companies is stationed at the gate behind the runners to keep watch over the house. This word qualifies that charge.",
+          "evidence": [
+            {
+              "ref": "2Ki.11.5",
+              "to": "2Ki.11.7",
+              "role": "example"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מְסָא",
+      "lang": "syc",
+      "root": "מסא",
+      "pos": "verb",
+      "gloss": "swell up",
+      "summary": "The Peshitta uses the verb for the swelling expected after a snakebite. How this sense relates to melting is unclear.",
+      "stems": [
+        {
+          "stem": "ethpeel",
+          "gloss": "swell up",
+          "senses": [
+            {
+              "id": "swell-up",
+              "gloss": "swell up",
+              "definition": "After the viper fastens on Paul's hand, the islanders expect his body to swell or for him to fall down dead.",
+              "evidence": [
+                {
+                  "ref": "Act.28.6",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "syc-msa",
+      "lang": "syc",
+      "form": "ܡܣܐ",
+      "translit": "məsā",
+      "gloss": "melt, waste away, dissolve",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "payne-smith-1903",
+          "locator": "s.v. ܡܣܐ, peal and aphel, pp. 283–284",
+          "note": "Includes a melting heart, dissolving or washing away, and wetting with tears. The entry also gives thickening or curdling."
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The Hebrew noun מַסָּח is attested once. A connection with נסח has also been proposed, but the palace instructions give too little detail to decide. The zero-token m.cq.ad and n.dt.ab are cross-references. SEDRA lexeme 1814 gives the Peshitta's distinct sense at Acts 28:6. The place Massah is named for putting Yahweh to the test in Exodus 17:7 and belongs with נסה."
+}

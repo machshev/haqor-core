@@ -1,0 +1,166 @@
+{
+  "id": "nwh",
+  "root": "נוה",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "psalms-21-30"
+  ],
+  "gloss": "pasture dwelling",
+  "summary": "A shepherd’s habitation is a resting place for flocks.",
+  "words": [
+    {
+      "lemma": "נָוֶה",
+      "bdb": [
+        "n.bx.ab"
+      ],
+      "pos": "noun",
+      "gloss": "abode, pasture",
+      "senses": [
+        {
+          "id": "abode-pasture",
+          "gloss": "abode, pasture",
+          "definition": "The song at the sea calls the holy dwelling the destination of the redeemed people. A camel’s grazing place can likewise be called its abode.",
+          "evidence": [
+            {
+              "ref": "Exo.15.13",
+              "role": "defining"
+            },
+            {
+              "ref": "Ezk.25.5"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "akk-nawu"
+      ]
+    },
+    {
+      "lemma": "נָוָה",
+      "bdb": [
+        "n.bx.ae"
+      ],
+      "pos": "noun",
+      "gloss": "pasture, meadow",
+      "senses": [
+        {
+          "id": "pasture-meadow",
+          "gloss": "pasture, meadow",
+          "definition": "The shepherd settles the flock in grassy pastures. Jeremiah pictures the wilderness pastures burned up and empty of livestock.",
+          "evidence": [
+            {
+              "ref": "Psa.23.2",
+              "role": "defining"
+            },
+            {
+              "ref": "Jer.9.9"
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "cognate_ids": [
+        "akk-nawu"
+      ]
+    },
+    {
+      "lemma": "נָוָה",
+      "bdb": [
+        "n.bx.ac"
+      ],
+      "pos": "verb",
+      "gloss": "dwell",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "settle, stay at rest",
+          "senses": [
+            {
+              "id": "settle-stay-at-rest",
+              "gloss": "settle, stay at rest",
+              "definition": "Habakkuk describes an arrogant man who cannot settle and whose appetite keeps expanding.",
+              "evidence": [
+                {
+                  "ref": "Hab.2.5",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "akk-nawu"
+      ]
+    },
+    {
+      "lemma": "נָוָה",
+      "bdb": [
+        "n.bw.aa"
+      ],
+      "pos": "verb",
+      "gloss": "adorn or glorify",
+      "stems": [
+        {
+          "stem": "hiphil",
+          "gloss": "glorify",
+          "senses": [
+            {
+              "id": "glorify",
+              "gloss": "glorify",
+              "definition": "Israel sings that it will glorify its God. The parallel clause promises to exalt him.",
+              "evidence": [
+                {
+                  "ref": "Exo.15.2",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "נָוֶה",
+      "pos": "adjective",
+      "gloss": "dwelling, staying at home",
+      "bdb": [
+        "n.bx.ad"
+      ],
+      "senses": [
+        {
+          "id": "the-woman-who-stays",
+          "gloss": "the woman who stays at home",
+          "definition": "While the kings and their armies flee, the woman at home divides the spoils. The feminine construct is followed by “house.”",
+          "evidence": [
+            {
+              "ref": "Psa.68.13",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-nawu",
+      "lang": "akk",
+      "form": "nawû",
+      "translit": "nawû",
+      "gloss": "pasture, steppe",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep/x000006940, nawû [pasturage]"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "In Psalm 23:2 the feminine plural names pastures. The verb form in Exodus 15:2 is variously understood as glorifying God or preparing a habitation; the parallel is “I will exalt him”."
+}

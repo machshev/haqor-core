@@ -1,0 +1,629 @@
+{
+  "id": "knr",
+  "root": "כנר",
+  "status": "draft",
+  "updated": "2026-11-18",
+  "tags": [
+    "music",
+    "worship",
+    "joy",
+    "prophecy",
+    "mourning",
+    "places"
+  ],
+  "gloss": "lyre; Chinnereth",
+  "summary": "כִּנּוֹר is the lyre, a stringed instrument played with the hand (1Sa 16:23), named from Jubal onward (Gen 4:21). It sounds the joy of feasts and farewells, and its silence is the end of joy under judgment (Isa 24:8; Ezk 26:13); in Israel it is above all the instrument of thanksgiving to Yahweh, set in his house by David at the commandment of Yahweh through his prophets (2Ch 29:25), with which the Levites “prophesied, to give thanks and to praise Yahweh” (1Ch 25:3). The same word is the lyre in Ugaritic, Akkadian, Syriac and Jewish Aramaic, a word shared across the ancient east. The place and lake כִּנֶּרֶת, the later sea of Galilee, is spelled with the same letters; how its name comes from them is not known.",
+  "words": [
+    {
+      "lemma": "כִּנּוֹר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "lyre",
+      "bdb": [
+        "k.cf.ab"
+      ],
+      "cognate_ids": [
+        "akk-kinnaru",
+        "uga-knr",
+        "syc-kennara",
+        "arc-kinnora",
+        "egy-knnr",
+        "ar-kinnara"
+      ],
+      "summary": "Forty-two times. A stringed instrument held and played by hand, often named with the נֵבֶל, the other stringed instrument, and with the תֹּף, the tambourine. Its uses are joy, praise of Yahweh, prophesying, and, turned the other way, mourning.",
+      "senses": [
+        {
+          "id": "kinnor-instrument",
+          "gloss": "lyre, a hand-played stringed instrument",
+          "definition": "A stringed instrument played with the hand, made of wood, one of the first instruments named in scripture; set beside the נֵבֶל of ten strings.",
+          "evidence": [
+            {
+              "ref": "Gen.4.21",
+              "role": "defining",
+              "note": "Jubal, “the father of all who handle the כִּנּוֹר and the עוּגָב”."
+            },
+            {
+              "ref": "1Sa.16.16",
+              "role": "defining",
+              "note": "“A man who knows how to play on the כִּנּוֹר … he shall play with his hand.”"
+            },
+            {
+              "ref": "1Sa.16.23",
+              "role": "defining",
+              "note": "David took the כִּנּוֹר and played with his hand, and Saul was refreshed."
+            },
+            {
+              "ref": "1Ki.10.12",
+              "note": "Solomon made כִּנֹּרוֹת and נְבָלִים for the singers of almug wood."
+            },
+            {
+              "ref": "2Ch.9.11"
+            },
+            {
+              "ref": "Psa.33.2",
+              "note": "The כִּנּוֹר beside “a נֵבֶל of ten strings”."
+            }
+          ]
+        },
+        {
+          "id": "kinnor-joy",
+          "gloss": "sound of joy and feasting",
+          "definition": "The music of gladness at farewells and feasts; its ceasing marks the end of a city’s joy under judgment, and the harlot’s song is sung to it.",
+          "evidence": [
+            {
+              "ref": "Gen.31.27",
+              "role": "defining",
+              "note": "Laban: “I would have sent you away with joy and with songs, with תֹּף and with כִּנּוֹר.”"
+            },
+            {
+              "ref": "Isa.24.8",
+              "role": "defining",
+              "note": "“The joy of tambourines ceases … the joy of the כִּנּוֹר ceases.”"
+            },
+            {
+              "ref": "Isa.5.12",
+              "note": "“The כִּנּוֹר and the נֵבֶל, the tambourine and the flute, and wine are at their feasts, but they do not regard the work of Yahweh.”"
+            },
+            {
+              "ref": "Job.21.12",
+              "note": "The wicked “take the tambourine and כִּנּוֹר, and rejoice at the sound of the flute”."
+            },
+            {
+              "ref": "Ezk.26.13",
+              "note": "Against Tyre: “the sound of your כִּנֹּרוֹת shall be heard no more”."
+            },
+            {
+              "ref": "Isa.23.16",
+              "note": "“Take a כִּנּוֹר, go about the city, forgotten harlot.”"
+            },
+            {
+              "ref": "Isa.30.32",
+              "note": "Each stroke Yahweh lays on Assyria is with tambourines and כִּנֹּרוֹת: Israel’s rejoicing at its fall."
+            }
+          ]
+        },
+        {
+          "id": "kinnor-praise",
+          "gloss": "instrument of thanksgiving to Yahweh",
+          "definition": "Played to give thanks and make music to Yahweh, by the psalmist and by the Levite singers whom David appointed in Yahweh’s house at the commandment of Yahweh through his prophets; at the bringing up of the ark, the temple’s dedication, victory, and the dedication of the wall.",
+          "evidence": [
+            {
+              "ref": "Psa.33.2",
+              "role": "defining",
+              "note": "“Give thanks to Yahweh with the כִּנּוֹר.”"
+            },
+            {
+              "ref": "Psa.43.4",
+              "role": "defining",
+              "note": "“At the altar of God … I will praise you with the כִּנּוֹר, O God, my God.”"
+            },
+            {
+              "ref": "2Ch.29.25",
+              "role": "defining",
+              "note": "Hezekiah set the Levites in the house of Yahweh with cymbals, נְבָלִים and כִּנֹּרוֹת “according to the commandment of David … for the commandment was of Yahweh by his prophets”."
+            },
+            {
+              "ref": "Psa.71.22"
+            },
+            {
+              "ref": "Psa.92.4"
+            },
+            {
+              "ref": "Psa.98.5",
+              "note": "“Make music to Yahweh with the כִּנּוֹר, with the כִּנּוֹר and the voice of a psalm.”"
+            },
+            {
+              "ref": "Psa.147.7"
+            },
+            {
+              "ref": "Psa.149.3"
+            },
+            {
+              "ref": "Psa.150.3"
+            },
+            {
+              "ref": "Psa.57.9",
+              "note": "“Awake, נֵבֶל and כִּנּוֹר; I will awake the dawn.”"
+            },
+            {
+              "ref": "Psa.108.3"
+            },
+            {
+              "ref": "Psa.81.3",
+              "note": "“The pleasant כִּנּוֹר with the נֵבֶל”, at the new moon and the feast."
+            },
+            {
+              "ref": "2Sa.6.5",
+              "note": "Before Yahweh as the ark was brought up."
+            },
+            {
+              "ref": "1Ch.13.8"
+            },
+            {
+              "ref": "1Ch.15.16",
+              "note": "David bids the chiefs of the Levites appoint singers with נְבָלִים, כִּנֹּרוֹת and cymbals."
+            },
+            {
+              "ref": "1Ch.15.21",
+              "note": "Six Levites “with כִּנֹּרוֹת on the Sheminith, to lead”."
+            },
+            {
+              "ref": "1Ch.15.28"
+            },
+            {
+              "ref": "1Ch.16.5"
+            },
+            {
+              "ref": "2Ch.5.12",
+              "note": "At the dedication of the house, the singers with cymbals, נְבָלִים and כִּנֹּרוֹת."
+            },
+            {
+              "ref": "2Ch.20.28",
+              "note": "Back to the house of Yahweh after the victory over Moab and Ammon."
+            },
+            {
+              "ref": "Neh.12.27",
+              "note": "The dedication of the wall of Jerusalem."
+            }
+          ]
+        },
+        {
+          "id": "kinnor-prophesying",
+          "gloss": "accompanying prophecy",
+          "definition": "Prophecy uttered to the lyre: the band of prophets coming down from the high place, the sons of Asaph, Heman and Jeduthun who “prophesied with the כִּנּוֹר”, and the psalmist who opens his dark saying on it.",
+          "evidence": [
+            {
+              "ref": "1Ch.25.1",
+              "role": "defining",
+              "note": "Set apart “to prophesy with כִּנֹּרוֹת, with נְבָלִים and with cymbals”."
+            },
+            {
+              "ref": "1Ch.25.3",
+              "role": "defining",
+              "note": "Jeduthun “prophesied with the כִּנּוֹר, to give thanks and to praise Yahweh”."
+            },
+            {
+              "ref": "1Ch.25.6"
+            },
+            {
+              "ref": "1Sa.10.5",
+              "note": "A band of prophets with נֵבֶל, tambourine, flute and כִּנּוֹר, and they shall be prophesying."
+            },
+            {
+              "ref": "Psa.49.5",
+              "note": "“I will open my dark saying on the כִּנּוֹר.”"
+            }
+          ]
+        },
+        {
+          "id": "kinnor-mourning",
+          "gloss": "turned to mourning; figure of grief",
+          "definition": "The instrument of joy turned to lament: Job’s lyre gone to mourning, the captives’ lyres hung on the willows of Babylon, and the prophet’s inward parts sounding like a lyre for Moab.",
+          "evidence": [
+            {
+              "ref": "Job.30.31",
+              "role": "defining",
+              "note": "“My כִּנּוֹר is turned to mourning, and my עוּגָב to the voice of those who weep.”"
+            },
+            {
+              "ref": "Psa.137.2",
+              "role": "defining",
+              "note": "“On the willows in her midst we hung our כִּנֹּרוֹת”: no song of Zion in a strange land (vv. 3–4)."
+            },
+            {
+              "ref": "Isa.16.11",
+              "note": "“My inward parts sound like a כִּנּוֹר for Moab.”"
+            }
+          ]
+        }
+      ],
+      "greek": [
+        {
+          "lemma": "κιθάρα",
+          "gloss": "lyre, harp",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "Psa.33.2 כִּנּוֹר → κιθάρᾳ; also Gen.31.27, Psa.43.4, Psa.150.3, Isa.5.12 (MACULA alignment). Chronicles and 1Sa.10.5 render it κινύρα instead, the Semitic word itself in Greek letters; ψαλτήριον at Psa.49.5 and Psa.149.3."
+            },
+            {
+              "ref": "1Co.14.7",
+              "note": "Pipe or κιθάρα: an instrument gives a meaning only if its sounds are distinct."
+            },
+            {
+              "ref": "Rev.5.8",
+              "note": "The elders each with a κιθάρα and golden bowls of incense, the prayers of the saints, and they sing a new song."
+            },
+            {
+              "ref": "Rev.14.2",
+              "note": "The voice of harpers playing on their κιθάραι, as the 144,000 sing a new song before the throne."
+            },
+            {
+              "ref": "Rev.15.2",
+              "note": "Those who overcame the beast stand by the sea of glass “having the κιθάραι of God”, singing the song of Moses and of the Lamb."
+            }
+          ]
+        }
+      ],
+      "usage": {
+        "parallels": [
+          {
+            "lemma": "נֵבֶל",
+            "note": "The other stringed instrument, named with the כִּנּוֹר in praise.",
+            "evidence": [
+              {
+                "ref": "Psa.33.2",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.57.9",
+                "role": "defining"
+              },
+              {
+                "ref": "Psa.81.3"
+              },
+              {
+                "ref": "Psa.92.4"
+              },
+              {
+                "ref": "Psa.150.3"
+              },
+              {
+                "ref": "1Sa.10.5"
+              }
+            ]
+          },
+          {
+            "lemma": "תֹּף",
+            "note": "The tambourine, beside the lyre in joy and dance.",
+            "evidence": [
+              {
+                "ref": "Gen.31.27",
+                "role": "defining"
+              },
+              {
+                "ref": "Isa.24.8"
+              },
+              {
+                "ref": "Job.21.12"
+              },
+              {
+                "ref": "Psa.149.3"
+              }
+            ]
+          },
+          {
+            "lemma": "עוּגָב",
+            "note": "The pipe or flute, named with it from Jubal on.",
+            "evidence": [
+              {
+                "ref": "Gen.4.21",
+                "role": "defining"
+              },
+              {
+                "ref": "Job.21.12"
+              },
+              {
+                "ref": "Job.30.31"
+              }
+            ]
+          }
+        ],
+        "opposites": [
+          {
+            "lemma": "אֵבֶל",
+            "note": "Mourning, into which the lyre is turned.",
+            "evidence": [
+              {
+                "ref": "Job.30.31",
+                "role": "defining"
+              }
+            ]
+          }
+        ],
+        "phrases": [
+          {
+            "phrase": "נִגֵּן בַּכִּנּוֹר",
+            "gloss": "play on the lyre",
+            "evidence": [
+              {
+                "ref": "1Sa.16.16"
+              },
+              {
+                "ref": "1Sa.16.23"
+              }
+            ]
+          },
+          {
+            "phrase": "זִמֵּר בְּכִנּוֹר",
+            "gloss": "make music with the lyre",
+            "evidence": [
+              {
+                "ref": "Psa.71.22"
+              },
+              {
+                "ref": "Psa.98.5"
+              },
+              {
+                "ref": "Psa.147.7"
+              }
+            ]
+          },
+          {
+            "phrase": "הוֹדָה בְכִנּוֹר",
+            "gloss": "give thanks with the lyre",
+            "evidence": [
+              {
+                "ref": "Psa.33.2"
+              },
+              {
+                "ref": "Psa.43.4"
+              }
+            ]
+          },
+          {
+            "phrase": "נִבָּא בְכִנּוֹר",
+            "gloss": "prophesy with the lyre",
+            "evidence": [
+              {
+                "ref": "1Ch.25.1"
+              },
+              {
+                "ref": "1Ch.25.3"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lemma": "כִּנֶּרֶת",
+      "pos": "name",
+      "gloss": "Chinnereth, the lake and a city of Naphtali",
+      "bdb": [
+        "k.cf.ac"
+      ],
+      "cognate_ids": [
+        "arc-kinnara-tree",
+        "syc-kenara-tree"
+      ],
+      "summary": "The lake on Israel’s eastern border, “the sea of Chinnereth”, and a fortified city of Naphtali on its shore, with the region round it (plural כִּנְּרוֹת). The spelling is that of כִּנּוֹר “lyre”, and the lake is often said to be named for a lyre’s shape; Jewish Aramaic and Syriac have a tree of the same spelling (the lote or Christ’s thorn), which the Talmud ties to the name. Neither is shown from scripture, so the name’s link to the root is not known. A place, so it has no name entry.",
+      "senses": [
+        {
+          "id": "the-sea-of-chinnereth",
+          "gloss": "the sea of Chinnereth",
+          "definition": "The lake through which the Jordan flows, the eastern border of the land of promise, called “the sea of Chinnereth”.",
+          "evidence": [
+            {
+              "ref": "Num.34.11",
+              "role": "defining",
+              "note": "The border “shall reach the shoulder of the sea of Chinnereth eastward”."
+            },
+            {
+              "ref": "Jos.12.3",
+              "role": "defining",
+              "note": "“The Arabah to the sea of Chinneroth eastward, and to the sea of the Arabah, the Salt Sea.”"
+            },
+            {
+              "ref": "Jos.13.27",
+              "note": "Gad’s border “to the end of the sea of Chinnereth beyond the Jordan eastward”."
+            },
+            {
+              "ref": "Deu.3.17",
+              "note": "The Jordan as a border “from Chinnereth to the sea of the Arabah”."
+            }
+          ]
+        },
+        {
+          "id": "city-and-district-of",
+          "gloss": "city and district of Chinnereth",
+          "definition": "A fortified city of Naphtali, and the district round it, struck by Ben-hadad with the land of Naphtali.",
+          "evidence": [
+            {
+              "ref": "Jos.19.35",
+              "role": "defining",
+              "note": "Among “the fortified cities” of Naphtali: Ziddim, Zer, Hammath, Rakkath and Chinnereth."
+            },
+            {
+              "ref": "1Ki.15.20",
+              "note": "Ben-hadad struck “all Chinneroth, with all the land of Naphtali”."
+            },
+            {
+              "ref": "Jos.11.2",
+              "note": "The kings “in the Arabah south of Chinneroth”."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-kinnaru",
+      "lang": "akk",
+      "form": "kinnāru",
+      "translit": "kinnāru",
+      "gloss": "lyre",
+      "relation": "cognate",
+      "note": "Middle Babylonian kinnāru “lyre”: the same instrument by the same name.",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000011430, kinnāru [lyre] N",
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000011430.html"
+        }
+      ]
+    },
+    {
+      "id": "uga-knr",
+      "lang": "uga",
+      "form": "𐎋𐎐𐎗",
+      "translit": "knr",
+      "gloss": "lyre",
+      "relation": "cognate",
+      "note": "Segert takes knr in KTU 1.108:4 as “lyre” and compares Hebrew כִּנּוֹר, and reads knrt in KTU 1.19 III 41 as its plural or else as a place name like Hebrew כִּנֶּרֶת, with a doubt.",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "p. 189, §93 Glossary, knrt (KTU 1.19 III 41; cf. 1.108:4)"
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Ugaritic 𐎋𐎐𐎗 (knr)"
+        }
+      ]
+    },
+    {
+      "id": "syc-kennara",
+      "lang": "syc",
+      "form": "ܟܢܪܐ",
+      "translit": "kennārā",
+      "gloss": "harp, cithara, lyre",
+      "relation": "cognate",
+      "note": "Payne Smith: “a harp, cithara, cithern, lyre”, “a seven-stringed harp”, and Ephrem called “the cithern of the Holy Spirit”. Read from the OCR text; the Syriac spelling is Wiktionary’s.",
+      "evidence": [
+        {
+          "source": "payne-smith-1903",
+          "locator": "p. 219, ܟܢܪܐ"
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Classical Syriac ܟܢܪܐ (kennārā), etymology 2"
+        }
+      ]
+    },
+    {
+      "id": "arc-kinnora",
+      "lang": "arc",
+      "form": "כִּנּוֹרָא",
+      "translit": "kinnōrā",
+      "gloss": "lyre",
+      "relation": "cognate",
+      "note": "The Targums keep the word where the Hebrew has it (Gen 4:21; Job 30:31; Psa 92:4), plural כִּנָּרַיָּא.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. כִּנּוֹרָא",
+          "note": "Targ. Gen. IV, 21; Targ. Job XXX, 31; Targ. Ps. XCII, 4."
+        }
+      ]
+    },
+    {
+      "id": "egy-knnr",
+      "lang": "egy",
+      "form": "knnr",
+      "translit": "knnr",
+      "gloss": "lyre (Semitic loan word)",
+      "relation": "loan",
+      "note": "Borrowed into Egyptian from Semitic, not into Hebrew from Egyptian. Coptic ϭⲓⲛⲏⲣⲁ “lyre, harp” comes through Greek κινύρα (coptic-lexicon C7774).",
+      "evidence": [
+        {
+          "source": "tla",
+          "locator": "tla164760, knnr “lyre (Sem. loan word)” (Wb 5, 132.4; Hoch, Sem. Words, no. 467)"
+        }
+      ]
+    },
+    {
+      "id": "ar-kinnara",
+      "lang": "ar",
+      "form": "كِنَّارَة",
+      "translit": "kinnāra",
+      "gloss": "lyre",
+      "relation": "possible",
+      "note": "Given by Wiktionary only; not in Lane under كنر. May be a late or borrowed word.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Arabic كنارة (kinnāra)"
+        }
+      ]
+    },
+    {
+      "id": "arc-kinnara-tree",
+      "lang": "arc",
+      "form": "כִּנָּרָא",
+      "translit": "kinnārā",
+      "gloss": "lote tree, Christ’s thorn",
+      "relation": "possible",
+      "note": "Jastrow: a shrubby tree; the Talmud (Meg. 6a) says Kinnereth is Ginnosar and is so called because its fruits are as sweet as the kinnara’s (one reading: as sweet as the sound of the lyre). A lead for the place name only.",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. כִּנָּרָא I; s.v. כִּנֶּרֶת",
+          "note": "Meg. 6a; Y. Meg. I, 70a."
+        }
+      ]
+    },
+    {
+      "id": "syc-kenara-tree",
+      "lang": "syc",
+      "form": "ܟܢܪܐ",
+      "translit": "kənārā",
+      "gloss": "lotus (Ziziphus) tree, service tree",
+      "relation": "possible",
+      "note": "The Syriac tree of the same spelling, beside Payne Smith’s “the service tree, sorbus domestica” on the same page. As Jewish Aramaic כִּנָּרָא, a lead for the place name.",
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Classical Syriac ܟܢܪܐ (kənārā), etymology 1"
+        },
+        {
+          "source": "payne-smith-1903",
+          "locator": "p. 219, the entry after ܟܢܪܐ “harp”"
+        }
+      ]
+    }
+  ],
+  "doctrine": [
+    {
+      "topic": "kingdom-of-god",
+      "statement": "David set the Levites with כִּנֹּרוֹת in Yahweh’s house not by his own taste but by “the commandment of Yahweh by his prophets” (2Ch 29:25), and they “prophesied with the כִּנּוֹר, to give thanks and to praise Yahweh” (1Ch 25:1–3). When Judah went captive the lyres were hung on the willows, for Yahweh’s song could not be sung in a strange land (Psa 137:2–4). In the Revelation the lyre is taken up again before the throne: the elders with their κιθάραι sing a new song to the Lamb who redeemed men “out of every tribe” and made them “kings and priests to our God, and we shall reign on the earth” (Rev 5:8–10); the redeemed from the earth sing to their lyres (Rev 14:2–3), and the overcomers have “the κιθάραι of God” and sing the song of Moses and of the Lamb, “all nations shall come and worship before you” (Rev 15:2–4). From the verses: the praise Yahweh ordained in David’s house, silenced by the exile, is restored by the redeemed who reign with Christ on the earth, where all nations come to worship.",
+      "evidence": [
+        {
+          "ref": "2Ch.29.25"
+        },
+        {
+          "ref": "1Ch.25.1",
+          "to": "1Ch.25.3"
+        },
+        {
+          "ref": "Psa.137.2",
+          "to": "Psa.137.4"
+        },
+        {
+          "ref": "Rev.5.8",
+          "to": "Rev.5.10"
+        },
+        {
+          "ref": "Rev.14.2",
+          "to": "Rev.14.3"
+        },
+        {
+          "ref": "Rev.15.2",
+          "to": "Rev.15.4"
+        }
+      ]
+    }
+  ],
+  "note": "Drafted 2026-11-18. The brief lists nine words under BDB section k.cf; only כִּנּוֹר (k.cf.ab) and the place כִּנֶּרֶת (k.cf.ac) are of כנר. Left out as other roots: כִּסֵּא/כֵּס/כִּסֵּה “throne” (k.cf.ag, k.cf.ae, k.ch.ad; root כסא, an Akkadian kussû loan), כֶּסֶא/כֶּסֶה “full moon” (k.cf.af, k.ch.ac; כסא/כסה), and כְּנָת/כְּנָוֹת “associate” (k.cf.ad, k.bz.ad; Ezr 4:7, Aramaic, root כנת). None is in an existing entry yet. No personal names: TIPNR has Chinnereth/Chinneroth as Place records only. Open questions: (1) the word is a culture word spread across the ancient east (Akkadian, Ugaritic, Egyptian loan, Greek κινύρα, Hurrian kinnaruḫuli “musician” per Wiktionary), possibly not Semitic in origin; no verbal root כנר is attested in scripture; (2) Chinnereth’s link to the lyre or to the kinnara tree is unproven, so it has no cognate sharing its meaning and lexicon-support counts the lyre cognates against it; (3) whether NT Γεννησαρέτ (Luk 5:1) continues כִּנֶּרֶת (the Talmud's Ginnosar) is not followed up; (4) Syriac page p. 219 and the Ugaritic page p. 189 are read from OCR; Phoenician (Krahmalkov) has no knr; Ge'ez and Old Aramaic 𐡊𐡍𐡓 are only in Wiktionary's descendant list and not followed. The kingdom-of-god doctrine statement is a reasoned conclusion to review."
+}

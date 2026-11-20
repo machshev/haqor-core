@@ -1,0 +1,104 @@
+{
+  "id": "mqq",
+  "root": "מקק",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "gloss": "melt, decay",
+  "summary": "To decay or waste away.",
+  "words": [
+    {
+      "lemma": "מָקַק",
+      "pos": "verb",
+      "gloss": "melt, decay",
+      "bdb": [
+        "m.dg.aa"
+      ],
+      "stems": [
+        {
+          "stem": "niphal",
+          "gloss": "decay, waste away",
+          "senses": [
+            {
+              "id": "decay-waste-away",
+              "gloss": "decay, waste away",
+              "definition": "The sores of the speaker fester. Ezekiel uses the same verb for people wasting away in their guilt.",
+              "evidence": [
+                {
+                  "ref": "Psa.38.6",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Ezk.24.23",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "cause to waste away",
+          "senses": [
+            {
+              "id": "cause-to-waste-away",
+              "gloss": "cause to waste away",
+              "definition": "The plague on the nations consumes their flesh, eyes and tongues.",
+              "evidence": [
+                {
+                  "ref": "Zec.14.12",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-m02444"
+      ]
+    },
+    {
+      "lemma": "מַק",
+      "bdb": [
+        "m.dg.ab"
+      ],
+      "pos": "noun",
+      "gloss": "decay",
+      "senses": [
+        {
+          "id": "decay",
+          "gloss": "decay",
+          "definition": "Isaiah contrasts perfume with rottenness, then pictures a root that decays beneath a blossom blown away as dust.",
+          "evidence": [
+            {
+              "ref": "Isa.3.24",
+              "role": "defining"
+            },
+            {
+              "ref": "Isa.5.24",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    }
+  ],
+  "note": "Drafted for Psalm 38 coverage.",
+  "cognates": [
+    {
+      "id": "arc-m02444",
+      "lang": "arc",
+      "form": "מְקַק",
+      "translit": "məqaq",
+      "gloss": "pine away, decay",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "מְקַק, M02444, Targum Job 14:10"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,195 @@
+{
+  "id": "dxn",
+  "root": "דשנ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "food",
+    "sacrifice"
+  ],
+  "gloss": "fatness, rich provision, altar ashes",
+  "summary": "The offering in Psalm 20 is commended to Yahweh as something choice. The same family describes abundant food and the residue left when a sacrifice has burned.",
+  "words": [
+    {
+      "lemma": "דָּשֵׁן",
+      "bdb": [
+        "d.co.aa"
+      ],
+      "pos": "verb",
+      "gloss": "grow fat, enrich, clear ashes",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "grow fat",
+          "senses": [
+            {
+              "id": "grow-fat",
+              "gloss": "grow fat",
+              "definition": "Israel eats its fill and grows fat in the land flowing with milk and honey.",
+              "evidence": [
+                {
+                  "ref": "Deu.31.20",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "make rich or treat as rich",
+          "senses": [
+            {
+              "id": "enrich-or-regard-as",
+              "gloss": "enrich or regard as choice",
+              "definition": "The host enriches the guest’s head with oil. In the prayer for the king, Yahweh is asked to regard his burnt offering as fat, a choice offering.",
+              "evidence": [
+                {
+                  "ref": "Psa.23.5",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.20.4"
+                }
+              ]
+            },
+            {
+              "id": "clear-away-altar-ashes",
+              "gloss": "clear away altar ashes",
+              "definition": "Before the sanctuary travels, the altar is cleared of ashes and covered with a purple cloth.",
+              "evidence": [
+                {
+                  "ref": "Num.4.13",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be enriched",
+          "senses": [
+            {
+              "id": "be-enriched",
+              "gloss": "be enriched",
+              "definition": "The generous person is enriched, and the diligent person’s appetite is amply supplied.",
+              "evidence": [
+                {
+                  "ref": "Pro.11.25",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Pro.13.4"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hothpaal",
+          "gloss": "become coated with fat",
+          "senses": [
+            {
+              "id": "become-coated-with-fat",
+              "gloss": "become coated with fat",
+              "definition": "Isaiah describes Yahweh’s sword drenched with blood and covered with fat in the judgment of Edom.",
+              "evidence": [
+                {
+                  "ref": "Isa.34.6",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "דֶּשֶׁן",
+      "bdb": [
+        "d.co.ab"
+      ],
+      "pos": "noun",
+      "gloss": "fatness, rich food, altar ashes",
+      "senses": [
+        {
+          "id": "rich-abundance",
+          "gloss": "rich abundance",
+          "definition": "The psalmist says those taking shelter with God are satisfied with the rich provision of his house.",
+          "evidence": [
+            {
+              "ref": "Psa.36.9",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.63.6"
+            }
+          ]
+        },
+        {
+          "id": "altar-ashes",
+          "gloss": "altar ashes",
+          "definition": "The priest lifts the residue left after the fire has consumed the burnt offering and places it beside the altar.",
+          "evidence": [
+            {
+              "ref": "Lev.6.3",
+              "to": "Lev.6.4",
+              "role": "defining"
+            },
+            {
+              "ref": "Lev.1.16"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "דָּשֵׁן",
+      "bdb": [
+        "d.co.ac"
+      ],
+      "pos": "adjective",
+      "gloss": "fat, flourishing",
+      "senses": [
+        {
+          "id": "fat-flourishing",
+          "gloss": "fat, flourishing",
+          "definition": "The psalm compares the righteous in old age to trees still vigorous and flourishing.",
+          "evidence": [
+            {
+              "ref": "Psa.92.15",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "akk-dashnu"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-dashnu",
+      "lang": "akk",
+      "form": "dašnu",
+      "translit": "dašnu",
+      "gloss": "mighty",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "dašnu [mighty] AJ, armep x000132260"
+        }
+      ],
+      "sounds": {
+        "ש": "š"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "The relation of Akkadian “mighty” to Hebrew “fat, flourishing” is possible but indirect. Psalm 20 expresses a wish for favorable acceptance; its verb by itself does not describe a fire consuming the offering."
+}

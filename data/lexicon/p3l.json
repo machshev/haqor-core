@@ -1,0 +1,264 @@
+{
+  "id": "p3l",
+  "root": "פעל",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "work",
+    "conduct",
+    "wages"
+  ],
+  "gloss": "do, make, work, wages",
+  "summary": "A person may make a thing or do a deed. The nouns name the work itself and the pay due to the person who did it. Psalm 5 identifies the workers by the evil they practise.",
+  "words": [
+    {
+      "lemma": "פָּעַל",
+      "bdb": [
+        "q.ce.aa"
+      ],
+      "pos": "verb",
+      "gloss": "do, make, work",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "make or do",
+          "senses": [
+            {
+              "id": "make-produce",
+              "gloss": "make, produce",
+              "definition": "A craftsman makes an image. The psalmist pictures someone falling into the pit he himself made.",
+              "evidence": [
+                {
+                  "ref": "Isa.44.15",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.7.16"
+                }
+              ],
+              "cognate_ids": [
+                "ar-faala"
+              ]
+            },
+            {
+              "id": "do-practise",
+              "gloss": "do, practise",
+              "definition": "The object identifies the conduct: Psalm 5 calls evildoers people who practise wickedness, while Psalm 15 speaks of doing righteousness.",
+              "evidence": [
+                {
+                  "ref": "Psa.5.6",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.6.9"
+                },
+                {
+                  "ref": "Psa.15.2"
+                },
+                {
+                  "ref": "Psa.119.3"
+                }
+              ],
+              "cognate_ids": [
+                "ar-faala"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "פֹּעַל",
+      "bdb": [
+        "q.ce.ab"
+      ],
+      "pos": "noun",
+      "gloss": "deed, work, wages",
+      "senses": [
+        {
+          "id": "deed-work",
+          "gloss": "deed, work",
+          "definition": "Moses calls the Rock’s work perfect. The psalmist asks for repayment corresponding to the deeds of the wicked.",
+          "evidence": [
+            {
+              "ref": "Deu.32.4",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.28.4"
+            },
+            {
+              "ref": "Hab.1.5"
+            }
+          ],
+          "cognate_ids": [
+            "ar-faala"
+          ]
+        },
+        {
+          "gloss": "wages",
+          "definition": "Job compares the labourer waiting for his pay to a slave longing for shade.",
+          "evidence": [
+            {
+              "ref": "Job.7.2",
+              "role": "defining"
+            },
+            {
+              "ref": "Jer.22.13"
+            }
+          ],
+          "id": "wage"
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "פְּעֻלָּה",
+      "bdb": [
+        "q.ce.ac"
+      ],
+      "pos": "noun",
+      "gloss": "work, recompense",
+      "senses": [
+        {
+          "id": "work-labour-performed",
+          "gloss": "work, labour performed",
+          "definition": "Asa and his people are encouraged to keep working because their labour has a reward.",
+          "evidence": [
+            {
+              "ref": "2Ch.15.7",
+              "role": "defining"
+            }
+          ],
+          "cognate_ids": [
+            "ar-faala"
+          ]
+        },
+        {
+          "id": "payment-or-reward",
+          "gloss": "payment or reward",
+          "definition": "A hired person’s pay must not be held back overnight. The servant entrusts his reward to God.",
+          "evidence": [
+            {
+              "ref": "Lev.19.13",
+              "role": "defining"
+            },
+            {
+              "ref": "Isa.49.4"
+            }
+          ],
+          "kin": [
+            "wage"
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "מִפְעָל",
+      "bdb": [
+        "q.ce.ae"
+      ],
+      "pos": "noun",
+      "gloss": "work, thing made",
+      "senses": [
+        {
+          "id": "work-thing-made",
+          "gloss": "work, thing made",
+          "definition": "Wisdom speaks of the time before Yahweh’s works of long ago.",
+          "evidence": [
+            {
+              "ref": "Pro.8.22",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "ar-faala"
+      ]
+    },
+    {
+      "lemma": "מִפְעָלָה",
+      "bdb": [
+        "q.ce.af"
+      ],
+      "pos": "noun",
+      "gloss": "deed, work",
+      "senses": [
+        {
+          "id": "deed-work-2",
+          "gloss": "deed, work",
+          "definition": "The psalms invite their hearers to come and see God’s deeds on earth and among humankind.",
+          "evidence": [
+            {
+              "ref": "Psa.46.9",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.66.5"
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "cognate_ids": [
+        "ar-faala"
+      ]
+    },
+    {
+      "lemma": "פָּעֲלָא",
+      "bdb": [],
+      "pos": "noun",
+      "gloss": "worker, labourer",
+      "senses": [
+        {
+          "id": "worker-labourer",
+          "gloss": "worker, labourer",
+          "definition": "Jesus speaks of workers for a plentiful harvest. In his parable a landowner hires workers for the vineyard and pays them at evening.",
+          "evidence": [
+            {
+              "ref": "Mat.9.37",
+              "to": "Mat.9.38",
+              "role": "defining"
+            },
+            {
+              "ref": "Mat.20.1"
+            },
+            {
+              "ref": "Mat.20.8"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "lang": "syc",
+      "cognate_ids": [
+        "ar-faala"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-faala",
+      "lang": "ar",
+      "form": "فَعَلَ",
+      "translit": "faʿala",
+      "gloss": "do, perform",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 2420, فعل, form I, n34194"
+        }
+      ],
+      "sounds": {
+        "ע": "ʿ"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "The masculine and feminine nouns with prefixed mem share a source token list. Proverbs 8:22 has the masculine plural suffix, whereas the two psalms use the plural in -ot."
+}
