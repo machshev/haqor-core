@@ -70,7 +70,7 @@
       "evidence": [
         {
           "locator": "s.v. לָא I",
-          "note": "Targ. Gen. 2:5; Pes. 10b \"before the time … yes; after the time, no\".",
+          "note": "Targ. Gen. 2:5; Pes. 10b \"in the time … yes; after the time, no\".",
           "source": "jastrow-1903"
         }
       ],
@@ -85,7 +85,7 @@
     {
       "evidence": [
         {
-          "locator": "armep x000004710, lū [may] MOD",
+          "locator": "armep x000000710, lū [may] MOD",
           "note": "although; if; indeed; may; should.",
           "source": "oracc",
           "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000004710.html"
@@ -108,7 +108,7 @@
       "evidence": [
         {
           "locator": "p. 3014, art. لو, لَوْ",
-          "note": "\"It is used as an optative particle\"; لَوْ كَانَ هٰذَا لَكَانَ ذَاكَ \"Had this been… that had been\".",
+          "note": "\"It is used as an optative particle\"; لَوْ كَانَ كَذَا لَكَانَ كَذَا \"Had this been so, that would have been\".",
           "source": "lane"
         }
       ],
@@ -116,7 +116,7 @@
       "gloss": "if (it had been so); would that",
       "id": "ar-law",
       "lang": "ar",
-      "note": "Both uses of לוּ: the optative, \"would that\", and the unreal condition, \"had this been, that would have been\".",
+      "note": "Both uses of לוּ: the optative, \"would that\", and the unreal condition, \"had this been so, that would have been\".",
       "relation": "cognate",
       "translit": "law"
     },
@@ -124,7 +124,7 @@
       "evidence": [
         {
           "locator": "p. 3014, art. لو, لَوْلَا",
-          "note": "لَوْلَا هٰذَا لَكَانَ ذَاكَ \"Had not this been, or but for this, that had been\"; \"followed by a noun… or by a verb\".",
+          "note": "لَوْلَا هٰذَا لَكَانَ هٰذَا \"Had not this been, or but for this, that had been\"; \"followed by a noun… or by a verb\".",
           "source": "lane"
         }
       ],
@@ -132,7 +132,7 @@
       "gloss": "had not, but for",
       "id": "ar-lawla",
       "lang": "ar",
-      "note": "لَوْ \"if\" and لَا \"not\" joined, exactly as לוּלֵא is לוּ and לֹא, and used the same way, with a noun or a verb.",
+      "note": "لَوْ \"if\" and لَا \"not\" joined, exactly as לוּלֵא is לוּ and לֹא, and used the same way with a noun or a verb.",
       "relation": "cognate",
       "translit": "lawlā"
     },
@@ -234,7 +234,7 @@
           "ref": "1Pe.2.10"
         }
       ],
-      "statement": "Hosea's son is named לֹא עַמִּי, \"not my people\", because Israel had left Yahweh (Hos 1:9), and Yahweh promises to say to לֹא־עַמִּי, \"You are my people\" (Hos 2:25). Paul reads the promise of those God called \"not of the Jews only, but also of the Gentiles\" (Rom 9:24–26), and Peter of believers who \"once were not a people, but are now the people of God\" (1Pe 2:10). The negative is undone by God's call and mercy, not by descent: a people is his because he calls it his.",
+      "statement": "Hosea's son is named לֹא עַמִּי, \"not my people\", because Israel had left Yahweh (Hos 1:6, 9), and Yahweh promises to say to לֹא־עַמִּי, \"You are my people\" (Hos 2:25). Paul reads the promise of those God called \"not of the Jews only, but also of the Gentiles\" (Rom 9:24–26), and Peter of believers who \"once were not a people, but are now the people of God\" (1Pe 2:10). The negative is undone by God's call and mercy, not by descent: a people is his because he calls it his.",
       "topic": "people-of-god"
     },
     {
@@ -417,6 +417,11 @@
             {
               "note": "In וְלֹא יִכָּרֵת כָּל בָּשָׂר עוֹד, לֹא negates the future event expressed by יִכָּרֵת. God promises that all flesh will never again be cut off by floodwaters.",
               "ref": "Gen.9.11",
+              "role": "example"
+            },
+            {
+              "note": "In וְלֹא יִהְיֶה עוֹד, לֹא negates יִהְיֶה and עוֹד supplies “again.” God promises that the waters will never again become a flood to destroy all flesh.",
+              "ref": "Gen.9.15",
               "role": "example"
             }
           ],
@@ -814,6 +819,11 @@
           "evidence": [
             {
               "locator": "JDG 8:19 word 8",
+              "note": "εἰ for the first לוּ of \"if you had kept them alive\".",
+              "source": "macula-lxx"
+            },
+            {
+              "locator": "DEU 32:29 word 1",
               "source": "macula-lxx"
             }
           ],
@@ -839,7 +849,7 @@
               "role": "defining"
             },
             {
-              "note": "\"O that you had attended to my commandments! then your peace would have been as a river.\"",
+              "note": "\"O that you had attended to my commandments! then your peace would have looked like a river.\"",
               "ref": "Isa.48.18",
               "role": "defining"
             },
@@ -856,16 +866,16 @@
               "ref": "Jos.7.7"
             },
             {
-              "note": "\"O that you would tear the heavens and come down!\"",
+              "note": "\"Would that you would tear the heavens and come down!\"",
               "ref": "Isa.63.19"
-            },
-            {
-              "note": "As a plea: \"if you, would you but hear me\".",
-              "ref": "Gen.23.13"
             },
             {
               "note": "As assent: \"Very well, let it be as you say\" (הֵן לוּ יְהִי).",
               "ref": "Gen.30.34"
+            },
+            {
+              "note": "As a plea: \"if you, would you but hear me\".",
+              "ref": "Gen.23.13"
             }
           ],
           "gloss": "if only, would that",
@@ -875,8 +885,13 @@
           "definition": "A condition contrary to fact: \"if (only) this had been so\", with what would have followed in the main clause.",
           "evidence": [
             {
-              "note": "\"If you had kept them alive, I would not kill you\" (לוּ … לֹא הָרַגְתִּי).",
+              "note": "\"If you had kept them alive, I would not kill us\" (לוּ … לֹא הָרַגְתִּי).",
               "ref": "Jdg.8.19",
+              "role": "defining"
+            },
+            {
+              "note": "\"Even if I were to weigh a thousand of silver on my palms\" (read וְלוּא, written ולא).",
+              "ref": "2Sa.18.12",
               "role": "defining"
             },
             {
@@ -885,8 +900,9 @@
               "role": "defining"
             },
             {
-              "note": "\"If there were a sword in my hand, I would have killed you by now\" (לוּ … כִּי עַתָּה).",
-              "ref": "Num.22.29"
+              "note": "\"If there were a sword in my hand, by now I would have killed you\" (לוּ … כִּי עַתָּה).",
+              "ref": "Num.22.29",
+              "role": "defining"
             },
             {
               "note": "\"If they were wise, they would understand this.\"",
@@ -897,7 +913,7 @@
               "ref": "1Sa.14.30"
             },
             {
-              "note": "\"If Absalom were alive and we all dead today\" (read לוּ, written לא).",
+              "note": "\"If Absalom were alive, and we all dead today\" (read לוּ, written לא).",
               "ref": "2Sa.19.7"
             }
           ],
@@ -914,7 +930,8 @@
             },
             {
               "note": "\"If I cause evil beasts to pass through the land.\"",
-              "ref": "Ezk.14.15"
+              "ref": "Ezk.14.15",
+              "role": "defining"
             },
             {
               "note": "\"If a man walking in wind and falsehood lies…\"",
@@ -933,7 +950,7 @@
           "id": "if-suppose"
         }
       ],
-      "summary": "A particle of wish and condition, about twenty times, also spelled לוּא. Its own cognates (Akkadian lū \"may; if\", Arabic لَوْ \"if; would that\") are words distinct from those languages' negative lā, so it is not formed from לֹא; it is kept in this entry because the task joined them and because לוּלֵא is the two together. Where it is \"if\", the condition is usually one that did not happen, and the main clause says what would then have followed.",
+      "summary": "A particle of wish and condition, about twenty times, also spelled לוּא. Its own cognates (Akkadian lū \"may; if\", Arabic law) are words distinct from those languages' negative lā, so it is not formed from לֹא; it is kept in this entry because the task joined them and because לוּלֵא is the two together. Where it is \"if\", the condition is usually one that did not happen, and the main clause says what would then have followed.",
       "usage": {
         "phrases": [
           {
@@ -943,6 +960,9 @@
               },
               {
                 "ref": "1Sa.14.30"
+              },
+              {
+                "ref": "Jos.7.7"
               }
             ],
             "gloss": "if…, then by now…",
@@ -955,6 +975,9 @@
               },
               {
                 "ref": "Jdg.13.23"
+              },
+              {
+                "ref": "Job.10.19"
               }
             ],
             "gloss": "if (it had been so)…, (this) would not…",
@@ -999,26 +1022,26 @@
           "definition": "Names what prevented a thing, by saying what would have followed without it; followed by a noun (\"but for Yahweh\") or a verb (\"had you not…\").",
           "evidence": [
             {
-              "note": "\"Had you not ploughed with my heifer, you would not have found out my riddle\" (לוּלֵא … לֹא).",
+              "note": "\"If you had not ploughed with my heifer, you would not have found out my riddle\" (לוּלֵא … לֹא).",
               "ref": "Jdg.14.18",
               "role": "defining"
             },
             {
-              "note": "\"Had not Yahweh of hosts left us a very small remnant, we would have been as Sodom.\" Rom 9:29 quotes it with εἰ μή, the Peshitta with ʾellū lā.",
+              "note": "\"Had not Yahweh of hosts left us a very small remnant, we should have been as Sodom.\" Rom 9:29 quotes it with εἰ μή, the Peshitta with ʾellū lā.",
               "ref": "Isa.1.9",
               "role": "defining"
             },
             {
-              "note": "\"Had not the God of my father… been with me, surely now you would have sent me away empty\" (לוּלֵי … כִּי עַתָּה).",
+              "note": "\"But for the God of my father… you would now have sent me away empty\" (לוּלֵי … כִּי עַתָּה).",
               "ref": "Gen.31.42",
               "role": "defining"
             },
             {
-              "note": "\"Had we not lingered, surely now we would have returned twice.\"",
+              "note": "\"Had we not lingered, surely now we had returned twice.\"",
               "ref": "Gen.43.10"
             },
             {
-              "note": "\"He said he would destroy them, had not Moses his chosen stood in the breach before him.\"",
+              "note": "\"Had not Moses his chosen stood in the breach before him.\"",
               "ref": "Psa.106.23"
             },
             {
@@ -1030,7 +1053,7 @@
               "ref": "Psa.94.17"
             },
             {
-              "note": "\"Had not your law been my delight, I would then have perished in my affliction.\"",
+              "note": "\"Had not your law been my delight, I should have perished in my affliction.\"",
               "ref": "Psa.119.92"
             },
             {
@@ -1057,7 +1080,7 @@
           ]
         }
       ],
-      "summary": "לוּ \"if\" and לֹא \"not\" written as one word (also לוּלֵי), fourteen times: what would have happened, had not someone or something stepped in. Arabic לَوْلَا and Aramaic and Syriac ʾellū lā are built the same way from the same two particles.",
+      "summary": "לוּ \"if\" and לֹא \"not\" written as one word (also לוּלֵי), fourteen times: what would have happened, had not someone or something stepped in. Arabic لَوْلَا and Aramaic and Syriac ʾillū lā are built the same way from the same two particles.",
       "usage": {
         "phrases": [
           {
@@ -1085,7 +1108,7 @@
               }
             ],
             "gloss": "had not…, surely by now…",
-            "phrase": "לוּלֵא … כִּי עַתָּה"
+            "phrase": "לוּלֵא / לוּלֵי … כִּי עַתָּה"
           }
         ]
       }
@@ -1152,6 +1175,10 @@
             },
             {
               "note": "לָא אִיתַי, \"there is not\": \"there is not a man on earth who can show the king's matter\".",
+              "ref": "Dan.2.11"
+            },
+            {
+              "note": "לָא אִיתַי, \"there is not\": \"there is not a man on earth who can show the king's matter\".",
               "ref": "Dan.2.10"
             }
           ],
@@ -1186,9 +1213,8 @@
               "role": "defining"
             },
             {
-              "note": "\"Day by day without fail\" (דִּי־לָא שָׁלוּ).",
-              "ref": "Ezr.6.9",
-              "role": "defining"
+              "note": "\"Day by day without fail\" (דִּי לָא שָׁלוּ).",
+              "ref": "Ezr.6.9"
             }
           ],
           "gloss": "without, not by (דִּי לָא)",

@@ -259,6 +259,33 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article_id": "l2",
+            "base": "264f99b3d7aef8fa0ed9c1016a012394f37bf73c1fdbdd840871abddbadac889",
+            "change": "Add Gen.9.15 as an example of the existing Hebrew sense “not” in word 0 of l2.",
+            "definition": "לֹא negates a statement, here a statement about the future.",
+            "evidence": "Gen.9.15 uses לֹא before יִהְיֶה in the promise that the waters will never again become a flood to destroy all flesh. Gen.9.11 uses the same construction in the same promise."
+          },
+          "sense": "not",
+          "word": 0
+        },
+        "evidence": "In וְלֹא יִהְיֶה עוֹד הַמַּיִם לְמַבּוּל, לֹא negates the verb and עוֹד supplies “again.” God promises that the waters will never again become a flood to destroy all flesh.",
+        "gloss": "and not",
+        "language": "he",
+        "lemma": "לֹא",
+        "morph": "HC/Tn",
+        "morphology": "The prefixed conjunction וְ joins the next clause to the covenant promise. לֹא is the negative particle and negates יִהְיֶה.",
+        "qualifier": "",
+        "root": "לא",
+        "segments": "וְ/לֹא",
+        "sense": "Denies that a future event will occur."
+      },
+      "position": 12,
+      "surface": "וְלֹא"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "hyh",
           "word": 0
         },
