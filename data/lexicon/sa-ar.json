@@ -2,7 +2,7 @@
   "id": "sa-ar",
   "root": "סער",
   "status": "draft",
-  "updated": "2026-11-19",
+  "updated": "2026-11-20",
   "gloss": "storm",
   "summary": "סַעַר is a storm or tempest that sweeps violently.",
   "words": [
@@ -25,6 +25,88 @@
             },
             {
               "ref": "Jon.1.4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "סְעָרָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "storm, tempest",
+      "bdb": [
+        "o.ca.ac"
+      ],
+      "senses": [
+        {
+          "gloss": "storm",
+          "definition": "A storm or whirlwind raised by Yahweh carries away the wicked and the sea.",
+          "evidence": [
+            {
+              "ref": "Psa.55.9",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.107.25"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "סָעַר",
+      "pos": "verb",
+      "gloss": "storm, rage",
+      "bdb": [
+        "o.ca.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "storm",
+          "senses": [
+            {
+              "gloss": "storm",
+              "definition": "The sea storms and warriors storm forward.",
+              "evidence": [
+                {
+                  "ref": "Jon.1.11",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be enraged",
+          "senses": [
+            {
+              "gloss": "be enraged",
+              "definition": "The king of Aram was enraged.",
+              "evidence": [
+                {
+                  "ref": "2Ki.6.11",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "scatter with a whirlwind",
+          "senses": [
+            {
+              "gloss": "scatter",
+              "definition": "Yahweh scatters a people with a whirlwind.",
+              "evidence": [
+                {
+                  "ref": "Zec.7.14",
+                  "role": "defining"
+                }
+              ]
             }
           ]
         }

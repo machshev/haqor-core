@@ -2,7 +2,7 @@
   "id": "palats",
   "root": "פלצ",
   "status": "draft",
-  "updated": "2026-11-19",
+  "updated": "2026-11-20",
   "gloss": "terror; trembling",
   "summary": "The noun פַּלָּצוּת describes terror and trembling before danger.",
   "words": [
@@ -22,6 +22,74 @@
             {
               "ref": "Psa.55.6",
               "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מִפְלֶצֶת",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "horror, horrid thing",
+      "bdb": [
+        "q.bs.ac"
+      ],
+      "senses": [
+        {
+          "gloss": "horrid thing",
+          "definition": "A horrid image made for Asherah was cut down and burned.",
+          "evidence": [
+            {
+              "ref": "1Ki.15.13",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "תִּפְלֶצֶת",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "terror",
+      "bdb": [
+        "q.bs.ad"
+      ],
+      "senses": [
+        {
+          "gloss": "terror",
+          "definition": "Terror deceives the proud who trust in high places.",
+          "evidence": [
+            {
+              "ref": "Jer.49.16",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "פָּלַץ",
+      "pos": "verb",
+      "gloss": "shudder",
+      "bdb": [
+        "q.bs.aa"
+      ],
+      "stems": [
+        {
+          "stem": "hithpael",
+          "gloss": "tremble",
+          "senses": [
+            {
+              "gloss": "tremble",
+              "definition": "The earths pillars tremble before Yahweh.",
+              "evidence": [
+                {
+                  "ref": "Job.9.6",
+                  "role": "defining"
+                }
+              ]
             }
           ]
         }

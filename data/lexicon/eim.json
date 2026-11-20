@@ -2,7 +2,7 @@
   "id": "eim",
   "root": "אימ",
   "status": "draft",
-  "updated": "2026-11-19",
+  "updated": "2026-11-20",
   "gloss": "terror; dread",
   "summary": "אֵימָה is terror or dread that overwhelms the frightened person.",
   "words": [
@@ -25,6 +25,49 @@
             },
             {
               "ref": "Gen.15.12"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אֵימִים",
+      "pos": "name",
+      "gloss": "Emites, terrors",
+      "bdb": [
+        "a.cy.ad"
+      ],
+      "senses": [
+        {
+          "gloss": "Emites",
+          "definition": "The Emites were a tall people called Rephaim.",
+          "evidence": [
+            {
+              "ref": "Deu.2.10",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אָיֹם",
+      "pos": "adjective",
+      "gloss": "dreadful, awe-inspiring",
+      "bdb": [
+        "a.cy.ab"
+      ],
+      "senses": [
+        {
+          "gloss": "dreadful",
+          "definition": "Something dreadful inspires awe and fear.",
+          "evidence": [
+            {
+              "ref": "Hab.1.7",
+              "role": "defining"
+            },
+            {
+              "ref": "Sng.6.4"
             }
           ]
         }
