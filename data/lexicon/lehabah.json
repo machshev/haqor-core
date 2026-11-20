@@ -5,12 +5,10 @@
   "created": "2026-11-19",
   "updated": "2026-11-19",
   "tags": [
-    "psalms",
-    "creation",
-    "worship"
+    "psalms"
   ],
   "gloss": "flame, blade",
-  "summary": "A flame is a tongue of fire, while a blade is its sharp projecting edge. Yahweh’s voice divides flames.",
+  "summary": "Flame and blade share the image of a sharp projecting edge. The gentilic is retained as a proper-name derivative.",
   "words": [
     {
       "lemma": "לֶהָבָה",
@@ -42,7 +40,7 @@
       "senses": [
         {
           "gloss": "flame, blade",
-          "definition": "A flame or blade has a sharp, projecting edge.",
+          "definition": "The word names a flame and the sharp blade of a sword.",
           "evidence": [
             {
               "ref": "Jdg.3.22",
@@ -50,6 +48,26 @@
             },
             {
               "ref": "Pro.5.4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "לְהָבִים",
+      "bdb": [
+        "l.am.af"
+      ],
+      "pos": "name",
+      "gloss": "Lehabim",
+      "senses": [
+        {
+          "gloss": "Lehabim",
+          "definition": "Lehabim is a gentilic listed among Mizraim’s descendants.",
+          "evidence": [
+            {
+              "ref": "Gen.10.13",
+              "role": "defining"
             }
           ]
         }
@@ -74,9 +92,29 @@
           ]
         }
       ]
+    },
+    {
+      "lemma": "לַבָּה",
+      "bdb": [
+        "l.ai.aj"
+      ],
+      "pos": "noun",
+      "gloss": "flame",
+      "senses": [
+        {
+          "gloss": "flame",
+          "definition": "This spelling cross-references the flame word.",
+          "evidence": [
+            {
+              "ref": "Isa.5.24",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
     }
   ],
   "cognates": [],
   "doctrine": [],
-  "note": "Drafted for Psalms 21–30."
+  "note": "The Lehabim gentilic is included as a name-form; its exact etymology is open."
 }

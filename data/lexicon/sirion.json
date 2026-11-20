@@ -5,28 +5,35 @@
   "created": "2026-11-19",
   "updated": "2026-11-19",
   "tags": [
-    "psalms",
-    "creation",
-    "worship"
+    "psalms"
   ],
-  "gloss": "Sirion, incision",
-  "summary": "Sirion is the Sidonian name for Mount Hermon in Psalm 29. The same spelling family also denotes an incision.",
+  "gloss": "incise, scratch",
+  "summary": "The root describes cutting or scratching the skin. Sirion is a distinct proper name for Hermon.",
   "words": [
     {
-      "lemma": "שִׂרְיֹן",
+      "lemma": "שָׂרַט",
       "bdb": [
-        "u.cg.af"
+        "u.cg.aa"
       ],
-      "pos": "name",
-      "gloss": "Sirion",
-      "senses": [
+      "pos": "verb",
+      "gloss": "scratch, incise",
+      "stems": [
         {
-          "gloss": "Sirion",
-          "definition": "Sirion is made to leap like a young wild ox before Yahweh’s voice.",
-          "evidence": [
+          "stem": "qal",
+          "gloss": "scratch",
+          "senses": [
             {
-              "ref": "Psa.29.6",
-              "role": "defining"
+              "gloss": "scratch",
+              "definition": "A person must not make incisions in the flesh for the dead.",
+              "evidence": [
+                {
+                  "ref": "Lev.19.28",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Deu.14.1"
+                }
+              ]
             }
           ]
         }
@@ -42,7 +49,7 @@
       "senses": [
         {
           "gloss": "incision",
-          "definition": "An incision is a mark cut into the skin.",
+          "definition": "A cut or scratch is an incision in the skin.",
           "evidence": [
             {
               "ref": "Lev.19.28",
@@ -51,9 +58,64 @@
           ]
         }
       ]
+    },
+    {
+      "lemma": "שָׂרֶטֶת",
+      "bdb": [
+        "u.cg.ac"
+      ],
+      "pos": "noun",
+      "gloss": "incision",
+      "senses": [
+        {
+          "gloss": "incision",
+          "definition": "The feminine form names the same kind of incision.",
+          "evidence": [
+            {
+              "ref": "Lev.19.28",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שִׂרְיֹן",
+      "bdb": [
+        "u.cg.af"
+      ],
+      "pos": "name",
+      "gloss": "Sirion",
+      "senses": [
+        {
+          "gloss": "Sirion",
+          "definition": "Sirion is the Sidonian name of Hermon, which leaps at Yahweh’s voice.",
+          "evidence": [
+            {
+              "ref": "Psa.29.6",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
     }
   ],
-  "cognates": [],
+  "cognates": [
+    {
+      "id": "uga-thrt",
+      "lang": "uga",
+      "form": "ṯrt",
+      "translit": "incision",
+      "gloss": "oracc",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "DULAT Ugaritic ṯrt, incision"
+        }
+      ]
+    }
+  ],
   "doctrine": [],
-  "note": "Drafted for Psalms 21–30."
+  "note": "The place-name Sirion is retained as a homographic proper name; its tie to the incision sense is uncertain."
 }
