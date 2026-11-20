@@ -2,7 +2,7 @@
   "id": "gazaz",
   "root": "גזז",
   "status": "draft",
-  "created": "2026-11-20",
+  "created": "2026-11-19",
   "updated": "2026-11-19",
   "tags": [
     "work",
@@ -47,13 +47,17 @@
               "definition": "Be cut or shorn.",
               "evidence": [
                 {
-                  "ref": "Job.1.20",
+                  "ref": "Nam.1.12",
                   "role": "defining"
                 }
               ]
             }
           ]
         }
+      ],
+      "cognate_ids": [
+        "ar-shear",
+        "arc-shear"
       ]
     },
     {
@@ -75,6 +79,10 @@
             }
           ]
         }
+      ],
+      "cognate_ids": [
+        "ar-shear",
+        "arc-shear"
       ]
     },
     {
@@ -87,25 +95,40 @@
       ],
       "senses": [
         {
-          "gloss": "shearing",
-          "definition": "Mown grass or the fleece of sheep after shearing.",
+          "gloss": "shearing, fleece",
+          "definition": "Israel is to give the first shearing from its flock to the priest.",
+          "evidence": [
+            {
+              "ref": "Deu.18.4",
+              "role": "defining"
+            }
+          ]
+        },
+        {
+          "gloss": "mown grass, mowing",
+          "definition": "The king’s coming is compared to rain on newly mown growth. Amos dates the growth of the later grass after the king’s mowing.",
           "evidence": [
             {
               "ref": "Psa.72.6",
               "role": "defining"
             },
             {
-              "ref": "2Ki.10.1"
+              "ref": "Amo.7.1",
+              "role": "example"
             }
           ]
         }
+      ],
+      "cognate_ids": [
+        "ar-shear",
+        "arc-shear"
       ]
     }
   ],
   "note": "גָּזֵז is a personal name in the source word list and needs a separate name entry after TIPNR verification. The zero-token spelling variants are retained by the runtime under the same root.",
   "cognates": [
     {
-      "id": "ar-jazz",
+      "id": "ar-shear",
       "lang": "ar",
       "form": "جَزَّ",
       "translit": "jazza",
@@ -114,8 +137,24 @@
       "evidence": [
         {
           "source": "lane",
-          "locator": "root جزز",
-          "note": "Arabic jazza means to cut or shear."
+          "locator": "Book I, p. 416, n5651"
+        }
+      ],
+      "sounds": {
+        "ז": "z"
+      }
+    },
+    {
+      "id": "arc-shear",
+      "lang": "arc",
+      "form": "גְּזַז",
+      "translit": "gəzaz",
+      "gloss": "shear, cut",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. גְּזַז, Targum Genesis 38:13 and Deuteronomy 15:19"
         }
       ]
     }

@@ -21,9 +21,24 @@
             {
               "ref": "Psa.74.13",
               "role": "defining"
+            },
+            {
+              "ref": "Gen.1.21",
+              "role": "defining"
+            },
+            {
+              "ref": "Exo.7.10",
+              "role": "example"
+            },
+            {
+              "ref": "Isa.27.1",
+              "role": "example"
             }
           ]
         }
+      ],
+      "cognate_ids": [
+        "arc-serpent"
       ]
     },
     {
@@ -48,6 +63,22 @@
       ]
     }
   ],
-  "note": "Drafted to cover the Psalm 74–77 occurrence. Cognate evidence and sibling forms are limited in the current source bundle and should be checked against the cited scripture and available language dictionaries..",
-  "created": "2026-11-19"
+  "note": "Singular tannîn and plural tannînîm are distinguished from the similar plural tannîm, jackals, by the contexts.",
+  "created": "2026-11-19",
+  "cognates": [
+    {
+      "id": "arc-serpent",
+      "lang": "arc",
+      "form": "תַּנִּינָא",
+      "translit": "tannînā",
+      "gloss": "serpent, sea creature",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. תַּנִּינָא, Targum Onqelos Exodus 7:9 and Targum Isaiah 27:1"
+        }
+      ]
+    }
+  ]
 }

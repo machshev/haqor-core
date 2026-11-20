@@ -2,7 +2,7 @@
   "id": "yanah",
   "root": "ינה",
   "status": "draft",
-  "updated": "2026-11-20",
+  "updated": "2026-11-19",
   "gloss": "oppress, afflict",
   "summary": "ינה describes oppression and harsh treatment.",
   "words": [
@@ -16,11 +16,49 @@
       "stems": [
         {
           "stem": "qal",
-          "gloss": "oppress, afflict",
+          "gloss": "oppress",
           "senses": [
             {
-              "gloss": "oppress, afflict",
-              "definition": "The verb describes oppressing or afflicting the community. The form נִינָם may also be read as their offspring, an alternate reading in this verse.",
+              "gloss": "oppress",
+              "definition": "The desolation of the land is associated with the oppressing sword and burning anger.",
+              "evidence": [
+                {
+                  "ref": "Jer.46.16",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jer.50.16",
+                  "role": "example"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "wrong, mistreat",
+          "senses": [
+            {
+              "gloss": "wrong, mistreat",
+              "definition": "Israel must not mistreat the resident alien or take advantage of a neighbour in a sale.",
+              "evidence": [
+                {
+                  "ref": "Exo.22.20",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Lev.25.14",
+                  "role": "example"
+                },
+                {
+                  "ref": "Ezk.18.12",
+                  "role": "example"
+                }
+              ]
+            },
+            {
+              "gloss": "suppress, disputed reading",
+              "definition": "On a verbal reading, the enemies resolve to suppress the worshippers before burning their meeting places. The same consonants can be read “their offspring”.",
               "evidence": [
                 {
                   "ref": "Psa.74.8",
@@ -28,16 +66,13 @@
                 }
               ]
             }
-          ],
-          "cognate_ids": [
-            "arc-yeni"
           ]
         }
       ]
     }
   ],
-  "note": "Jastrow J00436 supports the oppression sense. Psalm 74.8 נִינָם has an alternate offspring reading that remains to be reviewed against the morphology.",
-  "created": "2026-11-20",
+  "note": "Psalm 74:8 נִינָם is indexed to this verb and has been read as a resolve to suppress the worshippers. The pointed form also allows the noun נִין with a suffix, “their offspring” (see nun).",
+  "created": "2026-11-19",
   "cognates": [
     {
       "id": "arc-yeni",
@@ -48,7 +83,7 @@
       "relation": "cognate",
       "evidence": [
         {
-          "source": "jastrow",
+          "source": "jastrow-1903",
           "locator": "J00437",
           "note": "Jastrow J00437 records the Aramaic oppression sense."
         }

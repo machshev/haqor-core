@@ -1,9 +1,9 @@
 {
   "id": "keilaphot",
-  "created": "2026-11-20",
-  "root": "כילפת",
+  "created": "2026-11-19",
+  "root": "כלפ",
   "status": "draft",
-  "updated": "2026-11-20",
+  "updated": "2026-11-19",
   "gloss": "axes",
   "summary": "כֵּילַפּוֹת names axes or cutting tools in the sanctuary destruction scene.",
   "words": [
@@ -11,7 +11,6 @@
       "lemma": "כֵּילַפּוֹת",
       "pos": "noun",
       "gloss": "axes",
-      "root": "כילפת",
       "bdb": [
         "k.bh.ai"
       ],
@@ -19,16 +18,40 @@
         {
           "id": "axes",
           "gloss": "axes",
-          "definition": "Cutting axes used in the cited Psalm context.",
+          "definition": "Attackers smash the carved work together with hammer and cutting tool. The preceding verse pictures axes raised against a thicket.",
           "evidence": [
             {
               "ref": "Psa.74.6",
               "role": "defining"
+            },
+            {
+              "ref": "Psa.74.5",
+              "role": "defining"
             }
           ]
         }
+      ],
+      "gender": "f",
+      "cognate_ids": [
+        "akk-pickaxe"
       ]
     }
   ],
-  "note": "The morphology database assigns כֵילַפּוֹת to כיד, but its lexical root is kept separately pending fuller cognate evidence."
+  "note": "Akkadian preserves the same tool and the k-l-p consonants. Hebrew occurs only in the plural, and the direction of borrowing is uncertain.",
+  "cognates": [
+    {
+      "id": "akk-pickaxe",
+      "lang": "akk",
+      "form": "kalappu",
+      "translit": "kalappu",
+      "gloss": "pickaxe",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep, kalappu [pickaxe], x000025970, including the forms kalappāte and kalabbāti"
+        }
+      ]
+    }
+  ]
 }

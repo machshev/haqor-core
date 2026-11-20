@@ -1,0 +1,79 @@
+{
+  "id": "misken",
+  "root": "מסכנ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "gloss": "poor, scarcity",
+  "summary": "A poor man can deliver a city by his wisdom. In the good land Israel is promised bread without scarcity.",
+  "words": [
+    {
+      "lemma": "מִסְכֵּן",
+      "bdb": [
+        "m.cr.ag"
+      ],
+      "pos": "adjective",
+      "gloss": "poor",
+      "senses": [
+        {
+          "gloss": "poor",
+          "definition": "A man of limited means saves his city by wisdom, yet afterward no one remembers him.",
+          "evidence": [
+            {
+              "ref": "Ecc.9.15",
+              "role": "defining"
+            },
+            {
+              "ref": "Ecc.4.13",
+              "role": "example"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "akk-poor"
+      ]
+    },
+    {
+      "lemma": "מִסְכֵּנֻת",
+      "bdb": [
+        "m.cr.ah"
+      ],
+      "pos": "noun",
+      "gloss": "poverty, scarcity",
+      "senses": [
+        {
+          "gloss": "poverty, scarcity",
+          "definition": "Eating bread without scarcity is explained by the promise of lacking nothing in the land.",
+          "evidence": [
+            {
+              "ref": "Deu.8.9",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "cognate_ids": [
+        "akk-poor"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-poor",
+      "lang": "akk",
+      "form": "muškēnu",
+      "translit": "muškēnu",
+      "gloss": "dependent, commoner, poor man",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep, muškēnu [dependant], x000013450"
+        }
+      ]
+    }
+  ],
+  "note": "Akkadian and the Hebrew abstract noun both preserve the final n. See masak for the wine words."
+}

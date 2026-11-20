@@ -2,7 +2,7 @@
   "id": "chus",
   "root": "חוס",
   "status": "draft",
-  "created": "2026-11-20",
+  "created": "2026-11-19",
   "updated": "2026-11-19",
   "gloss": "spare",
   "summary": "חוס expresses sparing or having compassion for someone in distress.",
@@ -26,27 +26,41 @@
                 {
                   "ref": "Psa.72.13",
                   "role": "defining"
+                },
+                {
+                  "ref": "Jon.4.10",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jon.4.11",
+                  "role": "example"
+                },
+                {
+                  "ref": "1Sa.24.11",
+                  "role": "example"
                 }
               ]
             }
           ]
         }
+      ],
+      "cognate_ids": [
+        "arc-spare"
       ]
     }
   ],
   "cognates": [
     {
-      "id": "syc-chus",
-      "lang": "syc",
-      "form": "ܚܘܣ",
-      "translit": "ḥūs",
-      "gloss": "spare, have pity",
+      "id": "arc-spare",
+      "lang": "arc",
+      "form": "חוּס",
+      "translit": "ḥûs",
+      "gloss": "spare, show consideration",
       "relation": "cognate",
       "evidence": [
         {
-          "source": "sedra",
-          "locator": "ܚܘܣ",
-          "note": "Syriac cognate means to spare or have pity."
+          "source": "jastrow-1903",
+          "locator": "s.v. חוּס, Targum Exodus 12:27 and 2 Chronicles 36:15"
         }
       ]
     }

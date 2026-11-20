@@ -2,7 +2,7 @@
   "id": "eseb",
   "root": "עשׂב",
   "status": "draft",
-  "created": "2026-11-20",
+  "created": "2026-11-19",
   "updated": "2026-11-19",
   "gloss": "grass",
   "summary": "עשׂב names grass and other green vegetation.",
@@ -23,25 +23,57 @@
             {
               "ref": "Psa.72.16",
               "role": "defining"
+            },
+            {
+              "ref": "Gen.1.11",
+              "role": "defining"
+            },
+            {
+              "ref": "Gen.1.29",
+              "role": "example"
+            },
+            {
+              "ref": "Deu.11.15",
+              "role": "example"
             }
           ]
         }
+      ],
+      "cognate_ids": [
+        "ar-grass",
+        "arc-grass"
       ]
     }
   ],
   "cognates": [
     {
-      "id": "ar-ushb",
+      "id": "ar-grass",
       "lang": "ar",
-      "form": "عُشْب",
-      "translit": "ʿushb",
-      "gloss": "grass, herbage",
+      "form": "عُشْبٌ",
+      "translit": "ʿušb",
+      "gloss": "fresh green herbage",
       "relation": "cognate",
       "evidence": [
         {
           "source": "lane",
-          "locator": "root عشب",
-          "note": "Arabic ʿushb is grass and herbage."
+          "locator": "Book I, p. 2050, n29177"
+        }
+      ],
+      "sounds": {
+        "ע": "ʿ"
+      }
+    },
+    {
+      "id": "arc-grass",
+      "lang": "arc",
+      "form": "עִסְבָּא",
+      "translit": "ʿisbā",
+      "gloss": "herb, vegetation",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. עִסְבָּא, Targum Genesis 1:29 and Psalms 37:2"
         }
       ]
     }

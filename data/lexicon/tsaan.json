@@ -22,13 +22,43 @@
             {
               "ref": "Psa.78.12",
               "role": "defining"
+            },
+            {
+              "ref": "Num.13.22",
+              "role": "defining"
+            },
+            {
+              "ref": "Isa.19.11",
+              "role": "example"
+            },
+            {
+              "ref": "Psa.78.43",
+              "role": "example"
             }
           ]
+        }
+      ],
+      "cognate_ids": [
+        "egy-tanis"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "egy-tanis",
+      "lang": "egy",
+      "form": "Ḏꜥn.t",
+      "translit": "Ḏꜥn.t",
+      "gloss": "Tanis",
+      "relation": "loan",
+      "evidence": [
+        {
+          "source": "tla",
+          "locator": "Ancient Egyptian Dictionary, place name Ḏꜥn.t, TLA 853903"
         }
       ]
     }
   ],
-  "cognates": [],
   "doctrine": [],
-  "note": "Personal place name retained here because no place-entry mechanism was requested."
+  "note": "Egyptian supplies the place name. The similar Hebrew verb for moving camp in Isaiah 33:20 does not explain the city name."
 }

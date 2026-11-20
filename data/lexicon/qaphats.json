@@ -2,7 +2,7 @@
   "id": "qaphats",
   "root": "קפצ",
   "status": "draft",
-  "updated": "2026-11-20",
+  "updated": "2026-11-19",
   "gloss": "shut, close",
   "summary": "קפץ describes closing or shutting tightly.",
   "words": [
@@ -16,41 +16,80 @@
       "stems": [
         {
           "stem": "qal",
-          "gloss": "shut, close",
+          "gloss": "close, shut up",
           "senses": [
             {
-              "gloss": "shut, close",
-              "definition": "The verb describes Yahweh shutting or withholding his hand in the Psalm.",
+              "gloss": "close, shut up",
+              "definition": "One must not close a hand to a poor brother. Asaph asks whether God has shut up his compassion in anger.",
               "evidence": [
                 {
+                  "ref": "Deu.15.7",
+                  "role": "defining"
+                },
+                {
                   "ref": "Psa.77.10",
+                  "role": "example"
+                },
+                {
+                  "ref": "Isa.52.15",
+                  "role": "example"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be gathered in",
+          "senses": [
+            {
+              "gloss": "be gathered in",
+              "definition": "Those briefly exalted are brought low and gathered in like the rest, cut off like heads of grain.",
+              "evidence": [
+                {
+                  "ref": "Job.24.24",
                   "role": "defining"
                 }
               ]
             }
-          ],
-          "cognate_ids": [
-            "ar-qafaza"
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "leap",
+          "senses": [
+            {
+              "gloss": "leap",
+              "definition": "The beloved bounds over hills in parallel with leaping over mountains.",
+              "evidence": [
+                {
+                  "ref": "Sng.2.8",
+                  "role": "defining"
+                }
+              ]
+            }
           ]
         }
+      ],
+      "cognate_ids": [
+        "arc-shut"
       ]
     }
   ],
-  "note": "Drafted to cover the Psalm 74–77 occurrence. Cognate evidence and sibling forms are limited in the current source bundle and should be checked against the cited scripture and available language dictionaries..",
-  "created": "2026-11-20",
+  "note": "Job 24:24 fixes the outcome more clearly than the precise image of gathering in.",
+  "created": "2026-11-19",
   "cognates": [
     {
-      "id": "ar-qafaza",
-      "lang": "ar",
-      "form": "قفز",
-      "translit": "qafaza",
-      "gloss": "jump, spring",
+      "id": "arc-shut",
+      "lang": "arc",
+      "form": "קְפַץ",
+      "translit": "qəp̄aṣ",
+      "gloss": "close, contract, leap",
       "relation": "cognate",
       "evidence": [
         {
-          "source": "wiktionary",
-          "locator": "Arabic قفز, etymology",
-          "note": "Arabic قفز is cognate with Hebrew קפץ."
+          "source": "jastrow-1903",
+          "locator": "s.v. קְפַץ, Targum Onqelos Deuteronomy 15:7 and Niddah 8b"
         }
       ]
     }

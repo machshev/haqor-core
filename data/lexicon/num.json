@@ -2,7 +2,7 @@
   "id": "num",
   "root": "נומ",
   "status": "draft",
-  "updated": "2026-11-20",
+  "updated": "2026-11-19",
   "gloss": "sleep, be dormant",
   "summary": "נום describes sleep and stillness.",
   "words": [
@@ -25,14 +25,93 @@
                 {
                   "ref": "Psa.76.6",
                   "role": "defining"
+                },
+                {
+                  "ref": "Psa.121.4",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Isa.5.27",
+                  "role": "example"
                 }
               ]
             }
           ]
         }
+      ],
+      "cognate_ids": [
+        "arc-slumber"
+      ]
+    },
+    {
+      "lemma": "תְּנוּמָה",
+      "bdb": [
+        "n.ca.ac"
+      ],
+      "pos": "noun",
+      "gloss": "slumber",
+      "senses": [
+        {
+          "gloss": "slumber",
+          "definition": "The psalm pairs slumber given to the eyelids with sleep given to the eyes.",
+          "evidence": [
+            {
+              "ref": "Psa.132.4",
+              "role": "defining"
+            },
+            {
+              "ref": "Pro.6.4",
+              "role": "example"
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "cognate_ids": [
+        "arc-slumber"
+      ]
+    },
+    {
+      "lemma": "נוּמָה",
+      "bdb": [
+        "n.ca.ab"
+      ],
+      "pos": "noun",
+      "gloss": "drowsiness",
+      "senses": [
+        {
+          "gloss": "drowsiness",
+          "definition": "The drowsiness of one given to excess leaves him clothed in rags.",
+          "evidence": [
+            {
+              "ref": "Pro.23.21",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "cognate_ids": [
+        "arc-slumber"
       ]
     }
   ],
-  "note": "Drafted to cover the Psalm 74–77 occurrence. Cognate evidence and sibling forms are limited in the current source bundle and should be checked against the cited scripture and available language dictionaries..",
-  "created": "2026-11-20"
+  "note": "Psalm 76 places the sleep of the warriors beside the failure of their hands.",
+  "created": "2026-11-19",
+  "cognates": [
+    {
+      "id": "arc-slumber",
+      "lang": "arc",
+      "form": "נוּם",
+      "translit": "nûm",
+      "gloss": "slumber, nap",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. נוּם, Targum Isaiah 5:27 and Psalms 121:3–4"
+        }
+      ]
+    }
+  ]
 }

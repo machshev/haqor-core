@@ -2,10 +2,10 @@
   "id": "yisht",
   "root": "ישי",
   "status": "draft",
-  "created": "2026-11-20",
+  "created": "2026-11-19",
   "updated": "2026-11-19",
-  "gloss": "gift",
-  "summary": "ישט is represented by the personal name Jesse in the Psalm heading.",
+  "gloss": "Jesse, house of Jesse",
+  "summary": "Jesse is David’s father. Isaiah speaks of a shoot from Jesse’s stump and a root of Jesse to whom the nations turn.",
   "words": [
     {
       "lemma": "יִשַׁי",
@@ -19,11 +19,19 @@
             {
               "ref": "Psa.72.20",
               "role": "defining"
+            },
+            {
+              "ref": "Isa.11.1",
+              "role": "defining"
+            },
+            {
+              "ref": "Isa.11.10",
+              "role": "example"
             }
           ]
         }
       ]
     }
   ],
-  "note": "This proper name should receive a separate names/yishai.json entry after TIPNR verification."
+  "note": "The personal entry jesse owns the dictionary key. No further derivation is established."
 }

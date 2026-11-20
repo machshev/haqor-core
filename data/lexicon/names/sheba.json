@@ -1,6 +1,6 @@
 {
   "id": "sheba",
-  "created": "2026-11-20",
+  "created": "2026-11-19",
   "name": "שְׁבָא",
   "english": "Sheba",
   "root": "שבא",
@@ -13,14 +13,23 @@
     "Sheba@Gen.10.7"
   ],
   "gloss": "Sheba",
-  "summary": "Sheba is the name of a people and land whose rulers bring tribute to the king.",
+  "summary": "Three genealogies name a man called Sheba, as a son of Raamah, Joktan or Jokshan. Psalm 72 speaks of the land and its rulers.",
   "evidence": [
     {
-      "ref": "Gen.10.28",
+      "ref": "Gen.10.7",
       "role": "defining"
     },
     {
-      "ref": "Psa.72.10"
+      "ref": "Gen.10.28",
+      "role": "example"
+    },
+    {
+      "ref": "Gen.25.3",
+      "role": "example"
+    },
+    {
+      "ref": "Psa.72.10",
+      "role": "example"
     }
   ]
 }

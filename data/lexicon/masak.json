@@ -2,44 +2,32 @@
   "id": "masak",
   "root": "מסכ",
   "status": "draft",
-  "updated": "2026-11-20",
+  "updated": "2026-11-19",
   "gloss": "mixture, mixed drink",
-  "summary": "מסך denotes a mixed or poured drink.",
+  "summary": "Wisdom mixes wine before inviting guests to drink. A mixture is also prepared in the cup of judgment.",
   "words": [
     {
-      "lemma": "מֶ֫סֶךְ",
-      "pos": "verb",
-      "gloss": "mixture, mixed drink",
+      "lemma": "מֶסֶךְ",
       "bdb": [
         "m.cr.ab"
       ],
-      "stems": [
+      "pos": "noun",
+      "gloss": "mixture in a cup",
+      "senses": [
         {
-          "stem": "qal",
-          "gloss": "mix, cover",
-          "senses": [
+          "gloss": "mixture in a cup",
+          "definition": "The wine in Yahweh’s cup foams with a full mixture. He pours it out and the wicked drink to the dregs.",
+          "evidence": [
             {
-              "id": "mix",
-              "gloss": "mix or cover",
-              "definition": "To mix substances or spread a covering.",
-              "evidence": [
-                {
-                  "ref": "Psa.75.9",
-                  "role": "defining"
-                },
-                {
-                  "ref": "Pro.9.2"
-                },
-                {
-                  "ref": "Isa.5.22"
-                }
-              ]
+              "ref": "Psa.75.9",
+              "role": "defining"
             }
-          ],
-          "cognate_ids": [
-            "ar-sakaba"
           ]
         }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "arc-mix"
       ]
     },
     {
@@ -67,6 +55,9 @@
             }
           ]
         }
+      ],
+      "cognate_ids": [
+        "arc-mix"
       ]
     },
     {
@@ -88,44 +79,26 @@
             }
           ]
         }
-      ]
-    },
-    {
-      "lemma": "מִסְכֵּן",
-      "pos": "adjective",
-      "gloss": "poor",
-      "bdb": [
-        "m.cr.ag"
       ],
-      "senses": [
-        {
-          "id": "poor",
-          "gloss": "poor",
-          "definition": "Poor or lacking resources.",
-          "evidence": [
-            {
-              "ref": "Ecc.4.13"
-            }
-          ]
-        }
+      "cognate_ids": [
+        "arc-mix"
       ]
     }
   ],
-  "note": "The root family includes the verb מָסַךְ, mixed drink מִמְסָךְ and the related adjective מִסְכֵּן. Psalm 75.9 uses מֶסֶךְ in the cup image, with Pro.9.2 and Isa.5.22 defining the mixed drink sense.",
-  "created": "2026-11-20",
+  "note": "Compare Aramaic מזג for mixing wine. The consonants differ. The words for poverty belong to misken, with Akkadian muškēnu.",
+  "created": "2026-11-19",
   "cognates": [
     {
-      "id": "ar-sakaba",
-      "lang": "ar",
-      "form": "سكب",
-      "translit": "sakaba",
-      "gloss": "pour out",
+      "id": "arc-mix",
+      "lang": "arc",
+      "form": "מְזַג",
+      "translit": "məzag",
+      "gloss": "mix drink",
       "relation": "possible",
       "evidence": [
         {
-          "source": "lane",
-          "locator": "Book IV, art. سكب",
-          "note": "Arabic pouring sense bears on poured drink."
+          "source": "jastrow-1903",
+          "locator": "s.v. מְזַג, Targum Proverbs 9:2 and Eruvin 54a"
         }
       ]
     }

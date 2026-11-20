@@ -2,7 +2,7 @@
   "id": "lachak",
   "root": "לחכ",
   "status": "draft",
-  "created": "2026-11-20",
+  "created": "2026-11-19",
   "updated": "2026-11-19",
   "gloss": "lick",
   "summary": "לחכ describes licking, especially licking dust.",
@@ -26,30 +26,83 @@
                 {
                   "ref": "Psa.72.9",
                   "role": "defining"
+                },
+                {
+                  "ref": "Num.22.4",
+                  "role": "defining"
+                },
+                {
+                  "ref": "1Ki.18.38",
+                  "role": "example"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "qal",
+          "gloss": "lick up",
+          "senses": [
+            {
+              "gloss": "lick up",
+              "definition": "Moab compares Israel’s advance to an ox licking up the grass.",
+              "evidence": [
+                {
+                  "ref": "Num.22.4",
+                  "role": "defining"
                 }
               ]
             }
           ]
         }
+      ],
+      "cognate_ids": [
+        "arc-lick"
+      ]
+    },
+    {
+      "lemma": "לַחֵךְ",
+      "pos": "verb",
+      "gloss": "lick",
+      "stems": [
+        {
+          "stem": "pael",
+          "gloss": "lick",
+          "senses": [
+            {
+              "gloss": "lick",
+              "definition": "Dogs come and lick the sores of the poor man at the gate.",
+              "evidence": [
+                {
+                  "ref": "Luk.16.21",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "cognate_ids": [
+        "arc-lick"
       ]
     }
   ],
   "cognates": [
     {
-      "id": "ar-lahak",
-      "lang": "ar",
-      "form": "لَحِقَ",
-      "translit": "laḥiqa",
-      "gloss": "overtake, follow",
-      "relation": "possible",
+      "id": "arc-lick",
+      "lang": "arc",
+      "form": "לְחַךְ",
+      "translit": "ləḥaḵ",
+      "gloss": "lick up",
+      "relation": "cognate",
       "evidence": [
         {
-          "source": "lane",
-          "locator": "root لحق",
-          "note": "Arabic root describes following or overtaking, related to licking up by extension."
+          "source": "jastrow-1903",
+          "locator": "s.v. לְחַךְ, Targum 1 Kings 21:19 and 18:38"
         }
       ]
     }
   ],
-  "note": "The verse pictures defeated enemies or wilderness creatures licking dust before the king. The root brief also contains no noun beyond this verb."
+  "note": "The enemies licking dust in Psalm 72 are in submission to the king."
 }

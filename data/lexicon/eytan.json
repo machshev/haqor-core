@@ -2,13 +2,13 @@
   "id": "eytan",
   "root": "יתנ",
   "status": "draft",
-  "updated": "2026-11-20",
+  "updated": "2026-11-19",
   "gloss": "perennial, enduring",
   "summary": "אֵיתָן describes something enduring and permanently flowing.",
   "words": [
     {
       "lemma": "אֵיתָן",
-      "pos": "noun",
+      "pos": "adjective",
       "gloss": "perennial, enduring",
       "bdb": [
         "j.ee.ab"
@@ -16,11 +16,29 @@
       "senses": [
         {
           "gloss": "perennial, enduring",
-          "definition": "The adjective marks a perennial stream or enduring strength in the Psalm's poetic image.",
+          "definition": "Amos calls for righteousness to flow like a perennial stream. Asaph says that God can dry up even such rivers.",
           "evidence": [
             {
-              "ref": "Psa.74.15",
+              "ref": "Amo.5.24",
               "role": "defining"
+            },
+            {
+              "ref": "Psa.74.15",
+              "role": "example"
+            }
+          ]
+        },
+        {
+          "gloss": "strong, abiding",
+          "definition": "Balaam describes the Kenite dwelling as secure and its nest as set in the rock.",
+          "evidence": [
+            {
+              "ref": "Num.24.21",
+              "role": "defining"
+            },
+            {
+              "ref": "Gen.49.24",
+              "role": "example"
             }
           ]
         }
@@ -28,5 +46,5 @@
     }
   ],
   "note": "אֵיתָן means enduring or permanent in the Psalm. The Ethan personal names are linked in the separate name entry.",
-  "created": "2026-11-20"
+  "created": "2026-11-19"
 }

@@ -5,7 +5,7 @@
   "created": "2026-11-19",
   "updated": "2026-11-19",
   "gloss": "flow, gush",
-  "summary": "זוב describes liquid gushing or flowing abundantly.",
+  "summary": "Water gushes from the rock, and milk and honey flow in the promised land. Leviticus uses the noun for a discharge from the body.",
   "words": [
     {
       "lemma": "זוּב",
@@ -26,15 +26,27 @@
                 {
                   "ref": "Psa.78.20",
                   "role": "defining"
+                },
+                {
+                  "ref": "Exo.3.8",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Lev.15.25",
+                  "role": "example"
                 }
               ]
             }
           ]
         }
+      ],
+      "cognate_ids": [
+        "ar-flow",
+        "arc-flow"
       ]
     },
     {
-      "lemma": "זֹוב",
+      "lemma": "זוֹב",
       "pos": "noun",
       "gender": "m",
       "gloss": "discharge, bodily flow",
@@ -56,10 +68,65 @@
           ]
         }
       ],
-      "summary": "The pointed noun זֹוב means secretion or bodily discharge, as in the law of uncleanness (Lev 15). Wiktionary records the same Hebrew lemma as secretion or discharge."
+      "summary": "The pointed noun זֹוב means secretion or bodily discharge, as in the law of uncleanness (Lev 15). Wiktionary records the same Hebrew lemma as secretion or discharge.",
+      "cognate_ids": [
+        "arc-flux"
+      ]
     }
   ],
-  "cognates": [],
+  "cognates": [
+    {
+      "id": "ar-flow",
+      "lang": "ar",
+      "form": "ذَابَ",
+      "translit": "ḏāba",
+      "gloss": "melt, become liquid, flow",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 986, art. ذوب, n14144"
+        }
+      ],
+      "sounds": {
+        "ז": "ḏ"
+      }
+    },
+    {
+      "id": "arc-flow",
+      "lang": "arc",
+      "form": "דּוּב",
+      "translit": "dûb",
+      "gloss": "flow, drip",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. דּוּב, Targum Psalms 78:20 and Leviticus 15:25"
+        }
+      ],
+      "sounds": {
+        "ז": "ḏ"
+      }
+    },
+    {
+      "id": "arc-flux",
+      "lang": "arc",
+      "form": "דּוֹבָא",
+      "translit": "dôbā",
+      "gloss": "bodily discharge",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. דּוֹבָא, Targum Leviticus 15:2"
+        }
+      ],
+      "sounds": {
+        "ז": "ḏ"
+      }
+    }
+  ],
   "doctrine": [],
-  "note": "The noun זֹוב is attested as Hebrew zóv, secretion or discharge, in Wiktionary (entry זוב)."
+  "note": "Arabic ḏ and Aramaic d agree on the older consonant behind Hebrew z."
 }

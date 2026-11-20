@@ -2,7 +2,7 @@
   "id": "takan",
   "root": "תכנ",
   "status": "draft",
-  "updated": "2026-11-20",
+  "updated": "2026-11-19",
   "gloss": "measure, establish",
   "summary": "תכן describes weighing, measuring, or appointing a fixed order.",
   "words": [
@@ -15,34 +15,84 @@
       ],
       "stems": [
         {
-          "stem": "piel",
-          "gloss": "measure, establish",
+          "stem": "qal",
+          "gloss": "weigh, examine",
           "senses": [
             {
-              "id": "measure",
-              "gloss": "measure or establish",
-              "definition": "To measure, regulate, or establish a thing in a fixed order.",
+              "gloss": "weigh, examine",
+              "definition": "Yahweh weighs hearts or spirits even when people judge their own conduct right.",
               "evidence": [
                 {
-                  "ref": "Psa.75.4",
+                  "ref": "Pro.21.2",
                   "role": "defining"
                 },
                 {
-                  "ref": "Pro.16.2"
+                  "ref": "Pro.16.2",
+                  "role": "example"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be weighed, be equitable",
+          "senses": [
+            {
+              "gloss": "be weighed, be equitable",
+              "definition": "Hannah says actions are weighed by God. Ezekiel asks whose way measures up to justice.",
+              "evidence": [
+                {
+                  "ref": "1Sa.2.3",
+                  "role": "defining"
                 },
                 {
-                  "ref": "Isa.40.12"
+                  "ref": "Ezk.18.25",
+                  "role": "example"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "measure, set in place",
+          "senses": [
+            {
+              "gloss": "measure, set in place",
+              "definition": "Yahweh measures the heavens by a span and sets firm the pillars of a tottering earth.",
+              "evidence": [
+                {
+                  "ref": "Isa.40.12",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.75.4",
+                  "role": "example"
                 }
               ]
             }
           ],
           "cognate_ids": [
-            "ar-qanasa"
+            "arc-establish"
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be weighed out",
+          "senses": [
+            {
+              "gloss": "be weighed out",
+              "definition": "The workmen are paid with silver that has been weighed out.",
+              "evidence": [
+                {
+                  "ref": "2Ki.12.12",
+                  "role": "defining"
+                }
+              ]
+            }
           ]
         }
-      ],
-      "cognate_ids": [
-        "ar-qanasa"
       ]
     },
     {
@@ -106,21 +156,20 @@
       ]
     }
   ],
-  "note": "The Psalm verb is piel תִּכַּנְתִּי, with niphal and piel senses of measuring and establishing. Sibling nouns תֹּכֶן, מַתְכֹּנֶת and תָּכְנִית remain in this root family.",
-  "created": "2026-11-20",
+  "note": "The name Tochen identifies a Simeonite settlement (1Ch 4:32). Its relationship to measurement is uncertain.",
+  "created": "2026-11-19",
   "cognates": [
     {
-      "id": "ar-qanasa",
-      "lang": "ar",
-      "form": "قنن",
-      "translit": "qanana",
-      "gloss": "set in order, measure",
-      "relation": "possible",
+      "id": "arc-establish",
+      "lang": "arc",
+      "form": "תַּכֵּן",
+      "translit": "takkēn",
+      "gloss": "establish, fasten, arrange",
+      "relation": "cognate",
       "evidence": [
         {
-          "source": "lane",
-          "locator": "Book VIII, art. قنن",
-          "note": "Arabic denotes setting a rule or measure."
+          "source": "jastrow-1903",
+          "locator": "s.v. תְּכַן, pael, Targum Psalms 107:36 (variant) and Job 15:35"
         }
       ]
     }

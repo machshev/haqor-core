@@ -1,17 +1,16 @@
 {
   "id": "leviathan",
-  "created": "2026-11-20",
-  "root": "לוויתנ",
+  "created": "2026-11-19",
+  "root": "לויתנ",
   "status": "draft",
-  "updated": "2026-11-20",
+  "updated": "2026-11-19",
   "gloss": "Leviathan",
-  "summary": "לִוְיָתָן is the great sea creature named in the Psalm and crushed by Yahweh.",
+  "summary": "Job is asked whether he can draw Leviathan out with a hook. Isaiah calls it the fleeing, twisting serpent, while the psalm describes God crushing its heads.",
   "words": [
     {
       "lemma": "לִוְיָתָן",
       "pos": "noun",
       "gloss": "Leviathan",
-      "root": "לוויתנ",
       "bdb": [
         "l.au.ad"
       ],
@@ -24,11 +23,42 @@
             {
               "ref": "Psa.74.14",
               "role": "defining"
+            },
+            {
+              "ref": "Isa.27.1",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.104.26",
+              "role": "example"
+            },
+            {
+              "ref": "Job.40.25",
+              "role": "example"
             }
           ]
         }
+      ],
+      "cognate_ids": [
+        "uga-ltn"
       ]
     }
   ],
-  "note": "The lexical spelling is kept under a consonantal key without the final nun form."
+  "note": "Ugaritic ltn is called a fleeing serpent in a parallel phrase to Isa 27:1. The full Hebrew noun supplies the key. A derivation from לוה is uncertain.",
+  "cognates": [
+    {
+      "id": "uga-ltn",
+      "lang": "uga",
+      "form": "𐎍𐎚𐎐",
+      "translit": "ltn",
+      "gloss": "sea dragon",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "Glossary, ltn, and text 88.54 (KTU 1.5 I.1–3), ltn btn brḥ"
+        }
+      ]
+    }
+  ]
 }

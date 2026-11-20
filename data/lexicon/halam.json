@@ -2,7 +2,7 @@
   "id": "halam",
   "root": "הלמ",
   "status": "draft",
-  "updated": "2026-11-20",
+  "updated": "2026-11-19",
   "gloss": "strike, hammer",
   "summary": "הלם is to strike or hammer forcefully.",
   "words": [
@@ -63,15 +63,14 @@
     {
       "lemma": "הַלְמוּת",
       "pos": "noun",
-      "gloss": "hammer blows",
+      "gloss": "hammer, mallet",
       "bdb": [
         "e.bq.ac"
       ],
       "senses": [
         {
-          "id": "blows",
-          "gloss": "hammer blows",
-          "definition": "Hammer blows used to break or strike, as in the work of a warrior.",
+          "gloss": "workman’s hammer",
+          "definition": "Jael reaches for the hammer with one hand and for the tent peg with the other.",
           "evidence": [
             {
               "ref": "Jdg.5.26",
@@ -97,6 +96,10 @@
             {
               "ref": "Pro.18.6",
               "role": "defining"
+            },
+            {
+              "ref": "Pro.19.29",
+              "role": "defining"
             }
           ]
         }
@@ -105,7 +108,7 @@
     {
       "lemma": "יַהֲלֹם",
       "pos": "noun",
-      "gloss": "diamond, gemstone",
+      "gloss": "a precious stone",
       "bdb": [
         "e.bq.ad"
       ],
@@ -113,7 +116,7 @@
         {
           "id": "gemstone",
           "gloss": "gemstone",
-          "definition": "A precious stone named among the priestly gems.",
+          "definition": "A stone in the second row of the priestly breastpiece. The setting establishes that it is a gem, though its mineral identity is uncertain.",
           "evidence": [
             {
               "ref": "Exo.28.18",
@@ -124,6 +127,6 @@
       ]
     }
   ],
-  "note": "The entry covers the verb הָלַם and its nouns for hammer blows and the יַהֲלֹם gemstone. No unsupported external cognate is retained.",
-  "created": "2026-11-20"
+  "note": "The adverb “here” shares the spelling of the strike verb. Whether the gemstone name has anything to do with hammering is unknown.",
+  "created": "2026-11-19"
 }

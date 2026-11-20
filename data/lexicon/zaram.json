@@ -2,7 +2,7 @@
   "id": "zaram",
   "root": "זרמ",
   "status": "draft",
-  "updated": "2026-11-20",
+  "updated": "2026-11-19",
   "gloss": "pour down, flood",
   "summary": "זרם describes water pouring in a flood.",
   "words": [
@@ -28,31 +28,74 @@
                 }
               ]
             }
-          ],
-          "cognate_ids": [
-            "ar-zarama"
+          ]
+        },
+        {
+          "stem": "qal",
+          "gloss": "sweep away",
+          "senses": [
+            {
+              "gloss": "sweep away",
+              "definition": "Human lives are swept away like a flood and pass like sleep.",
+              "evidence": [
+                {
+                  "ref": "Psa.90.5",
+                  "role": "defining"
+                }
+              ]
+            }
           ]
         }
       ]
+    },
+    {
+      "lemma": "זֶרֶם",
+      "bdb": [
+        "g.ck.ab"
+      ],
+      "pos": "noun",
+      "gloss": "downpour",
+      "senses": [
+        {
+          "gloss": "downpour",
+          "definition": "Shelter from a downpour is paired with shade from heat.",
+          "evidence": [
+            {
+              "ref": "Isa.4.6",
+              "role": "defining"
+            },
+            {
+              "ref": "Isa.25.4",
+              "role": "example"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "זִרְמָה",
+      "bdb": [
+        "g.ck.ac"
+      ],
+      "pos": "noun",
+      "gloss": "emission",
+      "senses": [
+        {
+          "gloss": "emission",
+          "definition": "Ezekiel uses an animal’s seminal discharge in the portrayal of Egypt.",
+          "evidence": [
+            {
+              "ref": "Ezk.23.20",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
     }
   ],
-  "note": "Drafted to cover the Psalm 74–77 occurrence. Cognate evidence and sibling forms are limited in the current source bundle and should be checked against the cited scripture and available language dictionaries..",
-  "created": "2026-11-20",
-  "cognates": [
-    {
-      "id": "ar-zarama",
-      "lang": "ar",
-      "form": "زرم",
-      "translit": "zarama",
-      "gloss": "pour, flow",
-      "relation": "cognate",
-      "evidence": [
-        {
-          "source": "lane",
-          "locator": "Book III, art. زرم",
-          "note": "Arabic denotes flowing or pouring water."
-        }
-      ]
-    }
-  ]
+  "note": "The Hebrew senses share the image of fluid pouring out. Akkadian zanānu “rain” differs in two consonants and is insufficient to establish a cognate.",
+  "created": "2026-11-19",
+  "cognates": []
 }

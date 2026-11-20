@@ -5,7 +5,7 @@
   "created": "2026-11-19",
   "updated": "2026-11-19",
   "gloss": "carved image",
-  "summary": "פֶּסֶל is a carved idol or image made for worship.",
+  "summary": "Moses hews stone tablets. A carved image can become an object of worship, as when Israel provokes God with images on its high places.",
   "words": [
     {
       "lemma": "פָּסִיל",
@@ -26,6 +26,9 @@
             }
           ]
         }
+      ],
+      "cognate_ids": [
+        "arc-image"
       ]
     },
     {
@@ -55,6 +58,9 @@
             }
           ]
         }
+      ],
+      "cognate_ids": [
+        "arc-hew"
       ]
     },
     {
@@ -79,10 +85,42 @@
             }
           ]
         }
+      ],
+      "cognate_ids": [
+        "arc-image"
       ]
     }
   ],
-  "cognates": [],
+  "cognates": [
+    {
+      "id": "arc-hew",
+      "lang": "arc",
+      "form": "פְּסַל",
+      "translit": "pəsal",
+      "gloss": "cut, hew",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. פְּסַל, Targum Exodus 34:1"
+        }
+      ]
+    },
+    {
+      "id": "arc-image",
+      "lang": "arc",
+      "form": "פְּסִילָא",
+      "translit": "pəsîlā",
+      "gloss": "hewn image",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. פְּסִילָא, Targum Psalms 78:58"
+        }
+      ]
+    }
+  ],
   "doctrine": [],
   "note": "Drafted from Psalm 78:58."
 }

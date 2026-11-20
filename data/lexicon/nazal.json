@@ -30,11 +30,45 @@
               ]
             }
           ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "make flow",
+          "senses": [
+            {
+              "gloss": "make flow",
+              "definition": "Water comes out of the rock when Yahweh splits it for his thirsty people.",
+              "evidence": [
+                {
+                  "ref": "Isa.48.21",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-flow"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-flow",
+      "lang": "arc",
+      "form": "נְזַל",
+      "translit": "nəzal",
+      "gloss": "flow, as running waters",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "s.v. נְזַל, Targum Psalms 78:16 and Palestinian Targum Exodus 15:8"
         }
       ]
     }
   ],
-  "cognates": [],
   "doctrine": [],
-  "note": "Drafted from Psalm 78:16."
+  "note": "The plural participle in Psalm 78 means flowing waters. Compare the Aramaic plural participle."
 }

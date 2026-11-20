@@ -2,7 +2,7 @@
   "id": "batsar",
   "root": "בצר",
   "status": "draft",
-  "updated": "2026-11-20",
+  "updated": "2026-11-19",
   "gloss": "cut off, fortify",
   "summary": "בצר describes cutting off or making inaccessible, and a fortified stronghold.",
   "words": [
@@ -27,10 +27,64 @@
                   "role": "defining"
                 }
               ]
+            },
+            {
+              "gloss": "gather grapes",
+              "definition": "The sabbath-year law forbids harvesting the grapes of untrimmed vines.",
+              "evidence": [
+                {
+                  "ref": "Lev.25.5",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Lev.25.11",
+                  "role": "example"
+                }
+              ]
             }
           ],
           "cognate_ids": [
             "arc-betsar"
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be beyond reach",
+          "senses": [
+            {
+              "gloss": "be beyond reach",
+              "definition": "At Babel nothing the builders intend will be beyond them.",
+              "evidence": [
+                {
+                  "ref": "Gen.11.6",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Job.42.2",
+                  "role": "example"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "fortify",
+          "senses": [
+            {
+              "gloss": "fortify",
+              "definition": "Houses are pulled down to fortify Jerusalem’s wall.",
+              "evidence": [
+                {
+                  "ref": "Isa.22.10",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jer.51.53",
+                  "role": "example"
+                }
+              ]
+            }
           ]
         }
       ]
@@ -97,10 +151,95 @@
           ]
         }
       ]
+    },
+    {
+      "lemma": "בִּצָּרוֹן",
+      "bdb": [
+        "b.cp.af"
+      ],
+      "pos": "noun",
+      "gloss": "stronghold",
+      "senses": [
+        {
+          "gloss": "stronghold",
+          "definition": "The prisoners of hope are summoned back to a stronghold.",
+          "evidence": [
+            {
+              "ref": "Zec.9.12",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "בַּצֹּרֶת",
+      "bdb": [
+        "b.cp.ag"
+      ],
+      "pos": "noun",
+      "gloss": "drought",
+      "senses": [
+        {
+          "gloss": "drought",
+          "definition": "In a year of drought the tree planted beside the water still bears fruit.",
+          "evidence": [
+            {
+              "ref": "Jer.17.8",
+              "role": "defining"
+            },
+            {
+              "ref": "Jer.14.1",
+              "role": "example"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "בָּצְרָה",
+      "bdb": [
+        "b.cp.ad"
+      ],
+      "pos": "noun",
+      "gloss": "fold, enclosed place for sheep",
+      "senses": [
+        {
+          "gloss": "fold, enclosed place for sheep",
+          "definition": "The gathered remnant is compared to sheep enclosed together. Another reading takes Bozrah as a place name.",
+          "evidence": [
+            {
+              "ref": "Mic.2.12",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "בַּצָּרָה",
+      "bdb": [
+        "b.cp.ah"
+      ],
+      "pos": "noun",
+      "gloss": "dearth, extreme distress",
+      "senses": [
+        {
+          "gloss": "dearth, extreme distress",
+          "definition": "The fugitives in the south country pass through distress and anguish. The form may also be read as a preposition with the ordinary word for distress.",
+          "evidence": [
+            {
+              "ref": "Isa.8.22",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
     }
   ],
-  "note": "Jastrow B01107 supports the Aramaic cognate. The root family includes vintage, fortification, ore, and dearth words; proper place names remain in name entries.",
-  "created": "2026-11-20",
+  "note": "The verb can describe cutting grapes, cutting off life or placing something beyond reach. Job 22:24–25 pairs the ore word with Ophir. Bozrah and Bezer also occur as place names.",
+  "created": "2026-11-19",
   "cognates": [
     {
       "id": "arc-betsar",
@@ -111,7 +250,7 @@
       "relation": "cognate",
       "evidence": [
         {
-          "source": "jastrow",
+          "source": "jastrow-1903",
           "locator": "B01107",
           "note": "Jastrow B01107 records בְּצַר as cut off, lessened, small, or wanting, with Targum Proverbs 14:28 בציר עמא, population diminishing."
         }

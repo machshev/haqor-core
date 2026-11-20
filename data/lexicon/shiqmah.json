@@ -18,34 +18,48 @@
       "senses": [
         {
           "gloss": "sycamore",
-          "definition": "Hail destroyed the Egyptians' sycamore trees.",
+          "definition": "A fig-bearing tree tended by Amos, common in the lowlands and contrasted with the cedar. The Egyptian trees are destroyed along with the vines.",
           "evidence": [
             {
               "ref": "Psa.78.47",
               "role": "defining"
+            },
+            {
+              "ref": "Amo.7.14",
+              "role": "defining"
+            },
+            {
+              "ref": "1Ki.10.27",
+              "role": "example"
+            },
+            {
+              "ref": "Isa.9.9",
+              "role": "example"
             }
           ]
         }
+      ],
+      "cognate_ids": [
+        "arc-sycamore"
       ]
     }
   ],
   "cognates": [
     {
-      "id": "egy-nht",
-      "lang": "egy",
-      "form": "nht",
-      "translit": "nehet",
-      "gloss": "sycamore",
-      "relation": "loan",
+      "id": "arc-sycamore",
+      "lang": "arc",
+      "form": "שִׁקְמָא",
+      "translit": "šiḳmā",
+      "gloss": "sycamore fig tree",
+      "relation": "cognate",
       "evidence": [
         {
-          "source": "tla",
-          "locator": "nh.t",
-          "note": "Egyptian sycamore term in the TLA dictionary."
+          "source": "jastrow-1903",
+          "locator": "s.v. שִׁקְמָא, Targum Amos 7:14, 1 Kings 10:27 and Psalms 78:47"
         }
       ]
     }
   ],
   "doctrine": [],
-  "note": "The database's BDB grouping places this spelling beside שקל, but its own consonants are שקמ and it is kept as a distinct root."
+  "note": "The Aramaic tree name preserves š-q-m. Egyptian nht names the same tree but supplies no evidence for borrowing this word."
 }
