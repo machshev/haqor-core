@@ -1,165 +1,267 @@
 {
+  "cognates": [
+    {
+      "evidence": [
+        {
+          "locator": "C01393, Bava Kamma 18b",
+          "source": "jastrow-1903"
+        }
+      ],
+      "form": "גְּרַר",
+      "gloss": "drag, pull",
+      "id": "arc-pull",
+      "lang": "arc",
+      "relation": "cognate",
+      "translit": "gərar"
+    },
+    {
+      "evidence": [
+        {
+          "locator": "lexeme 620, English 1017",
+          "source": "sedra"
+        }
+      ],
+      "form": "ܓܪ",
+      "gloss": "drag away",
+      "id": "syc-drag",
+      "lang": "syc",
+      "relation": "cognate",
+      "translit": "gar"
+    },
+    {
+      "evidence": [
+        {
+          "locator": "grr V, GY 40:22",
+          "source": "cal"
+        }
+      ],
+      "form": "gairilh",
+      "gloss": "Mandaic, he is dragged",
+      "id": "mand-drag",
+      "lang": "arc",
+      "relation": "cognate",
+      "translit": "gairilh"
+    },
+    {
+      "evidence": [
+        {
+          "locator": "Book I p. 399, n5378",
+          "source": "lane"
+        }
+      ],
+      "form": "جَرَّ",
+      "gloss": "pull, drag",
+      "id": "ar-pull",
+      "lang": "ar",
+      "relation": "cognate",
+      "translit": "jarra"
+    },
+    {
+      "evidence": [
+        {
+          "locator": "lexeme 5200a366e36f237975000d17",
+          "source": "gabra"
+        }
+      ],
+      "form": "ġarr",
+      "gloss": "Maltese, carry or shift something",
+      "id": "mt-shift",
+      "lang": "sem",
+      "relation": "possible",
+      "translit": "ġarr"
+    },
+    {
+      "evidence": [
+        {
+          "locator": "Book I p. 400, n5388",
+          "source": "lane"
+        }
+      ],
+      "form": "جِرَّة",
+      "gloss": "cud brought up to be chewed again",
+      "id": "ar-cud",
+      "lang": "ar",
+      "relation": "cognate",
+      "translit": "jirra"
+    },
+    {
+      "evidence": [
+        {
+          "locator": "Book I p. 400, n5382, form VIII",
+          "source": "lane"
+        }
+      ],
+      "form": "اِجْتَرَّ",
+      "gloss": "chew the cud",
+      "id": "ar-chew",
+      "lang": "ar",
+      "relation": "cognate",
+      "translit": "ijtarra"
+    }
+  ],
+  "doctrine": [],
+  "gloss": "drag, draw along",
   "id": "grr",
+  "note": "Jer.30.23 has several possible root assignments in the corpus. The storm and the following verb support a sweeping or whirling movement. The connection between drawing a load, drawing up cud and sawing remains uncertain. The homonymous weight is under gerah and the olive fruit under gargar. Gerar is a place name of uncertain derivation.",
   "root": "גרר",
   "status": "draft",
-  "updated": "2026-11-18",
-  "tags": [],
-  "gloss": "drag, draw along",
   "summary": "Habakkuk pictures a conqueror dragging captives in a fishing net. The dietary laws use the same consonants for bringing up the cud. A saw and the stones cut with it form another pair in the account of Solomon’s building work.",
+  "tags": [],
+  "updated": "2026-11-20",
   "words": [
     {
-      "lemma": "גָּרַר",
-      "pos": "verb",
       "bdb": [
         "c.df.aa"
       ],
       "gloss": "drag, draw along",
+      "lemma": "גָּרַר",
+      "pos": "verb",
       "stems": [
         {
-          "stem": "qal",
           "gloss": "drag away",
           "senses": [
             {
-              "id": "drag",
-              "gloss": "drag away",
-              "definition": "Pull someone or something along by force.",
-              "evidence": [
-                {
-                  "ref": "Hab.1.15",
-                  "role": "defining",
-                  "note": "The conqueror drags people in his net like a fisherman hauling a catch."
-                },
-                {
-                  "ref": "Pro.21.7",
-                  "role": "defining",
-                  "note": "The violence of the wicked drags them away."
-                }
-              ],
               "cognate_ids": [
                 "arc-pull",
                 "syc-drag",
                 "mand-drag",
                 "ar-pull",
                 "mt-shift"
-              ]
+              ],
+              "definition": "Pull someone or something along by force.",
+              "evidence": [
+                {
+                  "note": "The conqueror drags people in his net like a fisherman hauling a catch.",
+                  "ref": "Hab.1.15",
+                  "role": "defining"
+                },
+                {
+                  "note": "The violence of the wicked drags them away.",
+                  "ref": "Pro.21.7",
+                  "role": "defining"
+                }
+              ],
+              "gloss": "drag away",
+              "id": "drag"
             }
-          ]
+          ],
+          "stem": "qal"
         },
         {
-          "stem": "niphal",
           "gloss": "chew the cud",
           "senses": [
             {
-              "id": "ruminate",
-              "gloss": "chew the cud",
-              "definition": "Bring previously swallowed food back up for chewing.",
-              "evidence": [
-                {
-                  "ref": "Lev.11.7",
-                  "role": "defining",
-                  "note": "The pig has a divided hoof but does not bring up the cud."
-                }
-              ],
               "cognate_ids": [
                 "ar-chew"
               ],
+              "definition": "Bring previously swallowed food back up for chewing.",
+              "evidence": [
+                {
+                  "note": "The pig has a divided hoof but does not bring up the cud.",
+                  "ref": "Lev.11.7",
+                  "role": "defining"
+                }
+              ],
+              "gloss": "chew the cud",
+              "id": "ruminate",
               "kin": [
                 "cud"
               ]
             }
-          ]
+          ],
+          "stem": "niphal"
         },
         {
-          "stem": "poal",
           "gloss": "be sawn",
           "senses": [
             {
-              "id": "sawn",
-              "gloss": "be sawn",
+              "cognate_ids": [],
               "definition": "Be cut by drawing a saw through the material.",
               "evidence": [
                 {
+                  "note": "The costly stones were sawn to measure on both their inner and outer faces.",
                   "ref": "1Ki.7.9",
-                  "role": "defining",
-                  "note": "The costly stones were sawn to measure on both their inner and outer faces."
+                  "role": "defining"
                 }
               ],
-              "cognate_ids": [],
+              "gloss": "be sawn",
+              "id": "sawn",
               "kin": [
                 "saw"
               ]
             }
-          ]
+          ],
+          "stem": "poal"
         },
         {
-          "stem": "hithpolel",
           "gloss": "sweep or whirl",
           "senses": [
             {
-              "id": "sweep",
-              "gloss": "sweep or whirl",
+              "cognate_ids": [],
               "definition": "Describe a storm moving violently.",
               "evidence": [
                 {
+                  "note": "The participle characterises Yahweh’s storm, which whirls down upon the wicked.",
                   "ref": "Jer.30.23",
-                  "role": "defining",
-                  "note": "The participle characterises Yahweh’s storm, which whirls down upon the wicked."
+                  "role": "defining"
                 }
               ],
-              "cognate_ids": []
+              "gloss": "sweep or whirl",
+              "id": "sweep"
             }
-          ]
+          ],
+          "stem": "hithpolel"
         }
       ]
     },
     {
-      "lemma": "גֵּרָה",
-      "pos": "noun",
-      "gender": "f",
       "bdb": [
         "c.df.ab"
       ],
+      "gender": "f",
       "gloss": "cud",
+      "lemma": "גֵּרָה",
+      "pos": "noun",
       "senses": [
         {
-          "id": "cud",
-          "gloss": "cud",
-          "definition": "Food brought back up into the mouth to be chewed again.",
-          "evidence": [
-            {
-              "ref": "Lev.11.3",
-              "role": "defining",
-              "note": "Bringing up cud and having a divided hoof are the paired signs in the food law."
-            },
-            {
-              "ref": "Lev.11.4",
-              "role": "defining",
-              "note": "The camel exemplifies the first sign alone."
-            },
-            {
-              "ref": "Lev.11.7",
-              "role": "defining",
-              "note": "The pig exemplifies the divided hoof alone."
-            },
-            {
-              "ref": "Deu.14.6",
-              "role": "defining",
-              "note": "The two signs are restated together."
-            },
-            {
-              "ref": "Deu.14.7",
-              "role": "defining",
-              "note": "The camel, hare and rock hyrax are grouped by their chewing."
-            },
-            {
-              "ref": "Deu.14.8",
-              "role": "defining",
-              "note": "The pig is again described as lacking the chewing sign."
-            }
-          ],
           "cognate_ids": [
             "ar-cud"
           ],
+          "definition": "Food brought back up into the mouth to be chewed again.",
+          "evidence": [
+            {
+              "note": "Bringing up cud and having a divided hoof are the paired signs in the food law.",
+              "ref": "Lev.11.3",
+              "role": "defining"
+            },
+            {
+              "note": "The camel exemplifies the first sign alone.",
+              "ref": "Lev.11.4",
+              "role": "defining"
+            },
+            {
+              "note": "The pig exemplifies the divided hoof alone.",
+              "ref": "Lev.11.7",
+              "role": "defining"
+            },
+            {
+              "note": "The two signs are restated together.",
+              "ref": "Deu.14.6",
+              "role": "defining"
+            },
+            {
+              "note": "The camel, hare and rock hyrax are grouped by their chewing.",
+              "ref": "Deu.14.7",
+              "role": "defining"
+            },
+            {
+              "note": "The pig is again described as lacking the chewing sign.",
+              "ref": "Deu.14.8",
+              "role": "defining"
+            }
+          ],
+          "gloss": "cud",
+          "id": "cud",
           "kin": [
             "ruminate"
           ]
@@ -167,37 +269,37 @@
       ]
     },
     {
-      "lemma": "מְגֵרָה",
-      "pos": "noun",
-      "gender": "f",
       "bdb": [
         "c.df.af",
         "m.ak.ac"
       ],
+      "gender": "f",
       "gloss": "saw",
+      "lemma": "מְגֵרָה",
+      "pos": "noun",
       "senses": [
         {
-          "id": "saw",
-          "gloss": "saw",
+          "cognate_ids": [],
           "definition": "A cutting tool used on building stone and listed with iron implements.",
           "evidence": [
             {
+              "note": "The implement cuts dressed stones to their specified dimensions.",
               "ref": "1Ki.7.9",
-              "role": "defining",
-              "note": "The implement cuts dressed stones to their specified dimensions."
+              "role": "defining"
             },
             {
+              "note": "Saws appear with picks and axes after the capture of Rabbah.",
               "ref": "2Sa.12.31",
-              "role": "defining",
-              "note": "Saws appear with picks and axes after the capture of Rabbah."
+              "role": "defining"
             },
             {
+              "note": "The parallel account names saws among the implements.",
               "ref": "1Ch.20.3",
-              "role": "defining",
-              "note": "The parallel account names saws among the implements."
+              "role": "defining"
             }
           ],
-          "cognate_ids": [],
+          "gloss": "saw",
+          "id": "saw",
           "kin": [
             "sawn"
           ]
@@ -205,138 +307,61 @@
       ]
     },
     {
-      "lemma": "גַּר",
-      "lang": "syc",
-      "pos": "verb",
       "gloss": "drag away",
+      "lang": "syc",
+      "lemma": "גַּר",
+      "pos": "verb",
       "stems": [
         {
-          "stem": "peal",
           "gloss": "drag away",
           "senses": [
             {
-              "id": "syc-haul",
-              "gloss": "drag away",
-              "definition": "Pull a person along by force.",
-              "evidence": [
-                {
-                  "ref": "Act.14.19",
-                  "role": "defining",
-                  "note": "Paul is dragged outside Lystra after being stoned."
-                }
-              ],
               "cognate_ids": [
                 "syc-drag"
               ],
+              "definition": "Pull a person along by force.",
+              "evidence": [
+                {
+                  "note": "Paul is dragged outside Lystra after being stoned.",
+                  "ref": "Act.14.19",
+                  "role": "defining"
+                }
+              ],
+              "gloss": "drag away",
+              "id": "syc-haul",
               "kin": [
                 "drag"
               ]
             }
-          ]
+          ],
+          "stem": "peal"
         }
       ]
+    },
+    {
+      "gloss": "Gerar",
+      "lemma": "גְּרָר",
+      "pos": "name",
+      "senses": [
+        {
+          "definition": "A place named in the description of the Canaanite boundary and the seat of Abimelech.",
+          "evidence": [
+            {
+              "note": "Gerar gives the direction of travel from Sidon in the boundary description, just as Sodom does in the following clause.",
+              "ref": "Gen.10.19",
+              "role": "defining"
+            },
+            {
+              "note": "Abimelech is called king of Gerar.",
+              "ref": "Gen.20.2",
+              "role": "defining"
+            }
+          ],
+          "gloss": "Gerar",
+          "id": "gerar"
+        }
+      ],
+      "summary": "Gerar is a place name. Its connection to the verb גָּרַר is uncertain."
     }
-  ],
-  "cognates": [
-    {
-      "id": "arc-pull",
-      "lang": "arc",
-      "form": "גְּרַר",
-      "translit": "gərar",
-      "gloss": "drag, pull",
-      "relation": "cognate",
-      "evidence": [
-        {
-          "source": "jastrow-1903",
-          "locator": "C01393, Bava Kamma 18b"
-        }
-      ]
-    },
-    {
-      "id": "syc-drag",
-      "lang": "syc",
-      "form": "ܓܪ",
-      "translit": "gar",
-      "gloss": "drag away",
-      "relation": "cognate",
-      "evidence": [
-        {
-          "source": "sedra",
-          "locator": "lexeme 620, English 1017"
-        }
-      ]
-    },
-    {
-      "id": "mand-drag",
-      "lang": "arc",
-      "form": "gairilh",
-      "translit": "gairilh",
-      "gloss": "Mandaic, he is dragged",
-      "relation": "cognate",
-      "evidence": [
-        {
-          "source": "cal",
-          "locator": "grr V, GY 40:22"
-        }
-      ]
-    },
-    {
-      "id": "ar-pull",
-      "lang": "ar",
-      "form": "جَرَّ",
-      "translit": "jarra",
-      "gloss": "pull, drag",
-      "relation": "cognate",
-      "evidence": [
-        {
-          "source": "lane",
-          "locator": "Book I p. 399, n5378"
-        }
-      ]
-    },
-    {
-      "id": "mt-shift",
-      "lang": "sem",
-      "form": "ġarr",
-      "translit": "ġarr",
-      "gloss": "Maltese, carry or shift something",
-      "relation": "possible",
-      "evidence": [
-        {
-          "source": "gabra",
-          "locator": "lexeme 5200a366e36f237975000d17"
-        }
-      ]
-    },
-    {
-      "id": "ar-cud",
-      "lang": "ar",
-      "form": "جِرَّة",
-      "translit": "jirra",
-      "gloss": "cud brought up to be chewed again",
-      "relation": "cognate",
-      "evidence": [
-        {
-          "source": "lane",
-          "locator": "Book I p. 400, n5388"
-        }
-      ]
-    },
-    {
-      "id": "ar-chew",
-      "lang": "ar",
-      "form": "اِجْتَرَّ",
-      "translit": "ijtarra",
-      "gloss": "chew the cud",
-      "relation": "cognate",
-      "evidence": [
-        {
-          "source": "lane",
-          "locator": "Book I p. 400, n5382, form VIII"
-        }
-      ]
-    }
-  ],
-  "doctrine": [],
-  "note": "Jer.30.23 has several possible root assignments in the corpus. The storm and the following verb support a sweeping or whirling movement. The connection between drawing a load, drawing up cud and sawing remains uncertain. The homonymous weight is under gerah and the olive fruit under gargar. Gerar is a place name of uncertain derivation."
+  ]
 }
