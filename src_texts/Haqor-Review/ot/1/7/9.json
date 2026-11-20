@@ -9,6 +9,11 @@
         "position": 4
       },
       {
+        "evidence": "אֱלֹהִים is the subject of the singular verb צִוָּה and identifies God, who commanded Noah to bring the animals into the ark in Genesis 6:19.",
+        "key": "LORD@Gen.1.1",
+        "position": 11
+      },
+      {
         "evidence": "God had commanded this same Noah to bring the animals into the ark (Genesis 6:19).",
         "key": "Noah@Gen.5.29",
         "position": 13
@@ -72,7 +77,80 @@
         "position": 13
       }
     ],
-    "name_review_base": null,
+    "name_review_base": [
+      {
+        "key": null,
+        "position": 0,
+        "surface": "שְׁנַיִם"
+      },
+      {
+        "key": null,
+        "position": 1,
+        "surface": "שְׁנַיִם"
+      },
+      {
+        "key": null,
+        "position": 2,
+        "surface": "בָּאוּ"
+      },
+      {
+        "key": null,
+        "position": 3,
+        "surface": "אֶל"
+      },
+      {
+        "evidence": "The animals go to Noah at the ark, identifying Lamech’s son in the flood account.",
+        "key": "Noah@Gen.5.29",
+        "position": 4,
+        "surface": "נֹחַ"
+      },
+      {
+        "key": null,
+        "position": 5,
+        "surface": "אֶל"
+      },
+      {
+        "key": null,
+        "position": 6,
+        "surface": "הַתֵּבָה"
+      },
+      {
+        "key": null,
+        "position": 7,
+        "surface": "זָכָר"
+      },
+      {
+        "key": null,
+        "position": 8,
+        "surface": "וּנְקֵבָה"
+      },
+      {
+        "key": null,
+        "position": 9,
+        "surface": "כַּאֲשֶׁר"
+      },
+      {
+        "key": null,
+        "position": 10,
+        "surface": "צִוָּה"
+      },
+      {
+        "key": null,
+        "position": 11,
+        "surface": "אֱלֹהִים"
+      },
+      {
+        "key": null,
+        "position": 12,
+        "surface": "אֶת"
+      },
+      {
+        "evidence": "God had commanded this same Noah to bring the animals into the ark (Genesis 6:19).",
+        "key": "Noah@Gen.5.29",
+        "position": 13,
+        "surface": "נֹחַ"
+      }
+    ],
     "translation": "[went|2] [two|0] {by} [two|1] [to|3] [Noah|4] [into|5] [the ark|6], [male|7] [and female|8], [just as|9] [God|11] [had commanded|10] [Noah|12,13]."
   },
   "source": "ot",
