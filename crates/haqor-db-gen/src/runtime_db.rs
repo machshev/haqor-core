@@ -461,17 +461,22 @@ pub(crate) fn import_review_occurrences(
         "CREATE TABLE IF NOT EXISTS review_occurrence(\
         source TEXT NOT NULL, ref INTEGER NOT NULL, position INTEGER NOT NULL,\
         lemma TEXT, root TEXT, morphology TEXT, gloss TEXT, sense TEXT, verse_gloss TEXT,\
-        language TEXT, qualifier TEXT, entry_id TEXT,\
+        language TEXT, qualifier TEXT, entry_id TEXT, lexeme INTEGER,\
         PRIMARY KEY(source, ref, position)) WITHOUT ROWID",
     )?;
     let existing: std::collections::HashSet<String> = db
         .prepare("PRAGMA table_info(review_occurrence)")?
         .query_map([], |row| row.get(1))?
         .collect::<rusqlite::Result<_>>()?;
-    for column in ["language", "qualifier", "entry_id"] {
+    for (column, kind) in [
+        ("language", "TEXT"),
+        ("qualifier", "TEXT"),
+        ("entry_id", "TEXT"),
+        ("lexeme", "INTEGER"),
+    ] {
         if !existing.contains(column) {
             db.execute(
-                &format!("ALTER TABLE review_occurrence ADD COLUMN {column} TEXT"),
+                &format!("ALTER TABLE review_occurrence ADD COLUMN {column} {kind}"),
                 [],
             )?;
         }
@@ -495,7 +500,7 @@ pub(crate) fn import_review_occurrences(
     }
     visit(&root, &mut files)?;
     let mut translations = Vec::new();
-    let mut insert = db.prepare("INSERT INTO review_occurrence(source,ref,position,lemma,root,morphology,gloss,sense,verse_gloss,language,qualifier,entry_id) VALUES(?,?,?,?,?,?,?,?,?,?,?,?)")?;
+    let mut insert = db.prepare("INSERT INTO review_occurrence(source,ref,position,lemma,root,morphology,gloss,sense,verse_gloss,language,qualifier,entry_id,lexeme) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)")?;
     let mut count = 0;
     for path in files {
         let packet: Value = serde_json::from_str(&std::fs::read_to_string(&path)?)
@@ -579,12 +584,14 @@ pub(crate) fn import_review_occurrences(
                 verse_gloss,
                 analysis["language"].as_str(),
                 analysis["qualifier"].as_str(),
-                entry_id
+                entry_id,
+                analysis["entry"]["word"].as_i64()
             ])?;
             count += 1;
         }
     }
     info!("Imported {count} reviewed lexical occurrences");
+    crate::haqor_lexicon::check_review_lexemes(db)?;
     Ok(translations)
 }
 
@@ -649,6 +656,8 @@ CREATE TABLE review_occurrence(
     language TEXT,
     qualifier TEXT,
     entry_id TEXT,
+    -- The lexeme: its index in the article's `words` (haqor_lexicon.json).
+    lexeme INTEGER,
     PRIMARY KEY(source, ref, position)
 ) WITHOUT ROWID;
 

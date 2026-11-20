@@ -4415,32 +4415,40 @@ impl Bible {
         Ok(None)
     }
 
-    /// Resolve the reviewed article attached to one concrete occurrence. This
-    /// preserves homograph distinctions that root-first lookup cannot retain.
+    /// Resolve the reviewed article attached to one concrete occurrence, as
+    /// its id, its JSON and the reviewed lexeme: that word's index in the
+    /// article's `words`, where the review recorded one. This preserves
+    /// homograph distinctions that root-first lookup cannot retain.
     pub fn haqor_lexicon_entry_at(
         &self,
         book: u8,
         chapter: u8,
         verse: u8,
         position: u32,
-    ) -> rusqlite::Result<Option<(String, String)>> {
+    ) -> rusqlite::Result<Option<(String, String, Option<u32>)>> {
         if !self.has_table("review_occurrence")? || !self.has_table("haqor_lexicon")? {
             return Ok(None);
         }
-        let id: Option<String> = self
+        // Databases built before the review recorded lexemes lack the column.
+        let lexeme = if self.has_column("review_occurrence", "lexeme")? {
+            "lexeme"
+        } else {
+            "NULL"
+        };
+        let found: Option<(String, Option<u32>)> = self
             .db
             .query_row(
-                "SELECT entry_id FROM data.review_occurrence WHERE source IN ('ot','peshitta') AND ref=?1 AND position=?2 AND entry_id IS NOT NULL",
+                &format!("SELECT entry_id,{lexeme} FROM data.review_occurrence WHERE source IN ('ot','peshitta') AND ref=?1 AND position=?2 AND entry_id IS NOT NULL"),
                 rusqlite::params![pack_ref(book, chapter, verse), position],
-                |row| row.get(0),
+                |row| Ok((row.get(0)?, row.get(1)?)),
             )
             .optional()?;
-        id.map_or(Ok(None), |id| {
+        found.map_or(Ok(None), |(id, lexeme)| {
             self.db
                 .query_row(
                     "SELECT id,json FROM data.haqor_lexicon WHERE id=?1",
                     [&id],
-                    |row| Ok((row.get(0)?, row.get(1)?)),
+                    |row| Ok((row.get(0)?, row.get(1)?, lexeme)),
                 )
                 .optional()
         })
@@ -8883,6 +8891,45 @@ mod tests {
                 }
             }
         }
+    }
+
+    #[test]
+    fn a_reviewed_occurrence_names_its_article_and_lexeme() {
+        let db = Connection::open_in_memory().unwrap();
+        db.execute_batch(
+            "ATTACH DATABASE ':memory:' AS data;
+             CREATE TABLE data.haqor_lexicon(id TEXT, root TEXT, json TEXT);
+             CREATE TABLE data.review_occurrence(source TEXT, ref INTEGER, position INTEGER, entry_id TEXT);
+             INSERT INTO data.haqor_lexicon VALUES ('barak', 'ברכ', '{}');",
+        )
+        .unwrap();
+        db.execute(
+            "INSERT INTO data.review_occurrence VALUES ('ot', ?1, 0, 'barak')",
+            [pack_ref(1, 9, 1)],
+        )
+        .unwrap();
+        let bible = Bible {
+            db,
+            blobs: BlobReader::Plain,
+            runtime_lexicon_entries: RefCell::new(HashMap::new()),
+        };
+        // A database built before lexemes were recorded.
+        assert_eq!(
+            bible.haqor_lexicon_entry_at(1, 9, 1, 0).unwrap(),
+            Some(("barak".into(), "{}".into(), None))
+        );
+        bible
+            .db
+            .execute_batch(
+                "ALTER TABLE data.review_occurrence ADD COLUMN lexeme INTEGER;
+                 UPDATE data.review_occurrence SET lexeme = 4;",
+            )
+            .unwrap();
+        assert_eq!(
+            bible.haqor_lexicon_entry_at(1, 9, 1, 0).unwrap(),
+            Some(("barak".into(), "{}".into(), Some(4)))
+        );
+        assert_eq!(bible.haqor_lexicon_entry_at(1, 9, 1, 1).unwrap(), None);
     }
 
     #[test]

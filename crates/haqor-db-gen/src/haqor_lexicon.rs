@@ -13,8 +13,9 @@
 use std::path::Path;
 
 use anyhow::{Context, Result, bail};
-use log::info;
+use log::{info, warn};
 use rusqlite::{Connection, params};
+use unicode_normalization::UnicodeNormalization;
 
 pub use haqor_core::haqor_lexicon::*;
 
@@ -119,12 +120,71 @@ pub fn build_haqor_lexicon(db: &Connection, dir: &Path, src_texts: &Path) -> Res
         }
     }
     tx.commit()?;
+    check_review_lexemes(db)?;
     info!(
         "Haqor lexicon: {} entries, {} names",
         lexicon.entries.len(),
         lexicon.names.len()
     );
     Ok(lexicon.entries.len())
+}
+
+/// Reviewed occurrences address a lexeme by its index in the article's
+/// `words`. Warn of any whose index no longer names a word with the reviewed
+/// dictionary form, as after an article's words were reordered by hand.
+pub fn check_review_lexemes(db: &Connection) -> Result<usize> {
+    let present: bool = db.query_row(
+        "SELECT count(*) = 2 FROM sqlite_master WHERE type = 'table' AND name IN ('review_occurrence', 'haqor_lexicon')",
+        [],
+        |r| r.get(0),
+    )?;
+    if !present {
+        return Ok(0);
+    }
+    let mut stmt = db.prepare(
+        "SELECT r.source, r.ref, r.position, r.entry_id, r.lexeme, r.lemma,
+                json_extract(h.json, '$.words[' || r.lexeme || '].lemma')
+         FROM review_occurrence r JOIN haqor_lexicon h ON h.id = r.entry_id
+         WHERE r.lexeme IS NOT NULL AND json_type(h.json, '$.words') = 'array'
+           -- A name article may share its id with an ordinary one.
+           AND NOT (r.lexeme = 0 AND EXISTS (SELECT 1 FROM haqor_lexicon_name n
+                    WHERE n.id = r.entry_id AND json_extract(n.json, '$.name') = r.lemma))",
+    )?;
+    let mut rows = stmt.query([])?;
+    let mut wrong = Vec::new();
+    while let Some(row) = rows.next()? {
+        let lemma: Option<String> = row.get(5)?;
+        let found: Option<String> = row.get(6)?;
+        let same = match (&lemma, &found) {
+            (Some(a), Some(b)) => a.nfc().eq(b.nfc()),
+            _ => false,
+        };
+        if !same {
+            wrong.push(format!(
+                "{} {:#x}:{} {} word {} is {:?}, reviewed as {:?}",
+                row.get::<_, String>(0)?,
+                row.get::<_, i64>(1)?,
+                row.get::<_, i64>(2)?,
+                row.get::<_, String>(3)?,
+                row.get::<_, i64>(4)?,
+                found,
+                lemma
+            ));
+        }
+    }
+    if !wrong.is_empty() {
+        warn!(
+            "{} reviewed occurrences name a lexeme index whose word differs; reopen them in haqor-review:\n  {}",
+            wrong.len(),
+            wrong
+                .iter()
+                .take(20)
+                .cloned()
+                .collect::<Vec<_>>()
+                .join("\n  ")
+        );
+    }
+    Ok(wrong.len())
 }
 
 /// `db gen-haqor-lexicon`: rebuild the lexicon tables of the runtime database
@@ -134,4 +194,33 @@ pub fn gen_haqor_lexicon(path: &Path, dir: &Path, src_texts: &Path) -> Result<us
     let entries = build_haqor_lexicon(&db, dir, src_texts)?;
     crate::runtime_db::restamp_built(&db)?;
     Ok(entries)
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn a_review_lexeme_index_must_name_the_reviewed_word() -> Result<()> {
+        let db = Connection::open_in_memory()?;
+        db.execute_batch(
+            r#"CREATE TABLE review_occurrence(source TEXT, ref INTEGER, position INTEGER, lemma TEXT, entry_id TEXT, lexeme INTEGER);
+            CREATE TABLE haqor_lexicon(id TEXT, root TEXT, json TEXT);
+            CREATE TABLE haqor_lexicon_name(id TEXT, entry TEXT, json TEXT);
+            INSERT INTO haqor_lexicon VALUES('barak','ברכ','{"words":[{"lemma":"בָּרַךְ"},{"lemma":"בְּרָכָה"}]}');
+            INSERT INTO haqor_lexicon_name VALUES('barak','barak','{"name":"בָּרָק"}');
+            INSERT INTO review_occurrence VALUES('ot',1,0,'בָּרַךְ','barak',0),('ot',1,1,'בְּרָכָה','barak',1),('ot',1,2,'בָּרָק','barak',0);"#,
+        )?;
+        assert_eq!(check_review_lexemes(&db)?, 0);
+        db.execute(
+            "INSERT INTO review_occurrence VALUES('ot',1,3,'בְּרָכָה','barak',0)",
+            [],
+        )?;
+        db.execute(
+            "INSERT INTO review_occurrence VALUES('ot',1,4,'בְּרָכָה','barak',7)",
+            [],
+        )?;
+        assert_eq!(check_review_lexemes(&db)?, 2);
+        Ok(())
+    }
 }
