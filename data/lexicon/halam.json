@@ -28,9 +28,6 @@
                 }
               ]
             }
-          ],
-          "cognate_ids": [
-            "arc-halam"
           ]
         }
       ]
@@ -62,25 +59,71 @@
           ]
         }
       ]
-    }
-  ],
-  "note": "Jastrow E00575 records the Aramaic cognate and a joining or striking sense. The adverb הֲלֹם is a separate deictic spelling under root הלומ.",
-  "created": "2026-11-20",
-  "cognates": [
+    },
     {
-      "id": "arc-halam",
-      "lang": "arc",
-      "form": "הָלַם",
-      "translit": "halam",
-      "gloss": "join, weld; strike",
-      "relation": "cognate",
-      "evidence": [
+      "lemma": "הַלְמוּת",
+      "pos": "noun",
+      "gloss": "hammer blows",
+      "bdb": [
+        "e.bq.ac"
+      ],
+      "senses": [
         {
-          "source": "jastrow",
-          "locator": "E00575",
-          "note": "Jastrow E00575 records הָלַם as join or weld, with the Hebrew hammer sense."
+          "id": "blows",
+          "gloss": "hammer blows",
+          "definition": "Hammer blows used to break or strike, as in the work of a warrior.",
+          "evidence": [
+            {
+              "ref": "Jdg.5.26",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַהֲלֻמוֹת",
+      "pos": "noun",
+      "gloss": "blows",
+      "bdb": [
+        "e.bq.ae"
+      ],
+      "senses": [
+        {
+          "id": "blows",
+          "gloss": "blows",
+          "definition": "Repeated blows or strikes.",
+          "evidence": [
+            {
+              "ref": "Pro.18.6",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "יַהֲלֹם",
+      "pos": "noun",
+      "gloss": "diamond, gemstone",
+      "bdb": [
+        "e.bq.ad"
+      ],
+      "senses": [
+        {
+          "id": "gemstone",
+          "gloss": "gemstone",
+          "definition": "A precious stone named among the priestly gems.",
+          "evidence": [
+            {
+              "ref": "Exo.28.18",
+              "role": "defining"
+            }
+          ]
         }
       ]
     }
-  ]
+  ],
+  "note": "The entry covers the verb הָלַם and its nouns for hammer blows and the יַהֲלֹם gemstone. No unsupported external cognate is retained.",
+  "created": "2026-11-20"
 }
