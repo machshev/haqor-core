@@ -1,83 +1,95 @@
 {
+  "cognates": [],
+  "created": "2026-11-19",
+  "doctrine": [],
+  "gloss": "vegetation, grass, sprout",
   "id": "dx2",
+  "note": "Genesis 1:11 supplies both verb and noun. The green growth in Psalm 23:2 is the sheep’s pasture.",
   "root": "דשא",
   "status": "draft",
-  "created": "2026-11-19",
-  "updated": "2026-11-19",
+  "summary": "Genesis uses דֶּשֶׁא for the vegetation the land brings forth, including seed-bearing plants and fruit-bearing trees. Fresh grass marks the pasture where the shepherd gives rest.",
   "tags": [
     "psalms-21-30"
   ],
-  "gloss": "grass, sprout",
-  "summary": "Fresh grass marks the pasture where the shepherd gives rest.",
+  "updated": "2026-11-20",
   "words": [
     {
-      "lemma": "דֶּשֶׁא",
       "bdb": [
         "d.cn.ab"
       ],
+      "gender": "m",
+      "gloss": "grass, vegetation",
+      "lemma": "דֶּשֶׁא",
       "pos": "noun",
-      "gloss": "grass",
       "senses": [
         {
-          "id": "grass",
-          "gloss": "grass",
           "definition": "He makes me lie in green grass.",
           "evidence": [
             {
               "ref": "Psa.23.2",
               "role": "defining"
             }
-          ]
+          ],
+          "gloss": "grass",
+          "id": "grass"
+        },
+        {
+          "definition": "Plant growth taken collectively.",
+          "evidence": [
+            {
+              "note": "Seed-bearing plants and fruit-bearing trees specify what the land brought forth as דֶּשֶׁא.",
+              "ref": "Gen.1.12",
+              "role": "defining"
+            }
+          ],
+          "gloss": "vegetation",
+          "id": "vegetation"
         }
-      ],
-      "gender": "m"
+      ]
     },
     {
-      "lemma": "דָּשָׁא",
       "bdb": [
         "d.cn.aa"
       ],
-      "pos": "verb",
       "gloss": "sprout",
+      "lemma": "דָּשָׁא",
+      "pos": "verb",
       "stems": [
         {
-          "stem": "hiphil",
           "gloss": "cause to sprout",
           "senses": [
             {
-              "id": "cause-to-sprout",
-              "gloss": "cause to sprout",
               "definition": "God commands the earth to bring forth vegetation. The command pairs the verb with its related noun.",
               "evidence": [
                 {
                   "ref": "Gen.1.11",
                   "role": "defining"
                 }
-              ]
+              ],
+              "gloss": "cause to sprout",
+              "id": "cause-to-sprout"
             }
-          ]
+          ],
+          "stem": "hiphil"
         },
         {
-          "stem": "qal",
           "gloss": "turn green, sprout",
           "senses": [
             {
-              "id": "turn-green-sprout",
-              "gloss": "turn green, sprout",
               "definition": "Joel tells the animals to put fear aside because the wilderness pastures have turned green.",
               "evidence": [
                 {
                   "ref": "Jol.2.22",
                   "role": "defining"
                 }
-              ]
+              ],
+              "gloss": "turn green, sprout",
+              "id": "turn-green-sprout"
             }
-          ]
+          ],
+          "stem": "qal"
         }
       ]
     }
-  ],
-  "cognates": [],
-  "doctrine": [],
-  "note": "Genesis 1:11 supplies both verb and noun. The green growth in Psalm 23:2 is the sheep’s pasture."
+  ]
 }
