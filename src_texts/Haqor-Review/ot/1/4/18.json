@@ -344,19 +344,25 @@
     {
       "analysis": {
         "entry": {
-          "existing": "metwwxaa2eel",
+          "draft": {
+            "article_id": "metwwxaa2eel",
+            "base": "730cb2b11d0bfaab8b1b4281cf4a67a892a7c1a9d13e1371795c33459cff3394",
+            "change": "Add a note to the existing verse citation explaining how the two clauses identify Methushael.",
+            "definition": "The personal name of Mehujael’s son, who fathered Lamech.",
+            "evidence": "Genesis 4:18 identifies the bearer by repeating his name in two successive generations of the genealogy."
+          },
           "word": 0
         },
-        "evidence": "At position 11, אֶת marks מְתוּשָׁאֵל as the direct object of יָלַד and identifies him as Mehujael’s son. The next clause repeats his name as the subject of יָלַד אֶת־לָמֶךְ, identifying him as Lamech’s father. The genealogy supports the personal name. The root follows the Haqor entry.",
+        "evidence": "אֶת marks מְתוּשָׁאֵל as the direct object of יָלַד, identifying him as Mehujael’s son. The next clause repeats the name as the subject of יָלַד אֶת־לָמֶךְ, identifying him as Lamech’s father.",
         "gloss": "Methushael",
         "language": "he",
         "lemma": "מְתוּשָׁאֵל",
         "morph": "HNp",
-        "morphology": "Masculine singular proper noun without prefix or suffix.",
+        "morphology": "Masculine singular personal name with no prefix or suffix.",
         "qualifier": "",
         "root": "מת",
         "segments": "מְתוּשָׁאֵל",
-        "sense": "Personal name of Mehujael’s son and Lamech’s father."
+        "sense": "Methushael, son of Mehujael and father of Lamech."
       },
       "position": 11,
       "surface": "מְתוּשָׁאֵל"
