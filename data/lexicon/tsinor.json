@@ -2,31 +2,80 @@
   "id": "tsinor",
   "root": "צנר",
   "status": "draft",
+  "created": "2026-11-19",
   "updated": "2026-11-19",
-  "gloss": "channel",
-  "summary": "צנור denotes a channel or conduit of flowing water.",
+  "tags": [],
+  "gloss": "waterspout, conduit",
+  "summary": "The psalmist hears the roar of waterspouts as waves sweep over him. The word also occurs in David’s instructions during the taking of Jerusalem, where the precise feature he refers to is uncertain.",
   "words": [
     {
       "lemma": "צִנּוֹר",
       "pos": "noun",
-      "gloss": "channel",
+      "gloss": "waterspout, channel",
       "bdb": [
         "r.cw.ab"
       ],
+      "gender": "m",
       "senses": [
         {
-          "gloss": "channel",
-          "definition": "A channel through which water flows.",
+          "gloss": "waterspout, channel",
+          "definition": "Deep calls to deep at the sound of cascading water. The second use identifies something to be reached during the assault on the Jebusites, possibly a water channel.",
           "evidence": [
             {
               "ref": "Psa.42.8",
               "role": "defining"
+            },
+            {
+              "ref": "2Sa.5.8",
+              "role": "defining"
             }
           ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-spout"
+      ]
+    },
+    {
+      "lemma": "צַנְתְּרוֹת",
+      "pos": "noun",
+      "gloss": "pipes, spouts",
+      "bdb": [
+        "r.cw.ac"
+      ],
+      "senses": [
+        {
+          "gloss": "pipes, spouts",
+          "definition": "Zechariah asks about the two olive branches beside the two golden conduits through which the golden liquid pours. This is the sole occurrence.",
+          "evidence": [
+            {
+              "ref": "Zec.4.12",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-spout"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-spout",
+      "lang": "arc",
+      "form": "צִנּוֹרָא",
+      "translit": "ṣinnōrā",
+      "gloss": "splash from a spout",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "צִנּוֹרָא II R00615, sense 1"
         }
       ]
     }
   ],
   "doctrine": [],
-  "note": "Drafted for Psalms 41–43 coverage."
+  "note": "The extended consonants of צנתרות and its exact relationship to צִנּוֹר are uncertain. The Arabic صنر entry in Lane, p. 1732, concerns a tree or spindle part. It does not establish the older sound of the Hebrew initial."
 }

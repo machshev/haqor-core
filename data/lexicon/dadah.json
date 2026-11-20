@@ -2,37 +2,62 @@
   "id": "dadah",
   "root": "דדה",
   "status": "draft",
+  "created": "2026-11-19",
   "updated": "2026-11-19",
-  "gloss": "move slowly",
-  "summary": "דדה describes moving slowly or wandering.",
+  "tags": [],
+  "gloss": "move in measured steps, lead along",
+  "summary": "The worshipper remembers going with a festival crowd to God’s house. Hezekiah, after his illness, uses the same verb of the way he will walk through his remaining years.",
   "words": [
     {
       "lemma": "דָּדָה",
       "pos": "verb",
-      "gloss": "move slowly",
+      "gloss": "walk, lead along",
       "bdb": [
         "d.ao.aa"
       ],
       "stems": [
         {
-          "gloss": "move slowly",
+          "stem": "hithpael",
+          "gloss": "proceed with measured steps",
           "senses": [
             {
-              "gloss": "move",
-              "definition": "To move or wander along slowly.",
+              "gloss": "proceed with measured steps",
+              "definition": "The procession in the psalm moves with cries of joy and thanks. Isaiah’s setting is quieter, as the speaker recalls his suffering. The psalm’s suffix may indicate that he led the group.",
               "evidence": [
                 {
                   "ref": "Psa.42.5",
                   "role": "defining"
+                },
+                {
+                  "ref": "Isa.38.15",
+                  "role": "defining"
                 }
               ]
             }
-          ],
-          "stem": "qal"
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-lead"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-lead",
+      "lang": "arc",
+      "form": "דַּדֵּי",
+      "translit": "daddē",
+      "gloss": "lead along, help to walk",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "דדי II D00132, Shabbat 128b"
         }
       ]
     }
   ],
   "doctrine": [],
-  "note": "Drafted for Psalms 41–43 coverage."
+  "note": "The Hebrew verb occurs twice. Jewish Aramaic illustrates helping another to walk. The manner of motion in Isaiah is less certain. Dedan and the Dedanites belong to a proper name ending in nun."
 }
