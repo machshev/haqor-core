@@ -2,7 +2,13 @@
   "book": 1,
   "chapter": 1,
   "review": {
-    "entities": [],
+    "entities": [
+      {
+        "evidence": "הַשָּׁמַיִם refers to the visible sky where the lights shine, the expanse God named שָׁמַיִם in Genesis 1:8.",
+        "key": "Heavens@Gen.1.8",
+        "position": 3
+      }
+    ],
     "glosses": [
       {
         "gloss": "and let them be",
@@ -41,7 +47,53 @@
         "position": 8
       }
     ],
-    "name_review_base": null,
+    "name_review_base": [
+      {
+        "key": null,
+        "position": 0,
+        "surface": "וְהָיוּ"
+      },
+      {
+        "key": null,
+        "position": 1,
+        "surface": "לִמְאוֹרֹת"
+      },
+      {
+        "key": null,
+        "position": 2,
+        "surface": "בִּרְקִיעַ"
+      },
+      {
+        "key": null,
+        "position": 3,
+        "surface": "הַשָּׁמַיִם"
+      },
+      {
+        "key": null,
+        "position": 4,
+        "surface": "לְהָאִיר"
+      },
+      {
+        "key": null,
+        "position": 5,
+        "surface": "עַל"
+      },
+      {
+        "key": null,
+        "position": 6,
+        "surface": "הָאָרֶץ"
+      },
+      {
+        "key": null,
+        "position": 7,
+        "surface": "וַיְהִי"
+      },
+      {
+        "key": null,
+        "position": 8,
+        "surface": "כֵן"
+      }
+    ],
     "translation": "[And let them be|0] [as lights|1] [in the expanse of|2] [the heavens|3] [to give light|4] [on|5] [the earth|6].” [And it was|7] [so|8]."
   },
   "source": "ot",
