@@ -4,9 +4,14 @@
   "review": {
     "entities": [
       {
-        "evidence": "יַהְוֶה explicitly names the subject of וַיִּבֶן. The appositive אֱלֹהִים identifies him as God, and the source tags both words LORD@Gen.1.1.",
+        "evidence": "יַהְוֶה explicitly names the subject of וַיִּבֶן. The source tags this name LORD@Gen.1.1.",
         "key": "LORD@Gen.1.1",
         "position": 1
+      },
+      {
+        "evidence": "אֱלֹהִים stands in apposition to יַהְוֶה in “Yahweh God.” Both words designate the same subject of the singular verb וַיִּבֶן, and both carry the same source tag.",
+        "key": "LORD@Gen.1.1",
+        "position": 2
       }
     ],
     "glosses": [
@@ -63,7 +68,74 @@
         "position": 12
       }
     ],
-    "name_review_base": null,
+    "name_review_base": [
+      {
+        "key": null,
+        "position": 0,
+        "surface": "וַיִּבֶן"
+      },
+      {
+        "evidence": "יַהְוֶה explicitly names the subject of וַיִּבֶן. The appositive אֱלֹהִים identifies him as God, and the source tags both words LORD@Gen.1.1.",
+        "key": "LORD@Gen.1.1",
+        "position": 1,
+        "surface": "יַהְוֶה"
+      },
+      {
+        "key": null,
+        "position": 2,
+        "surface": "אֱלֹהִים"
+      },
+      {
+        "key": null,
+        "position": 3,
+        "surface": "אֶת"
+      },
+      {
+        "key": null,
+        "position": 4,
+        "surface": "הַצֵּלָע"
+      },
+      {
+        "key": null,
+        "position": 5,
+        "surface": "אֲשֶׁר"
+      },
+      {
+        "key": null,
+        "position": 6,
+        "surface": "לָקַח"
+      },
+      {
+        "key": null,
+        "position": 7,
+        "surface": "מִן"
+      },
+      {
+        "key": null,
+        "position": 8,
+        "surface": "הָאָדָם"
+      },
+      {
+        "key": null,
+        "position": 9,
+        "surface": "לְאִשָּׁה"
+      },
+      {
+        "key": null,
+        "position": 10,
+        "surface": "וַיְבִאֶהָ"
+      },
+      {
+        "key": null,
+        "position": 11,
+        "surface": "אֶל"
+      },
+      {
+        "key": null,
+        "position": 12,
+        "surface": "הָאָדָם"
+      }
+    ],
     "translation": "[Then|0] [Yahweh|1] [God|2] [built|0] [the rib|4,3] [which|5] [he had taken|6] [from|7] [the man|8] [into a woman|9], [and he brought her|10] [to|11] [the man|12]."
   },
   "source": "ot",
