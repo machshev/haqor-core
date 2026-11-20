@@ -7,6 +7,10 @@
   "summary": "To oppose or act as an adversary.",
   "words": [
     {
+      "lemma": "שָׂטָן", "pos": "noun", "gender": "m", "gloss": "adversary", "bdb": ["u.ay.ab"],
+      "senses": [{"gloss":"adversary","definition":"An adversary opposes or accuses.","evidence":[{"ref":"Num.22.22","role":"defining"}]}]
+    },
+    {
       "lemma": "שָׂטַן",
       "pos": "verb",
       "gloss": "oppose, accuse",
@@ -31,6 +35,10 @@
           ]
         }
       ]
+    },
+    {
+      "lemma": "שִׂטְנָה", "pos": "noun", "gender": "f", "gloss": "accusation, hostility", "bdb": ["u.ay.ad","u.ay.ae"],
+      "senses": [{"gloss":"accusation","definition":"Accusation or hostility against another.","evidence":[{"ref":"Ezr.4.6"}]}]
     }
   ],
   "note": "Drafted for Psalm 38 coverage. The verb is kept distinct from later doctrinal uses of adversary."
