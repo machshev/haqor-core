@@ -26,6 +26,132 @@
           ]
         }
       ]
+    },
+    {
+      "lemma": "חָלַף",
+      "pos": "verb",
+      "gloss": "pass; change; renew",
+      "bdb": [
+        "h.cx.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "pass through; pass away",
+          "senses": [
+            {
+              "gloss": "pass",
+              "definition": "To pass through, pass away or sweep by.",
+              "evidence": [
+                {
+                  "ref": "Psa.90.6",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.102.27"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "change; renew",
+          "senses": [
+            {
+              "gloss": "change; renew",
+              "definition": "To exchange, change or renew what is present.",
+              "evidence": [
+                {
+                  "ref": "Isa.40.31",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Lev.27.10"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חֵלֶף",
+      "pos": "noun",
+      "gloss": "exchange; in return",
+      "bdb": [
+        "h.cx.ab"
+      ],
+      "senses": [
+        {
+          "gloss": "exchange",
+          "definition": "An exchange or thing given in return.",
+          "evidence": [
+            {
+              "ref": "Job.15.31"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חֲלוֹף",
+      "pos": "noun",
+      "gloss": "passing away",
+      "bdb": [
+        "h.cx.ad"
+      ],
+      "senses": [
+        {
+          "gloss": "passing away",
+          "definition": "A passing away or vanishing.",
+          "evidence": [
+            {
+              "ref": "Job.11.10"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַחֲלָפָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "plait; passage",
+      "bdb": [
+        "h.cx.ag"
+      ],
+      "senses": [
+        {
+          "gloss": "plait",
+          "definition": "An intertwining or plait.",
+          "evidence": [
+            {
+              "ref": "Jdg.5.26"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַחֲלָף",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "knife",
+      "bdb": [
+        "h.cx.af"
+      ],
+      "senses": [
+        {
+          "gloss": "knife",
+          "definition": "A knife or blade.",
+          "evidence": [
+            {
+              "ref": "Pro.23.2"
+            }
+          ]
+        }
+      ]
     }
   ],
   "note": "Drafted for Psalm 55 coverage."
