@@ -4,12 +4,12 @@
       "evidence": [
         {
           "locator": "p. 47, ʾYT",
-          "note": "KAI 14.4 ʾl yptḥ ʾyt mškb z, \"let him not open this resting-place\"; Poen. 930/31 yth alonim ualonuth, \"you gods and goddesses\" (object).",
+          "note": "KAI 14.4 uses ʾyt before the resting-place that must not be opened. Poen. 930/31 uses yth before the gods and goddesses addressed.",
           "source": "krahmalkov-2000"
         },
         {
           "locator": "p. 88, ʾT IV",
-          "note": "KAI 10.2/3 wqrʾ ʾnk ʾt rbty bʿlt gbl, \"I invoked my Lady, Baalat of Byblos\": ʾt before a suffixed noun; in Punic once with a suffix as the object pronoun, CIS i 6000.1 ʾl tšʾ <ʾ>tʾ, \"do not remove it\".",
+          "note": "KAI 10.2/3 has ʾt before “my Lady.” CIS i 6000.1 has a suffixed object pronoun.",
           "source": "krahmalkov-2000"
         },
         {
@@ -21,7 +21,7 @@
       "gloss": "accusative particle (marks the object)",
       "id": "phn-yt",
       "lang": "phn",
-      "note": "Classical Phoenician writes ʾyt, but ʾt, which Krahmalkov reads /ʾot/, before a noun with a possessive suffix: the same two shapes as Hebrew אֶת־ and אֹת־. Punic in Latin letters writes it et and yth.",
+      "note": "Classical Phoenician writes ʾyt, with ʾt before a noun bearing a possessive suffix. Punic Latin-letter texts give et and yth.",
       "relation": "cognate",
       "translit": "ʾyt; before a suffixed noun ʾt /ʾot/"
     },
@@ -29,7 +29,7 @@
       "evidence": [
         {
           "locator": "KAI 181, lines 6, 14",
-          "note": "Line 6 אענו את מאב, \"I will afflict Moab\"; line 14 לכ אחז את נבה, \"Go, seize Nebo\".",
+          "note": "Line 6 אענו את מאב, “I will afflict Moab.” Line 14 לכ אחז את נבה, “Go, seize Nebo.”",
           "source": "compston-1919",
           "url": "https://en.wikisource.org/wiki/The_Inscription_on_the_Stele_of_M%C3%A9%C5%A1a%CA%BF/The_Text_in_Hebrew_Square_Script"
         },
@@ -43,7 +43,7 @@
       "gloss": "accusative particle",
       "id": "moab-et",
       "lang": "sem",
-      "note": "Mesha's stele uses it as Hebrew does, before a definite object.",
+      "note": "Mesha’s stele places the particle before a definite object.",
       "relation": "cognate",
       "translit": "ʾt (Moabite)"
     },
@@ -51,7 +51,7 @@
       "evidence": [
         {
           "locator": "p. 198, ܝܬ, ܝܬܐ",
-          "note": "\"a) being, essence, existence; material, matter; with ܠܐ non-existence, nothingness … b) archaism used like Heb. eth as sign of the accusative … God created the heaven and the earth. c) the self; with pron. suff. thyself, himself, themselves; his own body; beside himself … plants come into existence by themselves.\"",
+          "note": "Records being, substance, the accusative sign and the suffixed reflexive.",
           "source": "payne-smith-1903",
           "url": "https://www.dukhrana.com/lexicon/PayneSmith/pages/0207.jpg"
         },
@@ -61,10 +61,10 @@
         }
       ],
       "form": "ܝܬ",
-      "gloss": "being, essence, existence; the self (with suffixes ܝܬܗ himself, thyself…); archaic accusative sign, as Hebrew אֵת",
+      "gloss": "being, essence, existence, self; archaic accusative sign",
       "id": "syc-yat",
       "lang": "syc",
-      "note": "The same word is a noun for a person's or thing's being and self, and the sign of the object (the Peshitta of Gen 1:1, \"God created ܝܬ the heaven and ܝܬ the earth\"). It shows the particle as once a noun: \"the self of\" the thing acted on. Hebrew's suffixed אֹתָם \"themselves\" (Jer 7:19; Ezk 34:2) keeps the same sense.",
+      "note": "The word denotes being or self and can also mark an object, as in the Peshitta of Gen 1:1. The nominal use helps explain the Hebrew reflexive in Jer 7:19 and Ezk 34:2.",
       "relation": "cognate",
       "translit": "yāṯ, yāṯā"
     },
@@ -72,7 +72,7 @@
       "evidence": [
         {
           "locator": "יַת (J00711)",
-          "note": "\"[being, existence,] a particle indicating the objective case (= h. אֵת). Targ. Gen. I, 1 … with pronominal suffix of the third person, he himself, this one.\"",
+          "note": "Records the objective particle and the third-person use “he himself, this one.”",
           "source": "jastrow-1903",
           "url": "https://www.sefaria.org/Jastrow,_יַת.1"
         },
@@ -82,10 +82,10 @@
         }
       ],
       "form": "יַת",
-      "gloss": "accusative particle; with suffixes me, thee…; (third person) he himself, that one",
+      "gloss": "accusative particle; with suffixes me, thee; he himself, that one",
       "id": "arc-yat",
       "lang": "arc",
-      "note": "The Targums' word for Hebrew אֵת (Targum Gen 1:1); with a third-person suffix it can stand for \"he himself, this one\", a noun's use.",
+      "note": "The Targum of Gen 1:1 uses it for Hebrew אֵת. Its third-person suffixed use can single out the person himself.",
       "relation": "cognate",
       "translit": "yat; with suffixes yāṯ-"
     },
@@ -93,21 +93,19 @@
       "evidence": [
         {
           "locator": "Book I, p. 134, art. اى, إِيَّا",
-          "note": "\"I have not heard any derivation of إِيَّا; but I think, without being certain, that it is from تَآيَيْتُهُ … so that the meaning of إِيَّاكَ is I direct myself, or my aim, to, or towards, thee, and thy person.\"",
           "source": "lane",
           "url": "https://ejtaal.net/aa/img/ll/0/ll-0171.png"
         },
         {
           "locator": "Arabic إيا",
-          "note": "\"particle attached to oblique pronoun forms when they are not attached to the verb\"; derived there from a vocative word.",
           "source": "wiktionary"
         }
       ],
       "form": "إِيَّا",
-      "gloss": "carrier of an object pronoun standing apart from its verb (إِيَّاكَ \"thee\")",
+      "gloss": "carrier of a detached object pronoun",
       "id": "ar-iyya",
       "lang": "ar",
-      "note": "Does the work of the suffixed אֹת־ (\"thee\" set before the verb), and Arabic files it under one root with آيَة \"sign\". The derivation is uncertain: al-Azhari, as Lane gives him, says he heard none and suggests, \"without being certain\", the verb \"aim at someone's person\"; Wiktionary instead takes it from a vocative word. Kept as possible.",
+      "note": "إِيَّاكَ carries an object pronoun independently of the verb. Lane records an uncertain proposal connecting it to aiming at someone’s person. A vocative origin has also been proposed.",
       "relation": "possible",
       "translit": "ʾiyyā"
     },
@@ -115,22 +113,20 @@
       "evidence": [
         {
           "locator": "Book I, p. 135, art. اى, آيَةٌ",
-          "note": "\"A sign, token, or mark, by which a person or thing is known.\"",
           "source": "lane",
           "url": "https://ejtaal.net/aa/img/ll/0/ll-0172.png"
         },
         {
           "locator": "Book I, p. 131, art. اى, 6 تَآيَيْتُهُ",
-          "note": "\"I directed my course, or aim, to, or towards, his آيَة, i.e., his شَخْص [or body, or corporeal form … or person].\"",
           "source": "lane",
           "url": "https://ejtaal.net/aa/img/ll/0/ll-0168.png"
         }
       ],
       "form": "آيَةٌ",
-      "gloss": "sign, token, mark by which a person or thing is known; (verb تَآيَا) aim at someone's آيَة, his form or person",
+      "gloss": "sign, token, mark; in the related verb, aim at someone’s form or person",
       "id": "ar-aya",
       "lang": "ar",
-      "note": "The noun of Hebrew אוֹת \"sign\". Its verb shows the sign of a person taken as the person's form or self, which is the bridge a derivation of the object marker from the root of אוֹת would need; Hebrew's suffixed אֹת־ has the same vowel as אוֹת. Not shown: Hebrew אוֹת never means \"self\".",
+      "note": "Arabic supplies a possible semantic link between a distinguishing sign and a person’s self. The Hebrew suffixed stem ʾōt- has the vowel of אוֹת, but Hebrew gives no example of אוֹת meaning “self.”",
       "relation": "possible",
       "translit": "ʾāya"
     },
@@ -138,19 +134,19 @@
       "evidence": [
         {
           "locator": "p. 87, ʾT III",
-          "note": "KAI 26 A I 11/12 wšt ʾnk šlm ʾt kl mlk, \"and I made peace with every king\"; KAI 14.8 ʾl ykn lm mškb ʾt rpʾm, \"may they not have a resting-place with the Rephaim\".",
+          "note": "KAI 26 A I 11/12 has “I made peace with every king.” KAI 14.8 speaks of a resting-place with the Rephaim.",
           "source": "krahmalkov-2000"
         },
         {
-          "locator": "Punic 𐤀𐤕 (prep)",
+          "locator": "Punic 𐤕 (prep)",
           "source": "wiktionary"
         }
       ],
       "form": "𐤀𐤕",
-      "gloss": "with; together with; alongside; to; for the benefit of",
+      "gloss": "with, together with, alongside, to, for the benefit of",
       "id": "phn-et-with",
       "lang": "phn",
-      "note": "The same range as Hebrew's \"with\": peace made with someone, a resting-place with someone, alongside someone.",
+      "note": "Phoenician uses the preposition of making peace with someone and sharing a resting-place with others.",
       "relation": "cognate",
       "translit": "ʾt"
     },
@@ -158,27 +154,27 @@
       "evidence": [
         {
           "locator": "itti I",
-          "note": "\"with\".",
+          "note": "with",
           "source": "ebl",
           "url": "https://www.ebl.lmu.de/api/words/itti%20I"
         },
         {
           "locator": "išti I",
-          "note": "\"with\" + subst. or pron. suff. … O/MA also \"from\" + vb.s of taking, receiving; Ass. also \"with, in possession of\" things.",
+          "note": "With a noun or suffix. Also marks the source of something received or the person keeping something.",
           "source": "ebl",
           "url": "https://www.ebl.lmu.de/api/words/i%C5%A1ti%20I"
         },
         {
           "locator": "armep x000003440, itti [with] PRP",
-          "note": "with; from; among; against (×9904).",
+          "note": "with, from, among, against",
           "source": "oracc"
         }
       ],
       "form": "itti",
-      "gloss": "with; (Assyrian) from, with verbs of taking and receiving; with, in the possession of",
+      "gloss": "with; from, with verbs of taking and receiving; in someone’s possession",
       "id": "akk-itti",
       "lang": "akk",
-      "note": "Its uses match the Hebrew closely: \"with\" a person, \"from\" with verbs of taking (as מֵאֵת), and \"with\" of things in someone's keeping (as Gen 27:15). The older form išti makes the sound match with Hebrew ʾitt- less certain than the meaning.",
+      "note": "Company, source and keeping have close Hebrew parallels. The older form išti makes the sound correspondence less certain.",
       "relation": "cognate",
       "translit": "itti (Old Akkadian and Assyrian išti)"
     }
@@ -221,7 +217,7 @@
           "ref": "Hag.2.4"
         }
       ],
-      "statement": "\"Yahweh was with Joseph\" is shown in what followed: he prospered in all he did, even in prison, so that his master saw it (Gen 39:2–3, 21–23). Stephen retells it as \"God was with him, and delivered him out of all his afflictions\" (Act 7:9–10). Caleb and Joshua give it as the reason not to fear the people of the land (Num 14:9); Yahweh promises it to Jeremiah as deliverance from those who fight him (Jer 1:8, 19), and through Haggai to the people rebuilding his house (Hag 1:13; 2:4). In scripture's use, then, Yahweh's being \"with\" someone is his help made visible in what happens to them, given to those he has called to a work, and it is the ground for not fearing.",
+      "statement": "Joseph prospered in his work and in prison when Yahweh was with him. His master saw the results. Stephen recalls that God was with Joseph and delivered him from his afflictions. Caleb and Joshua appeal to Yahweh’s presence as grounds for courage. Jeremiah receives a promise of deliverance, and Haggai conveys Yahweh’s assurance to those rebuilding the house. In these passages his presence is shown in the help he gives his people.",
       "topic": "god-with-his-people"
     },
     {
@@ -245,7 +241,7 @@
           "ref": "Heb.11.6"
         }
       ],
-      "statement": "Enoch \"walked with God\" (Gen 5:22, 24), and Noah, \"a righteous man, blameless in his generations\", \"walked with God\" (Gen 6:9): the walk is set beside righteousness and blamelessness. Malachi describes Levi's walk with Yahweh as true teaching in his mouth, no wrong on his lips, \"in peace and uprightness he walked with me, and turned many from iniquity\" (Mal 2:6). Hebrews reads Enoch's walk as pleasing God, and says that without faith it is not possible to please him (Heb 11:5–6). To walk with God, in scripture's use, is a whole life lived in his company, kept by faith and shown in uprightness.",
+      "statement": "Enoch walked with God, and Noah’s walk with God accompanies his righteousness and blamelessness. Malachi describes Levi’s walk in terms of true teaching, peace, uprightness and turning people from iniquity. Hebrews connects Enoch’s pleasing God with faith. Walking with God describes a life spent in his company through faith and upright conduct.",
       "topic": "walking-with-god"
     },
     {
@@ -272,16 +268,16 @@
           "ref": "Rom.11.27"
         }
       ],
-      "statement": "Yahweh's covenants are made \"with\" named people and their seed: with Noah and his seed after him (Gen 9:9), with Abram, promising the land to his seed (Gen 15:18), and with Isaac, not Ishmael, \"for an everlasting covenant for his seed after him\" (Gen 17:19, 21). Through Isaiah he says of Israel, \"this is my covenant with them\" (Isa 59:21), and Paul applies the passage to Israel's future, when the deliverer comes out of Zion and their sins are taken away (Rom 11:26–27). The covenant is thus personal, made with Abraham and his seed, and still stands with Israel.",
+      "statement": "God establishes his covenant with Noah and his descendants. Yahweh makes a covenant with Abram concerning land for his descendants and names Isaac as the one with whom he will establish his everlasting covenant. Isaiah speaks of Yahweh’s covenant with Israel. Paul applies the covenant language to Israel when the deliverer comes and takes away their sins. These passages name the people and descendants with whom the covenant stands.",
       "topic": "covenant"
     }
   ],
   "gloss": "(object marker) the very one, untranslated; with suffixes me, him, them; (preposition) with, beside; (מֵאֵת) from",
   "id": "2t",
-  "note": "No Hebrew verb or noun is the source of either particle. (1) Object marker: Syriac ܝܬ (Payne Smith p. 198) is at once a noun \"being, essence, self\" and the accusative sign, and Jewish Aramaic יַת with a third-person suffix is \"he himself\" (Jastrow), so the particle was once a noun for the self of a thing; Hebrew's reflexive אֹתָם (Jer 7:19; Ezk 34:2, 8, 10) and its marking of subjects (Gen 21:5; 2Ki 6:5) fit that. A root behind the noun is not shown. The best lead is the root of אוֹת \"sign\": the suffixed form ʾōt- has the vowel of אוֹת, Phoenician ʾt is read /ʾot/ before suffixes, and Arabic files إِيَّا with آيَة \"sign\", whose verb is \"aim at someone's آيَة, his form, person\" (Lane pp. 131, 134); but al-Azhari's derivation is offered without certainty, Wiktionary gives a vocative origin for إِيَّا instead, and Hebrew אוֹת never means \"self\". A link to Aramaic אִיתַי \"there is\" (Jastrow's \"v. אִית\") is ruled out for Hebrew by the sounds: אִיתַי answers to Hebrew יֵשׁ with ṯ (Aramaic ת, Hebrew ש, as in Dan 3:12, which has both אִיתַי and יָתְהוֹן), while the particle has ת in Hebrew and Phoenician alike, an original t. (2) \"With\": suffixed ʾitt- (doubled t) against the marker's ʾōt-, so a different word; Phoenician ʾt and Akkadian itti/išti share its uses. Its relation to Akkadian ittu \"sign\" (eBL ittu II; the Akkadian cognate of אוֹת) is not supported: the preposition's older form is išti. No root found. Spellings: OSHB lemmas 853 (≈10,980) and 854 (≈890); BDB keys a.gm.aa and a.gn.aa share surface forms in the database, so counted uses overlap. Late books write 'with' as אוֹת־ (2Ki 1:15; 3:12; Jer 12:1; 35:2; Isa 59:21; Ezk 2:6), which OSHB often lemmatises as 853; read by sense. Left out: אַתְּ \"you (f.)\" (a.er.ad, from *ʾanti, for the entry of אַתָּה); the ploughshare אֵת, pl. אִתִּים (a.gq.ab, root אתת; 1Sa 13:20–21; Isa 2:4; Jol 4:10; Mic 4:3), probably a loan, for its own entry; Biblical Aramaic אָת \"sign\" (xa.ad.ab, Dan 3:32–33; 6:28), which the database files under את but which answers to Hebrew אוֹת and belongs in that entry. Names that may contain 'with' (אִתַּי Ittai, אִיתִיאֵל Ithiel) not written here. Greek: the object marker has no Greek word (the accusative case); Ecclesiastes' Septuagint renders it σύν, not aligned in MACULA, so not recorded. Open leads: Old Aramaic ʾyt (Sefire) in DEAPS; Ugaritic, which has no object marker, not consulted further; Ge'ez not consulted; CAD I/J itti not read (eBL used).",
+  "note": "The object marker has the suffixed stem ʾōt-. Jewish Aramaic יַת with a third-person suffix can mean “he himself.” Hebrew’s reflexive uses and its marking of subjects fit an origin in a noun denoting the self. Phoenician ʾt before suffixes, Hebrew אוֹת “sign,” and Arabic إِيَّا and آيَة supply a possible connection through a person’s form or self. Al-Azhari offers the Arabic derivation with uncertainty, and a vocative origin has also been proposed. Hebrew אוֹת itself never means “self.” Aramaic אִיתַי “there is” corresponds to Hebrew יֵשׁ, with a different historical consonant, whereas the particle has t in Hebrew and Phoenician. Dan 3:12 uses both אִיתַי and יָתְהוֹן. The preposition has doubled t in ʾitt-. Phoenician ʾt and Akkadian itti share its uses, although older Akkadian išti complicates the sound correspondence and gives no support for deriving the preposition from ittu “sign.” OSHB lemmas 853 and 854 occur about 10,980 and 890 times respectively. Shared surface forms cause overlap in database counts. Later books sometimes spell the preposition אוֹת־ (2Ki 1:15, 3:12, Jer 12:1, 35:2, Isa 59:21, Ezk 2:6). Context distinguishes it there. אַתְּ “you” belongs with אַתָּה. The ploughshare אֵת, plural אִתִּים, is filed under אתת and is probably a loan (1Sa 13:20–21, Isa 2:4, Jol 4:10, Mic 4:3). Biblical Aramaic אָת “sign” belongs with אוֹת (Dan 3:32–33, 6:28). Possible name elements in אִתַּי and אִיתִיאֵל are treated separately. Greek normally expresses the object by the accusative. Ecclesiastes’ Greek σύν for the marker has no MACULA alignment here. Old Aramaic ʾyt at Sefire remains a lead. Ugaritic, which lacks an object marker, and Geʿez have not been examined further. The Akkadian comparison uses eBL.",
   "root": "את",
   "status": "draft",
-  "summary": "Two particles share the spelling אֵת. The commoner is never translated: it points out the definite thing a verb acts on (אֶת־הָאָרֶץ; with suffixes אֹתִי \"me\", אֹתָם \"them\"), and sometimes the very thing a sentence is about even when that is the subject. The other, אִתִּי \"with me\" with suffixes, is \"with\": company, Yahweh's presence and help, dealings between two, nearness and keeping, and with מִן, \"from beside\". Neither grows from any verb or noun in scripture: the object marker was once a noun for a person's self, as its Syriac counterpart ܝܬ still is, and its suffixed forms can still mean \"themselves\" (Jer 7:19; Ezk 34:2). Whether that noun belongs to the root of אוֹת \"sign\" is not shown, and \"with\", which answers to Phoenician ʾt and Akkadian itti, has no known root.",
+  "summary": "Two particles share the spelling אֵת. The commoner points out the definite thing a verb acts on, as in אֶת־הָאָרֶץ. With suffixes it gives אֹתִי “me” and אֹתָם “them.” It can also single out the subject of a sentence. The preposition, אִתִּי “with me” with a suffix, expresses company, Yahweh’s presence and help, dealings between parties, nearness and keeping. With מִן it means “from beside.” Syriac ܝܬ preserves both the nominal sense “being, self” and the object-marking use. Hebrew’s suffixed object marker can likewise mean “themselves” (Jer 7:19, Ezk 34:2). A derivation from אוֹת “sign” is uncertain. The preposition corresponds to Phoenician ʾt and Akkadian itti. No Hebrew verbal root is known for either particle.",
   "tags": [
     "grammar",
     "presence",
@@ -307,92 +303,65 @@
       "pos": "particle",
       "senses": [
         {
-          "definition": "Stands before the noun a verb acts on when that noun is definite: with the article, a name, or a possessive suffix. An object that is not definite goes without it, so the particle singles out a known, particular thing.",
+          "definition": "Introduces the particular person or thing a verb acts on, ordinarily a definite noun identified by the article, a name or a possessive suffix.",
           "evidence": [
             {
-              "note": "After אֶת נֹחַ, the words וְאֵת כָּל הַחַיָּה introduce all the wild animals as a second object of וַיִּזְכֹּר, “he remembered”.",
+              "note": "God remembers Noah, the wild animals and the livestock. Each object has its own marker.",
               "ref": "Gen.8.1"
             },
             {
-              "note": "God remembered Noah, all the wild animals, and all the livestock. Each object takes its own אֵת. In וְאֶת כָּל הַבְּהֵמָה the particle introduces the third object, “all the livestock.”",
-              "ref": "Gen.8.1",
-              "role": "example"
+              "note": "Shem, Ham and Japheth each have the object marker.",
+              "ref": "Gen.6.10"
             },
             {
-              "note": "In אֶת שֵׁם אֶת חָם וְאֶת יָפֶת each son’s name has its own object marker. The final וְאֶת introduces Japheth as the third of the sons Noah fathered.",
-              "ref": "Gen.6.10",
-              "role": "example"
+              "note": "The three sons each have their own object marker.",
+              "ref": "Gen.5.32"
             },
             {
-              "note": "In אֶת שֵׁם אֶת חָם וְאֶת יָפֶת, each name is an object of וַיּוֹלֶד “he fathered”. The final וְאֶת introduces Japheth, the third son.",
-              "ref": "Gen.5.32",
-              "role": "example"
+              "note": "The stars form a further object of “made” alongside the two lights.",
+              "ref": "Gen.1.16"
             },
             {
-              "note": "In וְאֵת הַכּוֹכָבִים ‘and the stars’, אֵת marks the stars as another direct object of וַיַּעַשׂ ‘made’, alongside the greater and lesser lights.",
-              "ref": "Gen.1.16",
-              "role": "example"
+              "note": "The livestock and the creeping things are the second and third of three individually marked objects.",
+              "ref": "Gen.1.25"
             },
             {
-              "note": "In וְאֶת הַבְּהֵמָה, the conjunction joins “the livestock” to the list of what God made. אֶת marks it as the second of three direct objects of וַיַּעַשׂ.",
-              "ref": "Gen.1.25",
-              "role": "example"
+              "note": "Of the animals and birds that Yahweh God formed, the second phrase has the marker.",
+              "ref": "Gen.2.19"
             },
             {
-              "note": "Yahweh God formed כָּל חַיַּת הַשָּׂדֶה וְאֵת כָּל עוֹף הַשָּׁמַיִם, “every animal of the field and every bird of the heavens.” Both phrases are objects of וַיִּצֶר. Only the second carries אֵת.",
-              "ref": "Gen.2.19",
-              "role": "example"
-            },
-            {
-              "note": "\"He shall wave אֶת־הָעֹמֶר before Yahweh.\"",
+              "note": "The sheaf is what the priest waves.",
               "ref": "Lev.23.11"
             },
             {
-              "note": "\"Moses declared אֶת־מֹעֲדֵי יְהוָה to the sons of Israel.\"",
+              "note": "Moses declares the appointed times.",
               "ref": "Lev.23.44"
             },
             {
-              "note": "\"When you gather אֶת־תְּבוּאַת הָאָרֶץ you shall keep אֶת־חַג־יְהוָה seven days.\"",
+              "note": "The land’s produce and Yahweh’s feast are the objects of their respective verbs.",
               "ref": "Lev.23.39"
             },
             {
-              "note": "\"When you reap אֶת־קְצִירָהּ … and bring אֶת־עֹמֶר רֵאשִׁית קְצִירְכֶם\": the harvest and the sheaf of its firstfruits.",
+              "note": "The text marks the harvest reaped and the sheaf brought.",
               "ref": "Lev.23.10"
             },
             {
-              "note": "\"Yahweh God formed אֶת־הָאָדָם, dust from the ground\": the definite object takes the particle, the indefinite עָפָר does not.",
+              "note": "אֶת־הָאָדָם marks the man whom God formed. The indefinite עָפָר follows without the particle.",
               "ref": "Gen.2.7",
               "role": "defining"
             },
             {
-              "note": "\"You shall love אֵת יְהוָה your God\"; quoted in Mat 22:37, where the Greek marks the same noun by the accusative κύριον τὸν θεόν σου.",
+              "note": "אֵת יְהוָה introduces the one Israel is to love. Mat 22:37 expresses the object by the accusative.",
               "ref": "Deu.6.5",
               "role": "defining"
             },
             {
-              "note": "\"You shall love אֵת יְהוָה your God\"; quoted in Mat 22:37, where the Greek marks the same noun by the accusative κύριον τὸν θεόν σου.",
-              "ref": "Deu.6.5"
-            },
-            {
-              "note": "\"You shall reap אֶת־קְצִירָהּ … and bring אֶת־עֹמֶר רֵאשִׁית קְצִירְכֶם\": the harvest and the sheaf of its firstfruits.",
-              "ref": "Lev.23.10"
-            },
-            {
-              "note": "אֵת הַשָּׁמַיִם וְאֵת הָאָרֶץ: \"the heavens and the earth\" as what God created, each with its own אֵת.",
+              "note": "The heavens and the earth each take אֵת as objects of “created.”",
               "ref": "Gen.1.1",
               "role": "defining"
             },
             {
-              "note": "וְאֵת כָּל רֶמֶשׂ הָאֲדָמָה introduces the third object of וַיַּעַשׂ ‘he made’. Each of the three objects has its own marker.",
-              "ref": "Gen.1.25",
-              "role": "example"
-            },
-            {
-              "note": "לְמַסַּע אֶת־הַמַּחֲנוֹת: \"for the setting out of the camps\": the object of a verbal noun.",
-              "ref": "Lev.23.10"
-            },
-            {
-              "note": "לְמַסַּע אֶת־הַמַּחֲנוֹת: \"for the setting out of the camps\": the object of a verbal noun.",
+              "note": "אֶת־הַמַּחֲנוֹת follows a verbal noun.",
               "ref": "Num.10.2"
             },
             {
@@ -403,120 +372,91 @@
           "id": "definite-object",
           "senses": [
             {
-              "id": "before-an-indefinite-noun",
-              "definition": "Now and then before a noun with no article, where the thing is still a particular one in view.",
+              "definition": "Occasionally introduces a particular person or thing in view even when the noun has no article.",
               "evidence": [
                 {
-                  "note": "\"If an ox gores אֶת־אִישׁ אוֹ אֶת־אִשָּׁה, a man or a woman.\"",
+                  "note": "An ox gores אֶת־אִישׁ אוֹ אֶת־אִשָּׁה, “a man or a woman.”",
                   "ref": "Exo.21.28",
                   "role": "defining"
                 }
               ],
-              "gloss": "(before an indefinite noun, rarely)"
+              "gloss": "(before an indefinite noun, rarely)",
+              "id": "before-an-indefinite-noun"
             }
           ]
         },
         {
-          "definition": "Carries a pronoun suffix to make an object pronoun standing apart from the verb, often to put the person or thing first or to set it off.",
+          "definition": "Carries a pronominal suffix as an object independent of its verb. The pronoun can precede the verb for emphasis.",
           "evidence": [
             {
-              "note": "Cain says גֵּרַשְׁתָּ אֹתִי, “you have driven me away.” The first-person suffix identifies Cain as the one driven away.",
+              "note": "Cain says גֵּרַשְׁתָּ אֹתִי, “you have driven me away.”",
               "ref": "Gen.4.14",
               "role": "defining"
             },
             {
-              "note": "God blesses the seventh day and וַיְקַדֵּשׁ אֹתוֹ, “he made it holy.” The masculine singular suffix refers back to יוֹם, “day,” as the object of the second verb.",
+              "note": "God made אֹתוֹ, the seventh day, holy.",
               "ref": "Gen.2.3",
               "role": "defining"
             },
             {
-              "note": "In הַכּוֹת אֹתוֹ, ‘to strike him,’ אֹתוֹ refers to Cain. The following כָּל מֹצְאוֹ, ‘anyone who finds him,’ names the person who might strike him.",
-              "ref": "Gen.4.15",
-              "role": "example"
+              "note": "Cain is the object of “strike him.”",
+              "ref": "Gen.4.15"
             },
             {
-              "note": "In וַיְבָרֶךְ אֹתָם אֱלֹהִים, “God blessed them,” אֹתָם refers back to the water creatures and birds of the preceding verse.",
-              "ref": "Gen.1.22",
-              "role": "example"
+              "note": "“Them” refers to the water creatures and birds God blessed.",
+              "ref": "Gen.1.22"
             },
             {
-              "note": "In וַיְבָרֶךְ אֹתָם, “and he blessed them,” אֹתָם refers to the male and female just named. The preceding בְּרָאָם, “he created them,” expresses the same object by a suffix on the verb.",
+              "note": "The male and female are the object in both “he created them” and “he blessed them.”",
               "ref": "Gen.5.2"
             },
             {
-              "note": "In עָשָׂה אֹתוֹ, “he made him,” the suffix refers back to אָדָם, whom the preceding clause names as the one God created.",
+              "note": "“He made him” refers back to Adam.",
               "ref": "Gen.5.1",
               "role": "defining"
             },
             {
-              "note": "The verse shifts from בָּרָא אֹתוֹ, “he created him,” to זָכָר וּנְקֵבָה בָּרָא אֹתָם, “male and female he created them.” The plural suffix refers to the male and female together as the direct object of בָּרָא.",
+              "note": "Singular אֹתוֹ gives way to plural אֹתָם when male and female are named together.",
               "ref": "Gen.1.27",
               "role": "defining"
             },
             {
-              "note": "Yahweh tells Noah, אֹתְךָ רָאִיתִי צַדִּיק, “I have seen you to be righteous.” The suffixed particle places “you” before the verb and identifies Noah as the person seen.",
+              "note": "אֹתְךָ precedes “I have seen” and identifies Noah.",
               "ref": "Gen.7.1",
               "role": "defining"
             },
             {
-              "note": "\"Do not leave אֹתָנוּ, us.\"",
+              "note": "“Do not leave us.”",
               "ref": "Num.10.31"
             },
             {
-              "note": "\"The appointed times of Yahweh, which you shall proclaim אֹתָם, them, holy convocations.\"",
+              "note": "Israel is to proclaim the appointed times as holy convocations.",
               "ref": "Lev.23.2",
               "role": "defining"
             },
             {
-              "note": "\"The place of which Yahweh said, אֹתוֹ אֶתֵּן לָכֶם, 'it I will give you'\": the pronoun set before the verb for weight.",
+              "note": "The pronoun for the promised place is set before “I will give.”",
               "ref": "Num.10.29",
               "role": "defining"
             },
             {
-              "note": "\"When I brought them out\", בְּהוֹצִיאִי אוֹתָם, spelled with ו.",
+              "note": "The object of “bring out” can be expressed by the particle with a noun or with a suffix, including the full spelling אוֹתָם.",
               "ref": "Lev.23.43"
             },
             {
-              "note": "\"You shall keep אֹתָם, them, a feast to Yahweh.\"",
+              "note": "The suffixed particle identifies what Israel is to keep as a feast.",
               "ref": "Lev.23.41"
             },
             {
-              "note": "\"You shall keep אֹתוֹ, it, as a feast to Yahweh … in the seventh month you shall keep אֹתוֹ.\"",
-              "ref": "Lev.23.41"
-            },
-            {
-              "note": "\"the place of which Yahweh said, אֹתָהּ אֶתֵּן לָכֶם, 'it I will give you'\": the pronoun set before the verb for weight.",
-              "ref": "Num.10.29",
-              "role": "defining"
-            },
-            {
-              "note": "\"the place of which Yahweh said, אֹתוֹ אֶתֵּן לָכֶם, 'it I will give you'\": the pronoun set before the verb for weight.",
-              "ref": "Num.10.29",
-              "role": "defining"
-            },
-            {
-              "note": "\"the place of which Yahweh said, אֹתוֹ אֶתֵּן לָכֶם, 'it will I give you'\": the pronoun set before the verb for weight.",
-              "ref": "Num.10.29",
-              "role": "defining"
-            },
-            {
-              "note": "בְּהוֹצִיאִי אֶת־בְּנֵי יִשְׂרָאֵל: the object of an infinitive.",
-              "ref": "Lev.23.43"
-            },
-            {
-              "note": "בְּהוֹצִיאִי אוֹתָם: \"when I brought them out\", spelled with ו.",
-              "ref": "Lev.23.43"
-            },
-            {
-              "note": "הַצֹּרֵר אֶתְכֶם: \"the adversary who oppresses you\".",
+              "note": "The adversary oppresses “you.”",
               "ref": "Num.10.9"
             },
             {
-              "note": "וַיְבָרֶךְ אֹתָם אֱלֹהִים, “God blessed them.” אֹתָם identifies the people God blessed, the same people he then addresses.",
+              "note": "The people God blessed are those he then addresses.",
               "ref": "Gen.1.28"
             },
             {
-              "note": "כַּאֲשֶׁר צִוָּה אֹתוֹ אֱלֹהִים, “as God had commanded him.” The suffix on אֹתוֹ identifies Noah as the person God commanded.",
+              "note": "Noah is the one God had commanded.",
               "ref": "Gen.7.16",
               "role": "defining"
             },
@@ -531,20 +471,20 @@
           "id": "object-pronoun",
           "senses": [
             {
-              "definition": "The suffixed form can mean the person's own self, where English needs a reflexive: the particle points to the self of the one named.",
+              "definition": "The suffixed form can refer back to the acting person, expressing that person’s own self.",
               "evidence": [
                 {
-                  "note": "\"Is it אֹתִי, me, they provoke? says Yahweh. Is it not אֹתָם, themselves, to the shame of their faces?\"",
+                  "note": "Yahweh asks whether they provoke him or themselves.",
                   "ref": "Jer.7.19",
                   "role": "defining"
                 },
                 {
-                  "note": "\"Woe to the shepherds of Israel who have been feeding אוֹתָם, themselves! Should not the shepherds feed the flock?\"",
+                  "note": "The shepherds feed themselves.",
                   "ref": "Ezk.34.2",
                   "role": "defining"
                 },
                 {
-                  "note": "\"The shepherds fed אוֹתָם, themselves, and did not feed my flock.\"",
+                  "note": "The shepherds feed themselves and leave the flock unfed.",
                   "ref": "Ezk.34.8"
                 },
                 {
@@ -557,113 +497,77 @@
           ]
         },
         {
-          "id": "the-very-as-for",
-          "definition": "Marks a noun that is not the verb's object: the subject of a passive or intransitive verb, or a noun set at the head of the sentence. Here it can only point out the thing itself, \"this very one\".",
+          "definition": "Singles out the subject of a passive or intransitive verb, or the topic placed at the head of a sentence.",
           "evidence": [
             {
-              "note": "",
               "ref": "Jos.6.27"
             },
             {
-              "note": "",
               "ref": "Jos.7.4"
             },
             {
-              "note": "\"And it happened as one was felling a beam, וְאֶת־הַבַּרְזֶל נָפַל אֶל־הַמָּיִם, the iron fell into the water\": the subject of an intransitive verb.",
+              "note": "וְאֶת־הַבַּרְזֶל introduces the iron that fell into the water.",
               "ref": "2Ki.6.5",
               "role": "defining"
             },
             {
-              "note": "\"And the iron, it fell into the water\": וְאֶת־הַבַּרְזֶל נָפַל אֶל־הַמָּיִם, the subject of an intransitive verb.",
-              "ref": "2Ki.6.5",
-              "role": "defining"
-            },
-            {
-              "note": "\"As it is written in the law of Moses, all this evil אֵת כָּל־הָרָעָה has come upon us.\"",
+              "note": "All this evil has come upon us.",
               "ref": "Dan.9.13"
             },
             {
-              "note": "\"As it is written in the law of Moses, אֵת כָּל־הָרָעָה הַזֹּאת, all this evil, has come upon us.\"",
-              "ref": "Dan.9.13"
-            },
-            {
-              "note": "\"By lot shall אֶת־הָאָרֶץ, the land, be divided.\"",
+              "note": "The land is to be divided by lot.",
               "ref": "Num.26.55"
             },
             {
-              "note": "\"Is it a little thing for us, אֶת־עֲוֹן פְּעוֹר, the iniquity of Peor?\"",
+              "note": "The question singles out the iniquity of Peor.",
               "ref": "Jos.22.17"
             },
             {
-              "note": "\"Is אֶת־עֲוֹן פְּעוֹר, the iniquity of Peor, too little for us?\"",
-              "ref": "Jos.22.17"
-            },
-            {
-              "note": "\"Only by lot shall אֶת־הָאָרֶץ, the land, be divided.\"",
-              "ref": "Num.26.55"
-            },
-            {
-              "note": "\"The pillar of cloud אֶת־עַמּוּד הֶעָנָן did not turn from over them by day.\"",
+              "note": "The pillar of cloud did not turn away.",
               "ref": "Neh.9.19"
             },
             {
-              "note": "\"The words of Esau were told to Rebekah.\"",
+              "note": "Esau’s words were reported to Rebekah.",
               "ref": "Gen.27.42"
             },
             {
-              "note": "\"To Enoch was born אֶת־עִירָד.\"",
+              "note": "Irad was born to Enoch.",
               "ref": "Gen.4.18"
             },
             {
-              "note": "\"אֶת־הַנָּשִׂיא נָשִׂיא הוּא: as for the prince, he is prince; he shall sit in it.\"",
+              "note": "“As for the prince” establishes the topic.",
               "ref": "Ezk.44.3"
             },
             {
-              "note": "\"אֶת־הַנָּשִׂיא נָשִׂיא הוּא: as for the prince, he is prince; he shall sit in it\".",
-              "ref": "Ezk.44.3"
-            },
-            {
-              "note": "\"אֶת־מְקוֹם כִּסְאִי, the place of my throne, and the place of the soles of my feet, where I will dwell.\"",
+              "note": "The place of the throne and of the soles of the feet is singled out.",
               "ref": "Ezk.43.7"
             },
             {
-              "note": "\"אֶת־עַמּוּד הֶעָנָן, the pillar of cloud, did not turn from over them by day.\"",
-              "ref": "Neh.9.19"
-            },
-            {
-              "note": "אֶת־הַנָּשִׂיא נָשִׂיא הוּא: \"as for the prince, he is prince; he shall sit in it\".",
-              "ref": "Ezk.44.3"
-            },
-            {
-              "note": "בְּהִוָּלֶד לוֹ אֵת יִצְחָק בְּנוֹ: \"when Isaac his son was born to him\": Isaac is the subject of the passive.",
+              "note": "Isaac is the subject of “was born.”",
               "ref": "Gen.21.5",
-              "role": "defining"
-            },
-            {
-              "note": "וְאֶת־הַבַּרְזֶל נָפַל אֶל־הַמָּיִם: \"and the iron, it fell into the water\": the subject of an intransitive verb.",
-              "ref": "2Ki.6.5",
               "role": "defining"
             }
           ],
-          "gloss": "the very…, as for… (marking a subject)"
+          "gloss": "the very…, as for… (marking a subject)",
+          "id": "the-very-as-for"
         }
       ],
-      "summary": "About 11,000 times, the Hebrew Bible's commonest word after the conjunction. Unstressed it is joined by maqqef as אֶת־; with suffixes it is אֹת־ (אֹתוֹ, אֹתָם, also written אוֹת־), as Phoenician wrote ʾt /ʾot/ before a suffix and ʾyt elsewhere. It has no English word: it marks which noun the verb acts on, and the Greek marks the same noun by the accusative case. Its suffixed forms can mean \"themselves\" and it can mark a subject, so it is more than a case ending: it points to a thing's self. Syriac ܝܬ, the same word, is still a noun \"being, self\" as well as the accusative sign, which shows how the particle came to be; a root behind that noun is not shown.",
+      "summary": "About 11,000 occurrences, second in frequency to the conjunction. The unstressed form is אֶת־ under maqqef. With suffixes it takes the form אֹת־ or אוֹת־. Phoenician likewise distinguishes ʾyt and ʾt before a suffix. English generally leaves it untranslated, and Greek expresses the ordinary object by the accusative case. Its reflexive use and its occasional use with a subject single out the thing or person itself. Syriac ܝܬ preserves both the nominal and grammatical uses. The root behind the noun is uncertain.",
       "usage": {
         "phrases": [
           {
             "evidence": [
               {
-                "note": "\"Noah knew אֵת אֲשֶׁר־עָשָׂה לוֹ, what his youngest son had done to him.\"",
+                "note": "Noah knew what his youngest son had done.",
                 "ref": "Gen.9.24",
                 "role": "defining"
               },
               {
-                "note": "\"that Yahweh may bring upon Abraham אֵת אֲשֶׁר־דִּבֶּר עָלָיו, what he has spoken of him\".",
+                "note": "What Yahweh had spoken concerning Abraham.",
                 "ref": "Gen.18.19"
               },
               {
-                "note": "\"He commanded אֶת־אֲשֶׁר עַל־בֵּיתוֹ, the one who was over his house.\"",
+                "note": "The one in charge of the house.",
                 "ref": "Gen.44.1"
               }
             ],
@@ -673,7 +577,7 @@
           {
             "evidence": [
               {
-                "note": "\"God saw אֶת־כָּל־אֲשֶׁר עָשָׂה, everything that he had made, and behold, it was very good.\"",
+                "note": "God saw everything he had made.",
                 "ref": "Gen.1.31",
                 "role": "defining"
               }
@@ -688,7 +592,7 @@
                 "role": "defining"
               },
               {
-                "note": "\"אֶת־חֲזֵה הַתְּנוּפָה וְאֵת שׁוֹק הַתְּרוּמָה: the breast of the waving and the thigh of the contribution I have taken.\"",
+                "note": "The breast of the waving and the thigh of the contribution each have the marker.",
                 "ref": "Lev.7.34"
               }
             ],
@@ -712,16 +616,16 @@
           "evidence": [
             {
               "locator": "2KI 1:15 word 7",
-              "note": "רֵד אוֹתוֹ, \"go down with him\" → μετ' αὐτοῦ.",
+              "note": "רֵד אוֹתוֹ corresponds to μετ’ αὐτοῦ.",
               "source": "macula-lxx"
             },
             {
               "locator": "JER 1:16 word 3",
-              "note": "μετά ×15 for the forms written אוֹת־ (MACULA aligns few of the others)",
+              "note": "Fifteen alignments with μετά for forms written אוֹת־.",
               "source": "macula-lxx"
             },
             {
-              "note": "Of Joseph, \"God was with him\" (μετ' αὐτοῦ), retelling Gen 39:2–3, 21.",
+              "note": "God was with Joseph, μετ’ αὐτοῦ, recalling Gen 39:2–3, 21.",
               "ref": "Act.7.9"
             }
           ],
@@ -731,7 +635,7 @@
         {
           "evidence": [
             {
-              "note": "παρὰ κυρίου ἐγένετο αὕτη, quoting Psa 118:23, מֵאֵת יְהוָה.",
+              "note": "παρὰ κυρίου renders מֵאֵת יְהוָה in the quotation of Psa 118:23.",
               "ref": "Mat.21.42"
             },
             {
@@ -745,7 +649,7 @@
           "evidence": [
             {
               "locator": "JER 12:1 word 10",
-              "note": "מִשְׁפָּטִים אֲדַבֵּר אוֹתָךְ, \"I will speak judgments with you\" → πρός σε.",
+              "note": "Speaking judgments אוֹתָךְ, “with you,” is rendered πρός σε.",
               "source": "macula-lxx"
             }
           ],
@@ -757,271 +661,126 @@
       "pos": "preposition",
       "senses": [
         {
-          "id": "with-together-with-company",
-          "definition": "In company with someone: going, coming, being or walking together.",
+          "definition": "In company with someone, of going, coming, being or walking together.",
           "evidence": [
             {
-              "note": "A covenant of salt before Yahweh with Aaron and his seed.",
               "ref": "Num.18.19"
             },
             {
-              "note": "In וַהֲקִמֹתִי אֶת בְּרִיתִי אִתָּךְ, “I will establish my covenant with you,” אִתָּךְ identifies Noah as the person with whom God establishes the covenant.",
+              "note": "Noah’s family will enter the ark with him.",
               "ref": "Gen.6.18",
               "role": "defining"
             },
             {
-              "note": "Moses to Hobab: לְכָה אִתָּנוּ וְהֵטַבְנוּ לָךְ, \"come with us, and we will do you good\"; Num 10:32 says the same with עִמָּנוּ.",
-              "ref": "Num.10.29",
-              "role": "defining"
+              "note": "Moses invites Hobab to come with Israel.",
+              "ref": "Num.10.29"
             },
             {
-              "note": "Noah is to bring the pairs into the ark לְהַחֲיֹת אִתָּךְ, “to keep them alive with you.” The suffix refers to Noah, with whom the creatures will live.",
-              "ref": "Gen.6.19",
-              "role": "defining"
+              "note": "Living creatures are to be kept alive with Noah.",
+              "ref": "Gen.6.19"
             },
             {
-              "note": "Noah’s wife and the three wives of his sons entered the ark אִתָּם, “with them.” The plural suffix refers back to Noah and his sons.",
               "ref": "Gen.7.13"
             },
             {
-              "note": "Only Noah and those who were אִתּוֹ, with him, in the ark remained. The suffix refers to Noah.",
-              "ref": "Gen.7.23",
-              "role": "defining"
+              "ref": "Gen.7.23"
             },
             {
-              "note": "Stephen retells it as \"God was with him, and delivered him out of all his afflictions\".",
               "ref": "Act.7.9"
             },
             {
-              "note": "Stephen retells it: ἦν ὁ θεὸς μετ' αὐτοῦ, \"God was with him, and delivered him out of all his afflictions\".",
-              "ref": "Act.7.9"
-            },
-            {
-              "note": "The covenant sense is illustrated by Gen 15:18.",
               "ref": "Gen.3.15"
             },
             {
-              "note": "\"Do not fear them, for אִתְּךָ אֲנִי, I am with you, to deliver you.\"",
-              "ref": "Jer.1.8",
-              "role": "defining"
+              "ref": "Jer.1.8"
             },
             {
-              "note": "\"Enoch walked with God\" (אֶת־הָאֱלֹהִים).",
+              "note": "Enoch walked with God.",
               "ref": "Gen.5.22"
             },
             {
-              "note": "\"Ezion-geber, which is אֶת־אֵלוֹת, beside Eloth, on the shore of the Red Sea.\"",
-              "ref": "1Ki.9.26",
-              "role": "defining"
-            },
-            {
-              "note": "\"Ezion-geber, which is אֶת־אֵלוֹת, beside Eloth, on the shore of the Red Sea\".",
-              "ref": "1Ki.9.26",
-              "role": "defining"
-            },
-            {
-              "note": "\"Ezion-geber, which is אֶת־אֵלוֹת, beside Eloth, on the shore of the Red Sea\".",
               "ref": "1Ki.9.26"
             },
             {
-              "note": "\"From you (מֵאִתְּךָ) is my praise in the great assembly.\"",
               "ref": "Psa.22.26"
             },
             {
-              "note": "\"Go down אוֹתוֹ, with him; do not be afraid of him\": 'with' spelled like the object marker.",
+              "note": "Elijah is told to go down with him.",
               "ref": "2Ki.1.15"
             },
             {
-              "note": "\"Go to war אֶת־בֶּרַע, with Bera king of Sodom.\"",
               "ref": "Gen.14.2"
             },
             {
-              "note": "\"God spoke אִתּוֹ, with him.\"",
-              "ref": "Gen.17.3",
-              "role": "defining"
+              "ref": "Gen.17.3"
             },
             {
-              "note": "\"He sent the dove מֵאִתּוֹ, from him.\"",
-              "ref": "Gen.8.8",
-              "role": "defining"
+              "ref": "Gen.8.8"
             },
             {
-              "note": "\"He walked אִתִּי, with me, in peace and uprightness.\"",
               "ref": "Mal.2.6"
             },
             {
-              "note": "\"His master saw that Yahweh was אִתּוֹ, with him, and that Yahweh made all he did prosper in his hand.\"",
-              "ref": "Gen.39.3",
-              "role": "defining"
-            },
-            {
-              "note": "\"His master saw that Yahweh was אִתּוֹ, with him, and that Yahweh made all he did prosper in his hand.\"",
               "ref": "Gen.39.3"
             },
             {
-              "note": "\"Show kindness and compassion, each אֶת־אָחִיו, with his brother.\"",
-              "ref": "Zec.7.9",
-              "role": "defining"
-            },
-            {
-              "note": "\"Show kindness and compassion, each אֶת־אָחִיו, with his brother.\"",
               "ref": "Zec.7.9"
             },
             {
-              "note": "\"Take my contribution מֵאֵת כָּל־אִישׁ, from every man whose heart moves him.\"",
-              "ref": "Exo.25.2",
-              "role": "defining"
+              "ref": "Exo.25.2"
             },
             {
-              "note": "\"The carved images אֲשֶׁר אֶת־הַגִּלְגָּל, which were by Gilgal\".",
-              "ref": "Jdg.3.19",
-              "role": "defining"
+              "ref": "Jdg.3.19"
             },
             {
-              "note": "\"The priests had a portion מֵאֵת פַּרְעֹה, from Pharaoh.\"",
               "ref": "Gen.47.22"
             },
             {
-              "note": "\"The prophet who has a dream אִתּוֹ, let him tell a dream; and he who has my word אִתּוֹ, let him speak my word in truth. What has the straw אֶת־הַבָּר, with the wheat?\"",
               "ref": "Jer.23.28"
             },
             {
-              "note": "\"The prophet who has a dream אִתּוֹ, with him, let him tell a dream; and he who has my word אִתּוֹ, let him speak my word in truth. What has the straw אֶת־הַבָּר, with the wheat?\"",
-              "ref": "Jer.23.28"
-            },
-            {
-              "note": "\"The prophet who has a dream אִתּוֹ, with him, let him tell a dream; and he who has my word אִתּוֹ, with him, let him speak my word in truth. What has the straw אֶת־הַבָּר, with the wheat?\"",
-              "ref": "Jer.23.28"
-            },
-            {
-              "note": "\"The prophet who has a dream אִתּוֹ, with him, let him tell a dream; and he who has my word אִתּוֹ, with him, let him speak my word in truth. What is the straw אֶת־הַבָּר, with the wheat?\"",
-              "ref": "Jer.23.28"
-            },
-            {
-              "note": "\"The prophet who has a dream אִתּוֹ, with him, tell a dream; and he who has my word אִתּוֹ, with him, let him speak my word. What has the straw אֶת־הַבָּר, with the wheat?\"",
-              "ref": "Jer.23.28"
-            },
-            {
-              "note": "\"The prophet who has a dream … and he who has my word אִתּוֹ, with him, let him speak my word in truth. What has the straw אֶת־הַבָּר, with the wheat?\"",
-              "ref": "Jer.23.28"
-            },
-            {
-              "note": "\"The wages of a hired man shall not stay the night אִתְּךָ, with you, until morning.\"",
-              "ref": "Lev.19.13",
-              "role": "defining"
-            },
-            {
-              "note": "\"The wages of a hired man shall not stay the night אִתְּךָ, with you, until morning.\"",
               "ref": "Lev.19.13"
             },
             {
-              "note": "\"The waters of Meribah, where the sons of Israel strove אֶת־יְהוָה, with Yahweh.\"",
               "ref": "Num.20.13"
             },
             {
-              "note": "\"The word of Yahweh is אוֹתוֹ, with him.\"",
               "ref": "2Ki.3.12"
             },
             {
-              "note": "\"They made war אֶת־בֶּרַע, with Bera king of Sodom.\"",
-              "ref": "Gen.14.2"
-            },
-            {
-              "note": "\"This one shall go אִתָּךְ … and this one shall not go עִמָּךְ, with you.\"",
+              "note": "אִתָּךְ and עִמָּךְ both mean “with you” of going together.",
               "ref": "Jdg.7.4"
             },
             {
-              "note": "\"This one shall go אִתָּךְ, with you … and this one shall not go עִמָּךְ, with you.\"",
-              "ref": "Jdg.7.4"
-            },
-            {
-              "note": "\"We have cut a covenant אֶת־מָוֶת, with death, and with the grave (וְעִם־שְׁאוֹל) in parallel.\"",
               "ref": "Isa.28.15"
             },
             {
-              "note": "\"We have cut a covenant אֶת־מָוֶת, with death, and with the grave (וְעִם־שְׁאוֹל) we have made a vision\": אֵת and עִם in parallel.",
-              "ref": "Isa.28.15"
+              "ref": "Gen.15.18"
             },
             {
-              "note": "\"Yahweh cut a covenant אֶת־אַבְרָם, with Abram.\"",
-              "ref": "Gen.15.18",
-              "role": "defining"
-            },
-            {
-              "note": "\"Yahweh is אִתָּנוּ, with us; do not be afraid of them.\"",
               "ref": "Num.14.9"
             },
             {
-              "note": "\"Yahweh is אִתָּנוּ, with us; do not fear them.\"",
-              "ref": "Num.14.9"
+              "ref": "Gen.39.2"
             },
             {
-              "note": "\"Yahweh was אֶת־יוֹסֵף, with Joseph, and he was a man who prospered.\"",
-              "ref": "Gen.39.2",
-              "role": "defining"
-            },
-            {
-              "note": "\"You shall come into the ark, you and your sons and your wife and your sons' wives אִתָּךְ, with you.\"",
-              "ref": "Gen.6.18",
-              "role": "defining"
-            },
-            {
-              "note": "\"for this thing is מֵאִתִּי, from me\".",
               "ref": "1Ki.12.24"
             },
             {
-              "note": "\"the carved images אֲשֶׁר אֶת־הַגִּלְגָּל, which were by Gilgal\".",
-              "ref": "Jdg.3.19",
-              "role": "defining"
-            },
-            {
-              "note": "\"the day Yahweh spoke אֶת־מֹשֶׁה to Moses, on Mount Sinai.\"",
               "ref": "Num.3.1"
             },
             {
-              "note": "\"the day Yahweh spoke אֶת־מֹשֶׁה, with Moses, on Mount Sinai\".",
-              "ref": "Num.3.1"
+              "ref": "Gen.27.15"
             },
             {
-              "note": "\"the garments of Esau … which were אִתָּהּ בַּבָּיִת, with her in the house\".",
-              "ref": "Gen.27.15",
-              "role": "defining"
+              "ref": "Psa.118.23"
             },
             {
-              "note": "\"the waters of Meribah, where the sons of Israel strove אֶת־יְהוָה, with Yahweh\".",
-              "ref": "Num.20.13"
-            },
-            {
-              "note": "\"מֵאֵת יְהוָה הָיְתָה זֹּאת, from Yahweh this has come.\"",
-              "ref": "Psa.118.23",
-              "role": "defining"
-            },
-            {
-              "note": "וַיִּתְהַלֵּךְ חֲנוֹךְ אֶת־הָאֱלֹהִים: \"Enoch walked with God\".",
-              "ref": "Gen.5.22"
-            },
-            {
-              "note": "מֵאֵת יְהוָה הָיְתָה זֹּאת, \"this was from Yahweh\".",
-              "ref": "Psa.118.23",
-              "role": "defining"
-            },
-            {
-              "note": "מֵאֵת יְהוָה הָיְתָה זֹּאת: \"This is from Yahweh; it is wonderful in our eyes\"; quoted in Mat 21:42 and Mrk 12:11 as παρὰ κυρίου, of the rejected stone made the head of the corner.",
-              "ref": "Psa.118.23",
-              "role": "defining"
-            },
-            {
-              "note": "מֵאֵת יְהוָה הָיְתָה זֹּאת: \"This is from Yahweh; it is wonderful in our eyes\"; quoted in Mat 21:42.",
-              "ref": "Psa.118.23",
-              "role": "defining"
-            },
-            {
-              "note": "צֵא and אַתָּה address Noah in the masculine singular. His wife, his sons and their wives leave the ark אִתָּךְ, “with you.” The verse-final pausal suffix refers to Noah, as it does in the command to enter the ark in Gen 6:18.",
+              "note": "The singular imperatives address Noah. His family leaves the ark אִתָּךְ, “with you.”",
               "ref": "Gen.8.16",
               "role": "defining"
             },
             {
-              "note": "קָנִיתִי אִישׁ אֶת־יְהוָה: Eve, \"I have gotten a man with Yahweh\", that is, with his help; at the next birth she says \"God has appointed me another seed\" (Gen 4:25). She credits Yahweh with the son; she does not call the son Yahweh.",
               "ref": "Gen.4.1"
             },
             {
@@ -1043,154 +802,156 @@
               "ref": "Mrk.12.11"
             }
           ],
-          "gloss": "with, together with (company)"
+          "gloss": "with, together with (company)",
+          "id": "with-together-with-company"
         },
         {
-          "id": "with-yahweh-s-presence",
-          "definition": "Yahweh being with someone: his presence shown in help, success and deliverance.",
+          "definition": "Yahweh being with someone, his presence shown in help, success and deliverance.",
           "evidence": [
             {
-              "note": "\"Yahweh was אֶת־יוֹסֵף, with Joseph, and he was a man who prospered.\"",
+              "note": "Yahweh was with Joseph, and he prospered.",
               "ref": "Gen.39.2",
               "role": "defining"
             },
             {
-              "note": "\"His master saw that Yahweh was אִתּוֹ, with him, and that Yahweh made all he did prosper in his hand.\"",
+              "note": "Joseph’s master saw that Yahweh was with him and made his work prosper.",
               "ref": "Gen.39.3",
               "role": "defining"
             },
             {
-              "note": "Stephen retells it: ἦν ὁ θεὸς μετ' αὐτοῦ, \"God was with him, and delivered him out of all his afflictions\".",
+              "note": "Stephen recalls that God was with Joseph and delivered him.",
               "ref": "Act.7.9"
             },
             {
               "ref": "Gen.39.21"
             },
             {
-              "note": "\"Do not fear them, for אִתְּךָ אֲנִי, I am with you, to deliver you.\"",
+              "note": "“I am with you” is followed by “to deliver you.”",
               "ref": "Jer.1.8",
               "role": "defining"
             },
             {
-              "note": "\"Yahweh is אִתָּנוּ, with us; do not fear them.\"",
+              "note": "Yahweh’s presence gives Israel grounds for courage.",
               "ref": "Num.14.9"
             },
             {
               "ref": "Hag.1.13"
             },
             {
-              "note": "קָנִיתִי אִישׁ אֶת־יְהוָה: Eve, \"I have gotten a man with Yahweh\", that is, with his help; at the next birth she says \"God has appointed me another seed\" (Gen 4:25). She credits Yahweh with the son; she does not call the son Yahweh.",
+              "note": "Eve credits Yahweh with helping her obtain a son, as she credits God with appointing another seed in Gen 4:25.",
               "ref": "Gen.4.1"
             }
           ],
-          "gloss": "with (Yahweh's presence and help)"
+          "gloss": "with (Yahweh's presence and help)",
+          "id": "with-yahweh-s-presence"
         },
         {
-          "id": "with-dealings-between-two",
           "definition": "The other party in something done between two: speech, covenant, kindness, or strife and war.",
           "evidence": [
             {
-              "note": "\"God spoke אִתּוֹ, with him.\"",
+              "note": "God spoke אִתּוֹ, “with him.”",
               "ref": "Gen.17.3",
               "role": "defining"
             },
             {
-              "note": "\"the day Yahweh spoke אֶת־מֹשֶׁה, with Moses, on Mount Sinai\".",
+              "note": "Yahweh spoke with Moses on Mount Sinai.",
               "ref": "Num.3.1"
             },
             {
-              "note": "\"Yahweh cut a covenant אֶת־אַבְרָם, with Abram.\"",
+              "note": "Yahweh cut a covenant אֶת־אַבְרָם, “with Abram.”",
               "ref": "Gen.15.18",
               "role": "defining"
             },
             {
-              "ref": "Gen.9.9"
+              "note": "In מֵקִים אֶת בְּרִיתִי אִתְּכֶם, the covenant is what God establishes. אִתְּכֶם names the people with whom he establishes it. וְאֶת זַרְעֲכֶם אַחֲרֵיכֶם adds their descendants as covenant partners.",
+              "ref": "Gen.9.9",
+              "role": "defining"
             },
             {
-              "note": "\"Show kindness and compassion, each אֶת־אָחִיו, with his brother.\"",
+              "note": "Each is to show kindness and compassion in dealing with his brother.",
               "ref": "Zec.7.9",
               "role": "defining"
             },
             {
-              "note": "\"the waters of Meribah, where the sons of Israel strove אֶת־יְהוָה, with Yahweh\".",
+              "note": "Israel strove with Yahweh at Meribah.",
               "ref": "Num.20.13"
             },
             {
-              "note": "\"They made war אֶת־בֶּרַע, with Bera king of Sodom.\"",
+              "note": "The kings made war with Bera.",
               "ref": "Gen.14.2"
             },
             {
-              "note": "\"We have cut a covenant אֶת־מָוֶת, with death, and with the grave (וְעִם־שְׁאוֹל) we have made a vision\": אֵת and עִם in parallel.",
+              "note": "A covenant אֶת־מָוֶת, “with death,” stands parallel to an agreement וְעִם־שְׁאוֹל, “with Sheol.”",
               "ref": "Isa.28.15"
             }
           ],
-          "gloss": "with (dealings between two): speak with, covenant with, deal with, fight with"
+          "gloss": "with (dealings between two): speak with, covenant with, deal with, fight with",
+          "id": "with-dealings-between-two"
         },
         {
-          "id": "beside-near-a-place",
           "definition": "Next to a place.",
           "evidence": [
             {
-              "note": "\"the carved images אֲשֶׁר אֶת־הַגִּלְגָּל, which were by Gilgal\".",
+              "note": "The carved images were beside Gilgal.",
               "ref": "Jdg.3.19",
               "role": "defining"
             },
             {
-              "note": "\"Ezion-geber, which is אֶת־אֵלוֹת, beside Eloth, on the shore of the Red Sea\".",
+              "note": "Ezion-geber is described as beside Eloth.",
               "ref": "1Ki.9.26",
               "role": "defining"
             }
           ],
-          "gloss": "beside, near (a place)"
+          "gloss": "beside, near (a place)",
+          "id": "beside-near-a-place"
         },
         {
-          "id": "with-in-the-keeping",
-          "definition": "In someone's possession or keeping; of a word, what a prophet has from Yahweh.",
+          "definition": "In someone’s possession or keeping, including a word entrusted to a prophet.",
           "evidence": [
             {
-              "note": "\"the garments of Esau … which were אִתָּהּ בַּבָּיִת, with her in the house\".",
+              "note": "Esau’s garments were with Rebekah in the house.",
               "ref": "Gen.27.15",
               "role": "defining"
             },
             {
-              "note": "\"The wages of a hired man shall not stay the night אִתְּךָ, with you, until morning.\"",
+              "note": "A hired worker’s wages must not remain with the employer overnight.",
               "ref": "Lev.19.13",
               "role": "defining"
             },
             {
-              "note": "\"The prophet who has a dream אִתּוֹ, let him tell a dream; and he who has my word אִתּוֹ, let him speak my word in truth. What has the straw אֶת־הַבָּר, with the wheat?\"",
+              "note": "The prophet who has a dream or Yahweh’s word with him is to speak it faithfully. The verse also asks what straw has to do with wheat.",
               "ref": "Jer.23.28"
             },
             {
-              "note": "\"The word of Yahweh is אוֹתוֹ, with him.\"",
+              "note": "Yahweh’s word is with the prophet.",
               "ref": "2Ki.3.12"
             }
           ],
-          "gloss": "with, in the keeping of"
+          "gloss": "with, in the keeping of",
+          "id": "with-in-the-keeping"
         },
         {
-          "id": "from-beside-from-the",
-          "definition": "With מִן, \"from with\": from someone's presence or hand, of what is sent away, taken, given or caused by them.",
+          "definition": "With מִן, marks the person from whose presence or hand something goes, comes, is taken or is given.",
           "evidence": [
             {
-              "note": "\"He sent the dove מֵאִתּוֹ, from him.\"",
+              "note": "Noah sent the dove away from him.",
               "ref": "Gen.8.8",
               "role": "defining"
             },
             {
-              "note": "\"Take my contribution מֵאֵת כָּל־אִישׁ, from every man whose heart moves him.\"",
+              "note": "The contribution is received from everyone whose heart moves him.",
               "ref": "Exo.25.2",
               "role": "defining"
             },
             {
-              "note": "\"The priests had a portion מֵאֵת פַּרְעֹה, from Pharaoh.\"",
+              "note": "The priests received a portion from Pharaoh.",
               "ref": "Gen.47.22"
             },
             {
               "ref": "Lev.7.34"
             },
             {
-              "note": "מֵאֵת יְהוָה הָיְתָה זֹּאת: \"This is from Yahweh; it is wonderful in our eyes\"; quoted in Mat 21:42 and Mrk 12:11 as παρὰ κυρίου, of the rejected stone made the head of the corner.",
+              "note": "“This came from Yahweh,” quoted in Mat 21:42 and Mrk 12:11.",
               "ref": "Psa.118.23",
               "role": "defining"
             },
@@ -1198,45 +959,50 @@
               "ref": "Mat.21.42"
             },
             {
-              "note": "\"for this thing is מֵאִתִּי, from me\".",
+              "note": "“This thing is from me.”",
               "ref": "1Ki.12.24"
             },
             {
-              "note": "\"From you (מֵאִתְּךָ) is my praise in the great assembly.\"",
+              "note": "The psalmist’s praise comes from the one addressed.",
               "ref": "Psa.22.26"
             }
           ],
-          "gloss": "(מֵאֵת) from beside, from (the hand of)"
+          "gloss": "(מֵאֵת) from beside, from (the hand of)",
+          "id": "from-beside-from-the"
         }
       ],
-      "summary": "About 900 times. A separate word from the object marker, though spelled the same: with suffixes it is אִתִּי, אִתּוֹ, אִתָּנוּ, where the object marker is אֹתִי, אֹתוֹ. In some later books the suffixed forms are also written אוֹת־ (2Ki 1:15; Jer 12:1; Isa 59:21), so the two can only be told apart there by the sense. It alternates with עִם \"with\" in the same verse (Jdg 7:4; 2Sa 2:6), and its senses match Phoenician ʾt and Akkadian itti, even to \"from\" with verbs of taking; no verb or noun in scripture is its root.",
+      "summary": "About 900 occurrences. The suffixed forms include אִתִּי, אִתּוֹ and אִתָּנוּ. These distinguish the preposition from the object marker אֹתִי, אֹתוֹ. Some later texts write the preposition אוֹת־, so context decides the reading (2Ki 1:15, 3:12, Jer 12:1, Isa 59:21). It alternates with עִם in Jdg 7:4 and 2Sa 2:6. Phoenician ʾt and Akkadian itti share its uses, including a source with verbs of taking or receiving. Scripture supplies no verbal or nominal root for this preposition.",
       "usage": {
         "parallels": [
           {
             "evidence": [
               {
-                "note": "\"shall go אִתָּךְ … shall not go עִמָּךְ\".",
+                "note": "“He shall go with you” uses אִתָּךְ and “he shall not go with you” uses עִמָּךְ.",
                 "ref": "Jdg.7.4",
                 "role": "defining"
               },
               {
-                "note": "\"May Yahweh show עִמָּכֶם kindness … and I too will do אִתְּכֶם this good.\"",
+                "note": "Kindness עִמָּכֶם is paired with doing good אִתְּכֶם.",
                 "ref": "2Sa.2.6"
               },
               {
-                "note": "\"The spirit of Yahweh turned מֵעִם שָׁאוּל, from Saul, and an evil spirit מֵאֵת יְהוָה, from Yahweh, troubled him.\"",
+                "note": "The parallel concerning the spirit is in 1Sa 16:14.",
+                "ref": "2Sa.16.14"
+              },
+              {
+                "note": "The spirit departs מֵעִם Saul and a troubling spirit comes מֵאֵת Yahweh.",
                 "ref": "1Sa.16.14"
               },
               {
                 "ref": "Isa.28.15"
               },
               {
-                "note": "After לְכָה אִתָּנוּ (Num 10:29), Moses says כִּי־תֵלֵךְ עִמָּנוּ.",
+                "note": "After “come with us” in Num 10:29, Moses uses עִמָּנוּ of going with Israel.",
                 "ref": "Num.10.32"
               }
             ],
             "lemma": "עִם",
-            "note": "The other word for \"with\", used in the same verse for the same relation."
+            "note": "Both prepositions express the same relationship in these passages."
           }
         ],
         "phrases": [
@@ -1269,7 +1035,7 @@
                 "ref": "Gen.17.19"
               },
               {
-                "note": "\"I have cut a covenant אִתְּךָ, with you, and with Israel.\"",
+                "note": "“I have cut a covenant with you and with Israel.”",
                 "ref": "Exo.34.27"
               }
             ],
@@ -1286,11 +1052,11 @@
                 "ref": "Num.3.1"
               },
               {
-                "note": "\"There I will meet with you and speak אִתְּךָ from above the covering.\"",
+                "note": "Yahweh speaks with Moses from above the covering.",
                 "ref": "Exo.25.22"
               },
               {
-                "note": "\"He spoke אִתָּם קָשׁוֹת, hard things with them.\"",
+                "note": "Joseph spoke harshly with his brothers.",
                 "ref": "Gen.42.7"
               }
             ],
@@ -1323,7 +1089,7 @@
                 "ref": "Gen.39.21"
               },
               {
-                "note": "\"Yahweh was אֶת־יְהוֹשֻׁעַ, with Joshua, and his fame was in all the land.\"",
+                "note": "Yahweh was with Joshua, and his fame spread.",
                 "ref": "Jos.6.27"
               }
             ],
@@ -1337,7 +1103,7 @@
                 "role": "defining"
               },
               {
-                "note": "\"I am too small for all the kindnesses and all the truth which you have done אֶת־עַבְדֶּךָ, with your servant.\"",
+                "note": "Jacob recalls the kindness and truth shown to him.",
                 "ref": "Gen.32.11"
               }
             ],
@@ -1363,22 +1129,22 @@
       "root": "ית",
       "senses": [
         {
-          "id": "them-object-pronoun",
-          "definition": "Carries a suffix as an object pronoun, pointing back to the men just named.",
+          "definition": "Carries an object suffix referring back to the men just named.",
           "evidence": [
             {
-              "note": "\"There are certain Jews whom you have appointed (דִּי־מַנִּיתָ יָתְהוֹן) over the affairs of the province of Babylon\": literally \"whom you appointed them\".",
+              "note": "דִּי־מַנִּיתָ יָתְהוֹן resumes the Jewish men in “whom you appointed,” literally “whom you appointed them.”",
               "ref": "Dan.3.12",
               "role": "defining"
             }
           ],
           "gloss": "them (object pronoun)",
+          "id": "them-object-pronoun",
           "kin": [
             "object-pronoun"
           ]
         }
       ],
-      "summary": "Biblical Aramaic, once, with a suffix, where Hebrew would have אֹתָם. Elsewhere scripture's Aramaic marks the object with לְ. The Targums use it as Hebrew uses אֵת, and Syriac's ܝܬ, the same word, is also a noun \"being, self\"."
+      "summary": "Biblical Aramaic uses this form once, with a suffix, where Hebrew would have אֹתָם. Elsewhere Biblical Aramaic uses לְ to mark an object. The Targums use יַת as Hebrew uses אֵת. Syriac ܝܬ also denotes being or self."
     }
   ]
 }
