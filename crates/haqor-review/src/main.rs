@@ -68,6 +68,11 @@ enum Action {
     },
     /// Dispatch fresh agents up to a shared concurrency limit.
     Run {
+        /// Only dispatch jobs in this book (and chapter), as for a pilot.
+        #[arg(long,value_parser=clap::value_parser!(u8).range(1..=66))]
+        book: Option<u8>,
+        #[arg(long, requires = "book")]
+        chapter: Option<u8>,
         #[arg(long, default_value_t = 4)]
         max_agents: usize,
         /// Stop automatically retrying a job after this many attempts.
@@ -449,6 +454,8 @@ fn main() -> Result<()> {
             inventory::seed(&mut db, &data, &sources, low, high)
         }
         Action::Run {
+            book,
+            chapter,
             max_agents,
             max_attempts,
             worker,
@@ -491,6 +498,11 @@ fn main() -> Result<()> {
             catalog.people.as_ref().unwrap().refresh(&mut db)?;
             articles::refresh_dependencies(&mut db, &catalog.revisions)?;
             jobs::backfill_carry_keys(&mut db)?;
+            if let Some(book) = book {
+                let low = (i64::from(book) << 16) + (i64::from(chapter.unwrap_or(0)) << 8);
+                let high = (i64::from(book) << 16) + (i64::from(chapter.unwrap_or(255)) << 8) + 255;
+                db.execute("INSERT INTO review_scope VALUES(?,?)", params![low, high])?;
+            }
             schedule(
                 &mut db,
                 &mut catalog,

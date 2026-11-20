@@ -11,6 +11,7 @@ use unicode_normalization::UnicodeNormalization;
 
 pub const SCHEMA: &str = "
 CREATE TEMP TABLE IF NOT EXISTS review_inflight(source TEXT,ref INTEGER,pos INTEGER,PRIMARY KEY(source,ref,pos)) WITHOUT ROWID;
+CREATE TEMP TABLE IF NOT EXISTS review_scope(low INTEGER NOT NULL,high INTEGER NOT NULL);
 CREATE TABLE IF NOT EXISTS verse(source TEXT, ref INTEGER, packet TEXT NOT NULL, PRIMARY KEY(source,ref)) WITHOUT ROWID;
 CREATE TABLE IF NOT EXISTS job(source TEXT, ref INTEGER, pos INTEGER, state TEXT NOT NULL,
  attempts INTEGER NOT NULL DEFAULT 0, result TEXT, feedback TEXT, error TEXT, usage TEXT,
@@ -141,7 +142,9 @@ pub fn next(db: &Connection) -> Result<Option<Job>> {
     // Ready verse reviews get the first free slot, across both kinds of worker.
     for predicate in ["pos=-1", "pos>=0"] {
         let sql = format!(
-            "SELECT source,ref,pos FROM job WHERE state='ready' AND {predicate} AND NOT EXISTS(SELECT 1 FROM review_inflight AS i WHERE i.source=job.source AND i.ref=job.ref AND i.pos=job.pos) ORDER BY ref,source,pos LIMIT 1"
+            "SELECT source,ref,pos FROM job WHERE state='ready' AND {predicate}
+             AND NOT EXISTS(SELECT 1 FROM review_scope WHERE job.ref NOT BETWEEN low AND high)
+             AND NOT EXISTS(SELECT 1 FROM review_inflight AS i WHERE i.source=job.source AND i.ref=job.ref AND i.pos=job.pos) ORDER BY ref,source,pos LIMIT 1"
         );
         if let Some(job) = db
             .prepare_cached(&sql)?
