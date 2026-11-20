@@ -1,6 +1,43 @@
 {
   "book": 1,
   "chapter": 1,
+  "review": {
+    "entities": [
+      {
+        "evidence": "אֱלֹהִים is the subject of the singular verb וַיֹּאמֶר. The speaker who commands light into being is the Creator introduced in Genesis 1:1, matching the source tag.",
+        "key": "LORD@Gen.1.1",
+        "position": 1
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "then said",
+        "position": 0
+      },
+      {
+        "gloss": "God",
+        "position": 1
+      },
+      {
+        "gloss": "let there be",
+        "position": 2
+      },
+      {
+        "gloss": "light",
+        "position": 3
+      },
+      {
+        "gloss": "and there was",
+        "position": 4
+      },
+      {
+        "gloss": "light",
+        "position": 5
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[Then|0] [God|1] [said|0], “[Let there be|2] [light|3].” [And there was|4] [light|5]."
+  },
   "source": "ot",
   "verse": 3,
   "words": [
