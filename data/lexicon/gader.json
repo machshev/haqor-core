@@ -1,1 +1,85 @@
-{"id":"gader","root":"גדר","status":"draft","updated":"2026-11-20","gloss":"wall","summary":"גדר denotes a wall or fence.","words":[{"lemma":"גָּדֵר","pos":"noun","gloss":"wall","bdb":["c.at.ab"],"senses":[{"gloss":"wall","definition":"A wall or boundary fence.","evidence":[{"ref":"Psa.62.4","role":"defining"}]}]}],"doctrine":[],"note":"Drafted for Psalm 62 coverage."}
+{
+  "id": "gader",
+  "root": "גדר",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "gloss": "wall",
+  "summary": "גדר denotes a wall or fence.",
+  "words": [
+    {
+      "lemma": "גָּדֵר",
+      "pos": "noun",
+      "gloss": "wall",
+      "bdb": [
+        "c.at.ab"
+      ],
+      "senses": [
+        {
+          "gloss": "wall",
+          "definition": "A wall or boundary fence.",
+          "evidence": [
+            {
+              "ref": "Psa.62.4",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "גְּדֵרָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "wall, pen",
+      "bdb": [
+        "c.at.ad"
+      ],
+      "senses": [
+        {
+          "gloss": "wall, pen",
+          "definition": "A wall or enclosure for animals.",
+          "evidence": [
+            {
+              "ref": "Psa.89.41",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.62.4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "גָּדַר",
+      "pos": "verb",
+      "gloss": "wall up, build",
+      "bdb": [
+        "c.at.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "wall up",
+          "senses": [
+            {
+              "gloss": "wall up",
+              "definition": "Build or repair a wall.",
+              "evidence": [
+                {
+                  "ref": "Ezk.22.30",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Amo.9.11"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "Drafted for Psalm 62 coverage."
+}

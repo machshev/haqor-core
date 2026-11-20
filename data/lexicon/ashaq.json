@@ -1,1 +1,72 @@
-{"id":"ashaq","root":"עשק","status":"draft","updated":"2026-11-20","gloss":"oppress","summary":"עשק describes oppression and extortion.","words":[{"lemma":"עֹשֶׁק","pos":"noun","gloss":"oppression","bdb":["p.gd.ab"],"senses":[{"gloss":"oppression","definition":"Unjust gain or oppression.","evidence":[{"ref":"Psa.62.11","role":"defining"}]}]}],"doctrine":[],"note":"Drafted for Psalm 62 coverage."}
+{
+  "id": "ashaq",
+  "root": "עשק",
+  "status": "draft",
+  "updated": "2026-11-19",
+  "gloss": "oppress",
+  "summary": "עשק describes oppression and extortion.",
+  "words": [
+    {
+      "lemma": "עֹשֶׁק",
+      "pos": "noun",
+      "gloss": "oppression",
+      "bdb": [
+        "p.gd.ab"
+      ],
+      "senses": [
+        {
+          "gloss": "oppression",
+          "definition": "Unjust gain or oppression.",
+          "evidence": [
+            {
+              "ref": "Psa.62.11",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "עָשׁוּקִים",
+      "pos": "noun",
+      "gloss": "oppressed",
+      "bdb": [
+        "p.gd.af"
+      ],
+      "senses": [
+        {
+          "gloss": "oppressed",
+          "definition": "Those suffering oppression.",
+          "evidence": [
+            {
+              "ref": "Psa.103.6",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַעֲשַׁקָּה",
+      "pos": "noun",
+      "gloss": "oppression",
+      "bdb": [
+        "p.gd.ag"
+      ],
+      "senses": [
+        {
+          "gloss": "oppression",
+          "definition": "An oppressive act.",
+          "evidence": [
+            {
+              "ref": "Isa.33.15",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "Drafted for Psalm 62 coverage."
+}
