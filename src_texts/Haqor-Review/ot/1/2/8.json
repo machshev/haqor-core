@@ -1,6 +1,77 @@
 {
   "book": 1,
   "chapter": 2,
+  "review": {
+    "entities": [
+      {
+        "evidence": "יַהְוֶה names the God who planted the garden.",
+        "key": "LORD@Gen.1.1",
+        "position": 1
+      },
+      {
+        "evidence": "אֱלֹהִים stands in apposition to יַהְוֶה and designates the same God.",
+        "key": "LORD@Gen.1.1",
+        "position": 2
+      },
+      {
+        "evidence": "בְּעֵדֶן identifies Eden as the place where Yahweh God planted the garden for the man he had formed.",
+        "key": "Eden@Gen.2.8",
+        "position": 4
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "and he planted",
+        "position": 0
+      },
+      {
+        "gloss": "Yahweh",
+        "position": 1
+      },
+      {
+        "gloss": "God",
+        "position": 2
+      },
+      {
+        "gloss": "a garden",
+        "position": 3
+      },
+      {
+        "gloss": "in Eden",
+        "position": 4
+      },
+      {
+        "gloss": "in the east",
+        "position": 5
+      },
+      {
+        "gloss": "and he placed",
+        "position": 6
+      },
+      {
+        "gloss": "there",
+        "position": 7
+      },
+      {
+        "gloss": "(untranslated)",
+        "position": 8
+      },
+      {
+        "gloss": "the man",
+        "position": 9
+      },
+      {
+        "gloss": "whom",
+        "position": 10
+      },
+      {
+        "gloss": "he had formed",
+        "position": 11
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[Now|0] [Yahweh|1] [God|2] [had planted|0] [a garden|3] [in Eden|4], [in the east|5], [and|6] [there|7] [he put|6] [the man|9,8] [whom|10] [he had formed|11]."
+  },
   "source": "ot",
   "verse": 8,
   "words": [
