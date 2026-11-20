@@ -1,6 +1,77 @@
 {
   "book": 1,
   "chapter": 5,
+  "review": {
+    "entities": [
+      {
+        "evidence": "The genealogy names Adam as its ancestor and identifies him as Seth’s father in Genesis 5:3.",
+        "key": "Adam@Gen.2.19",
+        "position": 3
+      },
+      {
+        "evidence": "אֱלֹהִים names the God who created humankind, recalling Genesis 1:27.",
+        "key": "LORD@Gen.1.1",
+        "position": 6
+      },
+      {
+        "evidence": "In “the likeness of God,” אֱלֹהִים refers to the same creator named earlier in the verse.",
+        "key": "LORD@Gen.1.1",
+        "position": 9
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "this",
+        "position": 0
+      },
+      {
+        "gloss": "written record of",
+        "position": 1
+      },
+      {
+        "gloss": "generations of",
+        "position": 2
+      },
+      {
+        "gloss": "Adam",
+        "position": 3
+      },
+      {
+        "gloss": "on the day when",
+        "position": 4
+      },
+      {
+        "gloss": "created",
+        "position": 5
+      },
+      {
+        "gloss": "God",
+        "position": 6
+      },
+      {
+        "gloss": "humankind",
+        "position": 7
+      },
+      {
+        "gloss": "in the likeness of",
+        "position": 8
+      },
+      {
+        "gloss": "God",
+        "position": 9
+      },
+      {
+        "gloss": "he made",
+        "position": 10
+      },
+      {
+        "gloss": "him",
+        "position": 11
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[This|0] [{is}|0] [the written account of|1] [the generations of|2] [Adam|3]: [On the day|4] [God|6] [created|5] [man{kind}|7], [he made|10] [him|11] [in the likeness of|8] [God|9]."
+  },
   "source": "ot",
   "verse": 1,
   "words": [
