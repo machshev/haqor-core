@@ -49,6 +49,33 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article_id": "l2",
+            "base": "8e86069e55ffa65d7620a9c7fedb77c98e458e470b606101cfeff45aaa180e0d",
+            "change": "Add Genesis 9:11 as evidence for the existing Hebrew sense “not” at word index 0. The article already cites this verse for the phrase לֹא … עוֹד.",
+            "definition": "לֹא negates a statement, including a statement about what will happen.",
+            "evidence": "In Genesis 9:11, לֹא precedes יִכָּרֵת in the promise that floodwaters will never again cut off all flesh."
+          },
+          "sense": "not",
+          "word": 0
+        },
+        "evidence": "In וְלֹא יִכָּרֵת כָּל בָּשָׂר עוֹד, לֹא negates the cutting off of all flesh by floodwaters. עוֹד supplies “again,” giving the promise “and never again will all flesh be cut off by the waters of the flood.”",
+        "gloss": "and … will not",
+        "language": "he",
+        "lemma": "לֹא",
+        "morph": "HC/Tn",
+        "morphology": "The prefixed conjunction וְ joins the covenant promise to the preceding clause. The negative particle לֹא negates יִכָּרֵת, “will be cut off.”",
+        "qualifier": "",
+        "root": "לא",
+        "segments": "וְ/לֹא",
+        "sense": "Denies that a future event will occur."
+      },
+      "position": 4,
+      "surface": "וְלֹא"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "krt",
           "sense": "perish",
           "word": 0

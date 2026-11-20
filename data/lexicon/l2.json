@@ -413,6 +413,11 @@
               "note": "In וְלֹא מָצְאָה הַיּוֹנָה מָנוֹחַ, לֹא negates מָצְאָה. The dove did not find a resting place for its foot and returned to the ark.",
               "ref": "Gen.8.9",
               "role": "example"
+            },
+            {
+              "note": "In וְלֹא יִכָּרֵת כָּל בָּשָׂר עוֹד, לֹא negates the future event expressed by יִכָּרֵת. God promises that all flesh will never again be cut off by floodwaters.",
+              "ref": "Gen.9.11",
+              "role": "example"
             }
           ],
           "gloss": "not (of a fact)",
@@ -575,7 +580,6 @@
           "id": "is-it-not"
         },
         {
-          "id": "surely-in-an-oath",
           "definition": "In an oath, אִם־לֹא, \"if not…\", leaves the curse unspoken and so binds the swearer to do the thing: \"surely\".",
           "evidence": [
             {
@@ -588,7 +592,8 @@
               "ref": "Gen.24.38"
             }
           ],
-          "gloss": "surely (in an oath, אִם־לֹא)"
+          "gloss": "surely (in an oath, אִם־לֹא)",
+          "id": "surely-in-an-oath"
         }
       ],
       "summary": "Over five thousand times in the Hebrew Bible, also spelled לוֹא. It negates a statement or a lasting command; the immediate \"do not!\" of a plea or warning is אַל, a different word (Num 10:31; Deu 31:6 has both). Sounding the same as לוֹ \"to him\", it is written where לוֹ is read some fifteen times (Psa 100:3, \"and we are his\", written \"and not we\"; Isa 9:2; 63:9; Job 13:15), and לוּ is read for it twice (2Sa 18:12; 19:7).",
@@ -900,7 +905,6 @@
           "id": "if-unreal"
         },
         {
-          "id": "if-suppose",
           "definition": "A condition put as a possibility, open or feared: \"suppose…\", \"even if…\".",
           "evidence": [
             {
@@ -925,7 +929,8 @@
               "ref": "2Sa.18.12"
             }
           ],
-          "gloss": "if, suppose"
+          "gloss": "if, suppose",
+          "id": "if-suppose"
         }
       ],
       "summary": "A particle of wish and condition, about twenty times, also spelled לוּא. Its own cognates (Akkadian lū \"may; if\", Arabic لَوْ \"if; would that\") are words distinct from those languages' negative lā, so it is not formed from לֹא; it is kept in this entry because the task joined them and because לוּלֵא is the two together. Where it is \"if\", the condition is usually one that did not happen, and the main clause says what would then have followed.",
@@ -1052,7 +1057,7 @@
           ]
         }
       ],
-      "summary": "לוּ \"if\" and לֹא \"not\" written as one word (also לוּלֵי), fourteen times: what would have happened, had not someone or something stepped in. Arabic لَوْلَا and Aramaic and Syriac ʾellū lā are built the same way from the same two particles.",
+      "summary": "לוּ \"if\" and לֹא \"not\" written as one word (also לוּלֵי), fourteen times: what would have happened, had not someone or something stepped in. Arabic לَوْلَا and Aramaic and Syriac ʾellū lā are built the same way from the same two particles.",
       "usage": {
         "phrases": [
           {
@@ -1121,7 +1126,6 @@
       "pos": "particle",
       "senses": [
         {
-          "id": "not-2",
           "definition": "Denies a fact or forbids, as Hebrew לֹא.",
           "evidence": [
             {
@@ -1151,10 +1155,10 @@
               "ref": "Dan.2.10"
             }
           ],
-          "gloss": "not"
+          "gloss": "not",
+          "id": "not-2"
         },
         {
-          "id": "is-it-not-2",
           "definition": "With the question ה־, puts forward what the hearer must grant, as Hebrew הֲלֹא.",
           "evidence": [
             {
@@ -1170,7 +1174,8 @@
               "ref": "Dan.6.13"
             }
           ],
-          "gloss": "is it not? (הֲלָא)"
+          "gloss": "is it not? (הֲלָא)",
+          "id": "is-it-not-2"
         },
         {
           "definition": "With דִּי, \"that not\", before a noun or verb: \"without\".",
@@ -1190,7 +1195,6 @@
           "id": "arc-without"
         },
         {
-          "id": "as-nothing",
           "definition": "Standing for a noun, \"nothing\".",
           "evidence": [
             {
@@ -1200,6 +1204,7 @@
             }
           ],
           "gloss": "as nothing (כְּלָה)",
+          "id": "as-nothing",
           "kin": [
             "no-thing"
           ]
@@ -1262,7 +1267,6 @@
       "pos": "particle",
       "senses": [
         {
-          "id": "not-no",
           "definition": "Negates a statement or command, and answers \"no\".",
           "evidence": [
             {
@@ -1288,7 +1292,8 @@
               "ref": "Heb.13.5"
             }
           ],
-          "gloss": "not; no"
+          "gloss": "not; no",
+          "id": "not-no"
         }
       ],
       "summary": "The Peshitta's ܠܐ (lā), for οὐ, μή and the answering \"no\"; it renders Hosea's לֹא עַמִּי and Moses' בְּלֹא־עָם word for word."
@@ -1307,7 +1312,6 @@
       "root": "אלו",
       "senses": [
         {
-          "id": "if-it-had-been",
           "definition": "A condition contrary to fact, with what would have followed.",
           "evidence": [
             {
@@ -1321,12 +1325,12 @@
             }
           ],
           "gloss": "if (it had been so)",
+          "id": "if-it-had-been",
           "kin": [
             "if-unreal"
           ]
         },
         {
-          "id": "were-it-not-2",
           "definition": "With לָא, \"had not\", as Hebrew לוּלֵא.",
           "evidence": [
             {
@@ -1336,6 +1340,7 @@
             }
           ],
           "gloss": "were it not (אֶלּוּ לָא)",
+          "id": "were-it-not-2",
           "kin": [
             "were-it-not"
           ]
