@@ -1,0 +1,131 @@
+{
+  "id": "tsuph",
+  "root": "צופ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "food",
+    "water"
+  ],
+  "gloss": "honeycomb, float, overflow",
+  "summary": "A honeycomb supplies an image of pleasant speech. The verb describes water surging over people or an object brought to the surface.",
+  "words": [
+    {
+      "lemma": "צוּף",
+      "bdb": [
+        "r.be.ab"
+      ],
+      "pos": "noun",
+      "gloss": "honeycomb",
+      "senses": [
+        {
+          "gloss": "honeycomb",
+          "definition": "Pleasant words are likened to a comb of honey. Psalm 19 speaks of the honey that comes from combs.",
+          "evidence": [
+            {
+              "ref": "Psa.19.11",
+              "role": "defining"
+            },
+            {
+              "ref": "Pro.16.24"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "צוּף",
+      "bdb": [
+        "r.be.aa"
+      ],
+      "pos": "verb",
+      "gloss": "overflow, float",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "flow over",
+          "senses": [
+            {
+              "gloss": "flow over",
+              "definition": "The sufferer remembers water flowing over his head.",
+              "evidence": [
+                {
+                  "ref": "Lam.3.54",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "cause to overflow or float",
+          "senses": [
+            {
+              "gloss": "cause to overflow or float",
+              "definition": "Yahweh brings water over Egypt’s army. Elisha causes the lost iron to float.",
+              "evidence": [
+                {
+                  "ref": "Deu.11.4",
+                  "role": "defining"
+                },
+                {
+                  "ref": "2Ki.6.6"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "צָפָה",
+      "bdb": [
+        "r.be.ae"
+      ],
+      "pos": "noun",
+      "gloss": "outflow",
+      "senses": [
+        {
+          "gloss": "outflow",
+          "definition": "Ezekiel describes the land drinking the outflow of Pharaoh’s blood.",
+          "evidence": [
+            {
+              "ref": "Ezk.32.6",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "צוּפִי",
+      "bdb": [
+        "r.be.ad"
+      ],
+      "pos": "adjective",
+      "gloss": "Zuphite",
+      "senses": [
+        {
+          "gloss": "Zuphite",
+          "definition": "The plural form qualifies Ramathaim in the account of Elkanah’s origins. Saul later comes to the land of Zuph.",
+          "evidence": [
+            {
+              "ref": "1Sa.1.1",
+              "role": "defining"
+            },
+            {
+              "ref": "1Sa.9.5"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [],
+  "doctrine": [],
+  "note": "The honeycomb and flotation passages establish distinct uses. Their historical relationship is uncertain."
+}
