@@ -223,26 +223,20 @@
     {
       "analysis": {
         "entry": {
-          "draft": {
-            "article_id": "yd",
-            "base": "efed233daccb4bc3246eb7c810d6b3f030c6f17eccb51b9edb171a28c86faa1d",
-            "change": "Add Gen.4.11 as an example of the Hebrew hand-limb sense in yad.",
-            "definition": "The hand with which a person acts.",
-            "evidence": "In Gen.4.11 the ground receives Abel’s blood ‘from your hand’, addressing Cain."
-          },
-          "sense": "hand-limb",
+          "existing": "yd",
+          "sense": "by-the-hand-of",
           "word": 0
         },
-        "evidence": "In מִיַּד אִישׁ אָחִיו אֶדְרֹשׁ, “from the hand of” identifies the person from whom God will demand an accounting for a human life. The hand stands for the person answerable for the deed.",
+        "evidence": "In מִיַּד אִישׁ אָחִיו אֶדְרֹשׁ, God names the person from whom he will demand an accounting for a human life. This repeats the construction מִיַּד כָּל חַיָּה earlier in the verse, where the same demand applies to an animal.",
         "gloss": "from the hand of",
         "language": "he",
         "lemma": "יָד",
         "morph": "HR/Ncbsc",
-        "morphology": "The prefixed preposition מִן means “from.” Its נ assimilates to the following י, marked by the dagesh. יַד is a common noun of both genders, singular construct, followed by אִישׁ.",
+        "morphology": "The prefixed preposition מִן means “from.” Its נ assimilates to the following י, as the dagesh shows. יַד is a common noun of both genders in the singular construct, followed by אִישׁ.",
         "qualifier": "",
         "root": "יד",
         "segments": "מִ/יַּד",
-        "sense": "hand (the limb)"
+        "sense": "hand as an expression of agency, identifying the one held responsible"
       },
       "position": 11,
       "surface": "מִיַּד"
