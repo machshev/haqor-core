@@ -1,6 +1,100 @@
 {
   "book": 1,
   "chapter": 2,
+  "review": {
+    "entities": [
+      {
+        "evidence": "יַהְוֶה names Yahweh, who caused the trees to grow from the ground.",
+        "key": "LORD@Gen.1.1",
+        "position": 1
+      },
+      {
+        "evidence": "אֱלֹהִים stands in apposition to יַהְוֶה. Together they identify the single subject of וַיַּצְמַח.",
+        "key": "LORD@Gen.1.1",
+        "position": 2
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "and he made grow",
+        "position": 0
+      },
+      {
+        "gloss": "Yahweh",
+        "position": 1
+      },
+      {
+        "gloss": "God",
+        "position": 2
+      },
+      {
+        "gloss": "from",
+        "position": 3
+      },
+      {
+        "gloss": "the ground",
+        "position": 4
+      },
+      {
+        "gloss": "every",
+        "position": 5
+      },
+      {
+        "gloss": "tree",
+        "position": 6
+      },
+      {
+        "gloss": "pleasant",
+        "position": 7
+      },
+      {
+        "gloss": "to the sight",
+        "position": 8
+      },
+      {
+        "gloss": "and good",
+        "position": 9
+      },
+      {
+        "gloss": "for food",
+        "position": 10
+      },
+      {
+        "gloss": "and the tree of",
+        "position": 11
+      },
+      {
+        "gloss": "life",
+        "position": 12
+      },
+      {
+        "gloss": "in the middle of",
+        "position": 13
+      },
+      {
+        "gloss": "the garden",
+        "position": 14
+      },
+      {
+        "gloss": "and the tree of",
+        "position": 15
+      },
+      {
+        "gloss": "the knowledge of",
+        "position": 16
+      },
+      {
+        "gloss": "good",
+        "position": 17
+      },
+      {
+        "gloss": "and evil",
+        "position": 18
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[And|0] [Yahweh|1] [God|2] [had made to grow|0] [from|3] [the ground|4] [every|5] [tree|6] [{that}|7] [is pleasant|7] [to the sight|8] [and good|9] [for food|10], [and the tree of|11] [life|12] [in the middle of|13] [the garden|14], [and the tree of|15] [the knowledge of|16] [good|17] [and evil|18]."
+  },
   "source": "ot",
   "verse": 9,
   "words": [
