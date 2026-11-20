@@ -1,6 +1,47 @@
 {
   "book": 1,
   "chapter": 6,
+  "review": {
+    "entities": [
+      {
+        "evidence": "הָאֱלֹהִים refers to the God in whose sight the earth was corrupt. The source tags this occurrence as LORD@Gen.1.1.",
+        "key": "LORD@Gen.1.1",
+        "position": 3
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "and it became corrupt",
+        "position": 0
+      },
+      {
+        "gloss": "the earth",
+        "position": 1
+      },
+      {
+        "gloss": "in the sight of",
+        "position": 2
+      },
+      {
+        "gloss": "God",
+        "position": 3
+      },
+      {
+        "gloss": "and it was filled",
+        "position": 4
+      },
+      {
+        "gloss": "the earth",
+        "position": 5
+      },
+      {
+        "gloss": "violence",
+        "position": 6
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[Now|0] [the earth|1] [was corrupt|0] [before|2] [God|3], [and|4] [the earth|5] [was filled|4] {with} [violence|6]."
+  },
   "source": "ot",
   "verse": 11,
   "words": [
