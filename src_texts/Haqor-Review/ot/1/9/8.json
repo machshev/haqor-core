@@ -95,6 +95,33 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article_id": "2lh",
+            "base": "84119deda156c77350d0003ba00ebf14817a39d3f66915fa33a75264c98af78a",
+            "change": "Add Gen.9.8 as evidence for the existing addressee sense of אֶל at word index 0.",
+            "definition": "With a verb of speaking, אֶל introduces the addressee.",
+            "evidence": "In Gen.9.8, וְאֶל בָּנָיו adds Noah’s sons to the hearers already introduced by אֶל נֹחַ."
+          },
+          "sense": "to-a-person-speaking",
+          "word": 0
+        },
+        "evidence": "After וַיֹּאמֶר אֱלֹהִים, “God said,” the parallel phrases אֶל נֹחַ וְאֶל בָּנָיו name the hearers, “to Noah and to his sons.” The repeated אֶל introduces the sons as fellow recipients of the same speech.",
+        "gloss": "and to",
+        "language": "he",
+        "lemma": "אֶל",
+        "morph": "HC/R",
+        "morphology": "The conjunction וְ joins two prepositional phrases. The preposition אֶל takes בָּנָיו, “his sons,” as its object.",
+        "qualifier": "",
+        "root": "אלה",
+        "segments": "וְ/אֶל",
+        "sense": "Marks the person or people addressed."
+      },
+      "position": 4,
+      "surface": "וְאֶל"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "2mr",
           "word": 0
         },

@@ -571,7 +571,6 @@
       "pos": "preposition",
       "senses": [
         {
-          "id": "to-toward-a-person",
           "definition": "Marks the person or place toward which someone or something moves.",
           "evidence": [
             {
@@ -598,10 +597,10 @@
               "ref": "Ecc.3.20"
             }
           ],
-          "gloss": "to, toward (a person or place)"
+          "gloss": "to, toward (a person or place)",
+          "id": "to-toward-a-person"
         },
         {
-          "id": "to-a-person-speaking",
           "definition": "Marks the one spoken to, sent to, or brought something.",
           "evidence": [
             {
@@ -634,12 +633,17 @@
               "note": "In וְאָסַפְתָּ אֵלֶיךָ, “you shall gather it to yourself,” Noah gathers the food and is himself the person to whom it is gathered.",
               "ref": "Gen.6.21",
               "role": "example"
+            },
+            {
+              "note": "God speaks אֶל נֹחַ וְאֶל בָּנָיו, “to Noah and to his sons.” The repeated אֶל introduces the sons as fellow addressees.",
+              "ref": "Gen.9.8",
+              "role": "defining"
             }
           ],
-          "gloss": "to (a person: speaking, sending, bringing)"
+          "gloss": "to (a person: speaking, sending, bringing)",
+          "id": "to-a-person-speaking"
         },
         {
-          "id": "toward-turning-looking",
           "definition": "Marks the person or thing toward which someone turns or directs attention, including one looked to for help or worship.",
           "evidence": [
             {
@@ -675,10 +679,10 @@
               "ref": "Lev.19.4"
             }
           ],
-          "gloss": "toward (turning, looking)"
+          "gloss": "toward (turning, looking)",
+          "id": "toward-turning-looking"
         },
         {
-          "id": "toward-of-desire",
           "definition": "Marks the person toward whom a desire is directed.",
           "evidence": [
             {
@@ -687,10 +691,10 @@
               "role": "defining"
             }
           ],
-          "gloss": "toward (of desire)"
+          "gloss": "toward (of desire)",
+          "id": "toward-of-desire"
         },
         {
-          "id": "into",
           "definition": "Movement into an enclosed place or the midst of something.",
           "evidence": [
             {
@@ -707,10 +711,10 @@
               "ref": "Lev.23.10"
             }
           ],
-          "gloss": "into"
+          "gloss": "into",
+          "id": "into"
         },
         {
-          "id": "against",
           "definition": "Movement toward someone in hostility.",
           "evidence": [
             {
@@ -727,10 +731,10 @@
               "ref": "Nam.2.14"
             }
           ],
-          "gloss": "against"
+          "gloss": "against",
+          "id": "against"
         },
         {
-          "id": "at-by",
           "definition": "Where one arrives and stays: at or beside a place.",
           "evidence": [
             {
@@ -748,10 +752,10 @@
               "ref": "1Sa.20.24"
             }
           ],
-          "gloss": "at, by"
+          "gloss": "at, by",
+          "id": "at-by"
         },
         {
-          "id": "concerning-about",
           "definition": "The matter spoken or heard about.",
           "evidence": [
             {
@@ -765,10 +769,10 @@
               "role": "defining"
             }
           ],
-          "gloss": "concerning, about"
+          "gloss": "concerning, about",
+          "id": "concerning-about"
         },
         {
-          "id": "in-addition-to",
           "definition": "One thing added to another.",
           "evidence": [
             {
@@ -777,7 +781,8 @@
               "role": "defining"
             }
           ],
-          "gloss": "in addition to"
+          "gloss": "in addition to",
+          "id": "in-addition-to"
         }
       ],
       "summary": "The commonest Hebrew word of direction: movement or speech toward a place or person. With suffixes it is built on a longer base ending in y (אֵלַי, אֵלָיו, אֲלֵיהֶם), and poetry keeps the long form אֱלֵי (Job 3:22; 5:26), as עַל has עָלַי and עֲלֵי from עלה and עַד has עֲדֵי; Arabic إِلَى “to” does the same (إِلَيْكَ as عَلَيْكَ), and Arabic grammar files it under the root ʾlw with عَلَى under ʿlw. So it is taken as a word of this spelling, from a third-weak root. But no verb or noun of the root meaning “go toward” is found, in scripture or in the cognates, for it to have grown from, as עַל grew from going up: the tie to the root is in its form only, and its sense has no known link to the root's other words.",
@@ -973,7 +978,6 @@
       "pos": "noun",
       "senses": [
         {
-          "id": "the-mighty-one-god",
           "definition": "Yahweh, the Mighty One who creates and addresses his people, “mighty one of the mighty ones”; although the noun’s form is plural, its grammar is singular in this use.",
           "evidence": [
             {
@@ -992,10 +996,10 @@
               "role": "defining"
             }
           ],
-          "gloss": "the Mighty One, God"
+          "gloss": "the Mighty One, God",
+          "id": "the-mighty-one-god"
         },
         {
-          "id": "gods-mighty-ones-worshipped",
           "definition": "Beings regarded or worshipped as mighty ones by those who serve them.",
           "evidence": [
             {
@@ -1009,10 +1013,10 @@
               "role": "defining"
             }
           ],
-          "gloss": "gods: mighty ones worshipped"
+          "gloss": "gods: mighty ones worshipped",
+          "id": "gods-mighty-ones-worshipped"
         },
         {
-          "id": "those-to-whom-god",
           "definition": "Men addressed as אֱלֹהִים and sons of the Most High, set to judge, who will nevertheless die like men. Jesus, quoting the Psalm, says it called them gods because God's word came to them.",
           "evidence": [
             {
@@ -1036,10 +1040,10 @@
               "role": "defining"
             }
           ],
-          "gloss": "those to whom God's word came: judges"
+          "gloss": "those to whom God's word came: judges",
+          "id": "those-to-whom-god"
         },
         {
-          "id": "angels",
           "definition": "The beings a little above humanity. Hebrews, quoting the Psalm, reads them as angels.",
           "evidence": [
             {
@@ -1053,10 +1057,10 @@
               "role": "defining"
             }
           ],
-          "gloss": "angels"
+          "gloss": "angels",
+          "id": "angels"
         },
         {
-          "id": "one-acting-in-god",
           "definition": "A title given to a person in a representative relation, without making that person the God of Israel.",
           "evidence": [
             {
@@ -1065,10 +1069,10 @@
               "role": "defining"
             }
           ],
-          "gloss": "one acting in God’s authority"
+          "gloss": "one acting in God’s authority",
+          "id": "one-acting-in-god"
         },
         {
-          "id": "a-godlike-being-in",
           "definition": "A being described as אֱלֹהִים by the woman at En Dor. The immediate narrative reports what she says she sees, rather than defining a new class of being.",
           "evidence": [
             {
@@ -1077,10 +1081,10 @@
               "role": "defining"
             }
           ],
-          "gloss": "a godlike being in a reported vision"
+          "gloss": "a godlike being in a reported vision",
+          "id": "a-godlike-being-in"
         },
         {
-          "id": "mighty-very-great-after",
           "definition": "Set after a noun, אֱלֹהִים marks it as mighty or very great: a mighty prince, mighty wrestlings, an exceedingly great city, a very great trembling.",
           "evidence": [
             {
@@ -1102,7 +1106,8 @@
               "ref": "1Sa.14.15"
             }
           ],
-          "gloss": "mighty, very great (after a noun)"
+          "gloss": "mighty, very great (after a noun)",
+          "id": "mighty-very-great-after"
         }
       ],
       "summary": "A plural of the mighty one. Used of Yahweh it takes singular grammar: he is the Mighty One, mightier than all the rest. Used of others it names those who hold power over men: angels, judges, Moses sent to Pharaoh, and the gods of the nations. After a noun it marks something as mighty, very great."
@@ -1123,7 +1128,6 @@
       "pos": "pronoun",
       "senses": [
         {
-          "id": "these",
           "definition": "Point to the people or things named nearby, often introducing a list or identifying a group.",
           "evidence": [
             {
@@ -1140,7 +1144,8 @@
               "role": "defining"
             }
           ],
-          "gloss": "these"
+          "gloss": "these",
+          "id": "these"
         }
       ],
       "summary": "A plural demonstrative for people or things, not a word for deity. Its relation to the God-words is not established."
@@ -1166,7 +1171,6 @@
       "pos": "noun",
       "senses": [
         {
-          "id": "the-mighty-one-a",
           "definition": "One who holds power, set against man and flesh: Yahweh above all, and a supposed other god.",
           "evidence": [
             {
@@ -1217,10 +1221,10 @@
               "ref": "Num.23.19"
             }
           ],
-          "gloss": "the Mighty One; a mighty one"
+          "gloss": "the Mighty One; a mighty one",
+          "id": "the-mighty-one-a"
         },
         {
-          "id": "power-of-one-s",
           "definition": "In the idiom יֵשׁ לְאֵל יָד, “it is in the power of (one's) hand”, and its negative אֵין לְאֵל יָד: the ability to carry something out.",
           "evidence": [
             {
@@ -1245,10 +1249,10 @@
               "ref": "Neh.5.5"
             }
           ],
-          "gloss": "power (of one's hand)"
+          "gloss": "power (of one's hand)",
+          "id": "power-of-one-s"
         },
         {
-          "id": "mighty-of-god-superlative",
           "definition": "Set after a noun, אֵל marks the mightiest of its kind: mountains and cedars “of God”, set in parallel with the great deep.",
           "evidence": [
             {
@@ -1261,10 +1265,10 @@
               "ref": "Psa.80.11"
             }
           ],
-          "gloss": "mighty, of God (superlative)"
+          "gloss": "mighty, of God (superlative)",
+          "id": "mighty-of-god-superlative"
         },
         {
-          "id": "mighty-ones-of-men",
           "definition": "In the plural, mighty ones who are not God: the mighty among the warriors in the grave, and the בְּנֵי אֵלִים called to give Yahweh glory and strength.",
           "evidence": [
             {
@@ -1277,7 +1281,8 @@
               "ref": "Psa.29.1"
             }
           ],
-          "gloss": "mighty ones (of men and angels)"
+          "gloss": "mighty ones (of men and angels)",
+          "id": "mighty-ones-of-men"
         }
       ],
       "summary": "The mighty one, set against man, who is flesh (Isa 31:3; Ezk 28:2; Hos 11:9), and named above all of Yahweh, אֵל גִּבּוֹר, “the mighty אֵל”. In the idiom יֵשׁ לְאֵל יָדִי it is power itself, “the power of my hand”, and after a noun it marks the mightiest of its kind. The cognates all have the word for a god; none of them means “power”, so the power sense rests on scripture’s own use.",
@@ -1344,7 +1349,6 @@
       "pos": "noun",
       "senses": [
         {
-          "id": "the-mighty-one-god-2",
           "definition": "The singular divine title, frequently naming God and also used of a god worshipped by others.",
           "evidence": [
             {
@@ -1362,7 +1366,8 @@
               "role": "defining"
             }
           ],
-          "gloss": "the Mighty One, God; a god"
+          "gloss": "the Mighty One, God; a god",
+          "id": "the-mighty-one-god-2"
         }
       ]
     },
@@ -1411,7 +1416,6 @@
       "pos": "noun",
       "senses": [
         {
-          "id": "oath-sworn-under-a",
           "definition": "The oath by which someone binds himself, calling a curse on himself if he breaks it; often joined with a covenant, and Yahweh calls the oath he imposed “my oath”.",
           "evidence": [
             {
@@ -1451,10 +1455,10 @@
               "ref": "1Ki.8.31"
             }
           ],
-          "gloss": "oath sworn under a curse"
+          "gloss": "oath sworn under a curse",
+          "id": "oath-sworn-under-a"
         },
         {
-          "id": "curse-oath-sanction",
           "definition": "The curse pronounced or written as the sanction of an oath, and by extension an imprecation.",
           "evidence": [
             {
@@ -1497,7 +1501,8 @@
               "ref": "Rom.3.14"
             }
           ],
-          "gloss": "curse, oath-sanction"
+          "gloss": "curse, oath-sanction",
+          "id": "curse-oath-sanction"
         }
       ],
       "summary": "The oath by which someone binds himself under the Mighty One’s curse, and the curse itself. Yahweh cuts his covenant “and his אָלָה” with Israel (Deu 29:11); the oath is sworn before his altar and he judges by it (1Ki 8:31); and he carries out the curse on the one who breaks it (Num 5:21; Deu 29:19). Sabaic has one word, written like its god-word, for “curse, swear”, and Arabic has “swear”.",
@@ -1554,7 +1559,6 @@
           "gloss": "swear, curse",
           "senses": [
             {
-              "id": "swear-pronounce-a-curse",
               "cognate_ids": [
                 "ar-ala",
                 "sab-elah-curse"
@@ -1575,7 +1579,8 @@
                   "role": "defining"
                 }
               ],
-              "gloss": "swear, pronounce a curse"
+              "gloss": "swear, pronounce a curse",
+              "id": "swear-pronounce-a-curse"
             }
           ],
           "stem": "qal"
@@ -1584,7 +1589,6 @@
           "gloss": "put under oath, adjure",
           "senses": [
             {
-              "id": "bind-by-oath",
               "cognate_ids": [
                 "ar-ala",
                 "sab-elah-curse"
@@ -1601,7 +1605,8 @@
                   "role": "defining"
                 }
               ],
-              "gloss": "bind by oath"
+              "gloss": "bind by oath",
+              "id": "bind-by-oath"
             }
           ],
           "stem": "hiphil"
@@ -1623,7 +1628,6 @@
       "pos": "noun",
       "senses": [
         {
-          "id": "fatty-tail",
           "definition": "The fatty tail removed near the backbone and presented with the animal’s fat.",
           "evidence": [
             {
@@ -1640,7 +1644,8 @@
               "role": "defining"
             }
           ],
-          "gloss": "fatty tail"
+          "gloss": "fatty tail",
+          "id": "fatty-tail"
         }
       ],
       "summary": "The fatty tail of a sheep, offered with its other fat. Arabic and Aramaic have the same word for it; how it relates to the entry's other meanings is not shown."
@@ -1657,7 +1662,6 @@
       "pos": "conjunction",
       "senses": [
         {
-          "id": "if-even-if",
           "definition": "Introduce a supposed situation, often one contrary to the present facts.",
           "evidence": [
             {
@@ -1671,10 +1675,11 @@
               "role": "defining"
             }
           ],
-          "gloss": "if, even if"
+          "gloss": "if, even if",
+          "id": "if-even-if"
         }
       ],
-      "summary": "Introduces a hypothetical condition, in two late passages. Aramaic has the same word (the Targums render both verses with it). It looks like a compound of a conditional particle (אִם, Aramaic אִן) with לוּ “if only”, not a word formed from this root; it is kept here by spelling."
+      "summary": "Introduces a hypothetical condition, in two late passages. Aramaic has the same word (the Targums render both verses with it). It looks like a compound of a conditional particle (אִם/אִן + לוּ “if only”), not a word formed from this root; it is kept here by spelling."
     },
     {
       "bdb": [
@@ -1690,7 +1695,6 @@
       "pos": "noun",
       "senses": [
         {
-          "id": "curse",
           "definition": "A curse invoked against enemies; the noun occurs once.",
           "evidence": [
             {
@@ -1699,7 +1703,8 @@
               "role": "defining"
             }
           ],
-          "gloss": "curse"
+          "gloss": "curse",
+          "id": "curse"
         }
       ],
       "summary": "A curse invoked on enemies, asked of Yahweh: “give them … your תַּאֲלָה”. Formed from the verb אָלָה."
@@ -1719,7 +1724,6 @@
           "gloss": "lament",
           "senses": [
             {
-              "id": "lament-wail",
               "definition": "Mourn in grief like a young woman bereaved of her husband.",
               "evidence": [
                 {
@@ -1728,7 +1732,8 @@
                   "role": "defining"
                 }
               ],
-              "gloss": "lament, wail"
+              "gloss": "lament, wail",
+              "id": "lament-wail"
             }
           ],
           "stem": "qal"
@@ -1752,7 +1757,6 @@
       "pos": "pronoun",
       "senses": [
         {
-          "id": "these-2",
           "definition": "Identify a plural group already in view.",
           "evidence": [
             {
@@ -1765,7 +1769,8 @@
               "role": "defining"
             }
           ],
-          "gloss": "these"
+          "gloss": "these",
+          "id": "these-2"
         }
       ],
       "summary": "A shorter demonstrative form beside אֵלֶּה, distinct from the divine noun אֵל."
@@ -1791,7 +1796,6 @@
       "pos": "noun",
       "senses": [
         {
-          "id": "god-god-gods",
           "definition": "The divine title, with singular or plural forms as required.",
           "evidence": [
             {
@@ -1809,7 +1813,8 @@
               "role": "defining"
             }
           ],
-          "gloss": "God, god; gods"
+          "gloss": "God, god; gods",
+          "id": "god-god-gods"
         }
       ]
     },
@@ -1830,7 +1835,6 @@
       "pos": "pronoun",
       "senses": [
         {
-          "id": "these-3",
           "definition": "A plural demonstrative in the Aramaic saying in Jeremiah.",
           "evidence": [
             {
@@ -1839,7 +1843,8 @@
               "role": "defining"
             }
           ],
-          "gloss": "these"
+          "gloss": "these",
+          "id": "these-3"
         }
       ]
     },
@@ -1861,7 +1866,6 @@
       "root": "אלינ",
       "senses": [
         {
-          "id": "these-4",
           "definition": "Point to a plurality named in the discourse.",
           "evidence": [
             {
@@ -1874,7 +1878,8 @@
               "role": "defining"
             }
           ],
-          "gloss": "these"
+          "gloss": "these",
+          "id": "these-4"
         }
       ]
     },
@@ -1896,7 +1901,6 @@
       "pos": "noun",
       "senses": [
         {
-          "id": "god-a-god",
           "definition": "The divine title used for God, or for what someone regards as a god.",
           "evidence": [
             {
@@ -1913,7 +1917,8 @@
               "role": "defining"
             }
           ],
-          "gloss": "God; a god"
+          "gloss": "God; a god",
+          "id": "god-a-god"
         }
       ]
     },
@@ -1936,7 +1941,6 @@
       "pos": "noun",
       "senses": [
         {
-          "id": "mightiness-the-being-of",
           "definition": "What the Mighty One is, shown by what he has made and dwelling in full in Christ; not like anything shaped by human craft.",
           "evidence": [
             {
@@ -1955,7 +1959,8 @@
               "role": "defining"
             }
           ],
-          "gloss": "mightiness, the being of the Mighty One"
+          "gloss": "mightiness, the being of the Mighty One",
+          "id": "mightiness-the-being-of"
         }
       ],
       "summary": "The abstract noun of אַלָהָא, formed with ־וּתָא as מַלְכּוּתָא “kingship” is from מַלְכָּא: what makes the Mighty One mighty. Paul sets it beside God’s power, חַילֵה, as what creation shows of him (Rom 1:20), and says its whole fulness dwells in Christ bodily (Col 2:9)."
@@ -1977,7 +1982,6 @@
       "pos": "adjective",
       "senses": [
         {
-          "id": "of-the-mighty-one",
           "definition": "Belonging to the Mighty One: his power, and his nature that believers are made to share.",
           "evidence": [
             {
@@ -1991,7 +1995,8 @@
               "role": "defining"
             }
           ],
-          "gloss": "of the Mighty One"
+          "gloss": "of the Mighty One",
+          "id": "of-the-mighty-one"
         }
       ],
       "summary": "The adjective of אַלָהָא, formed with ־āyā: belonging to the Mighty One. Peter uses it of his power and of his nature, which believers come to share."
@@ -2018,7 +2023,6 @@
       "pos": "noun",
       "senses": [
         {
-          "id": "goddess",
           "definition": "A female mighty one worshipped by the nations: Artemis of Ephesus, “the great אַלָהְתָא”.",
           "evidence": [
             {
@@ -2031,7 +2035,8 @@
               "role": "defining"
             }
           ],
-          "gloss": "goddess"
+          "gloss": "goddess",
+          "id": "goddess"
         }
       ]
     }
