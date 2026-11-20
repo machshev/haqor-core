@@ -1,6 +1,68 @@
 {
   "book": 1,
   "chapter": 2,
+  "review": {
+    "entities": [
+      {
+        "evidence": "יַהְוֶה names the speaker who commands the man.",
+        "key": "LORD@Gen.1.1",
+        "position": 1
+      },
+      {
+        "evidence": "אֱלֹהִים stands in apposition to יַהְוֶה and designates the same speaker.",
+        "key": "LORD@Gen.1.1",
+        "position": 2
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "then he commanded",
+        "position": 0
+      },
+      {
+        "gloss": "Yahweh",
+        "position": 1
+      },
+      {
+        "gloss": "God",
+        "position": 2
+      },
+      {
+        "gloss": "upon",
+        "position": 3
+      },
+      {
+        "gloss": "the man",
+        "position": 4
+      },
+      {
+        "gloss": "saying",
+        "position": 5
+      },
+      {
+        "gloss": "from every",
+        "position": 6
+      },
+      {
+        "gloss": "tree of",
+        "position": 7
+      },
+      {
+        "gloss": "the garden",
+        "position": 8
+      },
+      {
+        "gloss": "freely",
+        "position": 9
+      },
+      {
+        "gloss": "you may eat",
+        "position": 10
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[Then|0] [Yahweh|1] [God|2] [commanded|0,3] [the man|4], [saying|5], “[From every|6] [tree of|7] [the garden|8] [you may|10] [freely|9] [eat|10],"
+  },
   "source": "ot",
   "verse": 16,
   "words": [
