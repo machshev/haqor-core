@@ -5,7 +5,94 @@
   "updated": "2026-11-19",
   "gloss": "couch",
   "summary": "יצע denotes a couch or bed.",
-  "words": [{"lemma":"יָצוּעַ","pos":"noun","gloss":"couch","bdb":["j.ct.ab"],"senses":[{"gloss":"couch","definition":"A bed or resting place.","evidence":[{"ref":"Psa.63.7","role":"defining"}]}]}],
+  "words": [
+    {
+      "lemma": "יָצוּעַ",
+      "pos": "noun",
+      "gloss": "couch",
+      "bdb": [
+        "j.ct.ab"
+      ],
+      "senses": [
+        {
+          "gloss": "couch",
+          "definition": "A bed or resting place.",
+          "evidence": [
+            {
+              "ref": "Psa.63.7",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "יָצִיעַ",
+      "pos": "noun",
+      "gloss": "floor, bed",
+      "bdb": [
+        "j.ct.ac"
+      ],
+      "senses": [
+        {
+          "gloss": "floor, bed",
+          "definition": "A flat surface or couch.",
+          "evidence": [
+            {
+              "ref": "Amo.6.4",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "יָצַע",
+      "pos": "verb",
+      "gloss": "lay, spread",
+      "bdb": [
+        "j.ct.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "lay, spread",
+          "senses": [
+            {
+              "gloss": "lay, spread",
+              "definition": "Lay out or spread a bed.",
+              "evidence": [
+                {
+                  "ref": "Psa.139.8",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַצָּע",
+      "pos": "noun",
+      "gloss": "bed",
+      "bdb": [
+        "j.ct.ad"
+      ],
+      "senses": [
+        {
+          "gloss": "bed",
+          "definition": "A bed or couch.",
+          "evidence": [
+            {
+              "ref": "Lev.15.5",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "doctrine": [],
   "note": "Drafted for Psalm 63 coverage."
 }
