@@ -128,11 +128,17 @@
     {
       "analysis": {
         "entry": {
-          "existing": "2lh",
+          "draft": {
+            "article_id": "2lh",
+            "base": "84119deda156c77350d0003ba00ebf14817a39d3f66915fa33a75264c98af78a",
+            "change": "Add Gen.9.8 as evidence for the existing addressee sense of אֶל at word index 0.",
+            "definition": "With a verb of speaking, אֶל introduces the addressee.",
+            "evidence": "In Gen.9.8, וְאֶל בָּנָיו adds Noah’s sons to the hearers already introduced by אֶל נֹחַ."
+          },
           "sense": "to-a-person-speaking",
           "word": 0
         },
-        "evidence": "In וַתֹּאמֶר הָאִשָּׁה אֶל הַנָּחָשׁ (“the woman said to the serpent”), אֶל marks the serpent as the addressee of the woman’s speech.",
+        "evidence": "In וַתֹּאמֶר הָאִשָּׁה אֶל הַנָּחָשׁ (“the woman said to the serpent”), אֶל introduces the serpent as the addressee.",
         "gloss": "to",
         "language": "he",
         "lemma": "אֶל",
@@ -141,7 +147,7 @@
         "qualifier": "",
         "root": "אלה",
         "segments": "אֶל",
-        "sense": "to (a person: speaking, sending, bringing)"
+        "sense": "Marks the person or people addressed."
       },
       "position": 2,
       "surface": "אֶל"
