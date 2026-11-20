@@ -268,6 +268,33 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article_id": "2ademaah",
+            "base": null,
+            "change": "Add אַדְמָה as a place-name entry. Its derivation from אדמ is uncertain, so the entry uses the city's own consonants as its root key.",
+            "definition": "Admah is a city named with Sodom, Gomorrah, and Zeboiim in the description of Canaanite territory.",
+            "evidence": "Genesis 10:19 places Admah among the cities on the boundary. Genesis 14:2 identifies Shinab as its king."
+          },
+          "sense": "admah-city",
+          "word": 0
+        },
+        "evidence": "Genesis 10:19 traces גְּבוּל הַכְּנַעֲנִי, “the boundary of the Canaanite,” and lists Admah between Gomorrah and Zeboiim on the approach toward those cities.",
+        "gloss": "and Admah",
+        "language": "he",
+        "lemma": "אַדְמָה",
+        "morph": "HC/Np",
+        "morphology": "The conjunction וְ means “and” and joins the place name אַדְמָה to the preceding city names. The final ה belongs to the name, as in מֶלֶךְ אַדְמָה, “king of Admah,” in Genesis 14:2.",
+        "qualifier": "",
+        "root": "אדמה",
+        "segments": "וְ/אַדְמָה",
+        "sense": "Admah, a city on the Canaanite boundary"
+      },
+      "position": 11,
+      "surface": "וְאַדְמָה"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "3dh",
           "sense": "ad-as-far-as",
           "word": 0
