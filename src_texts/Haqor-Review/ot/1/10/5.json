@@ -28,6 +28,33 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article_id": "prd",
+            "base": "503945e5fc64bb38022941a21856299172e09dc85a3113832eebec8fb4096296",
+            "change": "Add the Niphal stem and its sense of separation into distinct peoples to the existing verb פָּרַד.",
+            "definition": "In the Niphal, descendants of a common line can separate into distinct peoples.",
+            "evidence": "Genesis 10:5 traces the coastland peoples back to common forebears with מֵאֵלֶּה and describes them in their respective lands, speaking their own languages."
+          },
+          "sense": "separate-into-peoples",
+          "word": 0
+        },
+        "evidence": "מֵאֵלֶּה means “from these” and points back to the descendants just listed. The subject אִיֵּי הַגּוֹיִם refers to the coastland peoples. The rest of the verse describes the result of their separation by land, language, clan, and nation.",
+        "gloss": "spread out",
+        "language": "he",
+        "lemma": "פָּרַד",
+        "morph": "HVNp3cp",
+        "morphology": "Niphal perfect, third person common plural. The initial נִ marks the stem, and the ending וּ marks the plural subject אִיֵּי הַגּוֹיִם.",
+        "qualifier": "",
+        "root": "פרד",
+        "segments": "נִפְרְדוּ",
+        "sense": "to separate into distinct peoples"
+      },
+      "position": 1,
+      "surface": "נִפְרְדוּ"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "gwh",
           "sense": "a-people-counted-as",
           "word": 0

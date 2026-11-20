@@ -1,31 +1,31 @@
 {
+  "cognates": [],
+  "created": "2026-11-19",
+  "doctrine": [],
+  "gloss": "divide, separate",
   "id": "prd",
+  "note": " Added the mule and orchard words and the post-exilic proper name from the brief.",
   "root": "פרד",
   "status": "draft",
-  "created": "2026-11-19",
-  "updated": "2026-11-20",
+  "summary": "To separate is to part what was together. Psalm 22 describes the bones as separated in the body.",
   "tags": [
     "separation",
     "scattering"
   ],
-  "gloss": "divide, separate",
-  "summary": "To separate is to part what was together. Psalm 22 describes the bones as separated in the body.",
+  "updated": "2026-11-20",
   "words": [
     {
-      "lemma": "פָּרַד",
       "bdb": [
         "q.ct.aa"
       ],
-      "pos": "verb",
       "gloss": "separate, divide",
+      "lemma": "פָּרַד",
+      "pos": "verb",
       "stems": [
         {
-          "stem": "hithpael",
           "gloss": "be separated",
           "senses": [
             {
-              "id": "be-separated",
-              "gloss": "be separated",
               "definition": "The bones are separated and visible in the sufferer’s frame.",
               "evidence": [
                 {
@@ -35,23 +35,43 @@
                 {
                   "ref": "Gen.10.25"
                 }
-              ]
+              ],
+              "gloss": "be separated",
+              "id": "be-separated"
             }
-          ]
+          ],
+          "stem": "hithpael"
+        },
+        {
+          "gloss": "separate, spread out",
+          "senses": [
+            {
+              "definition": "Descendants of a common line spread out to form distinct peoples.",
+              "evidence": [
+                {
+                  "note": "The coastland peoples spread out from the descendants just named, each with its own language, grouped by land, clan, and nation.",
+                  "ref": "Gen.10.5",
+                  "role": "defining"
+                }
+              ],
+              "gloss": "separate into distinct peoples",
+              "id": "separate-into-peoples"
+            }
+          ],
+          "stem": "niphal"
         }
       ]
     },
     {
-      "lemma": "פֶרֶד",
       "bdb": [
         "q.cu.ab"
       ],
-      "pos": "noun",
+      "gender": "m",
       "gloss": "mule",
+      "lemma": "פֶרֶד",
+      "pos": "noun",
       "senses": [
         {
-          "id": "mule",
-          "gloss": "mule",
           "definition": "A mule is a cross-bred riding animal.",
           "evidence": [
             {
@@ -61,44 +81,44 @@
             {
               "ref": "1Ki.1.33"
             }
-          ]
+          ],
+          "gloss": "mule",
+          "id": "mule"
         }
-      ],
-      "gender": "m"
+      ]
     },
     {
-      "lemma": "פִּרְדָּה",
       "bdb": [
         "q.cu.ac"
       ],
-      "pos": "noun",
+      "gender": "f",
       "gloss": "she-mule",
+      "lemma": "פִּרְדָּה",
+      "pos": "noun",
       "senses": [
         {
-          "id": "she-mule",
-          "gloss": "she-mule",
           "definition": "The feminine form names a she-mule.",
           "evidence": [
             {
               "ref": "Zec.14.15",
               "role": "defining"
             }
-          ]
+          ],
+          "gloss": "she-mule",
+          "id": "she-mule"
         }
-      ],
-      "gender": "f"
+      ]
     },
     {
-      "lemma": "פַּרְדֵּס",
       "bdb": [
         "q.cu.ad"
       ],
-      "pos": "noun",
+      "gender": "m",
       "gloss": "park, orchard",
+      "lemma": "פַּרְדֵּס",
+      "pos": "noun",
       "senses": [
         {
-          "id": "park-orchard",
-          "gloss": "park, orchard",
           "definition": "A pardes is a planted enclosure or orchard.",
           "evidence": [
             {
@@ -108,35 +128,33 @@
             {
               "ref": "Sng.4.13"
             }
-          ]
+          ],
+          "gloss": "park, orchard",
+          "id": "park-orchard"
         }
-      ],
-      "gender": "m"
+      ]
     },
     {
-      "lemma": "פְּרֻדָה",
       "bdb": [
         "q.ct.ab"
       ],
-      "pos": "noun",
+      "gender": "f",
       "gloss": "grain, separated kernel",
+      "lemma": "פְּרֻדָה",
+      "pos": "noun",
       "senses": [
         {
-          "id": "grain-separated-kernel",
-          "gloss": "grain, separated kernel",
           "definition": "Separated grain is used as an image of scattered seed.",
           "evidence": [
             {
               "ref": "2Sa.17.19",
               "role": "defining"
             }
-          ]
+          ],
+          "gloss": "grain, separated kernel",
+          "id": "grain-separated-kernel"
         }
-      ],
-      "gender": "f"
+      ]
     }
-  ],
-  "cognates": [],
-  "doctrine": [],
-  "note": " Added the mule and orchard words and the post-exilic proper name from the brief."
+  ]
 }
