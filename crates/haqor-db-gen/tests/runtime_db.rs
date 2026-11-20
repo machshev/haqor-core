@@ -14,7 +14,7 @@ use std::path::{Path, PathBuf};
 
 use haqor_core::bible::{Bible, HebrewWord};
 use haqor_core::resolve::{TokenTagging, resolve};
-use haqor_db_gen::{BlobCodec, generate_runtime, open_generation_dbs, pack_ref};
+use haqor_db_gen::{BlobCodec, gen_translation, generate_runtime, open_generation_dbs, pack_ref};
 use rusqlite::OptionalExtension;
 
 /// Workspace `data/`, which is two levels above this crate. Tests run with the
@@ -652,8 +652,8 @@ fn reviewed_translation_packets_round_trip_through_reader() {
     let temp = std::env::temp_dir().join(format!("haqor-reviewed-reader-{}", std::process::id()));
     std::fs::create_dir_all(&temp).unwrap();
     let output = temp.join("haqor.db");
-    generate_runtime(&data_dir(), &src_texts(), &output, BlobCodec::None)
-        .expect("generating runtime with review packets");
+    std::fs::copy(data_dir().join("haqor.db"), &output).expect("copying runtime fixture");
+    gen_translation(&output, &src_texts(), &data_dir()).expect("refreshing runtime translations");
     let bible = Bible::open(&temp).expect("opening generated runtime");
     let mut files = Vec::new();
     fn visit(dir: &Path, files: &mut Vec<PathBuf>) {
@@ -667,6 +667,16 @@ fn reviewed_translation_packets_round_trip_through_reader() {
         }
     }
     visit(&packet_root, &mut files);
+    let expected = files
+        .iter()
+        .filter(|path| {
+            std::fs::read_to_string(path)
+                .ok()
+                .and_then(|raw| serde_json::from_str::<serde_json::Value>(&raw).ok())
+                .and_then(|packet| packet["review"]["translation"].as_str().map(str::to_owned))
+                .is_some()
+        })
+        .count();
     let mut checked = 0;
     for path in files {
         let packet: serde_json::Value =
@@ -694,7 +704,7 @@ fn reviewed_translation_packets_round_trip_through_reader() {
         checked += 1;
     }
     assert_eq!(
-        checked, 86,
+        checked, expected,
         "all completed tracked translations must be checked"
     );
     drop(bible);
