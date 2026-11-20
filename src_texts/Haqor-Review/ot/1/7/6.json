@@ -269,11 +269,17 @@
     {
       "analysis": {
         "entry": {
-          "existing": "mym",
+          "draft": {
+            "article_id": "mym",
+            "base": "99aeb8134cb43b6acc1fbca2657bfb7970109f8241b73290a9163053bce234f1",
+            "change": "Add Genesis 9:15 as an example of the existing sense a-body-or-flow.",
+            "definition": "A body or flow of water, including waters that rise in a flood.",
+            "evidence": "Genesis 9:15 calls the waters הַמַּיִם and the flood they could become מַבּוּל."
+          },
           "sense": "a-body-or-flow",
           "word": 0
         },
-        "evidence": "מַיִם identifies the waters of הַמַּבּוּל, the flood, and עַל הָאָרֶץ locates those waters on the earth.",
+        "evidence": "מַיִם identifies the waters of הַמַּבּוּל, the flood already present in this verse. עַל הָאָרֶץ locates those waters on the earth.",
         "gloss": "waters",
         "language": "he",
         "lemma": "מַיִם",
@@ -282,7 +288,7 @@
         "qualifier": "",
         "root": "מימ",
         "segments": "מַיִם",
-        "sense": "a body or flow of water"
+        "sense": "A body of water capable of becoming a flood."
       },
       "position": 7,
       "surface": "מַיִם"
