@@ -29,10 +29,73 @@
               ]
             }
           ]
+        },
+        {
+          "stem": "qal",
+          "gloss": "washer, fuller",
+          "senses": [
+            {
+              "gloss": "washer",
+              "definition": "A fuller or washer is named in the field beside Jerusalem.",
+              "evidence": [
+                {
+                  "ref": "Isa.7.3",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hothpaal",
+          "gloss": "be washed",
+          "senses": [
+            {
+              "gloss": "be washed",
+              "definition": "A garment is washed and inspected for uncleanness.",
+              "evidence": [
+                {
+                  "ref": "Lev.13.55",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be washed",
+          "senses": [
+            {
+              "gloss": "be washed",
+              "definition": "Clothing and leather are washed in water.",
+              "evidence": [
+                {
+                  "ref": "Lev.15.17",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
         }
       ]
     }
   ],
-  "cognates": [{"id":"akk-kabasu","lang":"akk","form":"kabāsu","translit":"kabāsu","gloss":"tread down, flatten","relation":"possible","evidence":[{"source":"oracc","locator":"armep/x000011760, kabāsu"}]}],
+  "cognates": [
+    {
+      "id": "akk-kabasu",
+      "lang": "akk",
+      "form": "kabāsu",
+      "translit": "kabāsu",
+      "gloss": "tread down, flatten",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep/x000011760, kabāsu"
+        }
+      ]
+    }
+  ],
   "note": "The Psalm form is piel, washing or cleansing. Akkadian kabāsu means tread down or flatten and is recorded as possible only."
 }

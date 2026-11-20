@@ -29,10 +29,74 @@
               ]
             }
           ]
+        },
+        {
+          "stem": "piel",
+          "gloss": "keep pure, purify",
+          "senses": [
+            {
+              "gloss": "purify",
+              "definition": "A person can keep his way or heart pure before Yahweh.",
+              "evidence": [
+                {
+                  "ref": "Psa.73.13",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.119.9"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpael",
+          "gloss": "cleanse oneself",
+          "senses": [
+            {
+              "gloss": "cleanse oneself",
+              "definition": "The people are commanded to cleanse themselves from evil deeds.",
+              "evidence": [
+                {
+                  "ref": "Isa.1.16",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
         }
       ]
     }
   ],
-  "cognates": [{"id":"ar-zaka","lang":"ar","form":"زَكَا","translit":"zakā","gloss":"thrive, increase, be righteous","relation":"cognate","evidence":[{"source":"lane","locator":"p. 1240, زكو, زَكَا"}]},{"id":"akk-zaku","lang":"akk","form":"zakû","translit":"zakû","gloss":"become clear, pure","relation":"cognate","evidence":[{"source":"oracc","locator":"armep/x000017400, zakû"}]}],
+  "cognates": [
+    {
+      "id": "ar-zaka",
+      "lang": "ar",
+      "form": "زَكَا",
+      "translit": "zakā",
+      "gloss": "thrive, increase, be righteous",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 1240, زكو, زَكَا"
+        }
+      ]
+    },
+    {
+      "id": "akk-zaku",
+      "lang": "akk",
+      "form": "zakû",
+      "translit": "zakû",
+      "gloss": "become clear, pure",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep/x000017400, zakû"
+        }
+      ]
+    }
+  ],
   "note": "The qal verb is shown by Psalm 51:6. Arabic zakā and Akkadian zakû support the clear, pure sense."
 }
