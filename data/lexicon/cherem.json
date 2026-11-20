@@ -24,6 +24,9 @@
             }
           ]
         }
+      ],
+      "cognate_ids": [
+        "ar-haruma"
       ]
     },
     {
@@ -51,6 +54,9 @@
             }
           ]
         }
+      ],
+      "cognate_ids": [
+        "ar-haruma"
       ]
     },
     {
@@ -72,6 +78,9 @@
             }
           ]
         }
+      ],
+      "cognate_ids": [
+        "ar-haruma"
       ]
     },
     {
@@ -92,9 +101,31 @@
             }
           ]
         }
+      ],
+      "cognate_ids": [
+        "ar-haruma"
       ]
     }
   ],
   "doctrine": [],
-  "note": "Drafted for Psalms 41–43 coverage."
+  "note": "Drafted for Psalms 41–43 coverage.",
+  "cognates": [
+    {
+      "id": "ar-haruma",
+      "lang": "ar",
+      "form": "حَرُمَ",
+      "translit": "ḥaruma",
+      "gloss": "be sacred, inviolable",
+      "relation": "cognate",
+      "sounds": {
+        "ח": "ḥ"
+      },
+      "evidence": [
+        {
+          "source": "wiktionary",
+          "locator": "Arabic حرم (ḥaruma), etymology compares Hebrew חֵרֶם"
+        }
+      ]
+    }
+  ]
 }

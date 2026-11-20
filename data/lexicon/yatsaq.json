@@ -30,6 +30,9 @@
           ],
           "stem": "qal"
         }
+      ],
+      "cognate_ids": [
+        "uga-yasaq"
       ]
     },
     {
@@ -49,6 +52,9 @@
             }
           ]
         }
+      ],
+      "cognate_ids": [
+        "uga-yasaq"
       ]
     },
     {
@@ -69,6 +75,9 @@
             }
           ]
         }
+      ],
+      "cognate_ids": [
+        "uga-yasaq"
       ]
     },
     {
@@ -89,9 +98,28 @@
             }
           ]
         }
+      ],
+      "cognate_ids": [
+        "uga-yasaq"
       ]
     }
   ],
   "doctrine": [],
-  "note": "Drafted for Psalms 41–43 coverage."
+  "note": "Drafted for Psalms 41–43 coverage.",
+  "cognates": [
+    {
+      "id": "uga-yasaq",
+      "lang": "uga",
+      "form": "yṣq",
+      "translit": "yṣq",
+      "gloss": "pour out",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc-ugarit",
+          "locator": "Ugaritic yṣq, pour out"
+        }
+      ]
+    }
+  ]
 }
