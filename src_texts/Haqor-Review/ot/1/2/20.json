@@ -315,20 +315,25 @@
     {
       "analysis": {
         "entry": {
-          "existing": "l2",
-          "sense": "not",
+          "draft": {
+            "article_id": "l2",
+            "base": "ffd411d5ab468a0ba66ca0e2a4b68af3397e61abaed0e11ad5bcb26fdfcbb5d7",
+            "change": "Add Genesis 2:25 as an example under the existing Hebrew sense “not (of a fact)” in lo.",
+            "definition": "Before a verb, לֹא denies that its subject does or experiences what the verb expresses.",
+            "evidence": "Genesis 2:25 uses וְלֹא יִתְבֹּשָׁשׁוּ, “and they were not ashamed”, to describe the man and his wife."
+          },
           "word": 0
         },
-        "evidence": "לֹא negates the perfect verb מָצָא ‘found’. The clause reports that he did not find a helper corresponding to Adam.",
+        "evidence": "לֹא directly precedes the perfect verb מָצָא, “he found.” The clause reports that he did not find a helper corresponding to Adam.",
         "gloss": "not",
         "language": "he",
         "lemma": "לֹא",
         "morph": "HTn",
-        "morphology": "Negative particle without prefix or suffix",
+        "morphology": "Hebrew negative particle with no prefix or suffix.",
         "qualifier": "",
         "root": "לא",
         "segments": "לֹא",
-        "sense": "not (of a fact)"
+        "sense": "Negates a statement of fact."
       },
       "position": 11,
       "surface": "לֹא"
