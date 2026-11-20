@@ -592,7 +592,11 @@ pub fn publish_one_with_refs(
     }
     let current = index.verses.entry(edition.to_owned()).or_default();
     let old = current.get(&reference);
-    if accept_published_mentions(old, &review["name_review_base"], &words)? {
+    // Most verses contain no explicit name. Avoid adding and rewriting the
+    // growing overlay for those verses. An existing entry is still updated
+    // when an explicit review clears its prior identities.
+    let needs_overlay = old.is_some() || words.iter().any(|mention| mention.key.is_some());
+    if needs_overlay && accept_published_mentions(old, &review["name_review_base"], &words)? {
         current.insert(reference, words);
         let path = src.join(PATH);
         fs::create_dir_all(path.parent().unwrap())?;
@@ -607,6 +611,23 @@ pub fn publish_one_with_refs(
             id.bytes().all(|b| b.is_ascii_alphanumeric() || b == b'-'),
             "invalid article id"
         );
+        let mut pending = queue
+            .prepare("SELECT DISTINCT body FROM article WHERE id=? AND name=1 AND applied=0")?;
+        let bodies = pending
+            .query_map([&id], |r| r.get::<_, String>(0))?
+            .collect::<rusqlite::Result<Vec<_>>>()?;
+        if !bodies.is_empty() {
+            for body in bodies {
+                let mut article: Value = serde_json::from_str(&body)?;
+                if add_bearers(&mut article, &keys)? {
+                    queue.execute(
+                        "UPDATE article SET body=? WHERE id=? AND name=1 AND applied=0 AND body=?",
+                        params![serde_json::to_string_pretty(&article)?, id, body],
+                    )?;
+                }
+            }
+            continue;
+        }
         let path = lexicon.join("names").join(format!("{id}.json"));
         if !path.try_exists()? {
             continue;
@@ -680,7 +701,10 @@ pub fn publication_paths(
     Ok(paths)
 }
 
-fn add_bearers(article: &mut Value, keys: &BTreeSet<String>) -> Result<bool> {
+/// Add bearer keys to a name article without discarding any prior bearers.
+/// Lexicon publication calls this when an article is created after its verse
+/// identity review has already completed.
+pub fn add_bearers(article: &mut Value, keys: &BTreeSet<String>) -> Result<bool> {
     let people = article["people"]
         .as_array_mut()
         .context("name article lacks people")?;
