@@ -1,1 +1,78 @@
-{"id":"koshar","root":"כשר","status":"draft","updated":"2026-11-20","gloss":"prosperity","summary":"כּוֹשָׁרוֹת names prosperity or good fortune, contrasted with the barren place of the rebellious.","words":[{"lemma":"כּוֹשָׁרוֹת","bdb":["k.dm.ac"],"pos":"noun","gender":"f","gloss":"prosperity","senses":[{"gloss":"prosperity","definition":"The solitary are settled in a house and captives are brought out into prosperity.","evidence":[{"ref":"Psa.68.7","role":"defining"}]}]}],"note":"Drafted for Psalm 68 coverage. The precise derivation is uncertain."}
+{
+  "id": "koshar",
+  "root": "כשר",
+  "status": "draft",
+  "updated": "2026-11-20",
+  "gloss": "prosperity",
+  "summary": "כּוֹשָׁרוֹת names prosperity or good fortune, contrasted with the barren place of the rebellious.",
+  "words": [
+    {
+      "lemma": "כּוֹשָׁרוֹת",
+      "bdb": [
+        "k.dm.ac"
+      ],
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "prosperity",
+      "senses": [
+        {
+          "gloss": "prosperity",
+          "definition": "The solitary are settled in a house and captives are brought out into prosperity.",
+          "evidence": [
+            {
+              "ref": "Psa.68.7",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "כִּשְׁרוֹן",
+      "pos": "noun",
+      "gloss": "skill, advantage",
+      "bdb": [
+        "k.dm.ab"
+      ],
+      "senses": [
+        {
+          "gloss": "skill, advantage",
+          "definition": "Skill or success in work.",
+          "evidence": [
+            {
+              "ref": "Ecc.4.4",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "כָּשֵׁר",
+      "pos": "verb",
+      "gloss": "prosper",
+      "bdb": [
+        "k.dm.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "prosper",
+          "senses": [
+            {
+              "gloss": "prosper",
+              "definition": "To prosper or be proper.",
+              "evidence": [
+                {
+                  "ref": "Ecc.11.6",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "note": "Drafted for Psalm 68 coverage. The precise derivation is uncertain."
+}

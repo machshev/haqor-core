@@ -1,1 +1,93 @@
-{"id":"geshem","root":"גשמ","status":"draft","updated":"2026-11-20","gloss":"rain","summary":"גֶּשֶׁם is rain given from heaven.","words":[{"lemma":"גֶּשֶׁם","bdb":["c.dj.ac"],"pos":"noun","gender":"m","gloss":"rain","senses":[{"gloss":"rain","definition":"Yahweh sends a rain of gifts and refreshes his inheritance.","evidence":[{"ref":"Psa.68.10","role":"defining"}]}]}],"note":"Drafted for Psalm 68 coverage."}
+{
+  "id": "geshem",
+  "root": "גשמ",
+  "status": "draft",
+  "updated": "2026-11-20",
+  "gloss": "rain",
+  "summary": "גֶּשֶׁם is rain given from heaven.",
+  "words": [
+    {
+      "lemma": "גֶּשֶׁם",
+      "bdb": [
+        "c.dj.ac"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "rain",
+      "senses": [
+        {
+          "gloss": "rain",
+          "definition": "Yahweh sends a rain of gifts and refreshes his inheritance.",
+          "evidence": [
+            {
+              "ref": "Psa.68.10",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "גְּשֵׁם",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "body",
+      "bdb": [
+        "xc.ah.ae"
+      ],
+      "senses": [
+        {
+          "gloss": "body",
+          "definition": "The body or physical frame.",
+          "evidence": [
+            {
+              "ref": "Job.19.26",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "גֹּשֶׁן",
+      "pos": "name",
+      "gloss": "Goshen",
+      "bdb": [
+        "c.dj.ag"
+      ],
+      "senses": [
+        {
+          "gloss": "Goshen",
+          "definition": "The land where Israel dwelt in Egypt.",
+          "evidence": [
+            {
+              "ref": "Gen.45.10",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "גֶּשֶׁם",
+      "pos": "name",
+      "gloss": "Geshem",
+      "bdb": [
+        "c.dj.ab"
+      ],
+      "senses": [
+        {
+          "gloss": "Geshem",
+          "definition": "Geshem opposed the rebuilding of Jerusalem.",
+          "evidence": [
+            {
+              "ref": "Neh.2.19",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "note": "Drafted for Psalm 68 coverage."
+}
