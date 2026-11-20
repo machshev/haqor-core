@@ -196,40 +196,15 @@
       "analysis": {
         "entry": {
           "draft": {
-            "article": {
-              "created": "2026-11-20",
-              "english": "Nimrod",
-              "entry": "",
-              "evidence": [
-                {
-                  "note": "Cush is named as Nimrod’s father.",
-                  "ref": "Gen.10.8",
-                  "role": "defining"
-                },
-                {
-                  "note": "The saying names Nimrod and repeats the description of him as a mighty hunter before Yahweh.",
-                  "ref": "Gen.10.9",
-                  "role": "defining"
-                }
-              ],
-              "gloss": "Nimrod",
-              "id": "nimerod",
-              "name": "נִמְרֹד",
-              "people": [],
-              "root": "",
-              "status": "draft",
-              "summary": "Nimrod is the son of Cush whose reputation as a mighty hunter before Yahweh gave rise to a saying. The origin of his name is uncertain.",
-              "updated": "2026-11-20"
-            },
             "article_id": "nimerod",
-            "base": null,
-            "change": "Add a personal-name article for נִמְרֹד. The passage gives no etymology linking the name to נמר.",
+            "base": "d4fb7b60645545d61dc58032f9dde02dab323a4677f0e84178cf3506e32b39a4",
+            "change": "Extend the existing Nimrod article’s summary and add Genesis 10:9 as evidence for his reputation as a hunter.",
             "definition": "Nimrod, son of Cush, remembered as a mighty hunter before Yahweh.",
-            "evidence": "Genesis 10:8 names Nimrod as Cush’s son. Genesis 10:9 quotes a saying that compares a hunter to him."
+            "evidence": "Genesis 10:8 identifies Nimrod as Cush’s son. In Genesis 10:9, the saying names him as its standard of comparison with the words כְּנִמְרֹד, “like Nimrod.”"
           },
           "word": 0
         },
-        "evidence": "עַל כֵּן יֵאָמַר introduces the saying. After כְּנִמְרֹד, the words גִּבּוֹר צַיִד לִפְנֵי יַהְוֶה repeat the description from the first half of the verse, identifying Nimrod as the hunter to whom someone is compared.",
+        "evidence": "עַל כֵּן יֵאָמַר introduces the saying. After כְּנִמְרֹד, the saying repeats the opening description of a mighty hunter before Yahweh. Nimrod is the person to whom the comparison is made.",
         "gloss": "like Nimrod",
         "language": "he",
         "lemma": "נִמְרֹד",
