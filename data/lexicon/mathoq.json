@@ -1,0 +1,194 @@
+{
+  "id": "mathoq",
+  "root": "מתק",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "taste",
+    "food"
+  ],
+  "gloss": "sweet, sweetness",
+  "summary": "At Marah the water becomes sweet enough to drink. Poets apply that experience to welcome speech, shared counsel and Yahweh’s judgments.",
+  "words": [
+    {
+      "lemma": "מָתוֹק",
+      "bdb": [
+        "m.ef.ad"
+      ],
+      "pos": "adjective",
+      "gloss": "sweet, pleasant",
+      "senses": [
+        {
+          "gloss": "sweet, pleasant",
+          "definition": "Honey supplies the taste in Samson’s riddle. The judgments of Yahweh surpass even honey in sweetness.",
+          "evidence": [
+            {
+              "ref": "Psa.19.11",
+              "role": "defining"
+            },
+            {
+              "ref": "Jdg.14.14"
+            },
+            {
+              "ref": "Ecc.11.7"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "akk-matqu"
+      ]
+    },
+    {
+      "lemma": "מָתֹק",
+      "bdb": [
+        "m.ef.aa"
+      ],
+      "pos": "verb",
+      "gloss": "be or make sweet",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "become sweet",
+          "senses": [
+            {
+              "gloss": "become sweet",
+              "definition": "The waters at Marah become sweet when Moses throws in the wood.",
+              "evidence": [
+                {
+                  "ref": "Exo.15.25",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "make sweet",
+          "senses": [
+            {
+              "gloss": "make sweet",
+              "definition": "The psalmist remembers how pleasant it was to share counsel with his former companion.",
+              "evidence": [
+                {
+                  "ref": "Psa.55.15",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מֶתֶק",
+      "bdb": [
+        "m.ef.ab"
+      ],
+      "pos": "noun",
+      "gloss": "sweetness",
+      "senses": [
+        {
+          "gloss": "sweetness",
+          "definition": "A speaker’s pleasant words aid learning. Sweetness also describes a friend’s counsel.",
+          "evidence": [
+            {
+              "ref": "Pro.16.21",
+              "role": "defining"
+            },
+            {
+              "ref": "Pro.27.9"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "מֹתֶק",
+      "bdb": [
+        "m.ef.ac"
+      ],
+      "pos": "noun",
+      "gloss": "sweetness of fruit",
+      "senses": [
+        {
+          "gloss": "sweetness of fruit",
+          "definition": "The fig tree would have to give up its sweetness to rule over the trees.",
+          "evidence": [
+            {
+              "ref": "Jdg.9.11",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "מַמְתַקִּים",
+      "bdb": [
+        "m.ef.af"
+      ],
+      "pos": "noun",
+      "gloss": "sweet things",
+      "senses": [
+        {
+          "gloss": "sweet things",
+          "definition": "Nehemiah urges the people to drink sweet things and share with those who lack provisions.",
+          "evidence": [
+            {
+              "ref": "Neh.8.10",
+              "role": "defining"
+            },
+            {
+              "ref": "Sng.5.16"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "מִתְקָה",
+      "bdb": [
+        "m.ef.ae"
+      ],
+      "pos": "name",
+      "gloss": "Mithkah",
+      "senses": [
+        {
+          "gloss": "Mithkah",
+          "definition": "Israel camps here after Terah and before Hashmonah.",
+          "evidence": [
+            {
+              "ref": "Num.33.28",
+              "to": "Num.33.29",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "akk-matqu",
+      "lang": "akk",
+      "form": "matqu",
+      "translit": "matqu",
+      "gloss": "sweet",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000012520, matqu [sweet] AJ"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "Mithkah is also the name of a wilderness camp. Its name resembles the sweetness vocabulary, but Numbers gives no naming account."
+}
