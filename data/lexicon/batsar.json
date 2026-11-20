@@ -30,27 +30,90 @@
             }
           ],
           "cognate_ids": [
-            "ar-batara"
+            "arc-betsar"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "בָּצִיר",
+      "pos": "noun",
+      "gloss": "vintage",
+      "bdb": [
+        "b.cp.ai"
+      ],
+      "senses": [
+        {
+          "id": "vintage",
+          "gloss": "vintage",
+          "definition": "The grape harvest or vintage, the crop cut from the vine.",
+          "evidence": [
+            {
+              "ref": "Lev.26.5",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מִבְצָר",
+      "pos": "noun",
+      "gloss": "fortification, stronghold",
+      "bdb": [
+        "b.cp.aj"
+      ],
+      "senses": [
+        {
+          "id": "fortification",
+          "gloss": "fortification",
+          "definition": "A fortified place made inaccessible to enemies.",
+          "evidence": [
+            {
+              "ref": "Num.13.19",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "בֶּצֶר",
+      "pos": "noun",
+      "gloss": "precious ore",
+      "bdb": [
+        "b.cp.ab"
+      ],
+      "senses": [
+        {
+          "id": "ore",
+          "gloss": "precious ore",
+          "definition": "Ore or metal found in a fortified rock seam.",
+          "evidence": [
+            {
+              "ref": "Job.22.24",
+              "role": "defining"
+            }
           ]
         }
       ]
     }
   ],
-  "note": "Drafted to cover the Psalm 74–77 occurrence. Cognate evidence and sibling forms are limited in the current source bundle and should be checked against the cited scripture and available language dictionaries..",
+  "note": "Jastrow B01107 supports the Aramaic cognate. The root family includes vintage, fortification, ore, and dearth words; proper place names remain in name entries.",
   "created": "2026-11-20",
   "cognates": [
     {
-      "id": "ar-batara",
-      "lang": "ar",
-      "form": "بتر",
-      "translit": "batara",
-      "gloss": "cut off, sever",
-      "relation": "possible",
+      "id": "arc-betsar",
+      "lang": "arc",
+      "form": "בְּצַר",
+      "translit": "betsar",
+      "gloss": "be cut off, be lessened, be small, want",
+      "relation": "cognate",
       "evidence": [
         {
-          "source": "lane",
-          "locator": "Book I, art. بتر",
-          "note": "Arabic cutting-off sense supports separation."
+          "source": "jastrow",
+          "locator": "B01107",
+          "note": "Jastrow B01107 records בְּצַר as cut off, lessened, small, or wanting, with Targum Proverbs 14:28 בציר עמא, population diminishing."
         }
       ]
     }

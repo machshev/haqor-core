@@ -20,7 +20,7 @@
           "senses": [
             {
               "gloss": "oppress, afflict",
-              "definition": "The verb describes afflicting the covenant community in the Psalm's lament.",
+              "definition": "The verb describes oppressing or afflicting the community. The form נִינָם may also be read as their offspring, an alternate reading in this verse.",
               "evidence": [
                 {
                   "ref": "Psa.74.8",
@@ -28,11 +28,31 @@
                 }
               ]
             }
+          ],
+          "cognate_ids": [
+            "arc-yeni"
           ]
         }
       ]
     }
   ],
-  "note": "Drafted to cover the Psalm 74–77 occurrence. Cognate evidence and sibling forms are limited in the current source bundle and should be checked against the cited scripture and available language dictionaries..",
-  "created": "2026-11-20"
+  "note": "Jastrow J00436 supports the oppression sense. Psalm 74.8 נִינָם has an alternate offspring reading that remains to be reviewed against the morphology.",
+  "created": "2026-11-20",
+  "cognates": [
+    {
+      "id": "arc-yeni",
+      "lang": "arc",
+      "form": "יְנִי",
+      "translit": "yeni",
+      "gloss": "oppress, vex",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow",
+          "locator": "J00436",
+          "note": "Jastrow J00436 records the Aramaic oppression sense."
+        }
+      ]
+    }
+  ]
 }

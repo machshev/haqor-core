@@ -28,6 +28,9 @@
                 }
               ]
             }
+          ],
+          "cognate_ids": [
+            "arc-halam"
           ]
         }
       ]
@@ -61,6 +64,23 @@
       ]
     }
   ],
-  "note": "Drafted to cover the Psalm 74–77 occurrence. Cognate evidence and sibling forms are limited in the current source bundle and should be checked against the cited scripture and available language dictionaries..",
-  "created": "2026-11-20"
+  "note": "Jastrow E00575 records the Aramaic cognate and a joining or striking sense. The adverb הֲלֹם is a separate deictic spelling under root הלומ.",
+  "created": "2026-11-20",
+  "cognates": [
+    {
+      "id": "arc-halam",
+      "lang": "arc",
+      "form": "הָלַם",
+      "translit": "halam",
+      "gloss": "join, weld; strike",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow",
+          "locator": "E00575",
+          "note": "Jastrow E00575 records הָלַם as join or weld, with the Hebrew hammer sense."
+        }
+      ]
+    }
+  ]
 }

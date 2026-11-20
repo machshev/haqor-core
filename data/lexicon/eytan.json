@@ -24,9 +24,29 @@
             }
           ]
         }
+      ],
+      "cognate_ids": [
+        "arc-eytan"
       ]
     }
   ],
-  "note": "Drafted to cover the Psalm 74–77 occurrence. Cognate evidence and sibling forms are limited in the current source bundle and should be checked against the cited scripture and available language dictionaries..",
-  "created": "2026-11-20"
+  "note": "Jastrow A01655 supports the enduring or permanent sense. Ethan name records are handled separately.",
+  "created": "2026-11-20",
+  "cognates": [
+    {
+      "id": "arc-eytan",
+      "lang": "arc",
+      "form": "אֵיתָן",
+      "translit": "eytan",
+      "gloss": "permanent condition, strong",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow",
+          "locator": "A01655",
+          "note": "Jastrow A01655 records permanent condition and strong, enduring quality."
+        }
+      ]
+    }
+  ]
 }
