@@ -69,6 +69,53 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article": {
+              "created": "2026-11-20",
+              "english": "Nimrod",
+              "entry": "",
+              "evidence": [
+                {
+                  "note": "Cush fathered Nimrod. The following הוּא introduces the description of Nimrod’s might.",
+                  "ref": "Gen.10.8",
+                  "role": "defining"
+                }
+              ],
+              "gloss": "Nimrod",
+              "id": "nimerod",
+              "name": "נִמְרֹד",
+              "note": "The name’s etymology is uncertain.",
+              "people": [],
+              "root": "",
+              "status": "draft",
+              "summary": "Genesis names Nimrod as a son of Cush and says that he became a mighty man on earth.",
+              "updated": "2026-11-20"
+            },
+            "article_id": "nimerod",
+            "base": null,
+            "change": "Add a personal-name article for Nimrod. Leave the root unassigned because the text gives no evidence linking the name to נמר.",
+            "definition": "Nimrod, the son of Cush who became a mighty man on earth.",
+            "evidence": "Genesis 10:8 identifies Nimrod by naming his father and describing his rise to might."
+          },
+          "word": 0
+        },
+        "evidence": "In וְכוּשׁ יָלַד אֶת נִמְרֹד, Cush is the father, and אֶת marks Nimrod as the one he fathered. The masculine singular pronoun הוּא then resumes Nimrod as the subject of הֵחֵל לִהְיוֹת גִּבֹּר. The verse gives no derivation for his name.",
+        "gloss": "Nimrod",
+        "language": "he",
+        "lemma": "נִמְרֹד",
+        "morph": "HNp",
+        "morphology": "Hebrew proper noun naming a male individual. It has no prefix or suffix.",
+        "qualifier": "",
+        "root": "",
+        "segments": "נִמְרֹד",
+        "sense": "The personal name of Cush’s son."
+      },
+      "position": 3,
+      "surface": "נִמְרֹד"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "hw2",
           "sense": "hu-he",
           "word": 0
