@@ -3,24 +3,30 @@
   "root": "ינה",
   "status": "draft",
   "updated": "2026-11-20",
-  "gloss": "word in scripture",
-  "summary": "This root entry records the word and its attested use in scripture. Its wider relation and cognate evidence remain to be developed.",
+  "gloss": "oppress, afflict",
+  "summary": "ינה describes oppression and harsh treatment.",
   "words": [
     {
       "lemma": "יָנָה",
-      "pos": "noun",
-      "gloss": "word in Psalm",
+      "pos": "verb",
+      "gloss": "oppress, afflict",
       "bdb": [
         "j.bv.aa"
       ],
-      "senses": [
+      "stems": [
         {
-          "gloss": "attested sense",
-          "definition": "The word appears in the cited scripture context.",
-          "evidence": [
+          "stem": "qal",
+          "gloss": "oppress, afflict",
+          "senses": [
             {
-              "ref": "Ps.74.8",
-              "role": "defining"
+              "gloss": "oppress, afflict",
+              "definition": "The verb describes afflicting the covenant community in the Psalm's lament.",
+              "evidence": [
+                {
+                  "ref": "Psa.74.8",
+                  "role": "defining"
+                }
+              ]
             }
           ]
         }

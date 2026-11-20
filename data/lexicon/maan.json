@@ -3,24 +3,30 @@
   "root": "מאנ",
   "status": "draft",
   "updated": "2026-11-20",
-  "gloss": "word in scripture",
-  "summary": "This root entry records the word and its attested use in scripture. Its wider relation and cognate evidence remain to be developed.",
+  "gloss": "refuse, decline",
+  "summary": "מאן expresses a deliberate refusal or unwillingness.",
   "words": [
     {
       "lemma": "מָאֵן",
-      "pos": "noun",
-      "gloss": "word in Psalm",
+      "pos": "verb",
+      "gloss": "refuse, decline",
       "bdb": [
         "m.ae.aa"
       ],
-      "senses": [
+      "stems": [
         {
-          "gloss": "attested sense",
-          "definition": "The word appears in the cited scripture context.",
-          "evidence": [
+          "stem": "qal",
+          "gloss": "refuse, decline",
+          "senses": [
             {
-              "ref": "Ps.77.3",
-              "role": "defining"
+              "gloss": "refuse, decline",
+              "definition": "The verb describes refusing to receive or accept a request.",
+              "evidence": [
+                {
+                  "ref": "Psa.77.3",
+                  "role": "defining"
+                }
+              ]
             }
           ]
         }

@@ -3,24 +3,30 @@
   "root": "נומ",
   "status": "draft",
   "updated": "2026-11-20",
-  "gloss": "word in scripture",
-  "summary": "This root entry records the word and its attested use in scripture. Its wider relation and cognate evidence remain to be developed.",
+  "gloss": "sleep, be dormant",
+  "summary": "נום describes sleep and stillness.",
   "words": [
     {
       "lemma": "נוּם",
-      "pos": "noun",
-      "gloss": "word in Psalm",
+      "pos": "verb",
+      "gloss": "sleep, be dormant",
       "bdb": [
         "n.ca.aa"
       ],
-      "senses": [
+      "stems": [
         {
-          "gloss": "attested sense",
-          "definition": "The word appears in the cited scripture context.",
-          "evidence": [
+          "stem": "qal",
+          "gloss": "sleep, be dormant",
+          "senses": [
             {
-              "ref": "Ps.76.6",
-              "role": "defining"
+              "gloss": "sleep, be dormant",
+              "definition": "The verb describes warriors sunk into sleep and unable to act.",
+              "evidence": [
+                {
+                  "ref": "Psa.76.6",
+                  "role": "defining"
+                }
+              ]
             }
           ]
         }

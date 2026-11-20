@@ -3,24 +3,30 @@
   "root": "סבכ",
   "status": "draft",
   "updated": "2026-11-20",
-  "gloss": "word in scripture",
-  "summary": "This root entry records the word and its attested use in scripture. Its wider relation and cognate evidence remain to be developed.",
+  "gloss": "interweave, lattice",
+  "summary": "סבך describes interwoven branches or a thicket.",
   "words": [
     {
       "lemma": "סְבַךְ",
-      "pos": "noun",
-      "gloss": "word in Psalm",
+      "pos": "verb",
+      "gloss": "interweave, lattice",
       "bdb": [
         "o.ae.ab"
       ],
-      "senses": [
+      "stems": [
         {
-          "gloss": "attested sense",
-          "definition": "The word appears in the cited scripture context.",
-          "evidence": [
+          "stem": "qal",
+          "gloss": "interweave, lattice",
+          "senses": [
             {
-              "ref": "Ps.74.5",
-              "role": "defining"
+              "gloss": "interweave, lattice",
+              "definition": "The noun names intertwined wood cut down by the attackers.",
+              "evidence": [
+                {
+                  "ref": "Psa.74.5",
+                  "role": "defining"
+                }
+              ]
             }
           ]
         }

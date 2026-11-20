@@ -3,24 +3,30 @@
   "root": "בצר",
   "status": "draft",
   "updated": "2026-11-20",
-  "gloss": "word in scripture",
-  "summary": "This root entry records the word and its attested use in scripture. Its wider relation and cognate evidence remain to be developed.",
+  "gloss": "cut off, fortify",
+  "summary": "בצר describes cutting off or making inaccessible, and a fortified stronghold.",
   "words": [
     {
       "lemma": "בָּצַר",
-      "pos": "noun",
-      "gloss": "word in Psalm",
+      "pos": "verb",
+      "gloss": "cut off, fortify",
       "bdb": [
         "b.cp.aa"
       ],
-      "senses": [
+      "stems": [
         {
-          "gloss": "attested sense",
-          "definition": "The word appears in the cited scripture context.",
-          "evidence": [
+          "stem": "qal",
+          "gloss": "cut off, fortify",
+          "senses": [
             {
-              "ref": "Ps.76.13",
-              "role": "defining"
+              "gloss": "cut off, fortify",
+              "definition": "The verb denotes making a place inaccessible or secure, as Yahweh is said to do in the cited Psalm.",
+              "evidence": [
+                {
+                  "ref": "Psa.76.13",
+                  "role": "defining"
+                }
+              ]
             }
           ]
         }

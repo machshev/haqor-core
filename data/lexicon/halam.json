@@ -3,24 +3,30 @@
   "root": "הלמ",
   "status": "draft",
   "updated": "2026-11-20",
-  "gloss": "word in scripture",
-  "summary": "This root entry records the word and its attested use in scripture. Its wider relation and cognate evidence remain to be developed.",
+  "gloss": "strike, hammer",
+  "summary": "הלם is to strike or hammer forcefully.",
   "words": [
     {
       "lemma": "הָלַם",
-      "pos": "noun",
-      "gloss": "word in Psalm",
+      "pos": "verb",
+      "gloss": "strike, hammer",
       "bdb": [
         "e.bq.aa"
       ],
-      "senses": [
+      "stems": [
         {
-          "gloss": "attested sense",
-          "definition": "The word appears in the cited scripture context.",
-          "evidence": [
+          "stem": "qal",
+          "gloss": "strike, hammer",
+          "senses": [
             {
-              "ref": "Ps.74.6",
-              "role": "defining"
+              "gloss": "strike, hammer",
+              "definition": "The verb describes striking with axes in the sanctuary destruction scene.",
+              "evidence": [
+                {
+                  "ref": "Psa.74.6",
+                  "role": "defining"
+                }
+              ]
             }
           ]
         }

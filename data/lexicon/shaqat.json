@@ -3,24 +3,30 @@
   "root": "שקט",
   "status": "draft",
   "updated": "2026-11-20",
-  "gloss": "word in scripture",
-  "summary": "This root entry records the word and its attested use in scripture. Its wider relation and cognate evidence remain to be developed.",
+  "gloss": "be quiet, rest",
+  "summary": "שקט describes becoming quiet or remaining at rest.",
   "words": [
     {
       "lemma": "שָׁקַט",
-      "pos": "noun",
-      "gloss": "word in Psalm",
+      "pos": "verb",
+      "gloss": "be quiet, rest",
       "bdb": [
         "v.fp.aa"
       ],
-      "senses": [
+      "stems": [
         {
-          "gloss": "attested sense",
-          "definition": "The word appears in the cited scripture context.",
-          "evidence": [
+          "stem": "qal",
+          "gloss": "be quiet, rest",
+          "senses": [
             {
-              "ref": "Ps.76.9",
-              "role": "defining"
+              "gloss": "be quiet, rest",
+              "definition": "The verb describes the earth becoming quiet when Yahweh rises for judgment.",
+              "evidence": [
+                {
+                  "ref": "Psa.76.9",
+                  "role": "defining"
+                }
+              ]
             }
           ]
         }
