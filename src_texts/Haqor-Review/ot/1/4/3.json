@@ -4,12 +4,12 @@
   "review": {
     "entities": [
       {
-        "evidence": "The man who brings produce from the ground is Cain, the son of Adam and Eve named in Genesis 4:1 and identified as a tiller of the ground in Genesis 4:2.",
+        "evidence": "Cain, the son of Adam and Eve named in Genesis 4:1, tills the ground in Genesis 4:2 and brings some of its produce here.",
         "key": "Cain@Gen.4.1",
         "position": 4
       },
       {
-        "evidence": "The preposition לַ־ marks Yahweh as the recipient of Cain’s offering. This is the same divine bearer named in Genesis 2:22 and invoked by Eve at Cain’s birth in Genesis 4:1.",
+        "evidence": "The prefixed לַ־ marks Yahweh as the recipient of Cain’s offering. Eve uses the same divine name at Cain’s birth in Genesis 4:1.",
         "key": "LORD@Gen.1.1",
         "position": 8
       }
@@ -52,7 +52,55 @@
         "position": 8
       }
     ],
-    "name_review_base": null,
+    "name_review_base": [
+      {
+        "key": null,
+        "position": 0,
+        "surface": "וַיְהִי"
+      },
+      {
+        "key": null,
+        "position": 1,
+        "surface": "מִקֵּץ"
+      },
+      {
+        "key": null,
+        "position": 2,
+        "surface": "יָמִים"
+      },
+      {
+        "key": null,
+        "position": 3,
+        "surface": "וַיָּבֵא"
+      },
+      {
+        "evidence": "The man who brings produce from the ground is Cain, the son of Adam and Eve named in Genesis 4:1 and identified as a tiller of the ground in Genesis 4:2.",
+        "key": "Cain@Gen.4.1",
+        "position": 4,
+        "surface": "קַיִן"
+      },
+      {
+        "key": null,
+        "position": 5,
+        "surface": "מִפְּרִי"
+      },
+      {
+        "key": null,
+        "position": 6,
+        "surface": "הָאֲדָמָה"
+      },
+      {
+        "key": null,
+        "position": 7,
+        "surface": "מִנְחָה"
+      },
+      {
+        "evidence": "The preposition לַ־ marks Yahweh as the recipient of Cain’s offering. This is the same divine bearer named in Genesis 2:22 and invoked by Eve at Cain’s birth in Genesis 4:1.",
+        "key": "LORD@Gen.1.1",
+        "position": 8,
+        "surface": "לַיַהְוֶה"
+      }
+    ],
     "translation": "[And it happened|0] [in the course of|1] [days|2] [that|3] [Cain|4] [brought|3] [some of the produce of|5] [the ground|6] {as} [an offering|7] [to Yahweh|8]."
   },
   "source": "ot",
