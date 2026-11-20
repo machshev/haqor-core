@@ -11,11 +11,6 @@
       {
         "evidence": "שָׁמָיִם is the name God explicitly gives the expanse in this verse.",
         "key": "Heavens@Gen.1.8",
-        "new": {
-          "description": "The sky, the expanse between the waters that God names on the second day of creation.",
-          "kind": "place",
-          "name": "Heavens"
-        },
         "position": 3
       }
     ],
@@ -61,7 +56,60 @@
         "position": 9
       }
     ],
-    "name_review_base": null,
+    "name_review_base": [
+      {
+        "key": null,
+        "position": 0,
+        "surface": "וַיִּקְרָא"
+      },
+      {
+        "evidence": "אֱלֹהִים is the Creator who names the expanse, matching the bearer tagged at this position.",
+        "key": "LORD@Gen.1.1",
+        "position": 1,
+        "surface": "אֱלֹהִים"
+      },
+      {
+        "key": null,
+        "position": 2,
+        "surface": "לָרָקִיעַ"
+      },
+      {
+        "evidence": "שָׁמָיִם is the name God explicitly gives the expanse in this verse.",
+        "key": "Heavens@Gen.1.8",
+        "position": 3,
+        "surface": "שָׁמָיִם"
+      },
+      {
+        "key": null,
+        "position": 4,
+        "surface": "וַיְהִי"
+      },
+      {
+        "key": null,
+        "position": 5,
+        "surface": "עֶרֶב"
+      },
+      {
+        "key": null,
+        "position": 6,
+        "surface": "וַיְהִי"
+      },
+      {
+        "key": null,
+        "position": 7,
+        "surface": "בֹקֶר"
+      },
+      {
+        "key": null,
+        "position": 8,
+        "surface": "יוֹם"
+      },
+      {
+        "key": null,
+        "position": 9,
+        "surface": "שֵׁנִי"
+      }
+    ],
     "translation": "[And|0] [God|1] [called|0] [the expanse|2] [Heavens|3]. [Then there was|4] [evening|5], [and there was|6] [morning|7], [the|8] [second|9] [day|8]."
   },
   "source": "ot",
