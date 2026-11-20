@@ -159,6 +159,33 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article_id": "2t",
+            "base": "962158105d32f91fbad074c75be83b73112723e045d1c0be47ee3d959c0bcd6a",
+            "change": "Add Gen.10.11 as an example of the existing definite-object sense of word 0 in article 2t.",
+            "definition": "Introduces the particular person or thing a verb acts on, ordinarily a definite noun identified by the article, a name or a possessive suffix.",
+            "evidence": "In Gen.10.11, וְאֶת introduces the place name רְחֹבֹת עִיר as the second direct object of וַיִּבֶן."
+          },
+          "sense": "definite-object",
+          "word": 0
+        },
+        "evidence": "וַיִּבֶן governs a list of places built. Between אֶת נִינְוֵה and וְאֶת כָּלַח, the marked וְאֶת introduces רְחֹבֹת עִיר as the second object of the same verb.",
+        "gloss": "and [direct-object marker]",
+        "language": "he",
+        "lemma": "אֵת",
+        "morph": "HC/To",
+        "morphology": "The prefixed conjunction וְ means “and.” אֶת is the unsuffixed direct-object particle.",
+        "qualifier": "particle",
+        "root": "את",
+        "segments": "וְ/אֶת",
+        "sense": "Marks רְחֹבֹת עִיר as a definite direct object of וַיִּבֶן, “he built.”"
+      },
+      "position": 8,
+      "surface": "וְאֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "r7b",
           "sense": "rehoboth",
           "word": 6
