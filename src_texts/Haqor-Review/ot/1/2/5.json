@@ -4,12 +4,12 @@
   "review": {
     "entities": [
       {
-        "evidence": "יַהְוֶה names Yahweh as the subject of the verb ‘had caused it to rain.’",
+        "evidence": "יַהְוֶה names Yahweh, the subject of הִמְטִיר, “had caused it to rain.”",
         "key": "LORD@Gen.1.1",
         "position": 14
       },
       {
-        "evidence": "אֱלֹהִים stands in apposition to יַהְוֶה in ‘Yahweh God.’ Both designate the same subject of the singular verb הִמְטִיר.",
+        "evidence": "אֱלֹהִים stands in apposition to יַהְוֶה in “Yahweh God.” Both designate the same subject of the singular verb הִמְטִיר.",
         "key": "LORD@Gen.1.1",
         "position": 15
       }
@@ -108,7 +108,125 @@
         "position": 22
       }
     ],
-    "name_review_base": null,
+    "name_review_base": [
+      {
+        "key": null,
+        "position": 0,
+        "surface": "וְכֹל"
+      },
+      {
+        "key": null,
+        "position": 1,
+        "surface": "שִׂיחַ"
+      },
+      {
+        "key": null,
+        "position": 2,
+        "surface": "הַשָּׂדֶה"
+      },
+      {
+        "key": null,
+        "position": 3,
+        "surface": "טֶרֶם"
+      },
+      {
+        "key": null,
+        "position": 4,
+        "surface": "יִהְיֶה"
+      },
+      {
+        "key": null,
+        "position": 5,
+        "surface": "בָאָרֶץ"
+      },
+      {
+        "key": null,
+        "position": 6,
+        "surface": "וְכָל"
+      },
+      {
+        "key": null,
+        "position": 7,
+        "surface": "עֵשֶׂב"
+      },
+      {
+        "key": null,
+        "position": 8,
+        "surface": "הַשָּׂדֶה"
+      },
+      {
+        "key": null,
+        "position": 9,
+        "surface": "טֶרֶם"
+      },
+      {
+        "key": null,
+        "position": 10,
+        "surface": "יִצְמָח"
+      },
+      {
+        "key": null,
+        "position": 11,
+        "surface": "כִּי"
+      },
+      {
+        "key": null,
+        "position": 12,
+        "surface": "לֹא"
+      },
+      {
+        "key": null,
+        "position": 13,
+        "surface": "הִמְטִיר"
+      },
+      {
+        "evidence": "יַהְוֶה names Yahweh as the subject of the verb ‘had caused it to rain.’",
+        "key": "LORD@Gen.1.1",
+        "position": 14,
+        "surface": "יַהְוֶה"
+      },
+      {
+        "evidence": "אֱלֹהִים stands in apposition to יַהְוֶה in ‘Yahweh God.’ Both designate the same subject of the singular verb הִמְטִיר.",
+        "key": "LORD@Gen.1.1",
+        "position": 15,
+        "surface": "אֱלֹהִים"
+      },
+      {
+        "key": null,
+        "position": 16,
+        "surface": "עַל"
+      },
+      {
+        "key": null,
+        "position": 17,
+        "surface": "הָאָרֶץ"
+      },
+      {
+        "key": null,
+        "position": 18,
+        "surface": "וְאָדָם"
+      },
+      {
+        "key": null,
+        "position": 19,
+        "surface": "אַיִן"
+      },
+      {
+        "key": null,
+        "position": 20,
+        "surface": "לַעֲבֹד"
+      },
+      {
+        "key": null,
+        "position": 21,
+        "surface": "אֶת"
+      },
+      {
+        "key": null,
+        "position": 22,
+        "surface": "הָאֲדָמָה"
+      }
+    ],
     "translation": "[and no|0] [shrub of|1] [the field|2] [was|4] [yet|3] [present|4] [on the earth|5], [and no|6] [plant of|7] [the field|8] [had|10] [yet|9] [sprung up|10], [because|11] [Yahweh|14] [God|15] [had|13] [not|12] [caused it to rain|13] [on|16] [the earth|17], [and|18] [there was no|19] [man|18] [to till|20] [the ground|22,21]."
   },
   "source": "ot",
