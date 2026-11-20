@@ -153,6 +153,11 @@
             {
               "note": "Lamech names Noah in the naming account.",
               "ref": "Gen.5.29"
+            },
+            {
+              "note": "After giving Peleg’s name, וְשֵׁם אָחִיו יָקְטָן gives Joktan as his brother’s name.",
+              "ref": "Gen.10.25",
+              "role": "defining"
             }
           ],
           "gloss": "identifying name",
@@ -170,7 +175,8 @@
               "role": "defining"
             },
             {
-              "ref": "Pro.22.1"
+              "ref": "Pro.22.1",
+              "role": "defining"
             },
             {
               "ref": "2Sa.7.9"
@@ -224,7 +230,7 @@
               "role": "defining"
             },
             {
-              "note": "The river waters the garden, and וּמִשָּׁם ‘and from there’ points back to the garden as the place from which it divides.",
+              "note": "The river waters the garden, and וּמִשָּׁם ‘and from there’ points back to the garden from which it divides.",
               "ref": "Gen.2.10",
               "role": "example"
             },
@@ -251,6 +257,10 @@
       "bdb": [
         "xv.at.ac"
       ],
+      "cognate_ids": [
+        "phn-shm",
+        "akk-shumu"
+      ],
       "gender": "m",
       "gloss": "name",
       "lang": "arc",
@@ -258,10 +268,6 @@
       "pos": "noun",
       "senses": [
         {
-          "cognate_ids": [
-            "phn-shm",
-            "akk-shumu"
-          ],
           "definition": "The officials ask for the names of those responsible for rebuilding the temple.",
           "evidence": [
             {
@@ -279,10 +285,6 @@
           "id": "personal-name"
         },
         {
-          "cognate_ids": [
-            "phn-shm",
-            "akk-shumu"
-          ],
           "definition": "Daniel blesses God’s name. The prophets address the Jews in the name of the God of Israel.",
           "evidence": [
             {
@@ -374,7 +376,7 @@
                 "phn-shm",
                 "akk-shumu"
               ],
-              "definition": "The Peshitta uses the verb in the account of Joseph called Barsabbas. Hebrews describes Jesus being designated a high priest by God.",
+              "definition": "The Peshitta uses the verb in the account of Joseph called Barsabbas. Hebrews describes Jesus as being designated a high priest by God.",
               "evidence": [
                 {
                   "ref": "Act.1.23",
@@ -384,7 +386,7 @@
                   "ref": "Heb.5.10"
                 }
               ],
-              "gloss": "be called or designated",
+              "gloss": "be-called-or-designated",
               "id": "be-called-or-designated"
             }
           ],

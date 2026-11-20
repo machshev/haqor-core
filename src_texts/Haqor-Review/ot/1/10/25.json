@@ -220,6 +220,33 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article_id": "xm",
+            "base": "2d70a517b7ed7aa747d2c8d64e1e5b4049d1eb0cdf9bc58dfa56860b10b066c8",
+            "change": "Add Genesis 10:25 as evidence for the existing identifying-name sense of שֵׁם at word index 0.",
+            "definition": "A name by which a person or other bearer is identified.",
+            "evidence": "In Genesis 10:25, אָחִיו identifies whose name is meant and יָקְטָן supplies that name."
+          },
+          "sense": "identifying-name",
+          "word": 0
+        },
+        "evidence": "שֵׁם הָאֶחָד פֶּלֶג identifies the first son as Peleg. The marked וְשֵׁם introduces the parallel clause וְשֵׁם אָחִיו יָקְטָן, “and his brother’s name was Joktan.”",
+        "gloss": "and the name of",
+        "language": "he",
+        "lemma": "שֵׁם",
+        "morph": "HC/Ncmsc",
+        "morphology": "The prefixed conjunction וְ means “and.” שֵׁם is a masculine singular common noun in the construct state before אָחִיו, giving “his brother’s name.”",
+        "qualifier": "noun",
+        "root": "שמ",
+        "segments": "וְ/שֵׁם",
+        "sense": "identifying name"
+      },
+      "position": 11,
+      "surface": "וְשֵׁם"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "27h",
           "sense": "brother-born",
           "word": 0
