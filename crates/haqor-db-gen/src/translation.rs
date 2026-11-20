@@ -2128,9 +2128,14 @@ pub fn build_translation(
     // Unreviewed Peshitta verses keep
     // Murdock's readable text but deliberately remain unaligned.
     let peshitta_overrides = read_peshitta_overrides(src_texts, &tx, &peshitta)?;
+    let mut verse_indices: HashMap<i64, usize> = verses
+        .iter()
+        .enumerate()
+        .map(|(index, (reference, _))| (*reference, index))
+        .collect();
     for (reference, english) in peshitta_overrides {
-        if let Some(existing) = verses.iter_mut().find(|(r, _)| *r == reference) {
-            existing.1 = english;
+        if let Some(&index) = verse_indices.get(&reference) {
+            verses[index].1 = english;
         }
     }
     let new_testament = pack_ref(40, 0, 0);
@@ -2138,20 +2143,53 @@ pub fn build_translation(
     // those packets after the edition-specific fallbacks so a live review is
     // visible on the next normal runtime rebuild. The source TSVs remain the
     // compact interchange files for older reviewed material.
+    let mut reviewed_references = HashSet::new();
+    let mut reviewed_texts: HashMap<(String, i64), String> = HashMap::new();
+    let mut greek_indices: HashMap<i64, usize> = greek
+        .iter()
+        .enumerate()
+        .map(|(index, (reference, _))| (*reference, index))
+        .collect();
     for (source, reference, english) in read_review_overrides(src_texts)? {
         if source == "ot" || source == "peshitta" {
-            if let Some(existing) = verses.iter_mut().find(|(r, _)| *r == reference) {
-                existing.1 = english;
+            reviewed_references.insert(reference);
+            reviewed_texts.insert((source.clone(), reference), english.clone());
+            if let Some(&index) = verse_indices.get(&reference) {
+                verses[index].1 = english;
+            } else {
+                verse_indices.insert(reference, verses.len());
+                verses.push((reference, english));
             }
-        } else if source == "greek"
-            && let Some(existing) = greek.iter_mut().find(|(r, _)| *r == reference)
-        {
-            existing.1 = english;
+        } else if source == "greek" {
+            reviewed_references.insert(reference);
+            reviewed_texts.insert((source.clone(), reference), english.clone());
+            if let Some(&index) = greek_indices.get(&reference) {
+                greek[index].1 = english;
+            } else {
+                greek_indices.insert(reference, greek.len());
+                greek.push((reference, english));
+            }
         }
     }
     by_verse(&mut greek, ADVERSARY, "the TR's English")?;
     by_verse(&mut greek, HINNOM, "the TR's English")?;
+    // Reapply packet text after edition-wide normalizations. A reviewed
+    // translation is authoritative, including its exact punctuation and
+    // lexical wording.
+    for ((source, reference), english) in &reviewed_texts {
+        let target = if source == "greek" {
+            &mut greek
+        } else {
+            &mut verses
+        };
+        if let Some(index) = target.iter().position(|(r, _)| r == reference) {
+            target[index].1 = english.clone();
+        }
+    }
     for (reference, english) in verses.iter_mut().chain(greek.iter_mut()) {
+        if reviewed_references.contains(reference) {
+            continue;
+        }
         let ecclesia = replace_words(english, &ECCLESIA);
         *english = if *reference < new_testament {
             replace_name(&replace_words(&ecclesia, &COVERING), SHEOL)

@@ -25,11 +25,11 @@ use std::collections::{HashMap, HashSet};
 use std::path::Path;
 use std::time::{SystemTime, UNIX_EPOCH};
 
-use anyhow::{Context, Result, bail};
+use anyhow::{Context, Result, bail, ensure};
 use haqor_core::bible::HebrewWord;
 use haqor_core::resolve::{TokenTagging, resolve};
 use log::info;
-use rusqlite::{Connection, params};
+use rusqlite::{Connection, OptionalExtension, params};
 use serde_json::Value;
 
 /// Schema version of the emitted database. Bump when a reader would have to
@@ -497,14 +497,33 @@ pub(crate) fn import_review_occurrences(db: &Connection, src_texts: &Path) -> Re
                 .context("review packet chapter")?,
             packet["verse"].as_i64().context("review packet verse")?,
         );
-        let glosses = review["glosses"].as_array().cloned().unwrap_or_default();
+        let glosses: HashMap<i64, &str> = review["glosses"]
+            .as_array()
+            .into_iter()
+            .flatten()
+            .filter_map(|g| Some((g["position"].as_i64()?, g["gloss"].as_str()?)))
+            .collect();
         for word in packet["words"].as_array().context("review packet words")? {
             let position = word["position"].as_i64().context("review word position")?;
+            let surface = word["surface"].as_str().context("review word surface")?;
+            let actual: Option<String> = match source {
+                "ot" => db
+                    .query_row("SELECT s.text FROM word w JOIN surface s USING(surface_id) WHERE w.ref=?1 AND w.position=?2", params![reference, position], |r| r.get(0))
+                    .optional()?,
+                "peshitta" => db
+                    .query_row("SELECT coalesce(nullif(w.vocalised,''),w.word) FROM nt_word n JOIN syriac_word w USING(word_id) WHERE n.ref=?1 AND n.ord=?2", params![reference, position], |r| r.get(0))
+                    .optional()?,
+                "greek" => db
+                    .query_row("SELECT word FROM greek_word WHERE ref=?1 AND position=?2", params![reference, position], |r| r.get(0))
+                    .optional()?,
+                other => bail!("unsupported review source {other:?}"),
+            };
+            ensure!(
+                actual.as_deref() == Some(surface),
+                "review packet surface differs from runtime at {source} {reference:#x} position {position}"
+            );
             let analysis = &word["analysis"];
-            let verse_gloss = glosses
-                .iter()
-                .find(|g| g["position"] == position)
-                .and_then(|g| g["gloss"].as_str());
+            let verse_gloss = glosses.get(&position).copied();
             insert.execute(params![
                 source,
                 reference,
