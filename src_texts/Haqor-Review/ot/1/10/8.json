@@ -1,6 +1,60 @@
 {
   "book": 1,
   "chapter": 10,
+  "review": {
+    "entities": [
+      {
+        "evidence": "Cush fathers Nimrod in Ham’s genealogy, identifying him as the son of Ham named in Genesis 10:6.",
+        "key": "Cush@Gen.10.6",
+        "position": 0
+      },
+      {
+        "evidence": "The direct-object marker identifies Nimrod as the son Cush fathered. The following clause describes him as a mighty man on the earth.",
+        "key": "Nimrod@Gen.10.8",
+        "position": 3
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "and Cush",
+        "position": 0
+      },
+      {
+        "gloss": "fathered",
+        "position": 1
+      },
+      {
+        "gloss": "(untranslated)",
+        "position": 2
+      },
+      {
+        "gloss": "Nimrod",
+        "position": 3
+      },
+      {
+        "gloss": "he",
+        "position": 4
+      },
+      {
+        "gloss": "began",
+        "position": 5
+      },
+      {
+        "gloss": "to be",
+        "position": 6
+      },
+      {
+        "gloss": "a mighty man",
+        "position": 7
+      },
+      {
+        "gloss": "on the earth",
+        "position": 8
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[Cush also|0] [fathered|1] [Nimrod|3,2], [who|4] [began|5] [to be|6] [a mighty man|7] [on the earth|8]."
+  },
   "source": "ot",
   "verse": 8,
   "words": [
@@ -70,27 +124,6 @@
       "analysis": {
         "entry": {
           "draft": {
-            "article": {
-              "created": "2026-11-20",
-              "english": "Nimrod",
-              "entry": "",
-              "evidence": [
-                {
-                  "note": "Cush fathered Nimrod. The following הוּא introduces the description of Nimrod’s might.",
-                  "ref": "Gen.10.8",
-                  "role": "defining"
-                }
-              ],
-              "gloss": "Nimrod",
-              "id": "nimerod",
-              "name": "נִמְרֹד",
-              "note": "The name’s etymology is uncertain.",
-              "people": [],
-              "root": "",
-              "status": "draft",
-              "summary": "Genesis names Nimrod as a son of Cush and says that he became a mighty man on earth.",
-              "updated": "2026-11-20"
-            },
             "article_id": "nimerod",
             "base": null,
             "change": "Add a personal-name article for Nimrod. Leave the root unassigned because the text gives no evidence linking the name to נמר.",
