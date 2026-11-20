@@ -1,6 +1,74 @@
 {
   "book": 1,
   "chapter": 9,
+  "review": {
+    "entities": [
+      {
+        "evidence": "Noah invokes אֱלֹהִים, God, as the one who can make room for Japheth. The verb יַפְתְּ has singular agreement.",
+        "key": "LORD@Gen.1.1",
+        "position": 1
+      },
+      {
+        "evidence": "Noah asks God to make room for his son Japheth, Shem’s brother.",
+        "key": "Japheth@Gen.5.32",
+        "position": 2
+      },
+      {
+        "evidence": "The tents belong to Shem, Noah’s son and Japheth’s brother.",
+        "key": "Shem@Gen.5.32",
+        "position": 5
+      },
+      {
+        "evidence": "Noah names Canaan, Ham’s son, as the one who is to be a slave, continuing his pronouncement in Genesis 9:25–26.",
+        "key": "Canaan@Gen.9.18",
+        "position": 7
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "may he make room",
+        "position": 0
+      },
+      {
+        "gloss": "God",
+        "position": 1
+      },
+      {
+        "gloss": "for Japheth",
+        "position": 2
+      },
+      {
+        "gloss": "and may he live",
+        "position": 3
+      },
+      {
+        "gloss": "in the tents of",
+        "position": 4
+      },
+      {
+        "gloss": "Shem",
+        "position": 5
+      },
+      {
+        "gloss": "and may he be",
+        "position": 6
+      },
+      {
+        "gloss": "Canaan",
+        "position": 7
+      },
+      {
+        "gloss": "a slave",
+        "position": 8
+      },
+      {
+        "gloss": "to them",
+        "position": 9
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[May|0] [God|1] [make room|0] [for Japheth|2], [and may he live|3] [in the tents of|4] [Shem|5]. [And may|6] [Canaan|7] [be|6] [a slave|8] [to them|9].”"
+  },
   "source": "ot",
   "verse": 27,
   "words": [
