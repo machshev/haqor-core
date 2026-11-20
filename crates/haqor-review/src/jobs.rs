@@ -10,10 +10,10 @@ use std::{
 use unicode_normalization::UnicodeNormalization;
 
 pub const SCHEMA: &str = "
+CREATE TEMP TABLE IF NOT EXISTS review_inflight(source TEXT,ref INTEGER,pos INTEGER,PRIMARY KEY(source,ref,pos)) WITHOUT ROWID;
 CREATE TABLE IF NOT EXISTS verse(source TEXT, ref INTEGER, packet TEXT NOT NULL, PRIMARY KEY(source,ref)) WITHOUT ROWID;
 CREATE TABLE IF NOT EXISTS job(source TEXT, ref INTEGER, pos INTEGER, state TEXT NOT NULL,
- attempts INTEGER NOT NULL DEFAULT 0, result TEXT, result_digest TEXT, result_language TEXT,
- result_lemma TEXT, result_root TEXT, result_qualifier TEXT, feedback TEXT, error TEXT, usage TEXT,
+ attempts INTEGER NOT NULL DEFAULT 0, result TEXT, feedback TEXT, error TEXT, usage TEXT,
  PRIMARY KEY(source,ref,pos), FOREIGN KEY(source,ref) REFERENCES verse) WITHOUT ROWID;
 CREATE TABLE IF NOT EXISTS article(source TEXT,ref INTEGER,pos INTEGER,id TEXT NOT NULL,name INTEGER NOT NULL,
  base TEXT,body TEXT NOT NULL,applied INTEGER NOT NULL DEFAULT 0,PRIMARY KEY(source,ref,pos),
@@ -25,11 +25,11 @@ CREATE TABLE IF NOT EXISTS dependency(source TEXT,ref INTEGER,pos INTEGER,id TEX
  PRIMARY KEY(source,ref,pos),FOREIGN KEY(source,ref,pos) REFERENCES job ON DELETE CASCADE) WITHOUT ROWID;
 CREATE INDEX IF NOT EXISTS dependency_article ON dependency(id,name,revision);
 CREATE TABLE IF NOT EXISTS attempt(source TEXT,ref INTEGER,pos INTEGER,elapsed_ms INTEGER,usage TEXT,error TEXT);
-CREATE INDEX IF NOT EXISTS recent_lemmas ON job(source,result_lemma) WHERE pos>=0;
-CREATE INDEX IF NOT EXISTS recent_roots ON job(source,result_root) WHERE pos>=0;
+CREATE INDEX IF NOT EXISTS recent_lemmas ON job(source,json_extract(result,'$.lemma')) WHERE pos>=0;
+CREATE INDEX IF NOT EXISTS recent_roots ON job(source,json_extract(result,'$.root')) WHERE pos>=0;
 CREATE INDEX IF NOT EXISTS ready_verses ON job(ref,source) WHERE state='ready' AND pos=-1;
 CREATE INDEX IF NOT EXISTS ready_words ON job(ref,source,pos) WHERE state='ready' AND pos>=0;
-CREATE INDEX IF NOT EXISTS lexemes ON job(result_language,result_lemma,result_qualifier) WHERE pos>=0;
+CREATE INDEX IF NOT EXISTS lexemes ON job(json_extract(result,'$.language'),json_extract(result,'$.lemma'),json_extract(result,'$.qualifier')) WHERE pos>=0;
 ";
 
 #[derive(Clone, Debug)]
@@ -95,7 +95,7 @@ pub fn next(db: &Connection) -> Result<Option<Job>> {
     // Ready verse reviews get the first free slot, across both kinds of worker.
     for predicate in ["pos=-1", "pos>=0"] {
         let sql = format!(
-            "SELECT source,ref,pos FROM job WHERE state='ready' AND {predicate} ORDER BY ref,source,pos LIMIT 1"
+            "SELECT source,ref,pos FROM job WHERE state='ready' AND {predicate} AND NOT EXISTS(SELECT 1 FROM review_inflight AS i WHERE i.source=job.source AND i.ref=job.ref AND i.pos=job.pos) ORDER BY ref,source,pos LIMIT 1"
         );
         if let Some(job) = db
             .prepare_cached(&sql)?
@@ -186,8 +186,8 @@ pub fn packet(db: &Connection, j: &Job, catalog: &Catalog) -> Result<Value> {
             .unwrap_or("")
             .nfc()
             .collect::<String>();
-        let mut stmt=db.prepare_cached("SELECT ref,pos,result FROM job WHERE source=?1 AND pos>=0 AND json_extract(result,'$.lemma')=?2
-            UNION ALL SELECT ref,pos,result FROM job WHERE source=?1 AND pos>=0 AND ?3<>'' AND json_extract(result,'$.root')=?3 LIMIT 12")?;
+        let mut stmt=db.prepare_cached("SELECT ref,pos,review_result(result) FROM job WHERE source=?1 AND pos>=0 AND json_extract(result,'$.lemma')=?2
+            UNION ALL SELECT ref,pos,review_result(result) FROM job WHERE source=?1 AND pos>=0 AND ?3<>'' AND json_extract(result,'$.root')=?3 LIMIT 12")?;
         let mut rows = stmt.query(params![j.source, lemma, root])?;
         let mut previous = Vec::new();
         let mut examples = BTreeSet::new();
@@ -211,7 +211,7 @@ pub fn packet(db: &Connection, j: &Job, catalog: &Catalog) -> Result<Value> {
     } else {
         p["kind"] = json!("verse");
         p["english"] = verse["english"].clone();
-        let mut stmt=db.prepare_cached("SELECT pos,result FROM job WHERE source=? AND ref=? AND pos>=0 AND state='done' ORDER BY pos")?;
+        let mut stmt=db.prepare_cached("SELECT pos,review_result(result) FROM job WHERE source=? AND ref=? AND pos>=0 AND state='done' ORDER BY pos")?;
         let analyses = stmt
             .query_map(params![j.source, j.reference], |r| {
                 Ok((r.get::<_, i64>(0)?, r.get::<_, String>(1)?))
@@ -248,7 +248,7 @@ const WORD: &str = r#"Analyse only the marked occurrence in its verse. Return on
 const VERSE: &str = r#"Review every word's gloss in context, then read the whole verse in continuous English. Return {"translation":"...","glosses":[{"position":0,"gloss":"..."}]} with exactly one gloss per listed position. In translation encode English spans as [English|position] (multiple positions comma-separated only when necessary), supplied words in braces. Account for every source position. Preserve the project's translation conventions. If a word analysis needs changing first, instead return {"rework":[{"position":0,"reason":"..."}]}. Give precise reasons and return only the affected positions. On every completed verse include entities: an array of {position,key,evidence} for EACH explicit person or place name. Empty means no such names. Match the actual bearer using verse context, family, role and location. Check all same-name candidates; source tags are evidence. Reuse the existing bearer key wherever supported, including previous proposals. If a bearer is missing, add new:{name,kind,description} to its mention, with kind person or place and a description distinguishing it from homonyms. Use a stable Name@Book.Chapter.Verse key anchored to evidence; when the same verse introduces two namesakes append # plus a distinguishing role. Distinct bearers may have identical names and dictionary forms. Preserve uncertain identity for review by returning {"unresolved":"reason"} rather than inventing a bearer. Do not identify mere pronouns or ordinary nouns as names."#;
 pub fn prompt(packet: &Value) -> String {
     format!(
-        "{}\nReturn JSON only. Source packet:\n{}",
+        "{}\nUse the published analysis or translation in this packet as the current edition when making corrections. Preserve prior supported content. Return JSON only. Source packet:\n{}",
         if packet["kind"] == "word" {
             WORD
         } else {
@@ -349,7 +349,7 @@ pub fn accept(
             let pos = at[1].as_i64().context("invalid reuse position")?;
             let raw: String = tx
                 .query_row(
-                    "SELECT result FROM job WHERE source=? AND ref=? AND pos=? AND state='done'",
+                    "SELECT review_result(result) FROM job WHERE source=? AND ref=? AND pos=? AND state='done'",
                     params![j.source, reference, pos],
                     |r| r.get(0),
                 )

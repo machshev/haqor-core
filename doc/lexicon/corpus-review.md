@@ -1,6 +1,6 @@
 # Corpus review
 
-Run `haqor-review` from the core repository. Rust schedules the work and stores the queue in `.haqor-review/progress.sqlite`. The source editions are `ot` (Hebrew and Biblical Aramaic), `peshitta` and `greek` (Textus Receptus). Each occurrence is identified by edition, book, chapter, verse and the reader's zero-based word position.
+Run `haqor-review` from the core repository. Rust schedules work in `.haqor-review/progress.sqlite` and publishes accepted edits to version-controlled corpus files. The source editions are `ot` (Hebrew and Biblical Aramaic), `peshitta` and `greek` (Textus Receptus). Each occurrence is identified by edition, book, chapter, verse and the reader's zero-based word position.
 
 ## Start a pilot
 
@@ -14,6 +14,8 @@ target/release/haqor-review export > genesis-review.jsonl
 ```
 
 `seed` reads the local runtime database, including its current English. OT inventory also reads the OSHB lemma and morphology at each position from the matching `data/hebrew.db`. Use `--data DIR` for another build. Seed a chapter by omitting the verse, a book by omitting the chapter, or the full inventory with `seed` alone. Seeding starts zero agents. Repeating a selection preserves identical verse packets and reopens changed ones.
+
+Accepted word and verse results are committed locally as they finish. Run `git log --oneline -- src_texts/Haqor-Review data/lexicon src_texts/Haqor-Names` to see the edits. The publisher stages only its affected files.
 
 Use the global `--state PATH` on each command to select a different queue. Stop the harness with Ctrl-C. The next `run` reclaims interrupted jobs and retains completed results. A filesystem lock gives a queue one writer. On Linux child workers also receive a termination signal if their coordinator dies.
 
@@ -44,14 +46,11 @@ target/release/haqor-review run --max-agents 4 \
 
 ## Dictionary changes and outputs
 
-Workers can cite a matching current article, reuse a previous lexical decision, or propose an evidenced draft. Semitic article changes are staged as complete Haqor JSON. Greek lexical drafts are stored with their occurrences. `export` emits one JSON line per completed source verse, including word assignments, lexical decisions, final contextual glosses and linked English. Treat this export as review data. The Flutter reader consumes the generated runtime database.
+Each edition has one tracked JSON file per passage under `src_texts/Haqor-Review/<edition>/<book>/<chapter>/<verse>.json`. Accepted word positions appear immediately with their surface, dictionary form, root, morphology, sense, gloss and lexical evidence. The verse reviewer adds source-linked English, final contextual glosses and named entities to the same file. Partial files can therefore supply reviewed words while the verse is still waiting.
 
-```sh
-target/release/haqor-review apply-articles
-target/release/haqor-review status
-```
+The coordinator serializes source publication. It validates Semitic article edits and checks their base revision before writing `data/lexicon/`. Those articles remain drafts for human sign-off. An agent whose candidate or verse context changed while it was working receives a fresh packet. Published identities live in `src_texts/Haqor-Names/review.json` and personal-name articles can acquire additional bearers. Accepted content is read back from the tracked verse files. SQLite retains scheduling state, input snapshots, retry information, publication references and pending work.
 
-`apply-articles` publishes staged Semitic articles for completed verses into `data/lexicon` using Haqor's existing validator. They remain drafts for sign-off. An article changed since its proposal sends the affected occurrence back for reconciliation. Applying drafts and starting a run both check tracked article revisions and reopen dependent words and verse reviews. Commit verified changes in the usual way.
+`run` recovers interrupted publications before starting agents. Use `haqor-review publish` to recover pending source edits without starting any workers. `export` still emits one JSON record per completed verse. The runtime database is a build product. Full runtime generation imports the tracked sources; `haqor db gen-translation` refreshes reviewed word and translation data in an existing runtime database.
 
 To correct a dictionary key, capture and reopen all matching assignments in one transaction. Each worker receives the previous assignment and the reason. Add `--retire` when the old spelling must disappear. Future results using that exact language, lemma and qualifier will be rejected.
 
@@ -71,4 +70,4 @@ sqlite3 .haqor-review/progress.sqlite ".backup '/tmp/haqor-review-backup.sqlite'
 
 The verse reviewer identifies each explicit person or place at its source position. The packet includes existing occurrence tags, candidate records for matching names, and descriptions that distinguish namesakes. The reviewer selects a bearer by its stable record key and gives evidence from the verse. If the dataset lacks the bearer, the reviewer proposes a new person or place with a distinguishing description. An unresolved identity keeps the verse open. When resuming a queue created before identity review, the harness reopens completed verses and retains their word analyses.
 
-Run `haqor-review apply-names` after verse review, followed by `haqor-review apply-articles` to publish staged lexicon articles. The first command writes the source overlay in `src_texts/Haqor-Names/review.json` and adds newly identified bearers to existing personal-name articles. Rebuilding with `haqor db gen-names` applies the overlay to the runtime database. `haqor db gen-greek` also honours the reviewed Greek assignments on subsequent builds. Rebuild the Haqor lexicon with `haqor db gen-haqor-lexicon` for updated name articles. Peshitta and Greek positions follow their respective source texts.
+Live verse publication updates the source overlay in `src_texts/Haqor-Names/review.json` and adds newly identified bearers to personal-name articles. Rebuilding with `haqor db gen-names` applies the overlay to the runtime database. `haqor db gen-greek` also honours the reviewed Greek assignments on subsequent builds. Rebuild the Haqor lexicon with `haqor db gen-haqor-lexicon` for updated name articles. Peshitta and Greek positions follow their respective source texts.

@@ -3,6 +3,7 @@ mod articles;
 mod chat;
 mod inventory;
 mod jobs;
+mod live;
 mod people;
 mod progress;
 mod quota;
@@ -97,6 +98,15 @@ enum Action {
         #[arg(long, default_value = "data/lexicon")]
         lexicon: PathBuf,
     },
+    /// Recover accepted results into version-controlled sources without starting workers.
+    Publish {
+        #[arg(long, default_value = "data/lexicon")]
+        lexicon: PathBuf,
+        #[arg(long, default_value = "data")]
+        data: PathBuf,
+        #[arg(long, default_value = "src_texts")]
+        src_texts: PathBuf,
+    },
     Status,
     /// Make failed jobs eligible for a fresh set of attempts.
     Retry {
@@ -161,6 +171,36 @@ fn main() -> Result<()> {
             [],
         )?;
     }
+    let source_dir = match &cli.command {
+        Action::Run { src_texts, .. }
+        | Action::Publish { src_texts, .. }
+        | Action::ApplyNames { src_texts, .. } => Some(src_texts.clone()),
+        _ => None,
+    };
+    if writing {
+        db.execute_batch(
+            "CREATE TABLE IF NOT EXISTS review_config(key TEXT PRIMARY KEY,value TEXT)",
+        )?;
+        if let Some(src) = &source_dir {
+            db.execute(
+                "INSERT OR REPLACE INTO review_config VALUES('sources',?)",
+                [src.canonicalize()?
+                    .to_str()
+                    .context("invalid source path")?],
+            )?;
+        }
+    }
+    let configured: Option<String> = db
+        .query_row(
+            "SELECT value FROM review_config WHERE key='sources'",
+            [],
+            |r| r.get(0),
+        )
+        .ok();
+    let src = source_dir
+        .or_else(|| configured.map(PathBuf::from))
+        .unwrap_or_else(|| PathBuf::from("src_texts"));
+    result_store::register(&db, &src.join("Haqor-Review"))?;
     match cli.command {
         Action::Seed {
             data,
@@ -196,22 +236,29 @@ fn main() -> Result<()> {
             );
             eprintln!("Preparing review queue {}…", cli.state.display());
             let _quota = (worker.is_none() && chat_endpoint.is_none()).then(quota::monitor);
-            let mut catalog = Catalog::load(&lexicon)?;
-            let people = people::People::load(&src_texts, &data)?;
-            people.refresh(&mut db)?;
-            catalog.people = Some(people);
+            let live = live::Live::open(&src_texts, &lexicon, &data)?;
+            live.recover(&mut db)?;
+            let mut catalog = live.catalog()?;
+            catalog.people.as_ref().unwrap().refresh(&mut db)?;
             articles::refresh_dependencies(&mut db, &catalog.revisions)?;
-            run(&mut db, &catalog, max_agents, max_attempts, &|packet| {
-                if let Some(endpoint) = &chat_endpoint {
-                    return chat::review(
-                        endpoint,
-                        model.as_deref().context("missing model")?,
-                        packet,
-                        &lexicon,
-                    );
-                }
-                invoke(worker.as_deref(), model.as_deref(), &jobs::prompt(packet))
-            })
+            schedule(
+                &mut db,
+                &mut catalog,
+                Some(&live),
+                max_agents,
+                max_attempts,
+                &|packet| {
+                    if let Some(endpoint) = &chat_endpoint {
+                        return chat::review(
+                            endpoint,
+                            model.as_deref().context("missing model")?,
+                            packet,
+                            &lexicon,
+                        );
+                    }
+                    invoke(worker.as_deref(), model.as_deref(), &jobs::prompt(packet))
+                },
+            )
         }
         Action::Retry { evidence } => {
             if let Some(evidence) = evidence {
@@ -230,6 +277,11 @@ fn main() -> Result<()> {
             );
             Ok(())
         }
+        Action::Publish {
+            lexicon,
+            data,
+            src_texts,
+        } => live::Live::open(&src_texts, &lexicon, &data)?.recover(&mut db),
         Action::Status => {
             let mut q=db.prepare("SELECT source,iif(pos=-1,'verse','word'),state,count(*) FROM job GROUP BY 1,2,3 ORDER BY 1,2,3")?;
             let mut rows = q.query([])?;
@@ -296,7 +348,7 @@ fn main() -> Result<()> {
 }
 
 fn export(db: &Connection) -> Result<()> {
-    let mut q=db.prepare("SELECT source,ref,result,packet FROM job JOIN verse USING(source,ref) WHERE pos=-1 AND state='done' ORDER BY ref,source")?;
+    let mut q=db.prepare("SELECT source,ref,review_result(result),packet FROM job JOIN verse USING(source,ref) WHERE pos=-1 AND state='done' ORDER BY ref,source")?;
     let mut rows = q.query([])?;
     let mut stdout = io::BufWriter::new(io::stdout().lock());
     while let Some(r) = rows.next()? {
@@ -304,7 +356,7 @@ fn export(db: &Connection) -> Result<()> {
         let reference: i64 = r.get(1)?;
         let packet: Value = serde_json::from_str(&r.get::<_, String>(3)?)?;
         let mut stmt = db.prepare_cached(
-            "SELECT pos,result FROM job WHERE source=? AND ref=? AND pos>=0 ORDER BY pos",
+            "SELECT pos,review_result(result) FROM job WHERE source=? AND ref=? AND pos>=0 ORDER BY pos",
         )?;
         let mut words = Vec::new();
         let mut results = stmt.query(params![source, reference])?;
@@ -323,9 +375,27 @@ fn export(db: &Connection) -> Result<()> {
     Ok(())
 }
 
+#[cfg(test)]
 fn run(
     db: &mut Connection,
-    catalog: &Catalog,
+    _catalog: &Catalog,
+    limit: usize,
+    max_attempts: u32,
+    worker: &(impl Fn(&Value) -> Result<(Value, Value)> + Sync),
+) -> Result<()> {
+    schedule(
+        db,
+        &mut Catalog::default(),
+        None,
+        limit,
+        max_attempts,
+        worker,
+    )
+}
+fn schedule(
+    db: &mut Connection,
+    catalog: &mut Catalog,
+    live: Option<&live::Live>,
     limit: usize,
     max_attempts: u32,
     worker: &(impl Fn(&Value) -> Result<(Value, Value)> + Sync),
@@ -361,8 +431,21 @@ fn run(
                     ));
                     continue;
                 }
-                let packet = jobs::packet(db, &job, catalog)?;
+                let mut packet = jobs::packet(db, &job, catalog)?;
+                if let Some(live) = live {
+                    live.context(&job, &mut packet)?;
+                    db.execute(
+                        "INSERT OR REPLACE INTO publication_base VALUES(?,?,?,?)",
+                        params![
+                            job.source,
+                            job.reference,
+                            job.pos,
+                            articles::revision(&packet["published"].to_string())
+                        ],
+                    )?;
+                }
                 db.execute("UPDATE job SET state='running',attempts=attempts+1 WHERE source=? AND ref=? AND pos=?",job.key())?;
+                db.execute("INSERT INTO review_inflight VALUES(?,?,?)", job.key())?;
                 let tx = tx.clone();
                 let label = progress::label(&job);
                 progress
@@ -394,10 +477,37 @@ fn run(
                 };
             let label = progress::label(&job);
             progress.active.remove(&label);
+            db.execute(
+                "DELETE FROM review_inflight WHERE source=? AND ref=? AND pos=?",
+                job.key(),
+            )?;
             if let Err(error) = &result {
                 worker_failure = Some(format!("{error:#}"));
             }
             let usage = result.as_ref().ok().map(|(_, u)| u.to_string());
+            if let Some(live) = live
+                && result.is_ok()
+            {
+                let running: bool = db.query_row(
+                    "SELECT state='running' FROM job WHERE source=? AND ref=? AND pos=?",
+                    job.key(),
+                    |r| r.get(0),
+                )?;
+                if !running {
+                    progress.log(&format!("Discarded superseded {label}"));
+                    continue;
+                }
+                let mut current = jobs::packet(db, &job, catalog)?;
+                live.context(&job, &mut current)?;
+                let changed = ["candidates", "words", "people_and_places", "published"]
+                    .iter()
+                    .any(|k| current[*k] != packet[*k]);
+                if changed {
+                    db.execute("UPDATE job SET state='ready',attempts=max(0,attempts-1),feedback='Published source changed while reviewing. Reconcile the current packet.' WHERE source=? AND ref=? AND pos=?",job.key())?;
+                    progress.log(&format!("Requeued {label} after a source change"));
+                    continue;
+                }
+            }
             let outcome =
                 result.and_then(|(answer, usage)| jobs::accept(db, &job, answer, &usage, &packet));
             db.execute(
@@ -414,6 +524,33 @@ fn run(
             if let Err(e) = &outcome {
                 db.execute("UPDATE job SET state=iif(attempts>=?,'failed','ready'), error=? WHERE source=? AND ref=? AND pos=?",
                     params![max_attempts,format!("{e:#}"),job.source,job.reference,job.pos])?;
+            }
+            if outcome.is_ok()
+                && let Some(live) = live
+                && live
+                    .publish(db, &job)
+                    .with_context(|| format!("publishing {label}"))?
+            {
+                let next = live.catalog()?;
+                if catalog.revisions != next.revisions {
+                    articles::refresh_dependencies(db, &next.revisions)?;
+                    progress.done = db.query_row(
+                        "SELECT count(*) FROM job WHERE state='done' AND pos=-1",
+                        [],
+                        |r| r.get(0),
+                    )?;
+                    // The current verse is counted just below.
+                    if job.pos < 0
+                        && db.query_row(
+                            "SELECT state='done' FROM job WHERE source=? AND ref=? AND pos=?",
+                            job.key(),
+                            |r| r.get::<_, bool>(0),
+                        )?
+                    {
+                        progress.done -= 1;
+                    }
+                }
+                *catalog = next;
             }
             let state: String = db.query_row(
                 "SELECT state FROM job WHERE source=? AND ref=? AND pos=?",
@@ -547,6 +684,7 @@ mod tests {
 
     fn fixture(counts: &[usize]) -> Connection {
         let db = Connection::open_in_memory().unwrap();
+        result_store::register(&db, Path::new(".")).unwrap();
         db.execute_batch(jobs::SCHEMA).unwrap();
         for (i, count) in counts.iter().enumerate() {
             let reference = (43 << 16) + (11 << 8) + 1 + i as i64;
