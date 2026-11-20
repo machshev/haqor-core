@@ -9,12 +9,12 @@
         "position": 1
       },
       {
-        "evidence": "The divine name identifies the God who addressed Cain and whose presence Cain now leaves. The source tag LORD refers to the same bearer as the earlier Yahweh proposal.",
+        "evidence": "The divine name יַהְוֶה identifies the God who addressed Cain and whose presence Cain now leaves.",
         "key": "LORD@Gen.1.1",
         "position": 3
       },
       {
-        "evidence": "The phrase “in the land of Nod” names the territory where Cain settled and locates it east of Eden.",
+        "evidence": "The phrase “in the land of Nod” names the territory where Cain settled, east of Eden.",
         "key": "Nod@Gen.4.16",
         "position": 6
       },
@@ -62,7 +62,57 @@
         "position": 8
       }
     ],
-    "name_review_base": null,
+    "name_review_base": [
+      {
+        "key": null,
+        "position": 0,
+        "surface": "וַיֵּצֵא"
+      },
+      {
+        "evidence": "The Cain who leaves here is Eve’s son and Abel’s brother, whom Yahweh addressed after Abel’s death.",
+        "key": "Cain@Gen.4.1",
+        "position": 1,
+        "surface": "קַיִן"
+      },
+      {
+        "key": null,
+        "position": 2,
+        "surface": "מִלִּפְנֵי"
+      },
+      {
+        "evidence": "The divine name identifies the God who addressed Cain and whose presence Cain now leaves. The source tag LORD refers to the same bearer as the earlier Yahweh proposal.",
+        "key": "LORD@Gen.1.1",
+        "position": 3,
+        "surface": "יַהְוֶה"
+      },
+      {
+        "key": null,
+        "position": 4,
+        "surface": "וַיֵּשֶׁב"
+      },
+      {
+        "key": null,
+        "position": 5,
+        "surface": "בְּאֶרֶץ"
+      },
+      {
+        "evidence": "The phrase “in the land of Nod” names the territory where Cain settled and locates it east of Eden.",
+        "key": "Nod@Gen.4.16",
+        "position": 6,
+        "surface": "נוֹד"
+      },
+      {
+        "key": null,
+        "position": 7,
+        "surface": "קִדְמַת"
+      },
+      {
+        "evidence": "“East of Eden” locates Nod relative to the Eden where Yahweh God planted the garden in Genesis 2:8.",
+        "key": "Eden@Gen.2.8",
+        "position": 8,
+        "surface": "עֵדֶן"
+      }
+    ],
     "translation": "[Then|0] [Cain|1] [went out|0] [from the presence of|2] [Yahweh|3] [and settled|4] [in the land of|5] [Nod|6], [east of|7] [Eden|8]."
   },
   "source": "ot",
