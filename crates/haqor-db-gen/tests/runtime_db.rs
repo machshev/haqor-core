@@ -640,3 +640,63 @@ fn packed_references_round_trip_the_corpus() {
     sorted.dedup();
     assert_eq!(sorted.len(), refs.len(), "packed references collide");
 }
+
+#[test]
+fn reviewed_translation_packets_round_trip_through_reader() {
+    require_data!();
+    let packet_root = src_texts().join("Haqor-Review");
+    if !packet_root.exists() {
+        eprintln!("skipping: no tracked review packets");
+        return;
+    }
+    let temp = std::env::temp_dir().join(format!("haqor-reviewed-reader-{}", std::process::id()));
+    std::fs::create_dir_all(&temp).unwrap();
+    let output = temp.join("haqor.db");
+    generate_runtime(&data_dir(), &src_texts(), &output, BlobCodec::None)
+        .expect("generating runtime with review packets");
+    let bible = Bible::open(&temp).expect("opening generated runtime");
+    let mut files = Vec::new();
+    fn visit(dir: &Path, files: &mut Vec<PathBuf>) {
+        for entry in std::fs::read_dir(dir).unwrap() {
+            let path = entry.unwrap().path();
+            if path.is_dir() {
+                visit(&path, files);
+            } else if path.extension().and_then(|s| s.to_str()) == Some("json") {
+                files.push(path);
+            }
+        }
+    }
+    visit(&packet_root, &mut files);
+    let mut checked = 0;
+    for path in files {
+        let packet: serde_json::Value =
+            serde_json::from_str(&std::fs::read_to_string(path).unwrap()).unwrap();
+        let Some(translation) = packet["review"]["translation"].as_str() else {
+            continue;
+        };
+        let book = packet["book"].as_u64().unwrap() as u8;
+        let chapter = packet["chapter"].as_u64().unwrap() as u8;
+        let verse = packet["verse"].as_u64().unwrap() as u8;
+        let expected = haqor_core::translation::parse(translation, chapter, verse).unwrap();
+        let actual = if packet["source"] == "greek" {
+            bible.greek_chapter_translation(book, chapter).unwrap()
+        } else {
+            bible.chapter_translation(book, chapter).unwrap()
+        }
+        .into_iter()
+        .find(|(v, _)| *v == verse)
+        .unwrap()
+        .1;
+        assert_eq!(
+            actual, expected,
+            "review translation changed for {book}:{chapter}:{verse}"
+        );
+        checked += 1;
+    }
+    assert_eq!(
+        checked, 86,
+        "all completed tracked translations must be checked"
+    );
+    drop(bible);
+    std::fs::remove_dir_all(temp).unwrap();
+}
