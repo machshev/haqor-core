@@ -1,6 +1,47 @@
 {
   "book": 1,
   "chapter": 9,
+  "review": {
+    "entities": [
+      {
+        "evidence": "Genesis 9:18 identifies Ham as Canaan’s father. Noah names that son in the curse and says he will serve his brothers.",
+        "key": "Canaan@Gen.9.18",
+        "position": 2
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "and he said",
+        "position": 0
+      },
+      {
+        "gloss": "cursed",
+        "position": 1
+      },
+      {
+        "gloss": "Canaan",
+        "position": 2
+      },
+      {
+        "gloss": "a slave of",
+        "position": 3
+      },
+      {
+        "gloss": "slaves",
+        "position": 4
+      },
+      {
+        "gloss": "he will be",
+        "position": 5
+      },
+      {
+        "gloss": "to his brothers",
+        "position": 6
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[and he said|0], “[Cursed be|1] [Canaan|2]! [He will be|5] [a slave of|3] [slaves|4] [to his brothers|6].”"
+  },
   "source": "ot",
   "verse": 25,
   "words": [
