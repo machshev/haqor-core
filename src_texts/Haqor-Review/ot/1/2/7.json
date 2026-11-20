@@ -131,20 +131,26 @@
     {
       "analysis": {
         "entry": {
-          "existing": "mn",
+          "draft": {
+            "article_id": "mn",
+            "base": "a8ed885685f881ad58d16600265c2176cd484c41c6480205b1d0941d765b8fa6",
+            "change": "Add Genesis 3:17 to the evidence for the Hebrew source sense in the existing min article.",
+            "definition": "מִן marks the source from which something is taken. With אָכַל here it identifies the tree from which the food comes.",
+            "evidence": "In Genesis 3:17, מִמֶּנּוּ in the prohibition refers back to מִן הָעֵץ in the account of Adam’s eating."
+          },
           "sense": "min-source",
           "word": 0
         },
-        "evidence": "In עָפָר מִן הָאֲדָמָה, “dust from the ground,” מִן marks הָאֲדָמָה as the source of the dust from which God formed the human.",
+        "evidence": "In עָפָר מִן הָאֲדָמָה, “dust from the ground,” מִן identifies the ground as the source of the dust from which God formed the human.",
         "gloss": "from",
         "language": "he",
         "lemma": "מִן",
         "morph": "HR",
-        "morphology": "Independent preposition without prefix or suffix.",
+        "morphology": "Independent Hebrew preposition without a prefix or suffix.",
         "qualifier": "",
         "root": "מנ",
         "segments": "מִן",
-        "sense": "out of, made from; from (a source or giver)"
+        "sense": "from a source"
       },
       "position": 6,
       "surface": "מִן"
