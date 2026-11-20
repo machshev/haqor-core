@@ -45,7 +45,15 @@ pub fn stage(tx: &Connection, j: &Job, answer: &mut Value, packet: &Value) -> Re
         j.key(),
     )?;
     let draft = &answer["entry"]["draft"];
-    if draft.is_null() || j.source == "greek" {
+    let index = crate::jobs::lexeme_index(answer)?;
+    if draft.is_null() {
+        return Ok(());
+    }
+    if j.source == "greek" {
+        ensure!(
+            index == 0,
+            "a Greek article holds one lexeme: word must be 0"
+        );
         return Ok(());
     }
     let article = &draft["article"];
@@ -79,10 +87,8 @@ pub fn stage(tx: &Connection, j: &Job, answer: &mut Value, packet: &Value) -> Re
     };
     if !name {
         ensure!(
-            article["words"]
-                .as_array()
-                .is_some_and(|w| w.iter().any(covers)),
-            "draft lacks the resolved word and root"
+            article["words"].get(index as usize).is_some_and(covers),
+            "draft word {index} is not the resolved word and root"
         );
     } else {
         use unicode_normalization::UnicodeNormalization;
@@ -91,6 +97,10 @@ pub fn stage(tx: &Connection, j: &Job, answer: &mut Value, packet: &Value) -> Re
                 .as_str()
                 .is_some_and(|s| s.nfc().eq(answer["lemma"].as_str().unwrap_or("").chars())),
             "draft name differs from lemma"
+        );
+        ensure!(
+            index == 0,
+            "a personal-name article holds one lexeme: word must be 0"
         );
     }
     tx.execute(
@@ -234,6 +244,21 @@ fn apply_one_locked(
         .as_ref()
         .is_none_or(|s| s.trim_end() != body.trim_end())
     {
+        let moved = match (&current, name) {
+            (Some(current), false) => moved_lexeme(current, &draft)?,
+            _ => None,
+        };
+        if let Some(reason) = moved {
+            let tx = db.transaction()?;
+            tx.execute("UPDATE job SET state='ready',feedback=?,result=NULL WHERE source=? AND ref=? AND pos=?",
+                params![reason,job.source,job.reference,job.pos])?;
+            tx.execute(
+                "UPDATE job SET state='waiting',result=NULL WHERE source=? AND ref=? AND pos=-1",
+                params![job.source, job.reference],
+            )?;
+            tx.commit()?;
+            return Ok(PublishOutcome::Rejected);
+        }
         if current.as_deref().map(revision) != base {
             let tx = db.transaction()?;
             let reason = format!(
@@ -281,6 +306,37 @@ fn apply_one_locked(
     )?;
     tx.commit()?;
     Ok(PublishOutcome::Applied)
+}
+
+/// Reviewed occurrences address a lexeme by its index in `words`, so an edit
+/// may change a lexeme's content or append new ones but never move or remove
+/// one. Returns the reason a draft breaks that.
+pub fn moved_lexeme(current: &str, draft: &Value) -> Result<Option<String>> {
+    use unicode_normalization::UnicodeNormalization;
+    let current: Value = serde_json::from_str(current)?;
+    let identity = |w: &Value| {
+        (
+            w["lemma"].as_str().unwrap_or("").nfc().collect::<String>(),
+            w["lang"].as_str().unwrap_or("he").to_owned(),
+            w["pos"].clone(),
+        )
+    };
+    let empty = Vec::new();
+    let after = draft["words"].as_array().unwrap_or(&empty);
+    for (index, word) in current["words"]
+        .as_array()
+        .unwrap_or(&empty)
+        .iter()
+        .enumerate()
+    {
+        let (lemma, lang, pos) = identity(word);
+        if after.get(index).map(identity) != Some((lemma.clone(), lang.clone(), pos.clone())) {
+            return Ok(Some(format!(
+                "The draft moves or removes word {index} ({lemma}, {lang}, {pos}) of the current article. Reviewed occurrences address lexemes by index: keep every existing word at its index and append new lexemes at the end."
+            )));
+        }
+    }
+    Ok(None)
 }
 
 // Reopen only words that actually used a changed canonical article.
@@ -391,6 +447,34 @@ mod tests {
             PublishOutcome::Deferred
         );
         fs::remove_dir_all(root)?;
+        Ok(())
+    }
+
+    #[test]
+    fn drafts_keep_existing_lexemes_at_their_index() -> Result<()> {
+        let current = json!({"words":[
+            {"lemma":"בְּרַךְ","lang":"arc","pos":"verb"},
+            {"lemma":"בְּרַךְ","lang":"arc","pos":"noun"}]})
+        .to_string();
+        let appended = json!({"words":[
+            {"lemma":"בְּרַךְ","lang":"arc","pos":"verb","gloss":"bless"},
+            {"lemma":"בְּרַךְ","lang":"arc","pos":"noun"},
+            {"lemma":"בְּרָכָה","pos":"noun"}]});
+        assert_eq!(moved_lexeme(&current, &appended)?, None);
+        let swapped = json!({"words":[
+            {"lemma":"בְּרַךְ","lang":"arc","pos":"noun"},
+            {"lemma":"בְּרַךְ","lang":"arc","pos":"verb"}]});
+        assert!(
+            moved_lexeme(&current, &swapped)?
+                .unwrap()
+                .contains("word 0")
+        );
+        let removed = json!({"words":[{"lemma":"בְּרַךְ","lang":"arc","pos":"verb"}]});
+        assert!(
+            moved_lexeme(&current, &removed)?
+                .unwrap()
+                .contains("word 1")
+        );
         Ok(())
     }
 }

@@ -76,10 +76,10 @@ impl Catalog {
             let words = e["words"].as_array().cloned().unwrap_or_else(|| {
                 vec![json!({"lemma":e["name"],"pos":"name","gloss":e["gloss"]})]
             });
-            for w in words {
+            for (index, w) in words.into_iter().enumerate() {
                 let root = w["root"].as_str().or(e["root"].as_str()).unwrap_or("");
                 let lemma = w["lemma"].as_str().unwrap_or("");
-                let summary = json!({"entry":e["id"],"revision":revision,"name":e.get("name").is_some(),"root":root,"lemma":lemma,"language":w["lang"].as_str().unwrap_or("he"),
+                let summary = json!({"entry":e["id"],"word":index,"revision":revision,"name":e.get("name").is_some(),"root":root,"lemma":lemma,"language":w["lang"].as_str().unwrap_or("he"),
                     "pos":w["pos"],"gloss":w["gloss"],"senses":w["senses"].as_array().into_iter().flatten().map(|s| &s["gloss"]).collect::<Vec<_>>()});
                 for k in BTreeSet::from([fold_consonants(root), fold_consonants(lemma)]) {
                     if !k.is_empty() {
@@ -107,7 +107,7 @@ impl Catalog {
                 catalog
                     .revisions
                     .insert((key.clone(), false), revision.clone());
-                catalog.words.entry(a["lemma"].as_str().unwrap().into()).or_default().push(json!({"entry":key,"name":false,"language":"grc","lemma":a["lemma"],"qualifier":a["qualifier"],"root":a["root"],"revision":revision,"senses":a["senses"].as_object().context("Greek dictionary senses missing")?.iter().map(|(sense,d)|json!({"sense":sense,"gloss":d["gloss"],"definition":d["definition"]})).collect::<Vec<_>>()}));
+                catalog.words.entry(a["lemma"].as_str().unwrap().into()).or_default().push(json!({"entry":key,"word":0,"name":false,"language":"grc","lemma":a["lemma"],"qualifier":a["qualifier"],"root":a["root"],"revision":revision,"senses":a["senses"].as_object().context("Greek dictionary senses missing")?.iter().map(|(sense,d)|json!({"sense":sense,"gloss":d["gloss"],"definition":d["definition"]})).collect::<Vec<_>>()}));
             }
         }
         Ok(catalog)
@@ -280,7 +280,7 @@ pub struct Word {
     evidence: String,
     entry: Value,
 }
-const WORD: &str = r#"Analyse only the marked occurrence in its verse. Return one JSON object with string fields language (he, arc, syc, grc), lemma (pointed dictionary form, Hebrew script for Semitic), qualifier (empty unless needed to distinguish a homograph, e.g. noun), root (Haqor consonantal root; empty if unknown), morphology, sense, gloss, evidence (explain using the text), and entry. For entry use {"existing":"article id"} when the candidate covers this word and sense. Otherwise provide {"draft":{"definition":"...","evidence":"...","change":"..."}} proposing the new or corrected lexical content. If a previous analysis covers exactly your language, lemma, qualifier, root and sense, copy those fields and return entry {"reuse":[ref,pos]} using its at coordinates. For a new or amended Semitic entry include draft.article, the COMPLETE draft Haqor JSON article, following data/lexicon/README.md, with its lemma, root, senses and verse evidence. For a personal-name article preserve its existing people list; a new article may leave people empty until verse review assigns its bearers. Read the existing article before editing it. Use the candidate revision as draft.base, or null for a new file. If you discover an existing article outside the listed candidates use its SHA256 file digest. For Greek use an existing Greek dictionary candidate if it covers this sense, or provide draft.definition, draft.evidence and draft.change to update the shared Greek entry. Use Greek script for Greek. Treat source tags and candidate roots as evidence to check. If the occurrence cannot be assigned responsibly, return only {"unresolved":"explain the competing readings and what evidence is missing"}. Prefixes and suffixes belong in morphology. Use read-only local reference material when needed."#;
+const WORD: &str = r#"Analyse only the marked occurrence in its verse. Return one JSON object with string fields language (he, arc, syc, grc), lemma (pointed dictionary form, Hebrew script for Semitic), qualifier (empty unless needed to distinguish a homograph, e.g. noun), root (Haqor consonantal root; empty if unknown), morphology, sense, gloss, evidence (explain using the text), and entry. For entry use {"existing":"article id","word":N} when a candidate covers this word and sense, where N is that candidate's word index: the position of the lexeme in the article's words list. Otherwise provide {"draft":{"definition":"...","evidence":"...","change":"..."},"word":N} proposing the new or corrected lexical content, where N is the index of this occurrence's lexeme in draft.article.words (0 for a personal-name or Greek article). Existing lexemes keep their indices: never reorder or remove words in an article; add a new lexeme at the end of its words list. If a previous analysis covers exactly your language, lemma, qualifier, root and sense, copy those fields and return entry {"reuse":[ref,pos]} using its at coordinates. For a new or amended Semitic entry include draft.article, the COMPLETE draft Haqor JSON article, following data/lexicon/README.md, with its lemma, root, senses and verse evidence. For a personal-name article preserve its existing people list; a new article may leave people empty until verse review assigns its bearers. Read the existing article before editing it. Use the candidate revision as draft.base, or null for a new file. If you discover an existing article outside the listed candidates use its SHA256 file digest. For Greek use an existing Greek dictionary candidate if it covers this sense, or provide draft.definition, draft.evidence and draft.change to update the shared Greek entry. Use Greek script for Greek. Treat source tags and candidate roots as evidence to check. If the occurrence cannot be assigned responsibly, return only {"unresolved":"explain the competing readings and what evidence is missing"}. Prefixes and suffixes belong in morphology. Use read-only local reference material when needed."#;
 const VERSE: &str = r#"Review every word's gloss in context, then read the whole verse in continuous English. Return {"translation":"...","glosses":[{"position":0,"gloss":"..."}]} with exactly one gloss per listed position. In translation encode English spans as [English|position] (multiple positions comma-separated only when necessary), supplied words in braces. Account for every source position. Preserve the project's translation conventions. If a word analysis needs changing first, instead return {"rework":[{"position":0,"reason":"..."}]}. Give precise reasons and return only the affected positions. On every completed verse include entities: an array of {position,key,evidence} for EACH explicit person or place name. Empty means no such names. Match the actual bearer using verse context, family, role and location. Check all same-name candidates; source tags are evidence. Reuse the existing bearer key wherever supported, including previous proposals. If a bearer is missing, add new:{name,kind,description} to its mention, with kind person or place and a description distinguishing it from homonyms. Use a stable Name@Book.Chapter.Verse key anchored to evidence; when the same verse introduces two namesakes append # plus a distinguishing role. Distinct bearers may have identical names and dictionary forms. Preserve uncertain identity for review by returning {"unresolved":"reason"} rather than inventing a bearer. Do not identify mere pronouns or ordinary nouns as names."#;
 pub fn prompt(packet: &Value) -> String {
     format!(
@@ -292,6 +292,14 @@ pub fn prompt(packet: &Value) -> String {
         },
         packet
     )
+}
+
+/// The lexeme an occurrence resolves to: its index in the article's `words`.
+/// Personal-name and Greek articles hold a single lexeme, index 0.
+pub fn lexeme_index(answer: &Value) -> Result<u64> {
+    answer["entry"]["word"]
+        .as_u64()
+        .context("entry needs word: the lexeme's index in the article's words list")
 }
 
 fn nonempty(v: &Value, k: &str) -> Result<()> {
@@ -398,6 +406,7 @@ pub fn accept(
                 "prior analysis changed"
             );
             answer["entry"] = prior["entry"].clone();
+            lexeme_index(&answer)?;
             tx.execute(
                 "DELETE FROM dependency WHERE source=? AND ref=? AND pos=?",
                 j.key(),
@@ -411,11 +420,21 @@ pub fn accept(
             tx.execute("INSERT INTO article SELECT source,?1,?2,id,name,base,body,applied FROM article WHERE source=?3 AND ref=?4 AND pos=?5",
                 params![j.reference,j.pos,j.source,reference,pos])?;
         } else {
+            let index = lexeme_index(&answer)?;
             if let Some(id) = word.entry["existing"].as_str() {
-                let candidate = packet["candidates"]
+                // A personal-name and an ordinary article may share an id.
+                let lexemes: Vec<&Value> = packet["candidates"]
                     .as_array()
                     .into_iter()
                     .flatten()
+                    .filter(|r| r["entry"] == id && r["word"] == index)
+                    .collect();
+                let lexeme = *lexemes.first().with_context(|| {
+                    format!("candidate {id} has no lexeme at word index {index}")
+                })?;
+                let candidate = lexemes
+                    .iter()
+                    .copied()
                     .find(|r| {
                         if r["entry"] != id
                             || r["root"] != answer["root"]
@@ -431,7 +450,12 @@ pub fn accept(
                         }
                         r["language"] == answer["language"] && head.nfc().eq(lemma.chars())
                     })
-                    .context("article must cover the resolved dictionary form and root")?;
+                    .with_context(|| {
+                        format!(
+                            "word {index} of {id} is {} ({}, root {}), not the resolved dictionary form, language and root",
+                            lexeme["lemma"], lexeme["language"], lexeme["root"]
+                        )
+                    })?;
                 tx.execute(
                     "INSERT OR REPLACE INTO dependency VALUES(?,?,?,?,?,?)",
                     params![

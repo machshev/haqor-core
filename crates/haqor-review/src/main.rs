@@ -742,7 +742,7 @@ mod tests {
     }
     fn word() -> Value {
         json!({"language":"grc","lemma":"λόγος","root":"","qualifier":"","morphology":"noun",
-            "sense":"word","gloss":"word","evidence":"fixture occurrence","entry":{"draft":{"definition":"word","change":"new","evidence":"fixture"}}})
+            "sense":"word","gloss":"word","evidence":"fixture occurrence","entry":{"draft":{"definition":"word","change":"new","evidence":"fixture"},"word":0}})
     }
     fn verse(p: &Value) -> Value {
         let words = p["words"].as_array().unwrap();
