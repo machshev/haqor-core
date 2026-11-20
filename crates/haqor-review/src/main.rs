@@ -49,6 +49,8 @@ struct Cli {
     #[command(subcommand)]
     command: Action,
 }
+// Parsed once per process; `Run`'s many routing options make it the big one.
+#[allow(clippy::large_enum_variant)]
 #[derive(Subcommand)]
 enum Action {
     /// Snapshot all matching verses. Reseeding changed verses invalidates their results.
