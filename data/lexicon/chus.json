@@ -3,8 +3,52 @@
   "root": "חוס",
   "status": "draft",
   "created": "2026-11-20",
-  "updated": "2026-11-20",
+  "updated": "2026-11-19",
   "gloss": "spare",
   "summary": "חוס expresses sparing or having compassion for someone in distress.",
-  "words": [{"lemma":"חוּס","pos":"verb","gloss":"spare","bdb":["h.bh.ad"],"stems":[{"stem":"qal","gloss":"spare","senses":[{"gloss":"spare","definition":"Show pity and refrain from destroying.","evidence":[{"ref":"Psa.72.13","role":"defining"}]}]}]}]
+  "words": [
+    {
+      "lemma": "חוּס",
+      "pos": "verb",
+      "gloss": "spare",
+      "bdb": [
+        "h.bh.ad"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "spare",
+          "senses": [
+            {
+              "gloss": "spare",
+              "definition": "Show pity and refrain from destroying.",
+              "evidence": [
+                {
+                  "ref": "Psa.72.13",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "syc-chus",
+      "lang": "syc",
+      "form": "ܚܘܣ",
+      "translit": "ḥūs",
+      "gloss": "spare, have pity",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "sedra",
+          "locator": "ܚܘܣ",
+          "note": "Syriac cognate means to spare or have pity."
+        }
+      ]
+    }
+  ]
 }

@@ -1,1 +1,55 @@
-{"id":"lachak","root":"לחכ","status":"draft","created":"2026-11-20","updated":"2026-11-20","gloss":"lick","summary":"לחכ describes licking, especially licking dust.","words":[{"lemma":"לָחַךְ","pos":"verb","gloss":"lick","bdb":["l.bg.aa"],"stems":[{"stem":"piel","gloss":"lick","senses":[{"gloss":"lick","definition":"Lick up or consume with the tongue.","evidence":[{"ref":"Psa.72.9","role":"defining"}]}]}]}]}
+{
+  "id": "lachak",
+  "root": "לחכ",
+  "status": "draft",
+  "created": "2026-11-20",
+  "updated": "2026-11-19",
+  "gloss": "lick",
+  "summary": "לחכ describes licking, especially licking dust.",
+  "words": [
+    {
+      "lemma": "לָחַךְ",
+      "pos": "verb",
+      "gloss": "lick",
+      "bdb": [
+        "l.bg.aa"
+      ],
+      "stems": [
+        {
+          "stem": "piel",
+          "gloss": "lick",
+          "senses": [
+            {
+              "gloss": "lick",
+              "definition": "Lick up or consume with the tongue.",
+              "evidence": [
+                {
+                  "ref": "Psa.72.9",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-lahak",
+      "lang": "ar",
+      "form": "لَحِقَ",
+      "translit": "laḥiqa",
+      "gloss": "overtake, follow",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "root لحق",
+          "note": "Arabic root describes following or overtaking, related to licking up by extension."
+        }
+      ]
+    }
+  ],
+  "note": "The verse pictures defeated enemies or wilderness creatures licking dust before the king. The root brief also contains no noun beyond this verb."
+}
