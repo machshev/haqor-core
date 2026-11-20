@@ -1,0 +1,44 @@
+{
+  "id": "rush",
+  "root": "רוש",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "poverty"
+  ],
+  "gloss": "be poor; needy",
+  "summary": "רוש describes poverty and need. Psalm 34:11 says those who seek Yahweh lack no good thing.",
+  "words": [
+    {
+      "lemma": "רוּשׁ",
+      "bdb": [
+        "t.br.aa"
+      ],
+      "pos": "verb",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "be poor",
+          "senses": [
+            {
+              "gloss": "be poor",
+              "definition": "To be reduced to poverty or need.",
+              "evidence": [
+                {
+                  "ref": "Psa.34.11",
+                  "role": "defining",
+                  "note": "The young lions may lack and hunger."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gloss": "be poor"
+    }
+  ],
+  "cognates": [],
+  "doctrine": [],
+  "note": "Drafted for Psalm 34 coverage."
+}

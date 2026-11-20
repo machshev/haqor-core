@@ -1,0 +1,71 @@
+{
+  "id": "taam",
+  "root": "טעמ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "taste",
+    "judgment"
+  ],
+  "gloss": "taste; discernment",
+  "summary": "טעם concerns tasting and the discernment or judgment associated with it. Psalm 34:9 invites the reader to taste and see that Yahweh is good.",
+  "words": [
+    {
+      "lemma": "טַעַם",
+      "bdb": [
+        "i.be.ab"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "senses": [
+        {
+          "gloss": "taste; discernment",
+          "definition": "Taste, or the discernment by which a person judges.",
+          "evidence": [
+            {
+              "ref": "Psa.34.1",
+              "role": "defining",
+              "note": "David says his praise will continually be in his mouth."
+            },
+            {
+              "ref": "Psa.34.9",
+              "role": "defining",
+              "note": "Taste and see that Yahweh is good."
+            }
+          ]
+        }
+      ],
+      "gloss": "taste"
+    },
+    {
+      "lemma": "טָעַם",
+      "bdb": [
+        "i.be.aa"
+      ],
+      "pos": "verb",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "taste",
+          "senses": [
+            {
+              "gloss": "taste",
+              "definition": "To taste or experience.",
+              "evidence": [
+                {
+                  "ref": "Psa.34.9",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gloss": "taste"
+    }
+  ],
+  "cognates": [],
+  "doctrine": [],
+  "note": "Drafted for Psalm 34 coverage."
+}
