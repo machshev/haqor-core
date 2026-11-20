@@ -90,21 +90,19 @@
     {
       "analysis": {
         "entry": {
-          "draft": {
-            "article_id": "3dn",
-            "base": "0073ee93365c2a8b78250ac250b810c65257463dee47801a0e7571bda8592234",
-            "change": "Add a place-name word for עֵדֶן alongside the identically pointed noun meaning delight.",
-            "definition": "Eden is the place where Yahweh God planted a garden.",
-            "evidence": "Genesis 2:8 locates the garden with the phrase גַּן בְּעֵדֶן, “a garden in Eden.”"
-          }
+          "existing": "3dn",
+          "sense": "eden",
+          "word": 0
         },
-        "evidence": "In וַיִּטַּע יַהְוֶה אֱלֹהִים גַּן בְּעֵדֶן, גַּן names what Yahweh God planted, and בְּעֵדֶן says where he planted it. The following שָׁם, “there,” refers back to that location.",
+        "evidence": "In גַּן בְּעֵדֶן, גַּן names what Yahweh God planted, and בְּעֵדֶן says where he planted it. The following שָׁם, “there,” refers back to that location.",
         "gloss": "in Eden",
         "language": "he",
         "lemma": "עֵדֶן",
-        "morphology": "Locative preposition בְּ prefixed to the singular proper noun עֵדֶן.",
+        "morph": "HR/Np",
+        "morphology": "The locative preposition בְּ, “in,” is prefixed to the singular proper noun עֵדֶן.",
         "qualifier": "place name",
         "root": "עדנ",
+        "segments": "בְּ/עֵדֶן",
         "sense": "Eden, the place where Yahweh God planted a garden."
       },
       "position": 4,
