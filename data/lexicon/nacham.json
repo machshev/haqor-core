@@ -8,7 +8,7 @@
     "psalms-21-30"
   ],
   "gloss": "comfort",
-  "summary": "Comfort answers grief and restores courage.",
+  "summary": "The root turns between grief and comfort. A person may grieve or relent, while the piel gives comfort and the passive stems receive it. Psalm 23 places comfort in Yahweh’s shepherding presence.",
   "words": [
     {
       "lemma": "נחם",
@@ -19,15 +19,94 @@
       "gloss": "comfort",
       "stems": [
         {
+          "stem": "qal",
+          "gloss": "be sorry, relent",
+          "senses": [
+            {
+              "gloss": "be sorry, relent",
+              "definition": "Yahweh relents from announced judgment, while people grieve and turn.",
+              "evidence": [
+                {
+                  "ref": "Exo.32.14",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jon.3.10"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be comforted",
+          "senses": [
+            {
+              "gloss": "be comforted",
+              "definition": "Jacob refuses comfort after Joseph is reported dead.",
+              "evidence": [
+                {
+                  "ref": "Gen.37.35",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
           "stem": "piel",
           "gloss": "comfort",
           "senses": [
             {
               "gloss": "comfort",
-              "definition": "Yahweh’s staff and rod comfort the psalmist.",
+              "definition": "The shepherd’s staff and rod comfort the psalmist.",
               "evidence": [
                 {
                   "ref": "Psa.23.4",
+                  "role": "defining"
+                }
+              ]
+            },
+            {
+              "gloss": "console",
+              "definition": "God comforts the afflicted and his people comfort one another.",
+              "evidence": [
+                {
+                  "ref": "Isa.40.1"
+                },
+                {
+                  "ref": "2Co.1.4"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hithpael",
+          "gloss": "comfort oneself",
+          "senses": [
+            {
+              "gloss": "comfort oneself",
+              "definition": "The bereaved seek comfort after loss.",
+              "evidence": [
+                {
+                  "ref": "2Sa.13.39",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be comforted",
+          "senses": [
+            {
+              "gloss": "be comforted",
+              "definition": "The people are promised consolation after mourning.",
+              "evidence": [
+                {
+                  "ref": "Isa.66.13",
                   "role": "defining"
                 }
               ]
@@ -60,5 +139,5 @@
   ],
   "cognates": [],
   "doctrine": [],
-  "note": "Drafted for Psalms 21–30; some homographic names remain separate."
+  "note": "All principal Hebrew stems are now represented. The relationship between relenting and consoling is carried by the biblical pattern of grief answered by changed action and comfort."
 }

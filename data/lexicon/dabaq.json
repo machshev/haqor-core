@@ -34,6 +34,9 @@
             }
           ]
         }
+      ],
+      "cognate_ids": [
+        "sem-dabaq"
       ]
     },
     {
@@ -54,6 +57,9 @@
             }
           ]
         }
+      ],
+      "cognate_ids": [
+        "sem-dabaq"
       ]
     },
     {
@@ -75,10 +81,28 @@
           ]
         }
       ],
-      "gender": "m"
+      "gender": "m",
+      "cognate_ids": [
+        "sem-dabaq"
+      ]
     }
   ],
-  "cognates": [],
+  "cognates": [
+    {
+      "id": "sem-dabaq",
+      "lang": "sem",
+      "form": "dbq[join]",
+      "translit": "dbq",
+      "gloss": "join, stick",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "anderson-moser-2024",
+          "locator": "SEM000041 dbq[join]V"
+        }
+      ]
+    }
+  ],
   "doctrine": [],
   "note": "Drafted for Psalms 21–30; some homographic names remain separate."
 }
