@@ -817,15 +817,17 @@ pub fn backfill_carry_keys(db: &mut Connection) -> Result<usize> {
     let tx = db.transaction()?;
     let mut verses: BTreeMap<(String, i64), Value> = BTreeMap::new();
     for (source, reference, pos) in &rows {
-        if !verses.contains_key(&(source.clone(), *reference)) {
-            let raw: String = tx.query_row(
-                "SELECT review_input(source,ref,packet) FROM verse WHERE source=? AND ref=?",
-                params![source, reference],
-                |r| r.get(0),
-            )?;
-            verses.insert((source.clone(), *reference), serde_json::from_str(&raw)?);
-        }
-        let verse = &verses[&(source.clone(), *reference)];
+        let verse = match verses.entry((source.clone(), *reference)) {
+            std::collections::btree_map::Entry::Occupied(e) => e.into_mut(),
+            std::collections::btree_map::Entry::Vacant(e) => {
+                let raw: String = tx.query_row(
+                    "SELECT review_input(source,ref,packet) FROM verse WHERE source=? AND ref=?",
+                    params![source, reference],
+                    |r| r.get(0),
+                )?;
+                e.insert(serde_json::from_str(&raw)?)
+            }
+        };
         let Some(word) = verse["words"]
             .as_array()
             .into_iter()
