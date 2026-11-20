@@ -97,6 +97,14 @@ enum Action {
         /// Codex reasoning effort for escalated jobs.
         #[arg(long, conflicts_with = "worker")]
         escalate_effort: Option<String>,
+        /// Codex model for drafting lexicon articles. With this or --draft-effort,
+        /// other word workers may not draft: a word no article covers moves to
+        /// this route.
+        #[arg(long, conflicts_with = "worker")]
+        draft_model: Option<String>,
+        /// Codex reasoning effort for drafting lexicon articles.
+        #[arg(long, conflicts_with = "worker")]
+        draft_effort: Option<String>,
         #[arg(long, default_value = "data/lexicon")]
         lexicon: PathBuf,
         #[arg(long, default_value = "data")]
@@ -175,6 +183,152 @@ enum Action {
     FillMorph,
     /// Write reviewed verse packets including lexical drafts and contextual glosses to stdout as JSONL.
     Export,
+}
+
+/// How each job reaches a worker: its backend, model and effort, by kind and
+/// purpose. Every attempt records the route it took (see `status`).
+struct Routes {
+    worker: Option<PathBuf>,
+    chat: Option<String>,
+    model: Option<String>,
+    effort: Option<String>,
+    verse_model: Option<String>,
+    verse_effort: Option<String>,
+    escalate_model: Option<String>,
+    escalate_effort: Option<String>,
+    draft_model: Option<String>,
+    draft_effort: Option<String>,
+}
+
+#[derive(Debug, PartialEq)]
+struct Route {
+    kind: &'static str,
+    /// first, escalated (a retry, rework or reopening) or draft.
+    purpose: &'static str,
+    /// codex, chat or worker.
+    backend: &'static str,
+    model: Option<String>,
+    effort: Option<String>,
+}
+
+impl Routes {
+    fn escalates(&self) -> bool {
+        self.escalate_model.is_some() || self.escalate_effort.is_some()
+    }
+    fn drafts(&self) -> bool {
+        self.draft_model.is_some() || self.draft_effort.is_some()
+    }
+    fn route(&self, packet: &Value) -> Route {
+        let verse = packet["kind"] == "verse";
+        let kind = if verse { "verse" } else { "word" };
+        let codex = if self.worker.is_some() {
+            "worker"
+        } else {
+            "codex"
+        };
+        // The configured first-attempt settings, which Codex routes inherit
+        // unless the chat endpoint holds them.
+        let (model, effort) = if verse {
+            (
+                self.verse_model.clone().or(self.model.clone()),
+                self.verse_effort.clone().or(self.effort.clone()),
+            )
+        } else {
+            (self.model.clone(), self.effort.clone())
+        };
+        let (inherit_model, inherit_effort) = match self.chat {
+            Some(_) => (None, None),
+            None => (model.clone(), effort.clone()),
+        };
+        if !verse && self.drafts() && packet["draft_requested"].is_string() {
+            return Route {
+                kind,
+                purpose: "draft",
+                backend: codex,
+                model: self
+                    .draft_model
+                    .clone()
+                    .or(self.escalate_model.clone())
+                    .or(inherit_model),
+                effort: self
+                    .draft_effort
+                    .clone()
+                    .or(self.escalate_effort.clone())
+                    .or(inherit_effort),
+            };
+        }
+        if self.escalates() && !(packet["feedback"].is_null() && packet["last_error"].is_null()) {
+            return Route {
+                kind,
+                purpose: "escalated",
+                backend: codex,
+                model: self.escalate_model.clone().or(inherit_model),
+                effort: self.escalate_effort.clone().or(inherit_effort),
+            };
+        }
+        Route {
+            kind,
+            purpose: "first",
+            backend: if self.chat.is_some() { "chat" } else { codex },
+            model,
+            effort,
+        }
+    }
+}
+
+/// Attempts by route: how many, how many failed validation, and how many
+/// accepted results were later redone (sent back by the verse reviewer,
+/// reopened, or handed to drafting), with average input tokens. Attempts from
+/// before routes were recorded are grouped as unrecorded.
+fn route_report(db: &Connection) -> Result<()> {
+    let mut q = db.prepare(
+        "SELECT coalesce(json_extract(a.usage,'$.route.kind') || ' ' || json_extract(a.usage,'$.route.purpose')
+                  || coalesce(' ' || json_extract(a.usage,'$.route.backend'), '')
+                  || coalesce(' ' || json_extract(a.usage,'$.route.model'), ' default-model')
+                  || coalesce(' ' || json_extract(a.usage,'$.route.effort'), ' default-effort'),
+                  'unrecorded'),
+                count(*), sum(a.error IS NOT NULL),
+                sum(a.error IS NULL AND EXISTS(SELECT 1 FROM attempt b
+                    WHERE b.source=a.source AND b.ref=a.ref AND b.pos=a.pos AND b.rowid>a.rowid)),
+                coalesce(round(avg(json_extract(a.usage,'$.input_tokens'))),0)
+         FROM attempt a GROUP BY 1 ORDER BY 1",
+    )?;
+    let mut rows = q.query([])?;
+    println!("Route: attempts, failed, later redone, average input tokens");
+    while let Some(r) = rows.next()? {
+        println!(
+            "  {}: {}, {}, {}, {}",
+            r.get::<_, String>(0)?,
+            r.get::<_, i64>(1)?,
+            r.get::<_, i64>(2)?,
+            r.get::<_, i64>(3)?,
+            r.get::<_, f64>(4)? as i64
+        );
+    }
+    Ok(())
+}
+
+/// A routine worker that drafts despite being told not to hands the word to
+/// drafting instead: its draft is not published.
+fn hand_off_draft(packet: &Value, answer: Value) -> Value {
+    if packet["drafting"] == "forbidden" && answer["entry"]["draft"].is_object() {
+        return json!({"needs_draft": format!(
+            "The routine worker proposed a new or changed article: {}",
+            answer["entry"]["draft"]["change"].as_str().unwrap_or("no reason given")
+        )});
+    }
+    answer
+}
+
+/// The worker's usage with the route recorded on it.
+fn with_route(usage: Value, route: &Route) -> Value {
+    let mut usage = match usage {
+        Value::Object(_) => usage,
+        _ => json!({}),
+    };
+    usage["route"] = json!({"kind": route.kind, "purpose": route.purpose, "backend": route.backend,
+        "model": route.model, "effort": route.effort});
+    usage
 }
 
 fn writer_lock(path: &Path) -> Result<File> {
@@ -305,6 +459,8 @@ fn main() -> Result<()> {
             verse_effort,
             escalate_model,
             escalate_effort,
+            draft_model,
+            draft_effort,
             lexicon,
         } => {
             ensure!(
@@ -312,8 +468,20 @@ fn main() -> Result<()> {
                 "limits must be positive"
             );
             eprintln!("Preparing review queue {}…", cli.state.display());
-            let escalate = escalate_model.is_some() || escalate_effort.is_some();
-            let codex = worker.is_none() && (chat_endpoint.is_none() || escalate);
+            let routes = Routes {
+                worker: worker.clone(),
+                chat: chat_endpoint.clone(),
+                model: model.clone(),
+                effort: effort.clone(),
+                verse_model: verse_model.clone(),
+                verse_effort: verse_effort.clone(),
+                escalate_model: escalate_model.clone(),
+                escalate_effort: escalate_effort.clone(),
+                draft_model: draft_model.clone(),
+                draft_effort: draft_effort.clone(),
+            };
+            let codex = worker.is_none()
+                && (chat_endpoint.is_none() || routes.escalates() || routes.drafts());
             let _quota = codex.then(quota::monitor);
             let live = live::Live::open(&src_texts, &lexicon, &data)?;
             live.recover(&mut db)?;
@@ -328,46 +496,30 @@ fn main() -> Result<()> {
                 max_agents,
                 max_attempts,
                 &|packet| {
-                    let verse = packet["kind"] == "verse";
-                    let model = if verse {
-                        verse_model.as_deref().or(model.as_deref())
-                    } else {
-                        model.as_deref()
-                    };
-                    let effort = if verse {
-                        verse_effort.as_deref().or(effort.as_deref())
-                    } else {
-                        effort.as_deref()
-                    };
-                    // Clean first attempts take the configured route; a job that came
-                    // back with an error, a reviewer's reason or a reopening escalates.
-                    let escalated = escalate
-                        && !(packet["feedback"].is_null() && packet["last_error"].is_null());
-                    if escalated {
-                        return invoke(
-                            None,
-                            escalate_model.as_deref().or(if chat_endpoint.is_some() {
-                                None
-                            } else {
-                                model
-                            }),
-                            escalate_effort.as_deref().or(if chat_endpoint.is_some() {
-                                None
-                            } else {
-                                effort
-                            }),
-                            &jobs::prompt(packet),
-                        );
+                    let route = routes.route(packet);
+                    let mut packet = packet.clone();
+                    if routes.drafts() && packet["kind"] == "word" {
+                        packet["drafting"] = json!(if route.purpose == "draft" {
+                            "requested"
+                        } else {
+                            "forbidden"
+                        });
                     }
-                    if let Some(endpoint) = &chat_endpoint {
-                        return chat::review(
-                            endpoint,
-                            model.context("missing model")?,
-                            packet,
+                    let (answer, usage) = match route.backend {
+                        "chat" => chat::review(
+                            routes.chat.as_deref().context("missing endpoint")?,
+                            route.model.as_deref().context("missing model")?,
+                            &packet,
                             &lexicon,
-                        );
-                    }
-                    invoke(worker.as_deref(), model, effort, &jobs::prompt(packet))
+                        )?,
+                        _ => invoke(
+                            routes.worker.as_deref(),
+                            route.model.as_deref(),
+                            route.effort.as_deref(),
+                            &jobs::prompt(&packet),
+                        )?,
+                    };
+                    Ok((hand_off_draft(&packet, answer), with_route(usage, &route)))
                 },
             )
         }
@@ -409,7 +561,7 @@ fn main() -> Result<()> {
             println!(
                 "Finished attempts {attempts}, reported input tokens {input}, output tokens {output}"
             );
-            Ok(())
+            route_report(&db)
         }
         Action::Reassign {
             language,
@@ -561,7 +713,10 @@ fn schedule(
                     let start = std::time::Instant::now();
                     // A word reviewed identically before needs no agent (jobs::carry).
                     let result = match packet.get("carry") {
-                        Some(answer) => Ok((answer.clone(), json!({"carried": true}))),
+                        Some(answer) => Ok((
+                            answer.clone(),
+                            json!({"carried": true, "route": {"kind": "word", "purpose": "carried"}}),
+                        )),
                         None => std::panic::catch_unwind(std::panic::AssertUnwindSafe(|| {
                             worker(&packet)
                         }))
@@ -844,6 +999,95 @@ mod tests {
         }
         db
     }
+    fn routes() -> Routes {
+        Routes {
+            worker: None,
+            chat: None,
+            model: Some("sol".into()),
+            effort: None,
+            verse_model: Some("astra".into()),
+            verse_effort: Some("high".into()),
+            escalate_model: Some("astra".into()),
+            escalate_effort: Some("high".into()),
+            draft_model: Some("astra".into()),
+            draft_effort: Some("xhigh".into()),
+        }
+    }
+
+    #[test]
+    fn each_job_takes_the_route_its_purpose_needs() {
+        let r = routes();
+        let first = r.route(&json!({"kind":"word"}));
+        assert_eq!(
+            (first.purpose, first.backend, first.model.as_deref()),
+            ("first", "codex", Some("sol"))
+        );
+        let verse = r.route(&json!({"kind":"verse"}));
+        assert_eq!(
+            (verse.model.as_deref(), verse.effort.as_deref()),
+            (Some("astra"), Some("high"))
+        );
+        let back = r.route(&json!({"kind":"word","feedback":"check the stem"}));
+        assert_eq!(
+            (back.purpose, back.effort.as_deref()),
+            ("escalated", Some("high"))
+        );
+        // Drafting outranks escalation: a draft request also carries feedback.
+        let draft = r.route(
+            &json!({"kind":"word","feedback":"Drafting requested: x","draft_requested":"x"}),
+        );
+        assert_eq!(
+            (draft.purpose, draft.effort.as_deref()),
+            ("draft", Some("xhigh"))
+        );
+        // With a chat endpoint, first attempts use it and the rest use Codex.
+        let chat = Routes {
+            chat: Some("http://x".into()),
+            ..routes()
+        };
+        assert_eq!(chat.route(&json!({"kind":"word"})).backend, "chat");
+        assert_eq!(
+            chat.route(&json!({"kind":"word","last_error":"bad"}))
+                .backend,
+            "codex"
+        );
+        // Without a drafting route nothing changes for drafts.
+        let plain = Routes {
+            draft_model: None,
+            draft_effort: None,
+            ..routes()
+        };
+        assert_eq!(
+            plain
+                .route(&json!({"kind":"word","draft_requested":"x"}))
+                .purpose,
+            "first"
+        );
+        assert_eq!(
+            with_route(json!({"input_tokens":5}), &first)["route"]["model"],
+            "sol"
+        );
+    }
+
+    #[test]
+    fn a_routine_worker_cannot_publish_a_draft() {
+        let draft = json!({"entry":{"draft":{"change":"new article"},"word":0}});
+        let routine = json!({"kind":"word","drafting":"forbidden"});
+        let handed = hand_off_draft(&routine, draft.clone());
+        assert!(
+            handed["needs_draft"]
+                .as_str()
+                .unwrap()
+                .contains("new article")
+        );
+        let drafter = json!({"kind":"word","drafting":"requested"});
+        assert_eq!(hand_off_draft(&drafter, draft.clone()), draft);
+        let routine_prompt = jobs::prompt(&routine);
+        assert!(routine_prompt.contains("needs_draft"));
+        assert!(jobs::prompt(&drafter).contains("Write the draft"));
+        assert!(!jobs::prompt(&json!({"kind":"word"})).contains("needs_draft"));
+    }
+
     fn word() -> Value {
         json!({"language":"grc","lemma":"λόγος","root":"","qualifier":"","morphology":"noun",
             "morph":"N-NSM","segments":"","sense":"word","gloss":"word","evidence":"fixture occurrence","entry":{"draft":{"definition":"word","change":"new","evidence":"fixture"},"word":0}})

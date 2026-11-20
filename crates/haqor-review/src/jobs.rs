@@ -34,6 +34,9 @@ CREATE INDEX IF NOT EXISTS lexemes ON job(json_extract(result,'$.language'),json
 CREATE TABLE IF NOT EXISTS carry_key(source TEXT,ref INTEGER,pos INTEGER,surface TEXT NOT NULL,tag TEXT NOT NULL,
  PRIMARY KEY(source,ref,pos),FOREIGN KEY(source,ref,pos) REFERENCES job ON DELETE CASCADE) WITHOUT ROWID;
 CREATE INDEX IF NOT EXISTS carry_lookup ON carry_key(source,surface,tag);
+CREATE TABLE IF NOT EXISTS draft_request(source TEXT,ref INTEGER,pos INTEGER,reason TEXT NOT NULL,
+ PRIMARY KEY(source,ref,pos),FOREIGN KEY(source,ref,pos) REFERENCES job ON DELETE CASCADE) WITHOUT ROWID;
+CREATE INDEX IF NOT EXISTS attempt_job ON attempt(source,ref,pos);
 ";
 
 #[derive(Clone, Debug)]
@@ -182,6 +185,17 @@ pub fn packet(db: &Connection, j: &Job, catalog: &Catalog) -> Result<Value> {
                 .collect::<Vec<_>>()
         );
         p["word"] = word.clone();
+        // A routine worker found no article to cover the word; this one drafts.
+        let requested: Option<String> = db
+            .query_row(
+                "SELECT reason FROM draft_request WHERE source=? AND ref=? AND pos=?",
+                j.key(),
+                |r| r.get(0),
+            )
+            .optional()?;
+        if let Some(reason) = requested {
+            p["draft_requested"] = json!(reason);
+        }
         let corrected: Option<String> = db
             .query_row(
                 "SELECT lemma FROM corrected_headword WHERE source=? AND ref=? AND pos=?",
@@ -315,15 +329,23 @@ pub struct Word {
 }
 const WORD: &str = r#"Analyse only the marked occurrence in its verse. Return one JSON object with string fields language (he, arc, syc, grc), lemma (pointed dictionary form, Hebrew script for Semitic), qualifier (empty unless needed to distinguish a homograph, e.g. noun), root (Haqor consonantal root; empty if unknown), morph, segments, morphology, sense, gloss, evidence (explain using the text), and entry. For entry use {"existing":"article id","word":N,"sense":"sense id"} when a candidate covers this word and sense, where N is that candidate's word index (the position of the lexeme in the article's words list) and sense is the id of the candidate's sense this occurrence bears. Otherwise provide {"draft":{"definition":"...","evidence":"...","change":"..."},"word":N} proposing the new or corrected lexical content, where N is the index of this occurrence's lexeme in draft.article.words (0 for a personal-name or Greek article), with "sense": the id of the sense it bears in that lexeme (omit it for a personal name; for Greek, the sense name). Existing lexemes keep their indices and existing senses keep their ids: never reorder or remove words, never rename or remove a sense id; add a new lexeme at the end of its words list, and give every new sense a new kebab-case id. If a previous analysis covers exactly your language, lemma, qualifier, root and sense, copy those fields and return entry {"reuse":[ref,pos]} using its at coordinates. For a new or amended Semitic entry include draft.article, the COMPLETE draft Haqor JSON article, following data/lexicon/README.md, with its lemma, root, senses and verse evidence. For a personal-name article preserve its existing people list; a new article may leave people empty until verse review assigns its bearers. Read the existing article before editing it. Use the candidate revision as draft.base, or null for a new file. If you discover an existing article outside the listed candidates use its SHA256 file digest. For Greek use an existing Greek dictionary candidate if it covers this sense, or provide draft.definition, draft.evidence and draft.change to update the shared Greek entry. Use Greek script for Greek. Treat source tags and candidate roots as evidence to check. If the occurrence cannot be assigned responsibly, return only {"unresolved":"explain the competing readings and what evidence is missing"}. morph is the machine-readable morphology. For Hebrew, Aramaic and Syriac give an OSHB morphology code: H for Hebrew or A for Aramaic and Syriac, then one segment per part of the word separated by /, prefixes first and pronominal suffixes last (e.g. HC/Vqw3ms, HR/Ncfsa, HNcmpc/Sp3ms). The packet's source_analysis.oshb_morph is the OSHB reading: check it and correct it where the text requires. segments is the word split at / into the same parts as the code (e.g. וַ/יְבָרֶךְ); a word of one part is written whole. For Greek give the Robinson code (e.g. V-AAI-3S) as in source_analysis.grammar, and segments empty. morphology explains the reading in prose. Prefixes and suffixes belong in morphology. Use read-only local reference material when needed."#;
 const VERSE: &str = r#"Review every word's gloss in context, then read the whole verse in continuous English. Return {"translation":"...","glosses":[{"position":0,"gloss":"..."}]} with exactly one gloss per listed position. In translation encode English spans as [English|position] (multiple positions comma-separated only when necessary), supplied words in braces. Account for every source position. Preserve the project's translation conventions. Words marked carried were not analysed afresh: they repeat earlier identical reviews of the same word and source tagging. Check that their lexeme and sense fit this verse, and rework any that do not. If a word analysis needs changing first, instead return {"rework":[{"position":0,"reason":"..."}]}. Give precise reasons and return only the affected positions. On every completed verse include entities: an array of {position,key,evidence} for EACH explicit person or place name, and each name of God or of another named divine being, which the candidates hold as existing records (kind other). Empty means no such names. Match the actual bearer using verse context, family, role and location. Check all same-name candidates; source tags are evidence. Reuse the existing bearer key wherever supported, including previous proposals. If a bearer is missing, add new:{name,kind,description} to its mention, with kind person or place and a description distinguishing it from homonyms. Use a stable Name@Book.Chapter.Verse key anchored to evidence; when the same verse introduces two namesakes append # plus a distinguishing role. Distinct bearers may have identical names and dictionary forms. Preserve uncertain identity for review by returning {"unresolved":"reason"} rather than inventing a bearer. Do not identify mere pronouns or ordinary nouns as names."#;
+/// Set by the dispatcher on a word packet when drafting has its own route:
+/// routine workers may not draft, and the drafting worker is told why.
+const NO_DRAFT: &str = r#"Do not write a draft in this task. If no candidate covers this word and sense, return only {"needs_draft":"what the existing articles lack for this occurrence"} and a lexicographer will draft it."#;
+const DRAFT: &str = "A reviewer found that no existing article covers this occurrence. Their reason follows as draft_requested. Write the draft, or use a candidate if one does cover it after all.";
+
 pub fn prompt(packet: &Value) -> String {
+    let task = if packet["kind"] == "word" {
+        match packet["drafting"].as_str() {
+            Some("forbidden") => format!("{WORD} {NO_DRAFT}"),
+            Some("requested") => format!("{WORD} {DRAFT}"),
+            _ => WORD.to_owned(),
+        }
+    } else {
+        VERSE.to_owned()
+    };
     format!(
-        "{}\nUse the published analysis or translation in this packet as the current edition when making corrections. Preserve prior supported content. Return JSON only. Source packet:\n{}",
-        if packet["kind"] == "word" {
-            WORD
-        } else {
-            VERSE
-        },
-        packet
+        "{task}\nUse the published analysis or translation in this packet as the current edition when making corrections. Preserve prior supported content. Return JSON only. Source packet:\n{packet}"
     )
 }
 
@@ -533,6 +555,23 @@ pub fn accept(
         crate::people::request_names(db, j, &answer)?;
     }
     let tx = db.transaction()?;
+    if let Some(reason) = answer.get("needs_draft") {
+        ensure!(j.pos >= 0, "only a word can ask for a draft");
+        nonempty(&answer, "needs_draft")?;
+        // Not a failed attempt: the word moves to the drafting route.
+        tx.execute("UPDATE job SET state='ready',attempts=max(0,attempts-1),feedback=?,result=NULL,usage=?,error=NULL WHERE source=? AND ref=? AND pos=?",
+            params![format!("Drafting requested: {}", reason.as_str().unwrap_or("")),usage.to_string(),j.source,j.reference,j.pos])?;
+        tx.execute(
+            "INSERT OR REPLACE INTO draft_request VALUES(?,?,?,?)",
+            params![j.source, j.reference, j.pos, reason.as_str()],
+        )?;
+        tx.commit()?;
+        return Ok(());
+    }
+    tx.execute(
+        "DELETE FROM draft_request WHERE source=? AND ref=? AND pos=?",
+        j.key(),
+    )?;
     if answer.get("unresolved").is_some() {
         nonempty(&answer, "unresolved")?;
         tx.execute("UPDATE job SET state='unresolved',feedback=?,result=NULL,usage=?,error=NULL WHERE source=? AND ref=? AND pos=?",
@@ -946,6 +985,44 @@ mod carry_tests {
             })
             .unwrap();
         assert_eq!(carried, 1);
+    }
+
+    #[test]
+    fn a_word_no_article_covers_moves_to_drafting() {
+        let mut db = queue();
+        seed(&db, ["word", "word"]);
+        let p = super::packet(&db, &third(), &Catalog::default()).unwrap();
+        accept(
+            &mut db,
+            &third(),
+            json!({"needs_draft":"no sense of speech"}),
+            &json!({}),
+            &p,
+        )
+        .unwrap();
+        let (state, attempts, reason): (String, i64, String) = db
+            .query_row(
+                "SELECT state,attempts,(SELECT reason FROM draft_request) FROM job WHERE ref=3 AND pos=0",
+                [],
+                |r| Ok((r.get(0)?, r.get(1)?, r.get(2)?)),
+            )
+            .unwrap();
+        assert_eq!(
+            (state.as_str(), attempts, reason.as_str()),
+            ("ready", 0, "no sense of speech")
+        );
+        // The drafter sees why, and the word is not carried past it.
+        let p = super::packet(&db, &third(), &Catalog::default()).unwrap();
+        assert_eq!(p["draft_requested"], "no sense of speech");
+        assert!(p.get("carry").is_none());
+        // A finished answer settles the request.
+        let mut answer = analysis("word");
+        answer["entry"] = json!({"reuse": p["previous_analyses"][0]["at"]});
+        accept(&mut db, &third(), answer, &json!({}), &p).unwrap();
+        let open: i64 = db
+            .query_row("SELECT count(*) FROM draft_request", [], |r| r.get(0))
+            .unwrap();
+        assert_eq!(open, 0);
     }
 
     #[test]

@@ -35,6 +35,7 @@ A verse becomes ready when every word result has passed validation and been save
 
 - By default each job starts a fresh read-only `codex exec` session. Use `--model MODEL` to select its model. Use `--verse-model` to give verse reviews a different model, and `--effort` and `--verse-effort` to set Codex reasoning effort for word and verse jobs. Unset options take the values in `~/.codex/config.toml`. The process can consult local sources when a word needs additional evidence. CLI instructions, tool definitions and follow-up reads contribute to billed input.
 - `--escalate-model` and `--escalate-effort` route escalated jobs differently from first attempts. An escalated job is a retry after an error, a word a verse reviewer sent back, or a reopened occurrence. With a chat endpoint as well, first attempts use the endpoint and escalated jobs use Codex with these settings.
+- `--draft-model` and `--draft-effort` give article drafting its own route. When either is set, other word workers may not draft. A word that no article covers returns `{"needs_draft": reason}` and is requeued for the drafting route without spending an attempt. A routine worker that drafts anyway has its draft turned into such a request. The drafting worker sees the reason as `draft_requested`.
 - For smaller prompts use a chat-completions endpoint. Rust sends a fresh message list for every job using `curl`. A word may request one candidate article, up to 48,000 bytes, before answering. The endpoint needs to support JSON-object responses. Configure `HAQOR_REVIEW_API_KEY` in the environment if it expects a bearer token. Authenticated requests use curl 8.3 or newer.
 - Use `--worker PATH` for a custom executable. It receives one UTF-8 prompt on stdin and writes a single JSON object to stdout. Each prompt specifies the output fields and ends with a JSON packet after the line `Source packet:`. The process owns its stdout protocol and can write diagnostics to stderr.
 
@@ -45,7 +46,14 @@ target/release/haqor-review run --max-agents 4 \
   --chat-endpoint http://localhost:8000/v1/chat/completions --model "$REVIEW_MODEL"
 ```
 
-`status` shows counts by edition, job type and state, plus reported token usage. The SQLite `attempt` table records elapsed milliseconds, reported usage and errors. A worker transport failure stops new dispatch and lets active workers finish. Restart with `run` after fixing the worker. Invalid results are retried up to `--max-attempts` (default three). Use `retry` to reset failed jobs. A worker can mark a disputed occurrence unresolved and record its reason. Its verse waits. `retry --evidence '...'` reopens unresolved occurrences in that queue with the supplied evidence.
+`status` shows counts by edition, job type and state, plus reported token usage. Each attempt records its route: job kind, purpose (first, escalated, draft or carried), backend, model and effort. `status` lists, per route, the attempts, the failed attempts, the accepted results later redone (sent back, reopened or handed to drafting), and the average input tokens. Use it to compare routes on a pilot chapter before choosing defaults. One starting point keeps routine words on a fast model and gives judgement work the strongest one:
+
+```sh
+target/release/haqor-review run --max-agents 4 --model gpt-6.2-sol \
+  --verse-model gpt-6.2-astra --verse-effort high \
+  --escalate-model gpt-6.2-astra --escalate-effort high \
+  --draft-model gpt-6.2-astra --draft-effort xhigh
+``` The SQLite `attempt` table records elapsed milliseconds, reported usage and errors. A worker transport failure stops new dispatch and lets active workers finish. Restart with `run` after fixing the worker. Invalid results are retried up to `--max-attempts` (default three). Use `retry` to reset failed jobs. A worker can mark a disputed occurrence unresolved and record its reason. Its verse waits. `retry --evidence '...'` reopens unresolved occurrences in that queue with the supplied evidence.
 
 ## Dictionary changes and outputs
 
