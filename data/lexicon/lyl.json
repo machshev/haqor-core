@@ -40,7 +40,6 @@
       "pos": "noun",
       "senses": [
         {
-          "id": "the-hours-of-darkness",
           "cognate_ids": [
             "ar-layl"
           ],
@@ -71,10 +70,10 @@
               "role": "example"
             }
           ],
-          "gloss": "the hours of darkness"
+          "gloss": "the hours of darkness",
+          "id": "the-hours-of-darkness"
         },
         {
-          "id": "day-and-night-continually",
           "cognate_ids": [
             "ar-layl"
           ],
@@ -88,10 +87,13 @@
               "ref": "Psa.1.2"
             },
             {
-              "ref": "Gen.8.22"
+              "note": "Day and night close the list of recurring pairs. Their alternation will continue as long as the earth endures.",
+              "ref": "Gen.8.22",
+              "role": "example"
             }
           ],
-          "gloss": "day and night, continually"
+          "gloss": "day and night, continually",
+          "id": "day-and-night-continually"
         }
       ],
       "usage": {
@@ -134,7 +136,6 @@
       "root": "לילא",
       "senses": [
         {
-          "id": "night",
           "definition": "Daniel receives a vision in the night. The same word fixes the time of Belshazzar’s death.",
           "evidence": [
             {
@@ -154,7 +155,8 @@
               "ref": "Dan.7.13"
             }
           ],
-          "gloss": "night"
+          "gloss": "night",
+          "id": "night"
         }
       ]
     },
@@ -171,7 +173,6 @@
       "root": "לילי",
       "senses": [
         {
-          "id": "night-2",
           "definition": "Shepherds keep watch over their flock by night. John marks the departure of Judas from the meal by saying it was night.",
           "evidence": [
             {
@@ -185,7 +186,8 @@
               "ref": "Jhn.11.10"
             }
           ],
-          "gloss": "night"
+          "gloss": "night",
+          "id": "night-2"
         }
       ]
     }
