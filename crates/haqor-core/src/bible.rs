@@ -3747,7 +3747,7 @@ impl Bible {
         // bearable — for an answer that is now fixed at build time.
         let reviewed_overlay = self.has_table("review_occurrence")?;
         let columns = if reviewed_overlay {
-            "COALESCE(rg.text, ''), COALESCE(ro.root, wi.root), COALESCE(ro.gloss, g.text), c.part_of_speech, c.form, c.tense, c.person, c.gender, c.number, c.state, c.prefix, c.obj_suffix, wi.flags".to_owned()
+            "COALESCE(ro.verse_gloss, rg.text, ''), COALESCE(ro.root, wi.root), COALESCE(ro.gloss, g.text), c.part_of_speech, c.form, c.tense, c.person, c.gender, c.number, c.state, c.prefix, c.obj_suffix, wi.flags".to_owned()
         } else {
             format!("COALESCE(rg.text, ''), {WORD_INFO_COLUMNS}")
         };
@@ -3903,7 +3903,7 @@ impl Bible {
                                  coalesce(e.after, '')) \
                      FROM data.syriac_gloss e \
                      WHERE e.lexeme_id = w.lexeme_id \
-                     ORDER BY e.gloss_id LIMIT 1)), coalesce(ro.root, r.root),o.ord \
+                     ORDER BY e.gloss_id LIMIT 1)), coalesce(ro.root, r.root), coalesce(ro.morphology, ''), o.ord \
              FROM data.nt_word o \
              JOIN data.syriac_word w ON w.word_id = o.word_id \
              LEFT JOIN data.syriac_lexeme l ON l.lexeme_id = w.lexeme_id \
@@ -3914,7 +3914,7 @@ impl Bible {
         } else {
             "SELECT o.ref & 255, \
                     (SELECT trim(coalesce(e.before, '') || ' ' || coalesce(e.meaning, '') || ' ' || coalesce(e.after, '')) \
-                     FROM data.syriac_gloss e WHERE e.lexeme_id = w.lexeme_id ORDER BY e.gloss_id LIMIT 1), r.root,o.ord \
+                    FROM data.syriac_gloss e WHERE e.lexeme_id = w.lexeme_id ORDER BY e.gloss_id LIMIT 1), r.root, '', o.ord \
              FROM data.nt_word o JOIN data.syriac_word w ON w.word_id = o.word_id \
              LEFT JOIN data.syriac_lexeme l ON l.lexeme_id = w.lexeme_id \
              LEFT JOIN data.syriac_root r ON r.root_id = l.root_id \
@@ -3937,13 +3937,15 @@ impl Bible {
                 verse_metadata
                     .glosses
                     .push(row.get::<_, Option<String>>(1)?.unwrap_or_default());
-                verse_metadata.morphologies.push(String::new());
+                verse_metadata
+                    .morphologies
+                    .push(row.get::<_, Option<String>>(3)?.unwrap_or_default());
             }
             if include_names {
                 // SEDRA has no dependable proper-name flag. Keep the vector
                 // aligned so the independent reader setting cannot shift
                 // styling onto a later word.
-                let pos: u32 = row.get(3)?;
+                let pos: u32 = row.get(4)?;
                 verse_metadata.names.push(
                     reviewed
                         .get(&verse)
@@ -4102,6 +4104,10 @@ impl Bible {
             ).optional() {
                 if let Some(root) = root { info.root = root; }
                 if !gloss.is_empty() { info.gloss = gloss; }
+            }
+            if let Ok(Some((root, gloss, _))) = self.lexicon_entry_override(&info.word) {
+                info.root = root;
+                info.gloss = gloss;
             }
             info
         })
