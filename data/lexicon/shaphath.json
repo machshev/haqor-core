@@ -49,17 +49,21 @@
       ]
     },
     {
-      "lemma": "שְׂפַתַּיִם",
+      "lemma": "שְׁפַתָּיִם",
       "pos": "noun",
-      "gender": "f",
-      "gloss": "borders",
+      "gender": "m",
+      "gloss": "sheepfolds or hearths",
       "senses": [
         {
-          "gloss": "borders",
-          "definition": "A dove’s wings shine between boundaries.",
+          "gloss": "a pair of enclosures or hearths",
+          "definition": "The verse describes lying between a pair of places. The similar phrase in Deborah’s song evokes men staying with their flocks. A pair of hearths has also been proposed.",
           "evidence": [
             {
               "ref": "Psa.68.14",
+              "role": "defining"
+            },
+            {
+              "ref": "Jdg.5.16",
               "role": "defining"
             }
           ]
@@ -67,6 +71,54 @@
       ],
       "bdb": [
         "v.fe.ad"
+      ]
+    },
+    {
+      "lemma": "מִשְׁפְּתַיִם",
+      "pos": "noun",
+      "gloss": "sheepfolds or hearths",
+      "bdb": [
+        "v.fe.af"
+      ],
+      "senses": [
+        {
+          "gloss": "sheepfolds or hearths",
+          "definition": "Reuben remains between them listening to the flocks. Issachar is likened to a donkey lying between them.",
+          "evidence": [
+            {
+              "ref": "Jdg.5.16",
+              "role": "defining"
+            },
+            {
+              "ref": "Gen.49.14",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "אַשְׁפֹּת",
+      "pos": "noun",
+      "gloss": "refuse heap",
+      "bdb": [
+        "v.fe.ac"
+      ],
+      "senses": [
+        {
+          "gloss": "refuse heap",
+          "definition": "The needy are lifted from the refuse heap to sit among princes.",
+          "evidence": [
+            {
+              "ref": "1Sa.2.8",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.113.7",
+              "role": "defining"
+            }
+          ]
+        }
       ]
     }
   ],
