@@ -222,19 +222,26 @@
     {
       "analysis": {
         "entry": {
-          "existing": "hyh",
+          "draft": {
+            "article_id": "hyh",
+            "base": "b81e8888cdea81427afc26dd4bffe9a90c58b74adf26143129a3eff3bd4bb488",
+            "change": "Add the Qal sense serve-as to הָיָה and cite Genesis 9:13 as defining evidence.",
+            "definition": "With לְ introducing a role or function, be or serve as what the following noun names.",
+            "evidence": "In Genesis 9:13 the bow is the subject of וְהָיְתָה, and לְאוֹת בְּרִית identifies the function it will have as a covenant sign."
+          },
+          "sense": "serve-as",
           "word": 0
         },
-        "evidence": "The plural verb refers back to מְאֹרֹת, the lights. The לְ in לְאֹתֹת specifies their function: they are to serve as signs. The rest of the clause extends that function to marking appointed times, days, and years.",
+        "evidence": "The plural וְהָיוּ refers back to מְאֹרֹת, the lights. The לְ in לְאֹתֹת identifies their role as signs, and the following phrases extend that role to marking appointed times, days, and years.",
         "gloss": "and let them serve as",
         "language": "he",
         "lemma": "הָיָה",
         "morph": "HC/Vqq3cp",
-        "morphology": "Qal perfect, third person common plural, with prefixed וְ (weqatal), continuing the directive introduced by יְהִי.",
+        "morphology": "Qal perfect, third person common plural, with prefixed וְ. The weqatal continues the directive introduced by יְהִי.",
         "qualifier": "",
         "root": "היה",
         "segments": "וְ/הָיוּ",
-        "sense": "to serve as"
+        "sense": "to be or serve as something"
       },
       "position": 11,
       "surface": "וְהָיוּ"
