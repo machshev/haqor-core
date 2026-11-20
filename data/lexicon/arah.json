@@ -7,6 +7,14 @@
   "summary": "To expose or strip bare.",
   "words": [
     {
+      "lemma": "תַּעַר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "razor",
+      "bdb": ["p.fi.ag"],
+      "senses": [{"gloss":"razor","definition":"A deceitful tongue is like a sharpened razor.","evidence":[{"ref":"Psa.52.4","role":"defining"}]}]
+    },
+    {
       "lemma": "עָרָה",
       "pos": "verb",
       "gloss": "expose, strip",
@@ -31,6 +39,18 @@
           ]
         }
       ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-ariya",
+      "lang": "ar",
+      "form": "عَرِيَ",
+      "translit": "ʿariya",
+      "gloss": "be naked, bare",
+      "relation": "possible",
+      "sounds": {"ע": "ʿ"},
+      "evidence": [{"source":"lane","locator":"pp. 2029–2030","note":"عَرِيَ, be or become naked or bare; the Arabic sense parallels stripping bare."}]
     }
   ],
   "note": "Drafted for Psalm 37 coverage."

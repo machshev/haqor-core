@@ -2,7 +2,7 @@
   "id": "sachar",
   "root": "סחר",
   "status": "draft",
-  "updated": "2026-11-20",
+  "updated": "2026-11-19",
   "gloss": "turn around",
   "summary": "To move about or be restless.",
   "words": [
@@ -19,40 +19,33 @@
           "gloss": "turn about",
           "senses": [
             {
-              "gloss": "be restless",
-              "definition": "The Psalmist's heart throbs and he moves restlessly under his affliction.",
+              "gloss": "trade; move about",
+              "definition": "The qal means to trade or move about. Merchants trade among the nations, while the Psalm's related intensive form describes a heart pounding under affliction.",
               "evidence": [
                 {
-                  "ref": "Psa.38.11",
+                  "ref": "Gen.23.16",
                   "role": "defining"
+                },
+                {
+                  "ref": "Gen.37.28"
                 }
               ]
             }
           ]
-        }
-      ]
-    },
-    {
-      "lemma": "סִיר",
-      "pos": "noun",
-      "gender": "m",
-      "gloss": "pot, thorn",
-      "bdb": [
-        "o.az.as"
-      ],
-      "senses": [
+        },
         {
-          "gloss": "pot",
-          "definition": "The Psalm compares the wicked to a thorn beneath a cooking pot.",
-          "evidence": [
+          "stem": "polel",
+          "gloss": "pound",
+          "senses": [
             {
-              "ref": "Psa.58.10",
-              "role": "defining"
+              "gloss": "pound",
+              "definition": "The heart pounds or beats restlessly.",
+              "evidence": [{"ref": "Psa.38.11", "role": "defining"}]
             }
           ]
         }
       ]
     }
   ],
-  "note": "Drafted for Psalm 38 coverage."
+  "note": "The qal sense is supported by the trading examples in Genesis and Ezekiel. The Psalm's סְחַרְחַר is the pealal pounding form. No external cognate is asserted because the brief's Arabic and Akkadian candidates do not securely share this sense."
 }
