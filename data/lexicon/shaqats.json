@@ -1,0 +1,85 @@
+{
+  "id": "shaqats",
+  "root": "שקץ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "psalms-21-30"
+  ],
+  "gloss": "detest",
+  "summary": "To detest is to regard something as abhorrent and unclean.",
+  "words": [
+    {
+      "lemma": "שִׁקֵּץ",
+      "bdb": [
+        "v.fu.ac"
+      ],
+      "pos": "verb",
+      "gloss": "detest",
+      "stems": [
+        {
+          "stem": "piel",
+          "gloss": "detest",
+          "senses": [
+            {
+              "gloss": "detest",
+              "definition": "Yahweh does not despise the afflicted one.",
+              "evidence": [
+                {
+                  "ref": "Psa.22.25",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שֶׁקֶץ",
+      "bdb": [
+        "v.fu.ab"
+      ],
+      "pos": "noun",
+      "gloss": "detestable thing",
+      "senses": [
+        {
+          "gloss": "detestable thing",
+          "definition": "Detestable thing",
+          "evidence": [
+            {
+              "ref": "Lev.11.10",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "שִׁקּוּץ",
+      "bdb": [
+        "v.fu.ad"
+      ],
+      "pos": "noun",
+      "gloss": "detested thing",
+      "senses": [
+        {
+          "gloss": "detested thing",
+          "definition": "Detested thing",
+          "evidence": [
+            {
+              "ref": "Deu.29.16",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    }
+  ],
+  "cognates": [],
+  "doctrine": [],
+  "note": "Drafted for Psalms 21–30; some homographic names remain separate."
+}

@@ -1,0 +1,69 @@
+{
+  "id": "chush",
+  "root": "חוש",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "psalms-21-30"
+  ],
+  "gloss": "hasten, feel",
+  "summary": "The root expresses haste and sensory experience.",
+  "words": [
+    {
+      "lemma": "חוּשׁ",
+      "bdb": [
+        "h.bn.aa"
+      ],
+      "pos": "verb",
+      "gloss": "hasten",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "hasten",
+          "senses": [
+            {
+              "gloss": "hasten",
+              "definition": "The psalmist asks Yahweh to hurry to help.",
+              "evidence": [
+                {
+                  "ref": "Psa.22.20",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חוּשׁ",
+      "bdb": [
+        "h.bo.aa"
+      ],
+      "pos": "verb",
+      "gloss": "feel",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "feel",
+          "senses": [
+            {
+              "gloss": "feel",
+              "definition": "The sense is distinct from haste.",
+              "evidence": [
+                {
+                  "ref": "Job.4.5",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [],
+  "doctrine": [],
+  "note": "Drafted for Psalms 21–30; some homographic names remain separate."
+}

@@ -1,0 +1,64 @@
+{
+  "id": "reem",
+  "root": "ראמ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "psalms-21-30"
+  ],
+  "gloss": "wild ox, rise",
+  "summary": "The wild ox represents untamed strength; the verb rises.",
+  "words": [
+    {
+      "lemma": "רְאֵם",
+      "bdb": [
+        "t.ac.ab"
+      ],
+      "pos": "noun",
+      "gloss": "wild ox",
+      "senses": [
+        {
+          "gloss": "wild ox",
+          "definition": "The psalmist asks rescue from the horns of the wild oxen.",
+          "evidence": [
+            {
+              "ref": "Psa.22.22",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "רָאַם",
+      "bdb": [
+        "t.ac.aa"
+      ],
+      "pos": "verb",
+      "gloss": "rise",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "rise",
+          "senses": [
+            {
+              "gloss": "rise",
+              "definition": "A form of the root denotes rising.",
+              "evidence": [
+                {
+                  "ref": "Psa.22.22",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [],
+  "doctrine": [],
+  "note": "Drafted for Psalms 21–30; some homographic names remain separate."
+}

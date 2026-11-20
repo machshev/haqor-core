@@ -1,0 +1,64 @@
+{
+  "id": "revayah",
+  "root": "רוה",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "psalms-21-30"
+  ],
+  "gloss": "saturate",
+  "summary": "A full cup signifies abundant provision.",
+  "words": [
+    {
+      "lemma": "רָוָה",
+      "bdb": [
+        "t.bj.aa"
+      ],
+      "pos": "verb",
+      "gloss": "be saturated",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "be satisfied",
+          "senses": [
+            {
+              "gloss": "be satisfied",
+              "definition": "The cup is overflowing.",
+              "evidence": [
+                {
+                  "ref": "Psa.23.5",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "רְוָיָה",
+      "bdb": [
+        "t.bj.ad"
+      ],
+      "pos": "noun",
+      "gloss": "saturation",
+      "senses": [
+        {
+          "gloss": "saturation",
+          "definition": "The overflowing cup expresses abundance.",
+          "evidence": [
+            {
+              "ref": "Psa.23.5",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    }
+  ],
+  "cognates": [],
+  "doctrine": [],
+  "note": "Drafted for Psalms 21–30; some homographic names remain separate."
+}

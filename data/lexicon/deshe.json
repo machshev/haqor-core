@@ -1,0 +1,64 @@
+{
+  "id": "deshe",
+  "root": "דשא",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "psalms-21-30"
+  ],
+  "gloss": "grass, sprout",
+  "summary": "Fresh grass marks the pasture where the shepherd gives rest.",
+  "words": [
+    {
+      "lemma": "דֶּשֶׁא",
+      "bdb": [
+        "d.cn.ab"
+      ],
+      "pos": "noun",
+      "gloss": "grass",
+      "senses": [
+        {
+          "gloss": "grass",
+          "definition": "He makes me lie in green grass.",
+          "evidence": [
+            {
+              "ref": "Psa.23.2",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "דָּשָׁא",
+      "bdb": [
+        "d.cn.aa"
+      ],
+      "pos": "verb",
+      "gloss": "sprout",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "sprout",
+          "senses": [
+            {
+              "gloss": "sprout",
+              "definition": "The earth sprouts vegetation.",
+              "evidence": [
+                {
+                  "ref": "Gen.1.11",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [],
+  "doctrine": [],
+  "note": "Drafted for Psalms 21–30; some homographic names remain separate."
+}

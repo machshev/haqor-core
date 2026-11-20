@@ -1,0 +1,84 @@
+{
+  "id": "dabaq",
+  "root": "דבק",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "psalms-21-30"
+  ],
+  "gloss": "cling",
+  "summary": "To cling means to adhere closely, whether flesh to bone or person to person.",
+  "words": [
+    {
+      "lemma": "דָּבַק",
+      "bdb": [
+        "d.ah.aa"
+      ],
+      "pos": "verb",
+      "gloss": "cling",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "cling",
+          "senses": [
+            {
+              "gloss": "cling",
+              "definition": "The bones cling together.",
+              "evidence": [
+                {
+                  "ref": "Psa.22.16",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "דָּבֵק",
+      "bdb": [
+        "d.ah.ab"
+      ],
+      "pos": "adjective",
+      "gloss": "clinging",
+      "senses": [
+        {
+          "gloss": "clinging",
+          "definition": "Clinging",
+          "evidence": [
+            {
+              "ref": "Psa.22.16",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "דֶּבֶק",
+      "bdb": [
+        "d.ah.ac"
+      ],
+      "pos": "noun",
+      "gloss": "joining",
+      "senses": [
+        {
+          "gloss": "joining",
+          "definition": "Joining",
+          "evidence": [
+            {
+              "ref": "Exo.26.17",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    }
+  ],
+  "cognates": [],
+  "doctrine": [],
+  "note": "Drafted for Psalms 21–30; some homographic names remain separate."
+}

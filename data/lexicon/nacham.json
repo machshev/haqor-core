@@ -1,0 +1,64 @@
+{
+  "id": "nacham",
+  "root": "נחמ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "psalms-21-30"
+  ],
+  "gloss": "comfort",
+  "summary": "Comfort answers grief and restores courage.",
+  "words": [
+    {
+      "lemma": "נחם",
+      "bdb": [
+        "n.cr.aa"
+      ],
+      "pos": "verb",
+      "gloss": "comfort",
+      "stems": [
+        {
+          "stem": "piel",
+          "gloss": "comfort",
+          "senses": [
+            {
+              "gloss": "comfort",
+              "definition": "Yahweh’s staff and rod comfort the psalmist.",
+              "evidence": [
+                {
+                  "ref": "Psa.23.4",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "נֶחָמָה",
+      "bdb": [
+        "n.cr.ai"
+      ],
+      "pos": "noun",
+      "gloss": "comfort",
+      "senses": [
+        {
+          "gloss": "comfort",
+          "definition": "Isaiah speaks of comfort after mourning.",
+          "evidence": [
+            {
+              "ref": "Isa.40.1",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    }
+  ],
+  "cognates": [],
+  "doctrine": [],
+  "note": "Drafted for Psalms 21–30; some homographic names remain separate."
+}

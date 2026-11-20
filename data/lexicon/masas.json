@@ -1,0 +1,100 @@
+{
+  "id": "masas",
+  "root": "מסס",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "psalms-21-30"
+  ],
+  "gloss": "melt, dissolve",
+  "summary": "What melts loses firmness. The psalm describes the heart melting like wax.",
+  "words": [
+    {
+      "lemma": "מָסַס",
+      "bdb": [
+        "m.cs.aa"
+      ],
+      "pos": "verb",
+      "gloss": "melt",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "melt",
+          "senses": [
+            {
+              "gloss": "melt",
+              "definition": "The heart melts like wax.",
+              "evidence": [
+                {
+                  "ref": "Psa.22.15",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "be dissolved",
+          "senses": [
+            {
+              "gloss": "be dissolved",
+              "definition": "The mountains dissolve before Yahweh.",
+              "evidence": [
+                {
+                  "ref": "Psa.68.3",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מַסָּה",
+      "bdb": [
+        "m.cs.ac"
+      ],
+      "pos": "noun",
+      "gloss": "melting",
+      "senses": [
+        {
+          "gloss": "melting",
+          "definition": "Melting",
+          "evidence": [
+            {
+              "ref": "Psa.22.15",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "מָס",
+      "bdb": [
+        "m.cs.ab"
+      ],
+      "pos": "adjective",
+      "gloss": "melting",
+      "senses": [
+        {
+          "gloss": "melting",
+          "definition": "Melting",
+          "evidence": [
+            {
+              "ref": "Psa.22.15",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [],
+  "doctrine": [],
+  "note": "Drafted for Psalms 21–30; some homographic names remain separate."
+}

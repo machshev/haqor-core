@@ -1,0 +1,63 @@
+{
+  "id": "rabats",
+  "root": "רבץ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "psalms-21-30"
+  ],
+  "gloss": "lie down",
+  "summary": "The flock lies down under the shepherd’s care.",
+  "words": [
+    {
+      "lemma": "רָבַץ",
+      "bdb": [
+        "t.an.aa"
+      ],
+      "pos": "verb",
+      "gloss": "lie down",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "lie down",
+          "senses": [
+            {
+              "gloss": "lie down",
+              "definition": "He makes me lie down in green pasture.",
+              "evidence": [
+                {
+                  "ref": "Psa.23.2",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "רֶבֶץ",
+      "bdb": [
+        "t.an.ab"
+      ],
+      "pos": "noun",
+      "gloss": "resting place",
+      "senses": [
+        {
+          "gloss": "resting place",
+          "definition": "Resting place",
+          "evidence": [
+            {
+              "ref": "Psa.23.2",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [],
+  "doctrine": [],
+  "note": "Drafted for Psalms 21–30; some homographic names remain separate."
+}

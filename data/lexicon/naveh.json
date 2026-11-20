@@ -1,0 +1,85 @@
+{
+  "id": "naveh",
+  "root": "נוה",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "psalms-21-30"
+  ],
+  "gloss": "pasture dwelling",
+  "summary": "A shepherd’s habitation is a resting place for flocks.",
+  "words": [
+    {
+      "lemma": "נָוֶה",
+      "bdb": [
+        "n.bx.ab"
+      ],
+      "pos": "noun",
+      "gloss": "pasture, abode",
+      "senses": [
+        {
+          "gloss": "pasture, abode",
+          "definition": "Yahweh makes the sheep lie in green pasture.",
+          "evidence": [
+            {
+              "ref": "Psa.23.2",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "נָוָה",
+      "bdb": [
+        "n.bx.ae"
+      ],
+      "pos": "noun",
+      "gloss": "pasture",
+      "senses": [
+        {
+          "gloss": "pasture",
+          "definition": "Pasture",
+          "evidence": [
+            {
+              "ref": "Psa.23.2",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "נָוָה",
+      "bdb": [
+        "n.bx.ac"
+      ],
+      "pos": "verb",
+      "gloss": "dwell",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "dwell",
+          "senses": [
+            {
+              "gloss": "dwell",
+              "definition": "The verb means to abide.",
+              "evidence": [
+                {
+                  "ref": "Psa.23.6",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [],
+  "doctrine": [],
+  "note": "Drafted for Psalms 21–30; some homographic names remain separate."
+}

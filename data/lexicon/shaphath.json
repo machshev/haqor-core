@@ -1,0 +1,43 @@
+{
+  "id": "shaphath",
+  "root": "שפת",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "psalms-21-30"
+  ],
+  "gloss": "set, place",
+  "summary": "The Psalm 22 form is uncertain and the brief has no indexed tokens.",
+  "words": [
+    {
+      "lemma": "שָׁפַת",
+      "bdb": [
+        "v.fe.ab"
+      ],
+      "pos": "verb",
+      "gloss": "set",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "set",
+          "senses": [
+            {
+              "gloss": "set",
+              "definition": "The form in Psalm 22:16 is read as setting the feet.",
+              "evidence": [
+                {
+                  "ref": "Psa.22.16",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [],
+  "doctrine": [],
+  "note": "The source index files this form under a different root; Psalm 22:16 requires later morphological review."
+}

@@ -1,0 +1,59 @@
+{
+  "id": "keleb",
+  "root": "כלב",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "psalms-21-30"
+  ],
+  "gloss": "dog",
+  "summary": "Dogs picture hostile outsiders surrounding the sufferer.",
+  "words": [
+    {
+      "lemma": "כֶּלֶב",
+      "bdb": [
+        "k.bj.ab"
+      ],
+      "pos": "noun",
+      "gloss": "dog",
+      "senses": [
+        {
+          "gloss": "dog",
+          "definition": "Dogs surround me.",
+          "evidence": [
+            {
+              "ref": "Psa.22.17",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "כְּלוּב",
+      "bdb": [
+        "k.bj.ag"
+      ],
+      "pos": "noun",
+      "gloss": "basket, cage",
+      "senses": [
+        {
+          "gloss": "basket, cage",
+          "definition": "A basket is a contained enclosure.",
+          "evidence": [
+            {
+              "ref": "Amo.8.3",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    }
+  ],
+  "cognates": [],
+  "doctrine": [],
+  "note": "Drafted for Psalms 21–30; some homographic names remain separate."
+}

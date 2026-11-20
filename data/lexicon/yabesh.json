@@ -1,0 +1,64 @@
+{
+  "id": "yabesh",
+  "root": "יבש",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "psalms-21-30"
+  ],
+  "gloss": "dry, wither",
+  "summary": "Dryness marks the tongue and ground when moisture is gone.",
+  "words": [
+    {
+      "lemma": "יָבֵשׁ",
+      "bdb": [
+        "j.aj.aa"
+      ],
+      "pos": "verb",
+      "gloss": "be dry",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "dry up",
+          "senses": [
+            {
+              "gloss": "dry up",
+              "definition": "The tongue clings to the jaws.",
+              "evidence": [
+                {
+                  "ref": "Psa.22.16",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "יַבָּשָׁה",
+      "bdb": [
+        "j.aj.ad"
+      ],
+      "pos": "noun",
+      "gloss": "dry land",
+      "senses": [
+        {
+          "gloss": "dry land",
+          "definition": "Dry land",
+          "evidence": [
+            {
+              "ref": "Exo.14.21",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    }
+  ],
+  "cognates": [],
+  "doctrine": [],
+  "note": "Drafted for Psalms 21–30; some homographic names remain separate."
+}
