@@ -1,0 +1,126 @@
+{
+  "id": "shagah",
+  "root": "שגה",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "error",
+    "conduct"
+  ],
+  "gloss": "stray, lead astray, error",
+  "summary": "A person can miss the road or transgress through error. The psalmist asks who can discern such mistakes and seeks cleansing for hidden faults.",
+  "words": [
+    {
+      "lemma": "שָׁגָה",
+      "bdb": [
+        "v.bb.aa"
+      ],
+      "pos": "verb",
+      "gloss": "stray, lead astray",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "go astray, err",
+          "senses": [
+            {
+              "gloss": "go astray, err",
+              "definition": "Leviticus envisages the entire assembly transgressing inadvertently. Wine can also cause a drinker to reel.",
+              "evidence": [
+                {
+                  "ref": "Lev.4.13",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Isa.28.7"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "lead astray",
+          "senses": [
+            {
+              "gloss": "lead astray",
+              "definition": "A curse falls on anyone who misdirects a blind person on the road.",
+              "evidence": [
+                {
+                  "ref": "Deu.27.18",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-comparison"
+      ]
+    },
+    {
+      "lemma": "שְׁגִיאָה",
+      "bdb": [
+        "v.bb.ab"
+      ],
+      "pos": "noun",
+      "gloss": "error",
+      "senses": [
+        {
+          "gloss": "error",
+          "definition": "The psalmist asks who can recognise errors and seeks acquittal from hidden faults.",
+          "evidence": [
+            {
+              "ref": "Psa.19.13",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "מִשְׁגֶּה",
+      "bdb": [
+        "v.bb.ac"
+      ],
+      "pos": "noun",
+      "gloss": "mistake",
+      "senses": [
+        {
+          "gloss": "mistake",
+          "definition": "Jacob allows that the money found in the sacks might have been returned by mistake.",
+          "evidence": [
+            {
+              "ref": "Gen.43.12",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-comparison",
+      "lang": "arc",
+      "form": "שְׁגֵי",
+      "translit": "šəgē",
+      "gloss": "reel, go astray",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "שְׁגֵי, Targum Proverbs 19:27 and 20:1"
+        }
+      ],
+      "sounds": {
+        "ש": "š"
+      }
+    }
+  ],
+  "doctrine": [],
+  "note": "Genesis 43:12 allows for an ordinary mistake in returning payment. Psalm 19 places errors beside hidden faults and then speaks of presumption."
+}
