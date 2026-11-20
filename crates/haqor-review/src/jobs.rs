@@ -12,7 +12,8 @@ use unicode_normalization::UnicodeNormalization;
 pub const SCHEMA: &str = "
 CREATE TABLE IF NOT EXISTS verse(source TEXT, ref INTEGER, packet TEXT NOT NULL, PRIMARY KEY(source,ref)) WITHOUT ROWID;
 CREATE TABLE IF NOT EXISTS job(source TEXT, ref INTEGER, pos INTEGER, state TEXT NOT NULL,
- attempts INTEGER NOT NULL DEFAULT 0, result TEXT, feedback TEXT, error TEXT, usage TEXT,
+ attempts INTEGER NOT NULL DEFAULT 0, result TEXT, result_digest TEXT, result_language TEXT,
+ result_lemma TEXT, result_root TEXT, result_qualifier TEXT, feedback TEXT, error TEXT, usage TEXT,
  PRIMARY KEY(source,ref,pos), FOREIGN KEY(source,ref) REFERENCES verse) WITHOUT ROWID;
 CREATE TABLE IF NOT EXISTS article(source TEXT,ref INTEGER,pos INTEGER,id TEXT NOT NULL,name INTEGER NOT NULL,
  base TEXT,body TEXT NOT NULL,applied INTEGER NOT NULL DEFAULT 0,PRIMARY KEY(source,ref,pos),
@@ -24,11 +25,11 @@ CREATE TABLE IF NOT EXISTS dependency(source TEXT,ref INTEGER,pos INTEGER,id TEX
  PRIMARY KEY(source,ref,pos),FOREIGN KEY(source,ref,pos) REFERENCES job ON DELETE CASCADE) WITHOUT ROWID;
 CREATE INDEX IF NOT EXISTS dependency_article ON dependency(id,name,revision);
 CREATE TABLE IF NOT EXISTS attempt(source TEXT,ref INTEGER,pos INTEGER,elapsed_ms INTEGER,usage TEXT,error TEXT);
-CREATE INDEX IF NOT EXISTS recent_lemmas ON job(source,json_extract(result,'$.lemma')) WHERE pos>=0;
-CREATE INDEX IF NOT EXISTS recent_roots ON job(source,json_extract(result,'$.root')) WHERE pos>=0;
+CREATE INDEX IF NOT EXISTS recent_lemmas ON job(source,result_lemma) WHERE pos>=0;
+CREATE INDEX IF NOT EXISTS recent_roots ON job(source,result_root) WHERE pos>=0;
 CREATE INDEX IF NOT EXISTS ready_verses ON job(ref,source) WHERE state='ready' AND pos=-1;
 CREATE INDEX IF NOT EXISTS ready_words ON job(ref,source,pos) WHERE state='ready' AND pos>=0;
-CREATE INDEX IF NOT EXISTS lexemes ON job(json_extract(result,'$.language'),json_extract(result,'$.lemma'),json_extract(result,'$.qualifier')) WHERE pos>=0;
+CREATE INDEX IF NOT EXISTS lexemes ON job(result_language,result_lemma,result_qualifier) WHERE pos>=0;
 ";
 
 #[derive(Clone, Debug)]

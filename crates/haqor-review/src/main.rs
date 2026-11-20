@@ -6,6 +6,7 @@ mod jobs;
 mod people;
 mod progress;
 mod quota;
+mod result_store;
 use anyhow::{Context, Result, bail, ensure};
 use clap::{Parser, Subcommand, ValueEnum};
 use jobs::Catalog;
