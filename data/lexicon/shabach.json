@@ -1,2 +1,44 @@
 {
-  "id":"shabach","root":"שבח","status":"draft","created":"2026-11-20","updated":"2026-11-19","gloss":"praise, laud","summary":"שבח is to praise or commend openly. Psalm 65 says Yahweh's awesome acts cause people to praise him, and his goodness fills the earth.","words":[{"lemma":"שָׁבַח","bdb":["v.ap.aa"],"pos":"verb","gloss":"praise","stems":[{"stem":"piel","gloss":"praise","senses":[{"gloss":"praise","definition":"People praise Yahweh in response to his awesome deeds and abundant goodness.","evidence":[{"ref":"Psa.65.8","role":"defining"},{"ref":"Psa.63.4"}]}]}]}],"note":"The two Psalm 65 spellings are represented by the same root and verb."}
+  "lemma": "שָׁבַח",
+  "bdb": [
+    "v.ap.aa",
+    "v.aq.aa"
+  ],
+  "pos": "verb",
+  "gloss": "praise",
+  "stems": [
+    {
+      "stem": "piel",
+      "gloss": "praise",
+      "senses": [
+        {
+          "gloss": "praise",
+          "definition": "Praise Yahweh.",
+          "evidence": [
+            {
+              "ref": "Psa.63.4",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stem": "hiphil",
+      "gloss": "still",
+      "senses": [
+        {
+          "gloss": "still",
+          "definition": "Still the sea.",
+          "evidence": [
+            {
+              "ref": "Psa.65.8",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "updated": "2026-11-19"
+}

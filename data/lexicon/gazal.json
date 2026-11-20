@@ -1,43 +1,31 @@
 {
-  "id": "gazal",
-  "root": "גזל",
-  "status": "draft",
-  "created": "2026-11-19",
-  "updated": "2026-11-19",
-  "tags": [
-    "psalm-35"
-  ],
+  "lemma": "גָּזַל",
   "gloss": "rob",
-  "summary": "rob in Psalm 35",
-  "words": [
+  "bdb": [
+    "c.bl.aa",
+    "c.bl.ab"
+  ],
+  "pos": "verb",
+  "stems": [
     {
-      "lemma": "גָּזַל",
+      "stem": "qal",
       "gloss": "rob",
-      "bdb": [
-        "c.bl.aa"
-      ],
-      "pos": "verb",
-      "stems": [
+      "senses": [
         {
-          "stem": "qal",
           "gloss": "rob",
-          "senses": [
+          "definition": "rob in Psalm 35",
+          "evidence": [
             {
-              "gloss": "rob",
-              "definition": "rob in Psalm 35",
-              "evidence": [
-                {
-                  "ref": "Psa.35.13",
-                  "role": "defining"
-                }
-              ]
+              "ref": "Psa.35.13",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.62.11"
             }
           ]
         }
       ]
     }
   ],
-  "cognates": [],
-  "doctrine": [],
-  "note": "Drafted for Psalm 35 coverage."
+  "updated": "2026-11-19"
 }
