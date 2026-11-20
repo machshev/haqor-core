@@ -50,6 +50,33 @@
       "analysis": {
         "entry": {
           "draft": {
+            "article_id": "ben",
+            "base": "65e78fceaabc7836ef97829ea11cdba5a7aca41f2f2479466f2658920c999cac",
+            "change": "Add Genesis 10:1 as evidence for the existing ben-son sense of בֵּן in the Haqor article ben.",
+            "definition": "A male child in relation to his father or mother.",
+            "evidence": "Genesis 10:1 identifies בְּנֵי נֹחַ by name as Shem, Ham, and Japheth."
+          },
+          "sense": "ben-son",
+          "word": 0
+        },
+        "evidence": "Genesis 10:1 names Shem, Ham, and Japheth immediately after בְּנֵי נֹחַ, identifying the three men as Noah’s sons. The verse then says that sons were born to them, distinguishing the two generations.",
+        "gloss": "sons of",
+        "language": "he",
+        "lemma": "בֵּן",
+        "morph": "HNcmpc",
+        "morphology": "Common masculine noun in the plural construct. The ending ־ֵי marks the plural construct, and the following name נֹחַ identifies the father.",
+        "qualifier": "",
+        "root": "בנה",
+        "segments": "בְּנֵי",
+        "sense": "A male child in relation to his parent."
+      },
+      "position": 2,
+      "surface": "בְּנֵי"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
             "article_id": "noah-son-of-lamech",
             "base": null,
             "change": "Add a personal-name article for נֹחַ linked to the root article nuach.",
