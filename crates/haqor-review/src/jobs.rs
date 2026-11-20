@@ -397,10 +397,25 @@ fn carry(db: &Connection, j: &Job, p: &mut Value) -> Result<()> {
             a["entry"]["sense"]
         ])
     };
+    let priors = priors
+        .into_iter()
+        .map(|(r, p, raw)| Ok((r, p, serde_json::from_str::<Value>(&raw)?)))
+        .collect::<Result<Vec<_>>>()?;
+    // Reviews from before senses were named carry no sense id; they neither
+    // vote nor block where others name one.
+    let named = priors
+        .iter()
+        .any(|(_, _, a)| a["entry"]["sense"].is_string());
+    let priors: Vec<_> = priors
+        .into_iter()
+        .filter(|(_, _, a)| !named || a["entry"]["sense"].is_string())
+        .collect();
+    if priors.len() < CARRY_AGREEING {
+        return Ok(());
+    }
     let mut first: Option<(i64, i64, Value)> = None;
     let mut at = Vec::new();
-    for (reference, pos, raw) in priors {
-        let a: Value = serde_json::from_str(&raw)?;
+    for (reference, pos, a) in priors {
         // Only settled analyses of a published article carry forward.
         if a["entry"]["existing"].as_str().is_none()
             || a["entry"]["word"].as_u64().is_none()

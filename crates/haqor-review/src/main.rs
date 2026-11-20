@@ -1,5 +1,6 @@
 //! One Rust process coordinates independent, read-only word and verse agents.
 mod articles;
+mod audit;
 mod chat;
 mod greek;
 mod inventory;
@@ -88,6 +89,14 @@ enum Action {
         /// Codex reasoning effort for verse reviews; defaults to --effort.
         #[arg(long, conflicts_with_all = ["worker", "chat_endpoint"])]
         verse_effort: Option<String>,
+        /// Codex model for escalated jobs: a retry after an error, a word the verse
+        /// reviewer sent back, or a reopened occurrence. With --chat-endpoint,
+        /// escalated jobs go to Codex instead of the endpoint.
+        #[arg(long, conflicts_with = "worker")]
+        escalate_model: Option<String>,
+        /// Codex reasoning effort for escalated jobs.
+        #[arg(long, conflicts_with = "worker")]
+        escalate_effort: Option<String>,
         #[arg(long, default_value = "data/lexicon")]
         lexicon: PathBuf,
         #[arg(long, default_value = "data")]
@@ -154,6 +163,12 @@ enum Action {
         lexicon: PathBuf,
         #[arg(long)]
         dry_run: bool,
+    },
+    /// List words whose reviews of one source tagging disagree, and readings
+    /// that depart from the OSHB; --reopen sends minority readings back.
+    Audit {
+        #[arg(long)]
+        reopen: bool,
     },
     /// Record the machine-readable morphology on occurrences reviewed before it
     /// was required, from agreeing OSHB tags; reopen the rest.
@@ -288,6 +303,8 @@ fn main() -> Result<()> {
             verse_model,
             effort,
             verse_effort,
+            escalate_model,
+            escalate_effort,
             lexicon,
         } => {
             ensure!(
@@ -295,7 +312,9 @@ fn main() -> Result<()> {
                 "limits must be positive"
             );
             eprintln!("Preparing review queue {}…", cli.state.display());
-            let _quota = (worker.is_none() && chat_endpoint.is_none()).then(quota::monitor);
+            let escalate = escalate_model.is_some() || escalate_effort.is_some();
+            let codex = worker.is_none() && (chat_endpoint.is_none() || escalate);
+            let _quota = codex.then(quota::monitor);
             let live = live::Live::open(&src_texts, &lexicon, &data)?;
             live.recover(&mut db)?;
             let mut catalog = live.catalog()?;
@@ -320,6 +339,26 @@ fn main() -> Result<()> {
                     } else {
                         effort.as_deref()
                     };
+                    // Clean first attempts take the configured route; a job that came
+                    // back with an error, a reviewer's reason or a reopening escalates.
+                    let escalated = escalate
+                        && !(packet["feedback"].is_null() && packet["last_error"].is_null());
+                    if escalated {
+                        return invoke(
+                            None,
+                            escalate_model.as_deref().or(if chat_endpoint.is_some() {
+                                None
+                            } else {
+                                model
+                            }),
+                            escalate_effort.as_deref().or(if chat_endpoint.is_some() {
+                                None
+                            } else {
+                                effort
+                            }),
+                            &jobs::prompt(packet),
+                        );
+                    }
                     if let Some(endpoint) = &chat_endpoint {
                         return chat::review(
                             endpoint,
@@ -419,6 +458,7 @@ fn main() -> Result<()> {
         Action::LinkSenses { lexicon, dry_run } => {
             lexemes::link_senses(&src.join("Haqor-Review"), &lexicon, dry_run)
         }
+        Action::Audit { reopen } => audit::run(&mut db, reopen),
         Action::FillMorph => morph::fill(&mut db, &src.join("Haqor-Review"), Path::new(&data)),
         Action::LinkLexemes { lexicon } => {
             lexemes::link(&mut db, &src.join("Haqor-Review"), &lexicon)
