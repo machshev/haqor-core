@@ -67,8 +67,80 @@
         "position": 13
       }
     ],
-    "name_review_base": null,
-    "translation": "[Then|0] [God|1] [said|0], “ [Let|2] [the land|3] [bring forth|2] [{every}|4] [living|5] [creature|4] [according to its kind|6]: [livestock|7] [and|8] [{every}|8] [crawling creature|8] [and|9] [{every}|9] [wild animal of|9] [the earth|10], [{each}|11] [according to its kind|11].” [And it was|12] [so|13]."
+    "name_review_base": [
+      {
+        "key": null,
+        "position": 0,
+        "surface": "וַיֹּאמֶר"
+      },
+      {
+        "evidence": "אֱלֹהִים is the subject of the singular verb וַיֹּאמֶר. The speaker is the God of Genesis 1:1, who here commands the land to bring forth living creatures.",
+        "key": "LORD@Gen.1.1",
+        "position": 1,
+        "surface": "אֱלֹהִים"
+      },
+      {
+        "key": null,
+        "position": 2,
+        "surface": "תּוֹצֵא"
+      },
+      {
+        "key": null,
+        "position": 3,
+        "surface": "הָאָרֶץ"
+      },
+      {
+        "key": null,
+        "position": 4,
+        "surface": "נֶפֶשׁ"
+      },
+      {
+        "key": null,
+        "position": 5,
+        "surface": "חַיָּה"
+      },
+      {
+        "key": null,
+        "position": 6,
+        "surface": "לְמִינָהּ"
+      },
+      {
+        "key": null,
+        "position": 7,
+        "surface": "בְּהֵמָה"
+      },
+      {
+        "key": null,
+        "position": 8,
+        "surface": "וָרֶמֶשׂ"
+      },
+      {
+        "key": null,
+        "position": 9,
+        "surface": "וְחַיְתוֹ"
+      },
+      {
+        "key": null,
+        "position": 10,
+        "surface": "אֶרֶץ"
+      },
+      {
+        "key": null,
+        "position": 11,
+        "surface": "לְמִינָהּ"
+      },
+      {
+        "key": null,
+        "position": 12,
+        "surface": "וַיְהִי"
+      },
+      {
+        "key": null,
+        "position": 13,
+        "surface": "כֵן"
+      }
+    ],
+    "translation": "[Then|0] [God|1] [said|0], “[Let|2] [the land|3] [bring forth|2] [{every}|4] [living|5] [creature|4] [according to its kind|6]: [livestock|7] [and|8] [{every}|8] [crawling creature|8] [and|9] [{every}|9] [wild animal of|9] [the earth|10], [{each}|11] [according to its kind|11].” [And it was|12] [so|13]."
   },
   "source": "ot",
   "verse": 24,
