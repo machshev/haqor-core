@@ -8,25 +8,20 @@
   "words": [
     {
       "lemma": "סְבַךְ",
-      "pos": "verb",
+      "pos": "noun",
       "gloss": "interweave, lattice",
       "bdb": [
         "o.ae.ab"
       ],
-      "stems": [
+      "senses": [
         {
-          "stem": "qal",
-          "gloss": "interweave, lattice",
-          "senses": [
+          "id": "thicket",
+          "gloss": "interwoven branches",
+          "definition": "An interwoven thicket or lattice of branches.",
+          "evidence": [
             {
-              "gloss": "interweave, lattice",
-              "definition": "The noun names intertwined wood cut down by the attackers.",
-              "evidence": [
-                {
-                  "ref": "Psa.74.5",
-                  "role": "defining"
-                }
-              ]
+              "ref": "Psa.74.5",
+              "role": "defining"
             }
           ]
         }
