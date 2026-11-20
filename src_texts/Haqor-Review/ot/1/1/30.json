@@ -343,20 +343,26 @@
     {
       "analysis": {
         "entry": {
-          "existing": "3eecaeb",
-          "sense": "grass",
+          "draft": {
+            "article_id": "3eecaeb",
+            "base": "c8f221c1795c8533d299f7d70bb9ac66d3e62ddd5b082e700c136663f723f779",
+            "change": "Add the broader sense “herbaceous plant” to word 0 and use “herbage” as the article and word gloss. Retain the existing grass sense.",
+            "definition": "An herbaceous plant, or such plants collectively as herbage.",
+            "evidence": "Genesis 1:12 pairs seed-bearing herbage with fruit-bearing trees, echoing the command in Genesis 1:11."
+          },
+          "sense": "herbaceous-plant",
           "word": 0
         },
-        "evidence": "In כָּל יֶרֶק עֵשֶׂב, עֵשֶׂב completes the construct phrase יֶרֶק עֵשֶׂב, “green vegetation.” The following לְאָכְלָה, “for food,” identifies this vegetation as food for the creatures listed in the verse.",
-        "gloss": "grass",
+        "evidence": "כָּל יֶרֶק עֵשֶׂב means “all green herbage.” The phrase presents green plants collectively as food (לְאָכְלָה) for the land animals, birds, and creeping creatures listed in the verse. Nothing in the phrase singles out grass.",
+        "gloss": "herbage",
         "language": "he",
         "lemma": "עֵשֶׂב",
         "morph": "HNcmsa",
-        "morphology": "Common noun, masculine singular absolute, used collectively, with no prefix or suffix.",
+        "morphology": "Masculine singular common noun in the absolute state, used collectively. It completes the construct phrase יֶרֶק עֵשֶׂב and has no prefix or suffix.",
         "qualifier": "",
         "root": "עשׂב",
         "segments": "עֵשֶׂב",
-        "sense": "grass"
+        "sense": "herbaceous plant"
       },
       "position": 17,
       "surface": "עֵשֶׂב"
