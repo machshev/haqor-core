@@ -3,7 +3,7 @@
   "root": "חנכ",
   "status": "draft",
   "created": "2026-11-19",
-  "updated": "2026-11-19",
+  "updated": "2026-11-20",
   "tags": [
     "psalms"
   ],
@@ -144,33 +144,9 @@
           ]
         }
       ]
-    },
-    {
-      "lemma": "חֵךְ",
-      "bdb": [
-        "h.dx.ab"
-      ],
-      "pos": "noun",
-      "gloss": "palate, mouth",
-      "senses": [
-        {
-          "gloss": "palate, mouth",
-          "definition": "The palate is the roof of the mouth and receives taste.",
-          "evidence": [
-            {
-              "ref": "Pro.8.7",
-              "role": "defining"
-            },
-            {
-              "ref": "Ezk.3.26"
-            }
-          ]
-        }
-      ],
-      "gender": "m"
     }
   ],
   "cognates": [],
   "doctrine": [],
-  "note": "The Hanamel personal name is not asserted as a derivative. The lexical חֲנָמֵל form is retained as the instrument word from the brief; Enoch/Hanoch remains a separate name entry."
+  "note": "Removed the redirect palate key h.dx.ab and h.cd.au, which belong elsewhere. Hanoch is linked by the existing enoch name entry, and Hanamel is linked separately; the instrument חֲנָמֵל h.dy.ai remains."
 }

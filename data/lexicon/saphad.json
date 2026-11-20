@@ -3,7 +3,7 @@
   "root": "ספד",
   "status": "draft",
   "created": "2026-11-19",
-  "updated": "2026-11-19",
+  "updated": "2026-11-20",
   "tags": [
     "psalms",
     "creation",
@@ -40,9 +40,33 @@
           ]
         }
       ]
+    },
+    {
+      "lemma": "מִסְפֵּד",
+      "bdb": [
+        "o.cc.ab"
+      ],
+      "pos": "noun",
+      "gloss": "wailing, mourning",
+      "senses": [
+        {
+          "gloss": "wailing, mourning",
+          "definition": "Wailing accompanies the mourning that Yahweh turns into dancing.",
+          "evidence": [
+            {
+              "ref": "Psa.30.12",
+              "role": "defining"
+            },
+            {
+              "ref": "Gen.50.10"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
     }
   ],
   "cognates": [],
   "doctrine": [],
-  "note": "Drafted for Psalms 21–30."
+  "note": "Added the noun מִסְפֵּד o.cc.ab required by the brief; the redirect m.cs.ah remains assigned to the same root elsewhere."
 }

@@ -3,7 +3,7 @@
   "root": "שׂרט",
   "status": "draft",
   "created": "2026-11-19",
-  "updated": "2026-11-19",
+  "updated": "2026-11-20",
   "tags": [
     "psalms"
   ],
@@ -29,9 +29,77 @@
           ]
         }
       ]
+    },
+    {
+      "lemma": "שָׂרַט",
+      "bdb": [
+        "u.cg.aa"
+      ],
+      "pos": "verb",
+      "gloss": "incise, scratch",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "incise",
+          "senses": [
+            {
+              "gloss": "incise",
+              "definition": "The law forbids making a cutting in the flesh for the dead.",
+              "evidence": [
+                {
+                  "ref": "Lev.19.28",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שֶׂרֶט",
+      "bdb": [
+        "u.cg.ab"
+      ],
+      "pos": "noun",
+      "gloss": "incision",
+      "senses": [
+        {
+          "gloss": "incision",
+          "definition": "An incision is a mark cut into the flesh.",
+          "evidence": [
+            {
+              "ref": "Lev.19.28",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "m"
+    },
+    {
+      "lemma": "שָׂרֶטֶת",
+      "bdb": [
+        "u.cg.ac"
+      ],
+      "pos": "noun",
+      "gloss": "incision",
+      "senses": [
+        {
+          "gloss": "incision",
+          "definition": "The feminine form names the same kind of cut.",
+          "evidence": [
+            {
+              "ref": "Jer.48.37",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
     }
   ],
   "cognates": [],
   "doctrine": [],
-  "note": "Sirion is a proper mountain name filed under this spelling by the corpus. The incision words שׂרט, שׂרטֶת and שׂרט are unrelated and are intentionally left to a separate future entry; no cognate is asserted here."
+  "note": "The brief ordinary שׂרט, שׂרט and שׂרטת words are included alongside the mountain name שׂריון. The name and incision senses remain distinct."
 }
