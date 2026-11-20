@@ -6,7 +6,10 @@ use rusqlite::{Connection, OpenFlags, OptionalExtension, params};
 use serde_json::{Value, json};
 use sha2::{Digest, Sha256};
 use std::collections::HashSet;
-use std::{fs, path::Path};
+use std::{
+    fs,
+    path::{Path, PathBuf},
+};
 
 use crate::jobs::Job;
 
@@ -56,13 +59,31 @@ pub fn stage(tx: &Connection, j: &Job, answer: &mut Value, packet: &Value) -> Re
         );
         return Ok(());
     }
-    let article = &draft["article"];
-    let (id, name) = identity(article)?;
-    let expected = packet["candidates"]
-        .as_array()
-        .and_then(|rows| rows.iter().find(|r| r["entry"] == id && r["name"] == name))
-        .map(|r| r["revision"].clone())
-        .unwrap_or(Value::Null);
+    // An article's id is derived from its content (a root entry's from its
+    // root, a noun's from its lemma, a name's from the name), never chosen by
+    // the worker.
+    let mut article = draft["article"].clone();
+    let drafted = article["id"].as_str().unwrap_or("").to_owned();
+    let (derived, _) = haqor_lexicon::article_id(&serde_json::to_string(&article)?)
+        .context("the draft article does not fit the lexicon schema")?;
+    article["id"] = json!(derived);
+    answer["entry"]["draft"]["article"] = article.clone();
+    let draft = &answer["entry"]["draft"];
+    let (id, name) = identity(&article)?;
+    let candidate = |id: &str| {
+        packet["candidates"]
+            .as_array()
+            .and_then(|rows| rows.iter().find(|r| r["entry"] == id && r["name"] == name))
+            .map(|r| r["revision"].clone())
+    };
+    // A draft of an existing article whose content now derives another id: a
+    // noun that gains a verb or a second lexeme becomes its root's entry.
+    let replaces = (!name && drafted != id && candidate(&drafted).is_some()).then_some(drafted);
+    let expected = match &replaces {
+        Some(old) => candidate(old),
+        None => candidate(id),
+    }
+    .unwrap_or(Value::Null);
     // A discovered existing article outside the candidate list may also be
     // amended when its exact base hash was read by the worker.
     let base = draft.get("base").unwrap_or(&expected);
@@ -110,7 +131,7 @@ pub fn stage(tx: &Connection, j: &Job, answer: &mut Value, packet: &Value) -> Re
         );
     }
     tx.execute(
-        "INSERT INTO article(source,ref,pos,id,name,base,body) VALUES(?,?,?,?,?,?,?)",
+        "INSERT INTO article(source,ref,pos,id,name,base,body,replaces) VALUES(?,?,?,?,?,?,?,?)",
         params![
             j.source,
             j.reference,
@@ -118,7 +139,8 @@ pub fn stage(tx: &Connection, j: &Job, answer: &mut Value, packet: &Value) -> Re
             id,
             name,
             base.as_str(),
-            serde_json::to_string_pretty(article)?
+            serde_json::to_string_pretty(&article)?,
+            replaces
         ],
     )?;
     let article_id = id.to_owned();
@@ -221,23 +243,35 @@ fn apply_one_locked(
     job: &Job,
 ) -> Result<PublishOutcome> {
     let row = db.query_row(
-        "SELECT id,name,base,body FROM article WHERE source=? AND ref=? AND pos=? AND applied=0",
-        job.key(), |r| Ok((r.get::<_,String>(0)?, r.get::<_,bool>(1)?, r.get::<_,Option<String>>(2)?, r.get::<_,String>(3)?))).optional()?;
-    let Some((id, name, base, body)) = row else {
+        "SELECT id,name,base,body,replaces FROM article WHERE source=? AND ref=? AND pos=? AND applied=0",
+        job.key(), |r| Ok((r.get::<_,String>(0)?, r.get::<_,bool>(1)?, r.get::<_,Option<String>>(2)?, r.get::<_,String>(3)?, r.get::<_,Option<String>>(4)?))).optional()?;
+    let Some((id, name, base, body, replaces)) = row else {
         return Ok(PublishOutcome::NotPending);
     };
-    let path = if name {
-        lexicon.join("names")
-    } else {
-        lexicon.to_path_buf()
+    let body = draft_body(db, job, body)?;
+    let path = article_path(lexicon, &id, name, Some(&body));
+    // A promoted noun is read, checked and replaced at its own file.
+    let old_path = replaces
+        .as_deref()
+        .map(|old| article_path(lexicon, old, false, None));
+    if let (Some(old), Some(old_path)) = (&replaces, &old_path) {
+        let noun = old_path.parent() == Some(lexicon.join(haqor_lexicon::NOUNS_DIR).as_path());
+        if !noun || path.exists() {
+            return reject(
+                db,
+                job,
+                format!(
+                    "The draft's content makes it the article `{id}`, not `{old}`, which it was drafted from. Amend `{id}` itself, or keep `{old}`'s root and words."
+                ),
+            );
+        }
     }
-    .join(format!("{id}.json"));
-    let current = match fs::read_to_string(&path) {
+    let current_path = old_path.as_ref().unwrap_or(&path);
+    let current = match fs::read_to_string(current_path) {
         Ok(s) => Some(s),
         Err(e) if e.kind() == std::io::ErrorKind::NotFound => None,
         Err(e) => return Err(e.into()),
     };
-    let body = draft_body(db, job, body)?;
     let draft: Value = serde_json::from_str(&body)?;
     if name
         && draft["people"]
@@ -269,16 +303,24 @@ fn apply_one_locked(
             let tx = db.transaction()?;
             let reason = format!(
                 "Article {} changed. Read its current file and reconcile the proposed changes.",
-                path.display()
+                current_path.display()
             );
             tx.execute("UPDATE job SET state='ready',feedback=?,attempts=0,result=NULL WHERE source=? AND ref=? AND pos=?", params![reason,job.source,job.reference,job.pos])?;
             tx.execute("UPDATE job SET state='waiting',attempts=0,result=NULL WHERE source=? AND ref=? AND pos=-1", params![job.source,job.reference])?;
             tx.commit()?;
             return Ok(PublishOutcome::Stale);
         }
+        // The noun's file goes before the root entry that replaces it is
+        // validated, or the lexicon would hold two entries for one root.
+        if let Some(old_path) = &old_path {
+            fs::remove_file(old_path)?;
+        }
         if let Err(error) = haqor_lexicon::save_entry(lexicon, &body, verses)
             .with_context(|| format!("validating {id}"))
         {
+            if let (Some(old_path), Some(current)) = (&old_path, &current) {
+                fs::write(old_path, current)?;
+            }
             if !is_validation_error(&error) {
                 return Err(error);
             }
@@ -306,12 +348,113 @@ fn apply_one_locked(
             revision(&fs::read_to_string(&path)?)
         ],
     )?;
+    // The promoted noun's readers now read its root entry: its words keep
+    // their indices, so only the id and revision move. (Their review files are
+    // repointed by the publication, which commits them with the article.)
+    if let (Some(old), Some(current)) = (&replaces, &current) {
+        let new = revision(&fs::read_to_string(&path)?);
+        tx.execute(
+            "UPDATE dependency SET id=?1, revision=?2 WHERE id=?3 AND name=0 AND revision=?4",
+            params![id, new, old, revision(current)],
+        )?;
+        tx.execute(
+            "UPDATE dependency SET id=?1 WHERE id=?2 AND name=0",
+            params![id, old],
+        )?;
+        tx.execute(
+            "UPDATE article SET id=?1 WHERE id=?2 AND name=0 AND applied=0",
+            params![id, old],
+        )?;
+    }
     tx.execute(
         "UPDATE article SET applied=1 WHERE source=? AND ref=? AND pos=?",
         job.key(),
     )?;
     tx.commit()?;
     Ok(PublishOutcome::Applied)
+}
+
+/// Send a word back to its worker with `reason`, and its verse to wait.
+fn reject(db: &mut Connection, job: &Job, reason: String) -> Result<PublishOutcome> {
+    let tx = db.transaction()?;
+    tx.execute(
+        "UPDATE job SET state='ready',feedback=?,result=NULL WHERE source=? AND ref=? AND pos=?",
+        params![reason, job.source, job.reference, job.pos],
+    )?;
+    tx.execute(
+        "UPDATE job SET state='waiting',result=NULL WHERE source=? AND ref=? AND pos=-1",
+        params![job.source, job.reference],
+    )?;
+    tx.commit()?;
+    Ok(PublishOutcome::Rejected)
+}
+
+/// The file of article `id`: under `names/` for a name, under `nouns/` for a
+/// noun (by the draft `body` where there is one, or else where the file is),
+/// and at the top level for a root's entry.
+pub fn article_path(lexicon: &Path, id: &str, name: bool, body: Option<&str>) -> PathBuf {
+    let file = format!("{id}.json");
+    if name {
+        return lexicon.join(haqor_lexicon::NAMES_DIR).join(file);
+    }
+    let nouns = lexicon.join(haqor_lexicon::NOUNS_DIR).join(&file);
+    let noun = match body
+        .filter(|b| !b.trim().is_empty())
+        .and_then(|b| haqor_lexicon::article_id(b).ok())
+    {
+        Some((_, dir)) => dir == haqor_lexicon::NOUNS_DIR,
+        None => nouns.exists(),
+    };
+    if noun { nouns } else { lexicon.join(file) }
+}
+
+/// The review files whose occurrences name article `old`, rewritten (unless
+/// `dry`) to name `new`: a promoted noun's readers.
+pub fn repoint_reviews(review: &Path, old: &str, new: &str, dry: bool) -> Result<Vec<PathBuf>> {
+    let mut files = Vec::new();
+    let mut dirs = vec![review.to_path_buf()];
+    while let Some(dir) = dirs.pop() {
+        if !dir.try_exists()? {
+            continue;
+        }
+        for entry in fs::read_dir(&dir)? {
+            let path = entry?.path();
+            if path.is_dir() {
+                dirs.push(path);
+            } else if path.extension().is_some_and(|e| e == "json") {
+                files.push(path);
+            }
+        }
+    }
+    let mut changed = Vec::new();
+    for path in files {
+        let mut verse: Value = serde_json::from_str(&fs::read_to_string(&path)?)?;
+        if verse["source"] == "greek" {
+            continue;
+        }
+        let mut hit = false;
+        for word in verse["words"].as_array_mut().into_iter().flatten() {
+            let entry = &mut word["analysis"]["entry"];
+            for pointer in ["/existing", "/draft/article_id"] {
+                if let Some(slot) = entry.pointer_mut(pointer)
+                    && slot == old
+                {
+                    *slot = json!(new);
+                    hit = true;
+                }
+            }
+        }
+        if hit {
+            if !dry {
+                let text = serde_json::to_string_pretty(&verse)? + "\n";
+                let tmp = path.with_extension(format!("{}.tmp", std::process::id()));
+                fs::write(&tmp, text)?;
+                fs::rename(tmp, &path)?;
+            }
+            changed.push(path);
+        }
+    }
+    Ok(changed)
 }
 
 /// Reviewed occurrences address a lexeme by its index in `words`, so an edit
@@ -430,7 +573,7 @@ mod tests {
             [],
         )?;
         db.execute(
-            "INSERT INTO article VALUES('ot',1,0,'new-name',1,NULL,?,0)",
+            "INSERT INTO article(source,ref,pos,id,name,base,body,applied) VALUES('ot',1,0,'new-name',1,NULL,?,0)",
             [body.to_string()],
         )?;
         let job = Job {
@@ -494,6 +637,108 @@ mod tests {
                 .unwrap()
                 .contains("word 1")
         );
+        Ok(())
+    }
+
+    fn lexicon() -> PathBuf {
+        Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data/lexicon")
+    }
+
+    #[test]
+    fn a_draft_takes_the_id_its_root_derives() -> Result<()> {
+        let Ok(text) = fs::read_to_string(lexicon().join("26m.json")) else {
+            return Ok(());
+        };
+        let mut article: Value = serde_json::from_str(&text)?;
+        article["id"] = json!("atam-shut");
+        let mut answer = json!({"language":"he","lemma":"אָטַם","root":"אטמ",
+            "entry":{"draft":{"article":article,"base":null,"definition":"d","evidence":"e","change":"c"},
+                "word":0,"sense":"stop"}});
+        let db = Connection::open_in_memory()?;
+        db.execute_batch(crate::jobs::SCHEMA)?;
+        db.execute("INSERT INTO verse VALUES('ot',1,'{}')", [])?;
+        db.execute(
+            "INSERT INTO job(source,ref,pos,state) VALUES('ot',1,0,'running')",
+            [],
+        )?;
+        let job = Job {
+            source: "ot".into(),
+            reference: 1,
+            pos: 0,
+        };
+        stage(&db, &job, &mut answer, &json!({"candidates":[]}))?;
+        assert_eq!(answer["entry"]["draft"]["article_id"], "26m");
+        let (id, body): (String, String) =
+            db.query_row("SELECT id,body FROM article", [], |r| {
+                Ok((r.get(0)?, r.get(1)?))
+            })?;
+        assert_eq!(id, "26m");
+        assert_eq!(serde_json::from_str::<Value>(&body)?["id"], "26m");
+        Ok(())
+    }
+
+    #[test]
+    fn articles_are_filed_by_kind() {
+        let lexicon = lexicon();
+        let Some(noun) = fs::read_dir(lexicon.join("nouns")).ok().and_then(|mut d| {
+            d.next()?
+                .ok()?
+                .path()
+                .file_stem()?
+                .to_str()
+                .map(str::to_owned)
+        }) else {
+            return;
+        };
+        assert_eq!(
+            article_path(&lexicon, &noun, false, None),
+            lexicon.join("nouns").join(format!("{noun}.json"))
+        );
+        assert_eq!(
+            article_path(&lexicon, "26m", false, None),
+            lexicon.join("26m.json")
+        );
+        assert_eq!(
+            article_path(&lexicon, "yrd", true, None),
+            lexicon.join("names/yrd.json")
+        );
+    }
+
+    #[test]
+    fn a_promoted_nouns_readers_are_repointed() -> Result<()> {
+        let root = std::env::temp_dir().join(format!(
+            "haqor-review-repoint-{}",
+            SystemTime::now().duration_since(UNIX_EPOCH)?.as_nanos()
+        ));
+        let dir = root.join("ot/1/2");
+        fs::create_dir_all(&dir)?;
+        let verse = json!({"source":"ot","words":[
+            {"position":0,"analysis":{"entry":{"existing":"noun-x","word":0}}},
+            {"position":1,"analysis":{"entry":{"draft":{"article_id":"noun-x"},"word":0}}},
+            {"position":2,"analysis":{"entry":{"existing":"other","word":0}}}]});
+        fs::write(dir.join("3.json"), verse.to_string())?;
+        fs::write(
+            root.join("ot/1/2/4.json"),
+            json!({"source":"ot","words":[]}).to_string(),
+        )?;
+        assert_eq!(
+            repoint_reviews(&root, "noun-x", "rootx", true)?,
+            [dir.join("3.json")]
+        );
+        let unchanged: Value = serde_json::from_str(&fs::read_to_string(dir.join("3.json"))?)?;
+        assert_eq!(
+            unchanged["words"][0]["analysis"]["entry"]["existing"],
+            "noun-x"
+        );
+        repoint_reviews(&root, "noun-x", "rootx", false)?;
+        let after: Value = serde_json::from_str(&fs::read_to_string(dir.join("3.json"))?)?;
+        assert_eq!(after["words"][0]["analysis"]["entry"]["existing"], "rootx");
+        assert_eq!(
+            after["words"][1]["analysis"]["entry"]["draft"]["article_id"],
+            "rootx"
+        );
+        assert_eq!(after["words"][2]["analysis"]["entry"]["existing"], "other");
+        fs::remove_dir_all(root)?;
         Ok(())
     }
 }

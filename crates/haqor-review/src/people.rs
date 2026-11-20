@@ -787,7 +787,7 @@ mod tests {
                 )?;
             }
             db.execute(
-                "INSERT INTO article VALUES('ot',?,0,'shared',1,NULL,?,0)",
+                "INSERT INTO article(source,ref,pos,id,name,base,body,applied) VALUES('ot',?,0,'shared',1,NULL,?,0)",
                 params![passage, json!({"people":[]}).to_string()],
             )?;
         }

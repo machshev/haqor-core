@@ -135,9 +135,15 @@ impl Live {
     }
     fn finish(&self, db: &Connection, j: &Job) -> Result<()> {
         let raw: String = db.query_row("SELECT paths FROM live_write", [], |r| r.get(0))?;
+        // A deleted file (a promoted noun's) is committed as removed while git
+        // still tracks it.
         let paths: BTreeSet<PathBuf> = serde_json::from_str::<BTreeSet<PathBuf>>(&raw)?
             .into_iter()
-            .filter(|p| p.exists())
+            .filter(|p| {
+                p.exists()
+                    || git(&["ls-files"], &BTreeSet::from([p.clone()]))
+                        .is_ok_and(|out| !out.trim().is_empty())
+            })
             .collect();
         if !paths.is_empty()
             && !git(&["status", "--porcelain", "--untracked-files=all"], &paths)?.is_empty()
@@ -260,11 +266,11 @@ impl Live {
                 &crate::greek::id(&answer)?,
             )?);
         }
-        let article: Option<(String, bool)> = db
+        let article: Option<(String, bool, String, Option<String>)> = db
             .query_row(
-                "SELECT id,name FROM article WHERE source=? AND ref=? AND pos=? AND applied=0",
+                "SELECT id,name,body,replaces FROM article WHERE source=? AND ref=? AND pos=? AND applied=0",
                 j.key(),
-                |r| Ok((r.get(0)?, r.get(1)?)),
+                |r| Ok((r.get(0)?, r.get(1)?, r.get(2)?, r.get(3)?)),
             )
             .optional()?;
         let pending_verse_articles: Vec<(Job, String, bool)> = if j.pos < 0 {
@@ -286,29 +292,21 @@ impl Live {
         } else {
             Vec::new()
         };
-        if let Some((id, name)) = &article {
+        if let Some((id, name, body, replaces)) = &article {
             ensure!(
                 !id.is_empty() && id.bytes().all(|b| b.is_ascii_alphanumeric() || b == b'-'),
                 "invalid article id"
             );
-            paths.insert(
-                if *name {
-                    self.lexicon.join("names")
-                } else {
-                    self.lexicon.clone()
-                }
-                .join(format!("{id}.json")),
-            );
+            paths.insert(articles::article_path(&self.lexicon, id, *name, Some(body)));
+            // A promoted noun's file goes, and its readers' review files name
+            // the root entry instead: one commit with the article.
+            if let Some(old) = replaces {
+                paths.insert(articles::article_path(&self.lexicon, old, false, None));
+                paths.extend(articles::repoint_reviews(&self.root(), old, id, true)?);
+            }
         }
         for (_, id, name) in &pending_verse_articles {
-            paths.insert(
-                if *name {
-                    self.lexicon.join("names")
-                } else {
-                    self.lexicon.clone()
-                }
-                .join(format!("{id}.json")),
-            );
+            paths.insert(articles::article_path(&self.lexicon, id, *name, None));
         }
         if j.pos < 0 {
             paths.extend(people::publication_paths(
@@ -320,11 +318,16 @@ impl Live {
             )?);
         }
         self.begin(db, j, &paths)?;
-        if article.is_some() {
+        if let Some((id, _, _, replaces)) = &article {
             match articles::apply_one(db, &self.lexicon, &self.refs, j)? {
                 articles::PublishOutcome::Stale | articles::PublishOutcome::Rejected => {
                     self.finish(db, j)?;
                     return Ok(true);
+                }
+                articles::PublishOutcome::Applied => {
+                    if let Some(old) = replaces {
+                        articles::repoint_reviews(&self.root(), old, id, false)?;
+                    }
                 }
                 _ => (),
             }

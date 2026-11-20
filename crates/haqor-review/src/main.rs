@@ -370,6 +370,7 @@ fn main() -> Result<()> {
     if writing {
         db.execute_batch("PRAGMA journal_mode=WAL; PRAGMA foreign_keys=ON;")?;
         db.execute_batch(jobs::SCHEMA)?;
+        jobs::migrate(&db)?;
         db.execute_batch(people::SCHEMA)?;
         // The exclusive OS lock disappears on process exit. Only this coordinator writes results.
         db.execute(

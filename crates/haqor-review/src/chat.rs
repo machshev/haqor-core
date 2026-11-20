@@ -42,12 +42,7 @@ pub fn review(
                 id.bytes().all(|b| b.is_ascii_alphanumeric() || b == b'-'),
                 "invalid article id"
             );
-            let dir = if candidate["name"] == true {
-                lexicon.join("names")
-            } else {
-                lexicon.to_path_buf()
-            };
-            dir.join(format!("{id}.json"))
+            crate::articles::article_path(lexicon, id, candidate["name"] == true, None)
         };
         let article = fs::read_to_string(path)?;
         ensure!(
