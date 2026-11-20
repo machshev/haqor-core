@@ -1,2 +1,101 @@
 {
-  "id":"moach","root":"מחח","status":"draft","created":"2026-11-20","updated":"2026-11-20","gloss":"fatling, marrow","summary":"The root entry keeps the related spellings מֵחַ and מֹחַ together. מֵחַ is a fattened animal used in offerings, while מֹחַ is marrow inside bones. מַחְמָאוֹת belongs to חמאה and is excluded.","words":[{"lemma":"מֵחַ","bdb":["m.bn.ab"],"pos":"noun","gender":"m","gloss":"fatling","senses":[{"gloss":"fatling","definition":"A fatling is a fattened animal offered to Yahweh with the sacrifice.","evidence":[{"ref":"Psa.66.15","role":"defining"}]}]},{"lemma":"מֹחַ","bdb":["m.bn.ac"],"pos":"noun","gender":"m","gloss":"marrow","senses":[{"gloss":"marrow","definition":"Marrow is the rich substance within bones, described as moistening them.","evidence":[{"ref":"Job.21.24","role":"defining"}]}]},{"lemma":"מֵיחִים","bdb":["m.bu.al"],"pos":"noun","gender":"m","gloss":"fatlings","senses":[{"gloss":"fatlings","definition":"The plural names fattened animals, following מֵחַ.","evidence":[{"ref":"Psa.66.15","role":"defining"}]}]}],"note":"מַחְמָאוֹת (m.bn.ay) means flattering words and belongs under חמאה, not מחח. Zero-token מֵחַ m.bj.ai and מָחָה m.bm.ac are cross-references."}
+  "id": "moach",
+  "root": "מחח",
+  "status": "draft",
+  "created": "2026-11-20",
+  "updated": "2026-11-20",
+  "gloss": "fatling, marrow",
+  "summary": "The root entry keeps the related spellings מֵחַ and מֹחַ together. מֵחַ is a fattened animal used in offerings, while מֹחַ is marrow inside bones. מַחְמָאוֹת belongs to חמאה and is excluded.",
+  "words": [
+    {
+      "lemma": "מֵחַ",
+      "bdb": [
+        "m.bn.ab"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "fatling",
+      "senses": [
+        {
+          "gloss": "fatling",
+          "definition": "A fatling is a fattened animal offered to Yahweh with the sacrifice.",
+          "evidence": [
+            {
+              "ref": "Psa.66.15",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מֹחַ",
+      "bdb": [
+        "m.bn.ac"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "marrow",
+      "senses": [
+        {
+          "gloss": "marrow",
+          "definition": "Marrow is the rich substance within bones, described as moistening them.",
+          "evidence": [
+            {
+              "ref": "Job.21.24",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מֵיחִים",
+      "bdb": [
+        "m.bu.al"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "fatlings",
+      "senses": [
+        {
+          "gloss": "fatlings",
+          "definition": "The plural names fattened animals, following מֵחַ.",
+          "evidence": [
+            {
+              "ref": "Psa.66.15",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מָחָה",
+      "bdb": [
+        "m.bn.ad"
+      ],
+      "pos": "verb",
+      "gloss": "marrow-rich",
+      "stems": [
+        {
+          "stem": "pual",
+          "gloss": "be marrow-rich",
+          "senses": [
+            {
+              "gloss": "marrow-rich",
+              "definition": "A feast is described with rich food full of marrow.",
+              "evidence": [
+                {
+                  "ref": "Isa.25.6",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "note": "מַחְמָאוֹת (m.bn.ay) means flattering words and belongs under חמאה, not מחח. Zero-token מֵחַ m.bj.ai and מָחָה m.bm.ac are cross-references."
+}
