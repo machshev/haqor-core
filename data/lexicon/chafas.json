@@ -1,1 +1,74 @@
-{"id":"chafas","root":"חפשׂ","status":"draft","updated":"2026-11-20","gloss":"search","summary":"חפשׂ describes searching or investigation.","words":[{"lemma":"חָפַשׂ","pos":"verb","gloss":"search","bdb":["h.eu.aa"],"stems":[{"stem":"piel","gloss":"search","senses":[{"gloss":"search","definition":"Search out or investigate.","evidence":[{"ref":"Psa.64.7","role":"defining"}]}]}]},{"lemma":"חֵפֶשׂ","pos":"noun","gloss":"search","bdb":["h.eu.ab"],"senses":[{"gloss":"search","definition":"An investigation or searching.","evidence":[{"ref":"Psa.64.7","role":"defining"}]}]}],"doctrine":[],"note":"Drafted for Psalm 64 coverage."}
+{
+  "id": "chafas",
+  "root": "חפשׂ",
+  "status": "draft",
+  "updated": "2026-11-20",
+  "gloss": "search",
+  "summary": "חפשׂ describes searching or investigation.",
+  "words": [
+    {
+      "lemma": "חָפַשׂ",
+      "pos": "verb",
+      "gloss": "search",
+      "bdb": [
+        "h.eu.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "search",
+          "senses": [
+            {
+              "gloss": "search",
+              "definition": "Search out or investigate.",
+              "evidence": [
+                {
+                  "ref": "Psa.64.7",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "pual",
+          "gloss": "be searched",
+          "senses": [
+            {
+              "gloss": "be searched",
+              "definition": "Be searched out or examined.",
+              "evidence": [
+                {
+                  "ref": "Psa.64.7",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חֵפֶשׂ",
+      "pos": "noun",
+      "gloss": "search",
+      "bdb": [
+        "h.eu.ab"
+      ],
+      "senses": [
+        {
+          "gloss": "search",
+          "definition": "An investigation or searching.",
+          "evidence": [
+            {
+              "ref": "Psa.64.7",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "Drafted for Psalm 64 coverage."
+}

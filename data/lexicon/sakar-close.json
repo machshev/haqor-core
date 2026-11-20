@@ -5,7 +5,34 @@
   "updated": "2026-11-19",
   "gloss": "shut",
   "summary": "סכר describes shutting or closing.",
-  "words": [{"lemma":"סָכַר","pos":"verb","gloss":"shut","bdb":["o.bg.aa"],"stems":[{"stem":"qal","gloss":"shut","senses":[{"gloss":"shut","definition":"Close or shut.","evidence":[{"ref":"Psa.63.12","role":"defining"}]}]}]}],
+  "words": [
+    {
+      "lemma": "סָכַר",
+      "pos": "verb",
+      "gloss": "shut",
+      "bdb": [
+        "o.bg.aa"
+      ],
+      "stems": [
+        {
+          "stem": "niphal",
+          "gloss": "shut",
+          "senses": [
+            {
+              "gloss": "shut",
+              "definition": "Close or shut.",
+              "evidence": [
+                {
+                  "ref": "Psa.63.12",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "doctrine": [],
   "note": "Drafted for Psalm 63 coverage."
 }

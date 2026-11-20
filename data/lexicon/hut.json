@@ -1,1 +1,38 @@
-{"id":"hut","root":"הות","status":"draft","updated":"2026-11-20","gloss":"destroy","summary":"הות describes ruinous destruction.","words":[{"lemma":"הוּת","pos":"verb","gloss":"destroy","bdb":["e.bd.aa"],"stems":[{"stem":"qal","gloss":"destroy","senses":[{"gloss":"destroy","definition":"Bring to ruin.","evidence":[{"ref":"Psa.62.4","role":"defining"}]}]}]}],"doctrine":[],"note":"Drafted for Psalm 62 coverage."}
+{
+  "id": "hut",
+  "root": "הות",
+  "status": "draft",
+  "updated": "2026-11-20",
+  "gloss": "destroy",
+  "summary": "הות describes ruinous destruction.",
+  "words": [
+    {
+      "lemma": "הוּת",
+      "pos": "verb",
+      "gloss": "destroy",
+      "bdb": [
+        "e.bd.aa"
+      ],
+      "stems": [
+        {
+          "stem": "polel",
+          "gloss": "destroy",
+          "senses": [
+            {
+              "gloss": "destroy",
+              "definition": "Bring to ruin.",
+              "evidence": [
+                {
+                  "ref": "Psa.62.4",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "Drafted for Psalm 62 coverage."
+}
