@@ -131,6 +131,33 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article_id": "qxt",
+            "base": "937a72773df24f3478ade5d0e31b6c680355d7eb12205b977bcc89ed55ddc57a",
+            "change": "Correct the occurrence’s root to קשת and its gloss to “the rainbow”. Assign it to the existing rainbow sense of word 0 in qxt.",
+            "definition": "The coloured arc visible in a cloud.",
+            "evidence": "Genesis 9:14 describes the bow appearing in the cloud when God brings clouds over the earth. Article qxt already cites this verse under the rainbow sense of קֶשֶׁת."
+          },
+          "sense": "rainbow",
+          "word": 0
+        },
+        "evidence": "וְנִרְאֲתָה הַקֶּשֶׁת בֶּעָנָן means “and the bow will appear in the cloud.” Its visibility and location identify the rainbow. The article refers back to the bow God placed in the cloud in Genesis 9:13.",
+        "gloss": "the rainbow",
+        "language": "he",
+        "lemma": "קֶשֶׁת",
+        "morph": "HTd/Ncfsa",
+        "morphology": "The definite article הַ doubles the initial ק of קֶשֶׁת, a feminine singular common noun in the absolute state. The feminine singular verb וְנִרְאֲתָה agrees with it.",
+        "qualifier": "",
+        "root": "קשת",
+        "segments": "הַ/קֶּשֶׁת",
+        "sense": "rainbow"
+      },
+      "position": 6,
+      "surface": "הַקֶּשֶׁת"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "3nn",
           "sense": "cloud-sky",
           "word": 0
