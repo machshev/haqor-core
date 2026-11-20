@@ -35,6 +35,33 @@
       "analysis": {
         "entry": {
           "draft": {
+            "article_id": "2t",
+            "base": "126f45b882c5fcbfd245618be4c460f4e44b37da80234e65de83160d28577d03",
+            "change": "Add Genesis 10:17 as evidence for definite-object in word 0 of article 2t.",
+            "definition": "Introduces the particular person or thing a verb acts on, ordinarily a definite noun identified by the article, a name or a possessive suffix.",
+            "evidence": "In Genesis 10:17, וְאֶת הַעַרְקִי adds the Arkite to the objects of יָלַד in Genesis 10:15."
+          },
+          "sense": "definite-object",
+          "word": 0
+        },
+        "evidence": "In Genesis 10:15 Canaan is the subject of יָלַד, “fathered.” The list of his descendants continues in verse 17, where the marked וְאֶת introduces הַעַרְקִי, “the Arkite,” between the Hivite and the Sinite. Each takes its own object marker.",
+        "gloss": "and (object marker)",
+        "language": "he",
+        "lemma": "אֵת",
+        "morph": "HC/To",
+        "morphology": "The conjunction וְ joins the next item in the list. The unsuffixed direct-object particle אֶת introduces הַעַרְקִי.",
+        "qualifier": "particle",
+        "root": "את",
+        "segments": "וְ/אֶת",
+        "sense": "Marks the Arkite as a definite direct object of יָלַד."
+      },
+      "position": 2,
+      "surface": "וְאֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
             "article_id": "3areqiy",
             "base": null,
             "change": "Add the Hebrew gentilic עַרְקִי with its collective sense and correct the occurrence gloss from “Naphtali” to “the Arkites.”",
