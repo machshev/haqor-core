@@ -1,0 +1,51 @@
+{
+  "id": "et-stylus",
+  "root": "עט",
+  "homograph": 2,
+  "status": "draft",
+  "created": "2026-11-20",
+  "updated": "2026-11-20",
+  "gloss": "stylus, writing tool",
+  "summary": "עֵט is a writing instrument. It is distinct from the עזר entry's help-root despite the corpus's shared spelling index.",
+  "words": [
+    {
+      "lemma": "עֵט",
+      "bdb": [
+        "p.ca.ad"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "stylus",
+      "senses": [
+        {
+          "gloss": "stylus",
+          "definition": "A tool used to write or engrave words.",
+          "evidence": [
+            {
+              "ref": "Psa.45.2",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-eta",
+      "lang": "arc",
+      "form": "עֵיטָא",
+      "translit": "eṭā",
+      "gloss": "stylus",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "עיטא, stylus"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "The BDB key p.ca.ad is indexed beside עזר, but the letters ע־ט and the writing sense keep this as a separate homograph."
+}

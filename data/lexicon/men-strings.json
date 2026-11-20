@@ -1,0 +1,39 @@
+{
+  "id": "men-strings",
+  "root": "מנ",
+  "homograph": 2,
+  "status": "draft",
+  "created": "2026-11-20",
+  "updated": "2026-11-20",
+  "gloss": "string, cord",
+  "summary": "The rare מִנִּי in Psalm 45:9 is filed by the corpus under a string or cord word. Its precise reading and relation to the preposition מִן remain open.",
+  "words": [
+    {
+      "lemma": "מֵן",
+      "bdb": [
+        "m.ck.aw"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "string, cord",
+      "senses": [
+        {
+          "gloss": "string or cord",
+          "definition": "A stringed instrument or its cords are named in the psalm's royal music imagery.",
+          "evidence": [
+            {
+              "ref": "Psa.45.9",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.150.4"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [],
+  "doctrine": [],
+  "note": "The corpus and min.json note distinguish m.ck.aw from the preposition מנ. The exact vocalisation and sense in Psa.45.9 require review."
+}

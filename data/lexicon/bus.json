@@ -1,0 +1,85 @@
+{
+  "id": "bus",
+  "root": "בוס",
+  "status": "draft",
+  "created": "2026-11-20",
+  "updated": "2026-11-20",
+  "gloss": "trample",
+  "summary": "בוס means to trample or tread down. Psalm 60 promises Yahweh will trample adversaries.",
+  "words": [
+    {
+      "lemma": "בּוּס",
+      "bdb": [
+        "b.as.aa"
+      ],
+      "pos": "verb",
+      "gloss": "trample",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "trample",
+          "senses": [
+            {
+              "gloss": "trample",
+              "definition": "Scripture uses this word in the sense of trample.",
+              "evidence": [
+                {
+                  "ref": "Psa.44.6",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מְבוּסָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "trampling, ruin",
+      "bdb": [
+        "b.as.ad"
+      ],
+      "senses": [
+        {
+          "gloss": "trampling",
+          "definition": "Trampling marks devastation.",
+          "evidence": [
+            {
+              "ref": "Isa.18.2",
+              "role": "defining"
+            },
+            {
+              "ref": "Isa.22.5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "תְּבוּסָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "ruin, destruction",
+      "bdb": [
+        "b.as.ae"
+      ],
+      "senses": [
+        {
+          "gloss": "destruction",
+          "definition": "Destruction may come as judgment.",
+          "evidence": [
+            {
+              "ref": "2Ch.22.7",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [],
+  "doctrine": [],
+  "note": "Drafted for coverage of Psa.44.6; cognate research remains open."
+}
