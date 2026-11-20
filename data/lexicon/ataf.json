@@ -2,7 +2,7 @@
   "id": "ataf",
   "root": "עטפ",
   "status": "draft",
-  "updated": "2026-11-20",
+  "updated": "2026-11-19",
   "gloss": "be faint, cover",
   "summary": "עטף describes becoming faint or weak and, in a related use, covering or enveloping.",
   "words": [
@@ -10,7 +10,11 @@
       "lemma": "עָטַף",
       "pos": "verb",
       "gloss": "be faint, cover",
-      "bdb": ["p.ce.aa", "p.cf.aa", "p.cg.aa"],
+      "bdb": [
+        "p.ce.aa",
+        "p.cf.aa",
+        "p.cg.aa"
+      ],
       "stems": [
         {
           "stem": "qal",
@@ -20,16 +24,26 @@
               "gloss": "be faint",
               "definition": "Become weak or faint, as the heart under distress.",
               "evidence": [
-                {"ref": "Psa.61.3", "role": "defining"},
-                {"ref": "Psa.102.1"}
+                {
+                  "ref": "Psa.61.3",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.102.1"
+                }
               ]
             },
             {
               "gloss": "cover",
               "definition": "Cover or envelop oneself, including a field covered with grain.",
               "evidence": [
-                {"ref": "Psa.65.14", "role": "defining"},
-                {"ref": "Psa.73.6"}
+                {
+                  "ref": "Psa.65.14",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.73.6"
+                }
               ]
             }
           ]
@@ -42,8 +56,13 @@
               "gloss": "grow faint",
               "definition": "Grow faint or despair inwardly.",
               "evidence": [
-                {"ref": "Psa.77.4", "role": "defining"},
-                {"ref": "Jon.2.8"}
+                {
+                  "ref": "Psa.77.4",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jon.2.8"
+                }
               ]
             }
           ]
@@ -55,7 +74,12 @@
             {
               "gloss": "make weak",
               "definition": "Cause to become weak.",
-              "evidence": [{"ref": "Gen.30.42", "role": "defining"}]
+              "evidence": [
+                {
+                  "ref": "Gen.30.42",
+                  "role": "defining"
+                }
+              ]
             }
           ]
         },
@@ -66,7 +90,12 @@
             {
               "gloss": "be faint",
               "definition": "Be faint or exhausted.",
-              "evidence": [{"ref": "Lam.2.11", "role": "defining"}]
+              "evidence": [
+                {
+                  "ref": "Lam.2.11",
+                  "role": "defining"
+                }
+              ]
             }
           ]
         }
@@ -77,12 +106,19 @@
       "pos": "noun",
       "gender": "f",
       "gloss": "cape, covering",
-      "bdb": ["p.cf.ab"],
+      "bdb": [
+        "p.cf.ab"
+      ],
       "senses": [
         {
           "gloss": "cape",
           "definition": "An outer covering or cape.",
-          "evidence": [{"ref": "Isa.3.22", "role": "defining"}]
+          "evidence": [
+            {
+              "ref": "Isa.3.22",
+              "role": "defining"
+            }
+          ]
         }
       ]
     }
