@@ -209,6 +209,25 @@
       ],
       "stems": [
         {
+          "stem": "qal",
+          "gloss": "cease",
+          "senses": [
+            {
+              "gloss": "cease",
+              "definition": "To cease or fall silent.",
+              "evidence": [
+                {
+                  "ref": "Lam.3.49",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jer.14.17"
+                }
+              ]
+            }
+          ]
+        },
+        {
           "stem": "niphal",
           "gloss": "be silenced",
           "senses": [
@@ -240,11 +259,14 @@
           "definition": "A cessation or quiet stillness.",
           "evidence": [
             {
-              "ref": "Psa.22.3",
+              "ref": "Isa.62.6",
               "role": "defining"
             },
             {
-              "ref": "Psa.39.3"
+              "ref": "Isa.62.7"
+            },
+            {
+              "ref": "Psa.83.2"
             }
           ]
         }

@@ -3,7 +3,7 @@
   "created": "2026-11-20",
   "root": "נהג",
   "status": "draft",
-  "updated": "2026-11-20",
+  "updated": "2026-11-19",
   "gloss": "guide",
   "summary": "נָהַג means to guide or lead. Yahweh guides his people continually, even beyond death.",
   "words": [
@@ -58,5 +58,21 @@
       ]
     }
   ],
-  "note": "Drafted from Psalm 48.15."
+  "cognates": [
+    {
+      "id": "arc-nhg",
+      "lang": "arc",
+      "form": "נְהַג",
+      "translit": "nəhag",
+      "gloss": "custom, practice",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "N00251, נְהַג, Targum Ruth 4:7"
+        }
+      ]
+    }
+  ],
+  "note": "Targumic נְהַג denotes customary practice (Jastrow N00251), alongside the Hebrew senses of leading and conduct."
 }

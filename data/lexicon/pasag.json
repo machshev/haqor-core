@@ -3,7 +3,7 @@
   "created": "2026-11-20",
   "root": "פסג",
   "status": "draft",
-  "updated": "2026-11-20",
+  "updated": "2026-11-19",
   "gloss": "survey, mark out",
   "summary": "פָּסַג calls for surveying or marking the strongholds of Zion so they can be recounted to the next generation.",
   "words": [
@@ -57,5 +57,21 @@
       ]
     }
   ],
-  "note": "Drafted from Psalm 48.14."
+  "cognates": [
+    {
+      "id": "arc-psg",
+      "lang": "arc",
+      "form": "פְּסַג",
+      "translit": "pəsaĝ",
+      "gloss": "divide, split",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "Q01228, פְּסַג, Targum Genesis 15:10"
+        }
+      ]
+    }
+  ],
+  "note": "The Targumic פְּסַג means divide or split (Jastrow Q01228), a possible cognate for surveying or marking out."
 }
