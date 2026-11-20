@@ -89,20 +89,26 @@
     {
       "analysis": {
         "entry": {
-          "existing": "dx2",
-          "sense": "grass",
+          "draft": {
+            "article_id": "dx2",
+            "base": "ced5ef9c98f0e7ba56025456c2a9eb219218041e8ef66e23d4262fc243c0bdf5",
+            "change": "Add the collective sense “vegetation” to the noun alongside the pasture sense “grass.”",
+            "definition": "Plant growth taken collectively.",
+            "evidence": "Genesis 1:12 includes both seed-bearing plants and fruit-bearing trees under דֶּשֶׁא."
+          },
+          "sense": "vegetation",
           "word": 0
         },
-        "evidence": "In תַּדְשֵׁא הָאָרֶץ דֶּשֶׁא, “let the earth sprout vegetation,” דֶּשֶׁא is the cognate object of תַּדְשֵׁא. It names the green growth the earth is to produce.",
+        "evidence": "In תַּדְשֵׁא הָאָרֶץ דֶּשֶׁא, דֶּשֶׁא is the cognate object of תַּדְשֵׁא and names what the earth is to sprout. The verse then specifies seed-bearing plants and fruit-bearing trees, supporting the collective sense “vegetation.”",
         "gloss": "vegetation",
         "language": "he",
         "lemma": "דֶּשֶׁא",
         "morph": "HNcmsa",
-        "morphology": "Common noun, masculine singular absolute, used collectively.",
+        "morphology": "Masculine singular absolute common noun, used collectively, with no prefix or suffix.",
         "qualifier": "",
         "root": "דשא",
         "segments": "דֶּשֶׁא",
-        "sense": "grass"
+        "sense": "vegetation"
       },
       "position": 4,
       "surface": "דֶּשֶׁא"
