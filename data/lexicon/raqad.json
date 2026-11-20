@@ -1,0 +1,48 @@
+{
+  "id": "raqad",
+  "root": "רקד",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [
+    "psalms",
+    "creation",
+    "worship"
+  ],
+  "gloss": "skip, dance",
+  "summary": "To skip or dance is vigorous movement, used in Psalm 29 for Yahweh making Lebanon leap like a calf.",
+  "words": [
+    {
+      "lemma": "רָקַד",
+      "bdb": [
+        "t.el.aa"
+      ],
+      "pos": "verb",
+      "gloss": "skip, dance",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "make leap",
+          "senses": [
+            {
+              "gloss": "make leap",
+              "definition": "Lebanon and Sirion leap before the voice of Yahweh.",
+              "evidence": [
+                {
+                  "ref": "Psa.29.6",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Jdg.21.21"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [],
+  "doctrine": [],
+  "note": "Drafted for Psalms 21–30."
+}
