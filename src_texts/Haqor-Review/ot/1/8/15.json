@@ -1,6 +1,44 @@
 {
   "book": 1,
   "chapter": 8,
+  "review": {
+    "entities": [
+      {
+        "evidence": "אֱלֹהִים is the subject of the singular verb וַיְדַבֵּר and identifies God as the speaker addressing Noah.",
+        "key": "LORD@Gen.1.1",
+        "position": 1
+      },
+      {
+        "evidence": "God addresses נֹחַ after the flood. The addressee is the flood survivor, son of Lamech.",
+        "key": "Noah@Gen.5.29",
+        "position": 3
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "and he spoke",
+        "position": 0
+      },
+      {
+        "gloss": "God",
+        "position": 1
+      },
+      {
+        "gloss": "to",
+        "position": 2
+      },
+      {
+        "gloss": "Noah",
+        "position": 3
+      },
+      {
+        "gloss": "saying",
+        "position": 4
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[Then|0] [God|1] [said|0] [to|2] [Noah|3], [saying|4],"
+  },
   "source": "ot",
   "verse": 15,
   "words": [
