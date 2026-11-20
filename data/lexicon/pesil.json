@@ -56,25 +56,33 @@
           ]
         }
       ]
-    }
-  ],
-  "cognates": [
+    },
     {
-      "id": "ar-fasala",
-      "lang": "ar",
-      "form": "فصل",
-      "translit": "faṣala",
-      "gloss": "separate, cut apart",
-      "relation": "possible",
-      "evidence": [
+      "lemma": "פֶּסֶל",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "carved image",
+      "bdb": [
+        "q.ca.ab"
+      ],
+      "senses": [
         {
-          "source": "lane",
-          "locator": "art. فصل",
-          "note": "Arabic cutting/separation is a possible cognate of carving."
+          "gloss": "carved image",
+          "definition": "A carved image is made for worship and forbidden by Yahweh.",
+          "evidence": [
+            {
+              "ref": "Deu.4.16",
+              "role": "defining"
+            },
+            {
+              "ref": "Isa.44.9"
+            }
+          ]
         }
       ]
     }
   ],
+  "cognates": [],
   "doctrine": [],
   "note": "Drafted from Psalm 78:58."
 }
