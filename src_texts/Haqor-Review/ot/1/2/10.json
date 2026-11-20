@@ -222,16 +222,22 @@
     {
       "analysis": {
         "entry": {
-          "existing": "prd",
-          "sense": "be-separated",
+          "draft": {
+            "article_id": "prd",
+            "base": "1bd928f68318c5b4237d1211385ee6bb73b140cea207e84f55378c8d0a05606c",
+            "change": "Add the river-branching sense to the existing Niphal stem of פָּרַד and assign Genesis 2:10 to it.",
+            "definition": "Of a river, to divide into separate branches.",
+            "evidence": "In Genesis 2:10, נָהָר names a single river, and לְאַרְבָּעָה רָאשִׁים describes its four branches after the division."
+          },
+          "sense": "divide-into-branches",
           "word": 0
         },
-        "evidence": "The singular verb יִפָּרֵד agrees with נָהָר, “river.” וּמִשָּׁם, “and from there,” locates the division, and לְאַרְבָּעָה רָאשִׁים, “into four heads,” describes the resulting branches.",
+        "evidence": "One river flows out of Eden to water the garden. וּמִשָּׁם, “and from there,” marks where it divides, and וְהָיָה לְאַרְבָּעָה רָאשִׁים, “and it becomes four heads,” gives the result.",
         "gloss": "it branches",
         "language": "he",
         "lemma": "פָּרַד",
         "morph": "HVNi3ms",
-        "morphology": "Niphal imperfect, third person masculine singular",
+        "morphology": "Niphal imperfect, third person masculine singular, agreeing with נָהָר, “river.”",
         "qualifier": "",
         "root": "פרד",
         "segments": "יִפָּרֵד",
