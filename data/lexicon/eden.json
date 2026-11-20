@@ -1,114 +1,152 @@
 {
+  "cognates": [
+    {
+      "evidence": [
+        {
+          "locator": "Lane, art. عَدَنَ بِهِ, p. 1976",
+          "note": "To remain, stay, dwell, or abide.",
+          "source": "lane"
+        }
+      ],
+      "form": "عَدَنَ",
+      "gloss": "remain; dwell",
+      "id": "ar-adan",
+      "lang": "ar",
+      "relation": "cognate",
+      "translit": "ʿadana"
+    }
+  ],
+  "created": "2026-11-19",
+  "doctrine": [],
+  "gloss": "delight; pleasure; Eden",
   "id": "eden",
+  "note": "Drafted for Psalm 36 coverage. Genesis 2:8 establishes the use of Eden as a place name. Its etymological relation to the noun meaning delight remains uncertain.",
   "root": "עדנ",
   "status": "draft",
-  "created": "2026-11-19",
-  "updated": "2026-11-19",
+  "summary": "עדן denotes delight or pleasantness. Psalm 36:9 speaks of being satisfied from Yahweh's delights. In Genesis 2:8, עֵדֶן names the place where Yahweh God planted a garden.",
   "tags": [
-    "delight"
+    "delight",
+    "places"
   ],
-  "gloss": "delight; pleasure",
-  "summary": "עדן denotes delight or pleasantness. Psalm 36:9 speaks of being satisfied from Yahweh's delights.",
+  "updated": "2026-11-20",
   "words": [
     {
+      "gloss": "Eden",
       "lemma": "עֵדֶן",
+      "pos": "name",
+      "senses": [
+        {
+          "definition": "The place where Yahweh God planted a garden.",
+          "evidence": [
+            {
+              "note": "The preposition בְּ locates the garden in Eden.",
+              "ref": "Gen.2.8",
+              "role": "defining"
+            }
+          ],
+          "gloss": "Eden"
+        }
+      ]
+    },
+    {
       "bdb": [
         "p.au.ab"
       ],
-      "pos": "noun",
       "gender": "m",
+      "gloss": "delight",
+      "lemma": "עֵדֶן",
+      "pos": "noun",
       "senses": [
         {
-          "gloss": "delight",
           "definition": "Pleasure or delight supplied by Yahweh.",
           "evidence": [
             {
+              "note": "Yahweh gives drink from his delights.",
               "ref": "Psa.36.9",
-              "role": "defining",
-              "note": "Yahweh gives drink from his delights."
+              "role": "defining"
             }
-          ]
+          ],
+          "gloss": "delight"
         }
-      ],
-      "gloss": "delight"
+      ]
     },
     {
-      "lemma": "עָדַן",
       "bdb": [
         "p.au.ac"
       ],
-      "pos": "verb",
       "gloss": "enjoy in abundance",
+      "lemma": "עָדַן",
+      "pos": "verb",
       "stems": [
         {
-          "stem": "hithpael",
           "gloss": "enjoy in abundance",
           "senses": [
             {
-              "gloss": "enjoy in abundance",
               "definition": "Israel eats, grows full and enjoys the rich provision of the land in Yahweh’s goodness.",
               "evidence": [
                 {
                   "ref": "Neh.9.25",
                   "role": "defining"
                 }
-              ]
+              ],
+              "gloss": "enjoy in abundance"
             }
-          ]
+          ],
+          "stem": "hithpael"
         }
       ]
     },
     {
-      "lemma": "עֶדְנָה",
       "bdb": [
         "p.au.af"
       ],
-      "pos": "noun",
+      "gender": "f",
       "gloss": "pleasure",
+      "lemma": "עֶדְנָה",
+      "pos": "noun",
       "senses": [
         {
-          "gloss": "pleasure",
           "definition": "Sarah wonders whether she will experience pleasure after growing old.",
           "evidence": [
             {
               "ref": "Gen.18.12",
               "role": "defining"
             }
-          ]
+          ],
+          "gloss": "pleasure"
         }
-      ],
-      "gender": "f"
+      ]
     },
     {
-      "lemma": "עָדִין",
       "bdb": [
         "p.au.ah"
       ],
-      "pos": "adjective",
       "gloss": "given to pleasure",
+      "lemma": "עָדִין",
+      "pos": "adjective",
       "senses": [
         {
-          "gloss": "given to pleasure",
           "definition": "Isaiah addresses Babylon as a lover of luxury who sits securely and expects never to know loss.",
           "evidence": [
             {
               "ref": "Isa.47.8",
               "role": "defining"
             }
-          ]
+          ],
+          "gloss": "given to pleasure"
         }
       ]
     },
     {
-      "lemma": "מַעֲדָן",
       "bdb": [
         "p.au.ak"
       ],
-      "pos": "noun",
+      "gender": "m",
       "gloss": "delicacy, luxury",
+      "lemma": "מַעֲדָן",
+      "pos": "noun",
       "senses": [
         {
-          "gloss": "delicacy, luxury",
           "definition": "Asher is to supply delicacies fit for a king. Lamentations contrasts people accustomed to fine food with their plight in the streets.",
           "evidence": [
             {
@@ -119,22 +157,22 @@
               "ref": "Lam.4.5",
               "role": "defining"
             }
-          ]
+          ],
+          "gloss": "delicacy, luxury"
         }
-      ],
-      "gender": "m"
+      ]
     },
     {
-      "lemma": "עִדָּן",
       "bdb": [
         "xp.ac.ab"
       ],
-      "pos": "noun",
+      "gender": "m",
       "gloss": "time, appointed interval",
       "lang": "arc",
+      "lemma": "עִדָּן",
+      "pos": "noun",
       "senses": [
         {
-          "gloss": "time, appointed interval",
           "definition": "The king accuses his advisers of buying time. Daniel speaks of God changing times and seasons. The time noun’s relation to Hebrew delight remains uncertain.",
           "evidence": [
             {
@@ -145,29 +183,10 @@
               "ref": "Dan.2.21",
               "role": "defining"
             }
-          ]
-        }
-      ],
-      "gender": "m"
-    }
-  ],
-  "cognates": [
-    {
-      "id": "ar-adan",
-      "lang": "ar",
-      "form": "عَدَنَ",
-      "translit": "ʿadana",
-      "gloss": "remain; dwell",
-      "relation": "cognate",
-      "evidence": [
-        {
-          "source": "lane",
-          "locator": "Lane, art. عَدَنَ بِهِ, p. 1976",
-          "note": "To remain, stay, dwell, or abide."
+          ],
+          "gloss": "time, appointed interval"
         }
       ]
     }
-  ],
-  "doctrine": [],
-  "note": "Drafted for Psalm 36 coverage."
+  ]
 }

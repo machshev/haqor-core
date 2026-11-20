@@ -1,33 +1,69 @@
 {
+  "cognates": [
+    {
+      "evidence": [
+        {
+          "locator": "armep/x000002370, mû [water] N",
+          "source": "oracc"
+        }
+      ],
+      "form": "mû",
+      "gloss": "water, liquid",
+      "id": "akk-mu",
+      "lang": "akk",
+      "relation": "cognate",
+      "translit": "mû"
+    },
+    {
+      "evidence": [
+        {
+          "locator": "s.v. מַיָּא, with מַיִּין",
+          "source": "jastrow-1903"
+        }
+      ],
+      "form": "מַיָּא",
+      "gloss": "water",
+      "id": "arc-mayya",
+      "lang": "arc",
+      "relation": "cognate",
+      "translit": "mayyā"
+    }
+  ],
+  "created": "2026-11-19",
+  "doctrine": [],
+  "gloss": "water, waters",
   "id": "mayim",
+  "note": "The corpus counts the noun under the rootless key m.bt.aa. The root-key spelling מימ has only a cross-reference. The key a.aj.ab belongs to the place-name element Abel in avel, although a spelling match returns it for water. The construct is מֵי and the suffixed forms also retain the stem with m, as in מֵימָיו.",
   "root": "מימ",
   "status": "draft",
-  "created": "2026-11-19",
-  "updated": "2026-11-19",
+  "summary": "Water sustains the tree growing beside streams and satisfies those who thirst. The same word names the waters of a sea or flood. In Psalm 18 rescue from a powerful enemy is pictured as being drawn out of deep waters.",
   "tags": [
     "water",
     "life"
   ],
-  "gloss": "water, waters",
-  "summary": "Water sustains the tree growing beside streams and satisfies those who thirst. The same word names the waters of a sea or flood. In Psalm 18 rescue from a powerful enemy is pictured as being drawn out of deep waters.",
+  "updated": "2026-11-20",
   "words": [
     {
-      "lemma": "מַיִם",
       "bdb": [
         "m.bt.aa",
         "m.bu.ar"
       ],
-      "pos": "noun",
+      "gender": "m",
       "gloss": "water, waters",
+      "lemma": "מַיִם",
+      "pos": "noun",
       "senses": [
         {
-          "gloss": "water to drink, wash with or sustain growth",
+          "cognate_ids": [
+            "akk-mu",
+            "arc-mayya"
+          ],
           "definition": "Water relieves thirst and sustains plants. Abraham offers water for washing feet, and the tree planted beside channels of water keeps its leaf and bears fruit.",
           "evidence": [
             {
               "ref": "Exo.17.3",
-              "to": "Exo.17.6",
-              "role": "defining"
+              "role": "defining",
+              "to": "Exo.17.6"
             },
             {
               "ref": "Gen.18.4"
@@ -39,19 +75,24 @@
               "ref": "Isa.55.1"
             }
           ],
+          "gloss": "water to drink, wash with or sustain growth"
+        },
+        {
           "cognate_ids": [
             "akk-mu",
             "arc-mayya"
-          ]
-        },
-        {
-          "gloss": "a body or flow of water",
+          ],
           "definition": "The waters gathered together are called seas. The same noun names floodwaters covering the land and the waters of a river through which people pass.",
           "evidence": [
             {
+              "note": "In בֵּין מַיִם לָמָיִם the same noun names the waters on either side of the expanse.",
+              "ref": "Gen.1.6",
+              "role": "example"
+            },
+            {
               "ref": "Gen.1.9",
-              "to": "Gen.1.10",
-              "role": "defining"
+              "role": "defining",
+              "to": "Gen.1.10"
             },
             {
               "ref": "Gen.7.18",
@@ -65,19 +106,15 @@
               "ref": "Psa.18.12"
             }
           ],
-          "cognate_ids": [
-            "akk-mu",
-            "arc-mayya"
-          ]
+          "gloss": "a body or flow of water"
         },
         {
-          "gloss": "overwhelming waters, of distress",
           "definition": "The singer describes being drawn from great waters, then names the strong enemy from whom he was rescued. Elsewhere waters reaching the neck picture danger closing in.",
           "evidence": [
             {
               "ref": "Psa.18.17",
-              "to": "Psa.18.18",
-              "role": "defining"
+              "role": "defining",
+              "to": "Psa.18.18"
             },
             {
               "ref": "Psa.69.2",
@@ -86,10 +123,10 @@
             {
               "ref": "Isa.43.2"
             }
-          ]
+          ],
+          "gloss": "overwhelming waters, of distress"
         },
         {
-          "gloss": "water poured out, of spent strength or lost life",
           "definition": "Water spilled on the ground cannot be gathered back. The psalmist uses pouring water as an image of strength ebbing from his body.",
           "evidence": [
             {
@@ -99,15 +136,13 @@
             {
               "ref": "Psa.22.15"
             }
-          ]
+          ],
+          "gloss": "water poured out, of spent strength or lost life"
         }
       ],
-      "gender": "m",
       "usage": {
         "phrases": [
           {
-            "phrase": "מַיִם חַיִּים",
-            "gloss": "living water, flowing fresh water",
             "evidence": [
               {
                 "ref": "Gen.26.19"
@@ -115,110 +150,83 @@
               {
                 "ref": "Jer.2.13"
               }
-            ]
+            ],
+            "gloss": "living water, flowing fresh water",
+            "phrase": "מַיִם חַיִּים"
           },
           {
-            "phrase": "פַּלְגֵי מָיִם",
-            "gloss": "channels of water",
             "evidence": [
               {
                 "ref": "Psa.1.3"
+              },
+              {
+                "ref": "Jer.17.8"
               }
-            ]
+            ],
+            "gloss": "channels of water",
+            "phrase": "פַּלְגֵי מָיִם"
           }
         ]
       }
     },
     {
-      "lemma": "מַיָּא",
       "bdb": [],
-      "pos": "noun",
+      "gender": "m",
       "gloss": "water",
+      "lang": "syc",
+      "lemma": "מַיָּא",
+      "pos": "noun",
+      "root": "מיא",
       "senses": [
         {
-          "gloss": "water for drinking or washing",
+          "cognate_ids": [
+            "akk-mu",
+            "arc-mayya"
+          ],
           "definition": "Jesus asks the Samaritan woman for a drink at the well. Later he pours water into a basin to wash his disciples’ feet.",
           "evidence": [
             {
               "ref": "Jhn.4.7",
-              "to": "Jhn.4.11",
-              "role": "defining"
+              "role": "defining",
+              "to": "Jhn.4.11"
             },
             {
               "ref": "Jhn.13.5"
             }
           ],
+          "gloss": "water for drinking or washing"
+        },
+        {
           "cognate_ids": [
             "akk-mu",
             "arc-mayya"
-          ]
-        },
-        {
-          "gloss": "water in which a person is baptized",
+          ],
           "definition": "Philip and the Ethiopian go down into the water together for baptism and come up out of it.",
           "evidence": [
             {
               "ref": "Act.8.36",
-              "to": "Act.8.39",
-              "role": "defining"
+              "role": "defining",
+              "to": "Act.8.39"
             }
           ],
-          "cognate_ids": [
-            "akk-mu",
-            "arc-mayya"
-          ]
+          "gloss": "water in which a person is baptized"
         },
         {
-          "gloss": "living water given to the thirsty",
           "definition": "Jesus promises water that becomes a spring in the one who receives it. John explains the promise of rivers of living water by reference to the spirit.",
           "evidence": [
             {
               "ref": "Jhn.4.13",
-              "to": "Jhn.4.14",
-              "role": "defining"
+              "role": "defining",
+              "to": "Jhn.4.14"
             },
             {
               "ref": "Jhn.7.37",
               "to": "Jhn.7.39"
             }
-          ]
-        }
-      ],
-      "lang": "syc",
-      "root": "מיא",
-      "gender": "m"
-    }
-  ],
-  "cognates": [
-    {
-      "id": "akk-mu",
-      "lang": "akk",
-      "form": "mû",
-      "translit": "mû",
-      "gloss": "water, liquid",
-      "relation": "cognate",
-      "evidence": [
-        {
-          "source": "oracc",
-          "locator": "armep/x000002370, mû [water] N"
-        }
-      ]
-    },
-    {
-      "id": "arc-mayya",
-      "lang": "arc",
-      "form": "מַיָּא",
-      "translit": "mayyā",
-      "gloss": "water",
-      "relation": "cognate",
-      "evidence": [
-        {
-          "source": "jastrow-1903",
-          "locator": "s.v. מַיָּא, with מַיִּין"
+          ],
+          "gloss": "living water given to the thirsty"
         }
       ]
     }
-  ],
-  "doctrine": [],
-  "note": "The corpus counts the noun under the rootless key m.bt.aa. The root-key spelling מימ has only a cross-reference. The key a.aj.ab belongs to the place-name element Abel in avel, although a spelling match returns it for water. The construct is מֵי and the suffixed forms also retain the stem with m, as in מֵימָיו."
+  ]
 }

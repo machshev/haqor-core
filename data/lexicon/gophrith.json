@@ -1,26 +1,78 @@
 {
+  "cognates": [
+    {
+      "evidence": [
+        {
+          "locator": "lexeme 1465, root 868, Luke 17:29",
+          "source": "sedra"
+        }
+      ],
+      "form": "ܟܒܪܝܬܐ",
+      "gloss": "sulphur",
+      "id": "syc-kebritha",
+      "lang": "syc",
+      "relation": "cognate",
+      "translit": "kebrīṯā"
+    },
+    {
+      "evidence": [
+        {
+          "locator": "cmawro, x000007330, kibrītu [sulphur]",
+          "source": "oracc"
+        }
+      ],
+      "form": "kibrītu",
+      "gloss": "sulphur",
+      "id": "akk-kibritu",
+      "lang": "akk",
+      "relation": "cognate",
+      "translit": "kibrītu"
+    },
+    {
+      "evidence": [
+        {
+          "locator": "p. 2587, كِبْرِيتٌ",
+          "source": "lane"
+        }
+      ],
+      "form": "كِبْرِيتٌ",
+      "gloss": "sulphur",
+      "id": "ar-kibrit",
+      "lang": "ar",
+      "relation": "cognate",
+      "translit": "kibrīt"
+    }
+  ],
+  "created": "2026-11-19",
+  "doctrine": [],
+  "gloss": "sulphur, brimstone; gopher wood",
   "id": "gophrith",
+  "note": "The material name has close parallels across languages. The direction of borrowing and any relationship to the wood named גֹּפֶר in Genesis 6:14 remain uncertain. The consonantal key גפר indexes the mineral without deriving it from a verb.",
   "root": "גפר",
   "status": "draft",
-  "created": "2026-11-19",
-  "updated": "2026-11-19",
+  "summary": "Sulphur burns with fire, and its presence can mark ground as devastated. Psalm 11 draws on the picture of fire and sulphur falling from heaven. Genesis 6:14 uses גֹּפֶר for the wood specified for the ark. Its relationship to the word for sulphur is uncertain.",
   "tags": [
     "mineral",
-    "judgment"
+    "judgment",
+    "wood"
   ],
-  "gloss": "sulphur, brimstone",
-  "summary": "The material burns with fire, and its presence can mark ground as devastated. Psalm 11 draws on the picture of fire and sulphur falling from heaven.",
+  "updated": "2026-11-20",
   "words": [
     {
-      "lemma": "גָּפְרִית",
       "bdb": [
         "c.cu.ad"
       ],
-      "pos": "noun",
+      "cognate_ids": [
+        "syc-kebritha",
+        "akk-kibritu",
+        "ar-kibrit"
+      ],
+      "gender": "f",
       "gloss": "sulphur, brimstone",
+      "lemma": "גָּפְרִית",
+      "pos": "noun",
       "senses": [
         {
-          "gloss": "burning sulphur",
           "definition": "Yahweh rains sulphur and fire on Sodom and Gomorrah. Psalm 11 includes it in the cup allotted to the wicked. In Isaiah the breath of Yahweh kindles a pyre like a stream of sulphur.",
           "evidence": [
             {
@@ -37,10 +89,10 @@
               "ref": "Ezk.38.22"
             }
           ],
+          "gloss": "burning sulphur",
           "id": "sulphur"
         },
         {
-          "gloss": "sulphur in devastated ground",
           "definition": "Deuteronomy describes sulphur and salt covering ground where nothing grows. Isaiah pictures Edom’s dust becoming sulphur.",
           "evidence": [
             {
@@ -50,23 +102,24 @@
             {
               "ref": "Isa.34.9"
             }
-          ]
+          ],
+          "gloss": "sulphur in devastated ground"
         }
-      ],
-      "gender": "f",
+      ]
+    },
+    {
       "cognate_ids": [
         "syc-kebritha",
         "akk-kibritu",
         "ar-kibrit"
-      ]
-    },
-    {
+      ],
+      "gender": "f",
+      "gloss": "sulphur",
+      "lang": "syc",
       "lemma": "כֶּבְרִיתָא",
       "pos": "noun",
-      "gloss": "sulphur",
       "senses": [
         {
-          "gloss": "sulphur",
           "definition": "Jesus describes sulphur falling from heaven when Lot leaves Sodom. Revelation uses the word in its visions of judgment.",
           "evidence": [
             {
@@ -81,64 +134,30 @@
               "ref": "Rev.21.8"
             }
           ],
+          "gloss": "sulphur",
           "kin": [
             "sulphur"
           ]
         }
-      ],
-      "gender": "f",
-      "lang": "syc",
-      "cognate_ids": [
-        "syc-kebritha",
-        "akk-kibritu",
-        "ar-kibrit"
-      ]
-    }
-  ],
-  "cognates": [
-    {
-      "id": "syc-kebritha",
-      "lang": "syc",
-      "form": "ܟܒܪܝܬܐ",
-      "translit": "kebrīṯā",
-      "gloss": "sulphur",
-      "relation": "cognate",
-      "evidence": [
-        {
-          "source": "sedra",
-          "locator": "lexeme 1465, root 868, Luke 17:29"
-        }
       ]
     },
     {
-      "id": "akk-kibritu",
-      "lang": "akk",
-      "form": "kibrītu",
-      "translit": "kibrītu",
-      "gloss": "sulphur",
-      "relation": "cognate",
-      "evidence": [
+      "gender": "m",
+      "gloss": "gopher wood",
+      "lemma": "גֹּפֶר",
+      "pos": "noun",
+      "senses": [
         {
-          "source": "oracc",
-          "locator": "cmawro, x000007330, kibrītu [sulphur]"
-        }
-      ]
-    },
-    {
-      "id": "ar-kibrit",
-      "lang": "ar",
-      "form": "كِبْرِيتٌ",
-      "translit": "kibrīt",
-      "gloss": "sulphur",
-      "relation": "cognate",
-      "evidence": [
-        {
-          "source": "lane",
-          "locator": "p. 2587, كِبْرِيتٌ"
+          "definition": "A kind of wood specified for building the ark. Its species is uncertain.",
+          "evidence": [
+            {
+              "ref": "Gen.6.14",
+              "role": "defining"
+            }
+          ],
+          "gloss": "wood used to build the ark"
         }
       ]
     }
-  ],
-  "doctrine": [],
-  "note": "The material name has close parallels across languages. The direction of borrowing and any relationship to the wood named גֹּפֶר in Genesis 6:14 remain uncertain. The consonantal key גפר indexes the mineral without deriving it from a verb."
+  ]
 }

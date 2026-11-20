@@ -1,75 +1,106 @@
 {
+  "cognates": [
+    {
+      "evidence": [
+        {
+          "locator": "מַשְׁקֵי, M02964, Targum Leviticus 11:34",
+          "source": "jastrow-1903"
+        }
+      ],
+      "form": "מַשְׁקֵי",
+      "gloss": "drink",
+      "id": "arc-m02964",
+      "lang": "arc",
+      "relation": "cognate",
+      "translit": "mašqē"
+    }
+  ],
+  "created": "2026-11-19",
+  "doctrine": [],
+  "gloss": "give drink; water",
   "id": "shaqah",
+  "note": "Drafted for Psalm 36 coverage.",
   "root": "שקה",
   "status": "draft",
-  "created": "2026-11-19",
-  "updated": "2026-11-19",
+  "summary": "שקה describes giving drink or watering the ground. In Psalm 36:9 Yahweh gives his people drink from the stream of his delights. In Genesis 2:6 moisture rises from the earth and waters the whole surface of the ground.",
   "tags": [
     "drink"
   ],
-  "gloss": "give drink; water",
-  "summary": "שקה describes giving drink or causing to drink. Psalm 36:9 portrays Yahweh watering his people from the stream of his delights.",
+  "updated": "2026-11-20",
   "words": [
     {
-      "lemma": "שָׁקָה",
       "bdb": [
         "v.fo.aa"
       ],
+      "gloss": "give drink; water",
+      "lemma": "שָׁקָה",
       "pos": "verb",
       "stems": [
         {
-          "stem": "hiphil",
-          "gloss": "give drink",
+          "gloss": "give drink; water",
           "senses": [
             {
-              "gloss": "give drink",
               "definition": "To provide liquid for another to drink.",
               "evidence": [
                 {
+                  "note": "Yahweh gives them drink from the stream of his delights.",
                   "ref": "Psa.36.9",
-                  "role": "defining",
-                  "note": "Yahweh gives them drink from the stream of his delights."
+                  "role": "defining"
                 }
-              ]
+              ],
+              "gloss": "give drink"
+            },
+            {
+              "definition": "To supply the ground with water.",
+              "evidence": [
+                {
+                  "note": "The אֵד rises from the earth, and the whole surface of the ground is the direct object of וְהִשְׁקָה.",
+                  "ref": "Gen.2.6",
+                  "role": "defining"
+                }
+              ],
+              "gloss": "water the ground"
             }
-          ]
+          ],
+          "stem": "hiphil"
         }
-      ],
-      "gloss": "give drink"
+      ]
     },
     {
-      "lemma": "מַשְׁקֶה",
-      "gloss": "cupbearer; drink",
       "bdb": [
         "v.fo.ad",
         "v.fo.ae"
       ],
-      "pos": "noun",
       "gender": "m",
+      "gloss": "cupbearer; drink",
+      "lemma": "מַשְׁקֶה",
+      "pos": "noun",
       "senses": [
         {
-          "gloss": "cupbearer",
           "definition": "A person or thing supplying drink.",
           "evidence": [
             {
               "ref": "Gen.40.1",
               "role": "defining"
             }
-          ]
+          ],
+          "gloss": "cupbearer"
         }
       ]
     },
     {
-      "lemma": "שִׁקּוּי",
-      "gloss": "watering",
       "bdb": [
         "v.fo.ab"
       ],
-      "pos": "noun",
+      "cognate_ids": [
+        "arc-m02964"
+      ],
       "gender": "m",
+      "gloss": "watering",
+      "lemma": "שִׁקּוּי",
+      "pos": "noun",
       "senses": [
         {
-          "gloss": "refreshment, drink",
           "definition": "The body receives refreshment like moisture reaching the bones. Elsewhere the speaker mixes his drink with tears.",
           "evidence": [
             {
@@ -80,51 +111,31 @@
               "ref": "Psa.102.10",
               "role": "defining"
             }
-          ]
+          ],
+          "gloss": "refreshment, drink"
         }
-      ],
-      "cognate_ids": [
-        "arc-m02964"
       ]
     },
     {
-      "lemma": "שֹׁקֶת",
-      "gloss": "watering trough",
       "bdb": [
         "v.fo.ac"
       ],
-      "pos": "noun",
       "gender": "f",
+      "gloss": "watering trough",
+      "lemma": "שֹׁקֶת",
+      "pos": "noun",
       "senses": [
         {
-          "gloss": "trough",
           "definition": "A vessel or trough from which animals drink.",
           "evidence": [
             {
               "ref": "Gen.30.38",
               "role": "defining"
             }
-          ]
+          ],
+          "gloss": "trough"
         }
       ]
     }
-  ],
-  "cognates": [
-    {
-      "id": "arc-m02964",
-      "lang": "arc",
-      "form": "מַשְׁקֵי",
-      "translit": "mašqē",
-      "gloss": "drink",
-      "relation": "cognate",
-      "evidence": [
-        {
-          "source": "jastrow-1903",
-          "locator": "מַשְׁקֵי, M02964, Targum Leviticus 11:34"
-        }
-      ]
-    }
-  ],
-  "doctrine": [],
-  "note": "Drafted for Psalm 36 coverage."
+  ]
 }

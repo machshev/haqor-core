@@ -1,31 +1,56 @@
 {
+  "cognates": [
+    {
+      "evidence": [
+        {
+          "locator": "Book I, p. 3015, n43458, with p. 2858, n40636, s.v. نَهَارٌ",
+          "note": "Lane defines daytime by its opposition to layl.",
+          "source": "lane"
+        }
+      ],
+      "form": "لَيْلٌ",
+      "gloss": "night",
+      "id": "ar-layl",
+      "lang": "ar",
+      "relation": "cognate",
+      "translit": "layl"
+    }
+  ],
+  "created": "2026-11-19",
+  "doctrine": [],
+  "gloss": "night",
   "id": "layil",
+  "note": "The spelling and the Aramaic and Arabic parallels identify the night word independently of its position under לטש “sharpen” in the index. SEDRA lexeme 1675 gives the Syriac noun. Isaiah 34:14 names a creature, לִילִית, for which Akkadian lilītu (Oracc armep/x000101240) is a separate lexical comparison. Its derivation from the Hebrew word for night is uncertain.",
   "root": "ליל",
   "status": "draft",
-  "created": "2026-11-19",
-  "updated": "2026-11-19",
+  "summary": "God calls the darkness night and the light day. The psalmist who meditates day and night keeps returning to Yahweh’s instruction through both.",
   "tags": [
     "time",
     "darkness"
   ],
-  "gloss": "night",
-  "summary": "God calls the darkness night and the light day. The psalmist who meditates day and night keeps returning to Yahweh’s instruction through both.",
+  "updated": "2026-11-20",
   "words": [
     {
-      "lemma": "לַיְלָה",
       "bdb": [
         "l.bm.ad"
       ],
-      "pos": "noun",
+      "gender": "m",
       "gloss": "night",
+      "lemma": "לַיְלָה",
+      "pos": "noun",
       "senses": [
         {
-          "gloss": "the hours of darkness",
+          "cognate_ids": [
+            "ar-layl"
+          ],
           "definition": "God names the darkness Night. Night is the time when the sun has gone down and a person keeps watch, sleeps or waits for dawn.",
           "evidence": [
             {
               "ref": "Gen.1.5",
               "role": "defining"
+            },
+            {
+              "ref": "Gen.1.16"
             },
             {
               "ref": "Exo.12.29"
@@ -40,12 +65,12 @@
               "ref": "Psa.19.3"
             }
           ],
-          "cognate_ids": [
-            "ar-layl"
-          ]
+          "gloss": "the hours of darkness"
         },
         {
-          "gloss": "day and night, continually",
+          "cognate_ids": [
+            "ar-layl"
+          ],
           "definition": "Day and night together span the whole cycle. The reader of Yahweh’s instruction returns to it in both parts of the day.",
           "evidence": [
             {
@@ -59,47 +84,49 @@
               "ref": "Gen.8.22"
             }
           ],
-          "cognate_ids": [
-            "ar-layl"
-          ]
+          "gloss": "day and night, continually"
         }
       ],
-      "gender": "m",
       "usage": {
         "opposites": [
           {
-            "lemma": "יוֹם",
-            "note": "God names the light Day and the darkness Night.",
             "evidence": [
               {
                 "ref": "Gen.1.5"
               }
-            ]
+            ],
+            "lemma": "יוֹם",
+            "note": "God names the light Day and the darkness Night."
           }
         ],
         "phrases": [
           {
-            "phrase": "יוֹמָם וָלַיְלָה",
-            "gloss": "by day and by night",
             "evidence": [
               {
                 "ref": "Psa.1.2"
               }
-            ]
+            ],
+            "gloss": "by day and by night",
+            "phrase": "יוֹמָם וָלַיְלָה"
           }
         ]
       }
     },
     {
-      "lemma": "לֵילְיָא",
       "bdb": [
         "xl.ag.af"
       ],
-      "pos": "noun",
+      "cognate_ids": [
+        "ar-layl"
+      ],
+      "gender": "m",
       "gloss": "night",
+      "lang": "arc",
+      "lemma": "לֵילְיָא",
+      "pos": "noun",
+      "root": "לילא",
       "senses": [
         {
-          "gloss": "night",
           "definition": "Daniel receives a vision in the night. The same word fixes the time of Belshazzar’s death.",
           "evidence": [
             {
@@ -118,24 +145,24 @@
             {
               "ref": "Dan.7.13"
             }
-          ]
+          ],
+          "gloss": "night"
         }
-      ],
-      "lang": "arc",
-      "root": "לילא",
-      "gender": "m",
-      "cognate_ids": [
-        "ar-layl"
       ]
     },
     {
-      "lemma": "לִליָא",
       "bdb": [],
-      "pos": "noun",
+      "cognate_ids": [
+        "ar-layl"
+      ],
+      "gender": "m",
       "gloss": "night",
+      "lang": "syc",
+      "lemma": "לִליָא",
+      "pos": "noun",
+      "root": "לילי",
       "senses": [
         {
-          "gloss": "night",
           "definition": "Shepherds keep watch over their flock by night. John marks the departure of Judas from the meal by saying it was night.",
           "evidence": [
             {
@@ -148,34 +175,10 @@
             {
               "ref": "Jhn.11.10"
             }
-          ]
-        }
-      ],
-      "lang": "syc",
-      "root": "לילי",
-      "gender": "m",
-      "cognate_ids": [
-        "ar-layl"
-      ]
-    }
-  ],
-  "cognates": [
-    {
-      "id": "ar-layl",
-      "lang": "ar",
-      "form": "لَيْلٌ",
-      "translit": "layl",
-      "gloss": "night",
-      "relation": "cognate",
-      "evidence": [
-        {
-          "source": "lane",
-          "locator": "Book I, p. 3015, n43458, with p. 2858, n40636, s.v. نَهَارٌ",
-          "note": "Lane defines daytime by its opposition to layl."
+          ],
+          "gloss": "night"
         }
       ]
     }
-  ],
-  "doctrine": [],
-  "note": "The spelling and the Aramaic and Arabic parallels identify the night word independently of its position under לטש “sharpen” in the index. SEDRA lexeme 1675 gives the Syriac noun. Isaiah 34:14 names a creature, לִילִית, for which Akkadian lilītu (Oracc armep/x000101240) is a separate lexical comparison. Its derivation from the Hebrew word for night is uncertain."
+  ]
 }
