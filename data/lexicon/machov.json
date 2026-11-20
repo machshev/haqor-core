@@ -2,9 +2,9 @@
   "id": "machov",
   "root": "כאב",
   "status": "draft",
-  "updated": "2026-11-20",
-  "gloss": "pain, sorrow",
-  "summary": "כאב is physical or inward pain and sorrow. The verb describes suffering or causing pain, while מַכְאוֹב and כְּאֵב name pain and grief.",
+  "updated": "2026-11-19",
+  "gloss": "ache, cause pain",
+  "summary": "Flesh aches after injury and the heart aches in sorrow. The verb can also describe what causes that hurt, from a thorn to words that break a person’s spirit.",
   "words": [
     {
       "lemma": "מַכְאוֹב",
@@ -22,33 +22,56 @@
             {
               "ref": "Psa.32.10",
               "role": "defining"
+            },
+            {
+              "ref": "Psa.69.27",
+              "role": "defining"
+            },
+            {
+              "ref": "Isa.53.4",
+              "role": "defining"
+            },
+            {
+              "ref": "Mat.8.17",
+              "role": "defining"
             }
           ]
         }
+      ],
+      "cognate_ids": [
+        "arc-pain"
       ]
     },
     {
       "lemma": "כָּאַב",
       "pos": "verb",
-      "gloss": "be in pain, cause pain",
+      "gloss": "ache, inflict pain",
+      "cognate_ids": [
+        "arc-pain"
+      ],
       "bdb": [
         "k.ac.aa"
       ],
       "stems": [
         {
           "stem": "qal",
-          "gloss": "be in pain",
+          "gloss": "ache",
           "senses": [
             {
-              "gloss": "be in pain",
-              "definition": "To feel pain or grief.",
+              "gloss": "ache",
+              "definition": "The circumcised men suffer bodily pain. The psalmist asks God to deliver him in his pain, and a proverb describes a heart aching even in laughter.",
               "evidence": [
+                {
+                  "ref": "Gen.34.25",
+                  "role": "defining"
+                },
                 {
                   "ref": "Psa.69.30",
                   "role": "defining"
                 },
                 {
-                  "ref": "Pro.14.13"
+                  "ref": "Pro.14.13",
+                  "role": "defining"
                 }
               ]
             }
@@ -56,18 +79,19 @@
         },
         {
           "stem": "hiphil",
-          "gloss": "cause pain",
+          "gloss": "cause pain or injury",
           "senses": [
             {
-              "gloss": "cause pain",
-              "definition": "To cause pain, grief or ruin.",
+              "gloss": "cause pain or injury",
+              "definition": "A thorn hurts whoever brushes against it. Job contrasts the wound God inflicts with his healing.",
               "evidence": [
                 {
-                  "ref": "Ezk.13.22",
+                  "ref": "Ezk.28.24",
                   "role": "defining"
                 },
                 {
-                  "ref": "Job.5.18"
+                  "ref": "Job.5.18",
+                  "role": "defining"
                 }
               ]
             }
@@ -78,22 +102,119 @@
     {
       "lemma": "כְּאֵב",
       "pos": "noun",
-      "gender": "m",
       "gloss": "pain, grief",
+      "cognate_ids": [
+        "arc-pain"
+      ],
       "bdb": [
         "k.ac.ab"
       ],
       "senses": [
         {
-          "gloss": "pain",
-          "definition": "Pain or grief suffered in body or heart.",
+          "gloss": "pain, grief",
+          "definition": "Jeremiah compares lasting pain to an unhealed wound. Isaiah speaks of crying out from an aching heart.",
           "evidence": [
             {
-              "ref": "Psa.39.3",
+              "ref": "Jer.15.18",
               "role": "defining"
             },
             {
-              "ref": "Jer.15.18"
+              "ref": "Isa.65.14",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "כְּאֵב",
+      "pos": "verb",
+      "gloss": "suffer",
+      "lang": "syc",
+      "cognate_ids": [
+        "arc-pain"
+      ],
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "suffer",
+          "senses": [
+            {
+              "gloss": "suffer",
+              "definition": "When one member suffers, the other members share its suffering.",
+              "evidence": [
+                {
+                  "ref": "1Co.12.26",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "כֵּאבָא",
+      "pos": "noun",
+      "gloss": "pain, illness",
+      "lang": "syc",
+      "cognate_ids": [
+        "arc-pain"
+      ],
+      "senses": [
+        {
+          "gloss": "pain, illness",
+          "definition": "Jesus heals illnesses. In the vision of the new creation pain passes away with death and mourning.",
+          "evidence": [
+            {
+              "ref": "Mat.4.23",
+              "role": "defining"
+            },
+            {
+              "ref": "Rev.21.4",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "כֵּאבָנָא",
+      "pos": "adjective",
+      "gloss": "painful",
+      "lang": "syc",
+      "cognate_ids": [
+        "arc-pain"
+      ],
+      "senses": [
+        {
+          "gloss": "painful",
+          "definition": "A painful sore afflicts those who bear the mark of the beast.",
+          "evidence": [
+            {
+              "ref": "Rev.16.2",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "מְכַאֲבָא",
+      "pos": "adjective",
+      "gloss": "afflicted",
+      "lang": "syc",
+      "cognate_ids": [
+        "arc-pain"
+      ],
+      "senses": [
+        {
+          "gloss": "afflicted",
+          "definition": "The host sends for the afflicted alongside the poor, blind and lame.",
+          "evidence": [
+            {
+              "ref": "Luk.14.21",
+              "role": "defining"
             }
           ]
         }
@@ -101,5 +222,22 @@
     }
   ],
   "doctrine": [],
-  "note": "Drafted from the כאב brief. כְּאֵב is a separate noun from מַכְאוֹב, and the verb כָּאַב has qal and hiphil uses."
+  "note": "SEDRA lexemes 1453–1456 distinguish the Syriac verb, noun and two adjectives. Matthew applies the bearing of infirmities in Isaiah to Jesus’ healings.",
+  "cognates": [
+    {
+      "id": "arc-pain",
+      "lang": "arc",
+      "form": "כְּאֵבָא",
+      "translit": "kəʾēḇā",
+      "gloss": "pain, sufferer",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "K00007, Targums of Isaiah 65:14 and Psalm 69:30"
+        }
+      ]
+    }
+  ],
+  "created": "2026-11-19"
 }
