@@ -1,28 +1,78 @@
 {
+  "cognates": [
+    {
+      "evidence": [
+        {
+          "locator": "Book I, p. 2050, n29177",
+          "source": "lane"
+        }
+      ],
+      "form": "عُشْبٌ",
+      "gloss": "fresh green herbage",
+      "id": "ar-grass",
+      "lang": "ar",
+      "relation": "cognate",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "translit": "ʿušb"
+    },
+    {
+      "evidence": [
+        {
+          "locator": "s.v. עִסְבָּא, Targum Genesis 1:29 and Psalms 37:2",
+          "source": "jastrow-1903"
+        }
+      ],
+      "form": "עִסְבָּא",
+      "gloss": "herb, vegetation",
+      "id": "arc-grass",
+      "lang": "arc",
+      "relation": "cognate",
+      "translit": "ʿisbā"
+    }
+  ],
+  "created": "2026-11-19",
+  "gloss": "herbage",
   "id": "3eecaeb",
   "root": "עשׂב",
   "status": "draft",
-  "created": "2026-11-19",
-  "updated": "2026-11-19",
-  "gloss": "grass",
-  "summary": "עשׂב names grass and other green vegetation.",
+  "summary": "עֵשֶׂב names grass and other herbaceous plants. In Genesis 1:12 it collectively designates the seed-bearing plants that the earth produces alongside fruit-bearing trees.",
+  "updated": "2026-11-20",
   "words": [
     {
-      "lemma": "עֵשֶׂב",
-      "pos": "noun",
-      "gender": "m",
-      "gloss": "grass",
       "bdb": [
         "p.fx.ab"
       ],
+      "cognate_ids": [
+        "ar-grass",
+        "arc-grass"
+      ],
+      "gender": "m",
+      "gloss": "herbage",
+      "lemma": "עֵשֶׂב",
+      "pos": "noun",
       "senses": [
         {
-          "id": "grass",
-          "gloss": "grass",
           "definition": "Green grass or herb growing from the ground.",
           "evidence": [
             {
               "ref": "Psa.72.16",
+              "role": "defining"
+            },
+            {
+              "ref": "Deu.11.15",
+              "role": "example"
+            }
+          ],
+          "gloss": "grass",
+          "id": "grass"
+        },
+        {
+          "definition": "An herbaceous plant, or such plants collectively as herbage.",
+          "evidence": [
+            {
+              "ref": "Gen.1.12",
               "role": "defining"
             },
             {
@@ -32,49 +82,10 @@
             {
               "ref": "Gen.1.29",
               "role": "example"
-            },
-            {
-              "ref": "Deu.11.15",
-              "role": "example"
             }
-          ]
-        }
-      ],
-      "cognate_ids": [
-        "ar-grass",
-        "arc-grass"
-      ]
-    }
-  ],
-  "cognates": [
-    {
-      "id": "ar-grass",
-      "lang": "ar",
-      "form": "عُشْبٌ",
-      "translit": "ʿušb",
-      "gloss": "fresh green herbage",
-      "relation": "cognate",
-      "evidence": [
-        {
-          "source": "lane",
-          "locator": "Book I, p. 2050, n29177"
-        }
-      ],
-      "sounds": {
-        "ע": "ʿ"
-      }
-    },
-    {
-      "id": "arc-grass",
-      "lang": "arc",
-      "form": "עִסְבָּא",
-      "translit": "ʿisbā",
-      "gloss": "herb, vegetation",
-      "relation": "cognate",
-      "evidence": [
-        {
-          "source": "jastrow-1903",
-          "locator": "s.v. עִסְבָּא, Targum Genesis 1:29 and Psalms 37:2"
+          ],
+          "gloss": "herbaceous plant",
+          "id": "herbaceous-plant"
         }
       ]
     }
