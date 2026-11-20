@@ -1295,10 +1295,24 @@ pub fn check_lexicon(
         Some(src_texts) => Some(people_records(src_texts)?),
         None => None,
     };
+    // One article per person per name: two workers drafting the same bearer's
+    // name split its occurrences between them. A person may bear two names
+    // (Abram, Abraham), or two names of one spelling (Shomer שֹׁמֵר and Shemer
+    // שֶׁמֶר, 1Ch 7:32, 34), so the pointed name is part of the key.
+    let mut bearers: HashMap<(String, &str), &str> = HashMap::new();
     let mut name_ids = HashSet::new();
     for name in &lexicon.names {
         if !name_ids.insert(name.id.as_str()) {
             checker.fault(&format!("{NAMES_DIR}/{}.json", name.id), "id used twice");
+        }
+        let pointed = crate::normalize_surface(&name.name);
+        for key in &name.people {
+            if let Some(other) = bearers.insert((pointed.clone(), key), &name.id) {
+                checker.fault(
+                    &format!("{NAMES_DIR}/{}.json", name.id),
+                    format_args!("`{key}` already bears this name in `{other}`: merge the two"),
+                );
+            }
         }
         checker.name(name, &lexicon.entries, people.as_ref());
         for key in &name.bdb {
@@ -2192,6 +2206,28 @@ mod tests {
         assert!(is_name_entry(NAME));
         assert!(!is_name_entry(ENTRY));
         assert_eq!(check_name(NAME).unwrap().names, 1);
+    }
+
+    #[test]
+    fn one_article_per_bearer_and_name() {
+        let names = |second: &str| -> Result<LexiconSummary> {
+            let lexicon = Lexicon {
+                sources: sources(),
+                entries: vec![serde_json::from_str(ENTRY)?],
+                names: vec![serde_json::from_str(NAME)?, serde_json::from_str(second)?],
+            };
+            check_lexicon(&lexicon, &verses(), None)
+        };
+        // The same bearer's same name drafted twice is one article split in two.
+        let twin = NAME.replace(r#""id": "naphish""#, r#""id": "naphish-2""#);
+        let error = names(&twin).unwrap_err().to_string();
+        assert!(
+            error.contains("already bears this name in `naphish`"),
+            "{error}"
+        );
+        // A second name of the same bearer, even one spelled alike, is its own.
+        let other = twin.replace(r#""name": "נָפִישׁ""#, r#""name": "נֶפֶשׁ""#);
+        assert_eq!(names(&other).unwrap().names, 2);
     }
 
     #[test]
