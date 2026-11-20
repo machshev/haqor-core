@@ -228,7 +228,13 @@
     {
       "analysis": {
         "entry": {
-          "existing": "bnh",
+          "draft": {
+            "article_id": "bnh",
+            "base": "48b33d48d084fd7645e8d19d65733e5a125a97d6ac928de7032ad408ff896854",
+            "change": "Add Genesis 10:3 as evidence for the existing ben-son sense of בֵּן in the ben article.",
+            "definition": "A male child in relation to his parent.",
+            "evidence": "Genesis 10:3 places גֹּמֶר after the plural construct בְנֵי and then names his three sons."
+          },
           "sense": "ben-son",
           "word": 0
         },
@@ -237,7 +243,7 @@
         "language": "he",
         "lemma": "בֵּן",
         "morph": "HNcmsa",
-        "morphology": "Common noun, masculine singular absolute, without prefix or suffix.",
+        "morphology": "Masculine singular common noun in the absolute state, without prefix or suffix.",
         "qualifier": "",
         "root": "בנה",
         "segments": "בֵּן",
