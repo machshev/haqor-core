@@ -237,10 +237,16 @@
     {
       "analysis": {
         "entry": {
-          "existing": "xeem",
+          "draft": {
+            "article_id": "xeem",
+            "base": "3f4e7236d3b88e25bd04902d6399602d3218f46a293b232d23bedbf274e6ee54",
+            "change": "Add Genesis 10:21 to the existing personal-name article as evidence identifying Shem.",
+            "definition": "Shem, one of Noah’s sons, brother of Japheth and ancestor of Eber’s descendants.",
+            "evidence": "Genesis 10:21 identifies Shem by his relationship to Japheth and to Eber’s descendants."
+          },
           "word": 0
         },
-        "evidence": "שֵׁם וָיֶפֶת names Shem and Japheth as the pair who take the garment. שְׁנֵיהֶם (“both of them”) refers back to the pair, and אֲבִיהֶם (“their father”) identifies the man they cover as their father.",
+        "evidence": "שֵׁם וָיֶפֶת names Shem and Japheth as the two who take the garment. שְׁנֵיהֶם (“both of them”) refers to the brothers, and אֲבִיהֶם (“their father”) identifies their relationship to the man they cover.",
         "gloss": "Shem",
         "language": "he",
         "lemma": "שֵׁם",
@@ -249,7 +255,7 @@
         "qualifier": "personal name",
         "root": "שמ",
         "segments": "שֵׁם",
-        "sense": "Shem, son of Noah and brother of Japheth."
+        "sense": "Shem, son of Noah and brother of Japheth"
       },
       "position": 1,
       "surface": "שֵׁם"
