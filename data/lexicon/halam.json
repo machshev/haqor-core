@@ -1,0 +1,60 @@
+{
+  "id": "halam",
+  "root": "הלמ",
+  "status": "draft",
+  "updated": "2026-11-20",
+  "gloss": "word in scripture",
+  "summary": "This root entry records the word and its attested use in scripture. Its wider relation and cognate evidence remain to be developed.",
+  "words": [
+    {
+      "lemma": "הָלַם",
+      "pos": "noun",
+      "gloss": "word in Psalm",
+      "bdb": [
+        "e.bq.aa"
+      ],
+      "senses": [
+        {
+          "gloss": "attested sense",
+          "definition": "The word appears in the cited scripture context.",
+          "evidence": [
+            {
+              "ref": "Ps.74.6",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "הֲלֹם",
+      "pos": "adverb",
+      "gloss": "here",
+      "root": "הלומ",
+      "bdb": [
+        "e.br.aa"
+      ],
+      "senses": [
+        {
+          "id": "here",
+          "gloss": "here",
+          "definition": "A deictic adverb pointing to a place, as in the cited passages.",
+          "evidence": [
+            {
+              "ref": "Psa.73.10",
+              "role": "defining"
+            },
+            {
+              "ref": "Exo.3.5"
+            },
+            {
+              "ref": "1Sa.10.22"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "note": "Drafted to cover the Psalm 74–77 occurrence. Expand cognate and full-root evidence during review.",
+  "created": "2026-11-20"
+}
