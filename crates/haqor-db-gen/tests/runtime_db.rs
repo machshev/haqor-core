@@ -99,11 +99,15 @@ fn stored_renderings_match_live_resolution() {
     // is enough: the pair is what the resolution reads.
     let mut stmt = db
         .prepare(
-            "SELECT vw.surface_id, s.text, p.source_word, p.lemma, p.morph, MIN(w.info_id)
+            // A reviewed word's analysis refines a generated one (base_id); it
+            // is the generated one that must match live resolution.
+            "SELECT vw.surface_id, s.text, p.source_word, p.lemma, p.morph,
+                    MIN(coalesce(wi.base_id, w.info_id))
              FROM hebrewdb.verse_word vw
              JOIN hebrewdb.surface s ON s.surface_id = vw.surface_id
              JOIN rt.word w ON w.ref = ((vw.book << 16) | (vw.chapter << 8) | vw.verse)
                            AND w.position = vw.position
+             LEFT JOIN rt.word_info wi ON wi.info_id = w.info_id
              LEFT JOIN hebrewdb.oshb_primary p
                ON p.book = vw.book AND p.chapter = vw.chapter AND p.verse = vw.verse
               AND p.position = vw.position AND p.surface_id = vw.surface_id
@@ -195,7 +199,9 @@ fn stored_renderings_match_live_resolution() {
         }
         let token_info: bool = db
             .query_row(
-                "SELECT EXISTS(SELECT 1 FROM rt.word WHERE surface_id = ?1 AND info_id = ?2)",
+                // Through a reviewed token to the generated rendering it refines.
+                "SELECT EXISTS(SELECT 1 FROM rt.word w LEFT JOIN rt.word_info wi ON wi.info_id = w.info_id \
+                 WHERE w.surface_id = ?1 AND coalesce(wi.base_id, w.info_id) = ?2)",
                 rusqlite::params![surface_id, info_id],
                 |row| row.get(0),
             )
@@ -715,10 +721,40 @@ fn reviewed_translation_packets_round_trip_through_reader() {
                     .find(|g| g["position"] == w["position"])
                     .unwrap();
                 assert_eq!(reader.glosses[pos], contextual["gloss"].as_str().unwrap());
-                assert_eq!(
-                    reader.morphologies[pos],
-                    w["analysis"]["morphology"].as_str().unwrap()
-                );
+                // The word's analysis is the reviewed OSHB reading.
+                let analysis = &w["analysis"];
+                if let (Some(code), Some(parts)) =
+                    (analysis["morph"].as_str(), analysis["segments"].as_str())
+                {
+                    let reviewed = haqor_core::bible::decode_oshb_morph(code, parts);
+                    let surface = w["surface"].as_str().unwrap();
+                    let stored = bible
+                        .hebrew_word_info_at(surface, book, chapter, verse, pos)
+                        .expect("reviewed word has an analysis");
+                    assert_eq!(
+                        (
+                            &stored.part_of_speech,
+                            &stored.form,
+                            &stored.tense,
+                            &stored.person,
+                            &stored.gender,
+                            &stored.number,
+                            &stored.state,
+                            &stored.obj_suffix,
+                        ),
+                        (
+                            &reviewed.part_of_speech,
+                            &reviewed.form,
+                            &reviewed.tense,
+                            &reviewed.person,
+                            &reviewed.gender,
+                            &reviewed.number,
+                            &reviewed.state,
+                            &reviewed.obj_suffix,
+                        ),
+                        "{surface} at {book}:{chapter}:{verse} {pos}"
+                    );
+                }
             }
         }
         checked += 1;

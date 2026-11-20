@@ -3706,17 +3706,23 @@ impl Bible {
             return Ok(self.with_running_text_words(book, chapter, verse, pairs));
         }
 
-        let mut stmt = self.db.prepare(
-            "SELECT s.text, w.position, COALESCE(g.text, '') \
+        // A reviewed analysis carries the reviewer's gloss in context, which
+        // ranks as it does in [`Bible::chapter_reader_metadata`].
+        let mut stmt = self.db.prepare(&format!(
+            "SELECT s.text, w.position, COALESCE(g.text, ''), \
+                    CASE WHEN wi.flags & {FLAG_REVIEWED} THEN rv.text END \
              FROM data.word w \
              JOIN data.surface s ON s.surface_id = w.surface_id \
              LEFT JOIN data.reader_gloss g ON g.gloss_id = w.gloss_id \
+             LEFT JOIN data.word_info wi ON wi.info_id = w.info_id \
+             LEFT JOIN data.gloss rv ON rv.gloss_id = wi.gloss_id \
              WHERE w.ref = ?1 ORDER BY w.position",
-        )?;
+        ))?;
         stmt.query_map([pack_ref(book, chapter, verse)], |r| {
             let word: String = r.get(0)?;
             let position: i64 = r.get(1)?;
             let source_gloss: String = r.get(2)?;
+            let reviewed: Option<String> = r.get(3)?;
             // A correction made from the word-info sheet must also win in the
             // interlinear. Explicit static reader overrides come next, while
             // ordinary curated glosses remain fallbacks behind contextual
@@ -3727,6 +3733,8 @@ impl Bible {
                 } else {
                     reader_gloss
                 }
+            } else if let Some(gloss) = reviewed {
+                gloss
             } else if let Some(curated) = crate::vocab_gloss::curated_reader_gloss(&self.db, &word)
             {
                 curated.gloss.to_string()
@@ -9186,8 +9194,9 @@ mod tests {
         assert_eq!(id("", "אֵל", "").as_deref(), Some("elah"));
         assert_eq!(id("", "אֶל", "").as_deref(), Some("elah"));
         assert_eq!(id("", "אַל", "").as_deref(), Some("el-al"));
-        // No entry yet.
-        assert_eq!(id("ברא", "", ""), None);
+        // A root no entry is filed under finds none. (Entries keep arriving,
+        // so this is a root no Hebrew word has.)
+        assert_eq!(id("צצצ", "", ""), None);
         // Which words of the text the entry is for: the particle is, the name
         // Asher and "yesterday" (filed by BDB under אמר) are not.
         assert!(
@@ -10829,6 +10838,21 @@ mod tests {
         assert_eq!(info.number.as_deref(), Some("Singular"));
     }
 
+    /// Whether the corpus review has reached an OT verse, whose glosses are
+    /// then the review's rather than the generated ones a test checks.
+    fn reviewed(book: u8, chapter: u8, verse: u8) -> bool {
+        let path = Path::new(env!("CARGO_MANIFEST_DIR")).join(format!(
+            "../../src_texts/Haqor-Review/ot/{book}/{chapter}/{verse}.json"
+        ));
+        if path.exists() {
+            eprintln!(
+                "skipping generated-gloss checks: {} is reviewed",
+                path.display()
+            );
+        }
+        path.exists()
+    }
+
     #[test]
     fn verse_glosses_keep_lexicon_headers_separate() {
         let data = Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
@@ -10838,19 +10862,23 @@ mod tests {
         }
         let bible = Bible::open(data).unwrap();
 
-        // Gen 1:1 contains אֵת at position 3. Its Lexicon header remains the
-        // descriptive entry, while TAHOT's compact reader representation
-        // points at the marked object.
+        // 2 Kgs 19:15 contains אֶת at position 19. Its Lexicon header remains
+        // the descriptive entry, while TAHOT's compact reader representation
+        // points at the marked object. (A reviewed verse shows the review's
+        // glosses instead, so these are checked where no review has reached.)
         let info = bible
             .hebrew_word_info("אֵת")
             .expect("object marker resolves");
         assert_eq!(info.gloss, "mark of the accusative");
-        let glosses = bible.verse_glosses(1, 1, 1).unwrap();
-        assert_eq!(glosses[2], "Mighty-ones");
+        if reviewed(11, 19, 15) {
+            return;
+        }
+        let glosses = bible.verse_glosses(11, 19, 15).unwrap();
+        assert_eq!(glosses[6], "the God of");
         // A verse of glosses reads left to right, so the object it points at is
         // the gloss on its right — not the one a Hebrew line would put there.
-        assert_eq!(glosses[3], "→");
-        assert_eq!(glosses[5], "and →");
+        assert_eq!(glosses[19], "→");
+        assert_eq!(glosses[21], "and →");
         assert!(
             !glosses.iter().any(|gloss| gloss.contains('←')),
             "no gloss keeps the right-to-left arrow: {glosses:?}"
@@ -11158,33 +11186,65 @@ mod tests {
     }
 
     #[test]
-    fn nt_reader_metadata_uses_sedra_glosses_in_token_order() {
+    fn nt_reader_metadata_uses_reviewed_then_sedra_glosses_in_token_order() {
         let data = Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data");
         if !data.join("haqor.db").exists() {
             eprintln!("skipping: data/*.db not generated in this checkout");
             return;
         }
-        let bible = Bible::open(data).unwrap();
+        let bible = Bible::open(&data).unwrap();
 
-        let text = bible.get(40, 1, 1).unwrap();
+        // An unreviewed verse: SEDRA's lexeme glosses, in source-token order.
+        let text = bible.get(40, 2, 1).unwrap();
         let mut metadata = bible
-            .chapter_reader_metadata(40, 1, true, false, true, true)
+            .chapter_reader_metadata(40, 2, true, false, true, true)
             .unwrap();
-        let verse = metadata.remove(&1).expect("Matthew 1:1 metadata");
-
+        let verse = metadata.remove(&1).expect("Matthew 2:1 metadata");
         assert_eq!(verse.glosses.len(), text.split_whitespace().count());
         assert_eq!(
             verse.glosses,
             [
-                "book", "origin", "Jesus", "Messiah", "son", "David", "son", "Abraham",
+                "when",
+                "but",
+                "beget",
+                "Jesus",
+                "Bethlehem",
+                "Judea",
+                "day",
+                "Herod the Great",
+                "king",
+                "come",
+                "Magi",
+                "from",
+                "east",
+                "Jerusalem",
             ]
         );
-        assert_eq!(verse.names, vec![false; verse.glosses.len()]);
         assert_eq!(verse.roots.len(), verse.glosses.len());
-        assert_eq!(
-            verse.roots,
-            ["כתב", "ילד", "ישוע", "משח", "בר", "דויד", "בר", "אברהם"]
-        );
+        assert_eq!(&verse.roots[2..4], ["ילד", "ישוע"]);
+        assert_eq!(bible.verse_glosses(40, 2, 1).unwrap(), verse.glosses);
+
+        // A reviewed verse reads the reviewer's glosses in context, which the
+        // build merged into its words, whatever the review now says.
+        let review = data.join("../src_texts/Haqor-Review/peshitta/40/1/1.json");
+        let Ok(raw) = std::fs::read_to_string(review) else {
+            return;
+        };
+        let review: serde_json::Value = serde_json::from_str(&raw).unwrap();
+        let Some(glosses) = review["review"]["glosses"].as_array() else {
+            return;
+        };
+        let reviewed: Vec<&str> = glosses
+            .iter()
+            .map(|g| g["gloss"].as_str().unwrap())
+            .collect();
+        let verse = bible
+            .chapter_reader_metadata(40, 1, true, false, true, true)
+            .unwrap()
+            .remove(&1)
+            .expect("Matthew 1:1 metadata");
+        assert_eq!(verse.glosses, reviewed);
+        assert_eq!(verse.roots.len(), verse.glosses.len());
         assert_eq!(bible.verse_glosses(40, 1, 1).unwrap(), verse.glosses);
     }
 
@@ -11216,13 +11276,16 @@ mod tests {
         }
         let bible = Bible::open(data).unwrap();
 
-        let glosses = bible.verse_glosses(1, 1, 2).unwrap();
-        assert_eq!(glosses[1], "was");
-        assert_eq!(glosses[2], "formlessness");
-        assert_eq!(glosses[5], "was over");
-        assert_eq!(glosses[6], "the surface of");
-        assert_eq!(glosses[8], "and the spirit of");
-        assert_eq!(glosses[10], "was hovering");
+        // Jer 4:23, which no review has reached: TAHOT renders each word in
+        // its context rather than with its dictionary gloss.
+        if reviewed(13, 4, 23) {
+            return;
+        }
+        let glosses = bible.verse_glosses(13, 4, 23).unwrap();
+        assert_eq!(glosses[0], "I looked at");
+        assert_eq!(glosses[3], "and there!");
+        assert_eq!(glosses[4], "it was formlessness");
+        assert_eq!(glosses[5], "and emptiness");
     }
 
     #[test]

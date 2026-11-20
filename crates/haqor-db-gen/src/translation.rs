@@ -2690,6 +2690,8 @@ mod tests {
              CREATE TABLE nt_word(ref INTEGER, ord INTEGER, word_id INTEGER,
                                   PRIMARY KEY(ref, ord)) WITHOUT ROWID;
              INSERT INTO nt_word SELECT ref, ord, word_id FROM src.nt_word;
+             CREATE TABLE syriac_word(word_id INTEGER PRIMARY KEY, word TEXT, vocalised TEXT);
+             INSERT INTO syriac_word SELECT word_id, word, vocalised FROM src.syriac_word;
              CREATE TABLE greek_word(ref INTEGER, position INTEGER, word TEXT,
                                      PRIMARY KEY(ref, position)) WITHOUT ROWID;
              INSERT INTO greek_word SELECT ref, position, word FROM src.greek_word;
