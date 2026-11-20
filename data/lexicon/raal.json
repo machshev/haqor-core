@@ -1,0 +1,179 @@
+{
+  "id": "raal",
+  "root": "רעל",
+  "status": "draft",
+  "created": "2026-11-20",
+  "updated": "2026-11-19",
+  "gloss": "tremble, stagger",
+  "summary": "The cup makes its drinker stagger. Isaiah uses it for the distress of Jerusalem and David for the blow that has struck his people.",
+  "words": [
+    {
+      "lemma": "תַּרְעֵלָה",
+      "bdb": [
+        "t.dn.ae"
+      ],
+      "pos": "noun",
+      "gloss": "staggering",
+      "senses": [
+        {
+          "gloss": "staggering",
+          "definition": "Jerusalem has drained the cup to its dregs. The psalm describes defeat as wine that leaves the people reeling.",
+          "evidence": [
+            {
+              "ref": "Isa.51.17",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.60.5"
+            },
+            {
+              "ref": "Isa.51.22"
+            }
+          ]
+        }
+      ],
+      "gender": "f",
+      "cognate_ids": [
+        "arc-real"
+      ]
+    },
+    {
+      "lemma": "רַעַל",
+      "bdb": [
+        "t.dn.ab"
+      ],
+      "pos": "noun",
+      "gloss": "reeling",
+      "senses": [
+        {
+          "gloss": "reeling",
+          "definition": "Jerusalem becomes a cup whose contents make the surrounding peoples reel.",
+          "evidence": [
+            {
+              "ref": "Zec.12.2",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-real"
+      ]
+    },
+    {
+      "lemma": "רָעַל",
+      "bdb": [
+        "t.dn.aa"
+      ],
+      "pos": "verb",
+      "gloss": "be set shaking",
+      "stems": [
+        {
+          "stem": "hophal",
+          "gloss": "be set shaking",
+          "senses": [
+            {
+              "gloss": "be set shaking",
+              "definition": "In the prophet’s picture of the mustered army the cypress shafts are brandished.",
+              "evidence": [
+                {
+                  "ref": "Nam.2.4",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-real"
+      ]
+    },
+    {
+      "lemma": "רְעָלָה",
+      "bdb": [
+        "t.dn.ac"
+      ],
+      "pos": "noun",
+      "gloss": "veil, an article of dress",
+      "senses": [
+        {
+          "gloss": "veil, an article of dress",
+          "definition": "Isaiah lists it with the ornaments worn by the daughters of Zion. Its shape and its connection with shaking are uncertain.",
+          "evidence": [
+            {
+              "ref": "Isa.3.19",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
+    },
+    {
+      "lemma": "רְעֵל",
+      "pos": "verb",
+      "gloss": "tremble",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "tremble",
+          "senses": [
+            {
+              "gloss": "tremble",
+              "definition": "James speaks of trembling in fear.",
+              "evidence": [
+                {
+                  "ref": "Jas.2.19",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "cognate_ids": [
+        "arc-real"
+      ]
+    },
+    {
+      "lemma": "רַעְלָא",
+      "pos": "noun",
+      "gloss": "trembling",
+      "senses": [
+        {
+          "gloss": "trembling",
+          "definition": "The hearers are urged to strengthen their trembling knees.",
+          "evidence": [
+            {
+              "ref": "Heb.12.12",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "lang": "syc",
+      "cognate_ids": [
+        "arc-real"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-real",
+      "lang": "arc",
+      "form": "רְעַל",
+      "translit": "rəʿal",
+      "gloss": "tremble, be weak",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "רְעַל, T00906, Targum to Isaiah 35:3"
+        }
+      ]
+    }
+  ],
+  "note": "Nahum describes military preparations. The precise object being shaken is debated."
+}

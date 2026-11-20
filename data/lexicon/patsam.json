@@ -1,0 +1,75 @@
+{
+  "id": "patsam",
+  "root": "פצמ",
+  "status": "draft",
+  "created": "2026-11-20",
+  "updated": "2026-11-19",
+  "gloss": "split open",
+  "summary": "David pictures a land split by an earthquake. His next words ask God to heal its breaches.",
+  "words": [
+    {
+      "lemma": "פָּצַם",
+      "bdb": [
+        "q.ck.aa"
+      ],
+      "pos": "verb",
+      "gloss": "split open",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "split open",
+          "senses": [
+            {
+              "gloss": "split open",
+              "definition": "The earth shakes and cracks appear in it. The prayer to heal the breaches describes the result of the splitting.",
+              "evidence": [
+                {
+                  "ref": "Psa.60.4",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-fasama",
+        "arc-petsam"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "ar-fasama",
+      "lang": "ar",
+      "form": "فَصَمَ",
+      "translit": "faṣama",
+      "gloss": "crack, break without separating",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 2408, n34015"
+        }
+      ],
+      "sounds": {
+        "צ": "ṣ"
+      }
+    },
+    {
+      "id": "arc-petsam",
+      "lang": "arc",
+      "form": "פְּצַם",
+      "translit": "pəṣam",
+      "gloss": "split, break open",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "פְּצַם, Q01438, Targum to Jeremiah 22:14"
+        }
+      ]
+    }
+  ],
+  "note": "The qal occurs once in the Hebrew text."
+}

@@ -1,0 +1,133 @@
+{
+  "id": "nasas",
+  "root": "נסס",
+  "status": "draft",
+  "created": "2026-11-20",
+  "updated": "2026-11-19",
+  "gloss": "raise a signal, banner",
+  "summary": "A signal high on a hill can gather people from far away. Moses also mounted the bronze serpent on a pole where bitten Israelites could see it.",
+  "words": [
+    {
+      "lemma": "נֵס",
+      "bdb": [
+        "n.dy.ab"
+      ],
+      "pos": "noun",
+      "gloss": "signal, standard or signal pole",
+      "senses": [
+        {
+          "gloss": "signal, standard or signal pole",
+          "definition": "Isaiah pairs seeing the standard on the hills with hearing a horn. A standard is given to those who fear God, and the upright in the wilderness holds the bronze serpent in sight.",
+          "evidence": [
+            {
+              "ref": "Isa.18.3",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.60.6"
+            },
+            {
+              "ref": "Num.21.8"
+            },
+            {
+              "ref": "Num.21.9"
+            },
+            {
+              "ref": "Jer.4.6"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "arc-nes"
+      ]
+    },
+    {
+      "lemma": "נָסַס",
+      "bdb": [
+        "n.dy.aa"
+      ],
+      "pos": "verb",
+      "gloss": "be lifted high",
+      "stems": [
+        {
+          "stem": "hithpolel",
+          "gloss": "be lifted high",
+          "senses": [
+            {
+              "gloss": "be lifted high",
+              "definition": "Zechariah likens the people on their land to the stones of a crown held high.",
+              "evidence": [
+                {
+                  "ref": "Zec.9.16",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "נָסַס",
+      "bdb": [
+        "n.dx.aa"
+      ],
+      "pos": "verb",
+      "gloss": "waste away",
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "waste away",
+          "senses": [
+            {
+              "gloss": "waste away",
+              "definition": "The consumption of forest and fruitful land is likened to a sick person wasting away. The comparison is difficult and the verb occurs only here.",
+              "evidence": [
+                {
+                  "ref": "Isa.10.18",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-nesas"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-nes",
+      "lang": "arc",
+      "form": "נֵס",
+      "translit": "nēs",
+      "gloss": "flag, sign",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "נֵס, N00913, Targum to Numbers 25:8"
+        }
+      ]
+    },
+    {
+      "id": "arc-nesas",
+      "lang": "arc",
+      "form": "נְסַס",
+      "translit": "nəsas",
+      "gloss": "be ill, pine away",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "נְסַס, N00953, Targum to Esther 4:17"
+        }
+      ]
+    }
+  ],
+  "note": "The verb in Psalm 60:6 can suggest rallying to a banner or fleeing for safety. Its token key is held by nus, which discusses both readings. Isaiah 10:18 has no clear semantic link to the standard."
+}
