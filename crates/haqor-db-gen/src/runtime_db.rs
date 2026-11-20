@@ -30,6 +30,7 @@ use haqor_core::bible::HebrewWord;
 use haqor_core::resolve::{TokenTagging, resolve};
 use log::info;
 use rusqlite::{Connection, params};
+use serde_json::Value;
 
 /// Schema version of the emitted database. Bump when a reader would have to
 /// change to keep understanding `haqor.db`.
@@ -392,6 +393,8 @@ pub fn generate_runtime(
     db.execute_batch(INDEXES)?;
     db.execute_batch("DETACH DATABASE out")?;
 
+    import_review_occurrences(&Connection::open(output)?, src_texts)?;
+
     let quotations = crate::quotations::build_quotations(&Connection::open(output)?)?;
     info!("Found {quotations} cross references (OT/NT quotations and parallels)");
     crate::tsk::build_thematic_references(&Connection::open(output)?, src_texts)?;
@@ -449,6 +452,71 @@ pub fn generate_runtime(
     Ok(words)
 }
 
+/// Import completed per-verse review packets as an additive runtime overlay.
+/// Partial packets are deliberately ignored until their verse review exists.
+fn import_review_occurrences(db: &Connection, src_texts: &Path) -> Result<usize> {
+    let root = src_texts.join("Haqor-Review");
+    if !root.exists() {
+        return Ok(0);
+    }
+    let mut files = Vec::new();
+    fn visit(dir: &Path, files: &mut Vec<std::path::PathBuf>) -> Result<()> {
+        for entry in std::fs::read_dir(dir)? {
+            let path = entry?.path();
+            if path.is_dir() {
+                visit(&path, files)?;
+            } else if path.extension().and_then(|s| s.to_str()) == Some("json") {
+                files.push(path);
+            }
+        }
+        Ok(())
+    }
+    visit(&root, &mut files)?;
+    let tx = db.unchecked_transaction()?;
+    let mut insert = tx.prepare("INSERT INTO review_occurrence(source,ref,position,lemma,root,morphology,gloss,sense,verse_gloss) VALUES(?,?,?,?,?,?,?,?,?)")?;
+    let mut count = 0;
+    for path in files {
+        let packet: Value = serde_json::from_str(&std::fs::read_to_string(&path)?)
+            .with_context(|| format!("parsing review packet {}", path.display()))?;
+        let Some(review) = packet.get("review") else {
+            continue;
+        };
+        let source = packet["source"].as_str().context("review packet source")?;
+        let reference = pack_ref(
+            packet["book"].as_i64().context("review packet book")?,
+            packet["chapter"]
+                .as_i64()
+                .context("review packet chapter")?,
+            packet["verse"].as_i64().context("review packet verse")?,
+        );
+        let glosses = review["glosses"].as_array().cloned().unwrap_or_default();
+        for word in packet["words"].as_array().context("review packet words")? {
+            let position = word["position"].as_i64().context("review word position")?;
+            let analysis = &word["analysis"];
+            let verse_gloss = glosses
+                .iter()
+                .find(|g| g["position"] == position)
+                .and_then(|g| g["gloss"].as_str());
+            insert.execute(params![
+                source,
+                reference,
+                position,
+                analysis["lemma"].as_str(),
+                analysis["root"].as_str(),
+                analysis["morphology"].as_str(),
+                analysis["gloss"].as_str(),
+                analysis["sense"].as_str(),
+                verse_gloss
+            ])?;
+            count += 1;
+        }
+    }
+    drop(insert);
+    tx.commit()?;
+    info!("Imported {count} reviewed lexical occurrences");
+    Ok(count)
+}
+
 const SCHEMA: &str = "
 CREATE TABLE meta(key TEXT PRIMARY KEY, value TEXT NOT NULL);
 
@@ -492,6 +560,22 @@ CREATE TABLE word(
     info_id    INTEGER,
     gloss_id   INTEGER,
     PRIMARY KEY(ref, position)
+) WITHOUT ROWID;
+
+-- Source-linked lexical decisions made by the resumable corpus review.  The
+-- generated tables remain the fallback, while this keyed overlay lets the
+-- reader show a completed word decision without changing source databases.
+CREATE TABLE review_occurrence(
+    source TEXT NOT NULL,
+    ref INTEGER NOT NULL,
+    position INTEGER NOT NULL,
+    lemma TEXT,
+    root TEXT,
+    morphology TEXT,
+    gloss TEXT,
+    sense TEXT,
+    verse_gloss TEXT,
+    PRIMARY KEY(source, ref, position)
 ) WITHOUT ROWID;
 
 -- `word` with its reference unpacked. The tutor scores whole-corpus

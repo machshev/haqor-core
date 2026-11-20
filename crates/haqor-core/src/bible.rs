@@ -3883,16 +3883,17 @@ impl Bible {
         // occurrences and a rowid sort.
         let mut stmt = self.db.prepare(
             "SELECT o.ref & 255, \
-                    (SELECT trim(coalesce(e.before, '') || ' ' || \
+                    coalesce(ro.verse_gloss, ro.gloss, (SELECT trim(coalesce(e.before, '') || ' ' || \
                                  coalesce(e.meaning, '') || ' ' || \
                                  coalesce(e.after, '')) \
                      FROM data.syriac_gloss e \
                      WHERE e.lexeme_id = w.lexeme_id \
-                     ORDER BY e.gloss_id LIMIT 1), r.root,o.ord \
+                     ORDER BY e.gloss_id LIMIT 1)), coalesce(ro.root, r.root),o.ord \
              FROM data.nt_word o \
              JOIN data.syriac_word w ON w.word_id = o.word_id \
              LEFT JOIN data.syriac_lexeme l ON l.lexeme_id = w.lexeme_id \
              LEFT JOIN data.syriac_root r ON r.root_id = l.root_id \
+             LEFT JOIN data.review_occurrence ro ON ro.source='peshitta' AND ro.ref=o.ref AND ro.position=o.ord \
              WHERE o.ref BETWEEN ?1 AND ?2 \
              ORDER BY o.ref, o.ord",
         )?;
@@ -4069,7 +4070,17 @@ impl Bible {
             &sql,
             rusqlite::params![pack_ref(book, chapter, verse), position as i64, norm],
             &norm,
-        )
+        ).map(|mut info| {
+            if let Ok(Some((root, gloss))) = self.db.query_row(
+                "SELECT root, coalesce(verse_gloss, gloss, '') FROM data.review_occurrence WHERE source='ot' AND ref=?1 AND position=?2",
+                rusqlite::params![pack_ref(book, chapter, verse), position as i64],
+                |row| Ok((row.get::<_, Option<String>>(0)?, row.get::<_, String>(1)?)),
+            ).optional() {
+                if let Some(root) = root { info.root = root; }
+                if !gloss.is_empty() { info.gloss = gloss; }
+            }
+            info
+        })
     }
 
     /// A lexicon entry's article, decoded from however the build stored it.
@@ -6346,13 +6357,14 @@ impl Bible {
             return Ok(Vec::new());
         }
         let mut stmt = self.db.prepare_cached(
-            "SELECT w.ref & 255, w.position, w.word, coalesce(e.text, ''), \
-                    coalesce(l.lemma, ''), coalesce(l.gloss, ''), coalesce(g.code, ''), \
+            "SELECT w.ref & 255, w.position, w.word, coalesce(ro.verse_gloss, e.text, ''), \
+                    coalesce(ro.lemma, l.lemma, ''), coalesce(ro.gloss, l.gloss, ''), coalesce(g.code, ''), \
                     w.entity_id \
              FROM data.greek_word w \
              LEFT JOIN data.greek_english e ON e.english_id = w.english_id \
              LEFT JOIN data.greek_lemma l ON l.lemma_id = w.lemma_id \
              LEFT JOIN data.greek_grammar g ON g.grammar_id = w.grammar_id \
+             LEFT JOIN data.review_occurrence ro ON ro.source='greek' AND ro.ref=w.ref AND ro.position=w.position \
              WHERE w.ref BETWEEN ?1 AND ?2 ORDER BY w.ref, w.position",
         )?;
         let mut verses: Vec<GreekVerse> = Vec::new();

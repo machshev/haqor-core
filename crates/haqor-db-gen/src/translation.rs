@@ -47,6 +47,7 @@ use anyhow::{Context, Result, bail};
 use haqor_core::data_support::bare_letters;
 use log::{debug, info};
 use rusqlite::{Connection, OptionalExtension, params};
+use serde_json::Value;
 
 use crate::runtime_db::pack_ref;
 
@@ -58,6 +59,59 @@ DROP TABLE IF EXISTS greek_translation_verse;
 CREATE TABLE translation_verse(ref INTEGER PRIMARY KEY, text BLOB NOT NULL);
 CREATE TABLE greek_translation_verse(ref INTEGER PRIMARY KEY, text BLOB NOT NULL);
 ";
+
+/// Read complete verse reviews published by `haqor-review`.  These packets
+/// are source-controlled per verse so a stopped run can resume without
+/// rebuilding a monolithic export.  Only completed packets carry `review`.
+fn read_review_overrides(src_texts: &Path) -> Result<Vec<(String, i64, String)>> {
+    let root = src_texts.join("Haqor-Review");
+    if !root.exists() {
+        return Ok(Vec::new());
+    }
+    fn visit(dir: &Path, out: &mut Vec<(String, i64, String)>) -> Result<()> {
+        for entry in fs::read_dir(dir).with_context(|| format!("reading {}", dir.display()))? {
+            let path = entry?.path();
+            if path.is_dir() {
+                visit(&path, out)?;
+                continue;
+            }
+            if path.extension().and_then(|s| s.to_str()) != Some("json") {
+                continue;
+            }
+            let raw =
+                fs::read_to_string(&path).with_context(|| format!("reading {}", path.display()))?;
+            let packet: Value = serde_json::from_str(&raw)
+                .with_context(|| format!("parsing {}", path.display()))?;
+            let Some(review) = packet.get("review") else {
+                continue;
+            };
+            let source = packet["source"].as_str().context("review packet source")?;
+            let Some(english) = review.get("translation").and_then(Value::as_str) else {
+                bail!("{}: review has no translation", path.display());
+            };
+            let book = packet["book"].as_i64().context("review packet book")?;
+            let chapter = packet["chapter"]
+                .as_i64()
+                .context("review packet chapter")?;
+            let verse = packet["verse"].as_i64().context("review packet verse")?;
+            let reference = pack_ref(book, chapter, verse);
+            if out.iter().any(|(s, r, _)| s == source && *r == reference) {
+                bail!(
+                    "{}: duplicate reviewed translation {reference:#x}",
+                    path.display()
+                );
+            }
+            // The source-position markup is shared by all three editions.
+            haqor_core::translation::parse(english, chapter as u8, verse as u8)
+                .with_context(|| format!("{}: translation does not parse", path.display()))?;
+            out.push((source.to_owned(), reference, english.to_owned()));
+        }
+        Ok(())
+    }
+    let mut result = Vec::new();
+    visit(&root, &mut result)?;
+    Ok(result)
+}
 
 /// The English Haqor gives ἐκκλησία whatever a translation says: the
 /// ecclesia, the assembly of those called out, not a "church". Applied to
@@ -2079,9 +2133,24 @@ pub fn build_translation(
             existing.1 = english;
         }
     }
+    let new_testament = pack_ref(40, 0, 0);
+    // The review harness publishes each completed verse as a packet. Apply
+    // those packets after the edition-specific fallbacks so a live review is
+    // visible on the next normal runtime rebuild. The source TSVs remain the
+    // compact interchange files for older reviewed material.
+    for (source, reference, english) in read_review_overrides(src_texts)? {
+        if source == "ot" || source == "peshitta" {
+            if let Some(existing) = verses.iter_mut().find(|(r, _)| *r == reference) {
+                existing.1 = english;
+            }
+        } else if source == "greek"
+            && let Some(existing) = greek.iter_mut().find(|(r, _)| *r == reference)
+        {
+            existing.1 = english;
+        }
+    }
     by_verse(&mut greek, ADVERSARY, "the TR's English")?;
     by_verse(&mut greek, HINNOM, "the TR's English")?;
-    let new_testament = pack_ref(40, 0, 0);
     for (reference, english) in verses.iter_mut().chain(greek.iter_mut()) {
         let ecclesia = replace_words(english, &ECCLESIA);
         *english = if *reference < new_testament {
@@ -2252,6 +2321,34 @@ mod tests {
         let result = apply_revisions(books, &path);
         std::fs::remove_file(&path).unwrap();
         result
+    }
+
+    #[test]
+    fn reads_completed_review_packets_and_ignores_partial_packets() {
+        let src = std::env::temp_dir().join(format!("haqor-review-packets-{}", std::process::id()));
+        let root = src.join("Haqor-Review");
+        let path = root.join("peshitta/40/1/2.json");
+        std::fs::create_dir_all(path.parent().unwrap()).unwrap();
+        std::fs::write(
+            &path,
+            r#"{"source":"peshitta","book":40,"chapter":1,"verse":2,"words":[],"review":{"translation":"[one|0]"}}"#,
+        )
+        .unwrap();
+        std::fs::write(
+            root.join("peshitta/40/1/3.json"),
+            r#"{"source":"peshitta","book":40,"chapter":1,"verse":3,"words":[]}"#,
+        )
+        .unwrap();
+        let result = read_review_overrides(&src).unwrap();
+        assert_eq!(
+            result,
+            vec![(
+                "peshitta".to_owned(),
+                pack_ref(40, 1, 2),
+                "[one|0]".to_owned()
+            )]
+        );
+        std::fs::remove_dir_all(src).unwrap();
     }
 
     #[test]
