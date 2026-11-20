@@ -1,1 +1,84 @@
-{"id":"shalal","root":"שלל","status":"draft","updated":"2026-11-20","gloss":"spoil","summary":"שָׁלָל is spoil taken in victory.","words":[{"lemma":"שָׁלָל","bdb":["v.dr.ab"],"pos":"noun","gender":"m","gloss":"spoil","senses":[{"gloss":"spoil","definition":"The women at home divide the spoil after Yahweh gives the word.","evidence":[{"ref":"Psa.68.13","role":"defining"}]}]}],"note":"Drafted for Psalm 68 coverage."}
+{
+  "id": "shalal",
+  "root": "שלל",
+  "status": "draft",
+  "updated": "2026-11-20",
+  "gloss": "spoil",
+  "summary": "שָׁלָל is spoil taken in victory.",
+  "words": [
+    {
+      "lemma": "שָׁלָל",
+      "bdb": [
+        "v.dr.ab"
+      ],
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "spoil",
+      "senses": [
+        {
+          "gloss": "spoil",
+          "definition": "The women at home divide the spoil after Yahweh gives the word.",
+          "evidence": [
+            {
+              "ref": "Psa.68.13",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שָׁלַל",
+      "pos": "verb",
+      "gloss": "plunder",
+      "bdb": [
+        "v.dr.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "plunder",
+          "senses": [
+            {
+              "gloss": "plunder",
+              "definition": "To take property by force as spoil.",
+              "evidence": [
+                {
+                  "ref": "Ezk.38.12",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "שָׁלַל",
+      "pos": "verb",
+      "gloss": "draw out",
+      "bdb": [
+        "v.dq.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "draw out",
+          "senses": [
+            {
+              "gloss": "draw out",
+              "definition": "To draw out or take away.",
+              "evidence": [
+                {
+                  "ref": "Rut.2.16",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "note": "Drafted for Psalm 68 coverage."
+}
