@@ -407,6 +407,18 @@ pub fn generate_runtime(
         &data_dir.join(crate::events::EVENT_OVERRIDES),
         &data_dir.join(crate::sequences::EVENT_SEQUENCES),
     )?;
+    let existing: std::collections::HashSet<String> = db
+        .prepare("PRAGMA table_info(review_occurrence)")?
+        .query_map([], |row| row.get(1))?
+        .collect::<rusqlite::Result<_>>()?;
+    for column in ["language", "qualifier", "entry_id"] {
+        if !existing.contains(column) {
+            db.execute(
+                &format!("ALTER TABLE review_occurrence ADD COLUMN {column} TEXT"),
+                [],
+            )?;
+        }
+    }
     // After the names, whose people and places the finds name.
     crate::artifacts::build_artifacts(
         &Connection::open(output)?,
@@ -460,6 +472,7 @@ pub(crate) fn import_review_occurrences(db: &Connection, src_texts: &Path) -> Re
         "CREATE TABLE IF NOT EXISTS review_occurrence(\
         source TEXT NOT NULL, ref INTEGER NOT NULL, position INTEGER NOT NULL,\
         lemma TEXT, root TEXT, morphology TEXT, gloss TEXT, sense TEXT, verse_gloss TEXT,\
+        language TEXT, qualifier TEXT, entry_id TEXT,\
         PRIMARY KEY(source, ref, position)) WITHOUT ROWID",
     )?;
     let root = src_texts.join("Haqor-Review");
@@ -481,7 +494,7 @@ pub(crate) fn import_review_occurrences(db: &Connection, src_texts: &Path) -> Re
     visit(&root, &mut files)?;
     let tx = db.unchecked_transaction()?;
     tx.execute("DELETE FROM review_occurrence", [])?;
-    let mut insert = tx.prepare("INSERT INTO review_occurrence(source,ref,position,lemma,root,morphology,gloss,sense,verse_gloss) VALUES(?,?,?,?,?,?,?,?,?)")?;
+    let mut insert = tx.prepare("INSERT INTO review_occurrence(source,ref,position,lemma,root,morphology,gloss,sense,verse_gloss,language,qualifier,entry_id) VALUES(?,?,?,?,?,?,?,?,?,?,?,?)")?;
     let mut count = 0;
     for path in files {
         let packet: Value = serde_json::from_str(&std::fs::read_to_string(&path)?)
@@ -524,6 +537,9 @@ pub(crate) fn import_review_occurrences(db: &Connection, src_texts: &Path) -> Re
             );
             let analysis = &word["analysis"];
             let verse_gloss = glosses.get(&position).copied();
+            let entry_id = analysis["entry"]["existing"]
+                .as_str()
+                .or_else(|| analysis["entry"]["draft"]["article_id"].as_str());
             insert.execute(params![
                 source,
                 reference,
@@ -533,7 +549,10 @@ pub(crate) fn import_review_occurrences(db: &Connection, src_texts: &Path) -> Re
                 analysis["morphology"].as_str(),
                 analysis["gloss"].as_str(),
                 analysis["sense"].as_str(),
-                verse_gloss
+                verse_gloss,
+                analysis["language"].as_str(),
+                analysis["qualifier"].as_str(),
+                entry_id
             ])?;
             count += 1;
         }
@@ -602,6 +621,9 @@ CREATE TABLE review_occurrence(
     gloss TEXT,
     sense TEXT,
     verse_gloss TEXT,
+    language TEXT,
+    qualifier TEXT,
+    entry_id TEXT,
     PRIMARY KEY(source, ref, position)
 ) WITHOUT ROWID;
 
