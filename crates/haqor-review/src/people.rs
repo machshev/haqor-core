@@ -448,21 +448,7 @@ pub fn publish(queue: &Connection, src: &Path, data: &Path, lexicon: &Path) -> R
         );
         // A newly written name article may still be waiting for its verse
         // reviewer to identify the people who bear it.
-        let mut stmt = queue
-            .prepare("SELECT DISTINCT body FROM article WHERE id=? AND name=1 AND applied=0")?;
-        let bodies = stmt
-            .query_map([&id], |r| r.get::<_, String>(0))?
-            .collect::<rusqlite::Result<Vec<_>>>()?;
-        if !bodies.is_empty() {
-            for body in bodies {
-                let mut draft: Value = serde_json::from_str(&body)?;
-                if add_bearers(&mut draft, &keys)? {
-                    queue.execute(
-                        "UPDATE article SET body=? WHERE id=? AND name=1 AND applied=0 AND body=?",
-                        params![serde_json::to_string_pretty(&draft)?, id, body],
-                    )?;
-                }
-            }
+        if update_pending_names(queue, &id, &keys, None)? {
             continue;
         }
         let path = lexicon.join("names").join(format!("{id}.json"));
@@ -589,21 +575,7 @@ pub fn publish_one_with_refs(
             id.bytes().all(|b| b.is_ascii_alphanumeric() || b == b'-'),
             "invalid article id"
         );
-        let mut pending = queue
-            .prepare("SELECT DISTINCT body FROM article WHERE id=? AND name=1 AND applied=0")?;
-        let bodies = pending
-            .query_map([&id], |r| r.get::<_, String>(0))?
-            .collect::<rusqlite::Result<Vec<_>>>()?;
-        if !bodies.is_empty() {
-            for body in bodies {
-                let mut article: Value = serde_json::from_str(&body)?;
-                if add_bearers(&mut article, &keys)? {
-                    queue.execute(
-                        "UPDATE article SET body=? WHERE id=? AND name=1 AND applied=0 AND body=?",
-                        params![serde_json::to_string_pretty(&article)?, id, body],
-                    )?;
-                }
-            }
+        if update_pending_names(queue, &id, &keys, Some((edition, reference)))? {
             continue;
         }
         let path = lexicon.join("names").join(format!("{id}.json"));
@@ -620,6 +592,49 @@ pub fn publish_one_with_refs(
         }
     }
     Ok(())
+}
+
+fn update_pending_names(
+    queue: &Connection,
+    id: &str,
+    keys: &BTreeSet<String>,
+    verse: Option<(&str, i64)>,
+) -> Result<bool> {
+    let (edition, reference) = verse.unzip();
+    let mut query = queue.prepare(
+        "SELECT a.source,a.ref,a.pos,a.body FROM article a JOIN job w USING(source,ref,pos)
+         WHERE a.id=? AND a.name=1 AND a.applied=0 AND w.state='done'
+         AND (?2 IS NULL OR (a.source=?2 AND a.ref=?3))
+         AND EXISTS (SELECT 1 FROM job v WHERE v.source=a.source AND v.ref=a.ref AND v.pos=-1 AND v.state='done')",
+    )?;
+    let rows = query
+        .query_map(params![id, edition, reference], |row| {
+            Ok((
+                Job {
+                    source: row.get(0)?,
+                    reference: row.get(1)?,
+                    pos: row.get(2)?,
+                },
+                row.get::<_, String>(3)?,
+            ))
+        })?
+        .collect::<rusqlite::Result<Vec<_>>>()?;
+    for (job, staged) in &rows {
+        let body = crate::articles::draft_body(queue, job, staged.clone())?;
+        let mut article: Value = serde_json::from_str(&body)?;
+        if add_bearers(&mut article, keys)? {
+            queue.execute(
+                "UPDATE article SET body=? WHERE source=? AND ref=? AND pos=?",
+                params![
+                    serde_json::to_string_pretty(&article)?,
+                    job.source,
+                    job.reference,
+                    job.pos
+                ],
+            )?;
+        }
+    }
+    Ok(!rows.is_empty())
 }
 
 fn accept_published_mentions(
@@ -755,6 +770,41 @@ impl People {
 #[cfg(test)]
 mod tests {
     use super::*;
+    #[test]
+    fn pending_bearers_are_applied_to_the_reviewed_passage() -> Result<()> {
+        let db = Connection::open_in_memory()?;
+        db.execute_batch(crate::jobs::SCHEMA)?;
+        for passage in [65793, 65794] {
+            db.execute("INSERT INTO verse VALUES('ot',?,'{}')", [passage])?;
+            for pos in [-1, 0] {
+                db.execute(
+                    "INSERT INTO job(source,ref,pos,state) VALUES('ot',?,?,'done')",
+                    [passage, pos],
+                )?;
+            }
+            db.execute(
+                "INSERT INTO article VALUES('ot',?,0,'shared',1,NULL,?,0)",
+                params![passage, json!({"people":[]}).to_string()],
+            )?;
+        }
+        let keys = BTreeSet::from(["A@Gen.1.1".to_owned()]);
+        assert!(update_pending_names(
+            &db,
+            "shared",
+            &keys,
+            Some(("ot", 65793))
+        )?);
+        for (passage, expected) in [(65793, 1), (65794, 0)] {
+            let count: i64 = db.query_row(
+                "SELECT json_array_length(body,'$.people') FROM article WHERE ref=?",
+                [passage],
+                |r| r.get(0),
+            )?;
+            assert_eq!(count, expected);
+        }
+        Ok(())
+    }
+
     #[test]
     fn same_spelling_can_identify_existing_and_new_bearers() -> Result<()> {
         let db = Connection::open_in_memory()?;

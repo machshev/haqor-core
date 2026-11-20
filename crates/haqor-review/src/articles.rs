@@ -183,6 +183,21 @@ fn is_validation_error(error: &anyhow::Error) -> bool {
     text.starts_with("validating ") && text.contains("lexicon has")
 }
 
+/// Read a deferred draft from its published occurrence after the transient
+/// publication payload has been compacted.
+pub fn draft_body(db: &Connection, job: &Job, staged: String) -> Result<String> {
+    if !staged.is_empty() {
+        return Ok(staged);
+    }
+    let article: String = db.query_row(
+        "SELECT json_extract(review_result(result),'$.entry.draft.article') FROM job WHERE source=? AND ref=? AND pos=?",
+        job.key(), |row| row.get(0),
+    ).context("reading deferred name draft from its published word")?;
+    Ok(serde_json::to_string_pretty(
+        &serde_json::from_str::<Value>(&article)?,
+    )?)
+}
+
 fn apply_one_locked(
     db: &mut Connection,
     lexicon: &Path,
@@ -206,6 +221,7 @@ fn apply_one_locked(
         Err(e) if e.kind() == std::io::ErrorKind::NotFound => None,
         Err(e) => return Err(e.into()),
     };
+    let body = draft_body(db, job, body)?;
     let draft: Value = serde_json::from_str(&body)?;
     if name
         && draft["people"]
@@ -354,6 +370,25 @@ mod tests {
         assert_eq!(
             db.query_row("SELECT applied FROM article", [], |r| r.get::<_, i64>(0))?,
             0
+        );
+        crate::result_store::register(&db, &root)?;
+        let dir = root.join("ot/0/0");
+        fs::create_dir_all(&dir)?;
+        fs::write(
+            dir.join("1.json"),
+            json!({
+                "words":[{"position":0,"analysis":{"entry":{"draft":{"article":body}}}}]
+            })
+            .to_string(),
+        )?;
+        db.execute("UPDATE article SET body=''", [])?;
+        db.execute(
+            "UPDATE job SET result=?",
+            [json!({"_published":["ot",1,0]}).to_string()],
+        )?;
+        assert_eq!(
+            apply_one(&mut db, &root, &HashSet::new(), &job)?,
+            PublishOutcome::Deferred
         );
         fs::remove_dir_all(root)?;
         Ok(())

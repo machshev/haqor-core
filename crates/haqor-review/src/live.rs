@@ -371,8 +371,8 @@ impl Live {
             }
         }
         db.execute(
-            "UPDATE article SET body='' WHERE source=? AND ref=? AND (?=-1 OR pos=?) AND applied=1",
-            params![j.source, j.reference, j.pos, j.pos],
+            "UPDATE article SET body='' WHERE source=?1 AND ref=?2 AND (?3=-1 OR pos=?3) AND (applied=1 OR (?3>=0 AND name=1))",
+            j.key(),
         )?;
         Ok(greek_changed || article.is_some() || j.pos < 0)
     }
