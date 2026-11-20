@@ -40,47 +40,23 @@
           "relation": "loan",
           "evidence": [
             {
-              "ref": "Mat.11.21"
-            },
-            {
-              "ref": "Luk.10.13"
-            },
-            {
-              "ref": "Rev.6.12"
-            },
-            {
-              "ref": "Rev.11.3"
+              "ref": "Rev.6.12",
+              "note": "σάκκος is used for sackcloth."
             },
             {
               "source": "abbott-smith",
               "locator": "σάκκος",
-              "note": "Greek loan from Hebrew שַׂק."
+              "note": "Greek lexicon derives the loan from Hebrew שׂק."
             }
           ]
         }
       ],
       "cognate_ids": [
-        "akk-sakku",
         "grc-sakkos"
       ]
     }
   ],
   "cognates": [
-    {
-      "id": "akk-sakku",
-      "lang": "akk",
-      "form": "sakku",
-      "translit": "sakku",
-      "gloss": "sackcloth",
-      "relation": "cognate",
-      "evidence": [
-        {
-          "source": "oracc",
-          "locator": "sakku",
-          "note": "Akkadian sackcloth lexeme."
-        }
-      ]
-    },
     {
       "id": "grc-sakkos",
       "lang": "grc",
