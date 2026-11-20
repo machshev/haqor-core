@@ -301,6 +301,7 @@ fn main() -> Result<()> {
             let mut catalog = live.catalog()?;
             catalog.people.as_ref().unwrap().refresh(&mut db)?;
             articles::refresh_dependencies(&mut db, &catalog.revisions)?;
+            jobs::backfill_carry_keys(&mut db)?;
             schedule(
                 &mut db,
                 &mut catalog,
@@ -518,9 +519,14 @@ fn schedule(
                 ));
                 scope.spawn(move || {
                     let start = std::time::Instant::now();
-                    let result =
-                        std::panic::catch_unwind(std::panic::AssertUnwindSafe(|| worker(&packet)))
-                            .unwrap_or_else(|_| Err(anyhow::anyhow!("review worker panicked")));
+                    // A word reviewed identically before needs no agent (jobs::carry).
+                    let result = match packet.get("carry") {
+                        Some(answer) => Ok((answer.clone(), json!({"carried": true}))),
+                        None => std::panic::catch_unwind(std::panic::AssertUnwindSafe(|| {
+                            worker(&packet)
+                        }))
+                        .unwrap_or_else(|_| Err(anyhow::anyhow!("review worker panicked"))),
+                    };
                     let _ = tx.send((job, packet, result, start.elapsed()));
                 });
             }

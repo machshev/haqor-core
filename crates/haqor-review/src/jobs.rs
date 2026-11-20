@@ -31,6 +31,9 @@ CREATE INDEX IF NOT EXISTS recent_roots ON job(source,json_extract(result,'$.roo
 CREATE INDEX IF NOT EXISTS ready_verses ON job(ref,source) WHERE state='ready' AND pos=-1;
 CREATE INDEX IF NOT EXISTS ready_words ON job(ref,source,pos) WHERE state='ready' AND pos>=0;
 CREATE INDEX IF NOT EXISTS lexemes ON job(json_extract(result,'$.language'),json_extract(result,'$.lemma'),json_extract(result,'$.qualifier')) WHERE pos>=0;
+CREATE TABLE IF NOT EXISTS carry_key(source TEXT,ref INTEGER,pos INTEGER,surface TEXT NOT NULL,tag TEXT NOT NULL,
+ PRIMARY KEY(source,ref,pos),FOREIGN KEY(source,ref,pos) REFERENCES job ON DELETE CASCADE) WITHOUT ROWID;
+CREATE INDEX IF NOT EXISTS carry_lookup ON carry_key(source,surface,tag);
 ";
 
 #[derive(Clone, Debug)]
@@ -261,20 +264,31 @@ pub fn packet(db: &Connection, j: &Job, catalog: &Catalog) -> Result<Value> {
             previous.push(json!({"at":[row.get::<_,i64>(0)?,row.get::<_,i64>(1)?],"language":a["language"],"lemma":a["lemma"],"qualifier":a["qualifier"],"root":a["root"],"sense":a["sense"],"entry":a["entry"]}));
         }
         p["previous_analyses"] = json!(previous);
+        if feedback.is_none() && error.is_none() {
+            carry(db, j, &mut p)?;
+        }
     } else {
         p["kind"] = json!("verse");
         p["english"] = verse["english"].clone();
-        let mut stmt=db.prepare_cached("SELECT pos,review_result(result) FROM job WHERE source=? AND ref=? AND pos>=0 AND state='done' ORDER BY pos")?;
+        let mut stmt=db.prepare_cached("SELECT pos,review_result(result),coalesce(json_extract(usage,'$.carried'),0) FROM job WHERE source=? AND ref=? AND pos>=0 AND state='done' ORDER BY pos")?;
         let analyses = stmt
             .query_map(params![j.source, j.reference], |r| {
-                Ok((r.get::<_, i64>(0)?, r.get::<_, String>(1)?))
+                Ok((
+                    r.get::<_, i64>(0)?,
+                    r.get::<_, String>(1)?,
+                    r.get::<_, bool>(2)?,
+                ))
             })?
             .collect::<rusqlite::Result<Vec<_>>>()?;
         ensure!(analyses.len() == words.len(), "verse has unfinished words");
         let mut reviewed = Vec::new();
-        for ((pos, result), word) in analyses.into_iter().zip(words) {
+        for ((pos, result, carried), word) in analyses.into_iter().zip(words) {
             ensure!(word["position"] == pos, "position mismatch");
-            reviewed.push(json!({"position":pos,"surface":word["surface"],"analysis":serde_json::from_str::<Value>(&result)?}));
+            let mut w = json!({"position":pos,"surface":word["surface"],"analysis":serde_json::from_str::<Value>(&result)?});
+            if carried {
+                w["carried"] = json!(true);
+            }
+            reviewed.push(w);
         }
         if let Some(people) = &catalog.people {
             p["people_and_places"] = people.context(db, j, &reviewed)?;
@@ -300,7 +314,7 @@ pub struct Word {
     entry: Value,
 }
 const WORD: &str = r#"Analyse only the marked occurrence in its verse. Return one JSON object with string fields language (he, arc, syc, grc), lemma (pointed dictionary form, Hebrew script for Semitic), qualifier (empty unless needed to distinguish a homograph, e.g. noun), root (Haqor consonantal root; empty if unknown), morph, segments, morphology, sense, gloss, evidence (explain using the text), and entry. For entry use {"existing":"article id","word":N,"sense":"sense id"} when a candidate covers this word and sense, where N is that candidate's word index (the position of the lexeme in the article's words list) and sense is the id of the candidate's sense this occurrence bears. Otherwise provide {"draft":{"definition":"...","evidence":"...","change":"..."},"word":N} proposing the new or corrected lexical content, where N is the index of this occurrence's lexeme in draft.article.words (0 for a personal-name or Greek article), with "sense": the id of the sense it bears in that lexeme (omit it for a personal name; for Greek, the sense name). Existing lexemes keep their indices and existing senses keep their ids: never reorder or remove words, never rename or remove a sense id; add a new lexeme at the end of its words list, and give every new sense a new kebab-case id. If a previous analysis covers exactly your language, lemma, qualifier, root and sense, copy those fields and return entry {"reuse":[ref,pos]} using its at coordinates. For a new or amended Semitic entry include draft.article, the COMPLETE draft Haqor JSON article, following data/lexicon/README.md, with its lemma, root, senses and verse evidence. For a personal-name article preserve its existing people list; a new article may leave people empty until verse review assigns its bearers. Read the existing article before editing it. Use the candidate revision as draft.base, or null for a new file. If you discover an existing article outside the listed candidates use its SHA256 file digest. For Greek use an existing Greek dictionary candidate if it covers this sense, or provide draft.definition, draft.evidence and draft.change to update the shared Greek entry. Use Greek script for Greek. Treat source tags and candidate roots as evidence to check. If the occurrence cannot be assigned responsibly, return only {"unresolved":"explain the competing readings and what evidence is missing"}. morph is the machine-readable morphology. For Hebrew, Aramaic and Syriac give an OSHB morphology code: H for Hebrew or A for Aramaic and Syriac, then one segment per part of the word separated by /, prefixes first and pronominal suffixes last (e.g. HC/Vqw3ms, HR/Ncfsa, HNcmpc/Sp3ms). The packet's source_analysis.oshb_morph is the OSHB reading: check it and correct it where the text requires. segments is the word split at / into the same parts as the code (e.g. וַ/יְבָרֶךְ); a word of one part is written whole. For Greek give the Robinson code (e.g. V-AAI-3S) as in source_analysis.grammar, and segments empty. morphology explains the reading in prose. Prefixes and suffixes belong in morphology. Use read-only local reference material when needed."#;
-const VERSE: &str = r#"Review every word's gloss in context, then read the whole verse in continuous English. Return {"translation":"...","glosses":[{"position":0,"gloss":"..."}]} with exactly one gloss per listed position. In translation encode English spans as [English|position] (multiple positions comma-separated only when necessary), supplied words in braces. Account for every source position. Preserve the project's translation conventions. If a word analysis needs changing first, instead return {"rework":[{"position":0,"reason":"..."}]}. Give precise reasons and return only the affected positions. On every completed verse include entities: an array of {position,key,evidence} for EACH explicit person or place name, and each name of God or of another named divine being, which the candidates hold as existing records (kind other). Empty means no such names. Match the actual bearer using verse context, family, role and location. Check all same-name candidates; source tags are evidence. Reuse the existing bearer key wherever supported, including previous proposals. If a bearer is missing, add new:{name,kind,description} to its mention, with kind person or place and a description distinguishing it from homonyms. Use a stable Name@Book.Chapter.Verse key anchored to evidence; when the same verse introduces two namesakes append # plus a distinguishing role. Distinct bearers may have identical names and dictionary forms. Preserve uncertain identity for review by returning {"unresolved":"reason"} rather than inventing a bearer. Do not identify mere pronouns or ordinary nouns as names."#;
+const VERSE: &str = r#"Review every word's gloss in context, then read the whole verse in continuous English. Return {"translation":"...","glosses":[{"position":0,"gloss":"..."}]} with exactly one gloss per listed position. In translation encode English spans as [English|position] (multiple positions comma-separated only when necessary), supplied words in braces. Account for every source position. Preserve the project's translation conventions. Words marked carried were not analysed afresh: they repeat earlier identical reviews of the same word and source tagging. Check that their lexeme and sense fit this verse, and rework any that do not. If a word analysis needs changing first, instead return {"rework":[{"position":0,"reason":"..."}]}. Give precise reasons and return only the affected positions. On every completed verse include entities: an array of {position,key,evidence} for EACH explicit person or place name, and each name of God or of another named divine being, which the candidates hold as existing records (kind other). Empty means no such names. Match the actual bearer using verse context, family, role and location. Check all same-name candidates; source tags are evidence. Reuse the existing bearer key wherever supported, including previous proposals. If a bearer is missing, add new:{name,kind,description} to its mention, with kind person or place and a description distinguishing it from homonyms. Use a stable Name@Book.Chapter.Verse key anchored to evidence; when the same verse introduces two namesakes append # plus a distinguishing role. Distinct bearers may have identical names and dictionary forms. Preserve uncertain identity for review by returning {"unresolved":"reason"} rather than inventing a bearer. Do not identify mere pronouns or ordinary nouns as names."#;
 pub fn prompt(packet: &Value) -> String {
     format!(
         "{}\nUse the published analysis or translation in this packet as the current edition when making corrections. Preserve prior supported content. Return JSON only. Source packet:\n{}",
@@ -311,6 +325,114 @@ pub fn prompt(packet: &Value) -> String {
         },
         packet
     )
+}
+
+/// What a word's source tagging says about it, as a key: two occurrences of
+/// one surface with the same tag are the same word read the same way by the
+/// source. OT: the OSHB lemma (with its Strong's number) and morphology.
+pub fn carry_tag(source: &str, word: &Value) -> String {
+    let a = &word["source_analysis"];
+    let fields: &[&str] = match source {
+        "ot" => &["oshb_lemma", "oshb_morph"],
+        "peshitta" => &[
+            "lemma",
+            "root",
+            "category",
+            "gender",
+            "person",
+            "number",
+            "state",
+            "tense",
+            "form",
+            "suffix_person",
+            "suffix_gender",
+            "suffix_number",
+        ],
+        _ => &["lemma", "grammar"],
+    };
+    json!(fields.iter().map(|f| &a[*f]).collect::<Vec<_>>()).to_string()
+}
+
+/// Earlier analyses a new occurrence may repeat without an agent: at least
+/// this many reviewed occurrences of the same surface and tag, all agreeing.
+const CARRY_AGREEING: usize = 2;
+
+/// Offer `p["carry"]`, a ready answer for a word whose surface and source tag
+/// were reviewed identically at least [`CARRY_AGREEING`] times: the same
+/// dictionary form, root, morphology, existing article, lexeme and sense. The
+/// answer reuses one of them, so it passes the same checks as any reuse, and
+/// the verse reviewer sees the word marked carried.
+fn carry(db: &Connection, j: &Job, p: &mut Value) -> Result<()> {
+    let Some(surface) = p["word"]["surface"].as_str().map(str::to_owned) else {
+        return Ok(());
+    };
+    let tag = carry_tag(&j.source, &p["word"]);
+    let mut stmt = db.prepare_cached(
+        "SELECT j.ref,j.pos,review_result(j.result) FROM carry_key k JOIN job j USING(source,ref,pos)
+         WHERE k.source=?1 AND k.surface=?2 AND k.tag=?3 AND j.state='done' AND j.result IS NOT NULL
+         ORDER BY j.ref DESC,j.pos LIMIT 20",
+    )?;
+    let priors = stmt
+        .query_map(params![j.source, surface, tag], |r| {
+            Ok((
+                r.get::<_, i64>(0)?,
+                r.get::<_, i64>(1)?,
+                r.get::<_, String>(2)?,
+            ))
+        })?
+        .collect::<rusqlite::Result<Vec<_>>>()?;
+    if priors.len() < CARRY_AGREEING {
+        return Ok(());
+    }
+    let identity = |a: &Value| {
+        json!([
+            a["language"],
+            a["lemma"],
+            a["qualifier"],
+            a["root"],
+            a["morph"],
+            a["segments"],
+            a["entry"]["existing"],
+            a["entry"]["word"],
+            a["entry"]["sense"]
+        ])
+    };
+    let mut first: Option<(i64, i64, Value)> = None;
+    let mut at = Vec::new();
+    for (reference, pos, raw) in priors {
+        let a: Value = serde_json::from_str(&raw)?;
+        // Only settled analyses of a published article carry forward.
+        if a["entry"]["existing"].as_str().is_none()
+            || a["entry"]["word"].as_u64().is_none()
+            || a["morph"].as_str().is_none()
+        {
+            return Ok(());
+        }
+        match &first {
+            Some((_, _, f)) if identity(f) != identity(&a) => return Ok(()),
+            Some(_) => {}
+            None => first = Some((reference, pos, a.clone())),
+        }
+        at.push(format!("{reference}:{pos}"));
+    }
+    let (reference, pos, a) = first.context("no prior analysis")?;
+    let entry = json!({"reuse": [reference, pos]});
+    let prior = json!({"at":[reference,pos],"language":a["language"],"lemma":a["lemma"],"qualifier":a["qualifier"],
+        "root":a["root"],"sense":a["sense"],"entry":a["entry"]});
+    let previous = p["previous_analyses"]
+        .as_array_mut()
+        .context("previous analyses")?;
+    if !previous.iter().any(|x| x["at"] == prior["at"]) {
+        previous.push(prior);
+    }
+    p["carry"] = json!({
+        "language": a["language"], "lemma": a["lemma"], "qualifier": a["qualifier"], "root": a["root"],
+        "morph": a["morph"], "segments": a["segments"], "morphology": a["morphology"],
+        "sense": a["sense"], "gloss": a["gloss"],
+        "evidence": format!("Carried forward: this word and its source tagging were reviewed identically at {}.", at.join(", ")),
+        "entry": entry,
+    });
+    Ok(())
 }
 
 /// A word's machine-readable morphology: an OSHB code over the word's
@@ -405,6 +527,18 @@ pub fn accept(
     }
     if j.pos >= 0 {
         let word: Word = serde_json::from_value(answer.clone())?;
+        if let Some(surface) = packet["word"]["surface"].as_str() {
+            tx.execute(
+                "INSERT OR REPLACE INTO carry_key VALUES(?,?,?,?,?)",
+                params![
+                    j.source,
+                    j.reference,
+                    j.pos,
+                    surface,
+                    carry_tag(&j.source, &packet["word"])
+                ],
+            )?;
+        }
         for field in ["lemma", "morphology", "gloss", "sense", "evidence"] {
             nonempty(&answer, field)?;
         }
@@ -651,5 +785,167 @@ mod sense_tests {
         check_sense(&answer(Value::Null), true, &Value::Null).unwrap();
         assert!(check_sense(&answer(json!("surety")), true, &Value::Null).is_err());
         check_sense(&answer(json!("word")), false, &json!([{"sense":"word"}])).unwrap();
+    }
+}
+
+/// Record the carry-forward key of every finished word that lacks one, as
+/// words reviewed before carry-forward existed do.
+pub fn backfill_carry_keys(db: &mut Connection) -> Result<usize> {
+    let rows = db
+        .prepare(
+            "SELECT j.source,j.ref,j.pos FROM job j WHERE j.pos>=0 AND j.state='done'
+             AND NOT EXISTS(SELECT 1 FROM carry_key k WHERE k.source=j.source AND k.ref=j.ref AND k.pos=j.pos)
+             ORDER BY j.ref,j.source,j.pos",
+        )?
+        .query_map([], |r| Ok((r.get::<_, String>(0)?, r.get::<_, i64>(1)?, r.get::<_, i64>(2)?)))?
+        .collect::<rusqlite::Result<Vec<_>>>()?;
+    let tx = db.transaction()?;
+    let mut verses: BTreeMap<(String, i64), Value> = BTreeMap::new();
+    for (source, reference, pos) in &rows {
+        if !verses.contains_key(&(source.clone(), *reference)) {
+            let raw: String = tx.query_row(
+                "SELECT review_input(source,ref,packet) FROM verse WHERE source=? AND ref=?",
+                params![source, reference],
+                |r| r.get(0),
+            )?;
+            verses.insert((source.clone(), *reference), serde_json::from_str(&raw)?);
+        }
+        let verse = &verses[&(source.clone(), *reference)];
+        let Some(word) = verse["words"]
+            .as_array()
+            .into_iter()
+            .flatten()
+            .find(|w| w["position"] == *pos)
+        else {
+            continue;
+        };
+        tx.execute(
+            "INSERT OR REPLACE INTO carry_key VALUES(?,?,?,?,?)",
+            params![
+                source,
+                reference,
+                pos,
+                word["surface"].as_str(),
+                carry_tag(source, word)
+            ],
+        )?;
+    }
+    tx.commit()?;
+    Ok(rows.len())
+}
+
+#[cfg(test)]
+mod carry_tests {
+    use super::*;
+
+    fn queue() -> Connection {
+        let db = Connection::open_in_memory().unwrap();
+        crate::inventory::register(&db, Path::new(".")).unwrap();
+        crate::result_store::register(&db, Path::new(".")).unwrap();
+        db.execute_batch(SCHEMA).unwrap();
+        db
+    }
+
+    fn analysis(sense: &str) -> Value {
+        json!({"language":"grc","lemma":"λόγος","qualifier":"","root":"","morph":"N-NSM","segments":"",
+            "morphology":"noun","sense":"word","gloss":"word","evidence":"seen",
+            "entry":{"existing":"grc:λόγος","word":0,"sense":sense}})
+    }
+
+    /// Three verses of one word each; the first two reviewed with `senses`.
+    fn seed(db: &Connection, senses: [&str; 2]) {
+        for verse in 1..=3i64 {
+            let word = json!({"position":0,"surface":"λόγος","source_analysis":{"lemma":"λόγος","grammar":"N-NSM"}});
+            db.execute(
+                "INSERT INTO verse VALUES('greek',?,?)",
+                params![
+                    verse,
+                    json!({"words":[word.clone()],"english":[]}).to_string()
+                ],
+            )
+            .unwrap();
+            db.execute(
+                "INSERT INTO job(source,ref,pos,state) VALUES('greek',?,-1,'waiting')",
+                [verse],
+            )
+            .unwrap();
+            let done = verse < 3;
+            db.execute(
+                "INSERT INTO job(source,ref,pos,state,result) VALUES('greek',?,0,?,?)",
+                params![
+                    verse,
+                    if done { "done" } else { "ready" },
+                    done.then(|| analysis(senses[verse as usize - 1]).to_string())
+                ],
+            )
+            .unwrap();
+            if done {
+                db.execute(
+                    "INSERT INTO carry_key VALUES('greek',?,0,'λόγος',?)",
+                    params![verse, carry_tag("greek", &word)],
+                )
+                .unwrap();
+            }
+        }
+    }
+
+    fn third() -> Job {
+        Job {
+            source: "greek".into(),
+            reference: 3,
+            pos: 0,
+        }
+    }
+
+    #[test]
+    fn an_identically_reviewed_word_is_carried_without_an_agent() {
+        let mut db = queue();
+        seed(&db, ["word", "word"]);
+        let packet = packet(&db, &third(), &Catalog::default()).unwrap();
+        let answer = packet["carry"].clone();
+        assert!(answer.is_object(), "{packet}");
+        accept(
+            &mut db,
+            &third(),
+            answer,
+            &json!({"carried": true}),
+            &packet,
+        )
+        .unwrap();
+        let (state, result): (String, String) = db
+            .query_row(
+                "SELECT state,result FROM job WHERE ref=3 AND pos=0",
+                [],
+                |r| Ok((r.get(0)?, r.get(1)?)),
+            )
+            .unwrap();
+        assert_eq!(state, "done");
+        let result: Value = serde_json::from_str(&result).unwrap();
+        assert_eq!(result["entry"]["sense"], "word");
+        // It is a candidate for the next occurrence in turn.
+        let carried: i64 = db
+            .query_row("SELECT count(*) FROM carry_key WHERE ref=3", [], |r| {
+                r.get(0)
+            })
+            .unwrap();
+        assert_eq!(carried, 1);
+    }
+
+    #[test]
+    fn disagreeing_reviews_or_feedback_send_the_word_to_an_agent() {
+        let db = queue();
+        seed(&db, ["word", "speech"]);
+        let p = super::packet(&db, &third(), &Catalog::default()).unwrap();
+        assert!(p.get("carry").is_none());
+
+        let db = queue();
+        seed(&db, ["word", "word"]);
+        db.execute(
+            "UPDATE job SET feedback='check the sense' WHERE ref=3 AND pos=0",
+            [],
+        )
+        .unwrap();
+        let p = super::packet(&db, &third(), &Catalog::default()).unwrap();
+        assert!(p.get("carry").is_none());
     }
 }
