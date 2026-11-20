@@ -1,0 +1,38 @@
+{
+  "id": "radah-rule",
+  "created": "2026-11-20",
+  "root": "רדה",
+  "status": "draft",
+  "updated": "2026-11-20",
+  "gloss": "rule, have dominion",
+  "summary": "רָדָה describes ruling or exercising dominion. In Psalm 49 the upright will rule over the wicked in the morning.",
+  "words": [
+    {
+      "lemma": "רָדָה",
+      "pos": "verb",
+      "gloss": "rule, have dominion",
+      "bdb": [
+        "t.az.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "rule",
+          "senses": [
+            {
+              "gloss": "rule",
+              "definition": "To exercise dominion over others.",
+              "evidence": [
+                {
+                  "ref": "Psa.49.15",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "note": "Drafted from Psalm 49.15."
+}
