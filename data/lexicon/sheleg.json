@@ -3,8 +3,8 @@
   "root": "שלג",
   "status": "draft",
   "updated": "2026-11-19",
-  "gloss": "snow",
-  "summary": "Snow, used as the image of brilliant cleansing.",
+  "gloss": "snow, fall as snow",
+  "summary": "The whiteness of snow gives the psalmist an image for cleansing. A verb formed from the noun pictures snowfall on Zalmon as kings scatter.",
   "words": [
     {
       "lemma": "שֶׁלֶג",
@@ -12,8 +12,7 @@
       "gender": "m",
       "gloss": "snow",
       "bdb": [
-        "v.di.ab",
-        "v.di.ac"
+        "v.di.ab"
       ],
       "senses": [
         {
@@ -25,12 +24,88 @@
               "role": "defining"
             },
             {
-              "ref": "Psa.68.15"
+              "ref": "Isa.1.18",
+              "role": "defining"
+            },
+            {
+              "ref": "Job.38.22",
+              "role": "defining"
+            },
+            {
+              "ref": "Exo.4.6"
+            },
+            {
+              "ref": "Isa.1.18"
+            },
+            {
+              "ref": "Dan.7.9"
+            },
+            {
+              "ref": "Exo.4.6"
+            },
+            {
+              "ref": "Isa.1.18"
+            },
+            {
+              "ref": "Dan.7.9"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "ar-snow"
+      ]
+    },
+    {
+      "lemma": "שָׁלַג",
+      "pos": "verb",
+      "gloss": "snow",
+      "cognate_ids": [
+        "ar-snow"
+      ],
+      "bdb": [
+        "v.di.ac"
+      ],
+      "stems": [
+        {
+          "stem": "hiphil",
+          "gloss": "snow, make it snow",
+          "senses": [
+            {
+              "gloss": "snow, make it snow",
+              "definition": "The poet sets the scattering of kings beside snow on Zalmon. The verse leaves the precise comparison open.",
+              "evidence": [
+                {
+                  "ref": "Psa.68.15",
+                  "role": "defining"
+                }
+              ]
             }
           ]
         }
       ]
     }
   ],
-  "note": "Drafted for Psalm 51 coverage."
+  "note": "The initial consonant in the Arabic word identifies an older ṯ behind Hebrew ש. The snow verb has only this one biblical occurrence.",
+  "cognates": [
+    {
+      "id": "ar-snow",
+      "lang": "ar",
+      "form": "ثَلْجٌ",
+      "translit": "ṯalj",
+      "gloss": "snow",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 350, n4648"
+        }
+      ],
+      "sounds": {
+        "ש": "ṯ"
+      }
+    }
+  ],
+  "created": "2026-11-19",
+  "doctrine": []
 }
