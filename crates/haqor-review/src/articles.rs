@@ -202,13 +202,38 @@ fn apply_pending_locked(
         let Some((job, _, _, _, _)) = row else {
             break;
         };
-        match apply_one_locked(db, lexicon, verses, &job)? {
-            PublishOutcome::Applied => applied += 1,
-            PublishOutcome::Stale => stale += 1,
-            PublishOutcome::NotPending => (),
+        match apply_one_locked(db, lexicon, verses, &job) {
+            Ok(PublishOutcome::Applied) => applied += 1,
+            Ok(PublishOutcome::Stale) => stale += 1,
+            Ok(PublishOutcome::NotPending) => (),
+            Err(error) => {
+                if !is_validation_error(&error) {
+                    return Err(error);
+                }
+                // Preserve the draft for inspection while allowing unrelated
+                // legacy proposals to be recovered in this pass.
+                db.execute(
+                    "UPDATE job SET state='failed',error=? WHERE source=? AND ref=? AND pos=?",
+                    params![
+                        format!("article publication: {error:#}"),
+                        job.source,
+                        job.reference,
+                        job.pos
+                    ],
+                )?;
+                eprintln!(
+                    "{} {} position {}: article not published: {error:#}",
+                    job.source, job.reference, job.pos
+                );
+            }
         }
     }
     Ok((applied, stale))
+}
+
+fn is_validation_error(error: &anyhow::Error) -> bool {
+    let text = format!("{error:#}");
+    text.starts_with("validating ") && text.contains("lexicon has")
 }
 
 fn apply_one_locked(
