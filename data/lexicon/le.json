@@ -378,12 +378,16 @@
               "ref": "Dan.2.23"
             },
             {
-              "ref": "Gen.4.12",
-              "note": "The recipient form identifies the ground to which Cain is sent."
+              "note": "The recipient form identifies the ground to which Cain is sent.",
+              "ref": "Gen.4.12"
             },
             {
-              "ref": "Gen.6.14",
-              "note": "The dative form identifies the person addressed in the instruction."
+              "note": "The dative form identifies the person addressed in the instruction.",
+              "ref": "Gen.6.14"
+            },
+            {
+              "note": "In וַיִּוָּלְדוּ לָהֶם בָּנִים, “sons were born to them,” לָהֶם refers to Shem, Ham, and Japheth as the fathers to whom the sons were born.",
+              "ref": "Gen.10.1"
             }
           ],
           "gloss": "to (a recipient), for (one who benefits)",
@@ -773,7 +777,6 @@
       "pos": "preposition",
       "senses": [
         {
-          "id": "for-to-at",
           "definition": "As לְ: what a thing is for, or the place it is set at.",
           "evidence": [
             {
@@ -799,7 +802,8 @@
               "ref": "Psa.2.4"
             }
           ],
-          "gloss": "for, to, at"
+          "gloss": "for, to, at",
+          "id": "for-to-at"
         }
       ],
       "summary": "A longer form of לְ with an added -mô, found only in Job (27:14; 29:21; 38:40; 40:4); the same ending makes the poetic suffixed לָמוֹ \"to them\" (Psa 2:4; Deu 32:35). Ugaritic has the same lengthened lm beside l."
@@ -818,7 +822,6 @@
       "pos": "preposition",
       "senses": [
         {
-          "id": "to-for-one-spoken",
           "definition": "The one addressed, given to or written to.",
           "evidence": [
             {
@@ -845,10 +848,10 @@
               "ref": "Ezr.7.21"
             }
           ],
-          "gloss": "to, for (one spoken or given to)"
+          "gloss": "to, for (one spoken or given to)",
+          "id": "to-for-one-spoken"
         },
         {
-          "id": "marks-the-object-to",
           "definition": "Before a noun, the object of a verb; before an infinitive, its purpose.",
           "evidence": [
             {
@@ -861,7 +864,8 @@
               "ref": "Dan.2.47"
             }
           ],
-          "gloss": "(marks the object); to (with an infinitive)"
+          "gloss": "(marks the object); to (with an infinitive)",
+          "id": "marks-the-object-to"
         }
       ],
       "summary": "Scripture's Aramaic has the same preposition with the same range, and uses it much more often than Hebrew to mark a verb's object (Dan 2:12). With suffixes: לָךְ, לִי (Dan 2:23), לְכוֹן (Dan 3:4), לְהֹם."

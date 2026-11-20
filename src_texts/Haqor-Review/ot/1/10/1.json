@@ -167,6 +167,33 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article_id": "le",
+            "base": "035689234c82b2d7f778cd6dbd0c1ac4ca4c208a434223378d85ab5a440f3eec",
+            "change": "Link לָהֶם to word 0 of the existing article le and add Genesis 10:1 as an example of its le-dative sense.",
+            "definition": "לְ marks the person to whom something is given or for whom it happens. With a birth, it can identify the parent to whom a child is born.",
+            "evidence": "Genesis 10:1 names Shem, Ham, and Japheth immediately before saying that sons were born לָהֶם, “to them.”"
+          },
+          "sense": "le-dative",
+          "word": 0
+        },
+        "evidence": "In וַיִּוָּלְדוּ לָהֶם בָּנִים, “sons were born to them,” בָּנִים is the subject of the passive verb. The suffix in לָהֶם refers back to Noah’s three sons, Shem, Ham, and Japheth.",
+        "gloss": "to them",
+        "language": "he",
+        "lemma": "לְ",
+        "morph": "HR/Sp3mp",
+        "morphology": "The preposition לְ takes the form לָ before the third-person masculine plural pronominal suffix הֶם.",
+        "qualifier": "",
+        "root": "ל",
+        "segments": "לָ/הֶם",
+        "sense": "Dative marking the fathers to whom sons were born."
+      },
+      "position": 8,
+      "surface": "לָהֶם"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "achar",
           "sense": "achar-after",
           "word": 0
