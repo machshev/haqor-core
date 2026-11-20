@@ -117,7 +117,12 @@ pub fn apply(db: &mut Connection, lexicon: &Path, data: &Path) -> Result<()> {
     let corpus =
         Connection::open_with_flags(data.join("haqor.db"), OpenFlags::SQLITE_OPEN_READ_ONLY)?;
     let verses = haqor_lexicon::verses_of(&corpus)?;
+    let writer = fs::File::open(lexicon.join("sources.json"))?;
+    writer
+        .try_lock()
+        .context("another review queue is applying lexicon articles")?;
     let mut applied = 0;
+    let mut stale = 0;
     loop {
         let row=db.query_row("SELECT a.source,a.ref,a.pos,a.id,a.name,a.base,a.body FROM article a
             JOIN job j ON j.source=a.source AND j.ref=a.ref AND j.pos=-1 WHERE j.state='done' AND a.applied=0
@@ -142,14 +147,19 @@ pub fn apply(db: &mut Connection, lexicon: &Path, data: &Path) -> Result<()> {
             .is_some_and(|s| s.trim_end() == body.trim_end());
         // Also handles a crash between atomic file replacement and DB commit.
         if !same {
-            ensure!(
-                current.as_deref().map(revision) == base,
-                "{} changed since {} {} position {} was reviewed; reconcile this word with the current article using reassign",
-                path.display(),
-                job.source,
-                job.reference,
-                job.pos
-            );
+            if current.as_deref().map(revision) != base {
+                let tx = db.transaction()?;
+                let reason = format!(
+                    "Article {} changed. Read its current file and reconcile the proposed changes.",
+                    path.display()
+                );
+                tx.execute("UPDATE job SET state='ready',feedback=?,attempts=0,result=NULL WHERE source=? AND ref=? AND pos=?",
+                    params![reason,job.source,job.reference,job.pos])?;
+                tx.execute("UPDATE job SET state='waiting',attempts=0,result=NULL WHERE source=? AND ref=? AND pos=-1",params![job.source,job.reference])?;
+                tx.commit()?;
+                stale += 1;
+                continue;
+            }
             haqor_lexicon::save_entry(lexicon, &body, &verses)
                 .with_context(|| format!("validating {id}"))?;
         }
@@ -172,7 +182,7 @@ pub fn apply(db: &mut Connection, lexicon: &Path, data: &Path) -> Result<()> {
         tx.commit()?;
         applied += 1;
     }
-    println!("Applied {applied} reviewed article drafts.");
+    println!("Applied {applied} reviewed article drafts. Requeued {stale} stale proposals.");
     Ok(())
 }
 

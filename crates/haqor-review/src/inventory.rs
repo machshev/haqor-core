@@ -42,6 +42,12 @@ pub fn seed(
     let tx = state.transaction()?;
     let mut total = 0;
     for &source in sources {
+        if (matches!(source, Source::Ot) && low >> 16 >= 40)
+            || (!matches!(source, Source::Ot) && high >> 16 < 40)
+        {
+            continue;
+        }
+
         let sql = match source {
             Source::Ot => {
                 let path = dir
@@ -129,4 +135,37 @@ fn save(
     }
     insert.execute(params![source, r, -1, "waiting"])?;
     Ok(())
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+    #[test]
+    fn reseeding_preserves_review_until_source_context_changes() {
+        let db = Connection::open_in_memory().unwrap();
+        db.execute_batch(crate::jobs::SCHEMA).unwrap();
+        let words = [json!({"position":0,"surface":"אַף"})];
+        save(&db, Source::Ot, 66305, &words, None).unwrap();
+        db.execute("UPDATE job SET state='done'", []).unwrap();
+        save(&db, Source::Ot, 66305, &words, None).unwrap();
+        assert_eq!(
+            db.query_row("SELECT count(*) FROM job WHERE state='done'", [], |r| r
+                .get::<_, i64>(0))
+                .unwrap(),
+            2
+        );
+        save(&db, Source::Ot, 66305, &words, Some(&json!(["also"]))).unwrap();
+        assert_eq!(
+            db.query_row("SELECT state FROM job WHERE pos=-1", [], |r| r
+                .get::<_, String>(0))
+                .unwrap(),
+            "waiting"
+        );
+        assert_eq!(
+            db.query_row("SELECT state FROM job WHERE pos=0", [], |r| r
+                .get::<_, String>(0))
+                .unwrap(),
+            "ready"
+        );
+    }
 }

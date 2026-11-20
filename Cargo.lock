@@ -859,6 +859,7 @@ dependencies = [
  "anyhow",
  "clap",
  "haqor-core",
+ "libc",
  "rusqlite",
  "serde",
  "serde_json",

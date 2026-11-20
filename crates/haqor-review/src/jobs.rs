@@ -17,6 +17,9 @@ CREATE TABLE IF NOT EXISTS job(source TEXT, ref INTEGER, pos INTEGER, state TEXT
 CREATE TABLE IF NOT EXISTS article(source TEXT,ref INTEGER,pos INTEGER,id TEXT NOT NULL,name INTEGER NOT NULL,
  base TEXT,body TEXT NOT NULL,applied INTEGER NOT NULL DEFAULT 0,PRIMARY KEY(source,ref,pos),
  FOREIGN KEY(source,ref,pos) REFERENCES job ON DELETE CASCADE) WITHOUT ROWID;
+CREATE TABLE IF NOT EXISTS retired(language TEXT,lemma TEXT,qualifier TEXT,reason TEXT NOT NULL,
+ PRIMARY KEY(language,lemma,qualifier)) WITHOUT ROWID;
+CREATE INDEX IF NOT EXISTS pending_articles ON article(ref,source,pos) WHERE applied=0;
 CREATE TABLE IF NOT EXISTS dependency(source TEXT,ref INTEGER,pos INTEGER,id TEXT,name INTEGER,revision TEXT,
  PRIMARY KEY(source,ref,pos),FOREIGN KEY(source,ref,pos) REFERENCES job ON DELETE CASCADE) WITHOUT ROWID;
 CREATE INDEX IF NOT EXISTS dependency_article ON dependency(id,name,revision);
@@ -117,7 +120,8 @@ pub fn packet(db: &Connection, j: &Job, catalog: &Catalog) -> Result<Value> {
         |r| Ok((r.get(0)?, r.get(1)?, r.get(2)?)),
     )?;
     let verse: Value = serde_json::from_str(&raw)?;
-    let mut p = json!({"source":j.source,"book":j.reference>>16,"chapter":(j.reference>>8)&255,"verse":j.reference&255,
+    let date: String = db.query_row("SELECT date('now')", [], |r| r.get(0))?;
+    let mut p = json!({"date":date,"source":j.source,"book":j.reference>>16,"chapter":(j.reference>>8)&255,"verse":j.reference&255,
         "position":j.pos,"feedback":feedback,"last_error":error});
     let words = verse["words"].as_array().context("invalid inventory")?;
     if j.pos >= 0 {
@@ -126,7 +130,12 @@ pub fn packet(db: &Connection, j: &Job, catalog: &Catalog) -> Result<Value> {
             .find(|w| w["position"] == j.pos)
             .context("missing word")?;
         p["kind"] = json!("word");
-        p["text"] = json!(words.iter().map(|w| &w["surface"]).collect::<Vec<_>>());
+        p["text"] = json!(
+            words
+                .iter()
+                .map(|w| json!([w["position"], w["surface"]]))
+                .collect::<Vec<_>>()
+        );
         p["word"] = word.clone();
         let mut candidates = Vec::new();
         for key in [
@@ -145,6 +154,28 @@ pub fn packet(db: &Connection, j: &Job, catalog: &Catalog) -> Result<Value> {
                 }
             }
         }
+        let surface = word["surface"].as_str().unwrap_or("");
+        let lemma = word["source_analysis"]["lemma"].as_str().unwrap_or(surface);
+        let language = match j.source.as_str() {
+            "peshitta" => "syc",
+            "greek" => "grc",
+            _ if word["source_analysis"]["oshb_morph"]
+                .as_str()
+                .is_some_and(|s| s.starts_with('A')) =>
+            {
+                "arc"
+            }
+            _ => "he",
+        };
+        candidates.sort_by_key(|c| {
+            let head = c["lemma"].as_str().unwrap_or("");
+            (
+                c["language"] != language,
+                head != lemma && head != surface,
+                fold_consonants(head) != fold_consonants(lemma),
+            )
+        });
+        candidates.truncate(24);
         p["candidates"] = json!(candidates);
         let root = word["source_analysis"]["root"].as_str().unwrap_or("");
         let lemma = word["source_analysis"]["lemma"]
@@ -157,8 +188,21 @@ pub fn packet(db: &Connection, j: &Job, catalog: &Catalog) -> Result<Value> {
             UNION ALL SELECT ref,pos,result FROM job WHERE source=?1 AND pos>=0 AND ?3<>'' AND json_extract(result,'$.root')=?3 LIMIT 12")?;
         let mut rows = stmt.query(params![j.source, lemma, root])?;
         let mut previous = Vec::new();
+        let mut examples = BTreeSet::new();
         while let Some(row) = rows.next()? {
             let a: Value = serde_json::from_str(&row.get::<_, String>(2)?)?;
+            if !examples.insert(
+                json!([
+                    a["language"],
+                    a["lemma"],
+                    a["qualifier"],
+                    a["root"],
+                    a["sense"]
+                ])
+                .to_string(),
+            ) {
+                continue;
+            }
             previous.push(json!({"at":[row.get::<_,i64>(0)?,row.get::<_,i64>(1)?],"language":a["language"],"lemma":a["lemma"],"qualifier":a["qualifier"],"root":a["root"],"sense":a["sense"],"entry":a["entry"]}));
         }
         p["previous_analyses"] = json!(previous);
@@ -195,7 +239,7 @@ pub struct Word {
     evidence: String,
     entry: Value,
 }
-const WORD: &str = r#"Analyse only the marked occurrence in its verse. Return one JSON object with string fields language (he, arc, syc, grc), lemma (pointed dictionary form, Hebrew script for Semitic), qualifier (empty unless needed to distinguish a homograph, e.g. noun), root (Haqor consonantal root; empty if unknown), morphology, sense, gloss, evidence (explain using the text), and entry. For entry use {"existing":"article id"} when the candidate covers this word and sense. Otherwise provide {"draft":{"definition":"...","evidence":"...","change":"..."}} proposing the new or corrected lexical content. If a previous analysis covers exactly your language, lemma, qualifier, root and sense, copy those fields and return entry {"reuse":[ref,pos]} using its at coordinates. For a new or amended Semitic entry include draft.article, the COMPLETE draft Haqor JSON article, following data/lexicon/README.md, with its lemma, root, senses and verse evidence. Read the existing article before editing it. Use the candidate revision as draft.base, or null for a new file. If you discover an existing article outside the listed candidates use its SHA256 file digest. For Greek the SQLite lexical draft is the entry. Use Greek script for Greek. Treat source tags and candidate roots as evidence to check. Retain uncertainty explicitly. Prefixes and suffixes belong in morphology. Use read-only local reference material when needed."#;
+const WORD: &str = r#"Analyse only the marked occurrence in its verse. Return one JSON object with string fields language (he, arc, syc, grc), lemma (pointed dictionary form, Hebrew script for Semitic), qualifier (empty unless needed to distinguish a homograph, e.g. noun), root (Haqor consonantal root; empty if unknown), morphology, sense, gloss, evidence (explain using the text), and entry. For entry use {"existing":"article id"} when the candidate covers this word and sense. Otherwise provide {"draft":{"definition":"...","evidence":"...","change":"..."}} proposing the new or corrected lexical content. If a previous analysis covers exactly your language, lemma, qualifier, root and sense, copy those fields and return entry {"reuse":[ref,pos]} using its at coordinates. For a new or amended Semitic entry include draft.article, the COMPLETE draft Haqor JSON article, following data/lexicon/README.md, with its lemma, root, senses and verse evidence. Read the existing article before editing it. Use the candidate revision as draft.base, or null for a new file. If you discover an existing article outside the listed candidates use its SHA256 file digest. For Greek the SQLite lexical draft is the entry. Use Greek script for Greek. Treat source tags and candidate roots as evidence to check. If the occurrence cannot be assigned responsibly, return only {"unresolved":"explain the competing readings and what evidence is missing"}. Prefixes and suffixes belong in morphology. Use read-only local reference material when needed."#;
 const VERSE: &str = r#"Review every word's gloss in context, then read the whole verse in continuous English. Return {"translation":"...","glosses":[{"position":0,"gloss":"..."}]} with exactly one gloss per listed position. In translation encode English spans as [English|position] (multiple positions comma-separated only when necessary), supplied words in braces. Account for every source position. Preserve the project's translation conventions. If a word analysis needs changing first, instead return {"rework":[{"position":0,"reason":"..."}]}. Give precise reasons and return only the affected positions."#;
 pub fn prompt(packet: &Value) -> String {
     format!(
@@ -226,6 +270,13 @@ pub fn accept(
 ) -> Result<()> {
     let tx = db.transaction()?;
     if j.pos >= 0 {
+        if answer.get("unresolved").is_some() {
+            nonempty(&answer, "unresolved")?;
+            tx.execute("UPDATE job SET state='unresolved',feedback=?,result=NULL,usage=?,error=NULL WHERE source=? AND ref=? AND pos=?",
+                params![answer["unresolved"].as_str(),usage.to_string(),j.source,j.reference,j.pos])?;
+            tx.commit()?;
+            return Ok(());
+        }
         let word: Word = serde_json::from_value(answer.clone())?;
         for field in ["lemma", "morphology", "gloss", "sense", "evidence"] {
             nonempty(&answer, field)?;
@@ -250,6 +301,16 @@ pub fn accept(
             answer[key] = json!(s);
         }
         let lemma = answer["lemma"].as_str().unwrap();
+        let retired: Option<String> = tx
+            .query_row(
+                "SELECT reason FROM retired WHERE language=? AND lemma=? AND qualifier=?",
+                params![word.language, lemma, answer["qualifier"].as_str()],
+                |r| r.get(0),
+            )
+            .optional()?;
+        if let Some(reason) = retired {
+            bail!("retired lexical key: {reason}")
+        }
         ensure!(
             lemma.chars().any(|c| if word.language == "grc" {
                 matches!(c,'\u{0370}'..='\u{03ff}'|'\u{1f00}'..='\u{1fff}')

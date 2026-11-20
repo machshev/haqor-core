@@ -1,5 +1,6 @@
 //! One Rust process coordinates independent, read-only word and verse agents.
 mod articles;
+mod chat;
 mod inventory;
 mod jobs;
 use anyhow::{Context, Result, bail, ensure};
@@ -64,6 +65,9 @@ enum Action {
         /// Optional executable taking one prompt on stdin and returning one JSON result on stdout.
         #[arg(long)]
         worker: Option<PathBuf>,
+        /// Full URL of a chat-completions endpoint for packet-only agents.
+        #[arg(long, requires = "model", conflicts_with = "worker")]
+        chat_endpoint: Option<String>,
         #[arg(long, conflicts_with = "worker")]
         model: Option<String>,
         #[arg(long, default_value = "data/lexicon")]
@@ -78,7 +82,11 @@ enum Action {
     },
     Status,
     /// Make failed jobs eligible for a fresh set of attempts.
-    Retry,
+    Retry {
+        /// Also revisit unresolved occurrences with this additional evidence.
+        #[arg(long)]
+        evidence: Option<String>,
+    },
     /// Revisit every occurrence of this exact lexical key and its verse review.
     Reassign {
         #[arg(long)]
@@ -89,6 +97,9 @@ enum Action {
         qualifier: String,
         #[arg(long)]
         reason: String,
+        /// Reject this obsolete spelling in subsequent word results.
+        #[arg(long)]
+        retire: bool,
     },
     /// Write reviewed verse packets including lexical drafts and contextual glosses to stdout as JSONL.
     Export,
@@ -117,7 +128,11 @@ fn main() -> Result<()> {
         ensure!(cli.state.is_file(), "seed the review queue first");
     }
     let _lock = writing.then(|| writer_lock(&cli.state)).transpose()?;
-    let mut db = Connection::open(&cli.state)?;
+    let mut db = if writing {
+        Connection::open(&cli.state)?
+    } else {
+        Connection::open_with_flags(&cli.state, rusqlite::OpenFlags::SQLITE_OPEN_READ_ONLY)?
+    };
     db.busy_timeout(std::time::Duration::from_secs(5))?;
     if writing {
         db.execute_batch("PRAGMA journal_mode=WAL; PRAGMA foreign_keys=ON;")?;
@@ -151,6 +166,7 @@ fn main() -> Result<()> {
             max_agents,
             max_attempts,
             worker,
+            chat_endpoint,
             model,
             lexicon,
         } => {
@@ -161,10 +177,25 @@ fn main() -> Result<()> {
             let catalog = Catalog::load(&lexicon)?;
             articles::refresh_dependencies(&mut db, &catalog.revisions)?;
             run(&mut db, &catalog, max_agents, max_attempts, &|packet| {
+                if let Some(endpoint) = &chat_endpoint {
+                    return chat::review(
+                        endpoint,
+                        model.as_deref().context("missing model")?,
+                        packet,
+                        &lexicon,
+                    );
+                }
                 invoke(worker.as_deref(), model.as_deref(), &jobs::prompt(packet))
             })
         }
-        Action::Retry => {
+        Action::Retry { evidence } => {
+            if let Some(evidence) = evidence {
+                ensure!(
+                    !evidence.trim().is_empty(),
+                    "supply evidence for unresolved words"
+                );
+                println!("Reopened {} unresolved words.",db.execute("UPDATE job SET state='ready',attempts=0,feedback=feedback||char(10)||? WHERE state='unresolved'",[evidence])?);
+            }
             println!(
                 "Reset {} failed jobs.",
                 db.execute(
@@ -186,6 +217,10 @@ fn main() -> Result<()> {
                     r.get::<_, i64>(3)?
                 );
             }
+            let (attempts,input,output):(i64,i64,i64)=db.query_row("SELECT count(*),coalesce(sum(json_extract(usage,'$.input_tokens')),0),coalesce(sum(json_extract(usage,'$.output_tokens')),0) FROM attempt",[],|r|Ok((r.get(0)?,r.get(1)?,r.get(2)?)))?;
+            println!(
+                "Finished attempts {attempts}, reported input tokens {input}, output tokens {output}"
+            );
             Ok(())
         }
         Action::Reassign {
@@ -193,6 +228,7 @@ fn main() -> Result<()> {
             lemma,
             qualifier,
             reason,
+            retire,
         } => {
             use unicode_normalization::UnicodeNormalization;
             ensure!(
@@ -200,6 +236,17 @@ fn main() -> Result<()> {
                 "supply a reason for reassignment"
             );
             let tx = db.transaction()?;
+            if retire {
+                tx.execute(
+                    "INSERT OR REPLACE INTO retired VALUES(?,?,?,?)",
+                    params![
+                        language,
+                        lemma.nfc().collect::<String>(),
+                        qualifier.nfc().collect::<String>(),
+                        reason
+                    ],
+                )?;
+            }
             tx.execute("CREATE TEMP TABLE affected AS SELECT source,ref,pos FROM job WHERE pos>=0
                 AND json_extract(result,'$.language')=? AND json_extract(result,'$.lemma')=? AND json_extract(result,'$.qualifier')=?",
                 params![language,lemma.nfc().collect::<String>(),qualifier.nfc().collect::<String>()])?;
@@ -255,9 +302,10 @@ fn run(
 ) -> Result<()> {
     let (tx, rx) = mpsc::channel();
     let mut active = 0;
+    let mut worker_failure = None;
     thread::scope(|scope| -> Result<()> {
         loop {
-            while active < limit {
+            while active < limit && worker_failure.is_none() {
                 let Some(job) = jobs::next(db)? else { break };
                 let attempts: u32 = db.query_row(
                     "SELECT attempts FROM job WHERE source=? AND ref=? AND pos=?",
@@ -273,7 +321,9 @@ fn run(
                 let tx = tx.clone();
                 scope.spawn(move || {
                     let start = std::time::Instant::now();
-                    let result = worker(&packet);
+                    let result =
+                        std::panic::catch_unwind(std::panic::AssertUnwindSafe(|| worker(&packet)))
+                            .unwrap_or_else(|_| Err(anyhow::anyhow!("review worker panicked")));
                     let _ = tx.send((job, packet, result, start.elapsed()));
                 });
                 active += 1;
@@ -283,6 +333,9 @@ fn run(
             }
             let (job, packet, result, elapsed) = rx.recv()?;
             active -= 1;
+            if let Err(error) = &result {
+                worker_failure = Some(format!("{error:#}"));
+            }
             let usage = result.as_ref().ok().map(|(_, u)| u.to_string());
             let outcome =
                 result.and_then(|(answer, usage)| jobs::accept(db, &job, answer, &usage, &packet));
@@ -308,6 +361,9 @@ fn run(
         }
         Ok(())
     })?;
+    if let Some(reason) = worker_failure {
+        bail!("worker stopped: {reason}. Remaining jobs are checkpointed.");
+    }
     let failed: i64 = db.query_row("SELECT count(*) FROM job WHERE state='failed'", [], |r| {
         r.get(0)
     })?;
@@ -315,22 +371,55 @@ fn run(
         failed == 0,
         "{failed} failed jobs; inspect errors in SQLite, then use retry"
     );
+    let unresolved: i64 = db.query_row(
+        "SELECT count(*) FROM job WHERE state='unresolved'",
+        [],
+        |r| r.get(0),
+    )?;
+    ensure!(
+        unresolved == 0,
+        "{unresolved} unresolved words await evidence; their verses remain pending"
+    );
     Ok(())
+}
+
+fn bind_worker_lifetime(cmd: &mut Command) {
+    #[cfg(target_os = "linux")]
+    {
+        use std::os::unix::process::CommandExt;
+        let parent = std::process::id();
+        // SAFETY: only async-signal-safe system calls run between fork and
+        // exec. Check getppid as well to close the fork/prctl race.
+        unsafe {
+            cmd.pre_exec(move || {
+                if libc::prctl(libc::PR_SET_PDEATHSIG, libc::SIGKILL) < 0 {
+                    return Err(io::Error::last_os_error());
+                }
+                if libc::getppid() as u32 != parent {
+                    libc::_exit(1);
+                }
+                Ok(())
+            });
+        }
+    }
+    #[cfg(not(target_os = "linux"))]
+    let _ = cmd;
 }
 
 fn invoke(worker: Option<&Path>, model: Option<&str>, prompt: &str) -> Result<(Value, Value)> {
     let mut cmd = Command::new(worker.unwrap_or(Path::new("codex")));
     if worker.is_none() {
-        cmd.args(["exec", "--ephemeral", "--sandbox", "read-only", "--json",
-            "--disable","apps","--disable","memories","--disable","multi_agent",
-            "--enable","omit_skill_descriptions",
-            "-c",r#"base_instructions="You are a biblical-language corpus reviewer. Complete only the assigned word or verse, consult local sources as needed, and answer with the requested JSON." "#.trim(),
-        ]);
+        cmd.args(["exec", "--ephemeral", "--sandbox", "read-only", "--json"]);
+        for feature in ["apps", "plugins", "memories", "multi_agent"] {
+            cmd.args(["--disable", feature]);
+        }
+        cmd.args(["--enable", "omit_skill_descriptions"]);
         if let Some(m) = model {
             cmd.args(["--model", m]);
         }
         cmd.arg("-");
     }
+    bind_worker_lifetime(&mut cmd);
     let mut child = cmd
         .stdin(Stdio::piped())
         .stdout(Stdio::piped())
@@ -543,5 +632,41 @@ mod tests {
                 (0, "done".into())
             ]
         );
+    }
+    #[test]
+    fn retired_keys_fail_and_unresolved_words_keep_the_verse_waiting() {
+        let mut db = fixture(&[1]);
+        db.execute(
+            "INSERT INTO retired VALUES('grc','λόγος','','correct the fixture spelling')",
+            [],
+        )
+        .unwrap();
+        let error = run(&mut db, &Catalog::default(), 1, 1, &|_| {
+            Ok((word(), Value::Null))
+        });
+        assert!(error.is_err());
+        let message: String = db
+            .query_row("SELECT error FROM job WHERE pos=0", [], |r| r.get(0))
+            .unwrap();
+        assert!(message.contains("retired lexical key"));
+        db.execute(
+            "UPDATE job SET state='ready',attempts=0 WHERE state='failed'",
+            [],
+        )
+        .unwrap();
+        assert!(
+            run(&mut db, &Catalog::default(), 1, 1, &|p| {
+                assert_eq!(p["kind"], "word");
+                Ok((
+                    json!({"unresolved":"Two possible analyses need further evidence."}),
+                    Value::Null,
+                ))
+            })
+            .is_err()
+        );
+        let state: String = db
+            .query_row("SELECT state FROM job WHERE pos=-1", [], |r| r.get(0))
+            .unwrap();
+        assert_eq!(state, "waiting");
     }
 }

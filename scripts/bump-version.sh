@@ -100,7 +100,7 @@ sed -i -E \
 # Cargo.lock: replace the version inside every local workspace package block.
 if [ -f "$lock" ]; then
     awk -v new="$new" '
-        /^name = "haqor-(admin|cli|core|db-gen|morphology|sync-server)"$/ { in_pkg = 1 }
+        /^name = "haqor-(admin|cli|core|db-gen|morphology|review|sync-server)"$/ { in_pkg = 1 }
         in_pkg && /^version = / { sub(/"[^"]+"/, "\"" new "\""); in_pkg = 0 }
         { print }
     ' "$lock" >"$lock.tmp" && mv "$lock.tmp" "$lock"

@@ -11,6 +11,7 @@ responsibility:
 - `crates/haqor-core`: app-facing Bible access, tutor, grammar, glosses, and text helpers
 - `crates/haqor-morphology`: DB-free Hebrew morphology generation and parsing
 - `crates/haqor-db-gen`: source-text parsing and generated-database pipelines
+- [haqor-review](doc/lexicon/corpus-review.md) coordinates resumable word and verse reviews in SQLite
 - `crates/haqor-admin`: loopback-only lexical-overlay web server
 - `crates/haqor-cli`: the `haqor` command-line tool
 
