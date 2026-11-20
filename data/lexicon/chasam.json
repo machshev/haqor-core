@@ -1,0 +1,161 @@
+{
+  "id": "chasam",
+  "root": "חסמ",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-19",
+  "tags": [],
+  "gloss": "block, muzzle",
+  "summary": "An ox is muzzled at the mouth. David makes the muzzle a figure for the restraint he will exercise over his own speech.",
+  "words": [
+    {
+      "lemma": "חָסַם",
+      "pos": "verb",
+      "gloss": "muzzle, block",
+      "bdb": [
+        "h.eh.aa"
+      ],
+      "stems": [
+        {
+          "stem": "qal",
+          "gloss": "obstruct",
+          "senses": [
+            {
+              "gloss": "obstruct",
+              "definition": "A muzzle prevents the threshing ox from eating. A burial ground can also obstruct people passing through. Paul applies the command about the ox to those who work for others.",
+              "evidence": [
+                {
+                  "ref": "Deu.25.4",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Ezk.39.11",
+                  "role": "defining"
+                },
+                {
+                  "ref": "1Co.9.9",
+                  "role": "defining"
+                },
+                {
+                  "ref": "1Ti.5.18",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-muzzle"
+      ]
+    },
+    {
+      "lemma": "מַחְסוֹם",
+      "pos": "noun",
+      "gloss": "muzzle",
+      "bdb": [
+        "h.eh.ab"
+      ],
+      "gender": "m",
+      "senses": [
+        {
+          "gloss": "muzzle",
+          "definition": "David resolves to guard his mouth while the wicked are present. A muzzle expresses his restraint.",
+          "evidence": [
+            {
+              "ref": "Psa.39.2",
+              "role": "defining"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "arc-muzzle"
+      ]
+    },
+    {
+      "lemma": "חסַם",
+      "pos": "verb",
+      "gloss": "envy",
+      "lang": "syc",
+      "stems": [
+        {
+          "stem": "peal",
+          "gloss": "envy",
+          "senses": [
+            {
+              "gloss": "envy",
+              "definition": "Love is free from the jealousy that drove opponents to gather a crowd against Paul.",
+              "evidence": [
+                {
+                  "ref": "1Co.13.4",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Act.17.5",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "ethpeel",
+          "gloss": "be eagerly sought",
+          "senses": [
+            {
+              "gloss": "be eagerly sought",
+              "definition": "Paul speaks of being sought after zealously for a good purpose.",
+              "evidence": [
+                {
+                  "ref": "Gal.4.18",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "חסָמָא",
+      "pos": "noun",
+      "gloss": "envy",
+      "lang": "syc",
+      "senses": [
+        {
+          "gloss": "envy",
+          "definition": "Pilate recognizes envy as the motive for handing Jesus over.",
+          "evidence": [
+            {
+              "ref": "Mat.27.18",
+              "role": "defining"
+            },
+            {
+              "ref": "Mrk.15.10",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "id": "arc-muzzle",
+      "lang": "arc",
+      "form": "חֲסַם",
+      "translit": "ḥăsam",
+      "gloss": "muzzle, silence",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "חֲסַם, H01398, Sotah 35a"
+        }
+      ]
+    }
+  ],
+  "doctrine": [],
+  "note": "SEDRA 1109–1110 attest envy. The connection of that Syriac meaning with muzzling remains uncertain. The second muzzle heading is a zero-token cross-reference."
+}
