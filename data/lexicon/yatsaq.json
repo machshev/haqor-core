@@ -3,32 +3,84 @@
   "root": "יצק",
   "status": "draft",
   "updated": "2026-11-19",
-  "gloss": "pour",
-  "summary": "יצק means to pour or be poured out.",
+  "gloss": "pour out, cast",
+  "summary": "Oil is poured from a vessel and molten bronze is cast in a mould. The wedding song applies the same image to the grace on the king’s lips.",
   "words": [
     {
       "lemma": "יָצַק",
       "pos": "verb",
-      "gloss": "pour",
+      "gloss": "pour out, cast",
       "bdb": [
         "j.cu.aa"
       ],
       "stems": [
         {
-          "gloss": "pour",
+          "stem": "qal",
+          "gloss": "pour out, cast metal",
           "senses": [
             {
-              "gloss": "pour",
-              "definition": "To pour out a substance.",
+              "gloss": "pour out, cast metal",
+              "definition": "Jacob pours oil on the stone at Bethel, and the craftsmen cast bronze in earthen moulds. In Psalm 41 the visitors say that something deadly has fastened upon the sick man, as if poured solid upon him. The force of that image is uncertain.",
               "evidence": [
+                {
+                  "ref": "Gen.28.18",
+                  "role": "defining"
+                },
+                {
+                  "ref": "1Ki.7.46",
+                  "role": "defining"
+                },
                 {
                   "ref": "Psa.41.9",
                   "role": "defining"
                 }
               ]
             }
-          ],
-          "stem": "qal"
+          ]
+        },
+        {
+          "stem": "hiphil",
+          "gloss": "empty out, set down",
+          "senses": [
+            {
+              "gloss": "empty out, set down",
+              "definition": "The men spread the stolen goods out before Yahweh. Zadok and the Levites set down the ark while the people leave the city.",
+              "evidence": [
+                {
+                  "ref": "Jos.7.23",
+                  "role": "defining"
+                },
+                {
+                  "ref": "2Sa.15.24",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "hophal",
+          "gloss": "be poured out, be cast",
+          "senses": [
+            {
+              "gloss": "be poured out, be cast",
+              "definition": "Oil is poured on the head of the high priest. In the wedding song grace is poured upon the king’s lips. Bronze capitals illustrate the casting of metal.",
+              "evidence": [
+                {
+                  "ref": "Lev.21.10",
+                  "role": "defining"
+                },
+                {
+                  "ref": "Psa.45.3",
+                  "role": "defining"
+                },
+                {
+                  "ref": "1Ki.7.16",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
         }
       ],
       "cognate_ids": [

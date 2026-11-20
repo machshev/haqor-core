@@ -2,9 +2,9 @@
   "id": "chafaz",
   "root": "חפז",
   "status": "draft",
-  "updated": "2026-11-20",
+  "updated": "2026-11-19",
   "gloss": "hurry, hasten",
-  "summary": "חפז describes hurried action, often the haste caused by fear or distress.",
+  "summary": "Haste follows alarm when people flee a threat. The rushed departure from Egypt also explains the noun for haste in the instructions for Pesach.",
   "words": [
     {
       "lemma": "חָפַז",
@@ -16,23 +16,55 @@
       "stems": [
         {
           "stem": "qal",
-          "gloss": "hurry",
+          "gloss": "hurry in alarm",
           "senses": [
             {
-              "gloss": "hurry",
-              "definition": "To act or flee in haste.",
+              "gloss": "hurry in alarm",
+              "definition": "Jonathan’s nurse hurries to escape with the child. Fear drives a hasty conclusion in two psalms.",
               "evidence": [
+                {
+                  "ref": "2Sa.4.4",
+                  "role": "defining"
+                },
                 {
                   "ref": "Psa.31.23",
                   "role": "defining"
                 },
                 {
-                  "ref": "Exo.12.11"
+                  "ref": "Psa.116.11",
+                  "role": "defining"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stem": "niphal",
+          "gloss": "hurry away, take flight",
+          "senses": [
+            {
+              "gloss": "hurry away, take flight",
+              "definition": "The kings see Zion, are dismayed and flee in alarm. David hurries to escape Saul, and the fleeing Arameans abandon their equipment.",
+              "evidence": [
+                {
+                  "ref": "Psa.48.6",
+                  "role": "defining"
+                },
+                {
+                  "ref": "1Sa.23.26",
+                  "role": "defining"
+                },
+                {
+                  "ref": "2Ki.7.15",
+                  "role": "defining"
                 }
               ]
             }
           ]
         }
+      ],
+      "cognate_ids": [
+        "ar-hurry"
       ]
     },
     {
@@ -56,9 +88,32 @@
             }
           ]
         }
+      ],
+      "cognate_ids": [
+        "ar-hurry"
       ]
     }
   ],
   "doctrine": [],
-  "note": "Drafted from the Psalms 31–33 coverage brief. Cognate evidence requires review."
+  "note": "Arabic also uses form VIII of someone pressing forward in his gait. The passive and reflexive readings of the Hebrew niphal both describe hurried motion.",
+  "cognates": [
+    {
+      "id": "ar-hurry",
+      "lang": "ar",
+      "form": "حَفَزَ",
+      "translit": "ḥafaza",
+      "gloss": "hurry or urge someone onward",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I, p. 601, حفز"
+        }
+      ],
+      "sounds": {
+        "ח": "ḥ",
+        "ז": "z"
+      }
+    }
+  ]
 }
