@@ -87,7 +87,83 @@
         "position": 13
       }
     ],
-    "name_review_base": null,
+    "name_review_base": [
+      {
+        "key": null,
+        "position": 0,
+        "surface": "וַיְהִי"
+      },
+      {
+        "evidence": "The genealogy gives the age of the son Lamech named Noah in Genesis 5:29.",
+        "key": "Noah@Gen.5.29",
+        "position": 1,
+        "surface": "נֹחַ"
+      },
+      {
+        "key": null,
+        "position": 2,
+        "surface": "בֶּן"
+      },
+      {
+        "key": null,
+        "position": 3,
+        "surface": "חֲמֵשׁ"
+      },
+      {
+        "key": null,
+        "position": 4,
+        "surface": "מֵאוֹת"
+      },
+      {
+        "key": null,
+        "position": 5,
+        "surface": "שָׁנָה"
+      },
+      {
+        "key": null,
+        "position": 6,
+        "surface": "וַיּוֹלֶד"
+      },
+      {
+        "evidence": "The second clause names the same Noah as the father of Shem, Ham, and Japheth.",
+        "key": "Noah@Gen.5.29",
+        "position": 7,
+        "surface": "נֹחַ"
+      },
+      {
+        "key": null,
+        "position": 8,
+        "surface": "אֶת"
+      },
+      {
+        "evidence": "Shem is the first son named as an object of “fathered,” alongside his brothers Ham and Japheth.",
+        "key": "Shem@Gen.5.32",
+        "position": 9,
+        "surface": "שֵׁם"
+      },
+      {
+        "key": null,
+        "position": 10,
+        "surface": "אֶת"
+      },
+      {
+        "evidence": "Noah fathers Ham, the son listed between Shem and Japheth.",
+        "key": "Ham@Gen.5.32",
+        "position": 11,
+        "surface": "חָם"
+      },
+      {
+        "key": null,
+        "position": 12,
+        "surface": "וְאֶת"
+      },
+      {
+        "evidence": "Japheth is the third son named in the list of sons Noah fathered.",
+        "key": "Japheth@Gen.5.32",
+        "position": 13,
+        "surface": "יָפֶת"
+      }
+    ],
     "translation": "[And|0] [Noah|1] [was|0] [500|3,4] [years|5] [old|2]. [Then|6] [Noah|7] [fathered|6] [Shem|8,9], [Ham|10,11], [and|12] [Japheth|13]."
   },
   "source": "ot",
