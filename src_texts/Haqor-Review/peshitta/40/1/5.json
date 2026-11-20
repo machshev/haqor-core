@@ -12,7 +12,33 @@
             "base": null,
             "change": "Add a personal-name article for the Peshitta spelling סַלמָונ.",
             "definition": "Salmon, the father of Boaz by Rahab in Matthew’s genealogy.",
-            "evidence": "Matthew 1:5 names Salmon as the subject of אַולֵדֿ, “fathered,” with Boaz as his son."
+            "evidence": "Matthew 1:5 names Salmon as the subject of אַולֵדֿ, “fathered,” with Boaz as his son.",
+            "reconciliation": {
+              "article": {
+                "created": "2026-11-20",
+                "english": "Salmon",
+                "entry": "",
+                "evidence": [
+                  {
+                    "note": "סַלמָונ אַולֵדֿ לבָֿעָז מֵנ רָחָבֿ means “Salmon fathered Boaz by Rahab.”",
+                    "ref": "Mat.1.5",
+                    "role": "defining"
+                  }
+                ],
+                "gloss": "Salmon",
+                "id": "salmon",
+                "name": "סַלמָונ",
+                "people": [],
+                "root": "",
+                "status": "draft",
+                "summary": "The Peshitta names Salmon as the father of Boaz by Rahab. The verse identifies him by this relationship and gives no derivation for his name.",
+                "updated": "2026-11-20"
+              },
+              "base": null,
+              "conflicts": [
+                "resolve the bearer and validate its name article against the current lexicon"
+              ]
+            }
           }
         },
         "evidence": "In סַלמָונ אַולֵדֿ לבָֿעָז מֵנ רָחָבֿ, Salmon is the father, the prefixed ל marks Boaz as the child he fathered, and מֵנ רָחָבֿ identifies Rahab as the mother. Boaz then takes Salmon’s place as subject of the same verb in the next clause.",
@@ -52,7 +78,34 @@
             "base": null,
             "change": "Add a personal-name article for the Syriac form בָּעָז.",
             "definition": "Boaz, whom Salmon fathered by Rahab and who fathered Obed by Ruth.",
-            "evidence": "Mat.1.5 gives Boaz's name first as Salmon's child and then as Obed's father."
+            "evidence": "Mat.1.5 gives Boaz's name first as Salmon's child and then as Obed's father.",
+            "reconciliation": {
+              "article": {
+                "created": "2026-11-20",
+                "english": "Boaz",
+                "entry": "azaz",
+                "evidence": [
+                  {
+                    "note": "The child named לבָֿעָז in the first clause is named בָּעָז when he becomes the subject of the next clause.",
+                    "ref": "Mat.1.5",
+                    "role": "defining"
+                  }
+                ],
+                "gloss": "Boaz",
+                "id": "boaz",
+                "name": "בָּעָז",
+                "note": "The Syriac name is keyed by its consonants בעז. The link to עזז through Hebrew עֹז, “strength”, is tentative. Matthew gives no etymology.",
+                "people": [],
+                "root": "עזז",
+                "status": "draft",
+                "summary": "Matthew names Boaz as the son of Salmon and Rahab and the father of Obed by Ruth. The meaning of his name is uncertain.",
+                "updated": "2026-11-20"
+              },
+              "base": null,
+              "conflicts": [
+                "resolve the bearer and validate its name article against the current lexicon"
+              ]
+            }
           }
         },
         "evidence": "סַלמָונ אַולֵדֿ לבָֿעָז מֵנ רָחָבֿ names Boaz as the child Salmon fathered by Rahab. The next clause repeats the name without ל as its subject, בָּעָז אַולֵדֿ לעֻובִֿידֿ, “Boaz fathered Obed”.",
@@ -92,7 +145,34 @@
             "base": null,
             "change": "Add a personal-name article for the Syriac בָּעָז.",
             "definition": "Boaz, the son of Salmon and Rahab and the father of Obed by Ruth.",
-            "evidence": "Matthew 1:5 repeats Boaz’s name at the start of the clause that identifies Obed as his son."
+            "evidence": "Matthew 1:5 repeats Boaz’s name at the start of the clause that identifies Obed as his son.",
+            "reconciliation": {
+              "article": {
+                "created": "2026-11-20",
+                "english": "Boaz",
+                "entry": "azaz",
+                "evidence": [
+                  {
+                    "note": "The Peshitta names בָּעָז as the subject of “fathered Obed by Ruth.”",
+                    "ref": "Mat.1.5",
+                    "role": "defining"
+                  }
+                ],
+                "gloss": "Boaz",
+                "id": "boaz",
+                "name": "בָּעָז",
+                "note": "בעז records the consonants of the Syriac name. The link to עזז is tentative. Matthew gives no explanation of the name.",
+                "people": [],
+                "root": "עזז",
+                "status": "draft",
+                "summary": "Matthew names Boaz as the father of Obed by Ruth. A proposed connection with Hebrew עֹז, “strength,” is uncertain.",
+                "updated": "2026-11-20"
+              },
+              "base": null,
+              "conflicts": [
+                "resolve the bearer and validate its name article against the current lexicon"
+              ]
+            }
           }
         },
         "evidence": "The clause בָּעָז אַולֵדֿ לעֻובִֿידֿ מֵנ רָעֻותֿ says that Boaz fathered Obed by Ruth. The preceding clause names the same Boaz as the son of Salmon and Rahab.",
@@ -132,7 +212,42 @@
             "base": null,
             "change": "Add a personal-name article for Obed linked to the root עבד.",
             "definition": "The Syriac personal name Obed, borne here by the son of Boaz and Ruth.",
-            "evidence": "Matthew 1:5 places עֻובִֿידֿ between Boaz and Jesse in the same genealogy as Hebrew עוֹבֵד in Ruth 4:21–22."
+            "evidence": "Matthew 1:5 places עֻובִֿידֿ between Boaz and Jesse in the same genealogy as Hebrew עוֹבֵד in Ruth 4:21–22.",
+            "reconciliation": {
+              "article": {
+                "created": "2026-11-20",
+                "english": "Obed",
+                "entry": "abad",
+                "evidence": [
+                  {
+                    "note": "Boaz fathers Obed by Ruth, and Obed fathers Jesse.",
+                    "ref": "Mat.1.5",
+                    "role": "defining"
+                  },
+                  {
+                    "note": "The Hebrew genealogy names עוֹבֵד as the son of Boaz and father of Jesse.",
+                    "ref": "Rut.4.21",
+                    "to": "Rut.4.22"
+                  },
+                  {
+                    "note": "The phrase עֹבֵד אֱלֹהִים, “one who serves God”, illustrates the Hebrew participle underlying the name.",
+                    "ref": "Mal.3.18"
+                  }
+                ],
+                "gloss": "one who serves",
+                "id": "obed",
+                "name": "עֻובִֿידֿ",
+                "people": [],
+                "root": "עבד",
+                "status": "draft",
+                "summary": "Matthew names Obed as the son of Boaz and Ruth and the father of Jesse. His Syriac name corresponds to Hebrew עוֹבֵד in Ruth, the participial form of עבד, “serve, work”.",
+                "updated": "2026-11-20"
+              },
+              "base": null,
+              "conflicts": [
+                "resolve the bearer and validate its name article against the current lexicon"
+              ]
+            }
           }
         },
         "evidence": "In בָּעָז אַולֵדֿ לעֻובִֿידֿ מֵנ רָעֻותֿ, Boaz fathers Obed by Ruth. The next clause repeats עֻובִֿידֿ without ל as the subject who fathers Jesse, confirming where the name begins.",
@@ -155,7 +270,39 @@
             "base": null,
             "change": "Add a personal-name article for Ruth under רעה, where Haqor’s root article already groups the Hebrew name רוּת. The derivation remains uncertain.",
             "definition": "The Syriac personal name of Ruth, whom Matthew names as Obed’s mother.",
-            "evidence": "In Mat.1.5, מֵנ רָעֻותֿ identifies the mother immediately after the clause names Boaz as the father and Obed as the child."
+            "evidence": "In Mat.1.5, מֵנ רָעֻותֿ identifies the mother immediately after the clause names Boaz as the father and Obed as the child.",
+            "reconciliation": {
+              "article": {
+                "created": "2026-11-20",
+                "english": "Ruth",
+                "entry": "raah-shepherd",
+                "evidence": [
+                  {
+                    "note": "The Peshitta names רָעֻותֿ after מֵנ in the clause recording Obed’s parentage.",
+                    "ref": "Mat.1.5",
+                    "role": "defining"
+                  },
+                  {
+                    "note": "Boaz marries רוּת. She bears a son, whom the neighbouring women name Obed.",
+                    "ref": "Rut.4.13",
+                    "to": "Rut.4.17"
+                  }
+                ],
+                "gloss": "Ruth",
+                "id": "ruth",
+                "name": "רָעֻותֿ",
+                "note": "The root link follows Haqor’s grouping of Hebrew רוּת under רעה. Neither passage explains the name.",
+                "people": [],
+                "root": "רעה",
+                "status": "draft",
+                "summary": "Matthew’s Syriac genealogy names רָעֻותֿ as the mother of Obed by Boaz. The book of Ruth calls her רוּת. The meaning of her name is uncertain.",
+                "updated": "2026-11-20"
+              },
+              "base": null,
+              "conflicts": [
+                "resolve the bearer and validate its name article against the current lexicon"
+              ]
+            }
           }
         },
         "evidence": "בָּעָז אַולֵדֿ לעֻובִֿידֿ מֵנ רָעֻותֿ means “Boaz fathered Obed by Ruth.” The preceding clause uses the same construction to name Rahab as the mother of Boaz.",
@@ -178,7 +325,42 @@
             "base": null,
             "change": "Add a personal-name article for Obed linked to the root עבד.",
             "definition": "Obed is the personal name of Jesse’s father in Matthew’s genealogy.",
-            "evidence": "Matthew 1:5 names Obed first as the son of Boaz and Ruth and then as Jesse’s father. Ruth 4:17 identifies Jesse’s father by the Hebrew name עֹבֵד."
+            "evidence": "Matthew 1:5 names Obed first as the son of Boaz and Ruth and then as Jesse’s father. Ruth 4:17 identifies Jesse’s father by the Hebrew name עֹבֵד.",
+            "reconciliation": {
+              "article": {
+                "created": "2026-11-20",
+                "english": "Obed",
+                "entry": "abad",
+                "evidence": [
+                  {
+                    "note": "The Peshitta repeats Obed’s name as the subject of “fathered Jesse.”",
+                    "ref": "Mat.1.5",
+                    "role": "defining"
+                  },
+                  {
+                    "note": "The women name the child עֹבֵד, and the narrator identifies him as Jesse’s father.",
+                    "ref": "Rut.4.17",
+                    "role": "defining"
+                  },
+                  {
+                    "note": "The phrase עֹבֵד אֱלֹהִים uses the same Hebrew participle for one who serves God.",
+                    "ref": "Mal.3.18"
+                  }
+                ],
+                "gloss": "one who serves",
+                "id": "obed",
+                "name": "עֻובִֿידֿ",
+                "people": [],
+                "root": "עבד",
+                "status": "draft",
+                "summary": "Matthew names Obed as the son of Boaz and Ruth and the father of Jesse. The Syriac name corresponds to Hebrew עֹבֵד, the active participle of עָבַד, “to work, serve.”",
+                "updated": "2026-11-20"
+              },
+              "base": null,
+              "conflicts": [
+                "resolve the bearer and validate its name article against the current lexicon"
+              ]
+            }
           }
         },
         "evidence": "The preceding clause names Obed with prefixed ל as the son Boaz fathered by Ruth. The marked occurrence repeats his name without the prefix in עֻובִֿידֿ אַולֵדֿ לִאישַי, “Obed fathered Jesse.”",
@@ -218,7 +400,37 @@
             "base": null,
             "change": "Add the Syriac spelling אִישַי as a name article linked to the existing Jesse root entry.",
             "definition": "אִישַי is the Syriac form of Jesse, the name of Obed’s son.",
-            "evidence": "Matthew 1:5 names Jesse as Obed’s son, the same relationship given for Hebrew יִשַׁי in Ruth 4:22."
+            "evidence": "Matthew 1:5 names Jesse as Obed’s son, the same relationship given for Hebrew יִשַׁי in Ruth 4:22.",
+            "reconciliation": {
+              "article": {
+                "created": "2026-11-20",
+                "english": "Jesse",
+                "entry": "yisht",
+                "evidence": [
+                  {
+                    "note": "עֻובִֿידֿ אַולֵדֿ לִאישַי names Jesse as the son whom Obed fathered.",
+                    "ref": "Mat.1.5",
+                    "role": "defining"
+                  },
+                  {
+                    "note": "The Hebrew genealogy names יִשַׁי between Obed and David.",
+                    "ref": "Rut.4.22"
+                  }
+                ],
+                "gloss": "meaning uncertain",
+                "id": "jesse-syriac",
+                "name": "אִישַי",
+                "people": [],
+                "root": "ישי",
+                "status": "draft",
+                "summary": "The Peshitta names Obed’s son אִישַי. The Hebrew genealogy in Ruth calls him יִשַׁי and names David as his son. Neither genealogy explains the name’s meaning.",
+                "updated": "2026-11-20"
+              },
+              "base": null,
+              "conflicts": [
+                "resolve the bearer and validate its name article against the current lexicon"
+              ]
+            }
           }
         },
         "evidence": "In עֻובִֿידֿ אַולֵדֿ לִאישַי, “Obed fathered Jesse,” Jesse occupies the same position after אַולֵדֿ that Obed occupies in the preceding clause. The prefixed ל marks the child being named.",

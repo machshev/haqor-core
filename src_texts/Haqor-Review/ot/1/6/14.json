@@ -29,7 +29,81 @@
             "base": "96f836dfd21f3d150d1252488b03345c3c1ecca2101743792946e2c251fb5649",
             "change": "Add Genesis 6:14 as evidence for the existing Hebrew sense le-dative.",
             "definition": "לְ identifies the person for whom something is done, including the doer himself.",
-            "evidence": "Genesis 6:14 uses עֲשֵׂה לְךָ, “make for yourself,” with Noah as both maker and beneficiary."
+            "evidence": "Genesis 6:14 uses עֲשֵׂה לְךָ, “make for yourself,” with Noah as both maker and beneficiary.",
+            "reconciliation": {
+              "base": "96f836dfd21f3d150d1252488b03345c3c1ecca2101743792946e2c251fb5649",
+              "base_commit": "69cd79e1",
+              "base_path": "data/lexicon/le.json",
+              "conflicts": [
+                "/doctrine",
+                "/words"
+              ],
+              "patch": [
+                {
+                  "op": "replace",
+                  "path": "/doctrine/0/statement",
+                  "value": "Gen 2:7 uses לְ of what the man became: God formed him of dust and breathed into his nostrils the breath of life, \"and the man became a living soul\". The soul is what the formed and breathing man came to be, not a thing put into him; the same \"living soul\" is said of the beasts (Gen 1:24). Paul keeps the Hebrew construction, \"the first man Adam became (ἐγένετο εἰς) a living soul\", and sets against it \"the last Adam became a life-giving spirit\" (1Co 15:45). So man as made is a living, mortal creature, and the life beyond the grave is given through the last Adam, not carried in a soul from the first."
+                },
+                {
+                  "op": "replace",
+                  "path": "/updated",
+                  "value": "2026-11-20"
+                },
+                {
+                  "op": "replace",
+                  "path": "/words/0/senses/1/evidence/5/note",
+                  "value": "עֲשֵׂה לְךָ, “make for yourself.” The ark is what Noah is to make, and לְךָ identifies Noah himself as the person for whom he is to make it."
+                },
+                {
+                  "op": "replace",
+                  "path": "/words/0/senses/1/evidence/5/ref",
+                  "value": "Gen.6.14"
+                },
+                {
+                  "op": "add",
+                  "path": "/words/0/senses/1/evidence/5/role",
+                  "value": "defining"
+                },
+                {
+                  "op": "replace",
+                  "path": "/words/0/senses/1/evidence/6/note",
+                  "value": "\"עֲשֵׂה לְךָ, make for yourself two trumpets of silver.\""
+                },
+                {
+                  "op": "replace",
+                  "path": "/words/0/senses/1/evidence/6/ref",
+                  "value": "Num.10.2"
+                },
+                {
+                  "op": "replace",
+                  "path": "/words/0/senses/1/evidence/7/note",
+                  "value": "\"וּסְפַרְתֶּם לָכֶם, you shall count for yourselves\" seven sabbaths."
+                },
+                {
+                  "op": "replace",
+                  "path": "/words/0/senses/1/evidence/7/ref",
+                  "value": "Lev.23.15"
+                },
+                {
+                  "op": "replace",
+                  "path": "/words/0/senses/1/evidence/8/note",
+                  "value": "\"וּלְקַחְתֶּם לָכֶם, you shall take for yourselves\" the fruit of goodly trees."
+                },
+                {
+                  "op": "replace",
+                  "path": "/words/0/senses/1/evidence/8/ref",
+                  "value": "Lev.23.40"
+                },
+                {
+                  "op": "add",
+                  "path": "/words/0/senses/1/evidence/-",
+                  "value": {
+                    "note": "The Aramaic: \"לָךְ, to you, God of my fathers, I give thanks … you have given לִי, to me, wisdom.\"",
+                    "ref": "Dan.2.23"
+                  }
+                }
+              ]
+            }
           }
         },
         "evidence": "In עֲשֵׂה לְךָ תֵּבַת עֲצֵי גֹפֶר, the ark is what Noah must make. The suffix ךָ refers to Noah, the person addressed by the imperative עֲשֵׂה, so לְךָ means “for yourself.”",

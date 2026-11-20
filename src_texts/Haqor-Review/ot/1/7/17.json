@@ -92,7 +92,62 @@
             "base": "576656bfe9c8441182654160615e68bbf3c36547fc5941bce079346d385586dc",
             "change": "Define the flood itself, add Genesis 7:17 as defining evidence, and retain Psalm 29:10 as an example.",
             "definition": "An inundation in which waters overwhelm the land.",
-            "evidence": "In Genesis 7:17 the rising waters lift the ark from the ground."
+            "evidence": "In Genesis 7:17 the rising waters lift the ark from the ground.",
+            "reconciliation": {
+              "base": "576656bfe9c8441182654160615e68bbf3c36547fc5941bce079346d385586dc",
+              "base_commit": "69cd79e1",
+              "base_path": "data/lexicon/mabbul.json",
+              "conflicts": [
+                "/summary",
+                "/words[]/senses[]/definition",
+                "/words[]/senses[]/evidence[]/note"
+              ],
+              "patch": [
+                {
+                  "op": "replace",
+                  "path": "/summary",
+                  "value": "Genesis calls the waters that rose and lifted the ark the flood. Psalm 29 speaks of Yahweh enthroned over the flood."
+                },
+                {
+                  "op": "replace",
+                  "path": "/updated",
+                  "value": "2026-11-20"
+                },
+                {
+                  "op": "add",
+                  "path": "/words/0/gender",
+                  "value": "m"
+                },
+                {
+                  "op": "replace",
+                  "path": "/words/0/senses/0/definition",
+                  "value": "An inundation in which waters overwhelm the land."
+                },
+                {
+                  "op": "add",
+                  "path": "/words/0/senses/0/evidence/0/note",
+                  "value": "The flood lasts forty days upon the earth, and its rising waters lift the ark."
+                },
+                {
+                  "op": "replace",
+                  "path": "/words/0/senses/0/evidence/0/ref",
+                  "value": "Gen.7.17"
+                },
+                {
+                  "op": "add",
+                  "path": "/words/0/senses/0/evidence/1/note",
+                  "value": "God announces a flood of waters upon the earth."
+                },
+                {
+                  "op": "add",
+                  "path": "/words/0/senses/0/evidence/-",
+                  "value": {
+                    "note": "Yahweh sits enthroned over the flood.",
+                    "ref": "Psa.29.10"
+                  }
+                }
+              ]
+            }
           }
         },
         "evidence": "The flood lasts forty days עַל הָאָרֶץ, “upon the earth.” The next clause describes its effect: the waters increase and lift the ark above the ground.",

@@ -12,7 +12,38 @@
             "base": null,
             "change": "Add the Syriac spelling יִהֻודָֿא as a name article linked to the same root as the Hebrew יְהוּדָה.",
             "definition": "The Syriac form of the personal name Judah, borne here by Jacob’s son.",
-            "evidence": "Matthew 1:3 names Judah as the father of Perez and Zerah by Tamar. Genesis 29:35 connects his Hebrew name with Leah’s declaration that she will praise Yahweh."
+            "evidence": "Matthew 1:3 names Judah as the father of Perez and Zerah by Tamar. Genesis 29:35 connects his Hebrew name with Leah’s declaration that she will praise Yahweh.",
+            "reconciliation": {
+              "article": {
+                "created": "2026-11-20",
+                "english": "Judah",
+                "entry": "yadah",
+                "evidence": [
+                  {
+                    "note": "יִהֻודָֿא is the subject of אַולֵדֿ, “fathered.” His sons are Perez and Zerah, and their mother is Tamar.",
+                    "ref": "Mat.1.3",
+                    "role": "defining"
+                  },
+                  {
+                    "note": "Leah says אוֹדֶה אֶת־יְהוָה, “I will praise Yahweh,” and on that account names her son יְהוּדָה.",
+                    "ref": "Gen.29.35",
+                    "role": "defining"
+                  }
+                ],
+                "gloss": "praise",
+                "id": "judah-syc",
+                "name": "יִהֻודָֿא",
+                "people": [],
+                "root": "ידה",
+                "status": "draft",
+                "summary": "The Peshitta names Judah as the father of Perez and Zerah by Tamar. Genesis connects his Hebrew name with Leah’s words of praise at his birth.",
+                "updated": "2026-11-20"
+              },
+              "base": null,
+              "conflicts": [
+                "resolve the bearer and validate its name article against the current lexicon"
+              ]
+            }
           }
         },
         "evidence": "יִהֻודָֿא stands before אַולֵדֿ, “fathered.” The two names that follow, לפַֿרצ וַלזַרח, identify his sons, and מֵנ תָּמָר names their mother. The genealogy then continues with Perez as the next father.",
@@ -69,7 +100,39 @@
             "base": null,
             "change": "Add a personal-name article for Zerah linked to the root article zarach.",
             "definition": "The personal name Zerah, borne here by a son of Judah and Tamar.",
-            "evidence": "Matthew 1:3 names Zerah alongside Perez as a son of Judah by Tamar."
+            "evidence": "Matthew 1:3 names Zerah alongside Perez as a son of Judah by Tamar.",
+            "reconciliation": {
+              "article": {
+                "created": "2026-11-20",
+                "english": "Zerah",
+                "entry": "zarach",
+                "evidence": [
+                  {
+                    "note": "The Peshitta coordinates זַרח with Perez as the second object of ‘fathered’.",
+                    "ref": "Mat.1.3",
+                    "role": "defining"
+                  },
+                  {
+                    "note": "The related Hebrew noun describes the dawning of light.",
+                    "ref": "Isa.60.3",
+                    "role": "example"
+                  }
+                ],
+                "gloss": "possibly ‘dawning’",
+                "id": "zerah",
+                "name": "זַרח",
+                "note": "Matthew gives the family relationship without explaining the name's origin.",
+                "people": [],
+                "root": "זרח",
+                "status": "draft",
+                "summary": "Matthew names Zerah and Perez as sons of Judah by Tamar. Zerah's name shares its consonants with the Hebrew noun זֶרַח ‘dawning’.",
+                "updated": "2026-11-20"
+              },
+              "base": null,
+              "conflicts": [
+                "resolve the bearer and validate its name article against the current lexicon"
+              ]
+            }
           }
         },
         "evidence": "The ל־ appears on both לפַרצ and וַלזַרח, pairing Perez and Zerah as the sons Judah fathered. מֵנ תָּמָר identifies Tamar as their mother.",
@@ -92,7 +155,42 @@
             "base": null,
             "change": "Add a personal-name article linked to the תמר root article.",
             "definition": "Tamar is the woman who bore Perez and Zerah to Judah.",
-            "evidence": "Mat.1.3 names Tamar after both sons. Rut.4.12 likewise identifies Tamar as the woman who bore Perez to Judah."
+            "evidence": "Mat.1.3 names Tamar after both sons. Rut.4.12 likewise identifies Tamar as the woman who bore Perez to Judah.",
+            "reconciliation": {
+              "article": {
+                "created": "2026-11-20",
+                "english": "Tamar",
+                "entry": "tamar",
+                "evidence": [
+                  {
+                    "note": "The Syriac names both sons before מֵנ תָּמָר, “by Tamar.”",
+                    "ref": "Mat.1.3",
+                    "role": "defining"
+                  },
+                  {
+                    "note": "The blessing recalls Perez, whom Tamar bore to Judah.",
+                    "ref": "Rut.4.12"
+                  },
+                  {
+                    "note": "The speaker describes climbing a תָמָר and taking hold of its fruit stalks, illustrating the palm-tree noun that gives the name its meaning.",
+                    "ref": "Sng.7.9"
+                  }
+                ],
+                "gloss": "date palm",
+                "id": "tamar-name",
+                "name": "תָּמָר",
+                "people": [],
+                "root": "תמר",
+                "status": "draft",
+                "summary": "The name Tamar has the same form as the Hebrew noun תָּמָר, “date palm.” In Matthew’s genealogy, Tamar is the mother of Judah’s sons Perez and Zerah.",
+                "updated": "2026-11-20",
+                "word": "תָּמָר"
+              },
+              "base": null,
+              "conflicts": [
+                "resolve the bearer and validate its name article against the current lexicon"
+              ]
+            }
           }
         },
         "evidence": "In Mat.1.3, Judah is the subject of אַולֵדֿ, “fathered.” After naming both sons, the phrase מֵנ תָּמָר, “by Tamar,” identifies their mother.",
@@ -200,7 +298,38 @@
             "base": null,
             "change": "Add the pointed Syriac name אָרָמ and document its correspondence to Hebrew רָם in this genealogy.",
             "definition": "The Syriac personal name Aram, borne here by Hezron’s son Ram.",
-            "evidence": "Matthew 1:3 places Aram after Hezron in the genealogy. Ruth 4:18–19 gives the same succession from Perez through Hezron to Ram."
+            "evidence": "Matthew 1:3 places Aram after Hezron in the genealogy. Ruth 4:18–19 gives the same succession from Perez through Hezron to Ram.",
+            "reconciliation": {
+              "article": {
+                "created": "2026-11-20",
+                "english": "Aram",
+                "entry": "armon-city",
+                "evidence": [
+                  {
+                    "note": "חֵצרֻונ אַולֵדֿ לָארָמ means “Hezron fathered Aram.”",
+                    "ref": "Mat.1.3",
+                    "role": "defining"
+                  },
+                  {
+                    "note": "Perez fathers Hezron, and Hezron fathers רָם.",
+                    "ref": "Rut.4.18",
+                    "to": "Rut.4.19"
+                  }
+                ],
+                "gloss": "Aram",
+                "id": "aram-syriac",
+                "name": "אָרָמ",
+                "people": [],
+                "root": "ארמ",
+                "status": "draft",
+                "summary": "The Peshitta names Hezron’s son אָרָמ in Matthew’s genealogy. Ruth calls him רָם in the Hebrew genealogy.",
+                "updated": "2026-11-20"
+              },
+              "base": null,
+              "conflicts": [
+                "resolve the bearer and validate its name article against the current lexicon"
+              ]
+            }
           }
         },
         "evidence": "In חֵצרֻונ אַולֵדֿ לָארָמ, “Hezron fathered Aram,” the ל marks the child, just as it marks Hezron in the preceding clause, “Perez fathered Hezron.” Ruth 4:19 calls this son of Hezron רָם (Ram).",

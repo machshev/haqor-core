@@ -12,7 +12,38 @@
             "base": null,
             "change": "Add the pointed Syriac name אָרָמ and document its correspondence to Hebrew רָם in this genealogy.",
             "definition": "The Syriac personal name Aram, borne here by Hezron’s son Ram.",
-            "evidence": "Matthew 1:3 places Aram after Hezron in the genealogy. Ruth 4:18–19 gives the same succession from Perez through Hezron to Ram."
+            "evidence": "Matthew 1:3 places Aram after Hezron in the genealogy. Ruth 4:18–19 gives the same succession from Perez through Hezron to Ram.",
+            "reconciliation": {
+              "article": {
+                "created": "2026-11-20",
+                "english": "Aram",
+                "entry": "armon-city",
+                "evidence": [
+                  {
+                    "note": "חֵצרֻונ אַולֵדֿ לָארָמ means “Hezron fathered Aram.”",
+                    "ref": "Mat.1.3",
+                    "role": "defining"
+                  },
+                  {
+                    "note": "Perez fathers Hezron, and Hezron fathers רָם.",
+                    "ref": "Rut.4.18",
+                    "to": "Rut.4.19"
+                  }
+                ],
+                "gloss": "Aram",
+                "id": "aram-syriac",
+                "name": "אָרָמ",
+                "people": [],
+                "root": "ארמ",
+                "status": "draft",
+                "summary": "The Peshitta names Hezron’s son אָרָמ in Matthew’s genealogy. Ruth calls him רָם in the Hebrew genealogy.",
+                "updated": "2026-11-20"
+              },
+              "base": null,
+              "conflicts": [
+                "resolve the bearer and validate its name article against the current lexicon"
+              ]
+            }
           }
         },
         "evidence": "In אָרָמ אַולֵדֿ לעַמִינָדָֿבֿ, Aram is the father of Amminadab. The genealogy continues from verse 3, where Aram is named as Hezron’s son.",

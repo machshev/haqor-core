@@ -12,7 +12,90 @@
             "base": "7126345ad6c0c225ec7d4e6a22c8ec7a86646ea1f9d4d145a312923aab4dfc83",
             "change": "Extend the existing this-one sense to cover forward reference and cite Gen.6.15.",
             "definition": "Used independently, זֶה can introduce what the speaker is about to specify.",
-            "evidence": "In Gen.6.15 the three measurements following וְזֶה אֲשֶׁר תַּעֲשֶׂה אֹתָהּ supply the content of ‘this’."
+            "evidence": "In Gen.6.15 the three measurements following וְזֶה אֲשֶׁר תַּעֲשֶׂה אֹתָהּ supply the content of ‘this’.",
+            "reconciliation": {
+              "base": "7126345ad6c0c225ec7d4e6a22c8ec7a86646ea1f9d4d145a312923aab4dfc83",
+              "base_commit": "69cd79e1",
+              "base_path": "data/lexicon/zeh.json",
+              "conflicts": [
+                "/note"
+              ],
+              "patch": [
+                {
+                  "op": "replace",
+                  "path": "/note",
+                  "value": "Root question: no verbal or nominal root was found. The word is the Semitic pointing (deictic) element *ḏ-, with vowel endings for gender and case (Arabic ḏā, ḏī, ḏū; Ugaritic d/ḏ, f. dt; Sabaic ḏ-, ḏn; Ge'ez zə, za; Aramaic dā, dī, dənā; Phoenician z, zn), found in every branch; scripture has no noun or verb זהה/זוה/זיה from which it could have grown, and Arabic grammarians' reconstructions of ذَا as ذَوَى or ذَيَى (Lane p. 947) only fit it to the root pattern. The later Hebrew verb זִהָה \"identify\" is formed from זֶה, not the reverse. So the entry is keyed by its own consonants, זה, and the evidence for the pointing word itself is as strong as for any Semitic word. One pointer serves as demonstrative and relative across the languages (Hebrew זוּ and poetic זֶה, Aramaic דִּי, Ugaritic d, Sabaic ḏ-, Ge'ez za, Old Byblian z, Arabic ḏū in Ṭayyiʾ), which is why the relative words are kept here. Not this element: Hebrew שֶׁ־ and Akkadian ša (Akkadian keeps ḏ as z, so ša does not answer to ḏ; Wiktionary's comparison of ša with ذَا is not followed); אֵלֶּה \"these\" and Aramaic אִלֵּין (another pointing word, ʾl); Syriac ܗܳܢܳܐ \"this\" (hn); the month name זִו (זיו \"brightness\"). BDB files זֹאת under זֶה (g.ah.aa); its cross-reference key g.ab.ad has no tokens and is claimed here. g.ai.aa and g.aj.aa list the same two tokens of זוֹ (Hos 7:16, Psa 132:12); both keys are on זֹה, so they are counted twice there. Zec 2:8 and Psa 68:9 are cited by the Hebrew numbering (English 2:4, 68:8); Dan 4:14, 4:22, 4:27, 6:11 and 4:29 likewise (English 4:17, 4:25, 4:30, 6:10 and 4:32). Not consulted: CAL (refuses automated access), DULAT, Leslau, Old Aramaic inscriptions (znh, zy). Dillmann's column numbers were read from the Internet Archive OCR and should be checked on the page image. זֶה סִינַי is left open between a title (\"the One of Sinai\") and \"this Sinai\". The particle's senses are illustrative, not exhaustive: about 1,800 tokens."
+                },
+                {
+                  "op": "replace",
+                  "path": "/updated",
+                  "value": "2026-11-20"
+                },
+                {
+                  "op": "replace",
+                  "path": "/words/0/senses/1/definition",
+                  "value": "Stands alone for someone or something present or just spoken of, or points forward to what the speaker is about to specify. It often serves as the subject of a clause with no verb, “this is …”. The feminine זֹאת stands for a matter, a deed or a word as a whole, where English says “this” or “it”."
+                },
+                {
+                  "op": "replace",
+                  "path": "/words/0/senses/1/evidence/5/note",
+                  "value": "וְזֶה אֲשֶׁר תַּעֲשֶׂה אֹתָהּ means ‘and this is how you shall make it.’ The dimensions that follow specify what זֶה points to."
+                },
+                {
+                  "op": "replace",
+                  "path": "/words/0/senses/1/evidence/5/ref",
+                  "value": "Gen.6.15"
+                },
+                {
+                  "op": "add",
+                  "path": "/words/0/senses/1/evidence/5/role",
+                  "value": "defining"
+                },
+                {
+                  "op": "replace",
+                  "path": "/words/0/senses/1/evidence/6/note",
+                  "value": "זֶה־שְּׁמִי לְעֹלָם וְזֶה זִכְרִי לְדֹר דֹּר: \"this is my name for ever, and this my memorial to generation after generation\"."
+                },
+                {
+                  "op": "replace",
+                  "path": "/words/0/senses/1/evidence/6/ref",
+                  "value": "Exo.3.15"
+                },
+                {
+                  "op": "replace",
+                  "path": "/words/0/senses/1/evidence/7/note",
+                  "value": "מֵאֵת יַהְוֶה הָיְתָה זֹּאת: \"from Yahweh this came about\"; the Greek keeps the feminine, αὕτη (Mat 21:42)."
+                },
+                {
+                  "op": "replace",
+                  "path": "/words/0/senses/1/evidence/7/ref",
+                  "value": "Psa.118.23"
+                },
+                {
+                  "op": "replace",
+                  "path": "/words/0/senses/1/evidence/8/note",
+                  "value": "כִּי זֹאת הַבְּרִית אֲשֶׁר אֶכְרֹת: \"for this is the covenant that I will cut\"; quoted at Heb 8:10."
+                },
+                {
+                  "op": "replace",
+                  "path": "/words/0/senses/1/evidence/8/ref",
+                  "value": "Jer.31.33"
+                },
+                {
+                  "op": "add",
+                  "path": "/words/0/senses/1/evidence/-",
+                  "value": {
+                    "note": "אֵין זֶה כִּי אִם־בֵּית אֱלֹהִים וְזֶה שַׁעַר הַשָּׁמָיִם: \"this is none other than the house of God, and this is the gate of heaven\".",
+                    "ref": "Gen.28.17"
+                  }
+                },
+                {
+                  "op": "replace",
+                  "path": "/words/8/senses/0/evidence/2/note",
+                  "value": "שֵׁשְׁבַצַּר דֵּךְ: \"that Sheshbazzar\"."
+                }
+              ]
+            }
           }
         },
         "evidence": "וְזֶה אֲשֶׁר תַּעֲשֶׂה אֹתָהּ means ‘and this is how you shall make it.’ The feminine object אֹתָהּ refers to the ark. זֶה points forward to its prescribed length, width, and height, given as 300, 50, and 30 cubits.",

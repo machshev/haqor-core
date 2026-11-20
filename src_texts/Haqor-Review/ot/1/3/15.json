@@ -306,7 +306,61 @@
             "base": null,
             "change": "Add שׁוּף with the transitive Qal sense “strike.”",
             "definition": "Strike an opponent on a particular part of the body.",
-            "evidence": "In Genesis 3:15 the serpent strikes the heel of the one who strikes its head. The repeated verb expresses the action shared by both clauses."
+            "evidence": "In Genesis 3:15 the serpent strikes the heel of the one who strikes its head. The repeated verb expresses the action shared by both clauses.",
+            "reconciliation": {
+              "article": {
+                "cognates": [],
+                "created": "2026-11-20",
+                "doctrine": [],
+                "gloss": "strike",
+                "id": "shuph",
+                "note": "",
+                "root": "שופ",
+                "status": "draft",
+                "summary": "Genesis 3:15 uses שׁוּף for the blows exchanged between the serpent and the woman’s offspring. Each clause names the part of the body struck, first the head and then the heel.",
+                "tags": [
+                  "conflict"
+                ],
+                "updated": "2026-11-20",
+                "words": [
+                  {
+                    "gloss": "strike",
+                    "greek": [],
+                    "lemma": "שׁוּף",
+                    "pos": "verb",
+                    "stems": [
+                      {
+                        "gloss": "strike",
+                        "senses": [
+                          {
+                            "definition": "Deliver a blow to an opponent.",
+                            "evidence": [
+                              {
+                                "note": "In תְּשׁוּפֶנּוּ עָקֵב the object suffix identifies whom the serpent strikes, and עָקֵב specifies where the blow lands. The preceding clause uses שׁוּף for the blow to the serpent’s head.",
+                                "ref": "Gen.3.15",
+                                "role": "defining"
+                              }
+                            ],
+                            "gloss": "strike"
+                          }
+                        ],
+                        "stem": "qal"
+                      }
+                    ],
+                    "usage": {
+                      "opposites": [],
+                      "parallels": [],
+                      "phrases": []
+                    }
+                  }
+                ]
+              },
+              "base": null,
+              "conflicts": [
+                "/summary",
+                "/words[]/stems[]/senses"
+              ]
+            }
           }
         },
         "evidence": "וְאַתָּה identifies the serpent as the subject. The suffix ־ֶנּוּ refers to the woman’s offspring, and עָקֵב locates the strike at his heel. The preceding clause uses the same verb with the roles reversed and רֹאשׁ, “head,” as the point of impact. Both clauses describe one party striking the other.",

@@ -119,7 +119,32 @@
             "base": "5ff57a119255ca3775ba1c5592f6cd00e22ec622fafccd6afc08384d01b566fe",
             "change": "Clarify the first Hebrew noun sense in shem to include the animals in its defining passage, and explain the plural in the verse evidence.",
             "definition": "A name by which a person or creature is called.",
-            "evidence": "Genesis 2:20 uses שֵׁמוֹת for the names the man gives the animals."
+            "evidence": "Genesis 2:20 uses שֵׁמוֹת for the names the man gives the animals.",
+            "reconciliation": {
+              "base": "5ff57a119255ca3775ba1c5592f6cd00e22ec622fafccd6afc08384d01b566fe",
+              "base_commit": "69cd79e1",
+              "base_path": "data/lexicon/shem.json",
+              "conflicts": [
+                "/words[]/senses"
+              ],
+              "patch": [
+                {
+                  "op": "replace",
+                  "path": "/updated",
+                  "value": "2026-11-20"
+                },
+                {
+                  "op": "add",
+                  "path": "/words/0/senses/0/evidence/0/note",
+                  "value": "Whatever the man calls each creature is its name, שְׁמוֹ. The plural שֵׁמוֹת gathers the names he gives the livestock, birds, and wild animals."
+                },
+                {
+                  "op": "replace",
+                  "path": "/words/0/senses/0/gloss",
+                  "value": "name by which a person or creature is called"
+                }
+              ]
+            }
           }
         },
         "evidence": "In וַיִּקְרָא הָאָדָם שֵׁמוֹת, the man is the subject and שֵׁמוֹת is the direct object. The following לְ phrases identify the livestock, birds, and wild animals to which he gave names.",

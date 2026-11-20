@@ -69,7 +69,75 @@
             "base": null,
             "change": "Add the root שרצ with the collective noun שֶׁרֶץ and its related Qal verb שָׁרַץ.",
             "definition": "Living creatures that swarm, taken collectively.",
-            "evidence": "In Genesis 1:20, שֶׁרֶץ נֶפֶשׁ חַיָּה names the swarm of living creatures with which the waters are to teem."
+            "evidence": "In Genesis 1:20, שֶׁרֶץ נֶפֶשׁ חַיָּה names the swarm of living creatures with which the waters are to teem.",
+            "reconciliation": {
+              "article": {
+                "cognates": [],
+                "created": "2026-11-20",
+                "doctrine": [],
+                "gloss": "swarm, teem",
+                "id": "sharats",
+                "root": "שרצ",
+                "status": "draft",
+                "summary": "In Genesis 1:20 God commands the waters to teem with living creatures. The verb describes the teeming, and the related noun names the creatures collectively.",
+                "tags": [
+                  "animals"
+                ],
+                "updated": "2026-11-20",
+                "words": [
+                  {
+                    "gender": "m",
+                    "gloss": "a swarm",
+                    "lemma": "שֶׁרֶץ",
+                    "pos": "noun",
+                    "senses": [
+                      {
+                        "definition": "Living creatures that swarm, taken collectively.",
+                        "evidence": [
+                          {
+                            "note": "In שֶׁרֶץ נֶפֶשׁ חַיָּה the singular noun gathers the living creatures of the waters into one expression.",
+                            "ref": "Gen.1.20",
+                            "role": "defining"
+                          }
+                        ],
+                        "gloss": "a swarm of creatures"
+                      }
+                    ]
+                  },
+                  {
+                    "gloss": "swarm, teem",
+                    "lemma": "שָׁרַץ",
+                    "pos": "verb",
+                    "stems": [
+                      {
+                        "gloss": "swarm, teem",
+                        "senses": [
+                          {
+                            "definition": "Of the waters, to abound in living creatures.",
+                            "evidence": [
+                              {
+                                "note": "The waters are the subject of יִשְׁרְצוּ, and שֶׁרֶץ נֶפֶשׁ חַיָּה names what they are to teem with.",
+                                "ref": "Gen.1.20",
+                                "role": "defining"
+                              }
+                            ],
+                            "gloss": "teem with creatures"
+                          }
+                        ],
+                        "stem": "qal"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "base": null,
+              "conflicts": [
+                "/summary",
+                "/tags",
+                "/words",
+                "/words[]/stems[]/senses"
+              ]
+            }
           }
         },
         "evidence": "In יִשְׁרְצוּ הַמַּיִם שֶׁרֶץ נֶפֶשׁ חַיָּה, the waters are commanded to teem. The noun שֶׁרֶץ echoes the verb יִשְׁרְצוּ, and the following נֶפֶשׁ חַיָּה identifies what makes up the swarm, giving the phrase the sense “a swarm of living creatures.”",

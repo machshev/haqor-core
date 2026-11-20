@@ -12,7 +12,89 @@
             "base": "cad803eb7db2b131b61fb3b93a576d63e0cc55ff679e4a05bef3c89da4d37113",
             "change": "Broaden the definition of the existing “toward (turning, looking)” sense in elah to include directing attention, and add Genesis 4:5 as evidence.",
             "definition": "With a verb of turning, looking, or paying heed, אֶל marks the person or thing toward which attention is directed.",
-            "evidence": "Genesis 4:5 puts אֶל קַיִן before לֹא שָׁעָה. Cain is the object of Yahweh’s regard in the negated clause, just as Abel is in the affirmative clause in Genesis 4:4."
+            "evidence": "Genesis 4:5 puts אֶל קַיִן before לֹא שָׁעָה. Cain is the object of Yahweh’s regard in the negated clause, just as Abel is in the affirmative clause in Genesis 4:4.",
+            "reconciliation": {
+              "base": "cad803eb7db2b131b61fb3b93a576d63e0cc55ff679e4a05bef3c89da4d37113",
+              "base_commit": "69cd79e1",
+              "base_path": "data/lexicon/elah.json",
+              "conflicts": [
+                "/words[]/senses[]/definition"
+              ],
+              "patch": [
+                {
+                  "op": "remove",
+                  "path": "/reviewed"
+                },
+                {
+                  "op": "replace",
+                  "path": "/status",
+                  "value": "draft"
+                },
+                {
+                  "op": "replace",
+                  "path": "/updated",
+                  "value": "2026-11-20"
+                },
+                {
+                  "op": "replace",
+                  "path": "/words/0/senses/2/definition",
+                  "value": "Marks the person or thing toward which someone turns or directs attention, including one looked to for help or worship."
+                },
+                {
+                  "op": "replace",
+                  "path": "/words/0/senses/2/evidence/0/note",
+                  "value": "The first אֶל in וְאֶל קַיִן introduces Cain as the person to whom Yahweh paid no heed. The second introduces his offering."
+                },
+                {
+                  "op": "replace",
+                  "path": "/words/0/senses/2/evidence/0/ref",
+                  "value": "Gen.4.5"
+                },
+                {
+                  "op": "replace",
+                  "path": "/words/0/senses/2/evidence/1/note",
+                  "value": "“Turn to me and be saved, all the ends of the earth.”"
+                },
+                {
+                  "op": "replace",
+                  "path": "/words/0/senses/2/evidence/1/ref",
+                  "value": "Isa.45.22"
+                },
+                {
+                  "op": "replace",
+                  "path": "/words/0/senses/2/evidence/2/note",
+                  "value": "Whoever was bitten and looked to the bronze serpent lived."
+                },
+                {
+                  "op": "replace",
+                  "path": "/words/0/senses/2/evidence/2/ref",
+                  "value": "Num.21.9"
+                },
+                {
+                  "op": "add",
+                  "path": "/words/0/senses/2/evidence/2/role",
+                  "value": "defining"
+                },
+                {
+                  "op": "replace",
+                  "path": "/words/0/senses/2/evidence/3/note",
+                  "value": "“They looked to him and were radiant.”"
+                },
+                {
+                  "op": "replace",
+                  "path": "/words/0/senses/2/evidence/3/ref",
+                  "value": "Psa.34.6"
+                },
+                {
+                  "op": "add",
+                  "path": "/words/0/senses/2/evidence/-",
+                  "value": {
+                    "note": "“Do not turn to the nothings.”",
+                    "ref": "Lev.19.4"
+                  }
+                }
+              ]
+            }
           }
         },
         "evidence": "In וְאֶל קַיִן וְאֶל מִנְחָתוֹ לֹא שָׁעָה, the first אֶל introduces Cain as the person to whom Yahweh paid no heed. The repeated אֶל introduces his offering alongside him. The negation לֹא applies to שָׁעָה.",

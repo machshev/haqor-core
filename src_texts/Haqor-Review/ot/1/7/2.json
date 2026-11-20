@@ -148,7 +148,36 @@
             "base": "a8ed885685f881ad58d16600265c2176cd484c41c6480205b1d0941d765b8fa6",
             "change": "Add Genesis 7:2 as an example under the existing Hebrew partitive sense min-some-of in article min.",
             "definition": "Introduces the whole from which a part or a number of members is selected.",
-            "evidence": "In Genesis 7:2, מִן introduces the unclean animals and שְׁנַיִם specifies how many to take from among them."
+            "evidence": "In Genesis 7:2, מִן introduces the unclean animals and שְׁנַיִם specifies how many to take from among them.",
+            "reconciliation": {
+              "base": "a8ed885685f881ad58d16600265c2176cd484c41c6480205b1d0941d765b8fa6",
+              "base_commit": "69cd79e1",
+              "base_path": "data/lexicon/min.json",
+              "conflicts": [
+                "/doctrine",
+                "/words"
+              ],
+              "patch": [
+                {
+                  "op": "replace",
+                  "path": "/doctrine/1/statement",
+                  "value": "The first woman was made from the man: God built \"the rib which he had taken from (מִן) the man\" into a woman (Gen 2:22), and the man says \"she was taken from (מֵ) man\" (Gen 2:23). Paul builds on these words as history: \"the man is not out of the woman, but the woman out of the man\" (1Co 11:8), and \"as the woman is out of (ἐξ) the man, so the man is through the woman\" (1Co 11:12). The man came from the ground and the woman from the man; neither came from an earlier creature."
+                },
+                {
+                  "op": "replace",
+                  "path": "/updated",
+                  "value": "2026-11-20"
+                },
+                {
+                  "op": "add",
+                  "path": "/words/0/senses/2/evidence/-",
+                  "value": {
+                    "note": "וּמִן הַבְּהֵמָה אֲשֶׁר לֹא טְהֹרָה הִוא introduces the unclean animals. שְׁנַיִם specifies the two Noah is to take from among them, a male and its mate.",
+                    "ref": "Gen.7.2"
+                  }
+                }
+              ]
+            }
           }
         },
         "evidence": "In וּמִן הַבְּהֵמָה אֲשֶׁר לֹא טְהֹרָה הִוא, מִן introduces the group of animals that are unclean. שְׁנַיִם gives the number Noah is to take from that group, and אִישׁ וְאִשְׁתּוֹ identifies the two as a male and its mate.",

@@ -236,7 +236,90 @@
             "base": "a8ed885685f881ad58d16600265c2176cd484c41c6480205b1d0941d765b8fa6",
             "change": "Add Genesis 3:17 to the evidence for the Hebrew source sense in the existing min article.",
             "definition": "מִן marks the source from which something is taken. With אָכַל here it identifies the tree from which the food comes.",
-            "evidence": "In Genesis 3:17, מִמֶּנּוּ in the prohibition refers back to מִן הָעֵץ in the account of Adam’s eating."
+            "evidence": "In Genesis 3:17, מִמֶּנּוּ in the prohibition refers back to מִן הָעֵץ in the account of Adam’s eating.",
+            "reconciliation": {
+              "base": "a8ed885685f881ad58d16600265c2176cd484c41c6480205b1d0941d765b8fa6",
+              "base_commit": "69cd79e1",
+              "base_path": "data/lexicon/min.json",
+              "conflicts": [
+                "/words"
+              ],
+              "patch": [
+                {
+                  "op": "replace",
+                  "path": "/note",
+                  "value": "Drafted 2026-11-13 for Leviticus 23 and Numbers 10 (מִן, and מֵעִם, which is am.json's word p.dj.ab and is entered here only as a phrase). Root investigated, as asked for a function word, and keyed by its own consonants מנ (the database keys the Aramaic xm.ak.aa so); no root is viable. (1) The preposition is West Semitic: Hebrew, Aramaic, Syriac, Phoenician, Ugaritic, Arabic, Sabaean (one dialect), Ge'ez, Tigre; Akkadian has none (ina, ištu instead) and Ugaritic and standard Sabaean use it little (b-, l-; bn). Everywhere it has two consonants and an i-vowel; no language shows a third radical or a verb with its sense. (2) Leads weighed: (a) מָנָה \"portion\" (root מנה, count, assign; Ugaritic mnt \"portion\", Segert p. 192), for \"some of\": the partitive is one sense among several and the separative \"from\" is the commonest and the one shared in every language; the vowel and the missing third radical are against it. (b) A verb מנן \"cut off, separate\": no such verb in scripture; Arabic مَنَّ \"cut off\" rests on Wiktionary (Lane's article lacks it), Ugaritic m-n-n is \"be weakened\" (recorded as ar-manna-cut, possible). (c) The indefinite *man / *mīn \"who, what\" (Aramaic מַן Dan 3:6, Ugaritic mnm \"whatever\"), for a partitive \"something of\": not followed by any source. So no root is shown; the entry says so. BDB keys: m.cl.aa named (1,405 uses, the free-standing and suffixed forms only; the prefixed מִ־/מֵ־, thousands more, are counted under the joined noun). m.co.ab (BDB's hypothetical noun מֵן \"portion\" under מנן) has exactly the same tokens and is left unnamed so they are not counted twice; m.co.aa (the root מנן, no tokens), m.ck.ax and m.cn.ah (cross-references, no tokens) left unclaimed. xm.ak.aa (Aramaic) shares the Hebrew surface מִן, so its count (863) includes Hebrew; scripture's Aramaic uses are about a hundred. m.cn.ag (40 tokens of the spelling מִנִּי, BDB's land Minni, Jer 51:27) left unclaimed as a place (minchah.json leaves it too); the poetic מִנִּי is counted under m.cl.aa. Left out, as other words of the same consonants: מָן \"manna\" and מָן \"what?\" (m.ck.au, m.ck.av; Exo 16:15, 31); Aramaic מַן \"who?\" (m.aj.aa, Dan 3:6; Ezr 5:3), which the database files under מנ but which answers to Hebrew מִי; the place Minnith (m.co.ac). These need their own entries (a homograph number if keyed מנ). Lane's article من (p. 3024) is in the incomplete part of the lexicon; Lane's url not given. Ge'ez rests on Wiktionary only; Dillmann/Leslau, Payne Smith for ܡܢ, CAL and DULAT not checked. Doctrine: \"sufferings-of-christ\" contrasts מִן with תַּחַת; reviewer to check the framing. The separate noun מֵן for musical strings is now included under this spelling. Psalm 150:4 establishes the musical sense. Its historical relationship to the preposition is uncertain."
+                },
+                {
+                  "op": "replace",
+                  "path": "/updated",
+                  "value": "2026-11-20"
+                },
+                {
+                  "op": "replace",
+                  "path": "/words/0/senses/1/evidence/3/note",
+                  "value": "Adam ate מִן הָעֵץ, ‘from the tree’. In the quoted command לֹא תֹאכַל מִמֶּנּוּ, ‘you shall not eat from it’, the suffix refers back to the tree that supplied the food."
+                },
+                {
+                  "op": "replace",
+                  "path": "/words/0/senses/1/evidence/3/ref",
+                  "value": "Gen.3.17"
+                },
+                {
+                  "op": "add",
+                  "path": "/words/0/senses/1/evidence/3/role",
+                  "value": "defining"
+                },
+                {
+                  "op": "replace",
+                  "path": "/words/0/senses/1/evidence/4/note",
+                  "value": "\"bone מֵעֲצָמַי, of my bones, and flesh מִבְּשָׂרִי, of my flesh … for מֵאִישׁ, from man, she was taken\"."
+                },
+                {
+                  "op": "replace",
+                  "path": "/words/0/senses/1/evidence/4/ref",
+                  "value": "Gen.2.23"
+                },
+                {
+                  "op": "replace",
+                  "path": "/words/0/senses/1/evidence/5/note",
+                  "value": "\"I am raining bread for you מִן־הַשָּׁמַיִם, from the heavens\"; Jhn 6:32 takes it up as \"the bread out of (ἐκ) heaven\"."
+                },
+                {
+                  "op": "replace",
+                  "path": "/words/0/senses/1/evidence/5/ref",
+                  "value": "Exo.16.4"
+                },
+                {
+                  "op": "replace",
+                  "path": "/words/0/senses/1/evidence/6/note",
+                  "value": "\"מִמּוֹשְׁבֹתֵיכֶם, from your dwellings, you shall bring two loaves of waving\": what the people bring comes from their own homes."
+                },
+                {
+                  "op": "replace",
+                  "path": "/words/0/senses/1/evidence/6/ref",
+                  "value": "Lev.23.17"
+                },
+                {
+                  "op": "replace",
+                  "path": "/words/0/senses/1/evidence/7/note",
+                  "value": "\"מֵיַהְוֶה, from Yahweh, the thing has gone out\": the one it comes from."
+                },
+                {
+                  "op": "replace",
+                  "path": "/words/0/senses/1/evidence/7/ref",
+                  "value": "Gen.24.50"
+                },
+                {
+                  "op": "add",
+                  "path": "/words/0/senses/1/evidence/-",
+                  "value": {
+                    "note": "\"All came to be מִן־הֶעָפָר, from the dust, and all return to the dust.\"",
+                    "ref": "Ecc.3.20"
+                  }
+                }
+              ]
+            }
           }
         },
         "evidence": "In Genesis 3:17, וַתֹּאכַל מִן הָעֵץ means “you ate from the tree.” The tree is the source of the fruit Adam ate. The quoted command לֹא תֹאכַל מִמֶּנּוּ, “you shall not eat from it,” repeats the construction and refers to the same tree.",
@@ -361,7 +444,90 @@
             "base": "a8ed885685f881ad58d16600265c2176cd484c41c6480205b1d0941d765b8fa6",
             "change": "Add Genesis 3:17 to the evidence for the Hebrew source sense in the existing min article.",
             "definition": "מִן marks the source from which something is taken. With אָכַל here it identifies the tree from which the food comes.",
-            "evidence": "In Genesis 3:17, מִמֶּנּוּ in the prohibition refers back to מִן הָעֵץ in the account of Adam’s eating."
+            "evidence": "In Genesis 3:17, מִמֶּנּוּ in the prohibition refers back to מִן הָעֵץ in the account of Adam’s eating.",
+            "reconciliation": {
+              "base": "a8ed885685f881ad58d16600265c2176cd484c41c6480205b1d0941d765b8fa6",
+              "base_commit": "69cd79e1",
+              "base_path": "data/lexicon/min.json",
+              "conflicts": [
+                "/words"
+              ],
+              "patch": [
+                {
+                  "op": "replace",
+                  "path": "/note",
+                  "value": "Drafted 2026-11-13 for Leviticus 23 and Numbers 10 (מִן, and מֵעִם, which is am.json's word p.dj.ab and is entered here only as a phrase). Root investigated, as asked for a function word, and keyed by its own consonants מנ (the database keys the Aramaic xm.ak.aa so); no root is viable. (1) The preposition is West Semitic: Hebrew, Aramaic, Syriac, Phoenician, Ugaritic, Arabic, Sabaean (one dialect), Ge'ez, Tigre; Akkadian has none (ina, ištu instead) and Ugaritic and standard Sabaean use it little (b-, l-; bn). Everywhere it has two consonants and an i-vowel; no language shows a third radical or a verb with its sense. (2) Leads weighed: (a) מָנָה \"portion\" (root מנה, count, assign; Ugaritic mnt \"portion\", Segert p. 192), for \"some of\": the partitive is one sense among several and the separative \"from\" is the commonest and the one shared in every language; the vowel and the missing third radical are against it. (b) A verb מנן \"cut off, separate\": no such verb in scripture; Arabic مَنَّ \"cut off\" rests on Wiktionary (Lane's article lacks it), Ugaritic m-n-n is \"be weakened\" (recorded as ar-manna-cut, possible). (c) The indefinite *man / *mīn \"who, what\" (Aramaic מַן Dan 3:6, Ugaritic mnm \"whatever\"), for a partitive \"something of\": not followed by any source. So no root is shown; the entry says so. BDB keys: m.cl.aa named (1,405 uses, the free-standing and suffixed forms only; the prefixed מִ־/מֵ־, thousands more, are counted under the joined noun). m.co.ab (BDB's hypothetical noun מֵן \"portion\" under מנן) has exactly the same tokens and is left unnamed so they are not counted twice; m.co.aa (the root מנן, no tokens), m.ck.ax and m.cn.ah (cross-references, no tokens) left unclaimed. xm.ak.aa (Aramaic) shares the Hebrew surface מִן, so its count (863) includes Hebrew; scripture's Aramaic uses are about a hundred. m.cn.ag (40 tokens of the spelling מִנִּי, BDB's land Minni, Jer 51:27) left unclaimed as a place (minchah.json leaves it too); the poetic מִנִּי is counted under m.cl.aa. Left out, as other words of the same consonants: מָן \"manna\" and מָן \"what?\" (m.ck.au, m.ck.av; Exo 16:15, 31); Aramaic מַן \"who?\" (m.aj.aa, Dan 3:6; Ezr 5:3), which the database files under מנ but which answers to Hebrew מִי; the place Minnith (m.co.ac). These need their own entries (a homograph number if keyed מנ). Lane's article من (p. 3024) is in the incomplete part of the lexicon; Lane's url not given. Ge'ez rests on Wiktionary only; Dillmann/Leslau, Payne Smith for ܡܢ, CAL and DULAT not checked. Doctrine: \"sufferings-of-christ\" contrasts מִן with תַּחַת; reviewer to check the framing. The separate noun מֵן for musical strings is now included under this spelling. Psalm 150:4 establishes the musical sense. Its historical relationship to the preposition is uncertain."
+                },
+                {
+                  "op": "replace",
+                  "path": "/updated",
+                  "value": "2026-11-20"
+                },
+                {
+                  "op": "replace",
+                  "path": "/words/0/senses/1/evidence/3/note",
+                  "value": "Adam ate מִן הָעֵץ, ‘from the tree’. In the quoted command לֹא תֹאכַל מִמֶּנּוּ, ‘you shall not eat from it’, the suffix refers back to the tree that supplied the food."
+                },
+                {
+                  "op": "replace",
+                  "path": "/words/0/senses/1/evidence/3/ref",
+                  "value": "Gen.3.17"
+                },
+                {
+                  "op": "add",
+                  "path": "/words/0/senses/1/evidence/3/role",
+                  "value": "defining"
+                },
+                {
+                  "op": "replace",
+                  "path": "/words/0/senses/1/evidence/4/note",
+                  "value": "\"bone מֵעֲצָמַי, of my bones, and flesh מִבְּשָׂרִי, of my flesh … for מֵאִישׁ, from man, she was taken\"."
+                },
+                {
+                  "op": "replace",
+                  "path": "/words/0/senses/1/evidence/4/ref",
+                  "value": "Gen.2.23"
+                },
+                {
+                  "op": "replace",
+                  "path": "/words/0/senses/1/evidence/5/note",
+                  "value": "\"I am raining bread for you מִן־הַשָּׁמַיִם, from the heavens\"; Jhn 6:32 takes it up as \"the bread out of (ἐκ) heaven\"."
+                },
+                {
+                  "op": "replace",
+                  "path": "/words/0/senses/1/evidence/5/ref",
+                  "value": "Exo.16.4"
+                },
+                {
+                  "op": "replace",
+                  "path": "/words/0/senses/1/evidence/6/note",
+                  "value": "\"מִמּוֹשְׁבֹתֵיכֶם, from your dwellings, you shall bring two loaves of waving\": what the people bring comes from their own homes."
+                },
+                {
+                  "op": "replace",
+                  "path": "/words/0/senses/1/evidence/6/ref",
+                  "value": "Lev.23.17"
+                },
+                {
+                  "op": "replace",
+                  "path": "/words/0/senses/1/evidence/7/note",
+                  "value": "\"מֵיַהְוֶה, from Yahweh, the thing has gone out\": the one it comes from."
+                },
+                {
+                  "op": "replace",
+                  "path": "/words/0/senses/1/evidence/7/ref",
+                  "value": "Gen.24.50"
+                },
+                {
+                  "op": "add",
+                  "path": "/words/0/senses/1/evidence/-",
+                  "value": {
+                    "note": "\"All came to be מִן־הֶעָפָר, from the dust, and all return to the dust.\"",
+                    "ref": "Ecc.3.20"
+                  }
+                }
+              ]
+            }
           }
         },
         "evidence": "וַתֹּאכַל מִן הָעֵץ says that Adam ate from the tree. The quoted command לֹא תֹאכַל מִמֶּנּוּ repeats the same verb and preposition. The suffix resumes הָעֵץ, the masculine singular noun for the tree that supplied the food. This antecedent resolves the suffix as ‘it’ despite the identical form for ‘from us’.",
@@ -384,7 +550,69 @@
             "base": null,
             "change": "Broaden the proposed Qal definition to include a curse pronounced on a thing, and cite the feminine participle applied to the ground.",
             "definition": "To pronounce a curse on someone or something. The passive participle describes whoever or whatever is under the curse.",
-            "evidence": "In Gen.3.17 Yahweh addresses Adam, but the subject of אֲרוּרָה is הָאֲדָמָה, the ground. In Gen.3.14 the corresponding masculine form אָרוּר describes the serpent."
+            "evidence": "In Gen.3.17 Yahweh addresses Adam, but the subject of אֲרוּרָה is הָאֲדָמָה, the ground. In Gen.3.14 the corresponding masculine form אָרוּר describes the serpent.",
+            "reconciliation": {
+              "article": {
+                "cognates": [],
+                "created": "2026-11-20",
+                "doctrine": [],
+                "gloss": "pronounce a curse",
+                "id": "arar",
+                "note": "",
+                "root": "ארר",
+                "status": "draft",
+                "summary": "אָרַר means to pronounce a curse on someone or something. In Genesis 3 Yahweh uses the passive participle when he declares first the serpent and then the ground cursed.",
+                "tags": [
+                  "speech",
+                  "curse"
+                ],
+                "updated": "2026-11-20",
+                "words": [
+                  {
+                    "gloss": "curse",
+                    "greek": [],
+                    "lemma": "אָרַר",
+                    "pos": "verb",
+                    "stems": [
+                      {
+                        "gloss": "pronounce a curse",
+                        "senses": [
+                          {
+                            "definition": "To pronounce a curse on someone or something. The passive participle describes whoever or whatever is under the curse.",
+                            "evidence": [
+                              {
+                                "note": "Yahweh addresses the serpent directly with אָרוּר אַתָּה, “cursed are you.”",
+                                "ref": "Gen.3.14",
+                                "role": "defining"
+                              },
+                              {
+                                "note": "In אֲרוּרָה הָאֲדָמָה, “cursed is the ground,” the feminine participle agrees with the ground. Adam will eat from it in toil all his life.",
+                                "ref": "Gen.3.17",
+                                "role": "defining"
+                              }
+                            ],
+                            "gloss": "curse"
+                          }
+                        ],
+                        "stem": "qal"
+                      }
+                    ],
+                    "usage": {
+                      "opposites": [],
+                      "parallels": [],
+                      "phrases": []
+                    }
+                  }
+                ]
+              },
+              "base": null,
+              "conflicts": [
+                "/gloss",
+                "/summary",
+                "/tags",
+                "/words[]/stems[]/senses"
+              ]
+            }
           }
         },
         "evidence": "In אֲרוּרָה הָאֲדָמָה, “cursed is the ground,” the feminine singular participle agrees with הָאֲדָמָה. Yahweh declares the ground cursed on Adam’s account and tells him that he will eat from it in toil all his life.",

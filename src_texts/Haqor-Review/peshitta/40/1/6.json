@@ -172,7 +172,45 @@
             "base": null,
             "change": "Add a personal-name article for Uriah linked to the light root אור.",
             "definition": "The personal name Uriah, here borne by the Hittite whose wife was Bathsheba.",
-            "evidence": "Matthew 1:6 calls Solomon’s mother the wife of Uriah. Second Samuel 11:3 identifies the couple by name."
+            "evidence": "Matthew 1:6 calls Solomon’s mother the wife of Uriah. Second Samuel 11:3 identifies the couple by name.",
+            "reconciliation": {
+              "article": {
+                "additional_roots": [
+                  "יהוה"
+                ],
+                "created": "2026-11-20",
+                "english": "Uriah",
+                "entry": "or",
+                "evidence": [
+                  {
+                    "note": "David fathers Solomon by the woman identified as the wife of אֻורִיָא.",
+                    "ref": "Mat.1.6",
+                    "role": "defining"
+                  },
+                  {
+                    "note": "Bathsheba is identified as the wife of אוּרִיָּה the Hittite.",
+                    "ref": "2Sa.11.3",
+                    "role": "defining"
+                  },
+                  {
+                    "note": "The words “Yahweh is my light” pair the divine name with אוֹרִי, “my light”, illustrating the proposed meaning of the name.",
+                    "ref": "Psa.27.1"
+                  }
+                ],
+                "gloss": "Yahweh is my light",
+                "id": "uriah",
+                "name": "אֻורִיָא",
+                "people": [],
+                "root": "אור",
+                "status": "draft",
+                "summary": "Matthew names Uriah the Hittite when he identifies Solomon’s mother as Uriah’s wife. The Syriac name represents Hebrew אוּרִיָּה, traditionally understood as “Yahweh is my light”.",
+                "updated": "2026-11-20"
+              },
+              "base": null,
+              "conflicts": [
+                "resolve the bearer and validate its name article against the current lexicon"
+              ]
+            }
           }
         },
         "evidence": "In מֵנ אַנ_תּתֵֿה דֻּאורִיָא, “by the wife of Uriah”, the suffix on “wife” anticipates the husband named after דּ־. Matthew identifies Solomon’s mother through Uriah. Second Samuel 11:3 names her as Bathsheba, wife of Uriah the Hittite.",

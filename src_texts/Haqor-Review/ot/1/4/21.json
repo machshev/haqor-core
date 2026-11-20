@@ -65,7 +65,49 @@
             "base": "5ff57a119255ca3775ba1c5592f6cd00e22ec622fafccd6afc08384d01b566fe",
             "change": "Add Genesis 4:21 as an example of the existing identifying-name sense of שֵׁם.",
             "definition": "The name by which a person is known.",
-            "evidence": "Genesis 4:21 identifies the brother by giving his name, Jubal."
+            "evidence": "Genesis 4:21 identifies the brother by giving his name, Jubal.",
+            "reconciliation": {
+              "base": "5ff57a119255ca3775ba1c5592f6cd00e22ec622fafccd6afc08384d01b566fe",
+              "base_commit": "69cd79e1",
+              "base_path": "data/lexicon/shem.json",
+              "conflicts": [
+                "/words[]/senses"
+              ],
+              "patch": [
+                {
+                  "op": "replace",
+                  "path": "/updated",
+                  "value": "2026-11-20"
+                },
+                {
+                  "op": "add",
+                  "path": "/words/0/senses/0/evidence/1/note",
+                  "value": "The clause gives Jubal as the brother’s name."
+                },
+                {
+                  "op": "replace",
+                  "path": "/words/0/senses/0/evidence/1/ref",
+                  "value": "Gen.4.21"
+                },
+                {
+                  "op": "add",
+                  "path": "/words/0/senses/0/evidence/1/role",
+                  "value": "example"
+                },
+                {
+                  "op": "remove",
+                  "path": "/words/0/senses/0/evidence/1/to"
+                },
+                {
+                  "op": "add",
+                  "path": "/words/0/senses/0/evidence/-",
+                  "value": {
+                    "ref": "Exo.3.13",
+                    "to": "Exo.3.15"
+                  }
+                }
+              ]
+            }
           }
         },
         "evidence": "שֵׁם אָחִיו means “his brother’s name.” The following יוּבָל supplies that name, so the clause reads “and his brother’s name was Jubal.”",
