@@ -115,6 +115,33 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article_id": "l",
+            "base": "57d1fce5d52048603a435de155b3fa3f384867f1bd297bca5fb5ef3e46e43aff",
+            "change": "Add Genesis 12:1 as an example of the existing Hebrew sense le-dative.",
+            "definition": "With a suffix referring back to the subject, לְ can mark the subject’s personal involvement in the action.",
+            "evidence": "In Genesis 12:1 the subject of לֶךְ and the suffix of לְךָ both refer to Abram. The command tells him to leave his country, his kindred and his father’s house."
+          },
+          "sense": "le-dative",
+          "word": 0
+        },
+        "evidence": "In לֶךְ לְךָ, Yahweh tells Abram to go. The suffix on לְךָ refers to Abram himself, giving the phrase the force of “go your way.” The destination is expressed separately by אֶל הָאָרֶץ, “to the land.”",
+        "gloss": "for yourself",
+        "language": "he",
+        "lemma": "לְ",
+        "morph": "HR/Sp2ms",
+        "morphology": "Hebrew preposition לְ with the second-person masculine singular pronominal suffix ךָ, referring to Abram.",
+        "qualifier": "",
+        "root": "ל",
+        "segments": "לְ/ךָ",
+        "sense": "Dative of personal interest. The suffix refers back to the person commanded to go."
+      },
+      "position": 5,
+      "surface": "לְךָ"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "2r9",
           "sense": "land-country-territory",
           "word": 0
