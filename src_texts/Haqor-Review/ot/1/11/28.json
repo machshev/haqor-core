@@ -1,6 +1,74 @@
 {
   "book": 1,
   "chapter": 11,
+  "review": {
+    "entities": [
+      {
+        "evidence": "The Haran who died is identified here as Terah’s son, one of the sons named in Genesis 11:26.",
+        "key": "Haran@Gen.11.26",
+        "position": 1
+      },
+      {
+        "evidence": "“His father” identifies Terah as the father of Haran.",
+        "key": "Terah@Gen.11.24",
+        "position": 4
+      },
+      {
+        "evidence": "“In Ur of the Chaldeans” specifies where Haran died, in the land of his birth.",
+        "key": "Ur@Gen.11.28",
+        "position": 8
+      },
+      {
+        "evidence": "כַּשְׂדִּים names the Chaldean people in the place name “Ur of the Chaldeans.” The source links this geographical qualifier to Chaldea.",
+        "key": "Chaldea@Gen.11.28",
+        "position": 9
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "and he died",
+        "position": 0
+      },
+      {
+        "gloss": "Haran",
+        "position": 1
+      },
+      {
+        "gloss": "in",
+        "position": 2
+      },
+      {
+        "gloss": "the presence of",
+        "position": 3
+      },
+      {
+        "gloss": "Terah",
+        "position": 4
+      },
+      {
+        "gloss": "his father",
+        "position": 5
+      },
+      {
+        "gloss": "in the land of",
+        "position": 6
+      },
+      {
+        "gloss": "his birth",
+        "position": 7
+      },
+      {
+        "gloss": "in Ur of",
+        "position": 8
+      },
+      {
+        "gloss": "the Chaldeans",
+        "position": 9
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[And|0] [Haran|1] [died|0] [in|2] [the presence of|3] [Terah|4] [his father|5], [in the land of|6] [his birth|7], [in Ur of|8] [the Chaldeans|9]."
+  },
   "source": "ot",
   "verse": 28,
   "words": [
@@ -29,27 +97,6 @@
       "analysis": {
         "entry": {
           "draft": {
-            "article": {
-              "created": "2026-11-21",
-              "english": "Haran",
-              "entry": "",
-              "evidence": [
-                {
-                  "note": "וְאֶת הָרָן closes the list of sons whom Terah fathered.",
-                  "ref": "Gen.11.26",
-                  "role": "defining"
-                }
-              ],
-              "gloss": "Haran (meaning uncertain)",
-              "id": "haaraan",
-              "name": "הָרָן",
-              "note": "",
-              "people": [],
-              "root": "",
-              "status": "draft",
-              "summary": "Genesis 11:26 names Haran among Terah’s sons, alongside Abram and Nahor. The origin of the name is uncertain.",
-              "updated": "2026-11-21"
-            },
             "article_id": "haaraan",
             "base": null,
             "change": "Add a personal-name article for הָרָן with the root unassigned.",
