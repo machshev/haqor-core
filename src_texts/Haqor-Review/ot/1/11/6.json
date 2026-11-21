@@ -284,6 +284,33 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article_id": "mn",
+            "base": "118a72af108b297ec6cfcec953b3957b64076f9e4629816126d4a527e93126d1",
+            "change": "Add Genesis 11:6 as an example of the existing Hebrew sense min-from.",
+            "definition": "מִן marks the person or people from whom something is kept.",
+            "evidence": "Genesis 11:6 uses מֵהֶם with יִבָּצֵר, ‘be withheld’. Genesis 22:12 likewise uses suffixed מִן for the person from whom something is withheld."
+          },
+          "sense": "min-from",
+          "word": 0
+        },
+        "evidence": "In לֹא יִבָּצֵר מֵהֶם, the suffix refers to the builders, already called עַם אֶחָד. The subject follows the verb in כֹּל אֲשֶׁר יָזְמוּ לַעֲשׂוֹת. Nothing they plan to do will be withheld from them or lie beyond their reach.",
+        "gloss": "from them",
+        "language": "he",
+        "lemma": "מִן",
+        "morph": "HR/Sp3mp",
+        "morphology": "The Hebrew preposition מִן takes the form מֵ־ before the third-person masculine plural pronominal suffix הֶם.",
+        "qualifier": "",
+        "root": "מנ",
+        "segments": "מֵ/הֶם",
+        "sense": "from the people from whom something is withheld"
+      },
+      "position": 14,
+      "surface": "מֵהֶם"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "kll",
           "sense": "everything-all-things",
           "word": 0

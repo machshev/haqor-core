@@ -66,7 +66,7 @@
         },
         {
           "locator": "p. 258, LMN (L- + MN) and LMN … WʿD",
-          "note": "Poen. 1013 limin co, \"Go away from here!\"; KAI 81 lmʿdrnm wʿd ṣʿrnm, \"from the great ones of them to the minor ones\".",
+          "note": "Poen. 1013 limin co, \"Go away from here!\"; KAI 81 lmʿdrnm wʿd ṣʿrnm \"from the great ones of them to the minor ones\".",
           "source": "krahmalkov-2000"
         }
       ],
@@ -74,7 +74,7 @@
       "gloss": "from; of (the material a thing is made of); (with l-, lmn) from; lmn … wʿd from … to",
       "id": "phn-mn",
       "lang": "phn",
-      "note": "Phoenician also assimilates it as m-, as Hebrew does, and prefers the compound lmn, Hebrew's לְמִן; lmn … wʿd \"from the great ones to the small\" is Hebrew's מִן … וְעַד (1Sa 30:19).",
+      "note": "Phoenician also assimilates it as m-, as Hebrew does, and prefers the compound lmn, Hebrew's לְמִן; lmn … wʿd \"from the great ones of them to the minor ones\" (1Sa 30:19).",
       "relation": "cognate",
       "translit": "mn"
     },
@@ -87,7 +87,7 @@
         },
         {
           "locator": "pp. 191–192, glossary, m- /mi(n)/, mn",
-          "note": "m-: mab \"from\" 2.16:11, mrḥqm 2.64:15 (cf. Hebrew, Aramaic min); \"mn prep. 'from,' see m-\".",
+          "note": "m-: mab \"from\" 2.16:11, mrḥqm \"from afar\" 2.64:15; mn prep. \"from,\" see m-.",
           "source": "segert-1984"
         }
       ],
@@ -111,7 +111,7 @@
       "gloss": "from (Sabaean, Haramī dialect)",
       "id": "sab-mn",
       "lang": "sem",
-      "note": "Old South Arabian. Standard Sabaean says \"from\" with bn, which Biella holds is probably not the same word; mn belongs to one dialect, where it is used of driving someone out of the temple and of \"those from it\", a district's people.",
+      "note": "Old South Arabian. Standard Sabaean says bn, which Biella holds is probably not the same word; mn belongs to one dialect, where it is used of driving someone out of the temple and of \"those from it\", a district's people.",
       "relation": "cognate",
       "translit": "mn"
     },
@@ -223,7 +223,7 @@
     "comparison",
     "time"
   ],
-  "updated": "2026-11-20",
+  "updated": "2026-11-21",
   "words": [
     {
       "bdb": [
@@ -361,6 +361,11 @@
             {
               "note": "\"I am saved מִן־אֹיְבַי, from my enemies.\"",
               "ref": "Psa.18.4"
+            },
+            {
+              "note": "In לֹא יִבָּצֵר מֵהֶם, ‘nothing will be withheld from them’, the suffix identifies the builders. What they plan to do lies within their reach.",
+              "ref": "Gen.11.6",
+              "role": "example"
             }
           ],
           "gloss": "from, away from (place, separation)",
@@ -423,8 +428,8 @@
               "ref": "Ecc.3.20"
             },
             {
-              "ref": "Gen.3.11",
-              "note": "The source phrase asks whether the man ate from the tree."
+              "note": "The source phrase asks whether the man ate from the tree.",
+              "ref": "Gen.3.11"
             }
           ],
           "gloss": "out of, made from; from (a source or giver)",
@@ -485,8 +490,8 @@
               "ref": "Rut.2.16"
             },
             {
-              "ref": "Gen.6.20",
-              "note": "The animals come in pairs, some of every kind."
+              "note": "The animals come in pairs, some of every kind.",
+              "ref": "Gen.6.20"
             }
           ],
           "gloss": "some of, (one) of, any of",
@@ -522,7 +527,6 @@
           "id": "min-since",
           "senses": [
             {
-              "id": "after-at-the-end",
               "definition": "Counted from the end of a span: \"after two days\", \"at the end of forty days\", and מִמָּחֳרַת \"on the morrow\", the day after.",
               "evidence": [
                 {
@@ -549,7 +553,8 @@
                   "ref": "Deu.15.1"
                 }
               ],
-              "gloss": "after, at the end of; on (the next day)"
+              "gloss": "after, at the end of; on (the next day)",
+              "id": "after-at-the-end"
             }
           ]
         },
@@ -610,7 +615,7 @@
               "ref": "Gen.29.30"
             },
             {
-              "note": "\"Israel loved Joseph מִכָּל־בָּנָיו, more than all his sons.\"",
+              "note": "\"Israel loved Joseph מִכֹּל־בָּנָיו, more than all his sons.\"",
               "ref": "Gen.37.3"
             },
             {
@@ -625,7 +630,6 @@
           "id": "min-than",
           "senses": [
             {
-              "id": "too-for",
               "definition": "The same comparison with a person: a thing greater than someone's strength is \"too heavy for\" him.",
               "evidence": [
                 {
@@ -643,7 +647,8 @@
                   "ref": "Gen.4.13"
                 }
               ],
-              "gloss": "too … for"
+              "gloss": "too … for",
+              "id": "too-for"
             }
           ]
         },
@@ -973,7 +978,6 @@
       "pos": "preposition",
       "senses": [
         {
-          "id": "from-out-of-place",
           "definition": "Where something comes up or goes out from.",
           "evidence": [
             {
@@ -1004,9 +1008,9 @@
             }
           ],
           "gloss": "from, out of (place, source)",
+          "id": "from-out-of-place",
           "senses": [
             {
-              "id": "from-before",
               "definition": "From the presence of a king or of God: a decree issued by him, or the fear felt before him.",
               "evidence": [
                 {
@@ -1023,12 +1027,12 @@
                   "ref": "Dan.5.19"
                 }
               ],
-              "gloss": "from before (מִן־קֳדָם)"
+              "gloss": "from before (מִן־קֳדָם)",
+              "id": "from-before"
             }
           ]
         },
         {
-          "id": "some-of-any-of",
           "definition": "A part out of a whole.",
           "evidence": [
             {
@@ -1042,10 +1046,10 @@
               "role": "defining"
             }
           ],
-          "gloss": "some of, any of; part (of)"
+          "gloss": "some of, any of; part (of)",
+          "id": "some-of-any-of"
         },
         {
-          "id": "from-since-a-time",
           "definition": "The time from which something has been so.",
           "evidence": [
             {
@@ -1062,10 +1066,10 @@
               "ref": "Dan.2.20"
             }
           ],
-          "gloss": "from, since (a time)"
+          "gloss": "from, since (a time)",
+          "id": "from-since-a-time"
         },
         {
-          "id": "because-of",
           "definition": "The cause something springs from.",
           "evidence": [
             {
@@ -1074,10 +1078,10 @@
               "role": "defining"
             }
           ],
-          "gloss": "because of"
+          "gloss": "because of",
+          "id": "because-of"
         },
         {
-          "id": "than-different-from-comparison",
           "definition": "The thing compared, as in Hebrew.",
           "evidence": [
             {
@@ -1090,10 +1094,10 @@
               "ref": "Dan.7.23"
             }
           ],
-          "gloss": "than, different from (comparison)"
+          "gloss": "than, different from (comparison)",
+          "id": "than-different-from-comparison"
         },
         {
-          "id": "adverbs-truly-certainly",
           "definition": "With a noun or adjective of truth or firmness, an adverb: \"out of truth\", \"out of certainty\".",
           "evidence": [
             {
@@ -1107,7 +1111,8 @@
               "role": "defining"
             }
           ],
-          "gloss": "(adverbs) truly, certainly"
+          "gloss": "(adverbs) truly, certainly",
+          "id": "adverbs-truly-certainly"
         }
       ],
       "summary": "Scripture's Aramaic (Daniel, Ezra) has the same preposition with the same range, written in full before the noun (מִן־יַמָּא) and only now and then joined to it (מִטּוּרָא, Dan 2:45); with suffixes מִנִּי \"from me\", מִנְּהֵן \"of them\". Its own phrases are מִן־קֳדָם \"from before\" a king or God, of a decree or of fear, and the adverbs מִן־קְשֹׁט \"of a truth\" and מִן־יַצִּיב \"for certain\". The database files the Hebrew spelling מִן under the same key, so its count of uses takes in the Hebrew too."
@@ -1122,7 +1127,6 @@
       "pos": "noun",
       "senses": [
         {
-          "id": "manna",
           "definition": "Yahweh rained down manna for Israel to eat, food from heaven.",
           "evidence": [
             {
@@ -1130,7 +1134,8 @@
               "role": "defining"
             }
           ],
-          "gloss": "manna"
+          "gloss": "manna",
+          "id": "manna"
         }
       ]
     },
@@ -1144,7 +1149,6 @@
       "pos": "noun",
       "senses": [
         {
-          "id": "string-or-cord",
           "definition": "The final psalm calls for praise with strings and a pipe alongside other instruments. In the wedding song strings may bring joy from the ivory palaces. מִנִּי also has the spelling of a poetic form of “from”, so that reading is less certain.",
           "evidence": [
             {
@@ -1156,7 +1160,8 @@
               "ref": "Psa.45.9"
             }
           ],
-          "gloss": "string or cord"
+          "gloss": "string or cord",
+          "id": "string-or-cord"
         }
       ]
     }
