@@ -194,6 +194,53 @@
       },
       "position": 8,
       "surface": "נָחוֹר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article": {
+              "created": "2026-11-21",
+              "english": "Haran",
+              "entry": "",
+              "evidence": [
+                {
+                  "note": "וְאֶת הָרָן closes the list of sons whom Terah fathered.",
+                  "ref": "Gen.11.26",
+                  "role": "defining"
+                }
+              ],
+              "gloss": "Haran (meaning uncertain)",
+              "id": "haaraan",
+              "name": "הָרָן",
+              "note": "",
+              "people": [],
+              "root": "",
+              "status": "draft",
+              "summary": "Genesis 11:26 names Haran among Terah’s sons, alongside Abram and Nahor. The origin of the name is uncertain.",
+              "updated": "2026-11-21"
+            },
+            "article_id": "haaraan",
+            "base": null,
+            "change": "Add a personal-name article for הָרָן with the root unassigned.",
+            "definition": "Haran, a son of Terah.",
+            "evidence": "Genesis 11:26 names Haran as the third son listed after “he fathered.” The verse gives no etymology for his name."
+          },
+          "word": 0
+        },
+        "evidence": "Terah is the subject of וַיּוֹלֶד, “he fathered.” Each son’s name has its own object marker in אֶת אַבְרָם אֶת נָחוֹר וְאֶת הָרָן, identifying Haran as a son alongside Abram and Nahor.",
+        "gloss": "Haran",
+        "language": "he",
+        "lemma": "הָרָן",
+        "morph": "HNp",
+        "morphology": "Hebrew personal name in a single segment. The preceding וְאֶת is a separate word that marks the name as the final coordinated direct object of וַיּוֹלֶד.",
+        "qualifier": "",
+        "root": "",
+        "segments": "הָרָן",
+        "sense": "Haran, son of Terah"
+      },
+      "position": 10,
+      "surface": "הָרָן"
     }
   ]
 }
