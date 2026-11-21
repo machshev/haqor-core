@@ -69,11 +69,17 @@
     {
       "analysis": {
         "entry": {
-          "existing": "2lh",
+          "draft": {
+            "article_id": "2lh",
+            "base": "b006df418442167723d6b3a02392eda47698e6b24723d28083ca095b9eb5f336",
+            "change": "Add Genesis 15:7 as an example of the existing sense to-a-person-speaking for אֶל.",
+            "definition": "With a verb of speaking, אֶל marks the person addressed.",
+            "evidence": "In Genesis 15:7, וַיֹּאמֶר אֵלָיו introduces Yahweh’s words to Abram. The third-person suffix names the addressee from the narrator’s perspective, and Yahweh addresses him in the second person in הוֹצֵאתִיךָ."
+          },
           "sense": "to-a-person-speaking",
           "word": 0
         },
-        "evidence": "In וַיִּקְרָא יַהְוֶה אֱלֹהִים אֶל הָאָדָם, אֶל introduces the man as the person God calls to. The following וַיֹּאמֶר לוֹ, “and he said to him,” confirms the addressee.",
+        "evidence": "In וַיִּקְרָא יַהְוֶה אֱלֹהִים אֶל הָאָדָם, אֶל marks the man as the person God calls to. The following וַיֹּאמֶר לוֹ, “and he said to him,” confirms the addressee.",
         "gloss": "to",
         "language": "he",
         "lemma": "אֶל",
@@ -82,7 +88,7 @@
         "qualifier": "",
         "root": "אלה",
         "segments": "אֶל",
-        "sense": "Marks the person or people addressed."
+        "sense": "Marks the person addressed."
       },
       "position": 3,
       "surface": "אֶל"
