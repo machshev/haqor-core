@@ -1,6 +1,52 @@
 {
   "book": 1,
   "chapter": 11,
+  "review": {
+    "entities": [
+      {
+        "evidence": "Shelah fathered Eber here, as in Genesis 10:24.",
+        "key": "Shelah@Gen.10.24",
+        "position": 0
+      },
+      {
+        "evidence": "Eber is named here as Shelah’s son, the same relationship recorded in Genesis 10:24.",
+        "key": "Eber@Gen.10.21",
+        "position": 6
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "and Shelah",
+        "position": 0
+      },
+      {
+        "gloss": "lived",
+        "position": 1
+      },
+      {
+        "gloss": "thirty",
+        "position": 2
+      },
+      {
+        "gloss": "years",
+        "position": 3
+      },
+      {
+        "gloss": "then he fathered",
+        "position": 4
+      },
+      {
+        "gloss": "(untranslated)",
+        "position": 5
+      },
+      {
+        "gloss": "Eber",
+        "position": 6
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[And Shelah|0] [lived|1] [thirty|2] [years|3], [then he fathered|4] [Eber|6,5]."
+  },
   "source": "ot",
   "verse": 14,
   "words": [
