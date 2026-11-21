@@ -135,6 +135,33 @@
       },
       "position": 5,
       "surface": "אֲשֶׁר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "l2",
+            "base": "264f99b3d7aef8fa0ed9c1016a012394f37bf73c1fdbdd840871abddbadac889",
+            "change": "Add Gen.9.15 as an example of the existing Hebrew sense “not” in word 0 of l2.",
+            "definition": "לֹא negates a statement, here a statement about the future.",
+            "evidence": "Gen.9.15 uses לֹא before יִהְיֶה in the promise that the waters will never again become a flood to destroy all flesh. Gen.9.11 uses the same construction in the same promise."
+          },
+          "sense": "not",
+          "word": 0
+        },
+        "evidence": "לֹא negates יִשְׁמְעוּ in the clause expressing the purpose of confusing their language: “so that they will not understand one another’s speech.”",
+        "gloss": "not",
+        "language": "he",
+        "lemma": "לֹא",
+        "morph": "HTn",
+        "morphology": "Hebrew negative particle with no prefix or suffix.",
+        "qualifier": "",
+        "root": "לא",
+        "segments": "לֹא",
+        "sense": "Denies that a future event will occur."
+      },
+      "position": 6,
+      "surface": "לֹא"
     }
   ]
 }
