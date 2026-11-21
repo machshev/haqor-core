@@ -221,6 +221,33 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article_id": "zh",
+            "base": "918961a5bd22a22974f175020b77d94ac9f785aa39ba4442c065be994c5f07b3",
+            "change": "Add Gen.15.7 as a feminine singular example of the existing this-with-noun sense of זֶה.",
+            "definition": "The demonstrative follows a definite noun and points out its referent. Here its feminine singular form gives “this land.”",
+            "evidence": "Gen.15.7 uses the article on both words in הָאָרֶץ הַזֹּאת. The noun names the gift and the demonstrative identifies which land Yahweh means."
+          },
+          "sense": "this-with-noun",
+          "word": 0
+        },
+        "evidence": "In לָתֶת לְךָ אֶת הָאָרֶץ הַזֹּאת, “to give you this land,” הַזֹּאת modifies הָאָרֶץ. The feminine singular suffix in לְרִשְׁתָּהּ, “to possess it,” refers back to the same land.",
+        "gloss": "this",
+        "language": "he",
+        "lemma": "זֶה",
+        "morph": "HTd/Pdxfs",
+        "morphology": "The definite article הַ precedes זֹאת, the feminine singular demonstrative of זֶה. The dagesh in ז marks doubling after the article. The demonstrative follows הָאָרֶץ and agrees with it in gender, number and definiteness.",
+        "qualifier": "",
+        "root": "זה",
+        "segments": "הַ/זֹּאת",
+        "sense": "Points out the particular land Yahweh is giving Abram."
+      },
+      "position": 12,
+      "surface": "הַזֹּאת"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "yrx",
           "sense": "inherit-the-land",
           "word": 0

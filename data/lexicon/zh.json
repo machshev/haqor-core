@@ -161,7 +161,7 @@
       "gloss": "this (masculine singular)",
       "id": "sab-dhn",
       "lang": "sem",
-      "note": "Sabaic: the pointing ḏ- with -n, as Aramaic דְּנָה and Byblian zn: ḏn ṣlmn \"this statue\".",
+      "note": "Sabaic: the pointing ḏ- with -n, as Aramaic דְּנָה and Byblian zn also add: ḏn ṣlmn \"this statue\".",
       "relation": "cognate",
       "sounds": {
         "ז": "ḏ"
@@ -196,7 +196,7 @@
       "gloss": "who, which (relative pronoun); of (mark of the genitive)",
       "id": "gez-za",
       "lang": "gez",
-      "note": "Relative and genitive in one, as Aramaic דִּי: ኢየሱስ ዘተብህለ ክርስቶስ, \"Jesus who is called Christ\" (Mat 1:16).",
+      "note": "Relative and genitive in one, as Aramaic דִּי: ኢየሱስ ዘተብህለ ክርስቶስ, \"Jesus who is called Messiah\" (Mat 1:16).",
       "relation": "cognate",
       "translit": "za"
     },
@@ -434,6 +434,11 @@
               "note": "In בַּדּוֹר הַזֶּה, “in this generation,” the demonstrative follows דּוֹר and points to Noah's own generation.",
               "ref": "Gen.7.1",
               "role": "example"
+            },
+            {
+              "note": "In הָאָרֶץ הַזֹּאת, “this land,” the feminine singular demonstrative follows הָאָרֶץ and points out the land Yahweh is giving Abram.",
+              "ref": "Gen.15.7",
+              "role": "example"
             }
           ],
           "gloss": "this (with a noun)",
@@ -603,7 +608,7 @@
               "ref": "Gen.31.41"
             },
             {
-              "note": "וַיַּעְקְבֵנִי זֶה פַעֲמַיִם: \"he has supplanted me these two times\".",
+              "note": "וַיַּעְקֵבֵנִי זֶה פַעֲמַיִם: \"he has supplanted me these two times\".",
               "ref": "Gen.27.36"
             },
             {
@@ -1110,7 +1115,7 @@
               "ref": "Psa.142.4"
             },
             {
-              "note": "הוֹדִיעֵנִי דֶּרֶךְ־זוּ אֵלֵךְ: \"make me know the way in which I should walk\".",
+              "note": "הוֹדִיעֵנִי דֶרֶךְ־זוּ אֵלֵךְ: \"make me know the way in which I should walk\".",
               "ref": "Psa.143.8"
             },
             {
@@ -1138,7 +1143,7 @@
     },
     {
       "bdb": [
-        "e.bk.aa"
+        "e.bl.ab"
       ],
       "cognate_ids": [
         "ar-dha",
@@ -1147,13 +1152,12 @@
       "gloss": "this one, that one (there)",
       "lemma": "הַלָּז",
       "pos": "pronoun",
-      "root": "הלז",
       "senses": [
         {
           "definition": "Points out a person or thing in sight, often at some distance: \"that rock\", \"that Shunammite\", \"that monument\".",
           "evidence": [
             {
-              "note": "הִנֵּה הַשׁוּנַּמִּית הַלָּז: \"look, there is that Shunammite\", seen from far off (מִנֶּגֶד).",
+              "note": "הִנֵּה הַשּׁוּנַמִּית הַלָּז: \"look, there is that Shunammite\", seen from far off (מִנֶּגֶד).",
               "ref": "2Ki.4.25",
               "role": "defining"
             },
@@ -1187,7 +1191,7 @@
           "id": "this-that-one-in"
         }
       ],
-      "summary": "The article and a pointing לָ before ז: the one over there, or the one in view. The same build as Arabic اَلَّذِى (al-la-ḏī), which in Arabic has become the relative \"who\". It and its longer forms הַלָּזֶה and הַלֵּזוּ are kept as words of their own, as the text spells them.",
+      "summary": "The article and a pointing לָ before ז: the one over there, or the one in view. The same build as Arabic اَلَّذِى (al-la-ḏī), though in Arabic it has become the relative \"who\". It and its longer forms הַלָּזֶה and הַלֵּזוּ are kept as words of their own, as the text spells them.",
       "usage": {
         "parallels": [
           {
@@ -1223,7 +1227,7 @@
               "role": "defining"
             },
             {
-              "note": "הִנֵּה בַּעַל הַחֲלֹמוֹת הַלָּזֶה בָּא: \"look, this master of dreams is coming\".",
+              "note": "הִנֵּה בַּעַל הַחֲלֹמוֹת הַלָּזֶה הַלָּזֶה בָּא: \"look, this master of dreams is coming\".",
               "ref": "Gen.37.19",
               "role": "defining"
             }
@@ -1286,7 +1290,7 @@
               "role": "defining"
             },
             {
-              "note": "לְמִגְלֵא רָזָה דְנָה: \"to reveal this secret\".",
+              "note": "לְגַלָּאָה רָזָה דְּנָה: \"to reveal this secret\".",
               "ref": "Dan.2.47"
             },
             {
@@ -1306,7 +1310,7 @@
               "role": "defining"
             },
             {
-              "note": "עַל־דְּנָה פִּתְגָם: \"concerning this matter\".",
+              "note": "עַל־דְּנָה: \"concerning this matter\".",
               "ref": "Dan.3.16"
             }
           ],
@@ -1437,7 +1441,7 @@
           "definition": "Points out a city, a house or a man already spoken of.",
           "evidence": [
             {
-              "note": "דִּי הֵן קִרְיְתָא דָךְ תִּתְבְּנֵא: \"that if this city is built\".",
+              "note": "דִּי קִרְיְתָא דָךְ תִּתְבְּנֵא: \"that if this city is built\".",
               "ref": "Ezr.4.13",
               "role": "defining"
             },
@@ -1446,13 +1450,12 @@
               "ref": "Ezr.4.15"
             },
             {
-              "note": "שֵׁשְׁבַצַּר דֵּךְ: \"that Sheshbazzar\".",
+              "note": "שֵׁשְׁבַּצַּר דֵּךְ: \"that Sheshbazzar\".",
               "ref": "Ezr.5.16"
             },
             {
               "note": "בֵּית־אֱלָהָא דֵךְ: \"this house of God\", twice.",
-              "ref": "Ezr.6.7",
-              "role": "defining"
+              "ref": "Ezr.6.7"
             }
           ],
           "gloss": "that, this (with a noun)",
@@ -1484,11 +1487,11 @@
               "role": "defining"
             },
             {
-              "note": "וְקַרְנָא דִכֵּן וְעַיְנִין לַהּ: \"that horn which had eyes\".",
+              "note": "וּלְקַרְנָא דִכֵּן וְעַיְנִין לַהּ: \"and that horn had eyes\".",
               "ref": "Dan.7.20"
             },
             {
-              "note": "וְקַרְנָא דִכֵּן עָבְדָה קְרָב עִם־קַדִּישִׁין: \"that horn made war with the holy ones\".",
+              "note": "קַרְנָא דִכֵּן עָבְדָא קְרָב עִם־קַדִּישִׁין: \"that horn made war with the holy ones\".",
               "ref": "Dan.7.21"
             }
           ],
@@ -1525,16 +1528,7 @@
               "role": "defining"
             },
             {
-              "note": "שָׁלְטָנֵהּ שָׁלְטָן עָלַם דִּי־לָא יֶעְדֵּה: \"his dominion is an everlasting dominion, which shall not pass away\".",
-              "ref": "Dan.7.14",
-              "role": "defining"
-            },
-            {
-              "note": "בָּבֶל רַבְּתָא דִּי־אֲנָה בֱנַיְתַהּ: \"great Babylon, which I have built\".",
-              "ref": "Dan.4.27"
-            },
-            {
-              "note": "וּלְמַן־דִּי יִצְבֵּא יִתְּנִנַּהּ: \"and gives it to whomever he will\".",
+              "note": "דִּי־לֵהּ שָׁלְטָן: \"to whomever he will he gives it\".",
               "ref": "Dan.4.14"
             }
           ],
@@ -1542,7 +1536,7 @@
           "id": "di-relative"
         },
         {
-          "definition": "Between two nouns, \"the one of\": the name of God, the servants of the God of heaven; with a pronoun, \"his\".",
+          "definition": "Between two nouns, \"the one of\": the name of God, the servants of God; with a pronoun, \"his\".",
           "evidence": [
             {
               "note": "שְׁמֵהּ דִּי־אֱלָהָא: \"the name of God\"; and דִּי חָכְמְתָא וּגְבוּרְתָא דִּי לֵהּ־הִיא, \"wisdom and might are his\".",
@@ -1554,12 +1548,8 @@
               "ref": "Ezr.5.11"
             },
             {
-              "note": "אֱלָהַיָּא דִּי־שְׁמַיָּא וְאַרְקָא לָא עֲבַדוּ: \"the gods who did not make the heavens and the earth\".",
+              "note": "אֱלָהַיָּא דִּי־שְׁמַיָּא וְאַרְקָא לָא עֲבַדוּ: \"the gods who have not made the heavens and the earth\".",
               "ref": "Jer.10.11"
-            },
-            {
-              "note": "אֱלָהֵהּ דִּי־דָנִיֵּאל: \"the God of Daniel\".",
-              "ref": "Dan.6.27"
             }
           ],
           "gloss": "of (marking the owner)",
@@ -1574,8 +1564,9 @@
               "role": "defining"
             },
             {
-              "note": "עַד־דִּבְרַת דִּי יִנְדְּעוּן דִּי־שַׁלִּיט עִלָּאָה: \"to the end that the living may know that the Most High rules\".",
-              "ref": "Dan.4.14"
+              "note": "עַד־דִּבְרַת דִּי־יִנְדְּעוּן חַיַּיָּא דִּי־שַׁלִּיט עִלָּאָה: \"to the end that the living may know that the Most High rules\".",
+              "ref": "Dan.4.14",
+              "role": "defining"
             },
             {
               "note": "שִׂים טְעֵם דִּי: \"a decree is made, that …\".",
@@ -1615,7 +1606,7 @@
                 "ref": "Dan.2.8"
               },
               {
-                "ref": "Dan.2.10"
+                "ref": "Dan.2.29"
               },
               {
                 "ref": "Dan.2.45"
@@ -1679,7 +1670,7 @@
               "role": "defining"
             },
             {
-              "note": "יִדַען דּהָנַו שַרִירָאיִת משִיחָא: \"we know that this is truly the Messiah\".",
+              "note": "יַדּעִינַן דּהָנַו שַׁרִירָאִית משִיחָא: \"we know that this is truly the Messiah\".",
               "ref": "Jhn.4.42"
             }
           ],
