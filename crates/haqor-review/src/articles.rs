@@ -310,30 +310,38 @@ fn apply_one_locked(
             tx.commit()?;
             return Ok(PublishOutcome::Stale);
         }
-        // The noun's file goes before the root entry that replaces it is
-        // validated, or the lexicon would hold two entries for one root.
-        if let Some(old_path) = &old_path {
-            fs::remove_file(old_path)?;
-        }
-        if let Err(error) = haqor_lexicon::save_entry(lexicon, &body, verses)
-            .with_context(|| format!("validating {id}"))
-        {
-            if let (Some(old_path), Some(current)) = (&old_path, &current) {
-                fs::write(old_path, current)?;
+        // A review only adds to an existing article: everything else in its
+        // draft is discarded.
+        let publish = match &current {
+            Some(current) => additive(current, &draft, name)?,
+            None => Some(body.clone()),
+        };
+        if let Some(body) = publish {
+            // The noun's file goes before the root entry that replaces it is
+            // validated, or the lexicon would hold two entries for one root.
+            if let Some(old_path) = &old_path {
+                fs::remove_file(old_path)?;
             }
-            if !is_validation_error(&error) {
-                return Err(error);
-            }
-            let tx = db.transaction()?;
-            let reason = format!("{error:#}");
-            tx.execute("UPDATE job SET state='ready',feedback=?,result=NULL WHERE source=? AND ref=? AND pos=?",
+            if let Err(error) = haqor_lexicon::save_entry(lexicon, &body, verses)
+                .with_context(|| format!("validating {id}"))
+            {
+                if let (Some(old_path), Some(current)) = (&old_path, &current) {
+                    fs::write(old_path, current)?;
+                }
+                if !is_validation_error(&error) {
+                    return Err(error);
+                }
+                let tx = db.transaction()?;
+                let reason = format!("{error:#}");
+                tx.execute("UPDATE job SET state='ready',feedback=?,result=NULL WHERE source=? AND ref=? AND pos=?",
                 params![reason,job.source,job.reference,job.pos])?;
-            tx.execute(
+                tx.execute(
                 "UPDATE job SET state='waiting',result=NULL WHERE source=? AND ref=? AND pos=-1",
                 params![job.source, job.reference],
             )?;
-            tx.commit()?;
-            return Ok(PublishOutcome::Rejected);
+                tx.commit()?;
+                return Ok(PublishOutcome::Rejected);
+            }
         }
     }
     let tx = db.transaction()?;
@@ -501,6 +509,161 @@ pub fn moved_lexeme(current: &str, draft: &Value) -> Result<Option<String>> {
     Ok(None)
 }
 
+/// What a review may publish into an existing article: the current file with
+/// only the draft's additions — new lexemes appended after the existing ones,
+/// new stems and senses (by id) inside existing lexemes, the cognates those
+/// additions cite, and for a name its newly identified bearers. Every other
+/// field of the draft is ignored, so a reviewer that re-types the article
+/// cannot alter or drop existing glosses, definitions, quotations or keys.
+/// Returns `None` when the draft adds nothing.
+pub fn additive(current: &str, draft: &Value, name: bool) -> Result<Option<String>> {
+    let mut merged: Value = serde_json::from_str(current)?;
+    let before = merged.clone();
+    let mut cited = Vec::new();
+    if name {
+        if let (Some(have), Some(new)) = (
+            merged.get_mut("people").and_then(Value::as_array_mut),
+            draft["people"].as_array(),
+        ) {
+            for person in new {
+                if !have.contains(person) {
+                    have.push(person.clone());
+                }
+            }
+        }
+    } else {
+        // A noun promoted to its root's entry takes the entry's identity.
+        if merged["id"] != draft["id"] {
+            merged["id"] = draft["id"].clone();
+            merged["root"] = draft["root"].clone();
+        }
+        let empty = Vec::new();
+        let new_words = draft["words"].as_array().unwrap_or(&empty);
+        if !merged["words"].is_array() {
+            merged["words"] = json!([]);
+        }
+        let words = merged["words"].as_array_mut().unwrap();
+        for (index, word) in new_words.iter().enumerate() {
+            match words.get_mut(index) {
+                Some(have) => add_senses_of_word(have, word, &mut cited),
+                None => {
+                    collect_cognate_ids(word, &mut cited);
+                    words.push(word.clone());
+                }
+            }
+        }
+        if !cited.is_empty() {
+            if !merged["cognates"].is_array() {
+                merged["cognates"] = json!([]);
+            }
+            let cognates = merged["cognates"].as_array_mut().unwrap();
+            for cognate in draft["cognates"].as_array().into_iter().flatten() {
+                let id = &cognate["id"];
+                if id.is_string()
+                    && cited.iter().any(|c| c == id)
+                    && !cognates.iter().any(|c| &c["id"] == id)
+                {
+                    cognates.push(cognate.clone());
+                }
+            }
+        }
+    }
+    if merged == before {
+        return Ok(None);
+    }
+    // An addition reopens the article for sign-off.
+    merged["status"] = json!("draft");
+    if let Some(object) = merged.as_object_mut() {
+        object.remove("reviewed");
+    }
+    if draft["updated"].is_string() {
+        merged["updated"] = draft["updated"].clone();
+    }
+    Ok(Some(serde_json::to_string_pretty(&merged)? + "\n"))
+}
+
+fn add_senses_of_word(have: &mut Value, draft: &Value, cited: &mut Vec<Value>) {
+    let mut ids = Vec::new();
+    sense_ids(have, &mut ids);
+    add_senses(have, &draft["senses"], &ids, cited);
+    for stem in draft["stems"].as_array().into_iter().flatten() {
+        let Some(object) = have.as_object_mut() else {
+            return;
+        };
+        let stems = object.entry("stems").or_insert_with(|| json!([]));
+        if stems.is_null() {
+            *stems = json!([]);
+        }
+        let Some(stems) = stems.as_array_mut() else {
+            return;
+        };
+        match stems.iter_mut().find(|s| s["stem"] == stem["stem"]) {
+            Some(existing) => add_senses(existing, &stem["senses"], &ids, cited),
+            None => {
+                collect_cognate_ids(stem, cited);
+                stems.push(stem.clone());
+            }
+        }
+    }
+}
+
+/// Append to `parent`'s senses the draft's senses whose id the lexeme lacks,
+/// descending into the narrower senses of those it has. Keys are only
+/// created when something is added.
+fn add_senses(parent: &mut Value, draft: &Value, ids: &[Value], cited: &mut Vec<Value>) {
+    let Some(new) = draft.as_array() else { return };
+    for sense in new {
+        let present = parent
+            .get_mut("senses")
+            .and_then(Value::as_array_mut)
+            .and_then(|list| list.iter_mut().find(|s| s["id"] == sense["id"]));
+        match present {
+            Some(existing) => add_senses(existing, &sense["senses"], ids, cited),
+            None if sense["id"].is_string() && !ids.contains(&sense["id"]) => {
+                let Some(object) = parent.as_object_mut() else {
+                    return;
+                };
+                let list = object.entry("senses").or_insert_with(|| json!([]));
+                if list.is_null() {
+                    *list = json!([]);
+                }
+                if let Some(list) = list.as_array_mut() {
+                    collect_cognate_ids(sense, cited);
+                    list.push(sense.clone());
+                }
+            }
+            None => {}
+        }
+    }
+}
+
+fn sense_ids(node: &Value, out: &mut Vec<Value>) {
+    for key in ["senses", "stems"] {
+        for item in node[key].as_array().into_iter().flatten() {
+            if key == "senses" && item["id"].is_string() {
+                out.push(item["id"].clone());
+            }
+            sense_ids(item, out);
+        }
+    }
+}
+
+fn collect_cognate_ids(node: &Value, out: &mut Vec<Value>) {
+    match node {
+        Value::Object(map) => {
+            for (key, value) in map {
+                if key == "cognate_ids" {
+                    out.extend(value.as_array().into_iter().flatten().cloned());
+                } else {
+                    collect_cognate_ids(value, out);
+                }
+            }
+        }
+        Value::Array(items) => items.iter().for_each(|v| collect_cognate_ids(v, out)),
+        _ => {}
+    }
+}
+
 // Reopen only words that actually used a changed canonical article.
 pub fn refresh_dependencies(
     db: &mut Connection,
@@ -609,6 +772,79 @@ mod tests {
             PublishOutcome::Deferred
         );
         fs::remove_dir_all(root)?;
+        Ok(())
+    }
+
+    #[test]
+    fn reviews_only_add_lexemes_and_senses() -> Result<()> {
+        let current = json!({
+            "id":"zh","root":"זה","status":"reviewed","reviewed":"2026-11-01","updated":"2026-11-01",
+            "gloss":"this","cognates":[{"id":"ar-dha","lang":"ar","form":"ذا","gloss":"this"}],
+            "words":[{"lemma":"זֶה","pos":"pronoun","bdb":["g.ah.aa"],"senses":[
+                {"id":"this","gloss":"this","definition":"Points at a thing.",
+                 "evidence":[{"ref":"Gen.37.19","note":"הַלָּזֶה בָּא","role":"defining"}],
+                 "senses":[{"id":"this-near","gloss":"this here","evidence":[{"ref":"Gen.5.29"}]}]}]}]
+        })
+        .to_string();
+        // The draft re-types everything: it corrupts a quotation, drops a
+        // role and a citation, empties a key and changes the gloss, while
+        // adding a narrower sense, a new top sense and a new lexeme.
+        let draft = json!({
+            "id":"zh","root":"זה","status":"draft","updated":"2026-11-21",
+            "gloss":"that","summary":"rewritten",
+            "cognates":[{"id":"ar-dha","lang":"ar","form":"ذا","gloss":"that"},
+                        {"id":"gez-ze","lang":"gez","form":"ዝ","gloss":"this"},
+                        {"id":"sab-dhn","lang":"sem","form":"ḏn","gloss":"this"}],
+            "words":[
+                {"lemma":"זֶה","pos":"pronoun","bdb":[],"senses":[
+                    {"id":"this","gloss":"that","definition":"Changed.",
+                     "evidence":[{"ref":"Gen.37.19","note":"הַלָּזֶה הַלָּזֶה בָּא"}],
+                     "senses":[{"id":"this-near","gloss":"x","evidence":[]},
+                               {"id":"this-time","gloss":"now","evidence":[{"ref":"Gen.27.36"}]}]},
+                    {"id":"this-one","gloss":"this one","evidence":[{"ref":"Gen.15.7"}],"cognate_ids":["gez-ze"]}]},
+                {"lemma":"זוֹ","pos":"pronoun","senses":[{"id":"zo","gloss":"this (f)","evidence":[{"ref":"Hos.7.16"}]}]}]
+        });
+        let merged: Value = serde_json::from_str(&additive(&current, &draft, false)?.unwrap())?;
+        let zeh = &merged["words"][0];
+        assert_eq!(merged["gloss"], "this");
+        assert!(merged.get("summary").is_none());
+        assert_eq!(zeh["bdb"], json!(["g.ah.aa"]));
+        let this = &zeh["senses"][0];
+        assert_eq!(this["definition"], "Points at a thing.");
+        assert_eq!(this["evidence"][0]["note"], "הַלָּזֶה בָּא");
+        assert_eq!(this["evidence"][0]["role"], "defining");
+        assert_eq!(this["senses"][0]["evidence"], json!([{"ref":"Gen.5.29"}]));
+        assert_eq!(this["senses"][1]["id"], "this-time");
+        assert_eq!(zeh["senses"][1]["id"], "this-one");
+        assert_eq!(merged["words"][1]["lemma"], "זוֹ");
+        // Only the cognate a new sense cites is added; the old one is kept.
+        assert_eq!(merged["cognates"].as_array().unwrap().len(), 2);
+        assert_eq!(merged["cognates"][0]["gloss"], "this");
+        assert_eq!(merged["cognates"][1]["id"], "gez-ze");
+        // The addition reopens the article.
+        assert_eq!(merged["status"], "draft");
+        assert!(merged.get("reviewed").is_none());
+        assert_eq!(merged["updated"], "2026-11-21");
+        Ok(())
+    }
+
+    #[test]
+    fn a_review_adding_nothing_leaves_the_article() -> Result<()> {
+        let current =
+            json!({"id":"zh","words":[{"lemma":"זֶה","senses":[{"id":"this","gloss":"this"}]}]});
+        let draft = json!({"id":"zh","words":[{"lemma":"זֶה","senses":[{"id":"this","gloss":"rewritten"}]}]});
+        assert_eq!(additive(&current.to_string(), &draft, false)?, None);
+        Ok(())
+    }
+
+    #[test]
+    fn a_name_review_only_adds_bearers() -> Result<()> {
+        let current = json!({"id":"n","name":"שֵׁם","gloss":"name","people":["A@Gen.1.1"]});
+        let draft = json!({"id":"n","name":"שֵׁם","gloss":"changed","people":["B@Gen.2.2"]});
+        let merged: Value =
+            serde_json::from_str(&additive(&current.to_string(), &draft, true)?.unwrap())?;
+        assert_eq!(merged["gloss"], "name");
+        assert_eq!(merged["people"], json!(["A@Gen.1.1", "B@Gen.2.2"]));
         Ok(())
     }
 

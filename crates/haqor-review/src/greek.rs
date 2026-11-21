@@ -60,11 +60,16 @@ pub fn publish(lexicon: &Path, answer: &Value, reference: i64, position: i64) ->
         .context("invalid Greek dictionary senses")?;
     let sense = answer["sense"].as_str().context("missing sense")?;
     let draft = &answer["entry"]["draft"];
+    // A review only adds: an existing sense keeps its gloss and definition,
+    // and gains this occurrence's evidence.
+    let new_sense = !senses.contains_key(sense);
     let entry = senses
         .entry(sense)
         .or_insert_with(|| json!({"evidence":{}}));
-    entry["gloss"] = answer["gloss"].clone();
-    entry["definition"] = draft["definition"].clone();
+    if new_sense {
+        entry["gloss"] = answer["gloss"].clone();
+        entry["definition"] = draft["definition"].clone();
+    }
     let at = format!(
         "{}.{}.{}[{}]",
         reference >> 16,
@@ -73,7 +78,9 @@ pub fn publish(lexicon: &Path, answer: &Value, reference: i64, position: i64) ->
         position
     );
     entry["evidence"][at] = draft["evidence"].clone();
-    article["root"] = answer["root"].clone();
+    if prior.is_none() {
+        article["root"] = answer["root"].clone();
+    }
     if Some(&article) == prior.as_ref() {
         return Ok(false);
     }
