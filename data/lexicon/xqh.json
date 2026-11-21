@@ -26,7 +26,7 @@
   "tags": [
     "drink"
   ],
-  "updated": "2026-11-20",
+  "updated": "2026-11-21",
   "words": [
     {
       "bdb": [
@@ -40,7 +40,6 @@
           "gloss": "give drink; water",
           "senses": [
             {
-              "id": "give-drink",
               "definition": "To provide liquid for another to drink.",
               "evidence": [
                 {
@@ -49,10 +48,10 @@
                   "role": "defining"
                 }
               ],
-              "gloss": "give drink"
+              "gloss": "give drink",
+              "id": "give-drink"
             },
             {
-              "id": "water-the-ground",
               "definition": "To supply the ground with water.",
               "evidence": [
                 {
@@ -61,7 +60,8 @@
                   "role": "defining"
                 }
               ],
-              "gloss": "water the ground"
+              "gloss": "water the ground",
+              "id": "water-the-ground"
             }
           ],
           "stem": "hiphil"
@@ -74,12 +74,11 @@
         "v.fo.ae"
       ],
       "gender": "m",
-      "gloss": "cupbearer; drink",
+      "gloss": "cupbearer; drink; well-watered land",
       "lemma": "מַשְׁקֶה",
       "pos": "noun",
       "senses": [
         {
-          "id": "cupbearer",
           "definition": "A person or thing supplying drink.",
           "evidence": [
             {
@@ -87,7 +86,20 @@
               "role": "defining"
             }
           ],
-          "gloss": "cupbearer"
+          "gloss": "cupbearer",
+          "id": "cupbearer"
+        },
+        {
+          "definition": "Land abundantly supplied with water.",
+          "evidence": [
+            {
+              "note": "כֻלָּהּ מַשְׁקֶה describes the entire Jordan plain as Lot sees it, comparing it with Yahweh’s garden and the land of Egypt.",
+              "ref": "Gen.13.10",
+              "role": "defining"
+            }
+          ],
+          "gloss": "well-watered land",
+          "id": "well-watered-land"
         }
       ]
     },
@@ -104,7 +116,6 @@
       "pos": "noun",
       "senses": [
         {
-          "id": "refreshment-drink",
           "definition": "The body receives refreshment like moisture reaching the bones. Elsewhere the speaker mixes his drink with tears.",
           "evidence": [
             {
@@ -116,7 +127,8 @@
               "role": "defining"
             }
           ],
-          "gloss": "refreshment, drink"
+          "gloss": "refreshment, drink",
+          "id": "refreshment-drink"
         }
       ]
     },
@@ -130,7 +142,6 @@
       "pos": "noun",
       "senses": [
         {
-          "id": "trough",
           "definition": "A vessel or trough from which animals drink.",
           "evidence": [
             {
@@ -138,7 +149,8 @@
               "role": "defining"
             }
           ],
-          "gloss": "trough"
+          "gloss": "trough",
+          "id": "trough"
         }
       ]
     }
