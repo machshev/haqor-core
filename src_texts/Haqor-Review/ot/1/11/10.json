@@ -1,6 +1,81 @@
 {
   "book": 1,
   "chapter": 11,
+  "review": {
+    "entities": [
+      {
+        "evidence": "The genealogy names Shem, Noah’s son, and begins with his son Arpachshad.",
+        "key": "Shem@Gen.5.32",
+        "position": 2
+      },
+      {
+        "evidence": "The repeated name identifies the same Shem as the father of Arpachshad.",
+        "key": "Shem@Gen.5.32",
+        "position": 3
+      },
+      {
+        "evidence": "Shem fathers Arpachshad, whom Genesis 10:22 lists among Shem’s sons.",
+        "key": "Arpachshad@Gen.10.22",
+        "position": 9
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "these",
+        "position": 0
+      },
+      {
+        "gloss": "the generations of",
+        "position": 1
+      },
+      {
+        "gloss": "Shem",
+        "position": 2
+      },
+      {
+        "gloss": "Shem",
+        "position": 3
+      },
+      {
+        "gloss": "old",
+        "position": 4
+      },
+      {
+        "gloss": "a hundred",
+        "position": 5
+      },
+      {
+        "gloss": "years",
+        "position": 6
+      },
+      {
+        "gloss": "and he fathered",
+        "position": 7
+      },
+      {
+        "gloss": "(marks the definite object)",
+        "position": 8
+      },
+      {
+        "gloss": "Arpachshad",
+        "position": 9
+      },
+      {
+        "gloss": "two years",
+        "position": 10
+      },
+      {
+        "gloss": "after",
+        "position": 11
+      },
+      {
+        "gloss": "the flood",
+        "position": 12
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[These|0] {are} [the generations of|1] [Shem|2]. [Shem|3] {was} [a hundred|5] [years|6] [old|4] [when he fathered|7] [Arpachshad|9,8] [two years|10] [after|11] [the flood|12]."
+  },
   "source": "ot",
   "verse": 10,
   "words": [
