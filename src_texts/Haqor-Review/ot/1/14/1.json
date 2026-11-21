@@ -325,6 +325,52 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article": {
+              "created": "2026-11-21",
+              "english": "Tidal",
+              "entry": "",
+              "evidence": [
+                {
+                  "note": "וְתִדְעָל מֶלֶךְ גּוֹיִם names Tidal and gives his royal title.",
+                  "ref": "Gen.14.1",
+                  "role": "defining"
+                }
+              ],
+              "gloss": "Tidal",
+              "id": "ttide3aal",
+              "name": "תִּדְעָל",
+              "people": [],
+              "root": "",
+              "status": "draft",
+              "summary": "Genesis names Tidal as king of Goyim. The meaning of his name is uncertain.",
+              "updated": "2026-11-21"
+            },
+            "article_id": "ttide3aal",
+            "base": null,
+            "change": "Add a personal-name article for Tidal. Leave the root empty because the proposed link to תבנ lacks support.",
+            "definition": "Tidal, the personal name of the king of Goyim.",
+            "evidence": "In Genesis 14:1, the title מֶלֶךְ גּוֹיִם immediately follows תִדְעָל and identifies the bearer. The verse gives no etymology for his name."
+          },
+          "word": 0
+        },
+        "evidence": "The verse lists three rulers by name and gives each a title beginning with מֶלֶךְ. וְתִדְעָל מֶלֶךְ גּוֹיִם follows the same pattern, naming Tidal as the fourth ruler.",
+        "gloss": "and Tidal",
+        "language": "he",
+        "lemma": "תִּדְעָל",
+        "morph": "HC/Np",
+        "morphology": "The conjunction וְ ‘and’ introduces the personal name תִּדְעָל. The initial ת appears without dagesh after וְ.",
+        "qualifier": "",
+        "root": "",
+        "segments": "וְ/תִדְעָל",
+        "sense": "Tidal, king of Goyim"
+      },
+      "position": 11,
+      "surface": "וְתִדְעָל"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "mlk",
           "sense": "king",
           "word": 0
