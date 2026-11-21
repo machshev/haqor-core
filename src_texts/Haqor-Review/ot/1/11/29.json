@@ -79,6 +79,33 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article_id": "l",
+            "base": "ed636b0f4abe9183583802b61b0da580f9c2283ccad294ff133d548653efe381",
+            "change": "Add Genesis 11:29 as evidence for the existing Hebrew sense le-dative.",
+            "definition": "לְ marks the person for whom an action is done, including the doer of the action.",
+            "evidence": "In Genesis 11:29, לָהֶם refers to Abram and Nahor, each of whom takes a wife for himself."
+          },
+          "sense": "le-dative",
+          "word": 0
+        },
+        "evidence": "Abram and Nahor take נָשִׁים, “wives.” לָהֶם refers to the two men, as the rest of the verse confirms by naming Sarai as Abram’s wife and Milcah as Nahor’s wife.",
+        "gloss": "for themselves",
+        "language": "he",
+        "lemma": "לְ",
+        "morph": "HR/Sp3mp",
+        "morphology": "The preposition לְ takes the form לָ־ before the third-person masculine plural pronominal suffix הֶם. The suffix refers back to Abram and Nahor, giving the phrase reflexive force.",
+        "qualifier": "",
+        "root": "ל",
+        "segments": "לָ/הֶם",
+        "sense": "Marks the persons for whom the action is done, here the men taking wives for themselves."
+      },
+      "position": 3,
+      "surface": "לָהֶם"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "2nx",
           "sense": "wives",
           "word": 1
