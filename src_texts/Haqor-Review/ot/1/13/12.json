@@ -1,6 +1,78 @@
 {
   "book": 1,
   "chapter": 13,
+  "review": {
+    "entities": [
+      {
+        "evidence": "Abram, the son of Terah later named Abraham, settles in Canaan after parting from his nephew Lot.",
+        "key": "Abraham@Gen.11.26",
+        "position": 0
+      },
+      {
+        "evidence": "In בְּאֶרֶץ כְּנָעַן, Canaan names the territory where Abram settled.",
+        "key": "Canaan@Gen.10.18",
+        "position": 3
+      },
+      {
+        "evidence": "Lot, the son of Haran and nephew of Abram, settles in the cities of the plain.",
+        "key": "Lot@Gen.11.27",
+        "position": 4
+      },
+      {
+        "evidence": "In עַד סְדֹם, Sodom names the city marking how far Lot moved his tents.",
+        "key": "Sodom@Gen.10.19",
+        "position": 10
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "Abram",
+        "position": 0
+      },
+      {
+        "gloss": "settled",
+        "position": 1
+      },
+      {
+        "gloss": "in the land of",
+        "position": 2
+      },
+      {
+        "gloss": "Canaan",
+        "position": 3
+      },
+      {
+        "gloss": "and Lot",
+        "position": 4
+      },
+      {
+        "gloss": "settled",
+        "position": 5
+      },
+      {
+        "gloss": "in the cities of",
+        "position": 6
+      },
+      {
+        "gloss": "the plain",
+        "position": 7
+      },
+      {
+        "gloss": "and moved his tents",
+        "position": 8
+      },
+      {
+        "gloss": "as far as",
+        "position": 9
+      },
+      {
+        "gloss": "Sodom",
+        "position": 10
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[Abram|0] [settled|1] [in the land of|2] [Canaan|3], [and Lot|4] [settled|5] [in the cities of|6] [the plain|7] [and moved his tents|8] [as far as|9] [Sodom|10]."
+  },
   "source": "ot",
   "verse": 12,
   "words": [
