@@ -222,6 +222,33 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article_id": "l",
+            "base": "5f66bf089a3895eb4994efd21581917ecdc96d3ab927332e8969efd69975248d",
+            "change": "Add Genesis 11:3 as an example of le-dative in the Hebrew preposition at word index 0.",
+            "definition": "לְ marks the people for whom the brick served as stone.",
+            "evidence": "Genesis 11:3 first gives the builders’ proposal to make bricks and then identifies them by the suffix in לָהֶם as the people who used brick for stone."
+          },
+          "sense": "le-dative",
+          "word": 0
+        },
+        "evidence": "In וַתְּהִי לָהֶם הַלְּבֵנָה לְאָבֶן, “brick served as stone for them,” לָהֶם identifies the builders who used the brick. לְאָבֶן specifies what the brick served as.",
+        "gloss": "for them",
+        "language": "he",
+        "lemma": "לְ",
+        "morph": "HR/Sp3mp",
+        "morphology": "The preposition לְ takes the form לָ־ before the third-person masculine plural pronominal suffix הֶם, which refers to the builders.",
+        "qualifier": "",
+        "root": "ל",
+        "segments": "לָ/הֶם",
+        "sense": "for the people whom something serves"
+      },
+      "position": 10,
+      "surface": "לָהֶם"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "lbn",
           "sense": "brick-tile",
           "word": 5
