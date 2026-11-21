@@ -154,6 +154,33 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article_id": "l",
+            "base": "b31a2cd28306b6e109885a5f6ff1c2a0275616bfa9e904c0d045c626d2a5afad",
+            "change": "Add Genesis 13:15 as an example of the existing le-dative sense of Hebrew לְ.",
+            "definition": "לְ marks the person to whom something is given.",
+            "evidence": "Genesis 13:15 places לְךָ before אֶתְּנֶנָּה, “I will give it,” and coordinates it with וּלְזַרְעֲךָ, “and to your offspring.”"
+          },
+          "sense": "le-dative",
+          "word": 0
+        },
+        "evidence": "In לְךָ אֶתְּנֶנָּה, “I will give it to you,” the object suffix on the verb refers to הָאָרֶץ, the land, and לְךָ identifies Abram as its recipient. The parallel וּלְזַרְעֲךָ, “and to your offspring,” names the other recipients.",
+        "gloss": "to you",
+        "language": "he",
+        "lemma": "לְ",
+        "morph": "HR/Sp2ms",
+        "morphology": "Hebrew preposition לְ with the second-person masculine singular pronominal suffix ךָ referring to Abram.",
+        "qualifier": "",
+        "root": "ל",
+        "segments": "לְ/ךָ",
+        "sense": "Marks the recipient of a gift."
+      },
+      "position": 7,
+      "surface": "לְךָ"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "ntn",
           "sense": "give-land",
           "word": 0
