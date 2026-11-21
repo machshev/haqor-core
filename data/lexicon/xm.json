@@ -66,7 +66,7 @@
     "memory",
     "place"
   ],
-  "updated": "2026-11-20",
+  "updated": "2026-11-21",
   "words": [
     {
       "bdb": [
@@ -155,7 +155,7 @@
               "ref": "Gen.5.29"
             },
             {
-              "note": "After giving Peleg’s name, וְשֵׁם אָחִיו יָקְטָן gives Joktan as his brother’s name.",
+              "note": "After giving Peleg’s name, וְשֵׁם אָחִיו יָקְטָן gives that name as Joktan’s brother.",
               "ref": "Gen.10.25",
               "role": "defining"
             }
@@ -246,6 +246,11 @@
               "note": "After the mention of the Casluhim, יָצְאוּ מִשָּׁם describes the Philistines as coming out ‘from there’.",
               "ref": "Gen.10.14",
               "role": "example"
+            },
+            {
+              "note": "Yahweh scatters the builders מִשָּׁם, ‘from there’. The city they cease building is the place from which they disperse.",
+              "ref": "Gen.11.8",
+              "role": "example"
             }
           ],
           "gloss": "there, to that place",
@@ -323,6 +328,9 @@
               "ref": "Mat.1.25"
             },
             {
+              "ref": "Luk.1.31"
+            },
+            {
               "ref": "Mat.6.9"
             }
           ],
@@ -333,6 +341,10 @@
     },
     {
       "bdb": [],
+      "cognate_ids": [
+        "phn-shm",
+        "akk-shumu"
+      ],
       "gloss": "give a name",
       "lang": "syc",
       "lemma": "שַׁמִּי",
@@ -363,6 +375,10 @@
     },
     {
       "bdb": [],
+      "cognate_ids": [
+        "phn-shm",
+        "akk-shumu"
+      ],
       "gloss": "be named",
       "lang": "syc",
       "lemma": "שַׁמַּה",
