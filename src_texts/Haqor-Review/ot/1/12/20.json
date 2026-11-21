@@ -200,6 +200,33 @@
       },
       "position": 10,
       "surface": "אֲשֶׁר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "l",
+            "base": "e12417ba1cff64f4f2c38b408cebc2f430089958e30c73b6191ef5118efa6ece",
+            "change": "Add Genesis 12:20 as an example of le-belongs for the Hebrew preposition לְ at word index 0.",
+            "definition": "לְ marks the person to whom something belongs.",
+            "evidence": "In Genesis 12:20, כָּל אֲשֶׁר לוֹ means “all that was his.” The suffix identifies Abram as the possessor, as it does in וַיְהִי לוֹ צֹאן וּבָקָר in Genesis 12:16."
+          },
+          "sense": "le-belongs",
+          "word": 0
+        },
+        "evidence": "Pharaoh’s men send Abram away with אִשְׁתּוֹ, “his wife,” and כָּל אֲשֶׁר לוֹ, “all that was his.” Within the relative clause, לוֹ identifies Abram as the owner.",
+        "gloss": "was his",
+        "language": "he",
+        "lemma": "לְ",
+        "morph": "HR/Sp3ms",
+        "morphology": "The preposition לְ takes the third-person masculine singular pronominal suffix וֹ, referring to Abram. The suffixed preposition is the predicate of the relative clause אֲשֶׁר לוֹ.",
+        "qualifier": "",
+        "root": "ל",
+        "segments": "ל/וֹ",
+        "sense": "belonging to"
+      },
+      "position": 11,
+      "surface": "לוֹ"
     }
   ]
 }
