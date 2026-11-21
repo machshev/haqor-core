@@ -151,6 +151,33 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article_id": "2t",
+            "base": "f475c099d8f834a4643d3f9776443e8e36defd7a4ebe4bc2d7993b506c219f9c",
+            "change": "Add Gen 14:11 to the evidence for definite-object in word 0 of article 2t.",
+            "definition": "אֵת introduces the definite person or thing a verb acts on. It can recur before a coordinated object.",
+            "evidence": "In Gen 14:11, וְאֶת כָּל אָכְלָם adds “all their food” to the possessions already named as taken."
+          },
+          "sense": "definite-object",
+          "word": 0
+        },
+        "evidence": "The first אֶת introduces all the possessions of Sodom and Gomorrah as the object of וַיִּקְחוּ, “they took.” The marked וְאֶת adds כָּל אָכְלָם, “all their food,” as a second object of the same verb. The possessive suffix on אָכְלָם makes the phrase definite.",
+        "gloss": "and [direct-object marker]",
+        "language": "he",
+        "lemma": "אֵת",
+        "morph": "HC/To",
+        "morphology": "וְ is the coordinating conjunction “and.” אֶת is the unsuffixed direct-object particle.",
+        "qualifier": "particle",
+        "root": "את",
+        "segments": "וְ/אֶת",
+        "sense": "Marks the second definite direct object of “they took.”"
+      },
+      "position": 6,
+      "surface": "וְאֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "kll",
           "sense": "all-the-whole",
           "word": 0
