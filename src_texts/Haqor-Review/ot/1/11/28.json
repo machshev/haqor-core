@@ -201,6 +201,33 @@
       "analysis": {
         "entry": {
           "draft": {
+            "article_id": "2wr",
+            "base": "ef852e3e5a58f1fd6bd9cbf5d54d455f2b797967bb3b8ed9efb716935db26037",
+            "change": "Append the place name אוּר to article 2wr at word index 8 under the shared consonantal key אור. The verses establish the geographical sense and leave the name’s etymology open.",
+            "definition": "Ur, the place called Ur of the Chaldeans where Haran died and from which Terah’s household set out for Canaan.",
+            "evidence": "Genesis 11:28 locates Haran’s death בְּאוּר כַּשְׂדִּים, “in Ur of the Chaldeans”. Genesis 11:31 uses the same name with the preposition מִן to identify the family’s point of departure."
+          },
+          "sense": "ur-of-the-chaldeans",
+          "word": 8
+        },
+        "evidence": "בְּאוּר כַּשְׂדִּים specifies where Haran died. It identifies the place just described as בְּאֶרֶץ מוֹלַדְתּוֹ, “in the land of his birth”.",
+        "gloss": "in Ur",
+        "language": "he",
+        "lemma": "אוּר",
+        "morph": "HR/Np",
+        "morphology": "The prefixed preposition בְּ means “in”. Its object is the proper noun אוּר, qualified by the following כַּשְׂדִּים in the place name “Ur of the Chaldeans”.",
+        "qualifier": "place",
+        "root": "אור",
+        "segments": "בְּ/אוּר",
+        "sense": "Ur of the Chaldeans"
+      },
+      "position": 8,
+      "surface": "בְּאוּר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
             "article_id": "kkaceddiy",
             "base": null,
             "change": "Add the Chaldean gentilic under its consonantal base כשׂד and correct the occurrence’s כרת assignment.",
