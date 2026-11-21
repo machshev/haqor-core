@@ -118,6 +118,33 @@
       "analysis": {
         "entry": {
           "draft": {
+            "article_id": "2t",
+            "base": "fb8e5ae618da484dc9d5f7edd147c4c68fd5cfd884782f9c67f0d4f8d48d81cd",
+            "change": "Add Gen 15:10 as evidence for the existing object-pronoun sense of אֵת.",
+            "definition": "The direct-object marker carries a suffix identifying whom or what the verb acts on.",
+            "evidence": "In Gen 15:10, אֹתָם supplies the object of וַיְבַתֵּר, “he divided them.”"
+          },
+          "sense": "object-pronoun",
+          "word": 0
+        },
+        "evidence": "וַיְבַתֵּר אֹתָם בַּתָּוֶךְ means “he divided them down the middle.” The suffix refers back to the animals Abram took. The final clause, וְאֶת הַצִפֹּר לֹא בָתָר, expressly excludes the birds from the cutting.",
+        "gloss": "them",
+        "language": "he",
+        "lemma": "אֵת",
+        "morph": "HTo/Sp3mp",
+        "morphology": "The direct-object marker takes the form אֹת־ before the third-person masculine plural suffix ־ָם.",
+        "qualifier": "particle",
+        "root": "את",
+        "segments": "אֹת/ָם",
+        "sense": "The suffix identifies the animals as the direct object of “he divided.”"
+      },
+      "position": 6,
+      "surface": "אֹתָם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
             "article_id": "twk",
             "base": "627da03a940f01ffd6724581f778bacd8db86dd10ecfe03cb1bf684caef97db7",
             "change": "Assign the occurrence to the existing תָּוֶךְ in twk and clarify its Genesis 15:10 evidence under tavek-middle.",
