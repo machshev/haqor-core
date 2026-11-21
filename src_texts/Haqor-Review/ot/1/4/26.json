@@ -89,11 +89,17 @@
     {
       "analysis": {
         "entry": {
-          "existing": "bnh",
+          "draft": {
+            "article_id": "bnh",
+            "base": "1018e152114c4f969874b4158dc2679db8ef42f1621d947cb7f34dcb0f089995",
+            "change": "Add Genesis 11:19 as an example of the absolute plural under the existing ben-son sense.",
+            "definition": "A male child in relation to his parent.",
+            "evidence": "Genesis 11:19 pairs בָּנִים with וּבָנוֹת as the children Peleg fathered after Reu."
+          },
           "sense": "ben-son",
           "word": 0
         },
-        "evidence": "בֵּן is the subject of יֻלַּד “was born.” The phrase וּלְשֵׁת “and to Seth” identifies the father, and the next clause names the son אֱנוֹשׁ “Enosh.”",
+        "evidence": "בֵּן is the subject of יֻלַּד “was born.” וּלְשֵׁת “and to Seth” identifies the father, and the next clause names the son אֱנוֹשׁ “Enosh.”",
         "gloss": "a son",
         "language": "he",
         "lemma": "בֵּן",
@@ -102,7 +108,7 @@
         "qualifier": "",
         "root": "בנה",
         "segments": "בֵּן",
-        "sense": "son, male child"
+        "sense": "A male child in relation to his parent."
       },
       "position": 4,
       "surface": "בֵּן"
