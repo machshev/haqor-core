@@ -2,16 +2,17 @@
   "id": "26r",
   "root": "אטר",
   "status": "draft",
-  "updated": "2026-11-19",
-  "gloss": "close, restrict",
-  "summary": "The pit is pictured as a mouth that can close over a man. In Judges the adjective describes men who use their left hand.",
+  "updated": "2026-11-21",
+  "gloss": "bend round, close in, restrict",
+  "summary": "The root pictures something bent round until it closes in. In the psalm the pit is a mouth that closes over a man. In Judges the adjective describes men whose right hand is held back, so that they fight with the left. These are skilled warriors who sling with either hand, not men with a disabled hand.",
   "words": [
     {
       "lemma": "אָטַר",
       "pos": "verb",
-      "gloss": "close",
+      "gloss": "close round",
       "cognate_ids": [
-        "ar-bend"
+        "ar-bend",
+        "ar-frame"
       ],
       "bdb": [
         "a.ct.aa"
@@ -40,6 +41,9 @@
       "lemma": "אִטֵּר",
       "pos": "adjective",
       "gloss": "restricted in the right hand",
+      "cognate_ids": [
+        "ar-bend"
+      ],
       "bdb": [
         "a.ct.ac"
       ],
@@ -47,7 +51,7 @@
         {
           "id": "left-handed",
           "gloss": "left-handed",
-          "definition": "Ehud draws his sword with his left hand. The same expression describes expert slingers among the Benjaminites.",
+          "definition": "This is a man whose right hand is held back from its usual lead, so that he fights with the left. Ehud's left-handed draw lets him carry the sword unseen. The 700 picked Benjamites who are described this way sling at a hair and do not miss. Chronicles describes Benjamites who use both the right hand and the left with stones and arrows.",
           "evidence": [
             {
               "ref": "Jdg.3.15",
@@ -60,6 +64,9 @@
             {
               "ref": "Jdg.20.16",
               "role": "defining"
+            },
+            {
+              "ref": "1Ch.12.2"
             }
           ]
         }
@@ -72,17 +79,42 @@
       "lang": "ar",
       "form": "أَطَرَ",
       "translit": "ʾaṭara",
-      "gloss": "bend, curve",
-      "relation": "possible",
+      "gloss": "bend, curve; bend into a hoop with the ends brought together; (V) confine oneself, stay in one's house",
+      "relation": "cognate",
+      "note": "The bow or twig is bent round until its two ends meet, and figuratively one holds a wrongdoer's hands and bends him to what is right. Form V is used of a woman who keeps to her house or tent. Bending round and closing in fits the pit's mouth closing over the psalmist, and a right hand that is held back.",
       "evidence": [
         {
           "source": "lane",
-          "locator": "p. 66, n901, a bow or stick"
+          "locator": "p. 66, n901, a bow or stick; bent into a hoop; the hands of the wrongdoer"
+        },
+        {
+          "source": "lane",
+          "locator": "p. 66, n902, form V, bent; confined himself in a place"
+        },
+        {
+          "source": "wiktionary",
+          "locator": "Hebrew אטר, verb: cognate with Arabic أَطَرَ (to bend, curve)",
+          "url": "https://en.wiktionary.org/wiki/%D7%90%D7%98%D7%A8"
+        }
+      ]
+    },
+    {
+      "id": "ar-frame",
+      "lang": "ar",
+      "form": "إِطَارٌ",
+      "translit": "ʾiṭār",
+      "gloss": "anything that surrounds another thing: hoop, rim, ring",
+      "relation": "cognate",
+      "note": "The hoop of a tambourine or sieve, the rim round the lip, and a ring of men camped round a tribe. This is the closed circle that the verb's bending makes, like the mouth of the pit closing round a man.",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 66, n905, anything that surrounds another thing"
         }
       ]
     }
   ],
-  "note": "The Arabic parallel suggests a bending or enclosing movement. Judges describes how the men use their hands without explaining the cause.",
+  "note": "Checked 2026-11-21: SEDRA has no ʾṭr root, and Wiktionary, Oracc and Dillmann give no Aramaic, Akkadian or Ge'ez cognate, so Arabic is the only witness. Later Hebrew keeps both senses: Klein's Mishnaic niphal נֶאְטַר 'was closed', and Jastrow's אִטֵּר 'one whose right hand is tied up or unfit for labour'. The verses in Judges and 1 Ch 12:2 describe skill, so a disabled hand does not fit; the Septuagint's ἀμφοτεροδέξιος ('both-handed') agrees. Possibly there is word-play with בִּנְיָמִין, 'son of the right hand'. Possible link across roots: Arabic إِطَار 'ring round' sits close to עטר 'surround, crown' (36r), which may be an ʾ/ʿ alternation; עצר 'shut up' (39r) is close in meaning. Neither is shown to be the same root.",
   "created": "2026-11-19",
   "doctrine": []
 }
