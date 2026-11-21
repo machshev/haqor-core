@@ -103,6 +103,33 @@
       "analysis": {
         "entry": {
           "draft": {
+            "article_id": "2t",
+            "base": "42ef9362223a6f3551e83e2ed779b994b8d8a630b33b87372d0317e5f52ffbfc",
+            "change": "Add Genesis 10:27 as evidence for the existing definite-object sense of word 0 in article 2t.",
+            "definition": "Introduces a definite direct object, here a person identified by name.",
+            "evidence": "וְאֶת דִּקְלָה adds Diklah to the objects of יָלַד in the genealogy of Joktan."
+          },
+          "sense": "definite-object",
+          "word": 0
+        },
+        "evidence": "The final וְאֶת in Genesis 10:27 introduces דִּקְלָה, “Diklah,” as another son whom Joktan fathered. The governing verb יָלַד, “fathered,” is in Genesis 10:26.",
+        "gloss": "and (direct-object marker)",
+        "language": "he",
+        "lemma": "אֵת",
+        "morph": "HC/To",
+        "morphology": "וְ is the prefixed coordinating conjunction “and.” אֶת is the unsuffixed direct-object particle.",
+        "qualifier": "particle",
+        "root": "את",
+        "segments": "וְ/אֶת",
+        "sense": "Marks Diklah as a definite direct object."
+      },
+      "position": 4,
+      "surface": "וְאֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
             "article": {
               "created": "2026-11-20",
               "english": "Diklah",
