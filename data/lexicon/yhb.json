@@ -1,32 +1,32 @@
 {
+  "cognates": [],
+  "created": "2026-11-19",
+  "doctrine": [],
+  "gloss": "give, provide; come now",
   "id": "yhb",
+  "note": "Drafted for Psalms 21–30.",
   "root": "יהב",
   "status": "draft",
-  "created": "2026-11-19",
-  "updated": "2026-11-19",
+  "summary": "The verb gives or presents something to another. Psalm 29 uses its imperative to call the mighty ones to give Yahweh glory. In Genesis 11:3 the imperative introduces a proposal to make bricks together.",
   "tags": [
     "psalms",
     "creation",
     "worship"
   ],
-  "gloss": "give, provide",
-  "summary": "The verb gives or presents something to another. Psalm 29 uses its imperative to call the mighty ones to give Yahweh glory.",
+  "updated": "2026-11-21",
   "words": [
     {
-      "lemma": "יָהַב",
       "bdb": [
         "j.av.aa"
       ],
+      "gloss": "give; come now",
+      "lemma": "יָהַב",
       "pos": "verb",
-      "gloss": "give",
       "stems": [
         {
-          "stem": "qal",
-          "gloss": "give",
+          "gloss": "give; come now",
           "senses": [
             {
-              "id": "give",
-              "gloss": "give",
               "definition": "The imperative calls the sons of the mighty to give glory and strength to Yahweh.",
               "evidence": [
                 {
@@ -36,27 +36,40 @@
                 {
                   "ref": "Psa.29.2"
                 }
-              ]
+              ],
+              "gloss": "give",
+              "id": "give"
+            },
+            {
+              "definition": "The imperative הָבָה urges the hearer to join the speaker in the action that follows.",
+              "evidence": [
+                {
+                  "note": "Each speaker follows הָבָה with נִלְבְּנָה לְבֵנִים, “let us make bricks.”",
+                  "ref": "Gen.11.3",
+                  "role": "defining"
+                }
+              ],
+              "gloss": "come now",
+              "id": "come-now"
             }
-          ]
+          ],
+          "stem": "qal"
         }
       ]
     },
     {
-      "lemma": "יְהַב",
       "bdb": [
         "xj.ad.aa"
       ],
-      "pos": "verb",
       "gloss": "give",
+      "lang": "arc",
+      "lemma": "יְהַב",
+      "pos": "verb",
       "stems": [
         {
-          "stem": "peal",
           "gloss": "give",
           "senses": [
             {
-              "id": "give-2",
-              "gloss": "give",
               "definition": "Aramaic usage expresses giving or placing a thing.",
               "evidence": [
                 {
@@ -66,36 +79,35 @@
                 {
                   "ref": "Dan.6.24"
                 }
-              ]
+              ],
+              "gloss": "give",
+              "id": "give-2"
             }
-          ]
+          ],
+          "stem": "peal"
         }
-      ],
-      "lang": "arc"
+      ]
     },
     {
-      "lemma": "יְהָב",
       "bdb": [
         "j.av.ab"
       ],
-      "pos": "noun",
       "gloss": "lot, gift",
+      "lemma": "יְהָב",
+      "pos": "noun",
       "senses": [
         {
-          "id": "lot-gift",
-          "gloss": "lot, gift",
           "definition": "A given portion or lot is named from the act of giving.",
           "evidence": [
             {
               "ref": "Psa.30.7",
               "role": "defining"
             }
-          ]
+          ],
+          "gloss": "lot, gift",
+          "id": "lot-gift"
         }
       ]
     }
-  ],
-  "cognates": [],
-  "doctrine": [],
-  "note": "Drafted for Psalms 21–30."
+  ]
 }
