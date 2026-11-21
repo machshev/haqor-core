@@ -95,6 +95,33 @@
       "analysis": {
         "entry": {
           "draft": {
+            "article_id": "2t",
+            "base": "6d191482bfc535bd6237381832aea5e088bb581721858eedafc729d5d8c96a6e",
+            "change": "Add Genesis 11:31 as evidence for the existing definite-object sense of the Hebrew particle.",
+            "definition": "Introduces the particular person or thing a verb acts on, ordinarily a definite noun identified by the article, a name or a possessive suffix.",
+            "evidence": "In Genesis 11:31, וְאֶת לוֹט adds Lot to Abram as an object of וַיִּקַּח, “he took.”"
+          },
+          "sense": "definite-object",
+          "word": 0
+        },
+        "evidence": "Terah is the subject of וַיִּקַּח, “took.” After אֶת אַבְרָם בְּנוֹ, “Abram his son,” וְאֶת לוֹט adds Lot as the second person Terah took. וְאֵת שָׂרַי continues the same list.",
+        "gloss": "and [direct-object marker]",
+        "language": "he",
+        "lemma": "אֵת",
+        "morph": "HC/To",
+        "morphology": "The conjunction וְ means “and.” It prefixes the unsuffixed direct-object particle אֶת, a form of אֵת.",
+        "qualifier": "particle",
+        "root": "את",
+        "segments": "וְ/אֶת",
+        "sense": "Marks Lot as a definite direct object."
+      },
+      "position": 5,
+      "surface": "וְאֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
             "article": {
               "created": "2026-11-21",
               "english": "Lot",
