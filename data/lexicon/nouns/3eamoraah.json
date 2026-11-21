@@ -7,11 +7,11 @@
   "note": "The root key records the consonants of the place name. Its derivation is uncertain.",
   "root": "עמרה",
   "status": "draft",
-  "summary": "Genesis names Gomorrah alongside Sodom, Admah and Zeboiim when describing the boundary of Canaanite territory.",
+  "summary": "Genesis names Gomorrah alongside Sodom, Admah and Zeboiim when describing the boundary of Canaanite territory. The kings of Sodom and Gomorrah flee in the Valley of Siddim.",
   "tags": [
     "place"
   ],
-  "updated": "2026-11-20",
+  "updated": "2026-11-21",
   "words": [
     {
       "gloss": "Gomorrah",
@@ -19,12 +19,17 @@
       "pos": "name",
       "senses": [
         {
-          "definition": "A city named with Sodom in the description of the Canaanite boundary.",
+          "definition": "A city named alongside Sodom.",
           "evidence": [
             {
               "note": "The boundary description lists עֲמֹרָה between Sodom and Admah.",
               "ref": "Gen.10.19",
               "role": "defining"
+            },
+            {
+              "note": "The king of Gomorrah flees along with the king of Sodom in the Valley of Siddim.",
+              "ref": "Gen.14.10",
+              "role": "example"
             }
           ],
           "gloss": "Gomorrah",
