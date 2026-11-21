@@ -237,6 +237,52 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article": {
+              "created": "2026-11-21",
+              "english": "Chedorlaomer",
+              "entry": "",
+              "evidence": [
+                {
+                  "note": "כְּדָרְלָעֹמֶר מֶלֶךְ עֵילָם identifies Chedorlaomer by name and gives the land he ruled.",
+                  "ref": "Gen.14.1",
+                  "role": "defining"
+                }
+              ],
+              "gloss": "Chedorlaomer",
+              "id": "kkedaarelaa3omaer",
+              "name": "כְּדָרְלָעֹמֶר",
+              "people": [],
+              "root": "",
+              "status": "draft",
+              "summary": "Genesis 14:1 names Chedorlaomer as king of Elam. The verse gives his title without explaining his name.",
+              "updated": "2026-11-21"
+            },
+            "article_id": "kkedaarelaa3omaer",
+            "base": null,
+            "change": "Add a personal-name article with the Hebrew root left unassigned.",
+            "definition": "Chedorlaomer, king of Elam.",
+            "evidence": "Genesis 14:1 identifies Chedorlaomer by the title מֶלֶךְ עֵילָם, “king of Elam.”"
+          },
+          "word": 0
+        },
+        "evidence": "In Genesis 14:1, כְּדָרְלָעֹמֶר is followed by מֶלֶךְ עֵילָם, “king of Elam.” The same name-and-title pattern identifies the other kings in the list. The verse gives no derivation from כדר.",
+        "gloss": "Chedorlaomer",
+        "language": "he",
+        "lemma": "כְּדָרְלָעֹמֶר",
+        "morph": "HNp",
+        "morphology": "Hebrew proper noun. The initial כְּ belongs to the name. The word has no prefix or suffix.",
+        "qualifier": "",
+        "root": "",
+        "segments": "כְּדָרְלָעֹמֶר",
+        "sense": "The personal name of the king of Elam."
+      },
+      "position": 8,
+      "surface": "כְּדָרְלָעֹמֶר"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "mlk",
           "sense": "king",
           "word": 0
