@@ -774,13 +774,7 @@ const ID_CONSONANTS: &[(char, char)] = &[
 ];
 
 /// The final forms and the letters they end a word for.
-const FINAL_FORMS: &[(char, char)] = &[
-    ('ך', 'כ'),
-    ('ם', 'מ'),
-    ('ן', 'נ'),
-    ('ף', 'פ'),
-    ('ץ', 'צ'),
-];
+const FINAL_FORMS: &[(char, char)] = &[('ך', 'כ'), ('ם', 'מ'), ('ן', 'נ'), ('ף', 'פ'), ('ץ', 'צ')];
 
 /// Each vowel point's run of vowel letters in an id.
 const ID_VOWELS: &[(char, &str)] = &[
@@ -812,7 +806,10 @@ fn id_letter(base: char, dot: Option<char>) -> Option<char> {
         ('ש', None) => Some('j'),
         ('ש', _) => None,
         (_, Some(_)) => None,
-        _ => ID_CONSONANTS.iter().find(|(h, _)| *h == base).map(|(_, a)| *a),
+        _ => ID_CONSONANTS
+            .iter()
+            .find(|(h, _)| *h == base)
+            .map(|(_, a)| *a),
     }
 }
 
@@ -844,7 +841,10 @@ pub fn root_id(root: &str) -> Result<String> {
         };
         match id_letter(c, dot) {
             Some(letter) => out.push(letter),
-            None => bail!("root `{root}` has `{c}` ({:04X}), not a root letter", c as u32),
+            None => bail!(
+                "root `{root}` has `{c}` ({:04X}), not a root letter",
+                c as u32
+            ),
         }
     }
     if out.is_empty() {
@@ -969,7 +969,10 @@ pub fn word_id(word: &str) -> Result<String> {
                 if l.rafe {
                     out.push('1');
                 }
-                if !l.dagesh && l.vowel.is_none() && !l.rafe && !(has_final && l.final_form != ends_word)
+                if !l.dagesh
+                    && l.vowel.is_none()
+                    && !l.rafe
+                    && !(has_final && l.final_form != ends_word)
                     && let Some(Piece::Letter(next)) = pieces.get(i + 1)
                     && id_letter(next.base, next.dot) == Some(letter)
                 {
@@ -1002,7 +1005,8 @@ pub fn word_of_id(id: &str) -> Result<String> {
             i += run;
             continue;
         }
-        let (base, dot) = hebrew_letter(c).with_context(|| format!("`{id}`: `{c}` is no letter"))?;
+        let (base, dot) =
+            hebrew_letter(c).with_context(|| format!("`{id}`: `{c}` is no letter"))?;
         i += 1;
         let dagesh = chars.get(i) == Some(&c);
         if dagesh {
@@ -1124,7 +1128,6 @@ pub fn article_id(text: &str) -> Result<(String, &'static str)> {
         Ok((entry_id(&entry)?, ""))
     }
 }
-
 
 fn is_kebab(s: &str) -> bool {
     !s.is_empty()
@@ -2657,7 +2660,8 @@ mod tests {
             "{error}"
         );
         // A second name of the same bearer, even one spelled alike, is its own.
-        let other = twin.replace(r#""name": "נָפִישׁ""#, r#""name": "נֶפֶשׁ""#)
+        let other = twin
+            .replace(r#""name": "נָפִישׁ""#, r#""name": "נֶפֶשׁ""#)
             .replace(r#""id": "naapiyx-2""#, r#""id": "naepaex""#);
         assert_eq!(names(&other).unwrap().names, 2);
     }
@@ -2696,10 +2700,7 @@ mod tests {
             .replace(r#""root": "נפש""#, r#""root": "רוח""#)
             .replace(r#""word": "נֶפֶשׁ""#, r#""word": "רוּחַ""#);
         let error = check_name(&json).unwrap_err().to_string();
-        assert!(
-            error.contains("is not the root of entry `npx`"),
-            "{error}"
-        );
+        assert!(error.contains("is not the root of entry `npx`"), "{error}");
         assert!(error.contains("is no word of `npx`"), "{error}");
     }
 
@@ -3206,7 +3207,10 @@ mod tests {
             assert_eq!(root_of_id(&root).unwrap(), entry.root);
             for word in &entry.words {
                 let id = word_id(&word.lemma).unwrap();
-                assert_eq!(word_of_id(&id).unwrap(), canonical_word(&word.lemma).unwrap());
+                assert_eq!(
+                    word_of_id(&id).unwrap(),
+                    canonical_word(&word.lemma).unwrap()
+                );
                 assert_eq!(word_id(&word_of_id(&id).unwrap()).unwrap(), id);
             }
         }
