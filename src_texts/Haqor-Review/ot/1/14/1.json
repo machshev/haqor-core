@@ -210,6 +210,33 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article_id": "2aellaasaar",
+            "base": null,
+            "change": "Add a place-name entry with the gloss “Ellasar” and correct the source gloss “emptiness; vanity.”",
+            "definition": "Ellasar is the place named as Arioch’s realm in Genesis 14:1.",
+            "evidence": "The title אַרְיוֹךְ מֶלֶךְ אֶלָּסָר identifies Arioch as king of Ellasar."
+          },
+          "sense": "ellasar",
+          "word": 0
+        },
+        "evidence": "Genesis 14:1 calls Arioch מֶלֶךְ אֶלָּסָר just as it calls Amraphel מֶלֶךְ שִׁנְעָר. Each place name identifies the realm of the preceding king.",
+        "gloss": "Ellasar",
+        "language": "he",
+        "lemma": "אֶלָּסָר",
+        "morph": "HNp",
+        "morphology": "Hebrew proper noun with no prefix or suffix. It completes the construct phrase מֶלֶךְ אֶלָּסָר, “king of Ellasar.”",
+        "qualifier": "",
+        "root": "אלסר",
+        "segments": "אֶלָּסָר",
+        "sense": "The place ruled by Arioch."
+      },
+      "position": 7,
+      "surface": "אֶלָּסָר"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "mlk",
           "sense": "king",
           "word": 0
