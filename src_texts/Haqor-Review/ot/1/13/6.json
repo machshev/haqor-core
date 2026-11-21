@@ -206,6 +206,33 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article_id": "l2",
+            "base": "a13da96e7e0a564ebe024a6dcf78584c3b6d414314a7aac9f544a9e9bde6c30c",
+            "change": "Add Gen.13.6 as an example of the existing Hebrew sense ‘not’ in article l2.",
+            "definition": "לֹא negates a statement of fact.",
+            "evidence": "In Gen.13.6, לֹא immediately precedes יָכְלוּ and denies their ability to live together."
+          },
+          "sense": "not",
+          "word": 0
+        },
+        "evidence": "Their possessions were extensive, and וְלֹא יָכְלוּ לָשֶׁבֶת יַחְדָּו gives the consequence, “and they could not live together.”",
+        "gloss": "and not",
+        "language": "he",
+        "lemma": "לֹא",
+        "morph": "HC/Tn",
+        "morphology": "The prefixed conjunction וְ joins the final clause to the preceding statement. The negative particle לֹא negates יָכְלוּ, “they were able.”",
+        "qualifier": "",
+        "root": "לא",
+        "segments": "וְ/לֹא",
+        "sense": "Negates a statement of fact, here the ability to live together."
+      },
+      "position": 10,
+      "surface": "וְלֹא"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "ykl",
           "sense": "be-able",
           "word": 0
