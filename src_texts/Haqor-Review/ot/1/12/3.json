@@ -117,6 +117,33 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article_id": "b",
+            "base": "4a68a1e1dd2b11d091aef5e43587cf72788923edeeca9497f63e1c9167f7ed4a",
+            "change": "Add Genesis 12:3 as evidence for the personal use of be-means in the existing Hebrew preposition entry.",
+            "definition": "בְּ can identify the person through whom an act takes effect.",
+            "evidence": "In Genesis 12:3 Yahweh promises that all the families of the earth will be blessed בְךָ, ‘in you’, addressing Abram."
+          },
+          "sense": "be-means",
+          "word": 0
+        },
+        "evidence": "The promise first addresses Abram as ‘you’ in מְבָרְכֶיךָ, ‘those who bless you’. In וְנִבְרְכוּ בְךָ כֹּל מִשְׁפְּחֹת הָאֲדָמָה, the families of the earth receive the blessing, and בְךָ identifies Abram as the one through whom it reaches them.",
+        "gloss": "in you",
+        "language": "he",
+        "lemma": "בְּ",
+        "morph": "HR/Sp2ms",
+        "morphology": "The inseparable preposition בְּ takes the second-person masculine singular pronominal suffix ךָ, referring to Abram.",
+        "qualifier": "",
+        "root": "ב",
+        "segments": "בְ/ךָ",
+        "sense": "Marks the person through whom a blessing reaches others."
+      },
+      "position": 5,
+      "surface": "בְךָ"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "kll",
           "sense": "all-the-whole",
           "word": 0

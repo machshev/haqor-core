@@ -87,7 +87,7 @@
         },
         {
           "locator": "pp. 101–102, §66.2–66.4",
-          "note": "\"instrumental: b- 'with'\"; \"time, being in/at: b-\"; \"causal: b- 'on account of'\"; compound prepositions \"bd (b- + *-d- 'hand') and byd (b- + yd 'hand') 'in/from the hand(s)/power) of'; bqrb, btk 'in the midst of'\".",
+          "note": "\"instrumental: b- 'with'\"; \"time, being in/at: b-\"; \"causal: b- 'on account of'\"; compound prepositions \"bd (and byd) 'in/from the hand(s)/power) of'; bqrb, btk 'in the midst of'\".",
           "source": "segert-1984"
         },
         {
@@ -100,7 +100,7 @@
       "gloss": "in (place and direction, time), with, for (price), on account of; from",
       "id": "uga-b",
       "lang": "uga",
-      "note": "With suffixes bh, bhm. The lengthened bm answers to Hebrew בְּמוֹ. Ugaritic also joins it to words for \"hand\" and \"midst\" as Hebrew does: bd, byd \"in/from the hand of\", bqrb, btk \"in the midst of\" (בְּיַד, בְּקֶרֶב, בְּתוֹךְ).",
+      "note": "With suffixes bh, bhm. The lengthened bm answers to Hebrew בְּמוֹ. Ugaritic also joins it to words for \"hand\" and \"midst\" as Hebrew does: bd, byd \"in/from the hand of\", bqrb \"in the midst of\" (בְּיַד, בְּקֶרֶב, בְּתוֹךְ).",
       "relation": "cognate",
       "translit": "b- /bi-/, by, bm"
     },
@@ -180,7 +180,7 @@
           "to": "Heb.1.2"
         }
       ],
-      "statement": "Scripture uses בְּ of the one God speaks by. Miriam and Aaron ask, \"Has Yahweh spoken only by (בְּ) Moses? Has he not spoken by (בָּ) us also?\" (Num 12:2); \"the beginning of Yahweh's speaking by (בְּ) Hosea\" (Hos 1:2); David says, \"the Spirit of Yahweh spoke by me (בִּי), and his word was on my tongue\" (2Sa 23:2), and Jesus reads a psalm as David speaking \"by the Holy Spirit\" (Mrk 12:36). Hebrews sets the Son in the same place: God, spoke to the fathers \"in the prophets\", \"has in these last days spoken to us in a Son (ἐν υἱῷ), whom he appointed heir of all things\" (Heb 1:1-2). In every case the speaker is God and the one he speaks by is the one he sent and appointed: the word the prophets and the Son spoke is God's own word.",
+      "statement": "Scripture uses בְּ of the one God speaks by. Miriam and Aaron ask, \"Has Yahweh spoken only by (בְּ) Moses? Has he not spoken by (בָּ) us also?\" (Num 12:2); \"the beginning of Yahweh's speaking by (בְּ) Hosea\" (Hos 1:2); David says, \"the Spirit of Yahweh spoke by me (בִּי), and his word was on my tongue\" (2Sa 23:2), and Jesus reads a psalm as David speaking \"by the Holy Spirit\" (Mrk 12:36). Hebrews sets the Son in the same place: God, spoke to the fathers \"in the prophets\", and \"has in these last days spoken to us in a Son (ἐν υἱῷ), whom he appointed heir of all things\" (Heb 1:1-2). In every case the speaker is God and the one he speaks by is the one he sent and appointed: the word the prophets and the Son spoke is God's own word.",
       "topic": "god-speaks-through-his-servants"
     },
     {
@@ -242,7 +242,7 @@
     "means",
     "price"
   ],
-  "updated": "2026-11-20",
+  "updated": "2026-11-21",
   "words": [
     {
       "bdb": [
@@ -713,6 +713,10 @@
             {
               "note": "The Aramaic: \"a stone was cut out דִּי־לָא בִידַיִן, not by hands\"; so Dan 2:45, and Mrk 14:58, \"another not made with hands (ἀχειροποίητον)\".",
               "ref": "Dan.2.34"
+            },
+            {
+              "note": "All the families of the earth will be blessed בְךָ, ‘in you’. Yahweh addresses Abram as the person through whom the blessing reaches the families.",
+              "ref": "Gen.12.3"
             }
           ],
           "gloss": "with, by, by means of; through (one who acts)",
@@ -1148,11 +1152,12 @@
               },
               {
                 "note": "\"בְּיוֹם עֲשׂוֹת יְהוָה אֱלֹהִים, in the day that Yahweh God made earth and heavens\".",
-                "ref": "Gen.2.4"
+                "ref": "Gen.2.4",
+                "role": "defining"
               },
               {
                 "note": "\"בְּיוֹם הַשַּׁבָּת, on the sabbath day\".",
-                "ref": "Jer.17.24"
+                "ref": "Jer.17.7"
               }
             ],
             "gloss": "in the day that, when; on that day",
@@ -1171,7 +1176,7 @@
                 "role": "defining"
               },
               {
-                "note": "\"I will walk בְּתוֹכְכֶם, among you, and be your God\"; quoted 2Co 6:16, ἐνοικήσω ἐν αὐτοῖς.",
+                "note": "\"I will walk בְתוֹכְכֶם, among you, and be your God\"; quoted 2Co 6:16, ἐνοικήσω ἐν αὐτοῖς.",
                 "ref": "Lev.26.12"
               }
             ],
@@ -1187,7 +1192,12 @@
               },
               {
                 "note": "\"my name is בְּקִרְבּוֹ, in him\".",
-                "ref": "Exo.23.21"
+                "ref": "Exo.23.21",
+                "role": "defining"
+              },
+              {
+                "note": "\"to take a nation מִקֶּרֶב גּוֹי, from the midst of a nation\".",
+                "ref": "Deu.4.34"
               }
             ],
             "gloss": "in the midst of, within, among",
@@ -1201,9 +1211,8 @@
                 "role": "defining"
               },
               {
-                "note": "\"every man did what was right בְּעֵינָיו, in his own eyes\".",
-                "ref": "Jdg.21.25",
-                "role": "defining"
+                "note": "\"every man did what was right בְּעֵינָיו, in his eyes\".",
+                "ref": "Jdg.21.25"
               },
               {
                 "note": "\"do to them as is good בְּעֵינֵיכֶם, in your eyes\".",
@@ -1252,7 +1261,7 @@
                 "role": "defining"
               },
               {
-                "note": "\"Blessed is he who comes בְּשֵׁם יְהוָה, in the name of Yahweh\"; cried to Jesus, Mat 21:9.",
+                "note": "\"Blessed is he who comes in the name of Yahweh\"; cried to Jesus, Mat 21:9.",
                 "ref": "Psa.118.26",
                 "role": "defining"
               },
@@ -1277,7 +1286,8 @@
               },
               {
                 "note": "\"if you will indeed obey my voice and keep my covenant\".",
-                "ref": "Exo.19.5"
+                "ref": "Exo.19.5",
+                "role": "defining"
               },
               {
                 "note": "\"Take heed before him and obey בְּקֹלוֹ, his voice\".",
@@ -1339,7 +1349,8 @@
                 "role": "defining"
               },
               {
-                "ref": "Psa.78.32"
+                "ref": "Psa.78.32",
+                "role": "defining"
               }
             ],
             "gloss": "for all this, in spite of this",
@@ -1385,8 +1396,7 @@
               },
               {
                 "note": "\"who kills his neighbour בִּבְלִי־דַעַת, unawares\".",
-                "ref": "Deu.4.42",
-                "role": "defining"
+                "ref": "Deu.4.42"
               }
             ],
             "gloss": "without, for lack of",
@@ -1401,8 +1411,7 @@
               },
               {
                 "note": "\"you, Yahweh, are seen עַיִן בְּעַיִן, eye to eye\".",
-                "ref": "Num.14.14",
-                "role": "defining"
+                "ref": "Num.14.14"
               }
             ],
             "gloss": "face to face; eye to eye",
@@ -1422,7 +1431,7 @@
           {
             "evidence": [
               {
-                "note": "\"I will sing to Yahweh בְּחַיָּי, in my life; I will sing praise to my God בְּעוֹדִי, while I have my being\".",
+                "note": "\"I will sing to Yahweh בְּחַיָּי, in my life; I will sing praise to my God בְּעוֹדִי, while I yet am\".",
                 "ref": "Psa.104.33",
                 "role": "defining"
               }
@@ -1460,7 +1469,6 @@
       "pos": "preposition",
       "senses": [
         {
-          "id": "in-through-with",
           "definition": "As בְּ: the element passed through or a thing is in, and the means something is done with.",
           "evidence": [
             {
@@ -1495,7 +1503,8 @@
               "ref": "Job.37.8"
             }
           ],
-          "gloss": "in, through; with"
+          "gloss": "in, through; with",
+          "id": "in-through-with"
         }
       ],
       "summary": "A longer form of בְּ with an added -mô, found only in poetry: Isaiah (43:2; 44:16, 19), Job (16:4, 5; 19:16; 37:8) and Psa 11:2, as לְמוֹ beside לְ. Ugaritic has the same lengthened bm beside b, and Sabaic b-m and b-mw. The corpus also files Isa 25:10 here, where the written text has במו (read בְּמֵי, \"in the water of\")."
@@ -1514,7 +1523,6 @@
       "pos": "preposition",
       "senses": [
         {
-          "id": "in-at-place-time",
           "definition": "The place and the time a thing is in.",
           "evidence": [
             {
@@ -1545,10 +1553,10 @@
               "ref": "Dan.5.30"
             }
           ],
-          "gloss": "in, at (place, time)"
+          "gloss": "in, at (place, time)",
+          "id": "in-at-place-time"
         },
         {
-          "id": "with-by-means-name",
           "definition": "What a thing is done with or by, and the name acted in.",
           "evidence": [
             {
@@ -1570,10 +1578,10 @@
               "ref": "Ezr.5.1"
             }
           ],
-          "gloss": "with, by (means, name)"
+          "gloss": "with, by (means, name)",
+          "id": "with-by-means-name"
         },
         {
-          "id": "in-after-trust-among",
           "definition": "The one trusted in, the company something is among, and the one acted against.",
           "evidence": [
             {
@@ -1591,10 +1599,11 @@
               "ref": "Dan.7.8"
             }
           ],
-          "gloss": "in (after trust); among; against"
+          "gloss": "in (after trust); among; against",
+          "id": "in-after-trust-among"
         }
       ],
-      "summary": "Scripture's Aramaic has the same preposition with the same range: place, time, means, the name acted in, and the one trusted. With suffixes: בֵּהּ (Dan 5:30; 6:24), בְּהוֹן (Dan 5:2, 3). It is in 225 Aramaic words of the text, 30 of them free forms with a suffix."
+      "summary": "Scripture's Aramaic has the same preposition with the same range: place, time, means, the name acted in, and the one trusted. With suffixes: בֵּהּ (Dan 5:30; 6:24), בְּהוֹן (Dan 5:2, 3). It is in 225 Aramaic words of the text, 30 of them free forms with a suffix."
     }
   ]
 }
