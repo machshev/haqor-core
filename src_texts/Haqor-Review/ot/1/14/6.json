@@ -7,6 +7,33 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article_id": "2t",
+            "base": "84b1f8eb1ddcf7c89455d7bc33113f65652bef1a69b2fccd403afb739d661d55",
+            "change": "Add Genesis 14:6 as evidence for the existing definite-object sense of the Hebrew particle.",
+            "definition": "אֵת introduces the definite person or thing a verb acts on.",
+            "evidence": "Genesis 14:5–6 lists the peoples the kings struck. וְאֶת הַחֹרִי continues the same construction across the verse boundary."
+          },
+          "sense": "definite-object",
+          "word": 0
+        },
+        "evidence": "וְאֶת הַחֹרִי adds the Horites to the peoples whom the kings struck. The governing verb is וַיַּכּוּ, “they struck,” in Genesis 14:5, and the article הַ makes הַחֹרִי definite.",
+        "gloss": "and [direct-object marker]",
+        "language": "he",
+        "lemma": "אֵת",
+        "morph": "HC/To",
+        "morphology": "The prefixed conjunction וְ means “and.” אֶת is the unsuffixed direct-object particle.",
+        "qualifier": "particle",
+        "root": "את",
+        "segments": "וְ/אֶת",
+        "sense": "Marks the definite direct object."
+      },
+      "position": 0,
+      "surface": "וְאֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "7rr",
           "sense": "horite",
           "word": 6
