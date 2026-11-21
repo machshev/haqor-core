@@ -28,7 +28,7 @@
     "questions",
     "speech"
   ],
-  "updated": "2026-11-20",
+  "updated": "2026-11-21",
   "words": [
     {
       "bdb": [
@@ -39,7 +39,6 @@
       "pos": "pronoun",
       "senses": [
         {
-          "id": "what",
           "cognate_ids": [
             "arc-mah"
           ],
@@ -56,10 +55,10 @@
               "ref": "Gen.4.10"
             }
           ],
-          "gloss": "what?"
+          "gloss": "what?",
+          "id": "what"
         },
         {
-          "id": "why-for-what-purpose",
           "definition": "With the preposition לְ, the question asks for a reason. The psalm asks why the nations gather against Yahweh and why Yahweh seems to stand far off.",
           "evidence": [
             {
@@ -81,12 +80,17 @@
               "note": "In וְלָמָּה נָפְלוּ פָנֶיךָ Yahweh asks Cain why his face has fallen.",
               "ref": "Gen.4.6",
               "role": "example"
+            },
+            {
+              "note": "Pharaoh’s לָמָּה לֹא הִגַּדְתָּ לִּי asks why Abram did not tell him that Sarai was his wife.",
+              "ref": "Gen.12.18",
+              "role": "example"
             }
           ],
-          "gloss": "why? for what purpose?"
+          "gloss": "why? for what purpose?",
+          "id": "why-for-what-purpose"
         },
         {
-          "id": "how-how-greatly",
           "definition": "The question word can introduce an exclamation of wonder or distress. Psalm 8 opens and closes by marveling at the majesty of Yahweh’s name.",
           "evidence": [
             {
@@ -100,10 +104,10 @@
               "ref": "Psa.3.2"
             }
           ],
-          "gloss": "how! how greatly!"
+          "gloss": "how! how greatly!",
+          "id": "how-how-greatly"
         },
         {
-          "id": "what-or-whatever",
           "definition": "In an embedded question it introduces the thing to be discovered. Mordecai walks before the court to learn how Esther fares and what will happen to her.",
           "evidence": [
             {
@@ -114,7 +118,8 @@
               "ref": "Gen.2.19"
             }
           ],
-          "gloss": "what or whatever"
+          "gloss": "what or whatever",
+          "id": "what-or-whatever"
         }
       ]
     },
@@ -128,7 +133,6 @@
       "pos": "pronoun",
       "senses": [
         {
-          "id": "what-that-which",
           "cognate_ids": [
             "arc-mah"
           ],
@@ -145,10 +149,10 @@
               "ref": "Ezr.6.9"
             }
           ],
-          "gloss": "what, that which"
+          "gloss": "what, that which",
+          "id": "what-that-which"
         },
         {
-          "id": "why",
           "definition": "With a prefixed preposition the word asks the reason for the urgency of a decree or for letting harm come to a king.",
           "evidence": [
             {
@@ -159,10 +163,10 @@
               "ref": "Ezr.4.22"
             }
           ],
-          "gloss": "why?"
+          "gloss": "why?",
+          "id": "why"
         },
         {
-          "id": "how-great",
           "definition": "With the comparison prefix it introduces a cry of admiration at God’s signs and wonders.",
           "evidence": [
             {
@@ -170,7 +174,8 @@
               "role": "defining"
             }
           ],
-          "gloss": "how great!"
+          "gloss": "how great!",
+          "id": "how-great"
         }
       ]
     },
@@ -183,7 +188,6 @@
       "root": "מא",
       "senses": [
         {
-          "id": "when-whenever",
           "definition": "The Peshitta uses the pronoun in expressions introducing an occasion, such as giving to the poor, praying or fasting.",
           "evidence": [
             {
@@ -197,7 +201,8 @@
               "ref": "Mat.6.17"
             }
           ],
-          "gloss": "when, whenever"
+          "gloss": "when, whenever",
+          "id": "when-whenever"
         }
       ]
     }
