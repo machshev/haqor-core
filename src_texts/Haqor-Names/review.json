@@ -1,5 +1,12 @@
 {
   "records": {
+    "Canaanites@Gen.12.6": {
+      "id": 100002,
+      "name": "Canaanites",
+      "kind": "person",
+      "description": "The people called Canaanites who inhabited the land of Canaan in Abram’s time, mentioned collectively in Genesis 12:6 and alongside the Perizzites in Genesis 13:7.",
+      "form": "כְּנַעֲנִי"
+    },
     "Heavens@Gen.1.8": {
       "id": 100001,
       "name": "Heavens",
@@ -9765,6 +9772,87 @@
         {
           "position": 8,
           "surface": "וְאֹהָלִים",
+          "key": null
+        }
+      ],
+      "68871": [
+        {
+          "position": 0,
+          "surface": "וַיְהִי",
+          "key": null
+        },
+        {
+          "position": 1,
+          "surface": "רִיב",
+          "key": null
+        },
+        {
+          "position": 2,
+          "surface": "בֵּין",
+          "key": null
+        },
+        {
+          "position": 3,
+          "surface": "רֹעֵי",
+          "key": null
+        },
+        {
+          "position": 4,
+          "surface": "מִקְנֵה",
+          "key": null
+        },
+        {
+          "position": 5,
+          "surface": "אַבְרָם",
+          "key": "Abraham@Gen.11.26",
+          "evidence": "Abram, son of Terah and later named Abraham, owns the livestock tended by the first group of herdsmen."
+        },
+        {
+          "position": 6,
+          "surface": "וּבֵין",
+          "key": null
+        },
+        {
+          "position": 7,
+          "surface": "רֹעֵי",
+          "key": null
+        },
+        {
+          "position": 8,
+          "surface": "מִקְנֵה",
+          "key": null
+        },
+        {
+          "position": 9,
+          "surface": "לוֹט",
+          "key": "Lot@Gen.11.27",
+          "evidence": "Lot, son of Haran and nephew of Abram, owns the livestock tended by the second group of herdsmen."
+        },
+        {
+          "position": 10,
+          "surface": "וְהַכְּנַעֲנִי",
+          "key": "Canaanites@Gen.12.6",
+          "evidence": "The collective gentilic identifies the Canaanites who lived in the land alongside the Perizzites. Genesis 12:6 uses the same gentilic for the inhabitants Abram encountered there."
+        },
+        {
+          "position": 11,
+          "surface": "וְהַפְּרִזִּי",
+          "key": "Perizzites@Gen.13.7",
+          "evidence": "The collective gentilic names the Perizzites as a people living alongside the Canaanites, matching the group recorded at this verse."
+        },
+        {
+          "position": 12,
+          "surface": "אָז",
+          "key": null
+        },
+        {
+          "position": 13,
+          "surface": "יֹשֵׁב",
+          "key": null
+        },
+        {
+          "position": 14,
+          "surface": "בָּאָרֶץ",
           "key": null
         }
       ]
