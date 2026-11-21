@@ -116,6 +116,33 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article_id": "2t",
+            "base": "a24ec0bd3e818d21200bd411b0c3061b584252fa60def6bb7d2f9438677f04d5",
+            "change": "Add Gen.11.5 as an example of the existing definite-object sense at word index 0.",
+            "definition": "Introduces the definite person or thing that a verb takes as its direct object.",
+            "evidence": "Gen.11.5 repeats אֶת before הַמִּגְדָּל, the second object of לִרְאֹת."
+          },
+          "sense": "definite-object",
+          "word": 0
+        },
+        "evidence": "In לִרְאֹת אֶת הָעִיר וְאֶת הַמִּגְדָּל, “to see the city and the tower,” each definite noun has its own object marker. The conjunction on the second marker joins the tower to the city as a second object of seeing.",
+        "gloss": "and [direct-object marker]",
+        "language": "he",
+        "lemma": "אֵת",
+        "morph": "HC/To",
+        "morphology": "The prefixed conjunction וְ means “and.” The unsuffixed particle אֶת marks the following noun phrase as a direct object.",
+        "qualifier": "particle",
+        "root": "את",
+        "segments": "וְ/אֶת",
+        "sense": "Marks the tower as the second definite direct object of לִרְאֹת, “to see.”"
+      },
+      "position": 5,
+      "surface": "וְאֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "gdl",
           "sense": "tower",
           "word": 2
