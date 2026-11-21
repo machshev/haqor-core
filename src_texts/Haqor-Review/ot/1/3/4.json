@@ -161,26 +161,20 @@
     {
       "analysis": {
         "entry": {
-          "draft": {
-            "article_id": "l2",
-            "base": "a13da96e7e0a564ebe024a6dcf78584c3b6d414314a7aac9f544a9e9bde6c30c",
-            "change": "Add Gen.13.6 as an example of the existing Hebrew sense ‘not’ in article l2.",
-            "definition": "לֹא negates a statement of fact.",
-            "evidence": "In Gen.13.6, לֹא immediately precedes יָכְלוּ and denies their ability to live together."
-          },
+          "existing": "l2",
           "sense": "not",
           "word": 0
         },
-        "evidence": "In לֹא מוֹת תְּמֻתוּן, לֹא negates the prediction that the woman and those addressed with her will die. The infinitive absolute מוֹת emphasizes the finite verb תְּמֻתוּן, giving the serpent’s denial the force of “You certainly will not die.”",
+        "evidence": "In לֹא מוֹת תְּמֻתוּן, לֹא negates the prediction that those addressed will die. The infinitive absolute מוֹת emphasizes the finite verb תְּמֻתוּן, so the serpent emphatically denies the prediction: “You certainly will not die.”",
         "gloss": "not",
         "language": "he",
         "lemma": "לֹא",
         "morph": "HTn",
-        "morphology": "Hebrew negative particle without prefix or suffix.",
+        "morphology": "Hebrew negative particle without a prefix or suffix.",
         "qualifier": "",
         "root": "לא",
         "segments": "לֹא",
-        "sense": "Negates a statement of fact, here the ability to live together."
+        "sense": "Negates a statement of fact."
       },
       "position": 4,
       "surface": "לֹא"
