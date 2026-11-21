@@ -23,7 +23,7 @@
   "note": "The Hebrew interrogative is a rootless key in the corpus index. Many Aramaic-key surface matches occur in Hebrew contexts. SEDRA lexeme 1696 is the short Syriac form, while the longer interrogative מָנָא is filed under מנ.",
   "root": "מה",
   "status": "draft",
-  "summary": "מָה asks what something is, and with לְ it asks why. It can also express wonder, as when Psalm 8 celebrates the majesty of Yahweh’s name.",
+  "summary": "מָה asks what something is, and with לְ it asks why. With בְּ it can ask by what means. It can also express wonder, as when Psalm 8 celebrates the majesty of Yahweh’s name.",
   "tags": [
     "questions",
     "speech"
@@ -125,6 +125,18 @@
           ],
           "gloss": "what or whatever",
           "id": "what-or-whatever"
+        },
+        {
+          "definition": "With the preposition בְּ, מָה asks by what means something can be known or done.",
+          "evidence": [
+            {
+              "note": "Abram asks בַּמָּה אֵדַע, “By what means shall I know?”, seeking assurance that he will possess the land.",
+              "ref": "Gen.15.8",
+              "role": "defining"
+            }
+          ],
+          "gloss": "by what means?",
+          "id": "by-what-means"
         }
       ]
     },

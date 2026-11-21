@@ -68,6 +68,33 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article_id": "mh",
+            "base": "ee941e457a5eea6f0c47e38338da6633a8b9003346de64b7d1012faeca8a18ff",
+            "change": "Add the instrumental use of בְּ with מָה to the Hebrew pronoun at word index 0.",
+            "definition": "With the preposition בְּ, מָה asks by what means something can be known or done.",
+            "evidence": "In Genesis 15:8 Abram asks בַּמָּה אֵדַע, “By what means shall I know?”"
+          },
+          "sense": "by-what-means",
+          "word": 0
+        },
+        "evidence": "In בַּמָּה אֵדַע כִּי אִירָשֶׁנָּה, “By what means shall I know that I will possess it?”, the כִּי clause states what Abram wants to know. בַּמָּה asks what will give him that assurance.",
+        "gloss": "by what means?",
+        "language": "he",
+        "lemma": "מָה",
+        "morph": "HR/Ti",
+        "morphology": "The prefixed preposition בַּ means “by” and governs the interrogative מָה, “what?” The joined form has a doubled מ.",
+        "qualifier": "",
+        "root": "מה",
+        "segments": "בַּ/מָּה",
+        "sense": "With בְּ, asks by what means something can be known or done."
+      },
+      "position": 3,
+      "surface": "בַּמָּה"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "yd3",
           "word": 0
         },
