@@ -1,0 +1,68 @@
+{
+  "cognates": [],
+  "created": "2026-11-21",
+  "doctrine": [],
+  "gloss": "dead body, carcass; be exhausted",
+  "id": "pgr",
+  "root": "פגר",
+  "status": "draft",
+  "summary": "The noun פֶּגֶר denotes the dead body of an animal or a person. The verb describes men too exhausted to continue a pursuit. The connection between these uses is uncertain.",
+  "tags": [
+    "body",
+    "death"
+  ],
+  "updated": "2026-11-21",
+  "words": [
+    {
+      "gender": "m",
+      "gloss": "dead body, carcass",
+      "lemma": "פֶּגֶר",
+      "pos": "noun",
+      "senses": [
+        {
+          "definition": "The body of a dead person or animal.",
+          "evidence": [
+            {
+              "note": "After Abram lays out the animals, the bird of prey descends upon הַפְּגָרִים, their carcasses.",
+              "ref": "Gen.15.10",
+              "role": "defining",
+              "to": "Gen.15.11"
+            },
+            {
+              "note": "The people are told that their own bodies will fall in the wilderness.",
+              "ref": "Num.14.32",
+              "role": "defining"
+            }
+          ],
+          "gloss": "dead body, carcass",
+          "id": "dead-body"
+        }
+      ]
+    },
+    {
+      "gloss": "be exhausted",
+      "lemma": "פָּגַר",
+      "pos": "verb",
+      "stems": [
+        {
+          "gloss": "be too exhausted to continue",
+          "senses": [
+            {
+              "definition": "To lack the strength to go farther.",
+              "evidence": [
+                {
+                  "note": "Two hundred of David’s men stay behind at the Besor because they are too exhausted to cross it.",
+                  "ref": "1Sa.30.10",
+                  "role": "defining"
+                }
+              ],
+              "gloss": "be too exhausted to continue",
+              "id": "too-exhausted-to-continue"
+            }
+          ],
+          "stem": "piel"
+        }
+      ]
+    }
+  ]
+}
