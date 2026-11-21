@@ -243,6 +243,33 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article_id": "3ay",
+            "base": null,
+            "change": "Add a place-name entry for עַי and correct the source gloss “wild-goat” to “Ai.”",
+            "definition": "Ai, a town east of Bethel.",
+            "evidence": "Genesis 12:8 locates Abram’s tent between Bethel and Ai. Joshua 7:2 explicitly places Ai east of Bethel."
+          },
+          "sense": "ai-east-of-bethel",
+          "word": 0
+        },
+        "evidence": "בֵּית אֵל מִיָּם places Bethel west of Abram’s tent, and וְהָעַי מִקֶּדֶם places Ai to its east. The paired directions identify עַי as the second geographical landmark.",
+        "gloss": "and Ai",
+        "language": "he",
+        "lemma": "עַי",
+        "morph": "HC/Td/Np",
+        "morphology": "וְ is the conjunction “and,” הָ is the definite article before ע, and עַי is a proper noun naming a place.",
+        "qualifier": "",
+        "root": "עי",
+        "segments": "וְ/הָ/עַי",
+        "sense": "Ai, the town east of Abram’s campsite"
+      },
+      "position": 11,
+      "surface": "וְהָעַי"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "qdm",
           "word": 0
         },
