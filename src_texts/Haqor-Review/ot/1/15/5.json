@@ -285,6 +285,33 @@
       "analysis": {
         "entry": {
           "draft": {
+            "article_id": "l",
+            "base": "b7b117572cc7c6ccb646fe321dfdd971515976505ee696eb6b1d0269cad324a9",
+            "change": "Add Gen 15:5 as an example of the existing le-to sense of Hebrew לְ.",
+            "definition": "With a verb of speaking, לְ marks the person addressed.",
+            "evidence": "In Gen 15:5, וַיֹּאמֶר לוֹ introduces the words spoken to Abram, כֹּה יִהְיֶה זַרְעֶךָ, “so shall your offspring be.”"
+          },
+          "sense": "le-to",
+          "word": 0
+        },
+        "evidence": "In וַיֹּאמֶר לוֹ, “he said to him,” לוֹ identifies Abram as the hearer. The promise that follows addresses him directly with זַרְעֶךָ, “your offspring.”",
+        "gloss": "to him",
+        "language": "he",
+        "lemma": "לְ",
+        "morph": "HR/Sp3ms",
+        "morphology": "The preposition לְ takes the third-person masculine singular pronominal suffix וֹ, referring to Abram.",
+        "qualifier": "",
+        "root": "ל",
+        "segments": "ל/וֹ",
+        "sense": "Marks the person addressed."
+      },
+      "position": 14,
+      "surface": "לוֹ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
             "article_id": "kkoh",
             "base": null,
             "change": "Add a word entry for the demonstrative adverb כֹּה and its comparative use.",
