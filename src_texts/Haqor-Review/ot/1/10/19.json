@@ -414,15 +414,15 @@
         "entry": {
           "draft": {
             "article_id": "sedom",
-            "base": null,
-            "change": "Add a standalone place-name article for סְדֹם, keyed by its own consonants סדמ. The supplied root סגר does not account for this form.",
-            "definition": "סְדֹם is the Hebrew name of the city of Sodom.",
+            "base": "75aac323f7f3071b6b97324a8c3c3a7e760574f0b67b20d1f4091c2fed248c7b",
+            "change": "Link this occurrence to the existing sodom sense at word index 0 in the sedom place-name article.",
+            "definition": "סְדֹם names the city of Sodom.",
             "evidence": "Genesis 10:19 names Sodom alongside Gomorrah, Admah, and Zeboiim in its description of Canaanite territory."
           },
           "sense": "sodom",
           "word": 0
         },
-        "evidence": "The boundary description repeats בֹּאֲכָה, “as you go.” The first occurrence introduces the direction toward Gerar, גְרָרָה, and the second introduces the direction toward Sodom, סְדֹמָה. Both place names carry directional ־ָה.",
+        "evidence": "The boundary description pairs בֹּאֲכָה גְרָרָה, “as you go toward Gerar,” with בֹּאֲכָה סְדֹמָה, “as you go toward Sodom.” Both place names take directional ־ָה.",
         "gloss": "toward Sodom",
         "language": "he",
         "lemma": "סְדֹם",
