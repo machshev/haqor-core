@@ -69,6 +69,33 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article_id": "l",
+            "base": "4d49e6fffa8c42d8f6658fdff1a3ec832f4a34e8292fff6f040545ab8036a95d",
+            "change": "Add Genesis 15:6 as an example of the existing le-dative sense of Hebrew לְ.",
+            "definition": "To the person to whom something is given or credited.",
+            "evidence": "Genesis 15:6 uses לּוֹ with וַיַּחְשְׁבֶהָ to identify the recipient of the credit."
+          },
+          "sense": "le-dative",
+          "word": 0
+        },
+        "evidence": "In וַיַּחְשְׁבֶהָ לּוֹ צְדָקָה, “he counted it to him as righteousness,” the suffix on the verb supplies “it,” while לּוֹ identifies Abram as the person to whom it was credited.",
+        "gloss": "to him",
+        "language": "he",
+        "lemma": "לְ",
+        "morph": "HR/Sp3ms",
+        "morphology": "The preposition לְ takes the third-person masculine singular pronominal suffix וֹ. The dagesh doubles the lamed in this context.",
+        "qualifier": "",
+        "root": "ל",
+        "segments": "לּ/וֹ",
+        "sense": "Marks the person to whom something is credited."
+      },
+      "position": 3,
+      "surface": "לּוֹ"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "9dq",
           "sense": "reckoned-righteousness",
           "word": 1
