@@ -128,20 +128,26 @@
     {
       "analysis": {
         "entry": {
-          "existing": "2lh",
+          "draft": {
+            "article_id": "2lh",
+            "base": "b006df418442167723d6b3a02392eda47698e6b24723d28083ca095b9eb5f336",
+            "change": "Add Genesis 15:7 as an example of the existing sense to-a-person-speaking for אֶל.",
+            "definition": "With a verb of speaking, אֶל marks the person addressed.",
+            "evidence": "In Genesis 15:7, וַיֹּאמֶר אֵלָיו introduces Yahweh’s words to Abram. The third-person suffix names the addressee from the narrator’s perspective, and Yahweh addresses him in the second person in הוֹצֵאתִיךָ."
+          },
           "sense": "to-a-person-speaking",
           "word": 0
         },
-        "evidence": "In וַתֹּאמֶר הָאִשָּׁה אֶל הַנָּחָשׁ (“the woman said to the serpent”), אֶל marks the serpent as the one the woman addresses.",
+        "evidence": "In וַתֹּאמֶר הָאִשָּׁה אֶל הַנָּחָשׁ (“the woman said to the serpent”), אֶל introduces the serpent as the one the woman addresses.",
         "gloss": "to",
         "language": "he",
         "lemma": "אֶל",
         "morph": "HR",
-        "morphology": "Hebrew preposition without prefix or suffix.",
+        "morphology": "Hebrew preposition without a prefix or suffix.",
         "qualifier": "",
         "root": "אלה",
         "segments": "אֶל",
-        "sense": "Introduces the addressee of speech."
+        "sense": "Marks the person addressed."
       },
       "position": 2,
       "surface": "אֶל"
