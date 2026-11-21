@@ -127,22 +127,16 @@
     {
       "analysis": {
         "entry": {
-          "draft": {
-            "article_id": "xm",
-            "base": "691d26f36ff0832ec28b2bc4245225c827f4efe39ba96be39f860ef3d58917a3",
-            "change": "Correct the existing Genesis 10:25 evidence note for identifying-name at word index 0. Joktan is the name of Peleg’s brother.",
-            "definition": "A name by which a person or other bearer is identified.",
-            "evidence": "In וְשֵׁם אָחִיו יָקְטָן, אָחִיו refers to Peleg’s brother and יָקְטָן supplies that brother’s name."
-          },
+          "existing": "xm",
           "sense": "identifying-name",
           "word": 0
         },
-        "evidence": "In שֵׁם אֵשֶׁת אַבְרָם שָׂרָי, שָׂרָי supplies the name of Abram’s wife. The parallel clause gives Milcah as the name of Nahor’s wife.",
+        "evidence": "In שֵׁם אֵשֶׁת אַבְרָם שָׂרָי, the construct chain means “the name of Abram’s wife,” and שָׂרָי supplies that name. The parallel clause names Nahor’s wife as Milcah.",
         "gloss": "name",
         "language": "he",
         "lemma": "שֵׁם",
         "morph": "HNcmsc",
-        "morphology": "Masculine singular common noun in the construct state, followed by אֵשֶׁת אַבְרָם.",
+        "morphology": "Masculine singular common noun in the construct state, governing אֵשֶׁת אַבְרָם.",
         "qualifier": "noun",
         "root": "שמ",
         "segments": "שֵׁם",
