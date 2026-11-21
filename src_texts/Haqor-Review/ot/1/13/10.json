@@ -304,6 +304,33 @@
       },
       "position": 15,
       "surface": "אֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "sedom",
+            "base": null,
+            "change": "Add a standalone place-name article for סְדֹם, keyed by its own consonants סדמ. The supplied root סגר does not account for this form.",
+            "definition": "סְדֹם is the Hebrew name of the city of Sodom.",
+            "evidence": "Genesis 10:19 names Sodom alongside Gomorrah, Admah, and Zeboiim in its description of Canaanite territory."
+          },
+          "sense": "sodom",
+          "word": 0
+        },
+        "evidence": "In אֶת סְדֹם וְאֶת עֲמֹרָה, the repeated object marker אֶת identifies Sodom and Gomorrah as the two cities that YHWH destroyed.",
+        "gloss": "Sodom",
+        "language": "he",
+        "lemma": "סְדֹם",
+        "morph": "HNp",
+        "morphology": "Hebrew proper noun without a prefix or suffix.",
+        "qualifier": "",
+        "root": "סדמ",
+        "segments": "סְדֹם",
+        "sense": "The city of Sodom."
+      },
+      "position": 16,
+      "surface": "סְדֹם"
     }
   ]
 }
