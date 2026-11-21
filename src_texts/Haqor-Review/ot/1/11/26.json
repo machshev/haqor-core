@@ -205,6 +205,33 @@
       "analysis": {
         "entry": {
           "draft": {
+            "article_id": "2t",
+            "base": "884ee15b87d0959ef318a08b69774ad89751ad746868d8f2817480d7339defa9",
+            "change": "Add Gen.11.26 as an example of the existing definite-object sense of word 0.",
+            "definition": "Introduces a definite direct object, here a person identified by name.",
+            "evidence": "In Gen.11.26, וְאֶת הָרָן marks Haran as the third named object of וַיּוֹלֶד."
+          },
+          "sense": "definite-object",
+          "word": 0
+        },
+        "evidence": "Terah fathered אֶת אַבְרָם אֶת נָחוֹר וְאֶת הָרָן. Each son’s name has its own object marker, and וְ joins Haran to Abram and Nahor as the last son named.",
+        "gloss": "and (direct-object marker)",
+        "language": "he",
+        "lemma": "אֵת",
+        "morph": "HC/To",
+        "morphology": "The prefixed conjunction וְ means “and.” אֶת is the unsuffixed direct-object particle before the name הָרָן.",
+        "qualifier": "particle",
+        "root": "את",
+        "segments": "וְ/אֶת",
+        "sense": "Marks Haran as a definite direct object of וַיּוֹלֶד, “he fathered.”"
+      },
+      "position": 9,
+      "surface": "וְאֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
             "article": {
               "created": "2026-11-21",
               "english": "Haran",
