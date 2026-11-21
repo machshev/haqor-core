@@ -1,0 +1,95 @@
+{
+  "cognates": [],
+  "created": "2026-11-21",
+  "doctrine": [],
+  "gloss": "cut in two",
+  "id": "btr",
+  "note": "",
+  "root": "בתר",
+  "status": "draft",
+  "summary": "Abram cuts the animals down the middle and places their halves opposite each other. The verb names the cut, and the noun names a piece it produces.",
+  "tags": [],
+  "updated": "2026-11-21",
+  "words": [
+    {
+      "gloss": "cut in two",
+      "greek": [],
+      "lemma": "בָּתַר",
+      "pos": "verb",
+      "stems": [
+        {
+          "gloss": "cut apart",
+          "senses": [
+            {
+              "definition": "To divide into pieces by cutting.",
+              "evidence": [
+                {
+                  "note": "The closing words וְאֶת הַצִפֹּר לֹא בָתָר say that Abram spared the birds the cutting he had performed on the other animals.",
+                  "ref": "Gen.15.10",
+                  "role": "defining"
+                }
+              ],
+              "gloss": "cut apart",
+              "id": "cut-apart"
+            }
+          ],
+          "stem": "qal"
+        },
+        {
+          "gloss": "cut in two",
+          "senses": [
+            {
+              "definition": "To cut through the middle, producing two halves.",
+              "evidence": [
+                {
+                  "note": "בַּתָּוֶךְ specifies where Abram cuts, and each half has a matching half that he places opposite it.",
+                  "ref": "Gen.15.10",
+                  "role": "defining"
+                }
+              ],
+              "gloss": "cut in two",
+              "id": "cut-in-two"
+            }
+          ],
+          "stem": "piel"
+        }
+      ],
+      "usage": {
+        "opposites": [],
+        "parallels": [],
+        "phrases": []
+      }
+    },
+    {
+      "gender": "m",
+      "gloss": "piece cut off, half",
+      "greek": [],
+      "lemma": "בֶּתֶר",
+      "pos": "noun",
+      "senses": [
+        {
+          "definition": "A piece produced by cutting, especially one half of a divided animal.",
+          "evidence": [
+            {
+              "note": "After the cut through the middle, בִּתְרוֹ denotes the half placed opposite its mate.",
+              "ref": "Gen.15.10",
+              "role": "defining"
+            },
+            {
+              "note": "The calf is cut in two, and the covenant makers pass between its pieces.",
+              "ref": "Jer.34.18",
+              "role": "defining"
+            }
+          ],
+          "gloss": "piece cut off, half",
+          "id": "severed-piece"
+        }
+      ],
+      "usage": {
+        "opposites": [],
+        "parallels": [],
+        "phrases": []
+      }
+    }
+  ]
+}

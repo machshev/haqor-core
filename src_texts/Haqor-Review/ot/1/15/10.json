@@ -90,6 +90,33 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article_id": "btr",
+            "base": null,
+            "change": "Add the root בתר with its verb and the noun for a resulting piece. Correct the occurrence gloss from “cry for help” to “and he cut in two.”",
+            "definition": "To cut something in two.",
+            "evidence": "Genesis 15:10 describes Abram cutting the animals down the middle and laying the resulting halves opposite each other."
+          },
+          "sense": "cut-in-two",
+          "word": 0
+        },
+        "evidence": "בַּתָּוֶךְ locates the cut in the middle. Abram then places each בִּתְרוֹ, “its half,” opposite its mate. The paired halves show what the verb did to the animals.",
+        "gloss": "and he cut in two",
+        "language": "he",
+        "lemma": "בָּתַר",
+        "morph": "HC/Vpw3ms",
+        "morphology": "The conjunction וַ introduces a Piel wayyiqtol, third person masculine singular. The doubled ת marks the Piel stem. Abram is the subject, and the following אֹתָם supplies the direct object.",
+        "qualifier": "",
+        "root": "בתר",
+        "segments": "וַ/יְבַתֵּר",
+        "sense": "cut-in-two"
+      },
+      "position": 5,
+      "surface": "וַיְבַתֵּר"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "ntn",
           "word": 0
         },
