@@ -312,20 +312,26 @@
     {
       "analysis": {
         "entry": {
-          "existing": "byt",
-          "sense": "house",
+          "draft": {
+            "article_id": "bbeeyt-2eel",
+            "base": "73e3763947233ee65cf9f13b88d3d536519f218c832417293ef8a60215258bdc",
+            "change": "Assign the marked occurrence to the existing bethel-west-of-ai sense of בֵּית אֵל.",
+            "definition": "Bethel, the town west of Ai near Abram’s former campsite.",
+            "evidence": "Genesis 13:3 names Bethel twice and locates Abram’s former tent between Bethel and Ai. Genesis 12:8 places Bethel west of the tent and Ai east of it."
+          },
+          "sense": "bethel-west-of-ai",
           "word": 0
         },
-        "evidence": "בֵּין בֵּית אֵל וּבֵין הָעָי places Abram’s tent between Bethel and Ai. The proper-name tag fits בֵּית אֵל as a whole. Within that name, the marked בֵּית supplies “house of.”",
-        "gloss": "house of",
+        "evidence": "בֵּין בֵּית אֵל וּבֵין הָעָי locates Abram’s former campsite “between Bethel and Ai.” The marked בֵּית begins the same town name that appeared earlier in וְעַד בֵּית אֵל, “and as far as Bethel.”",
+        "gloss": "Bethel",
         "language": "he",
-        "lemma": "בַּיִת",
-        "morph": "HNcmsc",
-        "morphology": "בֵּית is the masculine singular construct form of בַּיִת. Its complement is אֵל.",
+        "lemma": "בֵּית אֵל",
+        "morph": "HNp",
+        "morphology": "בֵּית begins the Hebrew place name בֵּית אֵל. Within the name, בֵּית is the masculine singular construct of בַּיִת, meaning “house of,” with אֵל as its complement.",
         "qualifier": "",
-        "root": "בית",
+        "root": "ביתאל",
         "segments": "בֵּית",
-        "sense": "house"
+        "sense": "Bethel, the town west of Ai"
       },
       "position": 14,
       "surface": "בֵּית"
