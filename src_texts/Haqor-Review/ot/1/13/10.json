@@ -1,6 +1,288 @@
 {
   "book": 1,
   "chapter": 13,
+  "review": {
+    "entities": [
+      {
+        "evidence": "Lot, Haran’s son and Abram’s nephew, lifts his eyes and surveys the plain.",
+        "key": "Lot@Gen.11.27",
+        "position": 1
+      },
+      {
+        "evidence": "The Jordan is the river that gives the plain its name.",
+        "key": "Jordan@Gen.13.10",
+        "position": 8
+      },
+      {
+        "evidence": "The divine name identifies Yahweh as the one who destroyed Sodom and Gomorrah.",
+        "key": "LORD@Gen.1.1",
+        "position": 14
+      },
+      {
+        "evidence": "Sodom is the first of the two cities Yahweh destroyed, paired with Gomorrah as in Genesis 10:19.",
+        "key": "Sodom@Gen.10.19",
+        "position": 16
+      },
+      {
+        "evidence": "Gomorrah is the second city named alongside Sodom as an object of “destroyed.”",
+        "key": "Gomorrah@Gen.10.19",
+        "position": 18
+      },
+      {
+        "evidence": "The divine name completes the phrase “the garden of Yahweh.”",
+        "key": "LORD@Gen.1.1",
+        "position": 20
+      },
+      {
+        "evidence": "“The land of Egypt” names the country whose watered landscape resembles the Jordan plain.",
+        "key": "Egypt@Gen.12.10",
+        "position": 22
+      },
+      {
+        "evidence": "Zoar marks the direction of travel along the plain. Genesis 14:2 identifies the city with Bela.",
+        "key": "Zoar@Gen.13.10",
+        "position": 24
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "and he lifted",
+        "position": 0
+      },
+      {
+        "gloss": "Lot",
+        "position": 1
+      },
+      {
+        "gloss": "(untranslated)",
+        "position": 2
+      },
+      {
+        "gloss": "his eyes",
+        "position": 3
+      },
+      {
+        "gloss": "and he saw",
+        "position": 4
+      },
+      {
+        "gloss": "(untranslated)",
+        "position": 5
+      },
+      {
+        "gloss": "the whole",
+        "position": 6
+      },
+      {
+        "gloss": "plain of",
+        "position": 7
+      },
+      {
+        "gloss": "the Jordan",
+        "position": 8
+      },
+      {
+        "gloss": "that",
+        "position": 9
+      },
+      {
+        "gloss": "all of it",
+        "position": 10
+      },
+      {
+        "gloss": "well-watered",
+        "position": 11
+      },
+      {
+        "gloss": "before",
+        "position": 12
+      },
+      {
+        "gloss": "destroyed",
+        "position": 13
+      },
+      {
+        "gloss": "Yahweh",
+        "position": 14
+      },
+      {
+        "gloss": "(untranslated)",
+        "position": 15
+      },
+      {
+        "gloss": "Sodom",
+        "position": 16
+      },
+      {
+        "gloss": "and (direct-object marker)",
+        "position": 17
+      },
+      {
+        "gloss": "Gomorrah",
+        "position": 18
+      },
+      {
+        "gloss": "like the garden of",
+        "position": 19
+      },
+      {
+        "gloss": "Yahweh",
+        "position": 20
+      },
+      {
+        "gloss": "like the land of",
+        "position": 21
+      },
+      {
+        "gloss": "Egypt",
+        "position": 22
+      },
+      {
+        "gloss": "as you go toward",
+        "position": 23
+      },
+      {
+        "gloss": "Zoar",
+        "position": 24
+      }
+    ],
+    "name_review_base": [
+      {
+        "key": null,
+        "position": 0,
+        "surface": "וַיִּשָּׂא"
+      },
+      {
+        "evidence": "Lot, Haran’s son and Abram’s nephew, lifts his eyes and surveys the plain.",
+        "key": "Lot@Gen.11.27",
+        "position": 1,
+        "surface": "לוֹט"
+      },
+      {
+        "key": null,
+        "position": 2,
+        "surface": "אֶת"
+      },
+      {
+        "key": null,
+        "position": 3,
+        "surface": "עֵינָיו"
+      },
+      {
+        "key": null,
+        "position": 4,
+        "surface": "וַיַּרְא"
+      },
+      {
+        "key": null,
+        "position": 5,
+        "surface": "אֶת"
+      },
+      {
+        "key": null,
+        "position": 6,
+        "surface": "כָּל"
+      },
+      {
+        "key": null,
+        "position": 7,
+        "surface": "כִּכַּר"
+      },
+      {
+        "evidence": "The Jordan is the river that gives the plain its name.",
+        "key": "Jordan@Gen.13.10",
+        "position": 8,
+        "surface": "הַיַּרְדֵּן"
+      },
+      {
+        "key": null,
+        "position": 9,
+        "surface": "כִּי"
+      },
+      {
+        "key": null,
+        "position": 10,
+        "surface": "כֻלָּהּ"
+      },
+      {
+        "key": null,
+        "position": 11,
+        "surface": "מַשְׁקֶה"
+      },
+      {
+        "key": null,
+        "position": 12,
+        "surface": "לִפְנֵי"
+      },
+      {
+        "key": null,
+        "position": 13,
+        "surface": "שַׁחֵת"
+      },
+      {
+        "evidence": "The divine name identifies Yahweh as the one who destroyed Sodom and Gomorrah.",
+        "key": "LORD@Gen.1.1",
+        "position": 14,
+        "surface": "יַהְוֶה"
+      },
+      {
+        "key": null,
+        "position": 15,
+        "surface": "אֶת"
+      },
+      {
+        "evidence": "Sodom is the first of the two cities Yahweh destroyed, paired with Gomorrah as in Genesis 10:19.",
+        "key": "Sodom@Gen.10.19",
+        "position": 16,
+        "surface": "סְדֹם"
+      },
+      {
+        "key": null,
+        "position": 17,
+        "surface": "וְאֶת"
+      },
+      {
+        "evidence": "Gomorrah is the second city named alongside Sodom as an object of “destroyed.”",
+        "key": "Gomorrah@Gen.10.19",
+        "position": 18,
+        "surface": "עֲמֹרָה"
+      },
+      {
+        "key": null,
+        "position": 19,
+        "surface": "כְּגַן"
+      },
+      {
+        "evidence": "The divine name completes the phrase “the garden of Yahweh.”",
+        "key": "LORD@Gen.1.1",
+        "position": 20,
+        "surface": "יַהְוֶה"
+      },
+      {
+        "key": null,
+        "position": 21,
+        "surface": "כְּאֶרֶץ"
+      },
+      {
+        "evidence": "“The land of Egypt” names the country whose watered landscape resembles the Jordan plain.",
+        "key": "Egypt@Gen.12.10",
+        "position": 22,
+        "surface": "מִצְרַיִם"
+      },
+      {
+        "key": null,
+        "position": 23,
+        "surface": "בֹּאֲכָה"
+      },
+      {
+        "evidence": "Zoar marks the direction of travel along the plain. Genesis 14:2 identifies the city with Bela.",
+        "key": "Zoar@Gen.13.10",
+        "position": 24,
+        "surface": "צֹעַר"
+      }
+    ],
+    "translation": "[Then|0] [Lot|1] [lifted|0] [his eyes|3,2] [and saw|4] [all|6,5] [the plain of|7] [the Jordan|8] [as you go|23] {toward} [Zoar|24], [that|9] [all of it|10] {was} [well-watered|11], [like the garden of|19] [Yahweh|20], [like the land of|21] [Egypt|22], [before|12] [Yahweh|14] [destroyed|13] [Sodom|16,15] [and|17] [Gomorrah|18]."
+  },
   "source": "ot",
   "verse": 10,
   "words": [
