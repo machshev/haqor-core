@@ -1,0 +1,61 @@
+{
+  "cognates": [],
+  "created": "2026-11-21",
+  "doctrine": [],
+  "gloss": "left",
+  "id": "cm2l",
+  "root": "שׂמאל",
+  "status": "draft",
+  "summary": "שְׂמֹאל names the left side. In Gen.13.9 Abram offers to go right if Lot takes the left. If Lot takes the right, Abram uses the Hiphil of שָׂמַאל to say that he will go left.",
+  "tags": [
+    "direction"
+  ],
+  "updated": "2026-11-21",
+  "words": [
+    {
+      "gender": "m",
+      "gloss": "left side",
+      "lemma": "שְׂמֹאל",
+      "pos": "noun",
+      "senses": [
+        {
+          "definition": "The side opposite the right, indicating here which way a person may go.",
+          "evidence": [
+            {
+              "note": "הַשְּׂמֹאל and הַיָּמִין name the two sides Lot can choose. Abram undertakes to go the other way in each case.",
+              "ref": "Gen.13.9",
+              "role": "defining"
+            }
+          ],
+          "gloss": "the left",
+          "id": "left-side"
+        }
+      ]
+    },
+    {
+      "gloss": "go left",
+      "lemma": "שָׂמַאל",
+      "pos": "verb",
+      "stems": [
+        {
+          "gloss": "go left",
+          "senses": [
+            {
+              "definition": "To go to the left.",
+              "evidence": [
+                {
+                  "note": "When Abram offers Lot the right, וְאַשְׂמְאִילָה states which direction Abram will take. It corresponds to הַשְּׂמֹאל, the left side offered to Lot in the first clause.",
+                  "ref": "Gen.13.9",
+                  "role": "defining"
+                }
+              ],
+              "gloss": "go left",
+              "id": "go-left"
+            }
+          ],
+          "stem": "hiphil"
+        }
+      ]
+    }
+  ]
+}

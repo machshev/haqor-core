@@ -161,7 +161,7 @@
       "analysis": {
         "entry": {
           "draft": {
-            "article_id": "cemo2l",
+            "article_id": "cm2l",
             "base": null,
             "change": "Add the Hebrew noun שְׂמֹאל with its directional sense.",
             "definition": "The left side, opposed to the right, especially as a direction one may take.",
@@ -225,6 +225,33 @@
       },
       "position": 11,
       "surface": "הַיָּמִין"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "cm2l",
+            "base": "2ef3505593480f6f963fe1f8a3904f56877c14d5b224e640d21781b5b216d791",
+            "change": "Append the directional verb שָׂמַאל to the article for שׂמאל.",
+            "definition": "In the Hiphil, to go to the left.",
+            "evidence": "In Gen.13.9 Abram says וְאַשְׂמְאִילָה if Lot takes the right, reversing his offer to go right if Lot takes the left."
+          },
+          "sense": "go-left",
+          "word": 1
+        },
+        "evidence": "Abram first offers to go right if Lot chooses the left. The second clause reverses the directions: וְאִם הַיָּמִין gives Lot the choice of the right, and וְאַשְׂמְאִילָה expresses Abram’s resolve to go left.",
+        "gloss": "then I will go left",
+        "language": "he",
+        "lemma": "שָׂמַאל",
+        "morph": "HC/Vhh1cs",
+        "morphology": "The conjunction וְ introduces Abram’s response to Lot’s possible choice. אַשְׂמְאִילָה is a Hiphil first-person common singular cohortative. The א prefix marks the speaker, and the final ־ָה marks his resolve.",
+        "qualifier": "",
+        "root": "שׂמאל",
+        "segments": "וְ/אַשְׂמְאִילָה",
+        "sense": "To go to the left."
+      },
+      "position": 12,
+      "surface": "וְאַשְׂמְאִילָה"
     }
   ]
 }
