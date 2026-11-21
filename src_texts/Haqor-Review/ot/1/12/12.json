@@ -70,6 +70,33 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article_id": "2t",
+            "base": "d202e74bf6309d2cd539759a8a210b6bce6e57ab9c76d6f2f819ce5092bae3c3",
+            "change": "Add Gen.12.12 as evidence for the existing object-pronoun sense of the Hebrew particle.",
+            "definition": "With a pronominal suffix, אֵת expresses the direct object independently of the verb.",
+            "evidence": "Gen.12.12 places אֹתָךְ after יִרְאוּ. Its feminine singular suffix identifies Sarai as the object of “see.”"
+          },
+          "sense": "object-pronoun",
+          "word": 0
+        },
+        "evidence": "In יִרְאוּ אֹתָךְ הַמִּצְרִים, “the Egyptians will see you,” הַמִּצְרִים names the people who see, and אֹתָךְ identifies Sarai, the woman Abram addresses, as the person they see.",
+        "gloss": "you",
+        "language": "he",
+        "lemma": "אֵת",
+        "morph": "HTo/Sp2fs",
+        "morphology": "The Hebrew direct-object marker takes a second-person feminine singular pronominal suffix. The whole form means “you” as the object of the verb.",
+        "qualifier": "particle",
+        "root": "את",
+        "segments": "אֹתָ/ךְ",
+        "sense": "Carries a pronominal suffix as the direct object of a verb."
+      },
+      "position": 3,
+      "surface": "אֹתָךְ"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "m9r",
           "sense": "egyptian",
           "word": 1
