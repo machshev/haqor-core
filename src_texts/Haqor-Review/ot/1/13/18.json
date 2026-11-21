@@ -1,6 +1,82 @@
 {
   "book": 1,
   "chapter": 13,
+  "review": {
+    "entities": [
+      {
+        "evidence": "Abram is the son of Terah who later receives the name Abraham.",
+        "key": "Abraham@Gen.11.26",
+        "position": 1
+      },
+      {
+        "evidence": "The terebinths of Mamre mark Abram’s campsite at Hebron. The source tag identifies Mamre here as the place.",
+        "key": "Mamre@Gen.13.18",
+        "position": 5
+      },
+      {
+        "evidence": "The locative prefix בְּ on Hebron places the terebinths there.",
+        "key": "Hebron@Gen.13.18",
+        "position": 7
+      },
+      {
+        "evidence": "Yahweh is the personal name of the God to whom Abram builds the altar.",
+        "key": "LORD@Gen.1.1",
+        "position": 11
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "and he moved his tent",
+        "position": 0
+      },
+      {
+        "gloss": "Abram",
+        "position": 1
+      },
+      {
+        "gloss": "and he came",
+        "position": 2
+      },
+      {
+        "gloss": "and he settled",
+        "position": 3
+      },
+      {
+        "gloss": "by the terebinths of",
+        "position": 4
+      },
+      {
+        "gloss": "Mamre",
+        "position": 5
+      },
+      {
+        "gloss": "which",
+        "position": 6
+      },
+      {
+        "gloss": "at Hebron",
+        "position": 7
+      },
+      {
+        "gloss": "and he built",
+        "position": 8
+      },
+      {
+        "gloss": "there",
+        "position": 9
+      },
+      {
+        "gloss": "an altar",
+        "position": 10
+      },
+      {
+        "gloss": "to Yahweh",
+        "position": 11
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[So|0] [Abram|1] [moved his tent|0] [and came|2] [and settled|3] [by the terebinths of|4] [Mamre|5], [which|6] {were} [at Hebron|7], [and|8] [there|9] [he built|8] [an altar|10] [to Yahweh|11]."
+  },
   "source": "ot",
   "verse": 18,
   "words": [
