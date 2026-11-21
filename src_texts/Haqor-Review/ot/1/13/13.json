@@ -1,6 +1,48 @@
 {
   "book": 1,
   "chapter": 13,
+  "review": {
+    "entities": [
+      {
+        "evidence": "In אַנְשֵׁי סְדֹם, “the men of Sodom,” סְדֹם names the city whose inhabitants the verse describes.",
+        "key": "Sodom@Gen.10.19",
+        "position": 1
+      },
+      {
+        "evidence": "לַיַהְוֶה names Yahweh as the God against whom the men of Sodom sinned.",
+        "key": "LORD@Gen.1.1",
+        "position": 4
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "now the men of",
+        "position": 0
+      },
+      {
+        "gloss": "Sodom",
+        "position": 1
+      },
+      {
+        "gloss": "wicked",
+        "position": 2
+      },
+      {
+        "gloss": "and sinful",
+        "position": 3
+      },
+      {
+        "gloss": "against Yahweh",
+        "position": 4
+      },
+      {
+        "gloss": "exceedingly",
+        "position": 5
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[Now the men of|0] [Sodom|1] [{were}|2] [exceedingly|5] [wicked|2] [and sinful|3] [against Yahweh|4]."
+  },
   "source": "ot",
   "verse": 13,
   "words": [
