@@ -237,6 +237,33 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article_id": "2t",
+            "base": "54f0139b5779b2c5108605fe60ae14d1f205924093cc1dcf5aa24946f38bf5fc",
+            "change": "Add Gen.15.5 as evidence for the existing object-pronoun sense of word 0 in article 2t.",
+            "definition": "With a pronominal suffix, אֵת expresses the object of a verb. Here אֹתָם means “them.”",
+            "evidence": "In Gen.15.5, לִסְפֹּר אֹתָם resumes וּסְפֹר הַכּוֹכָבִים. The stars are the object in both phrases."
+          },
+          "sense": "object-pronoun",
+          "word": 0
+        },
+        "evidence": "וּסְפֹר הַכּוֹכָבִים means “count the stars.” The clause אִם תּוּכַל לִסְפֹּר אֹתָם repeats the verb, “if you can count them.” The masculine plural suffix agrees with הַכּוֹכָבִים.",
+        "gloss": "them",
+        "language": "he",
+        "lemma": "אֵת",
+        "morph": "HTo/Sp3mp",
+        "morphology": "The Hebrew direct-object marker takes the suffixed form אֹת־ with the third-person masculine plural pronominal suffix ־ָם.",
+        "qualifier": "particle",
+        "root": "את",
+        "segments": "אֹת/ָם",
+        "sense": "The suffixed particle expresses the direct object of “count” and refers back to the stars."
+      },
+      "position": 12,
+      "surface": "אֹתָם"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "2mr",
           "word": 0
         },
