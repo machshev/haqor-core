@@ -116,6 +116,33 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article_id": "l",
+            "base": "67fbeb8e85b5706d6f10630f8fffb66955f5545199eb4d2e0c4432d434f344d4",
+            "change": "Add Gen 12:19 as an example of the existing Hebrew sense le-dative.",
+            "definition": "לְ marks the person for whom an action is done, including the doer himself.",
+            "evidence": "In Gen 12:19 Pharaoh says וָאֶקַּח אֹתָהּ לִי לְאִשָּׁה, “I took her for myself as a wife.” Gen 11:29 uses the same construction in the plural when Abram and Nahor take wives לָהֶם, “for themselves.”"
+          },
+          "sense": "le-dative",
+          "word": 0
+        },
+        "evidence": "In וָאֶקַּח אֹתָהּ לִי לְאִשָּׁה, “I took her for myself as a wife,” אֹתָהּ identifies whom Pharaoh took, לִי identifies for whom he took her, and לְאִשָּׁה gives her role.",
+        "gloss": "for myself",
+        "language": "he",
+        "lemma": "לְ",
+        "morph": "HR/Sp1cs",
+        "morphology": "Hebrew preposition לְ with a first-person common singular pronominal suffix. The suffix refers to Pharaoh, also the subject of וָאֶקַּח, so English uses the reflexive “myself.”",
+        "qualifier": "",
+        "root": "ל",
+        "segments": "לִ/י",
+        "sense": "Marks the person for whom the action is performed, here the speaker himself."
+      },
+      "position": 6,
+      "surface": "לִי"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "2nx",
           "sense": "wife",
           "word": 0
