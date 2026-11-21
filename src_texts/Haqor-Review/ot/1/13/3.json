@@ -117,20 +117,26 @@
     {
       "analysis": {
         "entry": {
-          "existing": "2lh",
-          "sense": "the-mighty-one-a",
-          "word": 3
+          "draft": {
+            "article_id": "bbeeyt-2eel",
+            "base": "73e3763947233ee65cf9f13b88d3d536519f218c832417293ef8a60215258bdc",
+            "change": "Assign this occurrence to the existing Bethel lexeme and its bethel-west-of-ai sense. The published gloss “God” gives the literal meaning of the name’s second element.",
+            "definition": "Bethel, the town west of Ai near Abram’s former campsite.",
+            "evidence": "In Genesis 13:3 the marked אֵל completes the destination name בֵּית אֵל. Genesis 12:8 places Bethel west of the campsite and Ai east of it."
+          },
+          "sense": "bethel-west-of-ai",
+          "word": 0
         },
-        "evidence": "Carried forward: this word and its source tagging were reviewed identically at 68616:5, 68616:9.",
-        "gloss": "God",
+        "evidence": "וְעַד בֵּית אֵל gives the limit of Abram’s journey, “as far as Bethel.” The verse repeats the name in בֵּין בֵּית אֵל וּבֵין הָעָי, locating his former campsite between Bethel and Ai.",
+        "gloss": "Bethel",
         "language": "he",
-        "lemma": "אֵל",
-        "morph": "HNcmsa",
-        "morphology": "Masculine singular absolute noun completing the construct phrase בֵית אֵל.",
-        "qualifier": "noun",
-        "root": "אלה",
+        "lemma": "בֵּית אֵל",
+        "morph": "HNp",
+        "morphology": "Hebrew proper noun. אֵל is the second element of the place name בֵּית אֵל. Within the name it is masculine singular absolute, following the construct בֵּית.",
+        "qualifier": "",
+        "root": "ביתאל",
         "segments": "אֵל",
-        "sense": "the Mighty One"
+        "sense": "Bethel, the town west of Ai"
       },
       "position": 5,
       "surface": "אֵל"
