@@ -70,7 +70,13 @@
     {
       "analysis": {
         "entry": {
-          "existing": "2t",
+          "draft": {
+            "article_id": "2t",
+            "base": "842a95bdc2bfa8d51e8083ecca84ff9f2652272fbfb9c5738e74799c86318434",
+            "change": "Add Genesis 13:10 as evidence for the existing definite-object sense of אֵת.",
+            "definition": "Introduces the particular person or thing a verb acts on.",
+            "evidence": "Genesis 13:10 places אֶת before each city that Yahweh destroyed. וְאֶת introduces the second city, Gomorrah."
+          },
           "sense": "definite-object",
           "word": 0
         },
@@ -83,7 +89,7 @@
         "qualifier": "particle",
         "root": "את",
         "segments": "אֵת",
-        "sense": "(marks the definite object)"
+        "sense": "Marks a definite direct object."
       },
       "position": 3,
       "surface": "אֵת"
