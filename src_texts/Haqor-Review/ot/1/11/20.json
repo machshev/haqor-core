@@ -1,6 +1,56 @@
 {
   "book": 1,
   "chapter": 11,
+  "review": {
+    "entities": [
+      {
+        "evidence": "Reu, named as Peleg’s son in Genesis 11:18, is thirty-two when he fathers Serug.",
+        "key": "Reu@Gen.11.18",
+        "position": 1
+      },
+      {
+        "evidence": "Serug is named as the son Reu fathered.",
+        "key": "Serug@Gen.11.20",
+        "position": 7
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "and he lived",
+        "position": 0
+      },
+      {
+        "gloss": "Reu",
+        "position": 1
+      },
+      {
+        "gloss": "two",
+        "position": 2
+      },
+      {
+        "gloss": "and thirty",
+        "position": 3
+      },
+      {
+        "gloss": "years",
+        "position": 4
+      },
+      {
+        "gloss": "then he fathered",
+        "position": 5
+      },
+      {
+        "gloss": "(marks the definite direct object)",
+        "position": 6
+      },
+      {
+        "gloss": "Serug",
+        "position": 7
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[And|0] [Reu|1] [lived|0] [thirty|3]-[two|2] [years|4], [then he fathered|5] [Serug|7,6]."
+  },
   "source": "ot",
   "verse": 20,
   "words": [
@@ -159,27 +209,6 @@
       "analysis": {
         "entry": {
           "draft": {
-            "article": {
-              "created": "2026-11-21",
-              "english": "Serug",
-              "entry": "",
-              "evidence": [
-                {
-                  "note": "Reu is thirty-two when he fathers the child named שְׂרוּג.",
-                  "ref": "Gen.11.20",
-                  "role": "defining"
-                }
-              ],
-              "gloss": "Serug",
-              "id": "cerwwg",
-              "name": "שְׂרוּג",
-              "note": "",
-              "people": [],
-              "root": "",
-              "status": "draft",
-              "summary": "Reu fathered Serug at the age of thirty-two. The meaning of Serug’s name is uncertain.",
-              "updated": "2026-11-21"
-            },
             "article_id": "cerwwg",
             "base": null,
             "change": "Add a personal-name article for Serug. The proposed derivation from שׂרג and the gloss “mutterer” lack support in this verse.",
