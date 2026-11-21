@@ -1,6 +1,68 @@
 {
   "book": 1,
   "chapter": 14,
+  "review": {
+    "entities": [
+      {
+        "evidence": "Melchizedek praises אֵל עֶלְיוֹן, God Most High, for delivering Abram’s enemies into his hand. Abram identifies God Most High as יהוה in Genesis 14:22.",
+        "key": "LORD@Gen.1.1",
+        "position": 1
+      },
+      {
+        "evidence": "עֶלְיוֹן modifies אֵל and completes the divine title “God Most High.”",
+        "key": "LORD@Gen.1.1",
+        "position": 2
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "and blessed be",
+        "position": 0
+      },
+      {
+        "gloss": "God",
+        "position": 1
+      },
+      {
+        "gloss": "Most High",
+        "position": 2
+      },
+      {
+        "gloss": "who",
+        "position": 3
+      },
+      {
+        "gloss": "handed over",
+        "position": 4
+      },
+      {
+        "gloss": "your enemies",
+        "position": 5
+      },
+      {
+        "gloss": "into your hand",
+        "position": 6
+      },
+      {
+        "gloss": "then he gave",
+        "position": 7
+      },
+      {
+        "gloss": "to him",
+        "position": 8
+      },
+      {
+        "gloss": "a tithe",
+        "position": 9
+      },
+      {
+        "gloss": "of everything",
+        "position": 10
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[And praised be|0] [God|1] [Most High|2], [who|3] [delivered|4] [your enemies|5] [into your hand|6]!” [Then he gave|7] [him|8] [a tenth|9] [of everything|10]."
+  },
   "source": "ot",
   "verse": 20,
   "words": [
