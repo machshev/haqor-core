@@ -1,6 +1,59 @@
 {
   "book": 1,
   "chapter": 14,
+  "review": {
+    "entities": [
+      {
+        "evidence": "The kings had served Chedorlaomer for twelve years. Genesis 14:1 identifies him as king of Elam.",
+        "key": "Chedorlaomer@Gen.14.1",
+        "position": 5
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "two (in twelve)",
+        "position": 0
+      },
+      {
+        "gloss": "ten (in twelve)",
+        "position": 1
+      },
+      {
+        "gloss": "years",
+        "position": 2
+      },
+      {
+        "gloss": "they had served",
+        "position": 3
+      },
+      {
+        "gloss": "(untranslated)",
+        "position": 4
+      },
+      {
+        "gloss": "Chedorlaomer",
+        "position": 5
+      },
+      {
+        "gloss": "but three (in thirteen)",
+        "position": 6
+      },
+      {
+        "gloss": "-teen (in thirteen)",
+        "position": 7
+      },
+      {
+        "gloss": "year",
+        "position": 8
+      },
+      {
+        "gloss": "they rebelled",
+        "position": 9
+      }
+    ],
+    "name_review_base": null,
+    "translation": "{For} [twelve|0,1] [years|2] [they had served|3] [Chedorlaomer|4,5], [but|6] {in the} [thirteenth|6,7] [year|8] [they rebelled|9]."
+  },
   "source": "ot",
   "verse": 4,
   "words": [
