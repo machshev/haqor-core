@@ -160,6 +160,33 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article_id": "cemo2l",
+            "base": null,
+            "change": "Add the Hebrew noun שְׂמֹאל with its directional sense.",
+            "definition": "The left side, opposed to the right, especially as a direction one may take.",
+            "evidence": "In Gen.13.9 the two conditional clauses exchange left and right as Lot’s and Abram’s respective directions."
+          },
+          "sense": "left-side",
+          "word": 0
+        },
+        "evidence": "Abram offers Lot a choice of land. If Lot takes הַשְּׂמֹאל, Abram will go right. The next clause reverses the choice, pairing הַיָּמִין, “the right,” with Abram going left.",
+        "gloss": "the left",
+        "language": "he",
+        "lemma": "שְׂמֹאל",
+        "morph": "HTd/Ncmsa",
+        "morphology": "The definite article הַ doubles the initial שׂ of the masculine singular absolute noun. After אִם, the noun names the side Lot may choose. The verb of motion is understood.",
+        "qualifier": "",
+        "root": "שׂמאל",
+        "segments": "הַ/שְּׂמֹאל",
+        "sense": "The left side as a direction of travel."
+      },
+      "position": 8,
+      "surface": "הַשְּׂמֹאל"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "ymn",
           "sense": "go-right",
           "word": 3
