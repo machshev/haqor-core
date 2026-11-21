@@ -224,6 +224,33 @@
       "analysis": {
         "entry": {
           "draft": {
+            "article_id": "cm2l",
+            "base": "9847d39ee879db9f343ffa4d391ce852933875d955c7ecce0e73ff7abe2f17bf",
+            "change": "Add the geographical sense “north” to the noun שְׂמֹאל at word index 0.",
+            "definition": "The north side of a place, corresponding to the left when facing east.",
+            "evidence": "Gen.14.15 locates Hobah relative to Damascus. Ezk.16.46 pairs left and right to locate Samaria and Sodom relative to Jerusalem."
+          },
+          "sense": "north",
+          "word": 0
+        },
+        "evidence": "עַד חוֹבָה gives the endpoint of the pursuit. The relative clause אֲשֶׁר מִשְּׂמֹאל לְדַמָּשֶׂק locates Hobah on the left of Damascus, meaning north of it. Ezk.16.46 illustrates the same geographical use by placing Samaria on Jerusalem’s left and Sodom on its right.",
+        "gloss": "north of",
+        "language": "he",
+        "lemma": "שְׂמֹאל",
+        "morph": "HR/Ncmsa",
+        "morphology": "The preposition מִן is prefixed to a masculine singular absolute noun. Its נ assimilates to the initial שׂ, marked by dagesh.",
+        "qualifier": "",
+        "root": "שׂמאל",
+        "segments": "מִ/שְּׂמֹאל",
+        "sense": "north"
+      },
+      "position": 10,
+      "surface": "מִשְּׂמֹאל"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
             "article_id": "ddammaecaeq",
             "base": null,
             "change": "Add a place-name article keyed by the pointed lemma דַּמֶּשֶׂק. Its consonants דמשׂק distinguish it from the candidate root דמע.",

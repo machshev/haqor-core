@@ -6,7 +6,7 @@
   "id": "cm2l",
   "root": "שׂמאל",
   "status": "draft",
-  "summary": "שְׂמֹאל names the left side. In Gen.13.9 Abram offers to go right if Lot takes the left. If Lot takes the right, Abram uses the Hiphil of שָׂמַאל to say that he will go left.",
+  "summary": "שְׂמֹאל names the left side. In Gen.13.9 Abram offers to go right if Lot takes the left. If Lot takes the right, Abram uses the Hiphil of שָׂמַאל to say that he will go left. In Gen.14.15 the noun locates Hobah north of Damascus.",
   "tags": [
     "direction"
   ],
@@ -29,6 +29,23 @@
           ],
           "gloss": "the left",
           "id": "left-side"
+        },
+        {
+          "definition": "The north side of a place, corresponding to the left when facing east.",
+          "evidence": [
+            {
+              "note": "מִשְּׂמֹאל לְדַמָּשֶׂק locates Hobah, the endpoint of the pursuit, north of Damascus.",
+              "ref": "Gen.14.15",
+              "role": "example"
+            },
+            {
+              "note": "Samaria lies on Jerusalem’s left and Sodom on its right. Their locations give the left its northern bearing.",
+              "ref": "Ezk.16.46",
+              "role": "defining"
+            }
+          ],
+          "gloss": "north",
+          "id": "north"
         }
       ]
     },
