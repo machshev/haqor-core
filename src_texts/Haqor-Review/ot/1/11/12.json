@@ -1,6 +1,56 @@
 {
   "book": 1,
   "chapter": 11,
+  "review": {
+    "entities": [
+      {
+        "evidence": "Arpachshad is the son of Shem named in Genesis 10:22. Here he fathers Shelah, as in Genesis 10:24.",
+        "key": "Arpachshad@Gen.10.22",
+        "position": 0
+      },
+      {
+        "evidence": "Arpachshad fathers this Shelah in both Genesis 10:24 and 11:12. This family relationship distinguishes him from Judah’s son and the Jerusalem place.",
+        "key": "Shelah@Gen.10.24",
+        "position": 7
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "and Arpachshad",
+        "position": 0
+      },
+      {
+        "gloss": "lived",
+        "position": 1
+      },
+      {
+        "gloss": "five",
+        "position": 2
+      },
+      {
+        "gloss": "and thirty",
+        "position": 3
+      },
+      {
+        "gloss": "years",
+        "position": 4
+      },
+      {
+        "gloss": "and he fathered",
+        "position": 5
+      },
+      {
+        "gloss": "(untranslated)",
+        "position": 6
+      },
+      {
+        "gloss": "Shelah",
+        "position": 7
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[And Arpachshad|0] [lived|1] [thirty|3]-[five|2] [years|4], [then he fathered|5] [Shelah|7,6]."
+  },
   "source": "ot",
   "verse": 12,
   "words": [
