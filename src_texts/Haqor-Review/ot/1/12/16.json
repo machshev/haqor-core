@@ -96,6 +96,33 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article_id": "l",
+            "base": "236f59907c14453105ee66e9d50ac4edbb2b372bd78f8747795d7be7372b0af2",
+            "change": "Add Gen.12.16 as an example of le-belongs in the existing Hebrew lexeme לְ.",
+            "definition": "With הָיָה, לְ identifies the person who has something.",
+            "evidence": "Gen.12.16 illustrates possession with וַיְהִי לוֹ followed by the list of what Abram had."
+          },
+          "sense": "le-belongs",
+          "word": 0
+        },
+        "evidence": "The preceding clause names Abram in וּלְאַבְרָם הֵיטִיב. The next clause, וַיְהִי לוֹ צֹאן וּבָקָר, means “and he had flocks and herds.” לוֹ identifies Abram as the possessor of everything in the ensuing list.",
+        "gloss": "belonging to him",
+        "language": "he",
+        "lemma": "לְ",
+        "morph": "HR/Sp3ms",
+        "morphology": "The preposition לְ takes the third-person masculine singular pronominal suffix וֹ, referring to Abram.",
+        "qualifier": "",
+        "root": "ל",
+        "segments": "ל/וֹ",
+        "sense": "Marks the possessor in a clause with הָיָה."
+      },
+      "position": 4,
+      "surface": "לוֹ"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "92n",
           "sense": "flock-livestock",
           "word": 0
