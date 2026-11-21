@@ -1,6 +1,72 @@
 {
   "book": 1,
   "chapter": 12,
+  "review": {
+    "entities": [
+      {
+        "evidence": "Abram entering Egypt is Terah’s son, later named Abraham.",
+        "key": "Abraham@Gen.11.26",
+        "position": 2
+      },
+      {
+        "evidence": "The directional ending on מִצְרָיְמָה identifies the land of Egypt as Abram’s destination, continuing his journey in Genesis 12:10.",
+        "key": "Egypt@Gen.12.10",
+        "position": 3
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "then it happened",
+        "position": 0
+      },
+      {
+        "gloss": "when … came",
+        "position": 1
+      },
+      {
+        "gloss": "Abram",
+        "position": 2
+      },
+      {
+        "gloss": "into Egypt",
+        "position": 3
+      },
+      {
+        "gloss": "and they saw",
+        "position": 4
+      },
+      {
+        "gloss": "the Egyptians",
+        "position": 5
+      },
+      {
+        "gloss": "(untranslated)",
+        "position": 6
+      },
+      {
+        "gloss": "the woman",
+        "position": 7
+      },
+      {
+        "gloss": "that",
+        "position": 8
+      },
+      {
+        "gloss": "beautiful",
+        "position": 9
+      },
+      {
+        "gloss": "she",
+        "position": 10
+      },
+      {
+        "gloss": "very",
+        "position": 11
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[Then it happened|0], [when|1] [Abram|2] [came|1] [into Egypt|3], [that|0] [the Egyptians|5] [saw|4] [the woman|7,6], [that|8] [she|10] [{was}|9] [very|11] [beautiful|9]."
+  },
   "source": "ot",
   "verse": 14,
   "words": [
