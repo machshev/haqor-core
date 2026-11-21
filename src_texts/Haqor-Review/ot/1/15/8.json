@@ -1,6 +1,52 @@
 {
   "book": 1,
   "chapter": 15,
+  "review": {
+    "entities": [
+      {
+        "evidence": "Abram uses the divine title אֲדֹנָי to address Yahweh, whom he names in the next word.",
+        "key": "LORD@Gen.1.1",
+        "position": 1
+      },
+      {
+        "evidence": "יַהְוֶה names the God who has just promised Abram the land.",
+        "key": "LORD@Gen.1.1",
+        "position": 2
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "and he said",
+        "position": 0
+      },
+      {
+        "gloss": "my Lord",
+        "position": 1
+      },
+      {
+        "gloss": "Yahweh",
+        "position": 2
+      },
+      {
+        "gloss": "by what means",
+        "position": 3
+      },
+      {
+        "gloss": "will I know",
+        "position": 4
+      },
+      {
+        "gloss": "that",
+        "position": 5
+      },
+      {
+        "gloss": "I will possess it",
+        "position": 6
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[Then he said|0], “[My Lord|1] [Yahweh|2], [how|3] [will I know|4] [that|5] [I will possess it|6]?”"
+  },
   "source": "ot",
   "verse": 8,
   "words": [
