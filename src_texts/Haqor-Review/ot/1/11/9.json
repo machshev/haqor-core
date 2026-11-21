@@ -118,11 +118,17 @@
     {
       "analysis": {
         "entry": {
-          "existing": "xm",
+          "draft": {
+            "article_id": "xm",
+            "base": "097cb509d61550dd692b2f09746e28f0ea305aecfce752a95f324d31af8e9468",
+            "change": "Add Genesis 14:10 as evidence for the directional form under the existing sense of שָׁם at word index 1.",
+            "definition": "The adverb points to a place identified in context. With directional ה it can mark the endpoint of motion.",
+            "evidence": "Genesis 14:10 identifies the bitumen pits before saying that the fleeing kings fell שָׁמָּה, “there.”"
+          },
           "sense": "there-to-that-place",
           "word": 1
         },
-        "evidence": "In כִּי שָׁם בָּלַל יַהְוֶה, שָׁם points back to בָּבֶל as the place where Yahweh confused the language of the whole earth.",
+        "evidence": "In כִּי שָׁם בָּלַל יַהְוֶה, שָׁם points back to בָּבֶל and identifies where Yahweh confused the language of the whole earth.",
         "gloss": "there",
         "language": "he",
         "lemma": "שָׁם",
@@ -131,7 +137,7 @@
         "qualifier": "",
         "root": "שמ",
         "segments": "שָׁם",
-        "sense": "At the place just mentioned."
+        "sense": "there, to the place just mentioned"
       },
       "position": 6,
       "surface": "שָׁם"
