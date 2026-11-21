@@ -187,6 +187,33 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article_id": "l2",
+            "base": "8b3a4be8406ad27f30ddc94268ebb9ce3fbc57f0c866f186151e58223405b012",
+            "change": "Add Genesis 14:23 as an example of the existing Hebrew sense `not`.",
+            "definition": "Negates the following verb. Here the clause expresses the outcome Abram intends to prevent.",
+            "evidence": "In Genesis 14:23 Abram refuses the king’s property so that the king will have no occasion to say, “I made Abram rich.”"
+          },
+          "sense": "not",
+          "word": 0
+        },
+        "evidence": "Abram refuses to take even a thread or a sandal strap from the king. וְלֹא תֹאמַר gives his purpose, “so that you will not say, ‘I made Abram rich.’” לֹא has scope over תֹאמַר, the verb introducing the king’s possible claim.",
+        "gloss": "so that … not",
+        "language": "he",
+        "lemma": "לֹא",
+        "morph": "HC/Tn",
+        "morphology": "The prefixed conjunction וְ joins the clause to Abram’s refusal. The negative particle לֹא negates the following second-person masculine singular imperfect תֹאמַר, “you will say.”",
+        "qualifier": "",
+        "root": "לא",
+        "segments": "וְ/לֹא",
+        "sense": "Negates the act of speaking that Abram intends his refusal to prevent."
+      },
+      "position": 10,
+      "surface": "וְלֹא"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "2mr",
           "word": 0
         },

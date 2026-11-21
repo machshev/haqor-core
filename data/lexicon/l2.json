@@ -88,7 +88,7 @@
           "locator": "armep x000000710, lū [may] MOD",
           "note": "although; if; indeed; may; should.",
           "source": "oracc",
-          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000004710.html"
+          "url": "https://oracc.museum.upenn.edu/armep/cbd/akk/x000000710.html"
         },
         {
           "locator": "armep x000069600, lū [indeed] MOD",
@@ -116,7 +116,7 @@
       "gloss": "if (it had been so); would that",
       "id": "ar-law",
       "lang": "ar",
-      "note": "Both uses of לוּ: the optative, \"would that\", and the unreal condition, \"had this been so, that would have been\".",
+      "note": "Both uses of לוּ: the optative, \"would that\", and the unreal condition, \"if this had been so\".",
       "relation": "cognate",
       "translit": "law"
     },
@@ -140,7 +140,7 @@
       "evidence": [
         {
           "locator": "s.v. אִילּוּ",
-          "note": "\"if (oh that!)\"; Gen. R. s. 12 \"if the pillars had been higher, it would have been better\".",
+          "note": "\"if (oh that!)\"; Gen. R. s. 12 \"if the pillars were higher, it would have been better\".",
           "source": "jastrow-1903"
         }
       ],
@@ -156,7 +156,7 @@
       "evidence": [
         {
           "locator": "s.v. אִילּוּלָא",
-          "note": "\"(b. h. לוּלֵי = אִלּוּ לֹא, ch. אִלּוּ לָא) were it not, but for\"; Mekh. B'shall., Amalek 1.",
+          "note": "\"(b. h. לוּלֵא = אִלּוּ לֹא) were it not, but for it\"; Mekh. B'shall., Amalek 1.",
           "source": "jastrow-1903"
         }
       ],
@@ -428,6 +428,11 @@
               "note": "In וְלֹא יָכְלוּ לָשֶׁבֶת יַחְדָּו, לֹא negates יָכְלוּ, “they were able.” Their possessions were so extensive that they could not live together.",
               "ref": "Gen.13.6",
               "role": "example"
+            },
+            {
+              "note": "In וְלֹא תֹאמַר, “so that you will not say,” לֹא negates תֹאמַר. Abram refuses even a thread or a sandal strap so the king cannot claim to have made him rich.",
+              "ref": "Gen.14.23",
+              "role": "example"
             }
           ],
           "gloss": "not (of a fact)",
@@ -559,7 +564,7 @@
               "ref": "Pro.19.2"
             }
           ],
-          "gloss": "without (with בְּ, לְ)",
+          "gloss": "without, not by (בְּלֹא)",
           "id": "without",
           "kin": [
             "arc-without"
@@ -795,7 +800,7 @@
           "evidence": [
             {
               "locator": "NUM 14:2 word 13",
-              "note": "ὄφελον for the first לוּ of \"would that we had died\".",
+              "note": "ὄφελον for the first לוּ of \"if only we had died\".",
               "source": "macula-lxx"
             },
             {
@@ -811,10 +816,6 @@
             },
             {
               "ref": "Gal.5.12"
-            },
-            {
-              "note": "\"Would that you were cold or hot.\"",
-              "ref": "Rev.3.15"
             }
           ],
           "gloss": "would that",
@@ -871,10 +872,6 @@
               "ref": "Num.20.3"
             },
             {
-              "note": "\"O that we had been content to dwell beyond the Jordan!\"",
-              "ref": "Jos.7.7"
-            },
-            {
               "note": "\"O that you would tear the heavens and come down!\"",
               "ref": "Isa.63.19"
             },
@@ -905,7 +902,7 @@
               "role": "defining"
             },
             {
-              "note": "\"If there were a sword in my hand, by now I would have killed you\" (לוּ … כִּי עַתָּה).",
+              "note": "A condition contrary to fact: \"if there were a sword in my hand, then by now I would have killed you\".",
               "ref": "Num.22.29",
               "role": "defining"
             },
@@ -918,7 +915,7 @@
               "ref": "1Sa.14.30"
             },
             {
-              "note": "\"If Absalom were alive, and we all dead today\" (read לוּ, written לא).",
+              "note": "\"If Absalom were alive, but all we dead today\" (read לוּ, written לא).",
               "ref": "2Sa.19.7"
             }
           ],
@@ -954,7 +951,7 @@
           "id": "if-suppose"
         }
       ],
-      "summary": "A particle of wish and condition, about twenty times, also spelled לוּא. Its own cognates (Akkadian lū \"may; if\", Arabic law) are words distinct from those languages' negative lā, so it is not formed from לֹא; it is kept in this entry because the task joined them and because לוּלֵא is the two together. Where it is \"if\", the condition is usually one that did not happen, and the main clause says what would then have followed.",
+      "summary": "A particle of wish and condition, about twenty times, also spelled לוּא. Its own cognates (Akkadian lū \"may; if\", Arabic law) are words distinct from those languages' negative lā, so it is not formed from לֹא; it is kept in this entry because the task joined them and because לוּלֵא is לוּ and לֹא joined. Where it is \"if\", the condition is usually one that did not happen, and the main clause says what would then have followed.",
       "usage": {
         "phrases": [
           {
@@ -963,13 +960,16 @@
                 "ref": "Num.22.29"
               },
               {
-                "ref": "Num.22.33"
+                "ref": "Jos.7.7"
               },
               {
-                "ref": "Jos.7.7"
+                "ref": "Jdg.8.19"
+              },
+              {
+                "ref": "2Sa.18.12"
               }
             ],
-            "gloss": "if…, then by now…",
+            "gloss": "if … then",
             "phrase": "לוּ … כִּי עַתָּה"
           },
           {
@@ -997,6 +997,8 @@
         "l.ay.ac"
       ],
       "cognate_ids": [
+        "akk-lu",
+        "ar-law",
         "ar-lawla",
         "arc-illula"
       ],
@@ -1026,7 +1028,7 @@
           "definition": "Names what prevented a thing, by saying what would have followed without it; followed by a noun (\"but for Yahweh\") or a verb (\"had you not…\").",
           "evidence": [
             {
-              "note": "\"If you had not ploughed with my heifer, you would not have found out my riddle\" (לוּלֵא … לֹא).",
+              "note": "\"Had you not ploughed with my heifer, you would not have found out my riddle\" (לוּלֵא … לֹא).",
               "ref": "Jdg.14.18",
               "role": "defining"
             },
@@ -1036,7 +1038,7 @@
               "role": "defining"
             },
             {
-              "note": "\"But for the God of my father… you would now have sent me away empty\" (לוּלֵי … כִּי עַתָּה).",
+              "note": "\"But for the God of my father… surely now you would have sent me away empty\" (לוּלֵי … כִּי עַתָּה).",
               "ref": "Gen.31.42",
               "role": "defining"
             },
@@ -1045,15 +1047,11 @@
               "ref": "Gen.43.10"
             },
             {
-              "note": "\"Had not Moses his chosen stood in the breach before him.\"",
-              "ref": "Psa.106.23"
-            },
-            {
               "note": "\"Were it not for Yahweh who was for us\", repeated in Psa 124:2.",
               "ref": "Psa.124.1"
             },
             {
-              "note": "\"Had not Yahweh been my help, my soul had soon dwelt in silence.\"",
+              "note": "\"Were it not for Yahweh's help, my soul had soon dwelt in silence.\"",
               "ref": "Psa.94.17"
             },
             {
@@ -1093,13 +1091,13 @@
           {
             "evidence": [
               {
-                "ref": "Psa.94.17"
-              },
-              {
                 "ref": "Psa.124.1"
               },
               {
-                "ref": "Isa.1.9"
+                "ref": "Psa.124.2"
+              },
+              {
+                "ref": "Psa.94.17"
               }
             ],
             "gloss": "but for Yahweh",
@@ -1112,6 +1110,9 @@
               },
               {
                 "ref": "Num.22.33"
+              },
+              {
+                "ref": "2Sa.2.27"
               }
             ],
             "gloss": "had not…, surely by now…",
@@ -1169,7 +1170,7 @@
               "role": "defining"
             },
             {
-              "note": "Gods \"which do not see, nor hear, nor know\", echoed in Rev 9:20 (ἃ οὔτε βλέπειν δύναται οὔτε ἀκούειν).",
+              "note": "Gods \"which do not see, nor hear, nor know\", echoed in Rev 9:20 (ἃ οὔτε βλέπειν δύνανται οὔτε ἀκούειν).",
               "ref": "Dan.5.23"
             },
             {
@@ -1271,9 +1272,6 @@
               },
               {
                 "ref": "Dan.6.27"
-              },
-              {
-                "ref": "Dan.7.14"
               }
             ],
             "gloss": "shall not be destroyed",
@@ -1326,10 +1324,10 @@
     },
     {
       "cognate_ids": [
-        "arc-illu",
-        "arc-illula",
+        "akk-lu",
         "ar-law",
-        "akk-lu"
+        "arc-illu",
+        "arc-illula"
       ],
       "gloss": "if (it had been so); (with לָא) were it not",
       "lang": "syc",
@@ -1341,7 +1339,7 @@
           "definition": "A condition contrary to fact, with what would have followed.",
           "evidence": [
             {
-              "note": "Martha: \"Lord, if you had been here, my brother would not have died\" (אֶלּוּ … לָא מָאֶת הֲוָא).",
+              "note": "Martha: \"Lord, if you had been here, my brother would not have died\" (אֶלּוּ … לָא מִית הֲוָא).",
               "ref": "Jhn.11.21",
               "role": "defining"
             },
@@ -1357,7 +1355,7 @@
           "definition": "With לָא, \"had not\", as Hebrew לוּלֵא.",
           "evidence": [
             {
-              "note": "Isa 1:9 in the Peshitta: \"had not the Lord of hosts left us a remnant, we should have been as Sodom\" (דְּאֶלּוּ לָא מָרְיָא צְבָאוֹת אַוְתַּר לַן), where the Hebrew has לוּלֵי.",
+              "note": "Isa 1:9 in the Peshitta: \"had not the Lord of hosts left us a very small remnant, we should have been as Sodom\" (אֶלּוּ לָא …), where the Hebrew has לוּלֵי.",
               "ref": "Rom.9.29",
               "role": "defining"
             }
