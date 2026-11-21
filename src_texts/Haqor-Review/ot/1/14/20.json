@@ -180,6 +180,33 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article_id": "l",
+            "base": "138f5b8d2fee780bd13f23f63769fe547872d58d4e5e60c03c043507f2266b3e",
+            "change": "Add Gen.14.20 as an example of the existing le-dative sense.",
+            "definition": "לְ marks the person to whom something is given.",
+            "evidence": "In Gen.14.20, וַיִּתֶּן expresses giving, מַעֲשֵׂר specifies what was given, and לוֹ specifies to whom."
+          },
+          "sense": "le-dative",
+          "word": 0
+        },
+        "evidence": "In וַיִּתֶּן לוֹ מַעֲשֵׂר מִכֹּל, “he gave him a tenth of everything,” מַעֲשֵׂר names the gift and לוֹ identifies the recipient.",
+        "gloss": "to him",
+        "language": "he",
+        "lemma": "לְ",
+        "morph": "HR/Sp3ms",
+        "morphology": "The preposition לְ takes the third-person masculine singular pronominal suffix וֹ.",
+        "qualifier": "",
+        "root": "ל",
+        "segments": "ל/וֹ",
+        "sense": "Marks the recipient of a gift."
+      },
+      "position": 8,
+      "surface": "לוֹ"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "3cr",
           "sense": "tithe",
           "word": 4
