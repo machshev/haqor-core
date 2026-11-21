@@ -327,6 +327,56 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article": {
+              "created": "2026-11-21",
+              "english": "Milcah",
+              "entry": "mlk",
+              "evidence": [
+                {
+                  "note": "מִלְכָּה supplies the name of Nahor’s wife and is followed by בַּת הָרָן, “daughter of Haran.”",
+                  "ref": "Gen.11.29",
+                  "role": "defining"
+                },
+                {
+                  "note": "Vashti bears the title הַמַּלְכָּה, “the queen,” illustrating the related noun מַלְכָּה.",
+                  "ref": "Est.1.9"
+                }
+              ],
+              "gloss": "queen",
+              "id": "milekkaah",
+              "name": "מִלְכָּה",
+              "people": [],
+              "root": "מלכ",
+              "status": "draft",
+              "summary": "Genesis 11:29 names Milcah as Nahor’s wife and Haran’s daughter. Her name is related to מַלְכָּה, “queen.”",
+              "updated": "2026-11-21"
+            },
+            "article_id": "milekkaah",
+            "base": null,
+            "change": "Add a personal-name article for מִלְכָּה linked to the existing מלכ root article.",
+            "definition": "Milcah, a Hebrew feminine personal name related to מַלְכָּה, “queen.”",
+            "evidence": "Genesis 11:29 explicitly names Milcah as Nahor’s wife and Haran’s daughter. The related common noun מַלְכָּה occurs as a royal title in Esther 1:9."
+          },
+          "word": 0
+        },
+        "evidence": "The parallel clauses name the two wives. שֵׁם אֵשֶׁת אַבְרָם שָׂרָי gives Sarai as the name of Abram’s wife, and וְשֵׁם אֵשֶׁת נָחוֹר מִלְכָּה gives Milcah as the name of Nahor’s wife. The following בַּת הָרָן identifies her as Haran’s daughter.",
+        "gloss": "Milcah",
+        "language": "he",
+        "lemma": "מִלְכָּה",
+        "morph": "HNp",
+        "morphology": "Hebrew feminine personal name with no prefix or suffix.",
+        "qualifier": "",
+        "root": "מלכ",
+        "segments": "מִלְכָּה",
+        "sense": "Milcah, Nahor’s wife and Haran’s daughter"
+      },
+      "position": 12,
+      "surface": "מִלְכָּה"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "bnh",
           "sense": "bat-daughter",
           "word": 1
