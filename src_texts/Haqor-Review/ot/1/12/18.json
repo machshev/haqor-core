@@ -29,6 +29,57 @@
       "analysis": {
         "entry": {
           "draft": {
+            "article": {
+              "created": "2026-11-21",
+              "english": "Pharaoh",
+              "entry": "",
+              "evidence": [
+                {
+                  "note": "Pharaoh calls Abram and asks why he concealed that Sarai was his wife.",
+                  "ref": "Gen.12.18",
+                  "role": "example"
+                },
+                {
+                  "note": "The words מֶלֶךְ מִצְרָיִם, “king of Egypt,” identify Pharaoh’s office.",
+                  "ref": "Exo.6.11",
+                  "role": "defining"
+                }
+              ],
+              "gloss": "king of Egypt",
+              "id": "ppare3oh",
+              "name": "פַּרְעֹה",
+              "people": [],
+              "root": "",
+              "status": "draft",
+              "summary": "Pharaoh is the title of Egypt’s king. In Genesis 12 the ruler bearing this title summons Abram and questions him about Sarai.",
+              "updated": "2026-11-21"
+            },
+            "article_id": "ppare3oh",
+            "base": null,
+            "change": "Add a name article for the Egyptian royal title. The source gloss “lye; potash” does not fit the speaker, and the proposed Hebrew root פרע has no support here.",
+            "definition": "Pharaoh, the royal title borne by the king of Egypt.",
+            "evidence": "Genesis 12:18 identifies Pharaoh as the speaker who summons Abram. Exodus 6:11 explicitly calls the ruler פַּרְעֹה מֶלֶךְ מִצְרָיִם, “Pharaoh king of Egypt.”"
+          },
+          "word": 0
+        },
+        "evidence": "In וַיִּקְרָא פַרְעֹה לְאַבְרָם, Pharaoh is the subject of “called” and לְאַבְרָם identifies the person he summons. Pharaoh then addresses Abram directly, asking why Abram failed to tell him that Sarai was his wife.",
+        "gloss": "Pharaoh",
+        "language": "he",
+        "lemma": "פַּרְעֹה",
+        "morph": "HNp",
+        "morphology": "Hebrew proper noun. The royal title stands alone, with no prefix or suffix, and takes masculine singular agreement in וַיִּקְרָא and וַיֹּאמֶר.",
+        "qualifier": "",
+        "root": "",
+        "segments": "פַרְעֹה",
+        "sense": "The title of the king of Egypt, used here of the ruler who summons Abram."
+      },
+      "position": 1,
+      "surface": "פַרְעֹה"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
             "article_id": "2aberaam",
             "base": "a1d7decbc7705af633d410cfac35cc517fee041858c7caab48226f2c78e353db",
             "change": "Link the existing Abram article to אבה through its father element and add Genesis 12:4 as an example.",
