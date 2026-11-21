@@ -1,6 +1,77 @@
 {
   "book": 1,
   "chapter": 12,
+  "review": {
+    "entities": [
+      {
+        "evidence": "Abram, the son of Terah later named Abraham, is the traveler passing through Canaan.",
+        "key": "Abraham@Gen.11.26",
+        "position": 1
+      },
+      {
+        "evidence": "The phrase “the place of Shechem” identifies a stop on Abram’s journey through Canaan.",
+        "key": "Shechem@Gen.12.6",
+        "position": 5
+      },
+      {
+        "evidence": "The terebinth of Moreh identifies the landmark Abram reached at Shechem. The hill of Moreh in Judges 7:1 is a separate location.",
+        "key": "Moreh@Gen.12.6",
+        "position": 8
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "then he passed",
+        "position": 0
+      },
+      {
+        "gloss": "Abram",
+        "position": 1
+      },
+      {
+        "gloss": "through the land",
+        "position": 2
+      },
+      {
+        "gloss": "as far as",
+        "position": 3
+      },
+      {
+        "gloss": "the place of",
+        "position": 4
+      },
+      {
+        "gloss": "Shechem",
+        "position": 5
+      },
+      {
+        "gloss": "to",
+        "position": 6
+      },
+      {
+        "gloss": "the terebinth tree of",
+        "position": 7
+      },
+      {
+        "gloss": "Moreh",
+        "position": 8
+      },
+      {
+        "gloss": "and the Canaanites",
+        "position": 9
+      },
+      {
+        "gloss": "at that time",
+        "position": 10
+      },
+      {
+        "gloss": "in the land",
+        "position": 11
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[Then|0] [Abram|1] [passed|0] [through the land|2] [as far as|3] [the place of|4] [Shechem|5], [to|6] [the terebinth tree of|7] [Moreh|8]. [And the Canaanites|9] {[were|11]} [in the land|11] [at that time|10]."
+  },
   "source": "ot",
   "verse": 6,
   "words": [
