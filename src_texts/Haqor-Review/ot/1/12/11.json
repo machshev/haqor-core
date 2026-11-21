@@ -1,6 +1,92 @@
 {
   "book": 1,
   "chapter": 12,
+  "review": {
+    "entities": [
+      {
+        "evidence": "The directional ending and the verb “enter” identify Egypt as Abram’s destination, the land named in Genesis 12:10.",
+        "key": "Egypt@Gen.12.10",
+        "position": 4
+      },
+      {
+        "evidence": "Abram addresses Sarai as his wife. Genesis 11:29 names her as Abram’s wife, and Genesis 17:15 identifies Sarah as her later name.",
+        "key": "Sarah@Gen.11.29",
+        "position": 7
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "and it happened",
+        "position": 0
+      },
+      {
+        "gloss": "as",
+        "position": 1
+      },
+      {
+        "gloss": "he drew near",
+        "position": 2
+      },
+      {
+        "gloss": "to enter",
+        "position": 3
+      },
+      {
+        "gloss": "to Egypt",
+        "position": 4
+      },
+      {
+        "gloss": "and he said",
+        "position": 5
+      },
+      {
+        "gloss": "to",
+        "position": 6
+      },
+      {
+        "gloss": "Sarai",
+        "position": 7
+      },
+      {
+        "gloss": "his wife",
+        "position": 8
+      },
+      {
+        "gloss": "look",
+        "position": 9
+      },
+      {
+        "gloss": "now",
+        "position": 10
+      },
+      {
+        "gloss": "I know",
+        "position": 11
+      },
+      {
+        "gloss": "that",
+        "position": 12
+      },
+      {
+        "gloss": "a woman",
+        "position": 13
+      },
+      {
+        "gloss": "beautiful",
+        "position": 14
+      },
+      {
+        "gloss": "in appearance",
+        "position": 15
+      },
+      {
+        "gloss": "you",
+        "position": 16
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[And it happened|0] [that as|1] [he was about|2] [to enter|3] [Egypt|4], [he said|5] [to|6] [Sarai|7], [his wife|8], “ [Look|9] [now|10], [I know|11] [that|12] [you|16] {are} [a woman|13] [beautiful|14] [in appearance|15]."
+  },
   "source": "ot",
   "verse": 11,
   "words": [
@@ -153,38 +239,6 @@
       "analysis": {
         "entry": {
           "draft": {
-            "article": {
-              "bdb": [
-                "u.cm.af"
-              ],
-              "created": "2026-11-21",
-              "english": "Sarai",
-              "entry": "crh",
-              "evidence": [
-                {
-                  "note": "The verse explicitly gives Sarai as the name of Abram’s wife.",
-                  "ref": "Gen.11.29",
-                  "role": "defining"
-                },
-                {
-                  "note": "God identifies שָׂרַי as Abraham’s wife and gives her the name שָׂרָה.",
-                  "ref": "Gen.17.15",
-                  "role": "defining"
-                },
-                {
-                  "note": "Kings and their noblewomen appear in parallel. The noun for the women, שָׂרוֹת, is the plural of שָׂרָה.",
-                  "ref": "Isa.49.23"
-                }
-              ],
-              "gloss": "probably princess",
-              "id": "caaray",
-              "name": "שָׂרַי",
-              "people": [],
-              "root": "שׂרר",
-              "status": "draft",
-              "summary": "Sarai is the name by which Abram’s wife is introduced. Her later name שָׂרָה has the same form as the Hebrew noun for a princess or noblewoman, supporting a similar meaning for Sarai. The text leaves the force of the earlier name’s ending unexplained.",
-              "updated": "2026-11-21"
-            },
             "article_id": "caaray",
             "base": null,
             "change": "Add a personal-name article for שָׂרַי linked to the שׂרר word family.",
