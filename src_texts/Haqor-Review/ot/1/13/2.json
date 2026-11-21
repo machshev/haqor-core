@@ -1,6 +1,43 @@
 {
   "book": 1,
   "chapter": 13,
+  "review": {
+    "entities": [
+      {
+        "evidence": "אַבְרָם names Abram, the son of Terah later called Abraham. The source tag identifies the same bearer.",
+        "key": "Abraham@Gen.11.26",
+        "position": 0
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "And Abram",
+        "position": 0
+      },
+      {
+        "gloss": "wealthy",
+        "position": 1
+      },
+      {
+        "gloss": "very",
+        "position": 2
+      },
+      {
+        "gloss": "in livestock",
+        "position": 3
+      },
+      {
+        "gloss": "in silver",
+        "position": 4
+      },
+      {
+        "gloss": "and in gold",
+        "position": 5
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[And Abram|0] [{was}|1] [very|2] [wealthy|1] [in livestock|3], [in silver|4], [and in gold|5]."
+  },
   "source": "ot",
   "verse": 2,
   "words": [
