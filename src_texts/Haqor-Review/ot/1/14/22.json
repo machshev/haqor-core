@@ -143,6 +143,33 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article_id": "yd",
+            "base": "c71b1b2b4b253508cfe6589c50cf8a26952bcd7b3c825cbc57cd9aead18eb0fd",
+            "change": "Add Gen.14.22 as an example of the existing Hebrew sense hand-limb.",
+            "definition": "The physical hand, here raised toward Yahweh in an oath.",
+            "evidence": "In Gen.14.22, הֲרִימֹתִי יָדִי identifies Abram’s hand as what he has raised."
+          },
+          "sense": "hand-limb",
+          "word": 0
+        },
+        "evidence": "Abram says הֲרִימֹתִי יָדִי אֶל יַהְוֶה, “I have raised my hand to Yahweh.” יָדִי is the direct object of “I have raised.” The suffix identifies the hand as Abram’s own, and אֶל יַהְוֶה gives the direction of the oath gesture.",
+        "gloss": "my hand",
+        "language": "he",
+        "lemma": "יָד",
+        "morph": "HNcbsc/Sp1cs",
+        "morphology": "Hebrew common noun, singular construct, with the first-person common singular possessive suffix ־ִי. The noun is tagged for both genders, and this verse has no agreement marker that narrows the reading.",
+        "qualifier": "",
+        "root": "יד",
+        "segments": "יָדִ/י",
+        "sense": "The physical hand raised in swearing an oath."
+      },
+      "position": 6,
+      "surface": "יָדִי"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "2lh",
           "sense": "to-toward-a-person",
           "word": 0
