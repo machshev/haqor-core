@@ -7,6 +7,33 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article_id": "l2",
+            "base": "93da3a7d117a6975b4b13ebab541db2442005418981b590bc987115b9a9a90da",
+            "change": "Clarify the existing Genesis 13:9 evidence note by identifying how the two alternatives establish the expected answer.",
+            "definition": "With the interrogative prefix, לֹא asks the hearer to affirm the proposition.",
+            "evidence": "Genesis 13:9 is already defining evidence for this sense in article l2. Abram’s offer of either direction shows why he expects Lot to agree."
+          },
+          "sense": "is-it-not",
+          "word": 0
+        },
+        "evidence": "Abram asks Lot, “Isn’t the whole land before you?” He then offers to go right if Lot goes left, and left if Lot goes right. The offer assumes that Lot is free to choose either direction.",
+        "gloss": "isn’t …?",
+        "language": "he",
+        "lemma": "לֹא",
+        "morph": "HTi/Tn",
+        "morphology": "The interrogative prefix הֲ introduces the question. The negative particle לֹא negates the following verbless clause.",
+        "qualifier": "",
+        "root": "לא",
+        "segments": "הֲ/לֹא",
+        "sense": "With interrogative הֲ, לֹא introduces a question that expects agreement."
+      },
+      "position": 0,
+      "surface": "הֲלֹא"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "kll",
           "sense": "all-the-whole",
           "word": 0
