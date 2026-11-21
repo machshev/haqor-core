@@ -1,6 +1,78 @@
 {
   "book": 1,
   "chapter": 11,
+  "review": {
+    "entities": [
+      {
+        "evidence": "Terah is the subject of both verbs and the father of the three sons named here.",
+        "key": "Terah@Gen.11.24",
+        "position": 1
+      },
+      {
+        "evidence": "Abram is the first son of Terah listed here. Genesis 17:5 records his change of name to Abraham.",
+        "key": "Abraham@Gen.11.26",
+        "position": 6
+      },
+      {
+        "evidence": "Terah fathered this Nahor, Abram’s brother. The elder Nahor of Genesis 11:24 was Terah’s father.",
+        "key": "Nahor@Gen.11.26",
+        "position": 8
+      },
+      {
+        "evidence": "Haran is the third son listed after “he fathered,” alongside his brothers Abram and Nahor.",
+        "key": "Haran@Gen.11.26",
+        "position": 10
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "and he lived",
+        "position": 0
+      },
+      {
+        "gloss": "Terah",
+        "position": 1
+      },
+      {
+        "gloss": "seventy",
+        "position": 2
+      },
+      {
+        "gloss": "years",
+        "position": 3
+      },
+      {
+        "gloss": "then he fathered",
+        "position": 4
+      },
+      {
+        "gloss": "(untranslated)",
+        "position": 5
+      },
+      {
+        "gloss": "Abram",
+        "position": 6
+      },
+      {
+        "gloss": "(untranslated)",
+        "position": 7
+      },
+      {
+        "gloss": "Nahor",
+        "position": 8
+      },
+      {
+        "gloss": "and (direct-object marker)",
+        "position": 9
+      },
+      {
+        "gloss": "Haran",
+        "position": 10
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[And|0] [Terah|1] [lived|0] [seventy|2] [years|3], [then he fathered|4] [Abram|6,5], [Nahor|8,7], [and|9] [Haran|10]."
+  },
   "source": "ot",
   "verse": 26,
   "words": [
@@ -232,27 +304,6 @@
       "analysis": {
         "entry": {
           "draft": {
-            "article": {
-              "created": "2026-11-21",
-              "english": "Haran",
-              "entry": "",
-              "evidence": [
-                {
-                  "note": "וְאֶת הָרָן closes the list of sons whom Terah fathered.",
-                  "ref": "Gen.11.26",
-                  "role": "defining"
-                }
-              ],
-              "gloss": "Haran (meaning uncertain)",
-              "id": "haaraan",
-              "name": "הָרָן",
-              "note": "",
-              "people": [],
-              "root": "",
-              "status": "draft",
-              "summary": "Genesis 11:26 names Haran among Terah’s sons, alongside Abram and Nahor. The origin of the name is uncertain.",
-              "updated": "2026-11-21"
-            },
             "article_id": "haaraan",
             "base": null,
             "change": "Add a personal-name article for הָרָן with the root unassigned.",
