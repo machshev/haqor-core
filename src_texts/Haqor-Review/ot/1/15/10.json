@@ -27,6 +27,33 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article_id": "l",
+            "base": "d5907d54913cfad89eb42e39cd77d990c05cacd3bc33356ba0a93f13f5632bda",
+            "change": "Add Genesis 15:10 as an example of the existing le-dative sense of Hebrew לְ.",
+            "definition": "לְ marks the person for whom an action is performed.",
+            "evidence": "Genesis 15:10 answers the command קְחָה לִי in 15:9 with וַיִּקַּח לוֹ. The same beneficiary appears first as speaker and then in the third person."
+          },
+          "sense": "le-dative",
+          "word": 0
+        },
+        "evidence": "Yahweh tells Abram קְחָה לִי, “take for me,” in Genesis 15:9. The narrator reports Abram’s response with וַיִּקַּח לוֹ, “he took for him.” The shift from לִי to לוֹ reflects the shift from Yahweh’s speech to narration. אֶת כָּל אֵלֶּה identifies the animals Abram took.",
+        "gloss": "for him",
+        "language": "he",
+        "lemma": "לְ",
+        "morph": "HR/Sp3ms",
+        "morphology": "The preposition לְ takes the third-person masculine singular pronominal suffix וֹ, giving לוֹ, “for him.”",
+        "qualifier": "",
+        "root": "ל",
+        "segments": "ל/וֹ",
+        "sense": "Marks the one for whom Abram takes the animals."
+      },
+      "position": 1,
+      "surface": "לוֹ"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "2t",
           "sense": "definite-object",
           "word": 0
