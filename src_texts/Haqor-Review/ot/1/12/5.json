@@ -241,6 +241,33 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article_id": "2t",
+            "base": "a480c59f783409d118bdee5f42480fcbf1573801782c6b167e965fffd13dd879",
+            "change": "Add Gen.12.5 as an example of the existing definite-object sense of the particle אֵת at word index 0.",
+            "definition": "Introduces the particular person or thing a verb acts on, ordinarily a definite noun identified by the article, a name or a possessive suffix.",
+            "evidence": "In Gen.12.5, וְאֶת כָּל רְכוּשָׁם adds all their possessions to the objects of וַיִּקַּח, “he took.”"
+          },
+          "sense": "definite-object",
+          "word": 0
+        },
+        "evidence": "After Sarai and Lot, וְאֶת introduces the next thing Abram took, כָּל רְכוּשָׁם אֲשֶׁר רָכָשׁוּ, “all their possessions that they had acquired.” The possessive suffix on רְכוּשָׁם makes the phrase definite.",
+        "gloss": "and (direct-object marker)",
+        "language": "he",
+        "lemma": "אֵת",
+        "morph": "HC/To",
+        "morphology": "וְ is the coordinating conjunction “and.” אֶת is the unsuffixed direct-object particle.",
+        "qualifier": "particle",
+        "root": "את",
+        "segments": "וְ/אֶת",
+        "sense": "Marks כָּל רְכוּשָׁם, “all their possessions,” as a definite direct object of וַיִּקַּח, “he took.”"
+      },
+      "position": 9,
+      "surface": "וְאֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "kll",
           "sense": "all-the-whole",
           "word": 0
