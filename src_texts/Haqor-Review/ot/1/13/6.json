@@ -28,6 +28,33 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article_id": "2t",
+            "base": "c79f3d3faacfb2b11faa7d12f86e57681376e8916bff279446d3f0db6cfedea4",
+            "change": "Add Gen 13:6 as evidence for the existing object-pronoun sense of אֵת.",
+            "definition": "With a pronominal suffix, אֵת expresses the direct object of a verb.",
+            "evidence": "In Gen 13:6 אֹתָם means “them,” the two men whom the land could not support."
+          },
+          "sense": "object-pronoun",
+          "word": 0
+        },
+        "evidence": "In וְלֹא נָשָׂא אֹתָם הָאָרֶץ, the land is the subject of נָשָׂא, and אֹתָם identifies whom it could not support, Abram and Lot. The plural verb יָכְלוּ refers to the same two men when the verse says they could not live together.",
+        "gloss": "them",
+        "language": "he",
+        "lemma": "אֵת",
+        "morph": "HTo/Sp3mp",
+        "morphology": "The direct-object particle takes its suffixed form אֹת־ and the third-person masculine plural suffix ־ָם.",
+        "qualifier": "particle",
+        "root": "את",
+        "segments": "אֹת/ָם",
+        "sense": "Carries a pronominal suffix as the direct object of a verb."
+      },
+      "position": 2,
+      "surface": "אֹתָם"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "2r9",
           "sense": "land-country-territory",
           "word": 0
