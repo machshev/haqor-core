@@ -1,6 +1,174 @@
 {
   "book": 1,
   "chapter": 13,
+  "review": {
+    "entities": [
+      {
+        "evidence": "Abram, Terah’s son and later named Abraham, owns the livestock tended by the first group of herdsmen.",
+        "key": "Abraham@Gen.11.26",
+        "position": 5
+      },
+      {
+        "evidence": "Lot, Haran’s son and Abram’s nephew, owns the livestock tended by the second group of herdsmen.",
+        "key": "Lot@Gen.11.27",
+        "position": 9
+      },
+      {
+        "evidence": "As in Genesis 12:6, the singular gentilic names the Canaanites collectively. Here they live in the land alongside the Perizzites.",
+        "key": "Canaanites@Gen.12.6",
+        "position": 10
+      },
+      {
+        "evidence": "The singular gentilic names the Perizzites collectively as a people living alongside the Canaanites.",
+        "key": "Perizzites@Gen.13.7",
+        "position": 11
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "and there arose",
+        "position": 0
+      },
+      {
+        "gloss": "a quarrel",
+        "position": 1
+      },
+      {
+        "gloss": "between",
+        "position": 2
+      },
+      {
+        "gloss": "the herdsmen of",
+        "position": 3
+      },
+      {
+        "gloss": "livestock of",
+        "position": 4
+      },
+      {
+        "gloss": "Abram",
+        "position": 5
+      },
+      {
+        "gloss": "and between",
+        "position": 6
+      },
+      {
+        "gloss": "the herdsmen of",
+        "position": 7
+      },
+      {
+        "gloss": "livestock of",
+        "position": 8
+      },
+      {
+        "gloss": "Lot",
+        "position": 9
+      },
+      {
+        "gloss": "and the Canaanites",
+        "position": 10
+      },
+      {
+        "gloss": "and the Perizzites",
+        "position": 11
+      },
+      {
+        "gloss": "at that time",
+        "position": 12
+      },
+      {
+        "gloss": "were living",
+        "position": 13
+      },
+      {
+        "gloss": "in the land",
+        "position": 14
+      }
+    ],
+    "name_review_base": [
+      {
+        "key": null,
+        "position": 0,
+        "surface": "וַיְהִי"
+      },
+      {
+        "key": null,
+        "position": 1,
+        "surface": "רִיב"
+      },
+      {
+        "key": null,
+        "position": 2,
+        "surface": "בֵּין"
+      },
+      {
+        "key": null,
+        "position": 3,
+        "surface": "רֹעֵי"
+      },
+      {
+        "key": null,
+        "position": 4,
+        "surface": "מִקְנֵה"
+      },
+      {
+        "evidence": "Abram, Terah’s son and later named Abraham, owns the livestock tended by the first group of herdsmen.",
+        "key": "Abraham@Gen.11.26",
+        "position": 5,
+        "surface": "אַבְרָם"
+      },
+      {
+        "key": null,
+        "position": 6,
+        "surface": "וּבֵין"
+      },
+      {
+        "key": null,
+        "position": 7,
+        "surface": "רֹעֵי"
+      },
+      {
+        "key": null,
+        "position": 8,
+        "surface": "מִקְנֵה"
+      },
+      {
+        "evidence": "Lot, Haran’s son and Abram’s nephew, owns the livestock tended by the second group of herdsmen.",
+        "key": "Lot@Gen.11.27",
+        "position": 9,
+        "surface": "לוֹט"
+      },
+      {
+        "evidence": "As in Genesis 12:6, the singular gentilic names the Canaanites collectively. Here they live in the land alongside the Perizzites.",
+        "key": "Canaanites@Gen.12.6",
+        "position": 10,
+        "surface": "וְהַכְּנַעֲנִי"
+      },
+      {
+        "evidence": "The singular gentilic names the Perizzites collectively as a people living alongside the Canaanites.",
+        "key": "Perizzites@Gen.13.7",
+        "position": 11,
+        "surface": "וְהַפְּרִזִּי"
+      },
+      {
+        "key": null,
+        "position": 12,
+        "surface": "אָז"
+      },
+      {
+        "key": null,
+        "position": 13,
+        "surface": "יֹשֵׁב"
+      },
+      {
+        "key": null,
+        "position": 14,
+        "surface": "בָּאָרֶץ"
+      }
+    ],
+    "translation": "[Then there was|0] [strife|1] [between|2] [the herdsmen of|3] [Abram|5][’s livestock|4] [and|6] [the herdsmen of|7] [Lot|9][’s livestock|8]. [And the Canaanites|10] [and the Perizzites|11] [were living|13] [in the land|14] [then|12]."
+  },
   "source": "ot",
   "verse": 7,
   "words": [
