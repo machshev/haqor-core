@@ -1,6 +1,63 @@
 {
   "book": 1,
   "chapter": 11,
+  "review": {
+    "entities": [
+      {
+        "evidence": "יַהְוֶה explicitly names Yahweh as the one who came down to see the city and the tower.",
+        "key": "LORD@Gen.1.1",
+        "position": 1
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "and he came down",
+        "position": 0
+      },
+      {
+        "gloss": "Yahweh",
+        "position": 1
+      },
+      {
+        "gloss": "to see",
+        "position": 2
+      },
+      {
+        "gloss": "[direct-object marker]",
+        "position": 3
+      },
+      {
+        "gloss": "the city",
+        "position": 4
+      },
+      {
+        "gloss": "and [direct-object marker]",
+        "position": 5
+      },
+      {
+        "gloss": "the tower",
+        "position": 6
+      },
+      {
+        "gloss": "that",
+        "position": 7
+      },
+      {
+        "gloss": "had built",
+        "position": 8
+      },
+      {
+        "gloss": "the sons of",
+        "position": 9
+      },
+      {
+        "gloss": "mankind",
+        "position": 10
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[Then|0] [Yahweh|1] [came down|0] [to see|2] [the city|4,3] [and|5] [the tower|6] [that|7] [the sons of|9] [mankind|10] [had built|8]."
+  },
   "source": "ot",
   "verse": 5,
   "words": [
