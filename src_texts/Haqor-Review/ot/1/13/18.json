@@ -117,49 +117,25 @@
       "analysis": {
         "entry": {
           "draft": {
-            "article": {
-              "created": "2026-11-21",
-              "english": "Mamre",
-              "entry": "",
-              "evidence": [
-                {
-                  "note": "Abram settles by the oaks of Mamre at Hebron and builds an altar there.",
-                  "ref": "Gen.13.18",
-                  "role": "example"
-                },
-                {
-                  "note": "The phrase “the oaks of Mamre the Amorite” identifies Mamre as a brother of Eshcol and Aner. The verse calls them Abram’s allies.",
-                  "ref": "Gen.14.13",
-                  "role": "defining"
-                }
-              ],
-              "gloss": "Mamre",
-              "id": "mameree2",
-              "name": "מַמְרֵא",
-              "people": [],
-              "root": "",
-              "status": "draft",
-              "summary": "Mamre is an Amorite, a brother of Eshcol and Aner and an ally of Abram. Abram settles by the oaks of Mamre at Hebron.",
-              "updated": "2026-11-21"
-            },
             "article_id": "mameree2",
             "base": null,
-            "change": "Add a personal-name article for Mamre. The verses establish his identity but supply no etymology for his name.",
-            "definition": "Mamre, an Amorite ally of Abram whose name identifies a grove of oaks at Hebron.",
-            "evidence": "Genesis 14:13 identifies the man named in the expression “the oaks of Mamre” in Genesis 13:18."
+            "change": "Replace the proposed personal-name analysis for this occurrence with a place-name entry. Retain the gloss “Mamre.”",
+            "definition": "Mamre, the place at Hebron whose terebinths mark Abram’s campsite.",
+            "evidence": "Genesis 13:18 locates the terebinths of Mamre at Hebron. Genesis 14:13 explicitly identifies a man as Mamre the Amorite. That personal identification belongs to the latter verse."
           },
+          "sense": "mamre-at-hebron",
           "word": 0
         },
-        "evidence": "In Genesis 13:18, בְּאֵלֹנֵי מַמְרֵא names the site where Abram settles, and אֲשֶׁר בְּחֶבְרוֹן locates it at Hebron. Genesis 14:13 repeats the phrase and identifies Mamre as the Amorite brother of Eshcol and Aner.",
+        "evidence": "בְּאֵלֹנֵי מַמְרֵא tells where Abram settles, “by the terebinths of Mamre.” The relative clause אֲשֶׁר בְּחֶבְרוֹן locates the site at Hebron, and שָׁם, “there,” refers back to it as the place where Abram builds an altar.",
         "gloss": "Mamre",
         "language": "he",
         "lemma": "מַמְרֵא",
         "morph": "HNp",
-        "morphology": "Hebrew proper noun with no prefix or suffix. It completes the construct phrase אֵלֹנֵי מַמְרֵא, “the oaks of Mamre.”",
-        "qualifier": "",
-        "root": "",
+        "morphology": "Hebrew proper noun with no prefix or suffix. It completes the construct phrase אֵלֹנֵי מַמְרֵא, “the terebinths of Mamre.”",
+        "qualifier": "place",
+        "root": "ממרא",
         "segments": "מַמְרֵא",
-        "sense": "Mamre, the Amorite whose name identifies the oaks at Hebron."
+        "sense": "Mamre, the place at Hebron where Abram camps among the terebinths."
       },
       "position": 5,
       "surface": "מַמְרֵא"
