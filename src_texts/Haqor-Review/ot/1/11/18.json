@@ -1,6 +1,90 @@
 {
   "book": 1,
   "chapter": 11,
+  "review": {
+    "entities": [
+      {
+        "evidence": "The verse identifies Peleg as Reu’s father, matching the record for Peleg son of Eber.",
+        "key": "Peleg@Gen.10.25",
+        "position": 1
+      },
+      {
+        "evidence": "Reu is the named son whom Peleg fathered at age thirty.",
+        "key": "Reu@Gen.11.18",
+        "position": 6
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "and he lived",
+        "position": 0
+      },
+      {
+        "gloss": "Peleg",
+        "position": 1
+      },
+      {
+        "gloss": "thirty",
+        "position": 2
+      },
+      {
+        "gloss": "years",
+        "position": 3
+      },
+      {
+        "gloss": "then he fathered",
+        "position": 4
+      },
+      {
+        "gloss": "(untranslated)",
+        "position": 5
+      },
+      {
+        "gloss": "Reu",
+        "position": 6
+      }
+    ],
+    "name_review_base": [
+      {
+        "key": null,
+        "position": 0,
+        "surface": "וַיְחִי"
+      },
+      {
+        "evidence": "The verse identifies Peleg as Reu’s father, matching the record for Peleg son of Eber.",
+        "key": "Peleg@Gen.10.25",
+        "position": 1,
+        "surface": "פֶלֶג"
+      },
+      {
+        "key": null,
+        "position": 2,
+        "surface": "שְׁלֹשִׁים"
+      },
+      {
+        "key": null,
+        "position": 3,
+        "surface": "שָׁנָה"
+      },
+      {
+        "key": null,
+        "position": 4,
+        "surface": "וַיּוֹלֶד"
+      },
+      {
+        "key": null,
+        "position": 5,
+        "surface": "אֶת"
+      },
+      {
+        "evidence": "Reu is the named son whom Peleg fathered at age thirty.",
+        "key": "Reu@Gen.11.18",
+        "position": 6,
+        "surface": "רְעוּ"
+      }
+    ],
+    "translation": "[And|0] [Peleg|1] [lived|0] [thirty|2] [years|3], [then he fathered|4] [Reu|6,5]."
+  },
   "source": "ot",
   "verse": 18,
   "words": [
