@@ -324,6 +324,33 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article_id": "2t",
+            "base": "7db10adc386f74ea8b4c0ec54fe4fac1be02ecef9a64efe076e5d27d6a954a93",
+            "change": "Add Genesis 14:5 as evidence for the existing definite-object sense of the particle at word index 0.",
+            "definition": "אֵת introduces the particular person or thing a verb acts on. It can recur before each of several coordinated objects.",
+            "evidence": "In Genesis 14:5, וְאֵת introduces הָאֵימִים as the third object of וַיַּכּוּ, after the Rephaim and the Zuzim."
+          },
+          "sense": "definite-object",
+          "word": 0
+        },
+        "evidence": "In Genesis 14:5, וַיַּכּוּ “they struck” governs three groups in succession. After אֶת רְפָאִים and וְאֶת הַזּוּזִים, וְאֵת הָאֵימִים adds the Emim as the third group struck.",
+        "gloss": "and [direct-object marker]",
+        "language": "he",
+        "lemma": "אֵת",
+        "morph": "HC/To",
+        "morphology": "The prefixed conjunction וְ means “and.” The unsuffixed particle אֵת marks the following noun phrase as a direct object.",
+        "qualifier": "particle",
+        "root": "את",
+        "segments": "וְ/אֵת",
+        "sense": "Marks the Emim as a definite direct object of “they struck.”"
+      },
+      "position": 16,
+      "surface": "וְאֵת"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "2ym",
           "sense": "emites",
           "word": 1
