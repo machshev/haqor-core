@@ -159,6 +159,57 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article": {
+              "created": "2026-11-21",
+              "english": "Lot",
+              "entry": "",
+              "evidence": [
+                {
+                  "note": "The genealogy lists Abram and Haran among Terah’s sons and names Lot as Haran’s son.",
+                  "ref": "Gen.11.27",
+                  "role": "defining"
+                },
+                {
+                  "note": "וְלוֹט עִמּוֹ names Lot as a companion of Abram on the journey from Egypt.",
+                  "ref": "Gen.13.1",
+                  "role": "example"
+                }
+              ],
+              "gloss": "Lot",
+              "id": "lwo6",
+              "name": "לוֹט",
+              "people": [],
+              "root": "",
+              "status": "draft",
+              "summary": "Lot was the son of Haran, Abram’s brother. He accompanied Abram from Egypt toward the Negeb. The meaning of his name is uncertain.",
+              "updated": "2026-11-21"
+            },
+            "article_id": "lwo6",
+            "base": null,
+            "change": "Add a personal-name article for לוֹט. The derivation of the name is uncertain.",
+            "definition": "Lot, son of Haran and nephew of Abram.",
+            "evidence": "Genesis 11:27 names Haran as Lot’s father. Genesis 13:1 names Lot as Abram’s companion on the journey from Egypt."
+          },
+          "word": 0
+        },
+        "evidence": "וְלוֹט עִמּוֹ means ‘and Lot with him’. It names Lot among those who went up from Egypt with Abram. Genesis 12:5 identifies him as the son of Abram’s brother.",
+        "gloss": "and Lot",
+        "language": "he",
+        "lemma": "לוֹט",
+        "morph": "HC/Np",
+        "morphology": "The conjunction וְ ‘and’ prefixes the masculine personal name לוֹט.",
+        "qualifier": "",
+        "root": "",
+        "segments": "וְ/לוֹט",
+        "sense": "Lot, Abram’s nephew"
+      },
+      "position": 8,
+      "surface": "וְלוֹט"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "naegaeb",
           "sense": "the-negev-the-southern",
           "word": 0
