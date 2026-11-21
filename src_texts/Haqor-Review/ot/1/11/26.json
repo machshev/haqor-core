@@ -133,21 +133,21 @@
         "entry": {
           "draft": {
             "article_id": "2aberaam",
-            "base": null,
-            "change": "Add a personal-name article for אַבְרָם and link it to the bearer recorded under Abraham.",
+            "base": "034771a59f66cdd09c91bd3c91680b704a41d5f927017a76083d890c0edf2e81",
+            "change": "Clear the unsupported root אבה and its link to article 2bh. Preserve the explanation of the compound name and its recorded bearer.",
             "definition": "Abram, the earlier name of Abraham, son of Terah.",
-            "evidence": "Genesis 11:26 names Abram among Terah’s sons. Genesis 17:5 gives both forms of his name when God renames him Abraham."
+            "evidence": "Genesis 11:26 identifies Abram as Terah’s son, and Genesis 17:5 records his change of name. The first element of אַבְרָם is the noun אָב, “father.” Neither verse supports deriving the name from אָבָה, “be willing.”"
           },
           "word": 0
         },
-        "evidence": "Terah is the subject of וַיּוֹלֶד, “he fathered.” אַבְרָם follows the direct-object marker אֶת and stands alongside Nahor and Haran as one of Terah’s sons. Genesis 17:5 explicitly identifies Abram as the earlier name of Abraham.",
+        "evidence": "Terah is the subject of וַיּוֹלֶד, “he fathered.” The repeated אֶת marks Abram, Nahor and Haran as his sons. Genesis 17:5 identifies Abram as the man whom God renames Abraham.",
         "gloss": "Abram",
         "language": "he",
         "lemma": "אַבְרָם",
         "morph": "HNp",
-        "morphology": "Hebrew personal proper noun, masculine singular, with no prefix or suffix.",
+        "morphology": "Hebrew masculine singular personal name with no prefix or suffix. The preceding אֶת is a separate word.",
         "qualifier": "",
-        "root": "אבה",
+        "root": "",
         "segments": "אַבְרָם",
         "sense": "Abram, son of Terah, later named Abraham"
       },
