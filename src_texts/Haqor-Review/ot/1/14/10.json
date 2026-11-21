@@ -1,6 +1,85 @@
 {
   "book": 1,
   "chapter": 14,
+  "review": {
+    "entities": [
+      {
+        "evidence": "Siddim names the valley where the kings gathered in Genesis 14:3 and where the tar pits lay.",
+        "key": "Siddim_Valley@Gen.14.3",
+        "position": 1
+      },
+      {
+        "evidence": "Sodom names the city whose king fled alongside the king of Gomorrah.",
+        "key": "Sodom@Gen.10.19",
+        "position": 7
+      },
+      {
+        "evidence": "Gomorrah names the city whose king fled alongside the king of Sodom.",
+        "key": "Gomorrah@Gen.10.19",
+        "position": 8
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "now the valley of",
+        "position": 0
+      },
+      {
+        "gloss": "Siddim",
+        "position": 1
+      },
+      {
+        "gloss": "pits",
+        "position": 2
+      },
+      {
+        "gloss": "pits of",
+        "position": 3
+      },
+      {
+        "gloss": "bitumen",
+        "position": 4
+      },
+      {
+        "gloss": "and they fled",
+        "position": 5
+      },
+      {
+        "gloss": "king of",
+        "position": 6
+      },
+      {
+        "gloss": "Sodom",
+        "position": 7
+      },
+      {
+        "gloss": "and Gomorrah",
+        "position": 8
+      },
+      {
+        "gloss": "and they fell",
+        "position": 9
+      },
+      {
+        "gloss": "there",
+        "position": 10
+      },
+      {
+        "gloss": "and those who remained",
+        "position": 11
+      },
+      {
+        "gloss": "to the hill country",
+        "position": 12
+      },
+      {
+        "gloss": "fled",
+        "position": 13
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[Now the Valley of|0] [Siddim|1] {had} [many|2] [tar|4] [pits|3], [and|5] [the kings of|6] [Sodom|7] [and Gomorrah|8] [fled|5], [and they fell|9] [there|10]. [And those who remained|11] [fled|13] [to the hill country|12]."
+  },
   "source": "ot",
   "verse": 10,
   "words": [
