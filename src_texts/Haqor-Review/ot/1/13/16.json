@@ -393,17 +393,23 @@
     {
       "analysis": {
         "entry": {
-          "existing": "mnh",
-          "sense": "be-counted-among",
+          "draft": {
+            "article_id": "mnh",
+            "base": "9101525f620c35e2f026587b2e493c92520c71aa7dcafc544b66fcdbb180711c",
+            "change": "Add the Niphal sense be-enumerated and move the 1 Kings 3:8 evidence to it. Retain be-counted-among for Isaiah 53:12 and its quotation in Luke 22:37.",
+            "definition": "To be counted to determine how many there are.",
+            "evidence": "Genesis 13:16 pairs counting the dust with Abram’s offspring being counted. In 1 Kings 3:8 Solomon likewise describes a people too numerous to count."
+          },
+          "sense": "be-enumerated",
           "word": 0
         },
-        "evidence": "The conditional clause asks whether anyone could count the dust of the earth (לִמְנוֹת אֶת עֲפַר הָאָרֶץ). The conclusion repeats the verb in the passive: under that condition, Abram’s offspring too could be counted.",
+        "evidence": "לִמְנוֹת אֶת עֲפַר הָאָרֶץ means “to count the dust of the earth.” The conclusion repeats the verb in the passive: if anyone could count the dust, גַּם זַרְעֲךָ יִמָּנֶה, “your offspring too could be counted.” גַּם links the two quantities.",
         "gloss": "could be counted",
         "language": "he",
         "lemma": "מָנָה",
         "morph": "HVNi3ms",
-        "morphology": "Niphal imperfect, third person masculine singular, agreeing with the collective singular subject זַרְעֲךָ, “your offspring.”",
-        "qualifier": "",
+        "morphology": "Niphal imperfect, third person masculine singular, agreeing with the collective singular subject זַרְעֲךָ, “your offspring.” The conditional clause supplies the force of “could.”",
+        "qualifier": "verb",
         "root": "מנה",
         "segments": "יִמָּנֶה",
         "sense": "be counted"
