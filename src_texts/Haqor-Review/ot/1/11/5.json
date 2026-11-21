@@ -206,6 +206,33 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article_id": "bnh",
+            "base": "22a664033cc9528d63fb4bd1477e63e83567d0bf5ec82c9fd667977db7bdb10c",
+            "change": "Add Genesis 11:5 as a plural example of the existing ben-member sense.",
+            "definition": "In construct, בֵּן can identify someone as a member of the group named by its complement. The plural בְּנֵי הָאָדָם means human beings.",
+            "evidence": "Genesis 11:5 names בְּנֵי הָאָדָם as the people who built the city and tower."
+          },
+          "sense": "ben-member",
+          "word": 0
+        },
+        "evidence": "In אֲשֶׁר בָּנוּ בְּנֵי הָאָדָם, “which human beings built,” בְּנֵי הָאָדָם is the subject of the plural verb בָּנוּ. The phrase identifies the builders of the city and tower as human beings.",
+        "gloss": "sons of",
+        "language": "he",
+        "lemma": "בֵּן",
+        "morph": "HNcmpc",
+        "morphology": "Masculine plural construct of the common noun בֵּן. The ending ־ֵי marks the plural construct before הָאָדָם. The initial ב belongs to the noun.",
+        "qualifier": "",
+        "root": "בנה",
+        "segments": "בְּנֵי",
+        "sense": "Members of the group named by the following noun, here humankind."
+      },
+      "position": 9,
+      "surface": "בְּנֵי"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "2aadaam",
           "sense": "adam-mankind",
           "word": 0
