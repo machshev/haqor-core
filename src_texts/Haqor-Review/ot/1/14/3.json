@@ -1,6 +1,60 @@
 {
   "book": 1,
   "chapter": 14,
+  "review": {
+    "entities": [
+      {
+        "evidence": "עֵמֶק הַשִּׂדִּים names the Valley of Siddim as the place where the kings joined together.",
+        "key": "Siddim_Valley@Gen.14.3",
+        "position": 5
+      },
+      {
+        "evidence": "הוּא יָם הַמֶּלַח identifies the valley with the Salt Sea.",
+        "key": "Salt_Sea@Gen.14.3",
+        "position": 8
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "all",
+        "position": 0
+      },
+      {
+        "gloss": "these",
+        "position": 1
+      },
+      {
+        "gloss": "joined together",
+        "position": 2
+      },
+      {
+        "gloss": "in",
+        "position": 3
+      },
+      {
+        "gloss": "the Valley of",
+        "position": 4
+      },
+      {
+        "gloss": "Siddim",
+        "position": 5
+      },
+      {
+        "gloss": "that is",
+        "position": 6
+      },
+      {
+        "gloss": "the Sea of",
+        "position": 7
+      },
+      {
+        "gloss": "Salt",
+        "position": 8
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[All|0] [these|1] [joined together|2] [in|3] [the Valley of|4] [Siddim|5], [which|6] {is now} [the Sea of|7] [Salt|8]."
+  },
   "source": "ot",
   "verse": 3,
   "words": [
