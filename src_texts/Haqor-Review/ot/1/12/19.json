@@ -7,6 +7,33 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article_id": "mh",
+            "base": "f8c902260e76d6f2d55bc06a922489f8e6b84e2aa094e29fe7a0b36dff7fd2f8",
+            "change": "Add Genesis 12:19 as an example of the existing Hebrew sense why-for-what-purpose.",
+            "definition": "With prefixed לְ, מָה asks for the reason for an action or state.",
+            "evidence": "In Genesis 12:19 Pharaoh asks why Abram said that Sarai was his sister."
+          },
+          "sense": "why-for-what-purpose",
+          "word": 0
+        },
+        "evidence": "Pharaoh quotes what Abram said, אֲחֹתִי הִוא, ‘She is my sister.’ לָמָה modifies אָמַרְתָּ, ‘you said’, asking why Abram said it.",
+        "gloss": "why?",
+        "language": "he",
+        "lemma": "מָה",
+        "morph": "HR/Ti",
+        "morphology": "The prefixed preposition לָ joins the interrogative מָה, ‘what?’. Together they ask ‘why?’",
+        "qualifier": "",
+        "root": "מה",
+        "segments": "לָ/מָה",
+        "sense": "Asks the reason for Abram’s statement."
+      },
+      "position": 0,
+      "surface": "לָמָה"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "2mr",
           "word": 0
         },
