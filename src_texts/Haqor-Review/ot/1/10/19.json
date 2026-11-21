@@ -4,6 +4,11 @@
   "review": {
     "entities": [
       {
+        "evidence": "In “the boundary of the Canaanites,” הַכְּנַעֲנִי is a singular gentilic used collectively for the people whose territory the verse describes.",
+        "key": "Canaanites@Gen.12.6",
+        "position": 2
+      },
+      {
         "evidence": "“From Sidon” names the city where the boundary description begins.",
         "key": "Sidon@Gen.10.19",
         "position": 3
@@ -106,7 +111,91 @@
         "position": 14
       }
     ],
-    "name_review_base": null,
+    "name_review_base": [
+      {
+        "key": null,
+        "position": 0,
+        "surface": "וַיְהִי"
+      },
+      {
+        "key": null,
+        "position": 1,
+        "surface": "גְּבוּל"
+      },
+      {
+        "key": null,
+        "position": 2,
+        "surface": "הַכְּנַעֲנִי"
+      },
+      {
+        "evidence": "“From Sidon” names the city where the boundary description begins.",
+        "key": "Sidon@Gen.10.19",
+        "position": 3,
+        "surface": "מִצִּידֹן"
+      },
+      {
+        "key": null,
+        "position": 4,
+        "surface": "בֹּאֲכָה"
+      },
+      {
+        "evidence": "“Toward Gerar” gives the direction of travel from Sidon.",
+        "key": "Gerar@Gen.10.19",
+        "position": 5,
+        "surface": "גְרָרָה"
+      },
+      {
+        "key": null,
+        "position": 6,
+        "surface": "עַד"
+      },
+      {
+        "evidence": "“As far as Gaza” names the limit on the route toward Gerar.",
+        "key": "Gaza@Gen.10.19",
+        "position": 7,
+        "surface": "עַזָּה"
+      },
+      {
+        "key": null,
+        "position": 8,
+        "surface": "בֹּאֲכָה"
+      },
+      {
+        "evidence": "“Toward Sodom” introduces the second direction of travel.",
+        "key": "Sodom@Gen.10.19",
+        "position": 9,
+        "surface": "סְדֹמָה"
+      },
+      {
+        "evidence": "The verse names Gomorrah alongside Sodom on the approach toward Lasha.",
+        "key": "Gomorrah@Gen.10.19",
+        "position": 10,
+        "surface": "וַעֲמֹרָה"
+      },
+      {
+        "evidence": "אַדְמָה names the city listed between Gomorrah and Zeboiim.",
+        "key": "Admah@Gen.10.19",
+        "position": 11,
+        "surface": "וְאַדְמָה"
+      },
+      {
+        "evidence": "Zeboiim follows Admah as the last city in the group introduced by “toward Sodom.”",
+        "key": "Zeboiim@Gen.10.19",
+        "position": 12,
+        "surface": "וּצְבֹיִם"
+      },
+      {
+        "key": null,
+        "position": 13,
+        "surface": "עַד"
+      },
+      {
+        "evidence": "“As far as Lasha” names the final limit in the boundary description.",
+        "key": "Lasha@Gen.10.19",
+        "position": 14,
+        "surface": "לָשַׁע"
+      }
+    ],
     "translation": "[So|0] [the boundary of|1] [the Canaanites|2] [ran|0] [from Sidon|3], [as you go|4] [toward Gerar|5], [as far as|6] [Gaza|7], [{then}|8] [as you go|8] [toward Sodom|9] [and Gomorrah|10] [and Admah|11] [and Zeboiim|12], [as far as|13] [Lasha|14]."
   },
   "source": "ot",
