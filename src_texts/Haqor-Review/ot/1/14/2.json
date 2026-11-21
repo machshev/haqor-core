@@ -164,6 +164,55 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article": {
+              "bdb": [
+                "b.dh.ad"
+              ],
+              "english": "Birsha",
+              "entry": "",
+              "evidence": [
+                {
+                  "note": "The words בִּרְשַׁע מֶלֶךְ עֲמֹרָה identify Birsha as king of Gomorrah.",
+                  "ref": "Gen.14.2",
+                  "role": "defining"
+                }
+              ],
+              "gloss": "meaning unknown",
+              "id": "bbirexa3",
+              "name": "בִּרְשַׁע",
+              "note": "",
+              "people": [],
+              "root": "",
+              "status": "draft",
+              "summary": "Birsha is the king of Gomorrah named in Genesis 14:2. The verse identifies him by his title and city. His name’s origin is uncertain.",
+              "updated": "2026-11-21"
+            },
+            "article_id": "bbirexa3",
+            "base": null,
+            "change": "Add a personal-name article for Birsha. Leave the root unassigned because the name’s derivation is uncertain.",
+            "definition": "Birsha, king of Gomorrah.",
+            "evidence": "Genesis 14:2 identifies Birsha by the title מֶלֶךְ עֲמֹרָה, “king of Gomorrah.”"
+          },
+          "word": 0
+        },
+        "evidence": "In Genesis 14:2, בִּרְשַׁע מֶלֶךְ עֲמֹרָה follows the same pattern as בֶּרַע מֶלֶךְ סְדֹם. Each king is named first and then identified by the city he rules.",
+        "gloss": "Birsha",
+        "language": "he",
+        "lemma": "בִּרְשַׁע",
+        "morph": "HNp",
+        "morphology": "Hebrew proper noun naming a man. The initial בּ belongs to the name. The form has no prefix or suffix.",
+        "qualifier": "",
+        "root": "",
+        "segments": "בִּרְשַׁע",
+        "sense": "The personal name of the king of Gomorrah."
+      },
+      "position": 7,
+      "surface": "בִּרְשַׁע"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "mlk",
           "sense": "king",
           "word": 0
