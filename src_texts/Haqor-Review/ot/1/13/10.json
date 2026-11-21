@@ -183,6 +183,33 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article_id": "kkikkaar",
+            "base": null,
+            "change": "Add the geographic sense of כִּכָּר under כרר and correct the occurrence gloss to “plain.”",
+            "definition": "The plain along a river, here the plain of the Jordan.",
+            "evidence": "Genesis 13:10 identifies the Jordan as the river and describes the land Lot sees along it as well watered."
+          },
+          "sense": "river-plain",
+          "word": 0
+        },
+        "evidence": "Lot sees כָּל כִּכַּר הַיַּרְדֵּן, “the whole plain of the Jordan.” The following כִּי כֻלָּהּ מַשְׁקֶה describes the whole area as well watered, and the comparison with a garden confirms that Lot is surveying land.",
+        "gloss": "plain",
+        "language": "he",
+        "lemma": "כִּכָּר",
+        "morph": "HNcbsc",
+        "morphology": "Common noun of both genders, singular construct before הַיַּרְדֵּן. The feminine singular suffix in כֻלָּהּ refers back to the plain.",
+        "qualifier": "",
+        "root": "כרר",
+        "segments": "כִּכַּר",
+        "sense": "A plain or district along a river."
+      },
+      "position": 7,
+      "surface": "כִּכַּר"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "yrd",
           "sense": "the-river-jordan",
           "word": 2
