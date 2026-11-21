@@ -3,15 +3,18 @@
   "root": "נקפ",
   "status": "draft",
   "created": "2026-11-19",
-  "updated": "2026-11-20",
+  "updated": "2026-11-21",
   "tags": [
     "movement",
     "warfare",
     "harvest",
-    "judgment"
+    "judgment",
+    "sun",
+    "time",
+    "seasons"
   ],
   "gloss": "go round, surround; strike off, beat down",
-  "summary": "A circuit can be a repeated passage round a city or the position of people gathered on every side. In Psalm 17 the people surrounding the speaker threaten his life.\n\nThe action removes growth or fruit by a blow. Isaiah’s harvest image directs attention to the few olives still clinging to the branches.",
+  "summary": "A circuit can be a repeated passage round a city or the position of people gathered on every side. In Psalm 17 the people surrounding the speaker threaten his life.\n\nThe action removes growth or fruit by a blow. Isaiah’s harvest image directs attention to the few olives still clinging to the branches. The psalm traces the sun across the sky; the other three passages use a turning point to mark elapsed time.",
   "words": [
     {
       "lemma": "נָקַף",
@@ -168,6 +171,45 @@
       "cognate_ids": [
         "arc-strike"
       ]
+    },
+    {
+      "lemma": "תְּקוּפָה",
+      "bdb": [
+        "s.aw.ab"
+      ],
+      "pos": "noun",
+      "gloss": "circuit, turning of a period",
+      "senses": [
+        {
+          "id": "circuit",
+          "gloss": "circuit",
+          "definition": "The sun sets out from one end of the heavens and makes its circuit to their other end.",
+          "evidence": [
+            {
+              "ref": "Psa.19.7",
+              "role": "defining"
+            }
+          ]
+        },
+        {
+          "id": "turn-of-a-period",
+          "gloss": "turn of a period",
+          "definition": "The ingathering festival marks the turn of the year. The word also marks the passage of the days before Hannah bears Samuel and the return of the campaigning season.",
+          "evidence": [
+            {
+              "ref": "Exo.34.22",
+              "role": "defining"
+            },
+            {
+              "ref": "1Sa.1.20"
+            },
+            {
+              "ref": "2Ch.24.23"
+            }
+          ]
+        }
+      ],
+      "gender": "f"
     }
   ],
   "cognates": [
@@ -201,5 +243,5 @@
     }
   ],
   "doctrine": [],
-  "note": "The Syriac verb ܢܩܦ means to adhere or follow (SEDRA lexeme 2027; Acts 8:13). Its relationship to making a circuit is uncertain. The Hebrew striking verb has its own entry.\n\nThe striking and encircling verbs have identical written forms. The object and the action in each passage guide the choice between them.\n\nMerged from `naqaph`, `naqaph-strike` on 2026-11-20: one root, one entry."
+  "note": "The Syriac verb ܢܩܦ means to adhere or follow (SEDRA lexeme 2027; Acts 8:13). Its relationship to making a circuit is uncertain. The Hebrew striking verb has its own entry.\n\nThe striking and encircling verbs have identical written forms. The object and the action in each passage guide the choice between them.\n\nMerged from `naqaph`, `naqaph-strike` on 2026-11-20: one root, one entry.\n\nAdded 2026-11-21: תְּקוּפָה, from its former one-word entry. Filed under נקף 'go round': scripture uses the verb of the year's circuit (Isa 29:1 חַגִּים יִנְקֹפוּ, 'let the feasts go round'), as תְּקוּפָה is used of the turn of the year (Exo 34:22, 1Sa 1:20) and the sun's circuit (Psa 19:7). The noun's shape, with no doubling, is that of a by-form קוּף.\n\nIts former note: The biblical contexts establish the spatial and temporal senses. They do not by themselves fix a technical astronomical date for the festival."
 }

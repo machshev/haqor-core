@@ -42,7 +42,7 @@ pub fn review(
                 id.bytes().all(|b| b.is_ascii_alphanumeric() || b == b'-'),
                 "invalid article id"
             );
-            crate::articles::article_path(lexicon, id, candidate["name"] == true, None)
+            crate::articles::article_path(lexicon, id, candidate["name"] == true)
         };
         let article = fs::read_to_string(path)?;
         ensure!(

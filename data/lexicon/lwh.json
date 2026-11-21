@@ -2,9 +2,9 @@
   "id": "lwh",
   "root": "לוה",
   "status": "draft",
-  "updated": "2026-11-19",
+  "updated": "2026-11-21",
   "gloss": "lend, borrow",
-  "summary": "To borrow or lend money.",
+  "summary": "To borrow or lend money. Job is asked whether he can draw Leviathan out with a hook. Isaiah calls it the fleeing, twisting serpent, while the psalm describes God crushing its heads.",
   "words": [
     {
       "lemma": "לָוָה",
@@ -153,7 +153,61 @@
         }
       ],
       "gender": "f"
+    },
+    {
+      "lemma": "לִוְיָתָן",
+      "pos": "noun",
+      "gloss": "Leviathan",
+      "bdb": [
+        "l.au.ad"
+      ],
+      "senses": [
+        {
+          "id": "creature",
+          "gloss": "sea creature",
+          "definition": "Leviathan is the sea creature whose heads Yahweh crushes and gives as food to the desert people.",
+          "evidence": [
+            {
+              "ref": "Psa.74.14",
+              "role": "defining"
+            },
+            {
+              "ref": "Isa.27.1",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.104.26",
+              "role": "example"
+            },
+            {
+              "ref": "Job.40.25",
+              "role": "example"
+            }
+          ]
+        }
+      ],
+      "cognate_ids": [
+        "uga-ltn"
+      ]
     }
   ],
-  "note": "Drafted for Psalm 37 coverage."
+  "note": "Drafted for Psalm 37 coverage.\n\nAdded 2026-11-21: לִוְיָתָן, from its former one-word entry. Filed under לוה 'twist, wind' with לִוְיָה 'wreath' (Pro 1:9), as the 'twisting serpent' (Isa 27:1) formed with ־ָן; Arabic لَوَى 'twist' (Lane p. 3015) and Ugaritic ltn 'the serpent' agree. The meaning differs from לוה 'join, borrow' in the same entry.\n\nIts former note: Ugaritic ltn is called a fleeing serpent in a parallel phrase to Isa 27:1. The full Hebrew noun supplies the key. A derivation from לוה is uncertain.",
+  "tags": [],
+  "cognates": [
+    {
+      "id": "uga-ltn",
+      "lang": "uga",
+      "form": "𐎍𐎚𐎐",
+      "translit": "ltn",
+      "gloss": "sea dragon",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "segert-1984",
+          "locator": "Glossary, ltn, and text 88.54 (KTU 1.5 I.1–3), ltn btn brḥ"
+        }
+      ]
+    }
+  ],
+  "doctrine": []
 }

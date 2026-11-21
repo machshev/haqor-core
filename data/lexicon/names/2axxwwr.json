@@ -1,22 +1,29 @@
 {
-  "created": "2026-11-20",
-  "english": "Asshur",
-  "entry": "",
-  "evidence": [
-    {
-      "note": "The heading בְּנֵי שֵׁם identifies Asshur and the others listed as sons of Shem.",
-      "ref": "Gen.10.22",
-      "role": "defining"
-    }
-  ],
-  "gloss": "Asshur",
   "id": "2axxwwr",
   "name": "אַשּׁוּר",
-  "people": [
-    "Asshur@Gen.10.22"
-  ],
+  "english": "Asshur",
   "root": "",
+  "entry": "",
   "status": "draft",
-  "summary": "Genesis names Asshur as a son of Shem. The derivation of his name is uncertain.",
-  "updated": "2026-11-20"
+  "created": "2026-11-20",
+  "updated": "2026-11-21",
+  "people": [
+    "Asshur@Gen.10.22",
+    "Assyria@Gen.2.14"
+  ],
+  "gloss": "Asshur (Assyria)",
+  "summary": "Genesis names Asshur as a son of Shem, and Asshur is also the land of Assyria, east of which the Hiddekel flows. The derivation of the name is uncertain.",
+  "evidence": [
+    {
+      "ref": "Gen.10.22",
+      "role": "defining",
+      "note": "The heading בְּנֵי שֵׁם identifies Asshur and the others listed as sons of Shem."
+    },
+    {
+      "ref": "Gen.2.14",
+      "role": "defining",
+      "note": "קִדְמַת אַשּׁוּר means “east of Asshur” and describes where the third river flows."
+    }
+  ],
+  "note": "Merged with the former word entry `2axxwwr`, the place word (old root key אשור, the consonants of the place name), which added Assyria@Gen.2.14. Its derivation is uncertain."
 }

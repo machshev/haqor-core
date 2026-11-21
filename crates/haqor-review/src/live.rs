@@ -266,11 +266,11 @@ impl Live {
                 &crate::greek::id(&answer)?,
             )?);
         }
-        let article: Option<(String, bool, String, Option<String>)> = db
+        let article: Option<(String, bool)> = db
             .query_row(
-                "SELECT id,name,body,replaces FROM article WHERE source=? AND ref=? AND pos=? AND applied=0",
+                "SELECT id,name FROM article WHERE source=? AND ref=? AND pos=? AND applied=0",
                 j.key(),
-                |r| Ok((r.get(0)?, r.get(1)?, r.get(2)?, r.get(3)?)),
+                |r| Ok((r.get(0)?, r.get(1)?)),
             )
             .optional()?;
         let pending_verse_articles: Vec<(Job, String, bool)> = if j.pos < 0 {
@@ -292,21 +292,15 @@ impl Live {
         } else {
             Vec::new()
         };
-        if let Some((id, name, body, replaces)) = &article {
+        if let Some((id, name)) = &article {
             ensure!(
                 !id.is_empty() && id.bytes().all(|b| b.is_ascii_alphanumeric() || b == b'-'),
                 "invalid article id"
             );
-            paths.insert(articles::article_path(&self.lexicon, id, *name, Some(body)));
-            // A promoted noun's file goes, and its readers' review files name
-            // the root entry instead: one commit with the article.
-            if let Some(old) = replaces {
-                paths.insert(articles::article_path(&self.lexicon, old, false, None));
-                paths.extend(articles::repoint_reviews(&self.root(), old, id, true)?);
-            }
+            paths.insert(articles::article_path(&self.lexicon, id, *name));
         }
         for (_, id, name) in &pending_verse_articles {
-            paths.insert(articles::article_path(&self.lexicon, id, *name, None));
+            paths.insert(articles::article_path(&self.lexicon, id, *name));
         }
         if j.pos < 0 {
             paths.extend(people::publication_paths(
@@ -318,16 +312,11 @@ impl Live {
             )?);
         }
         self.begin(db, j, &paths)?;
-        if let Some((id, _, _, replaces)) = &article {
+        if article.is_some() {
             match articles::apply_one(db, &self.lexicon, &self.refs, j)? {
                 articles::PublishOutcome::Stale | articles::PublishOutcome::Rejected => {
                     self.finish(db, j)?;
                     return Ok(true);
-                }
-                articles::PublishOutcome::Applied => {
-                    if let Some(old) = replaces {
-                        articles::repoint_reviews(&self.root(), old, id, false)?;
-                    }
                 }
                 _ => (),
             }

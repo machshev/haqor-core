@@ -1,0 +1,53 @@
+{
+  "cognates": [],
+  "created": "2026-11-20",
+  "doctrine": [],
+  "gloss": "cold",
+  "id": "qrr",
+  "note": "Root (2026-11-21): Filed under the geminate root קרר 'be cold': the noun goes with קַר 'cool' (Pro 17:27 קַר־רוּחַ), קָרָה 'cold' (Psa 147:17) and מְקֵרָה 'coolness' (Jdg 3:20). One spelling, one entry: קַרְקַר 'tear down' (Isa 22:5) shares the key.",
+  "root": "קרר",
+  "status": "draft",
+  "summary": "The noun קֹר denotes cold weather. Genesis 8:22 pairs it with heat among the recurring conditions of life on earth.",
+  "tags": [
+    "weather"
+  ],
+  "updated": "2026-11-21",
+  "words": [
+    {
+      "gender": "m",
+      "gloss": "cold",
+      "greek": [],
+      "lemma": "קֹר",
+      "pos": "noun",
+      "senses": [
+        {
+          "id": "cold-weather",
+          "definition": "Cold as a condition of the weather.",
+          "evidence": [
+            {
+              "note": "The pair וְקֹר וָחֹם, “and cold and heat,” sets the two temperatures opposite each other.",
+              "ref": "Gen.8.22",
+              "role": "defining"
+            }
+          ],
+          "gloss": "cold weather"
+        }
+      ],
+      "usage": {
+        "opposites": [
+          {
+            "evidence": [
+              {
+                "ref": "Gen.8.22"
+              }
+            ],
+            "lemma": "חֹם",
+            "note": "Heat is the counterpart to cold."
+          }
+        ],
+        "parallels": [],
+        "phrases": []
+      }
+    }
+  ]
+}

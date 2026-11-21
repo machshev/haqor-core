@@ -1,0 +1,53 @@
+{
+  "cognates": [
+    {
+      "evidence": [
+        {
+          "locator": "רִסְנָא, T00858, Second Targum Esther 6:11",
+          "source": "jastrow-1903"
+        }
+      ],
+      "form": "רִסְנָא",
+      "gloss": "bridle, reins",
+      "id": "arc-t00858",
+      "lang": "arc",
+      "relation": "cognate",
+      "translit": "risnā"
+    }
+  ],
+  "doctrine": [],
+  "gloss": "rein, bridle",
+  "id": "rsn",
+  "note": "Drafted from Psalms 32–33 audit. The city Resen (Gen 10:12), formerly a second word here, is now names/raesaen; the relationship between the two words is unknown.\n\nRoot (2026-11-21): Aramaic רִסְנָא “bridle, reins” (Jastrow, T00858) has the same three consonants and no verbal derivation is attested in scripture, so the noun keeps its own consonants.",
+  "root": "רסנ",
+  "status": "draft",
+  "summary": "רֶסֶן is a rein or bridle by which an animal is directed (Psa 32:9).",
+  "updated": "2026-11-21",
+  "words": [
+    {
+      "bdb": [
+        "t.df.ab"
+      ],
+      "cognate_ids": [
+        "arc-t00858"
+      ],
+      "gender": "m",
+      "gloss": "rein, bridle",
+      "lemma": "רֶסֶן",
+      "pos": "noun",
+      "senses": [
+        {
+          "definition": "A rein or bridle used to guide an animal.",
+          "evidence": [
+            {
+              "ref": "Psa.32.9",
+              "role": "defining"
+            }
+          ],
+          "gloss": "rein",
+          "id": "rein"
+        }
+      ]
+    }
+  ]
+}

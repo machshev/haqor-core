@@ -19,10 +19,10 @@
   "doctrine": [],
   "gloss": "field creatures, abundance, Zuzim",
   "id": "zwz",
-  "note": "The second heading g.at.ab indexes the same three tokens. A historical connection between the field creatures and the abundance in Isaiah is uncertain. The doorpost is treated under mezuzah. Ziza, Zizah, Zaza and Jaziz resemble the root, but the genealogies give no evidence of meanings tied to these senses.",
+  "note": "The second heading g.at.ab indexes the same three tokens. A historical connection between the field creatures and the abundance in Isaiah is uncertain. The doorpost is treated under mezuzah. Ziza, Zizah, Zaza and Jaziz resemble the root, but the genealogies give no evidence of meanings tied to these senses.\n\nAdded 2026-11-21: מְזוּזָה, from its former one-word entry. Filed under the hollow root זוז with the ma- prefix: Akkadian manzāzu, mazzāzu 'stand, position' is the closest match, so the doorpost is 'what stands'. This meaning is unrelated to זִיז 'moving creatures' in the same entry.\n\nIts former note: Filed under its own consonants. The suggested derivations from a verb for moving or one for standing do not settle the history of the noun. The field creature in Psalm 50 is under ziz.",
   "root": "זוז",
   "status": "draft",
-  "summary": "In both psalms the creatures of the open country are mentioned with other wild animals. Isaiah uses the same noun for something a nursing child can draw from in abundance. Genesis names the Zuzim as a people defeated at Ham.",
+  "summary": "In both psalms the creatures of the open country are mentioned with other wild animals. Isaiah uses the same noun for something a nursing child can draw from in abundance. Genesis names the Zuzim as a people defeated at Ham. The two doorposts stand on either side of a doorway beneath its lintel. They receive the blood at Pesach and are a place where Israel is told to write Yahweh’s words.",
   "tags": [],
   "updated": "2026-11-21",
   "words": [
@@ -86,6 +86,40 @@
         }
       ],
       "summary": "Genesis uses this plural name for a people at Ham. Its relationship to זִיז is uncertain."
+    },
+    {
+      "lemma": "מְזוּזָה",
+      "pos": "noun",
+      "gloss": "doorpost",
+      "bdb": [
+        "g.as.af"
+      ],
+      "gender": "f",
+      "senses": [
+        {
+          "id": "doorpost",
+          "gloss": "doorpost",
+          "definition": "The blood is put on the two doorposts and on the lintel above them. A servant is brought to the door or its post.",
+          "evidence": [
+            {
+              "ref": "Exo.12.7",
+              "role": "defining"
+            },
+            {
+              "ref": "Exo.12.22",
+              "role": "defining"
+            },
+            {
+              "ref": "Exo.21.6",
+              "role": "defining"
+            },
+            {
+              "ref": "Deu.6.9",
+              "role": "defining"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

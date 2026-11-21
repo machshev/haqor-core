@@ -2,14 +2,14 @@
   "id": "3wr",
   "root": "עור",
   "status": "draft",
-  "updated": "2026-11-18",
+  "updated": "2026-11-21",
   "tags": [
     "sleep",
     "sight",
     "clothing"
   ],
   "gloss": "awake, stir; blind; bare; skin",
-  "summary": "A sleeper wakes, a people bestirs itself, and a bribe blinds even those who see clearly. Other words under this spelling name skin and the condition of being uncovered. Punic inscriptions independently attest both waking and animal hide, while Ugaritic and Arabic attest loss of sight.",
+  "summary": "A sleeper wakes, a people bestirs itself, and a bribe blinds even those who see clearly. Other words under this spelling name skin and the condition of being uncovered. Punic inscriptions independently attest both waking and animal hide, while Ugaritic and Arabic attest loss of sight. מְעָרָה is a cave or hollow in the rock where David hid from Saul.",
   "words": [
     {
       "lemma": "עוּר",
@@ -781,6 +781,31 @@
         }
       ],
       "lang": "syc"
+    },
+    {
+      "lemma": "מְעָרָה",
+      "pos": "noun",
+      "gender": "f",
+      "gloss": "cave",
+      "bdb": [
+        "p.ft.ab"
+      ],
+      "senses": [
+        {
+          "id": "cave",
+          "gloss": "cave",
+          "definition": "A cave or hollow in the rock where a fugitive hides.",
+          "evidence": [
+            {
+              "ref": "Psa.57.1",
+              "role": "defining"
+            },
+            {
+              "ref": "1Sa.24.3"
+            }
+          ]
+        }
+      ]
     }
   ],
   "cognates": [
@@ -955,5 +980,5 @@
       ]
     }
   ],
-  "note": "City is already in ir, which left the watcher and proposed noun of agitation here. No token key for agitation: p.bp.ab would assign it hundreds of cities. The skin count includes Beor by spelling. Both blindness nouns draw on the same three tokens: p.bo.ad is omitted. Hab 3:9 is disputed. The connection between chaff, hide, and nakedness is unclear; the cognates support individual meanings. Syriac lexeme 2285 and the wakeful adjective 2311 lack NT occurrences in SEDRA. Syriac verbal and adjectival uses are anchored to lexemes 2282–2284 and 2310. The Er, Eri, Eran and Jaur names are compared by form; none has an explicit naming explanation."
+  "note": "City is already in ir, which left the watcher and proposed noun of agitation here. No token key for agitation: p.bp.ab would assign it hundreds of cities. The skin count includes Beor by spelling. Both blindness nouns draw on the same three tokens: p.bo.ad is omitted. Hab 3:9 is disputed. The connection between chaff, hide, and nakedness is unclear; the cognates support individual meanings. Syriac lexeme 2285 and the wakeful adjective 2311 lack NT occurrences in SEDRA. Syriac verbal and adjectival uses are anchored to lexemes 2282–2284 and 2310. The Er, Eri, Eran and Jaur names are compared by form; none has an explicit naming explanation.\n\nAdded 2026-11-21: מְעָרָה, from its former one-word entry. Filed under the hollow root עור with the ma- prefix: Arabic مَغَارَةٌ and غَارٌ 'cave' (Lane p. 2307) come from غَارَ 'go down deep, sink' (Lane p. 2306), so the ע goes back to ġ, unlike עור 'awake' and עור 'skin' in the same entry.\n\nIts former note: Root corrected to מער. The earlier עֶרֶר assignment was a surface-key error."
 }

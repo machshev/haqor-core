@@ -598,8 +598,10 @@ pub fn read_lexicon(dir: &Path) -> Result<Lexicon> {
         .sources;
     // Every word sits under its root: the old one-word entries under
     // `nouns/` are refused rather than silently left out.
-    if entry_paths(&dir.join("nouns"), true)?.first().is_some() {
-        bail!("nouns/ holds word entries: every word belongs in its root's entry, at the top level");
+    if !entry_paths(&dir.join("nouns"), true)?.is_empty() {
+        bail!(
+            "nouns/ holds word entries: every word belongs in its root's entry, at the top level"
+        );
     }
     let entries = read_entries(entry_paths(dir, false)?, |e: &Entry| &e.id)?;
     let names = read_entries(entry_paths(&dir.join(NAMES_DIR), true)?, |e: &NameEntry| {

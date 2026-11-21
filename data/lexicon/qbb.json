@@ -2,10 +2,12 @@
   "id": "qbb",
   "root": "קבב",
   "status": "draft",
-  "updated": "2026-11-20",
-  "tags": [],
+  "updated": "2026-11-21",
+  "tags": [
+    "body"
+  ],
   "gloss": "utter a curse; tent, pavilion",
-  "summary": "Balak repeatedly asks Balaam to curse Israel. Balaam answers that he can pronounce only what God gives him to say. In Job, Eliphaz speaks of cursing a fool’s home.\n\nPhinehas follows an Israelite man into a tent in the camp at Shittim.",
+  "summary": "Balak repeatedly asks Balaam to curse Israel. Balaam answers that he can pronounce only what God gives him to say. In Job, Eliphaz speaks of cursing a fool’s home.\n\nPhinehas follows an Israelite man into a tent in the camp at Shittim. During the siege of Samaria even a quarter of a kab of dove dung fetches five pieces of silver. Deuteronomy lists the stomach beside the foreleg and cheeks as the priest’s share of an ox or sheep. Numbers uses a suffixed form for the part of the woman’s body pierced by Phinehas.",
   "words": [
     {
       "lemma": "קָבַב",
@@ -104,6 +106,77 @@
           ]
         }
       ]
+    },
+    {
+      "lemma": "קַב",
+      "pos": "noun",
+      "gender": "m",
+      "bdb": [
+        "s.ab.ab",
+        "s.aa.ae"
+      ],
+      "gloss": "kab, a dry measure",
+      "senses": [
+        {
+          "id": "thing-qab",
+          "gloss": "kab, a dry measure",
+          "definition": "A unit of capacity for dry goods. The price is quoted for a quarter of the unit.",
+          "evidence": [
+            {
+              "ref": "2Ki.6.25",
+              "role": "defining",
+              "note": "The narrator gives two prices to convey the severity of the famine, one for a donkey’s head and one for a quarter-kab of dove dung."
+            }
+          ],
+          "cognate_ids": [
+            "arc-kab",
+            "syc-kab"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "קֵבָה",
+      "pos": "noun",
+      "gender": "f",
+      "bdb": [
+        "s.ad.ab",
+        "s.ah.ae"
+      ],
+      "gloss": "stomach, maw, belly",
+      "senses": [
+        {
+          "id": "maw",
+          "gloss": "stomach of a slaughtered animal",
+          "definition": "The stomach portion set aside for the priest when an ox or sheep is slaughtered.",
+          "evidence": [
+            {
+              "ref": "Deu.18.3",
+              "role": "defining",
+              "note": "The instruction names the animal and assigns the priest three specific portions, ending with the stomach."
+            }
+          ],
+          "cognate_ids": [
+            "arc-maw",
+            "jpa-stomach",
+            "ar-maw",
+            "tig-stomach",
+            "akk-stomach"
+          ]
+        },
+        {
+          "id": "belly",
+          "gloss": "belly, abdomen",
+          "definition": "The part of the woman’s body through which the spear passes.",
+          "evidence": [
+            {
+              "ref": "Num.25.8",
+              "role": "defining",
+              "note": "The feminine suffix identifies the woman as the person whose belly the spear reaches."
+            }
+          ]
+        }
+      ]
     }
   ],
   "cognates": [
@@ -162,8 +235,106 @@
           "locator": "s.vv. qumba and quba, especially the contrast between the architectural and figurative uses"
         }
       ]
+    },
+    {
+      "id": "arc-kab",
+      "lang": "arc",
+      "form": "קב",
+      "translit": "qab",
+      "gloss": "unit of dry capacity",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "cal",
+          "locator": "qb n.m., TAD D7.6 line 7 and IduOstr 1:5.3"
+        }
+      ]
+    },
+    {
+      "id": "syc-kab",
+      "lang": "syc",
+      "form": "ܩܒܐ",
+      "translit": "qabbā",
+      "gloss": "kab, a measure",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "cal",
+          "locator": "qb n.m., Peshitta 2 Kings 6:25"
+        }
+      ]
+    },
+    {
+      "id": "arc-maw",
+      "lang": "arc",
+      "form": "קֵיבְתָא",
+      "translit": "qēḇṯā",
+      "gloss": "maw, part of a ruminant’s stomach",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "cal",
+          "locator": "Targum Onkelos Deuteronomy 18:3, text also cited under lwˁ, lwˁˀ"
+        }
+      ]
+    },
+    {
+      "id": "jpa-stomach",
+      "lang": "arc",
+      "form": "קיבתא",
+      "translit": "qybtʾ",
+      "gloss": "stomach compartment following the rumen",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "cal",
+          "locator": "msys, msysˀ, Qohelet Rabbah [1]21:1(10)"
+        }
+      ]
+    },
+    {
+      "id": "ar-maw",
+      "lang": "ar",
+      "form": "قِبَّةُ الشَّاةِ",
+      "translit": "qibbat al-šāh",
+      "gloss": "a chamber of the stomach of a sheep or goat",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "n35032, p. 2478, with the variant qiba at n42197, p. 2958"
+        }
+      ]
+    },
+    {
+      "id": "tig-stomach",
+      "lang": "sem",
+      "form": "kəbbet",
+      "translit": "kəbbet",
+      "gloss": "Tigre stuffed goat’s stomach",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "littmann-hoefner-1962",
+          "locator": "pp. 249–250, as cited in Dolgopolsky, Nostratic Dictionary, §1904"
+        }
+      ]
+    },
+    {
+      "id": "akk-stomach",
+      "lang": "akk",
+      "form": "kukkubānu",
+      "translit": "kukkubānu",
+      "gloss": "part of an animal’s stomach",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "oracc",
+          "locator": "armep x000099440, dcclt x0057940"
+        }
+      ]
     }
   ],
   "doctrine": [],
-  "note": "The alternation between cursing and blessing in Numbers establishes the sense independently of an etymology. Its historical relation to נָקַב remains uncertain.\n\nThe Arabic and Mandaic words suggest a rounded roof. Numbers gives no description of its shape. The nearby word for the woman’s belly is a separate noun.\n\nMerged from `qavav`, `qubbah` on 2026-11-20: one root, one entry."
+  "note": "The alternation between cursing and blessing in Numbers establishes the sense independently of an etymology. Its historical relation to נָקַב remains uncertain.\n\nThe Arabic and Mandaic words suggest a rounded roof. Numbers gives no description of its shape. The nearby word for the woman’s belly is a separate noun.\n\nMerged from `qavav`, `qubbah` on 2026-11-20: one root, one entry.\n\nAdded 2026-11-21: קַב, from its former one-word entry. Filed under the geminate root קבב: Arabic قَبٌّ is 'a certain measure for corn', listed with قُبَّةٌ 'dome, vault' and قِبَّةُ الشَّاةِ 'a chamber of the sheep's stomach' under q-b-b (Lane p. 2478), so the hollow measure belongs with the vaulted tent קֻבָּה (Num 25:8) already in this entry. The meaning has no tie to cursing (קָבַב), which shares the spelling.\n\nIts former note: The Idumaean receipts abbreviate the measure to q. An Aramaic letter from Egypt spells it qb in an instruction about making bread. The biblical price establishes the fraction sold but gives no conversion.\n\nAdded 2026-11-21: קֵבָה, from its former one-word entry. Filed under the geminate root קבב: Arabic قِبَّةُ الشَّاةِ 'a chamber of the stomach of a sheep or goat' is under q-b-b beside قُبَّةٌ 'vault, dome' (Lane p. 2478), so the stomach goes with the vaulted tent קֻבָּה that Num 25:8 sets beside קֳבָתָהּ. Shares this root with קַב (qab) in the same batch.\n\nIts former note: The pastoral and legal comparisons support a stomach compartment in Deuteronomy. The verse gives no anatomical description that settles which compartment. In Numbers the opening קֻבָּה names the enclosure Phinehas enters, while קֳבָתָהּ marks where he wounds the woman. The precise organ is uncertain. Dolgopolsky §1904 tentatively compares the longer Akkadian form."
 }

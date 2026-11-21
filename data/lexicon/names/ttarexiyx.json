@@ -1,11 +1,28 @@
 {
-  "created": "2026-11-19",
+  "id": "ttarexiyx",
+  "name": "תַּרְשִׁישׁ",
   "english": "Tarshish",
-  "entry": "ttarexiyx",
+  "root": "תרשיש",
+  "entry": "trxyx",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-21",
+  "bdb": [
+    "w.bq.ay"
+  ],
+  "people": [
+    "Tarshish@Gen.10.4",
+    "Tarshish@1Ch.7.10",
+    "Tarshish@Est.1.14",
+    "Tarshish@1Ki.10.22"
+  ],
+  "gloss": "Tarshish",
+  "summary": "Three people bear the name Tarshish, including a son of Javan in Genesis 10:4. Tarshish is also a distant maritime place whose ships carried silver, iron, tin and lead; Psalm 48 pictures its ships broken by Yahweh’s east wind.",
   "evidence": [
     {
       "ref": "Psa.48.8",
-      "role": "defining"
+      "role": "defining",
+      "note": "The ships of Tarshish are broken by the east wind."
     },
     {
       "note": "Tarshish is the second name under the heading “sons of Javan.”",
@@ -17,19 +34,16 @@
     },
     {
       "ref": "Est.1.14"
+    },
+    {
+      "ref": "1Ki.10.22",
+      "note": "Solomon's fleet of ships of Tarshish brought wealth."
+    },
+    {
+      "ref": "Ezk.27.12",
+      "note": "Tarshish traded silver, iron, tin and lead."
     }
   ],
-  "gloss": "Tarshish",
-  "id": "ttarexiyx",
-  "name": "תַּרְשִׁישׁ",
-  "note": "The place and personal-name records share the spelling.",
-  "people": [
-    "Tarshish@Gen.10.4",
-    "Tarshish@1Ch.7.10",
-    "Tarshish@Est.1.14"
-  ],
-  "root": "תרשיש",
-  "status": "draft",
-  "summary": "Three people bear the name Tarshish, including a son of Javan in Genesis 10:4. Tarshish also names a place associated with seagoing ships in Psalm 48:8.",
-  "updated": "2026-11-20"
+  "note": "Merged with the place word of the former word entry `ttarexiyx` (BDB w.bq.ay), which added Tarshish@1Ki.10.22; the precious stone תַּרְשִׁישׁ (w.bq.ax) is now in the root entry תרשיש, which this name links to. Whether the stone is named from the place is not shown. The city’s location, the mineral’s identification and a possible connection through trade remain uncertain.",
+  "word": "תַּרְשִׁישׁ"
 }

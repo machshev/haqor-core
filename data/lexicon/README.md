@@ -35,8 +35,12 @@ Further reading:
   in the other Semitic languages come next. The Septuagint
   is a translation and no evidence of the Hebrew's meaning; it is kept only
   as the bridge from the New Testament's Greek back to the Hebrew word.
-- **One root, all its words.** Every word is taken to go back to a root,
-  even where no one has yet reconstructed how its meaning does. Keep all the
+- **One root, all its words.** Every word that is not a proper name is a word
+  of its root's entry; no word has an entry apart from its root. Where scripture
+  has no verb or other word of the root, the root is reconstructed from the
+  word itself and the cognates, and the entry may hold that one word. Every
+  word is taken to go back to a root, even where no one has yet reconstructed
+  how its meaning does. Keep all the
   root's words in its entry, even where a dictionary files them apart, and
   never leave a word out because its link to the root's sense is not yet
   understood: keep it and say in its `summary` that the link is not clear.
@@ -68,18 +72,15 @@ Further reading:
 ## Files
 
 - `<id>.json`: a root entry: a root and all its words.
-- `nouns/<id>.json`: a word entry: one word with no verb and no other word of
-  its root (a noun, a particle, a place). It moves to the top level, renamed
-  by its root, when a second word of its root or a verb joins it.
-- `names/<id>.json`: a name entry (below).
+- `names/<id>.json`: a name entry (below): a person, a people or a place.
 - `sources.json`: every external work an entry cites (below).
 
 ### Ids
 
 An entry's `id`, and so its file name, is never chosen: it is the Hebrew
 itself, transliterated without loss. A root entry is named by its `root`
-(`נפש` → `npx`, `עשׂה` → `3ch`), a word entry by its pointed lemma (`עֵץ` →
-`3ee9`) and a name entry by its pointed `name` (`שִׁפְרָה` → `xiperaah`).
+(`נפש` → `npx`, `עשׂה` → `3ch`) and a name entry by its pointed `name`
+(`שִׁפְרָה` → `xiperaah`).
 `root_id`, `word_id` and `article_id` in `haqor_lexicon.rs` make them, and
 `root_of_id` and `word_of_id` turn them back into the Hebrew. Two entries can
 only share an id by sharing a spelling, and then they are one entry.
@@ -117,8 +118,8 @@ Cantillation and meteg are not part of the word and are left out.
 
 | Field | |
 |---|---|
-| `id` | The root transliterated (see "Ids"): `npx` for `נפש`. In a word entry under `nouns/`, its lemma's (`naepaex`). The file is `<id>.json`. |
-| `root` | The root as the database keys roots, so entries join to the words: bare consonants with no final forms, sin written `שׂ` and shin a bare `ש` (`נפש`, `מלכ`, `עשׂה`). A noun with no verbal root gives its own consonants. |
+| `id` | The root transliterated (see "Ids"): `npx` for `נפש`. The file is `<id>.json`. |
+| `root` | The root as the database keys roots, so entries join to the words: bare consonants with no final forms, sin written `שׂ` and shin a bare `ש` (`נפש`, `מלכ`, `עשׂה`). A word with no attested verb still has a root: reconstruct it from the word (strip vowel letters and endings: `עֲלָטָה` → `עלט`), or for a particle with no root anywhere keep its own consonants (`לא`). |
 | `status` | `draft` until the user has signed it off, then `reviewed`. |
 | `created` | Date the entry was first added to the lexicon, `YYYY-MM-DD`. Existing entries use their first Git addition date. |
 | `reviewed` | The date it was signed off, `YYYY-MM-DD`, while `status` is `reviewed`; left out of a draft. An `updated` later than it means the entry has changed since. |
@@ -180,8 +181,10 @@ A verb has `stems` and no `senses`; any other word has `senses` and no `stems`.
 
 ## A name entry
 
-A proper name has its own entry in `names/<id>.json`, linked back to the
-entry of the root it is formed from, and tagged with the people who bear it.
+A proper name (of a person, a people or a place) has its own entry in
+`names/<id>.json`, linked back to the entry of the root it is formed from, and
+tagged with the people, peoples or places that bear it. Every other word is a
+word of its root's entry.
 Name entries also record `created` and `updated` dates.
 The root's entry holds the evidence for the root's sense; the name entry
 cites what ties the name to it.
@@ -197,7 +200,7 @@ cites what ties the name to it.
 | `word` | Optional: the `lemma` of the root entry's word the name is, where it is one (Shiphrah is the noun שִׁפְרָה, "fairness"). |
 | `status`, `reviewed`, `updated` | As for an entry. |
 | `bdb` | Optional: the BDB keys whose tokens are the name. A key is in one entry or name only. |
-| `people` | The people who bear it, by their TIPNR key (`Shiphrah@Exo.1.15`, as in `src_texts/STEPBible-Data/names.jsonl`); each must be a person there, or a Supernatural record (God, an angel). A spelling borne by several people names them all. Where one record is named by several words (TIPNR's Deity by יהוה, אֱלֹהִים, אֲדֹנָי…), `bdb` says which: the word sheet shows the name entry only on words filed under its `bdb` keys. |
+| `people` | Who or what bears it, by TIPNR key (`Shiphrah@Exo.1.15`, `Gomorrah@Gen.10.19`, as in `src_texts/STEPBible-Data/names.jsonl`): a person or group (a people, TIPNR's `Group`), a place, or a Supernatural record (God, an angel); never a time or a title. A bearer TIPNR lacks is added to `src_texts/Haqor-Names/review.json`. A spelling borne by several names them all. Where one record is named by several words (TIPNR's Deity by יהוה, אֱלֹהִים, אֲדֹנָי…), `bdb` says which: the word sheet shows the name entry only on words filed under its `bdb` keys. |
 | `gloss` | What the name means, in a few words. Where its root is uncertain, the readings (`girl; or one who cries out`). |
 | `summary` | Who bears it, and how the name comes from the root. |
 | `evidence` | Citations, scripture or sources, for the name and its meaning: the verse naming the person, and the verses or cognates the meaning rests on. |

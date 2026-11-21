@@ -2,7 +2,7 @@
   "id": "92n",
   "root": "צאנ",
   "status": "draft",
-  "updated": "2026-11-18",
+  "updated": "2026-11-21",
   "tags": [
     "livestock",
     "flock",
@@ -11,10 +11,11 @@
     "sacrifice",
     "passover",
     "israel",
-    "mortality"
+    "mortality",
+    "animals"
   ],
   "gloss": "flock; sheep and goats, small cattle",
-  "summary": "צֹאן is the flock: sheep and goats together, the small cattle a shepherd leads, counted as wealth beside the herd of oxen (בָּקָר), and the source of most offerings, from Abel's firstborn to the Passover lamb. It is a collective, never a single animal (that is שֶׂה), and Lev 1:10 divides it into sheep and goats. Israel is Yahweh's flock, “the flock of his pasture”, scattered by false shepherds and gathered again under one shepherd, his servant David; Jesus takes up Zec 13:7, “strike the shepherd and the sheep will be scattered”, of himself. Arabic ḍaʾn, Akkadian ṣēnu, Ugaritic ṣin and Aramaic and Syriac ʿānā, the Peshitta's word for the flock, all mean the same.",
+  "summary": "צֹאן is the flock: sheep and goats together, the small cattle a shepherd leads, counted as wealth beside the herd of oxen (בָּקָר), and the source of most offerings, from Abel's firstborn to the Passover lamb. It is a collective, never a single animal (that is שֶׂה), and Lev 1:10 divides it into sheep and goats. Israel is Yahweh's flock, “the flock of his pasture”, scattered by false shepherds and gathered again under one shepherd, his servant David; Jesus takes up Zec 13:7, “strike the shepherd and the sheep will be scattered”, of himself. Arabic ḍaʾn, Akkadian ṣēnu, Ugaritic ṣin and Aramaic and Syriac ʿānā, the Peshitta's word for the flock, all mean the same. This rare form stands beside cattle in the psalm’s list of animals. Its sense and consonants connect it with the usual Hebrew collective for flocks.",
   "words": [
     {
       "lemma": "צֹאן",
@@ -799,6 +800,50 @@
           ]
         }
       ]
+    },
+    {
+      "lemma": "צֹנֶה",
+      "bdb": [
+        "r.cn.ae"
+      ],
+      "pos": "noun",
+      "gloss": "sheep, small livestock",
+      "senses": [
+        {
+          "id": "sheep-small-livestock",
+          "gloss": "sheep, small livestock",
+          "definition": "Psalm 8 names the sheep and oxen under human care before turning to wild animals, birds and fish. The rare sheep word functions collectively. Numbers has a similar expanded form for the livestock that need enclosures.",
+          "evidence": [
+            {
+              "ref": "Psa.8.8",
+              "to": "Psa.8.9",
+              "role": "defining"
+            },
+            {
+              "ref": "Num.32.24"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "ar-dan-9onaeh"
+      ],
+      "greek": [
+        {
+          "lemma": "πρόβατον",
+          "gloss": "sheep",
+          "evidence": [
+            {
+              "source": "macula-lxx",
+              "locator": "PSA 8:8, πρόβατα beside oxen"
+            },
+            {
+              "ref": "Jhn.10.11"
+            }
+          ]
+        }
+      ]
     }
   ],
   "cognates": [
@@ -909,6 +954,23 @@
           "note": "The Syriac of the Peshitta, the same word."
         }
       ]
+    },
+    {
+      "id": "ar-dan-9onaeh",
+      "lang": "ar",
+      "form": "ضَأْنٌ",
+      "translit": "ḍaʾn",
+      "gloss": "sheep, wool-bearing small cattle",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "p. 1760, ضأن, n25416"
+        }
+      ],
+      "sounds": {
+        "צ": "ṣ́"
+      }
     }
   ],
   "doctrine": [
@@ -1011,5 +1073,5 @@
       ]
     }
   ],
-  "note": "Drafted 2026-11-18 from the brief for צאנ. Words: צֹאן (r.ab.ab); the Peshitta's ܥܢܐ (SEDRA lexeme 2364, root 1402), added as a syc word since the brief's Peshitta section searched only צאנ and missed the regular Aramaic ע for ṣ́ (its Peshitta verses found through nt_word: Mat 26:31, Luk 17:7, Jhn 4:12, Jhn 10:1–16); and the place name צַאֲנָן / צְנָן (r.ab.ac; r.cs.ad is BDB's zero-token cross-reference, named so the key is not orphaned), kept as a word since places get no name entry. No personal names are formed from the root. Verse numbers are the Hebrew text's (Psa 44:23, 49:15–16, 77:21, 80:2, 65:14 are English 44:22, 49:14–15, 77:20, 80:1, 65:13; Mic 5:7 is English 5:8). Open: (1) whether צַאֲנָן belongs to this root at all: Mic 1:11 plays on יצא, and the brief's lead derives צֹאן itself from יצא “go out”, which no cognate supports (all show ṣ́ʾn); left in the entry with no cognate. (2) Not followed: Sabaic ẓʾn (Wiktionary; its ẓ would point to ṯ̣, not ṣ́, so not recorded until checked in a Sabaic dictionary), Ge'ez ḥəṣ́an (Wiktionary lists it, but in Ge'ez it is “infant”, not small cattle), Moabite ṣʾn in the Mesha stele (no Moabite source in sources.json yet), and the Amarna gloss. (3) The Peshitta's individual sheep is ܥܪܒܐ, another root; ܥܢܐ also renders ποίμνη in Jhn 10:16. (4) Jhn 5:2 προβατική is linked to Neh 3:1 by the Septuagint's rendering of שַׁעַר הַצֹּאן; the Peshitta there has no sheep word."
+  "note": "Drafted 2026-11-18 from the brief for צאנ. Words: צֹאן (r.ab.ab); the Peshitta's ܥܢܐ (SEDRA lexeme 2364, root 1402), added as a syc word since the brief's Peshitta section searched only צאנ and missed the regular Aramaic ע for ṣ́ (its Peshitta verses found through nt_word: Mat 26:31, Luk 17:7, Jhn 4:12, Jhn 10:1–16); and the place name צַאֲנָן / צְנָן (r.ab.ac; r.cs.ad is BDB's zero-token cross-reference, named so the key is not orphaned), kept as a word since places get no name entry. No personal names are formed from the root. Verse numbers are the Hebrew text's (Psa 44:23, 49:15–16, 77:21, 80:2, 65:14 are English 44:22, 49:14–15, 77:20, 80:1, 65:13; Mic 5:7 is English 5:8). Open: (1) whether צַאֲנָן belongs to this root at all: Mic 1:11 plays on יצא, and the brief's lead derives צֹאן itself from יצא “go out”, which no cognate supports (all show ṣ́ʾn); left in the entry with no cognate. (2) Not followed: Sabaic ẓʾn (Wiktionary; its ẓ would point to ṯ̣, not ṣ́, so not recorded until checked in a Sabaic dictionary), Ge'ez ḥəṣ́an (Wiktionary lists it, but in Ge'ez it is “infant”, not small cattle), Moabite ṣʾn in the Mesha stele (no Moabite source in sources.json yet), and the Amarna gloss. (3) The Peshitta's individual sheep is ܥܪܒܐ, another root; ܥܢܐ also renders ποίμνη in Jhn 10:16. (4) Jhn 5:2 προβατική is linked to Neh 3:1 by the Septuagint's rendering of שַׁעַר הַצֹּאן; the Peshitta there has no sheep word.\n\nAdded 2026-11-21: צֹנֶה, from its former one-word entry. Filed under צאנ with צֹאן: צֹנֶה (Psa 8:8) is the same word written without its א, which shows again in צֹנַאֲכֶם (Num 32:24); Arabic ضَأْنٌ \"sheep\" matches it. Not under צמת, which only follows it in the alphabet.\n\nIts former note: The entry key follows the rare spelling. The common word צֹאן, its Syriac equivalent and the place-name Zaanan already belong to tson. Psalm 8 has neither the usual aleph nor the normal ending. Numbers 32:24 retains the aleph in its suffixed form. The index groups the rare form with צמת, whose verb means to put an end to something."
 }

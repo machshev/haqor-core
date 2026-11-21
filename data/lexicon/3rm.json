@@ -1,0 +1,85 @@
+{
+  "cognates": [
+    {
+      "id": "ar-bark",
+      "lang": "ar",
+      "form": "عُرَام",
+      "translit": "ʿurām",
+      "gloss": "bark, pieces shed from bark",
+      "relation": "possible",
+      "sounds": {
+        "ע": "ʿ"
+      },
+      "evidence": [
+        {
+          "source": "lane",
+          "locator": "Book I p. 2025, n28843, bark shed from a thorn tree and the phrase ʿurām al-šajara"
+        }
+      ]
+    }
+  ],
+  "created": "2026-11-20",
+  "doctrine": [],
+  "gloss": "be shrewd",
+  "id": "3rm",
+  "note": "Root (2026-11-21): Kept under ערמ: scripture's verb עָרַם \"be shrewd\" (1Sa 23:22 עָרוֹם יַעְרִם; Pro 15:5) is its verb. Shares the root with עַרְמוֹן (3aremwon), so the two become one entry.\n\nAdded 2026-11-21: עַרְמוֹן, from its former one-word entry. Filed under ערמ, with the ־וֹן noun ending stripped: Arabic عُرَامٌ \"peeled bark\" stands under عرم (Lane p. 2024), naming the tree for its peeling bark. This puts it with עָרוּם \"shrewd\" (3aarwwm) in one entry; the link between the two meanings is not clear.\n\nIts former note: Arabic ʿurām offers a possible parallel for naming the tree after its peeling bark. It names bark rather than a tree species. Watson discusses the proposed Ugaritic ġrmn ‘plane tree’ at KTU 1.3 II 11. The parallel reference to locusts favours ‘swarm’ or ‘heap’, so the Ugaritic passage offers little independent evidence for the identification.",
+  "root": "ערמ",
+  "status": "draft",
+  "summary": "The adjective describes skill in choosing how to act or speak. The serpent shows its craft in the way it questions the woman about God's command. Jacob uses a branch of the tree for a peeled rod. Ezekiel pictures its spreading boughs among the trees in the garden of God.",
+  "tags": [
+    "speech"
+  ],
+  "updated": "2026-11-21",
+  "words": [
+    {
+      "gloss": "crafty, shrewd",
+      "lemma": "עָרוּם",
+      "pos": "adjective",
+      "senses": [
+        {
+          "id": "crafty",
+          "definition": "Shrewd in choosing words or actions to achieve an aim.",
+          "evidence": [
+            {
+              "note": "The serpent is called craftier than any other beast just before it asks whether God forbade eating from any tree in the garden.",
+              "ref": "Gen.3.1",
+              "role": "defining"
+            }
+          ],
+          "gloss": "crafty"
+        }
+      ]
+    },
+    {
+      "lemma": "עַרְמוֹן",
+      "pos": "noun",
+      "gender": "m",
+      "bdb": [
+        "p.fm.ab"
+      ],
+      "gloss": "plane tree",
+      "senses": [
+        {
+          "id": "tree",
+          "gloss": "plane tree",
+          "definition": "A tree traditionally identified as the oriental plane, mentioned for its rods and its conspicuous branches.",
+          "evidence": [
+            {
+              "ref": "Gen.30.37",
+              "role": "defining",
+              "note": "The third kind of rod Jacob cuts is from this tree. The Septuagint calls it πλάτανος, the plane."
+            },
+            {
+              "ref": "Ezk.31.8",
+              "role": "defining",
+              "note": "Ezekiel compares the tree’s boughs with those of the great tree in his oracle."
+            }
+          ],
+          "cognate_ids": [
+            "ar-bark"
+          ]
+        }
+      ]
+    }
+  ]
+}

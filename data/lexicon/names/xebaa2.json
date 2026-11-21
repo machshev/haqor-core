@@ -1,19 +1,23 @@
 {
   "id": "xebaa2",
-  "created": "2026-11-19",
-  "name": "שְׁבָא",
+  "name": "שְׁבָא",
   "english": "Sheba",
-  "root": "שבא",
-  "entry": "xebaa2",
+  "root": "",
+  "entry": "",
   "status": "draft",
-  "updated": "2026-11-19",
+  "created": "2026-11-19",
+  "updated": "2026-11-21",
+  "bdb": [
+    "v.al.ag"
+  ],
   "people": [
     "Sheba@Gen.10.28",
     "Sheba@Gen.25.3",
-    "Sheba@Gen.10.7"
+    "Sheba@Gen.10.7",
+    "Sheba@1Ki.10.1"
   ],
   "gloss": "Sheba",
-  "summary": "Three genealogies name a man called Sheba, as a son of Raamah, Joktan or Jokshan. Psalm 72 speaks of the land and its rulers.",
+  "summary": "Three genealogies name a man called Sheba, as a son of Raamah, Joktan or Jokshan. Sheba is also the southern land and people whose queen visited Solomon and whose rulers bring tribute; Arabic knows it as Sabaʾ, the kingdom of Yemen.",
   "evidence": [
     {
       "ref": "Gen.10.7",
@@ -29,7 +33,23 @@
     },
     {
       "ref": "Psa.72.10",
+      "role": "defining",
+      "note": "The kings of Sheba and Seba bring tribute."
+    },
+    {
+      "ref": "1Ki.10.1",
+      "role": "defining",
+      "note": "The queen of Sheba hears of Solomon’s fame."
+    },
+    {
+      "ref": "Isa.60.6",
       "role": "example"
+    },
+    {
+      "source": "lane",
+      "locator": "Book I, p. 1287, art. سبأ, n18634, the people of Yemen",
+      "note": "Arabic Sabaʾ, the name of the southern kingdom."
     }
-  ]
+  ],
+  "note": "Merged with the former word entry `xebaa2`, the land and people (old root key שבא), which added Sheba@1Ki.10.1 and BDB v.al.ag; its Arabic cognate arab-saba (سبأ Sabaʾ) is now the Lane citation in evidence. TIPNR’s Sheba@Gen.10.7 also holds the gentilic Sabeans. The old `entry` named that word entry, which is now this name; there is no root entry."
 }

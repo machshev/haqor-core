@@ -1,0 +1,68 @@
+{
+  "id": "krr",
+  "root": "כרר",
+  "status": "draft",
+  "updated": "2026-11-21",
+  "gloss": "pasture",
+  "summary": "A pasture or fat grazing place. The Psalm uses the plural for the fat of pasture, which vanishes like smoke. In Genesis 13:10, כִּכָּר designates the plain along the Jordan. Lot surveys the whole district and sees that it is well watered.",
+  "words": [
+    {
+      "lemma": "כַּר",
+      "pos": "noun",
+      "gender": "m",
+      "gloss": "pasture",
+      "bdb": [
+        "k.cx.af"
+      ],
+      "senses": [
+        {
+          "id": "pasture",
+          "gloss": "pasture",
+          "definition": "The wicked pass away like the fat of pasture, disappearing like smoke.",
+          "evidence": [
+            {
+              "ref": "Psa.37.20",
+              "role": "defining"
+            },
+            {
+              "ref": "Isa.30.23",
+              "note": "Cattle graze in broad pastures."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "gender": "mf",
+      "gloss": "plain, district",
+      "greek": [],
+      "lemma": "כִּכָּר",
+      "pos": "noun",
+      "senses": [
+        {
+          "definition": "A tract of level land along a river.",
+          "evidence": [
+            {
+              "note": "The construct phrase כִּכַּר הַיַּרְדֵּן names the land along the Jordan that Lot sees, and כֻלָּהּ מַשְׁקֶה describes the entire tract as well watered.",
+              "ref": "Gen.13.10",
+              "role": "defining"
+            }
+          ],
+          "gloss": "river plain",
+          "id": "river-plain"
+        }
+      ],
+      "usage": {
+        "opposites": [],
+        "parallels": [],
+        "phrases": []
+      }
+    }
+  ],
+  "note": "The source brief files k.cx.af after כפש, but the consecutive rootless heading and unrelated pasture sense make כר the safer root. Verify against the underlying BDB index.\n\nRoot (2026-11-21): Filed under the geminate root כרר with כִּכָּר (kkikkaar), the root of כַּר 'he-lamb' as well; how 'pasture' (Isa 30:23, Psa 65:14) relates to turning or roundness is not clear.\n\nAdded 2026-11-21: כִּכָּר, from its former one-word entry. Filed under the geminate root כרר 'turn round': כִּכָּר stands for *kirkar 'a round' (district, loaf, talent), as its plural כִּכְּרִין and כִּרְכָּרוֹת (Isa 66:20) show, and the verb מְכַרְכֵּר 'whirling' (2Sa 6:14, 16) and Arabic كَرَّ 'turn back, return' (Lane p. 2600) belong with it. כַּר (kkar) goes under the same root.\n\nIts former note: The geographic use is clear in this verse. Its semantic connection to כרר is uncertain.",
+  "tags": [
+    "geography"
+  ],
+  "cognates": [],
+  "doctrine": []
+}

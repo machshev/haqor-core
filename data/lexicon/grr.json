@@ -97,17 +97,87 @@
       "lang": "ar",
       "relation": "cognate",
       "translit": "ijtarra"
+    },
+    {
+      "id": "arc-berry",
+      "lang": "arc",
+      "form": "גַּרְגְּרָא",
+      "translit": "gargərā",
+      "gloss": "berry",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "jastrow-1903",
+          "locator": "C01258, Targum Isa 17:6 and Palestinian Targum Deu 32:14"
+        }
+      ]
+    },
+    {
+      "id": "ar-olive",
+      "lang": "ar",
+      "form": "جرجير",
+      "translit": "ǧarǧīr",
+      "gloss": "shriveled olive in Levantine Arabic",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "bassal-substrata",
+          "locator": "pp. 96–97, ǧarǧīr, with an example from spoken Palestinian Arabic"
+        }
+      ]
+    },
+    {
+      "id": "syc-throat",
+      "lang": "syc",
+      "form": "ܓܓܪܬܐ",
+      "translit": "gaggarṯā",
+      "gloss": "throat",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "cal",
+          "locator": "ggrh, ggrtʾ, Peshitta Ps 69:4"
+        }
+      ]
+    },
+    {
+      "id": "mand-throat",
+      "lang": "arc",
+      "form": "gangarata",
+      "translit": "gangarata",
+      "gloss": "Mandaic, throat or tonsils",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "drower-macuch-1963",
+          "locator": "s.v. gangarata, AM 182:1 and DC 37:38"
+        }
+      ]
+    },
+    {
+      "id": "akk-gullet",
+      "lang": "akk",
+      "form": "gaggurītu",
+      "translit": "gaggurītu",
+      "gloss": "part of an animal, possibly its gullet",
+      "relation": "possible",
+      "evidence": [
+        {
+          "source": "cad",
+          "locator": "G, s.v. gaggurītu, variant gangurītu, Hg. D 46 and Hg. B IV 43"
+        }
+      ]
     }
   ],
   "doctrine": [],
   "gloss": "drag, draw along",
   "id": "grr",
-  "note": "Jer.30.23 has several possible root assignments in the corpus. The storm and the following verb support a sweeping or whirling movement. The connection between drawing a load, drawing up cud and sawing remains uncertain. The homonymous weight is under gerah and the olive fruit under gargar. Gerar is a place name of uncertain derivation.",
+  "note": "Jer.30.23 has several possible root assignments in the corpus. The storm and the following verb support a sweeping or whirling movement. The connection between drawing a load, drawing up cud and sawing remains uncertain. The homonymous weight is under gerah and the olive fruit under gargar. Gerar is a place name of uncertain derivation.\n\nAdded 2026-11-21: גַּרְגַּר, from its former one-word entry. Filed under the geminate root גרר as its reduplicated form (*gargar), like גַּרְגְּרוֹת 'throat'; the link to dragging is not clear, and the berry may be named for its small round grains.\n\nIts former note: The Levantine Arabic term specifically describes a shriveled olive and may have entered the dialect through Aramaic. Isaiah describes the few fruits still on the branches without saying that they are shriveled.\n\nAdded 2026-11-21: גַּרְגְּרוֹת, from its former one-word entry. Filed under the geminate root גרר as its reduplicated form: Arabic جَرْجَرَ is a camel's repeated cry in its windpipe and the sound of drink in the throat (Lane p. 400), and Hebrew גֵּרָה 'cud' of the same root is brought up through the throat.\n\nIts former note: The Syriac and Mandaic forms refer to the throat and can name internal anatomy. The four Hebrew passages present the neck as the place for an ornament. The Akkadian term is less secure because its precise anatomical referent is unknown.",
   "root": "גרר",
   "status": "draft",
-  "summary": "Habakkuk pictures a conqueror dragging captives in a fishing net. The dietary laws use the same consonants for bringing up the cud. A saw and the stones cut with it form another pair in the account of Solomon’s building work.",
+  "summary": "Habakkuk pictures a conqueror dragging captives in a fishing net. The dietary laws use the same consonants for bringing up the cud. A saw and the stones cut with it form another pair in the account of Solomon’s building work. Isaiah compares the survivors to the few olives still hanging on a tree after its branches have been beaten. Proverbs pictures instruction worn around the neck like a pendant. The image gives wisdom a place both on the body and in the heart.",
   "tags": [],
-  "updated": "2026-11-20",
+  "updated": "2026-11-21",
   "words": [
     {
       "bdb": [
@@ -362,6 +432,76 @@
         }
       ],
       "summary": "Gerar is a place name. Its connection to the verb גָּרַר is uncertain."
+    },
+    {
+      "lemma": "גַּרְגַּר",
+      "pos": "noun",
+      "gender": "m",
+      "bdb": [
+        "c.df.ad"
+      ],
+      "gloss": "olive berry",
+      "senses": [
+        {
+          "id": "fruit",
+          "gloss": "olive berry",
+          "definition": "An individual fruit of the olive tree, counted among the gleanings on its branches.",
+          "evidence": [
+            {
+              "ref": "Isa.17.6",
+              "role": "defining",
+              "note": "Two or three fruits remain at the very top, and four or five on the fruitful branches. The comparison names the tree as an olive."
+            }
+          ],
+          "cognate_ids": [
+            "arc-berry",
+            "ar-olive"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "גַּרְגְּרוֹת",
+      "pos": "noun",
+      "gender": "f",
+      "bdb": [
+        "c.df.ae"
+      ],
+      "gloss": "neck, throat",
+      "senses": [
+        {
+          "id": "neck",
+          "gloss": "neck",
+          "definition": "The part of the body around which a pendant or necklace hangs. Proverbs uses the plural form for one person’s neck.",
+          "evidence": [
+            {
+              "ref": "Pro.1.9",
+              "role": "defining",
+              "note": "A garland goes on the head and pendants around the neck."
+            },
+            {
+              "ref": "Pro.3.3",
+              "role": "defining",
+              "note": "The pupil binds loyal love and faithfulness around the neck and writes them on the heart."
+            },
+            {
+              "ref": "Pro.3.22",
+              "role": "defining",
+              "note": "Wisdom and discretion adorn the neck."
+            },
+            {
+              "ref": "Pro.6.21",
+              "role": "defining",
+              "note": "The parents’ teaching is bound on the heart and tied around the neck."
+            }
+          ],
+          "cognate_ids": [
+            "syc-throat",
+            "mand-throat",
+            "akk-gullet"
+          ]
+        }
+      ]
     }
   ]
 }

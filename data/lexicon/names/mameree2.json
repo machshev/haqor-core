@@ -1,7 +1,18 @@
 {
-  "created": "2026-11-21",
+  "id": "mameree2",
+  "name": "מַמְרֵא",
   "english": "Mamre",
+  "root": "",
   "entry": "",
+  "status": "draft",
+  "created": "2026-11-21",
+  "updated": "2026-11-21",
+  "people": [
+    "Mamre@Gen.14.13",
+    "Mamre@Gen.13.18"
+  ],
+  "gloss": "Mamre",
+  "summary": "Mamre is an Amorite, brother of Eshcol and Aner, and the place at Hebron named for his terebinths, where Abram settled and built an altar to Yahweh. The derivation of the name is uncertain.",
   "evidence": [
     {
       "note": "The verse calls Mamre הָאֱמֹרִי, “the Amorite,” names Eshcol and Aner as his brothers, and describes them as Abram’s covenant allies.",
@@ -12,17 +23,12 @@
       "note": "Abram names Aner, Eshcol and Mamre as the men who went with him and says they may take their share.",
       "ref": "Gen.14.24",
       "role": "defining"
+    },
+    {
+      "ref": "Gen.13.18",
+      "role": "defining",
+      "note": "Abram settles by the terebinths of Mamre. The clause אֲשֶׁר בְּחֶבְרוֹן places them at Hebron."
     }
   ],
-  "gloss": "Mamre",
-  "id": "mameree2",
-  "name": "מַמְרֵא",
-  "note": "",
-  "people": [
-    "Mamre@Gen.14.13"
-  ],
-  "root": "",
-  "status": "draft",
-  "summary": "Mamre is an Amorite, brother of Eshcol and Aner. Abram camps among his terebinths. The derivation of his name is uncertain.",
-  "updated": "2026-11-21"
+  "note": "Merged with the former word entry `mameree2`, the place (old root key ממרא, the consonants of the place name), which added Mamre@Gen.13.18. Its derivation is uncertain."
 }

@@ -249,25 +249,19 @@ fn apply_one_locked(
         return Ok(PublishOutcome::NotPending);
     };
     let body = draft_body(db, job, body)?;
-    let path = article_path(lexicon, &id, name, Some(&body));
-    // A promoted noun is read, checked and replaced at its own file.
-    let old_path = replaces
-        .as_deref()
-        .map(|old| article_path(lexicon, old, false, None));
-    if let (Some(old), Some(old_path)) = (&replaces, &old_path) {
-        let noun = old_path.parent() == Some(lexicon.join(haqor_lexicon::NOUNS_DIR).as_path());
-        if !noun || path.exists() {
-            return reject(
-                db,
-                job,
-                format!(
-                    "The draft's content makes it the article `{id}`, not `{old}`, which it was drafted from. Amend `{id}` itself, or keep `{old}`'s root and words."
-                ),
-            );
-        }
+    let path = article_path(lexicon, &id, name);
+    // Every entry is named by its root, so a draft whose content derives
+    // another id has changed its root: the article it was drafted from stays.
+    if let Some(old) = &replaces {
+        return reject(
+            db,
+            job,
+            format!(
+                "The draft's content makes it the article `{id}`, not `{old}`, which it was drafted from. Amend `{id}` itself, or keep `{old}`'s root and words."
+            ),
+        );
     }
-    let current_path = old_path.as_ref().unwrap_or(&path);
-    let current = match fs::read_to_string(current_path) {
+    let current = match fs::read_to_string(&path) {
         Ok(s) => Some(s),
         Err(e) if e.kind() == std::io::ErrorKind::NotFound => None,
         Err(e) => return Err(e.into()),
@@ -303,7 +297,7 @@ fn apply_one_locked(
             let tx = db.transaction()?;
             let reason = format!(
                 "Article {} changed. Read its current file and reconcile the proposed changes.",
-                current_path.display()
+                path.display()
             );
             tx.execute("UPDATE job SET state='ready',feedback=?,attempts=0,result=NULL WHERE source=? AND ref=? AND pos=?", params![reason,job.source,job.reference,job.pos])?;
             tx.execute("UPDATE job SET state='waiting',attempts=0,result=NULL WHERE source=? AND ref=? AND pos=-1", params![job.source,job.reference])?;
@@ -317,17 +311,9 @@ fn apply_one_locked(
             None => Some(body.clone()),
         };
         if let Some(body) = publish {
-            // The noun's file goes before the root entry that replaces it is
-            // validated, or the lexicon would hold two entries for one root.
-            if let Some(old_path) = &old_path {
-                fs::remove_file(old_path)?;
-            }
             if let Err(error) = haqor_lexicon::save_entry(lexicon, &body, verses)
                 .with_context(|| format!("validating {id}"))
             {
-                if let (Some(old_path), Some(current)) = (&old_path, &current) {
-                    fs::write(old_path, current)?;
-                }
                 if !is_validation_error(&error) {
                     return Err(error);
                 }
@@ -356,24 +342,6 @@ fn apply_one_locked(
             revision(&fs::read_to_string(&path)?)
         ],
     )?;
-    // The promoted noun's readers now read its root entry: its words keep
-    // their indices, so only the id and revision move. (Their review files are
-    // repointed by the publication, which commits them with the article.)
-    if let (Some(old), Some(current)) = (&replaces, &current) {
-        let new = revision(&fs::read_to_string(&path)?);
-        tx.execute(
-            "UPDATE dependency SET id=?1, revision=?2 WHERE id=?3 AND name=0 AND revision=?4",
-            params![id, new, old, revision(current)],
-        )?;
-        tx.execute(
-            "UPDATE dependency SET id=?1 WHERE id=?2 AND name=0",
-            params![id, old],
-        )?;
-        tx.execute(
-            "UPDATE article SET id=?1 WHERE id=?2 AND name=0 AND applied=0",
-            params![id, old],
-        )?;
-    }
     tx.execute(
         "UPDATE article SET applied=1 WHERE source=? AND ref=? AND pos=?",
         job.key(),
@@ -397,72 +365,15 @@ fn reject(db: &mut Connection, job: &Job, reason: String) -> Result<PublishOutco
     Ok(PublishOutcome::Rejected)
 }
 
-/// The file of article `id`: under `names/` for a name, under `nouns/` for a
-/// noun (by the draft `body` where there is one, or else where the file is),
-/// and at the top level for a root's entry.
-pub fn article_path(lexicon: &Path, id: &str, name: bool, body: Option<&str>) -> PathBuf {
+/// The file of article `id`: under `names/` for a name, and at the top level
+/// for a root's entry.
+pub fn article_path(lexicon: &Path, id: &str, name: bool) -> PathBuf {
     let file = format!("{id}.json");
     if name {
-        return lexicon.join(haqor_lexicon::NAMES_DIR).join(file);
+        lexicon.join(haqor_lexicon::NAMES_DIR).join(file)
+    } else {
+        lexicon.join(file)
     }
-    let nouns = lexicon.join(haqor_lexicon::NOUNS_DIR).join(&file);
-    let noun = match body
-        .filter(|b| !b.trim().is_empty())
-        .and_then(|b| haqor_lexicon::article_id(b).ok())
-    {
-        Some((_, dir)) => dir == haqor_lexicon::NOUNS_DIR,
-        None => nouns.exists(),
-    };
-    if noun { nouns } else { lexicon.join(file) }
-}
-
-/// The review files whose occurrences name article `old`, rewritten (unless
-/// `dry`) to name `new`: a promoted noun's readers.
-pub fn repoint_reviews(review: &Path, old: &str, new: &str, dry: bool) -> Result<Vec<PathBuf>> {
-    let mut files = Vec::new();
-    let mut dirs = vec![review.to_path_buf()];
-    while let Some(dir) = dirs.pop() {
-        if !dir.try_exists()? {
-            continue;
-        }
-        for entry in fs::read_dir(&dir)? {
-            let path = entry?.path();
-            if path.is_dir() {
-                dirs.push(path);
-            } else if path.extension().is_some_and(|e| e == "json") {
-                files.push(path);
-            }
-        }
-    }
-    let mut changed = Vec::new();
-    for path in files {
-        let mut verse: Value = serde_json::from_str(&fs::read_to_string(&path)?)?;
-        if verse["source"] == "greek" {
-            continue;
-        }
-        let mut hit = false;
-        for word in verse["words"].as_array_mut().into_iter().flatten() {
-            let entry = &mut word["analysis"]["entry"];
-            for pointer in ["/existing", "/draft/article_id"] {
-                if let Some(slot) = entry.pointer_mut(pointer)
-                    && slot == old
-                {
-                    *slot = json!(new);
-                    hit = true;
-                }
-            }
-        }
-        if hit {
-            if !dry {
-                let text = serde_json::to_string_pretty(&verse)? + "\n";
-                let tmp = path.with_extension(format!("{}.tmp", std::process::id()));
-                fs::write(&tmp, text)?;
-                fs::rename(tmp, &path)?;
-            }
-            changed.push(path);
-        }
-    }
-    Ok(changed)
 }
 
 /// Reviewed occurrences address a lexeme by its index in `words`, so an edit
@@ -887,6 +798,9 @@ mod tests {
         };
         let mut article: Value = serde_json::from_str(&text)?;
         article["id"] = json!("atam-shut");
+        // The checked-in entry may be signed off; a review drafts it.
+        article["status"] = json!("draft");
+        article.as_object_mut().unwrap().remove("reviewed");
         let mut answer = json!({"language":"he","lemma":"אָטַם","root":"אטמ",
             "entry":{"draft":{"article":article,"base":null,"definition":"d","evidence":"e","change":"c"},
                 "word":0,"sense":"stop"}});
@@ -916,65 +830,13 @@ mod tests {
     #[test]
     fn articles_are_filed_by_kind() {
         let lexicon = lexicon();
-        let Some(noun) = fs::read_dir(lexicon.join("nouns")).ok().and_then(|mut d| {
-            d.next()?
-                .ok()?
-                .path()
-                .file_stem()?
-                .to_str()
-                .map(str::to_owned)
-        }) else {
-            return;
-        };
         assert_eq!(
-            article_path(&lexicon, &noun, false, None),
-            lexicon.join("nouns").join(format!("{noun}.json"))
-        );
-        assert_eq!(
-            article_path(&lexicon, "26m", false, None),
+            article_path(&lexicon, "26m", false),
             lexicon.join("26m.json")
         );
         assert_eq!(
-            article_path(&lexicon, "yrd", true, None),
+            article_path(&lexicon, "yrd", true),
             lexicon.join("names/yrd.json")
         );
-    }
-
-    #[test]
-    fn a_promoted_nouns_readers_are_repointed() -> Result<()> {
-        let root = std::env::temp_dir().join(format!(
-            "haqor-review-repoint-{}",
-            SystemTime::now().duration_since(UNIX_EPOCH)?.as_nanos()
-        ));
-        let dir = root.join("ot/1/2");
-        fs::create_dir_all(&dir)?;
-        let verse = json!({"source":"ot","words":[
-            {"position":0,"analysis":{"entry":{"existing":"noun-x","word":0}}},
-            {"position":1,"analysis":{"entry":{"draft":{"article_id":"noun-x"},"word":0}}},
-            {"position":2,"analysis":{"entry":{"existing":"other","word":0}}}]});
-        fs::write(dir.join("3.json"), verse.to_string())?;
-        fs::write(
-            root.join("ot/1/2/4.json"),
-            json!({"source":"ot","words":[]}).to_string(),
-        )?;
-        assert_eq!(
-            repoint_reviews(&root, "noun-x", "rootx", true)?,
-            [dir.join("3.json")]
-        );
-        let unchanged: Value = serde_json::from_str(&fs::read_to_string(dir.join("3.json"))?)?;
-        assert_eq!(
-            unchanged["words"][0]["analysis"]["entry"]["existing"],
-            "noun-x"
-        );
-        repoint_reviews(&root, "noun-x", "rootx", false)?;
-        let after: Value = serde_json::from_str(&fs::read_to_string(dir.join("3.json"))?)?;
-        assert_eq!(after["words"][0]["analysis"]["entry"]["existing"], "rootx");
-        assert_eq!(
-            after["words"][1]["analysis"]["entry"]["draft"]["article_id"],
-            "rootx"
-        );
-        assert_eq!(after["words"][2]["analysis"]["entry"]["existing"], "other");
-        fs::remove_dir_all(root)?;
-        Ok(())
     }
 }

@@ -1,10 +1,21 @@
 {
+  "id": "7aam",
+  "name": "חָם",
+  "english": "Ham",
+  "root": "",
+  "entry": "",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-21",
   "bdb": [
     "h.dc.ad"
   ],
-  "created": "2026-11-19",
-  "english": "Ham",
-  "entry": "7aam",
+  "people": [
+    "Ham@Gen.5.32",
+    "Egypt@Gen.12.10"
+  ],
+  "gloss": "Ham",
+  "summary": "Ham is Noah's son and the father of Cush, Mizraim, Put and Canaan. The psalms call Egypt, the land of his son Mizraim, the land of Ham.",
   "evidence": [
     {
       "ref": "Gen.5.32",
@@ -22,17 +33,19 @@
     },
     {
       "ref": "Psa.78.51",
-      "role": "defining"
+      "role": "defining",
+      "note": "The firstborn of Egypt are struck “in the tents of Ham”."
+    },
+    {
+      "ref": "Psa.105.23",
+      "role": "example",
+      "note": "Jacob sojourns in the land of Ham."
+    },
+    {
+      "ref": "Psa.106.22",
+      "role": "example",
+      "note": "Wonders in the land of Ham."
     }
   ],
-  "gloss": "Ham",
-  "id": "7aam",
-  "name": "חָם",
-  "people": [
-    "Ham@Gen.5.32"
-  ],
-  "root": "חמ",
-  "status": "draft",
-  "summary": "Ham is Noah's son and the father of Cush, Mizraim, Put and Canaan.",
-  "updated": "2026-11-20"
+  "note": "Merged with the former word entry `7aam`, the word “land of Ham” (old root key חמ), which added Egypt@Gen.12.10: TIPNR files the poetic name Ham under Egypt. The personal name owns the shared BDB key. The old `entry` named that word entry, which is now this name; there is no root entry. Not the place הָם (names/haam)."
 }

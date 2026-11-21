@@ -3,13 +3,15 @@
   "root": "עופ",
   "status": "draft",
   "created": "2026-11-19",
-  "updated": "2026-11-19",
+  "updated": "2026-11-21",
   "tags": [
     "movement",
-    "birds"
+    "birds",
+    "body",
+    "sight"
   ],
   "gloss": "fly, birds, flying creatures",
-  "summary": "Winged creatures provide the ordinary image of flight. In the psalm the verb portrays the speed of Yahweh’s approach in response to David’s cry.",
+  "summary": "Winged creatures provide the ordinary image of flight. In the psalm the verb portrays the speed of Yahweh’s approach in response to David’s cry. The poets speak of eyelids when describing sleep, tears and the direction of a gaze. Dawn too is pictured as having eyelids.",
   "words": [
     {
       "lemma": "עוּף",
@@ -153,6 +155,57 @@
       "cognate_ids": [
         "phn-bird"
       ]
+    },
+    {
+      "lemma": "עַפְעַף",
+      "bdb": [
+        "p.bk.ac"
+      ],
+      "pos": "noun",
+      "gloss": "eyelid",
+      "senses": [
+        {
+          "id": "eyelids",
+          "gloss": "eyelids",
+          "definition": "Eyelids close in sleep and grow dark with weeping. In Psalm 11 the parallel lines speak of Yahweh’s eyes seeing and his eyelids examining humankind.",
+          "evidence": [
+            {
+              "ref": "Psa.132.4",
+              "role": "defining"
+            },
+            {
+              "ref": "Job.16.16"
+            },
+            {
+              "ref": "Psa.11.4"
+            },
+            {
+              "ref": "Jer.9.17"
+            },
+            {
+              "ref": "Pro.4.25"
+            }
+          ]
+        },
+        {
+          "id": "eyelids-of-dawn",
+          "gloss": "eyelids of dawn",
+          "definition": "Job imagines the first light as dawn opening its eyes. Leviathan’s bright eyes are compared to the same sight.",
+          "evidence": [
+            {
+              "ref": "Job.3.9",
+              "role": "defining"
+            },
+            {
+              "ref": "Job.41.10"
+            }
+          ]
+        }
+      ],
+      "gender": "m",
+      "cognate_ids": [
+        "uga-eyelid"
+      ]
     }
   ],
   "cognates": [
@@ -172,8 +225,25 @@
       "sounds": {
         "ע": "ʿ"
       }
+    },
+    {
+      "id": "uga-eyelid",
+      "lang": "uga",
+      "form": "ʕpʕp",
+      "translit": "ʿpʿp",
+      "gloss": "eyelid",
+      "relation": "cognate",
+      "evidence": [
+        {
+          "source": "watson-2015-anatomy",
+          "locator": "p. 327, entry ʕpʕp and note 31"
+        }
+      ],
+      "sounds": {
+        "ע": "ʿ"
+      }
     }
   ],
   "doctrine": [],
-  "note": "The eyelid noun עַפְעַף is covered in aphaph. Similar spellings for darkness and weariness have different senses and do not explain the flight in Psalm 18."
+  "note": "The eyelid noun עַפְעַף is covered in aphaph. Similar spellings for darkness and weariness have different senses and do not explain the flight in Psalm 18.\n\nAdded 2026-11-21: עַפְעַף, from its former one-word entry. Filed under the hollow root עוף: עַפְעַף is its reduplicated form, the eyelid as the \"flutterer\"; Ugaritic ʕpʕp keeps the doubled consonants and the sense.\n\nIts former note: The Ugaritic comparison preserves the repeated consonants and the anatomical sense. A further derivation from עוף “fly” on the basis of fluttering motion remains uncertain."
 }

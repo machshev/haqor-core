@@ -1,24 +1,40 @@
 {
   "id": "sebaa2",
-  "created": "2026-11-19",
   "name": "סְבָא",
   "english": "Seba",
-  "root": "סבא",
-  "entry": "sebaa2",
+  "root": "",
+  "entry": "",
   "status": "draft",
-  "updated": "2026-11-19",
+  "created": "2026-11-19",
+  "updated": "2026-11-21",
+  "bdb": [
+    "o.ac.ad"
+  ],
   "people": [
-    "Seba@Gen.10.7"
+    "Seba@Gen.10.7",
+    "Seba@Psa.72.10"
   ],
   "gloss": "Seba",
-  "summary": "Seba is a Cushite ancestor and the people or land named from him.",
+  "summary": "Seba is a son of Cush, and the distant people and land whose rulers bring tribute to the king, named with Egypt and Cush as Israel’s ransom.",
   "evidence": [
     {
       "ref": "Gen.10.7",
       "role": "defining"
     },
     {
-      "ref": "Psa.72.10"
+      "ref": "Psa.72.10",
+      "role": "defining",
+      "note": "The kings of Sheba and Seba bring tribute."
+    },
+    {
+      "ref": "Isa.43.3",
+      "role": "defining",
+      "note": "Egypt, Cush and Seba given as Israel’s ransom."
+    },
+    {
+      "ref": "Isa.45.14",
+      "role": "example"
     }
-  ]
+  ],
+  "note": "Merged with the former word entry `sebaa2`, the land and people (old root key סבא), which added Seba@Psa.72.10 and BDB o.ac.ad. The old `entry` named that word entry, which is now this name; there is no root entry."
 }

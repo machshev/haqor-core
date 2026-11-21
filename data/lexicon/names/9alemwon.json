@@ -2,19 +2,21 @@
   "id": "9alemwon",
   "name": "צַלְמוֹן",
   "english": "Zalmon",
-  "root": "צלמונ",
-  "entry": "9alemwon",
+  "root": "",
+  "entry": "",
   "status": "draft",
   "created": "2026-11-19",
-  "updated": "2026-11-19",
+  "updated": "2026-11-21",
   "bdb": [
-    "r.ce.ad"
+    "r.ce.ad",
+    "r.ce.ac"
   ],
   "people": [
-    "Zalmon@2Sa.23.28"
+    "Zalmon@2Sa.23.28",
+    "Ebal_Mount@Deu.11.29"
   ],
   "gloss": "meaning uncertain",
-  "summary": "Zalmon the Ahohite is named among David’s warriors. His name has the same spelling as the mountain. The text gives no reason for the name.",
+  "summary": "Zalmon the Ahohite is named among David’s warriors. Zalmon is also a mountain reached from Shechem, where Abimelech cut wood, and Psalm 68 pictures snow on Zalmon when the Almighty scatters kings. The text gives no reason for the name.",
   "evidence": [
     {
       "ref": "2Sa.23.28",
@@ -22,7 +24,14 @@
     },
     {
       "ref": "Jdg.9.48",
-      "role": "defining"
+      "role": "defining",
+      "note": "Abimelech goes up Mount Zalmon and cuts a bough."
+    },
+    {
+      "ref": "Psa.68.15",
+      "role": "defining",
+      "note": "“It snowed on Zalmon.”"
     }
-  ]
+  ],
+  "note": "Merged with the former word entry `9alemwon`, the mountain (old root key צלמונ), which added Ebal_Mount@Deu.11.29 and BDB r.ce.ac: TIPNR files Mount Zalmon under its record for Ebal. The psalm does not establish that its Zalmon is the same mountain as in Judges, or explain its name. צֶלֶם “image” is under tselem. The old `entry` named that word entry, which is now this name; there is no root entry."
 }

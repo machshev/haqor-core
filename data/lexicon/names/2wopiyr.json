@@ -1,8 +1,21 @@
 {
-  "bdb": [],
-  "created": "2026-11-19",
+  "id": "2wopiyr",
+  "name": "אוֹפִיר",
   "english": "Ophir",
-  "entry": "2wopiyr",
+  "root": "",
+  "entry": "",
+  "status": "draft",
+  "created": "2026-11-19",
+  "updated": "2026-11-21",
+  "bdb": [
+    "a.cb.aj"
+  ],
+  "people": [
+    "Ophir@Gen.10.29",
+    "Ophir@1Ki.9.28"
+  ],
+  "gloss": "Ophir, son of Joktan; a source of gold",
+  "summary": "Genesis and Chronicles list Ophir with Havilah and Jobab among Joktan’s sons. Ophir is also the land Solomon’s fleet sailed to from the Red Sea, returning with gold, timber and precious stones, so that its gold became a measure of extraordinary value. The genealogies give no explanation of the name.",
   "evidence": [
     {
       "ref": "Gen.10.29",
@@ -13,19 +26,30 @@
       "role": "defining"
     },
     {
+      "ref": "1Ki.9.26",
+      "role": "defining",
+      "note": "Solomon builds ships at Ezion-geber on the Red Sea."
+    },
+    {
       "ref": "1Ki.9.28",
-      "role": "defining"
+      "role": "defining",
+      "note": "They come to Ophir and bring back gold."
+    },
+    {
+      "ref": "1Ki.10.11",
+      "role": "defining",
+      "note": "The fleet brings almug wood and precious stones from Ophir."
+    },
+    {
+      "ref": "Psa.45.10",
+      "role": "defining",
+      "note": "The queen stands at the king’s right hand in gold of Ophir."
+    },
+    {
+      "ref": "Isa.13.12",
+      "role": "defining",
+      "note": "Man made rarer than the gold of Ophir."
     }
   ],
-  "gloss": "Ophir, son of Joktan",
-  "id": "2wopiyr",
-  "name": "אוֹפִיר",
-  "note": "The shared key is held by the geographical word in ophir.json.",
-  "people": [
-    "Ophir@Gen.10.29"
-  ],
-  "root": "אופיר",
-  "status": "draft",
-  "summary": "Genesis and Chronicles list Ophir with Havilah and Jobab among Joktan’s sons. Scripture also calls a source of fine gold Ophir. The genealogies give no explanation of the name.",
-  "updated": "2026-11-19"
+  "note": "Merged with the former word entry `2wopiyr`, the place word (old root key אופיר), whose BDB key a.cb.aj covers both the person and the place. The site and the historical relationship with Joktan’s son Ophir remain uncertain. The old `entry` named the place’s word entry, which is now this name; there is no root entry."
 }
