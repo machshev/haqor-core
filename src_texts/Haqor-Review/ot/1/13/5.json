@@ -1,6 +1,60 @@
 {
   "book": 1,
   "chapter": 13,
+  "review": {
+    "entities": [
+      {
+        "evidence": "Genesis 11:27 identifies Lot as Haran’s son and Abram’s nephew. Here he travels with Abram and owns the flocks, herds, and tents.",
+        "key": "Lot@Gen.11.27",
+        "position": 1
+      },
+      {
+        "evidence": "Abram is Terah’s son and Lot’s uncle, later named Abraham. Here he is Lot’s traveling companion.",
+        "key": "Abraham@Gen.11.26",
+        "position": 4
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "and also",
+        "position": 0
+      },
+      {
+        "gloss": "to Lot",
+        "position": 1
+      },
+      {
+        "gloss": "who was traveling",
+        "position": 2
+      },
+      {
+        "gloss": "with",
+        "position": 3
+      },
+      {
+        "gloss": "Abram",
+        "position": 4
+      },
+      {
+        "gloss": "had",
+        "position": 5
+      },
+      {
+        "gloss": "flocks",
+        "position": 6
+      },
+      {
+        "gloss": "and herds",
+        "position": 7
+      },
+      {
+        "gloss": "and tents",
+        "position": 8
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[Now|0] [Lot|1], [who was traveling|2] [with|3] [Abram|4], [also|0] [had|5] [flock|6]{s} [and herd|7]{s} [and tents|8]."
+  },
   "source": "ot",
   "verse": 5,
   "words": [
@@ -29,31 +83,6 @@
       "analysis": {
         "entry": {
           "draft": {
-            "article": {
-              "created": "2026-11-21",
-              "english": "Lot",
-              "entry": "",
-              "evidence": [
-                {
-                  "note": "The genealogy names Abram and Haran as sons of Terah and Lot as Haran’s son.",
-                  "ref": "Gen.11.27",
-                  "role": "defining"
-                },
-                {
-                  "note": "Lot is named as Abram’s traveling companion and as the owner of flocks, cattle, and tents.",
-                  "ref": "Gen.13.5",
-                  "role": "example"
-                }
-              ],
-              "gloss": "Lot",
-              "id": "lwo6",
-              "name": "לוֹט",
-              "people": [],
-              "root": "",
-              "status": "draft",
-              "summary": "Lot is Haran’s son and Abram’s nephew. He traveled with Abram and had flocks, cattle, and tents of his own. The meaning of his name is uncertain.",
-              "updated": "2026-11-21"
-            },
             "article_id": "lwo6",
             "base": null,
             "change": "Add a personal-name article for לוֹט. Its etymology is uncertain.",
