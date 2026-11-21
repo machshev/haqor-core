@@ -329,6 +329,33 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article_id": "l",
+            "base": "12842517cdd35f6a87a1d298114ef3497851ac946210104e2a3a0a20108623e7",
+            "change": "Add Genesis 15:1 as an example of the existing le-dative sense.",
+            "definition": "לְ marks the person for whose benefit something is done.",
+            "evidence": "In Genesis 15:1 Yahweh tells Abram, אָנֹכִי מָגֵן לָךְ, “I am a shield for you.” Abram receives the protection."
+          },
+          "sense": "le-dative",
+          "word": 0
+        },
+        "evidence": "In אָנֹכִי מָגֵן לָךְ, “I am a shield for you,” לָךְ identifies Abram as the person Yahweh protects. אַל תִּירָא אַבְרָם addresses him with a masculine singular verb, and שְׂכָרְךָ, “your reward,” resumes the same address with an explicit masculine singular suffix.",
+        "gloss": "for you",
+        "language": "he",
+        "lemma": "לְ",
+        "morph": "HR/Sp2ms",
+        "morphology": "The preposition לְ takes a second-person masculine singular pronominal suffix. לָךְ is the pausal form of לְךָ at the end of the clause.",
+        "qualifier": "",
+        "root": "ל",
+        "segments": "לָ/ךְ",
+        "sense": "Marks the person for whom the speaker serves as a shield."
+      },
+      "position": 15,
+      "surface": "לָךְ"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "ckr",
           "sense": "reward",
           "word": 0
