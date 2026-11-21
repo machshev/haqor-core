@@ -1,6 +1,116 @@
 {
   "book": 1,
   "chapter": 13,
+  "review": {
+    "entities": [
+      {
+        "evidence": "Abram sets out from the southern region toward which he traveled in Genesis 12:9.",
+        "key": "Negeb@Gen.12.9",
+        "position": 2
+      },
+      {
+        "evidence": "בֵּית begins the name of Abram’s destination, the town west of his former campsite in Genesis 12:8.",
+        "key": "Bethel@Gen.12.8",
+        "position": 4
+      },
+      {
+        "evidence": "אֵל completes בֵּית אֵל, the destination named after “as far as.”",
+        "key": "Bethel@Gen.12.8",
+        "position": 5
+      },
+      {
+        "evidence": "בֵּית begins the repeated town name. Its pairing with Ai identifies the campsite described in Genesis 12:8.",
+        "key": "Bethel@Gen.12.8",
+        "position": 14
+      },
+      {
+        "evidence": "אֵל completes the name of Bethel as the western landmark of Abram’s former campsite.",
+        "key": "Bethel@Gen.12.8",
+        "position": 15
+      },
+      {
+        "evidence": "Ai is the eastern landmark of Abram’s former campsite, paired with Bethel as in Genesis 12:8.",
+        "key": "Ai@Gen.12.8",
+        "position": 17
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "then he went",
+        "position": 0
+      },
+      {
+        "gloss": "by stages",
+        "position": 1
+      },
+      {
+        "gloss": "from the Negev",
+        "position": 2
+      },
+      {
+        "gloss": "as far as",
+        "position": 3
+      },
+      {
+        "gloss": "Bethel",
+        "position": 4
+      },
+      {
+        "gloss": "Bethel",
+        "position": 5
+      },
+      {
+        "gloss": "to",
+        "position": 6
+      },
+      {
+        "gloss": "the place",
+        "position": 7
+      },
+      {
+        "gloss": "where",
+        "position": 8
+      },
+      {
+        "gloss": "had been",
+        "position": 9
+      },
+      {
+        "gloss": "there",
+        "position": 10
+      },
+      {
+        "gloss": "his tent",
+        "position": 11
+      },
+      {
+        "gloss": "at first",
+        "position": 12
+      },
+      {
+        "gloss": "between",
+        "position": 13
+      },
+      {
+        "gloss": "Bethel",
+        "position": 14
+      },
+      {
+        "gloss": "Bethel",
+        "position": 15
+      },
+      {
+        "gloss": "and",
+        "position": 16
+      },
+      {
+        "gloss": "Ai",
+        "position": 17
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[Then he went|0] [by stages|1] [from the Negev|2] [as far as|3] [Bethel|4,5], [to|6] [the place|7] [where|8,10] [his tent|11] [had been|9] [at first|12], [between|13] [Bethel|14,15] [and|16] [Ai|17],"
+  },
   "source": "ot",
   "verse": 3,
   "words": [
