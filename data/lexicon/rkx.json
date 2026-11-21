@@ -3,7 +3,7 @@
   "created": "2026-11-21",
   "doctrine": [],
   "gloss": "acquire, possessions",
-  "id": "rekwwx",
+  "id": "rkx",
   "note": "",
   "root": "רכש",
   "status": "draft",
@@ -31,6 +31,37 @@
           ],
           "gloss": "possessions",
           "id": "possessions"
+        }
+      ],
+      "usage": {
+        "opposites": [],
+        "parallels": [],
+        "phrases": []
+      }
+    },
+    {
+      "gloss": "acquire",
+      "greek": [],
+      "lemma": "רָכַשׁ",
+      "pos": "verb",
+      "stems": [
+        {
+          "gloss": "acquire",
+          "senses": [
+            {
+              "definition": "To acquire goods or property.",
+              "evidence": [
+                {
+                  "note": "In רְכוּשָׁם אֲשֶׁר רָכָשׁוּ, “their possessions that they had acquired,” the possessions Abram took with him are the object of רָכָשׁוּ.",
+                  "ref": "Gen.12.5",
+                  "role": "defining"
+                }
+              ],
+              "gloss": "acquire property",
+              "id": "acquire-property"
+            }
+          ],
+          "stem": "qal"
         }
       ],
       "usage": {

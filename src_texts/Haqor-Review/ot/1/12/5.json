@@ -263,7 +263,7 @@
       "analysis": {
         "entry": {
           "draft": {
-            "article_id": "rekwwx",
+            "article_id": "rkx",
             "base": null,
             "change": "Add the root רכש and its noun רְכוּשׁ for acquired possessions. The source’s personal-name gloss does not fit this occurrence.",
             "definition": "Property or goods that someone owns, taken collectively.",
@@ -306,6 +306,33 @@
       },
       "position": 12,
       "surface": "אֲשֶׁר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "rkx",
+            "base": "725d9ccb80b7a6c8ed5c5025e58116396293ef8242fb69676d3c09fdebbd273f",
+            "change": "Append the verb רָכַשׁ with its Qal sense “acquire property” at word index 1. The source’s personal-name gloss conflicts with the verb’s form and its role in the relative clause.",
+            "definition": "To acquire goods or property.",
+            "evidence": "Genesis 12:5 describes the property Abram took with him as goods they had already acquired."
+          },
+          "sense": "acquire-property",
+          "word": 1
+        },
+        "evidence": "In כָּל רְכוּשָׁם אֲשֶׁר רָכָשׁוּ, “all their possessions that they had acquired,” אֲשֶׁר introduces a relative clause whose verb is רָכָשׁוּ. The possessions are what they acquired.",
+        "gloss": "they had acquired",
+        "language": "he",
+        "lemma": "רָכַשׁ",
+        "morph": "HVqp3cp",
+        "morphology": "Qal perfect, third person common plural. The ending וּ marks the plural subject. The acquisition precedes Abram’s departure.",
+        "qualifier": "",
+        "root": "רכש",
+        "segments": "רָכָשׁוּ",
+        "sense": "Acquire property"
+      },
+      "position": 13,
+      "surface": "רָכָשׁוּ"
     },
     {
       "analysis": {
