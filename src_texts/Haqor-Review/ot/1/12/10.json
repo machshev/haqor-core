@@ -1,6 +1,72 @@
 {
   "book": 1,
   "chapter": 12,
+  "review": {
+    "entities": [
+      {
+        "evidence": "Abram, the traveler who goes down to Egypt, is Terah’s son, later named Abraham.",
+        "key": "Abraham@Gen.11.26",
+        "position": 4
+      },
+      {
+        "evidence": "The directional ending on מִצְרַיְמָה marks Egypt as Abram’s destination, and “to sojourn there” confirms the place.",
+        "key": "Egypt@Gen.12.10",
+        "position": 5
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "then there was",
+        "position": 0
+      },
+      {
+        "gloss": "a famine",
+        "position": 1
+      },
+      {
+        "gloss": "in the land",
+        "position": 2
+      },
+      {
+        "gloss": "so he went down",
+        "position": 3
+      },
+      {
+        "gloss": "Abram",
+        "position": 4
+      },
+      {
+        "gloss": "to Egypt",
+        "position": 5
+      },
+      {
+        "gloss": "to sojourn",
+        "position": 6
+      },
+      {
+        "gloss": "there",
+        "position": 7
+      },
+      {
+        "gloss": "because",
+        "position": 8
+      },
+      {
+        "gloss": "severe",
+        "position": 9
+      },
+      {
+        "gloss": "the famine",
+        "position": 10
+      },
+      {
+        "gloss": "in the land",
+        "position": 11
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[Then there was|0] [a famine|1] [in the land|2], [so|3] [Abram|4] [went down|3] [to Egypt|5] [to sojourn|6] [there|7] [because|8] [the famine|10] [{was}|9] [severe|9] [in the land|11]."
+  },
   "source": "ot",
   "verse": 10,
   "words": [
