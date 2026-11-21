@@ -1,6 +1,95 @@
 {
   "book": 1,
   "chapter": 14,
+  "review": {
+    "entities": [
+      {
+        "evidence": "Abram, the son of Terah later named Abraham, speaks to the king of Sodom.",
+        "key": "Abraham@Gen.11.26",
+        "position": 1
+      },
+      {
+        "evidence": "Sodom names the city ruled by the king whom Abram addresses.",
+        "key": "Sodom@Gen.10.19",
+        "position": 4
+      },
+      {
+        "evidence": "Yahweh is the divine name Abram invokes as he raises his hand in oath.",
+        "key": "LORD@Gen.1.1",
+        "position": 8
+      },
+      {
+        "evidence": "אֵל begins the title “God Most High,” which identifies Yahweh in Abram’s oath.",
+        "key": "LORD@Gen.1.1",
+        "position": 9
+      },
+      {
+        "evidence": "עֶלְיוֹן completes the title “God Most High,” repeating Melchizedek’s designation in Genesis 14:19.",
+        "key": "LORD@Gen.1.1",
+        "position": 10
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "but he said",
+        "position": 0
+      },
+      {
+        "gloss": "Abram",
+        "position": 1
+      },
+      {
+        "gloss": "to",
+        "position": 2
+      },
+      {
+        "gloss": "the king of",
+        "position": 3
+      },
+      {
+        "gloss": "Sodom",
+        "position": 4
+      },
+      {
+        "gloss": "I have raised",
+        "position": 5
+      },
+      {
+        "gloss": "my hand",
+        "position": 6
+      },
+      {
+        "gloss": "toward",
+        "position": 7
+      },
+      {
+        "gloss": "Yahweh",
+        "position": 8
+      },
+      {
+        "gloss": "God",
+        "position": 9
+      },
+      {
+        "gloss": "Most High",
+        "position": 10
+      },
+      {
+        "gloss": "possessor of",
+        "position": 11
+      },
+      {
+        "gloss": "heavens",
+        "position": 12
+      },
+      {
+        "gloss": "and earth",
+        "position": 13
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[But|0] [Abram|1] [said|0] [to|2] [the king of|3] [Sodom|4], “[I raise|5] [my hand|6] [to|7] [Yahweh|8], [God|9] [Most High|10], [the possessor of|11] [heaven|12] [and earth|13],"
+  },
   "source": "ot",
   "verse": 22,
   "words": [
