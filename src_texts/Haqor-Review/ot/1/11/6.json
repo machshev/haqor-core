@@ -236,17 +236,11 @@
     {
       "analysis": {
         "entry": {
-          "draft": {
-            "article_id": "l2",
-            "base": "264f99b3d7aef8fa0ed9c1016a012394f37bf73c1fdbdd840871abddbadac889",
-            "change": "Add Gen.9.15 as an example of the existing Hebrew sense “not” in word 0 of l2.",
-            "definition": "לֹא negates a statement, here a statement about the future.",
-            "evidence": "Gen.9.15 uses לֹא before יִהְיֶה in the promise that the waters will never again become a flood to destroy all flesh. Gen.9.11 uses the same construction in the same promise."
-          },
+          "existing": "l2",
           "sense": "not",
           "word": 0
         },
-        "evidence": "לֹא negates the following verb יִבָּצֵר, “will be beyond reach.” The clause predicts that nothing they plan to do will be beyond their reach.",
+        "evidence": "לֹא negates יִבָּצֵר in the prediction that nothing they plan to do will be beyond their reach.",
         "gloss": "not",
         "language": "he",
         "lemma": "לֹא",
@@ -255,7 +249,7 @@
         "qualifier": "",
         "root": "לא",
         "segments": "לֹא",
-        "sense": "Denies that a future event will occur."
+        "sense": "Negates a statement of fact."
       },
       "position": 12,
       "surface": "לֹא"
