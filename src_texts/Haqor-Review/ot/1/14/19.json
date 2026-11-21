@@ -1,6 +1,65 @@
 {
   "book": 1,
   "chapter": 14,
+  "review": {
+    "entities": [
+      {
+        "evidence": "Melchizedek blesses Abram, the son of Terah later named Abraham.",
+        "key": "Abraham@Gen.11.26",
+        "position": 3
+      },
+      {
+        "evidence": "אֵל names God in the title אֵל עֶלְיוֹן, which Abram applies to the LORD in Genesis 14:22.",
+        "key": "LORD@Gen.1.1",
+        "position": 4
+      },
+      {
+        "evidence": "עֶלְיוֹן means “Most High” and modifies אֵל in the same divine title.",
+        "key": "LORD@Gen.1.1",
+        "position": 5
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "and he blessed him",
+        "position": 0
+      },
+      {
+        "gloss": "and he said",
+        "position": 1
+      },
+      {
+        "gloss": "blessed",
+        "position": 2
+      },
+      {
+        "gloss": "Abram",
+        "position": 3
+      },
+      {
+        "gloss": "by God",
+        "position": 4
+      },
+      {
+        "gloss": "Most High",
+        "position": 5
+      },
+      {
+        "gloss": "possessor of",
+        "position": 6
+      },
+      {
+        "gloss": "heaven",
+        "position": 7
+      },
+      {
+        "gloss": "and earth",
+        "position": 8
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[And he blessed him|0] [and said|1], “[May|2] [Abram|3] [be blessed|2] [by God|4] [Most High|5], [the Possessor of|6] [heaven|7] [and earth|8]."
+  },
   "source": "ot",
   "verse": 19,
   "words": [
