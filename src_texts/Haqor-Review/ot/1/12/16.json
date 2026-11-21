@@ -201,6 +201,33 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article_id": "2aatwon",
+            "base": null,
+            "change": "Add a noun article for אָתוֹן with the sense “female donkey.”",
+            "definition": "A female donkey.",
+            "evidence": "Genesis 12:16 lists female donkeys among Abram’s possessions. Genesis 32:16 distinguishes them from male donkeys in a counted herd."
+          },
+          "sense": "female-donkey",
+          "word": 0
+        },
+        "evidence": "The phrase וַיְהִי לוֹ introduces a list of what Abram possessed. The list names חֲמֹרִים earlier and then counts אֲתֹנֹת separately, immediately before the camels. Genesis 32:16 makes the sex distinction explicit by pairing twenty אֲתֹנֹת with ten עְיָרִם.",
+        "gloss": "and female donkeys",
+        "language": "he",
+        "lemma": "אָתוֹן",
+        "morph": "HC/Ncfpa",
+        "morphology": "The conjunction וַ־ means “and.” אֲתֹנֹת is the feminine plural absolute of the common noun אָתוֹן.",
+        "qualifier": "",
+        "root": "אתנ",
+        "segments": "וַ/אֲתֹנֹת",
+        "sense": "female donkey"
+      },
+      "position": 10,
+      "surface": "וַאֲתֹנֹת"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "gml",
           "sense": "camels-as-wealth",
           "word": 0
