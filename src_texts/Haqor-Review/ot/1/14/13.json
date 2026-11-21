@@ -1,6 +1,121 @@
 {
   "book": 1,
   "chapter": 14,
+  "review": {
+    "entities": [
+      {
+        "evidence": "The fugitive reports to Abram, the son of Terah later named Abraham.",
+        "key": "Abraham@Gen.11.26",
+        "position": 3
+      },
+      {
+        "evidence": "The designation “the Hebrew” identifies Abram by his people.",
+        "key": "Hebrews@Gen.14.13",
+        "position": 4
+      },
+      {
+        "evidence": "The verse calls Mamre the Amorite and names Eshcol and Aner as his brothers.",
+        "key": "Mamre@Gen.14.13",
+        "position": 8
+      },
+      {
+        "evidence": "The designation “the Amorite” identifies Mamre by his people.",
+        "key": "Amorites@Gen.10.16",
+        "position": 9
+      },
+      {
+        "evidence": "The phrase אֲחִי אֶשְׁכֹּל identifies Mamre as Eshcol’s brother.",
+        "key": "Eshcol@Gen.14.13",
+        "position": 11
+      },
+      {
+        "evidence": "The parallel phrase וַאֲחִי עָנֵר identifies Mamre as Aner’s brother.",
+        "key": "Aner@Gen.14.13",
+        "position": 13
+      },
+      {
+        "evidence": "The three brothers have a covenant with the same Abram who receives the report.",
+        "key": "Abraham@Gen.11.26",
+        "position": 17
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "then he came",
+        "position": 0
+      },
+      {
+        "gloss": "the one who escaped",
+        "position": 1
+      },
+      {
+        "gloss": "and he reported",
+        "position": 2
+      },
+      {
+        "gloss": "to Abram",
+        "position": 3
+      },
+      {
+        "gloss": "the Hebrew",
+        "position": 4
+      },
+      {
+        "gloss": "now he",
+        "position": 5
+      },
+      {
+        "gloss": "was living",
+        "position": 6
+      },
+      {
+        "gloss": "by the terebinths of",
+        "position": 7
+      },
+      {
+        "gloss": "Mamre",
+        "position": 8
+      },
+      {
+        "gloss": "the Amorite",
+        "position": 9
+      },
+      {
+        "gloss": "brother of",
+        "position": 10
+      },
+      {
+        "gloss": "Eshcol",
+        "position": 11
+      },
+      {
+        "gloss": "and brother of",
+        "position": 12
+      },
+      {
+        "gloss": "Aner",
+        "position": 13
+      },
+      {
+        "gloss": "and they",
+        "position": 14
+      },
+      {
+        "gloss": "parties to",
+        "position": 15
+      },
+      {
+        "gloss": "a covenant with",
+        "position": 16
+      },
+      {
+        "gloss": "Abram",
+        "position": 17
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[Then|0] [the one who escaped|1] [came|0] [and reported|2] [to Abram|3] [the Hebrew|4]. [Now he|5] [was living|6] [by the terebinths of|7] [Mamre|8] [the Amorite|9], [brother of|10] [Eshcol|11] [and brother of|12] [Aner|13], [and they|14] {were} [parties to|15] [a covenant with|16] [Abram|17]."
+  },
   "source": "ot",
   "verse": 13,
   "words": [
@@ -180,27 +295,6 @@
       "analysis": {
         "entry": {
           "draft": {
-            "article": {
-              "created": "2026-11-21",
-              "english": "Mamre",
-              "entry": "",
-              "evidence": [
-                {
-                  "note": "The verse calls Mamre הָאֱמֹרִי, “the Amorite,” names Eshcol and Aner as his brothers, and describes them as Abram’s covenant allies.",
-                  "ref": "Gen.14.13",
-                  "role": "defining"
-                }
-              ],
-              "gloss": "Mamre",
-              "id": "mameree2",
-              "name": "מַמְרֵא",
-              "note": "",
-              "people": [],
-              "root": "",
-              "status": "draft",
-              "summary": "Mamre is an Amorite, brother of Eshcol and Aner. Abram camps among his terebinths. The derivation of his name is uncertain.",
-              "updated": "2026-11-21"
-            },
             "article_id": "mameree2",
             "base": null,
             "change": "Add a personal-name article for the man identified in Genesis 14:13. The existing place-name sense covers the locality at Hebron in Genesis 13:18.",
@@ -275,37 +369,6 @@
       "analysis": {
         "entry": {
           "draft": {
-            "article": {
-              "bdb": [
-                "a.gd.am"
-              ],
-              "created": "2026-11-21",
-              "english": "Eshcol",
-              "entry": "",
-              "evidence": [
-                {
-                  "note": "Mamre is called “brother of Eshcol and brother of Aner.” The men are identified as Abram’s covenant partners.",
-                  "ref": "Gen.14.13",
-                  "role": "defining"
-                },
-                {
-                  "note": "Abram names Aner, Eshcol and Mamre as the men who went with him.",
-                  "ref": "Gen.14.24"
-                },
-                {
-                  "note": "The verse explains the place name Valley of Eshcol by the cluster of grapes cut there, illustrating the meaning of the matching common noun.",
-                  "ref": "Num.13.24"
-                }
-              ],
-              "gloss": "cluster of grapes",
-              "id": "2aexekkol",
-              "name": "אֶשְׁכֹּל",
-              "people": [],
-              "root": "",
-              "status": "draft",
-              "summary": "Eshcol is Mamre’s brother and one of Abram’s allies. His name has the same form as the Hebrew noun for a cluster of grapes. Genesis gives no explanation for his personal name.",
-              "updated": "2026-11-21"
-            },
             "article_id": "2aexekkol",
             "base": null,
             "change": "Add a personal-name article. The source gloss “young camel” has no support in the verse, and the source root אשה has no established connection to the name.",
@@ -353,26 +416,6 @@
       "analysis": {
         "entry": {
           "draft": {
-            "article": {
-              "created": "2026-11-21",
-              "english": "Aner",
-              "entry": "",
-              "evidence": [
-                {
-                  "note": "וַאֲחִי עָנֵר identifies Aner as Mamre’s brother, and בַּעֲלֵי בְרִית אַבְרָם identifies the men as Abram’s covenant partners.",
-                  "ref": "Gen.14.13",
-                  "role": "defining"
-                }
-              ],
-              "gloss": "Aner, brother of Mamre",
-              "id": "3aaneer",
-              "name": "עָנֵר",
-              "people": [],
-              "root": "",
-              "status": "draft",
-              "summary": "Mamre is called the brother of Eshcol and Aner. The three men are covenant partners of Abram. The meaning of Aner’s name is uncertain.",
-              "updated": "2026-11-21"
-            },
             "article_id": "3aaneer",
             "base": null,
             "change": "Add a personal-name article for עָנֵר. Leave its root unassigned because the derivation is uncertain.",
