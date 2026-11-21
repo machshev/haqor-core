@@ -245,6 +245,52 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article": {
+              "created": "2026-11-21",
+              "english": "Haran",
+              "entry": "",
+              "evidence": [
+                {
+                  "note": "After listing Haran among Terah’s sons, the genealogy says וְהָרָן הוֹלִיד אֶת לוֹט, “and Haran fathered Lot.”",
+                  "ref": "Gen.11.27",
+                  "role": "defining"
+                }
+              ],
+              "gloss": "Haran",
+              "id": "haaraan",
+              "name": "הָרָן",
+              "people": [],
+              "root": "",
+              "status": "draft",
+              "summary": "Genesis 11:27 names Haran alongside Abram and Nahor as a son of Terah. It then identifies him as the father of Lot.",
+              "updated": "2026-11-21"
+            },
+            "article_id": "haaraan",
+            "base": null,
+            "change": "Add a personal-name article for הָרָן with the etymology left open.",
+            "definition": "Haran, the personal name borne here by Terah’s son and Lot’s father.",
+            "evidence": "Genesis 11:27 identifies Haran through both family relationships. The verse gives no derivation for his name."
+          },
+          "word": 0
+        },
+        "evidence": "Terah’s sons are listed as Abram, Nahor and Haran. The marked occurrence repeats the last son’s name as the subject of וְהָרָן הוֹלִיד אֶת לוֹט, “and Haran fathered Lot.”",
+        "gloss": "and Haran",
+        "language": "he",
+        "lemma": "הָרָן",
+        "morph": "HC/Np",
+        "morphology": "The conjunction וְ joins the clauses. The personal name הָרָן is the subject of הוֹלִיד, “fathered.”",
+        "qualifier": "",
+        "root": "",
+        "segments": "וְ/הָרָן",
+        "sense": "Haran, son of Terah and father of Lot"
+      },
+      "position": 11,
+      "surface": "וְהָרָן"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "yld",
           "sense": "beget",
           "word": 0
