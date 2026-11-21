@@ -1,28 +1,63 @@
 {
+  "cognates": [
+    {
+      "evidence": [
+        {
+          "locator": "s.v. גְּוִיְיתָא, Targum Genesis 7:23",
+          "source": "jastrow-1903"
+        }
+      ],
+      "form": "גְּוִיְיתָא",
+      "gloss": "body",
+      "id": "arc-gewiyta",
+      "lang": "arc",
+      "relation": "cognate",
+      "translit": "gəwīṯā"
+    }
+  ],
+  "created": "2026-11-19",
+  "doctrine": [],
+  "gloss": "nation, body, back, midst",
   "id": "gwh",
+  "note": "The suggestion that a nation was originally conceived as a body is uncertain. The pride noun may belong with elevation. The key c.bb.af refers to the Goyim ruled by Tidal and is not assigned to the common noun. In 1 Samuel 31 the difference between the living body and a corpse is supplied by the narrative. גֵּו back and midst overlap in surface counts but have distinct senses. SEDRA lexemes 526–529 account for the Syriac forms under גו.",
   "root": "גוה",
   "status": "draft",
-  "created": "2026-11-19",
-  "updated": "2026-11-19",
+  "summary": "A nation is a people with a common identity. The word can name Israel or the peoples around it. Related spellings refer to a physical body, its back, and the space within something.",
   "tags": [
     "nations",
     "body"
   ],
-  "gloss": "nation, body, back, midst",
-  "summary": "A nation is a people with a common identity. The word can name Israel or the peoples around it. Related spellings refer to a physical body, its back, and the space within something.",
+  "updated": "2026-11-21",
   "words": [
     {
-      "lemma": "גּוֹי",
       "bdb": [
         "c.ba.ag",
         "c.bb.ad"
       ],
-      "pos": "noun",
+      "gender": "m",
       "gloss": "nation, people",
+      "greek": [
+        {
+          "evidence": [
+            {
+              "ref": "Act.4.25"
+            },
+            {
+              "ref": "Rom.15.9"
+            },
+            {
+              "locator": "Psalm 2:1, גוֹיִם and ἔθνη",
+              "source": "macula-lxx"
+            }
+          ],
+          "gloss": "nation",
+          "lemma": "ἔθνος"
+        }
+      ],
+      "lemma": "גּוֹי",
+      "pos": "noun",
       "senses": [
         {
-          "id": "a-people-counted-as",
-          "gloss": "a people counted as a nation",
           "definition": "Genesis distinguishes nations by land, language and family. Israel itself is called a holy nation when Yahweh describes its calling at Sinai.",
           "evidence": [
             {
@@ -39,17 +74,17 @@
             {
               "ref": "Deu.4.7"
             }
-          ]
+          ],
+          "gloss": "a people counted as a nation",
+          "id": "a-people-counted-as"
         },
         {
-          "id": "the-nations-surrounding-israel",
-          "gloss": "the nations surrounding Israel",
           "definition": "Other peoples are addressed collectively when the psalms speak of the nations assembling against Yahweh, receiving the king’s rule or hearing praise of Yahweh among them.",
           "evidence": [
             {
               "ref": "Psa.2.1",
-              "to": "Psa.2.2",
-              "role": "defining"
+              "role": "defining",
+              "to": "Psa.2.2"
             },
             {
               "ref": "Psa.2.8"
@@ -66,54 +101,39 @@
             {
               "ref": "Act.4.25"
             }
-          ]
+          ],
+          "gloss": "the nations surrounding Israel",
+          "id": "the-nations-surrounding-israel"
         },
         {
-          "id": "a-multitude-pictured-as",
-          "gloss": "a multitude pictured as an invading nation",
           "definition": "Joel likens the host that strips the vines and fig trees to a mighty people invading the land.",
           "evidence": [
             {
               "ref": "Jol.1.4",
-              "to": "Jol.1.7",
-              "role": "defining"
+              "role": "defining",
+              "to": "Jol.1.7"
             }
-          ]
+          ],
+          "gloss": "a multitude pictured as an invading nation",
+          "id": "a-multitude-pictured-as"
         }
       ],
-      "gender": "m",
-      "summary": "The nation and body words are filed together. Scripture does not explain the historical connection between them.",
-      "greek": [
-        {
-          "lemma": "ἔθνος",
-          "gloss": "nation",
-          "evidence": [
-            {
-              "ref": "Act.4.25"
-            },
-            {
-              "ref": "Rom.15.9"
-            },
-            {
-              "source": "macula-lxx",
-              "locator": "Psalm 2:1, גוֹיִם and ἔθνη"
-            }
-          ]
-        }
-      ]
+      "summary": "The nation and body words are filed together. Scripture does not explain the historical connection between them."
     },
     {
-      "lemma": "גְּוִיָּה",
       "bdb": [
         "c.ba.af",
         "c.bb.ae"
       ],
-      "pos": "noun",
+      "gender": "f",
       "gloss": "body, corpse",
+      "lemma": "גְּוִיָּה",
+      "pos": "noun",
       "senses": [
         {
-          "id": "a-living-body",
-          "gloss": "a living body",
+          "cognate_ids": [
+            "arc-gewiyta"
+          ],
           "definition": "In famine the Egyptians say that their bodies and their land are all they have left. Ezekiel describes the wings which cover the bodies of the living creatures.",
           "evidence": [
             {
@@ -124,42 +144,39 @@
               "ref": "Ezk.1.11"
             }
           ],
-          "cognate_ids": [
-            "arc-gewiyta"
-          ]
+          "gloss": "a living body",
+          "id": "a-living-body"
         },
         {
-          "id": "a-dead-body",
-          "gloss": "a dead body",
+          "cognate_ids": [
+            "arc-gewiyta"
+          ],
           "definition": "Saul’s body is fastened to the wall. Men of Jabesh recover his body and the bodies of his sons.",
           "evidence": [
             {
               "ref": "1Sa.31.10",
-              "to": "1Sa.31.12",
-              "role": "defining"
+              "role": "defining",
+              "to": "1Sa.31.12"
             },
             {
               "ref": "Jdg.14.8"
             }
           ],
-          "cognate_ids": [
-            "arc-gewiyta"
-          ]
+          "gloss": "a dead body",
+          "id": "a-dead-body"
         }
-      ],
-      "gender": "f"
+      ]
     },
     {
-      "lemma": "גֵּו",
       "bdb": [
         "c.ba.ac"
       ],
-      "pos": "noun",
+      "gender": "m",
       "gloss": "back",
+      "lemma": "גֵּו",
+      "pos": "noun",
       "senses": [
         {
-          "id": "back",
-          "gloss": "back",
           "definition": "The part of the body offered to those who strike. Casting sins behind one’s back pictures putting them out of sight.",
           "evidence": [
             {
@@ -172,45 +189,45 @@
             {
               "ref": "Isa.51.23"
             }
-          ]
+          ],
+          "gloss": "back",
+          "id": "back"
         }
-      ],
-      "gender": "m"
+      ]
     },
     {
-      "lemma": "גֵּו",
       "bdb": [
         "c.ba.ad"
       ],
-      "pos": "noun",
+      "gender": "m",
       "gloss": "midst",
+      "lemma": "גֵּו",
+      "pos": "noun",
       "senses": [
         {
-          "id": "midst",
-          "gloss": "midst",
           "definition": "Job describes men driven out from among others. This use of the noun as a place within a group is rare in Hebrew.",
           "evidence": [
             {
               "ref": "Job.30.5",
               "role": "defining"
             }
-          ]
+          ],
+          "gloss": "midst",
+          "id": "midst"
         }
-      ],
-      "gender": "m"
+      ]
     },
     {
-      "lemma": "גַּו",
       "bdb": [
         "c.ba.ab",
         "c.ax.ab"
       ],
-      "pos": "noun",
+      "gender": "m",
       "gloss": "back",
+      "lemma": "גַּו",
+      "pos": "noun",
       "senses": [
         {
-          "id": "back-2",
-          "gloss": "back",
           "definition": "Casting someone or something behind one’s back expresses rejection or neglect. Israel casts Yahweh’s teaching behind its back.",
           "evidence": [
             {
@@ -223,137 +240,138 @@
             {
               "ref": "Ezk.23.35"
             }
-          ]
+          ],
+          "gloss": "back",
+          "id": "back-2"
         }
-      ],
-      "gender": "m"
+      ]
     },
     {
-      "lemma": "גֵּוָה",
       "bdb": [
         "c.ba.ae"
       ],
-      "pos": "noun",
+      "gender": "f",
       "gloss": "body or back",
+      "lemma": "גֵּוָה",
+      "pos": "noun",
       "senses": [
         {
-          "id": "body-or-back",
-          "gloss": "body or back",
           "definition": "Job describes a weapon pulled out of the body, its bright point coming from the liver. This single use leaves the exact part of the body uncertain.",
           "evidence": [
             {
               "ref": "Job.20.25",
               "role": "defining"
             }
-          ]
+          ],
+          "gloss": "body or back",
+          "id": "body-or-back"
         }
-      ],
-      "gender": "f"
+      ]
     },
     {
-      "lemma": "גַּו",
       "bdb": [
         "xc.ac.ab"
       ],
-      "pos": "noun",
+      "gender": "m",
       "gloss": "midst, inside",
+      "lang": "arc",
+      "lemma": "גַּו",
+      "pos": "noun",
+      "root": "גו",
       "senses": [
         {
-          "id": "midst-inside",
-          "gloss": "midst, inside",
           "definition": "The men are thrown into the furnace. The king sees four walking within the fire.",
           "evidence": [
             {
               "ref": "Dan.3.21",
-              "to": "Dan.3.25",
-              "role": "defining"
+              "role": "defining",
+              "to": "Dan.3.25"
             }
-          ]
+          ],
+          "gloss": "midst, inside",
+          "id": "midst-inside"
         }
-      ],
-      "lang": "arc",
-      "root": "גו",
-      "gender": "m"
+      ]
     },
     {
-      "lemma": "גֵּוָה",
       "bdb": [
         "xc.aa.ab"
       ],
-      "pos": "noun",
+      "gender": "f",
       "gloss": "pride",
+      "lang": "arc",
+      "lemma": "גֵּוָה",
+      "pos": "noun",
       "senses": [
         {
-          "id": "pride",
-          "gloss": "pride",
           "definition": "Nebuchadnezzar acknowledges that the King of heaven can humble those who walk in pride. Its link to the body words is uncertain.",
           "evidence": [
             {
               "ref": "Dan.4.34",
               "role": "defining"
             }
-          ]
+          ],
+          "gloss": "pride",
+          "id": "pride"
         }
-      ],
-      "lang": "arc",
-      "gender": "f"
+      ]
     },
     {
-      "lemma": "גַּו",
       "bdb": [],
-      "pos": "preposition",
       "gloss": "within",
+      "lang": "syc",
+      "lemma": "גַּו",
+      "pos": "preposition",
+      "root": "גו",
       "senses": [
         {
-          "id": "within",
-          "gloss": "within",
           "definition": "Jesus locates the source of evil thoughts within, in the human heart.",
           "evidence": [
             {
               "ref": "Mrk.7.21",
-              "to": "Mrk.7.23",
-              "role": "defining"
+              "role": "defining",
+              "to": "Mrk.7.23"
             },
             {
               "ref": "Mat.23.28"
             }
-          ]
+          ],
+          "gloss": "within",
+          "id": "within"
         }
-      ],
-      "lang": "syc",
-      "root": "גו"
+      ]
     },
     {
-      "lemma": "גַּוָּא",
       "bdb": [],
-      "pos": "noun",
+      "gender": "m",
       "gloss": "inside",
+      "lang": "syc",
+      "lemma": "גַּוָּא",
+      "pos": "noun",
+      "root": "גו",
       "senses": [
         {
-          "id": "inside",
-          "gloss": "inside",
           "definition": "Jesus speaks of cleaning the inside of a cup so that the outside too may be clean.",
           "evidence": [
             {
               "ref": "Mat.23.26",
               "role": "defining"
             }
-          ]
+          ],
+          "gloss": "inside",
+          "id": "inside"
         }
-      ],
-      "lang": "syc",
-      "root": "גו",
-      "gender": "m"
+      ]
     },
     {
-      "lemma": "גַּוָּיָא",
       "bdb": [],
-      "pos": "adjective",
       "gloss": "inner, interior",
+      "lang": "syc",
+      "lemma": "גַּוָּיָא",
+      "pos": "adjective",
+      "root": "גו",
       "senses": [
         {
-          "id": "inner",
-          "gloss": "inner",
           "definition": "The jailer puts the apostles in the inner prison. Hebrews describes the sanctuary beyond the second curtain.",
           "evidence": [
             {
@@ -363,51 +381,57 @@
             {
               "ref": "Heb.9.3"
             }
-          ]
+          ],
+          "gloss": "inner",
+          "id": "inner"
         }
-      ],
-      "lang": "syc",
-      "root": "גו"
+      ]
     },
     {
-      "lemma": "גּוָיָא",
       "bdb": [],
-      "pos": "noun",
+      "gender": "m",
       "gloss": "entrails",
+      "lang": "syc",
+      "lemma": "גּוָיָא",
+      "pos": "noun",
+      "root": "גו",
       "senses": [
         {
-          "id": "entrails",
-          "gloss": "entrails",
           "definition": "Acts describes the entrails spilling out when Judas falls.",
           "evidence": [
             {
               "ref": "Act.1.18",
               "role": "defining"
             }
-          ]
+          ],
+          "gloss": "entrails",
+          "id": "entrails"
         }
-      ],
-      "lang": "syc",
-      "root": "גו",
-      "gender": "m"
-    }
-  ],
-  "cognates": [
+      ]
+    },
     {
-      "id": "arc-gewiyta",
-      "lang": "arc",
-      "form": "גְּוִיְיתָא",
-      "translit": "gəwīṯā",
-      "gloss": "body",
-      "relation": "cognate",
-      "evidence": [
+      "bdb": [
+        "c.bb.af"
+      ],
+      "gloss": "Goyim",
+      "lemma": "גּוֹיִם",
+      "pos": "name",
+      "senses": [
         {
-          "source": "jastrow-1903",
-          "locator": "s.v. גְּוִיְיתָא, Targum Genesis 7:23"
+          "definition": "Goyim designates Tidal’s realm in the title מֶלֶךְ גּוֹיִם. The name has the form of the Hebrew plural meaning “nations.”",
+          "evidence": [
+            {
+              "ref": "Gen.14.1",
+              "role": "defining"
+            },
+            {
+              "ref": "Gen.14.9"
+            }
+          ],
+          "gloss": "the realm ruled by Tidal",
+          "id": "realm-of-tidal"
         }
       ]
     }
-  ],
-  "doctrine": [],
-  "note": "The suggestion that a nation was originally conceived as a body is uncertain. The pride noun may belong with elevation. The key c.bb.af refers to the Goyim ruled by Tidal and is not assigned to the common noun. In 1 Samuel 31 the difference between the living body and a corpse is supplied by the narrative. גֵּו back and midst overlap in surface counts but have distinct senses. SEDRA lexemes 526–529 account for the Syriac forms under גו."
+  ]
 }
