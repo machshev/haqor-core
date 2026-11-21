@@ -131,6 +131,10 @@
               "to": "Exo.3.15"
             },
             {
+              "ref": "Exo.3.13",
+              "to": "Exo.3.15"
+            },
+            {
               "note": "The man gives names to the creatures brought before him.",
               "ref": "Gen.2.19"
             },
@@ -155,7 +159,7 @@
               "ref": "Gen.5.29"
             },
             {
-              "note": "After giving Peleg’s name, וְשֵׁם אָחִיו יָקְטָן gives that name as Joktan’s brother.",
+              "note": "After giving Peleg’s name, וְשֵׁם אָחִיו יָקְטָן gives his brother’s name as Joktan.",
               "ref": "Gen.10.25",
               "role": "defining"
             }
@@ -395,14 +399,14 @@
               "definition": "The Peshitta uses the verb in the account of Joseph called Barsabbas. Hebrews describes Jesus as being designated a high priest by God.",
               "evidence": [
                 {
-                  "ref": "Act.1.23",
+                  "ref": "Act.2.23",
                   "role": "defining"
                 },
                 {
                   "ref": "Heb.5.10"
                 }
               ],
-              "gloss": "be-called-or-designated",
+              "gloss": "be called or designated",
               "id": "be-called-or-designated"
             }
           ],
@@ -422,7 +426,8 @@
           "definition": "The census names the clan descended from Shemida among the descendants of Manasseh.",
           "evidence": [
             {
-              "ref": "Num.26.32"
+              "ref": "Num.26.32",
+              "role": "defining"
             }
           ],
           "gloss": "Shemidaite",
