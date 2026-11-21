@@ -99,7 +99,13 @@
     {
       "analysis": {
         "entry": {
-          "existing": "mn",
+          "draft": {
+            "article_id": "mn",
+            "base": "d2a600155cef4ca00e7cca7c10480f3068994219d82eee609f004ed9817ab868",
+            "change": "Associate the occurrence with the current revision of mn. Its Hebrew partitive sense already cites this occurrence.",
+            "definition": "Introduces a group from which particular members are taken or identified.",
+            "evidence": "Genesis 7:8–9 identifies the pairs that came from among the unclean animals."
+          },
           "sense": "min-some-of",
           "word": 0
         },
@@ -112,7 +118,7 @@
         "qualifier": "",
         "root": "מנ",
         "segments": "מִן",
-        "sense": "Partitive, marking an unspecified portion of a whole."
+        "sense": "some of, (one) of, any of"
       },
       "position": 1,
       "surface": "מִן"
