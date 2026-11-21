@@ -61,7 +61,61 @@
         "position": 9
       }
     ],
-    "name_review_base": null,
+    "name_review_base": [
+      {
+        "key": null,
+        "position": 0,
+        "surface": "וַיִּהְיוּ"
+      },
+      {
+        "key": null,
+        "position": 1,
+        "surface": "יְמֵי"
+      },
+      {
+        "evidence": "The days counted are those of Terah, Abram’s father, who settled in Haran in Genesis 11:31.",
+        "key": "Terah@Gen.11.24",
+        "position": 2,
+        "surface": "תֶרַח"
+      },
+      {
+        "key": null,
+        "position": 3,
+        "surface": "חָמֵשׁ"
+      },
+      {
+        "key": null,
+        "position": 4,
+        "surface": "שָׁנִים"
+      },
+      {
+        "key": null,
+        "position": 5,
+        "surface": "וּמָאתַיִם"
+      },
+      {
+        "key": null,
+        "position": 6,
+        "surface": "שָׁנָה"
+      },
+      {
+        "key": null,
+        "position": 7,
+        "surface": "וַיָּמָת"
+      },
+      {
+        "evidence": "The death clause repeats the name of the man whose lifespan opens the verse.",
+        "key": "Terah@Gen.11.24",
+        "position": 8,
+        "surface": "תֶּרַח"
+      },
+      {
+        "evidence": "The preposition בְּ marks חָרָן as the place where Terah died, the same place where his household settled in Genesis 11:31.",
+        "key": "Haran@Gen.11.31",
+        "position": 9,
+        "surface": "בְּחָרָן"
+      }
+    ],
     "translation": "[And|0] [the days of|1] [Terah|2] [were|0] [205|3,5] [years|4,6]. [Then|7] [Terah|8] [died|7] [in Haran|9]."
   },
   "source": "ot",
