@@ -75,7 +75,68 @@
         "position": 10
       }
     ],
-    "name_review_base": null,
+    "name_review_base": [
+      {
+        "evidence": "מַלְכִּי begins the personal name of the king of Salem who brought out bread and wine.",
+        "key": "Melchizedek@Gen.14.18",
+        "position": 0,
+        "surface": "וּמַלְכִּי"
+      },
+      {
+        "evidence": "צֶדֶק completes the same king’s name, מַלְכִּי צֶדֶק.",
+        "key": "Melchizedek@Gen.14.18",
+        "position": 1,
+        "surface": "צֶדֶק"
+      },
+      {
+        "key": null,
+        "position": 2,
+        "surface": "מֶלֶךְ"
+      },
+      {
+        "evidence": "שָׁלֵם names the city Melchizedek rules. The source identifies Salem with the Jerusalem record.",
+        "key": "Jerusalem@Gen.14.18",
+        "position": 3,
+        "surface": "שָׁלֵם"
+      },
+      {
+        "key": null,
+        "position": 4,
+        "surface": "הוֹצִיא"
+      },
+      {
+        "key": null,
+        "position": 5,
+        "surface": "לֶחֶם"
+      },
+      {
+        "key": null,
+        "position": 6,
+        "surface": "וָיָיִן"
+      },
+      {
+        "key": null,
+        "position": 7,
+        "surface": "וְהוּא"
+      },
+      {
+        "key": null,
+        "position": 8,
+        "surface": "כֹהֵן"
+      },
+      {
+        "evidence": "אֵל begins the divine designation אֵל עֶלְיוֹן, God Most High, whom Melchizedek serves as priest.",
+        "key": "LORD@Gen.1.1",
+        "position": 9,
+        "surface": "לְאֵל"
+      },
+      {
+        "evidence": "עֶלְיוֹן qualifies אֵל as Most High, completing the designation of the same God.",
+        "key": "LORD@Gen.1.1",
+        "position": 10,
+        "surface": "עֶלְיוֹן"
+      }
+    ],
     "translation": "[Then Melchizedek|0,1], [the king of|2] [Salem|3], [brought out|4] [bread|5] [and wine|6]. [And he|7] {was} [a priest|8] [of God|9] [Most High|10]."
   },
   "source": "ot",
