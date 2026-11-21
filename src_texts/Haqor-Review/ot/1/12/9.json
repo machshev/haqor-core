@@ -1,6 +1,44 @@
 {
   "book": 1,
   "chapter": 12,
+  "review": {
+    "entities": [
+      {
+        "evidence": "Abram, the traveler in this verse, is the son of Terah later named Abraham.",
+        "key": "Abraham@Gen.11.26",
+        "position": 1
+      },
+      {
+        "evidence": "The definite article and directional ending in הַנֶּגְבָּה identify the Negev as the region toward which Abram traveled.",
+        "key": "Negeb@Gen.12.9",
+        "position": 4
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "and he set out",
+        "position": 0
+      },
+      {
+        "gloss": "Abram",
+        "position": 1
+      },
+      {
+        "gloss": "continually",
+        "position": 2
+      },
+      {
+        "gloss": "and journeying on",
+        "position": 3
+      },
+      {
+        "gloss": "toward the Negev",
+        "position": 4
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[Then|0] [Abram|1] [set out|0] [and|3] [continued|2] [to travel|3] [toward the Negev|4]."
+  },
   "source": "ot",
   "verse": 9,
   "words": [
