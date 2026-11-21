@@ -160,6 +160,33 @@
       "analysis": {
         "entry": {
           "draft": {
+            "article_id": "l",
+            "base": "6ac40073ef9ccd97582af45ace1e9a2b6435d5a40a5839de65f5d1b532578b2f",
+            "change": "Add Genesis 13:1 as an example of the existing le-belongs sense of Hebrew לְ.",
+            "definition": "לְ marks the person to whom something belongs.",
+            "evidence": "Genesis 13:1 repeats כָּל אֲשֶׁר לוֹ from Genesis 12:20. In both verses the suffix refers to Abram."
+          },
+          "sense": "le-belongs",
+          "word": 0
+        },
+        "evidence": "In וְכָל אֲשֶׁר לוֹ, “and all that belonged to him,” לוֹ is the predicate of the relative clause. Its suffix identifies Abram as the owner. Genesis 12:20 uses the same phrase for what Abram took with him.",
+        "gloss": "belonged to him",
+        "language": "he",
+        "lemma": "לְ",
+        "morph": "HR/Sp3ms",
+        "morphology": "The preposition לְ takes the third-person masculine singular pronominal suffix וֹ, referring to Abram.",
+        "qualifier": "",
+        "root": "ל",
+        "segments": "ל/וֹ",
+        "sense": "Marks the possessor in a clause expressing ownership."
+      },
+      "position": 7,
+      "surface": "לוֹ"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
             "article": {
               "created": "2026-11-21",
               "english": "Lot",
