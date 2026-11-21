@@ -131,6 +131,33 @@
       "analysis": {
         "entry": {
           "draft": {
+            "article_id": "2t",
+            "base": "2b2dddf898a5e47bf9d661e86e6bb0971f180f831fa3441a6ba596becfca08bb",
+            "change": "Add Genesis 15:11 to the evidence for object-pronoun under the Hebrew particle at word index 0.",
+            "definition": "With a pronominal suffix, אֵת expresses the verb’s direct object. Here אֹתָם means “them.”",
+            "evidence": "Genesis 15:11 uses אֹתָם for the birds Abram drove away after they descended on the carcasses."
+          },
+          "sense": "object-pronoun",
+          "word": 0
+        },
+        "evidence": "In וַיַּשֵּׁב אֹתָם אַבְרָם, “Abram drove them away,” Abram is the subject. The plural suffix refers to the individual birds denoted collectively by הָעַיִט that had descended on the carcasses.",
+        "gloss": "them",
+        "language": "he",
+        "lemma": "אֵת",
+        "morph": "HTo/Sp3mp",
+        "morphology": "The Hebrew direct-object particle takes the form אֹת־ before the third-person masculine plural suffix ־ָם. Together they express the direct object “them.”",
+        "qualifier": "particle",
+        "root": "את",
+        "segments": "אֹת/ָם",
+        "sense": "Carries a pronominal suffix identifying the birds of prey as the direct object."
+      },
+      "position": 5,
+      "surface": "אֹתָם"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
             "article_id": "2aberaam",
             "base": "a1d7decbc7705af633d410cfac35cc517fee041858c7caab48226f2c78e353db",
             "change": "Link the existing Abram article to אבה through its father element and add Genesis 12:4 as an example.",
