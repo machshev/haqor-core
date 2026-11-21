@@ -39,7 +39,7 @@
         "position": 11
       },
       {
-        "evidence": "Tidal’s royal title names the Goiim as those he ruled, matching the tagged Goiim record.",
+        "evidence": "Tidal’s royal title names the Goiim as the people he ruled, matching the tagged Goiim record.",
         "key": "Goiim@Gen.14.1",
         "position": 13
       }
@@ -102,7 +102,86 @@
         "position": 13
       }
     ],
-    "name_review_base": null,
+    "name_review_base": [
+      {
+        "key": null,
+        "position": 0,
+        "surface": "וַיְהִי"
+      },
+      {
+        "key": null,
+        "position": 1,
+        "surface": "בִּימֵי"
+      },
+      {
+        "evidence": "The title “king of Shinar” identifies Amraphel.",
+        "key": "Amraphel@Gen.14.1",
+        "position": 2,
+        "surface": "אַמְרָפֶל"
+      },
+      {
+        "key": null,
+        "position": 3,
+        "surface": "מֶלֶךְ"
+      },
+      {
+        "evidence": "Shinar is the land ruled by Amraphel.",
+        "key": "Shinar@Gen.10.10",
+        "position": 4,
+        "surface": "שִׁנְעָר"
+      },
+      {
+        "evidence": "This Arioch is the king of Ellasar named alongside Amraphel.",
+        "key": "Arioch@Gen.14.1",
+        "position": 5,
+        "surface": "אַרְיוֹךְ"
+      },
+      {
+        "key": null,
+        "position": 6,
+        "surface": "מֶלֶךְ"
+      },
+      {
+        "evidence": "Ellasar is the realm named in Arioch’s title.",
+        "key": "Ellasar@Gen.14.1",
+        "position": 7,
+        "surface": "אֶלָּסָר"
+      },
+      {
+        "evidence": "The title “king of Elam” identifies Chedorlaomer.",
+        "key": "Chedorlaomer@Gen.14.1",
+        "position": 8,
+        "surface": "כְּדָרְלָעֹמֶר"
+      },
+      {
+        "key": null,
+        "position": 9,
+        "surface": "מֶלֶךְ"
+      },
+      {
+        "evidence": "Elam is the kingdom ruled by Chedorlaomer.",
+        "key": "Elam@Gen.14.1",
+        "position": 10,
+        "surface": "עֵילָם"
+      },
+      {
+        "evidence": "The title “king of the Goiim” identifies Tidal, the fourth king in the list.",
+        "key": "Tidal@Gen.14.1",
+        "position": 11,
+        "surface": "וְתִדְעָל"
+      },
+      {
+        "key": null,
+        "position": 12,
+        "surface": "מֶלֶךְ"
+      },
+      {
+        "evidence": "Tidal’s royal title names the Goiim as those he ruled, matching the tagged Goiim record.",
+        "key": "Goiim@Gen.14.1",
+        "position": 13,
+        "surface": "גּוֹיִם"
+      }
+    ],
     "translation": "[Now it happened|0] [in the days of|1] [Amraphel|2] [king of|3] [Shinar|4], [Arioch|5] [king of|6] [Ellasar|7], [Chedorlaomer|8] [king of|9] [Elam|10], [and Tidal|11] [king of|12] [the Goiim|13],"
   },
   "source": "ot",
