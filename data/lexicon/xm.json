@@ -99,38 +99,6 @@
               "to": "Exo.3.15"
             },
             {
-              "ref": "Gen.2.14",
-              "role": "defining"
-            },
-            {
-              "ref": "Exo.3.13",
-              "to": "Exo.3.15"
-            },
-            {
-              "ref": "Exo.3.13",
-              "to": "Exo.3.15"
-            },
-            {
-              "ref": "Exo.3.13",
-              "to": "Exo.3.15"
-            },
-            {
-              "ref": "Exo.3.13",
-              "to": "Exo.3.15"
-            },
-            {
-              "ref": "Exo.3.13",
-              "to": "Exo.3.15"
-            },
-            {
-              "ref": "Exo.3.13",
-              "to": "Exo.3.15"
-            },
-            {
-              "ref": "Exo.3.13",
-              "to": "Exo.3.15"
-            },
-            {
               "note": "The man gives names to the creatures brought before him.",
               "ref": "Gen.2.19"
             },
@@ -180,8 +148,7 @@
               "role": "defining"
             },
             {
-              "ref": "Pro.22.1",
-              "role": "defining"
+              "ref": "Pro.22.1"
             },
             {
               "ref": "2Sa.7.9"
@@ -221,7 +188,7 @@
               "role": "example"
             },
             {
-              "note": "Abram returns to the altar he had made and there calls בְּשֵׁם יְהוָה, invoking Yahweh by name.",
+              "note": "Abram returns to the altar he had made and there calls בְּשֵׁם יַהְוֶה, invoking Yahweh by name.",
               "ref": "Gen.13.4",
               "role": "example"
             }
@@ -250,7 +217,7 @@
               "role": "defining"
             },
             {
-              "note": "The river waters the garden, and וּמִשָּׁם ‘and from there’ points back to the garden from which it divides.",
+              "note": "The river waters the garden, and וּמִשָּׁם ‘and from there’ points back to the garden as the place from which it divides.",
               "ref": "Gen.2.10",
               "role": "example"
             },
@@ -322,9 +289,6 @@
             {
               "ref": "Dan.2.20",
               "role": "defining"
-            },
-            {
-              "ref": "Ezr.7.18"
             },
             {
               "ref": "Ezr.5.1"
@@ -425,10 +389,11 @@
               "definition": "The Peshitta uses the verb in the account of Joseph called Barsabbas. Hebrews describes Jesus as being designated a high priest by God.",
               "evidence": [
                 {
-                  "ref": "Act.2.23"
+                  "ref": "Act.1.23",
+                  "role": "defining"
                 },
                 {
-                  "ref": "Heb.5.4"
+                  "ref": "Heb.5.10"
                 }
               ],
               "gloss": "be called or designated",
@@ -440,7 +405,9 @@
       ]
     },
     {
-      "bdb": [],
+      "bdb": [
+        "v.dv.ag"
+      ],
       "gloss": "Shemidaite",
       "lemma": "שְׁמִידָעִי",
       "pos": "adjective",
@@ -449,8 +416,7 @@
           "definition": "The census names the clan descended from Shemida among the descendants of Manasseh.",
           "evidence": [
             {
-              "ref": "Num.26.32",
-              "role": "defining"
+              "ref": "Num.26.32"
             }
           ],
           "gloss": "Shemidaite",
