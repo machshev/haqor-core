@@ -101,6 +101,33 @@
       "analysis": {
         "entry": {
           "draft": {
+            "article_id": "2t",
+            "base": "0f25b1b41fe0e950dc6307f28182a4d67ce4b389e4f07841f2b3d23b9304a0df",
+            "change": "Add Gen 14:12 as evidence for the existing definite-object sense of word 0.",
+            "definition": "Introduces a definite direct object, here a noun made definite by its possessive suffix.",
+            "evidence": "Gen 14:12 repeats the object marker before רְכֻשׁוֹ, coordinating Lot’s possessions with Lot as the things and person taken."
+          },
+          "sense": "definite-object",
+          "word": 0
+        },
+        "evidence": "In אֶת לוֹט וְאֶת רְכֻשׁוֹ, the repeated אֶת marks both Lot and his possessions as objects of “they took.” The possessive suffix on רְכֻשׁוֹ makes the second object definite.",
+        "gloss": "and [direct-object marker]",
+        "language": "he",
+        "lemma": "אֵת",
+        "morph": "HC/To",
+        "morphology": "The conjunction וְ, “and,” is prefixed to אֶת, the unsuffixed direct-object marker.",
+        "qualifier": "particle",
+        "root": "את",
+        "segments": "וְ/אֶת",
+        "sense": "Marks רְכֻשׁוֹ, “his possessions,” as the second definite direct object of וַיִּקְחוּ, “they took.”"
+      },
+      "position": 3,
+      "surface": "וְאֶת"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
             "article_id": "rkx",
             "base": null,
             "change": "Add the root רכש and its noun רְכוּשׁ for acquired possessions. The source’s personal-name gloss does not fit this occurrence.",
