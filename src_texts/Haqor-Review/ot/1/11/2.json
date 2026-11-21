@@ -1,6 +1,55 @@
 {
   "book": 1,
   "chapter": 11,
+  "review": {
+    "entities": [
+      {
+        "evidence": "בְּאֶרֶץ שִׁנְעָר locates the plain in Shinar, the same land in which Genesis 10:10 locates Babel.",
+        "key": "Shinar@Gen.10.10",
+        "position": 6
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "and it happened",
+        "position": 0
+      },
+      {
+        "gloss": "as they set out",
+        "position": 1
+      },
+      {
+        "gloss": "from the east",
+        "position": 2
+      },
+      {
+        "gloss": "and they found",
+        "position": 3
+      },
+      {
+        "gloss": "a plain",
+        "position": 4
+      },
+      {
+        "gloss": "in the land of",
+        "position": 5
+      },
+      {
+        "gloss": "Shinar",
+        "position": 6
+      },
+      {
+        "gloss": "and they settled",
+        "position": 7
+      },
+      {
+        "gloss": "there",
+        "position": 8
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[And it happened|0] [as they migrated|1] [from the east|2], [that they found|3] [a plain|4] [in the land of|5] [Shinar|6] [and settled|7] [there|8]."
+  },
   "source": "ot",
   "verse": 2,
   "words": [
