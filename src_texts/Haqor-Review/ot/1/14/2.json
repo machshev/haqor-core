@@ -70,6 +70,52 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article": {
+              "created": "2026-11-21",
+              "english": "Bera",
+              "entry": "",
+              "evidence": [
+                {
+                  "note": "The phrase בֶּרַע מֶלֶךְ סְדֹם identifies Bera by his title, king of Sodom.",
+                  "ref": "Gen.14.2",
+                  "role": "defining"
+                }
+              ],
+              "gloss": "Bera",
+              "id": "bbaera3",
+              "name": "בֶּרַע",
+              "people": [],
+              "root": "",
+              "status": "draft",
+              "summary": "Bera is named as king of Sodom among the kings facing war in Genesis 14:2. The meaning of his name is uncertain.",
+              "updated": "2026-11-21"
+            },
+            "article_id": "bbaera3",
+            "base": null,
+            "change": "Add a personal-name article for Bera. Leave the root unassigned because the verse gives no support for ברמ or the gloss “cry shrilly.”",
+            "definition": "Bera, the king of Sodom named in Genesis 14:2.",
+            "evidence": "Genesis 14:2 names בֶּרַע and immediately identifies him as מֶלֶךְ סְדֹם, “king of Sodom.”"
+          },
+          "word": 0
+        },
+        "evidence": "In בֶּרַע מֶלֶךְ סְדֹם, the title “king of Sodom” identifies Bera. The next phrase follows the same pattern with Birsha, king of Gomorrah. The verse establishes Bera’s identity but gives no derivation for his name.",
+        "gloss": "Bera",
+        "language": "he",
+        "lemma": "בֶּרַע",
+        "morph": "HNp",
+        "morphology": "Hebrew personal proper noun. The initial ב belongs to the name. The form has no prefix or suffix.",
+        "qualifier": "",
+        "root": "",
+        "segments": "בֶּרַע",
+        "sense": "The personal name of the king of Sodom."
+      },
+      "position": 3,
+      "surface": "בֶּרַע"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "mlk",
           "sense": "king",
           "word": 0
