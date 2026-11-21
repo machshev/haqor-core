@@ -1,6 +1,56 @@
 {
   "book": 1,
   "chapter": 11,
+  "review": {
+    "entities": [
+      {
+        "evidence": "The verse identifies Eber as Peleg’s father, matching the Eber named in Genesis 10:25.",
+        "key": "Eber@Gen.10.21",
+        "position": 1
+      },
+      {
+        "evidence": "Peleg is the son Eber fathered, matching the father-son relationship in Genesis 10:25.",
+        "key": "Peleg@Gen.10.25",
+        "position": 7
+      }
+    ],
+    "glosses": [
+      {
+        "gloss": "and he lived",
+        "position": 0
+      },
+      {
+        "gloss": "Eber",
+        "position": 1
+      },
+      {
+        "gloss": "four",
+        "position": 2
+      },
+      {
+        "gloss": "and thirty",
+        "position": 3
+      },
+      {
+        "gloss": "years",
+        "position": 4
+      },
+      {
+        "gloss": "then he fathered",
+        "position": 5
+      },
+      {
+        "gloss": "(marks the definite direct object)",
+        "position": 6
+      },
+      {
+        "gloss": "Peleg",
+        "position": 7
+      }
+    ],
+    "name_review_base": null,
+    "translation": "[And|0] [Eber|1] [lived|0] [thirty|3]-[four|2] [years|4], [then he fathered|5] [Peleg|7,6]."
+  },
   "source": "ot",
   "verse": 16,
   "words": [
