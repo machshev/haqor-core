@@ -152,6 +152,64 @@
     {
       "analysis": {
         "entry": {
+          "draft": {
+            "article": {
+              "bdb": [
+                "u.cm.af"
+              ],
+              "created": "2026-11-21",
+              "english": "Sarai",
+              "entry": "crh",
+              "evidence": [
+                {
+                  "note": "The verse explicitly gives Sarai as the name of Abram’s wife.",
+                  "ref": "Gen.11.29",
+                  "role": "defining"
+                },
+                {
+                  "note": "God identifies שָׂרַי as Abraham’s wife and gives her the name שָׂרָה.",
+                  "ref": "Gen.17.15",
+                  "role": "defining"
+                },
+                {
+                  "note": "Kings and their noblewomen appear in parallel. The noun for the women, שָׂרוֹת, is the plural of שָׂרָה.",
+                  "ref": "Isa.49.23"
+                }
+              ],
+              "gloss": "probably princess",
+              "id": "caaray",
+              "name": "שָׂרַי",
+              "people": [],
+              "root": "שׂרר",
+              "status": "draft",
+              "summary": "Sarai is the name by which Abram’s wife is introduced. Her later name שָׂרָה has the same form as the Hebrew noun for a princess or noblewoman, supporting a similar meaning for Sarai. The text leaves the force of the earlier name’s ending unexplained.",
+              "updated": "2026-11-21"
+            },
+            "article_id": "caaray",
+            "base": null,
+            "change": "Add a personal-name article for שָׂרַי linked to the שׂרר word family.",
+            "definition": "Sarai, the earlier name of Abram’s wife Sarah.",
+            "evidence": "Genesis 11:29 names Abram’s wife Sarai. Genesis 17:15 gives both names when God tells Abraham to call her Sarah."
+          },
+          "word": 0
+        },
+        "evidence": "In וַיֹּאמֶר אֶל שָׂרַי אִשְׁתּוֹ (‘he said to Sarai his wife’), אֶל introduces the person Abram addresses, and אִשְׁתּוֹ identifies her as his wife.",
+        "gloss": "Sarai",
+        "language": "he",
+        "lemma": "שָׂרַי",
+        "morph": "HNp",
+        "morphology": "Hebrew proper noun with no prefix or suffix.",
+        "qualifier": "",
+        "root": "שׂרר",
+        "segments": "שָׂרַי",
+        "sense": "The personal name of Abram’s wife before she was named Sarah."
+      },
+      "position": 7,
+      "surface": "שָׂרַי"
+    },
+    {
+      "analysis": {
+        "entry": {
           "existing": "2nx",
           "sense": "wife",
           "word": 0
