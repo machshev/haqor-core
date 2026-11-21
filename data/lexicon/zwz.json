@@ -1,0 +1,91 @@
+{
+  "cognates": [
+    {
+      "evidence": [
+        {
+          "locator": "זִיזָא II G00324, Targum Deuteronomy 14:19",
+          "source": "jastrow-1903"
+        }
+      ],
+      "form": "זִיזָא",
+      "gloss": "a small moving creature",
+      "id": "arc-creature",
+      "lang": "arc",
+      "relation": "cognate",
+      "translit": "zīzā"
+    }
+  ],
+  "created": "2026-11-19",
+  "doctrine": [],
+  "gloss": "field creatures, abundance, Zuzim",
+  "id": "zwz",
+  "note": "The second heading g.at.ab indexes the same three tokens. A historical connection between the field creatures and the abundance in Isaiah is uncertain. The doorpost is treated under mezuzah. Ziza, Zizah, Zaza and Jaziz resemble the root, but the genealogies give no evidence of meanings tied to these senses.",
+  "root": "זוז",
+  "status": "draft",
+  "summary": "In both psalms the creatures of the open country are mentioned with other wild animals. Isaiah uses the same noun for something a nursing child can draw from in abundance. Genesis names the Zuzim as a people defeated at Ham.",
+  "tags": [],
+  "updated": "2026-11-21",
+  "words": [
+    {
+      "bdb": [
+        "g.as.ab"
+      ],
+      "gender": "m",
+      "gloss": "creatures of the field, abundance",
+      "lemma": "זִיז",
+      "pos": "noun",
+      "senses": [
+        {
+          "cognate_ids": [
+            "arc-creature"
+          ],
+          "definition": "God knows the birds and the creatures of the field. In the vineyard song the forest boar ravages vines and the field creatures feed on them. The passages give no narrower species.",
+          "evidence": [
+            {
+              "ref": "Psa.50.11",
+              "role": "defining"
+            },
+            {
+              "ref": "Psa.80.14",
+              "role": "defining"
+            }
+          ],
+          "gloss": "field creatures",
+          "id": "field-creatures"
+        },
+        {
+          "definition": "Jerusalem is pictured as a mother. Her children suck and delight themselves in the fullness of her glory. This sense rests on one passage.",
+          "evidence": [
+            {
+              "ref": "Isa.66.11",
+              "role": "defining"
+            }
+          ],
+          "gloss": "abundance, fullness",
+          "id": "abundance-fullness"
+        }
+      ]
+    },
+    {
+      "gender": "m",
+      "gloss": "Zuzim",
+      "lemma": "זוּזִים",
+      "pos": "noun",
+      "senses": [
+        {
+          "definition": "The people whom Chedorlaomer and his allies defeated at Ham.",
+          "evidence": [
+            {
+              "note": "The phrase וְאֶת הַזּוּזִים בְּהָם names the people struck and the place of their defeat, following the same pattern as the accounts of the Rephaim and the Emim on either side.",
+              "ref": "Gen.14.5",
+              "role": "defining"
+            }
+          ],
+          "gloss": "Zuzim",
+          "id": "zuzim"
+        }
+      ],
+      "summary": "Genesis uses this plural name for a people at Ham. Its relationship to זִיז is uncertain."
+    }
+  ]
+}
