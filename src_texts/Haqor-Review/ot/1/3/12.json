@@ -151,16 +151,11 @@
     {
       "analysis": {
         "entry": {
-          "draft": {
-            "article_id": "mn",
-            "base": "a8ed885685f881ad58d16600265c2176cd484c41c6480205b1d0941d765b8fa6",
-            "change": "Add Genesis 3:5 as an example of the existing partitive sense, min-some-of.",
-            "definition": "With a verb of eating, מִן marks the food of which someone eats a part.",
-            "evidence": "Genesis 3:5 repeats the suffixed preposition used with the same verb in Genesis 3:3."
-          },
+          "existing": "mn",
+          "sense": "min-some-of",
           "word": 0
         },
-        "evidence": "In נָתְנָה לִּי מִן הָעֵץ, Adam says the woman gave him some of the tree’s fruit. וָאֹכֵל (“and I ate”) identifies the gift as food, and Genesis 3:6 explicitly calls it fruit.",
+        "evidence": "In נָתְנָה לִּי מִן הָעֵץ, Adam says the woman gave him some of the tree’s fruit. וָאֹכֵל (“and I ate”) identifies the gift as food, and Genesis 3:6 names the fruit she took before giving it to him.",
         "gloss": "some of",
         "language": "he",
         "lemma": "מִן",
@@ -169,7 +164,7 @@
         "qualifier": "",
         "root": "מנ",
         "segments": "מִן",
-        "sense": "Partitive, marking what someone eats some of."
+        "sense": "Partitive, marking a portion of the tree’s fruit as the gift."
       },
       "position": 9,
       "surface": "מִן"
