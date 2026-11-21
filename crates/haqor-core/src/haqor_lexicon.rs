@@ -202,7 +202,8 @@ pub struct NameEntry {
     /// The BDB keys whose tokens are this name.
     #[serde(default)]
     pub bdb: Vec<String>,
-    /// The people who bear it, by their TIPNR key (`Shiphrah@Exo.1.15`).
+    /// The people, peoples or places that bear it, by their TIPNR key
+    /// (`Shiphrah@Exo.1.15`, `Gomorrah@Gen.10.19`).
     pub people: Vec<String>,
     /// What the name means, in a few words.
     pub gloss: String,
@@ -595,21 +596,12 @@ pub fn read_lexicon(dir: &Path) -> Result<Lexicon> {
     let sources = serde_json::from_str::<SourcesFile>(&raw)
         .with_context(|| format!("parsing {}", sources_path.display()))?
         .sources;
-    let mut entries = read_entries(entry_paths(dir, false)?, |e: &Entry| &e.id)?;
-    if let Some(entry) = entries.iter().find(|e| is_noun_entry(e)) {
-        bail!(
-            "{}.json is one word with no verb: it belongs in {NOUNS_DIR}/",
-            entry.id
-        );
+    // Every word sits under its root: the old one-word entries under
+    // `nouns/` are refused rather than silently left out.
+    if entry_paths(&dir.join("nouns"), true)?.first().is_some() {
+        bail!("nouns/ holds word entries: every word belongs in its root's entry, at the top level");
     }
-    let nouns = read_entries(entry_paths(&dir.join(NOUNS_DIR), true)?, |e: &Entry| &e.id)?;
-    if let Some(entry) = nouns.iter().find(|e| !is_noun_entry(e)) {
-        bail!(
-            "{NOUNS_DIR}/{}.json has a verb or more than one word: it belongs at the top level, named by its root",
-            entry.id
-        );
-    }
-    entries.extend(nouns);
+    let entries = read_entries(entry_paths(dir, false)?, |e: &Entry| &e.id)?;
     let names = read_entries(entry_paths(&dir.join(NAMES_DIR), true)?, |e: &NameEntry| {
         &e.id
     })?;
@@ -625,32 +617,21 @@ pub fn read_name_texts(dir: &Path) -> Result<Vec<(String, String)>> {
     texts_of(entry_paths(&dir.join(NAMES_DIR), true)?)
 }
 
-/// Every word entry file's ([`NOUNS_DIR`]) id and text as written, in file
-/// name order.
-pub fn read_noun_texts(dir: &Path) -> Result<Vec<(String, String)>> {
-    texts_of(entry_paths(&dir.join(NOUNS_DIR), true)?)
-}
-
-/// One entry file's text as written, by id: a root entry's at the top level,
-/// or a word entry's under [`NOUNS_DIR`].
+/// One root entry file's text as written, by id.
 pub fn read_entry_text(dir: &Path, id: &str) -> Result<String> {
     if id.is_empty() || !id.bytes().all(|b| b.is_ascii_alphanumeric() || b == b'-') {
         bail!("`{id}` is no entry id");
     }
-    let file = [dir.join(format!("{id}.json")), dir.join(NOUNS_DIR).join(format!("{id}.json"))]
-        .into_iter()
-        .find(|f| f.is_file())
+    let file = Some(dir.join(format!("{id}.json")))
+        .filter(|f| f.is_file())
         .with_context(|| format!("no entry `{id}` in {}", dir.display()))?;
     std::fs::read_to_string(&file).with_context(|| format!("reading {}", file.display()))
 }
 
-/// Every entry file's id and text as written: the root entries in file name
-/// order, then the word entries ([`read_noun_texts`]). What the review page
+/// Every root entry file's id and text as written, in file name order. What the review page
 /// shows and edits; [`read_name_texts`] reads the names.
 pub fn read_entry_texts(dir: &Path) -> Result<Vec<(String, String)>> {
-    let mut texts = texts_of(entry_paths(dir, false)?)?;
-    texts.extend(read_noun_texts(dir)?);
-    Ok(texts)
+    texts_of(entry_paths(dir, false)?)
 }
 
 fn texts_of(paths: Vec<std::path::PathBuf>) -> Result<Vec<(String, String)>> {
@@ -714,11 +695,7 @@ pub fn save_entry(dir: &Path, text: &str, verses: &HashSet<i64>) -> Result<Lexic
         let entry: Entry =
             serde_json::from_str(text).context("the entry does not fit the schema")?;
         let id = entry.id.clone();
-        let dir = if is_noun_entry(&entry) {
-            dir.join(NOUNS_DIR)
-        } else {
-            dir.to_path_buf()
-        };
+        let dir = dir.to_path_buf();
         lexicon.entries.retain(|e| e.id != id);
         lexicon.entries.push(entry);
         (id, dir)
@@ -750,9 +727,8 @@ pub fn verses_of(db: &Connection) -> Result<HashSet<i64>> {
 // ---------------------------------------------------------------------------
 // Article ids: a lossless ASCII transliteration of the Hebrew.
 //
-// A root entry is named by its root key (`נפש` → `npx`), a word entry under
-// `nouns/` by its pointed lemma (`עֵץ` → `3ee9`) and a name entry by its
-// pointed name. Each consonant is one character, so an id turns back into
+// A root entry is named by its root key (`נפש` → `npx`) and a name entry by
+// its pointed name (`שִׁפְרָה` → `xiperaah`). Each consonant is one character, so an id turns back into
 // exactly the Hebrew it was made from ([`root_of_id`], [`word_of_id`]) and
 // two entries can only share an id by sharing a spelling. The emphatics and
 // gutturals take the digits the Arabic chat alphabet gives them, and shin
@@ -762,10 +738,6 @@ pub fn verses_of(db: &Connection) -> Result<HashSet<i64>> {
 // and maqaf `--`. Cantillation, meteg and the grapheme joiner are not part of
 // the word and are left out. The table is in the README.
 // ---------------------------------------------------------------------------
-
-/// The lexicon's subdirectory of word entries: a word with no other word of
-/// its root and no verb (`nouns/<id>.json`, named by its pointed lemma).
-pub const NOUNS_DIR: &str = "nouns";
 
 const SHIN_DOT: char = '\u{05C1}';
 const SIN_DOT: char = '\u{05C2}';
@@ -1121,24 +1093,9 @@ pub fn canonical_word(word: &str) -> Result<String> {
     word_of_id(&word_id(word)?)
 }
 
-/// Whether an entry belongs under [`NOUNS_DIR`]: no verb, and one lemma (its
-/// Hebrew, or the same word written again in Aramaic).
-pub fn is_noun_entry(entry: &Entry) -> bool {
-    let mut lemmas = entry.words.iter().map(|w| canonical_word(&w.lemma).ok());
-    let first = lemmas.next().flatten();
-    first.is_some()
-        && lemmas.all(|l| l == first)
-        && entry.words.iter().all(|w| w.pos != Pos::Verb)
-}
-
-/// The id an entry must have: its root's ([`root_id`]) at the top level, its
-/// lemma's ([`word_id`]) under [`NOUNS_DIR`].
+/// The id an entry must have: its root's ([`root_id`]).
 pub fn entry_id(entry: &Entry) -> Result<String> {
-    if is_noun_entry(entry) {
-        word_id(&entry.words[0].lemma)
-    } else {
-        root_id(&entry.root)
-    }
+    root_id(&entry.root)
 }
 
 /// The id a name entry must have: its pointed name's ([`word_id`]).
@@ -1148,16 +1105,12 @@ pub fn name_entry_id(name: &NameEntry) -> Result<String> {
 
 /// Where an entry's file is, from the lexicon directory, as faults name it.
 pub fn entry_file(entry: &Entry) -> String {
-    if is_noun_entry(entry) {
-        format!("{NOUNS_DIR}/{}.json", entry.id)
-    } else {
-        format!("{}.json", entry.id)
-    }
+    format!("{}.json", entry.id)
 }
 
 /// Where an article's JSON text belongs: its id and the lexicon
-/// subdirectory it is filed in (`""` for a root entry, [`NOUNS_DIR`] or
-/// [`NAMES_DIR`]). What the harness and the review page name new articles by.
+/// subdirectory it is filed in (`""` for a root entry, [`NAMES_DIR`] for a
+/// name). What the harness and the review page name new articles by.
 pub fn article_id(text: &str) -> Result<(String, &'static str)> {
     if is_name_entry(text) {
         let name: NameEntry =
@@ -1166,8 +1119,7 @@ pub fn article_id(text: &str) -> Result<(String, &'static str)> {
     } else {
         let entry: Entry =
             serde_json::from_str(text).context("the entry does not fit the schema")?;
-        let dir = if is_noun_entry(&entry) { NOUNS_DIR } else { "" };
-        Ok((entry_id(&entry)?, dir))
+        Ok((entry_id(&entry)?, ""))
     }
 }
 
@@ -1452,7 +1404,7 @@ impl Checker<'_> {
             Ok(id) if id == entry.id => {}
             Ok(id) => self.fault(
                 &at,
-                format_args!("`id` must be `{id}`, the transliteration of its {}", if is_noun_entry(entry) { "lemma" } else { "root" }),
+                format_args!("`id` must be `{id}`, the transliteration of its root"),
             ),
             Err(error) => self.fault(&at, format_args!("no id: {error:#}")),
         }
@@ -1691,11 +1643,17 @@ impl Checker<'_> {
                         &at,
                         format_args!("`{key}` is in no record of {PEOPLE_RECORDS}"),
                     ),
-                    // A name is borne by a person, or by God or another
-                    // named being (TIPNR's Supernatural records): never by a
-                    // place, a time or a group.
-                    Some((_, kind, category)) if kind != "person" && category != "Supernatural" => {
-                        self.fault(&at, format_args!("`{key}` is a {kind}, not a person"))
+                    // A name is borne by a person or a people (TIPNR's
+                    // groups are persons), a place, or God or another named
+                    // being (TIPNR's Supernatural records): never by a time,
+                    // a title or a musical term.
+                    Some((_, kind, category))
+                        if kind != "person" && kind != "place" && category != "Supernatural" =>
+                    {
+                        self.fault(
+                            &at,
+                            format_args!("`{key}` is a {kind}, not a person or place"),
+                        )
                     }
                     Some(_) => {}
                 }
@@ -2605,7 +2563,7 @@ mod tests {
     }
 
     const ENTRY: &str = r#"{
-        "id": "naepaex",
+        "id": "npx",
         "root": "נפש",
         "status": "draft",
         "updated": "2026-11-06",
@@ -2653,7 +2611,7 @@ mod tests {
         "name": "נָפִישׁ",
         "english": "Naphish",
         "root": "נפש",
-        "entry": "naepaex",
+        "entry": "npx",
         "word": "נֶפֶשׁ",
         "status": "draft",
         "updated": "2026-11-08",
@@ -2706,7 +2664,7 @@ mod tests {
     fn accepts_a_draft_name_with_explicitly_unknown_etymology() {
         let json = NAME
             .replace(r#""root": "נפש""#, r#""root": """#)
-            .replace(r#""entry": "naepaex""#, r#""entry": """#)
+            .replace(r#""entry": "npx""#, r#""entry": """#)
             .replace("        \"word\": \"נֶפֶשׁ\",\n", "")
             .replace(r#", "additional_roots": ["צדק"]"#, "")
             .replace(r#", "cognate_ids": ["lane"]"#, "");
@@ -2727,7 +2685,7 @@ mod tests {
     #[test]
     fn rejects_a_name_entry_with_broken_links() {
         let json = NAME
-            .replace(r#""entry": "naepaex""#, r#""entry": "ruach""#)
+            .replace(r#""entry": "npx""#, r#""entry": "ruach""#)
             .replace(r#"["Naphish@Gen.25.15"]"#, r#"["Naphish"]"#);
         let error = check_name(&json).unwrap_err().to_string();
         assert!(error.contains("names no root entry `ruach`"), "{error}");
@@ -2737,10 +2695,10 @@ mod tests {
             .replace(r#""word": "נֶפֶשׁ""#, r#""word": "רוּחַ""#);
         let error = check_name(&json).unwrap_err().to_string();
         assert!(
-            error.contains("is not the root of entry `naepaex`"),
+            error.contains("is not the root of entry `npx`"),
             "{error}"
         );
-        assert!(error.contains("is no word of `naepaex`"), "{error}");
+        assert!(error.contains("is no word of `npx`"), "{error}");
     }
 
     #[test]
@@ -2874,14 +2832,14 @@ mod tests {
         .unwrap();
         let summary = save_entry(&dir, ENTRY, &verses()).unwrap();
         assert_eq!(summary.entries, 1);
-        let saved = std::fs::read_to_string(dir.join("nouns/naepaex.json")).unwrap();
+        let saved = std::fs::read_to_string(dir.join("npx.json")).unwrap();
         assert_eq!(saved.trim_end(), ENTRY.trim_end());
 
         // A citation of no verse is refused, and the file is left as it was.
         let broken = ENTRY.replace("Gen.2.7", "Gen.2.99");
         assert!(save_entry(&dir, &broken, &verses()).is_err());
         assert_eq!(
-            std::fs::read_to_string(dir.join("nouns/naepaex.json")).unwrap(),
+            std::fs::read_to_string(dir.join("npx.json")).unwrap(),
             saved
         );
         std::fs::remove_dir_all(&dir).unwrap();
