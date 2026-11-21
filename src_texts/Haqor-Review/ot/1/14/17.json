@@ -182,6 +182,32 @@
         "entry": {
           "draft": {
             "article_id": "kkedaarelaa3omaer",
+            "base": "53742345b803b9466361be8e84b92bba4a739186dba4874d2d34d11ab185e9bf",
+            "change": "Assign the marked token to the existing Chedorlaomer article, which already documents this occurrence.",
+            "definition": "Chedorlaomer, the king of Elam named in Genesis 14.",
+            "evidence": "The existing personal-name article cites Genesis 14:1 for the king’s identity and Genesis 14:17 for the two-part spelling."
+          },
+          "word": 0
+        },
+        "evidence": "Genesis 14:1 gives the full name and title כְּדָרְלָעֹמֶר מֶלֶךְ עֵילָם. In 14:17 the same name is written across two tokens, כְּדָר לָעֹמֶר. The first אֶת marks the king as the object of מֵהַכּוֹת, and וְאֶת introduces the other kings who were with him.",
+        "gloss": "Chedorlaomer",
+        "language": "he",
+        "lemma": "כְּדָרְלָעֹמֶר",
+        "morph": "HNp",
+        "morphology": "Hebrew proper noun. כְּדָר is the first written part of the king’s name. The initial כְּ belongs to the name.",
+        "qualifier": "",
+        "root": "",
+        "segments": "כְּדָר",
+        "sense": "Chedorlaomer, king of Elam"
+      },
+      "position": 8,
+      "surface": "כְּדָר"
+    },
+    {
+      "analysis": {
+        "entry": {
+          "draft": {
+            "article_id": "kkedaarelaa3omaer",
             "base": "4cb5dfb57f3c0c9ced16fc0d55c0c915748c4f9541f026bc7de286246f8184c4",
             "change": "Add Genesis 14:17 as evidence for the two-part spelling of the name.",
             "definition": "Chedorlaomer, king of Elam.",
