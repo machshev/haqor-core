@@ -1,52 +1,68 @@
 {
+  "cognates": [
+    {
+      "evidence": [
+        {
+          "locator": "רְפֵי, T00945, Yebamot 64b",
+          "source": "jastrow-1903"
+        }
+      ],
+      "form": "רְפֵי",
+      "gloss": "slack, weak",
+      "id": "arc-t00945",
+      "lang": "arc",
+      "relation": "cognate",
+      "translit": "rəpē"
+    }
+  ],
+  "created": "2026-11-20",
+  "gloss": "slacken, cease",
   "id": "rph",
+  "note": "Drafted for Psalm 37 coverage. Separate from existing רפא entry.",
   "root": "רפה",
   "status": "draft",
-  "updated": "2026-11-19",
-  "gloss": "slacken, cease",
   "summary": "To slacken or leave off anger and wrath.",
+  "updated": "2026-11-21",
   "words": [
     {
-      "lemma": "רָפָה",
-      "pos": "verb",
-      "gloss": "slacken, cease",
       "bdb": [
         "t.dx.aa"
       ],
+      "cognate_ids": [
+        "arc-t00945"
+      ],
+      "gloss": "slacken, cease",
+      "lemma": "רָפָה",
+      "pos": "verb",
       "stems": [
         {
-          "stem": "hiphil",
           "gloss": "let go, cease",
           "senses": [
             {
-              "id": "cease",
-              "gloss": "cease",
               "definition": "The Psalm calls the angry to cease from anger and forsake wrath.",
               "evidence": [
                 {
                   "ref": "Psa.37.8",
                   "role": "defining"
                 }
-              ]
+              ],
+              "gloss": "cease",
+              "id": "cease"
             }
-          ]
+          ],
+          "stem": "hiphil"
         }
-      ],
-      "cognate_ids": [
-        "arc-t00945"
       ]
     },
     {
-      "lemma": "רָפֶה",
       "bdb": [
         "t.dx.ab"
       ],
-      "pos": "adjective",
       "gloss": "weak, slack",
+      "lemma": "רָפֶה",
+      "pos": "adjective",
       "senses": [
         {
-          "id": "weak-slack",
-          "gloss": "weak, slack",
           "definition": "Ahithophel proposes striking David while he is weary and weak. Isaiah calls for weak hands to be strengthened.",
           "evidence": [
             {
@@ -57,43 +73,44 @@
               "ref": "Isa.35.3",
               "role": "defining"
             }
-          ]
+          ],
+          "gloss": "weak, slack",
+          "id": "weak-slack"
         }
       ]
     },
     {
-      "lemma": "רִפָּיוֹן",
       "bdb": [
         "t.dx.ac"
       ],
-      "pos": "noun",
+      "gender": "m",
       "gloss": "slackness",
+      "lemma": "רִפָּיוֹן",
+      "pos": "noun",
       "senses": [
         {
-          "id": "slackness",
-          "gloss": "slackness",
           "definition": "Fathers fail to turn back for their children because their hands hang helpless in the face of the invader.",
           "evidence": [
             {
               "ref": "Jer.47.3",
               "role": "defining"
             }
-          ]
+          ],
+          "gloss": "slackness",
+          "id": "slackness"
         }
-      ],
-      "gender": "m"
+      ]
     },
     {
-      "lemma": "רְפָאִים",
       "bdb": [
         "t.dx.ae"
       ],
-      "pos": "noun",
+      "gender": "m",
       "gloss": "the dead",
+      "lemma": "רְפָאִים",
+      "pos": "noun",
       "senses": [
         {
-          "id": "the-dead",
-          "gloss": "the dead",
           "definition": "The proverb describes a path that ends among the dead. Isaiah pictures the dead kings rising to greet Babylon’s king in the grave. The link with weakness remains uncertain.",
           "evidence": [
             {
@@ -104,27 +121,35 @@
               "ref": "Isa.14.9",
               "role": "defining"
             }
-          ]
-        }
-      ],
-      "gender": "m"
-    }
-  ],
-  "note": "Drafted for Psalm 37 coverage. Separate from existing רפא entry.",
-  "cognates": [
-    {
-      "id": "arc-t00945",
-      "lang": "arc",
-      "form": "רְפֵי",
-      "translit": "rəpē",
-      "gloss": "slack, weak",
-      "relation": "cognate",
-      "evidence": [
-        {
-          "source": "jastrow-1903",
-          "locator": "רְפֵי, T00945, Yebamot 64b"
+          ],
+          "gloss": "the dead",
+          "id": "the-dead"
         }
       ]
+    },
+    {
+      "gender": "m",
+      "gloss": "Rephaim",
+      "lemma": "רְפָאִים",
+      "pos": "noun",
+      "senses": [
+        {
+          "definition": "The people whom Chedorlaomer and his allies struck at Ashteroth-karnaim. Deuteronomy also counts the Emim among the Rephaim.",
+          "evidence": [
+            {
+              "ref": "Gen.14.5",
+              "role": "defining"
+            },
+            {
+              "ref": "Deu.2.11",
+              "role": "defining"
+            }
+          ],
+          "gloss": "Rephaim",
+          "id": "rephaim-people"
+        }
+      ],
+      "summary": "A designation for a people. Its relation to the verb רָפָה is uncertain."
     }
   ]
 }
